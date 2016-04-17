@@ -1,0 +1,181 @@
+BUG FIXES, SEVERE:
+ 
+Afterlife doesn't properly reverse game state, so you wind up with the change that you made, even though you should not.
+
+5) On landing at the yacht, it seems that the roc was not properly gelled and Brock remained out of play (though he was supposed to be moved to the sunning deck) during the final scene. This did not prevent the game from ending. The roc also followed me around the boat. 
+
+
+*** INTELLIGENT SUBSTITUTION ***
+
+7) suggested solution:
+		-- make a list of possible chosen objects
+		-- if there are more than one, select between them on these rules:
+			-- if the converted object proffers one of the list, pick that one 
+			-- if something *else* proffers one of the list, 
+				disprefer that one and choose one of the others
+			-- if the converted item contains something, pick that one
+			-- if something is currently impossible to make 
+				(e.g. because animate), disprefer that one
+
+8) Synthesize ascot from original as and cot. Turn trash into a second as. Gel the ascot. The original as is now nowhere.
+ 
+
+***
+
+10) It is possible to leave behind a converted container that has essential things in it (e.g. a crate -> rate)
+ 
+
+BUG FIXES, MILD:
+
+14) "2nd: GEL LEGEND (the index) makes the legend (the story) fall off the map and becomes an independent item. The map falls to notice the secession."   
+
+
+16) It would be nice to be able to thank more people; e.g., the bartender.
+
+==== 
+
+
+ 
+23) The Public Convenience description says "...a couple of sinks..." but...
+x sinks
+ÊÊÊThat noun did not make sense in this context.
+x sink
+ÊÊÊthe sink is empty. 
+ 
+ 
+26) A very confusing moment:
+knock on waterstone's door
+ÊÊÊWaterstone inspects the clock through his monocle a moment...
+
+Huh? This felt like a total non-sequitur. I felt like I jumped right
+in to the middle of a puzzle, missing some critical introduction.
+Maybe waterstone could mention that he needs a very specific object
+and doesn't care to talk to anyone who can't help him?
+
+I didn't even realize, when I knocked, that he had a window, so the
+description of the event made no sense. I also had no idea why
+Waterstone chose my clock, of all the things in my inventory, to look
+at, or how I might show him something else instead, except perhaps to
+hide every other item in my very large inventory.
+
+A bit of exploration reveals that he only cares about the clock and
+the member, and ignores me otherwise... except I didn't get that, the
+description of the event is vague enough that I thought he was
+ignoring me because I tried too many times and he was getting tired of
+me. I didn't figure out what the puzzle was even supposed to be until
+I gave up and read spoilers on your blog. (Obviously I hadn't solved
+the printer yet.) 
+
+	?? Disallow knocking on the door until we *have* solved the printer?
+
+35) possibly: make sure that Brown keeps giving you the hint about showing him the letter remover until you have it done
+
+40) After the legend is converted by the homonym paddle, you get three points for "read legend" but none for "x legend", even though the result is otherwise identical.Ê Oddly enough, you also get the points if you show the legend (or map) to the bartender a second time after examining the converted legend.
+
+ 
+41) >put ale in reversing
+The display case isn't open.
+
+The display case isn't open.
+
+ 
+
+
+Gelling the garage or mechanic is a really unintuitive game over,
+treating the mechanic as a glitch seemed to say he was something to be
+undone, not someone who has awareness to escape restoration.
+
+if I x paint in the alley asap, the tutorial treats "how I got here"
+as an item, saying to take it. not an obvious command to show
+backstory though, any l should make you remember it.
+
+">topics" always starts with "we want to the greetings, etc." or some
+other strange prefix. the tutorial coud also do with mentioning that
+Alex's desires can be followed or be contrary. 
+
+When selecting a topic from a large numbered list, like "reccomend" to
+the farmer, picking 1 acts like I typed the second to last numbered
+option.
+
+The sink/tap behaves very strangely, turning on the tap doesn't make
+water, if you x the sink, but turning on the water does.
+
+
+Hi Ms. Short,
+
+I have some bugs to report from Counterfeit Monkey. I'm not at my primary computer, so I can't send you the transcripts until next year, but I figured it would be more helpful to send the reports as soon as possible:
+
+
+ - The password I synthesized doesn't let me into Brock's computer, even when I copied and pasted directly from the transcript.
+ - "Bushes" and "kudzu" aren't exactly synonyms, and "cut bushes with jigsaw" doesn't work (while "cut kudzu with jigsaw" does). 
+ - Something went wrong with the Authenticator puzzle, I'm not exactly sure what, but I don't think I solved it correctly. I went into the warehouse and went out again without stashing anything, and the Authenticator just walked away. The transcript should be more helpful here.
+ - I made two cans of oil while trying to get the car to start, and the messages about the mechanic were repeated when I tried to use the second one as fuel.
+ - The cat won't stand on the programmable dais long enough to be synthesized (I was trying to see whether it would do cat + member = camembert), while it will stay in the University's synthesizer.
+ - Not a bug per se, but it took me a while to figure out how to get the bartender to homonym something for me. Is "show [something] to bartender" the intended syntax?
+
+I will send you the transcripts as soon as I can, they should provide more information about the bugs. Thank you again for making this wonderful game, it's one of the best IFs I've played!
+
+Draconis
+  
+SUGGESTIONS
+
+I think that I ought to get still more money in the endgame, or perhaps an achievement, for turning the oil paintings (long believed lost) into intaglio pins and smuggling them out with me.
+
+allow removal of map for people on limited-size screens?
+
+Add an achievement for Rite?
+ 
+
+ 
+-- add hint system
+-- improve alternate dialogue for characters
+	-- make sure that alternate dialogue is successfully represented with topics
+-- provide a full walkthrough as well 
+-- add achievements for
+	-- getting away with the oil paintings or equivalent
+	-- doing something interesting with the shrine (actually isn't that already provided?)
+-- create achievement-hint system
+
+
+horrific things to do that at least deserve a comment of some kind:
+	-- turning the museum's prize display into a cod
+	-- converting the screen to scree
+	-- using the ARM to break the pinata
+	-- hacking Brock's computer
+
+1) (I'm sure you know about this one already) Whenever I use the restoration gel, I'm told
+
+"We dip out pea-sized quantity of gel"
+
+with no article.
+
+2) In the Seminar Room, I put The Problem of Adjectives in the bookshelf to get Higgate to leave. Then I took it back. When I tried to leave the room carrying the book, I got:
+
+>ne
+We take a moment to find the proper place for the book.
+
+The sound of discussion comes from down the hall: two voices speaking in Lojban, and then a male voice interrupting. "Do you have a license for this conversation?" it asks.
+
+"Excuse me," Higgate says. "I'd better go see to that."
+
+*** Run-time problem P31: Attempt to use a property of the 'nothing' non-object: property planned conversation
+
+====
+
+CANNOT REPRO. in the hostel bedroom, using the remover on the bed will give locked
+up end even if you pick a letter not in "dorm bed". same with being in
+the bed when applying it.
+
+CANNOT REPRO. 2) Also, in the T-insertion machine section, when youÕre still experimenting and arenÕt supposed to be able to leave the room, if you turn Brock back into a rock it lets you leave, thereby prematurely triggering the meeting with your father. However, instead of then being sent to the cold storage room, youÕre free to wander around, meaning that you can go back into the T-insertion machine room, complete the experimentation, and then be unable to progress since the cold storage sequence will not trigger. 
+
+CANNOT REPRO -- may have been fixed? 13) Second, if you get all the stuff youÕre supposed to need to proceed past the park, but then turn the plans into a pan (I figured better safe than sorry and did it in order to hide them), Alex wonÕt recognize that you have your stuff and wonÕt let you continue. Turning it back lets you go on, of course.
+
+I'm (finally!) playing through Counterfeit Monkey and ran into a small bug. If you hide the plans from the locker by, say, turning them into a pan, then the game doesn't recognize that you've gotten all of your stuff and won't let you leave the park.
+
+CANNOT REPRO. 42) In the Counterfeit Monkey, the suggestion from Alex is Òto challenge Parker about the rumÓ but CHALLENGE is not a verb it recognizes. I ended up fishing around and used "ASK Parker about rum" to draw the right response. It seems that if the suggestion is going to be made using an action verb like CHALLENGE, it would be great if that were recognized as a verb. 
+
+CANNOT REPRO. 36) [counterfeitmonkey]|10:04 josh_g | You can pick things up when you see them, like this: TAKE YOUR AUSTERE
+[counterfeitmonkey]|10:04 josh_g | CHILDHOOD.
+
+CANNOT REPRO. 20) >say weÕre AlexÕs girlfriend
+I didnÕt understand that number.
