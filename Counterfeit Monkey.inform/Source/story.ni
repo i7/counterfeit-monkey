@@ -3403,7 +3403,7 @@ A dorm bed is a kind of bed.
 Section 4 - Desks, Drawers, Offices
 
 
-Include CM Automated Drawers by Emily Short. 
+Include Automated Drawers by Emily Short. 
 
 Definition: a container is empty if the number of things in it is 0.
 Definition: a supporter is empty if the number of things on it is 0.
