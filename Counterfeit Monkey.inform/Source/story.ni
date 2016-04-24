@@ -2574,11 +2574,11 @@ Sanity-check approaching a room (called target):
 The room-restriction rules are an object-based rulebook.
 
 
-Understand "list every southern room" as listing every southern room. Listing every southern room is an action applying to nothing.
+[Understand "list every southern room" as listing every southern room. Listing every southern room is an action applying to nothing.
 
 Instead of listing every southern room:
 	repeat with theRoom running through all rooms:
-		if theRoom is southern, say "[TheRoom] is southern.";
+		if theRoom is southern, say "[TheRoom] is southern.";]
 
 [Definition: a room is southern:
 	let way be the best route from the roundabout to it, using even locked doors;
