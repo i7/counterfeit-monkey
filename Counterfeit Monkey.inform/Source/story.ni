@@ -2433,8 +2433,9 @@ Include Approaches by Emily Short. Use slow route-finding.
 
 A room can be nonsecret or forbidden. A room is usually nonsecret.
 
-A room can be southern or nonsouthern. A room is usually nonsouthern.
+A room can be nonsouthern or southern. A room is usually nonsouthern.
 
+["Southern" rooms are those you get to by walking east or south from the roundabout]
 
 Carry out going to a forbidden room (called target):
 	now the target is nonsecret.
@@ -2572,21 +2573,6 @@ Sanity-check approaching a room (called target):
 	abide by the room-restriction rules for the target.
 	
 The room-restriction rules are an object-based rulebook.
-
-
-[Understand "list every southern room" as listing every southern room. Listing every southern room is an action applying to nothing.
-
-Instead of listing every southern room:
-	repeat with theRoom running through all rooms:
-		if theRoom is southern, say "[TheRoom] is southern.";]
-
-[Definition: a room is southern:
-	let way be the best route from the roundabout to it, using even locked doors;
-	if way is south:
-		yes;
-	if way is east:
-		yes;
-	no.]
 
 
 A room-restriction rule for a southern room:
