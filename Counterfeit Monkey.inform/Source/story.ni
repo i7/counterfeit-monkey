@@ -2435,7 +2435,7 @@ A room can be nonsecret or forbidden. A room is usually nonsecret.
 
 A room can be nonsouthern or southern. A room is usually nonsouthern.
 
-["Southern" rooms are those you get to by walking east or south from the roundabout]
+["Southern" rooms are those you reach by walking east or south from the roundabout]
 
 Carry out going to a forbidden room (called target):
 	now the target is nonsecret.
@@ -8902,11 +8902,11 @@ Literal Restaurant is a facade in Long Street North. It fronts east. It is scene
 Instead of looking toward Roundabout:
 	say "That direction is just a chaos of traffic and bad signage."
 
-Long Street North is a proper-named road and southern. "Long Street is lined on each side with a double-row of tall, an[ae]mic palm trees that bend towards one another many feet overhead. This corridor continues some considerable distance south."
+Long Street North is a proper-named and southern road. "Long Street is lined on each side with a double-row of tall, an[ae]mic palm trees that bend towards one another many feet overhead. This corridor continues some considerable distance south."
 
 Some anemic palm trees are a backdrop. They are in Long Street North and Long Street South. The description is "The only foliage comes in a clump high above. The effect is distorted and unnatural, and I say that having lived with them all my life. They are trees in the same sense that ostriches are birds." The printed name is "an[ae]mic palm trees". Understand "palms" or "anaemic" as the anemic palm trees. 
 
-South of Long Street North is Long Street South. Long Street South is a  proper-named road and southern. "Long Street is lined on each side with a double-row of tall, an[ae]mic palm trees that bend towards one another many feet overhead. [You] are now in the southern part of this long corridor, between the Canadian Embassy and Arbot Maps & Antiques."
+South of Long Street North is Long Street South. Long Street South is a proper-named southern road.. "Long Street is lined on each side with a double-row of tall, an[ae]mic palm trees that bend towards one another many feet overhead. [You] are now in the southern part of this long corridor, between the Canadian Embassy and Arbot Maps & Antiques."
 
 The Canadian Embassy is a facade in Long Street South. It fronts east. It is scenery. The description is "The embassy is the largest foreign embassy here: Canadians do a lot of business with Atlantis, but the Québécois require special permission to enter, so there's a call for substantial clerical work. The building is a solid 1960s block in concrete with slit-shaped windows." Understand "concrete" or "windows" or "solid" or "block" or "slit-shaped" or "slit" or "window" or "slit shaped" or "slits" as the Canadian Embassy.
 
@@ -9244,6 +9244,8 @@ Section 3 - Apartment Window
 
 Southwest of Palm Square is a apartment door. apartment door is a lockable locked door. It is scenery. Southwest of apartment door is My Apartment. 
 
+My Apartment is southern.
+
 Instead of knocking on the bathroom window:
 	if the player is in Palm Square:
 		say "There's no one inside; that's the point.";
@@ -9315,8 +9317,6 @@ To reveal bathroom window:
 
 The bathroom window is a door. The bathroom window is west of Palm Square and east of the Apartment Bathroom. It is scenery. It is closed and openable. The flexible appearance is "[if the location is Palm Square][b-window-appearance][otherwise]The bathroom window gives some weak sunlight.[end if]". Apartment Bathroom and My Apartment are indoors.
 
-My Apartment is southern.
-Apartment Bathroom is southern.
 
 Instead of examining a toilet: say "It's pretty clean." 
 
@@ -9336,7 +9336,7 @@ Understand "climb through [something]" or "climb in [something]" or "climb into 
 
 Section 4 - Apartment Bathroom
 
-The Apartment Bathroom is north of My Apartment. The apartment bathroom is a bathroom.
+The Apartment Bathroom is north of My Apartment. The apartment bathroom is a southern bathroom.
 
 Rule for listing exits when in Apartment Bathroom:
 	say "[You] could climb back out the window, or [you] could go south into the rest of my apartment."
@@ -10675,7 +10675,7 @@ Chapter 1 - The Bureau and Environs
 
 Section 1 - Tall Street
 
-East of Roundabout is Tall Street. Tall Street is a road and southern. "Tall Street is very quiet. No celebrations have reached this far, and neither is there any business today; so it has an air of dull abandonment. At the [east] end the street bends to go around an old park rarely visited."
+East of Roundabout is Tall Street. Tall Street is a southern road. "Tall Street is very quiet. No celebrations have reached this far, and neither is there any business today; so it has an air of dull abandonment. At the [east] end the street bends to go around an old park rarely visited."
 The distant-rotunda is scenery in Tall Street. It is distant. The printed name is "rotunda". Understand "rotunda" and "distant" and "blue" and "bureau of orthography" as the distant-rotunda. 
 
 To decide whether (item - a thing) must be touched: 
@@ -10697,11 +10697,9 @@ The employment office is a facade in Tall Street. It fronts north.  It is scener
 
 Section 2 - Abandoned Park
 
-The Abandoned Park is east of Tall Street. "In contrast with the parks in the more savory parts of town, this is a bit of [patchy grass] where local dogs occasionally come out to do their business. A granite [war memorial] is fixed at the cen[ter][one of], which is why tourist maps optimistically call the place Monument Green. But the memorial is only moderately monumental and the grass hardly green at all[or][stopping]."
+The Abandoned Park is east of Tall Street. It is southern. "In contrast with the parks in the more savory parts of town, this is a bit of [patchy grass] where local dogs occasionally come out to do their business. A granite [war memorial] is fixed at the cen[ter][one of], which is why tourist maps optimistically call the place Monument Green. But the memorial is only moderately monumental and the grass hardly green at all[or][stopping]."
 	Understand "monument" or "green" as the abandoned park.
 	The introduction is "It is a place that might have been developed long ago; only it is known that there are remains of Roman settlement here, and there is a risk that digging out the foundations would turn up some of those ruins, exposing a large number of Latin-language objects to the light of day. To prevent this catastrophe the whole area has been placed off limits to development."
-
-The Abandoned Park is southern.	
 
 A war memorial is scenery in the Abandoned Park. Understand "granite" as the war memorial. The description is "It's a curious thing: it stands taller than a person and yet seems almost embarrassed and self-effacing. The lettering is cut quite small, and the names thereon are tightly spaced. Since 1829 there have been only thirty-five officially sanctioned surnames on the island, which means that, for reasons of space, the names have been truncated to numbers, and the result is a list that looks almost like a table of Biblical quotations: John 31, Mark 12, Paul 29.
 
@@ -10746,9 +10744,7 @@ The veterinary clinic is a facade in Abandoned Park. It fronts north.  It is sce
 	
 Section 3 - Bus Station
 
-The Bus Station is southeast of the Abandoned Park. "A currently-desolate depot from which buses run seasonally to Maiana, the island's other major town. The [station building] is a low, rectilinear edifice from the 60s, all pebbled concrete and sheet glass, but it's shut, leaving accessible only a series of empty [bus bays] and a [wall-mounted schedule]. The public convenience to the [east] is the only thing open, while the area to the [northwest] is open parkland."
-
-The Bus Station is southern.
+The Bus Station is southeast of the Abandoned Park. It is southern. "A currently-desolate depot from which buses run seasonally to Maiana, the island's other major town. The [station building] is a low, rectilinear edifice from the 60s, all pebbled concrete and sheet glass, but it's shut, leaving accessible only a series of empty [bus bays] and a [wall-mounted schedule]. The public convenience to the [east] is the only thing open, while the area to the [northwest] is open parkland."
 
 The old station building is scenery in the Bus Station. The description is "It's the most pathetic thing imaginable: the future, as imagined by the past. No one is in there at the moment." Understand "pebbled" and "concrete" and "sheet" and "glass" and "edifice" as the old station building.
 
@@ -11132,7 +11128,7 @@ Instead of showing something to the secretary when the secretary encloses the Sc
 	
 Section 8 - Hallway and Inaccessible Room
 
-The Bureau Hallway is east of the Antechamber. It is Indoors and southern. "This is a long hallway with many doors leading off, the business of the bureau being varied and all-encompassing; it is for all essential purposes the chief organ of government in Atlantis, since only a few topics are brought to citizen referendum."
+The Bureau Hallway is east of the Antechamber. It is indoors and southern. "This is a long hallway with many doors leading off, the business of the bureau being varied and all-encompassing; it is for all essential purposes the chief organ of government in Atlantis, since only a few topics are brought to citizen referendum."
 
 
 
@@ -11149,7 +11145,7 @@ Chapter 2 - Bureau Basement
 
 Section 1 - Foot of Stairs
 
-Below Bureau Hallway is Bureau Basement South. Bureau Basement South is indoors and forbidden and southern. The description of Bureau Basement South is "[You] have descended into a windowless underground passage. The hallway runs [north] from here, and for an eerily long way [--] the tunnels must extend well beyond the above-ground profile of the building."
+Below Bureau Hallway is Bureau Basement South. Bureau Basement South is indoors, forbidden and southern. The description of Bureau Basement South is "[You] have descended into a windowless underground passage. The hallway runs [north] from here, and for an eerily long way [--] the tunnels must extend well beyond the above-ground profile of the building."
 
 Rule for writing a paragraph about the plywood cutout when the seer automaton is mentionable and the location is Bureau Basement South:
 	say "Propped in the corner are some articles that were probably meant to be used as part of the Serial Comma Day Fair, but got confiscated instead: [a seer automaton] and [a plywood cutout] depicting Atlantida.".
@@ -11203,7 +11199,7 @@ Test automaton with "tutorial off / open tub / x automaton / put automaton in in
 
 Section 2 - Basement Middle
 
-North of Bureau Basement South is Bureau Basement Middle. It is indoors and forbidden and southern.
+North of Bureau Basement South is Bureau Basement Middle. It is indoors, forbidden and southern.
 The description of Bureau Basement Middle is "The hallway continues both [north] and [south], flanked by doors painted immutable col[our]s: hyacinth, celadon, chartreuse."
 
 The hyacinth door, the celadon door, and the chartreuse door are scenery in Bureau Basement Middle. 
@@ -11261,7 +11257,7 @@ Some Hello Kitty stickers are part of the cute security door. The description is
 
 Section 3 - Secret Section
 	
-Bureau Basement Secret Section is indoors and forbidden and southern. "The heightened security on this side of the door is obvious everywhere [you] look. The floor is tiled in paisley tiles. The light fixtures give off pale pink light. The walls are covered in frog leather. The doors are locked with padlocks the size of handbags, locks decorated à la Louis Quinze, combination locks made of solid gold. There is not a bare noun in sight."
+Bureau Basement Secret Section is indoors, forbidden and southern. "The heightened security on this side of the door is obvious everywhere [you] look. The floor is tiled in paisley tiles. The light fixtures give off pale pink light. The walls are covered in frog leather. The doors are locked with padlocks the size of handbags, locks decorated à la Louis Quinze, combination locks made of solid gold. There is not a bare noun in sight."
 
 Some frog leather walls, paisley tile floors, enormous padlocks, fancy locks, and gold combination locks are scenery in the Bureau Basement Secret Section. The description of the frog leather walls is "Mostly green spotted with brown, but for decorative trim they've used more exotic tree frogs in blue and orange."
 
@@ -11278,7 +11274,7 @@ Rule for listing exits while looking in Bureau Basement Secret Section:
 
 Section 4 - Testing Room
 
-The Sensitive Equipment Testing Room is west of Bureau Basement Secret Section. It is indoors and forbidden and southern. "A room with no windows, no cameras, no recording equipment, and barely any furniture." The Sensitive Equipment Testing Room contains a rock.
+The Sensitive Equipment Testing Room is west of Bureau Basement Secret Section. It is indoors, forbidden and southern. "A room with no windows, no cameras, no recording equipment, and barely any furniture." The Sensitive Equipment Testing Room contains a rock.
 
 The initial appearance of the rock is "A [rock] sits in one corner of the room."
 
@@ -11366,7 +11362,7 @@ Definition: a thing is bureau-disallowed if it is not bureau-allowed.
 Section 5 - Cold Storage
 
 
-Cold Storage is southwest of Bureau Basement Secret Section. It is indoors and forbidden and southern. "Shelves on both sides of the room are full of [objects-on-stands] on stands: objects that used to be men and women, and in a few cases even children. The [stand labels] preserve their original names."
+Cold Storage is southwest of Bureau Basement Secret Section. It is indoors, forbidden and southern. "Shelves on both sides of the room are full of [objects-on-stands] on stands: objects that used to be men and women, and in a few cases even children. The [stand labels] preserve their original names."
 
 The introduction is "If this goes wrong, we could wind up living in here permanently. So we'd better figure whom to send out, and do it fast."
 
@@ -11516,7 +11512,7 @@ Section 1 - Display Reloading Room
 
 At the same time, we want to discourage the player from thinking that there is something to be won by trying to communicate with those back upstairs. So while the tourists are shown to have reactions to certain types of item, they remain on a tight cycle and can't be broken out of their basic behavior.]
 	
-Display Reloading Room is south of Equipment Archive. It is indoors and forbidden and southern. "This area [if the display-platform is not in the location]is more or less empty. [Hazard-tape] marks off an area of the floor to indicate that [you] shouldn't stand there[otherwise]is mostly taken up with the [display-platform] descended from the room above[end if]."
+Display Reloading Room is south of Equipment Archive. It is indoors, forbidden and southern. "This area [if the display-platform is not in the location]is more or less empty. [Hazard-tape] marks off an area of the floor to indicate that [you] shouldn't stand there[otherwise]is mostly taken up with the [display-platform] descended from the room above[end if]."
 
 A tv monitor is a fixed in place device in the Display Reloading Room. It is switched on. Understand "black" or "white" or "black and white" or "television" or "security" as the tv monitor. "A black and white [tv monitor] is embedded in the wall."
 
@@ -11605,7 +11601,7 @@ Test gun-taking with "tutorial off / press button / g / g / get gun / press butt
 Section 2 - Wonderland
 
 	 
-Wonderland is north of Bureau Basement Secret Section. It is indoors and forbidden and southern. The description is "The [ridiculous décor] continues, now so extreme that I cannot even put a name to the things around us. They might as well be extrusions from a nightmare by Dali, or by Dr. Seuss. Offices are accessed by hatchways that seem to have come from submarines, or through passages resembling the sphincter of a great whale, or up ladders decorated with human teeth. 
+Wonderland is north of Bureau Basement Secret Section. It is indoors, forbidden and southern. The description is "The [ridiculous décor] continues, now so extreme that I cannot even put a name to the things around us. They might as well be extrusions from a nightmare by Dali, or by Dr. Seuss. Offices are accessed by hatchways that seem to have come from submarines, or through passages resembling the sphincter of a great whale, or up ladders decorated with human teeth. 
 
 An open archway leads to storage space east of here."
 
@@ -11656,7 +11652,7 @@ Rule for printing the name of the odor while waving the letter-remover at the od
 	
 Section 3 - Equipment Archive
 	
-Equipment Archive is a room. It is indoors and forbidden and southern. "The ceiling is mirrored, perhaps to make it harder for anyone to sneak around without being noticed among the shelves."
+Equipment Archive is a room. It is indoors, forbidden and southern. "The ceiling is mirrored, perhaps to make it harder for anyone to sneak around without being noticed among the shelves."
 
 A ceiling mirror is a mirror in the Equipment Archive.
 
