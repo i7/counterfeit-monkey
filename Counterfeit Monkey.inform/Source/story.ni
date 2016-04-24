@@ -9198,7 +9198,7 @@ To say square-refusal:
 		else:
 			say "I'm pretty sure they've got one in one of the fancy bars off north Long Street.".
 
-South of Long Street South is Palm Square. The description of Palm Square is "[if unvisited]Now this is my part of town: [end if]Palm Square is the beginning of the university district. To the [Southeast], through the iron gate, is the university campus proper; and that unobtrusive little doorway directly [south] of us leads into the Babel Café." Palm Square is  proper-named and southern.
+South of Long Street South is Palm Square. The description of Palm Square is "[if unvisited]Now this is my part of town: [end if]Palm Square is the beginning of the university district. To the [Southeast], through the iron gate, is the university campus proper; and that unobtrusive little doorway directly [south] of us leads into the Babel Café." Palm Square is proper-named and southern.
 
 Clearwater Cosmetic Clinic is a facade in Palm Square. It fronts east. It is scenery. The description is "It is closed for the holiday. About a dozen copies of the same ad plaster the wall."
 
