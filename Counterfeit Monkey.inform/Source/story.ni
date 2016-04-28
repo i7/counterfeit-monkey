@@ -258,7 +258,7 @@ Chapter 3 - Undo Handling
 
 Ultra Undo is an extension kindly written by Dannii Willis to use external file recording to ensure that UNDO remains available.]
 
-Include Ultra Undo by Dannii Willis.
+Include version 1/140320 of Ultra Undo by Dannii Willis.
 
 	
 Part 2 - Multimedia
@@ -1470,12 +1470,20 @@ Section 4 - Resurrection
 
 [In versions 1-4 of the game, it was possible to die instantly in assorted ways. On an interpreter with working UNDO, it was possible to take this turn back, but a) some novice players may not realize this and b) some interpreters choked on trying to undo things given how very large the game state is.]
 
-When play ends when the story has not ended finally: 
+To undo a turn:
+	(- Perform_Undo(); -).
+
+When play ends when the story has not ended finally:
 	wait for any key;
 	say "That is, that's what would have happened if [you] had done something so foolish. Shall we suppose [you] didn't? >"; 
-	if the player consents: 
-		resume the story; 
+	if the player consents:
+		if the turn count is greater than 1:
+			say "[line break]";
+			undo a turn; 
+		otherwise:
+			resume the story;
 		try looking.
+
 
 Book 2 - Character Models
 
