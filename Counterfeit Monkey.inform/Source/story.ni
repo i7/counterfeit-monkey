@@ -1294,7 +1294,7 @@ Instead of taking inventory when the current inventory listing style is utilitar
 		if packed count is 0:
 			say line break;
 		say "We're wearing [the list of things worn by the player].";
-	else if the packed count is greater than 0:
+	else if the packed count is greater than 0 or the player carries the backpack:
 		say paragraph break.
 			
 
