@@ -87,7 +87,7 @@ Global ultra_undo_needed = 0;
 	glk_stream_close( gg_savestr, 0 );
 	gg_savestr = 0;
 	.RFailed;
-	ultra_undo_counter = 0;
+	Ultra_Undo_Delete_All();
 	return 0;
 ];
 
