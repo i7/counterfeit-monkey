@@ -14,12 +14,13 @@ Global ultra_undo_needed = 0;
 
 ! Test if the VM is able to perform an undo. This is necessary because Git won't tell us that it can't.
 [ Ultra_Undo_Test res;
+	! Delete any leftover undo files from earlier sessions.
+	Ultra_Undo_Delete_All();
+	
 	@saveundo res;
 	if ( res == 1 ) ! Failure
 	{
 		ultra_undo_needed = 1;
-		! Delete any leftover undo files from earlier sessions.
-		Ultra_Undo_Delete_All();
 		rfalse;
 	}
 	if ( res == -1 ) ! Success
@@ -31,8 +32,6 @@ Global ultra_undo_needed = 0;
 	if ( res == 1 ) ! Failure
 	{
 		ultra_undo_needed = 1;
-		! Delete any leftover undo files from earlier sessions.
-		Ultra_Undo_Delete_All();
 		rfalse;
 	}
 ];
