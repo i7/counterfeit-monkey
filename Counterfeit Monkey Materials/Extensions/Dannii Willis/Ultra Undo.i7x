@@ -126,8 +126,8 @@ Global ultra_undo_needed = 0;
 	{
 		print (char) UUID_ARRAY->ix;
 	}
-	print "-", (( ultra_undo_counter - 1 )  % ULTRA_UNDO_MAX_COUNT ) + 1;
-	! Translate ultra_undo_counter into a number between 1 and ULTRA_UNDO_MAX_COUNT
+	! Take the mod of ultra_undo_counter to keep the number of files to ULTRA_UNDO_MAX_COUNT
+	print "-", ( ultra_undo_counter % ULTRA_UNDO_MAX_COUNT );
 ];
 
 [ Ultra_Undo_Delete val fref exists;
