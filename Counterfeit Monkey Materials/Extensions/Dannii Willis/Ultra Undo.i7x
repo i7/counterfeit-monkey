@@ -1,4 +1,4 @@
-Version 1/160429 of Ultra Undo (for Glulx only) by Dannii Willis begins here.
+Version 1/160501 of Ultra Undo (for Glulx only) by Dannii Willis begins here.
 
 "Handles undo using external files for very big story files"
 
@@ -14,9 +14,6 @@ Global ultra_undo_needed = 0;
 
 ! Test if the VM is able to perform an undo. This is necessary because Git won't tell us that it can't.
 [ Ultra_Undo_Test res;
-	! Delete any leftover undo files from earlier sessions.
-	Ultra_Undo_Delete_All();
-	
 	@saveundo res;
 	if ( res == 1 ) ! Failure
 	{
@@ -212,7 +209,7 @@ Include (-
 
 Section - Cleaning up
 
-[ Clean up after ourselves when the player quits or restarts - delete all the external files ]
+[ Clean up after ourselves when the player quits - delete all the external files ]
 
 Include (-
 
@@ -228,20 +225,10 @@ Include (-
 
 -) instead of "Quit The Game Rule" in "Glulx.i6t".
 
-Include (-
+[ Clean up when the game first starts ]
 
-[ RESTART_THE_GAME_R;
-	if (actor ~= player) rfalse;
-	GL__M(##Restart, 1);
-	if ( YesOrNo() ~= 0 )
-	{
-		Ultra_Undo_Delete_All();
-		@restart;
-		GL__M( ##Restart, 2 );
-	}
-];
-
--) instead of "Restart The Game Rule" in "Glulx.i6t".
+The delete Ultra Undo savefiles rule is listed in the after starting the virtual machine rules.
+The delete Ultra Undo savefiles rule translates into I6 as "Ultra_Undo_Delete_All".
 
 
 
