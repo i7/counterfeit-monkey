@@ -258,7 +258,7 @@ Chapter 3 - Undo Handling
 
 Ultra Undo is an extension kindly written by Dannii Willis to use external file recording to ensure that UNDO remains available.]
 
-Include version 1/160429 of Ultra Undo by Dannii Willis.
+Include version 1/160502 of Ultra Undo by Dannii Willis.
 
 	
 Part 2 - Multimedia
