@@ -145,7 +145,7 @@ Constant UU_FILE_ROCK_0 = 1000;
 	return 0;
 ];
 
-[ Ultra_Undo_Index ix;
+[ Ultra_Undo_Index;
 	return ( ultra_undo_counter % ULTRA_UNDO_MAX_COUNT );
 ];
 
