@@ -188,11 +188,11 @@ A glulx zeroing-reference rule (this is the default removing reference to uufile
 	zero undo array.
 
 To zero undo array:
-	(- zero_undo_array(); -)
+	(- Zero_Undo_Array(); -)
 
 Include (-
 
-[ zero_undo_array ix;
+[ Zero_Undo_Array ix;
 	for ( ix = 0 : ix < ULTRA_UNDO_MAX_COUNT : ix++ )
 	{
 		undo_array --> ix = 0;
@@ -236,6 +236,10 @@ Section - Tests
 
 The Ultra Undo Test rule translates into I6 as "Ultra_Undo_Test".
 The Ultra Undo Test rule is listed last in the startup rules.
+
+The init Ultra Undo counter rule translates into I6 as "Init_Ultra_Undo_Counter".
+The init Ultra Undo counter rule is listed last in the startup rules.
+
 
 [ Rerun the tests if we load a saved game. ]
 
