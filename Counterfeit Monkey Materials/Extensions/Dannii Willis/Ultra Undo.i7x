@@ -24,8 +24,11 @@ Constant UU_FILE_ROCK_0 = 1000;
 
 [ Init_Ultra_Undo_Counter; 
 	!Initiate Ultra Undo Counter fileref
-	ultra_undo_counter_fileref = glk_fileref_create_temp( fileusage_SavedGame + fileusage_BinaryMode, UU_COUNTER_ROCK);
-	if ( ultra_undo_counter_fileref ~= 0 ) Write_Ultra_Undo_Counter_File(); 
+	if ( ultra_undo_needed == 1)
+	{
+		ultra_undo_counter_fileref = glk_fileref_create_temp( fileusage_SavedGame + fileusage_BinaryMode, UU_COUNTER_ROCK);
+		if ( ultra_undo_counter_fileref ~= 0 ) Write_Ultra_Undo_Counter_File(); 
+	}
 ];
 
 [ Write_Ultra_Undo_Counter_File str; 
