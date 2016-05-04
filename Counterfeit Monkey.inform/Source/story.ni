@@ -12,14 +12,15 @@ There is no guarantee that any of the included code is suitable for any specific
 
 Output text remains copyright Emily Short.]
 
-The release number is 6. 
+The release number is 6.
 
 [Change log:
 	
 Release 6:
-	
+
+	Fixes a bug where resurrecting the player (i.e. answering yes to "Shall we suppose [you] didn't?" after dying) would sometimes break the game. Now we perform an undo rather than resume the story.
 	Updates the version of Ultra Undo.
-	
+
 Release 5:
 	
 	*** Gameplay changes:
