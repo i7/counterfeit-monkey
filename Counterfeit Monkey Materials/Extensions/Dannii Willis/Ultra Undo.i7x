@@ -166,6 +166,18 @@ Constant UU_FILE_ROCK_0 = 1000;
 	}
 ];
 
+! Delete all known external files and destroy all filerefs
+[ Ultra_Undo_Delete_All ix;
+	for ( ix = 0 : ix < ULTRA_UNDO_MAX_COUNT : ix++ )
+	{
+		Ultra_Undo_Delete( ix );
+	}
+
+	if ( glk_fileref_does_file_exist( ultra_undo_counter_fileref ) )
+		glk_fileref_delete_file( ultra_undo_counter_fileref );
+	glk_fileref_destroy( ultra_undo_counter_fileref );
+];
+
 -) instead of "Undo" in "Glulx.i6t".
 
 Section - Items to slot into HandleGlkEvent and IdentifyGlkObject
@@ -264,8 +276,39 @@ Include (-
 -) instead of "Save The Game Rule" in "Glulx.i6t".
 
 
-The init Ultra Undo counter rule is listed last in the startup rules.
-The init Ultra Undo counter rule translates into I6 as "Init_Ultra_Undo_Counter".
+Section - Cleaning up
+
+[ Clean up after ourselves when the player quits or restarts - delete all the external files ]
+
+Include (-
+
+[ QUIT_THE_GAME_R;
+	if ( actor ~= player ) rfalse;
+	GL__M( ##Quit, 2 );
+	if ( YesOrNo()~=0 )
+	{
+		Ultra_Undo_Delete_All();
+		quit;
+	}
+];
+
+-) instead of "Quit The Game Rule" in "Glulx.i6t".
+
+Include (-
+
+[ RESTART_THE_GAME_R;
+	if (actor ~= player) rfalse;
+	GL__M(##Restart, 1);
+	if ( YesOrNo() ~= 0 )
+	{
+		Ultra_Undo_Delete_All();
+		@restart;
+		GL__M( ##Restart, 2 );
+	}
+];
+
+-) instead of "Restart The Game Rule" in "Glulx.i6t".
+
 
 
 [ Compatibility with Undo Output Control. If it's not included, add the variable we refer to. If it is, don't let it replace our Undo code. ]
