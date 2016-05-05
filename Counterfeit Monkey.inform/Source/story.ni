@@ -3244,7 +3244,7 @@ Definition: a thing is unleavable:
 	if it is enclosed by a vehicle which contains the player, no;
 	yes.
 
-Before going when [the player is staid and] the location encloses an unleavable thing:
+Before going somewhere when [the player is staid and] the location encloses an unleavable thing:
 	while the location encloses an unleavable thing  (called needed-thing):
 		try taking the needed-thing;
 		if the needed-thing is the iron-pans:
