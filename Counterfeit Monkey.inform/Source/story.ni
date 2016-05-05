@@ -6216,7 +6216,7 @@ The jotter is a notepad in the Projection Booth. "[A jotter] is propped up next 
 	The memo of the jotter is "Red: audience 14. FM couple. MM couple. M in raincoat. FFFFF group. F. MF. M.".
 
 Rule for writing a topic sentence about the jotter when the projector is mentionable:
-	say "[A jotter] is propped up next to [the projector]."
+	say "[A jotter] is propped up next to [the projector].[no line break]"
 
 The projector is a container in the Projection Booth. It is fixed in place. "[A projector] has been set up facing the [film screen][if the reel is in the projector] and [a reel] threaded into it[end if]." The description of the projector is "It's an old-fashioned film projector[if the reel is in the projector], with [a reel] of film inserted[otherwise], with a spot to hold [a reel] of film[end if]. The lens points at the screen." Understand "lens" as the projector.
 
