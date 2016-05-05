@@ -1294,7 +1294,12 @@ Instead of taking inventory when the current inventory listing style is utilitar
 			if line break needed is 1:
 				say line break;
 			if the unpacked count is 0:
-				say "[line break][if packed count is less than 3][The list of packed things] [is-are][else]Everything [you] carry is[end if] in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. [no line break]";
+				say "[line break]";
+				if packed count is 1:
+					say "[The list of packed things] [is-are][no line break]";
+				else:
+					say "[if packed count is 2][The list of packed things] are[else]Everything [you] carry is[end if][no line break]";
+				say " in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if].[no line break]";
 			else:
 				say "[line break]Everything [you] carry is in the backpack except [the list of unpacked things which are enclosed by the player]. The backpack is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. [no line break]";
 		else:
