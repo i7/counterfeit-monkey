@@ -2199,6 +2199,12 @@ A first accessibility rule (this is the go to location rule):
 To decide what object is the touch-goal:
 	(- (untouchable_object) -).
 	 
+Sanity-check inserting something (called the target) into the target:
+	say "[You] can't put something into itself." instead.
+
+Sanity-check inserting something which is in a container (called the container) into the container:
+	say "[The noun] [is-are] in [the container] already." instead.
+
 Sanity-check eating an inedible thing:
 	say "[The noun] wouldn't agree with us even if [you] were feeling better." instead.
 	
