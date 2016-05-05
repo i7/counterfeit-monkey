@@ -1237,21 +1237,30 @@ Instead of taking inventory when the current inventory listing style is wide:
 	otherwise list the contents of the player, as a sentence, tersely, giving brief inventory information, including contents, listing marked items only;
 	say ".[paragraph break]". 
 	
+The packed count is a number that varies.
+Line break needed is a number that varies.
+
+To say is-are-packed:
+	if the packed count is greater than 1, say "are"; otherwise say "[is-are]".
+
+To say conditional-line-break:
+	if line break needed is 1, say line break; otherwise say "".
+
 Instead of taking inventory when the current inventory listing style is utilitarian:
 	now everything is not marked for listing;
-	let packed count be 0;
-	let unpacked count be 0;
-	let line break needed be 0;
-	let carried count be the number of things enclosed by the player;
-	if carried count is 0, say "[You] [are] empty-handed." instead;
+	now the packed count is 0;
+	let the unpacked count be 0;
+	now line break needed is 0;
+	let the carried count be the number of things enclosed by the player;
+	if the carried count is 0, say "[You] [are] empty-handed." instead;
 	now all essential things enclosed by the player are marked for listing; 
 	unless the number of marked for listing things is 0::
 		if exactly one thing is marked for listing:
 			say "[You] [are] equipped with [a list of marked for listing thing] [--] an essential [you] mustn't part with. [no line break]";
 		otherwise:
 			say "[You] [are] equipped with the following essentials: [a list of marked for listing things].[no line break]";
-		now packed count is the number of marked for listing things which are packed;
-		now unpacked count is the number of marked for listing things which are unpacked;
+		now the packed count is the number of marked for listing things which are packed;
+		now the unpacked count is the number of marked for listing things which are unpacked;
 		now line break needed is 1;
 	now everything is not marked for listing; 
 	now every not essential thing enclosed by the player is marked for listing;
@@ -1272,8 +1281,8 @@ Instead of taking inventory when the current inventory listing style is utilitar
 			let N be "[N in lower case]";
 			now the name appearance entry is N;
 			now the referent entry is the item;
-			if item is packed, increase packed count by 1;
-			else increase unpacked count by 1;
+			if item is packed, increase the packed count by 1;
+			else increase the unpacked count by 1;
 		sort the Table of Inventory Ordering in name appearance order;
 		let max be the number of filled rows in the Table of Inventory Ordering;
 		let near-max be max minus 1;
@@ -1283,37 +1292,30 @@ Instead of taking inventory when the current inventory listing style is utilitar
 			increase count by 1;
 			if count is max:
 				say ".[no line break]";
-				let line break needed be 1;
+				now line break needed is 1;
 			otherwise if count is near-max:
 				say ", and ";
 			otherwise:
 				say ", ";
 			blank out the whole row;
 	if the player carries the backpack or the player is wearing the backpack:
-		if packed count is greater than unpacked count:
-			if line break needed is 1:
-				say line break;
+		if the packed count is greater than the unpacked count:
+			say conditional-line-break;
 			if the unpacked count is 0:
-				say "[line break]";
-				if packed count is 1:
-					say "[The list of packed things] [is-are][no line break]";
-				else:
-					say "[if packed count is 2][The list of packed things] are[else]Everything [you] carry is[end if][no line break]";
-				say " in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if].[no line break]";
+				say "[line break][if the packed count is less than 3][The list of packed things] [is-are-packed][else]Everything [you] carry is[end if] in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if].[no line break]";
 			else:
 				say "[line break]Everything [you] carry is in the backpack except [the list of unpacked things which are enclosed by the player]. The backpack is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. [no line break]";
 		else:
-			if packed count is 0:
-				if carried count is greater than 2:
-					say "[if line break needed is 1][line break][end if][line break]None of that is in the backpack. [no line break]";
-					let line break needed be 1;
+			if the packed count is 0:
+				if the carried count is greater than 2:
+					say "[conditional-line-break][line break]None of that is in the backpack. [no line break]";
+					now line break needed is 1;
 			else:
-				say "[if line break needed is 1][line break][end if][line break]Of that collection, [the list of packed things] [if packed count is 1][is-are][else]are[end if] packed away in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. [no line break]";
+				say "[conditional-line-break][line break]Of that collection, [the list of packed things] [is-are-packed] packed away in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. [no line break]";
 	if the player wears something:
 		say "[if line break needed is 1][paragraph break][end if][You] [are] wearing [the list of things worn by the player].[no line break]";
-		let line break needed be 1;
-	if line break needed is 1:
-		say line break.
+		now line break needed is 1;
+	Say conditional-line-break.
 			
 
 Test newutility with "tutorial off / i / put all in backpack / i / wave l-remover at plans / put pans in backpack / i / put all in backpack / i / close backpack / i / x backpack / open backpack / x backpack / i / wear wig / i / wear monocle / i / drop backpack / i / x me" holding the backpack and the secret-plans and the lime and the cate and the wig.
