@@ -1308,7 +1308,7 @@ Instead of taking inventory when the current inventory listing style is utilitar
 					say "[if line break needed is 1][line break][end if][line break]None of that is in the backpack. [no line break]";
 					let line break needed be 1;
 			else:
-				say "[if line break needed is 1][line break][end if][line break]Of that collection, [the list of packed things] [is-are] packed away in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. [no line break]";
+				say "[if line break needed is 1][line break][end if][line break]Of that collection, [the list of packed things] [if packed count is 1][is-are][else]are[end if] packed away in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. [no line break]";
 	if the player wears something:
 		say "[if line break needed is 1][paragraph break][end if][You] [are] wearing [the list of things worn by the player].[no line break]";
 		let line break needed be 1;
