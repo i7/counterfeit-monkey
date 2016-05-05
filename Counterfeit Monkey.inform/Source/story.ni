@@ -1241,21 +1241,30 @@ Instead of taking inventory when the current inventory listing style is utilitar
 	now everything is not marked for listing;
 	let packed count be 0;
 	let unpacked count be 0;
-	if the number of things enclosed by the player is 0, say "[You] [are] empty-handed." instead;
+	let line break needed be 0;
+	let carried count be the number of things enclosed by the player;
+	if carried count is 0, say "[You] [are] empty-handed." instead;
 	now all essential things enclosed by the player are marked for listing; 
 	unless the number of marked for listing things is 0::
 		if exactly one thing is marked for listing:
-			say "[You] [are] equipped with [a list of marked for listing thing] [--] an essential [you] mustn't part with.[paragraph break]";
+			say "[You] [are] equipped with [a list of marked for listing thing] [--] an essential [you] mustn't part with. [no line break]";
 		otherwise:
-			say "[You] [are] equipped with the following essentials: [a list of marked for listing things].[paragraph break]";
+			say "[You] [are] equipped with the following essentials: [a list of marked for listing things].[no line break]";
 		now packed count is the number of marked for listing things which are packed;
 		now unpacked count is the number of marked for listing things which are unpacked;
+		now line break needed is 1;
 	now everything is not marked for listing; 
 	now every not essential thing enclosed by the player is marked for listing;
 	now everything that is part of something is not marked for listing;
 	now the restoration gel is not marked for listing; [because the tub will already be a mentioned essential]
 	unless no things are marked for listing:
-		say "[You] [are] also carrying ";
+		if line break needed is 1:
+			say "[paragraph break][You] [are] also carrying ";
+		else:
+			if carried count is 1 and the player wears something:
+				 say "[You] [are] wearing [a list of things worn by the player]." instead;
+			else:
+				say "[You] [are] carrying ";
 		repeat with item running through marked for listing things:
 			choose a blank row in the Table of Inventory Ordering;
 			let N be indexed text;
@@ -1266,42 +1275,45 @@ Instead of taking inventory when the current inventory listing style is utilitar
 			if item is packed, increase packed count by 1;
 			else increase unpacked count by 1;
 		sort the Table of Inventory Ordering in name appearance order;
-		let count be 0;
 		let max be the number of filled rows in the Table of Inventory Ordering;
 		let near-max be max minus 1;
+		let count be 0;
 		repeat through the Table of Inventory Ordering:
 			say "[a referent entry]";
 			increase count by 1;
 			if count is max:
-				say ".";
+				say ".[no line break]";
+				let line break needed be 1;
 			otherwise if count is near-max:
 				say ", and ";
 			otherwise:
 				say ", ";
 			blank out the whole row;
-	if the player carries the backpack:
-		say line break;
+	if the player carries the backpack or the player is wearing the backpack:
 		if packed count is greater than unpacked count:
+			if line break needed is 1:
+				say line break;
 			if the unpacked count is 0:
-				say "Everything [you] carry is in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. [no line break]";
+				say "[line break][if packed count is less than 3][The list of packed things] [is-are][else]Everything [you] carry is[end if] in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. [no line break]";
 			else:
-				say "Everything [you] carry is in the backpack except [the list of unpacked things which are enclosed by the player]. The backpack is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. [no line break]";
+				say "[line break]Everything [you] carry is in the backpack except [the list of unpacked things which are enclosed by the player]. The backpack is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. [no line break]";
 		else:
 			if packed count is 0:
-				say "None of that is in the backpack. [no line break]";
+				if carried count is greater than 2:
+					say "[if line break needed is 1][line break][end if][line break]None of that is in the backpack. [no line break]";
+					let line break needed be 1;
 			else:
-				say "Of that collection, [the list of packed things] [is-are] packed away in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. [no line break]";
+				say "[if line break needed is 1][line break][end if][line break]Of that collection, [the list of packed things] [is-are] packed away in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. [no line break]";
 	if the player wears something:
-		if packed count is 0:
-			say line break;
-		say "We're wearing [the list of things worn by the player].";
-	else if the packed count is greater than 0 or the player carries the backpack:
-		say paragraph break.
+		say "[if line break needed is 1][paragraph break][end if][You] [are] wearing [the list of things worn by the player].[no line break]";
+		let line break needed be 1;
+	if line break needed is 1:
+		say line break.
 			
 
 Test newutility with "tutorial off / i / put all in backpack / i / wave l-remover at plans / put pans in backpack / i / put all in backpack / i / close backpack / i / x backpack / open backpack / x backpack / i / wear wig / i / wear monocle / i / drop backpack / i / x me" holding the backpack and the secret-plans and the lime and the cate and the wig.
 		
-Definition: a thing is packed if it is enclosed by the backpack and it is not part of something.
+Definition: a thing is packed if it is enclosed by the backpack and it is not part of something and it is not the restoration gel. [Because the tub will already be listed as packed]
 Definition: a thing is unpacked if it is not packed and it is not part of something and it is not the backpack.
 
 Table of Inventory Ordering
