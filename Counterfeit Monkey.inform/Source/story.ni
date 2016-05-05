@@ -1256,12 +1256,14 @@ Instead of taking inventory when the current inventory listing style is utilitar
 	now every not essential thing enclosed by the player is marked for listing;
 	now everything that is part of something is not marked for listing;
 	now the restoration gel is not marked for listing; [because the tub will already be a mentioned essential]
-	let count be 0;
 	unless no things are marked for listing:
 		if line break needed is 1:
-			say "[line break][line break][You] [are] also carrying ";
+			say "[paragraph break][You] [are] also carrying ";
 		else:
-			say "[You] [are] carrying ";
+			if carried count is 1 and the player wears something:
+				 say "[You] [are] wearing [a list of things worn by the player]." instead;
+			else:
+				say "[You] [are] carrying ";
 		repeat with item running through marked for listing things:
 			choose a blank row in the Table of Inventory Ordering;
 			let N be indexed text;
@@ -1274,6 +1276,7 @@ Instead of taking inventory when the current inventory listing style is utilitar
 		sort the Table of Inventory Ordering in name appearance order;
 		let max be the number of filled rows in the Table of Inventory Ordering;
 		let near-max be max minus 1;
+		let count be 0;
 		repeat through the Table of Inventory Ordering:
 			say "[a referent entry]";
 			increase count by 1;
@@ -1301,7 +1304,7 @@ Instead of taking inventory when the current inventory listing style is utilitar
 			else:
 				say "[if line break needed is 1][line break][end if][line break]Of that collection, [the list of packed things] [is-are] packed away in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. [no line break]";
 	if the player wears something:
-		say "[if line break needed is 1][line break][line break][end if]We're wearing [the list of things worn by the player].[no line break]";
+		say "[if line break needed is 1][paragraph break][end if][You] [are] wearing [the list of things worn by the player].[no line break]";
 		let line break needed be 1;
 	if line break needed is 1:
 		say line break.
