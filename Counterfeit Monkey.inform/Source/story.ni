@@ -1238,19 +1238,15 @@ Instead of taking inventory when the current inventory listing style is wide:
 	say ".[paragraph break]". 
 	
 The packed count is a number that varies.
-Paragraph break needed is a number that varies.
 
 To say is-are-packed:
 	if the packed count is greater than 1, say "are"; otherwise say "[is-are]".
-
-To say conditional paragraph break:
-	if paragraph break needed is 1, say paragraph break; otherwise say "".
 
 Instead of taking inventory when the current inventory listing style is utilitarian:
 	now everything is not marked for listing;
 	now the packed count is 0;
 	let the unpacked count be 0;
-	now paragraph break needed is 0;
+	let paragraph break needed be 0;
 	let the carried count be the number of things enclosed by the player;
 	if the carried count is 0, say "[You] [are] empty-handed." instead;
 	now all essential things enclosed by the player are marked for listing; 
@@ -1315,7 +1311,8 @@ Instead of taking inventory when the current inventory listing style is utilitar
 	if the player wears something:
 		say "[paragraph break][You] [are] wearing [the list of things worn by the player].[no line break]";
 		now paragraph break needed is 1;
-	Say conditional paragraph break.
+	if paragraph break needed is 1:
+		say paragraph break.
 
 Test newutility with "tutorial off / i / put all in backpack / i / wave l-remover at plans / put pans in backpack / i / put all in backpack / i / close backpack / i / x backpack / open backpack / x backpack / i / wear wig / i / wear monocle / i / drop backpack / i / x me" holding the backpack and the secret-plans and the lime and the cate and the wig.
 		
