@@ -1,4 +1,4 @@
-Version 1/160502 of Ultra Undo (for Glulx only) by Dannii Willis begins here.
+Version 2/160506 of Ultra Undo (for Glulx only) by Dannii Willis begins here.
 
 "Handles undo using external files for very big story files"
 
@@ -26,7 +26,7 @@ Constant UU_FILE_ROCK_0 = 1000;
 	!Initiate Ultra Undo Counter fileref
 	if ( ultra_undo_needed == 1)
 	{
-		ultra_undo_counter_fileref = glk_fileref_create_temp( fileusage_SavedGame + fileusage_BinaryMode, UU_COUNTER_ROCK);
+		ultra_undo_counter_fileref = glk_fileref_create_temp( fileusage_SavedGame + fileusage_BinaryMode, UU_COUNTER_ROCK );
 		if ( ultra_undo_counter_fileref ~= 0 ) Write_Ultra_Undo_Counter_File(); 
 	}
 ];
@@ -193,11 +193,14 @@ To zero undo array:
 Include (-
 
 [ Zero_Undo_Array ix;
-	for ( ix = 0 : ix < ULTRA_UNDO_MAX_COUNT : ix++ )
+	if ( ultra_undo_needed == 1 )
 	{
-		undo_array --> ix = 0;
+		for ( ix = 0 : ix < ULTRA_UNDO_MAX_COUNT : ix++ )
+		{
+			undo_array --> ix = 0;
+		}
+		ultra_undo_counter_fileref = 0;
 	}
-	ultra_undo_counter_fileref = 0;
 ];
 
 -)
@@ -212,18 +215,21 @@ To identify glulx rock:
 Include (-
 
 [ Restoring_Undo_Array str;
-	! Finding and restoring all filerefs in undo_array
-	if ( ( (+current glulx rock+) >= UU_FILE_ROCK_0 ) && ( (+current glulx rock+) < ( UU_FILE_ROCK_0 + ULTRA_UNDO_MAX_COUNT ) ) )
+	if ( ultra_undo_needed == 1 )
 	{
-		undo_array --> ( (+current glulx rock+) - UU_FILE_ROCK_0 ) = (+ current glulx rock-ref +);	
-	}
-	! Finding and restoring ultra_undo_counter_fileref
-	else if ( (+current glulx rock+) == UU_COUNTER_ROCK )
-	{
-		ultra_undo_counter_fileref = (+ current glulx rock-ref +);
-		str = glk_stream_open_file( ultra_undo_counter_fileref, filemode_Read, 0 );
-		ultra_undo_counter = glk_get_char_stream_uni(str);
-		glk_stream_close( str, 0 );
+		! Finding and restoring all filerefs in undo_array
+		if ( ( (+current glulx rock+) >= UU_FILE_ROCK_0 ) && ( (+current glulx rock+) < ( UU_FILE_ROCK_0 + ULTRA_UNDO_MAX_COUNT ) ) )
+		{
+			undo_array --> ( (+current glulx rock+) - UU_FILE_ROCK_0 ) = (+ current glulx rock-ref +);
+
+		}		! Finding and restoring ultra_undo_counter_fileref
+		else if ( (+current glulx rock+) == UU_COUNTER_ROCK )
+		{
+			ultra_undo_counter_fileref = (+ current glulx rock-ref +);
+			str = glk_stream_open_file( ultra_undo_counter_fileref, filemode_Read, 0 );
+			ultra_undo_counter = glk_get_char_stream_uni(str);
+			glk_stream_close( str, 0 );
+		}
 	}
 ];
 
@@ -291,7 +297,7 @@ Include (-
 	GL__M( ##Quit, 2 );
 	if ( YesOrNo()~=0 )
 	{
-		Ultra_Undo_Delete_All();
+		if ( ultra_undo_needed == 1 ) Ultra_Undo_Delete_All();
 		quit;
 	}
 ];
@@ -305,7 +311,7 @@ Include (-
 	GL__M(##Restart, 1);
 	if ( YesOrNo() ~= 0 )
 	{
-		Ultra_Undo_Delete_All();
+		if ( ultra_undo_needed == 1 ) Ultra_Undo_Delete_All();
 		@restart;
 		GL__M( ##Restart, 2 );
 	}
