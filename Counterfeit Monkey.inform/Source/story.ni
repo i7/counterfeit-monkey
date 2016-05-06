@@ -1248,6 +1248,9 @@ Instead of taking inventory when the current inventory listing style is utilitar
 	let the unpacked count be 0;
 	let paragraph break needed be 0;
 	let the carried count be the number of things enclosed by the player;
+	[the restoration gel shouldn't be counted separately from the tub]
+	if the restoration gel is enclosed by the player:
+		decrease the carried count by 1;
 	if the carried count is 0, say "[You] [are] empty-handed." instead;
 	now all essential things enclosed by the player are marked for listing; 
 	unless the number of marked for listing things is 0::
@@ -1295,7 +1298,7 @@ Instead of taking inventory when the current inventory listing style is utilitar
 			otherwise:
 				say ", ";
 			blank out the whole row;
-	if the player carries the backpack or the player is wearing the backpack:
+	if the the backpack is enclosed by the player:
 		if the packed count is greater than the unpacked count:
 			if the unpacked count is 0:
 				say "[paragraph break][if the packed count is less than 3][The list of packed things] [is-are-packed][else]Everything [you] carry is[end if] in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if].[no line break]";
