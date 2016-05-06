@@ -1238,19 +1238,19 @@ Instead of taking inventory when the current inventory listing style is wide:
 	say ".[paragraph break]". 
 	
 The packed count is a number that varies.
-Line break needed is a number that varies.
+Paragraph break needed is a number that varies.
 
 To say is-are-packed:
 	if the packed count is greater than 1, say "are"; otherwise say "[is-are]".
 
-To say conditional-line-break:
-	if line break needed is 1, say line break; otherwise say "".
+To say conditional paragraph break:
+	if paragraph break needed is 1, say paragraph break; otherwise say "".
 
 Instead of taking inventory when the current inventory listing style is utilitarian:
 	now everything is not marked for listing;
 	now the packed count is 0;
 	let the unpacked count be 0;
-	now line break needed is 0;
+	now paragraph break needed is 0;
 	let the carried count be the number of things enclosed by the player;
 	if the carried count is 0, say "[You] [are] empty-handed." instead;
 	now all essential things enclosed by the player are marked for listing; 
@@ -1261,15 +1261,16 @@ Instead of taking inventory when the current inventory listing style is utilitar
 			say "[You] [are] equipped with the following essentials: [a list of marked for listing things].[no line break]";
 		now the packed count is the number of marked for listing things which are packed;
 		now the unpacked count is the number of marked for listing things which are unpacked;
-		now line break needed is 1;
+		now paragraph break needed is 1;
 	now everything is not marked for listing; 
 	now every not essential thing enclosed by the player is marked for listing;
 	now everything that is part of something is not marked for listing;
 	now the restoration gel is not marked for listing; [because the tub will already be a mentioned essential]
 	unless no things are marked for listing:
-		if line break needed is 1:
+		if paragraph break needed is 1: [if we have already listed things]
 			say "[paragraph break][You] [are] also carrying ";
 		else:
+			[if we are only carrying one non-essential thing and wearing it, just say that and skip the rest]
 			if carried count is 1 and the player wears something:
 				 say "[You] [are] wearing [a list of things worn by the player]." instead;
 			else:
@@ -1292,7 +1293,7 @@ Instead of taking inventory when the current inventory listing style is utilitar
 			increase count by 1;
 			if count is max:
 				say ".[no line break]";
-				now line break needed is 1;
+				now paragraph break needed is 1;
 			otherwise if count is near-max:
 				say ", and ";
 			otherwise:
@@ -1300,28 +1301,27 @@ Instead of taking inventory when the current inventory listing style is utilitar
 			blank out the whole row;
 	if the player carries the backpack or the player is wearing the backpack:
 		if the packed count is greater than the unpacked count:
-			say conditional-line-break;
 			if the unpacked count is 0:
-				say "[line break][if the packed count is less than 3][The list of packed things] [is-are-packed][else]Everything [you] carry is[end if] in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if].[no line break]";
+				say "[paragraph break][if the packed count is less than 3][The list of packed things] [is-are-packed][else]Everything [you] carry is[end if] in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if].[no line break]";
 			else:
-				say "[line break]Everything [you] carry is in the backpack except [the list of unpacked things which are enclosed by the player]. The backpack is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. [no line break]";
+				say "[paragraph break]Everything [you] carry is in the backpack except [the list of unpacked things which are enclosed by the player]. The backpack is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. [no line break]";
 		else:
 			if the packed count is 0:
 				if the carried count is greater than 2:
-					say "[conditional-line-break][line break]None of that is in the backpack. [no line break]";
-					now line break needed is 1;
+					say "[paragraph break]None of that is in the backpack. [no line break]";
+					now paragraph break needed is 1;
 			else:
-				say "[conditional-line-break][line break]Of that collection, [the list of packed things] [is-are-packed] packed away in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. [no line break]";
+				say "[paragraph break]Of that collection, [the list of packed things] [is-are-packed] packed away in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. [no line break]";
 	if the player wears something:
-		say "[if line break needed is 1][paragraph break][end if][You] [are] wearing [the list of things worn by the player].[no line break]";
-		now line break needed is 1;
-	Say conditional-line-break.
-			
+		say "[paragraph break][You] [are] wearing [the list of things worn by the player].[no line break]";
+		now paragraph break needed is 1;
+	Say conditional paragraph break.
 
 Test newutility with "tutorial off / i / put all in backpack / i / wave l-remover at plans / put pans in backpack / i / put all in backpack / i / close backpack / i / x backpack / open backpack / x backpack / i / wear wig / i / wear monocle / i / drop backpack / i / x me" holding the backpack and the secret-plans and the lime and the cate and the wig.
 		
 Definition: a thing is packed if it is enclosed by the backpack and it is not part of something and it is not the restoration gel. [Because the tub will already be listed as packed]
-Definition: a thing is unpacked if it is not packed and it is not part of something and it is not the backpack.
+
+Definition: a thing is unpacked if it is not packed and it is not part of something and it is not the backpack and it is not the restoration gel. [Because the tub will already be listed as unpacked].
 
 Table of Inventory Ordering
 name appearance	referent
