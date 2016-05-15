@@ -1,4 +1,4 @@
-Version 3 of Tutorial Mode by Emily Short begins here.
+Version 5 of Tutorial Mode by Emily Short begins here.
 
 "Adds a tutorial mode, which is on by default, to any game, to introduce key actions for the novice player. Can be revised or expanded by the author."
 
@@ -11,64 +11,41 @@ Understand "tutorial mode" or "tutorial on" or "tutorial mode on" as turning on 
 
 Turning off tutorial mode is an action out of world.
 
-Check turning off tutorial mode:
-	if tutorial mode is false, say "Tutorial mode is already off." instead.
+Check turning off tutorial mode (this is the can't turn off tutorial mode when it is off rule):
+	if tutorial mode is false, say "Tutorial mode is already off." (A) instead.
 
-Carry out turning off tutorial mode:
+Carry out turning off tutorial mode (this is the default turning off tutorial mode rule):
 	now tutorial mode is false.
 	
-Report turning off tutorial mode:
-	say "Tutorial mode is now off."
+Report turning off tutorial mode (this is the default report turning off tutorial mode rule):
+	say "Tutorial mode is now off." (A)
 
 Turning on tutorial mode is an action out of world.
 
-Check turning on tutorial mode:
-	if tutorial mode is true, say "Tutorial mode is already on." instead.
+Check turning on tutorial mode (this is the can't turn on tutorial mode when it is on rule):
+	if tutorial mode is true, say "Tutorial mode is already on." (A) instead.
 
-Carry out turning on tutorial mode:
+Carry out turning on tutorial mode (this is the default turning on tutorial mode rule):
 	now tutorial mode is true.
 	
-Report turning on tutorial mode:
-	say "Tutorial mode is now on."
+Report turning on tutorial mode (this is the default report turning on tutorial mode rule):
+	say "Tutorial mode is now on." (A)
 
-Section 2 - Forcing player response
+Section 2 - The Instructional Rules
 
 The expected action is a stored action that varies.
 The held rule is a rule that varies. 
 The completed instruction list is a list of rules that varies.
 
-Understand "restore" or "quit" or "save" or "restart" or "version" as "[meta]".
+Understand "restore" or "quit" or "save" or "restart" or "version" as "[meta]". 
 
-[After reading a command when tutorial mode is true (this is the require correct response rule):
-	if the player's command includes "tutorial", make no decision;
-	if the player's command includes "[meta]", make no decision;
-	if the expected command is "", make no decision;
-	let the translated command be indexed text;
-	let the translated command be "[the player's command]";
-	replace the text "the " in the expected command with "";
-	replace the text "the " in the translated command with "";
-	if the translated command is the expected command:
-		now the expected command is "";
-		if the held rule is a selector listed in the Table of Instruction Followups:
-			choose row with a selector of the held rule in the Table of Instruction Followups;
-			say "[italic type][followup entry][roman type][paragraph break]";
-		otherwise:
-			say "[italic type][one of]Good[or]Good job[or]Very good[or]Excellent[or]Nice work[or]Superb[or]Perfect[at random][one of]![or].[at random][roman type]";
-		add the held rule to the completed instruction list;
-		now the held rule is the little-used do nothing rule;
-	otherwise:
-		say "[italic type][one of]Nope[or]No[or]Sorry[or]Whoops[at random][one of], that's not it[or][or] -- try again[at random].[roman type]";
-		reject the player's command; ]
-
-A first before rule:
+A first before rule (this is the react to expected actions rule):
 	if the current action is the expected action:
 		if the held rule is a selector listed in the Table of Instruction Followups:
 			choose row with a selector of the held rule in the Table of Instruction Followups;
-			say "[first custom style][followup entry][roman type][paragraph break]";
+			say "[followup entry][paragraph break]" (A);
 		add the held rule to the completed instruction list, if absent;
 		now the held rule is the little-used do nothing rule;
-
-Section 3 - The Instructional Rules
 
 Before reading a command when tutorial mode is true (this is the offer new prompt rule):
 	follow the instructional rules.
@@ -84,40 +61,38 @@ The instructional rules are a rulebook.
 
 An instructional rule (this is the teach looking rule): 
 	if the teach looking rule is listed in the completed instruction list, make no decision;
-	say "[first custom style]To get a look around, type LOOK and press return. If you do not want help getting started, type TUTORIAL OFF.[roman type]";
+	say "To get a look around, type LOOK and press return. If you do not want help getting started, type TUTORIAL OFF." (A);
 	now the expected action is the action of looking;
 	now the held rule is the teach looking rule;
 	rule succeeds.
 
-Carry out looking:
+Carry out looking (this is the register looking rule):
 	add the teach looking rule to the completed instruction list, if absent.
 
 An instructional rule (this is the teach examining rule): 
 	if the teach examining rule is listed in the completed instruction list, make no decision;
-	if the player can see a previously-mentioned non-player thing (called target):
-		let N be indexed text;
-		let N be "[the target]";
-		let M be indexed text;
+	if the player can see a previously-mentioned non-player thing (called target): 
+		let N be "[the target]"; 
 		let M be "[target]";
-		say "[first custom style]You can find out more if you LOOK AT [N in upper case] (or shorten it to L [M in upper case]).[roman type]";
+		say "You can find out more if you LOOK AT [N in upper case] (or shorten it to L [M in upper case])." (A);
 		now the expected action is the action of examining the target;
 		now the held rule is the teach examining rule;
 		rule succeeds;
 	otherwise:
 		make no decision.
 
-Carry out examining something: 
+Carry out examining something (this is the register examining rule): 
 	add the teach examining rule to the completed instruction list, if absent;
 
 An instructional rule (this is the teach more examining rule):
 	if the teach examining rule is not listed in the completed instruction list, make no decision;
 	if the teach more examining rule is listed in the completed instruction list, make no decision;
-	say "[first custom style]There are other things around here that you can look at too, if you like. You can check out other things in your surroundings, or LOOK AT ME to see yourself.[roman type]";
+	say "There are other things around here that you can look at too, if you like. You can check out other things in your surroundings, or LOOK AT ME to see yourself." (A);
 	now the expected action is the action of examining yourself;
 	now the held rule is the teach examining rule;
 	rule succeeds.
 
-Before examining yourself:
+Before examining yourself (this is the prepare to teach more examining rule):
 	add the teach more examining rule to the completed instruction list, if absent;
 
 An instructional rule (this is the teach compass directions rule):
@@ -136,10 +111,9 @@ An instructional rule (this is the teach compass directions rule):
 	otherwise:
 		make no decision;
 	if way is nothing:
-		make no decision;
-	let N be indexed text;
+		make no decision; 
 	let N be "[way]";
-	say "[first custom style][one of]Feel free to look around some more. When you're ready to move on from here, try[or]No rush, but just a reminder that when you want to move to a new location, you can go[stopping] [N in upper case].[roman type]";
+	say "[one of]Feel free to look around some more. When you're ready to move on from here, try[or]No rush, but just a reminder that when you want to move to a new location, you can go[stopping] [N in upper case]." (A);
 	now the expected action is the action of going way;
 	now the held rule is the teach compass directions rule;
 	now movement reminder is the time of day;
@@ -147,7 +121,7 @@ An instructional rule (this is the teach compass directions rule):
 
 Movement reminder is a time that varies.
 
-Carry out going:
+Carry out going (this is the register going rule):
 	add the teach compass directions rule to the completed instruction list, if absent.
 
 
@@ -155,22 +129,20 @@ Carry out going:
 An instructional rule (this is the teach dropping rule):
 	if the teach dropping rule is listed in the completed instruction list, make no decision;
 	unless the player carries at least two things, make no decision;
-	let target be a random thing carried by the player;
-	let N be indexed text;
+	let target be a random thing carried by the player; 
 	let N be "[the target]";
-	say "[first custom style]If you want to get rid of something that you're holding you can always drop it, like this: DROP [N in upper case].[roman type]";
+	say "If you want to get rid of something that you're holding you can always drop it, like this: DROP [N in upper case]." (A);
 	add the teach dropping rule to the completed instruction list, if absent;
 	rule succeeds.
 
-Carry out dropping something:
+Carry out dropping something (this is the register dropping rule):
 	add the teach dropping rule to the completed instruction list, if absent. 
 
 An instructional rule (this is the teach taking rule):
 	if the teach taking rule is listed in the completed instruction list, make no decision;
-	if the player can see a take-worthy thing (called target item):
-		let N be indexed text;
+	if the player can see a take-worthy thing (called target item): 
 		let N be "[the target item]";
-		say "[first custom style]You can pick things up when you see them, like this: TAKE [N in upper case].[roman type]";
+		say "You can pick things up when you see them, like this: TAKE [N in upper case]." (A);
 		now the expected action is the action of taking the target item;
 		now the held rule is the teach taking rule;
 		rule succeeds;
@@ -191,28 +163,26 @@ Definition: a thing is take-worthy:
 	if it is part of something:
 		no;
 	if it is in a closed container:
-		no;
-	if it is heavy:
-		no;
+		no; 
 	yes.
 
-Carry out taking something:
+Carry out taking something (this is the register taking rule):
 	add the teach taking rule to the completed instruction list, if absent.
 
 An instructional rule (this is the teach inventory rule): 
 	if the teach inventory rule is listed in the completed instruction list, make no decision;
 	if the player carries nothing, make no decision;
-	say "[first custom style]There's more we can do than just looking around. To check what you're holding at the moment, try typing INVENTORY, or I for short.[roman type]";
+	say "There's more we can do than just looking around. To check what you're holding at the moment, try typing INVENTORY, or I for short." (A);
 	now the expected action is the action of taking inventory;
 	now the held rule is the teach inventory rule;
 	rule succeeds.
 
-Carry out taking inventory:
+Carry out taking inventory (this is the register inventory rule):
 	add the teach inventory rule to the completed instruction list, if absent.
 
 A last instructional rule (this is the teach meta-features rule):
 	if the teach meta-features rule is listed in the completed instruction list, make no decision;
-	say "[first custom style]To save your current position, type SAVE. RESTORE allows you to bring back a game you have previously saved.[roman type]";
+	say "To save your current position, type SAVE. RESTORE allows you to bring back a game you have previously saved." (A);
 	add the teach meta-features rule to the completed instruction list;
 	rule succeeds. 
 
@@ -243,8 +213,7 @@ We can also add new instructional rules on the model of the existing ones. For e
 		if the player can see a previously-mentioned edible thing (called target item):
 			let N be indexed text;
 			now N is "[target item]";
-			say "[italic type]If you get hungry, you can always try eating the food you find. Try EAT [N in upper case].[roman type]";
-			now the expected command is "eat [N]";
+			say "[italic type]If you get hungry, you can always try eating the food you find. Try EAT [N in upper case].[roman type]"; 
 			now the held rule is the teach eating rule;
 			rule succeeds;
 		otherwise:
@@ -254,7 +223,7 @@ This is slightly complicated, so to go over the elements: the completed instruct
 
 We check whether the target is "previously-mentioned" because we want to make sure that, at each stage, the player is only being asked to interact with things that the text of the game has already mentioned to him. This excludes inventory objects when the player hasn't yet taken inventory, for instance, even though those objects are technically "visible".
 
-The "expected command" is what tutorial mode wants the player to type next. Any other input other than TUTORIAL MODE OFF or meta commands (SAVE, RESTORE, RESTART, QUIT, VERSION) will be rejected. This is a bit strict, but it matches the behavior of tutorial modes in many other games, which tend to demand precise cooperation in the early stages. The expected command does throw away "the", however, so that it doesn't matter whether the player types TAKE VIOLIN or TAKE THE VIOLIN.
+Earlier versions of this extension would strictly force the player to type exactly what was instructed, similar to the strict behavior of tutorial modes in casual games, but playtesting found that this was more annoying than helpful.
 
 We change "held rule" to the current rule (that is, in this example, the "teach eating rule") so that after the player's command is read, the parser can determine whether the player has learned this lesson or not, and, if he has, add this rule to the completed instruction list.
 
@@ -269,11 +238,13 @@ Example: * Silence in the Library - A very small environment showing how the ins
 	*: "Silence in the Library"
 	
 	Include Tutorial Mode by Emily Short.
-
+	
 	The Infinite Library is a room. "This is an entire planet devoted to nothing but books. Judging from your nearly-equatorial position, you must be near the biography section. Off to the west, you can see a small shop."
-
+	
 	The Little Shop is west of the Infinite Library. "The shop sells an assortment of doodads and tourist trinkets for those who have recently been perusing the books. The main library is back to the east."
-
+	
 	The paperweight is a thing in the Little Shop. The description of the paperweight is "It is shaped like the face of William Shakespeare -- as he would look if troubled with severe indigestion."
+	
+	Test me with "look / west / l paperweight / jump / look at me / take paperweight / i".
 
-No test commands are provided because they would be ineffective in this case.
+

@@ -1,6 +1,6 @@
-Version 2 of Postures by Emily Short begins here.
+Version 3 of Postures by Emily Short begins here.
 
-"Postures defines three postures -- seated, standing, and reclining -- and allows pieces of furniture to specify which postures are possible and preferred when the player is on those furnishings." 
+"Postures defines three postures -- seated, standing, and reclining -- and allows pieces of furniture to specify which postures are possible and preferred when the player is on those furnishings. Version 3 offers minor updates, mostly to improve the documentation." 
 
 Section 1 - The Concept
 
@@ -81,9 +81,9 @@ Instead of an actor lying down (this is the convert lying down rule):
 	otherwise:
 		if the player is the actor:
 			if the holder of the actor is a thing:
-				say "You can't lie down on [the holder of the actor].";
+				say "[We] [can't] lie down on [the holder of the actor]." (A);
 			otherwise:
-				say "There's nothing to lie on.";
+				say "[There's] nothing to lie on." (B);
 		rule fails.
 
 To decide whether (N - a person) can sit here:
@@ -109,9 +109,9 @@ Instead of an actor sitting down (this is the convert sitting down rule):
 	otherwise:
 		if the player is the actor:
 			if the holder of the actor is a thing:
-				say "You can't sit down on [the holder of the actor].";
+				say "[We] [can't] sit down on [the holder of the actor]." (A);
 			otherwise:
-				say "There's nothing to sit on.";
+				say "[There's] nothing to sit on." (B);
 		rule fails.
 
 Instead of an actor standing up (this is the convert standing up rule):
@@ -129,9 +129,9 @@ Instead of an actor standing up (this is the convert standing up rule):
 	otherwise:
 		if the player is the actor:
 			if the holder of the actor is a thing:
-				say "You can't lie down on [the holder of the actor].";
+				say "[We] [can't] lie down on [the holder of the actor]." (A);
 			otherwise:
-				say "There's nothing to stand on.";
+				say "[There's] nothing to stand on." (B);
 		rule fails.
 
 Section 6 - Disambiguating Postures
@@ -163,27 +163,27 @@ Taking position is an action applying to one posture.
 Check an actor taking position (this is the can't use inappropriate postures rule):
 	if the holder of the actor is not a room and the holder of the actor does not allow the posture understood:
 		if the actor is the player:
-			say "You can't take that position [in-on the holder of the actor].";
+			say "[We] [can't] take that position [in-on the holder of the actor]." (A);
 		otherwise if the actor is visible:
-			say "[The actor] can't take that position.";
+			say "[The actor] [can't] take that position." (B);
 		stop the action.
 
 Check an actor taking position (this is the can't use already used posture rule):
 	if the posture understood is the posture of the actor:
 		if the actor is the player:
-			say "You are already [the posture understood].";
+			say "[We] [are] already [the posture understood]." (A);
 		otherwise:
-			if the actor is visible, say "[The actor] is already [the posture understood].";
+			if the actor is visible, say "[The actor] [are] already [the posture understood]." (B);
 		stop the action.
 
 Carry out an actor taking position (this is the standard taking position rule):
 	now the posture of the actor is the posture understood.
 
 Report someone taking position (this is the stranger position report rule rule):
-	say "[The actor] is now [the posture of the actor][if the holder of the actor is not the location of the actor] [in-on the holder of the actor][end if]."
+	say "[The actor] [are] [if the story tense is present tense]now [end if][the posture of the actor][if the holder of the actor is not the location of the actor] [in-on the holder of the actor][end if]." (A)
 
 Report taking position (this is the standard position report rule):
-	say "You are now [the posture of the player][if the holder of the player is not the location] [in-on the holder of the player][end if]."
+	say "[We] [are] [if the story tense is present tense]now [end if][the posture of the player][if the holder of the player is not the location] [in-on the holder of the player][end if]." (A)
 
 To say in-on (item - a thing):
 	if the item is a container, say "in [the item]";
@@ -208,7 +208,7 @@ The arrival-posture rule is listed after the standard entering rule in the carry
 
 Check an actor going somewhere (this is the can't go without standing rule):
 	if the actor is in a room and the actor is not standing:
-		say "([if the actor is not the player][the actor] [end if]first standing up)[command clarification break]";
+		say "([if the actor is not the player][the actor] [end if]first standing up)[command clarification break]" (A);
 		silently try the actor taking position standing;
 		if the actor is not standing, stop the action.
 
@@ -222,7 +222,7 @@ Section 10 - Jump only when standing
 
 Check an actor jumping when the actor is not standing (this is the refuse jumping while not standing rule):
 	if the player is the actor:
-		say "You can hardly jump in this position.";
+		say "[We] [can't] jump in this position." (A);
 	stop the action.
 
 Postures ends here.
@@ -243,7 +243,7 @@ This definition would say that we're allowed to sit or lie down on the bunk bed,
 
 	>STAND ON BUNK BED
 
-will be rejected with
+will be rejected with "You can't take that position on the bunk bed."
 
 Section: Preferred Postures
 
@@ -251,7 +251,13 @@ In addition to permitted postures, furniture can have a "preferred" posture: it'
 
 	>GET ON BUNK BED
 
-without naming a posture.
+without naming a posture. To set a preferred posture, we would write, e.g.,
+
+	The posture of the bunk bed is reclining.
+	
+Or for an entire kind of furniture,
+
+	A chair is a kind of supporter. Every chair allows seated and standing. The posture of a chair is usually seated.
 
 Section: Entering and Leaving Furniture
 
@@ -281,7 +287,7 @@ Example: * Muddy Lawn - A room where the player can't sit on the ground, plus a 
 
 	Include Postures by Emily Short.
 
-	A chair is a kind of supporter. A chair is always enterable. Every chair allows seated and standing. A chair is usually seated.
+	A chair is a kind of supporter. A chair is always enterable. Every chair allows seated and standing. The posture of a chair is usually seated.
 
 	The Muddy Lawn is a posture-unfriendly room. West of the Muddy Lawn is the Driveway.
 

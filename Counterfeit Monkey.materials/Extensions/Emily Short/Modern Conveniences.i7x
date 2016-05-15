@@ -1,8 +1,10 @@
-Version 4 of Modern Conveniences by Emily Short begins here.
+Version 5 of Modern Conveniences by Emily Short begins here.
 
 "Modern Conveniences creates kitchen and bathroom kinds of room, which will automatically be furnished with a set of plausible appliances. (This was originally an example in the manual of how to create extensions, and an annotated version may still be found there.) Version 3 adds compatibility with Measured Liquid, modeling flowing water from taps."
 
-Include Plurality by Emily Short.
+[Updated for adaptive text and deprecations.]
+
+To turn is a verb. To flush is a verb. To flow is a verb.
 
 Part 1 - Kitchens
 
@@ -37,19 +39,19 @@ Chapter 2 - Switch Manipulation
 
 Setting action variables for opening a stove (this is the stove-opening rule):
 	let relevant oven be a random oven which is part of the noun;
-	change the noun to the relevant oven.
+	now the noun is the relevant oven.
 
 Setting action variables for switching on something which includes a switch (this is the redirecting switches for switching on rule):
 	let relevant switch be a random switch which is part of the noun;
-	change the noun to the relevant switch.
+	now the noun is the relevant switch.
 
 Setting action variables for switching off something which includes a switch (this is the redirecting switches for switching off rule):
 	let relevant switch be a random switch which is part of the noun;
-	change the noun to the relevant switch.
+	now the noun is the relevant switch.
 
 Before printing the name of a switch (called target) (this is the switch identification rule):
 	if the target is part of something:
-		say "[random thing which includes the target] ".
+		say "[random thing which includes the target] " (A).
 
 Chapter 3 - Tap Manipulation
 
@@ -60,34 +62,45 @@ Instead of an actor closing a tap:
 	try the actor switching off the noun.
 
 Report switching on a tap (this is the standard report switching taps on rule):
-	say "You turn on [the noun]." instead. [since "switch on" sounds weird in this context.]
+	say "[We] [turn] on [the noun]." (A) instead. [since "switch on" sounds weird in this context.]
 
 Report switching off a tap (this is the standard report switching taps off rule):
-	say "You turn off [the noun]." instead.
+	say "[We] [turn] off [the noun]." (A) instead.
 
 Report someone switching on a tap (this is the standard report someone switching taps on rule):
-	say "[The actor] turn[s] on [the noun]." instead. [since "switch on" sounds weird in this context.]
+	say "[The actor] [turn] on [the noun]." (A) instead. [since "switch on" sounds weird in this context.]
 
 Report someone switching off a tap (this is the standard report someone switching taps off rule):
-	say "[The actor] turn[s] off [the noun]." instead.
+	say "[The actor] [turn] off [the noun]." (A) instead.
 
 After examining something which includes a switched on tap (called relevant tap) (this is the report flowing water rule):
-	say "The water is flowing from [the relevant tap]."
+	say "The water [flow] from [the relevant tap]." (A)
 
 Instead of an actor inserting something into a drain (this is the no clogging drains rule):
 	if the player is the actor: 
-		say "Pointless.";
+		say "Pointless." (A);
 	stop the action.
 
 Understand "water" as a tap when the item described is switched off..
 
 Chapter 4 - Kitchen Assembly
 
-A cabinet is in every kitchen.
+A kitchen cabinet is a kind of cabinet.
+A kitchen cabinet is in every kitchen.
 A furniture counter is in every kitchen.
 A refrigerator is in every kitchen.
 A sink is in every kitchen.
 A stove is in every kitchen.
+
+Section 1 - Added Drawers (for use with Automated Drawers by Emily Short)
+
+Two drawers are part of every furniture counter.
+
+Section 2 - Added Dishes (for use with Dishes by Emily Short)
+
+Every kitchen cabinet contains 2 plates.
+Every kitchen cabinet contains 2 cups.
+Every kitchen cabinet contains 2 glasses.
 
 Part 2 - Bathrooms
 
@@ -104,7 +117,9 @@ Chapter 2 - Bathroom Assembly
 A sink is in every bathroom.
 A toilet is in every bathroom.
 A bath is in every bathroom.
-A cabinet is in every bathroom.
+
+A bathroom cabinet is a kind of cabinet.
+A bathroom cabinet is in every bathroom.
 
 Chapter 3 - Toilet Manipulation
 
@@ -114,27 +129,27 @@ Flushing is an action applying to one thing.
 
 Check an actor flushing a toilet (this is the block flushing toilets rule):
 	if the player can see the actor:
-		say "The toilet flushes dramatically." instead;
+		say "[The noun] [flush] dramatically." (A) instead;
 	stop the action.
 
 Check an actor flushing something (this is the block flushing non-toilets rule):
 	if the player is the actor:
-		say "[The noun] do[es]n't flush." instead;
+		say "[The noun] [don't] flush." (A) instead;
 	stop the action.
 
 Chapter 4 - Bathing and Washing
 
 Understand "take shower" or "take a shower" or "take bath" or "take a bath" or "bathe" or "wash" as bathing. Bathing is an action applying to nothing.
 
-Check bathing (this is the restrict baths to bathrooms rule):
+Check an actor bathing (this is the restrict baths to bathrooms rule):
 	if the location is not a bathroom:
 		if the player is the actor:
-			say "There's no good source of fresh water for washing." instead;
+			say "[There's] no good source of fresh water for washing." (A) instead;
 		stop the action.
 
 Check an actor bathing (this is the block bathing rule):
 	if the player is the actor:
-		say "You haven't time for a bath." instead;
+		say "[We] [don't] have time for a bath." (A) instead;
 	stop the action.
 
 Washing is an action applying to one thing. Understand "clean [something]" or "wet [something]" or "wash [something]" as washing.
@@ -147,12 +162,12 @@ Check an actor washing (this is the restrict washing to the proximity of sinks r
 		do nothing;
 	otherwise:
 		if the player is the actor:
-			say "There's no good source of fresh water for washing." instead;
+			say "[We] [can] see no good source of fresh water for washing." (A) instead;
 		stop the action;
 
 Check an actor washing (this is the block washing rule):
 	if the player is the actor:
-		say "It doesn't seem worth the bother." instead;
+		say "[regarding nothing]It [don't] seem worth the bother." (A) instead;
 	stop the action.
 
 Part 3 - Flowing Water (for use with Measured Liquid by Emily Short)
@@ -165,25 +180,25 @@ The flowing water is a liquid stream. The indefinite article is "some". The flow
 The water-backdrop is a privately-named backdrop.
 
 Rule for describing the fullness of the flowing water (this is the describe flowing water fullness rule):
-	say "looks clear and drinkable.[no line break]"
+	say "looks clear and drinkable.[no line break]" (A)
 
 Setting action variables for filling something with a switched on tap (this is the divert filling with taps rule):
-	change the second noun to the flowing water.
+	now the second noun is the flowing water.
 
 Setting action variables for pouring a switched on tap into something (this is the divert pouring taps rule):
-	change the noun to the flowing water.
+	now the noun is the flowing water.
 
 Setting action variables for switching on when the noun is a fluid container and the liquid of the noun is water (this is the divert TURN OFF WATER rule):
 	if the player can see some switched off taps (called target taps):
-		change the noun to the target taps;
+		now the noun is the target taps;
 	otherwise if the player can see some taps (called target taps):
-		change the noun to the target taps.
+		now the noun is the target taps.
  
 Setting action variables for switching off when the noun is a fluid container and the liquid of the noun is water (this is the divert TURN ON WATER rule):
 	if the player can see some switched on taps (called target taps):
-		change the noun to the target taps;
+		now the noun is the target taps;
 	otherwise if the player can see some taps (called target taps):
-		change the noun to the target taps.
+		now the noun is the target taps.
 
 Rule for clarifying the parser's choice of a fluid container while switching off (this is the avoid awkward fluid switchoffs rule):
 	do nothing instead.
@@ -206,13 +221,37 @@ Last carry out an actor switching off a tap (this is the remove water supply rul
 Instead of an actor pouring a fluid container into something which incorporates a drain (this is the sink-dumping fluids rule):
 	if the noun is empty:
 		if the player is the actor:
-			say "[The noun] is already empty." instead;
+			say "[The noun] [are] already empty." (A) instead;
 		stop the action;
 	now the fluid content of the noun is 0.0 fl oz;
 	if the player is the actor:
-		say "You dump out [the noun] into [the second noun].";
+		say "[We] [dump] out [the noun] into [the second noun].";
 	otherwise if the player can see the actor:
-		say "[The actor] dump[s] out [the noun] into [the second noun]."
+		say "[The actor] [dump] out [the noun] into [the second noun]."
+		
+Part 4 - Descriptive Features (for use with Tailored Room Description by Emily Short)
+
+Section 1 - Mention Things that are Running but Should Not be
+
+To stand is a verb.
+
+A last description-concealing rule (this is the running things aren't scenery rule): 
+	now every visible open refrigerator is marked for listing;
+	now every visible switched on tap is marked for listing.
+	
+Rule for writing a topic sentence about an open refrigerator (called item):
+	say "[The item] [stand] open, letting all the cold air out. ";
+	if the number of things in the item is 0:
+		say "[There's] nothing inside. ";
+	
+Rule for writing a paragraph about a switched on tap (called item):
+	say "[The item] [are] running.[paragraph break]"
+	
+A ranking rule for an open refrigerator (called special-target): 
+	increase description-rank of the special-target by 1.
+	
+A ranking rule for a switched on tap (called special-target): 
+	increase description-rank of the special-target by 1.
 
 Modern Conveniences ends here.
 
@@ -263,7 +302,7 @@ Example: * Our House - A minimalist house consisting of two rooms.
 
 	The description of a stove is "Scrupulously polished."
 
-	The description of a refrigerator is "It is baby blue and has the contours of a 50's chevy. One of these days it really will break down, but it's been serving your family faithfully since your grandmother's honeymoon."
+	The description of a refrigerator is "It is baby blue and has the contours of a 50[']s chevy. One of these days it really will break down, but it's been serving your family faithfully since your grandmother's honeymoon."
 
 	Test me with "x refrigerator / open fridge / x freezer / look in freezer / open freezer / turn on stove / turn on oven / x oven switch / turn off oven switch / turn off stove switch / turn on taps / x sink / w / x sink / turn on sink / take bath / use toilet". 
 
@@ -304,19 +343,19 @@ Example: ** Tidy Bowl - Adding a toilet bowl to every toilet, which will contain
 	A toilet bowl is a kind of fluid container. A toilet bowl is part of every toilet. The liquid of a toilet bowl is toilet water. The fluid content of a toilet bowl is 163.0 fl oz. The fluid capacity of a toilet bowl is 163.0 fl oz.
 
 	Setting action variables for pouring a toilet into something:
-		change the noun to a random toilet bowl which is part of the noun.
+		now the noun is a random toilet bowl which is part of the noun.
 	
 	Setting action variables for filling something with a toilet:
-		change the second noun to a random toilet bowl which is part of the second noun.
+		now the second noun is a random toilet bowl which is part of the second noun.
 	
 	Setting action variables for filling a toilet with something:
-		change the noun to a random toilet bowl which is part of the noun.
+		now the noun is a random toilet bowl which is part of the noun.
 	
 	Setting action variables for pouring something into a toilet:
-		change the second noun to a random toilet bowl which is part of the second noun.
+		now the second noun is a random toilet bowl which is part of the second noun.
 	
 	Setting action variables for drinking a toilet:
-		change the noun to a random toilet bowl which is part of the noun.
+		now the noun is a random toilet bowl which is part of the noun.
 
 	Rule for clarifying the parser's choice of a toilet:
 		do nothing.

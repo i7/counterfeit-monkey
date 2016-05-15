@@ -52,7 +52,7 @@ Section 3 - Writing Paragraph Rules
 		
 Rule for writing a paragraph about a deeply dull thing (called special-target) (this is the ordinary items rule):
 	carry out the disclosing contents activity with the holder of the special-target;
-	carry out the giving surrounding details for activity with the special-target;
+	carry out the giving-surrounding-details-for activity with the special-target;
 	now held-break is true;
 	say "[run paragraph on]"; 
 
@@ -84,13 +84,13 @@ Rule for writing a paragraph about something (called special-target) (this is th
 	carry out the writing a topic sentence about activity with the special-target;
 	if the holder of the special-target is not the location and the holder of the special-target is not referenced by current-paragraph:
 		carry out the disclosing exterior activity with the special-target; 
-	carry out the giving surrounding details for activity with the special-target;
+	carry out the giving-surrounding-details-for activity with the special-target;
 	now held-break is true;
 	say "[run paragraph on]";
 
-Giving surrounding details for something is an activity on objects.
+Giving-surrounding-details-for something is an activity on objects.
 
-Rule for giving surrounding details for something (called the special-target) (this is the standard surroundings rule):
+Rule for giving-surrounding-details-for something (called the special-target) (this is the standard surroundings rule):
 	while a surprising thing (called second special-target) is referenced by the current-paragraph:
 		carry out the disclosing contents activity with the second special-target;
 		now every thing contained by the second special-target is mentioned;
@@ -139,6 +139,7 @@ Definition: a person is surprising:
 Disclosing contents of something is an activity. Disclosing exterior of something is an activity.
  
 Rule for disclosing exterior of something (called special-target) (this is the standard-exterior rule):
+	let the chosen table be the current-NC-table;
 	now current-subject is special-target; [so that printing routines can refer to it]
 	now first-subject is special-target;
 	let nesting be false;
@@ -150,8 +151,8 @@ Rule for disclosing exterior of something (called special-target) (this is the s
 		now count-of-mentionable-contents is the number of mentionable things held by the current-exterior;
 		now count-of-mentioned-contents is the number of mentioned things held by the current-exterior;
 		now nesting is false;
-		if the holder of the current-subject is a person, let the chosen table be current-NC-table;
-		otherwise let the chosen table be the current-NE-table; 
+		if the holder of the current-subject is a person, now the chosen table is the current-NC-table;
+		otherwise now the chosen table is the current-NE-table; 
 		choose a random row in the chosen table;
 		say "[disclosure entry][run paragraph on]";
 		if the count-of-mentionable-contents is greater than 0 and the current-exterior is in a room and the current-subject is the first-subject:
@@ -254,7 +255,7 @@ disclosure
 
 Table of Subject Introductions
 disclosure
-"[if the current-subject is the first-subject][Cap it-they of current-subject][otherwise][The current-subject][end if] [sits]"
+"[if the current-subject is the first-subject][regarding current-subject][They][otherwise][The current-subject][end if] [sits]"
 
 Table of Nesting Carriers
 disclosure
@@ -277,12 +278,12 @@ disclosure
 "[holding-and-wearing][run paragraph on]"
 
 To say holding-and-wearing:
-	say "[if the prior named noun is the current-subject][Cap it-they of current-subject][otherwise][The current-subject][end if] ";
+	say "[if the prior named noun is the current-subject][regarding current-subject][They][otherwise][The current-subject][end if] ";
 	if the current-subject carries something mentionable and the current-subject wears something mentionable
 	begin;
 		if the number of mentionable things held by the current-subject is greater than 5
 		begin;
-			say "[if the current-subject acts plural]have[otherwise]has[end if] [a list of things carried by the current-subject]. [Cap it-they of current-subject] is wearing [a list of things worn by the current-subject]. [run paragraph on]";
+			say "[if the current-subject acts plural]have[otherwise]has[end if] [a list of things carried by the current-subject]. [regarding current-subject][They] [are] wearing [a list of things worn by the current-subject]. [run paragraph on]";
 		otherwise;
 			say "[is-are] carrying [a list of things carried by the current-subject] and wearing [a list of things worn by the current-subject]. [run paragraph on]";
 		end if;

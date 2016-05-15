@@ -47,55 +47,55 @@ Yawning is an action applying to nothing. Understand "yawn" as yawning.
 Section 2 - Their Reports
 
 Report smiling (this is the standard report smiling rule):
-	say "[You] smile."
+	say "[We] smile."
 
 Report someone smiling (this is the standard report others smiling rule):
 	say "[The person asked] smiles."
 
 
 Report frowning (this is the standard report frowning rule):
-	say "[You] frown."
+	say "[We] frown."
 
 Report someone frowning (this is the standard report others frowning rule):
 	say "[The person asked] frowns."
 
 
 Report laughing (this is the standard report laughing rule):
-	say "[You] [one of]chuckle[or]laugh[at random]."
+	say "[We] [one of]chuckle[or]laugh[at random]."
 
 Report laughing for the second turn:
-	say "[You] [one of]laugh heartily[or]guffaw[at random]." instead.
+	say "[We] [one of]laugh heartily[or]guffaw[at random]." instead.
 
 Report laughing for the third turn:
-	say "[You] [one of]laugh until gasping for breath[or]are doubled over laughing[or]laugh and laugh[at random]." instead.
+	say "[We] [one of]laugh until gasping for breath[or]are doubled over laughing[or]laugh and laugh[at random]." instead.
 
 Report someone laughing (this is the standard report others laughing rule):
 	say "[The person asked] laughs."
 
 
 Report scoffing (this is the standard report scoffing rule):
-	say "[You] [one of]snicker[or]snort[at random]."
+	say "[We] [one of]snicker[or]snort[at random]."
 
 Report someone scoffing (this is the standard report others scoffing rule):
 	say "[The person asked] snorts."
 
 
 Report crying (this is the standard report crying rule):
-	say "[You] sob."
+	say "[We] sob."
 
 Report someone crying (this is the standard report others crying rule):
 	say "[The person asked] sobs."
 
 
 Report shrugging (this is the standard report shrugging rule):
-	say "[You] shrug."
+	say "[We] shrug."
 
 Report someone shrugging (this is the standard report others shrugging rule):
 	say "[The person asked] shrugs."
 
 
 Report yawning (this is the standard report yawning rule):
-	say "[You] yawn."
+	say "[We] yawn."
 
 Report someone yawning (this is the standard report others yawning rule):
 	say "[The person asked] yawns."

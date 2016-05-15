@@ -1,8 +1,10 @@
-Version 9 of Facing by Emily Short begins here.
+Version 10 of Facing by Emily Short begins here.
 
 "Provides actions to face a direction, look toward a named room, or look through a named door."
 
-Include Plurality by Emily Short.
+To look is a verb. To see is a verb.
+
+[Includes adaptive text.]
 
 [ There are three possible ways the player can specify that he wishes to look into another room from the present location:
 
@@ -17,10 +19,8 @@ A door can be transparent.
 [Now some routines to help us handle all this. ]
 
 To decide what object is the door between (this place - a room) and (that place - a room):
-	repeat with item running through doors enclosed by this place
-	begin;
-		if that place is the front side of the item or that place is the back side of the item, decide on the item;
-	end repeat;
+	repeat with item running through doors enclosed by this place:
+		if that place is the front side of the item or that place is the back side of the item, decide on the item; 
 	decide on nothing. 
 
 Definition: a room (called the considered room) is proximate: 
@@ -39,17 +39,15 @@ Instead of someone trying searching a door (this is the other person looking thr
 	
 This is the looking through doors rule:
 	now the direction faced is the direction of the noun from the location; 
-	if direction faced is not a direction
-	begin;
+	if direction faced is not a direction:
 		if the player is the person asked,
-			say "[nothing-to-see-that-way][paragraph break]";
-		stop the action;
-	end if;
+			say "[nothing-to-see-that-way][paragraph break]" (A);
+		stop the action; 
 	now the viewed location is the other side of the noun; 
 	if the player is the person asked, try looking toward the viewed location;
 	otherwise try the person asked trying looking toward the viewed location.
 
-nothing-to-see-that-way is some text that varies. nothing-to-see-that-way is "You can make out nothing that way."
+nothing-to-see-that-way is some text that varies. nothing-to-see-that-way is "[We] [can] make out nothing that way."
 	
 
 Understand "look [direction]" as facing. Understand "face [direction]" as facing. Understand "look to/toward/towards [direction]" as facing.
@@ -76,10 +74,10 @@ Check someone trying facing (this is the redirect someone to looking toward rule
 		rule succeeds.
 	
 Report facing (this is the standard report facing rule): 
-	if viewed location is not a room, say "[nothing-to-see-that-way][paragraph break]".
+	if viewed location is not a room, say "[nothing-to-see-that-way][paragraph break]" (A).
 	
 Report someone trying facing (this is the standard report someone facing rule):
-	if viewed location is not a room, say "There's not much for [the person asked] to see in that direction."
+	if viewed location is not a room, say "[regarding nothing]There [aren't] much for [the person asked] to see in that direction." (A)
 
 [Here is where we might also add special rules for "look up" or "look down" if so inclined: Instead of looking up: might be a good place to put in comments about a ceiling or sky object if there is one, for instance. The extension does not preprogram anything like this on the assumption that games will vary widely in their furnishings, but it would be easy to put in.]
 
@@ -91,45 +89,34 @@ Looking toward is an action applying to one visible thing.
  
 Check an actor looking toward a room (this is the can't see through closed door rule): 
 	now the occluding door is the door direction faced from the location;  
-	if the occluding door is a door and the occluding door is closed and the occluding door is not transparent
-	begin;
-		if the person asked is the player
-		begin;
-			if the sequential action option is active
-			begin;
+	if the occluding door is a door and the occluding door is closed and the occluding door is not transparent:
+		if the person asked is the player:
+			if the sequential action option is active:
 				try opening the occluding door;
-			otherwise;
-				say "(first opening [the occluding door])[command clarification break]";
-				silently try opening the occluding door;
-			end if;
-		otherwise;
-			try the person asked trying opening the occluding door;
-		end if;
-		if the occluding door is closed
-		begin;
-			if the player is not the person asked, say "[The person asked] can't see that way because [the occluding door] [is-are] closed." instead;
-			stop the action;
-		end if;
-	end if.
+			otherwise:
+				say "(first opening [the occluding door])[command clarification break]" (A);
+				silently try opening the occluding door; 
+		otherwise:
+			try the person asked trying opening the occluding door; 
+		if the occluding door is closed:
+			if the player is not the person asked, say "[The person asked] [can't] see that way because [the occluding door] [are] closed." (B) instead;
+			stop the action; 
 
 
 Use sequential action translates as (- Constant SEQUENTIAL_ACTION; -). 
 
 Carry out looking toward (this is the describing a room from afar rule):
 	carry out the distantly describing activity with the noun.
-	
-Report someone trying looking toward:
-	let N be indexed text;
-	now N is "[the noun]";
-	say "[The person asked] looks toward [N in lower case]."
-	
+
+Report someone trying looking toward (this is the default report someone looking toward rule): 
+	let N be "[the noun]";
+	say "[The person asked] [look] toward [N in lower case]." (A)
 
 Distantly describing something is an activity.
 
 Rule for distantly describing a room (called target) (this is the default distant description rule):
-	let N be indexed text;
-	now N is "[the target]"; 
-	say "You make out [N in lower case] that way."
+	let N be "[the target]"; 
+	say "[We] [see] [N in lower case] that way." (A)
 
 Facing ends here.
 
@@ -184,10 +171,9 @@ Section: Distantly describing
 
 Finally, Facing adds a distantly describing activity that controls how a room is seen from the outside. By default, this is the distantly describing rule:
 
-	Rule for distantly describing a room (called target):
-		let N be indexed text;
-		now N is "[the target]";
-		say "You make out [N in lower case] that way."
+	Rule for distantly describing a room (called target): 
+		let N be "[the target]";
+		say "[We] [see] [N in lower case] that way."
 
 But we may change this for a specific room, so:
 
@@ -226,6 +212,8 @@ Section: Change log
 Version 5 isolates some of the text to make it more replaceable and upgrades the documentation with better section headings. Version 6 updates for the greater strictness of Inform 5T18, which requires that we say doors can be transparent before making them so. 
 
 Version 9 updates for 6E59, removing deprecated features. It also removes a number of phrases formerly defined inside Facing, because equivalent ones are now built into the standard rules.
+
+Version 10 updates for adaptive text and responses.
 
 Example: * Directions and Doors - Allowing the player and his sidekick Clark to see into various rooms.
 

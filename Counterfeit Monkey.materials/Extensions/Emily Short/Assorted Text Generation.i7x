@@ -1,7 +1,5 @@
-Version 4 of Assorted Text Generation by Emily Short begins here.
-
-Include Plurality by Emily Short.  
-
+Version 5 of Assorted Text Generation by Emily Short begins here.
+ 
 Section 1 - Selections of a Group
 
 To say selection of (superset - a description of objects) conforming to the description (subset - a description of objects) is-are:
@@ -12,31 +10,100 @@ To say selection of (superset - a description of objects) conforming to the desc
 		rule succeeds;
 	if the subset count is the superset count:
 		if subset count is 0:
+			say "nothing is";
 			rule succeeds;
 		otherwise:
 			say "[subset is-are all]";
 	otherwise:
 		if subset count is 0:
-			say "[none of superset is-are]";
-		otherwise if subset count is 1:
-			say "[the list of the members of subset] is";
+			if superset count is 1:
+				let target object be a random member of the subset;
+				say "[regarding the target object][They] [are] not";
+			else:
+				say "[none of superset is-are]";
 		otherwise:
-			say "[the list of the members of subset] are".
+			say "[the list of the members of subset] [are]".
+
+
+To say (subset - a list of objects) out of (superset - a list of objects) is-are:
+	let subset count be the number of entries in subset;
+	let superset count be the number of entries in superset;
+	if the subset count is greater than superset count:
+		say "BUG: author has misdefined sets"; 
+		rule succeeds;
+	if the subset count is the superset count:
+		if subset count is 0:
+			say "nothing is";
+			rule succeeds;
+		otherwise:
+			say "[subset with definite articles] [are] all";
+	otherwise:
+		if subset count is 0:
+			if superset count is 1:
+				let target object be entry 1 in subset;
+				say "[regarding the target object][They] [are] not";
+			else:
+				say "None [are]";
+		otherwise:
+			say "[subset with definite articles] [are]".
+
+
+To say (subset - a list of objects) out of (superset - a list of objects):
+	let subset count be the number of entries in subset;
+	let superset count be the number of entries in superset;
+	if the subset count is greater than superset count:
+		say "BUG: author has misdefined sets"; 
+		rule succeeds;
+	if the subset count is the superset count:
+		if subset count is 0:
+			say "nothing";
+			rule succeeds;
+		otherwise:
+			say "[subset with definite articles]";
+	otherwise:
+		if subset count is 0:
+			if superset count is 1:
+				let target object be entry 1 in subset;
+				say "[regarding the target object][They] not";
+			else:
+				say "None ";
+		otherwise:
+			say "[subset with definite articles]".
+			
+To describe which (superset - a description of objects) are (subset - a description of objects) with members being (member text - some text), when necessary:
+	if when necessary:
+		let subset count be the number of members of subset;
+		if subset count is 0:
+			rule succeeds;
+	let N be "[selection of the superset conforming to the description subset is-are]";
+	say "[N in sentence case] [member text]. ".
+			
+To describe which (superset - a description of objects) are (subset - a description of objects) rather than (difference set - a description of objects) with members being (member text - some text) and nonmembers being (nonmember text - some text):
+	let subset count be the number of members of subset;
+	let superset count be the number of members of superset; 
+	let difference count be the superset count minus subset count; 
+	if (difference count is greater than 0 and the difference count is less than subset count) or the subset count is 0:
+		let N be "[selection of the superset conforming to the description difference set is-are]";
+		say "[N in sentence case] [nonmember text]. ";
+	else:		
+		let N be "[selection of the superset conforming to the description subset is-are]";
+		say "[N in sentence case] [member text]. ".
+
 
 To say none of (superset - a description of objects) is-are:
 	if the number of members of superset is 2:
-		say "neither is";
+		say "[regarding the superset]neither [are]";
 	otherwise:
-		say "none are".
+		say "[regarding the superset]none [are]".
 
 To say (superset - a description of objects) is-are both/all:
 	let superset count be the number of members of superset;
 	if the superset count is 1:
-		say "[one of]it's[or]it is[purely at random]";
+		say "[regarding the superset][they] [are]";
 	if the superset count is 2:
-		say "[one of]both of them are[or]both are[or]they are both[or]they're both[purely at random]";
+		say "[regarding the superset][one of]both of them [are][or]both [are][or]they [are] both[purely at random]";
 	if the superset count is greater than 2:
-		say "[one of]they are all[or]they're all[or]every one of them is[or]all [superset count in words] are[purely at random]".   
+		say "[regarding the superset][one of]they [are] all[or]all [superset count in words] [are][purely at random]".   
 
 To say explicit none of (superset - a description of objects) is-are: 
 	let first be a random member of the superset;
@@ -44,19 +111,17 @@ To say explicit none of (superset - a description of objects) is-are:
 	while the first is the second:
 		let second be a random member of the superset;
 	if the number of members of superset is 2:
-		say "neither [the first] nor [the second] is";
+		say "[regarding the superset]neither [the first] nor [the second] [are]";
 	otherwise:
-		say "none of [the list of members of the superset] are".
+		say "[regarding the superset]none of [the list of members of the superset] [are]".
 
 To say explicit both (superset - a description of objects) is-are:
 	say explicit both superset;
 	let superset count be the number of members of superset;
-	if the superset count is 1:
-		say " is";
-	if the superset count is 2:
-		say " are";
+	if the superset count is less than 3:
+		say "[regarding the superset] [are]";
 	if the superset count is greater than 2:
-		say " are all".
+		say "[regarding the superset] [are] all".
 
 To say explicit both (superset - a description of objects):
 	let superset count be the number of members of superset;
@@ -70,16 +135,18 @@ To say explicit both (superset - a description of objects):
 To say explicit (superset - a description of objects) is-are both/all:
 	let superset count be the number of members of superset;
 	if the superset count is 1:
-		say "[the list of the members of superset] is";
+		say "[the list of the members of superset] [are]";
 	if the superset count is 2:
-		say "[the list of the members of superset] are both";
+		say "[the list of the members of superset] [are] both";
 	if the superset count is greater than 2:
-		say "[the list of the members of superset] are all". 
+		say "[the list of the members of superset] [are] all". 
+		
+Section 2 - Temporal relations
 
 To say next:
 	say "[one of]after a moment[or]then[or]shortly[or]just then[or]next[or]moments later[at random]";
 
-Section 2 - Numbers
+Section 3 - Numbers
 	
 To say numerical ordinal of (N - a number):
 	say "[N]";
@@ -101,29 +168,22 @@ To say numerical ordinal of (N - a number):
 	end if;
 
 To say ordinal of (N - a number):
-	if N is a number listed in the Table of Ordinals
-	begin;
+	if N is a number listed in the Table of Ordinals:
 		choose row with a number of N in the Table of Ordinals;
 		say ordinal entry;
-	otherwise;
-		if N is greater than 20
-		begin;
+	otherwise:
+		if N is greater than 20:
 			let X be N divided by 10;
 			now X is X times 10;
 			let Y be the remainder after dividing N by 10;
-			if Y is zero
-			begin;
-				let enumeration be indexed text;
+			if Y is zero:
 				let enumeration be "[X in words]";
 				replace the regular expression "(.*)y" in enumeration with "\1ie";
 				say "[enumeration]th";
-			otherwise;
-				say "[X in words]-[ordinal of Y]";
-			end if;
-		otherwise;
-			say "[N in words]th";
-		end if;
-	end if.
+			otherwise:
+				say "[X in words]-[ordinal of Y]"; 
+		otherwise:
+			say "[N in words]th";  
 
 Table of Ordinals
 number	ordinal
@@ -141,10 +201,10 @@ number	ordinal
 12	"twelfth" 
 20	"twentieth" 
 
-To decide what number is (N - a number) to the nearest (A - a number):
+[To decide what number is (N - a number) to the nearest (A - a number):
 	now N is N divided by A;
 	now N is N times A;
-	decide on N. 
+	decide on N. ]
 
 To say (count - a number) in round numbers:
 	repeat through the Table of Numerical Approximation
@@ -180,9 +240,15 @@ threshold	approximation
 2000	"hundreds of"	
 30000	"thousands of"
 
-Section 3 - Proportional Phrases
+Section 4 - Proportional Phrases
 
-To say (N - a number) as a proportion:
+To say proportion of (superset - a description of objects) conforming to the description (subset - a description of objects) is-are:
+	let subset count be the number of members of subset;
+	let superset count be the number of members of superset;
+	say subset count as a proportion of superset count;
+	say " [are]";
+
+To say (N - a number) as a/-- proportion:
 	if N is greater than 100:
 		say "*** BUG: [N] being printed as a percentage ***";
 	repeat through the Table of Proportions:
@@ -203,9 +269,14 @@ threshold	approximation
 101	" all"
 
 To say about:
-	say "[one of]about[or]around[or]approximately[or]roughly[at random]";
+	say "[one of]about[or]around[or]approximately[or]roughly[at random]".
+	
+To say (N - a number) as a/-- proportion of (denominator - a number):
+	let fraction be N * 100;
+	let fraction be fraction / denominator; 
+	say fraction as a proportion.
 
-Section 4 - Locational Phrases
+Section 5 - Locational Phrases
 
 To say in-on (item - a thing):
 	if the item is a container, say "in [item]";
@@ -229,7 +300,7 @@ To say placement of (item - a thing):
 	otherwise:
 		say "[in-on the holder of the item]".
 
-Section 5 - Phrases about You
+Section 6 - Phrases about You
 
 To say you or (culprit - a person):
 	if the culprit is the player, say "you";
@@ -309,12 +380,31 @@ This removes the need for numerous variant phrases for capitalized output.
 
 Section: Selection
 
-	After looking:
-		let N be indexed text;
+	After looking: 
 		let N be "[selection of the visible doors conforming to the description open visible doors is-are]";
 		say "[N in sentence case] open.". 
 
 to produce such phrases as "Neither of them is open.", "All three of them are open.", "The black door is open.", and so on. It is necessary to give both descriptions in full and not to take a shortcut such as "selection of the visible doors which are open". It is the author's responsibility to ensure that the subset description is really a subset of the superset description. (It would be possible to check for this within Inform, but at some runtime performance cost if the sets are complicated; so we preferred the speedier option.)
+
+Along the same lines, we can write
+
+	describe which visible doors are open visible doors with members being "open";
+
+which will produce the entire sentence as given above, followed by a full stop and a space but no line break. Sometimes we may want to suppress this sentence if no members belong to the relevant set, in which case we may write
+
+	describe which visible doors are open visible doors with members being "open", when necessary;
+
+which will print no sentence in the case that no open visible doors exist. 
+
+Note that this isn't a say phrase, and the reason is that we need to be able to pass those bits of text such as "open" that could not be embedded within a larger phrase.
+
+A slighly more sophisticated option is:
+
+	describe which visible doors are open visible doors rather than closed visible doors with members being "open" and nonmembers being "closed";
+
+to generate text such as "The green door is closed." or "The green door and the blue door are open." This phrase produces a sentence that ends with a full stop and a space but does not conclude the paragraph, so it is suitable for including in longer paragraphs. 
+
+This phrase will always choose to write the sentence that requires the least enumeration, so if there are five doors in a room and all but the red one are open, it will say "The red door is closed." rather than "The green door, the blue door, the yellow door, and the pink door are open." 
 
 Section: Numbers
 
@@ -382,4 +472,38 @@ And (for use in first-person contexts) there is also
 	the vicar or I
 
 As usual, these should be explicitly sentence-cased if necessary, with the exception that "I" is always printed in the upper case by default.
+
+Example: * Door Count - A dynamic description of doors
+
+Here we use the selection feature to describe which doors are open out of a group. Different rooms have different numbers of doors that could be open or closed, and we want our description to be as succinct as possible.
+
+	*: "Door Count" by Emily Short
 	
+	Include Assorted Text Generation by Emily Short.
+	
+	The Reading Room is a room. 
+	
+	The arched door is a door. It is west of the Reading Room and east of the Rare Book Room.
+	
+	The solid door is a door. It is south of the Reading Room and north of the Circulation Desk.
+	
+	The flimsy door is a door. It is north of the Reading Room and south of the Supply Closet. The flimsy door is locked.
+	
+	The green door is a door. It is east of the Reading Room and west of the Library Garden.
+	
+	The felt covered door is a door. It is north of the Rare Book Room and south of the Restoration Room.
+	
+	The flimsy key unlocks the flimsy door. The player carries the flimsy key.
+	
+	To lead is a verb.
+	
+	Rule for writing a paragraph about a door:
+		say "[A list of visible doors] [lead] out of this room. ";
+		describe which visible doors are open visible doors rather than closed visible doors with members being "[one of]standing open[or]ajar[or]open[at random]" and nonmembers being "[one of]shut[or]closed[or]firmly shut[at random]";
+		describe which visible doors are locked visible doors with members being "locked", when necessary;
+		say paragraph break.
+		
+	Test me with "open arched door / look / open green door / look / open solid door / look / unlock flimsy door with flimsy key / look / close green door / look / open flimsy door / look / open green door / look / go through the arched door / open the felt door / look / close felt door / close arched door / look / open felt / go through felt / look / close felt / look".
+	
+ 
+

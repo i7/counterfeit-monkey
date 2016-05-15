@@ -58,7 +58,7 @@ A clicking graphlink rule (this is the default command replacement by graphlinks
 	repeat through the Table of Graphlink Glulx Replacement Commands in reverse order:
 		if the current graphlink x >= p-left entry and the current graphlink x <= p-right entry and the current graphlink y >= p-top entry and the current graphlink y <= p-bottom entry:
 			cancel input in main window;
-			change the glulx replacement command to replacement entry;
+			now the glulx replacement command is replacement entry;
 			rule succeeds;
 	now glulx replacement command is "".
 
@@ -67,19 +67,19 @@ Part 4a (for use without Graphical Window Sprites by Erik Temple)
 To set a graphlink identified as (newlinkid - some text) from (gleft - a number) by (gtop - a number) to (gright - a number) by (gbottom - a number) as (linkaction - some text):
 	if there is a linkid of newlinkid in the Table of Graphlink Glulx Replacement Commands:
 		choose row with linkid of newlinkid in the Table of Graphlink Glulx Replacement Commands;
-		change p-top entry to gtop;
-		change p-bottom entry to gbottom;
-		change p-left entry to gleft;
-		change p-right entry to gright;
-		change replacement entry to linkaction;
+		now p-top entry is gtop;
+		now p-bottom entry is gbottom;
+		now p-left entry is gleft;
+		now p-right entry is gright;
+		now replacement entry is linkaction;
 	otherwise if the number of blank rows in the Table of Graphlink Glulx Replacement Commands is greater than 0:
 		choose a blank row in the Table of Graphlink Glulx Replacement Commands;
-		change linkid entry to newlinkid;
-		change p-top entry to gtop;
-		change p-bottom entry to gbottom;
-		change p-left entry to gleft;
-		change p-right entry to gright;
-		change replacement entry to linkaction.
+		now linkid entry is newlinkid;
+		now p-top entry is gtop;
+		now p-bottom entry is gbottom;
+		now p-left entry is gleft;
+		now p-right entry is gright;
+		now replacement entry is linkaction.
 
 To clear the graphlink identified as (dellinkid - some text):
 	if there is a linkid of dellinkid in the Table of Graphlink Glulx Replacement Commands:
@@ -96,19 +96,19 @@ Part 4b (for use with Graphical Window Sprites by Erik Temple)
 To set a graphlink identified as (newlinkid - a sprite) from (gleft - a number) by (gtop - a number) to (gright - a number) by (gbottom - a number) as (linkaction - some text):
 	if there is a linkid of newlinkid in the Table of Graphlink Glulx Replacement Commands:
 		choose row with linkid of newlinkid in the Table of Graphlink Glulx Replacement Commands;
-		change p-top entry to gtop;
-		change p-bottom entry to gbottom;
-		change p-left entry to gleft;
-		change p-right entry to gright;
-		change replacement entry to linkaction;
+		now p-top entry is gtop;
+		now p-bottom entry is gbottom;
+		now p-left entry is gleft;
+		now p-right entry is gright;
+		now replacement entry is linkaction;
 	otherwise if the number of blank rows in the Table of Graphlink Glulx Replacement Commands is greater than 0:
 		choose a blank row in the Table of Graphlink Glulx Replacement Commands;
-		change linkid entry to newlinkid;
-		change p-top entry to gtop;
-		change p-bottom entry to gbottom;
-		change p-left entry to gleft;
-		change p-right entry to gright;
-		change replacement entry to linkaction.
+		now linkid entry is newlinkid;
+		now p-top entry is gtop;
+		now p-bottom entry is gbottom;
+		now p-left entry is gleft;
+		now p-right entry is gright;
+		now replacement entry is linkaction.
 
 To clear the graphlink identified as (dellinkid - a sprite):
 	if there is a linkid of dellinkid in the Table of Graphlink Glulx Replacement Commands:
@@ -116,8 +116,7 @@ To clear the graphlink identified as (dellinkid - a sprite):
 		blank out the whole row.
 
 Table of Graphlink Glulx Replacement Commands
-linkid	p-top	p-bottom	p-left	p-right	replacement
-sprite	a number	a number	a number	a number	some text
+linkid (sprite)	p-top (a number)	p-bottom (a number)	p-left  (a number)	p-right (a number)	replacement (some text)
 with 25 blank rows
 
 

@@ -1,8 +1,10 @@
-Version 4 of Automated Drawers by Emily Short begins here.
+Version 6 of Automated Drawers by Emily Short begins here.
 
 "Creates a drawer kind of container, which is designed to be part of an item of furniture. Automatically parses names such as 'top drawer' or 'fourth drawer' or 'left drawer'; adds some features for describing furniture with drawers."
 
 Section 1 - Main body
+
+To open is a verb.
 
 Include Assorted Text Generation by Emily Short.
 
@@ -50,7 +52,7 @@ Include (-
 Include Complex Listing by Emily Short;
 
 Before printing the name of a drawer (called target) which is not solo while not asking which do you mean (this is the tagging drawers rule): 
-	say "[described-position of target] ".
+	say "[described-position of target] " (A).
 	
 To say described-position of (target - a drawer):
 	if the target is middle:
@@ -68,27 +70,27 @@ To say described-position of (target - a drawer):
 		otherwise if the target is bottom:
 			say "lower";
 		otherwise:
-			say "[drawer position]";
+			say "[drawer position of target]";
 	otherwise:
-		say "[drawer position]".
+		say "[drawer position of target]".
 	
 Rule for printing the name of a drawer (called target) while asking which do you mean (this is the abbreviating drawer names for special situations rule):
 	let N be the number of things which incorporate matched drawers;
 	if N is 1:
-		say "[described-position of target]";
+		say "[described-position of target]" (A);
 	otherwise if the number of matched drawers is N:
-		say "drawer of [the random thing which incorporates the target]";
+		say "drawer of [the random thing which incorporates the target]" (B);
 	otherwise if the number of matched drawers is greater than four:
-		say "[described-position of target]";
+		say "[described-position of target]" (C);
 	otherwise:
-		say "[described-position of target] drawer of [the random thing which incorporates the target]".
+		say "[described-position of target] drawer of [the random thing which incorporates the target]" (D).
 
 Rule for clarifying the parser's choice of a drawer (called target) when everything matched is a drawer (this is the very specific parser choice of drawers rule):
 	let N be the number of things which incorporate a matched drawer;
 	if N is 1:
 		make no decision;
 	otherwise:
-		say "([the target] of [the random thing which incorporates the target])[command clarification break]".
+		say "([the target] of [the random thing which incorporates the target])[command clarification break]" (A).
 
 Does the player mean opening a closed drawer (this is the prefer to open closed drawers rule):
 	it is very likely.
@@ -108,14 +110,14 @@ Instead of an actor opening something which incorporates exactly one closed draw
 Instead of an actor opening something which incorporates at least two closed drawers (this is the pick a random drawer for opening rule):
 	let chosen drawer be a random closed drawer which is part of the noun;
 	if the player is the actor:
-		say "(choosing [the chosen drawer] at random)[command clarification break]";
+		say "(choosing [the chosen drawer] at random)[command clarification break]" (A);
 	try the actor opening chosen drawer;
 	
 Instead of an actor opening something which incorporates less than one closed drawer (this is the can't open what is completely open rule):
 	if the noun incorporates an open drawer:
 		let N be the number of open drawers incorporated by the noun;
 		if the player is the actor:
-			say "[if N is 1]The drawer[otherwise if N is 2]Both drawers are[otherwise]Every drawer is[end if] open already.";
+			say "[regarding the open drawers incorporated by the noun][if N is 1]The drawer [are][otherwise if N is 2]Both drawers [are][otherwise]Every drawer [are][end if] open already." (A);
 	otherwise:
 		continue the action; 
 	
@@ -126,20 +128,20 @@ Instead of an actor closing something which incorporates exactly one open drawer
 Instead of an actor closing something which incorporates at least two open drawers (this is the pick a random drawer for closing rule):
 	let chosen drawer be a random open drawer which is part of the noun;
 	if the player is the actor:
-		say "(choosing [the chosen drawer] at random)[command clarification break]";
+		say "(choosing [the chosen drawer] at random)[command clarification break]" (A);
 	try the actor closing chosen drawer;
 	
 Instead of an actor closing something which incorporates less than one open drawer (this is the can't close what is completely closed rule):
 	if the noun incorporates a closed drawer:
 		let N be the number of closed drawers incorporated by the noun;
 		if the player is the actor:
-			say "[if N is 1]The drawer[otherwise if N is 2]Both drawers are[otherwise]Every drawer is[end if] closed already.";
+			say "[regarding the noun][if N is 1]The drawer [are][otherwise if N is 2]Both drawers [are][otherwise]Every drawer [are][end if] closed already." (A);
 	otherwise:
 		continue the action.
 	
 
 Report opening a drawer which is part of something (this is the more specific opening drawers rule):
-	say "You open [the noun] of [the random thing which incorporates the noun][if something is in the noun], revealing [a list of things which are in the noun][end if]." instead.
+	say "[We] [open] [the noun] of [the random thing which incorporates the noun][if something is in the noun], revealing [a list of things which are in the noun][end if]." (A) instead.
 
 When play begins (this is the initialize drawers rule):
 	repeat with item running through things which incorporate drawers:
@@ -174,7 +176,7 @@ Report examining a drawered thing (this is the describe drawered objects rule):
 Describing the drawer layout of something is an activity.
 
 Rule for describing the drawer layout of something (called special-target) (this is the list total drawers rule):
-	say "[The special-target] has [the number of drawers which are part of the special-target in words] drawer[s]. ";
+	say "[The special-target] has [the number of drawers which are part of the special-target in words] drawer[s]. " (A);
 
 After describing the drawer layout of something (called special-target) (this is the list open drawers rule):
 	let O be the number of open drawers which are part of the special-target;
@@ -183,28 +185,28 @@ After describing the drawer layout of something (called special-target) (this is
 	now drawer-passthrough is the special-target;
 	if O is greater than C and C is greater than zero:
 		let N be "[selection of drawers which are part of the drawer-passthrough conforming to the description closed drawers which are part of the drawer-passthrough is-are] closed, and [if O is less than 4]the other [O in words][otherwise]the rest[end if] open."; 
-		say "[N in sentence case][paragraph break]";
+		say "[N in sentence case][paragraph break]" (A);
 	otherwise:
 		let N be "[selection of drawers which are part of the drawer-passthrough conforming to the description open drawers which are part of the drawer-passthrough is-are] open."; 
-		say "[N in sentence case][paragraph break]".
+		say "[N in sentence case][paragraph break]" (B).
 
 drawer-passthrough is an object that varies.
 
 Section 2Z - Disambiguation Trick (for Z-Machine only)
 	 
 Rule for asking which do you mean when everything matched is a drawer and the number of matched things is greater than three (this is the simplifying drawer choice rule):
-	say "You have a choice of drawers from [the list of things which incorporate a matched drawer]. Can you be more specific?"; 
+	say "You have a choice of drawers from [the list of things which incorporate a matched drawer]. Can you be more specific?" (A); 
 
 Section 2G - Disambiguation Trick (for Glulx only)
 	 
 Rule for asking which do you mean when everything matched is a drawer and the number of matched things is greater than three (this is the simplifying drawer choice rule):
-	say "You have a choice of drawers from [the list of things which incorporate a matched drawer]. ";
+	say "You have a choice of drawers from [the list of things which incorporate a matched drawer]. " (A);
 	let started printing be false;
 	repeat with item running through things which incorporate a matched drawer:
-		say "[The item] has [the number of matched drawers which are part of the item in words][if started printing is false] you might mean[end if]";
+		say "[The item] has [the number of matched drawers which are part of the item in words][if started printing is false] you might mean[end if]" (B);
 		now started printing is true;
-		say " ([the list of matched drawers which are part of the item])";
-		say ". "; 
+		say " ([the list of matched drawers which are part of the item])" (C);
+		say ". " (D); 
 	say paragraph break.
 
 [The matchlist testing breaks down when used on a lot of objects at once under the z-machine, which is why we save that feature for Glulx.]

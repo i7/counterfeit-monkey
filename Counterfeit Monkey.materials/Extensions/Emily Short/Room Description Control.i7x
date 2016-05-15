@@ -1,4 +1,4 @@
-Version 11 of Room Description Control by Emily Short begins here.
+Version 12 of Room Description Control by Emily Short begins here.
 
 "A framework by which the author can considerably change the listing of objects in a room description. Includes facilities for concealing objects arbitrarily and changing the order in which objects are listed."
  
@@ -135,10 +135,8 @@ This is the new describe contents rule:
 	if the person asked is the player, follow the description-priority rules.
 
 A description-concealing rule while entering a container (called special-target):
-	repeat with item running through marked for listing things
-	begin;
-		if item is not enclosed by special-target, now the item is not marked for listing;
-	end repeat.
+	repeat with item running through marked for listing things:
+		if item is not enclosed by special-target, now the item is not marked for listing.
 
 Section 3 - Debugging - Not for release
 
@@ -146,30 +144,24 @@ Understand "paragraphs" or "paragraphs off" as paragraph-debugging. paragraph-de
 
 Paragraph-debug-state is a number that varies. Paragraph-debug-state is 0.
 
-Carry out paragraph-debugging:
+Carry out paragraph-debugging (this is the default carry out paragraph debugging rule):
 	if paragraph-debug-state is 1, now paragraph-debug-state is 0;
 	otherwise now paragraph-debug-state is 1.
 
-Report paragraph-debugging:
-	say "Paragraph debugging is now [if paragraph-debug-state is 1]on[otherwise]off[end if]."
+Report paragraph-debugging (this is the default report paragraph debugging rule):
+	say "Paragraph debugging is now [if paragraph-debug-state is 1]on[otherwise]off[end if]." (A)
 
 The table-debugging rule is listed after the description-ranking rule in the description-priority rules.
 
 This is the table-debugging rule:
-	if paragraph-debug-state is 1
-	begin;
-		repeat through the Table of Seen things
-		begin;  
-			if the output entry is unmentioned
-			begin;
+	if paragraph-debug-state is 1:
+		repeat through the Table of Seen things:
+			if the output entry is unmentioned:
 				say "[output entry]: rank [current rank entry][line break]";
 				now output entry is unmentioned;
-			otherwise;
+			otherwise:
 				say "[output entry]: rank [current rank entry] (already mentioned)[line break]";
-			end if;
-		end repeat;
 		say "[line break]";
-	end if;
 
 Room Description Control ends here.
 
@@ -258,3 +250,5 @@ Version 7 adds the don't mention things out of play rule; this means that if the
 Version 8 adds a fix for bugs involving multiple identical objects, so that they will not each earn their own individual listings.
 
 Version 10 removes deprecated phrases.
+
+Version 12 does some cleanup and brings the extension in line with adaptive responses.

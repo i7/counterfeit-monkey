@@ -1,8 +1,8 @@
-Version 8 of Simple Graphical Window (for Glulx only) by Emily Short begins here. 
+Version 9/160121 of Simple Graphical Window (for Glulx only) by Emily Short begins here. 
 
 "Provides a graphics window in one part of the screen, in which the author can place images; with provision for scaling, tiling, or centering images automatically, as well as setting a background color. Glulx only."
 
-Include Version 7 of Glulx Entry Points by Emily Short.
+Include Glulx Entry Points by Emily Short.
 
 Section 1 - Creating Rocks and Building the Window Itself
 
@@ -68,7 +68,7 @@ Include (-
 [ FindHeight  result graph_height;
 	if (gg_picwin)
 	{	result = glk_window_get_size(gg_picwin, gg_arguments, gg_arguments+WORDSIZE);
-             		graph_height  = gg_arguments-->1;
+			 		graph_height  = gg_arguments-->1;
 	} 
 	return graph_height;
 ];
@@ -76,7 +76,7 @@ Include (-
 [ FindWidth  result graph_width;
 	if (gg_picwin)
 	{	result = glk_window_get_size(gg_picwin, gg_arguments, gg_arguments+WORDSIZE);
-             		graph_width  = gg_arguments-->0;
+			 		graph_width  = gg_arguments-->0;
 	} 
 	return graph_width;
 ];
@@ -87,11 +87,11 @@ Include (-
 	if (FollowRulebook( (+glulx picture selection rules+) ) ) { cur_pic = ResourceIDsOfFigures-->(+ internally selected picture +); }   
 	if (cur_pic == 0) rtrue;
 
-      if (gg_picwin) {  
+	  if (gg_picwin) {  
 
 	result = glk_window_get_size(gg_picwin, gg_arguments, gg_arguments+WORDSIZE);
-             	graph_width  = gg_arguments-->0;
-             	graph_height = gg_arguments-->1;
+			 	graph_width  = gg_arguments-->0;
+			 	graph_height = gg_arguments-->1;
 
 	result = glk_image_get_info( cur_pic, gg_arguments,  gg_arguments+WORDSIZE);
 	img_width  = gg_arguments-->0;
@@ -122,33 +122,28 @@ Include (-
 
 [ BlankWindowToColor color result graph_width graph_height;
   
-	! color = (+ assigned number of graphics background color +);
-	if (color == 0) color = $000000;
 
-      if (gg_picwin) {  
+	  if (gg_picwin) {  
 
 	result = glk_window_get_size(gg_picwin, gg_arguments, gg_arguments+WORDSIZE);
-             	graph_width  = gg_arguments-->0;
-             	graph_height = gg_arguments-->1; 
+			 	graph_width  = gg_arguments-->0;
+			 	graph_height = gg_arguments-->1; 
 
 	glk_window_fill_rect(gg_picwin, color , 0, 0, graph_width, graph_height);
 	}
 ];
 
  [ TileFillGraphicsWindows cur_pic result graph_width graph_height 
-		img_width img_height w_total h_total color;
+		img_width img_height w_total h_total;
 
 	if (FollowRulebook( (+glulx picture selection rules+) ) ) { cur_pic = ResourceIDsOfFigures-->(+ internally selected picture +); }   
 	if (cur_pic == 0) rtrue;
 
-	color = (+ assigned number of graphics background color +);
-	if (color == 0) color = $000000;
-
-      if (gg_picwin) {  
+	  if (gg_picwin) {  
 
 	result = glk_window_get_size(gg_picwin, gg_arguments, gg_arguments+WORDSIZE);
-             	graph_width  = gg_arguments-->0;
-             	graph_height = gg_arguments-->1;
+			 	graph_width  = gg_arguments-->0;
+			 	graph_height = gg_arguments-->1;
 
 	result = glk_image_get_info( cur_pic, gg_arguments,  gg_arguments+WORDSIZE);
 	img_width  = gg_arguments-->0;
@@ -173,11 +168,11 @@ Include (-
 	if (FollowRulebook( (+glulx picture selection rules+) ) ) { cur_pic =  ResourceIDsOfFigures-->(+ internally selected picture +); }   
 	if (cur_pic == 0) rtrue;
 
-      if (gg_picwin) {  
+	  if (gg_picwin) {  
 
 	result = glk_window_get_size(gg_picwin, gg_arguments, gg_arguments+WORDSIZE);
-             	graph_width  = gg_arguments-->0;
-             	graph_height = gg_arguments-->1;
+			 	graph_width  = gg_arguments-->0;
+			 	graph_height = gg_arguments-->1;
 
 	glk_image_draw_scaled(gg_picwin, cur_pic, 0, 0, graph_width, graph_height); 
 	}
@@ -220,7 +215,7 @@ Internally selected picture is a figure-name that varies. [This is the picture s
 
 Graphics window pixel count is a number that varies. Graphics window proportion is a number that varies.
 
-Graphics background color is a glulx color value that varies.
+Graphics background color is some text that varies.
 
 Glulx window position is a kind of value. The Glulx window positions are g-null, g-above, g-below, g-left, and g-right.
 
@@ -235,8 +230,8 @@ To decide what number is the current graphics window width:
 To decide what number is the current graphics window height:
 	(- FindHeight() -)
 
-To color the/-- graphics window (gcv - a glulx color value) from (x - a number) by (y - a number) to (xx - a number) by (yy - a number):
-	let numerical gcv be the assigned number of gcv;
+To color the/-- graphics window (gcv - a text) from (x - a number) by (y - a number) to (xx - a number) by (yy - a number):
+	let numerical gcv be the color number of gcv;
 	color graphics window numerical gcv from x by y to xx by yy.
 
 To color the/-- graphics window (gcv - a number) from (x - a number) by (y - a number) to (xx - a number) by (yy - a number):
@@ -244,6 +239,10 @@ To color the/-- graphics window (gcv - a number) from (x - a number) by (y - a n
 
 To draw (fig - a figure-name) from (x - a number) by (y - a number) to (xx - a number) by (yy - a number): 
 	(- glk_image_draw_scaled(gg_picwin, ResourceIDsOfFigures-->{fig}, {x}, {y}, {xx}, {yy}); -)
+	
+To decide what number is the color number of (gcv - a text):
+	decide on 0.
+	[(- GTE_ConvertColour( {gcv} ) -)]
 
 
 Section 5 - Inform 7 Wrapper Rulebook for Picture Selection
@@ -270,8 +269,8 @@ This is the standard placement rule:
 This is the bland graphics drawing rule:
 	blank window to graphics background color;
 
-To blank the/-- graphics/-- window to (bc - a glulx color value): 
-	blank the graphics window to the assigned number of bc;
+To blank the/-- graphics/-- window to (bc - some text): 
+	blank the graphics window to the color number of bc;
 
 To blank the/-- graphics/-- window to (bc - a number):
 	(- BlankWindowToColor({bc}); -)
@@ -337,7 +336,7 @@ If we need to redraw the image in the window, we write
 For instance if we were adding an image to the screen every time the player moved, we might write something like
 
 	Carry out looking:
-		change currently shown picture to the room illustration of the location;
+		now the currently shown picture is the room illustration of the location;
 		follow the current graphics drawing rule.
 
 ...where the room illustration is defined for each room in the game. (The extension "Location Images" implements this idea in full.)
@@ -377,65 +376,44 @@ If no information is provided, the graphics window defaults to a fixed-count win
 
 **** Glulx colors ****
 
-The background color used by the standard placement rule depends on the "graphics background color". The graphics background color can be set to any value of the kind "glulx color value". This extension, relying on Glulx Text Effects, provides a table of glulx color values to start from, as follows:
+The background color used by the standard placement rule depends on the "graphics background color". 
 
-	Table of Common Color Values
-	glulx color value	assigned number
-	g-black	0		[== $000000]
-	g-dark-grey	4473924	[== $444444]
-	g-medium-grey	8947848	[== $888888]
-	g-light-grey	14540253	[== $DDDDDD]
-	g-white	16777215		[== $FFFFFF]
-
-where the assigned number of each value is the decimal representation of a hex color code. To use any of the preset values, we might write 
-
-	The graphics background color is g-black.
+This extension, like Glulx Text Effects, specifies graphics colors in the form of strings containing hex color numbers such as "$000000". Black would thus be "$000000", a dark grey "$444444", white "$FFFFFF".
 
 Moreover, the phrase "blank window to..." allows us to fill the graphics window with one of these preset colors, as in
 	
-	blank window to g-white;
-	blank window to g-black;
+	blank window to "$FFFFFF";
 	blank window to graphics background color;
 
-It is likely that we'll want to use other colors besides those provided by this extension. We may do this by continuing the table thus:
-
-	Table of Common Color Values (continued)
-	glulx color value	assigned number
-	g-yellow-orange	39423		[== $0099FF]
-	g-ice-blue	15645627		[== $EEBBBB] 
-
-These numbers are conversions of hex color numbers. The principle is that the hex number represents the amount of blue in the first two digits (from 00 to FF); the amount of green in the next two digits; and the amount of red in the last two digits. Thus $0000FF has no blue or green in it, but the maximum possible amount of red. Where each pair of digits is equal (as in $444444 or $A0A0A0), we will have equal components of each color and the result will be some shade of grey. The number for g-ice-blue was selected by formulating a hex color number with a large amount of blue and a moderate amount of red and green ($EEBBBB). Similarly, the number for g-yellow-orange is the conversion of ($0099FF), with the maximum amount of red, a fair amount of green, and no blue. 
-
-Converting a hex number to a decimal one can be performed with a scientific calculator or with a hexadecimal conversion application found online; if we're at a loss, googling "hexadecimal conversion calculator" will likely turn up an appropriate application.  
+These numbers are hex color numbers. The principle is that the hex number represents the amount of blue in the first two digits (from 00 to FF); the amount of green in the next two digits; and the amount of red in the last two digits. Thus $0000FF has no blue or green in it, but the maximum possible amount of red. Where each pair of digits is equal (as in $444444 or $A0A0A0), we will have equal components of each color and the result will be some shade of grey.  
 
 Example: * Mondrian - A strip of randomly varying color along the left edge of the screen 
-
 
 	*: "Mondrian"
 
 	Include Simple Graphical Window by Emily Short.
 
 	Stark Room is a room.
-
+	
 	The graphics window proportion is 10. The graphics window position is g-left.
 	
 	Rule for starting the virtual machine:
 		now the current graphics drawing rule is the bland graphics drawing rule.
-
-	Table of Common Color Values (continued)
-	glulx color value	assigned number
-	g-pure-red	255		[== $0000FF] 
-	g-pure-green	65280		[== $00FF00]
-	g-pure-yellow	65535		[== $00FFFF]
-	g-pure-cyan	16776960		[== $FFFF00]
-	g-pure-magenta	16711935		[== $FF00FF]
-	g-pure-blue	16711680		[== $FF0000]
-	g-royal-blue	11141120		[== $AA0000]
-
+	
+	Table of Common Color Values 
+	name	value
+	"red"	"$0000FF"
+	"green"	"$00FF00"
+	"yellow"	"$00FFFF"
+	"cyan"	"$FFFF00"
+	"magenta"	"$FF00FF"
+	"blue"	"$FF0000"
+	"royal blue"	"$AA0000"
+	
 	Every turn:
 		if glulx graphics is supported:
-			change graphics background color to a random glulx color value;
+			choose a random row in the Table of Common Color Values;
+			now the graphics background color is value entry;
 			follow the current graphics drawing rule.	
 	
 	Test me with "z / z / z / z / z / z".
-		

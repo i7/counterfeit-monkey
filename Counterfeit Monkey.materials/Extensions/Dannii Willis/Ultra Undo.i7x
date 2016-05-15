@@ -1,4 +1,4 @@
-Version 1/160501 of Ultra Undo (for Glulx only) by Dannii Willis begins here.
+Version 1/160515 of Ultra Undo (for Glulx only) by Dannii Willis begins here.
 
 "Handles undo using external files for very big story files"
 
@@ -194,13 +194,14 @@ Include (-
 		GGRecoverObjects();
 		glk_stream_close(gg_savestr, 0); ! stream_close
 		gg_savestr = 0;
-		return GL__M(##Restore, 2);
+		RESTORE_THE_GAME_RM('B'); new_line;
+		rtrue;
 	}
 	glk_stream_close(gg_savestr, 0); ! stream_close
 	gg_savestr = 0;
-	if (res == 0) return GL__M(##Save, 2);
+	if (res == 0) { SAVE_THE_GAME_RM('B'); new_line; rtrue; }
 	.SFailed;
-	GL__M(##Save, 1);
+	SAVE_THE_GAME_RM('A'); new_line;
 ];
 
 -) instead of "Save The Game Rule" in "Glulx.i6t".
@@ -215,7 +216,7 @@ Include (-
 
 [ QUIT_THE_GAME_R;
 	if ( actor ~= player ) rfalse;
-	GL__M( ##Quit, 2 );
+	QUIT_THE_GAME_RM('A');
 	if ( YesOrNo()~=0 )
 	{
 		Ultra_Undo_Delete_All();

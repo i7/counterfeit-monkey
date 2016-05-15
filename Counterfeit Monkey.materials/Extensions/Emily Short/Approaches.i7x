@@ -1,17 +1,21 @@
-Version 5 of Approaches by Emily Short begins here.
+Version 7 of Approaches by Emily Short begins here.
 
-"Approaches provides a GO TO place action which allows the player to move through visited rooms to a new location. It also allows other characters to traverse the map to named locations. It is designed to work with Locksmith by Emily Short."
+"Approaches provides a GO TO place action which allows the player to move through visited rooms to a new location. It also allows other characters to traverse the map to named locations. It is designed to work with Locksmith by Emily Short. Version 7 drops the erroneous requirement of the Plurality extension, which was still mentioned in Version 6."
 
-Include Plurality by Emily Short. Include Version 6 of Locksmith by Emily Short.
+[Does adaptive text.]
+
+To find is a verb. To lack is a verb. To head is a verb. To go is a verb.
+
+Include Version 6 of Locksmith by Emily Short.
 
 A person can be staid or hurrying. A person is usually staid.
 A room can be proper-named or improper-named.
 
-Before refusing keys for something (this is the tell the preface blocked doors with path walked rule): 
-	say "[path-walked so far]".
+Before refusing keys of something (this is the tell the preface blocked doors with path walked rule): 
+	say "[path-walked so far]" (A).
 	
-Rule for refusing keys for a door (called locked-thing) when the player is hurrying (this is the tell the player when blocked at a door rule):
-	say "Unfortunately, you find you lack a key that fits [the locked-thing].[no line break]";
+Rule for refusing keys of an object (called locked-thing) when the player is hurrying (this is the tell the player when blocked at a door rule):
+	say "Unfortunately, [we] [find] [we] [lack] a key fitting [the locked-thing].[no line break]" (A);
 	rule succeeds.
 
 A person has a list of objects called the path so far.
@@ -29,14 +33,14 @@ Rule for describing path of someone (called the worker) (this is the default pat
 			let last movement be entry N in the described motion of the worker;
 			truncate the described motion of the worker to (N - 1) entries;
 			if N is 1:
-				say "[The worker] head[s]";
+				say "[The worker] [head]" (A);
 			otherwise:
-				say "[The worker] go[es] [described motion of the worker]";
-				if N is greater than 2, say ", before heading"; 
-				otherwise say ", then head[s]"; 
-			say " [the last movement]. [run paragraph on]";
+				say "[The worker] [go] [described motion of the worker]" (B);
+				if N is greater than 2, say ", before heading" (C); 
+				otherwise say ", then [head]" (D); 
+			say " [the last movement]. [run paragraph on]" (E);
 		otherwise:
-			say "[The worker] go[es] [described motion of the worker]. [run paragraph on]";
+			say "[The worker] [go] [described motion of the worker]. [run paragraph on]" (F);
 	clear path-walked for worker.
 		
 To clear all/the/-- path-walked for (worker - a person):
@@ -51,7 +55,7 @@ The approaching action has a room called the initial room.
 
 Check an actor approaching (this is the can't approach our current location rule):
 	if the noun is the location of the actor:
-		if the actor is the player, say "You're already in [the location].";
+		if the actor is the player, say "[We] [are] already in [the location]." (A);
 		stop the action;
 	otherwise:
 		now the initial room is the location;
@@ -72,7 +76,7 @@ An approach-finding rule (this is the approach-heading selection rule):
 
 An approach-finding rule (this is the refusing bad headings rule):
 	if approach-heading is not a direction:
-		say "You can't think how to get there from here.";
+		say "[We] [can't] think how to get there from here." (A);
 		rule fails; 
 
 An approach-finding rule (this is the find outcome rule):
@@ -91,20 +95,16 @@ An approach-finding rule (this is the abort movement if held up rule):
 		rule fails; 
 
 Carry out going while the player is hurrying (this is the creating a path history rule):
-	add the approach-heading to the path so far of the player;
-	let approach-destination-name be indexed text;
-	let approach-destination-name be "[the approach-destination]";
-	let adverb be indexed text;
+	add the approach-heading to the path so far of the player; 
+	let approach-destination-name be "[the approach-destination]"; 
 	let adverb be "";
 	let X be the number of entries in the path so far of the player;
 	if X is greater than 1:
 		let previous direction be entry (X - 1) in the path so far of the player;
-		if the previous direction is the approach-heading, now adverb is "again ";  
-	let N be indexed text;
+		if the previous direction is the approach-heading, now adverb is "again ";   
+	let N be "[approach-heading] [adverb]to [approach-destination-name in lower case]"; 
 	if approach-destination is proper-named:
-		let N be "[approach-heading] [adverb]to [approach-destination-name]";
-	otherwise:
-		let N be "[approach-heading] [adverb]to [approach-destination-name in lower case]"; 
+		let N be "[approach-heading] [adverb]to [approach-destination-name]"; 
 	add N to the described motion of the player; 
 
 An approach-finding rule (this is the final approach success rule):
@@ -347,28 +347,28 @@ This example is a little tricky in that we must invoke some of Inform's underlyi
 	*: "Traveling with Candles"
 
 	Include Approaches by Emily Short. 
-
+	
 	The Living Room is a room. The Kitchen is north of the Living Room. The Basement is below the Kitchen. The Oubliette is south of the Basement.
-
+	
 	The Basement and the Oubliette are dark.
-
+	
 	Instead of going to a provisionally dark room (called danger spot) when the player does not enclose a lit thing:
 		say "[path-walked so far]It looks dark in [the danger spot], [if the number of entries in the path so far of the player is greater than 0]though, [end if]so you stop";
-		if the player is hurrying:
+		if the number of entries in the path so far of the player is greater than 0:
 			say ".[no line break]";
 		otherwise:
 			say "."
 	
 	The player carries a lit thing called a candle.
-
+	
 	To decide whether (place - a room) finds light inside:
 		(- ( OffersLight({place}) ) -)
-
+	
 	Definition: a room is internally lit if it finds light inside.
-
+	
 	Definition: a room is provisionally dark if it is not internally lit.
-
-	Test me with "n / d / s / drop candle / go to Living Room / get candle / n / drop candle / s / go to living room".
+	
+	Test me with "n / d / s / drop candle / go to Living Room / get candle / n / drop candle / s / go to living room / go to basement / get candle / go to living room / drop candle / go to oubliette".
 
 Example: ** Riverside Path - A bicycle that the player can use to traverse multiple rooms at a time, when travel on foot is restricted to single-room movement.
 
@@ -411,34 +411,31 @@ Here we want to change both the individual pieces of the movement description (u
 	*: "Jade Amphitheater"
 
 	Section 1 - Rules for Revising Output
-
+	
 	Include Approaches by Emily Short.
-
+	
 	The new creating a path history rule is listed instead of the creating a path history rule in the carry out going rules.
-
+	
+	Room sequence is a list of rooms that varies.
+	
 	Carry out going while the player is hurrying (this is the new creating a path history rule):
-		add the approach-heading to the path so far of the player;
-		let N be indexed text;
-		let N be "[the approach-destination]";
-		if approach-destination is improper-named, now N is "[N in lower case]"; 
-		add N to the described motion of the player;
-		say "[run paragraph on]"; [a mildly inelegant hack to correct for the fact that the indexed-text handling is inserting gratuitous line breaks here]
-
+		add the approach-heading to the path so far of the player; 
+		add the approach-destination to the room sequence;
+	
 	Rule for describing path of the player:
-		let N be the number of entries in the described motion of the player; 
-		say "You go [if the location is the noun]to[otherwise]toward[end if] [entry N of described motion of the player]";
-		if N is greater than 1
-		begin;
-			truncate the described motion of the player to (N - 1) entries;
-			say " by way of [the described motion of the player]";
-		end if;
+		let N be the number of entries in the room sequence; 
+		say "[We] [go] [if the location is the noun]to[otherwise]toward[end if] [entry N of room sequence]";
+		if N is greater than 1:
+			truncate the room sequence to (N - 1) entries;
+			say " by way of [the room sequence]"; 
 		say ". [run paragraph on]";
 		clear the path-walked for the player;
-
+		now room sequence is { }.
+	
 	Section 2 - Scenario
-
+	
 	The Crimson Chamber is north of the Mandarin Casket Room. The Mandarin Casket Room is west of the Silver Filigree Prison. The Silver Filigree Prison is northwest of the Shallow Jade Amphitheater. The Shallow Jade Amphitheater is north of the Grooved Channel. Below the Grooved Channel is the Carved Basin.
-
+	
 	A room is usually proper-named.
 	
-	Test me with "s / e / se / s / d / go to the Crimson Chamber".
+	Test me with "s / e / se / s / d / go to the Crimson Chamber". 
