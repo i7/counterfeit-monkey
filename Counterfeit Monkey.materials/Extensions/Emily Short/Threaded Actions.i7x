@@ -2,7 +2,7 @@ Threaded Actions by Emily Short begins here.
 
 Section 1 - Main Elements
 
-Include Threaded Conversation by Emily Short.
+[Include Threaded Conversation by Emily Short.]
 
 A stolen action is a kind of performative quip. The specification of a stolen action is "Any performative quip that is used to redirect the behavior of a standard command like KISS FRED or ATTACK CAT."
 	
@@ -144,13 +144,13 @@ Threaded Actions builds on Threaded Conversation: the idea here is that there ar
 
 all check to see whether an appropriate quip is available and, if so, use that quip. If multiple appropriate quips exist at the moment, the player will be offered a specific choice that looks similar to the disambiguation questions otherwise asked by Threaded Conversation. (These are not, in fact, disambiguation questions, but this is for technical reasons -- functionally, they behave in a similar way.)
 
-The basic concepts of this extension could be extended to provide more detailed responses to combat or to erotic encounters, where (e.g.) SHOOT BLOFELD should produce different results from STAB BLOFELD.
+The basic concepts of this extension could be extended to provide more detailed replies to combat or to erotic encounters, where (e.g.) SHOOT BLOFELD should produce different results from STAB BLOFELD.
 
 To define character reactions to ATTACK and KISS, we simply define offensive quips and seductive quips, respectively. These can be made subject to the same availability rules as any other kind of quip. For instance:
 
 	slap the enemy is an offensive quip.
 		The comment is "You slap [the current interlocutor]."
-		The response is "[The current interlocutor] howls."
+		The reply is "[The current interlocutor] howls."
 		It is recurring.
 
 will produce the result
@@ -174,7 +174,7 @@ So far this is no more exciting than what we could do with "Instead of attacking
 	
 	try for a second slap is an offensive quip.
 		The comment is "You try to smack [the current interlocutor] again, but find yourself flailing at air."
-		The response is "'I don't think so,' remarks [the current interlocutor]. 'Not twice in a row.'"
+		The reply is "'I don't think so,' remarks [the current interlocutor]. 'Not twice in a row.'"
 		It directly-follows slap the enemy.
 
 If there is no appropriate quip available to respond to the player's ATTACK or KISS command, Inform will resort to  the refusing to kiss and refusing to attack activities. By default, these print "Now doesn't seem like the time." We can, of course, override these by supplying our own text, as in
@@ -201,52 +201,51 @@ If we have included Conversation Builder, we might want to add a couple of rules
 
 	Rule for refusing to kiss someone when using conversation building option (this is the read all seductive quips rule):
 	if the current interlocutor is nothing, make no decision;
-	change the variable snippet to the player's command; 
+	now the variable snippet is the player's command; 
 	store base quip text;
 	say "That kiss is not implemented. Draft a new one? >";
 	if the player consents
-	begin; 
-		change the currently open reference to the reference after opening file "NewConversation" for writing;
+		now the currently open reference is the reference after opening file "NewConversation" for writing;
 		say "	[message of the sample-quip]";
 		close file "NewConversation" for writing; 
 		write " is a seductive quip." after file "NewConversation";
 		if nominal-sample-quip is switched on, escape troubled quip-names;
-		fill in standard quip;
-	end if.
+		fill in standard quip.
 	
 Rule for refusing to attack someone when using conversation building option (this is the read all offensive quips rule):
 	if the current interlocutor is nothing, make no decision;
-	change the variable snippet to the player's command; 
+	now the variable snippet is the player's command; 
 	store base quip text;
 	say "That attack is not implemented. Draft a new one? >";
-	if the player consents
-	begin;  
-		change the currently open reference to the reference after opening file "NewConversation" for writing;
+	if the player consents  
+		now the currently open reference is the reference after opening file "NewConversation" for writing;
 		say "	[message of the sample-quip]";
 		close file "NewConversation" for writing; 
 		write " is an offensive quip." after file "NewConversation";
 		if nominal-sample-quip is switched on, escape troubled quip-names;
-		fill in standard quip;
-	end if.
+		fill in standard quip.
 
 Example: * Produce Man - A simple example of reactions to shown objects.
 
 	*: "Produce Man"
+	
+	Include Threaded Actions by Emily Short.
 
 	The Vegetable Shop is a room. The Produce Man is a man in the Shop. The player carries a radish.
 
-	ask what radishes seem good for is a demonstration quip. 
-		The printed name is "ask what radishes are good for". The true name is "ask what radishes seem good for". 
+	ask what radishes seem good for is a demonstration quip.
+		The printed name is "ask what radishes are good for". 
+		The true-name is "ask what radishes seem good for". 
 		Understand "are" as ask what radishes seem good for. 
 		It mentions radish.
 		The comment is "'What are radishes good for?'".
-		The response is "'Radishes are good for salads.'"
+		The reply is "'Radishes are good for salads.'"
 
 	Test me with "talk to man / show radish to man".
 
-Example: **** Last Meeting - A moderate-length conversation using KISS and ATTACK-based quips interwoven with standard quips.
+Example: ** Last Meeting - A moderate-length conversation using KISS and ATTACK-based quips interwoven with standard quips.
 
-	"Last Meeting"
+	*: "Last Meeting"
 
 	Include Threaded Actions by Emily Short.
 	
@@ -286,24 +285,24 @@ Example: **** Last Meeting - A moderate-length conversation using KISS and ATTAC
 		say "You have the first line: to ask where the jewels are."
 
 	where the jewels seem is a questioning quip. 
-		The printed name is "where the jewels are". The true name is "where the jewels seem". 
+		The printed name is "where the jewels are". The true-name is "where the jewels seem". 
 		Understand "are" as where the jewels seem. 
 		It mentions jewels.
 		The comment is "'You've done well, old friend,' you say, even though the old man nearly got himself killed this time. 'Where are the jewels?'".
-		The response is "He takes a step backwards, towards the edge of the bridge. Below him the river is running fast and deep. 'I didn't bring them,' he says. 'I thought it was time to bring our little collaboration to an end[queue getting older].'".
+		The reply is "He takes a step backwards, towards the edge of the bridge. Below him the river is running fast and deep. 'I didn't bring them,' he says. 'I thought it was time to bring our little collaboration to an end[queue getting older].'".
 
 	he should watch his footing is an informative quip. 
 		It mentions danger.
 		The comment is "Ignoring his provocative remark, you say, 'Hey, there -- you're about to back over the edge of the bridge.'".
-		The response is "He looks irritated. 'I have nine lives,' he says, as though this piece of newspaper nonsense is likely to impress you. 'It's yourself you should be worried about.'".
+		The reply is "He looks irritated. 'I have nine lives,' he says, as though this piece of newspaper nonsense is likely to impress you. 'It's yourself you should be worried about.'".
 		It directly-follows where the jewels seem.
 	
 	why he seems ending the collaboration is a questioning quip. 
-		The printed name is "why he is ending the collaboration". The true name is "why he seems ending the collaboration". 
+		The printed name is "why he is ending the collaboration". The true-name is "why he seems ending the collaboration". 
 		Understand "is" as why he seems ending the collaboration. 
 		It mentions your collaboration.
 		The comment is "'Our collaboration, as you choose to call it, has been tremendously lucrative for us both,' you point out in your calmest voice. Such prima donnas, these high-end thieves. 'There's no reason to get hasty.'".
-		The response is "'Oh, believe me,' he says, keeping his distance from you. 'I've planned this down to the last detail.' What nonsense. He couldn't plan a trip on a bus without your help.".
+		The reply is "'Oh, believe me,' he says, keeping his distance from you. 'I've planned this down to the last detail.' What nonsense. He couldn't plan a trip on a bus without your help.".
 		It indirectly-follows where the jewels seem.
 
 	An availability rule for why he seems ending the collaboration:
@@ -316,7 +315,7 @@ Example: **** Last Meeting - A moderate-length conversation using KISS and ATTAC
 		say "[one of]The sun seems to have gotten hotter and less pleasant[or]The light glaring from the river almost blinds you[or]An insect buzzes near to your ear, circles your head, and goes away again[as decreasingly likely outcomes].".
 
 	getting older is an NPC-directed quip.
-		The response is "'I'm getting older, Poisson,' he says. 'It's time for me to retire[plans-retirement]. And when a thief retires, he doesn't need collaborators any more.'"
+		The reply is "'I'm getting older, Poisson,' he says. 'It's time for me to retire[plans-retirement]. And when a thief retires, he doesn't need collaborators any more.'"
 
 	Rule for listing plausible quips when even a retired thief is plausible and where he hid is plausible:
 		say "Even a retired thief still needs friends, you reflect. But he's playing this conversation as though you were not yourselves, as though you were movie criminals, as though it were possible for him to double-cross you. He glares at you with all the force of will he has, as though to make you ask about the jewels again, and not trouble him with any more personal questions."
@@ -324,47 +323,47 @@ Example: **** Last Meeting - A moderate-length conversation using KISS and ATTAC
 	even a retired thief still needs friends is an informative quip. 
 		It mentions collaboration, retirement.
 		The comment is "He's not looking directly at you, and what you feel is a surge of something like pity: this last brush with death has clearly frightened him, and he is trying to end things before he screws up; before anyone has a chance to notice that he's losing his touch. [paragraph break]'A retired thief still needs friends,' you say gently. ".
-		The response is "'What will we do?' he demands, in what is nearly a croak. 'Drink pastis on the balcony, play boules and remember the exploits of our youth?' [paragraph break]'Yes, why not?' you ask, smiling. 'Not one old man in a hundred has such good war stories as we have.' [paragraph break]He sets his jaw and spits into the water.".
+		The reply is "'What will we do?' he demands, in what is nearly a croak. 'Drink pastis on the balcony, play boules and remember the exploits of our youth?' [paragraph break]'Yes, why not?' you ask, smiling. 'Not one old man in a hundred has such good war stories as we have.' [paragraph break]He sets his jaw and spits into the water.".
 		It directly-follows getting older.
 
 	where he hid the jewels is a questioning quip. 
 		It mentions jewels.
 		The comment is "'Come on, don't be foolish. Where did you hide the jewels? I have a fence for them; you'll never get rid of them on your own; you know this.'".
-		The response is "'I don't care to divide the profits,' he replies harshly. 'This is my last job, my retirement job. I need a hundred percent of the take. You, my old fish, are out of it.'".
+		The reply is "'I don't care to divide the profits,' he replies harshly. 'This is my last job, my retirement job. I need a hundred percent of the take. You, my old fish, are out of it.'".
 		It indirectly-follows getting older.
 		It is restrictive.
 
 	he can keep the full take is an informative quip. 
 		It mentions jewels, collaboration.
 		The comment is "'If that is what you want, certainly, you may have the full take. Call it a retirement gift, if you like. But let me fence them for you; you won't know where to go, and this job, this job is too distinctive. Every jeweler in Europe will be watching for the set you lifted. I would not want my old friend to spend his retirement in prison.' His face works while you speak.".
-		The response is "'I have ways!' he says. 'Not that I would tell you about, naturally, but I know people who would buy these things.' [paragraph break]He is lying. If he weren't, he would say more -- details about when, where, how. There would be some truth and some lies in these details, just enough to throw you off the scent, but details there would be. ".
+		The reply is "'I have ways!' he says. 'Not that I would tell you about, naturally, but I know people who would buy these things.' [paragraph break]He is lying. If he weren't, he would say more -- details about when, where, how. There would be some truth and some lies in these details, just enough to throw you off the scent, but details there would be. ".
 		It directly-follows where he hid the jewels.
 
 	why he seems lying is a questioning quip. 
-		The printed name is "why he is lying". The true name is "why he seems lying". 
+		The printed name is "why he is lying". The true-name is "why he seems lying". 
 		Understand "is" as why he seems lying. 
 		It mentions lies, fence.
 		The comment is "'You're lying,' you say. 'You don't have a fence. You possibly don't even mean to get rid of the jewels at all. What are you doing?'".
-		The response is "'You can fight me for them!' [queue npc-attack]he offers, his voice growing louder. If there were anyone on the river bank right now, they might well hear, with the air as hot and still as it is.".
+		The reply is "'You can fight me for them!' [queue npc-attack]he offers, his voice growing louder. If there were anyone on the river bank right now, they might well hear, with the air as hot and still as it is.".
 		It directly-follows he can keep the full take.
 
 	he cannot win so easily is an informative quip. 
 		It mentions danger, jewels.
 		The comment is "'I'm afraid it is not as easy as that,' you say. 'I have a reputation to maintain, as you know. It would not do my business good for anyone to hear that the Grey Cat had double-crossed me. You will complete your end of the bargain, or you will float home. And you can test your nine lives then.'".
-		The response is "His back straightens and the old fire comes back into his eyes. 'Let us see, then!' he says[queue npc-attack].".
+		The reply is "His back straightens and the old fire comes back into his eyes. 'Let us see, then!' he says[queue npc-attack].".
 		It directly-follows where he hid the jewels.
 
 	attack-1 is an offensive quip.
 		It mentions violence.
 		The comment is "You throw yourself at him, aiming your shoulder at his midriff. You did not come armed to this encounter, but he is older, smaller, slighter than yourself, and all you need do is throw him into the water. From here, the fall must kill him.".
-		The response is "He falls, and you fall on top of him. Together you skid a meter closer to the edge of the bridge. His face is twisted into a grimace of pain -- the small stones must be scraping into his back. He curses you.".
+		The reply is "He falls, and you fall on top of him. Together you skid a meter closer to the edge of the bridge. His face is twisted into a grimace of pain -- the small stones must be scraping into his back. He curses you.".
 
 	An availability rule for attack-1:
 		if grey cat does not recollect where the jewels seem, it is off-limits;
 		if fight is happening, it is off-limits.
 	
 	Npc-attack is an npc-directed quip.
-		The response is "He throws himself in your direction. It is instinct to trip him, and in a moment he is pinned and not dangerous at all. He is breathing fast and shallowly."
+		The reply is "He throws himself in your direction. It is instinct to trip him, and in a moment he is pinned and not dangerous at all. He is breathing fast and shallowly."
 
 	Conversation is a scene. Conversation begins when play begins. Conversation ends easily when the grey cat recollects attack-1. Conversation ends hard when the grey cat recollects npc-attack.
 
@@ -373,25 +372,25 @@ Example: **** Last Meeting - A moderate-length conversation using KISS and ATTAC
 	Understand "get up" or "stand" or "let go" or "let grey cat go" or "let him go" or "let cat go" as a mistake ("You cannot go backward from this point.").
 
 	Almost-affection is an npc-directed quip.
-		The response is "Neither of you says anything for a long time. He is looking at you with an odd expression, almost affectionate. After a moment, he says, 'You have hardly aged at all.' [paragraph break]This is not quite true. After all, there is grey at your temples now, and more fat around the middle of you. But you haven't withered as he has."
+		The reply is "Neither of you says anything for a long time. He is looking at you with an odd expression, almost affectionate. After a moment, he says, 'You have hardly aged at all.' [paragraph break]This is not quite true. After all, there is grey at your temples now, and more fat around the middle of you. But you haven't withered as he has."
 	
 	kiss him is a seductive quip.
 		It mentions collaboration.
 		The comment is "You kiss him, lightly, on the mouth, and are aware that his breath is not the breath of a well man. ".
-		The response is "When you draw away, you see that there are tears running down from his eyes to his hair. Eventually he opens his eyes again, but not to look at you. All this is long past, very long past: it is twenty-one years since you have kissed anyone but your wife. For him, too, there have been plenty of others, as he told you in various ways; sleek, handsome young men, always just on the cusp of thirty. The age he prefers.".
+		The reply is "When you draw away, you see that there are tears running down from his eyes to his hair. Eventually he opens his eyes again, but not to look at you. All this is long past, very long past: it is twenty-one years since you have kissed anyone but your wife. For him, too, there have been plenty of others, as he told you in various ways; sleek, handsome young men, always just on the cusp of thirty. The age he prefers.".
 		It directly-follows Almost-affection.
 
 	where the jewels seem now is a questioning quip. 
-		The printed name is "where the jewels are now". The true name is "where the jewels seem now". 
+		The printed name is "where the jewels are now". The true-name is "where the jewels seem now". 
 		Understand "are" as where the jewels seem now. 
 		It mentions jewels.
 		The comment is "'Let me ask this another time: where are the jewels?'".
-		The response is "'Won't. Say!' he gasps triumphantly. 'Kill me if you want: you won't find them.'".
+		The reply is "'Won't. Say!' he gasps triumphantly. 'Kill me if you want: you won't find them.'".
 
 	 you don't want to kill him is an informative quip. 
 		It mentions danger, retirement.
 		The comment is "'I don't want to kill you,' you hiss, irritated. 'What gets into you?'".
-		The response is "Stubbornly he says nothing.".
+		The reply is "Stubbornly he says nothing.".
 		It directly-follows where the jewels seem now.
 
 	Availability rule for where the jewels seem now:
@@ -400,33 +399,33 @@ Example: **** Last Meeting - A moderate-length conversation using KISS and ATTAC
 	attack-2 is an offensive quip.
 		It mentions violence.
 		The comment is "You shift your weight, giving yourself better purchase. It wouldn't be hard to kill him now, when you've got him pinioned in this position -- why, he has much less strength than you expected.".
-		The response is "An uneasy suspicion comes. He is watching you with breath held, eyes half-closed. He knows what may come next. His skin is thin as paper[queue just-finish].".
+		The reply is "An uneasy suspicion comes. He is watching you with breath held, eyes half-closed. He knows what may come next. His skin is thin as paper[queue just-finish].".
 
 	Availability rule for attack-2:
 		if fight is not happening, it is off-limits.
 
 	just-finish is an npc-directed quip.
-		The response is "'Just finish it,' he whispers in your ear. 'For your reputation. Let them know I double-crossed you and wasn't seen again.'"
+		The reply is "'Just finish it,' he whispers in your ear. 'For your reputation. Let them know I double-crossed you and wasn't seen again.'"
 	
 	why he seems doing this is a questioning quip. 
-		The printed name is "why he is doing this". The true name is "why he seems doing this". 
+		The printed name is "why he is doing this". The true-name is "why he seems doing this". 
 		Understand "is" as why he seems doing this. 
 		It mentions lies.
 		The comment is "'Would it have been so bad, retiring?' you ask.".
-		The response is "He won't answer, but just shakes his head, over and over.".
+		The reply is "He won't answer, but just shakes his head, over and over.".
 		It indirectly-follows just-finish.
 
 	attack-3 is an offensive quip.
 		It mentions violence.
 		The comment is "You snap his neck hard. [dump queue]There is no one watching you, no one at either end of the bridge, no one boating close on the river to see what you've done. He twitches and is still at once. ".
-		The response is "What follows is an unpleasant scramble. You search his clothing and find that the jewels are here after all, wrapped in a monogrammed linen handkerchief. One of yours, as it happens. [paragraph break]He has very little of anything else, save a hotel key. His other clothes are all new and generic and without marking, his hair and nails trimmed, everything about him dapper and designed to leave no memory and a minimum of fiber traces. But his skin under the shirt is marked with many unhealed bruises. [paragraph break]You roll the body over the lip of the bridge and watch as it splashes into the water. ".
+		The reply is "What follows is an unpleasant scramble. You search his clothing and find that the jewels are here after all, wrapped in a monogrammed linen handkerchief. One of yours, as it happens. [paragraph break]He has very little of anything else, save a hotel key. His other clothes are all new and generic and without marking, his hair and nails trimmed, everything about him dapper and designed to leave no memory and a minimum of fiber traces. But his skin under the shirt is marked with many unhealed bruises. [paragraph break]You roll the body over the lip of the bridge and watch as it splashes into the water. ".
 		It indirectly-follows attack-2.
 
 	To say dump queue: 
-		delete all queued actions for the current interlocutor;
+		delete purgeable conversation for the current interlocutor.
 
 	Fight ends when the grey cat recollects attack-3.
 
 	When Fight ends:
-		end the game saying "End of Part 1"
+		end the story saying "End of Part 1"
  
