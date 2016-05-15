@@ -976,7 +976,7 @@ Carry out requesting the score:
 	otherwise:
 		say "You have earned [score] point[s]:";
 		repeat through the Table of Tasks Achieved in time order:
-			say "[line break]  [points entry] point[s] for [citation entry]";  
+			say "[line break]  [points entry] point[s] for [citation entry]";
 		say paragraph break.
 
 
@@ -1247,7 +1247,7 @@ Instead of taking inventory when the current inventory listing style is wide:
 The packed count is a number that varies.
 
 To say is-are-packed:
-	if the packed count is greater than 1, say "are"; otherwise say "[is-are]".
+	if the packed count is greater than 1, say "are"; otherwise say "[are]".
 
 Instead of taking inventory when the current inventory listing style is utilitarian:
 	now everything is not marked for listing;
@@ -1679,7 +1679,7 @@ Report someone saying hello to the player:
 	say "[greeting of the actor][paragraph break]" instead;
 	
 [fix] [Is the current interlocutor the right person?]
-A person has some text called the greeting. The greeting of a person is usually "'[one of]Hi[or]Hello[or]Hi there[at random],' [the current interlocutor] say[s]."
+A person has some text called the greeting. The greeting of a person is usually "'[one of]Hi[or]Hello[or]Hi there[at random],' [the current interlocutor] [say]."
 
 The greeting of the player is "'Hi,' [we] say."
 	
@@ -1703,7 +1703,7 @@ Check hailing (this is the new check hailing rule):
 		say "There's no one here but you." instead.
 	
 Check saying hello to someone who is not the current interlocutor when the current interlocutor is alert:
-	say "[The noun] [is-are] already included in the conversation." instead.
+	say "[The noun] [are] already included in the conversation." instead.
 
 Check starting a conversation with clientele about something:
 	say "They're... busy. At best interrupting them would interrupt their code, and at worst it would make them think [we] [are] a Bureau agent." instead.
@@ -1738,7 +1738,7 @@ Sanity-check waving to a person:
 	try saying hello to the noun instead.
 
 Sanity-check waving to something:
-	say "[The noun] appear[s] very unlikely to respond." instead.
+	say "[The noun] [appear] very unlikely to respond." instead.
  
 Test secondaries with "tutorial off / z / say hello / g / ask about paddle / say hello to mark / ask mark about mark / ask mark about the paddle / test customer" in the Drinks Club.
 
@@ -1970,14 +1970,14 @@ The block cutting rule response (A) is "But [i]why?[/i] [--] no, don't answer th
 The report jumping rule response (A) is "I don't think that would help."
 The report waving hands rule response (A) is "[We] wave our hand regally."
 The can't push unpushable things rule response (A) is "[We] seriously doubt that will help."
-The standard report opening rule response (A) is "[We] open[s] [the noun][if the noun is a container and the number of things in the noun is 0], which turns out to be empty[end if]."
+The standard report opening rule response (A) is "[We] [open] [the noun][if the noun is a container and the number of things in the noun is 0], which turns out to be empty[end if]."
 [LibMsg <block singing>	"I prefer not to exercise my singing voice in company. (That includes you.)"]
 The block waking up rule response (A) is "At some point we'll split into our two proper selves, but our unnatural synthesis is no dream."
 The print obituary headline rule response (B) is " We have won ".
 The can't push people rule response (A) is "[We][']d rather not try it."
 The can't pull people rule response (A) is "[We][']d rather not try it."
 The can't turn people rule response (A) is "[We][']d rather not try it."
-The block buying rule response (A) is "[if the current interlocutor is a visible person][The current interlocutor] [is-are]n't in a position to sell us [the noun][otherwise]There's no one about to sell us [the noun][end if]."
+The block buying rule response (A) is "[if the current interlocutor is a visible person][The current interlocutor] [aren't] in a position to sell us [the noun][otherwise]There's no one about to sell us [the noun][end if]."
 The report rubbing rule response (A) is "[nerve-damage]."
 The report squeezing rule response (A) is "[nerve-damage]."
 The block burning rule response (A) is "[We] don't have a flame source, and if [we] did I wouldn't want to set things on fire with it."
@@ -2238,7 +2238,7 @@ Sanity-check eating an inedible thing:
 	say "[The noun] wouldn't agree with [us] even if [we] were feeling better." instead.
 	
 Sanity-check wearing something which is not wearable:
-	say "[one of]I don't see how you plan to do that, short of tying [the noun] to our head. (Hint: no.)[or][The noun] [is-are]n't wearable.[at random]" instead.
+	say "[one of]I don't see how you plan to do that, short of tying [the noun] to our head. (Hint: no.)[or][The noun] [aren't] wearable.[at random]" instead.
 
 Sanity-check pushing someone to a direction:
 	say "Only very small children are so easily steered." instead.
@@ -2322,10 +2322,10 @@ Sanity-check searching the player:
 	try taking inventory instead.
 	
 Sanity-check mounting a person which is not an animal:
-	say "[The noun] [is-are]n't a ride-giving animal." instead.
+	say "[The noun] [aren't] a ride-giving animal." instead.
 
 Sanity-check climbing a person:
-	say "[The noun] [is-are]n't [one of]a ladder[or]a tree[or]a staircase[or]a wall[at random]." instead.
+	say "[The noun] [aren't] [one of]a ladder[or]a tree[or]a staircase[or]a wall[at random]." instead.
 	
 Instead of searching or looking under or touching or rubbing or squeezing something which is worn by a person (called the proprietor):
 	if the proprietor is the player:
@@ -2347,7 +2347,7 @@ Instead of drinking something which is not fluid:
 	if the noun is edible:
 		say "I could see eating [it-them of the noun], but no more.";
 	otherwise:
-		say "[one of]Even if [the noun] were liquid, [it-they] would still not be nice to drink[or]I don't fancy [noun] smoothie[at random]."
+		say "[one of]Even if [the noun] were liquid, [they] would still not be nice to drink[or]I don't fancy [noun] smoothie[at random]."
 		
 Understand "apply pressure to [something]" as pushing.
 Understand "lean on [something]" as pushing.
@@ -2368,7 +2368,7 @@ Instead of tasting something:
 		if the noun is r-abstract:
 			say "There's not enough there to provide much flav[our]."; 
 		else:
-			say "[regarding the noun][They] taste[s] as I would have expected."; 
+			say "[regarding the noun][They] [taste] as I would have expected."; 
 	otherwise:
 		say "[flavor-description of the noun].[paragraph break]".
 
@@ -2377,9 +2377,9 @@ Instead of smelling something:
 		if the noun is r-abstract:
 			say "There's hardly any od[our] to [the noun]."; 
 		else:
-			say "[regarding the noun][They] smell[s] as I would have expected.";
+			say "[regarding the noun][They] [smell] as I would have expected.";
 	otherwise:
-		say "[regarding the noun][They] smell[s] like [scent-description of the noun].[paragraph break]".
+		say "[regarding the noun][They] [smell] like [scent-description of the noun].[paragraph break]".
 		
 Instead of tasting something which is not edible:
 	if the noun is a person:
@@ -2409,7 +2409,7 @@ Every turn when the player is not in a car:
 		try listening to the noisemaker.
 		
 Report listening to a quiet thing:
-	say "[The noun] [one of]do[es]n't make much noise[or][is-are] naturally silent[or]make[s] no notable noises[at random]." instead.
+	say "[The noun] [one of][don't] make much noise[or][are] naturally silent[or][make] no notable noises[at random]." instead.
 	
 Report listening to a person:
 	if the noun is the current interlocutor:
@@ -2457,7 +2457,7 @@ Check finding something that is enclosed by the player:
 	say "[We][']re carrying [the noun]." instead.
 
 Check finding a backdrop:
-	say "[The noun] [is-are]n't in one specific location." instead.
+	say "[The noun] [aren't] in one specific location." instead.
 	
 Check finding something that is enclosed by the location:
 	say "[The noun] should be close by." instead;
@@ -2705,7 +2705,7 @@ Include Far away by Jon Ingold.
 Instead of throwing something at something far-off:
 	say "Our aim isn't nearly good enough."
 
-A facade is a kind of thing. A facade is usually fixed in place. A facade has some text called the closure notice. The closure notice of a facade is usually "[The item described] [is-are] [one of]closed[or]shut[or]not open[or]locked up[purely at random] [one of]for[or]during[or]on[purely at random] [one of]the holiday[or]Serial Comma Day[purely at random]. ".
+A facade is a kind of thing. A facade is usually fixed in place. A facade has some text called the closure notice. The closure notice of a facade is usually "[The item described] [are] [one of]closed[or]shut[or]not open[or]locked up[purely at random] [one of]for[or]during[or]on[purely at random] [one of]the holiday[or]Serial Comma Day[purely at random]. ".
 
 Instead of pushing or pulling or turning or taking a facade, say "[We] aren't super-powered."
 Instead of looking under a facade, say "[The noun] will not just peel back like a stage curtain, you know.".
@@ -2814,21 +2814,21 @@ Last check facing:
 	if leftward thing is nothing and rightward thing is nothing:
 		make no decision;
 	if leftward thing is nothing:
-		say "There is nothing of note to [the leftway], but to [the rightway] [is-are of rightward thing] [the rightward thing]." instead;
+		say "There is nothing of note to [the leftway], but to [the rightway] [regarding the rightward thing][are] [the rightward thing]." instead;
 	if rightward thing is nothing:
-		say "There is nothing of note to [the rightway], but to [the leftway] [is-are of leftward thing] [the leftward thing]." instead;
+		say "There is nothing of note to [the rightway], but to [the leftway] [regarding the leftward thing][are] [the leftward thing]." instead;
 	if the location is indoors:
 		say "That way is just a corner of the room, though [we] could go [leftway] to [the leftward thing] or [rightway] to [the rightward thing]." instead;
 	otherwise if leftward thing is a road and rightward thing is a road:
 		say "That way is the corner of [the leftward thing] and [the rightward thing]." instead;
 	otherwise if leftward thing is a facade and rightward thing is a facade:
-		say "In that direction [one of][the leftward thing] abut[s] [the rightward thing], and there's no good way between them[or][the leftward thing] meet[s] the edge of [the rightward thing][or]lies the corner between [the leftward thing] and [the rightward thing][at random]." instead; 
+		say "In that direction [one of][the leftward thing] abut[s] [the rightward thing], and there's no good way between them[or][the leftward thing] [meet] the edge of [the rightward thing][or]lies the corner between [the leftward thing] and [the rightward thing][at random]." instead; 
 	otherwise if leftward thing is a road:
 		say "That way is the corner of [the rightward thing] and the beginning of [leftward thing] running [leftway]." instead;
 	otherwise if rightward thing is a road:
 		say "That way is the corner of [the leftward thing] and the beginning of [rightward thing] running [rightway]." instead;
 	otherwise:
-		say "To [the noun] [the leftward thing] meet[s] [the rightward thing]." instead.
+		say "To [the noun] [the leftward thing] [meet] [the rightward thing]." instead.
 
 To decide what object is the thing seen facing (dir - a direction):
 	if a backdrop (called target) in the location screens dir:
@@ -2960,10 +2960,10 @@ Check fueling something with a vegetable:
 	say "I've heard of biodiesel, but that carries the point too far." instead.
 
 Check fueling something with something which is not fuel-like:
-	say "[The second noun] do[es]n't make much of a fuel." instead.
+	say "[The second noun] [don't] make much of a fuel." instead.
 
 Check fueling something which is not a car with something:
-	say "[The noun] [one of]do[es]n't take fuel[or][is-are]n't fuel-powered[at random]." instead.
+	say "[The noun] [one of][don't] take fuel[or][aren't] fuel-powered[at random]." instead.
 	
 Carry out fueling something with something:
 	now the second noun is nowhere;
@@ -3171,7 +3171,7 @@ Chapter 4 - Special Doors and Barriers
 
 Section 1 - Door Descriptions and Knocking
 
-The description of a door is usually "[if open][The item described] stand[s] open[otherwise if locked]Closed and locked[otherwise][regarding the item described][They] [are] closed[end if]."
+The description of a door is usually "[if open][The item described] [stand] open[otherwise if locked]Closed and locked[otherwise][regarding the item described][They] [are] closed[end if]."
 
 Understand "knock on [door]" as knocking on. Knocking on is an action applying to one thing. Understand "knock on [something]" as attacking. 
 
@@ -3211,17 +3211,17 @@ Definition: a thing is bendy:
 	no.
 
 Check propping something with a bendy thing:
-	say "[The second noun] [is-are] long enough, but too flexible to provide much support against the springs of [the noun]." instead.
+	say "[The second noun] [are] long enough, but too flexible to provide much support against the springs of [the noun]." instead.
 	
 Check propping something with something which is not long:
-	say "[The second noun] [is-are] not long enough to prop [the noun] very effectively";
+	say "[The second noun] [are] not long enough to prop [the noun] very effectively";
 	if the second noun is strong:
-		say ", though at least [it-they of second noun] [is-are] fairly stout." instead;
+		say ", though at least [regarding the second noun][they] [are] fairly stout." instead;
 	else:
-		say ", and even if [it-they of second noun] were, [it-they of second noun] wouldn't hold up against the pressure of the springs." instead.
+		say ", and even if [regarding the second noun][they] were, [they] wouldn't hold up against the pressure of the springs." instead.
 	
 Check propping something which is wedged by something (called the existing impediment) with something:
-	say "[The noun] [is-are] already propped open by [the existing impediment]." instead.
+	say "[The noun] [are] already propped open by [the existing impediment]." instead.
 	
 Carry out propping a door with something:
 	now the noun is open;
@@ -3408,7 +3408,7 @@ Instead of attacking a mirror:
 	
 Instead of burning something in the presence of a stove:
 	if the noun is edible:
-		say "You are about right about my cooking abilities, I suppose, but [the noun] [is-are] better off as [it-they] [is-are].";
+		say "You are about right about my cooking abilities, I suppose, but [the noun] [are] better off as [they] [are].";
 	otherwise:
 		say "It's true there's a handy stove here, but I don't see the point."
 	
@@ -3497,7 +3497,7 @@ When play begins:
 
 Before entering a chair which supports something (called the impediment):
 	if the noun supports a person:
-		say "[The noun] [is-are] plainly occupied." instead;
+		say "[The noun] [are] plainly occupied." instead;
 	otherwise:
 		try taking the impediment;
 		if the impediment is on the noun:
@@ -3505,7 +3505,7 @@ Before entering a chair which supports something (called the impediment):
 			
 Rule for writing a topic sentence about an as-yet-unknown introduceable person (called special-target) who is on a chair (called secondary-target):
 	now the secondary-target is mentioned;
-	say "[The special-target] [is-are] sitting here. [run paragraph on]";
+	say "[The special-target] [are] sitting here. [run paragraph on]";
 	now the current-paragraph references the special-target.
 	
 Rule for writing a paragraph about someone (called special-target) who is on a chair (called secondary-target):
@@ -3516,9 +3516,9 @@ Rule for writing a paragraph about someone (called special-target) who is on a c
 	if the location is an office:
 		now the secondary-target is mentioned;
 		let N be a random desk which is in the location;
-		say "[The special-target] [is-are] seated at [its-their] [N]. [run paragraph on]";
+		say "[The special-target] [are] seated at [their] [N]. [run paragraph on]";
 	otherwise:
-		say "[The special-target] [is-are] sitting on [a secondary-target]. [run paragraph on]"; 
+		say "[The special-target] [are] sitting on [a secondary-target]. [run paragraph on]"; 
 
 Rule for disclosing contents of a desk (called special-target):
 	if someone (called desk-user) who is not the player is on a chair in the location:
@@ -3543,7 +3543,7 @@ Understand "dig [hole in] [something diggable]" or "dig [something diggable]" as
 Understand the command "scoop" as "dig".
 
 Sanity-check digging in a person:
-	say "[The noun] do[es]n't have much in common with a mound of dirt." instead.
+	say "[The noun] [don't] have much in common with a mound of dirt." instead.
 Sanity-check digging in a floppy wearable thing which is not diggable:
 	say "...what, like looking through for pockets or something? No sign of anything interesting, I'm afraid." instead.
 
@@ -3636,10 +3636,10 @@ So our minimal approach to fluids just disallows a few kinds of manipulation tha
 A thing can be solid or fluid. A thing is usually solid.
 
 Instead of waving or squeezing or pulling or pushing or rubbing or turning a fluid thing:
-	say "[The noun] do[es]n't really respond to that kind of manipulation."
+	say "[The noun] [don't] really respond to that kind of manipulation."
 
 Sanity-check drinking a solid thing:
-	say "[The noun] [is-are]n't liquid." instead.
+	say "[The noun] [aren't] liquid." instead.
 	
 Check drinking a fluid thing:
 	try eating the noun instead.
@@ -3657,10 +3657,10 @@ Rule for deciding whether all includes a fluid thing while taking:
 	it does not.
 	
 Sanity-check tying a fluid to something:
-	say "[The noun] do[es]n't make much of an anchor point." instead.
+	say "[The noun] [don't] make much of an anchor point." instead.
 	
 Sanity-check tying something to a fluid:
-	say "[The second noun] do[es]n't make much of an anchor point." instead.
+	say "[The second noun] [don't] make much of an anchor point." instead.
 	
 Sanity-check climbing a fluid thing:
 	say "A prominent feature of fluids is that they don't provide much support." instead.
@@ -3695,7 +3695,7 @@ Check filling the funnel with a fluid thing:
 	say "That would have about the same effect as pouring [the second noun] on our feet." instead.
 
 Check filling it with:
-	say "[one of]I'd rather leave [the second noun] where [it-they] [is-are].[or]I don't see much point to filling containers with things.[at random]" instead.
+	say "[one of]I'd rather leave [the second noun] where [they] [are].[or]I don't see much point to filling containers with things.[at random]" instead.
 
 	
 Section 2 - Vegetables
@@ -3862,10 +3862,10 @@ Sanity-check performing something on game-selection:
 	say "It's not really a game-playing occasion." instead.
 
 Sanity-check performing something on a person: 
-	say "If [the second noun] wish[es] to sing something, that is up to [it-them]." instead.
+	say "If [the second noun] wish[es] to sing something, that is up to [them]." instead.
 
 Sanity-check performing something on something which is not an instrument:
-	say "[The second noun] [is-are]n't much of an instrument." instead.
+	say "[The second noun] [aren't] much of an instrument." instead.
 
 Understand "perform [text] on [something]" as improvising it on. Understand "perform [text] on [instrument]" as improvising it on. Improvising it on is an action applying to one topic and one thing.
 
@@ -3878,7 +3878,7 @@ Rule for supplying a missing second noun while improvising the topic understood 
 		say "There's no instrument handy." instead.
 
 Check improvising the topic understood on something which is not an instrument:
-	say "[The second noun] [is-are]n't much of an instrument." instead.
+	say "[The second noun] [aren't] much of an instrument." instead.
  
 
 Part 5 - Extra Actions
@@ -3961,7 +3961,7 @@ Sanity-check diving into something which is not a fluid:
 	say "It generally works best to dive into liquids." instead.
 	
 Sanity-check diving into a fluid thing which is not a backdrop:
-	say "[The noun] [is-are]n't exactly deep enough to [one of]bathe in[or]swim in[or]dive into[at random]." instead.
+	say "[The noun] [aren't] exactly deep enough to [one of]bathe in[or]swim in[or]dive into[at random]." instead.
 
 Check diving into sea-view:
 	say "The shore here slopes gradually, with very shallow water at the beginning." instead.
@@ -3991,9 +3991,9 @@ Does the player mean attacking the hanging figure with a long strong thing:
 
 Sanity-check attacking something with something:
 	if the second noun is not long:
-		say "[The second noun] [is-are] too short to hit with effectively." instead;
+		say "[The second noun] [are] too short to hit with effectively." instead;
 	if the second noun is floppy:
-		say "[The second noun] [is-are] too floppy to do much damage." instead.
+		say "[The second noun] [are] too floppy to do much damage." instead.
 		
 A thing can be attackable. 
 
@@ -4045,7 +4045,7 @@ Before inserting something which is worn into a container:
 
 Every turn:
 	if a police person (called suspicious official) can see an illegal thing (called the evidence) which is not in a closed backpack:
-		say "The attention of [the suspicious official] lights on [the evidence]. 'Let's see [that-those of the evidence],' [it-they of the suspicious official] say[s]. [paragraph break]Of course, a minute's inspection doesn't make [it-them] any happier, and soon [we] find ourselves explaining things to the police.";
+		say "The attention of [the suspicious official] lights on [the evidence]. 'Let's see [that-those of the evidence],' [regarding the suspicious official][they] [say]. [paragraph break]Of course, a minute's inspection doesn't make [them] any happier, and soon [we] find ourselves explaining things to the police.";
 		end the story saying "That was careless".
 
 
@@ -4129,16 +4129,16 @@ Section 3 - Concreteness
 A thing can be r-concrete or r-abstract. A thing is usually r-concrete.
 
 Sanity-check rubbing or squeezing or touching or waving or pulling or pushing or turning or climbing an r-abstract thing:
-	say "[The noun] [is-are] not really solid enough to treat that way. Might as well be [one of]dandelion fluff[or]pipe smoke[or]a hologram[or]a 3D image[or]mist[or]a cloud of vapor[at random]." instead.
+	say "[The noun] [are] not really solid enough to treat that way. Might as well be [one of]dandelion fluff[or]pipe smoke[or]a hologram[or]a 3D image[or]mist[or]a cloud of vapor[at random]." instead.
 	
 Sanity-check eating or drinking or tasting an r-abstract thing:
-	say "[The noun] [is-are] too abstract to offer sustenance." instead.
+	say "[The noun] [are] too abstract to offer sustenance." instead.
 Sanity-check  pushing an r-abstract thing to a direction:
-	say "[The noun] [is-are]n't solid enough for that kind of treatment." instead.
+	say "[The noun] [aren't] solid enough for that kind of treatment." instead.
 Sanity-check switching on or switching off an r-abstract thing:
 	if the noun is a device:
 		make no decision;
-	say "[The noun] [is-are]n't literally a projection; [it-they] [is-are] more of a concept created by the group mind of this language community. Sort of. [We] think. At any rate, [it-they] do[es]n't switch on and off." instead.
+	say "[The noun] [aren't] literally a projection; [they] [are] more of a concept created by the group mind of this language community. Sort of. [We] think. At any rate, [they] [don't] switch on and off." instead.
 
 Section 4 - Heft
 
@@ -4165,20 +4165,20 @@ Carry out involuntarily-dropping:
 		stop the action.
 	
 Report involuntarily-dropping:
-	say "[The noun] [is-are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for us to carry, and fall[s] onto the ground." instead.
+	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for us to carry, and fall[s] onto the ground." instead.
 	
 Report involuntarily-dropping an animal:
-	say "[The noun] [is-are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for us to carry, and half-fall[s], half-jump[s] to the ground." instead.
+	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for us to carry, and half-fall[s], half-[jump] to the ground." instead.
 	
 Report involuntarily-dropping the boar:
 	now the boar is in the location;
 	say "[We] more or less throw the boar as far away as possible. It seems the wisest course." instead.
 	
 Report involuntarily-dropping a person:
-	say "[The noun] look[s] rather awkward, and clamber[s] out of our ineffective hold onto solid ground." instead.
+	say "[The noun] [look] rather awkward, and clamber[s] out of our ineffective hold onto solid ground." instead.
 	
 Report involuntarily-dropping a cat:
-	say "[The noun] get[s] tired of being carried and leap[s] delicately to the ground." instead.
+	say "[The noun] [get] tired of being carried and leap[s] delicately to the ground." instead.
 
 Section 5 - Length and Strength
 
@@ -4197,7 +4197,7 @@ Instead of swinging a long thing:
 		say "[We] swing [the noun] from one hand, to no special effect."
 Sanity-check swinging a short thing: 
 	if the noun is not a person:
-		say "There's not really a lot of extent to [the noun] to make [it-them] satisfying to swing." instead.
+		say "There's not really a lot of extent to [the noun] to make [them] satisfying to swing." instead.
 
 Section 6 - Politeness
 
@@ -4224,10 +4224,10 @@ Sanity-check cutting something which is not cuttable with something:
 		otherwise:
 			say "I think that would only make a mess." instead;
 	else:
-		say "[The second noun] do[es]n't offer much of an edge, but that's probably just as well really." instead.
+		say "[The second noun] [don't] offer much of an edge, but that's probably just as well really." instead.
 		
 Sanity-check cutting something cuttable with something which is not edged:
-	say "[The second noun] do[es]n't offer much of an edge." instead. 
+	say "[The second noun] [don't] offer much of an edge." instead. 
  
 Check cutting something with the jigsaw when the jigsaw is not switched on:
 	try switching on the jigsaw;
@@ -4665,11 +4665,11 @@ Sanity-check blindfolding something which is not a person with something:
 Sanity-check blindfolding someone with something which is not wearable:
 	say "[The second noun] cannot be worn at all." instead.
 Sanity-check blindfolding someone with something which is not floppy:
-	say "[The second noun] [is-are] too stiff to wrap around one's face." instead.
+	say "[The second noun] [are] too stiff to wrap around one's face." instead.
 Sanity-check blindfolding someone with something when the heft of the second noun is greater than 1:
 	if the second noun is not wearable or the second noun is not floppy:
 		make no decision;
-	say "[The second noun] [is-are] too substantial to tie neatly around the eyes." instead.
+	say "[The second noun] [are] too substantial to tie neatly around the eyes." instead.
 Sanity-check blindfolding someone who is not the player with something:
 	say "Better let people apply their own blindfolds, if they're so inclined." instead.
 
@@ -5242,10 +5242,10 @@ Check waving the letter-remover at font t-shirts when the current setting of the
 	say "No doubt this would be a cogent statement about the commercial[ization] of the body, if it weren't for the fact that T-SHIT doesn't describe anything anyone with a functional colon has ever heard of." instead.
 
 Instead of taking something which is part of the clothing shop:
-	say "Though [the noun] [is-are] theoretically for sale, there's no one in at the moment to sell [it-them] to us."
+	say "Though [the noun] [are] theoretically for sale, there's no one in at the moment to sell [them] to us."
 
 Instead of buying something which is part of the clothing shop:
-	say "Though [the noun] [is-are] theoretically for sale, there's no one in at the moment to sell [it-them] to us."
+	say "Though [the noun] [are] theoretically for sale, there's no one in at the moment to sell [them] to us."
 
 The typographer's office is a facade in Sigil Street.  It is scenery.
 	Understand "sign" or "display" or "poster" or "typographer" or "font" or "fonts" or "comma" or "commas" or "punctuation" as the typographer's office. It fronts north. The description of the typographer's office is "The office advertises custom fonts and symbols, though it is very unlikely that anyone decides to have a custom font made simply because they happened to catch a notice in a shop window. In hon[our] of the holiday, there is also a display poster showing the form of the humble comma as it manifests itself in a variety of popular fonts."
@@ -6051,7 +6051,7 @@ Instead of putting something on the blankets:
 	try the salespeople discussing warning about blankets.
 
 Instead of buying something which is on the blankets:
-	say "[The noun] [is-are] certainly fake."
+	say "[The noun] [are] certainly fake."
 
 On the blankets is a watch. The description of the watch is "A valuable watch with diamonds set in the face and a chunky metal band."
 
@@ -6108,7 +6108,7 @@ Instead of pushing something which is on the diorama table:
 	
 Report putting something on the diorama table:
 	if the noun is the members or the noun is the army or the noun is the member:
-		say "[We] restore [the noun] to [its-their] rightful position." instead;
+		say "[We] restore [the noun] to [their] rightful position." instead;
 	otherwise:
 		say "[We] add [unless the noun is plural-named]an [end if]incongruous [noun] to the scene." instead;
 
@@ -6352,7 +6352,7 @@ Understand "mount [reel] on/onto [the projector]" as inserting it into.
 Understand "show [reel] on [the projector]" as showing it on. Showing it on is an action applying to one carried thing and one thing.
 
 Check showing something which is not the reel on the projector:
-	say "[The noun] [is-are] not a reel of film." instead.
+	say "[The noun] [are] not a reel of film." instead.
 	
 Check showing the reel on something which is not the projector:
 	say "[We] really need a film projector for that." instead.
@@ -7425,13 +7425,13 @@ Sanity-check doing something when the bushes are shrine-hiding:
 
 [The nymph 'shrine' is nod to the island's Roman history. There's nothing in the game to reveal this, really, but the idea is that this stone is actually a panel from an imperial-era sarcophagus (nymphs were often featured on such panels, and sarcophagus carvers were of very varied levels of skill). Subsequent inhabitants moved it.]
 
-The shrine is a fixed in place container in the Winding Footpath. The initial appearance is "Now that the bushes have been cleared a little, the ancient shrine is plainly visible[if something is in the shrine], and [a random thing in the shrine] [is-are] set up in the place of hon[our][end if]." Understand "ancient" or "wall" or "niche" or "stone" or "backing" as the shrine. The description of the shrine is "There's a niche dug into the stone of the wall, above a [low relief] of three ladies. It's not very good work to start with, and has been eroded by a lot of weather, and I wouldn't be surprised if this weren't its original location; it probably stood somewhere else and was brought here.".
+The shrine is a fixed in place container in the Winding Footpath. The initial appearance is "Now that the bushes have been cleared a little, the ancient shrine is plainly visible[if something is in the shrine], and [a random thing in the shrine] [are] set up in the place of hon[our][end if]." Understand "ancient" or "wall" or "niche" or "stone" or "backing" as the shrine. The description of the shrine is "There's a niche dug into the stone of the wall, above a [low relief] of three ladies. It's not very good work to start with, and has been eroded by a lot of weather, and I wouldn't be surprised if this weren't its original location; it probably stood somewhere else and was brought here.".
 
 The carrying capacity of the shrine is 1.
 
 Sanity-check inserting something into the shrine:
 	if the heft of the noun is greater than 2:
-		say "[The noun] [is-are] too large to fit in the shrine niche." instead.
+		say "[The noun] [are] too large to fit in the shrine niche." instead.
 		
 Sanity-check putting something on the shrine:
 	try inserting the noun into the shrine instead.
@@ -7847,7 +7847,7 @@ Instead of taking the contraband box:
 	say "I don't think her plans for that included our stealing it."
 	
 Instead of taking something disguisable:
-	say "'You can't have [the noun],' Lena says. 'Just do whatever you think needs doing to... improve [it-them] a bit.'"
+	say "'You can't have [the noun],' Lena says. 'Just do whatever you think needs doing to... improve [them] a bit.'"
 
 Instead of putting the paste on something in the presence of Lena:
 	say "[We] smear some of [the paste] onto [the second noun]. Nothing obvious happens, of course, but that is the whole point.";
@@ -8307,15 +8307,15 @@ Every turn when the location is Customs House:
 [These events are too memorable to happen more than once; therefore we have them on a stopping cycle with the last event being a generic again.]
 
 To say random-once-event:
-	say "[one of]A man arrives to deliver a parrot to the linguistic alignment rooms. '[i]Allo?[/i]' inquires the parrot. Embarrassed, the parrot's owner covers its cage with a blanket[*and*] meets no one's eye until the quarantine room is ready to accept them[or][Random-passerby] explains to a neighb[our] in line that [it-they] is visiting Atlantis for gender reassignment with a homonym paddle[or]There's a percussive noise from a side chamber as some abandoned luggage is exploded for safety[or]An Authenticator walks along the line, looking people over through a monocle[or][Random-passerby] takes several French-language articles out of a [luggage-item][*and*] tosses them into a reclamation bin[or][Random-passerby] waves cheerfully at a security camera[or][Random-passerby] tries a pick-up line on [its-their] neighb[our]. [Random-passerby] shuts this down hard[or][Random-passerby] [comes-in][stopping]".
+	say "[one of]A man arrives to deliver a parrot to the linguistic alignment rooms. '[i]Allo?[/i]' inquires the parrot. Embarrassed, the parrot's owner covers its cage with a blanket[*and*] meets no one's eye until the quarantine room is ready to accept them[or][Random-passerby] explains to a neighb[our] in line that [they] is visiting Atlantis for gender reassignment with a homonym paddle[or]There's a percussive noise from a side chamber as some abandoned luggage is exploded for safety[or]An Authenticator walks along the line, looking people over through a monocle[or][Random-passerby] takes several French-language articles out of a [luggage-item][*and*] tosses them into a reclamation bin[or][Random-passerby] waves cheerfully at a security camera[or][Random-passerby] tries a pick-up line on [their] neighb[our]. [Random-passerby] shuts this down hard[or][Random-passerby] [comes-in][stopping]".
 	
 To say private-room:
 	if a random chance of 1 in 2 succeeds:
-		say "[one of]. 'Come with me, please,' says the official, very bored[or][*and*] is led away into a private room[or]. The official does not seem impressed[or]. A moment later, the official escorts [it-them] into one of the side rooms. The door shuts firmly[at random]".
+		say "[one of]. 'Come with me, please,' says the official, very bored[or][*and*] is led away into a private room[or]. The official does not seem impressed[or]. A moment later, the official escorts [them] into one of the side rooms. The door shuts firmly[at random]".
 	
 To say hubbub:
 	say "[one of]The noise increases[or]Raised voices come[or]There's a bit of a hubbub[or]Interested whispers pass back[or]Sounds of argument filter back[at random] from the [one of]front of the room[or]head of the line[or]bank of official desks[at random]. ";
-	say "[one of]It appears someone left a [luggage-item] unsupervised, and it now has to be scanned. 'I hope they blow it up,' says someone[or][Random-passerby] is having [its-their] cell phone confiscated[or][Random-passerby] has foolishly asked to see a supervisor[or][Random-passerby] turns out to have a tattoo of a quotation in German all down [its-their] right leg[or][Random-passerby] was trying to bribe a [random-official] with a packet of [currency] notes, but was rebuffed[at random]";
+	say "[one of]It appears someone left a [luggage-item] unsupervised, and it now has to be scanned. 'I hope they blow it up,' says someone[or][Random-passerby] is having [their] cell phone confiscated[or][Random-passerby] has foolishly asked to see a supervisor[or][Random-passerby] turns out to have a tattoo of a quotation in German all down [their] right leg[or][Random-passerby] was trying to bribe a [random-official] with a packet of [currency] notes, but was rebuffed[at random]";
 
 To say comes-in:
 	say "[one of]comes[or]walks[or]steps[or]strolls[or]saunters[or]stumbles[or]strides[or]wanders[at random]";
@@ -8329,7 +8329,7 @@ To say optional-exit:
 		say "[*and*] [one of]gets in line[or]joins the exit line[or]stands in line[or]gets into the line to leave the country[at random]"
 	
 To say *and*:
-	say "[one of]. [It-they][or] and[or], then[as decreasingly likely outcomes]".
+	say "[one of]. [They][or] and[or], then[as decreasingly likely outcomes]".
 	
 To say punks-out:
 	say "[one of]looks at the exit line[*and*] suddenly gets cold feet[*and*] leaves[or]climbs under the line divider[*and*] gets out of the exit line[or]abruptly starts moving back out of the exit line[or]gets out of line[*and*] heads for the restroom[at random]".
@@ -8338,7 +8338,7 @@ To say interaction-type:
 	say "[one of]a disagreement[or]an involved conversation[or]a tiff[or]a heated altercation[or]an exchange of words[or]an innuendo-rich conversation[or]a flirtation[as decreasingly likely outcomes]".
 
 To say line-advance:
-	say "[one of]The line shuffles [minutely] forward[or]The line advances[or]The line advances [minutely][or]The line moves forward [a random number between 2 and 4 in words] steps[or]Everyone in line takes [a random number between 2 and 4 in words] steps ahead[or][Random-passerby] shoves a [luggage-item] ahead in line with [its-their] foot[or][Random-passerby] emerges from an oblivious fog long enough to notice that a substantial gap has opened up in the line[*and*] hurries to close it[or][Random-passerby] nudges the next person to point out that the line is moving ahead, and there's no reason to stand still gawking at posters, thanks very much[as decreasingly likely outcomes]".
+	say "[one of]The line shuffles [minutely] forward[or]The line advances[or]The line advances [minutely][or]The line moves forward [a random number between 2 and 4 in words] steps[or]Everyone in line takes [a random number between 2 and 4 in words] steps ahead[or][Random-passerby] shoves a [luggage-item] ahead in line with [their] foot[or][Random-passerby] emerges from an oblivious fog long enough to notice that a substantial gap has opened up in the line[*and*] hurries to close it[or][Random-passerby] nudges the next person to point out that the line is moving ahead, and there's no reason to stand still gawking at posters, thanks very much[as decreasingly likely outcomes]".
 	
 To say minutely:
 	say "[one of]a little[or]minutely[or]a few paces[or]slightly[or]very gradually[at random]"
@@ -8347,7 +8347,7 @@ To say heads for the Docks:
 	say "[one of]entering Atlantis brush past us and head out to the Docks[or]emerge from the line[or]come through the entry line and head for the east exit[or]go to the east exit[or]pass us heading for the Docks[at random]".
 
 To say acts bored:
-	say "[one of][looks-bored][or][consults-watch][or][luggage-item-activities][or][hums][or]taps [its-their] foot[or]beats a tattoo on the line divider[as decreasingly likely outcomes]";
+	say "[one of][looks-bored][or][consults-watch][or][luggage-item-activities][or][hums][or]taps [their] foot[or]beats a tattoo on the line divider[as decreasingly likely outcomes]";
 	if a random chance of 1 in 5 succeeds:
 		say "[*and*] [acts bored]"
 	
@@ -8364,7 +8364,7 @@ To say looks-bored:
 
 To say consults-watch:
 	say "[one of]looks at[or]looks pointedly at[or]consults[at random] ";
-	say "[one of][its-their] wristwatch[or]a cheap wristwatch[or]the time[or]a watch[at random]".
+	say "[one of][their] wristwatch[or]a cheap wristwatch[or]the time[or]a watch[at random]".
 	
 To say hums:
 	say "hums ";
@@ -9503,9 +9503,9 @@ Sanity-check returning guidebook:
 
 Sanity-check returning something:
 	if the noun is not a book:
-		say "[The noun] [is-are] not a library book." instead;
+		say "[The noun] [are] not a library book." instead;
 	if the noun is not Problem of Adjectives:
-		say "[The noun] [is-are] ours." instead.
+		say "[The noun] [are] ours." instead.
 		
 Check returning the Problem of Adjectives:
 	if the location is not Language Studies Seminar Room:
@@ -10118,7 +10118,7 @@ Instead of knocking on office-door-1 when the location of Professor Waterstone i
 	else:
 		repeat with item running through things enclosed by the location:
 			if item is waterstone-inspiring:
-				say "Waterstone looks up and gives a little frown. It's clear he doesn't know why we've knocked; perhaps he can't see [the item] from that angle. Maybe if [we] were holding [it-them]." instead;  
+				say "Waterstone looks up and gives a little frown. It's clear he doesn't know why we've knocked; perhaps he can't see [the item] from that angle. Maybe if [we] were holding [them]." instead;  
 	follow the water-reaction rules for the selected object.
 
 The water-reaction rules are an object-based rulebook.
@@ -10169,7 +10169,7 @@ A Water-reaction rule for the clock:
 A last Water-reaction rule for something (called the target):
 	say "[one of]Waterstone looks up from his work long enough to give us an irritated glare.[or]Waterstone barely glances away from his typing this time.[or]Without looking up, Waterstone sticks out his tongue. Really, he's clearly very upset about his deadlines, it seems.[or][We] get only a momentary flicker of attention from Waterstone.[stopping]";
 	if the draft document is examined:
-		say "[line break]He seems to get that we're trying to show him [the target][one of], but as [it-they] [is-are] not related to the concept of homonym shame, it's not much help with his paper, so he probably doesn't want to be distracted[or], but [it-they] [is-are] not something whose original sounded dirty, so presumably that's not a lot of help with the paper[stopping].";
+		say "[line break]He seems to get that we're trying to show him [the target][one of], but as [they] [are] not related to the concept of homonym shame, it's not much help with his paper, so he probably doesn't want to be distracted[or], but [they] [are] not something whose original sounded dirty, so presumably that's not a lot of help with the paper[stopping].";
 	else:
 		if the draft document is seen:
 			say "[line break]He seems to get that we're trying to show him [the target], but I don't think he's very interested. His work doesn't seem to be going well. Maybe if we actually read the document he was trying to print, that would give us some idea.";
@@ -10352,7 +10352,7 @@ Instead of dropping something in Samuel Johnson Basement when the heft of the no
 	try inserting the noun into the large carton;
 
 After dropping something noisy in the large carton:
-	say "[We] set [the noun] in the carton, where [it-they] ought to provide a helpful distraction for the time being." 
+	say "[We] set [the noun] in the carton, where [they] ought to provide a helpful distraction for the time being." 
 	
 Understand "recycle [something]" as recycling. Recycling is an action applying to one carried thing. 
 Sanity-check recycling a person:
@@ -10997,7 +10997,7 @@ Sanity-check going to a privately-controlled room in Official grounds:
 	[if the player encloses a visible bureau-disallowed thing:
 		say "If [we] [are] going to try to get into the Bureau, [we][']ll need a pass and a reason for entry, and [we] should probably hide most of our possessions[if the player carries something bureau-allowed]. It's fine to have [the list of bureau-allowed things enclosed by the player], and our[otherwise]Our[end if] hair and clothing probably won't be closely searched, but anything illegal or weird, or anything an authentication scope would identify as fake, like [the list of visible bureau-disallowed things enclosed by the player], will need to be smuggled inside something else." instead; ]
 	if a fake person (called ringer) is in the location:
-		say "[The ringer] would probably give us away if [it-they] followed us. Best take care of that first." instead;
+		say "[The ringer] would probably give us away if [they] followed us. Best take care of that first." instead;
 	continue the action. 
 	
 Section 7 - Antechamber
@@ -11243,7 +11243,7 @@ Sanity-check an actor poking head through something which is not the plywood cut
 		stop the action.
 		
 Report someone poking head through the plywood cutout:
-	say "[The actor] look[s] frankly awesome with [its-their] head poking through above the bosom and flowing robes of Atlantida." instead.
+	say "[The actor] [look] frankly awesome with [their] head poking through above the bosom and flowing robes of Atlantida." instead.
 
 Report poking head through the plywood cutout:
 	say "[We] momentarily enjoy the sensation of being cast as Atlantida, spirit of the island, invincible, implacable, the sum of the devotions and desires of all our people.
@@ -11481,21 +11481,21 @@ He looks puzzled. 'Aren't we safer together?'
 'No,' I say.[paragraph break]";
 		say "[command prompt]";
 		wait for any key;
-		say "[paragraph break]'But[--]'[paragraph break]'Look, just trust me, this once,' we say.[paragraph break][The victim] back[s] out the door. Loud sounds of an arrest ensue. I hear my father's voice, and two other people. Then finally the sounds die away.";
+		say "[paragraph break]'But[--]'[paragraph break]'Look, just trust me, this once,' we say.[paragraph break][The victim] [back] out the door. Loud sounds of an arrest ensue. I hear my father's voice, and two other people. Then finally the sounds die away.";
 		now Brock is nowhere;
 		now father is nowhere;
 	otherwise if the victim is fake:
-		say "[The victim] look[s] at us in confusion. 'OUT,' you say, pointing at the door[one of]. 
+		say "[The victim] [look] at us in confusion. 'OUT,' you say, pointing at the door[one of]. 
 
 I keep thinking: my father is going to look like a fool when it's found he's arrested a fake person; he'll be disgraced. 
 
 I want to stop you, but you've got the upper hand now[or][stopping].
 
-[The victim] back[s] out the door.
+[The victim] [back] out the door.
 
 [if the victim is not undisguised]'Nothing on the auth scope,' comments a female voice.
 
-'Yeah, but [it-they of the victim] do[es]n't look like a criminal mastermind, does [it-they]?'
+'Yeah, but [regarding the victim][they] [don't] look like a criminal mastermind, does [they]?'
 
 [end if][one of]There's a noise like the firing of a restoration gel rifle and [or]The rifle fires again, followed by[stopping] the sound of [the victim] collapsing into [a list of things which proffer the victim]. 'Nice try,' shouts a voice from outside. 'Next?'";
 		now victim is nowhere;
@@ -11702,7 +11702,7 @@ Rule for distantly describing Wonderland:
 	say "The hallway gets considerably stranger in that direction: you've only seen such places in movies. Or nightmares."
 	
 Report shooting the odor with the anagramming gun:
-	say "The gun fires into the odor, which disperses. There's ripple in the air, and in its place [a detritus] appear[s][if the detritus is not seen]. [run paragraph on][detritus description][end if]." instead.
+	say "The gun fires into the odor, which disperses. There's ripple in the air, and in its place [a detritus] [appear][if the detritus is not seen]. [run paragraph on][detritus description][end if]." instead.
 	
 Rule for printing the name of the odor while shooting the odor with the anagramming gun:
 	say "odor".
@@ -12070,7 +12070,7 @@ Check putting the weight on the pulley:
 	say "This weight isn't substantial enough, and also provides no loop or ring that would let it hang from the hook." instead.
 
 Check putting an unhookable thing on the pulley: 
-	say "[The noun] do[es]n't fit on the hook." instead.
+	say "[The noun] [don't] fit on the hook." instead.
 	
 Definition: a thing is unhookable:
 	if it is the counterweight:
@@ -12121,7 +12121,7 @@ After putting the counterweight on the pulley when the jack wedges the portculli
 Understand "use [jack] on [something]" as propping it with.
 
 Check propping the portcullis with something which is not the jack:
-	say "[The second noun] [is-are] not strong enough for such a heavy door." instead.
+	say "[The second noun] [are] not strong enough for such a heavy door." instead.
 
 Sanity-check opening the portcullis when the player carries the jack:
 	if the player is hurrying: 
@@ -12444,7 +12444,7 @@ Does the player mean launching the kayak:
 
 Check launching:
 	if the noun is not the kayak:
-		say "[The noun] [is-are]n't susceptible to being launched." instead.
+		say "[The noun] [aren't] susceptible to being launched." instead.
 	
 Check launching:
 	if the shackles are part of the kayak and the bollard is visible:
@@ -13502,9 +13502,9 @@ A dangerous destruction rule for something (called changed seat) which encloses 
 	if the irate victim is Brock:
 		make no decision;
 	if the irate victim is the player:
-		say "In a blink of an eye, [the changed seat] ceases to exist.
+		say "In a blink of an eye, [the changed seat] cease[s] to exist.
 	
-The problem is that [it-they of changed seat] take[s] us along with [it-them of changed seat].
+The problem is that [they] [take] us along with [them].
 
 I've always wondered what this last passage to non-existence might be like. It turns out that there is a rushing noise, and a tunnel [we] travel very rapidly towards darkness; and all around us are other objects also in the middle of ceasing to be.";
 		end the story saying "[We] have left existence behind";
@@ -13532,7 +13532,7 @@ A dangerous construction rule for the ape:
 	rule succeeds.
 	
 A dangerous construction rule for something enormous (called the target):
-	say "Unfortunately, [the target] [is-are] more than sufficient to bury us under [its-their] bulk.";
+	say "Unfortunately, [the target] [are] more than sufficient to bury us under [their] bulk.";
 	end the story saying "That could have gone better";
 	rule succeeds;
 	
@@ -13681,7 +13681,7 @@ Check waving the letter-remover at something irretrievable:
 	if the second noun contains the letter-remover:
 		try taking the letter-remover;
 	if the second noun is irretrievable:
-		say "Since [the second noun] contain[s] [if the second noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
+		say "Since [the second noun] [contain] [if the second noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
 		
 Instead of waving the letter-remover device:
 	say "Whoa, whoa! Just waving that thing around without an exact aim could do a lot of damage. Wave it AT something, or don't wave it at all."
@@ -13892,7 +13892,7 @@ Check waving the letter-remover at something creating the letter-remover:
 		let C be the number of words in presumed second noun;
 		let presumed second noun be "[word number C in presumed second noun]";
 		now the prior named noun is the second noun;
-		say "The device buzzes, puzzled. It has tried to create a '[disappointment text]': evidently '[presumed second noun]' [is-are] too tightly bound to [its-their] modifiers and can't be manipulated separately[one of]. This is a serious problem in my field of study, incidentally[or][stopping][if the second noun is fixed in place or the second noun is scenery]. Or perhaps it just doesn't have sufficient power to handle [the second noun][end if]." instead;
+		say "The device buzzes, puzzled. It has tried to create a '[disappointment text]': evidently '[presumed second noun]' [are] too tightly bound to [their] modifiers and can't be manipulated separately[one of]. This is a serious problem in my field of study, incidentally[or][stopping][if the second noun is fixed in place or the second noun is scenery]. Or perhaps it just doesn't have sufficient power to handle [the second noun][end if]." instead;
 	otherwise:
 		if disappointment text is "":
 			say "The device emits a distinctive triple tone, which means that the requested action would have entirely destroyed the target object. There are safety overrides to prevent it doing such a thing." instead;
@@ -13903,10 +13903,10 @@ Check waving the letter-remover at something creating a crude thing:
 	say "A safety override mechanism kicks into play before the operation is complete; the device plays a short snickering noise. Evidently its one joy in life is detecting and foiling practical jokes." instead; 
 	
 Check waving the letter-remover at something creating a person when the letter-remover device is not creature-enabled:
-	say "[The second noun] flickers and there is a brief image of [a generated object] in [its-their of the second noun] place, but a legal override kicks in: [a-an letter-remover] is hardware-crippled to prevent generating any living creature." instead;
+	say "[The second noun] flickers and there is a brief image of [a generated object] in [regarding the second noun][their] place, but a legal override kicks in: [a-an letter-remover] is hardware-crippled to prevent generating any living creature." instead;
 	
 Check waving the letter-remover at something creating an r-abstract thing when the letter-remover device is not upgraded:
-	say "[The second noun] flickers and there is a brief image of [a generated object] in [its-their of the second noun] place [--] the concept strangely embodied in a physical form [--] before the power gives out[one of]. I guess your device there just isn't tuned to reify abstracts[stopping]." instead; 
+	say "[The second noun] flickers and there is a brief image of [a generated object] in [regarding the second noun][their] place [--] the concept strangely embodied in a physical form [--] before the power gives out[one of]. I guess your device there just isn't tuned to reify abstracts[stopping]." instead; 
 
 Check waving the letter-remover device at something (this is the checking for danger rule):
 	abide by the dangerous destruction rules for the second noun;
@@ -13948,14 +13948,14 @@ The list of remaining letters is a list of indexed text that varies. The list of
 
 Report waving the letter-remover device at something:
 	if the scent-description of the generated object is not "":
-		say "With a distinct whiff of [the scent-description of the generated object], [the second noun] turn[s] into [a generated object]. [run paragraph on]";
+		say "With a distinct whiff of [the scent-description of the generated object], [the second noun] [turn] into [a generated object]. [run paragraph on]";
 	otherwise:
-		say "There is [one of]a flash of psychedelic col[our]s[or]a mad-scientist cackle[or]a [pastel-color] cloud[or]a flash of [primary-color] light[or]a smell of anise[or]a distinct spearmint flavor[at random], and [the second noun] turn[s] into [a generated object]. [run paragraph on]"; 
+		say "There is [one of]a flash of psychedelic col[our]s[or]a mad-scientist cackle[or]a [pastel-color] cloud[or]a flash of [primary-color] light[or]a smell of anise[or]a distinct spearmint flavor[at random], and [the second noun] [turn] into [a generated object]. [run paragraph on]"; 
 	abide by the dangerous construction rules for the generated object;
 	try examining the generated object instead.
 			
 Report waving the letter-remover device at something creating a seen thing:
-	say "[The second noun] give[s] way to the now-familiar [generated object].";
+	say "[The second noun] [give] way to the now-familiar [generated object].";
 	abide by the dangerous construction rules for the generated object instead.
 
 
@@ -14028,7 +14028,7 @@ Sanity-check inserting something irretrievable into the T-inserter:
 	if the noun contains the letter-remover:
 		try taking the letter-remover;
 	if the noun is irretrievable:
-		say "Since [the noun] contain[s] [if the noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
+		say "Since [the noun] [contain] [if the noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
 
 After inserting something into the T-inserter:
 	try teeing the noun.
@@ -14195,10 +14195,10 @@ Understand "unscrew [plexiglas case] with [something]" as unlocking it with.
 
 Check unlocking the plexiglas case with something which is not the screwdriver:
 	if the heft of the second noun is greater than 3:
-		say "[The second noun] [is-are] hardly designed for unscrewing things, and won't fit into the necessary angle anyway." instead;
+		say "[The second noun] [are] hardly designed for unscrewing things, and won't fit into the necessary angle anyway." instead;
 	else: 
 		if the second noun is floppy:
-			say "[The second noun] [is-are] not at all suited to the purpose. There's a reason they make screwdrivers for this." instead;
+			say "[The second noun] [are] not at all suited to the purpose. There's a reason they make screwdrivers for this." instead;
 		else:
 			say "[We] try contriving to get an edge of [the second noun] into the slot of the screws, but [the second noun] just slip[s] around unhelpfully. There's a reason they make screwdrivers for this." instead;
 [
@@ -14252,7 +14252,7 @@ Sanity-check inserting something irretrievable into the synthesizer:
 	if the noun contains the letter-remover:
 		try taking the letter-remover;
 	if the noun is irretrievable:
-		say "Since [the noun] contain[s] [if the noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
+		say "Since [the noun] [contain] [if the noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
 	 
 Instead of switching on the synthesizer when the synthesizer contains the roll and the synthesizer contains the rock:
 	say "You can't get to rock & roll with just a synthes[ize]r. You'd need an ampersand generator, which unfortunately (despite promising research and a prototype resembling a pretzel-maker) has yet to achieve stable results."
@@ -14364,7 +14364,7 @@ That in turn necessitated other changes as follow:
 This is all a lot of bother just for the sake of adding an achievement/easter egg that most players probably won't notice. In each case, though, I felt as though the result of the design fix was a richer, more interesting setting with more playful manipulation available. Adding the yam to the game also provided another purpose for the farmer, who had been relatively useless (other than as the provider of the totally optional lime) ever since he stopped selling chard.  ]
 
 The spinner is part of the spinner-gate. It is a supporter. Understand "sculpture" or "mirror" or "statue" or "pedestal" or "cone" as the spinner. 
-	The description of the spinner is "The base of the sculpture is a cone about four feet tall. On top of that is a flat circular pedestal, and there is a mirror that rotates around the outer circumference. The mirrored surface faces inward, so that it is sometimes reflecting [if something is on the spinner][the random thing on the spinner] on the pedestal[otherwise]whatever might be on the pedestal (currently nothing)[end if] and sometimes concealing [if something is on the spinner][it-them][otherwise]it[end if] from view.". 
+	The description of the spinner is "The base of the sculpture is a cone about four feet tall. On top of that is a flat circular pedestal, and there is a mirror that rotates around the outer circumference. The mirrored surface faces inward, so that it is sometimes reflecting [if something is on the spinner][the random thing on the spinner] on the pedestal[otherwise]whatever might be on the pedestal (currently nothing)[end if] and sometimes concealing [if something is on the spinner][them][otherwise]it[end if] from view.". 
 	The printed name of the spinner is "pedestal". 
 	The carrying capacity is 1.  
 	
@@ -14442,7 +14442,7 @@ This is the spinner-turning rule:
 [Test yambug with "tutorial off / wear monocle / buy yam / n / w / put yam on pedestal / z / x yam" holding the roll of bills and the monocle in Hesychius Street.]
 	
 Rule for disclosing exterior of something (called special-target) which is on the spinner:
-	say "[The special-target] [is-are] slowly revolving on [a spinner][if a mentionable thing is on the spinner], together with [a list of mentionable things which are on the spinner][end if]. [run paragraph on]"; 
+	say "[The special-target] [are] slowly revolving on [a spinner][if a mentionable thing is on the spinner], together with [a list of mentionable things which are on the spinner][end if]. [run paragraph on]"; 
 	follow the spinner-turning rule.
 
 Rule for disclosing contents of the spinner (this is the spinner-content rule):
@@ -14511,11 +14511,11 @@ This is the turntable-turning rule:
 	end if.
 	
 Rule for disclosing exterior of something (called special-target) which is on the turntable:
-	say "[The special-target] [is-are] spinning rapidly [rotation-direction of the turntable] on [a turntable][if a thing is on the turntable], together with [a list of mentionable things which are on the turntable][end if]. [run paragraph on]"; 
+	say "[The special-target] [are] spinning rapidly [rotation-direction of the turntable] on [a turntable][if a thing is on the turntable], together with [a list of mentionable things which are on the turntable][end if]. [run paragraph on]"; 
 	follow the turntable-turning rule.
 
 Rule for disclosing contents of the turntable (this is the turntable-content rule):	
-	say "On [the turntable], [a list of things on the turntable] spin[s] [rotation-direction of the turntable]. [run paragraph on]"; 
+	say "On [the turntable], [a list of things on the turntable] [spin] [rotation-direction of the turntable]. [run paragraph on]"; 
 	follow the turntable-turning rule. ]
 
 Chapter 7 - Authentication Scope
@@ -14573,7 +14573,7 @@ Check an actor looking at something through something:
 	end if.
 	
 Carry out looking at a mirror through something:
-	say "[The noun] [is-are] real enough, and [the second noun] pings approvingly.
+	say "[The noun] [are] real enough, and [the second noun] pings approvingly.
 	
 But laid over the reflection we can see the two of us as we used to look: you a little shorter than our current body, me taller and male and needing a shave. I'm not sure whether it makes me feel better or worse to see us like that." instead.
 
@@ -14589,7 +14589,7 @@ Carry out looking at it through:
 	
 Report someone looking at something through something:
 	if the noun is original, say "In response [the actor] looks through [the second noun] at [the noun], then nods briskly. '[one of]The genuine article[or]Definitely not fake[or]Looks clean[or]Not a forgery[or]Real[or]Yup, authentic[at random].'";
-	otherwise say "Thoughtfully [the actor] peers through [the second noun] at [the noun], then frowns. '[one of]Fake[or]An obvious forgery[or]Not at all the real thing[or]Bogus[or]I hope that came with a money-back guarantee[as decreasingly likely outcomes]!' [it-they of the actor] [one of]say[s][or]remark[s][or]exclaim[s][as decreasingly likely outcomes]." 
+	otherwise say "Thoughtfully [the actor] peer[s] through [the second noun] at [the noun], then frown[s]. '[one of]Fake[or]An obvious forgery[or]Not at all the real thing[or]Bogus[or]I hope that came with a money-back guarantee[as decreasingly likely outcomes]!' [regarding the actor][they] [one of]say[s][or]remark[s][or]exclaim[s][as decreasingly likely outcomes]." 
 	
 
 	
@@ -14738,7 +14738,7 @@ Sanity-check putting the restoration gel on something irretrievable:
 	if the second noun contains the letter-remover:
 		try taking the letter-remover;
 	if the second noun is irretrievable:
-		say "Since [the second noun] contain[s] [if the second noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
+		say "Since [the second noun] [contain] [if the second noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
 
 [Because it's possible to change something into an object that becomes fixed in place in the backpack, or too heavy to move...]
 
@@ -14798,10 +14798,10 @@ Instead of putting the restoration gel on an original person:
 	otherwise:
 		say "[one of][We] dip out [if the heft of the second noun is 1]fingertip-coating[otherwise]pea-sized[end if] quantity of gel and approach [the second noun] with it. 'Hey!' says [the second noun]. 'That was really cold! What do you think you're doing?'
 
-But no exciting conversions occur.[or][We] get some gel and try to be subtle about touching it to [the second noun], but [it-they of second noun] shies away, startled. Well, it likely wouldn't have had an effect anyway.[stopping]".
+But no exciting conversions occur.[or][We] get some gel and try to be subtle about touching it to [the second noun], but [regarding the second noun][they] sh[ies] away, startled. Well, it likely wouldn't have had an effect anyway.[stopping]".
 	
 [Before putting the restoration gel on something which encloses the player:
-	say "Are you insane? If [the second noun] goes away, we'll go too." instead. ]
+	say "Are you insane? If [the second noun] go[es] away, we'll go too." instead. ]
 	
 
 Instead of someone trying touching the restoration gel:
@@ -14862,7 +14862,7 @@ Check shooting something with something which is not a pistol:
 	say "[We] are insufficiently armed." instead. 
 	
 Check shooting something with an unloaded pistol:
-	say "[The second noun] [is-are] not loaded." instead.
+	say "[The second noun] [are] not loaded." instead.
 
 Check shooting a pistol with the noun:
 	say "[The noun] doesn't bend that way." instead; 
@@ -14897,10 +14897,10 @@ Understand "load [anagram bullets] into [anagramming gun]" as loading it into.
 Loading it into is an action applying to one carried thing and one thing.
 
 Check loading something into something ungunlike:
-	say "[The second noun] [is-are] not a gun." instead.
+	say "[The second noun] [are] not a gun." instead.
 	
 Check loading something which is not the anagram bullets into something:
-	say "[The noun] [is-are] not ammunition." instead.
+	say "[The noun] [are] not ammunition." instead.
 
 Carry out loading the anagram bullets into the anagramming gun:
 	now the anagram bullets are nowhere;
@@ -14919,9 +14919,9 @@ Understand "unload [something]" as unloading. Unloading is an action applying to
 
 Sanity-check unloading:
 	if the noun is not a pistol:
-		say "[The noun] [is-are] not a gun." instead;
+		say "[The noun] [are] not a gun." instead;
 	if the noun is the anagramming gun and the anagramming gun is unloaded:
-		say "[The anagramming gun] [is-are] already empty." instead;
+		say "[The anagramming gun] [are] already empty." instead;
 	otherwise:
 		say "[We] see no reason to disarm us unnecessarily." instead.
 
@@ -14960,8 +14960,8 @@ Check shooting something with the loaded anagramming gun:
 				add the item to the possibles list; [* We make a list because otherwise, for any set of anagrammed objects in the repository, we will always just swap back and forth between the first two that are implemented and never get to the others.]
 	let max be the number of entries in the possibles list;
 	if max is 0:
-		say "The gun fires ruggedly into [the noun], but is unable to make anything interesting out of [the initial key]. [The noun] recoalesce[s] into [its-their] original form." instead;
-	otherwise:  
+		say "The gun fires ruggedly into [the noun], but is unable to make anything interesting out of [the initial key]. [The noun] recoalesce[s] into [their] original form." instead;
+	otherwise:
 		now detritus is entry max of the possibles list. 
 
 To decide what list of indexed text is the anagram key of (n - an object):
@@ -15029,7 +15029,7 @@ Does the player mean doing something with the restoration-gel rifle:
 Sanity-check shooting something irretrievable with the restoration-gel rifle:
 	if the second noun is the player:
 		make no decision;
-	say "Since [the second noun] contain[s] [if the second noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
+	say "Since [the second noun] [contain] [if the second noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
 
 [Because it's possible to change something into an object that becomes fixed in place in the backpack, or too heavy to move...]
 
@@ -15174,10 +15174,10 @@ Sanity-check umlaut-punching:
 	try inserting the noun into the umlaut punch instead.
 
 Check inserting a heavy thing into the umlaut punch:
-	say "[The noun] [is-are] far too substantial to fit into the wire basket." instead.
+	say "[The noun] [are] far too substantial to fit into the wire basket." instead.
 	
 Check inserting something into the umlaut punch when the umlaut punch contains something (called the blockage):
-	say "[The blockage] [is-are] already in the wire basket, and it doesn't take two things at a time." instead. 
+	say "[The blockage] [are] already in the wire basket, and it doesn't take two things at a time." instead. 
 	
 Report inserting a strand into the umlaut punch:
 	say "[We] put [the noun] into the wire basket of the umlaut punch. There is a hum as the punch warms up, then a bang! as the tines come down sharply, tattooing [the noun].[paragraph break]";
@@ -15281,13 +15281,13 @@ Check poking something with something:
 		stop the action.
 		
 Check poking something with something which is not the Catalan punt volat needle:
-	say "[The second noun] [is-are] not very suitable for the purpose." instead.
+	say "[The second noun] [are] not very suitable for the purpose." instead.
 	
 Check poking the Catalan needle with the Catalan needle:
 	say "[The noun] doesn't bend that way." instead.
 	
 Carry out poking something with the Catalan punt volat needle:
-	let sample be indexed text;
+	let sample be text;
 	let sample be "[noun]";
 	now sample is "[sample in lower case]";
 	if sample matches the regular expression "(.*l)(l.*)":
@@ -15324,7 +15324,7 @@ Sanity-check pushing the big lever:
 Sanity-check putting something irretrievable on the programmable dais:
 	if the noun is the player:
 		make no decision;
-	say "Since [the noun] contain[s] [if the noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
+	say "Since [the noun] [contain] [if the noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
 	
 Sanity-check switching on the programmable dais:
 	try switching on the big lever instead.
@@ -15371,7 +15371,7 @@ Instead of switching on the big lever:
 					if the result is the passage-place:
 						say "[The programmable dais] glows deep red, then deeper. There's a roar like a stadium being demolished, and a passage opens, descending into the dais itself." instead;
 					otherwise:
-						say "[The programmable dais] glows deep red. Almost at once [the result] [is-are] lying on the surface. [result description][line break]" instead;
+						say "[The programmable dais] glows deep red. Almost at once [the result] [are] lying on the surface. [result description][line break]" instead;
 			say "[The programmable dais] goes red, then dims again. Apparently it can't find a homonym to fit [the list of things on the programmable dais]." instead; 
 	now the big lever is switched off.
 
@@ -15455,12 +15455,12 @@ Check inserting something into the cryptolock when the cryptolock contains somet
 		stop the action.
 		
 Check inserting something into the cryptolock when the heft of the noun is greater than 3:
-	say "[The noun] [is-are] too big to fit into [the cryptolock]." instead.
+	say "[The noun] [are] too big to fit into [the cryptolock]." instead.
 
 A dangerous construction rule for something (called the target):
 	if the target is in the cryptolock and the heft of the target is greater than 3:
 		now the target is in the Generator Room;
-		say "[The target] [is-are] too big to fit into the bucket, and fall[s] out during the process of formation."
+		say "[The target] [are] too big to fit into the bucket, and fall[s] out during the process of formation."
 		
 Test bucket-size with "put coat in bucket / wave a-remover at coat / get cot / put cot in bucket" holding the coat in the Generator Room. 
 
@@ -16867,7 +16867,7 @@ Sanity-check poking head through banding:
 	say "Our head has, fortunately, a greater diameter than the leg of a sparrow." instead.
 
 The bandit is a man. The description is "A lean and hungry gentleman, from the island's disreputable past. For a little while in the late 17th century Atlantis was something of a haven for criminals too lawless for the mainland." Understand "lean" or "hungry" or "thief" or "gentleman" as the bandit.
-	The greeting of the bandit is "'Yarr,' say[s] the bandit, with exhalations of onion."
+	The greeting of the bandit is "'Yarr,' says the bandit, with exhalations of onion."
 
 The bantam is a bird. The description is "Inasmuch as a chicken can be considered adorable, this is an adorable chicken: half normal size, and with big fluffy white feathers."
 
@@ -17168,7 +17168,7 @@ To reset the card:
 			now the card-style of the card is a random card-style which is not the card-style of the card.
 	
 Report waving the letter-remover device at something creating a seen card:
-	say "[The second noun] give[s] way to the [generated object]. This time it's [article of (card-style of the card)][card-style of the card]. [image of the card-style of the card]." instead.
+	say "[The second noun] [give] way to the [generated object]. This time it's [article of (card-style of the card)][card-style of the card]. [image of the card-style of the card]." instead.
 	
 The description of the carpet is "A substantial, rectangular rug of the sort on which Aladdin is typically seen flying. It has tasseled ends and a pattern that hints at Atlantis['] Moroccan connections." The heft of the carpet is 6.
 
@@ -18098,7 +18098,7 @@ The mug is a container. The heft of the mug is 2. The carrying capacity of the m
 	The description of the mug is "It's a super-sized black mug with 'TEA INSERTION GROUP' on the side in crisp white letters. Must be an employee gift over at Dental Consonants Limited."
 	
 Check inserting something into the mug when the heft of the noun is greater than 1:
-	say "[The noun] [is-are] too large to fit inside the mug." instead.
+	say "[The noun] [are] too large to fit inside the mug." instead.
 
 The multiple dropkick cancan is a noisy r-abstract thing. The description is "Legs. Kicking. Wild skirling music. Skirts. Rugby balls. Fragile objects. It's awfully frenetic. Left to itself it would do massive property damage.". 
 
@@ -18462,11 +18462,11 @@ Setting action variables for password-entering something on something which is n
 Password-entering it on is an action applying to two things.
 
 Check password-entering something on something which is not a keyboard:
-	say "[The second noun] [is-are] not a keyboard." instead.
+	say "[The second noun] [are] not a keyboard." instead.
 
 Check password-entering the password-thing on something which is part of a computer (called secondary target):
 	unless the secondary target is running a password lock program:
-		say "[The secondary target] [is-are] not asking for a password." instead.
+		say "[The secondary target] [are] not asking for a password." instead.
  
 Carry out password-entering the password-thing on something which is part of a computer (called secondary target): 
 	let chosen program be a random password lock program which is run by the secondary target;
@@ -18671,11 +18671,11 @@ The coarse woolen clothing is a floppy wearable thing. The indefinite article of
 	The scent-description is "its sheepy origins". 
 	
 Report the Pict dropping something:
-	say "[one of]With a faint air of bewilderment, the Pict tosses aside [the noun][or]The Pict bites the edge of [the noun] and then casts [it-them] aside in disappointment[at random]." instead.
+	say "[one of]With a faint air of bewilderment, the Pict tosses aside [the noun][or]The Pict bites the edge of [the noun] and then casts [them] aside in disappointment[at random]." instead.
 
 
 Rule for writing a topic sentence about the Pict when the location contains at least one mentionable person:
-	say "[The Pict] regards [a random mentionable person] as though sizing up [its-their] strength in battle, unfav[our]ably. "
+	say "[The Pict] regards [a random mentionable person] as though sizing up [their] strength in battle, unfav[our]ably. "
 
 
 	
@@ -18973,13 +18973,13 @@ Sanity-check unplugging something which incorporates a power socket from somethi
 	try freeing the power cord instead.
 
 Sanity-check unplugging something which is not a massive plug from something:
-	say "[The noun] [is-are] not a plug to start with." instead.
+	say "[The noun] [are] not a plug to start with." instead.
 	
 Sanity-check unplugging something from something which is not a power socket:
-	say "[The second noun] [is-are] not a socket." instead.
+	say "[The second noun] [are] not a socket." instead.
 	
 Sanity-check unplugging a free massive plug from something:
-	say "[The noun] [is-are] not plugged in anyway." instead.
+	say "[The noun] [are] not plugged in anyway." instead.
 
 Carry out unplugging something from something:
 	now the noun is not plugged into the second noun.
@@ -19075,7 +19075,7 @@ Sanity-check connecting something:
 	if the noun incorporates a massive plug:
 		make no decision;
 	if the noun is a device:
-		say "[The noun] appear[s] to be adequately powered already." instead;
+		say "[The noun] [appear] to be adequately powered already." instead;
 	say "[The noun] feature[s] no dangling power cords or sockets." instead.
 
 Carry out an actor connecting something:
@@ -19298,7 +19298,7 @@ Roc-flight is a scene. Roc-flight begins when the player can see the roc. Roc-fl
  
 Sanity-check mounting the roc:
 	if the player can see a heavy handled thing (called the encumbrance) which is not the roc:
-		say "[We][']ll want to bring [the encumbrance], but in [its-their] current state, [it-they] [is-are] much too heavy." instead.
+		say "[We][']ll want to bring [the encumbrance], but in [their] current state, [they] [are] much too heavy." instead.
 
 Before mounting the roc:
 	repeat with item running through things in the location:
@@ -20105,7 +20105,7 @@ Sanity-check poking a notepad with the tack:
 	say "We have no need to pin [the noun] to anything (and no corkboard, either)." instead.
 	
 Sanity-check poking an r-abstract thing with the tack:
-	say "[The noun] [is-are]n't sufficiently physical to interact that way." instead.
+	say "[The noun] [aren't] sufficiently physical to interact that way." instead.
 	
 Sanity-check poking a fluid contained thing with the tack:
 	say "Then [the noun] would dribble all over the place." instead.
@@ -20328,7 +20328,7 @@ The description of the toe is "It looks like a little toe raggedly cut off with 
 The description of the toes is "It looks like a set of toes raggedly cut off with a bread knife. They weren't, of course." The heft of the toes is 1. The scent-description of the toes is "inner shoe". The toes are plural-named.
 	
 To say body-part-prank:
-	say "[one of] (because after all it would be beyond the parameters of the change to generate the person whose body part it is). [It-they] [is-are] only moderately gory, and most locals get used to seeing this kind of thing as a prank from six-year-olds every halloween. Still, [it-they] might startle a tourist[or][stopping]".
+	say "[one of] (because after all it would be beyond the parameters of the change to generate the person whose body part it is). [They] [are] only moderately gory, and most locals get used to seeing this kind of thing as a prank from six-year-olds every halloween. Still, [they] might startle a tourist[or][stopping]".
 
 The toe-ring is a wearable thing. The printed name is "toe ring". The description of the toe-ring is "A silver toe ring stamped with a celtic pattern."
 
@@ -20478,15 +20478,15 @@ Rule for supplying a missing second noun while springing something with:
 
 Check springing something with something:
 	if the noun is not the trap:
-		say "[The noun] [is-are] not susceptible to springing." instead;
+		say "[The noun] [are] not susceptible to springing." instead;
 	if the trap is not open:
-		say "[The noun] [is-are] closed already." instead;
+		say "[The noun] [are] closed already." instead;
 	if the second noun is the trap:
 		say "We need some second object to spring the trap with." instead;
 	if the second noun is not long:
-		say "[The second noun] [is-are] not long enough to provide protective distance." instead;
+		say "[The second noun] [are] not long enough to provide protective distance." instead;
 	if the second noun is floppy:
-		say "[The second noun] [is-are] too floppy to apply the necessary pressure at a distance." instead.
+		say "[The second noun] [are] too floppy to apply the necessary pressure at a distance." instead.
 		
 Carry out springing the trap with something:
 	now the second noun is nowhere;
@@ -20719,13 +20719,13 @@ Definition: a person is contained:
 
 [TODO: Why doesn't this work?]
 [Check an animal exiting when the person asked is in the kayak:
-	say "[one of][The person asked] make[s] as though to climb out of the kayak, then see[s] that everything outside is made of water, and withdraw[s] sulkily.[or][The person asked] waits in the bottom of the kayak.[stopping]" instead.
+	say "[one of][The person asked] [make] as though to climb out of the kayak, then [see] that everything outside is made of water, and [withdraw] sulkily.[or][The person asked] waits in the bottom of the kayak.[stopping]" instead.
 
 Check an animal exiting when the person asked is in the synthesizer:
 	if the person asked is a bird:
-		say "[The person asked] make[s] some attempts to flutter out of [the synthesizer], but do[es]n't get much lift and give[s] up for the moment." instead;
+		say "[The person asked] [make] some attempts to flutter out of [the synthesizer], but [don't] get much lift and [give] up for the moment." instead;
 	otherwise:
-		say "[The person asked] scrabbles at the smooth sides of [the synthesizer], but can't get out." instead.
+		say "[The person asked] scrabble[s] at the smooth sides of [the synthesizer], but can't get out." instead.
 	
 Report an animal exiting when the container exited from is the t-inserter:
 	say "[The person asked] clamber[s] out of [the t-inserter]." instead.
@@ -20836,10 +20836,10 @@ Sanity-check saying hello to an insect:
 	say "Our greeting has no visible effect whatever on [the noun]." instead.
 	
 Sanity-check saying goodbye to an animal:
-	say "[The noun] [one of]regard[s] us mutely[or][is-are] completely indifferent[at random]." instead.
+	say "[The noun] [one of]regard[s] us mutely[or][are] completely indifferent[at random]." instead.
 	
 Sanity-check saying goodbye to an insect:
-	say "Predictably, [the noun] do[es] not react." instead.
+	say "Predictably, [the noun] [do] not react." instead.
 
 
 
@@ -20902,7 +20902,7 @@ Instead of a fake person discussing a quip which does not quip-supply the curren
 	say paragraph break. 
 
 Rule for expressing ignorance by a fake person (called target):
-	say "[The target] just look[s] confused. These generated people are usually limited to acting only in one particular sphere of action.[run paragraph on]"
+	say "[The target] just [look] confused. These generated people are usually limited to acting only in one particular sphere of action.[run paragraph on]"
 
 Carry out someone discussing a quip which mentions geography:
 	if the current interlocutor knows you-are-tourist:
@@ -20982,7 +20982,7 @@ where there seems internet service is a weakly-phrased location-questioning quip
  The printed name is "where there is internet service". The true-name is "where there seems internet service". 
  Understand "is" as where there seems internet service.  The place-sought is "internet service".
  It mentions Internet, geography.
- The reply is "[one of]'There are some cafés and places that have access to the Atlantis network,' [the current interlocutor] say[s]. 'But a lot of them are probably closed today for Serial Comma Day.'[or][holiday closures][stopping]".
+ The reply is "[one of]'There are some cafés and places that have access to the Atlantis network,' [the current interlocutor] [say]. 'But a lot of them are probably closed today for Serial Comma Day.'[or][holiday closures][stopping]".
  It is background-information.
 
 where food seems sold is a weakly-phrased location-questioning quip.
@@ -21091,13 +21091,13 @@ Understand "if" as whether the Britishizing goggles seem interesting.
 whether the Origin Paste seems interesting is a demonstration quip.
  It mentions origin paste.
  The comment is "[demonstration of origin paste]".
- The reply is "'[one of]Smells[or]Looks[at random] like soap,' [the current interlocutor] comment[s].".
+ The reply is "'[one of]Smells[or]Looks[at random] like soap,' [the current interlocutor] [comment].".
  It is repeatable.
  It is background-information.
 Understand "if" as Origin Paste seems interesting.
 
 Instead of a criminal person discussing whether Origin Paste seems interesting:
-	say "[The current interlocutor] open[s] [its-their] mouth, then think[s] better of answering and just shrugs non-committally."
+	say "[The current interlocutor] [open] [their] mouth, then [think] better of answering and just shrugs non-committally."
 
 whether the letter-remover means anything is a weakly-phrased demonstration quip.
  It mentions letter-remover.
@@ -21133,7 +21133,7 @@ I'll never know why I didn't manage to stop you doing something so boneheaded.";
 	end the story saying "[We] have been arrested".
 	
 Instead of police person discussing whether the monocle seems interesting:
-	say "[The actor] stares at it. 'You can't possibly have a lic[ense] for that,' [it-they] say[s]. 'I think you had better come speak with my colleagues, right now.'";
+	say "[The actor] stares at it. 'You can't possibly have a lic[ense] for that,' [they] [say]. 'I think you had better come speak with my colleagues, right now.'";
 	end the story saying "[We] have been arrested".
 	
 Section 3 - Responses to demonstrations that aren't interesting
@@ -21160,13 +21160,13 @@ Rule for refusing comment by someone when the noun is freaky:
 	if the current interlocutor is an animal:
 		make no decision;
 	if the current interlocutor exhibits caution:
-		say "[The current interlocutor] [one of]turns white[or]goes a bit green[or]looks like throwing up[or]obviously might faint[or]gags[at random]. After a moment to regain [its-their] composure, [it-they] flee[s] the vicinity.";
+		say "[The current interlocutor] [one of]turns white[or]goes a bit green[or]looks like throwing up[or]obviously might faint[or]gags[at random]. After a moment to regain [their] composure, [they] flee[s] the vicinity.";
 		now the current interlocutor is nowhere;
 		reset the interlocutor;
 	otherwise if the ostensible motive is you-are-tourist:
-		say "[The current interlocutor] say[s], 'Don't worry, [the noun] [is-are] almost certainly fake. They make things like [the noun] with letter tools around here. Freaks out the tourists, though!'";
+		say "[The current interlocutor] [say], 'Don't worry, [the noun] [are] almost certainly fake. They make things like [the noun] with letter tools around here. Freaks out the tourists, though!'";
 	otherwise:
-		say "[one of][The current interlocutor] recoil[s] involuntarily.[or]'Ew!' says [the current interlocutor].[or]'Please take that away,' [the current interlocutor] say[s].[or]'Yuck,' [the current interlocutor] repl[ies].[at random]"
+		say "[one of][The current interlocutor] recoil[s] involuntarily.[or]'Ew!' says [the current interlocutor].[or]'Please take that away,' [the current interlocutor] [say].[or]'Yuck,' [the current interlocutor] repl[ies].[at random]"
 
 Last for refusing comment by someone when the noun is a long strong thing: 
 	if the current interlocutor is an animal:
@@ -21200,9 +21200,9 @@ Last for refusing comment by someone when the noun is a wearable thing:
 	if the player is wearing the noun:
 		if the ostensible motive is:
 			-- you-hit-on:
-				say "[beat] 'I guess [the noun] look[s] fine on you.'";
+				say "[beat] 'I guess [the noun] [look] fine on you.'";
 			-- you-are-tourist:
-				say "'[one of]Oh, don't worry, that's fine to wear around here[or][That-those of noun] do[es]n't make you stand out too much, don't worry[at random].'";
+				say "'[one of]Oh, don't worry, that's fine to wear around here[or][regarding the noun][Those] [don't] make you stand out too much, don't worry[at random].'";
 			-- you-take-survey:
 				say "'If you're collecting fashion opinions, I'm not really good at that kind of thing.'";
 			-- you-are-feckless:
@@ -21214,7 +21214,7 @@ Last for refusing comment by someone when the noun is a wearable thing:
 			say "'No thanks.'";
 		otherwise:
 			if a random chance of 1 in 2 succeeds and the current interlocutor wears something (called the garment):
-				say "[The current interlocutor] do[es]n't think [the noun] really goes with [the garment].";
+				say "[The current interlocutor] [don't] think [the noun] really goes with [the garment].";
 			otherwise:
 				say "'I don't think that's my [one of]style[or]size[or]col[our][or]sort of thing[at random].'"
 				
@@ -21242,11 +21242,11 @@ Rule for refusing comment by a person when the noun is noisy:
 	if the current interlocutor is an animal:
 		make no decision; 
 	if the current interlocutor exhibits courtesy:
-		say "'[awkward confrontation] [the noun] [is-are] a bit disruptive,' says [the current interlocutor].";
+		say "'[awkward confrontation] [the noun] [are] a bit disruptive,' says [the current interlocutor].";
 	otherwise if the current interlocutor knows you-are-possible-customer or the current interlocutor knows you-are-past-customer:
-		say "'[The noun] [is-are] [one of]likely[or]going[at random] to drive away other customers,' says [the current interlocutor].";
+		say "'[The noun] [are] [one of]likely[or]going[at random] to drive away other customers,' says [the current interlocutor].";
 	otherwise:
-		say "'[The noun] [is-are] [one of]annoying[or]a nuisance[or]irritating[at random],' says [the current interlocutor].";
+		say "'[The noun] [are] [one of]annoying[or]a nuisance[or]irritating[at random],' says [the current interlocutor].";
 	
 				
 Rule for refusing comment by a person when the noun is a contained fluid thing:
@@ -21263,7 +21263,7 @@ Rule for refusing comment by a police person (called stern person) when the noun
 	if the current interlocutor is an animal:
 		make no decision;
 	if the stern person knows you-are-dangerous:
-		say "Based on our behavi[our] so for, [the stern person] decide[s] this must be an attempt at bribery, and take[s] us in. And while [we] [are] able to get around the bribery charge eventually, quite a few other undesirable facts come out in the process...";
+		say "Based on our behavi[our] so for, [the stern person] decide[s] this must be an attempt at bribery, and [take] us in. And while [we] [are] able to get around the bribery charge eventually, quite a few other undesirable facts come out in the process...";
 		end the story saying "That was an error in judgment";
 	otherwise:
 		say "[You-are-dangerous][The stern person] recite[s] to us a bit of the penal code applying to attempts to bribe officers of the law."
@@ -21272,11 +21272,11 @@ Rule for refusing comment by someone when the noun is r-abstract:
 	if the current interlocutor is an animal:
 		make no decision;
 	if the current interlocutor is police:
-		say "[The current interlocutor] look[s] a little suspicious. 'I hope you got [that-those of noun] from someone who was licensed to create abstracts.'";
+		say "[The current interlocutor] [look] a little suspicious. 'I hope you got [regarding the noun][those] from someone who was licensed to create abstracts.'";
 	otherwise if the current interlocutor is tourist:
-		say "[one of][The current interlocutor] stare[s] at [the noun] in fascination. 'That's odd,' [it-they] say[s]. 'It's like it's there but not there.'[or][The current interlocutor] looks at [the noun] from several angles. 'I'm not sure what it's for, but that's cool.'[or]'Weird,' says [the current interlocutor]. 'You don't get that where I come from.'[at random]";
+		say "[one of][The current interlocutor] stare[s] at [the noun] in fascination. 'That's odd,' [they] [say]. 'It's like it's there but not there.'[or][The current interlocutor] [look] at [the noun] from several angles. 'I'm not sure what it's for, but that's cool.'[or]'Weird,' [say] [the current interlocutor]. 'You don't get that where I come from.'[at random]";
 	otherwise:
-		say "[The current interlocutor] [is-are] puzzled. '[one of]Looks like [a noun].'[or]Huh, [a noun].'[or]I guess it's supposed to be... [noun]?'[at random]";
+		say "[The current interlocutor] [are] puzzled. '[one of]Looks like [a noun].'[or]Huh, [a noun].'[or]I guess it's supposed to be... [noun]?'[at random]";
 
 Rule for refusing comment by someone (called listener) when the noun is the roll of bills: 
 	if the current interlocutor is an animal:
@@ -21301,15 +21301,15 @@ Rule for refusing comment by someone when the noun is an as:
 	if the current interlocutor knows you-are-possible-customer:
 		say "'[one of]That's not legal tender in Atlantis[or]I can't accept that as currency[at random].'";
 	otherwise if current interlocutor knows you-are-feckless:
-		say "'That's nice,' [the current interlocutor] say[s] insincerely.";
+		say "'That's nice,' [the current interlocutor] [say] insincerely.";
 	otherwise:
 		say "'[one of]Looks old[or]Huh[or]Looks like it came up heads[or]Tails, I see[at random].'"
 
 Rule for refusing comment by an animal (called viewer): 
-	say "[The viewer] cock[s] [its-their] head[if the noun acts plural]s[end if].".
+	say "[The viewer] cock[s] [their] head[if the noun acts plural]s[end if].".
 		
 Rule for refusing comment by something: 
-	say "[one of]This evokes no particular interest[or][The current interlocutor] shake[s] [its-their] head[or][The current interlocutor] do[es]n't have anything to say in response[at random]."
+	say "[one of]This evokes no particular interest[or][The current interlocutor] shake[s] [their] head[or][The current interlocutor] [don't] have anything to say in response[at random]."
 	
 Section 4 - Commentary on NPC Possessions
 
@@ -21837,7 +21837,7 @@ where cars seem is an unlisted questioning quip.
  Every car is mentioned by where cars seem.
 
 Instead of waving letter-remover at farmer creating fame:
-	say "[The second noun] flickers and there is a brief image of [a generated object] in [its-their of the second noun] place [--] the concept strangely embodied in a physical form [--] before the power gives out.[paragraph break]";
+	say "[The second noun] flickers and there is a brief image of [a generated object] in [regarding the second noun][their] place [--] the concept strangely embodied in a physical form [--] before the power gives out.[paragraph break]";
 	say "'Young lady, you just bought yourself a long, long jail term,' says the farmer. 'What, did you think I wouldn't notice what you just tried to do?'
 
 I open my mouth to try to talk him out of it, but his thumb has already hit speed dial. I guess when your profession places you at this kind of risk, you tend to be ready for trouble.";
@@ -25193,7 +25193,7 @@ Definition: a thing is it-derivative:
 Brock-argument ends when Brock is not in the location.
 
 Before inserting something into the t-inserter when Brock is in the location and the t-inserter contains something (called target):
-	say "'[one of]Here, [the target] [is-are] in your way[or]Let me get that for you[or]Here[or]I've got that[at random].' [run paragraph on]";
+	say "'[one of]Here, [the target] [are] in your way[or]Let me get that for you[or]Here[or]I've got that[at random].' [run paragraph on]";
 	try Brock taking the target;
 	if Brock is carrying the target:
 		try Brock dropping the target.
@@ -25642,10 +25642,10 @@ Carry out an actor clearing:
 	now the actor carries everything which is on the noun;
 
 Report an actor clearing:
-	say "[The actor] pick[s] up [the cleared objects with definite articles] carefully."
+	say "[The actor] [pick] up [the cleared objects with definite articles] carefully."
 
 Report my mother clearing:
-	say "[The actor] pick[s] up [the cleared objects with definite articles] from [the noun].[run paragraph on]" instead.
+	say "[The actor] [pick] up [the cleared objects with definite articles] from [the noun].[run paragraph on]" instead.
 
 Report my mother opening a refrigerator:
 	say "Mother picks her way to the refrigerator, which she opens, revealing only [a list of things in the noun][queue not-planning-dinner].[run paragraph on]" instead.
@@ -26251,19 +26251,19 @@ Instead of throwing something at atlantida-woman:
 	if the noun is r-abstract:
 		say "[The noun] wouldn't make much impact, other than perhaps notionally. And Atlantida doesn't look like she's open to persuasion, even if the concept of [the noun] were one that carried weight in this situation.";
 	otherwise if the noun is floppy and the noun is long:
-		say "[The noun] make[s] a poor projectile and land[s] back near our own feet.";
+		say "[The noun] [make] a poor projectile and land[s] back near our own feet.";
 		move the noun to the location;
 	otherwise if the noun is long:
 		say "[We] cast [the noun], javelin-like, at Atlantida's heart, but [one of]she dodges[or][we] undercalculate the amount of force required and [the noun] clatter[s] to the ground instead[or]miss[at random]. Her expression is disdainful.";
 		move the noun to the location;
 	otherwise if the heft of the noun is less than 3:
 		let random-destiny be a random supporter which is in the location;
-		say "[We] fling [the noun] at Atlantida, but [one of][it-they] bounce[s] off unexcitingly and land[s] on[or]with a swipe of her arm she deflects [it-them] to[at random] [the random-destiny].";
+		say "[We] fling [the noun] at Atlantida, but [one of][they] bounce[s] off unexcitingly and land[s] on[or]with a swipe of her arm she deflects [them] to[at random] [the random-destiny].";
 		move the noun to the random-destiny;
 	otherwise if the heft of the noun is greater than 3:
-		say "[The noun] [is-are] too heavy for us to throw at all effectively.";
+		say "[The noun] [are] too heavy for us to throw at all effectively.";
 	otherwise:
-		say "[We] chuck [the noun] at Atlantida. [It-they] strike[s] her hard enough to elicit an outraged 'Oof!', but that doesn't seem to have substantially impaired her."
+		say "[We] chuck [the noun] at Atlantida. [They] strike[s] her hard enough to elicit an outraged 'Oof!', but that doesn't seem to have substantially impaired her."
 	
 
 Understand "gun hand" as the restoration-gel rifle when the restoration-gel rifle is carried by Atlantida-woman.
@@ -26585,11 +26585,11 @@ Report requesting hint about an unlocked door:
 	
 Report requesting hint about a scenery container:
 	if something is in the noun:
-		say "The only interesting thing about [the noun] is that [it-they] contain[s] [a list of things in the noun]." instead;
+		say "The only interesting thing about [the noun] is that [they] [contain] [a list of things in the noun]." instead;
 	say "I don't think [the noun] is likely to be of great significance to us, unless there's something useful inside." instead.
 	
 Report requesting hint about a scenery thing:
-	say "[The noun] [is-are] too large to be converted into anything with the letter tools at our disposal, I think." instead. 
+	say "[The noun] [are] too large to be converted into anything with the letter tools at our disposal, I think." instead. 
 	
 Report requesting hint about the altar:
 	say "[one of]It is going to take something other than prayer to get us out of here[or]I don't think there's anything useful we can do with the altar[or]There might be something minorly amusing to do with the altar, but it won't solve any of our problems[stopping]." instead.
@@ -26598,22 +26598,22 @@ Report requesting hint about the customs house:
 	say "The customs house is only useful for people who are leaving the island. The less we have to do with it before then, the better." instead.
 
 Report requesting hint about a screen which is part of something (called the parent computer): 
-	say "[The noun] [is-are] just there to let us read the output of [the parent computer]." instead.
+	say "[The noun] [are] just there to let us read the output of [the parent computer]." instead.
 
 Report requesting hint about portholes:
-	say "[The noun] [is-are] only there to let in the light. I don't think we can use [it-them] for anything." instead.
+	say "[The noun] [are] only there to let in the light. I don't think we can use [them] for anything." instead.
 	
 Report requesting hint about a drain:
-	say "[The noun] [is-are] an ordinary part of the plumbling here, but not terribly important." instead. 
+	say "[The noun] [are] an ordinary part of the plumbling here, but not terribly important." instead. 
 
 Report requesting hint about a blanket:
-	say "[The noun] [is-are]n't likely to be a lot of help to us." instead.
+	say "[The noun] [aren't] likely to be a lot of help to us." instead.
 	
 Report requesting hint about some sheets:
-	say "[The noun] [is-are]n't likely to be a lot of help to us." instead.
+	say "[The noun] [aren't] likely to be a lot of help to us." instead.
 	
 Report requesting hint about a pillow:
-	say "[The noun] [is-are]n't likely to be a lot of help to us." instead.
+	say "[The noun] [aren't] likely to be a lot of help to us." instead.
 
 [Report requesting hint about the desk-attendant:
 	say "I don't think she can help us with much. She might be able to make a bit of conversation, but to be honest, the less of an impression we make on her, the better." instead.]
