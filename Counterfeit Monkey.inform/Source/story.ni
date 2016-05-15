@@ -1811,31 +1811,31 @@ A person has some text called the generic confrontational. The generic confronta
 To say Well:
 	let N be text;
 	let N be "[generic adversative of the current interlocutor]";
-	let N be "[N in sentence case]";
+	let N be "[N]" in sentence case;
 	say "[N]".
 
 To say personal no:
 	let N be text;
 	let N be "[generic negative of the current interlocutor]";
-	let N be "[N in sentence case]";
+	let N be "[N]" in sentence case;
 	say "[N]".
 	
 To say personal yes:
 	let N be text;
 	let N be "[generic positive of the current interlocutor]";
-	let N be "[N in sentence case]";
+	let N be "[N]" in sentence case;
 	say "[N]".
 	
 To say awkward no:
 	let N be text;
 	let N be "[generic adversative of the current interlocutor], [generic negative of the current interlocutor]";
-	let N be "[N in sentence case]";
+	let N be "[N]" in sentence case;
 	say "[N][apologetic]"; 
 	
 To say awkward yes:
 	let N be text;
 	let N be "[generic adversative of the current interlocutor], [generic positive of the current interlocutor]";
-	let N be "[N in sentence case]";
+	let N be "[N]" in sentence case;
 	say "[N][apologetic]";
 	
 To say apologetic:
@@ -1845,7 +1845,7 @@ To say apologetic:
 To say awkward confrontation:
 	let N be text;
 	let N be "[generic confrontational of the current interlocutor]";
-	let N be "[N in sentence case]";  
+	let N be "[N]" in sentence case;
 	say "[N]";
 
 
@@ -2517,7 +2517,7 @@ Rule for describing path of the player:
 		if path description count is greater than 0:
 			let C be "[one of]Then[or]Next[or]From there[or]After that[as decreasingly likely outcomes] ";
 		let C be "[C][one of][We] [or][We] have a [walk-length for N][or][We] make the [optional walk-length for N][or]It's a [walk-length for N][at random]"; 
-		say "[C in sentence case]";
+		say "[C]" in sentence case;
 		say "[walk-drive]";
 		if the intervening regions of the player is not empty:
 			say "[through the intervening regions]";
@@ -5357,7 +5357,7 @@ After reading a command during identification:
 		otherwise:
 			now new first name is "[the player's command]";
 			replace the regular expression "\p" in new first name with "";
-			now new first name is "[new first name in sentence case]";
+			now new first name is new first name in sentence case;
 			replace the regular expression "\p" in new first name with "";
 			if new first name is "Andra":
 				say "...yes! Okay. We're both here, neither of us lost our minds in the synthesis process. ";
@@ -20311,7 +20311,7 @@ To say titter-noise:
 	repeat with index running from 1 to N:
 		now sound is "[sound][sound]";
 	replace character number 1 in sound with "t";
-	say "[sound in sentence case]".
+	say "[sound]" in sentence case.
 	
 Test titter with "z / z / listen to titter / g / g / g" holding the titter.
 
@@ -20792,7 +20792,7 @@ To report followers:
 	if the number of entries in the incoming-list is not 0:
 		let N be text;
 		let N be "[The incoming-list with definite articles]";
-		say "[N in sentence case] ";
+		say "[N]" in sentence case;
 		say "[one of]trail[or]come[or]follow[or]walk[at random][if the number of entries in incoming-list is 1]s[end if] after us";
 		sort the incoming-list;
 		repeat through the Table of Animal Sets:
@@ -23432,7 +23432,7 @@ The generic confrontational of the gift shop volunteer is "miss".
 
 Instead of asking the gift shop volunteer about something:
 	let N be indexed text;
-	let N be "[one of][generic adversative of the gift shop volunteer in sentence case][or][secondary apology of the gift shop volunteer in sentence case][at random]";
+	let N be "[one of][generic adversative of the gift shop volunteer][or][secondary apology of the gift shop volunteer][at random]" in sentence case;
 	say "[We] frame up a vague question about [the second noun].
 	
 [beat] '[N], don't think I can help you there.'[paragraph break]"
