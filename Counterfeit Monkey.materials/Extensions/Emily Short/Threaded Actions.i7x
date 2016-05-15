@@ -2,7 +2,7 @@ Threaded Actions by Emily Short begins here.
 
 Section 1 - Main Elements
 
-[Include Threaded Conversation by Emily Short.]
+Include Threaded Conversation by Chris Conley.
 
 A stolen action is a kind of performative quip. The specification of a stolen action is "Any performative quip that is used to redirect the behavior of a standard command like KISS FRED or ATTACK CAT."
 	
@@ -73,7 +73,7 @@ To recommend (chosen list - a description of objects):
 Refusing to buy something is an activity.
 
 Rule for refusing to buy something (this is the default buy-refusal rule):
-	say "[The noun] do[es] not seem to be available for sale."
+	say "[The noun] [do] not seem to be available for sale."
 
 Refusing to kiss something is an activity.
 
@@ -92,7 +92,7 @@ Refusing comment by something is an activity.
 
 Rule for refusing comment by something (called the viewer) (this is the default comment-refusal rule):
 	if the viewer is an animal:
-		say "[The viewer] [is-are] unlikely to have an opinion.";
+		say "[The viewer] [are] unlikely to have an opinion.";
 	otherwise:
 		say "This evokes no particular interest."
 
