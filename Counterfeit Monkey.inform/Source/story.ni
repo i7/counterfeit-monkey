@@ -2780,14 +2780,14 @@ Check facing when the location contains a backdrop:
 	repeat with the item running through backdrops in the location:
 		if the item screens the noun:
 			if the noun is not up and the noun is not down:
-				say "To the [noun] [is-are of the item] [an item]. [run paragraph on]";
+				say "To the [noun] [regarding the item][are] [an item]. [run paragraph on]";
 			try examining the item instead. [We want to be able to fill in what's that way.]
 			
 Check facing when the location contains a facade:
 	repeat with item running through facades in the location:
 		if the item fronts the noun:
 			if the noun is not up and the noun is not down:
-				say "To the [noun] [is-are of the item] [an item]. [run paragraph on]";
+				say "To the [noun] [regarding the item][are] [an item]. [run paragraph on]";
 			try examining the item instead. [We want to be able to fill in what's that way.]
 			
 A direction has a direction called left-alt. A direction has a direction called right-alt.
