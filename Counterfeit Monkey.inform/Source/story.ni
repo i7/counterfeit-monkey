@@ -1260,7 +1260,7 @@ Instead of taking inventory when the current inventory listing style is utilitar
 		decrease the carried count by 1;
 	if the carried count is 0, say "[We] [are] empty-handed." instead;
 	now all essential things enclosed by the player are marked for listing; 
-	unless the number of marked for listing things is 0::
+	unless the number of marked for listing things is 0:
 		if exactly one thing is marked for listing:
 			say "[We] [are] equipped with [a list of marked for listing thing] [--] an essential [we] mustn't part with. [no line break]";
 		otherwise:
@@ -3262,7 +3262,7 @@ Definition: a thing is unleavable:
 	if it is enclosed by a vehicle which contains the player, no;
 	yes.
 
-Before going when [the player is staid and] the location encloses an unleavable thing:
+Before going somewhere when [the player is staid and] the location encloses an unleavable thing:
 	while the location encloses an unleavable thing  (called needed-thing):
 		try taking the needed-thing;
 		if the needed-thing is the iron-pans:
@@ -6254,7 +6254,7 @@ The jotter is a notepad in the Projection Booth. The initial appearance is "[A j
 	The memo of the jotter is "Red: audience 14. FM couple. MM couple. M in raincoat. FFFFF group. F. MF. M.".
 
 Rule for writing a topic sentence about the jotter when the projector is mentionable:
-	say "[A jotter] is propped up next to [the projector]."
+	say "[A jotter] is propped up next to [the projector].[no line break]"
 
 The projector is a container in the Projection Booth. It is fixed in place. The initial appearance is "[A projector] has been set up facing the [film screen][if the reel is in the projector] and [a reel] threaded into it[end if]." The description of the projector is "It's an old-fashioned film projector[if the reel is in the projector], with [a reel] of film inserted[otherwise], with a spot to hold [a reel] of film[end if]. The lens points at the screen." Understand "lens" as the projector.
 
@@ -10285,7 +10285,7 @@ The stairs [up] are here; the lecture room at the [east]. Immediately [south] is
 Rule for listing exits while looking in Samuel Johnson Basement: 
 	do nothing instead.
 
-Instead of smelling Samuel Johnson Basement, say "The distinctive scent of mildew, no doubt a result of the endless flooding and re-flooding of this corridor." Samuel Johnson Basement is indoors.
+Instead of smelling Samuel Johnson Basement, say "The distinctive scent of mildew, no doubt a result of the endless flooding and re-flooding of this corridor." Samuel Johnson Basement is indoors and southern.
 
 
 The small door is west of Samuel Johnson Basement. The small door is a door. It is closed and locked. It is scenery. The description of the small door is "It has no label, only a keycard-reading lock.".  
@@ -10518,7 +10518,7 @@ The letter-remover comes out again looking exactly the same as when it went in. 
 Section 9 - Graduate Student Office
 	
 
-South of Samuel Johnson Basement is the Graduate Student Office. The description of the Graduate Student Office is "A small windowless room divided into cubicles for individual graduate students." Graduate Student Office is indoors.
+South of Samuel Johnson Basement is the Graduate Student Office. The description of the Graduate Student Office is "A small windowless room divided into cubicles for individual graduate students." Graduate Student Office is indoors and southern.
 
 A tiny refrigerator is a refrigerator in the Graduate Student Office. The tiny refrigerator is not scenery. The fridge-top is part of the tiny refrigerator. It is a supporter.  The scent-description of the tiny refrigerator is "onions".
 
@@ -10594,7 +10594,7 @@ Instead of drinking the water cooler:
 	
 Section 10 - Brown's Lab
 
-Southwest of Samuel Johnson Basement is Brown's Lab. Brown's Lab is indoors.
+Southwest of Samuel Johnson Basement is Brown's Lab. Brown's Lab is indoors and southern.
 
 Sanity-check going to Brown's Lab when Higgate-arrested has happened:
 	say "The whole area is likely under inspection after Brown's little Judas act back there. Who knew he had it in him? Is he seriously expecting to get her position?" instead.
