@@ -5330,14 +5330,14 @@ Identification is a scene. Identification begins when play begins. Identificatio
 Instead of looking during identification:
 	do nothing.
 
-Stored first name is a text that varies. Stored first name is "nothing".
-New first name is a text that varies. New first name is "nothing".
+Stored first name is some text that varies. Stored first name is usually "nothing".
+New first name is some text that varies. New first name is usually "nothing".
 
 After reading a command during identification: 
 	unless the player's command matches "restore":
 		if stored first name is "nothing":
-			now stored first name is "[the player's command]";
-			now stored first name is "[stored first name in sentence case]";
+			now stored first name is the player's command;
+			now stored first name is stored first name in sentence case;
 			replace the regular expression "\p" in stored first name with "";
 			if stored first name is "Alexandra":
 				say "That's our joint name now, yes. I was Alex before the synthesis. You were...";
