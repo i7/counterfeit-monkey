@@ -1573,7 +1573,13 @@ After reading a command:
         let N be text; 
         let N be "[player's command]"; 
         replace the regular expression "(hi|hello|hey), (.*)" in N with "\2, \1"; 
-        change the text of the player's command to N.  
+        change the text of the player's command to N.
+
+The Hostel-as-subject is a subject. The printed name is "hostel". Understand "hostel" as the hostel-as-subject.
+The Fleur d'or-as-subject is a subject. The printed name is "Fleur d'or hotel". Understand "hotel" or "fleur" or "d'or" as the fleur d'or-as-subject.
+The Cinema-as-subject is a subject. The printed name is "cinema". Understand "cinema" as the cinema-as-subject.
+The Counterfeit monkey-as-subject is a subject. The printed name is "Counterfeit Monkey Bar". Understand "counterfeit" or "monkey" or "bar" as the counterfeit monkey-as-subject.
+The arbot-as-subject is a subject. The printed name is "Arbot Maps & Antiques". Understand "arbot" or "maps" or "antiques" or "&" or "antique" or "shop" as the arbot-as-subject.
 
 Bureau is a subject. Understand "bureau of orthography" or "orthography" as the bureau.
 
@@ -20961,9 +20967,11 @@ where there seems airport is a weakly-phrased location-questioning quip.
 where there seems garage is a weakly-phrased location-questioning quip.
  The printed name is "where there is a garage". The true-name is "where there seems a garage". 
  Understand "is" or "a" as where there seems garage.  The place-sought is "a garage".
- It mentions geography, car, transportation.
+ It mentions geography, transportation.
  It is background-information.
  The correct answer is Park Center.
+Every car is mentioned by where there seems garage.
+
 
 where there seems telephone service is a weakly-phrased location-questioning quip.
  The printed name is "where there is telephone service". The true-name is "where there seems telephone service". 
@@ -21025,35 +21033,35 @@ where lodging seems found is a weakly-phrased location-questioning quip.
  The printed name is "where lodging is found". 
  The  true-name is "where lodging seems found". 
  Understand "is" or "hostel" as where lodging seems found.  The place-sought is "lodging for the night".
- It mentions geography, hostel.
+ It mentions geography, hostel-as-subject.
  It is background-information.
  The correct answer is Hostel.
 
 where there seems hotel is a weakly-phrased location-questioning quip.
  The printed name is "where there is a hotel". The true-name is "where there seems a hotel". 
  Understand "is" or "a" or "fleur" or "d'or" as where there seems hotel.  The place-sought is "a hotel".
- It mentions geography, fleur d'or.
+ It mentions geography, fleur d'or-as-subject.
  It is background-information.
  The correct answer is Fleur d'or.
 
 where there seems Arbot is a weakly-phrased location-questioning quip.
  The printed name is "where to find Arbot Maps & Antiques". The true-name is "where there seems Arbot". 
  Understand "is" or "a" or "Arbot" or "antiques" or "arbots" or "arbot's" or "maps" or "&" as where there seems arbot.  The place-sought is "Arbot Maps & Antiques".
- It mentions geography.
+ It mentions geography, arbot-as-subject.
  It is background-information.
  The correct answer is Arbot Maps & Antiques.
 
 where there seems cinema is a weakly-phrased location-questioning quip.
  The printed name is "where there is a cinema". The true-name is "where there seems a cinema". 
  Understand "is" or "a" or "cinema" as where there seems cinema.  The place-sought is "a cinema".
- It mentions geography, cinema.
+ It mentions geography, cinema-as-subject.
  It is background-information.
  The correct answer is Cinema.
 
 where there seems pub is a weakly-phrased location-questioning quip.
  The printed name is "where there is a pub". The true-name is "where there seems a pub". 
  Understand "is" or "a" or "bar" as where there seems pub.  The place-sought is "a pub".
- It mentions geography, counterfeit monkey.
+ It mentions geography, counterfeit monkey-as-subject.
  It is background-information.
  The correct answer is Counterfeit Monkey.
 	
