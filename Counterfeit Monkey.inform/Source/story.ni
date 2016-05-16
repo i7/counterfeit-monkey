@@ -3044,7 +3044,7 @@ Check switching on an ignition which is part of a damaged car:
 Report switching on an ignition for the first time:
 	say "We switch on the ignition and the car comes to life. Smelly, trembling, putt-putting life, but still, not bad for something we conjured out of a vegetable picked outside my parents['] place." instead.
 
-[Instead of going by the car when the ignition is switched off: say "The ignition is off at the moment." ]
+[Instead of going by somewhere by car when the ignition is switched off: say "The ignition is off at the moment." ]
 
 Carry out going somewhere by car:
 	complete "Find transport for getting past the traffic on High Street";
@@ -7718,7 +7718,7 @@ Rule for writing a topic sentence about aquarium-exterior when aquarium-exterior
 A ranking rule when aquarium-exterior is not as-yet-unknown and Aquarium is visited and a car (called target) is in the location:
 	increase description-rank of the target by 20.
 	
-Rule for writing a topic sentence about the car (called target car) when the location is Deep Street and Aquarium is visited and aquarium-exterior is not as-yet-unknown and aquarium-exterior is mentionable:
+Rule for writing a topic sentence about a car (called target car) when the location is Deep Street and Aquarium is visited and aquarium-exterior is not as-yet-unknown and aquarium-exterior is mentionable:
 	say "Our pathetic little [target car] is parked right outside [the aquarium-exterior]. "
 
 Instead of searching aquarium-exterior:
@@ -20763,7 +20763,7 @@ Check a fake person entering a vehicle when the heft of the person asked is grea
 Check a fake person going from a road to a road when the protesters are not off-stage:
 	stop the action.
 	
-Unsuccessful attempt by a fake person entering the car:
+Unsuccessful attempt by a fake person entering a car:
 	say "[The person asked] makes an effort to get in, but does not remotely fit." instead.
 	
 Rule for writing a paragraph about a fake person which is in a car (called target):
