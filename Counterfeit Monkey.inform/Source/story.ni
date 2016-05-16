@@ -2828,13 +2828,13 @@ Last check facing:
 	otherwise if leftward thing is a road and rightward thing is a road:
 		say "That way is the corner of [the leftward thing] and [the rightward thing]." instead;
 	otherwise if leftward thing is a facade and rightward thing is a facade:
-		say "In that direction [one of][the leftward thing] abut[s] [the rightward thing], and there's no good way between them[or][the leftward thing] [meet] the edge of [the rightward thing][or]lies the corner between [the leftward thing] and [the rightward thing][at random]." instead; 
+		say "In that direction [one of][the leftward thing] abut[s] [the rightward thing], and there's no good way between them[or][the leftward thing] meet[s] the edge of [the rightward thing][or]lies the corner between [the leftward thing] and [the rightward thing][at random]." instead;
 	otherwise if leftward thing is a road:
 		say "That way is the corner of [the rightward thing] and the beginning of [leftward thing] running [leftway]." instead;
 	otherwise if rightward thing is a road:
 		say "That way is the corner of [the leftward thing] and the beginning of [rightward thing] running [rightway]." instead;
 	otherwise:
-		say "To [the noun] [the leftward thing] [meet] [the rightward thing]." instead.
+		say "To [the noun] [the leftward thing] meet[s] [the rightward thing]." instead.
 
 To decide what object is the thing seen facing (dir - a direction):
 	if a backdrop (called target) in the location screens dir:
