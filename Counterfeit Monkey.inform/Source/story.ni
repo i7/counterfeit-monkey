@@ -2105,7 +2105,8 @@ To announce the reparsed command:
 	say "[first custom style]([unless saved Smarter Parser error is little-used do nothing rule][saved Smarter Parser error] Retrying that as '[rejected command]'.)[roman type][command clarification break]".
 
 To explain the reborn command:
-	say "[first custom style][saved Smarter Parser error][roman type][line break]". 
+	unless saved Smarter Parser error is little-used do nothing rule:
+		say "[first custom style][saved Smarter Parser error][roman type][line break]".
 	
 The unnecessary movement rule is not listed in any rulebook.
 The too many words rule is not listed in any rulebook. [conversation commands can be quite long.]
