@@ -1677,15 +1677,14 @@ Every turn when an alarmed person (called the prospective interlocutor) is enclo
 
 The new default greeting rule is listed instead of the default greeting rule in the report saying hello to rules.
 
-[fix] [Is the noun the right person?]
 Report saying hello to someone when the greeting type is explicit (this is the new default greeting rule):
 	say "[We] [one of]say [one of]hello[or]hi[or]hey[at random] to[or]wave at[or]nod to[or]greet[purely at random] [the noun].[paragraph break][greeting of the current interlocutor][paragraph break]";
 
 Report someone saying hello to the player:
 	say "[greeting of the actor][paragraph break]" instead;
 	
-[fix] [Is the current interlocutor the right person?]
-A person has some text called the greeting. The greeting of a person is usually "'[one of]Hi[or]Hello[or]Hi there[at random],' [the current interlocutor] [say]."
+[fix] [Is the person asked the right person?]
+A person has some text called the greeting. The greeting of a person is usually "'[one of]Hi[or]Hello[or]Hi there[at random],' [the person asked] [say]."
 
 The greeting of the player is "'Hi,' [we] say."
 	
