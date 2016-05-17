@@ -1,11 +1,16 @@
-Version 3 of Notepad by Jim Aikin begins here.
+Version 4/160517 of Notepad by Jim Aikin begins here.
+
+[Updated allowed pens to be relation for Counterfeit Monkey, everything else broken - Petter Sjölund]
 
 "A system for creating an in-game notepad that the player can write on."
 
 Section 1 - Definitions
 
 
-A notepad is a kind of thing. A notepad has a text called memo. The memo of a notepad is usually "". A notepad has a list of objects called allowed-pens. The allowed-pens of a notepad is usually {}. A notepad has a truth state called pen-needed. The pen-needed of a notepad is usually true. A notepad can be edit-allowing or non-edit-allowing. A notepad is usually edit-allowing.
+A notepad is a kind of thing. A notepad has a text called memo. The memo of a notepad is usually "". A notepad has a truth state called pen-needed. The pen-needed of a notepad is usually true. A notepad can be edit-allowing or non-edit-allowing. A notepad is usually edit-allowing.
+
+write-allowing relates various notepads to various things. The verb to write-allow implies the write-allowing relation. 
+
 
 Termination type is a kind of value. The termination types are terminated and unterminated.
 
@@ -86,7 +91,7 @@ Check an actor writing on something (this is the ordinary check writing it on ru
 		otherwise if the second noun is non-edit-allowing:
 			say "[The second noun] [are] [currently]write-protected, and [can't] be written on." (B) instead;
 		if the pen-needed of the second noun is true:
-			repeat with P running through the allowed-pens of the second noun:
+			repeat with P running through things write-allowed by the second noun:
 				if the player carries P:
 					now carrying-pen is true;
 		otherwise:
@@ -101,7 +106,7 @@ Check an actor writing on something (this is the ordinary check writing it on ru
 			say "[The second noun] [are] [currently]write-protected, and [can't] be written on." (E);
 			rule succeeds;
 		if the pen-needed of the second noun is true:
-			repeat with P running through the allowed-pens of the second noun:
+			repeat with P running through things write-allowed by the second noun:
 				if the actor carries P:
 					now carrying-pen is true;
 		otherwise:
@@ -133,7 +138,7 @@ Check an actor adding to something (this is the ordinary check adding it to rule
 		rule succeeds;
 	if the pen-needed of the second noun is true:
 		now carrying-pen is false;
-		repeat with P running through the allowed-pens of the second noun:
+		repeat with P running through things write-allowed by the second noun:
 			if the actor carries P:
 				now carrying-pen is true;
 	otherwise:
@@ -202,7 +207,7 @@ Check an actor copying something to something (this is the ordinary check copyin
 		say "At [that] moment, nothing [are] written on [the noun]." (G) instead;
 	if the pen-needed of the second noun is true:
 		now carrying-pen is false;
-		repeat with P running through the allowed-pens of the second noun:
+		repeat with P running through things write-allowed by the second noun:
 			if the player carries P:
 				now carrying-pen is true;
 	otherwise:
@@ -337,9 +342,9 @@ Version 3 is updated to work with Inform 6L38. The Check rules in Sections 4 and
 
 Section: Using Notepad.
 
-To use Notepad, first create a writing implement and a notepad. The writing implement is not a special kind of thing; anything can be a writing implement (for instance, a fountain pen, which might be implemented as a container that needs to be loaded with ink). Add the writing implement to the list of allowed-pens of the notepad:
+To use Notepad, first create a writing implement and a notepad. The writing implement is not a special kind of thing; anything can be a writing implement (for instance, a fountain pen, which might be implemented as a container that needs to be loaded with ink). Now the notepad write-allowes the writing implement:
 
-	The player carries a piece of chalk. The player carries a slate. The slate is a notepad. The allowed-pens of the slate is {chalk}.
+	The player carries a piece of chalk. The player carries a slate. The slate is a notepad. The slate write-allows the chalk.
 
 Any number of writing implements can be included in the allowed-pens list for a notepad. If you'd rather let the player write on the notepad without bothering with a writing implement (perhaps because the notepad object is a hand-held computer with a QWERTY keyboard), forget about the allowed-pens list. Instead, set the pen-needed property of the notepad to false:
 
@@ -401,9 +406,9 @@ Example: * Memorabilia - Some objects the player can write in.
 
 	The player carries a pencil and a piece of chalk.
 
-	The player carries a slate. The slate is a notepad. The description of the slate is "Black." The allowed-pens of the slate is {chalk}.
+	The player carries a slate. The slate is a notepad. The description of the slate is "Black." The slate write-allows chalk.
 
-	The player carries a notebook. The notebook is a notepad. The description of the notebook is "Dog-eared." The allowed-pens of the notebook is {pencil}.
+	The player carries a notebook. The notebook is a notepad. The description of the notebook is "Dog-eared." The notebook write-allows pencil.
 
 	The foggy mirror is in the Lab. The description is "The mirror [are] thickly coated with condensed steam." The foggy mirror is a notepad. The pen-needed of the foggy mirror is false. The memo of the foggy mirror is "Beware! Ghouls!"
 
@@ -431,7 +436,7 @@ Example: * Beethoven - A deaf NPC who responds only to commands written in the c
 
 	The Broadwood piano is scenery in the Messy Front Parlor. The description is "The piano is handsomely inlaid with fleur-de-lis." Understand "handsome", "inlay", and "fleur-de-lis" as the Broadwood piano. The Broadwood piano is a musical instrument.
 
-	The player carries a conversation book and a quill pen. The conversation book is a notepad. The allowed-pens of the conversation book is {quill pen}. The description of the conversation book is "The deaf composer often used a book of this sort to hold conversations with his friends. They would write whatever they wanted to say to him in the book and then show him the book."
+	The player carries a conversation book and a quill pen. The conversation book is a notepad. The conversation book write-allows quill pen. The description of the conversation book is "The deaf composer often used a book of this sort to hold conversations with his friends. They would write whatever they wanted to say to him in the book and then show him the book."
 
 	Section 2 - Beethoven
 
