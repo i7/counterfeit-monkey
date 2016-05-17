@@ -3866,8 +3866,10 @@ Rule for supplying a missing noun while performing something on:
 Sanity-check performing something on game-selection:
 	say "It's not really a game-playing occasion." instead.
 
+To wish is a verb.
+
 Sanity-check performing something on a person: 
-	say "If [the second noun] [wish] to sing something, that is up to [them]." instead.
+	say "If [the second noun] [adapt verb wish] to sing something, that is up to [them]." instead.
 
 Sanity-check performing something on something which is not an instrument:
 	say "[The second noun] [aren't] much of an instrument." instead.

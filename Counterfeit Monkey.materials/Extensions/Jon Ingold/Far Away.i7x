@@ -1,11 +1,9 @@
-Version 4 of Far away by Jon Ingold begins here.
+Version 5/160517 of Far away by Jon Ingold begins here.
 
 "Creates an adjective for far-off items which cannot be touched."
 
 Use far away extension translates as (- Constant FARAWAY; -).  
 Use far away extension.
-
-Include Plurality by Emily Short.
 
 Section - The basic definition
 
@@ -74,7 +72,7 @@ The last distant stuff rule when reporting errors (this is the can't touch rule)
 
 Section - Messages
 
-The far-off message is a text that varies. The far-off message is "[The far-off item] [is-are] out of reach."
+The far-off message is a text that varies. The far-off message is "[The far-off item] [are] out of reach."
 
 
 
@@ -110,7 +108,6 @@ A rule can decide if it should be saying something when failing by testing "if r
 
 Finally, the game provides the condition "far off" for objects which are considered out of reach - remember, these may be distant, or they may be parts/contents of distant stuff.
 
-Note this extension relies on, and includes, "Plurality" by Emily Short.
 
 Example: ** Christmas Morning - A simple example of distance, and how to overcome it.
 
@@ -118,9 +115,9 @@ Example: ** Christmas Morning - A simple example of distance, and how to overcom
 
 	Include Far Away by Jon Ingold.
 
-The living room contains a tree, and some decorations. Only the very top of the tree is distant.
+[The living room contains a tree, and some decorations. Only the very top of the tree is distant.]
 
-	*: The Living Room is a room. "The room is dominated by the top half of a Norwegian spruce. One side is almost bare as a result of Dad dragging it home along the snowless pavement."
+	The Living Room is a room. The description is "The room is dominated by the top half of a Norwegian spruce. One side is almost bare as a result of Dad dragging it home along the snowless pavement."
 
 	The christmas tree is a supporter in the Living Room. "The tree is still only half-decorated.".  Understand "bauble", "baubles" as the christmas tree. Instead of examining or searching the tree, say "The tree is decorated in a smattering of baubles, [list of things on the tree]. [if the star is on the top of the tree]A star takes pride of place at the top.[end if][if the star is on the tree]The star looks a bit out of place though.[end if]" 
 
@@ -136,16 +133,16 @@ The living room contains a tree, and some decorations. Only the very top of the 
 
 	Every turn: if all the decorations are enclosed by the tree and the star is on the top of tree, end the game saying "The festivites may commence!".
 
-At present, the player cannot hope to complete his task. So we give him a stepladder, and a rule to make is overcome the distant stuff problem.
+[At present, the player cannot hope to complete his task. So we give him a stepladder, and a rule to make is overcome the distant stuff problem.]
 
-	*: The wonky stepladder is in the Living Room. It is an enterable supporter. Instead of climbing the stepladder, try entering the stepladder. Report entering the stepladder: say "You clamber up the wonky stepladder." instead. Understand "ladder" as the stepladder.
+	The wonky stepladder is in the Living Room. It is an enterable supporter. Instead of climbing the stepladder, try entering the stepladder. Report entering the stepladder: say "You clamber up the wonky stepladder." instead. Understand "ladder" as the stepladder.
 
 	A distant stuff rule for the top of the tree when the player is on the stepladder: rule succeeds.
 	A distant stuff rule for something enclosed by the top of the tree when the player is on the stepladder: rule succeeds.
 
-Finally, we should stop the player putting the wrong decoration at the top. This needs to be an Instead rule rather than a Before, however, so that it the distance check happens first. 
+[Finally, we should stop the player putting the wrong decoration at the top. This needs to be an Instead rule rather than a Before, however, so that it the distance check happens first.]
 
-	*: Instead of putting a decoration on the top of the tree when the noun is not the star, say "That'd look all wrong."
+	Instead of putting a decoration on the top of the tree when the noun is not the star, say "That'd look all wrong."
 	
 	Test me with "put tinsel on tree / x top of tree / put star on top of tree / climb stepladder / put star on top of tree / get off / take star / put snowman on tree".
 
@@ -158,7 +155,7 @@ Example: *** Starfield Dome - a more complicated example, with an NPC, and vario
 
 	The Starfield Dome is a room. "A wide dome, offering a view of the heavens above. The stars are out in all their glory, beautiful and clear[if the glass dome is open]. The open dome gives you an unfiltered view, but with the wind you are shivering[end if][if the player is flying] and close enough to touch[otherwise] - down here on earth, everything's a bit too dark for comfort[end if]."
 
-	The glass dome is a distant transparent thing in the Dome.  The glass dome is scenery. It has description "[if open]The glass of the dome has peeled back, to let in the wind and the light[otherwise]The dome is made of geodesic sections, and beyond it are the stars[end if]. A series of pylons form the supports of the dome, and in the apex of these is a small release button."	The glass dome can be open or closed.
+	The glass dome is a distant transparent container in the Dome.  The glass dome is scenery. It has description "[if open]The glass of the dome has peeled back, to let in the wind and the light[otherwise]The dome is made of geodesic sections, and beyond it are the stars[end if]. A series of pylons form the supports of the dome, and in the apex of these is a small release button."	The glass dome can be open or closed.
 
 The following details are part of the dome. They don't need to be separately declared 'distant' - they adopt this from the glass dome. 
 

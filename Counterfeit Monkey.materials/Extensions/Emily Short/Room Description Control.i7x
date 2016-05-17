@@ -1,11 +1,11 @@
-Version 12 of Room Description Control by Emily Short begins here.
+Version 13/160517 of Room Description Control by Emily Short begins here.
 
 "A framework by which the author can considerably change the listing of objects in a room description. Includes facilities for concealing objects arbitrarily and changing the order in which objects are listed."
  
 
 Section 1 - Priority and Concealment Rules
 
-Include Complex Listing by Emily Short. Include version 4 of Plurality by Emily Short. 
+Include Complex Listing by Emily Short. [Include version 4 of Plurality by Emily Short.]
 
 The new object description rule is listed instead of the room description paragraphs about objects rule in the carry out looking rules.
 
@@ -109,6 +109,7 @@ After printing the plural name of something (called target):
 To decide whether (X - a thing) nominally matches (Y - a thing):
 	(- ({X}.list_together == {Y}.list_together) -)
 
+[6M62 wants it to be][To call (RL - a rule) on everything in scope:]
 To call (RL - an objects based rule) on everything in scope:
 (-
    processing_rule = {RL};
@@ -252,3 +253,5 @@ Version 8 adds a fix for bugs involving multiple identical objects, so that they
 Version 10 removes deprecated phrases.
 
 Version 12 does some cleanup and brings the extension in line with adaptive responses.
+
+Version 13/160517: Update to work with Inform 6M62. Remove dependency on Plurality.

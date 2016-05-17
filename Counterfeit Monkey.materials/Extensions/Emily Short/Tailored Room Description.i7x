@@ -1,4 +1,4 @@
-Version 12 of Tailored Room Description by Emily Short begins here.
+Version 13/150517 of Tailored Room Description by Emily Short begins here.
 
 "An extension to go with Room Description Control, providing a different style of room description than the default. Parenthetical remarks such as (open) and (in which are...) are omitted in favor of full English sentences. Removes the requirement for Text Variations."
 
@@ -80,7 +80,7 @@ To decide whether (special-target - a thing) lacks relative interest:
 	
 Rule for writing a paragraph about something (called special-target) (this is the standard paragraphs rule):
 	now the special-target is mentioned;  
-	have the parser notice the special-target;
+	set pronouns from the special-target;
 	carry out the writing a topic sentence about activity with the special-target;
 	if the holder of the special-target is not the location and the holder of the special-target is not referenced by current-paragraph:
 		carry out the disclosing exterior activity with the special-target; 
@@ -166,13 +166,14 @@ Rule for disclosing exterior of something (called special-target) (this is the s
 			say ". ";
 		now current-subject is the holder of current-subject;
 
+To sit is a verb.
+
 To say sits:
 	if the current-subject is carried by a person or the current-subject is worn by a person
 	begin;
-		if the current-subject acts plural, say "are "; otherwise say "is ";
+		say "[regarding current-subject][are] ";
 	otherwise;
-		if the current-subject acts plural, say "[one of]sit [or]rest [or]are [or]are sitting [at random]";
-		otherwise say "[one of]sits [or]rests [or]is [or]is sitting [at random]";
+		say "[regarding current-subject][one of][adapt the verb sit] [or]rest[s] [or][are] [or][are] [adapt the verb sit] [at random]";
 	end if;
 
 To say (N - a thing) as a possibly-known item:
@@ -237,7 +238,7 @@ The current-topic-sentences-table is a table-name that varies. The current-topic
 
 Table of Basic Sentences
 disclosure
-"[if the current-subject is a person][The current-subject] [is-are] here. [otherwise]You can see [a current-subject] here. [end if]"
+"[if the current-subject is a person][The current-subject] [are] here. [otherwise]You can see [a current-subject] here. [end if]"
 
 current-ao-table is a table-name that varies. The current-ao-table is the Table of Adjacent Objects.
 current-connectives-table is a table-name that varies. The current-connectives-table is the Table of Connectives.
@@ -278,21 +279,21 @@ disclosure
 "[holding-and-wearing][run paragraph on]"
 
 To say holding-and-wearing:
-	say "[if the prior named noun is the current-subject][regarding current-subject][They][otherwise][The current-subject][end if] ";
+	say "[if the prior named object is the current-subject][regarding current-subject][They][otherwise][The current-subject][end if] ";
 	if the current-subject carries something mentionable and the current-subject wears something mentionable
 	begin;
 		if the number of mentionable things held by the current-subject is greater than 5
 		begin;
-			say "[if the current-subject acts plural]have[otherwise]has[end if] [a list of things carried by the current-subject]. [regarding current-subject][They] [are] wearing [a list of things worn by the current-subject]. [run paragraph on]";
+			say "[regarding current-subject][have] [a list of things carried by the current-subject]. [regarding current-subject][They] [are] wearing [a list of things worn by the current-subject]. [run paragraph on]";
 		otherwise;
-			say "[is-are] carrying [a list of things carried by the current-subject] and wearing [a list of things worn by the current-subject]. [run paragraph on]";
+			say "[are] carrying [a list of things carried by the current-subject] and wearing [a list of things worn by the current-subject]. [run paragraph on]";
 		end if;
 	otherwise if the current-subject carries something mentionable;
-		if a random chance of 1 in 2 succeeds, say "[is-are] [optional also][one of]holding[or]carrying[at random] ";
-		otherwise say "[if the current-subject acts plural]have[otherwise]has[end if][run paragraph on] ";
+		if a random chance of 1 in 2 succeeds, say "[are] [optional also][one of]holding[or]carrying[at random] ";
+		otherwise say "[regarding current-subject][have][run paragraph on] ";
 		say "[a list of mentionable things carried by the current-subject]. [run paragraph on]";
 	otherwise if the current-subject wears something mentionable;
-		say "[is-are] wearing [a list of mentionable things worn by the current-subject]. [run paragraph on]";
+		say "[are] wearing [a list of mentionable things worn by the current-subject]. [run paragraph on]";
 	end if.
 
 current-container-content-table is a table-name that varies. current-container-content-table is the Table of Container Content Disclosures.
@@ -421,6 +422,8 @@ We may also swap these tables entirely for other tables of our own devising, as 
 The purpose of this change is to make the extension more flexible and more useful to authors working with alternative viewpoints (to recast the prose in first-person past tense, for instance) or in other languages. It also substantially reduces the number of individual rules and quantity of redundant code in the extension.
 
 Version 8 tweaks the reporting of character possessions and worn items to appear more natural. It also adds section headings to the documentation.
+
+Version 13: Update for Inform 6M62. Fix tests. Remove dependency on Plurality.
 
 Example: * Doors and doors - Writing paragraphs about doors to generate sentences such as "Exits include the white door and the black door. The black door is open."
 
