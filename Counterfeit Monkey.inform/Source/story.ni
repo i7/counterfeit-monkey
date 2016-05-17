@@ -6248,7 +6248,7 @@ Instead of smelling the Projection Booth:
 	say "The ghost of hot dog and relish lingers in the air. It's mildly nauseating."
 
 The jotter is a notepad in the Projection Booth. The initial appearance is "[A jotter] is propped up next to the projector." The description is "It's a little spiral-bound notebook, the kind reporters in old movies carry. It's full of notes: running times of movies. Numbers of people in the audience. Who clapped during potentially subversive scenes. Who arrived in a group of more than three."
-	The jotter write-allows a pen and pens.
+	The jotter write-allows a pen and some pens.
 	The memo of the jotter is "Red: audience 14. FM couple. MM couple. M in raincoat. FFFFF group. F. MF. M.".
 
 Rule for writing a topic sentence about the jotter when the projector is mentionable:
@@ -10657,7 +10657,7 @@ The podium is a supporter in Lecture Hall 1. It is scenery. The description is "
 
 On the podium is a page. The page is a notepad. The description of the page is "A sheet of lined paper[if the location is Lecture Hall 1], presumably left by the person who lectured here last[end if]."
 	The memo of the page is "visual[ization] training... preparation at a young age... cooperative direction of language outcomes".
-	The page write-allows a pen and pens.
+	The page write-allows a pen and some pens.
 
 A description-concealing rule when the page is marked for listing:
 	if the page is not seen and the page is not handled:
@@ -18337,7 +18337,7 @@ The papas are a man. The description of the papas is "A whole fatherly fleet, ta
 	The greeting of the papas is "'Good to see you, my dear,' says one of the papas. 'But I doubt our conversation can interest you.' And he turns back to one of the others, speaking in a hushed voice of [one of]Disraeli[or]Mrs Brown[or]those scandalous deaths in Whitechapel[or]the installation of the underground trains[at random]."
 
 The paper is a notepad. The description of the paper is "It contains a memo, dated to May of 1983. 'Attention,' it says. 'Due to subversive counter-propaganda altering the abstract concept, Subject A must NO LONGER BE GELLED AFTER USE, since reconstructing her may produce anomalous results. She will from now on be housed in a continuous living state in the historic apartments.'"
-	The paper write-allows pens and a pen.
+	The paper write-allows some pens and a pen.
 	The scent-description of the paper is "purple ink".
 	
 The description of the paper-model is "There's now just one model of the New Church remaining, but it's a doozy, with card stock pews and interior decor to assemble before you get to the outside portion." The printed name of the paper-model is "paper model". Understand "model" or "paper model" as the paper-model.
@@ -18364,7 +18364,7 @@ The description of the passcard is "A variant of a passport: it has an image on 
 The passage is a notepad. The heft of the passage is 1. The description of the passage is "A short piece of prose neatly letterpressed onto a large sheet of paper. It reads: 
 
 [i]The alphabet is a system of interchangeable parts. The word form can be surgically revised, instead of rewritten, to become the word farm or firm or fork or fort or from, or with a little more trouble, to become the word pineapple. [--] Robert Bringhurst[/i]".
-	The passage write-allows a pen and pens.
+	The passage write-allows a pen and some pens.
 
 The passage-place is a thing. The printed name is "passage". Understand "passage" or "corridor" as the passage-place. The heft of the passage-place is 10. The passage-place is fixed in place. The description is "It's a dark, stone-lined corridor leading into the earth." The initial appearance is "A passage lined in stone descends into the face of [the programmable dais]."
 
