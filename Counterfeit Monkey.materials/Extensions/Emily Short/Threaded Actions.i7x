@@ -2,7 +2,7 @@ Threaded Actions by Emily Short begins here.
 
 Section 1 - Main Elements
 
-Include Threaded Conversation by Chris Conley.
+[Include Threaded Conversation by Chris Conley.]
 
 A stolen action is a kind of performative quip. The specification of a stolen action is "Any performative quip that is used to redirect the behavior of a standard command like KISS FRED or ATTACK CAT."
 	

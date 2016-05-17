@@ -1551,7 +1551,7 @@ Section 2 - Conversation, including Subjects
 
 [ The Counterfeit Monkey uses the same conversation library as Alabaster, though with some different refinements. ]
 
-Include Threaded Conversation by Chris Conley.
+Include Threaded Conversation by Emily Short.
 
 Include Threaded Actions by Emily Short.
   
@@ -1683,7 +1683,7 @@ The default greeting rule is not listed in any rulebook.
 	 
 [The can't greet current interlocutor rule is not listed in any rulebook. The check what's being hailed rule is not listed in any rulebook.]
 
-The new check hailing rule is listed instead of the check what's being hailed rule in the check hailing rulebook.
+The new check hailing rule is listed instead of the [check what's being hailed] check hailing rule in the check hailing rulebook.
 
 
 Check hailing (this is the new check hailing rule):
@@ -20940,8 +20940,7 @@ Instead of someone discussing a location-questioning quip when the location is t
 Last report discussing a quip which mentions geography for the first time:
 	say "(Incidentally, you know, we don't have to go around asking where everything is like a tourist just off the boat. If you want to go to some place you've heard of, just say so and I'll handle the navigation [--] unless of course you actually want to give the impression of being a tourist just off the boat, in which case far be it from me to critic[ize] your methods.)" instead.
 
-location-questioning quip is a kind of quip.
-	A location-questioning quip is always questioning.
+location-questioning quip is a kind of questioning quip.
 	A location-questioning quip is usually weakly-phrased.
 	A location-questioning quip has some text called the place-sought. 
 	A location-questioning quip has an object called the correct answer.
