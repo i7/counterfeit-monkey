@@ -786,7 +786,7 @@ Rule for clarifying the parser's choice of something:
 	
 
 To say set prior to (item - a thing):
-	now prior named noun is item.
+	now prior named object is item.
 
 Section 2 - Input Editing
 
@@ -1928,7 +1928,7 @@ Rule for refusing to attack someone:
 
 Book 3 - Viewpoint and Narrative Voice
 
-Include Locksmith by Emily Short. Include Plurality by Emily Short. Use sequential action. Use full-length room descriptions. 
+Include Locksmith by Emily Short. Use sequential action. Use full-length room descriptions. 
 
 Understand the command "latch" as "lock".
 
@@ -2351,7 +2351,7 @@ Instead of looking under a person:
 		
 Instead of drinking something which is not fluid:
 	if the noun is edible:
-		say "I could see eating [it-them of the noun], but no more.";
+		say "I could see eating [regarding the noun][them], but no more.";
 	otherwise:
 		say "[one of]Even if [the noun] were liquid, [they] would still not be nice to drink[or]I don't fancy [noun] smoothie[at random]."
 		
@@ -3463,7 +3463,7 @@ Definition: a supporter is empty if the number of things on it is 0.
 
 [After writing a paragraph about the nightstand:
 	if something is on the nightstand and at least one surprising drawer is part of the nightstand, say "[paragraph break]";
-	say "[if prior named noun is the nightstand and the nightstand is empty]It[otherwise]The nightstand[end if] has [the number of drawers which are part of the nightstand in words] drawer[s]";
+	say "[if prior named object is the nightstand and the nightstand is empty]It[otherwise]The nightstand[end if] has [the number of drawers which are part of the nightstand in words] drawer[s]";
 	if at least one open drawer is part of the nightstand
 	begin;
 		say "; [selection of drawers which are part of the nightstand conforming to the description open drawers which are part of the nightstand is-are] open";
@@ -3489,7 +3489,7 @@ Rule for disclosing exterior of something which is in a drawer:
 	say "[The current-subject] is in [the holder of the current-subject]. ";
 
 Rule for disclosing contents of a drawer (called special-target):
-	say "[if the prior named noun is the special-target]Inside[otherwise]In [the special-target][end if] [is-are a list of things in the special-target]. [run paragraph on]".
+	say "[if the prior named object is the special-target]Inside[otherwise]In [the special-target][end if] [is-are a list of things in the special-target]. [run paragraph on]".
 	
 A desk is a kind of supporter. [Every desk incorporates two vertical drawers.] A desk is usually scenery. The description of a desk is usually "It's fakely veneered in dark wood and shows signs of years of abuse." A desk is usually seated.
 
@@ -3868,7 +3868,7 @@ Sanity-check performing something on game-selection:
 	say "It's not really a game-playing occasion." instead.
 
 Sanity-check performing something on a person: 
-	say "If [the second noun] wish[es] to sing something, that is up to [them]." instead.
+	say "If [the second noun] [wish] to sing something, that is up to [them]." instead.
 
 Sanity-check performing something on something which is not an instrument:
 	say "[The second noun] [aren't] much of an instrument." instead.
@@ -4051,7 +4051,7 @@ Before inserting something which is worn into a container:
 
 Every turn:
 	if a police person (called suspicious official) can see an illegal thing (called the evidence) which is not in a closed backpack:
-		say "The attention of [the suspicious official] lights on [the evidence]. 'Let's see [that-those of the evidence],' [regarding the suspicious official][they] [say]. [paragraph break]Of course, a minute's inspection doesn't make [them] any happier, and soon [we] find ourselves explaining things to the police.";
+		say "The attention of [the suspicious official] lights on [the evidence]. 'Let's see [regarding the evidence][those] of [the evidence],' [regarding the suspicious official][they] [adapt the verb say]. [paragraph break]Of course, a minute's inspection doesn't make [them] any happier, and soon [we] find ourselves explaining things to the police.";
 		end the story saying "That was careless".
 
 
@@ -5133,10 +5133,10 @@ Instead of setting the code-lock to "305":
 	if the temporary barrier is locked:
 		say "We set the wheels of the code-lock to [the topic understood].[paragraph break]Click! The barrier door unlocks.";
 		now the temporary barrier is unlocked;
-		have the parser notice the temporary barrier;
+		set pronouns from the temporary barrier;
 	otherwise:
 		say "[The temporary barrier] door was already unlocked.";
-		have the parser notice the temporary barrier;
+		set pronouns from the temporary barrier;
 		
 Understand "the right number/code" or "the number/code" or "number/code" or "right number/code" as "[code]".
 		
@@ -5218,7 +5218,7 @@ Instead of going south in Ampersand Bend:
 Rule for listing exits while looking in Ampersand Bend:
 	do nothing instead.
 
-Sigil Street is west of Ampersand Bend. It is a road. The description is "The buildings here are two and three [if the player wears the Britishizing goggles]storeys[otherwise]stories[end if], with shops at ground level and [apartments] above. The shops are closed for the holiday: [a typographer's office], [clothing shop] of col[our]ful skirts and ethnic bodices (rarely if ever worn by natives) and t-shirts covered with font designs[if the reflective window is in Sigil Street].
+Sigil Street is west of Ampersand Bend. It is a road. The description is "The buildings here are two and three [if the player wears the Britishizing goggles]storeys[otherwise]stories[end if], with shops at ground level and [apartments] above. The shops are closed for the holiday: [a typographer's office], [clothing shops] of col[our]ful skirts and ethnic bodices (rarely if ever worn by natives) and t-shirts covered with font designs[if the reflective window is in Sigil Street].
 
 [one of]Passing by [the reflective window] [we] catch the sight of our single blended body, and it creeps me out[or][The reflective window] of the closed shops reflect our synthes[ize]d self[stopping][end if]." 
 
@@ -5235,22 +5235,22 @@ The alleyway is a scenery facade in sigil street. It fronts south. Understand "a
 Instead of examining the reflective window: 
 	try searching the noun.
 
-The clothing shop is a facade in Sigil Street. It is scenery. The clothing shop fronts west. Understand "store" or "shops" or "stores" or "boutique" or "boutiques" or "tourist boutique" or "tourist Boutiques" as the clothing shop. The printed name is "tourist boutiques".
-	The description is "[We] peruse the offerings: [list of things which are part of the clothing shop]."
-	The introduction of the clothing shop is "I gather from your thoughts that you actually like some of the skirts, but I'd prefer that [we] skip the cross-dressing for now. Our synthes[ize]d body may be female but I'm still getting used to that."
+The clothing shops are a facade in Sigil Street. They are scenery. They are plural-named. The clothing shops front west. Understand "store" or "shops" or "stores" or "boutique" or "boutiques" or "tourist boutique" or "tourist Boutiques" as the clothing shops. The printed name is "tourist boutiques".
+	The description is "[We] peruse the offerings: [list of things which are part of the clothing shops]."
+	The introduction of the clothing shops is "I gather from your thoughts that you actually like some of the skirts, but I'd prefer that [we] skip the cross-dressing for now. Our synthes[ize]d body may be female but I'm still getting used to that."
 
-Some colorful skirts are part of the clothing shop. They are floppy and wearable. The description is "Suitable for wearing while doing the local traditional dances, which are slightly Spanish." They cover the legs-area.
-Some font t-shirts are part of the clothing shop. Understand "t-shirt" or "shirt" or "shirts" as the font t-shirts. They are floppy and wearable. The description is "They feature more 'serif' puns than anyone needs in a lifetime." They cover the torso-area.
-Some ethnic bodices are part of the clothing shop. Understand "bodice" as the bodices. They are floppy and wearable. The description is "Closed with ribbons and laces, to be worn over frilly white shirts." Understand "ribbons" or "laces" or "ribbon" or "lace" as the ethnic bodices. They cover the torso-area.
-A mourning dress is part of the clothing shop. It is floppy and wearable. The description is a "A black vintage gown trimmed with much lace and dripping with jet beads." Understand "beads" or "jet" or "bead" or "black" or "vintage" or "gown" as the mourning dress. It covers the torso-area.
+Some colorful skirts are part of the clothing shops. They are floppy and wearable. The description is "Suitable for wearing while doing the local traditional dances, which are slightly Spanish." They cover the legs-area.
+Some font t-shirts are part of the clothing shops. Understand "t-shirt" or "shirt" or "shirts" as the font t-shirts. They are floppy and wearable. The description is "They feature more 'serif' puns than anyone needs in a lifetime." They cover the torso-area.
+Some ethnic bodices are part of the clothing shops. Understand "bodice" as the bodices. They are floppy and wearable. The description is "Closed with ribbons and laces, to be worn over frilly white shirts." Understand "ribbons" or "laces" or "ribbon" or "lace" as the ethnic bodices. They cover the torso-area.
+A mourning dress is part of the clothing shops. It is floppy and wearable. The description is a "A black vintage gown trimmed with much lace and dripping with jet beads." Understand "beads" or "jet" or "bead" or "black" or "vintage" or "gown" as the mourning dress. It covers the torso-area.
 
 Check waving the letter-remover at font t-shirts when the current setting of the letter-remover is "r":
 	say "No doubt this would be a cogent statement about the commercial[ization] of the body, if it weren't for the fact that T-SHIT doesn't describe anything anyone with a functional colon has ever heard of." instead.
 
-Instead of taking something which is part of the clothing shop:
+Instead of taking something which is part of the clothing shops:
 	say "Though [the noun] [are] theoretically for sale, there's no one in at the moment to sell [them] to us."
 
-Instead of buying something which is part of the clothing shop:
+Instead of buying something which is part of the clothing shops:
 	say "Though [the noun] [are] theoretically for sale, there's no one in at the moment to sell [them] to us."
 
 The typographer's office is a facade in Sigil Street.  It is scenery.
@@ -5398,17 +5398,17 @@ An instructional rule (this is the teach examining thoroughness rule):
 		make no decision; 
 	if the location is not Sigil Street:
 		make no decision;
-	if we have examined the clothing shop:
+	if we have examined the clothing shops:
 		make no decision;
 	if we have examined the mourning dress:
 		make no decision;
 	let N be indexed text; 
 	say "[first custom style]Now we're in a new area, there are new things to see. Try LOOK AT THE SHOPS or L SHOPS.[roman type]";
-	now the expected action is the action of examining the clothing shop;
+	now the expected action is the action of examining the clothing shops;
 	now the held rule is the teach examining thoroughness rule;
 	rule succeeds.
 	
-Carry out examining the clothing shop:
+Carry out examining the clothing shops:
 	add the teach examining thoroughness rule to the completed instruction list, if absent.
 	
 An instructional rule (this is the teach examining super thoroughness rule):
@@ -6196,7 +6196,7 @@ Rule for writing a paragraph about the ticket-taker when the ticket-taker is not
 	now the current interlocutor is the ticket-taker;
 	if the ticket-taker knows allowed-in-movie, say "'Yo,' says the [ticket-taker] as [we] come in.";
 	otherwise say "'Ticket,' says the [ticket-taker] automatically.";
-	have the parser notice the ticket-taker;
+	set pronouns from the ticket-taker;
 	now everything held by the ticket-taker is mentioned.
  
  
@@ -6804,7 +6804,7 @@ Instead of taking the tomes:
 Instead of taking the component-tome:
 	say "[We] reach for one of the volumes, then stop, indecisive. They really do seem to be a set, and I can't bring myself to break it up."
 	
-Some paper-models, some souvenir tea-towels, and some shot glasses are scenery in the Cathedral Gift Shop. Understand "model" or "souvenirs" or "paper" or "models" as the paper-models. [Understand "window" or "windows" or "inscription" as the model when the model is the prior named noun.] Understand "towel" or "souvenirs" or "towels" or "tea" as the tea-towels. Understand "glass" or "souvenirs" as the shot glasses.
+Some paper-models, some souvenir tea-towels, and some shot glasses are scenery in the Cathedral Gift Shop. Understand "model" or "souvenirs" or "paper" or "models" as the paper-models. [Understand "window" or "windows" or "inscription" as the model when the model is the prior named object.] Understand "towel" or "souvenirs" or "towels" or "tea" as the tea-towels. Understand "glass" or "souvenirs" as the shot glasses.
 
 The printed name of the paper-models is "paper models".
 
@@ -7208,7 +7208,7 @@ Report taking off the monocle in the presence of fake-father:
 fake-father is a man. fake-father is privately-named. The printed name of fake-father is "Father". Understand "father" as fake-father. The description of fake-father is "He looks put out. Serial Comma Day is supposed to be a day off, even for him." The initial appearance is  "My father is just outside [my home]. He's clipping the cuffs of his trousers so that he won't snag them on anything during his ride in to work. His scooter is propped against the [statue of Noah Webster], ready for action."
 
 After writing a paragraph about fake-father:
-	now the prior named noun is fake-father.
+	set pronouns from fake-father.
 
 Sanity-check doing something other than examining something during parental appearance: 
 	if the current action is the action of taking off the monocle:
@@ -7235,7 +7235,7 @@ Sanity-check going somewhere during parental appearance:
 When parental appearance ends:
 	now fake-father is nowhere;
 	now turn-taken is false;
-	say "[if the prior named noun is fake-father]He[otherwise]My father[end if] sees us from a distance and gives a neighb[our]ly wave. 'Happy Punctuating!' he shouts.
+	say "[if the prior named object is fake-father]He[otherwise]My father[end if] sees us from a distance and gives a neighb[our]ly wave. 'Happy Punctuating!' he shouts.
 	
 I wave back rather weakly.
 	
@@ -7982,7 +7982,7 @@ Report Nexami saying hello to the player for the first time:
 Nexami-encounter is a scene. Nexami-encounter begins when Nexami is the current interlocutor. Nexami-encounter ends in abandonment when Nexami is not the current interlocutor. Nexami-encounter ends in departure when the time since Nexami-encounter began is two minutes.
 
 When Nexami-encounter ends in departure:
-	say "[if the prior named noun is Nexami]He[otherwise]Nexami[end if] stands up and mutters something. I have a little trouble with his Scottish accent [--] [we] don't get a lot of that around here, for obvious reasons [--] but you interpret it as him saying he'd better go pay up. 
+	say "[if the prior named object is Nexami]He[otherwise]Nexami[end if] stands up and mutters something. I have a little trouble with his Scottish accent [--] [we] don't get a lot of that around here, for obvious reasons [--] but you interpret it as him saying he'd better go pay up. 
 	
 He heads into the interior of the café.";
 	reset the interlocutor;
@@ -8488,10 +8488,10 @@ To say random-official:
 	say "[one of]official[or]customs official[at random]"
 
 To say f:
-	now the prior named noun is a random woman which is not plural-named.
+	now the prior named object is a random woman which is not plural-named.
 	
 To say m:
-	now the prior named noun is a random man  which is not plural-named.
+	now the prior named object is a random man  which is not plural-named.
 		 
 To say fm:
 	if a random chance of 1 in 2 succeeds:
@@ -9178,7 +9178,7 @@ The patron is a man in the Fleur d'Or Drinks Club. Understand "customer" or "man
 Test toolkitbug with "x toolkit / search toolkit / take all from toolkit" in Drinks Club.
 
 The toolkit is a scenery thing on the dor-bar-top. The toolkit contains some screwdrivers, some gimlets, and some rusty nails. Sanity-check taking the toolkit: say "Let's not draw attention by stealing that." instead.
-	Sanity-check taking something which is in the toolkit: say "Let's not draw attention by stealing [that-those of the noun]." instead.
+	Sanity-check taking something which is in the toolkit: say "Let's not draw attention by stealing [regarding the noun][those]." instead.
 	Instead of examining or searching the toolkit:
 		say "It offers an assortment: [a list of things in the toolkit]."
 
@@ -10351,10 +10351,10 @@ Instead of going to the Rectification Room when the large carton does not contai
 		say "[path-walked so far]";
 	otherwise:
 		clear the path-walked for the player; 
-	say "[one of]Before [we] go through the door to the Rectification Room, it occurs to us that Professor Brown is just next door, and that he is likely to be able to hear if [we] do anything in there. Possibly some kind of masking noise is in order[or][if the player carries something noisy (called the mask)][The mask] do[es] make noise, but you figure we should leave it out here in the hallway so that it will be louder than whatever we do in the room[otherwise]I defer to your judgment that [we] ought to provide some masking sound before proceeding[end if][stopping].". 
+	say "[one of]Before [we] go through the door to the Rectification Room, it occurs to us that Professor Brown is just next door, and that he is likely to be able to hear if [we] do anything in there. Possibly some kind of masking noise is in order[or][if the player carries something noisy (called the mask)][The mask] [do] make noise, but you figure we should leave it out here in the hallway so that it will be louder than whatever we do in the room[otherwise]I defer to your judgment that [we] ought to provide some masking sound before proceeding[end if][stopping].". 
 	
 Instead of dropping something in Samuel Johnson Basement when the heft of the noun is less than 4:
-	say "I'll just leave [that-those of noun] in the carton; less likely to be disturbed there.";
+	say "I'll just leave [regarding the noun][those] in the carton; less likely to be disturbed there.";
 	try inserting the noun into the large carton;
 
 After dropping something noisy in the large carton:
@@ -13897,7 +13897,7 @@ Check waving the letter-remover at something creating the letter-remover:
 		let presumed second noun be "[second noun]";
 		let C be the number of words in presumed second noun;
 		let presumed second noun be "[word number C in presumed second noun]";
-		now the prior named noun is the second noun;
+		now the prior named object is the second noun;
 		say "The device buzzes, puzzled. It has tried to create a '[disappointment text]': evidently '[presumed second noun]' [are] too tightly bound to [their] modifiers and can't be manipulated separately[one of]. This is a serious problem in my field of study, incidentally[or][stopping][if the second noun is fixed in place or the second noun is scenery]. Or perhaps it just doesn't have sufficient power to handle [the second noun][end if]." instead;
 	otherwise:
 		if disappointment text is "":
@@ -13941,7 +13941,7 @@ Carry out waving the letter-remover device at something:
 	[if something (called source) which encloses an essential thing proffers the generated object:
 		now the generated object is essential; ]
 	[so that 'take it' or whatever will work, after we've made something: ]
-	have the parser notice the generated object;
+	set pronouns from the generated object;
 	record "using the letter-remover" as achieved;
 	let current be the current setting of the letter-remover;
 	remove current from the list of remaining letters, if present;
@@ -13990,7 +13990,7 @@ To homonym-paddle (N - a thing):
 	unless X is the player:
 		record "getting a product of the homonym paddle" as achieved;
 		move the X to the dor-bar-top;
-		have the parser notice X;
+		set pronouns from X;
 		now X does not proffer X;
 		now N proffers X;
 		say "[one of]The bartender fishes around in the toolkit for [a N] and sets it on the bar with a flourish. [The patron] is watching this transaction in an interested way.
@@ -14124,7 +14124,7 @@ After teeing something:
 	say "There now: the T-inserter has constructed [if N is 2]both[otherwise]all of[end if] [possible-goals]. Not very stable, it seems. Slango will be interested to know that."; 
 	complete "Test T-inserter on situations where it could build more than one thing";
 	abide by the dangerous construction rules for the goal-object;
-	have the parser notice the goal-object;
+	set pronouns from the goal-object;
 	try examining the goal-object instead.
 
 Report teeing something:
@@ -14133,7 +14133,7 @@ Report teeing something:
 		let N be the number of entries in the possible-goals;
 		say "[line break]Of course, there were other options there: the T-inserter could have made [N in words] words. But it seems to be disambiguating to [the goal-object]. The question now is whether it would do so consistently or whether its behavi[our] is underdetermined; [we] don't have time for a really thorough trial set, but checking a couple more times may be indicative.";
 	abide by the dangerous construction rules for the goal-object;
-	have the parser notice the goal-object;
+	set pronouns from the goal-object;
 	try examining the goal-object instead.
 	
 Test it-construction with "autoupgrade / wave a-remover at pita / wave p-remover at pit / wave t-remover at it / put i in t-inserter / get it / wave t-remover at it / put i in t-inserter" holding the pita in the Sensitive Equipment Testing Room.
@@ -14340,7 +14340,7 @@ To synthesize contents of (source - a thing):
 		record "using the synthesizer" as achieved;
 		say "[The source] [if the source is a container]hums like a microwave oven for 43 seconds, then pings. Inside there [is-are a list of things in the source][otherwise]glows vibrant blue for five seconds, leaving behind [a list of things on the source][end if]."; 
 		try examining the chosen article;
-		have the parser notice the chosen article;
+		set pronouns from the chosen article;
 	otherwise:
 		say "[The source] whirs for a moment, then dies down again.";
 	
@@ -14435,11 +14435,11 @@ This is the spinner-turning rule:
 			now the spinner-gate is unlocked;
 			say "The gate clicks open. ";
 		abide by the dangerous construction rules for the chosen article;
-		have the parser notice the chosen article;
+		set pronouns from the chosen article;
 	otherwise:
 		if looking:
 			if exactly one thing is on the spinner, say "It does";
-			otherwise say "[The list of things on the spinner] do[es]";
+			otherwise say "[The list of things on the spinner] [do]";
 			say " not change, however. ";
 		otherwise:
 			say "The mirror revolves for a moment, [one of]without effect[or]without changing [the list of things on the spinner][at random], though the word '[substitute text]' appears in startling green on the mirror's surface. ".
@@ -14798,13 +14798,15 @@ It also isn't working.
 	otherwise:
 		say "There's not much gel left." ]
 
+To shy is a verb.
+
 Instead of putting the restoration gel on an original person:
 	if the second noun is an animal:
 		continue the action;
 	otherwise:
 		say "[one of][We] dip out [if the heft of the second noun is 1]fingertip-coating[otherwise]pea-sized[end if] quantity of gel and approach [the second noun] with it. 'Hey!' says [the second noun]. 'That was really cold! What do you think you're doing?'
 
-But no exciting conversions occur.[or][We] get some gel and try to be subtle about touching it to [the second noun], but [regarding the second noun][they] sh[ies] away, startled. Well, it likely wouldn't have had an effect anyway.[stopping]".
+But no exciting conversions occur.[or][We] get some gel and try to be subtle about touching it to [the second noun], but [regarding the second noun][they] [adapt the verb shy] away, startled. Well, it likely wouldn't have had an effect anyway.[stopping]".
 	
 [Before putting the restoration gel on something which encloses the player:
 	say "Are you insane? If [the second noun] go[es] away, we'll go too." instead. ]
@@ -15006,7 +15008,7 @@ Carry out shooting something with the anagramming gun:
 
 Report shooting something with the anagramming gun when the detritus is unseen:
 	say "The gun fires ruggedly into [the noun], which shatter[s] and then reform[s] as [the detritus]. [run paragraph on][detritus description][paragraph break]";
-	have the parser notice the detritus;
+	set pronouns from the detritus;
 	abide by the dangerous construction rules for the detritus instead.
 
 Report shooting something with the anagramming gun:
@@ -18071,7 +18073,7 @@ The monk corpse bonnet is a wearable thing. It covers the head-area. The descrip
 The morning dress is a thing. It is floppy and wearable. The description is "An outfit of striped trousers and fancy coat, such as men sometimes wear to fancy weddings in the morning."
 
 After waving the letter-remover at something creating the morning dress:
-	now the morning dress is part of the clothing shop;
+	now the morning dress is part of the clothing shops;
 	continue the action.
 	
 The description of the mote is "Almost invisible, almost lost.". The heft of the mote is 0.
@@ -19157,7 +19159,7 @@ A rap is usually noisy. A rap is usually r-abstract. The description of the rap 
 The results do not live up to his efforts, but you should know that he really really tried and, hey, the Sir Mixalot joke is gone.]
 
 Instead of listening to the rap:
-	say "[if the rap  is the prior named noun]It[otherwise]The rap[end if] ";
+	say "[if the rap  is the prior named object]It[otherwise]The rap[end if] ";
 	if the player wears the Britishizing Goggles:
 		say "[one of]devolves into a chap-hop diss on another man's tweed[or]sings the praises of one Professor Elemental[or]informs the listener that it doesn't like his tweed[or]asks the listener to fetch its trousers at once[at random]";
 	else:
@@ -21174,7 +21176,7 @@ Rule for refusing comment by someone when the noun is freaky:
 	otherwise if the ostensible motive is you-are-tourist:
 		say "[The current interlocutor] [say], 'Don't worry, [the noun] [are] almost certainly fake. They make things like [the noun] with letter tools around here. Freaks out the tourists, though!'";
 	otherwise:
-		say "[one of][The current interlocutor] recoil[s] involuntarily.[or]'Ew!' says [the current interlocutor].[or]'Please take that away,' [the current interlocutor] [say].[or]'Yuck,' [the current interlocutor] repl[ies].[at random]"
+		say "[one of][The current interlocutor] recoil[s] involuntarily.[or]'Ew!' says [the current interlocutor].[or]'Please take that away,' [the current interlocutor] [adapt the verb say].[or]'Yuck,' [the current interlocutor] [adapt the verb reply].[at random]"
 
 Last for refusing comment by someone when the noun is a long strong thing: 
 	if the current interlocutor is an animal:
@@ -21187,7 +21189,7 @@ Last for refusing comment by someone when the noun is a long strong thing:
 		-- you-are-feckless:
 			say "[beat] '[awkward confrontation] I wish you'd stop waving [the noun] around.'";
 		-- otherwise:
-			say "'[awkward confrontation], please stop waving [that-those of the noun].'"
+			say "'[awkward confrontation], please stop waving [regarding the noun][those].'"
 
 Last for refusing comment by someone when the noun is an edible thing: 
 	if the current interlocutor is an animal:
@@ -21313,8 +21315,8 @@ Rule for refusing comment by someone when the noun is an as:
 	otherwise:
 		say "'[one of]Looks old[or]Huh[or]Looks like it came up heads[or]Tails, I see[at random].'"
 
-Rule for refusing comment by an animal (called viewer): 
-	say "[The viewer] cock[s] [their] head[if the noun acts plural]s[end if].".
+[Rule for refusing comment by an animal (called viewer): 
+	say "[The viewer] cock[s] [their] head[regarding the noun][s].".]
 		
 Rule for refusing comment by something: 
 	say "[one of]This evokes no particular interest[or][The current interlocutor] shake[s] [their] head[or][The current interlocutor] [don't] have anything to say in response[at random]."
@@ -22195,7 +22197,7 @@ Rule for refusing comment by the bartender:
 		say "'That would be way too dangerous. I'd lose my lic[ense] for sure.'";
 		rule succeeds;
 	otherwise if target is the player:
-		say "'I don't think [that-those of the noun] would turn into anything,' says the bartender. She taps [it-them of the noun] with the paddle to demonstrate. 'See? No change.'";
+		say "'I don't think [regarding the noun][those] would turn into anything,' says the bartender. She taps [regarding the noun][them] with the paddle to demonstrate. 'See? No change.'";
 		rule succeeds; 
 	otherwise if the target is a person:
 		say "'Making live [if the target is not an animal]people[otherwise]critters[end if] is outside my lic[ense], bub.' (Bub? Who says that? But she carries it off.)";
@@ -24785,7 +24787,7 @@ why reifying living creatures seems cruel is a questioning quip.
 Rule for refusing comment by Professor Brown when the noun is r-abstract:
 	say "We show off [the noun]. ";
 	if the noun is proffered by a person:
-		say "Brown frowns. '[That-those of noun] [is-are of noun] made from a living being,' he remarks. 'That's against policy [--] I recommend you put it back.'";
+		say "Brown frowns. '[regarding the noun][those] [are] made from a living being,' he remarks. 'That's against policy [--] I recommend you put it back.'";
 	otherwise if the noun is noisy:
 		say "[one of]'These audio abstracts are always tuned in to what people have in mind at the moment. Like an all-time Top 40. In fact I think they use abstracts to DJ Island Radio 95.5 FM.' He might be joking, but it's plausible enough[or]He waves us off. Audio abstracts aren't really his thing[stopping].";
 	otherwise if the noun is verbal:
@@ -25210,7 +25212,7 @@ Report Brock taking something:
 	say "Brock fishes [the noun] out of the T-inserter. [run paragraph on]" instead.
 	
 Report Brock dropping something:
-	say "He tosses [it-them of the noun] in the corner." instead.
+	say "He tosses [regarding the noun][them] in the corner." instead.
 	
 
 Rule for beat-producing when Brock is the current interlocutor:
@@ -25500,7 +25502,7 @@ getting-crowded is an NPC-directed quip.
 	
 After Brock discussing interference-gelling:
 	let interference be a random visible noisy thing;
-	say "[if the prior named noun is Brock]He[otherwise]Brock[end if] touches some gel to [the interference]. '[one of]Just in case someone out there is listening[or]In the spirit of keeping the peace[at random].' [run paragraph on]";
+	say "[if the prior named object is Brock]He[otherwise]Brock[end if] touches some gel to [the interference]. '[one of]Just in case someone out there is listening[or]In the spirit of keeping the peace[at random].' [run paragraph on]";
 	gel-convert the interference;
 	
 Report Brock discussing getting-out-now: 
