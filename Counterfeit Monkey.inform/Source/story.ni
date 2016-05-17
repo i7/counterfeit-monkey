@@ -18634,11 +18634,10 @@ The pestos are edible. The description of the pestos is "Glass jars contain thre
 The initial appearance of a pet is usually "Our [one of]new[or]recently-acquired[or]familiar[stopping] pet frolicks nearby." The description of a pet is "Unspecific as to species, but it has soft and gleaming fur; small, well-formed paws with tiny rose-col[our]ed nails; a twitching, sensitive nose; a tail; a clever look." The heft of the pet is 2.
 	The scent-description of the pet is "warm fur".
 
-[TODO: why isnt this working?]
-[Report a pet exiting:
+Report a pet exiting:
 	if the container exited from is the T-inserter, say "With a nervous glance at the injectors and nozzles, the pet clambers awkwardly out of the basket of the T-inserter and lowers itself to the ground.";
 	otherwise say "The pet scrambles out of [the container exited from].";
-	stop the action.]
+	stop the action.
 	
 The description of the petal is "Lush and fragrant and pale-cream with gold streaks." The scent-description of the petal is "rosewater". The heft of the petal is 1.
 
@@ -20727,9 +20726,8 @@ Definition: a person is contained:
 		yes;
 	no.
 
-[TODO: Why doesn't this work?]
-[Check an animal exiting when the person asked is in the kayak:
-	say "[one of][The person asked] [make] as though to climb out of the kayak, then [see] that everything outside is made of water, and [withdraw] sulkily.[or][The person asked] waits in the bottom of the kayak.[stopping]" instead.
+Check an animal exiting when the person asked is in the kayak:
+	say "[one of][The person asked] [make] as though to climb out of the kayak, then [see] that everything outside is made of water, and withdraw[s] sulkily.[or][The person asked] waits in the bottom of the kayak.[stopping]" instead.
 
 Check an animal exiting when the person asked is in the synthesizer:
 	if the person asked is a bird:
@@ -20741,7 +20739,7 @@ Report an animal exiting when the container exited from is the t-inserter:
 	say "[The person asked] clamber[s] out of [the t-inserter]." instead.
 	
 Report a bird exiting when the container exited from is the t-inserter:
-	say "[The person asked] hop[s] and flutter[s] out of [the t-inserter]." instead.]
+	say "[The person asked] hop[s] and flutter[s] out of [the t-inserter]." instead.
 	
 Test kayakcat with "autoupgrade / wave s-remover at shackle / wave l-remover at bollard / wave d-remover at board / wave b-remover at boar / get oar / get in kayak / launch kayak / z" holding the tomcat in the Abandoned Shore.
 	
