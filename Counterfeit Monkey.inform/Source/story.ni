@@ -2407,8 +2407,7 @@ A thing can be noisy or quiet. A thing is usually quiet.
 Every turn when the player is not in a car:
 	if listening:
 		make no decision;
-	follow the marking rule; [TODO: This does the same as the swift rule in Room Description Control does, right? I don't understand why the compiler lets that extention get away with "call the swift rule on everything in scope." but disallows it here.]
-	[call the swift rule on everything in scope;]
+	call the swift rule on everything in scope;
 	let noisemaker be a random noisy marked for listing thing;
 	now everything is not marked for listing;
 	if the noisemaker is something and the noisemaker is not in a closed container:
@@ -2454,7 +2453,7 @@ Section 2 - Finding
 	
 Understand "find [any seen thing]" as finding. Understand the command "seek" or "approach" as "find". Understand "look for [any seen thing]" as finding. Understand "go to [any seen thing]" as finding. 
 
-Finding is an action applying to one visible thing. 
+Finding is an action applying to one visible thing.
 
 Check finding something that is in the repository:
 	say "Who knows where [the noun] went?" instead.
@@ -7953,7 +7952,7 @@ Some round black metal tables are supporters in the outdoor cafe.
 	The description is "The wobbly, tipsy kind of table that jog at a touch and spill your coffee everywhere.". 
 	Understand "table" as the round black metal tables.
 	
-Nexami Engeo is an alert man. Understand "Nex" as Nexami Engeo. 
+Nexami Engeo is an alert man. Understand "Nex" as Nexami Engeo.
 	The description is "A big man, both tall and stout. He hasn't reached overweight yet, but it looks like a matter of time. He's wearing [a list of things which are worn by Nexami]." 
 	The introduction is "He's a musician, the front man of engeo. Your gang helped him out with some customs issues because of his unusual name."
 	He wears a rocker jacket and jeans. 
@@ -22653,7 +22652,7 @@ Carry out the ticket-taker discussing a civic quip:
 taking-a-survey is an NPC-directed quip.
 	The reply is "'What is this about? Are you taking a survey or something?'"
 	
-Instead of saying yes when  claim to be taking a survey is available:
+Instead of saying yes when claim to be taking a survey is available:
 	try discussing claim to be taking a survey.
 Instead of saying no when we seem curious:
 	try discussing we seem curious.
