@@ -6155,8 +6155,7 @@ Rule for listing exits when the location is Heritage Corner:
 	else:
 		say "The park continues to the north and west; to the east is [if the hostel is unvisited]a backpackers['] [hostel-exterior] where you've stayed recently and where you stowed the rest of your important possessions[otherwise]the [hostel-exterior][end if]."
 		
-[TODO:][fix - bricks should only be undestood as hotel exterior when examining]
-The hostel-exterior is a facade in Heritage Corner. It is scenery. The printed name is "hostel". The description is "It's a narrow brick townhouse with only one or two rooms on each floor, and silly ornamental brickwork up near the skyline. The label over the entrance merely announces a generic hostel, without the dignity of a name." Understand "hostel" or "sign" or "townhouse" or "silly brickwork/bricks" or "ornamental brickwork/bricks" or "silly ornamental brickwork/bricks" or "brickwork" or "narrow" or "brick" or "backpacker's" or "backpackers'" or "backpacker" as the hostel-exterior. Understand "bricks" as the hostel-exterior when the hostel-exterior is visible. The hostel-exterior fronts east.
+The hostel-exterior is a facade in Heritage Corner. It is scenery. The printed name is "hostel". The description is "It's a narrow brick townhouse with only one or two rooms on each floor, and silly ornamental brickwork up near the skyline. The label over the entrance merely announces a generic hostel, without the dignity of a name." Understand "hostel" or "sign" or "townhouse" or "silly brickwork/bricks" or "ornamental brickwork/bricks" or "silly ornamental brickwork/bricks" or "brickwork" or "narrow" or "brick" or "backpacker's" or "backpackers'" or "backpacker" as the hostel-exterior. Understand "bricks" as the hostel-exterior when the player's command includes "examine/x/l/look". [Does thiswork?] The hostel-exterior fronts east.
 
 The octagonal bricks are scenery in Heritage Corner. The description is "Alternating with square bricks of a slightly darker shade of maroon. Nothing about this seems remotely significant." Understand "ground" or "paving" or "floor" as the octagonal bricks.
 
@@ -18624,7 +18623,7 @@ The pestos are edible. The description of the pestos is "Glass jars contain thre
 The initial appearance of a pet is usually "Our [one of]new[or]recently-acquired[or]familiar[stopping] pet frolicks nearby." The description of a pet is "Unspecific as to species, but it has soft and gleaming fur; small, well-formed paws with tiny rose-col[our]ed nails; a twitching, sensitive nose; a tail; a clever look." The heft of the pet is 2.
 	The scent-description of the pet is "warm fur".
 
-Report a pet exiting:
+Report the pet exiting:
 	if the container exited from is the T-inserter, say "With a nervous glance at the injectors and nozzles, the pet clambers awkwardly out of the basket of the T-inserter and lowers itself to the ground.";
 	otherwise say "The pet scrambles out of [the container exited from].";
 	stop the action.
@@ -20715,7 +20714,7 @@ Definition: a person is contained:
 	if it is on a supporter which is not in the repository:
 		yes;
 	no.
-
+[
 Check an animal exiting when the person asked is in the kayak:
 	say "[one of][The person asked] [make] as though to climb out of the kayak, then [see] that everything outside is made of water, and withdraw[s] sulkily.[or][The person asked] waits in the bottom of the kayak.[stopping]" instead.
 
@@ -20729,7 +20728,7 @@ Report an animal exiting when the container exited from is the t-inserter:
 	say "[The person asked] clamber[s] out of [the t-inserter]." instead.
 	
 Report a bird exiting when the container exited from is the t-inserter:
-	say "[The person asked] hop[s] and flutter[s] out of [the t-inserter]." instead.
+	say "[The person asked] hop[s] and flutter[s] out of [the t-inserter]." instead.]
 	
 Test kayakcat with "autoupgrade / wave s-remover at shackle / wave l-remover at bollard / wave d-remover at board / wave b-remover at boar / get oar / get in kayak / launch kayak / z" holding the tomcat in the Abandoned Shore.
 	

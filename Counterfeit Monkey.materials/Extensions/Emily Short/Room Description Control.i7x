@@ -109,8 +109,8 @@ After printing the plural name of something (called target):
 To decide whether (X - a thing) nominally matches (Y - a thing):
 	(- ({X}.list_together == {Y}.list_together) -)
 
-[6M62 wants it to be][To call (RL - a rule) on everything in scope:]
-To call (RL - an objects based rule) on everything in scope:
+[Used to be: "To call (RL - an objects based rule) on everything in scope:",  but 6M62 will only have it this way]
+To call (RL - a rule) on everything in scope:
 (-
    processing_rule = {RL};
    LoopOverScope(Process_single_item);

@@ -102,8 +102,7 @@ Check an actor looking toward a room (this is the can't see through closed door 
 			if the player is not the person asked, say "[The person asked] [can't] see that way because [the occluding door] [are] closed." (B) instead;
 			stop the action; 
 
-
-Use sequential action translates as (- Constant SEQUENTIAL_ACTION; -). 
+[Use sequential action translates as (- Constant SEQUENTIAL_ACTION; -).]
 
 Carry out looking toward (this is the describing a room from afar rule):
 	carry out the distantly describing activity with the noun.
