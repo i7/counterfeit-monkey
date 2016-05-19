@@ -1951,8 +1951,17 @@ To say (item - a thing) description:
 Carry out examining something:
 	now the noun is examined.
 
-[TODO: Add back swearing and singing?]
+[Modified tutorial messages to remove paragraph break before prompt, so that they behave the same as the custom ones.]
+The  teach looking rule response (A) is "To get a look around, type LOOK and press return. If you do not want help getting started, type TUTORIAL OFF.[run paragraph on]".
+The  teach examining rule response (A) is "You can find out more if you LOOK AT [N in upper case] (or shorten it to L [M in upper case]).[run paragraph on]".
+The teach more examining rule response (A) is ”There are other things around here that you can look at too, if you like. You can check out other things in your surroundings, or LOOK AT ME to see yourself.[run paragraph on]".
+The teach compass directions rule response (A) is "[one of]Feel free to look around some more. When you're ready to move on from here, try[or]No rush, but just a reminder that when you want to move to a new location, you can go[stopping] [N in upper case].[run paragraph on]".
+The teach dropping rule response (A) is "If you want to get rid of something that you're holding you can always drop it, like this: DROP [N in upper case].[run paragraph on]".
+the teach taking rule response (A) is "You can pick things up when you see them, like this: TAKE [N in upper case].[run paragraph on]".
+The teach inventory rule response (A) is "There's more we can do than just looking around. To check what you're holding at the moment, try typing INVENTORY, or I for short.[run paragraph on]".
+The teach meta-features rule response (A) is "To save your current position, type SAVE. RESTORE allows you to bring back a game you have previously saved.[run paragraph on]".
 
+[TODO: Add back swearing and singing?]
 The standard report taking rule response (A) is "[We] [one of]take[or]get[or]pick up[or]acquire[as decreasingly likely outcomes] [the noun][if the noun is unexamined and the action is singular]. [run paragraph on][noun description][no line break][otherwise].[end if]".
 The standard report dropping rule response (A) is "[We] put down [the noun]."
 The room description heading rule response (C) is " ([if the player is in a car]jammed into the car[otherwise]in [the location][end if])".
@@ -2108,7 +2117,8 @@ The offer new prompt rule is not listed in any rulebook.
 
 Before reading a command when tutorial mode is true (this is the alternate new prompt rule):
 	if sp reparse flag is false and identification is not happening:
-		follow the instructional rules. 
+		say "[first custom style][run paragraph on]";
+		follow the instructional rules.
 		
 The stripping failed with rule is not listed in any rulebook. [There are too many actions in the game where "with" IS fruitful, so this often gives a misleading response.]
 
@@ -5421,7 +5431,6 @@ Carry out examining the mourning dress:
 An instructional rule (this is the teach about letter-remover rule):
 	if the teach about letter-remover rule is listed in the completed instruction list:
 		make no decision;
-	let N be indexed text;
 	let N be "[letter-remover]";
 	say "[first custom style]That looks interesting. Try looking at that [letter-remover][one of][or]. L [N in upper case][stopping].[roman type]";
 	now the expected action is the action of examining the mourning dress;
@@ -5434,7 +5443,6 @@ Carry out examining the letter-remover:
 An instructional rule (this is the teach setting rule): 
 	if the teach setting rule is listed in the completed instruction list:
 		make no decision;   
-	let N be indexed text;
 	let N be "[the letter-remover]";
 	say "[first custom style]It can be set to any letter we choose, hm? That sounds like a hint. Try SET [N in upper case] TO U.[roman type]";
 	now the expected action is the action of tuning the letter-remover to "u";
@@ -5451,7 +5459,6 @@ An instructional rule (this is the teach waving rule):
 		make no decision; 
 	if the mourning dress is not visible:
 		make no decision;
-	let N be indexed text;
 	let N be "[the letter-remover]";
 	say "[first custom style]That letter-remover is going to be very important as we try to escape here. To test it out, try WAVE U-REMOVER AT MOURNING DRESS.[roman type]";
 	now the expected action is the action of waving the letter-remover at the mourning dress;
