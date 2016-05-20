@@ -1683,7 +1683,7 @@ The default greeting rule is not listed in any rulebook.
 	 
 [The can't greet current interlocutor rule is not listed in any rulebook. The check what's being hailed rule is not listed in any rulebook.]
 
-The new check hailing rule is listed instead of the [check what's being hailed] check hailing rule in the check hailing rulebook.
+The new check hailing rule is listed instead of the check what's being hailed rule in the check hailing rulebook.
 
 
 Check hailing (this is the new check hailing rule):

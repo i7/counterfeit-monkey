@@ -1158,7 +1158,7 @@ Understand "hello" or "hi" or "say hello/hi" as hailing.
 Carry out someone trying hailing:
   try saying hello to the person asked.
 
-Check hailing (this is the check hailing rule):
+Check hailing (this is the check what's being hailed rule):
 	if the current interlocutor is a visible person:
 		say "You are already talking to [the current interlocutor]." instead;
 	now the noun is a random visible person who is not the player;
