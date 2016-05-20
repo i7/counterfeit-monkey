@@ -2096,18 +2096,24 @@ Section 1 - Smarter Parser
 [These libraries by Aaron Reed are designed to make life a little easier on the novice player, and sometimes even on the advanced player, by looking for common errors when there's a parser failure, and by giving the player a greater range of control when disambiguating items with related names.]
 
 Include Smarter Parser by Aaron Reed. 
-
 Include Numbered Disambiguation Choices by Aaron Reed.
 
 [Use empty Smarter Parser rulebook.]
 
-To announce the reparsed command:
-	say "[first custom style]([unless saved Smarter Parser error is little-used do nothing rule][saved Smarter Parser error] Retrying that as '[rejected command]'.)[roman type][command clarification break]".
+To display the active corrections introduction:
+	say "[as the parser]Retrying that as [run paragraph on]".
 
-To explain the reborn command:
-	unless saved Smarter Parser error is little-used do nothing rule:
-		say "[first custom style][saved Smarter Parser error][roman type][line break]".
+To display the reborn command:
+		say "[as the parser][bracket]>[reborn command in upper case][close bracket][as normal]"
+
+To display the corrections instructions:
+		say "[line break][as the parser]Type UNDO if this isn't what you wanted to do, or CORRECT OFF to stop automatically correcting commands."
+
+To display the novice instructions:
+		say "[line break][as the parser]To stop these messages entirely, type NOVICE OFF.[as normal]"
 	
+[The failed communication attempts rule is not listed in any rulebook.]
+[The signs of confusion rule is not listed in any rulebook. ][Long explanation message that overlaps with our tutorial]
 The unnecessary movement rule is not listed in any rulebook.
 The too many words rule is not listed in any rulebook. [conversation commands can be quite long.]
  
@@ -2119,8 +2125,18 @@ Before reading a command when tutorial mode is true (this is the alternate new p
 	if sp reparse flag is false and identification is not happening:
 		say "[first custom style][run paragraph on]";
 		follow the instructional rules.
-		
+
 The stripping failed with rule is not listed in any rulebook. [There are too many actions in the game where "with" IS fruitful, so this often gives a misleading response.]
+
+[Make the replaced blank line command look like the other reborn commands]
+The new Smarter Parser advanced replace blank line rule is listed instead of the Smarter Parser advanced replace blank line rule in the after reading a command rulebook.
+
+After reading a command (this is the new Smarter Parser advanced replace blank line rule):
+	let T be text;
+	now T is the player's command;
+	if T is "":
+		say "[as the parser][bracket]>[blank line replacement in upper case][close bracket][as normal]";
+		change the text of the player's command to the blank line replacement.
 
 [A smarter parser rule when sp_normal (this is the new stripping failed with rule):
 	unless propping something with or attacking something with or blindfolding something with or selecting something with or shooting something with:
@@ -2130,11 +2146,16 @@ The stripping failed with rule is not listed in any rulebook. [There are too man
 
 When play begins:
 	choose row with rule name of asking unparseable questions rule in the Table of Smarter Parser Messages;
-	now the message entry is "If you're trying to converse with other characters, the suggestions in the text provide possible phrasings; so if you read 'I might ask about lentils.', you might phrase your command ASK ABOUT LENTILS. Introducing other words or variant phrasings that weren't part of the suggestion may confuse the game. 
+	now the message entry is "[as the parser]If you're trying to converse with other characters, the suggestions in the text provide possible phrasings; so if you read 'I might ask about lentils.', you might phrase your command ASK ABOUT LENTILS. Introducing other words or variant phrasings that weren't part of the suggestion may confuse the game.
 
-Alternatively, if you just want to take an action in the game world, try giving a direct command, such as EXAMINE THE ASP or WAVE THE P-REMOVER AT THE PHONEY."
-	 
-	
+Alternatively, if you just want to take an action in the game world, try giving a direct command, such as EXAMINE THE ASP or WAVE THE P-REMOVER AT THE PHONEY.[as normal]"
+
+Section - Parser Speak (in place of Section - Parser Speak (for use without Keyword Interface by Aaron Reed) in Smarter Parser by Aaron  Reed)
+
+To say as the parser: say "[first custom style][run paragraph on]".
+To say as normal: say "[roman type][command clarification break]".
+To parser say (txt - a text): say "[as the parser][txt][as normal][line break]".
+
 Section 2 - Additional Parsing Lines for USE
 
 [Wherever possible, we want USE THING to fall through to a plausible default behavior, which we do with a bunch of additional grammar lines:]
