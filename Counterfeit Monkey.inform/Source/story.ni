@@ -1269,8 +1269,8 @@ Instead of taking inventory when the current inventory listing style is utilitar
 		if paragraph break needed is true: [if we have already listed things]
 			say "[paragraph break][We] [are] also carrying ";
 		else:
-			[if we are only carrying one non-essential thing and wearing it, just say that and skip the rest]
-			if carried count is 1 and the player wears something:
+			[if we are only carrying non-essential things and wearing them, just say that and skip the rest]
+			if everything enclosed by the player is worn:
 				 say "[We] [are] wearing [a list of things worn by the player]." instead;
 			else:
 				say "[We] [are] carrying ";
