@@ -2104,16 +2104,16 @@ To display the active corrections introduction:
 	say "[as the parser]Retrying that as [run paragraph on]".
 
 To display the reborn command:
-		say "[as the parser][bracket]>[reborn command in upper case][close bracket][as normal]"
+		say "[as the parser][bracket]>[reborn command in upper case][close bracket][as normal][line break]"
 
 To display the corrections instructions:
-		say "[line break][as the parser]Type UNDO if this isn't what you wanted to do, or CORRECT OFF to stop automatically correcting commands."
+		say "[line break][as the parser]Type UNDO if this isn't what you wanted to do, or CORRECT OFF to stop automatically correcting commands.[as normal]".
 
 To display the novice instructions:
-		say "[line break][as the parser]To stop these messages entirely, type NOVICE OFF.[as normal]"
+		say "[line break][as the parser]To stop these messages entirely, type NOVICE OFF.[as normal]".
 	
-[The failed communication attempts rule is not listed in any rulebook.]
-[The signs of confusion rule is not listed in any rulebook. ][Long explanation message that overlaps with our tutorial]
+The failed communication attempts rule is not listed in any rulebook.
+The signs of confusion rule is not listed in any rulebook. [Long explanation message that overlaps with our tutorial and gives a run-time error.]
 The unnecessary movement rule is not listed in any rulebook.
 The too many words rule is not listed in any rulebook. [conversation commands can be quite long.]
  
@@ -2135,7 +2135,7 @@ After reading a command (this is the new Smarter Parser advanced replace blank l
 	let T be text;
 	now T is the player's command;
 	if T is "":
-		say "[as the parser][bracket]>[blank line replacement in upper case][close bracket][as normal]";
+		say "[as the parser][bracket]>[blank line replacement in upper case][close bracket][as normal][command clarification break]";
 		change the text of the player's command to the blank line replacement.
 
 [A smarter parser rule when sp_normal (this is the new stripping failed with rule):
@@ -2153,8 +2153,8 @@ Alternatively, if you just want to take an action in the game world, try giving 
 Section - Parser Speak (in place of Section - Parser Speak (for use without Keyword Interface by Aaron Reed) in Smarter Parser by Aaron  Reed)
 
 To say as the parser: say "[first custom style][run paragraph on]".
-To say as normal: say "[roman type][command clarification break]".
-To parser say (txt - a text): say "[as the parser][txt][as normal][line break]".
+To say as normal: say "[roman type]".
+To parser say (txt - a text): say "[as the parser][txt][as normal][command clarification break]".
 
 Section 2 - Additional Parsing Lines for USE
 
