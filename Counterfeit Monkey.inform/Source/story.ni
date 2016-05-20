@@ -1483,7 +1483,9 @@ The in-game maps use a variety of readily available fonts. Some of the more esot
 My sister created the Atlantida poster.
 	
 There are three cameo appearances by IF community members (or their alter egos). These people bid for the opportunity to appear, as part of a fundraiser for a heart surgery patient who was without medical insurance. They are Mark Musante, John Ferguson, and Kate McKee, and I wish to thank them again for their generosity."
-	"Contacting the author"	--	"Emily Short can be reached at emshort@mindspring.com. Her website, at http://emshort.wordpress.com, contains more information about this and other interactive fiction."  
+	"Contacting the author"	--	"Emily Short can be reached at emshortif@gmail.com. Her website, at http://emshort.wordpress.com, contains more information about this and other interactive fiction.
+
+Please report bugs at https://github.com/i7/counterfeit-monkey/issues" 
 	
 
 Section 4 - Resurrection
