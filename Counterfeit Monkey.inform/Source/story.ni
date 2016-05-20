@@ -26608,6 +26608,8 @@ Section 1 - Ordinary Tests
 
 [First, a set of tests that runs us through the entire game and also verifies that the remove-all-letters achievement can be accomplished.]
 
+[Note that these tests will require you to press the space key a few times]
+
 Test me with "test act1 / test act2 / test act3 / test act4 / test act5".
 Test me2 with "test act1 / test act2 / test act3 / test act4 / test act5A".
 
@@ -26623,6 +26625,9 @@ Test act5 with "test dadchat / test meetA / test escape1 / test escape3".
 [Version where you betray Brock, save Dad, and leave via the bollard and squid]
 Test act5A with "test dadchat2 / test meetA / test escape1 / test escape2".
 
+[ Test that undoing game ending actions works: run undotest1, then "y", then undotest2 ]
+Test undotest1 with "test act1 / test act2 / test act3 / test rectification / test z-getting / test synthesis / test pinata / test breakin / wave s-remover at plans / wave l-remover at plan / get pan / go to abandoned park / get twig / wave t-remover at twig / go to convenience / put paste on wig / wear wig / go to bus station / x schedule / x shed / remove v from dove / put gel on doe / go to rotunda / s".
+Test undotest2 with "put all but pass and invitation in backpack / close backpack / s / show pass to secretary / e / z / z / e / e / d / n / approach camera / w / open pack / test easyinsertion / test act5".
 
 Test leafletgetting with "test act1 / test chard / test car / test Slango-missed / test origin-getting /  test contraband-fixing / test Slango-refound / get out / put paste on car / get out / wave o-remover at olive branch / get rifle / shoot signet / shoot tree / shoot affixer / get leaflet / shoot affixer / shoot signet / g".
 Test tolena with "test act1 / test chard / test car / test Slango-missed / test origin-getting / test crate-collection".
