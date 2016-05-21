@@ -24330,7 +24330,7 @@ A wager-assessment rule (this is the liquid wager rule):
 	if the proposed solution is fluid: 
 		rule succeeds;
 	rule fails.
-	
+
 A wager-assessment rule (this is the tiny wager rule):
 	if the proposed solution is nothing:
 		say "Error: wager-assessment tested with nothing!";
@@ -24338,19 +24338,19 @@ A wager-assessment rule (this is the tiny wager rule):
 	if the heft of the proposed solution is 1: 
 		rule succeeds;
 	rule fails.
-	
+
 A wager-assessment rule (this is the import wager rule):
 	if the proposed solution is edible and the proposed solution is not a vegetable: 
 		rule succeeds;
 	rule fails.
-	
+
 At the time when game concludes:
 	if the Origin Paste is won:
 		make no decision;
 	otherwise:
 		now the wager is the player;
 		try the barman discussing time up;
-		
+
 Time up is an NPC-directed quip.
 	The reply is "'Your time is up, I'm afraid,' says the barman. 'No luck this time, eh? Pity.' He divides your cash ante in half: half for the house, half to the defender who bet against you."
 	
@@ -24368,7 +24368,7 @@ Time up is an NPC-directed quip.
 The carrying requirements rule does nothing when the action name part of the current action is the showing it to action.
 
 [When showing something to someone (this is the showing something to someone rule): 
-		ignore the carrying requirements rule.]
+	ignore the carrying requirements rule.]
 	
 The can't show what you haven't got rule is not listed in any rulebook.
 The block showing rule is not listed in any rulebook.
@@ -27790,7 +27790,7 @@ Carry out ultratesting a topic:
 
 To call test:
 (-
-wn = 2;
-special_word = NextWordStopped();
- TestScriptSub();
+	wn = 2;
+	special_word = NextWordStopped();
+	TestScriptSub();
 -)
