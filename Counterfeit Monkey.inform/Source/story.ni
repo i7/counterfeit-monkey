@@ -24222,7 +24222,7 @@ To say game-coaching:
 
 The wager is an object that varies. The wager is yourself.
 The proposed solution is an object that varies.
-The wager-name is some indexed text that varies.
+The wager-name is some text that varies.
 The wager-judging rule is a rule that varies. The wager-judging rule is the liquid wager rule.
 The wager-index is a number that varies.
 
@@ -24240,21 +24240,22 @@ Rule for supplying a missing second noun while showing something to:
 	otherwise:
 		say "You must show [the noun] to someone specific." 
 
-Instead of showing something to the barman when play the game is the current quip and the wager is yourself:
-	if the noun is yourself:
+Instead of showing something (called the item) to the barman when play the game is the current quip and the wager is yourself:
+	if the item is yourself:
 		say "'No no no,' he says. 'No suicides or self-inanimations in my bar today, thanks.'" instead;
-	now the wager-name is "[The noun]";
-	now the wager is the noun;
-	make wager-choice;
+	now the wager-name is "[The item]";
+	now the wager is the item;
+	now the proposed solution is the item;
+	make wager choice;
 	while something (called the wager-parent) which is not the wager proffers the wager:
 		now the wager is the wager-parent;
 	try the barman discussing wager-accepted;
 	game concludes in five turns from now.
 
-Instead of showing something to the barman when the wager is not the player:
-	if the noun is not proffered by the wager:
+Instead of showing something (called the item) to the barman when the wager is not the player:
+	if the item is not proffered by the wager:
 		say "'Sorry,' he says, 'but I know that didn't come from [the wager-name in lower case] you bet on.'" instead;
-	now the proposed solution is the noun;
+	now the proposed solution is the item;
 	follow the wager-judging rule;
 	if the rule succeeded:
 		now the Origin Paste is won;
@@ -24268,7 +24269,7 @@ Instead of showing something to the barman when the wager is not the player:
 Every turn when the location is Counterfeit Monkey and the wager is not the player:
 	repeat with item running through things which are proffered by the wager:
 		if the item is visible:
-			now the proposed solution is the noun;
+			now the proposed solution is the item;
 			follow the wager-judging rule;
 			if the rule succeeded:
 				now the Origin Paste is won;
@@ -24282,7 +24283,7 @@ wager-accepted is an NPC-directed quip.
 wager-won is an NPC-directed quip.
 	The reply is "'A winner!' says the barman, straightening up. 'What do you know? The Origin Paste is all yours, darling.'[paragraph break]This produces a squawk of surprise and irritation from the defendant, and you get the impression that this game has been agreeably fleecing tourists all day. Pity you had to come along and spoil it.";
 
-To make wager-choice:
+To make wager choice:
 	let N be the wager-index plus 1;
 	if N is greater than the number of filled rows in the Table of Wager suggestions:
 		now N is 1;
@@ -24322,6 +24323,9 @@ A wager-assessment rule (this is the liquid wager rule):
 	rule fails.
 	
 A wager-assessment rule (this is the tiny wager rule):
+	if the proposed solution is nothing:
+		say "Error: wager-assessment tested with nothing!";
+		rule fails;
 	if the heft of the proposed solution is 1: 
 		rule succeeds;
 	rule fails.
