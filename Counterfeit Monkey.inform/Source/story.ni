@@ -2716,7 +2716,9 @@ Understand "go back" as retreating. Understand "back" or "return" or "retreat" a
 
 The former direction is a direction that varies.
 
-Carry out going: now the former direction is the noun.
+Carry out going:
+	if the noun is a direction:
+		now the former direction is the noun.
 
 Retreating is an action applying to nothing. 
 
