@@ -1317,7 +1317,11 @@ Instead of taking inventory when the current inventory listing style is utilitar
 		say paragraph break.
 			
 [TODO: fix tests]
-[Test newutility with "tutorial off / i / put all in backpack / i / wave l-remover at plans / put pans in backpack / i / put all in backpack / i / close backpack / i / x backpack / open backpack / x backpack / i / wear wig / i / wear monocle / i / drop backpack / i / x me" holding the backpack and  the secret-plans and the lime and the cate and the wig].
+Table of Ultratests
+topic (a topic)	stuff (a list of objects)	setting (a room)
+"newutility"	{ backpack, secret-plans, cate, lime, wig }	--
+
+Test newutility with "tutorial off / i / put all in backpack / i / wave l-remover at plans / put pans in backpack / i / put all in backpack / i / close backpack / i / x backpack / open backpack / x backpack / i / wear wig / i / wear monocle / i / drop backpack / i / x me" [holding the backpack and the secret-plans and the lime and the cate and the wig.]
 		
 Definition: a thing is packed if it is enclosed by the backpack and it is not part of something.
 Definition: a thing is unpacked if it is not packed and it is not part of something and it is not the backpack and it is not the restoration gel.
@@ -1404,9 +1408,14 @@ Carry out selecting hard mode:
 	
 Report selecting hard mode:
 	say "[story title] is now in 'hard' mode. Tutorials are off. The world is reconfigured against you. Good luck." 
-	
+
 [TODO fix tests]
-[Test hardnames with "tutorial off / hard / y / drop all / look / look carefully / x bent twig / x broken clock / wave t-remover at twig / wave l-remover at clock / wave m-remover at tomes / wave s-remover at members / wave y-remover at army" holding the twig and the clock and the tomes and the members and the army.]
+Table of Ultratests (continued)
+topic	stuff
+"hardnames"	{ twig, clock, tomes, army }
+
+Test hardnames with "tutorial off / hard / y / drop all / look / look carefully / x bent twig / x broken clock / wave t-remover at twig / wave l-remover at clock / wave m-remover at tomes / wave s-remover at members / wave y-remover at army" [holding the twig and the clock and the tomes and the members and the army.]
+
 Test hard2 with "tutorial off / hard / y / autoupgrade / wave p-remover at patron / wave m-remover at patron / z / wave m-remover at patron" in the drinks club.
 	
 Understand "model" as the members when hardness is true.
@@ -1739,7 +1748,11 @@ Sanity-check waving to something:
 Test secondaries with "tutorial off / z / say hello / g / ask about paddle / say hello to mark / ask mark about mark / ask mark about the paddle / test customer" in the Drinks Club.
 
 [TODO fix tests]
-[Test customer with "z / ask about maps / say hello to customer / ask customer about maps / say hello to papas / ask papas about maps" holding the map-customer and the papas in Arbot.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"customer"	{ map-customer, papas }	Arbot
+
+Test customer with "z / ask about maps / say hello to customer / ask customer about maps / say hello to papas / ask papas about maps" [holding the map-customer and the papas in Arbot.]
 
 Test all-greetings with "all-greet".
 
@@ -3283,7 +3296,11 @@ A dangerous destruction rule for something which wedges something (called item):
 	now the item is not wedged by anything.
 	
 [TODO fix tests]
-[Test propping with "open tub / d / u / open door / prop door with twig / prop door with wig / prop door with plans / prop door with fish / look / prop door with stick / d / u / wave t-remover at stick / gel sick / prop door with stick / d / wave t-remover at stick" holding the tub and the stick and the twig and the wig and the secret-plans in the tin hut.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"propping"	{ tub, stick, twig, secret-plans }	tin hut
+
+Test propping with "open tub / d / u / open door / prop door with twig / prop door with wig / prop door with plans / prop door with fish / look / prop door with stick / d / u / wave t-remover at stick / gel sick / prop door with stick / d / wave t-remover at stick" [holding the tub and the stick and the twig and the wig and the secret-plans in the tin hut.]
 	
 Section 3 - Approaching doors (like the security door)
 
@@ -7544,7 +7561,11 @@ Instead of climbing underfoot-path:
 	try going south.
 	
 [TODO fix tests]
-[Test shrine with "tutorial off / autoupgrade / wave z-remover at kudzu / look behind bushes / put god in shrine / look / get god / wave a-remover at pita / wave t-remover at pit / put pi in shrine / look / get pi / put bills in shrine / look / get bills / put as in shrine / look / get as / put cross in shrine / look / get cross / put army in shrine / look / get army / put members in shrine / look / get members / wave s-remover at members / put member in shrine / look /  get member / wave g-remover at sign / put sin in shrine / look / get sin / put guidebook in shrine / look / get guidebook" holding the god and the pita and the roll of bills and the as and the cross and the army and the members and the yellow sign and the Guidebook in the Winding Footpath.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"shrine"	{ god, pita, roll of bills, as, cross, army, members, yellow sign, Guidebook }	Winding Footpath
+
+Test shrine with "tutorial off / autoupgrade / wave z-remover at kudzu / look behind bushes / put god in shrine / look / get god / wave a-remover at pita / wave t-remover at pit / put pi in shrine / look / get pi / put bills in shrine / look / get bills / put as in shrine / look / get as / put cross in shrine / look / get cross / put army in shrine / look / get army / put members in shrine / look / get members / wave s-remover at members / put member in shrine / look /  get member / wave g-remover at sign / put sin in shrine / look / get sin / put guidebook in shrine / look / get guidebook" [holding the god and the pita and the roll of bills and the as and the cross and the army and the members and the yellow sign and the Guidebook in the Winding Footpath.]
 	
 Section 6 - The Beach
 
@@ -7675,8 +7696,12 @@ Rule for listing exits when the location is Private Beach:
 	say "This little bit of sand ends on either side in steep rockfalls; there's no way to work along the coast in either direction. The only way to go is back up the footpath to the south."
 	
 [TODO fix tests]
+Table of Ultratests (continued)
+topic	stuff	setting
+"funnel1"	{ funnel, apple}	Park Center
+
 Test funnel with "tutorial off / look / x funnel / dig in sand / look / x funnel / get funnel / clean funnel / look in funnel / wear funnel" in Private Beach.
-[Test funnel1 with "drop funnel / take funnel / wash funnel / fill funnel with water / wave p-remover at apple / fill funnel with ale / put funnel in water / put funnel in fountain" holding the funnel and the apple in Park Center.]
+Test funnel1 with "drop funnel / take funnel / wash funnel / fill funnel with water / wave p-remover at apple / fill funnel with ale / put funnel in water / put funnel in fountain" [holding the funnel and the apple in Park Center].
 Test funnel2 with "drop funnel / take funnel /wash funnel / put funnel in water / put funnel in sink" holding the funnel in My Apartment.
 	
 Instead of going up when the location is Private Beach:
@@ -8161,7 +8186,11 @@ Report facing in Crawlspace:
 The crate is a container in the Crawlspace. The initial appearance is "[if the location is the Crawlspace]The only significant thing down here is a [crate][otherwise]A [crate] is here, looking desperately out of place[end if]." The crate is openable and closed and fixed in place. The heft of the crate is 4. 
 
 [TODO: fix tests]
-[Test crate-bug with "drop crate / put tub in crate / wave c-remover at crate / autoupgrade / wave c-remover at crate / open tub / gel rate / put plans in crate / wave c-remover at crate / n" holding the tub and the crate and the plans.]
+Table of Ultratests (continued)
+topic	stuff
+"crate-bug"	{ tub, crate, plans }
+
+Test crate-bug with "drop crate / put tub in crate / wave c-remover at crate / autoupgrade / wave c-remover at crate / open tub / gel rate / put plans in crate / wave c-remover at crate / n" [holding the tub and the crate and the plans.]
 
 Report involuntarily-dropping the crate:
 	say "[We] [are] forced to set the bulky crate down on the ground." instead.
@@ -11296,7 +11325,11 @@ It's a giddy feeling. No wonder the Bureau confiscated this thing and wouldn't l
 Test BBS with "tutorial off / look / x cutout / put head through cutout / put seer through cutout / turn on seer / turn off seer / cad, put your head through the cutout / kiss cad / cad, put your head through the cutout" holding the cad in Bureau Basement South.
 
 [TODO fix tests]
-[Test automaton with "tutorial off / open tub / x automaton / put automaton in inserter / get it / gel it / put it in inserter" holding the tub and the automaton in the Sensitive Equipment Testing Room.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"automaton"	{ tub, automaton }	Sensitive Equipment Testing Room
+
+Test automaton with "tutorial off / open tub / x automaton / put automaton in inserter / get it / gel it / put it in inserter" [holding the tub and the automaton in the Sensitive Equipment Testing Room.]
 
 
 Section 2 - Basement Middle
@@ -11495,9 +11528,15 @@ Instead of looking at the objects-on-stands through the monocle:
 		say "There is only a shapeless shadow: the memory of something this object used to be, but now is not."
 
 [TODO fix tests]
-[Test storage1 with "placefather / tutorial off / open tub / out / gel rock / z" holding the rock and the tub and the monocle in Cold Storage.
-Test storage2 with "placefather / tutorial off / open tub / out / x objects / gel object / z" holding the rock and the tub and the monocle in Cold Storage.
-Test storage-bug with "placefather / tutorial off / open tub / out / x objects / gel object" holding the dove and the rock and the tub and the monocle in Cold Storage.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"storage1"	{ rock, tub, monocle }	Cold Storage
+"storage 2"	{ rock, tub, monocle }	Cold Storage
+"storage-bug"	{ rock, tub, monocle }	Cold Storage
+
+Test storage1 with "placefather / tutorial off / open tub / out / gel rock / z" [holding the rock and the tub and the monocle in Cold Storage].
+Test storage2 with "placefather / tutorial off / open tub / out / x objects / gel object / z" [holding the rock and the tub and the monocle in Cold Storage].
+Test storage-bug with "placefather / tutorial off / open tub / out / x objects / gel object" [holding the dove and the rock and the tub and the monocle in Cold Storage].
 
 Rule for listing exits while looking in Cold Storage:
 	do nothing instead.
@@ -11693,9 +11732,13 @@ Then there is a groaning of moving metal, and part of the ceiling lowers. [one o
 To raise the display:
 	say "There is a groaning of gears and hydraulics, and the [display-platform][if something is on the display-platform], loaded with [the list of things on the display-platform],[end if] rises back up to the exhibit level.";
 	now the display-platform is in the display case.
-	
+
 [TODO: fix test]
-[Test television with "tutorial off / x television / x tv / g / g / g / g / g / g / g / press button / watch tv / g / g / g / g / g / g / g / put armband on platform / press button / watch tv / g / g / g / g / g / g / press button / get armband / put cock on platform / press button / x tv / g / g / g / g / g / g / g / press button / get cock / put dove on platform / press button / x tv / g / g / g / g / g / g / press button / put cate on platform / get dove / press button / x tv / g / g / g / g / g / g / g / g" in the Display Reloading Room holding the armband and the cock and the cate and the dove.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"television"	{ armband, cock, cate, dove }	Display Reloading Room
+
+Test television with "tutorial off / x television / x tv / g / g / g / g / g / g / g / press button / watch tv / g / g / g / g / g / g / g / put armband on platform / press button / watch tv / g / g / g / g / g / g / press button / get armband / put cock on platform / press button / x tv / g / g / g / g / g / g / g / press button / get cock / put dove on platform / press button / x tv / g / g / g / g / g / g / press button / put cate on platform / get dove / press button / x tv / g / g / g / g / g / g / g / g" [in the Display Reloading Room holding the armband and the cock and the cate and the dove.]
 	
 [It turned out to be possible to divest yourself of the anagramming gun (and thus be unprepared to face Atlantida) by returning it upstairs on the display platform. So we now check that nothing essential is on the platform before allowing it to rise.]
 
@@ -11773,7 +11816,11 @@ Some equipment shelves are a supporter in Equipment Archive. The initial appeara
 On the shelves are an accent flipper, an umlaut punch, a Catalan punt volat needle, some broken components, and some lamb-granulates.
 
 [TODO: fix test]
-[Test flipperbug with "tutorial off / autoupgrade / open tub / gel lamb granulates / load gun with bullets / shoot flipper / shoot cap" holding the anagramming gun and the tub in the Equipment Archive.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"flipperbug"	{ anagramming gun, tub }	Equipment Archive
+
+Test flipperbug with "tutorial off / autoupgrade / open tub / gel lamb granulates / load gun with bullets / shoot flipper / shoot cap" [holding the anagramming gun and the tub in the Equipment Archive.]
 
 The description of the lamb-granulates is "They're tiny brown beads used to make lamb-stock gravy. Perhaps they're left-over military rations of some kind." The printed name of the lamb-granulates is "lamb granulates". Understand "lamb granulates" or "gravy" or "lamb" or "lamb granulates" as the lamb-granulates.
 
@@ -13612,11 +13659,18 @@ A dangerous construction rule for the horses:
 	now the horses are part of the marble fountain.
   	
 [TODO: fix test]
-[Test mis1 with "load gun / autoupgrade / shoot lap" holding the anagramming gun and the letter-remover and the ball and the lap and the pea and the bullets.
-Test mis2 with "load gun / autoupgrade / shoot pea" holding the anagramming gun and the letter-remover and the ball and the lap and the pea and the bullets.
-Test mis3 with "load gun / autoupgrade / wave b-remover at ball / shoot lap" holding the anagramming gun and the letter-remover and the ball and the lap and the pea and the bullets.
+Table of Ultratests (continued)
+topic	stuff	setting
+"mis1"	{ anagramming gun, letter-remover, ball, lap, pea, bullets}	--
+"mis2"	{ anagramming gun, letter-remover, ball, lap, pea, bullets}	--
+"mis3"	{ anagramming gun, letter-remover, ball, lap, pea, bullets}	--
+"mis4"	{ letter-remover, army }	Dormitory
 
-Test mis4 with "z / wave y-remover at army" in the Dormitory holding the letter-remover and the army.]
+Test mis1 with "load gun / autoupgrade / shoot lap" [holding the anagramming gun and the letter-remover and the ball and the lap and the pea and the bullets].
+Test mis2 with "load gun / autoupgrade / shoot pea" [holding the anagramming gun and the letter-remover and the ball and the lap and the pea and the bullets].
+Test mis3 with "load gun / autoupgrade / wave b-remover at ball / shoot lap" [holding the anagramming gun and the letter-remover and the ball and the lap and the pea and the bullets].
+
+Test mis4 with "z / wave y-remover at army" [in the Dormitory holding the letter-remover and the army.]
 
 Book 2 - Hashing
 
@@ -14196,7 +14250,11 @@ Sanity-check opening or closing the plexiglas when the plexiglas is not openable
 	say "Thanks to our earlier efforts, the plexiglas is now open permanently." instead.
 
 [TODO: fix test]
-[Test plexiglas with "tutorial off / cut plexiglas / cut plexiglas with jigsaw / g / cut plexiglas with sword / drop sword / cut plexiglas / close plexiglas" in the Seminar Room holding the jigsaw and the sword.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"plexiglas"	{ jigsaw, sword }	Seminar Room
+
+Test plexiglas with "tutorial off / cut plexiglas / cut plexiglas with jigsaw / g / cut plexiglas with sword / drop sword / cut plexiglas / close plexiglas" [in the Seminar Room holding the jigsaw and the sword.]
 
 Sanity-check cutting the plexiglas with something:
 	if the plexiglas is not lockable:
@@ -14482,7 +14540,11 @@ This is the spinner-turning rule:
 			say "The mirror revolves for a moment, [one of]without effect[or]without changing [the list of things on the spinner][at random], though the word '[substitute text]' appears in startling green on the mirror's surface. ".
 		
 [TODO: fix test]
-[Test yambug with "tutorial off / wear monocle / buy yam / n / w / put yam on pedestal / z / x yam" holding the roll of bills and the monocle in Hesychius Street.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"yambug"	{ roll of bills, monocle }	Hesychius Street
+
+Test yambug with "tutorial off / wear monocle / buy yam / n / w / put yam on pedestal / z / x yam" [holding the roll of bills and the monocle in Hesychius Street.]
 	
 Rule for disclosing exterior of something (called special-target) which is on the spinner:
 	say "[The special-target] [are] slowly revolving on [a spinner][if a mentionable thing is on the spinner], together with [a list of mentionable things which are on the spinner][end if]. [run paragraph on]"; 
@@ -14742,8 +14804,10 @@ Sanity-check opening the restoration gel:
 Instead of tasting or eating the restoration gel:
 	say "While it may look like toothpaste and smell like toothpaste, it actually is not toothpaste."
 	
-[Test gel-behavior with "open tub / open backpack / put gel in backpack" holding the tub and the backpack.]
+Test gel-behavior with "open tub / open backpack / put gel in backpack" holding the tub and the backpack.
 	
+The carrying requirements rule does nothing when tasting or eating the restoration gel.
+
 [TODO:][fix this]
 [Procedural rule when tasting or eating the restoration gel:
 	ignore the carrying requirements rule.]
@@ -14889,7 +14953,11 @@ No, let me rephrase. [We] clinically and distantly apply some of the restoration
 	gel-convert the second noun.
 	 
 [TODO: fix test]
-[Test gel-bug with "tutorial off / show arm to girl / use gel on lock / put gel on lock / gel lock / apply gel to lock / use tube on lock / put tube on lock / apply tube to lock" holding the tube and the arm in the Dormitory.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"gel-bug"	{ tube, arm}	Dormitory
+
+Test gel-bug with "tutorial off / show arm to girl / use gel on lock / put gel on lock / gel lock / apply gel to lock / use tube on lock / put tube on lock / apply tube to lock" [holding the tube and the arm in the Dormitory.]
 
 Chapter 10 - The Anagramming Gun
 
@@ -15306,8 +15374,12 @@ The power chord is an r-abstract noisy thing. The initial appearance is "A power
 Instead of listening to the power chord:
 	say "The repeated power chord makes it sound as though some heavy equipment is being used in here even when it's not."
 	
-[TODO: fix test]
-[Test chord with "tutorial off / autoupgrade / put asparagus in punch / wave h-remover at chord / x cord / x plug / wear goggles / x plug" in Equipment Archive holding the asparagus and goggles.]
+[TODO: fix tests]
+Table of Ultratests (continued)
+topic	stuff	setting
+"chord"	{ asparagus, goggles }	Equipment Archive
+
+Test chord with "tutorial off / autoupgrade / put asparagus in punch / wave h-remover at chord / x cord / x plug / wear goggles / x plug" [in Equipment Archive holding the asparagus and goggles.]
 
 
 Chapter 14 - The Catalan punt volat Needle
@@ -15471,7 +15543,11 @@ Report switching the massive switch to the switch-setting understood:
 	say "[We] give the switch a strong twist and turn it to [the switch-setting of the massive switch]." instead.
 	
 [TODO: fix test]
-[Test programmable with "tutorial off / x platform / x switch / turn switch / x switch / set switch to swap homonym / switch switch to swap homonym / turn switch to swap homonym / put the crate and the ring on the platform / turn on lever / shoot cratering with gun" holding the crate and the anagramming gun and the ring in the Workshop.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"programmable"	{ crate, anagramming gun, ring }	Workshop
+
+Test programmable with "tutorial off / x platform / x switch / turn switch / x switch / set switch to swap homonym / switch switch to swap homonym / turn switch to swap homonym / put the crate and the ring on the platform / turn on lever / shoot cratering with gun" [holding the crate and the anagramming gun and the ring in the Workshop.]
 
 Chapter 16 - The Cryptolock aka Vowel Rotator
 
@@ -15555,9 +15631,14 @@ After inserting something into the cryptolock:
 		say "There is a churning noise from within [the cryptolock] and '[goal text]' appears in letters of hot pink smoke. Then the smoke dissipates without result.". 
 		
 [TODO: fix test]
-[Test cryptoreverse with "tutorial off / autoupgrade / put gimlet in cryptolock / put earring in cryptolock / put pastis in cryptolock / put pea in cryptolock / put ball in cryptolock / wave g-remover at sign / put sin in cryptolock / put son in cryptolock / put tub in bucket / turn on switch / x cryptolock / put tab in bucket" in the Generator Room holding the tub and ball and the pastis and the earring and the pea and the gimlet and the garish sign.
+Table of Ultratests (continued)
+topic	stuff	setting
+"cryptoreverse"	{ tub, ball, pastis, earring, pea, gimlet, garish sign }	Generator Room
+"crypto"	{ tub, ball, pastis, earring, pea, gimlet, garish sign }	Generator Room
+
+Test cryptoreverse with "tutorial off / autoupgrade / put gimlet in cryptolock / put earring in cryptolock / put pastis in cryptolock / put pea in cryptolock / put ball in cryptolock / wave g-remover at sign / put sin in cryptolock / put son in cryptolock / put tub in bucket / turn on switch / x cryptolock / put tab in bucket" [in the Generator Room holding the tub and ball and the pastis and the earring and the pea and the gimlet and the garish sign.]
 		
-Test crypto with "tutorial off / autoupgrade / x boiler / look through pane / w / turn on platform / e / put gimlet in cryptolock / put earring in cryptolock / put pastis in cryptolock / put pea in cryptolock / put ball in cryptolock / wave g-remover at sign / put sin in cryptolock / put son in cryptolock / x boiler / look through pane / w / turn on platform" in the Generator Room holding the ball and the pastis and the earring and the pea and the gimlet and the garish sign.]
+Test crypto with "tutorial off / autoupgrade / x boiler / look through pane / w / turn on platform / e / put gimlet in cryptolock / put earring in cryptolock / put pastis in cryptolock / put pea in cryptolock / put ball in cryptolock / wave g-remover at sign / put sin in cryptolock / put son in cryptolock / x boiler / look through pane / w / turn on platform" [in the Generator Room holding the ball and the pastis and the earring and the pea and the gimlet and the garish sign.]
 	
 [In easy mode, each vowel is replaced by the one subsequent, and U in turn becomes A. Y is not considered a vowel for these purposes. 
 
@@ -16404,7 +16485,11 @@ The repository contains a blest sandal.
 [sticky]
 
 [TODO: fix test]
-[Test stickybug with "tutorial off / wave y-remover at sticky / put stick in bucket / wave t-remover at stock / open tub / get sock / gel sock" holding the sticky and the tub in the Generator Room.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"stickybug"	{ sticky, tub }	Generator Room
+
+Test stickybug with "tutorial off / wave y-remover at sticky / put stick in bucket / wave t-remover at stock / open tub / get sock / gel sock" [holding the sticky and the tub in the Generator Room.]
 
 The repository contains a stick, a sick, a tick, and a tic,
 	a stock, a sock.	[vowel rotation]
@@ -16455,7 +16540,11 @@ The repository contains a mutual punch.
 The repository contains a slack towel.
 
 [TODO: fix test]
-[Test slack with "tutorial off / load gun / shoot wall socket" in the workshop holding the anagramming gun and the bullets.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"slack"	{ anagramming gun, bullets }	Workshop
+
+Test slack with "tutorial off / load gun / shoot wall socket" [in the workshop holding the anagramming gun and the bullets.]
 
 [watch]
 
@@ -17386,9 +17475,14 @@ A dangerous construction rule for the cord:
 		now the printed name of power cord is "cord".
 		
 [TODO: fix test]
-[Test cordalt with "tutorial off/ autoupgrade / switch switch / put card in bucket / put curd in bucket / get cord / x cord / w / plug in dais / unplug cord / get cord / e / put cord in umlaut punch" holding the card and the umlaut punch in the Generator room.
+Table of Ultratests (continued)
+topic	stuff	setting
+"cordalt"	{ card, umlaut punch }	Generator room
+"cordalt2"	{ card, umlaut punch }	Generator room
 
-Test cordalt2 with "tutorial off/ autoupgrade / put card in umlaut punch / get chord / switch switch / put card in bucket / put curd in bucket / get cord / x cord / wave h-remover at chord / w / plug in dais / unplug dais / e / put cord in umlaut punch" holding the card and the umlaut punch in the Generator room.]
+Test cordalt with "tutorial off/ autoupgrade / switch switch / put card in bucket / put curd in bucket / get cord / x cord / w / plug in dais / unplug cord / get cord / e / put cord in umlaut punch" [holding the card and the umlaut punch in the Generator room.]
+
+Test cordalt2 with "tutorial off/ autoupgrade / put card in umlaut punch / get chord / switch switch / put card in bucket / put curd in bucket / get cord / x cord / wave h-remover at chord / w / plug in dais / unplug dais / e / put cord in umlaut punch" [holding the card and the umlaut punch in the Generator room.]
 
 The heft of the cork is 1. The description of the cork is "One end is deep maroon from having been in a wine bottle for a time. On the side is stamped the logo of an Atlantean vintner."
 
@@ -17461,7 +17555,11 @@ The diva wears a meat-gown and a bacon chapeau. Understand "glamorous" or "glamo
 The description of the bacon chapeau is "People sometimes pin bacon on turkeys to keep them moist during roasting. It looks as though the diva's milliner has taken the same approach to her head." The bacon chapeau is edible. Understand "hat" as the bacon chapeau. 
 
 [TODO: fix test]
-[Test diva with "switch switch / put dove in bucket / x diva / x gown / x chapeau / load gun / shoot gown / shoot chapeau / x diva" holding the dove and the anagramming gun and the bullets in the Generator Room.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"diva"	{ dove, anagramming gun, bullets }	Generator Room
+
+Test diva with "switch switch / put dove in bucket / x diva / x gown / x chapeau / load gun / shoot gown / shoot chapeau / x diva" [holding the dove and the anagramming gun and the bullets in the Generator Room.]
 
 The doe is an animal.
 The doe is female.
@@ -17932,7 +18030,11 @@ Instead of listening to the jigsaw when the jigsaw is switched on:
 	say "There is a continuous angry whine from the jigsaw."
 	
 [TODO: fix test]
-[Test jigbug with "tutorial off / unmonkey / w / turn on jigsaw / w / drop jigsaw / w" holding the jigsaw and the keycard in the Johnson Basement.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"jigbug"	{ jigsaw, keycard }	Johnson Basement
+
+Test jigbug with "tutorial off / unmonkey / w / turn on jigsaw / w / drop jigsaw / w" [holding the jigsaw and the keycard in the Johnson Basement.]
 
 
 The jigsaw-piece is a thing. Understand "jigsaw piece" or "jigsaw" or "piece" as the jigsaw-piece. The printed name is "jigsaw piece". The description is "A single mislaid piece from a jigsaw puzzle. It shows part of a woman's face contorted with strong emotion." 
@@ -18177,7 +18279,11 @@ Report punching something:
 	say "[The mutual punch] drives a small, tidy hole through [the noun]." instead.
 	
 [TODO: fix test]
-[Test punching with "tutorial off / punch me / load gun / shoot punch / punch me / punch jotter / wave p-remover at the preamps / wave s-remover at the reams / put ream in punch" in the Equipment Archive holding the anagramming gun and the bullets and the jotter and the preamps.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"punching"	{ anagramming gun, bullets, jotter, preamps }	Equipment Archive
+
+Test punching with "tutorial off / punch me / load gun / shoot punch / punch me / punch jotter / wave p-remover at the preamps / wave s-remover at the reams / put ream in punch" [in the Equipment Archive holding the anagramming gun and the bullets and the jotter and the preamps.]
 
 
 The nap is a thing. The heft of the nap is 1. The description is "It's a wad of fuzz from cloth [--] similar to lint."
@@ -18223,7 +18329,11 @@ Report improvising the topic understood on the oboe:
 Understand "blow [oboe]" as performing vaguely on.
 	
 [TODO: fix test]
-[Test oboe with "hard mode / y / tutorial off / load gun / look / open station / get balm / shoot balm / put lamb in bucket / x oboe / blow oboe / play oboe / play music on oboe / play chopsticks on oboe" in the generator room holding the anagramming gun and the bullets.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"oboe"	{ anagramming gun, bullets }	Generator Room
+
+Test oboe with "hard mode / y / tutorial off / load gun / look / open station / get balm / shoot balm / put lamb in bucket / x oboe / blow oboe / play oboe / play music on oboe / play chopsticks on oboe" [in the generator room holding the anagramming gun and the bullets.]
 
 The description of the ode is "A short poem, letter-pressed attractively on a sheet of thick paper. It is entitled 'Our Ancestors, The Immortal Spirits of the Pyramids,' a fact which disinclines me to study the rest." Understand "poem" as the ode. The scent-description of the ode is "paper".
 
@@ -18461,7 +18571,11 @@ Instead of entering the passage-place:
 	refresh compass with current directions.
 
 [TODO: fix test]
-[Test passage with "tutorial off / put bullets in gun / set switch to swap homonym / put passage on dais / turn on dais / enter passage / x nipson inscription / x sator inscription / shoot sator" holding the passage and the anagramming gun and the bullets in the Workshop.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"passage"	{ passage, anagramming gun, bullets }	Workshop
+
+Test passage with "tutorial off / put bullets in gun / set switch to swap homonym / put passage on dais / turn on dais / enter passage / x nipson inscription / x sator inscription / shoot sator" [holding the passage and the anagramming gun and the bullets in the Workshop.]
 
  
 [One of the things I set out to do with the puzzle system in my previous game Savoir-Faire was to duplicate all the dull standard puzzles I was sick of seeing, but with some new twist on them that hadn't been done before. The one that there was really no way to include, however, was the password puzzle: too many IF games use password puzzles as a form of riddle (where you have to guess on the basis of some hints) or a cheap search puzzle (where the answer is written down on a note near the computer). Never in IF does anyone follow good security protocols with strong passwords that aren't written down. 
@@ -18647,7 +18761,11 @@ Instead of inserting ink into the pen:
 	say "We fill the body of the pen with ink and reattach the nib."
 	
 [TODO: fix test]
-[Test pen with "wave s-remover at sink / get ink / write on jotter / write with pen / write with pen on jotter / write on jotter with pen / write Alice on jotter / put ink in pen / put nib in pen / get nib / put nib in pen / put ink in pen / write on jotter / write on page / write alice on jotter / write alice on page"  in the Public Convenience holding the pen and the nib and the page and the jotter.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"pen"	{ pen, nib, page, jotter }	Public Convenience
+
+Test pen with "wave s-remover at sink / get ink / write on jotter / write with pen / write with pen on jotter / write on jotter with pen / write Alice on jotter / put ink in pen / put nib in pen / get nib / put nib in pen / put ink in pen / write on jotter / write on page / write alice on jotter / write alice on page"  [in the Public Convenience holding the pen and the nib and the page and the jotter.]
 
 Carry out writing on something:
 	record "Horace Fingerstain award for jotting some notes" as an achievement;
@@ -18812,7 +18930,11 @@ Instead of showing the spot to the pirate:
 		say "She spits largely off to one side. 'That for your instructions!'" instead. ]
 	
 [TODO: fix test]
-[Test pirate-spot with "tutorial off / autoupgrade / wave c-remover at pic / wave c-remover at crate / put pi on platform / put rate on platform / set platform to synthesize / turn on platform / pirate, enter platform / show spot to pirate / g / pirate, enter platform / open tub / drop tub / pirate, touch gel"  in the Workshop holding the spot and the pic and the crate and the tub.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"pirate-spot"	{ spot, crate, tub }	Workshop
+
+Test pirate-spot with "tutorial off / autoupgrade / wave c-remover at pic / wave c-remover at crate / put pi on platform / put rate on platform / set platform to synthesize / turn on platform / pirate, enter platform / show spot to pirate / g / pirate, enter platform / open tub / drop tub / pirate, touch gel"  [in the Workshop holding the spot and the pic and the crate and the tub.]
 
 The pirate-crew is a man. The printed name is "pirate crew". The description is "A fiercer, blacker-browed gang of individuals you couldn't hope to meet. Half of them have scurvy and half are missing at least a finger, and when they talk (strictly among themselves), it's all growls from the corner of the mouth." Understand "pirate" or "pirates" or "crew" as the pirate-crew.
 	The scent-description of the pirate-crew is "unwashedness".
@@ -19167,7 +19289,11 @@ Sanity-check putting something which is not wearable on the rack:
 		say "[The rack] is for clothes; the pegs aren't really designed to hold anything else." instead.
 		
 [TODO: fix test]
-[Test rackbug with "tutorial off / put ruck in bucket / get rack / put gel on rack" holding the ruck and the tub in the Generator Room.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"rackbug"	{ ruck, tub }	Generator Room
+
+Test rackbug with "tutorial off / put ruck in bucket / get rack / put gel on rack" [holding the ruck and the tub in the Generator Room.]
 
 The rack is a supporter. It is not fixed in place. Understand "pegs" or "peg" as the rack. The description of the rack is "It's a wooden support with a few pegs for hanging up coats or jackets."
 
@@ -19301,7 +19427,11 @@ The ripening-apple is an edible thing. Understand "ripening" and "apple" or "ste
 The rite is an r-abstract thing. The heft of the rite is 0. The description of the rite is "Flickering images depict [one of]candles and incense carried by those processing around the New Church on a holy day[or]a woman kneeling before a small rustic shrine and placing the figure of a metal god on it[or]a man drawing the letter A on his son's forehead with a grease pencil[or]a bonfire at the beach, over which a pig is being roasted. The pig's ears, hoofs, and entrails have been set to one side[at random]."
 
 [TODO: fix test]
-[Test rite with "tutorial off / autoupgrade / wave p-remover at pear / put ear in t-inserter / get tear / gonear first aid station / put tear in bucket / get tier / load gun / shoot tier / x rite" holding the pear and the tub and the anagramming gun and the anagram bullets in the Sensitive Equipment Room.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"rite"	{ pear, tub, anagramming gun, anagram bullets }	Sensitive Equipment Room
+
+Test rite with "tutorial off / autoupgrade / wave p-remover at pear / put ear in t-inserter / get tear / gonear first aid station / put tear in bucket / get tier / load gun / shoot tier / x rite" [holding the pear and the tub and the anagramming gun and the anagram bullets in the Sensitive Equipment Room.]
 
 [Originally the rock was described as "hefty and jagged, like the result of a volcanic event". Then I went to Kilauea on vacation and picked up some volcanic rocks, and they were the lightest rocks I've ever lifted. So that had to go. I decided that Brock's supportive personality, rather than his unpredictability, was the thing I wanted to express in the rock description. 
 
@@ -19317,7 +19447,11 @@ Before putting the restoration gel on the rock when the rock is in a container (
 		stop the action.
 
 [TODO: fix test]
-[Test rock-bug with "put rock in t-inserter / open tub / gel rock" holding the rock and the tub in the Sensitive Equipment Testing Room.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"rock-bug"	{ rock, tub }	Sensitive Equipment Testing Room
+
+Test rock-bug with "put rock in t-inserter / open tub / gel rock" [holding the rock and the tub in the Sensitive Equipment Testing Room.]
 
 The roc is a rideable animal.
 The initial appearance is "The roc towers over us, looking smarter than a bird has the right to look."
@@ -19442,7 +19576,11 @@ Every turn when the rump stabber is in the location:
 The rum stabber is a woman. The description is "She looks around in bewilderment, but there's no rum for her to attack."
 		
 [TODO: fix test]
-[Test rumper with "tutorial off / autoupgrade / open tub / load gun / shoot rubber stamp with gun / wave p-remover at rump stabber / gel rum stabber / shoot stamp / z / z / z" holding the anagramming gun and the tub and the bullets and the rubber stamp.]
+Table of Ultratests (continued)
+topic	stuff
+"rumper"	{ anagramming gun, bullets, rubber stamp }
+
+Test rumper with "tutorial off / autoupgrade / open tub / load gun / shoot rubber stamp with gun / wave p-remover at rump stabber / gel rum stabber / shoot stamp / z / z / z" [holding the anagramming gun and the tub and the bullets and the rubber stamp.]
 
 A rusty-nail-drink is a contained fluid edible thing. The printed name of a rusty-nail-drink is "Rusty Nail". Understand "rusty nail" or "rusty" or "nail" or "cocktail" or "drink" or "beverage" as a rusty-nail-drink. The description of a rusty-nail-drink is "A scotch-based beverage with Drambuie. It's tolerable, but not a fav[our]ite."
 	Instead of burning the rusty-nail-drink:
@@ -19534,7 +19672,11 @@ Instead of searching the shrimp cocktail:
 	say "A few finger-prods through the red sauce verify that there are only more shrimps within."
 
 [TODO: fix test]
-[Test alterna-shuttle with "tutorial off / plug in dais / e / put pastis in bucket / w / put shuttle on dais / pull lever / turn switch / pull lever / get in shuttle / drive e" holding the power cord and the pastis and the shuttle in the Workshop.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"alterna-shuttle"	{ power cord, pastis, shuttle }	Workshop
+
+Test alterna-shuttle with "tutorial off / plug in dais / e / put pastis in bucket / w / put shuttle on dais / pull lever / turn switch / pull lever / get in shuttle / drive e" [holding the power cord and the pastis and the shuttle in the Workshop.]
 
 The alterna-shuttle is a car. The printed name of the alterna-shuttle is "shuttle". Understand "shuttle" as the alterna-shuttle. The heft of the alterna-shuttle is 6. The description of the alterna-shuttle is "It is predictably painted blue, but it's just a little patrol shuttle, not one of the big vans for carting away arrested citizens."
 
@@ -19595,7 +19737,11 @@ A dangerous construction rule for the slack towel:
 The slat is a long thing. The description of the slat is "A board of white wood, probably extracted from a fence somewhere."
 
 [TODO: fix test]
-[Test snapping with "show snap to bartender / show ring to bartender / listen" holding the snap and the ring in the Drinks Club.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"snapping"	{ snap, ring }	Drinks Club
+
+Test snapping with "show snap to bartender / show ring to bartender / listen" [holding the snap and the ring in the Drinks Club.]
 
 The alterna-snap is an r-abstract noisy thing. The heft of the alterna-snap is 0. The printed name is "snap". Understand "snap" as the alterna-snap. The description of the alterna-snap is "It sounds like a whole chorus of guys in hair gel, snapping for all they're worth."
 
@@ -20158,7 +20304,11 @@ Sanity-check poking something with the tack:
 	say "There are no obvious advantages to making a very tiny hole in [the noun]." instead.
 	
 [TODO: fix test]
-[Test tack with "poke me with tack / poke sord with tack / poke fuel with tack / poke era with tack / poke jotter with tack / stick tack into fuel / poke tack into fuel / stick fuel with tack" holding the tack and the sord and the fuel and the era and the jotter.]
+Table of Ultratests (continued)
+topic	stuff
+"tack"	{ tack, sord, fuel, era, jotter }
+
+Test tack with "poke me with tack / poke sord with tack / poke fuel with tack / poke era with tack / poke jotter with tack / stick tack into fuel / poke tack into fuel / stick fuel with tack" [holding the tack and the sord and the fuel and the era and the jotter.]
 
 The taco is edible. The description of the taco is "In the fried corn tortilla shell nestles a mixture of spiced pork, shredded lettuce, and sharp cheddar." The scent-description is "Mexican spices". Understand "spiced pork" or "pork" or "shredded lettuce" or "lettuce" or "sharp cheddar" or "cheddar" or "corn" or "tortilla" or "shell" or "fried" as the taco. The heft of the taco is 1.
 
@@ -20280,14 +20430,22 @@ When tick-removal ends painfully:
 The description of the ticket is "It reads ADMIT ONE in large black letters." 
 
 [TODO: fix test]
-[Test coffer with "load gun / shoot cup" holding the anagramming gun and the bullets in the Private Solarium.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"coffer"	{ anagramming gun, bullets }	Private Solarium
+
+Test coffer with "load gun / shoot cup" [holding the anagramming gun and the bullets in the Private Solarium.]
 
 The tidy puce coffer is a closed openable container. The description is "It's a heavy, old-fashioned box with a peaked lid, lacquered all over in a shade somewhere between dark pink and dusty purple. It is very clean and precisely crafted."
 
 The tilting-piano is an instrument. Understand "tilting" or "piano" as the tilting-piano. The printed name of the tilting-piano is "tilting piano". The description is "The legs on one side of the piano are very much lower than on the other side, so that the keyboard can only be played by someone with a very unconventional posture. To make the object look all the more carnivalesque, it is painted white and studded with blue and white rhinestones."
 
 [TODO: fix test]
-[Test paintings with "autoupgrade  / load gun / wave s-remover at paintings / shoot painting / put giant pin in t-inserter / shoot giant pint / wave g-remover at pig tat inn / shoot pi tat inn / put pin in inserter / shoot titan pint / open tub / gel tint / shoot paintings / wave g-remover at sign / shoot sin" holding the anagramming gun and the bullets and the paintings and the tub in the Sensitive Equipment Testing Room.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"paintings"	{ anagramming gun, bullets, paintings, tub }	Sensitive Equipment Testing Room
+
+Test paintings with "autoupgrade  / load gun / wave s-remover at paintings / shoot painting / put giant pin in t-inserter / shoot giant pint / wave g-remover at pig tat inn / shoot pi tat inn / put pin in inserter / shoot titan pint / open tub / gel tint / shoot paintings / wave g-remover at sign / shoot sin" [holding the anagramming gun and the bullets and the paintings and the tub in the Sensitive Equipment Testing Room.]
 
 
 The titan-pin is wearable. The description of the titan-pin is "The pin depicts two giant-like figures locked in a wrestling match." The printed name is "titan pin". Understand "titan" or "titan pin" as the titan-pin. Understand "pin" as the titan-pin when the pin is not visible.
@@ -21373,11 +21531,16 @@ The generic confrontational of the mechanic is "hey".
 
 [To reproduce and then verify the correction of a bug whereby the mechanic would half-way fix the car when given the oil even if the car was not in fact present.]
 [TODO: fix test]
-[Test mechanicbug with "tutorial off / wave b-remover at garbage / test car-series / wave h-remover at chard / wave d-remover at card / test car-series / open tub / gel car / wave f-remover at foil / test car-series / wave d-remover at chard / wave h-remover at char / test car-series / wave n-remover at funnel / test car-series / put fuel in car / test car-series" holding the tub and the funnel and the foil and the chard in high street.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"mechanicbug"	{ tub, funnel, foil, chard }	high street
+"mech2"	{ tub, funnel, foil, chard }	high street
+	
+Test mechanicbug with "tutorial off / wave b-remover at garbage / test car-series / wave h-remover at chard / wave d-remover at card / test car-series / open tub / gel car / wave f-remover at foil / test car-series / wave d-remover at chard / wave h-remover at char / test car-series / wave n-remover at funnel / test car-series / put fuel in car / test car-series" [holding the tub and the funnel and the foil and the chard in high street.]
 
 [And a second test in the other order, doing the fuel before the oil.]
 [TODO: fix test]
-[Test mech2 with "tutorial off / wave b-remover at garbage / test car-series / wave h-remover at chard / wave d-remover at card / test car-series / open tub / gel car / wave n-remover at funnel / test car-series / wave d-remover at chard / wave h-remover at char / test car-series / put fuel in car / test car-series / wave f-remover at foil / test car-series" holding the tub and the funnel and the foil and the chard in high street.]
+Test mech2 with "tutorial off / wave b-remover at garbage / test car-series / wave h-remover at chard / wave d-remover at card / test car-series / open tub / gel car / wave n-remover at funnel / test car-series / wave d-remover at chard / wave h-remover at char / test car-series / put fuel in car / test car-series / wave f-remover at foil / test car-series" [holding the tub and the funnel and the foil and the chard in high street.]
 
 Test car-series with "ask mechanic to fix car / show fuel to mechanic / ask mechanic about fuel / show gas to mechanic / ask mechanic about gas / show oil to mechanic / ask mechanic about oil / ask mechanic about car / show car to mechanic / get in car / start car / switch on car / switch on ignition / get out".
 
@@ -22337,7 +22500,11 @@ We shrug amiably.
 She gives us a long, admonitory stare, then goes back to what she was doing.[or]We tried that already, and it didn't go well.[stopping]" .
 
 [TODO: fix test]
-[Test bartender with "tutorial off / z / ask about paddle / show ball to bartender / show foil to bartender / show map to bartender / show card to bartender / g / g / show cock to bartender" in the Drinks Club holding the slangovia map and foil and the ball and the card and the cock.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"bartender"	{ slangovia map, foil, the ball, the card, the cock}	Drinks Club
+
+Test bartender with "tutorial off / z / ask about paddle / show ball to bartender / show foil to bartender / show map to bartender / show card to bartender / g / g / show cock to bartender" [in the Drinks Club holding the slangovia map and foil and the ball and the card and the cock.]
 
 
 
@@ -24681,7 +24848,11 @@ Instead of answering Lena that "thank you":
  It directly-follows encourage Lena to contact Slango.
 	
 [TODO: fix test]
-[Test Lena with "tutorial off / z / open tub / ask about slango / say who we are / z / z / wave m-remover at modems / wave s-remover at odes / gel ode / wave m-remover at modems / wave p-remover at preamps / wave s-remover at reams / put paste on odes / put paste on ream / ask whether / encourage" in the Aquarium holding tub and the origin paste.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"Lena"	{ tub, origin paste }	the Aquarium
+
+Test Lena with "tutorial off / z / open tub / ask about slango / say who we are / z / z / wave m-remover at modems / wave s-remover at odes / gel ode / wave m-remover at modems / wave p-remover at preamps / wave s-remover at reams / put paste on odes / put paste on ream / ask whether / encourage" [in the Aquarium holding tub and the origin paste.]
 
 Section 5 - Professor Brown
 
@@ -25593,9 +25764,14 @@ To say get-to-work:
 Test Brockscene with "tutorial off / autoupgrade / unmonkey / open tub /  gel rock / suggest we get out / insist / ask about buried command / wave g-remover at sign / put sin in the t-inserter / gel stint / wave g-remover at sign / wave s-remover at sin / i / put sin in t-inserter / wave s-remover at stint / wave n-remover at tint / wave t-remover at tit / put i in t-inserter / wave t-remover at tit / put i in t-inserter / get rock / i" holding the tub in the Equipment Testing.
 
 [TODO: fix test]
-[Test Misdirection with "tutorial off / autoupgrade /unmonkey / sw / n / w / e / open tub / gel rock / e" holding the tub and the apple and the roll of bills and the piece in Bureau Secret Section.
+Table of Ultratests (continued)
+topic	stuff	setting
+"Misdirection"	{ tub, apple, roll of bills, piece }	Bureau Secret Section
+"BrockAlt"	{ tub, seer automaton, chard, roll }	Equipment Testing
 
-Test BrockAlt with "tutorial off / autoupgrade / unmonkey / open tub /  gel rock / put seer in t-inserter / x automaton / turn on automaton / gel automaton / put seer in t-inserter / x automaton / turn on automaton/ x automaton / put the roll in the t-inserter / gel the troll / wave d-remover at chard / put char in t-inserter / wave c-remover at chart / wave r-remover at hart / get hat / x hat / wear hat / remove hat / put hat in t-inserter" holding the tub and the seer automaton and the chard and the roll in the Equipment Testing.]
+Test Misdirection with "tutorial off / autoupgrade /unmonkey / sw / n / w / e / open tub / gel rock / e" [holding the tub and the apple and the roll of bills and the piece in Bureau Secret Section.]
+
+Test BrockAlt with "tutorial off / autoupgrade / unmonkey / open tub /  gel rock / put seer in t-inserter / x automaton / turn on automaton / gel automaton / put seer in t-inserter / x automaton / turn on automaton/ x automaton / put the roll in the t-inserter / gel the troll / wave d-remover at chard / put char in t-inserter / wave c-remover at chart / wave r-remover at hart / get hat / x hat / wear hat / remove hat / put hat in t-inserter" [holding the tub and the seer automaton and the chard and the roll in the Equipment Testing.]
 	
  Instead of putting gel on the rock when Brock-argument has happened and Brock-argument has ended and Cold Dilemma has not happened:
 	say "No, we leave him in rock form for now. One of us will have an easier time slipping out than two."
@@ -25647,7 +25823,11 @@ Rule for beat-producing when the current interlocutor is my mother:
 	say run paragraph on.
 	
 [TODO: fix test]
-[Test mom-beats with "drop mother / open backpack / say we're / z / close backpack / z / z / z" holding my mother and the backpack in my apartment.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"mom-beats"	{ my mother, backpack }	my apartment
+
+Test mom-beats with "drop mother / open backpack / say we're / z / close backpack / z / z / z" [holding my mother and the backpack in my apartment.]
 	
 Report my mother switching off something:
 	if the noun is a switch which is part of a stove:
@@ -26314,11 +26494,17 @@ Instead of throwing something at atlantida-woman:
 Understand "gun hand" as the restoration-gel rifle when the restoration-gel rifle is carried by Atlantida-woman.
 
 [TODO: fix test]
-[Test oracle with "tutorial off / autoupgrade / unmonkey / load gun / wave h-remover at power chord / open tub / look / x paintings / x charts / x fable / gel paperweight / gel fable / look up 1942 in cabinet / look up 1982 in cabinet / look up 1962 in cabinet / look up 1958 / look up 1964 / look up 2003 / look up 1983 in cabinet / x paper / x weight / get weight / e / e / e / put pastis in bucket / go to workshop / plug in cord / go to surveillance / d / get counter / go to workshop / put counter and weight on dais / turn switch / pull lever / get counterweight / go to tunnel / put counterweight on hook / pull counterweight / e" in the Oracle holding the anagramming gun and the bullets  and the power chord and the pastis and the tub. 
+Table of Ultratests (continued)
+topic	stuff	setting
+"oracle"	{ anagramming gun, bullets, power chord, pastis, the tub }	The Oracle
+"missiles"	{ rock, page, sword, secret-plans, iron-pans, ire }	--
+"attacks"	{ sword, foil, stick, sill, leaf, slat, track, warm rods, wand batch, swordstick, crosspiece }	--
 
-Test missiles with "establish / throw rock at Atlantida / throw paper at atlantida / throw plans at atlantida / throw sword at atlantida / throw tub at atlantida / throw pans at atlantida / throw ire at atlantida" holding the rock and the page and the sword and the secret-plans and the iron-pans and the ire.
+Test oracle with "tutorial off / autoupgrade / unmonkey / load gun / wave h-remover at power chord / open tub / look / x paintings / x charts / x fable / gel paperweight / gel fable / look up 1942 in cabinet / look up 1982 in cabinet / look up 1962 in cabinet / look up 1958 / look up 1964 / look up 2003 / look up 1983 in cabinet / x paper / x weight / get weight / e / e / e / put pastis in bucket / go to workshop / plug in cord / go to surveillance / d / get counter / go to workshop / put counter and weight on dais / turn switch / pull lever / get counterweight / go to tunnel / put counterweight on hook / pull counterweight / e" [in the Oracle holding the anagramming gun and the bullets  and the power chord and the pastis and the tub.]
 
-Test attacks with "establish / hit atlantida with sword / hit atlantida with foil / hit atlantida with stick / hit atlantida with sill / hit atlantida with leaf / hit atlantida with slat / hit atlantida with track / hit atlantida with warm rods / hit atlantida with wand batch / hit atlantida with swordstick / hit atlantida with crosspiece" holding the sword and the foil and the stick and the sill and the leaf and the slat and the track and the warm rods and the wand batch and the swordstick and the crosspiece.]
+Test missiles with "establish / throw rock at Atlantida / throw paper at atlantida / throw plans at atlantida / throw sword at atlantida / throw tub at atlantida / throw pans at atlantida / throw ire at atlantida" [holding the rock and the page and the sword and the secret-plans and the iron-pans and the ire.]
+
+Test attacks with "establish / hit atlantida with sword / hit atlantida with foil / hit atlantida with stick / hit atlantida with sill / hit atlantida with leaf / hit atlantida with slat / hit atlantida with track / hit atlantida with warm rods / hit atlantida with wand batch / hit atlantida with swordstick / hit atlantida with crosspiece" [holding the sword and the foil and the stick and the sill and the leaf and the slat and the track and the warm rods and the wand batch and the swordstick and the crosspiece.]
 
 Section 13 - Scene Interlude with Guards
 
@@ -26423,9 +26609,14 @@ We say nothing.";
 	end the story saying "We have been caught".
 
 [TODO: fix test]
-[Test almostlast with "tutorial off / load gun / put counterweight on hook / open tub / open portcullis / go through portcullis / x files / a cold storage / look / shoot anagramming gun at gel rifle / look / gel astrologer / shoot gel rifle at atlantida" in the Tunnel  holding the anagramming gun and the bullets and the tub and the counterweight.]
+Table of Ultratests (continued)
+topic	stuff	setting
+"almostlast"	{ anagramming gun, bullets, tub, counterweight }	The Tunnel
+"lastmeeting"	{ anagramming gun, tub }	Personal Apartment
 
-[Test lastmeeting with "tutorial off / open tub / x files / a cold storage / look / shoot anagramming gunsource:story.ni#line25713 at gel rifle / look / gel astrologer / shoot gel rifle at atlantida" in the Personal Apartment holding the anagramming gun and the tub.]
+Test almostlast with "tutorial off / load gun / put counterweight on hook / open tub / open portcullis / go through portcullis / x files / a cold storage / look / shoot anagramming gun at gel rifle / look / gel astrologer / shoot gel rifle at atlantida" [in the Tunnel  holding the anagramming gun and the bullets and the tub and the counterweight.]
+
+Test lastmeeting with "tutorial off / open tub / x files / a cold storage / look / shoot anagramming gun at gel rifle / look / gel astrologer / shoot gel rifle at atlantida" [in the Personal Apartment holding the anagramming gun and the tub.]
 
 Section 14 - The Nicer Atlantida
 
@@ -27560,4 +27751,27 @@ Carry out listing anagram probables:
 		let N be the number of characters in starting form;
 		if N is greater than 8:
 			say "[item][line break]".
-			
+
+Section 5 - Ultratest
+
+Understand "ultratest [text]" as ultratesting. Ultratesting is an action applying to one topic.
+
+Understand the command "utest" and "ultra-test" as "ultratest".
+
+Carry out ultratesting a topic:
+	if the topic understood is a topic listed in the table of ultratests:
+		if there is a stuff entry:
+			repeat with item running through stuff entry:
+				say "Procuring [the item].";
+				move item to the player;
+		if there is a setting entry:
+			say "Moving to [setting entry].";
+			move player to setting entry;
+	call test.
+
+To call test:
+(-
+wn = 2;
+special_word = NextWordStopped();
+ TestScriptSub();
+-)
