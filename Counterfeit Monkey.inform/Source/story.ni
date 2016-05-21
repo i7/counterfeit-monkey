@@ -2536,7 +2536,7 @@ Sanity-check finding a door which is in the location:
 
 Section 3 - Approaches and Describing Distance Travel 
 
-Include Approaches by Emily Short. Use slow route-finding. 
+Include Approaches by Emily Short. Use fast route-finding.
 
 A room can be nonsecret or forbidden. A room is usually nonsecret.
 
