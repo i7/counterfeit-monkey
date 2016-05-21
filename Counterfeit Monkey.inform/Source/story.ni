@@ -13418,7 +13418,7 @@ Carry out remembering saving-rivka:
 
 Section 5 - Brock in Bed
 
-[Test Brock-bed with "x bed / remember brock / x bed / g / g / g / g / g / g / g / g / g / g / g / g / g / g / g / remember brock" in dormitory.]
+Test Brock-bed with "x bed / remember brock / x bed / g / g / g / g / g / g / g / g / g / g / g / g / g / g / g / remember brock" in dormitory.
 Test Brock-fully with "test Brock-bed / test Brock-bed / test Brock-bed / test Brock-bed / test Brock-bed / test Brock-bed / memories / remember brock".
  
 
@@ -27772,6 +27772,10 @@ Carry out listing anagram probables:
 			say "[item][line break]".
 
 Section 5 - Ultratest
+
+After reading a command:
+	if the player's command includes "test":
+		replace the matched text with "utest".
 
 Understand "ultratest [text]" as ultratesting. Ultratesting is an action applying to one topic.
 
