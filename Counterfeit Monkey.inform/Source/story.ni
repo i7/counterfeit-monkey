@@ -8024,6 +8024,12 @@ Nexami Engeo is an alert man. Understand "Nex" as Nexami Engeo.
 	He wears a rocker jacket and jeans. 
 	The description of the rocker jacket is "It's black leather. It might make the wearer look fierce if he didn't have such a round dimpled face." 
 	The description of the jeans is "Blue. Ordinary cut. I'm not really an expert in fashion."
+
+Rule for deciding the concealed possessions of Nexami:
+	if the current action is looking:
+		yes;
+	otherwise:
+		no.
 	
 Rule for writing a paragraph about Nexami when Nexami is not as-yet-unknown:
 	carry out the writing a topic sentence about activity with Nexami;
@@ -8321,6 +8327,12 @@ Slango is an alert man. The initial appearance is "[Slango] sits at [a dark tabl
 	
 Slango wears clean jeans and a button-up shirt.[ The clean jeans and the button-up shirt are scenery.][Bad!] [Having people carry scenery makes the compiler go crazy]
 The description of the clean jeans is "He wears them as though they were uniform trousers." The description of the button-up shirt is "White and stainless."
+
+Rule for deciding the concealed possessions of slango:
+	if the current action is looking:
+		yes;
+	otherwise:
+		no.
 
 Slango carries a root beer.
 
@@ -22198,6 +22210,12 @@ buy a drink is an unlisted repeatable purchasing quip.
 The generic cocktail is a [scenery][Bad!] thing. Understand "drink" as the generic cocktail. It is carried by the bartender. [Instead of doing something other than buying with the generic cocktail: say "All the cocktails here are specific recipes."]
 [Having people carry scenery makes the compiler go crazy]
 
+Rule for deciding the concealed possessions of the bartender:
+	if the current action is looking:
+		yes;
+	otherwise:
+		no.
+
 Carry out the bartender discussing buy the screwdriver:
 	move the screwdriver to the dor-bar-top;
 	homonym-paddle the screwdriver; 
@@ -23018,6 +23036,12 @@ Before discussing buy movie-ticket when the player encloses the ticket:
 Well, as you like, of course. You're the expert in covert whatever-it-is."
 
 The hidden-ticket is carried by the ticket-taker. The printed name of the hidden-ticket is "ticket". Understand "ticket" or "[movie] ticket" or "ticket to [movie]" or "ticket to a/the [movie]" as hidden-ticket. [The hidden-ticket is scenery][Bad!][Having people carry scenery makes the compiler go crazy]
+
+Rule for deciding the concealed possessions of the ticket-taker:
+	if the current action is looking:
+		yes;
+	otherwise:
+		no.
 
 Understand "movie/theater/cinema/film" as "[movie]".
 
