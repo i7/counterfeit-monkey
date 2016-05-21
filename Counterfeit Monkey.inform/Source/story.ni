@@ -8619,7 +8619,7 @@ Dramatically, it tries to
 
 ]
 
-After going to Roundabout when the protesters are not off-stage and the player is not in Traffic Circle [and seeking Slango has ended]:
+After going to Roundabout when the protesters are not off-stage and the player is not in Traffic Circle and seeking Slango has ended:
 	if the player is hurrying:
 		say "[path-walked so far][paragraph break][line break]";
 		clear path-walked for player;
