@@ -6501,7 +6501,7 @@ The Hostel is east of Heritage Corner. It is indoors. The description is "I take
 
 Instead of exiting in the Hostel, try going west.
 
-Rule for listing exits when the location is the Hostel: [TODO:][Test if this works]
+Rule for listing exits when the location is the Hostel:
 	if looking, say "There's a [h-staircase] that leads up to the dormitory rooms.";
 	otherwise say "[We] could either climb the [h-staircase] up to the dormitory rooms or go back to the park, [west]."
 
