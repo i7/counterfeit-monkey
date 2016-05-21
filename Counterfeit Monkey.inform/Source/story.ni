@@ -7952,7 +7952,8 @@ Sanity-check dropping the plans in the Tin Hut:
 	
 Test tinhut with "n / e / drop plans / w / wave l-remover at plans / wave s-remover at plan" in Deep Street holding the plans.
 
-Before going to the Fish Market from the Tin Hut:  
+[Was: To the Fish Market. Broke Test2.]
+Before going west from the Tin Hut:
 	if the Authenticator is not in Fish Market:
 		continue the action;
 	if the player encloses the plans and the plans are not in the closed backpack:
