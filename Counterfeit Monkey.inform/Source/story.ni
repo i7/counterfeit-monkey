@@ -8650,6 +8650,9 @@ Check waving the letter-remover at the Traffic Circle when the current setting o
 Traffic Circle is inside from the Roundabout. It is a privately-controlled outdoors road. 
 
 [TODO:][fix]
+
+The no-dropping rule does nothing when the current action is dropping the restoration-gel rifle and the location is Traffic Circle.
+
 [Procedural rule while dropping the restoration-gel rifle when the location is Traffic Circle:
 	ignore the no-dropping rule.]
 	
