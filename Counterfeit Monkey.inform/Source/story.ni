@@ -11591,7 +11591,7 @@ I keep thinking: my father is going to look like a fool when it's found he's arr
 
 I want to stop you, but you've got the upper hand now[or][stopping].
 
-[The victim] [back] out the door.
+[The victim] back[s] out the door.
 
 [if the victim is not undisguised]'Nothing on the auth scope,' comments a female voice.
 
