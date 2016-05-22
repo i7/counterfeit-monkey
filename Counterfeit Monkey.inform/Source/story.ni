@@ -6670,7 +6670,7 @@ Some hard wood floors are scenery in the Dormitory room. Understand "floor" or "
 
 Instead of putting something on the hard wood floors, try dropping the noun.
 
-The locker is a fixed in place closed openable container in the Dormitory Room. The lock is part of the locker. The initial appearance of the locker is "The [locker] you identify as your own sits near one of the beds[if the locker is open], door standing open[otherwise if the lock is part of the locker], still locked with its dial [lock][otherwise], closed but not locked[end if]. ".
+The locker is a fixed in place closed openable container in the Dormitory Room. The lock is part of the locker. The initial appearance of the locker is "The [locker] you identify as your own sits near one of the beds[if the locker is open], door standing open[otherwise if the lock is part of the locker], still locked with its dial [printed name of lock][otherwise], closed but not locked[end if]. ".
 
 A ranking rule for the locker: 
 	increase description-rank of the locker by 100.
@@ -9800,7 +9800,7 @@ Carry out going to the Language Studies Seminar Room:
 	
 The LSR bookcase is a supporter in the Language Studies Seminar Room. The initial appearance is "The bookshelves lining the walls contain the department library." The description is "Built in and sturdily made." The printed name is "bookshelf". Understand "shelf" or "shelves" or "bookshelf" as the LSR bookcase.
 
-The big table is a supporter in the Language Studies Seminar Room.  The initial appearance is "The [big table] at the cen[ter] of the room is an irregular polygon[if exactly one chair is visible and no chair is mentioned], with one [random visible chair] pushed up to the shortest side[end if]."
+The big table is a supporter in the Language Studies Seminar Room.  "The [big table] at the cen[ter] of the room is an irregular polygon[if exactly one chair is visible], with one [random visible chair] pushed up to the shortest side[end if]."
 	The introduction is "I think the shape is intended to undermine traditional conceptions of academic hierarchy, but in practice it  just means that whoever gets to seminar late has to sit with a table angle jabbing him in the stomach."
 	The description is "Crafted from some exotic wood with lots of interesting burl structure. There was a wealthy donor behind the construction of this room."
 
@@ -14863,7 +14863,7 @@ Instead of putting the restoration gel on the Origin Paste:
 	say "[We] dip out some of the gel and touch it to the Origin Paste. There is a violent, fizzy reaction; lavender and mint fumes; and then the two substances appear to have worked out their mutual antipathy. The dollop of gel is gone, the cake of paste slightly smaller than it used to be."
 
 Instead of putting the restoration gel on something:
-	say "[We] dip out [if the heft of the second noun is 1]fingertip-coating[otherwise]pea-sized[end if] quantity of gel and rub it gently onto [the second noun]. [run paragraph on]";
+	say "[We] dip out a [if the heft of the second noun is 1]fingertip-coating[otherwise]pea-sized[end if] quantity of gel and rub it gently onto [the second noun]. [run paragraph on]";
 	gel-convert second noun.
 	
 Instead of putting the restoration gel on something fluid:
@@ -14908,7 +14908,7 @@ Instead of putting the restoration gel on an original person:
 	if the second noun is an animal:
 		continue the action;
 	otherwise:
-		say "[one of][We] dip out [if the heft of the second noun is 1]fingertip-coating[otherwise]pea-sized[end if] quantity of gel and approach [the second noun] with it. 'Hey!' says [the second noun]. 'That was really cold! What do you think you're doing?'
+		say "[one of][We] dip out a [if the heft of the second noun is 1]fingertip-coating[otherwise]pea-sized[end if] quantity of gel and approach [the second noun] with it. 'Hey!' says [the second noun]. 'That was really cold! What do you think you're doing?'
 
 But no exciting conversions occur.[or][We] get some gel and try to be subtle about touching it to [the second noun], but [regarding the second noun][they] [adapt the verb shy] away, startled. Well, it likely wouldn't have had an effect anyway.[stopping]".
 	
@@ -20905,6 +20905,8 @@ Definition: a person is contained:
 	if it is on a supporter which is not in the repository:
 		yes;
 	no.
+
+To make is a verb.
 
 Check something exiting when the actor is an animal in the kayak:
 	say "[one of][The person asked] [make] as though to climb out of the kayak, then [see] that everything outside is made of water, and withdraw[s] sulkily.[or][The person asked] waits in the bottom of the kayak.[stopping]" instead.
