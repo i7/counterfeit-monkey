@@ -27752,19 +27752,19 @@ After reading a command:
 	if the player's command includes "test":
 		replace the matched text with "utest".
 
-Understand "ultratest [text]" as ultratesting. Ultratesting is an action applying to one topic.
+Understand "ultratest [text]" as ultratesting. Ultratesting is an action out of world applying to one topic.
 
 Understand the command "utest" and "ultra-test" as "ultratest".
 
 Carry out ultratesting a topic:
 	if the topic understood is a topic listed in the table of ultratests:
+		if there is a setting entry:
+			say "Moving to [setting entry].";
+			move player to setting entry;
 		if there is a stuff entry:
 			repeat with item running through stuff entry:
 				say "Procuring [the item].";
 				move item to the player;
-		if there is a setting entry:
-			say "Moving to [setting entry].";
-			move player to setting entry;
 	call test.
 
 To call test:
