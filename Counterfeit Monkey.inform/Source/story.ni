@@ -20906,7 +20906,6 @@ Definition: a person is contained:
 		yes;
 	no.
 
-[I hope these still work]
 Check something exiting when the actor is an animal in the kayak:
 	say "[one of][The person asked] [make] as though to climb out of the kayak, then [see] that everything outside is made of water, and withdraw[s] sulkily.[or][The person asked] waits in the bottom of the kayak.[stopping]" instead.
 
@@ -22170,12 +22169,6 @@ buy a drink is an unlisted repeatable purchasing quip.
 The generic cocktail is a [scenery][Bad!] thing. Understand "drink" as the generic cocktail. It is carried by the bartender. [Instead of doing something other than buying with the generic cocktail: say "All the cocktails here are specific recipes."]
 [Having people carry scenery makes the compiler go crazy]
 
-Rule for deciding the concealed possessions of the bartender:
-	if the current action is looking:
-		yes;
-	otherwise:
-		no.
-
 Carry out the bartender discussing buy the screwdriver:
 	move the screwdriver to the dor-bar-top;
 	homonym-paddle the screwdriver; 
@@ -22184,7 +22177,6 @@ Availability rule for buy the gimlet:
 	if gimlet is not bartender-carried, it is off-limits;
 	make no decision.
 	 
-
  buy the gimlet is a purchasing quip.
 Understand "buy gimlet" as buy the gimlet.
  It mentions gimlet, gimlets.
@@ -22226,8 +22218,12 @@ Definition: a thing is drink-form:
 		yes;
 	no.
 
-[Rule for deciding the concealed possessions of the bartender:
-	if the particular possession is the homonym paddle:
+Rule for deciding the concealed possessions of the bartender:
+	if the current action is looking and the particular possession is the generic cocktail:
+		yes;
+	no.
+
+	[if the particular possession is the homonym paddle:
 		no;
 	yes.]
 	
@@ -24349,9 +24345,6 @@ Time up is an NPC-directed quip.
 [TODO:][fix][How to allow Showing non-carried things?]
 
 The carrying requirements rule does nothing when the action name part of the current action is the showing it to action.
-
-[When showing something to someone (this is the showing something to someone rule): 
-	ignore the carrying requirements rule.]
 	
 The can't show what you haven't got rule is not listed in any rulebook.
 The block showing rule is not listed in any rulebook.
@@ -25823,7 +25816,7 @@ Rule for beat-producing when the current interlocutor is my mother:
 		else:
 			say "Mother looks faintly bewildered.";
 	say run paragraph on.
-	
+
 [TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
