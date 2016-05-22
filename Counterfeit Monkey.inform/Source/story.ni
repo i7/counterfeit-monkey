@@ -989,7 +989,7 @@ Report requesting the score:
 		say "You have not yet removed [disjoint list of remaining letters] from anything.";
 	follow the list achievements rule.
 
-To say disjoint (L - a list of indexed texts):
+To say disjoint (L - a list of texts):
 	let N be the number of entries in L; 
 	repeat with I running from 1 to N:
 		say entry I in L;
@@ -1160,7 +1160,6 @@ To read the achievements:
 	
 To record (slug - some text) as an achievement:
 	read the achievements;
-	let N be indexed text;
 	let N be "[slug]";
 	unless N is a used achievement:
 		choose a blank row in the Table of Possible Achievements;
@@ -1186,8 +1185,7 @@ This is the list achievements rule:
 		repeat through the Table of Possible Achievements:
 			say "  [achievement entry][line break]".
 
-To decide whether (chosen ending - indexed text) is a used achievement: 
-	let N be indexed text; 
+To decide whether (chosen ending - text) is a used achievement: 
 	let N be "[chosen ending]"; 
 	repeat through the Table of Possible Achievements:
 		if N is achievement entry: 
@@ -2512,7 +2510,7 @@ Check finding something that is in the repository:
 	say "Who knows where [the noun] went?" instead.
 	
 Check finding something that is enclosed by the player:
-	say "[We][']re carrying [the noun]." instead.
+	say "[We're] carrying [the noun]." instead.
 
 Check finding a backdrop:
 	say "[The noun] [aren't] in one specific location." instead.
@@ -2570,8 +2568,8 @@ Every turn:
 
 Rule for describing path of the player:
 	let N be the number of entries in the described motion of the player;
+	let C be some text;
 	if N is greater than 0:
-		let C be indexed text;
 		if path description count is greater than 0:
 			let C be "[one of]Then[or]Next[or]From there[or]After that[as decreasingly likely outcomes] ";
 		let C be "[C][one of][We] [or][We] have a [walk-length for N][or][We] make the [optional walk-length for N][or]It's a [walk-length for N][at random]"; 
@@ -2822,12 +2820,10 @@ Rule for distantly describing a proper-named room (called target) (this is the n
 The default distant description rule is not listed in any rulebook.
 
 Rule for distantly describing a room (called target):
-	let N be indexed text;
 	let N be "[the target]";
 	say "[We] can make out [N in lower case] that way."
 	
 Rule for distantly describing a room (called target) which encloses someone when the location is indoors:
-	let N be indexed text;
 	let N be "[the target]";
 	say "That way [we] can see [unless the target is proper-named][N in lower case][otherwise][the target][end if], in which [is-are a list of people enclosed by the target]."
 	
@@ -3380,8 +3376,7 @@ Sanity-check approaching a room when the player carries a heavy thing (called th
 		stop the action. 
 	
 To reduce the/-- iron-pans: 
-	let N be indexed text;
-	now N is "s";
+	let N be "s";
 	now the current setting of the letter-remover is "[N]";
 	say "In the interest of compactness, [we] S-remove the pans. [run paragraph on]";
 	try waving the letter-remover at the iron-pans. 
@@ -5210,7 +5205,6 @@ Instead of setting the code-lock to something:
 		say "We set the wheels of [the code-lock] to [the topic understood].[paragraph break]Click! The barrier door locks.";
 		now the temporary barrier is locked; 
 	otherwise:
-		let N be indexed text;
 		let N be "[the topic understood]";
 		if N exactly matches the regular expression "\d*":
 			say "The barrier door was already locked, but this just seems to have made it more certain of the fact.";
@@ -5462,7 +5456,6 @@ An instructional rule (this is the teach examining thoroughness rule):
 		make no decision;
 	if we have examined the mourning dress:
 		make no decision;
-	let N be indexed text; 
 	say "[first custom style]Now we're in a new area, there are new things to see. Try LOOK AT THE SHOPS or L SHOPS.[roman type]";
 	now the expected action is the action of examining the clothing shops;
 	now the held rule is the teach examining thoroughness rule;
@@ -5586,7 +5579,6 @@ An instructional rule (this is the teach more compass directions rule):
 		make no decision;
 	if way is nothing:
 		make no decision;
-	let N be indexed text;
 	let N be "[way]";
 	say "[first custom style][one of]You can spend some more time looking around or checking out your inventory to see what you've changed in this location. When you're ready to move on, you can head[or]When you want to move to a new location, you can go[stopping] [N in upper case].[roman type]";
 	now the expected action is the action of going way;
@@ -6377,7 +6369,7 @@ To say climactic event:
 To say denouement event:
 	say "[one of][viewpoint character] applies restoration gel to an easter egg, which turns into a young boy[or]citizens erect a stone monument of a rooster, on a high platform overlooking the sea. Then [viewpoint character] garlands the monument with flowers[or]a priest reads the service over a casket[or]half a dozen children seated on a porch eat fried eggs from the same pan. They have a wild-eyed look, which [viewpoint character] seems to find frightening or sad[at random]";
 	
-The viewpoint character is indexed text that varies.
+The viewpoint character is text that varies.
 
 To say first arrival:
 	say "The scene opens on [a viewpoint character][one of] seated in the sunshine[or] reading a newspaper[or] kneeling in the dirt outside a farmhouse[or] walking across a field[or] doing some shopping at a farmer's market[or] carrying a cage containing a rabbit[or] putting eggs into a basket[or] purchasing a set of paints[or] speaking earnestly if incomprehensibly to camera[or] reading aloud from a small black book that looks much battered[or] peering into a cracked mirror[or] drawing one finger across a map of the Mediterranean[or] cutting letters from a newspaper with a pair of nail scissors[or] gathering a clump of grubby carrots and washing them at a pump[at random]";
@@ -8664,7 +8656,7 @@ Check waving the letter-remover at the Traffic Circle when the current setting o
 
 Traffic Circle is inside from the Roundabout. It is a privately-controlled outdoors road. 
 
-[TODO:][fix]
+[TODO:][test]
 
 The no-dropping rule does nothing when the current action is dropping the restoration-gel rifle and the location is Traffic Circle.
 
@@ -9235,7 +9227,6 @@ topic	description
 "flight of the bumblebee"	"Our rendition starts off energetic and then becomes less and less accurate and more and more like a mad monkey attacking a keyboard."
 
 Report improvising the topic understood on the piano:
-	let title be indexed text;
 	let title be "[the topic understood]";
 	say "It's rocky going at first, but we eventually manage to play the essential tune of '[title in title case]'." instead.
 
@@ -12051,8 +12042,7 @@ This is the tunnel-display rule:
 Software can be quittable. A software is usually not quittable. Security-program is quittable. Access-database is quittable.
 
 A first input handling rule for quittable software (called chosen software):
-	let N be indexed text;
-	let N be the topic understood;
+	let N be "[the topic understood]";
 	if N is "main":
 		reset to operating system;
 		say "[We] return to the operating system.";
@@ -13716,19 +13706,16 @@ A room has a number called the hash code.
 
 When play begins (this is the initialize hash codes rule):
 	repeat with item running through things which are not facts:
-		let T be indexed text;
 		let T be "[item]";
 		now the item is unseen;
 		now the hash code of the item is letter-hash of T;
 	repeat with item running through rooms:
-		let T be text;
-		let T be "[item]"; 
+		let T be "[item]";
 		now the hash code of the item is letter-hash of T.
 		
 To reset hash code of (item - a thing):
-	let T be text;
-		let T be "[item]"; 
-		now the hash code of the item is letter-hash of T.
+	let T be "[item]";
+	now the hash code of the item is letter-hash of T.
 		
 To say (N - number) as letter-hash:
 	(- ShowLetterHash({N}); -).
@@ -13743,7 +13730,7 @@ To decide which number is (X - number) with (Y - number) removed:
 	(- ({X} & (~{Y})) -).
 	
 
-To demonstrate letter-hash of (T - indexed text):
+To demonstrate letter-hash of (T - text):
 	say "The hash of <[T]> is [letter-hash of T as letter-hash].";
 
 [When play begins:
@@ -13753,10 +13740,12 @@ To demonstrate letter-hash of (T - indexed text):
 	demonstrate letter-hash of "empress";
 	let t be the letter-hash of "temptress";
 	let r be the letter-hash of "t";
-	say "temptress with t removed: [t with r removed as letter-hash]."; ]
+	say "temptress with t removed: [t with r removed as letter-hash].";]
 
 Include (-
-[ LetterHash T i n c d b m;
+[ LetterHash T i n c d b m cp cc;
+	cp = T-->0;
+	cc = TEXT_TY_Temporarily_Transmute(T);
 	n = TEXT_TY_CharacterLength(T);
 	for (i=0: i<n: i++) {
 		d = -1;
@@ -13769,11 +13758,13 @@ Include (-
 			m = m | b;	
 		}
 	}
+	TEXT_TY_Untransmute(T, cc, cp);
 	return m;
 ];
+
 [ ShowLetterHash h i b;
 	for (i=0, b=1; i<26; i++, b=b*2) {
-		if (h&b) print 1; else print 0;
+		if (h&b) print "1"; else print "0";
 	}
 ];
 -);
@@ -13825,7 +13816,7 @@ After printing the name of the letter-remover device while taking inventory:
 	otherwise if the letter-remover device is creature-enabled:
 		say " (upgraded to handle animates)".
 
-The letter-remover device has some indexed text called current setting. The current setting of the letter-remover device is "r". 
+The letter-remover device has some text called current setting. The current setting of the letter-remover device is "r".
 
 To say a-an (item - letter-remover device):
 	if the current setting of the letter-remover device is listed in the vowel-starting list: 
@@ -13834,7 +13825,7 @@ To say a-an (item - letter-remover device):
 		say "a";
 	say " [letter-remover device]";
 
-The vowel-starting list is a list of indexed texts that varies. The vowel-starting list is { "a", "e", "f", "h", "i", "l", "m", "n", "o", "r", "s", "x" }. 
+The vowel-starting list is a list of texts that vary. The vowel-starting list is { "a", "e", "f", "h", "i", "l", "m", "n", "o", "r", "s", "x" }. 
  
 A small knob is part of the letter-remover device. Understand "dial" as the small knob when the lock is not visible. The description is "It is very delicately made and stamped with letters around the circumference. The currently up-facing letter is [the current setting of the letter-remover device]."
 
@@ -13904,8 +13895,7 @@ Check tuning it to:
 	if the noun is not the letter-remover device, say "[The noun] cannot be tuned." instead.
 	
 Check tuning it to:
-	let N be indexed text;
-	let N be the topic understood; 
+	let N be "[the topic understood]"; 
 	if the number of characters in N is greater than 1:
 		say "[We] can only tune the letter-remover device to one letter at a time." instead;
 	now N is "[N in lower case]";
@@ -13970,14 +13960,12 @@ Setting action variables for waving the letter-remover device at an object which
 	if comparison number is the hash code of the second noun:
 		now letter absence is true;
 	otherwise:
-		let starting text be indexed text;
 		let starting text be "[printed name of the second noun]";
 		let starting text be "[starting text in lower case]";  
 		replace the regular expression "[current setting]" in the starting text with "";  
 		now generated object is the letter-remover device;
 		repeat with item running through things in repository: 
 			if comparison number is the hash code of the item:
-				let goal text be indexed text;
 				let goal text be "[printed name of the item]";  
 				let goal text be "[goal text in lower case]";
 				if the goal text is the starting text:
@@ -13986,7 +13974,7 @@ Setting action variables for waving the letter-remover device at an object which
 		if the generated object is the letter-remover device:
 			now the disappointment text is the starting text.
 							
-The disappointment text is some indexed text that varies.
+The disappointment text is some text that varies.
 
 [Check waving the letter-remover at a foreign-tongued thing:
 	say "[The letter-remover] squeaks as though frightened[one of]. Apparently encountering objects that aren't in English generates its own alarm tone[or] by the foreign-language [second noun][stopping]." instead. ]
@@ -14011,7 +13999,6 @@ Check waving the letter-remover at something which is enclosed by the player:
 
 Check waving the letter-remover at something creating the letter-remover:
 	if the disappointment text matches the regular expression ".*\s.*":
-		let presumed second noun be indexed text;
 		let presumed second noun be "[second noun]";
 		let C be the number of words in presumed second noun;
 		let presumed second noun be "[word number C in presumed second noun]";
@@ -14067,7 +14054,7 @@ Carry out waving the letter-remover device at something:
 		record "Admiral Thoureaux award for removing every letter of the alphabet in one playthrough" as an achievement;
 	[add the current setting of the letter-remover to the list of removed letters, if absent. ] 
 	
-The list of remaining letters is a list of indexed text that varies. The list of remaining letters is { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"}.
+The list of remaining letters is a list of text that varies. The list of remaining letters is { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"}.
  
 
 Report waving the letter-remover device at something:
@@ -14123,10 +14110,8 @@ She grins at us and sets the glass down neatly on the bar.[or]This time she lays
 	
 		
 To decide what thing is the homonym-match of (target - a thing):
-	let old text be indexed text;
 	let old text be "[target]";
 	let old text be "[old text in lower case]";
-	let new text be indexed text;
 	repeat with item running through things in the repository:
 		if the hash code of the item is the hash code of target:
 			let new text be "[item]";
@@ -14157,12 +14142,11 @@ Sanity-check inserting something irretrievable into the T-inserter:
 After inserting something into the T-inserter:
 	try teeing the noun.
 
-teeing is an action applying to one thing. The teeing action has an object called the goal-object (matched as "to"). The teeing action has a number called the t-count. The teeing action has a list of objects called the possible-goals. The teeing action has a list of indexed texts called the possible-goal-texts.
+teeing is an action applying to one thing. The teeing action has an object called the goal-object (matched as "to"). The teeing action has a number called the t-count. The teeing action has a list of objects called the possible-goals. The teeing action has a list of texts called the possible-goal-texts.
 
 [We can't guess where to stick our ts in order to arrive at other objects. And because the starting object might already contain one or more instances of T, we can't just strip the Ts from our goal objects and see if they match. What we have to do instead is go through the name of all our target objects, subtract the name of the starting object, and see if all that is left is a string of ts. This gives us an opportunity to do some detailed work with individual characters:]
 
 Setting action variables for teeing something:
-	let starting text be indexed text;
 	let starting text be "[printed name of the noun]"; 
 	let Y be the letter-hash of "t";
 	let comparison number be the hash code of the noun with Y added;
@@ -14173,21 +14157,18 @@ Setting action variables for teeing something:
 			if the goal text is "0", let matching success be false;
 			let X be the number of times the goal text matches the regular expression "<tT>"; 
 			[say "[item]: [goal text] (success [matching success])[line break]";]
-			if the matching success is true and goal text exactly matches the regular expression	 "<tT>+":
-				let name text be indexed text;
+			if the matching success is true and goal text exactly matches the regular expression "<tT>+":
 				let name text be "[item]";
 				unless name text is listed in possible-goal-texts:
 					if the goal-object is multiply-made or the goal-object is nothing:
 						now the goal-object is the item;
 						now the t-count is X;
 					add item to the possible-goals, if absent;
-					add name text to possible-goal-texts;
+					add name text to possible-goal-texts.
 		
 To decide what text is the name of (Y - an object) minus the name of (X - an object):
-	let starting text be indexed text;
 	let starting text be "[X]"; 
 	let starting text be "[starting text in lower case]";
-	let goal text be indexed text;
 	let goal text be "[Y]";
 	let goal text be "[goal text in lower case]";
 	let character count be the number of characters in the goal text; 
@@ -14202,9 +14183,8 @@ To decide what text is the name of (Y - an object) minus the name of (X - an obj
 	if next is less than max: 
 		now matching success is false;
 	replace the regular expression "\p*" in the goal text with ""; [we strip out the replaced bits]
-	[say "found: [goal text]";]
 	if matching success is true, decide on the goal text;
-	otherwise decide on "0";
+	otherwise decide on "0".
 		
 Check teeing something:
 	if the goal-object is nothing, 
@@ -14436,7 +14416,6 @@ To synthesize contents of (source - a thing):
 						now the chosen article is the item; 
 	if the chosen article is not Y:
 		if the heft of the chosen article is greater than 4 and source is synthesizer:
-			let N be indexed text;
 			let N be "[chosen article]";
 			say "An indicator message lights up: OVERRIDE: GENERATED OBJECT [N in upper case] EXCEEDS MAXIMUM SIZE LIMIT.";
 			stop;
@@ -14526,16 +14505,14 @@ This is the spinner-turning rule:
 	[since the spinner's likely to be undoing its own work, allow it to get the original back.]
 	if the chosen article is proffered by something (called the source) which is not the chosen article:		
 		if the hash code of the source is the hash code of X:
-			let item text be indexed text;
-			now item text is "[source]";
+			let item text be "[source]";
 			now item text is "[item text in lower case]";
 			if the goal text is item text:
 				now the chosen article is the source;  
 	if the chosen article is X: 
 		repeat with item running through things in the repository:
 			if the hash code of the item is the hash code of X:
-				let item text be indexed text;
-				now item text is "[item]";
+				let item text be "[item]";
 				now item text is "[item text in lower case]";
 				if the goal text is item text:
 					now the chosen article is the item; 
@@ -14612,7 +14589,6 @@ Every turn when the turntable is visible and something is on the turntable:
 This is the turntable-turning rule:
 	let the chosen article be a random thing on the turntable;
 	let X be the chosen article;
-	let the goal text be indexed text;
 	let goal text be "[printed name of the X]";
 	if the turntable is clockwise
 	begin;	[put first letter at the end, as in ape --> pea]
@@ -15087,10 +15063,8 @@ Check shooting something with the loaded anagramming gun:
 	repeat with item running through things in the repository:
 		if the hash code of the item is the hash code of the noun:
 			[say "[item]: ";]
-			let initial name be indexed text;
 			let initial name be "[noun]"; 
 			let initial name be "[initial name in lower case]"; 
-			let comparison name be indexed text;
 			let comparison name be "[item]"; 
 			let comparison name be "[comparison name in lower case]"; 
 			let comparison key be the anagram key of the item;
@@ -15104,13 +15078,11 @@ Check shooting something with the loaded anagramming gun:
 	otherwise:
 		now detritus is entry max of the possibles list. 
 
-To decide what list of indexed text is the anagram key of (n - an object):
-	let anagram key be a list of indexed text;
-	let starting form be indexed text;
+To decide what list of text is the anagram key of (n - an object):
+	let anagram key be a list of text;
 	let starting form be "[n]";
 	let count be the number of characters in starting form;
 	repeat with i running from 1 to count:
-		let char be indexed text;
 		let char be "[character number i in starting form]";
 		let char be "[char in lower case]";
 		if char is not " ":
@@ -15327,7 +15299,6 @@ But the effect fades almost instantly." instead.
 
 Report inserting something into the umlaut punch:
 	say "[We] put [the noun] into the wire basket of the umlaut punch. There is a hum as the punch warms up, then a bang! as the tines come down sharply, tattooing [the noun].[paragraph break]";
-	let sample be indexed text;
 	let sample be "[noun]";
 	now sample is "[sample in lower case]";
 	let replacement made be false;
@@ -15613,7 +15584,7 @@ A dangerous construction rule for something (called the target):
 Test bucket-size with "put coat in bucket / wave a-remover at coat / get cot / put cot in bucket" holding the coat in the Generator Room. 
 
 After inserting something into the cryptolock: 
-	let goal text be indexed text;
+	let goal text be text;
 	if hardness is true:
 		if the cryptoswitch is switched on:
 			let goal text be the back hard encryption of the noun; 
@@ -15629,8 +15600,7 @@ After inserting something into the cryptolock:
 	let chosen article be the noun;
 	repeat with item running through things in the repository:
 		if the hash code of the item is the source hash:
-			let item text be indexed text;
-			now item text is "[item]";
+			let item text be "[item]";
 			now item text is "[item text in lower case]";
 			if the goal text is item text:
 				now the chosen article is the item; 
@@ -15672,7 +15642,6 @@ Test crypto with "tutorial off / autoupgrade / x boiler / look through pane / w 
 To avoid confusion during the replacement process, we replace lower-case letters with upper-case ones to show they've already been changed.]
 
 To decide what text is the encryption of (X - a thing): 
-	let goal text be indexed text;
 	let goal text be "[printed name of the X]";
 	let goal text be "[goal text in lower case]";
 	replace the text "a" in goal text with "E";
@@ -15683,8 +15652,7 @@ To decide what text is the encryption of (X - a thing):
 	let goal text be "[goal text in lower case]";
 	decide on goal text.
 	
-To decide what indexed text is the back encryption of (X - a thing): 
-	let goal text be indexed text;
+To decide what text is the back encryption of (X - a thing): 
 	let goal text be "[printed name of the X]";
 	let goal text be "[goal text in lower case]";
 	replace the text "a" in goal text with "U";
@@ -15700,8 +15668,7 @@ To decide what indexed text is the back encryption of (X - a thing):
 
 To figure out whether the game supplied any objects that could fruitfully be encrypted this way, we ran the encryption on every object in the game and inspected the results for things that were really words.]
 	
-To decide what indexed text is the hard encryption of (X - a thing):
-	let goal text be indexed text;
+To decide what text is the hard encryption of (X - a thing):
 	let goal text be "[printed name of the X]";
 	let goal text be "[goal text in lower case]"; 
 	replace the text "a" in goal text with "B";
@@ -15733,8 +15700,7 @@ To decide what indexed text is the hard encryption of (X - a thing):
 	let goal text be "[goal text in lower case]";
 	decide on goal text.
 	
-To decide what indexed text is the back hard encryption of (X - a thing):
-	let goal text be indexed text;
+To decide what text is the back hard encryption of (X - a thing):
 	let goal text be "[printed name of the X]";
 	let goal text be "[goal text in lower case]"; 
 	replace the text "a" in goal text with "Z";
@@ -19836,9 +19802,8 @@ Definition: a thing is synthesizable:
 
 To say stat-type:
 	say "[one of]average[or]mean[or]median[or]standard deviations in[or]modal distribution in[at random] ";
-	let Custom be indexed text;
-	now Custom is "size";
-	let Generic be indexed text;
+	let Custom be "size";
+	let Generic be text;
 	let P be a random seen synthesizable thing which is not r-abstract;
 	if P is an animal:
 		if P is a man or P is a woman:
@@ -19994,11 +19959,11 @@ The chosen tale-gift is a tale-gift that varies.
 The chosen tale-villain is a tale-villain that varies.
 
 
-Tale-resolution is indexed text that varies.
-Tale-donation is indexed text that varies.
-Tale-danger is indexed text that varies.
-Tale-intro is indexed text that varies.
-Tale-fight is indexed text that varies.
+Tale-resolution is text that varies.
+Tale-donation is text that varies.
+Tale-danger is text that varies.
+Tale-intro is text that varies.
+Tale-fight is text that varies.
 
 To say generated tale:
 	[first assign values]
@@ -20008,11 +19973,10 @@ To say generated tale:
 	now the chosen tale-gift is a suitable gift for the chosen tale-apex;
 	now the chosen tale-villain is a suitable villain for the chosen tale-apex;
 	[now assign text to values]
-	let t-hero be indexed text;
+	let t-hero be text;
 	let t-nom be "he";
 	let t-obj be "him";
 	let t-pos be "his";
-	let t-activity be indexed text;
 	let t-activity be "doing the daily chores";
 	if the chosen tale-protagonist is:
 		-- t-farmer:
@@ -20034,7 +19998,7 @@ To say generated tale:
 		let t-pos be "her";
 	otherwise if a random chance of 1 in 2 succeeds:
 		let t-hero be "[t-hero]'s son";
-	let t-helper be indexed text;
+	let t-helper be text;
 	if the chosen tale-helper is:
 		-- t-squid:
 			now t-helper is "[one of]giant [or]speckled [or]vast [or]white [or][at random]squid";
@@ -20044,7 +20008,7 @@ To say generated tale:
 			now t-helper is "[one of]wrinkled [or]toothless [or]squinting [or]hardy [or]needy [or]starving [or][or][at random][one of]monk[or]mendicant[or]friar[or]beggar[or]vagabond[at random]"; 
 		-- t-spirit:
 			now t-helper is "[one of]secretive [or]wailing [or]powerful [or]cruel [or]subtle [or][or][or][or][at random][one of]spirit[or]god[or]demon[or]ghost[or]seraph[or]genie[or]representation of [one of]Poverty[or]Need[or]War[or]Charity[or]Justice[or]Purpose[at random][or]spirit of that town[as decreasingly likely outcomes]";
-	let t-antagonist be indexed text;
+	let t-antagonist be text;
 	if the chosen tale-villain is:
 		-- t-foreigner:
 			now t-antagonist is "[one of]man from a foreign land[or]woman speaking in a strange tongue[or]foreigner[or]sailor[at random]";
@@ -20057,7 +20021,7 @@ To say generated tale:
 				now the t-antagonist is "[one of]ferocious beast[or]great boar[or]ravaging beast[or][a random number between 2 and 12 in words]-[one of]headed[or]tailed[or]legged[or]tongued[at random] [one of]lion[or]dog[or]bull[or]unicorn[or]scorpion[or]tiger[at random][or]beast that can't be killed (because it has no name)[or]Epsilivore that walks the land eating the letter E[as decreasingly likely outcomes]";
 		-- t-multiple-creature:
 			now the t-antagonist is "horde of deplural[ize]d [one of]merchants[or]pirates[or]soldiers[or]spies from a foreign land[as decreasingly likely outcomes] traveling as one man";
-	let t-tool be indexed text;
+	let t-tool be text;
 	if the chosen tale-gift is:
 		-- t-sword:
 			now the t-tool is "[one of]rapier[or]cutlass[or]longsword[or]broadsword[or]shortsword[or]sword[at random]";
@@ -20096,13 +20060,12 @@ To say generated tale:
 				now t-tool is "[one of]gift of lying[or]pair of spectacles that see through ink[at random]";
 			otherwise:
 				now t-tool is "[one of]wistful smile[or]bashful grin[or]raucous laugh[or]brilliant smile[or]beguiling tune[or]naughty limerick[at random]";
-	let t-solution be indexed text;
+	let t-solution be text;
 	if the chosen tale-apex is:
 		-- t-defeats:
 			now the t-solution is "[one of]destroy[or]kill[or]maim[or]attack[at random] the [t-antagonist]";
 			if the chosen tale-helper is t-spirit:
 				if the chosen tale-gift is t-sword or chosen tale-gift is t-dagger:
-					let agonist be indexed text;
 					let agonist be "[t-antagonist]";
 					if agonist matches the regular expression ".(.*)":
 						now agonist is "[text matching subexpression 1]";
@@ -20534,7 +20497,6 @@ Instead of listening to the titter:
 [There's really no need for the randomized laughter here, but then again, why not? It's in keeping with lots of other elements in the game.]
 
 To say titter-noise:
-	let sound be indexed text;
 	let sound be "[one of]hee[or]he[or]hu[at random]";
 	let N be a random number from 2 to 4;
 	repeat with index running from 1 to N:
@@ -20863,7 +20825,6 @@ The description of the wire rack is "The new rack is miraculously much larger th
 The word is r-abstract. The heft of the word is 0. The description is "At the moment, the word is '[recent word]', floating about in [one of]handsome Garamond[or]Arno Pro[or]unmistakable Hoefler[or]slick Buivinga[or]elegant Didot[or]unimaginative Times[or]Helvetica[or]solid-bodied Gotham[at random] lettering."
 
 To say recent word:
-	let N be indexed text;
 	let N be "[description of a random visible thing]";
 	let count be the number of words in N;
 	let index be a random number between 1 and count;
@@ -20875,10 +20836,9 @@ The description of wordage is "A big lump of text that appears as though it's go
 
 To say generictext:
 	let N be a random number between 20 and 30;
-	let assemblage be indexed text;
+	let assemblage be text;
 	repeat with I running from 1 to N: 
-		let content be indexed text;
-		now content is "[description of a random seen thing]";
+		let content be "[description of a random seen thing]";
 		if content is "":
 			next;
 		let max be the number of words in content;
@@ -23682,7 +23642,6 @@ The secondary apology of the gift shop volunteer is "[one of]sorry[or]I'm afraid
 The generic confrontational of the gift shop volunteer is "miss".
 
 Instead of asking the gift shop volunteer about something:
-	let N be indexed text;
 	let N be "[one of][generic adversative of the gift shop volunteer][or][secondary apology of the gift shop volunteer][at random]" in sentence case;
 	say "[We] frame up a vague question about [the second noun].
 	
@@ -27361,8 +27320,8 @@ When play begins:
 	say "The full list is [list of things in the repository].";
 	let C be 0;
 	now all things are uncounted;
-	let X-name be indexed text;
-	let Y-name be indexed text;
+	let X-name be text;
+	let Y-name be text;
 	repeat with X running through things in the repository:
 		let X-name be the printed name of X;
 		if X is uncounted:
@@ -27423,9 +27382,9 @@ Understand "check indoors" as checking indoors.
 Carry out checking indoors:
 	repeat with item running through rooms:
 		say "[item]: ";
-		if item is indoors: 
+		if item is indoors:
 			say "indoors[line break]";
-		if item is outdoors: 
+		if item is outdoors:
 			say "outdoors[line break]".
 
 [Object response tests will do this, but as it's particularly common to add an object to the repository and then come back and do the description later, it's useful to have a shorthand way to look for which objects have slipped through the cracks and still need a fresh description.]
@@ -27724,8 +27683,7 @@ Carry out testing anagrams:
 		say " - [item][line break]";
 
 To hash (N - a thing):
-	let anagram key be a list of indexed text;
-	let starting form be indexed text;
+	let anagram key be a list of text;
 	let starting form be "[n]";
 	let count be the number of characters in starting form;
 	repeat with i running from 1 to count:
@@ -27773,7 +27731,6 @@ Understand "list length [number]" as listing lengths. Listing lengths is an acti
 
 Carry out listing lengths:
 	repeat with item running through portable things:
-		let starting form be indexed text;
 		let starting form be "[item]";
 		let N be the number of characters in starting form;
 		if N is the number understood:
@@ -27789,7 +27746,6 @@ Carry out listing anagram probables:
 			next;
 		if item is a person:
 			next;
-		let starting form be indexed text;
 		let starting form be "[item]";
 		let N be the number of characters in starting form;
 		if N is greater than 8:
