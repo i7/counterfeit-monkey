@@ -13694,28 +13694,30 @@ To demonstrate letter-hash of (T - text):
 	say "temptress with t removed: [t with r removed as letter-hash].";]
 
 Include (-
-[ LetterHash T i n c d b m cp cc;
+Array m1 --> 1;
+[ LetterHash T i n c d cp pk;
 	cp = T-->0;
-	cc = TEXT_TY_Temporarily_Transmute(T);
+	pk = TEXT_TY_Temporarily_Transmute(T);
 	n = TEXT_TY_CharacterLength(T);
+	m1-->0 = 0;
 	for (i=0: i<n: i++) {
 		d = -1;
 		c = BlkValueRead(T, i);
 		if ((c >= 'a') && (c <= 'z')) d = c-'a';
 		if ((c >= 'A') && (c <= 'Z')) d = c-'A';
 		if (d >= 0) {
-			b = 1;
-			while (d > 0) { d--; b = b*2; }
-			m = m | b;	
+			@astorebit m1 d 1;
 		}
 	}
-	TEXT_TY_Untransmute(T, cc, cp);
-	return m;
+	TEXT_TY_Untransmute(T, pk, cp);
+	return m1-->0;
 ];
 
-[ ShowLetterHash h i b;
-	for (i=0, b=1; i<26; i++, b=b*2) {
-		if (h&b) print "1"; else print "0";
+[ ShowLetterHash h i j n b;
+	for (i=0: i<26: i++) {
+             n = (3 - i / 8) * 8 + i % 8;
+             for (j=0, b=1: j < n: j++, b=b*2);
+             if (h & b) print "1"; else print "0";
 	}
 ];
 -);
