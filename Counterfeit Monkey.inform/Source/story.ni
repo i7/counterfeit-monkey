@@ -27319,6 +27319,11 @@ Carry out listing all sizes:
 		try listing size N;
 	paragraph break; ]
 	 
+[ The mentioning relation broke horribly when porting from 6G60 because some quips had locations listed as mentioned. The compiler seemed to accept it, but instead a long list of random things were suddenly mentioned by the quip. Use this to test if it happens again. ]
+
+Understand "list mentions" as listing-subjects. Listing-subjects is an action out of world. Carry out listing-subjects:
+		show relation mentioning relation.
+
 
 Section 3 - Verifying Implementation Depth
 
