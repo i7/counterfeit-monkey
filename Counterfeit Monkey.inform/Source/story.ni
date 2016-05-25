@@ -20972,9 +20972,8 @@ After going or entering or exiting when the player is staid:
 
 To report followers:
 	if the number of entries in the incoming-list is not 0:
-		let N be text;
 		let N be "[The incoming-list with definite articles]";
-		say "[N]" in sentence case;
+		say "[N] " in sentence case;
 		say "[one of]trail[or]come[or]follow[or]walk[at random][if the number of entries in incoming-list is 1]s[end if] after us";
 		sort the incoming-list;
 		repeat through the Table of Animal Sets:
