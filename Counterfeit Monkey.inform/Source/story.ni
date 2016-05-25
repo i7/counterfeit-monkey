@@ -1568,7 +1568,6 @@ Plausibility rule for an unlisted quip:
 	it is dubious.
 
 After reading a command: 
-        let N be text; 
         let N be "[player's command]"; 
         replace the regular expression "(hi|hello|hey), (.*)" in N with "\2, \1"; 
         change the text of the player's command to N.
@@ -1816,31 +1815,26 @@ A person has some text called the secondary apology. The secondary apology of a 
 A person has some text called the generic confrontational. The generic confrontational of a person is usually "look".
 
 To say Well:
-	let N be text;
 	let N be "[generic adversative of the current interlocutor]";
 	let N be "[N]" in sentence case;
 	say "[N]".
 
 To say personal no:
-	let N be text;
 	let N be "[generic negative of the current interlocutor]";
 	let N be "[N]" in sentence case;
 	say "[N]".
 	
 To say personal yes:
-	let N be text;
 	let N be "[generic positive of the current interlocutor]";
 	let N be "[N]" in sentence case;
 	say "[N]".
 	
 To say awkward no:
-	let N be text;
 	let N be "[generic adversative of the current interlocutor], [generic negative of the current interlocutor]";
 	let N be "[N]" in sentence case;
 	say "[N][apologetic]"; 
 	
 To say awkward yes:
-	let N be text;
 	let N be "[generic adversative of the current interlocutor], [generic positive of the current interlocutor]";
 	let N be "[N]" in sentence case;
 	say "[N][apologetic]";
@@ -1850,7 +1844,6 @@ To say apologetic:
 		say ", [secondary apology of the current interlocutor]";
 		
 To say awkward confrontation:
-	let N be text;
 	let N be "[generic confrontational of the current interlocutor]";
 	let N be "[N]" in sentence case;
 	say "[N]";
@@ -1858,7 +1851,7 @@ To say awkward confrontation:
 
 To say ignorance:
 	carry out the expressing ignorance by activity with the current interlocutor;
-	say "[run paragraph on]"
+	say "[run paragraph on]";
  
 
 Section 6 - Varieties of Person
@@ -8499,7 +8492,6 @@ To say color-pick:
 	say "[one of][tone-color][or][pastel-color][or][primary-color][or][secondary-color][or][earth-color][or][dark-color][or][patterned][or][metallic-color][at random]".
 	
 To say A person-adjective:
-	let N be text;
 	let N be "[person-adjective]";
 	let P be character number 1 in N;
 	if P is "a" or P is "e" or P is "i" or P is "o" or P is "u" or P is "A" or P is "E" or P is "I" or P is "O" or P is "U":
@@ -13832,15 +13824,13 @@ Understand "[letter-remover] [something]" as waving it at.
 
 After reading a command:
 	say "[run paragraph on]";
-	let N be text;
-	let N be the player's command;
+	let N be "[the player's command]";
 	replace the regular expression " [current setting of the letter-remover]-remover" in N with " letter-remover";
 	change the text of the player's command to N;
 	say "[run paragraph on]";
 	
 After reading a command when the player can touch the letter-remover:  
-	let N be text;
-	let N be the player's command;
+	let N be "[the player's command]";
 	if N matches the regular expression ".-remover":
 		if N matches the regular expression "(.*) (.)-remover (.)*":
 			replace the regular expression "(.*) (.)-remover (.)*" in N with "\2";
