@@ -27769,3 +27769,23 @@ To call test:
 	special_word = NextWordStopped();
 	TestScriptSub();
 -)
+
+Understand "hashtest" as hashtesting. Hashtesting is an action out of world.
+
+Carry out hashtesting:
+	repeat with item running through things which are not facts:
+		unless item is a quip:
+			let T be "[item]";
+			let H be the letter-hash of T;
+			if the hash code of the item is H:
+				say "Hashtest for [item] passed![line break]";
+			else:
+				say "ERROR:Hashtest for [item] FAILED![line break]Hash was [hash code of item], should have been [H]![line break]";
+			now the item is unseen;
+	repeat with item running through rooms:
+		let T be "[item]";
+		let H be the letter-hash of T;
+		if the hash code of the item is H:
+			say "Hashtest for [item] passed![line break]";
+		else:
+			say "ERROR:Hashtest for [item] FAILED![line break]Hash was [hash code of item], should have been [H]![line break]".
