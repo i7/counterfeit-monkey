@@ -7062,6 +7062,10 @@ The fossil is a thing in Crumbling Wall Face. The initial appearance is "Among t
 	Understand "odd" or "spiral-shaped" or "spiral" or "shaped" or "rock" or "stone" as the fossil.
 	The description is "[one of]The spiral rock turns out to be a fossil, from one of those sea creatures long ago.[or]It is perhaps an inch and a half long, the shape of a corkscrew seashell that once housed something small and soft. There are thousands of these things around; they're not exactly valuable, but an interesting curiosity all the same.[stopping]".
 
+Instead of taking the fossil when the fossil is not handled:
+	say "[We] pick it up. [description of fossil][line break]";
+	move fossil to player.
+
 Instead of examining the view of jagged wall when we have not examined the fossil:
 	try examining the fossil.
 
@@ -7274,10 +7278,11 @@ Instead of climbing the decaying old wall:
 
 A chard is in Patriotic Chard-Garden. It is a vegetable. The initial appearance is "A little [chard] still grows in the nearest bed, carefully tended to thrive in this climate." The indefinite article of the chard is "some".
 
-Report taking the chard when the chard is not handled:
+Instead of taking the chard when the chard is not handled and the location is the Patriotic Chard-Garden:
 	say "We pick the chard, leaving bare soil behind.
 		
-A flicker of curtains from inside the house suggests that someone saw us [--] a cleaner, possibly. But then there is a voice, not audible except as a confident rising and falling tone; this will be my mother, saying not to worry and not to interfere." instead.
+A flicker of curtains from inside the house suggests that someone saw us [--] a cleaner, possibly. But then there is a voice, not audible except as a confident rising and falling tone; this will be my mother, saying not to worry and not to interfere.";
+	move the chard to the player.
 
 A soil is a fixed in place thing in the Patriotic Chard-Garden. The indefinite article is "some". The initial appearance is "At our feet is a patch of [soil]." 
 	Understand "ground" or "earth" or "soil" as the soil.
