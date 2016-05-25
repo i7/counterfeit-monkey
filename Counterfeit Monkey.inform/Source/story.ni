@@ -13680,6 +13680,9 @@ To say (N - number) as letter-hash:
 To decide which number is the letter-hash of (T - text):
 	(- LetterHash({T}) -).
 
+To decide which number is the single-letter-hash of (T - text):
+	decide on the hash corresponding to a character of T in the Table of single character hashes.
+
 To decide which number is (X - number) with (Y - number) added:
 	(- ({X} | {Y}) -).
 
@@ -13727,6 +13730,36 @@ Array m1 --> 1;
 	}
 ];
 -);
+
+Table of single character hashes
+character (a text)	hash (a number)
+"a"	16777216
+"b"	33554432
+"c"	67108864
+"d"	134217728
+"e"	268435456
+"f"	536870912
+"g"	1073741824
+"h"	-2147483648
+"i"	65536
+"j"	131072
+"k"	262144
+"l"	524288
+"m"	1048576
+"n"	2097152
+"o"	4194304
+"p"	8388608
+"q"	256
+"r"	512
+"s"	1024
+"t"	2048
+"u"	4096
+"v"	8192
+"w"	16384
+"x"	32768
+"y"	1
+"x"	2
+
 
 Book 3 - Tools
 
@@ -13914,7 +13947,7 @@ Setting action variables for waving the letter-remover device at an object which
 	if the second noun is a direction:
 		make no decision;
 	now the letter absence is false;
-	let Y be the letter-hash of the current setting;
+	let Y be the single-letter-hash of the current setting;
 	let comparison number be the hash code of the second noun with Y removed;
 	if comparison number is the hash code of the second noun:
 		now letter absence is true;
@@ -14107,7 +14140,7 @@ teeing is an action applying to one thing. The teeing action has an object calle
 
 Setting action variables for teeing something:
 	let starting text be "[printed name of the noun]"; 
-	let Y be the letter-hash of "t";
+	let Y be the single-letter-hash of "t";
 	let comparison number be the hash code of the noun with Y added;
 	repeat with item running through things in repository:
 		if the comparison number is the hash code of the item:
