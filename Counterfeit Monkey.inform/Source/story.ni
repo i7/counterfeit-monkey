@@ -27612,9 +27612,7 @@ Carry out testing repository:
 
 Understand "pound showing" as testing showing. Testing showing is an action applying to nothing.
 
-[TODO:][fix this]
-[Procedural rule while analyzing:
-	ignore the test entering rule; [because if you get in and out of things, then the animals will follow and the object loop going through the repository will be corrupted]]
+The test entering rule does nothing when the action name part of current action is the object-analyzing action. [because if you get in and out of things, then the animals will follow and the object loop going through the repository will be corrupted]
 
 Carry out testing showing: 
 	move the repository to the location; 
