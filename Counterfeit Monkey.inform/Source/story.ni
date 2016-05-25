@@ -13662,9 +13662,10 @@ A room has a number called the hash code.
 
 When play begins (this is the initialize hash codes rule):
 	repeat with item running through things which are not facts:
-		let T be "[item]";
-		now the item is unseen;
-		now the hash code of the item is letter-hash of T;
+		unless item is a quip:
+			let T be "[item]";
+			now the item is unseen;
+			now the hash code of the item is letter-hash of T;
 	repeat with item running through rooms:
 		let T be "[item]";
 		now the hash code of the item is letter-hash of T.
