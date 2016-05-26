@@ -27748,7 +27748,7 @@ Carry out ultratesting a topic:
 	if the topic understood is a topic listed in the table of ultratests:
 		if there is a setting entry:
 			say "Moving to [setting entry].";
-			move player to setting entry;
+			move the player to the setting entry, without printing a room description;
 		if there is a stuff entry:
 			repeat with item running through stuff entry:
 				say "Procuring [the item].";
