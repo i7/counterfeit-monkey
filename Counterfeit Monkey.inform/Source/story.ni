@@ -6614,7 +6614,7 @@ Some hard wood floors are scenery in the Dormitory room. Understand "floor" or "
 
 Instead of putting something on the hard wood floors, try dropping the noun.
 
-The locker is a fixed in place closed openable container in the Dormitory Room. The lock is part of the locker. The initial appearance of the locker is "The [locker] you identify as your own sits near one of the beds[if the locker is open], door standing open[otherwise if the lock is part of the locker], still locked with its dial [printed name of lock][otherwise], closed but not locked[end if]. ".
+The locker is a fixed in place closed openable container in the Dormitory Room. The lock is part of the locker. The initial appearance of the locker is "The [locker] you identify as your own sits near one of the beds[if the locker is open], door standing open[otherwise if the lock is part of the locker], still locked with its dial [lock-name][otherwise], closed but not locked[end if]. ".
 
 A ranking rule for the locker: 
 	increase description-rank of the locker by 100.
@@ -6633,7 +6633,11 @@ Instead of turning the lock:
 	
 Understand the command "spin" as "turn".
 
-The description of the lock is "[one of]It's curious, now you look at it: it's a combination lock with a dial face, but no one has bothered putting any numerals onto the dial.[or]Still no numbers on the dial. My mother had a wristwatch like that once. Always a nuisance.[or]I once again contemplate the absence of traditional combination markings on the lock. It must not be meant to be unlocked in the usual way.[or]It's your lock: you brought it with you and put it on the locker. So you must have had some way of opening it again, and not something that would depend on having a clear memory after the operation, either. I don't suppose you remember at all?[stopping]". 
+The description of the lock is "[one of]It's curious, now you look at it: it's a combination lock with a dial face, but no one has bothered putting any numerals onto the dial.[or]Still no numbers on the dial. My mother had a wristwatch like that once. Always a nuisance.[or]I once again contemplate the absence of traditional combination markings on the lock. It must not be meant to be unlocked in the usual way.[or]It's your lock: you brought it with you and put it on the locker. So you must have had some way of opening it again, and not something that would depend on having a clear memory after the operation, either. I don't suppose you remember at all?[stopping]".
+
+To say lock-name:
+	now the lock is seen;
+	say "[printed name of the lock]"
 
 To say key-refusal for (locked-thing - the lock):
 	say "[lock description][paragraph break]".
