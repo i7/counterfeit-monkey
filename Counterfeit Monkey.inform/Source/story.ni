@@ -1710,7 +1710,7 @@ Check saying hello to someone who is not the current interlocutor when the curre
 Check starting a conversation with clientele about something:
 	say "They're... busy. At best interrupting them would interrupt their code, and at worst it would make them think [we] [are] a Bureau agent." instead.
 	
-[Test clientele-bug with "ask parker about slango / ask men about slango" in the Counterfeit Monkey.]
+Test clientele-bug with "ask parker about slango / ask men about slango" in the Counterfeit Monkey.
 
 Carry out starting a conversation with an eavesdropping person about when the current interlocutor is a person:
 	say "[We] give [the noun] a look to say [their] input would be welcome as well.";
