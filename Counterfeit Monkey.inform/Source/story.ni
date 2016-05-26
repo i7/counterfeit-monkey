@@ -13750,7 +13750,7 @@ character (a text)	hash (a number)
 "w"	16384
 "x"	32768
 "y"	1
-"x"	2
+"z"	2
 
 
 Book 3 - Tools
