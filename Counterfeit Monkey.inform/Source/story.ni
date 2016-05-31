@@ -3318,8 +3318,7 @@ Sanity-check approaching a room when the player carries a heavy thing (called th
 		stop the action. 
 	
 To reduce the/-- iron-pans: 
-	let N be "s";
-	now the current setting of the letter-remover is "[N]";
+	now the current setting of the letter-remover is "s";
 	say "In the interest of compactness, [we] S-remove the pans. [run paragraph on]";
 	try waving the letter-remover at the iron-pans. 
 	
