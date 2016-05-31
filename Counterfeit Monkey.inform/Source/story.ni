@@ -1410,7 +1410,7 @@ Report selecting hard mode:
 [TODO fix tests]
 Table of Ultratests (continued)
 topic	stuff
-"hardnames"	{ twig, clock, tomes, army }
+"hardnames"	{ twig, clock, tomes, members, army }
 
 Test hardnames with "tutorial off / hard / y / drop all / look / look carefully / x bent twig / x broken clock / wave t-remover at twig / wave l-remover at clock / wave m-remover at tomes / wave s-remover at members / wave y-remover at army" [holding the twig and the clock and the tomes and the members and the army.]
 
