@@ -1677,20 +1677,18 @@ The new default greeting rule is listed instead of the default greeting rule in 
 Report saying hello to someone when the greeting type is explicit (this is the new default greeting rule):
 	say "[We] [one of]say [one of]hello[or]hi[or]hey[at random] to[or]wave at[or]nod to[or]greet[purely at random] [the noun].[paragraph break][greeting of the current interlocutor][paragraph break]";
 
-Report someone saying hello to the player:
-	say "[greeting of the actor][paragraph break]" instead;
+The new report someone saying hello rule is listed instead of the report someone saying hello rule in the report saying hello to rulebook.
+
+Report someone saying hello to the player (this is the new report someone saying hello rule):
+	say "[greeting of the actor][paragraph break]" instead.
 	
-[fix] [Is the person asked the right person?]
 A person has some text called the greeting. The greeting of a person is usually "'[one of]Hi[or]Hello[or]Hi there[at random],' [the person asked] [say]."
 
 The greeting of the player is "'Hi,' [we] say."
-	
-The default greeting rule is not listed in any rulebook.
-	 
+
 [The can't greet current interlocutor rule is not listed in any rulebook. The check what's being hailed rule is not listed in any rulebook.]
 
 The new check hailing rule is listed instead of the check what's being hailed rule in the check hailing rulebook.
-
 
 Check hailing (this is the new check hailing rule):
 	if the current interlocutor is a visible person:
