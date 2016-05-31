@@ -8140,7 +8140,7 @@ The crate is a container in the Crawlspace. The initial appearance is "[if the l
 [TODO: fix tests]
 Table of Ultratests (continued)
 topic	stuff
-"crate-bug"	{ tub, crate, plans }
+"crate-bug"	{ tub, crate, secret-plans }
 
 Test crate-bug with "drop crate / put tub in crate / wave c-remover at crate / autoupgrade / wave c-remover at crate / open tub / gel rate / put plans in crate / wave c-remover at crate / n" [holding the tub and the crate and the plans.]
 
@@ -26773,7 +26773,7 @@ Report requesting hint about the flash drive:
 Report requesting hint about the bills:
 	say "There's enough money here to supply us anything we need to buy between now and the point where we get off the island." instead.
 
-Report requesting hint about the plans:
+Report requesting hint about the secret-plans:
 	say "Personally, I don't care much about the plans at all, but they're evidently of considerable value to you, assuming you can get them off the island and into the hands of your prospective buyers. Between now and then, they're more of a liability than an asset." instead.
 	
 Report requesting hint about the restoration-gel rifle:
