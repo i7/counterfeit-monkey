@@ -7203,18 +7203,25 @@ He closes the door behind him.";
 Report taking off the monocle in the presence of fake-father:
 	say "Hastily I take off our monocle and palm it. Father shouldn't recogn[ize] us in our current body, but wearing expensive Bureau equipment in his presence would be a terrible idea." instead.
 
-fake-father is a man. fake-father is privately-named. The printed name of fake-father is "Father". Understand "father" as fake-father. The description of fake-father is "He looks put out. Serial Comma Day is supposed to be a day off, even for him." The initial appearance is  "My father is just outside [my home]. He's clipping the cuffs of his trousers so that he won't snag them on anything during his ride in to work. His scooter is propped against the [statue of Noah Webster], ready for action."
+fake-father is a man. fake-father is privately-named. The printed name of fake-father is "Father". Understand "father" and "dad" as fake-father. The description of fake-father is "He looks put out. Serial Comma Day is supposed to be a day off, even for him." The initial appearance is  "My father is just outside [my home]. He's clipping the cuffs of his trousers so that he won't snag them on anything during his ride in to work. His scooter is propped against the [statue of Noah Webster], ready for action."
 
 After writing a paragraph about fake-father:
 	set pronouns from fake-father.
 
-Sanity-check doing something other than examining something during parental appearance: 
+Sanity-check doing something other than acting fast during parental appearance:
+	[I don't know how this worked in 6G60, or what changed. Now the behavior at least matches that version.]
+	if the current action is the action of listing exits:
+		make no decision;
 	if the current action is the action of taking off the monocle:
 		make no decision;
 	if the current action is the action of opening the backpack:
 		make no decision;
 	if the current action is the action of inserting the monocle into the backpack:
 		make no decision;
+	if the current action is the action of waiting:
+		say "We hold our breath." instead;
+	if the action name part of the current action is the going action:
+		say "Hang on; I want to see where [fake-father] goes." instead;
 	say "We don't dare drawing father's attention. I'm going to have us stand over here as though checking on the health of the neighb[our][']s lawn, shall I?" instead.
 
 Parental appearance ends when turn-taken is true.
@@ -7223,12 +7230,6 @@ Turn-taken is a truth state that varies. Before reading a command during parenta
 
 Rule for listing exits while looking during parental appearance:
 	do nothing.
-	
-Instead of waiting during parental appearance:
-	say "We hold our breath."
-
-Sanity-check going somewhere during parental appearance:
-	say "Hang on; I want to see where [fake-father] goes." instead.
 
 When parental appearance ends:
 	now fake-father is nowhere;
@@ -7245,7 +7246,7 @@ Instead of doing something to the pink door:
 Rule for printing the name of the pink door:
 	if the player can see the pink door, say "door here";
 	otherwise say "door of my parents['] villa".
-		
+
 [Because we need to stop you so that you can see the scene with Dad if you were otherwise just going to be passing through:]
 After going to Webster Court when Private Beach is visited and Patriotic Chard-Garden is visited and parental appearance has not happened :
 	let N be the number of entries in the described motion of the player;
@@ -7257,7 +7258,7 @@ After going to Webster Court when Private Beach is visited and Patriotic Chard-G
 		try looking;
 	now approach-destination is Winding Footpath. [Tricks the approaching verb into stopping here even if you're trying to reach someplace really far away.]
 	[pause the game. ]
-	
+
 Section 3 - Chard-Garden
 
 The Patriotic Chard-Garden is northeast of Webster Court. Understand "patriotic garden" or "chard garden" as the patriotic chard-garden.
@@ -7265,7 +7266,7 @@ The Patriotic Chard-Garden is northeast of Webster Court. Understand "patriotic 
 
 The rest of their terraces and gardens are fenced off."
 	The introduction is "Because it's so linguistically productive, chard is something of a national symbol; and during the world wars, there was a fad of gardening at home. After the war, it became common for affluent people with a little bit of land to keep their garden, so that if you were down on your luck you could glean a few leaves."
-	
+
 The decaying old wall is scenery in Patriotic Chard-Garden. The description is "This part of it is not really picturesque: just old rocks, a few of which occasionally shift loose and fall away."
 
 Instead of climbing the decaying old wall:
