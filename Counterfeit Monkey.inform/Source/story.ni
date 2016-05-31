@@ -23389,7 +23389,7 @@ An availability rule for whether she seems really from canada:
 		it is off-limits.
 		
 fear-of-killers is an NPC-directed quip.
-	The reply is "'Do you think this place is safe?' asks the girl conspiratorially.
+	The reply is "'Do you think this place is safe?' she asks conspiratorially.
 
 I must look blank, because she goes on, 'I saw this documentary once, right, about a serial killer who went from youth hostel to youth hostel, [i]grooming[/i] girls and [i]killing them[/i]. And then he'd chop up the bodies and put the [i]body parts[/i] into the lockers. And no one would find out until he'd gone away again.'
 
