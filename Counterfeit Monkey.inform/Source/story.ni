@@ -2228,7 +2228,7 @@ To decide what object is the touch-goal:
 	(- (untouchable_object) -).
 	 
 Sanity-check inserting something (called the target) into the target:
-	say "[We] can't put something into itself." instead.
+	say "[We] can't put [the target] into [themselves]." instead.
 
 Sanity-check inserting something which is in a container (called the target) into the target:
 	say "[The noun] [are] in [the target] already." instead.
