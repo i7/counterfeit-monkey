@@ -1223,12 +1223,12 @@ Report requesting styled inventory:
 [We begin by emulating the standard inventory listing style:]
 
 Instead of taking inventory when current inventory listing style is tall:
-	if the number of things enclosed by the player is 0, say "[We] [are] empty-handed." instead;
+	if the player is empty, say "[We] [are] empty-handed." instead;
 	say "[We] [are] carrying: [line break]";
 	list the contents of the player, with newlines, indented, giving inventory information, including contents, with extra indentation.
 
 Instead of taking inventory when the current inventory listing style is wide:
-	if the number of things enclosed by the player is 0, say "[We] [are] empty-handed." instead;
+	if the player is empty, say "[We] [are] empty-handed." instead;
 	say "[We] [are] wearing ";
 	now all things enclosed by the player are unmarked for listing;
 	now all things worn by the player are marked for listing;
@@ -1977,7 +1977,7 @@ The block cutting rule response (A) is "But [i]why?[/i] [--] no, don't answer th
 The report jumping rule response (A) is "I don't think that would help."
 The report waving hands rule response (A) is "[We] wave our hand regally."
 The can't push unpushable things rule response (A) is "[We] seriously doubt that will help."
-The standard report opening rule response (A) is "[We] [open] [the noun][if the noun is a container and the number of things in the noun is 0], which turns out to be empty[end if]."
+The standard report opening rule response (A) is "[We] [open] [the noun][if the noun is a container and the noun is empty], which turns out to be empty[end if]."
 [LibMsg <block singing>	"I prefer not to exercise my singing voice in company. (That includes you.)"]
 The block waking up rule response (A) is "At some point we'll split into our two proper selves, but our unnatural synthesis is no dream."
 The print obituary headline rule response (B) is " We have won ".
@@ -3453,8 +3453,9 @@ Section 4 - Desks, Drawers, Offices
 
 [Include Automated Drawers by Emily Short.] 
 
-Definition: a container is empty if the number of things in it is 0.
-Definition: a supporter is empty if the number of things on it is 0.
+Definition: a person is empty rather than non-empty if the first thing held by it is nothing. [empty-handed and naked]
+Definition: a container is empty rather than non-empty if the first thing held by it is nothing.
+Definition: a supporter is empty rather than non-empty if the first thing held by it is nothing.
 
 [After writing a paragraph about the nightstand:
 	if something is on the nightstand and at least one surprising drawer is part of the nightstand, say "[paragraph break]";
@@ -9939,7 +9940,7 @@ To decide what printer mode is the current printer mode:
 		decide on not-on;
 	if the paper-drawer is open:
 		decide on standby;
-	if the number of things in the paper-drawer is zero:
+	if the paper-drawer is empty:
 		decide on out of paper;
 	decide on ready.
 		
