@@ -2103,7 +2103,8 @@ Include Numbered Disambiguation Choices by Aaron Reed.
 [Use empty Smarter Parser rulebook.]
 
 To announce the reparsed command:
-	say "[first custom style]([unless saved Smarter Parser error is empty][saved Smarter Parser error] Retrying that as '[reborn command]'.)[roman type][command clarification break]".
+	unless reborn command is empty:
+		say "[first custom style]([unless saved Smarter Parser error is empty][saved Smarter Parser error] Retrying that as '[reborn command]'.)[roman type][command clarification break]".
 
 To explain the reborn command:
 	say "[first custom style][saved Smarter Parser error][roman type][line break]".
