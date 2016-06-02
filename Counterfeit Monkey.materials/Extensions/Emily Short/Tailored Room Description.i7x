@@ -1,4 +1,4 @@
-Version 13/150517 of Tailored Room Description by Emily Short begins here.
+Version 13/150601 of Tailored Room Description by Emily Short begins here.
 
 "An extension to go with Room Description Control, providing a different style of room description than the default. Parenthetical remarks such as (open) and (in which are...) are omitted in favor of full English sentences. Removes the requirement for Text Variations."
 
@@ -139,7 +139,7 @@ Definition: a person is surprising:
 Disclosing contents of something is an activity. Disclosing exterior of something is an activity.
  
 Rule for disclosing exterior of something (called special-target) (this is the standard-exterior rule):
-	let the chosen table be the current-NC-table;
+	let the chosen table be the current-NE-table;
 	now current-subject is special-target; [so that printing routines can refer to it]
 	now first-subject is special-target;
 	let nesting be false;
@@ -173,7 +173,7 @@ To say sits:
 	begin;
 		say "[regarding current-subject][are] ";
 	otherwise;
-		say "[regarding current-subject][one of][adapt the verb sit] [or]rest[s] [or][are] [or][are] [adapt the verb sit] [at random]";
+		say "[regarding current-subject][one of][adapt the verb sit] [or]rest[s] [or][are] [or][are] sitting [at random]";
 	end if;
 
 To say (N - a thing) as a possibly-known item:
@@ -252,7 +252,7 @@ disclosure
 
 Table of Connectives
 disclosure
-", [if the current-exterior is a person]who[otherwise]which[end if] [is-are of current-subject] ".
+", [if the current-exterior is a person]who[otherwise]which[end if] [regarding current-subject][are] ".
 
 Table of Subject Introductions
 disclosure
@@ -423,7 +423,8 @@ The purpose of this change is to make the extension more flexible and more usefu
 
 Version 8 tweaks the reporting of character possessions and worn items to appear more natural. It also adds section headings to the documentation.
 
-Version 13: Update for Inform 6M62. Fix tests. Remove dependency on Plurality.
+Version 13/150601: Counterfeit Monkey version. Update for Inform 6M62. Fix tests. Remove dependency on Plurality.
+
 
 Example: * Doors and doors - Writing paragraphs about doors to generate sentences such as "Exits include the white door and the black door. The black door is open."
 
@@ -468,11 +469,13 @@ Example: * Doors and doors - Writing paragraphs about doors to generate sentence
 
 Example: * Boatman - A sample involving modified descriptions for items in an enterable container with the player.
 
-	*: Include Tailored Room Description by Emily Short. 
+	*: "Boatman"
+
+	 Include Tailored Room Description by Emily Short.
 
 	The Salt Lake is a room. 
 
-	The rowboat is an enterable container in the Salt Lake. Understand "boat" as the rowboat. It contains a boatman, a pole, and bottle of fresh water. The boatman is a man.
+	The rowboat is an enterable container in the Salt Lake. Understand "boat" as the rowboat. It contains a boatman, a pole, and a bottle of fresh water. The boatman is a man.
 
 	The Salt Lake contains a single flipper. 
 
@@ -517,8 +520,8 @@ Example: ** Introductions - A system whereby both things and rooms can be given 
 		now the special-target is introduced;
 		say "[introduction of the special-target]".
 
-	Definition: a thing is introduceable if its introduction is not "".
-	Definition: a room is introduceable if its introduction is not "".
+	Definition: a thing is introduceable unless its introduction is "".
+	Definition: a room is introduceable unless its introduction is "".
 
 	A thing can be as-yet-unknown or introduced. A thing is usually as-yet-unknown.
 	A room can be as-yet-unknown or introduced. A room is usually as-yet-unknown.
@@ -588,7 +591,7 @@ Example: ** Gobs of Mayonnaise - A scenario with various objects competing for o
 
 	A utensil is a kind of thing. A knife is a utensil. A fork is a utensil. The knife and the fork are on the table.
 
-	Before listing contents: group utensils together. Before grouping together utensils: say "a place setting (consisting of ". After grouping together utensils: say ")". 
+	Before listing contents: initially group utensils together. Before grouping together utensils: say "a place setting (consisting of ". After grouping together utensils: say ")". 
 
 	[We might also want to override the way contents of items are described in particular cases:]
 
