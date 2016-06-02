@@ -5908,7 +5908,7 @@ He stalks away";
 		end if;]
 		say ".";
 		record "winning the gel" as achieved;
-		if the barker is the current interlocutor, now the current interlocutor is nothing;
+		if the barker is the current interlocutor, reset the interlocutor;
 	end if;
 
 To say balance contents:
@@ -5969,11 +5969,11 @@ Instead of asking someone about something:
 
 Definition: the word-balance is tilting if the total heft of the things in the left pan is not the total heft of the things in the right pan.
 
-Every turn when the barker is visible and the word-balance is not tilting:
+Every turn when the barker is marked-visible and the word-balance is not tilting:
 	add barker-advertisement to the planned conversation of the barker.
 	
 Check someone who is not the current interlocutor discussing an NPC-directed quip:
-	now the current interlocutor is the actor.
+	set the current interlocutor to the actor.
 	
 barker-advertisement is an NPC-directed quip.
 	The reply is "[one of]'Step up and try your hand at the fabulous word-balance!' calls the barker appealingly.[or]'Put the beam out of alignment and win a fabulous prize!' says the barker, holding up a [tube].[or]'One [tube] of restoration gel goes to the first person who can unbalance the word-balance!' cries the barker, glance sweeping the crowd.[at random]".
@@ -6184,7 +6184,7 @@ The ticket-taker is an alert man in the Cinema Lobby. The initial appearance is 
 	Understand "young" or "man" or "ticket taker" or "taker" as the ticket-taker. 
 
 Rule for writing a paragraph about the ticket-taker when the ticket-taker is not the current interlocutor:
-	now the current interlocutor is the ticket-taker;
+	set the current interlocutor to the ticket-taker;
 	if the ticket-taker knows allowed-in-movie, say "'Yo,' says the [ticket-taker] as [we] come in.";
 	otherwise say "'Ticket,' says the [ticket-taker] automatically.";
 	set pronouns from the ticket-taker;
@@ -6194,7 +6194,7 @@ Rule for writing a paragraph about the ticket-taker when the ticket-taker is not
 Instead of going to the Screening Room when the ticket-taker does not know allowed-in-movie:
 	carry out the describing path activity with the player;
 	if the ticket-taker is not in the location, continue the action;
-	now the current interlocutor is the ticket-taker;
+	set the current interlocutor to the ticket-taker;
 	queue hang-on-there.
 
 The Screening Room is west of Cinema Lobby. It is indoors. The description is "[if the player recollects what the movie seems]'Red'[otherwise]Whatever is scheduled for later showing[end if] has not started yet, and is probably not destined to start for some time; at any rate,[unless the project is switched on] the [film screen] is blank and[end if] no audience has yet assembled."
@@ -6817,7 +6817,7 @@ The description of the shot glasses is "Printed with various Biblical verses rel
 The gift shop volunteer is an alert man in Cathedral Gift Shop. The initial appearance is "An elderly man in a [knitted wool cap] presides over the gift shop." Understand "elderly" or "man" as the gift shop volunteer. 
 
 Rule for writing a topic sentence about the gift shop volunteer when the gift shop volunteer is not the current interlocutor:
-	now the current interlocutor is the gift shop volunteer;
+	set the current interlocutor to the gift shop volunteer;
 	say "The elderly man in charge of the gift shop nods at us as [we] come in.[run paragraph on]";
 	now everything held by the gift shop volunteer is mentioned.
 
@@ -9987,7 +9987,7 @@ Report higgate discussing how we might return a book:
 	try Higgate opening the seminar door; 
 	try Higgate approaching the Seminar Room;
 	try going southwest;
-	now the current interlocutor is Higgate;
+	set the current interlocutor to Higgate;
 	stop the action. [TODO: check that this is correct?]
 		
 Instead of doing something in the presence of Higgate when the noun is the synthesizer or the second noun is the synthesizer or the noun is the plexiglas case or the noun is the screws or the second noun is the plexiglas case or the second noun is the screws:
@@ -12611,7 +12611,7 @@ After going to Beside Slango's Ship:
 	now every other thing in the kayak is carried by the player;
 	now the posture of the player is standing;
 	now the oar is nowhere;
-	now the current interlocutor is Slango;
+	set the current interlocutor to Slango;
 	[queue where-is-Brock as immediate obligatory;]
 	move the player to Sunning Deck, without printing a room description;
 	follow the compass-drawing rule instead;
@@ -19503,7 +19503,7 @@ When roc-soaring ends:
 	say "I keep thinking [we] [are] going to lose our grip, but somehow [we] manage to stay on. Sooner than I expect, [we] make out the shine of Slango's yacht, and in the next moment [we] [are] above it. The roc circles once or twice before coming to land on the Sunning Deck.";
 	now the initial appearance of Slango is "Slango is out, having seen us landing. He looks nervy."; 
 	move the roc to the Sunning Deck;
-	now the current interlocutor is Slango;
+	set the current interlocutor to Slango;
 	[queue altern-where-is-Brock as immediate obligatory;]
 	move the player to the Sunning Deck;
 	follow the compass-drawing rule instead.
@@ -25697,7 +25697,7 @@ Report Brock discussing getting-out-now:
 	move Brock to the repository;
 	now the rock is not proffered by anything;
 	now the rock is proffered by Brock;
-	now the current interlocutor is nothing;
+	reset the interlocutor;
 	record "profiling the T-inserter" as achieved;
 	move the rock to the location.
 	
@@ -25875,11 +25875,11 @@ Sanity-check going from My Apartment when confrontation-with-mother has not happ
 Sanity-check going from My Apartment during confrontation-with-mother:
 	say "I don't quite dare just walk out on Mother. Partly it's habit, partly the sense that she's more upset than she's letting on, and that if we push her the wrong way she'll contact the authorities."
 
-Confrontation-with-mother is a scene. Confrontation-with-mother begins when my mother is visible. 
+Confrontation-with-mother is a scene. Confrontation-with-mother begins when my mother is marked-visible. 
 
 When confrontation-with-mother begins:
 	say "We're about to, when the door to the street opens and my mother walks into the room. She shuts it behind her and puts away her key before she notices us. Then she stands very still. For about a quarter second she considers calling the police, but I can see that worry passing away again as she takes in our clothing, age, and general demean[our].";
-	now the current interlocutor is my mother;
+	set the current interlocutor to my mother;
 	try my mother discussing hi-there-Im;
 	queue final-goodbye as postponed obligatory.
 	
@@ -26019,7 +26019,7 @@ She's not even visible through the window any longer.";
 Section 10 - Father
 
 After going from the Sensitive Equipment Testing Room:
-	now the current interlocutor is father;
+	set the current interlocutor to father;
 	continue the action.
 	
 Confrontation-with-father is a scene. Confrontation-with-father begins when the current interlocutor is father. 
@@ -26223,7 +26223,7 @@ Rule for beat-producing when atlantida-woman is the current interlocutor and atl
 When Atlantida chat begins:
 	[move atlantida-woman to the location;]
 	pause the game;
-	now the current interlocutor is atlantida-woman;
+	set the current interlocutor to atlantida-woman;
 	queue stop-there as immediate obligatory;
 	queue gel-shot as postponed obligatory; 
 	[queue how fusion happens as postponed obligatory;]
@@ -26611,7 +26611,7 @@ The description of Atlantida-refreshed is "She looks very similar to her earlier
 Atlantida-shooing is a scene. Atlantida-shooing begins when guard-imminence ends in postponement. 
 
 When Atlantida-shooing begins:
-	now the current interlocutor is Atlantida-refreshed;
+	set the current interlocutor to Atlantida-refreshed;
 	say "She gets to her feet.";
 	now atlantida-refreshed is in Workshop;
 	queue you-had-better-leave as immediate obligatory;
