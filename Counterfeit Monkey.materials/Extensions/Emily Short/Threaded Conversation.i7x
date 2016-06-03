@@ -322,34 +322,34 @@ The first availability rule (this is the don't talk to no one rule):
 
 A person can be currently listening. A person is usually not currently listening.
 
-A first availability rule when addressing everyone is true:
+Addressing everyone is initially false.
+
+A first availability rule when addressing everyone is true (this is the only local people are listening rule):
 	now everyone is not currently listening;
 	repeat with P running through people-present:
 		now P is currently listening; 
 
-Definition: a quip is scene-restricted if the proper scene of it is not the Entire Game.
-
-Addressing everyone is a truth state that varies. Addressing everyone is false.
+Definition: a quip is scene-restricted unless the proper scene of it is the Entire Game.
 
 An availability rule for a scene-restricted quip (called the target) (this is the restriction of quips to scenes rule): 
 	if the proper scene of the target is happening, make no decision;
-	it is off-limits.
+	otherwise it is off-limits.
 
-An availability rule for a quip (called the target) (this is the prevention of off-topic answers for restricted quips rule): 
+An availability rule for a quip (called the target) (this is the prevention of off-topic answers for restrictive quips rule): 
 	let the chosen quip be a quip;
 	if the person asked is the player:
-		now the chosen quip is the current quip;
+		let the chosen quip be the current quip;
 	otherwise:
-		now the chosen quip is the previous quip;
-		if the chosen quip is restrictive:
-			if the target directly-follows the chosen quip, make no decision;
+		let the chosen quip be the previous quip;
+	if the chosen quip is restrictive:
+		if the target directly-follows the chosen quip, make no decision;
 		it is off-limits.
 
 An availability rule for a quip (called the target) (this is the restriction of quips to special people rule):  
 	if addressing everyone is true:
-		if the target quip-supplies someone who is not currently listening:
+		unless the target is universally-applicable or someone quip-supplied by the target is currently listening,
 			it is off-limits;
-	otherwise if the target quip-supplies someone and the current interlocutor is not quip-supplied by the target:
+	otherwise if the target is character-tailored and the current interlocutor is not quip-supplied by the target:
 		it is off-limits;
 	make no decision;
 
@@ -361,11 +361,9 @@ An availability rule for a quip (called the target) (this is the restriction of 
 		it is off-limits;
 	make no decision;
 
-An availability rule for a upwardly-restrictive quip (called the target) (this is the restriction of quips to appropriate previous quips rule):
-	if the target directly-follows the current quip:
-		make no decision;
-	otherwise:
-		it is off-limits.
+An availability rule for a upwardly-restrictive quip (called the target) (this is the restriction of quips to appropriate previous quips rule):  
+	if the target directly-follows the current quip, make no decision;
+	otherwise it is off-limits.
 
 An availability rule for a mid-thread quip (called the target) (this is the restriction by indirect-following rule): 
 	if addressing everyone is true and the target indirectly-follows something which is recollected by the player:
@@ -375,11 +373,12 @@ An availability rule for a mid-thread quip (called the target) (this is the rest
 	otherwise:
 		it is off-limits.
 
-An availability rule for an NPC-directed quip:  [These are for NPCs to say, so they're never available to the player.]
+An availability rule for an NPC-directed quip (this is the player can't say NPC-directed quips rule):
 	it is off-limits.
 
 The last availability rule (this is the generic availability rule): 
 	it is available.
+	
 
 Book 3- Peripheral Quips
 
@@ -395,7 +394,7 @@ Definition: a quip (called the target quip) is peripheral:
 	follow the plausibility rules for the target quip;
 	if the outcome of the rulebook is the it is dubious outcome:
 		yes;
-	if the outcome of the rulebook is the it is plausible outcome and the target quip is shallowly-buried:
+	otherwise if the outcome of the rulebook is the it is plausible outcome and the target quip is shallowly-buried:
 		yes;
 	no.
 
@@ -403,7 +402,7 @@ Listing peripheral quips is an activity.
 
 Rule for listing peripheral quips (this is the standard listing subject changes rule):
 	prepare a list of peripheral quips; 
-	say "[quip-suggestion-phrase][the prepared list delimited in disjunctive style]."
+	say "[quip-suggestion-phrase][the prepared list delimited in disjunctive style]." (A).
 
 Book 4 - Offering Hints To The Player
 
@@ -415,10 +414,10 @@ Listing plausible quips is an activity.
 
 A quip can be listed-plausible or unlisted-plausible.
 
-Before listing plausible quips:
+Before listing plausible quips (this is the initialize quip plausibility before hinting rule):
 	now every quip is unlisted-plausible.
 
-Before asking which do you mean:
+Before asking which do you mean (this is the initialize quip plausibility before disambiguating rule):
 	now every quip is unlisted-plausible.
 
 After printing the name of a quip (called target) while asking which do you mean (this is the mark disambiguated quips plausible rule):
@@ -432,34 +431,34 @@ After quip-introducing a quip (called target) (this is the mark special plausibl
 
 Rule for listing plausible quips (this is the standard quip plausibility rule):
 	prepare a list of plausible quips; 
-	if the number of filled rows in the Table of Scored Listing is 0:
+	unless the number of filled rows in the Table of Scored Listing is positive:
 		rule succeeds;
 	otherwise:
 		repeat through the Table of Scored Listing:
 			carry out the quip-introducing activity with the output entry;
-		[This could have blanked some rows out, so we want to check again:]
-		if the number of filled rows in the Table of Scored Listing is greater than 0, 
-			say "[quip-suggestion-phrase][the prepared list delimited in disjunctive style].";
+		[This could have blanked some rows out, so we need to check again:]
+		if the number of filled rows in the Table of Scored Listing is positive, 
+			say "[quip-suggestion-phrase][the prepared list delimited in disjunctive style]." (A);
 
 Before printing the name of a questioning quip while listing plausible quips or listing peripheral quips (this is the prefix-ask rule):
-	say "ask ".
+	say "ask " (A).
 
 Before printing the name of an informative quip while listing plausible quips or listing peripheral quips (this is the prefix-say rule):
-	say "say ".
+	say "say " (A).
 
 
 Section 2 - Customizing Listing Plausible Quips
 
 [We can change the wording with which the hint is offered by changing the quip-suggestion phrase:]
-
-quip-suggestion-phrase is some text that varies. quip-suggestion-phrase is "You could ".
+quip-suggestion-phrase is some text that varies. The quip-suggestion-phrase is "[We] [could] ".
 
 quip-introducing something is an activity. 
 
 [And the following phrases make it more convenient to write our own rules for quip-introducing specific quips or quip-combinations.]
 
 To list no other/more quips: 
-	empty out Table of Scored Listing. [we may add this to the end of a quip-introducing activity to say that we don't care what other quips may be queued because we've decided that we want to limit what we tell the player.]
+	empty out Table of Scored Listing. 
+	[We may add this to the end of a quip-introducing activity to say that we don't care what other quips may be queued because we've decided that we want to limit what we tell the player.]
 
 To say list no other quips: 
 	list no other quips.
@@ -471,19 +470,22 @@ To decide whether any/-- other quips remain:
 To decide what number is the number of remaining quips:
 	decide on the number of filled rows in the Table of Scored Listing.
 
-After printing the name of a quip (called target) while quip-introducing:
-	strip the target from table.
+After printing the name of a quip (called target) while quip-introducing (this is the remove hinted quips from the listing table rule):
+	strip the target from the table.
 
 To strip (chosen quip - a quip) from the/-- table:
 	if the chosen quip is an output listed in the Table of Scored Listing:
 		choose row with output of chosen quip in the Table of Scored Listing;
 		blank out the whole row.
+[	We use a table rather than a property of the objects to be listed in order to minimize time-consuming loops over the entire set of quips in the world.	]
+[	We use a table rather than a list because this extension was started before lists existed in their current form (but this may be lower-overhead anyway).	]
 
-[We use a table rather than a property of the objects to be listed in order to minimize time-consuming loops over the entire set of quips in the world. We use a table rather than a list because this extension was started before lists existed in their current form (but this may be lower-overhead anyway).]
 
 Section 3 - Offer Hint Quips Rule
 
-[This is the piece that actually triggers the suggestion of hints. The offer hint quips rule happens quite late in the turn sequence, after all other conversation has been cleared and all other events during the turn have been taken care of. This guarantees that nothing important will have changed between the hinting and the player's next command.]
+[	This is what actually triggers the suggestion of hints. The offer hint quips rule happens quite late in the turn sequence,	]
+[	after all other conversation has been cleared and all other events during the turn have been taken care of. 	]
+[	This guarantees that nothing important will have changed between the hinting and the player's next command.	]
 
 This is the offer hint quips rule:
 	if how-many-people-here is positive:
@@ -491,7 +493,10 @@ This is the offer hint quips rule:
 
 The offer hint quips rule is listed after the adjust light rule in the turn sequence rules.
 
-This is the relabel available quips rule: [* This rule is very important because it tags available quips before running a new turn; this means that the game doesn't have to reassess availability on the fly during plausibility tests or during parsing. On the other hand, it means that we should not test availability or plausibility on our own without first calling this rule.]
+[	This rule is very important: it tags quips available before running a new turn. 	]
+[	Thus, the game doesn't have to reassess availability on the fly, during plausibility tests or during parsing.	] 
+[	On the other hand, it means that we should not test availability or plausibility on our own without first calling this rule.	]
+This is the relabel available quips rule:
 	if how-many-people-here is positive:
 		now every quip is flagged-unready; 
 		repeat with item running through things in the quip-repository:
@@ -1004,20 +1009,16 @@ Section 3 - Conversation Reply Rules
 
 [This is what makes the NPCs actually respond to things: all answers to player conversation, and independent conversation on the NPCs' part, comes from the conversation reply rules.]
 
-Every turn (this is the update people-present rule):
+A first every turn rule (this is the update people-present rule):
 	now people-present is the list of other people enclosed by location;
 	now how-many-people-here is the number of entries in people-present;
 	if how-many-people-here is positive:
 		repeat with P running through people-present:
 			now P is marked-visible;
 
-The update people-present rule is listed first in the every turn rulebook.
-
 Every turn (this is the active conversation rule):
 	if how-many-people-here is positive:
 		follow the conversation-reply rules.
-
-The active conversation rule is listed last in the every turn rulebook.
 
 The conversation-reply rules are a rulebook.
 
