@@ -2190,6 +2190,8 @@ Understand the command "chew" as "eat". [to cover the gum situation]
 
 Understand "climb on/onto [something]" as climbing.
 
+To make is a verb. To wish is a verb. To shy is a verb. To become is a verb. To make is a verb. To back is a verb. To fall is a verb. To cease is a verb. To meet is a verb. To hop is a verb. To peer is a verb. To ping is a verb. To stare is a verb. To decide is a verb. To shake is a verb.
+
 [Before eating something which is not carried by the player: 
 	try taking the noun; 
 	if the player does not have the noun, stop the action. ]
@@ -2836,7 +2838,7 @@ Last check facing:
 	otherwise if rightward thing is a road:
 		say "That way is the corner of [the leftward thing] and the beginning of [rightward thing] running [rightway]." instead;
 	otherwise:
-		say "To [the noun] [the leftward thing] meet[s] [the rightward thing]." instead.
+		say "To [the noun] [the leftward thing] [meet] [the rightward thing]." instead.
 
 To decide what object is the thing seen facing (dir - a direction):
 	if a backdrop (called target) in the location screens dir:
@@ -3875,8 +3877,6 @@ Rule for supplying a missing noun while performing something on:
 	
 Sanity-check performing something on game-selection:
 	say "It's not really a game-playing occasion." instead.
-
-To wish is a verb.
 
 Sanity-check performing something on a person: 
 	say "If [the second noun] [adapt verb wish] to sing something, that is up to [them]." instead.
@@ -5744,14 +5744,14 @@ To gel-convert (item - hoses):
 	now everything which proffers the item is part of the marble fountain;  
 	now the item is in the repository;
 	[play the sound of gel splort;] 
-	say "[The item] become[s] [a list of things which proffer the item], redecorating the fountain.";
+	say "[The item] [become] [a list of things which proffer the item], redecorating the fountain.";
 	repeat with secondary running through things which proffer the item:
 		abide by the dangerous construction rules for the secondary.
 To gel-convert (item - hoe): 
 	now everything which proffers the item is part of the marble fountain; 
 	now the item is in the repository;
 	[play the sound of gel splort;] 
-	say "[The item] become[s] [a list of things which proffer the item], redecorating the fountain.";
+	say "[The item] [become] [a list of things which proffer the item], redecorating the fountain.";
 	repeat with secondary running through things which proffer the item:
 		abide by the dangerous construction rules for the secondary.
 
@@ -5976,7 +5976,7 @@ A little boy in the crowd snickers rudely. 'Got ya!'[or]The barker gives us a wa
 The barker is a man in the Midway. The initial appearance is "Beside the word-balance is a barker in [a blue suit], the same regulation blue used by the Bureau of Orthography." The barker wears a blue suit. The description of the barker is "He is dapper in his suit, as though he might belong to an especially vivid barber-shop quartet." The description of the suit is "Carefully tailored in bright blue linen, with fine white pinstripes." 
 
 Instead of telling someone about something:
-	say "[The noun] stares at us coldly. [one of]I wish you wouldn't babble at folks: it just draws attention.[or]I know you didn't grow up around here, but people in this vicinity tend not to be so free with their words.[stopping]".
+	say "[The noun] [stare] at us coldly. [one of]I wish you wouldn't babble at folks: it just draws attention.[or]I know you didn't grow up around here, but people in this vicinity tend not to be so free with their words.[stopping]".
 	
 Instead of asking someone about something:
 	say "[The noun] thinks for a moment, then apparently decides not to answer."
@@ -11547,7 +11547,7 @@ He looks puzzled. 'Aren't we safer together?'
 'No,' I say.[paragraph break]";
 		say "[command prompt]";
 		wait for any key;
-		say "[paragraph break]'But[--]'[paragraph break]'Look, just trust me, this once,' we say.[paragraph break][The victim] back[s] out the door. Loud sounds of an arrest ensue. I hear my father's voice, and two other people. Then finally the sounds die away.";
+		say "[paragraph break]'But[--]'[paragraph break]'Look, just trust me, this once,' we say.[paragraph break][The victim] [back] out the door. Loud sounds of an arrest ensue. I hear my father's voice, and two other people. Then finally the sounds die away.";
 		now Brock is nowhere;
 		now father is nowhere;
 	otherwise if the victim is fake:
@@ -11557,7 +11557,7 @@ I keep thinking: my father is going to look like a fool when it's found he's arr
 
 I want to stop you, but you've got the upper hand now[or][stopping].
 
-[The victim] back[s] out the door.
+[The victim] [back] out the door.
 
 [if the victim is not undisguised]'Nothing on the auth scope,' comments a female voice.
 
@@ -12158,7 +12158,7 @@ Definition: a thing is unhookable:
 
 Every turn when something unhookable is on the pulley (this is the portcullis empty rule):
 	if the player can see the pulley:
-		say "[The list of unhookable things *in the pulley] fall[s] to the ground.";
+		say "[The list of unhookable things *in the pulley] [fall] to the ground.";
 	now every unhookable thing on the pulley is in Tunnel through Chalk.
 	
 Sanity-check putting something on the portcullis:
@@ -13575,14 +13575,14 @@ A dangerous destruction rule for something (called changed seat) which encloses 
 	if the irate victim is Brock:
 		make no decision;
 	if the irate victim is the player:
-		say "In a blink of an eye, [the changed seat] cease[s] to exist.
+		say "In a blink of an eye, [the changed seat] [cease] to exist.
 	
 The problem is that [they] [take] us along with [them].
 
 I've always wondered what this last passage to non-existence might be like. It turns out that there is a rushing noise, and a tunnel [we] travel very rapidly towards darkness; and all around us are other objects also in the middle of ceasing to be.";
 		end the story saying "[We] have left existence behind";
 		rule fails;
-	say "Instantly [the changed seat] cease[s] to exist. [The irate victim], real[izing] what [we] [are] about just in time, has managed to leap out of the way, however; and the result is a hasty call to the police to report an Attempt to Render Inanimate, a charge pursued as though it were murder in most circumstances.";
+	say "Instantly [the changed seat] [cease] to exist. [The irate victim], real[izing] what [we] [are] about just in time, has managed to leap out of the way, however; and the result is a hasty call to the police to report an Attempt to Render Inanimate, a charge pursued as though it were murder in most circumstances.";
 	end the story saying "[We] have been locked up";
 	rule fails. 
 
@@ -14697,14 +14697,14 @@ Test reflecting-bug with "x reflection / wear monocle / x reflection / look at r
 Carry out looking at it through:
 	if the noun is original or the noun is disguised:
 		[play the sound of scope success;]
-		say "[The second noun] pings happily as [we] sight [the noun] with the crosshairs.";
+		say "[The second noun] [ping] happily as [we] sight [the noun] with the crosshairs.";
 	otherwise:
 		[play the sound of scope failure;]
 		say "There is a dismissive blatt from [the second noun], and transposed over [the noun] is a faint, [if the noun is edible and the noun is proffered by something inedible]unappet[izing][otherwise]greenish[end if] image of [a list of things which proffer the noun]."
 	
 Report someone looking at something through something:
 	if the noun is original, say "In response [the actor] looks through [the second noun] at [the noun], then nods briskly. '[one of]The genuine article[or]Definitely not fake[or]Looks clean[or]Not a forgery[or]Real[or]Yup, authentic[at random].'";
-	otherwise say "Thoughtfully [the actor] peer[s] through [the second noun] at [the noun], then frown[s]. '[one of]Fake[or]An obvious forgery[or]Not at all the real thing[or]Bogus[or]I hope that came with a money-back guarantee[as decreasingly likely outcomes]!' [regarding the actor][they] [one of]say[s][or]remark[s][or]exclaim[s][as decreasingly likely outcomes]." 
+	otherwise say "Thoughtfully [the actor] [peer] through [the second noun] at [the noun], then frown[s]. '[one of]Fake[or]An obvious forgery[or]Not at all the real thing[or]Bogus[or]I hope that came with a money-back guarantee[as decreasingly likely outcomes]!' [regarding the actor][they] [one of]say[s][or]remark[s][or]exclaim[s][as decreasingly likely outcomes]."
 	
 
 	
@@ -14913,8 +14913,6 @@ It also isn't working.
 	otherwise:
 		say "There's not much gel left." ]
 
-To shy is a verb.
-
 Instead of putting the restoration gel on an original person:
 	if the second noun is an animal:
 		continue the action;
@@ -14943,7 +14941,7 @@ To gel-convert (item - an object):
 		let description needed be false;
 		if exactly one unseen thing (called the parent) proffers the item:
 			now description needed is true;
-		say "With an audible SPLORT, [the item] become[s] [a list of things which proffer the item][if the destination is the location and the holder of the item is not the location] and falls to the ground[end if]. ";
+		say "With an audible SPLORT, [the item] [become] [a list of things which proffer the item][if the destination is the location and the holder of the item is not the location] and falls to the ground[end if]. ";
 		if description needed is true:
 			say "[parent description]";
 		say "[one of][paragraph break]I'm starting to understand how you got into all the places you got into. Not that I judge you or your line of work, of course. [or][stopping][paragraph break]";
@@ -15063,7 +15061,7 @@ Sanity-check shooting something irretrievable with the loaded anagramming gun:
 	if the second noun contains the letter-remover:
 		try taking the letter-remover;
 	if the second noun is irretrievable:
-		say "Since [the second noun] contain[s] [if the second noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
+		say "Since [the second noun] [contain] [if the second noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
  
 Sanity-check shooting the loaded anagramming gun with  the loaded anagramming gun:
 	say "It is impossible to aim the gun at itself." instead.
@@ -15594,7 +15592,7 @@ Check inserting something into the cryptolock when the heft of the noun is great
 A dangerous construction rule for something (called the target):
 	if the target is in the cryptolock and the heft of the target is greater than 3:
 		now the target is in the Generator Room;
-		say "[The target] [are] too big to fit into the bucket, and fall[s] out during the process of formation."
+		say "[The target] [are] too big to fit into the bucket, and [fall] out during the process of formation."
 		
 Test bucket-size with "put coat in bucket / wave a-remover at coat / get cot / put cot in bucket" holding the coat in the Generator Room. 
 
@@ -17001,7 +16999,7 @@ Sanity-check putting the banding on the roc:
 	say "The roc's leg is comically too large for the banding to fit." instead.
 	
 Sanity-check putting the banding on a bird:
-	say "[The second noun] hop[s] away disobligingly. There must be some ornithologist's trick to this, but I don't know it." instead.
+	say "[The second noun] [hop] away disobligingly. There must be some ornithologist's trick to this, but I don't know it." instead.
 
 Sanity-check wearing the banding:
 	say "I suppose we could be said to be migratory, but surely the point is to avoid being tracked?" instead.
@@ -20925,8 +20923,6 @@ Definition: a person is contained:
 		yes;
 	no.
 
-To make is a verb.
-
 Check something exiting when the actor is an animal in the kayak:
 	say "[one of][The person asked] [make] as though to climb out of the kayak, then [see] that everything outside is made of water, and withdraw[s] sulkily.[or][The person asked] waits in the bottom of the kayak.[stopping]" instead.
 
@@ -20940,7 +20936,7 @@ Report something exiting when the actor is an animal and the container exited fr
 	say "[The person asked] clamber[s] out of [the t-inserter]." instead.
 	
 Report something exiting when the actor is a bird and the container exited from is the t-inserter:
-	say "[The person asked] hop[s] and flutter[s] out of [the t-inserter]." instead.
+	say "[The person asked] [hop] and flutter[s] out of [the t-inserter]." instead.
 	
 Test kayakcat with "autoupgrade / wave s-remover at shackle / wave l-remover at bollard / wave d-remover at board / wave b-remover at boar / get oar / get in kayak / launch kayak / z" holding the tomcat in the Abandoned Shore.
 	
@@ -21342,7 +21338,7 @@ I'll never know why I didn't manage to stop you doing something so boneheaded.";
 	end the story saying "[We] have been arrested".
 	
 Instead of police person discussing whether the monocle seems interesting:
-	say "[The actor] stares at it. 'You can't possibly have a lic[ense] for that,' [they] [say]. 'I think you had better come speak with my colleagues, right now.'";
+	say "[The actor] [stare] at it. 'You can't possibly have a lic[ense] for that,' [they] [say]. 'I think you had better come speak with my colleagues, right now.'";
 	end the story saying "[We] have been arrested".
 	
 Section 3 - Responses to demonstrations that aren't interesting
@@ -21472,7 +21468,7 @@ Rule for refusing comment by a police person (called stern person) when the noun
 	if the current interlocutor is an animal:
 		make no decision;
 	if the stern person knows you-are-dangerous:
-		say "Based on our behavi[our] so for, [the stern person] decide[s] this must be an attempt at bribery, and [take] us in. And while [we] [are] able to get around the bribery charge eventually, quite a few other undesirable facts come out in the process...";
+		say "Based on our behavi[our] so for, [the stern person] [decide] this must be an attempt at bribery, and [take] us in. And while [we] [are] able to get around the bribery charge eventually, quite a few other undesirable facts come out in the process...";
 		end the story saying "That was an error in judgment";
 	otherwise:
 		say "[You-are-dangerous][The stern person] recite[s] to us a bit of the penal code applying to attempts to bribe officers of the law."
@@ -21483,7 +21479,7 @@ Rule for refusing comment by someone when the noun is r-abstract:
 	if the current interlocutor is police:
 		say "[The current interlocutor] [look] a little suspicious. 'I hope you got [regarding the noun][those] from someone who was licensed to create abstracts.'";
 	otherwise if the current interlocutor is tourist:
-		say "[one of][The current interlocutor] stare[s] at [the noun] in fascination. 'That's odd,' [they] [say]. 'It's like it's there but not there.'[or][The current interlocutor] [look] at [the noun] from several angles. 'I'm not sure what it's for, but that's cool.'[or]'Weird,' [say] [the current interlocutor]. 'You don't get that where I come from.'[at random]";
+		say "[one of][The current interlocutor] [stare] at [the noun] in fascination. 'That's odd,' [they] [say]. 'It's like it's there but not there.'[or][The current interlocutor] [look] at [the noun] from several angles. 'I'm not sure what it's for, but that's cool.'[or]'Weird,' [say] [the current interlocutor]. 'You don't get that where I come from.'[at random]";
 	otherwise:
 		say "[The current interlocutor] [are] puzzled. '[one of]Looks like [a noun].'[or]Huh, [a noun].'[or]I guess it's supposed to be... [noun]?'[at random]";
 
@@ -21518,7 +21514,7 @@ Rule for refusing comment by someone when the noun is an as:
 	say "[The viewer] cock[s] [their] head[regarding the noun][s].".]
 		
 Rule for refusing comment by something: 
-	say "[one of]This evokes no particular interest[or][The current interlocutor] shake[s] [their] head[or][The current interlocutor] [don't] have anything to say in response[at random]."
+	say "[one of]This evokes no particular interest[or][The current interlocutor] [shake] [their] head[or][The current interlocutor] [don't] have anything to say in response[at random]."
 	
 Section 4 - Commentary on NPC Possessions
 
@@ -25526,7 +25522,7 @@ A Brock-suggestion rule when a fake person is marked-visible:
 		if a random chance of 1 in 3 succeeds:
 			say "[creepy stare][run paragraph on]";
 		otherwise:
-			say "[A random marked-visible fake person] stare[s] at us. [run paragraph on]";
+			say "[The random marked-visible fake person] [stare] at us. [run paragraph on]";
 		try Brock discussing getting-crowded;
 		rule succeeds.
 		
@@ -25721,7 +25717,7 @@ naughty-remark is an NPC-directed quip.
 	The reply is "He eyes [the random naughty-sounding marked-visible thing which is not the cock-ring]. 'Oh for a homonym paddle.'"
 
 getting-crowded is an NPC-directed quip.
-	The reply is "[one of]Brock steps to the side to make room for [the list of fake people *in the location][or]'We're going to need to install stadium seating in here,' Brock comments, nodding at [the list of fake people *in the location][or]'If any guards come, we can use [the random fake person in the location] as a decoy,' Brock remarks[at random]."
+	The reply is "[one of]Brock steps to the side to make room for [the list of marked-visible fake people][or]'We're going to need to install stadium seating in here,' Brock comments, nodding at [the list of marked-visible fake people][or]'If any guards come, we can use [the random marked-visible fake person] as a decoy,' Brock remarks[at random]."
 	
 After Brock discussing interference-gelling:
 	carry out the caching scope activity with Brock;
