@@ -19484,7 +19484,7 @@ Instead of waving the letter-remover at the rock creating the roc when the locat
 Rule for writing a paragraph about Slango when the roc is mentionable:
 	say "[Slango] has come out, though he's standing well back from [the roc], which is surveying the scene speculatively.[paragraph break]"
 
-Roc-flight is a scene. Roc-flight begins when the roc is marked-visible. Roc-flight ends when the player is enclosed by the roc.
+Roc-flight is a scene. Roc-flight begins when the roc is in location. Roc-flight ends when the player is enclosed by the roc.
 
 Sanity-check mounting the roc:
 	if a heavy handled thing (called the encumbrance) which is not the roc is enclosed by location:
