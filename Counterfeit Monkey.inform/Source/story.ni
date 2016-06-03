@@ -1272,7 +1272,7 @@ Instead of taking inventory when the current inventory listing style is utilitar
 		else:
 			[if we are only carrying non-essential things and wearing them, just say that and skip the rest]
 			if everything enclosed by the player is worn:
-				 say "[We] [are] wearing [a list of things worn by the player]." instead;
+				 say "[We] [are] wearing [a list of worn things *in the player]." instead;
 			else:
 				say "[We] [are] carrying ";
 		repeat with item running through marked for listing things:
@@ -1312,7 +1312,7 @@ Instead of taking inventory when the current inventory listing style is utilitar
 			else:
 				say "[paragraph break]Of that collection, [the list of packed things] [are] packed away in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. ";
 	if the player wears something:
-		say "[paragraph break][We] [are] wearing [the list of things worn by the player]. ";
+		say "[paragraph break][We] [are] wearing [the list of worn things *in the player]. ";
 		now paragraph break needed is true;
 	if paragraph break needed is true:
 		say paragraph break.
@@ -1339,8 +1339,6 @@ After printing the name of the tub while taking inventory:
 	if the current inventory listing style is utilitarian:
 		say " of restoration gel".
 	
-
-	 
 
 Part 4 - Extras
 
@@ -1530,7 +1528,7 @@ Understand "you" or "body" as yourself.
 Instead of examining the player:
 	say "[one of]This body is more you than me [--] well, it would be, since [we] came out a girl. Still, I feel a bit odd inspecting us too closely. It feels like invading your privacy.[or]I don't think anything about us looks out of place. [We] [are] female, though a little taller and leaner than average, and with slightly boyish facial features. It's nothing that would attract attention, though.[stopping]";
 	if the player wears something:
-		say "[line break][We] [are] wearing [the list of things worn by the player].";
+		say "[line break][We] [are] wearing [the list of worn things *in the player].";
 	rule succeeds.
 	
 
@@ -7978,7 +7976,7 @@ Some round black metal tables are supporters in the outdoor cafe.
 	Understand "table" as the round black metal tables.
 	
 Nexami Engeo is an alert man. Understand "Nex" as Nexami Engeo.
-	The description is "A big man, both tall and stout. He hasn't reached overweight yet, but it looks like a matter of time. He's wearing [a list of things which are worn by Nexami]." 
+	The description is "A big man, both tall and stout. He hasn't reached overweight yet, but it looks like a matter of time. He's wearing [a list of worn things *in Nexami]."
 	The introduction is "He's a musician, the front man of engeo. Your gang helped him out with some customs issues because of his unusual name."
 	He wears a rocker jacket and jeans. 
 	The description of the rocker jacket is "It's black leather. It might make the wearer look fierce if he didn't have such a round dimpled face." 
