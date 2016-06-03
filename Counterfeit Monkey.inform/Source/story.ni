@@ -1972,7 +1972,7 @@ The teach meta-features rule response (A) is "To save your current position, typ
 
 [TODO: Add back swearing and singing?]
 The standard report taking rule response (A) is "[We] [one of]take[or]get[or]pick up[or]acquire[as decreasingly likely outcomes] [the noun][if the noun is unexamined and the action is singular]. [run paragraph on][noun description][no line break][otherwise].[end if]".
-The standard implicit taking rule response (A) is "[We] [one of]take[or]get[or]pick up[or]acquire[as decreasingly likely outcomes] [the noun][if the noun is unexamined and the action is singular]. [run paragraph on][noun description][no line break][otherwise].[end if]".
+The standard implicit taking rule response (A) is "[We] [one of]take[or]get[or]pick up[or]acquire[as decreasingly likely outcomes] [the noun][if the noun is unexamined and the action is singular]. [run paragraph on][noun description][conditional paragraph break][otherwise]. [end if]".
 The standard report dropping rule response (A) is "[We] put down [the noun]."
 The room description heading rule response (C) is " ([if the player is in a car]jammed into the car[otherwise]in [the holder of the player][end if])".
 The parser error internal rule response (E) is "[if location is Customs House]The line is moving enough that even things that were just here move out of sight quickly[otherwise][one of]I don't know what you think you're talking about, because we can't see any such thing here[or]Maybe that means something different to you, but I can't see any such thing[or]I can't see what you're talking about[stopping][end if]."
@@ -3497,7 +3497,7 @@ Rule for disclosing exterior of something which is in a drawer:
 	say "[The current-subject] is in [the holder of the current-subject]. ";
 
 Rule for disclosing contents of a drawer (called special-target):
-	say "[if the prior named object is the special-target]Inside[otherwise]In [the special-target][end if] [is-are a list of things in the special-target]. [run paragraph on]".
+	say "[if the prior named object is the special-target]Inside[otherwise]In [the special-target][end if] [is-are a list of things *in the special-target]. [run paragraph on]".
 	
 A desk is a kind of supporter. [Every desk incorporates two vertical drawers.] A desk is usually scenery. The description of a desk is usually "It's fakely veneered in dark wood and shows signs of years of abuse." A desk is usually seated.
 
@@ -5172,7 +5172,7 @@ Instead of listening to the code-lock:
 Carry out going through the temporary barrier:
 	record "passing through the temporary barrier" as achieved.
 
-Ampersand Bend is south of the temporary barrier. It is a road. The description is "A bend in the street, which runs west and north. This district combines the old and the new: a small [museum] in an ancient stone building to the east, a shiny [real estate office] south. The window of the museum is currently displaying one of its exhibits, [a list of things on the display stand][if the code is on the display stand]. Well, not to worry: they'll be able to restore the codex easily enough when the museum reopens[end if]." Understand "district" as Ampersand Bend.
+Ampersand Bend is south of the temporary barrier. It is a road. The description is "A bend in the street, which runs west and north. This district combines the old and the new: a small [museum] in an ancient stone building to the east, a shiny [real estate office] south. The window of the museum is currently displaying one of its exhibits, [a list of things *in the display stand][if the code is on the display stand]. Well, not to worry: they'll be able to restore the codex easily enough when the museum reopens[end if]." Understand "district" as Ampersand Bend.
 
 Instead of listening to Ampersand Bend:
 	say "The sounds from the north suggest a holiday fair in full swing: children laughing and shouting, people selling food and drinks, various fairground machinery, tinny music."
@@ -5194,11 +5194,11 @@ The description is "One of several small museums around the older part of the is
 
 This particular museum is housed in a stone building. Parts of the old [if the player wears the Britishizing goggles]mediaeval[otherwise]medieval[end if] city wall are still visible in the foundations.
 
-All that can be seen of the exhibits is the external [display window]. On the other side of the protective tinted glass [is-are a list of things on the display stand]." 
+All that can be seen of the exhibits is the external [display window]. On the other side of the protective tinted glass [is-are a list of things *in the display stand]." 
 
 The display window is a transparent closed container. It is part of the museum exterior. The display stand is scenery. Understand "protective" or "tinted" or "glass" or "external" as the display window.
 
-In the display window is a display stand. Instead of searching the display window: say "In the window is [a display stand], on which [is-are a list of things on the display stand]."
+In the display window is a display stand. Instead of searching the display window: say "In the window is [a display stand], on which [is-are a list of things *in the display stand]."
 
 Rule for reaching inside the display stand:
 	say "The display window is, unsurprisingly, not open to reach into.";
@@ -5927,11 +5927,11 @@ To say balance contents:
 	if the right pan does not contain something
 	begin;
 		if the left pan does not contain something, say "Both pans are empty. ";
-		otherwise say "The right pan is empty and the left contains [a list of things in the left pan]. ";
+		otherwise say "The right pan is empty and the left contains [a list of things *in the left pan]. ";
 	otherwise if the left pan does not contain something;
-		say "The left pan is empty and the right contains [a list of things in the right pan]. "; 
+		say "The left pan is empty and the right contains [a list of things *in the right pan]. "; 
 	otherwise;
-		say "On the right pan [is-are a list of things in the right pan] and on the left [a list of things in the left pan]. ";
+		say "On the right pan [is-are a list of things *in the right pan] and on the left [a list of things *in the left pan]. ";
 	end if.
 
 A pan is a kind of container. Understand "scale" or "pan" or "pans" as a pan. The right pan and the left pan are pans. The left pan and the right pan are part of the word-balance. The description of a pan is "Sturdy but slotted."
@@ -6150,7 +6150,7 @@ This is the diorama follow-on rule:
 		if the diorama table does not support anything:
 			say "The scenery appears to have been hot-glued in place.";
 		otherwise:
-			say "[The list of things on the diorama table] [if at least two things are on the diorama table]are[otherwise]is[end if] movable, but the rest of the scenery appears to have been hot-glued in place.";
+			say "[The list of things *in the diorama table] [if at least two things are on the diorama table]are[otherwise]is[end if] movable, but the rest of the scenery appears to have been hot-glued in place.";
 		rule succeeds.
 
 
@@ -6635,7 +6635,7 @@ The description of the locker is "A standard metal [locker] for travelers to lea
 After opening the locker:
 	record "opening the locker" as achieved;
 	complete "Retrieve your remaining possessions from locker at hostel";
-	say "Now that the lock has been removed, the locker swings easily open[if something is in the locker], revealing [a list of things in the locker][end if]." instead.
+	say "Now that the lock has been removed, the locker swings easily open[if the locker is non-empty], revealing [a list of things *in the locker][end if]." instead.
 
 The lock can be lockable. The lock can be locked. The lock can be openable. The lock can be open. The lock is openable, lockable and locked. Understand "dial" as the lock.
 
@@ -7444,7 +7444,7 @@ Sanity-check doing something when the bushes are shrine-hiding:
 
 [The nymph 'shrine' is nod to the island's Roman history. There's nothing in the game to reveal this, really, but the idea is that this stone is actually a panel from an imperial-era sarcophagus (nymphs were often featured on such panels, and sarcophagus carvers were of very varied levels of skill). Subsequent inhabitants moved it.]
 
-The shrine is a fixed in place container in the Winding Footpath. The initial appearance is "Now that the bushes have been cleared a little, the ancient shrine is plainly visible[if something is in the shrine], and [a random thing in the shrine] [are] set up in the place of hon[our][end if]." Understand "ancient" or "wall" or "niche" or "stone" or "backing" as the shrine. The description of the shrine is "There's a niche dug into the stone of the wall, above a [low relief] of three ladies. It's not very good work to start with, and has been eroded by a lot of weather, and I wouldn't be surprised if this weren't its original location; it probably stood somewhere else and was brought here.".
+The shrine is a fixed in place container in the Winding Footpath. The initial appearance is "Now that the bushes have been cleared a little, the ancient shrine is plainly visible[if the shrine is non-empty], and [a random thing in the shrine] [are] set up in the place of hon[our][end if]." Understand "ancient" or "wall" or "niche" or "stone" or "backing" as the shrine. The description of the shrine is "There's a niche dug into the stone of the wall, above a [low relief] of three ladies. It's not very good work to start with, and has been eroded by a lot of weather, and I wouldn't be surprised if this weren't its original location; it probably stood somewhere else and was brought here.".
 
 The carrying capacity of the shrine is 1.
 
@@ -7844,7 +7844,7 @@ The description of the modems is "If Brock were here, he would know exactly what
 
 Section 3 - Lena 
 
-Lena is an alert woman in the Aquarium. The initial appearance is "[one of][Lena] is present, all right. In fact she watches us keenly the instant [we] come into the shop.[or][Lena] hovers, unwilling to let us look around ungoverned[if the contraband box is mentionable and the contraband box contains something]. At her feet is [a contraband box] containing [a list of things in the contraband box][end if].[stopping]".
+Lena is an alert woman in the Aquarium. The initial appearance is "[one of][Lena] is present, all right. In fact she watches us keenly the instant [we] come into the shop.[or][Lena] hovers, unwilling to let us look around ungoverned[if the contraband box is mentionable and the contraband box is non-empty]. At her feet is [a contraband box] containing [a list of things *in the contraband box][end if].[stopping]".
 	The introduction is "[Lena] is an associate of Slango's. You hadn't realized that had crossed over into a romance. Slango has never, ever in your recollection dated anyone. And now this."
 	The description is "She has grey hair in a curly cloud around her head, and she wears a [long patchwork skirt] and [leather sandals]. But her eyes are keen."
 	Lena wears a long patchwork skirt and some leather sandals. The description of the leather sandals is "The sort of sturdy comfortable sandals one can walk in for hours." 
@@ -8023,7 +8023,7 @@ Instead of taking the spill:
 	say "It's not the kind of thing [we] can just pick up and carry away."
 
 Rule for disclosing contents of the round black metal tables when the round black metal tables support the spill:
-	say "Someone has left [a spill] on [if Nexami is not in location]one of the tables[otherwise]another[end if][if the round black metal tables support a mentionable thing], nearly touching [the list of mentionable things on the round black metal tables][end if].[run paragraph on]".
+	say "Someone has left [a spill] on [if Nexami is not in location]one of the tables[otherwise]another[end if][if the round black metal tables support a mentionable thing], nearly touching [the list of mentionable things *in the round black metal tables][end if].[run paragraph on]".
 
 [The introduction of Outdoor Cafe is "It is here that you and I first met: me drinking my coffee, you with an austere cup of herbal tea. I enjoyed that meeting, but somehow I am uncomfortable being here, as though [we] might be recognized as the couple from earlier. Ludicrous, I know. You're calm." ]
 
@@ -8528,7 +8528,7 @@ To say f:
 	now the prior named object is a random woman which is not plural-named.
 	
 To say m:
-	now the prior named object is a random man  which is not plural-named.
+	now the prior named object is a random man which is not plural-named.
 		 
 To say fm:
 	if a random chance of 1 in 2 succeeds:
@@ -8650,7 +8650,7 @@ A ranking rule for the giant Atlantida statue:
 	increase the description-rank of the giant Atlantida statue by 50.
 
 The giant Atlantida statue is a distant fixed in place enterable supporter in Traffic Circle. 
-	The initial appearance is "A [giant Atlantida statue] stands at the cen[ter][if something unsuitable is on the giant Atlantida statue], decorated in an unorthodox fashion with [a list of unsuitable things on the giant Atlantida statue][end if][if the signet is on the giant Atlantida statue]. [A signet], outsized, representing the seal of the Bureau, hangs around her neck in classic albatross fashion[end if][if the restoration-gel rifle is in the location]. [The restoration-gel rifle] is propped against the base of the statue[end if]."
+	The initial appearance is "A [giant Atlantida statue] stands at the cen[ter][if something unsuitable is on the giant Atlantida statue], decorated in an unorthodox fashion with [a list of unsuitable things *in the giant Atlantida statue][end if][if the signet is on the giant Atlantida statue]. [A signet], outsized, representing the seal of the Bureau, hangs around her neck in classic albatross fashion[end if][if the restoration-gel rifle is in the location]. [The restoration-gel rifle] is propped against the base of the statue[end if]."
 	The introduction is "Atlantida is to us a bit as Uncle Sam might be to you, except that she embodies the spirit of the people rather than the government. In recent years she's become a symbol of opposition to the Bureau."
 	
 The huge-metal-arm is part of the giant Atlantida statue. It is a distant fixed in place enterable supporter. The printed name is "huge metal arm". Understand "huge" or "enormous" or "metal" or "arm" as the huge-metal-arm. The description of the huge-metal-arm is "It is bare and muscular, as though Atlantida is envisioned championing her people through a series of arm-wrestling matches."
@@ -9067,8 +9067,8 @@ The Slangovia map is a thing. The printed name is "map of Slangovia". Understand
 The mannequin is a supporter in Arbot Maps & Antiques. The description is "A head and torso only, and abstractly rendered. The vaguely masculine shape is covered in coarse white linen." Understand "head" and "torso" and "masculine" and "shape" and "coarse" and "white" and "linen" as the mannequin.
 
 Rule for writing a topic sentence about the mannequin:
-	if something is on the mannequin:
-		say "A stylish [mannequin] near the front sports [a list of things on the mannequin]. ";
+	if the mannequin is non-empty:
+		say "A stylish [mannequin] near the front sports [a list of things *in the mannequin]. ";
 	otherwise:
 		say "The [mannequin] at the front of the shop is currently denuded of wares. "
 
@@ -9208,7 +9208,7 @@ Section 4 - Drinks Club
 
 Fleur d'Or Drinks Club is west of Fleur d'Or Lobby. It is indoors and southern. The description is "The back wall is dramatically decorated with bottled liquors of all sorts, from gin to cachaça; there's a giant bottle of Campari, taller than your average three-year-old, with a red ribbon around its neck. 
 
-What makes this place technically a drinks club rather than a bar is its lic[ense] to serve letter-manufactured food and drink. [A toolkit] on the [dor-bar-top] contains [a list of things in the toolkit], ready to be transformed into their respective cocktails."
+What makes this place technically a drinks club rather than a bar is its lic[ense] to serve letter-manufactured food and drink. [A toolkit] on the [dor-bar-top] contains [a list of things *in the toolkit], ready to be transformed into their respective cocktails."
 
 The liquor collection is scenery in the Fleur d'Or Drinks Club. Understand "gin" or "cachaca" or "cachaça" or "whiskey" or "whisky" or "bourbon" or "hendricks" or "vodka" or "tanqueray" or "scotch" or "glenfiddich" or "glenlivet" or "rum" or "tequila" or "campari" or "pastis" or "bombay" or "bombay sapphire" or "brandy" or "bottle" or "giant" or "bottle of" as the liquor collection. The description of liquor collection is "The liquor collection here is quite extensive, and generally of good quality."
 
@@ -9228,7 +9228,7 @@ Test toolkitbug with "x toolkit / search toolkit / take all from toolkit" in Dri
 The toolkit is a scenery thing on the dor-bar-top. The toolkit contains some screwdrivers, some gimlets, and some rusty nails. Sanity-check taking the toolkit: say "Let's not draw attention by stealing that." instead.
 	Sanity-check taking something which is in the toolkit: say "Let's not draw attention by stealing [regarding the noun][those]." instead.
 	Instead of examining or searching the toolkit:
-		say "It offers an assortment: [a list of things in the toolkit]."
+		say "It offers an assortment: [a list of things *in the toolkit]."
 
 The description of the gimlets is "A gimlet is a hand-tool for drilling holes, like an auger but smaller. It is for piercing things and boring into them, anyway, which is presumably where the phrase 'gimlet-eyed' comes from. These are arranged into an attractive bouquet-shape."
 	Understand "gimlet" as the gimlets when the gimlet is not marked-visible and the gimlet-drink is not marked-visible.
@@ -9271,7 +9271,7 @@ First after writing a paragraph about the bartender when the current-paragraph r
 		
 Rule for writing a topic sentence about the patron:
 	if a drink-form thing is on the dor-bar-top and a random chance of 1 in 2 succeeds:
-		say "[The patron] [one of]is keeping politely out of the way of [the list of drink-form things on the dor-bar-top] that [we] ordered. [We] [are] not using up too much space, though, as most of [the other patrons] are at tables and not using the bar at all[or]is still keeping out of the way of our [list of drink-form things on the dor-bar-top][stopping]. ";
+		say "[The patron] [one of]is keeping politely out of the way of [the list of drink-form things *in the dor-bar-top] that [we] ordered. [We] [are] not using up too much space, though, as most of [the other patrons] are at tables and not using the bar at all[or]is still keeping out of the way of our [list of drink-form things *in the dor-bar-top][stopping]. ";
 	otherwise:
 		say "[one of]Aside from [the patron] at the bar, most of the patrons are seated at tables[or][The patron] sips his gin and tonic and surveys [the other patrons][or][The patron] notices someone he knows across the room, and waves[or]When [the bartender] isn't looking his way, [the patron] makes some notes on a PDA, then puts it away again[as decreasingly likely outcomes]. ";
 	now the gin-tonic is mentioned; 
@@ -9534,16 +9534,16 @@ Rule for disclosing contents of the futon:
 	now the current-subject is special-target;
 	if at least two books are on the futon
 	begin;
-		say "Clumsily stacked on the futon [is-are a list of books on the futon]";
+		say "Clumsily stacked on the futon [is-are a list of books *in the futon]";
 		if at least three mentionable things are on the futon
 		begin;
-			say "; [a list of mentionable things on the futon] are scattered in the remaining space. ";
+			say "; [a list of mentionable things *in the futon] are scattered in the remaining space. ";
 		otherwise;
-			if something mentionable is on the futon, say ", as well as [a list of mentionable things on the futon]. ";
+			if something mentionable is on the futon, say ", as well as [a list of mentionable things *in the futon]. ";
 			otherwise say ". ";
 		end if;
 	otherwise;
-		say "On top [is-are a list of things on the futon]. ";
+		say "On top [is-are a list of things *in the futon]. ";
 	end if; 
 	
 A book called The Problem of Adjectives is on the futon. Understand "problems" as the problem of adjectives. 
@@ -9860,7 +9860,7 @@ Rule for writing a paragraph about the department printer:
 	
 Rule for disclosing contents of the paper-drawer:
 	now the current-subject is paper-drawer;
-	say ", revealing [a list of mentionable things in the paper-drawer]. [run paragraph on]". 
+	say ", revealing [a list of mentionable things *in the paper-drawer]. [run paragraph on]". 
 
 After examining the department printer:
 	if the paper-drawer is closed:
@@ -9900,7 +9900,7 @@ Instead of pushing or pulling the paper-drawer:
 	otherwise:
 		try opening the paper-drawer.
 
-An output tray is part of the department printer. It is a supporter. The description of the output tray is "In molded plastic, it is an integral part of the printer body[if something is on the output tray]. Currently there [is-are a list of things on the output tray] on the tray, waiting for the owner to come collect[end if]."
+An output tray is part of the department printer. It is a supporter. The description of the output tray is "In molded plastic, it is an integral part of the printer body[if the output tray is non-empty]. Currently there [is-are a list of things *in the output tray] on the tray, waiting for the owner to come collect[end if]."
 
 Report inserting the ream into the paper-drawer:
 	say "The ream fits exactly into the depth of the drawer. [We] adjust the plastic clamps that hold pages in place until everything is snug." instead.
@@ -9909,7 +9909,7 @@ Report closing the paper-drawer:
 	say "The paper-drawer slides back into place with a click." instead.
 	
 Report opening the paper-drawer:
-	say "[We] pull up on the little catch and draw the drawer out[if something is in the paper-drawer], revealing [a list of things which are in the paper-drawer][otherwise]. It's empty[end if]." instead.
+	say "[We] pull up on the little catch and draw the drawer out[if the paper-drawer is non-empty], revealing [a list of things *in the paper-drawer][otherwise]. It's empty[end if]." instead.
 
 Instead of putting something on the output tray:
 	say "It's probably a bad idea to risk jamming the output tray by putting random things onto it."
@@ -10067,7 +10067,7 @@ When play begins:
 	move Professor Higgate to N.
 	
 Rule for writing a topic sentence about Professor Higgate when Higgate is on a chair (called the special-target): 
-	say "[Professor Higgate] is sitting at [an oval table][if something is on the oval table], on which are spread [a list of things on the oval table][end if]. [run paragraph on]".
+	say "[Professor Higgate] is sitting at [an oval table][if the oval table is non-empty], on which are spread [a list of things *in the oval table][end if]. [run paragraph on]".
 	
 Rule for writing a topic sentence about Professor Higgate when Higgate is in the Seminar Room:
 	say "[Professor Higgate] waits a little absent-mindedly nearby, looking over [the LSR Bookcase]. [run paragraph on]".
@@ -10288,7 +10288,7 @@ Waterstone's Office is north of office-door-1. It is an office. It is privately-
 The description of Waterstone's Office is "A very finicky, neatly arranged room, in which one never feels quite at home.".
 
 Rule for writing a paragraph about a desk (called target) which is in Waterstone's office:
-	say "There is an almost bare desk[if something is on the target], which at the moment supports [a list of things on the target][end if]." Waterstone's Office is indoors.
+	say "There is an almost bare desk[if the target is non-empty], which at the moment supports [a list of things *in the target][end if]." Waterstone's Office is indoors.
 
 [Waterstone is not based on any department chair I've worked for, nor on my own advisor (all of whom have been thoroughly nice people).]
 
@@ -10585,17 +10585,17 @@ A ranking rule for the tiny refrigerator:
 	increase the description-rank of the tiny refrigerator by 100.    
 	
 After printing the name of the silver platter while writing a paragraph about the tiny refrigerator:
-	if something is on the silver platter:
+	if the silver platter is non-empty:
 		if at least two things are on the silver platter:
-			say " (littered with [if the shrimp tail is on the silver platter]the remains of a party, including [end if][a list of things on the silver platter])[run paragraph on]";
+			say " (littered with [if the shrimp tail is on the silver platter]the remains of a party, including [end if][a list of things *in the silver platter])[run paragraph on]";
 		otherwise:
-			say " bearing [a list of things on the silver platter][run paragraph on]".
+			say " bearing [a list of things *in the silver platter][run paragraph on]".
 
 Rule for writing a paragraph about the tiny refrigerator:
 	say "A [tiny refrigerator] stores lunches (sometimes) and looted leftovers from department receptions (when available)";
 	if the tiny refrigerator is open:
-		say ". The door is currently open[if something is in the tiny refrigerator], revealing [a list of things in the tiny refrigerator][end if]";
-	say "[if something is on the fridge-top]. On top of the fridge there [is-are a list of things on the fridge-top][end if].";
+		say ". The door is currently open[if the tiny refrigerator is non-empty], revealing [a list of things *in the tiny refrigerator][end if]";
+	say "[if the fridge-top is non-empty]. On top of the fridge there [is-are a list of things *in the fridge-top][end if].";
 	say line break.
 	
 Instead of putting something on the tiny refrigerator:
@@ -10750,7 +10750,7 @@ Some wooden seats are supporters in Lecture Hall 2. Understand "hard" or "wood" 
 
 
 Rule for disclosing contents of the wooden seats when at least one mentionable thing is on the wooden seats:
-	say "Abandoned on one near the back [is-are a list of mentionable things on the wooden seats]. [run paragraph on]"
+	say "Abandoned on one near the back [is-are a list of mentionable things *in the wooden seats]. [run paragraph on]"
 
 A coat is on the wooden seats. The coat is floppy and wearable. It covers the torso-area. The description is "It's been abandoned here for a while, since this isn't the time of year when people wear coats. It's brown cloth, only thick enough to keep out rain or a mild chill, and it's rubbed shiny at the elbows. No wonder the owner didn't miss it much." The heft of the coat is 2. Understand "brown coat" or "brown cloth" as the coat.
 
@@ -11671,7 +11671,7 @@ To say tv description:
 
 To say fake-incident:
 	if a display-foreign thing is on the display-platform:
-		say "[one of]The security guard on his rounds notices [the list of display-foreign things on the display-platform]. He gets out a pad of paper as though to write up an incident report, but makes a gesture that even through closed circuit recording reads plainly as Inability To Be Bothered, and strolls away again[or]The security guard from before enters the room, looks at his watch, and heartily ignores [the list of display-foreign things on the display-platform][or]This time when a security guard comes into the room, it's a different one from previously. He goes over to the display case and frowns at [the list of display-foreign things on the display-platform]. Then he talks to someone on his radio[or]Two security guards enter the room and look into the display case. They appear to be having a vehement argument about what to do[or]Two security guards are talking to a manager about the situation in the display case[or]A manager is taking notes about the display-case disturbance[or]Some All-Purpose Officers are taking depositions and someone is photographing [the list of display-foreign things on the display-platform][stopping]";
+		say "[one of]The security guard on his rounds notices [the list of display-foreign things *in the display-platform]. He gets out a pad of paper as though to write up an incident report, but makes a gesture that even through closed circuit recording reads plainly as Inability To Be Bothered, and strolls away again[or]The security guard from before enters the room, looks at his watch, and heartily ignores [the list of display-foreign things *in the display-platform][or]This time when a security guard comes into the room, it's a different one from previously. He goes over to the display case and frowns at [the list of display-foreign things *in the display-platform]. Then he talks to someone on his radio[or]Two security guards enter the room and look into the display case. They appear to be having a vehement argument about what to do[or]Two security guards are talking to a manager about the situation in the display case[or]A manager is taking notes about the display-case disturbance[or]Some All-Purpose Officers are taking depositions and someone is photographing [the list of display-foreign things *in the display-platform][stopping]";
 	otherwise:
 		say "[one of]A security guard pokes his head into the room, decides all is well, and strolls away again[or]The security guard returns for another pass through the area[or][We] get another view of the security guard's balding head as he takes a turn around the room[or]The security guard is in the middle of checking the place out again[stopping]". 
 
@@ -11700,7 +11700,7 @@ Does the player mean pushing the small black push-button:
 Instead of pushing the small black push-button:
 	if the display-platform is in the location:
 		if an essential thing (called essential item) is on the display-platform:
-			say "Best not to part with [the list of essential things on the display-platform]." instead;
+			say "Best not to part with [the list of essential things *in the display-platform]." instead;
 		raise the display;
 	otherwise:
 		lower the display.
@@ -11708,11 +11708,11 @@ Instead of pushing the small black push-button:
 To lower the display:
 	say "A heavy clunk sounds. On the [tv monitor], [we] see the display case black out.
 	
-Then there is a groaning of moving metal, and part of the ceiling lowers. [one of]This is, apparently, how displays are swapped out for the tools exhibit upstairs: the [display-platform] is lowering to our level, providing access[or]The [display-platform] descends again until level with the floor[stopping][if something is on the display-platform]. This brings [the list of things on the display-platform] down into the room[end if].";
+Then there is a groaning of moving metal, and part of the ceiling lowers. [one of]This is, apparently, how displays are swapped out for the tools exhibit upstairs: the [display-platform] is lowering to our level, providing access[or]The [display-platform] descends again until level with the floor[stopping][if the display-platform is non-empty]. This brings [the list of things *in the display-platform] down into the room[end if].";
 	now the display-platform is in the location.
 	
 To raise the display:
-	say "There is a groaning of gears and hydraulics, and the [display-platform][if something is on the display-platform], loaded with [the list of things on the display-platform],[end if] rises back up to the exhibit level.";
+	say "There is a groaning of gears and hydraulics, and the [display-platform][if the display-platform is non-empty], loaded with [the list of things *in the display-platform],[end if] rises back up to the exhibit level.";
 	now the display-platform is in the display case.
 
 [TODO: fix test]
@@ -12001,7 +12001,7 @@ This is the static rule:
 	say "Nothing shows but a steady field of static."
 
 This is the tunnel-display rule:
-	say "The camera shifts to show a dimly lit corridor cut through sedimentary rock[if Tunnel is visited][--] just below here, in fact[end if][if something portable is in the Tunnel]. [We] can make out [a list of portable things in the Tunnel][end if]."
+	say "The camera shifts to show a dimly lit corridor cut through sedimentary rock[if Tunnel is visited][--] just below here, in fact[end if][if something portable is in the Tunnel]. [We] can make out [a list of portable things *in the Tunnel][end if]."
  
 Software can be quittable. A software is usually not quittable. Security-program is quittable. Access-database is quittable.
 
@@ -12065,7 +12065,7 @@ Instead of waving the letter-remover at the balm when the current setting of the
 	say "For a moment, just a moment, the balm starts to turn into an old-fashioned coin representing the concept of 'alm'; then it flickers out again uncertainly. Probably because 'alms' is not really a plural form and 'alm' is unattested in practice."
 
 
-The boiler is a device in the Generator Room. It is fixed in place. The initial appearance is "Most of the room is taken up with a gigantic boiler installation[if the boiler is switched on] periodically giving off flashes of light and steam[otherwise] that is currently off[end if]. The locking mechanism is [a cryptolock][if something is in the cryptolock], currently containing [a list of things in the cryptolock][otherwise], currently empty[end if]." It is switched off. 
+The boiler is a device in the Generator Room. It is fixed in place. The initial appearance is "Most of the room is taken up with a gigantic boiler installation[if the boiler is switched on] periodically giving off flashes of light and steam[otherwise] that is currently off[end if]. The locking mechanism is [a cryptolock][if the cryptolock is non-empty], currently containing [a list of things *in the cryptolock][otherwise], currently empty[end if]." It is switched off. 
 
 The description is "This frighteningly massive contraption has pipes and compression tanks and steam gauges and dents and rust stains[if switched on]. It trembles a little. The needles of the gauges twitch, but stay out of the red[otherwise]. All the gauge needles point to 0[end if]. A thick glass pane allows a view of one of the first chambers." 
 
@@ -12126,7 +12126,7 @@ The portcullis is a door. It is east of Tunnel through Chalk and west of Persona
 	The description of the portcullis is "Heavy black metal bars, left from a much earlier state. [portcullis status]."
 
 To say portcullis status:
-	say "It is currently [if the portcullis is open]raised[otherwise]lowered[end if][if the jack wedges the portcullis] a few feet by [a jack][end if][if something is on the pulley]. From the pulley above the portcullis hangs [a list of things which are on the pulley][otherwise]. There's a pulley and hook arrangement above the portcullis, but the hook is empty[end if]".
+	say "It is currently [if the portcullis is open]raised[otherwise]lowered[end if][if the jack wedges the portcullis] a few feet by [a jack][end if][if the pulley is non-empty]. From the pulley above the portcullis hangs [a list of things *in the pulley][otherwise]. There's a pulley and hook arrangement above the portcullis, but the hook is empty[end if]".
 	
 Instead of searching the portcullis:
 	if the player is in Tunnel through Chalk:
@@ -12156,13 +12156,13 @@ Definition: a thing is unhookable:
 
 Every turn when something unhookable is on the pulley (this is the portcullis empty rule):
 	if the player can see the pulley:
-		say "[The list of unhookable things on the pulley] fall[s] to the ground.";
+		say "[The list of unhookable things *in the pulley] fall[s] to the ground.";
 	now every unhookable thing on the pulley is in Tunnel through Chalk.
 	
 Sanity-check putting something on the portcullis:
 	try putting the noun on the pulley instead.
 
-Check putting something on the pulley when something is on the pulley:
+Check putting something on the pulley when the pulley is non-empty:
 	say "The hook can only really hold one thing at a time. [run paragraph on]";
 	while something (called the current content) is on the pulley:
 		try taking the current content;
@@ -12780,7 +12780,7 @@ Some gameshelves are scenery in the Galley. The printed name is "built-in shelve
 On the gameshelves is a game-selection. Understand "games" or "game" or "battered" or "selection" or "selection of games" as the game-selection.
 
 Rule for writing a paragraph about something which is on the gameshelves:
-	say "On the port wall, built-in shelves hold [a list of things on the gameshelves]."
+	say "On the port wall, built-in shelves hold [a list of things *in the gameshelves]."
 
 The description of the game-selection is "Oh, all sorts: Boggle and Scrabble, which you always win and which therefore Brock and Slango only play when they're in a mood for cheering you up. Monopoly, dusty with disuse. Puerto Rico. Arkham Horror. It's surprising what even Brock will admit to being amused by in the course of a long evening at sea." The printed name of the game-selection is "battered selection of games".
 
@@ -14125,7 +14125,7 @@ To decide what thing is the homonym-match of (target - a thing):
 
 Chapter 3 - The T-inserter
 
-The T-inserter machine is a fixed in place container in the Sensitive Equipment Testing Room. The initial appearance is "At the cen[ter] of the room is a gleaming new T-inserter Machine[if something is in the machine], currently containing [a random thing in the T-inserter machine][end if][one of]. This is a state of the art device: letter removal has been well understood for decades, but insertion is much more dangerous and difficult, fraught with ambiguity[or][stopping]." The description is "Made of brushed steel, it resembles an industrial espresso machine, with a space in which to insert items. A dozen small nozzles poke into this space, and the grate beneath is ready to drain off any superfluity of T-ness. There is a tiny brass plate near the base of the machine."  
+The T-inserter machine is a fixed in place container in the Sensitive Equipment Testing Room. The initial appearance is "At the cen[ter] of the room is a gleaming new T-inserter Machine[if the machine is non-empty], currently containing [a random thing in the T-inserter machine][end if][one of]. This is a state of the art device: letter removal has been well understood for decades, but insertion is much more dangerous and difficult, fraught with ambiguity[or][stopping]." The description is "Made of brushed steel, it resembles an industrial espresso machine, with a space in which to insert items. A dozen small nozzles poke into this space, and the grate beneath is ready to drain off any superfluity of T-ness. There is a tiny brass plate near the base of the machine."  
 
 Understand "space" and "grate" and "inserter" as the machine. The carrying capacity of the T-inserter Machine is 1.
 
@@ -14442,7 +14442,7 @@ To synthesize contents of (source - a thing):
 			now everything on the source is in the repository;
 		move the chosen article to the source;
 		record "using the synthesizer" as achieved;
-		say "[The source] [if the source is a container]hums like a microwave oven for 43 seconds, then pings. Inside there [is-are a list of things in the source][otherwise]glows vibrant blue for five seconds, leaving behind [a list of things on the source][end if]."; 
+		say "[The source] [if the source is a container]hums like a microwave oven for 43 seconds, then pings. Inside there [is-are a list of things *in the source][otherwise]glows vibrant blue for five seconds, leaving behind [a list of things *in the source][end if]."; 
 		try examining the chosen article;
 		set pronouns from the chosen article;
 		carry out the caching scope activity with the player;
@@ -14475,7 +14475,7 @@ That in turn necessitated other changes as follow:
 This is all a lot of bother just for the sake of adding an achievement/easter egg that most players probably won't notice. In each case, though, I felt as though the result of the design fix was a richer, more interesting setting with more playful manipulation available. Adding the yam to the game also provided another purpose for the farmer, who had been relatively useless (other than as the provider of the totally optional lime) ever since he stopped selling chard.  ]
 
 The spinner is part of the spinner-gate. It is a supporter. Understand "sculpture" or "mirror" or "statue" or "pedestal" or "cone" as the spinner. 
-	The description of the spinner is "The base of the sculpture is a cone about four feet tall. On top of that is a flat circular pedestal, and there is a mirror that rotates around the outer circumference. The mirrored surface faces inward, so that it is sometimes reflecting [if something is on the spinner][the random thing on the spinner] on the pedestal[otherwise]whatever might be on the pedestal (currently nothing)[end if] and sometimes concealing [if something is on the spinner][them][otherwise]it[end if] from view.". 
+	The description of the spinner is "The base of the sculpture is a cone about four feet tall. On top of that is a flat circular pedestal, and there is a mirror that rotates around the outer circumference. The mirrored surface faces inward, so that it is sometimes reflecting [if the spinner is non-empty][the random thing on the spinner] on the pedestal[otherwise]whatever might be on the pedestal (currently nothing)[end if] and sometimes concealing [if the spinner is non-empty][them][otherwise]it[end if] from view.". 
 	The printed name of the spinner is "pedestal". 
 	The carrying capacity is 1.  
 	
@@ -14489,7 +14489,7 @@ Sanity-check switching off the spinner:
 
 Section 2 - Spinning Functionality
 	
-Every turn when the location is Roget Close and something is on the spinner: 
+Every turn when the location is Roget Close and the spinner is non-empty: 
 	if not looking:
 		follow the spinner-turning rule;
 		say paragraph break.
@@ -14530,7 +14530,7 @@ This is the spinner-turning rule:
 			now the chosen article is essential; ]
 		now everything which is on the spinner is in the repository;
 		move the chosen article to the spinner;
-		say "[if looking]After the mirror does its work,[otherwise]The mirror rotates in leisurely fashion, and when it is done[end if] there [is-are a list of things on the spinner].";
+		say "[if looking]After the mirror does its work,[otherwise]The mirror rotates in leisurely fashion, and when it is done[end if] there [is-are a list of things *in the spinner].";
 		try examining the chosen article;
 		record "using the spinner" as achieved;
 		if the spinner-gate is closed:
@@ -14543,10 +14543,10 @@ This is the spinner-turning rule:
 	otherwise:
 		if looking:
 			if exactly one thing is on the spinner, say "It does";
-			otherwise say "[The list of things on the spinner] [do]";
+			otherwise say "[The list of things *in the spinner] [do]";
 			say " not change, however. ";
 		otherwise:
-			say "The mirror revolves for a moment, [one of]without effect[or]without changing [the list of things on the spinner][at random], though the word '[substitute text]' appears in startling green on the mirror's surface. ".
+			say "The mirror revolves for a moment, [one of]without effect[or]without changing [the list of things *in the spinner][at random], though the word '[substitute text]' appears in startling green on the mirror's surface. ".
 		
 [TODO: fix test]
 Table of Ultratests (continued)
@@ -14556,11 +14556,11 @@ topic	stuff	setting
 Test yambug with "tutorial off / wear monocle / buy yam / n / w / put yam on pedestal / z / x yam" [holding the roll of bills and the monocle in Hesychius Street.]
 	
 Rule for disclosing exterior of something (called special-target) which is on the spinner:
-	say "[The special-target] [are] slowly revolving on [a spinner][if a mentionable thing is on the spinner], together with [a list of mentionable things which are on the spinner][end if]. [run paragraph on]"; 
+	say "[The special-target] [are] slowly revolving on [a spinner][if a mentionable thing is on the spinner], together with [a list of mentionable things *in the spinner][end if]. [run paragraph on]"; 
 	follow the spinner-turning rule.
 
 Rule for disclosing contents of the spinner (this is the spinner-content rule):
-	say "On [the spinner], [a list of things on the spinner] revolve[s] idly. [run paragraph on]"; 
+	say "On [the spinner], [a list of things *in the spinner] revolve[s] idly. [run paragraph on]"; 
 	follow the spinner-turning rule. 
 	
 Test spin-plans with "tutorial off / wave l-remover at plans / put pans on spinner / get snap / i / wave s-remover at snap / i / put nap on spinner / get pan / i / n" holding the secret-plans in Roget Close.
@@ -15500,7 +15500,7 @@ Instead of switching on the big lever:
 						say "[The programmable dais] glows deep red, then deeper. There's a roar like a stadium being demolished, and a passage opens, descending into the dais itself." instead;
 					otherwise:
 						say "[The programmable dais] glows deep red. Almost at once [the result] [are] lying on the surface. [result description][line break]" instead;
-			say "[The programmable dais] goes red, then dims again. Apparently it can't find a homonym to fit [the list of things on the programmable dais]." instead; 
+			say "[The programmable dais] goes red, then dims again. Apparently it can't find a homonym to fit [the list of things *in the programmable dais]." instead; 
 	now the big lever is switched off.
 
 The massive switch is part of the programmable dais. The description is "A large black switch with a red arrow painted on it. There are two stops, labeled with black marker on tape: [i]swap homonym[/i] and [i]synthesize[/i]. It is currently set to [switch-setting of the massive switch]."
@@ -15630,7 +15630,7 @@ After inserting something into the cryptolock:
 		now everything which is in the cryptolock is in the repository;
 		move the chosen article to the cryptolock;
 		abide by the dangerous construction rules for the chosen article;
-		say "There is a churning noise from within [the cryptolock], and a moment later [we] see inside [a list of things in the cryptolock]. ";
+		say "There is a churning noise from within [the cryptolock], and a moment later [we] see inside [a list of things *in the cryptolock]. ";
 		carry out the caching scope activity with the player;
 		record "using the vowel rotator" as achieved;
 		if the boiler is switched off:
@@ -17018,7 +17018,7 @@ The bar is a thing. The description is "Imagine a stereotypical prison cell in a
 The bard is a man. The description of the bard is "He's dressed like a strolling minstrel from a Renaissance fair[if bard sings is happening], and he's singing about as well[otherwise], and looks as though he's going to burst into a rendition of Greensleeves at any moment[end if]."
 	The scent-description of the bard is "medieval hygiene".
 	
-Bard sings is a scene. Bard sings begins when the player can see the bard. Bard sings ends when the player cannot see the bard.
+Bard sings is a scene. Bard sings begins when the bard is enclosed by location. Bard sings ends when the bard is not marked-visible.
 
 Every turn during Bard Sings:
 	choose a random row in the Table of Bard Song;
@@ -17086,10 +17086,11 @@ The boa is a floppy wearable thing. The description of the boa is "Made of brigh
 The boar is an animal. The description of the boar is "In the old days they used to hunt these animals, and I can understand the impulse. It's like a pig, but even uglier and bristlier, with long dangerous-looking tusky teeth coming out of both its top and bottom jaws." The heft is 7. 
 
 Report waving the letter-remover at the boar:
-	say "Our hand is less than steady, but [we] manage to wave the letter-remover accurately enough.[paragraph break]The boar vanishes with a pop, and [a generated object] fall[s] harmlessly to the ground. [run paragraph on]"; 
+	say "Our hand is less than steady, but [we] manage to wave the letter-remover accurately enough.[paragraph break]The boar vanishes with a pop, and [a generated object] fall[s] harmlessly to the ground. [run paragraph on]";
+	now boar is not marked-visible;
 	try examining the generated object instead.
 			
-Boar mating is a recurring scene. Boar mating begins when the boar is marked-visible and the suid is marked-visible. Boar mating ends in disappointment when the boar cannot see the suid. Boar mating ends in death when the boar is not marked-visible.
+Boar Mating is a recurring scene. Boar mating begins when the boar is marked-visible and the suid is marked-visible. Boar mating ends in disappointment when the boar cannot see the suid. Boar mating ends in death when the boar is not marked-visible.
 
 Every turn during Boar Mating:
 	say "[one of]The boar looks at us unpleasantly, but then the pleasing scent of the [suid] attracts it instead[or]The boar is circling the suid, as near as it can in this awkward space[or][one of]The boar follows the suid around, its nose at her butt[or]The suid is trying to walk away from the boar[or]The boar makes an attempt to mount the suid, but slips on the sand[or]The suid squeals indignantly and walks away from the boar, who follows[at random][stopping]."
@@ -17097,7 +17098,7 @@ Every turn during Boar Mating:
 
 [The boar attack is based on several accounts of real life attacks in which the boar repeatedly rushed the victim (often unprovoked), gashing in several places. The most serious wounds generally are abdominal wounds inflicted after the boar has knocked the victim down. It would be more true to life if the boar also left gashes in the protagonist's leg in the process of knocking her down, but I decided to skip that because I didn't want to deal with a game state in which the protagonist was wounded but not dead: it would have needlessly complicated the writing of the end-game to no interesting narrative effect.]
 
-Boar attack is a recurring scene. Boar attack begins when the boar is marked-visible and the suid is not marked-visible. Boar attack ends in relief when the boar is not marked-visible. Boar attack ends in distraction when the boar can see the suid. Boar attack ends in death when the time since Boar Attack began is 3 minutes.
+Boar Attack is a recurring scene. Boar Attack begins when the boar is enclosed by location and the suid is not marked-visible. Boar Attack ends in relief when the boar is not marked-visible. Boar attack ends in distraction when the boar can see the suid. Boar Attack ends in death when the time since Boar Attack began is 3 minutes.
 
 Every turn during Boar Attack:
 	let T be the time since Boar Attack began;
@@ -17113,11 +17114,11 @@ description
 "The boar just barely misses giving us a long gash in [if the player is in the kayak]the stomach[otherwise]the thigh[end if], but it wheels around for another attempt. If it knocks us down, I am not too hopeful about our experience with those tusks."
 "I try to get us out of the way in one direction, you in another, and the result is that the boar knocks [if the player is in the kayak]the kayak over[otherwise]us flat[end if] with the butt of its head. It stands over us snorting."
 
-When boar attack ends in death:
+When Boar Attack ends in death:
 	say "The boar decides to have another go, tearing viciously at the soft flesh of our abdomen. The whole thing is oddly slow and horribly precise[if the player is in the kayak], and the foam turns bloody around us...[otherwise], and the blood makes a rivulet down to the sea...[end if]";
 	end the story saying "[We] have been mortally wounded, and there's no one around to help".
 
-Instead of jumping during boar attack:
+Instead of jumping during Boar Attack:
 	say "[We] do our best to get out of the way."
 
 Some tusks are part of the boar. The description of the tusks is "Let's not find out anything more personal about them."
@@ -20968,7 +20969,7 @@ Unsuccessful attempt by a fake person entering a car:
 	say "[The person asked] makes an effort to get in, but does not remotely fit." instead.
 	
 Rule for writing a paragraph about a fake person which is in a car (called target):
-	say "Sitting in [the target] [is-are the list of fake people in the target][if the number of fake people in the target is greater than 1], like players in a Marx Brothers movie[end if]. [paragraph break]"
+	say "Sitting in [the target] [is-are the list of fake people *in the target][if the number of fake people in the target is greater than 1], like players in a Marx Brothers movie[end if]. [paragraph break]"
 
 Carry out exiting:
 	now pursuing-state is true;
@@ -24741,7 +24742,7 @@ monocle-remark is an NPC-directed quip.
 	The reply is "'Nice monocle, by the way! You do have all the good toys. Suppose it means you can check your work and see whether you've really got enough paste on things.'"
 		
 task-reminder is an NPC-directed quip.
-	The reply is "[one of]Lena looks from us to [the list of things in the contraband box]. 'So maybe you could do something with these,' she says, looking at us sidelong. I can tell she's starting to wonder whether we're legitimate[or]'If you need to get some tools or something, I'll still be here,' Lena comments. Honestly I am surprised she's so patient about our slowness on her little test[or]Lena looks us up and down as though trying to reconfigure our face into your face, the one she knows[or]Lena is waiting for us to do something to change [the list of things in the contraband box].[stopping]."
+	The reply is "[one of]Lena looks from us to [the list of things *in the contraband box]. 'So maybe you could do something with these,' she says, looking at us sidelong. I can tell she's starting to wonder whether we're legitimate[or]'If you need to get some tools or something, I'll still be here,' Lena comments. Honestly I am surprised she's so patient about our slowness on her little test[or]Lena looks us up and down as though trying to reconfigure our face into your face, the one she knows[or]Lena is waiting for us to do something to change [the list of things *in the contraband box].[stopping]."
 
 modems-complaint is an NPC-directed quip.
 	The reply is "[one of][if the odes is seen]'Let's go back to the odes,' Lena suggests.[otherwise if the preamps are marked-visible]'Try doing something with the modems,' Lena suggests.[otherwise]'Now the modems,' says Lena. 'Unless you're too tired.'[end if][or]Lena awaits your attention to the modems.[stopping]".
@@ -25722,7 +25723,7 @@ naughty-remark is an NPC-directed quip.
 	The reply is "He eyes [the random naughty-sounding marked-visible thing which is not the cock-ring]. 'Oh for a homonym paddle.'"
 
 getting-crowded is an NPC-directed quip.
-	The reply is "[one of]Brock steps to the side to make room for [the list of fake people enclosed by the location][or]'We're going to need to install stadium seating in here,' Brock comments, nodding at [the list of fake people enclosed by the location][or]'If any guards come, we can use [the random fake person enclosed by the location] as a decoy,' Brock remarks[at random]."
+	The reply is "[one of]Brock steps to the side to make room for [the list of fake people *in the location][or]'We're going to need to install stadium seating in here,' Brock comments, nodding at [the list of fake people *in the location][or]'If any guards come, we can use [the random fake person in the location] as a decoy,' Brock remarks[at random]."
 	
 After Brock discussing interference-gelling:
 	carry out the caching scope activity with Brock;
@@ -25894,7 +25895,7 @@ Report my mother clearing:
 	say "[The actor] [pick] up [the cleared objects with definite articles] from [the noun].[run paragraph on]" instead.
 
 Report my mother opening a refrigerator:
-	say "Mother picks her way to the refrigerator, which she opens, revealing only [a list of things in the noun][queue not-planning-dinner].[run paragraph on]" instead.
+	say "Mother picks her way to the refrigerator, which she opens, revealing only [a list of things *in the noun][queue not-planning-dinner].[run paragraph on]" instead.
 		
 Report my mother closing a refrigerator:
 	say "She gives the refrigerator door a little push and it swings closed.[run paragraph on]" instead.
@@ -25914,7 +25915,7 @@ Sanity-check going from My Apartment when confrontation-with-mother has not happ
 Sanity-check going from My Apartment during confrontation-with-mother:
 	say "I don't quite dare just walk out on Mother. Partly it's habit, partly the sense that she's more upset than she's letting on, and that if we push her the wrong way she'll contact the authorities."
 
-Confrontation-with-mother is a scene. Confrontation-with-mother begins when my mother is marked-visible. 
+Confrontation-with-mother is a scene. Confrontation-with-mother begins when my mother is in the location. 
 
 When confrontation-with-mother begins:
 	say "We're about to, when the door to the street opens and my mother walks into the room. She shuts it behind her and puts away her key before she notices us. Then she stands very still. For about a quarter second she considers calling the police, but I can see that worry passing away again as she takes in our clothing, age, and general demean[our].";
@@ -25948,7 +25949,7 @@ I know you think it's a bit sketchy that my mother just walks into my apartment 
  The printed name is "claim to have seen him this morning". The true-name is "claim to hath seen him this morning". 
  Understand "have" as claim to hath seen him this morning.  The comment is "'He went out to, ah, do some research, I think. He left before I was completely awake.' (Thanks, now you've given my mother the impression that I'm a cad.)".
  It mentions romance.
- The reply is "She looks at the dissheveled futon[if something is on the futon], with [the list of things on the futon] still arranged on it[end if], and her expression becomes even more unreadable. 'I did think I'd taught my son better manners,' she remarks. 'I apolog[ize] on his behalf.'".
+ The reply is "She looks at the dissheveled futon[if the futon is non-empty], with [the list of things *in the futon] still arranged on it[end if], and her expression becomes even more unreadable. 'I did think I'd taught my son better manners,' she remarks. 'I apolog[ize] on his behalf.'".
  It quip-supplies My mother.
  It directly-follows we're his girlfriend.
 
@@ -26597,7 +26598,7 @@ description
 
 
 	
-Guard-imminence is a scene. Guard-imminence begins when the programmable dais is in location and the atlantida-shellfish is enclosed by location. Guard-imminence ends in postponement when atlantida-refreshed is marked-visible. [The design principle here is that the player is on a timer, but every time he succeeds at moving the plot forward, that timer is stopped and a new one starts. So it's never possible to fail a late-stage scene because of having taken too long in an earlier stage.]
+Guard-imminence is a scene. Guard-imminence begins when the programmable dais is in location and the atlantida-shellfish is enclosed by location. Guard-imminence ends in postponement when atlantida-refreshed is enclosed by location. [The design principle here is that the player is on a timer, but every time he succeeds at moving the plot forward, that timer is stopped and a new one starts. So it's never possible to fail a late-stage scene because of having taken too long in an earlier stage.]
 
 Every turn during Guard-imminence:
 	repeat through the Table of Severe Guard Warnings:
@@ -26841,8 +26842,8 @@ Report requesting hint about an unlocked door:
 	say "[The noun] is unlocked, which seems sufficient for the time being." instead.
 	
 Report requesting hint about a scenery container:
-	if something is in the noun:
-		say "The only interesting thing about [the noun] is that [they] [contain] [a list of things in the noun]." instead;
+	if the noun is non-empty:
+		say "The only interesting thing about [the noun] is that [they] [contain] [a list of things *in the noun]." instead;
 	say "I don't think [the noun] is likely to be of great significance to us, unless there's something useful inside." instead.
 	
 Report requesting hint about a scenery thing:

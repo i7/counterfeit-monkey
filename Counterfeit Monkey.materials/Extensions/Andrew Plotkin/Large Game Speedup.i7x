@@ -290,53 +290,53 @@ Include (-
 -) after "WriteListOfMarkedObjects" in "ListWriter.i6t".
 
 To say a list of (OS - description of objects) *in (parent - object):
-	(- @push subst__v;
-		objectloop (subst__v in {parent}) if ({-bind-variable:OS})
-		give subst__v workflag2; else give subst__v ~workflag2;
+	(- 
+		objectloop ({-my:1} in {parent}) if ({-matches-description:1:OS})
+		give {-my:1} workflag2; else give {-my:1} ~workflag2;
 		WriteListOfMarkedContentsObjects(ENGLISH_BIT, {parent});
-		@pull subst__v; -).
+	 -).
 To say A list of (OS - description of objects) *in (parent - object):
-	(- @push subst__v;
-		objectloop (subst__v in {parent}) if ({-bind-variable:OS})
-		give subst__v workflag2; else give subst__v ~workflag2;
+	(- 
+		objectloop ({-my:1} in {parent}) if ({-matches-description:1:OS})
+		give {-my:1} workflag2; else give {-my:1} ~workflag2;
 		WriteListOfMarkedContentsObjects(ENGLISH_BIT+CFIRSTART_BIT, {parent});
-		@pull subst__v; -).
+		 -).
 To say list of (OS - description of objects) *in (parent - object):
-	(- @push subst__v;
-		objectloop (subst__v in {parent}) if ({-bind-variable:OS})
-		give subst__v workflag2; else give subst__v ~workflag2;
+	(- 
+		objectloop ({-my:1} in {parent}) if ({-matches-description:1:OS})
+		give {-my:1} workflag2; else give {-my:1} ~workflag2;
 		WriteListOfMarkedContentsObjects(ENGLISH_BIT+NOARTICLE_BIT, {parent});
-		@pull subst__v; -).
+		 -).
 To say the list of (OS - description of objects) *in (parent - object):
-	(- @push subst__v;
-		objectloop (subst__v in {parent}) if ({-bind-variable:OS})
-		give subst__v workflag2; else give subst__v ~workflag2;
+	(- 
+		objectloop ({-my:1} in {parent}) if ({-matches-description:1:OS})
+		give {-my:1} workflag2; else give {-my:1} ~workflag2;
 		WriteListOfMarkedContentsObjects(ENGLISH_BIT+DEFART_BIT, {parent});
-		@pull subst__v; -).
+		 -).
 To say The list of (OS - description of objects) *in (parent - object):
-	(- @push subst__v;
-		objectloop (subst__v in {parent}) if ({-bind-variable:OS})
-		give subst__v workflag2; else give subst__v ~workflag2;
+	(- 
+		objectloop ({-my:1} in {parent}) if ({-matches-description:1:OS})
+		give {-my:1} workflag2; else give {-my:1} ~workflag2;
 		WriteListOfMarkedContentsObjects(ENGLISH_BIT+DEFART_BIT+CFIRSTART_BIT, {parent});
-		@pull subst__v; -).
+		 -).
 To say is-are a list of (OS - description of objects) *in (parent - object):
-	(- @push subst__v;
-		objectloop (subst__v in {parent}) if ({-bind-variable:OS})
-		give subst__v workflag2; else give subst__v ~workflag2;
+	(- 
+		objectloop ({-my:1} in {parent}) if ({-matches-description:1:OS})
+		give {-my:1} workflag2; else give {-my:1} ~workflag2;
 		WriteListOfMarkedContentsObjects(ENGLISH_BIT+ISARE_BIT, {parent});
-		@pull subst__v; -).
+		 -).
 To say is-are list of (OS - description of objects) *in (parent - object):
-	(- @push subst__v;
-		objectloop (subst__v in {parent}) if ({-bind-variable:OS})
-		give subst__v workflag2; else give subst__v ~workflag2;
+	(- 
+		objectloop ({-my:1} in {parent}) if ({-matches-description:1:OS})
+		give {-my:1} workflag2; else give {-my:1} ~workflag2;
 		WriteListOfMarkedContentsObjects(ENGLISH_BIT+ISARE_BIT+NOARTICLE_BIT, {parent});
-		@pull subst__v; -).
+		 -).
 To say is-are the list of (OS - description of objects) *in (parent - object):
-	(- @push subst__v;
-		objectloop (subst__v in {parent}) if ({-bind-variable:OS})
-		give subst__v workflag2; else give subst__v ~workflag2;
+	(- 
+		objectloop ({-my:1} in {parent}) if ({-matches-description:1:OS})
+		give {-my:1} workflag2; else give {-my:1} ~workflag2;
 		WriteListOfMarkedContentsObjects(ENGLISH_BIT+DEFART_BIT+ISARE_BIT, {parent});
-		@pull subst__v; -).
+		 -).
 
 Chapter - Static Object Grouping
 
