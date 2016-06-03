@@ -1575,6 +1575,7 @@ After reading a command:
         replace the regular expression "(hi|hello|hey), (.*)" in N with "\2, \1"; 
         change the text of the player's command to N.
 
+
 The Hostel-as-subject is a subject. The printed name is "hostel". Understand "hostel" as the hostel-as-subject.
 The Fleur d'or-as-subject is a subject. The printed name is "Fleur d'or hotel". Understand "hotel" or "fleur" or "d'or" as the fleur d'or-as-subject.
 The Cinema-as-subject is a subject. The printed name is "cinema". Understand "cinema" as the cinema-as-subject.
@@ -5794,7 +5795,8 @@ Instead of listening to a room when the location is in Open-Air:
 	else:
 		say "Children laughing and shouting, people selling food and drinks, various fairground machinery, tinny music, adult conversations, flowing water in the fountain."
 
-After deciding the scope of the player when the location is in Open-Air: 
+
+After deciding the scope of the player when the location is in Open-Air:
 	place the fountain in scope.
 
 Rule for reaching inside a room: 
@@ -11545,7 +11547,7 @@ He looks puzzled. 'Aren't we safer together?'
 'No,' I say.[paragraph break]";
 		say "[command prompt]";
 		wait for any key;
-		say "[paragraph break]'But[--]'[paragraph break]'Look, just trust me, this once,' we say.[paragraph break][The victim] [back] out the door. Loud sounds of an arrest ensue. I hear my father's voice, and two other people. Then finally the sounds die away.";
+		say "[paragraph break]'But[--]'[paragraph break]'Look, just trust me, this once,' we say.[paragraph break][The victim] back[s] out the door. Loud sounds of an arrest ensue. I hear my father's voice, and two other people. Then finally the sounds die away.";
 		now Brock is nowhere;
 		now father is nowhere;
 	otherwise if the victim is fake:
@@ -18476,9 +18478,8 @@ The i-pan is a container. The description of the i-pan is "An [if the player wea
 	The heft of the i-pan is 3.
 
 Some iron-pans are a plural-named container. The description of the iron-pans is "A set of flat skillets in cast iron: extremely bulky and heavy." The heft of the iron-pans is 5.
-	The printed name is "pans". 
+	The printed name is "pans".
 	Understand "pan" or "skillet" or "flat" or "cast" or "iron" or "pans" as the iron-pans.
-	
 
 Report involuntarily-dropping the iron-pans:
 	say "[We] can't reasonably carry the whole stack of pans, so they fall to the ground with a dramatic crash." instead.
@@ -25715,7 +25716,7 @@ getting-out-now is an NPC-directed quip.
 You start to object, but I say, 'Yes, you'd better return to petrified form.' You know I'm right. He'll be easier to carry.
 	
 A little grimly, he produces his own letter-remover and repeats the B-removal that made him in the first place[if a fake person is marked-visible]. We're alone with [the list of marked-visible fake people][otherwise]. Once again we're alone in a room with a rock[end if]."
-	
+
 interference-gelling is an NPC-directed quip.
 	[The reply is "'[one of]Just in case anyone out there is listening[or]Let's try to keep the noise to a minimum[or]That's more peaceful[at random].'"]
 	
