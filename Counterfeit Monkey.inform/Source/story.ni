@@ -1097,7 +1097,7 @@ To replace (job - text) with (new job - text):
 		choose row with Citation of job in the Table of Tasks Complete;
 		blank out the whole row; 
 		now (citation entry) is new job;
-	
+
 Understand the command "think" as something new. Understand "think" or "plan" or "plans" or "journal" or "missions" or "goals" or "goal" as planning. Planning is an action out of world. 
 	
 Check planning:
@@ -23899,9 +23899,6 @@ Rule for beat-producing when the current interlocutor is the activist:
 			try the backpacking girl trying examining the player;
 		otherwise:
 			say "[one of]She touches our arm[or]She channels all her rhetorical power through her eyebrows, which rise towards her hairline at moments of greatest earnestness[at random].[run paragraph on]"; 
-
-
-
 	
 Report the activist trying dropping the yellow sign:
 	say "She sets down the sign in order to free her hands for more expressive argument.[run paragraph on]" instead.
