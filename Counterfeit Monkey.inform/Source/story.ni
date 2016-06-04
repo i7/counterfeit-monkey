@@ -11970,7 +11970,7 @@ To say Higgate-behavior:
 	say "[one of]Professor Higgate is standing next to a metal table. She is wearing her shirt, but for some reason her lower half is stripped to the underwear. She is speaking urgently to someone who is not shown[or]Professor Higgate is shaking her head at someone she is talking to[or]Professor Higgate is slumped over a metal table, motionless[or]A hand reaches across the screen and presents Higgate with a plastic cup of coffee. She takes a sip of the coffee, looks stricken, and spits it back into the cup[or]Professor Higgate is sitting at a metal table, grimly clutching the crushed remains of a plastic coffee cup[or]The room is empty[stopping]".
 	
 To say stored-behavior:
-	if story viewpoint is second person singular:
+	if story viewpoint is first person singular or story viewpoint is first person plural:
 		say "It's empty";
 	otherwise:
 		say "[one of]It's my father. He's been cuffed to a metal chair. Someone is sitting on the table and leaning towards him, but [we] can't see that person's face[or]Whoever-it-is is still talking to my father. It seems like it could be worse [--] maybe [--] but Father is still handcuffed[or]Father sits alone, cuffed to his chair. His interrogator has gone away for the moment[or]Father is sitting alone. He glances up at the camera, then back down at the table[or]My father is still alone in there[stopping]".
