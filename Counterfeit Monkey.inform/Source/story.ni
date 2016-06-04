@@ -26635,11 +26635,7 @@ Test lastmeeting with "tutorial off / open tub / x files / a cold storage / look
 
 Section 14 - The Nicer Atlantida
 
-Atlantida-refreshed is a woman.
-The initial appearance is "Atlantida stands nearby, urging us to hurry out via the Private Solarium. I think she's enjoying her role as conspiratorial heroine."
-The printed name of atlantida-refreshed is "Atlantida".
-Understand "atlantida" as atlantida-refreshed.
-The description of Atlantida-refreshed is "She looks very similar to her earlier self, but the differences are there. The eyes are grey now. A tattoo of a writhing squid encircles her left wrist. Her face is younger."
+Atlantida-refreshed is a woman. "Atlantida stands nearby, urging us to hurry out via the Private Solarium[one of]. I think she's enjoying her role as conspiratorial heroine[or][stopping]." The printed name of atlantida-refreshed is "Atlantida". Understand "atlantida" as atlantida-refreshed. The description of Atlantida-refreshed is "She looks very similar to her earlier self, but the differences are there. The eyes are grey now. A tattoo of a writhing squid encircles her left wrist. Her face is younger."
 
 Atlantida-shooing is a scene. Atlantida-shooing begins when guard-imminence ends in postponement. 
 
