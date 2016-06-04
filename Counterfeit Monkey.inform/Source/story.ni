@@ -2003,11 +2003,12 @@ Section 2 - Making TRD first plural
 
 [ Tailored Room Description assumes a second-person narrator. We use TRD's abilities heavily throughout the game to control the order and manner in which items are described, but we need to do a couple of tweaks to get the output to conform properly to requirements here.]
 
-When play begins:  
+When play begins:
 	now the current-topic-sentences-table is the Table of NBS;
 	now the current-room-content-table is the Table of NRCD.
 
-Rule for writing a topic sentence about an introduceable as-yet-unknown thing (called special-target)   which is not in the location:
+Rule for writing a topic sentence about an introduceable as-yet-unknown thing (called special-target):
+	if the special-target is in the location, make no decision;
 	if the special-target is initially-described, make no decision;
 	if the special-target is flexibly-described, make no decision;
 	now the current-subject is special-target;
