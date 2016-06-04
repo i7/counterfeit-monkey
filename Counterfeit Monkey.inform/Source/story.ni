@@ -2023,7 +2023,7 @@ disclosure
 
 Table of NRCD
 disclosure 
-"[We] can [optional also]see [a list of mentionable things in the current-subject] [if current-subject is the location]here[otherwise]in [the current-subject][end if]. ".
+"[We] can [optional also]see [a list of mentionable things *in the current-subject] [if current-subject is the location]here[otherwise]in [the current-subject][end if]. ".
 
 A ranking rule for a person (called special-target): 
 	increase the description-rank of the special-target by 10.
@@ -3538,7 +3538,7 @@ Rule for writing a paragraph about someone (called special-target) who is on a c
 
 Rule for disclosing contents of a desk (called special-target):
 	if someone (called desk-user) who is not the player is on a chair in the location:
-		say "[if special-target is not mentioned]On [the special-target] in front of[otherwise]In front of[end if] [the desk-user] [is-are a list of mentionable things on the special-target]. [run paragraph on]";
+		say "[if special-target is not mentioned]On [the special-target] in front of[otherwise]In front of[end if] [the desk-user] [is-are a list of mentionable things *in the special-target]. [run paragraph on]";
 	otherwise:
 		make no decision;
 
@@ -5110,7 +5110,7 @@ Sanity-check unlocking the code-lock with something:
 Sanity-check opening the code-lock:
 	try setting the code-lock to "code" instead.
 
-A code-lock is part of temporary barrier. Understand "code lock" or "lock" as the code-lock. Understand "code" as the code-lock when the code is not marked-visible. The description is "The kind of lock that can be set to a three-digit code, assuming one knows what the code is."
+A code-lock is part of temporary barrier. Understand "code lock" or "lock" as the code-lock. Understand "code" as the code-lock when the code is marked invisible. The description is "The kind of lock that can be set to a three-digit code, assuming one knows what the code is."
 	
 Before typing the topic understood on the code-lock:
 	try setting the code-lock to the topic understood instead.
@@ -5151,7 +5151,7 @@ Instead of setting the code-lock to "305":
 Understand "the right number/code" or "the number/code" or "number/code" or "right number/code" as "[code]".
 		
 Instead of setting the code-lock to "[code]":
-	if the code is not marked-visible:
+	if the code is marked invisible:
 		say "If only the code were written down somewhere nearby." instead;
 	try setting the code-lock to "305" instead.
 
@@ -5422,7 +5422,7 @@ Carry out examining the clothing shops:
 An instructional rule (this is the teach examining super thoroughness rule):
 	if the teach examining super thoroughness rule is listed in the completed instruction list:
 		make no decision; 
-	if the mourning dress is not marked-visible:
+	if the mourning dress is marked invisible:
 		make no decision; 
 	if we have examined the mourning dress:
 		make no decision; 
@@ -5463,7 +5463,7 @@ An instructional rule (this is the teach waving rule):
 		make no decision; 
 	if the teach waving rule is listed in the completed instruction list:
 		make no decision; 
-	if the mourning dress is not marked-visible:
+	if the mourning dress is marked invisible:
 		make no decision;
 	let N be "[the letter-remover]";
 	say "[first custom style]That letter-remover is going to be very important as we try to escape here. To test it out, try WAVE U-REMOVER AT MOURNING DRESS.[roman type]";
@@ -5583,7 +5583,7 @@ An instructional rule (this is the teach locked doors rule):
 An instructional rule (this is the fix codex rule):
 	if the fix codex rule is listed in the completed instruction list:
 		make no decision;
-	if the codex is not marked-visible:
+	if the codex is marked invisible:
 		make no decision;
 	say "[first custom style]WAVE X-REMOVER AT CODEX should produce a code for us.[roman type]";
 	rule succeeds.
@@ -5594,7 +5594,7 @@ Carry out waving the letter-remover at something creating the code:
 An instructional rule (this is the unlock barrier rule):
 	if the unlock barrier rule is listed in the completed instruction list:
 		make no decision; 
-	if the temporary barrier is not marked-visible:
+	if the temporary barrier is marked invisible:
 		make no decision;
 	if the temporary barrier is not locked:
 		make no decision;
@@ -5607,7 +5607,7 @@ Check setting the code-lock to "305":
 An instructional rule (this is the open barrier rule):
 	if the open barrier rule is listed in the completed instruction list:
 		make no decision; 
-	if the temporary barrier is not marked-visible:
+	if the temporary barrier is marked invisible:
 		make no decision;
 	if the temporary barrier is locked:
 		make no decision;
@@ -6535,7 +6535,7 @@ She then tears out of the room, leaving the room unattended. Unfortunately, plac
 	if the attendant is the current interlocutor:
 		reset the interlocutor.
 
-The attendant wears a nose-ring and a blouse. The description of the blouse is "White cotton with little ribbons on it. I hate that kind of frilly nonsense." The description of the nose-ring is "It's silver and reasonably discreet." Understand "nose" or "nose ring" as the nose-ring. Understand "ring" as the nose-ring when the ring is not marked-visible.
+The attendant wears a nose-ring and a blouse. The description of the blouse is "White cotton with little ribbons on it. I hate that kind of frilly nonsense." The description of the nose-ring is "It's silver and reasonably discreet." Understand "nose" or "nose ring" as the nose-ring. Understand "ring" as the nose-ring when the ring is marked invisible.
 
 The Dormitory Room is above the Hostel. It is indoors. Understand "dorm" as the Dormitory Room. The description is "Painted off-white, with [hard wood floors] under many layers of protective gloss coating: there are no surfaces in this room that would take a stain. Four [random dorm bed]s are lined up against the wall."
 
@@ -6614,7 +6614,7 @@ Report frowning when chiding-attendant ended in results and the time since chidi
 'Oh, whatever,' says the girl. 'She deserves it.'" instead.
 
 An accessibility rule when the touch-goal is the lock:
-	if the backpacking girl is not marked-visible:
+	if the backpacking girl is marked invisible:
 		make no decision;
 	otherwise:
 		say "[The backpacking girl] is watching our every move with unconcealed curiosity, which makes me a little hesitant to do anything with the locker[one of][or]. Maybe if we freaked her out somehow she would go away[or]. I think our best bet is to show her something that really weirds her out[stopping]." instead.
@@ -6701,7 +6701,7 @@ Nate.[/i]".
 Some secret-plans are in the locker. They are privately-named.
 	The printed name is "plans".
 	Understand "plan" or "plans" as the secret-plans.
-	The description of the secret-plans is "The plans are rolled up and stuck shut with a label that reads 'PROPERTY OF DENTAL CONSONANTS LIMITED [--] UNAUTHOR[IZE]D USE ILLEGAL'. They're just a set of prints from the main computer design, of course, but still extremely informative: to the right engineer, they might reveal the secret of T-insertion for replication by other companies. These are what you and Brock were originally contracted to lift from the island, at a fee in the multiple millions.". The secret-plans are essential, illegal, floppy, and long. Understand "tube" as the secret-plans when the tube is not marked-visible. Understand "label" as the secret-plans.
+	The description of the secret-plans is "The plans are rolled up and stuck shut with a label that reads 'PROPERTY OF DENTAL CONSONANTS LIMITED [--] UNAUTHOR[IZE]D USE ILLEGAL'. They're just a set of prints from the main computer design, of course, but still extremely informative: to the right engineer, they might reveal the secret of T-insertion for replication by other companies. These are what you and Brock were originally contracted to lift from the island, at a fee in the multiple millions.". The secret-plans are essential, illegal, floppy, and long. Understand "tube" as the secret-plans when the tube is marked invisible. Understand "label" as the secret-plans.
 
 Understand "count [bills]" as a mistake ("[We] thumb quickly through the bills [--] smaller currency on the outside, larger denominations on the inside. I wouldn't have thought I could add that quickly and accurately, but you, evidently, have more practice. It works out to just over fifteen thousand euros.").
 
@@ -7080,7 +7080,7 @@ Instead of examining the view of jagged wall when we have not examined the fossi
 
 The view of jagged wall is a distant backdrop in Crumbling Wall Face. It screens north. The printed name is "broken edge".
 
-The description is "The masonry has broken away, revealing the rubble fill inside the wall and making a dangerously unstable surface of craggy rocks.". Understand "edge" or "broken" or "rubble" or "craggy" or "rocks" or "gravel" or "unstable" or "jagged" or "masonry" as the view of jagged wall. Understand "rock" as the view of jagged wall when the rock is not marked-visible and the fossil is not marked-visible.
+The description is "The masonry has broken away, revealing the rubble fill inside the wall and making a dangerously unstable surface of craggy rocks.". Understand "edge" or "broken" or "rubble" or "craggy" or "rocks" or "gravel" or "unstable" or "jagged" or "masonry" as the view of jagged wall. Understand "rock" as the view of jagged wall when the rock is marked invisible and the fossil is marked invisible.
 
 The safety railing is scenery in Crumbling Wall Face. The description is "Though it shows traces of surface rust, the safety railing is sturdy and close-fitted enough to prevent anyone, child or adult, from taking a tumble down the jagged masonry.". Understand "rail" as the safety railing. 
 
@@ -7119,7 +7119,7 @@ A fortified villa is a scenery facade in Hesychius Street. It fronts west. The d
 Rule for listing exits when looking in Hesychius Street:
 	do nothing.
 
-A farmer's stall is scenery in Hesychius Street. The description is "It appears to belong to the farmer. It's made of wood and canvas and offers a little shade against the harsh sun. Previous customers have cleared most of it off[if the farmer carries something], but the farmer still has [a list of things carried by the farmer][end if]." 
+A farmer's stall is scenery in Hesychius Street. The description is "It appears to belong to the farmer. It's made of wood and canvas and offers a little shade against the harsh sun. Previous customers have cleared most of it off[if the farmer is non-empty], but the farmer still has [a list of things *in the farmer][end if]."
 
 Rule for printing the name of farmer's stall while looking:
 	say "stall".
@@ -8024,7 +8024,7 @@ Instead of taking the spill:
 	say "It's not the kind of thing [we] can just pick up and carry away."
 
 Rule for disclosing contents of the round black metal tables when the round black metal tables support the spill:
-	say "Someone has left [a spill] on [if Nexami is not in location]one of the tables[otherwise]another[end if][if the round black metal tables support a mentionable thing], nearly touching [the list of mentionable things *in the round black metal tables][end if].[run paragraph on]".
+	say "Someone has left [a spill] on [if Nexami is not on the wire chair]one of the tables[otherwise]another[end if][if the round black metal tables support a mentionable thing], nearly touching [the list of mentionable things *in the round black metal tables][end if].[run paragraph on]".
 
 [The introduction of Outdoor Cafe is "It is here that you and I first met: me drinking my coffee, you with an austere cup of herbal tea. I enjoyed that meeting, but somehow I am uncomfortable being here, as though [we] might be recognized as the couple from earlier. Ludicrous, I know. You're calm." ]
 
@@ -8651,7 +8651,7 @@ A ranking rule for the giant Atlantida statue:
 	increase the description-rank of the giant Atlantida statue by 50.
 
 The giant Atlantida statue is a distant fixed in place enterable supporter in Traffic Circle. 
-	The initial appearance is "A [giant Atlantida statue] stands at the cen[ter][if something unsuitable is on the giant Atlantida statue], decorated in an unorthodox fashion with [a list of unsuitable things *in the giant Atlantida statue][end if][if the signet is on the giant Atlantida statue]. [A signet], outsized, representing the seal of the Bureau, hangs around her neck in classic albatross fashion[end if][if the restoration-gel rifle is in the location]. [The restoration-gel rifle] is propped against the base of the statue[end if]."
+	"A [giant Atlantida statue] stands at the cen[ter][if something unsuitable is on the giant Atlantida statue], decorated in an unorthodox fashion with [a list of unsuitable things *in the giant Atlantida statue][end if][if the signet is on the giant Atlantida statue]. [A signet], outsized, representing the seal of the Bureau, hangs around her neck in classic albatross fashion[end if][if the restoration-gel rifle is in the location]. [The restoration-gel rifle] is propped against the base of the statue[end if]."
 	The introduction is "Atlantida is to us a bit as Uncle Sam might be to you, except that she embodies the spirit of the people rather than the government. In recent years she's become a symbol of opposition to the Bureau."
 	
 The huge-metal-arm is part of the giant Atlantida statue. It is a distant fixed in place enterable supporter. The printed name is "huge metal arm". Understand "huge" or "enormous" or "metal" or "arm" as the huge-metal-arm. The description of the huge-metal-arm is "It is bare and muscular, as though Atlantida is envisioned championing her people through a series of arm-wrestling matches."
@@ -9232,12 +9232,12 @@ The toolkit is a scenery thing on the dor-bar-top. The toolkit contains some scr
 		say "It offers an assortment: [a list of things *in the toolkit]."
 
 The description of the gimlets is "A gimlet is a hand-tool for drilling holes, like an auger but smaller. It is for piercing things and boring into them, anyway, which is presumably where the phrase 'gimlet-eyed' comes from. These are arranged into an attractive bouquet-shape."
-	Understand "gimlet" as the gimlets when the gimlet is not marked-visible and the gimlet-drink is not marked-visible.
+	Understand "gimlet" as the gimlets when the gimlet is marked invisible and the gimlet-drink is marked invisible.
 
 The description of the screwdrivers is "An assortment of plain screwdrivers, with strong metal shafts and plastic handles."
 
 The description of the rusty nails is "They're scattered around in the toolkit, presumably taken from a condemned building somewhere."
-	Understand "nail" as the rusty nails when the rusty nail is not marked-visible and the rusty-nail-drink is not marked-visible.
+	Understand "nail" as the rusty nails when the rusty nail is marked invisible and the rusty-nail-drink is marked invisible.
 
 The gimlets, the screwdrivers, and the rusty nails are scenery.
 
@@ -9280,7 +9280,7 @@ Rule for writing a topic sentence about the patron:
 
 After printing the name of the patron while writing a topic sentence about the bartender:
 	if the player does not know mark-known:
-		say " holding [a list of things carried by the patron]".
+		say " holding [a list of things *in the patron]".
 
 [Understand "play [piano]" as a mistake ("[one of]I have no skill in that department[or]I don't play[or]I don't think we want to attract attention with a jangly performance, thanks[at random].").
 
@@ -10412,7 +10412,7 @@ After dropping something noisy in the large carton:
 Understand "recycle [something]" as recycling. Recycling is an action applying to one carried thing. 
 Sanity-check recycling a person:
 	say "[The noun] might not take kindly to that." instead.
-Check recycling something when the large carton is not marked-visible:
+Check recycling something when the large carton is marked invisible:
 	say "There's no place to recycle [the noun]." instead.
 Carry out recycling something:
 	try inserting the noun into the large carton instead.
@@ -11119,7 +11119,7 @@ Instead of going to a room which is not the Rotunda in the presence of the secre
 		make no decision;
 	if the number of entries in the path so far of the player is greater than 0:
 		say "[path-walked so far]";
-	if the pass is not marked-visible:
+	if the pass is marked invisible:
 		if the pass is enclosed by a closed container (called the barrier):
 			try opening the barrier;
 		try taking the pass;
@@ -11206,7 +11206,7 @@ When attempting entry ends:
 
 'What a delightful man,' remarks the secretary. 
 
-She looks over our other visible possessions ([the list of things carried by the player]) and deems them acceptable. She makes us sign a book, for which [we] use a signature of your invention. Finally: 'Go in, descend to the basement, and present yourself at the secure section downstairs. Be advised you will be under video surveillance as you approach. Any attempts to modify or steal Bureau property, to gain access to rooms to which you have not been expressly invited, to eavesdrop on conversations of Bureau employees, or to leave objects of your own behind in the Bureau, may result in your arrest and prosecution.
+She looks over our other visible possessions ([the list of not worn things *in the player]) and deems them acceptable. She makes us sign a book, for which [we] use a signature of your invention. Finally: 'Go in, descend to the basement, and present yourself at the secure section downstairs. Be advised you will be under video surveillance as you approach. Any attempts to modify or steal Bureau property, to gain access to rooms to which you have not been expressly invited, to eavesdrop on conversations of Bureau employees, or to leave objects of your own behind in the Bureau, may result in your arrest and prosecution.
 
 'Have a nice day!'"; 
 	
@@ -11691,7 +11691,7 @@ To say tourist-face:
 	otherwise:
 		say "[Random-passerby] is gazing curiously at [the random thing on the display-platform]";
 
-A hazard-tape is scenery in the Display Reloading Room. The description is "It's striped yellow and red, and describes an area on the floor. Come to that, there's an area in the ceiling immediately above the hazard tape that looks separate from the rest of the ceiling." The indefinite article of the hazard-tape is "some". The printed name of the hazard-tape is "[if looking]Hazard[otherwise]hazard[end if] tape". Understand "hazard tape" as the hazard-tape. Understand "tape" as the hazard-tape when the tape is not marked-visible.
+A hazard-tape is scenery in the Display Reloading Room. The description is "It's striped yellow and red, and describes an area on the floor. Come to that, there's an area in the ceiling immediately above the hazard tape that looks separate from the rest of the ceiling." The indefinite article of the hazard-tape is "some". The printed name of the hazard-tape is "[if looking]Hazard[otherwise]hazard[end if] tape". Understand "hazard tape" as the hazard-tape. Understand "tape" as the hazard-tape when the tape is marked invisible.
 
 A small black push-button is fixed in place in the Display Reloading Room. The initial appearance is "There is [an item described] on the wall." Understand "button" or "push button" as the push-button. The description is "It is unlabeled."
 
@@ -13828,7 +13828,7 @@ To say a-an (item - letter-remover device):
 
 The vowel-starting list is a list of texts that vary. The vowel-starting list is { "a", "e", "f", "h", "i", "l", "m", "n", "o", "r", "s", "x" }. 
  
-A small knob is part of the letter-remover device. Understand "dial" as the small knob when the lock is not marked-visible. The description is "It is very delicately made and stamped with letters around the circumference. The currently up-facing letter is [the current setting of the letter-remover device]."
+A small knob is part of the letter-remover device. Understand "dial" as the small knob when the lock is marked invisible. The description is "It is very delicately made and stamped with letters around the circumference. The currently up-facing letter is [the current setting of the letter-remover device]."
 
 After printing the name of the small knob:
 	say " on your [letter-remover]".
@@ -17017,7 +17017,7 @@ The bar is a thing. The description is "Imagine a stereotypical prison cell in a
 The bard is a man. The description of the bard is "He's dressed like a strolling minstrel from a Renaissance fair[if bard sings is happening], and he's singing about as well[otherwise], and looks as though he's going to burst into a rendition of Greensleeves at any moment[end if]."
 	The scent-description of the bard is "medieval hygiene".
 	
-Bard sings is a scene. Bard sings begins when the bard is enclosed by location. Bard sings ends when the bard is not marked-visible.
+Bard sings is a scene. Bard sings begins when the bard is enclosed by location. Bard sings ends when the bard is marked invisible.
 
 Every turn during Bard Sings:
 	choose a random row in the Table of Bard Song;
@@ -17079,17 +17079,17 @@ The description of the blest sandal is "A very worn and dusty relic, of which on
 Sanity-check wearing the blest sandal:
 	say "It just wouldn't seem right." instead.
 
-The boa is a floppy wearable thing. The description of the boa is "Made of bright pink synthetic feathers. It would really liven up our look, I have to say." Understand "bright" or "pink" or "synthetic" or "feathers" as the boa. Understand "feather boa" as the boa. Understand "feather" as the boa when the hackle is not marked-visible.
+The boa is a floppy wearable thing. The description of the boa is "Made of bright pink synthetic feathers. It would really liven up our look, I have to say." Understand "bright" or "pink" or "synthetic" or "feathers" as the boa. Understand "feather boa" as the boa. Understand "feather" as the boa when the hackle is marked invisible.
 	The scent-description of the boa is "plastic".
 
 The boar is an animal. The description of the boar is "In the old days they used to hunt these animals, and I can understand the impulse. It's like a pig, but even uglier and bristlier, with long dangerous-looking tusky teeth coming out of both its top and bottom jaws." The heft is 7. 
 
 Report waving the letter-remover at the boar:
 	say "Our hand is less than steady, but [we] manage to wave the letter-remover accurately enough.[paragraph break]The boar vanishes with a pop, and [a generated object] fall[s] harmlessly to the ground. [run paragraph on]";
-	now boar is not marked-visible;
+	now boar is marked invisible;
 	try examining the generated object instead.
 			
-Boar Mating is a recurring scene. Boar mating begins when the boar is marked-visible and the suid is marked-visible. Boar mating ends in disappointment when the boar cannot see the suid. Boar mating ends in death when the boar is not marked-visible.
+Boar Mating is a recurring scene. Boar mating begins when the boar is marked-visible and the suid is marked-visible. Boar mating ends in disappointment when the boar cannot see the suid. Boar mating ends in death when the boar is marked invisible.
 
 Every turn during Boar Mating:
 	say "[one of]The boar looks at us unpleasantly, but then the pleasing scent of the [suid] attracts it instead[or]The boar is circling the suid, as near as it can in this awkward space[or][one of]The boar follows the suid around, its nose at her butt[or]The suid is trying to walk away from the boar[or]The boar makes an attempt to mount the suid, but slips on the sand[or]The suid squeals indignantly and walks away from the boar, who follows[at random][stopping]."
@@ -17097,7 +17097,7 @@ Every turn during Boar Mating:
 
 [The boar attack is based on several accounts of real life attacks in which the boar repeatedly rushed the victim (often unprovoked), gashing in several places. The most serious wounds generally are abdominal wounds inflicted after the boar has knocked the victim down. It would be more true to life if the boar also left gashes in the protagonist's leg in the process of knocking her down, but I decided to skip that because I didn't want to deal with a game state in which the protagonist was wounded but not dead: it would have needlessly complicated the writing of the end-game to no interesting narrative effect.]
 
-Boar Attack is a recurring scene. Boar Attack begins when the boar is enclosed by location and the suid is not marked-visible. Boar Attack ends in relief when the boar is not marked-visible. Boar attack ends in distraction when the boar can see the suid. Boar Attack ends in death when the time since Boar Attack began is 3 minutes.
+Boar Attack is a recurring scene. Boar Attack begins when the boar is enclosed by location and the suid is marked invisible. Boar Attack ends in relief when the boar is marked invisible. Boar attack ends in distraction when the boar can see the suid. Boar Attack ends in death when the time since Boar Attack began is 3 minutes.
 
 Every turn during Boar Attack:
 	let T be the time since Boar Attack began;
@@ -17246,7 +17246,7 @@ Sanity-check wearing the tiny black leather boots:
 
 The catnap is r-abstract. The description of the catnap is "Much like an ordinary nap, but smaller and... more cuddly, perhaps?"
 
-The cate is an edible thing. The description is "Rarely found in the singular, a cate is something delicious: it comes from the same roots as 'caterer'. At any rate, this lovely little confection, with its layers of shiny-smooth chocolate and sliced strawberry and rum-soaked cake, its chocolate-shaving frills and piped cream, could have come from the best Paris [i]confiserie[/i]." Understand "confection" or "frills" or "chocolate-shaving" or "chocolate" or "strawberry" or "layers" or "layer" or "rum-soaked" or "cake" or "piped" as the cate. Understand "cream" as the cate when the cream is not marked-visible.
+The cate is an edible thing. The description is "Rarely found in the singular, a cate is something delicious: it comes from the same roots as 'caterer'. At any rate, this lovely little confection, with its layers of shiny-smooth chocolate and sliced strawberry and rum-soaked cake, its chocolate-shaving frills and piped cream, could have come from the best Paris [i]confiserie[/i]." Understand "confection" or "frills" or "chocolate-shaving" or "chocolate" or "strawberry" or "layers" or "layer" or "rum-soaked" or "cake" or "piped" as the cate. Understand "cream" as the cate when the cream is marked invisible.
 
 Instead of tasting the cate:
 	say "[We] allow ourselves a lick of the lovely chocolate."
@@ -17369,7 +17369,7 @@ A chat is usually noisy. The description of the chat is "It looks a little like 
 Instead of listening to the chat:
 	say "Eerily, it plays back a little of our conversation the other day at the café." 
 	
-The description of a chert is "It's a chunk of greyish rock which appears to have flaked off in layers. It looks as though there are some small fossils embedded in the stone." Understand "rock" as a chert when rock is not marked-visible. Understand "stone" as chert.
+The description of a chert is "It's a chunk of greyish rock which appears to have flaked off in layers. It looks as though there are some small fossils embedded in the stone." Understand "rock" as a chert when rock is marked invisible. Understand "stone" as chert.
 
 A clack is an r-abstract noisy thing. The heft of the clack is 0. The description of the clack is "It's the sound of an old-fashioned train in motion."
 
@@ -17734,7 +17734,7 @@ A foal is an animal. The description of the foal is "It has a brown coat, large 
 
 The metal-foil is a privately-named thing. The description is "A crumpled ball of that aluminum foil used for cooking." The heft is 1. The printed name of the metal-foil is "foil". Understand "ball" or "foil" or "aluminum" as the metal-foil. The indefinite article is "some".
 
-A foil is a thing. The description is "One of those long springy swords used for fencing. It has a button at the tip to prevent harm to one's opponent." The foil is long. Understand "long" or "springy" as the foil. Understand "sword" as the foil when the sword is not marked-visible.
+A foil is a thing. The description is "One of those long springy swords used for fencing. It has a button at the tip to prevent harm to one's opponent." The foil is long. Understand "long" or "springy" as the foil. Understand "sword" as the foil when the sword is marked invisible.
 
 The button is a part of the foil. The description is "A tiny cylindrical cap of red rubber." Understand "tip" or "rubber" or "red rubber" or "cap" or "cylindrical" as the button.
 
@@ -17771,9 +17771,9 @@ Every turn when the flea is marked-visible:
 	
 The description of the frozen dinner is "It's microwavable three-cheese lasagna."
 
-A fuel is a contained fluid thing. The indefinite article is "some". The description is "It looks like a generic canister of unleaded gasoline." The scent-description is "volatile fumes". Understand "canister" or "unleaded" or  "generic" or "canister of" as the fuel. Understand "gas" or "gasoline" or "petrol" as the fuel when the gas is not marked-visible.
+A fuel is a contained fluid thing. The indefinite article is "some". The description is "It looks like a generic canister of unleaded gasoline." The scent-description is "volatile fumes". Understand "canister" or "unleaded" or  "generic" or "canister of" as the fuel. Understand "gas" or "gasoline" or "petrol" as the fuel when the gas is marked invisible.
 
-The funded-tomcat is a cat. The printed name is "funded tomcat". Understand "funded" or "funded tomcat" as the funded-tomcat. Understand "tomcat" as the funded-tomcat when the tomcat is not marked-visible.
+The funded-tomcat is a cat. The printed name is "funded tomcat". Understand "funded" or "funded tomcat" as the funded-tomcat. Understand "tomcat" as the funded-tomcat when the tomcat is marked invisible.
 	The description is "Like an ordinary tomcat, but very sleek and well-fed, with a diamond-studded collar."
 	
 Sanity-check wearing the diamond-studded collar: 
@@ -17795,7 +17795,7 @@ A ranking rule for the garage: increase the description-rank of the garage by 80
 
 The garage contains a fake alert man called a mechanic. The description of the mechanic is "I'm a little surprised that you were able to generate this guy, but he seems to have come as part of the implementation of the garage."  
 
-A gas is a contained fluid thing. The indefinite article is "some". The description is "It looks like a generic canister of unleaded gasoline." The scent-description is "volatile fumes". Understand "canister" or "unleaded" or  "generic" or "canister of" as the gas. Understand "fuel" as the gas when the fuel is not marked-visible.
+A gas is a contained fluid thing. The indefinite article is "some". The description is "It looks like a generic canister of unleaded gasoline." The scent-description is "volatile fumes". Understand "canister" or "unleaded" or  "generic" or "canister of" as the gas. Understand "fuel" as the gas when the fuel is marked invisible.
 
 The geas is an r-abstract thing. The description is "It is an enchantment of some sort. It is pictured as a balled-up net of dark strands, ready to capture and bind some victim to the caster's will."
 	The scent-description is "smoke and cured leather".
@@ -17804,13 +17804,13 @@ The description of the gem is "It's a [one of]bubble-gum pink[or]London blue[or]
 
 Understand "set [gem]" or "facet [gem]" as a mistake ("I don't have any training in the jeweler's arts.").
 
-The giant-pin is wearable. The description of the giant-pin is "An outsized plastic brooch, suitable only for circus performers and halloween costume-wearers. It features a giant letter A." The printed name of the giant-pin is "giant pin". Understand "giant" or "giant pin" as the giant-pin. Understand "pin" as the giant-pin when the pin is not marked-visible.
+The giant-pin is wearable. The description of the giant-pin is "An outsized plastic brooch, suitable only for circus performers and halloween costume-wearers. It features a giant letter A." The printed name of the giant-pin is "giant pin". Understand "giant" or "giant pin" as the giant-pin. Understand "pin" as the giant-pin when the pin is marked invisible.
 
-The giant-pint is a container. The printed name is "giant pint". Understand "giant pint" or "giant" as the giant-pint. Understand "pint" as the giant-pint when the pint is not marked-visible. The description of the giant-pint is "There might seem to be some inherent contradiction about having a giant version of some standard measure: might as well say 'a very long inch' or 'an extra-heavy pound'. Nonetheless, popular imagination apparently construes GIANT PINT to mean an outsized beer stein. Beer not included."
+The giant-pint is a container. The printed name is "giant pint". Understand "giant pint" or "giant" as the giant-pint. Understand "pint" as the giant-pint when the pint is marked invisible. The description of the giant-pint is "There might seem to be some inherent contradiction about having a giant version of some standard measure: might as well say 'a very long inch' or 'an extra-heavy pound'. Nonetheless, popular imagination apparently construes GIANT PINT to mean an outsized beer stein. Beer not included."
 
 The gin is an edible contained fluid thing. The scent-description of the gin is "herbs and juniper". The description of the gin is "Though clear and inert, it gives off a dangerously heady whiff of alcohol." The indefinite article of the gin is "some".
 
-The gin-crock is an openable closed container. The description is "It's a sturdy jug with a stopper, suitable for containing the results of home distillery." The printed name of the gin-crock  is "gin crock". Understand "gin crock" or "crock" as the gin-crock. Understand "gin" as the gin-crock when the gin is not marked-visible. The heft of the gin-crock is 2.
+The gin-crock is an openable closed container. The description is "It's a sturdy jug with a stopper, suitable for containing the results of home distillery." The printed name of the gin-crock  is "gin crock". Understand "gin crock" or "crock" as the gin-crock. Understand "gin" as the gin-crock when the gin is marked invisible. The heft of the gin-crock is 2.
 	The scent-description is "alcohol".
 
 The description of the god is "A small, heavy metal figurine representing some pagan deity. He carries a bow and quiver, and looks prepared to use them." Understand "metal" or "small" or "heavy" or "figurine" or "bow" as the god. The heft of the god is 2.
@@ -18079,7 +18079,7 @@ The lam is r-abstract. The description of the lam is "The abstract image of bein
 
 The lamb is an animal. The description of the lamb is "He is white and fluffy, with a surprisingly long tail." The heft of the lamb is 3.
 
-The description of the lamb-granulate is "One small nodule of dried concentrated lamb substance." The printed name of the lamb-granulate is "lamb granulate". Understand "granulate" as the lamb-granulate. Understand "lamb" as the lamb-granulate when the lamb is not marked-visible.
+The description of the lamb-granulate is "One small nodule of dried concentrated lamb substance." The printed name of the lamb-granulate is "lamb granulate". Understand "granulate" as the lamb-granulate. Understand "lamb" as the lamb-granulate when the lamb is marked invisible.
 
 The lap is r-abstract. It is an enterable supporter. It is portable. The description of the lap is "Reified rather non-specifically as 'something to sit on,' it comes out looking like an especially comfortable seat." 
 
@@ -19557,7 +19557,7 @@ Instead of listening to the rock-ballad:
 	
 The description of the rodeo beaker is "A piece of scientific glassware with the usual measurement markings on the side, but also painted with the image of a bucking bronco."
 	
-The rollback-ad is privately-named. The printed name is "rollback ad". Understand "rollback" or "rollback-ad" or "rollback ad" as the rollback-ad. Understand "ad" as the rollback-ad when the ad is not marked-visible. The description of the rollback-ad is "It's a two-page glossy magazine spread announcing that the Bureau of Orthography has ordered a rollback on the distribution of [Britishizing goggles], and therefore all current owners are 'advised and required' to exchange their purchase for a cash refund."
+The rollback-ad is privately-named. The printed name is "rollback ad". Understand "rollback" or "rollback-ad" or "rollback ad" as the rollback-ad. Understand "ad" as the rollback-ad when the ad is marked invisible. The description of the rollback-ad is "It's a two-page glossy magazine spread announcing that the Bureau of Orthography has ordered a rollback on the distribution of [Britishizing goggles], and therefore all current owners are 'advised and required' to exchange their purchase for a cash refund."
 	
 The description of the rood is "A substantial crucifix carved entirely of wood."
 
@@ -19625,11 +19625,11 @@ Instead of squeezing the sap-dispenser:
 	otherwise:
 		say "This time nothing much comes out."
 
-The satin-pin is wearable. The printed name of the satin-pin is "satin pin". Understand "satin" or "satin pin" as the satin-pin. Understand "pin" as the satin-pin when the pin is not marked-visible. The description of the satin-pin is "It's a little brooch, probably not very valuable, bearing a blue and white satin rosette. The edges of the rosette have yellowed with age, and there is a blob of glue at the center that must once have held some additional decoration."
+The satin-pin is wearable. The printed name of the satin-pin is "satin pin". Understand "satin" or "satin pin" as the satin-pin. Understand "pin" as the satin-pin when the pin is marked invisible. The description of the satin-pin is "It's a little brooch, probably not very valuable, bearing a blue and white satin rosette. The edges of the rosette have yellowed with age, and there is a blob of glue at the center that must once have held some additional decoration."
 		
-The satin-pint is a floppy container. The printed name of the satin-pint is "satin pint". Understand "satin" or "satin pint" as the satin-pint. Understand "pint" as the satin-pint when the pint is not marked-visible. The description of the satin-pint is "It is a quilted satin version of a beer stein, though of course it would not be able to hold liquid at all reliably."
+The satin-pint is a floppy container. The printed name of the satin-pint is "satin pint". Understand "satin" or "satin pint" as the satin-pint. Understand "pint" as the satin-pint when the pint is marked invisible. The description of the satin-pint is "It is a quilted satin version of a beer stein, though of course it would not be able to hold liquid at all reliably."
 	
-The saint-pint is a container. The printed name of the saint-pint is "saint pint". Understand "saint" or "saint pint" as the saint-pint. Understand "pint" as the saint-pint when the pint is not marked-visible. The description of the saint-pint is "On the side of the pint glass is an image of [one of]Saint Arnold of Soissons, the patron saint of hop-pickers[or]Saint Brigit, who is said to have miraculously transformed her bathwater into beer[or]Saint Arnold of Metz, who cured his neighb[our]s of a plague by feeding them only beer[or]Saint Cuthbert, who lived exclusively on barley and is admired by maltsters[sticky random]."
+The saint-pint is a container. The printed name of the saint-pint is "saint pint". Understand "saint" or "saint pint" as the saint-pint. Understand "pint" as the saint-pint when the pint is marked invisible. The description of the saint-pint is "On the side of the pint glass is an image of [one of]Saint Arnold of Soissons, the patron saint of hop-pickers[or]Saint Brigit, who is said to have miraculously transformed her bathwater into beer[or]Saint Arnold of Metz, who cured his neighb[our]s of a plague by feeding them only beer[or]Saint Cuthbert, who lived exclusively on barley and is admired by maltsters[sticky random]."
 
 The Scot is a man. The description is "The full stereotype: bagpipes, kilt, sporran. If you look at him too long, he says, 'Och.'" Understand "bagpipes" or "kilt" or "sporran" or "man" as the Scot. 
 	The greeting of the Scot is "'Och,' he says. A tic."
@@ -19719,7 +19719,7 @@ To say signet-desc:
 		-- 2: say "This time the signet depicts [--] well, I can't imagine this is a common heraldic device, but I think I'd call it a Squid Rampant. The crowd has taken control of the imagery";
 		-- otherwise: say "The Squid Rampant is back".
 
-The description of the sill is "It is a bit useless and disembodied without an accompanying window, but here it is: a board of white painted wood." The sill is long. Understand "board" as the sill when the board is not marked-visible and the location is not the Rotunda. [bulletin board crossover]
+The description of the sill is "It is a bit useless and disembodied without an accompanying window, but here it is: a board of white painted wood." The sill is long. Understand "board" as the sill when the board is marked invisible and the location is not the Rotunda. [bulletin board crossover]
 
 
 The sillage is an r-abstract thing. The indefinite article is "some". The description is "There's nothing to see or hear, just an extremely powerful od[our] of someone else's perfume.". The scent-description is "jasmine". 
@@ -20230,10 +20230,10 @@ To say generated tale:
 				now tale-resolution is "[tale-resolution][one of]And the [t-hero] went to where the [t-helper] slept, and gave back the [t-tool] so that no one was the wiser[or]Cunning is truly the greatest weapon[at random]. ";
 		-- 7:
 			now tale-donation is "In the midst of [t-activity], the [t-hero] met a [t-helper]. ";
-			if a random chance of 1 in 2 succeeds and the player carries something:
-				now tale-donation is "[tale-donation]'Trade with me,' said the [t-hero]. 'I will give you my [random thing carried by the player], and you can give me your [t-tool].' And so the [t-helper] agreed. ";
+			if a random chance of 1 in 2 succeeds and the player is non-empty:
+				now tale-donation is "[tale-donation]'Trade with me,' said the [t-hero]. 'I will give you my [random thing held by the player], and you can give me your [t-tool].' And so the [t-helper] agreed. ";
 			otherwise:
-				now tale-donation is "[tale-donation]The [t-helper] said, 'I have great need of [if the player carries something][a random thing carried by the player][otherwise]a strand of your hair[end if], and will give you whatever you wish in exchange.' The [t-hero] thought long and hard, and then said, 'Give me your [t-tool].'";
+				now tale-donation is "[tale-donation]The [t-helper] said, 'I have great need of [if the player is non-empty][a random thing held by the player][otherwise]a strand of your hair[end if], and will give you whatever you wish in exchange.' The [t-hero] thought long and hard, and then said, 'Give me your [t-tool].'";
 		-- 8:
 			now tale-donation is "While [t-activity], the [t-hero] found a [t-tool]. 'Take me with you!' said the [t-tool]. So [t-nom] shrugged and collected the [t-tool] for a later time. ";
 			now tale-resolution is "[tale-resolution]Those who make the most of opportunities have the most successful results. ";
@@ -20415,7 +20415,7 @@ Tick-removal is a scene. Tick-removal begins when the tick is enclosed by the lo
 Every turn during tick-removal:
 	say "[one of]That is, of course, if it doesn't attach to our skin and give us Lyme disease[or]I guess what I'm trying to say here is that I don't want our very own pet tick[or]...Okay, sorry, there's something I just need to do here. Blame my phobias if you will[stopping]."
 	
-Tick-removal ends painfully when the time since tick-removal began is 3 minutes. Tick-removal ends well when the tick is not marked-visible.
+Tick-removal ends painfully when the time since tick-removal began is 3 minutes. Tick-removal ends well when the tick is marked invisible.
 
 Instead of putting the tick on something:
 	say "If [we] set it down, it'll be lost for good."
@@ -20454,9 +20454,9 @@ topic	stuff	setting
 Test paintings with "autoupgrade  / load gun / wave s-remover at paintings / shoot painting / put giant pin in t-inserter / shoot giant pint / wave g-remover at pig tat inn / shoot pi tat inn / put pin in inserter / shoot titan pint / open tub / gel tint / shoot paintings / wave g-remover at sign / shoot sin" [holding the anagramming gun and the bullets and the paintings and the tub in the Sensitive Equipment Testing Room.]
 
 
-The titan-pin is wearable. The description of the titan-pin is "The pin depicts two giant-like figures locked in a wrestling match." The printed name is "titan pin". Understand "titan" or "titan pin" as the titan-pin. Understand "pin" as the titan-pin when the pin is not marked-visible.
+The titan-pin is wearable. The description of the titan-pin is "The pin depicts two giant-like figures locked in a wrestling match." The printed name is "titan pin". Understand "titan" or "titan pin" as the titan-pin. Understand "pin" as the titan-pin when the pin is marked invisible.
 
-The titan-pint is a container. The description of the titan-pint is "It's a beer stein on whose side are two giant-like figures locked in a wrestling match. It's as though some Greek vase painters moved to Bavaria when the retsina ran out." The printed name is "titan pint". Understand "titan" or "titan pint" as the titan-pint. Understand "pint" as the titan-pint when the pint is not marked-visible.
+The titan-pint is a container. The description of the titan-pint is "It's a beer stein on whose side are two giant-like figures locked in a wrestling match. It's as though some Greek vase painters moved to Bavaria when the retsina ran out." The printed name is "titan pint". Understand "titan" or "titan pint" as the titan-pint. Understand "pint" as the titan-pint when the pint is marked invisible.
 
 The tier is r-abstract. The description of the tier is "It's represented as a certificate hon[our]ing a donor in the fifth 'tier of giving'."
 
@@ -21797,7 +21797,7 @@ Before buying something from the farmer when the player does not recollect what 
  Understand "is" or "market" as what seems for sale. 
  It mentions farmer.
  The comment is "'What is for sale?' we ask.".
- The reply is "'[one of]We have available [a list of things carried by the farmer][or]I got [a list of things carried by the farmer][or]All that's left this time of day is [a list of things carried by the farmer][at random],' the farmer replies.".
+ The reply is "'[one of]We have available [a list of things *in the farmer][or]I got [a list of things *in the farmer][or]All that's left this time of day is [a list of things *in the farmer][at random],' the farmer replies.".
  It quip-supplies the farmer.
  It is repeatable. 
 
@@ -23182,7 +23182,7 @@ whether public transport exists here is a questioning quip.
 Understand "if" as whether public transport exists here.
 
 Availability rule for whether we can keep the guidebook:
-	if the guidebook is not marked-visible, it is off-limits;
+	if the guidebook is marked invisible, it is off-limits;
 	make no decision.
 
  whether we can keep the guidebook is a questioning quip. 
@@ -24951,7 +24951,7 @@ why Waterstone gave him the conch shell is a questioning quip.
  It indirectly-follows what he seems doing.
 
 Availability rule for whether he can fix the letter-remover:
-	if the letter-remover is not marked-visible, it is off-limits.
+	if the letter-remover is marked invisible, it is off-limits.
 	
 Plausibility rule for whether he can fix the letter-remover:
 	if Professor Brown does not recollect how Professor Brown makes abstracts, it is dubious.
@@ -25136,7 +25136,7 @@ She pulls up short, apparently remembering that she doesn't, actually, know us a
  It indirectly-follows how Professor Higgate seems doing.
 
 An availability rule for what the romance novel might be:
-	if heart to heart is not marked-visible:
+	if heart to heart is marked invisible:
 		it is off-limits.
 		
  what the romance novel might be is a questioning quip. 
@@ -25830,7 +25830,7 @@ Rule for beat-producing when the current interlocutor is my mother:
 		try my mother switching off the danger;
 	otherwise:
 		let target be a random apartmental thing which is not a person ;
-		if target is not nothing:
+		if target is something:
 			try my mother examining the target;
 		else:
 			say "Mother looks faintly bewildered.";
@@ -26208,7 +26208,7 @@ When Atlantida chat ends:
 	move the atlantida-refreshed to the repository.
 	
 After examining Atlantida-woman when the Atlantida-woman carries something:
-	say "Atlantida is carrying [the list of things carried by the Atlantida-woman]."
+	say "Atlantida is carrying [the list of not worn things *in the Atlantida-woman]."
 
 Rule for writing a topic sentence about the infertile astrologer:
 	say "[The infertile astrologer] is [one of]idly [or][at random]";
