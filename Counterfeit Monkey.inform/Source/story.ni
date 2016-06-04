@@ -11151,8 +11151,8 @@ Instead of going to a room which is not the Rotunda in the presence of the secre
 		[now the secretary carries the pass;]
 		now the secretary carries the invitation;
 		now the invitation is not essential;
-		complete "Gain entrance to the Bureau";
-		say "[line break]'That will do,' the secretary says of our pass. Then she inspects the invitation with the monocle. 'Most of the visits were earlier in the day,' she says. 'Quite a fracas there was this morning.'
+		complete "Gain entrance to the Bureau"; [Should there be a line break here?]
+		say "'That will do,' the secretary says of our pass. Then she inspects the invitation with the monocle. 'Most of the visits were earlier in the day,' she says. 'Quite a fracas there was this morning.'
 		
 'The invitation doesn't state a particular time,' we say.
 
