@@ -1962,14 +1962,14 @@ Carry out examining something:
 	now the noun is examined.
 
 [Modified tutorial messages to remove paragraph break before prompt, so that they behave the same as the custom ones.]
-The  teach looking rule response (A) is "To get a look around, type LOOK and press return. If you do not want help getting started, type TUTORIAL OFF.[run paragraph on]".
-The  teach examining rule response (A) is "You can find out more if you LOOK AT [N in upper case] (or shorten it to L [M in upper case]).[run paragraph on]".
-The teach more examining rule response (A) is ”There are other things around here that you can look at too, if you like. You can check out other things in your surroundings, or LOOK AT ME to see yourself.[run paragraph on]".
-The teach compass directions rule response (A) is "[one of]Feel free to look around some more. When you're ready to move on from here, try[or]No rush, but just a reminder that when you want to move to a new location, you can go[stopping] [N in upper case].[run paragraph on]".
-The teach dropping rule response (A) is "If you want to get rid of something that you're holding you can always drop it, like this: DROP [N in upper case].[run paragraph on]".
-the teach taking rule response (A) is "You can pick things up when you see them, like this: TAKE [N in upper case].[run paragraph on]".
-The teach inventory rule response (A) is "There's more we can do than just looking around. To check what you're holding at the moment, try typing INVENTORY, or I for short.[run paragraph on]".
-The teach meta-features rule response (A) is "To save your current position, type SAVE. RESTORE allows you to bring back a game you have previously saved.[run paragraph on]".
+The  teach looking rule response (A) is "[first custom style]To get a look around, type LOOK and press return. If you do not want help getting started, type TUTORIAL OFF.[run paragraph on]".
+The  teach examining rule response (A) is "[first custom style]You can find out more if you LOOK AT [N in upper case] (or shorten it to L [M in upper case]).[run paragraph on]".
+The teach more examining rule response (A) is ”[first custom style]There are other things around here that you can look at too, if you like. You can check out other things in your surroundings, or LOOK AT ME to see yourself.[run paragraph on]".
+The teach compass directions rule response (A) is "[first custom style][one of]Feel free to look around some more. When you're ready to move on from here, try[or]No rush, but just a reminder that when you want to move to a new location, you can go[stopping] [N in upper case].[run paragraph on]".
+The teach dropping rule response (A) is "[first custom style]If you want to get rid of something that you're holding you can always drop it, like this: DROP [N in upper case].[run paragraph on]".
+the teach taking rule response (A) is "[first custom style]You can pick things up when you see them, like this: TAKE [N in upper case].[run paragraph on]".
+The teach inventory rule response (A) is "[first custom style]There's more we can do than just looking around. To check what you're holding at the moment, try typing INVENTORY, or I for short.[run paragraph on]".
+The teach meta-features rule response (A) is "[first custom style]To save your current position, type SAVE. RESTORE allows you to bring back a game you have previously saved.[run paragraph on]".
 
 [TODO: Add back swearing and singing?]
 The standard report taking rule response (A) is "[We] [one of]take[or]get[or]pick up[or]acquire[as decreasingly likely outcomes] [the noun][if the noun is unexamined and the action is singular]. [run paragraph on][noun description][no line break][otherwise].[end if]".
@@ -5424,7 +5424,7 @@ Carry out examining the clothing shops:
 An instructional rule (this is the teach examining super thoroughness rule):
 	if the teach examining super thoroughness rule is listed in the completed instruction list:
 		make no decision; 
-	if the mourning dress is marked invisible:
+	if the mourning dress is not enclosed by location:
 		make no decision; 
 	if we have examined the mourning dress:
 		make no decision; 
@@ -5465,7 +5465,7 @@ An instructional rule (this is the teach waving rule):
 		make no decision; 
 	if the teach waving rule is listed in the completed instruction list:
 		make no decision; 
-	if the mourning dress is marked invisible:
+	if the mourning dress is not enclosed by location:
 		make no decision;
 	let N be "[the letter-remover]";
 	say "[first custom style]That letter-remover is going to be very important as we try to escape here. To test it out, try WAVE U-REMOVER AT MOURNING DRESS.[roman type]";
@@ -5492,9 +5492,9 @@ This is the teach thinking rule:
 	
 Table of Instruction Followups (continued)
 selector (a rule)	followup (a text)
-teach thinking rule	"Excellent. Up in the status bar, the 'Plans: ...' number shows how many tasks we still think we need to work on."
-teach waving rule	"In fact, to make life easier, we don't even have to SET the letter-remover every time we use it. We can just type (say) WAVE P-REMOVER AT PRAM, and the remover will automatically set itself to P.[paragraph break]Now, let's see what happened as a result..."
-teach more compass directions rule	"Unless you're playing this game in text-only mode, you should see a little blue and white compass on the side of the screen. That compass will always show you which directions you can go next. Directions in blue lead to areas you haven't visited before. Directions in white lead to places you've already been."
+teach thinking rule	"[first custom style]Excellent. Up in the status bar, the 'Plans: ...' number shows how many tasks we still think we need to work on."
+teach waving rule	"[first custom style]In fact, to make life easier, we don't even have to SET the letter-remover every time we use it. We can just type (say) WAVE P-REMOVER AT PRAM, and the remover will automatically set itself to P.[paragraph break]Now, let's see what happened as a result...[roman type]"
+teach more compass directions rule	"[first custom style]Unless you're playing this game in text-only mode, you should see a little blue and white compass on the side of the screen. That compass will always show you which directions you can go next. Directions in blue lead to areas you haven't visited before. Directions in white lead to places you've already been."
 		
 Carry out planning:
 	add the teach thinking rule to the completed instruction list, if absent.
@@ -5585,7 +5585,9 @@ An instructional rule (this is the teach locked doors rule):
 An instructional rule (this is the fix codex rule):
 	if the fix codex rule is listed in the completed instruction list:
 		make no decision;
-	if the codex is marked invisible:
+	if the teach locked doors rule is not listed in the completed instruction list:
+		make no decision;
+	if the codex is not enclosed by location:
 		make no decision;
 	say "[first custom style]WAVE X-REMOVER AT CODEX should produce a code for us.[roman type]";
 	rule succeeds.
@@ -5596,7 +5598,7 @@ Carry out waving the letter-remover at something creating the code:
 An instructional rule (this is the unlock barrier rule):
 	if the unlock barrier rule is listed in the completed instruction list:
 		make no decision; 
-	if the temporary barrier is marked invisible:
+	if the temporary barrier is not in location:
 		make no decision;
 	if the temporary barrier is not locked:
 		make no decision;
@@ -5609,7 +5611,7 @@ Check setting the code-lock to "305":
 An instructional rule (this is the open barrier rule):
 	if the open barrier rule is listed in the completed instruction list:
 		make no decision; 
-	if the temporary barrier is marked invisible:
+	if the temporary barrier is not in location:
 		make no decision;
 	if the temporary barrier is locked:
 		make no decision;
@@ -5655,7 +5657,7 @@ Carry out going to the Fair:
 An instructional rule (this is the teach consulting rule):
 	if the teach consulting rule is listed in the completed instruction list:
 		make no decision;
-	if the player can see a book (called target):
+	if a book (called target) is enclosed by location and target is not unseen:
 		if the number of filled rows in the contents of the target is 0:
 			make no decision;
 	otherwise:
