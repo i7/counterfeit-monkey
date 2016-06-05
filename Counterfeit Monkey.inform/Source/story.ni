@@ -1961,6 +1961,11 @@ To say (item - a thing) description:
 Carry out examining something:
 	now the noun is examined.
 
+To say y-our:
+	if story viewpoint is first person singular, say "my";
+	if story viewpoint is second person singular, say "your";
+	if story viewpoint is first person plural, say "our"
+
 [Modified tutorial messages to remove paragraph break before prompt, so that they behave the same as the custom ones.]
 The  teach looking rule response (A) is "[first custom style]To get a look around, type LOOK and press return. If you do not want help getting started, type TUTORIAL OFF.[run paragraph on]".
 The  teach examining rule response (A) is "[first custom style]You can find out more if you LOOK AT [N in upper case] (or shorten it to L [M in upper case]).[run paragraph on]".
@@ -1984,7 +1989,7 @@ The block thinking rule response (A) is "[one of]I'm pulling my weight here! How
 The block attacking rule response (A) is "[one of]I don't like destructive behavi[our].[or]I just don't think attacking things or people is going to help.[or]Jeez, wait until you're sole proprietor of your own body to [if the noun is a person]pick fights[otherwise]commit pointless acts of vandalism[end if].[cycling]".
 The block cutting rule response (A) is "But [i]why?[/i] [--] no, don't answer that. I'm sure you have some crazy explanation."
 The report jumping rule response (A) is "I don't think that would help."
-The report waving hands rule response (A) is "[We] wave our hand regally."
+The report waving hands rule response (A) is "[We] wave [y-our] hand regally."
 The can't push unpushable things rule response (A) is "[We] seriously doubt that will help."
 The standard report opening rule response (A) is "[We] [open] [the noun][if the noun is a container and the noun is empty], which turns out to be empty[end if]."
 [LibMsg <block singing>	"I prefer not to exercise my singing voice in company. (That includes you.)"]
@@ -2308,7 +2313,7 @@ Sanity-check swinging a person:
 Sanity-check rubbing a person:
 	if the noun is an animal:
 		continue the action;
-	say "[We] should keep our hands to ourselves." instead.
+	say "[We] should keep [y-our] hands to [ourselves]." instead.
 	
 Instead of burning a person: 
 	try attacking the noun.
@@ -3085,7 +3090,7 @@ Check going somewhere by an open car (called target):
 	if the target is open, stop the action.
 
 Rule for describing the interior of a car:
-	say "[We] [are] jammed into the car with our knees almost at our chin, looking out through the bulbous little [if the player wears the Britishizing goggles]windscreen[otherwise]windshield[end if][if the ignition is switched on]. The motor is growling like a housecat with pneumonia[end if]."
+	say "[We] [are] jammed into the car with [y-our] knees almost at [y-our] chin, looking out through the bulbous little [if the player wears the Britishizing goggles]windscreen[otherwise]windshield[end if][if the ignition is switched on]. The motor is growling like a housecat with pneumonia[end if]."
 	 
 The ignition is a kind of device. One ignition is part of every car. Understand "motor" as the ignition. Instead of listening to the ignition, try listening to a random car which incorporates the noun.
 
@@ -3368,14 +3373,14 @@ Check waving the letter-remover at something when the location is a privately-co
 		say "It might be difficult to do that here without attracting notice." instead.
 		
 Sanity-check going a direction when the player carries a heavy thing (called the target):
-	say "[We] can't really travel far with [the target] in our arms.";
+	say "[We] can't really travel far with [the target] in [y-our] arms.";
 	if the target is iron-pans:
 		reduce the iron-pans;
 	if the player carries the target:
 		stop the action. 
 		
 Sanity-check approaching a room when the player carries a heavy thing (called the target):
-	say "[We] can't really travel far with [the target] in our arms.";
+	say "[We] can't really travel far with [the target] in [y-our] arms.";
 	if the target is iron-pans:
 		reduce the iron-pans;
 	if the player carries the target:
@@ -3458,7 +3463,7 @@ Instead of searching a mirror when the player wears a hairpiece:
 	say "The hairpiece looks surprisingly natural[if the pass is seen], and [we] resemble the image on the pass much better than [we] do without[end if]."
 
 Instead of searching a mirror when the player wears a monocle:
-	say "The monocle makes our right eye look deep green, and it has a sinister quality as well."
+	say "The monocle makes [y-our] right eye look deep green, and it has a sinister quality as well."
 	
 Instead of searching a mirror:
 	say "I have not gotten used to what we look like since we were synthes[ize]d into a single female body. The face that looks back is deeply scary. It's not me. And it's not you either. It's more like one of those computer composites you can have done to envision future offspring: if you and I were to have a somewhat androgynous daughter she might look like this[one of].
@@ -3621,7 +3626,7 @@ Check digging in:
 		say "That seems pointless." instead.
 	
 Report digging in the soil:
-	say "[We] try scooping away a few handfuls of the soil, but find nothing interesting in the process. [We][']re also getting dirt under our fingernails." instead.
+	say "[We] try scooping away a few handfuls of the soil, but find nothing interesting in the process. [We][']re also getting dirt under [y-our] fingernails." instead.
 	
 Report digging in something diggable:
 	say "Excavating a bit of [the noun] turns up nothing of interest."
@@ -3739,7 +3744,7 @@ A thing can be contained or uncontained. A thing is usually uncontained.
 Every turn when the player carries a fluid thing (called the puddle):
 	unless the puddle is contained:
 		move the puddle to the location;
-		say "[The puddle][one of], true to its nature, leaks out onto the ground[or] drips through our fingers onto the ground[or] drips out of our hands[at random]."
+		say "[The puddle][one of], true to its nature, leaks out onto the ground[or] drips through [y-our] fingers onto the ground[or] drips out of [y-our] hands[at random]."
 		
 		
 Understand "fill [a container] with [a fluid thing]" as filling it with.
@@ -3761,7 +3766,7 @@ Check filling a contained fluid with a fluid thing:
 	say "There's no restoration gel that will separate mixed liquids, you know. I'd rather stay away from the chemistry experiments." instead.
 
 Check filling the funnel with a fluid thing: 
-	say "That would have about the same effect as pouring [the second noun] on our feet." instead.
+	say "That would have about the same effect as pouring [the second noun] on [y-our] feet." instead.
 
 Check filling it with:
 	say "[one of]I'd rather leave [the second noun] where [they] [are].[or]I don't see much point to filling containers with things.[at random]" instead.
@@ -3851,10 +3856,10 @@ Report taking off something which covers face-area:
 	say "[We] gently remove [the noun]." instead.
 	
 Report taking off something which covers head-area:
-	say "[We] pull off [the noun] and smoothe down our hair." instead.
+	say "[We] pull off [the noun] and smoothe down [y-our] hair." instead.
 	
 Report wearing something which covers head-area:
-	say "[We] settle [the noun] on our head and adjust our hair underneath." instead.
+	say "[We] settle [the noun] on [y-our] head and adjust [y-our] hair underneath." instead.
 			
 Test wardrobe with "tutorial off / cycle wardrobe / wear ben wig / wear monocle / blindfold me with swatch / wear monocle".
 
@@ -3976,7 +3981,7 @@ Check swimming (this is the block swimming off the boat rule):
 		say "Safest to stay on the yacht; it was hard enough getting here." instead.
 	
 Check swimming (this is the always block swimming rule):
-	say "Considering the delicacy of our possessions and the distance [we] need to travel, swimming is not a viable solution." instead.
+	say "Considering the delicacy of [y-our] possessions and the distance [we] need to travel, swimming is not a viable solution." instead.
 	
 Instead of swimming something when the location is the Customs House or the location is the precarious perch:
 	say "From up here? Unlikely. And even from the water's edge, it would be better to have a boat."
@@ -4228,7 +4233,7 @@ Report involuntarily-dropping the boar:
 	say "[We] more or less throw the boar as far away as possible. It seems the wisest course." instead.
 	
 Report involuntarily-dropping a person:
-	say "[The noun] [look] rather awkward, and clamber[s] out of [our] ineffective hold onto solid ground." instead.
+	say "[The noun] [look] rather awkward, and clamber[s] out of [y-our] ineffective hold onto solid ground." instead.
 	
 Report involuntarily-dropping a cat:
 	say "[The noun] [get] tired of being carried and leap[s] delicately to the ground." instead.
@@ -4727,7 +4732,7 @@ Sanity-check blindfolding someone who is not the player with something:
 	say "Better let people apply their own blindfolds, if they're so inclined." instead.
 
 Sanity-check blindfolding the player with something when the player wears a blinding thing (called other strip):
-	say "[We][']ve already got [the other strip] tied over [our] eyes." instead.
+	say "[We][']ve already got [the other strip] tied over [y-our] eyes." instead.
 	
 Check blindfolding the player with something when the player wears something which covers the face-area:
 	while the player wears something (called blockage) which covers the face-area:
@@ -4746,14 +4751,14 @@ Carry out blindfolding the player with something:
 	now the second noun is blinding.
 
 Report blindfolding the player with something:
-	say "[We] tie [the second noun] over our eyes. To be honest, it only partially obscures [our] vision; [we] still have a pretty good idea where everything is." instead.
+	say "[We] tie [the second noun] over [y-our] eyes. To be honest, it only partially obscures [y-our] vision; [we] still have a pretty good idea where everything is." instead.
 	
 Instead of going somewhere when the player wears a blinding thing:
 	say "I'd prefer [we] didn't try to navigate in this half-sighted way. It's enough of a trick sharing the steering when we can both see."
 	
 Instead of looking when the player wears a blinding thing:
 	let item be a random scenery thing in the location;
-	say "[We] can only make out a little of our surroundings. I think the thing in front of [us] might be [an item]";
+	say "[We] can only make out a little of [y-our] surroundings. I think the thing in front of [us] might be [an item]";
 	if the hanging figure is in location and the hanging figure is not the item:
 		say ". And the hanging figure is just in striking range.";
 	otherwise:
@@ -4877,7 +4882,7 @@ When Landing ends:
 	otherwise:
 		say "'And Brock?' Slango demands. 'Have you got him?'
 
-[We] shake [our] head. 'But he'll be released soon,' [we] say. 'I'm pretty sure I've seen to that.'
+[We] shake [y-our] head. 'But he'll be released soon,' [we] say. 'I'm pretty sure I've seen to that.'
 
 'Pretty sure,' Slango repeats.
 
@@ -10478,6 +10483,8 @@ The reclamation computer is running an enumerated multiple-choice program called
 [options-list of the item described]".
 	
 The reclamation machine can be limit-removing, limit-replacing, abstract-removing or abstract-replacing.
+
+Test password-bug with "switch on reclamation computer / examine password" in the Rectification Room holding the password-thing.
 
 Table of Deeds
 index (a number)	title (a text)	effect (a rule)
@@ -26471,7 +26478,7 @@ cutting-remark is an NPC-directed quip.
 
 
 Before putting restoration gel on Atlantida-woman:
-	say "[We] dab a bit on [our] finger and approach, but she is far too large, far too spry. She catches [our] wrist and forces [us] aside, until the gel is harmlessly absorbed into [our] own skin[casually queue anti-gel comment]." instead.
+	say "[We] dab a bit on [y-our] finger and approach, but she is far too large, far too spry. She catches [y-our] wrist and forces [us] aside, until the gel is harmlessly absorbed into [y-our] own skin[casually queue anti-gel comment]." instead.
 
 anti-gel comment is an NPC-directed quip.
 	The reply is "'Oh, no, my dear,' Atlantida says. 'They could remake me, but it wouldn't be the [i]same[/i] me, would it? It would be some new construct. The Atlantida of today. And that's not the way to a consistent policy, is it?'"
