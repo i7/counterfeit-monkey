@@ -14870,7 +14870,7 @@ Instead of putting the tub on something:
 			continue the action.
 
 Sanity-check putting the tube on something:
-	say "Unfortunately, there's hardly any gel remaining in the tube." instead.
+	say "[one of]Unfortunately, there's hardly any gel remaining in the tube.[or]There isn't enough gel remaining in the little tube for use.[at random]" instead.
 
 Sanity-check putting the restoration gel on something irretrievable: 
 	if the second noun contains the tub:
