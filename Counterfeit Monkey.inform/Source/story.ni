@@ -4063,9 +4063,8 @@ Before inserting something which is worn into a container:
 
 Every turn:
 	if a police person (called suspicious official) can see an illegal thing (called the evidence) which is not in a closed backpack:
-		say "The attention of [the suspicious official] lights on [the evidence]. 'Let's see [regarding the evidence][those] of [the evidence],' [regarding the suspicious official][they] [adapt the verb say]. [paragraph break]Of course, a minute's inspection doesn't make [them] any happier, and soon [we] find ourselves explaining things to the police.";
+		say "The attention of [the suspicious official] lights on [the evidence]. 'Let's see [regarding the evidence][those] of [the evidence],' [regarding the suspicious official][they] [say]. [paragraph break]Of course, a minute's inspection doesn't make [them] any happier, and soon [regarding the player][we] find [ourselves] explaining things to the police.";
 		end the story saying "That was careless".
-
 
 
 Section 2 - Proffering and thing relations
@@ -4183,17 +4182,17 @@ Carry out involuntarily-dropping:
 		stop the action.
 	
 Report involuntarily-dropping:
-	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for [us] to carry, and fall[s] onto the ground." instead.
+	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for [regarding the actor][us] to carry, and [regarding the noun][fall] onto the ground." instead.
 	
 Report involuntarily-dropping an animal:
-	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for [us] to carry, and half-fall[s], half-[jump] to the ground." instead.
+	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for [regarding the actor][us] to carry, and half-[regarding the noun][fall], half-[jump] to the ground." instead.
 	
 Report involuntarily-dropping the boar:
 	now the boar is in the location;
 	say "[We] more or less throw the boar as far away as possible. It seems the wisest course." instead.
 	
 Report involuntarily-dropping a person:
-	say "[The noun] [look] rather awkward, and clamber[s] out of [our] ineffective hold onto solid ground." instead.
+	say "[The noun] [look] rather awkward, and clamber[s] out of [regarding the actor][our] ineffective hold onto solid ground." instead.
 	
 Report involuntarily-dropping a cat:
 	say "[The noun] [get] tired of being carried and leap[s] delicately to the ground." instead.
@@ -4692,7 +4691,7 @@ Sanity-check blindfolding someone who is not the player with something:
 	say "Better let people apply their own blindfolds, if they're so inclined." instead.
 
 Sanity-check blindfolding the player with something when the player wears a blinding thing (called other strip):
-	say "[We][']ve already got [the other strip] tied over our eyes." instead.
+	say "[We][']ve already got [the other strip] tied over [regarding the player][our] eyes." instead.
 	
 Check blindfolding the player with something when the player wears something which covers the face-area:
 	while the player wears something (called blockage) which covers the face-area:
@@ -4711,14 +4710,14 @@ Carry out blindfolding the player with something:
 	now the second noun is blinding.
 
 Report blindfolding the player with something:
-	say "[We] tie [the second noun] over our eyes. To be honest, it only partially obscures our vision; [we] still have a pretty good idea where everything is." instead.
+	say "[We] tie [the second noun] over our eyes. To be honest, it only partially obscures [our] vision; [we] still have a pretty good idea where everything is." instead.
 	
 Instead of going somewhere when the player wears a blinding thing:
 	say "I'd prefer [we] didn't try to navigate in this half-sighted way. It's enough of a trick sharing the steering when we can both see."
 	
 Instead of looking when the player wears a blinding thing:
 	let item be a random scenery thing in the location;
-	say "[We] can only make out a little of our surroundings. I think the thing in front of us might be [an item]";
+	say "[We] can only make out a little of our surroundings. I think the thing in front of [us] might be [an item]";
 	if the hanging figure is in location and the hanging figure is not the item:
 		say ". And the hanging figure is just in striking range.";
 	otherwise:
@@ -4842,7 +4841,7 @@ When Landing ends:
 	otherwise:
 		say "'And Brock?' Slango demands. 'Have you got him?'
 
-[We] shake our head. 'But he'll be released soon,' [we] say. 'I'm pretty sure I've seen to that.'
+[We] shake [our] head. 'But he'll be released soon,' [we] say. 'I'm pretty sure I've seen to that.'
 
 'Pretty sure,' Slango repeats.
 
@@ -17112,7 +17111,7 @@ The boa is a floppy wearable thing. The description of the boa is "Made of brigh
 The boar is an animal. The description of the boar is "In the old days they used to hunt these animals, and I can understand the impulse. It's like a pig, but even uglier and bristlier, with long dangerous-looking tusky teeth coming out of both its top and bottom jaws." The heft is 7. 
 
 Report waving the letter-remover at the boar:
-	say "Our hand is less than steady, but [we] manage to wave the letter-remover accurately enough.[paragraph break]The boar vanishes with a pop, and [a generated object] fall[s] harmlessly to the ground. [run paragraph on]";
+	say "Our hand is less than steady, but [we] manage to wave the letter-remover accurately enough.[paragraph break]The boar vanishes with a pop, and [a generated object] [fall] harmlessly to the ground. [run paragraph on]";
 	now boar is marked invisible;
 	try examining the generated object instead.
 			
