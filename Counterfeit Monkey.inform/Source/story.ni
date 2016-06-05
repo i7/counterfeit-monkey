@@ -2241,10 +2241,40 @@ To decide what object is the touch-goal:
 	(- (untouchable_object) -).
 	 
 Sanity-check inserting something (called the target) into the target:
-	say "[We] can't put [the target] into [themselves]." instead.
+	[kludge to fix a very minor glitch]
+	if the player's command includes "gel in" or the player's command includes "gel into":
+		if the target is the tub or the target is the tube:
+			say "The restoration gel is in [the target] already." instead;
+	otherwise:
+		say "[We] can't put [the target] into [themselves]." instead.
 
-Sanity-check inserting something which is in a container (called the target) into the target:
+Sanity-check inserting something held by a container (called the target) into the target:
 	say "[The noun] [are] in [the target] already." instead.
+
+Sanity-check putting something (called the target) on the target:
+	say "[We] can't put [the target] on [themselves]." instead.
+
+Sanity-check putting something held by a supporter (called the target) on the target:
+	say "[The noun] [are] on [the target] already." instead.
+
+Before taking something which is in a closed container (called the source):
+	if the player is not held by the source:
+		try opening the source.
+
+Before inserting something into a closed container (called the source):
+	if the player is not held by the source:
+		if the source is in a closed container and the player is not in the holder of the source:
+			try opening the holder of the source;
+		try opening the source.
+
+Sanity-check giving something held by someone (called the target) to the target:
+	say "[The target] already [have] [the noun]." instead.
+
+Sanity-check giving someone (called the target) to the target:
+	say "[The target] [are] already self-possessed." instead.
+
+Before inserting something which is worn into a container:
+	try taking off the noun.
 
 Sanity-check eating an inedible thing:
 	say "[The noun] wouldn't agree with [us] even if [we] were feeling better." instead.
@@ -2363,6 +2393,27 @@ Instead of drinking something which is not fluid:
 		
 Understand "apply pressure to [something]" as pushing.
 Understand "lean on [something]" as pushing.
+
+Section 6 - Fix actions on multiple objects
+
+[Preventing long lists of error messages when typing things like "put all in rock"]
+
+A multiple action processing rule when the action name part of the current action is the putting it on action (this is the stop putting error list rule):
+	if the second noun is not a supporter:
+		alter the multiple object list to {};
+		say "Putting things on [the second noun] would achieve nothing."
+
+A multiple action processing rule when the action name part of the current action is inserting it into action (this is the stop inserting error list rule):
+	if the second noun is gel-related:
+		if the second noun is the tube:
+			say "The tube's opening is too small.";
+		otherwise:
+			say "That would only make a mess. Try rubbing the [if the second noun is the paste]paste[otherwise]gel[end if] on things instead.";
+		alter the multiple object list to {};
+	otherwise:
+		if the second noun is not a container:
+			alter the multiple object list to {};
+			say "[The second noun] can't contain things."
 
 
 Part 2 - Senses 
@@ -4051,15 +4102,6 @@ To stow gear:
 			try inserting the item into the backpack;
 	if the backpack is open:
 		try closing the backpack.
-		
-Before taking something which is in a closed container (called the source):
-	try opening the source.
-	
-Before inserting something into a closed container (called the goal):
-	try opening the goal.
-
-Before inserting something which is worn into a container:
-	try taking off the noun.
 
 Every turn:
 	if a police person (called suspicious official) can see an illegal thing (called the evidence) which is not in a closed backpack:
@@ -14870,7 +14912,15 @@ Instead of putting the tub on something:
 			continue the action.
 
 Sanity-check putting the tube on something:
-	say "[one of]Unfortunately, there's hardly any gel remaining in the tube.[or]There isn't enough gel remaining in the little tube for use.[at random]" instead.
+	if the player's command includes "gel" and the player's command does not include "tube":
+		say "[one of]Unfortunately, there's hardly any gel remaining in the tube.[or]There isn't enough gel remaining in the little tube for use.[at random]" instead.
+
+Before inserting something (called the source) into something gel-related (called the target):
+	unless the source is gel-related: [Things like "put gel in tub" are dealt with elsewhere]
+		if the target is the tube:
+			say "The tube's opening is too small." instead;
+		otherwise:
+			say "That would only make a mess. Try rubbing some [if the target is the paste]paste[otherwise]gel[end if] on [the source] instead." instead. [This was originally redirected to PUT GEL ON (SOURCE) but was changed to match the response to PUT ALL IN GEL.]
 
 Sanity-check putting the restoration gel on something irretrievable: 
 	if the second noun contains the tub:
