@@ -4,7 +4,7 @@
 
 An Inform 7 game by Emily Short
 
-![Cover art](./Counterfeit Monkey Materials/LittleCover.png)
+![Cover art](./Counterfeit Monkey.materials/LittleCover.png)
 
 Copyright © 2012-2016 by Emily Short and others
 
@@ -14,6 +14,4 @@ Note that this excludes the feelies (the posters); only the images which are com
 
 ## Development
 
-*Counterfeit Monkey* is currently being developed in Inform 7 6G60. We intend to update it to 6M62 in the near future.
-
-If you want to work on the code on Windows but have installed a later version of Inform 7, we recommend the [Portable 6G60 App](http://www.intfiction.org/forum/viewtopic.php?f=7&t=2472#p35583).
+*Counterfeit Monkey* is currently being developed in Inform 7 6M62.
