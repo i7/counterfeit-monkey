@@ -4134,12 +4134,6 @@ When play begins:
   
 Definition: a thing is discovered if it is fake and it is seen.
 	
- 
- 
-
-
-
-
 
 Section 3 - Concreteness 
 
