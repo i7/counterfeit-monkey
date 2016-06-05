@@ -5981,11 +5981,11 @@ He stalks away";
 	end if;
 
 To say balance contents:
-	if the right pan does not contain something
+	if the right pan is empty
 	begin;
-		if the left pan does not contain something, say "Both pans are empty. ";
+		if the left pan is empty, say "Both pans are empty. ";
 		otherwise say "The right pan is empty and the left contains [a list of things *in the left pan]. ";
-	otherwise if the left pan does not contain something;
+	otherwise if the left pan is empty;
 		say "The left pan is empty and the right contains [a list of things *in the right pan]. "; 
 	otherwise;
 		say "On the right pan [is-are a list of things *in the right pan] and on the left [a list of things *in the left pan]. ";
