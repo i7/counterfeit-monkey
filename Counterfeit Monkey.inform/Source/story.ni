@@ -4063,7 +4063,7 @@ Before inserting something which is worn into a container:
 
 Every turn:
 	if a police person (called suspicious official) can see an illegal thing (called the evidence) which is not in a closed backpack:
-		say "The attention of [the suspicious official] lights on [the evidence]. 'Let's see [regarding the evidence][those] of [the evidence],' [regarding the suspicious official][they] [say]. [paragraph break]Of course, a minute's inspection doesn't make [them] any happier, and soon [regarding the player][we] find [ourselves] explaining things to the police.";
+		say "The attention of [the suspicious official] lights on [the evidence]. 'Let's see [regarding the evidence][those] of [the evidence],' [regarding the suspicious official][they] [say]. [paragraph break]Of course, a minute's inspection doesn't make [them] any happier, and soon [we] find [ourselves] explaining things to the police.";
 		end the story saying "That was careless".
 
 
@@ -4176,17 +4176,17 @@ Carry out involuntarily-dropping:
 		stop the action.
 	
 Report involuntarily-dropping:
-	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for [regarding the actor][us] to carry, and [regarding the noun][fall] onto the ground." instead.
+	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for [us] to carry, and [regarding the noun][fall] onto the ground." instead.
 	
 Report involuntarily-dropping an animal:
-	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for [regarding the actor][us] to carry, and half-[regarding the noun][fall], half-[jump] to the ground." instead.
+	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for [us] to carry, and half-[regarding the noun][fall], half-[jump] to the ground." instead.
 	
 Report involuntarily-dropping the boar:
 	now the boar is in the location;
 	say "[We] more or less throw the boar as far away as possible. It seems the wisest course." instead.
 	
 Report involuntarily-dropping a person:
-	say "[The noun] [look] rather awkward, and clamber[s] out of [regarding the actor][our] ineffective hold onto solid ground." instead.
+	say "[The noun] [look] rather awkward, and clamber[s] out of [our] ineffective hold onto solid ground." instead.
 	
 Report involuntarily-dropping a cat:
 	say "[The noun] [get] tired of being carried and leap[s] delicately to the ground." instead.
@@ -4685,7 +4685,7 @@ Sanity-check blindfolding someone who is not the player with something:
 	say "Better let people apply their own blindfolds, if they're so inclined." instead.
 
 Sanity-check blindfolding the player with something when the player wears a blinding thing (called other strip):
-	say "[We][']ve already got [the other strip] tied over [regarding the player][our] eyes." instead.
+	say "[We][']ve already got [the other strip] tied over [our] eyes." instead.
 	
 Check blindfolding the player with something when the player wears something which covers the face-area:
 	while the player wears something (called blockage) which covers the face-area:
