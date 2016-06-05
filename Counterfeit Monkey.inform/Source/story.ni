@@ -6013,14 +6013,6 @@ Instead of waving the letter-remover at the tube when the tube is carried by the
 
 Instead of examining the tube when the tube is carried by the barker:
 	say "[We] can't get a good look at the tube from this position, but it definitely appears to be authentic restoration gel [--] valuable stuff, I recall you saying. [one of](Or were you just trying to impress me?)[or][stopping]".
-
-Understand "rub [tube] on/onto/over/into/to [something]" as a mistake ("[if the barker carries the gel]You don't have the gel at the moment[otherwise]There isn't enough gel remaining in the little tube for use[end if].").
-
-Understand "put [tube] on/onto/over/to [something]" as a mistake ("[if the barker carries the gel]You don't have the gel at the moment[otherwise]There isn't enough gel remaining in the little tube for use[end if].")
-
-Understand "rub [tube] on/onto/over/into/to [tube]" as a mistake ("The gel doesn't restore the contents of things: it changes back items that have been linguistically manipulated.")
-
-Understand "put [tube] on/onto/over/to [tube]" as a mistake ("The gel doesn't restore the contents of things: it changes back items that have been linguistically manipulated.")
 	
 [Some spectators are a person in the Midway. They are scenery. The description is "They wander and hover and point and gawk and then move on." Understand "crowd" or "players" or "people" as the spectators. ]
 
@@ -14769,16 +14761,18 @@ The only problem with it is the distinctive smell."
 	
 Instead of eating or tasting the paste:
 	say "[one of]I once tried some lavender sorbet at a swank little Milanese gelato shop. This is like that, only less icy and more chalky.[or]Sorry, it's not an experience I care to repeat.[stopping]".
-	
+
 Instead of smelling the player:
 	say "[We] smell of lavender. It's not as bad a reek as it was earlier, though. No one would think it was anything but soap."
 
-
-Understand "rub [paste] on/onto/to [something]" as putting it on. 
-
 Sanity-check putting the origin paste on the restoration gel:
 	try putting the restoration gel on the origin paste instead.
-	
+
+Sanity-check inserting the origin paste into the restoration gel:
+	try putting the restoration gel on the origin paste instead.
+
+Sanity-check inserting the origin paste into the tub:
+	try putting the restoration gel on the origin paste instead.
 
 Sanity-check putting the origin paste on the tub:
 	try putting the restoration gel on the origin paste instead.
@@ -14787,10 +14781,10 @@ Instead of putting the paste on something:
 	record "using the origin paste" as achieved;
 	say "[We] [if a person who is not the player is marked-visible]surreptitiously [end if]smear some of [the paste] onto [the second noun]. Nothing obvious happens, of course, but that is the whole point.";
 	now the second noun is disguised.
-	
+
 Instead of smelling a disguised thing:
 	say "Lavender wafts back at us."
-	
+
 The ash is disguised.
 
 Table of Ultratests (continued)
@@ -14810,33 +14804,33 @@ Sanity-check waving the restoration gel:
 
 Sanity-check taking the restoration gel:
 	try taking the holder of the restoration gel instead.
-	
+
 Sanity-check dropping the restoration gel:
 	try dropping the holder of the restoration gel instead.
-	
+
 Sanity-check inserting the restoration gel into something:
 	try inserting the holder of the restoration gel into the second noun instead.
-	
+
 [Sanity-check putting the restoration gel on something:
 	try putting the holder of the restoration gel on the second noun instead. ]
-	
+
 Sanity-check closing the restoration gel:
 	try closing the holder of the restoration gel instead.
-	
+
 Sanity-check opening the restoration gel:
 	try opening the holder of the restoration gel instead.
-	
+
 Instead of tasting or eating the restoration gel:
 	say "While it may look like toothpaste and smell like toothpaste, it actually is not toothpaste."
-	
+
 Test gel-behavior with "open tub / open backpack / put gel in backpack" holding the tub and the backpack.
-	
+
 The carrying requirements rule does nothing when tasting or eating the restoration gel.
 
-[TODO:][fix this]
+[TODO:][Test this]
 [Procedural rule when tasting or eating the restoration gel:
 	ignore the carrying requirements rule.]
-	
+
 A description-concealing rule when the location is Open Sea:
 	now the restoration gel is not marked for listing. [Otherwise, even though the tub is mentioned elsewhere in the description, the restoration gel shows up in a disruptive line of text in the middle of the room description.]
 
@@ -14851,15 +14845,35 @@ First carry out looking at the tub through an authentication scope:
 
 Section 2 - Converting nouns
 
-Understand "rub [gel] on/onto/to [something]" as putting it on. Understand "rub [tube] on/onto/to [something]" as putting it on. Understand the commands "smear" as "rub".
+Definition: a thing is gel-related:
+	if it is the gel:
+		yes;
+	if it is the tube:
+		yes;
+	if it is the tub:
+		yes;
+	if it is the origin paste:
+		yes;
+	no.
 
-Understand "apply [gel] on/onto/to [something]" as putting it on. Understand "apply [tube] on/onto/to [something]" as putting it on.
+Understand "rub [something gel-related] on/onto/over/into [something]" as putting it on. Understand the command "smear" as "rub". Understand the command "place" as "put".
 
-Understand "use [gel] on [something]" as putting it on. Understand "use [tube] on [something]" as putting it on.
+Understand "apply [something gel-related] on/onto/to [something]" as putting it on.
 
-Understand "[gel] [something]" or "[tube] [something]" as putting it on.
+Understand "use [something gel-related] on/with [something]" as putting it on.
 
-Understand "[paste] [something]" as putting it on.
+Understand "[something gel-related] [something]" as putting it on.
+
+Instead of putting the tub on something:
+	if the player's command includes "gel":
+		silently try opening the tub;
+		if the tub is open:
+			try putting the restoration gel on the second noun;
+	otherwise:
+		if the player's command includes "rub":
+			try rubbing the tub;
+		otherwise:
+			continue the action.
 
 Sanity-check putting the tube on something:
 	say "Unfortunately, there's hardly any gel remaining in the tube." instead.
@@ -20770,10 +20784,6 @@ The tub is an essential closed openable container. The description is "Now a han
 
 Instead of smelling the tub, try smelling the restoration gel.
 
-Instead of putting the tub on something when the player's command includes "gel":
-	silently try opening the tub;
-	if the tub is open, try putting the restoration gel on the second noun.
-	
 Some tubas are an instrument. The heft of the tubas is 5. The description of the tubas is "A shiny, cacophonous mass."
 
 Instead of listening to the tubas: 
