@@ -13923,7 +13923,7 @@ Check waving something at something:
 Check waving something at a room:
 	if the noun is not a letter-remover device, 
 		say "Nothing interesting happens." instead;
-	say "If we were to succeed in transforming the entire room — mercifully, that's unlikely, given the power requirements — but if we did succeed, you and I would be rendered inanimate, along with any other hapless passers-by." instead.
+	say "If we were to succeed in transforming the entire room [--] mercifully, that's unlikely, given the power requirements [--] but if we did succeed, you and I would be rendered inanimate, along with any other hapless passers-by." instead.
 	
 Check waving the letter-remover device at the letter-remover device:
 	say "This is physically impossible as well as pointless." instead. 
