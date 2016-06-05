@@ -546,10 +546,10 @@ To clear compass graphlinks:
 When play begins (this is the setting drawing-rule rule):
 	now current graphics drawing rule is the compass-drawing rule.
 	
-Carry out going (this is the update compass on movement rule):  
+Carry out going somewhere (this is the update compass on movement rule):
 	refresh compass with current directions.
 	
-Carry out someone going when the actor encloses the player:
+Carry out someone going somewhere when the actor encloses the player:
 	refresh compass with current directions.
 
 [We want the compass to stay down in a corner of the screen and not to scale up too huge if the screen is resized. One of the irritating things about Glulx window management is that it's impossible to force an aspect ratio on the player, so I have no idea whether they're going to go tall-and-skinny or short-and-wide. Testers playing in full-screen mode sometimes found that the compass got way too large and encroached on the upper part of the map if I just set the compass to be one quarter the width of the window.]
@@ -2595,7 +2595,7 @@ intervening (list of regions)	description (some text)
 
 A person has a list of regions called the intervening regions.
 
-Carry out going while hurrying (this is the new creating a path history rule):
+Carry out going somewhere while hurrying (this is the new creating a path history rule):
 	if the map region of the location is a region:
 		add the map region of the location to the intervening regions of the player, if absent.
 
