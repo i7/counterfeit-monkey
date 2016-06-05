@@ -4170,7 +4170,7 @@ Every turn when the player carries a heavy thing (called burden):
 	try involuntarily-dropping the burden. 
 	
 Sanity-check waving a heavy thing:
-	say "Unlikely, unless we suddenly become a good deal stronger." instead.
+	say "Unlikely, unless [we] suddenly [become] a good deal stronger." instead.
 	
 Involuntarily-dropping is an action applying to one thing.
 
@@ -4183,17 +4183,17 @@ Carry out involuntarily-dropping:
 		stop the action.
 	
 Report involuntarily-dropping:
-	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for us to carry, and fall[s] onto the ground." instead.
+	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for [us] to carry, and fall[s] onto the ground." instead.
 	
 Report involuntarily-dropping an animal:
-	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for us to carry, and half-fall[s], half-[jump] to the ground." instead.
+	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for [us] to carry, and half-fall[s], half-[jump] to the ground." instead.
 	
 Report involuntarily-dropping the boar:
 	now the boar is in the location;
 	say "[We] more or less throw the boar as far away as possible. It seems the wisest course." instead.
 	
 Report involuntarily-dropping a person:
-	say "[The noun] [look] rather awkward, and clamber[s] out of our ineffective hold onto solid ground." instead.
+	say "[The noun] [look] rather awkward, and clamber[s] out of [our] ineffective hold onto solid ground." instead.
 	
 Report involuntarily-dropping a cat:
 	say "[The noun] [get] tired of being carried and leap[s] delicately to the ground." instead.
@@ -11584,8 +11584,9 @@ From the corridor comes the sound of a shot being fired from a restoration gel r
 Cold Dilemma ends when father is not in Bureau Basement Secret Section. 
 
 When Cold Dilemma ends:
-	now the story viewpoint is second person singular; [TODO: Check this]
-	say "A faint spell comes over [if story viewpoint is second person singular]you[otherwise]me[end if] and [we] feel dizzy.";  
+	if the story viewpoint is not second person singular:
+		now the story viewpoint is first person singular;
+	say "A faint spell comes over [us] and [we] feel dizzy.";
 
 Instead of examining the player when the story viewpoint is second person singular:
 	say "It's still our joint body, but it feels like you, and I'm riding along, somehow. Part of you, but alienated. Something's wrong. I want to get out.";
@@ -11972,7 +11973,7 @@ To say stored-behavior:
 		say "[one of]It's my father. He's been cuffed to a metal chair. Someone is sitting on the table and leaning towards him, but [we] can't see that person's face[or]Whoever-it-is is still talking to my father. It seems like it could be worse [--] maybe [--] but Father is still handcuffed[or]Father sits alone, cuffed to his chair. His interrogator has gone away for the moment[or]Father is sitting alone. He glances up at the camera, then back down at the table[or]My father is still alone in there[stopping]".
 	
 To say Brock-behavior:
-	if story viewpoint is second person singular:
+	if story viewpoint is second person singular or story viewpoint is first person plural:
 		say "It's empty";
 	otherwise:
 		say "Brock sits behind a metal table, not speaking, not moving, just as Slango taught you guys"
@@ -26428,7 +26429,7 @@ cutting-remark is an NPC-directed quip.
 
 
 Before putting restoration gel on Atlantida-woman:
-	say "We dab a bit on our finger and approach, but she is far too large, far too spry. She catches our wrist and forces us aside, until the gel is harmlessly absorbed into our own skin[casually queue anti-gel comment]." instead.
+	say "[We] dab a bit on [our] finger and approach, but she is far too large, far too spry. She catches [our] wrist and forces [us] aside, until the gel is harmlessly absorbed into [our] own skin[casually queue anti-gel comment]." instead.
 
 anti-gel comment is an NPC-directed quip.
 	The reply is "'Oh, no, my dear,' Atlantida says. 'They could remake me, but it wouldn't be the [i]same[/i] me, would it? It would be some new construct. The Atlantida of today. And that's not the way to a consistent policy, is it?'"
