@@ -14534,6 +14534,7 @@ This is the spinner-turning rule:
 		now everything which is on the spinner is in the repository;
 		move the chosen article to the spinner;
 		say "[if looking]After the mirror does its work,[otherwise]The mirror rotates in leisurely fashion, and when it is done[end if] there [is-are a list of things *in the spinner].";
+		[TODO: The code below is a hack to get rid of an ugly double paragraph break caused by 'Try examining the chosen article;'. I'm sure there is a proper fix for this.]
 		let N be the chosen article;
 		say "[line break][N description][run paragraph on]";
 		if the player wears the monocle:
@@ -14541,7 +14542,7 @@ This is the spinner-turning rule:
 			if the chosen article is original:
 				say "[The monocle] [ping] happily as [we] sight [the N] with the crosshairs.[run paragraph on]";
 			otherwise:
-				say "There is a dismissive blatt from [the monocle], and transposed over [the N] is a faint, [if N is edible and N is proffered by something inedible]unappet[izing][otherwise]greenish[end if] image of [a list of things which proffer N].[run paragraph on]";
+				say "There is a dismissive blatt from [the monocle], and transposed over [the N] is a faint, [if N is edible and N is proffered by something inedible]unappet[izing][otherwise]greenish[end if] image of [a list of things which proffer N].[run paragraph on]"; [Hack ends here]
 		record "using the spinner" as achieved;
 		if the spinner-gate is closed:
 			now the spinner-gate is open;
