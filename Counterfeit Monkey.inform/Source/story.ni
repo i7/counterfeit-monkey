@@ -3816,6 +3816,18 @@ Instead of inserting a fluid thing into the backpack:
 Instead of inserting the pans into the backpack:
 	say "There's nowhere near enough room."
 
+Rule for deciding whether all includes things enclosed by the player while taking or taking off or removing ( this is the new exclude indirect possessions from take all rule ):
+	if the action name part of the current action is the removing it from action:
+		it does;
+	it does not.
+
+The the new exclude indirect possessions from take all rule is listed instead of the exclude indirect possessions from take all rule in the for deciding whether all includes rulebook.
+
+Rule for deciding whether all includes things enclosed by the backpack while taking or taking off or removing ( this is the exclude contents of backpack from take all rule ):
+	if the action name part of the current action is the removing it from action:
+		it does;
+	it does not.
+
 Section 2 - Clothing
 
 [Our clothing simulation is as lightweight as we can make it. The aim is 
@@ -6009,7 +6021,12 @@ Instead of touching or pushing or pulling or turning a pan in the presence of th
 
 Instead of touching or pushing or pulling or turning something which is in a pan in the presence of the barker: say barker-refusal instead.
 
-Instead of inserting something into a pan in the presence of the barker: say barker-refusal instead. 
+Instead of inserting something into a pan in the presence of the barker: say barker-refusal instead.
+
+[Yes, this is very strange. By default the parser will exclude the contents of the right pan when typing GET ALL while taking the contents of the left. But with this rule it works.]
+Rule for deciding whether all includes things enclosed by the right pan while taking:
+	if the barker is not in location:
+		it does;
 
 To say barker-refusal:
 	say "[one of]'None of that!' says [the barker]. 'You must make one side go down and the other come up, but you may not add or subtract anything from the load, you may not apply pressure to the beam itself, and you may not lean on, push, pull, or support the individual pans!'
