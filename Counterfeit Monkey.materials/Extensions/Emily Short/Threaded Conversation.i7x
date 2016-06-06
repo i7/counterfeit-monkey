@@ -1,4 +1,4 @@
-Threaded Conversation by Emily Short begins here.
+Version 2/160606 of Threaded Conversation by Emily Short begins here.
 
 "A conversation system tracking facts known, phrases spoken, and subjects of conversation."
 
@@ -6,7 +6,6 @@ Threaded Conversation by Emily Short begins here.
 
 Include Basic Screen Effects by Emily Short. 
 Include Complex Listing by Emily Short.
-[Include version 11 of Conversation Framework by Eric Eve.]
 
 Definition: a person is other if he is not the player.
 

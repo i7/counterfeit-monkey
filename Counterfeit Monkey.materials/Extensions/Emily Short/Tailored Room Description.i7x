@@ -1,4 +1,4 @@
-Version 13/150601 of Tailored Room Description by Emily Short begins here.
+Version 13/160601 of Tailored Room Description by Emily Short begins here.
 
 "An extension to go with Room Description Control, providing a different style of room description than the default. Parenthetical remarks such as (open) and (in which are...) are omitted in favor of full English sentences. Removes the requirement for Text Variations."
 
@@ -173,7 +173,7 @@ To say sits:
 	begin;
 		say "[regarding current-subject][are] ";
 	otherwise;
-		say "[regarding current-subject][one of][adapt the verb sit] [or]rest[s] [or][are] [or][are] sitting [at random]";
+		say "[regarding current-subject][one of][sit] [or]rest[s] [or][are] [or][are] sitting [at random]";
 	end if;
 
 To say (N - a thing) as a possibly-known item:
@@ -423,7 +423,7 @@ The purpose of this change is to make the extension more flexible and more usefu
 
 Version 8 tweaks the reporting of character possessions and worn items to appear more natural. It also adds section headings to the documentation.
 
-Version 13/150601: Counterfeit Monkey version. Update for Inform 6M62. Fix tests. Remove dependency on Plurality.
+Version 13/160601: Counterfeit Monkey version. Update for Inform 6M62. Fix tests. Remove dependency on Plurality.
 
 
 Example: * Doors and doors - Writing paragraphs about doors to generate sentences such as "Exits include the white door and the black door. The black door is open."
