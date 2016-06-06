@@ -1580,7 +1580,7 @@ The Hostel-as-subject is a subject. The printed name is "hostel". Understand "ho
 The Fleur d'or-as-subject is a subject. The printed name is "Fleur d'or hotel". Understand "hotel" or "fleur" or "d'or" as the fleur d'or-as-subject.
 The Cinema-as-subject is a subject. The printed name is "cinema". Understand "cinema" as the cinema-as-subject.
 The Counterfeit monkey-as-subject is a subject. The printed name is "Counterfeit Monkey Bar". Understand "counterfeit" or "monkey" or "bar" as the counterfeit monkey-as-subject.
-The arbot-as-subject is a subject. The printed name is "Arbot Maps & Antiques". Understand "arbot" or "maps" or "antiques" or "&" or "antique" or "shop" as the arbot-as-subject.
+[The arbot-as-subject is a subject. The printed name is "Arbot Maps & Antiques". Understand "arbot" or "maps" or "antiques" or "&" or "antique" or "shop" as the arbot-as-subject.]
 
 Bureau is a subject. Understand "bureau of orthography" or "orthography" as the bureau.
 
@@ -9102,8 +9102,6 @@ Instead of local looking Arbot Maps & Antiques:
 	otherwise:
 		if the player's command includes "maps":
 			try examining the maps collection instead.
-
-Understand "map" as the maps collection when the Slangovia map is unseen.
 	
 Instead of examining the maps collection when the Slangovia map is unseen:
 	move the Slangovia map to the location;
@@ -9144,7 +9142,7 @@ A ranking rule for Kate:
 A ranking rule for the map-customer:
 	decrease the description-rank of map-customer by 40.
 	
-The map-customer is a woman. The printed name of the map-customer is "customer". Understand "tall" or "thin" or "man" or "woman" or "fellow" or "skeletal" or "young" or "old" or "grandmotherly" or "teenager" or "lady" or "gentleman" as the map-customer. The map-customer has some text called the idle.
+The map-customer is a woman. The printed name of the map-customer is "customer". Understand "customer" or "tall" or "thin" or "man" or "woman" or "fellow" or "skeletal" or "young" or "old" or "grandmotherly" or "teenager" or "lady" or "gentleman" as the map-customer. The map-customer has some text called the idle.
 
 To shuffle map-customer:
 	choose a random row in the Table of Customers; 
@@ -21329,7 +21327,7 @@ where there seems hotel is a weakly-phrased location-questioning quip.
 where there seems Arbot is a weakly-phrased location-questioning quip.
  The printed name is "where to find Arbot Maps & Antiques". The true-name is "where there seems Arbot". 
  Understand "is" or "a" or "Arbot" or "antiques" or "arbots" or "arbot's" or "maps" or "&" as where there seems arbot.  The place-sought is "Arbot Maps & Antiques".
- It mentions geography, arbot-as-subject.
+ It mentions geography. [, arbot-as-subject]
  It is background-information.
  The correct answer is Arbot Maps & Antiques.
 
@@ -22755,6 +22753,23 @@ The comment is "'What sorts of antiques do you sell here?'"
 The reply is "'What you see around you on the floor is fairly representative,' Kate replies. 'Maps are a specialty, but we also carry older models of linguistic tools as well as unusual or vintage Atlantean artifacts.'"
 It quip-supplies Kate.
 
+Does the player mean discussing why Arbot now sells antiques:
+	it is very likely.
+
+Does the player mean discussing what types of antiques they sell here:
+	it is likely.
+
+Does the player mean discussing what sort of demonstration:
+	it is very likely.
+
+Does the player mean discussing where there seems Arbot:
+	it is very unlikely.
+
+Instead of discussing where there seems Arbot when the location is Arbot Maps & Antiques:
+	if the player's command includes "where" and the player's command includes "arbot":
+		continue the action;
+	otherwise:
+		try discussing what types of antiques they sell here instead.
 
 Carry out Kate discussing buy the Slangovia map:
 	if the player carries the backpack:
