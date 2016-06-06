@@ -20066,14 +20066,12 @@ The chosen tale-helper is a tale-helper that varies.
 The chosen tale-gift is a tale-gift that varies.
 The chosen tale-villain is a tale-villain that varies.
 
-
-Tale-resolution is text that varies.
-Tale-donation is text that varies.
-Tale-danger is text that varies.
-Tale-intro is text that varies.
-Tale-fight is text that varies.
-
 To say generated tale:
+	let tale-resolution be text;
+	let tale-donation be text;
+	let tale-danger be text;
+	let tale-intro be text;
+	let tale-fight be text;
 	[first assign values]
 	now the chosen tale-apex is a random tale-apex;
 	now the chosen tale-protagonist is a random tale-protagonist;
@@ -20088,95 +20086,95 @@ To say generated tale:
 	let t-activity be "doing the daily chores";
 	if the chosen tale-protagonist is:
 		-- t-farmer:
-			let t-hero be "[one of]farmer[or][one of]wealthy[or]wise[or]poor[or]clever[or]brave[at random] [random vegetable]-farmer[or]seed farmer[or]farm-lab[our]er[or]harvester[or]citrus farmer[as decreasingly likely outcomes]";
+			let t-hero be the substituted form of "[one of]farmer[or][one of]wealthy[or]wise[or]poor[or]clever[or]brave[at random] [random vegetable]-farmer[or]seed farmer[or]farm-lab[our]er[or]harvester[or]citrus farmer[as decreasingly likely outcomes]";
 			if a random chance of 2 in 3 succeeds:
-				let t-activity be "[one of]watering the land[or]mending fences[or]getting rid of pests[or]tending the soil[at random]";
+				let t-activity be the substituted form of "[one of]watering the land[or]mending fences[or]getting rid of pests[or]tending the soil[at random]";
 		-- t-fisherman:
-			let t-hero be "[one of]fisherman[or]deep-sea fisher[or]clam-picker[or]shrimp-trapper[or]bivalve-farmer[or]pearl-diver[or]deep-sea scavenger[as decreasingly likely outcomes]";
+			let t-hero be the substituted form of "[one of]fisherman[or]deep-sea fisher[or]clam-picker[or]shrimp-trapper[or]bivalve-farmer[or]pearl-diver[or]deep-sea scavenger[as decreasingly likely outcomes]";
 			if a random chance of 2 in 3 succeeds:
-				let t-activity be "[one of]cleaning the catch[or]working on some nets[or]repairing a boat[at random]";
+				let t-activity be the substituted form of "[one of]cleaning the catch[or]working on some nets[or]repairing a boat[at random]";
 		-- t-banker:
-			let t-hero be "[one of]banker[or]money changer[or]money-lender[or]financier[as decreasingly likely outcomes]";
+			let t-hero be the substituted form of "[one of]banker[or]money changer[or]money-lender[or]financier[as decreasingly likely outcomes]";
 			if a random chance of 2 in 3 succeeds:
-				let t-activity be "counting a [one of]tall [or]short [or][at random]stack of [one of]gold[or]silver[or]copper[at random]";
+				let t-activity be the substituted form of "counting a [one of]tall [or]short [or][at random]stack of [one of]gold[or]silver[or]copper[at random]";
 	if a random chance of 1 in 2 succeeds:
-		let t-hero be "[t-hero]'s [one of]daughter[or]wife[at random]";
+		let t-hero be the substituted form of "[t-hero]'s [one of]daughter[or]wife[at random]";
 		let t-nom be "she";
 		let t-obj be "her";
 		let t-pos be "her";
 	otherwise if a random chance of 1 in 2 succeeds:
-		let t-hero be "[t-hero]'s son";
+		let t-hero be the substituted form of "[t-hero]'s son";
 	let t-helper be text;
 	if the chosen tale-helper is:
 		-- t-squid:
-			now t-helper is "[one of]giant [or]speckled [or]vast [or]white [or][at random]squid";
+			now t-helper is the substituted form of "[one of]giant [or]speckled [or]vast [or]white [or][at random]squid";
 		-- t-ass:
-			now t-helper is "[one of]miniature [or]brown [or]small [or]black-eared [or]hard-kicking [at random][one of]donkey[or]beast of burden[or]ass[at random]";
+			now t-helper is the substituted form of "[one of]miniature [or]brown [or]small [or]black-eared [or]hard-kicking [at random][one of]donkey[or]beast of burden[or]ass[at random]";
 		-- t-beggar:
-			now t-helper is "[one of]wrinkled [or]toothless [or]squinting [or]hardy [or]needy [or]starving [or][or][at random][one of]monk[or]mendicant[or]friar[or]beggar[or]vagabond[at random]"; 
+			now t-helper is the substituted form of "[one of]wrinkled [or]toothless [or]squinting [or]hardy [or]needy [or]starving [or][or][at random][one of]monk[or]mendicant[or]friar[or]beggar[or]vagabond[at random]";
 		-- t-spirit:
-			now t-helper is "[one of]secretive [or]wailing [or]powerful [or]cruel [or]subtle [or][or][or][or][at random][one of]spirit[or]god[or]demon[or]ghost[or]seraph[or]genie[or]representation of [one of]Poverty[or]Need[or]War[or]Charity[or]Justice[or]Purpose[at random][or]spirit of that town[as decreasingly likely outcomes]";
+			now t-helper is the substituted form of "[one of]secretive [or]wailing [or]powerful [or]cruel [or]subtle [or][or][or][or][at random][one of]spirit[or]god[or]demon[or]ghost[or]seraph[or]genie[or]representation of [one of]Poverty[or]Need[or]War[or]Charity[or]Justice[or]Purpose[at random][or]spirit of that town[as decreasingly likely outcomes]";
 	let t-antagonist be text;
 	if the chosen tale-villain is:
 		-- t-foreigner:
-			now t-antagonist is "[one of]man from a foreign land[or]woman speaking in a strange tongue[or]foreigner[or]sailor[at random]";
+			now t-antagonist is the substituted form of "[one of]man from a foreign land[or]woman speaking in a strange tongue[or]foreigner[or]sailor[at random]";
 		-- t-thief:
-			now t-antagonist is "[one of]brigand[or]thief[or]robber[or]bandit[or]wandering pirate[or]quack doctor[or]lying bishop[at random]";
+			now t-antagonist is the substituted form of "[one of]brigand[or]thief[or]robber[or]bandit[or]wandering pirate[or]quack doctor[or]lying bishop[at random]";
 		-- t-monster:
 			if the chosen tale-protagonist is t-fisherman:
-				now the t-antagonist is "[one of]kraken[or]leviathan[or]whale[or]wrathful spirit of the deep[or]disembodied power of the tides[as decreasingly likely outcomes]";
+				now the t-antagonist is the substituted form of "[one of]kraken[or]leviathan[or]whale[or]wrathful spirit of the deep[or]disembodied power of the tides[as decreasingly likely outcomes]";
 			otherwise:
-				now the t-antagonist is "[one of]ferocious beast[or]great boar[or]ravaging beast[or][a random number between 2 and 12 in words]-[one of]headed[or]tailed[or]legged[or]tongued[at random] [one of]lion[or]dog[or]bull[or]unicorn[or]scorpion[or]tiger[at random][or]beast that can't be killed (because it has no name)[or]Epsilivore that walks the land eating the letter E[as decreasingly likely outcomes]";
+				now the t-antagonist is the substituted form of "[one of]ferocious beast[or]great boar[or]ravaging beast[or][a random number between 2 and 12 in words]-[one of]headed[or]tailed[or]legged[or]tongued[at random] [one of]lion[or]dog[or]bull[or]unicorn[or]scorpion[or]tiger[at random][or]beast that can't be killed (because it has no name)[or]Epsilivore that walks the land eating the letter E[as decreasingly likely outcomes]";
 		-- t-multiple-creature:
-			now the t-antagonist is "horde of deplural[ize]d [one of]merchants[or]pirates[or]soldiers[or]spies from a foreign land[as decreasingly likely outcomes] traveling as one man";
+			now the t-antagonist is the substituted form of "horde of deplural[ize]d [one of]merchants[or]pirates[or]soldiers[or]spies from a foreign land[as decreasingly likely outcomes] traveling as one man";
 	let t-tool be text;
 	if the chosen tale-gift is:
 		-- t-sword:
-			now the t-tool is "[one of]rapier[or]cutlass[or]longsword[or]broadsword[or]shortsword[or]sword[at random]";
+			now the t-tool is the substituted form of "[one of]rapier[or]cutlass[or]longsword[or]broadsword[or]shortsword[or]sword[at random]";
 			if the chosen tale-helper is the t-ass:
 				now the t-tool is "whip";
 		-- t-dagger:
-			now the t-tool is "[one of]poniard[or]dagger[or]knife[or]blade[at random]";
+			now the t-tool is the substituted form of "[one of]poniard[or]dagger[or]knife[or]blade[at random]";
 			if the chosen tale-helper is t-beggar:
-				now the t-tool is "[one of]rusty[or]old[or]antique[or]much-used[at random] [t-tool]";
+				now the t-tool is the substituted form of "[one of]rusty[or]old[or]antique[or]much-used[at random] [t-tool]";
 			if the chosen tale-helper is t-spirit:
-				now the t-tool is "[one of]pure blue[or]shimmering spirit[at random] [t-tool]";
+				now the t-tool is the substituted form of "[one of]pure blue[or]shimmering spirit[at random] [t-tool]";
 			if the chosen tale-helper is the t-ass:
 				now the t-tool is "whip";
 		-- t-gun:
-			now the t-tool is "[one of]Spanish pistol[or]gun[or]musket[or]rifle[or]blunderbuss[at random]";
+			now the t-tool is the substituted form of "[one of]Spanish pistol[or]gun[or]musket[or]rifle[or]blunderbuss[at random]";
 			if the chosen tale-helper is the t-squid:
 				now the t-tool is "harpoon gun";
 			if the chosen tale-helper is the t-ass:
 				now the t-tool is "whip";
 		-- t-disguise:
-			now the t-tool is "[one of]mask[or]veil[or]robe[or]cloak[at random]";
+			now the t-tool is the substituted form of "[one of]mask[or]veil[or]robe[or]cloak[at random]";
 			if a random chance of 1 in 3 succeeds and the player is wearing something:
-				now the t-tool is "[random thing worn by the player]";
+				now the t-tool is the substituted form of "[random thing worn by the player]";
 			if the chosen tale-helper is the t-spirit:
-				now the t-tool is "[t-tool] made of [one of]cloud[or]darkness[or]words[at random]";
+				now the t-tool is the substituted form of "[t-tool] made of [one of]cloud[or]darkness[or]words[at random]";
 			if the chosen tale-helper is the t-squid:
-				now the t-tool is "[one of]water[or]spume[or]black ink[at random]-col[our]ed [t-tool]";
+				now the t-tool is the substituted form of "[one of]water[or]spume[or]black ink[at random]-col[our]ed [t-tool]";
 			if the chosen tale-helper is the t-beggar:
-				now the t-tool is "[one of]stained[or]torn[or]tattered[at random] [t-tool]";
+				now the t-tool is the substituted form of "[one of]stained[or]torn[or]tattered[at random] [t-tool]";
 		-- t-diversion:
-			now the t-tool is "[one of]flashing toy[or]lantern[or]mirror[or]firecracker[or]sound of an avalanche[or]bottled wind[at random]";
+			now the t-tool is the substituted form of "[one of]flashing toy[or]lantern[or]mirror[or]firecracker[or]sound of an avalanche[or]bottled wind[at random]";
 		-- t-grace:
 			if the chosen tale-helper is the t-spirit:
-				now t-tool is "[one of]sonnet[or]song[or]poem[or]spell of persuasion[or]tale of how Atlantis was founded[or]story of the Tower of Babel[as decreasingly likely outcomes]";
+				now t-tool is the substituted form of "[one of]sonnet[or]song[or]poem[or]spell of persuasion[or]tale of how Atlantis was founded[or]story of the Tower of Babel[as decreasingly likely outcomes]";
 			otherwise if the chosen tale-helper is the t-squid:
-				now t-tool is "[one of]gift of lying[or]pair of spectacles that see through ink[at random]";
+				now t-tool is the substituted form of "[one of]gift of lying[or]pair of spectacles that see through ink[at random]";
 			otherwise:
-				now t-tool is "[one of]wistful smile[or]bashful grin[or]raucous laugh[or]brilliant smile[or]beguiling tune[or]naughty limerick[at random]";
+				now t-tool is the substituted form of "[one of]wistful smile[or]bashful grin[or]raucous laugh[or]brilliant smile[or]beguiling tune[or]naughty limerick[at random]";
 	let t-solution be text;
 	if the chosen tale-apex is:
 		-- t-defeats:
 			now the t-solution is "[one of]destroy[or]kill[or]maim[or]attack[at random] the [t-antagonist]";
 			if the chosen tale-helper is t-spirit:
 				if the chosen tale-gift is t-sword or chosen tale-gift is t-dagger:
-					let agonist be "[t-antagonist]";
+					let agonist be the substituted form of "[t-antagonist]";
 					if agonist matches the regular expression ".(.*)":
-						now agonist is "[text matching subexpression 1]";
+						now agonist is the substituted form of "[text matching subexpression 1]";
 					now t-solution is "slice off a piece of the [t-antagonist] so that only [agonist] was left";
 			if t-tool is "whip":
 				now t-solution is "[one of]beat the [t-antagonist] into obedience[or]make the [t-antagonist] into an obedient servant[at random]";
@@ -20192,15 +20190,15 @@ To say generated tale:
 		-- t-tricks:
 			if the chosen tale-gift is t-disguise:
 				if the chosen tale-helper is t-beggar and the chosen tale-villain is t-thief:
-					now the t-solution is "trick the [t-antagonist] into thinking the [t-hero] hand nothing worth stealing"; 
+					now the t-solution is "trick the [t-antagonist] into thinking the [t-hero] hand nothing worth stealing";
 				otherwise:
-					now the t-solution is "trick the [t-antagonist]"; 
+					now the t-solution is the substituted form of "trick the [t-antagonist]";
 			if the chosen tale-gift is t-diversion:
 				now the t-solution is "trick the [t-antagonist] into going the wrong way and being trapped";
 			if t-tool is "mirror" and the chosen tale-villain is t-multiple-creature:
 				now the t-solution is "show the [t-antagonist] its reflection and drive it to madness";
 		-- t-converts:
-			now t-solution is "[one of]soothe[or]tame[or]make a friend of[at random] the [t-antagonist]"; 
+			now t-solution is the substituted form of "[one of]soothe[or]tame[or]make a friend of[at random] the [t-antagonist]";
 	now tale-intro is "Once upon a time...";
 	now tale-fight is "Using the [t-tool], [t-nom] was able to [t-solution]. ";
 	now tale-resolution is "So the [t-hero] [one of]triumphed[or]succeeded[or]prevailed[or]was triumphant[or]won out[or]was successful[or]was victorious[at random]. ";
@@ -20228,18 +20226,18 @@ To say generated tale:
 			now tale-intro is "Once upon a time, a [t-hero] was [t-activity]. ";
 		-- 4: 
 			if chosen tale-gift is not t-grace and t-tool is not "whip":
-				now t-tool is "[one of]golden[or]silver[or]ruby-studded[or]emerald-embossed[or]gilded[or]small electrum[at random] [random animal which is not plural-named]";
+				now t-tool is the substituted form of "[one of]golden[or]silver[or]ruby-studded[or]emerald-embossed[or]gilded[or]small electrum[at random] [random animal which is not plural-named]";
 			now tale-intro is "Once upon a time there was a [t-hero] who had inherited a [t-tool] from [t-pos] father and [t-pos] father's mother before him. But the [t-tool], alas, was stolen; and as it was the most valuable thing the family possessed, [t-nom] went out in search of it. ";
 			now t-activity is "scouring the land for what was lost";
 			now tale-resolution is "After much struggle, the [t-hero] was reunited with the [t-tool], which the [t-helper] had stolen [one of]to give away as a bribe[one of]. And this is the danger of corruption when all tasks, even small ones, require a bribe[or][or][at random]. [or]out of hunger. [or]out of need. [or]out of a love of trouble. [purely at random]";
 			if t-tool is "whip":
 				now tale-resolution is "The [t-hero] took the [t-tool] away from the [t-helper] and began to beat him with it savagely, though he had stolen it in order to escape beating. So it is that disobeying a tyrant may only make him more tyrannical. ";
 			now tale-danger is "'You have stolen this [t-tool]!' exclaimed the [t-hero] in rage. 'For it has belonged to my family for generations.' ";
-			now tale-fight is "[one of]'What!' said the [t-helper]. 'Do you think there is only one [t-tool] in existence?' But the [t-hero] knew this was a lie. [or]'You did not truly need it,' protested the [t-helper]. [or]'All things belong to all people in common,' suggested the [t-helper], because he subscribed to a heretical philosophy of property ownership. But the [t-hero] snorted derisively. [or]Then the [t-helper] and the [t-hero] argued over the [t-tool]. [at random] "; 
+			now tale-fight is "[one of]'What!' said the [t-helper]. 'Do you think there is only one [t-tool] in existence?' But the [t-hero] knew this was a lie. [or]'You did not truly need it,' protested the [t-helper]. [or]'All things belong to all people in common,' suggested the [t-helper], because he subscribed to a heretical philosophy of property ownership. But the [t-hero] snorted derisively. [or]Then the [t-helper] and the [t-hero] argued over the [t-tool]. [at random] ";
 		-- 5: 
 			now tale-intro is "Once upon a time, [one of]a certain witch read in the cards that[or]there was a prophecy that[or]a prophetess saw in a dream that[at random] the island of Atlantis would sink into the sea. [one of]And no one believed this prophecy except for[or]But the prophetess did not tell everyone; she gave the secret only to[or]No one cared except[or]This message fell on deaf ears, except for[at random] a [t-hero], who set out to prevent it. ";
 			now t-activity is "going door to door looking for anyone who could offer advice";
-			now tale-danger is "The [t-hero] traveled for many nights and days into the cen[ter] of the island, until [t-nom] came to a deep hole in the earth. Going down in the deep hole, [t-nom] found stairs that descended for ten thousand steps. And at the bottom of the hole was a great cave; and there in the cave was a winch that held the island up. And beside it was a [t-antagonist] who was preparing to turn the winch and plunge the island into the sea. "; 
+			now tale-danger is "The [t-hero] traveled for many nights and days into the cen[ter] of the island, until [t-nom] came to a deep hole in the earth. Going down in the deep hole, [t-nom] found stairs that descended for ten thousand steps. And at the bottom of the hole was a great cave; and there in the cave was a winch that held the island up. And beside it was a [t-antagonist] who was preparing to turn the winch and plunge the island into the sea. ";
 			now tale-resolution is "Thus the island was saved from sinking. ";
 		-- 6:
 			now tale-intro is "Once upon a time, a [t-hero] was separated from [t-pos] beloved. ";
@@ -20252,7 +20250,7 @@ To say generated tale:
 			otherwise:
 				now tale-fight is "With the [t-tool], the [t-hero] was able to subdue the [t-antagonist] long enough for the spell on [t-pos] lover to fade, and the two were able to reunite. ";
 		-- 7: 
-			now t-activity is "[random outdoors room]";
+			now t-activity is the substituted form of "[random outdoors room]";
 			now tale-intro is "Once upon a time, a [t-hero] was on a long journey to [t-activity] [one of]to fulfil the dying command of [t-pos] mother[or]at the wish of [t-pos] father[or]because the sheriffs of that land were searching for [t-obj][or]because of incurable wanderlust[or]because [t-nom] had heard such interesting tales of the place[or]in order to sell a cow[at random]. ";
 			now t-activity is "heading for [t-activity]";
 			now tale-danger is "Alas, on the way [t-nom] was set on by a [one of]ferocious[or]angry[or]hostile[or]blood-drinking[or]zombie[or]razor-toothed[or][at random] [t-antagonist]. ";
@@ -20277,7 +20275,7 @@ To say generated tale:
 			otherwise:
 				now  tale-resolution is "The next morning [t-nom] met the [t-helper] again. Astonished, [t-nom] said, 'Why did you give the [t-tool] to me after I treated you unkindly?' The [t-helper] replied: '[one of]I did this not for you, but for the whole island[or]I could not withhold that which it was your fate to receive[or]In payment, you and your family must always treat me well and bring me gifts[at random].' [tale-resolution]";
 		-- 2: 
-			now  tale-donation is "[one of]While [t-hero] was [t-activity][or]Just then[at random], a [t-helper] approached [t-obj] and demanded [tale-donation]. And though [t-hero] was very busy, [t-nom] gave all the aid in [t-pos] power. In return, the [t-helper] gave [t-obj] a [t-tool]. "; 
+			now  tale-donation is "[one of]While the [t-hero] was [t-activity][or]Just then[at random], a [t-helper] approached [t-obj] and demanded [tale-donation]. And though the [t-hero] was very busy, [t-nom] gave all the aid in [t-pos] power. In return, the [t-helper] gave [t-obj] a [t-tool]. ";
 			if chosen tale-gift is t-diversion and t-activity is not "scouring the land for what was lost":
 				now tale-donation is "[tale-donation]'I cannot imagine what use this will be,' thought the [t-hero]. But [t-nom] put it away in [t-pos] bag, because [t-nom] knew that there is a use for everything in its time. ";
 		-- 3: 
@@ -20288,7 +20286,7 @@ To say generated tale:
 					now tale-resolution is "[tale-resolution]Thus we see that it is best to fight a weak enemy but deceive a strong one. ";
 				if chosen tale-apex is t-escapes:
 					now tale-resolution is "[tale-resolution]A weak enemy is the best preparation for a strong one. ";
-		-- 4: 
+		-- 4:
 			now tale-donation is "While [t-activity], the [t-hero] met a [t-helper]. The [t-helper] begged of [t-obj] [tale-donation], but [t-nom] refused, saying [t-nom] had more important tasks at hand. ";
 			if the chosen tale-villain is t-monster:
 				now tale-danger is "At once the [t-helper] turned into a [t-antagonist] in its rage. ";
@@ -20329,7 +20327,7 @@ To say generated tale:
 		-- 8:
 			now tale-donation is "While [t-activity], the [t-hero] found a [t-tool]. 'Take me with you!' said the [t-tool]. So [t-nom] shrugged and collected the [t-tool] for a later time. ";
 			now tale-resolution is "[tale-resolution]Those who make the most of opportunities have the most successful results. ";
-	say "[tale-intro][paragraph break][tale-donation][paragraph break][tale-danger][paragraph break][tale-fight][paragraph break][tale-resolution]"; 
+	say "[tale-intro][paragraph break][tale-donation][paragraph break][tale-danger][paragraph break][tale-fight][paragraph break][tale-resolution]";
 	
 To decide what tale-helper is a suitable helper for (P - a tale-protagonist):
 	if P is:
