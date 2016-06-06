@@ -9850,7 +9850,7 @@ Does the player mean doing something with the secretary's computer:
 
 The description of the secretary's computer is "One of many beige boxes hooked into the university's main system." The secretary's computer is scenery.  
 
-The secretary's computer runs a password lock program called secretary's security.
+The secretary's computer runs a password-lock program called secretary's security.
 	The password of secretary's security is "brownishott".
 	
 The secretary's computer runs a search engine called a browser.
@@ -10491,7 +10491,7 @@ Instead of opening the reclamation machine:
 	
 The reclamation computer is a computer. It is part of the reclamation machine. One trackpad is part of the reclamation computer.
 
-The reclamation computer is running a password lock program called reclamation security.
+The reclamation computer is running a password-lock program called reclamation security.
 	The password of reclamation security is "4tsaj39nbtz".
 	
 The reclamation computer is running an enumerated multiple-choice program called the reclamations operation program.
@@ -12930,7 +12930,7 @@ The expensive laptop is a laptop. The description is "It's Brock's fav[our]ite o
 [Instead of doing something other than examining when the expensive laptop is the noun or the expensive laptop is the second noun:
 	say "Brock would cut our fingers off. But it's password-protected anyway; we wouldn't even be able to play solitaire on it." ]
 	
-The expensive laptop is running a password lock program called Brock's security.
+The expensive laptop is running a password-lock program called Brock's security.
 	The password of Brock's security is "2!ch_nqrx@v".
 	
 The expensive laptop is running a multiple-choice program called Brock-OS.
@@ -18686,13 +18686,13 @@ So, I thought, what about a puzzle where people do use fairly unguessable passwo
 
 The password-thing is an r-abstract thing. The description is "A glowing series of numbers and figures in the air, which changes and flickers now and then. Probably responding to its surroundings. It seems unstable just now." The printed name is "password". Understand "password" as the password-thing. 
 	
-Report switching on a computer which is running a password lock program when the password-thing is marked-visible:
+Report switching on a computer which is running a password-lock program when the password-thing is marked-visible:
 	say "[The startup noise of the noun][paragraph break]";
 	let target screen be a random screen that is part of the noun;
 	try examining the target screen;
 	say "[The password-thing] flickers meaningfully, then stabil[ize]s." instead.
 
-Instead of examining the password-thing when a password lock program (called target program) is marked-visible:
+Instead of examining the password-thing when a password-lock program (called target program) is marked-visible:
 	say "Under the influence of [the random computer which is running the target program], the password has settled down and now reads '[password of the target program]'."
 	
 Understand "type [password-thing] on/into [keyboard]" as password-entering it on. Understand "type [password-thing] on/into [something]" as password-entering it on.
@@ -18726,11 +18726,11 @@ Check password-entering something on something which is not a keyboard:
 	say "[The second noun] [are] not a keyboard." instead.
 
 Check password-entering the password-thing on something which is part of a computer (called secondary target):
-	unless the secondary target is running a password lock program:
+	unless the secondary target is running a password-lock program:
 		say "[The secondary target] [are] not asking for a password." instead.
  
 Carry out password-entering the password-thing on something which is part of a computer (called secondary target): 
-	let chosen program be a random password lock program which is run by the secondary target;
+	let chosen program be a random password-lock program which is run by the secondary target;
 	say "[We] carefully key in '[the password of the chosen program]'. [run paragraph on]";
 	carry out the rewarding successful answering activity with the chosen program;
 
