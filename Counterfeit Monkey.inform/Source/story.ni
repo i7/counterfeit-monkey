@@ -23745,9 +23745,10 @@ The generic confrontational of the gift shop volunteer is "miss".
 
 Instead of asking the gift shop volunteer about something:
 	let N be "[one of][generic adversative of the gift shop volunteer][or][secondary apology of the gift shop volunteer][at random]" in sentence case;
-	say "[We] frame up a vague question about [the second noun].
+	say "[We] frame up a vague question.
 	
-[beat] '[N], don't think I can help you there.'[paragraph break]"
+[beat] '[N], don't think I can help you there.'[paragraph break][conditional paragraph break]"
+["[We] frame up a vague question about [second noun].]
 
 The gift shop volunteer knows you-are-possible-customer.
 
