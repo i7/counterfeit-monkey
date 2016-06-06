@@ -2251,13 +2251,13 @@ Sanity-check inserting something (called the target) into the target:
 	otherwise:
 		say "[We] can't put [the target] into [themselves]." instead.
 
-Sanity-check inserting something held by a container (called the target) into the target:
+Sanity-check inserting something in a container (called the target) into the target:
 	say "[The noun] [are] in [the target] already." instead.
 
 Sanity-check putting something (called the target) on the target:
 	say "[We] can't put [the target] on [themselves]." instead.
 
-Sanity-check putting something held by a supporter (called the target) on the target:
+Sanity-check putting something (called the source) on a supporter (called the target) when the source is on the target:
 	say "[The noun] [are] on [the target] already." instead.
 
 Before taking something which is in a closed container (called the source):
