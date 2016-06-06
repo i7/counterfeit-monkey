@@ -19031,7 +19031,7 @@ Instead of showing the spot to the pirate:
 [TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
-"pirate-spot"	{ spot, crate, tub }	Workshop
+"pirate-spot"	{ spot, pic, crate, tub }	Workshop
 
 Test pirate-spot with "tutorial off / autoupgrade / wave c-remover at pic / wave c-remover at crate / put pi on platform / put rate on platform / set platform to synthesize / turn on platform / pirate, enter platform / show spot to pirate / g / pirate, enter platform / open tub / drop tub / pirate, touch gel"  [in the Workshop holding the spot and the pic and the crate and the tub.]
 
