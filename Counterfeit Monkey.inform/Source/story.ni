@@ -26496,7 +26496,7 @@ cutting-remark is an NPC-directed quip.
 
 
 Before putting restoration gel on Atlantida-woman:
-	say "[We] dab a bit on [y-our] finger and approach, but she is far too large, far too spry. She catches [y-our] wrist and forces [us] aside, until the gel is harmlessly absorbed into [y-our] own skin[casually queue anti-gel comment]." instead.
+	say "[We] dab a bit on our finger and approach, but she is far too large, far too spry. She catches our wrist and forces us aside, until the gel is harmlessly absorbed into our own skin[casually queue anti-gel comment]." instead.
 
 anti-gel comment is an NPC-directed quip.
 	The reply is "'Oh, no, my dear,' Atlantida says. 'They could remake me, but it wouldn't be the [i]same[/i] me, would it? It would be some new construct. The Atlantida of today. And that's not the way to a consistent policy, is it?'"
