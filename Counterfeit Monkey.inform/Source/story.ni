@@ -24456,9 +24456,6 @@ Time up is an NPC-directed quip.
  It quip-supplies the barman.
  It indirectly-follows Time up.
 
-
-[TODO:][fix][How to allow Showing non-carried things?]
-
 The carrying requirements rule does nothing when the action name part of the current action is the showing it to action.
 	
 The can't show what you haven't got rule is not listed in any rulebook.
