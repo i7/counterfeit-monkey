@@ -4895,7 +4895,7 @@ When Landing ends:
 	otherwise:
 		say "'And Brock?' Slango demands. 'Have you got him?'
 
-[We] shake [y-our] head. 'But he'll be released soon,' [we] say. 'I'm pretty sure I've seen to that.'
+[We] shake our head. 'But he'll be released soon,' [we] say. 'I'm pretty sure I've seen to that.'
 
 'Pretty sure,' Slango repeats.
 
