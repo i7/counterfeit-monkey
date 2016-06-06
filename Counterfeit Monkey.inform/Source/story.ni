@@ -546,11 +546,13 @@ To clear compass graphlinks:
 When play begins (this is the setting drawing-rule rule):
 	now current graphics drawing rule is the compass-drawing rule.
 	
-Carry out going somewhere (this is the update compass on movement rule):
-	refresh compass with current directions.
+After going somewhere (this is the update compass on movement rule):
+	refresh compass with current directions;
+	continue the action.
 	
-Carry out someone going somewhere when the actor encloses the player:
-	refresh compass with current directions.
+After someone going somewhere when the actor encloses the player:
+	refresh compass with current directions;
+	continue the action.
 
 [We want the compass to stay down in a corner of the screen and not to scale up too huge if the screen is resized. One of the irritating things about Glulx window management is that it's impossible to force an aspect ratio on the player, so I have no idea whether they're going to go tall-and-skinny or short-and-wide. Testers playing in full-screen mode sometimes found that the compass got way too large and encroached on the upper part of the map if I just set the compass to be one quarter the width of the window.]
 
