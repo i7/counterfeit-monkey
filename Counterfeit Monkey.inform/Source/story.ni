@@ -3944,7 +3944,7 @@ Sanity-check performing something on game-selection:
 	say "It's not really a game-playing occasion." instead.
 
 Sanity-check performing something on a person: 
-	say "If [the second noun] [adapt verb wish] to sing something, that is up to [them]." instead.
+	say "If [the second noun] [wish] to sing something, that is up to [them]." instead.
 
 Sanity-check performing something on something which is not an instrument:
 	say "[The second noun] [aren't] much of an instrument." instead.
@@ -17113,7 +17113,10 @@ Every turn during Bard Sings:
 	say description entry;
 	say paragraph break.
 
-Singing is an action applying to nothing.
+Singing is an action applying to nothing. Understand "sing" as singing.
+
+Carry out singing:
+	say "I prefer not to exercise my singing voice in company. (That includes you.)"
 	
 Instead of singing during bard sings:
 	say "[We] attempt to sing louder than the bard and cover up his illicit lyricism, but it turns out that [one of]O Atlantida, Lead Thy People Free[or]Pop Goes the Phoenician Sailor[or]Paint Is A Pain and Pain is a Pan[or]The Chard Farmer's Anthem[or]In The Squid's Garden[at random] does not drown him out."
