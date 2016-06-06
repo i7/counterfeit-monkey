@@ -560,7 +560,7 @@ To decide what number is grid-size:
 	if width-quarter is greater than height-quarter:
 		now compass width is height-quarter;
 	else:
-		now compass width is width-quarter; 
+		now compass width is width-quarter;
 	let D be compass width / 3;
 	decide on D;
 	
@@ -570,7 +570,7 @@ To decide what number is grid-margin:
 This is the compass-drawing rule:
 	if glulx graphics is supported:
 		clear compass graphlinks; [We need to reset the graphlinks every time the player resizes the window, because if the height of the screen changes, the compass may move vertically.]
-		establish compass graphlinks; 
+		establish compass graphlinks;
 		refresh compass with current directions.
 
 To determine compass coordinates:
@@ -579,48 +579,48 @@ To determine compass coordinates:
 	let D be grid-size;
 	let DD be 2 * D;
 	let DDD be compass width;
-	let TE be current graphics window height - (D * 4); 
-	let UM be TE + D; 
+	let TE be current graphics window height - (D * 4);
+	let UM be TE + D;
 	let LM be TE + DD;
-	let BEE be current graphics window height - D; 
+	let BEE be current graphics window height - D;
 	increase D by grid-margin;
 	increase DD by grid-margin;
 	increase DDD by grid-margin;
-	now x-coordinate of up is ZE; 
+	now x-coordinate of up is ZE;
 	now y-coordinate of up is BEE;
-	now x-coordinate of down is DD; 
-	now y-coordinate of down is BEE; 
-	now x-coordinate of fore-port is ZE; 
+	now x-coordinate of down is DD;
+	now y-coordinate of down is BEE;
+	now x-coordinate of fore-port is ZE;
 	now y-coordinate of fore-port is TE;
-	now x-coordinate of fore is D; 
+	now x-coordinate of fore is D;
 	now y-coordinate of fore is TE;
-	now x-coordinate of fore-starboard is DD; 
+	now x-coordinate of fore-starboard is DD;
 	now y-coordinate of fore-starboard is TE;
-	now x-coordinate of port is ZE; 
+	now x-coordinate of port is ZE;
 	now y-coordinate of port is UM;
-	now x-coordinate of starboard is DD; 
+	now x-coordinate of starboard is DD;
 	now y-coordinate of starboard is UM;
-	now x-coordinate of aft-port is ZE; 
+	now x-coordinate of aft-port is ZE;
 	now y-coordinate of aft-port is LM;
-	now x-coordinate of aft is D; 
+	now x-coordinate of aft is D;
 	now y-coordinate of aft is LM;
-	now x-coordinate of aft-starboard is DD; 
-	now y-coordinate of aft-starboard is LM; 
-	now x-coordinate of northwest is ZE; 
+	now x-coordinate of aft-starboard is DD;
+	now y-coordinate of aft-starboard is LM;
+	now x-coordinate of northwest is ZE;
 	now y-coordinate of northwest is TE;
-	now x-coordinate of north is D; 
+	now x-coordinate of north is D;
 	now y-coordinate of north is TE;
-	now x-coordinate of northeast is DD; 
+	now x-coordinate of northeast is DD;
 	now y-coordinate of northeast is TE;
-	now x-coordinate of west is ZE; 
+	now x-coordinate of west is ZE;
 	now y-coordinate of west is UM;
-	now x-coordinate of east is DD; 
+	now x-coordinate of east is DD;
 	now y-coordinate of east is UM;
-	now x-coordinate of southwest is ZE; 
+	now x-coordinate of southwest is ZE;
 	now y-coordinate of southwest is LM;
-	now x-coordinate of south is D; 
+	now x-coordinate of south is D;
 	now y-coordinate of south is LM;
-	now x-coordinate of southeast is DD; 
+	now x-coordinate of southeast is DD;
 	now y-coordinate of southeast is LM. 
 
 [Layer the image: black in the background to fill in the top of the screen; a blue and black mix of the right height across the whole width of the screen so that if the map is too small, it will still look blue at the edges; then the map itself, proportionally scaled as large as it can reasonably be given the window dimensions; then the compass, built from the current circumstances.
@@ -633,16 +633,16 @@ To refresh compass with current directions:
 		follow the bottom wide drawing rule;
 		now currently shown picture is the local map of the location;
 		follow the bottom scaled drawing rule;
-		draw Figure of center-squiggle from the x-coordinate of north by y-coordinate of west to grid-size by grid-size; 
+		draw Figure of center-squiggle from the x-coordinate of north by y-coordinate of west to grid-size by grid-size;
 		determine compass coordinates;
 		repeat with way running through directions:
 			if the way is a listable exit: 
 				let X be the x-coordinate of way;
 				let Y be the y-coordinate of way;
 				if the room way from the location is visited:
-					draw the visited image of the way from X by Y to grid-size by grid-size; 
+					draw the visited image of the way from X by Y to grid-size by grid-size;
 				otherwise:
-					draw the unvisited image of the way from X by Y to grid-size by grid-size;  
+					draw the unvisited image of the way from X by Y to grid-size by grid-size;
 
 Section 2 - Local Maps
 
@@ -699,9 +699,9 @@ Include (-
 	w_offset = (graph_width - w_total)/2; if (w_offset < 0) w_offset = 0;
 	h_offset = graph_height - h_total; if (h_offset < 0) h_offset = 0;
 
-	glk_image_draw_scaled(gg_picwin, cur_pic, w_offset, h_offset, w_total, h_total); 
+	glk_image_draw_scaled(gg_picwin, cur_pic, w_offset, h_offset, w_total, h_total);
 	}
- ]; 
+ ];
 
  [ ScaleToBottomWide cur_pic result graph_width graph_height 
 		img_width img_height w_offset h_offset w_total h_total;
@@ -738,9 +738,9 @@ Include (-
 	w_offset = (graph_width - w_total)/2; if (w_offset < 0) w_offset = 0;
 	h_offset = graph_height - h_total; if (h_offset < 0) h_offset = 0;
 
-	glk_image_draw_scaled(gg_picwin, cur_pic, 0, h_offset, graph_width, h_total); 
+	glk_image_draw_scaled(gg_picwin, cur_pic, 0, h_offset, graph_width, h_total);
 	}
- ]; 
+ ];
 
 
 -)
@@ -893,9 +893,9 @@ Section 1 - The Status Line
 To fill the/-- status bar/line with (selected table - Table of Fancy Status):  
 	repeat through selected table: 
 		move cursor to 1;
-		say "[left entry]"; 
+		say "[left entry]";
 		right align cursor to 1;
-		say "[right entry]"; 
+		say "[right entry]";
 		
 When play begins:
 	now right alignment depth is 20.
@@ -965,9 +965,9 @@ Points (a number)	Citation (some text)	Time (a time)
 15	"returning to the yacht"
 
 To record (T - text) as achieved: 
-    choose row with a citation of T in the Table of Tasks Achieved; 
-    if there is no time entry begin; 
-        now time entry is the time of day; 
+    choose row with a citation of T in the Table of Tasks Achieved;
+    if there is no time entry begin;
+        now time entry is the time of day;
 		increase score by points entry;
 	end if. 
 
@@ -993,7 +993,7 @@ Report requesting the score:
 	follow the list achievements rule.
 
 To say disjoint (L - a list of texts):
-	let N be the number of entries in L; 
+	let N be the number of entries in L;
 	repeat with I running from 1 to N:
 		say entry I in L;
 		if I is N - 1:
@@ -1073,29 +1073,29 @@ To mark (job - text) done at (T - a time):
 			choose a blank row in the Table of Tasks Complete;
 			now (citation entry) is job;
 			now (goal entry) is the location;
-			now (time entry) is T; 
+			now (time entry) is T;
 	
 
 [To reverse (job - text):
 	if there is a citation of job in the Table of Tasks Complete:
 		choose row with Citation of job in the Table of Tasks Complete;
-		blank out the whole row; 
+		blank out the whole row;
 	unless there is a citation of job in the Table of Tasks Pending: 
-		choose a blank row in the Table of Tasks Pending; 
+		choose a blank row in the Table of Tasks Pending;
 		change (citation entry) to job. ]
 		
 To replace (job - text) with (new job - text):
 	if there is a citation of job in the Table of Tasks Pending:
 		choose row with Citation of job in the Table of Tasks Pending;
-		blank out the whole row; 
+		blank out the whole row;
 		now (citation entry) is new job;
 	if there is a citation of job in the Table of Prefinished Tasks:
 		choose row with Citation of job in the Table of Prefinished Tasks;
-		blank out the whole row; 
+		blank out the whole row;
 		now (citation entry) is new job;
 	if there is a citation of job in the Table of Tasks Complete:
 		choose row with Citation of job in the Table of Tasks Complete;
-		blank out the whole row; 
+		blank out the whole row;
 		now (citation entry) is new job;
 
 Understand the command "think" as something new. Understand "think" or "plan" or "plans" or "journal" or "missions" or "goals" or "goal" as planning. Planning is an action out of world. 
@@ -1107,7 +1107,7 @@ Check planning:
 Carry out planning:
 	say "Here's what [we] think [we] need to do: ";
 	repeat through the Table of Tasks Pending:
-		say "[line break]  [citation entry]"; 
+		say "[line break]  [citation entry]";
 	say "[line break]".
 	
 Report planning for the second time:
@@ -1130,19 +1130,19 @@ Scheduling is an action out of world.
 Report scheduling:
 	say "We've managed the following: ";
 	repeat through the Table of Tasks Complete:
-		say "[line break]  [citation entry]"; 
+		say "[line break]  [citation entry]";
 	say "[paragraph break]";
 	say "That leaves: ";
 	repeat through the Table of Tasks Pending:
-		say "[line break]  [citation entry]"; 
-	say "[paragraph break]"; ]
+		say "[line break]  [citation entry]";
+	say "[paragraph break]";]
 	
 [We don't need this because we have score.]
 
 To show to-do list:
 	say "[line break]So now [we] should probably ";
 	repeat through the Table of Tasks Pending:
-		say "[citation entry]; "; 
+		say "[citation entry]; ";
 	say "and, most of all, not get noticed by anyone who shouldn't notice us."
 	
 Section 4 - Achievements
@@ -1189,10 +1189,10 @@ This is the list achievements rule:
 			say "  [achievement entry][line break]".
 
 To decide whether (chosen ending - text) is a used achievement: 
-	let N be "[chosen ending]"; 
+	let N be "[chosen ending]";
 	repeat through the Table of Possible Achievements:
 		if N is achievement entry: 
-			yes; 
+			yes;
 	no. 
 
 This is the list sources rule:
@@ -1253,7 +1253,7 @@ Instead of taking inventory when the current inventory listing style is utilitar
 	let the carried count be the number of things enclosed by the player that are not the restoration gel;
 	[the restoration gel shouldn't be counted separately from the tub]
 	if the carried count is 0, say "[We] [are] empty-handed." instead;
-	now all essential things enclosed by the player are marked for listing; 
+	now all essential things enclosed by the player are marked for listing;
 	unless the number of marked for listing things is 0:
 		if exactly one thing is marked for listing:
 			say "[We] [are] equipped with [a list of marked for listing thing] [--] an essential [we] mustn't part with. ";
@@ -1262,7 +1262,7 @@ Instead of taking inventory when the current inventory listing style is utilitar
 		now the packed count is the number of marked for listing things which are packed;
 		now the unpacked count is the number of marked for listing things which are unpacked;
 		now paragraph break needed is true;
-	now everything is not marked for listing; 
+	now everything is not marked for listing;
 	now every not essential thing enclosed by the player is marked for listing;
 	now everything that is part of something is not marked for listing;
 	now the restoration gel is not marked for listing; [because the tub will already be a mentioned essential]
@@ -1385,21 +1385,21 @@ CLOCK (still included, but it gains the adjective BROKEN after its first gelling
 Hard mode also changes the functionality of the vowel rotator in the late game, replacing it with a somewhat more challenging encryptor.]
 
 Carry out selecting hard mode:
-	now hardness is true;   
+	now hardness is true;
 	now the the gum is nowhere;
 	now the funnel is nowhere;
 	now the funnel is not buried;
-	now the printed name of the twig is "bent twig"; 
+	now the printed name of the twig is "bent twig";
 	now the printed name of the fossil is "twisty fossil";
 	now the printed name of the tomes is "dusty tomes";
-	now the the sticky is nowhere; 
+	now the the sticky is nowhere;
 	now the the banana is nowhere;
-	move the pineapple to the large carton; 
+	move the pineapple to the large carton;
 	now the the wrap is nowhere;
 	now the the screwdriver is nowhere;
-	now the the screwdrivers are nowhere; 
+	now the the screwdrivers are nowhere;
 	move the prickly-pear to the holder of the pear;
-	now the the pear is nowhere; 
+	now the the pear is nowhere;
 	now the the wheel is nowhere;
 	now the introduction of the clock is "It's stopped working sometime in the recent past, possibly thanks to its fall when we gelled it.";
 	follow the initialize hash codes rule;
@@ -1504,11 +1504,11 @@ To undo a turn:
 
 When play ends when the story has not ended finally:
 	wait for any key;
-	say "That is, that's what would have happened if [we] had done something so foolish. Shall we suppose [we] didn't? >"; 
+	say "That is, that's what would have happened if [we] had done something so foolish. Shall we suppose [we] didn't? >";
 	if the player consents:
 		if the turn count is greater than 1:
 			say "[line break]";
-			undo a turn; 
+			undo a turn;
 		otherwise:
 			resume the story;
 		try looking.
@@ -1571,8 +1571,8 @@ Plausibility rule for an unlisted quip:
 	it is dubious.
 
 After reading a command: 
-        let N be "[player's command]"; 
-        replace the regular expression "(hi|hello|hey), (.*)" in N with "\2, \1"; 
+        let N be "[player's command]";
+        replace the regular expression "(hi|hello|hey), (.*)" in N with "\2, \1";
         change the text of the player's command to N.
 
 
@@ -1698,7 +1698,7 @@ Check hailing (this is the new check hailing rule):
 	if the current interlocutor is a marked-visible person:
 		if the current quip is generic-quip:
 			now the current quip is the greet-quip;
-			say "[We] [one of]nod[or]wave[or]smile and acknowledge [the current interlocutor][or]say hi[or]return the greeting[at random]." instead; 
+			say "[We] [one of]nod[or]wave[or]smile and acknowledge [the current interlocutor][or]say hi[or]return the greeting[at random]." instead;
 		say already-have instead;
 	now the noun is a random marked-visible person who is not the player;
 	if the noun is a person: 
@@ -1726,7 +1726,7 @@ The new can't greet current interlocutor rule is listed instead of the can't gre
 Check saying hello to a person when the noun is the current interlocutor (this is the new can't greet current interlocutor rule):
 	if the current quip is generic-quip:
 		now the current quip is the greet-quip;
-		say "[We] [one of]nod[or]wave[or]smile[or]say hi[or]return the greeting[at random]." instead; 
+		say "[We] [one of]nod[or]wave[or]smile[or]say hi[or]return the greeting[at random]." instead;
 	say already-have instead.
 	
 To say already-have:
@@ -1834,7 +1834,7 @@ To say personal yes:
 To say awkward no:
 	let N be "[generic adversative of the current interlocutor], [generic negative of the current interlocutor]";
 	let N be "[N]" in sentence case;
-	say "[N][apologetic]"; 
+	say "[N][apologetic]";
 	
 To say awkward yes:
 	let N be "[generic adversative of the current interlocutor], [generic positive of the current interlocutor]";
@@ -2195,7 +2195,7 @@ Understand "climb on/onto [something]" as climbing.
 To make is a verb. To wish is a verb. To shy is a verb. To become is a verb. To make is a verb. To back is a verb. To fall is a verb. To cease is a verb. To meet is a verb. To hop is a verb. To peer is a verb. To ping is a verb. To stare is a verb. To decide is a verb. To shake is a verb.
 
 [Before eating something which is not carried by the player: 
-	try taking the noun; 
+	try taking the noun;
 	if the player does not have the noun, stop the action. ]
 
 Before wearing something which is not carried by the player: if the noun is worn, continue the action; try taking the noun; if the player does not have the noun, stop the action.
@@ -2218,8 +2218,8 @@ This is the sanity-check stage rule:
 The sanity-check stage rule is listed before the before stage rule  in the action-processing rules.
 
 To decide whether (item - a thing) must be touched: 
-    if the item is the noun and the action requires a touchable noun, yes; 
-    if the item is the second noun and the action requires a touchable second noun, yes; 
+    if the item is the noun and the action requires a touchable noun, yes;
+    if the item is the second noun and the action requires a touchable second noun, yes;
     no.
  
 An accessibility rule (this is the no touching NPC stuff rule): 
@@ -2430,16 +2430,16 @@ A thing has some text called the flavor-description.
 Instead of tasting something:
 	if the flavor-description of the noun is "":
 		if the noun is r-abstract:
-			say "There's not enough there to provide much flav[our]."; 
+			say "There's not enough there to provide much flav[our].";
 		else:
-			say "[regarding the noun][They] [taste] as I would have expected."; 
+			say "[regarding the noun][They] [taste] as I would have expected.";
 	otherwise:
 		say "[flavor-description of the noun].[paragraph break]".
 
 Instead of smelling something:
 	if the scent-description of the noun is "":
 		if the noun is r-abstract:
-			say "There's hardly any od[our] to [the noun]."; 
+			say "There's hardly any od[our] to [the noun].";
 		else:
 			say "[regarding the noun][They] [smell] as I would have expected.";
 	otherwise:
@@ -2530,7 +2530,7 @@ Carry out finding:
 	if place is not a room and the noun is a door:
 		let place be the front side of the noun;
 		if place is not visited:
-			let place be the back side of the noun; 
+			let place be the back side of the noun;
 	if place is a room and place is not the location:
 		try approaching place;
 	otherwise:
@@ -2566,7 +2566,7 @@ The new approach heading finding rule is listed instead of the approach-heading 
 This is the new approach heading finding rule:
 	now approach-heading is the best route from the location to the noun, using doors;
 	if approach-heading is not a direction:
-		now approach-heading is the best route from the location to the noun, using even locked doors; 
+		now approach-heading is the best route from the location to the noun, using even locked doors;
 
 Path description count is a number that varies. [let's count how many times we've invoked this activity this turn!]
 
@@ -2579,7 +2579,7 @@ Rule for describing path of the player:
 	if N is greater than 0:
 		if path description count is greater than 0:
 			let C be "[one of]Then[or]Next[or]From there[or]After that[as decreasingly likely outcomes] ";
-		let C be "[C][one of][We] [or][We] have a [walk-length for N][or][We] make the [optional walk-length for N][or]It's a [walk-length for N][at random]"; 
+		let C be "[C][one of][We] [or][We] have a [walk-length for N][or][We] make the [optional walk-length for N][or]It's a [walk-length for N][at random]";
 		say "[C]" in sentence case;
 		say "[walk-drive]";
 		if the intervening regions of the player is not empty:
@@ -2599,7 +2599,7 @@ To say optional walk-length for (N - a number):
 	otherwise if N is less than 8:
 		say "[one of][one of]fair[or]healthy[at random] [or][cycling]";
 	otherwise:
-		say "[one of][one of]long[or]lengthy[or]rather tiring[at random] [or][cycling]"; 
+		say "[one of][one of]long[or]lengthy[or]rather tiring[at random] [or][cycling]";
 	
 To say walk-length for (N - a number):
 	if the player is in a car:
@@ -2609,7 +2609,7 @@ To say walk-length for (N - a number):
 	otherwise if N is less than 8:
 		say "[one of]fair[or]healthy[at random] ";
 	otherwise:
-		say "[one of]long[or]lengthy[or]rather tiring[at random] "; 
+		say "[one of]long[or]lengthy[or]rather tiring[at random] ";
 		
 [The rather odd cycling guarantees that we don't repeat a word.]
 
@@ -2667,12 +2667,12 @@ To clear all/the/-- path-walked for (worker - yourself):
 			otherwise:
 				say "We [if the player is enclosed by a vehicle]drive[otherwise]go[end if] [described motion of the player]";
 				if N is greater than 2:
-					say ", before heading"; 
+					say ", before heading";
 				otherwise:
-					say ", then head";  
+					say ", then head";
 			say " [the last movement]. [run paragraph on]";
 		otherwise:
-			say "We go [described motion of the player]. [run paragraph on]"; 
+			say "We go [described motion of the player]. [run paragraph on]";
 	clear path-walked for player. ]
 	
 
@@ -2689,14 +2689,14 @@ The room-restriction rules are an object-based rulebook.
 A room-restriction rule for a southern room:
 	if the Counterfeit Monkey is unvisited:
 		say "Don't [we] have an appointment at the Counterfeit Monkey? [We] should be heading northeast up Deep Street.";
-		rule fails; 
+		rule fails;
 	if Slango is not seen and Counterfeit Monkey is visited:
 		say "That would take us more towards my part of the world, not help us find Slango.";
 		rule fails.	
 		
 A room-restriction rule for Tall Street when Counterfeit Monkey is unvisited:
 	say "Don't [we] have an appointment at the Counterfeit Monkey? [We] should be heading northeast up Deep Street.";
-	rule fails; 
+	rule fails;
 	
 A room-restriction rule for Wonderland when Brock-argument has not happened:
 	say "Best to start looking for Brock where we know he went: the equipment testing room.";
@@ -2751,8 +2751,8 @@ To decide what direction is the logical exit:
 	let N be 0;
 	let chosen way be north;
 	repeat with way running through directions
-	begin; 
-		let place be the room way from the location; 
+	begin;
+		let place be the room way from the location;
 		if place is a room
 		begin;
 			increase N by 1;
@@ -2779,7 +2779,7 @@ Instead of searching a facade, say "[We] would have to go to [a random direction
 Fronting relates various facades to one direction. The verb to front (it fronts, they front, it fronted, it is fronted) implies the fronting relation.
 
 Before an actor entering a facade:
-	let chosen way be a random direction which is fronted by the noun; 
+	let chosen way be a random direction which is fronted by the noun;
 	try the actor going the chosen way instead.
 	
 Instead of going nowhere when the noun is fronted by a facade (called blockage) in the location:
@@ -2871,7 +2871,7 @@ Last check facing:
 	if the noun is up or the noun is down: 
 		make no decision;
 	let leftway be left-alt of the noun;
-	let rightway be right-alt of the noun; 
+	let rightway be right-alt of the noun;
 	let leftward thing be the thing seen facing leftway;
 	let rightward thing be the thing seen facing rightway;
 	if leftward thing is nothing and rightward thing is nothing:
@@ -2961,7 +2961,7 @@ Instead of going from a road to a road:
 		if the number of entries in the path so far of the player is greater than 0:
 			say "[path-walked so far][paragraph break]";
 		say "Unfortunately the sidewalks, which were never very wide to start with, are so blocked by the mass of protesters that it's impossible to get by. Besides, if we associate with them, we might wind up getting arrested on minor charges anyway. We need some kind of automotive transport.";
-		assign "Find transport for getting past the traffic on High Street" at High Street;  
+		assign "Find transport for getting past the traffic on High Street" at High Street;
 	otherwise if the room gone to is the Roundabout and the protesters are not off-stage:
 		say "That whole area is so jammed that our only hope is to go by car.";
 	otherwise:
@@ -3078,7 +3078,7 @@ Check exiting when the player is in a noisy car:
 	try switching off a random ignition which is incorporated by a car which contains the player;
 
 Check going somewhere by a car which is not noisy:
-	try switching on a random ignition (called target) which is incorporated by a car which contains the player; 
+	try switching on a random ignition (called target) which is incorporated by a car which contains the player;
 	if the target is switched off, stop the action.
 
 Check going somewhere by an open car (called target):
@@ -3175,7 +3175,7 @@ Instead of going by car when the location is offroad:
 
 When play begins:
 	move protesters backdrop to all roads in Busy Streets;
-	move traffic backdrop to all roads in Busy Streets; 
+	move traffic backdrop to all roads in Busy Streets;
 
 Some protesters are a backdrop. Understand "student" or "students" as the protesters. The description is "Hundreds of people pack the sidewalk, wearing slogans and carrying angry signs." 
 
@@ -3399,7 +3399,7 @@ Include Postures by Emily Short.
 
 Check going to a room when the player is not in the location:
 	while the player is not in the location:
-		let context be the holder of the player; 
+		let context be the holder of the player;
 		if context is a vehicle:
 			continue the action;
 		try exiting;
@@ -3538,15 +3538,15 @@ Section 6 -
 	now every drawer which is part of the nightstand is mentioned;
 	now every drawer which is part of the nightstand is referenced by the current-paragraph;
 	while a surprising thing (called second special-target) is referenced by the current-paragraph
-	begin; 
+	begin;
 		carry out the disclosing contents activity with the second special-target;
 		now every thing contained by the second special-target is mentioned;
 		now every thing supported by the second special-target is mentioned;
 		now every thing held by the second special-target is mentioned;
 		now every thing which is part of the second special-target is mentioned;
-	end while; 
+	end while;
 	now held-break is true;
-	say "[run paragraph on]"; ]
+	say "[run paragraph on]";]
 	
 
 Rule for disclosing exterior of something which is in a drawer:
@@ -3582,13 +3582,13 @@ Rule for writing a paragraph about someone (called special-target) who is on a c
 	if the special-target is initially-described, make no decision;
 	if the special-target is flexibly-described, make no decision;
 	if the special-target is introduceable and the special-target is as-yet-unknown, make no decision;
-	now the current-subject is special-target; 
+	now the current-subject is special-target;
 	if the location is an office:
 		now the secondary-target is mentioned;
 		let N be a random desk which is in the location;
 		say "[The special-target] [are] seated at [their] [N]. [run paragraph on]";
 	otherwise:
-		say "[The special-target] [are] sitting on [a secondary-target]. [run paragraph on]"; 
+		say "[The special-target] [are] sitting on [a secondary-target]. [run paragraph on]";
 
 Rule for disclosing contents of a desk (called special-target):
 	if someone (called desk-user) who is not the player is on a chair in the location:
@@ -3667,7 +3667,7 @@ Setting action variables for guidebook-consulting:
 	if the player's command includes "[number]" and the filing cabinet is marked-visible:
 		now the implied textbook is the filing cabinet;
 	otherwise if the player can see the guidebook:
-		now the implied textbook is the guidebook; 
+		now the implied textbook is the guidebook;
 	otherwise if the player carries a book:
 		now the implied textbook is a random book carried by the player;
 	otherwise if the player can see a book (called the target):
@@ -3843,7 +3843,7 @@ Covering relates various things to one body-area. The verb to cover (it covers, 
 
 Check wearing something which covers a body-area (called affected region):
 	if the affected region is not the face-area and the affected region is not the head-area and the affected region is not the torso-area and the affected region is not the legs-area: [* you would think this was covered already, but for some reason there's a bug at time of writing that allows "which covers a body area" to match "illegal body-area" -- that is to say, no part of the body at all.]
-		make no decision; 
+		make no decision;
 	while the player wears a non-noun thing (called blockage) which covers the affected region:
 		try taking off the blockage;
 		if the player wears the blockage:
@@ -4130,11 +4130,11 @@ Proffering relates various things to various things. The verb to proffer (it pro
 
 When play begins: 
 	repeat with item running through things:
-		now the item proffers the item; 
+		now the item proffers the item;
 	now the rock is not proffered by anything;
 	now Brock proffers the rock;
 	now the banana is not proffered by anything;
-	now the bandana proffers the banana; 
+	now the bandana proffers the banana;
 	now the shed is not proffered by anything;
 	now the shred proffers the shed;
 	now the as is not proffered by anything;
@@ -4142,11 +4142,11 @@ When play begins:
 	now the ash is not proffered by anything;
 	now the trash proffers the ash;
 	now the pear is not proffered by anything;
-	now the pearl proffers the pear; 
+	now the pearl proffers the pear;
 	now the lock is not proffered by anything;
 	now the lock is proffered by the clock;
 	now the watch is not proffered by anything;
-	now the watch is proffered by the swatch; 
+	now the watch is proffered by the swatch;
 	now the mechanic is not proffered by anything;
 	now the garbage proffers the mechanic;
 	now the pocket-bread is not proffered by anything;
@@ -4159,7 +4159,7 @@ When play begins:
 	now the word is not proffered by anything;
 	now the word is proffered by the sword;
 	now atlantida-woman is not proffered by anything;
-	now atlantida-shellfish proffers atlantida-woman;  
+	now atlantida-shellfish proffers atlantida-woman;
 	now the paperweight is not proffered by anything;
 	now the paperweight is proffered by the paper;
 	now the paperweight is proffered by the weight;
@@ -4371,7 +4371,7 @@ To say time-elsewhere:
 	increase hours by difference entry;
 	let am-pm be "[one of]in the morning[or]AM[or]o'clock[at random]";
 	if hours is greater than 24:
-		decrease hours by 24; 
+		decrease hours by 24;
 	otherwise if hours is 24:
 		decrease hours by 12;
 		now am-pm is "midnight";
@@ -4466,7 +4466,7 @@ When seeking transport ends:
 	
 This is bad. Even I can see this is bad. What happened to your confidence in your team? Where are the guys who are supposed to get us out of here?
 
-Something must have gone wrong."; 
+Something must have gone wrong.";
 	
 Section 3 - Missing Slango
 
@@ -4492,13 +4492,13 @@ When seeking invite ends:
 		
 Before going to University Oval:
 	if "Trace Brock's movements at the antique shop" is completed:
-		make no decision; 
+		make no decision;
 	if hurrying:
 		let N be the number of entries in the path so far of the player;
 		if N is greater than 1: 
 			say "[path-walked so far][paragraph break]";
 		otherwise:
-			clear the path-walked for the player;  
+			clear the path-walked for the player;
 		now approach-destination is Samuel Johnson Hall;
 	say "There are a couple of All-Purpose Officers standing not-that-inconspicuously around campus. I still think we could walk around in there if we wanted to, but you aren't all that keen. And I guess it is possible that they're looking for students associated with the protests today." instead. 
 
@@ -4511,7 +4511,7 @@ After going to University Oval when seeking invite has ended and higgate-arreste
 	if N is greater than 1: 
 		say "[path-walked so far][paragraph break]";
 	otherwise:
-		clear the path-walked for the player;  
+		clear the path-walked for the player;
 	now approach-destination is Samuel Johnson Hall. [Tricks the approaching verb into stopping here even if you're trying to reach someplace really far away.]
 	[pause the game. ]
 
@@ -4920,14 +4920,14 @@ When Landing ends:
 		otherwise if the item is long:
 			now the item is in Sunning Deck;
 		otherwise if the secret-plans proffer the item:
-			now the item is on the built-in table; 
+			now the item is on the built-in table;
 		otherwise if the item is essential:
 			now the item is in Brock's Stateroom;
 		otherwise if the item is some pots or the item is a pot: 
 			now the item is on the galley stove;
 		otherwise:
 			let the target be a random drawer which is part of your bed;
-			now the item is in the target; 
+			now the item is in the target;
 	now every thing is not marked for listing;
 	now every thing is not essential;
 	now the island is nowhere;
@@ -4963,16 +4963,16 @@ My father has been promoted, apparently, to something called the Provisional Com
 	
 [Before reading a command when Landing has happened:
 	if Brock is enclosed by the location and Slango is enclosed by the location:
-		now addressing everyone is true; 
+		now addressing everyone is true;
 	otherwise:
-		now addressing everyone is false; ]
+		now addressing everyone is false;]
 		
 To say dreams:
 	say "In the rocking boat, with the sound of the motor beneath us, you dream[paragraph break]";
 	say "of a ceremony on a clifftop with our two families seated looking on, and us in a long white dress, carrying a bouquet of scrabble tiles, walking down an aisle alone to be formally unified with ourself[paragraph break]";
 	if Brock recollects Brock-smoochies:
-		say "of Brock painting the letter A between your breasts while you alternately laugh and tell him off for not using a seriffed letter form[paragraph break]";   
-	say "of wearing a suit and meeting with some very rich men to talk about how to bring my language to Africa, and Brock giving us advice about how to handle them[paragraph break]"; 
+		say "of Brock painting the letter A between your breasts while you alternately laugh and tell him off for not using a seriffed letter form[paragraph break]";
+	say "of wearing a suit and meeting with some very rich men to talk about how to bring my language to Africa, and Brock giving us advice about how to handle them[paragraph break]";
 	say "of gathering all the indigenous languages, all the little dying languages, all the languages shoved aside because they lack linguistic efficacy, into a firefly bottle, where their letterforms flicker desperately[paragraph break]".
 
 	
@@ -5030,15 +5030,15 @@ When Farewell ends:
 		if the story viewpoint is first person plural or the story viewpoint is first person singular: [TODO: Check this]
 			say "[betrayed-outcome]";
 		otherwise:
-			say "[unbetrayed-outcome]"; 
+			say "[unbetrayed-outcome]";
 	else:
-	   	say "[no-atlantida-outcome]";  
+		say "[no-atlantida-outcome]";
 	if the new church is not visited:
 		record "Priscilla Parsons award for winning the game without ever entering the church" as an achievement;
 	if hardness is true:
 		record "Andra award for completing the game in hard mode" as an achievement;
 	else:
-		record "Alex Rosehip award for completing the game in easy mode" as an achievement;  
+		record "Alex Rosehip award for completing the game in easy mode" as an achievement;
 	end the story finally saying "The End";
 
 
@@ -5208,7 +5208,7 @@ Instead of setting the code-lock to "[code]":
 Instead of setting the code-lock to something:
 	if the temporary barrier is unlocked:
 		say "We set the wheels of [the code-lock] to [the topic understood].[paragraph break]Click! The barrier door locks.";
-		now the temporary barrier is locked; 
+		now the temporary barrier is locked;
 	otherwise:
 		let N be "[the topic understood]";
 		if N exactly matches the regular expression "\d*":
@@ -5454,7 +5454,7 @@ A first instructional rule:
 
 An instructional rule (this is the teach examining thoroughness rule):
 	if the teach examining thoroughness rule is listed in the completed instruction list:
-		make no decision; 
+		make no decision;
 	if the location is not Sigil Street:
 		make no decision;
 	if we have examined the clothing shops:
@@ -5471,11 +5471,11 @@ Carry out examining the clothing shops:
 	
 An instructional rule (this is the teach examining super thoroughness rule):
 	if the teach examining super thoroughness rule is listed in the completed instruction list:
-		make no decision; 
+		make no decision;
 	if the mourning dress is not enclosed by location:
-		make no decision; 
+		make no decision;
 	if we have examined the mourning dress:
-		make no decision; 
+		make no decision;
 	say "[first custom style]Sometimes the things we examine have parts that we might also want to look at. That mourning dress, for instance[one of][or]. Try LOOK AT MOURNING DRESS or just L MOURNING DRESS[stopping].[roman type]";
 	now the expected action is the action of examining the mourning dress;
 	now the held rule is the teach examining super thoroughness rule;
@@ -5498,7 +5498,7 @@ Carry out examining the letter-remover:
 	
 An instructional rule (this is the teach setting rule): 
 	if the teach setting rule is listed in the completed instruction list:
-		make no decision;   
+		make no decision;
 	let N be "[the letter-remover]";
 	say "[first custom style]It can be set to any letter we choose, hm? That sounds like a hint. Try SET [N in upper case] TO U.[roman type]";
 	now the expected action is the action of tuning the letter-remover to "u";
@@ -5510,9 +5510,9 @@ Carry out tuning the letter-remover to something:
 
 An instructional rule (this is the teach waving rule): 
 	if the teach inventory rule is not listed in the completed instruction list:
-		make no decision; 
+		make no decision;
 	if the teach waving rule is listed in the completed instruction list:
-		make no decision; 
+		make no decision;
 	if the mourning dress is not enclosed by location:
 		make no decision;
 	let N be "[the letter-remover]";
@@ -5623,7 +5623,7 @@ An instructional rule (this is the teach locked doors rule):
 	if player consents:
 		say "[first custom style]Good luck![roman type]";
 		add the teach locked doors rule to the completed instruction list, if absent;
-		add the fix codex rule to the completed instruction list, if absent; 
+		add the fix codex rule to the completed instruction list, if absent;
 		add the unlock barrier rule to the completed instruction list, if absent;
 	otherwise:
 		say "[first custom style]Notice that the door needs a CODE, and we can also see a CODEX. Maybe we should turn one of those into the other.[roman type]";
@@ -5645,7 +5645,7 @@ Carry out waving the letter-remover at something creating the code:
 	
 An instructional rule (this is the unlock barrier rule):
 	if the unlock barrier rule is listed in the completed instruction list:
-		make no decision; 
+		make no decision;
 	if the temporary barrier is not in location:
 		make no decision;
 	if the temporary barrier is not locked:
@@ -5658,7 +5658,7 @@ Check setting the code-lock to "305":
 	
 An instructional rule (this is the open barrier rule):
 	if the open barrier rule is listed in the completed instruction list:
-		make no decision; 
+		make no decision;
 	if the temporary barrier is not in location:
 		make no decision;
 	if the temporary barrier is locked:
@@ -5674,7 +5674,7 @@ Carry out opening the temporary barrier:
 
 An instructional rule (this is the teach distance movement rule):
 	if the teach distance movement rule is listed in the completed instruction list:
-		make no decision; 
+		make no decision;
 	if at least four rooms are visited:
 		make no decision;
 	say "[first custom style]Navigating with compass directions works, but we can also type GO TO... to travel to a named place. GO TO BACK ALLEY will take us back where we started, for instance.[roman type]";
@@ -5792,14 +5792,14 @@ She is too stupid — as a constructed person — to put up much resistance when
 		
 [And now we need to special-case these, because otherwise they will fall on the ground. In general we want letter-conversion to move things that are part of other things, but here it's funnier and also more persuasive if the changed items stay part of the fountain.] 
 To gel-convert (item - hoses): 
-	now everything which proffers the item is part of the marble fountain;  
+	now everything which proffers the item is part of the marble fountain;
 	now the item is in the repository;
 	[play the sound of gel splort;] 
 	say "[The item] [become] [a list of things which proffer the item], redecorating the fountain.";
 	repeat with secondary running through things which proffer the item:
 		abide by the dangerous construction rules for the secondary.
 To gel-convert (item - hoe): 
-	now everything which proffers the item is part of the marble fountain; 
+	now everything which proffers the item is part of the marble fountain;
 	now the item is in the repository;
 	[play the sound of gel splort;] 
 	say "[The item] [become] [a list of things which proffer the item], redecorating the fountain.";
@@ -5852,7 +5852,7 @@ After deciding the scope of the player when the location is in Open-Air:
 
 Rule for reaching inside a room: 
 	if the person reaching is the player:
-		say "[We] can only look from this distance."; 
+		say "[We] can only look from this distance.";
 	deny access.
 	
 The water is in the fountain. The water is fluid and scenery. 
@@ -5982,7 +5982,7 @@ To say balance contents:
 		if the left pan is empty, say "Both pans are empty. ";
 		otherwise say "The right pan is empty and the left contains [a list of things *in the left pan]. ";
 	otherwise if the left pan is empty;
-		say "The left pan is empty and the right contains [a list of things *in the right pan]. "; 
+		say "The left pan is empty and the right contains [a list of things *in the right pan]. ";
 	otherwise;
 		say "On the right pan [is-are a list of things *in the right pan] and on the left [a list of things *in the left pan]. ";
 	end if.
@@ -21003,7 +21003,7 @@ Every turn:
 			
 Definition: a person is contained:
 	if it is in a container which is not the repository:
-		yes; 
+		yes;
 	if it is on a supporter which is not in the repository:
 		yes;
 	no.
@@ -21036,7 +21036,7 @@ Section 2 - Animal Following
 	now pursuing-state is false.]
 
 Carry out entering a vehicle:
-	now pursuing-state is true; 
+	now pursuing-state is true;
 	repeat with traveler running through fake people in the location:
 		try the traveler entering the noun;
 	now pursuing-state is false.
@@ -21090,7 +21090,7 @@ To report followers:
 			if group is the incoming-list:
 				say "[epithet entry]";
 		say ".";
-		truncate the incoming-list to 0 entries; 
+		truncate the incoming-list to 0 entries;
 	continue the action. 
 	
 After describing path of the player:
@@ -21151,7 +21151,7 @@ To say holiday closures:
 			say "'[awkward no]. ";
 			say "[one of]A lot of[or]Most[or]Many[or]Lots of[at random]";
 			say "[one of] things[or] places[at random] ";
-			say "[one of]are closed[or]are shut[or]are shut down[or]are closed up[or]aren't open[or]let the employees go home[as decreasingly likely outcomes]"; 
+			say "[one of]are closed[or]are shut[or]are shut down[or]are closed up[or]aren't open[or]let the employees go home[as decreasingly likely outcomes]";
 			say ".'[no line break]";
 			
 closure-excuse is a beat-opened NPC-directed quip.
@@ -21206,9 +21206,9 @@ Instead of a tourist person discussing a location-questioning quip:
 		try the actor discussing you-seem-confused;
 	else:
 		if the actor knows you-are-tourist:
-			try the actor discussing also-tourist; 
+			try the actor discussing also-tourist;
 		otherwise: 
-			try the actor discussing just-got-here; 
+			try the actor discussing just-got-here;
 		
 you-seem-confused is a weakly-phrased NPC-directed quip.
 	The reply is "'[one of]Look around you,[or]You don't need to go far, do you?[or]What do you call this?[or]Uh… you seem kind of confused,[at random]' [the current interlocutor] says.".
@@ -21517,7 +21517,7 @@ Definition: a thing is disruptive:
 				
 Rule for refusing comment by a person when the noun is a car and the location is not a road:
 	if the current interlocutor is an animal:
-		make no decision; 
+		make no decision;
 	if the current interlocutor exhibits courtesy: 
 		if the current interlocutor knows you-are-feckless:
 			say "'I know it's confusing, but I'm going to have to ask you to remove your car,' says [the current interlocutor] politely[you-are-feckless].";
@@ -21530,7 +21530,7 @@ Rule for refusing comment by a person when the noun is a car and the location is
 				
 Rule for refusing comment by a person when the noun is noisy:
 	if the current interlocutor is an animal:
-		make no decision; 
+		make no decision;
 	if the current interlocutor exhibits courtesy:
 		say "'[awkward confrontation] [the noun] [are] a bit disruptive,' says [the current interlocutor].";
 	otherwise if the current interlocutor knows you-are-possible-customer or the current interlocutor knows you-are-past-customer:
@@ -21541,7 +21541,7 @@ Rule for refusing comment by a person when the noun is noisy:
 				
 Rule for refusing comment by a person when the noun is a contained fluid thing:
 	if the current interlocutor is an animal:
-		make no decision; 
+		make no decision;
 	if the current interlocutor exhibits courtesy:
 		say "'Just be careful not to spill [the noun],' says [the current interlocutor].";
 	otherwise if the current interlocutor knows you-are-possible-customer or the current interlocutor knows you-are-past-customer:
@@ -22272,7 +22272,7 @@ The generic cocktail is a [scenery][Bad!] thing. Understand "drink" as the gener
 
 Carry out the bartender discussing buy the screwdriver:
 	move the screwdriver to the dor-bar-top;
-	homonym-paddle the screwdriver; 
+	homonym-paddle the screwdriver;
 	
 Availability rule for buy the gimlet: 
 	if gimlet is not bartender-carried, it is off-limits;
@@ -22287,7 +22287,7 @@ Understand "buy gimlet" as buy the gimlet.
 
 Carry out the bartender discussing buy the gimlet:
 	move the gimlet to the dor-bar-top;
-	homonym-paddle the gimlet;  
+	homonym-paddle the gimlet;
 
 Availability rule for buy the rusty nail: 
 	if rusty nail is not bartender-carried, it is off-limits;
@@ -22314,7 +22314,7 @@ Definition: a thing is drink-form:
 	if it is screwdriver-drink:
 		yes;
 	if it is gimlet-drink:
-		yes; 
+		yes;
 	if it is rusty-nail-drink:
 		yes;
 	no.
@@ -22466,7 +22466,7 @@ Rule for refusing comment by the bartender:
 		silently try taking the noun;
 	if the player is not holding the noun:
 		say "We're having a little trouble holding it up so that she can see.";
-		rule fails; 
+		rule fails;
 	if the noun is naughty-sounding:
 		say "[The bartender] takes a look and smirks. 
 	
@@ -22486,7 +22486,7 @@ Rule for refusing comment by the bartender:
 		rule succeeds;
 	otherwise if target is the player:
 		say "'I don't think [regarding the noun][those] would turn into anything,' says the bartender. She taps [regarding the noun][them] with the paddle to demonstrate. 'See? No change.'";
-		rule succeeds; 
+		rule succeeds;
 	otherwise if the target is a person:
 		say "'Making live [if the target is not an animal]people[otherwise]critters[end if] is outside my lic[ense], bub.' (Bub? Who says that? But she carries it off.)";
 		rule succeeds;
@@ -22775,7 +22775,7 @@ Availability rule for what the map legend means:
 	if the Slangovia map is not enclosed by the location:
 		it is off-limits;
 	if the fake-legend is not part of the Slangovia map:
-		it is off-limits; 
+		it is off-limits;
 
 what the map legend means is a repeatable unlisted questioning quip.
  It mentions map, legend, fake-legend.
@@ -23443,21 +23443,21 @@ The Vatican snowglobe is a real souvenir that some fellow hostel-dwellers in Rom
 Rule for avoiding talking heads when the current interlocutor is backpacking girl:
 	if the current interlocutor is ready for transition:
 		if the current quip is strongly-phrased and a random chance of 1 in 2 succeeds:
-			say "[beat][paragraph break]"; 
+			say "[beat][paragraph break]";
 	otherwise:
 		say "[beat] [run paragraph on]". 
 		
 Rule for beat-producing when the current interlocutor is the backpacking girl:
 	if the backpacking girl carries the heavy pack:
-		say run paragraph on; 
+		say run paragraph on;
 		try the backpacking girl trying dropping the heavy pack;
 	otherwise if the backpacking girl is in the location:
 		let P be a random free bed in the dormitory room;
-		say run paragraph on; 
+		say run paragraph on;
 		try the backpacking girl trying entering P;
 	otherwise:
 		if a random chance of 1 in 3 succeeds:
-			say run paragraph on; 
+			say run paragraph on;
 			try the backpacking girl trying examining the player;
 		otherwise:
 			say "[one of]She tosses restlessly[or]She turns over[or]She bangs her head against the space where a pillow ought to be[or]She scrubs at her eyes with one hand[at random].[run paragraph on]".
@@ -23967,20 +23967,20 @@ Report the activist saying hello to the player when the activist does not recoll
 Rule for avoiding talking heads when the current interlocutor is activist:
 	if the current interlocutor is ready for transition:
 		if the current quip is strongly-phrased and a random chance of 1 in 2 succeeds:
-			say "[beat][paragraph break]"; 
+			say "[beat][paragraph break]";
 	otherwise:
 		say "[beat] [run paragraph on]". 
 		
 Rule for beat-producing when the current interlocutor is the activist:
 	if the activist carries the yellow sign:
-		say run paragraph on; 
-		try the activist trying dropping the yellow sign; 
+		say run paragraph on;
+		try the activist trying dropping the yellow sign;
 	otherwise:
 		if a random chance of 1 in 3 succeeds:
-			say run paragraph on; 
+			say run paragraph on;
 			try the backpacking girl trying examining the player;
 		otherwise:
-			say "[one of]She touches our arm[or]She channels all her rhetorical power through her eyebrows, which rise towards her hairline at moments of greatest earnestness[at random].[run paragraph on]"; 
+			say "[one of]She touches our arm[or]She channels all her rhetorical power through her eyebrows, which rise towards her hairline at moments of greatest earnestness[at random].[run paragraph on]";
 	
 Report the activist trying dropping the yellow sign:
 	say "She sets down the sign in order to free her hands for more expressive argument.[run paragraph on]" instead.
@@ -24380,7 +24380,7 @@ To make wager choice:
 		choose row N in the Table of Wager Suggestions;
 		follow the selected rule entry;
 		if the rule failed:
-			now the wager-judging rule is the selected rule entry; 
+			now the wager-judging rule is the selected rule entry;
 			now the wager-index is N;
 			now selection is true;
 		otherwise:
@@ -24764,7 +24764,7 @@ To say prepare contraband:
 A first conversation-reply rule when the current interlocutor is Lena:
 	carry out the caching scope activity with Lena;
 	[say "STARTING: ";
-	try checking queue for Lena; ]
+	try checking queue for Lena;]
 	let needs more conversation be true;
 	if Lena is urgently eager-to-speak:
 		let needs more conversation be false;
@@ -24773,7 +24773,7 @@ A first conversation-reply rule when the current interlocutor is Lena:
 			queue needs-disguise as postponed optional; [She'll only say this once.]
 	if (the single ream is undisguised and the single ream is marked-visible) or (the odes-book is undisguised and the odes-book is marked-visible) and Lena recollects needs-disguise:
 		if Lena does not recollect still-needs-pasting or a random chance of 1 in 3 succeeds:
-			queue still-needs-pasting as postponed optional; 
+			queue still-needs-pasting as postponed optional;
 	if needs more conversation is false: 
 		make no decision;
 	[positive feedback before negative...]
@@ -24813,7 +24813,7 @@ A first conversation-reply rule when the current interlocutor is Lena:
 			queue monocle-remark;
 	carry out the caching scope activity with the player.
 	[say "NMC True: ";
-	try checking queue for Lena; ]
+	try checking queue for Lena;]
 	
 A last conversation-reply rule when the current interlocutor is Lena:
 	delete postponed optional conversation for Lena.
@@ -24924,7 +24924,7 @@ Instead of saying no when encourage Lena to contact slango is available:
  It indirectly-follows whether she hath seen slango.
 
 Carry out Lena discussing encourage Lena to contact Slango: 
-	move the as to the location; 
+	move the as to the location;
 	if the player does not carry the as:
 		[follow the considerate player's holdall rule;]
 		move the as to the player;
@@ -25529,7 +25529,7 @@ Report Brock saying hello to the player for the first time:
 	assign "Test T-inserter on making abstracts" at Sensitive Equipment Testing Room;
 	assign "Test T-inserter on situations where it could build more than one thing" at Sensitive Equipment Testing Room;
 	assign "Escape the Bureau" at Abandoned Shore;
-	queue weird-you-look as postponed optional instead; 
+	queue weird-you-look as postponed optional instead;
 
 First conversation-reply rule when the current interlocutor is Brock:
 	[if suggest we get out of here is available:
@@ -25596,7 +25596,7 @@ A Brock-suggestion rule when  "Test T-inserter on making abstracts" is completed
 			rule succeeds.
 
 A Brock-suggestion rule when a noisy thing is enclosed by location:
-	try Brock discussing interference-gelling; 
+	try Brock discussing interference-gelling;
 	rule succeeds.
 	
 A Brock-suggestion rule when a self-object is marked-visible and Brock does not recollect surprisingly-handsome:
@@ -25849,12 +25849,12 @@ Test kpbug with "tutorial off / talk to girl / topics" in dormitory room.
 
 Rule for listing peripheral quips during Brock-argument:
 	if a quip is peripheral:
-		prepare a list of peripheral quips; 
+		prepare a list of peripheral quips;
 		say "[quip-suggestion-phrase][the prepared list delimited in disjunctive style][get-to-work]."
 	
 Rule for listing plausible quips during Brock-argument:
 	if a quip is plausible:
-		prepare a list of plausible quips; 
+		prepare a list of plausible quips;
 		say "[quip-suggestion-phrase][the prepared list delimited in disjunctive style][get-to-work]."
 		
 To say get-to-work:
@@ -26171,7 +26171,7 @@ Instead of kissing father:
 	say "That is a super-creepy idea."
 	
 Rule for beat-producing when the current interlocutor is father:
-	say "[one of]Somewhere down the hall a clock ticks loudly[or]No one speaks for a moment. The silence is almost eerie[or]Footsteps sound far away down the hall, but no one comes this way[or]We all say nothing for a moment[or]We stare at each other, breathing hard[at random].[run paragraph on]"; 
+	say "[one of]Somewhere down the hall a clock ticks loudly[or]No one speaks for a moment. The silence is almost eerie[or]Footsteps sound far away down the hall, but no one comes this way[or]We all say nothing for a moment[or]We stare at each other, breathing hard[at random].[run paragraph on]";
 
 hey-Alex is an NPC-directed quip.
 	The reply is "'Alex.' [paragraph break]I can't help it: I stop and turn. It's too ingrained in me. And it's my father's voice.
@@ -26301,7 +26301,7 @@ Rule for writing a topic sentence about the infertile astrologer:
 	let toy be a random mentionable thing;
 	if toy is:
 		-- the stack of files:
-			say "sifting through [the toy]";  
+			say "sifting through [the toy]";
 		-- the rubber stamp:
 			say "pressing [the toy] into a few documents";
 		-- the inlaid desk:
@@ -26344,7 +26344,7 @@ When Atlantida chat begins:
 	pause the game;
 	set the current interlocutor to atlantida-woman;
 	queue stop-there as immediate obligatory;
-	queue gel-shot as postponed obligatory; 
+	queue gel-shot as postponed obligatory;
 	[queue how fusion happens as postponed obligatory;]
 	queue thing-about-democracy as postponed obligatory;
 	queue summoning-guards as postponed obligatory;
@@ -26822,7 +26822,7 @@ When Portcullis-breaking ends in stupidity:
 	end the story saying "That could have gone better"
 
 When Portcullis-breaking ends in final-threat:
-	say "From the other room, the noises make it sound as though someone is using a metal torch to dismantle the portcullis bar by bar."; 
+	say "From the other room, the noises make it sound as though someone is using a metal torch to dismantle the portcullis bar by bar.";
 
 Guard-capture is a scene. Guard-capture begins when Portcullis-breaking ends in final-threat. Guard-capture ends in capture when the time since Guard-capture began is 5 minutes.
 
@@ -26995,7 +26995,7 @@ Report requesting hint about the word-balance:
 	
 Report requesting hint about the ticket:
 	if the cinema lobby is not visited:
-		say "Most likely this will come in handy somewhere where we need a ticket." instead; 
+		say "Most likely this will come in handy somewhere where we need a ticket." instead;
 	if the Screening Room is visited:
 		[this should not occur, because he should have torn the ticket up]
 		say "We have already gotten past the ticket-taker." instead;
@@ -27044,7 +27044,7 @@ Report requesting hint about the lock:
 	else if the player encloses the tube:
 		say "[one of]The restoration gel might come in handy.[or]Of course, we'd need a larger supply of it.[or]We'd better concentrate on the tube before trying to get past the lock.[stopping]";
 	else:
-		say "[one of]The lock was not originally a lock.[or]Maybe we can restore it to what it was originally.[or]PUT GEL ON LOCK.[stopping]"; 
+		say "[one of]The lock was not originally a lock.[or]Maybe we can restore it to what it was originally.[or]PUT GEL ON LOCK.[stopping]";
 	stop the action.
 		
 	
@@ -27249,7 +27249,7 @@ Understand "car-acquire" as car-acquiring. Car-acquiring is an action out of wor
 Carry out car-acquiring:
 	let auto be a random car in the repository;
 	move auto to the location;
-	now the auto is fueled; 
+	now the auto is fueled;
 	now the auto is operational.
 	
 Report car-acquiring:
@@ -27308,14 +27308,14 @@ Understand "list abstracts" as listing abstracts. Listing Abstracts is an action
 
 Carry out listing abstracts:
 	let N be the list of r-abstract things;
-	sort N; 
+	sort N;
 	say "[N]". 
 
 Understand "list clothes" as listing clothes. Listing clothes is an action out of world.
 
 Carry out listing clothes:
 	let N be the list of wearable things;
-	sort N; 
+	sort N;
 	say "[N]". 
 	
 Understand "list blindfolds" as listing blindfolds. Listing blindfolds is an action out of world.
@@ -27324,7 +27324,7 @@ Definition: a thing is lightweight if the heft of it is 1.
 
 Carry out listing blindfolds:
 	let N be the list of wearable floppy lightweight things;
-	sort N; 
+	sort N;
 	say "[N]". 
  
 
@@ -27332,7 +27332,7 @@ Understand "list longs" as listing longs. Listing longs is an action out of worl
 
 Carry out listing longs:
 	let N be the list of long things;
-	sort N; 
+	sort N;
 	say "[N]".
 	
 After printing the name of something (called N) while listing longs:
@@ -27345,35 +27345,35 @@ Understand "list noisy" as listing noisy.  Listing noisy is an action out of wor
 
 Carry out listing noisy:
 	let N be the list of noisy things;
-	sort N; 
+	sort N;
 	say "[N]".
 	
 Understand "list cat 5" as listing category five.  Listing category five is an action out of world.
 
 Carry out listing category five:
 	let N be the list of edible things which are not vegetables;
-	sort N; 
+	sort N;
 	say "[N]".
 	
 Understand "list liquid" as listing liquid.  Listing liquid is an action out of world.
 
 Carry out listing liquid:
 	let N be the list of fluid things;
-	sort N; 
+	sort N;
 	say "[N]".
 	
 Understand "list edible" as listing edible.  Listing edible is an action out of world.
 
 Carry out listing edible:
 	let N be the list of edible things;
-	sort N; 
+	sort N;
 	say "[N]".
 	
 Understand "list components" as listing components. Listing components is an action out of world.
 
 Carry out listing components:
 	repeat with item running through synthesizable things:
-		say "[item][line break]"; 
+		say "[item][line break]";
 		
 Understand "list plurals" as listing plurals. Listing plurals is an action out of world.
 
@@ -27390,7 +27390,7 @@ Definition: a thing is movable:
 
 Carry out listing plurals:
 	let N be the list of plural-named things;
-	sort N; 
+	sort N;
 	say "[N][line break]".
 	
 Understand "remove plurals" as removing plurals. Removing plurals is an action out of world.
@@ -27469,7 +27469,7 @@ Carry out listing all sizes:
 	say "Size 9 and up (large enough to crush the player on creation):[line break]";
 	repeat with N running from 9 to 20:
 		try listing size N;
-	paragraph break; ]
+	paragraph break;]
 	 
 [ The mentioning relation broke horribly when porting from 6G60 because some quips had locations listed as mentioned. The compiler seemed to accept it, but instead a long list of random things were suddenly mentioned by the quip. Use this to test if it happens again. ]
 
@@ -27517,25 +27517,25 @@ Understand "pound face" as testing facing. Testing facing is an action out of wo
 Carry out testing facing:
 	repeat with item running through rooms:
 		move the player to item;
-		say "[line break] north: "; 
+		say "[line break] north: ";
 		try facing north;
-		say "[line break] northwest: "; 
+		say "[line break] northwest: ";
 		try facing northwest;
-		say "[line break] west: "; 
+		say "[line break] west: ";
 		try facing west;
-		say "[line break] southwest: "; 
+		say "[line break] southwest: ";
 		try facing southwest;
-		say "[line break] south: "; 
+		say "[line break] south: ";
 		try facing south;
-		say "[line break] southeast: "; 
+		say "[line break] southeast: ";
 		try facing southeast;
-		say "[line break] east: "; 
+		say "[line break] east: ";
 		try facing east;
-		say "[line break] northeast: "; 
+		say "[line break] northeast: ";
 		try facing northeast;
-		say "[line break] down: "; 
+		say "[line break] down: ";
 		try facing down;
-		say "[line break] up: "; 
+		say "[line break] up: ";
 		try facing up.
 		
 [Object responses for everything in the repository.]
@@ -27715,7 +27715,7 @@ Other errors discovered this way:
 Understand "pound repository" as testing repository. Testing repository is an action applying to nothing.
 
 Carry out testing repository:
-	move the repository to the location; 
+	move the repository to the location;
 	now the repository is open;
 	now every synthesizable thing is in the repository;
 	now Authenticator is nowhere;
@@ -27729,7 +27729,7 @@ Understand "pound showing" as testing showing. Testing showing is an action appl
 The test entering rule does nothing when the action name part of current action is the object-analyzing action. [because if you get in and out of things, then the animals will follow and the object loop going through the repository will be corrupted]
 
 Carry out testing showing: 
-	move the repository to the location; 
+	move the repository to the location;
 	now the repository is open;
 	now every synthesizable thing is in the repository;
 	now every person is in the location;
