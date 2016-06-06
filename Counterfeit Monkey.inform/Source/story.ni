@@ -1962,9 +1962,10 @@ Carry out examining something:
 	now the noun is examined.
 
 To say y-our:
-	if story viewpoint is first person singular, say "my";
-	if story viewpoint is second person singular, say "your";
-	if story viewpoint is first person plural, say "our"
+	if story viewpoint is:
+		-- first person singular: say "my";
+		-- second person singular: say "your";
+		-- first person plural: say "our"
 
 [Modified tutorial messages to remove paragraph break before prompt, so that they behave the same as the custom ones.]
 The  teach looking rule response (A) is "[first custom style]To get a look around, type LOOK and press return. If you do not want help getting started, type TUTORIAL OFF.[run paragraph on]".
