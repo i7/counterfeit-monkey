@@ -1548,11 +1548,17 @@ Instead of tasting the player:
 Instead of attacking the player:
 	say "Not while I'm in here too."
 	
-Instead of taking the player:
-	say "I don't see how [we] could do that."
-	
+Sanity-check taking the player:
+	say "I don't see how [we] could do that." instead.
+
+Sanity-check inserting the player into something:
+	say "I don't see how [we] could do that." instead.
+
+Sanity-check putting the player on something:
+	say "I don't see how [we] could do that." instead.
+
 [Understand "sorry" as a mistake ("Don't worry about it. I'm not even sure why you're apologizing.").]
-	
+
 [Understand "thank you" as a mistake ("Think nothing of it. We're in this together.") when the current interlocutor is not a person. ]
 
 Understand "lick [something]" as tasting.
