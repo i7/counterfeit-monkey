@@ -21,14 +21,14 @@ Include Scope Caching by Mike Ciul.
 Include Large Game Speedup by Andrew Plotkin.
 
 [Change log:
-	
+
 Release 6:
 
 	Fixes a bug where resurrecting the player (i.e. answering yes to "Shall we suppose [we] didn't?" after dying) would sometimes break the game. Now we perform an undo rather than resume the story.
 	Updates the version of Ultra Undo.
 
 Release 5:
-	
+
 	*** Gameplay changes:
 	Revises the way Waterstone responds to things he's shown, so that it is more clear that he is behind a glass door, and so that he is more obviously reacting to an item of the player's deliberate selection.
 	Removes old requirements about use of disguises in the presence of others. This was just confusing, really.
@@ -2281,13 +2281,13 @@ Before inserting something which is worn into a container:
 
 Sanity-check eating an inedible thing:
 	say "[The noun] wouldn't agree with [us] even if [we] were feeling better." instead.
-	
+
 Sanity-check wearing something which is not wearable:
 	say "[one of]I don't see how you plan to do that, short of tying [the noun] to our head. (Hint: no.)[or][The noun] [aren't] wearable.[at random]" instead.
 
 Sanity-check pushing someone to a direction:
 	say "Only very small children are so easily steered." instead.
-	
+
 Sanity-check pushing a bird to a direction:
 	say "[The noun] would just flutter out of shoving range." instead.
 
