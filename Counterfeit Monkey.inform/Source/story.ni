@@ -2470,10 +2470,13 @@ Section 2 - Loudness
 
 A thing can be noisy or quiet. A thing is usually quiet.
 
-Every turn when the player is not in a car:
+Every turn:
 	if listening:
 		make no decision;
-	call the swift rule on everything in scope;
+	if the player is in a car:
+		now everything enclosed by the holder of the player is marked for listing;
+	otherwise:
+		call the swift rule on everything in scope;
 	let noisemaker be a random noisy marked for listing thing;
 	now everything is not marked for listing;
 	if the noisemaker is something and the noisemaker is not in a closed container:
