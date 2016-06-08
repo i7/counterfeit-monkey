@@ -3009,7 +3009,7 @@ A car is a kind of vehicle. A car is usually transparent. The heft of a car is 7
 	The introduction is "Here is how my mother gets around. She takes a 300 Euro Hermès scarf with an orange border and a pattern of prancing horses. She tosses it in the air. As it falls, she shoots it twice, like a clay pigeon: once to take out the F, the second time for the S. And such a car: buttery leather seats, jaguar lines. If someone asks how she gets such good results, she jokes that it's because of her quality materials.
 
 Suffice it to say that we are not similarly blessed."
-	Understand "toy" or "sub-subcompact" as a car.
+	Understand "toy" or "sub-subcompact" or "door" as a car.
 	The scent-description of a car is "metal parts and oil".
 
 A car can be fueled or unfueled. A car is usually unfueled.
@@ -3047,7 +3047,7 @@ Carry out fueling something with something:
 	say "I deeply fear automotive maintenance, but I can (just) manage to pour in the fuel... and I think that's done it." instead.
 
 Rule for printing the name of a car while opening or closing a car:
-	say "car door". [TODO: Check if this works]
+	say "car door".
 
 Understand "fix [something]" or "mend [something]" or "tune [something]" or "tune up [something]" or "tune [something] up" or "repair [something]" as tuning. Tuning is an action applying to one thing.
 
@@ -3077,7 +3077,7 @@ Understand "park" as exiting when the player is in a car. Understand "park [car]
 
 A car is usually openable. A car is usually closed.
 
-Check entering a closed container (this is the attempt opening on enter rule):
+Check entering a closed container (called the target) when the player is not in the target (this is the attempt opening on enter rule):
 	try opening the noun;
 	if the noun is closed, stop the action.
 
