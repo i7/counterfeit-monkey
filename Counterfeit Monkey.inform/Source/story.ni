@@ -22279,6 +22279,10 @@ buy a drink is an unlisted repeatable purchasing quip.
 The generic cocktail is a [scenery][Bad!] thing. Understand "drink" as the generic cocktail. It is carried by the bartender. [Instead of doing something other than buying with the generic cocktail: say "All the cocktails here are specific recipes."]
 [Having people carry scenery makes the compiler go crazy]
 
+Sanity-check doing something to the generic cocktail:
+	unless the action name part of current action is the buying it from action:
+		say "All the cocktails here are specific recipes." instead.
+
 Carry out the bartender discussing buy the screwdriver:
 	move the screwdriver to the dor-bar-top;
 	homonym-paddle the screwdriver;
