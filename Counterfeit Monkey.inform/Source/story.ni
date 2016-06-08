@@ -8036,14 +8036,14 @@ Some round black metal tables are supporters in the outdoor cafe.
 	Understand "table" as the round black metal tables.
 
 Nexami Engeo is an alert man. Understand "Nex" as Nexami Engeo.
-	The description is "A big man, both tall and stout. He hasn't reached overweight yet, but it looks like a matter of time. He's wearing [a list of worn things *in Nexami]."
+	The description is "A big man, both tall and stout. He hasn't reached overweight yet, but it looks like a matter of time. He's wearing [a list of things *in Nexami]."
 	The introduction is "He's a musician, the front man of engeo. Your gang helped him out with some customs issues because of his unusual name."
 	He wears a rocker jacket and jeans.
 	The description of the rocker jacket is "It's black leather. It might make the wearer look fierce if he didn't have such a round dimpled face."
 	The description of the jeans is "Blue. Ordinary cut. I'm not really an expert in fashion."
 
 Rule for deciding the concealed possessions of Nexami:
-	if the current action is looking:
+	if looking:
 		yes;
 	otherwise:
 		no.
@@ -8346,7 +8346,7 @@ Slango wears clean jeans and a button-up shirt.[ The clean jeans and the button-
 The description of the clean jeans is "He wears them as though they were uniform trousers." The description of the button-up shirt is "White and stainless."
 
 Rule for deciding the concealed possessions of slango:
-	if the current action is looking:
+	if looking:
 		yes;
 	otherwise:
 		no.
@@ -22329,7 +22329,7 @@ Definition: a thing is drink-form:
 	no.
 
 Rule for deciding the concealed possessions of the bartender:
-	if the current action is looking and the particular possession is the generic cocktail:
+	if looking and the particular possession is the generic cocktail:
 		yes;
 	no.
 
@@ -23128,7 +23128,7 @@ Sanity-check giving the hidden-ticket to the ticket-taker:
 	say "[We] don't have a ticket." instead.
 
 Rule for deciding the concealed possessions of the ticket-taker:
-	if the current action is looking:
+	if looking:
 		yes;
 	otherwise:
 		no.
