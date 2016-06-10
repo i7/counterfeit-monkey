@@ -220,7 +220,10 @@ Include Counterfeit Viewpoint and Narrative Voice by Emily Short.
 Include Counterfeit World Model Tweaks by Emily Short.
 Include Counterfeit Features of Created Objects by Emily Short.
 Include Counterfeit Schedule and Time by Emily Short.
-Include Counterfeit Act I Among Sightseers by Emily Short.
+Include Counterfeit Tutorial by Emily Short.
+Include Counterfeit Old Town Celebration by Emily Short.
+Include Counterfeit Roundabout Access by Emily Short.
+Include Counterfeit Affluence by Emily Short.
 Include Counterfeit Act II Among Smugglers by Emily Short.
 Include Counterfeit Act III Among Scholars by Emily Short.
 Include Counterfeit Act IV Among Policemen by Emily Short.
@@ -230,9 +233,15 @@ Include Counterfeit Memories by Emily Short.
 Include Counterfeit Safety Overrides and Disasters by Emily Short.
 Include Counterfeit Hashing by Emily Short.
 Include Counterfeit Tools by Emily Short.
-Include Counterfeit Repository of All Things Possible by Emily Short.
+Include Counterfeit Repository Major Contents by Emily Short.
+Include Counterfeit Repository A-L by Emily Short.
+Include Counterfeit Repository M-R by Emily Short.
+Include Counterfeit Repository S-Z by Emily Short.
 Include Counterfeit Some Rules of Animal Behavior by Emily Short.
-Include Counterfeit Person Behavior by Emily Short.
+Include Counterfeit Universal Groundwork by Emily Short.
+Include Counterfeit Manufactured People by Emily Short.
+Include Counterfeit Open Access Characters by Emily Short.
+Include Counterfeit Scenic Characters by Emily Short.
 Include Counterfeit Hint System by Emily Short.
 Include Counterfeit Tests by Emily Short.]
 
@@ -581,9 +590,9 @@ Include Counterfeit Tools by Emily Short.
 		•	Chapter 13 - The Umlaut Punch
 		•	Chapter 14 - The Catalan punt volat Needle
 		•	Chapter 15 - The Workshop Platform
-		•	Chapter 16 - The Cryptolock aka Vowel Rotator ]
+		•	Chapter 16 - The Cryptolock aka Vowel Rotator 
 		
-•	Volume 5 - The Repository of All Things Possible]
+•	Volume 5 - The Repository of All Things Possible ]
 
 Include Counterfeit Repository Major Contents by Emily Short.
 

@@ -12,3 +12,5 @@
 *.rtf
 *.skein
 *.tiff
+*Settings.plist
+*Inform\ Map.eps
