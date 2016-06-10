@@ -14,9 +14,6 @@ Output text remains copyright Emily Short.]
 
 The release number is 6.
 
-Use scoring.
-Use no deprecated features.
-
 [Change log:
 
 Release 6:
@@ -211,6 +208,9 @@ Release 2:
 
 ]
 
+Use scoring.
+Use no deprecated features.
+
 Include Scope Caching by Mike Ciul.
 Include Large Game Speedup by Andrew Plotkin.
 
@@ -377,18 +377,21 @@ Include Counterfeit Schedule and Time by Emily Short.
 			•	Section 8 - Tracking Down Brock
 			•	Section 9 - Escape
 			•	Section 10 - Goodbye
-			
-•	Volume 2 - The World ]
+					
+•	Volume 2 - The World 
+	•	Book 1 - Act I Among Sightseers ]
 
-Include Counterfeit Act I Among Sightseers by Emily Short.
+Include Counterfeit Tutorial by Emily Short.
 
-[	•	Book 1 - Act I Among Sightseers
-		•	Part 1 - Tutorial
+[		•	Part 1 - Tutorial
 			•	Chapter 1 - Barriers and Spaces
 			•	Chapter 2 - Tutorial Content
 				•	Section 1 - Initial Waking
-				•	Section 2 - Tutorial Mode
-		•	Part 2 - Old Town Celebration
+				•	Section 2 - Tutorial Mode ]
+
+Include Counterfeit Old Town Celebration by Emily Short.
+				
+[		•	Part 2 - Old Town Celebration
 			•	Chapter 1 - Central Park Area
 				•	Section 1 - The Park
 				•	Section 2 - Midway
@@ -398,9 +401,15 @@ Include Counterfeit Act I Among Sightseers by Emily Short.
 				•	Section 1 - Cinema
 				•	Section 2 - Staircase
 				•	Section 3 - The Hostel
-				•	Section 4 - The New Church
-		•	Part 3 - Roundabout Access
-		•	Part 4 - Affluence
+				•	Section 4 - The New Church ]
+
+Include Counterfeit Roundabout Access by Emily Short.
+
+[		•	Part 3 - Roundabout Access ]
+
+Include Counterfeit Affluence by Emily Short.
+
+[		•	Part 4 - Affluence
 			•	Chapter 1 - City Walls
 				•	Section 1 - Old City Walls
 				•	Section 2 - The Turret
@@ -574,30 +583,40 @@ Include Counterfeit Tools by Emily Short.
 		•	Chapter 15 - The Workshop Platform
 		•	Chapter 16 - The Cryptolock aka Vowel Rotator ]
 		
-Include Counterfeit Repository of All Things Possible by Emily Short.
-		
-[•	Volume 5 - The Repository of All Things Possible
-	•	Chapter 1 - Major Contents
+•	Volume 5 - The Repository of All Things Possible]
+
+Include Counterfeit Repository Major Contents by Emily Short.
+
+[	•	Chapter 1 - Major Contents
 		•	Section 1 - The Repository Defined
 		•	Section 2 - Kinds of Thing
 		•	Section 3 - Individual Items Broken Down By Product
-		•	Section 4 - Composite Synthesized Objects
-	•	Chapter 2 - Content Details By Alphabet
-		•	Section 1 - A
+		•	Section 4 - Composite Synthesized Objects 
+	•	Chapter 2 - Content Details By Alphabet ]
+
+Include Counterfeit Repository A-L by Emily Short.
+
+[		•	Section 1 - A
 		•	Section 2 - B
 		•	Section 3 - C
 		•	Section 4 - D
 		•	Section 5 - E
 		•	Section 6 - F through H
-		•	Section 7 - I through L
-		•	Section 8 - M through 0
+		•	Section 7 - I through L ]
+
+Include Counterfeit Repository M-R by Emily Short.
+		
+[		•	Section 8 - M through 0
 		•	Section 9 - Pa
 		•	Section 10 - Pe
 		•	Section 11 - Pf through Pn
 		•	Section 12 - Power Cord
 		•	Section 13 - Pr - Pz
-		•	Section 14 - Q through R
-		•	Section 15 - S
+		•	Section 14 - Q through R ]
+
+Include Counterfeit Repository S-Z by Emily Short.
+
+[		•	Section 15 - S
 		•	Section 16 - Tale
 		•	Section 17 - The rest of T
 		•	Section 18 - U through Z

@@ -20,6 +20,8 @@
 	<dict>
 		<key>IFSettingInfix</key>
 		<false/>
+		<key>IFSettingTestingTabHelpShown</key>
+		<true/>
 	</dict>
 	<key>IFOutputSettings</key>
 	<dict>
