@@ -627,24 +627,30 @@ Include Counterfeit Some Rules of Animal Behavior by Emily Short.
 
 [	•	Book 1 - Some Rules of Animal Behavior
 		•	Section 1 - Lifting Animals
-		•	Section 2 - Animal Following ]
-		
-Include Counterfeit Person Behavior by Emily Short.
+		•	Section 2 - Animal Following
+	•	Book 2 - Person Behavior ]
 
-[	•	Book 2 - Person Behavior
-		•	Part 1 - Universal Groundwork
+Include Counterfeit Universal Groundwork by Emily Short.
+
+[		•	Part 1 - Universal Groundwork
 			•	Section 1 - Asking Directions
 			•	Section 2 - Showing Off Essentials
 			•	Section 3 - Responses to demonstrations that aren't interesting
 			•	Section 4 - Commentary on NPC Possessions
-		•	Part 2 - Individual Conversation
-			•	Chapter 1 - Manufactured People
+		•	Part 2 - Individual Conversation ]
+
+Include Counterfeit Manufactured People by Emily Short.
+
+[			•	Chapter 1 - Manufactured People
 				•	Section 1 - The Mechanic
 				•	Section 2 - The Bard
 				•	Section 3 - Picard
 				•	Section 4 - The Pict
-				•	Section 5 - The cad
-			•	Chapter 2 - Open Access Characters
+				•	Section 5 - The cad ]
+
+Include Counterfeit Open Access Characters by Emily Short.
+
+[			•	Chapter 2 - Open Access Characters
 				•	Section 1 - The Farmer
 				•	Section 2 - The Babel Clerk
 				•	Section 3 - The Bartender
@@ -654,8 +660,11 @@ Include Counterfeit Person Behavior by Emily Short.
 				•	Section 7 - The Desk Attendant
 				•	Section 8 - Backpacking Girl
 				•	Section 9 - Gift Shop Volunteer
-				•	Section 10 - The Barker
-			•	Chapter 3 - Scenic Characters
+				•	Section 10 - The Barker ]
+
+Include Counterfeit Scenic Characters by Emily Short.
+
+[			•	Chapter 3 - Scenic Characters
 				•	Section 1 - The Activist
 				•	Section 2 - The Barman
 				•	Section 3 - Slango
@@ -693,5 +702,4 @@ Include Counterfeit Tests by Emily Short.
 		•	Section 2 - Listwriters
 		•	Section 3 - Verifying Implementation Depth
 		•	Section 4 - Construction Tests
-		•	Section 5 - Ultratest
-]
+		•	Section 5 - Ultratest ]
