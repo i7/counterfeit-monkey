@@ -2798,7 +2798,10 @@ Instead of going nowhere when the noun is fronted by a facade (called blockage) 
 	carry out the listing exits activity.
 
 Instead of going nowhere when the noun is not fronted by a facade in the location:
-	try facing the noun;
+	if the noun is up:
+		say "There is no way up from here.[paragraph break]";
+	otherwise:
+		try facing the noun;
 	carry out the listing exits activity.
 
 A down-staircase is a kind of facade. Understand "step" or "steps" or "stairs" or "stairwell" or "staircase" as a down-staircase. A down-staircase is usually scenery.
