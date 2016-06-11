@@ -2799,7 +2799,7 @@ Instead of going nowhere when the noun is fronted by a facade (called blockage) 
 
 Instead of going nowhere when the noun is not fronted by a facade in the location:
 	if the noun is up:
-		say "There is no way up from here.[paragraph break]";
+		say "There is no way up.[paragraph break]";
 	otherwise:
 		try facing the noun;
 	carry out the listing exits activity.
