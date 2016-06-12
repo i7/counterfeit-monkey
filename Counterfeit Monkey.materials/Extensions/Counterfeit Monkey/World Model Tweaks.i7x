@@ -2,8 +2,8 @@ World Model Tweaks by Counterfeit Monkey begins here.
 
 Use authorial modesty.
 
-Book 4 - Default World Model Tweaks
 
+Book 4 - Default World Model Tweaks
 
 Part 1 - Parsing and Verb Handling
 

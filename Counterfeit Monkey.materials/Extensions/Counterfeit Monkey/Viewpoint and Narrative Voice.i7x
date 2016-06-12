@@ -2,6 +2,7 @@ Viewpoint and Narrative Voice by Counterfeit Monkey begins here.
 
 Use authorial modesty.
 
+
 Book 3 - Viewpoint and Narrative Voice
 
 Include Locksmith by Emily Short. Use sequential action. Use full-length room descriptions.
@@ -178,5 +179,6 @@ Thinking about is an action applying to one visible thing.
 Carry out thinking about:
 	introduce the noun;
 	say paragraph break.
+
 
 Viewpoint and Narrative Voice ends here.

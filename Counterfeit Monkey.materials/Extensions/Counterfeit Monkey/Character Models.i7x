@@ -2,6 +2,7 @@ Character Models by Counterfeit Monkey begins here.
 
 Use authorial modesty.
 
+
 Book 2 - Character Models
 
 Section 1 - Some activities on Oneself
@@ -412,5 +413,6 @@ Rule for refusing to attack someone:
 		say "[one of]What? No! Wow. What kind of person are you that that is even something that you think of trying? Nah, don't answer.[or][we][']ve covered that: it's no.[stopping]";
 	otherwise:
 		say "I don't solve my problems with violence. You can do what you like when we're separated again." instead.
+
 
 Character Models ends here.

@@ -2,6 +2,7 @@ Features of Created Objects by Counterfeit Monkey begins here.
 
 Use authorial modesty.
 
+
 Book 4 - Features of Created Objects
 
 Section 1 - Legality
@@ -210,5 +211,6 @@ Check cutting something with the jigsaw when the jigsaw is not switched on:
 	try switching on the jigsaw;
 	if the jigsaw is not switched on:
 		say "It's impossible to use a jigsaw that is not turned on." instead.
+
 
 Features of Created Objects ends here.

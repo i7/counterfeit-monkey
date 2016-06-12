@@ -757,4 +757,5 @@ When play ends when the story has not ended finally:
 			resume the story;
 		try looking.
 
+
 Presentation Details ends here.

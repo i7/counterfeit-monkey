@@ -2,6 +2,7 @@ Safety Overrides and Disasters by Counterfeit Monkey begins here.
 
 Use authorial modesty.
 
+
 Book 1 - Safety Overrides and Disasters
 
 Section 1 - Dangerous Destruction
@@ -100,5 +101,6 @@ Test mis2 with "load gun / autoupgrade / shoot pea" [holding the anagramming gun
 Test mis3 with "load gun / autoupgrade / wave b-remover at ball / shoot lap" [holding the anagramming gun and the letter-remover and the ball and the lap and the pea and the bullets].
 
 Test mis4 with "z / wave y-remover at army" [in the Dormitory holding the letter-remover and the army.]
+
 
 Safety Overrides and Disasters ends here.

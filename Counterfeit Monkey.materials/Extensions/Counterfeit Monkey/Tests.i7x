@@ -837,5 +837,6 @@ Carry out hashtesting:
 			say "Hashtest for [item] passed![line break]";
 		else:
 			say "ERROR:Hashtest for [item] FAILED![line break]Hash was [hash code of item], should have been [H]![line break]".
-			
+
+
 Tests ends here.

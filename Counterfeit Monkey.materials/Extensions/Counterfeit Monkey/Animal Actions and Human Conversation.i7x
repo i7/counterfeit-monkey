@@ -5886,5 +5886,6 @@ When Guard-capture ends in capture:
 
 [We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
 	end the story saying "That could have gone better"
-			
+
+		
 Animal Actions and Human Conversation ends here.
