@@ -1,4 +1,4 @@
-Counterfeit Character Models by Emily Short begins here.
+Character Models by Counterfeit Monkey begins here.
 
 Use authorial modesty.
 
@@ -413,8 +413,4 @@ Rule for refusing to attack someone:
 	otherwise:
 		say "I don't solve my problems with violence. You can do what you like when we're separated again." instead.
 
-
-
-
-
-Counterfeit Character Models ends here.
+Character Models ends here.

@@ -1,6 +1,7 @@
-Counterfeit Hashing by Emily Short begins here.
+Hashing by Counterfeit Monkey begins here.
 
 Use authorial modesty.
+
 
 Book 2 - Hashing
 
@@ -118,4 +119,4 @@ character (a text)	hash (a number)
 "z"	2
 
 
-Counterfeit Hashing ends here.
+Hashing ends here.

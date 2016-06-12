@@ -1,6 +1,7 @@
-Counterfeit Tests by Emily Short begins here.
+Tests by Counterfeit Monkey begins here.
 
 Use authorial modesty.
+
 
 Volume 8 - Tests
 
@@ -837,4 +838,4 @@ Carry out hashtesting:
 		else:
 			say "ERROR:Hashtest for [item] FAILED![line break]Hash was [hash code of item], should have been [H]![line break]".
 			
-Counterfeit Tests ends here.
+Tests ends here.

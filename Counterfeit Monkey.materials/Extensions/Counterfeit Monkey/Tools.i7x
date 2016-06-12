@@ -1,6 +1,7 @@
-Counterfeit Tools by Emily Short begins here.
+Tools by Counterfeit Monkey begins here.
 
 Use authorial modesty.
+
 
 Book 3 - Tools
 
@@ -2015,4 +2016,5 @@ To decide what text is the back hard encryption of (X - a thing):
 	let goal text be "[goal text in lower case]";
 	decide on goal text.
 
-Counterfeit Tools ends here.
+
+Tools ends here.

@@ -1,4 +1,4 @@
-Counterfeit Viewpoint and Narrative Voice by Emily Short begins here.
+Viewpoint and Narrative Voice by Counterfeit Monkey begins here.
 
 Use authorial modesty.
 
@@ -179,4 +179,4 @@ Carry out thinking about:
 	introduce the noun;
 	say paragraph break.
 
-Counterfeit Viewpoint and Narrative Voice ends here.
+Viewpoint and Narrative Voice ends here.

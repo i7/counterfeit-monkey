@@ -1,6 +1,7 @@
-Counterfeit Act II Among Smugglers by Emily Short begins here.
+Act II Among Smugglers by Counterfeit Monkey begins here.
 
 Use authorial modesty.
+
 
 Book 2 - Act II Among Smugglers
 
@@ -1314,4 +1315,5 @@ Test caughtinact with "get out / put paste on car / get out / z / get rifle / z 
 
 [Often the concept -- of the self, of the democracy, of the other -- stands in the way of the process that would lead to understanding, effective compromise, and the construction of an integrated identity; a process that is never easy.]
 
-Counterfeit Act II Among Smugglers ends here.
+
+Act II Among Smugglers ends here.

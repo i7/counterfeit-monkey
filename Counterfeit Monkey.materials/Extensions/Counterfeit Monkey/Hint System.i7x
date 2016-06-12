@@ -1,6 +1,7 @@
-Counterfeit Hint System by Emily Short begins here.
+Hint System by Counterfeit Monkey begins here.
 
 Use authorial modesty.
+
 
 Volume 7 - Hint System
 
@@ -234,4 +235,4 @@ Report requesting hint about the anagramming gun:
 Report requesting hint about the cryptolock:
 	say "[one of]This looks a little like the spinner lock we saw back in Roget's Close all that while back[or]We need to put something into the bucket that can successfully be transformed, using the rules of this lock[or]Apparently, the bucket rotates vowels forward: A to E, E to I and so on[or]Anything we possess that could make that transformation would do[stopping]."
 
-Counterfeit Hint System ends here.
+Hint System ends here.

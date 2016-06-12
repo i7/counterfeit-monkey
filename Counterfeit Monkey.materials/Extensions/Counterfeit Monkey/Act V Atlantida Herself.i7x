@@ -1,4 +1,4 @@
-Counterfeit Act V Atlantida Herself by Emily Short begins here.
+Act V Atlantida Herself by Counterfeit Monkey begins here.
 
 Use authorial modesty.
 
@@ -1392,4 +1392,5 @@ The island is a distant backdrop. It screens south. It is in Open Sea and Sunnin
 
 The cathedral-view is a distant backdrop. The printed name is "cathedral of Palma". Understand "cathedral" or "palma" or "of palma" or "yachts" or "mallorca" as cathedral-view. It screens port. The description is "The cathedral of Palma stands over the water and any number of waiting yachts. It is the first place I've ever seen outside the island of Atlantis [--] that wasn't a picture or a movie, of course. It looks overdone and a bit dirty and also like the only solid thing in view."
 
-Counterfeit Act V Atlantida Herself ends here.
+
+Act V Atlantida Herself ends here.

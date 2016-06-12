@@ -1,4 +1,4 @@
-Counterfeit Features of Created Objects by Emily Short begins here.
+Features of Created Objects by Counterfeit Monkey begins here.
 
 Use authorial modesty.
 
@@ -211,7 +211,4 @@ Check cutting something with the jigsaw when the jigsaw is not switched on:
 	if the jigsaw is not switched on:
 		say "It's impossible to use a jigsaw that is not turned on." instead.
 
-
-
-
-Counterfeit Features of Created Objects ends here.
+Features of Created Objects ends here.

@@ -1,4 +1,4 @@
-Counterfeit Repository Major Contents by Emily Short begins here.
+Repository Major Contents by Counterfeit Monkey begins here.
 
 Use authorial modesty.
 
@@ -1074,4 +1074,4 @@ A stopwatch, a watchband and a watchword are in the repository.
 A wordage is in the repository.
 
 
-Counterfeit Repository Major Contents ends here.
+Repository Major Contents ends here.

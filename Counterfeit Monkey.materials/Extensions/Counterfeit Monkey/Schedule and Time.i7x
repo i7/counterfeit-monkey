@@ -1,6 +1,7 @@
-Counterfeit Schedule and Time by Emily Short begins here.
+Schedule and Time by Counterfeit Monkey begins here.
 
 Use authorial modesty.
+
 
 Book 5 - Schedule and Time
 
@@ -791,9 +792,4 @@ Brock studies us for a moment more. Then he reaches into his pocket and pulls ou
 'Want one? They used them as packing material in my shipping box. We've got lots.'"
 
 
-
-
-
-Volume 2 - The World
-
-Counterfeit Schedule and Time ends here.
+Schedule and Time ends here.

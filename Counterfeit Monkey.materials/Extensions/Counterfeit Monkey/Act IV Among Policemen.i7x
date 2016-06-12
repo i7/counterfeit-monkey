@@ -1,6 +1,7 @@
-Counterfeit Act IV Among Policemen by Emily Short begins here.
+Act IV Among Policemen by Counterfeit Monkey begins here.
 
 Use authorial modesty.
+
 
 Book 4 - Act IV Among Policemen
 
@@ -845,5 +846,4 @@ Instead of listening to cold storage when Cold Dilemma has happened and Cold Dil
 	say "All quiet out there now."
 
 
-
-Counterfeit Act IV Among Policemen ends here.
+Act IV Among Policemen ends here.

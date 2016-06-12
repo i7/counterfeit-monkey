@@ -1,6 +1,7 @@
-Counterfeit Memories by Emily Short begins here.
+Memories by Counterfeit Monkey begins here.
 
 Use authorial modesty.
+
 
 Volume 3 - Memories
 
@@ -301,4 +302,5 @@ Carry out remembering tiles-memory:
 
 More than he real[ize]d, in fact, now that you've added my tiles to yours."
 
-Counterfeit Memories ends here.
+
+Memories ends here.

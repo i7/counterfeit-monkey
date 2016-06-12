@@ -1,6 +1,7 @@
-Counterfeit Act III Among Scholars by Emily Short begins here.
+Act III Among Scholars by Counterfeit Monkey begins here.
 
 Use authorial modesty.
+
 
 Book 3 - Act III Among Scholars
 
@@ -1791,4 +1792,5 @@ Instead of taking the course advertisement, say "It has been stuck to the wall w
 
 The Campus is a region. University Oval, [Grimy Staircase 1, Grimy Staircase 2,] Samuel Johnson Hall, Higgate's Office, Waterstone's Office, the Language Studies Department Office, Samuel Johnson Basement, Graduate Student Office, Lecture Hall 1, Lecture Hall 2, Brown's Lab, Rectification Room, and the Language Studies Seminar Room are in Campus.
 
-Counterfeit Act III Among Scholars ends here.
+
+Act III Among Scholars ends here.

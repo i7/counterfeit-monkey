@@ -1,4 +1,4 @@
-Counterfeit World Model Tweaks by Emily Short begins here.
+World Model Tweaks by Counterfeit Monkey begins here.
 
 Use authorial modesty.
 
@@ -1999,4 +1999,4 @@ Sanity-check attacking something which is not attackable with an edged thing:
 Understand "swing [something preferably held] at [something]" as attacking it with (with nouns reversed).
 
 
-Counterfeit World Model Tweaks ends here.
+World Model Tweaks ends here.

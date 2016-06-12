@@ -1,4 +1,4 @@
-Counterfeit Safety Overrides and Disasters by Emily Short begins here.
+Safety Overrides and Disasters by Counterfeit Monkey begins here.
 
 Use authorial modesty.
 
@@ -101,4 +101,4 @@ Test mis3 with "load gun / autoupgrade / wave b-remover at ball / shoot lap" [ho
 
 Test mis4 with "z / wave y-remover at army" [in the Dormitory holding the letter-remover and the army.]
 
-Counterfeit Safety Overrides and Disasters ends here.
+Safety Overrides and Disasters ends here.

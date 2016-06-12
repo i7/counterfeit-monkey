@@ -1,6 +1,7 @@
-Counterfeit Map Declarations by Emily Short begins here.
+Map Declarations by Counterfeit Monkey begins here.
 
 Use authorial modesty.
+
 
 Book 6 - Map Declarations
 
@@ -240,4 +241,5 @@ The local map of Your Head is the Figure of Your-Head.
 The local map of Slango's Bunk is the Figure of Slango-Bunk.
 The local map of Slango's Head is the Figure of Slango-Head.
 
-Counterfeit Map Declarations ends here.
+
+Map Declarations ends here.
