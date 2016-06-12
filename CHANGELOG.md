@@ -2,13 +2,15 @@
 
 ## Unreleased
 
-## Release 6:
-- Fixes a bug where resurrecting the player (i.e. answering yes to "Shall we suppose [we] didn't?" after dying) would sometimes break the game. Now we perform an undo rather than resume the story.
+## Release 6
+
+- Fixes a bug where resurrecting the player (i.e. answering yes to "Shall we suppose \[we\] didn't?" after dying) would sometimes break the game. Now we perform an undo rather than resume the story.
 - Updates the version of Ultra Undo.
 
-## Release 5:
+## Release 5
 
-### Gameplay changes:
+### Gameplay changes
+
 - Revises the way Waterstone responds to things he's shown, so that it is more clear that he is behind a glass door, and so that he is more obviously reacting to an item of the player's deliberate selection.
 - Removes old requirements about use of disguises in the presence of others. This was just confusing, really.
 - Removes requirement to be empty-handed before rowing, because this is just holding things up at what is otherwise nearly the end of the game, and because some of the messaging about it was actively confusing to some players. But it wasn't a puzzle really anyway.
@@ -19,7 +21,8 @@
 - Fixes a bug whereby the reconstructed Atlantida is less proactive than she was intended to be.
 - Adds an afterlife feature to automatically undo accidental deaths.
 
-### Word repository:
+### Word repository
+
 - Adds CURD, CORD, CUD, COD, HURT, CUT, RILL, TRILL, PISA, PUN, PUNS, PUNT, PUNTS, PUS, TEN, TUN, TAN (extras), NET (extras), STENT, TENT, TENTS, BUSES, BUS, FOAL, LOAF, OAF, CLICK, BULL, DIG, and DIVA to support reversal mode on the bucket.
 - Adds AHI, HOD, OZ, OHIO, and ZOO to support hard reversal mode on the bucket.
 - Adds SHUTTLE homonym.
@@ -53,7 +56,8 @@
 - Adds BOCK as a derivative of BROCK.
 - Takes the coward's way out and changes the FIGURES on the fountain to SCULPTED FIGURES so that they can't plausibly be depluralized in a way that would require varying the fountain description to account for both the state of the figures *and* the state of the horses. The whole HOSE transformation is enough, thanks.
 
-### Parsing:
+### Parsing
+
 - Adds USE GUN ON X syntax for shooting.
 - Fixes bug whereby in certain circumstances FIRE GUN AT X would not be recognized as synonymous with SHOOT.
 - Fixes bug whereby the PLATE could not be referred to by name.
@@ -69,7 +73,8 @@
 - Improves parsing of some conversation options referring to characters by name or pronoun.
 - Fixes bug whereby UNSCREW SCREWS WITH AS gave misleading feedback.
 
-### Clarified descriptions and instructions:
+### Clarified descriptions and instructions
+
 - Corrects a piece of misleading output about cars, which suggested it was possible to park one that had not been started.
 - Improves response to trying to gel yourself after you've learned that you are fused.
 - Slightly rephrases the description of the spinner puzzle in order to make it easier to visualize.
@@ -80,7 +85,8 @@
 - Fixes a bug whereby it is not immediately explained that the pinata is what is blocking you if you use GO TO ROTUNDA while the game is being played.
 - Fixes a bug whereby Brock may appear confused by an abstract created not in the t-inserter, and act as though that counted as solving the puzzle.
 
-### Improved world model:
+### Improved world model
+
 - Improves character dialogue responses when the player asks about the current location.
 - Fixes a loophole that allowed the player to get the attention of the men playing darts even though other code had been written to disallow them from having a conversation. Subsequent behavior was visibly buggy.
 - Fixes a bug that misreported the window in the Private Solarium as closed even when it had been opened.
@@ -105,7 +111,8 @@
 - Adds better responses to trying to pour and fill things (though it generally rejects these attempts, it at least recognizes what the player is attempting).
 - Adds an exception to an overzealous rule that prevented the player from gelling air-like objects (such as a STINK manufactured in the T-inserter).
 
-### Additional content:
+### Additional content
+
 - Addresses the disgraceful fact that Typoland Fun Fair could not be found in the guidebook.
 - Adds "lodgings", public convenience and bus station to the guidebook as well.
 - Adds chap-hop variant to the rap if you're wearing the Britishizing goggles.
@@ -115,7 +122,8 @@
 - Adds a couple of additional features to Brock's laptop, in case you hack in.
 - Adds a special response for looking at your reflection through the monocle.
 
-### Typos and cosmetic output errors:
+### Typos and cosmetic output errors
+
 - Corrects a typo in text about the winding footpath.
 - Corrects a typo in description of fishing reel.
 - Corrects a typo in the synonyms for the shrine object.
@@ -138,7 +146,8 @@
 - Fixes bug whereby answering Alex's initial questions with ANDRA as early as possible avoided the banner being printed. This failure ever to display the Inform affiliation is technically a violation of Inform's license.
 - Fixes a bug whereby the command PUT POT ON PEDESTAL, referring to the yogurt, could hang the parser for ornate and complicated reasons. Rather than really fix this, we just made the YOGURT be YOGURT, not POT OF YOGURT. Because it wasn't worth it. As penance, added a TOY RUG object for the anagramming gun.
 
-## Release 4:
+## Release 4
+
 - Adds CORK (ROCK anagrammed), SAGAS (SAG + AS).
 - Documents HARD MODE officially.
 - Adds a description to the patchy grass in the monument green.
@@ -156,7 +165,8 @@
 - Adds snarky response to trying to make font t-shits, pink t-shits, or various t-shits. (Mournful sigh.)
 - Adds snarky response to trying to remove I from oneself.
 
-## Release 3:
+## Release 3
+
 - Improves appearance of achievement announcements (line breaks, text styling).
 - Sets the ticket-taker pronoun when you first see him, so GIVE TICKET TO HIM doesn't fail.
 - Fixes bad line breaking when listening in the presence of the protesters.
@@ -179,7 +189,8 @@
 - Makes X ME give information about what you're wearing.
 - Improves the response to trying to go north in Crumbling Wall Face.
 
-## Release 2:
+## Release 2
+
 - Fixes letter-tranformation behavior so that the newly constructed object will have its pronouns set properly (so "IT" will apply to the thing just made).
 - Hackily fixes weird bug where, despite the code being evidently correct, "HIGHLIGHT" would activate score notification rather than the highlighting effect.
 - Fixes bad instruction in ABOUT text that misdescribed the LOOK CAREFULLY function, and makes LOOK CLOSELY also work, for good measure.
