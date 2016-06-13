@@ -1,9 +1,0 @@
-#!/bin/sh
-
-# This script will set up git to ignore some files that are actually in the repository
-# It must be run from the top folder of the repository
-
-echo Setting some files so that their changes will be ignored
-git update-index --assume-unchanged ./Counterfeit\ Monkey.inform/Settings.plist
-git update-index --assume-unchanged ./Counterfeit\ Monkey.inform/uuid.txt
-echo Done!
