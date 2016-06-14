@@ -409,10 +409,9 @@ Rule for refusing to kiss a woman:
 Rule for refusing to attack someone:
 	if story viewpoint is second person singular:
 		say "You consider your strength and combat skill and decide that that might not be the most reliable approach.";
-	otherwise if the player's command includes "kill" or the player's command includes "murder":
+	otherwise if the player's command includes "kill/murder":
 		say "[one of]What? No! Wow. What kind of person are you that that is even something that you think of trying? Nah, don't answer.[or][we][']ve covered that: it's no.[stopping]";
 	otherwise:
 		say "I don't solve my problems with violence. You can do what you like when we're separated again." instead.
-
 
 Character Models ends here.
