@@ -191,7 +191,10 @@ To say directions to (destination - a room):
 	if a random chance of 1 in 3 succeeds:
 		say "[personal yes]. ";
 	say "[one of]Perhaps you should try [or]You might want [or]I'd go over to [or]Try [or]The best chance would be [at random]";
-	say "[the destination]";
+	unless the destination is the fleur d'or lobby:
+		say "[the destination]";
+	otherwise:
+		say "the Fleur d'Or";
 	let distance be the number of moves from the location to the destination;
 	let the way be the best route from the location to the destination;
 	if distance is:
@@ -210,7 +213,7 @@ To say directions to (destination - a room):
 		say ". It might be closed, though";
 		if the current interlocutor does not know things-close-today:
 			casually queue closure-excuse;
-	say ".'[run paragraph on]";
+	say ".' [no line break]";
 
 
 Instead of a fake person discussing a quip which does not quip-supply the current interlocutor:
@@ -355,7 +358,7 @@ where there seems hotel is a weakly-phrased location-questioning quip.
 
 where there seems Arbot is a weakly-phrased location-questioning quip.
  The printed name is "where to find Arbot Maps & Antiques". The true-name is "where there seems Arbot".
- Understand "is" or "a" or "Arbot" or "antiques" or "arbots" or "arbot's" or "maps" or "&" as where there seems arbot.  The place-sought is "Arbot Maps & Antiques".
+ Understand "is" or "a" or "Arbot" or "antiques" or "arbots" or "arbot's" or "maps" or "&" as where there seems arbot.  The place-sought is "an antiques store".
  It mentions geography. [, arbot-as-subject]
  It is background-information.
  The correct answer is Arbot Maps & Antiques.
