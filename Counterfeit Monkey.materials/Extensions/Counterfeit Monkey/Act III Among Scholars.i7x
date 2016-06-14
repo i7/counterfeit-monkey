@@ -255,7 +255,7 @@ A multiple action processing rule when the action name part of the current actio
 	otherwise:
 		if the second noun is the bartender:
 			alter the multiple object list to {};
-			say "[We] dare not invade the personal space of [the bartender].";
+			say "[We] dare not invade the personal space of [the bartender]."
 
 Instead of inserting something into the toolkit:
 	say "[The toolkit] is full already."
