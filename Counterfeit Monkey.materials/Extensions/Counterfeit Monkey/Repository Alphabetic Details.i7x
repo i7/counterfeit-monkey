@@ -3479,6 +3479,9 @@ A tab is r-abstract. The description of the tab is "It lists the price of a tast
 
 The heft of the tack is 1. The description of a tack is "The kind of thing used to stick papers to corkboards. It's pointy."
 
+Sanity-check poking the player with the tack:
+	say "That would probably be painful." instead.
+
 Sanity-check poking a person with the tack:
 	say "That would be unkind." instead.
 
