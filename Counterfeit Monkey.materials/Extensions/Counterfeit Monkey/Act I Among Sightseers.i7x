@@ -693,7 +693,7 @@ There's a bang, a last glittering fan of water in the air.[paragraph break]";
 Every turn when the small children can see the ho and the location is Park Center:
 	say "It isn't but a few seconds before a watchful parent notices the ho strutting around and goes to report her.
 
-She is too stupid — as a constructed person — to put up much resistance when an officer shows up to escort her away.";
+She is too stupid [--] as a constructed person [--] to put up much resistance when an officer shows up to escort her away.";
 	now the ho is nowhere.
 
 [And now we need to special-case these, because otherwise they will fall on the ground. In general we want letter-conversion to move things that are part of other things, but here it's funnier and also more persuasive if the changed items stay part of the fountain.]
