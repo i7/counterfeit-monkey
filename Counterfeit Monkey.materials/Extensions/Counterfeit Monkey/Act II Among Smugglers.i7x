@@ -439,7 +439,8 @@ Rule for writing a paragraph about the trap-door when the location is the Crawls
 
 Every turn when the trap-door is open and the trap-door is not wedged by something:
 	now the trap-door is closed;
-	say "The trap-door makes a creaking noise and slams shut again";
+	if the location is the Crawlspace or the location is the Tin Hut:
+		say "The trap-door makes a creaking noise and slams shut again";
 	if the player is in the Crawlspace:
 		say ". I DO NOT LIKE being in the dark in a confined space with potential rats. Sorry, I'm getting us out of here. You can come back later.";
 		wait for any key;
