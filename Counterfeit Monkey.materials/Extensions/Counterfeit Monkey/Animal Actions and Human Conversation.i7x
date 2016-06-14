@@ -4571,7 +4571,9 @@ Before inserting something into the t-inserter when Brock is in the location and
 	say "'[one of]Here, [the target] [are] in your way[or]Let me get that for you[or]Here[or]I've got that[at random].' [run paragraph on]";
 	try Brock taking the target;
 	if Brock is carrying the target:
-		try Brock dropping the target.
+		try Brock dropping the target;
+	otherwise:
+		say "Brock tries to remove [the target] from the T-inserter for you, but fails."
 
 Report Brock taking something:
 	say "Brock fishes [the noun] out of the T-inserter. [run paragraph on]" instead.
