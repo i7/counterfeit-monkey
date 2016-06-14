@@ -693,7 +693,8 @@ There's a bang, a last glittering fan of water in the air.[paragraph break]";
 Every turn when the small children can see the ho and the location is Park Center:
 	say "It isn't but a few seconds before a watchful parent notices the ho strutting around and goes to report her.
 
-She is too stupid — as a constructed person — to put up much resistance when an officer shows up to escort her away.";
+
+She is too stupid [--] as a constructed person [--] to put up much resistance when an officer shows up to escort her away.";
 	now the ho is nowhere.
 
 [And now we need to special-case these, because otherwise they will fall on the ground. In general we want letter-conversion to move things that are part of other things, but here it's funnier and also more persuasive if the changed items stay part of the fountain.]
@@ -1167,7 +1168,7 @@ Instead of going to the Screening Room when the ticket-taker does not know allow
 The Screening Room is west of Cinema Lobby. It is indoors. The description is "[if the player recollects what the movie seems]'Red'[otherwise]Whatever is scheduled for later showing[end if] has not started yet, and is probably not destined to start for some time; at any rate,[unless the project is switched on] the [film screen] is blank and[end if] no audience has yet assembled."
 
 Instead of waiting in the Screening Room:
-	if the reel is in the projector and the projector is switched on:
+	if the reel is in the projector and the projector-switch is switched on:
 		make no decision;
 	say "[one of]A little time passes, but I don't think the movie's likely to start for quite some time.[or][We] haven't got time to wait for the show to begin.[stopping]".
 
@@ -1224,11 +1225,21 @@ The projector is a container in the Projection Booth. It is fixed in place. The 
 
 The projector-switch is a device. The projector-switch is part of the projector. The printed name of the projector-switch is "projector switch". Understand "switch" or "projector switch" as the projector-switch.
 
+Sanity-check showing the reel on the projector:
+	if the reel is in the projector and the projector-switch is switched on:
+		say "[The reel] is running on [the projector] already." instead;
+	if the reel is in the projector:
+		try switching on the projector-switch instead.
+
 Sanity-check switching on the projector:
 	try switching on the projector-switch instead.
 
 Sanity-check switching off the projector:
 	try switching off the projector-switch instead.
+
+Before taking the reel when the reel is in the projector:
+	if the projector-switch is switched on:
+		try switching off the projector-switch.
 
 Report switching on the projector-switch when the reel is not in the projector:
 	say "The light comes on, but nothing plays." instead.
@@ -1313,7 +1324,10 @@ Sanity-check putting the reel on the projector:
 Understand "thread [reel] on/onto [the projector]" as inserting it into.
 Understand "mount [reel] on/onto [the projector]" as inserting it into.
 
-Understand "show [reel] on [the projector]" as showing it on. Showing it on is an action applying to one carried thing and one thing.
+Understand "show [reel] on [the projector]" as showing it on. Showing it on is an action applying to one thing and one thing.
+
+Instead of mounting the reel:
+	try inserting the reel into the projector.
 
 Check showing something which is not the reel on the projector:
 	say "[The noun] [are] not a reel of film." instead.
