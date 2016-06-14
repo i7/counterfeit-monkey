@@ -1633,7 +1633,7 @@ The description of the lock is "[one of]It's curious, now you look at it: it's a
 
 To say lock-name:
 	now the lock is seen;
-	say "[printed name of the lock]"
+	say "[if boldening is true][bold type][end if][printed name of the lock][roman type]"
 
 To say key-refusal for (locked-thing - the lock):
 	say "[lock description][paragraph break]".
