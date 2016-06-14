@@ -151,20 +151,36 @@ A first accessibility rule (this is the go to location rule):
 To decide what object is the touch-goal:
 	(- (untouchable_object) -).
 
-Sanity-check inserting something (called the target) into the target:
+Sanity-check inserting something gel-related (called the target) into the target:
 	[kludge to fix a very minor glitch]
-	if the player's command includes "gel in" or the player's command includes "gel into":
-		if the target is the tub or the target is the tube:
+	if the target is the tub or the target is the tube:
+		if the player's command includes "gel in/into":
 			say "The restoration gel is in [the target] already." instead;
 	otherwise:
-		say "[We] can't put [the target] into [themselves]." instead.
+		continue the action.
+
+Sanity-check inserting something (called the target) into the target:
+	say "[We] can't put [the target] into [themselves]." instead.
 
 Sanity-check inserting something in a container (called the target) into the target:
-	unless the target is the t-inserter:
-		say "[The noun] [are] in [the target] already." instead.
+	say "[The noun] [are] in [the target] already." instead.
+
+
+Sanity-check putting the tube on the tube:
+	if the player's command includes "gel on/onto/tube":
+		say "The gel doesn't restore the contents of things: it changes back items that have been linguistically manipulated." instead;
+	otherwise:
+		continue the action.
+
+Sanity-check putting the tub on the tub:
+	if the player's command includes "gel on/onto/tub":
+		try putting the restoration gel on the tub instead;
+	otherwise:
+		continue the action.
 
 Sanity-check putting something (called the target) on the target:
-	say "[We] can't put [the target] on [themselves]." instead.
+	unless the target is the tube and the player's command includes "gel on/onto":
+		say "[We] can't put [the target] on [themselves]." instead.
 
 Sanity-check putting something (called the source) on a supporter (called the target) when the source is on the target:
 	say "[The source] [are] on [the target] already." instead.
