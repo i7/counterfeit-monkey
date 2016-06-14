@@ -34,6 +34,13 @@ Before reading a command when tutorial mode is true (this is the alternate new p
 	if sp reparse flag is false and identification is not happening:
 		follow the instructional rules.
 
+The new stripping adverbs rule is listed instead of the stripping adverbs rule in the Smarter Parser rulebook.
+
+A smarter parser rule when sp_normal (this is the new stripping adverbs rule):
+	if stripping "\w*ly" is fruitful and the number of words in the reborn command > 1 and the player's command does not include "apply/family":
+		identify error as stripping adverbs rule;
+		reparse the command.
+
 The stripping failed with rule is not listed in any rulebook. [There are too many actions in the game where "with" IS fruitful, so this often gives a misleading response.]
 
 When play begins:
