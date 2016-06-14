@@ -742,7 +742,7 @@ The heft of the dig is 20. The description of the dig is "It's a large affair: n
 
 There's mud and stone and a cylindrical drilling machine five stories high."
 
-The description of the diva is "Though I couldn't put a name to her, we both feel as though we've seen her face many times on the sides of many buildings[if the diva wears the meat-gown]. She is wearing glamorous dress decorated with slabs of meat[end if][if the diva wears the bacon chapeau]. On her head is an eye-catching bacon chapeau[end if]."
+The diva is a woman. The description of the diva is "Though I couldn't put a name to her, we both feel as though we've seen her face many times on the sides of many buildings[if the diva wears the meat-gown]. She is wearing glamorous dress decorated with slabs of meat[end if][if the diva wears the bacon chapeau]. On her head is an eye-catching bacon chapeau[end if]."
 
 The diva wears a meat-gown and a bacon chapeau. Understand "glamorous" or "glamourous" or "dress" or "gown" or "meat" or "meat-studded" or "studded" as the meat-gown. The printed name of the meat-gown is "meat studded gown". The description of the meat-gown is "You could feed a dozen starving steak-enthusiasts with this."
 
