@@ -22,6 +22,9 @@ Long Street North is a proper-named and southern road. The description is "Long 
 
 Some anemic palm trees are a backdrop. They are in Long Street North and Long Street South. The description is "The only foliage comes in a clump high above. The effect is distorted and unnatural, and I say that having lived with them all my life. They are trees in the same sense that ostriches are birds." The printed name is "an[ae]mic palm trees". Understand "palms" or "anaemic" as the anemic palm trees.
 
+Instead of going inside when location is Long Street North:
+	try going west.
+
 South of Long Street North is Long Street South. Long Street South is a  proper-named southern road. The description is "Long Street is lined on each side with a double-row of tall, an[ae]mic palm trees that bend towards one another many feet overhead. [We] are now in the southern part of this long corridor, between the Canadian Embassy and Arbot Maps & Antiques."
 
 The Canadian Embassy is a facade in Long Street South. It fronts east. It is scenery. The description is "The embassy is the largest foreign embassy here: Canadians do a lot of business with Atlantis, but the Québécois require special permission to enter, so there's a call for substantial clerical work. The building is a solid 1960s block in concrete with slit-shaped windows." Understand "concrete" or "windows" or "solid" or "block" or "slit-shaped" or "slit" or "window" or "slit shaped" or "slits" as the Canadian Embassy.
