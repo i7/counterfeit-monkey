@@ -1598,7 +1598,7 @@ Check inserting something into the umlaut punch when the umlaut punch contains s
 
 Report inserting a strand into the umlaut punch:
 	say "[We] put [the noun] into the wire basket of the umlaut punch. There is a hum as the punch warms up, then a bang! as the tines come down sharply, tattooing [the noun].[paragraph break]";
-	say "For a moment [we] glimpse the teen girl band Haïr - starring Big Haïr, Scary Haïr, Bed Haïr, and Skyblue Haïr - whose big hit, 'You Got Me In Curlers (And I Liked It)', has unfortunately now dropped out of the charts.
+	say "For a moment [we] glimpse the teen girl band Haïr [--] starring Big Haïr, Scary Haïr, Bed Haïr, and Skyblue Haïr [--] whose big hit, 'You Got Me In Curlers (And I Liked It)', has unfortunately now dropped out of the charts.
 
 But the effect fades almost instantly." instead.
 
