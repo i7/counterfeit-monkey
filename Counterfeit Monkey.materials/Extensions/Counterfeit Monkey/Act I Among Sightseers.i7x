@@ -1048,6 +1048,9 @@ Rule for listing exits when the location is Church Forecourt:
 
 The cinema-exterior is a facade in Church Forecourt. It fronts north. It is scenery. The description is "Large red letters on the marquee announce the latest film from Cannes." Understand "small" or "cinema" or "theater" or "theatre" or "movie" or "red letters" or "large red" or "large letters" or "large red letters" or "marquee"  or "film" or "cannes" as the cinema-exterior. The printed name is "cinema".
 
+Instead of going inside when location is Church Forecourt:
+	try going west.
+
 Section 4 - Heritage Corner
 
 The Heritage Corner is east of the Fair and southeast of Park Center. It is proper-named. The description is "This patch of the town square has been paved over in [octagonal bricks] and is commonly used for displays of traditional dancing: over-50 women in home-made embroidered aprons, skipping arm-in-arm and jumping over broomsticks[one of].
@@ -1123,9 +1126,18 @@ Rule for listing exits when the location is Heritage Corner:
 	else:
 		say "The park continues to the north and west; to the east is [if the hostel is unvisited]a backpackers['] [hostel-exterior] where you've stayed recently and where you stowed the rest of your important possessions[otherwise]the [hostel-exterior][end if]."
 
-The hostel-exterior is a facade in Heritage Corner. It is scenery. The printed name is "hostel". The description is "It's a narrow brick townhouse with only one or two rooms on each floor, and silly ornamental brickwork up near the skyline. The label over the entrance merely announces a generic hostel, without the dignity of a name." Understand "hostel" or "sign" or "townhouse" or "silly brickwork/bricks" or "ornamental brickwork/bricks" or "silly ornamental brickwork/bricks" or "brickwork" or "narrow" or "brick" or "backpacker's" or "backpackers'" or "backpacker" as the hostel-exterior. Understand "bricks" as the hostel-exterior when the player's command includes "examine/x/l/look". [Does thiswork?] The hostel-exterior fronts east.
+The hostel-exterior is a facade in Heritage Corner. It is scenery. The printed name is "hostel". The description is "It's a narrow brick townhouse with only one or two rooms on each floor, and silly ornamental brickwork up near the skyline. The label over the entrance merely announces a generic hostel, without the dignity of a name." Understand "hostel" or "sign" or "townhouse" or "silly brickwork/bricks" or "ornamental brickwork/bricks" or "silly ornamental brickwork/bricks" or "brickwork" or "narrow" or "brick" or "backpacker's" or "backpackers'" or "backpacker" as the hostel-exterior.  The hostel-exterior fronts east.
 
 The octagonal bricks are scenery in Heritage Corner. The description is "Alternating with square bricks of a slightly darker shade of maroon. Nothing about this seems remotely significant." Understand "ground" or "paving" or "floor" as the octagonal bricks.
+
+Instead of examining the octagonal bricks:
+	if the player's command includes "bricks":
+		try examining the hostel-exterior instead;
+	otherwise:
+		continue the action.
+
+Instead of going inside when the location is Heritage Corner:
+	try going east.
 
 Chapter 2 - Indoor Areas
 
@@ -1140,7 +1152,7 @@ Despite these handicaps, it maintains an active and interested clientele simply 
 
 [or][stopping]Evidently the next showing is not for a little while yet, because there are no patrons in sight."
 
-Instead of going in when the location is Cinema Lobby:
+Instead of going inside when the location is Cinema Lobby:
 	try going west.
 
 Rule for listing exits when the location is Cinema Lobby:
