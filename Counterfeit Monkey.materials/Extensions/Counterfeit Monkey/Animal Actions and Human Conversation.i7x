@@ -3090,9 +3090,10 @@ First report smiling when the current interlocutor is the activist and the curre
 	say "We smile in a blandly interested fashion.";
 	queue encourage the activist as immediate obligatory instead.
 
-Sanity-check listening when the current interlocutor is the activist and the current quip is further-enviro-stuff:
-	say "We put on our most attentive expression.";
-	queue encourage the activist as immediate obligatory instead.
+Sanity-check listening when the current quip is further-enviro-stuff:
+	if the noun is the location or the noun is the activist:
+		say "We put on our most attentive expression.";
+		queue encourage the activist as immediate obligatory instead.
 
 An availability rule for how consciousness will be raised:
 	if the activist recollects bid-for-cash, it is off-limits;

@@ -398,14 +398,27 @@ A thing can be noisy or quiet. A thing is usually quiet.
 Every turn:
 	if listening:
 		make no decision;
+	otherwise:
+		follow the make noise rule.
+
+The noisemaker is an object that varies. The noisemaker is initially nothing.
+
+This is the make noise rule:
 	if the player is in a car:
 		now everything enclosed by the holder of the player is marked for listing;
 	otherwise:
 		call the swift rule on everything in scope;
-	let noisemaker be a random noisy marked for listing thing;
-	now everything is not marked for listing;
+	now the noisemaker is a random noisy marked for listing thing;
+	rapidly set all things not marked for listing;
 	if the noisemaker is something and the noisemaker is not in a closed container:
 		try listening to the noisemaker.
+
+[The make noise rule is listed after the the makes people talk rule in the every turn rules.]
+
+Instead of listening to a room:
+	follow the make noise rule;
+	if the noisemaker is nothing:
+		continue the action.
 
 Report listening to a quiet thing:
 	say "[The noun] [one of][don't] make much noise[or][are] naturally silent[or][make] no notable noises[at random]." instead.
