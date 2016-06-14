@@ -413,8 +413,6 @@ This is the make noise rule:
 	if the noisemaker is something and the noisemaker is not in a closed container:
 		try listening to the noisemaker.
 
-[The make noise rule is listed after the the makes people talk rule in the every turn rules.]
-
 Instead of listening to a room:
 	follow the make noise rule;
 	if the noisemaker is nothing:
