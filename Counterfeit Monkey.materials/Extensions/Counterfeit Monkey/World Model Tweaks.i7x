@@ -723,8 +723,21 @@ Instead of going nowhere when the noun is fronted by a facade (called blockage) 
 	carry out the listing exits activity.
 
 Instead of going nowhere when the noun is not fronted by a facade in the location:
-	try facing the noun;
+	if the noun is up or the noun is inside:
+		say "There is no way [noun].[paragraph break]";
+	else:
+		try facing the noun;
 	carry out the listing exits activity.
+
+[The parser would sometimes misinterpret commands such as GO TO CINEMA as FIND CINEMA-EXTERIOR and leave the player in from of the cinema rather than inside it. This gets around this by making sure that we always try to walk through any facade that we are "finding".]
+
+Instead of finding a facade:
+	let the-direction be a random direction fronted by the noun;
+	let the goal be the room the-direction from the holder of the noun;
+	if the goal is a room:
+		try approaching the goal;
+	otherwise:
+		continue the action.
 
 A down-staircase is a kind of facade. Understand "step" or "steps" or "stairs" or "stairwell" or "staircase" as a down-staircase. A down-staircase is usually scenery.
 
@@ -736,6 +749,9 @@ Instead of climbing a down-staircase, try going down.
 When play begins:
 	now every down-staircase fronts down;
 	now every up-staircase fronts up.
+
+Does the player mean finding a facade:
+	it is very unlikely.
 
 Section 2 - LOOK AT LOCATION as LOOK
 
