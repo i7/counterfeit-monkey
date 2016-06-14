@@ -628,7 +628,7 @@ When Landing ends:
 		otherwise:
 			let the target be a random drawer which is part of your bed;
 			now the item is in the target;
-	now every thing is not marked for listing;
+	rapidly set all things not marked for listing;
 	now every thing is not essential;
 	now the island is nowhere;
 	now the the oar is nowhere;

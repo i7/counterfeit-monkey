@@ -170,8 +170,7 @@ Report entering the piano-bench:
 	say "We take our seat at the piano." instead.
 
 A description-concealing rule while entering the piano-bench:
-	repeat with item running through marked for listing things:
-		now the item is not marked for listing.
+	rapidly set all things not marked for listing.
 
 Check performing the rap on the piano:
 	say "Anything we might play in accompaniment would just conflict." instead.
@@ -644,7 +643,7 @@ Before going from My Apartment when the player does not enclose The Problem of A
 	try taking The Problem of Adjectives.
 
 A description-concealing rule when The Problem of Adjectives is as-yet-unknown and The Problem of Adjectives is marked for listing:
-	now every marked for listing thing is not marked for listing;
+	rapidly set all things not marked for listing;
 	now the Problem of Adjectives is marked for listing.
 
 Rule for writing a topic sentence about the Problem of Adjectives when The Problem of Adjectives is as-yet-unknown:

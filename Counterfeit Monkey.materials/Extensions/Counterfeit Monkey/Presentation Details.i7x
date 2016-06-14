@@ -491,7 +491,7 @@ Instead of taking inventory when the current inventory listing style is wide:
 	say ".[paragraph break]".
 
 Instead of taking inventory when the current inventory listing style is utilitarian:
-	now everything is not marked for listing;
+	rapidly set all things not marked for listing;
 	let the packed count be 0;
 	let the unpacked count be 0;
 	let paragraph break needed be false;
@@ -507,7 +507,7 @@ Instead of taking inventory when the current inventory listing style is utilitar
 		now the packed count is the number of marked for listing things which are packed;
 		now the unpacked count is the number of marked for listing things which are unpacked;
 		now paragraph break needed is true;
-	now everything is not marked for listing;
+	rapidly set all things not marked for listing;
 	now every not essential thing enclosed by the player is marked for listing;
 	now everything that is part of something is not marked for listing;
 	now the restoration gel is not marked for listing; [because the tub will already be a mentioned essential]
