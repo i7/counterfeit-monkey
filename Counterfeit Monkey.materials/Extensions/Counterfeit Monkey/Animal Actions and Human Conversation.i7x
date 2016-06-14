@@ -1311,6 +1311,24 @@ Sanity-check doing something to the generic cocktail:
 Does the player mean doing something to the generic cocktail:
 	it is very unlikely.
 
+Does the player mean doing something to the screwdrivers:
+	it is very unlikely.
+
+Does the player mean doing something to the gimlets:
+	it is very unlikely.
+
+Does the player mean doing something to the nails:
+	it is very unlikely.
+
+Does the player mean doing something to the screwdriver:
+	it is very likely.
+
+Does the player mean doing something to the gimlet:
+	it is very likely.
+
+Does the player mean doing something to the nail:
+	it is very likely.
+
 Carry out the bartender discussing buy the screwdriver:
 	move the screwdriver to the dor-bar-top;
 	homonym-paddle the screwdriver;
