@@ -1176,7 +1176,7 @@ Instead of entering traffic:
 Instead of climbing the scaffolding:
 	say "I wasn't a construction worker in previous life, and I'm pretty sure you weren't either." ]
 
-Understand "cross [traffic]" or "ignore [traffic]" as a mistake ("You may have the nerve, but I don't.") when the player can see the traffic.
+Understand "cross [traffic]" or "ignore [traffic]" as a mistake ("You may have the nerve, but I don't.") when the traffic is marked-visible.
 
 Test car-behavior with "tutorial off / car-acquire / cross traffic / ignore traffic / drive to roundabout / park / get out of car / go to deep street / nw / e / climb masses / look through window / out / out / se / get in car / drive to tall street / go to roundabout / drive to monkey" in high street.
 
