@@ -322,10 +322,16 @@ A multiple action processing rule when the action name part of the current actio
 		otherwise:
 			say "That would only make a mess. Try rubbing the [if the second noun is the paste]paste[otherwise]gel[end if] on things instead.";
 		alter the multiple object list to {};
+		make no decision;
 	otherwise:
 		if the second noun is not a container:
 			alter the multiple object list to {};
-			say "[The second noun] can't contain things."
+			say "[The second noun] can't contain things.";
+			make no decision;
+	if the second noun is the toolkit:
+		alter the multiple object list to {};
+		say "[The toolkit] is full already."
+
 
 
 Part 2 - Senses
