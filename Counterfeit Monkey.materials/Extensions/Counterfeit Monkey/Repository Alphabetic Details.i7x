@@ -1365,13 +1365,13 @@ The description of the mart is "One of those small markets selling mostly conven
 
 The description of a mat is "A woven jute mat, the kind people leave outside their doors for cleaning your shoes. It's got a traditional border pattern of chard leaves and curling waves running around the outside."
 
-Matt is a man. The description of Matt is "He's tall and lanky, apparently in his early thirties, casually dressed."
+Matt is a proper-named man. The description of Matt is "He's tall and lanky, apparently in his early thirties, casually dressed."
 
-Mary is a woman. The description is "She's wearing a blue robe and a beatific expression."
+Mary is a proper-named woman. The description is "She's wearing a blue robe and a beatific expression."
 
 The description of a May is usually "This is the sheet for the month of May, torn from a calendar. Someone has put a gold star on the 21st, and 'Dinner with the Shaplys' is penciled onto the 30th." The heft of the May is usually 1.
 
-Meg is a woman. The description of Meg is "She's in her mid-sixties, with salt-and-pepper hair and a dry, rather sardonic smile."
+Meg is a proper-named woman. The description of Meg is "She's in her mid-sixties, with salt-and-pepper hair and a dry, rather sardonic smile."
 
 The description of the member is "It is a figure of a member of the Committee to Establish an Orthodox Orthography. It is plastic, small enough to sit on our palm, and wears the stiff clothing and conservative hairstyle of about 1895. It looks slightly cross, as though the member has guessed its work would take another 15 years to complete."
 
@@ -2747,7 +2747,7 @@ The rollback-ad is privately-named. The printed name is "rollback ad". Understan
 
 The description of the rood is "A substantial crucifix carved entirely of wood."
 
-Ross is a man. The description of Ross is "He's red-headed and he looks oblivious to social cues. Someone you used to know, then, I take it?"
+Ross is a proper-named man. The description of Ross is "He's red-headed and he looks oblivious to social cues. Someone you used to know, then, I take it?"
 
 The description of the rotas inscription is
 	"It reads: [paragraph break][fixed letter spacing]     P[line break]     A[line break]     T[line break]  A  E  O[line break]     R[line break]PATERNOSTER[line break]     O[line break]  O  S  A[line break]     T[line break]     E[line break]     R[variable letter spacing]". The rotas inscription is fixed in place.
