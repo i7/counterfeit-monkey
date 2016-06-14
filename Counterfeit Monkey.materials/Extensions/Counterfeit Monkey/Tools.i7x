@@ -1875,6 +1875,17 @@ At the lip of the bucket is a switch labeled REVERSE. The switch is currently [i
 
 The sprocket-bits are part of the cryptolock. Understand "odd" or "gears" or "sprocket" or "sprockets" or "parts" or "bits" or "part" or "bit" or "bolt" or "wire" or "duct" or "tape" as the sprocket-bits. The description of the sprocket-bits is "They're all different metals and component sizes, as though scavenged from other machines. But for what? It would take a much better engineer than I am to guess that."
 
+Sanity-check inserting something (called item) into the cryptolock when the cryptolock contains the item:
+	try silently taking the item;
+	if the player carries the item:
+		say "[We] momentarily lift [the item] out of [the cryptolock] and then drop [them] back in.
+
+		[run paragraph on]";
+		try silently inserting the item into the cryptolock instead;
+		say "[run paragraph on]";
+	otherwise:
+		do nothing instead.
+
 Check inserting something into the cryptolock when the cryptolock contains something (called the blockage):
 	try taking the blockage;
 	if the blockage is in the cryptolock:
@@ -1886,7 +1897,7 @@ Check inserting something into the cryptolock when the heft of the noun is great
 A dangerous construction rule for something (called the target):
 	if the target is in the cryptolock and the heft of the target is greater than 3:
 		now the target is in the Generator Room;
-		say "[The target] [are] too big to fit into the bucket, and [fall] out during the process of formation."
+		say "There is a churning noise from within [the cryptolock] as [a target] [are] formed within. The finished [target] [are] too big to fit in the bucket, however, and [fall] out during the process of formation. "
 
 Test bucket-size with "put coat in bucket / wave a-remover at coat / get cot / put cot in bucket" holding the coat in the Generator Room.
 
@@ -1924,7 +1935,8 @@ After inserting something into the cryptolock:
 		now everything which is in the cryptolock is in the repository;
 		move the chosen article to the cryptolock;
 		abide by the dangerous construction rules for the chosen article;
-		say "There is a churning noise from within [the cryptolock], and a moment later [we] see inside [a list of things *in the cryptolock]. ";
+		unless the chosen article is in the Generator room:
+			say "There is a churning noise from within [the cryptolock], and a moment later [we] see inside [a list of things *in the cryptolock]. ";
 		carry out the caching scope activity with the player;
 		record "using the vowel rotator" as achieved;
 		if the boiler is switched off:
