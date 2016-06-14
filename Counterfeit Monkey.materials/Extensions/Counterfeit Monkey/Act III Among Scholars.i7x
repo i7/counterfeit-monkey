@@ -64,7 +64,7 @@ The maps collection is a thing in Arbot Maps & Antiques. Understand "large" or "
 	The description of the maps collection is "[We] pore over a map of [one of]the Old City when the walls were still intact, as reconstructed from archaeological surveys[or]forbidden dig zones in Atlantis[or]bus routes between here and Maiana ca. 1973[or]island topography as measured in 1910[or]1880 shipping lines between Atlantis, Gibraltar, and points east[at random]."
 
 Instead of local looking Arbot Maps & Antiques:
-	if the player's command includes "arbot" or the player's command includes "&":
+	if the player's command includes "arbot/&":
 		continue the action;
 	otherwise:
 		if the player's command includes "maps":
