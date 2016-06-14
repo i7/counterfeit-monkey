@@ -555,9 +555,9 @@ Check unlocking the plexiglas case with something which is not the screwdriver:
 			say "[The second noun] [are] not at all suited to the purpose. There's a reason they make screwdrivers for this." instead;
 		else:
 			say "[We] try contriving to get an edge of [the second noun] into the slot of the screws, but [the second noun] just slip[s] around unhelpfully. There's a reason they make screwdrivers for this." instead;
-[
+
 Test unscrewing-bug with "unscrew case with as / unscrew screws with as" holding the as in the Seminar Room.
-]
+
 Setting action variables for unlocking the screws with something:
 	if the screws are part of the plexiglas case:
 		now the noun is the plexiglas case.
