@@ -367,6 +367,15 @@ The brass plate is part of the machine. Understand "base" as the brass plate. Th
 
 The small nozzles are part of the machine. Understand "jets" or "conical" or "sharp" or "tips" or "tip" or "business end" as the nozzles. The description is "They have sharp conical ends, like cake-decorating tips. If [we] look closely, [we] see that the business end of each is cut out in a t-shape, each in a different font." Instead of doing something other than examining to the nozzles: say "Better leave repairs to a qualified professional."
 
+Sanity-check inserting something (called item) into the t-inserter when the t-inserter contains the item:
+	try silently taking the item;
+	if the player carries the item:
+		say "[We] momentarily lift [the item] out of [the t-inserter] and then drop [them] back in.";
+		move the item to the t-inserter;
+		try teeing the item instead;
+	otherwise:
+		do nothing instead.
+
 Sanity-check inserting something irretrievable into the T-inserter:
 	if the noun contains the tub:
 		try taking the tub;
