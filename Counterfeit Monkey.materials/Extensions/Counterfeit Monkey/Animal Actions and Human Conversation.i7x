@@ -37,8 +37,8 @@ Definition: a person is contained:
 	no.
 
 Check something exiting when the actor is an animal in the kayak:
-	if the kayak is enclosed by location:
-		say "[one of][The person asked] [make] as though to climb out of the kayak, then [see] that everything outside is made of water, and withdraw[s] sulkily.[or][The person asked] waits in the bottom of the kayak.[stopping]" instead.
+	if the kayak is enclosed by location and the location is not abandoned shore:
+		say "[one of][The person asked] [make] as though to climb out of [the kayak], then [see] that everything outside is made of water, and [withdraw] sulkily.[or][The person asked] [wait] in the bottom of [the kayak].[stopping]" instead.
 
 Check something exiting when the actor is an animal in the synthesizer:
 	if the person asked is a bird:
