@@ -641,7 +641,7 @@ Chapter 1 - Manufactured People
 
 Section 1 - The Mechanic
 
-The greeting of the mechanic is "The mechanic nods at us."
+The greeting of the mechanic is "The mechanic nods at [us]."
 The generic positive of the mechanic is "yup".
 The generic negative of the mechanic is "nope".
 The generic adversative of the mechanic is "um".
