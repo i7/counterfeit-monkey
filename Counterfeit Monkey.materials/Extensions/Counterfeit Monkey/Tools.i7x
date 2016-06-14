@@ -1113,11 +1113,14 @@ Understand "apply [something gel-related] on/onto/to [something]" as putting it 
 
 Understand "use [something gel-related] on/with [something]" as putting it on.
 
-Understand "[something gel-related] [something]" as putting it on.
+Understand "[gel] [something]" as putting it on.
+Understand "[paste] [something]" as putting it on.
+
 
 Instead of putting the tub on something:
 	if the player's command includes "gel":
-		silently try opening the tub;
+		if the tub is closed:
+			silently try opening the tub;
 		if the tub is open:
 			try putting the restoration gel on the second noun;
 	otherwise:
@@ -1127,8 +1130,11 @@ Instead of putting the tub on something:
 			continue the action.
 
 Sanity-check putting the tube on something:
-	if the player's command includes "gel" and the player's command does not include "tube":
-		say "[one of]Unfortunately, there's hardly any gel remaining in the tube.[or]There isn't enough gel remaining in the little tube for use.[at random]" instead.
+	if the player's command includes "gel on/onto" and the player's command does not include "gel tube on/onto":
+		if the barker carries the tube:
+			say "You don't have the gel at the moment." instead;
+		otherwise:
+			say "[one of]Unfortunately, there's hardly any gel remaining in the tube.[or]There isn't enough gel remaining in the little tube for use.[at random]" instead.
 
 Before inserting something (called the source) into something gel-related (called the target):
 	unless the source is gel-related: [Things like "put gel in tub" are dealt with elsewhere]
@@ -1138,6 +1144,8 @@ Before inserting something (called the source) into something gel-related (calle
 			say "That would only make a mess. Try rubbing some [if the target is the paste]paste[otherwise]gel[end if] on [the source] instead." instead. [This was originally redirected to PUT GEL ON (SOURCE) but was changed to match the response to PUT ALL IN GEL.]
 
 Sanity-check putting the restoration gel on something irretrievable:
+	if the second noun is the tub or the second noun is the letter-remover:
+		continue the action;
 	if the second noun contains the tub:
 		try taking the tub;
 	if the second noun contains the letter-remover:
@@ -1223,8 +1231,10 @@ To gel-convert (item - an object):
 		now everything which proffers the item is in the destination;
 		[play the sound of gel splort;]
 		let description needed be false;
-		if exactly one unseen thing (called the parent) proffers the item:
-			now description needed is true;
+		if exactly one thing (called the parent) proffers the item:
+			set pronouns from parent;
+			if the parent is unseen:
+				now description needed is true;
 		say "With an audible SPLORT, [the item] [become] [a list of things which proffer the item][if the destination is the location and the holder of the item is not the location] and falls to the ground[end if]. ";
 		if description needed is true:
 			say "[parent description]";
