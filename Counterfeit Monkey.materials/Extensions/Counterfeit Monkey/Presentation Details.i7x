@@ -24,20 +24,6 @@ To say --: say Unicode em dash.
 To say -: say Unicode en dash.
 To say -x-: say Unicode ballot x.
 
-Rule for deciding whether all includes fixed in place things: it does not.
-Rule for deciding whether all includes scenery: it does not.
-Rule for deciding whether all includes people while taking: it does not.
-Rule for deciding whether all includes things carried by other people while taking: it does not.
-
-Rule for deciding whether all includes other people carried by the person asked while dropping or throwing or inserting or putting (this is the new exclude people from drop all rule):
-	it does.
-
-The new exclude people from drop all rule is listed instead of the exclude people from drop all rule in the for deciding whether all includes rulebook.
-
-Rule for clarifying the parser's choice of something:
-	do nothing instead.
-
-
 To say set prior to (item - a thing):
 	now prior named object is item.
 

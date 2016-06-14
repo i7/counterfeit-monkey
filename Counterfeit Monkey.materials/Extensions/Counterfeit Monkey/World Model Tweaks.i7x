@@ -322,7 +322,31 @@ Instead of drinking something which is not fluid:
 Understand "apply pressure to [something]" as pushing.
 Understand "lean on [something]" as pushing.
 
-Section 6 - Fix actions on multiple objects
+Section 6 - Actions on multiple objects
+
+Rule for deciding whether all includes fixed in place things: it does not.
+Rule for deciding whether all includes scenery: it does not.
+Rule for deciding whether all includes people while taking: it does not.
+Rule for deciding whether all includes things carried by other people while taking: it does not.
+
+Rule for deciding whether all includes other people carried by the person asked while dropping or throwing or inserting or putting (this is the new exclude people from drop all rule):
+	it does.
+
+[Hack to avoid "What do you want to drop those things in?" when typing DROP ALL while carrying nothing.]
+Rule for deciding whether all includes the person asked while dropping:
+	if the person asked is empty:
+		it does.
+
+A multiple action processing rule when dropping:
+	if the player is empty:
+		alter the multiple object list to {};
+		say "[We] don't have anything to drop.";
+
+The new exclude people from drop all rule is listed instead of the exclude people from drop all rule in the for deciding whether all includes rulebook.
+
+Rule for clarifying the parser's choice of something:
+	do nothing instead.
+
 
 [Preventing long lists of error messages when typing things like "put all in rock"]
 
