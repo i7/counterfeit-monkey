@@ -1456,7 +1456,7 @@ Instead of looking at an attendant-related thing through an authentication scope
 		do nothing instead;
 	say "[The second noun] pings happily as [we] sight [the noun] with the crosshairs. [one of]'Do you mind?' [if the noun is the attendant]she[otherwise]the attendant[end if] asks. 'That's kind of rude.'[or]She sighs pointedly.[or]She mutters about people who can't take hints.[or]She ignores us stoically.[stopping]".
 
-Guidebook is a book in the Hostel. The printed name is "Guidebook to Anglophone Atlantis". Understand "guidebook to atlantis" or "guide" or "book" or "guidebook to anglophone atlantis" as the guidebook. The initial appearance is "Discarded in one corner is [a guidebook]." The description is "A much-thumbed and several years out-of-date guidebook to this immediate area. The cover is tomato-red but the pages are crinkly and beige: it appears that someone has spilled coffee on it.
+Guidebook is a book in the Hostel. The printed name is "Guidebook to Anglophone Atlantis". Understand "guidebook to atlantis" or "guide" or "book" or "guidebook to anglophone-atlantis" as the guidebook. The initial appearance is "Discarded in one corner is [a guidebook]." The description is "A much-thumbed and several years out-of-date guidebook to this immediate area. The cover is tomato-red but the pages are crinkly and beige: it appears that someone has spilled coffee on it.
 
 There's too much here to take in in a quick read, but we could look up specific topics if we wanted to read more." The contents of the guidebook is the Table of Local Attractions.
 
@@ -1464,11 +1464,15 @@ After reading a command:
 	while the player's command includes "the":
 		cut the matched text.
 
+After reading a command:
+	if the player's command includes "anglophone atlantis":
+		replace the matched text with "anglophone-atlantis".
+
 Table of Local Attractions
 topic	reply
 "toilets" or "toilet" or "restroom" or "convenience" or "public convenience"	"The island is not overprovided with public toilets, but there is a building near the bus station."
 "typoland fun fair" or "fun fair" or "typoland" or "fun"	"Two full pages are devoted to Typoland Fun Fair, describing such delights as the exclamation point mascot character and the competitive kerning events."
-"anglophone" or "atlantis" or "atlantean"	"The entire book concerns the island, so we'll have to be more specific about places and institutions."
+"anglophone" or "atlantis" or "atlantean" or "anglophone-atlantis"	"The entire book concerns the island, so we'll have to be more specific about places and institutions."
 "atlantida"	"Atlantida is listed here as the 'guiding spirit' of the island and its people. Representations of this abstraction can be found in posters and advertisements, and in the form of a great statue in the roundabout off Deep Street."
 "aquarium" or "bookstore" or "aquarium bookstore"	"The entry describes the Aquarium Bookstore as a source of used and off-beat new books, especially those pertaining to 'alternate visions of Atlantis'. The phrase 'treasure trove' also appears, though in a context that makes clear this is code for 'fire hazard'."
 "bureau/rotunda" or "bureau of orthography" or "orthography"	"The entry is long and greasily flattering: resplendent blue dome, magnificent interior, warm and hospitable employees, world-renowned historical research department, etc., etc., etc."
