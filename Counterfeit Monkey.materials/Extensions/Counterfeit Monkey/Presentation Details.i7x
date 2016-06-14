@@ -27,6 +27,7 @@ To say -x-: say Unicode ballot x.
 Rule for deciding whether all includes fixed in place things: it does not.
 Rule for deciding whether all includes scenery: it does not.
 Rule for deciding whether all includes people while taking: it does not.
+Rule for deciding whether all includes things carried by other people while taking: it does not.
 
 Rule for clarifying the parser's choice of something:
 	do nothing instead.

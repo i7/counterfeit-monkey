@@ -244,6 +244,23 @@ The toolkit is a scenery thing on the dor-bar-top. The toolkit contains some scr
 	Instead of examining or searching the toolkit:
 		say "It offers an assortment: [a list of things *in the toolkit]."
 
+Rule for deciding whether all includes things enclosed by the toolkit while taking or removing:
+	if the action name part of the current action is the removing it from action:
+		it does;
+	it does not.
+
+A multiple action processing rule when the action name part of the current action is the removing it from action:
+	if the second noun is the toolkit:
+		alter the multiple object list to {};
+		say "Let's not draw attention by stealing the tools.";
+	otherwise:
+		if the second noun is the bartender:
+			alter the multiple object list to {};
+			say "[We] dare not invade the personal space of [the bartender].";
+
+Instead of inserting something into the toolkit:
+	say "[The toolkit] is full already."
+
 The description of the gimlets is "A gimlet is a hand-tool for drilling holes, like an auger but smaller. It is for piercing things and boring into them, anyway, which is presumably where the phrase 'gimlet-eyed' comes from. These are arranged into an attractive bouquet-shape."
 	Understand "gimlet" as the gimlets when the gimlet is marked invisible and the gimlet-drink is marked invisible.
 
@@ -251,9 +268,6 @@ The description of the screwdrivers is "An assortment of plain screwdrivers, wit
 
 The description of the rusty nails is "They're scattered around in the toolkit, presumably taken from a condemned building somewhere."
 	Understand "nail" as the rusty nails when the rusty nail is marked invisible and the rusty-nail-drink is marked invisible.
-
-The gimlets, the screwdrivers, and the rusty nails are scenery.
-
 
 A screwdriver is a thing. It is carried by the bartender. The description of the screwdriver is "The screwdriver is flat-headed, with a red plastic handle and a sturdy shaft." Understand "red" or "plastic" or "handle" or "shaft" or "sturdy" as the screwdriver. Understand "tool" as the screwdriver.
 

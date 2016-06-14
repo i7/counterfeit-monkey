@@ -1299,8 +1299,13 @@ The generic cocktail is a [scenery][Bad!] thing. Understand "drink" as the gener
 [Having people carry scenery makes the compiler go crazy]
 
 Sanity-check doing something to the generic cocktail:
-	unless the action name part of current action is the buying it from action:
-		say "All the cocktails here are specific recipes." instead.
+	if the current action is removing the generic cocktail from the bartender:
+		say "[We] dare not invade the personal space of [the bartender]." instead;
+	unless the current action is buying the generic cocktail from the bartender:
+		say "Which one? All the cocktails here are specific recipes." instead.
+
+Does the player mean doing something to the generic cocktail:
+	it is very unlikely.
 
 Carry out the bartender discussing buy the screwdriver:
 	move the screwdriver to the dor-bar-top;
@@ -1352,13 +1357,12 @@ Definition: a thing is drink-form:
 	no.
 
 Rule for deciding the concealed possessions of the bartender:
-	if looking and the particular possession is the generic cocktail:
-		yes;
-	no.
-
-	[if the particular possession is the homonym paddle:
+	if not looking and the particular possession is the generic cocktail:
 		no;
-	yes.]
+	if not looking and the particular possession is the homonym paddle:
+		no;
+	yes.
+
 
 Before putting gel on a drink-form thing in the presence of the bartender:
 	say "We turn away from the bartender so she won't see too obviously what we're up to. I suppose it doesn't matter, but I wouldn't want her feelings to be hurt. [run paragraph on]".
