@@ -414,4 +414,5 @@ Rule for refusing to attack someone:
 	otherwise:
 		say "I don't solve my problems with violence. You can do what you like when we're separated again." instead.
 
+
 Character Models ends here.
