@@ -1,6 +1,8 @@
-Version 6 of Smarter Parser (for Glulx only) by Aaron Reed begins here.
+Version 6/160613 of Smarter Parser (for Glulx only) by Aaron Reed begins here.
 
 "Understands a broader range of input than the standard parser, and can direct new players towards proper syntax."
+
+[ WARNING: This is an updated version 6 for use with the 6M62 port of Counterfeit Monkey. For all other purposes version 16 or later is likely to be better - Petter Sjölund ]
 
 [
 CHANGES:

@@ -1,4 +1,6 @@
-Facial Expressions by Emily Short begins here.
+Version 2/160611 of Facial Expressions by Emily Short begins here.
+
+[ Updated to work with the Inform 6M62 port of Counterfeit Monkey - Petter Sjölund ]
 
 Section 1 - Standard Gestures
 

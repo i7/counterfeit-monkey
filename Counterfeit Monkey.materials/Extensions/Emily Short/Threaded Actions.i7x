@@ -1,8 +1,10 @@
-Threaded Actions by Emily Short begins here.
+Version 2/160611 of Threaded Actions by Emily Short begins here.
+
+[ Updated to work with the Inform 6M62 port of Counterfeit Monkey. Not tested with anything else - Petter Sjölund ]
 
 Section 1 - Main Elements
 
-[Include Threaded Conversation by Chris Conley.]
+Include Threaded Conversation by Emily Short.
 
 A stolen action is a kind of performative quip. The specification of a stolen action is "Any performative quip that is used to redirect the behavior of a standard command like KISS FRED or ATTACK CAT."
 	
@@ -224,6 +226,7 @@ Rule for refusing to attack someone when using conversation building option (thi
 		write " is an offensive quip." after file "NewConversation";
 		if nominal-sample-quip is switched on, escape troubled quip-names;
 		fill in standard quip.
+
 
 Example: * Produce Man - A simple example of reactions to shown objects.
 

@@ -423,7 +423,7 @@ The purpose of this change is to make the extension more flexible and more usefu
 
 Version 8 tweaks the reporting of character possessions and worn items to appear more natural. It also adds section headings to the documentation.
 
-Version 13/160601: Counterfeit Monkey version. Update for Inform 6M62. Fix tests. Remove dependency on Plurality.
+Version 13/160601: Counterfeit Monkey version. Update for Inform 6M62. Fix tests. Remove dependency on Plurality and deprecated features - Petter Sjölund
 
 
 Example: * Doors and doors - Writing paragraphs about doors to generate sentences such as "Exits include the white door and the black door. The black door is open."

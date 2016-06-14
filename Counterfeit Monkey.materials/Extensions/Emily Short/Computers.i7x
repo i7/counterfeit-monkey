@@ -1,8 +1,8 @@
-Version 7 of Computers by Emily Short begins here.
+Version 8/160611 of Computers by Emily Short begins here.
 
 "Computer hardware and software, including search engines and email programs. Version 3 adds handling for batteries and cords, if we include Power Sources by Emily Short (which itself depends on Plugs and Sockets by Sean Turner)."
 
-[CM version: changed out of bounds to out-of-bounds]
+[Version 8 updates for compatibility with the 6M62 port of Counterfeit Monkey. Changed out of bounds to out-of-bounds and password lock program to password-lock program. Removed deprecated features - Petter Sjölund]
 
 [Version 7 updates for compatibility with adaptive responses.]
 

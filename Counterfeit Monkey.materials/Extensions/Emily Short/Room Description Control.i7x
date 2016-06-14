@@ -254,4 +254,4 @@ Version 10 removes deprecated phrases.
 
 Version 12 does some cleanup and brings the extension in line with adaptive responses.
 
-Version 13/160517: Update to work with Inform 6M62. Remove dependency on Plurality.
+Version 13/160517: Update to work with Counterfeit Monkey on 6M62. Remove dependency on Plurality - Petter Sjölund

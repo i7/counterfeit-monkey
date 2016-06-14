@@ -1,6 +1,9 @@
-Version 4/140731 of Large Game Speedup by Andrew Plotkin begins here.
+Version 5/160614 of Large Game Speedup by Andrew Plotkin begins here.
 
 "Performance improvements for games with several hundred objects."
+
+[ This version updated to work with the Inform 6M62 port of Counterfeit Monkey. Not very well tested - Petter Sjölund ]
+
 
 Use authorial modesty.
 
