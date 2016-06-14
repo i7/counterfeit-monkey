@@ -732,15 +732,14 @@ Sanity-check switching off the spinner:
 
 Section 2 - Spinning Functionality
 
-Every turn when the location is Roget Close and the spinner is non-empty:
+Every turn when the location is Roget Close and the spinner is non-empty (this is the spin the spinner rule) :
 	if not looking:
 		follow the spinner-turning rule;
-		say paragraph break.
+		say line break.
 
 This is the spinner-turning rule:
 	let the chosen article be a random thing on the spinner;
 	let X be the chosen article;
-	let the goal text be some text;
 	let goal text be "[printed name of the X]";
 	now goal text is "[goal text in lower case]";
 	let max characters be the number of characters in the goal text;
@@ -773,21 +772,23 @@ This is the spinner-turning rule:
 			now the chosen article is essential; ]
 		now everything which is on the spinner is in the repository;
 		move the chosen article to the spinner;
-		say "[if looking]After the mirror does its work,[otherwise]The mirror rotates in leisurely fashion, and when it is done[end if] there [is-are a list of things *in the spinner].";
-		[TODO: The code below is a hack to get rid of an ugly double paragraph break caused by 'Try examining the chosen article;'. I'm sure there is a proper fix for this.]
+		say "[if looking]After the mirror does its work,[otherwise]The mirror rotates in leisurely fashion, and when it is done[end if] there [is-are a list of things *in the spinner].[no line break]";
+		[The lines below is a hack to get rid of an annoying triple paragraph break caused by Try examining the chosen article.]
 		let N be the chosen article;
-		say "[line break][N description][run paragraph on]";
+		if N is unexamined:
+			say "[paragraph break][N description][no line break]";
 		if the player wears the monocle:
 			say paragraph break;
 			if the chosen article is original:
-				say "[The monocle] [ping] happily as [we] sight [the N] with the crosshairs.[run paragraph on]";
+				say "[The monocle] [ping] happily as [we] sight [the N] with the crosshairs.[no line break]";
 			otherwise:
-				say "There is a dismissive blatt from [the monocle], and transposed over [the N] is a faint, [if N is edible and N is proffered by something inedible]unappet[izing][otherwise]greenish[end if] image of [a list of things which proffer N].[run paragraph on]"; [Hack ends here]
+				say "There is a dismissive blatt from [the monocle], and transposed over [the N] is a faint, [if N is edible and N is proffered by something inedible]unappet[izing][otherwise]greenish[end if] image of [a list of things which proffer N].[no line break]"; [end of hack]
 		record "using the spinner" as achieved;
 		if the spinner-gate is closed:
 			now the spinner-gate is open;
 			now the spinner-gate is unlocked;
 			say "[paragraph break]The gate clicks open. ";
+		record "using the spinner" as achieved;
 		abide by the dangerous construction rules for the chosen article;
 		set pronouns from the chosen article;
 		carry out the caching scope activity with the player;
@@ -797,7 +798,7 @@ This is the spinner-turning rule:
 			otherwise say "[The list of things *in the spinner] [do]";
 			say " not change, however. ";
 		otherwise:
-			say "The mirror revolves for a moment, [one of]without effect[or]without changing [the list of things *in the spinner][at random], though the word '[substitute text]' appears in startling green on the mirror's surface. ".
+			say "The mirror revolves for a moment, [one of]without effect[or]without changing [the list of things *in the spinner][at random], though the word '[substitute text]' appears in startling green on the mirror's surface. "
 
 [TODO: fix test]
 Table of Ultratests (continued)
@@ -816,7 +817,11 @@ Rule for disclosing contents of the spinner (this is the spinner-content rule):
 
 Test spin-plans with "tutorial off / wave l-remover at plans / put pans on spinner / get snap / i / wave s-remover at snap / i / put nap on spinner / get pan / i / n" holding the secret-plans in Roget Close.
 
-Test spinner with "tutorial off / look / z / get all / put remover on spinner / z / get remover / put god on spinner / get dog / put leer on spinner / look / z / get reel / g / n / test projecting" holding the leer in Roget Close.
+Table of Ultratests (continued)
+topic	stuff	setting
+"spinner"	{ leer, dog }	Roget Close
+
+Test spinner with "tutorial off / look / z / get all / put remover on spinner / z / get remover / put god on spinner / get dog / put leer on spinner / look / z / get reel / g / n / test projecting"[ holding the leer in Roget Close].
 
 Test projecting with "put reel in projector / turn projector on" in the Projection Booth.
 
