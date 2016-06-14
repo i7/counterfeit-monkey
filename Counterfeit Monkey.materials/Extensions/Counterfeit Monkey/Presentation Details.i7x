@@ -29,6 +29,11 @@ Rule for deciding whether all includes scenery: it does not.
 Rule for deciding whether all includes people while taking: it does not.
 Rule for deciding whether all includes things carried by other people while taking: it does not.
 
+Rule for deciding whether all includes other people carried by the person asked while dropping or throwing or inserting or putting (this is the new exclude people from drop all rule):
+	it does.
+
+The new exclude people from drop all rule is listed instead of the exclude people from drop all rule in the for deciding whether all includes rulebook.
+
 Rule for clarifying the parser's choice of something:
 	do nothing instead.
 
