@@ -278,7 +278,7 @@ The repository contains an oat, a cat, a cot,
 [In Daoist philosophy the word Dao is not generally considered to be a 'name' for a 'thing': it is a reference to the natural order of existence, often referred to as the "eternally nameless” (Dao De Jing-32. Laozi) to distinguish it from the countless 'named' things which are considered to be its manifestations.]
 
 [cock ring]
-The repository contains a gin crock.
+The repository contains a gin-crock.
 
 [codex]
 
@@ -573,7 +573,7 @@ In the repository are some iron-pans, a plan, an i-pan,
 
 [polling charts]
 
-In the repository are a polling chart, a strolling chap, and a patching roll.
+In the repository are a polling-chart, a strolling chap, and a patching roll.
 
 [poppy]
 In the repository is a puppy.
@@ -782,7 +782,7 @@ The repository contains a breathable silky cotton.
 
 The repository contains some toes, some toms, a tome, a toe, a tom,
 	some totes, a tote-bag, [t-insert derivatives]
-	some tots, a tot, [derive insertions]
+	some plural-tots, a tot, [derive insertions]
 	some motes, [anagram all]
 	a mote, [derive anagrams]
 	some motets, a motet, [t-insert anagrams and derivatives]

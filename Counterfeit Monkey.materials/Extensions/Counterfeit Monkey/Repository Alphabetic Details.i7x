@@ -2207,7 +2207,7 @@ The poi is an edible thing. The description is "It's a gloopy, purplish paste ma
 
 The poll is r-abstract. The description of the poll is "A dim, grainy image of an early 20th-century referendum in progress, with men in funny hats and women in velvet jackets jerkily walking into the booths to cast their votes."
 
-The printed name of the polling-chart is "polling chart". Understand "polling" or "chart" as the polling-chart. The description of the polling chart is "A chart showing Atlantida's popularity in May of 1982. Different lines represent segments of the population such as DCL Employees, Farmers, School Children, etc."
+The printed name of the polling-chart is "polling chart". Understand "polling" or "chart" as the polling-chart. The description of the polling-chart is "A chart showing Atlantida's popularity in May of 1982. Different lines represent segments of the population such as DCL Employees, Farmers, School Children, etc."
 
 A poppycock is a noisy r-abstract thing. The indefinite article is "some". The heft of the poppycock is 0. The description is "A great deal of drivel. Or, no: more the concept of drivel, as regarded by a previous age.
 
