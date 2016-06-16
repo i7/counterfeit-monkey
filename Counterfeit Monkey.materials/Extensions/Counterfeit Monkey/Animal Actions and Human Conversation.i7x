@@ -3727,7 +3727,7 @@ Or maybe he's saying that to the me half of us. Right now, it's true that I'm no
 
 
  complain about the inefficiency of this scheme is a performative quip. The comment is "Sorry, but I have to get this out there. 'I was really expecting a smoother escape plan when I arranged to work with your operation,' I say.".
- It mentions plans, myself.
+ It mentions plans, yourself.
  The reply is "Slango eyes us with disfav[our]. 'Andra, you got a moron up in your head. Kid [--] Alex [--] we aren't travel agents.'".
  It quip-supplies Slango.
  It directly-follows cant-leave-without.
