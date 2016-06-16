@@ -18,7 +18,7 @@ Thanks to Graham Nelson for technical assistance on this. ]
 A thing has a number called the hash code.
 A room has a number called the hash code.
 
-When play begins (this is the initialize hash codes rule):
+[When play begins (this is the initialize hash codes rule):
 	repeat with item running through things which are not facts:
 		unless item is a quip:
 			let T be "[item]";
@@ -26,7 +26,7 @@ When play begins (this is the initialize hash codes rule):
 			now the hash code of the item is letter-hash of T;
 	repeat with item running through rooms:
 		let T be "[item]";
-		now the hash code of the item is letter-hash of T.
+		now the hash code of the item is letter-hash of T.]
 
 To reset hash code of (item - a thing):
 	let T be "[item]";
