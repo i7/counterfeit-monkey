@@ -1381,10 +1381,15 @@ Slango's Head is aft from Slango's Bunk.
 The description is "All the absolutely required amenities of a bathroom, packed into the least possible space. The international space station probably assigns more room to the bathroom functions."
 It is nautical. It is indoors. It is a bathroom.
 
-When play begins:
+When play begins (this is the turn baths into showers rule):
 	repeat with item running through baths which are in nautical bathrooms:
 		now the printed name of the item is "shower";
+		now the hash code of the item is -1874835968;
+		repeat with shower-tap running through taps which are part of item:
+			now the hash code of shower-tap is -1849668096;
 		now the description of the item is "Just a stand-up shower with a folding plastic door. At least the water is usually hot."
+
+The turn baths into showers rule is listed after the initialize difficult hash codes rule in the when play begins rules.
 
 Section 13 - View from Outdoor Areas
 
