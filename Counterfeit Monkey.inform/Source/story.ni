@@ -526,6 +526,7 @@ Include Tests by Counterfeit Monkey.
 		•	Section 4 - Construction Tests
 		•	Section 5 - Ultratest ]
 
+Include Letter Hash Codes by Counterfeit Monkey.
 
 [The following source files are included above:
 
