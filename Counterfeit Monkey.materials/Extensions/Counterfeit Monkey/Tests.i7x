@@ -790,6 +790,42 @@ Carry out listing anagram probables:
 		if N is greater than 8:
 			say "[item][line break]".
 
+Understand "hashtest" as hashtesting. Hashtesting is an action out of world.
+
+Carry out hashtesting:
+	let hash-fail be false;
+	repeat with item running through things which are not facts:
+		unless item is a quip or item is a memory:
+			let T be "[item]";
+			let H be the letter-hash of T;
+			if the hash code of the item is not H:
+				[say "Hashtest for [item] passed![line break]";
+			else:]
+				say "ERROR:Hashtest for [item] FAILED! Hash was [hash code of item], should have been [H]![line break]";
+				now hash-fail is true;
+			now the item is unseen;
+	repeat with item running through rooms:
+		let T be "[item]";
+		let H be the letter-hash of T;
+		if the hash code of the item is not H:
+			say "ERROR:Hashtest for [item] FAILED! Hash was [hash code of item], should have been [H]![line break]";
+			now hash-fail is true;
+	if hash-fail is false:
+		say "All tested hash codes are correct!"
+
+
+Understand "list hash codes" as listing hash codes. Listing hash codes is an action applying to nothing.
+
+Carry out listing hash codes:
+	repeat with item running through things which are not facts:
+		unless item is a quip or item is a memory:
+			let H be the hash code of item;
+			say "[The item] has hash code [H].";
+	repeat with item running through rooms:
+		let H be the hash code of item;
+		say "[The item] has hash code [H]."
+
+
 Section 5 - Ultratest
 
 After reading a command:
@@ -817,26 +853,6 @@ To call test:
 	special_word = NextWordStopped();
 	TestScriptSub();
 -)
-
-Understand "hashtest" as hashtesting. Hashtesting is an action out of world.
-
-Carry out hashtesting:
-	repeat with item running through things which are not facts:
-		unless item is a quip:
-			let T be "[item]";
-			let H be the letter-hash of T;
-			if the hash code of the item is H:
-				say "Hashtest for [item] passed![line break]";
-			else:
-				say "ERROR:Hashtest for [item] FAILED![line break]Hash was [hash code of item], should have been [H]![line break]";
-			now the item is unseen;
-	repeat with item running through rooms:
-		let T be "[item]";
-		let H be the letter-hash of T;
-		if the hash code of the item is H:
-			say "Hashtest for [item] passed![line break]";
-		else:
-			say "ERROR:Hashtest for [item] FAILED![line break]Hash was [hash code of item], should have been [H]![line break]".
 
 
 Tests ends here.
