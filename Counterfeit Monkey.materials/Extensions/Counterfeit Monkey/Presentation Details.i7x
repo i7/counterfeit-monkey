@@ -628,6 +628,9 @@ Carry out selecting hard mode:
 	now the printed name of the twig is "bent twig";
 	now the printed name of the fossil is "twisty fossil";
 	now the printed name of the tomes is "dusty tomes";
+	reset hash code of the twig;
+	reset hash code of the fossil;
+	reset hash code of the tomes;
 	now the the sticky is nowhere;
 	now the the banana is nowhere;
 	move the pineapple to the large carton;
@@ -638,7 +641,7 @@ Carry out selecting hard mode:
 	now the the pear is nowhere;
 	now the the wheel is nowhere;
 	now the introduction of the clock is "It's stopped working sometime in the recent past, possibly thanks to its fall when we gelled it.";
-	follow the initialize hash codes rule;
+	[follow the initialize hash codes rule;]
 	now tutorial mode is false;
 
 Report selecting hard mode:
