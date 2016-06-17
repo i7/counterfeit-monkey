@@ -1336,10 +1336,13 @@ Sanity-check putting the reel on the projector:
 Understand "thread [reel] on/onto [the projector]" as inserting it into.
 Understand "mount [reel] on/onto [the projector]" as inserting it into.
 
-Understand "show [reel] on [the projector]" as showing it on. Showing it on is an action applying to one thing and one thing.
+Understand "show [reel] on [the projector]" as showing it on. Showing it on is an action applying to two things.
 
 Instead of mounting the reel:
-	try inserting the reel into the projector.
+	if the projector is marked-visible:
+		try inserting the reel into the projector;
+	otherwise:
+		continue the action.
 
 Check showing something which is not the reel on the projector:
 	say "[The noun] [are] not a reel of film." instead.
