@@ -1937,12 +1937,23 @@ The description of the peat is "Dirty and smelly. [one of]You've had better idea
 
 The description of the pen is "One of those old-fashioned fountain pens[if the nib is part of the pen] with a fresh nib attached[otherwise], though lacking a nib[end if]."
 
+
+Understand "attach [nib] to [pen]" as inserting it into.
+
+Understand "screw [nib] into/onto [pen]" as inserting it into.
+
+Instead of putting the nib on the pen:
+	Try inserting the nib into the pen.
+
 Instead of inserting the nib into the pen:
 	now the nib is part of the pen;
 	say "The nib screws in easily and is now part of the pen."
 
 Before taking the nib when the nib is part of the pen:
 	now the nib is in the location.
+
+Instead of filling the pen with ink:
+		try inserting ink into the pen.
 
 The pen can be inked or uninked.
 
