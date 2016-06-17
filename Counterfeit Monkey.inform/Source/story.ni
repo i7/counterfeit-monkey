@@ -80,6 +80,8 @@ Use no deprecated features.
 Include Scope Caching by Mike Ciul.
 Include Large Game Speedup by Andrew Plotkin.
 
+Include Load Data on Start by Counterfeit Monkey.
+
 
 Volume 2 - Source files inclusion
 
