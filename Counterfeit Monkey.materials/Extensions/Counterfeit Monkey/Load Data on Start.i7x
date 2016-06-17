@@ -6,17 +6,22 @@ Use authorial modesty
 
 [ Load save file on startup, if it exists and the interpreter supports it. ]
 
+The check for restore file rule translates into I6 as "SetUpOrLoad".
 
-To decide whether we need to initialize hash codes:
-	(- SetUpOrLoad() -).
+The check for restore file rule is listed last in the startup rules.
+
 
 Include (-
+
+Global restore_file_wanted = false;
+Global init_hash_needed = false;
 
 [ SetUpOrLoad val name len fref;
     val = glk($0004, 22, 0); ! gestalt_ResourceStream
     if (~~val) {
         print "(This interpreter does not support resource streams.)^";
-        return true;
+        FollowRulebook( (+initialize hash codes rule+) ) ;
+        return;
     }
 
     ! Look in chunk 9998. Why 9998? Because in an unrelated sample game,
@@ -25,15 +30,17 @@ Include (-
     gg_savestr = glk($0049, 9998, GG_SAVESTR_ROCK); ! stream_open_resource
     if (~~gg_savestr) {
         print "(No autorestore resource chunk.)^";
-        return true;
+        FollowRulebook( (+initialize hash codes rule+) ) ;
+        return;
     }
 
     val = glk($0090, gg_savestr); ! get_char_stream
     if (val < 0) {
-       print "(The autorestore chunk is empty, which is the signal to create a new autorestore file on disk.)^";
+        print "(The autorestore chunk is empty, which is the signal to
+            create a new autorestore file on disk.)^";
         glk($0044, gg_savestr, 0); ! stream_close (close the empty chunk)
         gg_savestr = 0;
-        return true;
+        FollowRulebook( (+initialize hash codes rule+) ) ;
 
         ! Set up the filename in a handy buffer
         name = "autorestore.dat";
@@ -43,14 +50,14 @@ Include (-
         fref = glk($0061, 0, buffer+3, 0); ! fileref_create_by_name
         ! (This is a type-data, binary file.)
         if (~~fref) {
-        	print "(Oops, couldn't create a fileref. Skip this.)^";
-            return true;
+            print "(Oops, couldn't create a fileref. Skip this.)^";
+            return;
         }
         gg_savestr = glk($0042, fref, 1, GG_SAVESTR_ROCK); ! stream_open_file
         if (~~gg_savestr) {
             print "(Oops, couldn't create a new file. Skip this.)^";
             glk($0063, fref); ! fileref_destroy
-            return true;
+            return;
         }
         
         @save gg_savestr val;
@@ -62,18 +69,18 @@ Include (-
             glk($0044, gg_savestr, 0); ! stream_close
             gg_savestr = 0;
             print "(The autorestore file has been restored successfully.)^";
-            return false;
+            return;
         }
         
         glk($0044, gg_savestr, 0); ! stream_close
         gg_savestr = 0;
         if (val == 0) {
             print "(The autorestore file has been created successfully.)^";
-            return false;
+            return;
         }
 
         print "(We tried to create the autorestore file, but it didn't work.)^";
-        return true;
+        return;
     }
     else {
         print "(The autorestore chunk exists. We'll restore it now.)^";
@@ -85,10 +92,12 @@ Include (-
         gg_savestr = 0;
         
         print "(We tried to load the autorestore file, but it didn't work.)^";
-        return true;
+        FollowRulebook( (+initialize hash codes rule+) ) ;
+        return;
     }
 ];
 
 -)
+
 
 Load Data on Start ends here.
