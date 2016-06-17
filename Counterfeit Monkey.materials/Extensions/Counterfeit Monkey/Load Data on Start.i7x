@@ -13,9 +13,6 @@ The check for restore file rule is listed last in the startup rules.
 
 Include (-
 
-Global restore_file_wanted = false;
-Global init_hash_needed = false;
-
 [ SetUpOrLoad val name len fref;
     val = glk($0004, 22, 0); ! gestalt_ResourceStream
     if (~~val) {
