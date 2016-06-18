@@ -758,7 +758,7 @@ Instead of going nowhere when the noun is fronted by a facade (called blockage) 
 	carry out the listing exits activity.
 
 Instead of going nowhere when the noun is not fronted by a facade in the location:
-	if the noun is up or the noun is inside:
+	if the noun is up or the noun is inside or the noun is outside:
 		say "There is no way [noun].[paragraph break]";
 	else:
 		try facing the noun;
