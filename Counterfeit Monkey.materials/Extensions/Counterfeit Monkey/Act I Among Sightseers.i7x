@@ -1342,7 +1342,7 @@ Instead of mounting the reel:
 	if the projector is marked-visible:
 		try inserting the reel into the projector;
 	otherwise:
-		continue the action.
+		say "There is nothing suitable here to mount it on."
 
 Check showing something which is not the reel on the projector:
 	say "[The noun] [are] not a reel of film." instead.
