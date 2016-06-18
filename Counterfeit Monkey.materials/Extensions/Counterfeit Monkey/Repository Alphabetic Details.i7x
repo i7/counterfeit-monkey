@@ -2371,6 +2371,8 @@ Report unplugging something from something:
 
 Understand "unplug [the power cord]" as freeing. Freeing is an action applying to one thing.
 
+Understand "detach [the power cord]" as freeing.
+
 Sanity-check freeing the power cord:
 	if the number of free massive plugs is 2:
 		say "The power cord is already detached." instead.
@@ -2427,6 +2429,8 @@ Sanity-check going somewhere when the player carries the power cord:
 			stop the action.
 
 Understand "plug [a power socket] into [a power socket]" as connecting it to.  Understand "plug in [a power socket] in [a power socket]" as connecting it to. Connecting it to is an action applying to two things.
+
+Understand "connect [a power socket] to [a power socket]" as connecting it to.
 
 Sanity-check an actor connecting something to something:
 	carry out the caching scope activity with the actor;
