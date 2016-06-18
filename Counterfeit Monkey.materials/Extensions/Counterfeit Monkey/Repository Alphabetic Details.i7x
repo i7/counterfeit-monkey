@@ -1952,6 +1952,15 @@ Instead of inserting the nib into the pen:
 		now the nib is part of the pen;
 		say "The nib screws in easily and is now part of the pen.";
 
+Understand "detach [nib] from [pen]" as removing it from.
+Understand "unscrew [nib] from [pen]" as removing it from.
+
+Instead of turning the nib when the nib is part of the pen:
+	try removing the nib from the pen.
+
+Instead of removing the nib from the pen:
+	try taking the nib.
+
 Before taking the nib when the nib is part of the pen:
 	now the nib is in the location.
 
