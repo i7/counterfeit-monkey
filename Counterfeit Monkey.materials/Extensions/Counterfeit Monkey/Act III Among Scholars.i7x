@@ -63,14 +63,9 @@ Instead of smelling Arbot Antiques:
 The maps collection is a thing in Arbot Maps & Antiques. Understand "large" or "collection" or "of" or "antique" or "under glass" or "street maps" or "maiana" or "navigation" or "distant places" or "charts" or "island" or  "topography" as the maps collection. It is fixed in place. The printed name is "[if looking]collection[otherwise]maps collection[end if]". The initial appearance is "There is a large [maps collection] of vintage and antique maps under glass [--] the island of Atlantis as a whole, street maps of here and of Maiana, navigation maps of the harb[our], and then maps of more distant places as well."
 	The description of the maps collection is "[We] pore over a map of [one of]the Old City when the walls were still intact, as reconstructed from archaeological surveys[or]forbidden dig zones in Atlantis[or]bus routes between here and Maiana ca. 1973[or]island topography as measured in 1910[or]1880 shipping lines between Atlantis, Gibraltar, and points east[at random]."
 
-Instead of local looking Arbot Maps & Antiques:
-	if the player's command includes "arbot/&":
-		continue the action;
-	otherwise:
-		if the player's command includes "maps":
-			try examining the maps collection instead;
-		otherwise:
-			continue the action.
+Before of local looking Arbot Maps & Antiques:
+	if the player's command does not include "arbot/&" and the player's command includes "maps":
+		try examining the maps collection instead.
 
 Instead of examining the maps collection when the Slangovia map is unseen:
 	move the Slangovia map to the location;
@@ -1756,14 +1751,9 @@ A ranking rule for the page when the page is on the podium:
 Rule for writing a topic sentence about the page when the page is on the podium:
 	say "Some previous lecturer has left [a page] on [the podium]. [run paragraph on]"
 
-Instead of local looking Lecture Hall 1:
-	if the player's command includes "lecture/hall":
-		continue the action;
-	otherwise:
-		if the player's command includes "podium":
-			try examining the podium instead;
-		otherwise:
-			continue the action.
+Before local looking Lecture Hall 1:
+	if the player's command does not include "lecture/hall" and the player's command includes "podium":
+		try examining the podium instead.
 
 Test page with "tutorial off / look / x podium / look" in Lecture Hall 1.
 
