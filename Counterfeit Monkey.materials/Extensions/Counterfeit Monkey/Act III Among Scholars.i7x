@@ -68,7 +68,9 @@ Instead of local looking Arbot Maps & Antiques:
 		continue the action;
 	otherwise:
 		if the player's command includes "maps":
-			try examining the maps collection instead.
+			try examining the maps collection instead;
+		otherwise:
+			continue the action.
 
 Instead of examining the maps collection when the Slangovia map is unseen:
 	move the Slangovia map to the location;
