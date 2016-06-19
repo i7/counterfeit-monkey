@@ -183,7 +183,7 @@ To say holiday closures:
 			say ".'[no line break]";
 
 closure-excuse is a beat-opened NPC-directed quip.
-	The reply is "[things-close-today][beat] [one of]'You can't find an open gas station in this town on Serial Comma Day.'[or]'People take Serial Comma Day seriously[apologetic].'[or][one of]'It's the holiday.'[or]'Serial Comma Day is a big thing around here.'[or]'It'll be worse than a Sunday today.'[or]'Any other day of the year you'd have more luck.'[cycling][stopping][line break]".
+	The reply is "[things-close-today][beat] [one of]'You can't even find an open gas station in this town on Serial Comma Day.'[or]'People take Serial Comma Day seriously[apologetic].'[or][one of]'It's the holiday.'[or]'Serial Comma Day is a big thing around here.'[or]'It'll be worse than a Sunday today.'[or]'Any other day of the year you'd have more luck.'[cycling][stopping][line break]".
 
 [Questions about subjects]
 
