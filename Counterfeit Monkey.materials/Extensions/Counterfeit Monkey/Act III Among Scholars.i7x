@@ -1754,6 +1754,15 @@ A ranking rule for the page when the page is on the podium:
 Rule for writing a topic sentence about the page when the page is on the podium:
 	say "Some previous lecturer has left [a page] on [the podium]. [run paragraph on]"
 
+Instead of local looking Lecture Hall 1:
+	if the player's command includes "lecture/hall":
+		continue the action;
+	otherwise:
+		if the player's command includes "podium":
+			try examining the podium instead;
+		otherwise:
+			continue the action.
+
 Test page with "tutorial off / look / x podium / look" in Lecture Hall 1.
 
 The conference poster is a fixed in place thing in Lecture Hall 1. Understand "title" or "papyrus" or "font" or "daguerreotype" or "catchy" or "portly woman" or "speakers" or "pictures" or "inset" or "waterstone" as the conference poster.
