@@ -1186,6 +1186,8 @@ The rest of the food is in the cabinet."
 
 A stove called a galley stove is in the Galley. The description of the galley stove is "A perfectly smooth, easy-to-clean black surface with electric burners underneath."
 
+The switch identification rule response (A) is "[unless the target is part of the galley stove or the target is part of the galley sink][random thing which includes the target][end if] ".
+
 A sink called a galley sink is in the Galley. The description of the galley sink is "Stainless steel, and very clean."
 
 The multipurpose oven is fixed in place scenery in the Galley. It is an openable closed transparent container. Understand "convection" or "microwave" as the multipurpose oven. The description is "A versatile piece of machinery that can either microwave or convection-heat things. It's not terribly powerful at either task, but it suffices and moreover is very compact."
@@ -1195,8 +1197,6 @@ When play begins:
 	move the fig ice cream to the target;
 	move the frozen dinners to the target;
 	move the bottle of vodka to the target;
-	let target be a random tap which is part of the galley sink;
-	now the printed name of the target is "tap"; [Otherwise it will be called "galley sink galley sink's tap"]
 	let target oven be a random oven which is part of the Galley stove;
 	now the target oven is nowhere. [because we want a special microwave/convection oven in there instead.]
 
