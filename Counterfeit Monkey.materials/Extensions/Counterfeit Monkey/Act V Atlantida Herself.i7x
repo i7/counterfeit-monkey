@@ -1195,6 +1195,8 @@ When play begins:
 	move the fig ice cream to the target;
 	move the frozen dinners to the target;
 	move the bottle of vodka to the target;
+	let target be a random tap which is part of the galley sink;
+	now the printed name of the target is "tap"; [Otherwise it will be called "galley sink galley sink's tap"]
 	let target oven be a random oven which is part of the Galley stove;
 	now the target oven is nowhere. [because we want a special microwave/convection oven in there instead.]
 
