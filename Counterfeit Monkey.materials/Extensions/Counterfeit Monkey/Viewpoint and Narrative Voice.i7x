@@ -43,8 +43,9 @@ Carry out examining something:
 	now the noun is examined.
 
 [Modified tutorial messages to remove paragraph break before prompt, so that they behave the same as the custom ones.]
-The  teach looking rule response (A) is "[first custom style]To get a look around, type LOOK and press return. If you do not want help getting started, type TUTORIAL OFF.[run paragraph on]".
-The  teach examining rule response (A) is "[first custom style]You can find out more if you LOOK AT [N in upper case] (or shorten it to L [M in upper case]).[run paragraph on]".
+The react to expected actions rule response (A) is "[first custom style][followup entry][roman type][paragraph break]".
+The teach looking rule response (A) is "[first custom style]To get a look around, type LOOK and press return. If you do not want help getting started, type TUTORIAL OFF.[run paragraph on]".
+The teach examining rule response (A) is "[first custom style]You can find out more if you LOOK AT [N in upper case] (or shorten it to L [M in upper case]).[run paragraph on]".
 The teach more examining rule response (A) is ”[first custom style]There are other things around here that you can look at too, if you like. You can check out other things in your surroundings, or LOOK AT ME to see yourself.[run paragraph on]".
 The teach compass directions rule response (A) is "[first custom style][one of]Feel free to look around some more. When you're ready to move on from here, try[or]No rush, but just a reminder that when you want to move to a new location, you can go[stopping] [N in upper case].[run paragraph on]".
 The teach dropping rule response (A) is "[first custom style]If you want to get rid of something that you're holding you can always drop it, like this: DROP [N in upper case].[run paragraph on]".
