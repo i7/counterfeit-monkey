@@ -263,6 +263,12 @@ Report opening the Etymological Reversing Chamber for the first time:
 Instead of switching on the Etymological Reversing Chamber:
 	say "It is not plugged in, nor is there any plausible way to plug it in around here. Just as well: it probably draws a lot of power."
 
+Table of Ultratests (continued)
+topic	stuff	setting
+"reversing"	{ army, members }	Tools Exhibit
+
+Test reversing with "put remover in reversing chamber / insert apple into reversing / put all in reversing" holding the apple.
+
 A description-concealing rule when the location is the Tools Exhibit:
 	now the Model T is not marked for listing;
 	now the Britishizing goggles are not marked for listing;
