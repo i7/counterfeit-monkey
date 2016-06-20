@@ -3889,8 +3889,8 @@ Understand "spring [something]" as springing it with. Understand "spring [someth
 
 Understand "poke [something] with [something]" as attacking it with. Understand "prod [something] with [something]" as attacking it with.
 
-Understand "insert [something] into/in [trap]" as springing it with (with nouns reversed) when the trap is marked-visible.
-Understand "put [something] into/in [trap]" as springing it with (with nouns reversed) when the trap is marked-visible.
+Instead of inserting something into the trap:
+	try springing the trap with the noun.
 
 Rule for supplying a missing second noun while springing something with:
 	if the player carries a long strong thing (called means):
