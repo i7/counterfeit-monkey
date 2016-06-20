@@ -395,6 +395,8 @@ Carry out examining the mourning dress:
 An instructional rule (this is the teach about letter-remover rule):
 	if the teach about letter-remover rule is listed in the completed instruction list:
 		make no decision;
+	if the number of entries in the list of remaining letters is not 26:
+		make no decision;
 	let N be "[letter-remover]";
 	say "[first custom style]That looks interesting. Try looking at that [letter-remover][one of][or]. L [N in upper case][stopping].[roman type]";
 	now the expected action is the action of examining the mourning dress;
@@ -406,6 +408,8 @@ Carry out examining the letter-remover:
 
 An instructional rule (this is the teach setting rule):
 	if the teach setting rule is listed in the completed instruction list:
+		make no decision;
+	if the number of entries in the list of remaining letters is not 26:
 		make no decision;
 	let N be "[the letter-remover]";
 	say "[first custom style]It can be set to any letter we choose, hm? That sounds like a hint. Try SET [N in upper case] TO U.[roman type]";
@@ -420,6 +424,8 @@ An instructional rule (this is the teach waving rule):
 	if the teach inventory rule is not listed in the completed instruction list:
 		make no decision;
 	if the teach waving rule is listed in the completed instruction list:
+		make no decision;
+	if the number of entries in the list of remaining letters is not 26:
 		make no decision;
 	if the mourning dress is not enclosed by location:
 		make no decision;
