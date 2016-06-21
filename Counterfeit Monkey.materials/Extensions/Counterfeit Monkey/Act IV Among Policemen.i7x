@@ -186,7 +186,7 @@ Instead of touching the ash:
 
 Test ash with "tutorial off / open tub / get ash / smell ash / touch ash / put gel on ash / x card / wave t-remover at trash / wave r-remover at rash / x ash / gel ash / x trash" in the Public Convenience holding the tub.
 
-Test tap with "tutorial off / x sinks / x sink / turn on tap / g / look / turn on water / look / x water / drink water / turn off tap / look / turn off water / turn off / x water / drink water" in the Public Convenience.
+Test tap with "tutorial off / x sinks / x sink / turn on tap / g / look / examine sink / x water / turn on water / look / x water / drink water / x sink / turn off tap / x sink / look / turn off water / turn off / x water / drink water" in the Public Convenience.
 
 Section 5 - Rotunda
 
