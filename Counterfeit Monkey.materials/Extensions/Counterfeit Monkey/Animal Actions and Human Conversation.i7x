@@ -616,7 +616,7 @@ Rule for refusing comment by someone who exhibits privateness when the noun is t
 		make no decision;
 	say "'[awkward no], that doesn't seem like any of my business.'"
 
-Rule for refusing comment by someone when the noun is an as:
+Rule for refusing comment by someone when the noun is the as or the noun is the fake-as:
 	if the current interlocutor is an animal:
 		make no decision;
 	if the current interlocutor knows you-are-possible-customer:
