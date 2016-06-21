@@ -1651,9 +1651,11 @@ She gives us a long, admonitory stare, then goes back to what she was doing.[or]
 Table of Ultratests (continued)
 topic	stuff	setting
 "bartender"	{ slangovia map, foil, the ball, the card, the cock}	Drinks Club
+"legend"	{ slangovia map, tub}	Drinks Club
 
 Test bartender with "tutorial off / z / ask about paddle / show ball to bartender / show foil to bartender / show map to bartender / show card to bartender / g / g / show cock to bartender" [in the Drinks Club holding the slangovia map and foil and the ball and the card and the cock.]
 
+Test legend with "tutorial off / x map / x legend / open tub / gel legend / show map to bartender / show legend to bartender / x legend / read map / read legend / gel legend / x map / show map to bartender / show legend to bartender / drop legend / unmonkey / e / x map / x legend".
 
 
 Section 4 - Kate
