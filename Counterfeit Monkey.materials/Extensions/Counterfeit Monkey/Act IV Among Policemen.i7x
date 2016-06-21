@@ -186,6 +186,8 @@ Instead of touching the ash:
 
 Test ash with "tutorial off / open tub / get ash / smell ash / touch ash / put gel on ash / x card / wave t-remover at trash / wave r-remover at rash / x ash / gel ash / x trash" in the Public Convenience holding the tub.
 
+Test tap with "tutorial off / x sinks / x sink / turn on tap / g / look / turn on water / look / x water / drink water / turn off tap / look / turn off water / turn off / x water / drink water" in the Public Convenience.
+
 Section 5 - Rotunda
 
 The Rotunda is south of Tall Street. It is indoors and southern. The description is "Echoing space, marble floor, eye-like [skylight] many me[ter]s above us: so far, the Rotunda might belong to any 19th-century government bureau of means and self-importance.
