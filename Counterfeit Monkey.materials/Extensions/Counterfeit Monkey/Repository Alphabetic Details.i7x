@@ -119,7 +119,7 @@ The description of the art is "It's a very plausible copy of [one of]'Still Life
 	The indefinite article is "some".
 	The scent-description of the art is "linseed oil".
 
-The fake-as is a thing. THe printed name is "as". Understand "as" as the fake-as. The description of the fake-as is "[one of]It appears to be an as, a [or]A [stopping]Roman coin of very low denomination[one of]. (Your knowledge, not mine. Should I ask how you know such things?)[or].[stopping] It is made of copper and has the letters S C stamped on one side." Understand "roman" or "coin" or "copper" as the fake-as. The heft of the fake-as is 1.
+The fake-as is a thing. The printed name is "as". Understand "as" as the fake-as. The description of the fake-as is "[one of]It appears to be an as, a [or]A [stopping]Roman coin of very low denomination[one of]. (Your knowledge, not mine. Should I ask how you know such things?)[or].[stopping] It is made of copper and has the letters S C stamped on one side." Understand "roman" or "coin" or "copper" as the fake-as. The heft of the fake-as is 1.
 
 Instead of searching or looking under the fake-as:
 	say "We inspect both obverse and reverse, but come away none the wiser."
