@@ -2150,7 +2150,7 @@ Table of Ultratests (continued)
 topic	stuff	setting
 "pirate-spot"	{ spot, pic, crate, tub }	Workshop
 
-Test pirate-spot with "tutorial off / autoupgrade / wave c-remover at pic / wave c-remover at crate / put pi on platform / put rate on platform / set platform to synthesize / turn on platform / pirate, enter platform / show spot to pirate / g / pirate, enter platform / open tub / drop tub / pirate, touch gel"  [in the Workshop holding the spot and the pic and the crate and the tub.]
+Test pirate-spot with "tutorial off / autoupgrade / powerup / wave c-remover at pic / wave c-remover at crate / put pi on platform / put rate on platform / set platform to synthesize / turn on platform / show spot to pirate"  [in the Workshop holding the spot and the pic and the crate and the tub.]
 
 The pirate-crew is a man. The printed name is "pirate crew". The description is "A fiercer, blacker-browed gang of individuals you couldn't hope to meet. Half of them have scurvy and half are missing at least a finger, and when they talk (strictly among themselves), it's all growls from the corner of the mouth." Understand "pirate" or "pirates" or "crew" as the pirate-crew.
 	The scent-description of the pirate-crew is "unwashedness".
@@ -2174,7 +2174,7 @@ Instead of showing the spot to the pirate-crew:
 Instead of smelling the pirate-crew:
 	say "They smell like a group that's spent months on a ship, living on a diet of watered rum and tortoise meat. Which is to say, I wish you wouldn't make me breathe so deeply."
 
-Test crew with "tutorial off / autoupgrade / put screws on platform / wave s-remover at screws / test pirate-spot / turn on platform / crew, enter platform / turn on platform / show spot to crew" in the Workshop holding the screws.
+Test crew with "tutorial off / autoupgrade / test pirate-spot / wave s-remover at screws / put gel on crew / put screws on platform / wave s-remover at screws / turn on platform / show spot to crew" in the Workshop holding the screws.
 
 The description of the pit is "The hard cen[ter] of a fruit, clean and dry of any flesh.". The scent-description  of the pit is "peaches".
 
