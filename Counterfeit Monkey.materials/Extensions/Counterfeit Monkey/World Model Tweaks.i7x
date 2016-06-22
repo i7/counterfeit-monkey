@@ -794,6 +794,8 @@ Definition: a room is locally-present if it is the location.
 
 Understand "here" or "surroundings" as a room when the item described is the location.
 
+Understand "examine [thing]" or "look [thing]" or "look at [thing]" as examining.
+
 Understand "examine [any locally-present room]" or "look at [any locally-present room]" or "look [any locally-present room]" as local looking. Understand "look around" as looking.
 
 Local looking is an action applying to one thing.
