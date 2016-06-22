@@ -1,4 +1,4 @@
-Version 1/160515 of Ultra Undo (for Glulx only) by Dannii Willis begins here.
+Version 1/160622 of Ultra Undo (for Glulx only) by Dannii Willis begins here.
 
 "Handles undo using external files for very big story files"
 
@@ -145,6 +145,7 @@ Global ultra_undo_needed = 0;
 	{
 		ultra_undo_counter = 1;
 	}
+	rfalse;
 ];
 
 [ Ultra_Undo_Delete_All ix;
@@ -154,6 +155,7 @@ Global ultra_undo_needed = 0;
 
 	}
 	ultra_undo_counter = 0;
+	rfalse;
 ];
 
 -) instead of "Undo" in "Glulx.i6t".

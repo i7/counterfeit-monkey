@@ -660,7 +660,7 @@ Definition: a person is talk-eligible if it is the current interlocutor.
 
 The quip-repository is a privately-named transparent closed unopenable container.
 
-When play begins:
+When play begins (this is the move all quips to the quip-repository rule):
 	now every quip is in the quip-repository.
 
 Book 2 - The Discussing Action

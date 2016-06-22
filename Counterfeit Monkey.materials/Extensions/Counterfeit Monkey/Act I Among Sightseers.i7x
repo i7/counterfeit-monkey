@@ -282,7 +282,7 @@ Understand "us" or "ourselves" or "we" or "ourself" as yourself.
 Check waving the letter-remover at yourself when the current setting of the letter-remover is "i":
 	say "If this were likely to work, it would be a terrible idea. Fortunately, we don't self-identify simply as I, and secondly, the letter-remover won't remove the last letter of something." instead.
 
-When play begins:
+A last when play begins rule (this is the initial conversation rule):
 	say "Can you hear me? >> [run paragraph on]";
 	if the player consents:
 		say "[line break]Good, you're conscious. We're conscious. ";

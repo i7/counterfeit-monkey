@@ -11,7 +11,7 @@ To decide whether glulx graphic-window hyperlinks are supported:
 
 Part 2 - Basic Input
 
-The last when play begins rule:
+The last when play begins rule (this is the start looking for graphlinks rule):
 	start looking for graphlinks.
 
 To start looking for graphlinks:

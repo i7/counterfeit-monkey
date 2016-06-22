@@ -1067,7 +1067,7 @@ A brown tree is a fixed in place thing in Traffic Circle. Understand "leaves" or
 Instead of putting the restoration gel on the tree:
 	say "There's too much intervening crowd for us to get there with any speed."
 
-When play begins:
+When play begins (this is the brown tree rule):
 	now the brown tree is not proffered by the brown tree;
 	now the brown tee proffers the tree.
 

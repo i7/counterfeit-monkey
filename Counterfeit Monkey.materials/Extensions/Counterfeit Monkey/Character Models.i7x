@@ -7,7 +7,7 @@ Book 2 - Character Models
 
 Section 1 - Some activities on Oneself
 
-When play begins:
+When play begins (this is the set story viewpoint rule):
    	now the story viewpoint is first person plural.
 
 [Instead of waving the letter-remover at yourself when the current setting of the letter-remover is "y":
@@ -365,7 +365,7 @@ Rule for expressing ignorance by a police person:
 	say "[one of]'That's official information[or]'There are security reasons why I can't discuss that[or]'I'd have to ask my manager[or]'We aren't supposed to answer questions of that sort[at random],' says [the current interlocutor].[run paragraph on]".
 
 
-When play begins:
+When play begins (this is the set official grounds police rule):
 	[now every person in the zoo is tourist;
 	now every person in the Customs House is police;]
 	now every person in Official Grounds is police.

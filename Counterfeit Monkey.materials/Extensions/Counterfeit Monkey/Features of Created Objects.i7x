@@ -40,7 +40,7 @@ A thing can be useful or useless. A thing is usually useless.
 
 Proffering relates various things to various things. The verb to proffer (it proffers, they proffer, it proffered, it is proffered) implies the Proffering relation. [This relation indicates which objects have been derived verbally from which others.]
 
-When play begins:
+When play begins (this is the setting proffered rule):
 	repeat with item running through things:
 		now the item proffers the item;
 	now the rock is not proffered by anything;
@@ -94,7 +94,7 @@ After printing the name of something (called special-target):
 
 A thing can be fake or real. A thing is usually real.
 
-When play begins:
+When play begins (this is the setting real and fake rule):
 	now every thing enclosed by the repository is fake;
 	now patsy-woman is real;
 	now Brock is real.

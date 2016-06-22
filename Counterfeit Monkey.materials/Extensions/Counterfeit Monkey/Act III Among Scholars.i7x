@@ -527,7 +527,7 @@ After writing a paragraph about the kitchen area:
 
 Instead of entering the kitchen area, say "This is really too small a space to make that distinction interesting." Understand "appliances" or "appliance" as the kitchen area. The description of kitchen area is "I have a [if a sink is in my apartment]sink, [end if]stove, refrigerator, cabinets, a countertop: the usual[if the number of sinks in my apartment is 0]. No sink, but that's thanks to your meddling[end if]." The introduction of kitchen area is "My mother attempted to provide a microwave, rice cooker, toaster, waffle iron, and julienne-fry-maker, but I pointed out that these objects would triple-populate the two square feet of available counter space."
 
-When play begins:
+When play begins (this is the setting up my apartment rule):
 	let destination be a random refrigerator which is in my apartment;
 	move the pot-of-yogurt to the destination;
 	let destination be a random furniture counter which is in my apartment;
@@ -775,7 +775,11 @@ After looking in the Language Studies Seminar Room when the seminar door is open
 		say "[One of]I shut the door so that [we] don't get interrupted.[or]For safety, I shut the door behind us.[stopping]";
 	continue the action.
 
-The Language Studies Seminar Room contains a chair. When play begins: let T be a random chair in the Language Studies Seminar Room; now T is not scenery.
+The Language Studies Seminar Room contains a chair.
+
+When play begins (this is the setting up the langauge studies seminar room rule):
+	let T be a random chair in the Language Studies Seminar Room;
+	now T is not scenery;
 
 Before going from the Language Studies Seminar Room when the player carries  Problem of Adjectives:
 	try putting Problem of Adjectives on the LSR bookcase.
@@ -1086,7 +1090,7 @@ Instead of taking the paint when the paint is retained:
 Instead of waving the letter-remover at the paint when the paint is retained:
 	say "Higgate might mind our modifying her stuff without permission." ]
 
-When play begins:
+When play begins (this is the setting up Higgate's office rule):
 	let N be a random chair in Higgate's Office;
 	move Professor Higgate to N.
 
@@ -1331,7 +1335,7 @@ Report Professor Waterstone saying hello to the player:
 	otherwise say "'Hello[one of] again[or][at random],' Waterstone says.";
 	stop the action.
 
-When play begins:
+When play begins (this is the setting up Waterstone's office rule):
 	let target be a random desk which is in Waterstone's Office;
 	move the invitation to the target;
 	move the small laptop to the target;

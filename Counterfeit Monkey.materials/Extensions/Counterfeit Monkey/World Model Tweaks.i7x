@@ -43,7 +43,7 @@ A smarter parser rule when sp_normal (this is the new stripping adverbs rule):
 
 The stripping failed with rule is not listed in any rulebook. [There are too many actions in the game where "with" IS fruitful, so this often gives a misleading response.]
 
-When play begins:
+When play begins (this is the change smarter parse messages rule):
 	choose row with SP rule of asking unparseable questions rule in the Table of Smarter Parser Messages;
 	now the message entry is "If you're trying to converse with other characters, the suggestions in the text provide possible phrasings; so if you read 'I might ask about lentils.', you might phrase your command ASK ABOUT LENTILS. Introducing other words or variant phrasings that weren't part of the suggestion may confuse the game.
 
@@ -781,7 +781,7 @@ An up-staircase is a kind of facade. Understand "step" or "steps" or "stairs" or
 Instead of climbing an up-staircase, try going up.
 Instead of climbing a down-staircase, try going down.
 
-When play begins:
+When play begins (this is the fix staircases rule):
 	now every down-staircase fronts down;
 	now every up-staircase fronts up.
 
@@ -821,7 +821,7 @@ Rule for distantly describing a room (called target) which encloses someone when
 	let N be "[the target]";
 	say "That way [we] can see [unless the target is proper-named][N in lower case][otherwise][the target][end if], in which [is-are a list of people enclosed by the target]."
 
-When play begins:
+When play begins (this is the nothing-to-see-that-way rule):
 	now nothing-to-see-that-way is "[We] can't see anything interesting in that direction."
 
 Screening relates various backdrops to various directions. The verb to screen (it screens, they screen, it screened, it is screened) implies the screening relation.
@@ -903,7 +903,7 @@ Report facing when the location is indoors:
 
 The sky is a distant backdrop. It screens up. The sun is part of the sky. The description of the sky is "[sky-description]". The description of the sun is "[sun-description]".
 
-When play begins:
+When play begins (this is the move backdrops to the outdoors rule):
 	move the sky backdrop to all outdoors rooms.
 
 
@@ -1160,7 +1160,7 @@ Instead of going by car when the location is offroad:
 
 [Include Conditional Backdrops by John Clemens.]
 
-When play begins:
+When play begins (this is the move busy streets backdrop rule):
 	move protesters backdrop to all roads in Busy Streets;
 	move traffic backdrop to all roads in Busy Streets;
 
@@ -1395,7 +1395,7 @@ Check going to a room when the player is not in the location:
 
 A toilet is usually seated.
 
-When play begins:
+When play begins (this is the toilet postures rule):
 	now every toilet allows seated;
 	now every toilet allows standing.
 
@@ -1483,7 +1483,7 @@ Section 3 - Bedrooms
 
 A bed is a kind of supporter. A bed is always enterable. A bed is usually reclining.
 
-When play begins:
+When play begins (this is the bed postures rule):
 	now every bed allows seated;
 	now every bed allows reclining;
 	now every bed which is not a dorm bed allows standing.
@@ -1546,7 +1546,7 @@ A desk is a kind of supporter. [Every desk incorporates two vertical drawers.] A
 
 A chair is a kind of supporter. A chair is usually scenery. A chair is always enterable. Understand "seat" as a chair. Understand "take [chair]" as entering. The description of a chair is usually "It is an ordinary inexpensive variety of chair, made locally and found around the island in great numbers." A chair is usually seated.
 
-When play begins:
+When play begins (this is the chair and desk postures rule):
 	now every chair allows seated;
 	now every chair allows standing;
 	now every desk allows seated;
@@ -1677,7 +1677,7 @@ Include Computers by Emily Short.
 
 The description of a keyboard is usually "Arranged in the Dvorak layout preferred in Anglophone Atlantis."
 
-When play begins:
+When play begins (this is the search engines rule):
 	repeat with item running through search engines:
 		now the results-found response of item is "The search turns up the following results:";
 		now the description of the item is "[We] can type search terms to look for data records."
@@ -1782,7 +1782,7 @@ So, yeah, it's not remotely realistic that we can carry around all the stuff we 
 
 [Include Considerate Holdall by Jon Ingold.
 
-When play begins:
+When play begins (this is the setting unstashable rule):
 	now every long thing is unstashable;
 	now the iron-pans are unstashable;
 	now every fluid thing is unstashable.

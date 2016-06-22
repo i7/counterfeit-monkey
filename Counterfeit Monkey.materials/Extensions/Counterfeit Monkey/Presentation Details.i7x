@@ -133,7 +133,7 @@ To fill the/-- status bar/line with (selected table - Table of Fancy Status):
 		right align cursor to 1;
 		say "[right entry]";
 
-When play begins:
+When play begins (this is the set status line alignment depth rule):
 	now right alignment depth is 20.
 
 Table of Fancy Status
@@ -686,7 +686,7 @@ Section 3 - About Menu
 
 Include Basic Help Menu by Emily Short.
 
-When play begins:
+When play begins (this is the adjust the basic help options rule):
 	choose row 1 in Table of Basic Help Options;
 	now description entry is "[story title] is a puzzle game about word manipulation, with moderate plot complexity. It will probably take a seasoned IF player at least eight hours to complete.
 

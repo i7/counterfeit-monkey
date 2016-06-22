@@ -205,6 +205,7 @@ The compass width is a number that varies. The compass width is 120.
 
 Include Graphic Links by Jeff Sheets.
 
+The setting directional hyperlinks rule is listed after the graphics window construction rule in the when play begins rules.
 When play begins (this is the setting directional hyperlinks rule):
 	follow the compass-drawing rule.
 

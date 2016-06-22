@@ -1065,7 +1065,7 @@ After printing the name of a nautical room while looking:
 
 The yacht's name is obviously a riff on Counterfeit Monkey (Slango's reason for calling it that) but also a reference to the Squirrel Nut Zippers song Trou Macacq.]
 
-When play begins:
+When play begins (this is the forbidding nautical rooms rule):
 	now every nautical room is forbidden.
 
 Section 2 - Sunning Deck
@@ -1193,7 +1193,7 @@ A sink called a galley sink is in the Galley. The description of the galley sink
 
 The multipurpose oven is fixed in place scenery in the Galley. It is an openable closed transparent container. Understand "convection" or "microwave" as the multipurpose oven. The description is "A versatile piece of machinery that can either microwave or convection-heat things. It's not terribly powerful at either task, but it suffices and moreover is very compact."
 
-When play begins:
+When play begins (this is the setting up the galley rule):
 	let target be a random freezer compartment which is part of the Galley refrigerator;
 	move the fig ice cream to the target;
 	move the frozen dinners to the target;
@@ -1226,7 +1226,7 @@ The shape of hull in this part of the yacht means that the room is much narrower
 Brock's bed is a yacht bed in Brock's Stateroom. It is scenery. The description is "Brock affects a kind of ruffled bachelor style, which means that his bed is made but the blankets suggestively rumpled. It is an open question whether he rumples them himself on purpose."
 
 
-When play begins:
+When play begins (this is the setting up the linens rule):
 	let N be random sheets which are [part of a bed in] enclosed by Brock's Stateroom;
 	unless N is nothing:
 		now the description of N is "Egyptian cotton, high thread count, dyed deep black. Whether this is part of the luxury look of the boat or a preference of Brock's is a question you've never felt like asking.";
@@ -1337,7 +1337,7 @@ Sanity-check wearing the swimsuit:
 Instead of wearing the black turtleneck:
 	say "There's no need to change just now."]
 
-When play begins:
+When play begins (this is the setting up your bunk rule):
 	let d be a random rightmost drawer that is [part of a bed in] enclosed by Your Bunk;
 	unless d is nothing:
 		move the financial records to d;
@@ -1384,7 +1384,7 @@ Slango's Head is aft from Slango's Bunk.
 The description is "All the absolutely required amenities of a bathroom, packed into the least possible space. The international space station probably assigns more room to the bathroom functions."
 It is nautical. It is indoors. It is a bathroom.
 
-When play begins:
+When play begins (this is the setting up the natuical bathrooms rule):
 	repeat with item running through baths which are in nautical bathrooms:
 		now the printed name of the item is "shower";
 		now the description of the item is "Just a stand-up shower with a folding plastic door. At least the water is usually hot."

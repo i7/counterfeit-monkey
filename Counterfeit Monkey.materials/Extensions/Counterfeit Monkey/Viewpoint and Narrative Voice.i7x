@@ -88,7 +88,7 @@ Section 2 - Making TRD first plural
 
 [ Tailored Room Description assumes a second-person narrator. We use TRD's abilities heavily throughout the game to control the order and manner in which items are described, but we need to do a couple of tweaks to get the output to conform properly to requirements here.]
 
-When play begins:
+When play begins (this is the customise tailored room description rule):
 	now the current-topic-sentences-table is the Table of NBS;
 	now the current-room-content-table is the Table of NRCD.
 
@@ -126,7 +126,7 @@ Section 4 - Making Threaded Conversation first plural
 
 [Threaded Conversation also refers to 'you' only in one place, which can be overridden by redefining a variable text: ]
 
-When play begins:
+When play begins (this is the make threaded conversations viewpoint sensitive rule):
 	now quip-suggestion-phrase is "[one of][We] could [or]I'd like to [or][We] want to [or]I'm inclined to [or]My response would be to [as decreasingly likely outcomes]".
 
 The new no-quip rule is listed instead of the no quip worth saying default rule in the for expressing ignorance by rulebook.
