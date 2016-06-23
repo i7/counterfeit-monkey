@@ -341,6 +341,11 @@ A multiple action processing rule when dropping:
 	if the player is empty:
 		alter the multiple object list to {};
 		say "[We] don't have anything to drop.";
+	otherwise:
+		let L be the multiple object list;
+		if the player is listed in L:
+			remove player from L;
+			alter the multiple object list to L.
 
 The new exclude people from drop all rule is listed instead of the exclude people from drop all rule in the for deciding whether all includes rulebook.
 
