@@ -959,9 +959,9 @@ Open Sea is north of the Abandoned Shore. It is forbidden. The description is "T
 Rule for listing exits when looking in the Open Sea:
 	do nothing instead.
 
-[A description-concealing rule:
+A description-concealing rule:
 	if the location is the Open Sea:
-		now everything which is enclosed by the kayak is not marked for listing.]
+		now everything which is enclosed by the kayak is not marked for listing.
 
 The viewed-yacht is a distant, privately-named scenery thing in Open Sea. Understand "slango's" or "yacht" as the viewed-yacht. The description is "It's just there on the horizon." The printed name is "Slango's yacht".
 
