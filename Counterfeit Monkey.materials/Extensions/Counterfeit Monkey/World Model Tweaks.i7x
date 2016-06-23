@@ -708,34 +708,18 @@ Carry out retreating:
 	say "(heading [new direction])[line break]";
 	try going the new direction.
 
-Understand "leave [any room]" or "go outside [any room]" as departing. Departing is an action applying to one thing.
+Understand "leave [any room]" or "go outside [any room]" or "exit [any room]" as departing. Departing is an action applying to one thing.
 
 Check departing: if the noun is not the location, say "You aren't in [the noun]." instead.
 
 Carry out departing:
-	let chosen way be the logical exit;
-	if chosen way is a direction
-	begin;
+	if location is dead-end:
+		let chosen way be a random exit-listable direction;
 		say "(heading [chosen way], since that is the only direction available)[line break]";
 		try going chosen way;
 	otherwise;
-		 say "Any particular direction? ";
-		carry out the listing exits activity;
-	end if.
-
-To decide what direction is the logical exit:
-	let N be 0;
-	let chosen way be north;
-	repeat with way running through directions
-	begin;
-		let place be the room way from the location;
-		if place is a room
-		begin;
-			increase N by 1;
-			let chosen way be the way;
-		end if;
-	end repeat;
-	if N is 1, decide on the chosen way.
+		say "Any particular direction? ";
+		carry out the listing exits activity.
 
 Chapter 2 - Looking Towards Other Areas
 
