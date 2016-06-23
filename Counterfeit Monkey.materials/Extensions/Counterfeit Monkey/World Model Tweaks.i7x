@@ -717,7 +717,7 @@ Carry out departing:
 		let chosen way be a random exit-listable direction;
 		say "(heading [chosen way], since that is the only direction available)[line break]";
 		try going chosen way;
-	otherwise;
+	otherwise:
 		say "Any particular direction? ";
 		carry out the listing exits activity.
 
