@@ -465,6 +465,7 @@ Understand "pound face" as testing facing. Testing facing is an action out of wo
 Carry out testing facing:
 	repeat with item running through rooms:
 		move the player to item;
+		carry out the caching scope activity with player;
 		say "[line break] north: ";
 		try facing north;
 		say "[line break] northwest: ";
@@ -484,7 +485,54 @@ Carry out testing facing:
 		say "[line break] down: ";
 		try facing down;
 		say "[line break] up: ";
-		try facing up.
+		try facing up;
+		say "[line break] in: ";
+		try facing inside;
+		say "[line break] out: ";
+		try facing outside.
+
+
+Understand "pound insides" and "pound outsides" as testing insides. Testing insides is an action out of world.
+
+Carry out testing insides:
+	try unmonkeying;
+	try deparkering;
+	repeat with item running through rooms:
+		say "(Testing insides and outsides of [item])";
+		move player to item;
+		carry out the caching scope activity with player;
+		say "> GO IN";
+		let way be in-direction of item;
+		if way is a direction:
+			let R be the room the way from location;
+			if R is a room:
+				say "[line break](Going inside from [the item] will take the player [way] to [R])[paragraph break]";
+			otherwise:
+				try going inside;
+		otherwise:
+			say "[line break]([Item] has no in-direction property)";
+			try going inside;
+		say "> LOOK IN";
+		try facing inside;
+		say "> GO OUT";
+		let way be out-direction of item;
+		if way is a direction:
+			let R be the room the way from location;
+			if R is a room:
+				say "[line break](Going outside from [the item] will take the player [way] to [R])[paragraph break]";
+			otherwise:
+				try going outside;
+		otherwise:
+			say "[line break]([Item] has no out-direction property)";
+			if item is dead-end:
+				let way be a random exit-listable direction;
+				say "[line break](but because there is only one way out of here, going out will take us [way] to [the room way from location])[paragraph break]";
+			otherwise:
+				try going outside;
+		say "> LOOK OUT";
+		try facing outside.
+
+
 
 Understand "pound all-lists" as pounding all-lists. Pounding all-lists is an action out of world.
 

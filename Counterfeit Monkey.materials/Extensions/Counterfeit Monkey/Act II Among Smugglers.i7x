@@ -106,6 +106,8 @@ The aquarium-shelving is scenery in the aquarium. Understand "shelves" or "books
 
 The collection of fish is scenery in the Aquarium. Understand "swordfish" or "bass" as the collection of fish. The description is "None of the fish has been dusted in the last decade. The collection presents a slightly mournful air."
 
+Out-direction of Aquarium Bookstore is west. [Deep Street]
+
 Understand "browse [merchandise]" as searching.
 
 Test merch with "browse / browse merchandise / x merchandise / look at merchandise / g / g / g" in Aquarium bookstore.
@@ -215,6 +217,8 @@ The Fish Market is northwest of Deep Street. The description is "Not very fishy 
 Rule for listing exits when the location is Fish Market and the Authenticator is in the location:
 	do nothing instead.
 
+In-direction of Fish Market is east. [Tin hut]
+
 After going to Fish Market when the authenticator is in Fish Market and the player is hurrying:
 	let N be the number of entries in the path so far of the player;
 	if N is greater than 1:
@@ -252,6 +256,8 @@ Sanity-check doing something in the presence of the Authenticator:
 	if looking:
 		make no decision;
 	otherwise if going east:
+		make no decision;
+	otherwise if going inside:
 		make no decision;
 	otherwise if approaching the tin hut:
 		make no decision;
@@ -292,6 +298,8 @@ The Outdoor Cafe is south of the Fish Market and west of Deep Street. The printe
 
 The rocky cliff-face is a scenery facade in Outdoor Cafe. It fronts south. Understand "cliff" or "rocks" or "face" as the rocky cliff-face. The description is "This little terrace area has been carved out of the hillside. Immediately to the south there is only rough rock wall for many feet up."
 	The closure notice is "That way is bare cliff rock. ".
+
+In-direction of Outdoor Cafe is west. [Into the café building (facade)]
 
 The cafe building is a scenery facade in Outdoor Cafe. It fronts west. The printed name is "café building". Understand "café" as the cafe building. The description is "The source of drinks and small snacks when the café is in full operation. At the moment there isn't much sign of life from inside." The closure notice of the cafe building is "[if traffic circle is visited]The place is entirely closed now.[else]When we approach, a girl comes to the window and waves us off. 'We're just closing up. No new customers!'[end if] "
 
@@ -372,6 +380,9 @@ Section 6 - Tin Hut
 
 The Tin Hut is east of the Fish Market. It is indoors. The description is "Most of the light in here comes from [circular windows] punched into the tin walls just under the ceiling. From the inside, the building looks both larger and more sound than it appears from outside: there are plenty of sturdy [struts] supporting the roof and keeping the walls upright."
 	The introduction is "Sometimes smugglers and forgers have been known to stash things in here, since the building is close to the docks but rarely attracts the interest of customs officials."
+
+Out-direction of Tin Hut is west. [Out to fish market]
+In-direction of Tin Hut is down. [Into the crawlspace]
 
 Understand "hide [text]" as a mistake ("A natural impulse, but I don't think she's coming in here. And if she did, the last thing [we][']d want would be to be caught hiding. The key thing is to be in plain sight and obviously innocent.") when the location is the Tin Hut and the Authenticator is in the Fish Market.
 
@@ -466,6 +477,8 @@ Section 7 - The Crawlspace
 
 The Crawlspace is below the trap-door. The description is "An awkward, low, concrete-lined crawlspace beneath the tin hut. It smells somewhat like animals; in spite of this it clearly gets a bit more use than anyone would like the customs officials to know about."
 
+Out-direction of Crawlspace is up. [Into the tin hut]
+
 The Crawlspace is indoors.
 
 After deciding the scope of the player when the player is in the Crawlspace:
@@ -559,6 +572,8 @@ Section 9 - Counterfeit Monkey
 
 The Counterfeit Monkey is west of the Docks. It is proper-named and indoors. The description is "[one of]It takes a minute for us to adjust to the light in here. [or]Infamously this pub was raided in 1929, the year that the Bureau developed its first meager attempt at an Authentication Scope, and dozens of smugglers and fraudulent businessmen went to jail. But neither that raid nor subsequent scrutiny has ever shut the place down entirely. [or][stopping]Built when people were a bit shorter and ceilings were a bit lower, the Counterfeit Monkey is always smoky and never well lit, even in the middle of the day."
 
+Out-direction of Counterfeit Monkey is east. [To the docks]
+
 A description-concealing rule when Slango is in the Counterfeit Monkey:
 	now the clientele is unmarked for listing;
 	now the barman is unmarked for listing.
@@ -649,6 +664,8 @@ The Customs House is east of the Docks. It is indoors. The description is "This 
 
 There is a [long line] of people waiting to leave Atlantis, even on Serial Comma Day."
 	The introduction is "No one is paying any attention to us [i]yet[/i], but I wouldn't advise spending much time here."
+
+Out-direction of Customs House is west. [To the docks]
 
 Sanity-check entering the long line:
 	say "We can only afford to try going through this line once, and it's going to have to be when we're really ready to leave. Which we're not." instead.
@@ -880,7 +897,8 @@ To say luggage-item:
 
 
 Sanity-check going nowhere when the location is Customs House:
-	try entering the long line instead.
+	unless the noun is outside:
+		try entering the long line instead.
 
 Test Customs with "tutorial off / look / x side rooms / x line / x tourists / x scientists / x officials / x private room / z / z / z / z / z / z" in Customs House.
 
@@ -952,7 +970,7 @@ Check waving the letter-remover at the Traffic Circle when the current setting o
 
 Traffic Circle is inside from the Roundabout. It is a privately-controlled outdoors road.
 
-[TODO:][test]
+Out-direction of Traffic Circle is outside. [The roundabout and the traffic circle are the only place where the standard outside and inside directions are used]
 
 The no-dropping rule does nothing when the current action is dropping the restoration-gel rifle and the location is Traffic Circle.
 

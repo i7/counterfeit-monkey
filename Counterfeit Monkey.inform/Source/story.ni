@@ -150,6 +150,7 @@ Include Viewpoint and Narrative Voice by Counterfeit Monkey.
 		•	Section 6 - The THINK verb ]
 	
 Include World Model Tweaks by Counterfeit Monkey.
+Include Insides and Outsides by Counterfeit Monkey.
 Include Actions on Multiple Objects by Counterfeit Monkey.
 
 [	•	Book 4 - Default World Model Tweaks
@@ -544,7 +545,8 @@ Include Presentation Details by Counterfeit Monkey.
 Include Character Models by Counterfeit Monkey.
 Include Viewpoint and Narrative Voice by Counterfeit Monkey.
 Include World Model Tweaks by Counterfeit Monkey.
-Include Actions on Multiple Objects by Counterfeit Monkey.
+Include Insides and Outsides by Counterfeit Monkey
+Include Actions on Multiple Objects by Counterfeit Monkey..
 Include Features of Created Objects by Counterfeit Monkey.
 Include Schedule and Time by Counterfeit Monkey.
 Include Act I Among Sightseers by Counterfeit Monkey.

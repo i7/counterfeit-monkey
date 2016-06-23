@@ -490,6 +490,8 @@ Section 5 - Tunnel through Chalk
 
 The Tunnel through Chalk is below Surveillance Room.  Tunnel through Chalk is indoors and forbidden. The description is "This passage has been cut through natural cliff rock and looks older than the Bureau itself. The walls are rough-hewn, exposing [sedimentary strata]. Here and there it looks as though someone has actually excavated a fav[our]ed rock or relic."
 
+In-direction of Tunnel through Chalk is east. [Personal apartment]
+
 The sedimentary strata are scenery in the Tunnel through Chalk. The description is "Layers of slightly varying chalk col[our], some of which are embedded with tiny seashells and other fossil evidence." Understand "layers" or "chalk" or "seashells" or "tiny" or "shells" or "evidence" or "fossil evidence" as the sedimentary strata.
 
 Every turn when the location is Tunnel through Chalk:
@@ -680,6 +682,8 @@ Section 2 - Private Solarium
 
 The Private Solarium is east of Personal Apartment. It is indoors and forbidden. It contains a coffee table and a chaise longue. The description of the coffee table is "Antique as well, most likely. It is the same handsome wood as the furnishings in the rest of the apartment."
 
+In-direction of Private Solarium is west. [Back to personal apartment]
+Out-direction of Private Solarium is north. [Out to precarious perch]
 
 Rule for listing exits when looking in the Private Solarium:
 	do nothing instead.
@@ -814,6 +818,8 @@ Report touching the sea-view:
 			say "The water retains the heat of a very sunny day, though the air is cooling quickly." instead;
 
 Precarious Perch is a room. It is forbidden. The description is "From up here there's a handsome [distant-sea-view], which isn't [i]so[/i] far down [i]really[/i]. But it's a scramble down a nearly sheer cliff for the first bit, until [we] make it down to the rockfall below, and it would be easy for a careless person to injure herself."
+
+In-direction of Precarious Perch is south. [Back into private solarium]
 
 Rule for listing exits while looking in Precarious Perch:
 	do nothing instead.
@@ -1101,6 +1107,8 @@ The Navigation Area is fore from the Sunning Deck. It is nautical. The descripti
 
 The Galley is just below, [down] a steep staircase that is almost a ladder."
 
+In-direction of Navigation Area is down. [Into galley]
+
 Rule for writing a paragraph about Slango when Slango is on the Command Chair:
 	say "Slango is in [the command chair]. He looks more relaxed driving the boat than I've ever seen him before."
 
@@ -1113,6 +1121,8 @@ The command chair is an enterable scenery supporter in the Navigation Area. The 
 The controls are scenery in the Navigation Area. Understand "mass" or "buttons" or "button" or "lever" or "levers" or "steering" or "wheel" as the controls. The description is "It's curious, looking at these and knowing I've never touched them before in my life, and yet having your instinctive muscular knowledge of what they're all for and how they work. I feel like I could sit down and drive the yacht, and at the same time I find the idea terrifying."
 
 Foredeck is fore from the Navigation Area. It is nautical. The description is "Here the yacht is nothing but a nose over the water. A [hatch], hardly big enough for a portly person, descends into the so-called crew cabin."
+
+In-direction of Foredeck is down. [Into crew cabin]
 
 Some portholes are a kind of thing. Portholes are usually scenery. The description of the portholes is usually "Perhaps I should drop any attempt to sound nautical and just call them windows, because they are not the round things one normally thinks of. But they are waterproof and just above the water line."  Understand "window" or "windows" or "porthole" or "portholes" as portholes. The printed name of portholes is always "portholes".
 
@@ -1143,6 +1153,8 @@ The Crew Cabin is a room. It is nautical. It is indoors. The description is "It 
 
 I'm fascinated to note what shape a bed can be when it's not rectangular. More sort of curved and tapering. Convenient if you're called on to house a mermaid.".
 
+Out-direction of Crew Cabin is up. [Out to foredeck]
+
 Instead of looking in Crew Cabin when the player is gelled:
 	say "One upside to our continuing to share the same bodies: I don't have to try to sleep in that narrow tapery bed."
 
@@ -1155,6 +1167,8 @@ Section 5 - Galley
 The Galley is below the Navigation Area. It is nautical. It is indoors. The description is "Smaller than the kitchen in a comfortable house, but carefully and elegantly fitted, with an electric stovetop, a convection oven/microwave, a tiny refrigerator, a sink: enough, in short, to serve the crew of three on long trips.[one of] I guess even a fairly big boat is still small on the inside, eh?[or][stopping]
 
 There's even a little washing machine, for items too big to hand-wash in the sink.".
+
+Out-direction of Galley is up. [Back up to navigation area]
 
 A built-in table is scenery in the Galley. It is a supporter. The description is "When the weather is good and there is nothing urgent happening, you all often eat out on the sunning deck, which is more congenial; but at other times you take your meals down here, on this table. The seating is built-in.". Some seating is part of the built-in table. The seating is an enterable supporter. Understand "built-in seating" as the seating.
 
@@ -1230,7 +1244,7 @@ Brock's Stateroom is fore from the Galley. It is nautical.  It is indoors. The d
 
 The shape of hull in this part of the yacht means that the room is much narrower fore than aft, the walls sweeping grandly outward from the head of [Brock's bed]. It looks like the bed of Captain Horndog, Space Woman[ize]r. If you ask me."
 
-
+Out-direction of Brock's Stateroom is aft. [Back to galley]
 
 Brock's bed is a yacht bed in Brock's Stateroom. It is scenery. The description is "Brock affects a kind of ruffled bachelor style, which means that his bed is made but the blankets suggestively rumpled. It is an open question whether he rumples them himself on purpose."
 
@@ -1314,6 +1328,8 @@ Section 8 - Your Bunk
 
 Your Bunk is aft-starboard from the Galley.  It is nautical .  It is indoors. The description is "Amazing: it's even tinier than my apartment, and the bed isn't even a twin in width. Across from the bed is a built-in [bench], with [random portholes] above, just at the waterline."
 
+Out-direction of Your bunk is fore-port. [Back to galley]
+
 The bench is an enterable supporter in Your Bunk. It is scenery. The description is "It's hard and less comfortable than a sofa, but it is adequate for seating on the rare occasions when a second person comes into your room. Mostly you read on the bed."
 
 Some financial records are a thing. The clipping is a thing. The description of the financial records is "Brock and Slango managed for you at first, depositing your part of job commissions into a Swiss bank account. It is only recently that you've started to branch out in managing that money. After your wire transfer to your brother, you have only a few tens of thousands of dollars left, but that will change when you get your share for rescuing the plans of the T-inserter."
@@ -1376,6 +1392,8 @@ Your Head is aft from Your Bunk. It is nautical. It is a bathroom.  It is indoor
 Section 11 - Slango's Bunk
 
 Slango's Bunk is aft-port from the Galley.  It is nautical.  It is indoors. The description is "Just as tiny as yours, with a bed narrower than a standard twin, and its own miniature head, and drawers cunningly fitted under the bed to hold clothing and other necessities."
+
+Out-direction of Slango's bunk is fore-starboard. [Back to galley]
 
 Instead of going fore in Slango's Bunk:
 	try going fore-starboard.

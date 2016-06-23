@@ -115,6 +115,8 @@ The Public Convenience is east of Bus Station. It is indoors and southern. The P
 
 The introduction of the Public Convenience is "A faint smell of lavender lingers in the air."
 
+Out-direction of Public Convenience is west. [To the bus station]
+
 Some sink-collectives are scenery in the public convenience. The sink-collectives are privately-named. The printed name is "sinks".  Understand "sinks" as sink-collectives.
 
 Sanity-check doing something other than examining to the sink-collectives:
@@ -197,6 +199,8 @@ The Rotunda is south of Tall Street. It is indoors and southern. The description
 What sets this one apart is the lettering, each sigil no bigger than a flea, carved over every inch of the walls. Inscribed here is, in fact, the [italic type]entire[roman type] [inscribed-text] of A New Orthodox Orthography[if the Rotunda is unvisited], which means that if [we] had a great deal of patience and many rolls of butcher paper, [we] could take rubbings and wind up with our very own volume.
 
 [We] don't, of course. There are better things to do. More important places to go[end if]. The administrative part of the bureau is away to the south, and there is an exhibit of letter tools to the east, which is open to the public."
+
+Out-direction of Rotunda is north. [To Tall Street]
 
 Instead of facing up in the Rotunda: try examining the inscribed-text.
 
@@ -329,6 +333,9 @@ Section 7 - Antechamber
 The Antechamber is south of the Rotunda. It is indoors and southern. The description is "The most important task of any government bureau is to keep away time-wasters, irritants, and uninformed members of the general public, who might distract the diligent workers within from their important tasks. The Bureau of Orthography is no different.
 
 An [instructive notice] details the criteria for entry to the Bureau proper."
+
+Out-direction of Antechamber is north. [To the rotunda]
+In-direction of Antechamber is east. [To Bureau hallway]
 
 The instructive notice is scenery in the Antechamber. The description is "Please note that those wishing to enter must have a PASS suitable for visitors, which must include an UP TO DATE photograph closely resembling the subject. Passes that do not look like their possessors will be rejected.
 
@@ -512,7 +519,7 @@ Section 8 - Hallway and Inaccessible Room
 
 The Bureau Hallway is east of the Antechamber. It is indoors and southern. The description is "This is a long hallway with many doors leading off, the business of the bureau being varied and all-encompassing; it is for all essential purposes the chief organ of government in Atlantis, since only a few topics are brought to citizen referendum."
 
-
+Out-direction of Bureau Hallway is west. [To antechamber]
 
 The All-Purpose Office is east of Bureau Hallway. It is indoors and southern. The description is "There's a front desk at which a receptionist meets with members of the public and assesses their needs; beyond that, the room is crowded with dozens of stations for the use of the All-Purpose Officers, and stretches back some distance. It looks like an old-fashioned newsroom.
 
@@ -528,6 +535,8 @@ Chapter 2 - Bureau Basement
 Section 1 - Foot of Stairs
 
 Below Bureau Hallway is Bureau Basement South. Bureau Basement South is indoors, forbidden and southern. The description of Bureau Basement South is "[We] have descended into a windowless underground passage. The hallway runs [north] from here, and for an eerily long way [--] the tunnels must extend well beyond the above-ground profile of the building."
+
+Out-direction of Bureau Basement South is up. [To bureau hallway]
 
 Rule for writing a paragraph about the plywood cutout when the seer automaton is mentionable and the location is Bureau Basement South:
 	say "Propped in the corner are some articles that were probably meant to be used as part of the Serial Comma Day Fair, but got confiscated instead: [a seer automaton] and [a plywood cutout] depicting Atlantida.".
@@ -644,6 +653,8 @@ Some Hello Kitty stickers are part of the cute security door. The description is
 Section 3 - Secret Section
 
 Bureau Basement Secret Section is indoors, forbidden and southern. The description is "The heightened security on this side of the door is obvious everywhere [we] look. The floor is tiled in paisley tiles. The light fixtures give off pale pink light. The walls are covered in frog leather. The doors are locked with padlocks the size of handbags, locks decorated à la Louis Quinze, combination locks made of solid gold. There is not a bare noun in sight."
+
+Out-direction of Bureau Basement Secret Section is south. [Bureau basement middle]
 
 Some frog leather walls, paisley tile floors, enormous padlocks, fancy locks, and gold combination locks are scenery in the Bureau Basement Secret Section. The description of the frog leather walls is "Mostly green spotted with brown, but for decorative trim they've used more exotic tree frogs in blue and orange."
 
