@@ -856,10 +856,10 @@ The left-alt of southeast is east. The right-alt of southeast is south.
 The left-alt of east is northeast. The right-alt of east is southeast.
 The left-alt of northeast is north. The right-alt of northeast is east.
 
-To say is-are of (item - a room):
-	say "is"
+[To say is-are of (item - a room):
+	say "is"]
 
-Last check facing:
+Last check facing (this is the face adjacent directions rule):
 	if the noun is up or the noun is down:
 		make no decision;
 	let leftway be left-alt of the noun;
@@ -868,10 +868,12 @@ Last check facing:
 	let rightward thing be the thing seen facing rightway;
 	if leftward thing is nothing and rightward thing is nothing:
 		make no decision;
+	if the location is indoors:
+		say "That way is just a corner of the room, though [we] could go [unless the leftward thing is nothing][leftway] to [the leftward thing][end if][unless the leftward thing is nothing or the rightward thing is nothing] or [end if][unless the rightward thing is nothing][rightway] to [the rightward thing][end if]." instead;
 	if leftward thing is nothing:
-		say "There is nothing of note to [the leftway], but to [the rightway] [regarding the rightward thing][are] [the rightward thing]." instead;
+		say "There is nothing of note to [the noun] or [the leftway], but to [the rightway] [regarding the rightward thing][are] [the rightward thing]." instead;
 	if rightward thing is nothing:
-		say "There is nothing of note to [the rightway], but to [the leftway] [regarding the leftward thing][are] [the leftward thing]." instead;
+		say "There is nothing of note to [the noun] or [the rightway], but to [the leftway] [regarding the leftward thing][are] [the leftward thing]." instead;
 	if the location is indoors:
 		say "That way is just a corner of the room, though [we] could go [leftway] to [the leftward thing] or [rightway] to [the rightward thing]." instead;
 	otherwise if leftward thing is a road and rightward thing is a road:
