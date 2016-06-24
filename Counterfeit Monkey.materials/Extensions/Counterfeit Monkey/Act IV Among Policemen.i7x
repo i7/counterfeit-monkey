@@ -202,7 +202,7 @@ The skylight is scenery in the rotunda. The description is "It is distant and pe
 
 The inscribed-text is scenery in the Rotunda. Understand "new" or "orthodox" or "orthography" or "inscribed" or "text" or "lettering" or "inscription" as the inscribed-text. The printed name is "text". The description of the inscribed-text is "It is far too small to read, especially since the letters are not painted or inked, just carved into the stone surfaces." Instead of touching the inscribed-text: say "The letters are cool and tiny under our fingers."
 
-The informational bulletin-board is fixed in place in the Rotunda. Understand "bulletin" or "board" as the bulletin-board.  The initial appearance is "Near the street entrance is a sizable [bulletin-board] advertising the services of the Bureau[if the bin is in the location]; and next to this, pushed back to be out of the way, is a [bin][end if]. [run paragraph on]"
+The informational bulletin-board is fixed in place in the Rotunda. Understand "bulletin" or "board" as the bulletin-board.  The initial appearance is "Near the street entrance is a sizable [bulletin-board] advertising the services of the Bureau[if the bin is in the location]; and next to this, pushed back to be out of the way, is a [bin][end if].[run paragraph on]"
 
 The description is "[i]What Can Your Bureau of Orthography Do For You?[/i] inquires the bulletin board, in a sprightly casual font.
 
