@@ -1449,6 +1449,9 @@ The h-staircase is an up-staircase. The h-staircase is in the Hostel. The printe
 Instead of facing up in the hostel:
 	say "The ceiling is a little cracked but in no way fascinating."
 
+Instead of facing up in the dormitory room:
+	say "The ceiling is a little cracked but in no way fascinating."
+
 The attendant's desk is a desk in the Hostel. The description is "Formica with a fake wood grain."
 
 The attendant is a woman in the Hostel. The printed name is "desk attendant". Understand "desk attendant" as the attendant. The initial appearance is "[The attendant] [if the current mood of the attendant is distrustful]watches us suspiciously[otherwise]is sort of eying us[end if]." The description of the attendant is "She's dressed in a kind of casual-hippy way: nose ring, poofy [blouse] that doesn't fit quite right."
