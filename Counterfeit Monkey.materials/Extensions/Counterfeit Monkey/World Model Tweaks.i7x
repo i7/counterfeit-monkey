@@ -815,14 +815,14 @@ When play begins (this is the nothing-to-see-that-way rule):
 
 Screening relates various backdrops to various directions. The verb to screen (it screens, they screen, it screened, it is screened) implies the screening relation.
 
-Check facing when the location contains a backdrop:
+Check facing when the location contains a backdrop (this is the face backdrops rule):
 	repeat with the item running through backdrops in the location:
 		if the item screens the noun:
 			if the noun is not up and the noun is not down:
 				say "To the [noun] [regarding the item][are] [an item]. [run paragraph on]";
 			try examining the item instead. [We want to be able to fill in what's that way.]
 
-Check facing when the location contains a facade:
+Check facing when the location contains a facade (this is the face facades rule):
 	repeat with item running through facades in the location:
 		if the item fronts the noun:
 			if the noun is not up and the noun is not down:
