@@ -664,7 +664,7 @@ Chapter 3 - Campus Itself
 
 Section 1 - University Oval
 
-The sturdy iron gate is southeast of Palm Square. It is scenery. The sturdy iron gate is a door. The sturdy iron gate is closed, lockable, and locked. The description of the sturdy iron gate is "The campus as a whole is walled and gated because of the amount of linguistic research that happens inside. This is a very lightweight form of security, more symbolic than anything, with much more significant protections on the really powerful materials[if the ring is not handled].
+The sturdy iron gate is southeast of Palm Square. It is scenery. The sturdy iron gate is a transparent door. The sturdy iron gate is closed, lockable, and locked. The description of the sturdy iron gate is "The campus as a whole is walled and gated because of the amount of linguistic research that happens inside. This is a very lightweight form of security, more symbolic than anything, with much more significant protections on the really powerful materials[if the ring is not handled].
 
 I have the student ring that opens this back in my apartment. I just wasn't expecting to need to go in there ever again[ring-fetch][end if].".
 
