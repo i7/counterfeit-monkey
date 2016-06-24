@@ -293,7 +293,7 @@ The Outdoor Cafe is south of the Fish Market and west of Deep Street. The printe
 The rocky cliff-face is a scenery facade in Outdoor Cafe. It fronts south. Understand "cliff" or "rocks" or "face" as the rocky cliff-face. The description is "This little terrace area has been carved out of the hillside. Immediately to the south there is only rough rock wall for many feet up."
 	The closure notice is "That way is bare cliff rock. ".
 
-The cafe building is a scenery facade in Outdoor Cafe. It fronts west. The printed name is "café building". Understand "café" as the cafe building. The description is "The source of drinks and small snacks when the café is in full operation. At the moment there isn't much sign of life from inside." The closure notice of the cafe building is "[if traffic circle is visited]The place is entirely closed now.[else]When we approach, a girl comes to the window and waves us off. 'We're just closing up. No new customers!'[end if]"
+The cafe building is a scenery facade in Outdoor Cafe. It fronts west. The printed name is "café building". Understand "café" as the cafe building. The description is "The source of drinks and small snacks when the café is in full operation. At the moment there isn't much sign of life from inside." The closure notice of the cafe building is "[if traffic circle is visited]The place is entirely closed now.[else]When we approach, a girl comes to the window and waves us off. 'We're just closing up. No new customers!'[end if] "
 
 Some round black metal tables are supporters in the outdoor cafe.
 	The initial appearance is "Several [round black metal tables] have been set out, with [umbrellas]."
