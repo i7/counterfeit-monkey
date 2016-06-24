@@ -1033,7 +1033,7 @@ Instead of taking the watch when the watch is not handled and the watch is on th
 Rule for disclosing contents of the blankets:
 	say "Laid out on the blankets carefully as though precious merchandise [is-are a list of mentionable things on the blankets]. " ]
 
-The church exterior is a facade in Church Forecourt. Understand "new church" or "plaster" or "entrance" or "entry" or "flank" or "building" or "flank of the building" as the church exterior. The printed name is "New Church".
+The church exterior is a facade in Church Forecourt. It fronts west. Understand "new church" or "plaster" or "entrance" or "entry" or "flank" or "building" or "flank of the building" as the church exterior. The printed name is "New Church".
 	The initial appearance is "This corner of the park, in the lee of the church, has been left free of kiosks and booths. Contrary to the usual rules of cathedral layout, the [church exterior] is oriented toward the north, so [we] are standing by the flank of the building, though there is an entrance on this side."
 	The description is "It manages to be austere without seeming in the least modern: the walls are white and the windows clear, but the proportions, the texture of the plaster, the irregular leading between the panes of glass, all come of the age of handmade things."
 
@@ -2008,7 +2008,7 @@ Instead of putting the restoration gel on the defaced ashlar block:
 Rule for listing exits when looking in Old City Walls:
 	do nothing instead.
 
-Turret-view is a facade in Old City Walls. It is scenery. The printed name is "turret". Understand "old" or "hexagonal" or "tower" or "turret" as turret-view. The description is "The turret extends to the east. It's one of the best preserved pieces of the old wall."
+Turret-view is a facade in Old City Walls. It fronts east. It is scenery. The printed name is "turret". Understand "old" or "hexagonal" or "tower" or "turret" as turret-view. The description is "The turret extends to the east. It's one of the best preserved pieces of the old wall."
 
 Section 2 - The Turret
 

@@ -102,7 +102,7 @@ A dove is a bird in the Bus Station. The initial appearance is "A [dove] flutter
 The long-road is a facade in the Bus Station. The printed name is "long road". Understand "long" or "road" as the long-road. It is scenery. It fronts southeast. The description is "A long road leads through the outskirts of town south and east towards the rest of the island. It's an interesting journey, but not for today."
 	The closure notice is "That would be a long walk and in the wrong direction. ".
 
-The convenience-exterior is a scenery facade in the Bus Station. The printed name is "public convenience". Understand "public" or "convenience" as the convenience-exterior. The description is "A humble structure."
+The convenience-exterior is a scenery facade in the Bus Station. It fronts east. The printed name is "public convenience". Understand "public" or "convenience" as the convenience-exterior. The description is "A humble structure."
 
 Rule for listing exits while looking in Bus Station:
 	do nothing instead.
