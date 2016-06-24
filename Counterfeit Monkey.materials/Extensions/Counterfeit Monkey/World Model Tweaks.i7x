@@ -840,9 +840,6 @@ The left-alt of southeast is east. The right-alt of southeast is south.
 The left-alt of east is northeast. The right-alt of east is southeast.
 The left-alt of northeast is north. The right-alt of northeast is east.
 
-[To say is-are of (item - a room):
-	say "is"]
-
 Last check facing (this is the face adjacent directions rule):
 	if the noun is up or the noun is down:
 		make no decision;
