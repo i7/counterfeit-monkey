@@ -2188,6 +2188,8 @@ My childhood bedroom faces northwest, away from the docks, towards the roofs of 
 
 The pink door is north of Webster Court and south of Foyer. The pink door is a door. The pink door is scenery. It is lockable and locked.
 
+Foyer is indoors.
+
 Parental appearance is a scene. Parental appearance begins when the location is webster court and Patriotic chard-garden is visited and Private Beach is visited.
 
 When parental appearance begins:
