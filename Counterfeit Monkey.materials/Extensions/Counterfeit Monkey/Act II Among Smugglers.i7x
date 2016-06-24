@@ -1087,7 +1087,7 @@ Instead of climbing the giant Atlantida statue:
 	say "It doesn't look safe, and it would only make us more conspicuous."
 
 
-Instead of going out from Traffic Circle during protest-scenario:
+Instead of going outside from Traffic Circle during protest-scenario:
 	say "The way is still blocked by protesters."
 
 Protest-scenario is a scene. Protest-scenario begins when the location is Traffic Circle and the player is not in a car.
