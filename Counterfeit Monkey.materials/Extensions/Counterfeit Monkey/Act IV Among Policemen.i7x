@@ -235,6 +235,12 @@ The display case is a scenery container. It is in the Exhibit. It is transparent
 Instead of opening the display case:
 	say "[one of]I don't want to sound like I doubt your criminal credentials, or whatever, but I doubt even you can successfully steal from this display case[or]No. Sorry, I just don't see how it could possibly work without our getting caught[or]Still not interested[stopping]. The casing material would stop a bullet.".
 
+Instead of searching the display case:
+	try examining the display-platform.
+
+Instead of examining the display case:
+	try examining the display-platform.
+
 A description-concealing rule when the location is Tools Exhibit:
 	now the display-platform is not marked for listing.
 
