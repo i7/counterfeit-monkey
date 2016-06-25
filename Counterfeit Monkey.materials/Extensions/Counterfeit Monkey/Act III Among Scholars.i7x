@@ -750,7 +750,7 @@ That's to say that we study how the ability to change things based on their name
 
 Samuel Johnson Hall is indoors and southern.
 
-Rule for listing exits when the location is Samuel Johnson Hall:
+Rule for listing exits while looking in Samuel Johnson Hall:
 	do nothing instead.
 
 The framed photograph of Waterstone is a thing in Samuel Johnson Hall. It is fixed in place. The initial appearance is "On the wall hangs a [photograph of Waterstone], with the words SHAPLY CHAIR in big letters underneath."  Understand "photo" or "picture" or  "professor" or "frame" as the framed photograph.
