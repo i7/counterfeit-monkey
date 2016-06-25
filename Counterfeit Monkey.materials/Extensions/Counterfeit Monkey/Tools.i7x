@@ -151,9 +151,9 @@ Carry out letter-removing the topic understood from something:
 	try tuning the letter-remover to the topic understood;
 	try waving the letter-remover at the second noun.
 
-Understand "wave [something preferably held] at/toward/over/around/on/across [something]" as waving it at. Waving it at is an action applying to one carried thing and one visible thing.
+Understand "wave [something preferably held] at/toward/over/around/on/across [thing]" as waving it at. Waving it at is an action applying to one carried thing and one visible thing.
 
-Understand "use [letter-remover] on [something]" as waving it at. Understand "point [letter-remover] at [something]" as waving it at.
+Understand "use [letter-remover] on [thing]" as waving it at. Understand "point [letter-remover] at [thing]" as waving it at.
 
 Understand "wave [something preferably held] at/toward/over/around [any locally-present room]" as waving it at.
 
