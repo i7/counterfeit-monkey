@@ -734,7 +734,7 @@ A facade is a kind of thing. A facade is usually fixed in place. A facade has so
 
 Instead of pushing or pulling or turning or taking a facade, say "[We] aren't super-powered."
 Instead of looking under a facade, say "[The noun] will not just peel back like a stage curtain, you know.".
-Instead of searching a facade, say "[We] would have to go to [a random direction fronted by the noun] in order to see what is there."
+Instead of searching a facade, say "[We] would have to go [random direction fronted by the noun] in order to see what is there."
 
 Fronting relates various facades to one direction. The verb to front (it fronts, they front, it fronted, it is fronted) implies the fronting relation.
 
