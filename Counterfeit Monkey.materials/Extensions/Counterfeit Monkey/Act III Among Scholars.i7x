@@ -1515,7 +1515,7 @@ This is the bin-closing rule:
 
 [Don't put other stuff in the bin]
 
-Instead of inserting something which is not the  letter-remover into the reclamation machine when the heft of the noun is greater than 2:
+Instead of inserting something which is not the letter-remover into the reclamation machine when the heft of the noun is greater than 2:
 	say "That would be pointless, and even if it weren't, [the noun] won't fit into the reclamation machine."
 
 Instead of inserting something which is not the letter-remover into the reclamation machine:
