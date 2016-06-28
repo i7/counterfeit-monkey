@@ -1116,18 +1116,23 @@ Understand "use [something gel-related] on/with [something]" as putting it on.
 Understand "[gel] [something]" as putting it on.
 Understand "[paste] [something]" as putting it on.
 
-
-Instead of putting the tub on something:
+Before putting the tub on something:
 	if the player's command includes "gel":
 		if the tub is closed:
 			silently try opening the tub;
 		if the tub is open:
-			try putting the restoration gel on the second noun;
+			try putting the restoration gel on the second noun instead;
 	otherwise:
 		if the player's command includes "rub":
-			try rubbing the tub;
-		otherwise:
-			continue the action.
+			try rubbing the tub instead.
+
+Before putting the gel on something when the tub is closed:
+	silently try opening the tub.
+
+Instead of removing the gel from the tub:
+	say "[We] better leave [the gel] in there until [we] have decided what to put it on."
+
+The parser nothing error internal rule response (D) is "[if the noun is the tube]Unfortunately, there's hardly any gel remaining in the tube.[else][regarding the noun][Those] [can't contain] things.[end if]"
 
 Sanity-check putting the tube on something:
 	if the player's command includes "gel on/onto" and the player's command does not include "gel tube on/onto":
