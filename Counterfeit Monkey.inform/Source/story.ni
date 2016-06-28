@@ -158,7 +158,7 @@ Include World Model Tweaks by Counterfeit Monkey.
 			•	Section 3 - Miscellaneous Verbs
 			•	Section 4 - Miscellaneous Class Vocabulary
 			•	Section 5 - Sanity and Accessibility
-			•	Section 6 - Fix actions on multiple objects
+			•	Section 6 - Actions on multiple objects
 		•	Part 2 - Senses
 			•	Section 1 - Smell and Taste
 			•	Section 2 - Loudness
