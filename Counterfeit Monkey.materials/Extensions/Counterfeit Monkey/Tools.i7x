@@ -143,7 +143,7 @@ Report tuning it to:
 Report tuning the letter-remover to something for the third time:
 	say "[first custom style][bracket]You can also tune the device just by using another name for it: referring to the device as, for instance, an N-remover will automatically set it to n.[close bracket][roman type][paragraph break]"
 
-
+Understand "remove [thing] from [thing]" as removing it from.
 
 Understand "remove [text] from [something]" or "letter-remove [text] from [something]" as letter-removing it from. Letter-removing it from is an action applying to one topic and one thing.
 
