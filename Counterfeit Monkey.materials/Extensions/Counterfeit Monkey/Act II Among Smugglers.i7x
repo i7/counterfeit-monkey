@@ -653,6 +653,9 @@ There is a [long line] of people waiting to leave Atlantis, even on Serial Comma
 Sanity-check entering the long line:
 	say "We can only afford to try going through this line once, and it's going to have to be when we're really ready to leave. Which we're not." instead.
 
+Instead of inserting something into the long line:
+	say "Only people are allowed in the line."
+
 The assorted side rooms are scenery in the Customs House. Understand "private" or "room" as the assorted side rooms. The description is "The side rooms provide auxiliary services: quarantine for linguistically unsuitable objects, kennels for animals that will need to undergo alignment therapy, holding cells for suspects."
 
 The long line is a scenery enterable container in the Customs House. The description is "The line is made up mostly of businessmen and scientists and the occasional professor with academic leave to go elsewhere, as well as departing tourists." Understand "entry" or "exit" or "professor" or "academic" or "academics" or "tourist" or "tourists" or "vacationer" or "vacationers" or "businessman" or "businesswoman" or "businesspeople" or "businessmen" or "businessperson" or "businesswomen" or "scientist" or "scientists" or "man" or "men" or "woman" or "women" as the long line.
