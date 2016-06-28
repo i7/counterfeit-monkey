@@ -902,8 +902,6 @@ To say balance contents:
 
 A pan is a kind of container. Understand "scale" or "pan" or "pans" as a pan. The right pan and the left pan are pans. The left pan and the right pan are part of the word-balance. The description of a pan is "Sturdy but slotted."
 
-Instead of putting something on a pan, try inserting the noun into the second noun.
-
 An apple is a vegetable. The apple is edible.
 
 In the right pan is an apple. In the left pan is a pear. The pear is edible.
@@ -921,6 +919,8 @@ The pear is a vegetable.
 Report waving the letter-remover at the apple creating ale:
 	say "There's a smell of fermenting apple, then cider, then something more malty. In the apple's place there is now a glass of nutbrown ale." instead.
 
+Instead of putting something on a pan, try inserting the noun into the second noun.
+
 Understand "put [something preferably held] on/onto [a pan]" as inserting it into.
 
 Instead of taking something which is in a pan in the presence of the barker:
@@ -930,7 +930,8 @@ Instead of touching or pushing or pulling or turning a pan in the presence of th
 
 Instead of touching or pushing or pulling or turning something which is in a pan in the presence of the barker: say barker-refusal instead.
 
-Instead of inserting something into a pan in the presence of the barker: say barker-refusal instead.
+Instead of inserting something into a pan in the presence of the barker:
+	say barker-refusal.
 
 [Yes, this is very strange. By default the parser will exclude the contents of the right pan when typing GET ALL while taking the contents of the left. But with this rule it works.]
 Rule for deciding whether all includes things enclosed by the right pan while taking:
