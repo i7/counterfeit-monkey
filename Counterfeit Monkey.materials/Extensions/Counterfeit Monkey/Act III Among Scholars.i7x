@@ -908,9 +908,6 @@ Instead of closing the department printer:
 Instead of opening the department printer:
 	try opening the paper-drawer.
 
-Before inserting something into the paper-drawer when the paper-drawer is closed:
-	try opening the paper-drawer.
-
 [Procedural rule while examining the department printer:
 	ignore the examine described devices rule. ]
 
