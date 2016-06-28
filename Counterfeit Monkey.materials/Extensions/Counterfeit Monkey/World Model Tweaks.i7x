@@ -26,6 +26,8 @@ To explain the reborn command:
 The unnecessary movement rule is not listed in any rulebook.
 The too many words rule is not listed in any rulebook. [conversation commands can be quite long.]
 
+The generic surroundings rule is not listed in any rulebook. [We don't want the left and right pans to trigger this.]
+
 [And we want to make sure that we're not listing tutorial prompts in the middle of command reparses:]
 
 The offer new prompt rule is not listed in any rulebook.
