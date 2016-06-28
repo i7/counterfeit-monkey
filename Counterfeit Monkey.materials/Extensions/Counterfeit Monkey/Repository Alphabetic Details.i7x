@@ -786,6 +786,9 @@ Report opening the secret-door:
 Instead of entering the secret-door:
 	try going north.
 
+Instead of inserting something into the secret-door:
+	say "[The secret-door] can't contain things."
+
 The doper crow is a bird. The description of the doper crow is "It looks much like any other crow, except for a lethargy around the eyes, and a despondent silence in place of the usual cawing."
 
 Instead of showing the doper crow to Poe:
@@ -1944,6 +1947,10 @@ Understand "screw [nib] into/onto [pen]" as inserting it into.
 
 Instead of putting the nib on the pen:
 	try inserting the nib into the pen.
+
+Before inserting something into the pen:
+	if the noun is not ink and the noun is not the nib:
+		say "[We] can't get [the noun] into [the pen]." instead.
 
 Instead of inserting the nib into the pen:
 	if the nib is part of the pen:
