@@ -1330,7 +1330,7 @@ A room can be publicly-available or privately-controlled. A room is usually publ
 Sanity-check dropping something which is not heavy in a privately-controlled room (this is the no-dropping rule):
 	say "[non-drop-zone]" instead.
 
-Sanity-check inserting something into something which is not enclosed by the player in  a privately-controlled room:
+Sanity-check inserting something into something which is not enclosed by the player in a privately-controlled room:
 	say "[non-drop-zone]" instead.
 
 Sanity-check putting something on something which is not enclosed by the player in a privately-controlled room:
