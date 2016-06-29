@@ -28,6 +28,8 @@ The too many words rule is not listed in any rulebook. [conversation commands ca
 
 The generic surroundings rule is not listed in any rulebook. [We don't want the left and right pans to trigger this.]
 
+The stripping body parts rule is not listed in any rulebook. [We don't want the cardboard cutout to trigger this.]
+
 [And we want to make sure that we're not listing tutorial prompts in the middle of command reparses:]
 
 The offer new prompt rule is not listed in any rulebook.

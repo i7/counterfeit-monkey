@@ -510,7 +510,7 @@ The seer automaton is a push-button device in Bureau Basement South. Understand 
 Instead of switching on the seer automaton:
 	say "The seer cranks to life, looks us up and down with painted wooden eyeballs, and in a tinny voice, says, 'I predict [one of]you will become BIG. Much bigger than you were yesterday[or]you will escape.' Asthmatic whirring. 'Possibly on the back of an interstellar whale[or]the Bureau won't last past tomorrow[cycling].'"
 
-The plywood cutout is a fixed in place thing in Bureau Basement South. The initial appearance is "A plywood cutout depicting Atlantida is propped in the corner." Understand "painted" or "depicting" or "atlantida" or "hole" or "head" or "funny pose" as the plywood cutout. The heft is 5. The description is "It's one of those plywood cutouts where a tourist sticks his head through and someone else takes a photo showing the tourist a funny pose. This one puts the tourist's face on Atlantida, complete with flowing blue robes and expansive bosom."
+The plywood cutout is a fixed in place thing in Bureau Basement South. The initial appearance is "A plywood cutout depicting Atlantida is propped in the corner." Understand "painted" or "depicting" or "atlantida" or "hole" or "funny pose" as the plywood cutout. The heft is 5. The description is "It's one of those plywood cutouts where a tourist sticks his head through and someone else takes a photo showing the tourist a funny pose. This one puts the tourist's face on Atlantida, complete with flowing blue robes and expansive bosom."
 
 Understand "put [something] through [something]" as inserting it into.
 
@@ -519,8 +519,8 @@ Sanity-check inserting something into the plywood cutout:
 		try poking head through the plywood cutout instead;
 	say "[The noun] would not balance inside the face cutout." instead.
 
-Understand "put my/our/your head in/into/through [something]" as poking head through.
-Understand "put head in/into/through [something]" as poking head through.
+Understand "put my/our/your/-- head/face in/into/through [something]" as poking head through.
+Understand "poke my/our/your/-- head/face in/into/through [something]" as poking head through.
 
 Poking head through is an action applying to one thing.
 
