@@ -994,6 +994,8 @@ Definition: a thing is fuel-like if it is the fuel or it is the gas.
 Sanity-check inserting a fuel-like thing into a car:
 	try fueling the second noun with the noun instead.
 
+Instead of taking a car:
+	say "[The noun] [are] just a bit too heavy to carry in [their] current state."
 
 Understand "fuel [something] with [something preferably held]" as fueling it with. Understand "fuel [something]" as fueling it with. Fueling it with is an action applying to one thing and one carried thing.
 
