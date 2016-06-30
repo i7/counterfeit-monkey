@@ -232,8 +232,8 @@ Next to that there is [an anagramming gun] and [an etymological reversing chambe
 
 The display case is a scenery container. It is in the Exhibit. It is transparent, openable, and closed. Understand "glass" as the display case.
 
-Instead of empty-removing something that is enclosed by the display case:
-	try opening the display case.
+Sanity-check empty-removing something that is enclosed by the display case:
+	try opening the display case instead.
 
 Before putting something on something that is enclosed by the display case:
 	abide by the display-case-closed rule.
@@ -251,14 +251,14 @@ This is the display-case-closed rule:
 	say "[The display case] isn't open.";
 	abide by the cancel multiple rule.
 
-Instead of taking something that is enclosed by the display case:
-	try opening the display case.
+Sanity-check taking something that is enclosed by the display case:
+	try opening the display case instead.
 
-Instead of removing something from something that is enclosed by the display case:
+Sanity-check removing something from something that is enclosed by the display case:
 	try opening the display case.
 
 Instead of opening the display case:
-	say "[one of]I don't want to sound like I doubt your criminal credentials, or whatever, but I doubt even you can successfully steal from this display case[or]No. Sorry, I just don't see how it could possibly work without our getting caught[or]Still not interested[stopping]. The casing material would stop a bullet.".
+	say "[one of]I don't want to sound like I doubt your criminal credentials, or whatever, but I doubt even you can successfully steal from this display case[or]No. Sorry, I just don't see how it could possibly work without our getting caught[or]Still not interested[stopping]. The casing material would stop a bullet."
 
 Instead of searching the display case:
 	try examining the display-platform.
@@ -300,7 +300,7 @@ Table of Ultratests (continued)
 topic	stuff	setting
 "reversing"	{ army, members }	Tools Exhibit
 
-Test reversing with "put remover in reversing chamber / insert apple into reversing / put all in reversing" holding the apple.
+Test reversing with "tutorial off / put remover in reversing chamber / insert apple into reversing / put all in reversing" holding the apple.
 
 A description-concealing rule when the location is the Tools Exhibit:
 	now the Model T is not marked for listing;
