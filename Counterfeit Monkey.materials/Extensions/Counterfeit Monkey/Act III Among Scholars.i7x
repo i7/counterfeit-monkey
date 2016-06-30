@@ -451,6 +451,17 @@ The bathroom window is a door. The bathroom window is west of Palm Square and ea
 
 Instead of examining a toilet: say "It's pretty clean."
 
+Understand "flush [something] down [a toilet]" as flushing it down. Flushing it down is an action applying to two things.
+
+Carry out flushing it down:
+	try inserting the noun into the second noun instead;
+
+Sanity-check inserting something into a toilet:
+	say "That is not a good way to get rid of [the noun]." instead;
+
+Sanity-check inserting something into a drain:
+	say "That is not a good way to get rid of [the noun]." instead;
+
 To say b-window-appearance:
 	if the Apartment Bathroom is unvisited
 	begin;
