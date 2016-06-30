@@ -196,13 +196,49 @@ Sanity-check putting something (called the source) on a supporter (called the ta
 
 Before taking something which is in a closed container (called the source):
 	if the source is not the holder of the player:
-		try opening the source.
+		abide by the try opening rules for the source;
 
-Before inserting something into a closed container (called the source):
-	if the source is not the holder of the player:
-		if the source is in a closed container (called the source-holder) and the source-holder is not the holder of the player:
-			try opening the holder of the source;
-		try opening the source.
+Check an actor inserting something into (this is the new can't insert what's not held rule):
+	if the actor is carrying the noun, continue the action;
+	if the actor is wearing the noun, continue the action;
+	if the second noun is not a container, continue the action;
+	carry out the implicitly taking activity with the noun;
+	if the actor is carrying the noun, continue the action;
+	stop the action.
+
+The new can't insert what's not held rule is listed instead of the can't insert what's not held rule in the check inserting it into rulebook
+
+Before inserting something held into a container which is in a closed container (called the source):
+	abide by the try opening rules for the source;
+
+Before inserting something held into a closed container (called the source):
+	abide by the try opening rules for the source;
+
+The try opening rules is an object-based rulebook.
+The try reaching rules is an object-based rulebook.
+
+A try opening rule for a container (called the box):
+	if the player is not in the box:
+		if the box is not openable:
+			say "[The box] [aren't] open.";
+		otherwise:
+			unless the box is locked:
+				try opening the box;
+			otherwise:
+				say "[The box] [are] locked.";
+		if the box is closed:
+			abide by the cancel multiple rule.
+
+A try reaching rule for something (called the target):
+	let the outer-box be the holder of the holder of the target;
+	let the box be the holder of the target;
+	if the outer-box is closed:
+		abide by the try opening rules for the outer-box;
+	if the box is a closed container:
+		abide by the try opening rules for the box;
+	if the target is not touchable:
+		say "[We] cannot reach [the second noun] from here.";
+		abide by the cancel multiple rule.
 
 Sanity-check giving something held by someone (called the target) to the target:
 	say "[The target] already [have] [the noun]." instead.
