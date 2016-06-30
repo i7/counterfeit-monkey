@@ -361,6 +361,18 @@ The new exclude people from drop all rule is listed instead of the exclude peopl
 Rule for clarifying the parser's choice of something:
 	do nothing instead.
 
+[The empty-removing action makes it possible to give custom replies to trying to remove all from an empty container or supporter]
+Understand "remove all/everything from [an empty container]" or "take all/everything from [an empty container]" or "get all/everything from [an empty container]" as empty-removing.
+
+Understand "remove all/everything from [an empty supporter]" or "take all/everything from/off [an empty supporter]" or "get all/everything from/off [an empty supporter]" as empty-removing.
+
+Empty-removing is an action applying to one thing.
+
+Carry out empty-removing:
+	if the noun is closed and noun is opaque and the noun is a container:
+		say "[The noun] [aren't] open.";
+	otherwise:
+		say "[The noun] [are] empty.";
 
 [Preventing long lists of error messages when typing things like "put all in rock"]
 
