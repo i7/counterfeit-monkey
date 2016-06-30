@@ -1127,10 +1127,31 @@ Carry out examining Complete Lojban: now the noun is proper-named.
 
 The sugar bowl is a container on the oval table. Instead of searching the sugar bowl, say "It is about a quarter full."
 
+Instead of inserting something into the sugar bowl:
+	say "That would ruin the sugar.";
+
+Instead of empty-removing the sugar bowl:
+	try taking the sugar bowl.
+
+Instead of empty-removing the teapot:
+	try searching the teapot.
+
+Sanity-check eating or tasting the sugar bowl:
+	say "It is ordinary sugar. No need to taste it." instead.
+
 The teapot is a container on the oval table. The teapot is openable and closed. The description is "Black and Japanese-styled." Understand "tea" as the teapot. Instead of searching the teapot: say "[We] peek inside. The tea has evidently been sitting on the leaves a long time, because it is powerful and looks almost like coffee."
 
-Instead of drinking the teapot:
-	say "To judge by the col[our] of the tea, it has been steeping so long as to be nearly vertical."
+Sanity-check drinking or tasting the teapot:
+	say "To judge by the col[our] of the tea, it has been steeping so long as to be nearly vertical." instead.
+
+Sanity-check inserting something into the teapot:
+	if the noun is the sugar bowl:
+		say "I don't think that would help." instead;
+	otherwise:
+		say "That might ruin the tea." instead;
+
+Instead of opening the teapot:
+	try searching the teapot.
 
 The oval table supports a book called Heart to Heart. Understand "romance" or "novel" as Heart to Heart.
 
@@ -1138,10 +1159,10 @@ The description of Heart to Heart is "The cover shows two women in a steamy embr
 
 Rule for printing the name of Heart to Heart: say "[roman type]romance novel in some heavily accented language".
 
-Instead of taking something which is on the oval table:
+Sanity-check taking something which is on the oval table:
 	say "Professor Higgate frowns as [we] reach for [the noun]. 'You may have noticed,' she says, in the kind of voice that always withered our hearts in seminar, 'that there are certain social expectations about touching the possessions of other people.'
 
-My fingers relax their grip instinctively."
+My fingers relax their grip instinctively." instead.
 
 
 lsr-key unlocks seminar door. lsr-key is carried by Higgate. The printed name of the lsr-key is "small key". Understand "small" as the lsr-key.
