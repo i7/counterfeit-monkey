@@ -1583,6 +1583,9 @@ The description of the fat guidebook to Europe is "The spine is cracked at many 
 
 The description of the cheap camera is "It is a flimsy device in rose-pink, with a very small lens."
 
+Instead of inserting something into the heavy pack:
+	say "[The heavy pack] is full.";
+
 Instead of taking something which is in the heavy pack:
 	say "None of these are any use just now."
 
