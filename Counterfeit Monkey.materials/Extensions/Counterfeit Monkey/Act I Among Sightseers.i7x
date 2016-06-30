@@ -1076,6 +1076,9 @@ The diorama-shelter is part of the diorama table. The printed name is "shelter".
 Check waving the letter-remover at diorama-shelter when the current setting of the letter-remover is "s":
 	say "The device buzzes, puzzled. You can't make 'helter' without a bit of 'skelter.'" instead.
 
+Instead of inserting something into the diorama table:
+	try putting the noun on the diorama table;
+
 Instead of pushing something which is on the diorama table:
 	if the noun is the army:
 		say "[We] form the army into [one of]Roman-style formations[or]a fierce defensive line[or]a cheerleading pyramid[at random].";
