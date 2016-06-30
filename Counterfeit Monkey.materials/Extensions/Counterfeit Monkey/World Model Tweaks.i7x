@@ -247,7 +247,9 @@ Sanity-check giving someone (called the target) to the target:
 	say "[The target] [are] already self-possessed." instead.
 
 Before inserting something which is worn into a container:
-	try taking off the noun.
+	try taking off the noun;
+	if the noun is worn:
+		stop the action.
 
 Sanity-check eating an inedible thing:
 	say "[The noun] wouldn't agree with [us] even if [we] were feeling better." instead.
