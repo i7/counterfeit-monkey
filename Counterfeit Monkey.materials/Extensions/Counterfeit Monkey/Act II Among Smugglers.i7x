@@ -656,6 +656,9 @@ Sanity-check entering the long line:
 Instead of inserting something into the long line:
 	say "Only people are allowed in the line."
 
+Instead of empty-removing the long line:
+	say "There are none at all available!"
+
 The assorted side rooms are scenery in the Customs House. Understand "private" or "room" as the assorted side rooms. The description is "The side rooms provide auxiliary services: quarantine for linguistically unsuitable objects, kennels for animals that will need to undergo alignment therapy, holding cells for suspects."
 
 The long line is a scenery enterable container in the Customs House. The description is "The line is made up mostly of businessmen and scientists and the occasional professor with academic leave to go elsewhere, as well as departing tourists." Understand "entry" or "exit" or "professor" or "academic" or "academics" or "tourist" or "tourists" or "vacationer" or "vacationers" or "businessman" or "businesswoman" or "businesspeople" or "businessmen" or "businessperson" or "businesswomen" or "scientist" or "scientists" or "man" or "men" or "woman" or "women" as the long line.
