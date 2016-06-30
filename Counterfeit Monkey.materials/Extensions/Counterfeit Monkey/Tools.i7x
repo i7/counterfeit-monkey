@@ -112,6 +112,9 @@ Sanity-check doing something when the noun is the letter-remover and the letter-
 		if the player does not carry the letter-remover:
 			stop the action;
 	say "[one of][We] smoothly, and almost without thinking about it, reset your device to be [a-an letter-remover][or][We] run our thumb over the dial, setting the device to [a-an letter-remover][or][We] reset the device to [current setting of letter-remover][stopping]. [run paragraph on]";
+	if taking:
+		say paragraph break;
+		stop the action.
 
 Understand "set [something]" as vaguely setting. Vaguely setting is an action applying to one thing.
 
