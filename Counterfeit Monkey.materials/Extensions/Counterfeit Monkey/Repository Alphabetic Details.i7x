@@ -2198,6 +2198,9 @@ The pita is an edible thing. The description of the pita is "A round, brown pock
 
 The pit-trap is an open enterable container. It is fixed in place. The heft of the pit-trap is 10. The printed name of a pit-trap is "pit trap". Understand "pit trap" or "deep pit" or "pit" or "rocks" or "stones" or "stakes" or "sharpened" or "stake" as a pit-trap. The description of a pit-trap is "It's a deep pit lined with rocks, set into the surface of [the holder of the item described]. Sharpened stakes jut upward from the bottom, ready to stab any large mammal unfortunate enough to fall in."
 
+Instead of inserting something into the pit-trap:
+	say "That is not a good way to get rid of [the noun]."
+
 Instead of entering the pit-trap:
 	say "Against my better judgment, [we] slip over the edge into the pit trap and are impaled on the spikes below. It will be some considerable time before anyone thinks to check down here.";
 	end the story saying "What made you think that was a good idea?"
