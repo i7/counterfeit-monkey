@@ -1129,24 +1129,32 @@ Before putting the tub on something:
 Before putting the gel on something when the tub is closed:
 	silently try opening the tub.
 
+Sanity-check removing the tub from the tub:
+	if the player's command includes "gel" and the player's command does not include "gel tub":
+		try removing the gel from the tub instead.
+
 Instead of removing the gel from the tub:
 	say "[We] better leave [the gel] in there until [we] have decided what to put it on."
 
-The parser nothing error internal rule response (D) is "[if the noun is the tube]Unfortunately, there's hardly any gel remaining in the tube.[else][regarding the noun][Those] [can't contain] things.[end if]"
+Instead of empty-removing the tube:
+	try squeezing the tube;
 
 Sanity-check putting the tube on something:
 	if the player's command includes "gel on/onto" and the player's command does not include "gel tube on/onto":
 		if the barker carries the tube:
-			say "You don't have the gel at the moment." instead;
+			say "We don't have the gel at the moment." instead;
 		otherwise:
 			say "[one of]Unfortunately, there's hardly any gel remaining in the tube.[or]There isn't enough gel remaining in the little tube for use.[at random]" instead.
 
 Before inserting something (called the source) into something gel-related (called the target):
 	unless the source is gel-related: [Things like "put gel in tub" are dealt with elsewhere]
 		if the target is the tube:
-			say "The tube's opening is too small." instead;
+			if the barker carries the tube:
+				say "We don't have the gel at the moment." instead;
+			otherwise:
+				say "The tube's opening is too small." instead;
 		otherwise:
-			say "That would only make a mess. Try rubbing some [if the target is the paste]paste[otherwise]gel[end if] on [the source] instead." instead. [This was originally redirected to PUT GEL ON (SOURCE) but was changed to match the response to PUT ALL IN GEL.]
+			say "That would only make a mess. Try rubbing some [if the target is the paste]paste[otherwise]gel[end if] on [the source] instead." instead.
 
 Sanity-check putting the restoration gel on something irretrievable:
 	if the second noun is the tub or the second noun is the letter-remover:
