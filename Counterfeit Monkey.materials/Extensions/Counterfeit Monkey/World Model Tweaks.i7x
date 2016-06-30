@@ -398,7 +398,9 @@ A multiple action processing rule when the action name part of the current actio
 		alter the multiple object list to {};
 		say "[The toolkit] is full already."
 
-
+This is the cancel multiple rule:
+	alter the multiple object list to {};
+	the rule fails.
 
 Part 2 - Senses
 
