@@ -546,7 +546,7 @@ Sanity-check putting something on the portcullis:
 Check putting something on the pulley when the pulley is non-empty:
 	say "The hook can only really hold one thing at a time. [run paragraph on]";
 	if the noun is unhookable:
-		say "[paragraph break]";
+		say paragraph break;
 		stop the action;
 	while something (called the current content) is on the pulley:
 		try taking the current content;
