@@ -746,7 +746,7 @@ Some horses are part of the marble fountain. Understand "horse" or "horse statue
 Some sculpted figures are part of the fountain. The description of the sculpted figures is "Nereids and Tritons, apparently, together with tame fish, conch shells, and other representatives of the goods of the sea." Understand "nereids" or "tritons" or "fish" or "shells" or "goods of the sea" or "tame" or "conch" or "gods" or "trident-bearing" or "poseidon" or "neptune" or "nymphs" or "nymph" or "trident" or "god" as the figures.
 
 Instead of searching the fountain:
-	say "The basin is nearly full of clear [water], but there are no coins or other useful articles to be found. This is not a culture that tends to discard what might be of use."
+	say "The basin is nearly full of clear [fountain-water], but there are no coins or other useful articles to be found. This is not a culture that tends to discard what might be of use."
 
 The missing-inscriptions are part of the marble fountain. The printed name is "inscriptions". Understand "inscription" or "inscriptions" or "renovated" or "latin" or "vernacular" or "missing" or "nonexistent" or "non-existent" or "foreign" or "lettering" or "letters" or "words" or "language" or "original" as the missing-inscriptions.
 
@@ -768,12 +768,18 @@ Rule for reaching inside a room:
 		say "[We] can only look from this distance.";
 	deny access.
 
-The water is in the fountain. The water is fluid and scenery.
-	The indefinite article is "some".
-	Understand "clear" as the water.
-	Instead of taking the water, say "[We] can't, not having webbed fingers."
-	Instead of drinking the water, say "It might not be sanitary."
-	The scent-description of the water is "wet marble".
+Instead of inserting an as into the fountain-water:
+	say "Better not. [We] don't want to lose [the noun]."
+
+Instead of examining the fountain-water:
+	try searching the fountain.
+
+The fountain-water is in the fountain. The fountain-water is fluid and scenery.
+	The indefinite article is "some". The printed name is "water".
+	Understand "clear/water" as the fountain-water.
+	Instead of taking the fountain-water, say "[We] can't, not having webbed fingers."
+	Instead of drinking the fountain-water, say "It might not be sanitary."
+	The scent-description of the fountain-water is "wet marble".
 
 Some grass is scenery in the Park Center. The description is "Deep green and velvety."
 	Instead of touching the grass: say "[We] kneel and run our fingers through the grass."
