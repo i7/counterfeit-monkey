@@ -232,13 +232,7 @@ The description of the Tools Exhibit is "This area, though technically part of t
 
 Next to that there is [an anagramming gun] and [an etymological reversing chamber]." The printed name of the Tools Exhibit is "Tools and Techniques Exhibit".
 
-The display case is a scenery container. It is in the Exhibit. It is transparent, openable, and closed. Understand "glass" as the display case.
-
-Sanity-check empty-removing something that is enclosed by the display case:
-	try opening the display case instead.
-
-Before putting something on something that is enclosed by the display case:
-	abide by the display-case-closed rule.
+The display case is a scenery container. It is in the Exhibit. It is transparent, openable, and closed. Understand "glass/exhibit" or "casing material" as the display case.
 
 Before inserting something into the display case:
 	abide by the display-case-closed rule.
@@ -246,32 +240,43 @@ Before inserting something into the display case:
 Before inserting something into something that is enclosed by the display case:
 	abide by the display-case-closed rule.
 
-Before of putting something on something that is enclosed by the display case:
+Before putting something on something that is enclosed by the display case:
 	abide by the display-case-closed rule.
 
 This is the display-case-closed rule:
 	say "[The display case] isn't open.";
 	abide by the cancel multiple rule.
 
-Sanity-check taking something that is enclosed by the display case:
-	try opening the display case instead.
+Before empty-removing something that is enclosed by the display case:
+	say "[no stealing from display case]" instead.
 
-Sanity-check removing something from something that is enclosed by the display case:
-	try opening the display case.
+Instead of taking something that is enclosed by the display case:
+	say "[no stealing from display case]".
 
-Instead of opening the display case:
-	say "[one of]I don't want to sound like I doubt your criminal credentials, or whatever, but I doubt even you can successfully steal from this display case[or]No. Sorry, I just don't see how it could possibly work without our getting caught[or]Still not interested[stopping]. The casing material would stop a bullet."
+Instead of opening or attacking the display case:
+	say "[no stealing from display case]".
+
+The parser nothing error internal rule response (E) is "[if noun is the display case][no stealing no line break][otherwise][The noun] [aren't] open.[end if]"
+
+To say no stealing from display case:
+	say "[no stealing no line break][line break]".
+
+To say no stealing no line break:
+	say "[one of]I don't want to sound like I doubt your criminal credentials, or whatever, but I doubt even you can successfully steal from this display case[or]No. Sorry, I just don't see how it could possibly work without our getting caught[or]Still not interested[stopping]. The casing material would stop a bullet. ".
 
 Instead of searching the display case:
 	try examining the display-platform.
 
 Instead of examining the display case:
-	try examining the display-platform.
+	if the player's command includes "glass" or the player's command includes "casing material":
+		say "The casing material would stop a bullet.";
+	otherwise:
+		try examining the display-platform.
 
 A description-concealing rule when the location is Tools Exhibit:
 	now the display-platform is not marked for listing.
 
-The display-platform is a supporter in the display case. Understand "pedestal" or "platform" as the display-platform. The printed name is "display platform".
+The display-platform is a supporter in the display case. Understand "pedestal" or "platform" as the display-platform. Understand "display/exhibit" as the display-platform when location is Display Reloading Room. The printed name is "display platform".
 
 
 Instead of shooting the display-platform with the loaded anagramming gun:
