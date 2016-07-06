@@ -188,6 +188,12 @@ Check an actor inserting something into (this is the new can't insert what's not
 
 The new can't insert what's not held rule is listed instead of the can't insert what's not held rule in the check inserting it into rulebook
 
+Instead of inserting something into a supporter which incorporates a drawer (called target drawer):
+	try inserting the noun into target drawer.
+
+Instead of inserting something into a supporter which incorporates an oven (called target oven):
+	try inserting the noun into target oven.
+
 Before inserting something held into a container which is in a closed container (called the source):
 	abide by the try opening rules for the source;
 
