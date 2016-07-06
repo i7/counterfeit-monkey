@@ -789,6 +789,7 @@ The Language Studies Seminar Room contains a chair.
 When play begins (this is the setting up the langauge studies seminar room rule):
 	let T be a random chair in the Language Studies Seminar Room;
 	now T is not scenery;
+	now T is not fixed in place.
 
 Before going from the Language Studies Seminar Room when the player carries  Problem of Adjectives:
 	try putting Problem of Adjectives on the LSR bookcase.
@@ -801,9 +802,10 @@ Carry out going to the Language Studies Seminar Room:
 
 The LSR bookcase is a supporter in the Language Studies Seminar Room. The initial appearance is "The bookshelves lining the walls contain the department library." The description is "Built in and sturdily made." The printed name is "bookshelf". Understand "shelf" or "shelves" or "bookshelf" as the LSR bookcase.
 
-The big table is a supporter in the Language Studies Seminar Room.  "The [big table] at the cen[ter] of the room is an irregular polygon[if exactly one chair is in location], with one [random chair in location] pushed up to the shortest side[end if]."
+The big table is a supporter in the Language Studies Seminar Room.  "The [big table] at the cen[ter] of the room is an irregular polygon[if exactly one not handled chair is in location], with one [random not handled chair in location] pushed up to the shortest side[end if]."
 	The introduction is "I think the shape is intended to undermine traditional conceptions of academic hierarchy, but in practice it  just means that whoever gets to seminar late has to sit with a table angle jabbing him in the stomach."
 	The description is "Crafted from some exotic wood with lots of interesting burl structure. There was a wealthy donor behind the construction of this room."
+	Understand "polygon" as the big table.
 
 History of the Standards Revolution is a book on the LSR bookcase. The description of History of the Standards Revolution is "It covers in minute detail the process by which the island standard[ize]d spelling and leveraged its linguistic power." The introduction is "[History] is of those bog-standard texts that everyone in my field owns a copy of and uses as a doorstop. Very occasionally something still arises that I need to look up, but I just about memor[ize]d it in preparation for my comprehensive exams."
 
