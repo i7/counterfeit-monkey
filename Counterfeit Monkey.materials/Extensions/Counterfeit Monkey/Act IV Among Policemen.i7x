@@ -306,7 +306,7 @@ Test reversing with "tutorial off / put remover in reversing chamber / insert ap
 
 A description-concealing rule when the location is the Tools Exhibit:
 	now the Model T is not marked for listing;
-	now the Britishizing goggles are not marked for listing;
+	[now the Britishizing goggles are not marked for listing;]
 	now the anagramming gun is not marked for listing;
 	now the Etymological Reversing Chamber is not marked for listing.
 
