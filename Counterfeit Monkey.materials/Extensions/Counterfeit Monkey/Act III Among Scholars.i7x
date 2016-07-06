@@ -786,7 +786,7 @@ After looking in the Language Studies Seminar Room when the seminar door is open
 
 The Language Studies Seminar Room contains a chair.
 
-When play begins (this is the setting up the langauge studies seminar room rule):
+When play begins (this is the setting up the language studies seminar room rule):
 	let T be a random chair in the Language Studies Seminar Room;
 	now T is not scenery;
 	now T is not fixed in place.

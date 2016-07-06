@@ -681,7 +681,7 @@ The repository contains an alterna-shuttle.
 
 [sign, four times]
 
-The repository contains a signet, 		[by the hand of the officer]
+The repository contains a signet,	[by the hand of the officer]
 	4 sins, 4 sons, 4 sun-products, [2 in-objects,] 4 self-objects, 4 sigs,
 	4 stints, 4 tints, 4 TNTs, 4 tin-cans          ["tin"], 4 tits, [t-insert derivatives]
 	4 stents, 4 tents, 4 ten-objects, 4 tans, 4 plural-tents, [vowel rotation]

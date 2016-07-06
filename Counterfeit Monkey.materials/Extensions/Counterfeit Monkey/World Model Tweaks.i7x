@@ -1157,7 +1157,7 @@ Instead of going by damaged car:
 	say "The car refuses to run properly: evidently you got us a lemon. It's going to take some tuning up before it will go."
 
 Sanity-check switching on a car:
-	 try switching on a random ignition which is part of the noun instead.
+	try switching on a random ignition which is part of the noun instead.
 
 Sanity-check switching off a car:
 	try switching off a random ignition which is part of the noun.

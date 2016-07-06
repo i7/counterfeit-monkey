@@ -964,7 +964,7 @@ barker-advertisement is an NPC-directed quip.
 The barker is carrying a tube. The description of the tube is "It claims to be full of restoration gel, but said gel has mostly gone. If only it had been a larger container to start with." Understand "gel" or "prize" or "fabulous prize" or "label" or "restoration gel" as the tube. The scent-description of the tube is "mint". The tube is an essential container.
 
 Instead of searching the tube:
-	 try examining the tube.
+	try examining the tube.
 
 Instead of opening or closing the tube: say "It comes without a cap."
 

@@ -401,11 +401,11 @@ Include (-
 	if (FollowRulebook( (+glulx picture selection rules+) ) ) { cur_pic = ResourceIDsOfFigures-->(+ internally selected picture +); }
 	if (cur_pic == 0) rtrue;
 
-      if (gg_picwin) {
+    if (gg_picwin) {
 
 	result = glk_window_get_size(gg_picwin, gg_arguments, gg_arguments+WORDSIZE);
-             	graph_width  = gg_arguments-->0;
-             	graph_height = gg_arguments-->1;
+	graph_width  = gg_arguments-->0;
+	graph_height = gg_arguments-->1;
 
 	result = glk_image_get_info( cur_pic, gg_arguments,  gg_arguments+WORDSIZE);
 	img_width  = gg_arguments-->0;
@@ -443,8 +443,8 @@ Include (-
       if (gg_picwin) {
 
 	result = glk_window_get_size(gg_picwin, gg_arguments, gg_arguments+WORDSIZE);
-             	graph_width  = gg_arguments-->0;
-             	graph_height = gg_arguments-->1;
+	graph_width  = gg_arguments-->0;
+	graph_height = gg_arguments-->1;
 
 	result = glk_image_get_info( cur_pic, gg_arguments,  gg_arguments+WORDSIZE);
 	img_width  = gg_arguments-->0;

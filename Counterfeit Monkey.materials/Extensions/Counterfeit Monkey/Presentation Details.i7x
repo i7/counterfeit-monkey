@@ -24,6 +24,9 @@ To say --: say Unicode em dash.
 To say -: say Unicode en dash.
 To say -x-: say Unicode ballot x.
 
+Rule for clarifying the parser's choice of something:
+	do nothing instead.
+
 To say set prior to (item - a thing):
 	now prior named object is item.
 
@@ -167,7 +170,7 @@ This is the new notify score changes rule:
 
 Table of Tasks Achieved
 Points (a number)	Citation (some text)	Time (a time)
-1   	"using the letter-remover"
+1	"using the letter-remover"
 1	"using the gel"
 1	"using the spinner"
 1	"using the origin paste"
@@ -179,8 +182,8 @@ Points (a number)	Citation (some text)	Time (a time)
 1	"using the vowel rotator"
 2	"returning a library book to its proper home"
 3	"passing through the temporary barrier"
-3   	"winning the gel"
-3   	"opening the locker"
+3	"winning the gel"
+3	"opening the locker"
 3	"retrieving the backpack"
 3	"fueling our car"
 3	"repairing our car"
@@ -239,7 +242,7 @@ To say disjoint (L - a list of texts):
 
 Table of Rankings
 Score (a number)	Rank (a text)
-0   	"Graduate Student"
+0	"Graduate Student"
 10	"Escapee"
 20	"Petty Criminal"
 30	"Smuggler"
@@ -506,9 +509,9 @@ Instead of taking inventory when the current inventory listing style is utilitar
 		if paragraph break needed is true: [if we have already listed things]
 			say "[paragraph break][We] [are] also carrying ";
 		else:
-			[if we are only carrying non-essential things and wearing them, just say that and skip the rest]
+			[if we only have non-essential items and are wearing them, just say that and skip the rest]
 			if everything enclosed by the player is worn:
-				 say "[We] [are] wearing [a list of worn things *in the player]." instead;
+				say "[We] [are] wearing [a list of worn things *in the player]." instead;
 			else:
 				say "[We] [are] carrying ";
 		repeat with item running through marked for listing things:

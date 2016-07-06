@@ -2007,10 +2007,10 @@ The perl is r-abstract. The description of the perl is "A flickering of regular 
 The pests are an insect. The description of the pests is "The pests are a motley assortment of chiggers, mosquitos, bedbugs, ticks, and midges."
 
 The pestos are edible. The description of the pestos is "Glass jars contain three types of local pesto: a traditional basil and garlic variety, a sun-dried tomato pesto, and the infamous squid-flake pesto. The jars are packaged in a glossy cardboard box, suitable for taking back to one's mother-in-law after a trip to Atlantis."
-	 Understand "glass" or "jars" or "local" or "basil" or "garlic" or "tomato" or "pesto" or "sun-dried" or "squid-flake" or "glossy" or "cardboard" as the pestos.
+Understand "glass" or "jars" or "local" or "basil" or "garlic" or "tomato" or "pesto" or "sun-dried" or "squid-flake" or "glossy" or "cardboard" as the pestos.
 
 The initial appearance of a pet is usually "Our [one of]new[or]recently-acquired[or]familiar[stopping] pet frolicks nearby." The description of a pet is "Unspecific as to species, but it has soft and gleaming fur; small, well-formed paws with tiny rose-col[our]ed nails; a twitching, sensitive nose; a tail; a clever look." The heft of the pet is 2.
-	The scent-description of the pet is "warm fur".
+The scent-description of the pet is "warm fur".
 
 Report something exiting when the person asked is a pet:
 	if the container exited from is the T-inserter, say "With a nervous glance at the injectors and nozzles, the pet clambers awkwardly out of the basket of the T-inserter and lowers itself to the ground.";

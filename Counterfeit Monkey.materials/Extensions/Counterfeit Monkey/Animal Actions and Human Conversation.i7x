@@ -1569,7 +1569,7 @@ Rule for refusing comment by the bartender when the noun is the Slangovia map or
 	let the target be the legend;
 	now the noun is the fake-legend;
 	if something (called the source) proffers the noun:
- 		now the target is not proffered by anything;
+		now the target is not proffered by anything;
 		now the source proffers the target;
 	if the noun is part of something (called the encloser):
 		now the target is part of the encloser;
@@ -1598,7 +1598,7 @@ Rule for refusing comment by the bartender when the noun is the Slangovia map or
 	let the target be the fake-legend;
 	now the noun is the legend;
 	if something (called the source) proffers the noun:
- 		now the target is not proffered by anything;
+		now the target is not proffered by anything;
 		now the source proffers the target;
 	if the noun is part of something (called the encloser):
 		now the target is part of the encloser;
@@ -1609,7 +1609,7 @@ Rule for refusing comment by the bartender when the noun is the Slangovia map or
 	say "[one of]She sighs. 'This isn't even good spectacle,' she says, tapping [the noun] with her paddle. 'Next time, bring me something fun, huh?'[or]She may be tiring of this operation.[stopping]"
 
 Rule for refusing comment by the bartender when the noun is the foil:
- 	if the player is not holding the foil:
+	if the player is not holding the foil:
 		silently try taking the foil;
 	if the player is not holding the foil:
 		say "[line break]It seems we're having a little trouble holding it up so that she can see.";
@@ -2837,7 +2837,7 @@ A first conversation-reply rule when the current interlocutor is the gift shop v
 			queue you-should-leave as postponed optional;
 	if the ostensible motive is you-are-possible-customer:
 		if the current interlocutor does not recollect offer-souvenirs:
-			 queue offer-souvenirs as postponed optional.
+			queue offer-souvenirs as postponed optional.
 
 broke-it-buy-it is an NPC-directed quip.
 	The reply is "'You broke it, you buy it,' says the volunteer. 'Though the tomes were free. But please at least take your mess away with you when you leave.'"
@@ -5913,5 +5913,5 @@ When Guard-capture ends in capture:
 [We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
 	end the story saying "That could have gone better"
 
-		
+
 Animal Actions and Human Conversation ends here.
