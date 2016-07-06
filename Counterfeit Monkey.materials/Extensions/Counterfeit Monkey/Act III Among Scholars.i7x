@@ -1386,6 +1386,9 @@ Instead of examining something when the location of the noun is not the location
 
 A small laptop is a laptop. The description is "It goes everywhere with Waterstone and is grimy with long use, but still functional." It is open and switched on.
 
+Instead of taking the small laptop:
+	say "We reach out our hand. He watches us the way a bird of prey might watch the twitching of a small garden snake. Our hand retracts. We do not take Professor Waterstone's laptop."
+
 Section 7 - Samuel Johnson Basement
 
 
