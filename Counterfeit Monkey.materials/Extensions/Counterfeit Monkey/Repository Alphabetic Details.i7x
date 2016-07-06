@@ -1976,6 +1976,9 @@ Before taking the nib when the nib is part of the pen:
 Instead of filling the pen with ink:
 	try inserting the second noun into the pen.
 
+Instead of inserting the pen into ink:
+	try inserting the second noun into the pen.
+
 The pen can be inked or uninked.
 
 Instead of inserting ink into the pen:
