@@ -2618,7 +2618,7 @@ Instead of inserting the sand into the funnel:
 Instead of inserting the sea-view into the funnel:
 	say "The water fills the funnel and then runs out again in a decorative drizzle on the sand. A moment later even that is gone in the heat of the day."
 
-A funnel is a thing in the Private Beach. The initial appearance is "[if the funnel is buried]Something green and plastic just barely pokes out of the sand[otherwise]Half-hidden in the sand, no doubt left over from some kid's sandcastle project, is a plastic funnel[end if]." The description is "A gaudy green plastic toy suitable for funneling water and shaping conical sand-turrets. [if examined]A few grains of sand still cling to it[otherwise]It's all sandy[end if]." The scent-description is "warm plastic".
+A funnel is a thing in the Private Beach. The initial appearance is "[if the funnel is buried]Something green and plastic just barely pokes out of the sand[otherwise]Half-hidden in the sand, no doubt left over from some kid's sandcastle project, is a plastic funnel[end if]." The description is "A gaudy green plastic toy suitable for funneling water and shaping conical sand-turrets. [if handled]A few grains of sand still cling to it[otherwise]It's all sandy[end if]." The scent-description is "warm plastic".
 	Understand "green" or "plastic" or "toy" or "gaudy" as the funnel.
 
 Instead of examining the buried funnel:
