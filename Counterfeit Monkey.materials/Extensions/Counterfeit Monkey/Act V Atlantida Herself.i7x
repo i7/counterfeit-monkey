@@ -699,7 +699,7 @@ The description of the cloth napkin is "Good linen in eau-de-nil, monogrammed wi
 
 The description of the crumbs is "At a guess, they come from some sort of breakfast roll or pastry." The crumbs are edible. The heft of the crumbs is 1. Instead of taking the crumbs: say "[We] know they'll only make a mess."
 
-The description of the coffee cup is "The residual liquid in the bottom reveals that the person whose breakfast this was takes a small amount of milk and no sugar." The coffee cup is a container.
+The description of the dirty coffee cup is "The residual liquid in the bottom reveals that the person whose breakfast this was takes a small amount of milk and no sugar." The dirty coffee cup is a container. The carrying capacity of the dirty coffee cup is 1.
 
 The description of the ebook reader is "An expensive recent model, silver-backed, with a glossy touch screen." The ebook reader is a computer. Book search is a search engine. The ebook runs book search. The data table of book search is the Table of Dull Data. Understand "list" or "list of books" as the ebook reader.
 

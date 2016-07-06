@@ -169,6 +169,8 @@ The soap is in the soap dispenser.
 
 The wall-hole is a fixed in place container in the Public Convenience. Understand "hole" or "hole in the wall" or "hole in wall" or "wall" as the wall-hole. The printed name is "[if looking]hole[otherwise]hole in the wall[end if]". The initial appearance is "About knee-height in one of the stalls is a [wall-hole] that runs right through the wall between the men's and women's restrooms." The description of the wall-hole is "It's too small to get a good look through, really, and usually cluttered with junk."
 
+The carrying capacity of the wall-hole is 1.
+
 Report searching the wall-hole when the ash is in the wall-hole:
 	say "[one of]At first there doesn't seem to be anything in there, but when we put our finger in, we find it's full of ash[or]The ash is still mounded up in the hole[stopping]." instead.
 
