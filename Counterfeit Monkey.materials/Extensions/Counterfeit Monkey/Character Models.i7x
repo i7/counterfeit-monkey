@@ -8,7 +8,7 @@ Book 2 - Character Models
 Section 1 - Some activities on Oneself
 
 When play begins (this is the set story viewpoint rule):
-   	now the story viewpoint is first person plural.
+	now the story viewpoint is first person plural.
 
 [Instead of waving the letter-remover at yourself when the current setting of the letter-remover is "y":
 	say "Arguably [we] already count as 'ourself.'"]
