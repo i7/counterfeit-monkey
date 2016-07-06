@@ -1160,11 +1160,11 @@ Sanity-check putting the tub on the tub:
 
 Sanity-check taking the tub when the player carries the tub:
 	if the player's command includes "gel" and the player's command does not include "gel tub":
-	say "[don't remove gel from tub]" instead.
+		say "[don't remove gel from tub]" instead.
 
 Sanity-check removing the tub from the tub:
 	if the player's command includes "gel" and the player's command does not include "gel tub":
-	say "[don't remove gel from tub]" instead.
+		say "[don't remove gel from tub]" instead.
 
 Instead of removing the gel from the tub:
 	say "[don't remove gel from tub]".
