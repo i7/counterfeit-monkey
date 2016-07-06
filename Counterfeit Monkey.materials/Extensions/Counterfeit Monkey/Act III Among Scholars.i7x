@@ -487,7 +487,7 @@ A nightstand is a supporter in the apartment bathroom. The initial appearance is
 
 The description of the nightstand is "It is wobbly, scratched, and chipped, which is the state in which my mother likes her antiques."
 
-Instead of inserting something into the nightstand, say "It doesn't have a drawer."
+Instead of inserting something into the nightstand, say "[The nightstand] doesn't have a drawer."
 
 The key is a passkey on the nightstand. It unlocks the apartment door. The heft of the key is 1.  The description is "It's made of an extremely ordinary blank.". The key unbolts the apartment door. The indefinite article of the key is "a".
 

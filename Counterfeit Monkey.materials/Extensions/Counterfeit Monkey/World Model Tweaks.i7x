@@ -1605,6 +1605,9 @@ Rule for disclosing contents of a drawer (called special-target):
 
 A desk is a kind of supporter. [Every desk incorporates two vertical drawers.] A desk is usually scenery. The description of a desk is usually "It's fakely veneered in dark wood and shows signs of years of abuse." A desk is usually seated.
 
+Instead of inserting something into a desk:
+		say "[The second noun] [don't] have a drawer."
+
 A chair is a kind of supporter. A chair is usually scenery. A chair is always enterable. Understand "seat" as a chair. Understand "take [chair]" as entering. The description of a chair is usually "It is an ordinary inexpensive variety of chair, made locally and found around the island in great numbers." A chair is usually seated.
 
 When play begins (this is the chair and desk postures rule):
