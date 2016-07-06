@@ -167,10 +167,6 @@ Sanity-check inserting something (called the target) into the target:
 Sanity-check inserting something in a container (called the target) into the target:
 	say "[The noun] [are] in [the target] already." instead.
 
-Sanity-check putting something (called the target) on the target:
-	unless the target is the tube and the player's command includes "gel on/onto":
-		say "[We] can't put [the target] on [themselves]." instead.
-
 Sanity-check putting something (called the source) on a supporter (called the target) when the source is on the target:
 	say "[The source] [are] on [the target] already." instead.
 
@@ -354,77 +350,6 @@ Instead of drinking something which is not fluid:
 
 Understand "apply pressure to [something]" as pushing.
 Understand "lean on [something]" as pushing.
-
-Section 6 - Actions on multiple objects
-
-Rule for deciding whether all includes fixed in place things: it does not.
-Rule for deciding whether all includes scenery: it does not.
-Rule for deciding whether all includes people while taking: it does not.
-Rule for deciding whether all includes things carried by other people while taking: it does not.
-
-Rule for deciding whether all includes other people carried by the person asked while dropping or throwing or inserting or putting (this is the new exclude people from drop all rule):
-	it does.
-
-[Hack to avoid "What do you want to drop those things in?" when typing DROP ALL while carrying nothing.]
-Rule for deciding whether all includes the person asked while dropping:
-	if the person asked is empty:
-		it does.
-
-A multiple action processing rule when dropping:
-	if the player is empty:
-		alter the multiple object list to {};
-		say "[We] don't have anything to drop.";
-	otherwise:
-		let L be the multiple object list;
-		if the player is listed in L:
-			remove player from L;
-			alter the multiple object list to L.
-
-The new exclude people from drop all rule is listed instead of the exclude people from drop all rule in the for deciding whether all includes rulebook.
-
-Rule for clarifying the parser's choice of something:
-	do nothing instead.
-
-[The empty-removing action makes it possible to give custom replies to trying to remove all from an empty container or supporter]
-Understand "remove all/everything from [an empty container]" or "take all/everything from [an empty container]" or "get all/everything from [an empty container]" as empty-removing.
-
-Understand "remove all/everything from [an empty supporter]" or "take all/everything from/off [an empty supporter]" or "get all/everything from/off [an empty supporter]" as empty-removing.
-
-Empty-removing is an action applying to one thing.
-
-Carry out empty-removing:
-	if the noun is closed and noun is opaque and the noun is a container:
-		say "[The noun] [aren't] open.";
-	otherwise:
-		say "[The noun] [are] empty.";
-
-[Preventing long lists of error messages when typing things like "put all in rock"]
-
-A multiple action processing rule when the action name part of the current action is the putting it on action (this is the stop putting error list rule):
-	if the second noun is not a supporter:
-		alter the multiple object list to {};
-		say "Putting things on [the second noun] would achieve nothing."
-
-A multiple action processing rule when the action name part of the current action is inserting it into action (this is the stop inserting error list rule):
-	if the second noun is gel-related:
-		if the second noun is the tube:
-			say "The tube's opening is too small.";
-		otherwise:
-			say "That would only make a mess. Try rubbing the [if the second noun is the paste]paste[otherwise]gel[end if] on things instead.";
-		alter the multiple object list to {};
-		make no decision;
-	otherwise:
-		if the second noun is not a container:
-			alter the multiple object list to {};
-			say "[The second noun] can't contain things.";
-			make no decision;
-	if the second noun is the toolkit:
-		alter the multiple object list to {};
-		say "[The toolkit] is full already."
-
-This is the cancel multiple rule:
-	alter the multiple object list to {};
-	the rule fails.
 
 Part 2 - Senses
 

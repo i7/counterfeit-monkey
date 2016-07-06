@@ -486,6 +486,101 @@ Carry out testing facing:
 		say "[line break] up: ";
 		try facing up.
 
+Understand "pound all-lists" as pounding all-lists. Pounding all-lists is an action out of world.
+
+Carry out pounding all-lists:
+	let L be a list of things;
+	let all-list be { tomcat, apple, stick, cream };
+	repeat with C running through containers:
+		add C to L;
+	remove the repository from L;
+	remove the backup-repository from L;
+	remove quip-repository from L;
+	repeat with S running through supporters:
+		add S to L;
+	repeat with F running through fluid things:
+		add F to L;
+	repeat through the Table of snarky supporters:
+		add support entry to L;
+	repeat through the Table of unsuitable supporters:
+		add support entry to L;
+	repeat through the Table of unsuitable containers:
+		add box entry to L;
+	repeat through the Table of snarky containers:
+		add box entry to L;
+	sort L in printed name order; [remove any duplicates in the list]
+	let last be nothing;
+	let L2 be a list of things;
+	let N be text;
+	let D be 0;
+	repeat with obj running through L:
+		let N1 be printed name of obj;
+		let D1 be the number of words in description of obj; [checking the printed name and the number of words in description seems to be the best way to see if two objects are identical instances of the same kind, and only fails for the tent(s) because of the random description.]
+		unless obj is last or (N1 is N and D1 is D):
+			add obj to L2;
+			now last is obj;
+			now N is N1;
+			now D is D1;
+	now L is L2;
+	repeat with item running through L:
+		now the second noun is item;
+		say "[bold type][The item][roman type][line break]";
+		if item is enclosed by a room (called R):
+			unless R is location:
+				move player to R, without printing a room description;
+				say "(moving to [the R])[line break]";
+		otherwise:
+			unless item is a backdrop:
+				move item to location;
+				say "(moving [the item] to [the location])[line break]";
+			otherwise:
+				now item is everywhere;
+		repeat with obj running through all-list:
+			move obj to player;
+		say "(examine [the item])";
+		try examining the item;
+		say "(remove all from [the item])";
+		if item is empty:
+			try empty-removing item;
+		otherwise:
+			let H be a list of things;
+			repeat with obj running through things held by item:
+				unless obj is scenery or obj is part of item:
+					add obj to H;
+			alter the multiple object list to H;
+			follow the stop removing error list rule;
+			repeat with obj running through multiple object list:
+				say "[obj]: [run paragraph on]";
+				try removing obj from item;
+			if multiple object list is empty:
+				say "That can't contain things.";
+		say "(put all on [item])";
+		repeat with obj running through all-list:
+			move obj to player;
+		alter the multiple object list to all-list;
+		follow the stop putting error list rule;
+		repeat with obj running through the multiple object list:
+			say "[obj]: [run paragraph on]";
+			try putting obj on item;
+		say "(put all in [item])";
+		alter the multiple object list to all-list;
+		follow the stop inserting error list rule;
+		repeat with obj running through the multiple object list:
+			say "[obj]: [run paragraph on]";
+			try inserting obj into item;
+		move spill to location;
+		say "(put spill in [item])";
+		try inserting spill into item;
+		say "(put spill on [item])";
+		try putting spill on item;
+		move apple to player;
+		say "(put apple on [item])";
+		try putting the apple on item;
+		say "(put apple in [item])";
+		try inserting the apple into item;
+		say "(remove apple from [item])";
+		try removing apple from item;
+
 [Object responses for everything in the repository.]
 
 Include Object Response Tests by Juhana Leinonen.

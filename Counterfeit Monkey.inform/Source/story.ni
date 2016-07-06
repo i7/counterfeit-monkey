@@ -150,6 +150,7 @@ Include Viewpoint and Narrative Voice by Counterfeit Monkey.
 		•	Section 6 - The THINK verb ]
 	
 Include World Model Tweaks by Counterfeit Monkey.
+Include Actions on Multiple Objects by Counterfeit Monkey.
 
 [	•	Book 4 - Default World Model Tweaks
 		•	Part 1 - Parsing and Verb Handling
@@ -158,7 +159,6 @@ Include World Model Tweaks by Counterfeit Monkey.
 			•	Section 3 - Miscellaneous Verbs
 			•	Section 4 - Miscellaneous Class Vocabulary
 			•	Section 5 - Sanity and Accessibility
-			•	Section 6 - Actions on multiple objects
 		•	Part 2 - Senses
 			•	Section 1 - Smell and Taste
 			•	Section 2 - Loudness
@@ -544,6 +544,7 @@ Include Presentation Details by Counterfeit Monkey.
 Include Character Models by Counterfeit Monkey.
 Include Viewpoint and Narrative Voice by Counterfeit Monkey.
 Include World Model Tweaks by Counterfeit Monkey.
+Include Actions on Multiple Objects by Counterfeit Monkey.
 Include Features of Created Objects by Counterfeit Monkey.
 Include Schedule and Time by Counterfeit Monkey.
 Include Act I Among Sightseers by Counterfeit Monkey.
