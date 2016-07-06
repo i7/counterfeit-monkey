@@ -119,14 +119,16 @@ The description of the art is "It's a very plausible copy of [one of]'Still Life
 	The indefinite article is "some".
 	The scent-description of the art is "linseed oil".
 
-The fake-as is a thing. The printed name is "as". Understand "as" as the fake-as. The description of the fake-as is "[one of]It appears to be an as, a [or]A [stopping]Roman coin of very low denomination[one of]. (Your knowledge, not mine. Should I ask how you know such things?)[or].[stopping] It is made of copper and has the letters S C stamped on one side." Understand "roman" or "coin" or "copper" as the fake-as. The heft of the fake-as is 1.
+An as is a kind of thing. The description of an as is "[one of]It appears to be an as, a [or]A [stopping]Roman coin of very low denomination[one of]. (Your knowledge, not mine. Should I ask how you know such things?)[or].[stopping] It is made of copper and has the letters S C stamped on one side." Understand "as/roman/coin/copper" as an as. The heft of an as is 1. The printed name of an as is "as".
 
-Instead of searching or looking under the fake-as:
+Instead of searching or looking under an as:
 	say "We inspect both obverse and reverse, but come away none the wiser."
-Instead of buying the fake-as:
+Instead of buying an as:
 	say "We're much too late for speculation in this particular currency."
-Instead of touching or squeezing or rubbing the fake-as:
+Instead of touching or squeezing or rubbing an as:
 	say "The metal surface is dull and weathered, skin-temperature, all smooth edges."
+
+The fake-as is an as.
 
 The ass is an animal. The initial appearance is "Adorably miniature, as donkeys on this island tend to be: he comes up to roughly knee-height and could be carried like a dog, though his sentiments on the experience might not be flattering. He does still have a bite, and back legs."
 	The description of the ass is "He is not the ideal companion in a mission of stealth."

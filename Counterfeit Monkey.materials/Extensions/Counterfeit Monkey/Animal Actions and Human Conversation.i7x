@@ -616,7 +616,7 @@ Rule for refusing comment by someone who exhibits privateness when the noun is t
 		make no decision;
 	say "'[awkward no], that doesn't seem like any of my business.'"
 
-Rule for refusing comment by someone when the noun is the as or the noun is the fake-as:
+Rule for refusing comment by someone when the noun is an as:
 	if the current interlocutor is an animal:
 		make no decision;
 	if the current interlocutor knows you-are-possible-customer:
@@ -843,7 +843,7 @@ The generic negative of Picard is "no".
 The generic adversative of Picard is "er".
 The generic confrontational of Picard is "ensign".
 
-Rule for refusing comment by Picard when the noun is the as:
+Rule for refusing comment by Picard when the noun is an as:
 	say "'Curious,' he says, tugging his shirt back into place.
 
 Picard was supposed to be interested in archaeology, now I recall. But alien stuff, right? Yeah."
@@ -854,7 +854,7 @@ Picard was supposed to be interested in archaeology, now I recall. But alien stu
 
 Section 4 - The Pict
 
-Rule for refusing comment by the Pict when the noun is the as:
+Rule for refusing comment by the Pict when the noun is an as:
 	say "He makes a disdainful face. Then he coughs up some phlegm and spits dramatically.
 
 Possibly he isn't a fan of Romans."
@@ -3785,14 +3785,7 @@ Test Slango2 with "tutorial off / deparker / z / t who / explain / snicker / sni
 
 Section 4 - Lena
 
-The as is a thing. The description of the as is "[one of]It appears to be an as, a [or]A [stopping]Roman coin of very low denomination[one of]. (Your knowledge, not mine. Should I ask how you know such things?)[or].[stopping] It is made of copper and has the letters S C stamped on one side." Understand "roman" or "coin" or "copper" as the as. The heft of the as is 1.
-
-Instead of searching or looking under the as:
-	say "We inspect both obverse and reverse, but come away none the wiser."
-Instead of buying the as:
-	say "We're much too late for speculation in this particular currency."
-Instead of touching or squeezing or rubbing the as:
-	say "The metal surface is dull and weathered, skin-temperature, all smooth edges."
+The as-coin is an as.
 
 The greeting of Lena is "'[one of]Happy Serial Comma Day[or]Greetings[or]Hi there[stopping],' she says."
 The generic negative of Lena is "[one of]nope[or]nope nope[at random]".
@@ -4006,10 +3999,10 @@ Instead of saying no when encourage Lena to contact slango is available:
  It indirectly-follows whether she hath seen slango.
 
 Carry out Lena discussing encourage Lena to contact Slango:
-	move the as to the location;
-	if the player does not carry the as:
+	move the as-coin to the location;
+	if the player does not carry the as-coin:
 		[follow the considerate player's holdall rule;]
-		move the as to the player;
+		move the as-coin to the player;
 	assign "Finally find Slango at Counterfeit Monkey" at Counterfeit Monkey;
 	complete "Talk to Lena at the Aquarium Bookstore";
 	record "arranging contact with Slango through his lady friend" as achieved;
@@ -4019,7 +4012,7 @@ Instead of answering Lena that "thank you":
 	try discussing thank Lena.
 
  thank Lena is a performative quip.
- It mentions as.
+ It mentions as-coin.
  Understand "her" or "thank you" or "thanks" as thank Lena.
  The comment is "'Thank you,' we say. 'We owe you one.'".
  The reply is "She smirks. 'I get my money's worth out of Slango, don't worry.'".
@@ -4030,7 +4023,7 @@ Instead of answering Lena that "thank you":
 Table of Ultratests (continued)
 topic	stuff	setting
 "Lena"	{ tub, origin paste }	the Aquarium
-"as"	{ tub, ash, as, coat }	Workshop
+"as"	{ tub, ash, as-coin, coat }	Workshop
 
 Test Lena with "tutorial off / z / open tub / ask about slango / say who we are / z / z / wave m-remover at modems / wave s-remover at odes / gel ode / wave m-remover at modems / wave p-remover at preamps / wave s-remover at reams / put paste on odes / put paste on ream / ask whether / encourage" [in the Aquarium holding tub and the origin paste].
 Test as with "tutorial off / open tub / powerup / put as on dais / wave a-remover at coat / put cot on dais / set switch to synthesize / pull lever / wave h-remover at ash / get as / i / gel ascot / l / i".

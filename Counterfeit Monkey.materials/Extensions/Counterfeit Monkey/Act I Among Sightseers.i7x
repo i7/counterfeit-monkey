@@ -2463,7 +2463,7 @@ Sanity-check putting something on the shrine:
 
 [The shrine is an easter egg to begin with; but easter eggs are the most fun if they are toys as well. The shrine offers the opportunity for some expressive play, as the player can try inserting different items. Mostly it's up to the player to roll his own meanings for this, but there are special responses for a few of the most pointed donations.]
 
-Report inserting the as into the shrine:
+Report inserting an as into the shrine:
 	say "[We] set [the noun] in the shrine, as though to leave a small offering for whatever deities these were." instead.
 
 Report inserting the member into the shrine:
@@ -2528,7 +2528,7 @@ Instead of climbing underfoot-path:
 [TODO fix tests]
 Table of Ultratests (continued)
 topic	stuff	setting
-"shrine"	{ god, pita, roll of bills, as, cross, army, members, yellow sign, Guidebook }	Winding Footpath
+"shrine"	{ god, pita, roll of bills, as-coin, cross, army, members, yellow sign, Guidebook }	Winding Footpath
 
 Test shrine with "tutorial off / autoupgrade / wave z-remover at kudzu / look behind bushes / put god in shrine / look / get god / wave a-remover at pita / wave t-remover at pit / put pi in shrine / look / get pi / put bills in shrine / look / get bills / put as in shrine / look / get as / put cross in shrine / look / get cross / put army in shrine / look / get army / put members in shrine / look / get members / wave s-remover at members / put member in shrine / look /  get member / wave g-remover at sign / put sin in shrine / look / get sin / put guidebook in shrine / look / get guidebook" [holding the god and the pita and the roll of bills and the as and the cross and the army and the members and the yellow sign and the Guidebook in the Winding Footpath.]
 

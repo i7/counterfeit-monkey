@@ -49,8 +49,8 @@ When play begins (this is the setting proffered rule):
 	now the bandana proffers the banana;
 	now the shed is not proffered by anything;
 	now the shred proffers the shed;
-	now the as is not proffered by anything;
-	now the pastis proffers the as;
+	now the as-coin is not proffered by anything;
+	now the pastis proffers the as-coin;
 	now the ash is not proffered by anything;
 	now the trash proffers the ash;
 	now the pear is not proffered by anything;
