@@ -1774,17 +1774,20 @@ Sanity-check burning the fuel:
 Sanity-check burning oil:
 	say "Let's keep your arsonist tendencies under wraps. I think they might attract attention." instead.
 
-Rule for deciding whether all includes a fluid thing while taking:
+Rule for deciding whether all includes an uncontained fluid thing while taking:
 	it does not.
 
-Sanity-check tying a fluid to something:
+Rule for deciding whether all includes an uncontained fluid thing while the action name part of the current action is the removing it from action:
+	it does not.
+
+Sanity-check tying an uncontained fluid to something:
 	say "[The noun] [don't] make much of an anchor point." instead.
 
-Sanity-check tying something to a fluid:
+Sanity-check tying something to an uncontained fluid thing:
 	say "[The second noun] [don't] make much of an anchor point." instead.
 
-Sanity-check climbing a fluid thing:
-	say "A prominent feature of fluids is that they don't provide much support." instead.
+Sanity-check climbing an uncontained fluid thing:
+	say "A prominent feature of [noun] is that [they] [don't] provide much support." instead.
 
 A thing can be contained or uncontained. A thing is usually uncontained.
 
