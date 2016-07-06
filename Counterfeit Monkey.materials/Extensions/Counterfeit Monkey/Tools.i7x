@@ -1058,27 +1058,6 @@ Section 1 - Gel and the Rest of the World
 
 Understand "gel" or "restoration gel" as the tub when the tub is closed. The scent-description of the restoration gel is "spearmint".
 
-Sanity-check waving the restoration gel:
-	try waving the holder of the restoration gel instead.
-
-Sanity-check taking the restoration gel:
-	try taking the holder of the restoration gel instead.
-
-Sanity-check dropping the restoration gel:
-	try dropping the holder of the restoration gel instead.
-
-Sanity-check inserting the restoration gel into something:
-	try inserting the holder of the restoration gel into the second noun instead.
-
-[Sanity-check putting the restoration gel on something:
-	try putting the holder of the restoration gel on the second noun instead. ]
-
-Sanity-check closing the restoration gel:
-	try closing the holder of the restoration gel instead.
-
-Sanity-check opening the restoration gel:
-	try opening the holder of the restoration gel instead.
-
 Instead of tasting or eating the restoration gel:
 	say "While it may look like toothpaste and smell like toothpaste, it actually is not toothpaste."
 
@@ -1121,12 +1100,43 @@ Understand "apply [something gel-related] on/onto/to [something]" as putting it 
 
 Understand "use [something gel-related] on/with [something]" as putting it on.
 
-Understand "[gel] [something]" as putting it on.
+Understand "gel [something]" as gelling. Gelling is an action applying to one thing.
+
+Carry out gelling something:
+	if the tube is marked-visible:
+		try putting the tube on the noun instead;
+	if the tub is marked-visible:
+		try putting the restoration gel on the noun instead.
+
 Understand "[paste] [something]" as putting it on.
 
+Sanity-check waving the restoration gel:
+	try waving the holder of the restoration gel instead.
+
+Sanity-check taking the restoration gel:
+	try taking the holder of the restoration gel instead.
+
+Sanity-check dropping the restoration gel:
+	try dropping the holder of the restoration gel instead.
+
+Sanity-check inserting the restoration gel into something:
+	try inserting the holder of the restoration gel into the second noun instead.
+
+Sanity-check closing the restoration gel:
+	try closing the holder of the restoration gel instead.
+
+Sanity-check opening the restoration gel:
+	try opening the holder of the restoration gel instead.
+
+Sanity-check putting the tube on the tube:
+	if the player's command includes "gel on/onto/tube":
+		say "The gel doesn't restore the contents of things: it changes back items that have been linguistically manipulated." instead;
+	otherwise:
+		continue the action.
+
 Before putting the tub on something:
-	if the player's command includes "gel":
-		if the tub is closed:
+	if the player's command includes "gel" and the player's command does not include "gel tub":
+		if the tub is closed and the tub is touchable:
 			silently try opening the tub;
 		if the tub is open:
 			try putting the restoration gel on the second noun instead;
@@ -1135,20 +1145,38 @@ Before putting the tub on something:
 			try rubbing the tub instead.
 
 Before putting the gel on something when the tub is closed:
+	if the tub is in the backpack and the backpack is closed:
+		try opening the backpack;
+		if the backpack is closed:
+			stop the action;
 	silently try opening the tub.
+
+Sanity-check removing something from the tub when tub is closed and tub is touchable:
+		silently try opening the tub.
+
+Sanity-check putting the tub on the tub:
+	if the player's command includes "gel on/onto/tub":
+		try putting the restoration gel on the tub instead.
+
+Sanity-check taking the tub when the player carries the tub:
+	if the player's command includes "gel" and the player's command does not include "gel tub":
+	say "[don't remove gel from tub]" instead.
 
 Sanity-check removing the tub from the tub:
 	if the player's command includes "gel" and the player's command does not include "gel tub":
-		try removing the gel from the tub instead.
+	say "[don't remove gel from tub]" instead.
 
 Instead of removing the gel from the tub:
+	say "[don't remove gel from tub]".
+
+To say don't remove gel from tub:
 	say "[We] better leave [the gel] in there until [we] have decided what to put it on."
 
 Instead of empty-removing the tube:
 	try squeezing the tube;
 
 Sanity-check putting the tube on something:
-	if the player's command includes "gel on/onto" and the player's command does not include "gel tube on/onto":
+	if the player's command includes "gel" and the player's command does not include "gel tube on/onto":
 		if the barker carries the tube:
 			say "We don't have the gel at the moment." instead;
 		otherwise:

@@ -957,7 +957,7 @@ Check someone who is not the current interlocutor discussing an NPC-directed qui
 barker-advertisement is an NPC-directed quip.
 	The reply is "[one of]'Step up and try your hand at the fabulous word-balance!' calls the barker appealingly.[or]'Put the beam out of alignment and win a fabulous prize!' says the barker, holding up a [tube].[or]'One [tube] of restoration gel goes to the first person who can unbalance the word-balance!' cries the barker, glance sweeping the crowd.[at random]".
 
-The barker is carrying a tube. The description of the tube is "It claims to be full of restoration gel, but said gel has mostly gone. If only it had been a larger container to start with." Understand "gel" or "prize" or "fabulous prize" or "label" or "restoration gel" as the tube. The scent-description of the tube is "mint". The tube is an essential container.
+The barker is carrying a tube. The description of the tube is "The tube claims to be full of restoration gel, but said gel has mostly gone. If only it had been a larger container to start with." Understand "gel" or "prize" or "fabulous prize" or "label" or "restoration gel" as the tube. The scent-description of the tube is "mint". The tube is an essential container.
 
 Instead of searching the tube:
 	try examining the tube.
