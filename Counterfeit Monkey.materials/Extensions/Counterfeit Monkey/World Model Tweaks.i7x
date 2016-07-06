@@ -1391,18 +1391,18 @@ Before going somewhere when [the player is staid and] the location encloses an u
 
 A room can be publicly-available or privately-controlled. A room is usually publicly-available.
 
-Sanity-check dropping something which is not heavy in a privately-controlled room (this is the no-dropping rule):
-	say "[non-drop-zone]" instead.
+Instead of dropping something which is not heavy in a privately-controlled room (this is the no-dropping rule):
+	say "[non-drop-zone]".
 
-Sanity-check inserting something into something which is not enclosed by the player in a privately-controlled room:
-	say "[non-drop-zone]" instead.
+Instead of inserting something into a container not enclosed by the player in a privately-controlled room:
+	say "[non-drop-zone]".
 
-Sanity-check putting something on something which is not enclosed by the player in a privately-controlled room:
+Instead of putting something on a supporter not enclosed by the player in a privately-controlled room:
 	if the noun is the gel:
 		continue the action;
 	if the noun is the origin paste:
 		continue the action;
-	say "[non-drop-zone]" instead.
+	say "[non-drop-zone]".
 
 To say non-drop-zone:
 	say "[one of]I wouldn't. [We] might never get [the noun] back.[or]I'm inclined to keep all our things with us, under the circumstances.[or]I'm not ready to part with [the noun] here. After all, can [we] be sure [we][']d be able to get back?[at random]".
