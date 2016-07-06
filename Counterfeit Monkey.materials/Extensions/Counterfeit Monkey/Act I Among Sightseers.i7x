@@ -933,10 +933,6 @@ Instead of touching or pushing or pulling or turning something which is in a pan
 Instead of inserting something into a pan in the presence of the barker:
 	say barker-refusal.
 
-[Yes, this is very strange. By default the parser will exclude the contents of the right pan when typing GET ALL while taking the contents of the left. But with this rule it works.]
-Rule for deciding whether all includes things enclosed by the right pan while taking:
-	it does;
-
 To say barker-refusal:
 	say "[one of]'None of that!' says [the barker]. 'You must make one side go down and the other come up, but you may not add or subtract anything from the load, you may not apply pressure to the beam itself, and you may not lean on, push, pull, or support the individual pans!'
 
