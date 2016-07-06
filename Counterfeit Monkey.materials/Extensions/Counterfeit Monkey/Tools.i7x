@@ -1154,6 +1154,14 @@ Before putting the gel on something when the tub is closed:
 Sanity-check removing something from the tub when tub is closed and tub is touchable:
 		silently try opening the tub.
 
+Sanity-check inserting something gel-related (called the target) into the target (this is the no putting gel into tube rule):
+	[kludge to fix a very minor glitch]
+	if the target is the tub or the target is the tube:
+		if the player's command includes "gel in/into":
+			say "The restoration gel is in [the target] already." instead;
+	otherwise:
+		continue the action.
+
 Sanity-check putting the tub on the tub:
 	if the player's command includes "gel on/onto/tub":
 		try putting the restoration gel on the tub instead.
@@ -1175,8 +1183,8 @@ To say don't remove gel from tub:
 Instead of empty-removing the tube:
 	try squeezing the tube;
 
-Sanity-check putting the tube on something:
-	if the player's command includes "gel" and the player's command does not include "gel tube on/onto":
+Before doing something with the tube:
+	if the player's command includes "gel" and the player's command does not include "gel tube" and the second noun is not the tube:
 		if the barker carries the tube:
 			say "We don't have the gel at the moment." instead;
 		otherwise:

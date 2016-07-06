@@ -155,14 +155,6 @@ A first accessibility rule (this is the go to location rule):
 To decide what object is the touch-goal:
 	(- (untouchable_object) -).
 
-Sanity-check inserting something gel-related (called the target) into the target (this is the no putting gel into tube rule):
-	[kludge to fix a very minor glitch]
-	if the target is the tub or the target is the tube:
-		if the player's command includes "gel in/into":
-			say "The restoration gel is in [the target] already.";
-	otherwise:
-		continue the action.
-
 Sanity-check inserting something (called the holder) into something which is enclosed by the holder:
 	say "[We] can't put [the holder] into [themselves]." instead.
 
