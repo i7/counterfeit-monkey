@@ -218,7 +218,7 @@ The try opening rules is an object-based rulebook.
 The try reaching rules is an object-based rulebook.
 
 A try opening rule for a container (called the box):
-	if the player is not in the box:
+	if the player is not enclosed by the box:
 		if the box is not openable:
 			say "[The box] [aren't] open.";
 		otherwise:
@@ -232,7 +232,7 @@ A try opening rule for a container (called the box):
 A try reaching rule for something (called the target):
 	let the outer-box be the holder of the holder of the target;
 	let the box be the holder of the target;
-	if the outer-box is closed:
+	if the outer-box is a closed container:
 		abide by the try opening rules for the outer-box;
 	if the box is a closed container:
 		abide by the try opening rules for the box;
