@@ -1129,8 +1129,8 @@ Carry out examining Complete Lojban: now the noun is proper-named.
 
 The sugar bowl is a container on the oval table. Instead of searching the sugar bowl, say "It is about a quarter full."
 
-Instead of inserting something into the sugar bowl:
-	say "That would ruin the sugar.";
+Sanity-check inserting something into the sugar bowl:
+	say "That would ruin the sugar." instead;
 
 Instead of empty-removing the sugar bowl:
 	try taking the sugar bowl.
@@ -1143,7 +1143,7 @@ Sanity-check eating or tasting the sugar bowl:
 
 The teapot is a container on the oval table. The teapot is openable and closed. The description is "Black and Japanese-styled." Understand "tea" as the teapot. Instead of searching the teapot: say "[We] peek inside. The tea has evidently been sitting on the leaves a long time, because it is powerful and looks almost like coffee."
 
-Sanity-check drinking or tasting the teapot:
+Sanity-check eating or tasting the teapot:
 	say "To judge by the col[our] of the tea, it has been steeping so long as to be nearly vertical." instead.
 
 Sanity-check inserting something into the teapot:
@@ -1173,8 +1173,8 @@ Rule for deciding the concealed possessions of Higgate:
 	if the particular possession is the lsr-key:
 		yes.
 
-Instead of putting something on the oval table:
-	say "Why get our stuff mixed up with Professor Higgate's? Besides, there's not a lot of space left there anyway."
+Sanity-check putting something on the oval table:
+	say "Why get our stuff mixed up with Professor Higgate's? Besides, there's not a lot of space left there anyway." instead.
 
 Report Professor Higgate saying hello to the player:
 	if Higgate recollects that we do not speak Lojban, queue English-greeting instead;

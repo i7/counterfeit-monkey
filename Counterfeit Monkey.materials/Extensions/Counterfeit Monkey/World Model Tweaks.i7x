@@ -479,7 +479,7 @@ Understand "bite [someone]" as attacking.
 Understand "bite [something]" as tasting.
 
 Instead of eating something:
-	say "[one of]I don't think our nausea makes eating such a great idea.[or]I really couldn't.[or]I'm still feeling pretty sick to our stomach.[or]Let's not tempt fate.[cycling]"
+	say "[one of]I don't think our nausea makes [if noun is fluid]drinking[otherwise]eating[end if] such a great idea.[or]I really couldn't.[or]I'm still feeling pretty sick to our stomach.[or]Let's not tempt fate.[cycling]"
 
 Section 2 - Loudness
 
