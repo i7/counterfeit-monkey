@@ -779,6 +779,12 @@ Instead of listening to the sea-view:
 Instead of listening to a room in the presence of the sea-view:
 	try listening to the sea-view.
 
+Instead of putting something on the sea-view:
+	say "That is not a good way to get rid of [the noun]."
+
+Instead of inserting something into the sea-view:
+	say "That is not a good way to get rid of [the noun]."
+
 Instead of washing something in the presence of the sea-view:
 	say "Washing things in ocean water tends to leave them a bit gritty afterward, or even stained with rings of dried salt."
 
