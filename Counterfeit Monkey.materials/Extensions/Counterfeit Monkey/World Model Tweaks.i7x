@@ -175,18 +175,6 @@ Sanity-check inserting something (called the target) into the target:
 Sanity-check inserting something in a container (called the target) into the target:
 	say "[The noun] [are] in [the target] already." instead.
 
-Sanity-check putting the tube on the tube:
-	if the player's command includes "gel on/onto/tube":
-		say "The gel doesn't restore the contents of things: it changes back items that have been linguistically manipulated." instead;
-	otherwise:
-		continue the action.
-
-Sanity-check putting the tub on the tub:
-	if the player's command includes "gel on/onto/tub":
-		try putting the restoration gel on the tub instead;
-	otherwise:
-		continue the action.
-
 Sanity-check putting something (called the target) on the target:
 	unless the target is the tube and the player's command includes "gel on/onto":
 		say "[We] can't put [the target] on [themselves]." instead.
