@@ -2641,7 +2641,7 @@ Instead of washing the funnel in the presence of the fountain:
 	say "We dip the funnel in the water and quickly shake it dry.";
 	now the description of the funnel is "A gaudy green plastic toy suitable for funneling water and shaping conical sand-turrets."
 
-Instead of  washing the funnel when the player can touch a sink (called target sink):
+Instead of washing the funnel when the player can touch a sink (called target sink):
 	now the description of the funnel is "A gaudy green plastic toy suitable for funneling water and shaping conical sand-turrets.";
 	say "[We] run some water from [the target sink] over [the funnel], leaving it glistening and clean." instead.
 
