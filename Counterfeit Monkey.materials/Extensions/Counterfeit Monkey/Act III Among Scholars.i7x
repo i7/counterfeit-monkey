@@ -22,9 +22,6 @@ Long Street North is a proper-named and southern road. The description is "Long 
 
 Some anemic palm trees are a backdrop. They are in Long Street North and Long Street South. The description is "The only foliage comes in a clump high above. The effect is distorted and unnatural, and I say that having lived with them all my life. They are trees in the same sense that ostriches are birds." The printed name is "an[ae]mic palm trees". Understand "palms" or "anaemic" as the anemic palm trees.
 
-Instead of going inside when location is Long Street North:
-	try going west.
-
 South of Long Street North is Long Street South. Long Street South is a  proper-named southern road. The description is "Long Street is lined on each side with a double-row of tall, an[ae]mic palm trees that bend towards one another many feet overhead. [We] are now in the southern part of this long corridor, between the Canadian Embassy and Arbot Maps & Antiques."
 
 The Canadian Embassy is a facade in Long Street South. It fronts east. It is scenery. The description is "The embassy is the largest foreign embassy here: Canadians do a lot of business with Atlantis, but the Québécois require special permission to enter, so there's a call for substantial clerical work. The building is a solid 1960s block in concrete with slit-shaped windows." Understand "concrete" or "windows" or "solid" or "block" or "slit-shaped" or "slit" or "window" or "slit shaped" or "slits" as the Canadian Embassy.
@@ -56,6 +53,8 @@ After going to Arbot Maps & Antiques:
 		move the player to Long Street South, without printing a room description.
 
 Arbot Maps & Antiques is west of Long Street South. It is indoors and southern. Understand "shop" or "store" or "antique" as Arbot Maps &  Antiques.
+
+Out-direction of Arbot Maps & Antiques is east. [Long Street South]
 
 Instead of smelling Arbot Antiques:
 	say "The place smells of fresh coffee and old paper."
@@ -139,6 +138,8 @@ If you are my mother, you call this style Atlantean Postmodern. Less kindly, it 
 Fleur d'Or lobby is indoors and southern. The room divider is a scenery thing in Fleur d'Or Lobby. The printed name is "sheet of frosted glass". Understand "glass" or "sheet" or "sheet of" or "frosted" or "annotation" or "primordial" or "primeval" or "sea" as the room divider. The description is "The glass is a good three quarters of an inch thick, and looks very sturdy. The etched letters glow or fade out again depending on the changing light conditions in the lobby.
 
 Annotation in the corner indicates that this is a commissioned artwork by Anne Landis Rosehip, entitled 'The Primeval Sea.'"
+
+Out-direction of Fleur d'Or Lobby is east. [To Long Street North]
 
 The spotlights are a scenery thing in the Fleur d'Or Lobby. Understand "spotlight" or "light" or "lights" or "lighting" or "changing light" or "pools" or "distinct pools" as the spotlights. The description is "The spotlights are more or less steady blue, just fluctuating a little in intensity to add to the sense of being underwater."
 
@@ -346,6 +347,8 @@ Section 2 - Babel Cafe
 
 South of Palm Square is Babel Café. Understand "cafe" as the Babel Café. The description of Babel Café is "Through many changes of management, this institution has fed the denizens of the university and ignored their semi-sedition." Babel Café is indoors and southern.
 
+Out-direction of Babel Café is north. [Back to Palm Square]
+
 The clerk is an alert man in the Babel Café. The initial appearance is "[A clerk] in [a white apron] stands behind [the long glass case][unless the long glass case contains something], now emptied by our purchases[end if]." The clerk wears a white apron.
 	The description of the clerk is "A smooth-faced young man. He has the cheery demean[our] of one earning substantial overtime pay."
 	The description of the white apron is "Clean white cotton, bordered with a Greek meander trim in dark blue embroidery thread."
@@ -478,7 +481,10 @@ Understand "climb through [something]" or "climb in [something]" or "climb into 
 
 Section 4 - Apartment Bathroom
 
-The Apartment Bathroom is north of My Apartment. The apartment bathroom is a southern bathroom.
+The Apartment Bathroom is north of My Apartment. The apartment bathroom is a bathroom. It is southern.
+
+In-direction of Apartment Bathroom is south. [My apartment]
+Out-direction of Apartment Bathroom is east. [Palm Square]
 
 Rule for listing exits when the location is Apartment Bathroom:
 	say "[We] could climb back out the window, or [we] could go south into the rest of my apartment."
@@ -521,6 +527,8 @@ My Apartment is a kitchen. It is southern. The introduction of my apartment is "
 
 Rule for listing exits when looking in My Apartment:
 	do nothing instead.
+
+Out-direction of My Apartment is northeast. [Palm Square]
 
 The kitchen area is fixed in place in My Apartment. The flexible appearance is "It's an efficiency: note [the kitchen area], with all the usual appliances, in one corner."
 
@@ -677,6 +685,9 @@ The sturdy iron gate is southeast of Palm Square. It is scenery. The sturdy iron
 
 I have the student ring that opens this back in my apartment. I just wasn't expecting to need to go in there ever again[ring-fetch][end if].".
 
+Out-direction of University Oval is northwest. [Palm Square]
+In-direction of University Oval is south. [Samuel Johnson Hall]
+
 After printing the name of the sturdy iron gate when Palm Square is not visited:
 	say " to the university".
 
@@ -758,6 +769,8 @@ That's to say that we study how the ability to change things based on their name
 [or][stopping]The department office, with several professorial offices leading off of it, is to the [southeast]. To the [southwest] is the seminar room, where many of the upper-level courses occur, and which also contains the department library; downstairs is the basement, where the graduate students and junior instructors are kept."
 
 Samuel Johnson Hall is indoors and southern.
+
+Out-direction of Samuel Johnson Hall is north. [To University oval]
 
 Rule for listing exits while looking in Samuel Johnson Hall:
 	do nothing instead.
@@ -1763,6 +1776,8 @@ The description of the worn leather jacket is "A moderately cool sort of bomber-
 Section 11 - Lecture Hall
 
 Lecture Hall 1 is east of Samuel Johnson Basement. The description is "The main lecture hall used for large survey courses in language studies offered to undergraduates. I sat through courses here when I was an undergraduate myself, and have now delivered a few lectures as a teaching assistant." Lecture Hall 1 is indoors and southern.
+
+Out-direction of Lecture Hall 1 is west. [Back to Samuel Johnson basement]
 
 After deciding the scope of the player when the location is Lecture Hall 1:
 	place the wooden seats in scope.

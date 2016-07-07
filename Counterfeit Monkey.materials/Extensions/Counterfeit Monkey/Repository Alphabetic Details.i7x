@@ -1756,13 +1756,6 @@ Some dim lights are scenery in the Shadow Chamber. The description is "They glow
 
 The passage-exit is a door. It is scenery. The printed name is "passage". Understand "passage" or "exit" or "passageway" as the passage-exit. It is above Shadow Chamber. Through the passage-exit is the Workshop. The description of the passage-exit is "The way back to the Workshop is entirely dark."
 
-Sanity-check exiting in Shadow Chamber:
-	if the player is in an enterable thing:
-		make no decision;
-	if the player is on an enterable thing:
-		make no decision;
-	try going up instead.
-
 Instead of entering the passage-place:
 	say "[We] clamber down into the passage. It feels disconnected from other places, as though it didn't belong here at all. Soon we can't see the light from the door.";
 	now the player is in the Shadow Chamber;

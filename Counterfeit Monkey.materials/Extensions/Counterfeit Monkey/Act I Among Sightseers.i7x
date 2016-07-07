@@ -132,6 +132,8 @@ Carry out going through the temporary barrier:
 
 Ampersand Bend is south of the temporary barrier. It is a road. The description is "A bend in the street, which runs west and north. This district combines the old and the new: a small [museum] in an ancient stone building to the east, a shiny [real estate office] south. The window of the museum is currently displaying one of its exhibits, [a list of things *in the display stand][if the code is on the display stand]. Well, not to worry: they'll be able to restore the codex easily enough when the museum reopens[end if]." Understand "district" as Ampersand Bend.
 
+Out-direction of Ampersand Bend is north. [Through the barrier]
+
 Instead of listening to Ampersand Bend:
 	say "The sounds from the north suggest a holiday fair in full swing: children laughing and shouting, people selling food and drinks, various fairground machinery, tinny music."
 
@@ -1057,9 +1059,6 @@ Rule for listing exits when the location is Church Forecourt:
 
 The cinema-exterior is a facade in Church Forecourt. It fronts north. It is scenery. The description is "Large red letters on the marquee announce the latest film from Cannes." Understand "small" or "cinema" or "theater" or "theatre" or "movie" or "red letters" or "large red" or "large letters" or "large red letters" or "marquee"  or "film" or "cannes" as the cinema-exterior. The printed name is "cinema".
 
-Instead of going inside when location is Church Forecourt:
-	try going west.
-
 Section 4 - Heritage Corner
 
 The Heritage Corner is east of the Fair and southeast of Park Center. It is proper-named. The description is "This patch of the town square has been paved over in [octagonal bricks] and is commonly used for displays of traditional dancing: over-50 women in home-made embroidered aprons, skipping arm-in-arm and jumping over broomsticks[one of].
@@ -1068,6 +1067,8 @@ No, there aren't any here [i]now[/i]. But trust me. It's an unforgettable sight[
 
 Rule for distantly describing Heritage Corner:
 	say "That way is the bricked-over portion of the town square, sometimes used for exhibitions of regional dance. Today it is less populated than most of the Square[if the location is the Fair]. Beyond Heritage Corner to the east is the hostel where you stowed some important gear[end if]."
+
+In-direction of Heritage Corner is east. [Into the hostel]
 
 A diorama table is fixed in place in Heritage Corner. It is a supporter. The initial appearance is "Under a bit of [diorama-shelter] in the corner, [a diorama table] shows scenes from local history, rotated out each week. This week's diorama represents the first sitting of the Committee for the New Orthodox Orthography." Understand "diorama" or "scene" or "dioramas" or "shelter" or "scenes" or "local history" or "history" as the diorama table.
 
@@ -1148,13 +1149,9 @@ Instead of examining the octagonal bricks:
 	otherwise:
 		continue the action.
 
-Instead of going inside when the location is Heritage Corner:
-	try going east.
-
 Chapter 2 - Indoor Areas
 
 Section 1 - Cinema
-
 
 The Cinema Lobby is north of Church Forecourt. It is indoors. The description is "This is a small, one-screen theater. [one of]The seats are not comfortable and the screen is not large. The projector is old. The management is lazy. No food is served.
 
@@ -1164,8 +1161,8 @@ Despite these handicaps, it maintains an active and interested clientele simply 
 
 [or][stopping]Evidently the next showing is not for a little while yet, because there are no patrons in sight."
 
-Instead of going inside when the location is Cinema Lobby:
-	try going west.
+In-direction of Cinema Lobby is west. [Into screening room]
+Out-direction of Cinema Lobby is south. [To church forecourt]
 
 Rule for listing exits when the location is Cinema Lobby:
 	if looking, do nothing;
@@ -1190,6 +1187,8 @@ Instead of going to the Screening Room when the ticket-taker does not know allow
 	queue hang-on-there.
 
 The Screening Room is west of Cinema Lobby. It is indoors. The description is "[if the player recollects what the movie seems]'Red'[otherwise]Whatever is scheduled for later showing[end if] has not started yet, and is probably not destined to start for some time; at any rate,[unless the project is switched on] the [film screen] is blank and[end if] no audience has yet assembled."
+
+Out-direction of Screening Room is east. [Back to cinema lobby]
 
 Instead of waiting in the Screening Room:
 	if the reel is in the projector and the projector-switch is switched on:
@@ -1444,13 +1443,14 @@ Section 3 - The Hostel
 
 The Hostel is east of Heritage Corner. It is indoors. The description is "I take it this is where you stayed from the time you got to town until our operation. I would have expected that someone with your credentials would have been able to afford something better: The Fleur d'Or, maybe? But maybe you thought this was lower-profile. At least it's clean and doesn't smell funny."
 
-Instead of exiting in the Hostel, try going west.
-
 Rule for listing exits when the location is the Hostel:
 	if looking, say "There's a [h-staircase] that leads up to the dormitory rooms.";
 	otherwise say "[We] could either climb the [h-staircase] up to the dormitory rooms or go back to the park, [west]."
 
 The h-staircase is an up-staircase. The h-staircase is in the Hostel. The printed name is "spiral staircase". Understand "spiral" or "staircase" as the h-staircase. It fronts up. The description is "To save space, it winds around a pole twice before reaching the floor above. This is not kind to people with luggage, but people with luggage are supposed to stay in real hotels."
+
+In-direction of the hostel is up. [Into the dormitory]
+Out-direction of the hostel is west. [Back out to Heritage Corner]
 
 Instead of facing up in the hostel:
 	say "The ceiling is a little cracked but in no way fascinating."
@@ -1855,6 +1855,8 @@ The gift shop volunteer wears a knitted wool cap. The description of the knitted
 
 The Church Garden is west of New Church. The description is "One might expect a graveyard, but burial inside the city walls has been forbidden for sanitation reasons since well before the New Church was built. Instead, there is a small meditation garden, which was once designed as an intricate knotwork of shrubs[if the thicket is not in the location]. Now the shrubs are gone[end if]."
 
+In-direction of Church Garden is east. [Back into the church]
+
 Report facing in Church Garden:
 	say "The garden is intentionally a space set apart, from which it is hard to see anything of the rest of the world." instead.
 
@@ -1973,6 +1975,8 @@ Rule for listing exits when the location is Roundabout:
 [Procedural rule when listing exits:
 	if the location is Roundabout, ignore the append room names rule.]
 
+In-direction of Roundabout is inside. [In from the roundabout is the traffic circle]
+
 Understand "change lanes" as a mistake ("Oh, please don't, please don't...") when the player is in a car.
 
 Understand "yield" as a mistake ("It's hard to go wrong with that, anyway.") when the player is in a car.
@@ -2030,11 +2034,15 @@ Instead of putting the restoration gel on the defaced ashlar block:
 Rule for listing exits when looking in Old City Walls:
 	do nothing instead.
 
+In-direction of Old City Walls is east. [Into the old hexagonal turret]
+
 Turret-view is a facade in Old City Walls. It fronts east. It is scenery. The printed name is "turret". Understand "old" or "hexagonal" or "tower" or "turret" as turret-view. The description is "The turret extends to the east. It's one of the best preserved pieces of the old wall."
 
 Section 2 - The Turret
 
 The Old Hexagonal Turret is east of Old City Walls. The description is "Up here [we] stand on the remains of the old fortifications; this turret offers a view out over the docks, the fish market, and the harbor, which it was designed to protect."
+
+Out-direction of Old Hexagonal Turret is west. [Back to old city walls]
 
 The depluralizing cannon is a container in the Old Hexagonal Turret. It is fixed in place. Understand "heavy" or "old" or "barrel" as the depluralizing cannon. The printed name is "deplural[izing] cannon".
 	The initial appearance is "A heavy old [depluralizing cannon] is aimed out to sea."
@@ -2164,6 +2172,8 @@ A description-concealing rule:
 Section 2 - Webster Court
 
 Webster Court is north of Hesychius Street and west of Crumbling Wall Face. The description is "[if former direction is north]Hesychius Street opens here into a broad and plainly-paved court[otherwise if former direction is west]Here below the wall is a broad, plainly-paved court[otherwise]A broad and plainly-paved court[end if][unless statue of Noah Webster is as-yet-unknown], named for [the statue of Noah Webster][end if]."
+
+In-direction of Webster Court is north. [Into my parent's house]
 
 Instead of facing west in Webster Court:
 	say "The old city wall cuts off any view towards the harbor and the far horizon. The taller houses permit a view over, however."
@@ -2338,6 +2348,8 @@ Roget Close is west of Webster Court. The description is "A pleasantly sheltered
 [Instead of looking in Roget Close when Private Beach is visited and lexicon-tick is 0:
 	do nothing instead.]
 
+In-direction of Roget Close is north. [Through the spinner gate]
+
 Instead of going west in Roget Close:
 	say "School is out for the holiday. [run paragraph on]";
 	carry out the listing exits activity.
@@ -2390,6 +2402,8 @@ Section 5 - Winding Footpath
 The spinner-gate is north of Roget Close.  It is a closed transparent locked door. The printed name of the spinner-gate is "gate". Understand "gate" as the spinner-gate. The initial appearance is "If you look just north between the houses, you'll notice also the footpath down to an almost-private beach. It used to be open, but it's now gated off, and built into the [spinner-gate] is a chic modern sculpture."
 
 The description of the spinner-gate is "A gate of wrought iron bars between two sturdy columns[if the spinner-gate is closed and the spinner-gate is locked], too close to climb through and too tall to climb over[else if the spinner-gate is closed], closed but not locked[else if the spinner-gate is open]; at the moment the gate has been pushed conveniently open[end if]. Built into the right-hand column, next to the gate latch, is a curious sculpture."
+
+Out-direction of Winding Footpath is south. [Through the spinner gate]
 
 Through spinner-gate is the Winding Footpath. South of Winding Footpath is Roget Close.
 

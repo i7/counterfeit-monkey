@@ -718,11 +718,20 @@ Instead of going nowhere when the noun is fronted by a facade (called blockage) 
 	say "[closure notice of the blockage][run paragraph on]";
 	carry out the listing exits activity.
 
-Instead of going nowhere when the noun is not fronted by a facade in the location:
-	if the noun is up or the noun is inside or the noun is outside:
-		say "There is no way [noun].[paragraph break]";
-	else:
-		try facing the noun;
+Instead of going nowhere when the noun is not fronted by a facade in the location (this is the handle can't-go-that-way rule):
+	if the noun is inside:
+		if in-direction of location is a direction:
+			try going in-direction of location instead;
+		otherwise:
+			follow the attempt going in rule instead;
+	if the noun is outside:
+		if out-direction of location is a direction:
+			try going out-direction of location instead;
+		otherwise:
+			follow the attempt going out rule instead;
+	if the noun is up:
+		say "There is no way upwards. [run paragraph on]";
+	try facing the noun;
 	carry out the listing exits activity.
 
 [The parser would sometimes misinterpret commands such as GO TO CINEMA as FIND CINEMA-EXTERIOR and leave the player in from of the cinema rather than inside it. This gets around this by making sure that we always try to walk through any facade that we are "finding".]
