@@ -110,8 +110,9 @@ Understand "the right number/code" or "the number/code" or "number/code" or "rig
 
 Instead of setting the code-lock to "[code]":
 	if the code is marked invisible:
-		say "If only the code were written down somewhere nearby." instead;
-	try setting the code-lock to "305" instead.
+		say "If only the code were written down somewhere nearby.";
+	otherwise:
+		try setting the code-lock to "305".
 
 Instead of setting the code-lock to something:
 	if the temporary barrier is unlocked:
