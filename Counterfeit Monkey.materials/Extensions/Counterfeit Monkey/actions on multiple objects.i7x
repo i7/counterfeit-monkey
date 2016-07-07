@@ -56,22 +56,29 @@ This is the stop putting error list rule:
 	abide by the check self-containment rule;
 	if the number of entries in the multiple object list is less than 2:
 		the rule succeeds;
-	if the second noun is the hard wood floors or the second noun is the tiny refrigerator:
-		the rule succeeds;
-	if the second noun is enclosed by the display case:
-		abide by the display-case-closed rule;
-	if the second noun is a support listed in the Table of snarky supporters:
-		abide by the fake put on rule;
 	if the second noun is a support listed in the Table of unsuitable supporters or the second noun is a pan:
 		say "It makes no sense to put a lot of random stuff on [the second noun].";
 		abide by the cancel multiple rule;
-	if the location is privately-controlled and the second noun is not enclosed by the player:
-		abide by the fake put on rule;
-	if the second noun is not a supporter:
+	if the second noun is single put on only:
 		abide by the fake put on rule;
 	otherwise:
 		if the second noun is not touchable:
 			abide by the try reaching rules for the second noun.
+
+Definition: a thing is single put on only:
+	if it is the hard wood floors:
+		no;
+	if it is the tiny refrigerator:
+		no;
+	if it is a support listed in the Table of snarky supporters:
+		yes;
+	if it is not a supporter:
+		yes;
+	if it is enclosed by the display case:
+		yes;
+	if it is not enclosed by the player and the location is privately-controlled:
+		yes.
+
 
 [To make sure that we don't try things like inserting the bag in the pan when the pan already is inside the bag. That is blocked further down the line too, but this rule prevents that ugly error messages are printed at the wrong time.]
 This is the check self-containment rule:
@@ -108,8 +115,6 @@ This is the stop inserting error list rule:
 	if the number of entries in the multiple object list is less than 2:
 		the rule succeeds;
 	abide by the check multiple insert rules for the second noun;
-	if the location is privately-controlled and the second noun is not enclosed by the player:
-		abide by the fake insert rule;
 	if the second noun is not touchable:
 		abide by the try reaching rules for the second noun;
 	if the second noun is closed:
@@ -128,32 +133,21 @@ A check multiple insert rule for the shrine:
 		say "One thing at a time.";
 		abide by the cancel multiple rule;
 
-A check multiple insert rule for something that is enclosed by the display case:
-	abide by the display-case-closed rule.
-
-A check multiple insert rule for something (called the target) (this is the handle multiple inserts into kinds rule):
-	if the target is a desk, abide by the fake insert rule;
-	if the target is a tin-can, abide by the fake insert rule;
-	if the target is a drain, abide by the fake insert rule;
-	if the target is a freezer compartment, abide by the fake insert rule;
-	if the target is a power socket, abide by the fake insert rule.
-
-A check multiple insert rule for something (called the target):
-	if the target is a box listed in the Table of snarky containers:
-		abide by the fake insert rule.
-
-A check multiple insert rule for something (called the target):
-	if the target is a box listed in the Table of unsuitable containers or the carrying capacity of target is 1:
+A check multiple insert rule for a thing (called the target) (this is the check for unsuitable containers rule):
+	if the target is a box listed in the Table of unsuitable containers or the carrying capacity of target is less than 3:
 		say "It makes no sense to insert a lot of random things in [the target].";
 		abide by the cancel multiple rule.
 
-A last check multiple insert rule for something (called target) that is not a container:
-	unless target incorporates a drawer or target incorporates an oven:
-		abide by the fake insert rule;
-	otherwise:
-		now second noun is a random drawer incorporated by target;
-		if second noun is nothing:
-			now second noun is a random oven incorporated by target.
+A check multiple insert rule for a single insert only thing (this is the check for single insert containers rule):
+	abide by the fake insert rule.
+
+The check for unsuitable containers rule is listed before the check for single insert containers rule in the check multiple insert rules.
+
+A last check multiple insert rule for something that incorporates a drawer (called target drawer):
+	now second noun is target drawer;
+		
+A last check multiple insert rule for something that incorporates an oven (called target oven):
+	now second noun is target oven;
 
 [These are used to give a single reply to an action on multiple object, using a dummy object to get a sensible noun name:]
 This is the fake insert rule:
@@ -173,6 +167,28 @@ Dummy-object is a proper-named thing. The printed name of dummy-object is "[if l
 This is the cancel multiple rule:
 	alter the multiple object list to {};
 	the rule fails.
+
+Definition: a thing is single insert only:
+	if it incorporates a drawer:
+		no;
+	if it incorporates an oven:
+		no;
+	if it is a desk:
+		yes;
+	if it is a tin-can:
+		yes;
+	if it is a drain:
+		yes;
+	if it is a freezer compartment:
+		yes;
+	if it is a box listed in the Table of snarky containers:
+		yes;
+	if it is not a container:
+		yes;
+	if it is enclosed by the display case:
+		yes;
+	if it is not enclosed by the player and the location is privately-controlled:
+		yes.
 
 [The things listed in this table gives a single custom reply when trying to put all on them.]
 Table of snarky supporters
@@ -247,8 +263,8 @@ till
 mutual punch
 pulley
 reclamation machine
-mug
 pen
+mug
 
 Table of Ultratests (continued)
 topic	stuff	setting

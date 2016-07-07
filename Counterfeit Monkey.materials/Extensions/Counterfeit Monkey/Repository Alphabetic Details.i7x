@@ -1441,7 +1441,7 @@ It looks wrong, of course, because the motte belongs to medieval castle construc
 
 The mu is an illegal r-abstract thing. The description is "μ. Just the letter, but that's a dangerous thing around here."
 
-The mug is a container. The heft of the mug is 2. The carrying capacity of the mug is 1.
+The mug is a container. The heft of the mug is 2. The carrying capacity of the mug is 2.
 	The description of the mug is "It's a super-sized black mug with 'TEA INSERTION GROUP' on the side in crisp white letters. Must be an employee gift over at Dental Consonants Limited."
 
 Check inserting something into the mug when the heft of the noun is greater than 1:
