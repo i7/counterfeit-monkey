@@ -113,7 +113,7 @@ Understand "browse [merchandise]" as searching.
 Test merch with "browse / browse merchandise / x merchandise / look at merchandise / g / g / g" in Aquarium bookstore.
 
 Instead of searching the aquarium-shelving:
-	try searching the merchandise.
+	try examining the merchandise.
 
 A ranking rule for the merchandise:
 	increase the description-rank of the merchandise by 50.
