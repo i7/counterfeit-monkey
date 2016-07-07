@@ -902,7 +902,7 @@ The description of the kayak is "A green plastic boat, designed to be used by on
 Some shackles are part of the kayak. Understand "shackle" as the shackles. The description is "They're firmly attached and locked with a rusty lock that doesn't look inclined to open again any time this century. I really do compliment you folks['] approach to security."
 
 Instead of going somewhere by kayak when the location is Abandoned Shore:
-	try launching the kayak instead.
+	try launching the kayak.
 
 Understand "row [something]" as launching. Understand "launch [something]" as launching. Launching is an action applying to one thing.
 

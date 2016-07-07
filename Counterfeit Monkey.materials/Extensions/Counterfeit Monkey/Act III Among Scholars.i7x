@@ -313,10 +313,10 @@ Chapter 1 - University District
 Section 1 - Palm Square
 
 Instead of going to Palm Square when the legend is not introduced:
-	say square-refusal instead.
+	say square-refusal.
 
 Instead of approaching Palm Square when the legend is not introduced:
-	say square-refusal instead.
+	say square-refusal.
 
 To say square-refusal:
 	if the legend is handled or the fake-legend is in the repository:

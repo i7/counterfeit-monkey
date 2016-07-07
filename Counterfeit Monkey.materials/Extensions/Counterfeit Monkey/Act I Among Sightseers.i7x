@@ -1903,19 +1903,19 @@ Instead of approaching Old City Walls when the backpack is not handled:
 
 
 Instead of going to Monumental Staircase when the backpack is not handled:
-	say high-street refusal instead.
+	say high-street refusal.
 
 Instead of approaching Monumental Staircase when the backpack is not handled:
-	say high-street refusal instead.
+	say high-street refusal.
 
 To say high-street refusal:
 	say "[one of]That way will take us away from the cinema, and I'd like to retrieve our things first.[or]Er, before we strike out into the rest of town, could we get my backpack from the cinema?[or]Look, I'm not ready to leave this part of town until we've retrieved my stuff from the cinema. It might not seem important to you, but it's my whole reason for leaving the island, and I'm not going without it.[stopping]".
 
 Instead of going to Monumental Staircase when the secret-plans are not handled:
-	say plans-search refusal instead.
+	say plans-search refusal.
 
 Instead of approaching Monumental Staircase when the secret-plans are not handled:
-	say plans-search refusal instead.
+	say plans-search refusal.
 
 To say plans-search refusal:
 	say "I think we'd better get your things from the hostel before we leave this part of town, don't you?".
@@ -2668,7 +2668,7 @@ Instead of washing the funnel in the presence of the fountain:
 
 Instead of washing the funnel when the player can touch a sink (called target sink):
 	now the description of the funnel is "A gaudy green plastic toy suitable for funneling water and shaping conical sand-turrets.";
-	say "[We] run some water from [the target sink] over [the funnel], leaving it glistening and clean." instead.
+	say "[We] run some water from [the target sink] over [the funnel], leaving it glistening and clean."
 
 Instead of rubbing the funnel:
 	if the funnel is buried:

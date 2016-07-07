@@ -333,7 +333,7 @@ Instead of searching or looking under or touching or rubbing or squeezing someth
 		say "[The proprietor] might object."
 
 Instead of searching or looking under or pushing or turning or pulling or touching or rubbing or waving or squeezing a floppy wearable thing which is not worn by a person:
-	say "Nothing interesting turns up [--] no hidden pockets or unnoticed scraps of paper or the like." instead.
+	say "Nothing interesting turns up [--] no hidden pockets or unnoticed scraps of paper or the like."
 
 Instead of looking under a person:
 	if the noun is in the location:
