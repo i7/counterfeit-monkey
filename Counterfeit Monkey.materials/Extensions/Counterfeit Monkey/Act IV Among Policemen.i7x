@@ -147,18 +147,22 @@ The soap dispenser is a closed container in the Public Convenience. It is privat
 Does the player mean waving the letter-remover at the soap dispenser:
 	it is very unlikely.
 
-Sanity-check taking the soap when the soap is in the soap dispenser:
-	try squeezing the soap dispenser instead.
+Sanity-check taking the soap dispenser when the soap is in the soap dispenser:
+	if the player's command does not include "dispenser":
+		try squeezing the soap dispenser instead.
 
 Instead of squeezing the soap dispenser:
 	if soap is in the dispenser:
 		if the number of sinks in the location is greater than 0:
-			let target be a random sink;
-			if a marked-visible sink contains an open container (called receptor):
-				now target is the receptor;
+			let target be a random sink in the location;
+			if a switched on tap (called target tap) is part of the target:
+				silently try switching off target tap;
+				say "First switching off [the target tap], [we][run paragraph on]";
 			otherwise:
-				now target is a random sink in the location;
-			say "[We] give the dispenser a squeeze and it deposits some soap in [the target][if the target is a sink] [--] just viscous enough not to drain away instantly[end if].";
+				if a switched on tap (called target tap) is enclosed by location:
+					say "Fortunately, the faucet below the soap dispenser is not running. ";
+				say "[We][run paragraph on]";
+			say " give the dispenser a squeeze. It deposits some soap in [the target] [--] just viscous enough not to drain away instantly.";
 			move the soap to the target;
 		otherwise:
 			say "[We] give the dispenser a squeeze and it deposits some soap on the floor, the sink having been removed from the area.";

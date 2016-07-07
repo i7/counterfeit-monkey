@@ -343,6 +343,10 @@ Check waving the letter-remover device at something (this is the checking for da
 Check waving the letter-remover at a room creating the letter-remover:
 	say "[The letter-remover] is powerless to make [the second noun] into anything called '[disappointment text]', but perhaps this is to be expected considering the size of the target. The device is after all a mere portable device with limited resources."
 
+Check waving the letter-remover at something (called target) creating an uncontained fluid thing (called the liquid):
+	if the target is in a container (called target holder) and the number of things in target holder is greater than 1:
+		say "[The liquid] would make a real mess in [the target holder]." instead.
+
 Check waving the letter-remover at a room creating something which is not the letter-remover:
 	abide by the dangerous destruction rules for the second noun;
 	[abide by the dangerous construction rules for the generated object.]
@@ -1259,6 +1263,11 @@ Sanity-check putting the restoration gel on something irretrievable:
 
 [Because it's possible to change something into an object that becomes fixed in place in the backpack, or too heavy to move...]
 
+Before putting the restoration gel on something which is in a container (called the box):
+	if the second noun is proffered by an uncontained fluid thing (called the liquid):
+		if the number of things in the box is greater than 1 or the number of things proffered by the second noun is greater than 1:
+			say "[The liquid] would make a real mess in [the box]." instead.
+
 Before putting the restoration gel on something which is in the backpack:
 	try taking the second noun;
 	if the player does not carry the second noun:
@@ -1509,6 +1518,10 @@ Sanity-check shooting something irretrievable with the loaded anagramming gun:
 Sanity-check shooting the loaded anagramming gun with the loaded anagramming gun:
 	say "It is impossible to aim the gun at itself." instead.
 
+Check shooting the pills with the loaded anagramming gun:
+	if the pills are in a container (called the box) and the number of things in the box is greater than 1:
+		say "The spill would make a real mess in [the box]." instead.
+
 Check shooting something with the loaded anagramming gun:
 	let initial key be the anagram key of the noun;
 	now detritus is the noun;
@@ -1591,6 +1604,11 @@ The description of the restoration-gel rifle is "A rifle that shoots pellets of 
 Sanity-check shooting something irretrievable with the restoration-gel rifle:
 	unless the noun is the tub or the noun is original:
 		abide by the don't change irretrievable rules for the noun.
+
+Before shooting something which is in a container (called the box) with the restoration-gel rifle:
+	if the noun is proffered by an uncontained fluid thing (called the liquid):
+		if the number of things in the box is greater than 1 or the number of things proffered by the noun is greater than 1:
+			say "[The liquid] would make a real mess in [the box]." instead.
 
 [Because it's possible to change something into an object that becomes fixed in place in the backpack, or too heavy to move...]
 

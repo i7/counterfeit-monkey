@@ -367,6 +367,13 @@ Carry out listing edible:
 	sort N;
 	say "[N]".
 
+Understand "list uncontained" as listing uncontained.  Listing uncontained is an action out of world.
+
+Carry out listing uncontained:
+	let N be the list of uncontained fluid things;
+	sort N;
+	say "[N]".
+
 Understand "list components" as listing components. Listing components is an action out of world.
 
 Carry out listing components:

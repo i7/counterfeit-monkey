@@ -877,11 +877,6 @@ Understand "put [word-balance] out of alignment" or "unbalance [word-balance]" o
 
 A ranking rule for the word-balance: increase description-rank of the word-balance by 50.
 
-Every turn when a fluid thing (called target) is in a pan:
-	unless the target is contained:
-		move the target to the location;
-		say "[The target] runs rapidly out through the slots of the pan."
-
 Every turn:
 	if the word-balance is tilting and the barker is in location
 	begin;
@@ -2684,16 +2679,17 @@ The funnel can be buried or unburied. The funnel is buried.
 Sanity-check rubbing the sand when the funnel is buried:
 	try digging in the sand instead.
 
-Sanity-check inserting the funnel into the fountain:
-	try washing the funnel instead.
-
 Instead of washing the funnel in the presence of the fountain:
 	say "We dip the funnel in the water and quickly shake it dry.";
 	now the description of the funnel is "A gaudy green plastic toy suitable for funneling water and shaping conical sand-turrets."
 
-Instead of washing the funnel when the player can touch a sink (called target sink):
-	now the description of the funnel is "A gaudy green plastic toy suitable for funneling water and shaping conical sand-turrets.";
-	say "[We] run some water from [the target sink] over [the funnel], leaving it glistening and clean."
+Before washing the funnel when the player can touch a tap (called target tap):
+	if target tap is switched off:
+		silently try switching on target tap;
+	if target tap is switched on:
+		now the description of the funnel is "A gaudy green plastic toy suitable for funneling water and shaping conical sand-turrets.";
+		say "[We] run some water from [the target tap] over [the funnel], leaving it glistening and clean.";
+		silently try switching off target tap instead.
 
 Instead of rubbing the funnel:
 	if the funnel is buried:

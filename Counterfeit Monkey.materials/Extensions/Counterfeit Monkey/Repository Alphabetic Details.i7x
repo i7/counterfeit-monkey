@@ -2162,7 +2162,7 @@ Persuasion rule for asking the pirate-crew to try doing something:
 	otherwise:
 		say "They mumble defiantly." instead.]
 
-Instead of washing the pirate-crew:
+Sanity-check washing the pirate-crew:
 	say "Heaven knows they need it, but they don't look terribly cooperative."
 
 Instead of showing the spot to the pirate-crew:
@@ -2839,12 +2839,7 @@ Sanity-check burning the sap-liquid:
 	say "I think some resins might burn when dry, but I'm not sure that applies here, and in any case it wouldn't help." instead.
 
 Instead of squeezing the sap-dispenser:
-	if sap-liquid is in the sap-dispenser:
-		let target be a random sink in the location;
-		say "[We] give the dispenser a squeeze and it deposits some sap in the sink [--] just viscous enough not to drain away instantly.";
-		move the sap-liquid to the target;
-	otherwise:
-		say "This time nothing much comes out."
+	say "Nothing much comes out."
 
 The satin-pin is wearable. The printed name of the satin-pin is "satin pin". Understand "satin" or "satin pin" as the satin-pin. Understand "pin" as the satin-pin when the pin is marked invisible. The description of the satin-pin is "It's a little brooch, probably not very valuable, bearing a blue and white satin rosette. The edges of the rosette have yellowed with age, and there is a blob of glue at the center that must once have held some additional decoration."
 

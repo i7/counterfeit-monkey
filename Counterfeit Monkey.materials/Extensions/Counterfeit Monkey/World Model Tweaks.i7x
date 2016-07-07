@@ -1387,7 +1387,23 @@ When play begins (this is the toilet postures rule):
 	now every toilet allows seated;
 	now every toilet allows standing.
 
-Understand "wash hands" or "wash up" as a mistake ("[if a sink is in the location][We] briskly wash up[otherwise]There's no sink here[end if].").
+Understand "wash my/our/-- hands/face/up" as washing hands. Washing hands is an action applying to nothing.
+
+Understand "wash my/our/-- hands/face/up in/with [washing-appropriate thing]" as washing hands in. Washing hands in is an action applying to one thing.
+
+Carry out washing hands in:
+	try washing hands instead.
+
+Carry out washing hands:
+	if the player can touch a washing-appropriate thing (called the target):
+		if the target is a switched off tap:
+		[This is to remove any things we might have put in the sink or bath.]
+			silently try switching on the target;
+		say "[We] briskly wash up.";
+		if the target is a switched on tap:
+			silently try switching off the target;
+	otherwise:
+		say "There's nothing here to wash in."
 
 Sanity-check washing a person who is not the player:
 	if the noun is an animal:
@@ -1675,82 +1691,7 @@ When play begins (this is the search engines rule):
 
 Chapter 2 - Substances
 
-Section 1 - Liquids
-
-[We could have used a full-bore liquid extension, but there's really no reason to do so: the player is not going to be allowed to mix liquids or have partial liquid quantities, and in fact we want to encourage him to think of all objects in the game universe as atomic rather than partial and divisible.
-
-So our minimal approach to fluids just disallows a few kinds of manipulation that apply to solids, and leaves it at that.]
-
-A thing can be solid or fluid. A thing is usually solid.
-
-Instead of waving or squeezing or pulling or pushing or rubbing or turning a fluid thing:
-	say "[The noun] [don't] really respond to that kind of manipulation."
-
-Sanity-check drinking a solid thing:
-	say "[The noun] [aren't] liquid." instead.
-
-Check drinking a fluid thing:
-	try eating the noun instead.
-
-Sanity-check burning a fluid thing:
-	say "Only the rare fluid is able to burn." instead.
-
-Sanity-check burning the fuel:
-	say "Let's keep your arsonist tendencies under wraps. I think they might attract attention." instead.
-
-Sanity-check burning oil:
-	say "Let's keep your arsonist tendencies under wraps. I think they might attract attention." instead.
-
-Rule for deciding whether all includes an uncontained fluid thing while taking:
-	it does not.
-
-Rule for deciding whether all includes an uncontained fluid thing while the action name part of the current action is the removing it from action:
-	it does not.
-
-Sanity-check tying an uncontained fluid to something:
-	say "[The noun] [don't] make much of an anchor point." instead.
-
-Sanity-check tying something to an uncontained fluid thing:
-	say "[The second noun] [don't] make much of an anchor point." instead.
-
-Sanity-check climbing an uncontained fluid thing:
-	say "A prominent feature of [noun] is that [they] [don't] provide much support." instead.
-
-A thing can be contained or uncontained. A thing is usually uncontained.
-
-Every turn when the player carries a fluid thing (called the puddle):
-	unless the puddle is contained:
-		move the puddle to the location;
-		say "[The puddle][one of], true to its nature, leaks out onto the ground[or] drips through our fingers onto the ground[or] drips out of our hands[at random]."
-
-[TODO: It would be nice to have a generic response to trying to insert things into a liquid.]
-
-Understand "fill [a container] with [a fluid thing]" as filling it with.
-Understand "fill [a container] with [something]" as filling it with.
-Understand "fill [something] with [a fluid thing]" as filling it with.
-Understand "fill [something] with [something]" as filling it with.
-
-Understand "pour [something] into [something]" as filling it with (with nouns reversed).
-Understand "pour [a fluid thing] into [something]" as filling it with (with nouns reversed).
-Understand "pour [something] into [a container]" as filling it with (with nouns reversed).
-Understand "pour [a fluid thing] into [a container]" as filling it with (with nouns reversed).
-
-Filling it with is an action applying to two things.
-
-Sanity-check filling a container with something which is not a fluid thing:
-	try inserting the second noun into the noun instead.
-
-Check filling a contained fluid with a fluid thing:
-	say "There's no restoration gel that will separate mixed liquids, you know. I'd rather stay away from the chemistry experiments." instead.
-
-Check filling the funnel with a fluid thing:
-	say "That would have about the same effect as pouring [the second noun] on our feet." instead.
-
-Check filling it with:
-	say "[one of]I'd rather leave [the second noun] where [they] [are].[or]I don't see much point to filling containers with things.[at random]" instead.
-
-
-Section 2 - Vegetables
+Section 1 - Vegetables
 
 A vegetable is a kind of thing. The description of a vegetable is usually "Some leafy greens that might make an okay side salad, if [we] were feeling hungry." A vegetable is usually edible.
 
