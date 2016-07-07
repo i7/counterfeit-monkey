@@ -1789,23 +1789,33 @@ A dangerous construction rule for the wire rack:
 
 Test rack with "x postcards / wave s-remover at racks / x postcards / open tub / gel rack / x postcards" holding the tub in the Gift Shop.
 
-Instead of buying the postcards:
+Instead of taking the postcards:
 	say "And send them where? There is no one [we] wish were here."
 
 Instead of turning the racks:
 	say "[We] idly turn one of the racks, as though [we] were a tourist here. Familiar pictures swivel past, both of the church interior and of the town as a whole."
 
-Instead of taking or buying the postcards,
-	say "Buying souvenirs is not the current objective."
+[Instead of taking the postcards,
+	say "Buying souvenirs is not the current objective."]
 
-Instead of buying the paper-models:
+Instead of taking the paper-models:
 	say "I am all thumbs and never get these things right."
 
-Instead of buying the souvenir tea-towels:
+Instead of taking the tea-towels:
 	say "They're just too embarrassingly cute."
 
-Instead of buying the shot glasses:
+Instead of taking the shot glasses:
 	say "The inscribed proverbs about the merits and demerits of the grape would be likely to put me off my drink."
+
+Definition: a thing is a souvenir:
+	if it is the postcards:
+		yes;
+	if it is the paper-models:
+		yes;
+	if it is the tea-towels:
+		yes;
+	if it is the shot glasses:
+		yes;
 
 Some tomes are a fixed in place thing in the Cathedral Gift Shop. The initial appearance is "A long line of dusty [tomes] are lined up on one of the shelves, marked 'free for taking'. None are missing." A component-tome is part of the tomes. The printed name of the component-tome is "tome". Understand "tome" or "book" as the component-tome.
 

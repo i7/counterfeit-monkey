@@ -389,6 +389,7 @@ The moods are neutral, distrustful, sexy, worried, sexy-worried, and sexy-distru
 Section 8 - Refusals for threaded actions
 
 Rule for refusing to buy something when the location is the gift shop:
+	if the noun is a souvenir, try taking the noun instead;
 	if story viewpoint is second person singular:
 		say "You consider it briefly, but conclude there's nothing you really need.";
 	otherwise:
