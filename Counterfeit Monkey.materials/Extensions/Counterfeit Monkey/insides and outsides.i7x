@@ -3,17 +3,25 @@ Insides and Outsides by Counterfeit Monkey begins here.
 Use authorial modesty.
 
 This is the attempt going in rule:
-	let C be car-or-container;
-	if C is enterable:
-		say "([the C])";
-		try entering C instead;
+	if in-direction of location is a direction and in-direction of location is not inside:
+		try going in-direction of location;
 	otherwise:
-		say "Any particular direction? ";
-		carry out the listing exits activity.
+		let C be car-or-container;
+		if C is enterable:
+			say "([the C])";
+			try entering C;
+		otherwise:
+			say "[into what]";
+
+To say into what:
+	say "[one of]Into what, exactly? [run paragraph on][or]There is no obvious way to enter. [run paragraph on][at random]";
+	carry out the listing exits activity.
 
 This is the attempt going out rule:
-	if the player is in an enterable thing:
+	if the player is enclosed by an enterable thing:
 		try exiting;
+	otherwise if out-direction of location is a direction and out-direction of location is not outside:
+		try going out-direction of location;
 	otherwise:
 		try departing the location.
 
@@ -61,16 +69,16 @@ Instead of facing outside when location is nautical and location is outdoors:
 	say "No one appears to be approaching the ship or attempting to follow us, which is the main thing."
 
 Instead of facing inside:
-	if the in-direction of location is a direction:
-		let dir be in-direction of location;
-		if dir is inside:
-			continue the action;
+	let dir be in-direction of location;
+	if dir is a direction:
 		let D be the door dir from the location;
 		if D is not a door:
 			let D be a random marked-visible facade fronting dir;
 		if D is something:
 			say "([the D])";
 			try searching D instead;
+		otherwise if dir is inside:
+			continue the action;
 		otherwise:
 			try facing dir instead;
 	otherwise:
@@ -78,19 +86,33 @@ Instead of facing inside:
 		if C is something:
 			say "([the C])";
 			try searching C instead;
-	say "[one of]What should [we] look inside, exactly?[or][We]['re] not sure what to look inside here.[at random]"
+		otherwise:
+			say "[one of]What should [we] look inside, exactly?[or][We]['re] not sure what to look inside here.[at random]"
 
 To decide which object is car-or-container:
-	if there is a car (called C) in location:
+	if there is a car (called C) in location and the player is not enclosed by C:
 		decide on C;
 	let B be a random marked-visible container in location;
-	if B is a box listed in the Table of Obvious Containers to Look Inside:
+	if B is a box listed in the Table of Obvious Containers to Look Inside and the player is not enclosed by B:
 		decide on B;
 	otherwise:
 		decide on nothing.
 
-Instead of exiting when the player is not in an enterable thing:
+Instead of exiting when the player is not enclosed by an enterable thing:
 	try going outside.
+
+Rule for supplying a missing noun while entering (this is the new find what to enter
+rule):
+	if the in-direction of location is a direction:
+		now the noun is the in-direction of location;
+	otherwise:
+		now the noun is car-or-container;
+		if the noun is something:
+			say "([the noun])";
+		otherwise:
+			say "[into what]" instead.
+
+The new find what to enter rule is listed instead of the find what to enter rule in the for supplying a missing noun rulebook.
 
 Understand "get out of [thing]" or "exit [thing]" as getting out. Getting out is an action applying to one thing.
 

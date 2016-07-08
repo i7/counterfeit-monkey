@@ -720,16 +720,10 @@ Instead of going nowhere when the noun is fronted by a facade (called blockage) 
 
 Instead of going nowhere when the noun is not fronted by a facade in the location (this is the handle can't-go-that-way rule):
 	if the noun is inside:
-		if in-direction of location is a direction:
-			try going in-direction of location instead;
-		otherwise:
-			follow the attempt going in rule instead;
-	if the noun is outside:
-		if out-direction of location is a direction:
-			try going out-direction of location instead;
-		otherwise:
-			follow the attempt going out rule instead;
-	if the noun is up:
+		follow the attempt going in rule instead;
+	otherwise if the noun is outside:
+		follow the attempt going out rule instead;
+	otherwise if the noun is up:
 		say "There is no way upwards. [run paragraph on]";
 	try facing the noun;
 	carry out the listing exits activity.
