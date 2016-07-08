@@ -182,7 +182,7 @@ The new report someone saying hello rule is listed instead of the report someone
 Report someone saying hello to the player (this is the new report someone saying hello rule):
 	say "[greeting of the actor][paragraph break]" instead.
 
-A person has some text called the greeting. The greeting of a person is usually "'[one of]Hi[or]Hello[or]Hi there[at random],' [the person asked] [say]."
+A person has some text called the greeting. The greeting of a person is usually "'[one of]Hi[or]Hello[or]Hi there[at random],' [the item described] [say]."
 
 The greeting of the player is "'Hi,' [we] say."
 
