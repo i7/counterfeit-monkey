@@ -11,11 +11,8 @@ This is the attempt going in rule:
 			say "([the C])";
 			try entering C;
 		otherwise:
-			say "[into what]";
-
-To say into what:
-	say "[one of]Into what, exactly? [run paragraph on][or]There is no obvious way to enter. [run paragraph on][at random]";
-	carry out the listing exits activity.
+			say "[one of]Into what, exactly? [run paragraph on][or]There is no obvious way to enter. [run paragraph on][at random]";
+			carry out the listing exits activity.
 
 This is the attempt going out rule:
 	if the player is enclosed by an enterable thing:
@@ -101,18 +98,12 @@ To decide which object is car-or-container:
 Instead of exiting when the player is not enclosed by an enterable thing:
 	try going outside.
 
-Rule for supplying a missing noun while entering (this is the new find what to enter
-rule):
-	if the in-direction of location is a direction:
-		now the noun is the in-direction of location;
-	otherwise:
-		now the noun is car-or-container;
-		if the noun is something:
-			say "([the noun])";
-		otherwise:
-			say "[into what]" instead.
+Understand the command "enter" as something new.
+Understand "enter" as no-noun-entering. No-noun-entering is an action applying to nothing.
+Understand "enter [thing]" as entering.
 
-The new find what to enter rule is listed instead of the find what to enter rule in the for supplying a missing noun rulebook.
+Carry out no-noun-entering:
+	try going inside.
 
 Understand "get out of [thing]" or "exit [thing]" as getting out. Getting out is an action applying to one thing.
 
