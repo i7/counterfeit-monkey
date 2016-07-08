@@ -725,7 +725,9 @@ Instead of going nowhere when the noun is not fronted by a facade in the locatio
 		follow the attempt going out rule instead;
 	otherwise if the noun is up:
 		say "There is no way upwards. [run paragraph on]";
-	try facing the noun;
+		silently try facing up;
+	otherwise:
+		try facing the noun;
 	carry out the listing exits activity.
 
 [The parser would sometimes misinterpret commands such as GO TO CINEMA as FIND CINEMA-EXTERIOR and leave the player in from of the cinema rather than inside it. This gets around this by making sure that we always try to walk through any facade that we are "finding".]

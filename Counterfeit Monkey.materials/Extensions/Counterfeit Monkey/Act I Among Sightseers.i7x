@@ -1755,7 +1755,7 @@ Instead of putting something on the altar:
 The description of the altar is "It is simple and bare of cloth or flowers[if the cross is on the altar], though a cross is set in the appropriate place[end if]."
 
 Instead of facing up in the New Church:
-	say "The ceiling is handsomely solid but not decorated: no painted feet of the ascendant Christ dangling down between clouds, no medieval grotesques or floral bosses. "
+	say "The ceiling is handsomely solid but not decorated: no painted feet of the ascendant Christ dangling down between clouds, no medieval grotesques or floral bosses."
 
 Instead of going north in the New Church:
 	say "The only thing in that direction is the little space behind the altar, and to enter that seems like needless trespassing."
