@@ -1589,8 +1589,11 @@ The description of the fat guidebook to Europe is "The spine is cracked at many 
 
 The description of the cheap camera is "It is a flimsy device in rose-pink, with a very small lens."
 
-Instead of inserting something into the heavy pack:
-	say "[The heavy pack] is full.";
+Sanity-check inserting something into the heavy pack when the backpacking girl does not carry the heavy pack:
+	if the heavy pack is closed:
+		say "[The heavy pack] isn't open." instead;
+	otherwise:
+		say "[The heavy pack] is full." instead.
 
 Instead of taking something which is in the heavy pack:
 	say "None of these are any use just now."
