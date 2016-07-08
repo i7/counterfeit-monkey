@@ -134,7 +134,12 @@ A check multiple insert rule for the shrine:
 		abide by the cancel multiple rule;
 
 A check multiple insert rule for a thing (called the target) (this is the check for unsuitable containers rule):
-	if the target is a box listed in the Table of unsuitable containers or the carrying capacity of target is less than 3:
+	if the target is a box listed in the Table of unsuitable containers:
+		say "It makes no sense to insert a lot of random things in [the target].";
+		abide by the cancel multiple rule.
+
+A check multiple insert rule for a container (called the target) (this is the check for small containers rule):
+	if the carrying capacity of target is less than 3:
 		say "It makes no sense to insert a lot of random things in [the target].";
 		abide by the cancel multiple rule.
 
