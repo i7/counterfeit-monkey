@@ -8,6 +8,31 @@ Rule for deciding whether all includes fixed in place things: it does not.
 Rule for deciding whether all includes scenery: it does not.
 Rule for deciding whether all includes people while taking: it does not.
 Rule for deciding whether all includes things carried by other people while taking: it does not.
+
+Rule for deciding whether all includes things in a pan while taking in the presence of the barker (this is the don't touch the pans rule):
+	it does not.
+
+Rule for deciding whether all includes things in the heavy pack while taking (this is the show some mercy rule):
+	it does not.
+
+Rule for deciding whether all includes disguisable things while taking (this is the no stealing from Lena rule):
+	it does not.
+
+Rule for deciding whether all includes the contraband box while taking:
+	it does not.
+
+Rule for deciding whether all includes things enclosed by the player while taking or taking off or removing (this is the new exclude indirect possessions from take all rule):
+	if the action name part of the current action is the removing it from action:
+		it does;
+	it does not.
+
+The the new exclude indirect possessions from take all rule is listed instead of the exclude indirect possessions from take all rule in the for deciding whether all includes rulebook.
+
+Rule for deciding whether all includes things enclosed by the backpack while taking or taking off or removing ( this is the exclude contents of backpack from take all rule ):
+	if the action name part of the current action is the removing it from action:
+		it does;
+	it does not.
+
 Rule for deciding whether all includes other people carried by the person asked while dropping or throwing or inserting or putting (this is the new exclude people from drop all rule):
 	it does.
 

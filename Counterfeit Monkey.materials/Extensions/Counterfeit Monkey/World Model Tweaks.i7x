@@ -1781,18 +1781,6 @@ Instead of inserting a fluid thing into the backpack:
 Instead of inserting the pans into the backpack:
 	say "There's nowhere near enough room."
 
-Rule for deciding whether all includes things enclosed by the player while taking or taking off or removing ( this is the new exclude indirect possessions from take all rule ):
-	if the action name part of the current action is the removing it from action:
-		it does;
-	it does not.
-
-The the new exclude indirect possessions from take all rule is listed instead of the exclude indirect possessions from take all rule in the for deciding whether all includes rulebook.
-
-Rule for deciding whether all includes things enclosed by the backpack while taking or taking off or removing ( this is the exclude contents of backpack from take all rule ):
-	if the action name part of the current action is the removing it from action:
-		it does;
-	it does not.
-
 Section 2 - Clothing
 
 [Our clothing simulation is as lightweight as we can make it. The aim is
