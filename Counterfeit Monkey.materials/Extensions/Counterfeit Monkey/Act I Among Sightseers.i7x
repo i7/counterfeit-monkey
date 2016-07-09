@@ -2580,7 +2580,7 @@ Report inserting the god into the shrine:
 For a moment, with the air still and hot, and no one visible in any direction, we might almost believe that the past two millennia have been nothing, and that the shrine is fresh and new.
 
 But Anglophone Atlantis prefers to forget what it was.";
-	record "Jocasta Higgate award for reconstructing pagan worship on the island" as an achievement instead.
+	record "Jocasta Higgate award for reconstructing pagan worship on the island" as an achievement with break before instead.
 
 Report inserting something into the shrine:
 	say "[We] give [the noun] a place of solemn hon[our] above the relief of frolicking ladies." instead.
