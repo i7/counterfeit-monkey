@@ -1331,8 +1331,6 @@ Section 1 - Pistols and Shooting
 
 A pistol is a kind of thing. A pistol can be loaded or unloaded. A pistol is usually loaded.
 
-Definition: a thing is ungunlike if it is not a pistol.
-
 Shooting it with is an action applying to one visible thing and one carried thing. The shooting it with action has an object called the detritus.
 
 Check shooting something with something which is not a pistol:
@@ -1341,21 +1339,16 @@ Check shooting something with something which is not a pistol:
 Check shooting something with an unloaded pistol:
 	say "[The second noun] [are] not loaded." instead.
 
-Check shooting a pistol with the noun:
+Check shooting a pistol (called target pistol) with the target pistol:
 	say "[The noun] doesn't bend that way." instead;
 
-Does the player mean shooting something which is not held by the player with something which is held by the player:
+Does the player mean shooting something with the anagramming gun:
 	it is very likely.
 
-
-
-Understand "shoot [pistol] at [something ungunlike]" as shooting it with (with nouns reversed).
-
-Understand "shoot [something ungunlike] with [a pistol]" as shooting it with. Understand "shoot [something] with [something]" as shooting it with.
-
+Understand "shoot [something] with [something]" as shooting it with.
 Understand "shoot [something] at [something]" as shooting it with (with nouns reversed).
-
-Understand "fire [pistol] at [something ungunlike]" as shooting it with (with nouns reversed). Understand "fire at [something ungunlike] with [a pistol]" as shooting it with. Understand "fire at [something] with [something]" as shooting it with.
+Understand "fire [something] at [something]" as shooting it with (with nouns reversed).
+Understand "fire at [something] with [something]" as shooting it with.
 
 Section 2 - Anagramming Gun
 
@@ -1372,6 +1365,8 @@ Understand "load [anagramming gun] with [anagram bullets]" as loading it into (w
 Understand "load [anagram bullets] into [anagramming gun]" as loading it into.
 
 Loading it into is an action applying to one carried thing and one thing.
+
+Definition: a thing is ungunlike if it is not a pistol.
 
 Check loading something into something ungunlike:
 	say "[The second noun] [are] not a gun." instead.
@@ -1414,7 +1409,7 @@ Sanity-check shooting something irretrievable with the loaded anagramming gun:
 	if the second noun is irretrievable:
 		say "Since [the second noun] [contain] [if the second noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
 
-Sanity-check shooting the loaded anagramming gun with  the loaded anagramming gun:
+Sanity-check shooting the loaded anagramming gun with the loaded anagramming gun:
 	say "It is impossible to aim the gun at itself." instead.
 
 Check shooting something with the loaded anagramming gun:
@@ -1486,7 +1481,7 @@ Report shooting something with the anagramming gun:
 
 Chapter 11 - Restoration gel rifle
 
-The restoration-gel rifle is an essential pistol. The printed name of the restoration-gel rifle is "restoration gel rifle". Understand "restoration" or "gel" or "handgun" as the restoration-gel rifle.
+The restoration-gel rifle is an essential pistol. The printed name of the restoration-gel rifle is "restoration gel rifle". Understand "restoration/gel/handgun" as the restoration-gel rifle.
 
 [we want use of the regular gel to win, if possible]
 Does the player mean putting the restoration-gel rifle on something:

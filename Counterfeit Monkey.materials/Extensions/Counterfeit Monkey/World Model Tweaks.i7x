@@ -78,8 +78,6 @@ Understand "use [gel] on/with [something]" as putting it on.
 
 Understand "use [tub] on/with [something]" as putting it on.
 
-Understand "use [pistol] on [something ungunlike]" as shooting it with (with nouns reversed).
-
 Understand "use [pistol] on [something]" as shooting it with (with nouns reversed).
 
 Understand "use [a door]" as opening. Understand "use [an open door]" as entering.
