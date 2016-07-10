@@ -1342,13 +1342,34 @@ Check shooting something with an unloaded pistol:
 Check shooting a pistol (called target pistol) with the target pistol:
 	say "[The noun] doesn't bend that way." instead;
 
-Does the player mean shooting something with the anagramming gun:
-	it is very likely.
+[Disambiguate the restoration gel rifle sensibly with the tub of gel.]
+Does the player mean shooting something with the restoration gel:
+	it is very unlikely.
+
+Does the player mean shooting something with the tub:
+	it is very unlikely.
+
+Does the player mean shooting something enclosed by the player with: it is very unlikely.
+Does the player mean shooting a pistol (called P) with P: it is very unlikely.
 
 Understand "shoot [something] with [something]" as shooting it with.
-Understand "shoot [something] at [something]" as shooting it with (with nouns reversed).
 Understand "fire [something] at [something]" as shooting it with (with nouns reversed).
 Understand "fire at [something] with [something]" as shooting it with.
+Understand "shoot [thing] at [thing]" as shooting it with (with nouns reversed).
+Understand "shoot [something unwielded]" as shooting it with.
+
+[Thanks to Matt W for this code]
+Definition: a thing is unwielded if it is not a pistol enclosed by the player.
+
+Rule for supplying a missing second noun while shooting when the player carries a pistol (called the firearm) and the noun is not the firearm:
+	say "(with [the firearm])[command clarification break]";
+	now the second noun is the firearm.
+
+Table of Ultratests (continued)
+topic	stuff	setting
+"rifle-ownership"	{ restoration-gel rifle }
+
+Test rifle-ownership with "tutorial off / shoot".
 
 Section 2 - Anagramming Gun
 
@@ -1488,12 +1509,6 @@ Does the player mean putting the restoration-gel rifle on something:
 	it is unlikely.
 
 The description of the restoration-gel rifle is "A rifle that shoots pellets of restoration gel, converting objects from a distance. Guns like this are illegal to carry unless you're Bureau. They can inflict unpleasant bruises if they encounter nothing to convert and absorb the energy."
-
-[Disambiguate sensibly with the tub of gel.]
-Does the player mean shooting something with the restoration-gel rifle:
-	it is very likely.
-Does the player mean doing something with the restoration-gel rifle:
-	it is unlikely.
 
 Sanity-check shooting something irretrievable with the restoration-gel rifle:
 	if the second noun is the player:
