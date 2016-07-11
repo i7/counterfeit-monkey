@@ -1352,27 +1352,41 @@ Does the player mean shooting something with the restoration gel:
 Does the player mean shooting something with the tub:
 	it is very unlikely.
 
+Does the player mean shooting something with a pistol:
+	it is very likely.
+
+Does the player mean shooting the restoration gel with:
+	it is very unlikely.
+
+Does the player mean shooting the tub with:
+	it is very unlikely.
+
+Sanity-check shooting the restoration gel with:
+	if the restoration-gel rifle is marked-visible and the player's command does not include "gel/at with/gel":
+		if the player's command includes "shoot/fire gel" or the player's command includes "shoot/fire restoration gel":
+			replace the matched text with "shoot rifle";
+			now the reborn command is "[player's command]";
+			now sp reparse flag is true instead;
+
 Does the player mean shooting something enclosed by the player with: it is very unlikely.
 Does the player mean shooting a pistol (called P) with P: it is very unlikely.
 
 Understand "shoot [something] with [something]" as shooting it with.
-Understand "fire [something] at [something]" as shooting it with (with nouns reversed).
-Understand "fire at [something] with [something]" as shooting it with.
+Understand "fire at [something] with [something]" as shooting it with (with nouns reversed).
 Understand "shoot [thing] at [thing]" as shooting it with (with nouns reversed).
+Understand "fire [thing] at [thing]" as shooting it with (with nouns reversed).
+
 Understand "shoot [something unwielded]" as shooting it with.
 
 [Thanks to Matt W for this code]
 Definition: a thing is unwielded if it is not a pistol enclosed by the player.
 
 Rule for supplying a missing second noun while shooting when the player carries a pistol (called the firearm) and the noun is not the firearm:
-	say "(with [the firearm])[command clarification break]";
+	unless the noun is the restoration gel and the firearm is the restoration-gel rifle:
+		say "(with [the firearm])[command clarification break]";
 	now the second noun is the firearm.
 
-Table of Ultratests (continued)
-topic	stuff	setting
-"rifle-ownership"	{ restoration-gel rifle }
-
-Test rifle-ownership with "tutorial off / shoot".
+Test rifle-ownership with "tutorial off / shoot gel" holding the restoration-gel rifle.
 
 Section 2 - Anagramming Gun
 
