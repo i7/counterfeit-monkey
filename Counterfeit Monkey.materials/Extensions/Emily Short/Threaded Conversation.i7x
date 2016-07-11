@@ -1253,7 +1253,8 @@ To set the current/-- interlocutor to (N - a person):
 			move the item to the backup-repository;
 
 To reset the interlocutor:
-	truncate the planned conversation of the current interlocutor to 0 entries;
+	unless the current interlocutor is nothing:
+		truncate the planned conversation of the current interlocutor to 0 entries;
 	now the current interlocutor is nothing;
 	now the current quip is generic-quip;
 	now the previous quip is generic-quip.
