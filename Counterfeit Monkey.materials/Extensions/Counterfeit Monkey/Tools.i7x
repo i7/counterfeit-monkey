@@ -1175,11 +1175,11 @@ Sanity-check putting the tub on the tub:
 		try putting the restoration gel on the tub instead.
 
 Sanity-check taking the tub when the player carries the tub:
-	if the player's command includes "gel" and the player's command does not include "gel tub":
+	if the player's command includes "gel" and the player's command does not include "tub":
 		say "[don't remove gel from tub]" instead.
 
 Sanity-check removing the tub from the tub:
-	if the player's command includes "gel" and the player's command does not include "gel tub":
+	if the player's command includes "gel" and the player's command does not include "gel tub" and the player's command does not include "tub of":
 		say "[don't remove gel from tub]" instead.
 
 Instead of removing the gel from the tub:
