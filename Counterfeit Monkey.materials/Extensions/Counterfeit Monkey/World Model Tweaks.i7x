@@ -1254,14 +1254,6 @@ Carry out taking something which wedges something:
 A dangerous destruction rule for something which wedges something (called item):
 	now the item is not wedged by anything.
 
-A dangerous destruction rule for a thing (called the target container):
-	let L be the list of essential things enclosed by target container;
-	let N be the number of entries in L;
-	if N is at least 1:
-		say "First [we] remove [L with definite articles] from [the target container], so as not to lose [if N is at least 2]them[otherwise][regarding entry 1 in L][them][end if].[paragraph break]";
-		repeat with item running through L:
-			move item to player.
-
 [TODO fix tests]
 Table of Ultratests (continued)
 topic	stuff	setting

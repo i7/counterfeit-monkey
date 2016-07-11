@@ -18,19 +18,37 @@ Definition: a thing is irretrievable:
 		yes;
 	if it is the tub:
 		yes;
-	if it encloses the letter-remover:
-		yes;
-	if it encloses the tub:
+	if it encloses an essential thing:
 		yes;
 	no.
 
 Check waving the letter-remover at something irretrievable:
-	if the second noun contains the tub:
-		try taking the tub;
-	if the second noun contains the letter-remover:
-		try taking the letter-remover;
-	if the second noun is irretrievable:
-		say "Since [the second noun] [contain] [if the second noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
+	unless the second noun is the letter-remover:
+		abide by the don't change irretrievable rules for the second noun.
+
+The don't change irretrievable rules is an object-based rulebook.
+
+A don't change irretrievable rule for a thing (called the item):
+	say "First [we] try to remove everything useful from [the item]. [run paragraph on]";
+	let essential-list be the list of essential things enclosed by item;
+	let taken-list be a list of things;
+	let holder-list be a list of things;
+	repeat with the target running through essential-list:
+		follow the try reaching rules for the target;
+		silently try taking the target;
+		if the player carries the target:
+			add target to taken-list;
+			add holder of target to holder-list;
+		otherwise:
+			repeat with N running from 1 to the number of entries in taken-list:
+				move entry N of taken-list to entry N of holder-list;
+			say "Since [the item] [contain] [the essential-list with definite articles], it might be a bad idea to change [regarding the item][their] form. [We] might not be able to get the contents back.";
+			the rule fails;
+	if the number of entries in taken-list is at least 1:
+		say "[We] take [taken-list with definite articles].[paragraph break]";
+	if the item is irretrievable:
+		say "Since [the item] [contain] [the essential-list with definite articles], it might be a bad idea to change [regarding the item][their] form. [We] might not be able to get the contents back.";
+		the rule fails.
 
 Instead of waving the letter-remover device:
 	say "Whoa, whoa! Just waving that thing around without an exact aim could do a lot of damage. Wave it AT something, or don't wave it at all."
@@ -385,12 +403,7 @@ Sanity-check inserting something (called item) into the t-inserter when the t-in
 		do nothing instead.
 
 Sanity-check inserting something irretrievable into the T-inserter:
-	if the noun contains the tub:
-		try taking the tub;
-	if the noun contains the letter-remover:
-		try taking the letter-remover;
-	if the noun is irretrievable:
-		say "Since [the noun] [contain] [if the noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
+	abide by the don't change irretrievable rules for the noun.
 
 After inserting something into the T-inserter:
 	try teeing the noun.
@@ -609,12 +622,7 @@ Then it's over. [run paragraph on]";
 	continue the action.
 
 Sanity-check inserting something irretrievable into the synthesizer:
-	if the noun contains the tub:
-		try taking the tub;
-	if the noun contains the letter-remover:
-		try taking the letter-remover;
-	if the noun is irretrievable:
-		say "Since [the noun] [contain] [if the noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
+	abide by the don't change irretrievable rules for the noun.
 
 Instead of switching on the synthesizer when the synthesizer contains the roll and the synthesizer contains the rock:
 	say "You can't get to rock & roll with just a synthes[ize]r. You'd need an ampersand generator, which unfortunately (despite promising research and a prototype resembling a pretzel-maker) has yet to achieve stable results."
@@ -1201,14 +1209,9 @@ Before inserting something (called the source) into something gel-related (calle
 			say "That would only make a mess. Try rubbing some [if the target is the paste]paste[otherwise]gel[end if] on [the source] instead." instead.
 
 Sanity-check putting the restoration gel on something irretrievable:
-	if the second noun is the tub or the second noun is the letter-remover:
-		continue the action;
-	if the second noun contains the tub:
-		try taking the tub;
-	if the second noun contains the letter-remover:
-		try taking the letter-remover;
-	if the second noun is irretrievable:
-		say "Since [the second noun] [contain] [if the second noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
+	unless the second noun is the tub or the second noun is original:
+		abide by the don't change irretrievable rules for the noun.
+
 
 [Because it's possible to change something into an object that becomes fixed in place in the backpack, or too heavy to move...]
 
@@ -1421,14 +1424,8 @@ Sanity-check unloading:
 
 Section 4 - The Anagram Effect of Shooting
 
-
 Sanity-check shooting something irretrievable with the loaded anagramming gun:
-	if the second noun contains the tub:
-		try taking the tub;
-	if the second noun contains the letter-remover:
-		try taking the letter-remover;
-	if the second noun is irretrievable:
-		say "Since [the second noun] [contain] [if the second noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
+	abide by the don't change irretrievable rules for the noun.
 
 Sanity-check shooting the loaded anagramming gun with the loaded anagramming gun:
 	say "It is impossible to aim the gun at itself." instead.
@@ -1505,15 +1502,14 @@ Chapter 11 - Restoration gel rifle
 The restoration-gel rifle is an essential pistol. The printed name of the restoration-gel rifle is "restoration gel rifle". Understand "restoration/gel/handgun" as the restoration-gel rifle.
 
 [we want use of the regular gel to win, if possible]
-Does the player mean putting the restoration-gel rifle on something:
-	it is unlikely.
+Does the player mean putting the restoration-gel rifle on:
+	it is very unlikely.
 
 The description of the restoration-gel rifle is "A rifle that shoots pellets of restoration gel, converting objects from a distance. Guns like this are illegal to carry unless you're Bureau. They can inflict unpleasant bruises if they encounter nothing to convert and absorb the energy."
 
 Sanity-check shooting something irretrievable with the restoration-gel rifle:
-	if the second noun is the player:
-		make no decision;
-	say "Since [the second noun] [contain] [if the second noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
+	unless the noun is the tub or the noun is original:
+		abide by the don't change irretrievable rules for the noun.
 
 [Because it's possible to change something into an object that becomes fixed in place in the backpack, or too heavy to move...]
 
@@ -1810,9 +1806,7 @@ Sanity-check pushing the big lever:
 	try switching on the programmable dais instead.
 
 Sanity-check putting something irretrievable on the programmable dais:
-	if the noun is the player:
-		make no decision;
-	say "Since [the noun] [contain] [if the noun encloses the tub][the tub][otherwise]something useful[end if], it might be a bad idea to change its form. [We] might not be able to get the contents back." instead.
+	abide by the don't change irretrievable rules for the noun.
 
 Sanity-check switching on the programmable dais:
 	try switching on the big lever instead.
