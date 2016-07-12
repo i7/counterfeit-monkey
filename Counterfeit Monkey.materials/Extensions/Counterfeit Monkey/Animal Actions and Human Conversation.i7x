@@ -1589,8 +1589,9 @@ She smirks. Then she taps the legend with her paddle and it transforms into a pr
 
 
 
-Carry out examining the legend:
+After examining the legend:
 	record "reading a legend" as achieved;
+	follow the the new notify score changes rule;
 
 Rule for refusing comment by the bartender when the noun is the Slangovia map or the noun is the fake-legend:
 	if the legend is not part of the Slangovia map:
