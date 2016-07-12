@@ -697,16 +697,15 @@ Every turn when the small children can see the hoses and the location is Park Ce
 
 There's a bang, a last glittering fan of water in the air.[paragraph break]";
 			gel-convert the hoses;
-			say "[line break]As for the Officer, she's already speaking into her radio as she turns away.".
+			say "As for the Officer, she's already speaking into her radio as she turns away.".
 
 Every turn when the small children can see the ho and the location is Park Center:
 	say "It isn't but a few seconds before a watchful parent notices the ho strutting around and goes to report her.
 
-
 She is too stupid [--] as a constructed person [--] to put up much resistance when an officer shows up to escort her away.";
 	now the ho is nowhere.
 
-[And now we need to special-case these, because otherwise they will fall on the ground. In general we want letter-conversion to move things that are part of other things, but here it's funnier and also more persuasive if the changed items stay part of the fountain.]
+[[And now we need to special-case these, because otherwise they will fall on the ground. In general we want letter-conversion to move things that are part of other things, but here it's funnier and also more persuasive if the changed items stay part of the fountain.]
 To gel-convert (item - hoses):
 	now everything which proffers the item is part of the marble fountain;
 	now the item is in the repository;
@@ -720,7 +719,7 @@ To gel-convert (item - hoe):
 	[play the sound of gel splort;]
 	say "[The item] [become] [a list of things which proffer the item], redecorating the fountain.";
 	repeat with secondary running through things which proffer the item:
-		abide by the dangerous construction rules for the secondary.
+		abide by the dangerous construction rules for the secondary.]
 
 Instead of taking the children:
 	say "There's no need to attract attention to our new face with a kidnapping charge."

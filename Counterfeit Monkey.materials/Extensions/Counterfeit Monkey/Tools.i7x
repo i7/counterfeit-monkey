@@ -291,9 +291,12 @@ Check waving the letter-remover at a room creating something which is not the le
 	[abide by the dangerous construction rules for the generated object.]
 
 Carry out waving the letter-remover device at something:
-	move the generated object to the holder of the second noun;
-	if the second noun is part of the holder of the second noun:
+	let destination be the holder of the second noun;
+	move the generated object to destination;
+	if the second noun is part of destination and the generated object is not stuck:
 		now the generated object is in the location;
+	if the generated object is stuck:
+		now the generated object is part of destination;
 	move the second noun to the repository;
 	if the generated object proffers the second noun and the generated object is not original: [we've managed to create a loop in the generation, as in lee+ass, leases, lass, ass]
 		now every thing which proffers the second noun proffers the generated object;
@@ -1290,14 +1293,20 @@ To gel-convert (item - an object):
 		let destination be home for the item;
 		now everything which proffers the item is in the destination;
 		[play the sound of gel splort;]
+		repeat with secondary running through things which proffer the item:
+			if secondary is stuck:
+				now secondary is part of the destination;
 		let description needed be false;
 		if exactly one thing (called the parent) proffers the item:
 			set pronouns from parent;
 			if the parent is unseen:
 				now description needed is true;
-		say "With an audible SPLORT, [the item] [become] [a list of things which proffer the item][if the destination is the location and the holder of the item is not the location] and falls to the ground[end if]. ";
-		if description needed is true:
-			say "[parent description]";
+		if item is hoses or item is hoe:
+			say "[The item] [become] [a list of things which proffer the item], redecorating the fountain. [run paragraph on]";
+		otherwise:
+			say "With an audible SPLORT, [the item] [become] [a list of things which proffer the item][if the destination is the location and the holder of the item is not the location] and falls to the ground[end if]. ";
+			if description needed is true:
+				say "[parent description]";
 		say "[one of][paragraph break]I'm starting to understand how you got into all the places you got into. Not that I judge you or your line of work, of course. [or][stopping][paragraph break]";
 		carry out the caching scope activity with the player;
 		record "using the gel" as achieved;
@@ -1309,9 +1318,21 @@ To gel-convert (item - an object):
 
 To decide what object is home for (item - a thing):
 	let destination be the holder of the item;
-	if the item is part of the destination:
+	if the item is part of the destination and the item is not stuck:
 		let the destination be the location;
 	decide on destination.
+
+[Stuck objects are those that should not fall off the thing they are part of when recreated by gel-conversion]
+
+Definition: an object is stuck if it is an item listed in the Table of stuck things.
+
+Table of stuck things
+item (an object)
+horses
+hoses
+hoe
+legend
+fake-legend
 
 Instead of putting the restoration gel on a naughty-sounding thing:
 	say "[We] squeeze out a pea-sized quantity of gel and rub it gently onto [--]

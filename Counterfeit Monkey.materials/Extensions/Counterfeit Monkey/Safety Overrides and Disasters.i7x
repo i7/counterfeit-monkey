@@ -79,15 +79,6 @@ A last dangerous construction rule for a freaky thing (called target) when the c
 	otherwise:
 		casually queue mess-complaint.
 
-A dangerous construction rule for the hoses:
-	now the hoses are part of the marble fountain.
-
-A dangerous construction rule for the hoe:
-	now the hoe is part of the marble fountain.
-
-A dangerous construction rule for the horses:
-	now the horses are part of the marble fountain.
-
 [TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
