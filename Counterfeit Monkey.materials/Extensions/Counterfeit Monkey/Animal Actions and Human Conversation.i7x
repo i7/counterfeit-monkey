@@ -1595,7 +1595,7 @@ Check examining the legend for the first time:
 	say paragraph break;
 	follow the the new notify score changes rule instead.
 
-Rule for refusing comment by the bartender when the noun is the Slangovia map or the noun is the fake-legend:
+Rule for refusing comment by the bartender when the noun is the Slangovia map or the noun is the legend:
 	if the legend is not part of the Slangovia map:
 		make no decision;
 	let the target be the fake-legend;
