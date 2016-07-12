@@ -169,8 +169,7 @@ Sanity-check putting something (called the source) on a supporter (called the ta
 	say "[The source] [are] on [the target] already." instead.
 
 Before taking something which is in a closed container (called the source):
-	if the source is not the holder of the player:
-		abide by the try opening rules for the source;
+	abide by the try reaching rules for the noun.
 
 Check an actor inserting something into (this is the new can't insert what's not held rule):
 	if the actor is carrying the noun, continue the action;
