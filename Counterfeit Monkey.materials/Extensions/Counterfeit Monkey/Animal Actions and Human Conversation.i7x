@@ -1588,10 +1588,12 @@ Rule for refusing comment by the bartender when the noun is the Slangovia map or
 She smirks. Then she taps the legend with her paddle and it transforms into a proper map legend.[or]'Okay, one more time.'[or]She may be tiring of this operation.[stopping]".
 
 
-
-After examining the legend:
+Check examining the legend for the first time:
+	say "[legend description][paragraph break]";
+	introduce legend;
 	record "reading a legend" as achieved;
-	follow the the new notify score changes rule;
+	say paragraph break;
+	follow the the new notify score changes rule instead.
 
 Rule for refusing comment by the bartender when the noun is the Slangovia map or the noun is the fake-legend:
 	if the legend is not part of the Slangovia map:
