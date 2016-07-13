@@ -485,27 +485,40 @@ Instead of taking inventory when the current inventory listing style is wide:
 	say ".[paragraph break]".
 
 Instead of taking inventory when the current inventory listing style is utilitarian:
-	rapidly set all things not marked for listing;
+	if the player is empty, say "[We] [are] empty-handed." instead;
 	let the packed count be 0;
+	let the packed-list be a list of things;
 	let the unpacked count be 0;
+	let the unpacked-list be a list of things;
 	let paragraph break needed be false;
-	let the carried count be the number of things enclosed by the player that are not the restoration gel;
-	[the restoration gel shouldn't be counted separately from the tub]
-	if the carried count is 0, say "[We] [are] empty-handed." instead;
-	now all essential things enclosed by the player are marked for listing;
-	unless the number of marked for listing things is 0:
-		if exactly one thing is marked for listing:
-			say "[We] [are] equipped with [a list of marked for listing thing] [--] an essential [we] mustn't part with. ";
+	let essential-list be the list of all essential things enclosed by the player;
+	unless essential-list is empty:
+		if the number of entries in essential-list is 1:
+			say "[We] [are] equipped with [essential-list with indefinite articles] [--] an essential [we] mustn't part with. ";
 		otherwise:
-			say "[We] [are] equipped with the following essentials: [a list of marked for listing things].[no line break]";
-		now the packed count is the number of marked for listing things which are packed;
-		now the unpacked count is the number of marked for listing things which are unpacked;
+			say "[We] [are] equipped with the following essentials: [essential-list with indefinite articles].[no line break]";
+		if backpack is listed in essential-list:
+			remove backpack from essential-list;
+		repeat with item running through essential-list:
+			if item is packed:
+				increment packed count;
+				add item to packed-list;
+			otherwise:
+				increment unpacked count;
+				add item to unpacked-list;
 		now paragraph break needed is true;
-	rapidly set all things not marked for listing;
-	now every not essential thing enclosed by the player is marked for listing;
-	now everything that is part of something is not marked for listing;
-	now the restoration gel is not marked for listing; [because the tub will already be a mentioned essential]
-	unless no things are marked for listing:
+	let enclosed-list be the list of everything enclosed by the player;
+	let inventory-list be a list of things;
+	repeat with item running through enclosed-list:
+		unless item is essential or item is part of something or item is restoration gel:
+			add item to inventory-list;
+			if item is packed:
+				add item to packed-list;
+				increment packed count;
+			otherwise:
+				add item to unpacked-list;
+				increment unpacked count;
+	unless inventory-list is empty:
 		if paragraph break needed is true: [if we have already listed things]
 			say "[paragraph break][We] [are] also carrying ";
 		else:
@@ -514,42 +527,21 @@ Instead of taking inventory when the current inventory listing style is utilitar
 				say "[We] [are] wearing [a list of worn things *in the player]." instead;
 			else:
 				say "[We] [are] carrying ";
-		repeat with item running through marked for listing things:
-			choose a blank row in the Table of Inventory Ordering;
-			let N be "[item]";
-			let N be "[N in lower case]";
-			now the name appearance entry is N;
-			now the referent entry is the item;
-			if item is packed, increase the packed count by 1;
-			else increase the unpacked count by 1;
-		sort the Table of Inventory Ordering in name appearance order;
-		let max be the number of filled rows in the Table of Inventory Ordering;
-		let near-max be max minus 1;
-		let count be 0;
-		repeat through the Table of Inventory Ordering:
-			say "[a referent entry]";
-			increase count by 1;
-			if count is max:
-				say ".[no line break]";
-				now paragraph break needed is true;
-			otherwise if count is near-max:
-				say ", and ";
-			otherwise:
-				say ", ";
-			blank out the whole row;
+		sort inventory-list in printed name order;
+		say "[inventory-list with indefinite articles].[no line break]";
 	if the the backpack is enclosed by the player:
-		if the packed count is greater than the unpacked count:
-			if the unpacked count is 0:
-				say "[paragraph break][if the packed count is less than 3][The list of packed things] [are][else]Everything [we] carry is[end if] in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. ";
+		if the packed count is greater than the unpacked count or (the packed count is greater than 0 and the packed count is less than 3):
+			if the unpacked count is 0 or the packed count is less than 3:
+				say "[paragraph break][if the packed count is less than 3][The list of things in the backpack] [are][else]Everything [we] carry is[end if] in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. ";
 			else:
-				say "[paragraph break]Everything [we] carry is in the backpack except [the list of unpacked things which are enclosed by the player]. The backpack is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. ";
+				say "[paragraph break]Everything [we] carry is in the backpack except [unpacked-list with definite articles]. The backpack is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. ";
 		else:
 			if the packed count is 0:
-				if the carried count is greater than 2:
+				if unpacked count is greater than 1:
 					say "[paragraph break]None of that is in the backpack. [no line break]";
 					now paragraph break needed is true;
 			else:
-				say "[paragraph break]Of that collection, [the list of packed things] [are] packed away in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. ";
+				say "[paragraph break]Of that collection, [packed-list with definite articles] [are] packed away in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. ";
 	if the player wears something:
 		say "[paragraph break][We] [are] wearing [the list of worn things *in the player]. ";
 		now paragraph break needed is true;
@@ -563,12 +555,7 @@ topic (a topic)	stuff (a list of objects)	setting (a room)
 
 Test newutility with "tutorial off / i / put all in backpack / i / wave l-remover at plans / put pans in backpack / i / put all in backpack / i / close backpack / i / x backpack / open backpack / x backpack / i / wear wig / i / wear monocle / i / drop backpack / i / x me" [holding the backpack and the secret-plans and the lime and the cate and the wig.]
 
-Definition: a thing is packed if it is enclosed by the backpack and it is not part of something.
-Definition: a thing is unpacked if it is not packed and it is not part of something and it is not the backpack and it is not the restoration gel.
-
-Table of Inventory Ordering
-name appearance (some text)	referent (a thing)
-with 100 blank rows.
+Definition: a thing is packed if it is enclosed by the backpack.
 
 After printing the name of something (called target) which is proffered by the secret-plans while taking inventory:
 	if the current inventory listing style is utilitarian and the target is not secret-plans:
