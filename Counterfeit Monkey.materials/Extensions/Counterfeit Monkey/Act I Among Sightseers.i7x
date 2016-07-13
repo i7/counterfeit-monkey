@@ -79,11 +79,11 @@ Before typing the topic understood on the temporary barrier:
 Setting action variables for setting the temporary barrier to:
 	now the noun is code-lock.
 
- Understand "use code" as code-entering. Understand "enter code" as code-entering. Understand "use code on [code-lock]" as code-entering on.
+Understand "use code" as code-entering. Understand "enter code" as code-entering. Understand "use code on [code-lock]" as code-entering on. Understand "enter code in/on [code-lock]" as code-entering on. Understand "enter code in/on [temporary barrier]" as code-entering on.
 
 Code-entering is an action applying to nothing.
 
-Check  code-entering:
+Check code-entering:
 	unless the player can see the code-lock:
 		say "There's nothing here on which to enter a code." instead.
 
@@ -91,6 +91,9 @@ Carry out code-entering:
 	try setting the code-lock to "code" instead.
 
 Code-entering on is an action applying to one visible thing.
+
+Instead of code-entering on the temporary barrier:
+	try setting the code-lock to "code".
 
 Carry out code-entering on the code-lock:
 	try setting the code-lock to "code" instead.
