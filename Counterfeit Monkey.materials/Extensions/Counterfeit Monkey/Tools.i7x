@@ -1385,6 +1385,9 @@ Does the player mean shooting the restoration gel with:
 Does the player mean shooting the tub with:
 	it is very unlikely.
 
+Does the player mean doing something with the restoration-gel rifle:
+	it is unlikely.
+
 Sanity-check shooting the restoration gel with:
 	if the restoration-gel rifle is marked-visible and the player's command does not include "gel/at with/gel":
 		if the player's command includes "shoot/fire gel" or the player's command includes "shoot/fire restoration gel":
