@@ -69,9 +69,10 @@ A multiple action processing rule when dropping:
 	if the multiple object list is empty:
 		say "[We] don't have anything to drop.";
 	otherwise if the location is privately-controlled and the number of entries in the multiple object list is at least 2:
-		now the noun is dummy-object;
-		say "[non-drop-zone]";
-		alter the multiple object list to {}.
+		unless the location is traffic circle and the player is in a car:
+			now the noun is dummy-object;
+			say "[non-drop-zone]";
+			alter the multiple object list to {}.
 
 [Next "put all on"]
 A multiple action processing rule when the action name part of the current action is the putting it on action:
@@ -217,6 +218,10 @@ Definition: a thing is single insert only:
 		yes;
 	if it is enclosed by the display case:
 		yes;
+	if it is a car and the location is traffic circle:
+		no;
+	if it is enclosed by a car and the location is traffic circle:
+		no;
 	if it is not enclosed by the player and the location is privately-controlled:
 		yes.
 

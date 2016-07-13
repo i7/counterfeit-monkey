@@ -1297,9 +1297,14 @@ Before going somewhere when [the player is staid and] the location encloses an u
 A room can be publicly-available or privately-controlled. A room is usually publicly-available.
 
 Instead of dropping something which is not heavy in a privately-controlled room (this is the no-dropping rule):
+	if the location is the traffic circle and the player is in a car:
+		continue the action;
 	say "[non-drop-zone]".
 
-Instead of inserting something into a container not enclosed by the player in a privately-controlled room:
+Instead of inserting something into a container (called target) not enclosed by the player in a privately-controlled room:
+	if the location is the traffic circle:
+		if target is a car or target is enclosed by a car:
+			continue the action;
 	say "[non-drop-zone]".
 
 Instead of putting something on a supporter not enclosed by the player in a privately-controlled room:
