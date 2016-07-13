@@ -1570,9 +1570,15 @@ The heavy pack contains an assortment of very short shorts, a broomstick skirt, 
 Instead of taking the heavy pack:
 	say "The girl may be a bit foolish, but she doesn't deserve to be robbed of all her worldly goods on the first day of her trip."
 
+The assortment of very short shorts is wearable.
+
 The description of the bikini bottoms is "The tops are not in evidence, at least as far as casual inspection reveals."
 
+The bikini bottoms are wearable.
+
 The description of the various t-shirts is "There's not a one without a logo of some kind."
+
+The t-shirts are wearable.
 
 Check waving the letter-remover at various t-shirts when the current setting of the letter-remover is "r":
 	say "That would be intriguingly disgusting, if it weren't for the fact that T-SHIT doesn't describe anything anyone with a functional colon has ever heard of." instead.
@@ -1581,9 +1587,15 @@ The description of the very short shorts is "It's a good thing the weather here 
 
 The description of the anorak is "It might be meant to counter the effect of all the shorts."
 
+The anorak is wearable.
+
 The description of the broomstick skirt is "It is the sort of skirt made of thin fabric that twists up into a tight tube, and is supposed to be interestingly crinkly when worn."
 
+The broomstick skirt is wearable.
+
 The description of the flip-flops is "The sole of each flip-flop is decorated with the image of Snoopy."
+
+The flip-flops are wearable.
 
 The description of the box of tampons is "Let's not. This is awkward enough already."
 
@@ -1598,7 +1610,8 @@ Sanity-check inserting something into the heavy pack when the backpacking girl d
 		say "[The heavy pack] is full." instead.
 
 Instead of taking something which is in the heavy pack:
-	say "None of these are any use just now."
+	say "The girl may be a bit foolish, but she doesn't deserve to be robbed on the first day of her trip."
+	[say "None of these are any use just now."]
 
 Chiding-attendant is a scene. Chiding-attendant begins when the dormitory room is visited. Chiding-attendant ends in results when the location of the player is the dormitory room and the location of the backpacking girl is the dormitory room and the backpacking girl recollects have-you-checked and the current quip is not have-you-checked and the current quip is not agree about the attendant and the backpacking girl is finished talking and the attendant is in the Hostel.
 
