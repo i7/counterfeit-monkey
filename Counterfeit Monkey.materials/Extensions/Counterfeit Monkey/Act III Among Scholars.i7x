@@ -1828,10 +1828,8 @@ Lecture Hall 2 is south of Lecture Hall 1. The printed name is "Lecture Hall (am
 
 Some wooden seats are supporters in Lecture Hall 2. Understand "hard" or "wood" as the wooden seats. The initial appearance is "The room extends [if Location is Lecture Hall 1]south[otherwise]north[end if], full of hard [wooden seats]." The description is "Ingeniously uncomfortable."
 
-
-
 Rule for disclosing contents of the wooden seats when at least one mentionable thing is on the wooden seats:
-	say "Abandoned on one near the back [is-are a list of mentionable things *in the wooden seats]. [run paragraph on]"
+	say "Abandoned on one near the back [is-are a list of mentionable things *in the wooden seats].[no line break]"
 
 A coat is on the wooden seats. The coat is floppy and wearable. It covers the torso-area. The description is "It's been abandoned here for a while, since this isn't the time of year when people wear coats. It's brown cloth, only thick enough to keep out rain or a mild chill, and it's rubbed shiny at the elbows. No wonder the owner didn't miss it much." The heft of the coat is 2. Understand "brown coat" or "brown cloth" as the coat.
 
