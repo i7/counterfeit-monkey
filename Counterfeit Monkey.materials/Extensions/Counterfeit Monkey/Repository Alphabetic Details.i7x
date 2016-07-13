@@ -130,9 +130,11 @@ Instead of touching or squeezing or rubbing an as:
 
 The fake-as is an as.
 
-The ass is an animal. The initial appearance is "Adorably miniature, as donkeys on this island tend to be: he comes up to roughly knee-height and could be carried like a dog, though his sentiments on the experience might not be flattering. He does still have a bite, and back legs."
+The ass is a rideable animal. The initial appearance is "Adorably miniature, as donkeys on this island tend to be: he comes up to roughly knee-height and could be carried like a dog, though his sentiments on the experience might not be flattering. He does still have a bite, and back legs."
 	The description of the ass is "He is not the ideal companion in a mission of stealth."
 	The heft is 3.
+
+Instead of mounting the ass, say "The ass is much too small to ride."
 
 Instead of listening to the ass:
 	say "[one of]The ass lets out an experimental half-bray[or]The ass brays[or]'HEE-haw,' says the ass[at random]."
