@@ -486,9 +486,7 @@ Instead of taking inventory when the current inventory listing style is wide:
 
 Instead of taking inventory when the current inventory listing style is utilitarian:
 	if the player is empty, say "[We] [are] empty-handed." instead;
-	let the packed count be 0;
 	let the packed-list be a list of things;
-	let the unpacked count be 0;
 	let the unpacked-list be a list of things;
 	let paragraph break needed be false;
 	let essential-list be the list of all essential things enclosed by the player;
@@ -501,10 +499,8 @@ Instead of taking inventory when the current inventory listing style is utilitar
 			remove backpack from essential-list;
 		repeat with item running through essential-list:
 			if item is packed:
-				increment packed count;
 				add item to packed-list;
 			otherwise:
-				increment unpacked count;
 				add item to unpacked-list;
 		now paragraph break needed is true;
 	let enclosed-list be the list of everything enclosed by the player;
@@ -514,10 +510,8 @@ Instead of taking inventory when the current inventory listing style is utilitar
 			add item to inventory-list;
 			if item is packed:
 				add item to packed-list;
-				increment packed count;
 			otherwise:
 				add item to unpacked-list;
-				increment unpacked count;
 	unless inventory-list is empty:
 		if paragraph break needed is true: [if we have already listed things]
 			say "[paragraph break][We] [are] also carrying ";
@@ -530,7 +524,9 @@ Instead of taking inventory when the current inventory listing style is utilitar
 		sort inventory-list in printed name order;
 		say "[inventory-list with indefinite articles].[no line break]";
 	if the the backpack is enclosed by the player:
-		if the packed count is greater than the unpacked count or (the packed count is greater than 0 and the packed count is less than 3):
+		let packed count be the number of entries in packed-list;
+		let unpacked count be the number of entries in unpacked-list;
+		if packed count is greater than unpacked count or (packed count is greater than 0 and packed count is less than 3):
 			if the unpacked count is 0 or the packed count is less than 3:
 				say "[paragraph break][if the packed count is less than 3][The list of things in the backpack] [are][else]Everything [we] carry is[end if] in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. ";
 			else:
