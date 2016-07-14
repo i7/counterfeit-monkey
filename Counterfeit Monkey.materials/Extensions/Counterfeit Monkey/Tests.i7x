@@ -539,15 +539,12 @@ Understand "pound all-lists" as pounding all-lists. Pounding all-lists is an act
 Carry out pounding all-lists:
 	let L be a list of things;
 	let all-list be { tomcat, apple, stick, cream };
-	repeat with C running through containers:
-		add C to L;
+	let L be the list of containers;
 	remove the repository from L;
 	remove the backup-repository from L;
 	remove quip-repository from L;
-	repeat with S running through supporters:
-		add S to L;
-	repeat with F running through fluid things:
-		add F to L;
+	add the list of supporters to L;
+	add the list of fluid things to L;
 	repeat through the Table of snarky supporters:
 		add support entry to L;
 	repeat through the Table of unsuitable supporters:
