@@ -421,7 +421,7 @@ final question wording	only if victorious	topic	final response rule	final respon
 
 This is the list achievements rule:
 	read the achievements;
-	unless the number of filled rows in  the Table of Possible Achievements is 0:
+	unless the number of filled rows in the Table of Possible Achievements is 0:
 		sort the table of Possible Achievements in achievement order;
 		say "The achievements you have accomplished so far include: [paragraph break]";
 		repeat through the Table of Possible Achievements:
