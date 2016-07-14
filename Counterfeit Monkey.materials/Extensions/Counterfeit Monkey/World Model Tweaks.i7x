@@ -462,7 +462,7 @@ Check finding something that is in the repository:
 	say "Who knows where [the noun] went?" instead.
 
 Check finding something that is enclosed by the player:
-	say "[We're] carrying [the noun]." instead.
+	say "[We]['re] carrying [the noun]." instead.
 
 Check finding a backdrop:
 	say "[The noun] [aren't] in one specific location." instead.
