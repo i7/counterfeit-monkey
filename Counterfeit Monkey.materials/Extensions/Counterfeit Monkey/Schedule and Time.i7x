@@ -572,8 +572,13 @@ Landing is a scene. Landing begins when Seeking Brock ends. Landing ends when th
 
 Definition: a thing is unoriginal if it is not original.
 
-When Landing ends:
-	if Brock is in the repository and something (called b-target) is proffered by Brock:
+When Landing ends (this is the set us up on yacht rule):
+	let b-target be nothing;
+	if Brock is in the repository:
+		repeat with item running through things proffered by Brock:
+			if item is enclosed by location:
+				now b-target is item;
+	if b-target is something:
 		say "Slango gels [the b-target] easily enough. Then he and Brock turn the restoration gel on us. Slango ";
 		move b-target to the repository;
 	otherwise:
