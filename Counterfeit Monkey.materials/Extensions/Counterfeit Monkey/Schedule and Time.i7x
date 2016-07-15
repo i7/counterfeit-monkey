@@ -568,7 +568,7 @@ When Seeking Brock ends:
 
 Section 9 - Escape
 
-Landing is a scene. Landing begins when Seeking Brock ends. Landing ends when the location is nautical.
+Landing is a scene. Landing begins when Seeking Brock ends. Landing begins when the location is the Precarious Perch. Landing ends when the location is nautical.
 
 Definition: a thing is unoriginal if it is not original.
 
@@ -652,6 +652,13 @@ When Landing ends (this is the set us up on yacht rule):
 	move the newspaper to the built-in table;
 	now Slango is nowhere;
 	follow the compass-drawing rule;
+
+
+Table of Ultratests (continued)
+topic	stuff	setting
+"roc-flight"	{ rock, letter-remover }	Precarious Perch
+
+Test roc-flight with "tutorial off / unmonkey / unslango / autoupgrade / wave k-remover at rock".
 
 Rule for writing a topic sentence about the newspaper when the newspaper is on the built-in table:
 	say "Today's [newspaper] is laid out prominently on [the built-in table]. [no line break]";
