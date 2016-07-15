@@ -495,8 +495,7 @@ Instead of taking inventory when the current inventory listing style is utilitar
 			say "[We] [are] equipped with [essential-list with indefinite articles] [--] an essential [we] mustn't part with. ";
 		otherwise:
 			say "[We] [are] equipped with the following essentials: [essential-list with indefinite articles].[no line break]";
-		if backpack is listed in essential-list:
-			remove backpack from essential-list;
+		remove backpack from essential-list, if present;
 		repeat with item running through essential-list:
 			if item is packed:
 				add item to packed-list;
