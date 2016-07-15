@@ -258,7 +258,7 @@ Check waving the letter-remover at something which is enclosed by the player:
 		try taking the second noun;
 		if the player does not carry the second noun:
 			let enclosure be the holder of the second noun;
-			say "It isn't a good idea to change objects while they're [if the enclosure is a container]in[otherwise]on[end if] [the enclosure]." instead.
+			say "It isn't a good idea to change objects while they're [in-on the enclosure]." instead.
 
 Check waving the letter-remover at something creating the letter-remover:
 	if the disappointment text matches the regular expression ".*\s.*":
