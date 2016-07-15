@@ -1329,10 +1329,47 @@ Instead of putting the restoration gel on a naughty-sounding thing:
 No, let me rephrase. [We] clinically and distantly apply some of the restoration gel to an innocent portion of the object in question. [run paragraph on]";
 	gel-convert the second noun.
 
+["X proffers Y" means that X is the "parent" Y is made from (Y is proffered by X) and that Y will be turned back into X when gelled.]
+
+To decide what thing is the substitute from (p-list - a list of things) for (source - a thing):
+	let P be the number of entries in p-list;
+	if P is greater than 1:
+		let high-scorers be a list of things;
+		let high-score be 0;
+		repeat with N running from 1 to P:
+			let contender be entry N in p-list;
+			let scr be 500;
+			let prof-list be the list of things that proffer contender;
+			remove contender from prof-list, if present;
+			if prof-list is not empty:
+				decrease scr by 150;
+				[Something else proffers the contender. Don't choose this.]
+			if the first thing held by contender is something:
+				increase scr by 100;
+				[The contender contains something]
+			if contender is r-abstract and the letter-remover is not upgraded:
+				decrease scr by 100;
+			if contender is a person and the letter-remover is not creature-enabled:
+				decrease scr by 100;
+			if scr is high-score:
+				add contender to high-scorers;
+			otherwise:
+				[This is the new high-score. Clean out the old ones.]
+				if scr is greater than high-score:
+					now high-score is scr;
+					now high-scorers is {};
+					add contender to high-scorers;
+		[sort high-scorers in random order;]
+		[Choose an object from those with the highest score]
+		decide on entry 1 in high-scorers;
+	otherwise:
+		decide on entry 1 in p-list.
+
+
 [TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
-"gel-bug"	{ tube, arm}	Dormitory
+"gel-bug"	{ tube, arm }	Dormitory
 
 Test gel-bug with "tutorial off / show arm to girl / use gel on lock / put gel on lock / gel lock / apply gel to lock / use tube on lock / put tube on lock / apply tube to lock" [holding the tube and the arm in the Dormitory.]
 
