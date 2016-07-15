@@ -639,7 +639,7 @@ When Landing ends (this is the set us up on yacht rule):
 	now the the oar is nowhere;
 	now the sun is part of the sky;
 	now the current daytime is early afternoon;
-	move cathedral-view  backdrop to all outdoors nautical rooms; [change the scenery; we've gone to Mallorca]
+	move cathedral-view backdrop to all outdoors nautical rooms; [change the scenery; we've gone to Mallorca]
 	pause the game;
 	complete "Escape the Bureau";
 	say "[dreams]";
