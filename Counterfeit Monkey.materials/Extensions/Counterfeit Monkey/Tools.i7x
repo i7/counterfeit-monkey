@@ -646,25 +646,17 @@ Instead of switching on the synthesizer:
 	synthesize contents of synthesizer.
 
 To synthesize contents of (source - a thing):
-	let count be 0;
+	let contents-list be a list of things;
 	if source is a container:
-		let count be the number of things which are in source;
-	otherwise if source is a supporter:
-		let count be the number of things which are on source;
+		add the list of things in source to contents-list;
+	otherwise:
+		add the list of things on source to contents-list;
+	let count be the number of entries in contents-list;
 	unless the count is two:
 		say "An indicator message lights up: FAIL: TWO OBJECTS REQUIRED FOR SYNTHESIS.";
 		stop;
-	let X be the player;
-	if source is a container:
-		let X be a random thing in the source;
-	otherwise:
-		let X be a random thing on the source;
-	let Y be X;
-	while Y is X:
-		if source is a container:
-			let Y be a random thing in the source;
-		otherwise:
-			let Y be a random thing on the source;
+	let X be entry 1 in contents-list;
+	let Y be entry 2 in contents-list;
 	let the chosen article be Y;
 	let comparison number be the hash code of X with the hash code of Y added;
 	repeat with item running through things in the repository:
@@ -691,20 +683,14 @@ To synthesize contents of (source - a thing):
 		abide by the dangerous destruction rules for Y;
 		abide by the dangerous construction rules for the chosen article;
 		now the chosen article is not proffered by anything;
-		if the source is a container:
-			repeat with item running through things in the source:
-				now the item proffers the chosen article;
-		if the source is a supporter:
-			repeat with item running through things on the source:
-				now the item proffers the chosen article;
+		repeat with item running through contents-list:
+			now the item proffers the chosen article;
 		if an essential thing (called parent) proffers the chosen article:
 			now the chosen article is essential;
 		[if something which proffers the chosen article encloses an essential thing:
 			now the chosen article is essential; ]
-		if the source is a container:
-			now everything in the source is in the repository;
-		otherwise:
-			now everything on the source is in the repository;
+		now X is in the repository;
+		now Y is in the repository;
 		move the chosen article to the source;
 		record "using the synthesizer" as achieved;
 		say "[The source] [if the source is a container]hums like a microwave oven for 43 seconds, then pings. Inside there [is-are a list of things *in the source][otherwise]glows vibrant blue for five seconds, leaving behind [a list of things *in the source][end if].";
