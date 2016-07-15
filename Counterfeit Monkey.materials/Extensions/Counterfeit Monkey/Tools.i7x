@@ -172,13 +172,8 @@ Understand "remove [thing] from [thing]" as removing it from.
 Understand "remove [text] from [something]" or "letter-remove [text] from [something]" as letter-removing it from. Letter-removing it from is an action applying to one topic and one thing.
 
 Carry out letter-removing the topic understood from something:
-	if the player's command includes "remove all" or the player's command includes "remove everything":
-		replace the matched text with "take all";
-		now the reborn command is "[player's command]";
-		now sp reparse flag is true instead;
-	otherwise:
-		try tuning the letter-remover to the topic understood;
-		try waving the letter-remover at the second noun.
+	try tuning the letter-remover to the topic understood;
+	try waving the letter-remover at the second noun.
 
 Understand "wave [something preferably held] at/toward/over/around/on/across [thing]" as waving it at. Waving it at is an action applying to one carried thing and one visible thing.
 
