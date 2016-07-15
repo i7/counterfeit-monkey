@@ -235,7 +235,7 @@ Setting action variables for waving the letter-remover device at an object which
 				if the goal text is the starting text:
 					if second noun proffers item:
 						now the generated object is item;
-						stop;
+						make no decision;
 					add item to match-list;
 		unless match-list is empty:
 			now the generated object is substitute from match-list;
