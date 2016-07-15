@@ -183,7 +183,7 @@ Seeking invite is a scene. Seeking invite begins when Seeking Slango ends. Seeki
 When seeking invite ends:
 	record "acquiring a sought-after invitation" as achieved;
 [	say "[command prompt]";
-	wait for any key;
+	custom-wait for any key;
 	say "[paragraph break]I'm not sure I can handle this. The university stuff is one thing. I know my way around here. But [we] could be about to get into some real trouble. And I can tell you don't believe my plan has a chance of doing much good. You don't, do you? >>";
 	if the player consents:
 		say "[line break]Heh. I don't think you mean that, but it's kind of you to humor me.";
@@ -213,7 +213,7 @@ After going to University Oval when seeking invite has ended and higgate-arreste
 	otherwise:
 		clear the path-walked for the player;
 	now approach-destination is Samuel Johnson Hall. [Tricks the approaching verb into stopping here even if you're trying to reach someplace really far away.]
-	[pause the game. ]
+	[custom-pause the game. ]
 
 Higgate-arrested is a scene. Higgate-arrested begins when the location is University Oval and seeking invite has ended.
 
@@ -640,10 +640,10 @@ When Landing ends (this is the set us up on yacht rule):
 	now the sun is part of the sky;
 	now the current daytime is early afternoon;
 	move cathedral-view backdrop to all outdoors nautical rooms; [change the scenery; we've gone to Mallorca]
-	pause the game;
+	custom-pause the game;
 	complete "Escape the Bureau";
 	say "[dreams]";
-	pause the game;
+	custom-pause the game;
 	say "[i]72 hours later[/i][paragraph break]";
 	now the player is in your bed;
 	now the player is reclining;

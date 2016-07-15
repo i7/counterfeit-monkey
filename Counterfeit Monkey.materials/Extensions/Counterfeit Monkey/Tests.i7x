@@ -5,6 +5,47 @@ Use authorial modesty.
 
 Volume 8 - Tests
 
+Chapter 0 - Skipping breaks
+
+No pauses is a truth-state that varies. No pauses is initially false.
+
+To custom-pause the game:
+	if no pauses is false:
+		pause the game;
+	otherwise:
+		say "[line break]Please press SPACE to continue.[paragraph break]"
+
+To custom-wait for any key:
+	if no pauses is false:
+		wait for any key.
+
+The File of Tests is called "testing".
+
+[Start automated test if File of Tests exists.]
+
+A last after starting the virtual machine rule (this is the automated testing rule):
+	if the File of Tests exists:
+		say "[first custom style][bracket]Test mode active. No waiting for key presses, deterministic randomness[close bracket][roman type][paragraph break]";
+		seed the random-number generator with 1234;
+		now no pauses is true;
+
+Understand "pauses on" as on-pausing. On-pausing is an action out of world.
+Understand "pauses off" as off-pausing. Off-pausing is an action out of world.
+
+Carry out on-pausing:
+	say "[first custom style][bracket]No-pause mode inactive. Will wait for key presses.[close bracket][roman type]";
+	now no pauses is false.
+
+Carry out off-pausing:
+	say "[first custom style][bracket]No-pause mode active. No waiting for key presses.)[roman type]";
+	now no pauses is true.
+
+Understand "random-seed [number]" as reseeding. Reseeding is an action out of world applying to one number.
+Carry out reseeding:
+	say "[first custom style][bracket]Random-number generator seeded with [the number understood].[close bracket][roman type]";
+	seed the random-number generator with the number understood.
+
+
 Chapter 1 - Tests - Not for release
 
 Section 1 - Ordinary Tests
@@ -14,7 +55,7 @@ Section 1 - Ordinary Tests
 [Note that these tests will require you to press the space key a few times]
 
 Test me with "test act1 / test act2 / test act3 / test act4 / test act5".
-Test me2 with "test act1 / test act2 / test act3 / test act4 / test act5A".
+Test me2 with "yes / andra / test act1 / test act2 / test act3 / test act4 / test act5A".
 
 
 Test act1 with "tutorial off / test gel / test church/ test hostel / test cinema".

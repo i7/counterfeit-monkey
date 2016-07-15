@@ -1,0 +1,327 @@
+y
+andra
+tutorial off
+random-seed 1234
+pauses off
+n
+wave u-remover at mourning dress
+score
+e
+wave x-remover at codex
+x code
+unlock barrier
+set barrier to 305
+go to fair
+x wheel
+wave w-remover at wheel
+get heel
+look
+score
+go to midway
+wave p-remover at apple
+get pear
+wave e-remover at tube
+open tub
+put gel on pear
+put gel on ale
+get apple
+wave l-remover at pearl
+wave p-remover at pear
+e
+go to garden
+wave h-remover at thicket
+get all
+go to hostel
+up
+x lock
+remember lock
+open locker
+x girl
+show ear to girl
+turn dial
+x dial
+d
+talk to attendant
+ask attendant about locker
+up
+put gel on dial
+get clock
+open locker
+get all
+x letter
+remember
+x plans
+wave l-remover at plans
+wave s-remover at pans
+d
+w
+w
+go to cinema
+give ticket to ticket-taker
+w
+get all
+open backpack
+wear monocle
+n
+get jotter
+go to hesychius street
+talk to farmer
+ask about sale
+buy asparagus
+buy lime
+wave m-remover at lime
+n
+ne
+get chard
+look
+sw
+go to crumbling wall
+get fossil
+wave s-remover at fossil
+wave f-remover at foil
+go to close
+put gel on pan
+wave l-remover at plans
+put pans on spinner
+go to beach
+get funnel
+wave n-remover at funnel
+go to high street
+z
+go to high street
+wave h-remover at chard
+wave d-remover at card
+put fuel in car
+wave b-remover at garbage
+talk to mechanic
+ask mechanic about car
+give oil to mechanic
+go to counterfeit monkey
+e
+take off monocle
+put all in backpack
+close backpack
+go to counterfeit monkey
+open backpack
+y
+go to outdoor
+open backpack
+look
+wave p-remover at spill
+get sill
+go to counterfeit monkey
+talk to barman
+ask about slango
+challenge parker about the rum
+ask about paste
+ask how
+play
+show sill to barman
+put gel on sill
+wave s-remover at spill
+show pill to barman
+put gel on pill
+wave p-remover at spill
+get sill
+get paste
+go to tin hut
+prop trap door with sill
+down
+open crate
+get all
+wave r-remover at crate
+get cate
+up
+get sill
+go to aquarium
+ask whether
+say who
+x contraband
+wave m-remover at modems
+wave s-remover at odes
+put gel on ode
+wave m-remover at modems
+wave s-remover at preamps
+wave p-remover at preamp
+put paste on ream
+put paste on odes
+ask whether
+encourage lena
+put gel on as
+go to counterfeit monkey
+x slango
+say who
+explain
+z
+a trouble
+complain
+look
+e
+go to convenience
+get out
+put paste on car
+get out
+z
+get rifle
+shoot tree
+drop rifle
+enter car
+go to oval
+go to convenience
+wave s-remover at sink
+get ink
+x hole
+look in hole
+look at ash through monocle
+smell ash
+gel ash
+get trash
+go to rotunda
+get bin
+go to antiques
+x maps
+get slangovia map
+buy slangovia map
+go to drinks club
+show legend to bartender
+x legend
+go to palm square
+w
+w
+s
+get problem of adjectives
+n
+t girlfriend
+claim
+z
+reassure
+n
+get key
+get ring
+s
+ne
+go to babel
+go to palm
+unlock gate with ring
+go to oval
+say no
+encourage
+ask how consciousness
+s
+se
+n
+ask why
+ask whether
+x printer
+open printer
+go to graduate student
+get sticky
+wave y-remover at sticky
+open fridge
+get cream
+wave c-remover at cream
+go to language studies department office
+put ream in printer
+close printer
+get draft
+w
+no
+ask how
+ask what
+ask about seminar
+t book
+put problem on shelves
+go to brown's lab
+ask what
+ask what
+ask how
+ask whether
+ask what
+ask why
+ne
+s
+x sticky
+go to oval
+wave g-remover at sign
+score
+go to samuel johnson basement
+x door
+x lock
+go to hotel
+y
+w
+order screwdriver
+get screwdriver
+go to seminar room
+gel screwdriver
+put key in synthesizer
+turn screws
+g
+open case
+put key in synthesizer
+find car
+put gel on car
+wave h-remover at chard
+get card
+go to seminar room
+put card in synthesizer
+get crossword
+turn synthesizer on
+get keycard
+go to samuel johnson basement
+swipe card
+west
+put gel on as
+wave i-remover at pastis
+wave t-remover at pasts
+find synthesizer
+take all from synthesizer
+put pass in synthesizer
+put gel on crossword
+put word in synthesizer
+turn on synthesizer
+get password
+x it
+go to rectification room
+put gel on ear
+wave r-remover at pearl
+put peal in carton
+go to rectification room
+turn on machine
+x password
+type password
+select option 3
+put letter-remover in machine
+type password
+type 4
+put letter-remover in machine
+go to basement
+put gel on peal
+get pearl
+wave s-remover at stick
+wave k-remover at tick
+e
+get coat
+wave o-remover at coat
+put gel on cat
+wave a-remover at coat
+wave j-remover at jotter
+gel otter
+go to winding path
+x bushes
+look under bushes
+x kudzu
+wave z-remover at kudzu
+look under bushes
+x shrine
+go to roget close
+put bin on spinner
+get nib
+go to monument green
+dig in ground
+get dog
+go to roget close
+put dog on pedestal
+get god
+n
+put god on shrine

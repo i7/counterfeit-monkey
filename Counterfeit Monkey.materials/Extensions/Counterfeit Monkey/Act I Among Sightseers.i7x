@@ -324,7 +324,7 @@ After reading a command during identification:
 				say "No, I'm Alex. Together we're Alexandra; before our synthesis, you were...";
 			otherwise if stored first name is "Andra":
 				say "Exactly right. And I'm Alex, making us jointly Alexandra. As far as I can tell, the operation was a success. We're meant to be one person now, unrecognizable to anyone who knew us before.[paragraph break]";
-				wait for any key;
+				custom-wait for any key;
 				say "[banner text]";
 				say "[paragraph break]Let's try to get a look around. I haven't been able to run our body without your help, but maybe now you're awake, it'll work better.";
 			otherwise if stored first name is "No" or stored first name is "N":
@@ -344,7 +344,7 @@ After reading a command during identification:
 				say "...oh boy. Okay. Okay. I need you on form here. This is going to be hard if you don't remember being Andra. Not panicking. ";
 			say "As far as I can tell, the operation was a success. We're meant to be one person now, unrecognizable to anyone who knew us before.[paragraph break]";
 			now stored first name is "Andra";
-			wait for any key;
+			custom-wait for any key;
 			say "[banner text]";
 			say "[paragraph break]Let's try to get a look around. I haven't been able to run our body without your help, but maybe now you're awake, it'll work better.";
 		follow the scene changing rules;
@@ -2317,7 +2317,7 @@ After going to Webster Court when Private Beach is visited and Patriotic Chard-G
 	otherwise:
 		try looking;
 	now approach-destination is Winding Footpath. [Tricks the approaching verb into stopping here even if you're trying to reach someplace really far away.]
-	[pause the game. ]
+	[custom-pause the game. ]
 
 Section 3 - Chard-Garden
 
