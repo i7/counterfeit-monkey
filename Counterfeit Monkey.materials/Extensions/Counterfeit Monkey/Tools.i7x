@@ -227,17 +227,56 @@ Setting action variables for waving the letter-remover device at an object which
 		let starting text be "[starting text in lower case]";
 		replace the regular expression "[current setting]" in the starting text with "";
 		now generated object is the letter-remover device;
+		let match-list be a list of things;
 		repeat with item running through things in repository:
 			if comparison number is the hash code of the item:
 				let goal text be "[printed name of the item]";
 				let goal text be "[goal text in lower case]";
 				if the goal text is the starting text:
-					now the generated object is the item;
-					break;
+					if second noun proffers item:
+						now the generated object is item;
+						stop;
+					add item to match-list;
+		unless match-list is empty:
+			now the generated object is substitute from match-list;
 		if the generated object is the letter-remover device:
 			now the disappointment text is the starting text.
 
 The disappointment text is some text that varies.
+
+To decide what thing is the substitute from (p-list - a list of things) (this is the intelligent substitution rule):
+	let P be the number of entries in p-list;
+	if P is greater than 1:
+		let high-scorers be a list of things;
+		let high-score be 0;
+		repeat with N running from 1 to P:
+			let contender be entry N in p-list;
+			let scr be 500;
+			let prof-list be the list of things that proffer contender;
+			remove contender from prof-list, if present;
+			if prof-list is not empty:
+				decrease scr by 150;
+				[Something else proffers the contender. Don't choose this.]
+			if the first thing held by contender is something:
+				increase scr by 100;
+				[The contender contains something]
+			if contender is r-abstract and the letter-remover is not upgraded:
+				decrease scr by 100;
+			if contender is a person and the letter-remover is not creature-enabled:
+				decrease scr by 100;
+			if scr is high-score:
+				add contender to high-scorers;
+			otherwise:
+				[This is the new high-score. Clean out the old ones.]
+				if scr is greater than high-score:
+					now high-score is scr;
+					now high-scorers is {};
+					add contender to high-scorers;
+		[sort high-scorers in random order;]
+		[Choose an object from those with the highest score]
+		decide on entry 1 in high-scorers;
+	otherwise:
+		decide on entry 1 in p-list.
 
 [Check waving the letter-remover at a foreign-tongued thing:
 	say "[The letter-remover] squeaks as though frightened[one of]. Apparently encountering objects that aren't in English generates its own alarm tone[or] by the foreign-language [second noun][stopping]." instead. ]
@@ -781,7 +820,7 @@ This is the spinner-turning rule:
 		now everything which is on the spinner is in the repository;
 		move the chosen article to the spinner;
 		say "[if looking]After the mirror does its work,[otherwise]The mirror rotates in leisurely fashion, and when it is done[end if] there [is-are a list of things *in the spinner].[no line break]";
-		[The lines below is a hack to get rid of an annoying triple paragraph break caused by Try examining the chosen article.]
+		[The lines below is a hack to get rid of an annoying triple paragraph break caused by "try examining the chosen article".]
 		let N be the chosen article;
 		if N is unexamined:
 			say "[paragraph break][N description][no line break]";
@@ -1328,42 +1367,6 @@ Instead of putting the restoration gel on a naughty-sounding thing:
 
 No, let me rephrase. [We] clinically and distantly apply some of the restoration gel to an innocent portion of the object in question. [run paragraph on]";
 	gel-convert the second noun.
-
-["X proffers Y" means that X is the "parent" Y is made from (Y is proffered by X) and that Y will be turned back into X when gelled.]
-
-To decide what thing is the substitute from (p-list - a list of things) for (source - a thing):
-	let P be the number of entries in p-list;
-	if P is greater than 1:
-		let high-scorers be a list of things;
-		let high-score be 0;
-		repeat with N running from 1 to P:
-			let contender be entry N in p-list;
-			let scr be 500;
-			let prof-list be the list of things that proffer contender;
-			remove contender from prof-list, if present;
-			if prof-list is not empty:
-				decrease scr by 150;
-				[Something else proffers the contender. Don't choose this.]
-			if the first thing held by contender is something:
-				increase scr by 100;
-				[The contender contains something]
-			if contender is r-abstract and the letter-remover is not upgraded:
-				decrease scr by 100;
-			if contender is a person and the letter-remover is not creature-enabled:
-				decrease scr by 100;
-			if scr is high-score:
-				add contender to high-scorers;
-			otherwise:
-				[This is the new high-score. Clean out the old ones.]
-				if scr is greater than high-score:
-					now high-score is scr;
-					now high-scorers is {};
-					add contender to high-scorers;
-		[sort high-scorers in random order;]
-		[Choose an object from those with the highest score]
-		decide on entry 1 in high-scorers;
-	otherwise:
-		decide on entry 1 in p-list.
 
 
 [TODO: fix test]
