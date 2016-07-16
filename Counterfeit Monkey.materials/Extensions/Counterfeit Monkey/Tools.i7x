@@ -1901,8 +1901,8 @@ Instead of switching on the big lever:
 		say "[We] pull the lever, but a lot of nothing happens. It doesn't look like there is power flowing to the machine." instead;
 	if the switch-setting of the massive switch is:
 		-- synthesize:
-			if the number of things on the programmable dais is not two:
-				say "[The programmable dais] goes red, then dims again when it doesn't find sufficient contents for synthesis." instead;
+			[if the number of things on the programmable dais is not two:
+				say "[The programmable dais] goes red, then dims again when it doesn't find sufficient contents for synthesis." instead;]
 			synthesize contents of programmable dais instead;
 		-- swap homonym:
 			if the programmable dais does not support something:
