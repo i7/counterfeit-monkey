@@ -1252,7 +1252,7 @@ Before inserting something (called the source) into something gel-related (calle
 
 Sanity-check putting the restoration gel on something irretrievable:
 	unless the second noun is the tub or the second noun is original:
-		abide by the don't change irretrievable rules for the noun.
+		abide by the don't change irretrievable rules for the second noun.
 
 
 [Because it's possible to change something into an object that becomes fixed in place in the backpack, or too heavy to move...]
