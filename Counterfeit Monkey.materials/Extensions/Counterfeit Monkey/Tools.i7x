@@ -35,6 +35,8 @@ A don't change irretrievable rule for a thing (called the item):
 	if the item is a closed opaque container:
 		say "It would probably be a bad idea to change the form of [the item]. [We] might not be able to get the contents back.";
 		the rule fails;
+	if the item is a person:
+		make no decision;
 	say "First [we] try to remove everything useful from [the item]. [run paragraph on]";
 	let essential-list be the list of essential things enclosed by item;
 	let taken-list be a list of things;
