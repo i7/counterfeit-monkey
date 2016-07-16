@@ -32,12 +32,14 @@ A don't change irretrievable rule for a thing (called the item):
 	if the item is the tub or the item is the letter-remover:
 		say "It would probably be a bad idea to change the form of [the item]. [We] might not be able to get it back.";
 		the rule fails;
+	if the item is a closed opaque container:
+		say "It would probably be a bad idea to change the form of [the item]. [We] might not be able to get the contents back.";
+		the rule fails;
 	say "First [we] try to remove everything useful from [the item]. [run paragraph on]";
 	let essential-list be the list of essential things enclosed by item;
 	let taken-list be a list of things;
 	let holder-list be a list of things;
 	repeat with the target running through essential-list:
-		follow the try reaching rules for the target;
 		silently try taking the target;
 		if the player carries the target:
 			add target to taken-list;
@@ -45,12 +47,11 @@ A don't change irretrievable rule for a thing (called the item):
 		otherwise:
 			repeat with N running from 1 to the number of entries in taken-list:
 				move entry N of taken-list to entry N of holder-list;
-			say "Since [the item] [contain] [the essential-list with definite articles], it might be a bad idea to change [regarding the item][their] form. [We] might not be able to get the contents back.";
 			the rule fails;
 	if the number of entries in taken-list is at least 1:
 		say "[We] take [taken-list with definite articles].[paragraph break]";
 	if the item is irretrievable:
-		say "Since [the item] [contain] [the essential-list with definite articles], it might be a bad idea to change [regarding the item][their] form. [We] might not be able to get the contents back.";
+		say "Since [the item] [contain] [the essential-list with definite articles], it might be a bad idea to change [regarding the item][their] form. [We] may not be able to get the contents back.";
 		the rule fails.
 
 Instead of waving the letter-remover device:
