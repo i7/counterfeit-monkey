@@ -50,10 +50,13 @@ Understand "remove all/everything from [an empty supporter]" or "take all/everyt
 Empty-removing is an action applying to one thing.
 
 Carry out empty-removing:
-	if the noun is closed and noun is opaque and the noun is a container:
+	if the noun is closed and noun is opaque and noun is a container:
 		say "[The noun] [aren't] open.";
 	otherwise:
-		say "[The noun] [are] empty.";
+		unless the noun is a container or the noun is a supporter:
+			say "There are none at all available!";
+		otherwise:
+			say "[The noun] [are] empty.";
 
 [Prevent long lists of error messages when typing things like "put all in rock":]
 

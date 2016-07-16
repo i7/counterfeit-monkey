@@ -172,6 +172,18 @@ Understand "remove [thing] from [thing]" as removing it from.
 Understand "remove [text] from [something]" or "letter-remove [text] from [something]" as letter-removing it from. Letter-removing it from is an action applying to one topic and one thing.
 
 Carry out letter-removing the topic understood from something:
+	let noun-text be "[topic understood]";
+	if the number of characters in noun-text is greater than 1:
+		if the player's command includes "remove":
+			[The parser has likely misunderstood our attempt to remove objects from the second noun as letter-removing. Try to give a reasonable response to this.]
+			if the second noun is a closed openable opaque container:
+				say "[The second noun] [are] closed." instead;
+			if the player's command includes "remove all/everything from":
+				if the first thing held by second noun is nothing:
+					try empty-removing the second noun instead;
+				otherwise:
+					try removing the first thing held by the second noun from the second noun instead;
+			say "[We] can't see any such thing [in-on the second noun]." instead;
 	try tuning the letter-remover to the topic understood;
 	try waving the letter-remover at the second noun.
 
