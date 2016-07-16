@@ -17,7 +17,7 @@ Do you remember our name?
 
 Counterfeit Monkey
 A Removal by Emily Short
-Release 6 / Serial number 160714 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) 
+Release 6 / Serial number 160716 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) 
 
 
 Let's try to get a look around. I haven't been able to run our body without your help, but maybe now you're awake, it'll work better.
@@ -2194,20 +2194,20 @@ The snapping continues.
 
 [Your score has gone up by one point and is now fifty-four.]
 
->We take the keycard.
+>We acquire the keycard.
 
 The snapping continues.
 
 [Your score has gone up by three points and is now fifty-seven.]
 
->We have a brief walk. 
+>We make the brief walk. 
 
 Samuel Johnson Basement
 Dank and malodorous: there are no windows down here, and the drainage is terrible.
 
 The stairs up are here; the lecture room at the east. Immediately south is the Graduate Student Office, and southwest is Professor Brown's office. The most interesting of all is the small door west, trying to look inconspicuous, but locked with a keycard lock: it's where the department stores its most dangerous licensed equipment.
 
-A large open carton stands against the wall right between Brown's lab door and the interesting door. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." The large carton contains a banana. 
+A large open carton stands against the wall right between Brown's lab door and the interesting door. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." There is a banana in the large carton. 
 
 The snapping continues.
 
@@ -2223,22 +2223,22 @@ The snapping continues.
 
 >I don't know what you think you're talking about, because we can't see any such thing here.
 
->We reset the device to i. There is a flash of psychedelic colors, and the pastis turns into some pasts. It looks from the side like a shard of glass, but seen straight on, it captures previous events. At the moment it is replaying us putting the restoration gel on the car.
+>We reset the device to i. There is a distinct spearmint flavor, and the pastis turns into some pasts. It looks from the side like a shard of glass, but seen straight on, it captures previous events. At the moment it is replaying us inserting the card into the synthesizer.
 
 The snapping continues.
 
->We reset the device to t. There is a mint green cloud, and the pasts turn into a pass. A Bureau of Orthography visiting pass, a very valuable commodity in these parts. Forging one is grounds for imprisonment. There is a picture on the front that looks more or less like us, though with considerably more hair.
+>We reset the device to t. There is a mad-scientist cackle, and the pasts turn into a pass. A Bureau of Orthography visiting pass, a very valuable commodity in these parts. Forging one is grounds for imprisonment. There is a picture on the front that looks more or less like us, though with considerably more hair.
 
 The snapping continues.
 
->It's a short walk. 
+>It's a brief hike. 
 
 Language Studies Seminar Room
 They recently redid this room, and whoever picked the decorations had postmodern tastes.
 
-The bookshelves lining the walls contain the department library. On the bookshelf are The Problem of Adjectives, History of the Standards Revolution, and Lives of the Lexicographers. 
+The bookshelves lining the walls contain the department library. There are The Problem of Adjectives, History of the Standards Revolution, and Lives of the Lexicographers on the bookshelf. 
 
-A massive plexiglas case takes up one corner of the room. The plexiglas case contains a compact but high-powered late model synthesizer. 
+A massive plexiglas case takes up one corner of the room. There is a compact but high-powered late model synthesizer in the plexiglas case. 
 
 The big table at the center of the room is an irregular polygon, with one chair pushed up to the shortest side. 
 
@@ -2270,13 +2270,13 @@ A glowing series of numbers and figures in the air, which changes and flickers n
 
 The snapping continues.
 
->We take the password.
+>We acquire the password.
 
 The snapping continues.
 
 >A glowing series of numbers and figures in the air, which changes and flickers now and then. Probably responding to its surroundings. It seems unstable just now.
 
->We make the brief walk over to Samuel Johnson Basement. I defer to your judgment that we ought to provide some masking sound before proceeding.
+>We make the walk over to Samuel Johnson Basement. I defer to your judgment that we ought to provide some masking sound before proceeding.
 
 
 Samuel Johnson Basement
@@ -2294,13 +2294,13 @@ We dip out a fingertip-coating quantity of gel and rub it gently onto the ear. W
 
 The snapping continues.
 
->We reset the device to r. There is a smell of anise, and the pearl turns into a peal. It is the embodiment of a peal of bells: no weight or size, but the impression of bronze, early Gothic spires in a spare English countryside, and clangor.
+>We reset the device to r. There is a salmon cloud, and the pearl turns into a peal. It is the embodiment of a peal of bells: no weight or size, but the impression of bronze, early Gothic spires in a spare English countryside, and clangor.
 
-The snapping continues.
+When you pay attention, the peal really is nearly deafening.
 
 >We put the peal into the large carton.
 
-The snapping continues.
+The bells go on and on like a cheap alarm clock I once had.
 
 >Rectification Room
 This is where equipment is brought for a tune-up, or to have its legal limits reinstalled (or, on rare occasions, removed). Access to these abilities is tightly controlled by the Bureau.
@@ -2378,13 +2378,13 @@ The stairs up are here; the lecture room at the east. Immediately south is the G
 
 A large open carton stands against the wall right between Brown's lab door and the Rectification Room. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." The large carton contains a peal and a banana. 
 
-When you pay attention, the peal really is nearly deafening.
+The snapping continues.
 
 >We dip out a pea-sized quantity of gel and rub it gently onto the peal. With an audible SPLORT, the peal becomes a pearl. 
 
 The snapping continues.
 
->We get the pearl.
+>We take the pearl.
 
 The snapping continues.
 
@@ -2394,7 +2394,7 @@ That is, of course, if it doesn't attach to our skin and give us Lyme disease.
 
 The snapping continues.
 
->We reset the device to k. There is a mauve cloud, and the tick turns into a tic. It is manifested as a bit of reflective mylar that flashes and changes shape spasmodically. I can't look at it without wanting to blink and rub my eyes.
+>We reset the device to k. There is a flash of cerulean light, and the tick turns into a tic. It is manifested as a bit of reflective mylar that flashes and changes shape spasmodically. I can't look at it without wanting to blink and rub my eyes.
 
 The snapping continues.
 
@@ -2532,7 +2532,7 @@ The cock makes some attempts to flutter out of the synthesizer, but doesn't get 
 
 >We reset the device to r. The pearl gives way to the now-familiar peal.
 
-The bells go on and on like a cheap alarm clock I once had.
+Clang, clang! goes the peal.
 
 The cock makes some attempts to flutter out of the synthesizer, but doesn't get much lift and gives up for the moment.
 
@@ -2569,9 +2569,9 @@ This big, slightly drab area holds such useful objects as the mailboxes and secr
 
 The printer also sits on the u-shaped desk. 
 
-The peacock ruffles its many feathers.
+The snapping continues.
 
->Waterstone looks at the peacock, briefly arrested by some thought. He gets a monocle like mine out of his drawer. He looks through it at the peacock, notes the pea and the cock; grins. He gets up and comes out of his office.
+>Waterstone looks at the peacock, briefly arrested by some thought. He gets a monocle like mine out of his drawer. He looks through it at the peacock, notes the cock and the pea; grins. He gets up and comes out of his office.
 
 "This is perfect," Waterstone says. "One more example to put into my talk — but I really should be going — should be able to get a ride from my wife — if I leave now — Here, you can have this if it interests you. I won't have time to use it." He sets an invitation down on the desk.
 
@@ -2584,13 +2584,13 @@ Before we can do anything, Waterstone pops his head back in. "What you did there
 
 And he pops back out.
 
-The snapping continues.
+The peacock ruffles its many feathers.
 
 >Time passes.
 
 The snapping continues.
 
->We get the invitation. It is a white card, like a wedding invitation, with swirly script lettering. "You are invited," it says, "to a demonstration of a new T-inserter not available to the general public — Serial Comma Day — Bureau of Orthography."
+>We pick up the invitation. It is a white card, like a wedding invitation, with swirly script lettering. "You are invited," it says, "to a demonstration of a new T-inserter not available to the general public — Serial Comma Day — Bureau of Orthography."
 
 Smaller, meaner sans-serif lettering across the bottom adds: "Bring this card for admission."
 
@@ -2600,7 +2600,7 @@ The peacock trills self-importantly.
 
 >We dip out a pea-sized quantity of gel and rub it gently onto the peacock. With an audible SPLORT, the peacock becomes a pea and a cock. 
 
-The snapping continues.
+The cock lets out a half-crow.
 
 >We squeeze out a pea-sized quantity of gel and rub it gently onto —
 
@@ -3223,9 +3223,11 @@ The tit clambers out of the T-inserter machine.
 
 The tit stares at us. Brock steps to the side to make room for the tit.
 
->The tit gives way to the now-familiar I.
+>There is a mad-scientist cackle, and the tit turns into an I. It's an abstract that looks like a bit of mirror. When I look at it I see Alex, my proper self, and not just restored to my usual body, but photo-retouched to be that bit smarter and freer of skin-blemishes, well-dressed. It's like looking in the mirror at reality as it should be.
 
-He runs a hand over the brass plate. "As our next trick we need to look at the stabilization performance," Brock says. "Inserters sometimes run into trouble if there's a case where the same base word could be expanded to multiple derivatives — for instance, if you S-inserted CREAM, it wouldn't know whether to make CREAMS or SCREAM or SCREAMS."
+You doubtless see yourself too — as you are, or perhaps as you want to be.
+
+He pauses, listening for noises outside. "As our next trick we need to look at the stabilization performance," Brock says. "Inserters sometimes run into trouble if there's a case where the same base word could be expanded to multiple derivatives — for instance, if you S-inserted CREAM, it wouldn't know whether to make CREAMS or SCREAM or SCREAMS."
 
 >There is a loud and satisfying pop from the machine as it turns the I into an it. There now: the T-inserter has constructed both tit and it. Not very stable, it seems. Slango will be interested to know that.
 
@@ -3762,9 +3764,9 @@ You plug the power cord firmly into the wall socket. Both ends of the power cord
 
 A very substantial hunk of metal with a ring at the top end, suitable for attachment to a hook or rope.
 
->You pick up the counterweight.
+>You take the counterweight.
 
->You make the hike. 
+>You hike. 
 
 Tunnel through Chalk
 This passage has been cut through natural cliff rock and looks older than the Bureau itself. The walls are rough-hewn, exposing sedimentary strata. Here and there it looks as though someone has actually excavated a favored rock or relic.
@@ -3773,11 +3775,9 @@ Blocking the far end of the corridor is a metal portcullis. It is currently lowe
 
 You can go east through the portcullis (closed) and up to the Surveillance Room from here.
 
-There's a faint tang of salt air.
-
 >You hang the counterweight on the hook. The portcullis shifts slightly but doesn't rise on its own. Perhaps with a little help, though.
 
-There's a faint tang of salt air.
+A breeze along the passage stirs the dust.
 
 >You open the portcullis.
 
@@ -3787,7 +3787,7 @@ At a guess, this is a room hardly anyone ever visits, or even knows about. Thoug
 
 The metal portcullis guards the way back. It is currently raised. From the pulley above the portcullis hangs a counterweight. 
 
-On the inlaid desk are a stack of files and a rubber stamp. 
+There are a stack of files and a rubber stamp on the inlaid desk. 
 
 Air and sunlight stream in from the east.
 
@@ -3816,19 +3816,17 @@ Atlantida lowers the rifle, surprised. "Fused," she says. "Isn't that interestin
 
 Fused? We should be two pieces by now. Maybe she has an explanation? But you seem to be focused on her gun hand. How can you be so calm?
 
->First you try to remove everything useful from Atlantida. I don't dare invade the personal space of Atlantida.
-
-Since Atlantida contains the restoration gel rifle, it might be a bad idea to change her form. You might not be able to get the contents back.
+>The gun fires ruggedly into Atlantida, but is unable to make anything interesting out of a, a, a, d, i, l, n, t, and t. Atlantida recoalesces into her original form.
 
 Atlantida smiles with half a mouth. "You've arrived on a difficult day. In the ordinary course of things, I keep things quiet: the spirit of democracy, but none of the sordid wrangling and bribes and corruption and compromise. It's only when the spirit of the island itself is threatened, that we have to resort to such extreme measures."
 
-I'd like to ask whether the protesters feel the same way.
+You could ask whether the protesters feel the same way.
 
 >The gun fires ruggedly into the restoration gel rifle, which shatters and then reforms as the infertile astrologer. She's a woman with long grey hair, well past menopause.
 
 The infertile astrologer falls awkwardly to earth and looks around in confusion.
 
-"Mercury is in retrograde," comments the astrologer. "Expect disordered communications."
+"Today is a day of revelation," announces the astrologer.
 
 "Oh, bravo," says Atlantida. "Could you possibly have made a less useful ally?"
 
@@ -3860,7 +3858,7 @@ There's a distant sound of movement. Someone is looking for us.
 Private Solarium
 A window in the north wall, cut out through the cliff face, gives a view of tranquil sea under a darkening sky. 
 
-Left on a coffee table (as though waiting for maid service) is a silver tray. On the silver tray are some jacks, a cloth napkin, some crumbs, and a dirty coffee cup. 
+Left on a coffee table (as though waiting for maid service) is a silver tray. There are some jacks, a cloth napkin, some crumbs, and a dirty coffee cup on the silver tray. 
 
 There is an ebook reader on the chaise longue. 
 
@@ -3876,11 +3874,11 @@ That's what I thought.
 
 >You take the jacks.
 
->You reset the device to s. There is a distinct spearmint flavor, and the jacks turn into a jack. A heavy-duty jack, suitable for raising cars or other substantial objects.
+>You reset the device to s. There is a pink cloud, and the jacks turn into a jack. A heavy-duty jack, suitable for raising cars or other substantial objects.
 
->You hike to Personal Apartment. There you try propping the portcullis with the jack.
+>You make the quick walk to Personal Apartment. There you try propping the portcullis with the jack.
 
-Next you make the short walk. 
+Then you have a short walk. 
 
 Workshop
 A room whose importance is obvious from how clean it is and how little furniture it is allowed to have.
@@ -3905,7 +3903,7 @@ She gets to her feet.
 
 I'd like to ask how to fix the fusion.
 
->It's a short hike. 
+>It's a quick walk. 
 
 Personal Apartment
 At a guess, this is a room hardly anyone ever visits, or even knows about. Though the ceiling and one wall are bare cave, the rest has been paneled and  graciously decorated in the style of the end of the 18th century. Oil paintings on the walls depict great men and women of Atlantis gone by: Phyllida Shaply, Amelia Landison, Clarence Arbot, Jon Rosehip. An antique bed stands in the center of the room.
@@ -3920,7 +3918,7 @@ Air and sunlight stream in from the east.
 
 Someone is coming into the workshop upstairs. There's at most a few seconds before they'll be down the tunnel.
 
->You take the jack.
+>You pick up the jack.
 
 The portcullis crashes shut.
 
@@ -3935,7 +3933,7 @@ A window in the north wall, cut out through the cliff face, gives a view of tran
 
 Left on a coffee table (as though waiting for maid service) is a silver tray. There are a cloth napkin, some crumbs, and a dirty coffee cup on the silver tray. 
 
-On the chaise longue is an ebook reader. 
+There is an ebook reader on the chaise longue. 
 
 From the other room, the noises make it sound as though someone is using a metal torch to dismantle the portcullis bar by bar.
 
@@ -3971,7 +3969,7 @@ Slango has come out, though he's standing well back from the roc, which is surve
 
 Fixed on the roof above the entry to the navigation area is a white object that looks a little like an igloo. It is the communication unit that handles the yacht's wifi connection. 
 
-Slango gels the rock easily enough. Then he and Brock turn the restoration gel on us. Slango is determined to separate you from me before he has a real talk with either of us; and it's not until a number of swipes in that he realizes how wrong things are.
+Slango gels the roc easily enough. Then he and Brock turn the restoration gel on us. Slango is determined to separate you from me before he has a real talk with either of us; and it's not until a number of swipes in that he realizes how wrong things are.
 
 "This isn't working," he remarks, tossing the gel and washcloth aside.
 
