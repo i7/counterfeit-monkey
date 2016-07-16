@@ -239,13 +239,17 @@ Setting action variables for waving the letter-remover device at an object which
 
 The disappointment text is some text that varies.
 
-To decide what thing is the substitute from (p-list - a list of things) (this is the intelligent substitution rule):
-	let P be the number of entries in p-list;
-	if P is greater than 1:
+[When creating something new by letter-removing, the code could previously pick an object from the repository that was already part of another "creation chain", i.e. it was already proffered by another object. This would make the resulting item part of two different creation chains, which could make it disappear out of your hand when you gelled or letter-transformed something seemingly unrelated. (Though in practice I only saw this happen with the as.) The rule below avoids this by picking a preferred object from a list of matches.]
+
+[The jury is still out on whether this could ever happen when using the other letter-transformation tools.]
+
+To decide what thing is the substitute from (matchlist - a list of things) (this is the intelligent substitution rule):
+	let L be the number of entries in matchlist;
+	if L is greater than 1:
 		let high-scorers be a list of things;
 		let high-score be 0;
-		repeat with N running from 1 to P:
-			let contender be entry N in p-list;
+		repeat with N running from 1 to L:
+			let contender be entry N in matchlist;
 			let scr be 500;
 			let prof-list be the list of things that proffer contender;
 			remove contender from prof-list, if present;
@@ -254,7 +258,7 @@ To decide what thing is the substitute from (p-list - a list of things) (this is
 				[Something else proffers the contender. Don't choose this.]
 			if the first thing held by contender is something:
 				increase scr by 100;
-				[The contender contains something]
+				[The contender contains something. Prefer this.]
 			if contender is r-abstract and the letter-remover is not upgraded:
 				decrease scr by 100;
 			if contender is a person and the letter-remover is not creature-enabled:
@@ -262,7 +266,7 @@ To decide what thing is the substitute from (p-list - a list of things) (this is
 			if scr is high-score:
 				add contender to high-scorers;
 			otherwise:
-				[This is the new high-score. Clean out the old ones.]
+				[This is the new highest score. Clean out the old ones.]
 				if scr is greater than high-score:
 					now high-score is scr;
 					now high-scorers is {};
@@ -271,7 +275,7 @@ To decide what thing is the substitute from (p-list - a list of things) (this is
 		[Choose an object from those with the highest score]
 		decide on entry 1 in high-scorers;
 	otherwise:
-		decide on entry 1 in p-list.
+		decide on entry 1 in matchlist.
 
 [Check waving the letter-remover at a foreign-tongued thing:
 	say "[The letter-remover] squeaks as though frightened[one of]. Apparently encountering objects that aren't in English generates its own alarm tone[or] by the foreign-language [second noun][stopping]." instead. ]
