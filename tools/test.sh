@@ -11,7 +11,7 @@ touch testing.glkdata
 
 testfile=("$@")
 
-#A default file name if none is given as parameter
+# A default file name if none is given as parameter
 if [ -z "$testfile" ]; then
 	testfile="command scripts/test_me.txt"
 fi
