@@ -377,7 +377,7 @@ The man departs after her.";
 	remove the skit from play. ]
 
 Instead of someone going to a room which is not the Rotunda in the presence of the secretary when the person asked does not enclose the pass:
-	if the player can see the actor:
+	if the actor is marked-visible:
 		say "'Pass?' demands the secretary in a bored voice. [The person asked] shrugs and goes no further."
 
 Instead of going to a room which is not the Rotunda in the presence of the secretary when the player does not enclose the pass and the player is not allowed:
@@ -815,7 +815,7 @@ Every turn when Cold Dilemma is happening and the time since Cold Dilemma began 
 
 Definition: a person is human if it is not an animal.
 
-Every turn when Cold Dilemma is happening and the player can see someone human (called the victim) who is not the player:
+Every turn when Cold Dilemma is happening and there is someone human (called the victim) who is not the player enclosed by location:
 	if victim is Brock:
 		say "You're silent. I'm not letting you act again. You're not stopping me.
 

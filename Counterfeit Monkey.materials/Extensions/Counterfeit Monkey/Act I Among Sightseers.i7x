@@ -48,7 +48,7 @@ Sanity-check locking the temporary barrier with something:
 	say "[We][']d need to set [the code-lock] to some random number." instead.
 
 Sanity-check locking keylessly the temporary barrier:
-	if the code is visible:
+	if the code is marked-visible:
 		try setting the code-lock to "333" instead;
 	say "[We][']d need to set [the code-lock] to some random number." instead.
 
@@ -84,7 +84,7 @@ Understand "use code" as code-entering. Understand "enter code" as code-entering
 Code-entering is an action applying to nothing.
 
 Check code-entering:
-	unless the player can see the code-lock:
+	unless the code-lock is marked-visible:
 		say "There's nothing here on which to enter a code." instead.
 
 Carry out code-entering:
@@ -497,7 +497,7 @@ An instructional rule (this is the teach more compass directions rule):
 	let way be nothing;
 	if an unvisited room (called goal) is adjacent:
 		let way be the best route from the location to the goal;
-	otherwise if the player can see an open door (called portal):
+	otherwise if there is a marked-visible open door (called portal):
 		let far side be the other side of the portal;
 		let way be the best route from the location to the far side;
 	otherwise:
@@ -691,7 +691,7 @@ Carry out examining small children:
 
 Some small children are a person in Park Center. Understand "child" or "boy" or "girl" or "sibling" as the small children. The description is "They look small and harmless, but you're probably right that they have sticky hands." The children are scenery.
 
-Every turn when the small children can see the hoses and the location is Park Center:
+Every turn when the location of the small children encloses the hoses and the location is Park Center:
 	if a random chance of 1 in 2 succeeds:
 		say "[one of]A little boy[or]A small girl[at random] [one of]tries to catch the spraying hosewater in an open mouth[or]pushes a sibling into the path of the water[or]leaps gleefully through the arc of water[at random].";
 		now the description of the small children is "Most of them are now sopping wet, and loving it.";
@@ -702,7 +702,7 @@ There's a bang, a last glittering fan of water in the air.[paragraph break]";
 			gel-convert the hoses;
 			say "As for the Officer, she's already speaking into her radio as she turns away.".
 
-Every turn when the small children can see the ho and the location is Park Center:
+Every turn when the location of the small children encloses the ho and the location is Park Center:
 	say "It isn't but a few seconds before a watchful parent notices the ho strutting around and goes to report her.
 
 She is too stupid [--] as a constructed person [--] to put up much resistance when an officer shows up to escort her away.";
@@ -2304,7 +2304,7 @@ Instead of doing something to the pink door:
 	say "Walking into my parents['] house is the action perhaps most likely to get us caught."
 
 Rule for printing the name of the pink door:
-	if the player can see the pink door, say "door here";
+	if the the pink door is marked-visible, say "door here";
 	otherwise say "door of my parents['] villa".
 
 [Because we need to stop you so that you can see the scene with Dad if you were otherwise just going to be passing through:]
@@ -2632,9 +2632,9 @@ Report building:
 	say "It would be madness to spend long on such projects when [we] have so much else to be doing, but [we] do, for old times['] sake (mine, at least), construct a couple of hasty cylindrical turrets and a protective wall of sorts."
 
 At the time when sandcastle washes away:
-	if the sandcastle is unbuilt and the player can see the sandcastle:
+	if the sandcastle is unbuilt and the sandcastle is marked-visible:
 		say "The waves wash away all but the faintest traces of the sandcastle.";
-	otherwise if the player can see the sandcastle:
+	otherwise if the sandcastle is marked-visible:
 		say "[if the noun is the sandcastle or the second noun is the sandcastle]But our efforts are in vain, because an[otherwise]An[end if] especially forward wave slides up the beach and demolishes [if the noun is the sandcastle or the second noun is the sandcastle]the whole construction[otherwise]our poor sandcastle[end if].";
 	now the sandcastle is unbuilt;
 

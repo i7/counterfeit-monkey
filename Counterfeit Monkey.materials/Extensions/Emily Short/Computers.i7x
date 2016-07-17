@@ -190,10 +190,10 @@ A search engine is a kind of software. Understand "search box" or "search" or "s
 
 Understand "look up [text] on/in [something]" as consulting it about (with nouns reversed).
 
-Understand "search for [text]" as text-searching when the player can see a switched on computer which is running a search engine. Text-searching is an action applying to one topic.
+Understand "search for [text]" as text-searching when a switched on computer which is running a search engine is marked-visible. Text-searching is an action applying to one topic.
 
 Carry out text-searching the topic understood (this is the divert searching to input reply rule):
-	if the player can see a switched on computer which is running a search engine (called the software chosen):
+	if a switched on computer which is running a search engine (called the software chosen) is marked-visible:
 		abide by the input handling rules for the software chosen.  
 
 Check someone text-searching (this is the block others searching for text rule):
@@ -355,19 +355,19 @@ To deliver (chosen message - text) to (chosen program - an email program):
 	repeat through the message table of the chosen program:
 		if message entry is chosen message: 
 			now the arrival time entry is the time of day; 
-			if the player can see the chosen program:
+			if the chosen program is marked-visible:
 				say "[new mail message of the chosen program][paragraph break]";
 
-Understand "read [text]" as email-reading when the player can see a switched on unprotected computer which is running an email program. Email-reading is an action applying to one topic.
+Understand "read [text]" as email-reading when a switched on unprotected computer which is running an email program is marked-visible. Email-reading is an action applying to one topic.
 
 Carry out email-reading the topic understood (this is the divert email reading to input reply rule):
-	if the player can see a switched on unprotected computer which is running an email program (called the chosen software): 
+	if a switched on unprotected computer which is running an email program (called the chosen software) is marked-visible:
 		abide by the input handling rules for the chosen software.  
 
 Check someone email-reading (this is the block others reading email rule):
 	stop the action.
 
-Understand "reply to [text]" or "answer [text]" as email-replying when the player can see a computer which is running an email program. Email-replying is an action applying to one topic.
+Understand "reply to [text]" or "answer [text]" as email-replying when a computer which is running an email program is marked-visible. Email-replying is an action applying to one topic.
 
 Check email-replying (this is the block replying to email rule):
 	say "[We] [can't] think of any good response." (A) instead.
@@ -376,14 +376,14 @@ Check someone email-replying (this is the block others replying to email rule):
 	stop the action.
 
 Check email-replying (this is the refuse to reply to nonexistent messages rule):
-	repeat with chosen software running through visible email programs:
+	repeat with chosen software running through marked-visible email programs:
 		if the topic understood is a topic listed in the message table of the chosen software:
 			if there is an arrival time entry: 
 				make no decision;
 	say "[regarding the noun]No such message [are] available." (B) instead.
 
 Carry out email-replying (this is the mark messages replied rule):
-	repeat with chosen software running through visible email programs:
+	repeat with chosen software running through marked-visible email programs:
 		if the topic understood is a topic listed in the message table of the chosen software:
 			if there is an arrival time entry: 
 				now the answered entry is true;
@@ -1018,7 +1018,7 @@ We make the ATM a generic computer that can't be turned on or off. We create the
 	Understand "insert [something]" as inserting it into.
 	
 	Rule for supplying a missing second noun when inserting something into:
-		if the slot is visible:
+		if the slot is marked-visible:
 			now the second noun is the slot;
 		otherwise:
 			say "There is no obvious place to insert [the noun]." instead.

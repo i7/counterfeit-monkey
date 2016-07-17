@@ -80,7 +80,7 @@ Before approaching the Aquarium when the Counterfeit Monkey is unvisited:
 	say "I'm sure that would be interesting under other circumstances, but [we] have an appointment to keep." instead.
 
 
-Before going to the Aquarium when player can see the aquarium-closed-sign:
+Before going to the Aquarium when the aquarium-closed-sign is marked-visible:
 	say "[rejection-from-aquarium]" instead.
 
 Before approaching the Aquarium when the aquarium-closed-sign:
@@ -1131,7 +1131,7 @@ A distant stuff rule when the person asked is the All-Purpose-Officer:
 Every turn when the player is in Traffic Circle:
 	if the teenagers are in the location:
 		say "[one of]'Go ahead, put us in Cold Storage!' shouts the defiant teenager. 'I'm happy to sleep through all this shit and wake up when we have jet packs and a government that respects the rights of its people.'[or]The nervous teenager looks unhappy. 'We won't get out of here until our families are all dead and global warming has reduced Atlantis to three square feet of hilltop.'[or]The nervous teenager struggles against her bonds.[or]One of the other protesters tries to free the teenagers while the All-Purpose Officer isn't paying attention, but the bonds are too strong.[or]The teenagers look at us rather desperately.[stopping]";
-	if All-Purpose-Officer can see an unsuitable thing (called the target) which is enclosed by the giant Atlantida statue:
+	if All-Purpose-Officer is enclosed by Traffic Circle and an unsuitable thing (called the target) is enclosed by the giant Atlantida statue:
 		if the target is the live branch and the All-Purpose-Officer carries the restoration-gel rifle:
 			try the All-Purpose-officer shooting the live branch with the restoration-gel rifle;
 			make no decision;

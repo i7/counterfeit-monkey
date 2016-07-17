@@ -287,7 +287,7 @@ Every turn during Boar Mating:
 
 [The boar attack is based on several accounts of real life attacks in which the boar repeatedly rushed the victim (often unprovoked), gashing in several places. The most serious wounds generally are abdominal wounds inflicted after the boar has knocked the victim down. It would be more true to life if the boar also left gashes in the protagonist's leg in the process of knocking her down, but I decided to skip that because I didn't want to deal with a game state in which the protagonist was wounded but not dead: it would have needlessly complicated the writing of the end-game to no interesting narrative effect.]
 
-Boar Attack is a recurring scene. Boar Attack begins when the boar is enclosed by location and the suid is marked invisible. Boar Attack ends in relief when the boar is marked invisible. Boar attack ends in distraction when the boar can see the suid. Boar Attack ends in death when the time since Boar Attack began is 3 minutes.
+Boar Attack is a recurring scene. Boar Attack begins when the boar is enclosed by location and the suid is marked invisible. Boar Attack ends in relief when the boar is marked invisible. Boar attack ends in distraction when the location of the boar is the location of the suid. Boar Attack ends in death when the time since Boar Attack began is 3 minutes.
 
 Every turn during Boar Attack:
 	let T be the time since Boar Attack began;

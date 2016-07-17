@@ -144,7 +144,7 @@ Section - Applicable Examples
 To say get noun example: [say "FLOWER, for example".]
 	let noun_example be text;
 	if the number of visible things > 0:
-		now noun_example is "[random visible thing]";
+		now noun_example is "[random marked-visible thing]";
 	otherwise:
 		now noun_example is "flower";
 	say "[noun_example in upper case]".
