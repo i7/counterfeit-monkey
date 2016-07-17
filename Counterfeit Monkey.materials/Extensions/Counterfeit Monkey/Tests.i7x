@@ -286,12 +286,13 @@ Understand "powerup" as supplying power. Supplying power is an action out of wor
 
 Carry out supplying power:
 	now the boiler is switched on;
-	move the power cord to the Workshop;
-	repeat with the target plug running through massive plugs:
-		if nothing is plugged into the dais socket:
-			now the target plug is plugged into the dais socket;
-		otherwise:
-			now the target plug is plugged into the wall socket.
+	if a massive plug is free:
+		move the power cord to the Workshop;
+		repeat with the target plug running through massive plugs:
+			if nothing is plugged into the dais socket:
+				now the target plug is plugged into the dais socket;
+			otherwise:
+				now the target plug is plugged into the wall socket.
 
 Section 2 - Listwriters
 
