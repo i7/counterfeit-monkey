@@ -14,3 +14,7 @@
 *.tiff
 *Settings.plist
 *Inform\ Map.eps
+tools/diff.txt
+tools/transcript.txt
+tools/git
+tools/glulxe
