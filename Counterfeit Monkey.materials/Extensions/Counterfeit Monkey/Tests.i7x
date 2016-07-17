@@ -610,7 +610,8 @@ Carry out pounding all-lists:
 	let D be 0;
 	repeat with obj running through L:
 		let N1 be printed name of obj;
-		let D1 be the number of words in description of obj; [checking the printed name and the number of words in description seems to be the best way to see if two objects are identical instances of the same kind, and only fails for the tent(s) because of the random description.]
+		let D1 be the number of words in description of obj;
+	[checking the printed name and the number of words in description seems to be the best way to see if two objects are identical instances of the same kind, and only fails for the tent(s) because of the random description.]
 		unless obj is last or (N1 is N and D1 is D):
 			add obj to L2;
 			now last is obj;
