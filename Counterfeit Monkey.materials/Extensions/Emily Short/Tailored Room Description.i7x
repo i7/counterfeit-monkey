@@ -1,4 +1,4 @@
-Version 13/160601 of Tailored Room Description by Emily Short begins here.
+Version 13/160717 of Tailored Room Description by Emily Short begins here.
 
 "An extension to go with Room Description Control, providing a different style of room description than the default. Parenthetical remarks such as (open) and (in which are...) are omitted in favor of full English sentences. Removes the requirement for Text Variations."
 
@@ -248,7 +248,7 @@ current-NE-table is a table-name that varies. The current-NE-table is the Table 
 
 Table of Adjacent Objects
 disclosure
-", alongside [a list of mentionable things held by the current-exterior]. "
+", alongside [a list of mentionable things *in the current-exterior]. "
 
 Table of Connectives
 disclosure
@@ -270,7 +270,7 @@ current-room-content-table is a table-name that varies. current-room-content-tab
 
 Table of Room Content Disclosures
 disclosure 
-"You can [optional also]see [a list of mentionable things in the current-subject] [if current-subject is the location]here[otherwise]in [the current-subject][end if]. ".
+"You can [optional also]see [a list of mentionable things *in the current-subject] [if current-subject is the location]here[otherwise]in [the current-subject][end if]. ".
 
 current-person-content-table is a table-name that varies. current-person-content-table is the Table of Person Content Disclosures.
 
@@ -300,31 +300,31 @@ current-container-content-table is a table-name that varies. current-container-c
 
 Table of Container Content Disclosures
 disclosure
-"[The current-subject] [optional also]contain[s] [a list of mentionable things in the current-subject]. "
-"In [the current-subject] [is-are a list of mentionable things in the current-subject]. "
-"There [mentionable-are] [optional also][a list of mentionable things in the current-subject] in [the current-subject]. "
+"[The current-subject] [optional also]contain[s] [a list of mentionable things *in the current-subject]. "
+"In [the current-subject] [is-are a list of mentionable things *in the current-subject]. "
+"There [mentionable-are] [optional also][a list of mentionable things *in the current-subject] in [the current-subject]. "
 
 
 current-supporter-content-table is a table-name that varies. current-supporter-content-table is the Table of Supporter Content Disclosures.
 
 Table of Supporter Content Disclosures
 disclosure 
-"On [the current-subject] [is-are a list of mentionable things on the current-subject]. "
-"There [mentionable-are] [optional also][a list of mentionable things on the current-subject] on [the current-subject]. "
+"On [the current-subject] [is-are a list of mentionable things *in the current-subject]. "
+"There [mentionable-are] [optional also][a list of mentionable things *in the current-subject] on [the current-subject]. "
 
 
 current-prementioned-supporters-table is a table-name that varies.  current-prementioned-supporters-table is the Table of Prementioned Supporters.
 
 Table of Prementioned Supporters
 disclosure
-"[The list of mentioned things which are on the current-subject] [mentioned-are] on [a current-subject][if current-subject supports something mentionable], which also hold[s] [a list of mentionable things on the current-subject][end if]. "  
+"[The list of mentioned things *in the current-subject] [mentioned-are] on [a current-subject][if current-subject supports something mentionable], which also hold[s] [a list of mentionable things *in the current-subject][end if]. "  
 
 
 current-prementioned-containers-table is a table-name that varies.  current-prementioned-containers-table is the Table of Prementioned Containers.
 
 Table of Prementioned Containers
 disclosure
-"[The list of mentioned things which are in the current-subject] [mentioned-are] in [a current-subject][if current-subject contains something mentionable], which also hold[s] [a list of mentionable things in the current-subject][end if]. " 
+"[The list of mentioned things *in the current-subject] [mentioned-are] in [a current-subject][if current-subject contains something mentionable], which also hold[s] [a list of mentionable things *in the current-subject][end if]. " 
 
 Section 5 - Excluding concealed items
 
@@ -386,7 +386,7 @@ Rules for disclosing exterior should ideally end with a period and a single spac
 The printing of an item's contents is managed by the disclosing contents activity. We can change the way this is handled by writing a new rule for disclosing contents of something. For instance:
 
 	Rule for disclosing contents of the vase when at least two things are in the vase:
-		say "[The list of things which are in the vase] are crammed together into [if the vase is mentioned][the vase][otherwise][a vase][end if]. "
+		say "[The list of things *in the vase] are crammed together into [if the vase is mentioned][the vase][otherwise][a vase][end if]. "
 
 Again, this rule should produce output ending in a period and space, allowing for further sentences to follow without pause.
 
@@ -406,13 +406,13 @@ Version 7 of Tailored Room descriptions moves to a new way of managing internal 
 
 	Table of Prementioned Containers
 	disclosure
-	"[The list of mentioned things which are in the current-subject] [mentioned-are] in [a current-subject][if current-subject contains something mentionable], which also hold[s] [a list of mentionable things in the current-subject][end if]." 
+	"[The list of mentioned things *in the current-subject] [mentioned-are] in [a current-subject][if current-subject contains something mentionable], which also hold[s] [a list of mentionable things *in the current-subject][end if]." 
 
 The disclosure entry here is a template used by the extension to create a viable sentence. One of these lines is selected at random from the table to use in each situation, which means that if we would like to diversify the range of sentence options, we can simply continue the table in our own code, as in
 
 	Table of Prementioned Containers (continued)
 	disclosure
-	"[The list of mentioned things which are in the current-subject] [mentioned-are] in [a current-subject], together with [a list of mentionable things in the current-subject][end if]." 
+	"[The list of mentioned things *in the current-subject] [mentioned-are] in [a current-subject], together with [a list of mentionable things *in the current-subject][end if]." 
 
 We may also swap these tables entirely for other tables of our own devising, as in
 
@@ -486,13 +486,13 @@ Example: * Boatman - A sample involving modified descriptions for items in an en
 		otherwise say "[The boatman] sits in [the rowboat], looking grim. [paragraph break]"
 
 	Rule for writing a paragraph about something while entering a container (called special-target):
-		say "In [the special-target] with you, you see [the list of mentionable things in the special-target]."
+		say "In [the special-target] with you, you see [the list of mentionable things *in the special-target]."
 	
 	Rule for writing a paragraph about a deeply dull thing which is in the rowboat when the player is in the rowboat:
-		say "In the bottom of the boat, you see [a list of deeply dull mentionable things which are in the rowboat]. [paragraph break]".
+		say "In the bottom of the boat, you see [a list of deeply dull mentionable things *in the rowboat]. [paragraph break]".
 	
 	Rule for writing a paragraph about a deeply dull thing which is in the Salt Lake:
-		say "Floating on the impossibly buoyant water: [a list of deeply dull mentionable things which are in the Salt Lake]. [paragraph break]".
+		say "Floating on the impossibly buoyant water: [a list of deeply dull mentionable things *in the Salt Lake]. [paragraph break]".
 
 	Test me with "get flipper / put flipper in rowboat / look / enter rowboat / get pole / look / get water / look / out / look / drop all / look / get in boat / look".
 
@@ -598,8 +598,8 @@ Example: ** Gobs of Mayonnaise - A scenario with various objects competing for o
 	On the table is a vase. In the vase is a flower.  
 
 	Rule for disclosing contents of the vase when at least two things are in the vase:
-		if something in the vase is mentioned, say "Besides [the list of mentioned things in the vase] you can see in the vase [a list of mentionable things in the vase]. ";
-		otherwise say "[The list of things which are in the vase] are crammed together into [if the vase is mentioned][the vase][otherwise][a vase][end if]. "
+		if something in the vase is mentioned, say "Besides [the list of mentioned things *in the vase] you can see in the vase [a list of mentionable things *in the vase]. ";
+		otherwise say "[The list of things *in the vase] are crammed together into [if the vase is mentioned][the vase][otherwise][a vase][end if]. "
 
 	On the table is a glass. In the glass is a treasure called a diamond. The flexible appearance of the diamond is "A sparkling, winking diamond commands your attention!"
 
