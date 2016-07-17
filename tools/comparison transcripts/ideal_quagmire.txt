@@ -17,7 +17,7 @@ Do you remember our name?
 
 Counterfeit Monkey
 A Removal by Emily Short
-Release 6 / Serial number 160714 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) 
+Release 6 / Serial number 160717 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) 
 
 
 Let's try to get a look around. I haven't been able to run our body without your help, but maybe now you're awake, it'll work better.
@@ -2015,14 +2015,15 @@ The achievements you have accomplished so far include:
 
   Finished tutorial mode
 
->We walk. 
+>[Random-number generator seeded with 1234.]
+>We make the short walk. 
 
 Samuel Johnson Basement
 Dank and malodorous: there are no windows down here, and the drainage is terrible.
 
 The stairs up are here; the lecture room at the east. Immediately south is the Graduate Student Office, and southwest is Professor Brown's office. The most interesting of all is the small door west, trying to look inconspicuous, but locked with a keycard lock: it's where the department stores its most dangerous licensed equipment.
 
-A large open carton stands against the wall right between Brown's lab door and the interesting door. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." The large carton contains a banana. 
+A large open carton stands against the wall right between Brown's lab door and the interesting door. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." In the large carton is a banana. 
 
 The snapping continues.
 
@@ -2051,7 +2052,7 @@ The back wall is dramatically decorated with bottled liquors of all sorts, from 
 
 What makes this place technically a drinks club rather than a bar is its license to serve letter-manufactured food and drink. A toolkit on the bar contains some screwdrivers, some gimlets, and some rusty nails, ready to be transformed into their respective cocktails.
 
-Aside from Mark at the bar, most of the patrons are seated at tables. 
+Mark notices someone he knows across the room, and waves. 
 
 The bartender and Mark are still talking about the homonym paddle. The other patrons are scattered around the room at small tables, drinking or talking among themselves. 
 
@@ -2076,22 +2077,20 @@ There's a crackling discharge of purple-toned lightning, and in place of the scr
 
 The snapping continues.
 
->We get the Screwdriver. A cocktail of fresh-squeezed orange juice and vodka. It is hardly the grandest of cocktails, but it will do.
-
-A businesswoman comes up to the bar for directions to the nearest restroom.
+>We pick up the Screwdriver. A cocktail of fresh-squeezed orange juice and vodka. It is hardly the grandest of cocktails, but it will do.
 
 The snapping continues.
 
->We have a brief drive over to Long Street South. There we pull easily into one of the available parking spots, since many people have now gone home.
+>It's a brief drive over to Long Street South. Then we pull easily into one of the available parking spots, since many people have now gone home.
 
-Next we hike. 
+After that we walk. 
 
 Language Studies Seminar Room
 They recently redid this room, and whoever picked the decorations had postmodern tastes.
 
-The bookshelves lining the walls contain the department library. On the bookshelf are The Problem of Adjectives, History of the Standards Revolution, and Lives of the Lexicographers. 
+The bookshelves lining the walls contain the department library. There are The Problem of Adjectives, History of the Standards Revolution, and Lives of the Lexicographers on the bookshelf. 
 
-A massive plexiglas case takes up one corner of the room. In the plexiglas case is a compact but high-powered late model synthesizer. 
+A massive plexiglas case takes up one corner of the room. The plexiglas case contains a compact but high-powered late model synthesizer. 
 
 The big table at the center of the room is an irregular polygon, with one chair pushed up to the shortest side. 
 
@@ -2131,7 +2130,7 @@ The snapping continues.
 
 The snapping continues.
 
->We make the quick hike. 
+>We have a short walk. 
 
 Long Street South
 Long Street is lined on each side with a double-row of tall, anemic palm trees that bend towards one another many feet overhead. We are now in the southern part of this long corridor, between the Canadian Embassy and Arbot Maps & Antiques.
@@ -2148,7 +2147,7 @@ The snapping continues.
 
 The snapping continues.
 
->We reset the device to h. The chard gives way to the card. This time it's the Magician. A man stands over a table of delicate instruments: letter-razors, reversing mirrors, decapitalization disambiguators. He is putting on a performance, though we cannot see his audience.
+>We reset the device to h. The chard gives way to the card. This time it's the Twins. They're male and female. A floating, sky-born figure above them is either choosing one or about to shoot one: it's hard to know what to make of the pointer or arrow it wields.
 
 The snapping continues.
 
@@ -2156,12 +2155,12 @@ The snapping continues.
 
 The snapping continues.
 
->It's a short walk. 
+>We walk. 
 
 Language Studies Seminar Room
 They recently redid this room, and whoever picked the decorations had postmodern tastes.
 
-The bookshelves lining the walls contain the department library. On the bookshelf are The Problem of Adjectives, History of the Standards Revolution, and Lives of the Lexicographers. 
+The bookshelves lining the walls contain the department library. There are The Problem of Adjectives, History of the Standards Revolution, and Lives of the Lexicographers on the bookshelf. 
 
 A massive plexiglas case takes up one corner of the room. In the plexiglas case is a compact but high-powered late model synthesizer. There are a key and a crossword in the compact but high-powered late model synthesizer. 
 
@@ -2177,7 +2176,7 @@ The snapping continues.
 
 The snapping continues.
 
->We get the crossword. It looks like it's been snipped out of Chard-Farmer's Weekly, but it hasn't been filled in at all.
+>We take the crossword. It looks like it's been snipped out of Chard-Farmer's Weekly, but it hasn't been filled in at all.
 
 The snapping continues.
 
@@ -2195,7 +2194,7 @@ The snapping continues.
 
 [Your score has gone up by three points and is now fifty-seven.]
 
->We make the walk. 
+>We have a quick walk. 
 
 Samuel Johnson Basement
 Dank and malodorous: there are no windows down here, and the drainage is terrible.
@@ -2216,15 +2215,15 @@ Before we go through the door to the Rectification Room, it occurs to us that Pr
 
 The snapping continues.
 
->We reset the device to t. We get the letter.
+>We reset the device to t. We acquire the letter.
 
-There is a flash of psychedelic colors, and the letter turns into a leer. It is a good-humored, slightly-drunk kind of leer, but it's unmistakable.
+There is a pink cloud, and the letter turns into a leer. It is a good-humored, slightly-drunk kind of leer, but it's unmistakable.
 
 The snapping continues.
 
->We have a lengthy hike out from under the sycamores in the Oval and up Long Street as far as the Monumental Staircase. From there we have an invigorating climb up, with the view of the sea getting better and better as we go (but of course looking requires stopping to gaze back over our shoulder).
+>We hike out from under the sycamores in the Oval and up Long Street as far as the Monumental Staircase. From there we have an invigorating climb up, with the view of the sea getting better and better as we go (but of course looking requires stopping to gaze back over our shoulder).
 
-Next it's a brief walk from the kitschy splendor of the fair along the old walls and into the placid sunlight among the villas of the rich. 
+From there it's a short walk from the kitschy splendor of the fair along the old walls and into the placid sunlight among the villas of the rich. 
 
 Roget Close
 A pleasantly sheltered lane in which I learned to ride a bicycle, and where my friend Lucy used to live, before she and her parents moved off-island. Restrictions were looser even twenty years ago. Our old schoolhouse is just west of here.
@@ -2233,7 +2232,7 @@ If you look just north between the houses, you'll notice also the footpath down 
 
 The snapping continues.
 
-You have a fleeting thought of your crew's skill.
+Something makes you think of your crew's skill.
 
 >We put the leer on the pedestal.
 
@@ -2254,17 +2253,11 @@ The back wall is dramatically decorated with bottled liquors of all sorts, from 
 
 What makes this place technically a drinks club rather than a bar is its license to serve letter-manufactured food and drink. A toolkit on the bar contains some screwdrivers, some gimlets, and some rusty nails, ready to be transformed into their respective cocktails.
 
-Aside from Mark at the bar, most of the patrons are seated at tables. 
+Mark sips his gin and tonic and surveys the other patrons. 
 
-The bartender is pouring tequila shots for a guest. 
+The bartender is cleaning her homonym paddle for future use. 
 
-"Hi there," the bartender says.
-
-The snapping continues.
-
->"Check this out," we say, holding out the reel for inspection.
-
-She shrugs good-naturedly, hits the reel with the paddle, and grins at us. We look down at what we're holding: A reel of film, unlabeled.
+"Hi," the bartender says.
 
 Mark looks thoughtfully into his gin and tonic. "I hear that sometimes the Bureau turns people into inanimate objects as a criminal sentence. Is that true?"
 
@@ -2276,9 +2269,15 @@ For the first time, the bartender looks uncomfortable. "I just pour the drinks,"
 
 The snapping continues.
 
->We make the fair walk to the Monumental Staircase. From there we have a healthy climb up, with the view of the sea getting better and better as we go.
+>"Here, have a look at this," we say.
 
-Next it's a quick walk pushing through the dense crowds. 
+She shrugs good-naturedly, hits the reel with the paddle, and grins at us. We look down at what we're holding: A reel of film, unlabeled.
+
+The snapping continues.
+
+>It's a healthy walk to the Monumental Staircase. From there we have a healthy climb up, with the view of the sea getting better and better as we go.
+
+Then we have a brief hike among the booths of the fair. 
 
 Screening Room
 Whatever is scheduled for later showing has not started yet, and is probably not destined to start for some time; at any rate, the screen is blank and no audience has yet assembled.
@@ -2304,9 +2303,9 @@ We flip the switch. The projector comes to life with a hum. There's the usual fl
 
 
 Achievement accomplished: Lucius Quagmire award for viewing unusual films!
-A jolly title card comes up, which reads "Ostereier".
+A jolly title card comes up, which reads "Huevos de pascua".
 
-The scene opens on a nurse in wartime uniform reading aloud from a small black book that looks much battered. Afterward, a teenaged boy finds an Atlantean flag — one of the old style from before the second World War — and tears it into strips.
+The scene opens on a farmer with calloused hands purchasing a set of paints. Afterward, a man in a black uniform sits skinning a brown rabbit. The film lingers over the separation of skin from flesh, and the glassy look in the dead rabbit's eyes.
 
 The snapping continues.
 

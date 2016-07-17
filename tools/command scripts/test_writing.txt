@@ -244,6 +244,7 @@ x sticky
 go to oval
 wave g-remover at sign
 score
+random-seed 1234
 go to samuel johnson basement
 x door
 x lock
