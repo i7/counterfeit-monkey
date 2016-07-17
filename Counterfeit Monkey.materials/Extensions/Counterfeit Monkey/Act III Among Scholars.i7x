@@ -422,7 +422,7 @@ It's my neighb[our], [Mrs] Parsnip, leaning out from her apartment above us. [Mr
 
 'Clear off or I'll call the police!' she shouts.";
 	say "[line break][command prompt]";
-	wait for any key;
+	custom-wait for any key;
 	say "[line break]...No, don't worry, I'll handle this.
 
 I step us back and stare up at her. 'I'm a friend of Alex,' I say. 'He called and asked me to stop by because he thought he left the stove on. Said he climbs in the window all the time when he gets locked out.'
@@ -1262,7 +1262,7 @@ He locks his door again and goes out. I think he is actually humming something."
 	now the small laptop is nowhere;
 	complete "Speak to Professor Waterstone and get his invitation to see the T-inserter";
 	say "[line break]>";
-	wait for any key;
+	custom-wait for any key;
 	say "[line  break]Before we can do anything, Waterstone pops his head back in. 'What you did there [--] not strictly within the rules. But I admire, shall we say, [i]Realpolitik[/i]. You'll go far. Ignore Brown, but you'd probably do that anyway. Never talk to Higgate at all. I will see you later.'[paragraph break]And he pops back out.";
 	rule succeeds.
 

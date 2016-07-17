@@ -5423,7 +5423,7 @@ Rule for beat-producing when atlantida-woman is the current interlocutor and atl
 
 When Atlantida chat begins:
 	[move atlantida-woman to the location;]
-	pause the game;
+	custom-pause the game;
 	set the current interlocutor to atlantida-woman;
 	queue stop-there as immediate obligatory;
 	queue gel-shot as postponed obligatory;

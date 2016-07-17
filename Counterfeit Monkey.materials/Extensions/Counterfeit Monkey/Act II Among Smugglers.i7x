@@ -39,14 +39,14 @@ As we move down the street, we can see police with riot gear starting to cut off
 A woman on the curb bangs on the hood of our car. 'You! You're guilty!' she says, pointing at us.
 
 I nearly have a heart attack, but she pulls back. 'We are [i]all[/i] guilty!' shouts the voice. 'If we really objected to what is done in our name, we would storm the Bureau[--]'";
-	wait for any key;
+	custom-wait for any key;
 	say "[paragraph break]There's a bright light and a catastrophic bang and world goes eerily silent. The protesters are gone. The cars on the street are still moving, slowly.
 
 A policeman in blue is cuffing a single old woman in a Not Guilty shirt. Her eyes meet ours. They're wild with fury and fear and simple madness.
 
 And that, my friend, is why civil disobedience doesn't tend to work around here. We've just seen a depluralization.";
 	remove protesters from play;
-	wait for any key. ]
+	custom-wait for any key. ]
 
 
 Deep Street is northeast of Roundabout.
@@ -454,7 +454,7 @@ Every turn when the trap-door is open and the trap-door is not wedged by somethi
 		say "The trap-door makes a creaking noise and slams shut again";
 	if the player is in the Crawlspace:
 		say ". I DO NOT LIKE being in the dark in a confined space with potential rats. Sorry, I'm getting us out of here. You can come back later.";
-		wait for any key;
+		custom-wait for any key;
 		try going up;
 	otherwise if Crawlspace is not visited:
 		say ". They must prop it open when they use it.";
@@ -1240,7 +1240,7 @@ A policeman in blue is cuffing a single old woman in a Not Guilty shirt. Her eye
 And that, my friend, is why civil disobedience doesn't work around here. We've just seen a deplural[ization][if the teenagers are not in the location].
 
 At least the teenagers got away[end if].";
-	wait for any key;
+	custom-wait for any key;
 	say "[paragraph break]You know they'll be restored in a few hours, but not confined to that singular form. Most of them will probably get off with fines[if the teenagers are in the location], except the teenagers, who have committed specific crimes against the majesty of the state[end if]. You know it's unlikely anyone has died just there. You know that within minutes, the international news organ[ization]s will be running satellite pictures of a 'suspected deplural[izing] event' on the island.
 
 It's not, so to speak, our business any more.";

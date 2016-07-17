@@ -1,0 +1,467 @@
+y
+andra
+tutorial off
+random-seed 1234
+pauses off
+hard
+y
+n
+e
+wave x-remover at codex
+x code
+set barrier to 305
+go to heritage corner
+wave y-remover at army
+wave s-remover at members
+get arm
+get member
+go to midway
+wave p-remover at apple
+wave e-remover at tube
+open tub
+get ale
+go to church garden
+wave h-remover at thicket
+get all
+go to hostel
+e
+up
+x lock
+show arm to girl
+gel lock
+open locker
+get all from locker
+wave l-remover at plans
+wave s-remover at pans
+go to cinema
+give ticket
+w
+get all
+open pack
+wear monocle
+go to patriotic chard-garden
+get chard
+look
+wave s-remover at soil
+get oil
+go to hesychius
+buy yam
+go to close
+put yam on spinner
+go to beach
+get sage
+wave e-remover at sage
+go to roget close
+get all from spinner
+put sag on spinner
+get gas
+go to high street
+z
+go to high street
+wave h-remover at chard
+wave d-remover at card
+put gas in car
+wave b-remover at garbage
+talk to mechanic
+ask mechanic about car
+give oil to mechanic
+go to counterfeit monkey
+e
+take off monocle
+put all in backpack
+close backpack
+go to counterfeit monkey
+open backpack
+y
+go to outdoor
+open backpack
+look
+wave p-remover at spill
+get sill
+go to counterfeit monkey
+talk to barman
+ask about slango
+challenge parker about the rum
+ask about paste
+ask how
+play
+show sill to barman
+put gel on sill
+wave s-remover at spill
+show pill to barman
+put gel on pill
+wave p-remover at spill
+get sill
+get paste
+go to tin hut
+prop trap door with sill
+down
+open crate
+get all
+wave r-remover at crate
+get cate
+up
+get sill
+go to aquarium
+ask whether
+say who
+x contraband
+wave m-remover at modems
+wave s-remover at odes
+put gel on ode
+wave m-remover at modems
+wave s-remover at preamps
+wave p-remover at preamp
+put paste on ream
+put paste on odes
+ask whether
+encourage lena
+put gel on as
+go to counterfeit monkey
+x slango
+say who
+explain
+z
+a trouble
+complain
+look
+e
+go to convenience
+get out
+put paste on car
+get out
+z
+get rifle
+shoot tree
+drop rifle
+enter car
+go to oval
+go to convenience
+wave s-remover at sink
+get ink
+x hole
+look in hole
+look at ash through monocle
+smell ash
+gel ash
+get trash
+go to rotunda
+get bin
+go to antiques
+x maps
+get slangovia map
+buy slangovia map
+go to drinks club
+show legend to bartender
+x legend
+go to palm square
+w
+w
+s
+get problem of adjectives
+n
+t girlfriend
+claim
+z
+reassure
+n
+get key
+get ring
+s
+ne
+go to babel
+go to palm
+unlock gate with ring
+go to oval
+say no
+encourage
+ask how consciousness
+s
+se
+n
+ask why
+ask whether
+x printer
+open printer
+go to graduate student
+open fridge
+get cream
+wave c-remover at cream
+go to language studies department office
+put ream in printer
+close printer
+get draft
+w
+no
+ask how
+ask what
+ask about seminar
+t book
+put problem on shelves
+go to brown's lab
+ask what
+ask what
+ask how
+ask whether
+ask what
+ask why
+ne
+s
+x sticky
+go to oval
+wave g-remover at sign
+score
+go to samuel johnson basement
+x door
+x lock
+go to long street south
+get bag
+get jigsaw
+go to hotel
+y
+w
+show jigsaw to bartender
+get jigsaw
+go to seminar room
+cut case with jigsaw
+put key in synthesizer
+find car
+put gel on car
+wave h-remover at chard
+get card
+go to seminar room
+put card in synthesizer
+get crossword
+turn synthesizer on
+get keycard
+go to samuel johnson basement
+swipe card
+west
+put gel on as
+wave i-remover at pastis
+wave t-remover at pasts
+find synthesizer
+take all from synthesizer
+put pass in synthesizer
+put gel on crossword
+put word in synthesizer
+turn on synthesizer
+get password
+x it
+go to rectification room
+put gel on watch
+wave c-remover at swatch
+wave h-remover at swath
+put swat in carton
+go to rectification room
+turn on machine
+x password
+type password
+select 3
+put letter-remover in machine
+type password
+type 4
+put letter-remover in machine
+go to basement
+e
+get coat
+wave o-remover at coat
+find synthesizer
+put member in synthesizer
+put cat in synthesizer
+turn on synthesizer
+get camembert
+go to department office
+knock on waterstone's door
+z
+get invitation
+take off monocle
+get password
+go to tall street
+z
+z
+z
+z
+go to tall street
+e
+se
+gel shed
+get shred
+go to tall street
+blindfold me with shred
+put gel on password
+put gel on word
+hit figure with sword
+put paste on pass
+go to hotel
+put all in backpack
+get piece
+find synthesizer
+put piece in synthesizer
+get letter-remover
+get gel
+get pass
+get invitation
+get paste
+find synthesizer
+wave c-remover at chair
+get hair
+put hair in synthesizer
+turn on synthesizer
+get hairpiece
+put paste on hairpiece
+drop paste
+wear hairpiece
+go to bus station
+x schedule
+x shed
+remove v from dove
+put gel on doe
+go to rotunda
+take off monocle
+put all in backpack
+take pass
+close backpack
+s
+show pass to secretary
+e
+z
+z
+e
+e
+d
+n
+n
+w
+open pack
+get rock
+get hairpiece
+put gel on hairpiece
+put gel on hair
+open backpack
+wear monocle
+x rock
+remove monocle
+gel rock
+gel ale
+get apple
+put apple in t-inserter
+get applet
+put gel on applet
+wave p-remover at apple
+put ale in t-inserter
+put gel on tale
+wave p-remover at apple
+put ale in t-inserter
+get all from t-inserter
+wave e-remover at piece
+put pic in t-inserter
+gel pict
+get all
+e
+deny everything
+lay out
+deny
+z
+get pea
+wave e-remover at pea
+z
+gel stands
+yes
+ne
+n
+e
+put pass in punch
+get pass
+get chord
+wave h-remover at chord
+s
+press button
+get gun
+n
+gel lamb
+load gun
+shoot mirror
+w
+shoot odor
+open door
+n
+x fable
+gel fable
+x charts
+look up 1942 in cabinet
+look up 1982 in cabinet
+gel paperweight
+x paper
+x weight
+get all
+e
+down
+get counter
+up
+e
+e
+look in pane
+open station
+take balm
+shoot balm with gun
+put lamb in bucket
+look in pane
+get oboe
+w
+plug dais into wall
+set platform to synthesize
+put counter on platform
+put weight on platform
+turn on lever
+get counterweight
+go to tunnel
+put counterweight on hook
+open portcullis
+e
+x stamp
+z
+shoot atlantida with anagramming gun
+shoot rifle with anagramming gun
+gel atlantida
+gel astrologer
+shoot atlantida with rifle
+get atlantida
+e
+n
+yes
+x jacks
+take jacks
+wave s-remover at jacks
+go to workshop
+put atlantida on platform
+set platform to homonym
+turn on platform
+go to personal apartment
+take jack
+e
+n
+d
+x boulders
+wave q-remover at squid
+wave l-remover at bollard
+wave d-remover at board
+wave b-remover at boar
+get oar
+enter kayak
+drop all but oar
+n
+n
+score
+inventory utilitarian
+i
+get up
+open wardrobe
+fore
+wear sundress
+wear trousers
+wear turtleneck
+fore
+open cabinet
+x newspaper
+quit

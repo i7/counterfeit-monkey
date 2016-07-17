@@ -825,7 +825,7 @@ He looks puzzled. 'Aren't we safer together?'
 
 'No,' I say.[paragraph break]";
 		say "[command prompt]";
-		wait for any key;
+		custom-wait for any key;
 		say "[line break]'But[--]'[paragraph break]'Look, just trust me, this once,' we say.[paragraph break][The victim] [back] out the door. Loud sounds of an arrest ensue. I hear my father's voice, and two other people. Then finally the sounds die away.";
 		now Brock is nowhere;
 		now father is nowhere;
