@@ -1441,7 +1441,7 @@ Understand "swipe [something]" as taking.
 Understand "swipe [keycard]" as swiping. Swiping is an action applying to one thing.
 
 Check swiping:
-	if the player cannot see the keycard-reading lock:
+	if the the keycard-reading lock is marked invisible:
 		say "There's nothing here to read it with." instead.
 
 Carry out swiping:
