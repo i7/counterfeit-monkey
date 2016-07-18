@@ -991,7 +991,7 @@ Instead of launching the kayak in Open Sea:
 Instead of exiting in Open Sea:
 	say "Leaving the kayak at this juncture would only get us all wet. And I'm too tired for that right now."
 
-Instead of putting gel on the oar when the player is in the kayak:
+Instead of putting gel on the oar when the player is in the kayak and the location is Open Sea:
 	say "It would be extremely inconvenient to lose the oar at this juncture."
 
 Understand "drift" as waiting when the location is Open sea.
