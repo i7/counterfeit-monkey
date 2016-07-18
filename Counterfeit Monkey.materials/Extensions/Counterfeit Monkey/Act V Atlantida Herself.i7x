@@ -288,8 +288,7 @@ This is the open-security rule:
 	say "[We] select the surveillance program. It brings up a menu of possible camera views. [run paragraph on]";
 	try examining security-program.
 
-Understand "search [text]" or "search for [text]" as typing it on when the player can see a computer which runs a search engine.
-
+Understand "search [text]" or "search for [text]" as typing it on when a computer which runs a search engine is marked-visible.
 
 
 Test surveillance with "x computer / x screen / turn on computer / select security / select statue / click customs / click front exit / type tools exhibit / type interrogation rooms circuit / g / g / g /click cold storage / click porch / click dwelling / click north exit / click main / select requisitions / select power / select access / look up me in computer / search for me / search for alexandra / search for andra / search for slango / search for protest / search for arbot / search for pleice / search for lena / search for reports"
@@ -538,7 +537,7 @@ Definition: a thing is unhookable:
 [And to account for cases where you make an unhookable thing on the pulley via letter-manipulating something that was previously there:]
 
 Every turn when something unhookable is on the pulley (this is the portcullis empty rule):
-	if the player can see the pulley:
+	if the pulley is marked-visible:
 		say "[The list of unhookable things *in the pulley] [fall] to the ground.";
 	now every unhookable thing on the pulley is in Tunnel through Chalk.
 
@@ -558,7 +557,7 @@ Check putting something on the pulley when the pulley is non-empty:
 Every turn when the counterweight is not on the pulley and the portcullis is open (this is the portcullis fall rule):
 	unless something wedges the portcullis:
 		now the portcullis is closed;
-		if the player can see the portcullis:
+		if the portcullis is marked-visible:
 			say "The portcullis crashes shut."
 
 Check opening portcullis:
@@ -649,7 +648,7 @@ Instead of searching the stack of files:
 
 A rubber stamp is a thing on the inlaid desk. The description is "It is made to stamp two words: ETHICAL VETO. The discol[our]ation shows it has indeed been used, though not, perhaps, very recently."
 
-Understand "stamp [text]" as a mistake ("It seems unlikely that our tampering would go unnoticed.") when the player can see the rubber stamp.
+Understand "stamp [text]" as a mistake ("It seems unlikely that our tampering would go unnoticed.") when the rubber stamp is marked-visible.
 
 The oil-paintings are scenery in Personal Apartment. They are plural-named. The printed name is "[if looking]Oil[otherwise]oil[end if] paintings". Understand "oil" or "painting" or "paintings" or "portraits" or "portrait" as the oil-paintings. The description is "They look like originals. I have seen some of these portraits before, in books at school or in the museum, but was given to understand that they'd been stolen, leaving only photographs or replicas."
 
@@ -919,7 +918,7 @@ Check launching:
 
 Check launching:
 	if the player is not in the kayak:
-		if the player can see the kayak:
+		if the kayak is marked-visible:
 			try entering the kayak;
 			if the player is in the kayak:
 				make no decision;
@@ -927,7 +926,7 @@ Check launching:
 
 Check launching:
 	if the player does not carry the oar:
-		if the player can see the oar:
+		if the the oar is marked-visible:
 			try taking the oar;
 			if the player carries the oar:
 				make no decision;
@@ -1374,7 +1373,7 @@ When play begins (this is the setting up your bunk rule):
 	otherwise:
 		say "ERROR: found no leftmost drawer in Your Bunk!"
 
-Every turn when the player can see portholes:
+Every turn when portholes are in location:
 	if a random chance of 1 in 13 succeeds:
 		say "[one of]Odd patterns of light dance on the ceiling, reflected through the portholes from the water outside.[or]The yacht rolls gently under the influence of an especially strong wave.[or]The waves lap gently against the side of the ship.[or]Just outside the porthole, a seabird is visible resting on the waves; and then it floats on.[or]The wake of what must be quite a large ship raises the [i]True Macaque[/i] and then lowers her again.[as decreasingly likely outcomes]".
 

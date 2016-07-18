@@ -611,7 +611,7 @@ The screwdriver unlocks the plexiglas case.
 Some screws are a thing. The screws are plural-named. The description of the screws is "Heavy-duty flathead screws, each about an inch long[if the screws are part of the plexiglas case and the plexiglas case is lockable]. They aren't sealed over, so it would be possible to unscrew them, given a screwdriver[end if]."
 
 Instead of taking or turning the screws when the screws are part of the plexiglas case:
-	if the player can see the screwdriver:
+	if the screwdriver is marked-visible:
 		if the player is not carrying the screwdriver:
 			try taking the screwdriver;
 		if the player is not carrying the screwdriver:

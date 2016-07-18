@@ -535,7 +535,7 @@ When Fireworks begins:
 
 Every turn during Fireworks:
 	repeat through the Table of Pyrotechnics:
-		if the player can see the sky:
+		if the sky is in location:
 			say "[description entry][paragraph break]";
 		otherwise:
 			say "[noise entry][paragraph break]";

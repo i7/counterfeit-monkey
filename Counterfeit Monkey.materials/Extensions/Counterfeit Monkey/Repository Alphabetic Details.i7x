@@ -279,7 +279,7 @@ Report waving the letter-remover at the boar:
 	now boar is marked invisible;
 	try examining the generated object instead.
 
-Boar Mating is a recurring scene. Boar mating begins when the boar is marked-visible and the suid is marked-visible. Boar mating ends in disappointment when the boar cannot see the suid. Boar mating ends in death when the boar is marked invisible.
+Boar Mating is a recurring scene. Boar mating begins when the boar is marked-visible and the suid is marked-visible. Boar mating ends in disappointment when the boar is marked-visible and the suid is marked invisible. Boar mating ends in death when the boar is marked invisible.
 
 Every turn during Boar Mating:
 	say "[one of]The boar looks at us unpleasantly, but then the pleasing scent of the [suid] attracts it instead[or]The boar is circling the suid, as near as it can in this awkward space[or][one of]The boar follows the suid around, its nose at her butt[or]The suid is trying to walk away from the boar[or]The boar makes an attempt to mount the suid, but slips on the sand[or]The suid squeals indignantly and walks away from the boar, who follows[at random][stopping]."
@@ -287,7 +287,7 @@ Every turn during Boar Mating:
 
 [The boar attack is based on several accounts of real life attacks in which the boar repeatedly rushed the victim (often unprovoked), gashing in several places. The most serious wounds generally are abdominal wounds inflicted after the boar has knocked the victim down. It would be more true to life if the boar also left gashes in the protagonist's leg in the process of knocking her down, but I decided to skip that because I didn't want to deal with a game state in which the protagonist was wounded but not dead: it would have needlessly complicated the writing of the end-game to no interesting narrative effect.]
 
-Boar Attack is a recurring scene. Boar Attack begins when the boar is enclosed by location and the suid is marked invisible. Boar Attack ends in relief when the boar is marked invisible. Boar attack ends in distraction when the boar can see the suid. Boar Attack ends in death when the time since Boar Attack began is 3 minutes.
+Boar Attack is a recurring scene. Boar Attack begins when the boar is enclosed by location and the suid is marked invisible. Boar Attack ends in relief when the boar is marked invisible. Boar attack ends in distraction when the boar is marked-visible and the suid is marked-visible. Boar Attack ends in death when the time since Boar Attack began is 3 minutes.
 
 Every turn during Boar Attack:
 	let T be the time since Boar Attack began;
@@ -1278,7 +1278,7 @@ The lap is r-abstract. It is an enterable supporter. It is portable. The descrip
 
 The lappet is a wearable thing. The description of the lappet is "A sort of collar with long droopy flaps, like women wear in very old photos."
 
-The larger-pin is a wearable thing. The heft of the larger-pin is 2. The printed name is "larger pin". Understand "larger" or "larger pin" as the larger-pin. Understand "pin" as the larger-pin when the player cannot see the pin. The description is "It's a clunky, substantial piece of costume jewelry, made of brassy metal and enamel, ca. 1958. It depicts the letter T inset in a turning gear. At the bottom is the motto 'DCL WIFE.'"
+The larger-pin is a wearable thing. The heft of the larger-pin is 2. The printed name is "larger pin". Understand "larger" or "larger pin" as the larger-pin. Understand "pin" as the larger-pin when the pin is marked invisible. The description is "It's a clunky, substantial piece of costume jewelry, made of brassy metal and enamel, ca. 1958. It depicts the letter T inset in a turning gear. At the bottom is the motto 'DCL WIFE.'"
 
 The lass is a woman. The description of a lass is "She is dressed like a peasant and looks Scottish, but cheerful. She is not especially wee, but I suppose she answers to bonny."
 	The greeting of the lass is "She says hello in her most Scottish possible accent."

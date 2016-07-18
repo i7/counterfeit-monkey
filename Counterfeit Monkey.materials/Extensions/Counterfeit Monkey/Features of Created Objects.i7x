@@ -29,7 +29,7 @@ To stow gear:
 		try closing the backpack.
 
 Every turn:
-	if a police person (called suspicious official) can see an illegal thing (called the evidence) which is not in a closed backpack:
+	if a police person (called suspicious official) is in location and an illegal thing (called the evidence) is not in a closed backpack:
 		say "The attention of [the suspicious official] lights on [the evidence]. 'Let's see [regarding the evidence][those] of [the evidence],' [regarding the suspicious official][they] [say]. [paragraph break]Of course, a minute's inspection doesn't make [them] any happier, and soon [we] find [ourselves] explaining things to the police.";
 		end the story saying "That was careless".
 

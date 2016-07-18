@@ -940,7 +940,7 @@ Understand "drive to [any nonsecret room]" as approaching.
 
 Understand "drive [car] to [any nonsecret room]" as car-approaching. Car-approaching is an action applying to one thing and one visible thing. Carry out car-approaching: try approaching the second noun.
 
-Understand "honk" or "honk at [text]" as a mistake ("[if the player is not in a car]We aren't a goose[otherwise if the protesters are visible]One of the protesters turns and waves, taking this as a gesture of support[otherwise]We receive an insulting gesture from the person in the car ahead[end if].").
+Understand "honk" or "honk at [text]" as a mistake ("[if the player is not in a car]We aren't a goose[otherwise if the protesters are marked-visible]One of the protesters turns and waves, taking this as a gesture of support[otherwise]We receive an insulting gesture from the person in the car ahead[end if].").
 
 Understand "protest" or "join protest" or "picket" as a mistake ("If I thought you could change Atlantis that way, I'd be on board. But I've given up on social action long since.").
 
@@ -965,9 +965,9 @@ Instead of taking a car:
 Understand "fuel [something] with [something preferably held]" as fueling it with. Understand "fuel [something]" as fueling it with. Fueling it with is an action applying to one thing and one carried thing.
 
 Rule for supplying a missing second noun while fueling something with:
-	if the player can see the fuel:
+	if the fuel is marked-visible:
 		now the second noun is the fuel;
-	otherwise if the player can see the gas:
+	otherwise if the gas is marked-visible:
 		now the second noun is the gas;
 	otherwise:
 		say "[We] don't have any plausible fuel to hand."
@@ -1560,7 +1560,7 @@ Rule for disclosing contents of a desk (called special-target):
 An office is a kind of room. One desk and one chair are in every office. An office is usually indoors.
 
 Sanity-check sitting at a desk:
-	if the player can see a chair (called target chair) which does not support a person:
+	if a chair (called target chair) which does not support a person is marked-visible:
 		try entering the target chair instead.
 
 Section 7 - Outdoor Rooms and Digging
@@ -1627,11 +1627,11 @@ Setting action variables for guidebook-consulting:
 	now the implied textbook is the player;
 	if the player's command includes "[number]" and the filing cabinet is marked-visible:
 		now the implied textbook is the filing cabinet;
-	otherwise if the player can see the guidebook:
+	otherwise if the guidebook is marked-visible:
 		now the implied textbook is the guidebook;
 	otherwise if the player carries a book:
 		now the implied textbook is a random book carried by the player;
-	otherwise if the player can see a book (called the target):
+	otherwise if a book (called the target) is marked-visible:
 		now the implied textbook is the target.
 
 Check guidebook-consulting:
@@ -1885,7 +1885,7 @@ Rule for supplying a missing second noun while performing something on:
 	if an instrument (called target instrument) is marked-visible:
 		now the second noun is the target instrument;
 	otherwise:
-		if game-selection is visible:
+		if game-selection is marked-visible:
 			now the second noun is the game-selection;
 		else:
 			say "There's no instrument handy." instead.
@@ -1955,7 +1955,7 @@ Definition: a room is swimmable:
 		yes;
 	if it is nautical:
 		yes;
-	if the player can see the sea-view:
+	if the sea-view is marked-visible:
 		yes;
 	no.
 
