@@ -81,7 +81,7 @@ Include Scope Caching by Mike Ciul.
 Include Large Game Speedup by Andrew Plotkin.
 
 [ Startup precomputation ]
-Include version 1/160621 of Startup Precomputation by Dannii Willis.
+Include version 1/160718 of Startup Precomputation by Dannii Willis.
 The finalise startup precomputation rule is listed last in the when play begins rules.
 The initial conversation rule is listed after the finalise startup precomputation rule in the when play begins rules.
 The graphics window construction rule is listed after the finalise startup precomputation rule in the when play begins rules.

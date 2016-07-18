@@ -1,4 +1,4 @@
-Version 1/160621 of Startup Precomputation (for Glulx only) by Dannii Willis begins here.
+Version 1/160718 of Startup Precomputation (for Glulx only) by Dannii Willis begins here.
 
 "A system for precomputing slow startup code"
 
@@ -28,7 +28,10 @@ Include (-
 		fref = glk_fileref_create_by_name( fileusage_Data, Glulx_ChangeAnyToCString( SP_Filename ), GG_SAVESTR_ROCK );
 		if ( fref )
 		{
-			gg_savestr = glk_stream_open_file( fref, filemode_Read, GG_SAVESTR_ROCK );
+			if ( glk_fileref_does_file_exist( fref ) )
+			{
+				gg_savestr = glk_stream_open_file( fref, filemode_Read, GG_SAVESTR_ROCK );
+			}
 			glk_fileref_destroy( fref );
 		}
 	}
