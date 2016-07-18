@@ -18,16 +18,33 @@ Instead of taking an animal when the heft of the noun is less than 4:
 	now the score is the number of useful things enclosed by the player;
 	if the score is 3, end the game saying "You are now ready for the next episode!"]
 
-Every turn:
-	repeat with burden running through contained people:
+Every turn (this is the contained people exiting rule):
+	repeat with burden running through people-present:
+		if the burden is not contained:
+			next;
 		if the burden is the pirate:
 			next;
 		if the burden is the pirate-crew:
 			next;
 		if the burden is the crew-group:
 			next;
-		if the burden is not the player and the burden is not Brock and the burden is not the mechanic and the burden is fake:
+		if the burden is Brock:
+			next;
+		if the burden is the mechanic:
+			next;
+		if the burden is fake:
+			if the burden is an enterer listed in the Table of voluntary entry:
+				choose the row with enterer of burden in Table of voluntary entry;
+				if box entry is holder of burden:
+					if time entry is time of day:
+						next;
+					otherwise:
+						if a random chance of 1 in 3 succeeds:
+							blank out the whole row;
+						otherwise:
+							next;
 			try the burden exiting;
+
 
 Definition: a person is contained:
 	if it is in a container which is not the repository:
@@ -68,7 +85,20 @@ Carry out entering a vehicle:
 	now pursuing-state is true;
 	repeat with traveler running through fake people in the location:
 		try the traveler entering the noun;
+		if the traveler is in the noun:
+			if the traveller is an enterer listed in the Table of voluntary entry:
+				choose the row with enterer of traveller in Table of voluntary entry;
+			otherwise:
+				choose a blank row in Table of voluntary entry;
+			now enterer entry is traveler;
+			now box entry is noun;
+			now time entry is time of day;
 	now pursuing-state is false.
+
+
+Table of voluntary entry
+enterer (a person)	box (a thing)	time (a time)
+with 20 blank rows.
 
 Check a fake person entering a vehicle when the heft of the person asked is greater than 3:
 	stop the action.
@@ -95,6 +125,7 @@ Carry out going:
 	now pursuing-state is false.
 
 After a fake person going, exiting, or entering when pursuing-state is true:
+	now the person asked is mentioned;
 	if the person asked is a cat:
 		add cat-sample to the incoming-list;
 	otherwise:
