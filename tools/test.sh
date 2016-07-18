@@ -18,4 +18,8 @@ fi
 
 time $path_to_interpreter -uo "../Counterfeit Monkey.materials/Release/Counterfeit Monkey.gblorb" <"$testfile" > transcript.txt
 
-diff transcript.txt "$(echo "$testfile" | sed 's/command scripts\/test/comparison transcripts\/ideal/g')" > diff.txt
+ideal=$(echo "$testfile" | sed 's/command scripts\/test/comparison transcripts\/ideal/g')
+
+if [ -s "$ideal" ]; then
+	diff transcript.txt "$ideal" > diff.txt
+fi
