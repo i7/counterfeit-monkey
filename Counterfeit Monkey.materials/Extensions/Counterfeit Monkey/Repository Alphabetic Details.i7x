@@ -279,7 +279,7 @@ Report waving the letter-remover at the boar:
 	now boar is marked invisible;
 	try examining the generated object instead.
 
-Boar Mating is a recurring scene. Boar mating begins when the boar is marked-visible and the suid is marked-visible. Boar mating ends in disappointment when the boar is marked-visible and the suid is marked invisible. Boar mating ends in death when the boar is marked invisible.
+Boar Mating is a recurring scene. Boar mating begins when the boar is enclosed by location and the suid is enclosed by location. Boar mating ends in disappointment when the boar is enclosed by location and the suid is not enclosed by location. Boar mating ends in death when the boar is marked invisible.
 
 Every turn during Boar Mating:
 	say "[one of]The boar looks at us unpleasantly, but then the pleasing scent of the [suid] attracts it instead[or]The boar is circling the suid, as near as it can in this awkward space[or][one of]The boar follows the suid around, its nose at her butt[or]The suid is trying to walk away from the boar[or]The boar makes an attempt to mount the suid, but slips on the sand[or]The suid squeals indignantly and walks away from the boar, who follows[at random][stopping]."
