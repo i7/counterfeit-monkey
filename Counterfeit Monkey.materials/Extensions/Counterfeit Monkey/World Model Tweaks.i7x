@@ -393,7 +393,7 @@ Section 2 - Loudness
 
 A thing can be noisy or quiet. A thing is usually quiet.
 
-Every turn:
+A first every turn rule (this is the make noisemakers make noise every turn rule):
 	if listening:
 		make no decision;
 	otherwise:
