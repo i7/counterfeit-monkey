@@ -3366,7 +3366,7 @@ how one might go about winning is a questioning quip. Understand "prize" or "gam
  It quip-supplies the barman.
  It indirectly-follows whether we can hath the origin paste.
 
-Every turn when play the game is available and barman does not recollect barman-nudge and barman does not recollect play the game:
+Every turn when the location is Counterfeit Monkey and barman does not recollect barman-nudge and barman does not recollect play the game and play the game is available:
 	casually queue barman-nudge.
 
 barman-nudge is an NPC-directed quip.
