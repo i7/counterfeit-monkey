@@ -1233,7 +1233,7 @@ The flash drive is essential.
 
 [ The projection booth is here chiefly for easter egg purposes: if the player (much later on) manages to create the abstract LEER, run it through the mirror, and bring the resulting REEL back to the projection booth, the result is this curious movie -- an achievement reward. ]
 
-The Projection Booth is north of Screening Room. It is indoors. The description is "The booth is small and lined with [grey-carpet]. It smells faintly of hot dogs."
+The Projection Booth is north of Screening Room. It is indoors. The description is "The booth is small and lined with grey carpet. It smells faintly of hot dogs."
 
 The grey-carpet is scenery in the Projection Booth. The printed name is "grey carpet". Understand "gray" or "grey" or "carpet" as the grey-carpet. The description is "In this dim light it's hard to give the carpet too exact an inspection, which I imagine is just as well."
 
