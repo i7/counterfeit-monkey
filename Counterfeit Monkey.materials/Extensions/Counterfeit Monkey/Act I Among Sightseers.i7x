@@ -829,7 +829,7 @@ Definition: the kiosks are deeply dull:
 	no.
 
 Rule for writing a topic sentence about kiosks:
-	say "[We] are surrounded by [kiosks] for spell-offs, face-painting[if the wheel is in the location], [a wheel] to spin for prizes[end if], and other activities best for small children or the very easily amused. [run paragraph on]";
+	say "[We] are surrounded by [kiosks] for spell-offs, face-painting[if the wheel is in the location], [a wheel] to spin for prizes[end if], and other activities best for small children or the very easily amused. ".
 
 Rule for listing exits when the location is the Fair:
 	if boldening is true:
