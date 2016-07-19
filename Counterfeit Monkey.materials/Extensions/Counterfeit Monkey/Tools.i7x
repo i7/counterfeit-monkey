@@ -233,7 +233,7 @@ Setting action variables for waving the letter-remover device at an object which
 	if comparison number is the hash code of the second noun:
 		now letter absence is true;
 	otherwise:
-		let starting text be "[printed name of the second noun]";
+		let starting text be "[second noun]";
 		let starting text be "[starting text in lower case]";
 		replace the regular expression "[current setting]" in the starting text with "";
 		now generated object is the letter-remover device;
