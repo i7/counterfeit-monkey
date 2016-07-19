@@ -658,7 +658,7 @@ Table of Ultratests (continued)
 topic	stuff	setting
 "roc-flight"	{ rock, letter-remover }	Precarious Perch
 
-Test roc-flight with "tutorial off / unmonkey / unslango / autoupgrade / wave k-remover at rock".
+Test roc-flight with "tutorial off / unmonkey / unslango / autoupgrade".
 
 Rule for writing a topic sentence about the newspaper when the newspaper is on the built-in table:
 	say "Today's [newspaper] is laid out prominently on [the built-in table]. [no line break]";

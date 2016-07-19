@@ -1274,6 +1274,7 @@ Section 1 - Essentials and Non-Drop Zones
 A thing can be essential. A thing is usually not essential.
 
 Definition: a thing is unleavable:
+	if it is the roc and the player is not enclosed by the roc, yes;
 	if it is not essential, no;
 	if it is not seen, no;
 	if it is the origin paste and it is unwon, no;
@@ -1284,11 +1285,12 @@ Definition: a thing is unleavable:
 
 Before going somewhere when [the player is staid and] the location encloses an unleavable thing:
 	while the location encloses an unleavable thing  (called needed-thing):
-		try taking the needed-thing;
-		if the needed-thing is the iron-pans:
-			reduce iron-pans;
-			if the i-pan is marked-visible:
-				now the needed-thing is the i-pan;
+		unless the needed-thing is the roc:
+			try taking the needed-thing;
+			if the needed-thing is the iron-pans:
+				reduce iron-pans;
+				if the i-pan is marked-visible:
+					now the needed-thing is the i-pan;
 		if the player does not carry the needed-thing:
 			say "I don't think [we] should leave without [the needed-thing].";
 			stop the action.

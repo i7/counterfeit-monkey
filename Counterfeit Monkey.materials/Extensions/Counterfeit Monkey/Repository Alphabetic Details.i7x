@@ -2686,11 +2686,14 @@ topic	stuff	setting
 Test rock-bug with "put rock in t-inserter / open tub / gel rock" [holding the rock and the tub in the Sensitive Equipment Testing Room.]
 
 The roc is a rideable animal.
-The initial appearance is "The roc towers over us, looking smarter than a bird has the right to look."
+The initial appearance is "[if the location is Sunning Deck][roc-aboard][otherwise]The roc towers over us, looking smarter than a bird has the right to look.[end if]".
 The description of the roc is "The bird is enormous[if the location is indoors], so big it seems incredible that it can even fit into the room[end if]. Brock is a tall man, but not nearly this tall. Its eyes are bright and (if [we] [are] not reading too much in) ironically clever; its plumage a little like an eagle's, if an eagle were made many times larger and feathered in a kind of sleek, luminous black."
 
 [Every turn when the roc is in the Sunning Deck and the Sunning Deck is the location:
 	say "[one of][The roc]'s claws dig into the cushions of the sunning deck as the yacht pitches[or][roc-igloo][or][The roc] stretches its wings out so that they reach the whole width of the yacht[or]I catch [the roc] looking at us[at random].".]
+
+To say roc-aboard:
+	say "[one of][The roc]'s claws dig into the cushions of the sunning deck as the yacht pitches[or][The roc] stretches its wings out so that they reach the whole width of the yacht[at random]. ".
 
 [To say roc-igloo:
 	say "[one of][The roc] takes an interest in the white igloo-shaped thing that handles the yacht wifi[or]A tap of beak on plastic tells you [the roc] is checking out the wifi further[if Slango can see the roc][queue Slango-irritation as postponed optional][end if][or][The roc] turns its head experimentally and tries to fit the whole wifi antenna into its beak[stopping]".]
@@ -2725,13 +2728,19 @@ Every turn during roc-flight:
 
 When roc-flight ends:
 	say "It stares at us for a moment, and you climb carefully onto its back, putting our arms around its neck. A dozen drawbacks occur at the last minute. What if there isn't enough room for the takeoff? What if it needs to run [--] like a plane [--] before it can get airborne?";
-	try the roc going down.
-
-After roc going down from Precarious Perch:
-	try the roc going north;
+	if the location is Precarious Perch:
+		try the roc going down;
+		silently try the roc going north;
+	otherwise:
+		if the location is Abandoned Shore:
+			try the roc going north;
 	follow the compass-drawing rule.
 
-Report the roc going north from Precarious Perch:
+[After roc going down from Precarious Perch:
+	try the roc going north;
+	follow the compass-drawing rule.]
+
+Report the roc going down from Precarious Perch:
 	say "The roc strains its neck forward, spreads its wings and steps off the cliff. Its flaps are slow and [we] [are] losing altitude [--] so fast that at first I think [we][']ll fall into the ocean [--] but it takes only five or six flaps before the bird is able to glide straight out to sea." instead.
 
 Report the roc going north from Abandoned Shore:
