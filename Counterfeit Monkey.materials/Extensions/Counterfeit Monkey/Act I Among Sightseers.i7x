@@ -1080,6 +1080,9 @@ A diorama table is fixed in place in Heritage Corner. It is a supporter. The ini
 
 The description of the diorama table is "The patriotic scene is set against the backdrop of the Bureau's buildings ca. 1895, where the committee first met, but the historians have included a bit of the building exterior to show that the meetings were conducted under army guard. The writing of dictionaries has not always been bloodless[if the army is not on the diorama table and the members are not on the diorama table]. Both army and members are missing[otherwise if the army is not on the diorama table]. The army has been removed[otherwise if the members are not on the diorama table and the member is on the diorama table]. The members have been reduced to a single [member][otherwise if the members are not on the diorama table]. The members have been removed[end if].". Understand "backdrop" or "setting" or "buildings" or "bureau" or "bureau's" or "building" or "scenery" as the diorama table when the location is Heritage Corner.
 
+Does the player mean approaching the Rotunda:
+	it is very likely.
+
 Does the player mean finding the diorama table:
 	it is very unlikely.
 
@@ -1798,7 +1801,7 @@ To say prayer response:
 
 The gift-shop-exterior is a facade in New Church. It is scenery. It fronts south. The description is "[We] can't really see it from here; I just know that it is back there, from previous visits, though decently screened from the main body of the church."  Understand "shop" or "gift shop" or "narthex" as the gift-shop-exterior. The printed name is "gift shop".
 
-The Cathedral Gift Shop is south of the New Church. Understand "narthex" as the cathedral gift shop. It is indoors. The description is "This area used to be a sort of antechamber where the priests and choir might gather for processions into the church, but it has now been done over for retail purposes. This is one of several schemes to make the New Church pay for its own upkeep: a problem is that people somehow feel everything associated with a church ought to be free, including lunchtime concerts, potluck suppers, and Thursday-night lecture series."
+The Cathedral Gift Shop is south of the New Church. Understand "narthex" and "giftshop" as the cathedral gift shop. It is indoors. The description is "This area used to be a sort of antechamber where the priests and choir might gather for processions into the church, but it has now been done over for retail purposes. This is one of several schemes to make the New Church pay for its own upkeep: a problem is that people somehow feel everything associated with a church ought to be free, including lunchtime concerts, potluck suppers, and Thursday-night lecture series."
 
 The gift-shop counter is a scenery supporter in the Cathedral Gift Shop. The description is "The usual arrangement for making purchases."
 
@@ -1926,20 +1929,20 @@ Instead of approaching Old City Walls when the backpack is not handled:
 	say high-street refusal instead.]
 
 
-Instead of going to Monumental Staircase when the backpack is not handled:
+[ Instead of going to Monumental Staircase when the backpack is not handled:
 	say high-street refusal.
 
 Instead of approaching Monumental Staircase when the backpack is not handled:
-	say high-street refusal.
+	say high-street refusal.]
 
 To say high-street refusal:
 	say "[one of]That way will take us away from the cinema, and I'd like to retrieve our things first.[or]Er, before we strike out into the rest of town, could we get my backpack from the cinema?[or]Look, I'm not ready to leave this part of town until we've retrieved my stuff from the cinema. It might not seem important to you, but it's my whole reason for leaving the island, and I'm not going without it.[stopping]".
 
-Instead of going to Monumental Staircase when the secret-plans are not handled:
+[ Instead of going to Monumental Staircase when the secret-plans are not handled:
 	say plans-search refusal.
 
 Instead of approaching Monumental Staircase when the secret-plans are not handled:
-	say plans-search refusal.
+	say plans-search refusal. ]
 
 To say plans-search refusal:
 	say "I think we'd better get your things from the hostel before we leave this part of town, don't you?".
