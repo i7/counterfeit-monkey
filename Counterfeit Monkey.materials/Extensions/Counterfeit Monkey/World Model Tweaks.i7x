@@ -907,7 +907,7 @@ An approach-finding rule (this is the explicitly enter car rule):
 				try entering the target;
 				if the player is in the target:
 					try closing the target;
-					if the target is closed and a random ignition (called target ignition)  which is part of target is switched off:
+					if the target is closed and target ignition is switched off:
 						try switching on target ignition.
 
 The explicitly enter car rule is listed before the actual approach movement rule in the approach-finding rules.
