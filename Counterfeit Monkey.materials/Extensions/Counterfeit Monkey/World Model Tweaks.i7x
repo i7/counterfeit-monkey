@@ -899,6 +899,19 @@ Section 2 - Roads
 
 A road is a kind of room. Definition: a room is offroad if it is not a road.
 
+An approach-finding rule (this is the explicitly enter car rule):
+	if location is a road and the room approach-heading of location is a road and the player is not in a car:
+		if an operational fueled car (called target) is in location:
+			let target ignition be a random ignition which is part of target;
+			unless we have switched on target ignition:
+				try entering the target;
+				if the player is in the target:
+					try closing the target;
+					if the target is closed and a random ignition (called target ignition)  which is part of target is switched off:
+						try switching on target ignition.
+
+The explicitly enter car rule is listed before the actual approach movement rule in the approach-finding rules.
+
 Instead of going from a road to a road:
 	if the player is in a car:
 		continue the action;
@@ -1043,10 +1056,10 @@ Check switching on an ignition which is part of an unfueled car:
 Check switching on an ignition which is part of a damaged car:
 	say "Though the engine does briefly turn on, there's clearly something wrong with it, from the unpleasant noises and the flashing lights on the dash. Perhaps it needs oil." instead.
 
-Report switching on an ignition for the first time:
-	say "We switch on the ignition and the car comes to life. Smelly, trembling, putt-putting life, but still, not bad for something we conjured out of a vegetable picked outside my parents['] place." instead.
+Report switching on an ignition:
+	say "[one of]We switch on the ignition and the car comes to life. Smelly, trembling, putt-putting life, but still, not bad for something we conjured out of a vegetable picked outside my parents['] place[or][We] switch [the noun] on[stopping]." instead.
 
-[Instead of going by somewhere by car when the ignition is switched off: say "The ignition is off at the moment." ]
+[Instead of going somewhere by car when the ignition is switched off: say "The ignition is off at the moment." ]
 
 Carry out going somewhere by car:
 	complete "Find transport for getting past the traffic on High Street";
