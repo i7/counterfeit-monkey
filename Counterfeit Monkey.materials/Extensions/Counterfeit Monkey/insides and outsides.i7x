@@ -98,6 +98,14 @@ To decide which object is car-or-container:
 Instead of exiting when the player is not enclosed by an enterable thing:
 	try going outside.
 
+Check entering a closed container (called the target) when the player is not in the target (this is the attempt opening on enter rule):
+	try opening the noun;
+	if the noun is closed, stop the action.
+
+Check exiting when the player is in a closed container (called the current-container) (this is the attempt opening on exit rule):
+	try opening the current-container;
+	if the current-container is closed, stop the action.
+
 Understand the command "enter" as something new.
 Understand "enter" as no-noun-entering. No-noun-entering is an action applying to nothing.
 Understand "enter [thing]" as entering.

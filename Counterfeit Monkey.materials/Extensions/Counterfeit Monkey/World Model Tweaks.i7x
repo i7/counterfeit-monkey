@@ -1019,19 +1019,11 @@ Understand "park" as exiting when the player is in a car. Understand "park [car]
 
 A car is usually openable. A car is usually closed.
 
-Check entering a closed container (called the target) when the player is not in the target (this is the attempt opening on enter rule):
-	try opening the noun;
-	if the noun is closed, stop the action.
+Check exiting when the player is in a noisy car (called target car):
+	try switching off a random ignition which is part of target car;
 
-Check exiting when the player is in a closed container (called the current-container) (this is the attempt opening on exit rule):
-	try opening the current-container;
-	if the current-container is closed, stop the action.
-
-Check exiting when the player is in a noisy car:
-	try switching off a random ignition which is incorporated by a car which contains the player;
-
-Check going somewhere by a car which is not noisy:
-	try switching on a random ignition (called target) which is incorporated by a car which contains the player;
+Check going somewhere by a car (called target car) which is not noisy:
+	try switching on a random ignition (called target) which is incorporated by target car;
 	if the target is switched off, stop the action.
 
 Check going somewhere by an open car (called target):
