@@ -221,7 +221,6 @@ The letter-remover device can be creature-enabled. The letter-remover device is 
 The waving it at action has an object called the generated object (matched as "creating").
 The waving it at action has a truth state called the letter absence.
 
-
 Setting action variables for waving the letter-remover device at an object which is not the letter-remover device:
 	if the second noun is a direction:
 		make no decision;
@@ -234,7 +233,9 @@ Setting action variables for waving the letter-remover device at an object which
 		now letter absence is true;
 	otherwise:
 		let starting text be "[second noun]";
-		let starting text be "[starting text in lower case]";
+		now starting text is "[starting text in lower case]";
+		if the second noun is yourself:
+			now starting text is "alexandra";
 		replace the regular expression "[current setting]" in the starting text with "";
 		now generated object is the letter-remover device;
 		let match-list be a list of things;
@@ -1533,6 +1534,8 @@ Check shooting something with the loaded anagramming gun:
 To decide what list of text is the anagram key of (n - an object):
 	let anagram key be a list of text;
 	let starting form be "[n]";
+	if n is yourself:
+		now starting form is "alexandra";
 	let count be the number of characters in starting form;
 	repeat with i running from 1 to count:
 		let char be "[character number i in starting form]";

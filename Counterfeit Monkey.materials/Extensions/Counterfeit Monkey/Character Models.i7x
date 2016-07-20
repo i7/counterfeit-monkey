@@ -7,15 +7,20 @@ Book 2 - Character Models
 
 Section 1 - Some activities on Oneself
 
+Definition: a thing is other if it is not the player.
+
 When play begins (this is the set story viewpoint rule):
 	now the story viewpoint is first person plural.
 
-[Instead of waving the letter-remover at yourself when the current setting of the letter-remover is "y":
-	say "Arguably [we] already count as 'ourself.'"]
+Instead of waving the letter-remover at yourself when the current setting of the letter-remover is "y":
+	say "Arguably [we] already count as 'ourself.'"
 
-The printed name of yourself is "Alexandra".
+Check waving the letter-remover at yourself when the current setting of the letter-remover is "i":
+	say "If this were likely to work, it would be a terrible idea. Fortunately, we don't self-identify simply as I, and secondly, the letter-remover won't remove the last letter of something." instead.
 
-Understand "you" or "body" as yourself.
+The printed name of the player is "Alexandra". [This seems to have no effect whatsoever]
+
+Understand "us" or "ourselves" or "we" or "ourself" or "alexandra" or "your/my/our/-- body" or "you/yourself" as yourself.
 
 Instead of examining the player:
 	say "[one of]This body is more you than me [--] well, it would be, since [we] came out a girl. Still, I feel a bit odd inspecting us too closely. It feels like invading your privacy.[or]I don't think anything about us looks out of place. [We] [are] female, though a little taller and leaner than average, and with slightly boyish facial features. It's nothing that would attract attention, though.[stopping]";
@@ -39,11 +44,17 @@ Instead of attacking the player:
 Sanity-check taking the player:
 	say "I don't see how [we] could do that." instead.
 
-Sanity-check inserting the player into something:
+Sanity-check inserting the player into:
+	try entering the second noun instead.
+
+Sanity-check putting the player on:
+	try entering the second noun instead.
+
+[Sanity-check inserting the player into something:
 	say "I don't see how [we] could do that." instead.
 
 Sanity-check putting the player on something:
-	say "I don't see how [we] could do that." instead.
+	say "I don't see how [we] could do that." instead.]
 
 [Understand "sorry" as a mistake ("Don't worry about it. I'm not even sure why you're apologizing.").]
 

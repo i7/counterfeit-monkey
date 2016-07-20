@@ -281,13 +281,6 @@ Before taking inventory for the first time:
 	if  the player is carrying the letter-remover and the number of things carried by the player is 1:
 		say "You insisted that we bring almost nothing into the synthesis room, so the criminal who was performing the synthesis couldn't rob us. I had hoped there was more hon[our] among thieves, but you said no, there isn't.";
 
-Definition: a thing is other if it is not the player.
-
-Understand "us" or "ourselves" or "we" or "ourself" as yourself.
-
-Check waving the letter-remover at yourself when the current setting of the letter-remover is "i":
-	say "If this were likely to work, it would be a terrible idea. Fortunately, we don't self-identify simply as I, and secondly, the letter-remover won't remove the last letter of something." instead.
-
 A last when play begins rule (this is the initial conversation rule):
 	say "Can you hear me? >> [run paragraph on]";
 	if the player consents:

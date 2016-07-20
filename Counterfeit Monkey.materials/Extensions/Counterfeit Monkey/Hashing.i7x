@@ -22,6 +22,8 @@ When play begins (this is the initialize hash codes rule):
 	repeat with item running through things which are not facts:
 		unless item is a quip:
 			let T be "[item]";
+			if item is yourself:
+				now T is "alexandra";
 			now the item is unseen;
 			now the hash code of the item is letter-hash of T;
 	repeat with item running through rooms:
