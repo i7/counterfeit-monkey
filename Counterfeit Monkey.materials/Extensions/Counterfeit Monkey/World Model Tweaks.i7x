@@ -1062,12 +1062,12 @@ Carry out going somewhere by car:
 
 A car can be operational or damaged. A car is usually damaged.
 
-Instead of going by unfueled car:
+Sanity-check going by unfueled car:
 	assign "Fuel the car" at High Street;
-	say "The extremely primitive dial in front of us is pointing all the way to the left. I think that's its way of saying it's out of fuel. At any rate, the engine won't start."
+	say "The extremely primitive dial in front of us is pointing all the way to the left. I think that's its way of saying it's out of fuel. At any rate, the engine won't start." instead.
 
-Instead of going by damaged car:
-	say "The car refuses to run properly: evidently you got us a lemon. It's going to take some tuning up before it will go."
+Sanity-check going by damaged car:
+	say "The car refuses to run properly: evidently you got us a lemon. It's going to take some tuning up before it will go." instead.
 
 Sanity-check switching on a car:
 	try switching on a random ignition which is part of the noun instead.
