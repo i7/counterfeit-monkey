@@ -543,7 +543,6 @@ Instead of taking inventory when the current inventory listing style is utilitar
 	if paragraph break needed is true:
 		say paragraph break.
 
-[TODO: fix tests]
 Table of Ultratests
 topic (a topic)	stuff (a list of objects)	setting (a room)
 "newutility"	{ backpack, secret-plans, cate, lime, wig }	--

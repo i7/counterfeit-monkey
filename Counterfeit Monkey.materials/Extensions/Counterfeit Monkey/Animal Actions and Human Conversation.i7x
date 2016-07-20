@@ -679,7 +679,7 @@ The generic adversative of the mechanic is "um".
 The generic confrontational of the mechanic is "hey".
 
 [To reproduce and then verify the correction of a bug whereby the mechanic would half-way fix the car when given the oil even if the car was not in fact present.]
-[TODO: fix test]
+
 Table of Ultratests (continued)
 topic	stuff	setting
 "mechanicbug"	{ tub, funnel, foil, chard }	high street
@@ -688,7 +688,6 @@ topic	stuff	setting
 Test mechanicbug with "tutorial off / wave b-remover at garbage / test car-series / wave h-remover at chard / wave d-remover at card / test car-series / open tub / gel car / wave f-remover at foil / test car-series / wave d-remover at chard / wave h-remover at char / test car-series / wave n-remover at funnel / test car-series / put fuel in car / test car-series" [holding the tub and the funnel and the foil and the chard in high street.]
 
 [And a second test in the other order, doing the fuel before the oil.]
-[TODO: fix test]
 Test mech2 with "tutorial off / wave b-remover at garbage / test car-series / wave h-remover at chard / wave d-remover at card / test car-series / open tub / gel car / wave n-remover at funnel / test car-series / wave d-remover at chard / wave h-remover at char / test car-series / put fuel in car / test car-series / wave f-remover at foil / test car-series" [holding the tub and the funnel and the foil and the chard in high street.]
 
 Test car-series with "ask mechanic to fix car / show fuel to mechanic / ask mechanic about fuel / show gas to mechanic / ask mechanic about gas / show oil to mechanic / ask mechanic about oil / ask mechanic about car / show car to mechanic / get in car / start car / switch on car / switch on ignition / get out".
@@ -1681,7 +1680,6 @@ We shrug amiably.
 
 She gives us a long, admonitory stare, then goes back to what she was doing.[or]We tried that already, and it didn't go well.[stopping]" .
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "bartender"	{ slangovia map, foil, the ball, the card, the cock}	Drinks Club
@@ -4053,7 +4051,6 @@ Instead of answering Lena that "thank you":
  It quip-supplies Lena.
  It directly-follows encourage Lena to contact Slango.
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "Lena"	{ tub, origin paste }	the Aquarium
@@ -4975,7 +4972,6 @@ To say get-to-work:
 
 Test Brockscene with "tutorial off / autoupgrade / unmonkey / open tub /  gel rock / suggest we get out / insist / ask about buried command / wave g-remover at sign / put sin in the t-inserter / gel stint / wave g-remover at sign / wave s-remover at sin / i / put sin in t-inserter / wave s-remover at stint / wave n-remover at tint / wave t-remover at tit / put i in t-inserter / wave t-remover at tit / put i in t-inserter / get rock / i" holding the tub in the Equipment Testing.
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "Misdirection"	{ tub, apple, roll of bills, piece }	Bureau Secret Section
@@ -5036,7 +5032,6 @@ Rule for beat-producing when the current interlocutor is my mother:
 	carry out the caching scope activity with the player;
 	say run paragraph on.
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "mom-beats"	{ my mother, backpack }	my apartment
@@ -5707,7 +5702,6 @@ Instead of throwing something at atlantida-woman:
 
 Understand "gun hand" as the restoration-gel rifle when the restoration-gel rifle is carried by Atlantida-woman.
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "oracle"	{ anagramming gun, bullets, power chord, pastis, the tub }	The Oracle
@@ -5724,7 +5718,7 @@ Section 13 - Scene Interlude with Guards
 
 
 Sanity-check going through the tall window when Atlantida-refreshed is off-stage:
-	if story viewpoint is second person singular: [TODO:][Is this right? Tes!]
+	if story viewpoint is second person singular:
 		say "[We] could do that. [We] could climb out that window and not look back. It would be faster, easier, unquestionably safer. But what about the people we're leaving behind? What about my father and Professor Higgate? What about the protesters who got arrested today?
 
 We'll only know they're safe if we leave this island with a new, improved Atlantida. Someone the Bureau will have to listen to. The one they were afraid of creating. One who will put power back in the hands of the citizen referendum.
@@ -5822,7 +5816,6 @@ When guard-imminence ends in capture:
 We say nothing.";
 	end the story saying "We have been caught".
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "almostlast"	{ anagramming gun, bullets, tub, counterweight }	The Tunnel

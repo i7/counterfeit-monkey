@@ -845,7 +845,7 @@ I want to stop you, but you've got the upper hand now[or][stopping].
 [end if][one of]There's a noise like the firing of a restoration gel rifle and [or]The rifle fires again, followed by[stopping] the sound of [the victim] collapsing into [a list of things which proffer the victim]. 'Nice try,' shouts a voice from outside. 'Next?'";
 		now victim is nowhere;
 	otherwise if the victim is the patsy-woman:
-		now the story viewpoint is second person singular; [TODO: Check this]
+		now the story viewpoint is second person singular;
 		now victim is nowhere;
 		now father is nowhere;
 		say "'Thank goodness,' says the woman. 'I felt like I was going to lose myself if I had to spend another minute in there. I don't know who you are, but thank you, thank you! Is there a Bureau reprieve? Please tell me they've decided to let us all out!'

@@ -747,7 +747,6 @@ The repository contains a blest sandal.
 
 [sticky]
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "stickybug"	{ sticky, tub }	Generator Room
@@ -802,7 +801,6 @@ The repository contains a mutual punch.
 [wall socket]
 The repository contains a slack towel.
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "slack"	{ anagramming gun, bullets }	Workshop

@@ -79,7 +79,6 @@ A last dangerous construction rule for a freaky thing (called target) when the c
 	otherwise:
 		casually queue mess-complaint.
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "mis1"	{ anagramming gun, letter-remover, ball, lap, pea, bullets}	--

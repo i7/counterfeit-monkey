@@ -96,7 +96,6 @@ To raise the display:
 	say "There is a groaning of gears and hydraulics, and the [display-platform][if the display-platform is non-empty], loaded with [the list of things *in the display-platform],[end if] rises back up to the exhibit level.";
 	now the display-platform is in the display case.
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "television"	{ armband, cock, cate, dove }	Display Reloading Room
@@ -178,7 +177,6 @@ Some equipment shelves are a supporter in Equipment Archive. The initial appeara
 
 On the shelves are an accent flipper, an umlaut punch, a Catalan punt volat needle, some broken components, and some lamb-granulates.
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "flipperbug"	{ anagramming gun, tub }	Equipment Archive

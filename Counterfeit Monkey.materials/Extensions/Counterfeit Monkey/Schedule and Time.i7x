@@ -739,7 +739,7 @@ Farewell ends when the newspaper is examined.
 
 When Farewell ends:
 	if atlantida-refreshed is seen:
-		if the story viewpoint is first person plural or the story viewpoint is first person singular: [TODO: Check this]
+		if the story viewpoint is first person plural or the story viewpoint is first person singular:
 			say "[betrayed-outcome]";
 		otherwise:
 			say "[unbetrayed-outcome]";

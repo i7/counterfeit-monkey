@@ -582,7 +582,6 @@ Some screws are part of the plexiglas case.
 Sanity-check opening or closing the plexiglas when the plexiglas is not openable:
 	say "Thanks to our earlier efforts, the plexiglas is now open permanently." instead.
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "plexiglas"	{ jigsaw, sword }	Seminar Room
@@ -861,7 +860,6 @@ This is the spinner-turning rule:
 		otherwise:
 			say "The mirror revolves for a moment, [one of]without effect[or]without changing [the list of things *in the spinner][at random], though the word '[substitute text]' appears in startling green on the mirror's surface. "
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "yambug"	{ roll of bills, monocle }	Hesychius Street
@@ -1383,7 +1381,6 @@ No, let me rephrase. [We] clinically and distantly apply some of the restoration
 	gel-convert the second noun.
 
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "gel-bug"	{ tube, arm }	Dormitory
@@ -1822,7 +1819,6 @@ The power chord is an r-abstract noisy thing. The initial appearance is "A power
 Instead of listening to the power chord:
 	say "The repeated power chord makes it sound as though some heavy equipment is being used in here even when it's not."
 
-[TODO: fix tests]
 Table of Ultratests (continued)
 topic	stuff	setting
 "chord"	{ asparagus, goggles }	Equipment Archive
@@ -1989,7 +1985,6 @@ Carry out switching the massive switch to the switch-setting understood:
 Report switching the massive switch to the switch-setting understood:
 	say "[We] give the switch a strong twist and turn it to [the switch-setting of the massive switch]." instead.
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "programmable"	{ crate, anagramming gun, ring }	Workshop
@@ -2089,7 +2084,6 @@ After inserting something into the cryptolock:
 	otherwise:
 		say "There is a churning noise from within [the cryptolock] and '[goal text]' appears in letters of hot pink smoke. Then the smoke dissipates without result.".
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "cryptoreverse"	{ tub, ball, pastis, earring, pea, gimlet, garish sign }	Generator Room

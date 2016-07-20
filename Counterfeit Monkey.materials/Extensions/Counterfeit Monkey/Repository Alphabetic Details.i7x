@@ -672,7 +672,6 @@ A dangerous construction rule for the cord:
 		move the power cord to loc;
 		now the printed name of power cord is "cord".
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "cordalt"	{ card, umlaut punch }	Generator room
@@ -752,7 +751,6 @@ The diva wears a meat-gown and a bacon chapeau. Understand "glamorous" or "glamo
 
 The description of the bacon chapeau is "People sometimes pin bacon on turkeys to keep them moist during roasting. It looks as though the diva's milliner has taken the same approach to her head." The bacon chapeau is edible. Understand "hat" as the bacon chapeau.
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "diva"	{ dove, anagramming gun, bullets }	Generator Room
@@ -1230,7 +1228,6 @@ Carry out switching off the jigsaw:
 Instead of listening to the jigsaw when the jigsaw is switched on:
 	say "There is a continuous angry whine from the jigsaw."
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "jigbug"	{ jigsaw, keycard }	Johnson Basement
@@ -1480,7 +1477,6 @@ Sanity-check punching something:
 Report punching something:
 	say "[The mutual punch] drives a small, tidy hole through [the noun]." instead.
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "punching"	{ anagramming gun, bullets, jotter, preamps }	Equipment Archive
@@ -1530,7 +1526,6 @@ Report improvising the topic understood on the oboe:
 
 Understand "blow [oboe]" as performing vaguely on.
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "oboe"	{ anagramming gun, bullets }	Generator Room
@@ -1763,7 +1758,6 @@ Instead of entering the passage-place:
 	now the player is in the Shadow Chamber;
 	refresh compass with current directions.
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "passage"	{ passage, anagramming gun, bullets }	Workshop
@@ -1983,7 +1977,6 @@ Instead of inserting ink into the pen:
 	now the noun is nowhere;
 	say "We fill the body of the pen with ink and reattach the nib."
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "pen"	{ pen, nib, page, jotter }	Public Convenience
@@ -2152,7 +2145,6 @@ Instead of showing the spot to the pirate:
 	otherwise:
 		say "She spits largely off to one side. 'That for your instructions!'" instead. ]
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "pirate-spot"	{ spot, pic, crate, tub }	Workshop
@@ -2519,7 +2511,6 @@ Sanity-check putting something which is not wearable on the rack:
 	else:
 		say "[The rack] is for clothes; the pegs aren't really designed to hold anything else." instead.
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "rackbug"	{ ruck, tub }	Generator Room
@@ -2658,7 +2649,6 @@ The ripening-apple is an edible thing. Understand "ripening" and "apple" or "ste
 
 The rite is an r-abstract thing. The heft of the rite is 0. The description of the rite is "Flickering images depict [one of]candles and incense carried by those processing around the New Church on a holy day[or]a woman kneeling before a small rustic shrine and placing the figure of a metal god on it[or]a man drawing the letter A on his son's forehead with a grease pencil[or]a bonfire at the beach, over which a pig is being roasted. The pig's ears, hoofs, and entrails have been set to one side[at random]."
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "rite"	{ pear, tub, anagramming gun, anagram bullets }	Sensitive Equipment Room
@@ -2678,7 +2668,6 @@ Before putting the restoration gel on the rock when the rock is in a container (
 	if the player does not carry the rock:
 		stop the action.
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "rock-bug"	{ rock, tub }	Sensitive Equipment Testing Room
@@ -2816,7 +2805,6 @@ Every turn when the rump stabber is in the location:
 
 The rum stabber is a woman. The description is "She looks around in bewilderment, but there's no rum for her to attack."
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff
 "rumper"	{ anagramming gun, bullets, rubber stamp }
@@ -2913,7 +2901,6 @@ Sanity-check tasting the shrimp cocktail:
 Instead of searching the shrimp cocktail:
 	say "A few finger-prods through the red sauce verify that there are only more shrimps within."
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "alterna-shuttle"	{ power cord, pastis, shuttle }	Workshop
@@ -2978,7 +2965,6 @@ A dangerous construction rule for the slack towel:
 
 The slat is a long thing. The description of the slat is "A board of white wood, probably extracted from a fence somewhere."
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "snapping"	{ snap, ring }	Drinks Club
@@ -3543,7 +3529,6 @@ Sanity-check poking a fluid contained thing with the tack:
 Sanity-check poking something with the tack:
 	say "There are no obvious advantages to making a very tiny hole in [the noun]." instead.
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff
 "tack"	{ tack, sord, fuel, era, jotter }
@@ -3669,7 +3654,6 @@ When tick-removal ends painfully:
 
 The description of the ticket is "It reads ADMIT ONE in large black letters."
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "coffer"	{ anagramming gun, bullets }	Private Solarium
@@ -3680,7 +3664,6 @@ The tidy puce coffer is a closed openable container. The description is "It's a 
 
 The tilting-piano is an instrument. Understand "tilting" or "piano" as the tilting-piano. The printed name of the tilting-piano is "tilting piano". The description is "The legs on one side of the piano are very much lower than on the other side, so that the keyboard can only be played by someone with a very unconventional posture. To make the object look all the more carnivalesque, it is painted white and studded with blue and white rhinestones."
 
-[TODO: fix test]
 Table of Ultratests (continued)
 topic	stuff	setting
 "paintings"	{ anagramming gun, bullets, paintings, tub }	Sensitive Equipment Testing Room
