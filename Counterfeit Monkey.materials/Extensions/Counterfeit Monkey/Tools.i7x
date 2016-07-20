@@ -1737,6 +1737,9 @@ Sanity-check umlaut-punching:
 Check inserting a heavy thing into the umlaut punch:
 	say "[The noun] [are] far too substantial to fit into the wire basket." instead.
 
+Sanity-check inserting the player into the umlaut punch:
+	say "[if story viewpoint is second person singular]You decide against it[otherwise]I'm not putting my hand in that thing[end if]." instead.
+
 Check inserting something into the umlaut punch when the umlaut punch contains something (called the blockage):
 	say "[The blockage] [are] already in the wire basket, and it doesn't take two things at a time." instead.
 
