@@ -751,6 +751,9 @@ When play begins (this is the fix staircases rule):
 Does the player mean finding a facade:
 	it is very unlikely.
 
+Does the player mean finding a scenery thing:
+	it is very unlikely.
+
 Section 2 - LOOK AT LOCATION as LOOK
 
 Definition: a room is locally-present if it is the location.

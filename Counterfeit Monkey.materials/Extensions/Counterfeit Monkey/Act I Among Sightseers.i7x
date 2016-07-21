@@ -195,7 +195,17 @@ Sigil Street is west of Ampersand Bend. It is a road. The description is "The bu
 
 [one of]Passing by [the reflective window] [we] catch the sight of our single blended body, and it creeps me out[or][The reflective window] of the closed shops reflect our synthes[ize]d self[stopping][end if]."
 
-Some elderly apartments are scenery in Sigil Street. The description is "From down here [we] can only see the shuttered windows and the occasional balcony or awning, but you can guess what they're probably like from the environment: old-fashioned inside, kitchens and bathrooms awkwardly fitted into niches and closets of buildings that weren't designed for plumbing. But they're also probably rather [if the player wears the Britishizing goggles]cosy[otherwise]cozy[end if] and handsome, with exposed beams under the ceiling." Understand "flat" or "apartment" or "apartment" or "building" or "buildings" as the elderly apartments.
+Some elderly apartments are scenery in Sigil Street. The description is "From down here [we] can only see the shuttered windows and the occasional balcony or awning, but you can guess what they're probably like from the environment: old-fashioned inside, kitchens and bathrooms awkwardly fitted into niches and closets of buildings that weren't designed for plumbing. But they're also probably rather [if the player wears the Britishizing goggles]cosy[otherwise]cozy[end if] and handsome, with exposed beams under the ceiling." Understand "flat" or "apartment" or "building" or "buildings" as the elderly apartments when location is Sigil Street.
+
+Does the player mean finding the elderly apartments:
+	it is very unlikely.
+
+Does the player mean approaching My Apartment:
+	it is very likely.
+
+Check finding the elderly apartments:
+	unless the player's command includes "elderly":
+		try approaching My Apartment instead.
 
 The reflective window is a fixed in place mirror in Sigil Street.
 	Understand "shop window/windows" or "windows" as the reflective window.
@@ -1068,7 +1078,10 @@ In-direction of Heritage Corner is east. [Into the hostel]
 
 A diorama table is fixed in place in Heritage Corner. It is a supporter. The initial appearance is "Under a bit of [diorama-shelter] in the corner, [a diorama table] shows scenes from local history, rotated out each week. This week's diorama represents the first sitting of the Committee for the New Orthodox Orthography." Understand "diorama" or "scene" or "dioramas" or "shelter" or "scenes" or "local history" or "history" as the diorama table.
 
-The description of the diorama table is "The patriotic scene is set against the backdrop of the Bureau's buildings ca. 1895, where the committee first met, but the historians have included a bit of the building exterior to show that the meetings were conducted under army guard. The writing of dictionaries has not always been bloodless[if the army is not on the diorama table and the members are not on the diorama table]. Both army and members are missing[otherwise if the army is not on the diorama table]. The army has been removed[otherwise if the members are not on the diorama table and the member is on the diorama table]. The members have been reduced to a single [member][otherwise if the members are not on the diorama table]. The members have been removed[end if].". Understand "backdrop" or "setting" or "buildings" or "bureau" or "bureau's" or "building" or "scenery" as the diorama table.
+The description of the diorama table is "The patriotic scene is set against the backdrop of the Bureau's buildings ca. 1895, where the committee first met, but the historians have included a bit of the building exterior to show that the meetings were conducted under army guard. The writing of dictionaries has not always been bloodless[if the army is not on the diorama table and the members are not on the diorama table]. Both army and members are missing[otherwise if the army is not on the diorama table]. The army has been removed[otherwise if the members are not on the diorama table and the member is on the diorama table]. The members have been reduced to a single [member][otherwise if the members are not on the diorama table]. The members have been removed[end if].". Understand "backdrop" or "setting" or "buildings" or "bureau" or "bureau's" or "building" or "scenery" as the diorama table when the location is Heritage Corner.
+
+Does the player mean finding the diorama table:
+	it is very unlikely.
 
 The diorama-shelter is part of the diorama table. The printed name is "shelter". Understand "shelter" or "bit" or "bit of" or "clear" or "plastic" or "hood" as the diorama-shelter. The description is "Little more than a clear plastic hood to protect the diorama beneath."
 
