@@ -29,11 +29,11 @@ Check waving the letter-remover at something irretrievable:
 The don't change irretrievable rules is an object-based rulebook.
 
 A don't change irretrievable rule for a thing (called the item):
-	if the item is the tub or the item is the letter-remover:
-		say "It could be a bad idea to change the form of [the item]. [We] might not be able to get it back.";
+	if the item is the tub or the item is the letter-remover or the item is the restoration gel:
+		say "It would be a bad idea to change the form of [the item]. [We] might not be able to get it back.";
 		the rule fails;
 	if the item is a closed opaque container:
-		say "It could be a bad idea to change the form of [the item]. [We] might not get the contents back.";
+		say "It would be a bad idea to change the form of [the item]. [We] might not get the contents back.";
 		the rule fails;
 	if the item is a person:
 		make no decision;
@@ -172,7 +172,7 @@ Report tuning the letter-remover to something for the third time:
 
 Understand "remove [thing] from [thing]" as removing it from.
 
-Understand "remove [text] from [something]" or "letter-remove [text] from [something]" as letter-removing it from. Letter-removing it from is an action applying to one topic and one thing.
+Understand "remove [text] from [something]" or "letter-remove [text] from [something]" as letter-removing it from. Letter-removing it from is an action applying to one topic and one visible thing.
 
 Carry out letter-removing the topic understood from something:
 	let noun-text be "[topic understood]";
@@ -302,6 +302,9 @@ Check waving the letter-remover at a direction:
 Check waving the letter-remover at something:
 	if the letter absence is true:
 		say "The letter-remover finds no [current setting of the letter-remover] in [the second noun]." instead.
+
+Check waving the letter-remover at the restoration gel:
+	abide by the don't change irretrievable rules for the restoration gel.
 
 Check waving the letter-remover at something which is enclosed by the player:
 	if the player wears the second noun:
