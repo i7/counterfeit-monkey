@@ -254,8 +254,11 @@ This is the display-case-closed rule:
 Before empty-removing something that is enclosed by the display case:
 	say "[no stealing from display case]" instead.
 
-Instead of taking something that is enclosed by the display case:
-	say "[no stealing from display case]".
+Before taking something that is enclosed by the display case:
+	say "[no stealing from display case]" instead.
+
+Before removing something that is enclosed by the display case from:
+	say "[no stealing from display case]" instead.
 
 Instead of opening or attacking the display case:
 	say "[no stealing from display case]".
