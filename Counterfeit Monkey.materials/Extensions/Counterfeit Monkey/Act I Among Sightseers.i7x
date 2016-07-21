@@ -1647,7 +1647,7 @@ Report frowning when chiding-attendant ended in results and the time since chidi
 
 'Oh, whatever,' says the girl. 'She deserves it.'" instead.
 
-An accessibility rule when the touch-goal is the lock:
+An accessibility rule when the touch-goal is the lock or the touch-goal is the locker:
 	if the backpacking girl is marked invisible:
 		make no decision;
 	otherwise:
