@@ -23,7 +23,7 @@ Definition: a thing is irretrievable:
 	no.
 
 Check waving the letter-remover at something irretrievable:
-	unless the second noun is the letter-remover or the locker:
+	unless the second noun is the letter-remover or the second noun is the locker:
 		abide by the don't change irretrievable rules for the second noun.
 
 The don't change irretrievable rules is an object-based rulebook.
