@@ -1563,6 +1563,10 @@ A backpacking girl is an alert tourist woman in the dormitory room. She exhibits
 	The flexible appearance of the heavy pack is "A massively full pack leans against one of the beds."
 	Understand "tourist" as the backpacking girl.
 
+Check finding Lena:
+	if the player's command includes "girl":
+		try finding the backpacking girl instead.
+
 Check waving the letter-remover at pink t-shirt when the current setting of the letter-remover is "r":
 	say "That would be intriguingly disgusting, if it weren't for the fact that T-SHIT doesn't describe anything anyone with a functional colon has ever heard of." instead.
 
