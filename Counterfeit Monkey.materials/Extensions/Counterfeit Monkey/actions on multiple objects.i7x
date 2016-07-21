@@ -105,6 +105,8 @@ Definition: a thing is single put on only:
 		yes;
 	if it is enclosed by the display case:
 		yes;
+	if it is enclosed by a car and the location is traffic circle:
+		no;
 	if it is not enclosed by the player and the location is privately-controlled:
 		yes.
 
