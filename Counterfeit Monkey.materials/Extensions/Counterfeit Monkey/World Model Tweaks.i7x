@@ -904,6 +904,8 @@ An approach-finding rule (this is the explicitly enter car rule):
 		if an operational fueled car (called target) is in location:
 			let target ignition be a random ignition which is part of target;
 			unless we have switched on target ignition:
+				unless the path so far of the player is empty:
+					say "[path-walked so far][line break][paragraph break]";
 				try entering the target;
 				if the player is in the target:
 					try closing the target;
@@ -911,6 +913,8 @@ An approach-finding rule (this is the explicitly enter car rule):
 						try switching on target ignition;
 		otherwise:
 			if a car (called target) is in location:
+				unless the path so far of the player is empty:
+					say "[path-walked so far][line break][paragraph break]";
 				try entering the target.
 
 The explicitly enter car rule is listed before the actual approach movement rule in the approach-finding rules.
