@@ -908,7 +908,10 @@ An approach-finding rule (this is the explicitly enter car rule):
 				if the player is in the target:
 					try closing the target;
 					if the target is closed and target ignition is switched off:
-						try switching on target ignition.
+						try switching on target ignition;
+		otherwise:
+			if a car (called target) is in location:
+				try entering the target.
 
 The explicitly enter car rule is listed before the actual approach movement rule in the approach-finding rules.
 
