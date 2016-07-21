@@ -23,21 +23,21 @@ Definition: a thing is irretrievable:
 	no.
 
 Check waving the letter-remover at something irretrievable:
-	unless the second noun is the letter-remover:
+	unless the second noun is the letter-remover or the locker:
 		abide by the don't change irretrievable rules for the second noun.
 
 The don't change irretrievable rules is an object-based rulebook.
 
 A don't change irretrievable rule for a thing (called the item):
 	if the item is the tub or the item is the letter-remover:
-		say "It would probably be a bad idea to change the form of [the item]. [We] might not be able to get it back.";
+		say "It could be a bad idea to change the form of [the item]. [We] might not be able to get it back.";
 		the rule fails;
 	if the item is a closed opaque container:
-		say "It would probably be a bad idea to change the form of [the item]. [We] might not be able to get the contents back.";
+		say "It could be a bad idea to change the form of [the item]. [We] might not get the contents back.";
 		the rule fails;
 	if the item is a person:
 		make no decision;
-	say "First [we] try to remove everything useful from [the item]. [run paragraph on]";
+	say "First [we] try to remove anything useful from [the item]. [run paragraph on]";
 	let essential-list be the list of essential things enclosed by item;
 	let taken-list be a list of things;
 	let holder-list be a list of things;
