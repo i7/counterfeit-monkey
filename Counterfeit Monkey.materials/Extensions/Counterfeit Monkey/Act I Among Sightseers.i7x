@@ -1647,6 +1647,12 @@ Report frowning when chiding-attendant ended in results and the time since chidi
 
 'Oh, whatever,' says the girl. 'She deserves it.'" instead.
 
+Instead of waving the letter-remover at the locker when the backpacking girl is marked-visible:
+	try taking the locker.
+
+Instead of waving the letter-remover at the lock when the backpacking girl is marked-visible:
+	try taking the lock.
+
 An accessibility rule when the touch-goal is the lock or the touch-goal is the locker:
 	if the backpacking girl is marked invisible:
 		make no decision;
