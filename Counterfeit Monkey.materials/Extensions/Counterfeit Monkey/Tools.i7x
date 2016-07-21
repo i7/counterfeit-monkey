@@ -1608,6 +1608,12 @@ Carry out shooting something with the restoration-gel rifle:
 	say "[We] shoot [the restoration-gel rifle] at [the noun]. ";
 	gel-convert the noun.
 
+Instead of shooting the player with the restoration-gel rifle:
+	if atlantida-woman is seen:
+		say "[We] optimistically fire [the restoration-gel rifle] at [ourselves], but it doesn't make any difference. We're stuck this way, for good.";
+	else:
+		say "There's a real chance [we][']d come apart into a you and a me. And [we] can't afford that right now."
+
 
 Chapter 12 - Britishizing Goggles
 
