@@ -1239,6 +1239,9 @@ To say don't remove gel from tub:
 Instead of empty-removing the tube:
 	try squeezing the tube;
 
+Instead of removing the tube from the tube:
+	try taking the tube.
+
 Before doing something with the tube:
 	if the player's command includes "gel" and the player's command does not include "gel tube" and the second noun is not the tube:
 		if the barker carries the tube:
