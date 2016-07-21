@@ -534,7 +534,7 @@ Chapter 2 - Bureau Basement
 
 Section 1 - Foot of Stairs
 
-Below Bureau Hallway is Bureau Basement South. Bureau Basement South is indoors, forbidden and southern. The description of Bureau Basement South is "[We] have descended into a windowless underground passage. The hallway runs [north] from here, and for an eerily long way [--] the tunnels must extend well beyond the above-ground profile of the building."
+Below Bureau Hallway is Bureau Basement South. Bureau Basement South is indoors, forbidden and southern. Understand "bureau basement s" as Bureau Basement South. The description of Bureau Basement South is "[We] have descended into a windowless underground passage. The hallway runs [north] from here, and for an eerily long way [--] the tunnels must extend well beyond the above-ground profile of the building."
 
 Out-direction of Bureau Basement South is up. [To bureau hallway]
 
