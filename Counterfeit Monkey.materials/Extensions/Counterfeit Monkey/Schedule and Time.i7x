@@ -212,7 +212,8 @@ After going to University Oval when seeking invite has ended and higgate-arreste
 		say "[path-walked so far][paragraph break]";
 	otherwise:
 		clear the path-walked for the player;
-	now approach-destination is Samuel Johnson Hall. [Tricks the approaching verb into stopping here even if you're trying to reach someplace really far away.]
+	unless final destination is University Oval:
+		now approach-destination is Samuel Johnson Hall. [Tricks the approaching verb into stopping here even if you're trying to reach someplace really far away.]
 	[custom-pause the game. ]
 
 Higgate-arrested is a scene. Higgate-arrested begins when the location is University Oval and seeking invite has ended.

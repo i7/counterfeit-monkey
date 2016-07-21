@@ -2309,7 +2309,8 @@ After going to Webster Court when Private Beach is visited and Patriotic Chard-G
 		increase path description count by 1;
 	otherwise:
 		try looking;
-	now approach-destination is Winding Footpath. [Tricks the approaching verb into stopping here even if you're trying to reach someplace really far away.]
+	unless final destination is Webster Court:
+		now approach-destination is Winding Footpath. [Tricks the approaching verb into stopping here even if you're trying to reach someplace really far away.]
 	[custom-pause the game. ]
 
 Section 3 - Chard-Garden
