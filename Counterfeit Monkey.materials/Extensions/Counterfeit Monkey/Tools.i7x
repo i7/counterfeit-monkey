@@ -1188,6 +1188,10 @@ Sanity-check putting the tube on the tube:
 
 Before putting the tub on something:
 	if the player's command includes "gel" and the player's command does not include "gel tub":
+		if the tub is in the backpack and the backpack is closed:
+			try opening the backpack;
+			if the backpack is closed:
+				stop the action;
 		if the tub is closed and the tub is touchable:
 			silently try opening the tub;
 		if the tub is open:
