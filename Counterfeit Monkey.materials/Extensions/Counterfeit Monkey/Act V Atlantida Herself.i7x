@@ -725,8 +725,8 @@ The description of the tall window is "[if the tall window is open]The window st
 
 After examining the tall window, try searching the tall window.
 
-Instead of going south through the tall window when the tall window is locked:
-	say "It's locked again. There's no way for us but forward from here."
+Sanity-check unlocking keylessly the tall window when the tall window is locked:
+		say "It's locked again. There's no way for us but forward from here." instead.
 
 Rule for writing a paragraph about the tall window when the location is the Precarious Perch:
 	if the tall window is open:
