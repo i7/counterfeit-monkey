@@ -225,7 +225,8 @@ After going to Fish Market when the authenticator is in Fish Market and the play
 		say "[path-walked so far]";
 	otherwise:
 		clear the path-walked for the player;
-	now approach-destination is Samuel Johnson Hall; [make it seem like we haven't made progress, if approaching.]
+	unless approach-destination is Fish Market:
+		now approach-destination is Samuel Johnson Hall; [make it seem like we haven't made progress, if approaching.]
 	[try going east.]
 
 Definition: a thing is problematic:
