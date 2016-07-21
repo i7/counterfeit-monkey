@@ -962,6 +962,10 @@ Report launching the kayak:
 	say "With some awkwardness, [we] manage to push off and begin to lab[our]iously row for open sea.";
 	try looking.
 
+Check facing in abandoned shore:
+	if the noun is east or the noun is west:
+		try facing south instead.
+
 Report facing in Abandoned Shore:
 	say "The charm of this place is that it's very hard to see anything in any direction but the ocean. In every other direction [we] are completely protected by rocks." instead.
 
