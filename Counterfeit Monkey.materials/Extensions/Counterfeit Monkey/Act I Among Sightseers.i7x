@@ -1972,6 +1972,12 @@ The tower-side is a facade in High Street. It fronts north. It is scenery. Under
 
 A garbage is a thing in High Street. The initial appearance is "The curb is lined with [garbage]." The description is "Discarded containers from the assortment of food shops and coffee stores lining High Street." The indefinite article is "some".
 
+Instead of examining the garage:
+	say "[description of the garage][line break]";
+	let N be the number of things which are not the mechanic in the garage;
+	unless N is 0:
+		say "[line break]In [the garage] [is-are a list of things which are not the mechanic *in the garage].";
+
 Instead of putting gel on the mechanic:
 	try putting gel on the garage.
 
