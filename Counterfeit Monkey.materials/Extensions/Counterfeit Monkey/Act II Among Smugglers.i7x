@@ -1078,7 +1078,7 @@ Report taking the restoration-gel rifle for the first time:
 Check waving the letter-remover at the teenagers when the current setting of the letter-remover is "s":
 	say "Reducing the pair of teenagers to a single teenager would just add our own war crimes to this mix." instead.
 
-Some teenagers are a woman in Traffic Circle. Understand "teens" or "teenage" or "girls" or "girl" or "teenager" or "defiant" or "nervous" or "handcuffs" or "cuff" or "cuff" or "handcuff" as the teenagers. The initial appearance is "Two [teenagers] are cuffed to [a tree], apparently for safe-keeping while [the All-Purpose-Officer] undoes their vandalism." The description of the teenagers is "One of them looks nervous, the other defiant[one of]. When she catches us looking her way, she contorts herself uncomfortably in order to be able to give us the finger[or][stopping]."
+Some teenagers are a woman in Traffic Circle. Understand "teens" or "teenage" or "girls" or "girl" or "teenager" or "defiant" or "nervous" or "handcuffs" or "cuff" or "cuffs" or "handcuff" or "bonds" as the teenagers. The initial appearance is "Two [teenagers] are cuffed to [a tree], apparently for safe-keeping while [the All-Purpose-Officer] undoes their vandalism." The description of the teenagers is "One of them looks nervous, the other defiant[one of]. When she catches us looking her way, she contorts herself uncomfortably in order to be able to give us the finger[or][stopping]."
 
 Instead of saying hello to the teenagers:
 	say "We try shouting to them over the hubbub of the crowd, but it doesn't really work. [one of]The defiant one waggles her tongue at us obscenely.[or]The nervous one swallows pathetically.[at random]".
