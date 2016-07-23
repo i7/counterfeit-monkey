@@ -1204,7 +1204,10 @@ Section 1 - Door Descriptions and Knocking
 
 The description of a door is usually "[if open][The item described] [stand] open[otherwise if locked]Closed and locked[otherwise][regarding the item described][They] [are] closed[end if]."
 
-Understand "knock on [door]" as knocking on. Knocking on is an action applying to one thing. Understand "knock on [something]" as attacking.
+Understand "knock on/-- [door]" or "tap on/-- [door]" as knocking on. Knocking on is an action applying to one thing. Understand "knock on/-- [thing]" as attacking.
+
+Instead of knocking on something which is not a door:
+	try attacking the noun.
 
 Check knocking on an open door:
 	say "It's open: [we] could just go in." instead.

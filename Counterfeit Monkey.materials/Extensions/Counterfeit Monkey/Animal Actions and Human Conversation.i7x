@@ -1303,6 +1303,11 @@ After the bartender saying hello to the player for the first time:
 
 The bartender knows you-are-possible-customer.
 
+Understand "make me/us/-- [something]" as making when the person asked is the bartender. Making is an action applying to one thing.
+
+Instead of asking the bartender to try making something:
+	try requesting the noun from the bartender.
+
 Instead of asking the bartender to try giving a bartender-carried thing to the player:
 	try requesting the noun from the bartender.
 
@@ -1548,6 +1553,42 @@ Rule for beat-producing when the current interlocutor is the bartender:
 	make no decision.
 
 
+Persuasion rule for asking the bartender to try homonyming something:
+	persuasion succeeds.
+
+Persuasion rule for asking the bartender to try attacking something with the homonym paddle:
+	persuasion succeeds.
+
+Understand "tap [something]" as touching when the person asked is not the bartender.
+
+Understand "tap [something] with [the homonym paddle]" as attacking it with.
+Understand "strike [something] with [something]" as attacking it with.
+
+Understand "homonym [something]" or "homonym-convert [something]" or "homonym-paddle [something]" or "paddle [something]" or "convert [something]" as homonyming. Homonyming is an action applying to one visible thing.
+
+Carry out homonyming something:
+	say "Exactly how do [we] intend to do that?".
+
+Check the bartender trying homonyming something:
+	carry out the refusing comment by activity with the bartender;
+	the rule succeeds.
+
+Check the bartender trying attacking something with the homonym paddle:
+	carry out the refusing comment by activity with the bartender;
+	the rule succeeds.
+
+Sanity-check asking the bartender to try attacking something (called the target):
+	try asking the bartender to try homonyming the target instead.
+
+Does the player mean asking the bartender to try attacking something with the homonym paddle:
+	it is very likely.
+
+Does the player mean asking the bartender to try attacking something with something that is not the homonym paddle:
+	it is very unlikely.
+
+After reading a command:
+	if the player's command includes "tell bartender to" or the player's command includes "ask bartender to":
+		replace the matched text with "bartender,".
 
 Rule for refusing comment by the bartender:
 	if the player is not holding the noun:

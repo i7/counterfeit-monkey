@@ -132,7 +132,7 @@ When play begins (this is the make threaded conversations viewpoint sensitive ru
 The new no-quip rule is listed instead of the no quip worth saying default rule in the for expressing ignorance by rulebook.
 
 Rule for expressing ignorance by the player (this is the new no-quip rule):
-	say "[one of][We] can't think of anything appropriate to say[or]I'm not sure what you're trying to express, there[at random]."
+	say "[one of][We] can't think of anything appropriate to say[or]I'm not sure what you're trying to express, there[at random]. "
 
 Section 5 - Introductions
 

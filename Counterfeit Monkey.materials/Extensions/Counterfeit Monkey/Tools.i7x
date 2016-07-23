@@ -402,7 +402,7 @@ Chapter 2 - The Homonym Paddle
 
 We do write a few of the routines to be more general-purpose, however, because a homonym function also becomes available in the workshop during the very end of the game.]
 
-The homonym paddle is carried by the bartender. The description is "Who had the idea of hitting things to make them swap with their homonyms, I couldn't guess. Nonetheless the toy [--] shaped like a ping-pong paddle and formed of coral-col[our]ed rubber [--] enjoyed a brief vogue in the 80s.
+The homonym paddle is carried by the bartender. It is long and strong. The description is "Who had the idea of hitting things to make them swap with their homonyms, I couldn't guess. Nonetheless the toy [--] shaped like a ping-pong paddle and formed of coral-col[our]ed rubber [--] enjoyed a brief vogue in the 80s.
 
 To prevent theft, the paddle is attached to the bartender's wrist by a thin steel cable and bracelet."
 
