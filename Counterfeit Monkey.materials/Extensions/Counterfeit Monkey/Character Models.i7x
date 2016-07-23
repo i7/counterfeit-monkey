@@ -223,7 +223,7 @@ Test clientele-bug with "ask parker about slango / ask men about slango" in the 
 
 Carry out starting a conversation with an eavesdropping person about when the current interlocutor is a person:
 	say "[We] give [the noun] a look to say [their] input would be welcome as well.";
-	now the reborn command is "ask about [second noun]";
+	now the reborn command is the substituted form of "ask about [topic understood]";
 	now sp reparse flag is true instead.
 
 [We do want it to be possible for the player to say "hi" back to a character who has just greeted him if the conversation has just started.]
