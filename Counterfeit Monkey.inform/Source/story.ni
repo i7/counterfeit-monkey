@@ -151,6 +151,7 @@ Include Viewpoint and Narrative Voice by Counterfeit Monkey.
 	
 Include World Model Tweaks by Counterfeit Monkey.
 Include Insides and Outsides by Counterfeit Monkey.
+Include Liquids by Counterfeit Monkey.
 Include Actions on Multiple Objects by Counterfeit Monkey.
 
 [	•	Book 4 - Default World Model Tweaks
@@ -197,8 +198,7 @@ Include Actions on Multiple Objects by Counterfeit Monkey.
 				•	Section 1 - Books
 				•	Section 2 - Computers
 			•	Chapter 2 - Substances
-				•	Section 1 - Liquids
-				•	Section 2 - Vegetables
+				•	Section 1 - Vegetables
 			•	Chapter 3 - Useful Items
 				•	Section 1 - Holdall
 				•	Section 2 - Clothing
@@ -546,7 +546,8 @@ Include Character Models by Counterfeit Monkey.
 Include Viewpoint and Narrative Voice by Counterfeit Monkey.
 Include World Model Tweaks by Counterfeit Monkey.
 Include Insides and Outsides by Counterfeit Monkey
-Include Actions on Multiple Objects by Counterfeit Monkey..
+Include Liquids by Counterfeit Monkey.
+Include Actions on Multiple Objects by Counterfeit Monkey.
 Include Features of Created Objects by Counterfeit Monkey.
 Include Schedule and Time by Counterfeit Monkey.
 Include Act I Among Sightseers by Counterfeit Monkey.

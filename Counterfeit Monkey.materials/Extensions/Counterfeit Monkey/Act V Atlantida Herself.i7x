@@ -783,6 +783,9 @@ Instead of listening to a room in the presence of the sea-view:
 Instead of putting something on the sea-view:
 	say "That is not a good way to get rid of [the noun]."
 
+Instead of inserting the funnel into the sea-view:
+	try washing the funnel.
+
 Instead of inserting something into the sea-view:
 	say "That is not a good way to get rid of [the noun]."
 

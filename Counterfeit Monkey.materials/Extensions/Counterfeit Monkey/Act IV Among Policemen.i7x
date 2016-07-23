@@ -111,19 +111,34 @@ Section 4 - Public Convenience
 
 [The public convenience existed from a fairly early stage of the game development, as a place to change your wig or look in the mirror or acquire some soap. The dead-drop puzzle was a late addition to the game, and it came about because I felt that I wanted to make the espionage aspects more convincingly espionage-y. I used this excuse to read a couple of LeCarré novels — research, you see — and then extracted the concepts that I thought would be easiest to transfer into the context of IF.]
 
-The Public Convenience is east of Bus Station. It is indoors and southern. The Public Convenience is a public restroom. The description of Public Convenience is "There are just the two toilet stalls[if at least two sinks are in the location] and a couple of [sink-collectives], but the place has been kept up reasonably well, if one doesn't count the [random graffiti][otherwise if one sink is in the location] and a single [random sink in location], the other one having been vandalized. The [random graffiti] adds a grim touch[otherwise] though both sinks are gone and there is [random graffiti] on the walls[end if]."
+The Public Convenience is east of Bus Station. It is indoors and southern. The Public Convenience is a public restroom. The description of Public Convenience is "There are just the two toilet stalls[if at least two sinks are in the location] and a couple of [sink-collectives], but the place has been kept up reasonably well, if one doesn't count the [random graffiti][otherwise if one sink is in the location] and a single [random sink in location], the other one having been vandalized. The [random graffiti] adds a grim touch[otherwise], though both sinks are gone and there is [random graffiti] on the walls[end if]."
 
 The introduction of the Public Convenience is "A faint smell of lavender lingers in the air."
 
 Out-direction of Public Convenience is west. [To the bus station]
 
-Some sink-collectives are scenery in the public convenience. The sink-collectives are privately-named. The printed name is "sinks".  Understand "sinks" as sink-collectives.
+After reading a command:
+	now the referred of the sink-collectives is false;
+	while the player's command includes "sinks":
+		now the referred of the sink-collectives is true;
+		replace the matched text with "sink".
 
-Sanity-check doing something other than examining to the sink-collectives:
+Some sink-collectives are scenery in the public convenience. The sink-collectives are privately-named. The sink-collectives have a truth state called referred. The printed name is "sinks". Understand "sink" as sink-collectives when there is no sink in location.
+
+Instead of examining a sink when the referred of the sink-collectives is true and there is more than one sink in location:
+	say "The sinks are nothing special. Clean enough, I suppose."
+
+Sanity-check doing something when the sink-collectives is the second noun:
 	if the number of sinks in the location is 0:
 		say "[We][']ve already gotten rid of all the sinks to be found in this area." instead;
-	let target be a random sink in the location;
-	now the noun is the target.
+	otherwise:
+		now the second noun is a random sink in location.
+
+Instead of doing something to the sink-collectives:
+	if the number of sinks in the location is 0:
+		say "[We][']ve already gotten rid of all the sinks to be found in this area.";
+	otherwise:
+		now the noun is a random sink in location.
 
 [After going to Public Convenience:
 	let N be the number of entries in the path so far of the player;
@@ -147,18 +162,22 @@ The soap dispenser is a closed container in the Public Convenience. It is privat
 Does the player mean waving the letter-remover at the soap dispenser:
 	it is very unlikely.
 
-Sanity-check taking the soap when the soap is in the soap dispenser:
-	try squeezing the soap dispenser instead.
+Sanity-check taking the soap dispenser when the soap is in the soap dispenser:
+	if the player's command does not include "dispenser":
+		try squeezing the soap dispenser instead.
 
 Instead of squeezing the soap dispenser:
 	if soap is in the dispenser:
 		if the number of sinks in the location is greater than 0:
-			let target be a random sink;
-			if a marked-visible sink contains an open container (called receptor):
-				now target is the receptor;
+			let target be a random sink in the location;
+			if a switched on tap (called target tap) is part of the target:
+				silently try switching off target tap;
+				say "First switching off [the target tap], [we][run paragraph on]";
 			otherwise:
-				now target is a random sink in the location;
-			say "[We] give the dispenser a squeeze and it deposits some soap in [the target][if the target is a sink] [--] just viscous enough not to drain away instantly[end if].";
+				if a switched on tap (called target tap) is enclosed by location:
+					say "Fortunately, the faucet below the soap dispenser is not running. ";
+				say "[We][run paragraph on]";
+			say " give the dispenser a squeeze. It deposits some soap in [the target] [--] just viscous enough not to drain away instantly.";
 			move the soap to the target;
 		otherwise:
 			say "[We] give the dispenser a squeeze and it deposits some soap on the floor, the sink having been removed from the area.";

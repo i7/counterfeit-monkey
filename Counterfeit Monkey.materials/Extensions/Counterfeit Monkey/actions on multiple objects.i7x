@@ -198,7 +198,7 @@ This is the fake put on rule:
 	now dummy-object is nowhere;
 	abide by the cancel multiple rule.
 
-Dummy-object is a proper-named thing. The printed name of dummy-object is "[if location is privately-controlled or the second noun is fluid]our things[otherwise][one of]stuff[or]things[at random][end if]".
+Dummy-object is a proper-named thing. The printed name of dummy-object is "[if location is privately-controlled or the second noun is fluid or the second noun incorporates a tap]our [end if][one of]stuff[or]things[at random]".
 
 This is the cancel multiple rule:
 	alter the multiple object list to {};
@@ -215,7 +215,11 @@ Definition: a thing is single insert only:
 		yes;
 	if it is a drain:
 		yes;
+	if it incorporates a drain:
+		yes;
 	if it is a freezer compartment:
+		yes;
+	if it is fluid-filled:
 		yes;
 	if it is a box listed in the Table of snarky containers:
 		yes;
