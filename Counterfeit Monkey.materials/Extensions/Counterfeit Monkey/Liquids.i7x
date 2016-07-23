@@ -230,7 +230,10 @@ Instead of examining something (called target sink) which incorporates a tap (ca
 		say "Water pours from [the target tap].";
 	otherwise:
 		if description of target sink is empty:
-			say "[We] see nothing special about [the target sink]."
+			if target sink is empty:
+				say "[We] see nothing special about [the target sink].";
+			otherwise:
+				say "In [the target sink] [is-are a list of things *in target sink]."
 
 Before printing the name of a drain (called target) (this is the drain identification rule):
 	if target is part of something (called target sink) which is not the galley sink:
