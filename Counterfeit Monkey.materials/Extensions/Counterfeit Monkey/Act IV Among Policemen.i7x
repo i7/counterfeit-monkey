@@ -128,14 +128,17 @@ Some sink-collectives are scenery in the public convenience. The sink-collective
 Instead of examining a sink when the referred of the sink-collectives is true and there is more than one sink in location:
 	say "The sinks are nothing special. Clean enough, I suppose."
 
-Instead of waving the letter-remover at the sink-collectives:
-	try examining the sink-collectives.
+Sanity-check doing something when the sink-collectives is the second noun:
+	if the number of sinks in the location is 0:
+		say "[We][']ve already gotten rid of all the sinks to be found in this area." instead;
+	otherwise:
+		now the second noun is a random sink in location.
 
 Instead of doing something to the sink-collectives:
 	if the number of sinks in the location is 0:
-		say "[We][']ve already gotten rid of all the sinks to be found in this area." instead;
-	let target be a random sink in the location;
-	now the noun is the target.
+		say "[We][']ve already gotten rid of all the sinks to be found in this area.";
+	otherwise:
+		now the noun is a random sink in location.
 
 [After going to Public Convenience:
 	let N be the number of entries in the path so far of the player;
