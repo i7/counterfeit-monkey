@@ -631,17 +631,108 @@ Sanity-check approaching a room (called target):
 
 The room-restriction rules are an object-based rulebook.
 
-A room-restriction rule for a southern room:
+A first room-restriction rule for a room (called destination) that is not Starting Area:
+	if backpack is not handled:
+		say high-street refusal;
+		rule fails;
+	if secret-plans are not seen:
+		say plans-search refusal;
+		rule fails.
+
+Definition: a room is Starting Area:
+	if it is Monumental Staircase:
+		no;
+	if it is Back Alley:
+		yes;
+	if it is Sigil Street:
+		yes;
+	if it is Ampersand Bend:
+		yes;
+	if it is New Church:
+		yes;
+	if it is Cathedral Gift Shop:
+		yes;
+	if it is Church Garden:
+		yes;
+	if it is Cinema Lobby:
+		yes;
+	if it is The Screening Room:
+		yes;
+	if it is Projection Booth:
+		yes;
+	if it is Hostel:
+		yes;
+	if it is Dormitory Room:
+		yes;
+	if it is in Open-Air:
+		yes.
+
+A room-restriction rule for a southern room (called destination):
 	if the Counterfeit Monkey is unvisited:
 		say "Don't [we] have an appointment at the Counterfeit Monkey? [We] should be heading northeast up Deep Street.";
 		rule fails;
 	if Slango is not seen and Counterfeit Monkey is visited:
 		say "That would take us more towards my part of the world, not help us find Slango.";
+		rule fails;
+	if destination is legend-restricted:
+		say square-refusal;
 		rule fails.
+
+Definition: a room is legend-restricted:
+	if legend is introduced:
+		no;
+	if it is Palm Square:
+		yes;
+	if it is My Apartment:
+		yes;
+	if it is Apartment Bathroom:
+		yes;
+	if it is Babel Café:
+		yes;
+	if it is in Campus:
+		yes.
+
+A room-restriction rule for a before-security-door room when cold dilemma has happened:
+	say "[if Precarious Perch is visited][We] don't know how to get there from here[otherwise]The way through the Bureau will be guarded. If [we] [are] going to get out, it will have to be by some back way[end if].";
+	the rule fails;
+
+Definition: a room is before-security-door:
+	if it is nautical:
+		no;
+	if it is Precarious Perch:
+		no;
+	if it is Abandoned Shore:
+		no;
+	if it is Open Sea:
+		no;
+	if it is Beside Slango's Ship:
+		no;
+	if it is Private Solarium:
+		no;
+	if it is Personal Apartment:
+		no;
+	if it is Tunnel through Chalk:
+		no;
+	if it is not in Official Grounds:
+		yes;
+	if it is The Antechamber:
+		yes;
+	if it is Rotunda:
+		yes;
+	if it is Tools Exhibit:
+		yes;
+	if it is All-Purpose Office:
+		yes;
+	if it is Bureau Hallway:
+		yes;
+	if it is Bureau Basement South:
+		yes;
+	if it is Bureau Basement Middle:
+		yes.
 
 A room-restriction rule for Tall Street when Counterfeit Monkey is unvisited:
 	say "Don't [we] have an appointment at the Counterfeit Monkey? [We] should be heading northeast up Deep Street.";
-	rule fails;
+	rule fails.
 
 A room-restriction rule for Wonderland when Brock-argument has not happened:
 	say "Best to start looking for Brock where we know he went: the equipment testing room.";

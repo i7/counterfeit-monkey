@@ -247,6 +247,8 @@ Understand "unmonkey" as unmonkeying. Unmonkeying is an action out of world.
 
 Carry out unmonkeying:
 	now Slango is seen;
+	now the backpack is handled;
+	now the secret-plans are seen;
 	now the Counterfeit Monkey is visited. [This turns off certain movement restrictions that prevent the player from visiting most of the map when the player hasn't been to the Counterfeit Monkey first.]
 
 [The Consulting-Slango scene can come back and bite us again if we skip to the end of the game and meet Slango for the first time, thus restricting our movement.]
