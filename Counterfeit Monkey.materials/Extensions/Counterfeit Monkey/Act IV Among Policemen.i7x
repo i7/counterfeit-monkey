@@ -126,6 +126,9 @@ After reading a command when location is Public Convenience:
 Some sink-collectives are scenery in the public convenience. The sink-collectives are privately-named. The sink-collectives have a truth state called referred. The printed name is "sinks". Understand "sink" as sink-collectives when there is no sink in location.
 
 Instead of examining a sink when the referred of the sink-collectives is true and there is more than one sink in location:
+	now the referred of the sink-collectives is false;
+	if location is not public convenience:
+		continue the action;
 	say "The sinks are nothing special. Clean enough, I suppose."
 
 Sanity-check doing something when the sink-collectives is the second noun:
