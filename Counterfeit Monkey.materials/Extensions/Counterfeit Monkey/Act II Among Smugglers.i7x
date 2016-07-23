@@ -602,7 +602,11 @@ Check waving the letter-remover at the tattoos:
 Some tattoos are part of the clientele. The description of the tattoos is "[one of]One says I HEART MA[or]One is a detailed rendering of scenes from Brooklyn[or]One looks like an Elder Sign[at random]."
 
 The clientele is a person in Counterfeit Monkey. The initial appearance is "[The clientele] is keeping [the barman] thoroughly busy."
-	The description of the clientele is "A nasty-looking bunch. They can be good enough if you're on the right side of them, but getting and staying that way isn't easy. And they're justly suspicious: the customs house not infrequently tries to infiltrate the criminal organ[ization]s and brotherhoods, though with no great success." Understand "men" or "crowd" or "players" or "player" or "customers" or "customer" or  "guys" or "people" or "man" or "guy" as the clientele.
+	The description of the clientele is "A nasty-looking bunch. They can be good enough if you're on the right side of them, but getting and staying that way isn't easy. And they're justly suspicious: the customs house not infrequently tries to infiltrate the criminal organ[ization]s and brotherhoods, though with no great success." Understand "crowd" or "players" or "player" or "customers" or "customer" or  "guys" or "people" or "guy" as the clientele.
+
+After reading a command when location is Counterfeit Monkey:
+	while the player's command includes "men":
+		replace the matched text with "clientele".
 
 The barman is a man in Counterfeit Monkey. The description of the barman is "His name is Parker, and he is a friend of yours, when you're wearing your own skin. At the moment, though, it seems like a good idea not to trust these friendships by making our new disguise known." Understand "bartender" or "barkeep" or "Parker" as the barman.
 
