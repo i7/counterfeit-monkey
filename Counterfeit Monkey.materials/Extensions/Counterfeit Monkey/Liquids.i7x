@@ -223,10 +223,14 @@ The tap-water is fluid scenery.
 
 The heft of a sink is 5.
 
-Instead of examining something (called target sink) which incorporates a switched on tap (called target tap):
+Instead of examining something (called target sink) which incorporates a tap (called target tap):
 	if description of target sink is not empty:
 		say "[description of target sink][paragraph break]";
-	say "Water pours from [the target tap]."
+	if target tap is switched on:
+		say "Water pours from [the target tap].";
+	otherwise:
+		if description of target sink is empty:
+			say "[We] see nothing special about [the target sink]."
 
 Before printing the name of a drain (called target) (this is the drain identification rule):
 	if target is part of something (called target sink) which is not the galley sink:
