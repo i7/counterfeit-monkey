@@ -322,7 +322,7 @@ To say square-refusal:
 	if the legend is handled or the fake-legend is in the repository:
 		say "Hadn't we better see what message Brock left?";
 	if the fake-legend is not seen:
-		say "My apartment is that direction, but unless we have some reason to go there, it seems least suspicious to avoid my old neighborhood.";
+		say "[if the noun is not My Apartment and the noun is not Apartment Bathroom]My apartment is that direction, but unless[otherwise]Unless[end if] we have some reason to go there, it seems least suspicious to avoid my old neighborhood.";
 	else:
 		say "At a guess, we're looking for a homonym paddle so we can convert the legend. ";
 		if Drinks Club is visited:
