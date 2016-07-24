@@ -248,8 +248,11 @@ This alley runs north to the open street, towards the town square[if unvisited].
 The dull house-back is a facade in Back Alley. It fronts south. It is scenery. The description is "The owners of the house obviously didn't want a view in this direction, as there aren't any windows to see through, just a wall scarred by decades of occasional remodeling."
 	The closure notice is "There are no doors in [the item described]. ".
 
-Some yellow buildings are a facade in Back Alley. They front east. They are scenery. Understand "windows" or "window" or "building" or "back" or "backs" or "sides" or "walls" as the yellow buildings. The printed name is "[if looking]buildings[otherwise]yellow buildings[end if]". The description is "The buildings are no doubt due for renovation, but haven't received it yet. There are no windows facing this way."
+Some yellow buildings are a facade in Back Alley. They front east. They are scenery. Understand "windows" or "window" or "building" or "back" or "backs" or "sides" or "walls" as the yellow buildings when the location is Back Alley. The printed name is "[if looking]buildings[otherwise]yellow buildings[end if]". The description is "The buildings are no doubt due for renovation, but haven't received it yet. There are no windows facing this way."
 	The closure notice is "There are no doors in [the item described]. ".
+
+Does the player mean finding the yellow buildings:
+	it is very unlikely.
 
 Some beige buildings are a facade in Back Alley. They front west. They are scenery. The description is "A little more beige than the buildings facing them, but just as shabby and free of windows."
 	The closure notice is "There are no doors in [the item described]. ".
