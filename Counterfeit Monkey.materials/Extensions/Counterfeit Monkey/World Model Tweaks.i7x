@@ -1150,10 +1150,10 @@ Check going somewhere by an open car (called target):
 	try closing the target;
 	if the target is open, stop the action.
 
-Rule for describing the interior of a car:
-	say "[We] [are] jammed into the car with our knees almost at our chin, looking out through the bulbous little [if the player wears the Britishizing goggles]windscreen[otherwise]windshield[end if][if the ignition is switched on]. The motor is growling like a housecat with pneumonia[end if]."
+Rule for describing the interior of a car (called target car):
+	say "[We] [are] jammed into the car with our knees almost at our chin, looking out through the bulbous little [if the player wears the Britishizing goggles]windscreen[otherwise]windshield[end if][if a switched on ignition is part of target car]. The motor is growling like a housecat with pneumonia[end if]."
 
-The ignition is a kind of device. One ignition is part of every car. Understand "motor" as the ignition. Instead of listening to the ignition, try listening to a random car which incorporates the noun.
+An ignition is a kind of device. One ignition is part of every car. Understand "motor" as an ignition. Instead of listening to an ignition, try listening to a random car which incorporates the noun.
 
 The gas-gauge is a kind of thing. One gas-gauge is part of every car. The description is "[if the item described is part of a car that is fueled]It points over at the right, which must be Full[otherwise]It points all the way around at the left, or Empty[end if]." The printed name of the gas-gauge is "gas gauge". Understand "gauge" or "gas gauge" as the gas-gauge.
 
@@ -1187,10 +1187,10 @@ Sanity-check switching on a car:
 Sanity-check switching off a car:
 	try switching off a random ignition which is part of the noun instead.
 
-Carry out switching on the ignition:
+Carry out switching on an ignition:
 	now a random car which incorporates the noun is noisy.
 
-Carry out switching off the ignition:
+Carry out switching off an ignition:
 	now a random car which incorporates the noun is quiet.
 
 Instead of listening to a noisy car:
