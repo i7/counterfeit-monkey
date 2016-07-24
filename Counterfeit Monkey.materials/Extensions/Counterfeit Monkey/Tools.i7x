@@ -1449,7 +1449,7 @@ Sanity-check shooting the restoration gel with:
 	if the restoration-gel rifle is marked-visible and the player's command does not include "gel/at with/gel":
 		if the player's command includes "shoot/fire gel" or the player's command includes "shoot/fire restoration gel":
 			replace the matched text with "shoot rifle";
-			now the reborn command is "[player's command]";
+			now the reborn command is the substituted form of "[player's command]";
 			now sp reparse flag is true instead;
 
 Does the player mean shooting something enclosed by the player with: it is very unlikely.

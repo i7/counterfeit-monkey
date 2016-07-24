@@ -1131,7 +1131,7 @@ Carry out starting a conversation with it about:
 	implicitly greet the noun;
 	if the noun is the current interlocutor:
 		follow the relabel available quips rule;
-		now the reborn command is "[player's command]";
+		now the reborn command is the substituted form of "[player's command]";
 		now sp reparse flag is true.
 	
 Understand "ask [a talk-eligible person] about [text]" as asking it about.
