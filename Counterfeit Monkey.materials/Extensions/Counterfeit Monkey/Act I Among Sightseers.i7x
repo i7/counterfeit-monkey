@@ -1568,6 +1568,10 @@ Check finding Lena:
 	if the player's command includes "girl":
 		try finding the backpacking girl instead.
 
+Does the player mean finding the backpacking girl:
+	if the player's command includes "girl":
+		it is very likely.
+
 Check waving the letter-remover at pink t-shirt when the current setting of the letter-remover is "r":
 	say "That would be intriguingly disgusting, if it weren't for the fact that T-SHIT doesn't describe anything anyone with a functional colon has ever heard of." instead.
 
