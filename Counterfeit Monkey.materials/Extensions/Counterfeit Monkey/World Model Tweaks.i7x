@@ -14,6 +14,12 @@ Section 1 - Smarter Parser
 Include Smarter Parser by Aaron Reed.
 Include Numbered Disambiguation Choices by Aaron Reed.
 
+Does the player mean doing something when the player's command includes "[number]":
+	if the noun is not nothing and the disambiguation id of the noun is the number understood:
+		it is very likely;
+	if the second noun is not nothing and the disambiguation id of the second noun is the number understood:
+		it is very likely;
+
 [Use empty Smarter Parser rulebook.]
 
 To announce the reparsed command:
