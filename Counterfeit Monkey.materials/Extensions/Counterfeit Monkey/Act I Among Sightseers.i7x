@@ -1815,7 +1815,13 @@ The gift-shop counter is a scenery supporter in the Cathedral Gift Shop. The des
 
 Some wire racks are scenery things in the Cathedral Gift Shop. The description is "They're designed to hold postcards or other similar small merchandise." Understand "rack" as racks.
 
-Some postcards are on the wire racks. The description of the postcards is "You may be a tourist in these parts, but I, my curious friend, am not: so I find these pictures all rather foolish, and not at all representative of the town as it really is." The postcards are scenery. Understand "pictures" or "harbor" or "city walls" or "walls" or "fortifications" or "ancient fortifications" or "cards" or "harbour" or "postcard" or "picture" or "architecture" or "souvenirs" as the postcards.
+Some postcards are on the wire racks. The description of the postcards is "You may be a tourist in these parts, but I, my curious friend, am not: so I find these pictures all rather foolish, and not at all representative of the town as it really is." The postcards are scenery. Understand "postcard" or "souvenirs" as the postcards. Understand "harbor" or "city walls" or "walls" or "fortifications" or "ancient fortifications" or "cards" or "harbour" or "picture" or "architecture" or "pictures" as the postcards when the location is cathedral gift shop.
+
+Does the player mean finding the postcards:
+	it is very unlikely.
+
+Instead of finding the postcards when the player's command includes "walls/fortifications":
+	try approaching the old city walls.
 
 A dangerous construction rule for the wire racks:
 	now the postcards are on the wire racks.
