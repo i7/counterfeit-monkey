@@ -515,9 +515,9 @@ This is the new approach refusal rule:
 The new approach heading finding rule is listed instead of the approach-heading selection rule in the approach-finding rules.
 
 This is the new approach heading finding rule:
-	now approach-heading is the best route from the location to the noun, using doors;
-	if approach-heading is not a direction:
-		now approach-heading is the best route from the location to the noun, using even locked doors;
+	now approach-heading is the best route from the location to the noun, using even locked doors.
+	[if approach-heading is not a direction:
+		now approach-heading is the best route from the location to the noun, using even locked doors;]
 
 Path description count is a number that varies. [let's count how many times we've invoked this activity this turn!]
 
