@@ -862,7 +862,7 @@ Instead of climbing the boulders:
 The non-sand is scenery in Abandoned Shore. The non-sand is privately-named. Understand "sand" as the non-sand.
 
 Sanity-check doing something when the noun is non-sand or the second noun is non-sand:
-	say "There's very little sand here, just boulders."
+	say "There's very little sand here, just boulders." instead.
 
 [Carry out examining the boulders when the squid is not seen:
 	move the squid to the location;

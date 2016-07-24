@@ -432,7 +432,7 @@ The printed name of the cat-mayor is "cat mayor". Understand "cat" or "mayor" as
 The description of the tiny black leather boots is "They are the tall sort with cuffs that roll over."
 
 Sanity-check wearing the tiny black leather boots:
-	say "They wouldn't fit."
+	say "They wouldn't fit." instead.
 
 The catnap is r-abstract. The description of the catnap is "Much like an ordinary nap, but smaller and... more cuddly, perhaps?"
 
@@ -968,7 +968,7 @@ The funded-tomcat is a cat. The printed name is "funded tomcat". Understand "fun
 	The description is "Like an ordinary tomcat, but very sleek and well-fed, with a diamond-studded collar."
 
 Sanity-check wearing the diamond-studded collar:
-	say "It wouldn't fit."
+	say "It wouldn't fit." instead.
 
 The funded-tomcat wears a diamond-studded collar. The description of the diamond-studded collar is "It would be worth a good bit, if it weren't for being fake. [if the player wears the Britishizing goggles]Jewellers[otherwise]Jewelers[end if] do tend to check."
 
@@ -1874,7 +1874,7 @@ Instead of tasting the pat:
 	say "Unsalted, I think."
 
 Sanity-check eating the pat:
-	say "I don't like butter without bread."
+	say "I don't like butter without bread." instead.
 
 The description of the pate is "A bit of bald head, fringed with just the hint of greying hair."
 
@@ -2163,7 +2163,7 @@ Persuasion rule for asking the pirate-crew to try doing something:
 		say "They mumble defiantly." instead.]
 
 Sanity-check washing the pirate-crew:
-	say "Heaven knows they need it, but they don't look terribly cooperative."
+	say "Heaven knows they need it, but they don't look terribly cooperative." instead.
 
 Instead of showing the spot to the pirate-crew:
 	now the pirate-crew is nowhere;
@@ -2243,7 +2243,7 @@ Instead of listening to the poppycock, say "[one of]'POPPYCOCK!' shouts the litt
 The poppy-oil is a fluid contained edible thing. Understand "poppy" or "oil" as the poppy-oil. The printed name is "poppy oil". The indefinite article is "some". The description is "A bottle of culinary-grade poppy oil, though useless: I can't cook, and we haven't time."
 
 	Sanity-check burning the poppy-oil:
-		say "I think the idea is that you put the oil in a pan and cook with it. But never mind; it wouldn't help us now anyway."
+		say "I think the idea is that you put the oil in a pan and cook with it. But never mind; it wouldn't help us now anyway." instead.
 
 The pose is an r-abstract thing. The heft of the pose is 0. The description of the pose is "At the moment it looks like a tiny man [one of]emulating The Thinker[or]staring importantly into the middle distance while tiny cameras flash[or]waving and smiling, in best Atlantean politico fashion, with a sprig of olive leaves pinned to his vest and a blue 'just voted' smudge on his thumb[or]semaphoring the letter A[or]demonstrating first position in ballet[as decreasingly likely outcomes]."
 

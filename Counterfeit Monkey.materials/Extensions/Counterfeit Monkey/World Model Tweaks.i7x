@@ -1120,8 +1120,8 @@ Check tuning:
 	otherwise:
 		say "I'm not good at this sort of thing. I mostly leave repairs to the garage." instead.
 
-Instead of inserting oil into a car:
-	say "In my limited interactions with motor vehicles, I've always taken the machine to a garage for any corrective work. This includes topping up the oil."
+Sanity-check inserting oil into a car:
+	say "In my limited interactions with motor vehicles, I've always taken the machine to a garage for any corrective work. This includes topping up the oil." instead.
 
 Report opening a car:
 	say "[one of][We] open the car door: perhaps unsurprisingly, it comes without an effective lock system.[or][We] swing the car door open.[or][We] open the door of the car.[stopping]" instead.
@@ -1179,7 +1179,7 @@ Sanity-check switching on a car:
 	try switching on a random ignition which is part of the noun instead.
 
 Sanity-check switching off a car:
-	try switching off a random ignition which is part of the noun.
+	try switching off a random ignition which is part of the noun instead.
 
 Carry out switching on the ignition:
 	now a random car which incorporates the noun is noisy.
