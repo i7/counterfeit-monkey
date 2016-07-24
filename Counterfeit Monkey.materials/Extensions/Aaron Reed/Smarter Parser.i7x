@@ -67,7 +67,7 @@ Rule for printing a parser error when suppress parser error is true or sp repars
 
 Rule for reading a command when sp reparse flag is true (this is the Smarter Parser retrying input rule):
 	now sp reparse flag is false;
-	change the text of the player's command to "[reborn command]".
+	change the text of the player's command to the substituted form of "[reborn command]".
 
 Section - Explaining Results
 
@@ -133,7 +133,7 @@ To identify error as (why - a rule):
 	if sp-debug is true, say "(smart parser debug: printing message for [why])[command clarification break]";
 	if there is a SP rule of why in Table of Smarter Parser Messages:
 		choose row with a SP rule of why in Table of Smarter Parser Messages;
-		now saved Smarter Parser error is "[message entry]";
+		now saved Smarter Parser error is substituted form of "[message entry]";
 	otherwise:
 		now saved Smarter Parser error is "".
 
@@ -472,15 +472,15 @@ A smarter parser rule when sp_normal (this is the stripping unnecessary addendum
 	if the latest parser error is the only understood as far as error or latest parser error is the can't see any such thing error:
 		if stripping "\b(the|a|some|my|this|that)\b" is fruitful, do nothing;
 		if input starts with "(get off|look under|switch on|switch off|turn on|turn off|take off|listen to|wake up|put on)" and the number of words in reborn command is at least 3:
-			now reborn command is "[word number 1 in reborn command] [word number 2 in reborn command] [word number 3 in reborn command]";
+			now reborn command is the substituted form of "[word number 1 in reborn command] [word number 2 in reborn command] [word number 3 in reborn command]";
 			identify error as stripping unnecessary addendum rule;
 			reparse the command;
 		if input starts with "(take|get|drop|eat|go|enter|get|x|examine|search|open)" or input starts with "(close|wear|wake|attack|kiss|touch|pull|push|turn)" or input starts with "(squeeze|burn|taste|cut|drink|rub|buy|climb|kill)" and the number of words in reborn command is at least 2:
-			now reborn command is "[word number 1 in reborn command] [word number 2 in reborn command]";
+			now reborn command is the substituted form of "[word number 1 in reborn command] [word number 2 in reborn command]";
 			identify error as stripping unnecessary addendum rule;
 			reparse the command;
 		if input starts with "(l|look|inventory|exit|z|wait)" or input starts with "(yes|no|jump|sorry|sleep)": ["i" is intentionally left out, so this doesn't think something like "I don't think so" is an attempt to take inventory.]
-			now reborn command is "[word number 1 in reborn command]";
+			now reborn command is the substituted form of "[word number 1 in reborn command]";
 			identify error as stripping unnecessary addendum rule;
 			reparse the command.
 
