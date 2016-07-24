@@ -489,7 +489,7 @@ A smarter parser rule when sp_normal (this is the stripping unnecessary addendum
 
 Table of Smarter Parser Messages (continued)
 SP rule	message
-stripping unnecessary addendum rule	"I only understood the first part of that-- trying anyway."
+stripping unnecessary addendum rule	"I only understood the first part of that [--] trying anyway."
 
 
 
