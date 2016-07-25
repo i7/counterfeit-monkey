@@ -664,7 +664,7 @@ At least, that's the theory. In practice, there's massively more complex output 
 
 In an earlier version of the game, the player *did* leave via the Customs House, after first solving a puzzle of manipulating the exit lines — the challenge was to distract multiple officers by creating fake humans and animals, so that everyone manning customs was kept busy dealing with these frauds while the player snuck into a back room to rescue Brock. But this puzzle proved fiddly to explain to the player and not actually very much fun, so we axed the entire sequence. At that point the game was also perhaps a half or two thirds its present length: not only was it missing the escapades in the Bureau basement, but it also lacked the traffic circle and the dead drop/map store sequence. ]
 
-The Customs House is east of the Docks. It is indoors. The description is "This one building handles both people entering Atlantis by sea and those leaving, so there is an entry line (which feeds out into the city by the door we used) and an exit line (which snakes through from here to the point where boats and ferries board their passengers).
+The Customs House is east of the Docks. Understand "customs-house" as the Customs House. It is indoors. The description is "This one building handles both people entering Atlantis by sea and those leaving, so there is an entry line (which feeds out into the city by the door we used) and an exit line (which snakes through from here to the point where boats and ferries board their passengers).
 
 There is a [long line] of people waiting to leave Atlantis, even on Serial Comma Day."
 	The introduction is "No one is paying any attention to us [i]yet[/i], but I wouldn't advise spending much time here."
