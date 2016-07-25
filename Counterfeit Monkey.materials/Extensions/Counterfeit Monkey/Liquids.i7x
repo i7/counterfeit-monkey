@@ -19,11 +19,11 @@ Instead of taking an uncontained fluid thing (called the fluid):
 Understand "drink from [something]" as drinking.
 
 Sanity-check drinking a tap (called target tap):
-	if the player's command includes "water/from":
+	if the player's command includes "from" or the subcommand of the target tap matches the text "water":
 		say "It may not be sanitary." instead.
 
 Sanity-check inserting something into a tap (called target tap):
-	if the player's command includes "water":
+	if the subcommand of the target tap matches the text "water":
 		if target tap is switched off:
 			silently try switching on target tap;
 		try inserting the noun into the tap-water;
@@ -32,12 +32,12 @@ Sanity-check inserting something into a tap (called target tap):
 		stop the action.
 
 Before doing something other than switching on with a switched off tap:
-	abide by the don't call me water rule.
+	if the subcommand of the noun matches the text "water":
+		say "[We] can see no water here at the moment." instead.
 
-This is the don't call me water rule:
-	if the player's command includes "water" and the player's command does not include "tap":
-		say "[We] can see no water here at the moment.";
-		the rule fails;
+Before doing something when the second noun is a switched off tap:
+	if the subcommand of the second noun matches the text "water":
+		say "[We] can see no water here at the moment." instead.
 
 Check drinking a fluid thing:
 	try eating the noun instead.
