@@ -1163,7 +1163,7 @@ Understand "gel [something]" as gelling. Gelling is an action applying to one th
 
 Carry out gelling something:
 	if the tube is marked-visible:
-		try putting the tube on the noun instead;
+		say "[one of]Unfortunately, there's hardly any gel remaining in the tube.[or]There isn't enough gel remaining in the little tube for use.[at random]" instead;
 	if the tub is marked-visible:
 		try putting the restoration gel on the noun instead.
 
