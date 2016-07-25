@@ -79,7 +79,7 @@ Plausibility rule for an unlisted quip:
 
 After reading a command:
         let N be "[player's command]";
-        replace the regular expression "(hi|hello|hey), (.*)" in N with "\2, \1";
+        replace the regular expression "(hi|hello|hey), (.*)" in N with "\2, hello";
         change the text of the player's command to N.
 
 
