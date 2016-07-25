@@ -505,6 +505,8 @@ Carry out going to a forbidden room (called target):
 
 Understand "go to [any nonsecret room]" or "goto [any nonsecret room]" or "go back to [any nonsecret room]" or "return to [any nonsecret room]" or "revisit [any nonsecret room]"  as approaching.
 
+The tell the player when blocked at a door rule response (A) is "Unfortunately, [we] [find] [we] [lack] a key fitting [the locked-thing].[line break]";
+
 The new approach refusal rule is listed instead of the refusing bad headings rule in the approach-finding rules.
 
 This is the new approach refusal rule:
