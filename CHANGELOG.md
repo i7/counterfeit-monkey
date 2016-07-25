@@ -3,67 +3,70 @@
 ## Unreleased
 
 - The game and all extensions it uses are now ported to Inform 6M62. This allows us to simplify the code in many places. We have tried hard to ensure that nothing has broken in the process.
-– The source code is split up into several smaller files.
-– Adds a startup pre-computation function that caches the results of startup for faster subsequent game starts, and which can also read startup data from the blorb file on interpreters that support it.
-– Replaces most visibility tests with the marked-visible attribute from Scope Caching by Mike Ciul for a speedup.
+- The source code is split up into several smaller files.
+- Adds a startup pre-computation function that caches the results of startup for faster subsequent game starts, and which can also read startup data from the blorb file on interpreters that support it.
+- Replaces most visibility tests with the marked-visible attribute from Scope Caching by Mike Ciul for a speedup.
 - Uses the list writers and other replacement functionality from Large Game Speedup by Andrew Plotkin for some speedup.
-– Adds the testing command PAUSES OFF to disable the game pausing and waiting for you to press a key until continuing. Enable it again with PAUSES ON.
-– Adds the testing command RANDOM-SEED (number) to reset the random seed to any number.
-– Includes some primitive testing scripts that pipe a text file of commands into the game and compares the output to a previous transcript.
-– Fixes a bug where the as could disappear out of your hand if you made a second as from the trash, then synthesized an ascot, then gelled the ascot. Also prevents similar potential bugs.
+- Adds the testing command PAUSES OFF to disable the game pausing and waiting for you to press a key until continuing. Enable it again with PAUSES ON.
+- Adds the testing command RANDOM-SEED (number) to reset the random seed to any number.
+- Includes some primitive testing scripts that pipe a text file of commands into the game and compares the output to a previous transcript.
+- Fixes a bug where the as could disappear out of your hand if you made a second as from the trash, then synthesized an ascot, then gelled the ascot. Also prevents similar potential bugs.
 - Makes sure that the roc or other converted forms of Brock are properly gelled when you board the yacht.
-– Fixes an issue where the game wouldn't let us leave the starting park area if we letter-converted the plans before touching them.
-– Fixes a run-time problem in Threaded Conversation when resetting the interlocutor while the current interlocutor is nothing.
+- Fixes an issue where the game wouldn't let us leave the starting park area if we letter-converted the plans before touching them.
+- Fixes a run-time problem in Threaded Conversation when resetting the interlocutor while the current interlocutor is nothing.
 
 ### Gameplay changes
 
-– Make liquids and sinks behave more consistently. You can no longer carry uncontained fluids in containers together with other objects.
-– The legend now stays attached to the map after gelling it.
-– Disallows walking away from the roc. Before it was possible for it to get into the kayak with you and then follow you around the yacht.
-– No longer lets you leave essential objects behind by inserting them into a container and then letter-transforming the container.
-– Makes it more apparent when the car will not run by stopping you rather than making you automatically get out and walk to your destination.
+- Liquids and sinks behave more consistently. You can no longer pick up uncontained fluids and carry them around in containers along with other objects and fluids.
+- The legend now stays attached to the map after gelling it.
+- Disallows walking away from the roc. Before it was possible for it to get into the kayak with you and then follow you around the yacht.
+- No longer lets you leave essential objects behind by inserting them into a container and then letter-transforming the container.
+- Makes it more apparent when the car will not run by stopping you rather than making you automatically get out and walk to your destination.
 - Makes IN and OUT work more consistently as directions.
 - Makes the refusal messages more consistent when trying to go to blocked-off locations, and avoids walking you halfway there.
-– Allows you to gel the tub.
-– You can no longer put containers in the sink under the dispenser and fill them with soap.
-– Animals no longer get out of containers on the same turn that they follow you into them.
-– It is no longer possible to insert random things into the customs house line or the secret door.
-– Typing INSERT X IN BACKPACK when X is already in the backpack will no longer make us open the backpack, take out X and then put it back in. Exceptions are the T-inserter and the cryptolock: you can still use INSERT X IN T-INSERTER to insert another T even if X is already in the T-inserter.
+- Allows you to gel the tub.
+- You can no longer put containers in the sink under the dispenser and fill them with soap.
+- Animals no longer get out of containers on the same turn that they follow you into them.
+- It is no longer possible to insert random things into the customs house line or the secret door.
+- Typing INSERT X IN BACKPACK when X is already in the backpack will no longer make us open the backpack, take out X and then put it back in. Exceptions are the T-inserter and the cryptolock: you can still use INSERT X IN T-INSERTER to insert another T even if X is already in the T-inserter.
 
 ### Parsing
 
-– Adds new ways of understanding what you want to shoot at and with what. The parser is now better at telling the difference between shooting a gun at something and shooting at something with it.
+- Adds new ways of understanding what you want to shoot at and with what. The parser is now better at telling the difference between shooting a gun at something and shooting at something with it.
 - Makes it possible to refer to SINKS in the public convenience.
-– Adds several new way to ask the bartender to homonym-convert our things.
-– Adds more ways tell the parser to fill the pen with ink and write with it.
-– Adds more synonyms for putting the reel in the projector and starting the movie.
-– Fixes a bug when trying to remove things from containers and supporters would be misunderstood as trying to wave the letter-remover at them.
+- Adds several new ways of asking the bartender to homonym-convert our things.
+- Adds more ways tell the parser to fill the pen with ink and write with it.
+- Adds more synonyms for putting the reel in the projector and starting the movie.
+- Fixes a bug when trying to remove things from containers and supporters would be misunderstood as trying to wave the letter-remover at them.
 - Fixes responses to waving the letter-remover at the tub and the restoration gel, and to putting gel on the letter-remover.
-– Prevents the parser from going to the diorama table in Heritage Corner when typing GO TO BUREAU.
-– Prevents the parser from going to the elderly apartments in Sigil Street when typing GO TO APARTMENT.
-– Fixes a bug that would sometimes leave us just outside the place we tried to go to.
+- Prevents the parser from going to the diorama table in Heritage Corner when typing GO TO BUREAU.
+- Prevents the parser from going to the elderly apartments in Sigil Street when typing GO TO APARTMENT.
+- Prevents the parser from going to the postcards in Cathedral Gift Shop when typing GO TO WALLS.
+- Prevents the parser from going to the yellow buildings in Back Alley when typing GO TO WALLS.
+- Fixes a bug that would sometimes leave us standing just outside the place we tried to go to.
+- Makes it less likely that typing a number as a disambiguation choice will select something with a different number.
 
 ### Typos and cosmetic output errors
 
-- Adjusts to the utilitarian inventory listing to make it faster and more robust.
-– Improves the responses when trying to walk into unimplemented directions.
-– Improved description when the cryptolock produces something large that falls out.
-– Avoids printing long lists of refusal messages when typing PUT ALL IN a locked container or similar disallowed attempts to do something with multiple objects.
-– Makes it possible to look up Anglophone Atlantis in the guidebook.
-– Adds responses to trying to remove the restoration gel from the tub or the tube.
-– Makes the score awarding from reading the legend show up immediately rather than on the next turn.
-– Fixes a double refusal message when trying to insert things into the etymological reversing chamber when it is inside the display case.
-– Fixes a bug that would sometimes refer to a galley sink in the description of the public convenience.
-– Fixes a double room description that was sometimes printed when going to far away rooms.
-– Makes the letter-transformation tools actually refer to us as Alexandra.
-– The name that the letter-remover tries to change is now always the same as the printed name of the object. It used to be different for certain objects like sink taps.
+- Adjustments to the utilitarian inventory listing to make it faster and more robust.
+- Improves the responses when trying to walk in unimplemented directions.
+- Better description of when the cryptolock produces something large that falls out.
+- Avoids printing long lists of refusal messages when typing PUT ALL IN a locked container or similar disallowed attempts to do something with multiple objects.
+- Makes it possible to look up Anglophone Atlantis in the guidebook.
+- Adds responses to trying to remove the restoration gel from the tub or the tube.
+- Makes the score awarding from reading the legend show up immediately rather than on the next turn.
+- Fixes a double refusal message when trying to insert things into the etymological reversing chamber when it is inside the display case.
+- Fixes a bug that would sometimes refer to a galley sink in the description of the public convenience.
+- Fixes a double room description that was sometimes printed when going to other rooms.
+- Makes the letter-transformation tools actually refer to us as Alexandra.
+- The name that the letter-remover tries to change is now always the same as the printed name of the object. It used to differ for certain objects, like sink taps.
 - Fixes the reply when asking the gift shop volunteer about things he has nothing to say about.
-– No longer mentions the mechanic twice when examining the garage.
-– Adds back some old responses to trying to buy the souvenirs in the cathedral gift shop.
+- No longer mentions the mechanic twice when examining the garage.
+- Adds back some old responses to trying to buy the souvenirs in the cathedral gift shop.
 - The descriptions of running taps in room descriptions are now grouped together.
-– Makes sure that all the steps involved in driving (closing the door, starting the ignition) are printed the first time even when we drive to a named location, just as they are when we drive in a direction.
-– Makes sure that the funnel is described as "all sandy" until we have taken it.
-– Prevents the "What do you want to drop those things in?" response when typing DROP ALL while carrying nothing.
+- Makes sure that all the steps involved in driving (closing the door, starting the ignition) are printed the first time even when we drive to a named location, just as they are when we drive in a direction.
+- Makes sure that the funnel is described as "all sandy" until we have taken it.
+- Prevents the "What do you want to drop those things in?" response when typing DROP ALL while carrying nothing.
 
 ## Release 6
 
