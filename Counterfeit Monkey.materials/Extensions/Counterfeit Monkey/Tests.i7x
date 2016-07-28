@@ -484,6 +484,40 @@ Carry out listing all sizes:
 Understand "list mentions" as listing-subjects. Listing-subjects is an action out of world. Carry out listing-subjects:
 		show relation mentioning relation.
 
+Understand "list quips" as listing-quips. Listing-quips is an action out of world.
+Carry out listing-quips:
+	let L be the list of quips;
+	let N be the number of entries in L;
+	repeat with I running from 1 to N:
+		say "[I]. [entry I in L][line break]".
+
+Understand "list available" as listing-availables. Listing-availables is an action out of world.
+Carry out listing-availables:
+	let L be the list of available quips in quip-repository;
+	let N be the number of entries in L;
+	repeat with I running from 1 to N:
+		say "[I]. [entry I in L][line break]".
+
+Understand "list all available" as listing-all-availables. Listing-all-availables is an action out of world.
+Carry out listing-all-availables:
+	let L be the list of available quips;
+	let N be the number of entries in L;
+	repeat with I running from 1 to N:
+		say "[I]. [entry I in L][line break]".
+
+Understand "list plausible" as listing-plausibles. Listing-plausibles is an action out of world.
+Carry out listing-plausibles:
+	let L be the list of plausible quips in quip-repository;
+	let N be the number of entries in L;
+	repeat with I running from 1 to N:
+		say "[I]. [entry I in L][line break]".
+
+Understand "list all plausible" as listing-all-plausibles. Listing-all-plausibles is an action out of world.
+Carry out listing-all-plausibles:
+	let L be the list of plausible quips;
+	let N be the number of entries in L;
+	repeat with I running from 1 to N:
+		say "[I]. [entry I in L][line break]".
 
 Section 3 - Verifying Implementation Depth
 
