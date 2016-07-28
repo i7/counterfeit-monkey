@@ -1573,7 +1573,7 @@ Check finding Lena:
 		try finding the backpacking girl instead.
 
 Does the player mean finding the backpacking girl:
-	if the player's command includes "girl":
+	if the subcommand of the noun matches the text "girl":
 		it is very likely.
 
 Check waving the letter-remover at pink t-shirt when the current setting of the letter-remover is "r":
