@@ -400,7 +400,7 @@ Definition: a quip (called the target quip) is peripheral:
 Listing peripheral quips is an activity.
 
 Rule for listing peripheral quips (this is the standard listing subject changes rule):
-	prepare a list of peripheral quips; 
+	prepare a list of peripheral quips in quip-repository;
 	say "[quip-suggestion-phrase][the prepared list delimited in disjunctive style]." (A).
 
 Book 4 - Offering Hints To The Player
@@ -429,14 +429,14 @@ After quip-introducing a quip (called target) (this is the mark special plausibl
 	now the target is listed-plausible.
 
 Rule for listing plausible quips (this is the standard quip plausibility rule):
-	prepare a list of plausible quips; 
+	prepare a list of plausible quips in quip-repository;
 	unless the number of filled rows in the Table of Scored Listing is positive:
 		rule succeeds;
 	otherwise:
 		repeat through the Table of Scored Listing:
 			carry out the quip-introducing activity with the output entry;
 		[This could have blanked some rows out, so we need to check again:]
-		if the number of filled rows in the Table of Scored Listing is positive, 
+		if the number of filled rows in the Table of Scored Listing is positive,
 			say "[quip-suggestion-phrase][the prepared list delimited in disjunctive style]." (A);
 
 Before printing the name of a questioning quip while listing plausible quips or listing peripheral quips (this is the prefix-ask rule):
@@ -661,7 +661,7 @@ Definition: a person is talk-eligible if it is the current interlocutor.
 The quip-repository is a privately-named transparent closed unopenable container.
 
 When play begins (this is the move all quips to the quip-repository rule):
-	now every quip is in the quip-repository.
+	now every quip that is not npc-directed is in the quip-repository.
 
 Book 2 - The Discussing Action
 
