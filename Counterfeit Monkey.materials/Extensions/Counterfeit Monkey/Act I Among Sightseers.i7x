@@ -1773,6 +1773,8 @@ The introduction of New Church is "My mother volunteers here: I think I should w
 
 Some pews are a scenery supporter in the New Church. The description of the pews is "Simply built out of dark solid wood, to contrast with the white walls and columns, and the clear glass windows." Understand "pew" or "seat" or "seats" or "bench" or "benches" as the pews.
 
+Does the player mean approaching New Church:
+	it is very likely.
 
 The altar is fixed in place in the New Church. It is a supporter.
 
