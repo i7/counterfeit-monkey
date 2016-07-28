@@ -2097,7 +2097,7 @@ Carry out the ticket-taker discussing a civic quip:
 taking-a-survey is an NPC-directed quip.
 	The reply is "'What is this about? Are you taking a survey or something?'"
 
-Instead of saying yes when claim to be taking a survey is available:
+Instead of saying yes when the current interlocutor is the ticket-taker and claim to be taking a survey is available:
 	try discussing claim to be taking a survey.
 Instead of saying no when we seem curious:
 	try discussing we seem curious.
@@ -2108,7 +2108,7 @@ Instead of saying no when we seem curious:
  It quip-supplies the ticket-taker.
  It directly-follows taking-a-survey.
 
-Instead of saying no when explain that we hath a recorder is available:
+Instead of saying no when the current interlocutor is the ticket-taker and explain that we hath a recorder is available:
 	try discussing explain that we hath a recorder.
 
 explain that we hath a recorder is a performative quip.
@@ -2191,7 +2191,7 @@ Carry out the ticket-taker discussing something when the ticket-taker recollects
 going-in-movie is an NPC-directed quip.
 	The reply is "'So are you just [if ostensible motive is you-take-survey]collecting data[otherwise]hanging out here[end if] or do you want to go in to the movie or what?'"
 
-Instead of saying no when delay ticket-taker is available:
+Instead of saying no when current interlocutor is the ticket-taker and delay ticket-taker is available:
 	try discussing delay ticket-taker.
 
  delay ticket-taker is a weakly-phrased performative quip.
@@ -2969,16 +2969,16 @@ offer-souvenirs is an NPC-directed beat-opened quip.
 	The nag is "[one of]'All purchases go towards the fund to rebuild the church roof,' he reveals enticingly.[or]'Money spent in the New Church shop is non-taxable,' he adds.[or]'It's in a good cause. This is a historical monument.'[or]The moral pressure from the old man has not abated.[stopping]".
 	It is restrictive.
 
-Instead of frowning or saying no when decline to buy trashy souvenirs is available:
+Instead of frowning or saying no when the current interlocutor is the gift shop volunteer and decline to buy trashy souvenirs is available:
 	try discussing decline to buy trashy souvenirs.
 
-Instead of saying yes when decline to buy trashy souvenirs is available:
+Instead of saying yes when the current interlocutor is the gift shop volunteer and decline to buy trashy souvenirs is available:
 	if the player encloses the roll of bills:
 		say "I hate to interfere in this act of charity, but we need our cash for other purposes.";
 	otherwise:
 		say "We're flat broke."
 
-Instead of laughing or scoffing when mock the trashy souvenirs is available:
+Instead of laughing or scoffing when the current interlocutor is the gift shop volunteer and mock the trashy souvenirs is available:
 	try discussing mock the trashy souvenirs.
 
 mock the trashy souvenirs is an unlisted performative quip.
@@ -3241,7 +3241,7 @@ Report laughing when the current interlocutor is the activist and the current qu
  It quip-supplies the activist.
  It directly-follows whether this liquid will be water.
 
-After reading a command when point out that being from language studies is available:
+After reading a command when the activist is marked-visible and point out that being from language studies is available:
 	if the player's command includes "point out" or the player's command includes "point":
 		replace the matched text with "language".
 
@@ -3711,6 +3711,8 @@ After laughing when the current interlocutor is Slango and the current quip is w
 mutter darkly is a performative quip. It directly-follows explain Brock's probable reasons.
 	The comment is "I grumble under our breath about people who are hung up on their personal issues when there are useful jobs to be done."
 	The reply is "Slango pretends not to hear."
+	It quip-supplies Slango.
+
 
 Report smiling when the current interlocutor is Slango and the current quip is explain Brock's probable reasons:
 	say "We smile crookedly. You aren't enjoying the imputation about you and Brock because you're pretty much afraid it's right, and I'm anxious to get on to the part of this encounter where we head down to the yacht and put Atlantis behind us. So it's not the most sincere smile we've ever smiled." instead.
@@ -4061,10 +4063,10 @@ quip-about-paste is a weakly-phrased performative quip. The printed name is "qui
 that-does-it is an NPC-directed quip.
 	The reply is "'Perfect,' Lena says, regarding her contraband possessions with satisfaction[trust-me]. 'Welcome back, Andra and Guest[queue whether she hath seen slango].'"
 
-Instead of saying yes when encourage Lena to contact slango is available:
+Instead of saying yes when current interlocutor is Lena and encourage Lena to contact slango is available:
 	try discussing  encourage Lena to contact slango;
 
-Instead of saying no when encourage Lena to contact slango is available:
+Instead of saying no when current interlocutor is Lena and encourage Lena to contact slango is available:
 	say "Are you mad? That's exactly what we need her to do.";
 
  encourage Lena to contact Slango is a performative quip. The comment is "'[if immediately]That would be extremely helpful[otherwise]It would be very useful if you could contact Slango[end if],' we say. Perhaps we can finally get off this island and back into our separate skins, which would not be one minute too soon for me.".
@@ -4330,10 +4332,10 @@ Every turn when the current quip is lojban-greeting:
 	try discussing that we do not speak Lojban;
 	try Higgate discussing that we do not speak Lojban.
 
-Instead of saying no when that we do not speak lojban is available:
+Instead of saying no when the current interlocutor is Professor Higgate and that we do not speak lojban is available:
 	try discussing that we do not.
 
-Instead of saying yes when that we do not speak lojban is available:
+Instead of saying yes when the current interlocutor is Professor Higgate and that we do not speak lojban is available:
 	say "I could, of course, but she'd then wonder where we picked it up. Better not.";
 	now that we do not speak lojban is listed.
 
@@ -4522,11 +4524,11 @@ A first conversation-reply rule when the current interlocutor is professor Water
 	if the player does not recollect please-get-out and please-get-out is not listed in the planned conversation of Professor Waterstone and Professor Waterstone recollects at least two quips:
 		queue please-get-out as postponed obligatory.
 
-After reading a command when make up some excuse is available:
+After reading a command when Waterstone is marked-visible and make up some excuse is available:
 	if the player's command includes "make":
 		replace the matched text with "excuse".
 
-Instead of saying yes when make up some excuse is available:
+Instead of saying yes when Waterstone is marked-visible and make up some excuse is available:
 	try discussing make up some excuse.
 
  make up some excuse is a performative quip.
@@ -5158,10 +5160,10 @@ hi-there-Im is an NPC-directed quip.
 	The nag is "Mother just stands there with an arched eyebrow. Any minute now I'm going to blurt something out through sheer force of habit."
 	It is restrictive.
 
-Instead of saying no when we're his girlfriend is available:
+Instead of saying no when my mother is marked-visible and we're his girlfriend is available:
 	say "What are the other options, really? Shall we claim to be burgling my apartment? To be a roommate she's never heard of, who is living with furniture that obviously isn't here? To be the gas man, a fire inspector, the police? None of that has a hope of working."
 
-Instead of saying yes when we're his girlfriend is available:
+Instead of saying yes when my mother is marked-visible and we're his girlfriend is available:
 	try discussing we're his girlfriend.
 
  we're his girlfriend is an informative quip. The comment is "'Yes [--] sort of. We've been... I mean, we've been on a few dates.' That's you, and I have to say you don't sound as keen on dating ourself as you might.".
@@ -5183,7 +5185,7 @@ I know you think it's a bit sketchy that my mother just walks into my apartment 
  It quip-supplies My mother.
  It directly-follows we're his girlfriend.
 
-Instead of shrugging when we don't ken is available:
+Instead of shrugging when my mother is marked-visible and we don't ken is available:
 	try discussing we don't ken.
 
 we don't ken is an informative quip.
@@ -5218,7 +5220,7 @@ The comment is "'I'm sure he wouldn't do anything dangerous,' we lie. 'After all
  It quip-supplies my mother.
  It directly-follows suggest the truth.
 
-Instead of saying no when probably nothing is available:
+Instead of saying no when my mother is marked-visible and probably nothing is available:
 	try discussing probably nothing.
 
 probably nothing is an unlisted weakly-phrased informative quip. The comment is "'No, no. Probably nothing,' we say.".
@@ -5230,7 +5232,7 @@ probably nothing is an unlisted weakly-phrased informative quip. The comment is 
 not-planning-dinner is an NPC-directed quip.
 	The reply is "'Evidently not planning to have dinner at home this evening,' she comments."
 
-Instead of saying no or saying yes when explain we might go out is available:
+Instead of saying no or saying yes when my mother is marked-visible and explain we might go out is available:
 	try discussing explain we might go out.
 
  explain we might go out is a performative quip. The comment is "'We were thinking of going out.'".
@@ -5240,7 +5242,7 @@ Instead of saying no or saying yes when explain we might go out is available:
  It is restrictive.
  It directly-follows not-planning-dinner.
 
-Instead of shrugging when  claim he didn't say  is available:
+Instead of shrugging when my mother is marked-visible and  claim he didn't say  is available:
 	try discussing  claim he didn't say .
 
  claim he didn't say is a weakly-phrased performative quip. The comment is "'Er... he didn't tell me. I assume he'll explain later.'".
@@ -5349,10 +5351,10 @@ lay out our reasons is a performative quip. The comment is "'I want to do someth
  It quip-supplies father.
  It directly-follows what-are-you.
 
-Instead of saying no when be comforting is available:
+Instead of saying no when father is marked-visible and be comforting is available:
 	try discussing be comforting.
 
-Instead of saying sorry when be comforting is available:
+Instead of saying sorry when father is marked-visible and be comforting is available:
 	try discussing be comforting.
 
 be comforting is a weakly-phrased performative quip. Understand "comfort" as be comforting. The comment is "'It did matter to me that you tried to help,' we say. 'But no one here is ever going to try my solution. I have to leave if I want to, well, to take my shot at saving the world, essentially.'".
