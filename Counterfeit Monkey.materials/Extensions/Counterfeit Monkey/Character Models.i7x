@@ -82,6 +82,7 @@ After reading a command:
         replace the regular expression "(hi|hello|hey), (.*)" in N with "\2, hello";
         change the text of the player's command to N.
 
+Understand "hey" or "hiya" or "yo" as hailing.
 
 The Hostel-as-subject is a subject. The printed name is "hostel". Understand "hostel" as the hostel-as-subject.
 The Fleur d'or-as-subject is a subject. The printed name is "Fleur d'or hotel". Understand "hotel" or "fleur" or "d'or" as the fleur d'or-as-subject.
