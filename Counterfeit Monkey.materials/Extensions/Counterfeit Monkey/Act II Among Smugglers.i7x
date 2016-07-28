@@ -248,7 +248,9 @@ Before going west from the Tin Hut:
 	if the player encloses the secret-plans and the secret-plans are not in the closed backpack:
 		say "I don't think [we] want to show off the plans around the Authenticator." instead;
 	now the Authenticator is nowhere;
-	say "I don't think there's anything showing that should get us into trouble. Timidly I open the door; the Authenticator has her back to us. [We] slip out. She makes one more turn in place [--] monocled gaze sliding across us without stopping [--] and then she strides away to the north."
+	if the player is on the tarpaulin-covered masses:
+		silently try exiting;
+	say "I don't think there's anything showing that should get us into trouble. Timidly I open the door; the Authenticator has her back to us. [We] slip out. She makes one more turn in place [--] monocled gaze sliding across us without stopping [--] and then she strides away to the north.";
 
 The storage-exterior is in the Fish Market. The printed name is "tin building". Understand "tin" or "hut" or "building" or "rusting" or "corrugated" as storage-exterior. It fronts east. The initial appearance is "Just east of here is a rusting corrugated tin building, which was built to house various possessions of the fishermen."
 	The description is "It looks very much as though it would like to fall down, but it has not done so yet."
