@@ -1220,7 +1220,7 @@ The backpack is in the Screening Room. The initial appearance is "My [backpack] 
 	It covers the torso-area.
 	The introduction of the backpack is "I figured that it would be undisturbed there for a couple of hours, in the dark and out of sight, and if anyone found it they would probably turn it in to Lost and Found. But it is a big relief to find it still there."
 
-The backpack is a player's holdall. The description of the backpack is "Mine: a little bit worn, but capacious. It doesn't have any identifying marks on it, and I thought a brand-new bag would look more suspicious[if the backpack is open]. It currently gapes open[else]. It's closed[end if]." The backpack is openable and closed and transparent.
+The backpack is a container[player's holdall]. The description of the backpack is "Mine: a little bit worn, but capacious. It doesn't have any identifying marks on it, and I thought a brand-new bag would look more suspicious[if the backpack is open]. It currently gapes open[else]. It's closed[end if]." The backpack is openable and closed and transparent.
 
 The backpack contains a flash drive. The description of the flash drive is "This is it: all my notes; the syllable-and word-generating programs from which I built my language vocabulary; the lexicon and pronunciation guide and grammatical descriptions.
 
