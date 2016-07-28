@@ -1228,6 +1228,10 @@ And then there's the research to support the product: citations; copies of journ
 
 It's everything I've been working on for the last three years."
 
+Sanity-check doing something to the backpack when the heavy pack is in location:
+	if the subcommand of the backpack matches the text "pack":
+		now the noun is the heavy pack.
+
 Carry out taking the flash drive:
 	complete "Get my backpack from the cinema";
 	record "retrieving the backpack" as achieved.
