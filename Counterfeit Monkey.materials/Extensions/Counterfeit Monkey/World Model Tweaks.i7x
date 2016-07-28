@@ -1002,22 +1002,26 @@ Section 2 - Roads
 A road is a kind of room. Definition: a room is offroad if it is not a road.
 
 An approach-finding rule (this is the explicitly enter car rule):
-	if location is a road and the room approach-heading of location is a road and the player is not in a car:
-		if an operational fueled car (called target) is in location:
-			let target ignition be a random ignition which is part of target;
-			unless we have switched on target ignition:
+	if location is a High Street and the room approach-heading of location is The Roundabout and the player is not in a noisy car:
+		unless "Find transport for getting past the traffic on High Street" is completed:
+			if an operational fueled car (called target) is in location:
+				let target ignition be a random ignition which is part of target;
 				unless the path so far of the player is empty:
 					say "[path-walked so far][line break][paragraph break]";
-				try entering the target;
+				if the player is not in the target:
+					try entering the target;
 				if the player is in the target:
 					try closing the target;
 					if the target is closed and target ignition is switched off:
 						try switching on target ignition;
-		otherwise:
-			if a car (called target) is in location:
-				unless the path so far of the player is empty:
-					say "[path-walked so far][line break][paragraph break]";
-				try entering the target.
+						if target ignition is switched on:
+							assign "Find transport for getting past the traffic on High Street" at High Street;
+							complete "Find transport for getting past the traffic on High Street";
+			otherwise:
+				if a car (called second target) is in location and the player is not in second target:
+					unless the path so far of the player is empty:
+						say "[path-walked so far][line break][paragraph break]";
+					try entering second target.
 
 The explicitly enter car rule is listed before the actual approach movement rule in the approach-finding rules.
 
@@ -1171,7 +1175,7 @@ Report switching on an ignition:
 [Instead of going somewhere by car when the ignition is switched off: say "The ignition is off at the moment." ]
 
 Carry out going somewhere by car:
-	complete "Find transport for getting past the traffic on High Street";
+	[complete "Find transport for getting past the traffic on High Street";]
 	record "traveling by car" as achieved.
 
 A car can be operational or damaged. A car is usually damaged.
