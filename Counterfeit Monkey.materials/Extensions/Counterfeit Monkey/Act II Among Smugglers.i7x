@@ -389,6 +389,8 @@ In-direction of Tin Hut is down. [Into the crawlspace]
 
 Understand "hide [text]" as a mistake ("A natural impulse, but I don't think she's coming in here. And if she did, the last thing [we][']d want would be to be caught hiding. The key thing is to be in plain sight and obviously innocent.") when the location is the Tin Hut and the Authenticator is in the Fish Market.
 
+Understand "hide" as a mistake ("A natural impulse, but I don't think she's coming in here. And if she did, the last thing [we][']d want would be to be caught hiding. The key thing is to be in plain sight and obviously innocent.") when the location is the Tin Hut and the Authenticator is in the Fish Market.
+
 Rule for listing exits while looking in the tin hut:
 	do nothing instead.
 
