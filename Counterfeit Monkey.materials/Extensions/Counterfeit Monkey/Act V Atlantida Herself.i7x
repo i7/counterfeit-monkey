@@ -119,13 +119,10 @@ The odor is a fixed in place thing in Wonderland. The printed name is "od[our]".
 Instead of examining the odor:
 	try smelling the odor.
 
-Sanity-check doing something when the action requires a touchable noun and the noun is the odor:
+Sanity-check doing something when the odor must be touched:
 	if the current action is the action of smelling the odor:
 		make no decision;
 	say "[We] can't actually touch [the odor], seeing as it is, in fact, just a vapor in the air, a dispersion of molecules dispersed through the rest of the local atmosphere." instead.
-
-Sanity-check doing something when the action requires a touchable second noun and the second noun is the odor:
-	try touching the odor instead.
 
 Instead of smelling the odor:
 	say "I can't quite place it. There's definitely a smell, but what is it [i]like[/i]? Strawberries? Burning rubber? Freshly chopped chives? Every time I think I've pinned it, it goes again, sliding sideways to smell like something else."
