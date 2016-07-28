@@ -1414,9 +1414,11 @@ Definition: a thing is drink-form:
 	no.
 
 Rule for deciding the concealed possessions of the bartender:
-	if not looking and the particular possession is the generic cocktail:
+	if looking:
+		yes;
+	if the particular possession is the generic cocktail:
 		no;
-	if not looking and the particular possession is the homonym paddle:
+	if the particular possession is the homonym paddle:
 		no;
 	yes.
 
