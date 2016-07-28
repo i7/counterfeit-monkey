@@ -257,6 +257,7 @@ Understand "unslango" as unslangoing. Unslangoing is an action out of world.
 
 Carry out unslangoing:
 	assign "Finally find Slango at Counterfeit Monkey" at Counterfeit monkey;
+	now Slango recollects who we seem;
 	complete "Finally find Slango at Counterfeit Monkey".
 
 
