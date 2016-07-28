@@ -682,29 +682,29 @@ Understand the command "tell" as something new.
 Understand the command "say" as something new.
 Understand the command "answer" as something new.
 
-Discussing it with is an action applying to two visible things. 
+Discussing it with is an action applying to two visible things.
 
 Carry out discussing it with:
 	try discussing the noun.
 
-Discussing is an action applying to one visible thing.  Understand "talk [any listed-plausible quip]" as discussing.
+Discussing is an action applying to one visible thing. Understand "talk [any listed-plausible quip]" as discussing.
 
 [[We do this in order to strip out *dozens* of variant grammar lines that would otherwise have to be accounted for, and to make sure that DISCUSS GEORGE is handled right, even if GEORGE is the interlocutor -- some odd corner cases can arise if we try to handle everything just via grammar lines, where Inform gets confused between whether we're asking someone something or whether we're asking about that person.]
 
-After reading a command when the player's command includes "ask/talk/say/tell/discuss/answer" (this is the remove interlocutor's name rule):  
+After reading a command when the player's command includes "ask/talk/say/tell/discuss/answer" (this is the remove interlocutor's name rule):
 	if disambiguating quips is true:
 		make no decision; [for some reason, when used on disambiguating command lines, this rule a) takes forever and then b) doesn't work right anyway]
 	if the player's command includes "with/to [a talk-eligible person]":
 		cut the matched text;
 	if the player's command includes "[a talk-eligible person] that/about":
 		cut the matched text;
-	if the player's command includes "[a talk-eligible person]": 
+	if the player's command includes "[a talk-eligible person]":
 		if the player's command matches "ask/tell/talk/say/tell/discuss/answer [a talk-eligible person]":
 			do nothing;
 		otherwise:
 			cut the matched text;
 	if the player's command includes "ask/tell/talk about":
-		replace the matched text with "say"; ]
+		replace the matched text with "say";]
 
 Understand "talk [any listed-plausible quip]" or "discuss [any listed-plausible quip]" or "change the subject to [any listed-plausible quip]" or "change subject to [any listed-plausible quip]" as discussing.
 
@@ -796,10 +796,11 @@ Section 5 - Marking Changes of Subject
 Subject-changing is an activity. [When we change the subject, several things happen. First, we make note of how high up we joined the new thread, so that we can use this information for future relevance calculations. Second, we erase old queued conversation if it was optional: the interlocutor might have been planning to follow up on something in the previous thread, but now that we've changed the subject, we don't want the interlocutor breaking flow by going back to that old conversation.]
 
 Rule for subject-changing (this is the default changing of subject rule):
-	if addressing everyone is true:
+	[if addressing everyone is true:
 		repeat with listener running through other people:
 			delete purgeable conversation for the listener;
-	otherwise if the current interlocutor is a person:
+	otherwise ]
+	if the current interlocutor is a person:
 		delete purgeable conversation for the current interlocutor;
 	now the grandparent quip is the noun;
 
@@ -909,18 +910,18 @@ To say queue a/the/-- (chosen quip - a quip) last for (bystander - a person):
 		add the chosen quip to the planned conversation of the person asked, if absent;
 
 To casually queue a/the/-- (chosen quip - a quip): [* This is designed to make it easier to have NPCs react to player actions with verbal responses. We need a way to make sure we don't make asides that disrupt required flow, so these remarks aren't queued if the current quip is something restrictive. We also guard against repetition and against queuing for someone who isn't the current interlocutor. It won't do anything when "addressing everyone" because it won't know who should have the quip queued.]
-	unless addressing everyone is true: 
-		if the current quip is not restrictive and the current interlocutor does not recollect the chosen quip:
-			unless the chosen quip quip-supplies someone who is not the current interlocutor:
-				queue the chosen quip as immediate optional. 
+	[unless addressing everyone is true:]
+	if the current quip is not restrictive and the current interlocutor does not recollect the chosen quip:
+		unless the chosen quip quip-supplies someone who is not the current interlocutor:
+			queue the chosen quip as immediate optional.
 
 To follow-up queue a/the/-- (chosen quip - a quip): [* This is designed to make it easier to have NPCs react to player actions with verbal responses. We need a way to make sure we don't make asides that disrupt required flow, so these remarks aren't queued if the current quip is something restrictive. We also guard against repetition and against queuing for someone who isn't the current interlocutor. It won't do anything when "addressing everyone" because it won't know who should have the quip queued.]
-	unless addressing everyone is true: 
-		if the current quip is not restrictive and the current interlocutor does not recollect the chosen quip:
-			unless the chosen quip quip-supplies someone who is not the current interlocutor:
-				queue the chosen quip as postponed optional. 
+	[unless addressing everyone is true:]
+	if the current quip is not restrictive and the current interlocutor does not recollect the chosen quip:
+		unless the chosen quip quip-supplies someone who is not the current interlocutor:
+			queue the chosen quip as postponed optional.
 
-To queue a/the/-- (chosen quip - a quip):  
+To queue a/the/-- (chosen quip - a quip):
 	if the current interlocutor is a person:
 		add the chosen quip at entry 1 in the planned conversation of the current interlocutor, if absent.
 
@@ -1045,16 +1046,16 @@ A conversation-reply rule while doing something (this is the everyone speaks if 
 		perform the next queued conversation for every person.
 
 A conversation-reply rule when the player is already-talking (this is the character pursues own ideas rule):
-	unless addressing everyone is true:
-		if the current quip is dead-ended and the current interlocutor is a person who is not finished talking: 
-			carry out the avoiding talking heads activity; 
-			perform the next queued conversation for the current interlocutor.
+	[unless addressing everyone is true:]
+	if the current quip is dead-ended and the current interlocutor is a person who is not finished talking:
+		carry out the avoiding talking heads activity;
+		perform the next queued conversation for the current interlocutor.
 
 A conversation-reply rule (this is the characters remind you if you are ignoring them rule):
 	if the current interlocutor is silent thus far and the nag of the current quip is not "":
 		carry out the avoiding talking heads activity;
 		now the current interlocutor is already-talking;
-		say "[nag of the current quip][paragraph break]". 
+		say "[nag of the current quip][paragraph break]".
 
 Section 4 - Avoiding Talking Heads
 
@@ -1253,13 +1254,15 @@ Farewell type is a protocol type that varies. Farewell type is explicit.
 backup-repository is a container.
 
 To set the current/-- interlocutor to (N - a person):
-	now the current interlocutor is N;
-	repeat with item running through things in the backup-repository:
-		if the item quip-supplies the current interlocutor:
-			move the item to the quip-repository;
-	repeat with item running through things in the quip-repository:
-		if the item quip-supplies someone who is not the current interlocutor: 
-			move the item to the backup-repository;
+	unless the current interlocutor is N:
+		now the current interlocutor is N;
+		repeat with item running through things in the backup-repository:
+			if the item quip-supplies the current interlocutor:
+				move the item to the quip-repository;
+		[now everything in the backup-repository that quip-supplies the current interlocutor is in the quip-repository;]
+		repeat with item running through things in the quip-repository:
+			if the item quip-supplies someone who is not the current interlocutor:
+				move the item to the backup-repository;
 
 To reset the interlocutor:
 	unless the current interlocutor is nothing:
