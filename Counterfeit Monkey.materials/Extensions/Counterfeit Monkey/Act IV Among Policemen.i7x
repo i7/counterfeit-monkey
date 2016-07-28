@@ -14,12 +14,7 @@ Section 1 - Tall Street
 East of Roundabout is Tall Street. Tall Street is a southern road. The description is "Tall Street is very quiet. No celebrations have reached this far, and neither is there any business today; so it has an air of dull abandonment. At the [east] end the street bends to go around an old park rarely visited."
 The distant-rotunda is scenery in Tall Street. It is distant. The printed name is "rotunda". Understand "rotunda" and "distant" and "blue" and "bureau of orthography" as the distant-rotunda.
 
-To decide whether (item - a thing) must be touched:
-    if the item is the noun and the action requires a touchable noun, yes;
-    if the item is the second noun and the action requires a touchable second noun, yes;
-    no.
-
-Instead of doing anything when the distant-rotunda must be touched: say "From here [we] can't reach."
+Instead of doing anything when the location is Tall Street and distant-rotunda must be touched: say "From here [we] can't reach."
 
 The description of the distant-rotunda is "It is brighter blue than the sky and soars many [if the player wears the Britishizing goggles]storeys[otherwise]stories[end if]."
 
