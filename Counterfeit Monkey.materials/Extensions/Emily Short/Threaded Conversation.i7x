@@ -163,7 +163,7 @@ Part One - Learning Facts
 Fact-awareness relates various people to various facts. The verb to know implies the fact-awareness relation.
 
 Before printing the name of a fact (called target) while an actor discussing something (this is the broadcast spoken facts rule):
-	repeat with listener running through people who can see the person asked:
+	repeat with listener running through people-present[who can see the person asked]:
 		now the listener knows the target;
 
 Before printing the name of a fact (called target) (this is the player learns facts rule):
@@ -173,7 +173,7 @@ Rule for printing the name of a fact (this is the silence actual output of facts
 	do nothing instead.
 	
 To say forget (target - a fact):
-	repeat with listener running through people who can see the person asked:
+	repeat with listener running through people-present[who can see the person asked]:
 		now the listener does not know the target.
 
 
