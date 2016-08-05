@@ -827,7 +827,7 @@ Lives of the Lexicographers is a book on the LSR bookcase. The description of Li
 Section 4 - Department Office
 
 The Language Studies Department Office is southeast of Samuel Johnson Hall.
-	The description is "This big, slightly drab area holds such useful objects as the [mailboxes] and [secretary's computer]. On ordinary days the secretary would be in as well, presiding over affairs. The offices of individual professors lie [north] and [west][if Higgate's office door is closed and office-door-1 is closed], though both doors are closed[otherwise if Higgate's office door is closed], though the west door is closed[otherwise if office-door-1 is closed], though the north door is closed[end if]."
+	The description is "This big, slightly drab area holds such useful objects as the [mailboxes] and the [secretary's computer]. On ordinary days the secretary would be in as well, presiding over affairs. The offices of individual professors lie [north] and [west][if Higgate's office door is closed and office-door-1 is closed], though both doors are closed[otherwise if Higgate's office door is closed], though the west door is closed[otherwise if office-door-1 is closed], though the north door is closed[end if]."
 	The introduction is "This corner office was won in a battle of wills with several other departments during the most recent rebuilding drive. Professor Waterstone is fond of reminding the others that he was the one to obtain this fav[our]able position whenever there is a disagreement about procedure."
 
 Rule for listing exits when looking in the Language Studies Department Office:
