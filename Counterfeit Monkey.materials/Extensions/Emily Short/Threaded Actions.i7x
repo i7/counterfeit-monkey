@@ -39,22 +39,22 @@ Before attacking someone who is not the current interlocutor  (this is the impli
 
 	
 Instead of kissing someone (this is the standard kiss redirection rule):
-	if a seductive quip (called target quip) is available
+	[if a seductive quip (called target quip) is available
 	begin;
 		if the number of available seductive quips is 1, try discussing the target quip;
 		otherwise recommend available seductive quips; 
-	otherwise; 
-		carry out the refusing to kiss activity with the noun;
-	end if.
+	otherwise;]
+	carry out the refusing to kiss activity with the noun.
+	[end if.]
 
 Instead of attacking someone (this is the standard attack redirection rule):
-	if an offensive quip (called target quip) is available
+	[if an offensive quip (called target quip) is available
 	begin;
 		if the number of available offensive quips is 1, try discussing the target quip;
 		otherwise recommend available offensive quips; 
-	otherwise; 
-		carry out the refusing to attack activity with the noun;
-	end if.
+	otherwise;]
+	carry out the refusing to attack activity with the noun.
+	[end if.]
 
 Carry out buying something from someone (this is the standard purchasing rule):
 	let N be the list of available purchasing quips which mention the noun;

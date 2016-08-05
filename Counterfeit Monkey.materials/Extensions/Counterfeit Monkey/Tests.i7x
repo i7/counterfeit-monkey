@@ -484,6 +484,11 @@ Carry out listing all sizes:
 Understand "list mentions" as listing-subjects. Listing-subjects is an action out of world. Carry out listing-subjects:
 		show relation mentioning relation.
 
+Understand "list available subjects" as listing-available-subjects. Listing-available-subjects is an action out of world. Carry out listing-available-subjects:
+		say "[available-subjects in brace notation]".
+
+
+
 Understand "list quips" as listing-quips. Listing-quips is an action out of world.
 Carry out listing-quips:
 	let L be the list of quips;

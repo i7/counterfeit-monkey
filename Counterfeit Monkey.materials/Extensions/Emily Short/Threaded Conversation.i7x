@@ -48,7 +48,7 @@ A subject is a kind of object. The specification of a subject is "Something that
 
 Part Two - Defining Quips
 
-A quip is a kind of thing. The specification of a quip is "A comment for the player to make. NPCs may respond in different ways."
+A quip is a kind of scenery thing. The specification of a quip is "A comment for the player to make. NPCs may respond in different ways."
 	A quip has some text called the comment. [The PC's speech.]
 	A quip has some text called the reply. [The NPC's response.]
 	A quip has some text called the nag.
@@ -83,8 +83,7 @@ The grandparent quip is a quip that varies.
 [	This could have been done with a list, but in practice it is more efficient, and not significantly less useful, to track only the most recent three.	]
 
 
-generic-quip is a quip. Availability rule for generic-quip: it is off-limits. [A starter quip, so that TC will compile even before any conversation has been defined.]
-
+generic-quip is a npc-directed quip. Availability rule for generic-quip: it is off-limits. [A starter quip, so that TC will compile even before any conversation has been defined.]
 
 Definition: a quip is viable if it is in the quip-repository.
 
@@ -109,9 +108,9 @@ Part One - Quip Relations to Things
 
 Mentioning relates various quips to various things. The verb to mention implies the mentioning relation.
 
-Understand "[something related by mentioning]" as a quip.
+[Understand "[something related by mentioning]" as a quip.
 [	This apparently humble line means that we can define a quip with the line "It mentions the queen." and then the player can use any vocabulary that pertains to the queen to raise this quip;	]
-[	as in ASK ABOUT WOMAN, ASK ABOUT MONARCH, and so on.	]
+[	as in ASK ABOUT WOMAN, ASK ABOUT MONARCH, and so on.	]]
 
 
 Part Two - Quip Relations to Speakers
@@ -139,7 +138,7 @@ The verb to indirectly-follow (it indirectly-follows, they indirectly-follow, it
 When play begins (this is the indirect-following initializing rule):
 	repeat with item running through quips:
 		now every quip which is directly-followed by the item is indirectly-followed by the item.
-	
+
 To decide whether immediately:
 [This convenient check allows us to vary quip text depending on whether we're following up on earlier conversation right away or belatedly.]
 	decide on whether or not the current quip indirectly-follows the previous quip.
@@ -171,7 +170,7 @@ Before printing the name of a fact (called target) (this is the player learns fa
 
 Rule for printing the name of a fact (this is the silence actual output of facts rule):
 	do nothing instead.
-	
+
 To say forget (target - a fact):
 	repeat with listener running through people-present[who can see the person asked]:
 		now the listener does not know the target.
@@ -223,8 +222,8 @@ Part Two - Cache-building
 [	To make the cache build again, delete the original cache from your source and re-compile the game.	]
 [		]
 [	To make this feature work, add the line	]
-[		
-	      Use hard cache.	
+[
+	      Use hard cache.
 		]
 [	to the main source of the game.	]
 
@@ -245,8 +244,8 @@ Definition: a quip is cachable
 	or it is dead-ended
 	or it is shallowly-buried.
 
-	
-	
+
+
 
 VOLUME TWO - RECOMMENDING QUIPS TO THE PLAYER
 
@@ -271,7 +270,7 @@ A plausibility rule for a quip (called target) (this is the avoid topic-change w
 
 The last plausibility rule (this is the generic plausibility rule):
 	it is plausible.
-	
+
 Chapter 1 - Quippish relevance
 
 A quip can be marked-relevant or unmarked-relevant. [This has a crunchy name because it's a completely internal way of stashing information.]
@@ -289,7 +288,7 @@ Definition: a quip (called target) is quippishly-relevant:
 	otherwise:
 		now the target is unmarked-relevant;
 		no.
-		
+
 Chapter 2 -
 
 Definition: a quip is recent
@@ -382,7 +381,7 @@ An availability rule for a mid-thread quip (called the target) (this is the rest
 
 The last availability rule (this is the generic availability rule):
 	it is available.
-	
+
 
 Book 3- Peripheral Quips
 
@@ -420,10 +419,10 @@ Listing plausible quips is an activity.
 A quip can be listed-plausible or unlisted-plausible.
 
 Before listing plausible quips (this is the initialize quip plausibility before hinting rule):
-	now every quip is unlisted-plausible.
+	now every quip in quip-repository is unlisted-plausible.
 
 Before asking which do you mean (this is the initialize quip plausibility before disambiguating rule):
-	now every quip is unlisted-plausible.
+	now every quip in quip-repository is unlisted-plausible.
 
 After printing the name of a quip (called target) while asking which do you mean (this is the mark disambiguated quips plausible rule):
 	now the target is listed-plausible.
@@ -494,7 +493,8 @@ Section 3 - Offer Hint Quips Rule
 
 This is the offer hint quips rule:
 	if how-many-people-here is positive:
-		carry out the listing plausible quips activity. [Hint about quips if there's something on the table that's particularly unusual.]
+		if tc reparse flag is false and sp reparse flag is false: [Don't want to also display hints before conversation, if we just implicitly greeted someone]
+			carry out the listing plausible quips activity. [Hint about quips if there's something on the table that's particularly unusual.]
 
 The offer hint quips rule is listed after the adjust light rule in the turn sequence rules.
 
@@ -504,9 +504,13 @@ The offer hint quips rule is listed after the adjust light rule in the turn sequ
 This is the relabel available quips rule:
 	if how-many-people-here is positive:
 		now every quip is flagged-unready;
+		now available-subjects is {};
 		repeat with item running through things in the quip-repository:
 			if item is available:
-				now item is flagged-ready. [* This means that we can also remove things from the quip-repository in order to skip considering them; if for instance we only want to consider quips relevant to the current scene, or the current character.]
+				now item is flagged-ready;
+				repeat with new subject running through things mentioned by item:
+					add new subject to available-subjects, if absent.
+				[* This means that we can also remove things from the quip-repository in order to skip considering them; if for instance we only want to consider quips relevant to the current scene, or the current character.]
 
 A quip can be flagged-ready or flagged-unready.
 
@@ -522,8 +526,8 @@ Book 5 - Disambiguation
 Section 1 - Stripping Add-ons from Player's Command
 
 After reading a command (this is the flatten ifs rule):
-	if the player's command includes "ask if":
-		replace the matched text with "ask whether".
+	while the player's command includes "if": ["ask if":]
+		replace the matched text with "whether". ["ask whether".]
 
 After reading a command:
 	if the player's command matches "say" or the player's command matches "ask": [These are for cases where the player has provided a simple command with no specific direct object]
@@ -537,8 +541,6 @@ Section 2 - Identifying Matched Quips
 
 [Bland as these may seem, they're the result of a lot of testing about what produces the most sensible defaults. Modify with caution.]
 
-Definition: a direction is parse-matched if it fits the parse list.
-Definition: a room is parse-matched if it fits the parse list.
 Definition: a thing is parse-matched if it fits the parse list.
 
 To decide whether (N - an object) fits the parse list:
@@ -558,60 +560,14 @@ Include (-
 #endif;
 -)
 
-To decide whether everything matched is a quip:
-	(- CheckParseList() -)
+Disambiguating quips is initially false.
 
-Include (-
-#ifndef CheckParseList;
-[ CheckParseList obj i k marker;
-	marker = 0;
-	for (i=1 : i<=number_of_classes : i++) {
-	while (((match_classes-->marker) ~= i) && ((match_classes-->marker) ~= -i)) marker++;
-	k = match_list-->marker;
-	if (~~(k ofclass (+ quip +) ) ) rfalse;
-	}
-	rtrue;
-];
-#endif;
-
-#ifndef MatchList;
-[ Matchlist obj i k  j stored_obj stored_wn marker;
-	marker = 0;
-	for (i=1 : i<=number_of_classes : i++) {
-		while (((match_classes-->marker) ~= i) && ((match_classes-->marker) ~= -i)) marker++;
-		k = match_list-->marker;
-		j = k.parse_name();
-		if (j > stored_wn)
-		{
-			stored_wn = j;
-			stored_obj = k;
-		}
-		if (i == number_of_classes)
-		{	print "";
-		}
-	}
-	if (stored_wn > 0)
-	{	return stored_obj;
-	}
-];
-#endif;
-
--)
-
-Disambiguating quips is a truth state that varies. Disambiguating quips is false.
-
-Rule for asking which do you mean when everything matched is a quip:
+Rule for asking which do you mean when everything parse-matched is a quip:
+	if the current interlocutor is not a person,
+		say "[text of cannot talk without an interlocutor rule response (A)][line break]" instead; ['You're not talking to anyone right now']
 	now disambiguating quips is true;
 	carry out the listing matched quips activity.
 
-[After reading a command when disambiguating quips is true:
-	now disambiguating quips is false;
-	let best choice be the pre-matched quip;
-	reject the player's command;
-	rule succeeds.]
-
-To decide what object is the pre-matched quip:
-	(- Matchlist() -)
 
 Section 3 - Listing Matched Quips to the Player
 
@@ -623,7 +579,12 @@ Rule for listing matched quips (this is the standard quip disambiguation rule):
 	repeat with item running through L:
 		choose a blank row in the Table of Scored Listing;
 		now output entry is the item; [* There are easier ways to do this, but I've handcoded it for speed reasons.]
-	say "What would you like to discuss: [the prepared list delimited in disjunctive style]?"
+	say "What would you like to discuss: [the prepared list delimited in disjunctive style]?"[;
+	let N be 1;
+	repeat through Table of Scored Listing:
+		now disambiguation id of output entry is N;
+		increment N.]
+[The disambiguation choices get numbered back-to-front sometimes, but I'll leave this commented out until I know more about why and what the correct way to fix it is.]
 
 
 Section 4 - Preferring Quips Among Multiple Matches
@@ -664,10 +625,18 @@ Understand "herself" as a woman when the item described is the current interlocu
 
 Definition: a person is talk-eligible if it is the current interlocutor.
 
-The quip-repository is a privately-named transparent closed unopenable container.
+The quip-repository is a privately-named proper-named transparent closed unopenable scenery container. The printed name of the quip-repository is "[player]".
 
 When play begins (this is the move all quips to the quip-repository rule):
 	now every quip that is not npc-directed is in the quip-repository.
+
+Rule for writing a paragraph about the quip-repository:
+	do nothing instead.
+
+Rule for disclosing contents of the quip-repository:
+	do nothing instead.
+
+A ranking rule for the quip-repository: decrease description-rank of the quip-repository by 100.
 
 Book 2 - The Discussing Action
 
@@ -675,81 +644,161 @@ Book 2 - The Discussing Action
 
 This will need to manage the player input to allow different conversation actions; it will need to determine which quips are currently plausible (either to be put on the menu or to be recommended).]
 
-Section 1 - Understanding and Basic Definitions
 
-Understand the command "ask" as something new.
-Understand the command "tell" as something new.
-Understand the command "say" as something new.
-Understand the command "answer" as something new.
+Chapter 1 - Understanding and basic definitions
+
+Understand the commands "ask", "tell", "say",  "discuss", "answer", "a", "t" as something new.
+
+[To say regarding it: now the prior named object is nothing. [A useful shorthand.]] [Useful for what?]
+
+[This is slightly redundant as listed-plausible is a subset of flagged-ready. But it might speed up the identification of listed-plausible quips.]
+Definition: a quip is typable if it is listed-plausible or it is flagged-ready.
+
+After deciding the scope of the player while discussing, discussing something with (this is the quip scope handling rule):
+	place the quip-repository in scope.
+	[This is a bit of a hack, but the out-of-play container turns out to be a very convenient way to control the scope-limiting of quips.]
+
+Available-subjects is a list of objects that varies.
+
+After deciding the scope of the player while subject-asking (this is the ask about scope handling rule):
+	repeat with item running through available-subjects:
+		place item in scope.
+
+[Understand "say bye/goodbye/cheerio/farewell" as leavetaking. [The system needs to recognize that this is not an attempt at conversation.]]
+
+Section 1a - discussing it with
 
 Discussing it with is an action applying to two visible things.
+
+Understand
+	"discuss [a typable quip] with [someone]" or
+	"say [a typable quip] to [someone]" as discussing it with
+	when the current interlocutor is a person.
+
+Understand
+	"tell [someone] [a typable informative quip]" or
+	"ask [someone] [a typable questioning quip]" or
+	"tell [someone] that/about [a typable informative quip]" or
+	"ask [someone] that/about [a typable questioning quip]" as discussing it with (with nouns reversed)
+	when the current interlocutor is a person.
+
+Does the player mean discussing a listed-plausible quip:
+	it is very likely.
+
+Definition: a thing is relevant-subject if it is listed in available-subjects.
+
+Understand "ask about/-- [a relevant-subject thing]" or "tell about/-- [a relevant-subject thing]" as subject-asking. Subject-asking is an action applying to one visible thing.
+
+Carry out subject-asking:
+	if there is a listed-plausible quip (called target quip) that mentions the noun:
+		try discussing target quip;
+	otherwise:
+		try discussing a random flagged-ready quip that mentions the noun.
+
+Understand "ask about/for [something]" as object-asking. Object-asking is an action applying to one visible thing.
+
+[This is meant as a catch-all for asking about unimplemented present things]
+
+Carry out object-asking:
+	if the current interlocutor is nothing and how-many-people-here is 1:
+		let new interlocutor be entry 1 of people-present;
+		implicitly greet new interlocutor;
+		if new interlocutor is the current interlocutor:
+			follow the relabel available quips rule;
+			if there is a flagged-ready quip that mentions the noun:
+				try subject-asking the noun instead;
+	if the current interlocutor is nothing:
+		say "[We] [aren't] talking to anyone." instead;
+	if the current interlocutor carries the noun:
+		try requesting the noun from the current interlocutor;
+	otherwise:
+		unless the noun is a distant backdrop or the noun is a person:
+			try showing the noun to the current interlocutor;
+		otherwise:
+			carry out the refusing comment by activity with the current interlocutor.
+
+After reading a command when the current interlocutor is not nothing and player's command includes "ask/tell/a/t" and the player's command includes "about" and the player's command does not include "ask/tell/a/t about" (this is the strip interlocutor from input rule):
+	if the player's command includes "[someone talk-eligible]":
+		cut the matched text.
+
+Rule for supplying a missing noun when discussing something with and the player's command includes "[a quip]" (this is the interlocutor is assumed rule):
+	try discussing the second noun instead.
+
+Check discussing something with a talk-ineligible person (this is the implicitly greet a named potential conversant rule):
+	implicitly greet the second noun;
+	if the second noun is the current interlocutor:
+		follow the relabel available quips rule; [We need to ready the set of quips supplying this new interlocutor.]
+	otherwise:
+		say "[We] [aren't] talking to [the second noun]." (A) instead.
 
 Carry out discussing it with:
 	try discussing the noun.
 
-Discussing is an action applying to one visible thing. Understand "talk [any listed-plausible quip]" as discussing.
+Section 1b - discussing
 
-[[We do this in order to strip out *dozens* of variant grammar lines that would otherwise have to be accounted for, and to make sure that DISCUSS GEORGE is handled right, even if GEORGE is the interlocutor -- some odd corner cases can arise if we try to handle everything just via grammar lines, where Inform gets confused between whether we're asking someone something or whether we're asking about that person.]
+Discussing is an action applying to one visible thing.
 
-After reading a command when the player's command includes "ask/talk/say/tell/discuss/answer" (this is the remove interlocutor's name rule):
-	if disambiguating quips is true:
-		make no decision; [for some reason, when used on disambiguating command lines, this rule a) takes forever and then b) doesn't work right anyway]
-	if the player's command includes "with/to [a talk-eligible person]":
-		cut the matched text;
-	if the player's command includes "[a talk-eligible person] that/about":
-		cut the matched text;
-	if the player's command includes "[a talk-eligible person]":
-		if the player's command matches "ask/tell/talk/say/tell/discuss/answer [a talk-eligible person]":
-			do nothing;
-		otherwise:
-			cut the matched text;
-	if the player's command includes "ask/tell/talk about":
-		replace the matched text with "say";]
+Understand
+	"talk about/-- [a typable quip]" and
+	"say [a typable quip]" and
+	"discuss [a typable quip]" as discussing.
 
-Understand "talk [any listed-plausible quip]" or "discuss [any listed-plausible quip]" or "change the subject to [any listed-plausible quip]" or "change subject to [any listed-plausible quip]" as discussing.
+Understand
+	"change the/-- subject to [a typable quip]" and
+	"tell about [a typable informative quip]" and
+	"ask about [a typable questioning quip]" and
+	"tell [a typable informative quip]" and
+	"ask [a typable questioning quip]" as discussing.
 
-Understand "t [any listed-plausible quip]" or  "tell [any listed-plausible quip]" or "say [any  listed-plausible quip]" or "ask [any listed-plausible quip]" or  "tell about [any listed-plausible quip]" or "talk about [any  listed-plausible quip]" or "ask about [any listed-plausible quip]" or "a [any  listed-plausible quip]" as discussing.
+Understand the command "a" as "ask".
+Understand the command "t" as "tell".
 
-Understand "[any listed-plausible performative quip]" as discussing.
+Understand "[a typable quip]" as discussing. [This originally read "a typable performative quip"; let's see if this greater permissiveness breaks anything...]
 
 
-Understand "tell [a talk-eligible person] that/about [any listed-plausible quip]" or "ask [a talk-eligible person] that/about [any listed-plausible quip]" or "tell [a talk-eligible person] [any listed-plausible quip]" or "ask [a talk-eligible person] [any listed-plausible quip]" as discussing it with (with nouns reversed). Understand "discuss [any listed-plausible quip] with [a talk-eligible person]" or "say [any listed-plausible quip] to [a talk-eligible person]" as discussing it with.
+Chapter 2 - Setting discussing variables
 
-Understand "talk [any flagged-ready quip]" or "discuss [any flagged-ready quip]" or "change subject to [any flagged-ready quip]" as discussing.
-
-Understand "t [any flagged-ready quip]" or "say [any flagged-ready quip]" or "ask [any flagged-ready quip]" or  "tell about [any flagged-ready quip]" or "talk about [any flagged-ready quip]" or "ask about [any flagged-ready quip]" or "a [any flagged-ready quip]" as discussing.
-
-Understand "tell [a talk-eligible person] that/about [any flagged-ready quip]" or "ask [a talk-eligible person] that/about [any flagged-ready quip]" or "tell [a talk-eligible person] [any flagged-ready quip]" or "ask [a talk-eligible person] [any flagged-ready quip]" as discussing it with (with nouns reversed). Understand "discuss [any flagged-ready quip] with [a talk-eligible person]" or "say [any flagged-ready quip] to [a talk-eligible person]" as discussing it with.
-
-Understand "[any flagged-ready performative quip]" as discussing.
-
-Understand "talk [any flagged-ready quip]" or "discuss [any flagged-ready quip]" or "change subject to [any flagged-ready quip]" as discussing.
-
-Understand "t [any flagged-ready quip]" or "say [any flagged-ready quip]" or "ask [any flagged-ready quip]" or "a [any flagged-ready quip]" as discussing.
-
-Understand "[any flagged-ready performative quip]" as discussing.
-
-[Does the player mean discussing a listed-plausible quip:
-	it is very likely.]
-
-Section 2 - Setting Discussing Variables
-
-[The discussing action has a person called listener (matched as "with"). ]
+Break after reply is a truth state that varies. [If a character has multiple replies in a single turn, we don't want the final paragraph breaks to stack up.]
 
 Setting action variables for an actor discussing:
-	[if the person asked is the player:
-		now the listener is the current interlocutor;
-	otherwise now the listener is the player; ]
-	if the current quip is not the noun: [do not advance these records if an NPC is merely replying to a topic the PC already introduced]
+	now break after reply is true;
+	if the current quip is not the noun and the noun is a quip: [Do not advance these records if an NPC is merely replying to a topic the PC introduced.]
 		now the grandparent quip is the previous quip;
 		now the previous quip is the current quip;
 		now the current quip is the noun.
 
+
+Chapter 3 - Tailored error messages
+
+Discussing is verbalizing. Discussing something with is verbalizing.
+
+Before doing something with a quip (this is the quips are not tangible rule):
+	unless we are verbalizing, say "[text of  parser error internal rule response (A)][line break]" (A) instead; ['I didn't understand that sentence.']
+	continue the action.
+
+Rule for printing a parser error when the latest parser error is the can't see any such thing error (this is the quips are not visible rule):
+	if the player's command includes "say/ask/answer/discuss/tell/a/t":
+		if the current interlocutor is a person and tc reparse flag is false:
+			say "That doesn't seem to be a topic of conversation at the moment." (A) instead;
+		otherwise:
+			unless the player's command includes "[any person]":
+				say "[We] [aren't] talking to anyone." (B) instead; ['You aren't talking to anyone.']
+	make no decision.
+
+Rule for printing a parser error when the latest parser error is the noun did not make sense in that context error (this is the prevent context error rule):
+	if (the player's command includes "say/ask/answer/discuss/tell/a/t"[ or the player's command includes "[any quip]"]) and the current interlocutor is not nothing:
+		say "[text of parser error internal rule response (N)][line break]" (A) instead; ['Not a verb I recognize.']
+	otherwise:
+		make no decision.
+
 Section 3 - The Player Discussing
 
 Check discussing (this is the cannot talk without an interlocutor rule):
-	if the current interlocutor is not a person:
-		say "You're not currently talking to anyone." instead.
+	unless the current interlocutor is a person:
+		if how-many-people-here is 1:
+			try discussing the noun with entry 1 of people-present instead;
+		otherwise:
+			say "[We]['re not] talking to anyone right [now]." (A) instead.
 
 Carry out discussing (this is the stop any planned casual follow-ups rule):
 	[unless addressing everyone is true:]
@@ -768,7 +817,7 @@ Section 4 - Other People Discussing
 
 [Check someone discussing something when the player can see the actor (this is the move interlocutors rule):
 	now the actor is the current interlocutor.]
-	
+
 Carry out someone discussing (this is the everyone has heard rule):
 	[now every person who can see the person asked recollects the noun.]
 	if  the actor is marked-visible:
@@ -781,7 +830,7 @@ Carry out someone discussing something which is not quippishly-relevant (this is
 
 Carry out someone discussing a one-time quip which quip-supplies the current interlocutor (this is the eliminate used quips rule):
 	now the noun is nowhere; [This is so that we are steadily whittling away from the quip-repository any unnecessary single-use quips]
-	
+
 Report someone discussing something (this is the interlocutor's reply rule):
 	if the noun provides the property reply:
 		say "[reply of the noun][paragraph break]".
@@ -1063,14 +1112,18 @@ Avoiding talking heads is an activity. [This is where we put in some kind of sce
 
 Section 5 - Weak phrasing
 
-A quip can be strongly-phrased or weakly-phrased. A quip is usually strongly-phrased. [* A quip may be designated "weakly-phrased" if we want to allow the interlocutor to transition smoothly into another line of conversation without a paragraph break. This is completely at the discretion of the author, and if it's left out, nothing bad results.]
+A quip can be strongly-phrased or weakly-phrased. A quip is usually strongly-phrased.
+
+[* A quip may be designated "weakly-phrased" if we want to allow the interlocutor to transition smoothly into another line of conversation without a paragraph break. This is completely at the discretion of the author, and if it's left out, nothing bad results.]
 
 Rule for avoiding talking heads (this is the default pause-construction rule):[* If the current quip from which we are building is weak, we want to fold it into one continuous paragraph with one intervening beat.]
 	if the current interlocutor is a person and the current interlocutor is ready for transition:
 		if the current quip is strongly-phrased and a random chance of 1 in 2 succeeds:
 			say "[beat][line break][paragraph break]";
 	otherwise:
-		say "[beat][if a random chance of 1 in 2 succeeds] [run paragraph on][otherwise][line break][paragraph break][end if]". [* This generates text that is printed between lines of conversation when the conversation is supposed to pause for a bit. The complexity of the structure is so that it can produce not-completely-predictable text structures. Specifically, an NPC's comment can either be beat-opened (an ugly term, I know) or not. If it is, that indicates that the comment begins with its own special, handwritten beat; in that case, we don't need to generate a grounding beat every time before we print it. If, however, the NPC's comment begins with quoted text, we do want a beat to separate it from the quoted text that preceded.]
+		say "[beat][if a random chance of 1 in 2 succeeds] [run paragraph on][otherwise][line break][paragraph break][end if]".
+
+[* This generates text that is printed between lines of conversation when the conversation is supposed to pause for a bit. The complexity of the structure is so that it can produce not-completely-predictable text structures. Specifically, an NPC's comment can either be beat-opened (an ugly term, I know) or not. If it is, that indicates that the comment begins with its own special, handwritten beat; in that case, we don't need to generate a grounding beat every time before we print it. If, however, the NPC's comment begins with quoted text, we do want a beat to separate it from the quoted text that preceded.]
 
 Report someone discussing a weakly-phrased dead-ended quip when the current interlocutor is a person and the current interlocutor is likely to continue and addressing everyone is false:
 	if the noun provides the property reply:
@@ -1086,7 +1139,13 @@ Rule for beat-producing (this is the default beat rule):
 
 Volume 5 - Conversational Pragmatics
 
-Book 1 - Ignorance
+Book I - Asking An NPC To Discuss
+
+Before asking someone to try verbalizing (this is the correct indirect instructions rule):
+	if the current interlocutor is not the person asked, implicitly greet the person asked;
+	try discussing the noun instead.
+
+Book 2 - Ignorance
 
 Expressing ignorance by something is an activity.
 
@@ -1126,11 +1185,14 @@ Carry out changing the subject (this is the standard report other subjects rule)
 
 Book 3 - Starting a Conversation
 
-Section 1 - Reparse after chatting (for use with Smarter Parser by Aaron Reed)
+tc reparse flag is a truth state that varies. [Whether we need to reparse the command after implicitly greeting someone and resetting quips' availability]
+
+Section 1 - Reparse after chatting
 
 Definition: a person is talk-ineligible if it is not talk-eligible.
 
 Understand "ask [someone talk-ineligible] about [text]" as starting a conversation with it about.
+Understand "ask [someone talk-ineligible] for [text]" as starting a conversation with it about.
 Understand "tell [someone talk-ineligible] about [text]" as starting a conversation with it about.
 
 Starting a conversation with it about is an action applying to one thing and one topic.
@@ -1141,11 +1203,11 @@ Carry out starting a conversation with it about:
 	implicitly greet the noun;
 	if the noun is the current interlocutor:
 		follow the relabel available quips rule;
-		now the reborn command is the substituted form of "[player's command]";
-		now sp reparse flag is true.
-	
-Understand "ask [a talk-eligible person] about [text]" as asking it about.
-Understand "tell [a talk-eligible person] about [text]" as telling it about.
+		now tc reparse flag is true.
+
+Rule for reading a command when tc reparse flag is true (this is the reset after retrying input rule):
+	now tc reparse flag is false;
+[	showme the current action;]
 
 Book 4 - Conversing
 
@@ -1154,6 +1216,7 @@ Book 4 - Conversing
 Asking someone about something is conversing.
 Telling someone about something is conversing.
 Answering someone that something is conversing.
+Asking someone for something is conversing.
 
 Before conversing when the noun is the player (this is the no talking to yourself rule):
 	say "There's no need to talk to yourself." instead.
@@ -1170,7 +1233,7 @@ Rule for reading a command when last command is not "" (this is the re-reading i
 
 A first turn sequence rule when the last command is not "" (this is the stop the turn sequence if re-checking input rule):
 	rule succeeds.
-	
+
 last command is text that varies.
 
 Before showing something to someone when the second noun is not the current interlocutor (this is the showing needs an interlocutor rule):
@@ -1267,6 +1330,8 @@ To set the current/-- interlocutor to (N - a person):
 To reset the interlocutor:
 	unless the current interlocutor is nothing:
 		truncate the planned conversation of the current interlocutor to 0 entries;
+	now the quip-repository is nowhere;
+	now available-subjects is {};
 	now the current interlocutor is nothing;
 	now the current quip is generic-quip;
 	now the previous quip is generic-quip.
@@ -1279,7 +1344,7 @@ Saying goodbye to is an action applying to one visible thing.
 
 Understand "say bye/goodbye/farewell/cheerio to [someone]" as saying goodbye to.
 
-Check saying goodbye to something when the noun is not the current interlocutor (this is the can't say goodbye to someonfe you're not talking to rule):
+Check saying goodbye to something when the noun is not the current interlocutor (this is the can't say goodbye to someone you're not talking to rule):
 	if addressing everyone is true:
 		say "You're not talking exclusively to [the noun]." instead;
 	otherwise:
@@ -1353,7 +1418,7 @@ and menu-based conversation, where the player is offered a list of things to say
 	2) Tell Jill that the chicken coop was robbed.
 
 or, sometimes,
-	
+
 	1) "Jill, have you seen your no-good layabout brother Jack anywhere?"
 	2) "Look, Farmer Jill, I think a fox got into the chickens."
 
@@ -1474,7 +1539,7 @@ Then we could write
 	The reply is "'I really don't know,' says [the current interlocutor].'"
 
 And now (assuming that the quip is otherwise an appropriate thing to say at this juncture) the player can cause this quip with any of
-	
+
 	>ask fred about the weather
 	>ask fred about rain
 	>ask fred about storms
@@ -1556,14 +1621,14 @@ We might implement such a system like this:
 
 	Check remembering:
 		if the number of quips which are recollected by someone is 0, say "You have not yet had any conversations to remember." instead.
-	
+
 	Carry out remembering:
 		let N be 0;
 		repeat with item running through quips which mention the noun:
 			increase N by 1;
 			if someone recollects the item, say "You have discussed '[the item]' with [the list of other people who recollect the item].";
 		if N is 0, say "You haven't discussed [the noun] with anyone yet."
-	
+
 	Definition: a person is other if he is not the player.
 
 With just these structures, we could already write a game in which the player can ask various characters about a wide range of topics, follow up with further quips, and review important questions that he's already asked. But there is much more that we can do by keeping track of the context of the conversation:
@@ -1654,7 +1719,7 @@ There are, as usual with rulebooks, numerous ways to tamper with all this. We ma
 		if greeting is not happening, it is off-limits.
 
 to use a quip only during a particular scene;
-	
+
 	Availability rule for what was cost of building ark:
 		if the player does not know flood-imminent, it is off-limits.
 
@@ -1689,7 +1754,7 @@ The mid-thread plausibility rule checks whether a quip falls outside the current
 	If we are currently discussing a quip that indirectly-follows other quips, we're construed to be in the middle of a thread. If not, anything can happen, so we skip the rest of the criteria. But if so:
 
 	A quip that belongs to the same thread -- that indirectly-follows one of the things we've just been talking about -- is not a change of subject. Such a quip is defined to be "quippishly-relevant".
-	
+
 	A quip that doesn't indirectly-follow any other quips (defined as "shallowly-buried") is understood to be the beginning of a new thread, so that's not marked as implausible either (though see the next rule).
 
 	But we do mark implausible a quip that indirectly-follows other quips -- that is, is deep in its own thread -- but doesn't belong to the thread we're currently on.
@@ -1728,7 +1793,7 @@ On a smaller scale, we can modify the output of the offer hint quips rule on a c
 	listing matched quips
 	listing plausible quips
 	listing peripheral quips
-	
+
 Listing matched quips forms the question Inform asks when disambiguating between several quips the player might want to say.
 
 Listing plausible quips forms the "You could..." line.
@@ -1787,7 +1852,7 @@ Very often in the course of the conversation we will want to add new items to a 
 	proceed to (some quip) [that is, queue this quip and then follow the character pursues own idea rule *immediately*, so that we get a pause followed by this new piece of conversation]
 
 All of these can be used within say tokens, as in
-	
+
 	say "'The weather is fine,' says Captain Hook. [queue picnic-proposal]".
 
 Section: Interrupting between the comment and the reply
@@ -1798,7 +1863,7 @@ If we want a character to respond atypically -- for instance, by ignoring all of
 
 	Procedural rule during Shadows:
 		substitute the distracted reply rule for the prepare a reply rule.
-	
+
 	This is the distracted reply rule:
 		if the person asked is not the player, make no decision;
 		if the noun is not quippishly-relevant:
@@ -1825,7 +1890,7 @@ If we want to queue something for the current interlocutor to say, we can write,
 
 If we wanted to have one piece of conversation give the character an idea for something to say later, we might write
 
-	Carry out Lily discussing why-Ireland:	
+	Carry out Lily discussing why-Ireland:
 		queue madhouses worse than prisons.
 
 -- though TC provides a shortcut for this that we can fold into spoken comments and replys. If we do
@@ -1915,7 +1980,7 @@ In this example, quips mention both things in the real world (the barmaid) and c
 	Include Threaded Conversation by Emily Short.
 
 	Section 1 - Model world
-	
+
 	When play begins:
 		say "It is a long and riotous evening, full of unlikely stories and tall tales. But now most of the patrons have gone away to their rooms to sleep, or have passed out before the fire. Even the two black bitch pups are curled on the hearth-stone, snuffling through tiny wet noses, and pawing the air in sleep. Now is the time to find out whether the rumors that brought you to this neighborhood are true."
 
@@ -1937,7 +2002,7 @@ In this example, quips mention both things in the real world (the barmaid) and c
 		It mentions immortality, rumors.
 		The comment is "'Where I come from, over the black hills there, they say that men this side of the mountain live as old as Methuselah,' you remark. 'They say the secret of eternal life is here.'".
 		The reply is "'Oh, do they?' she says, sweeping crumbs of cheese and crusty bread into her hand. 'The oldest codger around these parts is old Garrick, and I wouldn't put him beyond his four-score and ten.'".
-	
+
 	where Garrick lives is a questioning quip.
 		It mentions Old Garrick.
 		The comment is "'Where does this old Garrick live?' you ask, trying not to seem too eager.".
@@ -1949,7 +2014,7 @@ In this example, quips mention both things in the real world (the barmaid) and c
 		It mentions barmaid.
 		The comment is "'What about yourself?' you ask. 'Are you from around these parts?'"
 		The reply is "'If by these parts you mean between the black hills and the river, no,' she says. 'I was born just at the far side of the ford. But I came over here to work.'"
-	
+
 	whether she's heard the stories is a questioning quip.
 		It mentions barmaid, immortality, rumors.
 		The comment is "'Have you heard any stories of long-living men?' you press her."
@@ -1971,7 +2036,7 @@ Now we add a second character, a wanderer who has stopped at the inn for the eve
 	Include Threaded Conversation by Emily Short.
 
 	Section 1 - Model world
-	
+
 	When play begins:
 		say "It is a long and riotous evening, full of unlikely stories and tall tales. But now most of the patrons have gone away to their rooms to sleep, or have passed out before the fire. Even the two black bitch pups are curled on the hearth-stone, snuffling through tiny wet noses, and pawing the air in sleep. Now is the time to find out whether the rumors that brought you to this neighborhood are true."
 
@@ -1999,7 +2064,7 @@ Now we add a second character, a wanderer who has stopped at the inn for the eve
 		It mentions immortality, rumors.
 		The comment is "'Where I come from, over the black hills there, they say that men this side of the mountain live as old as Methuselah,' you remark. 'They say the secret of eternal life is here.'"
 		The reply is "[if the current interlocutor is the barmaid]'Oh, do they?' she says, sweeping crumbs of cheese and crusty bread into her hand. 'The oldest codger around these parts is old Garrick, and I wouldn't put him beyond his four-score and ten.'[otherwise]'That's true enough,' says [the current interlocutor]. 'Though there are plenty around here that will deny it.'[end if]".
-	
+
 	where Garrick lives is a questioning quip.
 		It mentions Old Garrick.
 		The comment is "'Where does this old Garrick live?' you ask, trying not to seem too eager.".
@@ -2012,14 +2077,14 @@ Now we add a second character, a wanderer who has stopped at the inn for the eve
 		The comment is "'What about yourself?' you ask. 'Are you from around these parts?'".
 		The reply is "'If by these parts you mean between the black hills and the river, no,' she says. 'I was born just at the far side of the ford. But I came over here to work.'"
 		It quip-supplies the barmaid.
-	
+
 	whether she's heard the stories is a questioning quip.
 		It mentions barmaid, immortality, rumors.
 		The comment is "'Have you heard any stories of long-living men?' you press her.".
 		The reply is "She pinches her lips and scrubs at a circle-shaped stain on the table before her. 'If you're a fool come looking for a spring of life or a vein of immortal gold buried in the black hills, you'd do better to go back home where you come from.'"
 		It indirectly-follows whether the rumors tell truly.
 		It quip-supplies the barmaid.
-	
+
 	Test one with "talk to the barmaid / ask the barmaid about rumors / ask about garrick / talk to the wanderer / ask him about the rumors".
 
 Notice how both the barmaid and the wanderer can answer the first quip (and, using text variations, answer it in different ways); but only the barmaid knows about the last three quips, thanks to the quip-supplying relation.
@@ -2033,7 +2098,7 @@ Here we're going to let the player ask the wanderer the same question several ti
 	Include Threaded Conversation by Emily Short.
 
 	Section 1 - Model world
-	
+
 	When play begins:
 		say "It is a long and riotous evening, full of unlikely stories and tall tales. But now most of the patrons have gone away to their rooms to sleep, or have passed out before the fire. Even the two black bitch pups are curled on the hearth-stone, snuffling through tiny wet noses, and pawing the air in sleep. Now is the time to find out whether the rumors that brought you to this neighborhood are true."
 
@@ -2061,7 +2126,7 @@ Here we're going to let the player ask the wanderer the same question several ti
 		It mentions immortality, rumors.
 		The comment is "'Where I come from, over the black hills there, they say that men this side of the mountain live as old as Methuselah,' you remark. 'They say the secret of eternal life is here.'"
 		The reply is "[if the current interlocutor is the barmaid]'Oh, do they?' she says, sweeping crumbs of cheese and crusty bread into her hand. 'The oldest codger around these parts is old Garrick, and I wouldn't put him beyond his four-score and ten.'[otherwise]'That's true enough,' says [the current interlocutor]. 'Though there are plenty around here that will deny it.'[end if]".
-	
+
 	where Garrick lives is a questioning quip.
 		It mentions Old Garrick.
 		The comment is "'Where does this old Garrick live?' you ask, trying not to seem too eager.".
@@ -2074,14 +2139,14 @@ Here we're going to let the player ask the wanderer the same question several ti
 		The comment is "'What about yourself?' you ask. 'Are you from around these parts?'".
 		The reply is "'If by these parts you mean between the black hills and the river, no,' she says. 'I was born just at the far side of the ford. But I came over here to work.'"
 		It quip-supplies the barmaid.
-	
+
 	whether she's heard the stories is a questioning quip.
 		It mentions barmaid, immortality, rumors.
 		The comment is "'Have you heard any stories of long-living men?' you press her.".
 		The reply is "She pinches her lips and scrubs at a circle-shaped stain on the table before her. 'If you're a fool come looking for a spring of life or a vein of immortal gold buried in the black hills, you'd do better to go back home where you come from.'"
 		It indirectly-follows whether the rumors tell truly.
 		It quip-supplies the barmaid.
-	
+
 	what he knows is a questioning quip.
 		It mentions rumors, wanderer.
 		The comment is "[one of]'What do you know about those who live forever?' you ask[or]'Tell me more about the secrets of eternal life concealed here,' you plead[stopping]."
@@ -2097,7 +2162,7 @@ Here we're going to let the player ask the wanderer the same question several ti
 		The reply is "'Why not?' He searches through the pockets of his coat, and then the pockets of his trousers, and finally -- looking surprised and much relieved -- finds what he was looking for tucked away in his boot. 'Here it is: have a look.' [paragraph break]And he extends for view an old-fashioned locket: painted on an ivory rectangle are the images of two young men. They are painted so small that it would be hard to guarantee that you would recognize them again."
 		It quip-supplies the wanderer.
 		It indirectly-follows what he knows.
-	
+
 	Test me with "talk to the wanderer / ask him about the rumors / ask what he knows / g / g / g / ask whether I may see the miniature".
 
 Notice that we are allowed to ask the "what he knows" quip a number of times, but that after the first time of asking, it stops being suggested to the player: the "you could ask..." sentence only suggests things that the player hasn't tried yet. This is one of several reasons why we shouldn't hide new information in the later stages of the same quip. If we want to give the player more information about a subject, we should make separate quips. Having a repeatable quip is useful mostly in that it lets the player hear again information that he might have forgotten and that is vital to the progress of the game.
@@ -2119,7 +2184,7 @@ We also do not provide any cues about special things to say, and we avoid using 
 	Include Threaded Conversation by Emily Short.
 
 	The Black Palace is a room. The King of Everything is here.
-	
+
 	Quips are usually repeatable.  The offer hint quips rule is not listed in any rulebook.
 
 	Instead of discussing something which is recollected by the current interlocutor:
@@ -2127,7 +2192,7 @@ We also do not provide any cues about special things to say, and we avoid using 
 	Who is a subject.
 
 	[The following quip was automatically built with Conversation Builder, though we could have written it by hand. Notice that we use printed name to avoid having the word "is" as part of the quip name; this confuses Inform at compilation time.]
-	
+
 	who he seems is a questioning quip.
 		The printed name is "who he is". The true-name is "who he seems".
 		Understand "is" as who he seems.
@@ -2147,7 +2212,7 @@ To keep this example simple, we will have just one piece of information that cou
 To do this, we add a "characters think rule", which we call once before the active conversation rule (that is, before the current interlocutor has a chance to respond to us) and once at the end of the conversation-reply rules (after the current interlocutor has said anything she is going to say). We could write any amount of reasoning into the characters think rule, even allowing them to draw complicated conclusions from facts.
 
 The specific quips are once again generated by Conversation Builder.
-	
+
 	*: "Conferences"
 
 	Include Threaded Conversation by Emily Short.
@@ -2157,13 +2222,13 @@ The specific quips are once again generated by Conversation Builder.
 	Thurg is a man in the Conference Chamber. Lavine is a woman in the Conference Chamber.
 
 	The characters think rule is listed before the active conversation rule in the every turn rules.
-	
+
 	This is the characters think rule:
 		repeat with item running through people who are not the player:
 			consider the thinking rules for the item.
-	
+
 	A conversation-reply rule:
-		follow the characters think rule.	
+		follow the characters think rule.
 
 	The thinking rules are an object-based rulebook.
 

@@ -928,11 +928,14 @@ Definition: a thing is farmer-carried if the farmer carries it.
 
 Carry out requesting it from:
 	let N be a random quip which mentions the noun;
-	try discussing N instead.
+	try discussing N with the second noun instead.
 
 Availability rule for what seems for sale:
 	if the farmer carries something, make no decision;
 	otherwise it is off-limits.
+
+Before requesting something from the farmer when the player does not recollect what seems for sale:
+	try buying the noun from the farmer instead.
 
 Before buying something from the farmer when the player does not recollect what seems for sale:
 	if the farmer is not the current interlocutor:
@@ -943,7 +946,7 @@ Before buying something from the farmer when the player does not recollect what 
  what seems for sale is a questioning quip.
  The printed name is "what is for sale". The true-name is "what seems for sale".
  Understand "is" or "market" as what seems for sale.
- It mentions farmer.
+ It mentions farmer, farmer's stall.
  The comment is "'What is for sale?' we ask.".
  The reply is "'[one of]We have available [a list of things *in the farmer][or]I got [a list of things *in the farmer][or]All that's left this time of day is [a list of things *in the farmer][at random],' the farmer replies.".
  It quip-supplies the farmer.
@@ -956,7 +959,7 @@ Availability rule for what seems for sale-2:
  what seems for sale-2 is a questioning quip.
  The printed name is "what is for sale". The true-name is "what seems for sale-2".
  Understand "is" or "sale" as what seems for sale-2.
- It mentions farmer.
+ It mentions farmer, farmer's stall.
  The comment is "'What is for sale?' we ask.".
  The reply is "'Oh, nothing,' says the farmer. 'But as my mother-in-law is in town, I thought I would make the most of the market day.' He smiles at us.".
  It quip-supplies the farmer.
@@ -1588,7 +1591,7 @@ Does the player mean asking the bartender to try attacking something with the ho
 Does the player mean asking the bartender to try attacking something with something that is not the homonym paddle:
 	it is very unlikely.
 
-After reading a command:
+After reading a command when location is Fleur d'Or Drinks Club:
 	if the player's command includes "tell bartender to" or the player's command includes "ask bartender to":
 		replace the matched text with "bartender,".
 
@@ -2267,6 +2270,15 @@ Does the player mean buying the ticket-taker from someone:
 Does the player mean buying the hidden-ticket from the ticket-taker:
 	it is very likely.
 
+Does the player mean subject-asking the hidden-ticket:
+	it is very likely.
+
+Sanity-check object-asking the ticket when the current interlocutor is the ticket-taker:
+	try discussing buy movie-ticket instead.
+
+Sanity-check object-asking the hidden-ticket when the current interlocutor is the ticket-taker:
+	try discussing buy movie-ticket instead.
+
 buy movie-ticket is a purchasing quip.
 The printed name is "buy a movie ticket".
 Understand "buy the/a ticket" or "movie" or "ticket" or "buy a/the movie ticket" as buy movie-ticket.
@@ -2564,7 +2576,7 @@ whether the attendant enjoys her job is a questioning quip. The comment is "'Do 
 Understand "if" as whether the attendant enjoys her job.
 
 Rule for quip-introducing sympathize on the topic of parents:
-	say "You apparently have a strong urge to sympath[ize] on the topic of parents. I don't."
+	say "You apparently have a strong urge to sympath[ize] on the topic of parents. I don't.[line break]"
 
  sympathize on the topic of parents is a performative quip.
 	Understand "sympathise" as sympathize on the topic of parents.
@@ -2619,7 +2631,7 @@ Rule for beat-producing when the current interlocutor is the backpacking girl:
 			say run paragraph on;
 			try the backpacking girl trying examining the player;
 		otherwise:
-			say "[one of]She tosses restlessly[or]She turns over[or]She bangs her head against the space where a pillow ought to be[or]She scrubs at her eyes with one hand[at random].[run paragraph on]".
+			say "[one of]She tosses restlessly[or]She turns over[or]She bangs her head against the space where a pillow ought to be[or]She scrubs at her eyes with one hand[at random]. ".
 
 
 Report the backpacking girl trying dropping the heavy pack:
@@ -2869,6 +2881,10 @@ A first conversation-reply rule when the current interlocutor is the backpacking
 Instead of waiting when the current interlocutor is the backpacking girl:
 	say "[beat][paragraph break]".
 
+A last after reading a command rule when current interlocutor is the backpacking girl and ask for privacy is available:
+	if the player's command matches "ask for privacy":
+		change the text of the player's command to "privacy";
+
  ask for privacy is a repeatable performative quip. The comment is "[one of]'Would you mind giving me a minute?' we say. 'Sorry, I could just use a little privacy.'[or]'I'd really like to be alone for a couple of minutes now,' we say.[or]'This will just take a moment, but you would you mind giving me the room to myself?' we say.[at random]".
  It mentions yourself.
  The reply is "[one of]She waves a hand generously. 'Don't worry about it, do whatever you've got to do, I don't care,' she says. 'I'm so tired I couldn't move a muscle, but I've seen everything. I have three brothers and two sisters and I'm in women's rugby so I'm pretty hard to shock.'[or]She just grunts and waves to indicate we may strip naked at our leisure.[or]'Dude,' she says, exasperated. 'If you wanted a private room you should've not stayed at a freaking hostel.'[or]She moans.[stopping]".
@@ -2897,9 +2913,9 @@ The generic adversative of the gift shop volunteer is "[one of]alas[or]sadly[at 
 The secondary apology of the gift shop volunteer is "[one of]sorry[or]I'm afraid[at random]".
 The generic confrontational of the gift shop volunteer is "miss".
 
-Instead of asking the gift shop volunteer about something:
+Instead of object-asking when the current interlocutor is the gift shop volunteer:
 	let N be "[one of][generic adversative of the gift shop volunteer][or][secondary apology of the gift shop volunteer][at random]" in sentence case;
-	say "[We] frame up a vague question about [the topic understood].
+	say "[We] frame up a vague question about [the noun].
 
 [beat] '[N], don't think I can help you there.'[paragraph break][conditional paragraph break]"
 ["[We] frame up a vague question about [second noun].]
@@ -3481,8 +3497,8 @@ Understand "choose [something]" as showing it to when play the game is the curre
 Rule for supplying a missing second noun while showing something to:
 	if the current interlocutor is a person:
 		now the second noun is the current interlocutor;
-	otherwise if the number of marked-visible other people is 1:
-		implicitly greet a random marked-visible person who is not the player;
+	otherwise if how-many-people-here is 1:
+		implicitly greet entry 1 of people-present;
 		now the second noun is the current interlocutor;
 	otherwise:
 		say "You must show [the noun] to someone specific."
@@ -4389,7 +4405,7 @@ It is background-information.
 [Originally the novel was in Fukhian, which I picked off a webpage on constructed languages because I liked the look of the script. But later, reading Arika Okrent's In the Land of Invented Languages as research, I ran across Láadan, which — with its highly elaborated vocabulary of body parts, and the sentence modifiers that mean things like 'I say the following in a loving fashion' — seemed a more likely language for constructed romance novels.]
 
 whether Professor Higgate would translate part of the novel is a questioning quip.
- Understand "she" or "if" as whether Professor Higgate would translate part of the novel.
+ Understand "she" as whether Professor Higgate would translate part of the novel.
  It mentions constructed language, heart to heart.
  The comment is "'Would you translate part of it for me?' we ask.".
  The reply is "The blush deepens. 'Well, some of the ideas are hard to express in single words of English. This suffix, for instance, has a pejorative meaning, so when it is attached to, ah, the word for experiencing a sexual act, that may suggest that the act was unsatisfactory.'".
@@ -4397,7 +4413,6 @@ whether Professor Higgate would translate part of the novel is a questioning qui
  It directly-follows what the romance novel might be.
 
  whether she encountered activists is a questioning quip.
- Understand "if" as whether she encountered activists.
  It mentions activist, environment.
  The comment is "'Did you by any chance encounter some activists on the way into the building?' we ask. 'I had a hard time getting in here because they wanted to talk to me about toxi waste.'".
  The reply is "'[i]Yes[/i],' she says. 'Now those kids! If we needed proof of the social value of what we're doing here, they're a perfect example. I admire their enthusiasm, don't get me wrong, but the whole idea of single-term manipulation is hopelessly wrong-headed, and if they spent a semester or two in a Language Studies class, they'd understand why.'".
@@ -4409,7 +4424,7 @@ An availability rule for whether she might let us into the language studies semi
 		it is off-limits.
 
 whether she might let us into the language studies seminar room is a questioning quip. The comment is "'Could you possibly let me into the Language Studies Seminar Room?' we ask. 'There's something I'd like to do in there.'".
- Understand "higgate" or "her" or "professor" or "if" as whether she might let us into the language studies seminar room.
+ Understand "higgate" or "her" or "professor" as whether she might let us into the language studies seminar room.
  It mentions seminar door, key.
  The reply is "'Er... Do you have some student ID or something? You see, and this is a little embarrassing, I'm afraid I'm not quite placing you at the moment, and I'm not supposed to allow students into that room unless they have some affiliation with the department.'
 
@@ -4596,8 +4611,9 @@ Please-get-out is an NPC-directed quip.
 Report someone discussing please-get-out:
 	say "[reply of please-get-out][paragraph break]";
 	reset the interlocutor;
-	try going south;
-	shut the office instead.
+	move the player to Language Studies Department Office, without printing a room description;
+	shut the office;
+	try looking instead.
 
 [At the time when Waterstone gets annoyed:
 	if the location is not Waterstone's Office:
@@ -5037,7 +5053,7 @@ Section 9 - Mother
 [ Mother has only this one brief scene, but she's an important influence in Alex's life: a source of cosmopolitan and slightly subversive ideas, more in touch with the world outside than Alex's father, and source of the unquestioned privilege of his upbringing. ]
 
 My mother is a woman.
-Understand "mom" or "ma" or "mum" or "mommy" as mother.
+Understand "mom" or "ma" or "mum" or "mommy" or "rosehip" or "mrs rosehip" as mother.
 The initial appearance is "My mother is here, looking around as though she would like to comment on my housekeeping."
 The description of my mother is "She is a tall woman with short brown hair expertly cut, and a tailored suit."
 The introduction is "She has in addition a certain air which is very rare on this island: the air of seeming not to care whether anyone is watching her, or whether she is exhibiting the proper respect for authority."
