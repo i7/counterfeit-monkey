@@ -438,7 +438,6 @@ whether the Britishizing goggles seem interesting is a demonstration quip.
  The reply is "'[if the current interlocutor is tourist]They look like aviator goggles to me[otherwise if the current interlocutor is native]I thought those had gone out of style[otherwise]Are you sure you ought to be showing those off? Someone might take an interest[end if].'"
  It is repeatable.
  It is background-information.
-Understand "if" as whether the Britishizing goggles seem interesting.
 
 whether the Origin Paste seems interesting is a demonstration quip.
  It mentions origin paste.
@@ -446,7 +445,6 @@ whether the Origin Paste seems interesting is a demonstration quip.
  The reply is "'[one of]Smells[or]Looks[at random] like soap,' [the current interlocutor] [comment].".
  It is repeatable.
  It is background-information.
-Understand "if" as Origin Paste seems interesting.
 
 Instead of a criminal person discussing whether Origin Paste seems interesting:
 	say "[The current interlocutor] [open] [their] mouth, then [think] better of answering and just shrugs non-committally."
@@ -457,7 +455,6 @@ whether the letter-remover means anything is a weakly-phrased demonstration quip
  The reply is "[one of]'I hope you're licensed to carry that.'[or]'It looks pretty ordinary to me.'[or]'What am I supposed to be noticing? It looks like it's set to [current setting of the letter-remover].'[at random]".
  It is repeatable.
  It is background-information.
-Understand "if" as whether the letter-remover means anything.
 
 Availability rule for whether the letter-remover means anything:
 	if the current interlocutor is Professor Brown, it is off-limits.
@@ -467,14 +464,12 @@ whether the oil seems interesting is a demonstration quip.
  The comment is "'Care for some motor oil?' [we] ask [the current interlocutor]."
  The reply is "'[awkward no].' No wonder, really. The stuff is dirt cheap.".
  It is background-information.
-Understand "if" as whether the oil seems interesting.
 
 whether the monocle seems interesting is a demonstration quip.
  It mentions monocle.
  The comment is "[demonstration of monocle]".
  The reply is "[one of]'Fancy,' remarks [the current interlocutor]. 'I've only ever seen those being worn by authenticators.'[or]'Very nice,' says [the current interlocutor], though apparently a bit bored.[or]'Do you go around town showing that to everyone? Because I wouldn't.'[or]'Yes,' says [the current interlocutor].[or]This attracts disappointingly little interest.[stopping]".
  It is background-information.
-Understand "if" as whether the monocle seems interesting.
 
 Instead of the secretary discussing whether the monocle seems interesting:
 	say "She looks, then frowns. 'You shouldn't have that,' she remarks, in a voice of cold disapproval. 'In fact[--]'
@@ -705,7 +700,7 @@ Availability rule for whether car be fixed:
 
 whether car be fixed is a questioning quip.
 	The printed name is "whether the car is fixed".
-	Understand "is" or "if" as whether car be fixed.
+	Understand "is" as whether car be fixed.
 	It mentions oil1, oil2.
 	The comment is "'Is the car fixed now?' we ask."
 	The reply is "'The oil is in,' the mechanic says[if at least one car is fueled]. 'Should run all right[otherwise]. 'Might be it's out of fuel, though[end if].'".
@@ -759,7 +754,6 @@ whether the oil will work is an unlisted offering quip.
  The reply is "'Should do,' he says. Rolling up his sleeves, he goes to work on the car. There is no small amount of banging and muttering, but finally he stands back and announces that he believes it is now in working condition."
  It indirectly-follows why the car does not run.
  It quip-supplies the mechanic.
-Understand "if" as whether the oil will work.
 
 
 
@@ -1043,7 +1037,7 @@ Carry out the farmer discussing buy the asparagus:
 
  whether he dons overalls is a questioning quip.
  The printed name is "whether he wears overalls". The true-name is "whether he dons overalls".
- Understand "wears" or "if" as whether he dons overalls.
+ Understand "wears" as whether he dons overalls.
  It mentions Fashion.
  The comment is "'Say, do you ever wear overalls?' we ask pertly.".
  The reply is "He shifts his jaw a little to one side. [when distrustful]'No,' he says curtly. Evidently we aren't his fav[our]ite people. Person. Whatever.[at other times]'I used to, but my wife took a dislike,' he says.[end when]".
@@ -1831,7 +1825,7 @@ Kate removes the map from its case and packs it up carefully for us.".
 
 whether she hath seen Brock-man is a questioning quip.
  The printed name is "whether she has seen Brock".
- Understand "if" or "has" or "brock" as whether she hath seen Brock-man.
+ Understand "has" or "brock" as whether she hath seen Brock-man.
  It mentions Brock.
  The comment is "'Have you seen a man [--] maybe this morning [--] about this height, dark hair, very blue eyes, kind of cocky?'"
 The reply is "There's a light of recognition. 'Yes, he was in. A friend of my boss. He visited the shop and sold us [if Kate recollects buy the slangovia map]that map you just purchased[otherwise]a map he happened to have with him[end if]. Then they left, together. I believe there was some discussion of seeing a demonstration[casually queue recommend-help].'"
@@ -1869,7 +1863,6 @@ whether Brock-man seemed upset is a questioning quip.
 Cryptic. Perhaps he was posing as a researcher? But we can't very well ask, not if we're supposed to be a friend of his."
  It indirectly-follows whether she hath seen Brock-man.
  It quip-supplies Kate.
-Understand "if" as whether Brock-man seemed upset.
 
 recommend-help is an NPC-directed quip.
  The reply is "'If your friend is missing, you could report him to the Bureau, you know,' she says. 'I believe they keep close tabs on academic and research visitors. They may well know where he is.'
@@ -2024,7 +2017,6 @@ offer the ticket redundantly is an unlisted demonstration quip.
  It quip-supplies the mechanic.
  It is background-information.
  It indirectly-follows when the movie starts.
-Understand "if" as  whether the clock helps.
 
 [ where he bought the watch is a questioning quip.
  It mentions watch, salespeople.
@@ -2055,18 +2047,16 @@ whether he likes his job is a questioning quip. The comment is "'Do you enjoy be
  The reply is "He looks taken aback, but makes a surprising recovery. 'Yeah,' he says. 'Yeah, I do. I think it's a job with a real future.'".
  It quip-supplies the ticket-taker.
  It is background-information.
-Understand "if" as whether he likes his job.
 
 whether crime could ever be justified is a performative quip. The comment is "'Hypothetically speaking, do you think a crime could ever be justified?'".
  It mentions crime, legislation, bureau.
  The reply is "'Uh, no,' he says. 'Because if it's justified, it's not a crime. Like: if you kill someone in self-def[ense], that's justified, but it's not a crime, so you won't have to go to jail.'".
  It quip-supplies the ticket-taker.
  It is background-information.
-Understand "if" as whether crime could ever be justified.
 
 whether the government seems just is a questioning quip.
  The printed name is "whether the government is just". The true-name is "whether the government seems just".
- Understand "if" or "is" as whether the government seems just.  The comment is "'Do you think the government is just?'".
+ Understand "is" as whether the government seems just.  The comment is "'Do you think the government is just?'".
  It mentions bureau, legislation.
  The reply is "'What, here? Of course. We had universal suffrage before lots of places, right?' he says, counting off on his fingers. '1877. And we never had slavery. Plus there is very little poverty and there's a high standard of living. Good health care. No complaints here.'".
  It quip-supplies the ticket-taker.
@@ -2074,7 +2064,7 @@ whether the government seems just is a questioning quip.
 
 whether immigration laws seem fair is a performative quip.
  The printed name is "whether immigration laws are fair". The true-name is "whether immigration laws seem fair".
- Understand "if" or "are" as whether immigration laws seem fair.  The comment is "'Do you think our immigration laws are fair?'".
+ Understand "are" as whether immigration laws seem fair.  The comment is "'Do you think our immigration laws are fair?'".
  It mentions immigration, legislation, bureau.
  The reply is "'They seem like they're working,' he says. 'I don't really give that kind of thing a lot of thought, but, I've never met someone who seemed like they shouldn't have been let in, you know?'".
  It quip-supplies the ticket-taker.
@@ -2085,7 +2075,7 @@ Definition: whether he hath ever been in trouble alongside law is civic:
 
 whether he hath ever been in trouble alongside law is a performative quip.
  The printed name is "whether he has ever been in trouble with the law". The true-name is "whether he hath ever been in trouble alongside law".
- Understand "if" or "has" or "with" as whether he hath ever been in trouble alongside law.  The comment is "'Have you ever had any run-ins with the law?'".
+ Understand "has" or "with" as whether he hath ever been in trouble alongside law.  The comment is "'Have you ever had any run-ins with the law?'".
  It mentions security, legislation, crime.
  The reply is "'That's kind of none of your business, isn't it?'".
  It quip-supplies the ticket-taker.
@@ -2322,7 +2312,7 @@ The reply is "'I'm sorry, those with passes only,' she says, before waving us ou
 
  whether we can hath the scope is a questioning quip.
  The printed name is "whether we can have the scope". The true-name is "whether we can hath the scope".
- Understand "if" or "have" as whether we can hath the scope.
+ Understand "have" as whether we can hath the scope.
  It mentions Regulation Authentication Scope.
  The comment is "'You wouldn't be willing to part with that authentication scope, just for a moment?' we suggest, in a wheedling tone of voice[one of]. All right, even I can see that this isn't going to work[or][stopping].".
  The reply is "'It is official issue,' she snaps. [set distrustful]'Civilians aren't allowed to have these.'".
@@ -2357,7 +2347,6 @@ An availability rule for where to get a pass:
  The comment is "'This must be a good job,' we say[one of], in our best making-friendly-conversation way[or][stopping]. 'Getting to meet lots of new people. Access to all the bureau toys.'".
  The reply is "'They never let me try any of the good equipment,' she says, with surprising bitterness. 'When they brought in the T-inserter, they let Porson[--]' Then she stops, her expression that of a guppy being strangled. ".
  It quip-supplies the secretary.
-Understand "if" as  whether she enjoys her job.
 
  how she got this job is a questioning quip.
  It mentions employment.
@@ -2436,7 +2425,6 @@ whether public transport exists here is a questioning quip.
  The reply is "She smiles briefly. 'I'm sorry,' she says. 'There aren't any buses or subways here. The island is too small for that.'".
  It quip-supplies the attendant.
  It is background-information.
-Understand "if" as whether public transport exists here.
 
 Availability rule for whether we can keep the guidebook:
 	if the guidebook is marked invisible, it is off-limits;
@@ -2447,11 +2435,10 @@ Availability rule for whether we can keep the guidebook:
  The comment is "'Hey, does this guidebook belong to the hostel, or can I keep it?'".
  The reply is "'Sure, whatever,' she says. 'People take and leave stuff all the time. It's no big deal.'".
  It quip-supplies the attendant.
-Understand "if" as whether we can keep the guidebook.
 
  whether there seems an internet connection nearby is a questioning quip.
  The printed name is "whether there is an internet connection nearby". The true-name is "whether there seems an internet connection nearby".
- Understand "is" or "if" as whether there seems an internet connection nearby.
+ Understand "is" as whether there seems an internet connection nearby.
  It mentions internet.
  The comment is "'Hey, so, do you have internet here?'".
  The reply is "'Sorry,' she says. 'Our connection is suspended by the Bureau. Someone tried to use the hostel account for unauthor[ize]d contact with a universal translator.'
@@ -2462,7 +2449,7 @@ Did they indeed? I wonder who that could have been, hm?".
 
 whether there seem beds available is a questioning quip.
  The printed name is "whether there are beds available". The true-name is "whether there seem beds available".
- Understand "are" or "bed" or "space" or "room" or "if" as whether there seem beds available.  The comment is "'Are there free beds for the evening?'".
+ Understand "are" or "bed" or "space" or "room" as whether there seem beds available.  The comment is "'Are there free beds for the evening?'".
  The reply is "'Sure,' she says. 'You can go up and claim whichever free one you like. The hostel won't really fill up until this evening.'".
  It quip-supplies the attendant.
  It is background-information.
@@ -2518,7 +2505,6 @@ whether the gel resembles ours is a demonstration quip.
 We just smile and shrug pleasantly."
  It quip-supplies the attendant.
  It indirectly-follows how the All-Purpose makes blocks.
-Understand "if" as whether the gel resembles ours.
 
  why they do not use a locksmith is a questioning quip.
  It mentions locker.
@@ -2573,7 +2559,6 @@ whether the attendant enjoys her job is a questioning quip. The comment is "'Do 
  The reply is "She looks taken aback. 'It's a living,' she says. 'I mean, sort of. And the management doesn't really listen to what I tell them. And sometimes people are really loud. Or jerky. But my parents really really realllly wanted me to stay in school so I kind of stopped wanting to, if that makes sense. I don't know, maybe I'll go back later.'".
  It quip-supplies the attendant.
  It is background-information.
-Understand "if" as whether the attendant enjoys her job.
 
 Rule for quip-introducing sympathize on the topic of parents:
 	say "You apparently have a strong urge to sympath[ize] on the topic of parents. I don't.[line break]"
@@ -2662,7 +2647,7 @@ The greeting of backpacking girl is "'Greetings, fellow traveler!'"
 
 whether she seems really from canada is a questioning quip.
  The printed name is "whether she is really from Canada". The true-name is "whether she seems really from canada".
- Understand "if" or  "is" or "canadian" as whether she seems really from canada.  The comment is "'So,' we say, nodding at the pack. 'Are you really Canadian?'".
+ Understand "is" or "canadian" as whether she seems really from canada.  The comment is "'So,' we say, nodding at the pack. 'Are you really Canadian?'".
  It mentions heavy pack.
  The reply is "'Uh, no. I come from Ohio[fake-canada]. But don't tell anyone that. My mom thought this would be safer in case of terrorists. She's also worried about serial killers but there's not much I can do about that.'".
  It quip-supplies the backpacking girl.
@@ -2895,7 +2880,7 @@ Carry out discussing ask for privacy:
 
 whether she had trouble alongside customs is a questioning quip.
  The printed name is "whether she had trouble with customs". The true-name is "whether she had trouble alongside customs".
- Understand "with" or "if" as whether she had trouble alongside customs.  The comment is "'How was coming through Customs?' we ask. 'Any trouble there?'".
+ Understand "with" as whether she had trouble alongside customs.  The comment is "'How was coming through Customs?' we ask. 'Any trouble there?'".
  It mentions immigration.
  The reply is "'Not really. There were a few people in line, and they made me take all my stuff out of my backpack... and this one guy I saw them take away into a back room, and I don't think he ever came out again. But, uh, they were nice enough to me I guess. I was expecting worse.'".
  It quip-supplies the backpacking girl.
@@ -2960,7 +2945,7 @@ whether he believes in God is a questioning quip.
  The reply is "'Some of the time. The rest of the time I just wish I were.' He flattens his hands on the surface of the counter. They are veiny, with coarse thick nails. Some reflection about the end of life, or the perspective of old age, seems inevitable. But he says: 'You choose to believe or not. There's no such thing as absolute proof. So then the question is, do you want to believe in God? And, if so, what kind of God do you want to believe in? You go from there[casually queue curate-backstory].'".
  It quip-supplies the gift shop volunteer.
  It is background-information.
-Understand "if" or "man" or "volunteer" or "gift" or "shop" as whether he believes in God.
+Understand "man" or "volunteer" or "gift" or "shop" as whether he believes in God.
 
  what sort of God he believes in is a questioning quip.
  It mentions religion.
@@ -2974,7 +2959,7 @@ Rule for quip-introducing whether there seem points of architectural interest:
 
  whether there seem points of architectural interest is a weakly-phrased questioning quip.
  The printed name is "whether there are points of architectural interest". The true-name is "whether there seem points of architectural interest".
- Understand "if" or "are" as whether there seem points of architectural interest.
+ Understand "are" as whether there seem points of architectural interest.
  The comment is "'Are there, er, points of architectural interest about the Church?' we persist.".
  The reply is "'Not that I know of.'".
  It quip-supplies the gift shop volunteer.
@@ -3048,7 +3033,6 @@ whether he approves of government is a questioning quip. The comment is "'Do you
  The reply is "His eyes narrow sharply. 'That's not a question we get asked a lot around here,' he comments. 'It's a little like being asked whether you approve of the plumbing in your house, or the brake lines on your car. If it ever broke, you'd know, but the rest of the time you just don't give it much consideration. Underappreciated folks, our orthographers, but they work hard and they make things run smoothly, and barring the odd popular referendum we don't have to waste nearly as much time on arguing politics as folks in most countries.'".
  It quip-supplies the gift shop volunteer.
  It is background-information.
-Understand "if" as whether he approves of government.
 
 why he isn't at the celebration is a questioning quip. The comment is "'I'm surprised you're in here and not outside enjoying the festivities,' we comment.".
  It mentions celebration and gift shop volunteer.
@@ -3093,7 +3077,7 @@ Availability rule for what the restoration gel seems worth:
 
  whether the game seems rigged is a questioning quip.
  The printed name is "whether the game is rigged". The true-name is "whether the game seems rigged".
- Understand "is" or "if" as whether the game seems rigged.
+ Understand "is" as whether the game seems rigged.
  It mentions word-balance.
  The comment is "'I know this kind of game,' we say, in our most jaded voice. 'The scale is probably nailed in place so that it [i]can't[/i] tip.' One or two of the crowd standing nearby seem impressed by this line of argument. A small boy whispers to his sister to ask whether that could be true.".
  The reply is "'Nonsense,' says the barker angrily. To demonstrate the point, he pushes down on the left pan, and the scales tip and sway. He soon restores them to balance, though. [paragraph break]'And don't think that will count for you,' he adds. 'You have to put them out of balance yourself. No surrogates, substitutes, or alternatives allowed.'".
@@ -3105,7 +3089,6 @@ Availability rule for what the restoration gel seems worth:
  The reply is "'No one has won today,' he says, which is not an answer.".
  It quip-supplies the barker.
  It directly-follows barker-advertisement.
-Understand "if" as  whether anyone ever wins.
 
  compliment the blue suit is a performative quip.
  It mentions suit, fashion.
@@ -3232,10 +3215,9 @@ how the campaign will address problems of visualization is a questioning quip.
  It quip-supplies the activist.
  It is restrictive.
  It indirectly-follows how  campaign will address problems of visualization.
-Understand "if" as whether this liquid will be water.
 
  ask whether this liquid will also be flavorless is a performative quip.
-Understand "flavor" or "flavour" or "flavourless" or "if" as ask whether this liquid will also be flavorless.
+Understand "flavor" or "flavour" or "flavourless" as ask whether this liquid will also be flavorless.
  It mentions environment.
  The comment is "'[if immediately]Will it[otherwise]Will your proposed toxi waste liquid[end if] be flavorless, too?' you ask. I didn't come up with this one.".
  The reply is "'Huh?' [paragraph break]'I think,' you go on maliciously, 'that toxi waste should have a catchy flavor. Maybe spearmint.' [paragraph break]The furrow between her brows deepens as she tries to work out whether we are joking and, if so, what response would be appropriate. Finally she settles for, 'The ads are going to be on TV, so it's hard to show any flavors on television.'".
@@ -3367,7 +3349,7 @@ The greeting of the barman is "[one of]'Help you?' asks Parker the barman unenth
 
 whether he hath seen slango is a questioning quip.
  The printed name is "whether he has seen Slango". The true-name is "whether he hath seen slango".
- Understand "has" or "if" or "parker" or "barman" or "bartender" as whether he hath seen slango.  The comment is "'I wonder whether you've seen an associate of mine,' we say to Parker. 'Name of Slango.'".
+ Understand "has" or "parker" or "barman" or "bartender" as whether he hath seen slango.  The comment is "'I wonder whether you've seen an associate of mine,' we say to Parker. 'Name of Slango.'".
  It mentions Slango.
  The reply is "Parker looks over the bar at us. 'He comes in here from time to time,' he says. 'Very regular customer. Always has about three rum and cokes.' [paragraph break]This is a lie, and therefore a test. Slango doesn't drink alcohol himself and doesn't permit drunkenness in his crew.".
  It quip-supplies the barman.
@@ -3403,7 +3385,7 @@ Instead of asking the barman for the origin paste:
 
 whether we can hath the origin paste is a questioning quip.
  The printed name is "whether we can have the origin paste". The true-name is "whether we can hath origin paste".
- Understand "have" or "if" as whether we can hath origin paste.  The comment is "'That Origin Paste for sale?' ".
+ Understand "have" as whether we can hath origin paste.  The comment is "'That Origin Paste for sale?' ".
  It mentions origin paste.
  The reply is "'Well now,' he says, grinning, 'that would surely be illegal, would it not? Origin Paste is after all a controlled substance in this country, due to its unhappy association with fraudulent activities. On the other hand there is no law against someone [i]winning[/i] the Origin Paste in a completely legitimate game of chance or skill.'".
  It quip-supplies the barman.
@@ -3628,7 +3610,7 @@ Availability rule for whether he hath any other games going:
 
 whether he hath any other games going is a questioning quip.
  The printed name is "whether he has any other games going". The true-name is "whether he hath any other games going".
- Understand "if" or "has" or "parker/barman" as whether he hath any other games going.  The comment is "'So, is there anything else I can win? Any other games going?'".
+ Understand "has" or "parker/barman" as whether he hath any other games going.  The comment is "'So, is there anything else I can win? Any other games going?'".
  It mentions paste.
  The reply is "Parker laughs. 'Not until tomorrow, kid,' he says. 'We only run one game a day.'".
  It quip-supplies the barman.
@@ -3649,7 +3631,7 @@ Understand "parker/barman" as what he thinks about the Bureau.
  It is background-information.
 
 whether he hates customs officials is a performative quip. The comment is "'Do you hate Customs officials?' we ask.".
- Understand "parker/barman" or "if" as whether he hates customs officials.
+ Understand "parker/barman" as whether he hates customs officials.
  It mentions immigration, barman.
  The reply is "'Naw. Not running anything myself, am I?'".
  It quip-supplies the barman.
@@ -3663,7 +3645,7 @@ whether he believes in god 2 is a questioning quip. The comment is "'Where do yo
  The reply is "'Don't give it much thought,' he says. 'Please don't tell me you're here with a pamphlet . I won't read it.'".
  It quip-supplies the barman.
  It is background-information.
-Understand "if" or "parker/barman" as whether he believes in god 2.
+Understand "parker/barman" as whether he believes in god 2.
 
 Test tobarman with "test act1 / test chard / test car / test Slango-missed / go to outdoor / open backpack / look / wave p-remover at spill / get sill / go to counterfeit monkey".
 
@@ -3763,7 +3745,6 @@ Slango looks dyspeptic. 'Yeah, about that,' he says gruffly. You know better tha
  It quip-supplies Slango.
  It indirectly-follows who we seem.
  The proper scene is consulting-Slango.
-Understand "if" as whether we can leave now.
 
 After frowning when the current interlocutor is Slango and the current quip is whether we can leave now:
 	say "You're frowning, practically scowling. [run paragraph on]";
@@ -3895,7 +3876,7 @@ A plausibility rule for whether she hath seen slango when the player knows lena-
 
 whether she hath seen slango is a questioning quip.
  The printed name is "whether she has seen Slango". The true-name is "whether she hath seen slango".
- Understand "has" or "if" or "Lena" as whether she hath seen slango.  The comment is "[one of]'You wouldn't happen to have seen Slango about recently?' we ask.[or][if Lena does not know trust-me]'I'm still curious about Slango. Seen him?'[otherwise]'Now, you owe me one Slango,' you say. 'Where'd he get to?'[end if][stopping]".
+ Understand "has" or "Lena" as whether she hath seen slango.  The comment is "[one of]'You wouldn't happen to have seen Slango about recently?' we ask.[or][if Lena does not know trust-me]'I'm still curious about Slango. Seen him?'[otherwise]'Now, you owe me one Slango,' you say. 'Where'd he get to?'[end if][stopping]".
  It mentions Slango.
  The reply is "'Slango and I were catching up. Bless that man, he's hung like a yak,' she says. 'But he got bad news and had to hurry back to the yacht. Said something about not being able to keep an appointment. I take it you're the appointment? I can try reaching him for you, if you want.'".
  It quip-supplies Lena.
@@ -4226,7 +4207,6 @@ He comes back in a minute.
 
 'There,' he says. 'Should be abstract-enabled now.'"
  It quip-supplies Professor Brown.
- Understand "if" as whether he can fix the letter-remover.
 
 what he thinks of the letter-remover is a demonstration quip.
  It mentions the letter-remover.
@@ -4574,7 +4554,6 @@ Instead of saying yes when Waterstone is marked-visible and make up some excuse 
  The comment is "'Did you run into those activists outside?'".
  The reply is "'Sadly, it is our misfortune constantly to encounter people with no concept of what language manipulation can and cannot do,' Waterstone says. He really seems to be in a bad mood today, even for him: maybe a fight with the wife, or a nasty letter from the dean.".
  It quip-supplies Professor Waterstone.
-Understand "if" as whether he met the activists.
 
 what he kens about me is an unlisted questioning quip.
  The printed name is "what he knows about me". The true-name is "what he kens about me".
@@ -5630,7 +5609,6 @@ whether the protesters feel the same way is a questioning quip. The comment is "
  The reply is "Atlantida shrugs off our question. 'A vocal minority. Most people are content to keep what they have. Imagine the chaos if everyone had free access to the Bureau's complete range of letter tools, and if there were no laws about how to use them[casually queue more-about-democracy].'".
  It quip-supplies Atlantida-woman.
  It directly-follows thing-about-democracy.
-Understand "if" as whether the protesters feel the same way.
 
 Carry out Atlantida-woman discussing gel-shot:
 	now the player is gelled.
