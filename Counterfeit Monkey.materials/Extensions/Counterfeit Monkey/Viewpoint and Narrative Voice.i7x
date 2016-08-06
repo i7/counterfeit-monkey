@@ -44,14 +44,14 @@ Carry out examining something:
 
 [Modified tutorial messages to remove paragraph break before prompt, so that they behave the same as the custom ones.]
 The react to expected actions rule response (A) is "[first custom style][followup entry][roman type][paragraph break]".
-The teach looking rule response (A) is "[first custom style]To get a look around, type LOOK and press return. If you do not want help getting started, type TUTORIAL OFF.[run paragraph on]".
-The teach examining rule response (A) is "[first custom style]You can find out more if you LOOK AT [N in upper case] (or shorten it to L [M in upper case]).[run paragraph on]".
-The teach more examining rule response (A) is ”[first custom style]There are other things around here that you can look at too, if you like. You can check out other things in your surroundings, or LOOK AT ME to see yourself.[run paragraph on]".
-The teach compass directions rule response (A) is "[first custom style][one of]Feel free to look around some more. When you're ready to move on from here, try[or]No rush, but just a reminder that when you want to move to a new location, you can go[stopping] [N in upper case].[run paragraph on]".
-The teach dropping rule response (A) is "[first custom style]If you want to get rid of something that you're holding you can always drop it, like this: DROP [N in upper case].[run paragraph on]".
-the teach taking rule response (A) is "[first custom style]You can pick things up when you see them, like this: TAKE [N in upper case].[run paragraph on]".
-The teach inventory rule response (A) is "[first custom style]There's more we can do than just looking around. To check what you're holding at the moment, try typing INVENTORY, or I for short.[run paragraph on]".
-The teach meta-features rule response (A) is "[first custom style]To save your current position, type SAVE. RESTORE allows you to bring back a game you have previously saved.[run paragraph on]".
+The teach looking rule response (A) is "[first custom style]To get a look around, type LOOK and press return. If you do not want help getting started, type TUTORIAL OFF.[roman type][run paragraph on]".
+The teach examining rule response (A) is "[first custom style]You can find out more if you LOOK AT [N in upper case] (or shorten it to L [M in upper case]).[roman type][run paragraph on]".
+The teach more examining rule response (A) is ”[first custom style]There are other things around here that you can look at too, if you like. You can check out other things in your surroundings, or LOOK AT ME to see yourself.[roman type][run paragraph on]".
+The teach compass directions rule response (A) is "[first custom style][one of]Feel free to look around some more. When you're ready to move on from here, try[or]No rush, but just a reminder that when you want to move to a new location, you can go[stopping] [N in upper case].[roman type][run paragraph on]".
+The teach dropping rule response (A) is "[first custom style]If you want to get rid of something that you're holding you can always drop it, like this: DROP [N in upper case].[roman type][run paragraph on]".
+the teach taking rule response (A) is "[first custom style]You can pick things up when you see them, like this: TAKE [N in upper case].[roman type][run paragraph on]".
+The teach inventory rule response (A) is "[first custom style]There's more we can do than just looking around. To check what you're holding at the moment, try typing INVENTORY, or I for short.[roman type][run paragraph on]".
+The teach meta-features rule response (A) is "[first custom style]To save your current position, type SAVE. RESTORE allows you to bring back a game you have previously saved.[roman type][run paragraph on]".
 
 [TODO: Add back swearing and singing?]
 The standard report taking rule response (A) is "[We] [one of]take[or]get[or]pick up[or]acquire[as decreasingly likely outcomes] [the noun][if the noun is unexamined and the action is singular]. [run paragraph on][noun description][no line break][otherwise].[end if]".
