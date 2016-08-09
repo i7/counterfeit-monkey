@@ -1229,7 +1229,7 @@ And then there's the research to support the product: citations; copies of journ
 It's everything I've been working on for the last three years."
 
 Sanity-check doing something to the backpack when the heavy pack is in location:
-	if the subcommand of the backpack matches the text "pack":
+	if the player's command includes "pack":
 		now the noun is the heavy pack.
 
 Carry out taking the flash drive:
@@ -1573,7 +1573,7 @@ Check finding Lena:
 		try finding the backpacking girl instead.
 
 Does the player mean finding the backpacking girl:
-	if the subcommand of the noun matches the text "girl":
+	if player's command includes "girl":
 		it is very likely.
 
 Check waving the letter-remover at pink t-shirt when the current setting of the letter-remover is "r":
