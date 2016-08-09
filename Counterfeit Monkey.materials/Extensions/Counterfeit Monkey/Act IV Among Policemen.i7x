@@ -161,7 +161,7 @@ Does the player mean waving the letter-remover at the soap dispenser:
 	it is very unlikely.
 
 Sanity-check taking the soap dispenser when the soap is in the soap dispenser:
-	if the subcommand of the noun matches the text "soap":
+	if the player's command does not include "dispenser":
 		try squeezing the soap dispenser instead.
 
 Instead of squeezing the soap dispenser:
@@ -292,7 +292,7 @@ Instead of searching the display case:
 	try examining the display-platform.
 
 Instead of examining the display case:
-	if the subcommand of the display case matches the text "glass" or the subcommand of the display case matches the text "casing material":
+	if the player's command includes "glass" or the player's command includes "casing material":
 		say "The casing material would stop a bullet.";
 	otherwise:
 		try examining the display-platform.

@@ -79,7 +79,6 @@ Use no deprecated features.
 
 Include Scope Caching by Mike Ciul.
 Include Large Game Speedup by Andrew Plotkin.
-Include Subcommands by Daniel Stelzer.
 
 [ Startup precomputation ]
 Include version 1/160718 of Startup Precomputation by Dannii Willis.
