@@ -531,10 +531,10 @@ Rule for describing path of the player:
 	let C be some text;
 	if N is greater than 0:
 		if path description count is greater than 0:
-			let C be "[one of]Then[or]Next[or]From there[or]After that[as decreasingly likely outcomes] ";
-		let C be "[C][one of][We] [or][We] have a [walk-length for N][or][We] make the [optional walk-length for N][or]It's a [walk-length for N][at random]";
-		say "[C]" in sentence case;
-		say "[walk-drive]";
+			let C be "[one of]Then[or]Next[or]From there[or]After that[as decreasingly likely outcomes] [one of][we] [or][we] have a [walk-length for N][or][we] make the [optional walk-length for N][or]it's a [walk-length for N][at random]";
+		otherwise:
+			let C be "[one of][We] [or][We] have a [walk-length for N][or][We] make the [optional walk-length for N][or]It's a [walk-length for N][at random]";
+		say "[C][walk-drive]";
 		if the intervening regions of the player is not empty:
 			say "[through the intervening regions]";
 		if the location is not the final destination:
