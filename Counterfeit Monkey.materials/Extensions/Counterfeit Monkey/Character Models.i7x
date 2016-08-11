@@ -72,6 +72,29 @@ Include Threaded Conversation by Emily Short.
 
 Include Threaded Actions by Emily Short.
 
+Sanity-check buying something from the player:
+	if the player encloses the noun:
+		say "[We] already have [regarding the noun][them] and don't have to pay for [them]." instead;
+	otherwise:
+		say "[regarding the noun][They] [are not] [ours] to sell." instead.
+
+Understand "buy [something]" as buying it from.
+
+Does the player mean buying something enclosed by the player from someone:
+	it is very unlikely.
+
+Rule for supplying a missing second noun while buying something from:
+	if the current interlocutor is a person:
+		now the second noun is the current interlocutor;
+	otherwise if somebody (called target) encloses the noun:
+		implicitly greet the target;
+		now the second noun is the current interlocutor;
+	otherwise if how-many-people-here is 1:
+		implicitly greet entry 1 of people-present;
+		now the second noun is the current interlocutor;
+	otherwise:
+		say "From whom should [we] buy [the noun]?".
+
 A quip can be listed or unlisted. A quip is usually listed.
 
 Plausibility rule for an unlisted quip:
