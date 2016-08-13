@@ -204,7 +204,7 @@ Does the player mean approaching My Apartment:
 	it is very likely.
 
 Check finding the elderly apartments:
-	unless the player's command includes "elderly":
+	if the subcommand of the elderly apartments matches the text "apartment":
 		try approaching My Apartment instead.
 
 The reflective window is a fixed in place mirror in Sigil Street.
@@ -1154,7 +1154,7 @@ The hostel-exterior is a facade in Heritage Corner. It is scenery. The printed n
 The octagonal bricks are scenery in Heritage Corner. The description is "Alternating with square bricks of a slightly darker shade of maroon. Nothing about this seems remotely significant." Understand "ground" or "paving" or "floor" as the octagonal bricks.
 
 Instead of examining the octagonal bricks:
-	if the player's command includes "bricks":
+	if the subcommand of the noun matches the text "bricks":
 		try examining the hostel-exterior instead;
 	otherwise:
 		continue the action.
@@ -1228,9 +1228,13 @@ And then there's the research to support the product: citations; copies of journ
 
 It's everything I've been working on for the last three years."
 
-Sanity-check doing something to the backpack when the heavy pack is in location:
-	if the player's command includes "pack":
-		now the noun is the heavy pack.
+Sanity-check doing something when the heavy pack is in location:
+	if the noun is the backpack or the second noun is the backpack:
+		if the subcommand of the backpack matches the text "pack":
+			if the noun is the backpack:
+				now the noun is the heavy pack;
+			if the second noun is the backpack:
+				now the second noun is the heavy pack.
 
 Carry out taking the flash drive:
 	complete "Get my backpack from the cinema";
@@ -1569,7 +1573,7 @@ A backpacking girl is an alert tourist woman in the dormitory room. She exhibits
 	Understand "tourist" as the backpacking girl.
 
 Check finding Lena:
-	if the player's command includes "girl":
+	if the subcommand of the noun matches the text "girl":
 		try finding the backpacking girl instead.
 
 Does the player mean finding the backpacking girl:
@@ -1830,7 +1834,7 @@ Some postcards are on the wire racks. The description of the postcards is "You m
 Does the player mean finding the postcards:
 	it is very unlikely.
 
-Instead of finding the postcards when the player's command includes "walls/fortifications":
+Instead of finding the postcards when the subcommand of the postcards matches the text "walls/fortifications":
 	try approaching the old city walls.
 
 A dangerous construction rule for the wire racks:
