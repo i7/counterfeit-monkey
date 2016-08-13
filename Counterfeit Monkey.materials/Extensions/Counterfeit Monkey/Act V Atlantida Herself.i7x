@@ -170,7 +170,7 @@ The gnu stares around in confusion, its watery gaze temporarily dissolving every
 
 A moment later, the anagramming gun is merely a gun again."
 
-Some equipment shelves are a supporter in Equipment Archive. The initial appearance is "[The shelves] here display an assortment of obsolete, broken, foreign, or otherwise unusual letter tools. "
+Some equipment shelves are a supporter in Equipment Archive. The initial appearance is "[The shelves] here display an assortment of obsolete, broken, foreign, or otherwise unusual letter tools."
 
 On the shelves are an accent flipper, an umlaut punch, a Catalan punt volat needle, some broken components, and some lamb-granulates.
 
