@@ -1194,7 +1194,7 @@ Sanity-check putting the tube on the tube:
 		continue the action.
 
 Before putting the tub on something:
-	if the player's command includes "gel" and the player's command does not include "gel tub":
+	if the subcommand of the tub matches the text "gel" or the subcommand of the tub matches the text "restoration gel":
 		if the tub is in the backpack and the backpack is closed:
 			try opening the backpack;
 			if the backpack is closed:
@@ -1230,7 +1230,7 @@ Sanity-check putting the tub on the tub:
 		try putting the restoration gel on the tub instead.
 
 Sanity-check taking the tub when the player carries the tub:
-	if the player's command includes "gel" and the player's command does not include "tub":
+	if the subcommand of the tub matches the text "gel" or the subcommand of the tub matches the text "restoration gel":
 		say "[don't remove gel from tub]" instead.
 
 Sanity-check removing the tub from the tub:
@@ -1249,10 +1249,11 @@ Instead of empty-removing the tube:
 Instead of removing the tube from the tube:
 	try taking the tube.
 
-Before doing something with the tube:
-	if the player's command includes "gel" and the player's command does not include "gel tube" and the second noun is not the tube:
+Before doing something when the noun is the tube or the second noun is the tube:
+	if the subcommand of the tube matches the text "gel" or the subcommand of the tube matches the text "restoration gel":
 		if the barker carries the tube:
-			say "We don't have the gel at the moment." instead;
+			if not taking and the tube must be touched:
+				say "We don't have the gel at the moment." instead;
 		otherwise:
 			say "[one of]Unfortunately, there's hardly any gel remaining in the tube.[or]There isn't enough gel remaining in the little tube for use.[at random]" instead.
 
