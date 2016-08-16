@@ -87,10 +87,10 @@ Rule for supplying a missing second noun while buying something from:
 	if the current interlocutor is a person:
 		now the second noun is the current interlocutor;
 	otherwise if somebody (called target) encloses the noun:
-		implicitly greet the target;
+		try saying hello to the target;
 		now the second noun is the current interlocutor;
 	otherwise if how-many-people-here is 1:
-		implicitly greet entry 1 of people-present;
+		try saying hello to entry 1 of people-present;
 		now the second noun is the current interlocutor;
 	otherwise:
 		say "From whom should [we] buy [the noun]?".
@@ -106,6 +106,13 @@ After reading a command:
         change the text of the player's command to N.
 
 Understand "hey" or "hiya" or "yo" as hailing.
+
+After reading a command when the current interlocutor is not nothing and player's command includes "ask/tell/a/t" and the player's command includes "about" and the player's command does not include "ask/tell/a/t about" (this is the new strip interlocutor from input rule):
+	unless the location is Counterfeit Monkey and the player's command includes "men":
+		if the player's command includes "[someone talk-eligible]":
+			cut the matched text.
+
+The new strip interlocutor from input rule is listed instead of the strip interlocutor from input rule in the After reading a command rules.
 
 The Hostel-as-subject is a subject. The printed name is "hostel". Understand "hostel" as the hostel-as-subject.
 The Fleur d'or-as-subject is a subject. The printed name is "Fleur d'or hotel". Understand "hotel" or "fleur" or "d'or" as the fleur d'or-as-subject.

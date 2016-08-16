@@ -41,7 +41,7 @@ The stripping body parts rule is not listed in any rulebook. [We don't want the 
 The offer new prompt rule is not listed in any rulebook.
 
 Before reading a command when tutorial mode is true (this is the alternate new prompt rule):
-	if sp reparse flag is false and identification is not happening:
+	if sp reparse flag is false and tc reparse flag is false and identification is not happening:
 		follow the instructional rules.
 
 The new stripping adverbs rule is listed instead of the stripping adverbs rule in the Smarter Parser rulebook.

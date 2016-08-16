@@ -2086,7 +2086,7 @@ There is no immediate reaction, but after a few minutes a cramping pain begins t
 
 Test pill with "tutorial off / wave s-remover at spill / take pill / take all / get pill / get a pill / take the pill / take pill" in the outdoor cafe.
 
-After reading a command:
+After reading a command when the player carries the pill or the player carries the pills:
 	if the player's command matches "take pill":
 		if the player carries the pill:
 			replace the player's command with "eat pill";
