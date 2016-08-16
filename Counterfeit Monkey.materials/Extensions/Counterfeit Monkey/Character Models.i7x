@@ -87,10 +87,10 @@ Rule for supplying a missing second noun while buying something from:
 	if the current interlocutor is a person:
 		now the second noun is the current interlocutor;
 	otherwise if somebody (called target) encloses the noun:
-		implicitly greet the target;
+		try saying hello to the target;
 		now the second noun is the current interlocutor;
 	otherwise if how-many-people-here is 1:
-		implicitly greet entry 1 of people-present;
+		try saying hello to entry 1 of people-present;
 		now the second noun is the current interlocutor;
 	otherwise:
 		say "From whom should [we] buy [the noun]?".
