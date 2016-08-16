@@ -1272,7 +1272,7 @@ Every turn when Traffic Circle is the location and the teenagers are not in the 
 Protest-scenario ends in departure when the player is in a car and the teenagers are not in the location.
 
 When protest-scenario ends in departure:
-	say "We climb back in the car, and no one seems to be much the wiser about what just happened. I have to say, you know what you're doing. ";
+	say "[unless the player is in a car]We climb back in the car, and no[otherwise]No[end if] one seems to be much the wiser about what just happened. I have to say, you know what you're doing. ";
 	now the protesters are nowhere;
 	now the All-purpose-officer is nowhere;
 	now the traffic-island-protesters are nowhere;
