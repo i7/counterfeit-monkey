@@ -5818,7 +5818,7 @@ description
 ""
 ""
 ""
-"Maybe those noises we heard earlier were nothing. It's quiet now."
+"Maybe those noises [we] heard earlier were nothing. It's quiet now."
 "Our ears are straining for something far away."
 ""
 "The silence is eerie."
@@ -5841,7 +5841,7 @@ Every turn during Guard-imminence:
 
 Table of Severe Guard Warnings
 description
-"I definitely hear footsteps. And voices."
+"[We] definitely hear footsteps. And voices."
 ""
 ""
 "There's a percussive explosion sound from the west."
