@@ -58,7 +58,7 @@ The description of the dog is "A small, heavy metal figurine representing a watc
 Test dog with "tutorial off / dig / g / x dog / test dog-placing" in abandoned park.
 Test dog-placing with "put dog on pedestal / get god / n / autoupgrade / wave z-remover at kudzu / look behind bushes / put god in shrine / look" in Roget Close.
 
-A twig is a thing in Abandoned Park. The initial appearance is "[one of][We] step on a [twig] before I back away again.[or]A [twig] lies in the grass.[stopping]". The description is "Nine or ten inches long, very thin and somewhat flexible. There are no leaves left on it."
+A twig is a thing in Abandoned Park. The initial appearance is "[one of][We] step on a [twig] before [we] back away again.[or]A [twig] lies in the grass.[stopping]". The description is "Nine or ten inches long, very thin and somewhat flexible. There are no leaves left on it."
 
 Instead of propping a door with the twig:
 	say "A nice thought, but the twig is too short and supple to make an effective prop. One needs something a bit longer."
