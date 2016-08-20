@@ -1,4 +1,3 @@
-
 # Test scripts
 
 The files in this folder have been useful to me in testing Counterfeit Monkey, and are included here in the hope that they with some alterations might be useful to others as well.
