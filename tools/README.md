@@ -25,11 +25,11 @@ None of these are included here – you will have to compile them yourself and c
 
 ## Simple tests: test.sh and rebuild_transcripts.sh
 
-The shell scripts test.sh and rebuild_transcripts.sh will run simple regression tests that pipes commands from text files in the ”command scripts” folder and then compares the output to the corresponding files in ”comparison transcripts”.
+The shell scripts test.sh and rebuild_transcripts.sh will run simple regression tests that pipe commands from text files in the ”command scripts” folder and then compares the output to the corresponding files in ”comparison transcripts”, if any are found.
 
 They expect to be run from inside the tools folder, and look for an interpreter binary named git in the same location.
 
-The test.sh run by itself will only test the test_me.txt command script and create a diff and a transcript of the output, while rebuild_transcripts.sh will go through every file in the ”command scripts” folder, run the test and copy the resulting output and diff to the ”comparison transcripts” folder, overwriting any files there with the same names. This will test all the three major alternative paths through the game (test_me, test_me2 and test_hard, named after the corresponding in-game test commands) and all achievements.
+The test.sh script will run the test_me.txt command script, creating a diff and a transcript of the output, while rebuild_transcripts.sh will go through every file in the ”command scripts” folder, run the test and copy the resulting output and diff to the ”comparison transcripts” folder, overwriting any files there with the same names. This will test all the three major alternative paths through the game (test_me, test_me2 and test_hard, named after the corresponding in-game test commands) and all achievements.
 
 These will not echo any entered commands, so the resulting transcripts will only include the response text and might be hard to follow.
 
