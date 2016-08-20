@@ -8,16 +8,19 @@ A problem with all of these, and with testing Counterfeit Monkey in general, is 
 I have used these scripts on OS X 10.11.6 with the Bash shell, the system default Python 2.7.10 and three different glulx interpreters: 
 
 - Git with CheapGlk (by far the fastest one)
+
 See https://github.com/DavidKinder/Git and https://github.com/erkyrath/cheapglk
 
 - Glulxe compiled with CheapGlk (and the VM_PROFILING compile time option for performance profiling with the profile.sh script)
+
 See https://github.com/erkyrath/glulxe
 I simply added the line ”#define VM_PROFILING 1” to the beginning of the glulxe.h header file before compiling.
 
 - Git compiled with RemGlk (for regression testing with RegTest)
+
 See https://github.com/erkyrath/remglk
 
-None of these are included here – you will have to compile them yourself and change the interpreter paths in the scripts accordingly. They will expect a Counterfeit Monkey.gblorb file in Counterfeit Monkey.materials/Release, and the profiling script will also look for gameinfo.dbg in the Counterfeit Monkey.inform/Build folder.
+None of these are included here – you will have to compile them yourself and change the interpreter paths in the scripts accordingly. They expect a Counterfeit Monkey.gblorb file in Counterfeit Monkey.materials/Release, and the profiling script will also look for gameinfo.dbg in the Counterfeit Monkey.inform/Build folder.
 
 ## Simple tests: test.sh and rebuild_transcripts.sh
 
