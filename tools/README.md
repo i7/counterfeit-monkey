@@ -11,9 +11,10 @@ I have used these scripts on OS X 10.11.6 with the Bash shell, the system defaul
 
 See https://github.com/DavidKinder/Git and https://github.com/erkyrath/cheapglk
 
-- Glulxe compiled with CheapGlk (and the VM_PROFILING compile time option for performance profiling with the profile.sh script)
+- Glulxe compiled with CheapGlk and the VM_PROFILING compile time option (for performance profiling with the profile.sh script)
 
 See https://github.com/erkyrath/glulxe
+
 I simply added the line ”#define VM_PROFILING 1” to the beginning of the glulxe.h header file before compiling.
 
 - Git compiled with RemGlk (for regression testing with RegTest)
@@ -36,7 +37,7 @@ These will not echo any entered commands, so the resulting transcripts will only
 
 There are three regression test scripts in the regtest folder: regtest.sh, regtest2.sh and regtest-hard.sh, one for each major alternative path through the game. These might not be very useful in their current state: they try to account for some of the random variations of the text, but far from all. You will likely need to amend these a lot in order to get error-free runs on your system.
 
-It expects to be run from inside the regtest folder, and looks for a remglk-enabled interpreter binary named git-remglk, and the file regtest.py in the same location, and gameinfo.dbg in the Counterfeit Monkey.inform/Build folder. It will also require Python to be installed on your system.
+They expect to be run from inside the regtest folder, and look for a remglk-enabled interpreter binary named git-remglk and the file regtest.py in the same location, and also gameinfo.dbg in the Counterfeit Monkey.inform/Build folder. They require Python to be installed on your system.
 
 You can get regtest.py from:
 https://github.com/erkyrath/plotex
