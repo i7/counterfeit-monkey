@@ -1,8 +1,8 @@
 # Test scripts
 
-The files in this folder have been useful to me in testing Counterfeit Monkey, and are included here in the hope that they with some alterations might be useful to others as well.
+The files in this folder have been useful to me in testing Counterfeit Monkey, and are included here in the hope that with some alterations they might be useful to others as well.
 
-A problem with all of these, and with testing Counterfeit Monkey in general, is the large amount of randomized text in the game. The in-game command RANDOM-SEED (number) is used in a couple of places in the scripts to alleviate this, but should perhaps be added in more places. Resetting the random seed only helps to a degree, though, as any change in the code may alter any or all random-generated text in the game.
+The large amount of randomized text in Counterfeit Monkey causes problems for automated testing. The in-game command RANDOM-SEED (number) is used in a couple of places in the scripts to alleviate this, but it would probably be a good idea to add it in more places. Resetting the random seed only helps to a degree, as any code change that involves randomness may shift the sequence of random numbers produced. Random numbers will also vary between interpreters and Inform versions.
 
 I have used these scripts on OS X 10.11.6 with the Bash shell, the system default Python 2.7.10 and three different glulx interpreters: 
 
@@ -36,7 +36,7 @@ These will not echo any entered commands, so the resulting transcripts will only
 
 There are three regression test scripts in the regtest folder: regtest.sh, regtest2.sh and regtest-hard.sh, one for each major alternative path through the game. These might not be very useful in their current state: they try to account for some of the random variations of the text, but far from all. You will likely need to amend these a lot in order to get error-free runs on your system.
 
-They expect to be run from inside the regtest folder, and look for a remglk-enabled interpreter binary named git-remglk and the file regtest.py in the same location, and also gameinfo.dbg in the Counterfeit Monkey.inform/Build folder. They require Python to be installed on your system.
+These scripts expect to be run from inside the regtest folder, and look for a remglk-enabled interpreter binary named git-remglk and the regtest.py file in the same location, and gameinfo.dbg in the Counterfeit Monkey.inform/Build folder. They also require Python to be installed on your system.
 
 You can get regtest.py from:
 https://github.com/erkyrath/plotex
@@ -48,17 +48,15 @@ http://eblong.com/zarf/plotex/regtest.html
 
 The profile.sh script will run the test_me test through a profiling-enabled Glulxe interpreter and run the results through profile-analyze.py. This will take several minutes.
 
-It expects to be run from inside the tools folder, and looks for a profiling-enabled interpreter binary named gluxe, and the files profile-analyze.py and dispatch_dump.xml in the same location. It will also require Python to be installed on your system.
-
 Note that the Ultra Undo extension must be commented out of the Counterfeit Monkey source for profiling to work, i.e. the line ”Include version 1/160501 of Ultra Undo by Dannii Willis” in story.ni.
 
-Read the source of profile-analyze.py for full instructions:
-https://raw.githubusercontent.com/erkyrath/glulxe/master/profile-analyze.py
-
-You will need to put the files profile-analyze.py and dispatch_dump.xml in the same folder as profile.sh.
+The script expects to be run from inside the tools folder, and looks for a profiling-enabled interpreter binary named gluxe and the files profile-analyze.py and dispatch_dump.xml in the same location. It will also look for gameinfo.dbg in the Counterfeit Monkey.inform/Build folder (The Inform IDE will usually create this file when compiling, but might delete it on quitting). Python needs to be installed on your system for this script to work.
 
 profile-analyze.py:
 https://github.com/erkyrath/glulxe
 
 dispatch_dump.xml:
 https://github.com/erkyrath/glk-dev/tree/master/dispatch_dump
+
+Read the source of profile-analyze.py for full instructions on profiling:
+https://raw.githubusercontent.com/erkyrath/glulxe/master/profile-analyze.py
