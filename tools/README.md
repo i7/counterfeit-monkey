@@ -48,7 +48,7 @@ http://eblong.com/zarf/plotex/regtest.html
 
 The profile.sh script will run the test_me test through a profiling-enabled Glulxe interpreter and run the results through profile-analyze.py. This will take several minutes.
 
-Note that the Ultra Undo extension must be commented out of the Counterfeit Monkey source for profiling to work, i.e. the line ”Include version 1/160501 of Ultra Undo by Dannii Willis” in story.ni.
+Note that the Ultra Undo extension must be commented out of the Counterfeit Monkey source for profiling to work, i.e. the line ”Include version 1/160501 of Ultra Undo by Dannii Willis” in story.ni. (At the time of writing, there is a pull request to Glulxe at https://github.com/erkyrath/glulxe/pull/11 that makes Ultra Undo work with Glulxe profiling.)
 
 The script expects to be run from inside the tools folder, and looks for a profiling-enabled interpreter binary named gluxe and the files profile-analyze.py and dispatch_dump.xml in the same location. It will also look for gameinfo.dbg in the Counterfeit Monkey.inform/Build folder (The Inform IDE will usually create this file when compiling, but might delete it on quitting). Python needs to be installed on your system for this script to work.
 
