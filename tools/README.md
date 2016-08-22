@@ -36,7 +36,7 @@ These will not echo any entered commands, so the resulting transcripts will only
 
 There are three regression test scripts in the regtest folder: regtest.sh, regtest2.sh and regtest-hard.sh, one for each major alternative path through the game. These might not be very useful in their current state: they try to account for some of the random variations of the text, but far from all. You will likely need to amend these a lot in order to get error-free runs on your system. When doing this, it will probably help to add the --verbose (or -v) switch to the regtest.py command line in the scripts.
 
-These scripts expect to be run from inside the regtest folder, and look for a remglk-enabled interpreter binary named git-remglk and the regtest.py file in the same location, and gameinfo.dbg in the Counterfeit Monkey.inform/Build folder. They also require Python to be installed on your system.
+These scripts expect to be run from inside the regtest folder, and they will look for a remglk-enabled interpreter binary named git-remglk and the regtest.py script in the same location. They also require Python to be installed on your system.
 
 You can get regtest.py from:
 https://github.com/erkyrath/plotex
