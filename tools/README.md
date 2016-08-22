@@ -14,7 +14,7 @@ See https://github.com/DavidKinder/Git and https://github.com/erkyrath/cheapglk
 
 See https://github.com/erkyrath/glulxe
 
-The line ”/* #define VM_PROFILING (1) */” in the glulxe.h header file must be uncommented before compiling.
+The line ”/\* #define VM_PROFILING (1) \*/” in the glulxe.h header file must be uncommented before compiling.
 
 - Git compiled with RemGlk (for regression testing with RegTest)
 
