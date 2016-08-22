@@ -14,7 +14,7 @@ See https://github.com/DavidKinder/Git and https://github.com/erkyrath/cheapglk
 
 See https://github.com/erkyrath/glulxe
 
-I simply added the line ”#define VM_PROFILING 1” to the beginning of the glulxe.h header file before compiling.
+The line ”/* #define VM_PROFILING (1) */” in the glulxe.h header file must be uncommented before compiling.
 
 - Git compiled with RemGlk (for regression testing with RegTest)
 
@@ -34,7 +34,7 @@ These will not echo any entered commands, so the resulting transcripts will only
 
 ## Regression tests with RegTest
 
-There are three regression test scripts in the regtest folder: regtest.sh, regtest2.sh and regtest-hard.sh, one for each major alternative path through the game. These might not be very useful in their current state: they try to account for some of the random variations of the text, but far from all. You will likely need to amend these a lot in order to get error-free runs on your system.
+There are three regression test scripts in the regtest folder: regtest.sh, regtest2.sh and regtest-hard.sh, one for each major alternative path through the game. These might not be very useful in their current state: they try to account for some of the random variations of the text, but far from all. You will likely need to amend these a lot in order to get error-free runs on your system. When doing this, it will probably help to add the --verbose (or -v) switch to the regtest.py command line in the scripts.
 
 These scripts expect to be run from inside the regtest folder, and look for a remglk-enabled interpreter binary named git-remglk and the regtest.py file in the same location, and gameinfo.dbg in the Counterfeit Monkey.inform/Build folder. They also require Python to be installed on your system.
 
