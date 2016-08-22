@@ -36,7 +36,7 @@ These will not echo any entered commands, so the resulting transcripts will only
 
 There are three regression test scripts in the regtest folder: regtest.sh, regtest2.sh and regtest-hard.sh, one for each major alternative path through the game. These might not be very useful in their current state: they try to account for some of the random variations of the text, but far from all. You will likely need to amend these a lot in order to get error-free runs on your system. When doing this, it will probably help to add the --verbose (or -v) switch to the regtest.py command line in the scripts.
 
-These scripts expect to be run from inside the regtest folder, and they will look for a remglk-enabled interpreter binary named git-remglk and the regtest.py script in the same location. They also require Python to be installed on your system.
+These scripts expect to be run from inside the regtest folder, and they will look for a remglk-enabled interpreter binary named git-remglk and the regtest.py script in the same location.
 
 You can get regtest.py from:
 https://github.com/erkyrath/plotex
@@ -50,7 +50,7 @@ The profile.sh script will run the test_me test through a profiling-enabled Glul
 
 Note that the Ultra Undo extension must be commented out of the Counterfeit Monkey source for profiling to work, i.e. the line ”Include version 1/160501 of Ultra Undo by Dannii Willis” in story.ni. (At the time of writing, there is a pull request to Glulxe at https://github.com/erkyrath/glulxe/pull/11 that makes Ultra Undo work with Glulxe profiling.)
 
-The script expects to be run from inside the tools folder, and looks for a profiling-enabled interpreter binary named gluxe and the files profile-analyze.py and dispatch_dump.xml in the same location. It will also look for gameinfo.dbg in the Counterfeit Monkey.inform/Build folder (The Inform IDE will usually create this file when compiling, but might delete it on quitting). Python needs to be installed on your system for this script to work.
+The script expects to be run from inside the tools folder, and looks for a profiling-enabled interpreter binary named gluxe and the files profile-analyze.py and dispatch_dump.xml in the same location. It will also look for gameinfo.dbg in the Counterfeit Monkey.inform/Build folder (The Inform IDE will usually create this file when compiling, but might delete it on quitting).
 
 profile-analyze.py:
 https://github.com/erkyrath/glulxe
