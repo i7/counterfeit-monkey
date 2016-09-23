@@ -1228,14 +1228,6 @@ And then there's the research to support the product: citations; copies of journ
 
 It's everything I've been working on for the last three years."
 
-Sanity-check doing something when the heavy pack is in location:
-	if the noun is the backpack or the second noun is the backpack:
-		if the subcommand of the backpack matches the text "pack":
-			if the noun is the backpack:
-				now the noun is the heavy pack;
-			if the second noun is the backpack:
-				now the second noun is the heavy pack.
-
 Carry out taking the flash drive:
 	complete "Get my backpack from the cinema";
 	record "retrieving the backpack" as achieved.
@@ -1626,7 +1618,7 @@ The description of the fat guidebook to Europe is "The spine is cracked at many 
 
 The description of the cheap camera is "It is a flimsy device in rose-pink, with a very small lens."
 
-Sanity-check inserting something into the heavy pack when the backpacking girl does not carry the heavy pack:
+Instead of inserting something into the heavy pack when the backpacking girl does not carry the heavy pack:
 	if the heavy pack is closed:
 		say "[The heavy pack] isn't open." instead;
 	otherwise:
