@@ -502,9 +502,8 @@ Instead of taking inventory when the current inventory listing style is utilitar
 			otherwise:
 				add item to unpacked-list;
 		now paragraph break needed is true;
-	let enclosed-list be the list of everything enclosed by the player;
 	let inventory-list be a list of things;
-	repeat with item running through enclosed-list:
+	repeat with item running through things enclosed by the player:
 		unless item is essential or item is part of something or item is restoration gel:
 			add item to inventory-list;
 			if item is packed:
