@@ -126,7 +126,7 @@ A multiple action processing rule when the action name part of the current actio
 	abide by the stop removing error list rule.
 
 This is the stop removing error list rule:
-	if the second noun is toolkit or the second noun is heavy pack or second noun is tub:
+	if the second noun is toolkit or the second noun is heavy pack or second noun is tub or second noun is the bartender:
 		try removing the first thing held by the second noun from the second noun;
 		abide by the cancel multiple rule;
 	if second noun is enclosed by display case or second noun is display case:
