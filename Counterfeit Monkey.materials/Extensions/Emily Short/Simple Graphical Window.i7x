@@ -117,6 +117,9 @@ To draw (image - a figure-name) in (win - a graphics g-window) at x (x - a numbe
 To draw (image - a figure-name) in (win - a graphics g-window) at x (x - a number) and y (y - a number) scaled to width (width - a number) and height (height - a number):
 	(- glk_image_draw_scaled( {win}.(+ ref number +), ResourceIDsOfFigures-->( {image} ), {x}, {y}, {width}, {height} ); -).
 
+To draw a rectangle of color (color - a text) in (win - a graphics g-window) at x (x - a number) and y (y - a number) of width (width - a number) and height (height - a number):
+	(- glk_window_fill_rect( {win}.(+ ref number +), GTE_ConvertColour( {-by-reference:color} ) , {x}, {y}, {width}, {height} ); -).
+
 
 
 Chapter - Some deprecated phrases
@@ -128,7 +131,10 @@ To decide what number is current graphics window width (deprecated):
 	decide on the width of the graphics window;
 
 To draw (image - a figure-name) from (x - a number) by (y - a number) to (width - a number) by (height - a number) (deprecated):
-	(- glk_image_draw_scaled( (+ graphics window +).(+ ref number +), ResourceIDsOfFigures-->( {image} ), {x}, {y}, {width}, {height} ); -).
+	draw image in graphics window at x x and y y scaled to width width and height height;
+
+To color the/-- graphics window (color - a text) from (x - a number) by (y - a number) to (width - a number) by (height - a number) (deprecated):
+	 draw a rectangle of color color in the graphics window at x x and y y of width width and height height;
 
 
 

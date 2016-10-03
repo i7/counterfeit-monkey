@@ -2,8 +2,26 @@ Multimedia by Counterfeit Monkey begins here.
 
 Use authorial modesty.
 
+Include version 10 of Simple Graphical Window by Emily Short.
+Include Graphic Links by Jeff Sheets.
+
+
 
 Part 2 - Multimedia
+
+Chapter - The graphics window
+
+The background color of the graphics window is [007ADF] "7ADF".
+The measurement of the graphics window is 50.
+The position of the graphics window is g-placeleft.
+
+The graphics window construction rule is not listed in any rulebook.
+
+When identification ends (this is the open the graphics window rule):
+	now current graphics drawing rule is the compass-drawing rule;
+	open the graphics window;
+
+
 
 Chapter 1 - Images
 
@@ -199,19 +217,7 @@ To decide what figure-name is the visited image of (way - a direction):
 
 A direction has a number called x-coordinate. A direction has a number called y-coordinate.
 
-Include version 10 of Simple Graphical Window by Emily Short.
-The measurement of the graphics window is 50.
-The position of the graphics window is g-placeleft.
-
-The graphics window construction rule is not listed in any rulebook.
-
 The compass width is a number that varies. The compass width is 120.
-
-Include Graphic Links by Jeff Sheets.
-
-[The setting directional hyperlinks rule is listed after the graphics window construction rule in the when play begins rules.
-When play begins (this is the setting directional hyperlinks rule):
-	follow the compass-drawing rule.]
 
 To establish compass graphlinks:
 	let ZE be grid-margin;
@@ -277,15 +283,12 @@ To clear compass graphlinks:
 	clear the graphlink identified as "goD";
 	clear the graphlink identified as "goU";
 
-When play begins (this is the setting drawing-rule rule):
-	now current graphics drawing rule is the compass-drawing rule.
-
 After going somewhere (this is the update compass on movement rule):
-	refresh compass with current directions;
+	redraw the map and compass;
 	continue the action.
 
 After someone going somewhere when the actor encloses the player:
-	refresh compass with current directions;
+	redraw the map and compass;
 	continue the action.
 
 [We want the compass to stay down in a corner of the screen and not to scale up too huge if the screen is resized. One of the irritating things about Glulx window management is that it's impossible to force an aspect ratio on the player, so I have no idea whether they're going to go tall-and-skinny or short-and-wide. Testers playing in full-screen mode sometimes found that the compass got way too large and encroached on the upper part of the map if I just set the compass to be one quarter the width of the window.]
@@ -307,7 +310,7 @@ This is the compass-drawing rule:
 	if glulx graphics is supported:
 		clear compass graphlinks; [We need to reset the graphlinks every time the player resizes the window, because if the height of the screen changes, the compass may move vertically.]
 		establish compass graphlinks;
-		refresh compass with current directions.
+		redraw the map and compass;
 
 To determine compass coordinates:
 	let ZE be 0;
@@ -363,13 +366,11 @@ To determine compass coordinates:
 [Layer the image: black in the background to fill in the top of the screen; a blue and black mix of the right height across the whole width of the screen so that if the map is too small, it will still look blue at the edges; then the map itself, proportionally scaled as large as it can reasonably be given the window dimensions; then the compass, built from the current circumstances.
 
 In theory, it would have been possible to make the map images carry the compass directions as well. In practice, that presented several problems: more difficult to cope with minor map changes during final revisions, inability to indicate which directions have already been explored.]
-To refresh compass with current directions:
+To redraw the map and compass:
 	if glulx graphics is supported:
 		clear the graphics window;
-		[now currently shown picture is the figure of background;
-		follow the bottom wide drawing rule;
-		now currently shown picture is the local map of the location;
-		follow the bottom scaled drawing rule;]
+		draw a rectangle of color [000000] "" in graphics window at x 0 and y 0 of width (width of the graphics window) and height (height of the graphics window / 2);
+		draw the local map of the location in graphics window;
 		draw Figure of center-squiggle in graphics window at x x-coordinate of north and y y-coordinate of west scaled to width grid-size and height grid-size;
 		determine compass coordinates;
 		repeat with way running through directions:
@@ -381,106 +382,7 @@ To refresh compass with current directions:
 				otherwise:
 					draw the unvisited image of the way in graphics window at x X and y Y scaled to width grid-size and height grid-size;
 
-Section 2 - Local Maps
 
-A room has a figure-name called the local map. [Actual file names and assignments are made later, after all the rooms have been defined.]
-
-[Simple Graphical Window provides instructions for scaling an image and putting it in the middle of the screen if the aspect ratio of the window it needs to fill is slightly wrong. In this case, though, we want to put the map at the bottom of the screen and fill the background above it with black, so there is no apparent top and bottom margin at all.]
-
-[This is the bottom wide drawing rule:
-	draw wide image in graphics window;
-
-To draw wide image in graphics window:
-	(- ScaleToBottomWide(); -)
-
-This is the bottom scaled drawing rule:
-	draw bottom scaled image in graphics window.
-
-To draw bottom scaled image in graphics window:
-	(- ScaleToBottom(); -)
-
-Include (-
-
- [ ScaleToBottom cur_pic result graph_width graph_height
-		img_width img_height w_offset h_offset w_total h_total;
-
-	if (FollowRulebook( (+glulx picture selection rules+) ) ) { cur_pic = ResourceIDsOfFigures-->(+ internally selected picture +); }
-	if (cur_pic == 0) rtrue;
-
-    if (gg_picwin) {
-
-	result = glk_window_get_size(gg_picwin, gg_arguments, gg_arguments+WORDSIZE);
-	graph_width  = gg_arguments-->0;
-	graph_height = gg_arguments-->1;
-
-	result = glk_image_get_info( cur_pic, gg_arguments,  gg_arguments+WORDSIZE);
-	img_width  = gg_arguments-->0;
-	img_height = gg_arguments-->1;
-
-	w_total = img_width;
-	h_total = img_height;
-
-	if (graph_height - h_total < 0) !	if the image won't fit, find the scaling factor
-	{
-		w_total = (graph_height * w_total)/h_total;
-		h_total = graph_height;
-
-	}
-
-	if (graph_width - w_total < 0)
-	{
-		h_total = (graph_width * h_total)/w_total;
-		w_total = graph_width;
-	}
-
-	w_offset = (graph_width - w_total)/2; if (w_offset < 0) w_offset = 0;
-	h_offset = graph_height - h_total; if (h_offset < 0) h_offset = 0;
-
-	glk_image_draw_scaled(gg_picwin, cur_pic, w_offset, h_offset, w_total, h_total);
-	}
- ];
-
- [ ScaleToBottomWide cur_pic result graph_width graph_height
-		img_width img_height w_offset h_offset w_total h_total;
-
-	if (FollowRulebook( (+glulx picture selection rules+) ) ) { cur_pic = ResourceIDsOfFigures-->(+ internally selected picture +); }
-	if (cur_pic == 0) rtrue;
-
-      if (gg_picwin) {
-
-	result = glk_window_get_size(gg_picwin, gg_arguments, gg_arguments+WORDSIZE);
-	graph_width  = gg_arguments-->0;
-	graph_height = gg_arguments-->1;
-
-	result = glk_image_get_info( cur_pic, gg_arguments,  gg_arguments+WORDSIZE);
-	img_width  = gg_arguments-->0;
-	img_height = gg_arguments-->1;
-
-	w_total = img_width;
-	h_total = img_height;
-
-	if (graph_height - h_total < 0) !	if the image won't fit, find the scaling factor
-	{
-		w_total = (graph_height * w_total)/h_total;
-		h_total = graph_height;
-
-	}
-
-	if (graph_width - w_total < 0)
-	{
-		h_total = (graph_width * h_total)/w_total;
-		w_total = graph_width;
-	}
-
-	w_offset = (graph_width - w_total)/2; if (w_offset < 0) w_offset = 0;
-	h_offset = graph_height - h_total; if (h_offset < 0) h_offset = 0;
-
-	glk_image_draw_scaled(gg_picwin, cur_pic, 0, h_offset, graph_width, h_total);
-	}
- ];
-
-
--)]
 
 Chapter 2 - Sounds
 

@@ -23,7 +23,7 @@ Consequently, each place where the player's @ can appear gets its own copy of th
 
 These are the definitions of images associated with room maps. They have to go after the rooms themselves are defined, and it was easier keeping them all in one place than scattering the declarations through the rest of code, so this section could be commented out for testing.]
 
-Figure of Background is the file "map-background.png".
+[Figure of Background is the file "map-background.png".]
 Figure of Back-Alley is the file "map-back-alley.png".
 Figure of Sigil-St is the file "map-sigil-street.png".
 Figure of Amp-Bend is the file "map-ampersand-bend.png".
@@ -91,6 +91,8 @@ Figure of Traffic Circle is the file "map-traffic-circle.png".
 Figure of Turret is the file "map-turret.png".
 Figure of Webster Court is the file "map-webster-court.png".
 Figure of Winding Path is the file "map-winding-path.png".
+
+A room has a figure-name called the local map.
 
 The local map of Back Alley is the figure of back-alley.
 The local map of Sigil Street is the figure of Sigil-St.
