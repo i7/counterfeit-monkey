@@ -13,6 +13,7 @@ Chapter - The graphics window
 
 The background color of the graphics window is [007ADF] "7ADF".
 The measurement of the graphics window is 50.
+The maximum size of the graphics window is 722.
 The position of the graphics window is g-placeleft.
 
 The graphics window construction rule is not listed in any rulebook.

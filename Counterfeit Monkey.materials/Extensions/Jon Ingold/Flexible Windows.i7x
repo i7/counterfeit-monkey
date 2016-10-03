@@ -59,14 +59,15 @@ A g-window has a g-window position called position.
 Definition: a g-window is vertically positioned rather than horizontally positioned if the position of it is at least g-placeabove.
 
 A g-window scale method is a kind of value.
-The g-window scale methods are g-proportional, g-fixed-size and g-using-minimum.
-The specification of a g-window scale method is "Specifies how a new window will be split from its parent window."
+The g-window scale methods are g-proportional, g-fixed-size.
+The specification of a g-window scale method is "Specifies whether the measurement should be taken as an absolute value or a percentage of the parent window."
 A g-window has a g-window scale method called scale method.
 
 A g-window has a number called measurement.
 The measurement of a g-window is usually 40.
 
 A g-window has a number called minimum size.
+A g-window has a number called maximum size.
 
 A g-window has a number called the rock number.
 
@@ -182,6 +183,9 @@ To call glk_window_clear for (win - a g-window):
 To set the background color of (win - a g-window) to (T - a text):
 	(- glk_window_set_background_color( {win}.(+ ref number +), GTE_ConvertColour( {-by-reference:T} ) ); -).
 
+To force the size of (win - a g-window) to (size - a number ):
+	(- glk_window_set_arrangement( glk_window_get_parent( {win}.(+ ref number +) ), {win}.(+ position +) + 14, {size}, GLK_NULL ); -).
+
 [ Fix spurious line breaks from being printed in the main window after running the refreshing activity ]
 To safely carry out the (A - activity on value of kind K) activity with (val - K):
 	(- @push say__p; @push say__pc; CarryOutActivity( {A}, {val} ); @pull say__pc; @pull say__p; -).
@@ -261,7 +265,7 @@ Section - Constructing a window
 
 Constructing something is an activity on g-windows.
 
-Before constructing a g-window (called win) (this is the fix method and measurement rule):
+Before constructing a g-window (called win) (this is the fix positioning rule):
 	let the parent be the parent of win;
 	if parent is the invalid window:
 		continue the activity;
@@ -275,17 +279,6 @@ Before constructing a g-window (called win) (this is the fix method and measurem
 			now the position of win is g-placeright;
 		otherwise:
 			now the position of win is g-placeabove;
-	[ Reset the minimum ]
-	if the scale method of win is g-using-minimum:
-		now the scale method of win is g-proportional;
-	[ Use the minimum size ]
-	if the scale method of win is g-proportional:
-		let the minimum size be 100 multiplied by the minimum size of win;
-		let the calculated size be the measurement of win multiplied by the width of the parent;
-		if win is vertically positioned:
-			now the calculated size is the measurement of win multiplied by the height of the parent;
-		if the minimum size > the calculated size:
-			now the scale method of win is g-using-minimum;
 
 The construct a g-window rule is listed in the for constructing rules.
 The construct a g-window rule translates into I6 as "FW_ConstructGWindow".
@@ -305,14 +298,7 @@ Include (-
 			method = winmethod_Fixed;
 		}
 		method = method + win.(+ position +) - 2;
-		if ( win.(+ scale method +) == (+ g-using-minimum +) )
-		{
-			size = win.(+ minimum size +);
-		}
-		else
-		{
-			size = win.(+ measurement +);
-		}
+		size = win.(+ measurement +);
 	}
 	type = win.(+ type +) + 2;
 	rock = win.(+ rock number +);
@@ -333,6 +319,24 @@ First after constructing a g-window (called win) (this is the check if the windo
 		rule fails;
 	otherwise:
 		now win is g-present;
+
+After constructing a g-window (called win) (this is the check the window is within its size constraints rule):
+	let parent be the parent of win;
+	if parent is the invalid window:
+		continue the activity;
+	if the minimum size of win is 0 and the maximum size of win is 0:
+		continue the activity;
+	let the size be a number;
+	if win is vertically positioned:
+		now size is the height of win;
+	otherwise:
+		now size is the width of win;
+	let msize be the minimum size of win;
+	if the msize is not 0 and size < msize:
+		force the size of win to msize;
+	now msize is the maximum size of win;
+	if the msize is not 0 and size > msize:
+		force the size of win to msize;
 
 
 
@@ -975,7 +979,7 @@ Once the rough positions of the windows have been decided, the next thing to all
 	The scale method of the side window is g-proportional. The measurement of the side window is 25.
 	The scale method of the banner window is g-fixed-size. The measurement of the banner window is 30.
 
-Finally, if we are using proportional windows, we can optionally set a "minimum size", which if the window gets below, it will take, rather than using the proportional scale.
+Finally, if we are using proportional windows, we can optionally set a "minimum size" or a "maximum size", which will be used if the proportional size would be outsize those limits.
 
 
 Section: Text Style and Background Color
