@@ -199,27 +199,32 @@ To decide what figure-name is the visited image of (way - a direction):
 
 A direction has a number called x-coordinate. A direction has a number called y-coordinate.
 
-Include Simple Graphical Window by Emily Short. The graphics window proportion is 50.  The graphics window position is g-left.
+Include version 10 of Simple Graphical Window by Emily Short.
+The measurement of the graphics window is 50.
+The position of the graphics window is g-placeleft.
+
+The graphics window construction rule is not listed in any rulebook.
 
 The compass width is a number that varies. The compass width is 120.
 
 Include Graphic Links by Jeff Sheets.
 
-The setting directional hyperlinks rule is listed after the graphics window construction rule in the when play begins rules.
+[The setting directional hyperlinks rule is listed after the graphics window construction rule in the when play begins rules.
 When play begins (this is the setting directional hyperlinks rule):
-	follow the compass-drawing rule.
+	follow the compass-drawing rule.]
 
 To establish compass graphlinks:
 	let ZE be grid-margin;
 	let D be grid-size;
 	let DD be 2 * D;
 	let DDD be compass width;
-	let top-edge be current graphics window height - (D * 4);
+	let graphics window height be the height of the graphics window;
+	let top-edge be graphics window height - (D * 4);
 	let upper-mid be top-edge + D;
 	let lower-mid be top-edge + DD;
-	let bottom-edge be current graphics window height - D;
-	let super-top be current graphics window height - (D * 5);
-	let true-bottom be current graphics window height;
+	let bottom-edge be graphics window height - D;
+	let super-top be graphics window height - (D * 5);
+	let true-bottom be graphics window height;
 	increase D by grid-margin;
 	increase DD by grid-margin;
 	increase DDD by grid-margin;
@@ -286,8 +291,8 @@ After someone going somewhere when the actor encloses the player:
 [We want the compass to stay down in a corner of the screen and not to scale up too huge if the screen is resized. One of the irritating things about Glulx window management is that it's impossible to force an aspect ratio on the player, so I have no idea whether they're going to go tall-and-skinny or short-and-wide. Testers playing in full-screen mode sometimes found that the compass got way too large and encroached on the upper part of the map if I just set the compass to be one quarter the width of the window.]
 
 To decide what number is grid-size:
-	let width-quarter be (current graphics window width / 4);
-	let height-quarter be (current graphics window height / 4);
+	let width-quarter be (the width of the graphics window / 4);
+	let height-quarter be (the height of the graphics window / 4);
 	if width-quarter is greater than height-quarter:
 		now compass width is height-quarter;
 	else:
@@ -310,10 +315,11 @@ To determine compass coordinates:
 	let D be grid-size;
 	let DD be 2 * D;
 	let DDD be compass width;
-	let TE be current graphics window height - (D * 4);
+	let graphics window height be the height of the graphics window;
+	let TE be graphics window height - (D * 4);
 	let UM be TE + D;
 	let LM be TE + DD;
-	let BEE be current graphics window height - D;
+	let BEE be graphics window height - D;
 	increase D by grid-margin;
 	increase DD by grid-margin;
 	increase DDD by grid-margin;
@@ -359,21 +365,21 @@ To determine compass coordinates:
 In theory, it would have been possible to make the map images carry the compass directions as well. In practice, that presented several problems: more difficult to cope with minor map changes during final revisions, inability to indicate which directions have already been explored.]
 To refresh compass with current directions:
 	if glulx graphics is supported:
-		blank window to graphics background color;
-		now currently shown picture is the figure of background;
+		clear the graphics window;
+		[now currently shown picture is the figure of background;
 		follow the bottom wide drawing rule;
 		now currently shown picture is the local map of the location;
-		follow the bottom scaled drawing rule;
-		draw Figure of center-squiggle from the x-coordinate of north by y-coordinate of west to grid-size by grid-size;
+		follow the bottom scaled drawing rule;]
+		draw Figure of center-squiggle in graphics window at x x-coordinate of north and y y-coordinate of west scaled to width grid-size and height grid-size;
 		determine compass coordinates;
 		repeat with way running through directions:
 			if the way is a listable exit:
 				let X be the x-coordinate of way;
 				let Y be the y-coordinate of way;
 				if the room way from the location is visited:
-					draw the visited image of the way from X by Y to grid-size by grid-size;
+					draw the visited image of the way in graphics window at x X and y Y scaled to width grid-size and height grid-size;
 				otherwise:
-					draw the unvisited image of the way from X by Y to grid-size by grid-size;
+					draw the unvisited image of the way in graphics window at x X and y Y scaled to width grid-size and height grid-size;
 
 Section 2 - Local Maps
 
@@ -381,7 +387,7 @@ A room has a figure-name called the local map. [Actual file names and assignment
 
 [Simple Graphical Window provides instructions for scaling an image and putting it in the middle of the screen if the aspect ratio of the window it needs to fill is slightly wrong. In this case, though, we want to put the map at the bottom of the screen and fill the background above it with black, so there is no apparent top and bottom margin at all.]
 
-This is the bottom wide drawing rule:
+[This is the bottom wide drawing rule:
 	draw wide image in graphics window;
 
 To draw wide image in graphics window:
@@ -474,7 +480,7 @@ Include (-
  ];
 
 
--)
+-)]
 
 Chapter 2 - Sounds
 

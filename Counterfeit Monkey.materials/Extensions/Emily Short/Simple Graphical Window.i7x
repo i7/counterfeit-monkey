@@ -1,390 +1,185 @@
-Version 9/160121 of Simple Graphical Window (for Glulx only) by Emily Short begins here. 
+Version 10/161003 of Simple Graphical Window (for Glulx only) by Emily Short begins here.
 
-"Provides a graphics window in one part of the screen, in which the author can place images; with provision for scaling, tiling, or centering images automatically, as well as setting a background color. Glulx only."
+"Provides a graphics window in one part of the screen, in which the author can place images; with provision for scaling, tiling, or centering images automatically. Glulx only."
 
-Include Glulx Entry Points by Emily Short.
+[ Version 10 updated by Dannii Willis to build off Flexible Windows ]
 
-Section 1 - Creating Rocks and Building the Window Itself
+Use authorial modesty.
 
-Include(-  
+Include version 15/160929 of Flexible Windows by Jon Ingold.
 
-Constant GG_PICWIN_ROCK = 200;
-Global gg_picwin = 0; 
 
--) before "Glulx.i6t".   
 
-Before starting the virtual machine:
-	do nothing. [Hack that, for complicated reasons, prevents character streams going to the wrong place at game startup under some conditions.]
+Chapter - The graphics window
+
+The graphics window is a graphics g-window.
+The graphics window is spawned by the main window.
 
 When play begins (this is the graphics window construction rule):
 	if glulx graphics is supported:
-		build graphics window;
-		follow the current graphics drawing rule.
+		open the graphics window;
 
+Rule for refreshing the graphics window (this is the automatic graphics window refreshing rule):
+	follow the current graphics drawing rule;
 
-Section 2 - Items to slot into HandleGlkEvent and IdentifyGlkObject
 
-[These rules belong to rulebooks defined in Glulx Entry Points.]
 
-A glulx zeroing-reference rule (this is the default removing reference to picwin rule):
-	zero picwin.
+Chapter - Graphics drawing rules
 
-To zero picwin:
-	(- gg_picwin = 0; -)
+The current graphics drawing rule is a rule variable.
+The current graphics drawing rule is the bland graphics drawing rule.
 
-A glulx resetting-windows rule (this is the default choosing picwin rule):
-	identify glulx rocks.	
+The currently shown picture is a figure-name variable.
 
-To identify glulx rocks:
-	(- RockSwitchingSGW(); -)
-
-Include (-
-
-[ RockSwitchingSGW;
-	switch( (+current glulx rock+) )
-	{
-		GG_PICWIN_ROCK: gg_picwin = (+ current glulx rock-ref +);
-	}
-];
-
--)
-
-A glulx arranging rule (this is the default arranging behavior rule): 
-	if glulx graphics is supported:
-		follow the current graphics drawing rule.
-	
-A glulx redrawing rule (this is the default redrawing behavior rule):
-	if glulx graphics is supported:
-		follow the current graphics drawing rule.
-
-A glulx object-updating rule (this is the automatic redrawing window rule):
-	if glulx graphics is supported:
-		follow the current graphics drawing rule.
-
-Section 3 - Inform 6 Routines for Drawing In Window
-
-Include (-  
-
-[ FindHeight  result graph_height;
-	if (gg_picwin)
-	{	result = glk_window_get_size(gg_picwin, gg_arguments, gg_arguments+WORDSIZE);
-			 		graph_height  = gg_arguments-->1;
-	} 
-	return graph_height;
-];
-
-[ FindWidth  result graph_width;
-	if (gg_picwin)
-	{	result = glk_window_get_size(gg_picwin, gg_arguments, gg_arguments+WORDSIZE);
-			 		graph_width  = gg_arguments-->0;
-	} 
-	return graph_width;
-];
-
- [ MyRedrawGraphicsWindows cur_pic result graph_width graph_height 
-		img_width img_height w_offset h_offset w_total h_total;
-
-	if (FollowRulebook( (+glulx picture selection rules+) ) ) { cur_pic = ResourceIDsOfFigures-->(+ internally selected picture +); }   
-	if (cur_pic == 0) rtrue;
-
-	  if (gg_picwin) {  
-
-	result = glk_window_get_size(gg_picwin, gg_arguments, gg_arguments+WORDSIZE);
-			 	graph_width  = gg_arguments-->0;
-			 	graph_height = gg_arguments-->1;
-
-	result = glk_image_get_info( cur_pic, gg_arguments,  gg_arguments+WORDSIZE);
-	img_width  = gg_arguments-->0;
-	img_height = gg_arguments-->1;
-
-	w_total = img_width;
-	h_total = img_height;
-
-	if (graph_height - h_total < 0) !	if the image won't fit, find the scaling factor
-	{
-		w_total = (graph_height * w_total)/h_total;
-		h_total = graph_height;
-
-	}
-
-	if (graph_width - w_total < 0)
-	{
-		h_total = (graph_width * h_total)/w_total;
-		w_total = graph_width;
-	}
-
-	w_offset = (graph_width - w_total)/2; if (w_offset < 0) w_offset = 0;
-	h_offset = (graph_height - h_total)/2; if (h_offset < 0) h_offset = 0;
-
-	glk_image_draw_scaled(gg_picwin, cur_pic, w_offset, h_offset, w_total, h_total); 
-	}
- ]; 
-
-[ BlankWindowToColor color result graph_width graph_height;
-  
-
-	  if (gg_picwin) {  
-
-	result = glk_window_get_size(gg_picwin, gg_arguments, gg_arguments+WORDSIZE);
-			 	graph_width  = gg_arguments-->0;
-			 	graph_height = gg_arguments-->1; 
-
-	glk_window_fill_rect(gg_picwin, color , 0, 0, graph_width, graph_height);
-	}
-];
-
- [ TileFillGraphicsWindows cur_pic result graph_width graph_height 
-		img_width img_height w_total h_total;
-
-	if (FollowRulebook( (+glulx picture selection rules+) ) ) { cur_pic = ResourceIDsOfFigures-->(+ internally selected picture +); }   
-	if (cur_pic == 0) rtrue;
-
-	  if (gg_picwin) {  
-
-	result = glk_window_get_size(gg_picwin, gg_arguments, gg_arguments+WORDSIZE);
-			 	graph_width  = gg_arguments-->0;
-			 	graph_height = gg_arguments-->1;
-
-	result = glk_image_get_info( cur_pic, gg_arguments,  gg_arguments+WORDSIZE);
-	img_width  = gg_arguments-->0;
-	img_height = gg_arguments-->1;   
-
-	while (w_total < graph_width)
-	{
-		while (h_total < graph_height)
-		{
-			glk_image_draw(gg_picwin, cur_pic, w_total, h_total); 
-			h_total = h_total + img_height;
-		}
-		h_total = 0;
-		w_total = w_total + img_width;
-	}
-	}
- ]; 
-
-[ TotalFillGraphicsWindows cur_pic result graph_width graph_height 
-		img_width img_height;
-
-	if (FollowRulebook( (+glulx picture selection rules+) ) ) { cur_pic =  ResourceIDsOfFigures-->(+ internally selected picture +); }   
-	if (cur_pic == 0) rtrue;
-
-	  if (gg_picwin) {  
-
-	result = glk_window_get_size(gg_picwin, gg_arguments, gg_arguments+WORDSIZE);
-			 	graph_width  = gg_arguments-->0;
-			 	graph_height = gg_arguments-->1;
-
-	glk_image_draw_scaled(gg_picwin, cur_pic, 0, 0, graph_width, graph_height); 
-	}
- ]; 
-
-!Array gg_arguments --> 0 0;
-
-[ MakeGraphicsWindow depth prop pos;
-	if (gg_picwin) rtrue;
-	depth = (+ Graphics window pixel count +);
-	prop = (+ Graphics window proportion +);
-	pos = (+ Graphics window position +);
-	switch(pos)
-	{
-		(+g-null+): pos = winmethod_Above;
-		(+g-above+): pos = winmethod_Above;
-		(+g-below+): pos = winmethod_Below;
-		(+g-left+): pos = winmethod_Left;
-		(+g-right+): pos = winmethod_Right;
-	} 
-	if (prop > 0 && prop < 100)
-	{	
-		gg_picwin = glk_window_open(gg_mainwin, (pos+winmethod_Proportional), prop, wintype_Graphics, GG_PICWIN_ROCK);
-	}
-	else
-	{
-		if (depth == 0) depth = 240;
-		gg_picwin = glk_window_open(gg_mainwin, (pos+winmethod_Fixed), depth, wintype_Graphics, GG_PICWIN_ROCK);
-	}
-];
--). 
-
-Section 4 - Inform 7 Wrappers for Defining Window and Colors
-
-Include Glulx Text Effects by Emily Short. [This makes colors available to us.]
-
-Currently shown picture is a figure-name that varies. [This the author may set during the course of the source.]
-
-Internally selected picture is a figure-name that varies. [This is the picture selected by the picture selection rules, which might be the 'currently shown picture' (by default) or might be, say, the current frame of an animation in progress. The author should not set this directly, but instead write additional picture selection rules if he wants to change it.]
-
-Graphics window pixel count is a number that varies. Graphics window proportion is a number that varies.
-
-Graphics background color is some text that varies.
-
-Glulx window position is a kind of value. The Glulx window positions are g-null, g-above, g-below, g-left, and g-right.
-
-Graphics window position is Glulx window position that varies.  
-
-
-Section 4a - More Wrappers (for use without Collage Tools by Emily Short)
-
-To decide what number is the current graphics window width:
-	(- FindWidth() -)
-
-To decide what number is the current graphics window height:
-	(- FindHeight() -)
-
-To color the/-- graphics window (gcv - a text) from (x - a number) by (y - a number) to (xx - a number) by (yy - a number):
-	let numerical gcv be the color number of gcv;
-	color graphics window numerical gcv from x by y to xx by yy.
-
-To color the/-- graphics window (gcv - a number) from (x - a number) by (y - a number) to (xx - a number) by (yy - a number):
-	 (- glk_window_fill_rect(gg_picwin, {gcv} , {X}, {Y}, {XX}, {YY}); -)
-
-To draw (fig - a figure-name) from (x - a number) by (y - a number) to (xx - a number) by (yy - a number): 
-	(- glk_image_draw_scaled(gg_picwin, ResourceIDsOfFigures-->{fig}, {x}, {y}, {xx}, {yy}); -)
-	
-To decide what number is the color number of (gcv - a text):
-	(- GTE_ConvertColour( {gcv} ) -)
-
-
-Section 5 - Inform 7 Wrapper Rulebook for Picture Selection
-
-The glulx picture selection rules are a rulebook.
-
-A glulx picture selection rule (this is the default picture selection rule):
-	now the internally selected picture is the currently shown picture;
-	rule succeeds.
-
-Section 6 - Inform 7 Wrapper Phrases and Rules for Drawing
-
-To build graphics window:
-	(- MakeGraphicsWindow(); -)
-
-Current graphics drawing rule is a rule that varies. The current graphics drawing rule is the standard placement rule.
-
-[By default we want to clear the screen to the established background color, then draw our image centered in the window, scaling it down to fit if necessary.]
+[ These two rules fill with the background color ]
+This is the bland graphics drawing rule:
+	clear the graphics window;
 
 This is the standard placement rule:
-	blank window to graphics background color;
-	follow the centered scaled drawing rule. 
+	clear the graphics window;
+	draw the currently shown picture in the graphics window;
 
-This is the bland graphics drawing rule:
-	blank window to graphics background color;
-
-To blank the/-- graphics/-- window to (bc - some text): 
-	blank the graphics window to the color number of bc;
-
-To blank the/-- graphics/-- window to (bc - a number):
-	(- BlankWindowToColor({bc}); -)
-
-[We can also use the centered scaled drawing rule on its own, without blanking out the background, if we want. This might be useful if, for instance, we want to fill the background with a tiled texture and then place a centered image over the top of it.]
-
+[ Don't fill the window, potentially overlapping previous images ]
 This is the centered scaled drawing rule:
-	draw centered scaled image in graphics window.
+	draw the currently shown picture in the graphics window;
 
-To draw centered scaled image in graphics window:
-	(- MyRedrawGraphicsWindows(); -)
-
-[And here's the rule for tiling an image:]
+[ These two rules clear the window for the sake of performance ]
+This is the fully scaled drawing rule:
+	clear the graphics window;
+	draw the currently shown picture in the graphics window, fully scaled;
 
 This is the tiled drawing rule:
-	draw tiled image in graphics window.
+	tile the currently shown picture in the graphics window;
 
-To draw tiled image in graphics window:
-	(- TileFillGraphicsWindows(); -)
 
-[And for scaling the image to fit the graphics window, without preserving aspect ratio but simply filling all the available space:]
 
-This is the fully scaled drawing rule:
-	draw fully scaled image in graphics window.
+Chapter - Phrases for manually drawing images
 
-To draw fully scaled image in graphics window:
-	(- TotalFillGraphicsWindows(); -)
+To decide what number is the height of (image - a figure-name):
+	(- SGW_ImageSize( {image}, 1 ) -).
 
-[The purpose of this design is to allow authors to add their own rules for drawing graphics should the provided ones be thought insufficient, without needing to replace the entire extension. To do this, create a rule with a different name, a To... phrase to call an I6 function, and the I6 function itself, emulating the format used here.]
+To decide what number is the width of (image - a figure-name):
+	(- SGW_ImageSize( {image}, 0 ) -).
+
+Include (-  
+[ SGW_ImageSize image index;
+	glk_image_get_info( ResourceIDsOfFigures-->image, gg_arguments, gg_arguments + WORDSIZE );
+	return gg_arguments-->index;
+];
+-).
+
+To draw (image - a figure-name) in (win - a graphics g-window), fully scaled:
+	[ Measure the image]
+	let image height be the height of image;
+	let image width be the width of image;
+	[ Measure the window ]
+	let window height be the height of win;
+	let window width be the width of win;
+	let x offset be 0;
+	let y offset be 0;
+	let final height be window height;
+	let final width be window width;
+	if not fully scaled:
+		now final height is image height;
+		now final width is image width;
+		[ Check if the image will fit or scale it to fit ]
+		if final height > window height:
+			now final width is final width * ( ( 1.0 * window height ) / final height ) to the nearest whole number;
+			now final height is window height;
+		if final width > window width:
+			now final height is final height * ( ( 1.0 * window width ) / final width ) to the nearest whole number;
+			now final width is window width;
+		now x offset is ( window width - final width ) / 2;
+		now y offset is ( window height - final height ) / 2;
+	draw image in win at x x offset and y y offset scaled to width final width and height final height;
+
+To tile (image - a figure-name) in (win - a graphics g-window):
+	[ Clear the window for performance sake ]
+	clear the graphics window;
+	[ Measure the image]
+	let image height be the height of image;
+	let image width be the width of image;
+	[ Measure the window ]
+	let window height be the height of win;
+	let window width be the width of win;
+	let x be 0;
+	let y be 0;
+	while x < window width:
+		now y is 0;
+		while y < window height:
+			draw image in win at x x and y y;
+			increase y by image height;
+		increase x by image width;
+
+To draw (image - a figure-name) in (win - a graphics g-window) at x (x - a number) and y (y - a number):
+	(- glk_image_draw( {win}.(+ ref number +), ResourceIDsOfFigures-->( {image} ), {x}, {y} ); -).
+
+To draw (image - a figure-name) in (win - a graphics g-window) at x (x - a number) and y (y - a number) scaled to width (width - a number) and height (height - a number):
+	(- glk_image_draw_scaled( {win}.(+ ref number +), ResourceIDsOfFigures-->( {image} ), {x}, {y}, {width}, {height} ); -).
+
+
+
+Chapter - Some deprecated phrases
+
+To decide what number is current graphics window height (deprecated):
+	decide on the height of the graphics window;
+
+To decide what number is current graphics window width (deprecated):
+	decide on the width of the graphics window;
+
+To draw (image - a figure-name) from (x - a number) by (y - a number) to (width - a number) by (height - a number) (deprecated):
+	(- glk_image_draw_scaled( (+ graphics window +).(+ ref number +), ResourceIDsOfFigures-->( {image} ), {x}, {y}, {width}, {height} ); -).
+
+
 
 Simple Graphical Window ends here.
 
+
+
 ---- Documentation ----
 
-Simple Graphical Window creates one graphics window, and provides some different methods of drawing images in that window. The window may be placed above, below, or beside the main text window (left or right), and may be sized or proportioned as we like, but there may be only one; this extension does not allow for drawing multiple graphics windows or creating a more complex window layout. 
+Simple Graphical Window builds on Flexible Windows to provide some rules for different ways of drawing in graphics windows. This extension creates a window called the graphics window, which may be positioned as usual per Flexible Windows.
 
 **** Rules for drawing in windows ****
 
 Whenever Inform needs to re-fill the window -- at the start of the game, or when a saved game is restored, or when the player resizes the window manually -- Simple Graphical Window will follow a rule that varies, the "current graphics drawing rule". The author may set this to any of the following:
 
-	(1) (The default.) The standard placement rule. The standard placement rule fills the window with a background color, then draws the currently shown picture (a figure-name that varies, and which the author can reset during the game). The picture is centered in the available screen space, unless it is too large, in which case it is scaled down proportionally to fit. A picture is never scaled up, on the grounds that upscaling images usually produces unattractively fuzzy results. Note that this and rules 2-4 will all behave incorrectly if we don't have at least one figure defined in our game source. In that case, see rule 5.
+	(1) (The default) The bland graphics drawing rule. Blanks the window to the background color and does nothing else. 
 
-	(2) The fully scaled image rule. Fills the window completely with the currently shown picture, regardless of proportion. This is unlikely to look good with images of any complexity, but is included for completeness.
+	(2) The standard placement rule. The standard placement rule fills the window with a background color, then draws "the currently shown picture" (a figure-name that varies, and which the author can reset during the game). The picture is centered in the available screen space, unless it is too large, in which case it is scaled down proportionally to fit. A picture is never scaled up, on the grounds that upscaling images usually produces unattractively fuzzy results. Note that this and rules 2-4 will all behave incorrectly if we don't have at least one figure defined in our game source. In that case, see rule 5.
 
-	(3) The tiled drawing rule. Tiles the currently shown picture to fill the available space horizontally and vertically.
+	(3) The centered scaled drawing rule. Same as the standard placement rule, except that it does not fill the window with a background color first. This means that if there is something previously printed in the graphics window, this may overlap it.
 
-	(4) The centered scaled drawing rule. Same as the standard placement rule, except that it does not fill the window with a background color first. This means that if there is something previously printed in the graphics window, this may overlap it.
+	(4) The fully scaled drawing rule. Fills the window completely with the currently shown picture, regardless of proportion. This is unlikely to look good with images of any complexity, but is included for the sake of completeness.
 
-	(5) The bland graphics drawing rule. Blanks the window to the background color and does nothing else. 
+	(5) The tiled drawing rule. Tiles the currently shown picture to fill the available space horizontally and vertically.
 
-To set this rule at the outset of play, we would write, for instance
+To set this rule at the beginning, we would write a before starting the virtual machine rule:
 
-	Rule for starting the virtual machine:
-		now the current graphics drawing rule is the bland graphics drawing rule.
+	Before starting the virtual machine:
+		now the current graphics drawing rule is the bland graphics drawing rule;
 
-It is important to use the "starting the virtual machine" activity because this occurs before the first window-drawing happens; where as "when play begins" happens after the windows have already been set in place, when it is too late to give instructions about constructing them.
+It is important to use the "starting the virtual machine" activity because this occurs before the first window drawing happens; where as a "when play begins" may run after the graphics window has already been opened.
 
+If we need to redraw the image in the window, we can write 
 
-If we need to redraw the image in the window, we write 
-
-	follow the current graphics drawing rule.
+	follow the current graphics drawing rule;
 
 For instance if we were adding an image to the screen every time the player moved, we might write something like
 
 	Carry out looking:
-		now the currently shown picture is the room illustration of the location;
-		follow the current graphics drawing rule.
+		now currently shown picture is the room illustration of the location;
+		follow the current graphics drawing rule;
 
-...where the room illustration is defined for each room in the game. (The extension "Location Images" implements this idea in full.)
+... where the room illustration is defined for each room in the game. (The extension "Location Images" implements this idea in full.)
 
 The author may also create other drawing rules of his own devising and make any of these the current graphics drawing rule, as needed. It will probably be necessary to specify graphics drawing rules in Inform 6 unless the author intends a fairly simple combination of the rules already provided here; for more information about graphics drawing in Glulx, see
 
 	http://adamcadre.ac/gull/
-	http://members.aol.com/doepage/glkdunces.htm
 
 In writing these rules, it's worth bearing in mind that the rule should be able to reconstruct the entire contents of the graphics window every time it is called, rather than relying on things drawn there during previous moves; otherwise, the graphics window will not redraw properly when the game is reloaded or a turn is undone.
 
-**** Window alignment ****
 
-By default, the graphics window is drawn above the main text window and below the status line. There are three other options, however: left of the main text window, right of the main text window, and below the main text window. The alignment depends on "graphics window position", which can have any of the values g-left, g-above, g-right, and g-below. So for instance we might write
-
-	Graphics window position is g-right.
-
-to produce a window along the right side of the screen. 
-
-Note that window alignment and dimensions should be set at the outset; changing them after the start of play will not redraw the window in a new size.
-
-**** Window dimensions ****
-
-Graphics windows in Glulx can be of two kinds: fixed and proportional. A fixed window has a height (or width, if drawn left/right rather than above/below) of a set number of pixels regardless of the total screen area devoted to the game; a proportional window has a height (or width) relative to that of the main window, which may be between 1 and 99 percent.
-
-If we prefer a proportional window, we set the "graphics window proportion" to some number between 1 and 99, thus:
-
-	The graphics window proportion is 25. 
-
-If we prefer a fixed window, we set "graphics window pixel count", which should be a number reflecting the desired height of our graphics window in pixels. We can set this by adding a line to our source such as
-
-	The graphics window pixel count is 150.
-
-If both a graphics window pixel count and a graphics window proportion are given and the graphics window proportion is a valid number between 1 and 99, the proportion is obeyed and graphics window pixel count is simply ignored. 
-
-If no information is provided, the graphics window defaults to a fixed-count window of 240 pixels.
-
-**** Glulx colors ****
-
-The background color used by the standard placement rule depends on the "graphics background color". 
-
-This extension, like Glulx Text Effects, specifies graphics colors in the form of strings containing hex color numbers such as "$000000". Black would thus be "$000000", a dark grey "$444444", white "$FFFFFF".
-
-Moreover, the phrase "blank window to..." allows us to fill the graphics window with one of these preset colors, as in
-	
-	blank window to "$FFFFFF";
-	blank window to graphics background color;
-
-These numbers are hex color numbers. The principle is that the hex number represents the amount of blue in the first two digits (from 00 to FF); the amount of green in the next two digits; and the amount of red in the last two digits. Thus $0000FF has no blue or green in it, but the maximum possible amount of red. Where each pair of digits is equal (as in $444444 or $A0A0A0), we will have equal components of each color and the result will be some shade of grey.  
 
 Example: * Mondrian - A strip of randomly varying color along the left edge of the screen 
 
@@ -394,9 +189,9 @@ Example: * Mondrian - A strip of randomly varying color along the left edge of t
 
 	Stark Room is a room.
 	
-	The graphics window proportion is 10. The graphics window position is g-left.
+	The measurement of the graphics window is 10. The position of the graphics window is g-placeleft.
 	
-	Rule for starting the virtual machine:
+	Before starting the virtual machine:
 		now the current graphics drawing rule is the bland graphics drawing rule.
 	
 	Table of Common Color Values 
@@ -412,7 +207,7 @@ Example: * Mondrian - A strip of randomly varying color along the left edge of t
 	Every turn:
 		if glulx graphics is supported:
 			choose a random row in the Table of Common Color Values;
-			now the graphics background color is value entry;
+			now the background color of the graphics window is the value entry;
 			follow the current graphics drawing rule.	
 	
 	Test me with "z / z / z / z / z / z".

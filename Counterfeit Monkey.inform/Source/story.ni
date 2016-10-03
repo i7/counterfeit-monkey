@@ -75,7 +75,7 @@ Include version 1/160501 of Ultra Undo by Dannii Willis.
 The release number is 6.
 
 Use scoring.
-Use no deprecated features.
+[Use no deprecated features.]
 
 Include Scope Caching by Mike Ciul.
 Include Large Game Speedup by Andrew Plotkin.
@@ -85,7 +85,6 @@ Include Subcommands by Daniel Stelzer.
 Include version 1/160718 of Startup Precomputation by Dannii Willis.
 The finalise startup precomputation rule is listed last in the when play begins rules.
 The initial conversation rule is listed after the finalise startup precomputation rule in the when play begins rules.
-The graphics window construction rule is listed after the finalise startup precomputation rule in the when play begins rules.
 
 Last after starting the virtual machine rule (this is the apologise for a slow start rule):
 	say "Counterfeit Monkey is starting. This may take a short moment.";

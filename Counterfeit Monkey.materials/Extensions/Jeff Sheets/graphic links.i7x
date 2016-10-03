@@ -1,8 +1,8 @@
-Version 3 of Graphic Links (for Glulx only) by Jeff Sheets begins here.
+Version 3/161003 of Graphic Links (for Glulx only) by Jeff Sheets begins here.
 
 "Allows the author to set hyperlinks in the Simple Graphical Window and give instructions about what is to result from performing them."
 
-Include Version 2 of Simple Graphical Window by Emily Short.
+Include version 10/161003 of Simple Graphical Window by Emily Short.
 
 Part 1 - Glulx Gestalts
 
@@ -39,8 +39,9 @@ Include (-
 ];
 
 [ SetGraphLink ;
-	if (gg_picwin) {
-	            if (glk_gestalt(gestalt_MouseInput, winType_Graphics)) glk_request_mouse_event(gg_picwin);
+	if ( GetEitherOrProperty( (+ graphics window +), (+ g-present +) ) )
+	{
+		if (glk_gestalt(gestalt_MouseInput, winType_Graphics)) glk_request_mouse_event( (+ graphics window +).(+ ref number +) );
 	}
 ];
 
