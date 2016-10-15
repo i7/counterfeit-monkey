@@ -11,7 +11,7 @@ Part 2 - Multimedia
 
 Chapter - The graphics window
 
-The background color of the graphics window is [007ADF] "7ADF".
+The background color of the graphics window is [000000] "0".
 The measurement of the graphics window is 50.
 The maximum size of the graphics window is 722.
 The position of the graphics window is g-placeleft.
@@ -364,13 +364,18 @@ To determine compass coordinates:
 	now x-coordinate of southeast is DD;
 	now y-coordinate of southeast is LM.
 
-[Layer the image: black in the background to fill in the top of the screen; a blue and black mix of the right height across the whole width of the screen so that if the map is too small, it will still look blue at the edges; then the map itself, proportionally scaled as large as it can reasonably be given the window dimensions; then the compass, built from the current circumstances.
+[Layer the image: a black background to fill in the top of the screen; blue for the bottom half so that if the map is too small, it will still look blue at the edges; then the map itself, proportionally scaled as large as it can reasonably be given the window dimensions; then the compass, built from the current circumstances.
 
 In theory, it would have been possible to make the map images carry the compass directions as well. In practice, that presented several problems: more difficult to cope with minor map changes during final revisions, inability to indicate which directions have already been explored.]
+
+Figure of background colour is the file "map-background-colour.png".
+
 To redraw the map and compass:
 	if glulx graphics is supported:
 		clear the graphics window;
-		draw a rectangle of color [000000] "" in graphics window at x 0 and y 0 of width (width of the graphics window) and height (height of the graphics window / 2);
+		[ Draw the background at slightly more than half the window height to ensure odd heights don't leave a 1 pixel black line ]
+		let half height be (height of the graphics window / 2) + 1;
+		draw figure of background colour in graphics window at x 0 and y half height scaled to width (width of the graphics window) and height half height;
 		draw the local map of the location in graphics window;
 		draw Figure of center-squiggle in graphics window at x x-coordinate of north and y y-coordinate of west scaled to width grid-size and height grid-size;
 		determine compass coordinates;
