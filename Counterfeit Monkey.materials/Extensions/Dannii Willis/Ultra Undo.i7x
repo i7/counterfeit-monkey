@@ -1,4 +1,4 @@
-Version 1/160622 of Ultra Undo (for Glulx only) by Dannii Willis begins here.
+Version 1/161017 of Ultra Undo (for Glulx only) by Dannii Willis begins here.
 
 "Handles undo using external files for very big story files"
 
@@ -10,9 +10,9 @@ Use maximum file based undo count of at least 10 translates as (- Constant ULTRA
 
 Include (-
 
-Global ultra_undo_needed = 0;
 ! Our undo counter
 Global ultra_undo_counter = 0;
+Global ultra_undo_needed = 0;
 
 ! A fileref to a tempfile to store ultra_undo_counter across restores
 Global ultra_undo_counter_fileref = 0;
@@ -186,7 +186,7 @@ Section - Items to slot into HandleGlkEvent and IdentifyGlkObject
 
 [These rules belong to rulebooks defined in Glulx Entry Points.]
 
-A glulx zeroing-reference rule (this is the default removing reference to uufiles rule):
+A glulx zeroing-reference rule (this is the removing references to uufiles rule):
 	zero undo array.
 
 To zero undo array:
@@ -208,7 +208,7 @@ Include (-
 -)
 
 
-A glulx resetting-filerefs rule (this is the default choosing uufiles rule):
+A glulx resetting-filerefs rule (this is the restoring uufiles rule):
 	identify glulx rock.
 
 To identify glulx rock:
@@ -269,7 +269,7 @@ Include (-
 	@save gg_savestr res;
 	if (res == -1) {
 		! The player actually just typed "restore". We're going to print
-		!  GL__M(##Restore,2); the Z-Code Inform library does this correctly
+		!  RESTORE_THE_GAME_RM('B'); the Z-Code Inform library does this correctly
 		! now. But first, we have to recover all the Glk objects; the values
 		! in our global variables are all wrong.
 		Ultra_Undo_Test();
@@ -287,6 +287,7 @@ Include (-
 ];
 
 -) instead of "Save The Game Rule" in "Glulx.i6t".
+
 
 
 Section - Cleaning up
@@ -311,12 +312,12 @@ Include (-
 
 [ RESTART_THE_GAME_R;
 	if (actor ~= player) rfalse;
-	GL__M(##Restart, 1);
+	RESTART_THE_GAME_RM('A');
 	if ( YesOrNo() ~= 0 )
 	{
 		if ( ultra_undo_needed == 1 ) Ultra_Undo_Delete_All();
 		@restart;
-		GL__M( ##Restart, 2 );
+		RESTART_THE_GAME_RM('B'); new_line;
 	}
 ];
 
@@ -333,6 +334,7 @@ Save undo state is a truth state that varies. Save undo state is usually true.
 Chapter (for use with Undo Output Control by Erik Temple)
 
 Section - Undo save control (in place of Section - Undo save control in Undo Output Control by Erik Temple)
+
 
 
 Ultra Undo ends here.
