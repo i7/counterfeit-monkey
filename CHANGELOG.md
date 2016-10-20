@@ -10,14 +10,16 @@
 - Adds the testing command PAUSES OFF to disable the game pausing and waiting for you to press a key until continuing. Enable it again with PAUSES ON.
 - Adds the testing command RANDOM-SEED (number) to reset the random seed to any number.
 - Includes some primitive testing scripts that pipe a text file of commands into the game and compares the output to a previous transcript.
-- Fixes a bug where the as could disappear out of your hand if you made a second as from the trash, then synthesized an ascot, then gelled the ascot. Also prevents similar potential bugs.
+- Fixes a bug where the as could disappear out of your hand if you made a second as from the trash, then synthesized an ascot, then gelled the ascot. Also prevents any potential similar bugs.
 - Makes sure that the roc or other converted forms of Brock are properly gelled when you board the yacht.
 - Fixes an issue where the game wouldn't let us leave the starting park area if we letter-converted the plans before touching them.
 - Fixes a run-time problem in Threaded Conversation when resetting the interlocutor while the current interlocutor is nothing.
+– Speeds up route-finding by not looking for ways around locked doors.
+– Speeds up conversation by reducing the number of quips tested for viability each turn.
 
 ### Gameplay changes
 
-- Liquids and sinks behave more consistently. You can no longer pick up uncontained fluids and carry them around in containers along with other objects and fluids.
+- Liquids and sinks behave more consistently. You can no longer pick up some uncontained fluids and carry them around in containers along with other objects and fluids.
 - The legend now stays attached to the map after gelling it.
 - Disallows walking away from the roc. Before it was possible for it to get into the kayak with you and then follow you around the yacht.
 - No longer lets you leave essential objects behind by inserting them into a container and then letter-transforming the container.
@@ -28,7 +30,8 @@
 - You can no longer put containers in the sink under the dispenser and fill them with soap.
 - Animals no longer get out of containers on the same turn that they follow you into them.
 - It is no longer possible to insert random things into the customs house line or the secret door.
-- Typing INSERT X IN BACKPACK when X is already in the backpack will no longer make us open the backpack, take out X and then put it back in. Exceptions are the T-inserter and the cryptolock: you can still use INSERT X IN T-INSERTER to insert another T even if X is already in the T-inserter.
+- Typing INSERT X IN CONTAINER when X is already in the container will no longer make us open the container if closed, take out X and then put it back in. Exceptions are the T-inserter and the cryptolock: you can still use INSERT X IN T-INSERTER to insert another T even if X is already in the T-inserter.
+– Fixes a bug where placing an object in the garage before changing it into a car would prevent you from entering it.
 
 ### Parsing
 
@@ -37,14 +40,16 @@
 - Adds several new ways of asking the bartender to homonym-convert our things.
 - Adds more ways tell the parser to fill the pen with ink and write with it.
 - Adds more synonyms for putting the reel in the projector and starting the movie.
-- Fixes a bug when trying to remove things from containers and supporters would be misunderstood as trying to wave the letter-remover at them.
+- Fixes a bug when trying to remove things from containers and supporters could be misunderstood as trying to wave the letter-remover at them.
 - Fixes responses to waving the letter-remover at the tub and the restoration gel, and to putting gel on the letter-remover.
 - Prevents the parser from going to the diorama table in Heritage Corner when typing GO TO BUREAU.
 - Prevents the parser from going to the elderly apartments in Sigil Street when typing GO TO APARTMENT.
 - Prevents the parser from going to the postcards in Cathedral Gift Shop when typing GO TO WALLS.
 - Prevents the parser from going to the yellow buildings in Back Alley when typing GO TO WALLS.
-- Fixes a bug that would sometimes leave us standing just outside the place we tried to go to.
-- Makes it less likely that typing a number as a disambiguation choice will select something with a different number.
+- Prevents the parser from asking which room in the Church we want to go to when typing GO TO CHURCH.
+- Fixes a bug that would sometimes leave us standing just outside the place we wanted to go to.
+- Makes it less likely that typing a number as a disambiguation choice will pick the wrong item.
+– Allows more greetings used by characters to be used by us as well.
 
 ### Typos and cosmetic output errors
 
@@ -59,14 +64,18 @@
 - Fixes a bug that would sometimes refer to a galley sink in the description of the public convenience.
 - Fixes a double room description that was sometimes printed when going to other rooms.
 - Makes the letter-transformation tools actually refer to us as Alexandra.
-- The name that the letter-remover tries to change is now always the same as the printed name of the object. It used to differ for certain objects, like sink taps.
+- The name that the letter-remover tries to change is now always the same as the printed name of the object. It used to differ for certain objects, such as the sink taps.
 - Fixes the reply when asking the gift shop volunteer about things he has nothing to say about.
 - No longer mentions the mechanic twice when examining the garage.
-- Adds back some old responses to trying to buy the souvenirs in the cathedral gift shop.
+- Adds back some old responses to trying to buy souvenirs in the cathedral gift shop.
 - The descriptions of running taps in room descriptions are now grouped together.
-- Makes sure that all the steps involved in driving (closing the door, starting the ignition) are printed the first time even when we drive to a named location, just as they are when we drive in a direction.
+- Makes sure that all the steps involved in driving (closing the door, starting the ignition) are printed the first time even when we drive to a named location, just as they always have when we drive in a direction.
 - Makes sure that the funnel is described as "all sandy" until we have taken it.
 - Prevents the "What do you want to drop those things in?" response when typing DROP ALL while carrying nothing.
+– Makes sure that I is always capitalized in travel descriptions.
+– No longer prints the name of the implicit seller every time you buy something.
+– We no longer enter the car at the end of the Traffic Circle scene if we are already in the car.
+– We no longer get off the tarpaulin in the tin hut after having already left the hut.
 
 ## Release 6
 
