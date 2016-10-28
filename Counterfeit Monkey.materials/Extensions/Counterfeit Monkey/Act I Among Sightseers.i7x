@@ -2606,7 +2606,6 @@ underfoot-path is a privately-named improper-named scenery thing in Winding Foot
 Instead of climbing underfoot-path:
 	try going south.
 
-[TODO fix tests]
 Table of Ultratests (continued)
 topic	stuff	setting
 "shrine"	{ god, pita, roll of bills, as-coin, cross, army, members, yellow sign, Guidebook }	Winding Footpath
@@ -2742,7 +2741,6 @@ Instead of searching the funnel:
 Rule for listing exits when the location is Private Beach:
 	say "This little bit of sand ends on either side in steep rockfalls; there's no way to work along the coast in either direction. The only way to go is back up the footpath to the south."
 
-[TODO fix tests]
 Table of Ultratests (continued)
 topic	stuff	setting
 "funnel1"	{ funnel, apple}	Park Center
