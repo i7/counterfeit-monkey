@@ -20,6 +20,13 @@ Does the player mean doing something when the player's command includes "[number
 	if the second noun is not nothing and the disambiguation id of the second noun is the number understood:
 		it is very likely;
 
+[For some reason the above is not triggered when disambiguating quips.]
+Does the player mean discussing a quip (called target quip) when the player's command includes "1":
+	if the disambiguation id of target quip is 1:
+		it is very likely;
+	otherwise:
+		it is very unlikely.
+
 [Use empty Smarter Parser rulebook.]
 
 To announce the reparsed command:
