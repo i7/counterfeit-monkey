@@ -579,13 +579,7 @@ Rule for listing matched quips (this is the standard quip disambiguation rule):
 	repeat with item running through L:
 		choose a blank row in the Table of Scored Listing;
 		now output entry is the item; [* There are easier ways to do this, but I've handcoded it for speed reasons.]
-	say "What would you like to discuss: [the prepared list delimited in disjunctive style]?"[;
-	let N be 1;
-	repeat through Table of Scored Listing:
-		now disambiguation id of output entry is N;
-		increment N.]
-[The disambiguation choices get numbered back-to-front sometimes, but I'll leave this commented out until I know more about why and what the correct way to fix it is.]
-
+	say "What would you like to discuss: [the prepared list delimited in disjunctive style]?";
 
 Section 4 - Preferring Quips Among Multiple Matches
 
@@ -663,8 +657,6 @@ Available-subjects is a list of objects that varies.
 After deciding the scope of the player while subject-asking (this is the ask about scope handling rule):
 	repeat with item running through available-subjects:
 		place item in scope.
-
-[Understand "say bye/goodbye/cheerio/farewell" as leavetaking. [The system needs to recognize that this is not an attempt at conversation.]]
 
 Section 1a - discussing it with
 
