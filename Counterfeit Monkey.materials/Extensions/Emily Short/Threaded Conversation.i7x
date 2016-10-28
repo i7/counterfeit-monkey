@@ -679,6 +679,8 @@ Does the player mean discussing a listed-plausible quip:
 
 Definition: a thing is relevant-subject if it is listed in available-subjects.
 
+[Subject-asking means asking about a relevant subject, i.e. something that a viable quip mentions. Not to be confused with object-asking (see below), which is asking about something in scope that no viable quip mentions.]
+
 Understand "ask about/-- [a relevant-subject thing]" or "tell about/-- [a relevant-subject thing]" as subject-asking. Subject-asking is an action applying to one visible thing.
 
 Carry out subject-asking:
@@ -689,7 +691,7 @@ Carry out subject-asking:
 
 Understand "ask about/for [something]" as object-asking. Object-asking is an action applying to one visible thing.
 
-[This is meant as a catch-all for asking about unimplemented present things]
+[Object-asking is meant as a catch-all for asking about unimplemented present things]
 
 Carry out object-asking:
 	if the current interlocutor is nothing and how-many-people-here is 1:
