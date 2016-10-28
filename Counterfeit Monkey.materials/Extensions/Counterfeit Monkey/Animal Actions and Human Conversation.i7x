@@ -2240,7 +2240,7 @@ Well, as you like, of course. You're the expert in covert whatever-it-is."
 The hidden-ticket is carried by the ticket-taker. The printed name of the hidden-ticket is "ticket". Understand "ticket" or "[movie] ticket" or "ticket to [movie]" or "ticket to a/the [movie]" as hidden-ticket. [The hidden-ticket is scenery][Bad!][Having people carry scenery makes the compiler go crazy]
 
 Sanity-check doing something to the hidden-ticket:
-	unless the action name part of current action is the buying it from action:
+	unless buying hidden-ticket from the ticket-taker or subject-asking:
 		say "[We] can't see any ticket here." instead.
 
 Sanity-check giving the hidden-ticket to the ticket-taker:
