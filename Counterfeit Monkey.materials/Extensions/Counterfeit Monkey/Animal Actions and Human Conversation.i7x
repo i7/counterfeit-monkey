@@ -2012,9 +2012,9 @@ offer the ticket redundantly is an unlisted demonstration quip.
 
  whether the clock helps is a demonstration quip.
  It mentions clock.
- The comment is "'Does this help?' we ask, showing the clock to the ticket taker.".
+ The comment is "'Does this help?' we ask, showing the clock to the ticket-taker.".
  The reply is "He glances at the clock face. 'Well, [i]that[/i] can't be right,' he says dismissively.".
- It quip-supplies the mechanic.
+ It quip-supplies the ticket-taker.
  It is background-information.
  It indirectly-follows when the movie starts.
 
