@@ -1,9 +1,10 @@
-Version 7/140501 of Numbered Disambiguation Choices by Aaron Reed begins here.
+Version 8/161029 of Numbered Disambiguation Choices by Aaron Reed begins here.
 
 "Numbers the options in disambiguation questions, to help new players and solve the 'disambiguation loop' problem caused by indistinguishable objects."
 
 [
 Updates:
+Version 8/161029: Changed the default disambiguation id to -1 to avoid problems if the player gives "0" as an answer to the disambiguation question.
 Version 7: Updated for latest build.
 Version 6: Fixed an infelicity with indistinguishable objects reported by Victor Gijsbers. Started to fix a bug to do with animate people reported by Simon; this turns out to be a bug in Inform (http://inform7.com/mantis/view.php?id=700) which is not easy to work around, so leaving unfixed for now.
 Version 5: updated for Player Experience Upgrade.
@@ -16,7 +17,7 @@ Chapter - Setup
 
 Section - Disambiguation ID
 
-Every thing has a number called disambiguation id. The disambiguation id of something is usually 0.  
+Every thing has a number called disambiguation id. The disambiguation id of something is usually -1.
  
 Understand the disambiguation id property as describing a thing. 
 
@@ -44,7 +45,7 @@ After printing the name of something while asking which do you mean (this is the
 
 Before asking which do you mean (this is the Numbered Disambiguation Choices reset disambiguables rule):
 	repeat with item running through list of disambiguables:
-		now disambiguation id of item is 0;
+		now disambiguation id of item is -1;
 	truncate list of disambiguables to 0 entries.
 
 Chapter - Understand preface
