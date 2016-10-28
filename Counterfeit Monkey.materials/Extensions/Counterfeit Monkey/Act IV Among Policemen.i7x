@@ -605,7 +605,6 @@ It's a giddy feeling. No wonder the Bureau confiscated this thing and wouldn't l
 
 Test BBS with "tutorial off / look / x cutout / put head through cutout / put seer through cutout / turn on seer / turn off seer / cad, put your head through the cutout / kiss cad / cad, put your head through the cutout" holding the cad in Bureau Basement South.
 
-[TODO fix tests]
 Table of Ultratests (continued)
 topic	stuff	setting
 "automaton"	{ tub, automaton }	Sensitive Equipment Testing Room
@@ -810,7 +809,6 @@ Instead of looking at the objects-on-stands through the monocle:
 	otherwise:
 		say "There is only a shapeless shadow: the memory of something this object used to be, but now is not."
 
-[TODO fix tests]
 Table of Ultratests (continued)
 topic	stuff	setting
 "storage1"	{ rock, tub, monocle }	Cold Storage

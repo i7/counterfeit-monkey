@@ -284,7 +284,6 @@ Sanity-check waving to something:
 
 Test secondaries with "tutorial off / z / say hello / g / ask about paddle / say hello to mark / ask mark about mark / ask mark about the paddle / test customer" in the Drinks Club.
 
-[TODO fix tests]
 Table of Ultratests (continued)
 topic	stuff	setting
 "customer"	{ map-customer, papas }	Arbot
