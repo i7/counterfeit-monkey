@@ -9,7 +9,7 @@ Include Complex Listing by Emily Short.
 
 Definition: a person is other if he is not the player.
 
-VOLUME ZERO - TROUBLE PROOFING - NOT FOR RELEASE
+[VOLUME ZERO - TROUBLE PROOFING - NOT FOR RELEASE
 
 When play begins (this is the check for mis-defined items rule):
 	let N be 0;
@@ -34,7 +34,7 @@ When play begins (this is the scan for unidentified subjects rule):
 			if the item is a subject:
 				do nothing;
 			otherwise:
-				say "[The item] is a subject.[line break]" (A).
+				say "[The item] is a subject.[line break]" (A).]
 
 
 VOLUME ONE - QUIPS, FACTS, SUBJECTS
