@@ -383,7 +383,7 @@ The last availability rule (this is the generic availability rule):
 	it is available.
 
 
-Book 3- Peripheral Quips
+Book 3 - Peripheral Quips
 
 Definition: a quip (called the target quip) is peripheral:
 	[say "Checking if '[target quip]' is peripheral.";]
@@ -1063,7 +1063,6 @@ To delete (chosen precedence - a quip-precedence) conversation for (chosen perso
 			remove the item from the planned conversation of the chosen person.
 
 Section 3 - Conversation Reply Rules
-
 
 [This is what makes the NPCs actually respond to things: all answers to player conversation, and independent conversation on the NPCs' part, comes from the conversation reply rules.]
 
