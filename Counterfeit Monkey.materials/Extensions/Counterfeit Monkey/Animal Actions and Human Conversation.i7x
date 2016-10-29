@@ -2048,7 +2048,7 @@ whether he likes his job is a questioning quip. The comment is "'Do you enjoy be
  It quip-supplies the ticket-taker.
  It is background-information.
 
-whether crime could ever be justified is a performative quip. The comment is "'Hypothetically speaking, do you think a crime could ever be justified?'".
+whether crime could ever be justified is a questioning quip. The comment is "'Hypothetically speaking, do you think a crime could ever be justified?'".
  It mentions crime, legislation, bureau.
  The reply is "'Uh, no,' he says. 'Because if it's justified, it's not a crime. Like: if you kill someone in self-def[ense], that's justified, but it's not a crime, so you won't have to go to jail.'".
  It quip-supplies the ticket-taker.
@@ -2062,7 +2062,7 @@ whether the government seems just is a questioning quip.
  It quip-supplies the ticket-taker.
  It is background-information.
 
-whether immigration laws seem fair is a performative quip.
+whether immigration laws seem fair is a questioning quip.
  The printed name is "whether immigration laws are fair". The true-name is "whether immigration laws seem fair".
  Understand "are" as whether immigration laws seem fair.  The comment is "'Do you think our immigration laws are fair?'".
  It mentions immigration, legislation, bureau.
@@ -2073,7 +2073,7 @@ whether immigration laws seem fair is a performative quip.
 Definition: whether he hath ever been in trouble alongside law is civic:
 	no.
 
-whether he hath ever been in trouble alongside law is a performative quip.
+whether he hath ever been in trouble alongside law is a questioning quip.
  The printed name is "whether he has ever been in trouble with the law". The true-name is "whether he hath ever been in trouble alongside law".
  Understand "has" or "with" as whether he hath ever been in trouble alongside law.  The comment is "'Have you ever had any run-ins with the law?'".
  It mentions security, legislation, crime.
@@ -3213,8 +3213,8 @@ how the campaign will address problems of visualization is a questioning quip.
  It is restrictive.
  It indirectly-follows how  campaign will address problems of visualization.
 
- ask whether this liquid will also be flavorless is a performative quip.
-Understand "flavor" or "flavour" or "flavourless" as ask whether this liquid will also be flavorless.
+whether this liquid will also be flavorless is a questioning quip.
+Understand "flavor" or "flavour" or "flavourless" as whether this liquid will also be flavorless.
  It mentions environment.
  The comment is "'[if immediately]Will it[otherwise]Will your proposed toxi waste liquid[end if] be flavorless, too?' you ask. I didn't come up with this one.".
  The reply is "'Huh?' [paragraph break]'I think,' you go on maliciously, 'that toxi waste should have a catchy flavor. Maybe spearmint.' [paragraph break]The furrow between her brows deepens as she tries to work out whether we are joking and, if so, what response would be appropriate. Finally she settles for, 'The ads are going to be on TV, so it's hard to show any flavors on television.'".
@@ -3627,9 +3627,9 @@ Understand "parker/barman" as what he thinks about the Bureau.
  It quip-supplies the barman.
  It is background-information.
 
-whether he hates customs officials is a performative quip. The comment is "'Do you hate Customs officials?' we ask.".
+whether he hates customs officials is a questioning quip. The comment is "'Do you hate Customs officials?' we ask.".
  Understand "parker/barman" as whether he hates customs officials.
- It mentions immigration, barman.
+ It mentions immigration, barman, local-officials.
  The reply is "'Naw. Not running anything myself, am I?'".
  It quip-supplies the barman.
  It is background-information.
@@ -3637,12 +3637,12 @@ whether he hates customs officials is a performative quip. The comment is "'Do y
 Instead of the barman discussing a civic quip when the barman does not know slango-friendship:
 	say "[one of]He just laughs and shakes his head[or]He grins, but doesn't answer[or]'What do you think?' he asks. I don't think we're going to get answers on this kind of question. Not while he doesn't trust us. But it hardly matters[at random]."
 
-whether he believes in god 2 is a questioning quip. The comment is "'Where do you stand on God?' we ask[you-are-religious].". The printed name is "whether he believes in God".
+whether he believes in god secondary is a questioning quip. The comment is "'Where do you stand on God?' we ask[you-are-religious].". The printed name is "whether he believes in God".
  It mentions religion.
  The reply is "'Don't give it much thought,' he says. 'Please don't tell me you're here with a pamphlet . I won't read it.'".
  It quip-supplies the barman.
  It is background-information.
-Understand "parker/barman" as whether he believes in god 2.
+Understand "parker/barman" as whether he believes in god secondary.
 
 Test tobarman with "test act1 / test chard / test car / test Slango-missed / go to outdoor / open backpack / look / wave p-remover at spill / get sill / go to counterfeit monkey".
 
