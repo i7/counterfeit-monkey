@@ -43,7 +43,7 @@ Book I - Definitions
 
 Part One - Defining Subjects
 
-A subject is a kind of object. The specification of a subject is "Something that quips can refer to, but which has no real-world presence or functionality."
+A subject is a kind of thing. The specification of a subject is "Something that quips can refer to, but which has no real-world presence or functionality."
 
 
 Part Two - Defining Quips
