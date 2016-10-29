@@ -2043,7 +2043,7 @@ offer the ticket redundantly is an unlisted demonstration quip.
  It is background-information.
 
 whether he likes his job is a questioning quip. The comment is "'Do you enjoy being a cinema admissions specialist?'".
- It mentions employment.
+ It mentions employment, ticket-taker.
  The reply is "He looks taken aback, but makes a surprising recovery. 'Yeah,' he says. 'Yeah, I do. I think it's a job with a real future.'".
  It quip-supplies the ticket-taker.
  It is background-information.

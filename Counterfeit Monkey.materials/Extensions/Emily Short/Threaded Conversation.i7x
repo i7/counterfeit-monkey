@@ -684,10 +684,12 @@ Carry out object-asking:
 	if the current interlocutor is nothing:
 		say "[We] [aren't] talking to anyone." instead;
 	if the current interlocutor carries the noun:
-		try requesting the noun from the current interlocutor;
+		try requesting the noun from the current interlocutor instead;
+	if the noun is the current interlocutor:
+		say "[The noun] [don't] seem interested in talking about [themselves]." instead;
 	otherwise:
 		unless the noun is a distant backdrop or the noun is a person:
-			try showing the noun to the current interlocutor;
+			try showing the noun to the current interlocutor instead;
 		otherwise:
 			carry out the refusing comment by activity with the current interlocutor.
 
