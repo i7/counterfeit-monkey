@@ -35,7 +35,7 @@ Your remaining assets: about eight more hours of a national holiday that's sprea
 
 Good luck getting off the island."
 
-Release along with a file of "Customs Poster" called "Customs-Poster-Big.png", a file of "DCL Advertisement" called "DCLbig.png", a file of "Atlantida Poster" called "Atlantida.png", cover art, the library card, source text, and a website.
+Release along with a file of "Customs Poster" called "Customs-Poster-Big.png", a file of "DCL Advertisement" called "DCLbig.png", a file of "Atlantida Poster" called "Atlantida.png", cover art, the library card, and a website.
 
 [The EPS file is not included in the game, but was used as an underlayer when the game maps were prepared.]
 
