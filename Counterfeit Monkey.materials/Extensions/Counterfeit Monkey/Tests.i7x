@@ -485,7 +485,11 @@ Understand "list mentions" as listing-subjects. Listing-subjects is an action ou
 		show relation mentioning relation.
 
 Understand "list available subjects" as listing-available-subjects. Listing-available-subjects is an action out of world. Carry out listing-available-subjects:
-		say "[available-subjects in brace notation]".
+	let subject-list be a list of subjects;
+	repeat with Q running through available quips in quip-repository:
+		repeat with S running through things mentioned by Q:
+			add S to subject-list, if absent;
+	say "[subject-list in brace notation]".
 
 Understand "list quips" as listing-quips. Listing-quips is an action out of world.
 Carry out listing-quips:

@@ -108,9 +108,9 @@ Part One - Quip Relations to Things
 
 Mentioning relates various quips to various things. The verb to mention implies the mentioning relation.
 
-[Understand "[something related by mentioning]" as a quip.
+Understand "[something related by mentioning]" as a quip.
 [	This apparently humble line means that we can define a quip with the line "It mentions the queen." and then the player can use any vocabulary that pertains to the queen to raise this quip;	]
-[	as in ASK ABOUT WOMAN, ASK ABOUT MONARCH, and so on.	]]
+[	as in ASK ABOUT WOMAN, ASK ABOUT MONARCH, and so on.	]
 
 
 Part Two - Quip Relations to Speakers
@@ -504,12 +504,9 @@ The offer hint quips rule is listed after the adjust light rule in the turn sequ
 This is the relabel available quips rule:
 	if how-many-people-here is positive:
 		now every quip is flagged-unready;
-		now available-subjects is {};
 		repeat with item running through things in the quip-repository:
 			if item is available:
-				now item is flagged-ready;
-				repeat with new subject running through things mentioned by item:
-					add new subject to available-subjects, if absent.
+				now item is flagged-ready.
 				[* This means that we can also remove things from the quip-repository in order to skip considering them; if for instance we only want to consider quips relevant to the current scene, or the current character.]
 
 A quip can be flagged-ready or flagged-unready.
@@ -652,11 +649,6 @@ After deciding the scope of the player while discussing, discussing something wi
 	place the quip-repository in scope.
 	[This is a bit of a hack, but the out-of-play container turns out to be a very convenient way to control the scope-limiting of quips.]
 
-Available-subjects is a list of objects that varies.
-
-After deciding the scope of the player while subject-asking (this is the ask about scope handling rule):
-	repeat with item running through available-subjects:
-		place item in scope.
 
 Section 1a - discussing it with
 
@@ -677,18 +669,6 @@ Understand
 Does the player mean discussing a listed-plausible quip:
 	it is very likely.
 
-Definition: a thing is relevant-subject if it is listed in available-subjects.
-
-[Subject-asking means asking about a relevant subject, i.e. something that a viable quip mentions. Not to be confused with object-asking (see below), which is asking about something in scope that no viable quip mentions.]
-
-Understand "ask about/-- [a relevant-subject thing]" or "tell about/-- [a relevant-subject thing]" as subject-asking. Subject-asking is an action applying to one visible thing.
-
-Carry out subject-asking:
-	if there is a listed-plausible quip (called target quip) that mentions the noun:
-		try discussing target quip;
-	otherwise:
-		try discussing a random flagged-ready quip that mentions the noun.
-
 Understand "ask about/for [something]" as object-asking. Object-asking is an action applying to one visible thing.
 
 [Object-asking is meant as a catch-all for asking about unimplemented present things]
@@ -699,8 +679,8 @@ Carry out object-asking:
 		implicitly greet new interlocutor;
 		if new interlocutor is the current interlocutor:
 			follow the relabel available quips rule;
-			if there is a flagged-ready quip that mentions the noun:
-				try subject-asking the noun instead;
+			if there is a flagged-ready quip (called subject-quip) that mentions the noun:
+				try discussing the subject-quip instead;
 	if the current interlocutor is nothing:
 		say "[We] [aren't] talking to anyone." instead;
 	if the current interlocutor carries the noun:
@@ -1324,7 +1304,6 @@ To reset the interlocutor:
 	unless the current interlocutor is nothing:
 		truncate the planned conversation of the current interlocutor to 0 entries;
 	now the quip-repository is nowhere;
-	now available-subjects is {};
 	now the current interlocutor is nothing;
 	now the current quip is generic-quip;
 	now the previous quip is generic-quip.
