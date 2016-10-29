@@ -721,9 +721,9 @@ Understand
 
 Understand
 	"change the/-- subject to [a typable quip]" and
-	"tell about [a typable informative quip]" and
+	"tell about [a typable quip]" and
 	"ask about [a typable questioning quip]" and
-	"tell [a typable informative quip]" and
+	"tell [a typable quip]" and
 	"ask [a typable questioning quip]" as discussing.
 
 Understand the command "a" as "ask".
