@@ -356,7 +356,7 @@ To decide what number is the count of pending tasks:
 	let N be the number of filled rows in the Table of Tasks Pending;
 	decide on N.
 
-After going to Fair for the first time:
+After going to Fair when the barrier is unlocked and we have not planned:
 	say "I'm glad to see you're feeling ready to face the wider world. [run paragraph on]";
 	try planning;
 	say "[first custom style][bracket]To go over our current goals, type GOALS at any time.[close bracket][roman type][paragraph break]";
