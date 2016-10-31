@@ -1959,7 +1959,7 @@ Rule for supplying a missing second noun while performing something on:
 	otherwise:
 		if game-selection is marked-visible:
 			now the second noun is the game-selection;
-		else if computer-game-selection is enclosed by location:
+		else if computer-game-selection is in location:
 			now the second noun is the computer-game-selection;
 		else:
 			say "There's no instrument handy." instead.
