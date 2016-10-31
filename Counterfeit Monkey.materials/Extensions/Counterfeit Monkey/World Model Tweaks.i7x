@@ -1959,6 +1959,8 @@ Rule for supplying a missing second noun while performing something on:
 	otherwise:
 		if game-selection is marked-visible:
 			now the second noun is the game-selection;
+		else if computer-game-selection is enclosed by location:
+			now the second noun is the computer-game-selection;
 		else:
 			say "There's no instrument handy." instead.
 
@@ -1967,6 +1969,9 @@ Rule for supplying a missing noun while performing something on:
 
 Sanity-check performing something on game-selection:
 	say "It's not really a game-playing occasion." instead.
+
+Sanity-check performing something on computer-game-selection:
+	say "This doesn't seem to be a game-playing sort of occasion." instead.
 
 Sanity-check performing something on a person:
 	say "If [the second noun] [wish] to sing something, that is up to [them]." instead.

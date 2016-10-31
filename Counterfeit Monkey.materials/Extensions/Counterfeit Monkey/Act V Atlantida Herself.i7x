@@ -1288,10 +1288,19 @@ The expensive laptop is running a multiple-choice program called Brock-OS.
 Table of GUI Choices
 topic	title	effect
 "photos/pictures/photographs" or "my" or "my photos"	"Photos"	photo-display rule
-"games"	"Game"	game-display rule
+"games/game"	"Game"	game-display rule
 
 This is the game-display rule:
+	move computer-game-selection to location;
 	say "Brock's game collection runs most strongly to very detailed simulation and strategy games: Crusader Kings, a couple of flight simulators, Realistic Tractors 2011 Edition."
+
+The computer-game-selection is a scenery thing. Understand "games" or "game" or "computer game" or "computer games" or "crusader" or "kings" or "flight" or "simulator" or "realistic" or "tractors" or "2011" or "edition" as the computer-game-selection when the expensive laptop is marked-visible.
+
+Does the player mean doing something to the computer-game-selection:
+	it is very unlikely.
+
+Instead of doing something when the noun is the computer-game-selection or the second noun is the computer-game-selection:
+	say "This doesn't seem to be a game-playing sort of occasion."
 
 This is the photo-display rule:
 	say "Images flash quickly across the screen. They are, to your surprise, not pornographic; to mine, they are not especially suggestive of criminal activity. Just a bunch of snaps of you and Brock and Slango, and occasionally other people, enjoying what appear to be rigorously ordinary holidays in various Mediterranean ports."
