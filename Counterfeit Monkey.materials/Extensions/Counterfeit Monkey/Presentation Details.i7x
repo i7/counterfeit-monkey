@@ -407,7 +407,16 @@ To record (slug - some text) as an achievement:
 		choose a blank row in the Table of Possible Achievements;
 		now the achievement entry is N;
 		unless the location is nautical:
-			say "[first custom style][line break]Achievement accomplished: [N]![line break][roman type]";
+			say "[first custom style]Achievement accomplished: [N]![roman type][paragraph break]";
+	write File of Conclusions from the Table of Possible Achievements.
+
+To record (slug - some text) as an achievement with break before:
+	read the achievements;
+	let N be "[slug]";
+	unless N is a used achievement:
+		choose a blank row in the Table of Possible Achievements;
+		now the achievement entry is N;
+		say "[line break][first custom style]Achievement accomplished: [N]![roman type][paragraph break]";
 	write File of Conclusions from the Table of Possible Achievements.
 
 Table of Possible Achievements

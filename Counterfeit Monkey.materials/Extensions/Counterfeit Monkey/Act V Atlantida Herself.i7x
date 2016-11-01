@@ -163,12 +163,12 @@ Equipment Archive is a room. It is indoors, forbidden and southern. The descript
 A ceiling mirror is a mirror in the Equipment Archive.
 
 Instead of shooting a mirror with the loaded anagramming gun:
-	record "Finn Rosehip award for gnu-hunting" as an achievement;
 	say "[We] fire the anagramming gun into [the noun]. The reflection at once converts the anagramming gun into an anagramming gnu.
 
 The gnu stares around in confusion, its watery gaze temporarily dissolving everything it looks at, until at last it happens to catch its own reflection.
 
-A moment later, the anagramming gun is merely a gun again."
+A moment later, the anagramming gun is merely a gun again.";
+	record "Finn Rosehip award for gnu-hunting" as an achievement with break before.
 
 Some equipment shelves are a supporter in Equipment Archive. The initial appearance is "[The shelves] here display an assortment of obsolete, broken, foreign, or otherwise unusual letter tools."
 

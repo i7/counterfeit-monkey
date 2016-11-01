@@ -1722,8 +1722,14 @@ The passage-place is a thing. The printed name is "passage". Understand "passage
 
 The Shadow Chamber is a room. It is indoors. The description is "Dim lights in the floor make it possible to navigate in here, though it's still fairly dark. The place is small and shabby, the air stale.[assign-amanda]".
 
+[Somewhat hackish way to get an extra line break before the achievement message and avoid a double paragraph break after]
 To say assign-amanda:
-	record "Amanda Waterstone award for discovering cultic passages" as an achievement.
+	let N be "Amanda Waterstone award for discovering cultic passages";
+	unless N is a used achievement:
+		choose a blank row in the Table of Possible Achievements;
+		now the achievement entry is N;
+		say "[paragraph break][first custom style]Achievement accomplished: [N]![roman type]";
+		write File of Conclusions from the Table of Possible Achievements.
 
 The Greek inscription is fixed in place in the shadow chamber.
 The initial appearance is "Cold water flows from a crack in the wall. Above it, words are carved: ΝΙΨΟΝ ΑΝΟΜΗΜΑΤΑ ΜΗ ΜΟΝΑΝ ΟΨΙΝ."
@@ -2168,7 +2174,7 @@ Sanity-check washing the pirate-crew:
 Instead of showing the spot to the pirate-crew:
 	now the pirate-crew is nowhere;
 	say "To a man, they turn white under their tans. Then they flee.";
-	record "Lord Michael Rosehip award for showing the black spot to a pirate crew" as an achievement.
+	record "Lord Michael Rosehip award for showing the black spot to a pirate crew" as an achievement with break before.
 
 Instead of smelling the pirate-crew:
 	say "They smell like a group that's spent months on a ship, living on a diet of watered rum and tortoise meat. Which is to say, I wish you wouldn't make me breathe so deeply."
