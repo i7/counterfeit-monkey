@@ -1762,7 +1762,7 @@ Table of Ultratests (continued)
 topic	stuff	setting
 "passage"	{ passage, anagramming gun, bullets }	Workshop
 
-Test passage with "tutorial off / put bullets in gun / set switch to swap homonym / put passage on dais / turn on dais / enter passage / x nipson inscription / x sator inscription / shoot sator" [holding the passage and the anagramming gun and the bullets in the Workshop.]
+Test passage with "tutorial off / powerup / put bullets in gun / set switch to swap homonym / put passage on dais / turn on dais / enter passage / x nipson inscription / x sator inscription / shoot sator" [holding the passage and the anagramming gun and the bullets in the Workshop.]
 
 
 [One of the things I set out to do with the puzzle system in my previous game Savoir-Faire was to duplicate all the dull standard puzzles I was sick of seeing, but with some new twist on them that hadn't been done before. The one that there was really no way to include, however, was the password puzzle: too many IF games use password puzzles as a form of riddle (where you have to guess on the basis of some hints) or a cheap search puzzle (where the answer is written down on a note near the computer). Never in IF does anyone follow good security protocols with strong passwords that aren't written down.
