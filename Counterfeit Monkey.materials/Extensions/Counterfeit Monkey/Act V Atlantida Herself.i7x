@@ -1041,7 +1041,7 @@ North, west, east, south, northwest, northeast, southwest, and southeast are ear
 Rule for listing exits while looking in a nautical room:
 	do nothing instead.
 
-The starboard is a direction. The starboard has opposite port. Understand "s" or "sb" as starboard when the location is nautical.
+The starboard is a direction. The starboard has opposite port. Understand "sb" as starboard when the location is nautical.
 
 The port is a direction. The port has opposite starboard. Understand "p" as port when the location is nautical.
 
@@ -1070,6 +1070,10 @@ Check facing in a nautical room:
 		if the location is indoors:
 			say "[We] can't really see outside well enough to look off in that direction." instead;
 		say "No one appears to be approaching the ship or attempting to follow us, which is the main thing." instead.
+
+Sanity-check going south in a nautical room:
+	if subcommand of noun matches "s":
+		try going starboard instead.
 
 Sanity-check going an earthbound-directional direction in a nautical room:
 	say "Compass directions make no sense on board ship, but you can use fore, aft, port, and starboard instead." instead.
