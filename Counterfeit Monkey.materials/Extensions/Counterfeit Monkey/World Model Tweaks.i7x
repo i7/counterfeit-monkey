@@ -1971,7 +1971,7 @@ Sanity-check performing something on game-selection:
 	say "It's not really a game-playing occasion." instead.
 
 Sanity-check performing something on computer-game-selection:
-	say "This doesn't seem to be a game-playing sort of occasion." instead.
+	say "Brock would cut our fingers off if he caught [us] playing games on his computer. Or hacking into it, for that matter." instead.
 
 Sanity-check performing something on a person:
 	say "If [the second noun] [wish] to sing something, that is up to [them]." instead.
