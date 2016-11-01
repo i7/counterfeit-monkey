@@ -2478,7 +2478,7 @@ Rule for listing exits when looking in Winding Footpath:
 
 Some bushes are scenery in Winding Footpath. The description is "Some variety I'm not familiar with: dark glossy green leaves, thick stems. In the right season, and I can't even remember what season that is, they also grow gaudy pink flowers. But not now[if kudzu is part of the bushes]. Lots of [kudzu] grows through and over the bushes [--] this is one of the few spots on the island where it hasn't been eradicated, it seems[end if].
 
-[if the bushes are shrine-hiding]At one point along the path the bushes stick out especially far, as though there's something behind them.[otherwise]The bushes part a little to reveal the [shrine] [we] found.[end if]". Understand "dark" or "glossy" or "green" or "leaves" or "gaudy" or "pink" as the bushes.
+[if the bushes are shrine-hiding]At one point along the path the bushes stick out especially far, as though there's something behind them.[otherwise]The bushes part a little to reveal the [shrine] [we] found.[end if]". Understand "dark" or "glossy" or "green" or "leaves" or "gaudy" or "pink" or "bush" as the bushes.
 
 The kudzu is part of the bushes. The indefinite article is "some". Understand "invasive" or "vines" or "vine" as the kudzu. The description of the kudzu is "An invasive vine grown through and over the bushes."
 
@@ -2486,6 +2486,9 @@ Test foilkudzubug with "cut kudzu with foil" holding the foil in the Winding Foo
 
 Carry out cutting the kudzu with something:
 	now the kudzu is nowhere.
+
+Sanity-check cutting the bushes with the jigsaw when the kudzu is part of the bushes:
+	try cutting the kudzu with the jigsaw instead.
 
 Report cutting the kudzu with the jigsaw:
 	say "The jigsaw is not an ideal tool for kudzu removal and [we] wind up making a bit of a mess with bits of bush, but we do enough damage to clear the stage a bit." instead.
