@@ -1295,10 +1295,10 @@ topic	title	effect
 "games/game"	"Game"	game-display rule
 
 This is the game-display rule:
-	move computer-game-selection to location;
+	now computer-game-selection is part of the expensive laptop;
 	say "Brock's game collection runs most strongly to very detailed simulation and strategy games: Crusader Kings, a couple of flight simulators, Realistic Tractors 2011 Edition."
 
-The computer-game-selection is a scenery thing. Understand "games" or "game" or "computer game" or "computer games" or "crusader" or "kings" or "flight" or "simulator" or "realistic" or "tractors" or "2011" or "edition" as the computer-game-selection when the expensive laptop is marked-visible.
+The computer-game-selection is a scenery thing. Understand "games" or "game" or "computer game" or "computer games" or "crusader" or "kings" or "flight" or "simulator" or "realistic" or "tractors" or "2011" or "edition" as the computer-game-selection.
 
 Does the player mean doing something to the computer-game-selection:
 	it is very unlikely.
