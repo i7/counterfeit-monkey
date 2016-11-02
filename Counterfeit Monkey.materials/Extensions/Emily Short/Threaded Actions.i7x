@@ -126,10 +126,12 @@ Availability rule for an offering quip (called target) (this is the can't give i
 	make no decision.
 	
 Availability rule for a demonstration quip (called target) (this is the can't show if the mentioned thing is invisible rule):
-	repeat with item running through things which are mentioned by target
-	begin; 
-		if the item is not a subject and the item is not enclosed by the location, it is off-limits; 
-	end repeat;
+	let mentioned-is-present be false;
+	repeat with item running through things which are mentioned by target:
+		if item is a subject or the item is enclosed by the location:
+			now mentioned-is-present is true;
+	if mentioned-is-present is false:
+		it is off-limits;
 	make no decision.
 
 Threaded Actions ends here.
