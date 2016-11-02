@@ -359,11 +359,9 @@ The repository contains a fame. [Actually producing this ends the game.]
 
 [fossil]
 
-The repository contains a foil, an oil1,
+The repository contains a foil, two oils,
 	a metal-foil, [homonym]
 	and a toil. [t-insertion]
-
-oil1 is an oil.
 
 [frozen dinner]
 The repository contains a frozen dinner, a red frozen inn, and a zen frond rinse.
@@ -724,8 +722,6 @@ The repository contains a sap, a sop,
 The repository contains a sap-dispenser.
 
 [soil]
-
-oil2 is an oil in the repository.
 
 [spill]
 

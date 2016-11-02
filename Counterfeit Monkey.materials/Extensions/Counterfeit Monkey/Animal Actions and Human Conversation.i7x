@@ -460,10 +460,18 @@ Availability rule for whether the letter-remover means anything:
 	if the current interlocutor is Professor Brown, it is off-limits.
 
 whether the oil seems interesting is a demonstration quip.
- It mentions oil1, oil2.
  The comment is "'Care for some motor oil?' [we] ask [the current interlocutor]."
  The reply is "'[awkward no].' No wonder, really. The stuff is dirt cheap.".
  It is background-information.
+ Every oil is mentioned by whether the oil seems interesting.
+
+Availability rule for whether the oil seems interesting:
+	if the current interlocutor is the mechanic:
+		if a car is in location:
+			it is off-limits;
+		else if at least one car is operational:
+			it is off-limits.
+
 
 whether the monocle seems interesting is a demonstration quip.
  It mentions monocle.
@@ -697,23 +705,29 @@ Availability rule for whether car be fixed:
 		make no decision;
 	it is off-limits.
 
+Does the player mean discussing whether car be fixed when an operational car is in the location:
+	it is very likely.
 
 whether car be fixed is a questioning quip.
 	The printed name is "whether the car is fixed".
 	Understand "is" as whether car be fixed.
-	It mentions oil1, oil2.
 	The comment is "'Is the car fixed now?' we ask."
 	The reply is "'The oil is in,' the mechanic says[if at least one car is fueled]. 'Should run all right[otherwise]. 'Might be it's out of fuel, though[end if].'".
  It quip-supplies the mechanic.
  It is repeatable.
  Every car is mentioned by whether car be fixed.
+ Every oil is mentioned by whether car be fixed.
 
 Instead of showing a damaged car to the mechanic:
 	say "We indicate the car with gestures.";
 	try the mechanic discussing why the car does not run.
 
+After reading a command when location is High street:
+	if the player's command includes "tell mechanic to" or the player's command includes "ask mechanic to":
+		replace the matched text with "mechanic,".
+
 Instead of asking the mechanic to try doing something when a car is the noun or a car is the second noun:
-	if the noun is oil or the second noun is oil:
+	if the noun is an oil or the second noun is an oil:
 		try discussing whether the oil will work;
 	otherwise if no car is operational:
 		try discussing why the car does not run;
@@ -724,6 +738,9 @@ Availability rule for why the car does not run:
 	if a damaged car is in the location:
 		make no decision;
 	it is off-limits.
+
+Does the player mean discussing why the car does not run when current interlocutor is the mechanic:
+	it is very likely.
 
  why the car does not run is a questioning quip.
 Understand "work" or "doesn't" as why the car does not run.
@@ -736,7 +753,14 @@ Understand "work" or "doesn't" as why the car does not run.
 Carry out the mechanic discussing why the car does not run:
 	assign "Get oil for the mechanic" at High Street.
 
-Instead of showing some oil to the mechanic, try giving the noun to the mechanic.
+Instead of showing an oil to the mechanic:
+	if at least one car is operational:
+		continue the action;
+	otherwise:
+		try giving the noun to the mechanic.
+
+Instead of giving an oil to the mechanic when at least one car is operational:
+	try discussing check out this oil.
 
 Carry out the mechanic discussing whether the oil will work:
 	complete "Get oil for the mechanic";
@@ -749,13 +773,11 @@ An availability rule for whether the oil will work:
 		it is off-limits.
 
 whether the oil will work is an unlisted offering quip.
- It mentions oil1, oil2.
  The comment is "'Will this work?' [We] hold out the oil."
  The reply is "'Should do,' he says. Rolling up his sleeves, he goes to work on the car. There is no small amount of banging and muttering, but finally he stands back and announces that he believes it is now in working condition."
  It indirectly-follows why the car does not run.
  It quip-supplies the mechanic.
-
-
+ Every oil is mentioned by whether the oil will work.
 
 Availability rule for check out this oil:
 	if the player encloses an oil and at least one car is operational:
@@ -763,11 +785,10 @@ Availability rule for check out this oil:
 	it is off-limits.
 
 check out this oil is an unlisted demonstration quip.
- It mentions oil1, oil2.
  The comment is "We show off the additional oil."
  The reply is "'Probably don't need that now,' he says, with a thoughtful nod."
  It quip-supplies the mechanic.
-
+ Every oil is mentioned by check out this oil.
 
 An availability rule for where oil might be:
 	if the player encloses an oil:
@@ -775,12 +796,11 @@ An availability rule for where oil might be:
 	make no decision.
 
 where oil might be is an unlisted questioning quip.
-	It mentions oil1, oil2.
 	The comment is "'Do you have any oil? Or do you know where we could find some?'"
 	The reply is "[one of]He looks stumped for a minute, then offers, 'Comes in a can.'[or]'Yup, likely there's a source of oil around somewhere.'[stopping]".
 	It quip-supplies the mechanic.
 	It is repeatable.
-
+	Every oil is mentioned by where oil might be.
 
 An availability rule for where fuel might be:
 	if the player encloses fuel or player encloses gas:
@@ -803,12 +823,11 @@ Availability rule for we'll find some:
 	make no decision.
 
 we'll find some is an unlisted weakly-phrased informative quip.
- It mentions oil1, oil2.
  The comment is "'I don't have any oil now,' we say. 'I'll look for some.'"
  The reply is "'Okay, then.'"
  It indirectly-follows why the car does not run.
  It quip-supplies the mechanic.
-
+ Every oil is mentioned by we'll find some.
 
 Instead of saying no when the current quip is why the car does not run:
 	if whether the oil will work is available:
