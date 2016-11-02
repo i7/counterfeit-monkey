@@ -679,8 +679,11 @@ Carry out object-asking:
 		implicitly greet new interlocutor;
 		if new interlocutor is the current interlocutor:
 			follow the relabel available quips rule;
-			if there is a flagged-ready quip (called subject-quip) that mentions the noun:
-				try discussing the subject-quip instead;
+			if there is an available quip (called subject-quip) that mentions the noun:
+				if the number of available quips which mention the noun is 1:
+					try discussing subject-quip instead;
+				otherwise:
+					recommend available quips which mention the noun instead;
 	if the current interlocutor is nothing:
 		say "[We] [aren't] talking to anyone." instead;
 	if the current interlocutor carries the noun:
