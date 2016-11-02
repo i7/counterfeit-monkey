@@ -119,10 +119,12 @@ Instead of giving something to someone (this is the default commenting on offere
 		carry out the refusing comment by activity with the second noun.
 	
 Availability rule for an offering quip (called target) (this is the can't give if the mentioned thing is not possessed rule):
-	repeat with item running through things which are mentioned by target
-	begin;
-		if the item is not a subject and the item is not carried by the player, it is off-limits;
-	end repeat;
+	let mentioned-is-carried be false;
+	repeat with item running through things which are mentioned by target:
+		if item is a subject or the item is enclosed by the player:
+			now mentioned-is-carried is true;
+	if mentioned-is-carried is false:
+		it is off-limits;
 	make no decision.
 	
 Availability rule for a demonstration quip (called target) (this is the can't show if the mentioned thing is invisible rule):
