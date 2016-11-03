@@ -100,7 +100,7 @@ A quip can be listed or unlisted. A quip is usually listed.
 Plausibility rule for an unlisted quip:
 	it is dubious.
 
-After reading a command:
+After reading a command (this is the rearrange hello rule):
         let N be "[player's command]";
         replace the regular expression "(hi|hello|hey), (.*)" in N with "\2, hello";
         change the text of the player's command to N.
@@ -341,7 +341,7 @@ A fact can be motivational or purposeless. A fact is usually purposeless. you-ar
 
 Assumption relates various quips to various facts. The verb to assume (it assumes, they assume, it assumed, it is assumed) implies the assumption relation.
 
-An availability rule for a quip (called the target):
+An availability rule for a quip (called the target) (this is the check assumptions requirements for quips rule):
 	if the target assumes a fact which is not known by the player, it is off-limits.
 
 Section 5 - Generic Response Types

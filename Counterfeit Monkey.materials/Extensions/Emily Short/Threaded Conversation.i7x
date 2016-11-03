@@ -526,7 +526,7 @@ After reading a command (this is the flatten ifs rule):
 	while the player's command includes "if": ["ask if":]
 		replace the matched text with "whether". ["ask whether".]
 
-After reading a command:
+After reading a command (this is the check if thrashing hopelessly rule):
 	if the player's command matches "say" or the player's command matches "ask": [These are for cases where the player has provided a simple command with no specific direct object]
 		now thrashing-hopelessly is true;
 	otherwise:

@@ -608,7 +608,7 @@ Some tattoos are part of the clientele. The description of the tattoos is "[one 
 The clientele is a person in Counterfeit Monkey. The initial appearance is "[The clientele] is keeping [the barman] thoroughly busy."
 	The description of the clientele is "A nasty-looking bunch. They can be good enough if you're on the right side of them, but getting and staying that way isn't easy. And they're justly suspicious: the customs house not infrequently tries to infiltrate the criminal organ[ization]s and brotherhoods, though with no great success." Understand "crowd" or "players" or "player" or "customers" or "customer" or  "guys" or "people" or "guy" as the clientele.
 
-After reading a command when location is Counterfeit Monkey:
+After reading a command when location is Counterfeit Monkey (this is the replace men with clientele rule):
 	while the player's command includes "men":
 		replace the matched text with "clientele".
 

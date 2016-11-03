@@ -112,7 +112,7 @@ The introduction of the Public Convenience is "A faint smell of lavender lingers
 
 Out-direction of Public Convenience is west. [To the bus station]
 
-After reading a command when location is Public Convenience:
+After reading a command when location is Public Convenience (this is the replace sinks with sink rule):
 	now the referred of the sink-collectives is false;
 	while the player's command includes "sinks":
 		now the referred of the sink-collectives is true;

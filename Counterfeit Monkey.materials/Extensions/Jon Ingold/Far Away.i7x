@@ -18,7 +18,7 @@ Section - The Access Flag
 Access-flag is a number that varies. 
 Access-flag is 0.
 
-A before rule:
+A before rule (this is the check if action requires touchable rule):
        if the action requires a touchable noun, now access-flag is 1;
        if the action requires a touchable second noun, now access-flag
 is 1;

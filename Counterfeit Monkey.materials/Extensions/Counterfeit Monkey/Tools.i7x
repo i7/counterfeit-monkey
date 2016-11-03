@@ -96,7 +96,7 @@ Before doing something to the small knob:
 
 Understand "[letter-remover] [something]" as waving it at.
 
-After reading a command:
+After reading a command (this is the change X-remover to letter-remover rule):
 	say "[run paragraph on]";
 	let N be "[the player's command]";
 	replace the regular expression " [current setting of the letter-remover]-remover" in N with " letter-remover";

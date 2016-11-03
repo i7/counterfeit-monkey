@@ -36,7 +36,7 @@ Section 2 - Input Editing
 
 Include Punctuation Removal by Emily Short.
 
-First after reading a command:
+First after reading a command (this is the remove stray punctuation rule):
 	remove stray punctuation.
 
 Section 3 - Styles
@@ -86,7 +86,7 @@ After printing the name of something which is not a quip when boldening is true:
 	say "[roman type]"
 
 [This is a hack to get around a bug that I find wholly inexplicable and may be happening at the interpreter level, whereby "HIGHLIGHT" is assigned to the score notification action though it should not be, and appears correctly in the phrasebook.]
-After reading a command:
+After reading a command (this is the replace highlight with hilight rule):
 	if the player's command includes "highlight":
 		replace the matched text with "hilight".
 

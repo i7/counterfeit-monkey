@@ -1936,7 +1936,7 @@ So there was no initial plan to feature anything about instruments; it just turn
 
 An instrument is a kind of thing. Understand "instrument" as an instrument.
 
-After reading a command:
+After reading a command (this is the replace play with perform rule):
 	if the player's command includes "play darts" and the location is the Counterfeit Monkey:
 		replace the matched text with "playdarts";
 	if the player's command includes "play" and the location is not the Counterfeit Monkey:

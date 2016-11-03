@@ -1046,7 +1046,7 @@ Carry out listing anagram probables:
 
 Section 5 - Ultratest
 
-After reading a command:
+After reading a command (this is the replace test with utest rule):
 	if the player's command includes "test":
 		replace the matched text with "utest".
 

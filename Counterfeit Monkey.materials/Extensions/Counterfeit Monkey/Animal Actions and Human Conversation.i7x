@@ -1585,7 +1585,7 @@ Does the player mean asking the bartender to try attacking something with the ho
 Does the player mean asking the bartender to try attacking something with something that is not the homonym paddle:
 	it is very unlikely.
 
-After reading a command when location is Fleur d'Or Drinks Club:
+After reading a command when location is Fleur d'Or Drinks Club (this is the rearrange bartender's orders rule):
 	if the player's command includes "tell bartender to" or the player's command includes "ask bartender to":
 		replace the matched text with "bartender,".
 
@@ -2704,7 +2704,7 @@ when-get-here is an NPC-directed quip.
  It directly-follows when-get-here.
 
 [because otherwise we get interference with the LIE ON THING command from Postures:]
-After reading a command when the current interlocutor is the backpacking girl:
+After reading a command when the current interlocutor is the backpacking girl (this is the replace lie with lieabout rule):
 	if the player's command matches "lie":
 		change the text of the player's command to "lieabout";
 	otherwise if the player's command includes "lie about":
@@ -2863,7 +2863,7 @@ A first conversation-reply rule when the current interlocutor is the backpacking
 Instead of waiting when the current interlocutor is the backpacking girl:
 	say "[beat][paragraph break]".
 
-A last after reading a command rule when current interlocutor is the backpacking girl and ask for privacy is available:
+A last after reading a command rule when current interlocutor is the backpacking girl and ask for privacy is available (this is the change ask for privacy to privacy rule):
 	if the player's command matches "ask for privacy":
 		change the text of the player's command to "privacy";
 
@@ -3236,7 +3236,7 @@ Report laughing when the current interlocutor is the activist and the current qu
  It quip-supplies the activist.
  It directly-follows whether this liquid will be water.
 
-After reading a command when the activist is marked-visible and point out that being from language studies is available:
+After reading a command when the activist is marked-visible and point out that being from language studies is available (this is the change point out to language rule):
 	if the player's command includes "point out" or the player's command includes "point":
 		replace the matched text with "language".
 
@@ -4516,7 +4516,7 @@ A first conversation-reply rule when the current interlocutor is professor Water
 	if the player does not recollect please-get-out and please-get-out is not listed in the planned conversation of Professor Waterstone and Professor Waterstone recollects at least two quips:
 		queue please-get-out as postponed obligatory.
 
-After reading a command when Waterstone is marked-visible and make up some excuse is available:
+After reading a command when Waterstone is marked-visible and make up some excuse is available (this is the replace make with excuse rule):
 	if the player's command includes "make":
 		replace the matched text with "excuse".
 
