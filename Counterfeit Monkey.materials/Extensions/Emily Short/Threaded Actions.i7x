@@ -57,17 +57,23 @@ Instead of attacking someone (this is the standard attack redirection rule):
 	[end if.]
 
 Carry out buying something from someone (this is the standard purchasing rule):
-	let N be the list of available purchasing quips which mention the noun;
-	if the number of entries in N is greater than 0
-	begin;
-		if the number of entries in N is 1, try discussing entry 1 of N;
-		otherwise recommend purchasing quips which mention the noun;
-	otherwise;
+	let N be a list of purchasing quips;
+	repeat with Q running through purchasing quips in quip-repository:
+		if Q mentions the noun and Q is available:
+			add Q to N;
+	if the number of entries in N is positive:
+		if the number of entries in N is 1:
+			try discussing entry 1 of N;
+		otherwise:
+			recommend N;
+	otherwise:
 		carry out the refusing to buy activity with the noun;
-	end if.
 
-To recommend (chosen list - a description of objects):
-	prepare a list of chosen list; 
+To recommend (chosen list - a list of things):
+	empty out the Table of Scored Listing;
+	repeat with item running through chosen list:
+		choose a blank row in the Table of Scored Listing;
+		now output entry is the item;
 	say "What would you like to do: [the prepared list delimited in disjunctive style]?"; 
 
 Refusing to buy something is an activity.
@@ -99,22 +105,30 @@ Rule for refusing comment by something (called the viewer) (this is the default 
 Instead of showing something to someone (this is the default commenting on shown objects rule):
 	if the second noun is not the current interlocutor:
 		stop the action;
-	if a demonstration quip (called target quip) which mentions the noun is available:
-		if the number of available demonstration quips which mention the noun is 1:
-			try discussing the target quip;
+	let N be a list of demonstration quips;
+	repeat with Q running through demonstration quips in quip-repository:
+		if Q mentions the noun and Q is available:
+			add Q to N;
+	if the number of entries in N is positive:
+		if the number of entries in N is 1:
+			try discussing entry 1 of N;
 		otherwise:
-			recommend available demonstration quips which mention the noun; 
+			recommend N;
 	otherwise:
 		carry out the refusing comment by activity with the second noun.
 
 Instead of giving something to someone (this is the default commenting on offered objects rule):
 	if the second noun is not the current interlocutor:
 		stop the action;
-	if an offering quip (called target quip) which mentions the noun is available: 
-		if the number of available offering quips which mention the noun is 1:
-			try discussing the target quip;
+	let N be a list of offering quips;
+	repeat with Q running through offering quips in quip-repository:
+		if Q mentions the noun and Q is available:
+			add Q to N;
+	if the number of entries in N is positive:
+		if the number of entries in N is 1:
+			try discussing entry 1 of N;
 		otherwise:
-			recommend available offering quips which mention the noun; 
+			recommend N;
 	otherwise:
 		carry out the refusing comment by activity with the second noun.
 	

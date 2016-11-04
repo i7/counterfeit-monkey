@@ -678,12 +678,15 @@ Carry out object-asking:
 		let new interlocutor be entry 1 of people-present;
 		implicitly greet new interlocutor;
 		if new interlocutor is the current interlocutor:
-			follow the relabel available quips rule;
-			if there is an available quip (called subject-quip) that mentions the noun:
-				if the number of available quips which mention the noun is 1:
-					try discussing subject-quip instead;
+			let N be a list of quips;
+			repeat with Q running through things in quip-repository:
+				if Q mentions the noun and Q is available:
+					add Q to N;
+			if the number of entries in N is positive:
+				if the number of entries in N is 1:
+					try discussing entry 1 of N instead;
 				otherwise:
-					recommend available quips which mention the noun instead;
+					recommend N instead;
 	if the current interlocutor is nothing:
 		say "[We] [aren't] talking to anyone." instead;
 	if the current interlocutor carries the noun:
