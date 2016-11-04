@@ -1,0 +1,264 @@
+<glkapi version="0.7.4">
+  <classes count="4">
+    <class name="fileref" value="2" />
+    <class name="schannel" value="3" />
+    <class name="stream" value="1" />
+    <class name="window" value="0" />
+  </classes>
+
+  <constants count="126">
+    <constant name="evtype_Arrange" value="5" />
+    <constant name="evtype_CharInput" value="2" />
+    <constant name="evtype_Hyperlink" value="8" />
+    <constant name="evtype_LineInput" value="3" />
+    <constant name="evtype_MouseInput" value="4" />
+    <constant name="evtype_None" value="0" />
+    <constant name="evtype_Redraw" value="6" />
+    <constant name="evtype_SoundNotify" value="7" />
+    <constant name="evtype_Timer" value="1" />
+    <constant name="evtype_VolumeNotify" value="9" />
+    <constant name="filemode_Read" value="2" />
+    <constant name="filemode_ReadWrite" value="3" />
+    <constant name="filemode_Write" value="1" />
+    <constant name="filemode_WriteAppend" value="5" />
+    <constant name="fileusage_BinaryMode" value="0" />
+    <constant name="fileusage_Data" value="0" />
+    <constant name="fileusage_InputRecord" value="3" />
+    <constant name="fileusage_SavedGame" value="1" />
+    <constant name="fileusage_TextMode" value="256" />
+    <constant name="fileusage_Transcript" value="2" />
+    <constant name="fileusage_TypeMask" value="15" />
+    <constant name="gestalt_CharInput" value="1" />
+    <constant name="gestalt_CharOutput" value="3" />
+    <constant name="gestalt_CharOutput_ApproxPrint" value="1" />
+    <constant name="gestalt_CharOutput_CannotPrint" value="0" />
+    <constant name="gestalt_CharOutput_ExactPrint" value="2" />
+    <constant name="gestalt_DateTime" value="20" />
+    <constant name="gestalt_DrawImage" value="7" />
+    <constant name="gestalt_Graphics" value="6" />
+    <constant name="gestalt_GraphicsCharInput" value="23" />
+    <constant name="gestalt_GraphicsTransparency" value="14" />
+    <constant name="gestalt_HyperlinkInput" value="12" />
+    <constant name="gestalt_Hyperlinks" value="11" />
+    <constant name="gestalt_LineInput" value="2" />
+    <constant name="gestalt_LineInputEcho" value="17" />
+    <constant name="gestalt_LineTerminatorKey" value="19" />
+    <constant name="gestalt_LineTerminators" value="18" />
+    <constant name="gestalt_MouseInput" value="4" />
+    <constant name="gestalt_ResourceStream" value="22" />
+    <constant name="gestalt_Sound" value="8" />
+    <constant name="gestalt_Sound2" value="21" />
+    <constant name="gestalt_SoundMusic" value="13" />
+    <constant name="gestalt_SoundNotify" value="10" />
+    <constant name="gestalt_SoundVolume" value="9" />
+    <constant name="gestalt_Timer" value="5" />
+    <constant name="gestalt_Unicode" value="15" />
+    <constant name="gestalt_UnicodeNorm" value="16" />
+    <constant name="gestalt_Version" value="0" />
+    <constant name="imagealign_InlineCenter" value="3" />
+    <constant name="imagealign_InlineDown" value="2" />
+    <constant name="imagealign_MarginLeft" value="4" />
+    <constant name="imagealign_MarginRight" value="5" />
+    <constant name="imagealign_InlineUp" value="1" />
+    <constant name="keycode_Delete" value="4294967289" />
+    <constant name="keycode_Down" value="4294967291" />
+    <constant name="keycode_End" value="4294967283" />
+    <constant name="keycode_Escape" value="4294967288" />
+    <constant name="keycode_Func1" value="4294967279" />
+    <constant name="keycode_Func10" value="4294967270" />
+    <constant name="keycode_Func11" value="4294967269" />
+    <constant name="keycode_Func12" value="4294967268" />
+    <constant name="keycode_Func2" value="4294967278" />
+    <constant name="keycode_Func3" value="4294967277" />
+    <constant name="keycode_Func4" value="4294967276" />
+    <constant name="keycode_Func5" value="4294967275" />
+    <constant name="keycode_Func6" value="4294967274" />
+    <constant name="keycode_Func7" value="4294967273" />
+    <constant name="keycode_Func8" value="4294967272" />
+    <constant name="keycode_Func9" value="4294967271" />
+    <constant name="keycode_Home" value="4294967284" />
+    <constant name="keycode_Left" value="4294967294" />
+    <constant name="keycode_MAXVAL" value="28" />
+    <constant name="keycode_PageDown" value="4294967285" />
+    <constant name="keycode_PageUp" value="4294967286" />
+    <constant name="keycode_Return" value="4294967290" />
+    <constant name="keycode_Right" value="4294967293" />
+    <constant name="keycode_Tab" value="4294967287" />
+    <constant name="keycode_Unknown" value="4294967295" />
+    <constant name="keycode_Up" value="4294967292" />
+    <constant name="seekmode_Current" value="1" />
+    <constant name="seekmode_End" value="2" />
+    <constant name="seekmode_Start" value="0" />
+    <constant name="style_Alert" value="5" />
+    <constant name="style_BlockQuote" value="7" />
+    <constant name="style_Emphasized" value="1" />
+    <constant name="style_Header" value="3" />
+    <constant name="style_Input" value="8" />
+    <constant name="style_NUMSTYLES" value="11" />
+    <constant name="style_Normal" value="0" />
+    <constant name="style_Note" value="6" />
+    <constant name="style_Preformatted" value="2" />
+    <constant name="style_Subheader" value="4" />
+    <constant name="style_User1" value="9" />
+    <constant name="style_User2" value="10" />
+    <constant name="stylehint_BackColor" value="8" />
+    <constant name="stylehint_Indentation" value="0" />
+    <constant name="stylehint_Justification" value="2" />
+    <constant name="stylehint_NUMHINTS" value="10" />
+    <constant name="stylehint_Oblique" value="5" />
+    <constant name="stylehint_ParaIndentation" value="1" />
+    <constant name="stylehint_Proportional" value="6" />
+    <constant name="stylehint_ReverseColor" value="9" />
+    <constant name="stylehint_Size" value="3" />
+    <constant name="stylehint_TextColor" value="7" />
+    <constant name="stylehint_Weight" value="4" />
+    <constant name="stylehint_just_Centered" value="2" />
+    <constant name="stylehint_just_LeftFlush" value="0" />
+    <constant name="stylehint_just_LeftRight" value="1" />
+    <constant name="stylehint_just_RightFlush" value="3" />
+    <constant name="winmethod_Above" value="2" />
+    <constant name="winmethod_Below" value="3" />
+    <constant name="winmethod_Border" value="0" />
+    <constant name="winmethod_BorderMask" value="256" />
+    <constant name="winmethod_DirMask" value="15" />
+    <constant name="winmethod_DivisionMask" value="240" />
+    <constant name="winmethod_Fixed" value="16" />
+    <constant name="winmethod_Left" value="0" />
+    <constant name="winmethod_NoBorder" value="256" />
+    <constant name="winmethod_Proportional" value="32" />
+    <constant name="winmethod_Right" value="1" />
+    <constant name="wintype_AllTypes" value="0" />
+    <constant name="wintype_Blank" value="2" />
+    <constant name="wintype_Graphics" value="5" />
+    <constant name="wintype_Pair" value="1" />
+    <constant name="wintype_TextBuffer" value="3" />
+    <constant name="wintype_TextGrid" value="4" />
+  </constants>
+
+  <functions count="123">
+    <function id="1" name="exit" proto="0:" />
+    <function id="2" name="set_interrupt_handler" proto="_" />
+    <function id="3" name="tick" proto="0:" />
+    <function id="4" name="gestalt" proto="3IuIu:Iu" />
+    <function id="5" name="gestalt_ext" proto="4IuIu&amp;#Iu:Iu" />
+    <function id="32" name="window_iterate" proto="3Qa&lt;Iu:Qa" />
+    <function id="33" name="window_get_rock" proto="2Qa:Iu" />
+    <function id="34" name="window_get_root" proto="1:Qa" />
+    <function id="35" name="window_open" proto="6QaIuIuIuIu:Qa" />
+    <function id="36" name="window_close" proto="2Qa&lt;[2IuIu]:" />
+    <function id="37" name="window_get_size" proto="3Qa&lt;Iu&lt;Iu:" />
+    <function id="38" name="window_set_arrangement" proto="4QaIuIuQa:" />
+    <function id="39" name="window_get_arrangement" proto="4Qa&lt;Iu&lt;Iu&lt;Qa:" />
+    <function id="40" name="window_get_type" proto="2Qa:Iu" />
+    <function id="41" name="window_get_parent" proto="2Qa:Qa" />
+    <function id="42" name="window_clear" proto="1Qa:" />
+    <function id="43" name="window_move_cursor" proto="3QaIuIu:" />
+    <function id="44" name="window_get_stream" proto="2Qa:Qb" />
+    <function id="45" name="window_set_echo_stream" proto="2QaQb:" />
+    <function id="46" name="window_get_echo_stream" proto="2Qa:Qb" />
+    <function id="47" name="set_window" proto="1Qa:" />
+    <function id="48" name="window_get_sibling" proto="2Qa:Qa" />
+    <function id="64" name="stream_iterate" proto="3Qb&lt;Iu:Qb" />
+    <function id="65" name="stream_get_rock" proto="2Qb:Iu" />
+    <function id="66" name="stream_open_file" proto="4QcIuIu:Qb" />
+    <function id="67" name="stream_open_memory" proto="4&amp;#!CnIuIu:Qb" />
+    <function id="68" name="stream_close" proto="2Qb&lt;[2IuIu]:" />
+    <function id="69" name="stream_set_position" proto="3QbIsIu:" />
+    <function id="70" name="stream_get_position" proto="2Qb:Iu" />
+    <function id="71" name="stream_set_current" proto="1Qb:" />
+    <function id="72" name="stream_get_current" proto="1:Qb" />
+    <function id="96" name="fileref_create_temp" proto="3IuIu:Qc" />
+    <function id="97" name="fileref_create_by_name" proto="4IuSIu:Qc" />
+    <function id="98" name="fileref_create_by_prompt" proto="4IuIuIu:Qc" />
+    <function id="99" name="fileref_destroy" proto="1Qc:" />
+    <function id="100" name="fileref_iterate" proto="3Qc&lt;Iu:Qc" />
+    <function id="101" name="fileref_get_rock" proto="2Qc:Iu" />
+    <function id="102" name="fileref_delete_file" proto="1Qc:" />
+    <function id="103" name="fileref_does_file_exist" proto="2Qc:Iu" />
+    <function id="104" name="fileref_create_from_fileref" proto="4IuQcIu:Qc" />
+    <function id="128" name="put_char" proto="1Cu:" />
+    <function id="129" name="put_char_stream" proto="2QbCu:" />
+    <function id="130" name="put_string" proto="1S:" />
+    <function id="131" name="put_string_stream" proto="2QbS:" />
+    <function id="132" name="put_buffer" proto="1&gt;+#Cn:" />
+    <function id="133" name="put_buffer_stream" proto="2Qb&gt;+#Cn:" />
+    <function id="134" name="set_style" proto="1Iu:" />
+    <function id="135" name="set_style_stream" proto="2QbIu:" />
+    <function id="144" name="get_char_stream" proto="2Qb:Is" />
+    <function id="145" name="get_line_stream" proto="3Qb&lt;+#Cn:Iu" />
+    <function id="146" name="get_buffer_stream" proto="3Qb&lt;+#Cn:Iu" />
+    <function id="160" name="char_to_lower" proto="2Cu:Cu" />
+    <function id="161" name="char_to_upper" proto="2Cu:Cu" />
+    <function id="176" name="stylehint_set" proto="4IuIuIuIs:" />
+    <function id="177" name="stylehint_clear" proto="3IuIuIu:" />
+    <function id="178" name="style_distinguish" proto="4QaIuIu:Iu" />
+    <function id="179" name="style_measure" proto="5QaIuIu&lt;Iu:Iu" />
+    <function id="192" name="select" proto="1&lt;+[4IuQaIuIu]:" />
+    <function id="193" name="select_poll" proto="1&lt;+[4IuQaIuIu]:" />
+    <function id="208" name="request_line_event" proto="3Qa&amp;+#!CnIu:" />
+    <function id="209" name="cancel_line_event" proto="2Qa&lt;[4IuQaIuIu]:" />
+    <function id="210" name="request_char_event" proto="1Qa:" />
+    <function id="211" name="cancel_char_event" proto="1Qa:" />
+    <function id="212" name="request_mouse_event" proto="1Qa:" />
+    <function id="213" name="cancel_mouse_event" proto="1Qa:" />
+    <function id="214" name="request_timer_events" proto="1Iu:" />
+    <function id="224" name="image_get_info" proto="4Iu&lt;Iu&lt;Iu:Iu" />
+    <function id="225" name="image_draw" proto="5QaIuIsIs:Iu" />
+    <function id="226" name="image_draw_scaled" proto="7QaIuIsIsIuIu:Iu" />
+    <function id="232" name="window_flow_break" proto="1Qa:" />
+    <function id="233" name="window_erase_rect" proto="5QaIsIsIuIu:" />
+    <function id="234" name="window_fill_rect" proto="6QaIuIsIsIuIu:" />
+    <function id="235" name="window_set_background_color" proto="2QaIu:" />
+    <function id="240" name="schannel_iterate" proto="3Qd&lt;Iu:Qd" />
+    <function id="241" name="schannel_get_rock" proto="2Qd:Iu" />
+    <function id="242" name="schannel_create" proto="2Iu:Qd" />
+    <function id="243" name="schannel_destroy" proto="1Qd:" />
+    <function id="248" name="schannel_play" proto="3QdIu:Iu" />
+    <function id="249" name="schannel_play_ext" proto="5QdIuIuIu:Iu" />
+    <function id="250" name="schannel_stop" proto="1Qd:" />
+    <function id="251" name="schannel_set_volume" proto="2QdIu:" />
+    <function id="252" name="sound_load_hint" proto="2IuIu:" />
+    <function id="244" name="schannel_create_ext" proto="3IuIu:Qd" />
+    <function id="247" name="schannel_play_multi" proto="4&gt;+#Qd&gt;+#IuIu:Iu" />
+    <function id="253" name="schannel_set_volume_ext" proto="4QdIuIuIu:" />
+    <function id="254" name="schannel_pause" proto="1Qd:" />
+    <function id="255" name="schannel_unpause" proto="1Qd:" />
+    <function id="256" name="set_hyperlink" proto="1Iu:" />
+    <function id="257" name="set_hyperlink_stream" proto="2QbIu:" />
+    <function id="258" name="request_hyperlink_event" proto="1Qa:" />
+    <function id="259" name="cancel_hyperlink_event" proto="1Qa:" />
+    <function id="288" name="buffer_to_lower_case_uni" proto="3&amp;+#IuIu:Iu" />
+    <function id="289" name="buffer_to_upper_case_uni" proto="3&amp;+#IuIu:Iu" />
+    <function id="290" name="buffer_to_title_case_uni" proto="4&amp;+#IuIuIu:Iu" />
+    <function id="296" name="put_char_uni" proto="1Iu:" />
+    <function id="297" name="put_string_uni" proto="1U:" />
+    <function id="298" name="put_buffer_uni" proto="1&gt;+#Iu:" />
+    <function id="299" name="put_char_stream_uni" proto="2QbIu:" />
+    <function id="300" name="put_string_stream_uni" proto="2QbU:" />
+    <function id="301" name="put_buffer_stream_uni" proto="2Qb&gt;+#Iu:" />
+    <function id="304" name="get_char_stream_uni" proto="2Qb:Is" />
+    <function id="305" name="get_buffer_stream_uni" proto="3Qb&lt;+#Iu:Iu" />
+    <function id="306" name="get_line_stream_uni" proto="3Qb&lt;+#Iu:Iu" />
+    <function id="312" name="stream_open_file_uni" proto="4QcIuIu:Qb" />
+    <function id="313" name="stream_open_memory_uni" proto="4&amp;#!IuIuIu:Qb" />
+    <function id="320" name="request_char_event_uni" proto="1Qa:" />
+    <function id="321" name="request_line_event_uni" proto="3Qa&amp;+#!IuIu:" />
+    <function id="291" name="buffer_canon_decompose_uni" proto="3&amp;+#IuIu:Iu" />
+    <function id="292" name="buffer_canon_normalize_uni" proto="3&amp;+#IuIu:Iu" />
+    <function id="336" name="set_echo_line_event" proto="2QaIu:" />
+    <function id="337" name="set_terminators_line_event" proto="2Qa&gt;#Iu:" />
+    <function id="352" name="current_time" proto="1&lt;+[3IsIuIs]:" />
+    <function id="353" name="current_simple_time" proto="2Iu:Is" />
+    <function id="360" name="time_to_date_utc" proto="2&gt;+[3IsIuIs]&lt;+[8IsIsIsIsIsIsIsIs]:" />
+    <function id="361" name="time_to_date_local" proto="2&gt;+[3IsIuIs]&lt;+[8IsIsIsIsIsIsIsIs]:" />
+    <function id="362" name="simple_time_to_date_utc" proto="3IsIu&lt;+[8IsIsIsIsIsIsIsIs]:" />
+    <function id="363" name="simple_time_to_date_local" proto="3IsIu&lt;+[8IsIsIsIsIsIsIsIs]:" />
+    <function id="364" name="date_to_time_utc" proto="2&gt;+[8IsIsIsIsIsIsIsIs]&lt;+[3IsIuIs]:" />
+    <function id="365" name="date_to_time_local" proto="2&gt;+[8IsIsIsIsIsIsIsIs]&lt;+[3IsIuIs]:" />
+    <function id="366" name="date_to_simple_time_utc" proto="3&gt;+[8IsIsIsIsIsIsIsIs]Iu:Is" />
+    <function id="367" name="date_to_simple_time_local" proto="3&gt;+[8IsIsIsIsIsIsIsIs]Iu:Is" />
+    <function id="73" name="stream_open_resource" proto="3IuIu:Qb" />
+    <function id="314" name="stream_open_resource_uni" proto="3IuIu:Qb" />
+  </functions>
+
+</glkapi>
