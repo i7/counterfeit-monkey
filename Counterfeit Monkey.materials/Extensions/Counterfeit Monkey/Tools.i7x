@@ -374,7 +374,7 @@ Carry out waving the letter-remover device at something:
 		now the generated object is essential; ]
 	[so that 'take it' or whatever will work, after we've made something: ]
 	set pronouns from the generated object;
-	carry out the caching scope activity with the player;
+	now the generated object is marked-visible;
 	record "using the letter-remover" as achieved;
 	let current be the current setting of the letter-remover;
 	remove current from the list of remaining letters, if present.
@@ -429,7 +429,7 @@ To homonym-paddle (N - a thing):
 		set pronouns from X;
 		now X does not proffer X;
 		now N proffers X;
-		carry out the caching scope activity with the player;
+		now X is marked-visible;
 		say "[one of]The bartender fishes around in the toolkit for [a N] and sets it on the bar with a flourish. [The patron] is watching this transaction in an interested way.
 
 'This is good,' says the bartender, winking at us both (all?). 'You'll like this.' She raises the homonym paddle unnecessarily high in the air and smashes it down hard on [the N].
@@ -541,7 +541,7 @@ Carry out teeing something:
 		now the goal-object is multiply-made;
 	now every thing which proffers the noun proffers the goal-object;
 	move the goal-object to the holder of the noun;
-	carry out the caching scope activity with the player;
+	now goal-object is marked-visible;
 	record "using the T-inserter" as achieved;
 	move the noun to the repository.
 
@@ -759,7 +759,7 @@ To synthesize contents of (source - a thing):
 		say "[The source] [if the source is a container]hums like a microwave oven for 43 seconds, then pings. Inside there [is-are a list of things *in the source][otherwise]glows vibrant blue for five seconds, leaving behind [a list of things *in the source][end if].";
 		try examining the chosen article;
 		set pronouns from the chosen article;
-		carry out the caching scope activity with the player;
+		now the chosen article is marked-visible;
 	otherwise:
 		say "[The source] whirs for a moment, then dies down again.";
 
@@ -862,7 +862,7 @@ This is the spinner-turning rule:
 		record "using the spinner" as achieved;
 		abide by the dangerous construction rules for the chosen article;
 		set pronouns from the chosen article;
-		carry out the caching scope activity with the player;
+		now the chosen article is marked-visible;
 	otherwise:
 		if looking:
 			if exactly one thing is on the spinner, say "It does";
@@ -1356,6 +1356,7 @@ To gel-convert (item - an object):
 		abide by the dangerous destruction rules for the item;
 		let destination be home for the item;
 		now everything which proffers the item is in the destination;
+		now everything which proffers the item is marked-visible;
 		[play the sound of gel splort;]
 		repeat with secondary running through things which proffer the item:
 			if secondary is stuck:
@@ -1372,7 +1373,6 @@ To gel-convert (item - an object):
 			if description needed is true:
 				say "[parent description]";
 		say "[one of][paragraph break]I'm starting to understand how you got into all the places you got into. Not that I judge you or your line of work, of course. [or][stopping][paragraph break]";
-		carry out the caching scope activity with the player;
 		record "using the gel" as achieved;
 		[It's possible, in rare cases, for something to be its own parent: AS+COT -> SCOT -> COT leaves a result that is one of its own earlier ingredients. So we need to account for that: ]
 		if the item does not proffer the item:
@@ -1590,7 +1590,7 @@ Carry out shooting something with the anagramming gun:
 		now the detritus is essential;
 	[ if something (called source) which proffers the detritus encloses an essential thing:
 		now the detritus is essential; ]
-	carry out the caching scope activity with the player;
+	now the detritus is marked-visible;
 	record "using the anagramming gun" as achieved;
 
 Report shooting something with the anagramming gun when the detritus is unseen:
@@ -1816,7 +1816,7 @@ Report inserting something into the umlaut punch:
 	if the power chord is not seen and the power cord is not seen:
 		move the power chord to the location;
 		say "[line break]When they are gone, [a power chord] remains in the air.";
-		carry out the caching scope activity with the player;
+		now the power chord is marked-visible;
 	stop the action.
 
 To comment on band quality of (item - the honey pastry triangle):
@@ -1971,7 +1971,7 @@ Instead of switching on the big lever:
 					abide by the dangerous destruction rules for the target;
 					move the result to the programmable dais;
 					move the target to the repository;
-					carry out the caching scope activity with the player;
+					now the target is marked-visible;
 					if the result is the passage-place:
 						say "[The programmable dais] glows deep red, then deeper. There's a roar like a stadium being demolished, and a passage opens, descending into the dais itself." instead;
 					otherwise:
@@ -2118,7 +2118,7 @@ After inserting something into the cryptolock:
 		abide by the dangerous construction rules for the chosen article;
 		unless the chosen article is in the Generator room:
 			say "There is a churning noise from within [the cryptolock], and a moment later [we] see inside [a list of things *in the cryptolock]. ";
-		carry out the caching scope activity with the player;
+		now the chosen article is marked-visible;
 		record "using the vowel rotator" as achieved;
 		if the boiler is switched off:
 			now the boiler is switched on;
