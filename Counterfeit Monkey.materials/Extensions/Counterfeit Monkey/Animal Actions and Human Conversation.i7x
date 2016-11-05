@@ -3641,12 +3641,12 @@ whether he hates customs officials is a questioning quip. The comment is "'Do yo
 Instead of the barman discussing a civic quip when the barman does not know slango-friendship:
 	say "[one of]He just laughs and shakes his head[or]He grins, but doesn't answer[or]'What do you think?' he asks. I don't think we're going to get answers on this kind of question. Not while he doesn't trust us. But it hardly matters[at random]."
 
-whether he believes in god secondary is a questioning quip. The comment is "'Where do you stand on God?' we ask[you-are-religious].". The printed name is "whether he believes in God".
+whether he believes in god-2 is a questioning quip. The comment is "'Where do you stand on God?' we ask[you-are-religious].". The printed name is "whether he believes in God".
  It mentions religion.
  The reply is "'Don't give it much thought,' he says. 'Please don't tell me you're here with a pamphlet . I won't read it.'".
  It quip-supplies the barman.
  It is background-information.
-Understand "parker/barman" as whether he believes in god secondary.
+Understand "parker/barman" or "god" as whether he believes in god-2.
 
 Test tobarman with "test act1 / test chard / test car / test Slango-missed / go to outdoor / open backpack / look / wave p-remover at spill / get sill / go to counterfeit monkey".
 
