@@ -316,6 +316,10 @@ where there seems garage is a weakly-phrased location-questioning quip.
  The correct answer is Park Center.
 Every car is mentioned by where there seems garage.
 
+Availability rule for where there seems garage:
+	if the garage is seen:
+		it is off-limits;
+	make no decision.
 
 where there seems telephone service is a weakly-phrased location-questioning quip.
  The printed name is "where there is telephone service". The true-name is "where there seems telephone service".
