@@ -1220,7 +1220,7 @@ Availability rule for where cars seem:
 	make no decision.
 
 where cars seem is an unlisted questioning quip. It assumes car-needed.
- Understand "chard" as where cars seem. The printed name is "where cars are".
+ Understand "chard" or "where to find" as where cars seem. The printed name is "where to find a car".
  The comment is "'I'm looking to make a car,' we say. 'With a letter-remover.'"
  The reply is "'Maybe you need some carob,' he suggests. 'Take out the O, then the B...'
 
