@@ -826,6 +826,8 @@ where fuel might be is an unlisted questioning quip.
 	It quip-supplies the mechanic.
 	It is repeatable.
 
+Rule for refusing comment by the mechanic when the noun is fuel-like:
+	say "He looks at [the noun]. [one of]'Should work,' he says.[or]'I think you can handle that yourself.'[stopping]".
 
 Availability rule for we'll find some:
 	if the player encloses an oil:
