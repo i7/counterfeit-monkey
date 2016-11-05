@@ -347,8 +347,11 @@ A fact can be motivational or purposeless. A fact is usually purposeless. you-ar
 
 Assumption relates various quips to various facts. The verb to assume (it assumes, they assume, it assumed, it is assumed) implies the assumption relation.
 
-An availability rule for a quip (called the target) (this is the check assumptions requirements for quips rule):
-	if the target assumes a fact which is not known by the player, it is off-limits.
+An availability rule for a quip (called the target) (this is the check knowledge requirements for quips rule):
+	if a fact assumed by the target is not known by the player:
+		it is off-limits;
+	otherwise:
+		make no decision.
 
 Section 5 - Generic Response Types
 
