@@ -312,9 +312,9 @@ Availability rules are an object-based rulebook. The availability rules have out
 [	but (depending on the system) might not include everything that the player could reasonably choose to talk about at the moment.	]
 
 Definition: a quip (called target quip) is available:
-	[say "Following the availability rules for the '[target quip]' quip![line break]";]
 	follow the availability rules for it;
-	if the outcome of the rulebook is the it is available outcome, yes.
+	if the outcome of the rulebook is the it is available outcome:
+		yes;
 
 The first availability rule (this is the don't talk to no one rule):
 	if the current interlocutor is not a person:
