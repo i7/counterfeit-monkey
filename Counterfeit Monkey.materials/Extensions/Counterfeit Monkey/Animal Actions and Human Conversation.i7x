@@ -783,12 +783,6 @@ Carry out the mechanic discussing whether the oil will work:
 	complete "Get oil for the mechanic";
 	record "repairing our car" as achieved.
 
-An availability rule for whether the oil will work:
-	if the player encloses an oil and a damaged car is in location:
-		it is available;
-	otherwise:
-		it is off-limits.
-
 whether the oil will work is an unlisted offering quip.
  The comment is "'Will this work?' [We] hold out the oil."
  The reply is "'Should do,' he says. Rolling up his sleeves, he goes to work on the car. There is no small amount of banging and muttering, but finally he stands back and announces that he believes it is now in working condition."
@@ -878,12 +872,11 @@ Instead of saying yes when the current quip is why the car does not run:
 	otherwise:
 		say "But we don't."
 
-Availability rule for whether the oil will work:
-	if the number of cars in location is 0:
-		it is off-limits;
-	if the player does not carry an oil:
-		it is off-limits;
-	make no decision.
+An availability rule for whether the oil will work:
+	if the player encloses an oil and a damaged car is in location:
+		it is available;
+	otherwise:
+		it is off-limits.
 
 Carry out the mechanic discussing whether the oil will work:
 	let chosen-oil be a random oil enclosed by the player;
