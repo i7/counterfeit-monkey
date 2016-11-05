@@ -471,10 +471,7 @@ whether the oil seems interesting is a demonstration quip.
 
 Availability rule for whether the oil seems interesting:
 	if the current interlocutor is the mechanic:
-		if a car is in location:
-			it is off-limits;
-		else if at least one car is operational:
-			it is off-limits.
+		it is off-limits.
 
 
 whether the monocle seems interesting is a demonstration quip.
@@ -755,10 +752,11 @@ Understand "work" or "doesn't" as why the car does not run.
  It is repeatable.
  Every car is mentioned by why the car does not run.
 
-where cars seem-2 is an unlisted questioning quip. It assumes car-needed.
- Understand "buy car" or "buy a car" or "where to find" as where cars seem-2. The printed name is "where to find a car".
- The comment is "'I'm looking for a car,' we say."
- The reply is "He looks at [you]. 'Sorry, I'm just a mechanic,' he says. 'I fix them. I don't sell them.'"
+where cars seem-2 is an unlisted repeatable questioning quip.
+ Understand "where to" or "buy car" or "buy a car" or "where i could" or "find a car" as where cars seem-2. The printed name is "where to find a car".
+It quip-supplies the mechanic.
+The comment is "'I'm looking for a car,' we say.".
+The reply is "'Sorry.' He looks at us. '[one of]I fix them. I don't sell them[or]Perhaps you should ask somebody else[stopping].'".
 Every car is mentioned by where cars seem-2.
 
 Availability rule for where cars seem-2:
@@ -774,6 +772,9 @@ Instead of showing an oil to the mechanic:
 		continue the action;
 	otherwise:
 		try giving the noun to the mechanic.
+
+Instead of giving an oil to the mechanic when there is no car in location:
+	try discussing check out this oil-1.
 
 Instead of giving an oil to the mechanic when at least one car is operational:
 	try discussing check out this oil.
@@ -795,12 +796,23 @@ whether the oil will work is an unlisted offering quip.
  It quip-supplies the mechanic.
  Every oil is mentioned by whether the oil will work.
 
+Availability rule for check out this oil-1:
+	if the player encloses an oil and there is no car in location:
+		make no decision;
+	it is off-limits.
+
+check out this oil-1 is an unlisted repeatable demonstration quip.
+ The comment is "[demonstration of a random oil enclosed by the player]".
+ The reply is "'[one of]Looks like high-quality oil[or]That looks useful[at random],' he says."
+ It quip-supplies the mechanic.
+ Every oil is mentioned by check out this oil.
+
 Availability rule for check out this oil:
 	if the player encloses an oil and at least one car is operational:
 		make no decision;
 	it is off-limits.
 
-check out this oil is an unlisted demonstration quip.
+check out this oil is an unlisted repeatable demonstration quip.
  The comment is "We show off the additional oil."
  The reply is "'Probably don't need that now,' he says, with a thoughtful nod."
  It quip-supplies the mechanic.
@@ -830,8 +842,15 @@ where fuel might be is an unlisted questioning quip.
 	It quip-supplies the mechanic.
 	It is repeatable.
 
-Rule for refusing comment by the mechanic when the noun is fuel-like:
-	say "He looks at [the noun]. [one of]'Should work,' he says.[or]'I think you can handle that yourself.'[stopping]".
+Instead of giving a fuel-like thing to the mechanic:
+	try discussing whether the fuel seems interesting.
+
+whether the fuel seems interesting is an unlisted demonstration quip.
+	It mentions gas and fuel.
+	The comment is "[demonstration of a random fuel-like thing enclosed by location]".
+	The reply is "He takes a look at [the random fuel-like thing enclosed by location]. [one of]'Should work,' he says.[or]'I don't think you need my help with that.'[stopping]".
+	It quip-supplies the mechanic.
+	It is repeatable.
 
 Availability rule for we'll find some:
 	if the player encloses an oil:
