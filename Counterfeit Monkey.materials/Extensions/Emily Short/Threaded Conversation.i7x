@@ -188,7 +188,7 @@ This is the recap of known facts rule:
 	say "[We] [think] back over the things that [we] [know]: [line break]  " (B);
 	repeat with item running through facts:
 		if the player knows the item:
-			say "[summary of the item][line break]  (C)";
+			say "[summary of the item][line break] " (C);
 
 
 Book IV - Caching Dead Ends And Shallow Burials
