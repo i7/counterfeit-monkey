@@ -1106,6 +1106,20 @@ Rule for supplying a missing second noun while fueling something with:
 	otherwise:
 		say "[We] don't have any plausible fuel to hand."
 
+Understand "fuel car" or "fill her up" or "fill up car/tank" as car-fueling when the person asked is the mechanic. car-fueling is an action applying to nothing.
+
+Instead of asking the mechanic to try fueling a car with a fuel-like thing:
+	try asking the mechanic to try car-fueling.
+
+Instead of asking the mechanic to try car-fueling:
+	if there is no car in location:
+		say "The mechanic look at us, confused.";
+		stop the action;
+	if there is a fuel-like thing enclosed by location:
+		try discussing whether the fuel seems interesting;
+	otherwise:
+		try discussing where fuel might be.
+
 Check fueling something with a vegetable:
 	say "I've heard of biodiesel, but that carries the point too far." instead.
 
