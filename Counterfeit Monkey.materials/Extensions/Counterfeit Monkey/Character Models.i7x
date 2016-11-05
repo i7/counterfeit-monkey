@@ -166,7 +166,7 @@ Romance is a subject. Understand "love" or "smoochies" or "girlfriend" or "boyfr
 
 Security is a subject. Understand "men" or "law enforcement" or "police" as security.
 
-Transportation is a subject. Understand "transport" or "bus" or "buses" or "bus system" or "transit" or "transit system" or "car" or "rental car" or "auto" or "automobile" or "cars" or "autos" or "vehicles" or "automobiles" or "vehicle" as "[transit]". Understand "[transit]" as transportation.
+Transportation is a subject. Understand "transport" or "bus" or "buses" or "bus system" or "transit" or "transit system" or "rental car" or "auto" or "automobile" or "cars" or "autos" or "vehicles" or "automobiles" or "vehicle" as "[transit]". Understand "[transit]" as transportation.
 
 The environment is a subject. Understand "planet" as the environment.
 
