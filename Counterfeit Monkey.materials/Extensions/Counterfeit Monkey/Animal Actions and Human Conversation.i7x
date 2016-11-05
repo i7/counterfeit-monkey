@@ -3474,13 +3474,14 @@ Setting action variables for giving something to the barman when play the game i
 Understand "choose [something]" as showing it to when play the game is the current quip.
 
 Rule for supplying a missing second noun while showing something to:
-	if the current interlocutor is a person:
+	if the current interlocutor is something:
 		now the second noun is the current interlocutor;
 	otherwise if how-many-people-here is 1:
 		implicitly greet entry 1 of people-present;
-		now the second noun is the current interlocutor;
+		now the second noun is entry 1 of people-present;
 	otherwise:
-		say "You must show [the noun] to someone specific."
+		say "You must show [the noun] to someone specific.";
+		stop the action.
 
 Instead of showing something (called the item) to the barman when play the game is the current quip and the wager is yourself:
 	if the item is yourself:
