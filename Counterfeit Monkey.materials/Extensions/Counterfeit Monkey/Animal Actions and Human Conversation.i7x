@@ -751,6 +751,17 @@ Understand "work" or "doesn't" as why the car does not run.
  It is repeatable.
  Every car is mentioned by why the car does not run.
 
+where cars seem-2 is an unlisted questioning quip. It assumes car-needed.
+ Understand "buy car" or "buy a car" or "where to find" as where cars seem-2. The printed name is "where to find a car".
+ The comment is "'I'm looking for a car,' we say."
+ The reply is "He looks at [you]. 'Sorry, I'm just a mechanic,' he says. 'I fix them. I don't sell them.'"
+Every car is mentioned by where cars seem-2.
+
+Availability rule for where cars seem-2:
+	if a car is seen:
+		it is off-limits;
+	make no decision.
+
 Carry out the mechanic discussing why the car does not run:
 	assign "Get oil for the mechanic" at High Street.
 
