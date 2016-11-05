@@ -946,6 +946,9 @@ Before buying something from the farmer when the player does not recollect what 
  It quip-supplies the farmer.
  It is repeatable.
 
+Check discussing what seems for sale:
+	now what seems for sale is unlisted.
+
 Availability rule for what seems for sale-2:
 	if the farmer carries something, it is off-limits;
 	otherwise make no decision.
