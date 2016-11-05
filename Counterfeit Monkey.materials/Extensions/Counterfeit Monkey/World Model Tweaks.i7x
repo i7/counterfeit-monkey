@@ -1045,10 +1045,10 @@ Instead of going from a road to a road:
 	if the protesters are in location:
 		if the number of entries in the path so far of the player is greater than 0:
 			say "[path-walked so far][paragraph break]";
-		say "Unfortunately the sidewalks, which were never very wide to start with, are so blocked by the mass of protesters that it's impossible to get by. Besides, if we associate with them, we might wind up getting arrested on minor charges anyway. We need some kind of automotive transport.";
+		say "Unfortunately the sidewalks, which were never very wide to start with, are so blocked by the mass of protesters that it's impossible to get by. Besides, if we associate with them, we might wind up getting arrested on minor charges anyway. We need some kind of automotive transport[car-needed].";
 		assign "Find transport for getting past the traffic on High Street" at High Street;
 	otherwise if the room gone to is the Roundabout and the protesters are not off-stage:
-		say "That whole area is so jammed that our only hope is to go by car.";
+		say "That whole area is so jammed that our only hope is to go by car[car-needed].";
 	otherwise:
 		continue the action.
 
@@ -1169,13 +1169,13 @@ Rule for describing the interior of a car (called target car):
 
 An ignition is a kind of device. One ignition is part of every car. Understand "motor" as an ignition. Instead of listening to an ignition, try listening to a random car which incorporates the noun.
 
-The gas-gauge is a kind of thing. One gas-gauge is part of every car. The description is "[if the item described is part of a car that is fueled]It points over at the right, which must be Full[otherwise]It points all the way around at the left, or Empty[end if]." The printed name of the gas-gauge is "gas gauge". Understand "gauge" or "gas gauge" as the gas-gauge.
+The gas-gauge is a kind of thing. One gas-gauge is part of every car. The description is "[if the item described is part of a car that is fueled]It points over at the right, which must be Full[otherwise]It points all the way around at the left, or Empty[car-broken][end if]." The printed name of the gas-gauge is "gas gauge". Understand "gauge" or "gas gauge" as the gas-gauge.
 
 Check switching on an ignition which is part of an unfueled car:
-	say "There's no gas in the car; without fuel, it's not going far." instead.
+	say "[car-broken]There's no gas in the car; without fuel, it's not going far." instead.
 
 Check switching on an ignition which is part of a damaged car:
-	say "Though the engine does briefly turn on, there's clearly something wrong with it, from the unpleasant noises and the flashing lights on the dash. Perhaps it needs oil." instead.
+	say "[car-broken]Though the engine does briefly turn on, there's clearly something wrong with it, from the unpleasant noises and the flashing lights on the dash. Perhaps it needs oil." instead.
 
 Report switching on an ignition:
 	say "[one of]We switch on the ignition and the car comes to life. Smelly, trembling, putt-putting life, but still, not bad for something we conjured out of a vegetable picked outside my parents['] place[or][We] switch [the noun] on[stopping]." instead.
@@ -1190,10 +1190,10 @@ A car can be operational or damaged. A car is usually damaged.
 
 Sanity-check going by unfueled car:
 	assign "Fuel the car" at High Street;
-	say "The extremely primitive dial in front of us is pointing all the way to the left. I think that's its way of saying it's out of fuel. At any rate, the engine won't start." instead.
+	say "[car-broken]The extremely primitive dial in front of us is pointing all the way to the left. I think that's its way of saying it's out of fuel. At any rate, the engine won't start." instead.
 
 Sanity-check going by damaged car:
-	say "The car refuses to run properly: evidently you got us a lemon. It's going to take some tuning up before it will go." instead.
+	say "[car-broken]The car refuses to run properly: evidently you got us a lemon. It's going to take some tuning up before it will go." instead.
 
 Sanity-check switching on a car:
 	try switching on a random ignition which is part of the noun instead.

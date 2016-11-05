@@ -747,6 +747,7 @@ Understand "work" or "doesn't" as why the car does not run.
  The comment is "'There appears to be something wrong with my car,' you tell the mechanic.".
  The reply is "[one of]He has the somewhat cow-like expression of all fake people, but he nods gravely and has a look. 'It hasn't been maintained,' he says, on inspection. 'You got any motor oil?'[or]Showing no sign of having had this conversation before, he checks over the car, then asks us if we have oil.[stopping]".
  It quip-supplies the mechanic.
+ It assumes car-broken.
  It is repeatable.
  Every car is mentioned by why the car does not run.
 
@@ -1189,7 +1190,7 @@ Availability rule for where cars seem:
 		it is off-limits;
 	make no decision.
 
-where cars seem is an unlisted questioning quip.
+where cars seem is an unlisted questioning quip. It assumes car-needed.
  Understand "chard" as where cars seem. The printed name is "where cars are".
  The comment is "'I'm looking to make a car,' we say. 'With a letter-remover.'"
  The reply is "'Maybe you need some carob,' he suggests. 'Take out the O, then the B...'

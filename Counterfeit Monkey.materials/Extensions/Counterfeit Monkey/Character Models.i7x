@@ -340,6 +340,8 @@ mark-known	"That the patron's name is Mark."
 brock-found	"That the rock is really Brock."
 crime-bg	"That one of you is criminal."
 atlantean-bg	"That one of you is Atlantean."
+car-needed	"That we need a car."
+car-broken	"That the car does not run."
 
 A fact can be motivational or purposeless. A fact is usually purposeless. you-are-student, you-hit-on, you-are-tourist, you-are-possible-customer, you-are-past-customer, you-take-survey, you-are-feckless, you-are-dangerous are motivational.
 
