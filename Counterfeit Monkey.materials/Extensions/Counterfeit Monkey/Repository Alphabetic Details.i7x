@@ -1488,7 +1488,7 @@ The nap is a thing. The heft of the nap is 1. The description is "It's a wad of 
 
 The description of a net is usually "A modest-sized net with a fine mesh, suitable for removing tropical fish from a tank."
 
-The description of the nib is "Just the very end of an expensive fountain pen, the sort of thing important men used a hundred years ago. Something much like this must have been used on all those notes that went into composing the New Orthodox Othography."
+The description of the nib is "Just the very end of an expensive fountain pen, the sort of thing important men used a hundred years ago. Something much like this must have been used on all those notes that went into composing the New Orthodox Orthography."
 
 The description of a nit is "A little black dot almost too small to see. It'll be gone if we're not careful." The heft of the nit is 1.
 
