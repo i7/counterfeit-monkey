@@ -1083,7 +1083,7 @@ A car is a kind of vehicle. A car is usually transparent. The heft of a car is 7
 	The introduction is "Here is how my mother gets around. She takes a 300 Euro Hermès scarf with an orange border and a pattern of prancing horses. She tosses it in the air. As it falls, she shoots it twice, like a clay pigeon: once to take out the F, the second time for the S. And such a car: buttery leather seats, jaguar lines. If someone asks how she gets such good results, she jokes that it's because of her quality materials.
 
 Suffice it to say that we are not similarly blessed."
-	Understand "toy" or "sub-subcompact" or "door" as a car.
+	Understand "toy" or "sub-subcompact" or "door" or "tank" as a car.
 	The scent-description of a car is "metal parts and oil".
 
 A car can be fueled or unfueled. A car is usually unfueled.
@@ -1106,19 +1106,8 @@ Rule for supplying a missing second noun while fueling something with:
 	otherwise:
 		say "[We] don't have any plausible fuel to hand."
 
-Understand "fuel car" or "fill her up" or "fill up car/tank" as car-fueling when the person asked is the mechanic. car-fueling is an action applying to nothing.
-
-Instead of asking the mechanic to try fueling a car with a fuel-like thing:
-	try asking the mechanic to try car-fueling.
-
-Instead of asking the mechanic to try car-fueling:
-	if there is no car in location:
-		say "The mechanic look at us, confused.";
-		stop the action;
-	if there is a fuel-like thing enclosed by location:
-		try discussing whether the fuel seems interesting;
-	otherwise:
-		try discussing where fuel might be.
+Instead of filling a car with a fuel-like thing:
+	try fueling the noun with the second noun.
 
 Check fueling something with a vegetable:
 	say "I've heard of biodiesel, but that carries the point too far." instead.
@@ -1135,6 +1124,21 @@ Carry out fueling something with something:
 	complete "Fuel the car";
 	record "fueling our car" as achieved;
 	say "I deeply fear automotive maintenance, but I can (just) manage to pour in the fuel... and I think that's done it." instead.
+
+[The "car-fueling" action is a hack to make commands like MECHANIC, FUEL THE CAR work. Inform seems to have a problem with "Rule for supplying a missing second noun" when it comes to giving instructions to other characters, which breaks the normal fueling action in those cases.]
+Understand "fuel car" or "fill her up" or "fill up car/tank" as car-fueling when the person asked is the mechanic. car-fueling is an action applying to nothing.
+
+Instead of asking the mechanic to try fueling a car with a fuel-like thing:
+	try asking the mechanic to try car-fueling.
+
+Instead of asking the mechanic to try car-fueling:
+	if there is no car in location:
+		say "The mechanic look at us, confused.";
+		stop the action;
+	if there is a fuel-like thing enclosed by location:
+		try discussing whether the fuel seems interesting;
+	otherwise:
+		try discussing where fuel might be.
 
 Rule for printing the name of a car while opening or closing a car:
 	say "car door".

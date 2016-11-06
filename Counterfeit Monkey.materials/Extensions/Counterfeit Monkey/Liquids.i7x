@@ -80,10 +80,10 @@ Understand "fill [a container] with [something]" as filling it with.
 Understand "fill [something] with [a fluid thing]" as filling it with.
 Understand "fill [something] with [something]" as filling it with.
 
-Understand "pour [something] into [something]" as filling it with (with nouns reversed).
-Understand "pour [a fluid thing] into [something]" as filling it with (with nouns reversed).
-Understand "pour [something] into [a container]" as filling it with (with nouns reversed).
-Understand "pour [a fluid thing] into [a container]" as filling it with (with nouns reversed).
+Understand "pour [something] in/into [something]" as filling it with (with nouns reversed).
+Understand "pour [a fluid thing] in/into [something]" as filling it with (with nouns reversed).
+Understand "pour [something] in/into [a container]" as filling it with (with nouns reversed).
+Understand "pour [a fluid thing] in/into [a container]" as filling it with (with nouns reversed).
 
 Every turn when a fluid thing (called target) is in a pan:
 	unless the target is contained:
