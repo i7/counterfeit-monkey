@@ -477,15 +477,11 @@ I deeply fear automotive maintenance, but I can (just) manage to pour in the fue
 
 The mechanic nods at us.
 
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask why the car does not run.
-
 > talk to mechanic
-/We (nod|say hi).
-
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask why the car does not run.
+/We (nod|say hi|return the greeting|wave|smile).
 
 > ask mechanic about car
-"There appears to be something wrong with my car," you tell the mechanic.
+We indicate the car with gestures.
 
 He has the somewhat cow-like expression of all fake people, but he nods gravely and has a look. "It hasn't been maintained," he says, on inspection. "You got any motor oil?"
 
@@ -507,7 +503,7 @@ We close the car door.
 
 We switch on the ignition and the car comes to life. Smelly, trembling, putt-putting life, but still, not bad for something we conjured out of a vegetable picked outside my parents' place.
 
-/((We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short| quick)? )drive (over to|as far as|to) Deep Street. (Then|There)|(At|Once we get to) Deep Street) we try (unsuccessfully to fit into a spot even smaller than the car,|to nab several parking spots) before (finally managing to be more assertive than the other drivers|lucking into a freshly-vacated place).
+/((We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short| quick)? )drive (over to|as far as|to) Deep Street. (Then|There)|(At|Once we get to) Deep Street) we (try (unsuccessfully to fit into a spot even smaller than the car,|to nab several parking spots) before (finally managing to be more assertive than the other drivers|lucking into a freshly-vacated place)|drive around a bit trying to get a parking spot).
 
 Fish Market
 Not very fishy at the moment, in fact: all the real trade happens in the early morning; then there is a period of tourist trade when the seafood sale tails off and most of the purchases are of polished conch shells and starfish; and then a little after noon the area clears out completely, leaving only briny rivulets on the concrete.
@@ -613,7 +609,7 @@ He heads into the interior of the café.
 /We (take|get|pick up|acquire) the sill.
 
 > go to counterfeit monkey
-/(We |We have a (brief|quick) |We make the( brief| quick)? |It's a( brief| quick)? )(walk|hike) through the marina district. 
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) through the marina district. 
 
 Counterfeit Monkey
 Infamously this pub was raided in 1929, the year that the Bureau developed its first meager attempt at an Authentication Scope, and dozens of smugglers and fraudulent businessmen went to jail. But neither that raid nor subsequent scrutiny has ever shut the place down entirely. Built when people were a bit shorter and ceilings were a bit lower, the Counterfeit Monkey is always smoky and never well lit, even in the middle of the day.
@@ -628,7 +624,7 @@ Parker acknowledges our return with a nod.
 
 [MEMORIES will list your currently active memories]
 > talk to barman
-We smile.
+/We (smile|wave).
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether he has seen Slango or ask whether we can have the origin paste.
 
@@ -708,7 +704,7 @@ This produces a squawk of surprise and irritation from the defendant, and you ge
 > show pill to barman
 "What do you think of this?" we ask, pointing to the pill.
 
-This evokes no particular interest.
+/(This evokes no particular interest|The barman doesn't have anything to say in response).
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether he has any other games going.
 
@@ -1011,7 +1007,7 @@ To the east, up a moderate rise from the sea-level docks, is the imposing exteri
 Immediately west, the Counterfeit Monkey's sign sways in the wind. 
 
 > go to convenience
-/(We |We have a (brief|quick) |We make the( brief| quick)? |It's a( brief| quick)? )drive through the marina district( over)? to the Roundabout. 
+/(We |We have a (brief|quick) |We make the( brief| quick)? |It's a( brief| quick)? )drive through the marina district (over to|to|as far as) the Roundabout. 
 
 The whole Roundabout has ground to a halt, with protesters walking in the street and in some places completely filling the road. But this is mostly a nuisance until I notice that there are a couple of teenagers handcuffed to a tree.
 
@@ -1095,7 +1091,7 @@ My apartment is that direction, but unless we have some reason to go there, it s
 > go to convenience
 /((We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short |quick)? )drive (over to|as far as|to) Tall Street. Then|(At|Once we get to) Tall Street) we pull easily into one of the available parking spots, since many people have now gone home.
 
-/(Then|After that) (we |we have a (brief|quick|short) |we make the( brief| quick| short)? |it's a( brief| quick| short)? )(walk|hike).
+/(Then|After that|Next) (we |we have a (brief|quick|short) |we make the( brief| quick| short)? |it's a( brief| quick| short)? )(walk|hike).
 
 Public Convenience
 There are just the two toilet stalls and a couple of sinks, but the place has been kept up reasonably well, if one doesn't count the graffiti.
@@ -1379,7 +1375,7 @@ My bathroom window remains vulnerably open.
 Babel Café
 Through many changes of management, this institution has fed the denizens of the university and ignored their semi-sedition.
 
-A clerk in a white apron stands behind the long glass case. In the long glass case are a pocket-bread and a honey pastry triangle. 
+/A clerk in a white apron stands behind the long glass case. (In the long glass case|There) are a pocket-bread and a honey pastry triangle( in the long glass case)?.
 
 The tables are square wooden things painted dark blue (not the vibrant blue of the Bureau, but something closer to midnight), and the upper surfaces are découpaged with antique travel postcards. 
 
@@ -1433,7 +1429,7 @@ I can, in fact, imagine the implications, probably a little better than she woul
 
 "That's where people like you come in," she admits, with a sweet little smile.
 
-/She (watches us with interest|touches our arm). "The next few months are critical to our operation," the activist says. "We need to be able to blitz multiple countries simultaneously with an intense and outrageous advertising campaign that will garner further media coverage from news sources and provoke discussion on the internet and in the workplace. But in order to do that, we need the funding to place high profile advertisements in a variety of places. That's why donations from people like yourself are going to be so very necessary."
+/She (watches us with interest|touches our arm|channels all her rhetorical power through her eyebrows, which rise towards her hairline at moments of greatest earnestness). "The next few months are critical to our operation," the activist says. "We need to be able to blitz multiple countries simultaneously with an intense and outrageous advertising campaign that will garner further media coverage from news sources and provoke discussion on the internet and in the workplace. But in order to do that, we need the funding to place high profile advertisements in a variety of places. That's why donations from people like yourself are going to be so very necessary."
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) donate.
 
@@ -1619,7 +1615,7 @@ She steps inside.
 Language Studies Seminar Room
 They recently redid this room, and whoever picked the decorations had postmodern tastes.
 
-Professor Higgate waits a little absent-mindedly nearby, looking over the bookshelf. There are History of the Standards Revolution and Lives of the Lexicographers on the bookshelf. 
+/Professor Higgate waits a little absent-mindedly nearby, looking over the bookshelf. (There|On the bookshelf) are History of the Standards Revolution and Lives of the Lexicographers( on the bookshelf)?.
 
 /A massive plexiglas case takes up one corner of the room. (There is|The plexiglas case contains) a compact but high-powered late model synthesizer( in the plexiglas case)?. 
 
@@ -1797,7 +1793,7 @@ Long Street is lined on each side with a double-row of tall, anemic palm trees t
 
 /Someone has left a shopping bag at the roadside — maybe by accident when loading up a car, maybe because they mean to come back for it. (In the|The) shopping bag (contains|are) a ball and a jigsaw( in the shopping bag)?.
 
-/Our car( — which might better be described as a covered bicycle —)? is parked nearby. 
+/Our car (— (a sub-sub-compact that looks like it might be outraced by a kid on a scooter|which might better be described as a covered bicycle) — )?is parked nearby.
 
 We can go north, south to Palm Square, and west to Arbot Maps & Antiques from here.
 
@@ -1871,12 +1867,12 @@ Then it's over. We put the key into the synthesizer.
 There is a continuous angry whine from the jigsaw.
 
 > find car
-/(We |We have a (brief|quick) |We make the( brief| quick)? |It's a( brief| quick)? )(walk|hike).
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike).
 
 Long Street South
 Long Street is lined on each side with a double-row of tall, anemic palm trees that bend towards one another many feet overhead. We are now in the southern part of this long corridor, between the Canadian Embassy and Arbot Maps & Antiques.
 
-/Our car( — a sub-sub-compact that looks like it might be outraced by a kid on a scooter —)? is parked nearby. 
+/Our car (— (a sub-sub-compact that looks like it might be outraced by a kid on a scooter|which might better be described as a covered bicycle) — )?is parked nearby.
 
 We can go north, south to Palm Square, and west to Arbot Maps & Antiques from here.
 
@@ -1888,7 +1884,7 @@ We dip out a pea-sized quantity of gel and rub it gently onto the car. With an a
 There is a continuous angry whine from the jigsaw.
 
 > wave h-remover at chard
-/We reset the device to h. The chard gives way to the card. This time it's (Strength. A young nude lady lounges in the embrace of a giant squid. They are apparently on very good terms.|Justice. A woman in a blue dress sits on a throne. She carries a letter-remover in one hand and her eyes are blind-folded.|the Tower. It represents the Tower of Babel being struck by lightning. The top of the tower is falling over, and terrified builders run in every direction. In Atlantean terms it is the end of the world.)
+/We reset the device to h. The chard gives way to the card. This time it's (Strength. A young nude lady lounges in the embrace of a giant squid. They are apparently on very good terms|Justice. A woman in a blue dress sits on a throne. She carries a letter-remover in one hand and her eyes are blind-folded|the Tower. It represents the Tower of Babel being struck by lightning. The top of the tower is falling over, and terrified builders run in every direction. In Atlantean terms it is the end of the world|Temperance. An official-looking man is operating a gigantic synthesizer. Out of its bottom fall a flood of oxymoronic figures: a dwarf elephant, a giant mouse, a bittersweet cake).
 
 There is a continuous angry whine from the jigsaw.
 
@@ -2026,7 +2022,7 @@ There is a continuous angry whine from the jigsaw.
 A glowing series of numbers and figures in the air, which changes and flickers now and then. Probably responding to its surroundings. It seems unstable just now.
 
 > go to rectification room
-/(We |We have a (brief|quick) |We make the( brief| quick)? |It's a( brief| quick)? )(walk|hike) (as far as|over to|to) Samuel Johnson Basement. The jigsaw does make noise, but you figure we should leave it out here in the hallway so that it will be louder than whatever we do in the room.
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) (as far as|over to|to) Samuel Johnson Basement. The jigsaw does make noise, but you figure we should leave it out here in the hallway so that it will be louder than whatever we do in the room.
 
 
 Samuel Johnson Basement
@@ -2182,7 +2178,7 @@ They recently redid this room, and whoever picked the decorations had postmodern
 
 /The bookshelves lining the walls contain the department library. (There|On the bookshelf) are The Problem of Adjectives, History of the Standards Revolution, and Lives of the Lexicographers( on the bookshelf)?. 
 
-/A massive plexiglas case takes up one corner of the room. (There is|The plexiglas case contains) a compact but high-powered late model synthesizer( in the plexiglas case)?. 
+/A massive plexiglas case takes up one corner of the room. (There is|The plexiglas case contains|In the plexiglas case is) a compact but high-powered late model synthesizer( in the plexiglas case)?. 
 
 The big table at the center of the room is an irregular polygon, with one chair pushed up to the shortest side. 
 
