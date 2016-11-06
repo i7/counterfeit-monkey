@@ -840,8 +840,8 @@ Instead of giving a fuel-like thing to the mechanic:
 
 whether the fuel seems interesting is an unlisted demonstration quip.
 	It mentions gas and fuel.
-	The comment is "[demonstration of a random fuel-like thing enclosed by location]".
-	The reply is "He takes a look at [the random fuel-like thing enclosed by location]. [one of]'Should work,' he says.[or]'I don't think you need my help with that.'[stopping]".
+	The comment is "[if there is an unfueled car in location]'Could you help me with this?,' we ask, indicating [the random fuel-like thing enclosed by location].[otherwise][demonstration of a random fuel-like thing enclosed by location][end if]".
+	The reply is "[if there is an unfueled car in location]'Just pour it in,' he says.[otherwise]'Looks useful,' he says. 'You better hang onto that.'[end if]".
 	It quip-supplies the mechanic.
 	It is repeatable.
 
