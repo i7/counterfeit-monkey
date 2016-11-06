@@ -477,7 +477,7 @@ Strength	""	"A young nude lady lounges in the embrace of a giant squid. They are
 Tower	"the "	"It represents the Tower of Babel being struck by lightning. The top of the tower is falling over, and terrified builders run in every direction. In Atlantean terms it is the end of the world"
 Fool	"the "	"A shiftless young woman is carrying a loaded backpack, striding across a sunny landscape"
 Twins	"the "	"They're male and female. A floating, sky-born figure above them is either choosing one or about to shoot one: it's hard to know what to make of the pointer or arrow it wields"
-Temperance	""	"An official-looking man is operating a gigantic synthes[ize]r. Out of its bottom fall a flood of oxymoronic figures: a dwarf elephant, a giant mouse, a bittersweet cake."
+Temperance	""	"An official-looking man is operating a gigantic synthes[ize]r. Out of its bottom fall a flood of oxymoronic figures: a dwarf elephant, a giant mouse, a bittersweet cake"
 
 The description of the card is "Not a playing card, as I might have expected, or a calling card, or even an index card, but a Tarot card, representing [article of (card-style of the card)][card-style of the card]. [image of the card-style of the card]." The heft of the card is 1. Understand "tarot" as the card. [Rule for printing the name of the card while asking which do you mean: say "Tarot card".]
 	The card has a card-style.
