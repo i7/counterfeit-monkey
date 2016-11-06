@@ -666,17 +666,13 @@ The mechanic nods at us.
 
 The snapping continues.
 
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask why the car does not run.
-
 > talk to mechanic
-/We (say hi|return the greeting).
+/We (say hi|return the greeting|wave).
 
 The snapping continues.
 
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask why the car does not run.
-
 > ask mechanic about car
-"There appears to be something wrong with my car," you tell the mechanic.
+We indicate the car with gestures.
 
 He has the somewhat cow-like expression of all fake people, but he nods gravely and has a look. "It hasn't been maintained," he says, on inspection. "You got any motor oil?"
 
@@ -747,7 +743,7 @@ We close the backpack.
 > go to counterfeit monkey
 I don't think there's anything showing that should get us into trouble. Timidly we open the door; the Authenticator has her back to us. We slip out. She makes one more turn in place — monocled gaze sliding across us without stopping — and then she strides away to the north.
 
-/We (have a quick walk|hike) through the marina district. 
+/(We have|It's) a quick walk|hike through the marina district. 
 
 Counterfeit Monkey
 It takes a minute for us to adjust to the light in here. Built when people were a bit shorter and ceilings were a bit lower, the Counterfeit Monkey is always smoky and never well lit, even in the middle of the day.
@@ -777,7 +773,7 @@ The snapping continues.
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether he has seen Slango.
 
 > go to outdoor
-/(It's a short|We make the) walk through the marina district. 
+/(It's a short|We make the|We) walk through the marina district. 
 
 Outdoor Café
 From this slightly raised terrace, tourists have a view of the activity in the market and out over the docks.
@@ -820,7 +816,7 @@ He heads into the interior of the café.
 The snapping continues.
 
 > go to counterfeit monkey
-/(It's a brief|We make the) walk through the marina district. 
+/(It's a brief|We make the)( short)? walk through the marina district. 
 
 Counterfeit Monkey
 Infamously this pub was raided in 1929, the year that the Bureau developed its first meager attempt at an Authentication Scope, and dozens of smugglers and fraudulent businessmen went to jail. But neither that raid nor subsequent scrutiny has ever shut the place down entirely. Built when people were a bit shorter and ceilings were a bit lower, the Counterfeit Monkey is always smoky and never well lit, even in the middle of the day.
@@ -836,7 +832,7 @@ The snapping continues.
 You have a fleeting thought of your crew's attitude to Atlantis law.
 
 > talk to barman
-/We (nod|smile).
+/We (nod|smile|return the greeting).
 
 The snapping continues.
 
@@ -913,7 +909,7 @@ The snapping continues.
 > put gel on sill
 We dip out a pea-sized quantity of gel and rub it gently onto the sill. With an audible SPLORT, the sill becomes a spill. 
 
-/The spill drips (out of our hands|through our fingers onto the ground).
+/The spill(, true to its nature,)? (drips |leaks )(out of our hands |through our fingers |out )?onto the ground.
 
 The snapping continues.
 
@@ -970,7 +966,7 @@ The snapping continues.
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether he has any other games going.
 
 > go to tin hut
-/We (make the short|have a brief) hike through the marina district. 
+/We (make the|have a) (short|brief) (hike|walk) through the marina district. 
 
 Tin Hut
 Most of the light in here comes from circular windows punched into the tin walls just under the ceiling. From the inside, the building looks both larger and more sound than it appears from outside: there are plenty of sturdy struts supporting the roof and keeping the walls upright.
@@ -1071,7 +1067,9 @@ The snapping continues.
 
 Aha. She wants us to prove our identity; probably has contraband that needs concealing, and wants us to do the deed as proof of trustworthiness.
 
-There's a brief pause. Lena goes off into a corner and rummages among the suspicious piles of books, and uncovers a box. "C'mere," she says; and obediently I wander over to that area of the store, which incidentally happens to be tucked away and half-hidden by shelves.
+/(There's a brief pause.)?
+
+/(There's a brief pause. )?Lena goes off into a corner and rummages among the suspicious piles of books, and uncovers a box. "C'mere," she says; and obediently I wander over to that area of the store, which incidentally happens to be tucked away and half-hidden by shelves.
 
 "See here," she says. "See what you can do with it, eh?"
 
@@ -1133,7 +1131,7 @@ The snapping continues.
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) calm Lena.
 
 > wave p-remover at preamp
-We reset the device to p. There is a smell of anise, and the preamp turns into a ream. One ream, which is to say 500 sheets, of generic printer or copier paper, in white-white.
+/We reset the device to p. There is a [a-z \-]+, and the preamp turns into a ream. One ream, which is to say 500 sheets, of generic printer or copier paper, in white-white.
 
 "That works. Kind of thing I might have around for printing invoices on. I was a little afraid there you were going to go for a ram just to spite me. Don't know where I'd put one of those around here."
 
@@ -1191,7 +1189,7 @@ The snapping continues.
 > go to counterfeit monkey
 "This would be a good time to stop for lunch and a little siesta," says Lena, following us to the door. As we go out, she's rolling down the shades and putting up a closed sign.
 
-/We make the (quick)? walk through the marina district. 
+/We (make the|have a)( quick)? (walk|hike) through the marina district. 
 
 Counterfeit Monkey
 Built when people were a bit shorter and ceilings were a bit lower, the Counterfeit Monkey is always smoky and never well lit, even in the middle of the day.
@@ -1302,7 +1300,7 @@ Immediately west, the Counterfeit Monkey's sign sways in the wind.
 The snapping continues.
 
 > go to convenience
-/(We have a quick|It's a short) drive through the marina district (to|as far as) the Roundabout. 
+/(We have a quick|It's a short|We) drive through the marina district (over to|to|as far as) the Roundabout. 
 
 The whole Roundabout has ground to a halt, with protesters walking in the street and in some places completely filling the road. But this is mostly a nuisance until I notice that there are a couple of teenagers handcuffed to a tree.
 
@@ -1398,7 +1396,7 @@ The traffic flows in a tight circle around a statue which we know all too well.
 
 Confusing signs point in various directions: northeast to Deep Street, northwest to High Street, south to Long Street, east to Tall Street.
 
-Hey, mind the truck!
+/(Hey, mind the truck!)?
 
 The snapping continues.
 
@@ -1406,9 +1404,9 @@ The snapping continues.
 My apartment is that direction, but unless we have some reason to go there, it seems least suspicious to avoid my old neighborhood.
 
 > go to convenience
-/(It's a short drive to Tall Street. Then|At Tall Street) we pull easily into one of the available parking spots, since many people have now gone home.
+/((It's a|We make the) (short|brief)? drive to Tall Street. Then|At Tall Street|There) we pull easily into one of the available parking spots, since many people have now gone home.
 
-/Then we make the (hike|walk). 
+/(Then|Next) we (make the|have a) (brief |short )?(hike|walk). 
 
 Public Convenience
 There are just the two toilet stalls and a couple of sinks, but the place has been kept up reasonably well, if one doesn't count the graffiti.
@@ -1465,7 +1463,7 @@ The snapping continues.
 The snapping continues.
 
 > go to rotunda
-/We( have a brief)? walk. 
+/We( have a (brief|short|quick))? (walk|hike). 
 
 Rotunda
 Echoing space, marble floor, eye-like skylight many meters above us: so far, the Rotunda might belong to any 19th-century government bureau of means and self-importance.
@@ -1474,7 +1472,7 @@ What sets this one apart is the lettering, each sigil no bigger than a flea, car
 
 We don't, of course. There are better things to do. More important places to go. The administrative part of the bureau is away to the south, and there is an exhibit of letter tools to the east, which is open to the public.
 
-/Near the street entrance is a sizable informational bulletin-board advertising the services of the Bureau; and next to this, pushed back to be out of the way, is a bin. (The bin contains a shuttle|There is a shuttle in the bin). 
+/Near the street entrance is a sizable informational bulletin-board advertising the services of the Bureau; and next to this, pushed back to be out of the way, is a bin. (The bin contains a shuttle|There is a shuttle in the bin|In the bin is a shuttle). 
 
 The snapping continues.
 
@@ -1484,7 +1482,7 @@ The snapping continues.
 The snapping continues.
 
 > go to antiques
-/(It's a short|We have a brief) drive away from the Bureau and back into the streets( over )? to Long Street South. (There|Then) we pull easily into one of the available parking spots, since many people have now gone home.
+/((It's a short|We have a brief) drive away from the Bureau and back into the streets( over )? to Long Street South. (There|Then)|Once we get to Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
 
 We show the appointment card, and are let in.
 
@@ -1527,7 +1525,7 @@ The snapping continues.
 > go to drinks club
 /(Once we get to|At) Long Street North we pull easily into one of the available parking spots, since many people have now gone home.
 
-/(Then it's a short|From there we) hike. 
+/(Then|From there) (it's a|we make the( short| brief| quick)?|we) (walk|hike). 
 
 Fleur d'Or Drinks Club
 The back wall is dramatically decorated with bottled liquors of all sorts, from gin to cachaça; there's a giant bottle of Campari, taller than your average three-year-old, with a red ribbon around its neck.
@@ -1581,7 +1579,7 @@ I think I know where we can get one, though. My advisor Professor Waterstone —
 [Your score has gone up by three points and is now forty-five.]
 
 > go to palm square
-/(We make the quick drive as far as|We make the brief drive over to) Long Street South. Then we pull easily into one of the available parking spots, since many people have now gone home.
+/We make the( quick| brief)? drive (as far as|over to) Long Street South. (Then|There) we pull easily into one of the available parking spots, since many people have now gone home.
 
 Palm Square
 Now this is my part of town: Palm Square is the beginning of the university district. To the southeast, through the iron gate, is the university campus proper; and that unobtrusive little doorway directly south of us leads into the Babel Café.
@@ -1749,7 +1747,7 @@ The snapping continues.
 Babel Café
 Through many changes of management, this institution has fed the denizens of the university and ignored their semi-sedition.
 
-A clerk in a white apron stands behind the long glass case. In the long glass case are a pocket-bread, a wrap, and a honey pastry triangle. 
+/A clerk in a white apron stands behind the long glass case. (In the long glass case|There) are a pocket-bread, a wrap, and a honey pastry triangle( in the long glass case)?. 
 
 The tables are square wooden things painted dark blue (not the vibrant blue of the Bureau, but something closer to midnight), and the upper surfaces are découpaged with antique travel postcards. 
 
@@ -1815,7 +1813,7 @@ The snapping continues.
 
 "That's where people like you come in," she admits, with a sweet little smile.
 
-She channels all her rhetorical power through her eyebrows, which rise towards her hairline at moments of greatest earnestness. "The next few months are critical to our operation," the activist says. "We need to be able to blitz multiple countries simultaneously with an intense and outrageous advertising campaign that will garner further media coverage from news sources and provoke discussion on the internet and in the workplace. But in order to do that, we need the funding to place high profile advertisements in a variety of places. That's why donations from people like yourself are going to be so very necessary."
+/(She channels all her rhetorical power through her eyebrows, which rise towards her hairline at moments of greatest earnestness|She watches us with interest). "The next few months are critical to our operation," the activist says. "We need to be able to blitz multiple countries simultaneously with an intense and outrageous advertising campaign that will garner further media coverage from news sources and provoke discussion on the internet and in the workplace. But in order to do that, we need the funding to place high profile advertisements in a variety of places. That's why donations from people like yourself are going to be so very necessary."
 
 The snapping continues.
 
@@ -1907,7 +1905,7 @@ We pull up on the little catch and draw the drawer out. It's empty.
 The snapping continues.
 
 > go to graduate student
-/(We |We have a (brief|quick) |We make the( brief| quick)? |It's a( brief| quick)? )(walk|hike).
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike).
 
 Graduate Student Office
 A small windowless room divided into cubicles for individual graduate students.
@@ -1946,7 +1944,7 @@ We reset the device to c. The cream gives way to the now-familiar ream.
 The snapping continues.
 
 > go to language studies department office
-/It's a quick (hike|walk). 
+/(It's|We have) a (quick|brief) (hike|walk). 
 
 Language Studies Department Office
 This big, slightly drab area holds such useful objects as the mailboxes and the secretary's computer. On ordinary days the secretary would be in as well, presiding over affairs. The offices of individual professors lie north and west, though the north door is closed.
@@ -2079,7 +2077,7 @@ The snapping continues.
 [Your score has gone up by two points and is now fifty.]
 
 > go to brown's lab
-/We ((make the )?walk|have a brief hike). 
+/(We (make the |have a)?|It's a)( short| brief)? walk|hike. 
 
 Brown's Lab
 Professor Brown, the Reification of Abstracts researcher, is hunched over his work table. Brown is only barely a professor at all — actually, his working title is Senior Lecturer, and he holds a yearly contract which the University has the option to renew at whim. This prevents him going elsewhere while ensuring that he never has a fully-funded lab of his own. All the electrical equipment down here is tinker-toys compared to the stuff he really wants; in fact, half of it he built himself with components he bought with his own money.
@@ -2188,7 +2186,7 @@ The snapping continues.
 I don't know what you think you're talking about, because we can't see any such thing here.
 
 > go to oval
-/(We |We have a (brief|quick) |We make the( brief| quick)? |It's a( brief| quick)? )(walk|hike).
+/(We |We have a|We make the|It's a)( brief| quick| short) (walk|hike).
 
 University Oval
 This is the center of the university, a broad grassy oval shaded with sycamore trees and surrounded by buildings in brick or white stone.
@@ -2241,7 +2239,7 @@ Dank and malodorous: there are no windows down here, and the drainage is terribl
 
 The stairs up are here; the lecture room at the east. Immediately south is the Graduate Student Office, and southwest is Professor Brown's office. The most interesting of all is the small door west, trying to look inconspicuous, but locked with a keycard lock: it's where the department stores its most dangerous licensed equipment.
 
-A large open carton stands against the wall right between Brown's lab door and the interesting door. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." There is a banana in the large carton. 
+/A large open carton stands against the wall right between Brown's lab door and the interesting door. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." (There is a banana in the large carton|The large carton contains a banana). 
 
 The snapping continues.
 
@@ -2279,7 +2277,7 @@ What makes this place technically a drinks club rather than a bar is its license
 
 The bartender and Mark are still talking about the homonym paddle. The other patrons are scattered around the room at small tables, drinking or talking among themselves. 
 
-"Hi," the bartender says.
+/"(Hi|Hello)," the bartender says.
 
 "That was a little dangerous, wasn't it?" Mark asks. "If you had tapped me with that thing, wouldn't I be a giant X on the carpet now?"
 
@@ -2368,9 +2366,9 @@ The snapping continues.
 Long Street South
 Long Street is lined on each side with a double-row of tall, anemic palm trees that bend towards one another many feet overhead. We are now in the southern part of this long corridor, between the Canadian Embassy and Arbot Maps & Antiques.
 
-Someone has left a shopping bag at the roadside — maybe by accident when loading up a car, maybe because they mean to come back for it. In the shopping bag are a ball and a jigsaw. 
+/Someone has left a shopping bag at the roadside — maybe by accident when loading up a car, maybe because they mean to come back for it. (In the|The) shopping bag (are|contains) a ball and a jigsaw. 
 
-/Our car (— a sub-sub-compact that looks like it might be outraced by a kid on a scooter — )?is parked nearby. 
+/Our car (— (a sub-sub-compact that looks like it might be outraced by a kid on a scooter|which might better be described as a covered bicycle) — )?is parked nearby. 
 
 We can go north, south to Palm Square, and west to Arbot Maps & Antiques from here.
 
@@ -2382,7 +2380,7 @@ We dip out a pea-sized quantity of gel and rub it gently onto the car. With an a
 The snapping continues.
 
 > wave h-remover at chard
-/We reset the device to h. The chard gives way to the card. This time it's (Justice. A woman in a blue dress sits on a throne. She carries a letter-remover in one hand and her eyes are blind-folded|the Fool. A shiftless young woman is carrying a loaded backpack, striding across a sunny landscape).
+/We reset the device to h. The chard gives way to the card. This time it's (Justice. A woman in a blue dress sits on a throne. She carries a letter-remover in one hand and her eyes are blind-folded|the Fool. A shiftless young woman is carrying a loaded backpack, striding across a sunny landscape|the Twins. They're male and female. A floating, sky-born figure above them is either choosing one or about to shoot one: it's hard to know what to make of the pointer or arrow it wield).
 
 The snapping continues.
 
@@ -2392,7 +2390,7 @@ The snapping continues.
 The snapping continues.
 
 > go to seminar room
-/(We |We have a (brief|quick) |We make the( brief| quick)? |It's a( brief| quick)? )(walk|hike).
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike).
 
 Language Studies Seminar Room
 They recently redid this room, and whoever picked the decorations had postmodern tastes.
@@ -2436,7 +2434,7 @@ The snapping continues.
 [Your score has gone up by three points and is now fifty-seven.]
 
 > go to samuel johnson basement
-/(We |We have a (brief|quick) |We make the( brief| quick)? |It's a( brief| quick)? )(walk|hike).
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike).
 
 Samuel Johnson Basement
 Dank and malodorous: there are no windows down here, and the drainage is terrible.
@@ -2722,7 +2720,7 @@ We dip out a pea-sized quantity of gel and rub it gently onto the otter. With an
 The snapping continues.
 
 > go to winding path
-/(We |We have a (lengthy|long) |We make the( lengthy| long)? |It's a( lengthy| long)? )(walk|hike) out from under the sycamores in the Oval and up Long Street (over to|as far as) the Monumental Staircase. From there we have an invigorating climb up, with the view of the sea getting better and better as we go \(but of course looking requires stopping to gaze back over our shoulder\).
+/(We |We have a (rather tiring|lengthy|long) |We make the( rather tiring| lengthy| long)? |It's a( rather tiring| lengthy| long)? )(walk|hike) out from under the sycamores in the Oval and up Long Street (over to|as far as) the Monumental Staircase. From there we have an invigorating climb up, with the view of the sea getting better and better as we go \(but of course looking requires stopping to gaze back over our shoulder\).
 
 We walk through the wealthy neighborhood to Roget Close. There we slip between the houses and down a path that looks as though it might lead to someone's back yard. No one has ever put up signage to correct this misapprehension because no one who lives around here is eager to encourage strangers on the private beach.
 
@@ -2776,7 +2774,7 @@ We put the bin on the pedestal.
 
 The mirror rotates in leisurely fashion, and when it is done there is a nib.
 
-Just the very end of an expensive fountain pen, the sort of thing important men used a hundred years ago. Something much like this must have been used on all those notes that went into composing the New Orthodox Othography.
+Just the very end of an expensive fountain pen, the sort of thing important men used a hundred years ago. Something much like this must have been used on all those notes that went into composing the New Orthodox Orthography.
 
 The snapping continues.
 
@@ -2855,7 +2853,7 @@ We scoop the peacock into our arms.
 /(The peacock ruffles its many feathers.)?
 
 > go to department office
-/(We |We have a (brief|quick|short) |We make the( brief| quick | short)? |It's a( brief| quick| short)? )(walk|hike).
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike).
 
 Language Studies Department Office
 This big, slightly drab area holds such useful objects as the mailboxes and the secretary's computer. On ordinary days the secretary would be in as well, presiding over affairs. The offices of individual professors lie north and west, though both doors are closed.
@@ -2881,7 +2879,7 @@ And he pops back out.
 > z
 Time passes.
 
-The snapping continues.
+/(The snapping continues|The peacock ruffles its many feathers).
 
 > get invitation
 /We (take|get|pick up|acquire) the invitation. It is a white card, like a wedding invitation, with swirly script lettering. "You are invited," it says, "to a demonstration of a new T-inserter not available to the general public — Serial Comma Day — Bureau of Orthography."
@@ -2957,7 +2955,7 @@ We reset the device to y. The sticky gives way to the now-familiar stick.
 The snapping continues.
 
 > go to tall street
-/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) to University Oval.
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) (over )?to University Oval.
 
 University Oval
 This is the center of the university, a broad grassy oval shaded with sycamore trees and surrounded by buildings in brick or white stone.
@@ -3098,16 +3096,16 @@ The snapping continues.
 > blindfold me with swatch
 We've already got the swatch tied over our eyes.
 
-/(Another child takes a whack at the hanging figure. She bounces away from the blow, but does not break.|Among a general rumble of assent, one of the fathers gives Atlantida a hard smack with a baseball bat. She doesn't crack.|The next child doesn't seem to have been properly blindfolded and connects with surprising dexterity and sureness, but the thing doesn't break.|The latest child's attack swings wide of the figure.)
-
 The snapping continues.
+
+/(Another child takes a whack at the hanging figure. She bounces away from the blow, but does not break.|Among a general rumble of assent, one of the fathers gives Atlantida a hard smack with a baseball bat. She doesn't crack.|The next child doesn't seem to have been properly blindfolded and connects with surprising dexterity and sureness, but the thing doesn't break.|The latest child's attack swings wide of the figure.)
 
 > take off swatch
 We take off the swatch.
 
-/(Another child takes a whack at the hanging figure. She bounces away from the blow, but does not break.|Among a general rumble of assent, one of the fathers gives Atlantida a hard smack with a baseball bat. She doesn't crack.|The next child doesn't seem to have been properly blindfolded and connects with surprising dexterity and sureness, but the thing doesn't break.|The latest child's attack swings wide of the figure.)
-
 The snapping continues.
+
+/(Another child takes a whack at the hanging figure. She bounces away from the blow, but does not break.|Among a general rumble of assent, one of the fathers gives Atlantida a hard smack with a baseball bat. She doesn't crack.|The next child doesn't seem to have been properly blindfolded and connects with surprising dexterity and sureness, but the thing doesn't break.|The latest child's attack swings wide of the figure.)?
 
 > wear swatch as a blindfold
 We tie the swatch over our eyes. To be honest, it only partially obscures our vision; we still have a pretty good idea where everything is.
@@ -3158,7 +3156,7 @@ There is a distant roar like a hissing dragon.
 
 The snapping continues.
 
-/(You are reminded|You have a fleeting thought) of your crew's skill.
+/(You are reminded|You have a fleeting thought|Something makes you think) of your crew's skill.
 
 > put all in backpack
 word: Done.
@@ -3180,7 +3178,7 @@ The sky is temporarily very quiet.
 The snapping continues.
 
 > find synthesizer
-/(We |We have a fair |We make the ( fair)? |It's a( fair)? )(walk|hike).
+/(We |We have a (fair|healthy) |We make the ( fair| healthy)? |It's a( fair| healthy)? )(walk|hike).
 
 Language Studies Seminar Room
 They recently redid this room, and whoever picked the decorations had postmodern tastes.
@@ -3234,7 +3232,7 @@ The snapping continues.
 /(I can't see what you're talking about|Maybe that means something different to you, but I can't see any such thing).
 
 > go to abandoned park
-/(We |We have a (long|lenghty) |We make the ( long| lenghty)? |It's a( long| lenghty)? )(walk|hike) out from under the sycamores in the Oval and up Long Street. 
+/(We |We have a (rather tiring|long|lenghty) |We make the ( rather tiring| long| lenghty)? |It's a( rather tiring| long| lenghty)? )(walk|hike) out from under the sycamores in the Oval and up Long Street. 
 
 Abandoned Park
 In contrast with the parks in the more savory parts of town, this is a bit of patchy grass where local dogs occasionally come out to do their business. A granite war memorial is fixed at the center.
@@ -3536,7 +3534,8 @@ The flickering images represent a period of time spent in the military: a young 
 > wave s-remover at stint
 /We reset the device to s. There is a [a-z \-]+, and the stint turns into a tint. A [a-z]+ shade of [a-z]+, as though someone had watercolored that bit of air.
 
-/He (runs a hand over the brass plate|pauses, listening for noises outside). ("Next it would be good to see if this thing can build animates."|"If it can't do animates, that might be down to a legal restriction, of course, rather than a technical one, but I imagine that they'd be demo'ing a fully-capable product in this context.")
+/(He (runs a hand over the brass plate|pauses, listening for noises outside). ("Next it would be good to see if this thing can build animates."|"If it can't do animates, that might be down to a legal restriction, of course, rather than a technical one, but I imagine that they'd be demo'ing a fully-capable product in this context.")|He's looking at us, but when I look back, he cuts his eyes away. I look away again.)
+
 
 > wave n-remover at tint
 We reset the device to n. With a distinct whiff of fresh air, the tint turns into a tit. A small, harmless-looking bird.
@@ -3566,17 +3565,17 @@ A small, harmless-looking bird.
 
 "No problem creating creatures," Brock says judiciously.
 
-/(The tit stares at us.|He's looking at us, but when I look back, he cuts his eyes away. )("If any guards come, we can use the tit as a decoy," Brock remarks.)?
+/(The tit stares at us. |He's looking at us, but when I look back, he cuts his eyes away. |He watches us with a slightly disturbing intentness in his eyes.)("If any guards come, we can use the tit as a decoy," Brock remarks.|Brock steps to the side to make room for the tit.)?
 
 The tit clambers out of the T-inserter machine.
 
 > get tit
 We scoop the tit into our arms.
 
-He stands back, regarding the T-inserter thoughtfully. "As our next trick we need to look at the stabilization performance," Brock says. "Inserters sometimes run into trouble if there's a case where the same base word could be expanded to multiple derivatives — for instance, if you S-inserted CREAM, it wouldn't know whether to make CREAMS or SCREAM or SCREAMS."
+/(He stands back, regarding the T-inserter thoughtfully. "As our next trick we need to look at the stabilization performance," Brock says. "Inserters sometimes run into trouble if there's a case where the same base word could be expanded to multiple derivatives — for instance, if you S-inserted CREAM, it wouldn't know whether to make CREAMS or SCREAM or SCREAMS.")?
 
 > wave t-remover at tit
-There is a lavender cloud, and the tit turns into an I. It's an abstract that looks like a bit of mirror. When I look at it I see Alex, my proper self, and not just restored to my usual body, but photo-retouched to be that bit smarter and freer of skin-blemishes, well-dressed. It's like looking in the mirror at reality as it should be.
+/There is a [a-z\- ]+, and the tit turns into an I. It's an abstract that looks like a bit of mirror. When I look at it I see Alex, my proper self, and not just restored to my usual body, but photo-retouched to be that bit smarter and freer of skin-blemishes, well-dressed. It's like looking in the mirror at reality as it should be.
 
 > put i in t-inserter
 There is a loud and satisfying pop from the machine as it turns the I into an it. There now: the T-inserter has constructed both tit and it. Not very stable, it seems. Slango will be interested to know that.
@@ -3623,7 +3622,7 @@ He's wearing his ordinary work clothes, but he looks strained to the point of fr
 
 He sighs. Not deceived even a little; weary that we tried.
 
-/(We all say nothing for a moment. |Footsteps sound far away down the hall, but no one comes this way. )?"I didn't tell your mother what I suspected, but when it comes out you've… defected… I won't be able to keep this from her. And you're giving up your career. Mine too, possibly; we'll all be under suspicion, I suppose.
+/((We all say nothing for a moment. |Footsteps sound far away down the hall, but no one comes this way. )?"I didn't tell your mother what I suspected, but when it comes out you've… defected… I won't be able to keep this from her. And you're giving up your career. Mine too, possibly; we'll all be under suspicion, I suppose.)?
 
 "It's pointless. You could have done a great deal for the Bureau from within. I was trying to help you see that."
 
@@ -3634,9 +3633,7 @@ He sighs. Not deceived even a little; weary that we tried.
 
 "You mean you don't see my work as important," he says. "Got that from your mother, I imagine."
 
-No one speaks for a moment. The silence is almost eerie.
-
-"So your partners in crime are, what, smugglers? Industrial saboteurs? That's wonderful. Finally some role models."
+/((We all say nothing for a moment. )?"So your partners in crime are, what, smugglers? Industrial saboteurs? That's wonderful. Finally some role models.")?
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) quibble or deny being a spy.
 
@@ -3738,7 +3735,7 @@ The functional area continues to the south, and the hallway is west.
 > put pass in punch
 I put the pass into the wire basket of the umlaut punch. There is a hum as the punch warms up, then a bang! as the tines come down sharply, tattooing the pass.
 
-/Briefly the pass appears as the art metal band Päss, before fading back to itself: there just isn't enough energy to hold the conversion, given Päss's weak (name-recognition|reputation). (They never really got out of their parents' basement.|They haven't been playing many clubs lately.)
+/Briefly the pass appears as the (art|thrash) metal band Päss, before fading back to itself: there just isn't enough energy to hold the conversion, given Päss's weak (name-recognition|reputation). (They never really got out of their parents' basement.|They haven't been playing many clubs lately.)
 
 When they are gone, a power chord remains in the air.
 
@@ -3824,7 +3821,7 @@ I open the door, revealing a room beyond.
 Oracle Project
 This is nothing less than the command center for a massive propaganda campaign. Paintings of Atlantida and polling charts cover the walls, dating back to the second world war and continuing straight through to the present.
 
-There are a paperweight and an inciting fable on the long table. 
+/(There are a paperweight and an inciting fable on the long table|On the long table are a paperweight and an inciting fable). 
 
 I can go south to Wonderland and east from here.
 
@@ -4281,7 +4278,7 @@ A set of children's playing jacks. They are lined up, with curious precision, in
 /I reset the device to s. There is a [a-z \-]+, and the jacks turn into a jack. A heavy-duty jack, suitable for raising cars or other substantial objects.
 
 > go to workshop
-/I (walk|hike) (over to|as far as) Personal Apartment. There I try propping the portcullis with the jack.
+/I (walk|hike) (over to|as far as|to) Personal Apartment. There I try propping the portcullis with the jack.
 
 /(Then|Next|After that) (I |I have a (brief|quick|short) |I make the( brief| quick| short)? |it's a( brief| quick| short)? )(walk|hike).
 
@@ -4888,7 +4885,7 @@ The Workshop lies to the east. The door you came through is west, and there is a
 Oracle Project
 This is nothing less than the command center for a massive propaganda campaign. Paintings of Atlantida and polling charts cover the walls, dating back to the second world war and continuing straight through to the present.
 
-A filing cabinet stands in the corner. It rests on a long table, alongside a paperweight. 
+/A filing cabinet stands in the corner. It (rests|is) on a long table, alongside a paperweight. 
 
 You can go south to Wonderland and east to the Surveillance Room from here.
 
@@ -5317,9 +5314,9 @@ A set of children's playing jacks. They are lined up, with curious precision, in
 /You reset the device to s. There is a [a-z \-]+, and the jacks turn into a jack. A heavy-duty jack, suitable for raising cars or other substantial objects.
 
 > go to workshop
-/You (walk|hike) (over to|as far as) Personal Apartment. There you try propping the portcullis with the jack.
+/(You|It's a brief) (walk|hike) (over to|as far as|to) Personal Apartment. There you try propping the portcullis with the jack.
 
-/(Then|Next|After that) (you |you have a (brief|quick|short) |you make the( brief| quick| short)? |it's a( brief| quick| short)? )(walk|hike).
+/(Then|Next|After that|From there) (you |you have a (brief|quick|short) |you make the( brief| quick| short)? |it's a( brief| quick| short)? )(walk|hike).
 
 Workshop
 A room whose importance is obvious from how clean it is and how little furniture it is allowed to have.
@@ -5378,7 +5375,7 @@ Atlantida stands nearby, urging us to hurry out via the Private Solarium.
 
 A window in the north wall, cut out through the cliff face, gives a view of tranquil sea under a darkening sky. 
 
-Left on a coffee table (as though waiting for maid service) is a silver tray. There are a cloth napkin, some crumbs, and a dirty coffee cup on the silver tray. 
+/Left on a coffee table \(as though waiting for maid service\) is a silver tray. (On the silver tray|There) are a cloth napkin, some crumbs, and a dirty coffee cup( on the silver tray)?.
 
 /(There|On the chaise longue) is an ebook reader( on the chaise longue)?. 
 
