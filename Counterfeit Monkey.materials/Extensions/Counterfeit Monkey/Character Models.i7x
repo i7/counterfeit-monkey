@@ -166,7 +166,7 @@ Romance is a subject. Understand "love" or "smoochies" or "girlfriend" or "boyfr
 
 Security is a subject. Understand "men" or "law enforcement" or "police" as security.
 
-Transportation is a subject. Understand "transport" or "bus" or "buses" or "bus system" or "transit" or "transit system" or "car" or "rental car" or "auto" or "automobile" or "cars" or "autos" or "vehicles" or "automobiles" or "vehicle" as "[transit]". Understand "[transit]" as transportation.
+Transportation is a subject. Understand "transport" or "bus" or "buses" or "bus system" or "transit" or "transit system" or "rental car" or "auto" or "automobile" or "cars" or "autos" or "vehicles" or "automobiles" or "vehicle" as "[transit]". Understand "[transit]" as transportation.
 
 The environment is a subject. Understand "planet" as the environment.
 
@@ -340,13 +340,18 @@ mark-known	"That the patron's name is Mark."
 brock-found	"That the rock is really Brock."
 crime-bg	"That one of you is criminal."
 atlantean-bg	"That one of you is Atlantean."
+car-needed	"That we need a car."
+car-broken	"That the car does not run."
 
 A fact can be motivational or purposeless. A fact is usually purposeless. you-are-student, you-hit-on, you-are-tourist, you-are-possible-customer, you-are-past-customer, you-take-survey, you-are-feckless, you-are-dangerous are motivational.
 
 Assumption relates various quips to various facts. The verb to assume (it assumes, they assume, it assumed, it is assumed) implies the assumption relation.
 
-An availability rule for a quip (called the target) (this is the check assumptions requirements for quips rule):
-	if the target assumes a fact which is not known by the player, it is off-limits.
+An availability rule for a quip (called the target) (this is the check knowledge requirements for quips rule):
+	if a fact assumed by the target is not known by the player:
+		it is off-limits;
+	otherwise:
+		make no decision.
 
 Section 5 - Generic Response Types
 

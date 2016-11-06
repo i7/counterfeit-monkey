@@ -526,6 +526,10 @@ Carry out listing-all-plausibles:
 	repeat with I running from 1 to N:
 		say "[I]. [entry I in L][line break]".
 
+Understand "list known" as listing-known. Listing-known is an action out of world.
+Carry out listing-known:
+	follow the recap of known facts rule.
+
 Section 3 - Verifying Implementation Depth
 
 [These verbs run through lots of objects and systematically works them over to check for the full implementation of a certain feature.]
