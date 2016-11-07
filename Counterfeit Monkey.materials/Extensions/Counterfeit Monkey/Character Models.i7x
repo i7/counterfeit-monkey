@@ -106,7 +106,7 @@ To find a suitable interlocutor:
 		if how-many-people-here is 1:
 			try saying hello to entry 1 of people-present;
 		otherwise:
-			let L be { barman, bartender, Kate };
+			let L be { bartender, Slango, barman, Kate };
 			repeat with vip running through L:
 				if vip is in location:
 					try saying hello to vip;
