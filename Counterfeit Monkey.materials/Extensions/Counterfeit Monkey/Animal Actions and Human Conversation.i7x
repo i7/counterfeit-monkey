@@ -2037,6 +2037,9 @@ Finally he hangs up.
 He tears the ticket briskly into confetti, destroying all evidence of our crime, and points off to the west. 'The screening room is that way. Thank you and enjoy the show. It's not for a while, though.'"
 	It quip-supplies ticket-taker.
 
+[Get rid of an annoying parser clarification message]
+Understand "give [ticket] to [ticket-taker]" as giving it to.
+
 Carry out the ticket-taker discussing offer the ticket:
 	now the ticket is nowhere.
 
@@ -3523,16 +3526,6 @@ Setting action variables for giving something to the barman when play the game i
 	try showing the noun to the barman instead.
 
 Understand "choose [something]" as showing it to when play the game is the current quip.
-
-Rule for supplying a missing second noun while showing something to:
-	if the current interlocutor is something:
-		now the second noun is the current interlocutor;
-	otherwise if how-many-people-here is 1:
-		implicitly greet entry 1 of people-present;
-		now the second noun is entry 1 of people-present;
-	otherwise:
-		say "You must show [the noun] to someone specific.";
-		stop the action.
 
 Instead of showing something (called the item) to the barman when play the game is the current quip and the wager is yourself:
 	if the item is yourself:

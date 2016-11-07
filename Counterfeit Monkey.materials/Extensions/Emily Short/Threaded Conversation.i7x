@@ -674,21 +674,18 @@ Understand "ask about/for [something]" as object-asking. Object-asking is an act
 [Object-asking is meant as a catch-all for asking about unimplemented present things]
 
 Carry out object-asking:
-	if the current interlocutor is nothing and how-many-people-here is 1:
-		let new interlocutor be entry 1 of people-present;
-		implicitly greet new interlocutor;
-		if new interlocutor is the current interlocutor:
-			let N be a list of quips;
-			repeat with Q running through things in quip-repository:
-				if Q mentions the noun and Q is available:
-					add Q to N;
-			if the number of entries in N is positive:
-				if the number of entries in N is 1:
-					try discussing entry 1 of N instead;
-				otherwise:
-					recommend N instead;
+	find a suitable interlocutor;
 	if the current interlocutor is nothing:
 		say "[We] [aren't] talking to anyone." instead;
+	let N be a list of quips;
+	repeat with Q running through things in quip-repository:
+		if Q mentions the noun and Q is available:
+			add Q to N;
+	if the number of entries in N is positive:
+		if the number of entries in N is 1:
+			try discussing entry 1 of N instead;
+		otherwise:
+			recommend N instead;
 	if the current interlocutor carries the noun:
 		try requesting the noun from the current interlocutor instead;
 	if the noun is the current interlocutor:

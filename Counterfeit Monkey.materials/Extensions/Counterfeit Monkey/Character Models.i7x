@@ -72,32 +72,58 @@ Include Threaded Conversation by Emily Short.
 
 Include Threaded Actions by Emily Short.
 
+Rule for supplying a missing second noun while showing something to:
+	find a suitable interlocutor;
+	now second noun is current interlocutor;
+	if second noun is nothing:
+		say "You must show [the noun] to someone specific.";
+		stop the action.
+
+Rule for supplying a missing second noun while giving something to:
+	find a suitable interlocutor;
+	now second noun is current interlocutor;
+	if second noun is nothing:
+		say "You must give [the noun] to someone specific.";
+		stop the action.
+
+Rule for supplying a missing second noun while buying something from:
+	if the player encloses the noun:
+		say "[We] already have [the noun].";
+		stop the action;
+	if somebody (called target) encloses the noun:
+		if target is not current interlocutor:
+			try saying hello to the target;
+		now the second noun is the target;
+	otherwise:
+		find a suitable interlocutor;
+		now second noun is current interlocutor;
+	if second noun is nothing:
+		say "From whom should [we] buy [the noun]?";
+		stop the action.
+
+To find a suitable interlocutor:
+	if the current interlocutor is nothing:
+		if how-many-people-here is 1:
+			try saying hello to entry 1 of people-present;
+		otherwise:
+			let L be { barman, bartender, Kate };
+			repeat with vip running through L:
+				if vip is in location:
+					try saying hello to vip;
+					break;
+
+Understand "buy [something]" as buying it from.
+Understand "show [something]" as showing it to.
+Understand "give [something]" as giving it to.
+
 Sanity-check buying something enclosed by the player from:
 	say "[We] already have [the noun]." instead;
 
 Sanity-check buying something from the player:
 	say "[The noun] [are not] [ours] to sell." instead.
 
-Understand "buy [something]" as buying it from.
-
 Does the player mean buying something enclosed by the player from someone:
 	it is very unlikely.
-
-Rule for supplying a missing second noun while buying something from:
-	if the player encloses the noun:
-		say "[We] already have [the noun].";
-		stop the action;
-	if the current interlocutor is a person:
-		now the second noun is the current interlocutor;
-	otherwise if somebody (called target) encloses the noun and the target is not the player:
-		try saying hello to the target;
-		now the second noun is the target;
-	otherwise if how-many-people-here is 1:
-		try saying hello to entry 1 of people-present;
-		now the second noun is entry 1 of people-present;
-	otherwise:
-		say "From whom should [we] buy [the noun]?";
-		stop the action.
 
 A quip can be listed or unlisted. A quip is usually listed.
 
