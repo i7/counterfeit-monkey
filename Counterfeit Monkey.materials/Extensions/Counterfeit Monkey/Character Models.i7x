@@ -101,6 +101,14 @@ Rule for supplying a missing second noun while buying something from:
 		say "From whom should [we] buy [the noun]?";
 		stop the action.
 
+Rule for supplying a missing noun while thanking:
+	now the greeting type is implicit;
+	find a suitable interlocutor;
+	now noun is current interlocutor;
+	if noun is nothing:
+		say "Don't mention it. We're in this together.";
+		stop the action.
+
 To find a suitable interlocutor:
 	if the current interlocutor is nothing:
 		if how-many-people-here is 1:
@@ -115,6 +123,9 @@ To find a suitable interlocutor:
 Understand "buy [something]" as buying it from.
 Understand "show [something]" as showing it to.
 Understand "give [something]" as giving it to.
+
+Before thanking the player:
+	say "Don't mention it. We're in this together." instead.
 
 Sanity-check buying something enclosed by the player from:
 	say "[We] already have [the noun]." instead;
@@ -132,7 +143,7 @@ Plausibility rule for an unlisted quip:
 
 After reading a command (this is the rearrange hello rule):
         let N be "[player's command]";
-        replace the regular expression "(hi|hello|hey), (.*)" in N with "\2, hello";
+        replace the regular expression "(hi|hello|hey)," in N with "say hello to";
         change the text of the player's command to N.
 
 Understand "hey" or "hiya" or "yo" as hailing.
@@ -144,10 +155,10 @@ After reading a command when the current interlocutor is not nothing and player'
 
 The new strip interlocutor from input rule is listed instead of the strip interlocutor from input rule in the After reading a command rules.
 
-The Hostel-as-subject is a subject. The printed name is "hostel". Understand "hostel" as the hostel-as-subject.
+The Hostel-as-subject is a subject. The printed name is "hostel". Understand "hostel" as the Hostel-as-subject.
 The Fleur d'or-as-subject is a subject. The printed name is "Fleur d'or hotel". Understand "hotel" or "fleur" or "d'or" as the fleur d'or-as-subject.
-The Cinema-as-subject is a subject. The printed name is "cinema". Understand "cinema" as the cinema-as-subject.
-The Counterfeit monkey-as-subject is a subject. The printed name is "Counterfeit Monkey Bar". Understand "counterfeit" or "monkey" or "bar" as the counterfeit monkey-as-subject.
+The Cinema-as-subject is a subject. The printed name is "cinema". Understand "cinema" as the Cinema-as-subject.
+The Counterfeit Monkey-as-subject is a subject. The printed name is "Counterfeit Monkey Bar". Understand "counterfeit" or "monkey" or "bar" as the counterfeit monkey-as-subject.
 [The arbot-as-subject is a subject. The printed name is "Arbot Maps & Antiques". Understand "arbot" or "maps" or "antiques" or "&" or "antique" or "shop" as the arbot-as-subject.]
 
 Bureau is a subject. Understand "bureau of orthography" or "orthography" as the bureau.
@@ -368,6 +379,13 @@ crime-bg	"That one of you is criminal."
 atlantean-bg	"That one of you is Atlantean."
 car-needed	"That we need a car."
 car-broken	"That the car does not run."
+thank-mechanic	"That we have reason to thank the mechanic."
+thank-lena	"That we have reason to thank Lena."
+thank-bartender	"That we have reason to thank the bartender."
+thank-brown	"That we have reason to thank Professor Brown."
+thank-higgate	"That we have reason to thank Professor Higgate."
+thank-brock	"That we have reason to thank Brock."
+thank-atlantida	"That we have reason to thank Atlantida."
 
 A fact can be motivational or purposeless. A fact is usually purposeless. you-are-student, you-hit-on, you-are-tourist, you-are-possible-customer, you-are-past-customer, you-take-survey, you-are-feckless, you-are-dangerous are motivational.
 
