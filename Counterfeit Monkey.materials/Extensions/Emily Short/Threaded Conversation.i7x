@@ -297,7 +297,6 @@ Definition: a quip is recent
 	or it is the grandparent quip.
 
 Definition: a quip (called target) is plausible:
-	[say "Checking the plausibility of '[target]'.[line break]";]
 	if the current interlocutor is not a person, no;
 	if it is not flagged-ready, no;
 	follow the plausibility rules for it;
@@ -314,7 +313,7 @@ Availability rules are an object-based rulebook. The availability rules have out
 Definition: a quip (called target quip) is available:
 	follow the availability rules for it;
 	if the outcome of the rulebook is the it is available outcome:
-		yes;
+		yes.
 
 The first availability rule (this is the don't talk to no one rule):
 	if the current interlocutor is not a person:
@@ -386,7 +385,6 @@ The last availability rule (this is the generic availability rule):
 Book 3 - Peripheral Quips
 
 Definition: a quip (called the target quip) is peripheral:
-	[say "Checking if '[target quip]' is peripheral.";]
 	if the target quip is not flagged-ready:
 		no;
 	if the target quip is unlisted-plausible:
