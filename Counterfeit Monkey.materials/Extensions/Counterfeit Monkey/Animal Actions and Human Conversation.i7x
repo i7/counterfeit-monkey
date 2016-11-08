@@ -4368,7 +4368,7 @@ english-greeting is an NPC-directed quip.
 Every turn when the current quip is lojban-greeting:
 	say "Higgate is still looking at us expectantly, so I jump in. ";
 	try discussing that we do not speak Lojban;
-	try Higgate discussing that we do not speak Lojban.
+	try Professor Higgate discussing that we do not speak Lojban.
 
 Instead of saying no when the current interlocutor is Professor Higgate and that we do not speak lojban is available:
 	try discussing that we do not.
@@ -4463,32 +4463,32 @@ how we might return a book is a demonstration quip. The comment is "'I need to r
 	The reply is "'Oh! Yes, all right,' she says. 'Did you like it? It's a good overview of the subject, didn't you think? I'm afraid the author once annoyed Professor Waterstone at a conference, or we might have had her around to speak at one of our colloquia...'".
 	It quip-supplies Professor Higgate.
 
-Instead of looking in Samuel Johnson Hall when Higgate is in Samuel Johnson Hall:
+Instead of looking in Samuel Johnson Hall when Professor Higgate is in Samuel Johnson Hall:
 	follow the room description heading rule;
 	say "We stand politely a few paces back from the southeast door, which is currently occupying Higgate's attention. [run paragraph on]"
 
-Report approaching Samuel Johnson Hall when Higgate is in Samuel Johnson Hall:
+Report approaching Samuel Johnson Hall when Professor Higgate is in Samuel Johnson Hall:
 	say "We walk a little behind Higgate, who has a very long businesslike stride despite her heels." instead.
 
-Rule for listing exits when looking in Samuel Johnson Hall when Higgate is in the location:
+Rule for listing exits when looking in Samuel Johnson Hall when Professor Higgate is in the location:
 	do nothing instead.
 
-Report Higgate unlocking the seminar door with something:
+Report Professor Higgate unlocking the seminar door with something:
 	say "She fiddles with her keys for a moment before finding the right one. [run paragraph on]" instead.
 
-Report Higgate opening the seminar door:
+Report Professor Higgate opening the seminar door:
 	say "'Here we you go,' she says, pushing the door open." instead.
 
-Report Higgate getting off the chair:
+Report Professor Higgate getting off the chair:
 	say "Higgate stands, patting herself down as though worried she has forgotten something." instead.
 
-Report Higgate going a direction when the location is Higgate's Office:
+Report Professor Higgate going a direction when the location is Higgate's Office:
 	say "She walks past us through the office door." instead.
 
-Report Higgate going southwest to the Seminar Room:
+Report Professor Higgate going southwest to the Seminar Room:
 	say "She steps inside." instead.
 
-Report Higgate going a direction (called way):
+Report Professor Higgate going a direction (called way):
 	say "She waves and heads back [way]." instead.
 
 [From early on in the game, PAINT was an available object, since it's very linguistically productive, offering PANT, PINT, PIN, PAN, PAT, etc. At one point, the player got this paint from Professor Higgate's office, a remnant of the redecoration in progress there.
@@ -4520,7 +4520,7 @@ if we can take the paint is a questioning quip. The comment is "'I'd be happy to
 	It quip-supplies Professor Higgate.
 	It indirectly-follows whether she needs  paint.
 
-Carry out Higgate discussing if we can take the paint:
+Carry out Professor Higgate discussing if we can take the paint:
 	now the paint is released.
 
 Before discussing if we can take paint when the player does not recollect whether she needs paint:
@@ -4539,11 +4539,11 @@ whether she seems sure she doesn't want the pint is a weakly-phrased questioning
 	It quip-supplies Professor Higgate.
 
 Before going from Higgate's office when the paint is released and the player does not enclose the paint:
-	try Higgate discussing paint-recycling instead.
+	try Professor Higgate discussing paint-recycling instead.
 
 paint-recycling is an NPC-directed quip.
 	The reply is "[one of]'Wait [--] weren't you going to dispose of the paint for me?'[or]'Do take the paint with you now if you want it,' she says. 'I may be gone later.'[or]'You're forgetting the paint again,' she says.[stopping]". Before going from Higgate's office when the paint is released and the player does not carry the paint:
-	try Higgate discussing paint-recycling instead. ]
+	try Professor Higgate discussing paint-recycling instead. ]
 
 which conlangs she kens is a questioning quip.
 	The printed name is "which conlangs she knows". The true-name is "which conlangs she kens".

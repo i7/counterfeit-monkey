@@ -781,7 +781,7 @@ Southwest of Samuel Johnson Hall is the seminar door. The seminar door is a clos
 Southwest of the seminar door is Language Studies Seminar Room. The description of the Language Studies Seminar Room is "They recently redid this room, and whoever picked the decorations had postmodern tastes." The Language Studies Seminar Room is indoors and southern.
 
 After looking in the Language Studies Seminar Room when the seminar door is open:
-	if Higgate is marked-visible:
+	if Professor Higgate is marked-visible:
 		continue the action;
 	silently try closing the seminar door;
 	if the seminar door is closed:
@@ -1029,23 +1029,23 @@ Higgate's office door is west of the Language Studies Department Office. Higgate
 
 Understand "bureau tape" or "tape" as Higgate's office door when Higgate-arrested has happened.
 
-Report higgate discussing how we might return a book:
+Report Professor Higgate discussing how we might return a book:
 	say "[reply of the noun][paragraph break]";
-	try higgate exiting;
+	try Professor Higgate exiting;
 	say "'After you,' says Higgate. 'I assume it's safe to leave for a minute; if anyone is coming for Lojban Tea we'll see them in the hall.' [run paragraph on]";
-	try higgate approaching Samuel Johnson Hall;
+	try Professor Higgate approaching Samuel Johnson Hall;
 	try approaching Samuel Johnson Hall;
-	try Higgate unlocking the seminar door with the lsr-key;
-	try Higgate opening the seminar door;
-	try Higgate approaching the Seminar Room;
+	try Professor Higgate unlocking the seminar door with the lsr-key;
+	try Professor Higgate opening the seminar door;
+	try Professor Higgate approaching the Seminar Room;
 	try going southwest;
-	set the current interlocutor to Higgate;
+	set the current interlocutor to Professor Higgate;
 	stop the action.
 
-Instead of doing something in the presence of Higgate when the noun is the synthesizer or the second noun is the synthesizer or the noun is the plexiglas case or the noun is the screws or the second noun is the plexiglas case or the second noun is the screws:
+Instead of doing something in the presence of Professor Higgate when the noun is the synthesizer or the second noun is the synthesizer or the noun is the plexiglas case or the noun is the screws or the second noun is the plexiglas case or the second noun is the screws:
 	say "Higgate may be a little unworldly, but there is no way she'd let us mess with the synthesizer without interference. We'll have to hope she is willing to leave us in here."
 
-Instead of going somewhere when the location is the Seminar Room and Higgate is in the location:
+Instead of going somewhere when the location is the Seminar Room and Professor Higgate is in the location:
 	say "[We] got in here on the pretext of putting the book away. It would be odd to leave again without doing so."
 
 After putting the Problem of Adjectives on the LSR Bookcase:
@@ -1054,7 +1054,7 @@ After putting the Problem of Adjectives on the LSR Bookcase:
 The sound of discussion comes from down the hall: two voices speaking in Lojban, and then a male voice interrupting. 'Do you have a lic[ense] for this conversation?' it asks.
 
 'Excuse me,' Higgate says. 'I'd better go see to that.'";
-	try Higgate approaching higgate's office;
+	try Professor Higgate approaching higgate's office;
 	reset the interlocutor;
 	now higgate's office door is closed instead.
 
@@ -1171,9 +1171,9 @@ Sanity-check taking something which is on the oval table:
 My fingers relax their grip instinctively." instead.
 
 
-lsr-key unlocks seminar door. lsr-key is carried by Higgate. The printed name of the lsr-key is "small key". Understand "small" as the lsr-key.
+lsr-key unlocks seminar door. lsr-key is carried by Professor Higgate. The printed name of the lsr-key is "small key". Understand "small" as the lsr-key.
 
-Rule for deciding the concealed possessions of Higgate:
+Rule for deciding the concealed possessions of Professor Higgate:
 	if the particular possession is the lsr-key:
 		yes.
 
@@ -1181,7 +1181,7 @@ Sanity-check putting something on the oval table:
 	say "Why get our stuff mixed up with Professor Higgate's? Besides, there's not a lot of space left there anyway." instead.
 
 Report Professor Higgate saying hello to the player:
-	if Higgate recollects that we do not speak Lojban, queue English-greeting instead;
+	if Professor Higgate recollects that we do not speak Lojban, queue English-greeting instead;
 	otherwise queue lojban-greeting instead.
 
 Section 6 - Waterstone's Office
