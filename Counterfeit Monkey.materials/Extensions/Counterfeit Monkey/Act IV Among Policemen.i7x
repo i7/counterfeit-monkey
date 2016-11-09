@@ -108,9 +108,20 @@ Section 4 - Public Convenience
 
 The Public Convenience is east of Bus Station. It is indoors and southern. The Public Convenience is a public restroom. The description of Public Convenience is "There are just the two toilet stalls[if at least two sinks are in the location] and a couple of [sink-collectives], but the place has been kept up reasonably well, if one doesn't count the [random graffiti][otherwise if one sink is in the location] and a single [random sink in location], the other one having been vandalized. The [random graffiti] adds a grim touch[otherwise], though both sinks are gone and there is [random graffiti] on the walls[end if]."
 
+Out-direction of the Public Convenience is west. [To the bus station]
+
 The introduction of the Public Convenience is "A faint smell of lavender lingers in the air."
 
-Out-direction of Public Convenience is west. [To the bus station]
+The smell is scenery in the public convenience.
+
+Instead of doing anything when the smell is the noun or the smell is the second noun:
+	try smelling the Public Convenience.
+
+Instead of smelling the Public Convenience when the ash is in the wall-hole:
+	say "The smell seems to emanate from the small hole in the wall."
+
+Before putting gel on the ash:
+	now the smell is nowhere.
 
 After reading a command when location is Public Convenience (this is the replace sinks with sink rule):
 	now the referred of the sink-collectives is false;
