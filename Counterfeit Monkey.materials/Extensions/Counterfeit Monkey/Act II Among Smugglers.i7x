@@ -108,6 +108,10 @@ The collection of fish is scenery in the Aquarium. Understand "swordfish" or "ba
 
 Out-direction of Aquarium Bookstore is west. [Deep Street]
 
+After reading a command when location is The Aquarium Bookstore (this is the replace books with book rule):
+	while the player's command includes "books":
+		replace the matched text with "book".
+
 Understand "browse [merchandise]" as searching.
 
 Test merch with "browse / browse merchandise / x merchandise / look at merchandise / g / g / g" in Aquarium bookstore.
