@@ -148,7 +148,7 @@ Rule for listing exits when looking in Fleur d'Or Lobby:
 
 A piano is a fixed in place instrument in the Fleur d'Or Lobby.  The initial appearance is "[if the player is on the piano-bench]We're seated at a handsome piano in the corner[else]There is no one at the glossy [piano] in the corner[end if]." The description is "A glossy grand, probably worthy of better than bar music." Understand "keys" or "keyboard" as the piano.
 
-The piano-bench is an enterable supporter. It allows seated. [The piano-bench is part of the piano.] The piano-bench is in the Fleur d'Or Lobby. The printed name is "piano bench". Understand "bench" or "piano bench" as the piano-bench. The description of the piano-bench is "Lightly padded and made of the same wood as the piano itself."
+The piano-bench is an enterable scenery supporter. It allows seated. [The piano-bench is part of the piano.] The piano-bench is in the Fleur d'Or Lobby. The printed name is "piano bench". Understand "bench" or "piano bench" as the piano-bench. The description of the piano-bench is "Lightly padded and made of the same wood as the piano itself."
 
 
 
