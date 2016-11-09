@@ -6,9 +6,10 @@ Section 1 - Main Elements
 
 A stolen action is a kind of performative quip. The specification of a stolen action is "Any performative quip that is used to redirect the behavior of a standard command like KISS FRED or ATTACK CAT."
 	
-An offensive quip is a kind of stolen action. 
-A seductive quip is a kind of stolen action. 
-A purchasing quip is a kind of stolen action. 
+An offensive quip is a kind of stolen action.
+A seductive quip is a kind of stolen action.
+A purchasing quip is a kind of stolen action.
+A thanking quip is a kind of repeatable performative quip.
 
 An offering quip is a kind of questioning quip. 
 A demonstration quip is a kind of questioning quip. 
@@ -37,7 +38,10 @@ Before attacking someone who is not the current interlocutor  (this is the impli
 	try saying hello to the noun;
 	if the noun is not the current interlocutor, stop the action. ]
 
-	
+Before thanking something who is not the current interlocutor (this is the implicitly greet before thanking rule):
+	implicitly greet the noun;
+	if the noun is not the current interlocutor, stop the action.
+
 Instead of kissing someone (this is the standard kiss redirection rule):
 	[if a seductive quip (called target quip) is available
 	begin;
@@ -55,6 +59,43 @@ Instead of attacking someone (this is the standard attack redirection rule):
 	otherwise;]
 	carry out the refusing to attack activity with the noun.
 	[end if.]
+
+Understand "thank [someone]" or "say thank you to [someone]" or "say thanks to [someone]" or "say thanks" or "say thank you" or "thanks" or "thanks a lot" or "thank you" or "bless you" or "ta" or "cheers" or "much obliged" as thanking. Thanking is an action applying to one visible thing.
+
+Instead of answering somebody (called target) that "thank you":
+	try thanking the target.
+
+Instead of answering somebody (called target) that "thanks":
+	try thanking the target.
+
+Understand "thanks" or "thanks a lot" or "thank you" or "bless you" or "ta" or "cheers" or "much obliged" as no-noun-thanking when the person asked is not the player. No-noun-thanking is an action applying to nothing.
+
+Instead of asking somebody to try no-noun-thanking:
+	try thanking the person asked.
+
+Instead of asking somebody to try thanking:
+	try thanking the person asked.
+
+After reading a command (this is the rearrange thanks rule):
+        let N be "[player's command]";
+        replace the regular expression "(thanks|thank you)," in N with "thank";
+        change the text of the player's command to N.
+
+Instead of thanking someone (this is the standard thanks redirection rule):
+	let N be a list of thanking quips;
+	repeat with Q running through thanking quips in quip-repository:
+		if Q quip-supplies the noun and Q is available:
+			add Q to N;
+	if the number of entries in N is positive:
+		if the number of entries in N is 1:
+			try discussing entry 1 of N;
+		otherwise:
+			recommend N;
+	otherwise:
+		say "[one of][We] have no reason to thank [the noun].[or]What [regarding the noun][have] [they] done for us lately?[or]For what?[at random]";
+
+Check discussing a thanking quip (called target) (this is the hide thanking quips after use rule):
+	now the target is unlisted.
 
 Carry out buying something from someone (this is the standard purchasing rule):
 	let N be a list of purchasing quips;

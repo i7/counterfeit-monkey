@@ -784,7 +784,7 @@ Carry out the mechanic discussing whether the oil will work:
 
 whether the oil will work is an unlisted offering quip.
 	The comment is "'Will this work?' [We] hold out the oil."
-	The reply is "'Should do,' he says. Rolling up his sleeves, he goes to work on the car. There is no small amount of banging and muttering, but finally he stands back and announces that he believes it is now in working condition."
+	The reply is "[thank-mechanic]'Should do,' he says. Rolling up his sleeves, he goes to work on the car. There is no small amount of banging and muttering, but finally he stands back and announces that he believes it is now in working condition."
 	It indirectly-follows why the car does not run.
 	It quip-supplies the mechanic.
 	Every oil is mentioned by whether the oil will work.
@@ -883,16 +883,12 @@ Carry out the mechanic discussing whether the oil will work:
 	let target be a random car in location;
 	now the target is operational.
 
-Instead of answering the mechanic that "thank you":
-	try discussing thank the mechanic.
-
-thank the mechanic is a performative quip.
-		It mentions transportation.
-		Understand "him" or "thank you" or "thanks" as thank the mechanic.
-		The comment is "'Thank you, that was a great help,' we say.".
-		The reply is "He nods.".
-		It quip-supplies the mechanic.
-		It directly-follows whether the oil will work.
+thank the mechanic is a thanking quip. It assumes thank-mechanic.
+	It mentions transportation, the mechanic.
+	The comment is "'Thank you, that was a great help,' we say.".
+	The reply is "He nods.".
+	It quip-supplies the mechanic.
+	It indirectly-follows whether the oil will work.
 
 Section 2 - The Bard
 
@@ -1772,6 +1768,11 @@ Test bartender with "tutorial off / z / ask about paddle / show ball to bartende
 
 Test legend with "tutorial off / x map / x legend / open tub / gel legend / show map to bartender / show legend to bartender / x legend / read map / read legend / gel legend / x map / show map to bartender / show legend to bartender / drop legend / unmonkey / e / x map / x legend".
 
+thank the bartender is a thanking quip.
+	It mentions the bartender. It assumes thank-bartender.
+	The comment is "'That's wonderful [--] thank you!'".
+	The reply is "[one of]'Don't mention it,' she says. 'It's what I do.'[or]'You don't have to thank me,' she says.[or]'That's enough!'[stopping]".
+	It quip-supplies the bartender.
 
 Section 4 - Kate
 
@@ -3694,7 +3695,8 @@ whether he hates customs officials is a questioning quip.
 Instead of the barman discussing a civic quip when the barman does not know slango-friendship:
 	say "[one of]He just laughs and shakes his head[or]He grins, but doesn't answer[or]'What do you think?' he asks. I don't think we're going to get answers on this kind of question. Not while he doesn't trust us. But it hardly matters[at random]."
 
-whether he believes in god-2 is a questioning quip. The comment is "'Where do you stand on God?' we ask[you-are-religious].". The printed name is "whether he believes in God".
+whether he believes in god-2 is a questioning quip.
+	The comment is "'Where do you stand on God?' we ask[you-are-religious].". The printed name is "whether he believes in God".
 	It mentions religion.
 	The reply is "'Don't give it much thought,' he says. 'Please don't tell me you're here with a pamphlet . I won't read it.'".
 	It quip-supplies the barman.
@@ -3703,7 +3705,7 @@ Understand "parker/barman" or "god" as whether he believes in god-2.
 
 Test tobarman with "test act1 / test chard / test car / test Slango-missed / go to outdoor / open backpack / look / wave p-remover at spill / get sill / go to counterfeit monkey".
 
-Test barman with "tutorial off / talk to barman / x barman / a slango / a rum / look / a paste / a whether we can have / ask how / play / z / z" in counterfeit monkey.
+Test barman with "tutorial off / talk to barman / x barman / a slango / a rum / look / a paste / a whether we can have / ask how / play / z / z" in Counterfeit Monkey.
 
 
 Section 3 - Slango
@@ -3729,7 +3731,6 @@ consulting-Slango is a scene. consulting-Slango begins when the current interloc
 
 Instead of saying hello to Slango when Slango does not recollect who we seem:
 	try discussing who we seem.
-
 
 who we seem is an informative quip.
 	The printed name is "who we are". The true-name is "who we seem".
@@ -4126,9 +4127,10 @@ Instead of saying yes when current interlocutor is Lena and encourage Lena to co
 Instead of saying no when current interlocutor is Lena and encourage Lena to contact slango is available:
 	say "Are you mad? That's exactly what we need her to do.";
 
-encourage Lena to contact Slango is a performative quip. The comment is "'[if immediately]That would be extremely helpful[otherwise]It would be very useful if you could contact Slango[end if],' we say. Perhaps we can finally get off this island and back into our separate skins, which would not be one minute too soon for me.".
+encourage Lena to contact Slango is a performative quip.
+	The comment is "'[if immediately]That would be extremely helpful[otherwise]It would be very useful if you could contact Slango[end if],' we say. Perhaps we can finally get off this island and back into our separate skins, which would not be one minute too soon for me.".
 	It mentions Slango.
-	The reply is "'Very good,' she says. She goes over to one of the free-standing shelves and takes out copies of [a random book which is part of merchandise] and [i]Seventy Ways to Disable an Authentication Scope[/i]. Behind these works of literature she finds what looks like a cellular phone; but it mustn't be one, or at least not of the usual variety, because the Bureau tightly controls such items. [paragraph break]We hear half a conversation. 'It's me. There's someone to see... yes, I had her do the contraband... I don't know, a little taller and a lot less mean... Oh! I see. She looks healthy enough... I'm not running a restaurant! Okay. Okay. I'll talk to you later, sweetie. Bye.' [paragraph break]Without meeting our eye, she buries the phone back in its previous location. Then she says, 'He's coming in direct. He says go over to Counterfeit Monkey and he'll be right over as originally planned, and he's sorry about the wait.'[paragraph break]'Oh! And.' She tosses us a coin. 'Have a drink on me.'".
+	The reply is "[thank-lena]'Very good,' she says. She goes over to one of the free-standing shelves and takes out copies of [a random book which is part of merchandise] and [i]Seventy Ways to Disable an Authentication Scope[/i]. Behind these works of literature she finds what looks like a cellular phone; but it mustn't be one, or at least not of the usual variety, because the Bureau tightly controls such items. [paragraph break]We hear half a conversation. 'It's me. There's someone to see... yes, I had her do the contraband... I don't know, a little taller and a lot less mean... Oh! I see. She looks healthy enough... I'm not running a restaurant! Okay. Okay. I'll talk to you later, sweetie. Bye.' [paragraph break]Without meeting our eye, she buries the phone back in its previous location. Then she says, 'He's coming in direct. He says go over to Counterfeit Monkey and he'll be right over as originally planned, and he's sorry about the wait.'[paragraph break]'Oh! And.' She tosses us a coin. 'Have a drink on me.'".
 	It quip-supplies Lena.
 	It indirectly-follows whether she hath seen slango.
 
@@ -4142,16 +4144,12 @@ Carry out Lena discussing encourage Lena to contact Slango:
 	record "arranging contact with Slango through his lady friend" as achieved;
 	summon Slango.
 
-Instead of answering Lena that "thank you":
-	try discussing thank Lena.
-
-thank Lena is a performative quip.
-	It mentions as-coin.
-	Understand "her" or "thank you" or "thanks" as thank Lena.
-	The comment is "'Thank you,' we say. 'We owe you one.'".
-	The reply is "She smirks. 'I get my money's worth out of Slango, don't worry.'".
+thank Lena is a thanking quip.
+	It mentions as-coin, Lena. It assumes thank-lena.
+	The comment is "'Thank you,' we say.[one of] 'We owe you one.'[or][stopping]".
+	The reply is "She smirks. [one of]'I get my money's worth out of Slango, don't worry.'[or]'That's enough!'[stopping]".
 	It quip-supplies Lena.
-	It directly-follows encourage Lena to contact Slango.
+	It indirectly-follows encourage Lena to contact Slango.
 
 Table of Ultratests (continued)
 topic	stuff	setting
@@ -4259,7 +4257,7 @@ Instead of Professor Brown discussing whether he can fix the letter-remover when
 whether he can fix the letter-remover is a demonstration quip.
 	It mentions the letter-remover.
 	The comment is "'Could you fix my letter-remover to make abstract objects as well?'"
-	The reply is "'It's not difficult, you just[--] oh, stay here, I'm not supposed to bring students into the rectification room.'
+	The reply is "[thank-brown]'It's not difficult, you just[--] oh, stay here, I'm not supposed to bring students into the rectification room.'
 
 He takes the letter-remover and steps out into the hallway. I can hear him using his keycard on the door, going into the little room west of the hallway, doing something there. (Don't bother thinking we're going to cosh him and take the keycard. I'm sure there's a better way, and I don't cosh people.)
 
@@ -4288,10 +4286,10 @@ why reifying living creatures seems cruel is a questioning quip.
 	It quip-supplies Professor Brown.
 	It indirectly-follows what he thinks of the letter-remover.
 
-thank Professor Brown is a performative quip.
-	It mentions Professor Brown.
+thank Professor Brown is a thanking quip.
+	It mentions Professor Brown. It assumes thank-brown.
 	The comment is "'That's wonderful [--] thank you!'".
-	The reply is "'Yes well,' he says. 'Don't show it to anyone. Technically you shouldn't have that.'".
+	The reply is "[one of]'Yes well,' he says. 'Don't show it to anyone. Technically you shouldn't have that.'[or]'Don't make me regret it,' he says.[stopping]".
 	It quip-supplies Professor Brown.
 	It indirectly-follows whether he can fix the letter-remover.
 
@@ -4497,7 +4495,7 @@ Report Professor Higgate unlocking the seminar door with something:
 	say "She fiddles with her keys for a moment before finding the right one. [run paragraph on]" instead.
 
 Report Professor Higgate opening the seminar door:
-	say "'Here we you go,' she says, pushing the door open." instead.
+	say "[thank-higgate]'Here we you go,' she says, pushing the door open." instead.
 
 Report Professor Higgate getting off the chair:
 	say "Higgate stands, patting herself down as though worried she has forgotten something." instead.
@@ -5992,6 +5990,12 @@ what Atlantida kens concerning synthesis is a questioning quip.
 	It directly-follows how to fix the fusion.
 	The comment is "'Wait, what do you know about synthes[ize]d people?' If we don't find out now, will there be a better time?"
 	The reply is "'There have been experiments. They didn't end well, though most didn't collapse into a single dominant personality as quickly as you. You've been under unusual stress.'"
+	It quip-supplies atlantida-refreshed.
+
+thank Atlantida is a unlisted thanking quip.
+	It mentions atlantida-refreshed. It assumes thank-atlantida.
+	The comment is "'Thank you!' [we] say.".
+	The reply is "[one of]'Don't thank me,' she says. 'Now, hurry!'[or]'Hurry!'[stopping]".
 	It quip-supplies atlantida-refreshed.
 
 really-go-now is an NPC-directed quip.
