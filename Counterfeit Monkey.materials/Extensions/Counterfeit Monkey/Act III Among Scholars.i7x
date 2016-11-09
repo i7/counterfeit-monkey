@@ -1042,6 +1042,7 @@ Report Professor Higgate discussing how we might return a book:
 	try Professor Higgate approaching the Seminar Room;
 	try going southwest;
 	set the current interlocutor to Professor Higgate;
+	clear path-walked for player;
 	stop the action.
 
 Instead of doing something in the presence of Professor Higgate when the noun is the synthesizer or the second noun is the synthesizer or the noun is the plexiglas case or the noun is the screws or the second noun is the plexiglas case or the second noun is the screws:
