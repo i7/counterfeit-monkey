@@ -185,7 +185,7 @@ To know is a verb.
 This is the recap of known facts rule:
 	if the player does not know at least one fact:
 		say "[We] [haven't] discovered much yet." (A) instead;
-	say "[We] [think] back over the things that [we] [know]: [line break]  " (B);
+	say "[We] [think] back over the things that [we] [know]: [line break] " (B);
 	repeat with item running through facts:
 		if the player knows the item:
 			say "[summary of the item][line break] " (C);
