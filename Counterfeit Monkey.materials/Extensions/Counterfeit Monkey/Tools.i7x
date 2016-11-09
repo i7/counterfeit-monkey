@@ -1072,7 +1072,7 @@ Instead of looking at a disguised thing through an an authentication scope (call
 
 The player is disguised.
 
-The origin paste is a disguised illegal thing on the bar-top. The origin paste is essential. The indefinite article is "some".
+The Origin Paste is a disguised illegal thing on the bar-top. The origin paste is essential. The indefinite article is "some".
 
 The origin paste can be won or unwon. The origin paste is unwon.
 
@@ -1083,7 +1083,7 @@ Instead of taking the origin paste when the origin paste is unwon:
 The description of the origin paste is "A cake of pale purple: it is able to disguise letter-reformed objects so that they don't look like obvious frauds, or even show up under authentication.
 
 The only problem with it is the distinctive smell."
-	The introduction is "The origin paste is powerful stuff, and worth a good bit of money."
+	The introduction is "The Origin Paste is powerful stuff, and worth a good bit of money."
 	The scent-description is "overpowering French lavender".
 
 Instead of eating or tasting the paste:
@@ -1105,7 +1105,7 @@ Sanity-check putting the origin paste on the tub:
 	try putting the restoration gel on the origin paste instead.
 
 Instead of putting the paste on something:
-	record "using the origin paste" as achieved;
+	record "using the Origin Paste" as achieved;
 	say "[We] [if a person who is not the player is marked-visible]surreptitiously [end if]smear some of [the paste] onto [the second noun]. Nothing obvious happens, of course, but that is the whole point.";
 	now the second noun is disguised.
 
@@ -1296,7 +1296,7 @@ Before putting the restoration gel on something which is in the backpack:
 [And now special cases of description: ]
 
 Instead of putting the restoration gel on the origin paste:
-	say "[We] dip out some of the gel and touch it to the origin paste. There is a violent, fizzy reaction; lavender and mint fumes; and then the two substances appear to have worked out their mutual antipathy. The dollop of gel is gone, the cake of paste slightly smaller than it used to be."
+	say "[We] dip out some of the gel and touch it to the Origin Paste. There is a violent, fizzy reaction; lavender and mint fumes; and then the two substances appear to have worked out their mutual antipathy. The dollop of gel is gone, the cake of paste slightly smaller than it used to be."
 
 Instead of putting the restoration gel on something:
 	say "[We] dip out a [if the heft of the second noun is 1]fingertip-coating[otherwise]pea-sized[end if] quantity of gel and rub it gently onto [the second noun]. [run paragraph on]";
@@ -1326,7 +1326,7 @@ Instead of wearing the restoration gel:
 		now the player is gelled;
 		say "At last, time to get out of this double existence. You scoop out a big handful of the restoration gel and start applying it to both arms like you're putting on mosquito repellant for a swamp raid.
 
-It tingles and burns, fizzing against the existing origin paste that held us together this long and protected us from authentication scopes.
+It tingles and burns, fizzing against the existing Origin Paste that held us together this long and protected us from authentication scopes.
 
 [We] dip again and slather on more: over our face, neck, hair even. [We] just about empty the whole tub.
 
@@ -1642,7 +1642,7 @@ Before shooting something which is in the backpack with the restoration-gel rifl
 [And now special cases of description: ]
 
 Instead of shooting the origin paste with the restoration-gel rifle:
-	say "[We] fire the gun into the origin paste. There is a violent thump, a suffocating cloud of lavender and mint fumes, and then the paste is much the same as before, just smaller."
+	say "[We] fire the gun into the Origin Paste. There is a violent thump, a suffocating cloud of lavender and mint fumes, and then the paste is much the same as before, just smaller."
 
 Carry out shooting something with the restoration-gel rifle:
 	say "[We] shoot [the restoration-gel rifle] at [the noun]. ";

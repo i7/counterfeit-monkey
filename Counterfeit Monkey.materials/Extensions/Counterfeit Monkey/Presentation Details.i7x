@@ -173,7 +173,7 @@ Points (a number)	Citation (some text)	Time (a time)
 1	"using the letter-remover"
 1	"using the gel"
 1	"using the spinner"
-1	"using the origin paste"
+1	"using the Origin Paste"
 1	"using the synthesizer"
 1	"getting a product of the homonym paddle"
 1	"using the T-inserter"

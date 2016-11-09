@@ -3443,10 +3443,10 @@ Instead of object-asking the origin paste when the origin paste is not won:
 		try discussing whether we can hath the origin paste.
 
 whether we can hath the origin paste is a questioning quip.
-	The printed name is "whether we can have the origin paste". The true-name is "whether we can hath origin paste".
-	Understand "have" as whether we can hath origin paste.  The comment is "'That origin paste for sale?' ".
+	The printed name is "whether we can have the Origin Paste". The true-name is "whether we can hath origin paste".
+	Understand "have" as whether we can hath origin paste.  The comment is "'That Origin Paste for sale?' ".
 	It mentions origin paste.
-	The reply is "'Well now,' he says, grinning, 'that would surely be illegal, would it not? Origin paste is after all a controlled substance in this country, due to its unhappy association with fraudulent activities. On the other hand there is no law against someone [i]winning[/i] the origin paste in a completely legitimate game of chance or skill.'".
+	The reply is "'Well now,' he says, grinning, 'that would surely be illegal, would it not? Origin Paste is after all a controlled substance in this country, due to its unhappy association with fraudulent activities. On the other hand there is no law against someone [i]winning[/i] the Origin Paste in a completely legitimate game of chance or skill.'".
 	It quip-supplies the barman.
 
 
@@ -3469,7 +3469,7 @@ Every turn when the location is Counterfeit Monkey and barman does not recollect
 	casually queue barman-nudge.
 
 barman-nudge is an NPC-directed quip.
-The reply is "'What do you think? You up for a try at the origin paste?'"
+The reply is "'What do you think? You up for a try at the Origin Paste?'"
 
 A plausibility rule for play the game:
 	it is plausible.
@@ -3484,7 +3484,7 @@ After printing the name of play the game when play the game is recollected by th
 	say " again".
 
 play the game is a performative quip.
-	The comment is "'I'd like to play [if immediately]that[otherwise if the barman recollects play the game]again[otherwise]for the origin paste[end if],' we say.".
+	The comment is "'I'd like to play [if immediately]that[otherwise if the barman recollects play the game]again[otherwise]for the Origin Paste[end if],' we say.".
 	It mentions origin paste, entertainment.
 	Understand "again" as play the game.
 	The reply is "'[one of]Excellent. Oh, I did mention the small matter of the entry fee?'[paragraph break]I get out the roll of bills and he peels off two twenties.[paragraph break]'Thank you. [or]Paying again, are you? Very good then. [or]You are a glutton for punishment, but I don't mind taking your money for nothing. [stopping]Now, you pick your entry article, and I'll ask one of these good gentlemen to suggest a def[ense] category.'".
@@ -3580,7 +3580,7 @@ wager-accepted is an NPC-directed quip.
 	The reply is "'Right,' says [the barman]. '[The wager-name] it is.' [paragraph break]He turns towards the group assembled around the dartboard. 'Anyone want to defend against this character?' (with a nod at you). [paragraph break][wager-choice]".
 
 wager-won is an NPC-directed quip.
-	The reply is "'A winner!' says the barman, straightening up. 'What do you know? The origin paste is all yours, darling.'[paragraph break]This produces a squawk of surprise and irritation from the defendant, and you get the impression that this game has been agreeably fleecing tourists all day. Pity you had to come along and spoil it.";
+	The reply is "'A winner!' says the barman, straightening up. 'What do you know? The Origin Paste is all yours, darling.'[paragraph break]This produces a squawk of surprise and irritation from the defendant, and you get the impression that this game has been agreeably fleecing tourists all day. Pity you had to come along and spoil it.";
 
 To make wager choice:
 	let N be the wager-index plus 1;
@@ -4096,13 +4096,13 @@ what she kens about authentication scopes is an unlisted repeatable questioning 
 	It quip-supplies Lena.
 
 still-needs-pasting is an NPC-directed quip.
-	The reply is "[one of]'What those need now is just a touch of paste to obscure [the random undisguised thing in the contraband box] to the authentication scopes, and [they] will be ready,' she says[or]'Of course, origin paste is expensive and hard to get around here, but [the random undisguised thing in the contraband box] [are] worth it,' she comments[or][if the player does not enclose origin paste]'Someone at the Counterfeit Monkey might be able to hook you up with a fresh supply of origin paste,' she suggests[otherwise]'Fortunate you've already got some paste,' she remarks[end if][or]Lena reflects once more on how useful it would be to put some origin paste on [the random undisguised thing in the contraband box][stopping]."
+	The reply is "[one of]'What those need now is just a touch of paste to obscure [the random undisguised thing in the contraband box] to the authentication scopes, and [they] will be ready,' she says[or]'Of course, Origin Paste is expensive and hard to get around here, but [the random undisguised thing in the contraband box] [are] worth it,' she comments[or][if the player does not enclose origin paste]'Someone at the Counterfeit Monkey might be able to hook you up with a fresh supply of Origin Paste,' she suggests[otherwise]'Fortunate you've already got some paste,' she remarks[end if][or]Lena reflects once more on how useful it would be to put some Origin Paste on [the random undisguised thing in the contraband box][stopping]."
 
 excellent-work is an NPC-directed quip.
 	The reply is "'Excellent,' Lena mutters under her breath."
 
 nice-paste is an NPC-directed quip.
-	The reply is "'Glad to see you've got plenty of origin paste,' Lena remarks. 'It's such a useful thing to have. Smells so nice.'"
+	The reply is "'Glad to see you've got plenty of Origin Paste,' Lena remarks. 'It's such a useful thing to have. Smells so nice.'"
 
 An availability rule for quip-about-paste:
 	if Lena does not recollect who we seem-3:
