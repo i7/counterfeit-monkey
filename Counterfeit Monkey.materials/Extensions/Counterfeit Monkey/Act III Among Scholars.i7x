@@ -215,7 +215,7 @@ Fleur d'Or Drinks Club is west of Fleur d'Or Lobby. It is indoors and southern. 
 
 What makes this place technically a drinks club rather than a bar is its lic[ense] to serve letter-manufactured food and drink. [A toolkit] on the [dor-bar-top] contains [a list of things *in the toolkit], ready to be transformed into their respective cocktails."
 
-Understand "bar" as Fleur d'Or Drinks Club.
+Understand "bar" or "pub" as Fleur d'Or Drinks Club.
 
 The liquor collection is scenery in the Fleur d'Or Drinks Club. Understand "gin" or "cachaca" or "cachaça" or "whiskey" or "whisky" or "bourbon" or "hendricks" or "vodka" or "tanqueray" or "scotch" or "glenfiddich" or "glenlivet" or "rum" or "tequila" or "campari" or "pastis" or "bombay" or "bombay sapphire" or "brandy" or "bottle" or "giant" or "bottle of" as the liquor collection. The description of liquor collection is "The liquor collection here is quite extensive, and generally of good quality."
 

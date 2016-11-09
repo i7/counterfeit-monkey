@@ -585,7 +585,7 @@ The Counterfeit Monkey is west of the Docks. It is proper-named and indoors. The
 
 Out-direction of Counterfeit Monkey is east. [To the docks]
 
-Understand "bar" as Counterfeit Monkey.
+Understand "bar" or "pub" as Counterfeit Monkey.
 
 A description-concealing rule when Slango is in the Counterfeit Monkey:
 	now the clientele is unmarked for listing;
