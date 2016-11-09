@@ -3128,15 +3128,9 @@ The description is usually "A suid is any kind of pig; this one is a sizable dom
 
 A sud is a thing. The heft of the sud is 1. The description of the sud is "A solitary soap-bubble, clinging iridescently to the nearest surface."
 
-Instead of doing something to the sud:
-	if the action requires a touchable noun:
-		say "The sud pops on contact.";
-		now the sud is nowhere.
-
-Instead of doing something when the sud is a second noun:
-	if the action requires a touchable second noun:
-		say "The sud pops on contact.";
-		now the sud is nowhere.
+Instead of doing something when the sud must be touched:
+	say "The sud pops on contact.";
+	now the sud is nowhere.
 
 The printed name of the sun-product is "sun". The heft of a sun-product is 1000. The description of a sun-product is "A mass of incandescent gas [--] well, plasma, really [--] fleeting thoughts and then".
 
