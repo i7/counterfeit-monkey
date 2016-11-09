@@ -1038,7 +1038,6 @@ Availability rule for buy the yam:
 	make no decision.
 
 buy the yam is a purchasing quip.
-Understand "buy yam" as buy the yam.
 	It mentions white-yam, farmer.
 	The comment is "'I'll have the yam, please,' we say.".
 	The reply is "[dubious response] says the farmer[you-are-past-customer].".
@@ -1057,7 +1056,6 @@ Availability rule for buy the lime:
 	make no decision.
 
 buy the lime is a purchasing quip.
-Understand "buy lime" as buy the lime.
 	It mentions lime, farmer.
 	The comment is "'I'll have the lime, please,' we say.".
 	The reply is "[dubious response] says the farmer[you-are-past-customer].".
@@ -1074,7 +1072,6 @@ Availability rule for buy the asparagus:
 	make no decision.
 
 buy the asparagus is a purchasing quip.
-Understand "buy asparagus" as buy the asparagus.
 	It mentions asparagus, farmer.
 	The comment is "'I'll have the asparagus, please,' we say.".
 	The reply is "[dubious response] says the farmer[you-are-past-customer].".
@@ -1274,7 +1271,6 @@ Availability rule for buy the triangle:
 	make no decision.
 
 buy the triangle is a purchasing quip.
-Understand "buy triangle" or "buy the triangle" as buy the triangle.
 	It mentions honey triangle.
 	The comment is "[purchase-request for the honey triangle]".
 	The reply is "'[nice-day]'".
@@ -1292,7 +1288,6 @@ Availability rule for buy the wrap:
 	make no decision.
 
 buy the wrap is a purchasing quip.
-Understand "buy wrap" as buy the wrap.
 	It mentions wrap.
 	The comment is "[purchase-request for the wrap]".
 	The reply is "'[nice-day]'".
@@ -1307,7 +1302,7 @@ Availability rule for buy the pocket-bread:
 	make no decision.
 
 buy the pocket-bread is a purchasing quip.
-Understand "buy pocket-bread" or "pita" as buy the pocket-bread.
+	Understand "pita" as buy the pocket-bread.
 	It mentions pocket-bread.
 	The comment is "[purchase-request for the pocket-bread]".
 	The reply is "'[nice-day]'".
@@ -1366,7 +1361,6 @@ Availability rule for buy the screwdriver:
 	make no decision.
 
 buy the screwdriver is a purchasing quip.
-Understand "buy screwdriver" or "buy the screwdriver" as buy the screwdriver.
 	It mentions screwdriver, screwdrivers.
 	The comment is "[if the bartender does not recollect how-rescue]We catch the bartender's eye and order a screwdriver. She holds up a finger as though to say she'll get to it as soon as she's done with [the patron][otherwise]We order a screwdriver[end if].".
 	The reply is "'[drink-nice-day]'".
@@ -1376,7 +1370,7 @@ To say drink-nice-day:
 	say "[one of]Just the way you were imagining it, guaranteed.[no line break][or]Enjoy.[no line break][or]You can't order any more,' she says after that. 'You've seen all my tricks, and I have to cut people off at three.[no line break][stopping]".
 
 buy a drink is an unlisted repeatable purchasing quip.
-	understand "buy drink" or "order" or "cocktail" or "buying" or "ordering" as buy drink.
+	understand "order" or "cocktail" or "buying" or "ordering" as buy drink.
 	It mentions the generic cocktail.
 	The comment is "[if the bartender does not recollect how-rescue]The bartender is still talking, but we catch her eye and pantomime glugging down a beverage[otherwise]'I'd like a drink,' we say[end if]."
 	The reply is "[one of]'What'll you have?' she asks. 'I can't pour you a generic beverage.'[or]'Pick your poison,' she says.[or]'Sure. What do you want?'[at random]".
@@ -1421,7 +1415,6 @@ Availability rule for buy the gimlet:
 	make no decision.
 
 buy the gimlet is a purchasing quip.
-Understand "buy gimlet" as buy the gimlet.
 	It mentions gimlet, gimlets.
 	The comment is "[if the bartender does not recollect how-rescue]The bartender is still talking, but we catch her eye and point to the gimlet selection. She gives a little nod to show she understood[otherwise]'I'll have the gimlet, if you don't mind,' we say, offering an appropriate bill[end if].".
 	The reply is "'[drink-nice-day]'".
@@ -1436,7 +1429,6 @@ Availability rule for buy the rusty nail:
 	make no decision.
 
 buy the rusty nail is a purchasing quip.
-Understand "buy rusty nail" or "buy nail" or "buy rusty" or "buy a rusty nail" as buy the rusty nail.
 	It mentions rusty nail, rusty nails.
 	The comment is "[if the bartender does not recollect how-rescue]We pantomime purchasing the rusty nails, while the bartender is still chatting with [the patron]. She gives us a thumbs-up[otherwise]'I'll have the [rusty nail], if you don't mind,' we say, offering an appropriate bill[end if].".
 	The reply is "'[drink-nice-day]'".
@@ -1840,7 +1832,6 @@ Availability rule for buy the goggles:
 
 buy the Britishizing goggles is a purchasing quip.
 	The printed name is "buy the British[izing] goggles".
-Understand "buy Britishizing goggles" or "buy the Britishizing goggles" or "buy goggles" or "buy the goggles" as buy the Britishizing goggles.
 	It mentions Britishizing goggles.
 	The comment is "'I'm interested in these British[izing] goggles,' we say.".
 	The reply is "'An excellent choice,' Kate assures us. 'They're the real thing, vintage made, not the plastic knock-offs that were all the rage in the 80s. Leather straps, brass fittings, top-grade lenses.'
@@ -1862,7 +1853,6 @@ Instead of taking the Slangovia map when Kate does not recollect buy the Slangov
 	say "I think we had better keep our hands off the merchandise until we're ready to buy [--] these antique paper items take smudges and damage very easily."
 
 buy the Slangovia map is a purchasing quip.
-Understand "buy Slangovia map" as buy the Slangovia map.
 	It mentions the Slangovia map.
 	The comment is "'[if Kate recollects which map was sold]I'll take the Slangovia map,' we say. 'It's not every day you see something like this.'[otherwise]I'll have this map of Slangovia,' we say.[end if]".
 	The reply is "[if Kate recollects which map was sold]'Very good,' she says. 'Too bad he didn't think to offer it to you directly! But just as well for us, I suppose.'
