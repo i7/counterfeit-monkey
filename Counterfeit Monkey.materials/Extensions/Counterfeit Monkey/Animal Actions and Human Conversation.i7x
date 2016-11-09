@@ -3939,11 +3939,11 @@ whether she hath seen slango is a questioning quip.
 
 [Your faithful researcher investigated the length of yak endowments when writing this passage. It turns out that there's an Asian restaurant that serves various species of phallus, whose website was most informative. THINGS YOU LEARN FROM THE INTERNET.]
 
-who we seem 3 is an informative quip.
-	The printed name is "who we are". The true-name is "who we seem 3".
-	Understand "are" as who we seem 3.  The comment is "'Lena, it's Andra. And company. Maybe Slango mentioned that I was auditioning a new silent partner.'".
+who we seem-3 is an informative quip.
+	The printed name is "who we are". The true-name is "who we seem-3".
+	Understand "are" as who we seem-3.  The comment is "'Lena, it's Andra. And company. Maybe Slango mentioned that I was auditioning a new silent partner.'".
 	It mentions yourself.
-	The reply is "'I don't know what you're talking about,' she says. 'But since you're here, whoever you are, I wonder whether you'd like to have a look at some merchandise of mine that could use a spruce.' [paragraph break]Aha. She wants us to prove our identity; probably has contraband that needs concealing, and wants us to do the deed as proof of trustworthiness[queue offer-contraband as immediate obligatory].".
+	The reply is "[lena-distrusts]'I don't know what you're talking about,' she says. 'But since you're here, whoever you are, I wonder whether you'd like to have a look at some merchandise of mine that could use a spruce.' [paragraph break]Aha. She wants us to prove our identity; probably has contraband that needs concealing, and wants us to do the deed as proof of trustworthiness[queue offer-contraband as immediate obligatory].".
 	It quip-supplies Lena.
 
 offer-contraband is an NPC-directed quip.
