@@ -155,11 +155,10 @@ After reading a command when the current interlocutor is not nothing and player'
 
 The new strip interlocutor from input rule is listed instead of the strip interlocutor from input rule in the After reading a command rules.
 
-The Hostel-as-subject is a subject. The printed name is "hostel". Understand "hostel" as the Hostel-as-subject.
-The Fleur d'or-as-subject is a subject. The printed name is "Fleur d'or hotel". Understand "hotel" or "fleur" or "d'or" as the fleur d'or-as-subject.
-The Cinema-as-subject is a subject. The printed name is "cinema". Understand "cinema" as the Cinema-as-subject.
-The Counterfeit Monkey-as-subject is a subject. The printed name is "Counterfeit Monkey Bar". Understand "counterfeit" or "monkey" or "bar" as the counterfeit monkey-as-subject.
-[The arbot-as-subject is a subject. The printed name is "Arbot Maps & Antiques". Understand "arbot" or "maps" or "antiques" or "&" or "antique" or "shop" as the arbot-as-subject.]
+The hostel-as-subject is a subject. The printed name is "hostel". Understand "hostel" as the hostel-as-subject.
+The fleur d'or-as-subject is a subject. The printed name is "Fleur d'or hotel". Understand "hotel" or "fleur" or "d'or" as the fleur d'or-as-subject.
+The cinema-as-subject is a subject. The printed name is "cinema". Understand "cinema" as the cinema-as-subject.
+The counterfeit monkey-as-subject is a subject. The printed name is "Counterfeit Monkey Bar". Understand "counterfeit" or "monkey" or "bar" as the counterfeit monkey-as-subject.
 
 Bureau is a subject. Understand "bureau of orthography" or "orthography" as the bureau.
 
