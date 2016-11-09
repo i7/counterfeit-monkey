@@ -536,7 +536,7 @@ Section 2 - Identifying Matched Quips
 
 [Bland as these may seem, they're the result of a lot of testing about what produces the most sensible defaults. Modify with caution.]
 
-Definition: a thing is parse-matched if it fits the parse list.
+Definition: an object is parse-matched if it fits the parse list.
 
 To decide whether (N - an object) fits the parse list:
 	(- (FindInParseList({N})) -)
@@ -557,7 +557,7 @@ Include (-
 
 Disambiguating quips is initially false.
 
-Rule for asking which do you mean when everything parse-matched is a quip:
+Rule for asking which do you mean when every parse-matched object is a quip:
 	if the current interlocutor is not a person,
 		say "[text of cannot talk without an interlocutor rule response (A)][line break]" instead; ['You're not talking to anyone right now']
 	now disambiguating quips is true;
