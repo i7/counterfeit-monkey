@@ -586,6 +586,9 @@ Test returnbook with "put problem away" holding the Problem of Adjectives in the
 
 Understand "return [something preferably held]" or "put away [something preferably held]" or "put [something preferably held] away" or "shelve [something preferably held]" as returning. Returning is an action applying to one carried thing.
 
+Does the player mean returning the Problem of Adjectives:
+	it is very likely.
+
 Sanity-check returning guidebook:
 	say "I don't think anyone will mind our having it. Books at hostels come and go, to judge by your recollections." instead.
 
