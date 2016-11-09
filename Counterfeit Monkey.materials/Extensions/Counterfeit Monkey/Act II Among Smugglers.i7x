@@ -597,7 +597,7 @@ A description-concealing rule when the Counterfeit Monkey is not visited:
 	now the origin paste is unmarked for listing.
 
 Rule for writing a topic sentence about the clientele:
-	say "[The clientele] are currently engaged in a game of darts, while [the barman] watches and [if the player wears the britishizing goggles]practises[otherwise]practices[end if] a sarcastic wit on those who embarrass themselves[if the origin paste is on the bar-top]. There is also a quantity of [Origin Paste] sitting out on the bar[end if]. ";
+	say "[The clientele] are currently engaged in a game of darts, while [the barman] watches and [if the player wears the britishizing goggles]practises[otherwise]practices[end if] a sarcastic wit on those who embarrass themselves[if the origin paste is on the bar-top]. There is also a quantity of [origin paste] sitting out on the bar[end if]. ";
 
 
 The dartboard is scenery in the Counterfeit Monkey. Understand "dart" or "darts" or "board" as the dartboard. The description is "Several guys are engaged in a lively game of darts. By their tattoos, you recogn[ize] them: they have a regular darts game in which smuggling drop-off coordinates are passed back and forth in the form of scores and the game's surrounding banter.
