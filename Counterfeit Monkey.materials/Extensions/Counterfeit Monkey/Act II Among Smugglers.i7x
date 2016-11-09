@@ -59,7 +59,7 @@ aquarium-exterior is a facade in Deep Street. It fronts east. The printed name i
 	The description is "[if Aquarium is visited]The outside manages to give an impression of poverty, gloom, and probable drug use; though, having seen the inside, I am going to guess that the real issues are sloth and kookiness[otherwise]I've never been inside the Aquarium: the outside never looked terribly savory. Perhaps that's the point[end if]."
 
 Rule for writing a topic sentence about aquarium-exterior when aquarium-exterior is not as-yet-unknown:
-	say "[The Aquarium] is to the east. [if aquarium-closed-sign is in location]There's a closed sign in the window and a forbidding atmosphere[otherwise]It's dim inside, but occasional movements suggest that the proprietor, Slango's friend Lena, is inside[end if]."
+	say "[The Aquarium] is to the east. [if aquarium-closed-sign is in location]There's a closed sign in the window and a forbidding atmosphere[otherwise]It's dim inside, but occasional movements suggest that the proprietor, Slango's friend Lena, is inside[end if]. "
 
 A ranking rule when aquarium-exterior is not as-yet-unknown and Aquarium is visited and a car (called target) is in the location:
 	increase description-rank of the target by 20.
@@ -1277,7 +1277,7 @@ When protest-scenario ends in departure:
 	now the All-purpose-officer is nowhere;
 	now the traffic-island-protesters are nowhere;
 	if the player encloses the restoration-gel rifle:
-		say "I ditch the rifle out the window [--] it's too large to fit in the car.";
+		say "[We] ditch the rifle out the window [--] it's too large to fit in the car. ";
 	now the restoration-gel rifle is carried by atlantida-woman;
 	say "Traffic is starting to move again. We'd better get on to the dead drop.";
 	if a car (called target car) is in the location:
