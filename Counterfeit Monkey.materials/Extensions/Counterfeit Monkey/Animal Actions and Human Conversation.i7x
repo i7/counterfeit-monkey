@@ -753,10 +753,10 @@ why the car does not run is a questioning quip.
 
 where cars seem-2 is an unlisted repeatable questioning quip.
 	Understand "where to" or "buy car" or "buy a car" or "where i could" or "find a car" as where cars seem-2. The printed name is "where to find a car".
-It quip-supplies the mechanic.
-The comment is "'I'm looking for a car,' we say.".
-The reply is "'Sorry.' He looks at us. '[one of]I fix them. I don't sell them[or]Perhaps you should ask somebody else[stopping].'".
-Every car is mentioned by where cars seem-2.
+	It quip-supplies the mechanic.
+	The comment is "'I'm looking for a car,' we say.".
+	The reply is "'Sorry,' he mumbles. '[one of]I fix them. I don't sell them[or]Perhaps you should ask somebody else[stopping].'".
+	Every car is mentioned by where cars seem-2.
 
 Availability rule for where cars seem-2:
 	if a car is seen:
@@ -1933,9 +1933,9 @@ It quip-supplies Kate.
 
 what types of antiques they sell here is an unlisted questioning quip.
 	Understand "type" or "kind" or "sort" or "antique" or "you" as what types of antiques they sell here.
-The comment is "'What sorts of antiques do you sell here?'"
-The reply is "'What you see around you on the floor is fairly representative,' Kate replies. 'Maps are a specialty, but we also carry older models of linguistic tools as well as unusual or vintage Atlantean artifacts.'"
-It quip-supplies Kate.
+	The comment is "'What sorts of antiques do you sell here?'"
+	The reply is "'What you see around you on the floor is fairly representative,' Kate replies. 'Maps are a specialty, but we also carry older models of linguistic tools as well as unusual or vintage Atlantean artifacts.'"
+	It quip-supplies Kate.
 
 Does the player mean discussing why Arbot now sells antiques:
 	it is very likely.
@@ -1980,7 +1980,7 @@ what the map legend means is a repeatable unlisted questioning quip.
 	It mentions map, legend, fake-legend.
 	The comment is "[one of]'The legend on this map is unusual,' we say[if the fake-legend is seen], pointing out the business of Iphis and Ianthe in the corner[otherwise]. And it is, too [--] it's a short story instead of any kind of key to the symbols on the map[end if][or]We point out the map legend again[stopping]."
 	The reply is "[one of]Kate frowns at it. 'Perhaps it's a story with some kind of local significance?' she suggests, after a moment[or]'I'm afraid I've told you what little I know about that piece,' she says[or]She reiterates that she doesn't have more to add about that piece[stopping]."
-It quip-supplies Kate.
+	It quip-supplies Kate.
 
 Instead of giving or showing the map to Kate when the fake-legend is part of the map:
 	try discussing what the map legend means.
@@ -2280,7 +2280,8 @@ Availability rule for demonstrate lost backpack:
 	if the player does not enclose the backpack:
 		it is off-limits.
 
-demonstrate the lost backpack is a performative quip. The comment is "'Note this backpack,' we say. 'The one you claimed was not inside. I have it. It was under a seat. What do you have to say for yourself now?'".
+demonstrate the lost backpack is a performative quip.
+	The comment is "'Note this backpack,' we say. 'The one you claimed was not inside. I have it. It was under a seat. What do you have to say for yourself now?'".
 	It mentions backpack.
 	The reply is "'Uh... the person who cleaned before me must've been a little bit careless,' he says. Right.".
 	It quip-supplies the ticket-taker.
@@ -2359,7 +2360,7 @@ The generic confrontational of the secretary is "citizen".
 The secretary exhibits unhelpfulnes. The secretary is alert. The secretary exhibits privateness.
 
 pass-need is an NPC-directed quip.
-The reply is "'I'm sorry, those with passes only,' she says, before waving us out. She has a bored look: not one of the more zealous staff members."
+	The reply is "'I'm sorry, those with passes only,' she says, before waving us out. She has a bored look: not one of the more zealous staff members."
 
 whether we can hath the scope is a questioning quip.
 	The printed name is "whether we can have the scope". The true-name is "whether we can hath the scope".
@@ -2726,20 +2727,23 @@ so-jet-lagged is an NPC-directed quip.
 	The reply is "'Oh my gosh, I am SO jetlagged. I feel like I'm just going to fall over, you know?'"
 	It quip-supplies the backpacking girl.
 
-sympathize about jetlag is a performative quip. The comment is "'I know how that is,' you say. Which is interesting: apparently you do know. I don't, never having left this island.". Understand "sympathise" as sympathize about jetlag.
+sympathize about jetlag is a performative quip.
+	The comment is "'I know how that is,' you say. Which is interesting: apparently you do know. I don't, never having left this island.". Understand "sympathise" as sympathize about jetlag.
 	It mentions transportation.
 	The reply is "She frowns curiously at us. 'I don't get your accent, actually. Where are you from?'".
 	It quip-supplies the backpacking girl.
 	It directly-follows so-jet-lagged.
 
-be honest about our origins is a weakly-phrased unlisted performative quip. The comment is "'[if the backpacking girl recollects lie about our origins]Actually the truth is [end if]I spent some of my life around here and some of it traveling around the Mediterranean, living on a yacht and conducting acts of international espionage. That's when I wasn't working on a university degree in language studies.'".
+be honest about our origins is a weakly-phrased unlisted performative quip.
+	The comment is "'[if the backpacking girl recollects lie about our origins]Actually the truth is [end if]I spent some of my life around here and some of it traveling around the Mediterranean, living on a yacht and conducting acts of international espionage. That's when I wasn't working on a university degree in language studies.'".
 	Understand "tell the truth" or "tell truth" or "be truthful" as be honest our origins.
 	It mentions yourself.
 	The reply is "[if the backpacking girl recollects lie about our origins]'There's nothing wrong with coming from California,' she says. 'You don't have to make something up.'[otherwise]'...Right,' she says. 'I'm guessing world-traveling professor-spies don't stay in youth hostels.'[end if]".
 	It quip-supplies the backpacking girl.
 	It indirectly-follows sympathize about jetlag.
 
-lie about our origins is a weakly-phrased performative quip. The comment is "'[if the backpacking girl recollects be honest about our origins]Actually the truth is [end if]I grew up in California,' you say. 'In... sort of a suburb of Los Angeles, though pretty far out. Fontana, if you've heard of that.'".
+lie about our origins is a weakly-phrased performative quip.
+	The comment is "'[if the backpacking girl recollects be honest about our origins]Actually the truth is [end if]I grew up in California,' you say. 'In... sort of a suburb of Los Angeles, though pretty far out. Fontana, if you've heard of that.'".
 	Understand "lieabout" as lie about our origins.
 	It mentions yourself.
 	The reply is "'Nah,' she says, without interest. 'But that's cool.'".
@@ -2750,7 +2754,8 @@ when-get-here is an NPC-directed quip.
 	The reply is "'So when did you get to Anglophone Atlantis, anyway? How long have you been here?'"
 	It quip-supplies the backpacking girl.
 
-lie about visiting is a performative quip. The comment is "'Just a few days. I wanted a little time to see the place, before it got all crazy for Serial Comma Day,' you lie smoothly.".
+lie about visiting is a performative quip.
+	The comment is "'Just a few days. I wanted a little time to see the place, before it got all crazy for Serial Comma Day,' you lie smoothly.".
 	Understand "lieabout" as lie about visiting.
 	It mentions celebration, yourself.
 	The reply is "'Oh, yeah, that was smart,' she says. 'I am really not ready for this at all.'".
@@ -2779,13 +2784,15 @@ Instead of shrugging when the current quip is what-think-so-far:
 	say "We shrug. [run paragraph on]";
 	try discussing equivocate about Atlantis.
 
-equivocate about Atlantis is an unlisted performative quip. The comment is "'I've seen better and I've seen worse.' Which is a lie, at least on my part: I've seen nothing but Atlantis my whole life.".
+equivocate about Atlantis is an unlisted performative quip.
+	The comment is "'I've seen better and I've seen worse.' Which is a lie, at least on my part: I've seen nothing but Atlantis my whole life.".
 	It mentions yourself.
 	The reply is "'Makes sense.'".
 	It quip-supplies the backpacking girl.
 	It directly-follows what-think-so-far.
 
-disapprove of Atlantis is an unlisted performative quip. The comment is "'There are a lot of things to say about the government,' we reply cautiously.".
+disapprove of Atlantis is an unlisted performative quip.
+	The comment is "'There are a lot of things to say about the government,' we reply cautiously.".
 	It mentions yourself.
 	The reply is "'Like what?'
 
@@ -2795,7 +2802,8 @@ disapprove of Atlantis is an unlisted performative quip. The comment is "'There 
 	It quip-supplies the backpacking girl.
 	It directly-follows what-think-so-far.
 
-approve of Atlantis is a performative quip. The comment is "'Sure,' you say. 'It's pretty, it's clean, there's lots of interesting stuff around.' I can see why your career isn't with a tourist board.".
+approve of Atlantis is a performative quip.
+	The comment is "'Sure,' you say. 'It's pretty, it's clean, there's lots of interesting stuff around.' I can see why your career isn't with a tourist board.".
 	It mentions yourself.
 	The reply is "'I guess.'".
 	It quip-supplies the backpacking girl.
@@ -2808,7 +2816,8 @@ grr-no-showers is an NPC-directed quip.
 Instead of saying yes or smiling when the current interlocutor is the backpacking girl and agree about showers is available:
 	try discussing agree about showers.
 
-agree about showers is a performative quip. The comment is "'I'm more used to having my own bathroom,' we agree. Which I guess is true for me; your memories appear to be a little more diverse.".
+agree about showers is a performative quip.
+	The comment is "'I'm more used to having my own bathroom,' we agree. Which I guess is true for me; your memories appear to be a little more diverse.".
 	It mentions yourself.
 	The reply is "'I know, right?'".
 	It quip-supplies the backpacking girl.
@@ -2832,7 +2841,8 @@ Availability rule for mention the louse incident:
 	if the location of the attendant is the Hostel:
 		it is off-limits.
 
-mention the louse incident is a performative quip. The comment is "'I'm afraid I made [if immediately]her[otherwise]the attendant[end if] go away,' we confess. 'I turned her blouse into something else.'".
+mention the louse incident is a performative quip.
+	The comment is "'I'm afraid I made [if immediately]her[otherwise]the attendant[end if] go away,' we confess. 'I turned her blouse into something else.'".
 	It mentions louse, attendant.
 	The reply is "She blinks, startled, and you have the impression that you've frightened her a little. 'Oh... right. My mother warned me to be careful.'".
 	It quip-supplies the backpacking girl.
@@ -2841,7 +2851,8 @@ mention the louse incident is a performative quip. The comment is "'I'm afraid I
 Instead of saying yes when the current interlocutor is the backpacking girl and agree about the attendant is available:
 	try discussing agree about the attendant.
 
-agree about the attendant is a performative quip. The comment is "'I've seen more impressive customer service,' you say.".
+agree about the attendant is a performative quip.
+	The comment is "'I've seen more impressive customer service,' you say.".
 	It mentions attendant.
 	The reply is "'You'd think they'd be a little nicer if they want repeat customers,' she grumps. I decide not to point out that the hostel is by far the cheapest lodging place on the island, is probably run on subsidies to make it possible for foreign students to visit at all, and never suffers from any lack of custom.".
 	It quip-supplies the backpacking girl.
@@ -2855,7 +2866,8 @@ Instead of frowning when the current interlocutor is the backpacking girl and di
 	say "We frown. [run paragraph on]";
 	try discussing disagree about the attendant.
 
-disagree about the attendant is an unlisted performative quip. The comment is "'She's probably paid about five dollars an hour to greet visitors and scrub toilets while everyone else has a holiday,' we say. 'This place is heavily subsidized to run at all. Having to work here is a form of punitive community service.'".
+disagree about the attendant is an unlisted performative quip.
+	The comment is "'She's probably paid about five dollars an hour to greet visitors and scrub toilets while everyone else has a holiday,' we say. 'This place is heavily subsidized to run at all. Having to work here is a form of punitive community service.'".
 	It mentions attendant.
 	The reply is "'Well, okay. But she must have done something to get assigned community service, then.'
 
@@ -2921,7 +2933,8 @@ A last after reading a command rule when current interlocutor is the backpacking
 	if the player's command matches "ask for privacy":
 		change the text of the player's command to "privacy";
 
-ask for privacy is a repeatable performative quip. The comment is "[one of]'Would you mind giving me a minute?' we say. 'Sorry, I could just use a little privacy.'[or]'I'd really like to be alone for a couple of minutes now,' we say.[or]'This will just take a moment, but you would you mind giving me the room to myself?' we say.[at random]".
+ask for privacy is a repeatable performative quip.
+	The comment is "[one of]'Would you mind giving me a minute?' we say. 'Sorry, I could just use a little privacy.'[or]'I'd really like to be alone for a couple of minutes now,' we say.[or]'This will just take a moment, but you would you mind giving me the room to myself?' we say.[at random]".
 	It mentions yourself.
 	The reply is "[one of]She waves a hand generously. 'Don't worry about it, do whatever you've got to do, I don't care,' she says. 'I'm so tired I couldn't move a muscle, but I've seen everything. I have three brothers and two sisters and I'm in women's rugby so I'm pretty hard to shock.'[or]She just grunts and waves to indicate we may strip naked at our leisure.[or]'Dude,' she says, exasperated. 'If you wanted a private room you should've not stayed at a freaking hostel.'[or]She moans.[stopping]".
 	It quip-supplies the backpacking girl.
@@ -3073,25 +3086,29 @@ Sorry about that!
 	It quip-supplies the gift shop volunteer.
 	It directly-follows why gift shop volunteer seems here.
 
-what new project that might be is a weakly-phrased questioning quip. The comment is "'What kind of new project?'".
+what new project that might be is a weakly-phrased questioning quip.
+	The comment is "'What kind of new project?'".
 	It mentions religion.
 	The reply is "'If I knew, I'd be the almighty, wouldn't I?'".
 	It quip-supplies the gift shop volunteer.
 	It directly-follows what sort of God he believes in.
 
-whether he approves of government is a questioning quip. The comment is "'Do you approve of the present government of the island[you-are-dangerous]?'".
+whether he approves of government is a questioning quip.
+	The comment is "'Do you approve of the present government of the island[you-are-dangerous]?'".
 	It mentions bureau, legislation, and gift shop volunteer.
 	The reply is "His eyes narrow sharply. 'That's not a question we get asked a lot around here,' he comments. 'It's a little like being asked whether you approve of the plumbing in your house, or the brake lines on your car. If it ever broke, you'd know, but the rest of the time you just don't give it much consideration. Underappreciated folks, our orthographers, but they work hard and they make things run smoothly, and barring the odd popular referendum we don't have to waste nearly as much time on arguing politics as folks in most countries.'".
 	It quip-supplies the gift shop volunteer.
 	It is background-information.
 
-why he isn't at the celebration is a questioning quip. The comment is "'I'm surprised you're in here and not outside enjoying the festivities,' we comment.".
+why he isn't at the celebration is a questioning quip.
+	The comment is "'I'm surprised you're in here and not outside enjoying the festivities,' we comment.".
 	It mentions celebration and gift shop volunteer.
 	The reply is "'The prizes and the candy are for kiddies,' he says. 'The part I like best's what comes later. The fireworks. They're always first rate.'".
 	It quip-supplies the gift shop volunteer.
 	It is background-information.
 
-how to see the fireworks is a questioning quip. The comment is "'[if immediately]Really? I wouldn't want to miss that. [end if]How do we see the fireworks display?'".
+how to see the fireworks is a questioning quip.
+	The comment is "'[if immediately]Really? I wouldn't want to miss that. [end if]How do we see the fireworks display?'".
 	It mentions celebration.
 	The reply is "'It's after dark,' he says, 'naturally. But you'll be able to see it from anywhere around, not to worry. They fire the blasts off over the water but you can see them from miles off.'".
 	It quip-supplies the gift shop volunteer.
@@ -3406,9 +3423,10 @@ whether he hath seen slango is a questioning quip.
 	It quip-supplies the barman.
 	It is restrictive.
 
-challenge Parker about the rum is a performative quip. The comment is "'Must be a different Slango,' we say. 'Mine is more of a root beer man. Thanks anyway though[slango-friendship].'".
+challenge Parker about the rum is a performative quip.
+	The comment is "'Must be a different Slango,' we say. 'Mine is more of a root beer man. Thanks anyway though[slango-friendship].'".
 	It mentions Slango.
-	The reply is "'Oh, [i]that[/i] Slango,' Parker says[if the origin paste is marked-visible and the origin paste is not seen], thoughtfully moving [the origin paste] sitting on the bar[end if]. 'He's been around town the last couple of days, but not today. If you know his lady friend[lena-needed], you might try her.' [paragraph break]Lady friend? [if the Aquarium is visited]Lena, presumably, but you didn't real[ize] she and Slango had progressed to quite that status[otherwise]This can only mean Lena, she being the only female native with whom Slango spends much time socially. But you wouldn't have guessed that she'd advanced to the status of [i]lady friend[/i]. Either way, Lena is a rather odd woman who keeps a used bookstore off Deep Street[end if].".
+	The reply is "'Oh, [i]that[/i] Slango,' Parker says[if the Origin Paste is marked-visible and the Origin Paste is not seen], thoughtfully moving [the Origin Paste] sitting on the bar[end if]. 'He's been around town the last couple of days, but not today. If you know his lady friend[lena-needed], you might try her.' [paragraph break]Lady friend? [if the Aquarium is visited]Lena, presumably, but you didn't real[ize] she and Slango had progressed to quite that status[otherwise]This can only mean Lena, she being the only female native with whom Slango spends much time socially. But you wouldn't have guessed that she'd advanced to the status of [i]lady friend[/i]. Either way, Lena is a rather odd woman who keeps a used bookstore off Deep Street[end if].".
 	It quip-supplies the barman.
 	It directly-follows whether he hath seen slango.
 Understand "barman" or "him" or "bartender" as challenge Parker about the rum.
@@ -3474,8 +3492,9 @@ An availability rule for play the game:
 After printing the name of play the game when play the game is recollected by the player:
 	say " again".
 
-play the game is a performative quip. The comment is "'I'd like to play [if immediately]that[otherwise if the barman recollects play the game]again[otherwise]for the Origin Paste[end if],' we say.".
-	It mentions origin paste, entertainment.
+play the game is a performative quip.
+	The comment is "'I'd like to play [if immediately]that[otherwise if the barman recollects play the game]again[otherwise]for the Origin Paste[end if],' we say.".
+	It mentions Origin Paste, entertainment.
 	Understand "again" as play the game.
 	The reply is "'[one of]Excellent. Oh, I did mention the small matter of the entry fee?'[paragraph break]I get out the roll of bills and he peels off two twenties.[paragraph break]'Thank you. [or]Paying again, are you? Very good then. [or]You are a glutton for punishment, but I don't mind taking your money for nothing. [stopping]Now, you pick your entry article, and I'll ask one of these good gentlemen to suggest a def[ense] category.'".
 	The nag is "[game-coaching][line break]".
@@ -3505,8 +3524,9 @@ To decide whether game is in progress:
 	otherwise:
 		it is off-limits.
 
-give up is a performative quip. The comment is "'Argh, mulligan,' you say. 'I don't think this wager is going to work out for me.'".
-	It mentions yourself, origin paste.
+give up is a performative quip.
+	The comment is "'Argh, mulligan,' you say. 'I don't think this wager is going to work out for me.'".
+	It mentions yourself, Origin Paste.
 	The reply is "He grins and shrugs sympathetically. 'Bad luck.'".
 	It quip-supplies the barman ]
 
@@ -3665,14 +3685,16 @@ how long he hath worked at  bar is a questioning quip.
 	It quip-supplies the barman.
 	It is background-information.
 
-what he thinks about the Bureau is a questioning quip. The comment is "'What's your opinion on the Bureau of Orthography?'".
+what he thinks about the Bureau is a questioning quip.
+	The comment is "'What's your opinion on the Bureau of Orthography?'".
 Understand "parker/barman" as what he thinks about the Bureau.
 	It mentions Bureau, barman.
 	The reply is "'I think it's just that little bit more corrupt and oppressive than usual for a governmental body,' he says. 'I'm not in fav[our], but I don't fool myself that everything would be wine and roses everywhere else, either.'".
 	It quip-supplies the barman.
 	It is background-information.
 
-whether he hates customs officials is a questioning quip. The comment is "'Do you hate Customs officials?' we ask.".
+whether he hates customs officials is a questioning quip.
+	The comment is "'Do you hate Customs officials?' we ask.".
 	Understand "parker/barman" as whether he hates customs officials.
 	It mentions immigration, barman, local-officials.
 	The reply is "'Naw. Not running anything myself, am I?'".
@@ -3737,7 +3759,8 @@ After laughing when the current interlocutor is Slango and the current quip is w
 	say "'Heh.' It's easy for you to picture [--] and thus for me to picture [--] the way Brock laughs: the startled loud crack of a laugh at the beginning, like a thunderclap, and then the rest of the laugh following after a pause. It's like for a moment he's too surprised by the awesomeness of the joke to keep going.";
 	try discussing explain Brock's probable reasons.
 
-explain Brock's probable reasons is a performative quip. The comment is "'She's old enough to be your spinster aunt and flaky enough to tell your fortune with half a tarot deck and a couple of Uno cards,' you say. 'We haven't got a lot of clues about what your type is, but I doubt Brock would have guessed Lena.'".
+explain Brock's probable reasons is a performative quip.
+	The comment is "'She's old enough to be your spinster aunt and flaky enough to tell your fortune with half a tarot deck and a couple of Uno cards,' you say. 'We haven't got a lot of clues about what your type is, but I doubt Brock would have guessed Lena.'".
 	It mentions Lena.
 	The reply is "'She's thirty-two,' says Slango crisply. 'She runs Radio Free Atlantida single-handed with electronics she built herself. And if she [i]were[/i] old enough to be my spinster aunt, that would still be my business.'
 
@@ -3748,11 +3771,11 @@ explain Brock's probable reasons is a performative quip. The comment is "'She's 
 	It directly-follows who we seem.
 	The proper scene is consulting-Slango.
 
-mutter darkly is a performative quip. It directly-follows explain Brock's probable reasons.
+mutter darkly is a performative quip.
+	It directly-follows explain Brock's probable reasons.
 	The comment is "I grumble under our breath about people who are hung up on their personal issues when there are useful jobs to be done."
 	The reply is "Slango pretends not to hear."
 	It quip-supplies Slango.
-
 
 Report smiling when the current interlocutor is Slango and the current quip is explain Brock's probable reasons:
 	say "We smile crookedly. You aren't enjoying the imputation about you and Brock because you're pretty much afraid it's right, and I'm anxious to get on to the part of this encounter where we head down to the yacht and put Atlantis behind us. So it's not the most sincere smile we've ever smiled." instead.
@@ -3844,7 +3867,8 @@ cant-leave-without is an NPC-directed quip.
 Or maybe he's saying that to the me half of us. Right now, it's true that I'm not keen on the prospect of hanging out in Atlantis. We're already way behind the plan."
 
 
-complain about the inefficiency of this scheme is a performative quip. The comment is "Sorry, but I have to get this out there. 'I was really expecting a smoother escape plan when I arranged to work with your operation,' I say.".
+complain about the inefficiency of this scheme is a performative quip.
+	The comment is "Sorry, but I have to get this out there. 'I was really expecting a smoother escape plan when I arranged to work with your operation,' I say.".
 	It mentions plans, yourself.
 	The reply is "Slango eyes us with disfav[our]. 'Andra, you got a moron up in your head. Kid [--] Alex [--] we aren't travel agents.'".
 	It quip-supplies Slango.
@@ -3999,7 +4023,7 @@ A first conversation-reply rule when the current interlocutor is Lena:
 	if the preamps are marked-visible and Lena is not urgently eager-to-speak:
 		if Lena does not recollect preamps-complaint or a random chance of 1 in 3 succeeds:
 			queue preamps-complaint as immediate obligatory;
-	if the monocle is marked-visible and Lena is not urgently eager-to-speak and lena recollects who we seem 3:
+	if the monocle is marked-visible and Lena is not urgently eager-to-speak and lena recollects who we seem-3:
 		if Lena does not recollect monocle-remark:
 			queue monocle-remark;
 	carry out the caching scope activity with the player.
@@ -4047,13 +4071,15 @@ Availability rule for calm Lena:
 	if the player recollects ream-approval and the player recollects odes-approval:
 		it is off-limits;
 
-calm Lena is a performative quip. The comment is "'Chill and let the master work,' you say. 'Anyone could pick a few letters out of your contraband. Trick is coming up with output that won't disrupt the Feng Shui of this flea market you've got going on.'".
+calm Lena is a performative quip.
+	The comment is "'Chill and let the master work,' you say. 'Anyone could pick a few letters out of your contraband. Trick is coming up with output that won't disrupt the Feng Shui of this flea market you've got going on.'".
 	It mentions Lena, modem, reams, ode, preamp.
 	The reply is "Lena visibly relaxes. 'It's a privilege is what it is,' she says. 'Me letting you [if the player wears the Britishizing goggles]practise[otherwise]practice[end if] on my stuff. And no one said anything about contraband. Contraband's a bad word. Very hard to manipulate.'".
 	It quip-supplies Lena.
 	It directly-follows modem-complaint, ode-complaint, preamp-complaint, reams-complaint.
 
-tease Lena about selling office supplies is a performative quip. The comment is "'May I recommend that you branch out into office supply?' you ask. 'It's a lucrative business. Pamphlet-printing is very popular with the subversive element.'".
+tease Lena about selling office supplies is a performative quip.
+	The comment is "'May I recommend that you branch out into office supply?' you ask. 'It's a lucrative business. Pamphlet-printing is very popular with the subversive element.'".
 	It mentions reams.
 	The reply is "'Not as lucrative as untariffed electronics,' she says out of the corner of her mouth.".
 	It quip-supplies Lena.
@@ -4071,7 +4097,8 @@ The door slams behind her and she comes back over[or]Lena taps her finger agains
 needs-disguise is an NPC-directed quip.
 	The reply is "'Of course,' she says, contemplating [the list of undisguised fake disguisable marked-visible things], 'this will be pointless unless we can also fool an authentication scope.'"
 
-what she kens about authentication scopes is an unlisted repeatable questioning quip. The printed name is "what she knows about authentication scopes". Understand "knows" or "know" as what she kens about authentication scopes.
+what she kens about authentication scopes is an unlisted repeatable questioning quip.
+	The printed name is "what she knows about authentication scopes". Understand "knows" or "know" as what she kens about authentication scopes.
 	It mentions monocle, regulation authentication scope.
 	The comment is "'Tell me more about authentication scopes,' [we] say.".
 	The reply is "'Main thing I know is that there are more of them in use every day,' she says. 'Keeping our streets and shops clear of fakes. Or so they say.'"
@@ -4084,14 +4111,15 @@ excellent-work is an NPC-directed quip.
 	The reply is "'Excellent,' Lena mutters under her breath."
 
 nice-paste is an NPC-directed quip.
-	The reply is "'Glad to see you've got plenty of origin paste,' Lena remarks. 'It's such a useful thing to have. Smells so nice.'"
+	The reply is "'Glad to see you've got plenty of Origin Paste,' Lena remarks. 'It's such a useful thing to have. Smells so nice.'"
 
 An availability rule for quip-about-paste:
-	if Lena does not recollect who we seem 3:
+	if Lena does not recollect who we seem-3:
 		it is off-limits;
 	make no decision.
 
-quip-about-paste is a weakly-phrased performative quip. The printed name is "quip about paste". Understand "quip" or "about" or "paste" as quip-about-paste.
+quip-about-paste is a weakly-phrased performative quip.
+	The printed name is "quip about paste". Understand "quip" or "about" or "paste" as quip-about-paste.
 	It mentions Origin Paste.
 	The comment is "'Makes a great facial scrub,' you say. 'I slather the stuff on.'"
 	The reply is "'Well, honey, all I can say is, you look so real.'"
@@ -4445,7 +4473,8 @@ An availability rule for whether she might let us into the language studies semi
 	if the seminar room is visited:
 		it is off-limits.
 
-whether she might let us into the language studies seminar room is a questioning quip. The comment is "'Could you possibly let me into the Language Studies Seminar Room?' we ask. 'There's something I'd like to do in there.'".
+whether she might let us into the language studies seminar room is a questioning quip.
+	The comment is "'Could you possibly let me into the Language Studies Seminar Room?' we ask. 'There's something I'd like to do in there.'".
 	Understand "higgate" or "her" or "professor" as whether she might let us into the language studies seminar room.
 	It mentions seminar door, key.
 	The reply is "'Er... Do you have some student ID or something? You see, and this is a little embarrassing, I'm afraid I'm not quite placing you at the moment, and I'm not supposed to allow students into that room unless they have some affiliation with the department.'
@@ -4457,7 +4486,8 @@ An availability rule for how we might return a book:
 	if the player does not enclose Problem of Adjectives:
 		it is off-limits.
 
-how we might return a book is a demonstration quip. The comment is "'I need to return this book to the department library,' we say, holding out [Problem of Adjectives].".
+how we might return a book is a demonstration quip.
+	The comment is "'I need to return this book to the department library,' we say, holding out [Problem of Adjectives].".
 	Understand "can" or "could" or "might" as how we might return a book.
 	It mentions Problem of Adjectives.
 	The reply is "'Oh! Yes, all right,' she says. 'Did you like it? It's a good overview of the subject, didn't you think? I'm afraid the author once annoyed Professor Waterstone at a conference, or we might have had her around to speak at one of our colloquia...'".
@@ -4499,7 +4529,8 @@ But ultimately, PAINT didn't fit too well into the puzzle structure I was buildi
 	if the paint is not visible or the paint is released:
 		it is off-limits.
 
-whether she needs the paint is an unlisted questioning quip. The comment is "'Looks like you've got some paint left over from the trim job. Very pretty, by the way.'".
+whether she needs the paint is an unlisted questioning quip.
+	The comment is "'Looks like you've got some paint left over from the trim job. Very pretty, by the way.'".
 	Understand "higgate" or "professor" as whether she needs the paint.
 	It mentions paint.
 	The reply is "'Oh! Yes, I never got around to disposing of it, I'm afraid. The regulations have gotten so strict lately. It might be toxic, so you're not supposed to just throw it away, and of course I could transform it into something else but they look askance on the disposal even of transformed chemicals.'".
@@ -4514,7 +4545,8 @@ Instead of asking Professor Higgate for the paint:
 	otherwise:
 		try discussing if we can take paint.
 
-if we can take the paint is a questioning quip. The comment is "'I'd be happy to dispose of the paint for you,' we say. 'It would be no trouble.'".
+if we can take the paint is a questioning quip.
+	The comment is "'I'd be happy to dispose of the paint for you,' we say. 'It would be no trouble.'".
 	It mentions paint.
 	The reply is "'Oh! Well, that's very kind of you. Make sure you do it properly!'".
 	It quip-supplies Professor Higgate.
@@ -4544,6 +4576,13 @@ Before going from Higgate's office when the paint is released and the player doe
 paint-recycling is an NPC-directed quip.
 	The reply is "[one of]'Wait [--] weren't you going to dispose of the paint for me?'[or]'Do take the paint with you now if you want it,' she says. 'I may be gone later.'[or]'You're forgetting the paint again,' she says.[stopping]". Before going from Higgate's office when the paint is released and the player does not carry the paint:
 	try Professor Higgate discussing paint-recycling instead. ]
+
+thank Professor Higgate is an unlisted thanking quip.
+	It mentions Professor Higgate. It assumes thank-higgate.
+	The comment is "'Thanks a lot!'".
+	The reply is "'[one of]Don't mention it,[or]That's enough![stopping]' she says.".
+	It quip-supplies Professor Higgate.
+
 
 which conlangs she kens is a questioning quip.
 	The printed name is "which conlangs she knows". The true-name is "which conlangs she kens".
@@ -4620,7 +4659,8 @@ Availability rule for why he doesn't go to the demonstration:
 	if the player does not know waterstone-invited:
 		it is off-limits.
 
-why he doesn't go to the demonstration is a questioning quip. The comment is "'I'm surprised you're not at this demonstration,' we say, gesturing towards the invitation on his desk. 'It looks interesting.'".
+why he doesn't go to the demonstration is a questioning quip.
+	The comment is "'I'm surprised you're not at this demonstration,' we say, gesturing towards the invitation on his desk. 'It looks interesting.'".
 	Understand "professor" or "waterstone" as why he doesn't go to the demonstration.
 	It mentions invitation.
 	The reply is "'Does it?' he asks wearily. 'It sounds like a dead bore to me. Unfortunately, I can be neither at the demonstration nor at home at the moment. I have this blasted presentation to finish[if the player does not know carpets-shampooed], and my wife is having the carpets shampooed[carpets-shampooed] [--] on a holiday! [--] and won't let me work in my own study[otherwise] and thanks to the carpets I can't work in my own study[end if].'".
@@ -4836,15 +4876,18 @@ what-day is an NPC-directed quip.
 
 The waxen look melts and he grins. 'Thank god. It's harder than you'd expect being a rock.'"
 
-weird-you-look is an NPC-directed quip. The reply is "'It's weird [--] you have a different face but the expressions are still yours. It's like you have a really good rubber mask on.'"
+weird-you-look is an NPC-directed quip.
+	The reply is "'It's weird [--] you have a different face but the expressions are still yours. It's like you have a really good rubber mask on.'"
 
-suggest we get out of here is a performative quip. The comment is "'You've been a lump of igneous all day,' you say. 'It's getting dark out there. If we don't get out now, we're going to get caught by some janitor with a privative affixer.'".
+suggest we get out of here is a performative quip.
+	The comment is "'You've been a lump of igneous all day,' you say. 'It's getting dark out there. If we don't get out now, we're going to get caught by some janitor with a privative affixer.'".
 	It mentions yourself, bureau, security.
 	The reply is "'I didn't have time to run the tests I wanted to run on the T-inserter. It'll take three minutes and then we can go. We need to do abstracts, animates, and a stability check.'".
 	It quip-supplies Brock.
 	It is restrictive.
 
-insist on leaving immediately is a performative quip. The comment is "I say, 'If we get caught down here, we'll all be put on trial, my father could lose his job, the professor who helped me get in here might face prosecution...'
+insist on leaving immediately is a performative quip.
+	The comment is "I say, 'If we get caught down here, we'll all be put on trial, my father could lose his job, the professor who helped me get in here might face prosecution...'
 
 'Not to mention the part,' you cut in, 'where we all get stuck on a shelf to eternally contemplate the spelling of [']knickknack['].'".
 	It mentions yourself, bureau, family, security.
@@ -4856,7 +4899,8 @@ insist on leaving immediately is a performative quip. The comment is "I say, 'If
 	It quip-supplies Brock.
 	It directly-follows suggest we get out of here.
 
-accept Brock's lunacy is a performative quip. The comment is "'I suppose it's pointless to argue,' you say. I'm glad this makes [i]you[/i] feel warm and fuzzy. 'Let's do this thing and get out.'".
+accept Brock's lunacy is a performative quip.
+	The comment is "'I suppose it's pointless to argue,' you say. I'm glad this makes [i]you[/i] feel warm and fuzzy. 'Let's do this thing and get out.'".
 	It mentions t-inserter, yourself, plans.
 	The reply is "'You know it.'".
 	It quip-supplies Brock.
@@ -4869,24 +4913,28 @@ An availability rule for complain about Brock's recklessness:
 		it is off-limits;
 	make no decision.
 
-complain about Brock's recklessness is a performative quip. The comment is "'This was rash, even for you,' you say. 'Wandering into the heart of the Bureau with no back-up and no escape plan, when we had a timed extraction to complete? You could've taken me and Slango down with you.'".
+complain about Brock's recklessness is a performative quip.
+	The comment is "'This was rash, even for you,' you say. 'Wandering into the heart of the Bureau with no back-up and no escape plan, when we had a timed extraction to complete? You could've taken me and Slango down with you.'".
 	It mentions Brock, yourself, bureau.
 	The reply is "'Sweetheart, don't,' Brock says. 'Don't do this now. You're not yourself.'".
 	It quip-supplies Brock.
 
-remind Brock that synthesis was necessary because of him is a performative quip. The comment is "'Not myself,' you repeat coldly. 'I wouldn't need to be synthesized if Andra's face hadn't been caught on film. And whose fault was [i]that[/i]?'".
+remind Brock that synthesis was necessary because of him is a performative quip.
+	The comment is "'Not myself,' you repeat coldly. 'I wouldn't need to be synthesized if Andra's face hadn't been caught on film. And whose fault was [i]that[/i]?'".
 	It mentions Brock, yourself.
 	The reply is "Silence. 'I'm sorry that that happened,' he says, very deliberately. 'But you're not breaking up with me down here, with a spy inside your head. We'll do this later if we do it at all.'".
 	It quip-supplies Brock.
 	It directly-follows complain about Brock's recklessness.
 
-defend Alex is a performative quip. The comment is "'Alex is not a spy,' you say. 'He's naive and[--]' I make us stop talking right there, thanks very much.".
+defend Alex is a performative quip.
+	The comment is "'Alex is not a spy,' you say. 'He's naive and[--]' I make us stop talking right there, thanks very much.".
 	It mentions Brock, yourself.
 	The reply is "'He's us,' Brock replies. 'Come on, let's just get this over with and get out of here. We can talk this all out when we're all feeling more like ourselves, okay?'".
 	It quip-supplies Brock.
 	It directly-follows remind brock that  synthesis was necessary because of him.
 
-accept his advice is a performative quip. The comment is "'Fine.' I can feel the adrenaline from your anger coursing through us. It makes me want to take a swing at something, but you have it under control.".
+accept his advice is a performative quip.
+	The comment is "'Fine.' I can feel the adrenaline from your anger coursing through us. It makes me want to take a swing at something, but you have it under control.".
 	It mentions yourself.
 	The reply is "'Okay[casually queue you-okay].'".
 	It quip-supplies Brock.
@@ -4904,7 +4952,8 @@ An availability rule for  discover why Brock got stuck here:
 		it is off-limits;
 	make no decision.
 
-discover why Brock got stuck here is a performative quip. The comment is "'How did this happen?'".
+discover why Brock got stuck here is a performative quip.
+	The comment is "'How did this happen?'".
 	It mentions Brock, yourself, security, bureau.
 	The reply is "'How do you think? I hung back after a demonstration earlier, trying to collect the extra information I needed, but before I could finish, they'd noticed I was missing from the group and sent someone back to look for me. And better to go inanimate than to be definitely caught in human form.'".
 	It quip-supplies Brock.
@@ -4930,7 +4979,8 @@ Report shrugging when the current quip is you-okay:
 Instead of saying yes when the current quip is you-okay:
 	try discussing claim-to be fine.
 
-claim-to be fine is a performative quip. The comment is "'Fine,' you say. 'It's like running in a three-legged race all day, and I don't welcome the interference, but I'll be fine.'". The printed name is "claim to be fine". The true-name is "claim-to be fine".
+claim-to be fine is a performative quip.
+	The comment is "'Fine,' you say. 'It's like running in a three-legged race all day, and I don't welcome the interference, but I'll be fine.'". The printed name is "claim to be fine". The true-name is "claim-to be fine".
 Understand "claim" or "to" as claim-to be fine.
 	It mentions yourself, Brock.
 	The reply is "'Good.' He pauses. 'New you is kind of hot, but I miss the old version.'".
@@ -4965,7 +5015,8 @@ I glare at him.
 
 'I know there's no time,' he says. 'But there are supposed to be all sorts of things in the Bureau sub-basement that have never seen the light of day. DCL projects that went wrong, secret government experiments, possibly a buried command cen[ter].'"
 
-what buried command center he heard of is a weakly-phrased questioning quip. The comment is "'Buried command cen[ter]?' you ask. 'Isn't there a pretty unsecret command center above-ground?'".
+what buried command center he heard of is a weakly-phrased questioning quip.
+	The comment is "'Buried command cen[ter]?' you ask. 'Isn't there a pretty unsecret command center above-ground?'".
 	It mentions Bureau, Brock.
 	The reply is "'Sure. But you hear rum[our]s that the instructions come up from the sub-basement. Their chief leader, maybe.'".
 	It quip-supplies Brock.
@@ -5203,7 +5254,8 @@ Instead of saying no when my mother is marked-visible and we're his girlfriend i
 Instead of saying yes when my mother is marked-visible and we're his girlfriend is available:
 	try discussing we're his girlfriend.
 
-we're his girlfriend is an informative quip. The comment is "'Yes [--] sort of. We've been... I mean, we've been on a few dates.' That's you, and I have to say you don't sound as keen on dating ourself as you might.".
+we're his girlfriend is an informative quip.
+	The comment is "'Yes [--] sort of. We've been... I mean, we've been on a few dates.' That's you, and I have to say you don't sound as keen on dating ourself as you might.".
 	Understand "we are" or "to be" as we're his girlfriend.
 	It mentions romance, yourself.
 	The reply is "She raises her eyebrows. 'I see. How secretive of him not to bring you around. And where is Alex now? I need to speak with him. He's been hard to reach lately[queue how-well-do-you as immediate obligatory].'
@@ -5236,13 +5288,15 @@ we don't ken is an informative quip.
 how-well-do-you is an NPC-directed quip.
 	The reply is "'How well do you know him?' Mother asks. She immediately catches herself, and adds: 'I'm not inquiring into the details of your relationship. But I am concerned about him. He has seemed very unhappy recently about his work. Has he said anything to you about that? Wanting to leave the program, or change careers, or... anything?' [paragraph break]I didn't think she'd noticed."
 
-reassure Mother is a performative quip. The comment is "'I think it's graduate school getting to him a bit,' we lie. I am pretty sure this is what my mother thinks: she has little time for whining or sulking, and I believe she considers any ideological queasiness I may have exhibited to be just malingering about research that is not going well.".
+reassure Mother is a performative quip.
+	The comment is "'I think it's graduate school getting to him a bit,' we lie. I am pretty sure this is what my mother thinks: she has little time for whining or sulking, and I believe she considers any ideological queasiness I may have exhibited to be just malingering about research that is not going well.".
 	It mentions yourself, education.
 	The reply is "'Really?' she says. 'Hm.' [paragraph break]I would like her to go on, but she doesn't: because it would be indiscreet, because she doesn't trust us.".
 	It quip-supplies my mother.
 	It directly-follows how-well-do-you.
 
-suggest the truth is a performative quip. The comment is "'I think he feels that there are things linguistic studies could accomplish if we were less hampered by local laws and corporate interests,' we say. 'Big improvements to quality of life for the poor, for instance.'".
+suggest the truth is a performative quip.
+	The comment is "'I think he feels that there are things linguistic studies could accomplish if we were less hampered by local laws and corporate interests,' we say. 'Big improvements to quality of life for the poor, for instance.'".
 	It mentions constructed language.
 	The reply is "She looks at us keenly. 'Did he say what he intended to do about that?'".
 	It quip-supplies my mother.
@@ -5250,8 +5304,8 @@ suggest the truth is a performative quip. The comment is "'I think he feels that
 	It directly-follows how-well-do-you.
 
 we wouldn't do anything dangerous is an informative quip.
-Understand "danger" as we wouldn't do anything dangerous.
-The comment is "'I'm sure he wouldn't do anything dangerous,' we lie. 'After all, his ideas wouldn't be useful to anyone if he were arrested.'".
+	Understand "danger" as we wouldn't do anything dangerous.
+	The comment is "'I'm sure he wouldn't do anything dangerous,' we lie. 'After all, his ideas wouldn't be useful to anyone if he were arrested.'".
 	It mentions bureau, yourself.
 	The reply is "'No, of course!' But I think she knows we're lying about something, even if she is not sure what that something is.".
 	It quip-supplies my mother.
@@ -5260,7 +5314,8 @@ The comment is "'I'm sure he wouldn't do anything dangerous,' we lie. 'After all
 Instead of saying no when my mother is marked-visible and probably nothing is available:
 	try discussing probably nothing.
 
-probably nothing is an unlisted weakly-phrased informative quip. The comment is "'No, no. Probably nothing,' we say.".
+probably nothing is an unlisted weakly-phrased informative quip.
+	The comment is "'No, no. Probably nothing,' we say.".
 	It mentions yourself.
 	The reply is "'Hm.'".
 	It quip-supplies my mother.
@@ -5272,7 +5327,8 @@ not-planning-dinner is an NPC-directed quip.
 Instead of saying no or saying yes when my mother is marked-visible and explain we might go out is available:
 	try discussing explain we might go out.
 
-explain we might go out is a performative quip. The comment is "'We were thinking of going out.'".
+explain we might go out is a performative quip.
+	The comment is "'We were thinking of going out.'".
 	It mentions food, yourself.
 	The reply is "'Were you?' she says lightly. 'Then you're definitely going to see him this evening. Where do you have reservations?' [paragraph break]There, see: I wish you wouldn't embellish on your own.".
 	It quip-supplies my mother.
@@ -5282,7 +5338,8 @@ explain we might go out is a performative quip. The comment is "'We were thinkin
 Instead of shrugging when my mother is marked-visible and  claim he didn't say  is available:
 	try discussing  claim he didn't say .
 
-claim he didn't say is a weakly-phrased performative quip. The comment is "'Er... he didn't tell me. I assume he'll explain later.'".
+claim he didn't say is a weakly-phrased performative quip.
+	The comment is "'Er... he didn't tell me. I assume he'll explain later.'".
 Understand "did" or "not" or "alex" as claim he didn't say.
 	It mentions food.
 	The reply is "'...Mm.'".
@@ -5292,7 +5349,8 @@ Understand "did" or "not" or "alex" as claim he didn't say.
 monocle-comment is an NPC-directed quip.
 	The reply is "'He must like you,' she says, 'if he lets you wear his monocle. He's very proud of that. But do be careful with it [--] it would be a little embarrassing if someone were to catch you with it. Alex's father was technically not supposed to remove it from the Bureau.'"
 
-agree to take care of the monocle is a weakly-phrased performative quip. The comment is "'I'll be very careful with it.'".
+agree to take care of the monocle is a weakly-phrased performative quip.
+	The comment is "'I'll be very careful with it.'".
 	It mentions monocle.
 	The reply is "'I knew you would.'".
 	It quip-supplies my mother.
@@ -5382,7 +5440,8 @@ what-are-you is an NPC-directed quip.
 
 'It's pointless. You could have done a great deal for the Bureau from within. I was trying to help you see that.'"
 
-lay out our reasons is a performative quip. The comment is "'I want to do something that matters,' I say. 'I don't see my work making a speck of difference here.'".
+lay out our reasons is a performative quip.
+	The comment is "'I want to do something that matters,' I say. 'I don't see my work making a speck of difference here.'".
 	It mentions immigration, yourself.
 	The reply is "'You mean you don't see [i]my[/i] work as important,' he says. 'Got that from your mother, I imagine.'".
 	It quip-supplies father.
@@ -5394,7 +5453,8 @@ Instead of saying no when father is marked-visible and be comforting is availabl
 Instead of saying sorry when father is marked-visible and be comforting is available:
 	try discussing be comforting.
 
-be comforting is a weakly-phrased performative quip. Understand "comfort" as be comforting. The comment is "'It did matter to me that you tried to help,' we say. 'But no one here is ever going to try my solution. I have to leave if I want to, well, to take my shot at saving the world, essentially.'".
+be comforting is a weakly-phrased performative quip.
+	Understand "comfort" as be comforting. The comment is "'It did matter to me that you tried to help,' we say. 'But no one here is ever going to try my solution. I have to leave if I want to, well, to take my shot at saving the world, essentially.'".
 	It mentions yourself, research.
 	The reply is "'That's not—' He bangs his fist into the wall and pulls it away with a wince. 'That's not how it works. Jesus. Saving the world is boring and incremental and institutional. I mean, it will be for you too — if you want to do your crazy project the first thing you're going to need to do is spend hours in meetings with NGOs.'".
 	It quip-supplies Father.
@@ -5403,13 +5463,15 @@ be comforting is a weakly-phrased performative quip. Understand "comfort" as be 
 new-friends is an NPC-directed quip.
 	The reply is "'So your partners in crime are, what, smugglers? Industrial saboteurs? That's wonderful. Finally some [i]role models[/i].'"
 
-quibble is a weakly-phrased performative quip. The comment is "'We prefer to think of it as ensuring that important technology does not remain the sole property of a restrictive hegemony,' we say. ".
+quibble is a weakly-phrased performative quip.
+	The comment is "'We prefer to think of it as ensuring that important technology does not remain the sole property of a restrictive hegemony,' we say. ".
 	It mentions yourself.
 	The reply is "'Okay, around here we still call that theft,' Father says.".
 	It quip-supplies father.
 	It directly-follows new-friends.
 
-deny being a spy is a weakly-phrased performative quip. The comment is "'The law doesn't work unless it's got a few human beings outside of it,' you say [--] drawing on one of Slango's sayings. 'Every tyranny creates its own balancing force.'".
+deny being a spy is a weakly-phrased performative quip.
+	The comment is "'The law doesn't work unless it's got a few human beings outside of it,' you say [--] drawing on one of Slango's sayings. 'Every tyranny creates its own balancing force.'".
 	It mentions yourself.
 	The reply is "Father's expression goes extremely dry. 'Oh, yes, we tried that theory around here too. I regret to give away the ending, but it's a risky idea.'".
 	It quip-supplies father.
@@ -5454,13 +5516,14 @@ Carry out waving a letter-remover at the spill creating something in the presenc
 nice-clean-up is an NPC-directed quip.
 	The reply is "'Nice clean-up method,' [Nexami] comments. 'Beats using a rag.' At least, I think that's what he said."
 
-say thanks for pointing out  spill is a performative quip. The comment is "'Hey, thanks.'".
+say thanks for pointing out spill is a thanking quip. The comment is "'Hey, thanks.'".
 	It mentions spill.
 	The reply is "He makes a you're-welcome gesture and goes back to contemplating the sea view.".
 	It quip-supplies Nexami Engeo.
 
 
-that it's one of those things atlanteans learn is an informative quip. The comment is "'I'm afraid you wouldn't be impressed if you were from around here,' we say. 'It's one of those things most Atlanteans learn early. Main reason why paper towels don't have much of a market here.'".
+that it's one of those things atlanteans learn is an informative quip.
+	The comment is "'I'm afraid you wouldn't be impressed if you were from around here,' we say. 'It's one of those things most Atlanteans learn early. Main reason why paper towels don't have much of a market here.'".
 	It mentions spill.
 	The reply is "'Hm!' Not the most talkative tourist ever, is he?".
 	It quip-supplies Nexami Engeo.
@@ -5621,12 +5684,13 @@ Rule for quip-introducing how fusion happens:
 	say "Fused? We should be two pieces by now. Maybe she has an explanation? But you seem to be focused on her gun hand. How can you be so calm?";
 	strip how fusion happens from the table.
 
-how fusion happens is a questioning quip. The comment is "'Fused?' [we] repeat.".
-It mentions yourself.
-The reply is "'Sometimes a synthetic person gets broken,' Atlantida says. 'Forced into a choice [if the story viewpoint is second person singular]he[otherwise]she[end if] would never have made on [if the story viewpoint is second person singular]his[otherwise]her[end if] own. Impossible to separate because you aren't two whole people any more.'".
-It quip-supplies Atlantida-woman.
-It directly-follows gel-shot.
-Understand "fused" or "what has happened" or "what happened" or "happened" or "chance" or "explanation" or "separation" or "us" or "ourselves" or "stuck" or "gel rifle" as how fusion happens.
+how fusion happens is a questioning quip.
+	The comment is "'Fused?' [we] repeat.".
+	It mentions yourself.
+	The reply is "'Sometimes a synthetic person gets broken,' Atlantida says. 'Forced into a choice [if the story viewpoint is second person singular]he[otherwise]she[end if] would never have made on [if the story viewpoint is second person singular]his[otherwise]her[end if] own. Impossible to separate because you aren't two whole people any more.'".
+	It quip-supplies Atlantida-woman.
+	It directly-follows gel-shot.
+	Understand "fused" or "what has happened" or "what happened" or "happened" or "chance" or "explanation" or "separation" or "us" or "ourselves" or "stuck" or "gel rifle" as how fusion happens.
 
 thing-about-democracy is an NPC-directed quip.
 	The reply is "Atlantida smiles with half a mouth. 'You've arrived on a difficult day. In the ordinary course of things, I keep things quiet: the spirit of democracy, but none of the sordid wrangling and bribes and corruption and compromise. It's only when the spirit of the island itself is threatened, that we have to resort to such extreme measures[casually queue more-about-democracy][if the infertile astrologer is marked-visible].'
@@ -5646,7 +5710,8 @@ more-about-democracy is an NPC-directed quip.
 	The reply is "'Do you think the protesters would feel happier if there had been a citizen referendum where their position had been voted down? The outcome would have been just the same, but they would feel much more responsible for it; surely an unpleasant position for them to be in, considering their moral objections.'"
 
 
-whether the protesters feel the same way is a questioning quip. The comment is "'What about the protesters?' [we] ask. 'They don't like your policy. Are you sure you're really representing the spirit of Atlantis, or have you gone some other way of your own?'".
+whether the protesters feel the same way is a questioning quip.
+	The comment is "'What about the protesters?' [we] ask. 'They don't like your policy. Are you sure you're really representing the spirit of Atlantis, or have you gone some other way of your own?'".
 	It mentions security, bureau.
 	The reply is "Atlantida shrugs off our question. 'A vocal minority. Most people are content to keep what they have. Imagine the chaos if everyone had free access to the Bureau's complete range of letter tools, and if there were no laws about how to use them[casually queue more-about-democracy].'".
 	It quip-supplies Atlantida-woman.
@@ -5692,12 +5757,14 @@ Check shooting Atlantida-woman with the anagramming gun:
 anti-anagram comment is an NPC-directed quip.
 	The reply is "'I'm not so vulnerable,' she remarks. 'They chose my name carefully.'"
 
-that the outside world matters is an unlisted informative quip. The comment is "'We have important things to do in the outside world. Atlantis can't keep all of its power to itself.'".
+that the outside world matters is an unlisted informative quip.
+	The comment is "'We have important things to do in the outside world. Atlantis can't keep all of its power to itself.'".
 	It mentions yourself.
 	The reply is "'And do you know what would happen if Atlantean power were to spread beyond our borders? The rest of the world would become just like us. The incentive to wipe out every diversity, every variation of language would be too great.'".
 	It quip-supplies Atlantida-woman.
 
-how she justifies cold storage is an unlisted questioning quip. The comment is "'How do you excuse putting people in Cold Storage? It's a human rights violation.'".
+how she justifies cold storage is an unlisted questioning quip.
+	The comment is "'How do you excuse putting people in Cold Storage? It's a human rights violation.'".
 	It mentions crime, legislation.
 	The reply is "Atlantida makes a motion as though brushing away an insect. 'The laws of Atlantis are special. They keep us strong; they keep the rest of the world safe.'".
 	It quip-supplies Atlantida-woman.
@@ -5922,7 +5989,7 @@ When Atlantida-shooing begins:
 Atlantida-shooing ends when the location is Personal Apartment  and the portcullis is open.
 
 you-had-better-leave is an NPC-directed quip.
-	The reply is "'You'd better leave, quickly,' she says. 'I'll make sure your friends get out, but it will be easier if we don't have to explain you as well.'"
+	The reply is "[thank-atlantida]'You'd better leave, quickly,' she says. 'I'll make sure your friends get out, but it will be easier if we don't have to explain you as well.'"
 
 how to fix the fusion is a questioning quip.
 	The comment is "'The two of us, Alex and Andra, we seem to be stuck together permanently. You don't happen to know how to remove our fusion?'"
