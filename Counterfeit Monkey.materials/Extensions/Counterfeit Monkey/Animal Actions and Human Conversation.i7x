@@ -3532,8 +3532,8 @@ The wager-name is some text that varies.
 The wager-judging rule is a rule that varies. The wager-judging rule is the liquid wager rule.
 The wager-index is a number that varies.
 
-Setting action variables for giving something to the barman when play the game is the current quip and the wager is yourself:
-	try showing the noun to the barman instead.
+Instead of giving something to the barman when play the game is the current quip and the wager is yourself:
+	try showing the noun to the barman.
 
 Understand "choose [something]" as showing it to when play the game is the current quip.
 
