@@ -69,12 +69,19 @@ Carry out buying something from someone (this is the standard purchasing rule):
 	otherwise:
 		carry out the refusing to buy activity with the noun;
 
+Listing recommended quips is an activity.
+
 To recommend (chosen list - a list of things):
 	empty out the Table of Scored Listing;
 	repeat with item running through chosen list:
 		choose a blank row in the Table of Scored Listing;
 		now output entry is the item;
-	say "What would you like to do: [the prepared list delimited in disjunctive style]?"; 
+	carry out the listing recommended quips activity;
+	now suppress-quip-hints is true;
+	[We don't want to list conversation suggestions right after giving a recommendation]
+
+Rule for listing recommended quips:
+	say "What would you like to do: [the prepared list delimited in disjunctive style]?";
 
 Refusing to buy something is an activity.
 

@@ -442,10 +442,10 @@ Rule for listing plausible quips (this is the standard quip plausibility rule):
 		if the number of filled rows in the Table of Scored Listing is positive,
 			say "[quip-suggestion-phrase][the prepared list delimited in disjunctive style]." (A);
 
-Before printing the name of a questioning quip while listing plausible quips or listing peripheral quips (this is the prefix-ask rule):
+Before printing the name of a questioning quip while listing plausible quips or listing peripheral quips or listing recommended quips (this is the prefix-ask rule):
 	say "ask " (A).
 
-Before printing the name of an informative quip while listing plausible quips or listing peripheral quips (this is the prefix-say rule):
+Before printing the name of an informative quip while listing plausible quips or listing peripheral quips or listing recommended quips (this is the prefix-say rule):
 	say "say " (A).
 
 
@@ -491,8 +491,10 @@ Section 3 - Offer Hint Quips Rule
 
 This is the offer hint quips rule:
 	if how-many-people-here is positive:
-		if tc reparse flag is false and sp reparse flag is false: [Don't want to also display hints before conversation, if we just implicitly greeted someone]
-			carry out the listing plausible quips activity. [Hint about quips if there's something on the table that's particularly unusual.]
+		if tc reparse flag is false and sp reparse flag is false and suppress-quip-hints is false: [Don't want to also display hints before conversation, if we just implicitly greeted someone]
+			carry out the listing plausible quips activity;
+			now suppress-quip-hints is false.
+			[Hint about quips if there's something on the table that's particularly unusual.]
 
 The offer hint quips rule is listed after the adjust light rule in the turn sequence rules.
 
@@ -1162,6 +1164,8 @@ Carry out changing the subject (this is the standard report other subjects rule)
 Book 3 - Starting a Conversation
 
 tc reparse flag is a truth state that varies. [Whether we need to reparse the command after implicitly greeting someone and resetting quips' availability]
+
+suppress-quip-hints is a truth state that varies.
 
 Section 1 - Reparse after chatting
 
