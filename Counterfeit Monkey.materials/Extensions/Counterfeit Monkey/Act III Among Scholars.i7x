@@ -150,8 +150,6 @@ A piano is a fixed in place instrument in the Fleur d'Or Lobby.  The initial app
 
 The piano-bench is an enterable scenery supporter. It allows seated. [The piano-bench is part of the piano.] The piano-bench is in the Fleur d'Or Lobby. The printed name is "piano bench". Understand "bench" or "piano bench" as the piano-bench. The description of the piano-bench is "Lightly padded and made of the same wood as the piano itself."
 
-
-
 Test bench-bug with "sit on bench / look / stand / play piano / look" in the Fleur d'Or Lobby.
 
 Sanity-check sitting at the piano:
