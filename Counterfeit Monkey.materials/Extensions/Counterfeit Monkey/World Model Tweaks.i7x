@@ -806,6 +806,8 @@ Include Far away by Jon Ingold.
 Instead of throwing something at something far-off:
 	say "Our aim isn't nearly good enough."
 
+suppress-exit-listing is a truth state that varies.
+
 A facade is a kind of thing. A facade is usually fixed in place. A facade has some text called the closure notice. The closure notice of a facade is usually "[The item described] [are] [one of]closed[or]shut[or]not open[or]locked up[purely at random] [one of]for[or]during[or]on[purely at random] [one of]the holiday[or]Serial Comma Day[purely at random]. ".
 
 Instead of pushing or pulling or turning or taking a facade, say "[We] aren't super-powered."
@@ -823,6 +825,7 @@ Instead of going nowhere when the noun is fronted by a facade (called blockage) 
 	carry out the listing exits activity.
 
 Instead of going nowhere when the noun is not fronted by a facade in the location (this is the handle can't-go-that-way rule):
+	now suppress-exit-listing is false;
 	if the noun is inside:
 		follow the attempt going in rule instead;
 	otherwise if the noun is outside:
@@ -832,7 +835,9 @@ Instead of going nowhere when the noun is not fronted by a facade in the locatio
 		silently try facing up;
 	otherwise:
 		try facing the noun;
-	carry out the listing exits activity.
+	unless suppress-exit-listing is true:
+		carry out the listing exits activity;
+		now suppress-exit-listing is false.
 
 [The parser would sometimes misinterpret commands such as GO TO CINEMA as FIND CINEMA-EXTERIOR and leave the player in from of the cinema rather than inside it. This gets around this by making sure that we always try to walk through any facade that we are "finding".]
 
@@ -936,12 +941,14 @@ Last check facing (this is the face adjacent directions rule):
 	if leftward thing is nothing and rightward thing is nothing:
 		make no decision;
 	if the location is indoors:
+		now suppress-exit-listing is true;
 		say "That way is just a corner of the room, though [we] could go [unless the leftward thing is nothing][leftway] to [the leftward thing][end if][unless the leftward thing is nothing or the rightward thing is nothing] or [end if][unless the rightward thing is nothing][rightway] to [the rightward thing][end if]." instead;
 	if leftward thing is nothing:
 		say "There is nothing of note to [the noun] or [the leftway], but to [the rightway] [regarding the rightward thing][are] [the rightward thing]." instead;
 	if rightward thing is nothing:
 		say "There is nothing of note to [the noun] or [the rightway], but to [the leftway] [regarding the leftward thing][are] [the leftward thing]." instead;
 	if the location is indoors:
+		now suppress-exit-listing is true;
 		say "That way is just a corner of the room, though [we] could go [leftway] to [the leftward thing] or [rightway] to [the rightward thing]." instead;
 	otherwise if leftward thing is a road and rightward thing is a road:
 		say "That way is the corner of [the leftward thing] and [the rightward thing]." instead;

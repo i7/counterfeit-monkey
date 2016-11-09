@@ -308,7 +308,10 @@ The rocky cliff-face is a scenery facade in Outdoor Cafe. It fronts south. Under
 
 In-direction of Outdoor Cafe is west. [Into the café building (facade)]
 
-The cafe building is a scenery facade in Outdoor Cafe. It fronts west. The printed name is "café building". Understand "café" as the cafe building. The description is "The source of drinks and small snacks when the café is in full operation. At the moment there isn't much sign of life from inside." The closure notice of the cafe building is "[if traffic circle is visited]The place is entirely closed now.[else]When we approach, a girl comes to the window and waves us off. 'We're just closing up. No new customers!'[end if] "
+The cafe building is a scenery facade in Outdoor Cafe. It fronts west. The printed name is "café building". Understand "café" as the cafe building. The description is "The source of drinks and small snacks when the café is in full operation. At the moment there isn't much sign of life from inside." The closure notice of the cafe building is "The place is entirely closed now. "
+
+Instead of going west in Outdoor Cafe when traffic circle is not visited:
+	say "When we approach, a girl comes to the window and waves us off. 'We're just closing up. No new customers!'".
 
 Some round black metal tables are supporters in the outdoor cafe.
 	The initial appearance is "Several [round black metal tables] have been set out, with [umbrellas]."
