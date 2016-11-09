@@ -2312,8 +2312,7 @@ Sanity-check object-asking the hidden-ticket when the current interlocutor is th
 	try discussing buy movie-ticket instead.
 
 buy movie-ticket is a purchasing quip.
-The printed name is "buy a movie ticket".
-Understand "buy the/a ticket" or "movie" or "ticket" or "buy a/the movie ticket" as buy movie-ticket.
+	The printed name is "buy a movie ticket".
 	It mentions ticket, hidden-ticket.
 	The comment is "'I'd like to buy a ticket to this movie,' we say.".
 	The reply is "[You-are-past-customer]The ticket-taker shrugs. 'If you give me the money here, I don't actually have to give you a ticket,' he says.
