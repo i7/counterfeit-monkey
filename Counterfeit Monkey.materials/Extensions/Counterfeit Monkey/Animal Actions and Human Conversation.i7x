@@ -4412,7 +4412,7 @@ cucumber regret is an NPC-directed quip.
 
 how Professor Higgate seems doing is a questioning quip.
 	The printed name is "how Professor Higgate is doing". The true-name is "how Professor Higgate seems doing".
-	Understand "is" or "she" as how Professor Higgate seems doing.
+	Understand "is" or "she" or "how are you" as how Professor Higgate seems doing.
 	It mentions Professor Higgate.
 	The comment is "'How are you?' we ask.
 
