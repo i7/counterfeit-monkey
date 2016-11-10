@@ -1767,7 +1767,9 @@ Some clear glass windows are scenery in the New Church. The description of the c
 
 The introduction of New Church is "My mother volunteers here: I think I should warn you. She is not quite religious, but believes in the cultural value of the building, and in having some sort of place where people can go for spiritual respite. She also, I suspect, likes having those great gold letters, defiantly foreign and arcane in the heart of the old city."
 
-Some pews are a scenery supporter in the New Church. The description of the pews is "Simply built out of dark solid wood, to contrast with the white walls and columns, and the clear glass windows." Understand "pew" or "seat" or "seats" or "bench" or "benches" as the pews.
+Some pews are a enterable scenery container in the New Church. The description of the pews is "Simply built out of dark solid wood, to contrast with the white walls and columns, and the clear glass windows." Understand "pew" or "seat" or "seats" or "bench" or "benches" as the pews.
+
+The pews allow seated, standing, and reclining. The posture of the pews is seated.
 
 Does the player mean approaching New Church:
 	it is very likely.
