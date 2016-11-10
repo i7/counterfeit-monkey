@@ -15,6 +15,8 @@ Section 1 - Deep Street
 
 Deep Street is a proper-named road. The description is "This road descends steeply from [southwest] to [northwest], passing between [white concrete buildings] to provide access to the marina [--] the Fish Market, the Docks, and a bar or two. The street is in deep shadow, protected from sunlight from almost any angle by its narrowness and by the height of the walls."
 
+In-direction of Deep Street is east. [Into the bookstore]
+
 Instead of going southeast in Deep Street:
 	say "The [Post Office] is of course shut down for the holiday."
 
