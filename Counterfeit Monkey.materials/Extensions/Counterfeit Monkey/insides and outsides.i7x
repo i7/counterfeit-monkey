@@ -115,6 +115,8 @@ Carry out no-noun-entering:
 
 Understand "get out of [thing]" or "exit [thing]" as getting out. Getting out is an action applying to one thing.
 
+Understand "get out of here" as exiting.
+
 Carry out getting out:
 	if the actor is in the noun:
 		try exiting;
