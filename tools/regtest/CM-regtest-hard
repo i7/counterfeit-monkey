@@ -2051,7 +2051,8 @@ There is a continuous angry whine from the jigsaw.
 > put swat in carton
 We put the swat into the large carton.
 
-There is a continuous angry whine from the jigsaw.
+/(There is a continuous angry whine from the jigsaw|The noise is sudden and percussive, and repeats without a clear rhythm).
+
 
 > go to rectification room
 Rectification Room
@@ -2385,7 +2386,7 @@ They're gathered around a hanging cardboard figure in front of the Bureau of Ort
 
 There is a continuous angry whine from the jigsaw.
 
-/(The latest child's attack swings wide of the figure|Among a general rumble of assent, one of the fathers gives Atlantida a hard smack with a baseball bat. She doesn't crack|Another child takes a whack at the hanging figure. She bounces away from the blow, but does not break|The next child doesn't seem to have been properly blindfolded and connects with surprising dexterity and sureness, but the thing doesn't break).
+/(The latest child's attack swings wide of the figure.|Among a general rumble of assent, one of the fathers gives Atlantida a hard smack with a baseball bat. She doesn't crack.|Another child takes a whack at the hanging figure. She bounces away from the blow, but does not break.|The next child doesn't seem to have been properly blindfolded and connects with surprising dexterity and sureness, but the thing doesn't break.)?
 
 > blindfold me with shred
 We tie the shred over our eyes. To be honest, it only partially obscures our vision; we still have a pretty good idea where everything is.
