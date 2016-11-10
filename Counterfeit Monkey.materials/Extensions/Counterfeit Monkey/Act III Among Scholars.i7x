@@ -370,7 +370,7 @@ Section 3 - Apartment Window
 
 Southwest of Palm Square is a apartment door. apartment door is a lockable locked door. It is scenery. Southwest of apartment door is My Apartment.
 
-My Apartment is southern.
+My Apartment is southern. Understand "home" as My Apartment.
 
 Instead of knocking on the bathroom window:
 	if the player is in Palm Square:
