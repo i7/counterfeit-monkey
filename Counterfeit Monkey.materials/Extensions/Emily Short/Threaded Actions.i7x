@@ -121,6 +121,9 @@ To recommend (chosen list - a list of things):
 	now suppress-quip-hints is true;
 	[We don't want to list conversation suggestions right after giving a recommendation]
 
+After reading a command (this is the re-enable quip hints rule):
+	now suppress-quip-hints is false.
+
 Rule for listing recommended quips:
 	say "What would you like to do: [the prepared list delimited in disjunctive style]?";
 
