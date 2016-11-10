@@ -68,18 +68,17 @@ To decide whether (N - a person) can lie here:
 	no.
 	
 Instead of an actor lying down (this is the convert lying down rule):
-	if the actor can lie here:
-		try the actor taking position reclining; 
-		if the posture of the actor is reclining:
-			rule succeeds;
-		rule fails;
-	otherwise if the holder of the actor contains something (called target) which allows reclining:
+	if the holder of the actor contains something (called target) which allows reclining:
 		if the holder of the actor contains an enterable reclining thing (called the better target):
 			now the target is the better target;
 		try the actor lying on the target;
 		if the posture of the actor is reclining and the actor is on the target:
 			rule succeeds;
 		rule fails;
+	if the actor can lie here:
+		try the actor taking position reclining;
+		if the posture of the actor is reclining:
+			rule succeeds;
 	otherwise:
 		if the player is the actor:
 			if the holder of the actor is a thing:
@@ -96,18 +95,17 @@ To decide whether (N - a person) can sit here:
 	no.
 
 Instead of an actor sitting down (this is the convert sitting down rule):
-	if the actor can sit here:
-		try the actor taking position seated; 
-		if the posture of the actor is seated:
-			rule succeeds;
-		rule fails;
-	otherwise if the holder of the actor contains something (called target) which allows seated:
+	if the holder of the actor contains something (called target) which allows seated:
 		if the holder of the actor contains an enterable seated thing (called the better target):
 			now the target is the better target;
 		try the actor sitting on the target;
 		if the posture of the actor is seated and the actor is on the target:
 			rule succeeds;
 		rule fails;
+	if the actor can sit here:
+		try the actor taking position seated;
+		if the posture of the actor is seated:
+			rule succeeds;
 	otherwise:
 		if the player is the actor:
 			if the holder of the actor is a thing:
