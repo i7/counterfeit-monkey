@@ -372,6 +372,11 @@ Southwest of Palm Square is a apartment door. apartment door is a lockable locke
 
 My Apartment is southern. Understand "home" as My Apartment.
 
+Understand "go home" as home-going. Home-going is an action applying to nothing.
+
+Instead of home-going:
+	try approaching My Apartment.
+
 Instead of knocking on the bathroom window:
 	if the player is in Palm Square:
 		say "There's no one inside; that's the point.";
