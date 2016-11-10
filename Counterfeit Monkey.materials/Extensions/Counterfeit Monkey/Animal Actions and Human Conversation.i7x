@@ -443,7 +443,7 @@ whether the Britishizing goggles seem interesting is a demonstration quip.
 	It is repeatable.
 	It is background-information.
 
-whether the origin paste seems interesting is a demonstration quip.
+whether the Origin Paste seems interesting is a demonstration quip.
 	It mentions origin paste.
 	The comment is "[demonstration of origin paste]".
 	The reply is "'[one of]Smells[or]Looks[at random] like soap,' [the current interlocutor] [comment].".
