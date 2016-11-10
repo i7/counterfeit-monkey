@@ -22,13 +22,15 @@ Section 4 - Sitting, Lying, and Standing On Commands
 
 Understand the commands "stand" and "sit" and "lie" as something new.
 
-Understand "sit on/in [something]" as sitting on.
-Understand "lie on/in [something]" as lying on.
-Understand "stand on/in [something]" as standing up on.
+Understand "sit on/in [supporter-container thing]" as sitting on.
+Understand "lie on/in [supporter-container thing]" as lying on.
+Understand "stand on/in [supporter-container thing]" as standing up on.
 
 Sitting on is an action applying to one thing.
 Lying on is an action applying to one thing.
 Standing up on is an action applying to one thing.
+
+Definition: a thing is supporter-container if it is a supporter or it is a container.
 
 Carry out an actor sitting on (this is the standard carry out sitting on rule):
 	if the holder of the actor is not the noun, silently try the actor entering the noun;
@@ -50,9 +52,9 @@ Carry out an actor standing up on (this is the standard carry out standing up on
 
 Section 5 - Sitting, Lying, and Standing with Default Objects
 
-Understand "lie down" as lying down.
+Understand "lie down" or "lie" as lying down.
 Understand "sit down" or "sit" or "sit up" as sitting down.
-Understand "stand" or "stand up" as standing up. 
+Understand "stand" or "stand up" as standing up.
 
 Lying down is an action applying to nothing.
 Sitting down is an action applying to nothing.
