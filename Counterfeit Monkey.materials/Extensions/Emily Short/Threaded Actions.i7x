@@ -60,7 +60,7 @@ Instead of attacking someone (this is the standard attack redirection rule):
 	carry out the refusing to attack activity with the noun.
 	[end if.]
 
-Understand "thank [someone]" or "say thank you to [someone]" or "say thanks to [someone]" or "say thanks" or "say thank you" or "thanks" or "thanks a lot" or "thank you" or "bless you" or "ta" or "cheers" or "much obliged" as thanking. Thanking is an action applying to one visible thing.
+Understand "thank [someone]" or "say thank you to [someone]" or "say thanks to [someone]" or "say thanks" or "say thank you" or "thanks" or "thanks again" or "thanks a lot" or "thank you" or "bless you" or "ta" or "cheers" or "much obliged" as thanking. Thanking is an action applying to one visible thing.
 
 Instead of answering somebody (called target) that "thank you":
 	try thanking the target.
