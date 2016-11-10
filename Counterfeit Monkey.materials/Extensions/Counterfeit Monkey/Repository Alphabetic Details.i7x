@@ -1313,6 +1313,8 @@ The description of the legend is "This legend has been edited from its original 
 
 I think I know where we can get one, though. My advisor Professor Waterstone [--] that's the person overseeing my graduate research [--] was also invited to this demonstration. We might be able to get his[advance-goals]."
 
+Understand "message" as the legend.
+
 To say advance-goals:
 	complete "Homonym-paddle the legend into the other kind of legend";
 	assign "Speak to Professor Waterstone and get his invitation to see the T-inserter" at Waterstone's Office;

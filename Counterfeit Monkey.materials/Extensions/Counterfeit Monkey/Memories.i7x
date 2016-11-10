@@ -248,7 +248,7 @@ Carry out remembering leaving-memory:
 
 Section 9 - Protesting Petty Laws
 
-helping-Engeo is a memory. The max is 1. The printed name is "your crew's attitude to Atlantis law". Understand "your" or "crew's" or "attitude" or "to" or "Atlantis" or "law" as helping-engeo.
+helping-Engeo is a memory. The max is 1. The printed name is "your crew's attitude to Atlantis law". Understand "your" or "crew's" or "crew" or "attitude" or "to" or "Atlantis" or "law" as helping-engeo.
 
 Carry out going from Outdoor Cafe:
 	trigger helping-engeo.
