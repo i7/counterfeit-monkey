@@ -1770,7 +1770,7 @@ Test legend with "tutorial off / x map / x legend / open tub / gel legend / show
 
 thank the bartender is a thanking quip.
 	It mentions the bartender. It assumes thank-bartender.
-	The comment is "'That's wonderful [--] thank you!'".
+	The comment is "'[one of]Thank you[or]Thanks again[stopping]!'".
 	The reply is "[one of]'Don't mention it,' she says. 'It's what I do.'[or]'You don't have to thank me,' she says.[or]'That's enough!'[stopping]".
 	It quip-supplies the bartender.
 
