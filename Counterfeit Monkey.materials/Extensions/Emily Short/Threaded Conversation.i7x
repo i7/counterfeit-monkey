@@ -491,9 +491,11 @@ Section 3 - Offer Hint Quips Rule
 
 This is the offer hint quips rule:
 	if how-many-people-here is positive:
-		if tc reparse flag is false and sp reparse flag is false and suppress-quip-hints is false: [Don't want to also display hints before conversation, if we just implicitly greeted someone]
+		if suppress-hint-quips is true:
+			now suppress-hint-quips is false;
+			the rule fails;
+		if tc reparse flag is false and sp reparse flag is false: [Don't want to also display hints before conversation, if we just implicitly greeted someone]
 			carry out the listing plausible quips activity;
-			now suppress-quip-hints is false.
 			[Hint about quips if there's something on the table that's particularly unusual.]
 
 The offer hint quips rule is listed after the adjust light rule in the turn sequence rules.
@@ -1165,7 +1167,7 @@ Book 3 - Starting a Conversation
 
 tc reparse flag is a truth state that varies. [Whether we need to reparse the command after implicitly greeting someone and resetting quips' availability]
 
-suppress-quip-hints is a truth state that varies.
+suppress-hint-quips is a truth state that varies.
 
 Section 1 - Reparse after chatting
 

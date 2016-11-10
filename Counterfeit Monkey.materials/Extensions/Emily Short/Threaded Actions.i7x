@@ -118,11 +118,11 @@ To recommend (chosen list - a list of things):
 		choose a blank row in the Table of Scored Listing;
 		now output entry is the item;
 	carry out the listing recommended quips activity;
-	now suppress-quip-hints is true;
+	now suppress-hint-quips is true;
 	[We don't want to list conversation suggestions right after giving a recommendation]
 
 After reading a command (this is the re-enable quip hints rule):
-	now suppress-quip-hints is false.
+	now suppress-hint-quips is false.
 
 Rule for listing recommended quips:
 	say "What would you like to do: [the prepared list delimited in disjunctive style]?";
