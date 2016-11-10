@@ -381,14 +381,14 @@ where lodging seems found is a weakly-phrased location-questioning quip.
 	The printed name is "where lodging is found".
 	The  true-name is "where lodging seems found".
 	Understand "is" or "hostel" as where lodging seems found.  The place-sought is "lodging for the night".
-	It mentions geography, hostel-as-subject.
+	It mentions geography.
 	It is background-information.
 	The correct answer is Hostel.
 
 where there seems hotel is a weakly-phrased location-questioning quip.
 	The printed name is "where there is a hotel". The true-name is "where there seems a hotel".
 	Understand "is" or "a" or "fleur" or "d'or" as where there seems hotel.  The place-sought is "a hotel".
-	It mentions geography, fleur d'or-as-subject.
+	It mentions geography.
 	It is background-information.
 	The correct answer is Fleur d'or.
 
@@ -402,7 +402,7 @@ where there seems Arbot is a weakly-phrased location-questioning quip.
 where there seems cinema is a weakly-phrased location-questioning quip.
 	The printed name is "where there is a cinema". The true-name is "where there seems a cinema".
 	Understand "is" or "a" or "cinema" as where there seems cinema.  The place-sought is "a cinema".
-	It mentions geography, cinema-as-subject.
+	It mentions geography.
 	It is background-information.
 	The correct answer is Cinema.
 
