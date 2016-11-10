@@ -1813,7 +1813,7 @@ To say prayer response:
 
 (While your mind and heart are elsewhere, ordering your concerns and offering them up.)
 
-[--]and now quiet. I don't know what, if anything, that may have accomplished, but I promise not to be rude if you need to do it again."
+[--]and now quiet. I don't know what, if anything, that may have accomplished, but I promise not to be rude if you need to do it again. "
 
 The gift-shop-exterior is a facade in New Church. It is scenery. It fronts south. The description is "[We] can't really see it from here; I just know that it is back there, from previous visits, though decently screened from the main body of the church."  Understand "shop" or "gift shop" or "narthex" as the gift-shop-exterior. The printed name is "gift shop".
 
