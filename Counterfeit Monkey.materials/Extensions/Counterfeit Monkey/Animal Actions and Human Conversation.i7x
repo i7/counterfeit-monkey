@@ -1803,7 +1803,7 @@ Rule for beat-producing when the current interlocutor is Kate:
 Kate answers, briefly assures the person on the other end of the line that the shop is indeed open today, and hangs up[as decreasingly likely outcomes].[run paragraph on]".
 
 
-The greeting of Kate is "'Welcome to Arbot,' says Kate. 'Feel free to browse and ask me any questions you may have about the merchandise[change-kate-greeting].'"
+The greeting of Kate is "'Welcome to Arbot,' says Kate. 'Feel free to browse and ask me any questions you may have about the merchandise[change-kate-greeting][thank-kate].'"
 The generic adversative of Kate is "[one of]ah but[at random]".
 The generic confrontational of Kate is "one moment".
 
@@ -1984,6 +1984,11 @@ Sanity-check showing the map to Kate when the legend is part of the map:
 Sanity-check showing the legend to Kate:
 	say "Now that it's obvious this is a secret message, you're not exactly going to show it to all and sundry." instead.
 
+thank kate is an unlisted thanking quip.
+	It mentions Kate. It assumes thank-kate.
+	The comment is "'[one of]Thank you[or]Thanks again[stopping],' [we] say.".
+	The reply is "She smiles. [one of]'No problem.'[or]'You don't have to thank me,' she says.[or]'That's enough!'[stopping]".
+	It quip-supplies Kate.
 
 Test Kate with "tutorial off / z / ask about brock / ask about demonstration / ask about antiques / ask about map / buy map / z / z / z / look / x map / x legend / a legend / show map to kate" in Arbot Maps & Antiques.
 Test Kate2 with "tutorial off / z / x maps / buy map / ask about brock / ask about antiques / ask about demonstration / ask about brock / z / z / z/ look / a legend / x map / x legend / a legend / show map to kate" in Arbot Maps & Antiques.
