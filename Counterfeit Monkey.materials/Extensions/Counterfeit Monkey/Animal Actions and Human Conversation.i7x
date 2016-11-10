@@ -1670,7 +1670,7 @@ Rule for refusing comment by the bartender:
 			now the target is carried by the player;
 		move the noun to the repository;
 		record "getting a product of the homonym paddle" as achieved;
-		say "She shrugs good-naturedly, hits [the noun] with the paddle, and grins at us. We look down at what we're holding: [the description of the target][paragraph break]".
+		say "[thank-bartender]She shrugs good-naturedly, hits [the noun] with the paddle, and grins at us. We look down at what we're holding: [the description of the target][paragraph break]".
 
 Rule for refusing comment by the bartender when the noun is the Slangovia map or the noun is the fake-legend:
 	if the fake-legend is not part of the Slangovia map:
@@ -1686,7 +1686,7 @@ Rule for refusing comment by the bartender when the noun is the Slangovia map or
 		now the target is carried by the player;
 	move the noun to the repository;
 	record "getting a product of the homonym paddle" as achieved;
-	say "[one of]'This?' she says, looking a little surprised. 'You want it converted?'
+	say "[thank-bartender][one of]'This?' she says, looking a little surprised. 'You want it converted?'
 
 'Why not?'
 
