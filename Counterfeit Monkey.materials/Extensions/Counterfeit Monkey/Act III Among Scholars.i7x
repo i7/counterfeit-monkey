@@ -312,6 +312,7 @@ Instead of approaching Palm Square when the legend is not introduced:
 To say square-refusal:
 	if the legend is handled or the fake-legend is in the repository:
 		say "Hadn't we better see what message Brock left?";
+		stop the action;
 	if the fake-legend is not seen:
 		say "[if the noun is not My Apartment and the noun is not Apartment Bathroom]My apartment is that direction, but unless[otherwise]Unless[end if] we have some reason to go there, it seems least suspicious to avoid my old neighborhood.";
 	else:
