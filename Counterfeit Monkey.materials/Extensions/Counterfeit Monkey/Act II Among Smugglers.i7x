@@ -460,7 +460,7 @@ The trap-door is a door. It is below the Tin Hut. The initial appearance is "A [
 
 Rule for writing a paragraph about the trap-door when the location is the Crawlspace:
 	say "[The trap-door], wedged open by [a random thing which wedges the trap-door], admits the only light.";
-	if there is a mentionable thing held by location:
+	if there is a mentionable thing in location:
 		say line break.
 
 Every turn when the trap-door is open and the trap-door is not wedged by something:
