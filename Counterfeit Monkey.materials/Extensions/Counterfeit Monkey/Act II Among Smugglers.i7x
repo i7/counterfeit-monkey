@@ -459,7 +459,8 @@ Instead of attacking the struts:
 The trap-door is a door. It is below the Tin Hut. The initial appearance is "A [trap-door] is set in the floor[if something wedges the trap-door], propped by [a random thing which wedges the trap-door][end if]." The printed name is "trap door". Understand "trap" or "door" or "trapdoor" or "hinge" or "hinges" or "hinging" or "mechanism" as the trap-door. The description is "It is a wooden door set into the floor. The hinging mechanism is designed to keep the door closed if possible, perhaps as a safety feature so that people won't fall into an open hole."
 
 Rule for writing a paragraph about the trap-door when the location is the Crawlspace:
-	say "[The trap-door], wedged open by [a random thing which wedges the trap-door], admits the only light."
+	say "[The trap-door], wedged open by [a random thing which wedges the trap-door], admits the only light.";
+	say line break.
 
 Every turn when the trap-door is open and the trap-door is not wedged by something:
 	now the trap-door is closed;
