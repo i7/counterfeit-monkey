@@ -1424,14 +1424,14 @@ The description of the motet is "It's some sort of choral piece. I can't identif
 
 The description of the motets is "The music sounds like many people singing many different things at once.". The motets are noisy. Understand "music" as motets.
 
-The motte is a supporter. The description of the motte is "Fortunately it has come in small model form rather than in full size. The motte is a substantial artificial hill, which would have been part of an early style of fortification. Artificial grass covers the mound." Understand "artificial grass" or "model" or "grass" as the motte.
+The motte is a portable supporter. The description of the motte is "Fortunately it has come in small model form rather than in full size. The motte is a substantial artificial hill, which would have been part of an early style of fortification. Artificial grass covers the mound." Understand "artificial grass" or "model" or "grass" as the motte.
 
 Report putting the army on the motte:
 	say "[We] arrange the army around the motte in position to storm up the sides of the hill.
 
 It looks wrong, of course, because the motte belongs to medieval castle construction and the army is decorated for the late 19th, but this wouldn't trouble a small child, and we mustn't be deterred by it either." instead.
 
-The mottes are a supporter. The heft of the mottes is 4. The description of the mottes is "A model of several artificial hills used for fortification. It looks like part of a children's toy-soldier set, but the other pieces are not included. Artificial grass covers the imaginary mounds." Understand "artificial grass" or "model" or "grass" as the mottes.
+The mottes are a portable supporter. The heft of the mottes is 4. The description of the mottes is "A model of several artificial hills used for fortification. It looks like part of a children's toy-soldier set, but the other pieces are not included. Artificial grass covers the imaginary mounds." Understand "artificial grass" or "model" or "grass" as the mottes.
 
 Report putting the army on the mottes:
 	say "[We] arrange the army around the mottes in position to storm up the sides of the most significant hill.
@@ -3835,7 +3835,7 @@ The description of the tram is "One of the old-style trams that used to putt up 
 
 The description of the tramcar is "One of the old-style trams that used to putt up Long Street from the docks back in the 20s and 30s. It is olive-col[our]ed, with wood flooring and sideboards, and carries an advertisement for ladies['] hair rinse on the side.". The heft of the tramcar is 8. The tramcar is an enterable container. It is open. It is not openable.
 
-The trampet is an enterable supporter. The description of the trampet is "It's a very small trampoline used for therapeutic exercises." The trampet allows seated and standing.
+The trampet is an enterable portable supporter. The description of the trampet is "It's a very small trampoline used for therapeutic exercises." The trampet allows seated and standing.
 	The trampet has a number called the jump count.
 
 Instead of jumping when the player is on the trampet:
