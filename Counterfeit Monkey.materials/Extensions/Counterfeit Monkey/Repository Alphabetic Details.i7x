@@ -1249,7 +1249,7 @@ The key-lime is an edible thing. The printed name is "key lime".  Understand "ke
 Instead of squeezing the key-lime:
 	say "It is firm and juicy, but not squishy. Not over the hill yet."
 
-The keyring is a supporter. The heft is 1. The description is "It's a souvenir keychain. The tag is printed with the outline of Anglophone Atlantis, and reads: 'Atlantis: Friendly to Business [--] Friendly to Life.'"
+The keyring is a portable supporter. The heft is 1. The description is "It's a souvenir keychain. The tag is printed with the outline of Anglophone Atlantis, and reads: 'Atlantis: Friendly to Business [--] Friendly to Life.'"
 
 Instead of putting something which is not the gel on the keyring:
 	say "Only keys can really be attached."
