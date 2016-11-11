@@ -466,6 +466,10 @@ This is the new generate exit list rule:
 	if exits is 0, say "[no obvious exits]";
 	otherwise say "[We] can go [list of exit-listable directions] from here.".
 
+The describe room emerged into rule is not listed in any rulebook.
+The describe room stood up into rule is not listed in any rulebook.
+[Don't print a room description after getting up from or out of an object.]
+
 Section 2 - Finding
 
 Understand "find [any seen thing]" as finding. Understand the command "seek" or "approach" as "find". Understand "look for [any seen thing]" as finding. Understand "go to [any seen thing]" as finding.
