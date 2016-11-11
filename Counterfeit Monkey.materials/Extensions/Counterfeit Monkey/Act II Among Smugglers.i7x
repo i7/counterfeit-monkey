@@ -501,7 +501,7 @@ After deciding the scope of the player when the player is in the Crawlspace:
 Report facing in Crawlspace:
 	say "There is only darkness, but I assume the space extends only under the rest of the building. There's no obvious sign of any other interesting items being stored down here." instead.
 
-The crate is a container in the Crawlspace. The initial appearance is "[if the location is the Crawlspace][line break]The only significant thing down here is a [crate][otherwise]A [crate] is here, looking desperately out of place[end if]." The crate is openable and closed and fixed in place. The heft of the crate is 4.
+The crate is a container in the Crawlspace. The initial appearance is "[if the location is the Crawlspace]The only significant thing down here is a [crate][otherwise]A [crate] is here, looking desperately out of place[end if]." The crate is openable and closed and fixed in place. The heft of the crate is 4.
 
 Table of Ultratests (continued)
 topic	stuff
