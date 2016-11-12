@@ -693,6 +693,20 @@ After inserting something into the synthesizer for the first time:
 Then it's over. [run paragraph on]";
 	continue the action.
 
+Understand "activate" as switching on.
+
+Understand "synthesize" as synth-activating. Synth-activating is an action applying to nothing.
+
+Carry out synth-activating:
+	if synthesizer is marked-visible:
+		try switching on the synthesizer instead;
+	if programmable dais is marked-visible:
+		if the switch-setting of the massive switch is swap homonym:
+			try turning the massive switch;
+		try switching on the programmable dais instead;
+	otherwise:
+		 say "There is no synthesizer here."
+
 Sanity-check inserting something irretrievable into the synthesizer:
 	abide by the don't change irretrievable rules for the noun.
 
