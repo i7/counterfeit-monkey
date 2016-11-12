@@ -1363,7 +1363,7 @@ buy the screwdriver is a purchasing quip.
 	It quip-supplies the bartender.
 
 To say drink-nice-day:
-	say "[one of]Just the way you were imagining it, guaranteed.[no line break][or]Enjoy.[no line break][or]You can't order any more,' she says after that. 'You've seen all my tricks, and I have to cut people off at three.[no line break][stopping]".
+	say "[thank-bartender][one of]Just the way you were imagining it, guaranteed.[no line break][or]Enjoy.[no line break][or]You can't order any more,' she says after that. 'You've seen all my tricks, and I have to cut people off at three.[no line break][stopping]".
 
 buy a drink is an unlisted repeatable purchasing quip.
 	understand "order" or "cocktail" or "buying" or "ordering" as buy drink.
@@ -1458,6 +1458,8 @@ Rule for deciding the concealed possessions of the bartender:
 		no;
 	yes.
 
+Does the player mean putting gel on a drink-form thing:
+	it is very likely.
 
 Before putting gel on a drink-form thing in the presence of the bartender:
 	say "We turn away from the bartender so she won't see too obviously what we're up to. I suppose it doesn't matter, but I wouldn't want her feelings to be hurt. [run paragraph on]".
@@ -1590,7 +1592,6 @@ Rule for beat-producing when the current interlocutor is the bartender:
 			rule succeeds;
 	make no decision.
 
-
 Persuasion rule for asking the bartender to try homonyming something:
 	persuasion succeeds.
 
@@ -1602,10 +1603,30 @@ Understand "tap [something]" as touching when the person asked is not the barten
 Understand "tap [something] with [the homonym paddle]" as attacking it with.
 Understand "strike [something] with [something]" as attacking it with.
 
-Understand "homonym [something]" or "homonym-convert [something]" or "homonym-paddle [something]" or "paddle [something]" or "convert [something]" as homonyming. Homonyming is an action applying to one visible thing.
+Understand "homonym [something]" or "homonym" or "homonym-convert" or "homonym-convert [something]" or "homonym-paddle [something]" or "paddle [something]" or "convert [something]" as homonyming. Homonyming is an action applying to one visible thing.
+
+Rule for supplying a missing noun while homonyming:
+	if programmable dais is marked-visible:
+		now noun is a random thing on programmable dais;
+		if noun is nothing:
+			now the noun is the player;
+	otherwise:
+		say "What do [we] want to homonym?";
+		stop the action.
 
 Carry out homonyming something:
-	say "Exactly how do [we] intend to do that?".
+	if programmable dais is marked-visible:
+		if the noun is not on programmable dais and the noun is not the player:
+			try putting the noun on programmable dais;
+			if the noun is not on programmable dais:
+				stop the action;
+		if the switch-setting of the massive switch is synthesize:
+			try turning the massive switch;
+		try switching on the programmable dais instead;
+	otherwise:
+		if bartender is marked-visible:
+			try showing the noun to the bartender instead;
+	say "Exactly how do [we] intend to do that?";
 
 Check the bartender trying homonyming something:
 	carry out the refusing comment by activity with the bartender;
@@ -1616,7 +1637,7 @@ Check the bartender trying attacking something with the homonym paddle:
 	the rule succeeds.
 
 Sanity-check asking the bartender to try attacking something (called the target):
-	try asking the bartender to try homonyming the target instead.
+	try showing the target to the bartender instead.
 
 Does the player mean asking the bartender to try attacking something with the homonym paddle:
 	it is very likely.
@@ -1646,7 +1667,7 @@ Rule for refusing comment by the bartender:
 		rule succeeds;
 	let target be the homonym-match of the noun;
 	if the heft of the target is greater than 4 or the target is fixed in place:
-		say "[paragraph break]'[The target] would be bigger than I want to generate in here,' comments [the bartender].";
+		say "'[The target] would be bigger than I want to generate in here,' comments [the bartender].";
 		rule succeeds;
 	otherwise if the noun is a person or the noun encloses a person:
 		say "'That would be way too dangerous. I'd lose my lic[ense] for sure.'";
