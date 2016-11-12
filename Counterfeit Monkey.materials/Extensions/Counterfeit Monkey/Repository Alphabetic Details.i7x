@@ -2553,7 +2553,7 @@ The results do not live up to his efforts, but you should know that he really re
 Instead of listening to the rap:
 	say "[if the rap  is the prior named object]It[otherwise]The rap[end if] ";
 	if the player wears the Britishizing Goggles:
-		say "[one of]devolves into a chap-hop diss on another man's tweed[or]sings the praises of one Professor Elemental[or]informs the listener that it doesn't like his tweed[or]asks the listener to fetch its trousers at once[at random]";
+		say "[one of]devolves into a chap-hop diss on another man's tweed[or]sings the praises of one Professor Elemental[or]informs the listener that it doesn't like his tweed[or]asks the listener to fetch its trousers at once[at random].";
 	else:
 		let N be a random number between 1 and 3;
 		if N is:
