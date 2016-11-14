@@ -206,7 +206,7 @@ Before going to University Oval:
 Section 5 - Higgate's Arrest
 
 [Because we need to stop you so so that you see the scene if you're just passing through:]
-After going to University Oval when seeking invite has ended and higgate-arrested has not happened :
+After going to University Oval when the invitation is handled and higgate-arrested has not happened :
 	let N be the number of entries in the path so far of the player;
 	if N is greater than 1:
 		say "[path-walked so far][paragraph break]";
