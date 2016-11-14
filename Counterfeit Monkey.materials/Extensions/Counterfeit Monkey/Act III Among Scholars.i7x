@@ -1250,7 +1250,10 @@ Instead of knocking on office-door-1 when the location of Professor Waterstone i
 		repeat with item running through things enclosed by the location:
 			if item is waterstone-inspiring:
 				say "Waterstone looks up and gives a little frown. It's clear he doesn't know why we've knocked; perhaps he can't see [the item] from that angle. Maybe if [we] were holding [them]." instead;
-	follow the water-reaction rules for the selected object.
+	if the selected object is nothing:
+		say "Waterstone looks up and gives a little frown. It's clear he doesn't know why we've knocked; to be honest I'm not sure why we did either.";
+	otherwise:
+		follow the water-reaction rules for the selected object.
 
 The water-reaction rules are an object-based rulebook.
 
