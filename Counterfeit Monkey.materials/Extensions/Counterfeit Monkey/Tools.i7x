@@ -679,7 +679,7 @@ Sanity-check locking keylessly the plexiglas case:
 Sanity-check turning the screws when the screws are not part of the plexiglas case:
 	say "There's no point now: they're not holding anything in place." instead.
 
-The synthesizer is a container in the plexiglas case. The heft of the synthesizer is 4. The synthesizer is fixed in place. Understand "synth"  or "synthesiser" as the synthesizer.
+The synthesizer is a container in the plexiglas case. The heft of the synthesizer is 4. The synthesizer is fixed in place. Understand "synth" or "synthesiser" or "machine" as the synthesizer.
 	The description is "It is designed to accept two items and then be turned on. It is shiny and white, and looks a little like a bathtub for very short people."
 	The introduction is "It was a full-sized, human version of this that made us what [we] [are] now, so the object makes both of us feel a little skittish and self-conscious."
 
@@ -693,7 +693,17 @@ After inserting something into the synthesizer for the first time:
 Then it's over. [run paragraph on]";
 	continue the action.
 
-Understand "activate" as switching on.
+Understand "activate [something]" as switching on.
+Understand "deactivate [something]" as switching off.
+
+Does the player mean switching on the synthesizer:
+	it is very likely.
+
+Does the player mean switching on the massive switch:
+	it is very likely.
+
+Does the player mean switching on the reclamation computer
+	it is very likely.
 
 Understand "synthesize" as synth-activating. Synth-activating is an action applying to nothing.
 
