@@ -702,7 +702,7 @@ Does the player mean switching on the synthesizer:
 Does the player mean switching on the massive switch:
 	it is very likely.
 
-Does the player mean switching on the reclamation computer
+Does the player mean switching on the reclamation computer:
 	it is very likely.
 
 Understand "synthesize" as synth-activating. Synth-activating is an action applying to nothing.
