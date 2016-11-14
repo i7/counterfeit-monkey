@@ -249,14 +249,14 @@ The officer nearest us turns on us, looking more startled than anything else [--
 'She's a student,' Higgate says. 'I was just speaking with her earlier. I don't think she's close with Alex. I've never seen you two together, have I?' she concludes, looking at us.
 
 This well-meant speech doesn't seem to clear suspicion as effectively as Higgate might have hoped, however, and soon we find ourselves being scooped up for questioning in the same van they sent for Higgate. It doesn't go well.";
-	end the story saying "Perhaps silence would've been better"
+		end the story saying "Perhaps silence would've been better"
 
 Instead of saying hello to officers during Higgate-arrested:
 	if we are forewarned:
 		say "'Sir,' we begin.
 
 'Back off, lady,' says the officer. [getting-caught]";
-	end the story saying "That was not the most successful approach"
+		end the story saying "That was not the most successful approach"
 
 To say getting-caught:
 	say "'Unless you know where to find Alex Rosehip. You a friend of his?'
