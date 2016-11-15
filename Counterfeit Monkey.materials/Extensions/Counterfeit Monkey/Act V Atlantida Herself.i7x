@@ -180,7 +180,7 @@ topic	stuff	setting
 
 Test flipperbug with "tutorial off / autoupgrade / open tub / gel lamb granulates / load gun with bullets / shoot flipper / shoot cap" [holding the anagramming gun and the tub in the Equipment Archive.]
 
-The description of the lamb-granulates is "They're tiny brown beads used to make lamb-stock gravy. Perhaps they're left-over military rations of some kind." The printed name of the lamb-granulates is "lamb granulates". Understand "lamb granulates" or "gravy" or "lamb" or "lamb granulates" as the lamb-granulates. The lamb-granulates are plural-named.
+The description of the lamb-granulates is "They're tiny brown beads used to make lamb-stock gravy. Perhaps they're left-over military rations of some kind." The printed name of the lamb-granulates is "lamb granulates". Understand "lamb granulates" or "gravy" or "lamb" or "granulates" or "lamb granulates" as the lamb-granulates. The lamb-granulates are plural-named.
 
 The description of the accent flipper is "Not an Atlantean product at all, but a machine built by the state-subsid[ize]d French company Aigu. Its sole purpose is to convert accents or remove them entirely, not a function that much applies to English words. In form, it looks like a very small spatula connected by wire to a substantial battery pack." The heft of the accent flipper is 5.
 	The introduction of the accent flipper is "You've heard of the congrès / congres scandal. One of these was responsible."
