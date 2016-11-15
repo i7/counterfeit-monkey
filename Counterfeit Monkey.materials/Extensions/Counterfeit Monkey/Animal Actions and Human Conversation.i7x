@@ -1338,7 +1338,12 @@ After the bartender saying hello to the player for the first time:
 
 The bartender knows you-are-possible-customer.
 
-Understand "make me/us/-- [something]" as making when the person asked is the bartender. Making is an action applying to one thing.
+Understand "make me/us/-- [something]" as making. Making is an action applying to one thing.
+
+Understand "make [text]" as anything-making. Anything-making is an action applying to one topic. Carry out anything-making: try making the player instead.
+
+Carry out making something:
+	say "[one of]How, exactly, do [we] intend to do that[or]How do you propose [we] do that[at random]?".
 
 Instead of asking the bartender to try making something:
 	try requesting the noun from the bartender.

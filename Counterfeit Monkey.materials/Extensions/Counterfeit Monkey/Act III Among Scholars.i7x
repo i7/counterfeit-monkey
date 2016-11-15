@@ -1661,7 +1661,12 @@ South of Samuel Johnson Basement is the Graduate Student Office. The description
 
 A tiny refrigerator is a refrigerator in the Graduate Student Office. The tiny refrigerator is not scenery. The fridge-top is part of the tiny refrigerator. It is a supporter.  The scent-description of the tiny refrigerator is "onions".
 
-On the fridge-top is a coffee-maker. The coffee-maker is a device. A coffee-pot is part of the coffee-maker. The coffee-pot is a container. Understand "coffee pot" or "coffeepot" as the coffee-pot. Understand "coffee maker" or "coffeemaker" or "maker" or "coffee" as the coffee-maker. The scent-description of the coffee-maker is "damp, aging coffee grounds".
+On the fridge-top is a coffee-maker. The coffee-maker is a device. A coffee-pot is part of the coffee-maker. The coffee-pot is a container. Understand "coffee pot" or "coffeepot" or "pot" as the coffee-pot. Understand "coffee maker" or "coffeemaker" or "maker" or "coffee" as the coffee-maker. The scent-description of the coffee-maker is "damp, aging coffee grounds".
+
+Understand "make [coffee-maker]" or "make [coffee-pot]" or "brew [coffee-pot]" or "brew [coffee-maker]" as making when the coffee-maker is marked-visible.
+
+Instead of making the coffee-maker: try switching on the coffee-maker instead.
+Instead of making the coffee-pot: try switching on the coffee-maker instead.
 
 Instead of switching on the coffee-maker:
 	say "[We] don't have time to go brewing ourselves a pot, but I can set your mind at rest on one point anyway: it generally comes out horrible."
