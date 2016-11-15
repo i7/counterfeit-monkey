@@ -1393,13 +1393,13 @@ Does the player mean doing something to the gimlets:
 Does the player mean doing something to the nails:
 	it is very unlikely.
 
-Does the player mean doing something to the screwdriver:
+Does the player mean doing something to the screwdriver when location is  Fleur d'Or Drinks Club:
 	it is very likely.
 
-Does the player mean doing something to the gimlet:
+Does the player mean doing something to the gimlet when location is  Fleur d'Or Drinks Club:
 	it is very likely.
 
-Does the player mean doing something to the nail:
+Does the player mean doing something to the nail when location is  Fleur d'Or Drinks Club:
 	it is very likely.
 
 Carry out the bartender discussing buy the screwdriver:
