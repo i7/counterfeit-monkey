@@ -1078,11 +1078,8 @@ A diorama table is fixed in place in Heritage Corner. It is a supporter. The ini
 
 The description of the diorama table is "The patriotic scene is set against the backdrop of the Bureau's buildings ca. 1895, where the committee first met, but the historians have included a bit of the building exterior to show that the meetings were conducted under army guard. The writing of dictionaries has not always been bloodless[if the army is not on the diorama table and the members are not on the diorama table]. Both army and members are missing[otherwise if the army is not on the diorama table]. The army has been removed[otherwise if the members are not on the diorama table and the member is on the diorama table]. The members have been reduced to a single [member][otherwise if the members are not on the diorama table]. The members have been removed[end if].". Understand "backdrop" or "setting" or "buildings" or "bureau" or "bureau's" or "building" or "scenery" as the diorama table when the location is Heritage Corner.
 
-Does the player mean approaching the Rotunda:
-	it is very likely.
-
-Does the player mean finding the diorama table:
-	it is very unlikely.
+Instead of finding the diorama table when the subcommand of the diorama table matches the text "bureau":
+	try approaching the Rotunda.
 
 The diorama-shelter is part of the diorama table. The printed name is "shelter". Understand "shelter" or "bit" or "bit of" or "clear" or "plastic" or "hood" as the diorama-shelter. The description is "Little more than a clear plastic hood to protect the diorama beneath."
 
