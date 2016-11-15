@@ -4841,7 +4841,7 @@ A Brock-suggestion rule when a self-object is marked-visible and Brock does not 
 	try Brock discussing surprisingly-handsome;
 	rule succeeds.
 
-A Brock-suggestion rule when a fake person is marked-visible:
+A Brock-suggestion rule when a fake person is in location:
 	if Brock does not recollect getting-crowded or the number of people in the location is greater than 3 or a random chance of 1 in 4 succeeds:
 		if a random chance of 1 in 3 succeeds:
 			say "[creepy stare][run paragraph on]";
@@ -5052,7 +5052,7 @@ naughty-remark is an NPC-directed quip.
 	The reply is "He eyes [the random naughty-sounding marked-visible thing which is not the cock-ring]. 'Oh for a homonym paddle.'"
 
 getting-crowded is an NPC-directed quip.
-	The reply is "[one of]Brock steps to the side to make room for [the list of marked-visible fake people][or]'We're going to need to install stadium seating in here,' Brock comments, nodding at [the list of marked-visible fake people][or]'If any guards come, we can use [the random marked-visible fake person] as a decoy,' Brock remarks[at random]."
+	The reply is "[one of]Brock steps to the side to make room for [the list of fake people *in location][or]'We're going to need to install stadium seating in here,' Brock comments, nodding at [the list of fake people *in location][or]'If any guards come, we can use [the random fake person in location] as a decoy,' Brock remarks[at random]."
 
 After Brock discussing interference-gelling:
 	let interference be a random noisy thing enclosed by the location;
