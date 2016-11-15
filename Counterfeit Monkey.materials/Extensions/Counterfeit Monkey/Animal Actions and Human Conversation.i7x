@@ -6012,8 +6012,8 @@ what Atlantida kens concerning synthesis is a questioning quip.
 
 thank Atlantida is a unlisted thanking quip.
 	It mentions atlantida-refreshed. It assumes thank-atlantida.
-	The comment is "'Thank you!' [we] say.".
-	The reply is "[one of]'Don't thank me,' she says. 'Now, hurry!'[or]'Hurry!'[stopping]".
+	The comment is "'Thank you,' [we] say.".
+	The reply is "[one of]'Don't thank me,' she says. 'Hurry!'[or]'Hurry!'[stopping]".
 	It quip-supplies atlantida-refreshed.
 
 really-go-now is an NPC-directed quip.
