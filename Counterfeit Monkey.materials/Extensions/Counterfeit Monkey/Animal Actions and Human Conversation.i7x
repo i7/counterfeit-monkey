@@ -4842,7 +4842,7 @@ A Brock-suggestion rule when a self-object is marked-visible and Brock does not 
 	rule succeeds.
 
 A Brock-suggestion rule when a fake person is in location:
-	if Brock does not recollect getting-crowded or the number of people in the location is greater than 3 or a random chance of 1 in 4 succeeds:
+	if Brock does not recollect getting-crowded or how-many-people-here is greater than 3 or a random chance of 1 in 4 succeeds:
 		if a random chance of 1 in 3 succeeds:
 			say "[creepy stare][run paragraph on]";
 		otherwise:
