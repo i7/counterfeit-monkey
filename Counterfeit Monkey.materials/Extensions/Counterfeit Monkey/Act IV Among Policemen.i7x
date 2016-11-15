@@ -332,6 +332,8 @@ The Etymological Reversing Chamber is a closed openable container on the display
 The machine is of little popular use and is principally applied by scholars under controlled circumstances."
 	The introduction is "Despite newspaper articles breathlessly proclaiming that the ERC will be able to produce the 'God language' [--] mankind's original tongue [--] in practice even the more modest research goal of rediscovering the vocabulary of proto-Indo-European would require prohibitive amounts of power. As one moves further and further from forms that are familiar to modern speakers, the reification effort required increases exponentially."
 
+Understand "erc" as the Etymological Reversing Chamber.
+
 Report opening the Etymological Reversing Chamber for the first time:
 	say "There is an exhalation of funereal dust, as though you had cracked an Egyptian tomb." instead.
 
