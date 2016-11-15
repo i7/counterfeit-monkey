@@ -722,10 +722,6 @@ Instead of showing a damaged car to the mechanic:
 	say "We indicate the car with gestures.";
 	try the mechanic discussing why the car does not run.
 
-After reading a command when location is High street:
-	if the player's command includes "tell mechanic to" or the player's command includes "ask mechanic to":
-		replace the matched text with "mechanic,".
-
 Instead of asking the mechanic to try doing something when a car is the noun or a car is the second noun:
 	if the noun is an oil or the second noun is an oil:
 		try discussing whether the oil will work;
@@ -1644,10 +1640,6 @@ Does the player mean asking the bartender to try attacking something with the ho
 
 Does the player mean asking the bartender to try attacking something with something that is not the homonym paddle:
 	it is very unlikely.
-
-After reading a command when location is Fleur d'Or Drinks Club (this is the rearrange bartender's orders rule):
-	if the player's command includes "tell bartender to" or the player's command includes "ask bartender to":
-		replace the matched text with "bartender,".
 
 Rule for refusing comment by the bartender:
 	if the player is not holding the noun:
