@@ -2327,12 +2327,20 @@ After printing the name of the dais socket while examining:
 
 Attachment relates one massive plug to one power socket. The verb to be plugged into implies the attachment relation.
 
-Sanity-check an actor inserting the power cord into a power socket:
+Sanity-check inserting the power cord into a power socket:
 	if a free massive plug (called target plug) is part of the power cord:
-		try the actor plugging the target plug into the second noun instead.
+		try plugging the target plug into the second noun instead.
+
+Sanity-check inserting the power cord into something which is not a power socket:
+	if a power socket (called target socket) is part of second noun:
+		try plugging the power cord into the target socket instead.
 
 Sanity-check inserting a massive plug into a power socket:
 	try the actor plugging the noun into the second noun instead.
+
+Sanity-check inserting a massive plug into something which is not a power socket:
+	if a power socket (called target socket) is part of second noun:
+		try plugging the noun into the target socket instead.
 
 Sanity-check taking a massive plug:
 	if the noun is plugged into something (called the target):
@@ -2392,9 +2400,9 @@ Carry out freeing:
 		if the item is plugged into a power socket (called target socket):
 			try unplugging the item from the target socket.
 
-Understand "plug [a free massive plug] into [a power socket]" as plugging it into. Understand "plug [a massive plug] into [a power socket]" as plugging it into.  Understand "plug [something] into [something]" as plugging it into.
+Understand "plug [a free massive plug] in/into [a power socket]" as plugging it into. Understand "plug [a massive plug] in/into [a power socket]" as plugging it into.  Understand "plug [something] in/into [something]" as plugging it into.
 
-Understand "plug in [a free massive plug] to [a power socket]" as plugging it into. Understand "plug in [a massive plug] to [a power socket]" as plugging it into.  Understand "plug in [something] to [something]" as plugging it into.
+Understand "plug in [a free massive plug] to [a power socket]" as plugging it into. Understand "plug in [a massive plug] to [a power socket]" as plugging it into. Understand "plug in [something] to [something]" as plugging it into.
 
 
 Plugging it into is an action applying to two things.
@@ -2404,13 +2412,22 @@ Definition: a massive plug is free if it is not plugged into a power socket.
 Sanity-check plugging something which is not a massive plug into a power socket:
 	if the noun is the power cord:
 		if a massive plug (called target plug) is free:
-			try plugging the target plug into the second noun instead;
+			if the second noun incorporates a power socket (called target):
+				try plugging the target plug into target instead;
+			otherwise:
+				try plugging the target plug into the second noun instead;
 		otherwise:
 			say "The power cord is already fully plugged in." instead;
 	say "That's not what the best electrical safety engineers recommend." instead.
 
 Sanity-check plugging a massive plug into something which is not a power socket:
-	say "Better look for a socket instead." instead.
+	if the second noun incorporates a power socket (called target socket):
+		if a massive plug (called target plug) is free:
+			try plugging the target plug into the target socket instead;
+		otherwise:
+			say "The plugs are fully plugged in already." instead;
+	otherwise:
+		say "Better look for a socket instead." instead.
 
 Sanity-check plugging the power cord into something:
 	if the second noun is a power socket:
