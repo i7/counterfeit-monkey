@@ -237,6 +237,8 @@ The surveillance computer is a desktop computer in the Surveillance Room. It is 
 
 Understand "flat" or "screen" or "readout" as the surveillance computer's screen. The description of the surveillance computer's screen is "It is bigger than my parent's television, and that is saying something."
 
+A ranking rule for the surveillance computer: increase description-rank of the surveillance computer by 50.
+
 [Here we nab something straight out of the Computers documentation: a computer with a multiple-choice operating system and a range of subprograms.
 
 The sense we want to convey here is the sense of being the spider at the center of the web: the person using this computer has access to a huge range of information, a view of the whole Bureau and parts of the city.]
