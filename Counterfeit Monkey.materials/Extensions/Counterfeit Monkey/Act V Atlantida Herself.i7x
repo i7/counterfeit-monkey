@@ -515,6 +515,7 @@ Instead of searching the portcullis:
 
 The pulley is part of the portcullis. It is a supporter. Understand "rope" or "pulley" or "hook" as the pulley. The description of the pulley is "Rope runs from the top of the portcullis over pulleys and down to a hook. It looks like a contrivance to help open the portcullis."
 
+Understand the command "hang" as "put".
 
 Check putting the weight on the pulley:
 	say "This weight isn't substantial enough, and also provides no loop or ring that would let it hang from the hook." instead.
@@ -593,9 +594,12 @@ After deciding the scope of the player when the location is Personal Apartment o
 	if the portcullis is wedged by something (called the impediment):
 		place the impediment in scope.
 
-Instead of pulling the pulley when the counterweight is not on the pulley:
+Instead of pulling the pulley:
 	if the portcullis is closed:
-		say "Even pulling from above, [we] can't budge the portcullis. Some additional weight is required.";
+		if the counterweight is not on the pulley:
+			say "Even pulling from above, [we] can't budge the portcullis. Some additional weight is required.";
+		otherwise:
+			try opening the portcullis;
 	otherwise:
 		say "The portcullis is already open and the counterweight nearly to the ground."
 
@@ -604,6 +608,12 @@ Instead of pulling something which is on the pulley:
 		try opening the portcullis;
 	otherwise:
 		try pulling the pulley.
+
+Instead of pulling the portcullis:
+	if the portcullis is closed:
+		try opening the portcullis;
+	otherwise:
+		try closing the portcullis.
 
 [Nothing makes this explicit, but in addition to being part of the counterweight, the counter measures numbers of visits to the oracle in a given month. For the most part people do not open the portcullis and consult with Atlantida from the outside instead, as they are increasingly afraid of her.]
 
