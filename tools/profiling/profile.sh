@@ -2,6 +2,12 @@
 
 path_to_interpreter=../glulxe
 
+if [ ! -f $path_to_interpreter ]; then
+	echo
+    echo "No interpreter binary found! This is not included in the Github repository. You will have to provide one yourself."
+    echo
+fi
+
 rm monkeyac.glkdata
 
 rm "Counterfeit Monkey-startup-data.glkdata"
