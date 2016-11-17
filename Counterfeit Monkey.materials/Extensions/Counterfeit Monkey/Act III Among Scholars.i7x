@@ -898,7 +898,8 @@ Instead of taking the department printer:
 	say "It would be a heavy thing to carry around, and I don't see much use for it elsewhere."
 
 Rule for writing a paragraph about the department printer:
-	say "[The department printer] also sits on [the u-shaped desk]. [run paragraph on]";
+	say "[if boldening is true][bold type][end if]The department printer[roman type] also sits on [the u-shaped desk]. [run paragraph on]";
+	now the department printer is mentioned;
 	now the output tray is referenced by the current-paragraph;
 	now the paper-drawer is referenced by the current-paragraph;
 	if the paper-drawer is open:
