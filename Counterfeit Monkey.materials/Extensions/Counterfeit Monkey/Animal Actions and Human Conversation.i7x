@@ -4692,10 +4692,15 @@ Report someone discussing please-get-out:
 		shut the office. ]
 
 To shut the office:
-	try Waterstone closing office-door-1;
+	say "The office door closes with measured firmness behind us.
+
+Through the window in Waterstone's door, we can see him turning the lock. When he catches us watching he gives a tight, unfriendly smile and goes back to his desk.";
+	now office-door-1 is closed;
+	now office-door-1 is locked;
+	[try Waterstone closing office-door-1;
 	try Waterstone locking office-door-1 with od-key;
-	carry out the caching scope activity with the player;
-	if the department printer is marked-visible and the department printer is switched on:
+	carry out the caching scope activity with the player;]
+	if the department printer is switched on:
 		say "A moment later the printer whirs thoughtfully.";
 	now the draft document is pending;
 	rule succeeds.

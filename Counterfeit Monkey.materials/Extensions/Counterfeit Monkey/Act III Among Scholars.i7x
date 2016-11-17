@@ -1206,11 +1206,11 @@ Sanity-check taking something which is on the oval table:
 My fingers relax their grip instinctively." instead.
 
 
-lsr-key unlocks seminar door. lsr-key is carried by Professor Higgate. The printed name of the lsr-key is "small key". Understand "small" as the lsr-key.
+[lsr-key unlocks seminar door. lsr-key is carried by Professor Higgate. The printed name of the lsr-key is "small key". Understand "small" as the lsr-key.
 
 Rule for deciding the concealed possessions of Professor Higgate:
 	if the particular possession is the lsr-key:
-		yes.
+		yes.]
 
 Sanity-check putting something on the oval table:
 	say "Why get our stuff mixed up with Professor Higgate's? Besides, there's not a lot of space left there anyway." instead.
@@ -1364,11 +1364,11 @@ After deciding the scope of player when the player is in Language Studies Depart
 A description-concealing rule when the location is the Language Studies Department Office:
 	now everything which is enclosed by Waterstone's Office is not marked for listing.
 
-Report Professor Waterstone closing office-door-1:
-	say "The office door closes with measured firmness behind us." instead.
+[Report Professor Waterstone closing office-door-1:
+	say "The office door closes with measured firmness behind us." instead.]
 
-Report Professor Waterstone locking office-door-1 with something:
-	say "Through the window in Waterstone's door, [we] can see him turning the lock. When he catches us watching he gives a tight, unfriendly smile and goes back to his desk." instead.
+[Report Professor Waterstone locking office-door-1 with something:
+	say "Through the window in Waterstone's door, [we] can see him turning the lock. When he catches us watching he gives a tight, unfriendly smile and goes back to his desk." instead.]
 
 Instead of searching the special glass window when office-door-1 is closed:
 	if the location is Waterstone's Office:
@@ -1395,11 +1395,14 @@ Professor Waterstone is an alert man in Waterstone's Office.
 	The description of Waterstone is "Waterstone is in many respects a brilliant man, but he also has a spectacular capacity for ticking people off. He has a dry, off-beat sense of hum[our] whose output is often indistinguishable from insult; he is also convinced that he knows best about most topics of policy, which brings him into frequent disagreement with his colleagues, the dean, and (we hear) his wife.".
 	The introduction of Waterstone is "Waterstone is my dissertation advisor. (He insists on the 'o' spelling.) He's an expert in the history of linguistic and orthographical power, but he's politically kind of reactionary. 'Don't meddle' is pretty much his motto[if Professor Higgate is introduced]. He and Professor Higgate don't always get along that well[end if]."
 
-od-key unlocks office-door-1. od-key is carried by Waterstone.
+[od-key unlocks office-door-1. od-key is carried by Waterstone.
 
 Rule for deciding the concealed possessions of Waterstone:
 	if the particular possession is the od-key:
-		yes.
+		yes.]
+
+Does the player mean knocking on office-door-1:
+	it is very likely.
 
 Report Professor Waterstone saying hello to the player:
 	if Waterstone does not recollect W-identifies, queue W-identifies;
