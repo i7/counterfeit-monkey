@@ -158,10 +158,11 @@ An accessibility rule (this is the no touching NPC stuff rule):
 A first accessibility rule (this is the go to location rule):
 	if the location of the touch-goal is not the location of the person reaching:
 		let the target room be the location of the touch-goal;
-		if the number of moves from the location to the target room is 1:
-			try approaching target room;
-			if the location is not target room:
-				rule fails;
+		repeat with way running through directions:
+			if the room way from location is target room:
+				try going way;
+				if the location is not target room:
+					rule fails;
 	make no decision.
 
 To decide what object is the touch-goal:
