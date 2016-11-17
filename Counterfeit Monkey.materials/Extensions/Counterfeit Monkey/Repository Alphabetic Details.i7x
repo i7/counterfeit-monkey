@@ -586,7 +586,7 @@ Instead of listening to the click:
 [clock]
 The clock has a time called the current time. The description of a clock is "It appears to be one of those archetypal alarm clocks that crows at sunrise and generally makes a nuisance of itself. It shows the time to be about [the current time to the nearest five minutes in words]."
 
-Every turn:
+Every turn (this is the advance clock rule):
 	increase the current time of the clock by one minute.
 
 Understand "set [clock] to [time]" as setting it by time. Setting it by time is an action applying to one thing and one time.
@@ -1602,7 +1602,7 @@ The heft of the ore is 3. The description of the ore is "A quantity of rough-hew
 An otter is an animal. The description is "Sleek, black, whiskered, and somewhat out of place on dry land."
 	The scent-description is "fish and sea air".
 
-Every turn:
+Every turn (this is the otter escape rule):
 	if sea-view is marked-visible and the otter is in the location:
 		now the otter is nowhere;
 		say "The otter notices the proximity of watery freedom and makes a break for it. Your last glimpse is of a sleek black head bobbing among the waves."
@@ -1864,7 +1864,7 @@ chosen action
 waiting
 with 25 blank rows.
 
-Every turn:
+Every turn (this is the blank out Table of Past Actions rule):
 	if the number of blank rows in the Table of Past Actions is 0
 	begin;
 		choose a random row in the Table of Past Actions;

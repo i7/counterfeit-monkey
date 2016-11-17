@@ -880,7 +880,7 @@ Understand "put [word-balance] out of alignment" or "unbalance [word-balance]" o
 
 A ranking rule for the word-balance: increase description-rank of the word-balance by 50.
 
-Every turn:
+Every turn (this is the win the tube rule):
 	if the word-balance is tilting and the barker is in location
 	begin;
 		[follow the considerate player's holdall rule;]

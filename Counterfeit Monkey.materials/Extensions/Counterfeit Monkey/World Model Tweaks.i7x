@@ -535,7 +535,7 @@ This is the new approach heading finding rule:
 
 Path description count is a number that varies. [let's count how many times we've invoked this activity this turn!]
 
-Every turn:
+Every turn (this is the reset path description count rule):
 	now path description count is 0.
 
 Rule for describing path of the player:
