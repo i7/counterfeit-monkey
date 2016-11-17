@@ -4590,8 +4590,8 @@ paint-recycling is an NPC-directed quip.
 
 thank Professor Higgate is an unlisted thanking quip.
 	It mentions Professor Higgate. It assumes thank-higgate.
-	The comment is "'Thanks a lot!'".
-	The reply is "'[one of]Don't mention it,[or]That's enough![stopping]' she says.".
+	The comment is "'Thank you,' we say.".
+	The reply is "'[one of]Don't worry about it,[or]That's enough![stopping]' she replies.".
 	It quip-supplies Professor Higgate.
 
 
