@@ -1338,7 +1338,7 @@ After the bartender saying hello to the player for the first time:
 
 The bartender knows you-are-possible-customer.
 
-Understand "make me/us/-- [something]" as making. Making is an action applying to one thing.
+Understand "make me/us/-- [something]" as making. Making is an action applying to one visible thing.
 
 Understand "make [text]" as anything-making. Anything-making is an action applying to one topic. Carry out anything-making: try making the player instead.
 
