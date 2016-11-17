@@ -1,5 +1,6 @@
 y
 andra
+
 tutorial off
 random-seed 1234
 pauses off
