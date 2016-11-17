@@ -37,7 +37,7 @@ Carry out on-pausing:
 	now no pauses is false.
 
 Carry out off-pausing:
-	say "[first custom style][bracket]No-pause mode active. No waiting for key presses.)[roman type]";
+	say "[first custom style][bracket]No-pause mode active. No waiting for key presses.[close bracket][roman type]";
 	now no pauses is true.
 
 Understand "random-seed [number]" as reseeding. Reseeding is an action out of world applying to one number.
