@@ -4504,7 +4504,7 @@ how we might return a book is a demonstration quip.
 	The reply is "'Oh! Yes, all right,' she says. 'Did you like it? It's a good overview of the subject, didn't you think? I'm afraid the author once annoyed Professor Waterstone at a conference, or we might have had her around to speak at one of our colloquia...'".
 	It quip-supplies Professor Higgate.
 
-Instead of looking in Samuel Johnson Hall when Professor Higgate is in Samuel Johnson Hall:
+[Instead of looking in Samuel Johnson Hall when Professor Higgate is in Samuel Johnson Hall:
 	follow the room description heading rule;
 	say "We stand politely a few paces back from the southeast door, which is currently occupying Higgate's attention. [run paragraph on]"
 
@@ -4527,7 +4527,7 @@ Report Professor Higgate going a direction when the location is Higgate's Office
 	say "She walks past us through the office door." instead.
 
 Report Professor Higgate going southwest to the Seminar Room:
-	say "She steps inside." instead.
+	say "She steps inside." instead.]
 
 Report Professor Higgate going a direction (called way):
 	say "She waves and heads back [way]." instead.

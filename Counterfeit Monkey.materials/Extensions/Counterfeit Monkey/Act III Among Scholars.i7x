@@ -816,8 +816,8 @@ Before going from the Language Studies Seminar Room when the player carries  Pro
 Carry out putting Problem of Adjectives on the LSR Bookcase:
 	record "returning a library book to its proper home" as achieved.
 
-Carry out going to the Language Studies Seminar Room:
-	record "gaining access to the synthesizer" as achieved.
+[Carry out going to the Language Studies Seminar Room:
+	record "gaining access to the synthesizer" as achieved.]
 
 The LSR bookcase is a supporter in the Language Studies Seminar Room. The initial appearance is "The bookshelves lining the walls contain the department library." The description is "Built in and sturdily made." The printed name is "bookshelf". Understand "shelf" or "shelves" or "bookshelf" as the LSR bookcase.
 
@@ -1046,7 +1046,23 @@ Higgate's office door is west of the Language Studies Department Office. Higgate
 Understand "bureau tape" or "tape" as Higgate's office door when Higgate-arrested has happened.
 
 Report Professor Higgate discussing how we might return a book:
-	say "[reply of the noun][paragraph break]";
+	say "'Oh! Yes, all right,' she says. 'Did you like it? It's a good overview of the subject, didn't you think? I'm afraid the author once annoyed Professor Waterstone at a conference, or we might have had her around to speak at one of our colloquia...'
+
+Higgate stands, patting herself down as though worried she has forgotten something.
+
+'After you,' says Higgate. 'I assume it's safe to leave for a minute; if anyone is coming for Lojban Tea we'll see them in the hall.' She walks past us through the office door.
+
+We walk a little behind Higgate, who has a very long businesslike stride despite her heels.
+
+She fiddles with her keys for a moment before finding the right one. 'Here you go,' she says, pushing the door open.";
+	move Professor Higgate to Seminar Room;
+	now the seminar door is unlocked;
+	now the seminar door is open;
+	move the player to Seminar Room;
+	record "gaining access to the synthesizer" as achieved;
+	stop the action.
+
+	[say "[reply of the noun][paragraph break]";
 	try Professor Higgate exiting;
 	say "'After you,' says Higgate. 'I assume it's safe to leave for a minute; if anyone is coming for Lojban Tea we'll see them in the hall.' [run paragraph on]";
 	try Professor Higgate approaching Samuel Johnson Hall;
@@ -1057,7 +1073,7 @@ Report Professor Higgate discussing how we might return a book:
 	try going southwest;
 	set the current interlocutor to Professor Higgate;
 	clear path-walked for player;
-	stop the action.
+	stop the action.]
 
 Instead of doing something in the presence of Professor Higgate when the noun is the synthesizer or the second noun is the synthesizer or the noun is the plexiglas case or the noun is the screws or the second noun is the plexiglas case or the second noun is the screws:
 	say "Higgate may be a little unworldly, but there is no way she'd let us mess with the synthesizer without interference. We'll have to hope she is willing to leave us in here."
