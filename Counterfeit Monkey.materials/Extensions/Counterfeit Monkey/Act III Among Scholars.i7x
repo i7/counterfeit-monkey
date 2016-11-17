@@ -1087,7 +1087,9 @@ After putting the Problem of Adjectives on the LSR Bookcase:
 The sound of discussion comes from down the hall: two voices speaking in Lojban, and then a male voice interrupting. 'Do you have a lic[ense] for this conversation?' it asks.
 
 'Excuse me,' Higgate says. 'I'd better go see to that.'";
-	try Professor Higgate approaching higgate's office;
+	[try Professor Higgate approaching higgate's office;]
+	try Professor Higgate going northeast;
+	move Professor Higgate to higgate's office;
 	reset the interlocutor;
 	now higgate's office door is closed instead.
 
