@@ -1108,7 +1108,7 @@ Instead of opening Higgate's office door when Higgate's office door is closed:
 		clear the path-walked for the player;
 	if higgate-arrested has happened:
 		say "The door is sealed with Bureau tape. Evidently they are planning to search more carefully later." instead;
-	say "[one of][We] open the door to find two students, a boy and a girl, sitting at Higgate's table. The boy is sipping tea and the girl is paging madly through the Lojban book. 'Oh,' says Higgate. 'You found what you needed, I hope? I'm afraid [we] [are] busy now.'
+	say "[one of][We] open the door to find two students, a boy and a girl, sitting at Higgate's table. The boy is sipping tea and the girl is paging madly through the Lojban book. 'Oh,' says Higgate. 'You found what you needed, I hope? I'm afraid I am busy now.'
 
 So I duck us back out and close the door[or]I don't think [we] need anything else, and it would be mean to interrupt their tea again[stopping].".
 
