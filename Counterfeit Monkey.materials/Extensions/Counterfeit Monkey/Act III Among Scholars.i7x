@@ -1665,8 +1665,8 @@ On the fridge-top is a coffee-maker. The coffee-maker is a device. A coffee-pot 
 
 Understand "make [coffee-maker]" or "make [coffee-pot]" or "brew [coffee-pot]" or "brew [coffee-maker]" as making when the coffee-maker is marked-visible.
 
-Instead of making the coffee-maker: try switching on the coffee-maker instead.
-Instead of making the coffee-pot: try switching on the coffee-maker instead.
+Instead of making the coffee-maker: try switching on the coffee-maker.
+Instead of making the coffee-pot: try switching on the coffee-maker.
 
 Instead of switching on the coffee-maker:
 	say "[We] don't have time to go brewing ourselves a pot, but I can set your mind at rest on one point anyway: it generally comes out horrible."
