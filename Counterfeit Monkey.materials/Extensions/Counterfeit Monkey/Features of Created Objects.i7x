@@ -22,8 +22,8 @@ Before approaching a room that encloses a police person when the player has a ba
 	stow gear.
 
 To stow gear:
-	repeat with item running through illegal things which are enclosed by the player:
-		if the item is marked-visible and the item is not in the backpack:
+	repeat with item running through things which are enclosed by the player:
+		if the item is marked-visible and the item is illegal and the item is not enclosed by the backpack:
 			try inserting the item into the backpack;
 	if the backpack is open:
 		try closing the backpack.
