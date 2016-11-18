@@ -139,7 +139,8 @@ This is the stop removing error list rule:
 	
 [And finally "insert all into"]
 A multiple action processing rule when the action name part of the current action is inserting it into action:
-	abide by the stop inserting error list rule.
+	unless the second noun is the backpack:
+		abide by the stop inserting error list rule.
 
 This is the stop inserting error list rule:
 	abide by the check self-containment rule;
