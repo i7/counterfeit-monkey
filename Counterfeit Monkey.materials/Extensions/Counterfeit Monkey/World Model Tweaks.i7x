@@ -448,6 +448,8 @@ Section 1 - Listing Exits
 
 Include Exit Lister by Gavin Lambert.
 
+The darkness hides exits rule is not listed in any rulebook.
+
 Instead of going nowhere:
 	carry out the listing exits activity.
 
