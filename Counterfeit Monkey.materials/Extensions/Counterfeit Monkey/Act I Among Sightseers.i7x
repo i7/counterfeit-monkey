@@ -2527,7 +2527,7 @@ A description-concealing rule:
 Instead of pushing or pulling or turning the shrine:
 	say "The backing stone is built firmly into the wall."
 
-Sanity-check doing something when the bushes are shrine-hiding:
+Sanity-check doing something when location is Winding Footpath and the bushes are shrine-hiding:
 	if the noun is the shrine or the second noun is the shrine:
 		say "Now that you mention it, I do vaguely recall something about a shrine in this area, but [we] can't make it out under the [bushes] right now." instead.
 
