@@ -156,7 +156,7 @@ An accessibility rule (this is the no touching NPC stuff rule):
 	make no decision.
 
 A first accessibility rule (this is the go to location rule):
-	if the location of the touch-goal is not the location of the person reaching:
+	if the location of the touch-goal is not the location of the player:
 		let the target room be the location of the touch-goal;
 		repeat with way running through directions:
 			if the room way from location is target room:

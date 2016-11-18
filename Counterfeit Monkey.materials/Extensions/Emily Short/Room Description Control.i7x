@@ -9,11 +9,11 @@ Include Complex Listing by Emily Short. [Include version 4 of Plurality by Emily
 
 The new object description rule is listed instead of the room description paragraphs about objects rule in the carry out looking rules.
 
-When play begins (this is the mark every thing as unmentioned rule):
+When play begins (this is the mark every thing as unmentioned when play begins rule):
 	[now every thing is unmentioned.]
 	rapidly set all things not mentioned.
 	
-Before reading a command:
+Before reading a command (this is the mark everything unmentioned rule):
 	[now every thing is unmentioned.]
 	rapidly set all things not mentioned.
 
