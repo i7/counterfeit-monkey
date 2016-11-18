@@ -390,11 +390,11 @@ Carry out examining the clothing shops:
 	add the teach examining thoroughness rule to the completed instruction list, if absent.
 
 An instructional rule (this is the teach examining super thoroughness rule):
+	if we have examined the mourning dress:
+		make no decision;
 	if the teach examining super thoroughness rule is listed in the completed instruction list:
 		make no decision;
 	if the mourning dress is not enclosed by location:
-		make no decision;
-	if we have examined the mourning dress:
 		make no decision;
 	say "[first custom style]Sometimes the things we examine have parts that we might also want to look at. That mourning dress, for instance[one of][or]. Try LOOK AT MOURNING DRESS or just L MOURNING DRESS[stopping].[roman type]";
 	now the expected action is the action of examining the mourning dress;
