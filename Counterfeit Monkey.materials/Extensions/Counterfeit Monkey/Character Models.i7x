@@ -478,7 +478,7 @@ Section 7 - Moods
 
 Include Mood Variations by Emily Short.
 
-The moods are neutral, distrustful, sexy, worried, sexy-worried, and sexy-distrustful. The current mood of a person is usually neutral.
+The moods are neutral, distrustful[, sexy, worried, sexy-worried, and sexy-distrustful]. The current mood of a person is usually neutral.
 
 
 
