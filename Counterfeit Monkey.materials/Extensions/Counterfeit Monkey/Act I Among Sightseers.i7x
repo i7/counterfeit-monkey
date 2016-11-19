@@ -881,25 +881,21 @@ Understand "put [word-balance] out of alignment" or "unbalance [word-balance]" o
 A ranking rule for the word-balance: increase description-rank of the word-balance by 50.
 
 Every turn (this is the win the tube rule):
-	if the word-balance is tilting and the barker is in location
-	begin;
-		[follow the considerate player's holdall rule;]
-		move the tube to the player;
-		move the barker to the repository;
-		say "There is a [if the ear is in a pan]disgusted gasp[otherwise]cheer[end if] from the spectators. [The word-balance] tilts slowly but inexorably.
+	if the barker is in location:
+		if the word-balance is tilting:
+			move the tube to the player;
+			move the barker to the repository;
+			say "There is a [if the ear is in a pan]disgusted gasp[otherwise]cheer[end if] from the spectators. [The word-balance] tilts slowly but inexorably.
 
-[The barker] looks astonished and displeased, except for a fraction of a second when he just noticeably winks. With exaggerated bad grace hands us [a gel]. 'There's your prize. And now this contest is over.'
+	[The barker] looks astonished and displeased, except for a fraction of a second when he just noticeably winks. With exaggerated bad grace hands us [a gel]. 'There's your prize. And now this contest is over.'
 
-He stalks away";
-		[if the apple is in a pan
-		begin;
-			move the apple to the repository;
-			say ", taking [the apple] with him";
-		end if;]
-		say ".";
-		record "winning the gel" as achieved;
-		if the barker is the current interlocutor, reset the interlocutor;
-	end if;
+	He stalks away.";
+			record "winning the gel" as achieved;
+			if the barker is the current interlocutor:
+				reset the interlocutor;
+		otherwise:
+			add barker-advertisement to the planned conversation of the barker.
+
 
 To say balance contents:
 	if the right pan is empty
@@ -959,9 +955,6 @@ Instead of asking someone about something:
 	say "[The noun] thinks for a moment, then apparently decides not to answer."
 
 Definition: the word-balance is tilting if the total heft of the things in the left pan is not the total heft of the things in the right pan.
-
-Every turn when the barker is in location and the word-balance is not tilting:
-	add barker-advertisement to the planned conversation of the barker.
 
 Check someone who is not the current interlocutor discussing an NPC-directed quip:
 	set the current interlocutor to the actor.
