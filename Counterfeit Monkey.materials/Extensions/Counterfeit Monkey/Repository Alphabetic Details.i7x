@@ -1763,8 +1763,7 @@ The passage-exit is a door. It is scenery. The printed name is "passage". Unders
 
 Instead of entering the passage-place:
 	say "[We] clamber down into the passage. It feels disconnected from other places, as though it didn't belong here at all. Soon we can't see the light from the door.";
-	now the player is in the Shadow Chamber;
-	redraw the map and compass;
+	now the player is in the Shadow Chamber.
 
 Table of Ultratests (continued)
 topic	stuff	setting
