@@ -697,7 +697,7 @@ Carry out examining small children:
 
 Some small children are a person in Park Center. Understand "child" or "boy" or "girl" or "sibling" as the small children. The description is "They look small and harmless, but you're probably right that they have sticky hands." The children are scenery.
 
-Every turn when the location of the small children encloses the hoses and the location is Park Center:
+Every turn when the location is Park Center and the location of the small children encloses the hoses:
 	if a random chance of 1 in 2 succeeds:
 		say "[one of]A little boy[or]A small girl[at random] [one of]tries to catch the spraying hosewater in an open mouth[or]pushes a sibling into the path of the water[or]leaps gleefully through the arc of water[at random].";
 		now the description of the small children is "Most of them are now sopping wet, and loving it.";
