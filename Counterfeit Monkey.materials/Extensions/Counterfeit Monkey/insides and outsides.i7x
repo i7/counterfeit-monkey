@@ -142,6 +142,7 @@ the wall-hole
 the bin
 the display case
 the t-inserter machine
+the passage-place
 the cryptolock
 the secret-door
 the kayak
