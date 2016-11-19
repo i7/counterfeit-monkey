@@ -3857,7 +3857,7 @@ The trampet is an enterable portable supporter. The description of the trampet i
 Instead of jumping when the player is on the trampet:
 	if there is a thing which is not the player on the trampet and a random chance of 1 in 3 succeeds:
 		let random-thing be a random thing which is not the player on the trampet;
-		say "[The random-thing] bounce[s] off the trampet.[paragraph break]";
+		say "[The random-thing] [bounce] off the trampet.[paragraph break]";
 		move random-thing to the holder of the trampet;
 	say "[one of]We get a pretty good height this way. [or][stopping]";
 	increase the jump count of the trampet by 1;

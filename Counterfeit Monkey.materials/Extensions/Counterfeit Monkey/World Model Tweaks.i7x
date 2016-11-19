@@ -118,7 +118,7 @@ Understand the command "chew" as "eat". [to cover the gum situation]
 
 Understand "climb on/onto [something]" as climbing.
 
-To make is a verb. To wish is a verb. To shy is a verb. To become is a verb. To make is a verb. To back is a verb. To fall is a verb. To cease is a verb. To meet is a verb. To hop is a verb. To peer is a verb. To ping is a verb. To stare is a verb. To decide is a verb. To shake is a verb. To withdraw is a verb.
+To make is a verb. To wish is a verb. To shy is a verb. To become is a verb. To make is a verb. To back is a verb. To fall is a verb. To cease is a verb. To meet is a verb. To hop is a verb. To peer is a verb. To ping is a verb. To stare is a verb. To decide is a verb. To shake is a verb. To withdraw is a verb. To bounce is a verb.
 
 [Before eating something which is not carried by the player:
 	try taking the noun;
