@@ -1151,6 +1151,10 @@ A distant stuff rule when the person asked is the All-Purpose-Officer:
 Every turn when the player is in Traffic Circle:
 	if the teenagers are in the location:
 		say "[one of]'Go ahead, put us in Cold Storage!' shouts the defiant teenager. 'I'm happy to sleep through all this shit and wake up when we have jet packs and a government that respects the rights of its people.'[or]The nervous teenager looks unhappy. 'We won't get out of here until our families are all dead and global warming has reduced Atlantis to three square feet of hilltop.'[or]The nervous teenager struggles against her bonds.[or]One of the other protesters tries to free the teenagers while the All-Purpose Officer isn't paying attention, but the bonds are too strong.[or]The teenagers look at us rather desperately.[stopping]";
+	otherwise:
+		let difference be the time of day minus the last irritation;
+		if difference is 1 minute:
+			say "The crowd is parting. We might be able to leave soon.";
 	if All-Purpose-Officer is enclosed by Traffic Circle and an unsuitable thing (called the target) is enclosed by the giant Atlantida statue:
 		if the target is the live branch and the All-Purpose-Officer carries the restoration-gel rifle:
 			try the All-Purpose-officer shooting the live branch with the restoration-gel rifle;
@@ -1182,10 +1186,8 @@ Every turn when the player is in Traffic Circle:
 He has no qualms about hitting us with the diminutive affixer. It turns out that Alexandrette is a goldilocked poppet with a minimal capacity for self-def[ense] and no gun skills whatever. We're ignominiously [i]carried[/i] back to the Bureau and our subsequent trials are humiliation in a frilly pink dress.";
 			end the story saying "That was careless";
 
-
 Before the All-Purpose-Officer entering the giant Atlantida statue when the All-Purpose-Officer carries something (called target) which is not the diminutive affixer:
 	try the All-Purpose-Officer dropping the target instead.
-
 
 Before the All-Purpose-Officer touching an unsuitable thing which is on the giant Atlantida statue when the All-Purpose-Officer carries the stuffed octopus:
 	try the All-Purpose-Officer dropping the stuffed octopus instead.
@@ -1275,11 +1277,6 @@ It's not, so to speak, our business any more.";
 		try entering the target car;
 		move the target car to the Roundabout;
 		try looking.
-
-Every turn when Traffic Circle is the location and the teenagers are not in the location:
-	let difference be the time of day minus the last irritation;
-	if difference is 1 minute:
-		say "The crowd is parting. We might be able to leave soon."
 
 Protest-scenario ends in departure when the player is in a car and the teenagers are not in the location.
 
