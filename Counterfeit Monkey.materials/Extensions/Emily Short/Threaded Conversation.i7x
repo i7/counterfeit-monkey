@@ -662,10 +662,10 @@ Understand
 	when the current interlocutor is a person.
 
 Understand
-	"tell [someone] [a typable informative quip]" or
-	"ask [someone] [a typable questioning quip]" or
-	"tell [someone] that/about [a typable informative quip]" or
-	"ask [someone] that/about [a typable questioning quip]" as discussing it with (with nouns reversed)
+	"tell [someone] [a typable quip]" or
+	"ask [someone] [a typable quip]" or
+	"tell [someone] that/about [a typable quip]" or
+	"ask [someone] that/about [a typable quip]" as discussing it with (with nouns reversed)
 	when the current interlocutor is a person.
 
 Does the player mean discussing a listed-plausible quip:
@@ -729,7 +729,7 @@ Understand
 	"tell about [a typable quip]" and
 	"ask about [a typable questioning quip]" and
 	"tell [a typable quip]" and
-	"ask [a typable questioning quip]" as discussing.
+	"ask [a typable quip]" as discussing.
 
 Understand the command "a" as "ask".
 Understand the command "t" as "tell".
