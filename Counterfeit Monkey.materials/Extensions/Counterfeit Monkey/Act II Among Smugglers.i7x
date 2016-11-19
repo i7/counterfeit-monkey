@@ -1269,8 +1269,9 @@ It's not, so to speak, our business any more.";
 	now the All-purpose-officer is nowhere;
 	now the traffic-island-protesters are nowhere;
 	if the player encloses the restoration-gel rifle:
-		say "[line break]I ditch the rifle [--] it's too large to fit in the car. ";
+		say "[line break][We] ditch the rifle [--] it's too large to fit in the car. ";
 	now the restoration-gel rifle is carried by atlantida-woman;
+	now the restoration-gel rifle is essential;
 	say "Traffic is starting to move again. We'd better get on to the dead drop. [run paragraph on]";
 	if a car (called target car) is in the location:
 		try entering the target car;
@@ -1287,6 +1288,7 @@ When protest-scenario ends in departure:
 	if the player encloses the restoration-gel rifle:
 		say "[We] ditch the rifle out the window [--] it's too large to fit in the car. ";
 	now the restoration-gel rifle is carried by atlantida-woman;
+	now the restoration-gel rifle is essential;
 	say "Traffic is starting to move again. We'd better get on to the dead drop.";
 	if a car (called target car) is in the location:
 		move the target car to the Roundabout;
@@ -1300,8 +1302,9 @@ When protest-scenario ends in early time-out:
 	now the All-purpose-officer is nowhere;
 	now the traffic-island-protesters are nowhere;
 	if the player encloses the restoration-gel rifle:
-		say "I ditch the rifle [--] it's too large to fit in the car. ";
+		say "[We] ditch the rifle [--] it's too large to fit in the car. ";
 	now the restoration-gel rifle is carried by atlantida-woman;
+	now the restoration-gel rifle is essential;
 	say "Traffic is starting to move and the car behind ours is not delighted that someone is parked in front of it.";
 	if a car (called target car) is in the location:
 		try entering the target car;

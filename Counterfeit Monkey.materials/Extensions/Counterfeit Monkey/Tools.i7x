@@ -1639,7 +1639,7 @@ Report shooting something with the anagramming gun:
 
 Chapter 11 - Restoration gel rifle
 
-The restoration-gel rifle is an essential pistol. The printed name of the restoration-gel rifle is "restoration gel rifle". Understand "restoration/gel/handgun" as the restoration-gel rifle.
+The restoration-gel rifle is a pistol. The printed name of the restoration-gel rifle is "restoration gel rifle". Understand "restoration/gel/handgun" as the restoration-gel rifle.
 
 [we want use of the regular gel to win, if possible]
 Does the player mean putting the restoration-gel rifle on:
