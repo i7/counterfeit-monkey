@@ -880,7 +880,7 @@ Understand "put [word-balance] out of alignment" or "unbalance [word-balance]" o
 
 A ranking rule for the word-balance: increase description-rank of the word-balance by 50.
 
-Every turn (this is the win the tube rule):
+A first every turn rule (this is the win the tube rule):
 	if the barker is in location:
 		if the word-balance is tilting:
 			move the tube to the player;
@@ -895,7 +895,6 @@ Every turn (this is the win the tube rule):
 				reset the interlocutor;
 		otherwise:
 			add barker-advertisement to the planned conversation of the barker.
-
 
 To say balance contents:
 	if the right pan is empty
