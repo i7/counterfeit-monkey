@@ -409,11 +409,11 @@ The man departs after her.";
 	remove the secretary from play;
 	remove the skit from play. ]
 
-Instead of someone going to a room which is not the Rotunda in the presence of the secretary when the person asked does not enclose the pass:
-	if the actor is marked-visible:
+Instead of someone going to Bureau hallway from the Antechamber when the person asked does not enclose the pass:
+	if the actor is in location:
 		say "'Pass?' demands the secretary in a bored voice. [The person asked] shrugs and goes no further."
 
-Instead of going to a room which is not the Rotunda in the presence of the secretary when the player does not enclose the pass and the player is not allowed:
+Instead of going to Bureau hallway from the Antechamber when the player does not enclose the pass and the player is not allowed:
 	say "[path-walked so far][one of][We] stride confidently toward [the noun] [--] that's my contribution, as you're more of a shuffler or possibly a slinker. Actually, I think a little of your posture must still be showing, because [we] [are] stopped by the secretary. [or]I do my best to give us a cocky swagger, but she's on to us now. [stopping][paragraph break]";
 	if the current interlocutor is not the secretary, silently try saying hello to the secretary;
 	try the secretary discussing pass-need.
@@ -423,7 +423,7 @@ Sanity-check showing the invitation to the secretary:
 Sanity-check showing the pass to the secretary:
 	try going east instead.
 
-Instead of going to a room which is not the Rotunda in the presence of the secretary when the player encloses the pass and the secretary encloses the Regulation Authentication Scope and the player is not allowed:
+Instead of going to Bureau hallway from the Antechamber when the player encloses the pass and the secretary encloses the Regulation Authentication Scope and the player is not allowed:
 	if already caught is true:
 		make no decision;
 	if the number of entries in the path so far of the player is greater than 0:
