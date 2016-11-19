@@ -1115,14 +1115,6 @@ When play begins (this is the brown tree rule):
 	now the brown tree is not proffered by the brown tree;
 	now the brown tee proffers the tree.
 
-Every turn when the brown tree is not in Traffic Circle and the teenagers are in Traffic Circle:
-	now the teenagers are nowhere;
-	say "Freed from attachment to the tree, the teenagers look at each other and then run off into the crowd[if the stuffed octopus is in the location]. After a moment, the defiant one comes back, picks up the stuffed octopus, and re-enters the fray[end if].";
-	if the stuffed octopus is in the location:
-		now the stuffed octopus is nowhere;
-	say "[line break][irritation reaction].";
-	[record "rescuing a couple of teenagers" as achieved; ]
-
 Sanity-check doing something when the noun is the tee or the second noun is the tee:
 	move the tee to the repository;
 	say "...come to mention it, where [i]is[/i] that tee? It must be somewhere in the grass, but we can't see it any more. Oh well. It's not as though I was planning an urgent golf game this afternoon." instead.
@@ -1150,7 +1142,14 @@ A distant stuff rule when the person asked is the All-Purpose-Officer:
 
 Every turn when the player is in Traffic Circle:
 	if the teenagers are in the location:
-		say "[one of]'Go ahead, put us in Cold Storage!' shouts the defiant teenager. 'I'm happy to sleep through all this shit and wake up when we have jet packs and a government that respects the rights of its people.'[or]The nervous teenager looks unhappy. 'We won't get out of here until our families are all dead and global warming has reduced Atlantis to three square feet of hilltop.'[or]The nervous teenager struggles against her bonds.[or]One of the other protesters tries to free the teenagers while the All-Purpose Officer isn't paying attention, but the bonds are too strong.[or]The teenagers look at us rather desperately.[stopping]";
+		if the brown tree is not in the location:
+			now the teenagers are nowhere;
+			say "Freed from attachment to the tree, the teenagers look at each other and then run off into the crowd[if the stuffed octopus is in the location]. After a moment, the defiant one comes back, picks up the stuffed octopus, and re-enters the fray[end if].";
+			if the stuffed octopus is in the location:
+				now the stuffed octopus is nowhere;
+			say "[line break][irritation reaction].";
+		otherwise:
+			say "[one of]'Go ahead, put us in Cold Storage!' shouts the defiant teenager. 'I'm happy to sleep through all this shit and wake up when we have jet packs and a government that respects the rights of its people.'[or]The nervous teenager looks unhappy. 'We won't get out of here until our families are all dead and global warming has reduced Atlantis to three square feet of hilltop.'[or]The nervous teenager struggles against her bonds.[or]One of the other protesters tries to free the teenagers while the All-Purpose Officer isn't paying attention, but the bonds are too strong.[or]The teenagers look at us rather desperately.[stopping]";
 	otherwise:
 		let difference be the time of day minus the last irritation;
 		if difference is 1 minute:
