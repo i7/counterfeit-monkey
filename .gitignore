@@ -19,7 +19,6 @@ tools/transcript.txt
 tools/git
 tools/glulxe
 tools/regtest/git-remglk
-tools/regtest/regtest.py
 tools/comparison\ transcripts/*
 tools/profiling/profile-raw
 tools/profiling/*.txt
