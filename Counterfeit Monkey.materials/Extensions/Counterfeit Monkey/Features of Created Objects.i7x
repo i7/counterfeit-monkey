@@ -11,15 +11,13 @@ Section 1 - Legality
 
 A thing can be legal or illegal. A thing is usually legal.
 
-Before going to a room that encloses a police person when the player has a backpack:
-	if the room gone to is the fish Market:
-		do nothing instead;
+Before going to the Antechamber when the player has a backpack:
 	stow gear.
 
-Before approaching a room that encloses a police person when the player has a backpack:
+[Before approaching a room that encloses a police person when the player has a backpack:
 	if the room gone to is the fish Market:
 		do nothing instead;
-	stow gear.
+	stow gear.]
 
 To stow gear:
 	repeat with item running through things which are enclosed by the player:
@@ -28,9 +26,9 @@ To stow gear:
 	if the backpack is open:
 		try closing the backpack.
 
-Every turn (this is the caught by police rule):
-	if a police person (called suspicious official) is in location and an illegal thing (called the evidence) is not in a closed backpack:
-		say "The attention of [the suspicious official] lights on [the evidence]. 'Let's see [regarding the evidence][those] of [the evidence],' [regarding the suspicious official][they] [say]. [paragraph break]Of course, a minute's inspection doesn't make [them] any happier, and soon [we] find [ourselves] explaining things to the police.";
+Every turn when location is the Antechamber (this is the caught by police rule):
+	if an illegal thing (called the evidence) is enclosed by the player and the evidence is not enclosed by a closed backpack:
+		say "The attention of [the secretary] lights on [the evidence]. 'Let's see [regarding the evidence][those] of [the evidence],' [regarding the secretary][they] [say]. [paragraph break]Of course, a minute's inspection doesn't make [them] any happier, and soon [we] find [ourselves] explaining things to the police.";
 		end the story saying "That was careless".
 
 
