@@ -20,16 +20,22 @@ Before going to the Antechamber when the player has a backpack:
 	stow gear.]
 
 To stow gear:
+	let L be a list of things;
 	repeat with item running through things which are enclosed by the player:
 		if the item is marked-visible and the item is illegal and the item is not enclosed by the backpack:
-			try inserting the item into the backpack;
+			add item to L;
+	if the number of entries in L is positive:
+		say "Before approaching the secretary ahead, [we] try to hide all our illegal things in the backpack. ";
+		repeat with item running through L:
+			silently try inserting the item into the backpack;
 	if the backpack is open:
-		try closing the backpack.
+		silently try closing the backpack.
 
 Every turn when location is the Antechamber (this is the caught by police rule):
-	if an illegal thing (called the evidence) is enclosed by the player and the evidence is not enclosed by a closed backpack:
-		say "The attention of [the secretary] lights on [the evidence]. 'Let's see [regarding the evidence][those] of [the evidence],' [regarding the secretary][they] [say]. [paragraph break]Of course, a minute's inspection doesn't make [them] any happier, and soon [we] find [ourselves] explaining things to the police.";
-		end the story saying "That was careless".
+	repeat with evidence running through things enclosed by the player:
+		if the evidence is illegal and the evidence is not enclosed by a closed backpack:
+			say "The attention of [the secretary] lights on [the evidence]. 'Let's see [regarding the evidence][those],' [regarding the secretary][they] [say]. [paragraph break]Of course, [their] quick inspection doesn't make [them] any happier, and soon [we] find [ourselves] explaining things to the police.";
+			end the story saying "That was careless".
 
 
 Section 2 - Proffering and thing relations
