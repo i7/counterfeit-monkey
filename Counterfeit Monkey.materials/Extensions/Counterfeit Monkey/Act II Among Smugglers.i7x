@@ -245,6 +245,23 @@ Definition: a thing is problematic:
 Sanity-check dropping secret-plans in the Tin Hut:
 	say "It doesn't feel safe leaving the plans here even for a short period." instead.
 
+Sanity-check dropping an illegal thing in the Tin Hut when the Authenticator is in Fish Market:
+	say "It doesn't feel safe leaving [the noun] here even for a short period." instead.
+
+Sanity-check propping the trap-door with an illegal thing when the Authenticator is in Fish Market:
+	say "It doesn't feel safe leaving [the second noun] here even for a short period." instead.
+
+Sanity-check inserting an illegal thing into something when the Authenticator is in Fish Market:
+	if the second noun is the trap-door or the second noun is the tarpaulin-covered masses:
+		say "It doesn't feel safe leaving [the noun] here even for a short period." instead.
+
+Understand "put [an illegal thing] under [trap-door]" as a mistake ("It doesn't feel safe leaving [the noun] here even for a short period.") when the Authenticator is in Fish Market.
+
+Understand "put [an illegal thing] under [tarpaulin-covered masses]" as a mistake ("It doesn't feel safe leaving [the noun] here even for a short period.") when the Authenticator is in Fish Market.
+
+Instead of looking under the trap-door:
+	try opening the trap-door.
+
 Test tinhut with "n / e / drop plans / w / wave l-remover at plans / wave s-remover at plan" in Deep Street holding the secret-plans.
 
 [Was: To the Fish Market. Broke Test2.]
