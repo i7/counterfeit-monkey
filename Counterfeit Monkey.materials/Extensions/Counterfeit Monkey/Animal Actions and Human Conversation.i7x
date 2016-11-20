@@ -6035,8 +6035,7 @@ Instead of giving the rifle to atlantida-refreshed:
 	try discussing return the rifle.
 
 Carry out someone discussing return the rifle:
-	now atlantida-refreshed carries the restoration-gel rifle;
-	now restoration-gel rifle is not essential.
+	now atlantida-refreshed carries the restoration-gel rifle.
 
 An availability rule for return the rifle:
 	if the player does not carry the restoration-gel rifle:
