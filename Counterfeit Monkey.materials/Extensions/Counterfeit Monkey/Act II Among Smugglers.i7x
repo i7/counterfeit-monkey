@@ -1156,8 +1156,7 @@ Every turn when the player is in Traffic Circle:
 			say "The crowd is parting. We might be able to leave soon.";
 	if All-Purpose-Officer is enclosed by Traffic Circle and an unsuitable thing (called the target) is enclosed by the giant Atlantida statue:
 		if the target is the live branch and the All-Purpose-Officer carries the restoration-gel rifle:
-			try the All-Purpose-officer shooting the live branch with the restoration-gel rifle;
-			make no decision;
+			say "[line break][The All-Purpose-Officer] fires the [restoration-gel rifle] at [the live branch], but the statue is holding it at a difficult angle. The gel splatters uselessly across the arm.";
 		if the All-Purpose-Officer is not enclosed by the giant Atlantida statue:
 			try the All-purpose-officer entering the giant Atlantida statue;
 			make no decision;
@@ -1171,7 +1170,7 @@ Every turn when the player is in Traffic Circle:
 	otherwise:
 		if the All-Purpose-Officer is on the huge-metal-arm:
 			move the All-Purpose-Officer to the giant Atlantida statue;
-			say "[The all-purpose-officer] begins to climb down.";
+			say "[line break][The all-purpose-officer] begins to climb down.";
 			make no decision;
 		if the All-Purpose-Officer is on the giant Atlantida statue:
 			try the All-purpose-officer exiting;
@@ -1180,7 +1179,7 @@ Every turn when the player is in Traffic Circle:
 			try the All-Purpose-Officer taking the restoration-gel rifle;
 			make no decision;
 		if the player encloses the restoration-gel rifle:
-			say "The All-Purpose Officer, no longer distracted by the pressing business of tidying up the Atlantida statue, notices us with the rifle.
+			say "[paragraph break]The All-Purpose Officer, no longer distracted by the pressing business of tidying up the Atlantida statue, notices us with the rifle.
 
 He has no qualms about hitting us with the diminutive affixer. It turns out that Alexandrette is a goldilocked poppet with a minimal capacity for self-def[ense] and no gun skills whatever. We're ignominiously [i]carried[/i] back to the Bureau and our subsequent trials are humiliation in a frilly pink dress.";
 			end the story saying "That was careless";
@@ -1262,7 +1261,7 @@ And that, my friend, is why civil disobedience doesn't work around here. We've j
 
 At least the teenagers got away[end if].";
 	custom-wait for any key;
-	say "[paragraph break]You know they'll be restored in a few hours, but not confined to that singular form. Most of them will probably get off with fines[if the teenagers are in the location], except the teenagers, who have committed specific crimes against the majesty of the state[end if]. You know it's unlikely anyone has died just there. You know that within minutes, the international news organ[ization]s will be running satellite pictures of a 'suspected deplural[izing] event' on the island.
+	say "[line break]You know they'll be restored in a few hours, but not confined to that singular form. Most of them will probably get off with fines[if the teenagers are in the location], except the teenagers, who have committed specific crimes against the majesty of the state[end if]. You know it's unlikely anyone has died just there. You know that within minutes, the international news organ[ization]s will be running satellite pictures of a 'suspected deplural[izing] event' on the island.
 
 It's not, so to speak, our business any more.";
 	now the protesters are nowhere;
