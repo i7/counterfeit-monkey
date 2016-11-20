@@ -40,7 +40,7 @@ Every turn when location is the Antechamber (this is the caught by police rule):
 
 Section 2 - Proffering and thing relations
 
-A thing can be useful or useless. A thing is usually useless.
+[A thing can be useful or useless. A thing is usually useless.]
 
 Proffering relates various things to various things. The verb to proffer (it proffers, they proffer, it proffered, it is proffered) implies the Proffering relation. [This relation indicates which objects have been derived verbally from which others.]
 
