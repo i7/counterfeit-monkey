@@ -320,3 +320,5 @@ get cassock
 wear cassock
 go to new church
 put cross on altar
+quit
+yes

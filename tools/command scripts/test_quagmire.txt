@@ -283,3 +283,5 @@ go to screening room
 n
 put reel in projector
 turn projector on
+quit
+yes

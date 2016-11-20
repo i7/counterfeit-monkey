@@ -517,3 +517,5 @@ put nib in pen
 put ink in pen
 write hello on paper
 x paper
+quit
+yes

@@ -327,3 +327,5 @@ put dog on pedestal
 get god
 n
 put god on shrine
+quit
+yes

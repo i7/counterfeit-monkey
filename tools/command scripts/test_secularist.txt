@@ -549,3 +549,5 @@ wear turtleneck
 fore
 open cabinet
 x newspaper
+quit
+yes

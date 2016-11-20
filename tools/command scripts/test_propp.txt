@@ -417,3 +417,5 @@ put i in t-inserter
 get all
 wave p-remover at apple
 put ale in t-inserter
+quit
+yes

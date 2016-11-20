@@ -471,3 +471,5 @@ put pic in t-inserter
 shoot silver chain with gun
 wave s-remover at pose
 show ravens to poe
+quit
+yes

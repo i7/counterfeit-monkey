@@ -532,3 +532,5 @@ pirate, enter platform
 wave s-remover at screws
 turn on platform
 show spot to pirate crew
+quit
+yes
