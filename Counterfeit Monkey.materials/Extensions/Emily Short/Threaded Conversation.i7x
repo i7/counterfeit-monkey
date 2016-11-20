@@ -662,16 +662,16 @@ Understand
 	when the current interlocutor is a person.
 
 Understand
-	"tell [someone] [a typable quip]" or
-	"ask [someone] [a typable quip]" or
-	"tell [someone] that/about [a typable quip]" or
-	"ask [someone] that/about [a typable quip]" as discussing it with (with nouns reversed)
+	"tell [someone] [a typable informative quip]" or
+	"ask [someone] [a typable questioning quip]" or
+	"tell [someone] that/about [a typable informative quip]" or
+	"ask [someone] that/about [a typable questioning quip]" as discussing it with (with nouns reversed)
 	when the current interlocutor is a person.
 
 Does the player mean discussing a listed-plausible quip:
 	it is very likely.
 
-Understand "ask about/for [something]" as object-asking. Object-asking is an action applying to one visible thing.
+Understand "ask about/for/-- [something]"  or "tell about/-- [something]" as object-asking. Object-asking is an action applying to one visible thing.
 
 [Object-asking is meant as a catch-all for asking about unimplemented present things]
 
@@ -726,15 +726,15 @@ Understand
 
 Understand
 	"change the/-- subject to [a typable quip]" and
-	"tell about [a typable quip]" and
+	"tell about [a typable informative quip]" and
 	"ask about [a typable questioning quip]" and
-	"tell [a typable quip]" and
-	"ask [a typable quip]" as discussing.
+	"tell [a typable informative quip]" and
+	"ask [a typable questioning quip]" as discussing.
 
 Understand the command "a" as "ask".
 Understand the command "t" as "tell".
 
-Understand "[a typable quip]" as discussing. [This originally read "a typable performative quip"; let's see if this greater permissiveness breaks anything...]
+Understand "[a typable performative quip]" as discussing. [This originally read "a typable performative quip"; let's see if this greater permissiveness breaks anything...]
 
 
 Chapter 2 - Setting discussing variables
