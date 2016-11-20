@@ -1007,11 +1007,11 @@ Instead of going to Traffic Circle:
 	otherwise:
 		say "We'd get killed crossing traffic if we tried to cross there."
 
-[Sanity-check going nowhere in Traffic Circle:
-	if the noun is up or the noun is down:
-		make  no decision;
+Sanity-check going nowhere in Traffic Circle:
+	if the noun is up or the noun is down or the noun is inside or the noun is outside:
+		make no decision;
 	otherwise:
-		try going out instead.]
+		try going outside instead.
 
 A description-concealing rule when the player is in a car (called target car) and the location is Traffic Circle:
 	now everything which is not enclosed by the target car is not marked for listing.
@@ -1152,11 +1152,11 @@ Every turn when the player is in Traffic Circle:
 			say "[one of]'Go ahead, put us in Cold Storage!' shouts the defiant teenager. 'I'm happy to sleep through all this shit and wake up when we have jet packs and a government that respects the rights of its people.'[or]The nervous teenager looks unhappy. 'We won't get out of here until our families are all dead and global warming has reduced Atlantis to three square feet of hilltop.'[or]The nervous teenager struggles against her bonds.[or]One of the other protesters tries to free the teenagers while the All-Purpose Officer isn't paying attention, but the bonds are too strong.[or]The teenagers look at us rather desperately.[stopping]";
 	otherwise:
 		let difference be the time of day minus the last irritation;
-		if difference is 1 minute:
+		if difference is 1 minutes:
 			say "The crowd is parting. We might be able to leave soon.";
 	if All-Purpose-Officer is enclosed by Traffic Circle and an unsuitable thing (called the target) is enclosed by the giant Atlantida statue:
 		if the target is the live branch and the All-Purpose-Officer carries the restoration-gel rifle:
-			say "[line break][The All-Purpose-Officer] fires the [restoration-gel rifle] at [the live branch], but the statue is holding it at a difficult angle. The gel splatters uselessly across the arm.";
+			say "[line break][The All-Purpose-Officer] fires the [restoration-gel rifle] at [the live branch], but the statue is holding it at a difficult angle. The gel splatters uselessly across [the huge-metal-arm].";
 		if the All-Purpose-Officer is not enclosed by the giant Atlantida statue:
 			try the All-purpose-officer entering the giant Atlantida statue;
 			make no decision;
@@ -1179,7 +1179,7 @@ Every turn when the player is in Traffic Circle:
 			try the All-Purpose-Officer taking the restoration-gel rifle;
 			make no decision;
 		if the player encloses the restoration-gel rifle:
-			say "[paragraph break]The All-Purpose Officer, no longer distracted by the pressing business of tidying up the Atlantida statue, notices us with the rifle.
+			say "[line break]The All-Purpose Officer, no longer distracted by the pressing business of tidying up the Atlantida statue, notices us with the rifle.
 
 He has no qualms about hitting us with the diminutive affixer. It turns out that Alexandrette is a goldilocked poppet with a minimal capacity for self-def[ense] and no gun skills whatever. We're ignominiously [i]carried[/i] back to the Bureau and our subsequent trials are humiliation in a frilly pink dress.";
 			end the story saying "That was careless";
