@@ -642,11 +642,6 @@ Chapter 1 - Understanding and basic definitions
 
 Understand the commands "ask", "tell", "say",  "discuss", "answer", "a", "t" as something new.
 
-[To say regarding it: now the prior named object is nothing. [A useful shorthand.]] [Useful for what?]
-
-[This is slightly redundant as listed-plausible is a subset of flagged-ready. But it might speed up the identification of listed-plausible quips.]
-Definition: a quip is typable if it is listed-plausible or it is flagged-ready.
-
 After deciding the scope of the player while discussing, discussing something with (this is the quip scope handling rule):
 	place the quip-repository in scope.
 	[This is a bit of a hack, but the out-of-play container turns out to be a very convenient way to control the scope-limiting of quips.]
@@ -657,15 +652,15 @@ Section 1a - discussing it with
 Discussing it with is an action applying to two visible things.
 
 Understand
-	"discuss [a typable quip] with [someone]" or
-	"say [a typable quip] to [someone]" as discussing it with
+	"discuss [a flagged-ready quip] with [someone]" or
+	"say [a flagged-ready quip] to [someone]" as discussing it with
 	when the current interlocutor is a person.
 
 Understand
-	"tell [someone] [a typable informative quip]" or
-	"ask [someone] [a typable questioning quip]" or
-	"tell [someone] that/about [a typable informative quip]" or
-	"ask [someone] that/about [a typable questioning quip]" as discussing it with (with nouns reversed)
+	"tell [someone] [a flagged-ready informative quip]" or
+	"ask [someone] [a flagged-ready questioning quip]" or
+	"tell [someone] that/about [a flagged-ready informative quip]" or
+	"ask [someone] that/about [a flagged-ready questioning quip]" as discussing it with (with nouns reversed)
 	when the current interlocutor is a person.
 
 Does the player mean discussing a listed-plausible quip:
@@ -680,7 +675,7 @@ Carry out object-asking:
 	if the current interlocutor is nothing:
 		say "[We] [aren't] talking to anyone." instead;
 	let N be a list of quips;
-	repeat with Q running through things in quip-repository:
+	repeat with Q running through quips in quip-repository:
 		if Q mentions the noun and Q is available:
 			add Q to N;
 	if the number of entries in N is positive:
@@ -720,21 +715,21 @@ Section 1b - discussing
 Discussing is an action applying to one visible thing.
 
 Understand
-	"talk about/-- [a typable quip]" and
-	"say [a typable quip]" and
-	"discuss [a typable quip]" as discussing.
+	"talk about/-- [a flagged-ready quip]" and
+	"say [a flagged-ready quip]" and
+	"discuss [a flagged-ready quip]" as discussing.
 
 Understand
-	"change the/-- subject to [a typable quip]" and
-	"tell about [a typable informative quip]" and
-	"ask about [a typable questioning quip]" and
-	"tell [a typable informative quip]" and
-	"ask [a typable questioning quip]" as discussing.
+	"change the/-- subject to [a flagged-ready quip]" and
+	"tell about [a flagged-ready informative quip]" and
+	"ask about [a flagged-ready questioning quip]" and
+	"tell [a flagged-ready informative quip]" and
+	"ask [a flagged-ready questioning quip]" as discussing.
 
 Understand the command "a" as "ask".
 Understand the command "t" as "tell".
 
-Understand "[a typable performative quip]" as discussing. [This originally read "a typable performative quip"; let's see if this greater permissiveness breaks anything...]
+Understand "[a flagged-ready performative quip]" as discussing. [This originally read "a flagged-ready performative quip"; let's see if this greater permissiveness breaks anything...]
 
 
 Chapter 2 - Setting discussing variables
