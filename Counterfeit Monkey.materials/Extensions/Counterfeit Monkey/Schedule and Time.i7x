@@ -160,7 +160,7 @@ Seeking transport is a scene. Seeking transport begins when playing to plan ends
 When seeking transport ends:
 	now the farmer is nowhere;
 	now the farmer's stall is nowhere; [We want to give the sense of change here, and also get the farmer out of the way before he can be transformed into a FAME abstraction.]
-	repeat with item running through things in quip-repository:
+	repeat with item running through quips in quip-repository:
 		if item is a location-questioning quip and item is not where there seems arbot:
 			now item is nowhere;
 	now the current daytime is mid afternoon;
@@ -209,15 +209,16 @@ Before going to University Oval:
 Section 5 - Higgate's Arrest
 
 [Because we need to stop you so so that you see the scene if you're just passing through:]
-After going to University Oval when the invitation is handled and higgate-arrested has not happened :
-	let N be the number of entries in the path so far of the player;
-	if N is greater than 1:
-		say "[path-walked so far][paragraph break]";
-	otherwise:
-		clear the path-walked for the player;
-	unless final destination is University Oval:
-		now approach-destination is Samuel Johnson Hall. [Tricks the approaching verb into stopping here even if you're trying to reach someplace really far away.]
-	[custom-pause the game. ]
+After going to University Oval:
+	if (the invitation is handled and higgate-arrested has not happened) or (activist is in University Oval and activist does not recollect at least three quips):
+		let N be the number of entries in the path so far of the player;
+		if N is greater than 1:
+			say "[path-walked so far][paragraph break]";
+		otherwise:
+			clear the path-walked for the player;
+		unless final destination is University Oval:
+			now approach-destination is Samuel Johnson Hall. [Tricks the approaching verb into stopping here even if you're trying to reach someplace really far away.]
+		[custom-pause the game. ]
 
 Higgate-arrested is a scene. Higgate-arrested begins when the location is University Oval and seeking invite has ended.
 
