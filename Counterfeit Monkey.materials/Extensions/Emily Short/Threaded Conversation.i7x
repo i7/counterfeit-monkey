@@ -385,9 +385,22 @@ The last availability rule (this is the generic availability rule):
 Book 3 - Peripheral Quips
 
 Definition: a quip (called the target quip) is peripheral:
+	if the target quip is plausible:
+		yes;
 	if the target quip is not flagged-ready:
 		no;
-	if the target quip is unlisted-plausible:
+	if the target quip is a location-questioning quip:
+		no;
+	if the target quip is a demonstration quip:
+		no;
+	if the target quip is a purchasing quip:
+		no;
+	if the target quip is a thanking quip:
+		no;
+	if the target quip is the greet-quip:
+		no;
+	yes;
+	[if the target quip is unlisted-plausible:
 		no;
 	[unless addressing everyone is true:]
 	if the current interlocutor is a person and the current interlocutor recollects the target quip:
@@ -398,7 +411,7 @@ Definition: a quip (called the target quip) is peripheral:
 		yes;
 	otherwise if the outcome of the rulebook is the it is plausible outcome and the target quip is shallowly-buried:
 		yes;
-	no.
+	no.]
 
 Listing peripheral quips is an activity.
 
@@ -1152,8 +1165,10 @@ Book 2 - Changing the Subject
 Understand "topics" or "change the subject" or "change subject" as changing the subject. Changing the subject is an action out of world.
 
 Check changing the subject:
+	if how-many-people-here is 0:
+		say "There is no one here to talk to." instead;
 	if the number of peripheral quips is 0:
-		say "You can think of no valid changes of subject at the moment." instead.
+		say "[We] can think of no valid conversation topics at the moment." instead.
 
 Carry out changing the subject (this is the standard report other subjects rule):
 	carry out the listing peripheral quips activity.
