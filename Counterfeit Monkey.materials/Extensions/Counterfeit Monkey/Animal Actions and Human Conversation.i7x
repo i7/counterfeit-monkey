@@ -488,9 +488,9 @@ Instead of the secretary discussing whether the monocle seems interesting:
 I'll never know why I didn't manage to stop you doing something so boneheaded.";
 	end the story saying "[We] have been arrested".
 
-Instead of police person discussing whether the monocle seems interesting:
+[Instead of police person discussing whether the monocle seems interesting:
 	say "[The actor] [stare] at it. 'You can't possibly have a lic[ense] for that,' [they] [say]. 'I think you had better come speak with my colleagues, right now.'";
-	end the story saying "[We] have been arrested".
+	end the story saying "[We] have been arrested".]
 
 Section 3 - Responses to demonstrations that aren't interesting
 
