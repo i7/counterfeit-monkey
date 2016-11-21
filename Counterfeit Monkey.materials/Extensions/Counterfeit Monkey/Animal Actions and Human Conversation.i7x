@@ -1955,15 +1955,6 @@ Does the player mean discussing what types of antiques they sell here:
 Does the player mean discussing what sort of demonstration:
 	it is very likely.
 
-Does the player mean discussing where there seems Arbot:
-	it is very unlikely.
-
-Instead of discussing where there seems Arbot when the location is Arbot Maps & Antiques:
-	if the player's command includes "where" and the player's command includes "arbot":
-		continue the action;
-	otherwise:
-		try discussing what types of antiques they sell here instead.
-
 Carry out Kate discussing buy the Slangovia map:
 	if the player carries the backpack:
 		now the Slangovia map is in the backpack;

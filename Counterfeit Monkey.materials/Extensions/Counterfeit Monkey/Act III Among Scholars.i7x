@@ -48,6 +48,7 @@ After going to Arbot Maps & Antiques:
 	if the player carries the appointment card:
 		say "We show the appointment card, and are let in.";
 		now Kate carries the appointment card;
+		now where there seems Arbot is nowhere;
 	otherwise:
 		say "The woman watching over the store stops you. 'I'm sorry,' she says. 'We are only open to those who have made previous visiting arrangements.' And we're shooed back out.";
 		move the player to Long Street South, without printing a room description.
