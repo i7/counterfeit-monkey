@@ -552,7 +552,7 @@ Check putting something on the pulley when the pulley is non-empty:
 		if the current content is on the pulley:
 			stop the action.
 
-Every turn when the counterweight is not on the pulley and the portcullis is open (this is the portcullis fall rule):
+Every turn when the portcullis is open and the counterweight is not on the pulley (this is the portcullis fall rule):
 	unless something wedges the portcullis:
 		now the portcullis is closed;
 		if the portcullis is marked-visible:
