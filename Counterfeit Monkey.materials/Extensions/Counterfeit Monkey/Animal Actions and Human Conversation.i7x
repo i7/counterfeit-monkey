@@ -3082,7 +3082,7 @@ why gift shop volunteer seems here is a questioning quip.
 
 remind the gift shop volunteer that Mrs Rosehip seems married is a performative quip.
 	The printed name is "remind the gift shop volunteer that [Mrs] Rosehip is married". The true-name is "remind the gift shop volunteer that [Mrs] Rosehip seems married".
-	Understand "is" or "dad" or "father" or "my father" or "my dad" or "your father" or "your dad" as remind  gift shop volunteer that Mrs Rosehip seems married.
+	Understand "is" or "dad" or "father" or "my father" or "my dad" or "your father" or "your dad" or "remind him" as remind  gift shop volunteer that Mrs Rosehip seems married.
 	It mentions my mother.
 	The comment is "'My mother[--]' we begin, before you catch me.
 
