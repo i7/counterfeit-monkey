@@ -5132,7 +5132,7 @@ Section 9 - Mother
 [ Mother has only this one brief scene, but she's an important influence in Alex's life: a source of cosmopolitan and slightly subversive ideas, more in touch with the world outside than Alex's father, and source of the unquestioned privilege of his upbringing. ]
 
 My mother is a woman.
-Understand "mom" or "ma" or "mum" or "mommy" or "rosehip" or "mrs rosehip" as mother.
+Understand "mom" or "ma" or "mum" or "mommy" or "rosehip" or "mrs rosehip" as my mother.
 The initial appearance is "My mother is here, looking around as though she would like to comment on my housekeeping."
 The description of my mother is "She is a tall woman with short brown hair expertly cut, and a tailored suit."
 The introduction is "She has in addition a certain air which is very rare on this island: the air of seeming not to care whether anyone is watching her, or whether she is exhibiting the proper respect for authority."
