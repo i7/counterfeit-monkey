@@ -103,7 +103,7 @@ After reading a command (this is the change X-remover to letter-remover rule):
 	change the text of the player's command to N;
 	say "[run paragraph on]";
 
-After reading a command when the player can touch the letter-remover:
+After reading a command when the player can touch the letter-remover (this is the implicitly change letter-remover setting rule):
 	let N be "[the player's command]";
 	if N matches the regular expression ".-remover":
 		if N matches the regular expression "(.*) (.)-remover (.)*":
