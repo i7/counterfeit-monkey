@@ -108,7 +108,7 @@ Part One - Quip Relations to Things
 
 Mentioning relates various quips to various things. The verb to mention implies the mentioning relation.
 
-Understand "[something related by mentioning]" as a quip.
+[Understand "[something related by mentioning]" as a quip.]
 [	This apparently humble line means that we can define a quip with the line "It mentions the queen." and then the player can use any vocabulary that pertains to the queen to raise this quip;	]
 [	as in ASK ABOUT WOMAN, ASK ABOUT MONARCH, and so on.	]
 
@@ -669,15 +669,37 @@ Understand
 	"say [a flagged-ready quip] to [someone]" as discussing it with
 	when the current interlocutor is a person.
 
-Understand
+[Understand
 	"tell [someone] [a flagged-ready informative quip]" or
 	"ask [someone] [a flagged-ready questioning quip]" or
 	"tell [someone] that/about [a flagged-ready informative quip]" or
 	"ask [someone] that/about [a flagged-ready questioning quip]" as discussing it with (with nouns reversed)
-	when the current interlocutor is a person.
+	when the current interlocutor is a person.]
 
 Does the player mean discussing a listed-plausible quip:
 	it is very likely.
+
+Understand "ask about/for/-- [any current-quip-subject thing]"  or "tell about/-- [any current-quip-subject thing]" as subject-asking. Subject-asking is an action applying to one visible thing.
+
+Definition: a thing is current-quip-subject if it is mentioned by a quip in quip-repository.
+
+Carry out subject-asking:
+	if the noun is marked-visible:
+		try object-asking the noun instead;
+	find a suitable interlocutor;
+	if the current interlocutor is nothing:
+		say "[We] [aren't] talking to anyone." instead;
+	let N be a list of quips;
+	repeat with Q running through quips in quip-repository:
+		if Q mentions the noun and Q is available:
+			add Q to N;
+	if the number of entries in N is positive:
+		if the number of entries in N is 1:
+			try discussing entry 1 of N instead;
+		otherwise:
+			recommend N instead;
+	otherwise:
+		say "[The noun] does not seem to be a current topic of conversation."
 
 Understand "ask about/for/-- [something]"  or "tell about/-- [something]" as object-asking. Object-asking is an action applying to one visible thing.
 

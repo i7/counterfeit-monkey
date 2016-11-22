@@ -2320,15 +2320,18 @@ Does the player mean buying the ticket-taker from someone:
 Does the player mean buying the hidden-ticket from the ticket-taker:
 	it is very likely.
 
-Sanity-check object-asking the ticket when the current interlocutor is the ticket-taker:
+Does the player mean subject-asking the hidden-ticket:
+	it is very likely.
+
+Sanity-check subject-asking the ticket when the current interlocutor is the ticket-taker:
 	try discussing buy movie-ticket instead.
 
-Sanity-check object-asking the hidden-ticket when the current interlocutor is the ticket-taker:
+Sanity-check subject-asking the hidden-ticket when the current interlocutor is the ticket-taker:
 	try discussing buy movie-ticket instead.
 
 buy movie-ticket is a purchasing quip.
 	The printed name is "buy a movie ticket".
-	It mentions ticket, hidden-ticket.
+	It mentions hidden-ticket.
 	The comment is "'I'd like to buy a ticket to this movie,' we say.".
 	The reply is "[You-are-past-customer]The ticket-taker shrugs. 'If you give me the money here, I don't actually have to give you a ticket,' he says.
 

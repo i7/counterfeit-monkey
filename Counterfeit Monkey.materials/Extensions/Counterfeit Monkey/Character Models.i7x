@@ -153,7 +153,7 @@ After reading a command (this is the rearrange hello rule):
 
 Understand "hey" or "hiya" or "yo" as hailing.
 
-After reading a command when the current interlocutor is not nothing and player's command includes "ask/tell/a/t" and the player's command includes "about" and the player's command does not include "ask/tell/a/t about" (this is the new strip interlocutor from input rule):
+After reading a command when the current interlocutor is not nothing and player's command includes "ask/tell/a/t" and the player's command does not include "ask/tell/a/t about" (this is the new strip interlocutor from input rule):
 	unless the location is Counterfeit Monkey and the player's command includes "men":
 		if the player's command includes "[someone talk-eligible]":
 			cut the matched text.
