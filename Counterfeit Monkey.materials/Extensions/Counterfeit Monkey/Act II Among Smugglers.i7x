@@ -183,6 +183,12 @@ Lena is an alert woman in the Aquarium. The initial appearance is "[one of][Lena
 	Lena wears a long patchwork skirt and some leather sandals. The description of the leather sandals is "The sort of sturdy comfortable sandals one can walk in for hours."
 	The description of the long patchwork skirt is "It falls to Lena's ankles even though it has been rolled over several times at the waistband. The fabric is mostly scraps of silver and grey and dark blue, but there are here and there some odd sports in other col[our]s." Understand "fabric" or "scraps" or "silver" or "grey" or "blue" or "dark blue" or "waistband" or "waist" or "ankles" as the long patchwork skirt.
 
+Rule for deciding the concealed possessions of Lena:
+	if looking:
+		yes;
+	otherwise:
+		no.
+
 Instead of putting the restoration gel on the odes-book in the presence of Lena:
 	say "'Hey,' she says. 'I like that how it is.'"
 
