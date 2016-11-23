@@ -277,7 +277,7 @@ Instead of looking under the trap-door:
 Test tinhut with "n / e / drop plans / w / wave l-remover at plans / wave s-remover at plan" in Deep Street holding the secret-plans.
 
 [Was: To the Fish Market. Broke Test2.]
-Before going west from the Tin Hut:
+Check going west from the Tin Hut:
 	if the Authenticator is not in Fish Market:
 		continue the action;
 	if the player encloses the secret-plans and the secret-plans are not in the closed backpack:
