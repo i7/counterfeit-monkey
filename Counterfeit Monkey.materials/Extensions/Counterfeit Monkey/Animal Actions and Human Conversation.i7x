@@ -2314,14 +2314,17 @@ Rule for deciding the concealed possessions of the ticket-taker:
 
 Understand "movie/theater/cinema/film" as "[movie]".
 
-Does the player mean buying the ticket-taker from someone:
+Does the player mean buying the ticket-taker from:
 	it is very unlikely.
 
-Does the player mean buying the hidden-ticket from the ticket-taker:
+Does the player mean buying the hidden-ticket from:
 	it is very likely.
 
 Does the player mean subject-asking the hidden-ticket:
 	it is very likely.
+
+Sanity-check buying the ticket from the player when location is cinema lobby:
+	try discussing buy movie-ticket instead.
 
 Sanity-check subject-asking the ticket when the current interlocutor is the ticket-taker:
 	try discussing buy movie-ticket instead.

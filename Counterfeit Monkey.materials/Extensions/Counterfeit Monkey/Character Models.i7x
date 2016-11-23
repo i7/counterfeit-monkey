@@ -95,11 +95,8 @@ Rule for supplying a missing second noun while giving something to:
 		stop the action.
 
 Rule for supplying a missing second noun while buying something from:
-	if the player encloses the noun:
-		say "[We] already have [the noun].";
-		stop the action;
 	if somebody (called target) encloses the noun:
-		if target is not current interlocutor:
+		if target is not current interlocutor and target is not the player:
 			try saying hello to the target;
 		now the second noun is the target;
 	otherwise:
@@ -139,7 +136,10 @@ Sanity-check buying something enclosed by the player from:
 	say "[We] already have [the noun]." instead;
 
 Sanity-check buying something from the player:
-	say "[The noun] [are not] [ours] to sell." instead.
+	if the noun is enclosed by the player:
+		say "[We] already have [the noun]." instead;
+	otherwise:
+		say "[The noun] [are not] [ours] to sell." instead.
 
 Does the player mean buying something enclosed by the player from someone:
 	it is very unlikely.
