@@ -242,6 +242,18 @@ Definition: a thing is problematic:
 		yes;
 	no.
 
+Breath-caught is a truth state that varies.
+
+A last carry out looking rule when the location is Tin Hut:
+	unless breath-caught is true:
+		let nothing-illegal be true;
+		repeat with evidence running through things enclosed by the player:
+			if the evidence is illegal and the evidence is not enclosed by a closed backpack:
+				now nothing-illegal is false;
+				break;
+		say "We catch our breath and look over our belongings to see if anything suspicious is showing[if nothing-illegal is true]. Actually, we look innocent enough[end if].";
+		now breath-caught is true.
+
 Sanity-check dropping secret-plans in the Tin Hut:
 	say "It doesn't feel safe leaving the plans here even for a short period." instead.
 
