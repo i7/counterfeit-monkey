@@ -149,10 +149,13 @@ A quip can be listed or unlisted. A quip is usually listed.
 Plausibility rule for an unlisted quip:
 	it is dubious.
 
-After reading a command (this is the rearrange hello rule):
-        let N be "[player's command]";
-        replace the regular expression "(hi|hello|hey)," in N with "say hello to";
-        change the text of the player's command to N.
+After reading a command when how-many-people-here is positive (this is the rearrange thanks and hello rule):
+	let N be "[player's command]";
+	if the player's command includes "hi/hello":
+		replace the regular expression "^(hi|hello)," in N with "say hello to";
+	if the player's command includes "thank/thanks":
+		replace the regular expression "^(thanks|thank you)," in N with "thank";
+	change the text of the player's command to N.
 
 Understand "hey" or "hiya" or "yo" as hailing.
 

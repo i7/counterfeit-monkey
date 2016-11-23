@@ -76,11 +76,6 @@ Instead of asking somebody to try no-noun-thanking:
 Instead of asking somebody to try thanking:
 	try thanking the person asked.
 
-After reading a command (this is the rearrange thanks rule):
-        let N be "[player's command]";
-        replace the regular expression "(thanks|thank you)," in N with "thank";
-        change the text of the player's command to N.
-
 Instead of thanking someone (this is the standard thanks redirection rule):
 	let N be a list of thanking quips;
 	repeat with Q running through thanking quips in quip-repository:
