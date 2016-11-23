@@ -685,55 +685,6 @@ Understand
 Does the player mean discussing a listed-plausible quip:
 	it is very likely.
 
-Understand "ask about/for/-- [any current-quip-subject thing]"  or "tell about/-- [any current-quip-subject thing]" as subject-asking. Subject-asking is an action applying to one visible thing.
-
-Definition: a thing is current-quip-subject if it is mentioned by a quip in quip-repository.
-
-Carry out subject-asking:
-	if the noun is marked-visible:
-		try object-asking the noun instead;
-	find a suitable interlocutor;
-	if the current interlocutor is nothing:
-		say "[We] [aren't] talking to anyone." instead;
-	let N be a list of quips;
-	repeat with Q running through quips in quip-repository:
-		if Q mentions the noun and Q is available:
-			add Q to N;
-	if the number of entries in N is positive:
-		if the number of entries in N is 1:
-			try discussing entry 1 of N instead;
-		otherwise:
-			recommend N instead;
-	otherwise:
-		say "[The noun] does not seem to be a current topic of conversation."
-
-Understand "ask about/for/-- [something]"  or "tell about/-- [something]" as object-asking. Object-asking is an action applying to one visible thing.
-
-[Object-asking is meant as a catch-all for asking about unimplemented present things]
-
-Carry out object-asking:
-	find a suitable interlocutor;
-	if the current interlocutor is nothing:
-		say "[We] [aren't] talking to anyone." instead;
-	let N be a list of quips;
-	repeat with Q running through quips in quip-repository:
-		if Q mentions the noun and Q is available:
-			add Q to N;
-	if the number of entries in N is positive:
-		if the number of entries in N is 1:
-			try discussing entry 1 of N instead;
-		otherwise:
-			recommend N instead;
-	if the current interlocutor carries the noun:
-		try requesting the noun from the current interlocutor instead;
-	if the noun is the current interlocutor:
-		say "[The noun] [don't] seem interested in talking about [themselves]." instead;
-	otherwise:
-		unless the noun is a distant backdrop or the noun is a person:
-			try showing the noun to the current interlocutor instead;
-		otherwise:
-			carry out the refusing comment by activity with the current interlocutor.
-
 After reading a command when the current interlocutor is not nothing and player's command includes "ask/tell/a/t" and the player's command includes "about" and the player's command does not include "ask/tell/a/t about" (this is the strip interlocutor from input rule):
 	if the player's command includes "[someone talk-eligible]":
 		cut the matched text.
@@ -772,6 +723,58 @@ Understand the command "t" as "tell".
 
 Understand "[a flagged-ready performative quip]" as discussing. [This originally read "a flagged-ready performative quip"; let's see if this greater permissiveness breaks anything...]
 
+Section 1c - Object-asking and subject-asking
+
+[Subject-asking handles asking about subjects mentioned by available quips. Not to be confused with object-asking below, which handles asking about ordinary present objects in the game world. These are separate actions for performance reasons.]
+
+Understand "ask about/for/-- [any current-quip-subject thing]"  or "tell about/-- [any current-quip-subject thing]" as subject-asking. Subject-asking is an action applying to one visible thing.
+
+Definition: a thing is current-quip-subject if it is mentioned by a quip in quip-repository.
+
+Carry out subject-asking:
+	if the noun is marked-visible:
+		try object-asking the noun instead;
+	find a suitable interlocutor;
+	if the current interlocutor is nothing:
+		say "[We] [aren't] talking to anyone." instead;
+	let N be a list of quips;
+	repeat with Q running through quips in quip-repository:
+		if Q mentions the noun and Q is available:
+			add Q to N;
+	if the number of entries in N is positive:
+		if the number of entries in N is 1:
+			try discussing entry 1 of N instead;
+		otherwise:
+			recommend N instead;
+	otherwise:
+		say "[The noun] does not seem to be a current topic of conversation."
+
+Understand "ask about/for/-- [something]"  or "tell about/-- [something]" as object-asking. Object-asking is an action applying to one visible thing.
+
+[Object-asking is meant as a catch-all for asking about unimplemented present things. Not to be confused with subject-asking above.]
+
+Carry out object-asking:
+	find a suitable interlocutor;
+	if the current interlocutor is nothing:
+		say "[We] [aren't] talking to anyone." instead;
+	let N be a list of quips;
+	repeat with Q running through quips in quip-repository:
+		if Q mentions the noun and Q is available:
+			add Q to N;
+	if the number of entries in N is positive:
+		if the number of entries in N is 1:
+			try discussing entry 1 of N instead;
+		otherwise:
+			recommend N instead;
+	if the current interlocutor carries the noun:
+		try requesting the noun from the current interlocutor instead;
+	if the noun is the current interlocutor:
+		say "[The noun] [don't] seem interested in talking about [themselves]." instead;
+	otherwise:
+		unless the noun is a distant backdrop or the noun is a person:
+			try showing the noun to the current interlocutor instead;
+		otherwise:
+			carry out the refusing comment by activity with the current interlocutor.
 
 Chapter 2 - Setting discussing variables
 
