@@ -5096,7 +5096,7 @@ Instead of kissing Brock:
 	otherwise:
 		say "That is not happening again."
 
-Brock-smoochies is an unlisted questioning quip.
+Brock-smoochies is an unlisted performative quip.
 	The printed name is "ask Brock to kiss you".
 	The comment is "You put our arms around Brock. He looks surprised, then pulls us in."
 	The reply is "'I thought we would leave this kind of thing until you were gelled,' Brock comments after a moment, pushing a bit of [if the player is wearing the wig or the player is wearing the hairpiece]fake [end if]hair out of our eyes. 'Does your passenger not mind?'
