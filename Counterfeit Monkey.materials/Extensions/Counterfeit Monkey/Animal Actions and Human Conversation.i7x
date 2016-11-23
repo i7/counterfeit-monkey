@@ -747,14 +747,14 @@ why the car does not run is a questioning quip.
 	It is repeatable.
 	Every car is mentioned by why the car does not run.
 
-where cars seem-2 is an unlisted repeatable questioning quip.
-	Understand "where to" or "buy car" or "buy a car" or "where i could" or "find a car" as where cars seem-2. The printed name is "where to find a car".
+where there seems a car-2 is an unlisted repeatable questioning quip.
+	Understand "buy car" or "car" or "where there seems" or "buy a car" or "where i could" as where there seems a car-2. The printed name is "where to find a car".
 	It quip-supplies the mechanic.
 	The comment is "'I'm looking for a car,' we say.".
 	The reply is "'Sorry,' he mumbles. '[one of]I fix them. I don't sell them[or]Perhaps you should ask somebody else[stopping].'".
-	Every car is mentioned by where cars seem-2.
+	Every car is mentioned by where there seems a car-2.
 
-Availability rule for where cars seem-2:
+Availability rule for where there seems a car-2:
 	if a car is seen:
 		it is off-limits;
 	make no decision.
@@ -1202,13 +1202,13 @@ recommend seaweed is an unlisted performative quip.
 	It quip-supplies the farmer.
 	It indirectly-follows what seems for sale.
 
-Availability rule for where cars seem:
-	if a car is seen:
+Availability rule for where there seems a car:
+	if a car is seen or chard is seen:
 		it is off-limits;
 	make no decision.
 
-where cars seem is an unlisted questioning quip. It assumes car-needed.
-	Understand "chard" or "where to find" as where cars seem. The printed name is "where to find a car".
+where there seems a car is an unlisted questioning quip. It assumes car-needed.
+	Understand "chard" or "where there seems" as where there seems a car. The printed name is "where to find a car".
 	The comment is "'I'm looking to make a car,' we say. 'With a letter-remover.'"
 	The reply is "'Maybe you need some carob,' he suggests. 'Take out the O, then the B...'
 
@@ -1228,7 +1228,7 @@ where cars seem is an unlisted questioning quip. It assumes car-needed.
 
 'Afraid not. Sells out fast on Cereal Day, you know.'"
 	It quip-supplies the farmer.
-	Every car is mentioned by where cars seem.
+	Every car is mentioned by where there seems a car.
 
 Instead of waving letter-remover at farmer creating fame:
 	say "[The second noun] flickers and there is a brief image of [a generated object] in [regarding the second noun][their] place [--] the concept strangely embodied in a physical form [--] before the power gives out.[paragraph break]";
@@ -4629,6 +4629,7 @@ that we just dropped by to meet him is an informative quip.
 
 where to find Professor Brown is a questioning quip.
 	It mentions Professor Brown.
+	understand "where there seems" as where to find Professor Brown.
 	The comment is "'Where might I find Professor Brown?' we ask.".
 	The reply is "'He is most likely in the basement,' says Professor Waterstone exactly. '[one of]L-removing POOL[or]R-removing DOOR[or]N-removing TENANTS[or]L-removing TILT[or]A-removing SODA[cycling], no doubt.'".
 	It quip-supplies Professor Waterstone.

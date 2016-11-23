@@ -73,9 +73,12 @@ Include Threaded Conversation by Emily Short.
 Include Threaded Actions by Emily Short.
 
 After reading a command when how-many-people-here is positive (this is the replace ask X to rule):
-	let N be "[player's command]";
-	replace the regular expression "^(ask|tell) (.*?) to " in N with "\2, ";
-	change the text of the player's command to N.
+	if the player's command includes "where to find":
+		replace the matched text with "where there seems";
+	if the player's command includes "to" and the player's command includes "ask/tell":
+		let N be "[player's command]";
+		replace the regular expression "^(ask|tell) (.*?) to " in N with "\2, ";
+		change the text of the player's command to N.
 
 Rule for supplying a missing second noun while showing something to:
 	find a suitable interlocutor;
