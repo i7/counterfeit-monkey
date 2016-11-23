@@ -2341,13 +2341,11 @@ Rule for printing the name of the pink door:
 
 [Because we need to stop you so that you can see the scene with Dad if you were otherwise just going to be passing through:]
 After going to Webster Court when Private Beach is visited and Patriotic Chard-Garden is visited and parental appearance has not happened :
-	let N be the number of entries in the described motion of the player;
+	let N be the number of entries in the path so far of the player;
 	if N is greater than 1:
 		say "[path-walked so far][paragraph break]";
-		clear path-walked for the player;
-		increase path description count by 1;
 	otherwise:
-		try looking;
+		clear the path-walked for the player;
 	unless final destination is Webster Court:
 		now approach-destination is Winding Footpath. [Tricks the approaching verb into stopping here even if you're trying to reach someplace really far away.]
 	[custom-pause the game. ]

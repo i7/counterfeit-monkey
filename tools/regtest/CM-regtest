@@ -253,7 +253,7 @@ Still no numbers on the dial. My mother had a wristwatch like that once. Always 
 Hostel
 I take it this is where you stayed from the time you got to town until our operation. I would have expected that someone with your credentials would have been able to afford something better: The Fleur d'Or, maybe? But maybe you thought this was lower-profile. At least it's clean and doesn't smell funny.
 
-The desk attendant is sort of eying us. She is wearing a nose-ring and a blouse. 
+The desk attendant is sort of eying us.
 
 Discarded in one corner is Guidebook to Anglophone Atlantis. 
 
@@ -332,7 +332,7 @@ We can't reasonably carry the whole stack of pans, so they fall to the ground wi
 Hostel
 I take it this is where you stayed from the time you got to town until our operation. I would have expected that someone with your credentials would have been able to afford something better: The Fleur d'Or, maybe? But maybe you thought this was lower-profile. At least it's clean and doesn't smell funny.
 
-The desk attendant is sort of eying us. She is wearing a nose-ring and a blouse. 
+The desk attendant is sort of eying us.
 
 Discarded in one corner is Guidebook to Anglophone Atlantis. 
 
@@ -587,7 +587,7 @@ There is a dismissive blatt from the monocle, and transposed over the fuel is a 
 The snapping continues.
 
 > go to high street
-/(We have a short walk as far as|It's a short hike to) Webster Court. 
+/(We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short |quick)? )(walk|hike) to Webster Court. 
 
 Webster Court
 A broad and plainly-paved court, named for the statue of Noah Webster.
@@ -622,7 +622,7 @@ He gets on his small red scooter, checks his helmet, and revs off to the south. 
 The snapping continues.
 
 > go to high street
-We hike out of the cocooning silence of the wealthy streets and back among the fair booths. 
+/(We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short |quick)? )(walk|hike) out of the cocooning silence of the wealthy streets and back among the fair booths. 
 
 High Street
 Hustle, bustle, dirt; ugly American chain shops; lots and lots of people. There seems to be a large organized protest in progress: protesters completely cram the sidewalk to the southeast.
@@ -742,7 +742,7 @@ We close the backpack.
 > go to counterfeit monkey
 I don't think there's anything showing that should get us into trouble. Timidly we open the door; the Authenticator has her back to us. We slip out. She makes one more turn in place — monocled gaze sliding across us without stopping — and then she strides away to the north.
 
-/(We have|It's) a quick walk|hike through the marina district. 
+/(We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short| quick)? )(walk|hike) through the marina district.
 
 Counterfeit Monkey
 It takes a minute for us to adjust to the light in here. Built when people were a bit shorter and ceilings were a bit lower, the Counterfeit Monkey is always smoky and never well lit, even in the middle of the day.
@@ -772,7 +772,7 @@ The snapping continues.
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether he has seen Slango.
 
 > go to outdoor
-/(It's a short|We make the|We) (walk|hike) through the marina district. 
+/(We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short| quick)? )(walk|hike) through the marina district.
 
 Outdoor Café
 From this slightly raised terrace, tourists have a view of the activity in the market and out over the docks.
@@ -815,7 +815,7 @@ He heads into the interior of the café.
 The snapping continues.
 
 > go to counterfeit monkey
-/(It's a |We make the)( short| brief)? (walk|hike) through the marina district. 
+/(We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short| quick)? )(walk|hike) through the marina district.
 
 Counterfeit Monkey
 Infamously this pub was raided in 1929, the year that the Bureau developed its first meager attempt at an Authentication Scope, and dozens of smugglers and fraudulent businessmen went to jail. But neither that raid nor subsequent scrutiny has ever shut the place down entirely. Built when people were a bit shorter and ceilings were a bit lower, the Counterfeit Monkey is always smoky and never well lit, even in the middle of the day.
@@ -965,7 +965,7 @@ The snapping continues.
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether he has any other games going.
 
 > go to tin hut
-/We ((make the|have a) (short|brief) )?(hike|walk) through the marina district. 
+/(We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short| quick)? )(walk|hike) through the marina district.
 
 Tin Hut
 Most of the light in here comes from circular windows punched into the tin walls just under the ceiling. From the inside, the building looks both larger and more sound than it appears from outside: there are plenty of sturdy struts supporting the roof and keeping the walls upright.
@@ -1033,7 +1033,7 @@ The trap-door makes a creaking noise and slams shut again.
 The snapping continues.
 
 > go to aquarium
-/(We|It's a (short|brief)) (walk|hike) through the marina district. 
+/(We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short| quick)? )(walk|hike) through the marina district.
 
 Aquarium Bookstore
 The shop takes its name from the collection of fish mounted on every wall: swordfish, bass, other things I don't recognize. Underneath these dubious tokens, the walls are covered with bookshelves, and there are stacks of books on the floor where the shelves have proven insufficient.
@@ -1188,7 +1188,7 @@ The snapping continues.
 > go to counterfeit monkey
 "This would be a good time to stop for lunch and a little siesta," says Lena, following us to the door. As we go out, she's rolling down the shades and putting up a closed sign.
 
-/We (make the|have a)( quick| short)? (walk|hike) through the marina district. 
+/(We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short| quick)? )(walk|hike) through the marina district.
 
 Counterfeit Monkey
 Built when people were a bit shorter and ceilings were a bit lower, the Counterfeit Monkey is always smoky and never well lit, even in the middle of the day.
@@ -1299,7 +1299,7 @@ Immediately west, the Counterfeit Monkey's sign sways in the wind.
 The snapping continues.
 
 > go to convenience
-/(We have a quick|It's a short|We) drive through the marina district (over to|to|as far as) the Roundabout. 
+/(We have a( quick| short| brief)?|It's a( short| quick| brief)?|We) drive through the marina district (over to|to|as far as) the Roundabout. 
 
 The whole Roundabout has ground to a halt, with protesters walking in the street and in some places completely filling the road. But this is mostly a nuisance until I notice that there are a couple of teenagers handcuffed to a tree.
 
@@ -1405,7 +1405,7 @@ My apartment is that direction, but unless we have some reason to go there, it s
 > go to convenience
 /((It's a|We make the) (short|brief)? drive to Tall Street. Then|At Tall Street|There) we pull easily into one of the available parking spots, since many people have now gone home.
 
-/(Then|Next) we (make the|have a) (brief |short )?(hike|walk). 
+/(Then|Next) we (make the|have a) (brief |short |quick )?(hike|walk). 
 
 Public Convenience
 There are just the two toilet stalls and a couple of sinks, but the place has been kept up reasonably well, if one doesn't count the graffiti.
@@ -1524,7 +1524,7 @@ The snapping continues.
 > go to drinks club
 /(Once we get to|At) Long Street North we pull easily into one of the available parking spots, since many people have now gone home.
 
-/(Then|From there) (it's a|we make the( short| brief| quick)?|we) (walk|hike). 
+/(Then|From there) (it's a( short| brief| quick)?|we make the( short| brief| quick)?|we) (walk|hike). 
 
 Fleur d'Or Drinks Club
 The back wall is dramatically decorated with bottled liquors of all sorts, from gin to cachaça; there's a giant bottle of Campari, taller than your average three-year-old, with a red ribbon around its neck.
@@ -3562,7 +3562,7 @@ A small, harmless-looking bird.
 
 "No problem creating creatures," Brock says judiciously.
 
-/(The tit stares at us|He's looking at us, but when I look back, he cuts his eyes away|He watches us with a slightly disturbing intentness in his eyes|He cranes to look around at the back of the machine, but doesn't find anything interesting). ("As our next trick we need to look at the stabilization performance," Brock says. "Inserters sometimes run into trouble if there's a case where the same base word could be expanded to multiple derivatives — for instance, if you S-inserted CREAM, it wouldn't know whether to make CREAMS or SCREAM or SCREAMS.")?
+/(The tit stares at us|He's looking at us, but when I look back, he cuts his eyes away|He watches us with a slightly disturbing intentness in his eyes|He cranes to look around at the back of the machine, but doesn't find anything interesting|He pauses, listening for noises outside). ("As our next trick we need to look at the stabilization performance," Brock says. "Inserters sometimes run into trouble if there's a case where the same base word could be expanded to multiple derivatives — for instance, if you S-inserted CREAM, it wouldn't know whether to make CREAMS or SCREAM or SCREAMS.")?
 
 The tit clambers out of the T-inserter machine.
 
@@ -5306,7 +5306,7 @@ A set of children's playing jacks. They are lined up, with curious precision, in
 /You reset the device to s. There is a [a-z \-]+, and the jacks turn into a jack. A heavy-duty jack, suitable for raising cars or other substantial objects.
 
 > go to workshop
-/(You|It's a brief) (walk|hike) (over to|as far as|to) Personal Apartment. There you try propping the portcullis with the jack.
+/(You|(It's|You have) a (quick|brief|short)) (walk|hike) (over to|as far as|to) Personal Apartment. There you try propping the portcullis with the jack.
 
 /(Then|Next|After that|From there) (you |you have a (brief|quick|short) |you make the( brief| quick| short)? |it's a( brief| quick| short)? )(walk|hike).
 
@@ -5346,7 +5346,7 @@ Atlantida stands nearby, urging us to hurry out via the Private Solarium. I thin
 
 The metal portcullis guards the way back. It is currently raised a few feet by a jack. From the pulley above the portcullis hangs a counter. 
 
-On the inlaid desk are a stack of files and a rubber stamp. 
+/(On the inlaid desk|There) are a stack of files and a rubber stamp (on the inlaid desk)?. 
 
 Air and sunlight stream in from the east.
 

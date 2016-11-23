@@ -413,12 +413,6 @@ The large building just to the north — yes, the one in pale pink — is my par
 
 The streets continue south, east, and west; and just to the northeast is my parents' side garden.
 
-
-Webster Court
-A broad and plainly-paved court, named for the statue of Noah Webster.
-
-The streets continue south, east, and west; and just to the northeast is my parents' side garden.
-
 The door to my parents' house opens and my father comes out. He's talking over his shoulder: "Sorry, dear, but someone has to be on call."
 
 My mother answers from inside, but we can't make out what she's saying.
@@ -2864,14 +2858,14 @@ We already have that.
 
 There is a continuous angry whine from the jigsaw.
 
-/He (stands back, regarding the T-inserter thoughtfully|runs a hand over the (brass plate|small nozzles)|knocks on the top of the T-inserter). "First we should see whether this thing can reify abstracts."
+/He (stands back, regarding the T-inserter thoughtfully|runs a hand over the (brass plate|small nozzles)|knocks on the top of the T-inserter|pauses, listening for noises outside). "First we should see whether this thing can reify abstracts."
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) suggest we get out of here, complain about Brock's recklessness, or discover why Brock got stuck here. Or, then again, there's always finishing the job.
 
 > put apple in t-inserter
 There is a loud and satisfying pop from the machine as it turns the apple into an applet.
 
-An abstract representation. An anonymous browser window appears to hover in the air, currently showing satellite footage of the big demonstration a few hours ago.
+/An abstract representation. An anonymous browser window appears to hover in the air, currently (showing satellite footage of the big demonstration a few hours ago|playing a text-based web game).
 
 There is a continuous angry whine from the jigsaw.
 
@@ -3528,7 +3522,7 @@ Atlantida stands nearby, urging us to hurry out via the Private Solarium.
 
 A window in the north wall, cut out through the cliff face, gives a view of tranquil sea under a darkening sky. 
 
-Left on a coffee table (as though waiting for maid service) is a silver tray. There are a cloth napkin, some crumbs, and a dirty coffee cup on the silver tray. 
+/Left on a coffee table \(as though waiting for maid service\) is a silver tray. (On the silver tray|There) are a cloth napkin, some crumbs, and a dirty coffee cup( on the silver tray)?. 
 
 /(There|On the chaise longue) is an ebook reader( on the chaise longue)?. 
 
