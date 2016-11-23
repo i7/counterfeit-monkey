@@ -1964,7 +1964,7 @@ Instead of approaching Monumental Staircase when the secret-plans are not handle
 To say plans-search refusal:
 	say "I think we'd better get your things from the hostel before we leave this part of town, don't you?".
 
-The crowds are a backdrop. The crowds are in Fair, Monumental Staircase, Church Forecourt, and Park Center. Understand "people" or "crowd" or "men" or "women" or "man" or "woman" or "person" or "hustle" or "bustle" or "spectators" or "pedestrians" as the crowds.
+The crowds are a backdrop. The crowds are in Fair, Monumental Staircase, Church Forecourt, Midway and Park Center. Understand "people" or "crowd" or "men" or "women" or "man" or "woman" or "person" or "hustle" or "bustle" or "spectators" or "pedestrians" as the crowds.
 	understand "children" or "child" as the crowds when the small children are not in the location.
 	The description is "[if the location is a road]They are all in a hurry to get somewhere, though it is not clear exactly where or why[otherwise]The people seem to be enjoying themselves. I don't recogn[ize] anyone in particular, though[end if]."
 
