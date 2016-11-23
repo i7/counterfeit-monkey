@@ -1250,8 +1250,11 @@ Definition: a thing is Waterstone-inspiring:
 		yes;
 	no.
 
+We-have-knocked is a truth state that varies.
 
 Instead of knocking on office-door-1 when the location of Professor Waterstone is Waterstone's Office and office-door-1 is closed and the location is Language Studies Department Office:
+	if we-have-knocked is false:
+		say "Professor Waterstone looks up at us through the window in the door, as if to ask 'Yes? Was there something you wanted to show me?'[paragraph break]";
 	let the selected object be nothing;
 	if held-over-object is something and held-over-object is not the player:
 		let selected object be held-over-object;
@@ -1269,16 +1272,17 @@ Instead of knocking on office-door-1 when the location of Professor Waterstone i
 	else:
 		repeat with item running through things enclosed by the location:
 			if item is waterstone-inspiring:
-				say "Waterstone looks up and gives a little frown. It's clear he doesn't know why we've knocked; perhaps he can't see [the item] from that angle. Maybe if [we] were holding [them]." instead;
+				say "[if we-have-knocked is true]Waterstone looks up and gives a little frown. [end if]It's clear he doesn't know why we knocked; perhaps he can't see [the item] from that angle. Maybe if [we] were holding [them]." instead;
 	if the selected object is nothing:
-		say "Waterstone looks up and gives a little frown. It's clear he doesn't know why we've knocked; to be honest I'm not sure why we did either.";
+		say "[if we-have-knocked is true]Waterstone looks up and gives a little frown. [end if]It's clear he doesn't know why we knocked; to be honest I'm not sure why we did either.";
 	otherwise:
-		follow the water-reaction rules for the selected object.
+		follow the water-reaction rules for the selected object;
+	now we-have-knocked is true.
 
 The water-reaction rules are an object-based rulebook.
 
 A Water-reaction rule for a Waterstone-inspiring thing (called the target):
-	say "Waterstone looks at [the target], briefly arrested by some thought. He gets a monocle like mine out of his drawer. He looks through it at [the target], notes [the list of things which proffer the target]; grins. ";
+	say "[if we-have-knocked is true]Waterstone[else]He[end if] looks at [the target], briefly arrested by some thought. He gets a monocle like mine out of his drawer. He looks through it at [the target], notes [the list of things which proffer the target]; grins. ";
 	say "He gets up and comes out of his office.
 
 'This is perfect,' Waterstone says. 'One more example to put into my talk [--] but I really should be going [--] should be able to get a ride from my wife [--] if I leave now [--] Here, you can have this if it interests you. I won't have time to use it.' He sets an invitation down on the desk.
