@@ -399,6 +399,12 @@ Definition: a quip (called the target quip) is peripheral:
 		no;
 	if the target quip is the greet-quip:
 		no;
+	if location is hesychius street:
+		if the target quip mentions food:
+			if the target quip is recommend other vegetables:
+				yes;
+			otherwise:
+				no;
 	yes;
 	[if the target quip is unlisted-plausible:
 		no;
@@ -1190,7 +1196,10 @@ Check changing the subject:
 	if how-many-people-here is 0:
 		say "There is no one here to talk to." instead;
 	if the number of peripheral quips is 0:
-		say "[We] can think of no valid conversation topics at the moment." instead.
+		if the current interlocutor is nothing:
+			say "[We] [are] not talking to anyone at the moment." instead;
+		otherwise:
+			say "[We] can think of no valid conversation topics at the moment." instead.
 
 Carry out changing the subject (this is the standard report other subjects rule):
 	carry out the listing peripheral quips activity.
@@ -1336,7 +1345,6 @@ To set the current/-- interlocutor to (N - a person):
 		repeat with item running through things in the backup-repository:
 			if the item quip-supplies the current interlocutor:
 				move the item to the quip-repository;
-		[now everything in the backup-repository that quip-supplies the current interlocutor is in the quip-repository;]
 		repeat with item running through things in the quip-repository:
 			if the item quip-supplies someone who is not the current interlocutor:
 				move the item to the backup-repository;
