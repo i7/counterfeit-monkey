@@ -12,7 +12,7 @@ my $difference;
 open my $fh, "< :encoding(UTF-8)", "profile-report-df.txt" or die "Could not open file: profile-report.txt!";
 
 while (my $line = <$fh>) {
-   ($opcodes) = ($line =~ /^Main__\s+1\s+100% (\d+) /);
+   ($opcodes) = ($line =~ /^Total opcodes: (\d+)/);
    if ($opcodes) {
      print "Total number of opcodes called: $opcodes \n";
      last;
@@ -24,7 +24,7 @@ close $fh;
 open $fh, "< :encoding(UTF-8)", "profile-report-df_old.txt" or die "Could not open file: profile-report_old.txt!";
 
 while (my $line = <$fh>) {
-   ($opcodes_old) = ($line =~ /^Main__\s+1\s+100% (\d+) /);
+   ($opcodes_old) = ($line =~ /^Total opcodes: (\d+)/);
    if ($opcodes_old) {
      print "Total number of opcodes called in old profile report: $opcodes_old \n";
      $difference = $opcodes - $opcodes_old;
