@@ -3456,7 +3456,13 @@ Availability rule for whether we can hath origin paste:
 	if the origin paste is not seen or the origin paste is not on the bar-top or the origin paste is won:
 		it is off-limits.
 
-Instead of object-asking the origin paste when the origin paste is not won:
+Sanity-check buying the origin paste from the barman when the origin paste is not won:
+	if the barman recollects whether we can hath the origin paste:
+		say "We've already established that the origin paste has to be won rather than bought or given away." instead;
+	otherwise:
+		try discussing whether we can hath the origin paste instead.
+
+Instead of subject-asking or object-asking the origin paste when the origin paste is not won:
 	if the barman recollects whether we can hath the origin paste:
 		say "We've already established that the origin paste has to be won rather than bought or given away.";
 	otherwise:
