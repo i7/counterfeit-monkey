@@ -1444,8 +1444,20 @@ Definition: a thing is unleavable:
 	if it is enclosed by a vehicle which contains the player, no;
 	yes.
 
-Before going somewhere when [the player is staid and] the location encloses an unleavable thing:
-	while the location encloses an unleavable thing  (called needed-thing):
+Before approaching a room when the location encloses an unleavable thing:
+	while the location encloses an unleavable thing (called needed-thing):
+		unless the needed-thing is the roc:
+			try taking the needed-thing;
+			if the needed-thing is the iron-pans:
+				reduce iron-pans;
+				if the i-pan is marked-visible:
+					now the needed-thing is the i-pan;
+		if the player does not carry the needed-thing:
+			say "I don't think [we] should leave without [the needed-thing].";
+			stop the action.
+
+Before going somewhere when the player is staid and the location encloses an unleavable thing:
+	while the location encloses an unleavable thing (called needed-thing):
 		unless the needed-thing is the roc:
 			try taking the needed-thing;
 			if the needed-thing is the iron-pans:
