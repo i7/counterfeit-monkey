@@ -72,7 +72,7 @@ Include Threaded Conversation by Emily Short.
 
 Include Threaded Actions by Emily Short.
 
-After reading a command when how-many-people-here is positive (this is the replace ask X to rule):
+A first after reading a command rule when how-many-people-here is positive (this is the replace ask X to rule):
 	if the player's command includes "where to find":
 		replace the matched text with "where there seems";
 	if the player's command includes "to" and the player's command includes "ask/tell":
