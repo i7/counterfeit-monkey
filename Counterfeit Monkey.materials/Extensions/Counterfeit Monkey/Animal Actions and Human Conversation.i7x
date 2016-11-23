@@ -1616,6 +1616,9 @@ Rule for supplying a missing noun while homonyming:
 		stop the action.
 
 Carry out homonyming something:
+	if the actor is the bartender:
+		carry out the refusing comment by activity with the bartender;
+		the rule succeeds;
 	if programmable dais is marked-visible:
 		if the noun is not on programmable dais and the noun is not the player:
 			try putting the noun on programmable dais;
@@ -1626,7 +1629,7 @@ Carry out homonyming something:
 		try switching on the programmable dais instead;
 	otherwise:
 		if bartender is marked-visible:
-			try showing the noun to the bartender instead;
+			try the player showing the noun to the bartender instead;
 	say "Exactly how do [we] intend to do that?";
 
 Check the bartender trying homonyming something:
@@ -1647,11 +1650,11 @@ Does the player mean asking the bartender to try attacking something with someth
 	it is very unlikely.
 
 Rule for refusing comment by the bartender:
-	if the player is not holding the noun:
+	unless the noun is enclosed by the player or the noun is the player:
 		silently try taking the noun;
-	if the player is not holding the noun:
-		say "We're having a little trouble holding it up so that she can see.";
-		rule fails;
+		if the player is not holding the noun:
+			say "We're having a little trouble holding it up so that she can see.";
+			rule fails;
 	if the noun is naughty-sounding:
 		say "[The bartender] takes a look and smirks.
 
