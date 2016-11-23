@@ -1468,6 +1468,12 @@ Definition: a thing is attendant-related:
 	if it is enclosed by the attendant, yes;
 	no.
 
+Rule for deciding the concealed possessions of the attendant:
+	if looking:
+		yes;
+	otherwise:
+		no.
+
 Instead of looking at an attendant-related thing through an authentication scope:
 	if the noun is the louse:
 		do nothing instead;

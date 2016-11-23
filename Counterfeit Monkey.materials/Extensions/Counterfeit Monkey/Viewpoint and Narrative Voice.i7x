@@ -168,8 +168,8 @@ This is the first time looking rule:
 		introduce the location;
 		say paragraph break.
 
-A description-concealing rule:
-	now every thing which is held by an as-yet-unknown introduceable person is not marked for listing. [This is so that preliminary descriptions of characters will not be followed by 'so and so is holding such and such and wearing so-and-that.']
+[A description-concealing rule:
+	now every thing which is held by an as-yet-unknown introduceable person is not marked for listing. [This is so that preliminary descriptions of characters will not be followed by 'so and so is holding such and such and wearing so-and-that.']]
 
 Section 6 - The THINK verb
 
