@@ -1765,6 +1765,12 @@ Instead of entering the passage-place:
 	say "[We] clamber down into the passage. It feels disconnected from other places, as though it didn't belong here at all. Soon we can't see the light from the door.";
 	now the player is in the Shadow Chamber.
 
+Instead of going down when passage-place is marked-visible:
+	try entering the passage-place.
+
+Instead of going inside when passage-place is marked-visible:
+	try entering the passage-place.
+
 Table of Ultratests (continued)
 topic	stuff	setting
 "passage"	{ passage, anagramming gun, bullets }	Workshop
