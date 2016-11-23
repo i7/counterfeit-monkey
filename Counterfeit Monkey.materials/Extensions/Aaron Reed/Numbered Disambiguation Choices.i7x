@@ -52,21 +52,23 @@ Chapter - Understand preface
 
 [In testing, some players would try to respond with something like "1) dog collar". If we replace closing parentheses from the input with a space, this can still be understood, rather than producing an unhelpful error.]
 
-After reading a command (this is the Numbered Disambiguation Choices strip closing parenthesis rule):
+[After reading a command (this is the Numbered Disambiguation Choices strip closing parenthesis rule):
 	let disam-cmd be indexed text;
 	let disam-cmd be the player's command;
 	replace the regular expression "\)" in disam-cmd with " ";
-	change the text of the player's command to disam-cmd.
+	change the text of the player's command to disam-cmd.]
 	
 Chapter - When to reset numbers
 
 [How long should the disambiguation ID number still be understood as referring to the assigned item? Some players will try to use the numbers on subsequent turns as shortcuts. However, keeping them indefinitely can create a problem with duplicate objects: the disambiguation ID property makes them distinguishable, so "two apples" will start being identified as "an apple" and "an apple." To address this, we reset the numbers as soon as the player enters a command which does not include a number.]
 
 After reading a command when the number of entries in list of disambiguables > 0 (this is the Numbered Disambiguation Choices reset disambiguation id when no numbers in command rule):
-	let disam-cmd be indexed text;
 	let disam-cmd be the player's command;
+	replace the regular expression "\)" in disam-cmd with " ";
 	unless disam-cmd matches the regular expression ".*\d.*":
-		follow the Numbered Disambiguation Choices reset disambiguables rule.
+		follow the Numbered Disambiguation Choices reset disambiguables rule;
+	otherwise:
+		change the text of the player's command to disam-cmd.
 
 Numbered Disambiguation Choices ends here.
 
