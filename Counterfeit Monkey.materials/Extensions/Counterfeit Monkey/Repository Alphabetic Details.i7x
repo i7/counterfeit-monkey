@@ -2465,7 +2465,7 @@ Understand "plug [a power socket] into [a power socket]" as connecting it to.  U
 Understand "connect [a power socket] to [a power socket]" as connecting it to.
 
 Sanity-check an actor connecting something to something:
-	carry out the caching scope activity with the actor;
+	[carry out the caching scope activity with the actor;]
 	if the actor does not carry the power cord:
 		if the the power cord is marked-visible:
 			try the actor taking the power cord;
@@ -2629,7 +2629,7 @@ The description of the red frozen inn is "A representative postcard shows a red-
 The reflective widow is a noisy woman. The description of the reflective widow is "A tall woman with a widow's peak and a distant look in her eyes." Understand "widow's peak" or "distant look" as the reflective widow. The initial appearance is "[A reflective widow] [one of]perches[or]paces[at random] nearby, [one of]wringing her hands[or]sniffling faintly[or]dabbing her eyes[at random].".
 
 Instead of listening to the reflective widow:
-	carry out the caching scope activity with the reflective widow;
+	[carry out the caching scope activity with the reflective widow;]
 	if a random chance of 1 in 3 succeeds:
 		if the mourning dress is marked-visible:
 			say "[The reflective widow] admires [the mourning dress] wistfully.";

@@ -3594,7 +3594,6 @@ Instead of showing something (called the item) to the barman when the wager is n
 		say "'[one of]That doesn't fit the category[or][personal no][or][awkward no][at random],' says [the barman]. [summary entry][paragraph break]".
 
 Every turn when the location is Counterfeit Monkey and the wager is not the player:
-	carry out the caching scope activity with the barman;
 	repeat with item running through things which are proffered by the wager:
 		if the item is marked-visible:
 			now the proposed solution is the item;
@@ -3997,7 +3996,6 @@ To say prepare contraband:
 		casually queue still-needs-pasting. ]
 
 A first conversation-reply rule when the current interlocutor is Lena:
-	carry out the caching scope activity with Lena;
 	[say "STARTING: ";
 	try checking queue for Lena;]
 	let needs more conversation be true;
@@ -4046,7 +4044,6 @@ A first conversation-reply rule when the current interlocutor is Lena:
 	if the monocle is marked-visible and Lena is not urgently eager-to-speak and lena recollects who we seem-3:
 		if Lena does not recollect monocle-remark:
 			queue monocle-remark;
-	carry out the caching scope activity with the player.
 	[say "NMC True: ";
 	try checking queue for Lena;]
 
@@ -4812,7 +4809,7 @@ This is the random-commentary rule:
 The Brock-suggestion rules are a rulebook.
 
 First Brock-suggestion rule:
-	carry out the caching scope activity with Brock;
+	[carry out the caching scope activity with brock;]
 	if Brock-argument is not happening:
 		rule succeeds;
 	if the time since Brock-argument began is less than 1 minute:
@@ -5162,7 +5159,7 @@ Instead of waiting in the presence of my mother:
 Definition: a thing is apartmental if it is in my apartment.
 
 Rule for beat-producing when the current interlocutor is my mother:
-	carry out the caching scope activity with my mother;
+	[carry out the caching scope activity with my mother;]
 	say run paragraph on;
 	let N be a random refrigerator which is in my apartment;
 	if the player wears the monocle and the player does not recollect monocle-comment:
@@ -5185,7 +5182,7 @@ Rule for beat-producing when the current interlocutor is my mother:
 			try my mother examining the target;
 		else:
 			say "Mother looks faintly bewildered.";
-	carry out the caching scope activity with the player;
+	[carry out the caching scope activity with the player;]
 	say run paragraph on.
 
 Table of Ultratests (continued)
