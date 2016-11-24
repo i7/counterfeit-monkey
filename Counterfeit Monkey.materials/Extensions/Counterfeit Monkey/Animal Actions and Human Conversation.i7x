@@ -808,7 +808,7 @@ check out this oil is an unlisted repeatable demonstration quip.
 	Every oil is mentioned by check out this oil.
 
 An availability rule for where oil might be:
-	if the player encloses an oil:
+	if an oil is seen:
 		it is off-limits;
 	make no decision.
 
@@ -820,7 +820,7 @@ where oil might be is an unlisted questioning quip.
 	Every oil is mentioned by where oil might be.
 
 An availability rule for where fuel might be:
-	if the player encloses fuel or player encloses gas:
+	if the fuel is seen or the gas is seen:
 		it is off-limits;
 	make no decision.
 
