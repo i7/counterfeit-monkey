@@ -255,12 +255,14 @@ Breath-caught is a truth state that varies.
 
 A last carry out looking rule when the location is Tin Hut:
 	unless breath-caught is true:
-		let nothing-illegal be true;
+		let L be a list of things;
 		repeat with evidence running through things enclosed by the player:
 			if the evidence is illegal and the evidence is not enclosed by a closed backpack:
-				now nothing-illegal is false;
-				break;
-		say "We catch our breath and look over our belongings to see if anything suspicious is showing[if nothing-illegal is true]. Actually, we look innocent enough[end if].";
+				add evidence to L;
+		let N be "[L with definite articles]";
+		if the number of entries in L is positive:
+			replace the text "[the entry 1 of L]" in N with "[The entry 1 of L]";
+		say "We catch our breath and look over our belongings to see if anything suspicious is showing[if the number of entries in L is 0]. Actually, we look innocent enough[otherwise]. [N] might be a little too conspicuous[end if].";
 		now breath-caught is true.
 
 Sanity-check dropping secret-plans in the Tin Hut:
@@ -289,8 +291,12 @@ Test tinhut with "n / e / drop plans / w / wave l-remover at plans / wave s-remo
 Check going west from the Tin Hut:
 	if the Authenticator is not in Fish Market:
 		continue the action;
-	if the player encloses the secret-plans and the secret-plans are not in the closed backpack:
-		say "I don't think [we] want to show off the plans around the Authenticator." instead;
+	let L be a list of things;
+	repeat with evidence running through things enclosed by the player:
+		if the evidence is illegal and the evidence is not enclosed by a closed backpack:
+			add evidence to L;
+	if the number of entries in L is positive:
+		say "I don't think [we] want to show off [L with definite articles] around the Authenticator." instead;
 	now the Authenticator is nowhere;
 	if the player is on the tarpaulin-covered masses:
 		silently try exiting;
