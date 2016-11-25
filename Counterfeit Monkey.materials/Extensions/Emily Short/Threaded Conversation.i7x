@@ -807,7 +807,7 @@ Rule for printing a parser error when the latest parser error is the can't see a
 
 Rule for printing a parser error when the latest parser error is the noun did not make sense in that context error (this is the prevent context error rule):
 	if (the player's command includes "say/ask/answer/discuss/tell/a/t"[ or the player's command includes "[any quip]"]) and the current interlocutor is not nothing:
-		say "[text of parser error internal rule response (N)][line break]" (A) instead; ['Not a verb I recognize.']
+		say "That doesn't seem to be a topic of conversation at the moment." instead;
 	otherwise:
 		make no decision.
 
