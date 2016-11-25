@@ -766,15 +766,15 @@ Carry out object-asking:
 			try discussing entry 1 of N instead;
 		otherwise:
 			recommend N instead;
-	if the current interlocutor carries the noun:
-		try requesting the noun from the current interlocutor instead;
 	if the noun is the current interlocutor:
 		say "[The noun] [don't] seem interested in talking about [themselves]." instead;
 	otherwise:
-		unless the noun is a distant backdrop or the noun is a person:
-			try showing the noun to the current interlocutor instead;
+		if the holder of the noun is current interlocutor:
+			try requesting the noun from current interlocutor;
 		otherwise:
-			carry out the refusing comment by activity with the current interlocutor.
+			unless the noun is a distant backdrop or the noun is a person:
+				try showing the noun to the current interlocutor instead;
+	carry out the refusing comment by activity with the current interlocutor.
 
 Chapter 2 - Setting discussing variables
 
