@@ -293,7 +293,10 @@ Check hailing (this is the new check hailing rule):
 		say "There's no one here but you." instead.
 
 Check saying hello to someone who is not the current interlocutor when the current interlocutor is alert:
-	say "[The noun] [are] already included in the conversation." instead.
+	if the noun is the player:
+		say "Don't make this more complicated than it already is." instead;
+	otherwise:
+		say "[The noun] [are] already included in the conversation." instead.
 
 Check starting a conversation with clientele about something:
 	say "They're... busy. At best interrupting them would interrupt their code, and at worst it would make them think [we] [are] a Bureau agent." instead.

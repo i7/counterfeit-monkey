@@ -1281,7 +1281,7 @@ Saying hello to is an action applying to one visible thing.
 Understand "greet [something]" or "say hello/hi to [something]" or "talk to [something]" as saying hello to.
 
 Check saying hello to the player (this is the can't greet yourself rule):
-	say "It's unlikely that you would have any new information for yourself." instead.
+	say "Don't make this more complicated than it already is." instead.
 
 Check saying hello to a person when addressing everyone is true (this is the can't single out someone in a group rule):
 	say "You can't single out one person to talk to here." instead.
