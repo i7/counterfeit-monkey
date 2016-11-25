@@ -953,6 +953,11 @@ Instead of telling someone about something:
 Instead of asking someone about something:
 	say "[The noun] thinks for a moment, then apparently decides not to answer."
 
+Instead of saying hello to the crowds:
+	say "[one of]I wish you wouldn't babble at folks: it just draws attention.[or]I know you didn't grow up around here, but people in this vicinity tend not to be so free with their words.[stopping]".
+
+Understand "ask [crowds] about [text]" as a mistake ("[one of]I wish you wouldn't babble at folks: it just draws attention.[or]I know you didn't grow up around here, but people in this vicinity tend not to be so free with their words.[stopping]").
+
 Definition: the word-balance is tilting if the total heft of the things in the left pan is not the total heft of the things in the right pan.
 
 Check someone who is not the current interlocutor discussing an NPC-directed quip:
@@ -1964,7 +1969,8 @@ Instead of approaching Monumental Staircase when the secret-plans are not handle
 To say plans-search refusal:
 	say "I think we'd better get your things from the hostel before we leave this part of town, don't you?".
 
-The crowds are a backdrop. The crowds are in Fair, Monumental Staircase, Church Forecourt, Midway and Park Center. Understand "people" or "crowd" or "men" or "women" or "man" or "woman" or "person" or "hustle" or "bustle" or "spectators" or "pedestrians" as the crowds.
+The crowds are a backdrop. The crowds are in Fair, Monumental Staircase, Church Forecourt, Midway and Park Center. Understand "people" or "crowd" or "men" or "women" or "woman" or "person" or "hustle" or "bustle" or "spectators" or "pedestrians" as the crowds.
+	understand "man" as the crowds when the barker is not in location.
 	understand "children" or "child" as the crowds when the small children are not in the location.
 	The description is "[if the location is a road]They are all in a hurry to get somewhere, though it is not clear exactly where or why[otherwise]The people seem to be enjoying themselves. I don't recogn[ize] anyone in particular, though[end if]."
 
