@@ -1813,7 +1813,11 @@ The introduction of the steel-rimmed spectacles is "Brown seems to be simultaneo
 
 The description of the worn leather jacket is "A moderately cool sort of bomber-jacket look, except that the elbows have given out and the cuffs are unraveling."
 
-
+Rule for deciding the concealed possessions of Professor Brown:
+	if looking:
+		yes;
+	otherwise:
+		no.
 
 Section 11 - Lecture Hall
 
