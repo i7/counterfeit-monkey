@@ -61,6 +61,8 @@ A smarter parser rule when sp_normal (this is the new stripping adverbs rule):
 
 The stripping failed with rule is not listed in any rulebook. [There are too many actions in the game where "with" IS fruitful, so this often gives a misleading response.]
 
+The the Smarter Parser simplify punctuation rule is not listed in any rulebook.
+
 When play begins (this is the change smarter parse messages rule):
 	choose row with SP rule of asking unparseable questions rule in the Table of Smarter Parser Messages;
 	now the message entry is "If you're trying to converse with other characters, the suggestions in the text provide possible phrasings; so if you read 'I might ask about lentils.', you might phrase your command ASK ABOUT LENTILS. Introducing other words or variant phrasings that weren't part of the suggestion may confuse the game.
