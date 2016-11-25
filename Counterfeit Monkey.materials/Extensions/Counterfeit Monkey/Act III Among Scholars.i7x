@@ -984,7 +984,7 @@ To judge, however, from the angry asterisking, Waterstone is still looking for a
 
 The draft document can be pending. The draft document is not pending.
 
-Every turn when the draft document is pending and the current printer mode is ready:
+A last every turn rule when the draft document is pending and the current printer mode is ready:
 	move the draft document to the output tray;
 	now the draft document is not pending;
 	move the single ream to the repository;

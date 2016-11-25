@@ -4705,7 +4705,7 @@ Through the window in Waterstone's door, we can see him turning the lock. When h
 	try Waterstone locking office-door-1 with od-key;
 	carry out the caching scope activity with the player;]
 	if the department printer is switched on:
-		say "A moment later the printer whirs thoughtfully.";
+		say "[line break]A moment later the printer whirs thoughtfully.";
 	now the draft document is pending;
 	rule succeeds.
 
