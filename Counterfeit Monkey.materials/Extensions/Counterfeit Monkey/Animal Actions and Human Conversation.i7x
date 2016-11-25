@@ -1650,7 +1650,7 @@ Does the player mean asking the bartender to try attacking something with someth
 	it is very unlikely.
 
 Rule for refusing comment by the bartender:
-	unless the noun is enclosed by the player or the noun is the player:
+	unless the noun is enclosed by the player or the noun is the player or the noun is the patron:
 		silently try taking the noun;
 		if the player is not holding the noun:
 			say "We're having a little trouble holding it up so that she can see.";
