@@ -5293,7 +5293,7 @@ claim to hath seen him this morning is a performative quip.
 	The printed name is "claim to have seen him this morning". The true-name is "claim to hath seen him this morning".
 	Understand "have" as claim to hath seen him this morning.  The comment is "'He went out to, ah, do some research, I think. He left before I was completely awake.' (Thanks, now you've given my mother the impression that I'm a cad.)".
 	It mentions romance.
-	The reply is "She looks at the dissheveled futon[if the futon is non-empty], with [the list of things *in the futon] still arranged on it[end if], and her expression becomes even more unreadable. 'I did think I'd taught my son better manners,' she remarks. 'I apolog[ize] on his behalf.'".
+	The reply is "She looks at the disheveled futon[if the futon is non-empty], with [the list of things *in the futon] still arranged on it[end if], and her expression becomes even more unreadable. 'I did think I'd taught my son better manners,' she remarks. 'I apolog[ize] on his behalf.'".
 	It quip-supplies My mother.
 	It directly-follows we're his girlfriend.
 
