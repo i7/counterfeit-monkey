@@ -2977,10 +2977,7 @@ The generic confrontational of the gift shop volunteer is "miss".
 
 Instead of object-asking when the current interlocutor is the gift shop volunteer:
 	let N be "[one of][generic adversative of the gift shop volunteer][or][secondary apology of the gift shop volunteer][at random]" in sentence case;
-	let O be "[the noun]";
-	if the noun is the postcards and the subcommand of the postcards matches the text "souvenirs":
-		let O be "the souvenirs";
-	say "[We] frame up a vague question about [O].
+	say "[We] frame up a vague question about [the noun].
 
 [beat] '[N], don't think I can help you there.'[paragraph break][conditional paragraph break]"
 ["[We] frame up a vague question about [second noun].]
