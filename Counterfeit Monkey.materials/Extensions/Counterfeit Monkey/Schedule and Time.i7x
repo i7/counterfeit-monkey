@@ -501,6 +501,8 @@ Carry out attacking the hanging Atlantida figure with something:
 	now the hanging Atlantida figure is nowhere;
 
 Report attacking the hanging Atlantida figure with something:
+	if the second noun is the arm:
+		say "Someone in the audience gasps as we hold up the severed arm. A small child is crying. ";
 	say "[We] take a good swing with [the second noun] and connect, finally, with [the noun].
 
 There is a resounding crack!
