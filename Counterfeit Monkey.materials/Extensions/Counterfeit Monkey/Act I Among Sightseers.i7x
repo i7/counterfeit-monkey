@@ -1825,6 +1825,9 @@ Some wire racks are scenery things in the Cathedral Gift Shop. The description i
 
 Some postcards are on the wire racks. The description of the postcards is "You may be a tourist in these parts, but I, my curious friend, am not: so I find these pictures all rather foolish, and not at all representative of the town as it really is." The postcards are scenery. Understand "postcard" or "souvenirs" as the postcards. Understand "harbor" or "city walls" or "walls" or "fortifications" or "ancient fortifications" or "cards" or "harbour" or "picture" or "architecture" or "pictures" as the postcards when the location is cathedral gift shop.
 
+Does the player mean object-asking the postcards:
+	it is likely.
+
 Does the player mean finding the postcards:
 	it is very unlikely.
 
