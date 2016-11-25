@@ -1474,7 +1474,7 @@ Definition: a thing is attendant-related:
 	no.
 
 Rule for deciding the concealed possessions of the attendant:
-	if looking:
+	if looking and the attendant is as-yet-unknown:
 		yes;
 	otherwise:
 		no.
