@@ -197,15 +197,12 @@ Sigil Street is west of Ampersand Bend. It is a road. The description is "The bu
 
 Some elderly apartments are scenery in Sigil Street. The description is "From down here [we] can only see the shuttered windows and the occasional balcony or awning, but you can guess what they're probably like from the environment: old-fashioned inside, kitchens and bathrooms awkwardly fitted into niches and closets of buildings that weren't designed for plumbing. But they're also probably rather [if the player wears the Britishizing goggles]cosy[otherwise]cozy[end if] and handsome, with exposed beams under the ceiling." Understand "flat" or "apartment" or "building" or "buildings" as the elderly apartments when location is Sigil Street.
 
-Does the player mean finding the elderly apartments:
-	it is very unlikely.
-
 Does the player mean approaching My Apartment:
 	it is very likely.
 
-Check finding the elderly apartments:
+Instead of finding the elderly apartments:
 	if the subcommand of the elderly apartments matches the text "apartment":
-		try approaching My Apartment instead.
+		try approaching My Apartment.
 
 The reflective window is a fixed in place mirror in Sigil Street.
 	Understand "shop window/windows" or "windows" as the reflective window.
@@ -1825,13 +1822,10 @@ Some wire racks are scenery things in the Cathedral Gift Shop. The description i
 
 Some postcards are on the wire racks. The description of the postcards is "You may be a tourist in these parts, but I, my curious friend, am not: so I find these pictures all rather foolish, and not at all representative of the town as it really is." The postcards are scenery. Understand "postcard" or "souvenirs" as the postcards. Understand "harbor" or "city walls" or "walls" or "fortifications" or "ancient fortifications" or "cards" or "harbour" or "picture" or "architecture" or "pictures" as the postcards when the location is cathedral gift shop.
 
-Does the player mean object-asking the postcards:
-	it is likely.
-
 Does the player mean finding the postcards:
 	it is very unlikely.
 
-Instead of finding the postcards when the subcommand of the postcards matches the text "walls/fortifications":
+Instead of finding the postcards when the subcommand of the postcards matches the text "walls":
 	try approaching the old city walls.
 
 A dangerous construction rule for the wire racks:

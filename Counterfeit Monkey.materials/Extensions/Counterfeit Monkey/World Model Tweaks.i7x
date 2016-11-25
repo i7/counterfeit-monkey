@@ -867,9 +867,6 @@ When play begins (this is the fix staircases rule):
 	now every down-staircase fronts down;
 	now every up-staircase fronts up.
 
-Does the player mean finding a facade:
-	it is very unlikely.
-
 Does the player mean finding a scenery thing:
 	it is very unlikely.
 
