@@ -2356,8 +2356,8 @@ After going to Webster Court when Private Beach is visited and Patriotic Chard-G
 	otherwise:
 		clear the path-walked for the player;
 	unless final destination is Webster Court:
-		now approach-destination is Winding Footpath. [Tricks the approaching verb into stopping here even if you're trying to reach someplace really far away.]
-	[custom-pause the game. ]
+		now approach-destination is Winding Footpath; [Tricks the approaching verb into stopping here even if you're trying to reach someplace really far away.]
+	continue the action.
 
 Section 3 - Chard-Garden
 

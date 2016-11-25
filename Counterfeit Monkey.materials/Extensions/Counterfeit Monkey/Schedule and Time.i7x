@@ -217,7 +217,8 @@ After going to University Oval:
 		otherwise:
 			clear the path-walked for the player;
 		unless final destination is University Oval:
-			now approach-destination is Samuel Johnson Hall. [Tricks the approaching verb into stopping here even if you're trying to reach someplace really far away.]
+			now approach-destination is Samuel Johnson Hall; [Tricks the approaching verb into stopping here even if you're trying to reach someplace really far away.]
+		continue the action.
 		[custom-pause the game. ]
 
 Higgate-arrested is a scene. Higgate-arrested begins when the location is University Oval and seeking invite has ended.
