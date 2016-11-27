@@ -1781,7 +1781,7 @@ Rule for refusing comment by the bartender when the noun is the shuttle:
 
 We shrug amiably.
 
-She gives us a long, admonitory stare, then goes back to what she was doing.[or]We tried that already, and it didn't go well.[stopping]" .
+She gives us a long, admonitory stare, then goes back to what she was doing.[or]We tried that already, and it didn't go well.[stopping]".
 
 Table of Ultratests (continued)
 topic	stuff	setting
