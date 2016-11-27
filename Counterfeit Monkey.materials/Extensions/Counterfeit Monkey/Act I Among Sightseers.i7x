@@ -705,7 +705,7 @@ There's a bang, a last glittering fan of water in the air.[paragraph break]";
 			gel-convert the hoses;
 			say "As for the Officer, she's already speaking into her radio as she turns away.".
 
-Every turn when the location of the small children encloses the ho and the location is Park Center:
+Every turn when the location is Park Center and the location of the small children encloses the ho:
 	say "It isn't but a few seconds before a watchful parent notices the ho strutting around and goes to report her.
 
 She is too stupid [--] as a constructed person [--] to put up much resistance when an officer shows up to escort her away.";
