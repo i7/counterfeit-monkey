@@ -757,10 +757,14 @@ Carry out object-asking:
 	find a suitable interlocutor;
 	if the current interlocutor is nothing:
 		say "[We] [aren't] talking to anyone." instead;
+	let purchase-quip be nothing;
 	let N be a list of quips;
 	repeat with Q running through quips in quip-repository:
-		if Q mentions the noun and Q is available:
-			add Q to N;
+		if Q mentions the noun:
+			if Q is a purchasing quip:
+				now purchase-quip is Q;
+			if Q is available:
+				add Q to N;
 	if the number of entries in N is positive:
 		if the number of entries in N is 1:
 			try discussing entry 1 of N instead;
@@ -769,11 +773,10 @@ Carry out object-asking:
 	if the noun is the current interlocutor:
 		say "[The noun] [don't] seem interested in talking about [themselves]." instead;
 	otherwise:
-		if the holder of the noun is current interlocutor:
-			try requesting the noun from current interlocutor;
-		otherwise:
-			unless the noun is a distant backdrop or the noun is a person:
-				try showing the noun to the current interlocutor instead;
+		if the holder of the noun is current interlocutor and purchase-quip is something:
+			try requesting the noun from the current interlocutor instead;
+		unless the noun is a distant backdrop or the noun is a person or the holder of the noun is current interlocutor:
+			try showing the noun to the current interlocutor instead;
 	carry out the refusing comment by activity with the current interlocutor.
 
 Chapter 2 - Setting discussing variables
