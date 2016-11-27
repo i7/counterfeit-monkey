@@ -4412,7 +4412,7 @@ lojban-greeting is an NPC-directed quip.
 english-greeting is an NPC-directed quip.
 	The reply is "[one of]'Hello again,' says Higgate, obviously disappointed to see another non-Lojban speaker.[or]'You're back,' Higgate says[one of] flatly[or], putting aside her novel[or][at random].[stopping]".
 
-Every turn when the current quip is lojban-greeting:
+A first every turn when the current quip is lojban-greeting:
 	say "Higgate is still looking at us expectantly, so I jump in. ";
 	try discussing that we do not speak Lojban;
 	try Professor Higgate discussing that we do not speak Lojban.
