@@ -534,7 +534,7 @@ Definition: a thing is unhookable:
 
 [And to account for cases where you make an unhookable thing on the pulley via letter-manipulating something that was previously there:]
 
-Every turn when something unhookable is on the pulley (this is the portcullis empty rule):
+Every turn when (the location is Tunnel through Chalk or location is Personal Apartment) and something unhookable is on the pulley (this is the portcullis empty rule):
 	if the pulley is marked-visible:
 		say "[The list of unhookable things *in the pulley] [fall] to the ground.";
 	now every unhookable thing on the pulley is in Tunnel through Chalk.
