@@ -75,6 +75,8 @@ Include Threaded Actions by Emily Short.
 A first after reading a command rule when how-many-people-here is positive (this is the replace ask X to rule):
 	if the player's command includes "where to find":
 		replace the matched text with "where there seems";
+	if the player's command includes "how to make":
+		replace the matched text with "how [current interlocutor] makes";
 	if the player's command includes "to" and the player's command includes "ask/tell":
 		let N be "[player's command]";
 		replace the regular expression "^(ask|tell) (.*?) to " in N with "\2, ";
