@@ -5760,7 +5760,7 @@ Instead of throwing the tub at the Atlantida-woman:
 Instead of going somewhere in the presence of Atlantida-woman:
 	say "'I don't think so,' says Atlantida. As she's physically about twice our mass, I think she'll win this one."
 
-Every turn when atlantida-woman is carrying something (called target) which is not the restoration-gel rifle:
+Every turn when atlantida-woman is in location and atlantida-woman is carrying something (called target) which is not the restoration-gel rifle:
 	try Atlantida-woman dropping the target.
 
 Report atlantida-woman dropping the infertile astrologer:
