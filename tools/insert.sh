@@ -1,7 +1,7 @@
 #!/bin/bash
 
 path_to_interpreter=./git
-testfile="command scripts/minimal.txt"
+testfile="command scripts/test_minimal.txt"
 
 $path_to_interpreter "../Counterfeit Monkey.materials/Release/Counterfeit Monkey.gblorb" <"$testfile"  > transcript.txt
 
