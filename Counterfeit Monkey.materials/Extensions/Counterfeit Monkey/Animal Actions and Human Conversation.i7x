@@ -961,7 +961,7 @@ Instead of asking the farmer to try giving a farmer-carried thing to the player:
 Definition: a thing is farmer-carried if the farmer carries it.
 
 Carry out requesting it from:
-	let N be a random quip in quip repository which mentions the noun;
+	let N be a random quip in quip-repository which mentions the noun;
 	try discussing N with the second noun instead.
 
 Availability rule for what seems for sale:
