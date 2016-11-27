@@ -2674,6 +2674,9 @@ At the time when sandcastle washes away:
 		say "[if the noun is the sandcastle or the second noun is the sandcastle]But our efforts are in vain, because an[otherwise]An[end if] especially forward wave slides up the beach and demolishes [if the noun is the sandcastle or the second noun is the sandcastle]the whole construction[otherwise]our poor sandcastle[end if].";
 	now the sandcastle is unbuilt;
 
+Instead of finding the sandcastle when the subcommand of the sandcastle matches the text "wall":
+	try approaching the old city walls.
+
 Test sandcastle with "x castle / build castle / build sandcastle / look / smell castle / taste castle / touch castle / x castle / z".
 
 The sand is scenery in Private Beach. Understand "ground" as the sand. The description is "It's baking hot." The indefinite article is "some". The sand is diggable.
