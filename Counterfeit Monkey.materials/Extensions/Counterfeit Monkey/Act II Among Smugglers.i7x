@@ -670,8 +670,14 @@ After reading a command when location is Counterfeit Monkey (this is the replace
 
 The barman is a man in Counterfeit Monkey. The description of the barman is "His name is Parker, and he is a friend of yours, when you're wearing your own skin. At the moment, though, it seems like a good idea not to trust these friendships by making our new disguise known." Understand "bartender" or "barkeep" or "Parker" as the barman.
 
+Instead of starting a conversation with the barman about something in the presence of Slango:
+	say "Better not; the less people notice this little conversation, the better."
+
 Instead of saying hello to the barman in the presence of Slango:
 	say "Better not; the less people notice this little conversation, the better."
+
+Check starting a conversation with clientele about something:
+	say "They're... busy. At best interrupting them would interrupt their code, and at worst it would make them think [we] [are] a Bureau agent." instead.
 
 Instead of saying hello to the clientele:
 	say "They're... busy. At best interrupting them would interrupt their code, and at worst it would make them think [we] [are] a Bureau agent."
