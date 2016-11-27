@@ -1096,7 +1096,7 @@ A first every turn rule (this is the update people-present rule):
 		repeat with P running through people-present:
 			now P is marked-visible;
 
-Every turn (this is the active conversation rule):
+Every turn when the player is staid (this is the active conversation rule):
 	if how-many-people-here is positive:
 		follow the conversation-reply rules.
 
