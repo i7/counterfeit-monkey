@@ -1741,6 +1741,9 @@ Rule for refusing comment by the bartender when the noun is the Slangovia map or
 	record "getting a product of the homonym paddle" as achieved;
 	say "[one of]She sighs. 'This isn't even good spectacle,' she says, tapping [the noun] with her paddle. 'Next time, bring me something fun, huh?'[or]She may be tiring of this operation.[stopping]"
 
+Rule for refusing comment by the bartender when the noun is the homonym paddle:
+		say "'Er… I don't think the paddle would turn into anything, even if it were possible to hit it with itself,' she says."
+
 Rule for refusing comment by the bartender when the noun is the foil:
 	if the player is not holding the foil:
 		silently try taking the foil;
