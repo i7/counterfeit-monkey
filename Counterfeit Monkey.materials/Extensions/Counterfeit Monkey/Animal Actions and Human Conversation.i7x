@@ -1943,11 +1943,13 @@ why Arbot now sells antiques is an unlisted questioning quip.
 'But [Mr] Arbot has connections,' we prompt.
 
 She doesn't disagree, but doesn't elaborate, either."
-It indirectly-follows what sort of demonstration.
-It quip-supplies Kate.
+	It mentions the maps collection.
+	It indirectly-follows what sort of demonstration.
+	It quip-supplies Kate.
 
 what types of antiques they sell here is an unlisted questioning quip.
 	Understand "type" or "kind" or "sort" or "antique" or "you" as what types of antiques they sell here.
+	It mentions the maps collection.
 	The comment is "'What sorts of antiques do you sell here?'"
 	The reply is "'What you see around you on the floor is fairly representative,' Kate replies. 'Maps are a specialty, but we also carry older models of linguistic tools as well as unusual or vintage Atlantean artifacts.'"
 	It quip-supplies Kate.
