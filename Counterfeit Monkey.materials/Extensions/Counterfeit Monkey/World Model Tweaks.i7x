@@ -1517,7 +1517,14 @@ Sanity-check approaching a room when the player carries a heavy thing (called th
 To reduce the/-- iron-pans:
 	now the current setting of the letter-remover is "s";
 	say "In the interest of compactness, [we] S-remove the pans. [run paragraph on]";
-	try waving the letter-remover at the iron-pans.
+	if the letter-remover is in a closed backpack:
+		silently try opening the backpack;
+		silently try taking the letter-remover;
+		try waving the letter-remover at the iron-pans;
+		silently try inserting the letter-remover into the backpack;
+		silently try closing the backpack;
+	otherwise:
+		try waving the letter-remover at the iron-pans.
 
 Section 2 - Kitchens and Bathrooms
 

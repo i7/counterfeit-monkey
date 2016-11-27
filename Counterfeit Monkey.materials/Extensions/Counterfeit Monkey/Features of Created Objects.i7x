@@ -22,14 +22,22 @@ Before going to the Antechamber when the player has a backpack:
 To stow gear:
 	let L be a list of things;
 	repeat with item running through things which are enclosed by the player:
-		if the item is marked-visible and the item is illegal and the item is not enclosed by the backpack:
+		if the item is marked-visible and the item is illegal and the item is not enclosed by a backpack:
 			add item to L;
 	if the number of entries in L is positive:
-		say "Before approaching the secretary ahead, [we] try to hide all our illegal things in the backpack. ";
+		say "Before approaching the secretary ahead, we try to hide all our illegal things in the backpack.";
+		if the backpack is closed:
+			silently try opening the backpack;
 		repeat with item running through L:
-			silently try inserting the item into the backpack;
-	if the backpack is open:
-		silently try closing the backpack.
+			if item is the secret-plans:
+				say "[line break]The rolled-up plans are too long to fit, however, so we try to hold them hidden behind our back instead.";
+			otherwise:
+				silently try inserting the item into the backpack;
+		silently try closing the backpack;
+	otherwise:
+		if the backpack is open:
+			say "Before approaching the secretary ahead, we close the backpack.";
+			silently try closing the backpack.
 
 Every turn when location is the Antechamber (this is the caught by police rule):
 	repeat with evidence running through things enclosed by the player:
