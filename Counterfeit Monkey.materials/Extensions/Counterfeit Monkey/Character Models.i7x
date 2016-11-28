@@ -162,10 +162,12 @@ After reading a command when how-many-people-here is positive (this is the rearr
 Understand "hey" or "hiya" or "yo" as hailing.
 
 After reading a command when the current interlocutor is not nothing and player's command includes "ask/tell/a/t" and the player's command does not include "ask/tell/a/t about" (this is the new strip interlocutor from input rule):
-	unless the location is Counterfeit Monkey and the player's command includes "men":
-		if the player's command includes "[someone talk-eligible]":
-			unless the matched text matches the text "1":
-				cut the matched text.
+	if the player's command includes "[someone talk-eligible]":
+		let M be the substituted form of the matched text;
+		unless M is "1" or M is "men":
+			let cmd be "[player's command]";
+			replace the regular expression "(ask|tell|a|t) [M] " in cmd with "\1 ";
+			change the text of the player's command to cmd.
 
 The new strip interlocutor from input rule is listed instead of the strip interlocutor from input rule in the After reading a command rules.
 
