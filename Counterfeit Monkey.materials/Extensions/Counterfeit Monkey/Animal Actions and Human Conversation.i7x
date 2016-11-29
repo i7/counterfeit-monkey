@@ -179,13 +179,13 @@ Sanity-check attacking an animal:
 	say "[We] may be in serious trouble, but you're not the kind of person who would take it out on dumb animals. At least [--] yes, that's a relief. You're not the sort." instead.
 
 Sanity-check saying hello to an animal:
-	say "[The noun] [one of]blink[s][or]regard[s] us mutely[at random]." instead.
+	say "[The noun] [one of][blink][or][regard] us mutely[at random]." instead.
 
 Sanity-check saying hello to an insect:
 	say "Our greeting has no visible effect whatever on [the noun]." instead.
 
 Sanity-check saying goodbye to an animal:
-	say "[The noun] [one of]regard[s] us mutely[or][are] completely indifferent[at random]." instead.
+	say "[The noun] [one of][regard] us mutely[or][are] completely indifferent[at random]." instead.
 
 Sanity-check saying goodbye to an insect:
 	say "Predictably, [the noun] [do] not react." instead.
