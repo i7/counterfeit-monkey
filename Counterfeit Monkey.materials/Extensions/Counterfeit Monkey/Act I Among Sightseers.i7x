@@ -1660,7 +1660,7 @@ Instead of waving the letter-remover at the lock when the backpacking girl is ma
 	try taking the lock.
 
 An accessibility rule when the touch-goal is the lock or the touch-goal is the locker:
-	if the backpacking girl is marked invisible:
+	if the backpacking girl is marked invisible or the action name part of current action is the showing it to action:
 		make no decision;
 	otherwise:
 		say "[The backpacking girl] is watching our every move with unconcealed curiosity, which makes me a little hesitant to do anything with the locker[one of][or]. Maybe if we freaked her out somehow she would go away[or]. I think our best bet is to show her something that really weirds her out[stopping]." instead.
