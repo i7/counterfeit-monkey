@@ -118,14 +118,21 @@ Rule for supplying a missing noun while thanking:
 
 To find a suitable interlocutor:
 	if the current interlocutor is nothing:
-		if how-many-people-here is 1:
-			try saying hello to entry 1 of people-present;
-		otherwise:
-			let L be { bartender, Slango, barman, Kate };
-			repeat with vip running through L:
-				if vip is in location:
-					try saying hello to vip;
-					break;
+		if how-many-people-here is positive:
+			if how-many-people-here is 1:
+				try saying hello to entry 1 of people-present;
+			otherwise:
+				let L be { bartender, Slango, barman, Kate };
+				repeat with vip running through L:
+					if vip is in location:
+						try saying hello to vip;
+						break;
+			if the current interlocutor is nothing:
+				if there is a human other person (called target human) enclosed by location:
+					try saying hello to target human;
+				otherwise:
+					let target animal be a random animal in location;
+					try saying hello to target animal.
 
 Understand "buy [something]" as buying it from.
 Understand "show [something]" as showing it to.
