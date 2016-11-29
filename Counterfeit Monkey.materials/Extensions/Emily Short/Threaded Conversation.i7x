@@ -1344,19 +1344,11 @@ Farewell type is a protocol type that varies. Farewell type is explicit.
 
 Predicted-interlocutor is an object that varies. Predicted-interlocutor is initially nothing.
 
-After going to the Hostel when the player is staid:
+A last carry out looking rule when the location is the Hostel:
 	prepare attendant as interlocutor;
 	continue the action.
 
-After approaching the Hostel:
-	prepare attendant as interlocutor;
-	continue the action.
-
-After approaching Hesychius Street:
-	prepare farmer as interlocutor;
-	continue the action.
-
-After going to Hesychius Street when the player is staid:
+A last carry out looking rule when the location is Hesychius Street:
 	prepare farmer as interlocutor;
 	continue the action.
 
