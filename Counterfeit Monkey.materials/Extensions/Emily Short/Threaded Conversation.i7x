@@ -513,7 +513,7 @@ This is the offer hint quips rule:
 		if suppress-hint-quips is true:
 			now suppress-hint-quips is false;
 			the rule fails;
-		if tc reparse flag is false and sp reparse flag is false: [Don't want to also display hints before conversation, if we just implicitly greeted someone]
+		if sp reparse flag is false: [Don't want to also display hints before conversation, if we just implicitly greeted someone]
 			carry out the listing plausible quips activity;
 			[Hint about quips if there's something on the table that's particularly unusual.]
 
@@ -727,7 +727,7 @@ Section 1c - Object-asking and subject-asking
 
 [Subject-asking handles asking about subjects mentioned by available quips. Not to be confused with object-asking below, which handles asking about ordinary present objects in the game world. These are separate actions for performance reasons.]
 
-Understand "ask about/for/-- [any current-quip-subject thing]"  or "tell about/-- [any current-quip-subject thing]" as subject-asking. Subject-asking is an action applying to one visible thing.
+Understand "ask about/for/-- [any current-quip-subject thing]" or "tell about/that/-- [any current-quip-subject thing]" as subject-asking when predicted-interlocutor is something. Subject-asking is an action applying to one visible thing.
 
 Definition: a thing is current-quip-subject if it is mentioned by a quip in quip-repository.
 
@@ -746,10 +746,9 @@ Carry out subject-asking:
 			try discussing entry 1 of N instead;
 		otherwise:
 			recommend N instead;
-	otherwise:
-		say "[The noun] does not seem to be a current topic of conversation."
+	say "[The current interlocutor] [don't] [one of]seem interested in talking[or][have] anything to say[at random] about [the noun] at the moment."
 
-Understand "ask about/for/-- [something]"  or "tell about/-- [something]" as object-asking. Object-asking is an action applying to one visible thing.
+Understand "ask about/for/-- [a thing]"  or "tell about/that/-- [a thing]" as object-asking when predicted-interlocutor is something. Object-asking is an action applying to one visible thing.
 
 [Object-asking is meant as a catch-all for asking about unimplemented present things. Not to be confused with subject-asking above.]
 
@@ -775,9 +774,9 @@ Carry out object-asking:
 	otherwise:
 		if the holder of the noun is current interlocutor and purchase-quip is something:
 			try requesting the noun from the current interlocutor instead;
-		unless the noun is a distant backdrop or the noun is a person or the holder of the noun is current interlocutor:
+		if the noun is enclosed by player:
 			try showing the noun to the current interlocutor instead;
-	carry out the refusing comment by activity with the current interlocutor.
+	say "[The current interlocutor] [one of][don't] seem interested in talking[or][have] nothing to say[at random] about [the noun] at the moment."
 
 Chapter 2 - Setting discussing variables
 
@@ -801,7 +800,7 @@ Before doing something with a quip (this is the quips are not tangible rule):
 
 Rule for printing a parser error when the latest parser error is the can't see any such thing error (this is the quips are not visible rule):
 	if the player's command includes "say/ask/answer/discuss/tell/a/t":
-		if the current interlocutor is a person and tc reparse flag is false:
+		if the current interlocutor is a person:
 			say "That doesn't seem to be a topic of conversation at the moment." (A) instead;
 		otherwise:
 			unless the player's command includes "[any person]":
@@ -1212,19 +1211,19 @@ Carry out changing the subject (this is the standard report other subjects rule)
 
 Book 3 - Starting a Conversation
 
-tc reparse flag is a truth state that varies. [Whether we need to reparse the command after implicitly greeting someone and resetting quips' availability]
-
 suppress-hint-quips is a truth state that varies.
 
 Section 1 - Reparse after chatting
 
 Definition: a person is talk-ineligible if it is not talk-eligible.
 
-Understand "ask [someone talk-ineligible] about [text]" as starting a conversation with it about.
-Understand "ask [someone talk-ineligible] for [text]" as starting a conversation with it about.
-Understand "tell [someone talk-ineligible] about [text]" as starting a conversation with it about.
+Understand "ask [someone talk-ineligible] about [a thing]" as starting a conversation with it about.
+Understand "ask [someone talk-ineligible] about [any current-quip-subject thing]" as starting a conversation with it about.
+Understand "ask [someone talk-ineligible] for [a thing]" as starting a conversation with it about.
+Understand "tell [someone talk-ineligible] about [a thing]" as starting a conversation with it about.
+Understand "tell [someone talk-ineligible] about [any current-quip-subject thing]" as starting a conversation with it about.
 
-Starting a conversation with it about is an action applying to one thing and one topic.
+Starting a conversation with it about is an action applying to two visible things.
 
 [Starting a conversation with it about is conversing. ]
 
@@ -1232,11 +1231,7 @@ Carry out starting a conversation with it about:
 	implicitly greet the noun;
 	if the noun is the current interlocutor:
 		follow the relabel available quips rule;
-		now tc reparse flag is true.
-
-Rule for reading a command when tc reparse flag is true (this is the reset after retrying input rule):
-	now tc reparse flag is false;
-[	showme the current action;]
+		try subject-asking the second noun instead.
 
 Book 4 - Conversing
 
@@ -1343,23 +1338,57 @@ Greeting type is a protocol type that varies. Greeting type is explicit.
 
 Farewell type is a protocol type that varies. Farewell type is explicit.
 
+[This is basically a speed hack to avoid both setting a new interlocutor and parsing conversation when processing the same command. Both of these are slow, and together they create a noticeable delay. So we cheat and "pre-set" the interlocutor if they player walks into one of the two rooms where there is someone to talk to who we don't automatically start a conversation with when entering.]
+
+[Of course, we don't actually speed anything up this way, we just make the slowness less noticeable by slicing it up. If the player decides not to talk to our assumed interlocutor, then we have only made things slower.]
+
+Predicted-interlocutor is an object that varies. Predicted-interlocutor is initially nothing.
+
+After going to the Hostel when the player is staid:
+	prepare attendant as interlocutor;
+	continue the action.
+
+After approaching the Hostel:
+	prepare attendant as interlocutor;
+	continue the action.
+
+After approaching Hesychius Street:
+	prepare farmer as interlocutor;
+	continue the action.
+
+After going to Hesychius Street when the player is staid:
+	prepare farmer as interlocutor;
+	continue the action.
+
+To prepare (N - a person) as interlocutor:
+	unless N is not in location or predicted-interlocutor is N:
+		repeat with item running through things in the backup-repository:
+			if the item quip-supplies N:
+				move the item to the quip-repository;
+		repeat with item running through things in the quip-repository:
+			if the item quip-supplies someone who is not N:
+				move the item to the backup-repository;
+		now predicted-interlocutor is N.
+
 backup-repository is a container.
 
 To set the current/-- interlocutor to (N - a person):
 	unless the current interlocutor is N:
 		now the current interlocutor is N;
-		repeat with item running through things in the backup-repository:
-			if the item quip-supplies the current interlocutor:
-				move the item to the quip-repository;
-		repeat with item running through things in the quip-repository:
-			if the item quip-supplies someone who is not the current interlocutor:
-				move the item to the backup-repository;
+		unless predicted-interlocutor is N:
+			repeat with item running through things in the backup-repository:
+				if the item quip-supplies the current interlocutor:
+					move the item to the quip-repository;
+			repeat with item running through things in the quip-repository:
+				if the item quip-supplies someone who is not the current interlocutor:
+					move the item to the backup-repository;
+			now predicted-interlocutor is N.
 
 To reset the interlocutor:
 	unless the current interlocutor is nothing:
 		truncate the planned conversation of the current interlocutor to 0 entries;
-	now the quip-repository is nowhere;
 	now the current interlocutor is nothing;
+	now the predicted-interlocutor is nothing;
 	now the current quip is generic-quip;
 	now the previous quip is generic-quip.
 

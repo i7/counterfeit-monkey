@@ -303,15 +303,11 @@ Check saying hello to someone who is not the current interlocutor when the curre
 	otherwise:
 		say "[The noun] [are] already included in the conversation." instead.
 
-Check starting a conversation with clientele about something:
-	say "They're... busy. At best interrupting them would interrupt their code, and at worst it would make them think [we] [are] a Bureau agent." instead.
-
 Test clientele-bug with "ask parker about slango / ask men about slango" in the Counterfeit Monkey.
 
 Carry out starting a conversation with an eavesdropping person about when the current interlocutor is a person:
 	say "[We] give [the noun] a look to say [their] input would be welcome as well.";
-	now the reborn command is the substituted form of "ask about [topic understood]";
-	now sp reparse flag is true instead.
+	try subject-asking the second noun instead.
 
 [We do want it to be possible for the player to say "hi" back to a character who has just greeted him if the conversation has just started.]
 
