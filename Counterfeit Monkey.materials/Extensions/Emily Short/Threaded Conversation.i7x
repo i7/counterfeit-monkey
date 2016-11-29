@@ -1230,7 +1230,7 @@ Starting a conversation with it about is an action applying to two visible thing
 Carry out starting a conversation with it about:
 	implicitly greet the noun;
 	if the noun is the current interlocutor:
-		follow the relabel available quips rule;
+		[follow the relabel available quips rule;]
 		try subject-asking the second noun instead.
 
 Book 4 - Conversing
