@@ -1550,7 +1550,11 @@ The Dormitory Room is above the Hostel. It is indoors. Understand "dorm" as the 
 
 A dorm bed is usually scenery.
 
-Four dorm beds are in the dormitory room. Understand "beds" as a dorm bed. The description of a dorm bed is "At this time of day, since everyone is checked out, the beds are all stripped down to bare mattress. Linens may be rented at the front desk [--] but [we][']re not staying here tonight, so there's no need to experience the thinning sheets and the pilled [if the player wears the Britishizing goggles]woollen[otherwise]woolen[end if] blankets. Your memory is enough for both of us."
+After reading a command when location is the dormitory room (this is the replace beds with bed rule):
+	while the player's command includes "beds":
+		replace the matched text with "bed".
+
+Four dorm beds are in the dormitory room. The description of a dorm bed is "At this time of day, since everyone is checked out, the beds are all stripped down to bare mattress. Linens may be rented at the front desk [--] but [we][']re not staying here tonight, so there's no need to experience the thinning sheets and the pilled [if the player wears the Britishizing goggles]woollen[otherwise]woolen[end if] blankets. Your memory is enough for both of us."
 
 
 A backpacking girl is an alert tourist woman in the dormitory room. She exhibits caution.
