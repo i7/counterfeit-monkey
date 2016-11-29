@@ -748,7 +748,7 @@ why the car does not run is a questioning quip.
 	Every car is mentioned by why the car does not run.
 
 where there seems a car-2 is an unlisted repeatable questioning quip.
-	Understand "buy car" or "car" or "where there seems" or "buy a car" or "where i could" as where there seems a car-2. The printed name is "where to find a car".
+	Understand "buy car" or "car" or "there is" or "buy a car" or "where i could" as where there seems a car-2. The printed name is "where to find a car".
 	It quip-supplies the mechanic.
 	The comment is "'I'm looking for a car,' we say.".
 	The reply is "'Sorry,' he mumbles. '[one of]I fix them. I don't sell them[or]Perhaps you should ask somebody else[stopping].'".
