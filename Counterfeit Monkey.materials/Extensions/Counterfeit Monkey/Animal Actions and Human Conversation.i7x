@@ -4269,7 +4269,7 @@ wish Professor Brown luck is a performative quip.
 	It directly-follows what Professor Brown thinks of the academic job market.
 
 how Professor Brown makes abstracts is a questioning quip.
-	Understand "he" as how Professor Brown makes abstracts.
+	Understand "he" or "to make" as how Professor Brown makes abstracts.
 	It mentions research.
 	The comment is "'What equipment do you use to make your abstracts?' we ask.".
 	The reply is "'It's an ordinary letter-remover with a few adjustments,' Brown says. 'The department's computer can lift some of the legal overrides on standard letter tools. The job would be easier if I had access to higher-powered machinery, but...'".
