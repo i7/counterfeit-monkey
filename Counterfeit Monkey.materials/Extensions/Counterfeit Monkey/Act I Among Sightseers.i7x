@@ -2224,8 +2224,8 @@ A white-yam is carried by the farmer. It is a yam. The printed name of the white
 	if buying something from someone, no;
 	yes.]
 
-A description-concealing rule:
-	now every thing which is carried by the farmer is not marked for listing.
+[A description-concealing rule:
+	now every thing which is carried by the farmer is not marked for listing.]
 
 Section 2 - Webster Court
 
