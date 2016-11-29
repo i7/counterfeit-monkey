@@ -103,7 +103,7 @@ After reading a command (this is the change X-remover to letter-remover rule):
 	change the text of the player's command to N;
 	say "[run paragraph on]";
 
-After reading a command when the player can touch the letter-remover (this is the implicitly change letter-remover setting rule):
+A first after reading a command rule (this is the implicitly change letter-remover setting rule):
 	let N be "[the player's command]";
 	if N matches the regular expression ".-remover":
 		if N matches the regular expression "(.*) (.)-remover (.)*":
@@ -117,13 +117,16 @@ After reading a command when the player can touch the letter-remover (this is th
 		if the number of characters in N is greater than 1:
 			make no decision;
 		now N is "[N in lower case]";
-		unless N matches the regular expression "\l":
-			say "Only the 26 letters of the English alphabet are available to the letter-remover.";
-			reject the player's command;
-		now the current setting of the letter-remover is "[N]";
-		now the letter-remover is changing;
-	otherwise:
-		say "[run paragraph on]";
+		if the letter-remover is in a closed backpack and the backpack is enclosed by location:
+			silently try opening the backpack;
+		if the player can touch the letter-remover:
+			unless N matches the regular expression "\l":
+				say "Only the 26 letters of the English alphabet are available to the letter-remover.";
+				reject the player's command;
+			now the current setting of the letter-remover is "[N]";
+			now the letter-remover is changing;
+		otherwise:
+			say "[run paragraph on]";
 
 
 
