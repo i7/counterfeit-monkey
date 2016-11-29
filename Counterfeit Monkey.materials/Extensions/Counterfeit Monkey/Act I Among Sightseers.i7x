@@ -2681,6 +2681,9 @@ At the time when sandcastle washes away:
 Instead of finding the sandcastle when the subcommand of the sandcastle matches the text "wall":
 	try approaching the old city walls.
 
+Instead of finding the museum exterior when the subcommand of the sandcastle matches the text "wall":
+	try approaching the old city walls.
+
 Test sandcastle with "x castle / build castle / build sandcastle / look / smell castle / taste castle / touch castle / x castle / z".
 
 The sand is scenery in Private Beach. Understand "ground" as the sand. The description is "It's baking hot." The indefinite article is "some". The sand is diggable.
