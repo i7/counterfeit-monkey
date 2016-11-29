@@ -1259,7 +1259,7 @@ The kind ladies are a plural-named woman. The description of the kind ladies is 
 
 The kudu is an animal. The description of the kudu is "It's a creature like an antelope, with tall, twisting horns and a little white tuft of beard."
 
-Every turn when the kudu is marked-visible and the kudu is in the location:
+Every turn when the kudu is in location:
 	say "The kudu looks at us cleverly for a moment and then bounds away.";
 	now the kudu is nowhere.
 
