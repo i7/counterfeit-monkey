@@ -127,7 +127,7 @@ Carry out going:
 After a fake person going, exiting, or entering when pursuing-state is true:
 	now the person asked is mentioned;
 	if the person asked is a cat:
-		add cat-sample to the incoming-list;
+		add cat-sample to the incoming-list, if absent;
 	otherwise:
 		add the person asked to the incoming-list, if absent.
 
