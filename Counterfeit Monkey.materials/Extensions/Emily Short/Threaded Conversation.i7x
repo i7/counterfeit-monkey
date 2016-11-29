@@ -774,7 +774,7 @@ Carry out object-asking:
 	otherwise:
 		if the holder of the noun is current interlocutor and purchase-quip is something:
 			try requesting the noun from the current interlocutor instead;
-		if the noun is enclosed by player:
+		unless the noun is a distant backdrop or the noun is a person or the holder of the noun is current interlocutor:
 			try showing the noun to the current interlocutor instead;
 	say "[The current interlocutor] [one of][don't] seem interested in talking[or][have] nothing to say[at random] about [the noun] at the moment."
 
