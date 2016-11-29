@@ -43,7 +43,7 @@ Every turn when location is the Antechamber (this is the caught by police rule):
 	repeat with evidence running through things enclosed by the player:
 		if the evidence is illegal and the evidence is not enclosed by a closed backpack:
 			say "The attention of [the secretary] lights on [the evidence]. 'Let's see [regarding the evidence][those],' she says. [paragraph break]Of course, her quick inspection doesn't make her any happier, and she sends the room into lockdown.";
-			end the story saying "Our arrest goes badly";
+			end the story saying "Our arrest goes badly".
 
 
 Section 2 - Proffering and thing relations
