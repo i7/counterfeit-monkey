@@ -1351,7 +1351,7 @@ Understand "mount [reel] on/onto [the projector]" as inserting it into.
 Understand "show [reel] on [the projector]" as showing it on. Showing it on is an action applying to two things.
 
 Instead of mounting the reel:
-	if the projector is marked-visible:
+	if the projector is in location:
 		try inserting the reel into the projector;
 	otherwise:
 		say "There is nothing suitable here to mount it on."
@@ -2668,9 +2668,9 @@ Report building:
 	say "It would be madness to spend long on such projects when [we] have so much else to be doing, but [we] do, for old times['] sake (mine, at least), construct a couple of hasty cylindrical turrets and a protective wall of sorts."
 
 At the time when sandcastle washes away:
-	if the sandcastle is unbuilt and the sandcastle is marked-visible:
+	if the sandcastle is unbuilt and the sandcastle is in location:
 		say "The waves wash away all but the faintest traces of the sandcastle.";
-	otherwise if the sandcastle is marked-visible:
+	otherwise if the sandcastle is in location:
 		say "[if the noun is the sandcastle or the second noun is the sandcastle]But our efforts are in vain, because an[otherwise]An[end if] especially forward wave slides up the beach and demolishes [if the noun is the sandcastle or the second noun is the sandcastle]the whole construction[otherwise]our poor sandcastle[end if].";
 	now the sandcastle is unbuilt;
 
