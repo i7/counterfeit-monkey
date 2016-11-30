@@ -2418,6 +2418,10 @@ whether she enjoys her job is a questioning quip.
 	The reply is "'They never let me try any of the good equipment,' she says, with surprising bitterness. 'When they brought in the T-inserter, they let Porson[--]' Then she stops, her expression that of a guppy being strangled. ".
 	It quip-supplies the secretary.
 
+[We don't want any quip suggestions in this scene]
+A plausibility rule for a quip during Attempting Entry:
+	it is implausible.
+
 how she got this job is a questioning quip.
 	It mentions employment.
 	The comment is "'How did you get this job?' we ask.".
