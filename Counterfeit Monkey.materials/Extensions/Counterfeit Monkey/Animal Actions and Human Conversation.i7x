@@ -5120,13 +5120,13 @@ An awkward pause."
 Test kpbug with "tutorial off / talk to girl / topics" in dormitory room.
 
 Rule for listing peripheral quips during Brock-argument:
-	if a quip is peripheral:
-		prepare a list of peripheral quips;
+	if a quip in quip-repository is peripheral:
+		prepare a list of peripheral quips in quip-repository;
 		say "[quip-suggestion-phrase][the prepared list delimited in disjunctive style][get-to-work]."
 
 Rule for listing plausible quips during Brock-argument:
-	if a quip is plausible:
-		prepare a list of plausible quips;
+	if a quip in quip-repository is plausible:
+		prepare a list of plausible quips in quip-repository;
 		say "[quip-suggestion-phrase][the prepared list delimited in disjunctive style][get-to-work]."
 
 To say get-to-work:

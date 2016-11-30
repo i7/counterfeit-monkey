@@ -524,10 +524,11 @@ The offer hint quips rule is listed after the adjust light rule in the turn sequ
 [	On the other hand, it means that we should not test availability or plausibility on our own without first calling this rule.	]
 This is the relabel available quips rule:
 	if how-many-people-here is positive:
-		now every quip is flagged-unready;
 		repeat with item running through things in the quip-repository:
 			if item is available:
-				now item is flagged-ready.
+				now item is flagged-ready;
+			otherwise:
+				now item is flagged-unready.
 				[* This means that we can also remove things from the quip-repository in order to skip considering them; if for instance we only want to consider quips relevant to the current scene, or the current character.]
 
 A quip can be flagged-ready or flagged-unready.
