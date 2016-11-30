@@ -6101,7 +6101,7 @@ Carry out going through the tall window:
 	otherwise:
 		say "[We] close the window behind us.";
 
-Portcullis-threat is a scene. Portcullis-threat begins when Atlantida-shooing ends. Portcullis-threat ends in delay when the portcullis is closed. Portcullis-threat ends in capture when the time since Portcullis-threat began is 4 minutes.
+Portcullis-threat is a scene. Portcullis-threat begins when Atlantida-shooing ends. Portcullis-threat ends in delay when the portcullis is closed. Portcullis-threat ends in capture when the time since Portcullis-threat began is 4 minutes and the portcullis is open.
 
 When Portcullis-threat begins:
 	say "Someone is coming into the workshop upstairs. There's at most a few seconds before they'll be down the tunnel.";
