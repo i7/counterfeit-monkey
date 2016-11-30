@@ -5792,6 +5792,18 @@ that the outside world matters is an unlisted informative quip.
 	The reply is "'And do you know what would happen if Atlantean power were to spread beyond our borders? The rest of the world would become just like us. The incentive to wipe out every diversity, every variation of language would be too great.'".
 	It quip-supplies Atlantida-woman.
 
+Availability rule for that the outside world matters:
+	if Atlantida-woman recollects thing-about-democracy:
+		make no decision;
+	otherwise:
+		it is off-limits.
+
+Availability rule for how she justifies cold storage:
+	if Atlantida-woman recollects thing-about-democracy:
+		make no decision;
+	otherwise:
+		it is off-limits.
+
 how she justifies cold storage is an unlisted questioning quip.
 	The comment is "'How do you excuse putting people in Cold Storage? It's a human rights violation.'".
 	It mentions crime, legislation.
