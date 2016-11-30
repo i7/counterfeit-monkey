@@ -3362,8 +3362,6 @@ She deflates momentarily and goes back to inspecting. "There's another problem. 
 
 She frowns. "Invitations to inspect highly secure machinery are not transferrable," she says. "And how should I know whether you stole it?"
 
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether she enjoys her job.
-
 [Your score has gone up by five points and is now seventy-eight.]
 
 > e
@@ -3384,8 +3382,6 @@ The secretary scowls. "Fine. I'll contact Waterstone." She places a call — on 
 "Yes I did," says Waterstone. "And I have been a research partner to DCL since before you were born."
 
 "Sir, you are aware that this is highly irregular!"
-
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether she enjoys her job.
 
 > z
 Sure, hang in there. I'm pretty sure that what we need here is to act as much like Professor Waterstone himself as humanly possible.
@@ -3492,7 +3488,7 @@ The snapping continues.
 
 "It's weird — you have a different face but the expressions are still yours. It's like you have a really good rubber mask on."
 
-/He (runs a hand over the small nozzles|knocks on the top of the T-inserter|stands back, regarding the T-inserter thoughtfully). "First we should see whether this thing can reify abstracts."
+/He (runs a hand over (the small nozzles|the brass plate)|knocks on the top of the T-inserter|stands back, regarding the T-inserter thoughtfully). "First we should see whether this thing can reify abstracts."
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) suggest we get out of here, complain about Brock's recklessness, or discover why Brock got stuck here. Maybe it's not worth it, though.
 

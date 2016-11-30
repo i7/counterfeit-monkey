@@ -2676,8 +2676,6 @@ She deflates momentarily and goes back to inspecting. "There's another problem. 
 
 She frowns. "Invitations to inspect highly secure machinery are not transferrable," she says. "And how should I know whether you stole it?"
 
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether she enjoys her job.
-
 [Your score has gone up by five points and is now seventy-eight.]
 
 > e
@@ -2698,8 +2696,6 @@ The secretary scowls. "Fine. I'll contact Waterstone." She places a call — on 
 "Yes I did," says Waterstone. "And I have been a research partner to DCL since before you were born."
 
 "Sir, you are aware that this is highly irregular!"
-
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether she enjoys her job.
 
 > z
 Sure, hang in there. I'm pretty sure that what we need here is to act as much like Professor Waterstone himself as humanly possible.
@@ -2887,7 +2883,7 @@ Brock touches some gel to the jigsaw. "Just in case someone out there is listeni
 > put gel on applet
 We dip out a pea-sized quantity of gel and rub it gently onto the applet. With an audible SPLORT, the applet becomes an apple. 
 
-/He('s studiously looking around the room| watches us with a slightly disturbing intentness in his eyes). "I've half a mind to explore a little while we're down here just about unsupervised," Brock says reflectively.
+/He('s studiously looking around the room| watches us with a slightly disturbing intentness in his eyes|'s looking at us, but when I look back, he cuts his eyes away). "I've half a mind to explore a little while we're down here just about unsupervised," Brock says reflectively.
 
 I glare at him.
 
@@ -2898,7 +2894,7 @@ I glare at him.
 > wave p-remover at apple
 We reset the device to p. The apple gives way to the now-familiar ale.
 
-/He (pauses, listening for noises outside|stands back, regarding the T-inserter thoughtfully|knocks on the top of the T-inserter). "Next it would be good to see if this thing can build animates."
+/He (pauses, listening for noises outside|stands back, regarding the T-inserter thoughtfully|knocks on the top of the T-inserter|cranes to look around at the back of the machine, but doesn't find anything interesting). "Next it would be good to see if this thing can build animates."
 
 > put ale in t-inserter
 There is a loud and satisfying pop from the machine as it turns the ale into a tale.
