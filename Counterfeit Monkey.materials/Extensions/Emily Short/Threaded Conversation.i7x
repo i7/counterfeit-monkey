@@ -1201,7 +1201,7 @@ Understand "topics" or "change the subject" or "change subject" as changing the 
 Check changing the subject:
 	if how-many-people-here is 0:
 		say "There is no one here to talk to." instead;
-	if the number of peripheral quips is 0:
+	if the number of peripheral quips in quip-repository is 0:
 		if the current interlocutor is nothing:
 			say "[We] [are] not talking to anyone at the moment." instead;
 		otherwise:
