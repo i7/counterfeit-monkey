@@ -2334,10 +2334,10 @@ Does the player mean subject-asking the hidden-ticket:
 Sanity-check buying the ticket from the player when location is cinema lobby:
 	try discussing buy movie-ticket instead.
 
-Sanity-check subject-asking the ticket when the current interlocutor is the ticket-taker:
+Sanity-check subject-asking or object-asking the ticket when the current interlocutor is the ticket-taker:
 	try discussing buy movie-ticket instead.
 
-Sanity-check subject-asking the hidden-ticket when the current interlocutor is the ticket-taker:
+Sanity-check subject-asking or object-asking the hidden-ticket when the current interlocutor is the ticket-taker:
 	try discussing buy movie-ticket instead.
 
 buy movie-ticket is a purchasing quip.
