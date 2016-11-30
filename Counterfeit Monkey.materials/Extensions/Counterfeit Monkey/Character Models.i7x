@@ -131,7 +131,7 @@ To find a suitable interlocutor:
 				if there is a human other person (called target human) enclosed by location:
 					try saying hello to target human;
 				otherwise:
-					let target animal be a random animal in location;
+					let target animal be a random animal enclosed by location;
 					try saying hello to target animal.
 
 Understand "buy [something]" as buying it from.
