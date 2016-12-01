@@ -1357,10 +1357,10 @@ To prepare (N - a person) as interlocutor:
 	unless N is not in location or predicted-interlocutor is N:
 		repeat with item running through things in the backup-repository:
 			if the item quip-supplies N:
-				move the item to the quip-repository;
+				now the item is in the quip-repository;
 		repeat with item running through things in the quip-repository:
 			if the item quip-supplies someone who is not N:
-				move the item to the backup-repository;
+				now the item is in the backup-repository;
 		now predicted-interlocutor is N.
 
 backup-repository is a container.
@@ -1371,10 +1371,10 @@ To set the current/-- interlocutor to (N - a person):
 		unless predicted-interlocutor is N:
 			repeat with item running through things in the backup-repository:
 				if the item quip-supplies the current interlocutor:
-					move the item to the quip-repository;
+					now the item is in quip-repository;
 			repeat with item running through things in the quip-repository:
 				if the item quip-supplies someone who is not the current interlocutor:
-					move the item to the backup-repository;
+					now the item is in the backup-repository;
 			now predicted-interlocutor is N.
 
 To reset the interlocutor:
