@@ -77,15 +77,9 @@ Instead of asking somebody to try thanking:
 	try thanking the person asked.
 
 Instead of thanking someone (this is the standard thanks redirection rule):
-	let N be a list of thanking quips;
-	repeat with Q running through thanking quips in quip-repository:
+	if there is a thanking quip (called Q) in quip-repository:
 		if Q quip-supplies the noun and Q is available:
-			add Q to N;
-	if the number of entries in N is positive:
-		if the number of entries in N is 1:
-			try discussing entry 1 of N;
-		otherwise:
-			recommend N;
+			try discussing Q;
 	otherwise:
 		say "[one of][We] have no reason to thank [the noun].[or]What [regarding the noun][have] [they] done for us lately?[or]For what?[at random]";
 
