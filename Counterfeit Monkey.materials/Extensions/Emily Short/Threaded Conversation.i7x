@@ -359,7 +359,7 @@ An availability rule for a quip (called the target) (this is the restriction of 
 			it is off-limits;
 	otherwise ]
 	if the target is a one-time quip and the current interlocutor recollects the target:
-		now target is in backup-repository;
+		[now target is in backup-repository;]
 		it is off-limits;
 	make no decision;
 
