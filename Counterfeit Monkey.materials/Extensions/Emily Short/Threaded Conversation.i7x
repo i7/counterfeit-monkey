@@ -1339,6 +1339,7 @@ Greeting type is a protocol type that varies. Greeting type is explicit.
 
 Farewell type is a protocol type that varies. Farewell type is explicit.
 
+
 [This is basically a speed hack to avoid both setting a new interlocutor and parsing conversation when processing the same command. Both of these are slow, and together they create a noticeable delay. So we cheat and "pre-set" the interlocutor if they player walks into one of the two rooms where there is someone to talk to who we don't automatically start a conversation with when entering.]
 
 [Of course, we don't actually speed anything up this way, we just make the slowness less noticeable by slicing it up. If the player decides not to talk to our assumed interlocutor, then we have only made things slower.]
