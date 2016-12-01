@@ -1474,11 +1474,11 @@ Does the player mean shooting something with the tub:
 Does the player mean shooting something with a pistol:
 	it is very likely.
 
-Does the player mean shooting the restoration gel with:
+[Does the player mean shooting the restoration gel with:
 	it is very unlikely.
 
 Does the player mean shooting the tub with:
-	it is very unlikely.
+	it is very unlikely.]
 
 Does the player mean doing something with the restoration-gel rifle:
 	it is unlikely.
@@ -1504,7 +1504,7 @@ Understand "shoot [something unwielded]" as shooting it with.
 Definition: a thing is unwielded if it is not a pistol enclosed by the player.
 
 Rule for supplying a missing second noun while shooting when the player carries a pistol (called the firearm) and the noun is not the firearm:
-	unless the noun is the restoration gel and the firearm is the restoration-gel rifle:
+	unless the noun is the restoration gel:
 		say "(with [the firearm])[command clarification break]";
 	now the second noun is the firearm.
 
