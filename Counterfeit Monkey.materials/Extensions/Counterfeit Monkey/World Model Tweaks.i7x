@@ -419,14 +419,9 @@ A first every turn rule (this is the make noisemakers make noise every turn rule
 The noisemaker is an object that varies. The noisemaker is initially nothing.
 
 This is the make noise rule:
-	if the player is in a car:
-		now everything enclosed by the holder of the player is marked for listing;
-	otherwise:
-		call the swift rule on everything in scope;
-	now the noisemaker is a random noisy marked for listing thing;
-	rapidly set all things not marked for listing;
-	if the noisemaker is something and the noisemaker is not in a closed container:
-		try listening to the noisemaker.
+	let noisemaker be The Noisy One;
+	if noisemaker is something:
+		try listening to noisemaker.
 
 Instead of listening to a room:
 	follow the make noise rule;
@@ -441,6 +436,53 @@ Report listening to a person:
 		say "I'm paying attention, don't worry." instead;
 	otherwise:
 		say "[We] hear some breathing, I guess. Nothing extraordinary." instead.
+
+To decide which object is The Noisy One:
+	(- FindNoiseMaker() -)
+
+Include (-
+
+[ FindNoiseMaker i o audible_ceiling noisemaker;
+	i = 0;
+
+	! Semi-dynamically create array
+	@push MarkedObjectArray;
+	MarkedObjectArray = RequisitionStack(10);
+		if (MarkedObjectArray == 0) return RunTimeProblem(RTP_LISTWRITERMEMORY);
+
+	noisemaker = nothing;
+
+	! Search the container of the player for noisy things
+	audible_ceiling = parent (player);
+	while (audible_ceiling ~= location && ~~(audible_ceiling has openable && audible_ceiling hasnt open))
+		audible_ceiling = parent(audible_ceiling);
+		for (o=child(audible_ceiling) : o : ) {
+
+		if ((o provides (+ noisy +)) && (o.(+ noisy +))) {
+			MarkedObjectArray --> i++ = o;
+			if (i == 10) jump NFound;
+		}
+		! Stop at closed containers
+		if (child(o) &&  ~~(o has openable && o hasnt open) ) o = child(o);
+		else
+			while (o) {
+				if (sibling(o)) { o = sibling(o); break; }
+				o = parent(o);
+				if (o == audible_ceiling) jump NFound;
+			}
+	}
+
+	!Pick a random noisy thing and return it
+	.NFound;
+	if ( i > 0)
+		noisemaker = MarkedObjectArray --> (random(i) - 1);
+	FreeStack(MarkedObjectArray);
+	@pull MarkedObjectArray;
+	return noisemaker;
+];
+
+-) after "ListWriter.i6t".
+
 
 Part 3 - Travel and the Map
 

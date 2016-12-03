@@ -1504,12 +1504,13 @@ The carton-sign is a sign. The carton-sign is part of the carton. The printed na
 In the large carton is a banana. The banana is edible. It is a vegetable. The description of the banana is "Just beginning to get brown and spotty."
 
 Instead of going to the Rectification Room when the large carton does not contain something noisy:
+	let noisemaker be The Noisy One;
 	let N be the number of entries in the path so far of the player;
 	if N is greater than 1:
 		say "[path-walked so far]";
 	otherwise:
 		clear the path-walked for the player;
-	say "[one of]Before [we] go through the door to the Rectification Room, it occurs to us that Professor Brown is just next door, and that he is likely to be able to hear if [we] do anything in there. Possibly some kind of masking noise is in order[or][if the player carries something noisy (called the mask)][The mask] [do] make noise, but you figure we should leave it out here in the hallway so that it will be louder than whatever we do in the room[otherwise]I defer to your judgment that [we] ought to provide some masking sound before proceeding[end if][stopping].".
+	say "[one of]Before [we] go through the door to the Rectification Room, it occurs to us that Professor Brown is just next door, and that he is likely to be able to hear if [we] do anything in there. Possibly some kind of masking noise is in order[or][if the noisemaker is something][The noisemaker] [do] make noise, but you figure we should leave [them] out here in the hallway so that it will be louder than whatever we do in the room[otherwise]I defer to your judgment that [we] ought to provide some masking sound before proceeding[end if][stopping].".
 
 Instead of dropping something in Samuel Johnson Basement when the heft of the noun is less than 4:
 	say "I'll just leave [regarding the noun][those] in the carton; less likely to be disturbed there.";
