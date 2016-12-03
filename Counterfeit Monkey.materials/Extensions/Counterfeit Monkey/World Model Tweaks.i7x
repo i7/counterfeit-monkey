@@ -1941,7 +1941,7 @@ Instead of inserting a long thing into the backpack:
 Instead of inserting a fluid thing into the backpack:
 	say "[The noun] [one of]would make a real mess[or]would just spill[at random]."
 
-Instead of inserting the pans into the backpack:
+Instead of inserting the iron-pans into the backpack:
 	say "There's nowhere near enough room."
 
 Section 2 - Clothing
