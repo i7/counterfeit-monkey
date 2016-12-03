@@ -127,7 +127,13 @@ Carry out going:
 After a fake person going, exiting, or entering when pursuing-state is true:
 	now the person asked is mentioned;
 	if the person asked is a cat:
-		add cat-sample to the incoming-list, if absent;
+		if cat-sample is listed in incoming-list:
+			now the printed name of cat-sample is "cats";
+			now the cat-sample is plural-named;
+		otherwise:
+			now the printed name of cat-sample is "cat";
+			now the cat-sample is singular-named;
+			add cat-sample to the incoming-list;
 	otherwise:
 		add the person asked to the incoming-list, if absent.
 
@@ -142,7 +148,7 @@ To report followers:
 	if the number of entries in the incoming-list is not 0:
 		let N be "[The incoming-list with definite articles]";
 		say "[N] " in sentence case;
-		say "[one of]trail[or]come[or]follow[or]walk[at random][if the number of entries in incoming-list is 1]s[end if] after us";
+		say "[one of]trail[or]come[or]follow[or]walk[at random][if the number of entries in incoming-list is 1 and entry 1 of incoming-list is not plural-named]s[end if] after us";
 		sort the incoming-list;
 		repeat through the Table of Animal Sets:
 			let group be the grouping entry;
