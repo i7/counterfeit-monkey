@@ -1384,7 +1384,7 @@ The Monumental Staircase is east of Park Center and north of Heritage Corner [an
 
 Meanwhile a staircase as wide as a street [if the former direction is west]ascends into this town square, with the fountain playing at the cen[ter][otherwise]descends east from the town square toward the harbor[end if]."
 
-Sanity-check going southeast from the Monumental Staircase:
+Sanity-check going southeast when location is Monumental Staircase:
 	try going east instead.
 
 Check waving the letter-remover at staircase-close-view when the current setting of the letter-remover is "i":
@@ -2122,6 +2122,9 @@ Sanity-check inserting something into the depluralizing cannon:
 
 Sanity-check entering the depluralizing cannon:
 	say "Col[our]ful as it would be to climb into the cannon and fire ourselves straight out to sea, this is not a viable option. I would have tried it before now if it were." instead.
+
+Sanity-check going down when location is Old Hexagonal Turret:
+	try facing south instead.
 
 Instead of facing south in Old Hexagonal Turret:
 	say "That way is mostly empty air, though if [we] look south and down over the edge, there is a vertiginous view down to the bottom of the monumental staircase. Tourists and natives are climbing up and down."
