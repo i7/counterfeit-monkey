@@ -1140,7 +1140,7 @@ We don't, of course. There are better things to do. More important places to go.
 /We (take|get|pick up|acquire) the bin. BUREAU PARKING, reads the bin, in thick black marker. DO NOT TAKE UNLESS AUTHORIZED.
 
 > go to antiques
-/(It's a quick drive away from the Bureau and back into the streets to Long Street South. There|At Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
+/(It's a quick drive away from the Bureau and back into the streets to Long Street South. There|(At|Once we get to) Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
 
 We show the appointment card, and are let in.
 
@@ -1227,7 +1227,7 @@ I think I know where we can get one, though. My advisor Professor Waterstone —
 [Your score has gone up by three points and is now forty-five.]
 
 > go to palm square
-/((We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short |quick)? )drive (over to|as far as|to) Long Street South. Then|(At|Once we get to) Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
+/((We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short |quick)? )drive (over to|as far as|to) Long Street South. (Then|There|(At|Once we get to) Long Street South)) we pull easily into one of the available parking spots, since many people have now gone home.
 
 Palm Square
 Now this is my part of town: Palm Square is the beginning of the university district. To the southeast, through the iron gate, is the university campus proper; and that unobtrusive little doorway directly south of us leads into the Babel Café.
@@ -1316,7 +1316,7 @@ I didn't think she'd noticed.
 
 I would like her to go on, but she doesn't: because it would be indiscreet, because she doesn't trust us.
 
-/(Mother appears to be meditating about the [a-z ]+|Mother spaces out a bit, contemplating the [a-z ]+).
+/Mother (appears to be meditating about the [a-z ]+|spaces out a bit, contemplating the [a-z ]+|stares absently at the [a-z ]+ for a moment).
 
 "Well," Mother says. "I had better go. If you do see Alex, tell him to call me, please. It isn't an emergency, but you can tell him there's a bit of Bureau business I'd like to discuss with him."
 
@@ -2854,7 +2854,7 @@ We already have that.
 
 There is a continuous angry whine from the jigsaw.
 
-/He (stands back, regarding the T-inserter thoughtfully|runs a hand over the (brass plate|small nozzles)|knocks on the top of the T-inserter|pauses, listening for noises outside). "First we should see whether this thing can reify abstracts."
+/He (stands back, regarding the T-inserter thoughtfully|runs a hand over the (brass plate|small nozzles)|knocks on the top of the T-inserter|pauses, listening for noises outside|runs his fingers over the surface of the machine, checking for hot spots). "First we should see whether this thing can reify abstracts."
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) suggest we get out of here, complain about Brock's recklessness, or discover why Brock got stuck here. Or, then again, there's always finishing the job.
 
