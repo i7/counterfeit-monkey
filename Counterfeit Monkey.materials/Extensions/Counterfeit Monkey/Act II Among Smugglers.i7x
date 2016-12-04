@@ -1339,6 +1339,10 @@ When protest-scenario ends in departure:
 	say "Traffic is starting to move again. We'd better get on to the dead drop.";
 	if a car (called target car) is in the location:
 		move the target car to the Roundabout;
+		if target car is open:
+			silently try closing target car;
+		if target car is quiet:
+			silently try switching on a random ignition which is part of target car;
 		try looking.
 
 Protest-scenario ends in early time-out when the teenagers are not in the location and the time of day minus the last irritation is at least five minutes.
