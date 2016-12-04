@@ -72,6 +72,8 @@ Include Threaded Conversation by Emily Short.
 
 Include Threaded Actions by Emily Short.
 
+Include Thanking by Counterfeit Monkey.
+
 A first after reading a command rule when how-many-people-here is positive (this is the replace ask X to rule):
 	if the player's command includes "where to find":
 		replace the matched text with "where there seems";
@@ -108,13 +110,6 @@ Rule for supplying a missing second noun while buying something from:
 		say "From whom should [we] buy [the noun]?";
 		stop the action.
 
-Rule for supplying a missing noun while thanking:
-	now the greeting type is implicit;
-	find a suitable interlocutor;
-	now noun is current interlocutor;
-	if noun is nothing:
-		say "Don't mention it. We're in this together.";
-		stop the action.
 
 To find a suitable interlocutor:
 	if the current interlocutor is nothing:
@@ -138,8 +133,6 @@ Understand "buy [something]" as buying it from.
 Understand "show [something]" as showing it to.
 Understand "give [something]" as giving it to.
 
-Before thanking the player:
-	say "Don't mention it. We're in this together." instead.
 
 Sanity-check buying something enclosed by the player from:
 	say "[We] already have [the noun]." instead;
