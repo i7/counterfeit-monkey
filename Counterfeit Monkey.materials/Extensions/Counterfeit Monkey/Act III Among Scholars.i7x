@@ -908,10 +908,7 @@ Rule for writing a paragraph about the department printer:
 		say "[The paper-drawer] stands open[if the paper-drawer is not surprising]. [end if][run paragraph on]";
 	while a surprising thing (called second special-target) is referenced by the current-paragraph:
 		carry out the disclosing contents activity with the second special-target;
-		now every thing contained by the second special-target is mentioned;
-		now every thing supported by the second special-target is mentioned;
-		now every thing held by the second special-target is mentioned;
-		now every thing which is part of the second special-target is mentioned;
+		rapidly set all immediate children of the second special-target mentioned;
 		now held-break is true;
 	if held-break is true:
 		say "[run paragraph on]";
@@ -1368,7 +1365,7 @@ After deciding the scope of player when the player is in Language Studies Depart
 	place Waterstone's Office in scope.
 
 A description-concealing rule when the location is the Language Studies Department Office:
-	now everything which is enclosed by Waterstone's Office is not marked for listing.
+	rapidly set all contents of Waterstone's Office not marked for listing.
 
 [Report Professor Waterstone closing office-door-1:
 	say "The office door closes with measured firmness behind us." instead.]

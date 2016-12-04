@@ -615,7 +615,7 @@ When Landing ends (this is the set us up on yacht rule):
 	now the initial appearance of Brock is "Brock is leaning against the railing, looking up at the town.";
 	record "returning to the yacht" as achieved;
 	complete "Return to yacht";
-	now everything enclosed by the player is marked for listing;
+	rapidly set all contents of the player marked for listing;
 	repeat with item running through marked for listing things:
 		if the item is part of something:
 			next;

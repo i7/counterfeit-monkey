@@ -481,7 +481,7 @@ Instead of taking inventory when current inventory listing style is tall:
 Instead of taking inventory when the current inventory listing style is wide:
 	if the player is empty, say "[We] [are] empty-handed." instead;
 	say "[We] [are] wearing ";
-	now all things enclosed by the player are unmarked for listing;
+	rapidly set all contents of the player not marked for listing;
 	now all things worn by the player are marked for listing;
 	if no things worn by the player are marked for listing, say "nothing special";
 	otherwise list the contents of the player, as a sentence, listing marked items only;

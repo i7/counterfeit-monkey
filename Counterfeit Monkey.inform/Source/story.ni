@@ -151,6 +151,7 @@ Include Viewpoint and Narrative Voice by Counterfeit Monkey.
 		•	Section 6 - The THINK verb ]
 	
 Include World Model Tweaks by Counterfeit Monkey.
+Include Custom Speedups by Counterfeit Monkey.
 Include Insides and Outsides by Counterfeit Monkey.
 Include Liquids by Counterfeit Monkey.
 Include Actions on Multiple Objects by Counterfeit Monkey.

@@ -43,12 +43,12 @@ A direction can be marked-visible or marked invisible.
 A region can be marked-visible or marked invisible.
 
 To mark the/-- visibility of (target - a thing) (this is scope caching):
-	now target is marked-visible;
+	rapidly set target marked visible.
 
 Caching scope something is an activity on objects.
 
 For caching scope of something (called viewer):
-	Now everything is marked invisible;
+	rapidly set everything marked invisible;
 	Iterate scope for viewer with scope caching.
 
 Chapter - When to Perform Scope Caching
@@ -93,7 +93,7 @@ A thing can be either seen or unseen. A thing is usually unseen.
 [ With the speed advantages of scope caching, we can now do more accurate accounting of what has actually been seen. ]
 
 After reading a command (this is the mark cached items as seen rule):
-	Now every marked-visible thing is seen.
+	rapidly set everything marked-visible as seen.
 
 The mark cached items as seen rule is listed last in the carry out looking rules.
 
