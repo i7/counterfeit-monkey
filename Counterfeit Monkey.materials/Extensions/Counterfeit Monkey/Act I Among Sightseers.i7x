@@ -1565,9 +1565,8 @@ A backpacking girl is an alert tourist woman in the dormitory room. She exhibits
 	The flexible appearance of the heavy pack is "A massively full pack leans against one of the beds."
 	Understand "tourist" as the backpacking girl.
 
-Check finding Lena:
-	if the subcommand of the noun matches the text "girl":
-		try finding the backpacking girl instead.
+Instead of finding a person when the subcommand of the noun matches the text "girl":
+	try finding the backpacking girl.
 
 Does the player mean finding the backpacking girl:
 	if player's command includes "girl":
@@ -2681,10 +2680,15 @@ At the time when sandcastle washes away:
 		say "[if the noun is the sandcastle or the second noun is the sandcastle]But our efforts are in vain, because an[otherwise]An[end if] especially forward wave slides up the beach and demolishes [if the noun is the sandcastle or the second noun is the sandcastle]the whole construction[otherwise]our poor sandcastle[end if].";
 	now the sandcastle is unbuilt;
 
+[Just to help the parser pick one]
+
+Does the player mean finding the museum exterior:
+	it is very likely.
+
 Instead of finding the sandcastle when the subcommand of the sandcastle matches the text "wall":
 	try approaching the old city walls.
 
-Instead of finding the museum exterior when the subcommand of the sandcastle matches the text "wall":
+Instead of finding the museum exterior when the subcommand of the museum exterior matches the text "wall":
 	try approaching the old city walls.
 
 Test sandcastle with "x castle / build castle / build sandcastle / look / smell castle / taste castle / touch castle / x castle / z".
