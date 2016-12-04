@@ -437,51 +437,74 @@ Report listening to a person:
 	otherwise:
 		say "[We] hear some breathing, I guess. Nothing extraordinary." instead.
 
+
 To decide which object is The Noisy One:
 	(- FindNoiseMaker() -)
 
 Include (-
 
+Array noisy_things --> 10;
+
 [ FindNoiseMaker i o audible_ceiling noisemaker;
 	i = 0;
-
-	! Semi-dynamically create array
-	@push MarkedObjectArray;
-	MarkedObjectArray = RequisitionStack(10);
-		if (MarkedObjectArray == 0) return RunTimeProblem(RTP_LISTWRITERMEMORY);
 
 	noisemaker = nothing;
 
 	! Search the container of the player for noisy things
 	audible_ceiling = parent (player);
-	while (audible_ceiling ~= location && ~~(audible_ceiling has openable && audible_ceiling hasnt open))
-		audible_ceiling = parent(audible_ceiling);
-		for (o=child(audible_ceiling) : o : ) {
 
-		if ((o provides (+ noisy +)) && (o.(+ noisy +))) {
-			MarkedObjectArray --> i++ = o;
-			if (i == 10) jump NFound;
-		}
-		! Stop at closed containers
-		if (child(o) &&  ~~(o has openable && o hasnt open) ) o = child(o);
-		else
-			while (o) {
-				if (sibling(o)) { o = sibling(o); break; }
-				o = parent(o);
-				if (o == audible_ceiling) jump NFound;
-			}
-	}
+	while (~~(audible_ceiling == location || (audible_ceiling has openable && audible_ceiling hasnt open)))
+		audible_ceiling = parent(audible_ceiling);
+
+	! We could be inside something noisy
+	if (audible_ceiling provides (+ noisy +) && audible_ceiling.(+ noisy +))
+		noisy_things --> i++ = audible_ceiling;
+
+	if (audible_ceiling provides component_child && audible_ceiling.component_child)
+			i = MyFindNoiseMakerLoop(audible_ceiling.component_child, i);
+
+	i = MyFindNoiseMakerLoop(child(audible_ceiling), i);
 
 	!Pick a random noisy thing and return it
-	.NFound;
 	if ( i > 0)
-		noisemaker = MarkedObjectArray --> (random(i) - 1);
-	FreeStack(MarkedObjectArray);
-	@pull MarkedObjectArray;
+		noisemaker = noisy_things --> (random(i) - 1);
+
 	return noisemaker;
 ];
 
--) after "ListWriter.i6t".
+[ MyFindNoiseMakerLoop start i o;
+
+	!loop through everything in start object
+	for (o=start : o : ) {
+
+		if (o provides (+ noisy +) && o.(+ noisy +)) {
+
+			if(i >= 10) return 9;
+			else
+				noisy_things --> i++ = o;
+				if(i == 10) return 9;
+		}
+
+		!Check any components recursively
+		if (o provides component_child && o.component_child)
+			i = MyFindNoiseMakerLoop(o.component_child, i);
+
+		! Don't look inside closed containers
+		if (child(o) &&  ~~(o has openable && o hasnt open) ) o = child(o);
+		else
+			while (o) {
+
+				if (sibling(o)) { o = sibling(o); break; }
+
+				o = parent(o);
+				if ( o == parent(start)) return i;
+
+			}
+	}
+	return i;
+];
+
+-).
 
 
 Part 3 - Travel and the Map
