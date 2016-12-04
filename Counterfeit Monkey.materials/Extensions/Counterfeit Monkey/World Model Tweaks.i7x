@@ -1270,6 +1270,9 @@ An ignition is a kind of device. One ignition is part of every car. Understand "
 
 The gas-gauge is a kind of thing. One gas-gauge is part of every car. The description is "[if the item described is part of a car that is fueled]It points over at the right, which must be Full[otherwise]It points all the way around at the left, or Empty[car-broken][end if]." The printed name of the gas-gauge is "gas gauge". Understand "gauge" or "gas gauge" as the gas-gauge.
 
+Before switching on an ignition which is part of an open car (called target car):
+	silently try closing target car.
+
 Check switching on an ignition which is part of an unfueled car:
 	say "[car-broken]There's no gas in the car; without fuel, it's not going far." instead.
 
