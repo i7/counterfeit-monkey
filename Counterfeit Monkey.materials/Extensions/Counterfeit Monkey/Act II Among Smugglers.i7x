@@ -1206,7 +1206,7 @@ Every turn when the player is in Traffic Circle:
 			say "The crowd is parting. We might be able to leave soon.";
 	if All-Purpose-Officer is enclosed by Traffic Circle and an unsuitable thing (called the target) is enclosed by the giant Atlantida statue:
 		if the target is the live branch and the All-Purpose-Officer carries the restoration-gel rifle:
-			say "[line break][The All-Purpose-Officer] fires the [restoration-gel rifle] at [the live branch], but the statue is holding it at a difficult angle. The gel splatters uselessly across [the huge-metal-arm].";
+			say "[The All-Purpose-Officer] fires the [restoration-gel rifle] at [the live branch], but the statue is holding it at a difficult angle. The gel splatters uselessly across [the huge-metal-arm].";
 		if the All-Purpose-Officer is not enclosed by the giant Atlantida statue:
 			try the All-purpose-officer entering the giant Atlantida statue;
 			make no decision;
@@ -1220,7 +1220,7 @@ Every turn when the player is in Traffic Circle:
 	otherwise:
 		if the All-Purpose-Officer is on the huge-metal-arm:
 			move the All-Purpose-Officer to the giant Atlantida statue;
-			say "[line break][The all-purpose-officer] begins to climb down.";
+			say "[The all-purpose-officer] begins to climb down.";
 			make no decision;
 		if the All-Purpose-Officer is on the giant Atlantida statue:
 			try the All-purpose-officer exiting;
@@ -1229,7 +1229,7 @@ Every turn when the player is in Traffic Circle:
 			try the All-Purpose-Officer taking the restoration-gel rifle;
 			make no decision;
 		if the player encloses the restoration-gel rifle:
-			say "[line break]The All-Purpose Officer, no longer distracted by the pressing business of tidying up the Atlantida statue, notices us with the rifle.
+			say "The All-Purpose Officer, no longer distracted by the pressing business of tidying up the Atlantida statue, notices us with the rifle.
 
 He has no qualms about hitting us with the diminutive affixer. It turns out that Alexandrette is a goldilocked poppet with a minimal capacity for self-def[ense] and no gun skills whatever. We're ignominiously [i]carried[/i] back to the Bureau and our subsequent trials are humiliation in a frilly pink dress.";
 			end the story saying "That was careless";
