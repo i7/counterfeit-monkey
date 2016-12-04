@@ -191,8 +191,7 @@ Include (-
 			c = obj.component_child;
 			while (c) {
 				give c mentioned;
-				if (c provides component_sibling)
-					c = c.component_sibling;
+				c = sibling(c);
 			}
 		}
 	];
