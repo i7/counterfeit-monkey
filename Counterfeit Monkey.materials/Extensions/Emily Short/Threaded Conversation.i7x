@@ -1400,11 +1400,6 @@ Check saying goodbye to something when the noun is not the current interlocutor 
 	otherwise:
 		say "You're not talking to [the noun]." instead.
 
-Check saying goodbye to someone:
-	if there is a thanking quip (called target) which quip-supplies the noun in quip-repository:
-		if target is available:
-			now target is unlisted;
-
 Carry out saying goodbye to something:
 	reset the interlocutor.
 
