@@ -1140,7 +1140,7 @@ We don't, of course. There are better things to do. More important places to go.
 /We (take|get|pick up|acquire) the bin. BUREAU PARKING, reads the bin, in thick black marker. DO NOT TAKE UNLESS AUTHORIZED.
 
 > go to antiques
-At Long Street South we pull easily into one of the available parking spots, since many people have now gone home.
+/(It's a quick drive away from the Bureau and back into the streets to Long Street South. There|At Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
 
 We show the appointment card, and are let in.
 
@@ -1177,7 +1177,7 @@ Kate removes the map from its case and packs it up carefully for us.
 > go to drinks club
 /((We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short |quick)? )drive (over to|as far as|to) Long Street North. (Then|There)|(Once we get to|At) Long Street North) we pull easily into one of the available parking spots, since many people have now gone home.
 
-/(Next|Then|After that) (we |we have a (brief|quick) |we make the( brief| quick)? |it's a( brief| quick)? )(walk|hike).
+/(Next|Then|After that|From there) (we |we have a (brief|quick|short) |we make the( brief| quick| short)? |it's a( brief| quick| short)? )(walk|hike).
 
 Fleur d'Or Drinks Club
 The back wall is dramatically decorated with bottled liquors of all sorts, from gin to cachaça; there's a giant bottle of Campari, taller than your average three-year-old, with a red ribbon around its neck.
@@ -1608,7 +1608,7 @@ They recently redid this room, and whoever picked the decorations had postmodern
 
 /Professor Higgate waits a little absent-mindedly nearby, looking over the bookshelf. (There|On the bookshelf) are History of the Standards Revolution and Lives of the Lexicographers( on the bookshelf)?.
 
-/A massive plexiglas case takes up one corner of the room. (There is|The plexiglas case contains) a compact but high-powered late model synthesizer( in the plexiglas case)?. 
+/A massive plexiglas case takes up one corner of the room. (There is|The plexiglas case contains|In the plexiglas case is) a compact but high-powered late model synthesizer( in the plexiglas case)?. 
 
 The big table at the center of the room is an irregular polygon, with one chair pushed up to the shortest side. I think the shape is intended to undermine traditional conceptions of academic hierarchy, but in practice it  just means that whoever gets to seminar late has to sit with a table angle jabbing him in the stomach.
 
@@ -1875,7 +1875,7 @@ We dip out a pea-sized quantity of gel and rub it gently onto the car. With an a
 There is a continuous angry whine from the jigsaw.
 
 > wave h-remover at chard
-/We reset the device to h. The chard gives way to the card. This time it's (Strength. A young nude lady lounges in the embrace of a giant squid. They are apparently on very good terms|Justice. A woman in a blue dress sits on a throne. She carries a letter-remover in one hand and her eyes are blind-folded|the Tower. It represents the Tower of Babel being struck by lightning. The top of the tower is falling over, and terrified builders run in every direction. In Atlantean terms it is the end of the world|Temperance. An official-looking man is operating a gigantic synthesizer. Out of its bottom fall a flood of oxymoronic figures: a dwarf elephant, a giant mouse, a bittersweet cake).
+/We reset the device to h. The chard gives way to the card. This time it's (Strength. A young nude lady lounges in the embrace of a giant squid. They are apparently on very good terms|Justice. A woman in a blue dress sits on a throne. She carries a letter-remover in one hand and her eyes are blind-folded|the Tower. It represents the Tower of Babel being struck by lightning. The top of the tower is falling over, and terrified builders run in every direction. In Atlantean terms it is the end of the world|Temperance. An official-looking man is operating a gigantic synthesizer. Out of its bottom fall a flood of oxymoronic figures: a dwarf elephant, a giant mouse, a bittersweet cake|the Fool. A shiftless young woman is carrying a loaded backpack, striding across a sunny landscape).
 
 There is a continuous angry whine from the jigsaw.
 
@@ -1892,7 +1892,7 @@ They recently redid this room, and whoever picked the decorations had postmodern
 
 /The bookshelves lining the walls contain the department library. (There|On the bookshelf) are The Problem of Adjectives, History of the Standards Revolution, and Lives of the Lexicographers( on the bookshelf)?.
 
-/A massive plexiglas case takes up one corner of the room. (In the plexiglas case is|There is|The plexiglas case contains) a compact but high-powered late model synthesizer( in the plexiglas case)?. (There|In the compact but high-powered late model synthesizer) are a key and a crossword( in the compact but high-powered late model synthesizer)?.
+/A massive plexiglas case takes up one corner of the room. (In the plexiglas case is|There is|The plexiglas case contains) a compact but high-powered late model synthesizer( in the plexiglas case)?. ((There|In the|The) compact but high-powered late model synthesizer) (are|contains) a key and a crossword( in the compact but high-powered late model synthesizer)?.
 
 The big table at the center of the room is an irregular polygon, with one chair pushed up to the shortest side. 
 
@@ -2861,13 +2861,13 @@ There is a continuous angry whine from the jigsaw.
 > put apple in t-inserter
 There is a loud and satisfying pop from the machine as it turns the apple into an applet.
 
-/An abstract representation. An anonymous browser window appears to hover in the air, currently (showing satellite footage of the big demonstration a few hours ago|playing a text-based web game).
+/An abstract representation. An anonymous browser window appears to hover in the air, currently (showing satellite footage of the big demonstration a few hours ago|playing a text-based web game|playing streaming video of a rally by the Atlantean Anti-Babel Party).
 
 There is a continuous angry whine from the jigsaw.
 
 "Right. It's good on abstracts, then," Brock says, contemplating the applet.
 
-Brock touches some gel to the jigsaw. "Just in case someone out there is listening." With an audible SPLORT, the jigsaw becomes a jigsaw. 
+/Brock touches some gel to the jigsaw. "(Just in case someone out there is listening|In the spirit of keeping the peace)." With an audible SPLORT, the jigsaw becomes a jigsaw. 
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) suggest we get out of here, complain about Brock's recklessness, or discover why Brock got stuck here. Or, then again, there's always finishing the job.
 
@@ -2922,11 +2922,11 @@ There are three small pops from the machine as it turns the ale into a tattle. T
 
 It is non-physical, but it sounds like a waspish playground voice recounting the sins of another child.
 
-/(An excited child's voice says, "Freddy made an underage twine purchase."|"Daddy, Timmy turned my bread into a bead!" tattles a childish voice.|A child's voice from the tattle says, "Mom! Timmy took the R out of my rice!")
+/(An excited child's voice says, "Freddy made an underage twine purchase."|"Daddy, Timmy turned my bread into a bead!" tattles a childish voice.|A child's voice from the tattle says, "Mom! Timmy took the R out of my rice!")?
 
 "The fact that it made the tale and the tattle means that the stabilization is inconsistent at best," Brock says. "And I don't see any min-max calibrator on the outside. Remind me to check the plans again when we get back to the yacht. They may not have tried to handle that problem at all."
 
-Brock touches some gel to the tattle. "In the spirit of keeping the peace." With an audible SPLORT, the tattle becomes an apple. 
+/Brock touches some gel to the tattle. "(In the spirit of keeping the peace|Just in case someone out there is listening)." With an audible SPLORT, the tattle becomes an apple. 
 
 > get all from t-inserter
 /We (take|get|pick up|acquire) the apple. Red-cheeked and rosy.
@@ -3086,7 +3086,7 @@ The functional area continues to the south, and the hallway is west.
 > put pass in punch
 You put the pass into the wire basket of the umlaut punch. There is a hum as the punch warms up, then a bang! as the tines come down sharply, tattooing the pass.
 
-/Briefly the pass appears as the (speed|art|power|thrash) metal band Päss, before fading back to itself: there just isn't enough energy to hold the conversion, given Päss's (fading|weak|dismal) (name-recognition|reputation). (They haven't been playing many clubs lately|The reunion tour wasn't a big success|They never really got out of their parents' basement).
+/Briefly the pass appears as the (speed|art|power|thrash) metal band Päss, before fading back to itself: there just isn't enough energy to hold the conversion, given Päss's (fading|weak|dismal|non-existent) (name-recognition|reputation). (They haven't been playing many clubs lately|The reunion tour wasn't a big success|They never really got out of their parents' basement).
 
 When they are gone, a power chord remains in the air.
 
