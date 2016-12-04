@@ -260,6 +260,16 @@ Carry out unslangoing:
 	now Slango recollects who we seem;
 	complete "Finally find Slango at Counterfeit Monkey".
 
+Understand "unlegend" as unlegending. Unlegending is an action out of world.
+
+Carry out unlegending:
+	now Arbot Maps & Antiques is visited;
+	now the legend is introduced;
+	assign "Trace Brock's movements at the antique shop" at Arbot Maps & Antiques;
+	complete "Trace Brock's movements at the antique shop";
+	try unmonkeying.
+	[This turns off certain movement restrictions that prevent the player from moving around the University and Alex's apartment when the player hasn't solved the legend puzzle.]
+
 
 [For testing what happens during combat attempts with Atlantida, without having to play through to this point ourselves.]
 Establishing longs is an action out of world. Understand "establish" as establishing longs.
