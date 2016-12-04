@@ -493,79 +493,8 @@ Instead of taking inventory when the current inventory listing style is wide:
 	otherwise list the contents of the player, as a sentence, tersely, giving brief inventory information, including contents, listing marked items only;
 	say ".[paragraph break]".
 
-Instead of taking inventory when the current inventory listing style is utilitarian:
-	if the player is empty, say "[We] [are] empty-handed." instead;
-	let the packed-list be a list of things;
-	let the unpacked-list be a list of things;
-	let paragraph break needed be false;
-	let essential-list be the list of all essential things enclosed by the player;
-	unless essential-list is empty:
-		if the number of entries in essential-list is 1:
-			say "[We] [are] equipped with [essential-list with indefinite articles] [--] an essential [we] mustn't part with. ";
-		otherwise:
-			say "[We] [are] equipped with the following essentials: [essential-list with indefinite articles].[no line break]";
-		remove backpack from essential-list, if present;
-		repeat with item running through essential-list:
-			if item is packed:
-				add item to packed-list;
-			otherwise:
-				add item to unpacked-list;
-		now paragraph break needed is true;
-	let inventory-list be a list of things;
-	repeat with item running through things enclosed by the player:
-		unless item is essential or item is part of something or item is restoration gel:
-			add item to inventory-list;
-			if item is packed:
-				add item to packed-list;
-			otherwise:
-				add item to unpacked-list;
-	unless inventory-list is empty:
-		if paragraph break needed is true: [if we have already listed things]
-			say "[paragraph break][We] [are] also carrying ";
-		else:
-			[if we only have non-essential items and are wearing them, just say that and skip the rest]
-			if everything enclosed by the player is worn:
-				say "[We] [are] wearing [a list of worn things *in the player]." instead;
-			else:
-				say "[We] [are] carrying ";
-		sort inventory-list in printed name order;
-		say "[inventory-list with indefinite articles].[no line break]";
-	if the the backpack is enclosed by the player:
-		let packed count be the number of entries in packed-list;
-		let unpacked count be the number of entries in unpacked-list;
-		if packed count is greater than unpacked count or (packed count is greater than 0 and packed count is less than 3):
-			if the unpacked count is 0 or the packed count is less than 3:
-				say "[paragraph break][if the packed count is less than 3][The list of things in the backpack] [are][else]Everything [we] carry is[end if] in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. ";
-			else:
-				say "[paragraph break]Everything [we] carry is in the backpack except [unpacked-list with definite articles]. The backpack is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. ";
-		else:
-			if the packed count is 0:
-				if unpacked count is greater than 1:
-					say "[paragraph break]None of that is in the backpack. [no line break]";
-					now paragraph break needed is true;
-			else:
-				say "[paragraph break]Of that collection, [packed-list with definite articles] [are] packed away in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. ";
-	if the player wears something:
-		say "[paragraph break][We] [are] wearing [the list of worn things *in the player]. ";
-		now paragraph break needed is true;
-	if paragraph break needed is true:
-		say paragraph break.
 
-Table of Ultratests
-topic (a topic)	stuff (a list of objects)	setting (a room)
-"newutility"	{ backpack, secret-plans, cate, lime, wig }	--
-
-Test newutility with "tutorial off / i / put all in backpack / i / wave l-remover at plans / put pans in backpack / i / put all in backpack / i / close backpack / i / x backpack / open backpack / x backpack / i / wear wig / i / wear monocle / i / drop backpack / i / x me" [holding the backpack and the secret-plans and the lime and the cate and the wig.]
-
-Definition: a thing is packed if it is enclosed by the backpack.
-
-After printing the name of something (called target) which is proffered by the secret-plans while taking inventory:
-	if the current inventory listing style is utilitarian and the target is not secret-plans:
-		say " (really the smuggled plans in disguise)".
-
-After printing the name of the tub while taking inventory:
-	if the current inventory listing style is utilitarian:
-		say " of restoration gel".
+Include Utilitarian Inventory by Counterfeit Monkey.
 
 
 Part 4 - Extras
