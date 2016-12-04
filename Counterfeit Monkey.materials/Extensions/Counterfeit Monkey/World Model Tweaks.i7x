@@ -1581,6 +1581,10 @@ Include Modern Conveniences by Emily Short.
 
 Include Postures by Emily Short.
 
+Sanity-check going up when the room up from the location is nothing:
+	if the player is not standing:
+		try taking position standing instead.
+
 Check going to a room when the player is not in the location:
 	while the player is not in the location:
 		let context be the holder of the player;
