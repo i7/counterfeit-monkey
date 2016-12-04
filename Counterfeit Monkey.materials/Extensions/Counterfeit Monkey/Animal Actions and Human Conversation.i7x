@@ -459,6 +459,9 @@ whether the Origin Paste seems interesting is a demonstration quip.
 Instead of a criminal person discussing whether origin paste seems interesting:
 	say "[The current interlocutor] [open] [their] mouth, then [think] better of answering and just shrugs non-committally."
 
+Availability rule for whether the Origin Paste seems interesting:
+	if the location is Counterfeit Monkey and the Origin Paste is not won, it is off-limits.
+
 whether the letter-remover means anything is a weakly-phrased demonstration quip.
 	It mentions letter-remover.
 	The comment is "[demonstration of the letter-remover]".
@@ -3451,6 +3454,9 @@ whether he hath seen slango is a questioning quip.
 	It quip-supplies the barman.
 	It is restrictive.
 
+A plausibility rule for whether he hath seen slango when game is in progress and origin paste is not won:
+	it is implausible.
+
 challenge Parker about the rum is a performative quip.
 	The comment is "'Must be a different Slango,' we say. 'Mine is more of a root beer man. Thanks anyway though[slango-friendship].'".
 	It mentions Slango.
@@ -3565,6 +3571,8 @@ give up is a performative quip.
 	The reply is "He grins and shrugs sympathetically. 'Bad luck.'".
 	It quip-supplies the barman ]
 
+Understand "pick [something]" as showing it to when the location is Counterfeit Monkey and the game is in progress.
+
 To say game-coaching:
 	if the wager is the player:
 		say "[one of]'Just pick something you've got on you and show it to me to establish your bet.'[no line break][or]'Have you picked a wager object yet?'[no line break][or]The barman waits for you to show him your wager object.[no line break][stopping][run paragraph on]";
@@ -3608,7 +3616,7 @@ Instead of showing something (called the item) to the barman when the wager is n
 		choose a row with a selected rule of wager-judging rule in the Table of Wager Suggestions;
 		say "'[one of]That doesn't fit the category[or][personal no][or][awkward no][at random],' says [the barman]. [summary entry][paragraph break]".
 
-Every turn when the location is Counterfeit Monkey and the wager is not the player:
+Every turn when the location is Counterfeit Monkey and the wager is not the player and the paste is not won:
 	repeat with item running through things which are proffered by the wager:
 		if the item is marked-visible:
 			now the proposed solution is the item;
@@ -3620,7 +3628,7 @@ Every turn when the location is Counterfeit Monkey and the wager is not the play
 				now the wager is the player.
 
 wager-accepted is an NPC-directed quip.
-	The reply is "'Right,' says [the barman]. '[The wager-name] it is.' [paragraph break]He turns towards the group assembled around the dartboard. 'Anyone want to defend against this character?' (with a nod at you). [paragraph break][wager-choice]".
+	The reply is "'[if the wager is the origin paste]That's original[otherwise]Right[end if],' says [the barman]. '[The wager-name] it is.' [paragraph break]He turns towards the group assembled around the dartboard. 'Anyone want to defend against this character?' (with a nod at you). [paragraph break][wager-choice]".
 
 wager-won is an NPC-directed quip.
 	The reply is "'A winner!' says the barman, straightening up. 'What do you know? The Origin Paste is all yours, darling.'[paragraph break]This produces a squawk of surprise and irritation from the defendant, and you get the impression that this game has been agreeably fleecing tourists all day. Pity you had to come along and spoil it.";
