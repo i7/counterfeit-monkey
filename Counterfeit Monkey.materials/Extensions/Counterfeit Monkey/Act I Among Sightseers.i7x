@@ -2091,6 +2091,8 @@ Instead of putting the restoration gel on the defaced ashlar block:
 Rule for listing exits when looking in Old City Walls:
 	do nothing instead.
 
+Understand "climb wall/walls" as a mistake ("You have to say in which direction you want to go.").
+
 In-direction of Old City Walls is east. [Into the old hexagonal turret]
 
 Turret-view is a facade in Old City Walls. It fronts east. It is scenery. The printed name is "turret". Understand "old" or "hexagonal" or "tower" or "turret" as turret-view. The description is "The turret extends to the east. It's one of the best preserved pieces of the old wall."
