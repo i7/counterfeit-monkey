@@ -3646,7 +3646,7 @@ The tick is an insect. The description of the tick is "A flat, black, blood-suck
 
 [The tick is a problem. It's technically an animal, but it shouldn't act like animals act because it's too small. In fact, it's so small that it's not realistic for the player to be able to hold onto it for long. Fortunately, though, the stick isn't an essential item in the game, so we can afford to lose it. This is one place where I have Alex really step in and take some action if the player doesn't do something: either we change the tick back into the sticky in a few moves, or we lose it.]
 
-Tick-removal is a scene. Tick-removal begins when the tick is enclosed by the location.
+Tick-removal is a scene. Tick-removal begins when the tick is marked-visible.
 
 Every turn during tick-removal:
 	say "[one of]That is, of course, if it doesn't attach to our skin and give us Lyme disease[or]I guess what I'm trying to say here is that I don't want our very own pet tick[or]...Okay, sorry, there's something I just need to do here. Blame my phobias if you will[stopping]."
