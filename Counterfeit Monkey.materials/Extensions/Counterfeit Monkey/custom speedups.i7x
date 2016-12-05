@@ -116,10 +116,10 @@ Include (-
 	];
 
 	[ MyUnsetWorkFlagLoop first o;
-			
+
 		for (o=first : o : ) {
 			give o ~workflag;
-			
+
 			if (o provides component_child && o.component_child)
 				MyUnsetWorkFlagLoop (o.component_child);
 
@@ -156,9 +156,6 @@ Include (-
 		}
 	];
 
-		!Array KindHierarchy --> K0_kind (0) K1_room (0) K2_thing (0) K3_direction (0) 		
-		!K4_door (2) K5_container (2) K6_supporter (2) K7_backdrop (2) K8_person 
-
 	[ MyAllSetMarkedInvisible obj;
 		for (obj=IK2_First: obj: obj=obj.IK2_Link) {
 			give obj ~(+ marked-visible +);
@@ -183,16 +180,12 @@ Include (-
 		}
 	];
 
-
 	[ MyAllNearChildrenSetMentioned obj c;
-		c = child(obj);
-		while (c) {
+		for (c=child(obj): c :c=sibling(c))
 			give c mentioned;
-			c = sibling(c);
-		}
-		if (obj provides component_child && obj.component_child) {
-			c = obj.component_child;
-			while (c) {
+
+		if (obj provides component_child && obj.component_child)
+			for (c=obj.component_child: c :c = sibling(c))
 				give c mentioned;
 	];
 
