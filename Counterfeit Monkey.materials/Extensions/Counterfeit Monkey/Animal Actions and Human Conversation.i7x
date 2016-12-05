@@ -1324,6 +1324,9 @@ The generic confrontational of the bartender is "wait up there".
 
 Understand "ask [bartender] for [any bartender-carried thing]" as requesting it from (with nouns reversed).
 
+Instead of giving something that is not the roll of bills to the bartender:
+	try showing the noun to the bartender.
+
 Instead of showing the screwdriver to the bartender:
 	try requesting the screwdriver from the bartender.
 Instead of showing the screwdrivers to the bartender:
