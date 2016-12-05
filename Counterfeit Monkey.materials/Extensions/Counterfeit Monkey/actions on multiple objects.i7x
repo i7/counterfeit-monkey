@@ -105,9 +105,9 @@ Definition: a thing is single put on only:
 		yes;
 	if it is enclosed by the display case:
 		yes;
-	if it is enclosed by a car and the location is traffic circle:
+	if the location is traffic circle and it is enclosed by a car:
 		no;
-	if it is not enclosed by the player and the location is privately-controlled:
+	if the location is privately-controlled and it is not enclosed by the player:
 		yes.
 
 
@@ -228,11 +228,12 @@ Definition: a thing is single insert only:
 		yes;
 	if it is enclosed by the display case:
 		yes;
-	if it is a car and the location is traffic circle:
-		no;
-	if it is enclosed by a car and the location is traffic circle:
-		no;
-	if it is not enclosed by the player and the location is privately-controlled:
+	if the location is traffic circle:
+		if it is a car:
+			no;
+		if it is enclosed by a car:
+			no;
+	if the location is privately-controlled and it is not enclosed by the player:
 		yes.
 
 [The things listed in this table gives a single custom reply when trying to put all on them.]
