@@ -1505,7 +1505,7 @@ Sanity-check going to the Rectification Room when a noisy unleavable thing (call
 	say "We real[ize] that we don't want to leave [the target] unattended after all."
 
 Instead of going to the Rectification Room when the large carton does not contain something noisy:
-	now noisemaker is a random noisy not essential thing enclosed by location;
+	now the noisemaker is a random noisy not essential thing enclosed by location;
 	let N be the number of entries in the path so far of the player;
 	if N is greater than 1:
 		say "[path-walked so far]";

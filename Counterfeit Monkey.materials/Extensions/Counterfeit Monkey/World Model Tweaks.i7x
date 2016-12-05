@@ -416,12 +416,12 @@ A first every turn rule (this is the make noisemakers make noise every turn rule
 	otherwise:
 		follow the make noise rule.
 
-The noisemaker is an object that varies. The noisemaker is initially nothing.
+The noisemaker is an object that varies.
 
 This is the make noise rule:
-	let noisemaker be The Noisy One;
-	if noisemaker is something:
-		try listening to noisemaker.
+	now the noisemaker is find noisy thing;
+	if the noisemaker is something:
+		try listening to the noisemaker.
 
 Instead of listening to a room:
 	follow the make noise rule;
@@ -438,7 +438,7 @@ Report listening to a person:
 		say "[We] hear some breathing, I guess. Nothing extraordinary." instead.
 
 
-To decide which object is The Noisy One:
+To decide which object is find noisy thing:
 	(- FindNoiseMaker() -)
 
 Include (-

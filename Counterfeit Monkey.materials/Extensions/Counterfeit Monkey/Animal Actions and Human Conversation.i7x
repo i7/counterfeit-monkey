@@ -4870,7 +4870,7 @@ A Brock-suggestion rule when  "Test T-inserter on making abstracts" is completed
 			try Brock discussing still-cool;
 			rule succeeds.
 
-A Brock-suggestion rule when a noisy thing is enclosed by location:
+A Brock-suggestion rule when find noisy thing is something:
 	try Brock discussing interference-gelling;
 	rule succeeds.
 
@@ -5092,7 +5092,7 @@ getting-crowded is an NPC-directed quip.
 	The reply is "[one of]Brock steps to the side to make room for [the list of fake people *in location][or]'We're going to need to install stadium seating in here,' Brock comments, nodding at [the list of fake people *in location][or]'If any guards come, we can use [the random fake person in location] as a decoy,' Brock remarks[at random]."
 
 After Brock discussing interference-gelling:
-	let interference be a random noisy thing enclosed by the location;
+	let the interference be find noisy thing;
 	say "[if the prior named object is Brock]He[otherwise]Brock[end if] touches some gel to [the interference]. '[one of]Just in case someone out there is listening[or]In the spirit of keeping the peace[at random].' [run paragraph on]";
 	gel-convert the interference;
 
