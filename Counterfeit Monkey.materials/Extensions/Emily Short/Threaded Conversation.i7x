@@ -115,7 +115,7 @@ Mentioning relates various quips to various things. The verb to mention implies 
 
 Part Two - Quip Relations to Speakers
 
-Quip-supplying relates various quips to various people. The verb to quip-supply (it quip-supplies, they quip-supply, it quip-supplied, it is quip-supplied) implies the quip-supplying relation.
+Quip-supplying relates various quips to a person. The verb to quip-supply (it quip-supplies, they quip-supply, it quip-supplied, it is quip-supplied) implies the quip-supplying relation.
 
 Definition: a quip is character-tailored rather than universally-applicable if it quip-supplies someone.
 
@@ -1356,12 +1356,7 @@ A last carry out looking rule when the location is Hesychius Street:
 
 To prepare (N - a person) as interlocutor:
 	unless N is not in location or predicted-interlocutor is N:
-		repeat with item running through things in the backup-repository:
-			if the item quip-supplies N:
-				now the item is in the quip-repository;
-		repeat with item running through things in the quip-repository:
-			if the item quip-supplies someone who is not N:
-				now the item is in the backup-repository;
+		sort quips for N;
 		now predicted-interlocutor is N.
 
 backup-repository is a container.
@@ -1370,12 +1365,7 @@ To set the current/-- interlocutor to (N - a person):
 	unless the current interlocutor is N:
 		now the current interlocutor is N;
 		unless predicted-interlocutor is N:
-			repeat with item running through things in the backup-repository:
-				if the item quip-supplies the current interlocutor:
-					now the item is in quip-repository;
-			repeat with item running through things in the quip-repository:
-				if the item quip-supplies someone who is not the current interlocutor:
-					now the item is in the backup-repository;
+			sort quips for current interlocutor;
 			now predicted-interlocutor is N.
 
 To reset the interlocutor:

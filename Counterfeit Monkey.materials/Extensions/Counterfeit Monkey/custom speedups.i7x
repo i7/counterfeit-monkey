@@ -63,6 +63,9 @@ To rapidly set (n - an object) marked visible:
 To rapidly set everything marked-visible as seen:
 	(- MySetAllMarkedVisibleAsSeen(); -).
 
+To sort quips for (n - a person):
+	(- MySortQuips({n}); -).
+
 
 Include (-
   
@@ -191,11 +194,31 @@ Include (-
 			c = obj.component_child;
 			while (c) {
 				give c mentioned;
-				c = sibling(c);
-			}
-		}
 	];
 
+	[ MySortQuips interl q next;
+		for (q = child((+backup-repository+)): q :q=next) {
+			next = sibling (q);
+			if (q provides (+ the quip-supplying relation storage +) && q.(+ the quip-supplying relation storage +) == interl)
+				move q to (+ quip-repository +);
+		}
+		for (q = child((+quip-repository+)): q :q=next) {
+			next = sibling (q);
+			if (q provides (+ the quip-supplying relation storage +) && q.(+ the quip-supplying relation storage +) && q.(+ the quip-supplying relation storage +) ~= interl )
+				move q to (+ backup-repository +);
+		}
+
+	];
+
+	[ quipsay q;
+		if (q provides short_name && q.short_name)
+					print (TEXT_TY_Say) q.short_name;
+				else
+					if (q provides description && q.description)
+						print (TEXT_TY_Say) q.description;
+					else
+						print q;
+	];
 
 -) after "Definitions.i6t".
 
