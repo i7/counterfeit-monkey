@@ -486,7 +486,7 @@ Array noisy_things --> 10;
 		}
 
 		!Check any components recursively
-		if (o provides component_child && o.component_child)
+		if (o.component_child)
 			i = MyFindNoiseMakerLoop(o.component_child, i);
 
 		! Don't look inside closed containers

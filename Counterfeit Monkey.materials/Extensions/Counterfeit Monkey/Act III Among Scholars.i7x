@@ -1505,13 +1505,12 @@ Sanity-check going to the Rectification Room when a noisy unleavable thing (call
 	say "We real[ize] that we don't want to leave [the target] unattended after all."
 
 Instead of going to the Rectification Room when the large carton does not contain something noisy:
-	now the noisemaker is a random noisy not essential thing enclosed by location;
 	let N be the number of entries in the path so far of the player;
 	if N is greater than 1:
 		say "[path-walked so far]";
 	otherwise:
 		clear the path-walked for the player;
-	say "[one of]Before [we] go through the door to the Rectification Room, it occurs to us that Professor Brown is just next door, and that he is likely to be able to hear if [we] do anything in there. Possibly some kind of masking noise is in order[or][if the noisemaker is something][The noisemaker] [do] make noise, but you figure we should leave [them] out here in the hallway so that it will be louder than whatever we do in the room[otherwise]I defer to your judgment that [we] ought to provide some masking sound before proceeding[end if][stopping].".
+	say "[one of]Before [we] go through the door to the Rectification Room, it occurs to us that Professor Brown is just next door, and that he is likely to be able to hear if [we] do anything in there. Possibly some kind of masking noise is in order[or][if the noisemaker is something and the noisemaker is not the alterna-snap][The noisemaker] [do] make noise, but you figure we should leave [them] out here in the hallway so that it will be louder than whatever we do in the room[end if][if the noisemaker is the alterna-snap][The alterna-snap] does make noise, but we'd rather not leave it unattended out here[end if][if the noisemaker is nothing]I defer to your judgment that [we] ought to provide some masking sound before proceeding[end if][stopping].".
 
 Instead of dropping something in Samuel Johnson Basement when the heft of the noun is less than 4:
 	say "I'll just leave [regarding the noun][those] in the carton; less likely to be disturbed there.";
