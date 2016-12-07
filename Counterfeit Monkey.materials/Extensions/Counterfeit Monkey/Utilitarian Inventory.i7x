@@ -67,8 +67,7 @@ Instead of taking inventory when the current inventory listing style is utilitar
 
 
 Table of Inventory Ordering
-appearance	referent	holder	listable container
-text	a thing	a thing	a thing
+appearance (text)	referent (a thing)	holder (a thing)	listable container (a thing)
 with 100 blank rows.
 
 
