@@ -263,12 +263,10 @@ The disappointment text is some text that varies.
 [The jury is still out on whether this could ever happen when using the other letter-transformation tools.]
 
 To decide what thing is the substitute from (matchlist - a list of things) (this is the intelligent substitution rule):
-	let L be the number of entries in matchlist;
-	if L is greater than 1:
+	if the number of entries in matchlist is greater than 1:
 		let high-scorers be a list of things;
 		let high-score be 0;
-		repeat with N running from 1 to L:
-			let contender be entry N in matchlist;
+		repeat with contender running through matchlist:
 			let scr be 500;
 			let prof-list be the list of things that proffer contender;
 			remove contender from prof-list, if present;
