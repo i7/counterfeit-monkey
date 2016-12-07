@@ -2523,7 +2523,7 @@ The snapping continues.
 A glowing series of numbers and figures in the air, which changes and flickers now and then. Probably responding to its surroundings. It seems unstable just now.
 
 > go to rectification room
-/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) (as far as|over to|to) Samuel Johnson Basement. I defer to your judgment that we ought to provide some masking sound before proceeding.
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) (as far as|over to|to) Samuel Johnson Basement. The snap does make noise, but we'd rather not leave it unattended out here.
 
 
 Samuel Johnson Basement
@@ -3490,26 +3490,28 @@ The snapping continues.
 
 /He (runs a hand over (the small nozzles|the brass plate)|knocks on the top of the T-inserter|stands back, regarding the T-inserter thoughtfully). "First we should see whether this thing can reify abstracts."
 
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) suggest we get out of here, complain about Brock's recklessness, or discover why Brock got stuck here. Maybe it's not worth it, though.
+
 
 > z
 Time passes.
 
-/Brock touches some gel to the snap. [a-zA-Z\"\. ]+. With an audible SPLORT, the snap becomes some plans. 
-
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) suggest we get out of here, complain about Brock's recklessness, or discover why Brock got stuck here. Or, then again, there's always finishing the job.
-
-> gel ink
-We just touch a coated fingertip of gel to the ink. With an audible SPLORT, the ink becomes a sink. 
+/(Brock touches some gel to the snap. [a-zA-Z\"\. ]+. With an audible SPLORT, the snap becomes some plans.)?
 
 "I didn't have time to run the tests I wanted to run on the T-inserter. It'll take three minutes and then we can go. We need to do abstracts, animates, and a stability check."
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) insist on leaving immediately or accept Brock's lunacy. Or, then again, there's always finishing the job.
 
+> gel ink
+We just touch a coated fingertip of gel to the ink. With an audible SPLORT, the ink becomes a sink. 
+
+The sink is far too large for us to carry, and falls onto the ground.
+
+/(He (cranes to look around at the back of the machine, but doesn't find anything interesting|runs a hand over the small nozzles). "If it can't do abstracts, the market value is going to be a lot lower because of the limited-depth trees.")?
+
+/(We could|I'd like to|We want to|I'm inclined to|My response would be to) complain about Brock's recklessness or discover why Brock got stuck here. (Maybe it's not worth it, though|Or, then again, there's always finishing the job).
+
 > wave k-remover at sink
 We reset the device to k. With a distinct whiff of sulfur, the sink turns into a sin. An abstract representation of carelessness with resources, represented by the wasteful use of a great deal of clean water.
-
-/(He cranes to look around at the back of the machine, but doesn't find anything interesting. "If it can't do abstracts, the market value is going to be a lot lower because of the limited-depth trees.")?
 
 /("I know there's no time," he says. "But there are supposed to be all sorts of things in the Bureau sub-basement that have never seen the light of day. DCL projects that went wrong, secret government experiments, possibly a buried command center.")?
 
@@ -3518,7 +3520,6 @@ We reset the device to k. With a distinct whiff of sulfur, the sink turns into a
 There are two small pops from the machine as it turns the sin into a stint.
 
 The flickering images represent a period of time spent in the military: a young person in a uniform, smartly waving goodbye to hazily-sketched parents; a duration of training and mostly boring patrol work; release from service, with a few mild commendations and some pocket money.
-
 
 "Right. It's good on abstracts, then," Brock says, contemplating the stint.
 
@@ -3728,7 +3729,7 @@ The functional area continues to the south, and the hallway is west.
 > put pass in punch
 I put the pass into the wire basket of the umlaut punch. There is a hum as the punch warms up, then a bang! as the tines come down sharply, tattooing the pass.
 
-/Briefly the pass appears as the (art|thrash|death) metal band Päss, before fading back to itself: there just isn't enough energy to hold the conversion, given Päss's (weak|non-existent) (name-recognition|reputation). The(y never really got out of their parents' basement.|y haven't been playing many clubs lately| reunion tour wasn't a big success).
+/Briefly the pass appears as the (art|thrash|death|speed) metal band Päss, before fading back to itself: there just isn't enough energy to hold the conversion, given Päss's (weak|non-existent) (name-recognition|reputation). The(y never really got out of their parents' basement|y haven't been playing many clubs lately| reunion tour wasn't a big success).
 
 When they are gone, a power chord remains in the air.
 

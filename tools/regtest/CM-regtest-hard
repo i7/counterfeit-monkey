@@ -1316,7 +1316,7 @@ I didn't think she'd noticed.
 
 I would like her to go on, but she doesn't: because it would be indiscreet, because she doesn't trust us.
 
-/Mother (appears to be meditating about the [a-z ]+|spaces out a bit, contemplating the [a-z ]+|stares absently at the [a-z ]+ for a moment).
+/Mother (appears to be meditating about the [a-z ]+|spaces out a bit, contemplating the [a-z ]+|stares absently at the [a-z ]+ for a moment|looks faintly bewildered).
 
 "Well," Mother says. "I had better go. If you do see Alex, tell him to call me, please. It isn't an emergency, but you can tell him there's a bit of Bureau business I'd like to discuss with him."
 
@@ -1368,7 +1368,7 @@ My bathroom window remains vulnerably open.
 Babel Café
 Through many changes of management, this institution has fed the denizens of the university and ignored their semi-sedition.
 
-/A clerk in a white apron stands behind the long glass case. (In the long glass case|There) are a pocket-bread and a honey pastry triangle( in the long glass case)?.
+/A clerk in a white apron stands behind the long glass case. ((In the long glass case|There) are|The long glass case contains) a pocket-bread and a honey pastry triangle( in the long glass case)?.
 
 The tables are square wooden things painted dark blue (not the vibrant blue of the Bureau, but something closer to midnight), and the upper surfaces are découpaged with antique travel postcards. 
 
@@ -1474,7 +1474,7 @@ He looks up at us gravely. "I don't believe we've met," he says. "Can I help you
 
 "Sadly, it is our misfortune constantly to encounter people with no concept of what language manipulation can and cannot do," Waterstone says. He really seems to be in a bad mood today, even for him: maybe a fight with the wife, or a nasty letter from the dean.
 
-There's a brief pause. "Look, I really must work on this," says Waterstone, chasing us to the door. "Perhaps someone else in the department can answer a few of your questions. I believe I saw Professor Higgate earlier, and Professor Brown is usually in his lab downstairs. I'm sure he's not working on anything too urgent. Goodbye!"
+/(There's a brief pause. )?"Look, I really must work on this," says Waterstone, chasing us to the door. "Perhaps someone else in the department can answer a few of your questions. I believe I saw Professor Higgate earlier, and Professor Brown is usually in his lab downstairs. I'm sure he's not working on anything too urgent. Goodbye!"
 
 The office door closes with measured firmness behind us.
 
@@ -2867,34 +2867,38 @@ There is a continuous angry whine from the jigsaw.
 
 "Right. It's good on abstracts, then," Brock says, contemplating the applet.
 
-/Brock touches some gel to the jigsaw. "(Just in case someone out there is listening|In the spirit of keeping the peace)." With an audible SPLORT, the jigsaw becomes a jigsaw. 
+"I didn't have time to run the tests I wanted to run on the T-inserter. It'll take three minutes and then we can go. We need to do abstracts, animates, and a stability check."
 
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) suggest we get out of here, complain about Brock's recklessness, or discover why Brock got stuck here. Or, then again, there's always finishing the job.
+/(We could|I'd like to|We want to|I'm inclined to|My response would be to) insist on leaving immediately or accept Brock's lunacy. Or, then again, there's always finishing the job.
 
 [Your score has gone up by one point and is now seventy-nine.]
 
 > get applet
 /We (take|get|pick up|acquire) the applet.
 
-"I didn't have time to run the tests I wanted to run on the T-inserter. It'll take three minutes and then we can go. We need to do abstracts, animates, and a stability check."
+There is a continuous angry whine from the jigsaw.
 
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) insist on leaving immediately or accept Brock's lunacy. Or, then again, there's always finishing the job.
-
-> put gel on applet
-We dip out a pea-sized quantity of gel and rub it gently onto the applet. With an audible SPLORT, the applet becomes an apple. 
-
-/He('s studiously looking around the room| watches us with a slightly disturbing intentness in his eyes|'s looking at us, but when I look back, he cuts his eyes away). "I've half a mind to explore a little while we're down here just about unsupervised," Brock says reflectively.
+/Brock( is studiously looking around the room| watches us with a slightly disturbing intentness in his eyes|'s looking at us, but when I look back, he cuts his eyes away| is looking at everything but us). "I've half a mind to explore a little while we're down here just about unsupervised," Brock says reflectively.
 
 I glare at him.
 
 "I know there's no time," he says. "But there are supposed to be all sorts of things in the Bureau sub-basement that have never seen the light of day. DCL projects that went wrong, secret government experiments, possibly a buried command center."
 
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask what buried command center he heard of. Or, then again, there's always finishing the job.
+/(We could|I'd like to|We want to|I'm inclined to|My response would be to) complain about Brock's recklessness, discover why Brock got stuck here, or ask what buried command center he heard of. Or, then again, there's always finishing the job.
+
+> put gel on applet
+We dip out a pea-sized quantity of gel and rub it gently onto the applet. With an audible SPLORT, the applet becomes an apple. 
+
+There is a continuous angry whine from the jigsaw.
+
+/He (pauses, listening for noises outside|stands back, regarding the T-inserter thoughtfully|knocks on the top of the T-inserter|cranes to look around at the back of the machine, but doesn't find anything interesting). "Next it would be good to see if this thing can build animates."
 
 > wave p-remover at apple
 We reset the device to p. The apple gives way to the now-familiar ale.
 
-/He (pauses, listening for noises outside|stands back, regarding the T-inserter thoughtfully|knocks on the top of the T-inserter|cranes to look around at the back of the machine, but doesn't find anything interesting). "Next it would be good to see if this thing can build animates."
+There is a continuous angry whine from the jigsaw.
+
+Brock touches some gel to the jigsaw. "Just in case someone out there is listening." With an audible SPLORT, the jigsaw becomes a jigsaw. 
 
 > put ale in t-inserter
 There is a loud and satisfying pop from the machine as it turns the ale into a tale.
@@ -3086,7 +3090,7 @@ The functional area continues to the south, and the hallway is west.
 > put pass in punch
 You put the pass into the wire basket of the umlaut punch. There is a hum as the punch warms up, then a bang! as the tines come down sharply, tattooing the pass.
 
-/Briefly the pass appears as the (speed|art|power|thrash) metal band Päss, before fading back to itself: there just isn't enough energy to hold the conversion, given Päss's (fading|weak|dismal|non-existent) (name-recognition|reputation). (They haven't been playing many clubs lately|The reunion tour wasn't a big success|They never really got out of their parents' basement).
+/Briefly the pass appears as the (speed|art|power|thrash|folk) metal band Päss, before fading back to itself: there just isn't enough energy to hold the conversion, given Päss's (fading|weak|dismal|non-existent) (name-recognition|reputation). (They haven't been playing many clubs lately|The reunion tour wasn't a big success|They never really got out of their parents' basement).
 
 When they are gone, a power chord remains in the air.
 
