@@ -2767,7 +2767,7 @@ Report the roc going north from Abandoned Shore:
 
 Roc-soaring is a scene. Roc-soaring begins when roc-flight ends. Roc-soaring ends when the time since roc-soaring began is 2 minutes.
 
-Sanity-check doing something other than examining or looking during roc-soaring:
+Sanity-check doing something other than acting fast during roc-soaring:
 	say "I don't know about you, but I don't dare do anything but hang on." instead.
 
 Sanity-check going somewhere during roc-soaring:
