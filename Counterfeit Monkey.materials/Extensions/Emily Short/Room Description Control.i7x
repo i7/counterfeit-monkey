@@ -10,12 +10,10 @@ Include Complex Listing by Emily Short. [Include version 4 of Plurality by Emily
 The new object description rule is listed instead of the room description paragraphs about objects rule in the carry out looking rules.
 
 When play begins (this is the mark every thing as unmentioned when play begins rule):
-	[now every thing is unmentioned.]
-	rapidly set all things not mentioned.
+	now every thing is unmentioned.
 	
 Before reading a command (this is the mark everything unmentioned rule):
-	[now every thing is unmentioned.]
-	rapidly set all things not mentioned.
+	now every thing is unmentioned.
 
 This is the new object description rule:
 	follow the description-priority rules.
@@ -23,8 +21,7 @@ This is the new object description rule:
 The description-priority rules are a rulebook.
 
 A description-priority rule (this is the marking rule):
-	[now every thing is not marked for listing;]
-	rapidly set all things not marked for listing;
+	now every thing is not marked for listing;
 	call the swift rule on everything in scope.
 
 A description-priority rule (this is the mentioning tedious things rule):
@@ -96,18 +93,10 @@ Definition: a thing is mentionable if it is marked for listing and it is unmenti
 
 Definition: a thing is descriptively dull if the description-rank of it is lowest-rank.
 
-
-
 [This portion makes sure that items that are listed together in groups get properly flagged 'mentioned':]
 
 After printing the plural name of something (called target):
-	repeat with item running through things held by the holder of target
-	begin; 
-		if the item nominally matches the target
-		begin;
-			now the item is mentioned;
-		end if;
-	end repeat;
+	set clones of target mentioned.
 
 To decide whether (X - a thing) nominally matches (Y - a thing):
 	(- ({X}.list_together == {Y}.list_together) -)
