@@ -5182,7 +5182,8 @@ Sanity-check kissing my mother:
 Instead of waiting in the presence of my mother:
 	say "[beat][line break][paragraph break]".
 
-Definition: a thing is apartmental if it is in my apartment.
+To decide which object is apartmental stuff:
+	(- ApartmentalThing() -)
 
 Rule for beat-producing when the current interlocutor is my mother:
 	[carry out the caching scope activity with my mother;]
@@ -5203,7 +5204,7 @@ Rule for beat-producing when the current interlocutor is my mother:
 	otherwise if a switched on thing (called danger) is marked-visible:
 		try my mother switching off the danger;
 	otherwise:
-		let target be a random apartmental thing which is not a person ;
+		let target be apartmental stuff;
 		if target is something:
 			try my mother examining the target;
 		else:
@@ -5273,7 +5274,10 @@ Report my mother examining a book which is not enclosed by the player:
 	say "Mother pages through [the noun], eyebrows raised.[run paragraph on]" instead.
 
 Report my mother examining something:
-	say "Mother [one of]stares absently at [the noun] for a moment[or]spaces out a bit, contemplating [the noun][or]appears to be meditating about [the noun][at random].[run paragraph on]" instead.
+	let I be "[the noun]";
+	if the noun is enclosed by the player:
+		now I is "our [noun]";
+	say "Mother [one of]stares absently at [I] for a moment[or]spaces out a bit, contemplating [I][or]appears to be meditating about [I][at random].[run paragraph on]" instead.
 
 Sanity-check going from My Apartment when confrontation-with-mother has not happened:
 	move my mother to the location instead.
