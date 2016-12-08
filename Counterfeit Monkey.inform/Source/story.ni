@@ -154,7 +154,8 @@ Include World Model Tweaks by Counterfeit Monkey.
 
 Include Room Description Speedups by Counterfeit Monkey.
 Include Custom Speedups by Counterfeit Monkey.
-Include Conversation Routines by Counterfeit Monkey.
+Include Conversation Speedups by Counterfeit Monkey.
+
 Include Insides and Outsides by Counterfeit Monkey.
 Include Liquids by Counterfeit Monkey.
 Include Actions on Multiple Objects by Counterfeit Monkey.

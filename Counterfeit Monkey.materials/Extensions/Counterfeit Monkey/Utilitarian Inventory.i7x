@@ -194,7 +194,6 @@ Include (-
 Global inventory_count = 0;
 Global packed_count = 0;
 Global essential_count = 0;
-Global subject_count = 0;
 
 Constant ESSENTIALS		= 1;
 Constant INESSENTIALS		= 2;

@@ -634,7 +634,7 @@ Understand "herself" as a woman when the item described is the current interlocu
 
 Definition: a person is talk-eligible if it is the current interlocutor.
 
-The quip-repository is a privately-named proper-named transparent closed unopenable  container. The printed name of the quip-repository is "[player]".
+The quip-repository is a privately-named proper-named transparent closed unopenable container. The printed name of the quip-repository is "[player]".
 
 When play begins (this is the move all quips to the quip-repository rule):
 	now every quip that is not npc-directed is in the quip-repository;
@@ -675,12 +675,6 @@ Understand
 
 Does the player mean discussing a listed-plausible quip:
 	it is very likely.
-
-[Does the player mean discussing a demonstration quip:
-	it is very unlikely.
-
-Does the player mean discussing an offering quip:
-	it is very unlikely.]
 
 After reading a command when the current interlocutor is not nothing and player's command includes "ask/tell/a/t" and the player's command includes "about" and the player's command does not include "ask/tell/a/t about" (this is the strip interlocutor from input rule):
 	if the player's command includes "[someone talk-eligible]":
@@ -724,8 +718,6 @@ Section 1c - Object-asking and subject-asking
 
 [Subject-asking handles asking about subjects mentioned by available quips. Not to be confused with object-asking below, which handles asking about ordinary present objects in the game world. These are separate actions for performance reasons.]
 
-[Understand "ask about/for/-- [any current-quip-subject thing]" or "tell about/that/-- [any current-quip-subject thing]" as subject-asking when predicted-interlocutor is something. Subject-asking is an action applying to one visible thing.]
-
 Understand "ask about/for/-- [thing]" or "tell about/that/-- [thing]" as subject-asking when predicted-interlocutor is something. Subject-asking is an action applying to one visible thing.
 
 A quip has a list of objects called the mentions-list.
@@ -755,12 +747,6 @@ After deciding the scope of the player when the action name part of current acti
 After deciding the scope of the player while subject-asking:
 	repeat with N running from 1 to subject count:
 		place subject-number N in scope.
-
-[Definition: a thing is current-quip-subject:
-	repeat with N running from 1 to subject count:
-		if it is subject-number N:
-			yes;
-	no.]
 
 Carry out subject-asking:
 	if the noun is marked-visible:
@@ -1249,10 +1235,8 @@ Section 1 - Reparse after chatting
 Definition: a person is talk-ineligible if it is not talk-eligible.
 
 Understand "ask [someone talk-ineligible] about [a thing]" as starting a conversation with it about.
-[Understand "ask [someone talk-ineligible] about [any current-quip-subject thing]" as starting a conversation with it about.]
 Understand "ask [someone talk-ineligible] for [a thing]" as starting a conversation with it about.
 Understand "tell [someone talk-ineligible] about [a thing]" as starting a conversation with it about.
-[Understand "tell [someone talk-ineligible] about [any current-quip-subject thing]" as starting a conversation with it about.]
 
 Starting a conversation with it about is an action applying to two visible things.
 

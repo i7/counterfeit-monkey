@@ -1,4 +1,4 @@
-Conversation Routines by Counterfeit Monkey begins here.
+Conversation Speedups by Counterfeit Monkey begins here.
 
 Use authorial modesty.
 
@@ -31,8 +31,21 @@ Table of Current Subjects
 viable-subject (a thing)
 with 70 blank rows.
 
+
+
+Subject count is a number that varies. 
+The subject count variable translates into I6 as "subject_count".
+
+
 Include (-
-	
+
+Global subject_count = 0;
+
+-) after "Definitions.i6t".
+
+
+Include (-
+
 	[ PopulateSubjectsTable quip col;
 		subject_count=0;
 		for (quip = child((+quip-repository+)): quip :quip=sibling (quip))
@@ -42,8 +55,6 @@ Include (-
 	];
 	
 	[ WriteSubjects quip list i subject col no_items;
-		!print "Writing subjects for quip ", (quipsay) quip,".^";
-		!print "Inital number of subjects: ", subject_count, ".^";
 		list = quip.(+ mentions-list +);
 		no_items = BlkValueRead(list, LIST_LENGTH_F);
 		for (i=0: i<no_items: i++ ) {
@@ -51,13 +62,9 @@ Include (-
 			subject_count++;
 			if (subject_count > 70)
 				print_ret "ERROR: More than 70 available subjects!^";
-		!	print "Writing subject: ", (quipsay) subject, ".^";
-			!TableLookUpEntry( (+ Table of Current Subjects +), 1, subject_count, 1, subject);	
+				
 			((+ Table of Current Subjects +)-->1)-->(subject_count+COL_HSIZE) = subject;
-	
 		}
-		!print "Final number of subjects: ", subject_count, ".^";
-
 	];
 
 	[ MyMentions quip item list i no_items;
@@ -153,7 +160,5 @@ Include (-
 
 -).
 
-Subject count is a number that varies. 
-The subject count variable translates into I6 as "subject_count".
 
-Conversation Routines ends here.
+Conversation Speedups ends here.
