@@ -492,14 +492,14 @@ Carry out listing all sizes:
 [ The mentioning relation broke horribly when porting from 6G60 because some quips had locations listed as mentioned. The compiler seemed to accept it, but instead a long list of random things were suddenly mentioned by the quip. Use this to test if it happens again. ]
 
 [Understand "list mentions" as listing-subjects. Listing-subjects is an action out of world. Carry out listing-subjects:
-		show relation mentioning relation.
+		show relation mentioning relation.]
 
 Understand "list available subjects" as listing-available-subjects. Listing-available-subjects is an action out of world. Carry out listing-available-subjects:
 	let subject-list be a list of subjects;
 	repeat with Q running through available quips in quip-repository:
-		repeat with S running through things mentioned by Q:
+		repeat with S running through mentions-list of Q:
 			add S to subject-list, if absent;
-	say "[subject-list in brace notation]".]
+	say "[subject-list in brace notation]".
 
 Understand "list quips" as listing-quips. Listing-quips is an action out of world.
 Carry out listing-quips:
