@@ -1061,6 +1061,11 @@ She fiddles with her keys for a moment before finding the right one. 'Here you g
 	record "gaining access to the synthesizer" as achieved;
 	stop the action.
 
+A description-concealing rule when the location is Language Studies Seminar Room:
+	repeat with N running from 1 to subject count:
+		unless subject-number N is enclosed by Seminar Room:
+			now subject-number N is not marked for listing;
+
 	[say "[reply of the noun][paragraph break]";
 	try Professor Higgate exiting;
 	say "'After you,' says Higgate. 'I assume it's safe to leave for a minute; if anyone is coming for Lojban Tea we'll see them in the hall.' [run paragraph on]";

@@ -73,6 +73,27 @@ Carry out buying something from someone (this is the standard purchasing rule):
 Listing recommended quips is an activity.
 
 To recommend (chosen list - a list of things):
+	let high-scorers be a list of things;
+	let high-score be 0;
+	repeat with contender running through chosen list:
+		let scr be 0;
+		if contender is listed-plausible:
+			increase scr by 3;
+		if contender is marked-relevant:
+			increase scr by 1;
+		if contender is content-relevant:
+			increase scr by 1;
+		if contender indirectly-follows the current quip:
+			increase scr by 3;
+		if scr is high-score:
+			add contender to high-scorers;
+		otherwise:
+			[This is the new highest score. Clean out the old ones.]
+			now high-score is scr;
+			now high-scorers is {};
+			add contender to high-scorers;
+	if the number of entries in high-scorers is 1:
+		try discussing entry 1 of high-scorers instead;
 	empty out the Table of Scored Listing;
 	repeat with item running through chosen list:
 		choose a blank row in the Table of Scored Listing;
@@ -144,22 +165,17 @@ Instead of giving something to someone (this is the default commenting on offere
 		carry out the refusing comment by activity with the second noun.
 	
 Availability rule for an offering quip (called target) (this is the can't give if the mentioned thing is not possessed rule):
-	let mentioned-is-carried be false;
-	repeat with item running through things which are mentioned by target:
-		if item is a subject or the item is enclosed by the player:
-			now mentioned-is-carried is true;
-	if mentioned-is-carried is false:
-		it is off-limits;
-	make no decision.
+	repeat with item running through mentions-list of target:
+		if item is enclosed by the player:
+			make no decision;
+	it is off-limits.
+
 	
 Availability rule for a demonstration quip (called target) (this is the can't show if the mentioned thing is invisible rule):
-	let mentioned-is-present be false;
-	repeat with item running through things which are mentioned by target:
-		if item is a subject or the item is enclosed by the location:
-			now mentioned-is-present is true;
-	if mentioned-is-present is false:
-		it is off-limits;
-	make no decision.
+	repeat with item running through mentions-list of target:
+		if item is enclosed by the location:
+			make no decision;
+	it is off-limits.
 
 Threaded Actions ends here.
 

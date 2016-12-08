@@ -359,6 +359,8 @@ Sanity-check going to a privately-controlled room in Official grounds:
 		say "If [we] [are] going to try to get into the Bureau, [we][']ll need a pass and a reason for entry, and [we] should probably hide most of our possessions[if the player carries something bureau-allowed]. It's fine to have [the list of bureau-allowed things enclosed by the player], and our[otherwise]Our[end if] hair and clothing probably won't be closely searched, but anything illegal or weird, or anything an authentication scope would identify as fake, like [the list of visible bureau-disallowed things enclosed by the player], will need to be smuggled inside something else." instead; ]
 	if a fake person (called ringer) is in the location:
 		say "[The ringer] would probably give us away if [they] followed us. Best take care of that first." instead;
+	[if the noisemaker is something:
+		say "[The noisemaker] might give us away. Better take care of [them] first." instead;]
 	continue the action.
 
 Section 7 - Antechamber
