@@ -305,17 +305,15 @@ Check going west from the Tin Hut:
 The storage-exterior is in the Fish Market. The printed name is "tin building". Understand "tin" or "hut" or "building" or "rusting" or "corrugated" as storage-exterior. It fronts east. The initial appearance is "Just east of here is a rusting corrugated tin building, which was built to house various possessions of the fishermen."
 	The description is "It looks very much as though it would like to fall down, but it has not done so yet."
 
-Sanity-check doing something in the presence of the Authenticator:
-	if looking:
-		make no decision;
-	otherwise if going east:
+Sanity-check doing something other than acting fast when the Authenticator is in location:
+	if going east:
 		make no decision;
 	otherwise if going inside:
 		make no decision;
 	otherwise if approaching the tin hut:
 		make no decision;
 	otherwise:
-		if the authenticator is police:
+		if authenticator-warning is true:
 			if waiting:
 				make no decision;
 			say "The movement catches her attention. She stares at us for a long moment. I have a moment's hope she's going to look away again, but something we're wearing or carrying tips her off. A moment later and she's signalled a backup officer to detain us.";
@@ -328,9 +326,6 @@ Sanity-check doing something in the presence of the Authenticator:
 				say "This is too dangerous [--] [we][']ve got to get under cover before she sees us." instead.
 
 Authenticator-warning is a truth state that varies.
-
-Before reading a command when authenticator-warning is true:
-	now authenticator is police.
 
 Before going east in the presence of the Authenticator:
 	say "While the Authenticator's back is turned, we slip inside..."
