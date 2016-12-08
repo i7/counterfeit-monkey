@@ -142,9 +142,14 @@ Test Brock-fully with "test Brock-bed / test Brock-bed / test Brock-bed / test B
 
 Brock-bed is a memory. The max is 5. The printed name is "how it started with Brock". Understand "how" or "it" or "started" or "with" or "brock" as brock-bed.
 
-Carry out discussing a quip which mentions brock:
+Carry out discussing a Brock-mentioning quip:
 	trigger Brock-bed.
 
+Definition: a quip is Brock-mentioning if it Brock-mentions.
+
+To decide whether (q - a quip) Brock-mentions:
+	(- ( MyMentions({q}, (+ Brock +)) ) -).
+	
 Carry out examining a bed:
 	trigger Brock-bed.
 

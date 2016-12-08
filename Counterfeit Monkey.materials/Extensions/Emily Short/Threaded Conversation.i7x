@@ -106,7 +106,7 @@ Book II - Quip Relations
 
 Part One - Quip Relations to Things
 
-Mentioning relates various quips to various things. The verb to mention implies the mentioning relation.
+[Mentioning relates various quips to various things. The verb to mention implies the mentioning relation.]
 
 [Understand "[something related by mentioning]" as a quip.]
 [	This apparently humble line means that we can define a quip with the line "It mentions the queen." and then the player can use any vocabulary that pertains to the queen to raise this quip;	]
@@ -436,10 +436,10 @@ Listing plausible quips is an activity.
 A quip can be listed-plausible or unlisted-plausible.
 
 Before listing plausible quips (this is the initialize quip plausibility before hinting rule):
-	now every quip in quip-repository is unlisted-plausible.
+	rapidly set all unlisted-plausible.
 
 Before asking which do you mean (this is the initialize quip plausibility before disambiguating rule):
-	now every quip in quip-repository is unlisted-plausible.
+	rapidly set all unlisted-plausible.
 
 After printing the name of a quip (called target) while asking which do you mean (this is the mark disambiguated quips plausible rule):
 	now the target is listed-plausible.
@@ -523,21 +523,16 @@ The offer hint quips rule is listed after the adjust light rule in the turn sequ
 [	Thus, the game doesn't have to reassess availability on the fly, during plausibility tests or during parsing.	]
 [	On the other hand, it means that we should not test availability or plausibility on our own without first calling this rule.	]
 This is the relabel available quips rule:
-	if how-many-people-here is positive:
-		repeat with item running through things in the quip-repository:
-			if item is available:
-				now item is flagged-ready;
-			otherwise:
-				now item is flagged-unready.
-				[* This means that we can also remove things from the quip-repository in order to skip considering them; if for instance we only want to consider quips relevant to the current scene, or the current character.]
+	rapidly relabel available quips.
+	[* This means that we can also remove things from the quip-repository in order to skip considering them; if for instance we only want to consider quips relevant to the current scene, or the current character.]
 
 A quip can be flagged-ready or flagged-unready.
 
 The relabel available quips rule is listed after the adjust light rule in the turn sequence rules. [The rule needs to appear late in the turn sequence so that if for instance a change of scene changes the identity of the current interlocutor, the quips are correctly labeled based on that information.]
 
 Last when play begins (this is the setting the stage for play rule):
-	now the current quip is generic-quip;
-	follow the relabel available quips rule.
+	now the current quip is generic-quip.
+	[follow the relabel available quips rule.]
 
 
 Book 5 - Disambiguation
@@ -612,9 +607,10 @@ Does the player mean discussing something marked-relevant (this is the keep in t
 		make no decision;
 	it is likely. [we can rely on the marked-relevance because we will have reset this just before reading the command which we're now trying to interpret: so game-state will not have changed.]
 
-Definition: a quip is content-relevant if it mentions something which is mentioned by the current quip.
 
-Definition: a quip is content-irrelevant if it is not content-relevant.
+Definition: a quip is content-relevant if it shares a subject with the current quip.
+
+Definition: a quip is content-irrelevant unless it shares a subject with the current quip.
 
 Does the player mean discussing something content-irrelevant (this is the make most natural transitions rule):
 	if thrashing-hopelessly is true:
@@ -638,18 +634,12 @@ Understand "herself" as a woman when the item described is the current interlocu
 
 Definition: a person is talk-eligible if it is the current interlocutor.
 
-The quip-repository is a privately-named proper-named transparent closed unopenable scenery container. The printed name of the quip-repository is "[player]".
+The quip-repository is a privately-named proper-named transparent closed unopenable  container. The printed name of the quip-repository is "[player]".
 
 When play begins (this is the move all quips to the quip-repository rule):
-	now every quip that is not npc-directed is in the quip-repository.
-
-Rule for writing a paragraph about the quip-repository:
-	do nothing instead.
-
-Rule for disclosing contents of the quip-repository:
-	do nothing instead.
-
-A ranking rule for the quip-repository: decrease description-rank of the quip-repository by 100.
+	now every quip that is not npc-directed is in the quip-repository;
+	sort quips for attendant.
+	[now every character-tailored quip is in the backup-repository.]
 
 Book 2 - The Discussing Action
 
@@ -685,6 +675,12 @@ Understand
 
 Does the player mean discussing a listed-plausible quip:
 	it is very likely.
+
+[Does the player mean discussing a demonstration quip:
+	it is very unlikely.
+
+Does the player mean discussing an offering quip:
+	it is very unlikely.]
 
 After reading a command when the current interlocutor is not nothing and player's command includes "ask/tell/a/t" and the player's command includes "about" and the player's command does not include "ask/tell/a/t about" (this is the strip interlocutor from input rule):
 	if the player's command includes "[someone talk-eligible]":
@@ -722,15 +718,49 @@ Understand
 Understand the command "a" as "ask".
 Understand the command "t" as "tell".
 
-Understand "[a flagged-ready performative quip]" as discussing. [This originally read "a flagged-ready performative quip"; let's see if this greater permissiveness breaks anything...]
+Understand "[a flagged-ready quip]" as discussing. [This originally read "a flagged-ready performative quip"; let's see if this greater permissiveness breaks anything...]
 
 Section 1c - Object-asking and subject-asking
 
 [Subject-asking handles asking about subjects mentioned by available quips. Not to be confused with object-asking below, which handles asking about ordinary present objects in the game world. These are separate actions for performance reasons.]
 
-Understand "ask about/for/-- [any current-quip-subject thing]" or "tell about/that/-- [any current-quip-subject thing]" as subject-asking when predicted-interlocutor is something. Subject-asking is an action applying to one visible thing.
+[Understand "ask about/for/-- [any current-quip-subject thing]" or "tell about/that/-- [any current-quip-subject thing]" as subject-asking when predicted-interlocutor is something. Subject-asking is an action applying to one visible thing.]
 
-Definition: a thing is current-quip-subject if it is mentioned by a quip in quip-repository.
+Understand "ask about/for/-- [thing]" or "tell about/that/-- [thing]" as subject-asking when predicted-interlocutor is something. Subject-asking is an action applying to one visible thing.
+
+A quip has a list of objects called the mentions-list.
+
+When play begins:
+	repeat with I running through cars:
+		add I to mentions-list of where there seems garage, if absent;
+		add I to mentions-list of whether car be fixed, if absent;
+		add I to mentions-list of why the car does not run, if absent;
+		add I to mentions-list of where there seems a car, if absent;
+		add I to mentions-list of where there seems a car-2, if absent;
+	repeat with I running through oils:
+		add I to mentions-list of whether the oil seems interesting, if absent;
+		add I to mentions-list of whether car be fixed, if absent;
+		add I to mentions-list of whether the oil will work, if absent;
+		add I to mentions-list of check out this oil, if absent;
+		add I to mentions-list of check out this oil-1, if absent;
+		add I to mentions-list of where oil might be, if absent;
+		add I to mentions-list of we'll find some, if absent;
+	repeat with I running through odes:
+		add I to mentions-list of calm Lena, if absent.
+
+After deciding the scope of the player when the action name part of current action is the starting a conversation with it about action:
+	repeat with N running from 1 to subject count:
+		place subject-number N in scope.
+
+After deciding the scope of the player while subject-asking:
+	repeat with N running from 1 to subject count:
+		place subject-number N in scope.
+
+[Definition: a thing is current-quip-subject:
+	repeat with N running from 1 to subject count:
+		if it is subject-number N:
+			yes;
+	no.]
 
 Carry out subject-asking:
 	if the noun is marked-visible:
@@ -739,7 +769,7 @@ Carry out subject-asking:
 	if the current interlocutor is nothing:
 		say "[We] [aren't] talking to anyone." instead;
 	let N be a list of quips;
-	repeat with Q running through quips in quip-repository:
+	repeat with Q running through things in quip-repository:
 		if Q mentions the noun and Q is available:
 			add Q to N;
 	if the number of entries in N is positive:
@@ -749,7 +779,7 @@ Carry out subject-asking:
 			recommend N instead;
 	say "[The current interlocutor] [don't] [one of]seem interested in talking[or][have] anything to say[at random] about [the noun] at the moment."
 
-Understand "ask about/for/-- [a thing]"  or "tell about/that/-- [a thing]" as object-asking when predicted-interlocutor is something. Object-asking is an action applying to one visible thing.
+[Understand "ask about/for/-- [a thing]"  or "tell about/that/-- [a thing]" as object-asking when predicted-interlocutor is something.] Object-asking is an action applying to one visible thing.
 
 [Object-asking is meant as a catch-all for asking about unimplemented present things. Not to be confused with subject-asking above.]
 
@@ -759,7 +789,7 @@ Carry out object-asking:
 		say "[We] [aren't] talking to anyone." instead;
 	let purchase-quip be nothing;
 	let N be a list of quips;
-	repeat with Q running through quips in quip-repository:
+	repeat with Q running through things in quip-repository:
 		if Q mentions the noun:
 			if Q is a purchasing quip:
 				now purchase-quip is Q;
@@ -1219,10 +1249,10 @@ Section 1 - Reparse after chatting
 Definition: a person is talk-ineligible if it is not talk-eligible.
 
 Understand "ask [someone talk-ineligible] about [a thing]" as starting a conversation with it about.
-Understand "ask [someone talk-ineligible] about [any current-quip-subject thing]" as starting a conversation with it about.
+[Understand "ask [someone talk-ineligible] about [any current-quip-subject thing]" as starting a conversation with it about.]
 Understand "ask [someone talk-ineligible] for [a thing]" as starting a conversation with it about.
 Understand "tell [someone talk-ineligible] about [a thing]" as starting a conversation with it about.
-Understand "tell [someone talk-ineligible] about [any current-quip-subject thing]" as starting a conversation with it about.
+[Understand "tell [someone talk-ineligible] about [any current-quip-subject thing]" as starting a conversation with it about.]
 
 Starting a conversation with it about is an action applying to two visible things.
 
