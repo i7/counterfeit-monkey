@@ -713,7 +713,7 @@ To clear all/the/-- path-walked for (worker - yourself):
 
 [There are some places that are inappropriate to enter at certain times. We want to block both going and approaching these rooms; otherwise the parser will might let us walk halfway there before blocking progress, which is unclassy.]
 
-Sanity-check going to a room (called target):
+Sanity-check going to a room (called target) when the player is staid:
 	abide by the room-restriction rules for the target.
 
 Sanity-check approaching a room (called target):
