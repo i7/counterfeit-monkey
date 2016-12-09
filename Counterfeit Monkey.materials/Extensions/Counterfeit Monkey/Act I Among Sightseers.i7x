@@ -2419,7 +2419,7 @@ The schoolhouse is a facade in Roget Close. It fronts west. It is scenery. Under
 
 Some handsome old houses are a backdrop. They are in Hesychius Street and Roget Close. They are scenery. They screen south. The description is "Many of them built in the mid- or late 19th century, the houses are designed for families with a number of servants. Some of the owners even continue to keep up establishments on that scale." Understand "villas" as the handsome old houses.
 
-Some palm trees are scenery in Roget Close. Understand "screen" or "palms" as the palm trees. The description is "They aren't the very tall and graceful kind, but a stumpier variety, forming a sort of vegetative colonnade in front of the school building[if the gum is in the location and the gum is not handled]. There's some [gum] stuck to the base of the nearest tree[end if]."
+Some palm trees are scenery in Roget Close. Understand "screen" or "palms" or "tree" as the palm trees. The description is "They aren't the very tall and graceful kind, but a stumpier variety, forming a sort of vegetative colonnade in front of the school building[if the gum is in the location and the gum is not handled]. There's some [gum] stuck to the base of the nearest tree[end if]."
 
 Instead of climbing palm trees:
 	say "Were you good at pole climbing exercises in gym? Because I wasn't."
