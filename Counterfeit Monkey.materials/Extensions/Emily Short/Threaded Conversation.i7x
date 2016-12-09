@@ -638,8 +638,7 @@ The quip-repository is a privately-named proper-named transparent closed unopena
 
 When play begins (this is the move all quips to the quip-repository rule):
 	now every quip that is not npc-directed is in the quip-repository;
-	sort quips for attendant.
-	[now every character-tailored quip is in the backup-repository.]
+	sort quips for barker.
 
 Book 2 - The Discussing Action
 
