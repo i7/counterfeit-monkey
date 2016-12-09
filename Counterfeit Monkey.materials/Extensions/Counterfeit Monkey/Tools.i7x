@@ -833,12 +833,19 @@ Sanity-check switching off the spinner:
 
 Section 2 - Spinning Functionality
 
-Every turn when the location is Roget Close and the spinner is non-empty (this is the spin the spinner rule) :
-	if not looking:
+Every turn rule when the location is Roget Close and the spinner is non-empty (this is the spin the spinner rule) :
+	if turned-this-turn is time of day:
+		make no decision;
+	otherwise:
 		follow the spinner-turning rule;
 		say line break.
 
+Turned-this-turn is a time that varies.
+
 This is the spinner-turning rule:
+	if turned-this-turn is time of day:
+		make no decision;
+	now turned-this-turn is time of day;
 	let the chosen article be a random thing on the spinner;
 	let X be the chosen article;
 	let goal text be "[printed name of the X]";
