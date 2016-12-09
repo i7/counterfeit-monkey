@@ -313,7 +313,7 @@ location-questioning quip is a kind of questioning quip.
 
 where there seems airport is a weakly-phrased location-questioning quip.
 	The printed name is "where there is an airport". The true-name is "where there seems an airport".
-	Understand "is" or "airport" or "international" or "plane" or "airplane" as where there seems airport.  The place-sought is "an airport".
+	Understand "is" or "an" or "airport" or "international" or "plane" or "airplane" as where there seems airport.  The place-sought is "an airport".
 	The mentions-list is {geography, transportation}.
 	The reply is "[one of]'Atlantis doesn't have a commercial airport,' says [the current interlocutor]. 'There's an airstrip that belongs to Dental Consonants Limited, but if you don't have a corporate jet, forget it.'[or]'[awkward no]. Occasionally you might see planes or even a helicopter, but they're going to the DCL campus for business purposes. Tourists only come by ocean.'[or][The current interlocutor] explains, as we've already heard, that there is no airport, at least not as far as we're concerned.[stopping]".
 	It is background-information.
