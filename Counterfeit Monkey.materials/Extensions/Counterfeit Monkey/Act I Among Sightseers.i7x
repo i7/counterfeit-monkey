@@ -2091,7 +2091,7 @@ Instead of putting the restoration gel on the defaced ashlar block:
 Rule for listing exits when looking in Old City Walls:
 	do nothing instead.
 
-Understand "climb wall/walls" as a mistake ("You have to say in which direction you want to go.").
+Understand "climb wall/walls" as a mistake ("Little is to be achieved by that.").
 
 In-direction of Old City Walls is east. [Into the old hexagonal turret]
 
