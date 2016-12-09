@@ -723,21 +723,21 @@ A quip has a list of objects called the mentions-list.
 
 When play begins:
 	repeat with I running through cars:
-		add I to mentions-list of where there seems garage, if absent;
-		add I to mentions-list of whether car be fixed, if absent;
-		add I to mentions-list of why the car does not run, if absent;
-		add I to mentions-list of where there seems a car, if absent;
-		add I to mentions-list of where there seems a car-2, if absent;
+		add I to mentions-list of where there seems garage;
+		add I to mentions-list of whether car be fixed;
+		add I to mentions-list of why the car does not run;
+		add I to mentions-list of where there seems a car;
+		add I to mentions-list of where there seems a car-2;
 	repeat with I running through oils:
-		add I to mentions-list of whether the oil seems interesting, if absent;
-		add I to mentions-list of whether car be fixed, if absent;
-		add I to mentions-list of whether the oil will work, if absent;
-		add I to mentions-list of check out this oil, if absent;
-		add I to mentions-list of check out this oil-1, if absent;
-		add I to mentions-list of where oil might be, if absent;
-		add I to mentions-list of we'll find some, if absent;
+		add I to mentions-list of whether the oil seems interesting;
+		add I to mentions-list of whether car be fixed;
+		add I to mentions-list of whether the oil will work;
+		add I to mentions-list of check out this oil;
+		add I to mentions-list of check out this oil-1;
+		add I to mentions-list of where oil might be;
+		add I to mentions-list of we'll find some;
 	repeat with I running through odes:
-		add I to mentions-list of calm Lena, if absent.
+		add I to mentions-list of calm Lena.
 
 After deciding the scope of the player when the action name part of current action is the starting a conversation with it about action:
 	repeat with N running from 1 to subject count:
