@@ -748,7 +748,7 @@ After deciding the scope of the player while subject-asking:
 		place subject-number N in scope.
 
 Carry out subject-asking:
-	if the noun is marked-visible:
+	if the noun is enclosed by location:
 		try object-asking the noun instead;
 	find a suitable interlocutor;
 	if the current interlocutor is nothing:
