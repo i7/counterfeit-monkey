@@ -713,9 +713,9 @@ Understand the command "t" as "tell".
 
 Understand "[a flagged-ready quip]" as discussing. [This originally read "a flagged-ready performative quip"; let's see if this greater permissiveness breaks anything...]
 
-Section 1c - Object-asking and subject-asking
+Section 1c - Subject-asking
 
-[Subject-asking handles asking about subjects mentioned by available quips. Not to be confused with object-asking below, which handles asking about ordinary present objects in the game world. These are separate actions for performance reasons.]
+[Subject-asking handles asking about subjects mentioned by available quips.]
 
 Understand "ask about/for/-- [thing]" or "tell about/that/-- [thing]" as subject-asking when predicted-interlocutor is something. Subject-asking is an action applying to one visible thing.
 
@@ -748,36 +748,15 @@ After deciding the scope of the player while subject-asking:
 		place subject-number N in scope.
 
 Carry out subject-asking:
-	if the noun is enclosed by location:
-		try object-asking the noun instead;
 	find a suitable interlocutor;
 	if the current interlocutor is nothing:
 		say "[We] [aren't] talking to anyone." instead;
 	let N be a list of quips;
+	let purchasing-quip be nothing;
 	repeat with Q running through things in quip-repository:
 		if Q mentions the noun and Q is available:
-			add Q to N;
-	if the number of entries in N is positive:
-		if the number of entries in N is 1:
-			try discussing entry 1 of N instead;
-		otherwise:
-			recommend N instead;
-	say "[The current interlocutor] [don't] [one of]seem interested in talking[or][have] anything to say[at random] about [the noun] at the moment."
-
-[Understand "ask about/for/-- [a thing]"  or "tell about/that/-- [a thing]" as object-asking when predicted-interlocutor is something.] Object-asking is an action applying to one visible thing.
-
-[Object-asking is meant as a catch-all for asking about unimplemented present things. Not to be confused with subject-asking above.]
-
-Carry out object-asking:
-	find a suitable interlocutor;
-	if the current interlocutor is nothing:
-		say "[We] [aren't] talking to anyone." instead;
-	let purchase-quip be nothing;
-	let N be a list of quips;
-	repeat with Q running through things in quip-repository:
-		if Q mentions the noun:
 			if Q is a purchasing quip:
-				now purchase-quip is Q;
+				now purchasing-quip is Q;
 			if Q is available:
 				add Q to N;
 	if the number of entries in N is positive:
@@ -785,14 +764,19 @@ Carry out object-asking:
 			try discussing entry 1 of N instead;
 		otherwise:
 			recommend N instead;
-	if the noun is the current interlocutor:
-		say "[The noun] [don't] seem interested in talking about [themselves]." instead;
 	otherwise:
-		if the holder of the noun is current interlocutor and purchase-quip is something:
-			try requesting the noun from the current interlocutor instead;
-		unless the noun is a distant backdrop or the noun is a person or the holder of the noun is current interlocutor:
-			try showing the noun to the current interlocutor instead;
-	say "[The current interlocutor] [one of][don't] seem interested in talking[or][have] nothing to say[at random] about [the noun] at the moment."
+		if the noun is enclosed by location:
+			if the noun is the current interlocutor:
+				say "[The noun] [don't] seem interested in talking about [themselves]." instead;
+			if current interlocutor is the gift shop volunteer:
+				follow the gift shop volunteer doesn't know rule instead;
+			otherwise:
+				if the holder of the noun is current interlocutor and purchasing-quip is something:
+					try requesting the noun from the current interlocutor instead;
+			unless the noun is a distant backdrop or the noun is a person or the holder of the noun is current interlocutor:
+				try showing the noun to the current interlocutor instead;
+		say "[The current interlocutor] [don't] [one of]seem interested in talking[or][have] anything to say[at random] about [the noun] at the moment."
+
 
 Chapter 2 - Setting discussing variables
 

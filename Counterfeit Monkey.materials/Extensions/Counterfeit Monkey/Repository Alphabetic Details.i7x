@@ -1625,7 +1625,7 @@ The description of a pa is "He's a Norman Rockwell figure: gruff, upstanding, ho
 Rule for writing a paragraph about a pa:
 	say "The pa you summoned is standing nearby, looking slightly confused."
 
-Instead of object-asking or subject-asking when the current interlocutor is a pa:
+Instead of subject-asking when the current interlocutor is a pa:
 	say "'Huh,' he says, in that gruff pre-occupied way of his."
 
 Instead of kissing the pa:

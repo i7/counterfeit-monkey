@@ -2358,10 +2358,10 @@ Does the player mean subject-asking the hidden-ticket:
 Sanity-check buying the ticket from the player when location is cinema lobby:
 	try discussing buy movie-ticket instead.
 
-Sanity-check subject-asking or object-asking the ticket when the current interlocutor is the ticket-taker:
+Sanity-check subject-asking the ticket when the current interlocutor is the ticket-taker:
 	try discussing buy movie-ticket instead.
 
-Sanity-check subject-asking or object-asking the hidden-ticket when the current interlocutor is the ticket-taker:
+Sanity-check subject-asking the hidden-ticket when the current interlocutor is the ticket-taker:
 	try discussing buy movie-ticket instead.
 
 buy movie-ticket is a purchasing quip.
@@ -3008,12 +3008,11 @@ The generic adversative of the gift shop volunteer is "[one of]alas[or]sadly[at 
 The secondary apology of the gift shop volunteer is "[one of]sorry[or]I'm afraid[at random]".
 The generic confrontational of the gift shop volunteer is "miss".
 
-Instead of object-asking when the current interlocutor is the gift shop volunteer:
+This is the gift shop volunteer doesn't know rule:
 	let N be "[one of][generic adversative of the gift shop volunteer][or][secondary apology of the gift shop volunteer][at random]" in sentence case;
 	say "[We] frame up a vague question about [the noun].
 
 [beat] '[N], don't think I can help you there.'[paragraph break][conditional paragraph break]"
-["[We] frame up a vague question about [second noun].]
 
 The gift shop volunteer knows you-are-possible-customer.
 
@@ -3503,7 +3502,7 @@ Sanity-check buying the origin paste from the barman when the origin paste is no
 	otherwise:
 		try discussing whether we can hath the origin paste instead.
 
-Instead of subject-asking or object-asking the origin paste when the origin paste is not won:
+Instead of subject-asking the origin paste when the origin paste is not won:
 	if the barman recollects whether we can hath the origin paste:
 		say "We've already established that the origin paste has to be won rather than bought or given away.";
 	otherwise:
