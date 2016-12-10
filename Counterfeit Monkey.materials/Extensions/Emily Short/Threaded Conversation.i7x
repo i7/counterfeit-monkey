@@ -754,7 +754,7 @@ Carry out subject-asking:
 	let N be a list of quips;
 	let purchasing-quip be nothing;
 	repeat with Q running through things in quip-repository:
-		if Q mentions the noun and Q is available:
+		if Q mentions the noun:
 			if Q is a purchasing quip:
 				now purchasing-quip is Q;
 			if Q is available:
