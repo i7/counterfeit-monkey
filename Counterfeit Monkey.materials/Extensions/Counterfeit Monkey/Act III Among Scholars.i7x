@@ -283,6 +283,10 @@ First after writing a paragraph about the bartender when the current-paragraph r
 	say "[The other patrons] are scattered around the room at small tables, drinking or talking among themselves. ";
 	make no decision.
 
+A ranking rule for the patron:
+	if just entered drinks club is true:
+		decrease the description-rank of the patron by 30.
+
 Rule for writing a topic sentence about the patron:
 	if a drink-form thing is on the dor-bar-top and a random chance of 1 in 2 succeeds:
 		say "[The patron] [one of]is keeping politely out of the way of [the list of drink-form things *in the dor-bar-top] that [we] ordered. [We] [are] not using up too much space, though, as most of [the other patrons] are at tables and not using the bar at all[or]is still keeping out of the way of our [list of drink-form things *in the dor-bar-top][stopping]. ";
