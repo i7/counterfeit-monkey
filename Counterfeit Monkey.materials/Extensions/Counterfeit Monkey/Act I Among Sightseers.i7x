@@ -2449,11 +2449,11 @@ Rule for listing exits  while looking in Roget Close:
 
 After going from Roget Close to the Winding Footpath:
 	let N be the number of entries in the described motion of the player;
-	if N is greater than 0:
+	if N is greater than 1:
 		say "[We] walk through the wealthy neighb[our]hood to Roget Close. ";
 	clear path-walked for the player;
 	increase path description count by 1;
-	say "[if N is greater than 0]There [we][otherwise][We][end if] slip between the houses and down a path that looks as though it might lead to someone's back yard. No one has ever put up signage to correct this misapprehension because no one who lives around here is eager to encourage strangers on the private beach.
+	say "[if N is greater than 1]There [we][otherwise][We][end if] slip between the houses and down a path that looks as though it might lead to someone's back yard. No one has ever put up signage to correct this misapprehension because no one who lives around here is eager to encourage strangers on the private beach.
 
 Soon, however, the footpath begins to descend purposefully towards the level of the ocean[if the location is the final destination].[otherwise].[paragraph break][end if]";
 	continue the action;
