@@ -561,7 +561,9 @@ The gate clicks open.
 [Your score has gone up by one point and is now fifteen.]
 
 > go to beach
-We walk through the wealthy neighborhood to Roget Close. There we slip between the houses and down a path that looks as though it might lead to someone's back yard. No one has ever put up signage to correct this misapprehension because no one who lives around here is eager to encourage strangers on the private beach.
+We take the snap.
+
+We slip between the houses and down a path that looks as though it might lead to someone's back yard. No one has ever put up signage to correct this misapprehension because no one who lives around here is eager to encourage strangers on the private beach.
 
 Soon, however, the footpath begins to descend purposefully towards the level of the ocean.
 
@@ -587,7 +589,7 @@ There is a dismissive blatt from the monocle, and transposed over the fuel is a 
 The snapping continues.
 
 > go to high street
-/(We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short |quick)? )(walk|hike) to Webster Court. 
+/(We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short |quick)? )(walk|hike) (over to|to) Webster Court. 
 
 Webster Court
 A broad and plainly-paved court, named for the statue of Noah Webster.
@@ -824,7 +826,7 @@ The snapping continues.
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether he has seen Slango or ask whether we can have the Origin Paste.
 
-You have a fleeting thought of your crew's attitude to Atlantis law.
+/(You have a fleeting thought|Something makes you think|You are reminded) of your crew's attitude to Atlantis law.
 
 > talk to barman
 /We (nod|smile|return the greeting|say hi).
@@ -879,7 +881,7 @@ The snapping continues.
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) play the game.
 
-/(You are reminded|Something makes you think) of past experience playing games.
+/(You are reminded|Something makes you think|You have a fleeting thought) of past experience playing games.
 
 > play
 "I'd like to play that," we say.
@@ -1309,7 +1311,7 @@ A giant Atlantida statue stands at the center, decorated in an unorthodox fashio
 
 /Two teenagers are cuffed to a brown tree, apparently for safe-keeping while the All-Purpose Officer undoes their vandalism. He (has|is carrying) a diminutive affixer. 
 
-The snapping continues.
+/(The car is making an unpleasant raspy growl|The snapping continues).
 
 > get out
 I can see an officer making his way between the cars and stopping at the fake ones. Maybe we'd better conceal our car before we leave it — we may need to make a quick getaway later.
@@ -1399,7 +1401,7 @@ Confusing signs point in various directions: northeast to Deep Street, northwest
 My apartment is that direction, but unless we have some reason to go there, it seems least suspicious to avoid my old neighborhood.
 
 > go to convenience
-/((It's a|We make the) (short|brief)? drive to Tall Street. Then|At Tall Street|There) we pull easily into one of the available parking spots, since many people have now gone home.
+/((It's a|We make the) (short|brief)? drive (to|over to) Tall Street. )?(Then|At Tall Street|There) we pull easily into one of the available parking spots, since many people have now gone home.
 
 /(Then|Next) we (make the|have a) (brief |short |quick )?(hike|walk). 
 
@@ -1458,7 +1460,7 @@ The snapping continues.
 The snapping continues.
 
 > go to rotunda
-/We( have a (brief|short|quick))? (walk|hike). 
+/(We|(We have|It's) a( brief| short| quick)?) (walk|hike). 
 
 Rotunda
 Echoing space, marble floor, eye-like skylight many meters above us: so far, the Rotunda might belong to any 19th-century government bureau of means and self-importance.
@@ -1574,7 +1576,7 @@ I think I know where we can get one, though. My advisor Professor Waterstone —
 [Your score has gone up by three points and is now forty-five.]
 
 > go to palm square
-/(((It's a( short| brief| quick)?|We make the( short| brief| quick)?|We) drive (as far as|over to|to) Long Street South. )?(Then|There|Once we get to|At) Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
+/(((It's a( short| brief| quick)?|We make the( short| brief| quick)?|We) drive (as far as|over to|to) Long Street South. )?(Then|There|((Once we get to|At) Long Street South))) we pull easily into one of the available parking spots, since many people have now gone home.
 
 Palm Square
 Now this is my part of town: Palm Square is the beginning of the university district. To the southeast, through the iron gate, is the university campus proper; and that unobtrusive little doorway directly south of us leads into the Babel Café.
@@ -2048,7 +2050,7 @@ They recently redid this room, and whoever picked the decorations had postmodern
 
 /Professor Higgate waits a little absent-mindedly nearby, looking over the bookshelf. (There|On the bookshelf) are History of the Standards Revolution and Lives of the Lexicographers( on the bookshelf)?. 
 
-/A massive plexiglas case takes up one corner of the room. (There is|The plexiglas case contains) a compact but high-powered late model synthesizer( in the plexiglas case)?. 
+/A massive plexiglas case takes up one corner of the room. (There is|The plexiglas case contains|In the plexiglas case is) a compact but high-powered late model synthesizer( in the plexiglas case)?. 
 
 The big table at the center of the room is an irregular polygon, with one chair pushed up to the shortest side. I think the shape is intended to undermine traditional conceptions of academic hierarchy, but in practice it  just means that whoever gets to seminar late has to sit with a table angle jabbing him in the stomach.
 
@@ -2245,7 +2247,7 @@ It has no label, only a keycard-reading lock.
 It looks high-tech: all black plastic, and a slot to swipe a keycard through.
 
 > go to hotel
-/((We drive out from under the sycamores in the Oval and up Long Street (to|over to|as far as) Long Street North. (Then|There)|Once we get to Long Street North)|At Long Street North) we pull easily into one of the available parking spots, since many people have now gone home.
+/(((We|We make the) drive out from under the sycamores in the Oval and up Long Street (to|over to|as far as) Long Street North. (Then|There)|Once we get to Long Street North)|At Long Street North) we pull easily into one of the available parking spots, since many people have now gone home.
 
 Fleur d'Or Lobby
 The Fleur d'Or is a high-end hotel that serves businessmen and luxury tourists interested in the linguistic mechanisms of the island. As a result, it has all kinds of paid exemptions, including an exemption allowing it to operate under a foreign name.
@@ -2268,9 +2270,7 @@ The back wall is dramatically decorated with bottled liquors of all sorts, from 
 
 What makes this place technically a drinks club rather than a bar is its license to serve letter-manufactured food and drink. A toolkit on the bar contains some screwdrivers, some gimlets, and some rusty nails, ready to be transformed into their respective cocktails.
 
-
-
-The bartender and Mark are still talking about the homonym paddle. The other patrons are scattered around the room at small tables, drinking or talking among themselves. 
+The bartender and Mark are still talking about the homonym paddle. Mark is holding a gin and tonic. The other patrons are scattered around the room at small tables, drinking or talking among themselves. 
 
 /"(Hi|Hello|Hi there)," the bartender says.
 
@@ -2375,7 +2375,7 @@ We dip out a pea-sized quantity of gel and rub it gently onto the car. With an a
 The snapping continues.
 
 > wave h-remover at chard
-/We reset the device to h. The chard gives way to the card. This time it's (Justice. A woman in a blue dress sits on a throne. She carries a letter-remover in one hand and her eyes are blind-folded|the Fool. A shiftless young woman is carrying a loaded backpack, striding across a sunny landscape|the Twins. They're male and female. A floating, sky-born figure above them is either choosing one or about to shoot one: it's hard to know what to make of the pointer or arrow it wield|Temperance. An official-looking man is operating a gigantic synthesizer. Out of its bottom fall a flood of oxymoronic figures: a dwarf elephant, a giant mouse, a bittersweet cake).
+/We reset the device to h. The chard gives way to the card. This time it's (Justice. A woman in a blue dress sits on a throne. She carries a letter-remover in one hand and her eyes are blind-folded|the Fool. A shiftless young woman is carrying a loaded backpack, striding across a sunny landscape|the Twins. They're male and female. A floating, sky-born figure above them is either choosing one or about to shoot one: it's hard to know what to make of the pointer or arrow it wield|Temperance. An official-looking man is operating a gigantic synthesizer. Out of its bottom fall a flood of oxymoronic figures: a dwarf elephant, a giant mouse, a bittersweet cake|Strength. A young nude lady lounges in the embrace of a giant squid. They are apparently on very good terms).
 
 The snapping continues.
 
@@ -2762,7 +2762,7 @@ If you look just north between the houses, you'll notice also the footpath down 
 
 The snapping continues.
 
-/(Something makes you think|You are reminded) of your crew's skill.
+/(Something makes you think|You are reminded|You have a fleeting thought) of your crew's skill.
 
 > put bin on spinner
 We put the bin on the pedestal.
@@ -2872,7 +2872,7 @@ And he pops back out.
 > z
 Time passes.
 
-/(The snapping continues|The peacock ruffles its many feathers).
+/(The snapping continues|The peacock (ruffles its many feathers|makes a practice noise in its throat|trills self-importantly)).
 
 > get invitation
 /We (take|get|pick up|acquire) the invitation. It is a white card, like a wedding invitation, with swirly script lettering. "You are invited," it says, "to a demonstration of a new T-inserter not available to the general public — Serial Comma Day — Bureau of Orthography."
@@ -3278,7 +3278,7 @@ A shed, rather ramshackle and unlikely, sits on the pavement, where it ought to 
 
 The snapping continues.
 
-/(Something makes you think|You are reminded) of leaving your family for the last time.
+/(Something makes you think|You are reminded|You have a fleeting thought) of leaving your family for the last time.
 
 > x schedule
 The schedule is an intricate affair, and the deciphering of the various letter-codes and footnotes was actually a subject of study in my grade school. The buses run every sixty-two minutes during daylight in the winter, every forty-three minutes in summer, with every third bus running as an express without stops if the passengers of this bus do not vote otherwise.
@@ -3484,7 +3484,7 @@ The snapping continues.
 
 "It's weird — you have a different face but the expressions are still yours. It's like you have a really good rubber mask on."
 
-/He (runs a hand over (the small nozzles|the brass plate)|knocks on the top of the T-inserter|stands back, regarding the T-inserter thoughtfully). "First we should see whether this thing can reify abstracts."
+/He (runs a hand over (the small nozzles|the brass plate)|knocks on the top of the T-inserter|stands back, regarding the T-inserter thoughtfully|pauses, listening for noises outside). "First we should see whether this thing can reify abstracts."
 
 
 
@@ -3555,7 +3555,7 @@ A small, harmless-looking bird.
 
 "No problem creating creatures," Brock says judiciously.
 
-/(The tit stares at us|He's looking at us, but when I look back, he cuts his eyes away|He watches us with a slightly disturbing intentness in his eyes|He cranes to look around at the back of the machine, but doesn't find anything interesting|He pauses, listening for noises outside). ("As our next trick we need to look at the stabilization performance," Brock says. "Inserters sometimes run into trouble if there's a case where the same base word could be expanded to multiple derivatives — for instance, if you S-inserted CREAM, it wouldn't know whether to make CREAMS or SCREAM or SCREAMS.")?
+/(The tit stares at us|He's looking at us, but when I look back, he cuts his eyes away|He watches us with a slightly disturbing intentness in his eyes|He cranes to look around at the back of the machine, but doesn't find anything interesting|He pauses, listening for noises outside|He runs his fingers over the surface of the machine, checking for hot spots). ("As our next trick we need to look at the stabilization performance," Brock says. "Inserters sometimes run into trouble if there's a case where the same base word could be expanded to multiple derivatives — for instance, if you S-inserted CREAM, it wouldn't know whether to make CREAMS or SCREAM or SCREAMS.")?
 
 The tit clambers out of the T-inserter machine.
 
@@ -5299,7 +5299,7 @@ A set of children's playing jacks. They are lined up, with curious precision, in
 /You reset the device to s. There is a [a-z \-]+, and the jacks turn into a jack. A heavy-duty jack, suitable for raising cars or other substantial objects.
 
 > go to workshop
-/(You|(It's|You have) a (quick|brief|short)) (walk|hike) (over to|as far as|to) Personal Apartment. There you try propping the portcullis with the jack.
+/(You|(It's|You have) a (quick|brief|short))|You make the( quick| brief| short)? (walk|hike) (over to|as far as|to) Personal Apartment. There you try propping the portcullis with the jack.
 
 /(Then|Next|After that|From there) (you |you have a (brief|quick|short) |you make the( brief| quick| short)? |it's a( brief| quick| short)? )(walk|hike).
 

@@ -341,7 +341,7 @@ The gate clicks open.
 [Your score has gone up by one point and is now fifteen.]
 
 > go to beach
-We walk through the wealthy neighborhood to Roget Close. There we slip between the houses and down a path that looks as though it might lead to someone's back yard. No one has ever put up signage to correct this misapprehension because no one who lives around here is eager to encourage strangers on the private beach.
+We slip between the houses and down a path that looks as though it might lead to someone's back yard. No one has ever put up signage to correct this misapprehension because no one who lives around here is eager to encourage strangers on the private beach.
 
 Soon, however, the footpath begins to descend purposefully towards the level of the ocean.
 
@@ -372,22 +372,12 @@ A yam with whitish skin. Some of the dirt of the farm still adheres to it.
 
 The monocle pings happily as we sight the yam with the crosshairs.
 
-
-
-The mirror rotates in leisurely fashion, and when it is done there is a May.
-
-This is the sheet for the month of May, torn from a calendar. Someone has put a gold star on the 21st, and "Dinner with the Shaplys" is penciled onto the 30th.
-
-There is a dismissive blatt from the monocle, and transposed over the May is a faint, greenish image of a yam.
-
-
-
 /(Something makes you think|You have a fleeting thought|You are reminded) of your crew's skill.
 
 [MEMORIES will list your currently active memories]
 > get all from spinner
-(the May from the pedestal)
-/We (take|get|pick up|acquire) the May.
+(the yam from the pedestal)
+/We (take|get|pick up|acquire) the yam.
 
 > put sag on spinner
 We put the sag on the pedestal.
@@ -397,8 +387,6 @@ The mirror rotates in leisurely fashion, and when it is done there is some gas.
 It looks like a generic canister of unleaded gasoline.
 
 There is a dismissive blatt from the monocle, and transposed over the gas is a faint, greenish image of some sage.
-
-
 
 > get gas
 /We (take|get|pick up|acquire) the gas.
@@ -525,7 +513,7 @@ We aren't wearing the monocle.
 /(Ominous sounds come through the windows, but we're at the wrong angle to see out.)?
 
 > put all in backpack
-May: Done.
+yam: Done.
 pan: Done.
 letter: Done.
 roll: Done.
@@ -617,7 +605,7 @@ Parker acknowledges our return with a nod.
 
 [MEMORIES will list your currently active memories]
 > talk to barman
-/We (smile|wave).
+/We (smile|wave|return the greeting).
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether he has seen Slango or ask whether we can have the Origin Paste.
 
@@ -697,7 +685,7 @@ This produces a squawk of surprise and irritation from the defendant, and you ge
 > show pill to barman
 "What do you think of this?" we ask, pointing to the pill.
 
-/(This evokes no particular interest|The barman doesn't have anything to say in response).
+/(This evokes no particular interest|The barman doesn't have anything to say in response|The barman shakes his head).
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether he has any other games going.
 
@@ -1000,7 +988,7 @@ To the east, up a moderate rise from the sea-level docks, is the imposing exteri
 Immediately west, the Counterfeit Monkey's sign sways in the wind. 
 
 > go to convenience
-/(We |We have a (brief|quick) |We make the( brief| quick)? |It's a( brief| quick)? )drive through the marina district (over to|to|as far as) the Roundabout. 
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )drive through the marina district (over to|to|as far as) the Roundabout. 
 
 The whole Roundabout has ground to a halt, with protesters walking in the street and in some places completely filling the road. But this is mostly a nuisance until I notice that there are a couple of teenagers handcuffed to a tree.
 
@@ -1134,13 +1122,13 @@ What sets this one apart is the lettering, each sigil no bigger than a flea, car
 
 We don't, of course. There are better things to do. More important places to go. The administrative part of the bureau is away to the south, and there is an exhibit of letter tools to the east, which is open to the public.
 
-/Near the street entrance is a sizable informational bulletin-board advertising the services of the Bureau; and next to this, pushed back to be out of the way, is a bin. (The bin contains a shuttle|There is a shuttle in the bin). 
+/Near the street entrance is a sizable informational bulletin-board advertising the services of the Bureau; and next to this, pushed back to be out of the way, is a bin. (The bin contains a shuttle|There is a shuttle in the bin|In the bin is a shuttle). 
 
 > get bin
 /We (take|get|pick up|acquire) the bin. BUREAU PARKING, reads the bin, in thick black marker. DO NOT TAKE UNLESS AUTHORIZED.
 
 > go to antiques
-/(It's a quick drive away from the Bureau and back into the streets to Long Street South. There|(At|Once we get to) Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
+/(((It's|We have) a (quick|short|brief)) drive away from the Bureau and back into the streets to Long Street South. There|(At|Once we get to) Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
 
 We show the appointment card, and are let in.
 
@@ -1227,7 +1215,7 @@ I think I know where we can get one, though. My advisor Professor Waterstone —
 [Your score has gone up by three points and is now forty-five.]
 
 > go to palm square
-/((We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short |quick)? )drive (over to|as far as|to) Long Street South. (Then|There|(At|Once we get to) Long Street South)) we pull easily into one of the available parking spots, since many people have now gone home.
+/((We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short| quick)? )drive (over to|as far as|to) Long Street South. (Then|There|(At|Once we get to) Long Street South)) we pull easily into one of the available parking spots, since many people have now gone home.
 
 Palm Square
 Now this is my part of town: Palm Square is the beginning of the university district. To the southeast, through the iron gate, is the university campus proper; and that unobtrusive little doorway directly south of us leads into the Babel Café.
@@ -1704,7 +1692,7 @@ Dank and malodorous: there are no windows down here, and the drainage is terribl
 
 The stairs up are here; the lecture room at the east. Immediately south is the Graduate Student Office, and southwest is Professor Brown's office. The most interesting of all is the small door west, trying to look inconspicuous, but locked with a keycard lock: it's where the department stores its most dangerous licensed equipment.
 
-/A large open carton stands against the wall right between Brown's lab door and the interesting door. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." (In the large carton|There) is a pineapple( in the large carton)?. 
+/A large open carton stands against the wall right between Brown's lab door and the interesting door. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." ((In the large carton|There) is|The large carton contains) a pineapple( in the large carton)?. 
 
 > s
 
@@ -1795,7 +1783,7 @@ We can go north, south to Palm Square, and west to Arbot Maps & Antiques from he
 /We (take|get|pick up|acquire) the jigsaw. The boxed puzzle displays an execution scene, with several pro-British traitors from the 1820s being lined up before the depluralization cannon. It was thought a considerable punishment to be forced to share a body and consciousness with others.
 
 > go to hotel
-/(We |We have a (brief|quick) |We make the( brief| quick)? |It's a( brief| quick)? )drive (as far as|over to) Long Street North. (There|Then) we pull easily into one of the available parking spots, since many people have now gone home.
+/((We |We have a (brief|quick) |We make the( brief| quick)? |It's a( brief| quick)? )drive (as far as|over to) Long Street North. (There|Then)|At Long Street North) we pull easily into one of the available parking spots, since many people have now gone home.
 
 Fleur d'Or Lobby
 The Fleur d'Or is a high-end hotel that serves businessmen and luxury tourists interested in the linguistic mechanisms of the island. As a result, it has all kinds of paid exemptions, including an exemption allowing it to operate under a foreign name.
@@ -1814,9 +1802,9 @@ The back wall is dramatically decorated with bottled liquors of all sorts, from 
 
 What makes this place technically a drinks club rather than a bar is its license to serve letter-manufactured food and drink. A toolkit on the bar contains some gimlets and some rusty nails, ready to be transformed into their respective cocktails.
 
-The bartender and Mark are still talking about the homonym paddle. The other patrons are scattered around the room at small tables, drinking or talking among themselves. 
+The bartender and Mark are still talking about the homonym paddle. Mark is holding a gin and tonic. The other patrons are scattered around the room at small tables, drinking or talking among themselves. 
 
-"Hello," the bartender says.
+/"(Hello|Hi)," the bartender says.
 
 "That was a little dangerous, wasn't it?" Mark asks. "If you had tapped me with that thing, wouldn't I be a giant X on the carpet now?"
 
@@ -1892,7 +1880,7 @@ They recently redid this room, and whoever picked the decorations had postmodern
 
 /The bookshelves lining the walls contain the department library. (There|On the bookshelf) are The Problem of Adjectives, History of the Standards Revolution, and Lives of the Lexicographers( on the bookshelf)?.
 
-/A massive plexiglas case takes up one corner of the room. (In the plexiglas case is|There is|The plexiglas case contains) a compact but high-powered late model synthesizer( in the plexiglas case)?. ((There|In the|The) compact but high-powered late model synthesizer) (are|contains) a key and a crossword( in the compact but high-powered late model synthesizer)?.
+/A massive plexiglas case takes up one corner of the room. (In the plexiglas case is|There is|The plexiglas case contains) a compact but high-powered late model synthesizer( in the plexiglas case)?. (There|(In the|The) compact but high-powered late model synthesizer) (are|contains) a key and a crossword( in the compact but high-powered late model synthesizer)?.
 
 The big table at the center of the room is an irregular polygon, with one chair pushed up to the shortest side. 
 
@@ -2422,7 +2410,7 @@ We smear some of the Origin Paste onto the pass. Nothing obvious happens, of cou
 There is a continuous angry whine from the jigsaw.
 
 > go to hotel
-/(We |We have a (brief|quick) |We make the( brief| quick)? |It's a( brief| quick)? )(walk|hike).
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike).
 
 Fleur d'Or Lobby
 The spotlights in the ceiling light the floor in distinct pools of Bureau blue, and a sheet of frosted glass etched with random letters separates the lobby from the drinks club to the west.
@@ -2891,7 +2879,7 @@ We dip out a pea-sized quantity of gel and rub it gently onto the applet. With a
 
 There is a continuous angry whine from the jigsaw.
 
-/He (pauses, listening for noises outside|stands back, regarding the T-inserter thoughtfully|knocks on the top of the T-inserter|cranes to look around at the back of the machine, but doesn't find anything interesting). "Next it would be good to see if this thing can build animates."
+/He (pauses, listening for noises outside|stands back, regarding the T-inserter thoughtfully|knocks on the top of the T-inserter|cranes to look around at the back of the machine, but doesn't find anything interesting|runs his fingers over the surface of the machine, checking for hot spots). "Next it would be good to see if this thing can build animates."
 
 > wave p-remover at apple
 We reset the device to p. The apple gives way to the now-familiar ale.
@@ -3677,7 +3665,7 @@ There's even a little washing machine, for items too big to hand-wash in the sin
 On the port wall, built-in shelves hold a battered selection of games.
 
 > open cabinet
-You open the galley cabinet, revealing a camembert, a cate, an apple, a bottle of ouzo, and assorted staples.
+You open the galley cabinet, revealing a camembert, a cate, a yam, an apple, a bottle of ouzo, and assorted staples.
 
 > x newspaper
 It's the Chard-Farmer's Daily from Atlantis. A huge headline is splashed across the front:
