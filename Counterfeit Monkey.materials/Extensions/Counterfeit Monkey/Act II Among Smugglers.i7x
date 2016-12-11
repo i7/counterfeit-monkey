@@ -13,7 +13,7 @@ Section 1 - Deep Street
 
 [The mixed architecture of Deep Street is an echo of the dreamlike buildings I once saw in the French seaside town of Cerbère, on the Mediterranean just across the border from Spain.]
 
-Deep Street is a proper-named road. The description is "This road descends steeply from [southwest] to [northwest], passing between [white concrete buildings] to provide access to the marina [--] the Fish Market, the Docks, and a bar or two. The street is in deep shadow, protected from sunlight from almost any angle by its narrowness and by the height of the walls."
+Deep Street is a proper-named checkpoint road. The description is "This road descends steeply from [southwest] to [northwest], passing between [white concrete buildings] to provide access to the marina [--] the Fish Market, the Docks, and a bar or two. The street is in deep shadow, protected from sunlight from almost any angle by its narrowness and by the height of the walls."
 
 In-direction of Deep Street is east. [Into the bookstore]
 
@@ -105,7 +105,7 @@ After going from the Aquarium when Slango is in the Counterfeit Monkey:
 
 Section 2 - The Aquarium
 
-The Aquarium Bookstore is east of Deep Street. It is a privately-controlled room. It is indoors. The description is "The shop takes its name from the [collection of fish] mounted on every wall: swordfish, bass, other things I don't recogn[ize]. Underneath these dubious tokens, the walls are covered with bookshelves, and there are stacks of books on the floor where the shelves have proven insufficient."
+The Aquarium Bookstore is east of Deep Street. It is a privately-controlled checkpoint room. It is indoors. The description is "The shop takes its name from the [collection of fish] mounted on every wall: swordfish, bass, other things I don't recogn[ize]. Underneath these dubious tokens, the walls are covered with bookshelves, and there are stacks of books on the floor where the shelves have proven insufficient."
 
 The aquarium-shelving is scenery in the aquarium. Understand "shelves" or "bookshelves" or "shelving" as the aquarium-shelving. The printed name is "shelving". The description is "They're completely crammed with books."
 
@@ -227,7 +227,7 @@ Section 4 - The Fish Market
 
 [Inspired by a similar area in Marseilles and a few images from Nice.]
 
-The Fish Market is northwest of Deep Street. The description is "Not very fishy at the moment, in fact: all the real trade happens in the early morning; then there is a period of tourist trade when the seafood sale tails off and most of the purchases are of polished conch shells and starfish; and then a little after noon the area clears out completely, leaving only briny rivulets on the concrete."
+The Fish Market is northwest of Deep Street. It is checkpoint. The description is "Not very fishy at the moment, in fact: all the real trade happens in the early morning; then there is a period of tourist trade when the seafood sale tails off and most of the purchases are of polished conch shells and starfish; and then a little after noon the area clears out completely, leaving only briny rivulets on the concrete."
 
 Rule for listing exits when the location is Fish Market and the Authenticator is in the location:
 	do nothing instead.
@@ -429,7 +429,7 @@ Before approaching the Tin Hut when the Counterfeit Monkey is unvisited:
 
 Section 6 - Tin Hut
 
-The Tin Hut is east of the Fish Market. It is indoors. The description is "Most of the light in here comes from [circular windows] punched into the tin walls just under the ceiling. From the inside, the building looks both larger and more sound than it appears from outside: there are plenty of sturdy [struts] supporting the roof and keeping the walls upright."
+The Tin Hut is east of the Fish Market. It is indoors and checkpoint. The description is "Most of the light in here comes from [circular windows] punched into the tin walls just under the ceiling. From the inside, the building looks both larger and more sound than it appears from outside: there are plenty of sturdy [struts] supporting the roof and keeping the walls upright."
 	The introduction is "Sometimes smugglers and forgers have been known to stash things in here, since the building is close to the docks but rarely attracts the interest of customs officials."
 
 Out-direction of Tin Hut is west. [Out to fish market]
@@ -533,7 +533,7 @@ The Crawlspace is below the trap-door. The description is "An awkward, low, conc
 
 Out-direction of Crawlspace is up. [Into the tin hut]
 
-The Crawlspace is indoors.
+The Crawlspace is indoors and checkpoint.
 
 After deciding the scope of the player when the player is in the Crawlspace:
 	if the trap-door is wedged by something (called the impediment):
@@ -574,7 +574,7 @@ Rule for printing the name of the leaflet while listing contents of something:
 
 Section 8 - Docks
 
-The Docks are north of the Fish Market. The description is "Here are some dozens of [boats] tied up: some of them are small to medium-sized fishing craft, some tourist boats for trips around the island, some merely ferries to the deeper harbor where the cruise ships anchor."
+The Docks are north of the Fish Market. It is checkpoint. The description is "Here are some dozens of [boats] tied up: some of them are small to medium-sized fishing craft, some tourist boats for trips around the island, some merely ferries to the deeper harbor where the cruise ships anchor."
 
 The boats are scenery in the Docks. Understand "craft" or "fishing craft" or "tourist" or "ferries" as the boats. The description is "I know nothing about boats. You, on the other hand, appear to have an unnerving awareness of which of these craft are here on legal business and which are engaged in some form of smuggling or refugee-assistance."
 
@@ -1007,12 +1007,12 @@ Dramatically, it tries to
 
 After going to Roundabout when the protesters are not off-stage and the player is not in Traffic Circle and seeking Slango has ended:
 	if the player is hurrying:
-		say "[path-walked so far][paragraph break][line break]";
+		say "[path-walked so far][conditional paragraph break]";
 		clear path-walked for player;
 		increase path description count by 1;
 	say "The whole Roundabout has ground to a halt, with protesters walking in the street and in some places completely filling the road. But this is mostly a nuisance until I notice that there are a couple of teenagers handcuffed to a tree.
 
-I give the wheel a yank and run the car up onto the central traffic circle a little way. Call it a parking job. We need to get those kids out of here before their arrest is processed and they go to storage. I might not have the nerve to do anything by myself, but you're with me, and I'm starting to appreciate that's like being Batman.";
+I give the wheel a yank and run the car up onto the central traffic circle a little way. Call it a parking job. We need to get those kids out of here before their arrest is processed and they go to storage. I might not have the nerve to do anything by myself, but you're with me, and I'm starting to appreciate that's like being Batman. ";
 	if the player is in a car (called target):
 		move the target to Traffic Circle;
 		follow the compass-drawing rule instead;
@@ -1033,7 +1033,7 @@ Sanity-check exiting when the player is in an undisguised car and the location i
 Check waving the letter-remover at the Traffic Circle when the current setting of the letter-remover is "l":
 	say "Perhaps a Traffic Circe would be able to turn cars into pigs, but the letter-remover has neither the imagination nor the power to bring this entity to life." instead.
 
-Traffic Circle is inside from the Roundabout. It is a privately-controlled outdoors road.
+Traffic Circle is inside from the Roundabout. It is a privately-controlled checkpoint outdoors road.
 
 Out-direction of Traffic Circle is outside. [The roundabout and the traffic circle are the only place where the standard outside and inside directions are used]
 

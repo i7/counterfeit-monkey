@@ -578,38 +578,14 @@ Section 3 - Approaches and Describing Distance Travel
 
 Include Approaches by Emily Short. Use fast route-finding.
 
+Include Approaching Speedups by Counterfeit Monkey.
+
 A room can be nonsecret or forbidden. A room is usually nonsecret.
 
 A room can be nonsouthern or southern. A room is usually nonsouthern.
 
 ["Southern" rooms are those you reach by walking east or south from the roundabout]
 
-Carry out going to a forbidden room (called target):
-	now the target is nonsecret.
-
-Understand "go to [any nonsecret room]" or "goto [any nonsecret room]" or "go back to [any nonsecret room]" or "return to [any nonsecret room]" or "revisit [any nonsecret room]"  as approaching.
-
-The tell the player when blocked at a door rule response (A) is "Unfortunately, [we] [find] [we] [lack] a key fitting [the locked-thing].[line break]";
-
-The new approach refusal rule is listed instead of the refusing bad headings rule in the approach-finding rules.
-
-This is the new approach refusal rule:
-	if approach-heading is not a direction:
-		say "Neither of us can think how to get there from here.";
-		rule fails.
-
-The new approach heading finding rule is listed instead of the approach-heading selection rule in the approach-finding rules.
-
-This is the new approach heading finding rule:
-	now approach-heading is the best route from the location to the noun, using even locked doors.
-	[if approach-heading is not a direction:
-		now approach-heading is the best route from the location to the noun, using even locked doors;]
-
-The new actual approach movement rule is listed instead of the actual approach movement rule in the approach-finding rules.
-
-An approach-finding rule (this is the new actual approach movement rule):
-	now location is visited;
-	silently try going approach-heading.
 
 Path description count is a number that varies. [let's count how many times we've invoked this activity this turn!]
 
@@ -690,7 +666,8 @@ intervening (list of regions)	description (some text)
 
 A person has a list of regions called the intervening regions.
 
-Carry out going somewhere while hurrying (this is the new creating a path history rule):
+[Carry out going somewhere while hurrying (this is the new creating a path history rule):]
+This is the new creating a path history rule:
 	if the map region of the location is a region:
 		add the map region of the location to the intervening regions of the player, if absent.
 

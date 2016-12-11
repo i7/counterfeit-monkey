@@ -155,6 +155,11 @@ Rule for printing the name of the odor while shooting the odor with the anagramm
 Rule for printing the name of the odor while waving the letter-remover at the odor:
 	say "odor".
 
+Instead of going north in Wonderland when the secret-door is closed and The Oracle Project is nonsecret:
+	if the secret-door is marked-visible:
+		say "[The secret-door] is not open.";
+	otherwise:
+		say "[The secret-door] is not here."
 
 Section 3 - Equipment Archive
 
@@ -484,7 +489,7 @@ Check an actor switching on the boiler:
 
 Section 5 - Tunnel through Chalk
 
-The Tunnel through Chalk is below Surveillance Room.  Tunnel through Chalk is indoors and forbidden. The description is "This passage has been cut through natural cliff rock and looks older than the Bureau itself. The walls are rough-hewn, exposing [sedimentary strata]. Here and there it looks as though someone has actually excavated a fav[our]ed rock or relic."
+The Tunnel through Chalk is below Surveillance Room. Tunnel through Chalk is indoors, checkpoint and forbidden. The description is "This passage has been cut through natural cliff rock and looks older than the Bureau itself. The walls are rough-hewn, exposing [sedimentary strata]. Here and there it looks as though someone has actually excavated a fav[our]ed rock or relic."
 
 In-direction of Tunnel through Chalk is east. [Personal apartment]
 
@@ -634,7 +639,7 @@ Chapter 3 - Atlantida's Spaces
 Section 1 - Personal Apartment
 
 
-The Personal Apartment is a room. It is indoors and forbidden. The description is "At a guess, this is a room hardly anyone ever visits, or even knows about. Though the ceiling and one wall are bare cave, the rest has been paneled and  graciously decorated in the style of the end of the 18th century. [if the oil-paintings are in the location][Oil-paintings] on the walls depict great men and women of Atlantis gone by: Phyllida Shaply, Amelia Landison, Clarence Arbot, Jon Rosehip. [end if]An antique bed stands in the cen[ter] of the room."
+The Personal Apartment is a room. It is indoors, checkpoint and forbidden. The description is "At a guess, this is a room hardly anyone ever visits, or even knows about. Though the ceiling and one wall are bare cave, the rest has been paneled and  graciously decorated in the style of the end of the 18th century. [if the oil-paintings are in the location][Oil-paintings] on the walls depict great men and women of Atlantis gone by: Phyllida Shaply, Amelia Landison, Clarence Arbot, Jon Rosehip. [end if]An antique bed stands in the cen[ter] of the room."
 
 atlantida-woman is an attackable  woman in the Personal Apartment. [She is on the fancy bed.] The printed name of atlantida-woman is "Atlantida". The description of atlantida-woman is "Her face is ageless, her eyes a piercing blue. She looks like Phyllida Shaply, our famous forebear, except that there is something ethereal and heroic about her as well."
 
@@ -686,7 +691,7 @@ Before waving the letter-remover at the fancy bed when Phyllida is on the fancy 
 
 Section 2 - Private Solarium
 
-The Private Solarium is east of Personal Apartment. It is indoors and forbidden. It contains a coffee table and a chaise longue. The description of the coffee table is "Antique as well, most likely. It is the same handsome wood as the furnishings in the rest of the apartment."
+The Private Solarium is east of Personal Apartment. It is indoors, checkpoint and forbidden. It contains a coffee table and a chaise longue. The description of the coffee table is "Antique as well, most likely. It is the same handsome wood as the furnishings in the rest of the apartment."
 
 In-direction of Private Solarium is west. [Back to personal apartment]
 Out-direction of Private Solarium is north. [Out to precarious perch]
@@ -826,7 +831,7 @@ Report touching the sea-view:
 		-- evening:
 			say "The water retains the heat of a very sunny day, though the air is cooling quickly." instead;
 
-Precarious Perch is a room. It is forbidden. The description is "From up here there's a handsome [distant-sea-view], which isn't [i]so[/i] far down [i]really[/i]. But it's a scramble down a nearly sheer cliff for the first bit, until [we] make it down to the rockfall below, and it would be easy for a careless person to injure herself."
+Precarious Perch is a room. It is forbidden and checkpoint. The description is "From up here there's a handsome [distant-sea-view], which isn't [i]so[/i] far down [i]really[/i]. But it's a scramble down a nearly sheer cliff for the first bit, until [we] make it down to the rockfall below, and it would be easy for a careless person to injure herself."
 
 In-direction of Precarious Perch is south. [Back into private solarium]
 
@@ -859,7 +864,7 @@ Instead of going up in Abandoned Shore:
 Instead of going north in Abandoned Shore when the player is not in the kayak:
 	say "[We] have too far to go; just swimming won't get us out to Slango's yacht."
 
-Abandoned Shore is below Precarious Perch. It is forbidden. The description is "There's a little inlet of shore here, mostly boulders with little sand, completely cut off from the dock area and sheltered by the curve of the rock so that it wouldn't be visible from the sea unless someone were very close in."
+Abandoned Shore is below Precarious Perch. It is forbidden and checkpoint. The description is "There's a little inlet of shore here, mostly boulders with little sand, completely cut off from the dock area and sheltered by the curve of the rock so that it wouldn't be visible from the sea unless someone were very close in."
 
 Some boulders are scenery in Abandoned Shore. Understand "crack" or "rocks" or "boulder" as the boulders. The description is "Rough black rock, the kind that tears up your hands if you try to hold onto it too tightly."
 
@@ -981,7 +986,7 @@ Check facing in abandoned shore:
 Report facing in Abandoned Shore:
 	say "The charm of this place is that it's very hard to see anything in any direction but the ocean. In every other direction [we] are completely protected by rocks." instead.
 
-Open Sea is north of the Abandoned Shore. It is forbidden. The description is "The water stretches in all directions, but [we] can see off to the north where [viewed-yacht] is anchored, ready to bring us back aboard. Its metallic blue shape almost blends in with the water."
+Open Sea is north of the Abandoned Shore. It is forbidden checkpoint. The description is "The water stretches in all directions, but [we] can see off to the north where [viewed-yacht] is anchored, ready to bring us back aboard. Its metallic blue shape almost blends in with the water."
 	The introduction is "If [we] were further around the island to the east, [we] might be able to see bits of the drowned city: both the buildings that were legitimately destroyed when the land sunk into the sea, and the areas where during the Civil Dispute of Standard[ization] the authorities dumped unwanted foreign archaeological [if the player is wearing britishizing goggles]artefact[otherwise]artifact[end if]s. But here I'm afraid it's just shellfish and sand down there."
 
 Rule for listing exits when looking in the Open Sea:
@@ -1013,7 +1018,7 @@ Understand "drift" as waiting when the location is Open sea.
 Instead of waiting when the player is in Open Sea:
 	say "Rest for a moment if you insist, but the currents can be odd here; it would be better to make for the yacht and rest after [we] get there."
 
-Beside Slango's Ship is north of Open Sea.
+Beside Slango's Ship is north of Open Sea. It is checkpoint.
 
 Instead of facing north in Open Sea:
 	say "Slango's yacht is visible not too far off to the north. [We] can certainly make it."

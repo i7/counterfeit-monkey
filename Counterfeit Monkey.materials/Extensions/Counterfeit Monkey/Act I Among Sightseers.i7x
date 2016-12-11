@@ -38,9 +38,12 @@ Sanity-check unlocking the temporary barrier with something:
 	say "[The temporary barrier] is locked. [We][']d need to set the code-lock to the right number." instead.
 
 Sanity-check unlocking keylessly the temporary barrier:
-	if the code is marked-visible:
+	if the code is enclosed by location:
 		try setting the code-lock to "code" instead;
-	say "[The temporary barrier] is locked. [We][']d need to set the code-lock to the right number." instead.
+	if the number of entries in the path so far of the player is greater than 1:
+		say "[path-walked so far][line break][paragraph break][The temporary barrier] is locked. [We][']d need to set the code-lock to the right number. " instead;
+	otherwise:
+		say "[The temporary barrier] is locked. [We][']d need to set the code-lock to the right number." instead.
 
 Sanity-check locking the temporary barrier with something:
 	if the code is marked-visible:
@@ -499,10 +502,10 @@ An instructional rule (this is the teach more compass directions rule):
 			rule succeeds;
 	let way be nothing;
 	if an unvisited room (called goal) is adjacent:
-		let way be the best route from the location to the goal;
+		let way be the true-best route to the goal;
 	otherwise if there is a marked-visible open door (called portal):
 		let far side be the other side of the portal;
-		let way be the best route from the location to the far side;
+		let way be the true-best route to the far side;
 	otherwise:
 		make no decision;
 	if way is nothing:
@@ -647,6 +650,37 @@ The unlock barrier rule is listed before the teach dropping rule in the instruct
 The open barrier rule is listed before the teach dropping rule in the instructional rules.
 
 [The teach thinking rule is listed before the teach meta-features rule in the instructional rules.]
+
+The new teach compass directions rule is listed instead of the teach compass directions rule in the instructional rules.
+
+An instructional rule (this is the new teach compass directions rule):
+	if the new teach compass directions rule is listed in the completed instruction list:
+		make no decision;
+	if the held rule is the new teach compass directions rule:
+		let delay be the time of day minus movement reminder;
+		if delay is less than five minutes:
+			rule succeeds;
+	let way be nothing;
+	if a room (called goal) is adjacent:
+		let way be the true-best route to the goal;
+	otherwise if an open door (called portal) is marked-visible:
+		let far side be the other side of the portal;
+		let way be the true-best route to the far side;
+	otherwise:
+		make no decision;
+	if way is nothing:
+		make no decision;
+	let N be "[way]";
+	say "[first custom style][one of]Feel free to look around some more. When you're ready to move on from here, try[or]No rush, but just a reminder that when you want to move to a new location, you can go[stopping] [N in upper case].[roman type][run paragraph on]" (A);
+	now the expected action is the action of going way;
+	now the held rule is the new teach compass directions rule;
+	now movement reminder is the time of day;
+	rule succeeds.
+
+The new register going rule is listed instead of the register going rule in the carry out going rules.
+
+Carry out going (this is the new register going rule):
+	add the new teach compass directions rule to the completed instruction list, if absent.
 
 
 Part 2 - Old Town Celebration
@@ -797,7 +831,7 @@ Some grass is scenery in the Park Center. The description is "Deep green and vel
 Rule for distantly describing the Fair:
 	say "That way is the fair: a mass of booths and people and games and bright sunlight, too chaotic to get a good look at from here."
 
-The Fair is south of Park Center. The description is "[one of]Today is Serial Comma Day, one of the biggest holidays on the island, and a time when half the police force is off duty while the other half is over-extended. The perfect day to make an escape. [or][stopping]The square at the cen[ter] of town is [one of]therefore [or][stopping]crowded with people, and there's an overpowering smell of artificial butter and spun sugar."
+The Fair is south of Park Center. It is checkpoint. The description is "[one of]Today is Serial Comma Day, one of the biggest holidays on the island, and a time when half the police force is off duty while the other half is over-extended. The perfect day to make an escape. [or][stopping]The square at the cen[ter] of town is [one of]therefore [or][stopping]crowded with people, and there's an overpowering smell of artificial butter and spun sugar."
 
 Instead of smelling the Fair:
 	say "It smells like candy and popcorn, with a note of booze and another note of sweaty crowd."
@@ -1190,7 +1224,7 @@ Instead of going to the Screening Room when the ticket-taker does not know allow
 	set the current interlocutor to the ticket-taker;
 	queue hang-on-there.
 
-The Screening Room is west of Cinema Lobby. It is indoors. The description is "[if the player recollects what the movie seems]'Red'[otherwise]Whatever is scheduled for later showing[end if] has not started yet, and is probably not destined to start for some time; at any rate,[unless the project is switched on] the [film screen] is blank and[end if] no audience has yet assembled."
+The Screening Room is west of Cinema Lobby. It is indoors and checkpoint. The description is "[if the player recollects what the movie seems]'Red'[otherwise]Whatever is scheduled for later showing[end if] has not started yet, and is probably not destined to start for some time; at any rate,[unless the project is switched on] the [film screen] is blank and[end if] no audience has yet assembled."
 
 Out-direction of Screening Room is east. [Back to cinema lobby]
 
@@ -1383,7 +1417,7 @@ Test projection with "tutorial off / put reel on projector / turn on projector /
 Section 2 - Staircase
 
 
-The Monumental Staircase is east of Park Center and north of Heritage Corner [and south of Outdoor Cafe]. The description is "Once, the [central hillock] of the city was a fortified enclave, protected from the harbor and the peasant town by great walls. Now, however, the walls are mostly gone, except for a little spur that runs north from here. The walkways and tower are open to the public.
+The Monumental Staircase is east of Park Center and north of Heritage Corner [and south of Outdoor Cafe]. It is checkpoint. The description is "Once, the [central hillock] of the city was a fortified enclave, protected from the harbor and the peasant town by great walls. Now, however, the walls are mostly gone, except for a little spur that runs north from here. The walkways and tower are open to the public.
 
 Meanwhile a staircase as wide as a street [if the former direction is west]ascends into this town square, with the fountain playing at the cen[ter][otherwise]descends east from the town square toward the harbor[end if]."
 
@@ -2016,7 +2050,7 @@ Rule for listing exits when the location is High Street:
 
 The distant-staircase is scenery in High Street. Instead of climbing or entering the distant-staircase, try going west. The description of the distant-staircase is "Broad flat stairs of white stone, with people going up and down[if Monumental Staircase is unvisited]. There's a good view from the top of those stairs: you can see the ships in the harbor and everything. Well, you'll know that, of course[end if]."
 
-The Roundabout is southeast of the High Street. The Roundabout is a road. The description is "The traffic flows in a tight circle around a statue which [if Traffic Circle is visited][we] know all too well[otherwise][we] can never see clearly[end if][if the player is not in a car]. There is a pedestrian walkway around the outside of this circle, but crossing the tributary streets is an unpleasant experience involving considerable hazard. Unfortunately, there is no other quick way to get around this part of town[end if]."
+The Roundabout is southeast of the High Street. The Roundabout is a checkpoint road. The description is "The traffic flows in a tight circle around a statue which [if Traffic Circle is visited][we] know all too well[otherwise][we] can never see clearly[end if][if the player is not in a car]. There is a pedestrian walkway around the outside of this circle, but crossing the tributary streets is an unpleasant experience involving considerable hazard. Unfortunately, there is no other quick way to get around this part of town[end if]."
 
 The hard-to-see statue is scenery in the Roundabout. The description is "[if Traffic Circle is visited]It is, curiously, easier to get a sense of from a distance than it was close-up in the Traffic Circle[otherwise]I've seen it before: it's supposed to be Atlantida, the Spirit of the Atlantean people[end if]. Kind of a 19th-century French style of thing: flowing bronze robes, one breast naked, plump fingers clasping an olive branch. But [we] can't stop and stare at it with the traffic the way it is." Understand "atlantida" or "olive" or "branch" or "robes" or "bronze" or "breast" or "naked" as the hard-to-see statue.
 
@@ -2241,6 +2275,8 @@ Webster Court is north of Hesychius Street and west of Crumbling Wall Face. The 
 
 In-direction of Webster Court is north. [Into my parent's house]
 
+Webster Court is checkpoint.
+
 Instead of facing west in Webster Court:
 	say "The old city wall cuts off any view towards the harbor and the far horizon. The taller houses permit a view over, however."
 
@@ -2286,7 +2322,7 @@ My childhood bedroom faces northwest, away from the docks, towards the roofs of 
 
 The pink door is north of Webster Court and south of Foyer. The pink door is a door. The pink door is scenery. It is lockable and locked.
 
-Foyer is indoors.
+Foyer is indoors and checkpoint.
 
 Parental appearance is a scene. Parental appearance begins when the location is webster court and Patriotic chard-garden is visited and Private Beach is visited.
 
@@ -2346,6 +2382,10 @@ When parental appearance ends:
 I wave back rather weakly.
 
 He gets on his [if not looking]small red [end if]scooter, checks his helmet, and revs off to the south. Off, apparently, to investigate the synthes[ize]r that put us together. That will go slowly because of the holiday, but I'm guessing there will be Bureau investigators crawling all over the south side of old town in an hour or two."
+
+A room-restriction rule for Foyer:
+	say "Walking into my parents['] house is the action perhaps most likely to get us caught.";
+	rule fails.
 
 Instead of doing something to the pink door:
 	say "Walking into my parents['] house is the action perhaps most likely to get us caught."
@@ -2457,9 +2497,9 @@ After going from Roget Close to the Winding Footpath:
 		say "[We] walk through the wealthy neighb[our]hood to Roget Close. ";
 	clear path-walked for the player;
 	increase path description count by 1;
-	say "[if N is greater than 1]There [we][otherwise][We][end if] slip between the houses and down a path that looks as though it might lead to someone's back yard. No one has ever put up signage to correct this misapprehension because no one who lives around here is eager to encourage strangers on the private beach.
+	say "[if N is greater than 1]There [we][otherwise][We][end if] slip between the houses and down a path that looks as though it might lead to someone's back yard. No one has ever put up signage to correct this misapprehension because no one who lives around here is eager to encourage strangers on the private beach. [report-followers]
 
-Soon, however, the footpath begins to descend purposefully towards the level of the ocean[if the location is the final destination].[otherwise].[paragraph break][end if]";
+Soon, however, the footpath begins to descend purposefully towards the level of the ocean[if the location is the final destination].[line break][otherwise].[paragraph break][end if]";
 	continue the action;
 
 Section 5 - Winding Footpath
@@ -2472,7 +2512,7 @@ Out-direction of Winding Footpath is south. [Through the spinner gate]
 
 Through spinner-gate is the Winding Footpath. South of Winding Footpath is Roget Close.
 
-Winding Footpath is an outdoors room. The description is "The [underfoot-path] winds between the villas, sloping steeply downward. It is narrow, and [bushes] left and right conceal it even from the windows of the people living nearby." Understand "path" as Winding Footpath.
+Winding Footpath is an outdoors checkpoint room. The description is "The [underfoot-path] winds between the villas, sloping steeply downward. It is narrow, and [bushes] left and right conceal it even from the windows of the people living nearby." Understand "path" as Winding Footpath.
 
 Instead of going down in Winding Footpath:
 	try going north.
@@ -2627,7 +2667,7 @@ Test shrine with "tutorial off / autoupgrade / wave z-remover at kudzu / look be
 
 Section 6 - The Beach
 
-Private Beach is north of Winding Footpath. The description is "This is little more than a strip of fine yellow [sand], perhaps twenty me[ter]s from side to side, and five from the [hillside] to the waterline[if the sage is in the location and the sage is not handled]. A little [sage] grows on the hillside, escaped from some garden, along with wilder plants[end if]. Above, at the top of that slope, are houses with balconies overlooking the sea, but from this angle it's impossible to see much of them, or for them (you'll have to take my word on this) to see us[if high street is visited and roundabout is not visited].
+Private Beach is north of Winding Footpath. It is checkpoint. The description is "This is little more than a strip of fine yellow [sand], perhaps twenty me[ter]s from side to side, and five from the [hillside] to the waterline[if the sage is in the location and the sage is not handled]. A little [sage] grows on the hillside, escaped from some garden, along with wilder plants[end if]. Above, at the top of that slope, are houses with balconies overlooking the sea, but from this angle it's impossible to see much of them, or for them (you'll have to take my word on this) to see us[if high street is visited and roundabout is not visited].
 
 It's tempting to look for crabs among the rocks, but the tide is high just now, and even at the best of times this is not an area rich in sealife[end if]."
 

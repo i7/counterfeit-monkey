@@ -196,13 +196,11 @@ When seeking invite ends:
 Before going to University Oval:
 	if "Trace Brock's movements at the antique shop" is completed:
 		make no decision;
-	if hurrying:
-		let N be the number of entries in the path so far of the player;
-		if N is greater than 1:
-			say "[path-walked so far][paragraph break]";
-		otherwise:
-			clear the path-walked for the player;
-		now approach-destination is Samuel Johnson Hall;
+	if the number of entries in the path so far of the player is greater than 1:
+		say "[path-walked so far][paragraph break]";
+	otherwise:
+		clear the path-walked for the player;
+	now approach-destination is Samuel Johnson Hall;
 	say "There are a couple of All-Purpose Officers standing not-that-inconspicuously around campus. I still think we could walk around in there if we wanted to, but you aren't all that keen. And I guess it is possible that they're looking for students associated with the protests today." instead.
 
 
@@ -212,13 +210,13 @@ Section 5 - Higgate's Arrest
 After going to University Oval:
 	if (the invitation is handled and higgate-arrested has not happened) or (activist is in University Oval and activist does not recollect at least three quips):
 		let N be the number of entries in the path so far of the player;
-		if N is greater than 1:
+		if N is greater than 0:
 			say "[path-walked so far][paragraph break]";
 		otherwise:
 			clear the path-walked for the player;
 		unless final destination is University Oval:
 			now approach-destination is Samuel Johnson Hall; [Tricks the approaching verb into stopping here even if you're trying to reach someplace really far away.]
-		continue the action.
+	continue the action.
 		[custom-pause the game. ]
 
 Higgate-arrested is a scene. Higgate-arrested begins when the location is University Oval and seeking invite has ended.

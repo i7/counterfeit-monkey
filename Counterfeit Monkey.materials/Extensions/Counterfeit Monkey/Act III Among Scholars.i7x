@@ -54,7 +54,7 @@ After going to Arbot Maps & Antiques:
 		say "The woman watching over the store stops you. 'I'm sorry,' she says. 'We are only open to those who have made previous visiting arrangements.' And we're shooed back out.";
 		move the player to Long Street South, without printing a room description.
 
-Arbot Maps & Antiques is west of Long Street South. It is indoors and southern. Understand "shop" or "store" or "antique" as Arbot Maps &  Antiques.
+Arbot Maps & Antiques is west of Long Street South. It is indoors, checkpoint and southern. Understand "shop" or "store" or "antique" as Arbot Maps &  Antiques.
 
 Out-direction of Arbot Maps & Antiques is east. [Long Street South]
 
@@ -213,7 +213,7 @@ Rule for writing a topic sentence about the piano:
 
 Section 4 - Drinks Club
 
-Fleur d'Or Drinks Club is west of Fleur d'Or Lobby. It is indoors and southern. The description is "The back wall is dramatically decorated with bottled liquors of all sorts, from gin to cachaça; there's a giant bottle of Campari, taller than your average three-year-old, with a red ribbon around its neck.
+Fleur d'Or Drinks Club is west of Fleur d'Or Lobby. It is indoors, checkpoint and southern. The description is "The back wall is dramatically decorated with bottled liquors of all sorts, from gin to cachaça; there's a giant bottle of Campari, taller than your average three-year-old, with a red ribbon around its neck.
 
 What makes this place technically a drinks club rather than a bar is its lic[ense] to serve letter-manufactured food and drink. [A toolkit] on the [dor-bar-top] contains [a list of things *in the toolkit], ready to be transformed into their respective cocktails."
 
@@ -327,7 +327,7 @@ To say square-refusal:
 		else:
 			say "I'm pretty sure they've got one in one of the fancy bars off north Long Street.".
 
-South of Long Street South is Palm Square. The description of Palm Square is "[if unvisited]Now this is my part of town: [end if]Palm Square is the beginning of the university district. To the [Southeast], through the iron gate, is the university campus proper; and that unobtrusive little doorway directly [south] of us leads into the Babel Café." Palm Square is proper-named and southern.
+South of Long Street South is Palm Square. The description of Palm Square is "[if unvisited]Now this is my part of town: [end if]Palm Square is the beginning of the university district. To the [Southeast], through the iron gate, is the university campus proper; and that unobtrusive little doorway directly [south] of us leads into the Babel Café." Palm Square is proper-named, checkpoint and southern.
 
 Clearwater Cosmetic Clinic is a facade in Palm Square. It fronts east. It is scenery. The description is "It is closed for the holiday. About a dozen copies of the same ad plaster the wall."
 
@@ -375,7 +375,7 @@ Section 3 - Apartment Window
 
 Southwest of Palm Square is a apartment door. apartment door is a lockable locked door. It is scenery. Southwest of apartment door is My Apartment.
 
-My Apartment is southern. Understand "home" as My Apartment.
+My Apartment is southern checkpoint. Understand "home" as My Apartment.
 
 Understand "go home" as home-going. Home-going is an action applying to nothing.
 
@@ -489,7 +489,7 @@ Understand "climb through [something]" or "climb in [something]" or "climb into 
 
 Section 4 - Apartment Bathroom
 
-The Apartment Bathroom is north of My Apartment. The apartment bathroom is a bathroom. It is southern.
+The Apartment Bathroom is north of My Apartment. The apartment bathroom is a bathroom. It is southern and checkpoint.
 
 In-direction of Apartment Bathroom is south. [My apartment]
 Out-direction of Apartment Bathroom is east. [Palm Square]
@@ -707,13 +707,17 @@ To say ring-fetch:
 
 The ring unlocks the sturdy iron gate. The ring unbolts the sturdy iron gate.
 
+Check unlocking the sturdy iron gate with the ring when the player is hurrying:
+	say "[We] unlock [the sturdy iron gate] with [the ring]. ";
+	continue the action.
+
 Carry out taking the ring:
 	complete "Retrieve my student ring from my apartment".
 
 Instead of climbing the gate:
 	say "It is not badly built, as far as gates go, and it would not be possible to climb over without attracting attention."
 
-Southeast of the sturdy iron gate is the University Oval. The University Oval is proper-named and southern.
+Southeast of the sturdy iron gate is the University Oval. The University Oval is proper-named, checkpoint and southern.
 
 The description of University Oval is "This is the cen[ter] of the university, a broad grassy oval shaded with [sycamore trees] and surrounded by buildings in brick or white stone."
 
@@ -779,7 +783,7 @@ That's to say that we study how the ability to change things based on their name
 
 [or][stopping]The department office, with several professorial offices leading off of it, is to the [southeast]. To the [southwest] is the seminar room, where many of the upper-level courses occur, and which also contains the department library; downstairs is the basement, where the graduate students and junior instructors are kept."
 
-Samuel Johnson Hall is indoors and southern.
+Samuel Johnson Hall is indoors, checkpoint and southern.
 
 Out-direction of Samuel Johnson Hall is north. [To University oval]
 
@@ -798,7 +802,7 @@ Section 3 - Seminar Room
 
 Southwest of Samuel Johnson Hall is the seminar door. The seminar door is a closed lockable locked door.  The seminar door is scenery. The description of the seminar door is "It's sturdy, because sometimes valuable equipment is stored in the room beyond. That room also contains the library of department books, a set of research materials kept on hand so that people don't have to go over to the university library to double-check basic data during a discussion."
 
-Southwest of the seminar door is Language Studies Seminar Room. The description of the Language Studies Seminar Room is "They recently redid this room, and whoever picked the decorations had postmodern tastes." The Language Studies Seminar Room is indoors and southern.
+Southwest of the seminar door is Language Studies Seminar Room. The description of the Language Studies Seminar Room is "They recently redid this room, and whoever picked the decorations had postmodern tastes." The Language Studies Seminar Room is indoors, checkpoint and southern.
 
 After looking in the Language Studies Seminar Room when the seminar door is open:
 	if Professor Higgate is marked-visible:
@@ -1041,7 +1045,7 @@ The description of the mailboxes is "There are slots for all the professors and 
 
 Section 5 - Higgate's Office
 
-Higgate's office is an office. It is privately-controlled and southern.
+Higgate's office is an office. It is privately-controlled, checkpoint and southern.
 
 Higgate's office door is west of the Language Studies Department Office. Higgate's office door is a door. It is open and lockable and scenery. Understand "west door" as higgate's office door when the location is the Language Studies Department Office.
 
@@ -1060,6 +1064,7 @@ She fiddles with her keys for a moment before finding the right one. 'Here you g
 	move Professor Higgate to Seminar Room;
 	now the seminar door is unlocked;
 	now the seminar door is open;
+	rapidly move followers to Seminar Room;
 	move the player to Seminar Room;
 	record "gaining access to the synthesizer" as achieved;
 	stop the action.
@@ -1393,7 +1398,7 @@ Instead of searching the special glass window when office-door-1 is closed:
 Instead of searching the special glass window when office-door-1 is open:
 	say "[We] get a view of the wall behind the door, which is not terribly exciting."
 
-Waterstone's Office is north of office-door-1. It is an office. It is privately-controlled and southern.
+Waterstone's Office is north of office-door-1. It is an office. It is privately-controlled, checkpoint and southern.
 
 The description of Waterstone's Office is "A very finicky, neatly arranged room, in which one never feels quite at home.".
 
@@ -1537,7 +1542,7 @@ Carry out recycling something:
 
 Section 8 - Rectification Room
 
-The Rectification Room is west of the small door. It is indoors and southern. The description is "This is where equipment is brought for a tune-up, or to have its legal limits reinstalled (or, on rare occasions, removed). Access to these abilities is tightly controlled by the Bureau."
+The Rectification Room is west of the small door. It is indoors, checkpoint and southern. The description is "This is where equipment is brought for a tune-up, or to have its legal limits reinstalled (or, on rare occasions, removed). Access to these abilities is tightly controlled by the Bureau."
 
 Instead of switching on the reclamation machine:
 	try switching on the reclamation computer.
