@@ -85,6 +85,8 @@ To recommend (chosen list - a list of things):
 			increase scr by 1;
 		if contender indirectly-follows the current quip:
 			increase scr by 3;
+		if contender is peripheral:
+			increase scr by 1;
 		if scr is high-score:
 			add contender to high-scorers;
 		otherwise:

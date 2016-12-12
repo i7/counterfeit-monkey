@@ -384,28 +384,11 @@ The last availability rule (this is the generic availability rule):
 
 Book 3 - Peripheral Quips
 
-Definition: a quip (called the target quip) is peripheral:
-	if the target quip is plausible:
+Definition: a quip is peripheral:
+	if it is periphery:
 		yes;
-	if the target quip is not flagged-ready:
-		no;
-	if the target quip is a location-questioning quip:
-		no;
-	if the target quip is a demonstration quip:
-		no;
-	if the target quip is a purchasing quip:
-		no;
-	if the target quip is a thanking quip:
-		no;
-	if the target quip is the greet-quip:
-		no;
-	if location is hesychius street:
-		if the target quip mentions food:
-			if the target quip is recommend other vegetables:
-				yes;
-			otherwise:
-				no;
-	yes;
+	no.
+
 	[if the target quip is unlisted-plausible:
 		no;
 	[unless addressing everyone is true:]

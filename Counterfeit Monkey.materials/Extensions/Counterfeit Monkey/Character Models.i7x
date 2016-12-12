@@ -224,6 +224,9 @@ A quip can be background-information.
 A plausibility rule for a background-information quip:
 	it is dubious.
 
+Does the player mean discussing a peripheral quip:
+	it is likely.
+
 Definition: a quip is personal:
 	if it mentions romance:
 		yes;

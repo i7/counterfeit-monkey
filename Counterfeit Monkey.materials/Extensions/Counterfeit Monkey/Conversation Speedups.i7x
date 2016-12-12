@@ -31,7 +31,7 @@ Table of Current Subjects
 viable-subject (a thing)
 with 70 blank rows.
 
-
+To decide whether (q - a quip) is periphery: (- (IsPeripheral({q})) -).
 
 Subject count is a number that varies. 
 The subject count variable translates into I6 as "subject_count".
@@ -145,6 +145,20 @@ Include (-
 	[ MySetUnlistedPlausible q;
 		for (q = child((+quip-repository+)): q :q=sibling (q))
 			q.(+ listed-plausible +) = false;
+	];
+
+	[ IsPeripheral quip;
+		if (quip.(+ listed-plausible +)) rtrue;
+		if (~~(quip.(+ flagged-ready +))) rfalse;
+		if (quip ofclass (+ location-questioning quip +)) rfalse;
+		if (quip ofclass (+ demonstration quip +)) rfalse;
+		if (quip ofclass (+ purchasing quip +)) rfalse;
+		if (quip ofclass (+ thanking quip +)) rfalse;
+		if (quip == (+ greet-quip +)) rfalse;
+		if ((real_location == (+ hesychius street +)) && (MyMentions(quip, (+ food +))))
+			if (quip == (+ recommend other vegetables +)) rtrue;
+			else rfalse;
+		rtrue;
 	];
 
 	[ quipsay q;
