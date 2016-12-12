@@ -56,8 +56,6 @@ w
 w
 go to cinema
 buy ticket
-go to cinema
-give ticket to ticket-taker
 w
 get all
 open backpack
