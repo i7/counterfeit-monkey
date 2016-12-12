@@ -605,6 +605,12 @@ This is the new approach heading finding rule:
 	[if approach-heading is not a direction:
 		now approach-heading is the best route from the location to the noun, using even locked doors;]
 
+The new actual approach movement rule is listed instead of the actual approach movement rule in the approach-finding rules.
+
+An approach-finding rule (this is the new actual approach movement rule):
+	now location is visited;
+	silently try going approach-heading.
+
 Path description count is a number that varies. [let's count how many times we've invoked this activity this turn!]
 
 Every turn (this is the reset path description count rule):
@@ -1114,7 +1120,7 @@ An approach-finding rule (this is the explicitly enter car rule):
 						say "[path-walked so far][line break][paragraph break]";
 					try entering second target.
 
-The explicitly enter car rule is listed before the actual approach movement rule in the approach-finding rules.
+The explicitly enter car rule is listed before the new actual approach movement rule in the approach-finding rules.
 
 Instead of going from a road to a road:
 	if the player is in a car:

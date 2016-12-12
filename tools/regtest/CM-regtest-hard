@@ -298,8 +298,6 @@ There is a dismissive blatt from the monocle, and transposed over the oil is a f
 Hesychius Street
 As the street names make obvious, this part of town was laid out in a different political age, when it was considered more important to commemorate linguistic richness than to standardize practices.
 
-This is also the edge of the richest part of town, with houses — really, almost villas — that were built for households with servants. My parents' place is just a block or two north of here.
-
 On holidays like today, this street is often host to a farmer's market; though it is now late enough in the day that most of the farmers have given up and gone home, taking with them their twenty-three varieties of pickled olives, their loganberry jam, and their pigs'-feet-in-aspic.
 
 One remaining farmer lazes here, watching his stall.
@@ -1774,7 +1772,7 @@ Long Street is lined on each side with a double-row of tall, anemic palm trees t
 
 /Our car (— (a sub-sub-compact that looks like it might be outraced by a kid on a scooter|which might better be described as a covered bicycle) — )?is parked nearby.
 
-We can go north, south to Palm Square, and west to Arbot Maps & Antiques from here.
+We can go north to Long Street North, south to Palm Square, and west to Arbot Maps & Antiques from here.
 
 > get bag
 /We (take|get|pick up|acquire) the shopping bag. The logo on the outside is from Landison's, a popular toy store on the island. It's probably closed today, so this would have been bought earlier — possibly even as a present for Serial Comma Day.
@@ -1853,7 +1851,7 @@ Long Street is lined on each side with a double-row of tall, anemic palm trees t
 
 /Our car (— (a sub-sub-compact that looks like it might be outraced by a kid on a scooter|which might better be described as a covered bicycle) — )?is parked nearby.
 
-We can go north, south to Palm Square, and west to Arbot Maps & Antiques from here.
+We can go north to Long Street North, south to Palm Square, and west to Arbot Maps & Antiques from here.
 
 There is a continuous angry whine from the jigsaw.
 
@@ -2326,7 +2324,7 @@ We step on a bent twig before we back away again.
 
 It is a place that might have been developed long ago; only it is known that there are remains of Roman settlement here, and there is a risk that digging out the foundations would turn up some of those ruins, exposing a large number of Latin-language objects to the light of day. To prevent this catastrophe the whole area has been placed off limits to development.
 
-We can go southeast and west to Tall Street from here.
+We can go southeast to the Bus Station and west to Tall Street from here.
 
 There is a continuous angry whine from the jigsaw.
 
@@ -2866,7 +2864,7 @@ There is a continuous angry whine from the jigsaw.
 
 There is a continuous angry whine from the jigsaw.
 
-/Brock( is studiously looking around the room| watches us with a slightly disturbing intentness in his eyes|'s looking at us, but when I look back, he cuts his eyes away| is looking at everything but us). "I've half a mind to explore a little while we're down here just about unsupervised," Brock says reflectively.
+/(Brock|He)( is studiously looking around the room| watches us with a slightly disturbing intentness in his eyes|'s looking at us, but when I look back, he cuts his eyes away| is looking at everything but us). "I've half a mind to explore a little while we're down here just about unsupervised," Brock says reflectively.
 
 I glare at him.
 
@@ -2886,7 +2884,7 @@ We reset the device to p. The apple gives way to the now-familiar ale.
 
 There is a continuous angry whine from the jigsaw.
 
-Brock touches some gel to the jigsaw. "Just in case someone out there is listening." With an audible SPLORT, the jigsaw becomes a jigsaw. 
+/Brock touches some gel to the jigsaw. "(Just in case someone out there is listening|In the spirit of keeping the peace)." With an audible SPLORT, the jigsaw becomes a jigsaw. 
 
 > put ale in t-inserter
 There is a loud and satisfying pop from the machine as it turns the ale into a tale.
@@ -2918,10 +2916,14 @@ It is non-physical, but it sounds like a waspish playground voice recounting the
 
 "The fact that it made the tale and the tattle means that the stabilization is inconsistent at best," Brock says. "And I don't see any min-max calibrator on the outside. Remind me to check the plans again when we get back to the yacht. They may not have tried to handle that problem at all."
 
-/Brock touches some gel to the tattle. "(In the spirit of keeping the peace|Just in case someone out there is listening)." With an audible SPLORT, the tattle becomes an apple. 
+/(An excited child's voice says, "Freddy made an underage twine purchase."|"Daddy, Timmy turned my bread into a bead!" tattles a childish voice.|A child's voice from the tattle says, "Mom! Timmy took the R out of my rice!"|"Daddy, David says he's going to turn my cake into caca," whimpers a small child.)?
+
+/(Brock touches some gel to the tattle. "(In the spirit of keeping the peace|Just in case someone out there is listening)." With an audible SPLORT, the tattle becomes an apple.)? 
 
 > get all from t-inserter
-/We (take|get|pick up|acquire) the apple. Red-cheeked and rosy.
+/We (take|get|pick up|acquire) the tattle.
+
+/(Brock touches some gel to the tattle. "(In the spirit of keeping the peace|Just in case someone out there is listening)." With an audible SPLORT, the tattle becomes an apple.)? 
 
 > wave e-remover at piece
 /We reset the device to e. There is a [a-z \-]+, and the piece turns into a pic. It's a snapshot of a happy family visiting Typo Land Funfair, the closest thing Anglophone Atlantis has to an amusement park.
@@ -3078,7 +3080,7 @@ The functional area continues to the south, and the hallway is west.
 > put pass in punch
 You put the pass into the wire basket of the umlaut punch. There is a hum as the punch warms up, then a bang! as the tines come down sharply, tattooing the pass.
 
-/Briefly the pass appears as the (speed|art|power|thrash|folk) metal band Päss, before fading back to itself: there just isn't enough energy to hold the conversion, given Päss's (fading|weak|dismal|non-existent) (name-recognition|reputation). (They haven't been playing many clubs lately|The reunion tour wasn't a big success|They never really got out of their parents' basement).
+/Briefly the pass appears as the (speed|art|power|thrash|folk|death) metal band Päss, before fading back to itself: there just isn't enough energy to hold the conversion, given Päss's (fading|weak|dismal|non-existent) (name-recognition|reputation). (They haven't been playing many clubs lately|The reunion tour wasn't a big success|They never really got out of their parents' basement).
 
 When they are gone, a power chord remains in the air.
 

@@ -2365,7 +2365,7 @@ Long Street is lined on each side with a double-row of tall, anemic palm trees t
 
 /Our car (— (a sub-sub-compact that looks like it might be outraced by a kid on a scooter|which might better be described as a covered bicycle) — )?is parked nearby. 
 
-We can go north, south to Palm Square, and west to Arbot Maps & Antiques from here.
+We can go north to Long Street North, south to Palm Square, and west to Arbot Maps & Antiques from here.
 
 The snapping continues.
 
@@ -3047,7 +3047,7 @@ We step on a twig before we back away again.
 
 It is a place that might have been developed long ago; only it is known that there are remains of Roman settlement here, and there is a risk that digging out the foundations would turn up some of those ruins, exposing a large number of Latin-language objects to the light of day. To prevent this catastrophe the whole area has been placed off limits to development.
 
-We can go southeast and west to Tall Street from here.
+We can go southeast to the Bus Station and west to Tall Street from here.
 
 The snapping continues.
 
@@ -3057,7 +3057,7 @@ In contrast with the parks in the more savory parts of town, this is a bit of pa
 
 A twig lies in the grass. 
 
-We can go southeast and west to Tall Street from here.
+We can go southeast to the Bus Station and west to Tall Street from here.
 
 > listen
 The crowd to the west is noisy and getting noisier.
@@ -3232,7 +3232,7 @@ In contrast with the parks in the more savory parts of town, this is a bit of pa
 
 A twig lies in the grass. 
 
-We can go southeast and west to Tall Street from here.
+We can go southeast to the Bus Station and west to Tall Street from here.
 
 The snapping continues.
 
@@ -3504,7 +3504,7 @@ The sink is far too large for us to carry, and falls onto the ground.
 
 /(He (cranes to look around at the back of the machine, but doesn't find anything interesting|runs a hand over the small nozzles). "If it can't do abstracts, the market value is going to be a lot lower because of the limited-depth trees.")?
 
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) complain about Brock's recklessness or discover why Brock got stuck here. (Maybe it's not worth it, though|Or, then again, there's always finishing the job).
+/(We could|I'd like to|We want to|I'm inclined to|My response would be to) complain about Brock's recklessness(,| or) discover why Brock got stuck here(, or ask what buried command center he heard of)?. (Maybe it's not worth it, though|Or, then again, there's always finishing the job).
 
 > wave k-remover at sink
 We reset the device to k. With a distinct whiff of sulfur, the sink turns into a sin. An abstract representation of carelessness with resources, represented by the wasteful use of a great deal of clean water.
@@ -5552,7 +5552,6 @@ The achievements you have accomplished so far include:
   Alex Rosehip award for completing the game in easy mode
   Finished tutorial mode
   Finn Rosehip award for gnu-hunting
-  Priscilla Parsons award for winning the game without ever entering the church
 
 Would you like to RESTART, RESTORE a saved game, QUIT, UNDO the last command, review the ACHIEVEMENTS you've reached so far, or learn about some of the SOURCES used in creating this game?
 
