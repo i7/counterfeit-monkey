@@ -1245,7 +1245,7 @@ Before conversing when the noun is the player (this is the no talking to yoursel
 
 Before conversing when the noun is not the current interlocutor (this is the greet a new interlocutor rule):
 	implicitly greet the noun;
-	if the noun is not the current interlocutor, stop the action;
+	[if the noun is not the current interlocutor, stop the action;
 	now last command is the player's command;
 	stop the action.
 
@@ -1256,7 +1256,7 @@ Rule for reading a command when last command is not "" (this is the re-reading i
 A first turn sequence rule when the last command is not "" (this is the stop the turn sequence if re-checking input rule):
 	rule succeeds.
 
-last command is text that varies.
+last command is text that varies.]
 
 Before showing something to someone when the second noun is not the current interlocutor (this is the showing needs an interlocutor rule):
 	if the second noun is the player:
