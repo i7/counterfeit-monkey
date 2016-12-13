@@ -1173,6 +1173,9 @@ The ticket-taker is an alert man in the Cinema Lobby. The initial appearance is 
 	The description of the ticket-taker is "Not one of this country's best and brightest, but he seems good-natured."
 	Understand "young" or "man" or "ticket taker" or "taker" as the ticket-taker.
 
+A ranking rule for the ticket-taker when the ticket-taker is not the current interlocutor:
+	decrease the description-rank of the ticket-taker by 30.
+
 Rule for writing a paragraph about the ticket-taker when the ticket-taker is not the current interlocutor:
 	set the current interlocutor to the ticket-taker;
 	if the ticket-taker knows allowed-in-movie, say "'Yo,' says the [ticket-taker] as [we] come in.";
