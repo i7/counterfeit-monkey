@@ -283,8 +283,7 @@ First after writing a paragraph about the bartender when the current-paragraph r
 	say "[The other patrons] are scattered around the room at small tables, drinking or talking among themselves. ";
 	make no decision.
 
-A ranking rule for the patron:
-	if just entered drinks club is true:
+A ranking rule for the patron when the bartender is not the current interlocutor:
 		decrease the description-rank of the patron by 30.
 
 Rule for writing a topic sentence about the patron:

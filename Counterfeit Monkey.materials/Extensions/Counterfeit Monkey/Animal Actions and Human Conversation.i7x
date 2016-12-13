@@ -1580,15 +1580,9 @@ what the paddle does is an unlisted repeatable questioning quip.
 	The reply is "[one of]'This item,' says the bartender, flourishing it for you to see, 'is a genuine licensed homonym paddle. Changes one item into another item as long as the two have identical names.'[or]The bartender explains again the concept of a homonym paddle that is able to convert an item into another item of the same name.[stopping]".
 	It quip-supplies the bartender.
 
-Just entered drinks club is a truth state that varies.
-
-Check going from Fleur d'Or Lobby to Fleur d'Or Drinks Club:
-	now just entered drinks club is true.
-
 To say atmospheric-event:
-	if just entered drinks club is true:
+	if the bartender is not the current interlocutor:
 		say "[The patron] and [the bartender] from earlier are still here.[no line break]";
-		now just entered drinks club is false;
 	otherwise:
 		say "[one of][The patron] is sipping his [gin-tonic], while [the bartender] tidies up the bar[or][The bartender] is laughing at something [the patron] just said to her[or][The bartender] is cleaning her [homonym paddle] for future use[or]One of the businessmen wanders up to the bar and orders some peanuts[or]The bartender [is-s]get[ing-s] busy washing up some glassware[or]The bartender [is-s]pour[ing-s] tequila shots for a guest[or]One of the customers comes up and asks [the bartender] about the toolkit, and [the bartender] explains what drinks they turn into[or]A businesswoman comes up to the bar for directions to the nearest restroom[or]The bartender [is-s]construct[ing-s] a garish layered blue-and-white drink in a very tall glass[or]The bartender [is-s]pour[ing-s] someone a daiquiri with plastic monkeys clinging to the side of the glass[or]The bartender [is-s]pour[ing-s] a pink beverage for one of the customers, preparing the rim with a bit of flamed orange peel[or][The patron] [is-s]talk[ing-s] with [the bartender] about the weather in Atlantis[at random].[no line break]"
 
