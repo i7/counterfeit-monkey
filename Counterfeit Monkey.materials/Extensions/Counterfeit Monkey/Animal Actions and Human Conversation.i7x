@@ -3504,7 +3504,10 @@ Sanity-check buying the origin paste from the barman when the origin paste is no
 
 Instead of subject-asking the origin paste when the origin paste is not won:
 	if the barman recollects whether we can hath the origin paste:
-		say "We've already established that the origin paste has to be won rather than bought or given away.";
+		if the barman does not recollect how one might go about winning:
+			try discussing how one might go about winning;
+		otherwise:
+			say "We've already established that the origin paste has to be won rather than bought or given away.";
 	otherwise:
 		try discussing whether we can hath the origin paste.
 
@@ -3519,6 +3522,9 @@ whether we can hath the origin paste is a questioning quip.
 Availability rule for how one might go about winning:
 	if the origin paste is not on the bar-top or the origin paste is won:
 		it is off-limits.
+
+A plausibility rule for how one might go about winning:
+	it is plausible.
 
 how one might go about winning is a questioning quip.
 	Understand "prize" or "game" or "competition" as how one might go about winning. The comment is "'Explain this game as though I have no idea what you're talking about,' you say, leaning on the bar in an interested fashion. Are you flirting with Parker? No? Okay. Good to know.".
