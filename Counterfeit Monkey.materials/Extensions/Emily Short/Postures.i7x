@@ -93,7 +93,7 @@ To decide whether (N - a person) can sit here:
 	no.
 
 Instead of an actor sitting down (this is the convert sitting down rule):
-	if the holder of the actor contains something (called target) which allows seated:
+	if the holder of the actor contains something enterable (called target) which allows seated:
 		if the holder of the actor contains an enterable seated thing (called the better target):
 			now the target is the better target;
 		try the actor sitting on the target;
