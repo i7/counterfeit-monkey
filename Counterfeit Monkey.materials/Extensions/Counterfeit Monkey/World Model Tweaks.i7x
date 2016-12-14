@@ -1793,7 +1793,7 @@ Rule for disclosing exterior of something which is in a drawer:
 Rule for disclosing contents of a drawer (called special-target):
 	say "[if the prior named object is the special-target]Inside[otherwise]In [the special-target][end if] [is-are a list of things *in the special-target]. [run paragraph on]".
 
-A desk is a kind of supporter. [Every desk incorporates two vertical drawers.] A desk is usually scenery. The description of a desk is usually "It's fakely veneered in dark wood and shows signs of years of abuse." A desk is usually seated.
+A desk is a kind of supporter. [Every desk incorporates two vertical drawers.] A desk is usually scenery. The description of a desk is usually "It's fakely veneered in dark wood and shows signs of years of abuse." [A desk is usually seated.]
 
 Instead of inserting something into a desk:
 		say "[The second noun] [don't] have a drawer."
