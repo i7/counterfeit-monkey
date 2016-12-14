@@ -2565,6 +2565,7 @@ what  other group was like is an unlisted questioning quip. The comment is "'Was
 	It indirectly-follows who would do this.
 
 what the young woman looked like is a questioning quip.
+	Understand "she" or "her" as what the young woman looked like.
 	The mentions-list is {yourself}.
 	The comment is "'So, like, what was she like?' I venture a little giggle. I don't think it's quite a success.".
 	The reply is "'What, the young woman?' [The attendant] shrugs. 'Kind of uptight.'".
