@@ -1666,11 +1666,15 @@ Does the player mean asking the bartender to try attacking something with someth
 	it is very unlikely.
 
 Rule for refusing comment by the bartender:
-	unless the noun is enclosed by the player or the noun is the player or the noun is the patron:
-		silently try taking the noun;
+	unless the noun is enclosed by the player or the noun is a person or the noun is scenery:
+		unless the noun is fixed in place:
+			silently try taking the noun;
 		if the player is not holding the noun:
 			say "We're having a little trouble holding it up so that she can see.";
 			rule fails;
+	if the noun is scenery:
+		say "She laughs.[paragraph break]'Do you want me to wreck this place?'";
+		rule succeeds;
 	if the noun is naughty-sounding:
 		say "[The bartender] takes a look and smirks.
 
