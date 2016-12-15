@@ -3546,7 +3546,7 @@ A plausibility rule for how one might go about winning:
 	it is plausible.
 
 how one might go about winning is a questioning quip.
-	Understand "prize" or "game" or "competition" as how one might go about winning. The comment is "'Explain this game as though I have no idea what you're talking about,' you say, leaning on the bar in an interested fashion. Are you flirting with Parker? No? Okay. Good to know.".
+	Understand "prize" or "game" or "competition" or "to win" as how one might go about winning. The comment is "'Explain this game as though I have no idea what you're talking about,' you say, leaning on the bar in an interested fashion. Are you flirting with Parker? No? Okay. Good to know.".
 	The mentions-list is {origin paste}.
 	The reply is "'It's a designated challenge game,' says Parker. You've seen this played before, but he explains the rules anyway. [paragraph break]'There are two contestants, one challenger and one defender.
 
