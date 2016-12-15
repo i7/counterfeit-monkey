@@ -78,7 +78,7 @@ A first after reading a command rule when how-many-people-here is positive (this
 	if the player's command includes "where to find":
 		replace the matched text with "where there seems";
 		make no decision;
-	unless the player's command includes "how to":
+	unless the player's command includes "how to" or the player's command includes "where to":
 		if the player's command includes "to" and the player's command includes "ask/tell":
 			let N be "[player's command]";
 			replace the regular expression "^(ask|tell) (.*?) to " in N with "\2, ";
