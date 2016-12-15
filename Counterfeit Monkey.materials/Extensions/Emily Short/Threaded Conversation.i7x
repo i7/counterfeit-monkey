@@ -1240,6 +1240,8 @@ Starting a conversation with it about is an action applying to two visible thing
 [Starting a conversation with it about is conversing. ]
 
 Carry out starting a conversation with it about:
+	if the noun is not enclosed by location:
+		say "[The noun] isn't here." instead;
 	implicitly greet the noun;
 	if the noun is the current interlocutor:
 		[follow the relabel available quips rule;]
