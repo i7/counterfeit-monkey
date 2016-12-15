@@ -1720,7 +1720,7 @@ The passage-place is a thing. The printed name is "passage". Understand "passage
 
 [This portion is, again, totally an Easter egg: there's no need to go to the Shadow Chamber, and on the whole it's pretty unlikely that anyone will on the first try. However, it's a repository for palindromes and word puzzles of non-English and slightly superstitious origin, suggesting that some sense of magic attached to these even before linguistic efficacy was widely detected.]
 
-The Shadow Chamber is a room. It is indoors. The description is "Dim lights in the floor make it possible to navigate in here, though it's still fairly dark. The place is small and shabby, the air stale.[assign-amanda]".
+The Shadow Chamber is a room. It is indoors and forbidden. The description is "Dim lights in the floor make it possible to navigate in here, though it's still fairly dark. The place is small and shabby, the air stale.[assign-amanda]".
 
 [Somewhat hackish way to get an extra line break before the achievement message and avoid a double paragraph break after]
 To say assign-amanda:
@@ -1763,8 +1763,14 @@ Instead of entering the passage-place:
 	say "[We] clamber down into the passage. It feels disconnected from other places, as though it didn't belong here at all. Soon we can't see the light from the door.";
 	now the player is in the Shadow Chamber.
 
-Instead of going down when passage-place is marked-visible:
-	try entering the passage-place.
+Instead of going down in Workshop:
+	if passage-place is marked-visible:
+		try entering the passage-place;
+		the rule fails;
+	if passage-place is seen:
+		say "[The passage-place] is not here any more.";
+	otherwise:
+		continue the action.
 
 Instead of going inside when passage-place is marked-visible:
 	try entering the passage-place.
