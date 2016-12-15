@@ -18,8 +18,12 @@ Instead of taking an animal when the heft of the noun is less than 4:
 	now the score is the number of useful things enclosed by the player;
 	if the score is 3, end the game saying "You are now ready for the next episode!"]
 
+Include Animal Speedups by Counterfeit Monkey.
+
 Every turn (this is the contained people exiting rule):
-	repeat with burden running through people-present:
+	rapidly check all contained people.
+
+	[repeat with burden running through people-present:
 		if the burden is not contained:
 			next;
 		if the burden is the pirate:
@@ -39,11 +43,11 @@ Every turn (this is the contained people exiting rule):
 					if time entry is time of day:
 						next;
 					otherwise:
-						if a random chance of 1 in 3 succeeds:
+						if a random chance of 1 in 10 succeeds:
 							blank out the whole row;
 						otherwise:
 							next;
-			try the burden exiting;
+			try the burden exiting;]
 
 
 Definition: a person is contained:
@@ -83,16 +87,7 @@ Section 2 - Animal Following
 
 Carry out entering a vehicle:
 	now pursuing-state is true;
-	repeat with traveler running through fake people in the location:
-		try the traveler entering the noun;
-		if the traveler is in the noun:
-			if the traveller is an enterer listed in the Table of voluntary entry:
-				choose the row with enterer of traveller in Table of voluntary entry;
-			otherwise:
-				choose a blank row in Table of voluntary entry;
-			now enterer entry is traveler;
-			now box entry is noun;
-			now time entry is time of day;
+	rapidly make followers follow into noun;
 	now pursuing-state is false.
 
 
@@ -101,61 +96,78 @@ enterer (a person)	box (a thing)	time (a time)
 with 20 blank rows.
 
 Check a fake person entering a vehicle when the heft of the person asked is greater than 3:
+	say "[The person asked] makes an effort to get in, but does not remotely fit.";
 	stop the action.
 
 Check a fake person going from a road to a road when the protesters are not off-stage:
 	stop the action.
 
-Unsuccessful attempt by a fake person entering a car:
-	say "[The person asked] makes an effort to get in, but does not remotely fit." instead.
+[Unsuccessful attempt by a fake person entering a car:
+	say "[The person asked] makes an effort to get in, but does not remotely fit." instead.]
 
 Rule for writing a paragraph about a fake person which is in a car (called target):
+	rapidly mention possessions of followers in target;
 	say "Sitting in [the target] [is-are the list of fake people *in the target][if the number of fake people in the target is greater than 1], like players in a Marx Brothers movie[end if]. [paragraph break]"
 
 Carry out exiting:
 	now pursuing-state is true;
-	repeat with traveler running through fake people in the container exited from:
-		try the traveler exiting;
+	rapidly make followers try exiting from the container exited from;
 	now pursuing-state is false.
 
 Carry out going:
 	now pursuing-state is true;
-	repeat with traveler running through fake people in the room gone from:
-		try the traveler going the noun;
+	rapidly make followers try going noun from the room gone from;
 	now pursuing-state is false.
 
-After a fake person going, exiting, or entering when pursuing-state is true:
+After a fake person going, exiting, or entering when pursuing-state is true (this is the add followers to incoming-list rule):
 	now the person asked is mentioned;
 	if the person asked is a cat:
-		if cat-sample is listed in incoming-list:
-			now the printed name of cat-sample is "cats";
-			now the cat-sample is plural-named;
-		otherwise:
+		if cat-sample is not listed in the incoming-list:
 			now the printed name of cat-sample is "cat";
 			now the cat-sample is singular-named;
 			add cat-sample to the incoming-list;
+		if there is more than one cat in holder of the person asked:
+			now the printed name of cat-sample is "cats";
+			now the cat-sample is plural-named;
 	otherwise:
-		add the person asked to the incoming-list, if absent.
+		if the person asked is a pet:
+			if pet-sample is not listed in the incoming-list:
+				now the printed name of pet-sample is "pet";
+				now the pet-sample is singular-named;
+				add pet-sample to the incoming-list;
+			if there is more than one pet in holder of the person asked:
+				now the printed name of pet-sample is "pets";
+				now the pet-sample is plural-named;
+		otherwise:
+			add the person asked to the incoming-list, if absent.
 
 Pursuing-state is a truth state that varies. Pursuing-state is false.
 The incoming-list is a list of objects that varies.
 
 After going or entering or exiting when the player is staid:
-	report followers;
+	if the number of entries in the incoming-list is not 0:
+		report followers;
+		say line break;
 	continue the action.
+
+To say report-followers:
+	report followers.
 
 To report followers:
 	if the number of entries in the incoming-list is not 0:
 		let N be "[The incoming-list with definite articles]";
 		say "[N] " in sentence case;
-		say "[one of]trail[or]come[or]follow[or]walk[at random][if the number of entries in incoming-list is 1 and entry 1 of incoming-list is not plural-named]s[end if] after us";
+		if the player is in a noisy car (called target car):
+			say "come[if the number of entries in incoming-list is 1 and entry 1 of incoming-list is not plural-named]s[end if] along with us";
+		otherwise:
+			say "[one of]trail[or]come[or]follow[or]walk[at random][if the number of entries in incoming-list is 1 and entry 1 of incoming-list is not plural-named]s[end if] after us";
 		sort the incoming-list;
 		repeat through the Table of Animal Sets:
 			let group be the grouping entry;
 			sort group;
 			if group is the incoming-list:
 				say "[epithet entry]";
-		say ".";
+		say ". [run paragraph on]";
 		truncate the incoming-list to 0 entries;
 	continue the action.
 
@@ -164,21 +176,24 @@ After describing path of the player:
 
 The cat-sample is a cat. The printed name is "cat". Understand "cat" as a cat.
 
+The pet-sample is a pet. The printed name is "pet".
+
+Understand "animal" as an animal. Understand "animals" as the plural of animal.
+
 Table of Animal Sets
 grouping (list of animals)	epithet (some text)
 {roc}	", just managing to squeeze through in our wake"
 {peacock, cat-sample}	"[one of], with the cat making ambitious swipes at the peacock's tail[or], the peacock doing its best to keep away from the cat[stopping]"
 {cat-sample, cock, ass}	"[one of], like three quarters of the Bremen Musicians. I guess that makes us the dog[or], again[stopping]"
 {cat-sample, earl}	": the cat seems to be entranced by the earl's trailing ermine"
-
-[ {pet, cat-sample}	"[one of]: the cat looks as though it would like to make short work of the pet, but the pet is cunning and keeps close to our leg[or], the pet still carefully dodging being alone with the cat[or]: the pet because it doesn't want to be alone with the cat, the cat because it would like to catch up with the pet[or] again[stopping]"  ]
+{pet-sample, cat-sample}	"[one of]: [the cat-sample] looks as though [they] would like to make short work of [the pet-sample], but [the pet-sample] [are] cunning and [keep] close to our leg[or], [the pet-sample] still carefully dodging being alone with [the cat-sample][or]: [the pet-sample] because [they] [don't] want to be alone with [the cat-sample], [the cat-sample] because [they] would like to catch up with [the pet-sample][or] again[stopping]"
 
 Understand "pet [something]" as touching.
 
 Instead of touching or rubbing or squeezing an animal:
 	say "[We] gingerly pet [the noun]."
 
-Instead of touching the pet:
+Instead of touching a pet:
 	say "It arches its back into your touch and gives a soft, contented trill. The fur really is as soft as it appears."
 
 Sanity-check attacking an animal:
@@ -4744,6 +4759,7 @@ Please-get-out is an NPC-directed quip.
 Report someone discussing please-get-out:
 	say "[reply of please-get-out][paragraph break]";
 	reset the interlocutor;
+	rapidly make followers try going south from Waterstone's Office;
 	move the player to Language Studies Department Office, without printing a room description;
 	shut the office;
 	try looking instead.
