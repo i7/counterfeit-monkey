@@ -1623,7 +1623,7 @@ The description of a pa is "He's a Norman Rockwell figure: gruff, upstanding, ho
 	The greeting of a pa is "'Hello there, young lady,' says the pa."
 
 Rule for writing a paragraph about a pa:
-	say "The pa you summoned is standing nearby, looking slightly confused."
+	say "The pa you summoned is standing nearby, looking slightly confused.[if there is a mentionable thing in location][line break][end if]"
 
 Instead of subject-asking when the current interlocutor is a pa:
 	say "'Huh,' he says, in that gruff pre-occupied way of his."
