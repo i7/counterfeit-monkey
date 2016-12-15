@@ -85,7 +85,7 @@ Ranking rules are an object-based rulebook.
 	 
 
 Table of Seen Things
-output	current rank
+output subject	current rank
 an object	a number
 with 60 blank rows. 
  

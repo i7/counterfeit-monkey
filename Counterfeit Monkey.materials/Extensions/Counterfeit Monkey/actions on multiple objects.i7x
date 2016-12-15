@@ -9,6 +9,17 @@ Rule for deciding whether all includes scenery: it does not.
 Rule for deciding whether all includes people while taking: it does not.
 Rule for deciding whether all includes things carried by other people while taking: it does not.
 
+
+Rule for deciding whether all includes something (called special-target) while taking (this is the new excluding concealed items rule):
+	now special-target is marked for listing;
+	follow the new mentioning tedious things rule;
+	follow the determining concealment rule;
+	if the special-target is not marked for listing, it does not;
+	make no decision.
+
+The new excluding concealed items rule is listed instead of the excluding concealed items rule in the for deciding whether all includes rules.
+
+
 Rule for deciding whether all includes things in a pan while taking in the presence of the barker (this is the don't touch the pans rule):
 	it does not.
 

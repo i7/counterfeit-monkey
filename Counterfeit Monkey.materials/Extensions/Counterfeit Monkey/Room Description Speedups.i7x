@@ -4,7 +4,6 @@ Use authorial modesty.
 
 [ This is basically code from Room Description Control (along with one from Tailored Room Descriptions) rewritten in Inform 6 for speed reasons. I'm not sure if the fact that we still include the original extension but replace nearly all of its rules makes things more confusing or less. ]
 
-[ Actually, the room descriptions were never had a lot of performance problems, but this was low hanging fruit. ]
 
 When play begins (this is the new mark every thing as unmentioned when play begins rule):
 	rapidly set all things not mentioned.
@@ -33,16 +32,6 @@ A description-priority rule (this is the new mentioning tedious things rule):
 The new mentioning tedious things rule is listed instead of the mentioning tedious things rule in the description-priority rules.
 
 
-Rule for deciding whether all includes something (called special-target) while taking (this is the new excluding concealed items rule): 
-	now special-target is marked for listing;
-	follow the new mentioning tedious things rule;
-	follow the determining concealment rule;
-	if the special-target is not marked for listing, it does not;
-	make no decision.
-
-The new excluding concealed items rule is listed instead of the excluding concealed items rule in the for deciding whether all includes rules.
-
-
 A description-concealing rule (this is the new don't mention things out of play rule):
 	rapidly set things out of play not marked for listing.
 
@@ -66,6 +55,20 @@ A description-concealing rule (this is the new concealing parts rule):
 
 The new concealing parts rule is listed instead of the concealing parts rule in the description-concealing rules.
 
+A description-concealing rule while entering a container (called special-target) (this is the hide possessions of followers when entering rule):
+	rapidly hide possessions of followers in special-target.
+
+Section 2 - New Entering and Leaving (in place of Section 2 - Entering and Leaving in Room Description Control by Emily Short)
+
+The new describe contents rule is listed instead of the describe contents entered into rule in the report entering rulebook.
+
+This is the new describe contents rule:
+	if the person asked is the player, follow the description-priority rules.
+
+A description-concealing rule while entering a container (called special-target):
+	rapidly set stuff outside special-target not marked for listing.
+
+Section -
 
 [ This one is from Tailored Room Descriptions ]
 
@@ -104,17 +107,74 @@ To set clones of (n - an object) mentioned:
 To rapidly conceal possessions:
 	(- MyConcealPossessions(); -).
 
+To rapidly set stuff outside (X - a container) not marked for listing:
+	(- MyHideExteriorStuff({X}); -).
+
+To rapidly hide possessions of followers in (n - a container):
+	(- MyFollowerStuffUnsetWorkflag({n}); -).
+
+To rapidly mention possessions of followers in (n - a container):
+	(- MyFollowerStuffSetMentioned({n}); -).
 
 To rapidly set all immediate children of (n - an object) mentioned:
 	(- MyAllNearChildrenSetMentioned({n}); -).
-	
+
+
+Seen count is a number that varies.
+The seen count variable translates into I6 as "seen_count".
+
+The lowest-rank variable translates into I6 as "lowest_rank".
+
+The new loading table rule is listed instead of the loading table rule in the description-priority rules.
+
+A description-priority rule (this is the new loading table rule):
+	load seen-table.
+
+To load seen-table:
+	(- MyLoadSeenTable(); -).
+
+
+The new description-ranking rule is listed instead of the description-ranking rule in the description-priority rules.
+
+A description-priority rule (this is the new description-ranking rule):
+	rank descriptions.
+
+To rank descriptions:
+	(- MyDescriptionRanking(); -).
+
+
+The the new reporting descriptions rule is listed instead of the reporting descriptions rule in the description-priority rules.
+
+A description-priority rule (this is the new reporting descriptions rule):
+	report descriptions.
+
+To report descriptions:
+	(- MyReportDescriptions(); -).
+
+Section - Debugging - Not for release
+
+This is the new table-debugging rule:
+	if paragraph-debug-state is 1:
+		repeat with N running from 1 to seen count:
+			choose row N in the Table of Seen things;
+			if the output entry is unmentioned:
+				say "[output subject entry]: rank [current rank entry][line break]";
+				now output entry is unmentioned;
+			otherwise:
+				say "[output subject entry]: rank [current rank entry] (already mentioned)[line break]";
+		say "[line break]".
+
+The new table-debugging rule is listed instead of the table-debugging rule in the description-priority rules.
+
+Section -
+
 
 Include (-
 
 	[ MySetWorkFlag obj;
 		give obj workflag;
 	];
-	
+
 	[ MyUnsetWorkFlag obj;
 		give obj ~workflag;
 	];
@@ -127,8 +187,8 @@ Include (-
 		if (child(par))
 			MySetWorkFlagLoop(child(par));
 	];
-	
-	
+
+
 	[ MyUnsetWorkFlagOfAllContents par;
 
 		if (par.component_child)
@@ -180,7 +240,7 @@ Include (-
 		}
 		return;
 	];
-	
+
 	[ MyAllSceneryUnsetWorkflag obj;
 		for (obj=IK2_First: obj: obj=obj.IK2_Link) {
 			if (obj has scenery)
@@ -195,7 +255,7 @@ Include (-
 				give obj ~workflag;
 		}
 	];
-	
+
 	[ MyAllOutOfPlayUnsetWorkflag obj;
 		for (obj=IK2_First: obj: obj=obj.IK2_Link) {
 			if (~~parent(obj))
@@ -211,7 +271,7 @@ Include (-
 			for (c=obj.component_child: c :c = sibling(c))
 				give c mentioned;
 	];
-	
+
 	[ MySetClonesMentioned obj sib;
 		sib=child(parent(obj));
 		if (~~sib) sib = (obj.component_parent).component_child;
@@ -219,7 +279,7 @@ Include (-
 			if (sib.list_together == obj.list_together)
 				give sib mentioned;
 	];
-	
+
 	[ MyConcealPossessions obj obj2;
 		! class K8_person
 		for (obj=IK8_First: obj: obj=obj.IK8_Link)
@@ -231,7 +291,97 @@ Include (-
 				}
 	];
 
+	[ MyHideExteriorStuff car obj obj2;
+		for (obj=IK2_First: obj : obj=obj.IK2_Link)
+			if (obj has workflag) {
+				give obj ~workflag;
+				for (obj2 = parent(obj): obj2 : obj2 = parent (obj2)) {
+					!if (obj2 == car || (obj2 provides component_parent && obj2.component_parent == car)) {
+					if (obj2 == car) {
+						give obj workflag;
+						break;
+					}
+					!if (obj2 provides component_parent && obj2.component_parent)
+					!	obj2 = obj2.component_parent;
+				}
+			}
+	];
+
+	[ MyFollowerStuffUnsetWorkflag car obj obj2;
+		for (obj=child(car) : obj : obj=sibling(obj))
+			if (obj ofclass (+ person +) && (obj.(+ fake +)))
+				for (obj2=child(obj): obj2 : obj2=sibling(obj2))
+					give obj2 ~workflag;
+	];
+
+	[ MyFollowerStuffSetMentioned car obj obj2;
+		for (obj=child(car) : obj : obj=sibling(obj))
+			if (obj ofclass (+ person +) && (obj.(+ fake +))) {
+				give obj mentioned;
+				for (obj2=child(obj): obj2 : obj2=sibling(obj2))
+					give obj2 mentioned;
+			}
+	];
+
+
 -) after "Output.i6t".
 
+
+Include (-
+
+Global seen_count = 0;
+Global lowest_rank = 0;
+
+-) after "Definitions.i6t".
+
+
+Include (-
+
+	[ MyLoadSeenTable obj col;
+		seen_count = 0;
+
+		col=TableFindCol((+ Table of Seen Things +), (+ output subject +), true);
+		
+		for (obj=IK2_First: obj : obj=obj.IK2_Link)
+			if (obj has workflag && obj hasnt mentioned) {
+				seen_count++;
+				((+ Table of Seen Things +)-->col)-->(seen_count+COL_HSIZE) = obj;
+			}
+	];
+
+
+	[ MyDescriptionRanking i output output_col curr_rank_col;
+
+		lowest_rank = 1000;
+
+		output_col=TableFindCol((+ Table of Seen Things +), (+ output subject +), true);
+		curr_rank_col=TableFindCol((+ Table of Seen Things +), (+ current rank +), true);
+
+		for (i=1: i <= seen_count : i++ ) {
+			output = ((+ Table of Seen Things +)-->output_col)-->(i+COL_HSIZE);
+ 
+			output.(+ description-rank +) = 0;
+
+			FollowRulebook ((+ the ranking rules +), output, true);
+
+			((+ Table of Seen Things +)-->curr_rank_col)-->(i+COL_HSIZE) = output.(+ description-rank +);
+			if (output.(+ description-rank +) < lowest_rank )
+				lowest_rank = output.(+ description-rank +);
+		}
+		TableSortPartial((+Table of Seen Things +), seen_count, curr_rank_col, -1);
+	];
+
+
+	[ MyReportDescriptions col i output;
+
+		col=TableFindCol((+ Table of Seen Things +), (+ output subject +), true);
+
+		for (i=1: i <= seen_count : i++ ) {
+			output = ((+ Table of Seen Things +)-->col)-->(i+COL_HSIZE);
+			if (output hasnt mentioned)
+				 CarryOutActivity((+ the writing a paragraph about activity +), output);
+		}
+	];
+-).
 
 Room Description Speedups ends here.
