@@ -2216,8 +2216,9 @@ The farmer is a man in the Hesychius Street. The description is "Contrary to you
 
 Rule for writing a paragraph about the farmer:
 	say "One remaining [farmer] lazes here, watching his [farmer's stall].";
-	now every thing carried by the farmer is mentioned.
-
+	now every thing carried by the farmer is mentioned;
+	if a mentionable thing (called item) is in location:
+		say line break.
 
 An asparagus is carried by the farmer. It is a vegetable. The indefinite article of the asparagus is "some".  The description of the asparagus is "It looks particularly tender and pleasant, but I avoid the stuff."
 
