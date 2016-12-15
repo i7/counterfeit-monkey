@@ -24,11 +24,11 @@ An ale is a kind of thing.
 An Amy is a kind of woman.
 An art is a kind of thing.
 A ba is a kind of bird.
-A bat is a kind of animal.
+A bat is a kind of neuter animal.
 A bet is a kind of thing.
 A bit is a kind of thing.
 A bot is a kind of thing.
-A cat is a kind of animal.
+A cat is a kind of neuter animal.
 [A car is a kind of vehicle.] [ These are defined in their own section, above, because so complicated.]
 A cart is a kind of vehicle.
 A char is a kind of thing. [not "a kind of animal" because you get a dead char]
@@ -40,7 +40,7 @@ A cot is a kind of clothed bed.
 A CRT is a kind of device.
 An eel is a kind of thing. [not "a kind of animal" because you get a dead eel]
 A git is a kind of man.
-A hart is a kind of animal.
+A hart is a kind of neuter animal.
 A hat is a kind of thing.
 [An in-object is a kind of thing. ["in"] The printed name of an in-object is "in". Understand "in" as an in-object.]
 An ink is a kind of thing.
@@ -60,16 +60,16 @@ A par is a kind of thing.
 A part is a kind of thing.
 A pat is a kind of thing.
 Some pat-items are a kind of thing.
-A pet is a kind of animal.
+A pet is a kind of neuter animal.
 A pi-object is a kind of thing. ["pi"]
 A pit is a kind of thing.
 A pit-hole is a kind of container. The printed name of a pit-hole is "pit".
 A pot is a kind of container.
 An alterna-pot is a kind of vegetable.
 A Ra is a kind of man.
-A ram is a kind of animal.
+A ram is a kind of neuter animal.
 A rap is a kind of thing.
-A rat is a kind of animal.
+A rat is a kind of neuter animal.
 A rate is a kind of thing.
 A sap is a kind of man.
 A sig is a kind of thing.

@@ -77,7 +77,7 @@ The ant is an insect. The heft of the ant is 0. The description is "This particu
 
 An applet is r-abstract. The heft is 0. The description is "An abstract representation. An anonymous browser window appears to hover in the air, [one of][if protest-scenario has happened and protest-scenario ended in DP-tanking]currently replaying a satellite footage of the deplural[ization] a few hours ago[otherwise]currently showing satellite footage of the big demonstration a few hours ago[end if][or]streaming a television show from one of Atlantis['] top chefs, demonstrating how to depluralize fruit for best effect. [one of]'Single varietal fruits produce the most intense flav[our],' she's explaining to the screen, a bushel of limes at her side[or]'A mixture of different varieties can produce a well-structured blend, as with a Bordeaux,' she continues[cycling][or]currently playing streaming video of a rally by the Atlantean Anti-Babel Party[or]streaming news clips of the Serial Comma Day celebration[or]streaming a public service message about keeping letter tools out of the hands of children[or]currently playing a web game about jumping cats[or]currently playing a text-based web game[as decreasingly likely outcomes]."
 
-The ape is an animal.
+The ape is a neuter animal.
 The initial appearance is "The ape, which is of the menacing kind rather than of the sweetly charming kind, has us fixed in an unpleasant stare."
 The description is "It is very large."
 
@@ -272,7 +272,7 @@ Sanity-check wearing the blest sandal:
 The boa is a floppy wearable thing. The description of the boa is "Made of bright pink synthetic feathers. It would really liven up our look, I have to say." Understand "bright" or "pink" or "synthetic" or "feathers" as the boa. Understand "feather boa" as the boa. Understand "feather" as the boa when the hackle is marked invisible.
 	The scent-description of the boa is "plastic".
 
-The boar is an animal. The description of the boar is "In the old days they used to hunt these animals, and I can understand the impulse. It's like a pig, but even uglier and bristlier, with long dangerous-looking tusky teeth coming out of both its top and bottom jaws." The heft is 7.
+The boar is a neuter animal. The description of the boar is "In the old days they used to hunt these animals, and I can understand the impulse. It's like a pig, but even uglier and bristlier, with long dangerous-looking tusky teeth coming out of both its top and bottom jaws." The heft is 7.
 
 Report waving the letter-remover at the boar:
 	say "Our hand is less than steady, but [we] manage to wave the letter-remover accurately enough.[paragraph break]The boar vanishes with a pop, and [a generated object] [fall] harmlessly to the ground. [run paragraph on]";
@@ -921,7 +921,7 @@ The flint crepe cap is a wearable thing. It covers the head-area. The descriptio
 
 There is [--] really there is the faintest suspicion that it's trying to spell itself 'crêpe'. Must be the foreign ingredients."
 
-A foal is an animal. The description of the foal is "It has a brown coat, large nervous eyes, and wobbly legs that don't seem to want to hold it up." The scent-description of the foal is "newborn animal".
+A foal is a neuter animal. The description of the foal is "It has a brown coat, large nervous eyes, and wobbly legs that don't seem to want to hold it up." The scent-description of the foal is "newborn animal".
 
 The metal-foil is a privately-named thing. The description is "A crumpled ball of that aluminum foil used for cooking." The heft is 1. The printed name of the metal-foil is "foil". Understand "ball" or "foil" or "aluminum" as the metal-foil. The indefinite article is "some".
 
@@ -1122,7 +1122,7 @@ Sanity-check digging in heel:
 	say "Oh, I think we can both be stubborn when we have to." instead.
 
 
-The herds are an animal. The heft of the herds is 10. The description of the herds is "Cows, goats, and sheep, all mingled together and furious to be thus manifested without a shepherd."
+The herds are a neuter animal. The heft of the herds is 10. The description of the herds is "Cows, goats, and sheep, all mingled together and furious to be thus manifested without a shepherd."
 
 Every turn when the herds are in the location:
 	say "Something spooks the herds [--] not surprising, as there is scarcely enough room here for them to move. The cows try to go one direction, the goats another, and we are dragged underhoof.";
@@ -1257,7 +1257,7 @@ Instead of putting something which is not the gel on the keyring:
 The kind ladies are a plural-named woman. The description of the kind ladies is "They appear extremely earnest and helpful [--] some maternal, others more like that well-meaning aunt who is always asking if you need help with things because she really hasn't got anything to do at home."
 	The greeting of the kind ladies is "They look at us and wave, regal little waves."
 
-The kudu is an animal. The description of the kudu is "It's a creature like an antelope, with tall, twisting horns and a little white tuft of beard."
+The kudu is a neuter animal. The description of the kudu is "It's a creature like an antelope, with tall, twisting horns and a little white tuft of beard."
 
 Every turn when the kudu is in location:
 	say "The kudu looks at us cleverly for a moment and then bounds away.";
@@ -1456,7 +1456,7 @@ Instead of listening to the multiple dropkick cancan:
 Mut is an r-abstract woman. The description is "She has the kohl-lined eyes and deep black hair of an Egyptian goddess; and if we look at her from the corner of the eye, we see not a woman, but a great white vulture, the mother of Egypt, the primordial force from which all else was made."
 	The greeting of Mut is "She says something, but it comes out as much like bird cry as anything else."
 
-The mutt is an animal. The heft of the mutt is 3. The description is "It's a dog of no particular breed, covered in scruffy brown fur, slightly larger than the average Scotty dog."
+The mutt is a neuter animal. The heft of the mutt is 3. The description is "It's a dog of no particular breed, covered in scruffy brown fur, slightly larger than the average Scotty dog."
 
 
 The description of the mutual punch is "It's a very heavy, industrial hole punch, something from a 1950s office, for drilling through multiple pieces of paper at once."
@@ -1599,7 +1599,7 @@ The orc-word is noisy. The printed name of the orc-word is "orc word". Understan
 
 The heft of the ore is 3. The description of the ore is "A quantity of rough-hewn, rusty-col[our]ed rocks. Looks like we wound up with iron ore rather than anything more valuable." Understand "iron" or "rusty" or "rocks" or "rough-hewn" or "rusty-colored" or "rusty-coloured" as the ore.
 
-An otter is an animal. The description is "Sleek, black, whiskered, and somewhat out of place on dry land."
+An otter is a neuter animal. The description is "Sleek, black, whiskered, and somewhat out of place on dry land."
 	The scent-description is "fish and sea air".
 
 Every turn (this is the otter escape rule):
@@ -2518,7 +2518,7 @@ The heft of the fake-punt is 6. The description of the fake-punt is "It's a long
 The heft of the punts is 10. The description of the punts is "An assortment of punts, which by the looks of them are usually driven from the Cambridge end."
 
 
-The puppy is an animal. The description of the puppy is "She's a tiny black and white papillon with lots of fur and large, trusting eyes." Understand "papillon" as the puppy. The heft of the puppy is 2.
+The puppy is a female animal. The description of the puppy is "She's a tiny black and white papillon with lots of fur and large, trusting eyes." Understand "papillon" as the puppy. The heft of the puppy is 2.
 
 Test puppybug with "drop puppy / take puppy" holding the puppy.
 
@@ -2547,13 +2547,13 @@ Test rackbug with "tutorial off / put ruck in bucket / get rack / put gel on rac
 
 The rack is a supporter. It is not fixed in place. Understand "pegs" or "peg" as the rack. The description of the rack is "It's a wooden support with a few pegs for hanging up coats or jackets."
 
-The rad worm is an animal. The description of the rad worm is "It's an earthworm, but with bands of psychedelic col[our]."
+The rad worm is a neuter animal. The description of the rad worm is "It's an earthworm, but with bands of psychedelic col[our]."
 
 The rale is r-abstract and noisy. The description of the rale is "It is the noise of breathing impeded by fluid in the lungs. It sounds as though someone is dying [if the location is indoors]in[otherwise]out[end if] here.".
 
 The heft of a ram is 7. The description of a ram is "I can tell it's a ram because of those characteristic curly horns, and the mean look it has in its eye. Otherwise it's your basic sheep."
 
-Some plural-rams are an animal. The printed name of the plural-rams is "rams". The description is "A whole flock of rams, bleating and fleece-covered. They're really a bit frightening in this profusion."
+Some plural-rams are a neuter animal. The printed name of the plural-rams is "rams". The description is "A whole flock of rams, bleating and fleece-covered. They're really a bit frightening in this profusion."
 
 The description of a ramcat is "[description of a tomcat]". Instead of touching or rubbing or squeezing a ramcat:
 	say "It [one of]dodges out of reach[or]swipes at us, claws out[or]hisses[at random]."
@@ -3118,7 +3118,7 @@ The description of a stink is "It's an intense, dizzying smell with great stayin
 
 A stint is r-abstract. The heft of a stint is 0. The description of a stint is "The flickering images represent a period of time spent in the military: a young person in a uniform, smartly waving goodbye to hazily-sketched parents; a duration of training and mostly boring patrol work; release from service, with a few mild commendations and some pocket money."
 
-The stoats are an animal. The description is "There are several of them, and they look like brown weasels. The tips of their tails are brown, and their eyes are beady, and they look like a whole bag-ful of trouble."
+The stoats are an neuter animal. The description is "There are several of them, and they look like brown weasels. The tips of their tails are brown, and their eyes are beady, and they look like a whole bag-ful of trouble."
 
 The stock is an edible contained fluid thing. The indefinite article is "some". The description of the stock is "Pale brown stock, still warm and steaming slightly." The scent-description of the stock is "hearty fish reduction".
 
@@ -3578,7 +3578,7 @@ The description of the tape is "It's clear tape, the kind you use to wrap presen
 
 The description of the tar is "A pot of sticky black goo." The indefinite article of tar is "some".  Instead of tasting or eating the tar: say "Ugh." Instead of smelling the tar: say "It smells like roadworks on a hot day."
 
-The tarpan is an animal. The description is "A small, mouse-col[our]ed horse with black-barred legs. It looks wild and shows no signs of ever having been saddled or ridden."
+The tarpan is a neuter animal. The description is "A small, mouse-col[our]ed horse with black-barred legs. It looks wild and shows no signs of ever having been saddled or ridden."
 
 Sanity-check mounting the tarpan:
 	say "The tarpan isn't broken to bridle, and I don't think we're going to start today." instead.
@@ -4014,7 +4014,7 @@ The description of two-added-nutmegs is "The nutmegs do somehow convey an air of
 
 Section 18 - U through Z
 
-The untalented naval polecat is an animal. Understand "weasel" or "uniform" or "admiralty" as the untalented naval polecat. The description is "It looks a lot like a weasel wearing an admiralty uniform."
+The untalented naval polecat is a neuter animal. Understand "weasel" or "uniform" or "admiralty" as the untalented naval polecat. The description is "It looks a lot like a weasel wearing an admiralty uniform."
 
 Test polecat with "shoot needle" holding the anagramming gun and the catalan punt volat needle.
 

@@ -1080,9 +1080,9 @@ Include Rideable Vehicles by Graham Nelson.
 
 [In addition to providing a bunch of generic synonyms in a hurry, these kinds allow us to design in some specialized behavior for how animals act when moving and so on. There are a huge number of creatable animals in the game, so it's best to categorize as much as possible.]
 
-A bird is a kind of animal. Understand "wing" or "wings" or "bird" or "feather" or "feathers" as a bird.
+A bird is a kind of neuter animal. Understand "wing" or "wings" or "bird" or "feather" or "feathers" as a bird.
 
-An insect is a kind of animal. Understand "bug" or "insect" as an insect.
+An insect is a kind of neuter animal. Understand "bug" or "insect" as an insect.
 
 Sanity-check touching or rubbing or squeezing an insect:
 	say "[We][']d rather not. All those legs." instead.
@@ -1108,6 +1108,7 @@ An approach-finding rule (this is the explicitly enter car rule):
 				if the player is not in the target:
 					try entering the target;
 				if the player is in the target:
+					report followers;
 					try closing the target;
 					if the target is closed and target ignition is switched off:
 						try switching on target ignition;
