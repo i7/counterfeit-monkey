@@ -2070,7 +2070,7 @@ Report the Pict dropping something:
 
 
 Rule for writing a topic sentence about the Pict when the location contains at least one mentionable person:
-	say "[The Pict] regards [a random mentionable person] as though sizing up [their] strength in battle, unfav[our]ably. "
+	say "[The Pict] regards [the random mentionable person] as though sizing up [their] strength in battle, unfav[our]ably. "
 
 
 
