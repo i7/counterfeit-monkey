@@ -699,7 +699,7 @@ I have the student ring that opens this back in my apartment. I just wasn't expe
 Out-direction of University Oval is northwest. [Palm Square]
 In-direction of University Oval is south. [Samuel Johnson Hall]
 
-After printing the name of the sturdy iron gate when Palm Square is not visited:
+After printing the name of the sturdy iron gate when the ring is not handled:
 	say " to the university".
 
 To say ring-fetch:
