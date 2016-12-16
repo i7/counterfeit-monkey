@@ -4759,8 +4759,7 @@ Please-get-out is an NPC-directed quip.
 Report someone discussing please-get-out:
 	say "[reply of please-get-out][paragraph break]";
 	reset the interlocutor;
-	rapidly make followers try going south from Waterstone's Office;
-	move the player to Language Studies Department Office, without printing a room description;
+	silently try going south;
 	shut the office;
 	try looking instead.
 
