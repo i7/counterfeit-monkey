@@ -1111,8 +1111,8 @@ Instead of going from a road to a road:
 			try going the noun instead;
 	if the protesters are in location:
 		if the number of entries in the path so far of the player is greater than 0:
-			say "[path-walked so far][paragraph break]";
-		say "Unfortunately the sidewalks, which were never very wide to start with, are so blocked by the mass of protesters that it's impossible to get by. Besides, if we associate with them, we might wind up getting arrested on minor charges anyway. We need some kind of automotive transport[car-needed].";
+			say "[path-walked so far][paragraph break][line break]";
+		say "Unfortunately the sidewalks, which were never very wide to start with, are so blocked by the mass of protesters that it's impossible to get by. Besides, if we associate with them, we might wind up getting arrested on minor charges anyway. We need some kind of automotive transport[car-needed]. ";
 		assign "Find transport for getting past the traffic on High Street" at High Street;
 	otherwise if the room gone to is the Roundabout and the protesters are not off-stage:
 		say "That whole area is so jammed that our only hope is to go by car[car-needed].";
