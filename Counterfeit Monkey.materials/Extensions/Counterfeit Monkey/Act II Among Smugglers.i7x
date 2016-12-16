@@ -1007,7 +1007,7 @@ Dramatically, it tries to
 
 After going to Roundabout when the protesters are not off-stage and the player is not in Traffic Circle and seeking Slango has ended:
 	if the player is hurrying:
-		say "[path-walked so far][conditional paragraph break]";
+		say "[path-walked so far][paragraph break][line break]";
 		clear path-walked for player;
 		increase path description count by 1;
 	say "The whole Roundabout has ground to a halt, with protesters walking in the street and in some places completely filling the road. But this is mostly a nuisance until I notice that there are a couple of teenagers handcuffed to a tree.
@@ -1059,7 +1059,11 @@ Sanity-check going nowhere in Traffic Circle:
 		try going outside instead.
 
 A description-concealing rule when the player is in a car (called target car) and the location is Traffic Circle:
-	now everything which is not enclosed by the target car is not marked for listing.
+	rapidly set stuff outside target car not marked for listing.
+
+Report exiting when the container exited from is a car and location is Traffic Circle:
+	say "We climb out of the car.";
+	try looking instead.
 
 A ranking rule for the giant Atlantida statue:
 	increase the description-rank of the giant Atlantida statue by 50.
