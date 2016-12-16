@@ -39,8 +39,8 @@ Every turn (this is the contained people exiting rule):
 		if the burden is fake:
 			if the burden is an enterer listed in the Table of voluntary entry:
 				choose the row with enterer of burden in Table of voluntary entry;
-				if box entry is holder of burden:
-					if time entry is time of day:
+				if holder box entry is holder of burden:
+					if entrance time entry is time of day:
 						next;
 					otherwise:
 						if a random chance of 1 in 10 succeeds:
@@ -50,12 +50,12 @@ Every turn (this is the contained people exiting rule):
 			try the burden exiting;]
 
 
-Definition: a person is contained:
+[Definition: a person is contained:
 	if it is in a container which is not the repository:
 		yes;
 	if it is on a supporter which is not in the repository:
 		yes;
-	no.
+	no.]
 
 Check something exiting when the actor is an animal in the kayak:
 	if the kayak is enclosed by location and the location is not abandoned shore:
@@ -92,7 +92,7 @@ Carry out entering a vehicle:
 
 
 Table of voluntary entry
-enterer (a person)	box (a thing)	time (a time)
+enterer (a person)	holder box (a thing)	entrance time (a time)
 with 20 blank rows.
 
 Check a fake person entering a vehicle when the heft of the person asked is greater than 3:

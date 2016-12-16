@@ -51,9 +51,9 @@ Include
 				![choose the row with enterer of burden in Table of voluntary entry;]
 				row = TableRowCorr((+ Table of voluntary entry +), (+ enterer +), burden);
 				![if box entry is holder of burden:]
-				if (TableLookUpEntry((+ Table of voluntary entry +),(+ box +),row) == parent(burden))
-					![if time entry is time of day:]
-					if (TableLookUpEntry((+ Table of voluntary entry +),(+ time +),row) == the_time)
+				if (TableLookUpEntry((+ Table of voluntary entry +),(+ holder box +),row) == parent(burden))
+					![if entrance time entry is time of day:]
+					if (TableLookUpEntry((+ Table of voluntary entry +),(+ entrance time +),row) == the_time)
 						continue;
 					else
 						![if a random chance of 1 in 10 succeeds:]
@@ -83,9 +83,9 @@ Include
 					! [ now enterer entry is traveler]
 					TableLookUpEntry((+ Table of voluntary entry +),(+ enterer +), row, 1, traveler);
 					! [ now box entry is noun]
-					TableLookUpEntry((+ Table of voluntary entry +),(+ box +),row,1,car);
+					TableLookUpEntry((+ Table of voluntary entry +),(+ holder box +), row,1,car);
 					! [ now time entry is time of day]
-					TableLookUpEntry((+ Table of voluntary entry +),(+ time +), row, 1, the_time);
+					TableLookUpEntry((+ Table of voluntary entry +),(+ entrance time +), row, 1, the_time);
 				}
 			}
 		}
