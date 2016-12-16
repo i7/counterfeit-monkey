@@ -1283,7 +1283,7 @@ Instead of knocking on office-door-1 when the location of Professor Waterstone i
 	else:
 		repeat with item running through things enclosed by the location:
 			if item is waterstone-inspiring:
-				say "[if we-have-knocked is true]Waterstone looks up and gives a little frown. [end if]It's clear he doesn't know why we knocked; perhaps he can't see [the item] from that angle. Maybe if [we] were holding [them]." instead;
+				say "[if we-have-knocked is true]Waterstone looks up and gives a little frown. [end if]It's clear he doesn't know why we knocked; perhaps he can't see [the item] from that angle. Maybe if [we] were holding [regarding the item][them]." instead;
 	if the selected object is nothing:
 		say "[if we-have-knocked is true]Waterstone looks up and gives a little frown. [end if]It's clear he doesn't know why we knocked; to be honest I'm not sure why we did either.";
 	otherwise:
