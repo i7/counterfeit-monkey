@@ -280,6 +280,11 @@ To decide what thing is the substitute from (matchlist - a list of things) (this
 				decrease scr by 100;
 			if contender is a person and the letter-remover is not creature-enabled:
 				decrease scr by 100;
+			if contender is a car:
+				if contender is fueled:
+					increase scr by 100;
+				if contender is operational:
+					increase scr by 100;
 			if scr is high-score:
 				add contender to high-scorers;
 			otherwise:
