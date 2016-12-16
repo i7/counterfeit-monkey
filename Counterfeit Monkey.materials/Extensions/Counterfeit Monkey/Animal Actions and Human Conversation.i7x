@@ -5255,8 +5255,7 @@ Rule for beat-producing when the current interlocutor is my mother:
 		if target is something:
 			try my mother examining the target;
 		else:
-			say "Mother looks faintly bewildered.";
-	[carry out the caching scope activity with the player;]
+			say "Mother looks faintly bewildered.[no line break]";
 	say run paragraph on.
 
 Table of Ultratests (continued)
