@@ -2128,7 +2128,7 @@ Instead of putting the restoration gel on the defaced ashlar block:
 Rule for listing exits when looking in Old City Walls:
 	do nothing instead.
 
-Understand "climb wall/walls" as a mistake ("Little is to be achieved by that.").
+Understand "climb wall/walls" as a mistake ("[if the location is Patriotic Chard-Garden or the location is in the Walltop]It's not in the best of shape. It wouldn't be hard to become part of a minor rockfall and kill ourselves on the descent[otherwise]Little is to be achieved by that[end if].").
 
 In-direction of Old City Walls is east. [Into the old hexagonal turret]
 
