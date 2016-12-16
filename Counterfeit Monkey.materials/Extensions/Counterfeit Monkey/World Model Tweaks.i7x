@@ -578,38 +578,14 @@ Section 3 - Approaches and Describing Distance Travel
 
 Include Approaches by Emily Short. Use fast route-finding.
 
+Include Approaching Speedups by Counterfeit Monkey.
+
 A room can be nonsecret or forbidden. A room is usually nonsecret.
 
 A room can be nonsouthern or southern. A room is usually nonsouthern.
 
 ["Southern" rooms are those you reach by walking east or south from the roundabout]
 
-Carry out going to a forbidden room (called target):
-	now the target is nonsecret.
-
-Understand "go to [any nonsecret room]" or "goto [any nonsecret room]" or "go back to [any nonsecret room]" or "return to [any nonsecret room]" or "revisit [any nonsecret room]"  as approaching.
-
-The tell the player when blocked at a door rule response (A) is "Unfortunately, [we] [find] [we] [lack] a key fitting [the locked-thing].[line break]";
-
-The new approach refusal rule is listed instead of the refusing bad headings rule in the approach-finding rules.
-
-This is the new approach refusal rule:
-	if approach-heading is not a direction:
-		say "Neither of us can think how to get there from here.";
-		rule fails.
-
-The new approach heading finding rule is listed instead of the approach-heading selection rule in the approach-finding rules.
-
-This is the new approach heading finding rule:
-	now approach-heading is the best route from the location to the noun, using even locked doors.
-	[if approach-heading is not a direction:
-		now approach-heading is the best route from the location to the noun, using even locked doors;]
-
-The new actual approach movement rule is listed instead of the actual approach movement rule in the approach-finding rules.
-
-An approach-finding rule (this is the new actual approach movement rule):
-	now location is visited;
-	silently try going approach-heading.
 
 Path description count is a number that varies. [let's count how many times we've invoked this activity this turn!]
 
@@ -686,11 +662,12 @@ intervening (list of regions)	description (some text)
 {Official Grounds, Busy Streets, Marina}	"out of the Bureau and down into the shadows of Deep Street"
 {Campus, Busy Streets}	"out from under the sycamores in the Oval and up Long Street"
 {Campus, Busy Streets, Marina}	"from my native territory through yours"
-{Campus, Busy Streets, Official Grounds}	"[one of][--]the trip gets more uncomfortable as [we] go, leaving my own neighb[our]hood, fighting the inevitable snarl of traffic at the roundabout, and then heading down Tall Street, which always feels menacingly silent to me. But [we] do get[or]away from the familiar bustle of campus, up Long Street, around the roundabout, along Tall Street[stopping]"
+{Campus, Busy Streets, Official Grounds}	"[one of][--]the trip gets more uncomfortable as [we] go, leaving my own neighb[our]hood, fighting the inevitable snarl of traffic at the roundabout, and then heading down Tall Street, which always feels menacingly silent to me. But [we] do get in[or]away from the familiar bustle of campus, up Long Street, around the roundabout, along Tall Street[stopping]"
 
 A person has a list of regions called the intervening regions.
 
-Carry out going somewhere while hurrying (this is the new creating a path history rule):
+[Carry out going somewhere while hurrying (this is the new creating a path history rule):]
+This is the new creating a path history rule:
 	if the map region of the location is a region:
 		add the map region of the location to the intervening regions of the player, if absent.
 
@@ -1134,8 +1111,8 @@ Instead of going from a road to a road:
 			try going the noun instead;
 	if the protesters are in location:
 		if the number of entries in the path so far of the player is greater than 0:
-			say "[path-walked so far][paragraph break]";
-		say "Unfortunately the sidewalks, which were never very wide to start with, are so blocked by the mass of protesters that it's impossible to get by. Besides, if we associate with them, we might wind up getting arrested on minor charges anyway. We need some kind of automotive transport[car-needed].";
+			say "[path-walked so far][paragraph break][line break]";
+		say "Unfortunately the sidewalks, which were never very wide to start with, are so blocked by the mass of protesters that it's impossible to get by. Besides, if we associate with them, we might wind up getting arrested on minor charges anyway. We need some kind of automotive transport[car-needed]. ";
 		assign "Find transport for getting past the traffic on High Street" at High Street;
 	otherwise if the room gone to is the Roundabout and the protesters are not off-stage:
 		say "That whole area is so jammed that our only hope is to go by car[car-needed].";

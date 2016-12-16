@@ -13,6 +13,7 @@ To rapidly set (n - an object) marked visible:
 To rapidly set everything marked-visible as seen:
 	(- MySetAllMarkedVisibleAsSeen(); -).
 
+
 Include (-
 
 	[ MyAllSetMarkedInvisible obj;
@@ -77,6 +78,5 @@ Include (-
 	];
 
 -) after "Output.i6t".
-
 
 Custom Speedups ends here.

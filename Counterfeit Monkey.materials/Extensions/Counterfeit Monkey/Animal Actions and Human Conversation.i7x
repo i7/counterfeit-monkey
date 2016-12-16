@@ -249,7 +249,7 @@ To say directions to (destination - a room):
 	otherwise:
 		say "the Fleur d'Or";
 	let distance be the number of moves from the location to the destination;
-	let the way be the best route from the location to the destination;
+	let the way be the true-best route to the destination;
 	if distance is:
 		-- 1:
 			say ". That's just [way] from here[run paragraph on]";

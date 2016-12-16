@@ -222,7 +222,7 @@ Test tap with "tutorial off / x sinks / x sink / turn on tap / g / look / examin
 
 Section 5 - Rotunda
 
-The Rotunda is south of Tall Street. It is indoors and southern. The description is "Echoing space, marble floor, eye-like [skylight] many me[ter]s above us: so far, the Rotunda might belong to any 19th-century government bureau of means and self-importance.
+The Rotunda is south of Tall Street. It is indoors, checkpoint and southern. The description is "Echoing space, marble floor, eye-like [skylight] many me[ter]s above us: so far, the Rotunda might belong to any 19th-century government bureau of means and self-importance.
 
 What sets this one apart is the lettering, each sigil no bigger than a flea, carved over every inch of the walls. Inscribed here is, in fact, the [italic type]entire[roman type] [inscribed-text] of A New Orthodox Orthography[if the Rotunda is unvisited], which means that if [we] had a great deal of patience and many rolls of butcher paper, [we] could take rubbings and wind up with our very own volume.
 
@@ -365,7 +365,7 @@ Sanity-check going to a privately-controlled room in Official grounds:
 
 Section 7 - Antechamber
 
-The Antechamber is south of the Rotunda. It is indoors and southern. The description is "The most important task of any government bureau is to keep away time-wasters, irritants, and uninformed members of the general public, who might distract the diligent workers within from their important tasks. The Bureau of Orthography is no different.
+The Antechamber is south of the Rotunda. It is indoors and southern checkpoint. The description is "The most important task of any government bureau is to keep away time-wasters, irritants, and uninformed members of the general public, who might distract the diligent workers within from their important tasks. The Bureau of Orthography is no different.
 
 An [instructive notice] details the criteria for entry to the Bureau proper."
 
@@ -552,7 +552,7 @@ Instead of showing something to the secretary when the secretary encloses the Sc
 
 Section 8 - Hallway and Inaccessible Room
 
-The Bureau Hallway is east of the Antechamber. It is indoors and southern. The description is "This is a long hallway with many doors leading off, the business of the bureau being varied and all-encompassing; it is for all essential purposes the chief organ of government in Atlantis, since only a few topics are brought to citizen referendum."
+The Bureau Hallway is east of the Antechamber. It is indoors, checkpoint and southern. The description is "This is a long hallway with many doors leading off, the business of the bureau being varied and all-encompassing; it is for all essential purposes the chief organ of government in Atlantis, since only a few topics are brought to citizen referendum."
 
 Out-direction of Bureau Hallway is west. [To antechamber]
 
@@ -686,7 +686,7 @@ Some Hello Kitty stickers are part of the cute security door. The description is
 
 Section 3 - Secret Section
 
-Bureau Basement Secret Section is indoors, forbidden and southern. The description is "The heightened security on this side of the door is obvious everywhere [we] look. The floor is tiled in paisley tiles. The light fixtures give off pale pink light. The walls are covered in frog leather. The doors are locked with padlocks the size of handbags, locks decorated à la Louis Quinze, combination locks made of solid gold. There is not a bare noun in sight."
+Bureau Basement Secret Section is indoors, checkpoint, forbidden and southern. The description is "The heightened security on this side of the door is obvious everywhere [we] look. The floor is tiled in paisley tiles. The light fixtures give off pale pink light. The walls are covered in frog leather. The doors are locked with padlocks the size of handbags, locks decorated à la Louis Quinze, combination locks made of solid gold. There is not a bare noun in sight."
 
 Out-direction of Bureau Basement Secret Section is south. [Bureau basement middle]
 
