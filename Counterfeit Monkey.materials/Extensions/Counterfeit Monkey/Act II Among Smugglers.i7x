@@ -633,7 +633,7 @@ A description-concealing rule when Slango is in the Counterfeit Monkey:
 	now the clientele is unmarked for listing;
 	now the barman is unmarked for listing.
 
-A description-concealing rule when the Counterfeit Monkey is not visited:
+A description-concealing rule when the current interlocutor is not barman and Slango is not seen:
 	now the clientele is unmarked for listing;
 	now the barman is unmarked for listing;
 	now the origin paste is unmarked for listing.
