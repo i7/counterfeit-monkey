@@ -120,7 +120,8 @@ Include (-
 			! Write backpack or player in holder entry
 			
 			TableLookUpEntry((+ Table of Inventory Ordering +), (+ holder +), row, 1, real_parent);	 
-			row++;		
+			row++;
+			if (row > 100) { print "ERROR: more than 100 listable things in inventory!^"; return 100; }
 		}
 		if (child(o)) o = child(o);
 		else {

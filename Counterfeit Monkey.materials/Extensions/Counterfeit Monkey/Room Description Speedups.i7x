@@ -345,6 +345,7 @@ Include (-
 		for (obj=IK2_First: obj : obj=obj.IK2_Link)
 			if (obj has workflag && obj hasnt mentioned) {
 				seen_count++;
+				if (seen_count > 60) print_ret "ERROR: more than 60 mentionable things in room!^";
 				((+ Table of Seen Things +)-->col)-->(seen_count+COL_HSIZE) = obj;
 			}
 	];
