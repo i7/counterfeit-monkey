@@ -1129,6 +1129,9 @@ Instead of eating or tasting the paste:
 Instead of smelling the player:
 	say "[We] smell of lavender. It's not as bad a reek as it was earlier, though. No one would think it was anything but soap."
 
+Sanity-check putting the origin paste on something when the origin paste is in a closed backpack:
+	try opening the backpack.
+
 Sanity-check putting the origin paste on the restoration gel:
 	try putting the restoration gel on the origin paste instead.
 
@@ -1302,6 +1305,9 @@ Before doing something when the noun is the tube or the second noun is the tube:
 				say "We don't have the gel at the moment." instead;
 		otherwise:
 			say "[one of]Unfortunately, there's hardly any gel remaining in the tube.[or]There isn't enough gel remaining in the little tube for use.[at random]" instead.
+
+Sanity-check putting the restoration gel on something when the tub is in a closed backpack:
+	try opening the backpack.
 
 Before inserting something (called the source) into something gel-related (called the target):
 	unless the source is gel-related: [Things like "put gel in tub" are dealt with elsewhere]
