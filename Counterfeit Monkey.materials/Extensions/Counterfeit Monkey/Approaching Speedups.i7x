@@ -80,7 +80,6 @@ The new actual approach movement rule is listed instead of the actual approach m
 An approach-finding rule (this is the new actual approach movement rule):
 	now location is visited;
 	follow the new creating a path history rule;
-	follow the even newer creating a path history rule;
 	if location is initial room or approach-destination is checkpoint or approach-destination is not a room:
 		silently try going approach-heading;
 	otherwise:
@@ -94,7 +93,9 @@ An approach-finding rule (this is the new actual approach movement rule):
 				silently try going approach-heading;
 			otherwise:
 				rapidly move followers to approach-destination;
-				move player to approach-destination, without printing a room description.
+				move player to approach-destination, without printing a room description;
+	follow the even newer creating a path history rule.
+
 
 The new other character approach rule is listed instead of the other character approach rule in the carry out approaching rules.
 

@@ -818,13 +818,11 @@ The snapping continues.
 Counterfeit Monkey
 Infamously this pub was raided in 1929, the year that the Bureau developed its first meager attempt at an Authentication Scope, and dozens of smugglers and fraudulent businessmen went to jail. But neither that raid nor subsequent scrutiny has ever shut the place down entirely. Built when people were a bit shorter and ceilings were a bit lower, the Counterfeit Monkey is always smoky and never well lit, even in the middle of the day.
 
-The clientele are currently engaged in a game of darts, while the barman watches and practices a sarcastic wit on those who embarrass themselves. There is also a quantity of Origin Paste sitting out on the bar. 
+The snapping continues.
 
 Parker acknowledges our return with a nod.
 
-The snapping continues.
-
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether he has seen Slango or ask whether we can have the Origin Paste.
+/(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether he has seen Slango.
 
 /(You have a fleeting thought|Something makes you think|You are reminded) of your crew's attitude to Atlantis law.
 
@@ -833,7 +831,7 @@ The snapping continues.
 
 The snapping continues.
 
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether he has seen Slango or ask whether we can have the Origin Paste.
+/(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether he has seen Slango.
 
 > ask about slango
 "I wonder whether you've seen an associate of mine," we say to Parker. "Name of Slango."
@@ -849,7 +847,7 @@ The snapping continues.
 > challenge parker about the rum
 "Must be a different Slango," we say. "Mine is more of a root beer man. Thanks anyway though."
 
-"Oh, that Slango," Parker says. "He's been around town the last couple of days, but not today. If you know his lady friend, you might try her." 
+"Oh, that Slango," Parker says, thoughtfully moving the Origin Paste sitting on the bar. "He's been around town the last couple of days, but not today. If you know his lady friend, you might try her."
 
 Lady friend? This can only mean Lena, she being the only female native with whom Slango spends much time socially. But you wouldn't have guessed that she'd advanced to the status of lady friend. Either way, Lena is a rather odd woman who keeps a used bookstore off Deep Street.
 
@@ -1307,10 +1305,6 @@ I give the wheel a yank and run the car up onto the central traffic circle a lit
 Traffic Circle (jammed into the car)
 Normally no pedestrian ever comes to this circle of grass and litter: the flow of traffic is too constant and too fast. But the protest has stopped the traffic and I'm determined to do something about the two teenagers I saw just now, so here we are. Though we probably have to get out of the car if we're going to be useful.
 
-A giant Atlantida statue stands at the center, decorated in an unorthodox fashion with a sign and a stuffed octopus. Atlantida is to us a bit as Uncle Sam might be to you, except that she embodies the spirit of the people rather than the government. In recent years she's become a symbol of opposition to the Bureau.
-
-/Two teenagers are cuffed to a brown tree, apparently for safe-keeping while the All-Purpose Officer undoes their vandalism. He (has|is carrying) a diminutive affixer. 
-
 /(The car is making an unpleasant raspy growl|The snapping continues).
 
 > get out
@@ -1331,6 +1325,12 @@ We switch the ignition off.
 We swing the car door open.
 
 We climb out of the car.
+
+
+Traffic Circle
+A giant Atlantida statue stands at the center, decorated in an unorthodox fashion with a sign and a stuffed octopus. Atlantida is to us a bit as Uncle Sam might be to you, except that she embodies the spirit of the people rather than the government. In recent years she's become a symbol of opposition to the Bureau.
+
+/Two teenagers are cuffed to a brown tree, apparently for safe-keeping while the All-Purpose Officer undoes their vandalism. He (has|is carrying) a diminutive affixer. 
 
 The snapping continues.
 
@@ -2236,7 +2236,7 @@ Dank and malodorous: there are no windows down here, and the drainage is terribl
 
 The stairs up are here; the lecture room at the east. Immediately south is the Graduate Student Office, and southwest is Professor Brown's office. The most interesting of all is the small door west, trying to look inconspicuous, but locked with a keycard lock: it's where the department stores its most dangerous licensed equipment.
 
-/A large open carton stands against the wall right between Brown's lab door and the interesting door. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." (There is a banana in the large carton|The large carton contains a banana). 
+/A large open carton stands against the wall right between Brown's lab door and the interesting door. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." (There is a banana in the large carton|(The large carton contains|In the large carton is) a banana). 
 
 The snapping continues.
 
@@ -2247,7 +2247,7 @@ It has no label, only a keycard-reading lock.
 It looks high-tech: all black plastic, and a slot to swipe a keycard through.
 
 > go to hotel
-/(((We|We make the) drive out from under the sycamores in the Oval and up Long Street (to|over to|as far as) Long Street North. (Then|There)|Once we get to Long Street North)|At Long Street North) we pull easily into one of the available parking spots, since many people have now gone home.
+/(((We|We make the|It's a( brief| quick| short)?) drive out from under the sycamores in the Oval and up Long Street (to|over to|as far as) Long Street North. (Then|There)|Once we get to Long Street North)|At Long Street North) we pull easily into one of the available parking spots, since many people have now gone home.
 
 Fleur d'Or Lobby
 The Fleur d'Or is a high-end hotel that serves businessmen and luxury tourists interested in the linguistic mechanisms of the island. As a result, it has all kinds of paid exemptions, including an exemption allowing it to operate under a foreign name.
@@ -2270,7 +2270,7 @@ The back wall is dramatically decorated with bottled liquors of all sorts, from 
 
 What makes this place technically a drinks club rather than a bar is its license to serve letter-manufactured food and drink. A toolkit on the bar contains some screwdrivers, some gimlets, and some rusty nails, ready to be transformed into their respective cocktails.
 
-The bartender and Mark are still talking about the homonym paddle. Mark is holding a gin and tonic. The other patrons are scattered around the room at small tables, drinking or talking among themselves. 
+/The bartender and Mark are still talking about the homonym paddle. Mark (has|is holding) a gin and tonic. The other patrons are scattered around the room at small tables, drinking or talking among themselves. 
 
 /"(Hi|Hello|Hi there)," the bartender says.
 
@@ -2300,7 +2300,7 @@ The snapping continues.
 The snapping continues.
 
 > go to seminar room
-/((We |We have a( brief| short) |We make the( brief| short)? |It's a( brief| short)? )drive (as far as|over to|to) Long Street South. )?(Then|There|At Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
+/((We |We have a( brief| short) |We make the( brief| short)? |It's a( brief| short)? )drive (as far as|over to|to) Long Street South. )?(Then|There|(At|Once we get to) Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
 
 /(Then|Next) (we |we have a (brief|quick|short) |we make the( brief| quick| short)? |it's a( brief| quick| short)? )(walk|hike). 
 
@@ -2813,7 +2813,7 @@ The cock makes some attempts to flutter out of the synthesizer, but doesn't get 
 > wave r-remover at pearl
 We reset the device to r. The pearl gives way to the now-familiar peal.
 
-/(The snapping continues|The cock (lets out a half-crow|clucks)).
+/(The snapping continues|The cock (lets out a half-crow|clucks)|Clang, clang! goes the peal).
 
 The cock makes some attempts to flutter out of the synthesizer, but doesn't get much lift and gives up for the moment.
 
@@ -3303,7 +3303,7 @@ We dip out a pea-sized quantity of gel and rub it gently onto the doe. With an a
 The snapping continues.
 
 > go to rotunda
-/(We |We have a (brief|quick) |We make the( brief| quick)? |It's a( brief| quick)? )(walk|hike).
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike).
 
 Rotunda
 Echoing space, marble floor, eye-like skylight many meters above us: so far, the Rotunda might belong to any 19th-century government bureau of means and self-importance.

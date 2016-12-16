@@ -593,11 +593,9 @@ He heads into the interior of the café.
 Counterfeit Monkey
 Infamously this pub was raided in 1929, the year that the Bureau developed its first meager attempt at an Authentication Scope, and dozens of smugglers and fraudulent businessmen went to jail. But neither that raid nor subsequent scrutiny has ever shut the place down entirely. Built when people were a bit shorter and ceilings were a bit lower, the Counterfeit Monkey is always smoky and never well lit, even in the middle of the day.
 
-The clientele are currently engaged in a game of darts, while the barman watches and practices a sarcastic wit on those who embarrass themselves. There is also a quantity of Origin Paste sitting out on the bar. 
-
 Parker acknowledges our return with a nod.
 
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether he has seen Slango or ask whether we can have the Origin Paste.
+/(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether he has seen Slango.
 
 /(Something makes you think|You have a fleeting thought|You are reminded) of your crew's attitude to Atlantis law.
 
@@ -605,7 +603,7 @@ Parker acknowledges our return with a nod.
 > talk to barman
 /We (smile|wave|return the greeting).
 
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether he has seen Slango or ask whether we can have the Origin Paste.
+/(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether he has seen Slango.
 
 > ask about slango
 "I wonder whether you've seen an associate of mine," we say to Parker. "Name of Slango."
@@ -619,7 +617,7 @@ This is a lie, and therefore a test. Slango doesn't drink alcohol himself and do
 > challenge parker about the rum
 "Must be a different Slango," we say. "Mine is more of a root beer man. Thanks anyway though."
 
-"Oh, that Slango," Parker says. "He's been around town the last couple of days, but not today. If you know his lady friend, you might try her." 
+"Oh, that Slango," Parker says, thoughtfully moving the Origin Paste sitting on the bar. "He's been around town the last couple of days, but not today. If you know his lady friend, you might try her."
 
 Lady friend? This can only mean Lena, she being the only female native with whom Slango spends much time socially. But you wouldn't have guessed that she'd advanced to the status of lady friend. Either way, Lena is a rather odd woman who keeps a used bookstore off Deep Street.
 
