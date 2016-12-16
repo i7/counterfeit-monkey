@@ -662,7 +662,7 @@ intervening (list of regions)	description (some text)
 {Official Grounds, Busy Streets, Marina}	"out of the Bureau and down into the shadows of Deep Street"
 {Campus, Busy Streets}	"out from under the sycamores in the Oval and up Long Street"
 {Campus, Busy Streets, Marina}	"from my native territory through yours"
-{Campus, Busy Streets, Official Grounds}	"[one of][--]the trip gets more uncomfortable as [we] go, leaving my own neighb[our]hood, fighting the inevitable snarl of traffic at the roundabout, and then heading down Tall Street, which always feels menacingly silent to me. But [we] do get[or]away from the familiar bustle of campus, up Long Street, around the roundabout, along Tall Street[stopping]"
+{Campus, Busy Streets, Official Grounds}	"[one of][--]the trip gets more uncomfortable as [we] go, leaving my own neighb[our]hood, fighting the inevitable snarl of traffic at the roundabout, and then heading down Tall Street, which always feels menacingly silent to me. But [we] do get in[or]away from the familiar bustle of campus, up Long Street, around the roundabout, along Tall Street[stopping]"
 
 A person has a list of regions called the intervening regions.
 
