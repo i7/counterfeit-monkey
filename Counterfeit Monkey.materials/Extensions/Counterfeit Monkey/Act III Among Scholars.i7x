@@ -1252,6 +1252,15 @@ Instead of listening to office-door-1:
 	otherwise:
 		say "The door is open.".
 
+Instead of showing a Waterstone-inspiring thing to Professor Waterstone when the location is Waterstone's Office:
+	say "We are just about to show [Professor Waterstone] [the noun] when he suddenly gets up.";
+	try Professor Waterstone discussing please-get-out.
+
+Instead of giving a Waterstone-inspiring thing to Professor Waterstone when the location is Waterstone's Office:
+	say "We are just about to give [the noun] to [Professor Waterstone] when he suddenly gets up.";
+	try Professor Waterstone discussing please-get-out.
+
+
 A thing is usually innocent-sounding. The member, the ass, and the cock are naughty-sounding.
 
 Definition: a thing is Waterstone-inspiring:
@@ -1283,7 +1292,9 @@ Instead of knocking on office-door-1 when the location of Professor Waterstone i
 	else:
 		repeat with item running through things enclosed by the location:
 			if item is waterstone-inspiring:
-				say "[if we-have-knocked is true]Waterstone looks up and gives a little frown. [end if]It's clear he doesn't know why we knocked; perhaps he can't see [the item] from that angle. Maybe if [we] were holding [regarding the item][them]." instead;
+				say "[if we-have-knocked is true]Waterstone looks up and gives a little frown. [end if]It's clear he doesn't know why we knocked; perhaps he can't see [the item] from that angle. Maybe if [we] were holding [regarding the item][them].";
+				now we-have-knocked is true;
+				stop the action;
 	if the selected object is nothing:
 		say "[if we-have-knocked is true]Waterstone looks up and gives a little frown. [end if]It's clear he doesn't know why we knocked; to be honest I'm not sure why we did either.";
 	otherwise:
