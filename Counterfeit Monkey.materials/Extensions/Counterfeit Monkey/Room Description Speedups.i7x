@@ -80,6 +80,67 @@ Rule for giving-surrounding-details-for something (called the special-target) (t
 The new standard surroundings rule is listed instead of the standard surroundings rule in the for giving-surrounding-details-for rulebook.
 
 
+[ And these from the Standard Rules ]
+
+This is the new declare everything initially unmentioned rule:
+	rapidly set all things not mentioned.
+
+The new declare everything initially unmentioned rule is listed instead of the declare everything initially unmentioned rule in the turn sequence rulebook.
+
+The new declare everything initially unmentioned rule is listed instead of the declare everything initially unmentioned rule in the startup rulebook.
+
+The new declare everything unmentioned rule is listed instead of the declare everything unmentioned rule in the carry out looking rules.
+
+Carry out looking (this is the new declare everything unmentioned rule):
+	rapidly set all things not mentioned.
+
+The new check light in new location rule is listed instead of the check light in new location rule in the carry out going rules.
+
+Carry out an actor going (this is the new check light in new location rule):
+	surreptitiously reckon darkness.
+
+Include (-
+
+[ OffersLight obj;
+	rtrue;
+];
+
+[ HasLightSource i;
+    rtrue;
+];
+
+[ ComponentHasLight o;
+	rtrue;
+];
+
+[ HidesLightSource obj;
+    rfalse;
+];
+
+-) instead of "Light Measurement" in "Light.i6t".
+
+
+Include (-
+
+[ ADJUST_LIGHT_R previous_light_condition;
+
+    lightflag = true;
+    location = real_location;
+    rfalse;
+
+]; -) instead of "Adjust Light Rule" in "Light.i6t".
+
+Include (-
+
+[ SilentlyConsiderLight;
+    lightflag = true;
+    location = real_location;
+	rfalse;
+];
+
+-) instead of "Silent Light Consideration" in "Light.i6t".
+
+
 To rapidly set workflag of (n - an object):
 	(- MySetWorkFlag({n}); -).
 
