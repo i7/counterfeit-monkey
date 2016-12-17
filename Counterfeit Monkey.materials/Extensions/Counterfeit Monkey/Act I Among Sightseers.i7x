@@ -2497,7 +2497,7 @@ After going from Roget Close to the Winding Footpath:
 		say "[We] walk through the wealthy neighb[our]hood to Roget Close. ";
 	clear path-walked for the player;
 	increase path description count by 1;
-	say "[if N is greater than 1]There [we][otherwise][We][end if] slip between the houses and down a path that looks as though it might lead to someone's back yard. No one has ever put up signage to correct this misapprehension because no one who lives around here is eager to encourage strangers on the private beach. [report-followers]
+	say "[if N is greater than 1]There [we][otherwise][We][end if] slip between the houses and down a path that looks as though it might lead to someone's back yard. No one has ever put up signage to correct this misapprehension because no one who lives around here is eager to encourage strangers on the private beach.
 
 Soon, however, the footpath begins to descend purposefully towards the level of the ocean[if the location is the final destination].[line break][otherwise].[paragraph break][end if]";
 	continue the action;
