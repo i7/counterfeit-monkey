@@ -71,6 +71,7 @@ Include
 
 
 	[ MyFollowersEntering car traveler last row;
+		LIST_OF_TY_SetLength((+ incoming-list +), 0, -1, 1);
 		for (traveler = child(real_location): traveler : traveler = last) {
 			last = sibling(traveler);
 			if (traveler ofclass (+ person +) && traveler.(+ fake +) ) {
@@ -92,6 +93,7 @@ Include
 	];
 
 	[ MyFakePeopleGoing room dir traveler last;
+        LIST_OF_TY_SetLength((+ incoming-list +), 0, -1, 1);
 		for (traveler = child(room): traveler : traveler = last) {
 			last = sibling(traveler);
 			if (traveler ofclass (+ person +) && traveler.(+ fake +) )
@@ -100,6 +102,7 @@ Include
 	];
 
 	[ MyFakePeopleExiting holder traveler last;
+		LIST_OF_TY_SetLength((+ incoming-list +), 0, -1, 1);
 		for (traveler = child(holder): traveler : traveler = last) {
 			last = sibling(traveler);
 			if (traveler ofclass (+ person +) && traveler.(+ fake +) )
