@@ -457,7 +457,7 @@ A cart is usually portable. A cart is usually pushable between rooms. The descri
 
 The cardboard is floppy. The description of the cardboard is "A sheet of cardboard a little larger than a standard piece of paper. It's brown." The indefinite article is "some".
 
-The initial appearance of a cat is "A cat wanders around the room."
+The initial appearance of a cat is "A cat wanders around [if location is indoors]the room[otherwise]here[end if]."
 	The description of a cat is "Full-grown, American, and a little stupid, as felines go." Instead of touching a cat, say "It rubs itself pathetically against our hand." The heft of a cat is 3.
 	The scent-description of a cat is "clean animal".
 
