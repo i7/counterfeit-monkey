@@ -282,7 +282,7 @@ To decide what thing is the substitute from (matchlist - a list of things) (this
 				decrease scr by 100;
 			if contender is a car:
 				if contender is fueled:
-					increase scr by 100;
+					increase scr by 101;
 				if contender is operational:
 					increase scr by 100;
 			if scr is high-score:
