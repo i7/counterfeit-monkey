@@ -79,7 +79,7 @@ Test newutility with "tutorial off / i / put all in backpack / i / wave l-remove
 
 After printing the name of something (called target) which is proffered by the secret-plans while taking inventory:
 	if the current inventory listing style is utilitarian and the target is not secret-plans:
-		say " (really the smuggled plans in disguise)".
+		say "[roman type] (really the smuggled plans in disguise)".
 
 After printing the name of the tub while taking inventory:
 	if the current inventory listing style is utilitarian:

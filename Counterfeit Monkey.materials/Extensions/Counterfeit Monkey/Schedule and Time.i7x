@@ -420,7 +420,7 @@ Instead of wearing a blindfold thing when the Atlantida figure is in location:
 	try blindfolding the player with the noun instead.
 
 After printing the name of something blinding while taking inventory:
-	say " (worn as a blindfold)";
+	say "[roman type] (worn as a blindfold)";
 	omit contents in listing.
 
 Understand "blindfold [something] with [something preferably held]" as blindfolding it with. Blindfolding it with is an action applying to one thing and one carried thing.

@@ -68,11 +68,11 @@ The letter-remover device is a thing. It is essential and illegal. Understand "l
 After printing the name of the letter-remover device while taking inventory:
 	if the letter-remover device is upgraded:
 		if the letter-remover device is creature-enabled:
-			say " (upgraded to handle animates and abstracts)";
+			say "[roman type] (upgraded to handle animates and abstracts)";
 		otherwise:
-			say " (upgraded to handle abstracts)";
+			say "[roman type] (upgraded to handle abstracts)";
 	otherwise if the letter-remover device is creature-enabled:
-		say " (upgraded to handle animates)".
+		say "[roman type] (upgraded to handle animates)".
 
 The letter-remover device has some text called current setting. The current setting of the letter-remover device is "r".
 

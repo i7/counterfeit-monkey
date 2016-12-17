@@ -659,7 +659,7 @@ But I have high hopes, assuming I can ever get out of this repressive little bur
 The introduction is "I should have taken it back to the library [--] I [i]meant[/i] to take it back to the library [--] but there just wasn't time. The last couple of hours before I came to meet you were frantic. The way I figured it, my parents or someone will come looking for me and they'll take it back for me. I think."
 
 After printing the name of Problem of Adjectives while taking inventory:
-	say " (to return to the department seminar room)".
+	say "[roman type] (to return to the department seminar room)".
 
 Report taking the Problem of Adjectives for the first time:
 	say "We take [the Problem of Adjectives]. Might as well return it to the department seminar room, as long as we're going that way." instead.
