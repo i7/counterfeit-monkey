@@ -18,12 +18,40 @@ To empty out (selected table - a table-name):
 	begin;
 		blank out the whole row;
 	end repeat. 
-	
+
+[An object can be marked for special listing or unmarked for special listing. An object is usually unmarked for special listing.]
+
 To prepare a/the/-- list of (selection - description of objects):
 	empty out the Table of Scored Listing;
 	repeat with item running through members of the selection:
 		choose a blank row in the Table of Scored Listing;
 		now output entry is the item.
+
+[ We skip the dual loops through every object in the entire game in the (now disabled) code below for performance reasons ]
+
+[To prepare a/the/-- list of (selection - description of objects):
+	now every thing is unmarked for special listing;
+	now every direction is unmarked for special listing;
+	now every room is unmarked for special listing;
+	now every region is unmarked for special listing;
+	repeat with item running through members of the selection:
+		now the item is marked for special listing;
+	register things marked for listing.
+
+To register the/-- things marked for listing:
+	empty out the Table of Scored Listing;
+	repeat with item running through directions which are marked for special listing:
+		choose a blank row in the Table of Scored Listing;
+		now output entry is the item;
+		now item is unmarked for special listing;
+	repeat with item running through rooms which are marked for special listing:
+		choose a blank row in the Table of Scored Listing;
+		now output entry is the item;
+		now item is unmarked for special listing;
+	repeat with item running through things which are marked for special listing:
+		choose a blank row in the Table of Scored Listing;
+		now output entry is the item;
+		now item is unmarked for special listing.]
 
 Articulation style is a kind of value. The articulation styles are bare, definite and indefinite. The current articulation style is an articulation style that varies.
 
@@ -49,7 +77,7 @@ To say tabled verb:
 To say the prepared list:
 	now current articulation style is definite;
 	say prepared list.
-	
+
 To say a prepared list:
 	now current articulation style is indefinite;
 	say prepared list. 
@@ -93,13 +121,13 @@ To say is-are the prepared list delimited in (chosen style - a list style) style
 	now current list style is the chosen style;
 	say tabled verb;
 	say prepared list.
-	
+
 To dump list:
 	carry out the list arranging activity;
 	say list of the Table of Scored Listing;
 	now current list style is sequential;
 	empty out Table of Scored Listing.
-	
+
 List arranging is an activity.
 
 Rule for list arranging: 
@@ -107,7 +135,7 @@ Rule for list arranging:
 
 To invert scored list:
 	sort Table of Scored Listing in reverse assigned score order.
-	
+
 First delimiter is text that varies. Second delimiter is text that varies. Alternate second delimiter is text that varies. First delimiter is ", ". Second delimiter is ", and ". Alternate second delimiter is " and ".
 
 List style is a kind of value. The list styles are defined by the Table of List Style Assignments.
@@ -141,7 +169,7 @@ Current listing total is a number that varies. Current listing index is a number
 To say a/the/-- list of (selected table - a table-name): 
 	now current listing total is the number of filled rows in the selected table;
 	now current listing index is current listing total;
-	repeat through selected table in reverse order:
+	repeat through selected table in reverse order: [ After disabling those loops above, we the order of the quips in the Table of Scored Listing is now reversed, so we re-reverse it here. Fortunately we don't use any of the list sorting functionality of Complex Listing in Counterfeit Monkey, otherwise this would reverse the sorting order. ]
 		now current listed object is output entry;
 		let wording be "";
 		if the current articulation style is definite:
