@@ -629,14 +629,15 @@ Out-direction of Counterfeit Monkey is east. [To the docks]
 
 Understand "bar" or "pub" as Counterfeit Monkey.
 
-A description-concealing rule when Slango is in the Counterfeit Monkey:
+A description-concealing rule when location is the Counterfeit Monkey and Slango is in the Counterfeit Monkey:
 	now the clientele is unmarked for listing;
 	now the barman is unmarked for listing.
 
-A description-concealing rule when the current interlocutor is not barman and Slango is not seen:
-	now the clientele is unmarked for listing;
-	now the barman is unmarked for listing;
-	now the origin paste is unmarked for listing.
+A description-concealing rule when location is the Counterfeit Monkey and the Counterfeit Monkey is as-yet-unknown:
+		now the clientele is unmarked for listing;
+		now the barman is unmarked for listing;
+		now the origin paste is unmarked for listing;
+		now the Counterfeit Monkey is introduced.
 
 Rule for writing a topic sentence about the clientele:
 	say "[The clientele] are currently engaged in a game of darts, while [the barman] watches and [if the player wears the britishizing goggles]practises[otherwise]practices[end if] a sarcastic wit on those who embarrass themselves[if the origin paste is on the bar-top]. There is also a quantity of [origin paste] sitting out on the bar[end if]. ";

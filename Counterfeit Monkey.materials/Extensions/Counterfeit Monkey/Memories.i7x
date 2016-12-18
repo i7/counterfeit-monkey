@@ -218,13 +218,19 @@ You drew in your breath sharply. Remembering an angry lesson read from the lecte
 
 Section 7 - Espionage Memories
 
-Carry out looking in Roget Close when Roget Close is visited:
-	trigger espionage-recollection.
+Carry out looking in Roget Close:
+	if Roget Close is introduced:
+		trigger espionage-recollection;
+	otherwise:
+		now Roget Close is introduced.
 
 Espionage-recollection is a memory. The max is 2. The printed name is "your crew's skill". Understand "your/my" or "crew's" or "crew" or "skill" as espionage-recollection.
 
-Carry out looking in Fleur d'Or Lobby when Fleur d'Or Lobby is visited:
-	trigger espionage-recollection.
+Carry out looking in Fleur d'Or Lobby:
+	if Fleur d'Or Lobby is introduced:
+		trigger espionage-recollection;
+	otherwise:
+		now Fleur d'Or Lobby is introduced.
 
 Carry out remembering espionage-recollection:
 	if uses of the noun is greater than 1:
