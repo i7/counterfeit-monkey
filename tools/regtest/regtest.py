@@ -74,7 +74,7 @@ popt.add_option('--vital',
                 action='store_true', dest='vital',
                 help='abort a test on the first error')
 popt.add_option('-v', '--verbose',
-                action='store_true', dest='verbose',
+                action='count', dest='verbose', default=0,
                 help='display the transcripts as they run')
 
 (opts, args) = popt.parse_args()
@@ -105,6 +105,17 @@ class Command:
     """Command is one cycle of a RegTest -- a game input, followed by
     tests to run on the game's output.
     """
+    glk_key_names = {
+        'left':0xfffffffe, 'right':0xfffffffd, 'up':0xfffffffc,
+        'down':0xfffffffb, 'return':0xfffffffa, 'delete':0xfffffff9,
+        'escape':0xfffffff8, 'tab':0xfffffff7, 'pageup':0xfffffff6,
+        'pagedown':0xfffffff5, 'home':0xfffffff4, 'end':0xfffffff3,
+        'func1':0xffffffef, 'func2':0xffffffee, 'func3':0xffffffed,
+        'func4':0xffffffec, 'func5':0xffffffeb, 'func6':0xffffffea,
+        'func7':0xffffffe9, 'func8':0xffffffe8, 'func9':0xffffffe7,
+        'func10':0xffffffe6, 'func11':0xffffffe5, 'func12':0xffffffe4,
+    }
+    
     def __init__(self, cmd, type='line'):
         self.type = type
         if self.type == 'line':
@@ -115,6 +126,8 @@ class Command:
                 self.cmd = '\n'
             elif len(cmd) == 1:
                 self.cmd = cmd
+            elif cmd.lower() in Command.glk_key_names:
+                self.cmd = cmd.lower()
             elif cmd.lower().startswith('0x'):
                 self.cmd = unichr(int(cmd[2:], 16))
             else:
@@ -124,6 +137,14 @@ class Command:
                     pass
             if self.cmd is None:
                 raise Exception('Unable to interpret char "%s"' % (cmd,))
+        elif self.type == 'timer':
+            self.cmd = None
+        elif self.type == 'hyperlink':
+            try:
+                cmd = int(cmd)
+            except:
+                pass
+            self.cmd = cmd
         elif self.type == 'include':
             self.cmd = cmd
         elif self.type == 'fileref_prompt':
@@ -176,6 +197,7 @@ class Check:
     method to examine a list of lines, and return None (on success) or a
     string (explaining the failure).
     """
+    inrawdata = False
     inverse = False
     instatus = False
 
@@ -194,13 +216,25 @@ class Check:
         if len(val) > 32:
             val = val[:32] + '...'
         invflag = '!' if self.inverse else ''
-        return '<%s %s"%s">' % (self.__class__.__name__, invflag, val,)
+        if self.instatus:
+            invflag += '{status}'
+        detail = self.reprdetail()
+        return '<%s %s%s"%s">' % (self.__class__.__name__, detail, invflag, val,)
+
+    def reprdetail(self):
+        return ''
 
     def eval(self, state):
-        if self.instatus:
-            lines = state.statuswin
+        if not self.inrawdata:
+            if self.instatus:
+                lines = state.statuswin
+            else:
+                lines = state.storywin
         else:
-            lines = state.storywin
+            if self.instatus:
+                lines = state.statuswindat
+            else:
+                lines = state.storywindat
         res = self.subeval(lines)
         if (not self.inverse):
             return res
@@ -250,6 +284,8 @@ class LiteralCountCheck(Check):
             res = LiteralCountCheck(ln, **args)
             res.count = int(match.group(1))
             return res
+    def reprdetail(self):
+        return '{count=%d} ' % (self.count,)
     def subeval(self, lines):
         counter = 0
         for ln in lines:
@@ -267,6 +303,28 @@ class LiteralCountCheck(Check):
         else:
             return 'only found %d times' % (counter,)
 
+class HyperlinkSpanCheck(Check):
+    inrawdata = True
+    @classmethod
+    def buildcheck(cla, ln, args):
+        match = re.match('{hyperlink=([0-9]+)}', ln)
+        if match:
+            ln = ln[ match.end() : ].strip()
+            res = HyperlinkSpanCheck(ln, **args)
+            res.linkvalue = int(match.group(1))
+            return res
+    def reprdetail(self):
+        return '{link=%d} ' % (self.linkvalue,)
+    def subeval(self, lines):
+        for para in lines:
+            for line in para:
+                for span in line:
+                    linkval = span.get('hyperlink')
+                    text = span.get('text', '')
+                    if linkval == self.linkvalue and self.ln in text:
+                        return
+        return 'not found'
+
 class GameState:
     """The GameState class wraps the connection to the interpreter subprocess
     (the pipe in and out streams). It's responsible for sending commands
@@ -283,8 +341,12 @@ class GameState:
     def __init__(self, infile, outfile):
         self.infile = infile
         self.outfile = outfile
+        # Lists of strings
         self.statuswin = []
         self.storywin = []
+        # Lists of line data lists
+        self.statuswindat = []
+        self.storywindat = []
 
     def initialize(self):
         pass
@@ -350,19 +412,31 @@ class GameStateRemGlk(GameState):
         dat = [ val.get('text') for val in con ]
         return ''.join(dat)
     
+    @staticmethod
+    def extract_raw(line):
+        # Extract the content array from a line object.
+        con = line.get('content')
+        if not con:
+            return []
+        return con
+    
     def initialize(self):
         import json
         update = { 'type':'init', 'gen':0,
                    'metrics': { 'width':80, 'height':40 },
+                   'support': [ 'timer', 'hyperlinks' ],
                    }
         cmd = json.dumps(update)
         self.infile.write((cmd+'\n').encode())
         self.infile.flush()
         self.generation = 0
         self.windows = {}
+        # This doesn't track multiple-window input the way it should,
+        # nor distinguish hyperlink input state across multiple windows.
         self.lineinputwin = None
         self.charinputwin = None
         self.specialinput = None
+        self.hyperlinkinputwin = None
         
     def perform_input(self, cmd):
         import json
@@ -382,6 +456,14 @@ class GameStateRemGlk(GameState):
             update = { 'type':'char', 'gen':self.generation,
                        'window':self.charinputwin, 'value':val
                        }
+        elif cmd.type == 'hyperlink':
+            if not self.hyperlinkinputwin:
+                raise Exception('Game is not expecting hyperlink input')
+            update = { 'type':'hyperlink', 'gen':self.generation,
+                       'window':self.hyperlinkinputwin, 'value':cmd.cmd
+                       }
+        elif cmd.type == 'timer':
+            update = { 'type':'timer', 'gen':self.generation }
         elif cmd.type == 'fileref_prompt':
             if self.specialinput != 'fileref_prompt':
                 raise Exception('Game is not expecting a fileref_prompt')
@@ -390,6 +472,9 @@ class GameStateRemGlk(GameState):
                        }
         else:
             raise Exception('Rem mode does not recognize command type: %s' % (cmd.type))
+        if opts.verbose >= 2:
+            ObjPrint.pprint(update)
+            print()
         cmd = json.dumps(update)
         self.infile.write((cmd+'\n').encode())
         self.infile.flush()
@@ -428,6 +513,10 @@ class GameStateRemGlk(GameState):
         # Parse the update object. This is complicated. For the format,
         # see http://eblong.com/zarf/glk/glkote/docs.html
 
+        if opts.verbose >= 2:
+            ObjPrint.pprint(update)
+            print()
+
         self.generation = update.get('gen')
 
         windows = update.get('windows')
@@ -441,13 +530,16 @@ class GameStateRemGlk(GameState):
                 raise Exception('Cannot handle more than one grid window')
             if not grids:
                 self.statuswin = []
+                self.statuswindat = []
             else:
                 win = grids[0]
                 height = win.get('gridheight', 0)
                 if height < len(self.statuswin):
                     self.statuswin = self.statuswin[0:height]
+                    self.statuswindat = self.statuswindat[0:height]
                 while height > len(self.statuswin):
                     self.statuswin.append('')
+                    self.statuswindat.append([])
 
         contents = update.get('content')
         if contents is not None:
@@ -458,17 +550,23 @@ class GameStateRemGlk(GameState):
                     raise Exception('No such window')
                 if win.get('type') == 'buffer':
                     self.storywin = []
+                    self.storywindat = []
                     text = content.get('text')
                     if text:
                         for line in text:
                             dat = self.extract_text(line)
-                            if (opts.verbose):
+                            if (opts.verbose == 1):
                                 if (dat != '>'):
                                     print(dat)
                             if line.get('append') and len(self.storywin):
                                 self.storywin[-1] += dat
                             else:
                                 self.storywin.append(dat)
+                            dat = self.extract_raw(line)
+                            if line.get('append') and len(self.storywindat):
+                                self.storywindat[-1].append(dat)
+                            else:
+                                self.storywindat.append([dat])
                 elif win.get('type') == 'grid':
                     lines = content.get('lines')
                     for line in lines:
@@ -476,6 +574,9 @@ class GameStateRemGlk(GameState):
                         dat = self.extract_text(line)
                         if linenum >= 0 and linenum < len(self.statuswin):
                             self.statuswin[linenum] = dat
+                        dat = self.extract_raw(line)
+                        if linenum >= 0 and linenum < len(self.statuswindat):
+                            self.statuswindat[linenum].append(dat)
 
         inputs = update.get('input')
         specialinputs = update.get('specialinput')
@@ -483,10 +584,12 @@ class GameStateRemGlk(GameState):
             self.specialinput = specialinputs.get('type')
             self.lineinputwin = None
             self.charinputwin = None
+            self.hyperlinkinputwin = None
         elif inputs is not None:
             self.specialinput = None
             self.lineinputwin = None
             self.charinputwin = None
+            self.hyperlinkinputwin = None
             for input in inputs:
                 if input.get('type') == 'line':
                     if self.lineinputwin:
@@ -496,6 +599,118 @@ class GameStateRemGlk(GameState):
                     if self.charinputwin:
                         raise Exception('Multiple windows accepting char input')
                     self.charinputwin = input.get('id')
+                if input.get('hyperlink'):
+                    self.hyperlinkinputwin = input.get('id')
+
+
+class ObjPrint:
+    NoneType = type(None)
+    try:
+        UnicodeType = unicode
+    except:
+        UnicodeType = str
+    
+    @staticmethod
+    def pprint(obj):
+        printer = ObjPrint()
+        printer.printval(obj, depth=0)
+        print(''.join(printer.arr))
+    
+    def __init__(self):
+        self.arr = []
+
+    @staticmethod
+    def valislong(val):
+        typ = type(val)
+        if typ is ObjPrint.NoneType:
+            return False
+        elif typ is bool or typ is int or typ is float:
+            return False
+        elif typ is str or typ is ObjPrint.UnicodeType:
+            return (len(val) > 16)
+        elif typ is list or typ is dict:
+            return (len(val) > 0)
+        else:
+            return True
+
+    def printval(self, val, depth=0):
+        typ = type(val)
+        
+        if typ is ObjPrint.NoneType:
+            self.arr.append('None')
+        elif typ is bool or typ is int or typ is float:
+            self.arr.append(str(val))
+        elif typ is str:
+            self.arr.append(repr(val))
+        elif typ is ObjPrint.UnicodeType:
+            st = repr(val)
+            if st.startswith('u'):
+                st = st[1:]
+            self.arr.append(st)
+        elif typ is list:
+            if len(val) == 0:
+                self.arr.append('[]')
+            else:
+                anylong = False
+                for subval in val:
+                    if ObjPrint.valislong(subval):
+                        anylong = True
+                        break
+                self.arr.append('[')
+                if anylong:
+                    self.arr.append('\n')
+                first = True
+                for subval in val:
+                    if first:
+                        if anylong:
+                            self.arr.append((depth+1)*'  ')
+                    else:
+                        if anylong:
+                            self.arr.append(',\n')
+                            self.arr.append((depth+1)*'  ')
+                        else:
+                            self.arr.append(', ')
+                    self.printval(subval, depth+1)
+                    first = False
+                if anylong:
+                    self.arr.append('\n')
+                    self.arr.append(depth*'  ')
+                self.arr.append(']')
+        elif typ is dict:
+            if len(val) == 0:
+                self.arr.append('{}')
+            else:
+                anylong = False
+                for subval in val.values():
+                    if ObjPrint.valislong(subval):
+                        anylong = True
+                        break
+                self.arr.append('{')
+                if anylong:
+                    self.arr.append('\n')
+                first = True
+                keyls = sorted(val.keys())
+                for subkey in keyls:
+                    subval = val[subkey]
+                    if first:
+                        if anylong:
+                            self.arr.append((depth+1)*'  ')
+                    else:
+                        if anylong:
+                            self.arr.append(',\n')
+                            self.arr.append((depth+1)*'  ')
+                        else:
+                            self.arr.append(', ')
+                    self.printval(subkey, depth+1)
+                    self.arr.append(':')
+                    self.printval(subval, depth+1)
+                    first = False
+                if anylong:
+                    self.arr.append('\n')
+                    self.arr.append(depth*'  ')
+                self.arr.append('}')
+        else:
+            raise Exception('unknown type: %r' % (val,))
 
 
 checkfile_counter = 0
@@ -703,6 +918,7 @@ def run(test):
     
 checkclasses.append(RegExpCheck)
 checkclasses.append(LiteralCountCheck)
+checkclasses.append(HyperlinkSpanCheck)
 checkclasses.append(LiteralCheck)
 if (opts.checkfiles):
     for cc in opts.checkfiles:
@@ -754,3 +970,4 @@ if (not testcount):
 if (totalerrors):
     print()
     print('FAILED: %d errors' % (totalerrors,))
+    sys.exit(1)
