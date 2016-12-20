@@ -606,7 +606,7 @@ Rule for describing path of the player:
 		if the location is not the final destination:
 			say " [one of]to[or]over to[or]as far as[at random] [the location]. [run paragraph on]";
 		otherwise:
-			say ". [run paragraph on]";
+			say ". ";
 	increase path description count by 1;
 	clear path-walked for player.
 
@@ -1081,11 +1081,10 @@ An approach-finding rule (this is the explicitly enter car rule):
 			if an operational fueled car (called target) is in location:
 				let target ignition be a random ignition which is part of target;
 				unless the path so far of the player is empty:
-					say "[path-walked so far][line break][paragraph break]";
+					say "[path-walked so far][conditional paragraph break]";
 				if the player is not in the target:
 					try entering the target;
 				if the player is in the target:
-					report followers;
 					try closing the target;
 					if the target is closed and target ignition is switched off:
 						try switching on target ignition;
@@ -1112,7 +1111,7 @@ Instead of going from a road to a road:
 	if the protesters are in location:
 		if the number of entries in the path so far of the player is greater than 0:
 			say "[path-walked so far][paragraph break][line break]";
-		say "Unfortunately the sidewalks, which were never very wide to start with, are so blocked by the mass of protesters that it's impossible to get by. Besides, if we associate with them, we might wind up getting arrested on minor charges anyway. We need some kind of automotive transport[car-needed]. ";
+		say "Unfortunately the sidewalks, which were never very wide to start with, are so blocked by the mass of protesters that it's impossible to get by. Besides, if we associate with them, we might wind up getting arrested on minor charges anyway. We need some kind of automotive transport[car-needed].";
 		assign "Find transport for getting past the traffic on High Street" at High Street;
 	otherwise if the room gone to is the Roundabout and the protesters are not off-stage:
 		say "That whole area is so jammed that our only hope is to go by car[car-needed].";

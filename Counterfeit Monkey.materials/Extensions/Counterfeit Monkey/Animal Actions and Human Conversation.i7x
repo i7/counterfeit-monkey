@@ -147,7 +147,7 @@ The incoming-list is a list of objects that varies.
 After going or entering or exiting when the player is staid:
 	if the number of entries in the incoming-list is not 0:
 		report followers;
-		say line break;
+		say command clarification break;
 	continue the action.
 
 To say report-followers:
@@ -157,7 +157,7 @@ To report followers:
 	if the number of entries in the incoming-list is not 0:
 		let N be "[The incoming-list with definite articles]";
 		say "[N] " in sentence case;
-		if the player is in a noisy car (called target car):
+		if the player is in a car:
 			say "come[if the number of entries in incoming-list is 1 and entry 1 of incoming-list is not plural-named]s[end if] along with us";
 		otherwise:
 			say "[one of]trail[or]come[or]follow[or]walk[at random][if the number of entries in incoming-list is 1 and entry 1 of incoming-list is not plural-named]s[end if] after us";
@@ -167,7 +167,7 @@ To report followers:
 			sort group;
 			if group is the incoming-list:
 				say "[epithet entry]";
-		say ". [run paragraph on]";
+		say ". ";
 		truncate the incoming-list to 0 entries;
 	continue the action.
 

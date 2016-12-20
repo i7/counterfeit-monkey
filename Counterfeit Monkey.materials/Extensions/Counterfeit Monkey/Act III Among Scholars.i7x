@@ -708,7 +708,9 @@ To say ring-fetch:
 The ring unlocks the sturdy iron gate. The ring unbolts the sturdy iron gate.
 
 Check unlocking the sturdy iron gate with the ring when the player is hurrying:
-	say "[We] unlock [the sturdy iron gate] with [the ring]. ";
+	say "[path-walked so far][We] unlock [the sturdy iron gate] with [the ring]. ";
+	if final destination is University Oval:
+		say paragraph break;
 	continue the action.
 
 Carry out taking the ring:

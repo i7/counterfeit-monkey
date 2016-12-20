@@ -237,7 +237,7 @@ In-direction of Fish Market is east. [Tin hut]
 After going to Fish Market when the authenticator is in Fish Market and the player is hurrying:
 	let N be the number of entries in the path so far of the player;
 	if N is greater than 1:
-		say "[path-walked so far]";
+		say "[path-walked so far][line break]";
 	otherwise:
 		clear the path-walked for the player;
 	unless final destination is Fish Market:

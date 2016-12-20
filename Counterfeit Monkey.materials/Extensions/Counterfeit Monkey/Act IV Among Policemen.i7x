@@ -365,7 +365,7 @@ Sanity-check going to a privately-controlled room in Official grounds:
 
 Section 7 - Antechamber
 
-The Antechamber is south of the Rotunda. It is indoors and southern checkpoint. The description is "The most important task of any government bureau is to keep away time-wasters, irritants, and uninformed members of the general public, who might distract the diligent workers within from their important tasks. The Bureau of Orthography is no different.
+The Antechamber is south of the Rotunda. It is indoors, southern and checkpoint. The description is "The most important task of any government bureau is to keep away time-wasters, irritants, and uninformed members of the general public, who might distract the diligent workers within from their important tasks. The Bureau of Orthography is no different.
 
 An [instructive notice] details the criteria for entry to the Bureau proper."
 
@@ -416,7 +416,9 @@ Instead of someone going to Bureau hallway from the Antechamber when the person 
 		say "'Pass?' demands the secretary in a bored voice. [The person asked] shrugs and goes no further."
 
 Instead of going to Bureau hallway from the Antechamber when the player does not enclose the pass and the player is not allowed:
-	say "[path-walked so far][one of][We] stride confidently toward [the noun] [--] that's my contribution, as you're more of a shuffler or possibly a slinker. Actually, I think a little of your posture must still be showing, because [we] [are] stopped by the secretary. [or]I do my best to give us a cocky swagger, but she's on to us now. [stopping][paragraph break]";
+	say "[path-walked so far][one of][We] stride confidently toward [the noun] [--] that's my contribution, as you're more of a shuffler or possibly a slinker. Actually, I think a little of your posture must still be showing, because [we] [are] stopped by the secretary. [or]I do my best to give us a cocky swagger, but she's on to us now. [stopping]";
+	if the player is staid:
+		say paragraph break;
 	if the current interlocutor is not the secretary, silently try saying hello to the secretary;
 	try the secretary discussing pass-need.
 

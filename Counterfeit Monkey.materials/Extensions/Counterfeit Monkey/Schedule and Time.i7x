@@ -361,7 +361,10 @@ Instead of listening to assembled families:
 	say "[one of]'Mommmmmy,' whines one of the children. 'When does the candy come out?'[or]They are muttering about how solid the Atlantida figure seems to be this year.[or]'It just goes to show,' one of the bureau officials says to another. 'The spirit of the Atlantean people cannot be broken!'[at random]"
 
 Instead of going south from Tall Street during Pinata Celebration:
-	say "[path-walked so far][if hurrying]We get as far as Tall Street, but no further. [end if]The Bureau entrance is temporarily blocked by all the excited families on the stairs, trying to destroy the cardboard figure of Atlantida."
+	say "[if the player is hurrying][path-walked so far][report-followers][paragraph break]We get as far as Tall Street, but no further. [end if]The Bureau entrance is temporarily blocked by all the excited families on the stairs, trying to destroy the cardboard figure of Atlantida. ";
+	unless the player is hurrying:
+		say paragraph break;
+	now the player is staid;
 
 When Pinata Celebration begins:
 	move the hanging Atlantida figure to Tall Street;
