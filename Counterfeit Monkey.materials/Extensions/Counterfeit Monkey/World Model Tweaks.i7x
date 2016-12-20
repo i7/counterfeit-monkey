@@ -1081,7 +1081,7 @@ An approach-finding rule (this is the explicitly enter car rule):
 			if an operational fueled car (called target) is in location:
 				let target ignition be a random ignition which is part of target;
 				unless the path so far of the player is empty:
-					say "[path-walked so far][conditional paragraph break]";
+					say "[path-walked so far][line break]";
 				if the player is not in the target:
 					try entering the target;
 				if the player is in the target:
