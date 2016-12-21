@@ -217,10 +217,10 @@ Section - Debugging - Not for release
 This is the new table-debugging rule:
 	if paragraph-debug-state is 1:
 		repeat with N running from 1 to seen count:
-			choose row N in the Table of Seen things;
-			if the output entry is unmentioned:
+			choose row N from the Table of Seen things;
+			if the output subject entry is unmentioned:
 				say "[output subject entry]: rank [current rank entry][line break]";
-				now output entry is unmentioned;
+				now output subject entry is unmentioned;
 			otherwise:
 				say "[output subject entry]: rank [current rank entry] (already mentioned)[line break]";
 		say "[line break]".
