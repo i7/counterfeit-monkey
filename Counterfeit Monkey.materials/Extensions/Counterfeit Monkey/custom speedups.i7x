@@ -14,6 +14,24 @@ To rapidly set everything marked-visible as seen:
 	(- MySetAllMarkedVisibleAsSeen(); -).
 
 
+The new player aware of actions by visible actors rule is listed instead of the player aware of actions by visible actors rule in the player's action awareness rules.
+
+The new player aware of actions on visible nouns rule is listed instead of the player aware of actions on visible nouns rule in the player's action awareness rules.
+
+The new player aware of actions on visible second nouns rule is listed instead of the player aware of actions on visible second nouns rule in the player's action awareness rules.
+
+A player's action awareness rule
+	(this is the new player aware of actions by visible actors rule):
+	if the player is not the actor and the actor is marked-visible, rule succeeds.
+
+A player's action awareness rule
+	(this is the new player aware of actions on visible nouns rule):
+	if the noun is a thing and the noun is marked-visible, rule succeeds.
+
+A player's action awareness rule
+	(this is the new player aware of actions on visible second nouns rule):
+	if the second noun is a thing and the second noun is marked-visible, rule succeeds.
+
 Include (-
 
 	[ MyAllSetMarkedInvisible obj;

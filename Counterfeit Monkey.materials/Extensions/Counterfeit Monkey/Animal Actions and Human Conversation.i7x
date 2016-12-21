@@ -5334,6 +5334,7 @@ Confrontation-with-mother is a scene. Confrontation-with-mother begins when my m
 
 When confrontation-with-mother begins:
 	say "We're about to, when the door to the street opens and my mother walks into the room. She shuts it behind her and puts away her key before she notices us. Then she stands very still. For about a quarter second she considers calling the police, but I can see that worry passing away again as she takes in our clothing, age, and general demean[our].";
+	now my mother is marked-visible;
 	set the current interlocutor to my mother;
 	try my mother discussing hi-there-Im;
 	queue final-goodbye as postponed obligatory.
@@ -5481,6 +5482,7 @@ She's not even visible through the window any longer.";
 Section 10 - Father
 
 After going from the Sensitive Equipment Testing Room:
+	now father is marked-visible;
 	set the current interlocutor to father;
 	continue the action.
 
