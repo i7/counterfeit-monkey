@@ -49,7 +49,7 @@ Include (-
 #endif;
 -)
 
-Include Complex Listing by Emily Short;
+[Include Complex Listing by Emily Short;]
 
 Before printing the name of a drawer (called target) which is not solo while not asking which do you mean (this is the tagging drawers rule): 
 	say "[described-position of target] " (A).

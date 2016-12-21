@@ -96,10 +96,10 @@ To recommend (chosen list - a list of things):
 			add contender to high-scorers;
 	if the number of entries in high-scorers is 1:
 		try discussing entry 1 of high-scorers instead;
-	empty out the Table of Scored Listing;
+	now special listing count is 0;
 	repeat with item running through chosen list:
-		choose a blank row in the Table of Scored Listing;
-		now output entry is the item;
+		increment special listing count;
+		write item to row special listing count of special-list;
 	carry out the listing recommended quips activity;
 	now suppress-hint-quips is true;
 	[We don't want to list conversation suggestions right after giving a recommendation]

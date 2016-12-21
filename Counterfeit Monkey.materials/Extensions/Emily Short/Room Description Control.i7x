@@ -5,7 +5,7 @@ Version 13/160517 of Room Description Control by Emily Short begins here.
 
 Section 1 - Priority and Concealment Rules
 
-Include Complex Listing by Emily Short. [Include version 4 of Plurality by Emily Short.]
+[Include Complex Listing by Emily Short.] [Include version 4 of Plurality by Emily Short.]
 
 The new object description rule is listed instead of the room description paragraphs about objects rule in the carry out looking rules.
 
@@ -48,10 +48,10 @@ A description-concealing rule (this is the don't mention things out of play rule
 		if the holder of the special-target is nothing, now the special-target is not marked for listing.
 
 A description-priority rule (this is the loading table rule):
-	empty out the table of seen things;
+	[empty out the table of seen things;]
 	repeat with item running through mentionable things:
 		choose a blank row in the Table of Seen things;
-		now output entry is item.
+		now output subject entry is item.
 
 lowest-rank is a number that varies.
 
@@ -59,17 +59,17 @@ A description-priority rule (this is the description-ranking rule):
 	now lowest-rank is 1000;
 	repeat through the Table of Seen Things
 	begin;  
-		now the description-rank of the output entry is 0;
-		follow the ranking rules for the output entry;
-		now the current rank entry is the description-rank of the output entry;
-		if description-rank of the output entry is less than lowest-rank, now lowest-rank is description-rank of the output entry;
+		now the description-rank of the output subject entry is 0;
+		follow the ranking rules for the output subject entry;
+		now the current rank entry is the description-rank of the output subject entry;
+		if description-rank of the output subject entry is less than lowest-rank, now lowest-rank is description-rank of the output subject entry;
 	end repeat;
 	sort the Table of Seen Things in reverse current rank order; 
 
 A description-priority rule (this is the reporting descriptions rule):
 	repeat through the Table of Seen things
 	begin; 
-		if the output entry is unmentioned, carry out the writing a paragraph about activity with the output entry;
+		if the output subject entry is unmentioned, carry out the writing a paragraph about activity with the output subject entry;
 	end repeat. 
 	
 [A description-priority rule (this is the final description rule):
@@ -149,11 +149,11 @@ The table-debugging rule is listed after the description-ranking rule in the des
 This is the table-debugging rule:
 	if paragraph-debug-state is 1:
 		repeat through the Table of Seen things:
-			if the output entry is unmentioned:
-				say "[output entry]: rank [current rank entry][line break]";
-				now output entry is unmentioned;
+			if the output subject entry is unmentioned:
+				say "[output subject entry]: rank [current rank entry][line break]";
+				now output subject entry is unmentioned;
 			otherwise:
-				say "[output entry]: rank [current rank entry] (already mentioned)[line break]";
+				say "[output subject entry]: rank [current rank entry] (already mentioned)[line break]";
 		say "[line break]";
 
 Room Description Control ends here.

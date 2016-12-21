@@ -5,7 +5,7 @@ Version 2/160606 of Threaded Conversation by Emily Short begins here.
 "modified from Threaded Conversation by Emily Short and based on Alabaster by Emily Short, et. al."
 
 Include Basic Screen Effects by Emily Short.
-Include Complex Listing by Emily Short.
+Include Very Complex Listing by Counterfeit Monkey.
 
 Definition: a person is other if he is not the player.
 
@@ -466,13 +466,14 @@ After quip-introducing a quip (called target) (this is the mark special plausibl
 
 Rule for listing plausible quips (this is the standard quip plausibility rule):
 	prepare a list of plausible quips in quip-repository;
-	unless the number of filled rows in the Table of Scored Listing is positive:
+	if special listing count is 0:
 		rule succeeds;
 	otherwise:
-		repeat through the Table of Scored Listing:
-			carry out the quip-introducing activity with the output entry;
+		repeat with N running from 1 to special listing count:
+			choose row N in Table of scored listing;
+			carry out the quip-introducing activity with the output item entry;
 		[This could have blanked some rows out, so we need to check again:]
-		if the number of filled rows in the Table of Scored Listing is positive,
+		if special listing count is positive,
 			say "[quip-suggestion-phrase][the prepared list delimited in disjunctive style]." (A);
 
 Before printing the name of a questioning quip while listing plausible quips or listing peripheral quips or listing recommended quips (this is the prefix-ask rule):
@@ -492,26 +493,25 @@ quip-introducing something is an activity.
 [And the following phrases make it more convenient to write our own rules for quip-introducing specific quips or quip-combinations.]
 
 To list no other/more quips:
-	empty out Table of Scored Listing.
+	now special listing count is 0.
 	[We may add this to the end of a quip-introducing activity to say that we don't care what other quips may be queued because we've decided that we want to limit what we tell the player.]
 
 To say list no other quips:
 	list no other quips.
 
-To decide whether any/-- other quips remain:
+[To decide whether any/-- other quips remain:
 	if the number of filled rows in the Table of Scored Listing is 0, no;
-	yes.
+	yes.]
 
-To decide what number is the number of remaining quips:
-	decide on the number of filled rows in the Table of Scored Listing.
+[To decide what number is the number of remaining quips:
+	decide on the number of filled rows in the Table of Scored Listing.]
 
-After printing the name of a quip (called target) while quip-introducing (this is the remove hinted quips from the listing table rule):
-	strip the target from the table.
+[After printing the name of a quip (called target) while quip-introducing (this is the remove hinted quips from the listing table rule):
+	strip the target from the table.]
 
 To strip (chosen quip - a quip) from the/-- table:
-	if the chosen quip is an output listed in the Table of Scored Listing:
-		choose row with output of chosen quip in the Table of Scored Listing;
-		blank out the whole row.
+	(- MyStrip({chosen quip}); -).
+
 [	We use a table rather than a property of the objects to be listed in order to minimize time-consuming loops over the entire set of quips in the world.	]
 [	We use a table rather than a list because this extension was started before lists existed in their current form (but this may be lower-overhead anyway).	]
 
@@ -603,10 +603,10 @@ Listing matched quips is an activity.
 
 Rule for listing matched quips (this is the standard quip disambiguation rule):
 	let L be the list of parse-matched things;
-	empty out the Table of Scored Listing;
+	now special listing count is 0;
 	repeat with item running through L:
-		choose a blank row in the Table of Scored Listing;
-		now output entry is the item; [* There are easier ways to do this, but I've handcoded it for speed reasons.]
+		increment special listing count;
+		write item to row special listing count of special-list;
 	say "What would you like to discuss: [the prepared list delimited in disjunctive style]?";
 
 Section 4 - Preferring Quips Among Multiple Matches
