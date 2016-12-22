@@ -233,7 +233,7 @@ When Higgate-arrested begins:
 As I'm taking this in, you notice hubbub behind us. We move out of the way as more officers escort Professor Higgate from the building.";
 
 
-Some officers are a man. Understand "officer" as the officers. The description of the officers is "I don't see anyone I recognize. There are two escorting Higgate and two more at the oval gate, as backup [--] presumably in case she decided to make a run for it."
+Some officers are a man. Understand "officer" or "police" as the officers. The description of the officers is "I don't see anyone I recognize. There are two escorting Higgate and two more at the oval gate, as backup [--] presumably in case she decided to make a run for it."
 
 A dangerous destruction rule for the officers:
 	say "The moment the officers change, two more come running through the gate. Might have known they wouldn't be operating without backup.
