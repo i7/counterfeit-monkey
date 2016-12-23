@@ -648,11 +648,11 @@ Understand "herself" as a woman when the item described is the current interlocu
 
 Definition: a person is talk-eligible if it is the current interlocutor.
 
-The quip-repository is a privately-named proper-named transparent closed unopenable container. The printed name of the quip-repository is "[player]".
+The quip-repository is a privately-named proper-named transparent closed unopenable container.
 
-When play begins (this is the move all quips to the quip-repository rule):
+[When play begins (this is the move all quips to the quip-repository rule):
 	now every quip that is not npc-directed is in the quip-repository;
-	sort quips for barker.
+	sort quips for barker.]
 
 Book 2 - The Discussing Action
 
@@ -735,7 +735,7 @@ Understand "ask about/for/-- [thing]" or "tell about/that/-- [thing]" as subject
 
 A quip has a list of objects called the mentions-list.
 
-When play begins:
+When play begins (this is the add indistinguishable to mentions-lists rule):
 	repeat with I running through cars:
 		add I to mentions-list of where there seems garage;
 		add I to mentions-list of whether car be fixed;

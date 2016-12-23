@@ -1161,10 +1161,6 @@ A brown tree is a fixed in place thing in Traffic Circle. Understand "leaves" or
 Instead of putting the restoration gel on the tree:
 	say "There's too much intervening crowd for us to get there with any speed."
 
-When play begins (this is the brown tree rule):
-	now the brown tree is not proffered by the brown tree;
-	now the brown tee proffers the tree.
-
 Sanity-check doing something when the noun is the tee or the second noun is the tee:
 	move the tee to the repository;
 	say "...come to mention it, where [i]is[/i] that tee? It must be somewhere in the grass, but we can't see it any more. Oh well. It's not as though I was planning an urgent golf game this afternoon." instead.

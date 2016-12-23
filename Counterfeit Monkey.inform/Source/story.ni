@@ -528,7 +528,9 @@ Include Hint System by Counterfeit Monkey.
 	•	Chapter 4 - Puzzle Hints
 		•	Section 1 - Tutorial Area
 		•	Section 2 - Endgame ]
-		
+
+Include Route-finding Matrix by Counterfeit Monkey.
+Include Room Indices by Counterfeit Monkey.
 Include Tests by Counterfeit Monkey.
 		
 [•	Volume 8 - Tests
@@ -543,6 +545,10 @@ Include Tests by Counterfeit Monkey.
 		•	Section 4 - Construction Tests
 		•	Section 5 - Ultratest ]
 
+Include Letter Hash Codes by Counterfeit Monkey.
+Include Initial Quip Positions by Counterfeit Monkey.
+Include Fakes by Counterfeit Monkey.
+Include Initial Proffering by Counterfeit Monkey.
 
 [The following source files are included above:
 

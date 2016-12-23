@@ -1484,7 +1484,7 @@ Rule for listing exits when the location is the Hostel:
 	if looking, say "There's a [h-staircase] that leads up to the dormitory rooms.";
 	otherwise say "[We] could either climb the [h-staircase] up to the dormitory rooms or go back to the park, [west]."
 
-The h-staircase is an up-staircase. The h-staircase is in the Hostel. The printed name is "spiral staircase". Understand "spiral" or "staircase" as the h-staircase. It fronts up. The description is "To save space, it winds around a pole twice before reaching the floor above. This is not kind to people with luggage, but people with luggage are supposed to stay in real hotels."
+The h-staircase is an up-staircase. The h-staircase is in the Hostel. It fronts up. The printed name is "spiral staircase". Understand "spiral" or "staircase" as the h-staircase. It fronts up. The description is "To save space, it winds around a pole twice before reaching the floor above. This is not kind to people with luggage, but people with luggage are supposed to stay in real hotels."
 
 In-direction of the hostel is up. [Into the dormitory]
 Out-direction of the hostel is west. [Back out to Heritage Corner]
@@ -2211,7 +2211,7 @@ Instead of turning or pulling or pushing the safety railing:
 Instead of climbing the safety railing:
 	say "It's here for our protection."
 
-The metal ladder is a down-staircase in Crumbling Wall Face. It is fixed in place. The description is "The rungs [if the noun is not the metal ladder]of the ladder [end if]have been bolted individually into the stone." Understand "rungs" or "rung" as the metal ladder.
+The metal ladder is a down-staircase in Crumbling Wall Face. It fronts down. It is fixed in place. The description is "The rungs [if the noun is not the metal ladder]of the ladder [end if]have been bolted individually into the stone." Understand "rungs" or "rung" as the metal ladder.
 
 Instead of going down in Crumbling Wall Face, try going west.
 

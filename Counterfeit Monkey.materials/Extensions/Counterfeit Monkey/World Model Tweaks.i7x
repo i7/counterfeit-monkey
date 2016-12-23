@@ -576,7 +576,7 @@ Sanity-check finding a door which is in the location:
 
 Section 3 - Approaches and Describing Distance Travel
 
-Include Approaches by Emily Short. Use fast route-finding.
+Include Approaches by Emily Short. Use slow route-finding.
 
 Include Approaching Speedups by Counterfeit Monkey.
 
@@ -914,10 +914,6 @@ An up-staircase is a kind of facade. Understand "step" or "steps" or "stairs" or
 
 Instead of climbing an up-staircase, try going up.
 Instead of climbing a down-staircase, try going down.
-
-When play begins (this is the fix staircases rule):
-	now every down-staircase fronts down;
-	now every up-staircase fronts up.
 
 Does the player mean finding a facade:
 	it is very unlikely.

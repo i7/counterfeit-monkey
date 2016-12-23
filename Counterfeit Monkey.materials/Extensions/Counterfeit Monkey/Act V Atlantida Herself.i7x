@@ -409,7 +409,7 @@ After examining a quittable software (called chosen software):
 Rule for listing exits when looking in Surveillance room:
 	say "[if Workshop is visited]The Workshop[otherwise]Another room[end if] lies to the east. The door [we] came through is west, and there is also a spiral staircase down[if tunnel is visited] to the tunnel[end if]."
 
-The spiral staircase is a down-staircase in Surveillance Room. The initial appearance is "A [spiral staircase] descends into a hole in the corner of the room, into what looks like a tunnel through natural rock."
+The spiral staircase is a down-staircase in Surveillance Room. It fronts down. The initial appearance is "A [spiral staircase] descends into a hole in the corner of the room, into what looks like a tunnel through natural rock."
 
 
 Section 3 - Workshop
@@ -502,7 +502,7 @@ Every turn when the location is Tunnel through Chalk:
 Instead of smelling Tunnel through Chalk:
 	say "The air does smell fresher here."
 
-The upward-spiral staircase is an up-staircase in Tunnel through Chalk. The printed name of the upward-spiral staircase is "spiral staircase". Understand "spiral" as the upward-spiral staircase.
+The upward-spiral staircase is an up-staircase in Tunnel through Chalk. It fronts up. The printed name of the upward-spiral staircase is "spiral staircase". Understand "spiral" as the upward-spiral staircase.
 
 Understand "raise [portcullis]" or "lift [portcullis]" as opening.
 
@@ -1102,12 +1102,12 @@ After printing the name of a nautical room while looking:
 
 The yacht's name is obviously a riff on Counterfeit Monkey (Slango's reason for calling it that) but also a reference to the Squirrel Nut Zippers song Trou Macacq.]
 
-When play begins (this is the forbidding nautical rooms rule):
-	now every nautical room is forbidden.
+[When play begins (this is the forbidding nautical rooms rule):
+	now every nautical room is forbidden.]
 
 Section 2 - Sunning Deck
 
-Sunning Deck is a nautical room.
+Sunning Deck is a nautical room. It is forbidden.
 	The description is "[one of]This is a very fine boat: sleek, shiny, big... Oh, you don't like it when I put it that way, I see. All right then: a high-speed yacht, something luxurious enough that it looks like a rich man's toy to harbor officials, but it handles almost like a cigarette boat. [if the player wears the Britishizing goggles]Fibreglass[otherwise]Fiberglass[end if] hull, shaped in a deep V for racing, capable of 80 knots on a calm sea. Range of around 300 nautical miles, enough to take us past Gibraltar to Málaga or perhaps even Almeria.
 
 This bit is the aft portion[or]This is the aft section of the deck[stopping], broad and flat and suitable for sunning oneself."
@@ -1125,7 +1125,7 @@ Rule for writing a topic sentence about a long thing when the location is Sunnin
 
 Section 3 - Navigation Area
 
-The Navigation Area is fore from the Sunning Deck. It is nautical. The description is "[if Slango is not on the command chair]A [command chair] waits at the [controls], a mass of buttons and levers and a tiny, low-mounted steering wheel that seems like an awfully small device to control such a high-powered machine. But I'll take your word that it works.[otherwise]Arrayed on the dashboard (is that even the right word?) is a mass of buttons and levers, and a tiny, low-mounted steering wheel.[end if]
+The Navigation Area is fore from the Sunning Deck. It is nautical and forbidden. The description is "[if Slango is not on the command chair]A [command chair] waits at the [controls], a mass of buttons and levers and a tiny, low-mounted steering wheel that seems like an awfully small device to control such a high-powered machine. But I'll take your word that it works.[otherwise]Arrayed on the dashboard (is that even the right word?) is a mass of buttons and levers, and a tiny, low-mounted steering wheel.[end if]
 
 The Galley is just below, [down] a steep staircase that is almost a ladder."
 
@@ -1134,15 +1134,15 @@ In-direction of Navigation Area is down. [Into galley]
 Rule for writing a paragraph about Slango when Slango is on the Command Chair:
 	say "Slango is in [the command chair]. He looks more relaxed driving the boat than I've ever seen him before."
 
-The steep staircase top is a down-staircase. It is in the Navigation Area. The description is "The steps are taller than is really quite comfortable.".  The printed name is "steep staircase". Understand "ladder" as the steep staircase top.
+The steep staircase top is a down-staircase. It is in the Navigation Area. It fronts down. The description is "The steps are taller than is really quite comfortable.".  The printed name is "steep staircase". Understand "ladder" as the steep staircase top.
 
-The steep staircase bottom is an up-staircase. It is in the Galley. The description is "The stairs ascend to the navigation area on deck." The printed name is "steep staircase". Understand "ladder" as the steep staircase bottom.
+The steep staircase bottom is an up-staircase. It fronts up. It is in the Galley. The description is "The stairs ascend to the navigation area on deck." The printed name is "steep staircase". Understand "ladder" as the steep staircase bottom.
 
 The command chair is an enterable scenery supporter in the Navigation Area. The description is "Cushioned for long use, and upholstered in some kind of specially-engineered UV-resistant leather."
 
 The controls are scenery in the Navigation Area. Understand "mass" or "buttons" or "button" or "lever" or "levers" or "steering" or "wheel" as the controls. The description is "It's curious, looking at these and knowing I've never touched them before in my life, and yet having your instinctive muscular knowledge of what they're all for and how they work. I feel like I could sit down and drive the yacht, and at the same time I find the idea terrifying."
 
-Foredeck is fore from the Navigation Area. It is nautical. The description is "Here the yacht is nothing but a nose over the water. A [hatch], hardly big enough for a portly person, descends into the so-called crew cabin."
+Foredeck is fore from the Navigation Area. It is nautical and forbidden. The description is "Here the yacht is nothing but a nose over the water. A [hatch], hardly big enough for a portly person, descends into the so-called crew cabin."
 
 In-direction of Foredeck is down. [Into crew cabin]
 
@@ -1171,7 +1171,7 @@ This is the pre-drawer rule:
 
 Section 4 - Crew Cabin
 
-The Crew Cabin is a room. It is nautical. It is indoors. The description is "It was meant to be mine, before we turned out to be inseparable It's... Spartan. But I didn't pay for expensive accommodations. Oh, yes, and I can understand that it must be a bother for you to give up the storage space.
+The Crew Cabin is a room. It is nautical and forbidden. It is indoors. The description is "It was meant to be mine, before we turned out to be inseparable It's... Spartan. But I didn't pay for expensive accommodations. Oh, yes, and I can understand that it must be a bother for you to give up the storage space.
 
 I'm fascinated to note what shape a bed can be when it's not rectangular. More sort of curved and tapering. Convenient if you're called on to house a mermaid.".
 
@@ -1186,7 +1186,7 @@ Some tiny portholes are portholes. They are in the Crew Cabin.
 
 Section 5 - Galley
 
-The Galley is below the Navigation Area. It is nautical. It is indoors. The description is "Smaller than the kitchen in a comfortable house, but carefully and elegantly fitted, with an electric stovetop, a convection oven/microwave, a tiny refrigerator, a sink: enough, in short, to serve the crew of three on long trips.[one of] I guess even a fairly big boat is still small on the inside, eh?[or][stopping]
+The Galley is below the Navigation Area. It is nautical and forbidden. It is indoors. The description is "Smaller than the kitchen in a comfortable house, but carefully and elegantly fitted, with an electric stovetop, a convection oven/microwave, a tiny refrigerator, a sink: enough, in short, to serve the crew of three on long trips.[one of] I guess even a fairly big boat is still small on the inside, eh?[or][stopping]
 
 There's even a little washing machine, for items too big to hand-wash in the sink.".
 
@@ -1262,7 +1262,7 @@ Instead of inserting something into a freezer compartment:
 
 Section 6 - Brock's Stateroom
 
-Brock's Stateroom is fore from the Galley. It is nautical.  It is indoors. The description is "Bigger than your bunk or Slango's, Brock's space takes the whole width of the yacht here, with windows out both sides, and a double bed.
+Brock's Stateroom is fore from the Galley. It is nautical and forbidden.  It is indoors. The description is "Bigger than your bunk or Slango's, Brock's space takes the whole width of the yacht here, with windows out both sides, and a double bed.
 
 The shape of hull in this part of the yacht means that the room is much narrower fore than aft, the walls sweeping grandly outward from the head of [Brock's bed]. It looks like the bed of Captain Horndog, Space Woman[ize]r. If you ask me."
 
@@ -1347,7 +1347,7 @@ Some front portholes are portholes. They are in Brock's Stateroom.
 
 Section 7 - Brock's Head
 
-Brock's Head is aft-port from Brock's Stateroom. It is nautical.  It is indoors.  It is a bathroom. The description is "Brock has gotten the best accommodations in this respect as well: his bathroom is less cramped than the others aboard, and the mirror is bigger."
+Brock's Head is aft-port from Brock's Stateroom. It is nautical and forbidden.  It is indoors.  It is a bathroom. The description is "Brock has gotten the best accommodations in this respect as well: his bathroom is less cramped than the others aboard, and the mirror is bigger."
 
 Instead of going starboard in Brock's Head:
 	try going fore-starboard.
@@ -1357,7 +1357,7 @@ Instead of going fore in Brock's Head:
 
 Section 8 - Your Bunk
 
-Your Bunk is aft-starboard from the Galley.  It is nautical .  It is indoors. The description is "Amazing: it's even tinier than my apartment, and the bed isn't even a twin in width. Across from the bed is a built-in [bench], with [random portholes] above, just at the waterline."
+Your Bunk is aft-starboard from the Galley.  It is nautical and forbidden.  It is indoors. The description is "Amazing: it's even tinier than my apartment, and the bed isn't even a twin in width. Across from the bed is a built-in [bench], with [random portholes] above, just at the waterline."
 
 Out-direction of Your bunk is fore-port. [Back to galley]
 
@@ -1418,11 +1418,11 @@ Instead of going fore in Your Bunk:
 
 Section 10 - Your Head
 
-Your Head is aft from Your Bunk. It is nautical. It is a bathroom.  It is indoors. The description is "All the absolutely required amenities of a bathroom, packed into the least possible space. The international space station assigns more room to the bathroom functions."
+Your Head is aft from Your Bunk. It is nautical and forbidden. It is a bathroom.  It is indoors. The description is "All the absolutely required amenities of a bathroom, packed into the least possible space. The international space station assigns more room to the bathroom functions."
 
 Section 11 - Slango's Bunk
 
-Slango's Bunk is aft-port from the Galley.  It is nautical.  It is indoors. The description is "Just as tiny as yours, with a bed narrower than a standard twin, and its own miniature head, and drawers cunningly fitted under the bed to hold clothing and other necessities."
+Slango's Bunk is aft-port from the Galley.  It is nautical and forbidden.  It is indoors. The description is "Just as tiny as yours, with a bed narrower than a standard twin, and its own miniature head, and drawers cunningly fitted under the bed to hold clothing and other necessities."
 
 Out-direction of Slango's bunk is fore-starboard. [Back to galley]
 
@@ -1440,12 +1440,19 @@ Section 12 - Slango's Head
 
 Slango's Head is aft from Slango's Bunk.
 The description is "All the absolutely required amenities of a bathroom, packed into the least possible space. The international space station probably assigns more room to the bathroom functions."
-It is nautical. It is indoors. It is a bathroom.
+It is nautical and forbidden. It is indoors. It is a bathroom.
 
-When play begins (this is the setting up the natuical bathrooms rule):
+When play begins (this is the setting up the nautical bathrooms rule):
 	repeat with item running through baths which are in nautical bathrooms:
 		now the printed name of the item is "shower";
+		now the hash code of the item is -1874835968;
+		repeat with shower-tap running through taps which are part of item:
+			now the hash code of shower-tap is -1849668096;
+		repeat with shower-drain running through drains which are part of item:
+			now the hash code of shower-drain is -1721678336;
 		now the description of the item is "Just a stand-up shower with a folding plastic door. At least the water is usually hot."
+
+The setting up the nautical bathrooms rule is listed after the initialize difficult hash codes rule in the when play begins rules.
 
 Section 13 - View from Outdoor Areas
 

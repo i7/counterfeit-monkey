@@ -1133,7 +1133,7 @@ Instead of listening to Higgate's office door when Higgate's office door is clos
 		say "Dead silence." instead;
 	say "Putting our ear to the door, [we] hear [one of]a girl's voice stumbling over a question[or]Professor Higgate saying something rapid and fluent[or]a boy laughing[stopping]."
 
-Higgate's Office is west of Higgate's office door. The description is "Higgate got about 30% finished with a stylish decorating scheme and then got distracted, leaving everything in a unsettled state. A few of her books are arranged on a very nice [rosewood bookshelf], which looks Asian[if the small figurines are on the bookshelf] and is ornamented with [small figurines][end if]; all the rest of her library is stacked higgledy-piggledy in [plastic cartons]."
+Higgate's Office is west of Higgate's office door. The description is "Higgate got about 30% finished with a stylish decorating scheme and then got distracted, leaving everything in a unsettled state. A few of her books are arranged on a very nice [rosewood bookshelf], which looks Asian[if the small figurines are on the rosewood bookshelf] and is ornamented with [small figurines][end if]; all the rest of her library is stacked higgledy-piggledy in [plastic cartons]."
 
 The rosewood bookshelf is a supporter in Higgate's Office. It is scenery. Some small figurines are on the rosewood bookshelf. The small figurines are scenery. The description of the small figurines is "They depict mostly characters from popular children's fiction: Professor Higgate has a particularly strong and inexplicable fetish for the Wizard of Oz."
 

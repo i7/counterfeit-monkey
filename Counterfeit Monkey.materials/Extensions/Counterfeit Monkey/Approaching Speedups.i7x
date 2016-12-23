@@ -2,16 +2,6 @@ Approaching Speedups by Counterfeit Monkey begins here.
 
 Use authorial modesty.
 
-When play begins (this is the initialize route-finding rule):
-	now the Oracle Project is mapped north of Wonderland;
-	now Wonderland is mapped south of the Oracle Project;
-	now Workshop is mapped below Shadow Chamber;
-	let x be the best route from Back Alley to Ampersand Bend, using even locked doors;
-	now the Oracle Project is not mapped north of Wonderland;
-	now Wonderland is not mapped south of the Oracle Project;
-	now Workshop is not mapped below Shadow Chamber.
-
-
 A room can be non-checkpoint or checkpoint. A room is usually non-checkpoint.
 
 ["Checkpoint" rooms are those that must be properly gone to rather than just moved to when approaching]
@@ -118,19 +108,28 @@ To decide which direction is the true-best route from (x - a room) to (y - a roo
 To decide which direction is the true-best route to (x - a room):
 	(- MyRouteTo(real_location,{x}) -).
 
+To decide which number is the best-number of moves from (x - a room) to (y - a room):
+	(- MyCountRouteTo({x},{y}) -).
+
 Include
 (-
 
-[ MyRouteTo from to diri i dir;
+Array my_directions --> nothing (+ north +) (+ northeast +) (+ east +) (+ southeast +) (+ south +) (+ southwest +) (+ west +) (+ northwest +) (+ up +) (+ down +) (+ inside +) (+ outside +) (+ fore +) (+ fore-starboard +) (+ starboard +) (+ aft-starboard +) (+ aft +) (+ aft-port +) (+ port +) (+ fore-port +);
+
+[ MyRouteTo from to i;
 	if (from == to) return nothing;
-	i = (FWMatrix-->(from.room_index*NUM_ROOMS + to.room_index))/No_Directions;
-	if (i == 0) return nothing;
-	diri = (FWMatrix-->(from.room_index*NUM_ROOMS + to.room_index))%No_Directions;
-	i=0; objectloop (dir ofclass K3_direction) {
-		if (i == diri) return dir;
-		i++;
+	i = route_finding->(from.room_index_2*NUM_ROOMS + to.room_index_2);
+	return my_directions-->i;
+];
+
+[ MyCountRouteTo from to place moves;
+	moves = 0;
+	place = from;
+	while (place ~= to) {
+		place = MapConnection(place, MyRouteTo(place, to));
+		moves++;
 	}
-	return nothing;
+	return moves;
 ];
 
 -) after "Relations.i6t".

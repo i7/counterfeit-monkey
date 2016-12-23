@@ -60,6 +60,8 @@ When play begins (this is the setting proffered rule):
 	now Brock proffers the rock;
 	now the banana is not proffered by anything;
 	now the bandana proffers the banana;
+	now the brown tree is not proffered by the brown tree;
+	now the brown tee proffers the tree;
 	now the shed is not proffered by anything;
 	now the shred proffers the shed;
 	now the as-coin is not proffered by anything;
