@@ -1863,7 +1863,7 @@ The podium is a supporter in Lecture Hall 1. It is scenery. The description is "
 
 On the podium is a page. The page is a notepad. The description of the page is "A sheet of lined paper[if the location is Lecture Hall 1], presumably left by the person who lectured here last[end if]."
 	The memo of the page is "visual[ization] training... preparation at a young age... cooperative direction of language outcomes".
-	The page write-allows a pen and some pens. Understand "paper" as the page.
+	Understand "paper" as the page. The allowed-pens of the page is {pen, some pens}.
 
 A description-concealing rule when the page is marked for listing:
 	if the page is not seen and the page is not handled:
