@@ -55,7 +55,8 @@ Proffering relates various things to various things. The verb to proffer (it pro
 
 When play begins (this is the setting proffered rule):
 	repeat with item running through things:
-		now the item proffers the item;
+		unless item is a fact or item is a quip or item is a memory or item is a subject or item is a g-window or item is dummy-object or item is quip-repository or item is backup-repository:
+			now the item proffers the item;
 	now the rock is not proffered by anything;
 	now Brock proffers the rock;
 	now the banana is not proffered by anything;
