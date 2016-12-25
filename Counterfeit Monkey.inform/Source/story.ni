@@ -550,6 +550,7 @@ Include Initial Quip Positions by Counterfeit Monkey.
 Include Fakes by Counterfeit Monkey.
 Include Initial Proffering by Counterfeit Monkey.
 Include Backdrops by Counterfeit Monkey.
+Include Hard-Coded Quip Cache by Counterfeit Monkey.
 
 [The following source files are included above:
 
