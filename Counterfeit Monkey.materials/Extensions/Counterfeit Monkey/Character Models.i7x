@@ -404,7 +404,7 @@ thank-atlantida	"That we have reason to thank Atlantida."
 
 A fact can be motivational or purposeless. A fact is usually purposeless. you-are-student, you-hit-on, you-are-tourist, you-are-possible-customer, you-are-past-customer, you-take-survey, you-are-feckless, you-are-dangerous are motivational.
 
-Assumption relates various quips to various facts. The verb to assume (it assumes, they assume, it assumed, it is assumed) implies the assumption relation.
+Assumption relates one quip to one fact. The verb to assume (it assumes, they assume, it assumed, it is assumed) implies the assumption relation.
 
 An availability rule for a quip (called the target) (this is the check knowledge requirements for quips rule):
 	if a fact assumed by the target is not known by the player:
