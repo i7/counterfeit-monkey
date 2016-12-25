@@ -9,7 +9,7 @@ Include Very Complex Listing by Counterfeit Monkey.
 
 Definition: a person is other if he is not the player.
 
-[VOLUME ZERO - TROUBLE PROOFING - NOT FOR RELEASE
+VOLUME ZERO - TROUBLE PROOFING - NOT FOR RELEASE
 
 When play begins (this is the check for mis-defined items rule):
 	let N be 0;
@@ -27,14 +27,14 @@ Similarly, if the named object is not a subject but something that actually appe
 		stop game abruptly.
 
 When play begins (this is the scan for unidentified subjects rule):
-	repeat with item running through things which are mentioned by something:
+	repeat with item running through things [which are mentioned by something]:
 		if the location of the item is nothing and the item is not a person and the item is not a backdrop:
 		[	People and backdrops might often begin the game out of play and be moved on and off;	]
 		[	it's fair to assume that they're not secretly meant to be subjects.							]
 			if the item is a subject:
 				do nothing;
 			otherwise:
-				say "[The item] is a subject.[line break]" (A).]
+				say "[The item] is a subject.[line break]" (A).
 
 
 VOLUME ONE - QUIPS, FACTS, SUBJECTS
@@ -226,6 +226,7 @@ Part Two - Cache-building
 	      Use hard cache.
 		]
 [	to the main source of the game.	]
+
 
 Use hard cache translates as (- Constant HARD_CACHE; -).
 
@@ -648,11 +649,11 @@ Understand "herself" as a woman when the item described is the current interlocu
 
 Definition: a person is talk-eligible if it is the current interlocutor.
 
-The quip-repository is a privately-named proper-named transparent closed unopenable container. The printed name of the quip-repository is "[player]".
+The quip-repository is a privately-named proper-named transparent closed unopenable container.
 
-When play begins (this is the move all quips to the quip-repository rule):
+[When play begins (this is the move all quips to the quip-repository rule):
 	now every quip that is not npc-directed is in the quip-repository;
-	sort quips for barker.
+	sort quips for barker.]
 
 Book 2 - The Discussing Action
 
@@ -735,7 +736,7 @@ Understand "ask about/for/-- [thing]" or "tell about/that/-- [thing]" as subject
 
 A quip has a list of objects called the mentions-list.
 
-When play begins:
+When play begins (this is the add indistinguishable to mentions-lists rule):
 	repeat with I running through cars:
 		add I to mentions-list of where there seems garage;
 		add I to mentions-list of whether car be fixed;

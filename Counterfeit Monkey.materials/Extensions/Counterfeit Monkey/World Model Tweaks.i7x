@@ -576,7 +576,7 @@ Sanity-check finding a door which is in the location:
 
 Section 3 - Approaches and Describing Distance Travel
 
-Include Approaches by Emily Short. Use fast route-finding.
+Include Approaches by Emily Short. Use slow route-finding.
 
 Include Approaching Speedups by Counterfeit Monkey.
 
@@ -915,10 +915,6 @@ An up-staircase is a kind of facade. Understand "step" or "steps" or "stairs" or
 Instead of climbing an up-staircase, try going up.
 Instead of climbing a down-staircase, try going down.
 
-When play begins (this is the fix staircases rule):
-	now every down-staircase fronts down;
-	now every up-staircase fronts up.
-
 Does the player mean finding a facade:
 	it is very unlikely.
 
@@ -1043,10 +1039,8 @@ Report facing when the location is indoors:
 
 The sky is a distant backdrop. It screens up. The sun is part of the sky. The description of the sky is "[sky-description]". The description of the sun is "[sun-description]".
 
-When play begins (this is the move backdrops to the outdoors rule):
-	move the sky backdrop to all outdoors rooms.
-
-
+[When play begins (this is the move backdrops to the outdoors rule):
+	move the sky backdrop to all outdoors rooms.]
 
 
 Chapter 3 - Vehicles and Transport Animals
@@ -1339,9 +1333,9 @@ Instead of going by car when the location is offroad:
 
 [Include Conditional Backdrops by John Clemens.]
 
-When play begins (this is the move busy streets backdrop rule):
+[When play begins (this is the move busy streets backdrop rule):
 	move protesters backdrop to all roads in Busy Streets;
-	move traffic backdrop to all roads in Busy Streets;
+	move traffic backdrop to all roads in Busy Streets.]
 
 Some protesters are a backdrop. Understand "student" or "students" as the protesters. The description is "Hundreds of people pack the sidewalk, wearing slogans and carrying angry signs."
 

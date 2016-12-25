@@ -248,7 +248,7 @@ To say directions to (destination - a room):
 		say "[the destination]";
 	otherwise:
 		say "the Fleur d'Or";
-	let distance be the number of moves from the location to the destination;
+	let distance be the best-number of moves from the location to the destination;
 	let the way be the true-best route to the destination;
 	if distance is:
 		-- 1:
@@ -327,7 +327,7 @@ location-questioning quip is a kind of questioning quip.
 	The reply is "[if the correct answer of the item described is Park Center][holiday closures][otherwise if the correct answer of the item described is the location]'[Well], look around you.'[otherwise][directions to the correct answer of the item described]".
 
 where there seems airport is a weakly-phrased location-questioning quip.
-	The printed name is "where there is an airport". The true-name is "where there seems an airport".
+	The printed name is "where there is an airport". The true-name is "where there seems airport".
 	Understand "is" or "an" or "airport" or "international" or "plane" or "airplane" as where there seems airport.  The place-sought is "an airport".
 	The mentions-list is {geography, transportation}.
 	The reply is "[one of]'Atlantis doesn't have a commercial airport,' says [the current interlocutor]. 'There's an airstrip that belongs to Dental Consonants Limited, but if you don't have a corporate jet, forget it.'[or]'[awkward no]. Occasionally you might see planes or even a helicopter, but they're going to the DCL campus for business purposes. Tourists only come by ocean.'[or][The current interlocutor] explains, as we've already heard, that there is no airport, at least not as far as we're concerned.[stopping]".
@@ -335,7 +335,7 @@ where there seems airport is a weakly-phrased location-questioning quip.
 	The correct answer is Park Center.
 
 where there seems garage is a weakly-phrased location-questioning quip.
-	The printed name is "where there is a garage". The true-name is "where there seems a garage".
+	The printed name is "where there is a garage". The true-name is "where there seems garage".
 	Understand "is" or "a" as where there seems garage.  The place-sought is "a garage".
 	The mentions-list is {geography, transportation}.
 	It is background-information.
@@ -390,14 +390,14 @@ where customs seems found is a weakly-phrased location-questioning quip.
 	The correct answer is Customs House.
 
 where post office seems found is a weakly-phrased location-questioning quip.
-	The printed name is "where a post office is found". The true-name is "where a post office seems found".
+	The printed name is "where a post office is found". The true-name is "where post office seems found".
 	Understand "is" or "post office" or "postal" or "mail" or "postal/mail service" as where post office seems found.  The place-sought is "a post office".
 	The mentions-list is {geography}.
 	It is background-information.
 	The correct answer is Deep Street.
 
 where pharmacy seems found is a weakly-phrased location-questioning quip.
-	The printed name is "where a pharmacy is found". The true-name is "where a pharmacy seems found".
+	The printed name is "where a pharmacy is found". The true-name is "where pharmacy seems found".
 	Understand "is" or "drugs" or "drug" or "druggist" or "chemist" or "chemists" as where pharmacy seems found.  The place-sought is "a pharmacy".
 	The mentions-list is {geography}.
 	It is background-information.
@@ -412,7 +412,7 @@ where lodging seems found is a weakly-phrased location-questioning quip.
 	The correct answer is Hostel.
 
 where there seems hotel is a weakly-phrased location-questioning quip.
-	The printed name is "where there is a hotel". The true-name is "where there seems a hotel".
+	The printed name is "where there is a hotel". The true-name is "where there seems hotel".
 	Understand "is" or "a" or "fleur" or "d'or" as where there seems hotel.  The place-sought is "a hotel".
 	The mentions-list is {geography}.
 	It is background-information.
@@ -426,14 +426,14 @@ where there seems Arbot is a weakly-phrased location-questioning quip.
 	The correct answer is Arbot Maps & Antiques.
 
 where there seems cinema is a weakly-phrased location-questioning quip.
-	The printed name is "where there is a cinema". The true-name is "where there seems a cinema".
+	The printed name is "where there is a cinema". The true-name is "where there seems cinema".
 	Understand "is" or "a" or "cinema" as where there seems cinema.  The place-sought is "a cinema".
 	The mentions-list is {geography}.
 	It is background-information.
 	The correct answer is Cinema.
 
 where there seems pub is a weakly-phrased location-questioning quip.
-	The printed name is "where there is a pub". The true-name is "where there seems a pub".
+	The printed name is "where there is a pub". The true-name is "where there seems pub".
 	Understand "is" or "a" or "bar" as where there seems pub.  The place-sought is "a pub".
 	The mentions-list is {geography, counterfeit monkey-as-subject}.
 	It is background-information.
@@ -739,6 +739,7 @@ Does the player mean discussing whether car be fixed when an operational car is 
 
 whether car be fixed is a questioning quip.
 	The printed name is "whether the car is fixed".
+	The true-name is "whether car be fixed".
 	Understand "is" as whether car be fixed.
 	The comment is "'Is the car fixed now?' we ask."
 	The reply is "'The oil is in,' the mechanic says[if at least one car is fueled]. 'Should run all right[otherwise]. 'Might be it's out of fuel, though[end if].'".
@@ -777,7 +778,7 @@ why the car does not run is a questioning quip.
 	[Every car is mentioned by why the car does not run.]
 
 where there seems a car-2 is an unlisted repeatable questioning quip.
-	Understand "buy car" or "car" or "there is" or "buy a car" or "where i could" as where there seems a car-2. The printed name is "where to find a car".
+	Understand "buy car" or "car" or "there is" or "buy a car" or "where i could" as where there seems a car-2. The printed name is "where to find a car". The true-name is "where there seems a car-2".
 	It quip-supplies the mechanic.
 	The comment is "'I'm looking for a car,' we say.".
 	The reply is "'Sorry,' he mumbles. '[one of]I fix them. I don't sell them[or]Perhaps you should ask somebody else[stopping].'".
@@ -1238,6 +1239,7 @@ Availability rule for where there seems a car:
 
 where there seems a car is an unlisted questioning quip. It assumes car-needed.
 	Understand "chard" or "where there seems" as where there seems a car. The printed name is "where to find a car".
+	The true-name is "where there seems a car".
 	The comment is "'I'm looking to make a car,' we say. 'With a letter-remover.'"
 	The reply is "'Maybe you need some carob,' he suggests. 'Take out the O, then the B...'
 
@@ -1931,6 +1933,7 @@ The current mood of Brock is neutral.
 
 whether she hath seen Brock-man is a questioning quip.
 	The printed name is "whether she has seen Brock".
+	The true-name is "whether she hath seen Brock-man".
 	Understand "has" or "brock" as whether she hath seen Brock-man.
 	The mentions-list is {Brock}.
 	The comment is "'Have you seen a man [--] maybe this morning [--] about this height, dark hair, very blue eyes, kind of cocky?'"
@@ -1962,6 +1965,7 @@ what sort of demonstration is a questioning quip.
 
 whether Brock-man seemed upset is a questioning quip.
 	The printed name is "whether Brock seemed upset".
+	The true-name is "whether Brock-man seemed upset".
 	The mentions-list is {Brock}.
 	The comment is "'There's a chance my friend was in trouble. Did he seem to be in a hurry or concerned about anything?'"
 	The reply is "'Not at all. He appeared eager to speak with [Mr] Arbot, and they had plans together, but he didn't seem agitated. If anything, he seemed a little more worldly and collected than people in his line of work usually are[casually queue recommend-help].'
@@ -2077,7 +2081,7 @@ Availability rule for offer the ticket:
 
 offer the ticket is an unlisted demonstration quip.
 	The printed name is "offer the ticket".
-	Understand "here is the ticket" or "here is ticket" as offer the ticket.
+	Understand "here is ticket" as offer the ticket.
 	The mentions-list is {the ticket}.
 	The comment is "'Here, have a ticket,' we say."
 	The reply is "[allowed-in-movie]The ticket-taker frowns slightly as he takes the ticket. He turns it over front and back; looks at us in confusion; looks at the ticket again. Then he goes to the phone and makes a call.
@@ -2104,7 +2108,8 @@ Availability rule for offer the ticket redundantly:
 
 offer the ticket redundantly is an unlisted demonstration quip.
 	The printed name is "offer the ticket".
-	Understand "here is the ticket" or "here is ticket" as offer the ticket.
+	The true-name is "offer the ticket redundantly".
+	Understand "here is ticket" as offer the ticket redundantly.
 	The mentions-list is {the ticket}.
 	The comment is "'Here, have a ticket,' we say."
 	The reply is "The ticket-taker squints at the ticket. 'You've already been let in,' he says. 'So you can keep this. Kind of a weird one, though, isn't it? I didn't know we issued [']em this way. Still, it's awfully confusing now that there are all those print-your-own-ticket-at-home things, or you can buy the ticket at the box office, or win it at a raffle prize, or whatever. I keep having to call my manager to check what special offers we're running this week.'"
@@ -2298,6 +2303,7 @@ Instead of saying no when current interlocutor is the ticket-taker and delay tic
 
 delay ticket-taker is a weakly-phrased performative quip.
 	The printed name is "delay the ticket-taker".
+	The true-name is "delay ticket-taker".
 	The comment is "'Maybe I'll go in in a little bit,' we say. 'The movie's not for a while yet, right?'".
 	The mentions-list is {entertainment}.
 	The reply is "'Yeah, that's right.'".
@@ -2384,6 +2390,7 @@ Sanity-check subject-asking the hidden-ticket when the current interlocutor is t
 
 buy movie-ticket is a purchasing quip.
 	The printed name is "buy a movie ticket".
+	The true-name is "buy movie-ticket".
 	The mentions-list is { hidden-ticket }.
 	The comment is "'I'd like to buy a ticket to this movie,' we say.".
 	The reply is "[You-are-past-customer]The ticket-taker shrugs. 'If you give me the money here, I don't actually have to give you a ticket,' he says.
@@ -3140,7 +3147,7 @@ why gift shop volunteer seems here is a questioning quip.
 My mother is a woman.
 
 remind the gift shop volunteer that Mrs Rosehip seems married is a performative quip.
-	The printed name is "remind the gift shop volunteer that [Mrs] Rosehip is married". The true-name is "remind the gift shop volunteer that [Mrs] Rosehip seems married".
+	The printed name is "remind the gift shop volunteer that [Mrs] Rosehip is married". The true-name is "remind the gift shop volunteer that Mrs Rosehip seems married".
 	Understand "is" or "dad" or "father" or "my father" or "my dad" or "your father" or "your dad" or "remind him" as remind  gift shop volunteer that Mrs Rosehip seems married.
 	The mentions-list is {my mother}.
 	The comment is "'My mother[--]' we begin, before you catch me.
@@ -3789,6 +3796,7 @@ Instead of the barman discussing a civic quip when the barman does not know slan
 
 whether he believes in god-2 is a questioning quip.
 	The comment is "'Where do you stand on God?' we ask[you-are-religious].". The printed name is "whether he believes in God".
+	The true-name is "whether he believes in god-2".
 	The mentions-list is {religion}.
 	The reply is "'Don't give it much thought,' he says. 'Please don't tell me you're here with a pamphlet . I won't read it.'".
 	It quip-supplies the barman.
@@ -4186,6 +4194,7 @@ needs-disguise is an NPC-directed quip.
 
 what she kens about authentication scopes is an unlisted repeatable questioning quip.
 	The printed name is "what she knows about authentication scopes". Understand "knows" or "know" as what she kens about authentication scopes.
+	The true-name is "what she kens about authentication scopes".
 	The mentions-list is {monocle, regulation authentication scope}.
 	The comment is "'Tell me more about authentication scopes,' [we] say.".
 	The reply is "'Main thing I know is that there are more of them in use every day,' she says. 'Keeping our streets and shops clear of fakes. Or so they say.'"
@@ -4207,6 +4216,7 @@ An availability rule for quip-about-paste:
 
 quip-about-paste is a weakly-phrased performative quip.
 	The printed name is "quip about paste". Understand "quip" or "about" or "paste" as quip-about-paste.
+	The true-name is "quip-about-paste".
 	The mentions-list is {origin paste}.
 	The comment is "'Makes a great facial scrub,' you say. 'I slather the stuff on.'"
 	The reply is "'Well, honey, all I can say is, you look so real.'"
@@ -5170,6 +5180,7 @@ Instead of kissing Brock:
 
 Brock-smoochies is an unlisted performative quip.
 	The printed name is "ask Brock to kiss you".
+	The true-name is "Brock-smoochies".
 	The comment is "You put our arms around Brock. He looks surprised, then pulls us in."
 	The reply is "'I thought we would leave this kind of thing until you were gelled,' Brock comments after a moment, pushing a bit of [if the player is wearing the wig or the player is wearing the hairpiece]fake [end if]hair out of our eyes. 'Does your passenger not mind?'
 
@@ -6107,6 +6118,7 @@ how to fix the fusion is a questioning quip.
 
 what Atlantida kens concerning synthesis is a questioning quip.
 	The printed name is "what Atlantida knows about synthesis".
+	The true-name is "what Atlantida kens concerning synthesis".
 	Understand "knows" or "she" or "about" as what Atlantida kens concerning synthesis.
 	It directly-follows how to fix the fusion.
 	The comment is "'Wait, what do you know about synthes[ize]d people?' If we don't find out now, will there be a better time?"

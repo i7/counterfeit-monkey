@@ -327,7 +327,7 @@ To say already-have:
 
 Definition: a person is eavesdropping if it is not the player and it is not the current interlocutor and it is enclosed by the location.
 
-The greet-quip is a privately-named quip. The greet-quip is unlisted. The printed name of the greet-quip is "greetings".
+The greet-quip is a privately-named quip. The greet-quip is unlisted. The printed name of the greet-quip is "greetings". The true-name is "greet-quip".
 
 Understand "wave to/at [something]" as waving to. Waving to is an action applying to one visible thing.
 
@@ -474,10 +474,10 @@ Rule for expressing ignorance by a police person:
 	say "[one of]'That's official information[or]'There are security reasons why I can't discuss that[or]'I'd have to ask my manager[or]'We aren't supposed to answer questions of that sort[at random],' says [the current interlocutor].[run paragraph on]".
 
 
-When play begins (this is the set official grounds police rule):
+[When play begins (this is the set official grounds police rule):
 	[now every person in the zoo is tourist;
 	now every person in the Customs House is police;]
-	now every person in Official Grounds is police.
+	now every person in Official Grounds is police.]
 
 [Characters also have certain traits, which may occur in combination or alone and are not mutually exclusive, and which govern reactions to common questions.]
 

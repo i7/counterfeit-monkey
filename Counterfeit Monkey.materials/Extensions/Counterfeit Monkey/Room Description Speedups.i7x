@@ -5,13 +5,14 @@ Use authorial modesty.
 [ This is basically code from Room Description Control (along with one from Tailored Room Descriptions) rewritten in Inform 6 for speed reasons. I'm not sure if the fact that we still include the original extension but replace nearly all of its rules makes things more confusing or less. ]
 
 
-When play begins (this is the new mark every thing as unmentioned when play begins rule):
+[When play begins (this is the new mark every thing as unmentioned when play begins rule):
 	rapidly set all things not mentioned.
 
-The new mark every thing as unmentioned when play begins rule is listed instead of the mark every thing as unmentioned when play begins rule in the when play begins rules.
+The new mark every thing as unmentioned when play begins rule is listed instead of the mark every thing as unmentioned when play begins rule in the when play begins rules.]
 
+The mark every thing as unmentioned when play begins rule is not listed in any rulebook.
 
-Before reading a command (this is the new  mark everything unmentioned rule):
+Before reading a command (this is the new mark everything unmentioned rule):
 	rapidly set all things not mentioned.
 
 The new mark everything unmentioned rule is listed instead of the mark everything unmentioned rule in the before reading a command rules.
@@ -87,7 +88,9 @@ This is the new declare everything initially unmentioned rule:
 
 The new declare everything initially unmentioned rule is listed instead of the declare everything initially unmentioned rule in the turn sequence rulebook.
 
-The new declare everything initially unmentioned rule is listed instead of the declare everything initially unmentioned rule in the startup rulebook.
+[The new declare everything initially unmentioned rule is listed instead of the declare everything initially unmentioned rule in the startup rulebook.]
+
+The declare everything initially unmentioned rule is not listed in the startup rulebook.
 
 The new declare everything unmentioned rule is listed instead of the declare everything unmentioned rule in the carry out looking rules.
 
