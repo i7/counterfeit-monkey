@@ -276,15 +276,11 @@ Instead of a fake person discussing a quip which does not quip-supply the curren
 Rule for expressing ignorance by a fake person (called target):
 	say "[The target] just [look] confused. These generated people are usually limited to acting only in one particular sphere of action.[run paragraph on]"
 
-Carry out someone discussing a geography-mentioning quip:
+Carry out someone discussing a location-questioning quip:
 	if the current interlocutor knows you-are-tourist:
 		casually queue suggest-tourist-information;
 	now the current interlocutor knows you-are-tourist.
 
-Definition: a quip is geography-mentioning if it geography-mentions.
-
-To decide whether (q - a quip) geography-mentions:
-	(- ( MyMentions({q}, (+ geography +) ) ) -).
 
 Instead of someone discussing where lodging seems found when the location is dormitory or location is hostel:
 	try the actor discussing you-seem-confused.
@@ -316,7 +312,7 @@ Instead of someone discussing a location-questioning quip when the person asked 
 Instead of someone discussing a location-questioning quip when the location is the correct answer of the noun:
 	try the person asked discussing you-seem-confused.
 
-Last report discussing a geography-mentioning quip for the first time:
+Last report discussing a location-questioning quip for the first time:
 	say "(Incidentally, you know, we don't have to go around asking where everything is like a tourist just off the boat. If you want to go to some place you've heard of, just say so and I'll handle the navigation [--] unless of course you actually want to give the impression of being a tourist just off the boat, in which case far be it from me to critic[ize] your methods.)" instead.
 
 location-questioning quip is a kind of questioning quip.
@@ -3201,7 +3197,7 @@ Section 10 - The Barker
 The greeting of the barker is "'Why hello!'"
 The generic confrontational of the barker is "lady".
 
-Instead of the barker discussing a geography-mentioning quip:
+Instead of the barker discussing a location-questioning quip:
 	say "[one of]'Get directions from someone else,' the barker hisses. 'You're interrupting the show.'[or]This time he just ignores us.[stopping]".
 
 Availability rule for what the restoration gel seems worth:
