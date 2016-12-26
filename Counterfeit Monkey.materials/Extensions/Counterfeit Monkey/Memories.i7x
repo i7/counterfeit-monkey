@@ -145,10 +145,28 @@ Brock-bed is a memory. The max is 5. The printed name is "how it started with Br
 Carry out discussing a Brock-mentioning quip:
 	trigger Brock-bed.
 
-Definition: a quip is Brock-mentioning if it Brock-mentions.
-
-To decide whether (q - a quip) Brock-mentions:
-	(- ( MyMentions({q}, (+ Brock +)) ) -).
+Definition: a quip is Brock-mentioning:
+	if it is whether she hath seen Brock-man:
+		yes;
+	if it is whether Brock-man seemed upset:
+		yes;
+	if it is what the trouble was:
+		yes;
+	if it is complain about Brock's recklessness:
+		yes;
+	if it is remind Brock that synthesis was necessary because of him:
+		yes;
+	if it is defend Alex:
+		yes;
+	if it is discover why Brock got stuck here:
+		yes;
+	if it is rejoice that brock seems okay:
+		yes;
+	if it is claim-to be fine:
+		yes;
+	if it is what buried command center he heard of:
+		yes;
+	no.
 	
 Carry out examining a bed:
 	trigger Brock-bed.
