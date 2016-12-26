@@ -2424,7 +2424,7 @@ The generic adversative of the secretary is "well".
 The secondary apology of the secretary is "[one of]as it turns out[or]unfortunately[at random]".
 The generic confrontational of the secretary is "citizen".
 
-The secretary exhibits unhelpfulnes. The secretary is alert. The secretary exhibits privateness.
+The secretary is alert. The secretary exhibits privateness and unhelpfulness.
 
 pass-need is an NPC-directed quip.
 	The reply is "'I'm sorry, those with passes only,' she says, before waving us out. She has a bored look: not one of the more zealous staff members."
