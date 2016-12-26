@@ -2012,8 +2012,6 @@ I didn't really greatly want to develop that from scratch, but happily an extens
 
 Include Notepad by Jim Aikin.
 
-The repository contains a pen and some pens.
-
 Understand "write on [something]" as a mistake ("You'll need to say what you want to write down, as in 'write Alice on [the noun]'.").
 
 Understand "write with [something]" as a mistake ("You'll need to say what you want to write down, as in 'write Alice on [the random notepad]'.").
