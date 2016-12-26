@@ -4018,13 +4018,8 @@ The greeting of Lena is "'[one of]Happy Serial Comma Day[or]Greetings[or]Hi ther
 The generic negative of Lena is "[one of]nope[or]nope nope[at random]".
 The generic positive of Lena is "[one of]yeeeah[or]mmhmm[or]uh huh[or]sure[at random]".
 
-Instead of Lena discussing a Slango-mentioning quip when Lena does not know trust-me:
+Instead of Lena discussing whether she hath seen Slango when Lena does not know trust-me:
 	say "[one of][lena-distrusts]'Slango?' she asks blankly, for all the world as though she'd had a lobotomy. 'Is that a board game?'[or]'Maybe a Slango is a kind of juice drink?' she suggests.[or]'I have no idea what you're talking about,' she says. Stonewalling.[or]She just shrugs. We're going to have to convince her to trust us first, it appears. How unutterably tedious.[stopping]".
-
-To decide whether (q - a quip) Slango-mentions:
-	(- (MyMentions({q}, (+ Slango +)) ) -).
-
-Definition: a quip is Slango-mentioning if it Slango-mentions.
 
 Instead of saying goodbye to Lena when whether she hath seen slango is available and Lena knows trust-me:
 	say "No, don't! I'm [i]sure[/i] she's about to tell us where Slango's gotten to, and if you've forgotten about getting off this island, I have not."
