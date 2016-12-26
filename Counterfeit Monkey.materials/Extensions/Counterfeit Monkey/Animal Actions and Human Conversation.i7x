@@ -2997,13 +2997,11 @@ A first conversation-reply rule when the current interlocutor is the backpacking
 Instead of waiting when the current interlocutor is the backpacking girl:
 	say "[beat][paragraph break]".
 
-A last after reading a command rule when current interlocutor is the backpacking girl and ask for privacy is available (this is the change ask for privacy to privacy rule):
-	if the player's command matches "ask for privacy":
-		change the text of the player's command to "privacy";
+privacy-subject is a subject. Understand "privacy" as privacy-subject.
 
 ask for privacy is a repeatable performative quip.
 	The comment is "[one of]'Would you mind giving me a minute?' we say. 'Sorry, I could just use a little privacy.'[or]'I'd really like to be alone for a couple of minutes now,' we say.[or]'This will just take a moment, but you would you mind giving me the room to myself?' we say.[at random]".
-	The mentions-list is {yourself}.
+	The mentions-list is {yourself, privacy-subject}.
 	The reply is "[one of]She waves a hand generously. 'Don't worry about it, do whatever you've got to do, I don't care,' she says. 'I'm so tired I couldn't move a muscle, but I've seen everything. I have three brothers and two sisters and I'm in women's rugby so I'm pretty hard to shock.'[or]She just grunts and waves to indicate we may strip naked at our leisure.[or]'Dude,' she says, exasperated. 'If you wanted a private room you should've not stayed at a freaking hostel.'[or]She moans.[stopping]".
 	It quip-supplies the backpacking girl.
 
