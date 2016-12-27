@@ -490,7 +490,13 @@ A first smarter parser rule when sp_normal:
 Carry out taking off something which is blinding:
 	now the noun is not blinding.
 
-Understand "wear [something] as a blindfold" or "wear [something] as blindfold" as blindfold-wearing. Blindfold-wearing is an action applying to one carried thing.
+Understand "wear [something] as a blindfold" or "wear [something] as blindfold" or "wear blindfold" as blindfold-wearing. Blindfold-wearing is an action applying to one carried thing.
+
+Rule for supplying a missing noun when blindfold-wearing:
+	if the player encloses a blindfold thing (called B):
+		now the noun is B;
+	otherwise:
+		say "[We] don't seem to be carrying anything suitable." instead.
 
 Check blindfold-wearing:
 	try blindfolding the player with the noun instead.
