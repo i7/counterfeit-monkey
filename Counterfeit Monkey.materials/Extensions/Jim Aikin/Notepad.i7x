@@ -8,8 +8,6 @@ Section 1 - Definitions
 
 A notepad is a kind of thing. A notepad has a text called memo. The memo of a notepad is usually "". A notepad has a truth state called pen-needed. The pen-needed of a notepad is usually true. A notepad can be edit-allowing or non-edit-allowing. A notepad is usually edit-allowing.
 
-write-allowing relates various notepads to various things. The verb to write-allow implies the write-allowing relation. 
-
 Termination type is a kind of value. The termination types are terminated and unterminated.
 
 To decide which termination type is the terminor of (T - text):
@@ -89,7 +87,7 @@ Check an actor writing on something (this is the ordinary check writing it on ru
 		otherwise if the second noun is non-edit-allowing:
 			say "[The second noun] [are] [currently]write-protected, and [can't] be written on." (B) instead;
 		if the pen-needed of the second noun is true:
-			if the player carries something write-allowed by the second noun:
+			if the player carries the pen or the player carries the pens:
 				now carrying-pen is true;
 		otherwise:
 			now carrying-pen is true;
@@ -103,7 +101,7 @@ Check an actor writing on something (this is the ordinary check writing it on ru
 			say "[The second noun] [are] [currently]write-protected, and [can't] be written on." (E);
 			rule succeeds;
 		if the pen-needed of the second noun is true:
-			if the actor carries something write-allowed by the second noun:
+			if the player carries the pen or the player carries the pens:
 				now carrying-pen is true;
 		otherwise:
 			now carrying-pen is true;
@@ -134,7 +132,7 @@ Check an actor adding to something (this is the ordinary check adding it to rule
 		rule succeeds;
 	if the pen-needed of the second noun is true:
 		now carrying-pen is false;
-		if the actor carries something write-allowed by the second noun:
+		if the player carries the pen or the player carries the pens:
 			now carrying-pen is true;
 	otherwise:
 		now carrying-pen is true;
@@ -202,7 +200,7 @@ Check an actor copying something to something (this is the ordinary check copyin
 		say "At [that] moment, nothing [are] written on [the noun]." (G) instead;
 	if the pen-needed of the second noun is true:
 		now carrying-pen is false;
-		if the player carries something write-allowed by the second noun:
+		if the player carries the pen or the player carries the pens:
 			now carrying-pen is true;
 	otherwise:
 		now carrying-pen is true;

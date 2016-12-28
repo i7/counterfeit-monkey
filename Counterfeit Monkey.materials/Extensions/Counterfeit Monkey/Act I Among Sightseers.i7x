@@ -1277,7 +1277,6 @@ Instead of smelling the Projection Booth:
 	say "The ghost of hot dog and relish lingers in the air. It's mildly nauseating."
 
 The jotter is a notepad in the Projection Booth. The initial appearance is "[A jotter] is propped up next to the projector." The description is "It's a little spiral-bound notebook, the kind reporters in old movies carry. It's full of notes: running times of movies. Numbers of people in the audience. Who clapped during potentially subversive scenes. Who arrived in a group of more than three."
-	The jotter write-allows a pen and some pens.
 	The memo of the jotter is "Red: audience 14. FM couple. MM couple. M in raincoat. FFFFF group. F. MF. M.".
 
 Rule for writing a topic sentence about the jotter when the projector is mentionable:
