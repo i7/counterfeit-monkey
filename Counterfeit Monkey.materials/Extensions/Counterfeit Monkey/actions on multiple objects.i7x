@@ -32,6 +32,9 @@ Rule for deciding whether all includes disguisable things while taking (this is 
 Rule for deciding whether all includes the contraband box while taking:
 	it does not.
 
+Rule for deciding whether all includes the coffee-maker:
+	it does not.
+
 Rule for deciding whether all includes things enclosed by the player while taking or taking off or removing (this is the new exclude indirect possessions from take all rule):
 	if the action name part of the current action is the removing it from action:
 		it does;
