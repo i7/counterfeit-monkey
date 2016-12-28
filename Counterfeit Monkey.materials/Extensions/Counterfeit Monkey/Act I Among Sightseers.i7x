@@ -671,7 +671,7 @@ An instructional rule (this is the new teach compass directions rule):
 	if way is nothing:
 		make no decision;
 	let N be "[way]";
-	say "[first custom style][one of]Feel free to look around some more. When you're ready to move on from here, try[or]No rush, but just a reminder that when you want to move to a new location, you can go[stopping] [N in upper case].[roman type][run paragraph on]" (A);
+	say "[first custom style][one of]Feel free to look around some more. When you're ready to move on from here, try[or]No rush, but just a reminder that when you want to move to a new location, you can go[stopping] [N in upper case].[roman type]" (A);
 	now the expected action is the action of going way;
 	now the held rule is the new teach compass directions rule;
 	now movement reminder is the time of day;
