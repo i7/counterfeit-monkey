@@ -753,6 +753,7 @@ To gel-convert (item - hoses):
 	say "[The item] [become] [a list of things which proffer the item], redecorating the fountain.";
 	repeat with secondary running through things which proffer the item:
 		abide by the dangerous construction rules for the secondary.
+
 To gel-convert (item - hoe):
 	now everything which proffers the item is part of the marble fountain;
 	now the item is in the repository;
