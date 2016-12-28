@@ -91,7 +91,6 @@ Last after starting the virtual machine rule (this is the apologise for a slow s
 	say "Counterfeit Monkey is starting. This may take a short moment.";
 
 
-
 Volume 2 - Source files inclusion
 
 [•	Volume 1 - Model Adjustments 
@@ -102,7 +101,7 @@ Volume 2 - Source files inclusion
 			•	Chapter 3 - Undo Handling ]
 
 Include Multimedia by Counterfeit Monkey.
-			
+
 [		•	Part 2 - Multimedia
 			•	Chapter 1 - Images
 				•	Section 1 - Compass Rose
@@ -127,7 +126,7 @@ Include Presentation Details by Counterfeit Monkey.
 			•	Section 2 - Hard Mode
 			•	Section 3 - About Menu
 			•	Section 4 - Resurrection ]
-	
+
 Include Character Models by Counterfeit Monkey.
 
 [	•	Book 2 - Character Models
@@ -139,7 +138,7 @@ Include Character Models by Counterfeit Monkey.
 		•	Section 6 - Varieties of Person
 		•	Section 7 - Moods
 		•	Section 8 - Refusals for threaded actions ]
-			
+
 Include Viewpoint and Narrative Voice by Counterfeit Monkey.
 
 [	•	Book 3 - Viewpoint and Narrative Voice
@@ -149,7 +148,7 @@ Include Viewpoint and Narrative Voice by Counterfeit Monkey.
 		•	Section 4 - Making Threaded Conversation first plural
 		•	Section 5 - Introductions
 		•	Section 6 - The THINK verb ]
-	
+
 Include World Model Tweaks by Counterfeit Monkey.
 
 Include Room Description Speedups by Counterfeit Monkey.
@@ -244,7 +243,7 @@ Include Schedule and Time by Counterfeit Monkey.
 			•	Section 8 - Tracking Down Brock
 			•	Section 9 - Escape
 			•	Section 10 - Goodbye
-					
+
 •	Volume 2 - The World ]
 
 Include Act I Among Sightseers by Counterfeit Monkey.
@@ -326,7 +325,7 @@ Include Act III Among Scholars by Counterfeit Monkey.
 				•	Section 9 - Graduate Student Office
 				•	Section 10 - Brown's Lab
 				•	Section 11 - Lecture Hall ]
-				
+
 Include Act IV Among Policemen by Counterfeit Monkey.
 
 [	•	Book 4 - Act IV Among Policemen
@@ -346,7 +345,7 @@ Include Act IV Among Policemen by Counterfeit Monkey.
 				•	Section 3 - Secret Section
 				•	Section 4 - Testing Room
 				•	Section 5 - Cold Storage ]
-				
+
 Include Act V Atlantida Herself by Counterfeit Monkey.
 
 [	•	Book 5 - Act V Atlantida Herself
@@ -379,7 +378,7 @@ Include Act V Atlantida Herself by Counterfeit Monkey.
 				•	Section 11 - Slango's Bunk
 				•	Section 12 - Slango's Head
 				•	Section 13 - View from Outdoor Areas ]
-				
+
 Include Map Declarations by Counterfeit Monkey.
 
 [	•	Book 6 - Map Declarations
@@ -401,7 +400,7 @@ Include Memories by Counterfeit Monkey.
 	•	Section 9 - Protesting Petty Laws
 	•	Section 10 - Counterfeit Monkey Clue 
 •	Volume 4 - Tools and Substances Affecting Letters ]
-	
+
 Include Safety Overrides and Disasters by Counterfeit Monkey.
 
 [	•	Book 1 - Safety Overrides and Disasters
@@ -409,7 +408,7 @@ Include Safety Overrides and Disasters by Counterfeit Monkey.
 		•	Section 2 - Dangerous Construction ]
 
 Include Hashing by Counterfeit Monkey.
-		
+
 [	•	Book 2 - Hashing ]
 
 Include Tools by Counterfeit Monkey.
@@ -440,7 +439,7 @@ Include Tools by Counterfeit Monkey.
 		•	Chapter 14 - The Catalan punt volat Needle
 		•	Chapter 15 - The Workshop Platform
 		•	Chapter 16 - The Cryptolock aka Vowel Rotator 
-		
+
 •	Volume 5 - The Repository of All Things Possible ]
 
 Include Repository Major Contents by Counterfeit Monkey.
@@ -518,7 +517,7 @@ Include Animal Actions and Human Conversation by Counterfeit Monkey.
 				•	Section 12 - The Mean Atlantida
 				•	Section 13 - Scene Interlude with Guards
 				•	Section 14 - The Nicer Atlantida ]
-				
+
 Include Hint System by Counterfeit Monkey.
 
 [•	Volume 7 - Hint System
@@ -532,7 +531,7 @@ Include Hint System by Counterfeit Monkey.
 Include Route-finding Matrix by Counterfeit Monkey.
 Include Room Indices by Counterfeit Monkey.
 Include Tests by Counterfeit Monkey.
-		
+
 [•	Volume 8 - Tests
 	•	Chapter 1 - Tests - Not for release
 		•	Section 1 - Ordinary Tests
