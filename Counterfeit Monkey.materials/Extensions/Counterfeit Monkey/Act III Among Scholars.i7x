@@ -1527,8 +1527,8 @@ The carton-sign is a sign. The carton-sign is part of the carton. The printed na
 
 In the large carton is a banana. The banana is edible. It is a vegetable. The description of the banana is "Just beginning to get brown and spotty."
 
-Sanity-check going to the Rectification Room when a noisy unleavable thing (called target) is in the large carton:
-	say "We real[ize] that we don't want to leave [the target] unattended after all."
+Sanity-check going to the Rectification Room when the alterna-snap is in the large carton:
+	say "We real[ize] that we don't want to leave [the alterna-snap] unattended after all."
 
 Instead of going to the Rectification Room when the large carton does not contain something noisy:
 	let N be the number of entries in the path so far of the player;
