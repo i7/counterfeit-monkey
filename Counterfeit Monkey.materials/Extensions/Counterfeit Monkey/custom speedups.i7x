@@ -78,9 +78,13 @@ Include (-
 				i++;
 				if (i >= 100) return 100;
 			}
+
 			!Check any components recursively
 			if (o.component_child)
 				i = FindApartmentalThing(o.component_child, i);
+
+			if (o.component_sibling)
+				i = FindApartmentalThing(o.component_sibling, i);
 
 			! Don't look inside closed containers or the backpack
 			if (child(o) &&  ~~(o has openable && o hasnt open) && ~~(o == (+ the backpack +) )) o = child(o);

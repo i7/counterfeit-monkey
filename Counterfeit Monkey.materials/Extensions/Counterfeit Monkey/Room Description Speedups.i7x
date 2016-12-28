@@ -247,6 +247,9 @@ Include (-
 	
 		if (par.component_child)
 			MySetWorkFlagLoop(par.component_child);
+
+		if (par.component_sibling)
+			MySetWorkFlagLoop(par.component_sibling);
 			
 		if (child(par))
 			MySetWorkFlagLoop(child(par));
@@ -258,6 +261,9 @@ Include (-
 		if (par.component_child)
 			MyUnsetWorkFlagLoop(par.component_child);
 
+		if (par.component_sibling)
+			MyUnsetWorkFlagLoop(par.component_sibling);
+
 		if (child(par))
 			MyUnsetWorkFlagLoop(child(par));
 	];
@@ -268,6 +274,9 @@ Include (-
 
 			if (o.component_child)
 				MySetWorkFlagLoop (o.component_child);
+
+			if (o.component_sibling)
+				MySetWorkFlagLoop (o.component_sibling);
 
 			if (child(o)) o = child(o);
 			else
@@ -288,6 +297,9 @@ Include (-
 			give o ~workflag;
 
 			if (o.component_child)
+				MyUnsetWorkFlagLoop (o.component_child);
+
+			if (o.component_sibling)
 				MyUnsetWorkFlagLoop (o.component_child);
 
 			if (child(o))
