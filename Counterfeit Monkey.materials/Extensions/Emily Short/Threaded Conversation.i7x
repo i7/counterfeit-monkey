@@ -1291,7 +1291,7 @@ To implicitly greet (chosen character - a thing):
 
 Saying hello to is an action applying to one visible thing.
 
-Understand "greet [something]" or "say hello/hi to [something]" or "talk to [something]" as saying hello to.
+Understand "greet [something]" or "say hello/hi to [something]" or "talk to [something]" or "call [something]" as saying hello to.
 
 Check saying hello to the player (this is the can't greet yourself rule):
 	say "Don't make this more complicated than it already is." instead.
