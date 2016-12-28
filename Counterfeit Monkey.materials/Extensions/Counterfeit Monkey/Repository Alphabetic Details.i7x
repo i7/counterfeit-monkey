@@ -2709,14 +2709,14 @@ topic	stuff	setting
 Test rock-bug with "put rock in t-inserter / open tub / gel rock" [holding the rock and the tub in the Sensitive Equipment Testing Room.]
 
 The roc is a rideable animal.
-The initial appearance is "[if the location is Sunning Deck][roc-aboard][otherwise]The roc towers over us, looking smarter than a bird has the right to look.[end if]".
+The initial appearance is "[if the location is Sunning Deck or the location is Open Sea][roc-aboard][otherwise]The roc towers over us, looking smarter than a bird has the right to look.[end if]".
 The description of the roc is "The bird is enormous[if the location is indoors], so big it seems incredible that it can even fit into the room[end if]. Brock is a tall man, but not nearly this tall. Its eyes are bright and (if [we] [are] not reading too much in) ironically clever; its plumage a little like an eagle's, if an eagle were made many times larger and feathered in a kind of sleek, luminous black."
 
 [Every turn when the roc is in the Sunning Deck and the Sunning Deck is the location:
 	say "[one of][The roc]'s claws dig into the cushions of the sunning deck as the yacht pitches[or][roc-igloo][or][The roc] stretches its wings out so that they reach the whole width of the yacht[or]I catch [the roc] looking at us[at random].".]
 
 To say roc-aboard:
-	say "[one of][The roc]'s claws dig into the cushions of the sunning deck as the yacht pitches[or][The roc] stretches its wings out so that they reach the whole width of the yacht[at random]. ".
+	say "[The roc][if the location is Open Sea] soars through the dark sky above[otherwise][one of]'s claws dig into the cushions of the sunning deck as the yacht pitches[or] stretches its wings out so that they reach the whole width of the yacht[at random][end if]. ".
 
 [To say roc-igloo:
 	say "[one of][The roc] takes an interest in the white igloo-shaped thing that handles the yacht wifi[or]A tap of beak on plastic tells you [the roc] is checking out the wifi further[if Slango can see the roc][queue Slango-irritation as postponed optional][end if][or][The roc] turns its head experimentally and tries to fit the whole wifi antenna into its beak[stopping]".]
@@ -2732,6 +2732,9 @@ Rule for writing a paragraph about Slango when the roc is mentionable:
 
 Roc-flight is a scene. Roc-flight begins when the roc is in location. Roc-flight ends when the player is enclosed by the roc.
 
+Sanity-check doing something when the location is Open Sea and the roc must be touched:
+	say "[The roc] is too high up to reach." instead.
+
 Sanity-check mounting the roc:
 	if a heavy handled thing (called the encumbrance) which is not the roc is enclosed by location:
 		say "[We][']ll want to bring [the encumbrance], but in [their] current state, [they] [are] much too heavy." instead.
@@ -2746,7 +2749,7 @@ Before mounting the roc:
 		try the roc taking the item.]
 
 Every turn during roc-flight:
-	if the roc is in the location and a random chance of 1 in 2 succeeds:
+	if the roc is in the location and (location is Precarious Perch or location is Abandoned Shore) and a random chance of 1 in 2 succeeds:
 		say "[one of]The roc looks sharply at [the random marked-visible thing][or]I am starting to find it unnerving how the roc looks at us[or]Are you sure that rocs don't eat people? It's giving us quite an intent stare[or]The roc paces up and down[or]The roc spreads its wings, then folds them again. It could really double as a pavilion if it would stay still in that position[or]The roc throws its head back and screams horribly for no obvious reason[or]The roc dips its beak in the water, then spits violently[at random]."
 
 When roc-flight ends:
@@ -2793,6 +2796,15 @@ When roc-soaring ends:
 	move the player to the Sunning Deck;
 	follow the compass-drawing rule instead.
 
+After looking when the location is Abandoned Shore and the roc is in Precarious Perch:
+	move the roc to Abandoned Shore;
+	say "There is a sound of wings and a gust of wind, and [the roc] lands in front of [us].";
+	continue the action.
+
+After looking when the location is Open Sea and the roc is in Abandoned Shore:
+	move the roc to Open Sea;
+	say "There is a cry like that of an eagle, and [we] look up to see [the roc] circling in the sky .";
+	continue the action.
 
 [The printed name of a fake-rock is "rock". Understand "rock" as a fake-rock. The description of the fake-rock is "It looks like a sedimentary stone."
 

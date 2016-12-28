@@ -1486,40 +1486,32 @@ Section 1 - Essentials and Non-Drop Zones
 
 A thing can be essential. A thing is usually not essential.
 
-Definition: a thing is unleavable:
-	if it is the roc and the player is not enclosed by the roc, yes;
+[Definition: a thing is unleavable:
 	if it is not essential, no;
 	if it is not seen, no;
 	if it is the origin paste and it is unwon, no;
 	if it is the tube and it is carried by the barker, no; [we still have to win it]
 	if it is enclosed by the player, no;
 	if it is enclosed by a vehicle which contains the player, no;
-	yes.
+	yes.]
 
-Before approaching a room when the location encloses an unleavable thing:
-	while the location encloses an unleavable thing (called needed-thing):
-		unless the needed-thing is the roc:
-			try taking the needed-thing;
-			if the needed-thing is the iron-pans:
-				reduce iron-pans;
-				if the i-pan is marked-visible:
-					now the needed-thing is the i-pan;
+Before going somewhere when the player is staid and the unleavable is something:
+	abide by the don't-leave-the-unleavable rule.
+
+This is the don't-leave-the-unleavable rule:
+	let the needed-thing be the unleavable;
+	while the needed-thing is something:
+		if the holder of the needed-thing is in a closed container (called the box):
+			try opening the box;
+		if the needed-thing is the iron-pans:
+			reduce iron-pans;
+			if the i-pan is marked-visible:
+				now the needed-thing is the i-pan;
+		try taking the needed-thing;
 		if the player does not carry the needed-thing:
 			say "I don't think [we] should leave without [the needed-thing].";
-			stop the action.
-
-Before going somewhere when the player is staid and the location encloses an unleavable thing:
-	while the location encloses an unleavable thing (called needed-thing):
-		unless the needed-thing is the roc:
-			try taking the needed-thing;
-			if the needed-thing is the iron-pans:
-				reduce iron-pans;
-				if the i-pan is marked-visible:
-					now the needed-thing is the i-pan;
-		if the player does not carry the needed-thing:
-			say "I don't think [we] should leave without [the needed-thing].";
-			stop the action.
-
+			the rule fails;
+		let the needed-thing be the unleavable.
 
 A room can be publicly-available or privately-controlled. A room is usually publicly-available.
 

@@ -5530,7 +5530,7 @@ deny everything is a performative quip. The comment is "'You must have me confus
 	It directly-follows dont-say.
 
 dont-say is an NPC-directed quip.
-	The reply is "'Your mother told me about meeting your supposed girlfriend at your apartment. She was puzzled by that, but I knew what must have happened,' my father says, in a very low voice[if a noisy thing is enclosed by the location], just barely audible to us over the sound of [the random noisy thing enclosed by the location][end if]. 'I deleted the record of your unauthor[ize]d synthes[ize]r draining the power grid, which, by the way, could get me dismissed.'"
+	The reply is "'Your mother told me about meeting your supposed girlfriend at your apartment. She was puzzled by that, but I knew what must have happened,' my father says, in a very low voice[if the noisemaker is something], just barely audible to us over the sound of [the noisemaker][end if]. 'I deleted the record of your unauthor[ize]d synthes[ize]r draining the power grid, which, by the way, could get me dismissed.'"
 
 what-are-you is an NPC-directed quip.
 	The reply is "'I didn't tell your mother what I suspected, but when it comes out you've… defected… I won't be able to keep this from her. And you're giving up your career. Mine too, possibly; we'll all be under suspicion, I suppose.

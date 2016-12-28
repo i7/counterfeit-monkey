@@ -13,6 +13,9 @@ To rapidly set (n - an object) marked visible:
 To rapidly set everything marked-visible as seen:
 	(- MySetAllMarkedVisibleAsSeen(); -).
 
+To decide which object is the unleavable:
+	(- FindUnleavableLoop(real_location) -).
+
 
 The new player aware of actions by visible actors rule is listed instead of the player aware of actions by visible actors rule in the player's action awareness rules.
 
@@ -52,6 +55,48 @@ Include (-
 		}
 	];
 
+	[ IsUnleavable obj;
+		if (~~(obj ofclass (+ thing +))) rfalse;
+		if (~~(obj.(+ essential +))) rfalse;
+		if (~~(obj.(+ seen +))) rfalse;
+		if ( obj == (+ origin paste +) && ~~(obj.(+ won +))) rfalse;
+		rtrue;
+	];
+
+	[ FindUnleavableLoop start o c;
+		o=start;
+		!loop through everything in start object
+		while (o) {
+
+			if (IsUnleavable(o))
+				return o;
+
+			!Check any components recursively
+			if (o.component_child) {
+				c = FindUnleavableLoop(o.component_child);
+				if (c) return c;
+			}
+
+			if (o.component_sibling) {
+				c = FindUnleavableLoop(o.component_sibling);
+				if (c) return c;
+			}
+
+
+			! Don't look inside people or vehicles containing the player
+			if (child(o) &&  ~~(o ofclass (+ person +) || ( o ofclass (+ vehicle +) && o == parent(player))) ) o = child(o);
+			else
+				while (o) {
+
+					if (sibling(o)) { o = sibling(o); break; }
+
+					o = parent(o);
+					if ( o == parent(start)) return nothing;
+
+				}
+		}
+		return nothing;
+	];
 
 	[ ApartmentalThing i o start thing;
 		i = 1;

@@ -74,7 +74,7 @@ Include
 		LIST_OF_TY_SetLength((+ incoming-list +), 0, -1, 1);
 		for (traveler = child(real_location): traveler : traveler = last) {
 			last = sibling(traveler);
-			if (traveler ofclass (+ person +) && traveler.(+ fake +) ) {
+			if (traveler ofclass (+ person +) && traveler.(+ fake +) && traveler ~= (+ roc +)) {
 				TryAction(0, traveler, ##Enter, car, 0);
 				if ( parent(traveler) == car) {
 					if (ExistsTableRowCorr((+ Table of voluntary entry +),(+ enterer +),traveler))
@@ -96,7 +96,7 @@ Include
         LIST_OF_TY_SetLength((+ incoming-list +), 0, -1, 1);
 		for (traveler = child(room): traveler : traveler = last) {
 			last = sibling(traveler);
-			if (traveler ofclass (+ person +) && traveler.(+ fake +) )
+			if (traveler ofclass (+ person +) && traveler.(+ fake +) && traveler ~= (+ roc +))
 				TryAction(0, traveler, ##Go, dir, 0);
 		}
 	];

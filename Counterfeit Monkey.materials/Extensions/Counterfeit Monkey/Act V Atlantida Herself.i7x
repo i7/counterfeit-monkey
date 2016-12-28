@@ -1036,6 +1036,8 @@ After going to Beside Slango's Ship:
 	now every other thing in the kayak is carried by the player;
 	now the posture of the player is standing;
 	now the oar is nowhere;
+	if the roc is in Open Sea:
+		move roc to Sunning Deck;
 	set the current interlocutor to Slango;
 	[queue where-is-Brock as immediate obligatory;]
 	move the player to Sunning Deck, without printing a room description;

@@ -46,6 +46,7 @@ Carry out approaching (this is the new default approaching rule):
 	now approach-heading is the true-best route to the noun;
 	if the room approach-heading from the location is the noun:
 		try going approach-heading instead; [ If the destination is adjacent, just go there instead ]
+	abide by the don't-leave-the-unleavable rule;
 	clear path-walked for the player;
 	now the player is hurrying;
 	while the location is not the noun:
