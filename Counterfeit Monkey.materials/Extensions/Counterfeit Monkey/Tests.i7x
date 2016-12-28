@@ -270,6 +270,11 @@ Carry out unlegending:
 	try unmonkeying.
 	[This turns off certain movement restrictions that prevent the player from moving around the University and Alex's apartment when the player hasn't solved the legend puzzle.]
 
+Understand "unprotest" as unprotesting. Unprotesting is an action out of world.
+
+Carry out unprotesting:
+	now the protesters are nowhere;
+	try unlegending.
 
 [For testing what happens during combat attempts with Atlantida, without having to play through to this point ourselves.]
 Establishing longs is an action out of world. Understand "establish" as establishing longs.
