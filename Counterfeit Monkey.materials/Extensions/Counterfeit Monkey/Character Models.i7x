@@ -122,7 +122,7 @@ To find a suitable interlocutor:
 					if vip is in location:
 						try saying hello to vip;
 						break;
-			if the current interlocutor is nothing:
+			if the current interlocutor is nothing: [We know that there are at least two people/animals enclosed by location]
 				if there is a human other person (called target human) enclosed by location:
 					try saying hello to target human;
 				otherwise:
