@@ -1669,6 +1669,7 @@ Some iron-pans are a plural-named container. The description of the iron-pans is
 Report involuntarily-dropping the iron-pans:
 	say "[We] can't reasonably carry the whole stack of pans, so they fall to the ground with a dramatic crash." instead.
 
+Understand "put pans in/into pans" or "insert pans in/into pans" as a mistake ("Try as [we] might, their design and the placement of the handles makes stacking the pans nearly impossible.") when the iron-pans are marked-visible.
 
 The pant is an r-abstract thing. The description of the pant is "The physical embodiment of a rapid breath of hot air. It looks like a cloud in your hand."
 
