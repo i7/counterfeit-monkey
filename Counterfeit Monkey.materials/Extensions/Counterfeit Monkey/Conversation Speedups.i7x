@@ -54,7 +54,7 @@ Include (-
 		EliminateDuplicates();
 	];
 	
-	[ WriteSubjects quip list i subject col no_items;
+	[ WriteSubjects quip list i subject no_items;
 		list = quip.(+ mentions-list +);
 		no_items = BlkValueRead(list, LIST_LENGTH_F);
 		for (i=0: i<no_items: i++ ) {

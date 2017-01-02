@@ -122,7 +122,7 @@ Sanity-check inserting an uncontained fluid thing into a container (called targe
 Instead of inserting the funnel into a container which incorporates a drain:
 	try washing the funnel.
 
-Check inserting something into a container which incorporates a drain (called D):
+Check inserting something into a container which incorporates a drain:
 	say "Better not. We don't want to get [the noun] all wet." instead.
 
 Check filling a container which incorporates a drain (called D) with an uncontained fluid thing:
