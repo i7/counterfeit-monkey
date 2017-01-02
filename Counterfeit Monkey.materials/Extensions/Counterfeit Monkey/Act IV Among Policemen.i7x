@@ -519,7 +519,7 @@ When attempting entry ends:
 
 'What a delightful man,' remarks the secretary.
 
-She looks over our other visible possessions ([the list of not worn things *in the player]) and deems them acceptable. She makes us sign a book, for which [we] use a signature of your invention. Finally: 'Go in, descend to the basement, and present yourself at the secure section downstairs. Be advised you will be under video surveillance as you approach. Any attempts to modify or steal Bureau property, to gain access to rooms to which you have not been expressly invited, to eavesdrop on conversations of Bureau employees, or to leave objects of your own behind in the Bureau, may result in your arrest and prosecution.
+She looks over our other visible possessions ([the list of not worn things which are not the pass *in the player]) and deems them acceptable. She makes us sign a book, for which [we] use a signature of your invention. Finally: 'Go in, descend to the basement, and present yourself at the secure section downstairs. Be advised you will be under video surveillance as you approach. Any attempts to modify or steal Bureau property, to gain access to rooms to which you have not been expressly invited, to eavesdrop on conversations of Bureau employees, or to leave objects of your own behind in the Bureau, may result in your arrest and prosecution.
 
 'Have a nice day!'";
 
