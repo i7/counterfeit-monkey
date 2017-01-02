@@ -150,10 +150,12 @@ This is the stop removing error list rule:
 		abide by the try reaching rules for the second noun;
 	if the second noun is closed:
 		abide by the try opening rules for the second noun.
-	
+
 [And finally "insert all into"]
 A multiple action processing rule when the action name part of the current action is inserting it into action:
-	unless the second noun is the backpack:
+	if the second noun is the backpack:
+		abide by the fast backpack stowing rule;
+	otherwise:
 		abide by the stop inserting error list rule.
 
 This is the stop inserting error list rule:
@@ -325,6 +327,22 @@ pulley
 reclamation machine
 pen
 mug
+
+
+[PUT ALL IN BACKPACK can be quite slow, so let's speed it up a bit by skipping some checks]
+This is the fast backpack stowing rule:
+	if the backpack is closed:
+		abide by the try opening rules for the backpack;
+	[First, we fill out the table with everything we carry]
+	repeat with N running through multiple object list:
+		unless N is fluid or N is long or N is iron-pans:
+			say "[N]: Done.";
+			now N is in backpack;
+		otherwise:
+			say "[N]: [run paragraph on]";
+			try inserting N into backpack;
+	abide by the cancel multiple rule.
+
 
 Table of Ultratests (continued)
 topic	stuff	setting
