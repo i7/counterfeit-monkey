@@ -333,14 +333,18 @@ mug
 This is the fast backpack stowing rule:
 	if the backpack is closed:
 		abide by the try opening rules for the backpack;
-	[First, we fill out the table with everything we carry]
 	repeat with N running through multiple object list:
-		unless N is fluid or N is long or N is iron-pans:
-			say "[N]: Done.";
-			now N is in backpack;
+		if N is fluid:
+			say "[N]: [The N] [one of]would make a real mess[or]would just spill[at random].";
 		otherwise:
-			say "[N]: [run paragraph on]";
-			try inserting N into backpack;
+			if N is long:
+				say "[N]: [The N] [one of]couldn't possibly fit[or]would be much too long[or]would just stick out[at random].";
+			otherwise:
+				if N is iron-pans:
+					say "[N]: There's nowhere near enough room.";
+				otherwise:
+					say "[N]: Done.";
+					now N is in backpack;
 	abide by the cancel multiple rule.
 
 
