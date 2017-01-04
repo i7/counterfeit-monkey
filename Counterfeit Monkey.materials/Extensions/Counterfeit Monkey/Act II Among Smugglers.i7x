@@ -244,12 +244,12 @@ After going to Fish Market when the authenticator is in Fish Market and the play
 		now approach-destination is Samuel Johnson Hall; [make it seem like we haven't made progress, if approaching.]
 	[try going east.]
 
-Definition: a thing is problematic:
+[Definition: a thing is problematic:
 	if it is illegal:
 		yes;
 	if it is proffered by an illegal thing:
 		yes;
-	no.
+	no.]
 
 Breath-caught is a truth state that varies.
 
