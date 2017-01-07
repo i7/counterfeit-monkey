@@ -1266,7 +1266,7 @@ Report switching on an ignition:
 [Instead of going somewhere by car when the ignition is switched off: say "The ignition is off at the moment." ]
 
 Carry out going somewhere by car:
-	[complete "Find transport for getting past the traffic on High Street";]
+	complete "Find transport for getting past the traffic on High Street";
 	record "traveling by car" as achieved.
 
 A car can be operational or damaged. A car is usually damaged.
