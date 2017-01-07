@@ -1317,13 +1317,13 @@ Understand "message" as the legend.
 
 To say advance-goals:
 	complete "Homonym-paddle the legend into the other kind of legend";
-	assign "Speak to Professor Waterstone and get his invitation to see the T-inserter" at Waterstone's Office;
-	assign "Gain entrance to the Bureau" at Rotunda;
-	assign "Find Brock" at Sensitive Equipment Testing Room;
+	assign "Speak to Professor Waterstone and get his invitation to see the T-inserter";
+	assign "Gain entrance to the Bureau";
+	assign "Find Brock";
 
 To say figure-out-legend:
 	complete "Trace Brock's movements at the antique shop";
-	assign "Homonym-paddle the legend into the other kind of legend" at Drinks Club.
+	assign "Homonym-paddle the legend into the other kind of legend".
 
 
 
@@ -3979,7 +3979,7 @@ Instead of frowning at the appointment card:
 	say "We contemplate the card, but it doesn't reveal its secrets any faster than before."
 
 To say card-intro:
-	assign "Trace Brock's movements at the antique shop" at Arbot Antiques;
+	assign "Trace Brock's movements at the antique shop";
 	complete "Check the dead drop at the public convenience";
 	record "visiting the dead drop" as achieved;
 	move the appointment card to the player;

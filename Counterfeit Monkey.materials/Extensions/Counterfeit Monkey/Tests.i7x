@@ -238,7 +238,7 @@ Understand "deparker" as deparkering. Deparkering is an action out of world.
 
 Carry out deparkering:
 	move Slango to the location;
-	assign "Finally find Slango at Counterfeit Monkey" at Counterfeit monkey;
+	assign "Finally find Slango at Counterfeit Monkey";
 	now the barman is nowhere.
 
 [Allowing us to test some late-game ]
@@ -256,7 +256,7 @@ Carry out unmonkeying:
 Understand "unslango" as unslangoing. Unslangoing is an action out of world.
 
 Carry out unslangoing:
-	assign "Finally find Slango at Counterfeit Monkey" at Counterfeit monkey;
+	assign "Finally find Slango at Counterfeit Monkey";
 	now Slango recollects who we seem;
 	complete "Finally find Slango at Counterfeit Monkey".
 
@@ -265,7 +265,7 @@ Understand "unlegend" as unlegending. Unlegending is an action out of world.
 Carry out unlegending:
 	now Arbot Maps & Antiques is visited;
 	now the legend is introduced;
-	assign "Trace Brock's movements at the antique shop" at Arbot Maps & Antiques;
+	assign "Trace Brock's movements at the antique shop";
 	complete "Trace Brock's movements at the antique shop";
 	try unmonkeying.
 	[This turns off certain movement restrictions that prevent the player from moving around the University and Alex's apartment when the player hasn't solved the legend puzzle.]

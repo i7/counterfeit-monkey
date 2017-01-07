@@ -703,7 +703,7 @@ After printing the name of the sturdy iron gate when the ring is not handled:
 	say " to the university".
 
 To say ring-fetch:
-	assign "Retrieve my student ring from my apartment" at Apartment Bathroom.
+	assign "Retrieve my student ring from my apartment".
 
 The ring unlocks the sturdy iron gate. The ring unbolts the sturdy iron gate.
 

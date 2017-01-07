@@ -730,7 +730,7 @@ Carry out putting gel on the rock when the player does not know brock-found:
 		say "No, don't gel him! Think. How would [we] smuggle him out? Only one of us came in. He's much more portable in rock form.";
 	otherwise:
 		complete "Find Brock";
-		assign "Return to yacht" at Sunning Deck;
+		assign "Return to yacht";
 		say "[brock-found]You're right, that must be Brock. (B-removed himself when he heard someone coming down the corridor, maybe?) But bringing him back now is a terrible idea. How would [we] smuggle him out? Only one of us came in. He's much more portable in rock form." ]
 
 Instead of putting gel on the rock when cold dilemma has ended and Sunning Deck is not visited:

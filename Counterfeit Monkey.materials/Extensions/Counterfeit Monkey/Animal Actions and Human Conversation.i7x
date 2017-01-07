@@ -786,7 +786,7 @@ Availability rule for where there seems a car-2:
 	make no decision.
 
 Carry out the mechanic discussing why the car does not run:
-	assign "Get oil for the mechanic" at High Street.
+	assign "Get oil for the mechanic".
 
 Instead of showing an oil to the mechanic:
 	if at least one car is operational:
@@ -3510,7 +3510,7 @@ Understand "barman" or "him" or "bartender" as challenge Parker about the rum.
 
 Carry out barman discussing challenge Parker about the rum:
 	complete "Ask people around here if they've seen Slango";
-	assign "Talk to Lena at the Aquarium Bookstore" at Aquarium Bookstore.
+	assign "Talk to Lena at the Aquarium Bookstore".
 
 Availability rule for whether we can hath origin paste:
 	if the origin paste is not seen or the origin paste is not on the bar-top or the origin paste is won:
@@ -3968,7 +3968,7 @@ That's a spot at the public convenience by the town bus station where the three 
 'Glad to hear it,' says Slango. 'Now stop referring to yourself as [']we['] in company.'"
 
 Carry out Slango discussing modifying-letter:
-	assign "Check the dead drop at the public convenience" at Public Convenience;
+	assign "Check the dead drop at the public convenience";
 	complete "Finally find Slango at Counterfeit Monkey" instead.
 
 Report waiting during consulting-Slango:
@@ -4234,7 +4234,7 @@ Carry out Lena discussing encourage Lena to contact Slango:
 	if the player does not carry the as-coin:
 		[follow the considerate player's holdall rule;]
 		move the as-coin to the player;
-	assign "Finally find Slango at Counterfeit Monkey" at Counterfeit Monkey;
+	assign "Finally find Slango at Counterfeit Monkey";
 	complete "Talk to Lena at the Aquarium Bookstore";
 	record "arranging contact with Slango through his lady friend" as achieved;
 	summon Slango.
@@ -4848,10 +4848,10 @@ Rule for beat-producing when Brock is the current interlocutor:
 Report Brock saying hello to the player for the first time:
 	now the player knows brock-found;
 	complete "Find Brock";
-	assign "Test T-inserter on making creatures" at Sensitive Equipment Testing Room;
-	assign "Test T-inserter on making abstracts" at Sensitive Equipment Testing Room;
-	assign "Test T-inserter on situations where it could build more than one thing" at Sensitive Equipment Testing Room;
-	assign "Escape the Bureau" at Abandoned Shore;
+	assign "Test T-inserter on making creatures";
+	assign "Test T-inserter on making abstracts";
+	assign "Test T-inserter on situations where it could build more than one thing";
+	assign "Escape the Bureau";
 	queue weird-you-look as postponed optional instead;
 
 First conversation-reply rule when the current interlocutor is Brock:

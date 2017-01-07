@@ -164,7 +164,7 @@ When seeking transport ends:
 		if item is a location-questioning quip and item is not where there seems arbot:
 			now item is nowhere;
 	now the current daytime is mid afternoon;
-	assign "Ask people around here if they've seen Slango" at Counterfeit Monkey;
+	assign "Ask people around here if they've seen Slango";
 	say "...and... Slango is not here.
 
 This is bad. Even I can see this is bad. What happened to your confidence in your team? Where are the guys who are supposed to get us out of here?
@@ -663,7 +663,7 @@ When Landing ends (this is the set us up on yacht rule):
 	now the player is in your bed;
 	now the player is reclining;
 	move Brock to the Sunning Deck;
-	assign "Check out the paper and see what's going on" at the Galley;
+	assign "Check out the paper and see what's going on";
 	move the newspaper to the built-in table;
 	now Slango is nowhere;
 	follow the compass-drawing rule;

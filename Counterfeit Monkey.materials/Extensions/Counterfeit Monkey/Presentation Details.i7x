@@ -256,31 +256,21 @@ Score (a number)	Rank (a text)
 Section 3 - Assigning and completing tasks
 
 Table of Tasks Pending
-Citation (some text)	Time (a time)	Goal (a room)
-"Get my backpack from the cinema"	--	Screening Room
-"Retrieve your remaining possessions from locker at hostel"	--	Dormitory Room
-"Meet your colleague Slango at Counterfeit Monkey"	--	Counterfeit Monkey
-with 40 blank rows.
-
-Table of Prefinished Tasks
-Citation (a text)	Time (a time)	Goal (a room)
+Citation (text)
+"Get my backpack from the cinema"
+"Retrieve your remaining possessions from locker at hostel"
+"Meet your colleague Slango at Counterfeit Monkey"
 with 40 blank rows.
 
 Table of Tasks Complete
-Citation (a text)	Time (a time)	Goal (a room)
+Citation (text)
 with 40 blank rows.
 
-To assign (job - text) at (place - a room):
+To assign (job - text):
 	unless job is under way or job is completed:
-		if there is a citation of job in the Table of Prefinished Tasks:
-			choose row with a citation of job in the Table of Prefinished Tasks;
-			mark job done at (time entry);
-			blank out the whole row;
-		otherwise:
-			if the number of blank rows in the Table of Tasks Pending is greater than 0:
-				choose a blank row in the Table of Tasks Pending;
-				now (Citation entry) is job;
-				now (goal entry) is place.
+		if the number of blank rows in the Table of Tasks Pending is greater than 0:
+			choose a blank row in the Table of Tasks Pending;
+			now (Citation entry) is job.
 
 To decide whether (job - text) is under way:
 	if there is a citation of job in the Table of Tasks Pending:
@@ -291,51 +281,19 @@ To decide whether (job - text) is completed:
 		yes.
 
 To complete (job - text):
-	if there is a citation of job in the Table of Tasks Pending:
-		choose row with Citation of job in the Table of Tasks Pending;
-		blank out the whole row;
-		mark job done at time of day;
-	otherwise:
-		mark job pending;
+	unless job is completed:
+		if job is under way:
+			choose row with Citation of job in the Table of Tasks Pending;
+			blank out the whole row;
+			mark job done;
+		otherwise:
+			assign job;
+			complete job.
 
-To mark (job - text) pending:
-	unless there is a citation of job in the Table of Tasks Complete:
-		if the number of blank rows in the Table of Prefinished Tasks is greater than 0:
-			choose a blank row in the Table of Prefinished Tasks;
-			now (citation entry) is job;
-			now (goal entry) is the location;
-			now (time entry) is the time of day;
-
-To mark (job - text) done at (T - a time):
-	unless there is a citation of job in the Table of Tasks Complete:
-		if the number of blank rows in the Table of Tasks Complete is greater than 0:
-			choose a blank row in the Table of Tasks Complete;
-			now (citation entry) is job;
-			now (goal entry) is the location;
-			now (time entry) is T;
-
-
-[To reverse (job - text):
-	if there is a citation of job in the Table of Tasks Complete:
-		choose row with Citation of job in the Table of Tasks Complete;
-		blank out the whole row;
-	unless there is a citation of job in the Table of Tasks Pending:
-		choose a blank row in the Table of Tasks Pending;
-		change (citation entry) to job. ]
-
-To replace (job - text) with (new job - text):
-	if there is a citation of job in the Table of Tasks Pending:
-		choose row with Citation of job in the Table of Tasks Pending;
-		blank out the whole row;
-		now (citation entry) is new job;
-	if there is a citation of job in the Table of Prefinished Tasks:
-		choose row with Citation of job in the Table of Prefinished Tasks;
-		blank out the whole row;
-		now (citation entry) is new job;
-	if there is a citation of job in the Table of Tasks Complete:
-		choose row with Citation of job in the Table of Tasks Complete;
-		blank out the whole row;
-		now (citation entry) is new job;
+To mark (job - text) done:
+	if the number of blank rows in the Table of Tasks Complete is greater than 0:
+		choose a blank row in the Table of Tasks Complete;
+		now (citation entry) is job.
 
 Understand the command "think" as something new. Understand "think" or "plan" or "plans" or "journal" or "missions" or "goals" or "goal" as planning. Planning is an action out of world.
 
@@ -362,27 +320,6 @@ After going to Fair when the barrier is unlocked and we have not planned:
 	say "[first custom style][bracket]To go over our current goals, type GOALS at any time.[close bracket][roman type][paragraph break]";
 	continue the action.
 
-[Understand "schedule" or "summary" or "history" or "review" or "chapters" as scheduling.
-
-Scheduling is an action out of world.
-
-Report scheduling:
-	say "We've managed the following: ";
-	repeat through the Table of Tasks Complete:
-		say "[line break]  [citation entry]";
-	say "[paragraph break]";
-	say "That leaves: ";
-	repeat through the Table of Tasks Pending:
-		say "[line break]  [citation entry]";
-	say "[paragraph break]";]
-
-[We don't need this because we have score.]
-
-To show to-do list:
-	say "[line break]So now [we] should probably ";
-	repeat through the Table of Tasks Pending:
-		say "[citation entry]; ";
-	say "and, most of all, not get noticed by anyone who shouldn't notice us."
 
 Section 4 - Achievements
 

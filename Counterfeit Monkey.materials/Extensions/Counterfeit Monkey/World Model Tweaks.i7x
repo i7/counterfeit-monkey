@@ -1086,7 +1086,6 @@ An approach-finding rule (this is the explicitly enter car rule):
 					if the target is closed and target ignition is switched off:
 						try switching on target ignition;
 						if target ignition is switched on:
-							assign "Find transport for getting past the traffic on High Street" at High Street;
 							complete "Find transport for getting past the traffic on High Street";
 			otherwise:
 				if a car (called second target) is in location and the player is not in second target:
@@ -1109,7 +1108,7 @@ Instead of going from a road to a road:
 		if the number of entries in the path so far of the player is greater than 0:
 			say "[path-walked so far][paragraph break][line break]";
 		say "Unfortunately the sidewalks, which were never very wide to start with, are so blocked by the mass of protesters that it's impossible to get by. Besides, if we associate with them, we might wind up getting arrested on minor charges anyway. We need some kind of automotive transport[car-needed].";
-		assign "Find transport for getting past the traffic on High Street" at High Street;
+		assign "Find transport for getting past the traffic on High Street";
 	otherwise if the room gone to is the Roundabout and the protesters are not off-stage:
 		say "That whole area is so jammed that our only hope is to go by car[car-needed].";
 	otherwise:
@@ -1273,7 +1272,7 @@ Carry out going somewhere by car:
 A car can be operational or damaged. A car is usually damaged.
 
 Sanity-check going by unfueled car:
-	assign "Fuel the car" at High Street;
+	assign "Fuel the car";
 	say "[car-broken]The extremely primitive dial in front of us is pointing all the way to the left. I think that's its way of saying it's out of fuel. At any rate, the engine won't start." instead.
 
 Sanity-check going by damaged car:

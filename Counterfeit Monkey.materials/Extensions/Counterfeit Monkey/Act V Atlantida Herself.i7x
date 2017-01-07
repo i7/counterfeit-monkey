@@ -986,7 +986,7 @@ Check facing in abandoned shore:
 Report facing in Abandoned Shore:
 	say "The charm of this place is that it's very hard to see anything in any direction but the ocean. In every other direction [we] are completely protected by rocks." instead.
 
-Open Sea is north of the Abandoned Shore. It is forbidden checkpoint. The description is "The water stretches in all directions, but [we] can see off to the north where [viewed-yacht] is anchored, ready to bring us back aboard. Its metallic blue shape almost blends in with the water."
+Open Sea is north of the Abandoned Shore. It is forbidden and checkpoint. The description is "The water stretches in all directions, but [we] can see off to the north where [viewed-yacht] is anchored, ready to bring us back aboard. Its metallic blue shape almost blends in with the water."
 	The introduction is "If [we] were further around the island to the east, [we] might be able to see bits of the drowned city: both the buildings that were legitimately destroyed when the land sunk into the sea, and the areas where during the Civil Dispute of Standard[ization] the authorities dumped unwanted foreign archaeological [if the player is wearing britishizing goggles]artefact[otherwise]artifact[end if]s. But here I'm afraid it's just shellfish and sand down there."
 
 Rule for listing exits when looking in the Open Sea:
