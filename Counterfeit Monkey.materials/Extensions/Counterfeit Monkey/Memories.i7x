@@ -36,6 +36,8 @@ Report listing memories:
 
 To trigger (new memory - a memory):
 	let elapsed count be the turn count - last trigger of the new memory;
+	if the turn count is less than 3:
+		let elapsed count be 3 - last trigger of the new memory;
 	if the uses of the new memory is less than the max of the new memory and elapsed count is greater than 2:
 		now the new memory is proto-triggered;
 		now the last trigger of the new memory is the turn count;
