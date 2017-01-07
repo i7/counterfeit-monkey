@@ -1311,15 +1311,16 @@ Instead of giving or showing the leer to a man:
 The description of the legend is "This legend has been edited from its original form, replacing the words like HOSPITAL and RESTROOM with other, hand-written labels: INVITE, GOT, 11, OUT, T-INSERTER, etc. By arranging the words of the legend in the order in which the icons appear along the main street, we arrive at GOT INVITE T-INSERTER DEMONSTRATION. OUT 11 AM."
 	The introduction of the legend is "Of course, it's already long past 11 AM, so Brock's plan clearly went wrong. If we're going to go after him, we'll have to go to the T-inserter demonstration ourselves. The catch is that, as dangerous new technology, it's held inside the Bureau and requires a special invitation to enter.
 
-I think I know where we can get one, though. My advisor Professor Waterstone [--] that's the person overseeing my graduate research [--] was also invited to this demonstration. We might be able to get his[advance-goals]."
+I think I know where we can get one, though. My advisor Professor Waterstone [--] that's the person overseeing my graduate research [--] was also invited to this demonstration. We might be able to get his."
 
 Understand "message" as the legend.
 
-To say advance-goals:
+Before examining the legend when the legend is not introduced:
 	complete "Homonym-paddle the legend into the other kind of legend";
 	assign "Speak to Professor Waterstone and get his invitation to see the T-inserter";
 	assign "Gain entrance to the Bureau";
 	assign "Find Brock";
+	continue the action.
 
 To say figure-out-legend:
 	complete "Trace Brock's movements at the antique shop";
