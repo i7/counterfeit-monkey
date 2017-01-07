@@ -1668,7 +1668,7 @@ Some iron-pans are a plural-named container. The description of the iron-pans is
 	Understand "pan" or "skillet" or "flat" or "cast" or "iron" or "pans" as the iron-pans.
 
 Report involuntarily-dropping the iron-pans:
-	say "[We] can't reasonably carry the whole stack of pans, so they fall to the ground with a dramatic crash." instead.
+	say "[We] can't reasonably carry the whole stack of pans, so they fall to the ground with a dramatic crash[if the Authenticator is in Fish Market and the location is Tin hut].[paragraph break]Let's hope she didn't hear that[end if]." instead.
 
 Understand "put pans in/into pans" or "insert pans in/into pans" as a mistake ("Try as [we] might, their design and the placement of the handles makes stacking the pans nearly impossible.") when the iron-pans are marked-visible.
 
