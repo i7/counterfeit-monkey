@@ -1265,7 +1265,7 @@ Report switching on an ignition:
 
 [Instead of going somewhere by car when the ignition is switched off: say "The ignition is off at the moment." ]
 
-Carry out going somewhere by car:
+Carry out going to the roundabout by car:
 	complete "Find transport for getting past the traffic on High Street";
 	record "traveling by car" as achieved.
 
