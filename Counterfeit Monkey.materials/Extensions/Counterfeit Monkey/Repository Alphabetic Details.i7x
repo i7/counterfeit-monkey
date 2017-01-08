@@ -4094,6 +4094,8 @@ The word is r-abstract. The heft of the word is 0. The description is "At the mo
 
 To say recent word:
 	let N be "[description of a random marked-visible thing]";
+	if N is "":
+		let N be "[description of the passage]";
 	let count be the number of words in N;
 	let index be a random number between 1 and count;
 	say "[word number index in N]".
