@@ -4852,7 +4852,12 @@ Report Brock saying hello to the player for the first time:
 	assign "Test T-inserter on making abstracts";
 	assign "Test T-inserter on situations where it could build more than one thing";
 	assign "Escape the Bureau";
+	if the player wears something:
+		now the brock-commented-garment is a random thing worn by the player;
+		queue nice-garment as postponed optional;
 	queue weird-you-look as postponed optional instead;
+
+The brock-commented-garment is a thing that varies.
 
 First conversation-reply rule when the current interlocutor is Brock:
 	[if suggest we get out of here is available:
@@ -4969,6 +4974,15 @@ The waxen look melts and he grins. 'Thank god. It's harder than you'd expect bei
 
 weird-you-look is an NPC-directed quip.
 	The reply is "'It's weird [--] you have a different face but the expressions are still yours. It's like you have a really good rubber mask on.'"
+
+nice-garment is an NPC-directed quip.
+	The reply is "'[worn-thing].'"
+
+To say worn-thing:
+	if the player wears the brock-commented-garment:
+		say "Nice [brock-commented-garment]";
+	otherwise:
+		say "[regarding brock-commented-garment][Those] [brock-commented-garment] looked cool on you".
 
 suggest we get out of here is a performative quip.
 	The comment is "'You've been a lump of igneous all day,' you say. 'It's getting dark out there. If we don't get out now, we're going to get caught by some janitor with a privative affixer.'".
