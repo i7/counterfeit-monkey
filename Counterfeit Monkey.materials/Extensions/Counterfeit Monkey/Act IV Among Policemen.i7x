@@ -458,7 +458,6 @@ Instead of going to Bureau hallway from the Antechamber when the player encloses
 		stop the action;
 	try the secretary looking at the pass through the scope;
 	if the player is allowed:
-		record "passing the secretarial test" as achieved;
 		[now the secretary carries the pass;]
 		now the secretary carries the invitation;
 		now the invitation is not essential;
@@ -511,6 +510,7 @@ The secretary scowls. 'Fine. I'll contact Waterstone.' She places a call [--] on
 Attempting  entry ends when the time since Attempting entry began is three minutes.
 
 When attempting entry ends:
+	record "passing the secretarial test" as achieved;
 	say "The secretary is still talking. 'You personally vouch for this student? You know her well and are sure of her trustworthiness?'
 
 'Known her for years,' lies Waterstone, annoyed. There's a click as he hangs up.
