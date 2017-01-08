@@ -967,25 +967,25 @@ To clear a/the/-- (chosen quip - a quip) from queue of (chosen person - a person
 
 Section 4 - Adding to the Queue
 
-Quip-triggering relates various quips to various quips. The verb to quip-trigger (it quip-triggers, they quip-trigger, it quip-triggered, it is quip-triggered) implies the quip-triggering relation. [This relation is used entirely for debugging purposes: it allows us to build more accurate schematic diagrams of the relationships between quips.]
+[Quip-triggering relates various quips to various quips. The verb to quip-trigger (it quip-triggers, they quip-trigger, it quip-triggered, it is quip-triggered) implies the quip-triggering relation. [This relation is used entirely for debugging purposes: it allows us to build more accurate schematic diagrams of the relationships between quips.]]
 
 To say conditionally queue a/the/-- (chosen quip - a quip):
 	if the player does not recollect the chosen quip:
 		say queue the chosen quip.
 
 To say queue a/the/-- (chosen quip - a quip):
-	queue chosen quip;
-	now the current quip quip-triggers the chosen quip.
+	queue chosen quip[;
+	now the current quip quip-triggers the chosen quip].
 
 To say casually queue a/the/-- (chosen quip - a quip):
 	casually queue the chosen quip.
 
 To say queue a/the/-- (chosen quip - a quip) as (chosen precedence - a quip-precedence):
-	now the current quip quip-triggers the chosen quip;
+	[now the current quip quip-triggers the chosen quip;]
 	queue chosen quip as the chosen precedence.
 
 To say queue a/the/-- (chosen quip - a quip) as (chosen precedence - a quip-precedence) for (chosen person - a person):
-	now the current quip quip-triggers the chosen quip;
+	[now the current quip quip-triggers the chosen quip;]
 	queue the chosen quip as the chosen precedence for the chosen person.
 
 To say queue a/the/-- (chosen quip - a quip) for (bystander - a person):
