@@ -1299,9 +1299,12 @@ Instead of knocking on office-door-1 when the location of Professor Waterstone i
 				stop the action;
 	if the selected object is nothing:
 		say "[if we-have-knocked is true]Waterstone looks up and gives a little frown. [end if]It's clear he doesn't know why we knocked; to be honest I'm not sure why we did either.";
+		now we-have-knocked is true;
+		stop the action;
 	otherwise:
 		follow the water-reaction rules for the selected object;
-	now we-have-knocked is true.
+	now we-have-knocked is true;
+	stop the action.
 
 The water-reaction rules are an object-based rulebook.
 

@@ -91,12 +91,27 @@ Rule for supplying a missing second noun while showing something to:
 		say "You must show [the noun] to someone specific.";
 		stop the action.
 
+Rule for supplying a missing second noun while showing something to when location is Language Studies Department Office and office-door-1 is closed and Professor Waterstone is on a chair:
+	if current interlocutor is something:
+		now second noun is current interlocutor;
+	otherwise:
+		now second noun is Professor Waterstone;
+		now current interlocutor is Professor Waterstone.
+
 Rule for supplying a missing second noun while giving something to:
 	find a suitable interlocutor;
 	now second noun is current interlocutor;
 	if second noun is nothing:
 		say "You must give [the noun] to someone specific.";
 		stop the action.
+
+Rule for supplying a missing second noun while giving something to when location is Language Studies Department Office and office-door-1 is closed and Professor Waterstone is on a chair:
+	if current interlocutor is something:
+		now second noun is current interlocutor;
+	otherwise:
+		now second noun is Professor Waterstone;
+		now current interlocutor is Professor Waterstone.
+
 
 Rule for supplying a missing second noun while buying something from:
 	if somebody (called target) encloses the noun:
