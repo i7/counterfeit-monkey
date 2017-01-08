@@ -1351,6 +1351,10 @@ A Water-reaction rule for the clock:
 	say "Waterstone inspects the clock through his monocle a moment. Then he picks up a marker and writes on a piece of paper, 'It was always a CLOCK. I need something where the original was naughty.' Having held up this sign for a minute, he crumples it and goes back to work.";
 	rule succeeds.
 
+A Water-reaction rule for the draft document:
+	say "[one of]Waterstone stares at the draft document, apparently not recognizing it at first. Then he picks up a marker and writes on a piece of paper, 'Have you read it? Any ideas?' Having held up this sign for a minute, he crumples it and goes back to work.[or]Waterstone looks up from his work long enough to give us an irritated glare. Perhaps we should consider what he suggested.[or]We get only a momentary flicker of attention from Waterstone. Perhaps we should have another look at the draft and think about what might interest him.[stopping]";
+	rule succeeds.
+
 A last Water-reaction rule for something (called the target):
 	say "[one of]Waterstone looks up from his work long enough to give us an irritated glare.[or]Waterstone barely glances away from his typing this time.[or]Without looking up, Waterstone sticks out his tongue. Really, he's clearly very upset about his deadlines, it seems.[or][We] get only a momentary flicker of attention from Waterstone.[stopping]";
 	if the draft document is examined:
