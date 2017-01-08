@@ -4852,8 +4852,8 @@ Report Brock saying hello to the player for the first time:
 	assign "Test T-inserter on making abstracts";
 	assign "Test T-inserter on situations where it could build more than one thing";
 	assign "Escape the Bureau";
-	if the player wears something:
-		now the brock-commented-garment is a random thing worn by the player;
+	now the brock-commented-garment is a random thing worn by the player;
+	if the brock-commented-garment is something:
 		queue nice-garment as postponed optional;
 	queue weird-you-look as postponed optional instead;
 
