@@ -4093,7 +4093,7 @@ The description of the wire rack is "The new rack is miraculously much larger th
 The word is r-abstract. The heft of the word is 0. The description is "At the moment, the word is '[recent word]', floating about in [one of]handsome Garamond[or]Arno Pro[or]unmistakable Hoefler[or]slick Buivinga[or]elegant Didot[or]unimaginative Times[or]Helvetica[or]solid-bodied Gotham[at random] lettering."
 
 To say recent word:
-	let N be "[description of a random marked-visible thing]";
+	let N be the substituted form of "[description of a random marked-visible thing]";
 	if N is "":
 		let N be "[description of the passage]";
 	let count be the number of words in N;
