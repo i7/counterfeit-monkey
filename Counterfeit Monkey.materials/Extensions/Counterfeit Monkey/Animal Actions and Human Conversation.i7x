@@ -6109,7 +6109,7 @@ When Atlantida-shooing begins:
 	queue you-had-better-leave as immediate obligatory;
 	queue really-go-now as postponed obligatory.
 
-Atlantida-shooing ends when the location is Personal Apartment  and the portcullis is open.
+Atlantida-shooing ends when (the location is Personal Apartment or the location is Private Solarium) and the portcullis is open.
 
 you-had-better-leave is an NPC-directed quip.
 	The reply is "[thank-atlantida]'You'd better leave, quickly,' she says. 'I'll make sure your friends get out, but it will be easier if we don't have to explain you as well.'"
@@ -6185,7 +6185,9 @@ Carry out going through the tall window:
 	otherwise:
 		say "[We] close the window behind us.";
 
-Portcullis-threat is a scene. Portcullis-threat begins when Atlantida-shooing ends. Portcullis-threat ends in delay when the portcullis is closed. Portcullis-threat ends in capture when the time since Portcullis-threat began is 4 minutes and the portcullis is open.
+Portcullis-threat is a scene. Portcullis-threat begins when Atlantida-shooing ends. Portcullis-threat ends in delay when the portcullis is closed. Portcullis-threat ends in capture when (the location is Private Solarium or the time since Portcullis-threat began is 4 minutes) and the portcullis is open.
+
+Portcullis-threat ends in freedom when the location is Precarious Perch.
 
 When Portcullis-threat begins:
 	say "Someone is coming into the workshop upstairs. There's at most a few seconds before they'll be down the tunnel.";
