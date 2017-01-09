@@ -6187,6 +6187,7 @@ Carry out going through the tall window:
 
 Portcullis-threat is a scene. Portcullis-threat begins when Atlantida-shooing ends. Portcullis-threat ends in delay when the portcullis is closed. Portcullis-threat ends in capture when (the location is Private Solarium or the time since Portcullis-threat began is 4 minutes) and the portcullis is open.
 
+[This should never happen. The guards are supposed to capture us if we try to escape without shutting the portcullis first.]
 Portcullis-threat ends in freedom when the location is Precarious Perch.
 
 When Portcullis-threat begins:
