@@ -6193,6 +6193,19 @@ Portcullis-threat ends in freedom when the location is Precarious Perch.
 When Portcullis-threat begins:
 	say "Someone is coming into the workshop upstairs. There's at most a few seconds before they'll be down the tunnel.";
 
+Check going to the Tunnel from Personal Apartment when Portcullis-threat is happening:
+	say "[We] run straight into the guards. [We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
+	end the story saying "That could have gone better"
+
+Instead of going to Private Solarium from Personal Apartment when Portcullis-threat is happening or Atlantida-shooing is happening:
+	if the player is hurrying:
+		if the number of entries in the path so far of the player is greater than 1:
+			say "[path-walked so far][line break]";
+		otherwise:
+			clear the path-walked for the player;
+	otherwise:
+		say "The guards are coming down the tunnel right now. [We] should find a way to delay them."
+
 When Portcullis-threat ends in capture:
 	say "The guards arrive. [We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
 	end the story saying "That could have gone better"
