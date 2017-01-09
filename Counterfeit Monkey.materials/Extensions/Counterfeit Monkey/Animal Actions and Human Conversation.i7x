@@ -5691,12 +5691,12 @@ Rule for listing exits while looking in Personal Apartment when atlantida-woman 
 		do nothing instead.
 
 
-Atlantida-patience is a number that varies.
+[Atlantida-patience is a number that varies.
 
 After doing something when the location is Personal Apartment and Personal Apartment is visited and atlantida chat has not happened:
 	increase atlantida-patience by 1;
 	if atlantida-patience is greater than 1:
-		move atlantida-woman to the location.
+		move atlantida-woman to the location.]
 
 [atlantida-woman carries the restoration-gel rifle.]
 
