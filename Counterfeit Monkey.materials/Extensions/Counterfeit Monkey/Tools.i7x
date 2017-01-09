@@ -1986,6 +1986,11 @@ Sanity-check switching on the programmable dais:
 Sanity-check switching off the programmable dais:
 	say "It doesn't stay on long enough to need turning off." instead.
 
+Sanity-check homonyming the programmable dais:
+	let N be a random thing on programmable dais;
+	if N is nothing:
+		now N is the player;
+	try homonyming N instead.
 
 [Joke responses. These duplicate, more or less, code for the synthesizer above; inelegant, but there aren't enough of these jokes to be worth a more elaborate implementation of synthesis generally that would take them into account.]
 
