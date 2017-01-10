@@ -535,9 +535,7 @@ Check teeing something:
 		say "The T-inserter machine whirs to life, then gives a disappointed sort of whuff when it finds no good place for t-insertion." instead.
 
 Check teeing something:
-	abide by the dangerous destruction rules for the noun;
-	abide by the dangerous construction rules for the goal-object.
-
+	abide by the dangerous destruction rules for the noun.
 
 Carry out teeing something:
 	now the goal-object is not proffered by anything;
@@ -567,18 +565,18 @@ After teeing something:
 	say "[if t-count is 1]There is a loud and satisfying pop[otherwise]There are [t-count in words] small pops[end if] from the machine as it turns [the noun] into [a goal-object]. ";
 	say "There now: the T-inserter has constructed [if N is 2]both[otherwise]all of[end if] [possible-goals]. Not very stable, it seems. Slango will be interested to know that.";
 	complete "Test T-inserter on situations where it could build more than one thing";
-	abide by the dangerous construction rules for the goal-object;
 	set pronouns from the goal-object;
-	try examining the goal-object instead.
+	try examining the goal-object;
+	abide by the dangerous construction rules for the goal-object instead.
 
 Report teeing something:
 	say "[if t-count is 1]There is a loud and satisfying pop[otherwise]There are [t-count in words] small pops[end if] from the machine as it turns [the noun] into [a goal-object].";
 	if the number of entries in the possible-goals is greater than 1:
 		let N be the number of entries in the possible-goals;
 		say "[line break]Of course, there were other options there: the T-inserter could have made [N in words] words. But it seems to be disambiguating to [the goal-object]. The question now is whether it would do so consistently or whether its behavi[our] is underdetermined; [we] don't have time for a really thorough trial set, but checking a couple more times may be indicative.";
-	abide by the dangerous construction rules for the goal-object;
 	set pronouns from the goal-object;
-	try examining the goal-object instead.
+	try examining the goal-object;
+	abide by the dangerous construction rules for the goal-object instead.
 
 Test it-construction with "autoupgrade / wave a-remover at pita / wave p-remover at pit / wave t-remover at it / put i in t-inserter / get it / wave t-remover at it / put i in t-inserter" holding the pita in the Sensitive Equipment Testing Room.
 
