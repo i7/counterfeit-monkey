@@ -137,7 +137,7 @@ Instead of listening to the code-lock:
 Carry out going through the temporary barrier:
 	record "passing through the temporary barrier" as achieved.
 
-Ampersand Bend is south of the temporary barrier. It is a road. The description is "A bend in the street, which runs west and north. This district combines the old and the new: a small [museum] in an ancient stone building to the east, a shiny [real estate office] south. The window of the museum is currently displaying one of its exhibits, [a list of things *in the display stand][if the code is on the display stand]. Well, not to worry: they'll be able to restore the codex easily enough when the museum reopens[end if]." Understand "district" as Ampersand Bend.
+Ampersand Bend is south of the temporary barrier. It is checkpoint. The description is "A bend in the street, which runs west and north. This district combines the old and the new: a small [museum] in an ancient stone building to the east, a shiny [real estate office] south. The window of the museum is currently displaying one of its exhibits, [a list of things *in the display stand][if the code is on the display stand]. Well, not to worry: they'll be able to restore the codex easily enough when the museum reopens[end if]." Understand "district" as Ampersand Bend.
 
 Out-direction of Ampersand Bend is north. [Through the barrier]
 
