@@ -606,11 +606,9 @@ An instructional rule (this is the teach distance movement rule):
 	say "[first custom style]Navigating with compass directions works, but we can also type GO TO... to travel to a named place. GO TO BACK ALLEY will take us back where we started, for instance.[roman type]";
 	rule succeeds.
 
-Sanity-check approaching Back Alley:
-	add the teach distance movement rule to the completed instruction list, if absent.
-
-Carry out approaching:
-	add the teach distance movement rule to the completed instruction list, if absent.
+Before approaching:
+	add the teach distance movement rule to the completed instruction list, if absent;
+	continue the action.
 
 Carry out going to the Fair:
 	add the teach distance movement rule to the completed instruction list, if absent.
