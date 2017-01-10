@@ -603,7 +603,7 @@ An instructional rule (this is the teach distance movement rule):
 		make no decision;
 	if at least four rooms are visited:
 		make no decision;
-	say "[first custom style]Navigating with compass directions works, but we can also type GO TO... to travel to a named place. GO TO BACK ALLEY will take us back where we started, for instance.[roman type]";
+	say "[first custom style]Navigating with compass directions works, but we can also type GO TO... to travel to a named place. GO TO [if location is Back Alley]SIGIL STREET[otherwise]BACK ALLEY will take us back where we started[end if], for instance.[roman type]";
 	rule succeeds.
 
 Before approaching:
