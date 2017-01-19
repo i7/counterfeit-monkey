@@ -2164,7 +2164,7 @@ Dank and malodorous: there are no windows down here, and the drainage is terribl
 
 The stairs up are here; the lecture room at the east. Immediately south is the Graduate Student Office, and southwest is Professor Brown's office. The most interesting of all is the small door west, trying to look inconspicuous, but locked with a keycard lock: it's where the department stores its most dangerous licensed equipment.
 
-/A large open carton stands against the wall right between Brown's lab door and the interesting door. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." (There is a banana in the large carton|In the large carton is a banana). 
+/A large open carton stands against the wall right between Brown's lab door and the interesting door. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." (There is a banana in the large carton|(In the large carton is|The large carton contains) a banana).
 
 The snapping continues.
 
@@ -2436,7 +2436,7 @@ Dank and malodorous: there are no windows down here, and the drainage is terribl
 
 The stairs up are here; the lecture room at the east. Immediately south is the Graduate Student Office, and southwest is Professor Brown's office. The most interesting of all is the small door west, trying to look inconspicuous, but locked with a keycard lock: it's where the department stores its most dangerous licensed equipment.
 
-/A large open carton stands against the wall right between Brown's lab door and the interesting door. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." (There is a banana in the large carton|(In the large carton is|The large carton contains) a banana). 
+/A large open carton stands against the wall right between Brown's lab door and the interesting door. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." (There is a banana in the large carton|(In the large carton is|The large carton contains) a banana).
 
 The snapping continues.
 
@@ -3344,8 +3344,6 @@ She turns her eyes towards us but doesn't say anything.
 > show pass to secretary
 We show our pass to the secretary.
 
-The secretary frowns, but the scope makes no sound.
-
 The secretary raises her Authentication Scope to look at the pass. There is a moment of silence. The scope does nothing.
 
 "That will do," the secretary says of our pass. Then she inspects the invitation with the monocle. "Most of the visits were earlier in the day," she says. "Quite a fracas there was this morning."
@@ -3357,8 +3355,6 @@ She deflates momentarily and goes back to inspecting. "There's another problem. 
 "He sent me to do some research in his place. I'm a student of his."
 
 She frowns. "Invitations to inspect highly secure machinery are not transferrable," she says. "And how should I know whether you stole it?"
-
-[Your score has gone up by five points and is now seventy-eight.]
 
 > e
 I'm handling this.
@@ -3388,11 +3384,13 @@ The secretary is still talking. "You personally vouch for this student? You know
 
 "What a delightful man," remarks the secretary.
 
-She looks over our other visible possessions (the pass, the stick, the ink, the sill, and the backpack) and deems them acceptable. She makes us sign a book, for which we use a signature of your invention. Finally: "Go in, descend to the basement, and present yourself at the secure section downstairs. Be advised you will be under video surveillance as you approach. Any attempts to modify or steal Bureau property, to gain access to rooms to which you have not been expressly invited, to eavesdrop on conversations of Bureau employees, or to leave objects of your own behind in the Bureau, may result in your arrest and prosecution.
+She looks over our other visible possessions (the stick, the ink, the sill, and the backpack) and deems them acceptable. She makes us sign a book, for which we use a signature of your invention. Finally: "Go in, descend to the basement, and present yourself at the secure section downstairs. Be advised you will be under video surveillance as you approach. Any attempts to modify or steal Bureau property, to gain access to rooms to which you have not been expressly invited, to eavesdrop on conversations of Bureau employees, or to leave objects of your own behind in the Bureau, may result in your arrest and prosecution.
 
 "Have a nice day!"
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether she enjoys her job.
+
+[Your score has gone up by five points and is now seventy-eight.]
 
 > z
 Time passes.
@@ -3482,16 +3480,16 @@ Time passes.
 
 The snapping continues.
 
-"It's weird — you have a different face but the expressions are still yours. It's like you have a really good rubber mask on."
+"Nice swatch."
 
 /He (runs a hand over (the small nozzles|the brass plate)|knocks on the top of the T-inserter|stands back, regarding the T-inserter thoughtfully|pauses, listening for noises outside). "First we should see whether this thing can reify abstracts."
-
-
 
 > z
 Time passes.
 
 /(Brock touches some gel to the snap. [a-zA-Z\"\. ]+. With an audible SPLORT, the snap becomes some plans.)?
+
+"It's weird — you have a different face but the expressions are still yours. It's like you have a really good rubber mask on."
 
 "I didn't have time to run the tests I wanted to run on the T-inserter. It'll take three minutes and then we can go. We need to do abstracts, animates, and a stability check."
 

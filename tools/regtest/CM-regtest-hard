@@ -1300,7 +1300,7 @@ I didn't think she'd noticed.
 
 I would like her to go on, but she doesn't: because it would be indiscreet, because she doesn't trust us.
 
-/Mother (appears to be meditating about the [a-z ]+|spaces out a bit, contemplating the [a-z ]+|stares absently at the [a-z ]+ for a moment|looks faintly bewildered).
+/Mother (appears to be meditating about (the|our) [a-z ]+|spaces out a bit, contemplating (the|our) [a-z ]+|stares absently at (the|our) [a-z ]+ for a moment|looks faintly bewildered).
 
 "Well," Mother says. "I had better go. If you do see Alex, tell him to call me, please. It isn't an emergency, but you can tell him there's a bit of Bureau business I'd like to discuss with him."
 
@@ -2645,8 +2645,6 @@ She turns her eyes towards us but doesn't say anything.
 > show pass to secretary
 We show our pass to the secretary.
 
-The secretary frowns, but the scope makes no sound.
-
 The secretary raises her Authentication Scope to look at the pass. There is a moment of silence. The scope does nothing.
 
 
@@ -2659,8 +2657,6 @@ She deflates momentarily and goes back to inspecting. "There's another problem. 
 "He sent me to do some research in his place. I'm a student of his."
 
 She frowns. "Invitations to inspect highly secure machinery are not transferrable," she says. "And how should I know whether you stole it?"
-
-[Your score has gone up by five points and is now seventy-eight.]
 
 > e
 I'm handling this.
@@ -2690,11 +2686,13 @@ The secretary is still talking. "You personally vouch for this student? You know
 
 "What a delightful man," remarks the secretary.
 
-She looks over our other visible possessions (the pass, the sword, the ink, the sill, the backpack, the ale, and the arm) and deems them acceptable. She makes us sign a book, for which we use a signature of your invention. Finally: "Go in, descend to the basement, and present yourself at the secure section downstairs. Be advised you will be under video surveillance as you approach. Any attempts to modify or steal Bureau property, to gain access to rooms to which you have not been expressly invited, to eavesdrop on conversations of Bureau employees, or to leave objects of your own behind in the Bureau, may result in your arrest and prosecution.
+She looks over our other visible possessions (the sword, the ink, the sill, the backpack, the ale, and the arm) and deems them acceptable. She makes us sign a book, for which we use a signature of your invention. Finally: "Go in, descend to the basement, and present yourself at the secure section downstairs. Be advised you will be under video surveillance as you approach. Any attempts to modify or steal Bureau property, to gain access to rooms to which you have not been expressly invited, to eavesdrop on conversations of Bureau employees, or to leave objects of your own behind in the Bureau, may result in your arrest and prosecution.
 
 "Have a nice day!"
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether she enjoys her job.
+
+[Your score has gone up by five points and is now seventy-eight.]
 
 > z
 Time passes.
@@ -2829,7 +2827,7 @@ We just touch a coated fingertip of gel to the ale. With an audible SPLORT, the 
 
 There is a continuous angry whine from the jigsaw.
 
-"It's weird — you have a different face but the expressions are still yours. It's like you have a really good rubber mask on."
+"Nice shred."
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) suggest we get out of here, complain about Brock's recklessness, or discover why Brock got stuck here. Maybe it's not worth it, though.
 
@@ -2838,14 +2836,16 @@ We already have that.
 
 There is a continuous angry whine from the jigsaw.
 
-/He (stands back, regarding the T-inserter thoughtfully|runs a hand over the (brass plate|small nozzles)|knocks on the top of the T-inserter|pauses, listening for noises outside|runs his fingers over the surface of the machine, checking for hot spots). "First we should see whether this thing can reify abstracts."
+"It's weird — you have a different face but the expressions are still yours. It's like you have a really good rubber mask on."
+
+/He (stands back, regarding the T-inserter thoughtfully|runs a hand over the (brass plate|small nozzles)|knocks on the top of the T-inserter|pauses, listening for noises outside|runs his fingers over the surface of the machine, checking for hot spots|cranes to look around at the back of the machine, but doesn't find anything interesting). "First we should see whether this thing can reify abstracts."
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) suggest we get out of here, complain about Brock's recklessness, or discover why Brock got stuck here. Or, then again, there's always finishing the job.
 
 > put apple in t-inserter
 There is a loud and satisfying pop from the machine as it turns the apple into an applet.
 
-/An abstract representation. An anonymous browser window appears to hover in the air, currently (showing satellite footage of the big demonstration a few hours ago|playing a text-based web game|playing streaming video of a rally by the Atlantean Anti-Babel Party).
+/An abstract representation. An anonymous browser window appears to hover in the air, (currently showing satellite footage of the big demonstration a few hours ago|currently playing a text-based web game|currently playing streaming video of a rally by the Atlantean Anti-Babel Party|streaming news clips of the Serial Comma Day celebration|streaming a television show from one of Atlantis' top chefs, demonstrating how to depluralize fruit for best effect. "Single varietal fruits produce the most intense flavor," she's explaining to the screen, a bushel of limes at her side).
 
 There is a continuous angry whine from the jigsaw.
 
@@ -2862,7 +2862,7 @@ There is a continuous angry whine from the jigsaw.
 
 There is a continuous angry whine from the jigsaw.
 
-/(Brock|He)( is studiously looking around the room| watches us with a slightly disturbing intentness in his eyes|'s looking at us, but when I look back, he cuts his eyes away| is looking at everything but us). "I've half a mind to explore a little while we're down here just about unsupervised," Brock says reflectively.
+/(Brock|He)(( is|'s) studiously looking around the room| watches us with a slightly disturbing intentness in his eyes|( is|'s) looking at us, but when I look back, he cuts his eyes away|( is|'s) looking at everything but us). "I've half a mind to explore a little while we're down here just about unsupervised," Brock says reflectively.
 
 I glare at him.
 
@@ -2875,7 +2875,7 @@ We dip out a pea-sized quantity of gel and rub it gently onto the applet. With a
 
 There is a continuous angry whine from the jigsaw.
 
-/He (pauses, listening for noises outside|stands back, regarding the T-inserter thoughtfully|knocks on the top of the T-inserter|cranes to look around at the back of the machine, but doesn't find anything interesting|runs his fingers over the surface of the machine, checking for hot spots). "Next it would be good to see if this thing can build animates."
+/He (pauses, listening for noises outside|stands back, regarding the T-inserter thoughtfully|knocks on the top of the T-inserter|cranes to look around at the back of the machine, but doesn't find anything interesting|runs his fingers over the surface of the machine, checking for hot spots|runs a hand over the brass plate). "Next it would be good to see if this thing can build animates."
 
 > wave p-remover at apple
 We reset the device to p. The apple gives way to the now-familiar ale.
