@@ -709,7 +709,7 @@ The Sensitive Equipment Testing Room is west of Bureau Basement Secret Section. 
 
 The initial appearance of the rock is "A [rock] sits in one corner of the room."
 
-Before going from the Sensitive Equipment Testing Room:
+Sanity-check going from the Sensitive Equipment Testing Room:
 	if the player does not know brock-found:
 		say "[We] shouldn't leave here until [we] have some clue about what happened to Brock when he came in." instead;
 	if the rock is enclosed by the location and the rock is not enclosed by the player:
