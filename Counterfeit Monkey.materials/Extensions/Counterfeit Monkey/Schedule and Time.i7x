@@ -501,6 +501,14 @@ Rule for supplying a missing noun when blindfold-wearing:
 Check blindfold-wearing:
 	try blindfolding the player with the noun instead.
 
+Understand "remove blindfold" or "take off blindfold" as blindfold-removing. Blindfold-removing is an action applying to nothing.
+
+Check blindfold-removing:
+	if the player wears a blinding thing (called B):
+		try taking off B instead;
+	otherwise:
+		say "[We] [are] not wearing a blindfold."
+
 Instead of attacking the Atlantida figure with something when the player does not wear a blinding thing:
 	say "It's not sporting to strike the figure unless [we] [are] blindfolded; it's part of the rules. If no official blindfold is forthcoming, [we] might be able to make do by wearing some appropriate strip of cloth."
 
