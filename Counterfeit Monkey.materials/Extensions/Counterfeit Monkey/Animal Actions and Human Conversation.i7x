@@ -144,10 +144,19 @@ After a fake person going, exiting, or entering when pursuing-state is true (thi
 Pursuing-state is a truth state that varies. Pursuing-state is false.
 The incoming-list is a list of objects that varies.
 
-After going or entering or exiting when the player is staid:
+The exited-from is a thing that varies.
+
+After exiting when the player is staid:
+	if the number of entries in the incoming-list is not 0:
+		now the exited-from is the container exited from;
+		report followers;
+		say paragraph break;
+	continue the action.
+
+After going or entering when the player is staid:
 	if the number of entries in the incoming-list is not 0:
 		report followers;
-		say command clarification break;
+		say paragraph break;
 	continue the action.
 
 To say report-followers:
@@ -160,7 +169,10 @@ To report followers:
 		if the player is in a car:
 			say "come[if the number of entries in incoming-list is 1 and entry 1 of incoming-list is not plural-named]s[end if] along with us";
 		otherwise:
-			say "[one of]trail[or]come[or]follow[or]walk[at random][if the number of entries in incoming-list is 1 and entry 1 of incoming-list is not plural-named]s[end if] after us";
+			if exiting:
+				say "get[if the number of entries in incoming-list is 1 and entry 1 of incoming-list is not plural-named]s[end if] out of [the exited-from]";
+			otherwise:
+				say "[one of]trail[or]come[or]follow[or]walk[at random][if the number of entries in incoming-list is 1 and entry 1 of incoming-list is not plural-named]s[end if] after us";
 		sort the incoming-list;
 		repeat through the Table of Animal Sets:
 			let group be the grouping entry;
