@@ -167,6 +167,13 @@ A first accessibility rule (this is the go to location rule):
 					rule fails;
 	make no decision.
 
+Rule for reaching outside a car (called C) (this is the can't reach outside car rule):
+	try exiting;
+	if the player is in C:
+		say "[We] can't reach from inside [the C].";
+		deny access;
+	make no decision.
+
 To decide what object is the touch-goal:
 	(- (untouchable_object) -).
 
@@ -2192,7 +2199,7 @@ Section 2 - Attacking it with
 
 Understand the commands "attack" and "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as something new.
 
-Attacking it with is an action applying to one visible thing and one carried thing. Understand "attack [something] with [something preferably held]" as attacking it with.
+Attacking it with is an action applying to one thing and one carried thing. Understand "attack [something] with [something preferably held]" as attacking it with.
 
 Understand the commands "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as "attack".
 
