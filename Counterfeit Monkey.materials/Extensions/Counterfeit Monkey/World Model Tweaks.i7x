@@ -170,7 +170,6 @@ A first accessibility rule (this is the go to location rule):
 Rule for reaching outside a car (called C) (this is the can't reach outside car rule):
 	try exiting;
 	if the player is in C:
-		say "[We] can't reach from inside [the C].";
 		deny access;
 	make no decision.
 
