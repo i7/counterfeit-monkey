@@ -1412,6 +1412,7 @@ To gel-convert (item - an object):
 		let description needed be false;
 		if exactly one thing (called the parent) proffers the item:
 			set pronouns from parent;
+			abide by the dangerous construction rules for the parent;
 			if the parent is unseen:
 				now description needed is true;
 		if item is hoses or item is hoe:

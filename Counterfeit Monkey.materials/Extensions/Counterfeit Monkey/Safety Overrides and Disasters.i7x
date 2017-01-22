@@ -54,6 +54,12 @@ A dangerous construction rule for the ape:
 A dangerous construction rule for a car (called target car) when target car is enclosed by the garage:
 	move target car to location.
 
+A dangerous construction rule for a sink (called target sink):
+	if holder of target sink is a room:
+		now target sink is fixed in place;
+	otherwise:
+		now target sink is portable.
+
 A dangerous construction rule for something enormous (called the target):
 	say "Unfortunately, [the target] [are] more than sufficient to bury us under [their] bulk.";
 	end the story saying "That could have gone better";
