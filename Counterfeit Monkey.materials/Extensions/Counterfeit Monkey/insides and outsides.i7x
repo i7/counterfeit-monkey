@@ -98,7 +98,7 @@ To decide which object is car-or-container:
 Instead of exiting when the player is not enclosed by an enterable thing and the player's command does not include "get off/down/up":
 		try going outside.
 
-Check entering a closed container (called the target) when the player is not in the target (this is the attempt opening on enter rule):
+Check entering a closed container (called the target) when the player is not enclosed by the target (this is the attempt opening on enter rule):
 	try opening the noun;
 	if the noun is closed, stop the action.
 
