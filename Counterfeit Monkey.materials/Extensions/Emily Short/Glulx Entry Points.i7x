@@ -84,7 +84,7 @@ Section - HandleGlkEvent routine
 
 Include (- Array evGlobal --> 4; -) before "Glulx.i6t".
 
-[Include (- 
+Include (-
 
   [ HandleGlkEvent ev context abortres newcmd cmdlen i ;
       for (i=0:i<3:i++) evGlobal-->i = ev-->i;
@@ -92,7 +92,7 @@ Include (- Array evGlobal --> 4; -) before "Glulx.i6t".
       return (+ value returned by glk event handling +) ;
   ];
 
--) before "Glulx.i6t".]
+-) before "Glulx.i6t".
 
 
 Section - Useful function wrappers

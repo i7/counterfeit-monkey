@@ -21,6 +21,7 @@ The graphics window construction rule is not listed in any rulebook.
 When identification ends (this is the open the graphics window rule):
 	now current graphics drawing rule is the compass-drawing rule;
 	open the graphics window;
+	start looking for graphlinks.
 
 
 
