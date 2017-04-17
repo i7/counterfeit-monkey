@@ -18,7 +18,7 @@ The position of the graphics window is g-placeleft.
 
 The graphics window construction rule is not listed in any rulebook.
 
-Before refreshing the graphics window:
+Before refreshing the graphics window (this is the adjust the graphics window to accommodate the map rule):
 	if glulx graphics is supported:
 		adjust size of graphics window;
 	continue the activity.
