@@ -53,7 +53,6 @@ the teach taking rule response (A) is "[first custom style]You can pick things u
 The teach inventory rule response (A) is "[first custom style]There's more we can do than just looking around. To check what you're holding at the moment, try typing INVENTORY, or I for short.[roman type][run paragraph on]".
 The teach meta-features rule response (A) is "[first custom style]To save your current position, type SAVE. RESTORE allows you to bring back a game you have previously saved.[roman type][run paragraph on]".
 
-[TODO: Add back swearing and singing?]
 The standard report taking rule response (A) is "[We] [one of]take[or]get[or]pick up[or]acquire[as decreasingly likely outcomes] [the noun][if the noun is unexamined and the action is singular]. [run paragraph on][noun description][no line break][otherwise].[end if]".
 The standard report wearing rule response (A) is "[We] [put] on [the noun][if the noun is unexamined]. [run paragraph on][noun description][no line break][otherwise].[end if]".
 The standard report dropping rule response (A) is "[We] put down [the noun]."
