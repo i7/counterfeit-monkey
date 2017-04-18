@@ -23,13 +23,13 @@ Before refreshing the graphics window (this is the adjust the graphics window to
 		adjust width of the graphics window;
 	continue the activity.
 
+[ The dummy window is used to measure to total width of the game window in pixel in order to adjust the width of the graphics window properly. ]
 The dummy window is a graphics g-window spawned by the main window.
 The position of the dummy window is g-placebelow.
 The measurement of the dummy window is 0.
 
 When play begins (this is the open the dummy window rule):
-	open the dummy window;
-	update the status line.
+	open the dummy window.
 
 Ideal-width is a number that varies.
 
@@ -45,14 +45,16 @@ To adjust width of the graphics window:
 	if ratio > 0.8395: [ Too low to show the entire map when scaled to window width ]
 		now ideal-width is (height of graphics window * 0.8395) to the nearest whole number;
 	if ideal-width is not original width: [ The width has changed ]
-		force the size of graphics window to ideal-width;
-	update the status line.
+		force the size of graphics window to ideal-width.
 
 When identification ends (this is the open the graphics window rule):
-	now current graphics drawing rule is the compass-drawing rule;
-	open the graphics window;
-	start looking for graphlinks.
+	if glulx graphics is supported:
+		now current graphics drawing rule is the compass-drawing rule;
+		open the graphics window;
+		start looking for graphlinks.
 
+A glulx input handling rule for an arrange-event (this is the update the status line after arranging rule):
+	update the status line.
 
 
 Chapter 1 - Images
@@ -334,7 +336,7 @@ To decide what number is grid-margin:
 	decide on grid-size / 2.
 
 This is the compass-drawing rule:
-	if glulx graphics is supported:
+	if the graphics window is g-present:
 		clear compass graphlinks; [We need to reset the graphlinks every time the player resizes the window, because if the height of the screen changes, the compass may move vertically.]
 		establish compass graphlinks;
 		redraw the map and compass;
@@ -397,7 +399,7 @@ In theory, it would have been possible to make the map images carry the compass 
 Figure of background colour is the file "map-background-colour.png".
 
 To redraw the map and compass:
-	if glulx graphics is supported:
+	if the graphics window is g-present:
 		[ Draw the background at slightly more than half the window height to ensure odd heights don't leave a 1 pixel black line ]
 		let half height be (height of the graphics window / 2) + 1;
 		draw figure of background colour in graphics window at x 0 and y half height scaled to width ideal-width and height half height;
@@ -414,6 +416,28 @@ To redraw the map and compass:
 				otherwise:
 					draw the unvisited image of the way in graphics window at x X and y Y scaled to width grid-size and height grid-size;
 
+
+Understand "map on" or "graphics on" or "enable map" or "map" or "graphics" as enabling map. Enabling map is an action out of world.
+
+Carry out enabling map:
+	if the graphics window is g-present:
+		say "[first custom style][bracket]The map is already enabled.[close bracket][roman type][paragraph break]";
+	otherwise:
+		unless glulx graphics is supported:
+			say "[bracket]This interpreter does not support displaying graphics.[close bracket][paragraph break]" instead;
+		open the graphics window;
+		start looking for graphlinks;
+		say "[first custom style][bracket]The map is now enabled.[close bracket][roman type][paragraph break]".
+
+Understand "map off" or "graphics off" or "text" or "text only" or "disable map" as disabling map. Disabling map is an action out of world.
+
+Carry out disabling map:
+	add the teach disabling map rule to the completed instruction list, if absent;
+	if the graphics window is g-present:
+		close the graphics window;
+		say "[first custom style][bracket]The map is now disabled.[close bracket][roman type][paragraph break]";
+	otherwise:
+		say "[first custom style][bracket]The map is already disabled.[close bracket][roman type][paragraph break]".
 
 
 Chapter 2 - Sounds
