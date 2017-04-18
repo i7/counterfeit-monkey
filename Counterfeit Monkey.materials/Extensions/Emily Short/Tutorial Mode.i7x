@@ -140,7 +140,7 @@ Carry out dropping something (this is the register dropping rule):
 
 An instructional rule (this is the teach taking rule):
 	if the teach taking rule is listed in the completed instruction list, make no decision;
-	if a take-worthy thing (called target item) is marked-visible: 
+	if a take-worthy thing (called target item) is enclosed by location:
 		let N be "[the target item]";
 		say "You can pick things up when you see them, like this: TAKE [N in upper case]." (A);
 		now the expected action is the action of taking the target item;
