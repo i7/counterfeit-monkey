@@ -20,30 +20,32 @@ The graphics window construction rule is not listed in any rulebook.
 
 Before refreshing the graphics window (this is the adjust the graphics window to accommodate the map rule):
 	if glulx graphics is supported:
-		adjust size of graphics window;
+		adjust width of the graphics window;
 	continue the activity.
 
-To force the percentage of (win - a g-window) to (percentage - a number):
-	(- glk_window_set_arrangement( glk_window_get_parent( {win}.(+ ref number +) ), winmethod_Left | winmethod_Proportional, {percentage}, GLK_NULL ); -).
-[ Note that this is currently hard-coded to use the winmethod_Left split method ]
+The dummy window is a graphics g-window spawned by the main window.
+The position of the dummy window is g-placebelow.
+The measurement of the dummy window is 0.
 
-Ideal-size is a number that varies.
+When play begins (this is the open the dummy window rule):
+	open the dummy window;
+	update the status line.
 
-To adjust size of graphics window:
-	force the percentage of graphics window to the measurement of the graphics window;
-	[ This changes the width of graphics window to 50 percent of total window ]
-	let size be the width of the graphics window;
-	now ideal-size is size;
-	if ideal-size > the maximum size of the graphics window:
-		now ideal-size is maximum size of the graphics window;
+Ideal-width is a number that varies.
+
+To adjust width of the graphics window:
+	let original width be the width of the graphics window;
+	now ideal-width is the width of the dummy window / 2;
+	if ideal-width > the maximum size of the graphics window:
+		now ideal-width is maximum size of the graphics window;
 	[ Currently maximum size of the graphics window is 722 pixels. This is large enough to never happen on most screens. ]
 	let real-ideal be 0.0;
-	now real-ideal is ideal-size;
+	now real-ideal is ideal-width;
 	let ratio be real-ideal divided by the height of the graphics window;
 	if ratio > 0.8395: [ Too low to show the entire map when scaled to window width ]
-		now ideal-size is (height of graphics window * 0.8395) to the nearest whole number;
-	if ideal-size is not size: [ The size has changed ]
-		force the size of graphics window to ideal-size;
+		now ideal-width is (height of graphics window * 0.8395) to the nearest whole number;
+	if ideal-width is not original width: [ The width has changed ]
+		force the size of graphics window to ideal-width;
 	update the status line.
 
 When identification ends (this is the open the graphics window rule):
@@ -319,7 +321,7 @@ Report looking (this is the update compass after looking rule):
 [We want the compass to stay down in a corner of the screen and not to scale up too huge if the screen is resized. One of the irritating things about Glulx window management is that it's impossible to force an aspect ratio on the player, so I have no idea whether they're going to go tall-and-skinny or short-and-wide. Testers playing in full-screen mode sometimes found that the compass got way too large and encroached on the upper part of the map if I just set the compass to be one quarter the width of the window.]
 
 To decide what number is grid-size:
-	let width-quarter be (ideal-size / 4);
+	let width-quarter be (ideal-width / 4);
 	let height-quarter be (the height of the graphics window / 4);
 	if width-quarter is greater than height-quarter:
 		now compass width is height-quarter;
@@ -397,10 +399,10 @@ Figure of background colour is the file "map-background-colour.png".
 To redraw the map and compass:
 	if glulx graphics is supported:
 		[ Draw the background at slightly more than half the window height to ensure odd heights don't leave a 1 pixel black line ]
-		let scaled-height be (ideal-size / 0.8395) to the nearest whole number;
 		let half height be (height of the graphics window / 2) + 1;
-		draw figure of background colour in graphics window at x 0 and y half height scaled to width ideal-size and height half height;
-		draw the local map of the location in graphics window at x 0 and y ((height of the graphics window - scaled-height) / 2) scaled to width ideal-size and height scaled-height;
+		draw figure of background colour in graphics window at x 0 and y half height scaled to width ideal-width and height half height;
+		let scaled-height be (ideal-width / 0.8395) to the nearest whole number;
+		draw the local map of the location in graphics window at x 0 and y ((height of the graphics window - scaled-height) / 2) scaled to width ideal-width and height scaled-height;
 		determine compass coordinates;
 		draw Figure of center-squiggle in graphics window at x x-coordinate of north and y y-coordinate of west scaled to width grid-size and height grid-size;
 		repeat with way running through directions:
