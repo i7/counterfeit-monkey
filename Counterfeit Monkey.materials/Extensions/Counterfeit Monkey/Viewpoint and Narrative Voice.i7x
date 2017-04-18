@@ -53,7 +53,6 @@ the teach taking rule response (A) is "[first custom style]You can pick things u
 The teach inventory rule response (A) is "[first custom style]There's more we can do than just looking around. To check what you're holding at the moment, try typing INVENTORY, or I for short.[roman type][run paragraph on]".
 The teach meta-features rule response (A) is "[first custom style]To save your current position, type SAVE. RESTORE allows you to bring back a game you have previously saved.[roman type][run paragraph on]".
 
-[TODO: Add back swearing and singing?]
 The standard report taking rule response (A) is "[We] [one of]take[or]get[or]pick up[or]acquire[as decreasingly likely outcomes] [the noun][if the noun is unexamined and the action is singular]. [run paragraph on][noun description][no line break][otherwise].[end if]".
 The standard report wearing rule response (A) is "[We] [put] on [the noun][if the noun is unexamined]. [run paragraph on][noun description][no line break][otherwise].[end if]".
 The standard report dropping rule response (A) is "[We] put down [the noun]."
@@ -83,6 +82,11 @@ The block burning rule response (A) is "[We] don't have a flame source, and if [
 
 To say nerve-damage:
 	say "[one of]I don't see that being a big help[or]I'd rather not, thanks[or]You're a strikingly tactile person, you know? But I don't see any purpose in it[or]Hm. Don't take this the wrong way, but do you think your need for haptic feedback is a sign of nerve damage during our synthesis? No? Okay, just checking[cycling]".
+
+Understand "bother" or "curses" or "drat" or "darn" as a mistake ("No kidding.").
+
+Understand "shit" or "fuck" or "damn" as a mistake ("Hey, calm down.").
+
 
 Section 2 - Making TRD first plural
 
