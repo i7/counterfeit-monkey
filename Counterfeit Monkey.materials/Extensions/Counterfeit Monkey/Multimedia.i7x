@@ -404,7 +404,7 @@ To redraw the map and compass:
 		determine compass coordinates;
 		draw Figure of center-squiggle in graphics window at x x-coordinate of north and y y-coordinate of west scaled to width grid-size and height grid-size;
 		repeat with way running through directions:
-			if the way is a listable exit:
+			if the way is a listable exit and the way is not inside and the way is not outside:
 				let X be the x-coordinate of way;
 				let Y be the y-coordinate of way;
 				if the room way from the location is visited:
