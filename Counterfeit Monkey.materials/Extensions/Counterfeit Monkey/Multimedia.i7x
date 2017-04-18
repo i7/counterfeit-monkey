@@ -44,7 +44,6 @@ To adjust size of graphics window:
 		now ideal-size is (height of graphics window * 0.8395) to the nearest whole number;
 	if ideal-size is not size: [ The size has changed ]
 		force the size of graphics window to ideal-size;
-		redraw the map and compass;
 	update the status line.
 
 When identification ends (this is the open the graphics window rule):
