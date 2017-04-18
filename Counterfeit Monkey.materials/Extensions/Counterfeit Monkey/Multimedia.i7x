@@ -402,8 +402,8 @@ To redraw the map and compass:
 		let half height be (height of the graphics window / 2) + 1;
 		draw figure of background colour in graphics window at x 0 and y half height scaled to width ideal-size and height half height;
 		draw the local map of the location in graphics window at x 0 and y ((height of the graphics window - scaled-height) / 2) scaled to width ideal-size and height scaled-height;
-		draw Figure of center-squiggle in graphics window at x x-coordinate of north and y y-coordinate of west scaled to width grid-size and height grid-size;
 		determine compass coordinates;
+		draw Figure of center-squiggle in graphics window at x x-coordinate of north and y y-coordinate of west scaled to width grid-size and height grid-size;
 		repeat with way running through directions:
 			if the way is a listable exit:
 				let X be the x-coordinate of way;
