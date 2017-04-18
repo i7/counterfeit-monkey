@@ -4,7 +4,7 @@
 
 An Inform 7 game by Emily Short
 
-![Cover art](./Counterfeit Monkey.materials/LittleCover.png)
+<img src="https://raw.githubusercontent.com/i7/counterfeit-monkey/master/Counterfeit%20Monkey.materials/Cover.png" width=450px alt="Cover art" />
 
 Copyright © 2012-2016 by Emily Short and others
 
