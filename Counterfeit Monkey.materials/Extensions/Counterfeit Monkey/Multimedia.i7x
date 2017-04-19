@@ -417,27 +417,27 @@ To redraw the map and compass:
 					draw the unvisited image of the way in graphics window at x X and y Y scaled to width grid-size and height grid-size;
 
 
-Understand "map on" or "graphics on" or "enable map" or "graphics" as enabling map. Enabling map is an action out of world.
+Understand "graphics on" or "enable graphics" or "graphics" as enabling graphics. Enabling graphics is an action out of world.
 
-Carry out enabling map:
+Carry out enabling graphics:
 	if the graphics window is g-present:
-		say "[first custom style][bracket]The map is already enabled.[close bracket][roman type][paragraph break]";
+		say "[first custom style][bracket]Graphics are already enabled.[close bracket][roman type][paragraph break]";
 	otherwise:
 		unless glulx graphics is supported:
 			say "[bracket]This interpreter does not support displaying graphics.[close bracket][paragraph break]" instead;
 		open the graphics window;
 		start looking for graphlinks;
-		say "[first custom style][bracket]The map is now enabled.[close bracket][roman type][paragraph break]".
+		say "[first custom style][bracket]Graphics are now enabled.[close bracket][roman type][paragraph break]".
 
-Understand "map off" or "graphics off" or "text" or "text only" or "disable map" as disabling map. Disabling map is an action out of world.
+Understand "graphics off" or "text only" as disabling graphics. Disabling graphics is an action out of world.
 
-Carry out disabling map:
-	add the teach disabling map rule to the completed instruction list, if absent;
+Carry out disabling graphics:
+	add the teach disabling graphics rule to the completed instruction list, if absent;
 	if the graphics window is g-present:
 		close the graphics window;
-		say "[first custom style][bracket]The map is now disabled.[close bracket][roman type][paragraph break]";
+		say "[first custom style][bracket]Graphics are now disabled.[close bracket][roman type][paragraph break]";
 	otherwise:
-		say "[first custom style][bracket]The map is already disabled.[close bracket][roman type][paragraph break]".
+		say "[first custom style][bracket]Graphics are already disabled.[close bracket][roman type][paragraph break]".
 
 
 Chapter 2 - Sounds

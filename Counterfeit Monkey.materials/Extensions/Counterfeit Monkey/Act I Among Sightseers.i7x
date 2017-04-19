@@ -642,15 +642,15 @@ An instructional rule (this is the teach consulting rule):
 	record "Finished tutorial mode" as an achievement;
 	rule succeeds;
 
-The teach disabling map rule is listed after the teach meta-features rule in the instructional rules.
+The teach disabling graphics rule is listed after the teach meta-features rule in the instructional rules.
 
-A last instructional rule (this is the teach disabling map rule):
-	if the teach disabling map rule is listed in the completed instruction list:
+A last instructional rule (this is the teach disabling graphics rule):
+	if the teach disabling graphics rule is listed in the completed instruction list:
 		make no decision;
 	unless glulx graphics is supported:
 		make no decision;
-	say "[first custom style]The map and compass can be switched off by typing MAP OFF. If you change your mind later, switch them back on with MAP ON.[roman type]";
-	add the teach disabling map rule to the completed instruction list, if absent;
+	say "[first custom style]The map and compass can be switched off by typing GRAPHICS OFF. If you change your mind later, switch them back on with GRAPHICS ON.[roman type]";
+	add the teach disabling graphics rule to the completed instruction list, if absent;
 	rule succeeds.
 
 The teach more compass directions rule is listed before the teach dropping rule in the instructional rules.
