@@ -374,8 +374,11 @@ A first instructional rule:
 
 Check turning on tutorial mode:
 	if "Finished tutorial mode" is a used achievement:
-		choose row with achievement of "Finished tutorial mode" in Table of Possible Achievements;
-		blank out the whole row.
+		if Monumental Staircase is visited:
+			say "[first custom style]Tutorial mode doesn't work this far into the game. Please restart before turning it on again.[roman type][paragraph break]" instead;
+		otherwise:
+			choose row with achievement of "Finished tutorial mode" in Table of Possible Achievements;
+			blank out the whole row.
 
 An instructional rule (this is the teach examining thoroughness rule):
 	if the teach examining thoroughness rule is listed in the completed instruction list:
