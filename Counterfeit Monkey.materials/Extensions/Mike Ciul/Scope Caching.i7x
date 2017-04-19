@@ -82,6 +82,10 @@ After moving floating objects (this is the cache scope after moving floating obj
 	Carry out the caching scope activity with the player;
 	Trust the scope cache until next turn.
 
+Before looking (this is the cache scope before looking rule):
+	Carry out the caching scope activity with the player;
+	Trust the scope cache until next turn.
+
 The cache scope after moving floating objects rule is listed last in the after moving floating objects rules.
 
 Volume - Interactions with Epistemology (for use with Epistemology by Eric Eve)
