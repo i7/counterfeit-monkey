@@ -372,6 +372,11 @@ A first instructional rule:
 		now tutorial mode is false;
 		stop.
 
+Check turning on tutorial mode:
+	if "Finished tutorial mode" is a used achievement:
+		choose row with achievement of "Finished tutorial mode" in Table of Possible Achievements;
+		blank out the whole row.
+
 An instructional rule (this is the teach examining thoroughness rule):
 	if the teach examining thoroughness rule is listed in the completed instruction list:
 		make no decision;
