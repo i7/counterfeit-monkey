@@ -417,7 +417,7 @@ To redraw the map and compass:
 					draw the unvisited image of the way in graphics window at x X and y Y scaled to width grid-size and height grid-size;
 
 
-Understand "map on" or "graphics on" or "enable map" or "map" or "graphics" as enabling map. Enabling map is an action out of world.
+Understand "map on" or "graphics on" or "enable map" or "graphics" as enabling map. Enabling map is an action out of world.
 
 Carry out enabling map:
 	if the graphics window is g-present:
