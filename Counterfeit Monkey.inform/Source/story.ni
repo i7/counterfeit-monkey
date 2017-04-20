@@ -6,8 +6,6 @@
 
 [A word about the source release:
 
-This source is provided for its interest value. Not all of the extensions necessary to compile the source are available to the public and it is not the author's intention to have others recompile or revise the game.
-
 There is no guarantee that any of the included code is suitable for any specific purpose, but the author grants users the right to adapt the code they find as they wish for other projects. The author's release of the source does not constitute a promise to support that code or help other authors in adapting it to their own purposes.
 
 Output text remains copyright Emily Short.]
