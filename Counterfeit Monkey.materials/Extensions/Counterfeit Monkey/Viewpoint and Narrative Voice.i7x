@@ -83,6 +83,10 @@ The block burning rule response (A) is "[We] don't have a flame source, and if [
 To say nerve-damage:
 	say "[one of]I don't see that being a big help[or]I'd rather not, thanks[or]You're a strikingly tactile person, you know? But I don't see any purpose in it[or]Hm. Don't take this the wrong way, but do you think your need for haptic feedback is a sign of nerve damage during our synthesis? No? Okay, just checking[cycling]".
 
+Understand "bother" or "curses" or "drat" or "darn" as a mistake ("No kidding.").
+
+Understand "shit" or "fuck" or "damn" as a mistake ("Hey, calm down.").
+
 Section 2 - Making TRD first plural
 
 [ Tailored Room Description assumes a second-person narrator. We use TRD's abilities heavily throughout the game to control the order and manner in which items are described, but we need to do a couple of tweaks to get the output to conform properly to requirements here.]
