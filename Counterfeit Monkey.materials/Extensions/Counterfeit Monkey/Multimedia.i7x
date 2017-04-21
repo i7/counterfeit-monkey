@@ -23,7 +23,7 @@ Before refreshing the graphics window (this is the adjust the graphics window to
 		adjust width of the graphics window;
 	continue the activity.
 
-[ The measuring window is used to measure to total width of the game window in pixel in order to adjust the width of the graphics window properly. ]
+[ The measuring window is used to measure to total width of the game window in pixels. This lets us adjust the width of the graphics window properly. ]
 The measuring window is a graphics g-window spawned by the main window.
 The position of the measuring window is g-placebelow.
 The measurement of the measuring window is 0.
