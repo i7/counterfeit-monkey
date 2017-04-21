@@ -428,7 +428,7 @@ where there seems hotel is a weakly-phrased location-questioning quip.
 
 where there seems Arbot is a weakly-phrased location-questioning quip.
 	The printed name is "where to find Arbot Maps & Antiques". The true-name is "where there seems Arbot".
-	Understand "is" or "a" or "Arbot" or "antiques" or "arbots" or "arbot's" or "maps" or "&" as where there seems arbot.  The place-sought is "an antiques store".
+	Understand "is" or "Arbot" or "antiques" or "arbots" or "arbot's" or "maps" or "&" as where there seems arbot.  The place-sought is "an antiques store".
 	The mentions-list is {geography}.
 	It is background-information.
 	The correct answer is Arbot Maps & Antiques.
