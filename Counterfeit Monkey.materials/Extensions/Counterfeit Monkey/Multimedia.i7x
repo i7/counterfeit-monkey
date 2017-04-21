@@ -23,19 +23,20 @@ Before refreshing the graphics window (this is the adjust the graphics window to
 		adjust width of the graphics window;
 	continue the activity.
 
-[ The dummy window is used to measure to total width of the game window in pixel in order to adjust the width of the graphics window properly. ]
-The dummy window is a graphics g-window spawned by the main window.
-The position of the dummy window is g-placebelow.
-The measurement of the dummy window is 0.
+[ The measuring window is used to measure to total width of the game window in pixel in order to adjust the width of the graphics window properly. ]
+The measuring window is a graphics g-window spawned by the main window.
+The position of the measuring window is g-placebelow.
+The measurement of the measuring window is 0.
 
-When play begins (this is the open the dummy window rule):
-	open the dummy window.
+When play begins (this is the open the measuring window rule):
+	if glulx graphics is supported:
+		open the measuring window.
 
 Ideal-width is a number that varies.
 
 To adjust width of the graphics window:
 	let original width be the width of the graphics window;
-	now ideal-width is the width of the dummy window / 2;
+	now ideal-width is the width of the measuring window / 2;
 	if ideal-width > the maximum size of the graphics window:
 		now ideal-width is maximum size of the graphics window;
 	[ Currently maximum size of the graphics window is 722 pixels. This is large enough to never happen on most screens. ]
