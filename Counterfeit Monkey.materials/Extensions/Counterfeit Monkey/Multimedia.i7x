@@ -419,7 +419,7 @@ To redraw the map and compass:
 					draw the unvisited image of the way in graphics window at x X and y Y scaled to width grid-size and height grid-size;
 
 
-Understand "graphics on" or "enable graphics" or "graphics" as enabling graphics. Enabling graphics is an action out of world.
+Understand "graphics on" or "enable graphics" or "graphics" or "graphics mode" as enabling graphics. Enabling graphics is an action out of world.
 
 Carry out enabling graphics:
 	if the graphics window is g-present:
@@ -431,7 +431,7 @@ Carry out enabling graphics:
 		start looking for graphlinks;
 		say "[first custom style][bracket]Graphics are now enabled.[close bracket][roman type][paragraph break]".
 
-Understand "graphics off" or "text only" as disabling graphics. Disabling graphics is an action out of world.
+Understand "graphics off" or "text only" or "text mode" as disabling graphics. Disabling graphics is an action out of world.
 
 Carry out disabling graphics:
 	add the teach disabling graphics rule to the completed instruction list, if absent;
