@@ -401,11 +401,12 @@ Figure of background colour is the file "map-background-colour.png".
 
 To redraw the map and compass:
 	if the graphics window is g-present:
-		[ Draw the background at slightly more than half the window height to ensure odd heights don't leave a 1 pixel black line ]
-		let half height be (height of the graphics window / 2) + 1;
-		draw figure of background colour in graphics window at x 0 and y half height scaled to width ideal-width and height half height;
-		let scaled-height be (ideal-width / 0.8395) to the nearest whole number;
-		draw the local map of the location in graphics window at x 0 and y ((height of the graphics window - scaled-height) / 2) scaled to width ideal-width and height scaled-height;
+		let total height be height of the graphics window;
+		let scaled height be (ideal-width / 0.8395) to the nearest whole number;
+		draw the local map of the location in graphics window at x 0 and y ((total height - scaled height) / 2) scaled to width ideal-width and height scaled height;
+		[ Draw the blue background below the map and add a pixel to the height to ensure that odd heights don't leave a 1 pixel black line ]
+		let padding height be (total height - scaled height) / 2 + 1;
+		draw figure of background colour in graphics window at x 0 and y (((total height - scaled height) / 2) + scaled height) scaled to width ideal-width and height padding height;
 		determine compass coordinates;
 		draw Figure of center-squiggle in graphics window at x x-coordinate of north and y y-coordinate of west scaled to width grid-size and height grid-size;
 		repeat with way running through directions:
