@@ -2271,7 +2271,7 @@ what he likes to eat is a questioning quip. The comment is "'What kinds of foods
 where he gets Mediterranean foods is a questioning quip. The comment is "'Where do you go for [if immediately]that kind of [otherwise]Mediterranean [end if]food?'".
 	Understand "ticket-taker" as where he gets Mediterranean foods.
 	The mentions-list is {food}.
-	The reply is "'The Babel Cafe is good,' he says. 'There are always a lot of university students over there, though, so it gets kind of crowded sometimes.'".
+	The reply is "'The Babel Café is good,' he says. 'There are always a lot of university students over there, though, so it gets kind of crowded sometimes.'".
 	It quip-supplies the ticket-taker.
 	It indirectly-follows what he likes to eat
 
