@@ -2,7 +2,8 @@ Version 2/160606 of Threaded Conversation by Emily Short begins here.
 
 "A conversation system tracking facts known, phrases spoken, and subjects of conversation."
 
-"modified from Threaded Conversation by Emily Short and based on Alabaster by Emily Short, et. al."
+[ WARNING: This beta version is updated to work with the Inform 6M62 port of Counterfeit Monkey. For any other purpose, the latest version of Threaded Conversation by Chris Conley is likely to be better - Petter Sjölund ]
+["modified from Threaded Conversation by Emily Short and based on Alabaster by Emily Short, et. al."]
 
 Include Basic Screen Effects by Emily Short.
 Include Very Complex Listing by Counterfeit Monkey.

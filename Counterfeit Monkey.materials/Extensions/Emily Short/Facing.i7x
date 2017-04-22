@@ -218,7 +218,7 @@ Version 9 updates for 6E59, removing deprecated features. It also removes a numb
 
 Version 10 updates for adaptive text and responses.
 
-[Version 11/160611 Counterfeit Monkey version. Updated to work alongside Locksmith]
+Version 11/160611 Small fix to make it work alongside Locksmith by Emily Short - Petter Sjölund
 
 Example: * Directions and Doors - Allowing the player and his sidekick Clark to see into various rooms.
 

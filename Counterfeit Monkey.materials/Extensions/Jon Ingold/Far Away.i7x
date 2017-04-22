@@ -2,6 +2,8 @@ Version 5/160517 of Far away by Jon Ingold begins here.
 
 "Creates an adjective for far-off items which cannot be touched."
 
+[ Updated to work with the Inform 6M62 port of Counterfeit Monkey. Removed deprecated features - Petter Sjölund ]
+
 Use far away extension translates as (- Constant FARAWAY; -).  
 Use far away extension.
 

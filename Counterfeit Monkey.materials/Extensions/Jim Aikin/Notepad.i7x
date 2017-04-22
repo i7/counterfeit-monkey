@@ -1,6 +1,6 @@
 Version 4/160517 of Notepad by Jim Aikin begins here.
 
-[Updated allowed pens to be relation for Counterfeit Monkey, everything else broken - Petter Sjölund]
+[ Updated allowed pens to be a relation in order to make it work with the 6M62 port of Counterfeit Monkey. Other functionality not tested - Petter Sjölund ]
 
 "A system for creating an in-game notepad that the player can write on."
 

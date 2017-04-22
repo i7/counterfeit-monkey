@@ -1,10 +1,12 @@
-Version 2/120725 of Scope Caching by Mike Ciul begins here.
+Version 3/160611 of Scope Caching by Mike Ciul begins here.
 
 "Gives things the 'marked-visible' property, to check the visibility of something without repeating the entire scope loop each time. Works with Epistemology by Eric Eve, Conditional Backdrops by Mike Ciul, and Remembering by Aaron Reed."
 
 "based on code provided by Andrew Plotkin"
 
 [and Jimmy Maher? http://www.intfiction.org/forum/viewtopic.php?f=7&t=3241&start=40]
+
+[ Updated to work with the Inform 6M62 port of Counterfeit Monkey. Not tested with Epistemology or Remembering - Petter Sjölund ]
 
 Use authorial modesty.
 
