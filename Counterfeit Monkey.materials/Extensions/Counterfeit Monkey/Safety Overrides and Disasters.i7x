@@ -19,7 +19,7 @@ A dangerous destruction rule for something that encloses the current interlocuto
 	reset the interlocutor;
 
 A dangerous destruction rule for something (called changed seat) which encloses a person (called the irate victim):
-	if the irate victim is Brock:
+	if the irate victim is Brock or the irate victim is fake:
 		make no decision;
 	if the irate victim is the player:
 		say "In a blink of an eye, [the changed seat] [cease] to exist.
