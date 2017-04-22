@@ -1,6 +1,8 @@
-Version 1/160622 of Ultra Undo (for Glulx only) by Dannii Willis begins here.
+Version 1/161017 of Ultra Undo (for Glulx only) by Dannii Willis begins here.
 
 "Handles undo using external files for very big story files"
+
+Include Version 7 of Glulx Entry Points by Emily Short.
 
 Use maximum file based undo count of at least 10 translates as (- Constant ULTRA_UNDO_MAX_COUNT = {N}; -). 
 
@@ -11,6 +13,31 @@ Include (-
 ! Our undo counter
 Global ultra_undo_counter = 0;
 Global ultra_undo_needed = 0;
+
+! A fileref to a tempfile to store ultra_undo_counter across restores
+Global ultra_undo_counter_fileref = 0;
+Constant UU_COUNTER_ROCK = 999;
+
+! Array of fileref values to keep track of temporary undo files
+Array undo_array --> ULTRA_UNDO_MAX_COUNT;
+Constant UU_FILE_ROCK_0 = 1000;
+
+[ Init_Ultra_Undo_Counter; 
+	!Initiate Ultra Undo Counter fileref
+	if ( ultra_undo_needed == 1)
+	{
+		ultra_undo_counter_fileref = glk_fileref_create_temp( fileusage_SavedGame + fileusage_BinaryMode, UU_COUNTER_ROCK );
+		if ( ultra_undo_counter_fileref ~= 0 ) Write_Ultra_Undo_Counter_File(); 
+	}
+];
+
+[ Write_Ultra_Undo_Counter_File str; 
+	str = glk_stream_open_file( ultra_undo_counter_fileref, filemode_Write, 0 );
+	if (str == 0) rfalse;
+
+	glk_put_char_stream_uni( str, ultra_undo_counter );
+	glk_stream_close( str, 0 );
+];
 
 ! Test if the VM is able to perform an undo. This is necessary because Git won't tell us that it can't.
 [ Ultra_Undo_Test res;
@@ -74,26 +101,30 @@ Global ultra_undo_needed = 0;
 ];
 
 [ Ultra_Undo fref res;
+	Write_Ultra_Undo_Counter_File(); 
 	! Restore from our file
-	fref = glk_fileref_create_by_name( fileusage_SavedGame + fileusage_BinaryMode, Glulx_ChangeAnyToCString( Ultra_Undo_Filename ), 0 );
+	fref = undo_array --> Ultra_Undo_Index();
 	if ( fref == 0 ) jump RFailed;
 	gg_savestr = glk_stream_open_file( fref, $02, GG_SAVESTR_ROCK );
-	glk_fileref_destroy( fref );
 	if ( gg_savestr == 0 ) jump RFailed;
 	@restore gg_savestr res;
 	glk_stream_close( gg_savestr, 0 );
 	gg_savestr = 0;
 	.RFailed;
-	Ultra_Undo_Delete_All();
+	ultra_undo_counter = 0;
 	return 0;
 ];
 
 [ Ultra_Save_Undo fref res;
 	ultra_undo_counter++;
-	fref = glk_fileref_create_by_name( fileusage_SavedGame + fileusage_BinaryMode, Glulx_ChangeAnyToCString( Ultra_Undo_Filename ), 0 );
+	Write_Ultra_Undo_Counter_File();
+	! Delete old save file
+	Ultra_Undo_Delete( Ultra_Undo_Index() );
+	! Create an undo tempfile and put it in undo_array
+	undo_array --> Ultra_Undo_Index() = glk_fileref_create_temp( fileusage_SavedGame + fileusage_BinaryMode, UU_FILE_ROCK_0 + Ultra_Undo_Index() );
+	fref = undo_array --> Ultra_Undo_Index();
 	if ( fref == 0 ) jump SFailed;
 	gg_savestr = glk_stream_open_file( fref, $01, GG_SAVESTR_ROCK );
-	glk_fileref_destroy( fref );
 	if ( gg_savestr == 0 ) jump SFailed;
 	@save gg_savestr res;
 	if ( res == -1 )
@@ -104,7 +135,7 @@ Global ultra_undo_needed = 0;
 		glk_stream_close( gg_savestr, 0 ); ! stream_close
 		gg_savestr = 0;
 		! Delete this save file
-		Ultra_Undo_Delete( ultra_undo_counter );
+		Ultra_Undo_Delete( Ultra_Undo_Index() );
 		! Remember to decrement the counter!
 		ultra_undo_counter--;
 		return 2;
@@ -117,21 +148,12 @@ Global ultra_undo_needed = 0;
 	return 0;
 ];
 
-[ Ultra_Undo_Filename ix;
-	print "undo-";
-	for ( ix=8 : ix + 2 <= UUID_ARRAY->0 : ix++ )
-	{
-		print (char) UUID_ARRAY->ix;
-	}
-	! Take the mod of ultra_undo_counter to keep the number of files to ULTRA_UNDO_MAX_COUNT
-	print "-", ( ultra_undo_counter % ULTRA_UNDO_MAX_COUNT );
+[ Ultra_Undo_Index;
+	return ( ultra_undo_counter % ULTRA_UNDO_MAX_COUNT );
 ];
 
 [ Ultra_Undo_Delete val fref exists;
-	@push ultra_undo_counter;
-	ultra_undo_counter = val;
-	fref = glk_fileref_create_by_name( fileusage_SavedGame + fileusage_BinaryMode, Glulx_ChangeAnyToCString( Ultra_Undo_Filename ), 0 );
-	@pull ultra_undo_counter;
+	fref = undo_array --> val;
 	if ( fref ~= 0 )
 	{
 		if ( glk_fileref_does_file_exist( fref ) )
@@ -140,26 +162,80 @@ Global ultra_undo_needed = 0;
 			exists = 1;
 		}
 		glk_fileref_destroy( fref );
-	}
-	if ( exists == 0 && val == ultra_undo_counter )
-	{
-		ultra_undo_counter = 1;
+		undo_array --> val = 0;
 	}
 	rfalse;
 ];
 
+! Delete all known external files and destroy all filerefs
 [ Ultra_Undo_Delete_All ix;
-	for (ix=1 : ix <= ULTRA_UNDO_MAX_COUNT : ix++)
+	for ( ix = 0 : ix < ULTRA_UNDO_MAX_COUNT : ix++ )
 	{
 		Ultra_Undo_Delete( ix );
-
 	}
+	if ( glk_fileref_does_file_exist( ultra_undo_counter_fileref ) )
+		glk_fileref_delete_file( ultra_undo_counter_fileref );
+	glk_fileref_destroy( ultra_undo_counter_fileref );
 	ultra_undo_counter = 0;
 	rfalse;
 ];
 
 -) instead of "Undo" in "Glulx.i6t".
 
+Section - Items to slot into HandleGlkEvent and IdentifyGlkObject
+
+[These rules belong to rulebooks defined in Glulx Entry Points.]
+
+A glulx zeroing-reference rule (this is the removing references to uufiles rule):
+	zero undo array.
+
+To zero undo array:
+	(- Zero_Undo_Array(); -)
+
+Include (-
+
+[ Zero_Undo_Array ix;
+	if ( ultra_undo_needed == 1 )
+	{
+		for ( ix = 0 : ix < ULTRA_UNDO_MAX_COUNT : ix++ )
+		{
+			undo_array --> ix = 0;
+		}
+		ultra_undo_counter_fileref = 0;
+	}
+];
+
+-)
+
+
+A glulx resetting-filerefs rule (this is the restoring uufiles rule):
+	identify glulx rock.
+
+To identify glulx rock:
+	(- Restoring_Undo_Array(); -)
+
+Include (-
+
+[ Restoring_Undo_Array str;
+	if ( ultra_undo_needed == 1 )
+	{
+		! Finding and restoring all filerefs in undo_array
+		if ( ( (+current glulx rock+) >= UU_FILE_ROCK_0 ) && ( (+current glulx rock+) < ( UU_FILE_ROCK_0 + ULTRA_UNDO_MAX_COUNT ) ) )
+		{
+			undo_array --> ( (+current glulx rock+) - UU_FILE_ROCK_0 ) = (+ current glulx rock-ref +);
+
+		}		! Finding and restoring ultra_undo_counter_fileref
+		else if ( (+current glulx rock+) == UU_COUNTER_ROCK )
+		{
+			ultra_undo_counter_fileref = (+ current glulx rock-ref +);
+			str = glk_stream_open_file( ultra_undo_counter_fileref, filemode_Read, 0 );
+			ultra_undo_counter = glk_get_char_stream_uni(str);
+			glk_stream_close( str, 0 );
+		}
+	}
+];
+
+-)
 
 
 Section - Tests
@@ -168,6 +244,10 @@ Section - Tests
 
 The Ultra Undo Test rule translates into I6 as "Ultra_Undo_Test".
 The Ultra Undo Test rule is listed last in the startup rules.
+
+The init Ultra Undo counter rule translates into I6 as "Init_Ultra_Undo_Counter".
+The init Ultra Undo counter rule is listed last in the startup rules.
+
 
 [ Rerun the tests if we load a saved game. ]
 
@@ -189,7 +269,7 @@ Include (-
 	@save gg_savestr res;
 	if (res == -1) {
 		! The player actually just typed "restore". We're going to print
-		!  GL__M(##Restore,2); the Z-Code Inform library does this correctly
+		!  RESTORE_THE_GAME_RM('B'); the Z-Code Inform library does this correctly
 		! now. But first, we have to recover all the Glk objects; the values
 		! in our global variables are all wrong.
 		Ultra_Undo_Test();
@@ -212,7 +292,7 @@ Include (-
 
 Section - Cleaning up
 
-[ Clean up after ourselves when the player quits - delete all the external files ]
+[ Clean up after ourselves when the player quits or restarts - delete all the external files ]
 
 Include (-
 
@@ -221,17 +301,27 @@ Include (-
 	QUIT_THE_GAME_RM('A');
 	if ( YesOrNo()~=0 )
 	{
-		Ultra_Undo_Delete_All();
+		if ( ultra_undo_needed == 1 ) Ultra_Undo_Delete_All();
 		quit;
 	}
 ];
 
 -) instead of "Quit The Game Rule" in "Glulx.i6t".
 
-[ Clean up when the game first starts ]
+Include (-
 
-The delete Ultra Undo savefiles rule is listed in the after starting the virtual machine rules.
-The delete Ultra Undo savefiles rule translates into I6 as "Ultra_Undo_Delete_All".
+[ RESTART_THE_GAME_R;
+	if (actor ~= player) rfalse;
+	RESTART_THE_GAME_RM('A');
+	if ( YesOrNo() ~= 0 )
+	{
+		if ( ultra_undo_needed == 1 ) Ultra_Undo_Delete_All();
+		@restart;
+		RESTART_THE_GAME_RM('B'); new_line;
+	}
+];
+
+-) instead of "Restart The Game Rule" in "Glulx.i6t".
 
 
 
