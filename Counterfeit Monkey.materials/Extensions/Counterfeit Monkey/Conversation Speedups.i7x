@@ -150,6 +150,7 @@ Include (-
 	[ IsPeripheral quip;
 		if (quip.(+ listed-plausible +)) rtrue;
 		if (~~(quip.(+ flagged-ready +))) rfalse;
+		if (~~(quip.(+ listed +))) rfalse;
 		if (quip ofclass (+ location-questioning quip +)) rfalse;
 		if (quip ofclass (+ demonstration quip +)) rfalse;
 		if (quip ofclass (+ purchasing quip +)) rfalse;
