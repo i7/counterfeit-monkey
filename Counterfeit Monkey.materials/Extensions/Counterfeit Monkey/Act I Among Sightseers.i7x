@@ -227,6 +227,12 @@ Some font t-shirts are part of the clothing shops. Understand "t-shirt" or "shir
 Some ethnic bodices are part of the clothing shops. Understand "bodice" as the bodices. They are floppy and wearable. The description is "Closed with ribbons and laces, to be worn over frilly white shirts." Understand "ribbons" or "laces" or "ribbon" or "lace" as the ethnic bodices. They cover the torso-area.
 A mourning dress is part of the clothing shops. It is floppy and wearable. The description is a "A black vintage gown trimmed with much lace and dripping with jet beads." Understand "beads" or "jet" or "bead" or "black" or "vintage" or "gown" as the mourning dress. It covers the torso-area.
 
+Rule for printing the name of the mourning dress while examining the clothing shops:
+	say "a mourning dress".
+
+Rule for printing the name of the morning dress while examining the clothing shops:
+	say "a morning dress".
+
 Check waving the letter-remover at font t-shirts when the current setting of the letter-remover is "r":
 	say "No doubt this would be a cogent statement about the commercial[ization] of the body, if it weren't for the fact that T-SHIT doesn't describe anything anyone with a functional colon has ever heard of." instead.
 
