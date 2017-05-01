@@ -2,7 +2,9 @@ Version 1/160622 of Ultra Undo (for Glulx only) by Dannii Willis begins here.
 
 "Handles undo using external files for very big story files"
 
-Use maximum file based undo count of at least 10 translates as (- Constant ULTRA_UNDO_MAX_COUNT = {N}; -). 
+Use maximum file based undo count of at least 5 translates as (- Constant ULTRA_UNDO_MAX_COUNT = {N}; -).
+
+Use file based undo translates as (- Constant ULTRA_UNDO_ALWAYS_ON; -).
 
 [ If the interpreter cannot perform an undo for us, store the state using external files. We can do this by hijacking VM_Undo and VM_Save_Undo. ]
 
@@ -14,6 +16,12 @@ Global ultra_undo_needed = 0;
 
 ! Test if the VM is able to perform an undo. This is necessary because Git won't tell us that it can't.
 [ Ultra_Undo_Test res;
+
+#ifdef ULTRA_UNDO_ALWAYS_ON;
+	ultra_undo_needed = 1;
+	rfalse;
+#endif;
+
 	@saveundo res;
 	if ( res == 1 ) ! Failure
 	{
