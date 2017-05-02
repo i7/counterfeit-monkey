@@ -475,7 +475,7 @@ Rule for listing plausible quips (this is the standard quip plausibility rule):
 			carry out the quip-introducing activity with the output item entry;
 		[This could have blanked some rows out, so we need to check again:]
 		if special listing count is positive,
-			say "[quip-suggestion-phrase][the prepared list delimited in disjunctive style]." (A);
+			say "[quip-suggestion-phrase][the prepared list delimited in disjunctive style][one of]. [paragraph break][first custom style][bracket]Type TOPICS to repeat current conversation topics and suggest new ones.[close bracket][roman type][or].[stopping][line break]" (A);
 
 Before printing the name of a questioning quip while listing plausible quips or listing peripheral quips or listing recommended quips (this is the prefix-ask rule):
 	say "ask " (A).
