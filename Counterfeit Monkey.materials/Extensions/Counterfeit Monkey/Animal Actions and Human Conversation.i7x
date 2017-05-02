@@ -786,7 +786,7 @@ why the car does not run is a questioning quip.
 	[Every car is mentioned by why the car does not run.]
 
 where there seems a car-2 is an unlisted repeatable questioning quip.
-	Understand "buy car" or "car" or "there is" or "buy a car" or "where i could" as where there seems a car-2. The printed name is "where to find a car". The true-name is "where there seems a car-2".
+	Understand "buy car" or "car" or "there is" or "buy a car" or "i could" or "we could" as where there seems a car-2. The printed name is "where to find a car". The true-name is "where there seems a car-2".
 	It quip-supplies the mechanic.
 	The comment is "'I'm looking for a car,' we say.".
 	The reply is "'Sorry,' he mumbles. '[one of]I fix them. I don't sell them[or]Perhaps you should ask somebody else[stopping].'".
@@ -851,6 +851,8 @@ An availability rule for where oil might be:
 	make no decision.
 
 where oil might be is an unlisted questioning quip.
+	The printed name is "where we might find oil".
+	Understand "find" or "some" or "could" or "there is" or "we" as where oil might be.
 	The comment is "'Do you have any oil? Or do you know where we could find some?'"
 	The reply is "[one of]He looks stumped for a minute, then offers, 'Comes in a can.'[or]'Yup, likely there's a source of oil around somewhere.'[stopping]".
 	It quip-supplies the mechanic.
@@ -864,6 +866,8 @@ An availability rule for where fuel might be:
 
 where fuel might be is an unlisted questioning quip.
 	The mentions-list is {gas, fuel}.
+	The printed name is "where we could find some fuel".
+	Understand "we" or "could" or "find" or "some" or "there is" or "gas" as where fuel might be.
 	The comment is "'Do you have any [one of]gas[or]fuel[at random]? Or do you know where we could find some?'"
 	The reply is "He chews on his tongue a couple of times and then notes that he heard [one of]gas comes from old plants[or]fuel was usually found by digging in the ground[at random]."
 	It quip-supplies the mechanic.
