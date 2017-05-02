@@ -65,9 +65,9 @@ The the Smarter Parser simplify punctuation rule is not listed in any rulebook.
 
 When play begins (this is the change smarter parse messages rule):
 	choose row with SP rule of asking unparseable questions rule in the Table of Smarter Parser Messages;
-	now the message entry is "If you're trying to converse with other characters, the suggestions in the text provide possible phrasings; so if you read 'I might ask about lentils.', you might phrase your command ASK ABOUT LENTILS. Introducing other words or variant phrasings that weren't part of the suggestion may confuse the game.
+	now the message entry is "[one of]If you're trying to converse with other characters, the suggestions in the text provide possible phrasings; so if you read 'I might ask about lentils.', you might phrase your command ASK ABOUT LENTILS. Introducing other words or variant phrasings that weren't part of the suggestion may confuse the game.
 
-Alternatively, if you just want to take an action in the game world, try giving a direct command, such as EXAMINE THE ASP or WAVE THE P-REMOVER AT THE PHONEY."
+Alternatively, if you just want to take an action in the game world, try giving a direct command, such as EXAMINE THE ASP or WAVE THE P-REMOVER AT THE PHONEY[or]That does not seem to be a topic of conversation at the moment[stopping]."
 
 Section 2 - Additional Parsing Lines for USE
 
