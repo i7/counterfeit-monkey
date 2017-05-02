@@ -2277,7 +2277,7 @@ where he gets Mediterranean foods is a questioning quip. The comment is "'Where 
 	The mentions-list is {food}.
 	The reply is "'The Babel Café is good,' he says. 'There are always a lot of university students over there, though, so it gets kind of crowded sometimes.'".
 	It quip-supplies the ticket-taker.
-	It indirectly-follows what he likes to eat
+	It indirectly-follows what he likes to eat.
 
 Instead of the ticket-taker discussing what he likes to eat when the ostensible motive is generic-truth:
 	try the ticket-taker discussing mutual-embarrassment.
