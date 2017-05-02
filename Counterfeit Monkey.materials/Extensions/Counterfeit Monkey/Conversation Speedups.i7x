@@ -150,7 +150,6 @@ Include (-
 	[ IsPeripheral quip;
 		if (quip.(+ listed-plausible +)) rtrue;
 		if (~~(quip.(+ flagged-ready +))) rfalse;
-		if (~~(quip.(+ listed +))) rfalse;
 		if (quip ofclass (+ location-questioning quip +)) rfalse;
 		if (quip ofclass (+ demonstration quip +)) rfalse;
 		if (quip ofclass (+ purchasing quip +)) rfalse;
@@ -159,6 +158,8 @@ Include (-
 		if ((real_location == (+ hesychius street +)) && (MyMentions(quip, (+ food +))))
 			if (quip == (+ recommend other vegetables +)) rtrue;
 			else rfalse;
+		if ((real_location == (+ high street +)) && ((quip == (+ where there seems a car-2 +)) || (quip == (+ where oil might be +)) || (quip == (+ where fuel might be +))))
+			rfalse;
 		rtrue;
 	];
 
