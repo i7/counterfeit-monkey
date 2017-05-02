@@ -560,6 +560,8 @@ INVENTORY TALL, INVENTORY WIDE and INVENTORY UTILITARIAN change the way inventor
 
 In a location, LOOK CAREFULLY will print the room description with object names in bold. If you would like to experience the whole game this way, try HIGHLIGHTING ON.
 
+If your interpreter supports graphics, GRAPHICS OFF will hide the map and GRAPHICS ON will show it again.
+
 GO TO a location will take us to the place named, even if that's some distance away.
 
 EXITS will list the currently available exits as text. You should also be able to see these in the compass rose of the graphical window, assuming you are using one.
@@ -571,6 +573,8 @@ TALK TO GIRL or GIRL, HELLO will start a conversation with a person who isn't al
 ASK ABOUT or TELL ABOUT let us talk about subjects that interest us, once the conversation has started. ASK GIRL ABOUT CHECKERS or TELL GIRL ABOUT ME will work, as will the more abbreviated forms ASK ABOUT CHECKERS, TELL ABOUT ME, or even just A CHECKERS and T ME.
 
 There will sometimes be prompts, like 'You could ask about whether margarine is better than butter.', in which case ASK WHETHER MARGARINE IS BETTER THAN BUTTER will work, but so will a shorter subset like ASK ABOUT BUTTER, as long as it uniquely identifies the question you want to ask. The topics listed during a conversation are not the complete list of available things to say, just the list of things that seem most relevant at the moment.
+
+The TOPICS command will repeat the current topics of conversation and suggest new ones.
 
 If you'd like to play in hard mode, with some alternate puzzle solutions removed and other puzzles changed entirely, type HARD during the first few rooms of the game. After that point, it is too late to qualify for hard mode, and you'll need to restart if you wish to activate it."
 	"Testing Credits"	--	"I had a great team of testers to work over the gameplay: Sam Kabo Ashwell, Richard Evans, John Ferguson, Admiral Jota, Jacqueline A. Lott, Kate McKee, Jim Munroe, Mark Musante, Chris Nelson, Graham Nelson, Peter Nelson, Toby Nelson, Zach Samuels, and David Welbourn. As well as catching many errors, the team suggested additional responses and easter eggs, provided valuable help with puzzle design and story development, and offered moral support.
