@@ -1,4 +1,4 @@
-Hard-coded quip cache by Counterfeit Monkey begins here.
+Hard-coded Quip Cache by Counterfeit Monkey begins here.
 
 Use authorial modesty.
 
@@ -446,4 +446,4 @@ how fusion happens indirectly-follows gel-shot.
 whether the protesters feel the same way indirectly-follows thing-about-democracy.
 what Atlantida kens concerning synthesis indirectly-follows how to fix the fusion.
 
-Hard-coded quip cache end here.
+Hard-coded Quip Cache end here.
