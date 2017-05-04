@@ -78,7 +78,6 @@ whether Brock-man seemed upset is  dead-ended and  a quip.
 why Arbot now sells antiques is  dead-ended and  a quip.
 what types of antiques they sell here is  dead-ended and shallowly-buried and a quip.
 what the map legend means is  dead-ended and shallowly-buried and a quip.
-thank kate is  dead-ended and shallowly-buried and a quip.
 offer the ticket is  dead-ended and shallowly-buried and a quip.
 offer the ticket redundantly is  dead-ended and shallowly-buried and a quip.
 when the movie starts is   shallowly-buried and a quip.
@@ -211,7 +210,6 @@ whether Professor Higgate would translate part of the novel is upwardly-restrict
 whether she encountered activists is  dead-ended and shallowly-buried and a quip.
 whether she might let us into the language studies seminar room is  dead-ended and shallowly-buried and a quip.
 how we might return a book is  dead-ended and shallowly-buried and a quip.
-thank Professor Higgate is  dead-ended and shallowly-buried and a quip.
 which conlangs she kens is  dead-ended and shallowly-buried and a quip.
 make up some excuse is upwardly-restrictive and   a quip.
 that we just dropped by to meet him is upwardly-restrictive and dead-ended and  a quip.

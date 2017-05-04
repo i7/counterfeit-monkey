@@ -1877,7 +1877,7 @@ Rule for beat-producing when the current interlocutor is Kate:
 Kate answers, briefly assures the person on the other end of the line that the shop is indeed open today, and hangs up[as decreasingly likely outcomes].[run paragraph on]".
 
 
-The greeting of Kate is "'Welcome to Arbot,' says Kate. 'Feel free to browse and ask me any questions you may have about the merchandise[change-kate-greeting][thank-kate].'"
+The greeting of Kate is "'Welcome to Arbot,' says Kate. 'Feel free to browse and ask me any questions you may have about the merchandise[change-kate-greeting].'"
 The generic adversative of Kate is "[one of]ah but[at random]".
 The generic confrontational of Kate is "one moment".
 
@@ -2056,13 +2056,6 @@ Sanity-check showing the map to Kate when the legend is part of the map:
 	say "Now that it's obvious this is a secret message, you're not exactly going to show it to all and sundry." instead.
 Sanity-check showing the legend to Kate:
 	say "Now that it's obvious this is a secret message, you're not exactly going to show it to all and sundry." instead.
-
-thank kate is an unlisted thanking quip.
-	The mentions-list is {Kate}.
-	It assumes thank-kate.
-	The comment is "'[one of]Thank you[or]Thanks again[stopping],' [we] say.".
-	The reply is "She smiles. [one of]'No problem.'[or]'You don't have to thank me,' she says.[or]'That's enough!'[stopping]".
-	It quip-supplies Kate.
 
 Test Kate with "tutorial off / z / ask about brock / ask about demonstration / ask about antiques / ask about map / buy map / z / z / z / look / x map / x legend / a legend / show map to kate" in Arbot Maps & Antiques.
 Test Kate2 with "tutorial off / z / x maps / buy map / ask about brock / ask about antiques / ask about demonstration / ask about brock / z / z / z/ look / a legend / x map / x legend / a legend / show map to kate" in Arbot Maps & Antiques.
@@ -4607,7 +4600,7 @@ Report Professor Higgate unlocking the seminar door with something:
 	say "She fiddles with her keys for a moment before finding the right one. [run paragraph on]" instead.
 
 Report Professor Higgate opening the seminar door:
-	say "[thank-higgate]'Here we you go,' she says, pushing the door open." instead.
+	say "'Here we you go,' she says, pushing the door open." instead.
 
 Report Professor Higgate getting off the chair:
 	say "Higgate stands, patting herself down as though worried she has forgotten something." instead.
@@ -4676,14 +4669,6 @@ Before going from Higgate's office when the paint is released and the player doe
 paint-recycling is an NPC-directed quip.
 	The reply is "[one of]'Wait [--] weren't you going to dispose of the paint for me?'[or]'Do take the paint with you now if you want it,' she says. 'I may be gone later.'[or]'You're forgetting the paint again,' she says.[stopping]". Before going from Higgate's office when the paint is released and the player does not carry the paint:
 	try Professor Higgate discussing paint-recycling instead. ]
-
-thank Professor Higgate is an unlisted thanking quip.
-	The mentions-list is {Professor Higgate}.
-	It assumes thank-higgate.
-	The comment is "'Thank you,' we say.".
-	The reply is "'[one of]Don't worry about it,[or]That's enough![stopping]' she replies.".
-	It quip-supplies Professor Higgate.
-
 
 which conlangs she kens is a questioning quip.
 	The printed name is "which conlangs she knows". The true-name is "which conlangs she kens".

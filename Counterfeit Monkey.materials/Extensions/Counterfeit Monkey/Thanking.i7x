@@ -12,7 +12,7 @@ Instead of thanking someone (this is the standard thanks redirection rule):
 		if Q quip-supplies the noun and Q is available:
 			try discussing Q;
 			the rule succeeds;
-	say "[one of][We] have no reason to thank [the noun].[or]What [regarding the noun][have] [they] done for us lately?[or]For what?[at random]";
+	say "'[one of]Thanks[or]Thank you[at random],' [we] say.".
 
 
 Before thanking something who is not the current interlocutor (this is the implicitly greet before thanking rule):
