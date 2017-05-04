@@ -683,7 +683,7 @@ Before putting gel on the bead:
 			try dropping the bead.
 
 Report dropping the bead:
-	say "[We] set the bead down on the [floor]." instead.
+	say "[We] set the bead down on the [ground]." instead.
 
 Before waving the letter-remover at the fancy bed when Phyllida is on the fancy bed:
 	say "She sees what [we] [are] up to.";
