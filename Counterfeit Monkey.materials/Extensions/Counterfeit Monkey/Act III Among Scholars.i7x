@@ -1908,7 +1908,7 @@ The conference poster is a fixed in place thing in Lecture Hall 1. Understand "t
 [After we've changed the poster once, it should stop being stuck in place.]
 A dangerous destruction rule for the conference poster:
 	now the conference poster is not fixed in place;
-	now the initial appearance of the conference poster is "A conference poster lies curled on the ground.";
+	now the initial appearance of the conference poster is "A conference poster lies curled on the [ground].";
 	now the description of the conference poster is "The poster announces a conference on cultural reactions to linguistic change. It is being held in Nice the day after tomorrow, with Professor Waterstone as keynote speaker, on the topic of 'homonym shame'. It's the usual sort of thing: the conference title set in Papyrus font; a stock daguerreotype of a portly woman holding a letter-remover the size of a policeman's cosh; inset pictures of the major speakers, with pride of place for Waterstone himself.".
 
 Sanity-check looking under the conference poster when the conference poster is fixed in place:

@@ -870,7 +870,7 @@ Instead of pushing or pulling the wheel:
 	say "The wheel contraption moves a few millimeters to the side. Of course, we could always spin it and see what happens."
 
 Instead of looking under the wheel:
-	say "It looks heavy, but is not actually attached to the ground."
+	say "It looks heavy, but is not actually attached to the [ground]."
 
 Instead of listening to the wheel:
 	say "When the wheel is spinning, the flipper makes a satisfying [i]thup thup thup[/i] noise as it flips from one slot to the next."
@@ -1480,7 +1480,7 @@ Not to worry. I won't turn you in. I can hardly afford to, can I?[or][stopping]"
 
 A dangerous destruction rule for the poster:
 	now the poster is not fixed in place;
-	now the initial appearance of the poster is "The blue and orange warning [poster] is rolled up on the ground nearby."
+	now the initial appearance of the poster is "The blue and orange warning [poster] is rolled up on the [ground] nearby."
 
 Instead of taking or attacking the poster when the poster is in Monumental Staircase:
 	if the poser is seen:
@@ -1599,7 +1599,7 @@ topic	reply
 
 
 Every turn when the attendant carries a louse:
-	say "The attendant screams, and performs some kind of strange dance, first brushing at her skin and then stomping at something on the ground. (So much for the louse, I think.)
+	say "The attendant screams, and performs some kind of strange dance, first brushing at her skin and then stomping at something on the [ground]. (So much for the louse, I think.)
 
 She then tears out of the room, leaving the room unattended. Unfortunately, places like this don't keep anything of value out front anyway, so your natural gift for larceny hasn't much scope here.";
 	move the louse to the repository;

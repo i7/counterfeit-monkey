@@ -1418,7 +1418,7 @@ To gel-convert (item - an object):
 		if item is hoses or item is hoe:
 			say "[The item] [become] [a list of things which proffer the item], redecorating the fountain. [run paragraph on]";
 		otherwise:
-			say "With an audible SPLORT, [the item] [become] [a list of things which proffer the item][if the destination is the location and the holder of the item is not the location] and falls to the ground[end if]. ";
+			say "With an audible SPLORT, [the item] [become] [a list of things which proffer the item][if the destination is the location and the holder of the item is not the location] and falls to the [ground][end if]. ";
 			if description needed is true:
 				say "[parent description]";
 		say "[one of][paragraph break]I'm starting to understand how you got into all the places you got into. Not that I judge you or your line of work, of course. [or][stopping][paragraph break]";

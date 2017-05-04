@@ -292,7 +292,7 @@ To say in-on the (item - a thing):
 
 To say placement of (item - a thing):
 	if the item is in a room:
-		say "on the ground";
+		say "on the [ground]";
 	otherwise if someone (called owner) carries the item:
 		say "carried by [you or the owner]";
 	otherwise if someone (called owner) wears the item:

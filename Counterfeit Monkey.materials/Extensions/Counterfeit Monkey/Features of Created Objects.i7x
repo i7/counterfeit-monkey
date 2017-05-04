@@ -159,10 +159,10 @@ Carry out involuntarily-dropping:
 		stop the action.
 
 Report involuntarily-dropping:
-	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for [us] to carry, and [regarding the noun][fall] onto the ground." instead.
+	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for [us] to carry, and [regarding the noun][fall] onto the [ground]." instead.
 
 Report involuntarily-dropping an animal:
-	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for [us] to carry, and half-[regarding the noun][fall], half-[jump] to the ground." instead.
+	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for [us] to carry, and half-[regarding the noun][fall], half-[jump] to the [ground]." instead.
 
 Report involuntarily-dropping the boar:
 	now the boar is in the location;
@@ -172,7 +172,7 @@ Report involuntarily-dropping a person:
 	say "[The noun] [look] rather awkward, and clamber[s] out of our ineffective hold onto solid ground." instead.
 
 Report involuntarily-dropping a cat:
-	say "[The noun] [get] tired of being carried and leap[s] delicately to the ground." instead.
+	say "[The noun] [get] tired of being carried and leap[s] delicately to the [ground]." instead.
 
 Section 5 - Length and Strength
 

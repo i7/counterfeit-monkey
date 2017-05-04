@@ -275,7 +275,7 @@ The boa is a floppy wearable thing. The description of the boa is "Made of brigh
 The boar is a neuter animal. The description of the boar is "In the old days they used to hunt these animals, and I can understand the impulse. It's like a pig, but even uglier and bristlier, with long dangerous-looking tusky teeth coming out of both its top and bottom jaws." The heft is 7.
 
 Report waving the letter-remover at the boar:
-	say "Our hand is less than steady, but [we] manage to wave the letter-remover accurately enough.[paragraph break]The boar vanishes with a pop, and [a generated object] [fall] harmlessly to the ground. [run paragraph on]";
+	say "Our hand is less than steady, but [we] manage to wave the letter-remover accurately enough.[paragraph break]The boar vanishes with a pop, and [a generated object] [fall] harmlessly to the [ground]. [run paragraph on]";
 	now boar is marked invisible;
 	try examining the generated object instead.
 
@@ -1668,7 +1668,7 @@ Some iron-pans are a plural-named container. The description of the iron-pans is
 	Understand "pan" or "skillet" or "flat" or "cast" or "iron" or "pans" as the iron-pans.
 
 Report involuntarily-dropping the iron-pans:
-	say "[We] can't reasonably carry the whole stack of pans, so they fall to the ground with a dramatic crash[if the Authenticator is in Fish Market and the location is Tin hut].[paragraph break]Let's hope she didn't hear that[end if]." instead.
+	say "[We] can't reasonably carry the whole stack of pans, so they fall to the [ground] with a dramatic crash[if the Authenticator is in Fish Market and the location is Tin hut].[paragraph break]Let's hope she didn't hear that[end if]." instead.
 
 Understand "put pans in/into pans" or "insert pans in/into pans" as a mistake ("Try as [we] might, their design and the placement of the handles makes stacking the pans nearly impossible.") when the iron-pans are marked-visible.
 
@@ -2021,7 +2021,7 @@ The initial appearance of a pet is usually "Our [one of]new[or]recently-acquired
 The scent-description of the pet is "warm fur".
 
 Report something exiting when the person asked is a pet:
-	if the container exited from is the T-inserter, say "With a nervous glance at the injectors and nozzles, the pet clambers awkwardly out of the basket of the T-inserter and lowers itself to the ground.";
+	if the container exited from is the T-inserter, say "With a nervous glance at the injectors and nozzles, the pet clambers awkwardly out of the basket of the T-inserter and lowers itself to the [ground].";
 	otherwise say "The pet scrambles out of [the container exited from].";
 	stop the action.
 
@@ -2130,7 +2130,7 @@ The description of some pins is "Straight pins, the kind people use for pinning 
 
 The description of the pint is "As pints ought to be, this one is a pint of dark beer."
 The pint is edible and contained and fluid.
-The initial appearance is "Someone has left a full pint of beer on the ground."
+The initial appearance is "Someone has left a full pint of beer on the [ground]."
 The scent-description of the pint is "malt and alcohol".
 
 The description of the pints is "Enough beer to load up a barmaid at Octoberfest.". The pints are edible and contained and fluid. The heft of the pints is 6.
@@ -2309,7 +2309,7 @@ A dangerous destruction rule for the power cord:
 
 
 Rule for writing a topic sentence about the power cord:
-	say "[A power cord] snakes across the ground";
+	say "[A power cord] snakes across the [ground]";
 	if a massive plug is plugged into the dais socket and a massive plug is plugged into the wall socket:
 		say ", connecting [the dais socket] to [the wall socket]. ";
 	otherwise if a massive plug is plugged into the dais socket:
@@ -3029,7 +3029,7 @@ The description of the sop is "A hunk of bread dipped in something red-brown.". 
 The description of a son is "He's the ideal image of Atlantean boyhood. Missing front tooth, tan from days in the sunshine, a spelling commendation patch sewn into his shirt." Understand "missing" or "front tooth" or "tooth" or "atlantean" or "boyhood" as the son.
 
 
-The sord is a bird. The heft of the sord is 10. The description of the sord is "A whole flight of mallards; only not in flight at the moment. They're currently quacking and pecking the ground."
+The sord is a bird. The heft of the sord is 10. The description of the sord is "A whole flight of mallards; only not in flight at the moment. They're currently quacking and pecking the [ground]."
 
 
 The sot is a man. The description is "He's wearing a stained wife-beater shirt and looks like he hasn't been sober since 1982. Note the four-day beard." Understand "wife-beater" or "shirt" or "beard" or "four-day" as the sot.
@@ -3912,7 +3912,7 @@ Sanity-check opening the trap:
 	if the trap is open:
 		make no decision;
 	if the trap is not in the location:
-		say "It would be difficult, not to mention unsafe, to try to set the trap when it's anywhere but on the ground." instead.
+		say "It would be difficult, not to mention unsafe, to try to set the trap when it's anywhere but on the [ground]." instead.
 
 Report opening the trap:
 	say "[We] apply a great deal of pressure to the levers of the trap and finally manage to get the jaws open." instead.

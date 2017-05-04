@@ -149,6 +149,7 @@ Include Viewpoint and Narrative Voice by Counterfeit Monkey.
 
 Include World Model Tweaks by Counterfeit Monkey.
 
+Include Ground Floor by Counterfeit Monkey.
 Include Room Description Speedups by Counterfeit Monkey.
 Include Custom Speedups by Counterfeit Monkey.
 Include Conversation Speedups by Counterfeit Monkey.
