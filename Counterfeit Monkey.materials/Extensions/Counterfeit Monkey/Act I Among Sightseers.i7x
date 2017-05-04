@@ -1601,7 +1601,7 @@ topic	reply
 Every turn when the attendant carries a louse:
 	say "The attendant screams, and performs some kind of strange dance, first brushing at her skin and then stomping at something on the [ground]. (So much for the louse, I think.)
 
-She then tears out of the room, leaving the room unattended. Unfortunately, places like this don't keep anything of value out front anyway, so your natural gift for larceny hasn't much scope here.";
+She then tears out of the room, leaving it unattended. Unfortunately, places like this don't keep anything of value out front anyway, so your natural gift for larceny hasn't much scope here.";
 	move the louse to the repository;
 	now the attendant is nowhere;
 	if the attendant is the current interlocutor:
