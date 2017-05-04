@@ -281,7 +281,7 @@ Painted off-white, with hard wood floors under many layers of protective gloss c
 The locker you identify as your own sits near one of the beds, still locked with its dial lock.  
 
 > put gel on dial
-We dip out a pea-sized quantity of gel and rub it gently onto the lock. With an audible SPLORT, the lock becomes a clock and falls to the ground. It appears to be one of those archetypal alarm clocks that crows at sunrise and generally makes a nuisance of itself. It shows the time to be about half past nine.
+We dip out a pea-sized quantity of gel and rub it gently onto the lock. With an audible SPLORT, the lock becomes a clock and falls to the floor. It appears to be one of those archetypal alarm clocks that crows at sunrise and generally makes a nuisance of itself. It shows the time to be about half past nine.
 
 > get clock
 /We (take|get|pick up|acquire) the clock.
@@ -321,7 +321,7 @@ The plans are rolled up and stuck shut with a label that reads "PROPERTY OF DENT
 > wave l-remover at plans
 /We reset the device to l. There is a [a-z \-]+, and the plans turn into some pans. A set of flat skillets in cast iron: extremely bulky and heavy.
 
-We can't reasonably carry the whole stack of pans, so they fall to the ground with a dramatic crash.
+We can't reasonably carry the whole stack of pans, so they fall to the floor with a dramatic crash.
 
 > wave s-remover at pans
 /We reset the device to s. There is a [a-z \-]+, and the pans turn into a pan. An omelet-sized skillet in cast iron.
@@ -904,7 +904,7 @@ The snapping continues.
 > put gel on sill
 We dip out a pea-sized quantity of gel and rub it gently onto the sill. With an audible SPLORT, the sill becomes a spill. 
 
-/The spill(, true to its nature,)? (drips |leaks )(out of our hands |through our fingers |out )?onto the ground.
+/The spill(, true to its nature,)? (drips |leaks )(out of our hands |through our fingers |out )?onto the floor.
 
 The snapping continues.
 
@@ -2694,7 +2694,7 @@ The snapping continues.
 > wave a-remover at coat
 /We reset the device to a. There is a [a-z \-]+, and the coat turns into a cot. A portable bed, made up for sleeping.
 
-The cot is too awkward for us to carry, and falls onto the ground.
+The cot is too awkward for us to carry, and falls onto the floor.
 
 The snapping continues.
 
@@ -2705,7 +2705,7 @@ The snapping continues.
 
 With a distinct whiff of fish and sea air, the jotter turns into an otter. Sleek, black, whiskered, and somewhat out of place on dry land.
 
-The otter is too awkward for us to carry, and half-falls, half-jumps to the ground.
+The otter is too awkward for us to carry, and half-falls, half-jumps to the floor.
 
 The snapping continues.
 
@@ -3498,7 +3498,7 @@ Time passes.
 > gel ink
 We just touch a coated fingertip of gel to the ink. With an audible SPLORT, the ink becomes a sink. 
 
-The sink is far too large for us to carry, and falls onto the ground.
+The sink is far too large for us to carry, and falls onto the floor.
 
 /(He (cranes to look around at the back of the machine, but doesn't find anything interesting|runs a hand over the small nozzles). "If it can't do abstracts, the market value is going to be a lot lower because of the limited-depth trees.")?
 
@@ -3850,7 +3850,7 @@ Shaped like a headless pyramid. "0.5 kg" is stamped in the top together with the
 /paper: I (take|get|pick up|acquire) the paper.
 /filing cabinet: I (take|get|pick up|acquire) the filing cabinet.
 
-The filing cabinet is far too large for me to carry, and falls onto the ground.
+The filing cabinet is far too large for me to carry, and falls onto the floor.
 
 > e
 
@@ -4275,7 +4275,7 @@ A room whose importance is obvious from how clean it is and how little furniture
 
 A programmable dais sits in the middle of the room. It has the raw look of lab equipment rather than a nice smooth commercial instrument. 
 
-A power cord snakes across the ground, connecting the dais socket to the wall socket. 
+A power cord snakes across the floor, connecting the dais socket to the wall socket. 
 
 I can go east to the Generator Room and west to the Surveillance Room from here.
 
@@ -4886,7 +4886,7 @@ Shaped like a headless pyramid. "0.5 kg" is stamped in the top together with the
 /paper: You (take|get|pick up|acquire) the paper.
 /filing cabinet: You (take|get|pick up|acquire) the filing cabinet.
 
-The filing cabinet is far too large for you to carry, and falls onto the ground.
+The filing cabinet is far too large for you to carry, and falls onto the floor.
 
 > e
 
@@ -5306,7 +5306,7 @@ A room whose importance is obvious from how clean it is and how little furniture
 
 A programmable dais sits in the middle of the room. It has the raw look of lab equipment rather than a nice smooth commercial instrument. 
 
-A cord snakes across the ground, connecting the dais socket to the wall socket. 
+A cord snakes across the floor, connecting the dais socket to the wall socket. 
 
 You can go east to the Generator Room and west to the Surveillance Room from here.
 

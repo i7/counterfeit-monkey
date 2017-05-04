@@ -186,7 +186,7 @@ It's curious, now you look at it: it's a combination lock with a dial face, but 
 /The backpacking girl (turns white|goes a bit green). After a moment to regain her composure, she flees the vicinity.
 
 > gel lock
-We dip out a pea-sized quantity of gel and rub it gently onto the lock. With an audible SPLORT, the lock becomes a broken clock and falls to the ground. It appears to be one of those archetypal alarm clocks that crows at sunrise and generally makes a nuisance of itself. It shows the time to be about twenty past nine.
+We dip out a pea-sized quantity of gel and rub it gently onto the lock. With an audible SPLORT, the lock becomes a broken clock and falls to the floor. It appears to be one of those archetypal alarm clocks that crows at sunrise and generally makes a nuisance of itself. It shows the time to be about twenty past nine.
 
 I'm starting to understand how you got into all the places you got into. Not that I judge you or your line of work, of course. 
 
@@ -205,7 +205,7 @@ Now that the lock has been removed, the locker swings easily open, revealing a r
 > wave l-remover at plans
 /We reset the device to l. There is a [a-z \-]+, and the plans turn into some pans. A set of flat skillets in cast iron: extremely bulky and heavy.
 
-We can't reasonably carry the whole stack of pans, so they fall to the ground with a dramatic crash.
+We can't reasonably carry the whole stack of pans, so they fall to the floor with a dramatic crash.
 
 > wave s-remover at pans
 /We reset the device to s. There is a [a-z \-]+, and the pans turn into a pan. An omelet-sized skillet in cast iron.
@@ -665,7 +665,7 @@ He turns towards the group assembled around the dartboard. "Anyone want to defen
 > put gel on sill
 We dip out a pea-sized quantity of gel and rub it gently onto the sill. With an audible SPLORT, the sill becomes a spill. 
 
-/The spill drips (out of our hands|through our fingers onto the ground).
+/The spill drips (out of our hands|through our fingers onto the floor).
 
 > wave s-remover at spill
 /We reset the device to s. There is a [a-z \-]+, and the spill turns into a pill. It is small, round, and blue. There are no brand or generic markings to indicate what it might do.
@@ -2784,7 +2784,7 @@ We dip out a fingertip-coating quantity of gel and rub it gently onto the hair. 
 
 There is a continuous angry whine from the jigsaw.
 
-The chair is far too large for us to carry, and falls onto the ground.
+The chair is far too large for us to carry, and falls onto the floor.
 
 > open backpack
 That's already open.
@@ -3207,7 +3207,7 @@ Shaped like a headless pyramid. "0.5 kg" is stamped in the top together with the
 /paper: You (get|take|pick up|acquire) the paper.
 /filing cabinet: You (get|take|pick up|acquire) the filing cabinet.
 
-The filing cabinet is far too large for you to carry, and falls onto the ground.
+The filing cabinet is far too large for you to carry, and falls onto the floor.
 
 > e
 
@@ -3458,7 +3458,7 @@ A room whose importance is obvious from how clean it is and how little furniture
 
 A programmable dais sits in the middle of the room. It has the raw look of lab equipment rather than a nice smooth commercial instrument. 
 
-A power cord snakes across the ground, connecting the dais socket to the wall socket. 
+A power cord snakes across the floor, connecting the dais socket to the wall socket. 
 
 You can go east to the Generator Room and west to the Surveillance Room from here.
 
