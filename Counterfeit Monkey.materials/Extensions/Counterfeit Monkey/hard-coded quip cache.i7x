@@ -92,7 +92,7 @@ claim to be taking a survey is upwardly-restrictive and   a quip.
 explain that we hath a recorder is upwardly-restrictive and dead-ended and  a quip.
 we seem curious is upwardly-restrictive and dead-ended and  a quip.
 what he likes to eat is   shallowly-buried and a quip.
-where he gets Mediterranean foods is  dead-ended and  a quip.
+where there seems Babel Cafe is  dead-ended and  a quip.
 assure him that we seem not hitting on him is upwardly-restrictive and dead-ended and  a quip.
 what his girlfriend seems like is  dead-ended and  a quip.
 delay ticket-taker is upwardly-restrictive and dead-ended and  a quip.

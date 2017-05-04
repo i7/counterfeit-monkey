@@ -2272,6 +2272,12 @@ where he gets Mediterranean foods is a questioning quip. The comment is "'Where 
 	It quip-supplies the ticket-taker.
 	It indirectly-follows what he likes to eat.
 
+where there seems Babel Cafe is a questioning quip. The comment is "'So where is The Babel Café?'".
+	Understand "is" or "this" or "café" as where there seems Babel Cafe. The printed name is "where the Babel Café is". The true-name is "where there seems Babel Cafe".
+	The reply is "'It's quite a walk from here. You have to go along High Street east of the park, past the roundabout, then down Long Street until you get to Palm Square. You'll see it [--] it's right next to the university.'".
+	It quip-supplies the ticket-taker.
+	It indirectly-follows where he gets Mediterranean foods.
+
 Instead of the ticket-taker discussing what he likes to eat when the ostensible motive is generic-truth:
 	try the ticket-taker discussing mutual-embarrassment.
 
