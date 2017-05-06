@@ -4448,8 +4448,6 @@ Definition: a thing is verbal:
 	no.
 
 
-
-
 Rule for refusing comment by Brown when the noun is r-abstract:
 	if the current interlocutor is an animal:
 		make no decision;
