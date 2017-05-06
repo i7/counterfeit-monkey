@@ -70,7 +70,7 @@ The report waving hands rule response (A) is "[We] wave our hand regally."
 The can't push unpushable things rule response (A) is "[We] seriously doubt that will help."
 The standard report opening rule response (A) is "[We] [open] [the noun][if the noun is a container and the noun is empty], which turns out to be empty[end if]."
 [LibMsg <block singing>	"I prefer not to exercise my singing voice in company. (That includes you.)"]
-The block waking up rule response (A) is "At some point we'll split into our two proper selves, but our unnatural synthesis is no dream."
+The block waking up rule response (A) is "[if atlantida-woman is seen]Although it seems like a nightmare,[otherwise]At some point we'll split into our two proper selves, but[end if] our unnatural synthesis is no dream."
 The print obituary headline rule response (B) is " We have won ".
 The can't push people rule response (A) is "[We][']d rather not try it."
 The can't pull people rule response (A) is "[We][']d rather not try it."
