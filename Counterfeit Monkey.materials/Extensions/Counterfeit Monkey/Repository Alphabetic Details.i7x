@@ -2896,7 +2896,7 @@ The saint-pint is a container. The printed name of the saint-pint is "saint pint
 The Scot is a man. The description is "The full stereotype: bagpipes, kilt, sporran. If you look at him too long, he says, 'Och.'" Understand "bagpipes" or "kilt" or "sporran" or "man" as the Scot.
 	The greeting of the Scot is "'Och,' he says. A tic."
 
-The scree is a diggable thing. The heft of the scree is 9. The description of the scree is "The scree is a sloping pile of small and mid-sized stones, most of them roughly broken off. They look like the result of a rockfall rather than of, say, long erosion by water." The indefinite article of the scree is "some". Understand "stones" or "stone" or "rubble" as the scree.
+The scree is a thing. The heft of the scree is 9. The description of the scree is "The scree is a sloping pile of small and mid-sized stones, most of them roughly broken off. They look like the result of a rockfall rather than of, say, long erosion by water." The indefinite article of the scree is "some". Understand "stones" or "stone" or "rubble" as the scree.
 
 Instead of climbing the scree:
 	say "As soon as [we] get a step or two up the pile, [we] slide back down again."

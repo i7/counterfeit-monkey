@@ -2469,7 +2469,7 @@ where to get a pass is a questioning quip.
 	It is repeatable.
 
 An availability rule for where to get a pass:
-	if the player is allowed, it is off-limits;
+	if player-is-allowed is true, it is off-limits;
 	make no decision.
 
 whether she enjoys her job is a questioning quip.

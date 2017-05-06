@@ -1816,7 +1816,16 @@ Sanity-check sitting at a desk:
 
 Section 7 - Outdoor Rooms and Digging
 
-A thing can be diggable. A thing is usually not diggable.
+Definition: a thing is diggable:
+	if it is the soil:
+		yes;
+	if it is the sand:
+		yes;
+	if it is the patchy grass:
+		yes;
+	if it is the scree:
+		yes;
+	no.
 
 Understand "hole in" or "in" or "up" or "a hole in" as "[hole in]".
 
@@ -2211,7 +2220,14 @@ Sanity-check attacking something with something:
 	if the second noun is floppy:
 		say "[The second noun] [are] too floppy to do much damage." instead.
 
-A thing can be attackable.
+Definition: a thing is attackable:
+	if it is atlantida-woman:
+		yes;
+	if it is the tall window:
+		yes;
+	if it is the hanging Atlantida figure:
+		yes;
+	no.
 
 Understand "attack [something not attackable]" as attacking.
 

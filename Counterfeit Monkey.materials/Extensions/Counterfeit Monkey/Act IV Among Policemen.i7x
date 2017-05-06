@@ -44,7 +44,7 @@ A description-concealing rule when the poppy is marked for listing:
 
 Test poppy with "look / x memorial / look" in abandoned park.
 
-The patchy grass is scenery in the Abandoned Park. Understand "dirt" or "ground" or "soil" as the patchy grass. The scent-description is "dusty ground". The patchy grass is diggable. The description of the patchy grass is "It's growing in dry flat tufts, from dusty earth."
+The patchy grass is scenery in the Abandoned Park. Understand "dirt" or "ground" or "soil" as the patchy grass. The scent-description is "dusty ground". The description of the patchy grass is "It's growing in dry flat tufts, from dusty earth."
 
 Instead of digging in the patchy grass:
 	if the dog is not seen:
@@ -411,11 +411,13 @@ The man departs after her.";
 	remove the secretary from play;
 	remove the skit from play. ]
 
+Player-is-allowed is a truth state that varies. Player-is-allowed is false.
+
 Instead of someone going to Bureau hallway from the Antechamber when the person asked does not enclose the pass:
 	if the actor is in location:
 		say "'Pass?' demands the secretary in a bored voice. [The person asked] shrugs and goes no further."
 
-Instead of going to Bureau hallway from the Antechamber when the player does not enclose the pass and the player is not allowed:
+Instead of going to Bureau hallway from the Antechamber when the player does not enclose the pass and player-is-allowed is false:
 	say "[path-walked so far][one of][We] stride confidently toward [the noun] [--] that's my contribution, as you're more of a shuffler or possibly a slinker. Actually, I think a little of your posture must still be showing, because [we] [are] stopped by the secretary. [or]I do my best to give us a cocky swagger, but she's on to us now. [stopping]";
 	if the player is staid:
 		say paragraph break;
@@ -427,7 +429,7 @@ Sanity-check showing the invitation to the secretary:
 Sanity-check showing the pass to the secretary:
 	try going east instead.
 
-Instead of going to Bureau hallway from the Antechamber when the player encloses the pass and the secretary encloses the Regulation Authentication Scope and the player is not allowed:
+Instead of going to Bureau hallway from the Antechamber when the player encloses the pass and the secretary encloses the Regulation Authentication Scope and player-is-allowed is false:
 	if already caught is true:
 		make no decision;
 	if the number of entries in the path so far of the player is greater than 0:
@@ -457,7 +459,7 @@ Instead of going to Bureau hallway from the Antechamber when the player encloses
 		end the story saying "Our detention goes badly";
 		stop the action;
 	try the secretary looking at the pass through the scope;
-	if the player is allowed:
+	if player-is-allowed is true:
 		[now the secretary carries the pass;]
 		now the secretary carries the invitation;
 		now the invitation is not essential;
@@ -527,7 +529,7 @@ Instead of putting gel on something in the presence of the secretary:
 
 already caught is a truth state that varies.
 
-A person can be allowed or barred. A person is usually barred.
+[A person can be allowed or barred. A person is usually barred.]
 
 [Persuasion rule for asking the secretary to try looking at something through something:
 	persuasion succeeds. ]

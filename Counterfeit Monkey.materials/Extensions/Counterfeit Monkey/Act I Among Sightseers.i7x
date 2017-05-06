@@ -2455,7 +2455,6 @@ A flicker of curtains from inside the house suggests that someone saw us [--] a 
 A soil is a fixed in place thing in the Patriotic Chard-Garden. The indefinite article is "some". The initial appearance is "At our feet is a patch of [soil]."
 	Understand "ground" or "earth" or "soil" as the soil.
 	The description is "Bare dirt[if the chard is not in the location and the location is the Patriotic Chard-Garden], revealed when the chard was cleared away[otherwise], looking somewhat out of place here[end if]."
-	The soil is diggable.
 
 Instead of taking the soil when the soil is in the location:
 	say "It's more than [we] can carry around by the handful."
@@ -2765,7 +2764,7 @@ Instead of finding the museum exterior when the subcommand of the museum exterio
 
 Test sandcastle with "x castle / build castle / build sandcastle / look / smell castle / taste castle / touch castle / x castle / z".
 
-The sand is scenery in Private Beach. Understand "ground" as the sand. The description is "It's baking hot." The indefinite article is "some". The sand is diggable.
+The sand is scenery in Private Beach. Understand "ground" as the sand. The description is "It's baking hot." The indefinite article is "some".
 
 Instead of taking the sand:
 	say "Sure, [we] could wander off with a handful of sand, but [we] could hardly shift any significant portion of the beach. And then we'd be making a mess and dribbling sand grains everywhere."

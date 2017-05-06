@@ -384,7 +384,7 @@ When Pinata Celebration ends:
 
 A confetti mess is scenery. Understand "glitter" as the confetti mess. The description is "Blue, white, and silver glittery confetti is all over the place. The individual bits look like punctuation marks, commas and periods and the odd hash sign or ampersand."
 
-The hanging Atlantida figure is an attackable closed container. It is scenery. The description is "The figure is made of cardboard and papier-mâché, designed for children to hit with sticks until candy and treats fall out: it's what would be called a piñata, if that weren't a dangerous loan word.
+The hanging Atlantida figure is a closed container. It is scenery. The description is "The figure is made of cardboard and papier-mâché, designed for children to hit with sticks until candy and treats fall out: it's what would be called a piñata, if that weren't a dangerous loan word.
 
 This particular one is made in the shape of Atlantida. She wears Bureau blue and a surreal smile and her eyes have been painted on wrong."
 

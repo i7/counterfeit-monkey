@@ -641,7 +641,7 @@ Section 1 - Personal Apartment
 
 The Personal Apartment is a room. It is indoors, checkpoint and forbidden. The description is "At a guess, this is a room hardly anyone ever visits, or even knows about. Though the ceiling and one wall are bare cave, the rest has been paneled and  graciously decorated in the style of the end of the 18th century. [if the oil-paintings are in the location][Oil-paintings] on the walls depict great men and women of Atlantis gone by: Phyllida Shaply, Amelia Landison, Clarence Arbot, Jon Rosehip. [end if]An antique bed stands in the cen[ter] of the room."
 
-atlantida-woman is an attackable  woman in the Personal Apartment. [She is on the fancy bed.] The printed name of atlantida-woman is "Atlantida". The description of atlantida-woman is "Her face is ageless, her eyes a piercing blue. She looks like Phyllida Shaply, our famous forebear, except that there is something ethereal and heroic about her as well."
+atlantida-woman is a woman in the Personal Apartment. [She is on the fancy bed.] The printed name of atlantida-woman is "Atlantida". The description of atlantida-woman is "Her face is ageless, her eyes a piercing blue. She looks like Phyllida Shaply, our famous forebear, except that there is something ethereal and heroic about her as well."
 
 Rule for listing exits while looking in Personal Apartment:
 	say "Air and sunlight stream in from the east."
@@ -733,7 +733,7 @@ topic	title	data
 "biography" or "phyllida" or "shaply" or "marcus" or "aurelius" or "churchill" or "winston" or "margaret" or "thatcher" or "martin" or "luther" or "king" or "nelson" or "mandela"	"biographies"	"The collection includes four different biographies of Phyllida Shaply; numerous lives of her contemporaries; and then a bizarrely diverse coverage of saints and villains, ancient and recent figures. Marcus Aurelius appears, as do Winston Churchill and Margaret Thatcher, Martin Luther King and Nelson Mandela."
 "economy/economics/macroeconomics"	"books on the economy"	"Several impressive-looking textbooks on macroeconomics are listed, though from the bookmarks it is clear that the owner has not been able to get all the way through them."
 
-The tall window is an attackable door. The initial appearance is "A window in the north wall, cut out through the cliff face, gives a view of [if the current daytime is sunset]the ocean in fading sunlight[otherwise if the current daytime is evening]tranquil sea under a darkening sky[otherwise]brilliant sunlight and the hot sea[end if]."   It is north of Private Solarium and south of the Precarious Perch.
+The tall window is a door. The initial appearance is "A window in the north wall, cut out through the cliff face, gives a view of [if the current daytime is sunset]the ocean in fading sunlight[otherwise if the current daytime is evening]tranquil sea under a darkening sky[otherwise]brilliant sunlight and the hot sea[end if]."   It is north of Private Solarium and south of the Precarious Perch.
 
 The description of the tall window is "[if the tall window is open]The window stands open.[else]The window is closed.[end if]".
 

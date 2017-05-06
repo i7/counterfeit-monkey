@@ -195,7 +195,7 @@ Sanity-check swinging a short thing:
 
 Section 6 - Politeness
 
-A thing can be crude or polite. A thing is usually polite.
+[A thing can be crude or polite. A thing is usually polite.]
 
 A thing can be naughty-sounding or innocent-sounding.
 

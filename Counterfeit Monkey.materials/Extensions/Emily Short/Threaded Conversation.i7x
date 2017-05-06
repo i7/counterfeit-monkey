@@ -318,7 +318,7 @@ The first availability rule (this is the don't talk to no one rule):
 	if the current interlocutor is not a person:
 		it is off-limits; [But this should never happen!]
 
-A person can be currently listening. A person is usually not currently listening.
+[A person can be currently listening. A person is usually not currently listening.]
 
 Addressing everyone is initially false.
 

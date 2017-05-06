@@ -336,8 +336,8 @@ Check waving the letter-remover at something creating the letter-remover:
 		otherwise:
 			say "The device buzzes, puzzled. It is unable to create anything recognizable called '[disappointment text]'[if the second noun is fixed in place or the second noun is scenery], or perhaps it just doesn't have sufficient power to handle [the second noun][end if]." instead.
 
-Check waving the letter-remover at something creating a crude thing:
-	say "A safety override mechanism kicks into play before the operation is complete; the device plays a short snickering noise. Evidently its one joy in life is detecting and foiling practical jokes." instead;
+[Check waving the letter-remover at something creating a crude thing:
+	say "A safety override mechanism kicks into play before the operation is complete; the device plays a short snickering noise. Evidently its one joy in life is detecting and foiling practical jokes." instead;]
 
 Check waving the letter-remover at something creating a person when the letter-remover device is not creature-enabled:
 	say "[The second noun] flickers and there is a brief image of [a generated object] in [regarding the second noun][their] place, but a legal override kicks in: [a-an letter-remover] is hardware-crippled to prevent generating any living creature." instead;
@@ -1075,7 +1075,7 @@ Report someone looking at something through something:
 
 After the secretary looking at the disguised pass through a scope:
 	say "The secretary raises her Authentication Scope to look at the pass. There is a moment of silence. The scope does nothing.";
-	now the player is allowed.
+	now player-is-allowed is true.
 
 After the secretary looking at the undisguised pass through a scope:
 	say "The secretary raises the scope to look at the pass. Her eyes widen at the blatant forgery. 'Stay right there, buddy,' she says. From her tone of voice, this is obviously the most entertaining thing that has happened to her this fiscal year.
