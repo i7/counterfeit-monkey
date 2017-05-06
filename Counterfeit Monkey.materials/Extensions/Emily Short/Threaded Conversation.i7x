@@ -527,7 +527,7 @@ This is the offer hint quips rule:
 			now suppress-hint-quips is false;
 			the rule fails;
 		if sp reparse flag is false: [Don't want to also display hints before conversation, if we just implicitly greeted someone]
-			carry out the listing plausible quips activity;
+			carry out the listing plausible quips activity.
 			[Hint about quips if there's something on the table that's particularly unusual.]
 
 The offer hint quips rule is listed after the adjust light rule in the turn sequence rules.
