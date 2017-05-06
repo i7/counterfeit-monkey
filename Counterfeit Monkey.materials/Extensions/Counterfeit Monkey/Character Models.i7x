@@ -122,7 +122,7 @@ Rule for supplying a missing second noun while buying something from:
 		find a suitable interlocutor;
 		now second noun is current interlocutor;
 	if second noun is nothing:
-		say "From whom should [we] buy [the noun]?";
+		say "There's no one about to sell us [the noun].";
 		stop the action.
 
 
