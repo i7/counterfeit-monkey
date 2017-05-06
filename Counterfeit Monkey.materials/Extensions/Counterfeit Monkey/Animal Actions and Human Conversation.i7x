@@ -4356,6 +4356,9 @@ how Professor Brown makes abstracts is a questioning quip.
 	It quip-supplies Professor Brown.
 	It indirectly-follows what he seems doing.
 
+A plausibility rule for how Professor Brown makes abstracts:
+	it is plausible.
+
 Availability rule for whether he can fix the letter-remover:
 	if the letter-remover is marked invisible, it is off-limits.
 
