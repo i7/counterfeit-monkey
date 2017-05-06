@@ -2213,6 +2213,8 @@ Sanity-check attacking something with something:
 
 A thing can be attackable.
 
+Understand "attack [something not attackable]" as attacking.
+
 Sanity-check attacking something which is not attackable with something:
 	try attacking the noun instead.
 Sanity-check attacking someone who is not attackable with something:
