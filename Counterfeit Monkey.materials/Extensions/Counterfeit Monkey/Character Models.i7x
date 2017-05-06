@@ -352,6 +352,8 @@ Sanity-check waving to a person:
 Sanity-check waving to something:
 	say "[The noun] [appear] very unlikely to respond." instead.
 
+Understand "wave hand" or "wave our hand" or "wave our hands" or "wave hands" as waving hands.
+
 Test secondaries with "tutorial off / z / say hello / g / ask about paddle / say hello to mark / ask mark about mark / ask mark about the paddle / test customer" in the Drinks Club.
 
 Table of Ultratests (continued)
