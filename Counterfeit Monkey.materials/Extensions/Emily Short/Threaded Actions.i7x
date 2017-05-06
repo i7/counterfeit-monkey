@@ -119,7 +119,7 @@ Refusing to kiss something is an activity.
 
 Rule for refusing to kiss something (this is the default kiss-refusal rule):
 	if the noun is an animal:
-		say "Perhaps not.";
+		say "[one of]Perhaps not[or]Could you refrain while I'm trapped in the same body here?[at random].";
 	otherwise:
 		say "Now doesn't seem like the time."
 
