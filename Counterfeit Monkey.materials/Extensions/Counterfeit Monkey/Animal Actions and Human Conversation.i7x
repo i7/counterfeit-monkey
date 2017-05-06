@@ -698,8 +698,8 @@ Rule for refusing comment by someone when the noun is an as:
 	otherwise:
 		say "'[one of]Looks old[or]Huh[or]Looks like it came up heads[or]Tails, I see[at random].'"
 
-[Rule for refusing comment by an animal (called viewer):
-	say "[The viewer] cock[s] [their] head[regarding the noun][s].".]
+Sanity-check showing something to an animal (called viewer):
+	say "[The viewer] cock[s] [their] head[if the viewer is plural-named]s[end if]." instead.
 
 Rule for refusing comment by something:
 	say "[one of]This evokes no particular interest[or][The current interlocutor] [shake] [their] head[or][The current interlocutor] [don't] have anything to say in response[at random]."
