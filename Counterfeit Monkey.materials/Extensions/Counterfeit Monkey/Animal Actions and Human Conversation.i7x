@@ -4306,6 +4306,7 @@ what he thinks of Higgate is a questioning quip.
 
 what he thinks of you is a questioning quip.
 	The mentions-list is {yourself}.
+	Understand "me" as what he thinks of you.
 	The comment is "'So... There's a guy who I think is a graduate student here [--] Matthew Rosehip? Do you know him?'".
 	The reply is "This startles Brown enough that he turns around and looks at us. There is a curiously wary look in his eyes, and it hits me: He's worried. [paragraph break]See, about a month ago I was down here talking to Brown and I let slip some general hints about what I've been working on, and I had the impression that for once he was listening. When I was done with the very rough outlines, he told me to be careful, really really careful [--] not just on the island, but in the outside world, too, because there were a lot of people who wouldn't want a plan like that to succeed. [paragraph break]'I know all the graduate students,' he replies, turning another knob until his equipment gives a high-pitched whine. There is no functional purpose to that knob, he confessed once, other than to make strangers and idiots think they're interrupting a dangerous test. 'I'm not supervising his research, if that's what you mean. His advisor is Professor Waterstone.'".
 	It quip-supplies Professor Brown.
