@@ -768,12 +768,6 @@ When Farewell ends:
 			say "[unbetrayed-outcome]";
 	else:
 		say "[no-atlantida-outcome]";
-	if the new church is not visited:
-		record "Priscilla Parsons award for winning the game without ever entering the church" as an achievement;
-	if hardness is true:
-		record "Andra award for completing the game in hard mode" as an achievement;
-	else:
-		record "Alex Rosehip award for completing the game in easy mode" as an achievement;
 	end the story finally saying "The End";
 
 
@@ -825,6 +819,27 @@ Brock bends down to massage his right thigh. 'Turns out it's not comfortable hav
 Brock studies us for a moment more. Then he reaches into his pocket and pulls out a huge gummy candy shaped like a squid.
 
 'Want one? They used them as packing material in my shipping box. We've got lots.'"
+
+
+The print the final question rule response (A) is "[full-game achievements]Would you like to "
+
+To say full-game achievements:
+	let line break needed be false;
+	let N be some text;
+	if the new church is not visited:
+		now N is "Priscilla Parsons award for winning the game without ever entering the church";
+		unless N is a used achievement:
+			record N as an achievement;
+			now line break needed is true;
+	if hardness is true:
+		now N is "Andra award for completing the game in hard mode";
+	else:
+		now N is "Alex Rosehip award for completing the game in easy mode";
+	unless N is a used achievement:
+		record N as an achievement;
+		now line break needed is true;
+	if line break needed is true:
+		say line break.
 
 
 Schedule and Time ends here.
