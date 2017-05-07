@@ -536,9 +536,6 @@ Section 3 - Responses to demonstrations that aren't interesting
 
 The default comment-refusal rule is not listed in any rulebook.
 
-A thing can be freaky. The ear, the gam, the pate, the earlap, the toe, the toes, the armpit, the heel, the rash, [the limb,] the sword-arm and the arm are freaky.
-
-
 Report waving the letter-remover at something creating a freaky thing (called target):
 	say "[We] wave [the letter-remover] at [the second noun] and produce [a target], severed[body-part-prank].";
 	abide by the dangerous construction rules for the target instead.

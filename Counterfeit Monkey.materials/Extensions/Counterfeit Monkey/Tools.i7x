@@ -1470,7 +1470,7 @@ To decide what object is home for (item - a thing):
 Definition: an object is stuck if it is an item listed in the Table of stuck things.
 
 Table of stuck things
-item (an object)
+item (a thing)
 horses
 hoses
 hoe

@@ -664,6 +664,8 @@ Understand "stamp [text]" as a mistake ("It seems unlikely that our tampering wo
 
 The oil-paintings are scenery in Personal Apartment. They are plural-named. The printed name is "[if looking]Oil[otherwise]oil[end if] paintings". Understand "oil" or "painting" or "paintings" or "portraits" or "portrait" as the oil-paintings. The description is "They look like originals. I have seen some of these portraits before, in books at school or in the museum, but was given to understand that they'd been stolen, leaving only photographs or replicas."
 
+The oil-paintings can be stolen. The oil-paintings are not stolen.
+
 A fancy bed is a clothed bed. It is scenery in Personal Apartment. The description of the fancy bed is "Draped in eau-de-Nil blankets, and tossed by a restless occupant." Understand "antique" as the fancy bed. The printed name of the fancy bed is "bed".
 
 Understand "eau-de-Nil" or "eau" or "de" or "nil" as the fancy bed's blankets. The description of the fancy bed's blankets is "They're brocaded, worked with the great A of Anglophone Atlantis."

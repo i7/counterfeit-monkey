@@ -633,6 +633,8 @@ When Landing ends (this is the set us up on yacht rule):
 	complete "Return to yacht";
 	rapidly set all contents of the player marked for listing;
 	repeat with item running through marked for listing things:
+		if the oil-paintings proffer the item:
+			now the oil-paintings are stolen;
 		if the item is part of something:
 			next;
 		otherwise if the item is the restoration gel:
@@ -838,6 +840,9 @@ To say full-game achievements:
 		now N is "Alex Rosehip award for completing the game in easy mode";
 	unless N is a used achievement:
 		record N as an achievement;
+		now line break needed is true;
+	if the oil-paintings are stolen:
+		record "Wolfgang Beltracchi award for escaping with long lost oil paintings" as an achievement;
 		now line break needed is true;
 	if line break needed is true:
 		say line break.

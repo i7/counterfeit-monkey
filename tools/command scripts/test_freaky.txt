@@ -1,0 +1,28 @@
+y
+andra
+
+tutorial off
+random-seed 1234
+pauses off
+n
+wave u-remover at mourning dress
+score
+e
+wave x-remover at codex
+x code
+unlock barrier
+set barrier to 305
+go to fair
+x wheel
+wave w-remover at wheel
+get heel
+w
+wave p-remover at pear
+go to gift shop
+wave m-remover at tomes
+wave s-remover at toes
+go to heritage corner
+x diorama
+wave y-remover at army
+quit
+yes
