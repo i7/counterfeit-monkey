@@ -329,25 +329,6 @@ pen
 mug
 
 
-[PUT ALL IN BACKPACK can be quite slow, so let's speed it up a bit by skipping some checks]
-This is the fast backpack stowing rule:
-	if the backpack is closed:
-		abide by the try opening rules for the backpack;
-	repeat with N running through multiple object list:
-		if N is fluid:
-			say "[N]: [The N] [one of]would make a real mess[or]would just spill[at random].";
-		otherwise:
-			if N is long:
-				say "[N]: [The N] [one of]couldn't possibly fit[or]would be much too long[or]would just stick out[at random].";
-			otherwise:
-				if N is iron-pans:
-					say "[N]: There's nowhere near enough room.";
-				otherwise:
-					say "[N]: Done.";
-					now N is in backpack;
-	abide by the cancel multiple rule.
-
-
 Table of Ultratests (continued)
 topic	stuff	setting
 "all-lists"	{ apple, tomcat, tube, stick, twig, secret-plans, backpack, card, letter-remover, origin paste }	Tools Exhibit
