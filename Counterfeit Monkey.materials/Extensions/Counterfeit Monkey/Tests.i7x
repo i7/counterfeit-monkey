@@ -7,7 +7,7 @@ Volume 8 - Tests
 
 Chapter 0 - Skipping breaks
 
-No pauses is a truth-state that varies. No pauses is initially false.
+No pauses is a truth state that varies. No pauses is initially false.
 
 To custom-pause the game:
 	if no pauses is false:
