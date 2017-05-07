@@ -371,6 +371,7 @@ Instead of drinking something which is not fluid:
 Understand "apply pressure to [something]" as pushing.
 Understand "lean on [something]" as pushing.
 
+
 Part 2 - Senses
 
 Section 1 - Smell and Taste
@@ -730,6 +731,7 @@ After going a direction for the third turn:
 		say "[first custom style][bracket]If you're traveling far, you can always type GO TO (location name) to get there automatically.[close bracket][roman type][paragraph break]";
 	continue the action.
 
+
 Section 4 - Going Back and Going Vaguely
 
 Understand "go back" as retreating. Understand "back" or "return" or "retreat" as retreating.
@@ -759,6 +761,7 @@ Carry out departing:
 	otherwise:
 		say "Any particular direction? ";
 		carry out the listing exits activity.
+
 
 Chapter 2 - Looking Towards Other Areas
 
@@ -839,6 +842,7 @@ Local looking is an action applying to one thing.
 
 Carry out local looking:
 	try looking.
+
 
 Section 3 - Facing
 
@@ -1958,8 +1962,6 @@ Sanity-check an actor writing on something:
 		say "[The pen] is out of ink at the moment." instead;
 	if the actor carries the pens:
 		say "[The pens] are only nominally writing implements at all." instead.
-
-
 
 
 Section 5 - Instruments and Performance
