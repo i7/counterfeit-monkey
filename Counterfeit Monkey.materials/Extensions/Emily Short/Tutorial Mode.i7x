@@ -71,7 +71,7 @@ Carry out looking (this is the register looking rule):
 
 An instructional rule (this is the teach examining rule): 
 	if the teach examining rule is listed in the completed instruction list, make no decision;
-	if a previously-mentioned non-player thing (called target) is marked-visible: 
+	if a previously-mentioned non-player thing (called target) is enclosed by location:
 		let N be "[the target]"; 
 		let M be "[target]";
 		say "You can find out more if you LOOK AT [N in upper case] (or shorten it to L [M in upper case])." (A);
