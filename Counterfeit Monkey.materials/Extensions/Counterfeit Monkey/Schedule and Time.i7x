@@ -387,6 +387,7 @@ A confetti mess is scenery. Understand "glitter" as the confetti mess. The descr
 The hanging Atlantida figure is a closed container. It is scenery. The description is "The figure is made of cardboard and papier-mâché, designed for children to hit with sticks until candy and treats fall out: it's what would be called a piñata, if that weren't a dangerous loan word.
 
 This particular one is made in the shape of Atlantida. She wears Bureau blue and a surreal smile and her eyes have been painted on wrong."
+Understand "piñata" as the hanging Atlantida figure.
 
 Some assembled families are a plural-named man. They are scenery. The description is "There are children of all ages carrying sticks and blindfolds they brought from home, as well as bags to scoop up the candy when everything is over. Parents, looking variously indulgent or bored. A couple of bureau officials, come out from the Rotunda to make sure that everything goes well." Understand "family" or "parents" or "parent" or "child" or "children" or "officials" or "bureau officials" or "bored" or "crowd" or "people" or "person" as the assembled families.
 
