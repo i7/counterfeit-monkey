@@ -71,7 +71,7 @@ Ultra Undo is an extension kindly written by Dannii Willis to use external file 
 
 Include version 1/160501 of Ultra Undo by Dannii Willis.
 
-The release number is 6.
+The release number is 7.
 
 Use scoring.
 [Use no deprecated features.]
