@@ -1,15 +1,15 @@
 # Change log
 
-## Unreleased
+## Release 7
 
 - The game and all its extensions have been ported to Inform 6M62. This allows us to simplify the code in many places. We have tried hard to ensure that nothing was broken in the process.
-- The source code was split up into smaller files.
+- The source code was split into smaller files.
 - The map can now be switched off with GRAPHICS OFF to reclaim screen space.
 - The TOPICS command lists all recommended quips as well as most available ones.
 - Many initial values are now hard-coded in the source for a quicker game start.
 - Adds a startup pre-computation function that caches the results of startup for faster subsequent game starts, and which can also read startup data from the blorb file on interpreters that support it.
 - Replaces most visibility tests with the marked-visible attribute from Scope Caching by Mike Ciul for a speedup.
-- Uses the list writers and other replacement functionality from Large Game Speedup by Andrew Plotkin. Inspired by this, similar speed-ups have been implemented to replace slow code in many places.
+- Uses the list writers and other replacement functionality from Large Game Speedup by Andrew Plotkin. Inspired by this, similar speed-ups have been implemented elsewhere in the code.
 - Adds a repsonse to trying to play the games on Brock's computer.
 - Implements asking the mechanic where to find a car.
 - Allows thanking more people.
@@ -23,79 +23,84 @@
 - Includes some primitive testing scripts that pipe a text file of commands into the game and compares the output to an older transcript.
 - Fixes a bug where the as could disappear out of your hand if you made a second as from the trash, then synthesized an ascot, then gelled the ascot. Also prevents any potential similar bugs.
 - Now the roc or other converted forms of Brock are properly gelled when boarding the yacht.
-- Fixes an issue where the game wouldn't let us leave the starting park area if we letter-converted the plans before touching them.
+- Fixes an issue where the game wouldn't let you leave the starting park area if you letter-converted the plans before touching them.
 - Fixes a run-time problem in Threaded Conversation when resetting the interlocutor while the current interlocutor is nothing.
 - Speeds up route-finding by not looking for ways around locked doors and skipping other redundant checks.
 - Speeds up conversation by reducing the number of quips tested for viability each turn and also replacing slow code with Inform 6 equivalent.
-- Makes children cry when we break the hanging figure with the severed arm.
-- Things on the trampet now randomly fall off when we jump on it.
+- Makes children cry when you break the hanging figure with the severed arm.
+- Things on the trampet now randomly fall off when you jump on it.
 - Implements smelling the lavender smell in the public convenience.
-- Delays awarding the score for getting past the secretary until we actually get past her.
-- Brock now comments on things we are wearing.
+- Delays awarding the score for getting past the secretary until you actually get past her.
+- Brock now comments on things you are wearing.
 - Adds responses for showing the draft document to Waterstone, and for showing him something homonym-shame-relevant too early. Rewords other responses to help clarifying this puzzle.
-– Adds responses to discourage the player from trying to stow things in the tin hut while hiding from the authenticator.
+- Adds responses to discourage the player from trying to stow things in the tin hut while hiding from the authenticator.
 - Adds a response to PUT PANS IN PANS.
 - Prevents the player from walking away with the student quarters coffee-maker.
+- The quip Ask how Professor Brown makes abstracts is now still suggested if you leave his office and return later.
 
 ### Gameplay changes
 
-- We can now leave the rock behind until we know it is Brock. 
+- You can now leave the rock behind until you have found out that it is Brock.
 - Allows destroying fake people by destroying their container or supporter.
 - Allows cutting the kudzu with the jigsaw.
 - Enforces closing the portcullis when being chased by the guards
 - It is now possible to leave the snap temporarily behind as a masking noise.
-- Liquids and sinks behave more consistently. You can no longer pick up certain uncontained fluids and carry them around in containers along with other solid things or fluids.
+- Liquids and sinks behave more consistently. No longer can certain uncontained fluids be picked up and carried around in containers alongside other solid things or fluids.
 - It is no longer possible to put containers in the sink to fill them with soap.
 - The legend now stays attached to the map after gelling it.
 - Fixes to allow the roc following along when you take the kayak to the yacht.
-- No longer lets you leave essential objects behind by inserting them into a container and then letter-transforming the container.
+- It is no longer possible to leave essential objects behind by inserting them into a container and then letter-transforming the container.
 - Makes it more apparent when the car will not run by stopping you rather than making you automatically get out and walk to your destination.
 - Makes the refusal messages more consistent when trying to go to blocked-off locations, and avoids walking you halfway there.
 - Gelling the tub is now allowed.
 - Animals will no longer get out of containers such as the car on the same turn that they followed you into them.
-- Fixes a bug where placing an object in the garage before changing it into a car would prevent you from entering it.
+- Fixes a bug where placing an object in the garage before changing it into a car would prevent you from entering the car.
 
 ### Parsing
 
+- The parser no longer asks for a second noun when attacking something unless a weapon is actually required.
+- Understands PIÑATA as the hanging Atlantida figure on interpreters that support unicode input.
 - Understands REMOVE SCREWS and REMOVE BLINDFOLD.
 - Gives a response when trying to get the mechanic to fuel the car.
 - Makes pouring fuel into the car synonymous with fueling it
 - Fixes quips that require the knowledge of certain facts.
-- We will now sit or lie down on an appropriate supporter instead of preferring the floor.
+- Any suitable supporters are preferred to the floor when typing SIT or LIE DOWN.
 - Adjusts line breaks around achievement messages.
-- Typing INSERT X IN CONTAINER when X is already in the container will no longer make us open the container if closed, or make us take out X and then put it back in.
-- The backpack now automatically opens when we try to use the letter-remover inside it.
+- Typing INSERT X IN CONTAINER when X is already in the container will no longer make you open the container if closed, or make you take out X and then put it back in.
+- The backpack now automatically opens when you try to use the letter-remover inside it.
 - It is no longer possible to insert objects into the customs house line or the secret door.
 - Makes IN and OUT work more consistently as directions.
 - Fixes a run-time error when typing LIE.
-- Makes RETURN BOOK work when we have several books available.
-- Adds new ways of understanding what you want to shoot at and with what. The parser is now better at telling the difference between shooting a gun at something and shooting at something with it.
+- Makes RETURN BOOK work when there are several books available.
+- Adds new ways of understanding what we want to shoot at and with what. The parser is now better at telling the difference between shooting a gun at something and shooting at something with it.
 - Makes it possible to refer to SINKS in the public convenience.
-- Adds several new ways of asking the bartender to homonym-convert our things.
+- Adds several new ways of asking the bartender to homonym-convert things.
 - Adds more ways tell the parser to fill the pen with ink and write with it.
 - Adds more synonyms for putting the reel in the projector and starting the movie.
 - Fixes a bug where trying to remove things from containers or supporters would be misinterpreted as trying to wave the letter-remover at them.
 - Gives responses to waving the letter-remover at the tub and the restoration gel, and to putting gel on the letter-remover.
-- Prevents the parser from taking us to the diorama table in Heritage Corner when typing GO TO BUREAU.
-- Prevents the parser from taking us to the elderly apartments in Sigil Street when typing GO TO APARTMENT.
-- Makes us go to the old city walls rather than the postcards in cathedral gift shop, the museum exterior, the yellow buildings in the back alley or the sandcastle when typing GO TO WALLS.
-- Go to public convenience rather than convenience store when typing GO TO CONVENIENCE.
-- The parser no longer asks which room in the church we want to go to when typing GO TO CHURCH.
-- Fixes a bug that would sometimes leave us standing just outside our intended destination.
-- Typing a number as a disambiguation choice will now usually pick the intended choice.
-- Allows more greeting phrases used by other characters to also be used by the player.
+- Prevents the parser from taking you to the diorama table in Heritage Corner when typing GO TO BUREAU.
+- Prevents the parser from taking you to the elderly apartments in Sigil Street when typing GO TO APARTMENT.
+- Makes you go to the old city walls rather than the postcards in cathedral gift shop, the museum exterior, the yellow buildings in the back alley or the sandcastle when typing GO TO WALLS.
+- Goes to the public convenience rather than the convenience store when typing GO TO CONVENIENCE.
+- The parser no longer asks which room in the church you want to go to when typing GO TO CHURCH.
+- Fixes a bug that would sometimes leave you standing right outside your intended destination.
+- Typing a number as a disambiguation choice will now pick the right selection.
+- Allows some greeting phrases used by other characters to be used by the player.
 - ACTIVATE, HOMONYM and SYNTHESIZE are now understood as verbs.
-- UP is understood as standing if there is no exit leading upwards.
+- UP is understood as standing up if there is no exit leading upwards.
 
 ### Typos and cosmetic output errors
 
-- Fixes always showing our goals automatically after going through the barrier for the first time.
-- Don't print a message about walking through "the wealthy neighborhood" unless we actually do.
+- Properly announces any achievements awarded when winning the game.
+- Prints the intended message when trying to show something to an animal.
+- Fixes always showing your goals automatically after going through the barrier for the first time.
+- No longer prints a message about walking through "the wealthy neighborhood" unless you actually do.
 - Fixes printing the article of the mourning dress when examining the shops.
 - The Babel Café is spelled with an accented é everywhere.
 - Changes the word "ground" to "floor" in standard messages when indoors.
 - Gets rid of parser clarification messages when issuing GIVE, BUY or SHOW commands without specifying a second noun.
-- The utilitarian inventory listing is now faster and more robust. It also tells you whether the things listed are inside containers.
+- The utilitarian inventory listing is now faster and more robust. It also states whether the things listed are inside containers.
 - Improves the responses when trying to walk in unimplemented directions.
 - Gives a better response when the cryptolock produces something large that falls out of it.
 - Avoids printing long lists of refusal messages when typing PUT ALL IN a locked container or similar.
@@ -103,20 +108,20 @@
 - Adds responses to trying to remove the restoration gel from the tub or the tube.
 - Makes the score awarding from reading the legend show up immediately rather than on the next turn.
 - Fixes a double refusal message when trying to insert things into the etymological reversing chamber while it is in the closed display case.
-- Fixes a bug that would randomly refer to a "galley sink" when describing the public convenience.
+- Fixes a bug that would occasionally refer to a "galley sink" when describing the public convenience.
 - Fixes a double room description sometimes printed when approaching rooms.
-- Makes the letter-transformation tools actually refer to us as Alexandra.
+- Makes the letter-transformation tools refer to the player as "Alexandra".
 - The name that the letter-remover tries to change is now always identical to the printed name of the object. Previously it would differ for certain objects, such as the sink taps.
 - Fixes the reply when asking the gift shop volunteer about things he has nothing to say about.
 - The mechanic is no longer mentioned twice when examining the garage.
 - Adds back some old responses found in the source when attempting to buy souvenirs in the cathedral gift shop.
 - The descriptions of running taps in room descriptions are now grouped together.
 - Makes sure that all the steps involved in driving (closing the door, starting the ignition) are printed the first time we drive to a named location, just as they are when driving in a direction.
-- Makes sure that the funnel is described as "all sandy" until we have taken it.
+- Makes sure that the funnel is described as "all sandy" until you have taken it.
 - Prevents the response "What do you want to drop those things in?" when typing DROP ALL while carrying nothing.
 - Makes sure that I is always capitalized in travel descriptions.
-- We no longer enter the car at the end of the traffic circle scene if we are already in the car.
-- We no longer get off the tarpaulin in the tin hut after having already left the hut.
+- You no longer enter the car at the end of the traffic circle scene if you are already in the car.
+- You no longer get off the tarpaulin in the tin hut after having already left the hut.
 
 ## Release 6
 
