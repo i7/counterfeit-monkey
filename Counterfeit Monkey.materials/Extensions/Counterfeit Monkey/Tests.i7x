@@ -70,7 +70,8 @@ Array autotestfilename -> $E0 'a' 'u' 't' 'o' 't' 'e' 's' 't' 'i' 'n' 'g' 0;
 	{
 		if ( glk_fileref_does_file_exist( fref ) )
 		{
-			gg_commandstr = glk_stream_open_file( fref, filemode_Read, GG_COMMANDWSTR_ROCK );
+			if ( ~~CommandStreamExists() )
+				gg_commandstr = glk_stream_open_file( fref, filemode_Read, GG_COMMANDWSTR_ROCK );
 			if ( gg_commandstr )
 			{
 				gg_command_reading = true;
@@ -86,6 +87,21 @@ Array autotestfilename -> $E0 'a' 'u' 't' 'o' 't' 'e' 's' 't' 'i' 'n' 'g' 0;
 	res = glk_fileref_does_file_exist( fref );
 	glk_fileref_destroy( fref );
 	return res;
+];
+
+[ CommandStreamExists id;
+	id = glk_stream_iterate( 0, gg_arguments );
+
+	while (id)
+	{
+		if ( gg_arguments-->0 == GG_COMMANDWSTR_ROCK )
+		{
+			gg_commandstr = id;
+			rtrue;
+		}
+		id = glk_stream_iterate( id, gg_arguments );
+	}
+	rfalse;
 ];
 
 -).
