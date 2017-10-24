@@ -22,7 +22,6 @@ To custom-wait for any key:
 		wait for any key.
 
 The File of Tests is called "testing".
-The File of Automated Tests is called "autotesting".
 
 [Start automated test if File of Tests or File of Automated Tests exists.]
 
@@ -31,6 +30,7 @@ A last after starting the virtual machine rule (this is the no pauses rule):
 		say "[first custom style][bracket]Test mode active. No waiting for key presses, deterministic randomness[close bracket][roman type][paragraph break]";
 		seed the random-number generator with 1234;
 		now no pauses is true;
+		start the timer;
 
 Understand "pauses on" as on-pausing. On-pausing is an action out of world.
 Understand "pauses off" as off-pausing. Off-pausing is an action out of world.
@@ -49,61 +49,103 @@ Carry out reseeding:
 	seed the random-number generator with the number understood.
 
 
-Now-autotesting is a truth state that varies. Now-autotesting is initially false.
 
-Section 2 - Automated testing - Not for release
+Section 2 - Automated testing
 
-A last after starting the virtual machine rule (this is the automated testing rule):
-	if the File of Automated Tests exists:
-		start the timer;
-		let test name be "[text of File of Automated Tests]";
-		say "[first custom style][bracket]Running test '[test name]'[close bracket][roman type][paragraph break]";
-		unless test name is "":
-			now now-autotesting is true;
-			call test with name test name.
+The automated testing rule translates into I6 as "StartAutoTests".
+The automated testing rule is listed last in the after starting the virtual machine rules.
+The attempt to load a precomputation data file rule does nothing if the file of Automated Tests exists.
 
-To call test with name (test name - some text):
-	now the reborn command is "test [test name]";
-	now sp reparse flag is true.
-
-Section 3 - Measure play time
-
-To start the timer:
-	(-
-		if (glk_gestalt(gestalt_DateTime, 0)) {
-			print "Timer started.@@10";
-			glk_current_time(gameStartTime);
-		} else {
-			print "No timer available.@@10";
-		}
-	-);
+To decide whether the file of Automated Tests exists:
+	(- TestAutoTestsFile() -).
 
 Include (-
 
-Array gameStartTime --> 3;   ! microseconds elapsed since midnight on January 1, 1970, GMT/UTC
+! Hard coded file name for non-interactive tests
+Array autotestfilename -> $E0 'a' 'u' 't' 'o' 't' 'e' 's' 't' 'i' 'n' 'g' 0;
 
-Array currentTime --> 3;   ! Same as above
+[ StartAutoTests fref;
+	fref = glk_fileref_create_by_name( fileusage_InputRecord | fileusage_TextMode, autotestfilename, 0 );
+	if ( fref )
+	{
+		if ( glk_fileref_does_file_exist( fref ) )
+		{
+			gg_commandstr = glk_stream_open_file( fref, filemode_Read, GG_COMMANDWSTR_ROCK );
+			if ( gg_commandstr )
+			{
+				gg_command_reading = true;
+			}
+		}
+	}
+	glk_fileref_destroy( fref );
+	rfalse;
+];
 
-[ readTimer;
-	glk_current_time(currentTime);
-	return (currentTime-->1 - gameStartTime-->1) * 1000 + (currentTime-->2 - gameStartTime-->2) / 1000;
+[ TestAutoTestsFile fref res;
+	fref = glk_fileref_create_by_name( fileusage_InputRecord | fileusage_TextMode, autotestfilename, 0 );
+	res = glk_fileref_does_file_exist( fref );
+	glk_fileref_destroy( fref );
+	return res;
 ];
 
 -).
 
-To decide what number is play-time: (- readTimer() -).
 
-To show play time:
-	let current-ms be play-time;
-	let current-minutes be (current-ms / 60000) to the nearest whole number;
-	now current-ms is the remainder after dividing current-ms by 60000;
-	let current-s be (current-ms / 1000) to the nearest whole number;
-	now current-ms is the remainder after dividing current-ms by 1000;
-	say "Total play time: [current-minutes]:[current-s],[current-ms][paragraph break]";
 
-To say full-game time:
-	if now-autotesting is true:
-		show play time.
+Section 3 - Measure play time
+
+Include (-
+
+Array currentTime --> 3;   ! microseconds elapsed since midnight on January 1, 1970, GMT/UTC
+
+Global startTime;
+Global stopTime;
+
+[ readTimer;
+	glk_current_time( currentTime );
+	return currentTime-->1 * 1000 + currentTime-->2 / 1000;
+];
+
+-) after "Definitions.i6t".
+
+To start the timer:
+	(-
+		if ( glk_gestalt(gestalt_DateTime, 0) )
+		{
+			startTime = readTimer();
+		}
+	-);
+
+To stop the timer:
+	(-
+		if ( glk_gestalt(gestalt_DateTime, 0) )
+		{
+			stopTime = readTimer();
+		}
+	-);
+
+The start time is a number variable.
+The start time variable translates into I6 as "startTime".
+The stop time is a number variable.
+The stop time variable translates into I6 as "stopTime".
+
+To display the total test time:
+	if the File of Tests exists or the file of Automated Tests exists:
+		stop the timer;
+		let time diff be stop time - start time;
+		let minutes be time diff / 60000;
+		let millisecs be the remainder after dividing time diff by 60000;
+		let seconds be millisecs / 1000;
+		now millisecs is the remainder after dividing millisecs by 1000;
+		say "Total play time: [minutes]:[seconds].[no line break][millisecs][paragraph break]";
+
+Check quitting the game:
+	display the total test time;
+	continue the action;
+
+First before handling the final question rule:
+	display the total test time;
+
 
 
 Chapter 1 - Tests - Not for release
