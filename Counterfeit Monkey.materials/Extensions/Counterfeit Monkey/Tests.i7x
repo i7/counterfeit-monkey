@@ -5,7 +5,9 @@ Use authorial modesty.
 
 Volume 8 - Tests
 
-Chapter 0 - Skipping breaks
+Chapter 0
+
+Section 1 - Skipping breaks
 
 No pauses is a truth state that varies. No pauses is initially false.
 
@@ -20,11 +22,12 @@ To custom-wait for any key:
 		wait for any key.
 
 The File of Tests is called "testing".
+The File of Automated Tests is called "autotesting".
 
-[Start automated test if File of Tests exists.]
+[Start automated test if File of Tests or File of Automated Tests exists.]
 
-A last after starting the virtual machine rule (this is the automated testing rule):
-	if the File of Tests exists:
+A last after starting the virtual machine rule (this is the no pauses rule):
+	if the File of Tests exists or the file of Automated Tests exists:
 		say "[first custom style][bracket]Test mode active. No waiting for key presses, deterministic randomness[close bracket][roman type][paragraph break]";
 		seed the random-number generator with 1234;
 		now no pauses is true;
@@ -44,6 +47,63 @@ Understand "random-seed [number]" as reseeding. Reseeding is an action out of wo
 Carry out reseeding:
 	say "[first custom style][bracket]Random-number generator seeded with [the number understood].[close bracket][roman type]";
 	seed the random-number generator with the number understood.
+
+
+Now-autotesting is a truth state that varies. Now-autotesting is initially false.
+
+Section 2 - Automated testing - Not for release
+
+A last after starting the virtual machine rule (this is the automated testing rule):
+	if the File of Automated Tests exists:
+		start the timer;
+		let test name be "[text of File of Automated Tests]";
+		say "[first custom style][bracket]Running test '[test name]'[close bracket][roman type][paragraph break]";
+		unless test name is "":
+			now now-autotesting is true;
+			call test with name test name.
+
+To call test with name (test name - some text):
+	now the reborn command is "test [test name]";
+	now sp reparse flag is true.
+
+Section 3 - Measure play time
+
+To start the timer:
+	(-
+		if (glk_gestalt(gestalt_DateTime, 0)) {
+			print "Timer started.@@10";
+			glk_current_time(gameStartTime);
+		} else {
+			print "No timer available.@@10";
+		}
+	-);
+
+Include (-
+
+Array gameStartTime --> 3;   ! microseconds elapsed since midnight on January 1, 1970, GMT/UTC
+
+Array currentTime --> 3;   ! Same as above
+
+[ readTimer;
+	glk_current_time(currentTime);
+	return (currentTime-->1 - gameStartTime-->1) * 1000 + (currentTime-->2 - gameStartTime-->2) / 1000;
+];
+
+-).
+
+To decide what number is play-time: (- readTimer() -).
+
+To show play time:
+	let current-ms be play-time;
+	let current-minutes be (current-ms / 60000) to the nearest whole number;
+	now current-ms is the remainder after dividing current-ms by 60000;
+	let current-s be (current-ms / 1000) to the nearest whole number;
+	now current-ms is the remainder after dividing current-ms by 1000;
+	say "Total play time: [current-minutes]:[current-s],[current-ms][paragraph break]";
+
+To say full-game time:
+	if now-autotesting is true:
+		show play time.
 
 
 Chapter 1 - Tests - Not for release
@@ -1127,6 +1187,5 @@ To call test:
 	special_word = NextWordStopped();
 	TestScriptSub();
 -)
-
 
 Tests ends here.

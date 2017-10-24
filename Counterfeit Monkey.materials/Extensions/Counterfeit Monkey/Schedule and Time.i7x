@@ -822,7 +822,7 @@ Brock studies us for a moment more. Then he reaches into his pocket and pulls ou
 'Want one? They used them as packing material in my shipping box. We've got lots.'"
 
 
-The print the final question rule response (A) is "[full-game achievements]Would you like to "
+The print the final question rule response (A) is "[full-game achievements][full-game time]Would you like to "
 
 To say full-game achievements:
 	let line break needed be false;

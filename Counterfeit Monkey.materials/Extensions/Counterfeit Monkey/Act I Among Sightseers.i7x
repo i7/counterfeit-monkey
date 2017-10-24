@@ -302,7 +302,7 @@ Before taking inventory for the first time:
 
 A last when play begins rule (this is the initial conversation rule):
 	say "Can you hear me? >> [run paragraph on]";
-	if the player consents:
+	if now-autotesting is true or the player consents:
 		say "[line break]Good, you're conscious. We're conscious. ";
 	otherwise:
 		say "[line break]Ah, smartaleck. But we're conscious. ";
@@ -360,7 +360,9 @@ After reading a command during identification (this is the parse identification 
 			say "[banner text]";
 			say "[paragraph break]Let's try to get a look around. I haven't been able to run our body without your help, but maybe now you're awake, it'll work better.";
 		follow the scene changing rules;
-		reject the player's command.
+		unless now-autotesting is true:
+			reject the player's command.
+
 
 
 Section 2 - Tutorial Mode
