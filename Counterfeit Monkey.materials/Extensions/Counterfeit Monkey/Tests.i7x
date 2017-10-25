@@ -5,7 +5,9 @@ Use authorial modesty.
 
 Volume 8 - Tests
 
-Chapter 0 - Skipping breaks
+Chapter 0
+
+Section 1 - Skipping breaks
 
 No pauses is a truth state that varies. No pauses is initially false.
 
@@ -21,13 +23,18 @@ To custom-wait for any key:
 
 The File of Tests is called "testing".
 
-[Start automated test if File of Tests exists.]
+[Start automated test if File of Tests or File of Automated Tests exists.]
 
-A last after starting the virtual machine rule (this is the automated testing rule):
-	if the File of Tests exists:
-		say "[first custom style][bracket]Test mode active. No waiting for key presses, deterministic randomness[close bracket][roman type][paragraph break]";
+A last after starting the virtual machine rule (this is the no pauses rule):
+	if the File of Tests exists or the file of Automated Tests exists:
+		say "[first custom style][bracket]Test mode active. No waiting for key presses, deterministic randomness.[close bracket][roman type]";
 		seed the random-number generator with 1234;
 		now no pauses is true;
+		if glulx system clock is supported:
+			start the timer;
+		otherwise:
+			say "[line break][first custom style][bracket]This interpreter does not provide system clock functionality. Play time will not be shown.[close bracket][roman type][paragraph break]";
+		say paragraph break;
 
 Understand "pauses on" as on-pausing. On-pausing is an action out of world.
 Understand "pauses off" as off-pausing. Off-pausing is an action out of world.
@@ -44,6 +51,127 @@ Understand "random-seed [number]" as reseeding. Reseeding is an action out of wo
 Carry out reseeding:
 	say "[first custom style][bracket]Random-number generator seeded with [the number understood].[close bracket][roman type]";
 	seed the random-number generator with the number understood.
+
+
+
+Section 2 - Automated testing
+
+The automated testing rule translates into I6 as "StartAutoTests".
+The automated testing rule is listed last in the after starting the virtual machine rules.
+The attempt to load a precomputation data file rule does nothing if the File of Automated Tests exists or the File of Tests exists.
+
+To decide whether the file of Automated Tests exists:
+	(- TestAutoTestsFile() -).
+
+Include (-
+
+! Hard coded file name for non-interactive tests
+Array autotestfilename -> $E0 'a' 'u' 't' 'o' 't' 'e' 's' 't' 'i' 'n' 'g' 0;
+
+[ StartAutoTests fref;
+	fref = glk_fileref_create_by_name( fileusage_InputRecord | fileusage_TextMode, autotestfilename, 0 );
+	if ( fref )
+	{
+		if ( glk_fileref_does_file_exist( fref ) )
+		{
+			if ( gg_commandstr == 0 )
+			{
+				gg_commandstr = glk_stream_open_file( fref, filemode_Read, GG_COMMANDWSTR_ROCK );
+			}
+			if ( gg_commandstr )
+			{
+				gg_command_reading = true;
+			}
+		}
+	}
+	glk_fileref_destroy( fref );
+	rfalse;
+];
+
+[ TestAutoTestsFile fref res;
+	fref = glk_fileref_create_by_name( fileusage_InputRecord | fileusage_TextMode, autotestfilename, 0 );
+	res = glk_fileref_does_file_exist( fref );
+	glk_fileref_destroy( fref );
+	return res;
+];
+
+-).
+
+
+
+Section 3 - Measure play time
+
+Include (-
+
+Array currentTime --> 0 0 0;   ! Microseconds elapsed since midnight on January 1, 1970, GMT/UTC
+Array totalTestStartTime --> 0 0 0; ! This will survive restarts
+
+Global startTime;
+Global stopTime;
+
+[ readTimer;
+	glk_current_time( currentTime );
+	return arrayAsMillisecs( currentTime );
+];
+
+[ arrayAsMillisecs theArray;
+	return theArray-->1 * 1000 + theArray-->2 / 1000;
+];
+
+-) after "Definitions.i6t".
+
+To start the timer:
+	(-
+		! If we haven't yet set a restart-persistent total test start time, do it now
+		if ( arrayAsMillisecs( totalTestStartTime ) == 0 )
+		{
+			glk_current_time( totalTestStartTime );
+			@protect totalTestStartTime 12;
+			startTime = arrayAsMillisecs( totalTestStartTime );
+		}
+		else
+		{
+			startTime = readTimer();
+		}
+	-);
+
+To stop the timer:
+	(-
+		stopTime = readTimer();
+	-);
+
+The start time is a number variable.
+The start time variable translates into I6 as "startTime".
+The stop time is a number variable.
+The stop time variable translates into I6 as "stopTime".
+
+To display the total test time:
+	if glulx system clock is supported and (the File of Tests exists or the File of Automated Tests exists):
+		stop the timer;
+		let time diff be stop time - start time;
+		say "Total play time: [time diff as time]";
+		if test start time is not start time:
+			let total diff be stop time - test start time;
+			say "[line break]Accumulated test time: [total diff as time]";
+		say paragraph break;
+
+To decide which number is test start time:
+	(- arrayAsMillisecs( totalTestStartTime ) -);
+
+To say (T - a number) as time:
+	let minutes be T / 60000;
+	let millisecs be the remainder after dividing T by 60000;
+	let seconds be millisecs / 1000;
+	now millisecs is the remainder after dividing millisecs by 1000;
+	say "[minutes]:[seconds].[no line break][millisecs]";
+
+Check quitting the game:
+	display the total test time;
+	continue the action;
+
+First before handling the final question rule:
+	display the total test time;
+
 
 
 Chapter 1 - Tests - Not for release
@@ -1127,6 +1255,5 @@ To call test:
 	special_word = NextWordStopped();
 	TestScriptSub();
 -)
-
 
 Tests ends here.

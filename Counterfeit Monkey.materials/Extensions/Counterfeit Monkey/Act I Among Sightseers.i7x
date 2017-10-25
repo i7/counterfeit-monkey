@@ -360,7 +360,8 @@ After reading a command during identification (this is the parse identification 
 			say "[banner text]";
 			say "[paragraph break]Let's try to get a look around. I haven't been able to run our body without your help, but maybe now you're awake, it'll work better.";
 		follow the scene changing rules;
-		reject the player's command.
+		reject the player's command;
+
 
 
 Section 2 - Tutorial Mode
