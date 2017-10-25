@@ -70,8 +70,20 @@ Array autotestfilename -> $E0 'a' 'u' 't' 'o' 't' 'e' 's' 't' 'i' 'n' 'g' 0;
 	{
 		if ( glk_fileref_does_file_exist( fref ) )
 		{
-			if ( ~~CommandStreamExists() )
+			if ( gg_commandstr == 0 )
+			{
+				! We haven't restarted the game this test session.
+				! Open a new command stream and set a protected full-test start time.
+
 				gg_commandstr = glk_stream_open_file( fref, filemode_Read, GG_COMMANDWSTR_ROCK );
+
+				if ( glk_gestalt(gestalt_DateTime, 0) )
+				{
+					glk_current_time( totalTestStartTime );
+					@protect totalTestStartTime 12;
+					startTime = arrayAsMillisecs( totalTestStartTime );
+				}
+			}
 			if ( gg_commandstr )
 			{
 				gg_command_reading = true;
@@ -89,21 +101,6 @@ Array autotestfilename -> $E0 'a' 'u' 't' 'o' 't' 'e' 's' 't' 'i' 'n' 'g' 0;
 	return res;
 ];
 
-[ CommandStreamExists id;
-	id = glk_stream_iterate( 0, gg_arguments );
-
-	while (id)
-	{
-		if ( gg_arguments-->0 == GG_COMMANDWSTR_ROCK )
-		{
-			gg_commandstr = id;
-			rtrue;
-		}
-		id = glk_stream_iterate( id, gg_arguments );
-	}
-	rfalse;
-];
-
 -).
 
 
@@ -112,14 +109,27 @@ Section 3 - Measure play time
 
 Include (-
 
-Array currentTime --> 3;   ! microseconds elapsed since midnight on January 1, 1970, GMT/UTC
+Array currentTime --> 3;   ! Microseconds elapsed since midnight on January 1, 1970, GMT/UTC
+Array totalTestStartTime --> 3; ! This will survive restarts
 
 Global startTime;
 Global stopTime;
 
 [ readTimer;
 	glk_current_time( currentTime );
-	return currentTime-->1 * 1000 + currentTime-->2 / 1000;
+	return arrayAsMillisecs( currentTime );
+];
+
+[ arrayAsMillisecs theArray;
+	return theArray-->1 * 1000 + theArray-->2 / 1000;
+];
+
+[ testStartTime;
+	if ( TestAutoTestsFile() )
+	{
+			return arrayAsMillisecs( totalTestStartTime );
+	}
+	return startTime;
 ];
 
 -) after "Definitions.i6t".
@@ -149,11 +159,21 @@ To display the total test time:
 	if the File of Tests exists or the file of Automated Tests exists:
 		stop the timer;
 		let time diff be stop time - start time;
-		let minutes be time diff / 60000;
-		let millisecs be the remainder after dividing time diff by 60000;
-		let seconds be millisecs / 1000;
-		now millisecs is the remainder after dividing millisecs by 1000;
-		say "Total play time: [minutes]:[seconds].[no line break][millisecs][paragraph break]";
+		say "Total play time: [time diff as time]";
+		if test start time is not start time:
+			let total diff be stop time - test start time;
+			say "[line break]Accumulated test time: [total diff as time]";
+		say paragraph break;
+
+To decide which number is test start time:
+	(- testStartTime() -);
+
+To say (T - a number) as time:
+	let minutes be T / 60000;
+	let millisecs be the remainder after dividing T by 60000;
+	let seconds be millisecs / 1000;
+	now millisecs is the remainder after dividing millisecs by 1000;
+	say "[minutes]:[seconds].[no line break][millisecs]";
 
 Check quitting the game:
 	display the total test time;
