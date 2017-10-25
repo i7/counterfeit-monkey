@@ -27,10 +27,14 @@ The File of Tests is called "testing".
 
 A last after starting the virtual machine rule (this is the no pauses rule):
 	if the File of Tests exists or the file of Automated Tests exists:
-		say "[first custom style][bracket]Test mode active. No waiting for key presses, deterministic randomness[close bracket][roman type][paragraph break]";
+		say "[first custom style][bracket]Test mode active. No waiting for key presses, deterministic randomness.[close bracket][roman type]";
 		seed the random-number generator with 1234;
 		now no pauses is true;
-		start the timer;
+		if glulx system clock is supported:
+			start the timer;
+		otherwise:
+			say "[line break][first custom style][bracket]This interpreter does not provide system clock functionality. Play time will not be shown.[close bracket][roman type][paragraph break]";
+		say paragraph break;
 
 Understand "pauses on" as on-pausing. On-pausing is an action out of world.
 Understand "pauses off" as off-pausing. Off-pausing is an action out of world.
@@ -54,7 +58,7 @@ Section 2 - Automated testing
 
 The automated testing rule translates into I6 as "StartAutoTests".
 The automated testing rule is listed last in the after starting the virtual machine rules.
-The attempt to load a precomputation data file rule does nothing if the file of Automated Tests exists.
+The attempt to load a precomputation data file rule does nothing if the File of Automated Tests exists or the File of Tests exists.
 
 To decide whether the file of Automated Tests exists:
 	(- TestAutoTestsFile() -).
@@ -72,17 +76,7 @@ Array autotestfilename -> $E0 'a' 'u' 't' 'o' 't' 'e' 's' 't' 'i' 'n' 'g' 0;
 		{
 			if ( gg_commandstr == 0 )
 			{
-				! We haven't restarted the game this test session.
-				! Open a new command stream and set a protected full-test start time.
-
 				gg_commandstr = glk_stream_open_file( fref, filemode_Read, GG_COMMANDWSTR_ROCK );
-
-				if ( glk_gestalt(gestalt_DateTime, 0) )
-				{
-					glk_current_time( totalTestStartTime );
-					@protect totalTestStartTime 12;
-					startTime = arrayAsMillisecs( totalTestStartTime );
-				}
 			}
 			if ( gg_commandstr )
 			{
@@ -109,8 +103,8 @@ Section 3 - Measure play time
 
 Include (-
 
-Array currentTime --> 3;   ! Microseconds elapsed since midnight on January 1, 1970, GMT/UTC
-Array totalTestStartTime --> 3; ! This will survive restarts
+Array currentTime --> 0 0 0;   ! Microseconds elapsed since midnight on January 1, 1970, GMT/UTC
+Array totalTestStartTime --> 0 0 0; ! This will survive restarts
 
 Global startTime;
 Global stopTime;
@@ -124,19 +118,18 @@ Global stopTime;
 	return theArray-->1 * 1000 + theArray-->2 / 1000;
 ];
 
-[ testStartTime;
-	if ( TestAutoTestsFile() )
-	{
-			return arrayAsMillisecs( totalTestStartTime );
-	}
-	return startTime;
-];
-
 -) after "Definitions.i6t".
 
 To start the timer:
 	(-
-		if ( glk_gestalt(gestalt_DateTime, 0) )
+		! If we haven't yet set a restart-persistent total test start time, do it now
+		if ( arrayAsMillisecs( totalTestStartTime ) == 0 )
+		{
+			glk_current_time( totalTestStartTime );
+			@protect totalTestStartTime 12;
+			startTime = arrayAsMillisecs( totalTestStartTime );
+		}
+		else
 		{
 			startTime = readTimer();
 		}
@@ -144,10 +137,7 @@ To start the timer:
 
 To stop the timer:
 	(-
-		if ( glk_gestalt(gestalt_DateTime, 0) )
-		{
-			stopTime = readTimer();
-		}
+		stopTime = readTimer();
 	-);
 
 The start time is a number variable.
@@ -156,7 +146,7 @@ The stop time is a number variable.
 The stop time variable translates into I6 as "stopTime".
 
 To display the total test time:
-	if the File of Tests exists or the file of Automated Tests exists:
+	if glulx system clock is supported and (the File of Tests exists or the File of Automated Tests exists):
 		stop the timer;
 		let time diff be stop time - start time;
 		say "Total play time: [time diff as time]";
@@ -166,7 +156,7 @@ To display the total test time:
 		say paragraph break;
 
 To decide which number is test start time:
-	(- testStartTime() -);
+	(- arrayAsMillisecs( totalTestStartTime ) -);
 
 To say (T - a number) as time:
 	let minutes be T / 60000;
