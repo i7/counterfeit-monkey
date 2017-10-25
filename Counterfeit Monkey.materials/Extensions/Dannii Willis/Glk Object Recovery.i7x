@@ -1,4 +1,4 @@
-Version 1/160919 of Glk Object Recovery (for Glulx only) by Dannii Willis begins here.
+Version 1/171025 of Glk Object Recovery (for Glulx only) by Dannii Willis begins here.
 
 "A low level utility library for managing Glk references after restarting or restoring"
 
@@ -92,10 +92,8 @@ Include (-
 	statuswin_cursize = 0;
 	gg_foregroundchan = 0;
 	gg_backgroundchan = 0;
-	#Ifdef DEBUG;
-		gg_commandstr = 0;
-		gg_command_reading = false;
-	#Endif;
+	gg_commandstr = 0;
+	gg_command_reading = false;
 	rfalse;
 ];
 -).
@@ -117,8 +115,8 @@ Include (-
 ];
 -).
 
-The identify built in windows streams rule is listed first in the glulx resetting-streams rules.
-The identify built in windows streams rule translates into I6 as "GOR_indentify_streams".
+The identify built in streams rule is listed first in the glulx resetting-streams rules.
+The identify built in streams rule translates into I6 as "GOR_indentify_streams".
 Include (-
 [ GOR_indentify_streams;
 	switch ( (+ current glulx rock +) )
@@ -127,14 +125,12 @@ Include (-
 			gg_savestr = (+ current glulx rock-ref +);
 		GG_SCRIPTSTR_ROCK:
 			gg_scriptstr = (+ current glulx rock-ref +);
-		#Ifdef DEBUG;
-			GG_COMMANDWSTR_ROCK:
-				gg_commandstr = (+ current glulx rock-ref +);
-				gg_command_reading = false;
-			GG_COMMANDRSTR_ROCK:
-				gg_commandstr = (+ current glulx rock-ref +);
-				gg_command_reading = true;
-		#Endif;
+		GG_COMMANDWSTR_ROCK:
+			gg_commandstr = (+ current glulx rock-ref +);
+			gg_command_reading = false;
+		GG_COMMANDRSTR_ROCK:
+			gg_commandstr = (+ current glulx rock-ref +);
+			gg_command_reading = true;
 	}
 	rfalse;
 ];
