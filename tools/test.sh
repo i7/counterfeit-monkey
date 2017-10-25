@@ -6,6 +6,7 @@ path_to_interpreter=./git
 
 rm monkeyac.glkdata
 rm "Counterfeit Monkey-startup-data.glkdata"
+rm "autotesting.txt"
 
 touch testing.glkdata
 
