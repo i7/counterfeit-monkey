@@ -242,6 +242,9 @@ Instead of taking something which is part of the clothing shops:
 Instead of buying something which is part of the clothing shops:
 	say "Though [the noun] [are] theoretically for sale, there's no one in at the moment to sell [them] to us."
 
+Instead of putting the restoration gel on something which is part of the clothing shops:
+	say "The shop window is, unsurprisingly, not open to reach into."
+
 The typographer's office is a facade in Sigil Street.  It is scenery.
 	Understand "sign" or "display" or "poster" or "typographer" or "font" or "fonts" or "comma" or "commas" or "punctuation" as the typographer's office. It fronts north. The description of the typographer's office is "The office advertises custom fonts and symbols, though it is very unlikely that anyone decides to have a custom font made simply because they happened to catch a notice in a shop window. In hon[our] of the holiday, there is also a display poster showing the form of the humble comma as it manifests itself in a variety of popular fonts."
 
