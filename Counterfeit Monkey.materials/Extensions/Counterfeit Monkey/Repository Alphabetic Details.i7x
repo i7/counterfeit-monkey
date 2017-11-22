@@ -2798,12 +2798,12 @@ When roc-soaring ends:
 
 After looking when the location is Abandoned Shore and the roc is in Precarious Perch:
 	move the roc to Abandoned Shore;
-	say "There is a sound of wings and a gust of wind, and [the roc] lands in front of [us].";
+	say “A gust of wind lifts our hair, and [the roc] lands in front of [us].";
 	continue the action.
 
 After looking when the location is Open Sea and the roc is in Abandoned Shore:
 	move the roc to Open Sea;
-	say "There is a cry like that of an eagle, and [we] look up to see [the roc] circling in the sky .";
+	say “The roc screams, and [we] look up to see it circling in the sky .";
 	continue the action.
 
 [The printed name of a fake-rock is "rock". Understand "rock" as a fake-rock. The description of the fake-rock is "It looks like a sedimentary stone."
