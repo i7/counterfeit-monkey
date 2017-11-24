@@ -1416,7 +1416,7 @@ Before going somewhere when the player is staid and the unleavable is something:
 This is the don't-leave-the-unleavable rule:
 	let the needed-thing be the unleavable;
 	while the needed-thing is something:
-		if the holder of the needed-thing is in a closed container (called the box):
+		if the needed-thing is enclosed by a closed container (called the box) and the player is not enclosed by the box:
 			try opening the box;
 		if the needed-thing is the iron-pans:
 			reduce iron-pans;
