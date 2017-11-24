@@ -1547,7 +1547,7 @@ After going to the Rectification Room when the alterna-snap is in the large cart
 	now the alterna-snap is essential;
 	continue the action.
 
-Check going to Samuel Johnson Hall from Samuel Johnson Basement when the alterna-snap is in the large carton and the player is hurrying:
+Check going from Samuel Johnson Basement when the alterna-snap is in the large carton and the player is hurrying and final destination is not Rectification Room:
 	clear path-walked for the player;
 	now the player carries the alterna-snap;
 	say "We retrieve the snap as we walk past the carton."
@@ -1733,7 +1733,7 @@ The letter-remover comes out again looking exactly the same as when it went in. 
 Section 9 - Graduate Student Office
 
 
-South of Samuel Johnson Basement is the Graduate Student Office. The description of the Graduate Student Office is "A small windowless room divided into cubicles for individual graduate students." Graduate Student Office is indoors and southern.
+South of Samuel Johnson Basement is the Graduate Student Office. The description of the Graduate Student Office is "A small windowless room divided into cubicles for individual graduate students." Graduate Student Office is indoors and southern and checkpoint.
 
 A tiny refrigerator is a refrigerator in the Graduate Student Office. The tiny refrigerator is not scenery. The fridge-top is part of the tiny refrigerator. It is a supporter. The printed name of the fridge-top is "fridge". Understand "top" or "top of fridge" as the fridge-top. The scent-description of the tiny refrigerator is "onions".
 
@@ -1817,7 +1817,7 @@ Instead of drinking the water cooler:
 
 Section 10 - Brown's Lab
 
-Southwest of Samuel Johnson Basement is Brown's Lab. Brown's Lab is indoors and southern.
+Southwest of Samuel Johnson Basement is Brown's Lab. Brown's Lab is indoors and southern and checkpoint.
 
 Sanity-check going to Brown's Lab when Higgate-arrested has happened:
 	say "The whole area is likely under inspection after Brown's little Judas act back there. Who knew he had it in him? Is he seriously expecting to get her position?" instead.
@@ -1873,7 +1873,7 @@ Rule for deciding the concealed possessions of Professor Brown:
 
 Section 11 - Lecture Hall
 
-Lecture Hall 1 is east of Samuel Johnson Basement. The description is "The main lecture hall used for large survey courses in language studies offered to undergraduates. I sat through courses here when I was an undergraduate myself, and have now delivered a few lectures as a teaching assistant." Lecture Hall 1 is indoors and southern.
+Lecture Hall 1 is east of Samuel Johnson Basement. The description is "The main lecture hall used for large survey courses in language studies offered to undergraduates. I sat through courses here when I was an undergraduate myself, and have now delivered a few lectures as a teaching assistant." Lecture Hall 1 is indoors and southern and checkpoint.
 
 Out-direction of Lecture Hall 1 is west. [Back to Samuel Johnson basement]
 
