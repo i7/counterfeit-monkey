@@ -1561,7 +1561,8 @@ Instead of going to the Rectification Room when the large carton does not contai
 	say "[one of]Before [we] go through the door to the Rectification Room, it occurs to us that Professor Brown is just next door, and that he is likely to be able to hear if [we] do anything in there. Possibly some kind of masking noise is in order[or][if the noisemaker is something][The noisemaker] [do] make noise, but you figure we should leave [them] out here in the hallway so that it will be louder than whatever we do in the room[otherwise]I defer to your judgment that [we] ought to provide some masking sound before proceeding[end if][stopping].".
 
 Instead of dropping something in Samuel Johnson Basement when the heft of the noun is less than 4:
-	say "I'll just leave [regarding the noun][those] in the carton; less likely to be disturbed there.";
+	unless the noun is in the large carton:
+		say "I'll just leave [regarding the noun][those] in the carton; less likely to be disturbed there.";
 	try inserting the noun into the large carton;
 
 After dropping something noisy in the large carton:
