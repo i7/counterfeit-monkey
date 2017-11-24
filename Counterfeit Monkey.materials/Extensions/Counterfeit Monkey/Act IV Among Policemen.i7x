@@ -21,7 +21,10 @@ The description of the distant-rotunda is "It is brighter blue than the sky and 
 Rule for listing exits when looking in Tall Street:
 	if Pinata Celebration is happening:
 		do nothing instead;
-	say "To the [south] is the important blue [rotunda] of the Bureau of Orthography. The street runs [west] towards the busy roundabout."
+	if boldening is true:
+		say "To the [b]south[/b] is the important blue [b]rotunda[/b] of the Bureau of Orthography. The street runs [b]west[/b] towards the busy roundabout.";
+	else:
+		say "To the south is the important blue rotunda of the Bureau of Orthography. The street runs west towards the busy roundabout."
 
 The employment office is a facade in Tall Street. It fronts north.  It is scenery.
 	The description is "Only the stencilled lettering in the window identifies this place: Temporary Employment For Job Seekers. The blinds are down and the door locked. It doesn't look like a large facility." Understand "blinds" or "blind" or "door" or "window" or "lettering" as the employment office.
