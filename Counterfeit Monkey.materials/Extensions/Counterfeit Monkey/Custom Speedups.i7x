@@ -44,7 +44,7 @@ A player's action awareness rule
 Include (-
 
 	[ MyAllSetMarkedInvisible obj;
-		for (obj=IK2_First: obj: obj=obj.IK2_Link) {
+		for (obj = IK2_First: obj: obj = obj.IK2_Link) {
 			give obj ~(+ marked-visible +);
 		}
 	];
