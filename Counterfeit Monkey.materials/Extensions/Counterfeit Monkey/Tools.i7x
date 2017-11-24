@@ -37,7 +37,7 @@ A don't change irretrievable rule for a thing (called the item):
 		the rule fails;
 	if the item is a person:
 		make no decision;
-	say "First [we] try to remove anything useful from [the item]. [run paragraph on]";
+	say "First [we] try to remove everything useful from [the item]. [run paragraph on]";
 	let essential-list be the list of essential things enclosed by item;
 	let taken-list be a list of things;
 	let holder-list be a list of things;
