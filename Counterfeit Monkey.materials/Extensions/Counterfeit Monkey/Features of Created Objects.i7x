@@ -11,8 +11,27 @@ Section 1 - Legality
 
 A thing can be legal or illegal. A thing is usually legal.
 
-Before going to the Antechamber when the player has a backpack:
-	stow gear.
+Tried-hiding-plans is a truth state that varies. Tried-hiding-plans is initially false.
+
+Before going to the Antechamber when the backpack is enclosed by location:
+	if the player is hurrying:
+		if the number of entries in the described motion of the player is greater than 1:
+			say "[path-walked so far][line break][paragraph break]";
+		otherwise:
+			clear path-walked for player;
+	if the player has the secret-plans:
+		say "[if tried-hiding-plans is false]We try hiding the plans in the backpack before approaching the secretary ahead, but they are too long to fit. We decide to stay where we are for now.[otherwise][still-too-long][end if]";
+		now tried-hiding-plans is true;
+		stop the action;
+	follow the don't-leave-the-unleavable rule;
+	if the player has the secret-plans and tried-hiding-plans is true:
+		say still-too-long instead;
+	stow gear;
+	if the player has the secret-plans:
+		stop the action.
+
+To say still-too-long:
+	say "The plans are still too long to hide in the backpack[one of]. I don't think we should let the secretary ahead see us with them[or][stopping]."
 
 [Before approaching a room that encloses a police person when the player has a backpack:
 	if the room gone to is the fish Market:
@@ -30,7 +49,9 @@ To stow gear:
 			silently try opening the backpack;
 		repeat with item running through L:
 			if item is the secret-plans:
-				say "[line break]The rolled-up plans are too long to fit, however, so we try to hold them hidden behind our back instead.";
+				say "[line break][if tried-hiding-plans is false]The rolled-up plans are too long to fit, however, so we stop and consider our options[otherwise]The plans are still too long[end if].";
+				now tried-hiding-plans is true;
+				stop the action;
 			otherwise:
 				silently try inserting the item into the backpack;
 		silently try closing the backpack;
@@ -45,6 +66,12 @@ Every turn when location is the Antechamber (this is the caught by police rule):
 			say "The attention of [the secretary] lights on [the evidence]. 'Let's see [regarding the evidence][those],' she says. [paragraph break]Of course, her quick inspection doesn't make her any happier, and she sends the room into lockdown.";
 			end the story saying "Our arrest goes badly";
 			the rule fails.
+
+Table of Ultratests (continued)
+topic	stuff	setting
+"hidestuff"	{ backpack, secret-plans, crate, silver tray }	Rotunda
+
+Test hidestuff with "unmonkey / put tray in crate / put plans on tray / close crate / south".
 
 
 Section 2 - Proffering and thing relations
