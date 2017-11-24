@@ -242,6 +242,17 @@ A try reaching rule for something (called the target):
 		say "[We] cannot reach [the second noun] from here.";
 		abide by the cancel multiple rule.
 
+After opening an opaque container (called the box):
+	if the box is open:
+		mark contents of box visible;
+		continue the action.
+
+After closing an opaque container (called the box):
+	if the box is closed:
+		mark contents of box invisible;
+		now the box is marked-visible;
+		continue the action.
+
 Sanity-check giving something held by someone (called the target) to the target:
 	say "[The target] already [have] [the noun]." instead.
 

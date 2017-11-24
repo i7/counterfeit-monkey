@@ -13,6 +13,12 @@ To rapidly set (n - an object) marked visible:
 To rapidly set everything marked-visible as seen:
 	(- MySetAllMarkedVisibleAsSeen(); -).
 
+To mark contents of (box - a container) visible:
+	(- MarkContentsVisible({box}); -).
+
+To mark contents of (box - a container) invisible:
+	(- MarkContentsInvisible({box}); -).
+
 To decide which object is the unleavable:
 	(- FindUnleavableLoop(real_location) -).
 
@@ -51,8 +57,61 @@ Include (-
 	[ MySetAllMarkedVisibleAsSeen obj;
 		for (obj=IK2_First: obj: obj=obj.IK2_Link) {
 			if (obj has (+ marked-visible +) )
-				give obj (+ seen +);
+				 obj.(+ seen +) = true;
 		}
+	];
+
+	[ MarkContentsVisible start o;
+		!loop through everything in start object
+		for (o=start : o :) {
+			give o (+ marked-visible +);
+			o.(+ seen +) = true;
+
+			!Check any components recursively
+			if (o.component_child)
+				MarkContentsVisible(o.component_child);
+
+			if (o.component_sibling)
+				MarkContentsVisible(o.component_sibling);
+
+			! Don't look inside closed opaque containers
+			if (child(o) &&  ~~((o has openable && o hasnt open) && o hasnt transparent))
+				o = child(o);
+			else
+				while (o) {
+					if (sibling(o)) { o = sibling(o); break; }
+
+					o = parent(o);
+					if ( o == parent(start)) return;
+				}
+		}
+		return;
+	];
+
+	[ MarkContentsInvisible start o;
+		!loop through everything in start object
+		for (o=start : o :) {
+			give o ~(+ marked-visible +);
+
+			!Check any components recursively
+			if (o.component_child)
+				MarkContentsInvisible(o.component_child);
+
+			if (o.component_sibling)
+				MarkContentsInvisible(o.component_sibling);
+
+			! Don't look inside closed opaque containers
+			if (child(o) &&  ~~((o has openable && o hasnt open) && o hasnt transparent))
+				o = child(o);
+			else
+				while (o) {
+					if (sibling(o)) { o = sibling(o); break; }
+
+					o = parent(o);
+					if ( o == parent(start)) return;
+				}
+		}
+		return;
 	];
 
 	[ IsUnleavable obj;
