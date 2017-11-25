@@ -1214,7 +1214,11 @@ Carry out gelling something:
 	if the tub is marked-visible:
 		try putting the restoration gel on the noun instead.
 
-Understand "[paste] [something]" as putting it on.
+Understand "paste [something]" or "origin paste [something]" as pasting. Pasting is an action applying to one thing.
+
+Carry out pasting something:
+	if the origin paste is marked-visible:
+		try putting the origin paste on the noun instead.
 
 Sanity-check waving the restoration gel:
 	try waving the holder of the restoration gel instead.
