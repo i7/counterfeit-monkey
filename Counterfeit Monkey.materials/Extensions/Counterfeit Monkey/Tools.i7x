@@ -1212,13 +1212,17 @@ Carry out gelling something:
 	if the tube is marked-visible:
 		say "[one of]Unfortunately, there's hardly any gel remaining in the tube.[or]There isn't enough gel remaining in the little tube for use.[at random]" instead;
 	if the tub is marked-visible:
-		try putting the restoration gel on the noun instead.
+		try putting the restoration gel on the noun instead;
+	otherwise:
+		say "[one of][We] can't gel [the noun] without any gel[or][We] have no gel to gel [the noun] with[cycling]."
 
 Understand "paste [something]" or "origin paste [something]" as pasting. Pasting is an action applying to one thing.
 
 Carry out pasting something:
 	if the origin paste is marked-visible:
-		try putting the origin paste on the noun instead.
+		try putting the origin paste on the noun instead;
+	otherwise:
+		say "[one of][We] can't paste [the noun] without any paste[or][We] have no paste to paste [the noun] with[cycling]."
 
 Sanity-check waving the restoration gel:
 	try waving the holder of the restoration gel instead.
