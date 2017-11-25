@@ -1273,8 +1273,26 @@ Sanity-check inserting something gel-related (called the target) into the target
 		continue the action.
 
 Sanity-check putting the tub on the tub:
-	if the player's command includes "gel on/onto/tub":
-		try putting the restoration gel on the tub instead.
+	if the subcommand of the second noun includes "gel":
+		if the player's command includes "tub":
+			try putting the tub on the restoration gel instead;
+		otherwise:
+			try putting the restoration gel on the restoration gel instead;
+	otherwise:
+		if the subcommand of the second noun includes "tub" and the player's command includes "gel":
+			try putting the restoration gel on the tub instead.
+
+Sanity-check putting the restoration gel on the tub:
+	say "There is restoration gel all over the inside of the tub already." instead.
+
+Sanity-check putting the tub on the restoration gel:
+	say "Well, I guess the tub is on (and under, and all around) the restoration gel already." instead.
+
+Sanity-check putting the restoration gel on the restoration gel:
+	say "Well, I suppose the restoration gel is smeared all over itself already." instead.
+
+Sanity-check putting the origin paste on the origin paste:
+	say "The Origin Paste is smeared all over itself already, I guess." instead.
 
 Sanity-check taking the tub when the player carries the tub:
 	if the subcommand of the tub matches the text "gel" or the subcommand of the tub matches the text "restoration gel":
