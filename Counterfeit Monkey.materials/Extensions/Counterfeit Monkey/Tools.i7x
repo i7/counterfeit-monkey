@@ -1210,7 +1210,10 @@ Understand "gel [something]" as gelling. Gelling is an action applying to one th
 
 Carry out gelling something:
 	if the tube is marked-visible:
-		say "[one of]Unfortunately, there's hardly any gel remaining in the tube.[or]There isn't enough gel remaining in the little tube for use.[at random]" instead;
+		if the noun is the tube:
+			try putting the tube on tube instead;
+		otherwise:
+			say "[one of]Unfortunately, there's hardly any gel remaining in the tube.[or]There isn't enough gel remaining in the little tube for use.[at random]" instead;
 	if the tub is marked-visible:
 		try putting the restoration gel on the noun instead;
 	otherwise:
@@ -1243,10 +1246,11 @@ Sanity-check opening the restoration gel:
 	try opening the holder of the restoration gel instead.
 
 Sanity-check putting the tube on the tube:
-	if the player's command includes "gel on/onto/tube":
-		say "The gel doesn't restore the contents of things: it changes back items that have been linguistically manipulated." instead;
-	otherwise:
-		continue the action.
+	unless the barker has the tube:
+		if the subcommand of the second noun includes "tube" and the player's command includes "gel":
+			say "The gel doesn't restore the contents of things: it changes back items that have been linguistically manipulated." instead;
+		if the subcommand of the second noun includes "gel" and the player's command includes "tube":
+			say "Well, I guess the tube is on (and under, and all around) whatever little restoration gel remains already." instead.
 
 Before putting the tub on something:
 	if the subcommand of the tub matches the text "gel" or the subcommand of the tub matches the text "restoration gel":
