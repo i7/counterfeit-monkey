@@ -1095,6 +1095,9 @@ Instead of doing something in the presence of Professor Higgate when the noun is
 Instead of going somewhere when the location is the Seminar Room and Professor Higgate is in the location:
 	say "[We] got in here on the pretext of putting the book away. It would be odd to leave again without doing so."
 
+Sanity-check inserting something into the LSR Bookcase:
+	try putting the noun on the LSR Bookcase instead.
+
 After putting the Problem of Adjectives on the LSR Bookcase:
 	say "[We] take a moment to find the proper place for the book.
 
