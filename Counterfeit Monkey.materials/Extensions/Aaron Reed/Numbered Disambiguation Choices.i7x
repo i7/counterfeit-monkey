@@ -64,7 +64,7 @@ Chapter - When to reset numbers
 
 After reading a command when the number of entries in list of disambiguables > 0 (this is the Numbered Disambiguation Choices reset disambiguation id when no numbers in command rule):
 	let disam-cmd be "[the player's command]";
-	replace the regular expression "\)" in disam-cmd with " ";
+	replace the text ")" in disam-cmd with " ";
 	unless disam-cmd matches the regular expression ".*\d.*":
 		follow the Numbered Disambiguation Choices reset disambiguables rule;
 	otherwise:

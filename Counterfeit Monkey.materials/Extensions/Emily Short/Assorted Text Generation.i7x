@@ -213,7 +213,7 @@ To say (count - a number) in round numbers:
 		begin;
 			let N be indexed text;
 			let N be "[approximation entry]";
-			replace the regular expression " of" in N with "";
+			replace the text " of" in N with "";
 			replace the text "no" in N with "zero";
 			say "[N]";
 			rule succeeds;
