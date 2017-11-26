@@ -357,7 +357,6 @@ After reading a command during identification (this is the parse identification 
 			now new first name is "[the player's command]";
 			replace the regular expression "\p" in new first name with "";
 			now new first name is new first name in sentence case;
-			replace the regular expression "\p" in new first name with "";
 			if new first name is "Andra":
 				say "...yes! Okay. We're both here, neither of us lost our minds in the synthesis process. ";
 			otherwise:
