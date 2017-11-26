@@ -1247,9 +1247,9 @@ Sanity-check opening the restoration gel:
 
 Sanity-check putting the tube on the tube:
 	unless the barker has the tube:
-		if the subcommand of the second noun includes "tube" and the player's command includes "gel":
+		if the subcommand of tube includes "tube" and the player's command includes "gel":
 			say "The gel doesn't restore the contents of things: it changes back items that have been linguistically manipulated." instead;
-		if the subcommand of the second noun includes "gel" and the player's command includes "tube":
+		if the subcommand of the tube includes "gel" and the player's command includes "tube":
 			say "Well, I guess the tube is on (and under, and all around) whatever little restoration gel remains already." instead.
 
 Before putting the tub on something:
@@ -1285,13 +1285,13 @@ Sanity-check inserting something gel-related (called the target) into the target
 		continue the action.
 
 Sanity-check putting the tub on the tub:
-	if the subcommand of the second noun includes "gel":
+	if the subcommand of the tub includes "gel":
 		if the player's command includes "tub":
 			try putting the tub on the restoration gel instead;
 		otherwise:
 			try putting the restoration gel on the restoration gel instead;
 	otherwise:
-		if the subcommand of the second noun includes "tub" and the player's command includes "gel":
+		if the subcommand of the tub includes "tub" and the player's command includes "gel":
 			try putting the restoration gel on the tub instead.
 
 Sanity-check putting the restoration gel on the tub:

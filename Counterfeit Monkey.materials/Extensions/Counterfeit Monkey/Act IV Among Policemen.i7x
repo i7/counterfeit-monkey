@@ -175,7 +175,7 @@ Does the player mean waving the letter-remover at the soap dispenser:
 	it is very unlikely.
 
 Sanity-check taking the soap dispenser when the soap is in the soap dispenser:
-	if the subcommand of the noun matches the text "soap":
+	if the subcommand of the soap dispenser matches the text "soap":
 		try squeezing the soap dispenser instead.
 
 Instead of squeezing the soap dispenser:
