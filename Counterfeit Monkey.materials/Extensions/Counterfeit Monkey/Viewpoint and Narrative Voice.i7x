@@ -85,7 +85,7 @@ To say nerve-damage:
 
 Understand "bother" or "curses" or "drat" or "darn" as a mistake ("No kidding.").
 
-Understand "shit" or "fuck" or "damn" as a mistake ("Hey, calm down.").
+Understand "shit" or "fuck" or "fucking hell" or "hell" or "damn" or "god damn" or "goddamn" as a mistake ("Hey, calm down.").
 
 Section 2 - Making TRD first plural
 
