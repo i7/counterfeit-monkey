@@ -38,6 +38,9 @@ Rule for deciding whether all includes the coffee-maker:
 Rule for deciding whether all includes a heavy thing while taking:
 	it does not.
 
+Rule for deciding whether all includes books on the LSR bookcase while taking:
+	it does not.
+
 Rule for deciding whether all includes things enclosed by the player while taking or taking off or removing (this is the new exclude indirect possessions from take all rule):
 	if the action name part of the current action is the removing it from action:
 		it does;
@@ -243,7 +246,7 @@ Definition: a thing is single insert only:
 		yes;
 	if it is a box listed in the Table of snarky containers:
 		yes;
-	if it is not a container:
+	if it is not a container and it is not the the LSR Bookcase:
 		yes;
 	if it is enclosed by the display case:
 		yes;
