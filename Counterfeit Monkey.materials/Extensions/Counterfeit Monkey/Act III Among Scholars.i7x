@@ -1111,7 +1111,7 @@ The sound of discussion comes from down the hall: two voices speaking in Lojban,
 	now higgate's office door is closed instead.
 
 Instead of taking the Problem of Adjectives when the Problem of Adjectives is on the LSR Bookcase:
-	say "[one of]I've read it already. [or][stopping][We] better leave it here where it belongs."
+	say "[one of]After taking the trouble to return it, [or][stopping]I'd rather leave it here where it belongs."
 
 Instead of examining Higgate's office door when Higgate-arrested has happened:
 	say "The door is closed and sealed over with Bureau tape to prevent anyone from tampering with it in any way."
