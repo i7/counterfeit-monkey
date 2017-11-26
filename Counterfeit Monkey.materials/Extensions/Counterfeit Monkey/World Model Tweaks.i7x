@@ -61,7 +61,9 @@ A smarter parser rule when sp_normal (this is the new stripping adverbs rule):
 
 The stripping failed with rule is not listed in any rulebook. [There are too many actions in the game where "with" IS fruitful, so this often gives a misleading response.]
 
-The the Smarter Parser simplify punctuation rule is not listed in any rulebook.
+The Smarter Parser simplify punctuation rule is not listed in any rulebook.
+
+The scandalous standardize swears rule is not listed in any rulebook.
 
 When play begins (this is the change smarter parse messages rule):
 	choose row with SP rule of asking unparseable questions rule in the Table of Smarter Parser Messages;
