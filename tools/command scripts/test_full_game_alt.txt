@@ -1,0 +1,554 @@
+y
+andra
+
+tutorial off
+random-seed 1234
+pauses off
+n
+wave u-remover at mourning dress
+score
+e
+wave x-remover at codex
+x code
+unlock barrier
+set barrier to 305
+go to fair
+wave w-remover at wheel
+get heel
+e
+x diorama
+get all from diorama
+go to midway
+ask about gel
+ask whether
+2
+ask whether
+wave p-remover at apple
+get all
+talk to crowd
+wave e-remover at tube
+n
+w
+s
+ask about souvenirs
+1
+ask what is worth seeing
+ask about god
+ask why he is here
+remind him
+wave m-remover at tomes
+get toes
+n
+w
+wave h-remover at thicket
+wave s-remover at toes
+get all
+go to cinema
+ask about movie
+1
+topics
+ask where my backpack is
+argue
+topics
+ask about crime
+claim to be taking a survey
+explain
+show ticket
+w
+get all
+x flash drive
+n
+get jotter
+go to hostel
+get guidebook
+ask attendant about guidebook
+u
+ask for privacy
+ask whether she had trouble with customs
+agree
+admire
+show toe to girl
+put gel on lock
+open locker
+get all
+x plans
+go to hesychius
+buy yam
+n
+w
+put yam on sculpture
+get may
+n
+n
+dig
+get funnel
+make sandcastle
+s
+x bushes
+s
+e
+ne
+get chard
+wave s-remover at soil
+get oil
+sw
+e
+go to wall
+2
+sw
+e
+get fossil
+s
+e
+x cannon
+w
+se
+s
+x poster
+e
+wave b-remover at garbage
+wave d-remover at chard
+wave h-remover at char
+enter car
+se
+ask why the car does not run
+give oil to mechanic
+thank mechanic
+wave n-remover at funnel
+pour fuel in car
+ask whether
+ask about oil
+go to deep street
+nw
+e
+i
+wave s-remover at plans
+put plan in backpack
+wave l-remover at plan
+put all in backpack
+close backpack
+w
+nw
+n
+e
+e
+out
+s
+se
+w
+thanks
+ask what he is doing
+open backpack
+wave p-remover at spill
+get sill
+go to monkey
+ask parker about slango
+ask men about slango
+challenge
+ask for paste
+ask about winning
+ask about paste
+play game
+open backpack
+pick sill
+put gel on sill
+wave s-remover at spill
+se
+e
+se
+s
+se
+e
+ask about slango
+topics
+say who we are
+x box
+wave m-remover at modems
+put paste on odes
+wave p-remover at preamps
+tease
+wave s-remover at reams
+put paste on ream
+ask about slango
+encourage
+topics
+thank lena
+go to counterfeit
+say who we are
+get pill
+ask about trouble
+complain
+l
+go to tall street
+put paste on car
+get out
+get rifle
+get rifle
+ask teenager about tree
+shoot tree
+wave o-remover at olive branch
+enter car
+e
+e
+se
+remember leaving family
+e
+smell
+x hole
+x ash
+smell ash
+gel ash
+read card
+w
+nw
+get twig
+w
+e
+x memorial
+get poppy
+go to arbot
+ask about maps
+ask about brock
+ask about map
+x map
+buy map
+x map
+x legend
+ask about maps
+ask kate about legend
+e
+s
+n
+w
+get piece
+w
+show legend to bartender
+read legend
+thank bartender
+order screwdriver
+gel screwdriver
+l
+get screwdriver
+go to samuel johnson hall
+go home
+w
+get key
+get ring
+sw
+s
+get book
+3
+ne
+say we're
+claim
+explain
+claim
+reassure
+ne
+close window
+e
+se
+yes
+encourage
+ask how consciousness
+topics
+ask about visualization
+ask whether this liquid will be flavorless
+ask whether liquid will be water
+warn activist
+point
+explain
+topics
+donate
+s
+se
+w
+no
+ask how she is doing
+ask what would be so bad
+ask which conlangs
+ask about seminar room
+ask about book
+return book
+x card
+find car
+put gel on car
+wave h-remover at chard
+get card
+go to synthesizer
+unscrew screws
+unscrew screws
+open case
+put key in synth
+put card in synth
+synthesize
+x synth
+get crossword
+synthesize
+get card
+put gel on as
+ne
+d
+w
+sw
+ask what he is doing
+ask what love looks like
+ask how to make abstracts
+ask about abstracts
+ask whether
+thank brown
+ask what he thinks
+ask why
+ne
+gel pear
+wave r-remover at pearl
+put peal in carton
+w
+wave i-remover at pastis
+wave t-remover at pasts
+put gel on password
+go to synth
+put pass in synth
+put word in synth
+x crossword
+put gel on crossword
+put word in synth
+synthesize
+get all
+wave c-remover at chair
+get hair
+go to rectification
+activate machine
+enter password
+push 4
+insert letter-remover in machine
+e
+gel peal
+get it
+e
+get coat
+n
+x podium
+get page
+x it
+w
+get banana
+l
+s
+get sticky
+open fridge
+make coffee
+get platter
+wave c-remover at cream
+get ream
+l
+close fridge
+n
+u
+se
+open printer
+put ream in printer
+close printer
+n
+ask whether he met
+ask why he is working
+x printer
+open drawer
+close it
+read pages
+nw
+sw
+wave o-remover at coat
+put cat in synth
+pet cat
+wave s-remover at members
+put member in synth
+synthesize
+get cheese
+ne
+se
+n
+knock on door
+go to bureau
+z
+z
+z
+go to tall street
+x watch
+go to tin hut
+wave y-remover at sticky
+prop trap door with stick
+d
+open crate
+get all
+out
+get stick
+go to footpath
+wave z-remover at kudzu
+go to tall street
+x watch
+gel it
+wear swatch
+wave y-remover at army
+x pinata
+x figure
+hit figure with arm
+go to bureau
+n
+read board
+n
+s
+e
+x erc
+w
+open backpack
+wave t-remover at twig
+wear wig
+put gel on password
+open backpack
+put paste on wig
+put paste on pass
+s
+show pass
+show invitation
+ask whether
+ask
+ask about porson
+ask what the t-inserter does
+ask where the t-inserter is kept
+n
+s
+s
+e
+d
+n
+n
+e
+n
+w
+open backpack
+put gel on rock
+i
+wave e-remover at piece
+remove wig
+put pic in inserter
+ask about command center
+topics
+ask brock to kiss me
+i
+wave s-remover at fossil
+wave f-remover at foil
+put oil in inserter
+i
+x ale
+put ale in inserter
+put gel on tale
+wave p-remover at apple
+put ale in inserter
+get all
+w
+e
+put gel on pict
+get piece
+e
+deny
+lay out
+deny
+topics
+z
+put gel on rock
+l
+x roster
+ne
+i
+n
+e
+put gel on granulates
+get bullets
+s
+push button
+get gun
+load it
+n
+get umlaut
+w
+shoot odor
+open door
+n
+put gel on fable
+look up 1942
+l
+put gel on paperweight
+get weight
+x paper
+e
+x page
+1
+d
+get counter
+u
+w
+e
+e
+e
+i
+put pan in basket
+wave h-remover at chord
+get cord
+x bucket
+put pan in bucket
+get pen
+w
+plug in cord
+put counter on dais
+put weight on dais
+synthesize
+get weight
+l
+w
+d
+put counterweight on hook
+open portcullis
+e
+shoot rifle with gun
+z
+ask whether the protesters feel the same way.
+shoot rifle with gun
+put gel on astrologer
+get rifle
+shoot atlantida with rifle
+get atlantida
+w
+e
+wave s-remover at jacks
+n
+get jack
+w
+prop portcullis with jack
+w
+u
+e
+put atlantida on dais
+homonym
+ask how to fix the fusion
+topics
+go to personal apartment
+get jack
+e
+n
+d
+wave q-remover at squid
+wave l-remover at bollard
+wave d-remover at board
+wave b-remover at boar
+enter kayak
+n
+n
+get up
+open wardrobe
+wear turtleneck
+wear trousers
+fore
+read newspaper
+quit
+y

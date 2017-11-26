@@ -1,0 +1,236 @@
+y
+andra
+
+tutorial off
+random-seed 1234
+pauses off
+n
+e
+wave x-remover at codex
+n
+e
+e
+ask attendant about atlantis
+w
+e
+ask attendant about guidebook
+w
+e
+ask attendant about internet
+ask who
+ask what
+2
+ask about
+what
+3
+ask about farmer
+ask about asdasdas
+u
+ask for privacy
+admire
+approve
+ask about locker
+ask about beds
+ask about bed
+ask about girl
+sympathize
+lie down
+agree
+say asfaasda
+discuss asdad with girl
+ask girl about girl
+ask backpacking girl about backpacking girl
+d
+ask about internet
+ask attendant about lockers
+w
+ask attendant about lockers
+e
+w
+go to midway
+topics
+ask about suit
+ask barker about suit
+ask barker what the gel is worth
+ask barker about game
+wave p-remover at apple
+n
+s
+get all
+go to gift shop
+topics
+ask about souvenirs
+1
+ask about church
+ask attendant about god
+ask volunteer about god
+ask volunteer about volunteer
+ask about rosehip
+n
+w
+wave h-remover at thicket
+get ticket
+go to cinema
+topics
+thank ticket-taker
+ask ticket-taker about ticket
+ask ticket-taker about movie
+1
+w
+n
+s
+e
+ask ticket-taker about asdkjasldkas
+topics
+ask ticket-taker about food
+ask about eat
+ask about foods
+ask about babel café
+ask about café
+ask about cafe
+thank ticket-taker
+go to hostel
+ask attendant about internet
+ask what other group was like
+u
+lie
+wave p-remover at pear
+wave e-remover at tube
+gel lock
+open locker
+get all
+go to hesychius
+topics
+ask farmer about yam
+go to roget
+put yam on sculpture
+go to beach
+dig 
+get funnel
+go to webster
+ne
+get chard
+wave s-remover at soil
+get oil
+sw
+e
+e
+s
+s
+e
+wave b-remover at garbage
+topics
+ask about oil
+ask about fuel
+wave d-remover at chard
+wave h-remover at char
+ask about car
+give oil to mechanic
+wave n-remover at funnel
+put fuel in car
+mechanic, thanks
+ask about car
+go to deep street
+nw
+e
+wave l-remover at plans
+wave s-remover at pans
+get pan
+put all in backpack
+close backpack
+w
+se
+w
+wave p-remover at spill
+open backpack
+wave p-remover at spill
+get sill
+go to monkey
+topics
+remember law
+ask slango about slango
+ask barman about barman
+ask barman about slango
+ask clientele about slango
+challenge parker
+ask about paste
+ask how one might go about
+ask how to win
+topics
+play the game
+give sill
+put gel on sill
+wave s-remover at spill
+get pill
+go to bookstore
+topics
+say slango
+say who
+wave p-remover at preamps
+tease
+ask lena about reams
+wave s-remover at reams
+put paste on ream
+wave m-remover at modems
+put paste on modems
+put paste on odes
+say slango
+encourage
+go to monkey
+topics
+ask parker about slango
+ask clientele about slango
+say who we are
+explain
+mutter
+ask about brock
+complain
+remember brock
+go to convenience
+put paste on car
+out
+talk to officer
+topics
+ask officer about car
+talk to teenagers
+topics
+ask teenagers about officer
+get rifle
+shoot tree
+wave o-remover at branch
+wave m-remover at arm
+wave l-remover at arm
+enter car
+go to convenience
+gel ash
+go to arbot
+ask about maps
+ask about brock
+remember
+z
+z
+z
+topics
+ask woman about map
+ask customer about map
+buy
+map
+ask customer about arbot
+ask kate about legend
+x legend
+ask kate about legend
+thank kate
+go to drinks bar
+topics
+ask parton about paddle
+ask patron about paddle
+ask mark about mark
+topics
+ask paddle about paddle
+ask about paddle
+ask about legend
+thank bartender
+buy screwdriver
+gel screwdriver
+quit
+y
