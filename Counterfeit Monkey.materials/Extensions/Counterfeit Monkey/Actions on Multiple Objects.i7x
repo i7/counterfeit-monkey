@@ -208,7 +208,7 @@ A last check multiple insert rule for something that incorporates a drawer (call
 A last check multiple insert rule for something that incorporates an oven (called target oven):
 	now second noun is target oven;
 
-[These are used to give a single reply to an action on multiple object, using a dummy object to get a sensible noun name, such as "things" in "No doubt it would be interesting to fire things out over the marina ..."]
+[These are used to give a single reply to an action on multiple objects, using a dummy object to get a sensible noun name, such as "things" in "No doubt it would be interesting to fire things out over the marina ..." when typing PUT ALL IN CANNON.]
 
 This is the fake insert rule:
 	move dummy-object to player;
