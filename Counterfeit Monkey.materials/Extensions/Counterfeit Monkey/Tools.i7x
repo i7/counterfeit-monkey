@@ -99,7 +99,7 @@ Understand "[letter-remover] [something]" as waving it at.
 After reading a command (this is the change X-remover to letter-remover rule):
 	say "[run paragraph on]";
 	let N be "[the player's command]";
-	replace the regular expression " [current setting of the letter-remover]-remover" in N with " letter-remover";
+	replace the text " [current setting of the letter-remover]-remover" in N with " letter-remover";
 	change the text of the player's command to N;
 	say "[run paragraph on]";
 
@@ -239,7 +239,7 @@ Setting action variables for waving the letter-remover device at an object which
 		now starting text is "[starting text in lower case]";
 		if the second noun is yourself:
 			now starting text is "alexandra";
-		replace the regular expression "[current setting]" in the starting text with "";
+		replace the text "[current setting]" in the starting text with "";
 		now generated object is the letter-remover device;
 		let match-list be a list of things;
 		repeat with item running through things in repository:
@@ -970,7 +970,7 @@ This is the turntable-turning rule:
 	end if;
 	repeat with item running through things in the repository
 	begin;
-		if the goal text exactly matches the regular expression "[item]", now the chosen article is the item;
+		if the goal text exactly matches the text "[item]", now the chosen article is the item;
 	end repeat;
 	if the chosen article is not X
 	begin;
