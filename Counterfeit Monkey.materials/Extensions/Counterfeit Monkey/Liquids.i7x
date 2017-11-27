@@ -24,6 +24,8 @@ Sanity-check drinking a tap (called target tap):
 
 Sanity-check inserting something into a tap (called target tap):
 	if the subcommand of the target tap matches the text "water":
+		if the target tap is not part of something:
+			say "There is no water here." instead;
 		if target tap is switched off:
 			silently try switching on target tap;
 		try inserting the noun into the tap-water;
@@ -205,7 +207,7 @@ Definition: a thing is washing-appropriate:
 		yes;
 	if it is tap-water:
 		yes;
-	if it is a tap:
+	if it is a tap which is part of something:
 		yes;
 	if it incorporates a tap:
 		yes.
@@ -273,20 +275,21 @@ Sanity-check switching off a switched off tap:
 
 Before switching on a switched off tap (called target tap):
 	let the target sink be a random container which incorporates the target tap;
-	[This works because we only allow the soap and derivates in sinks]
-	if there is a non-empty sink (called soap-sink) in location and there is a thing (called soap-thing) which is not tap-water in soap-sink:
-		now soap-thing is in target sink;
-	unless the target sink is empty:
-		say "As we turn on the water, [the list of things in target sink with definite articles] washes down the drain.";
-		repeat with item running through things in target sink:
-			if item is the soap or item is proffered by the soap:
-				move item to repository;
-				move soap to soap dispenser;
-			otherwise:
-				now the item is nowhere;
-		move tap-water to target sink;
-		now target tap is switched on;
-		stop the action;
+	if the target sink is something:
+		[This works because we only allow the soap and derivates in sinks]
+		if there is a non-empty sink (called soap-sink) in location and there is a thing (called soap-thing) which is not tap-water in soap-sink:
+			now soap-thing is in target sink;
+		unless the target sink is empty:
+			say "As we turn on the water, [the list of things in target sink with definite articles] washes down the drain.";
+			repeat with item running through things in target sink:
+				if item is the soap or item is proffered by the soap:
+					move item to repository;
+					move soap to soap dispenser;
+				otherwise:
+					now the item is nowhere;
+			move tap-water to target sink;
+			now target tap is switched on;
+			stop the action;
 
 A last description-concealing rule (this is the new running things aren't scenery rule):
 	now every open refrigerator in location is marked for listing;
@@ -297,20 +300,25 @@ The new running things aren't scenery rule is listed instead of the running thin
 A first rule for writing a paragraph about a switched on tap:
 	let S be the number of (sinks incorporating a switched on tap) enclosed by location;
 	let B be the number of (baths incorporating a switched on tap) enclosed by location;
-	if B is 0 and S is at least 2:
-		say "There are [S in words] sink taps running.[paragraph break]";
-		the rule succeeds;
+	if B is 0:
+		if S is at least 2:
+			say "There are [S in words] sink taps running.[paragraph break]";
+			the rule succeeds;
+		if S is 0:
+			the rule succeeds;
 	if B is 1 and S is 1:
 		say "[The random (switched on tap which is part of a bath) enclosed by location] and [the random (switched on tap which is part of a sink) enclosed by location] are both running.[paragraph break]";
 		the rule succeeds;
-	say "[The list of switched on taps enclosed by location] [are] running.[paragraph break]"
+	say "[The list of switched on taps which are part of something enclosed by location] [are] running.[paragraph break]"
 
 Last carry out an actor switching on a tap (called the target tap) (this is the move water supply rule):
-	move tap-water to a random container which incorporates the target tap.
+	let the target sink be a random container which incorporates the target tap;
+	if the target sink is something:
+		move tap-water to target sink.
 
-The standard report switching taps on rule response (A) is "[We] [turn] on [the noun]. Water flows into the [random container which incorporates the noun]."
+The standard report switching taps on rule response (A) is "[We] [turn] on [the noun].[if the noun is part of something] Water flows into the [random thing which incorporates the noun].[end if]"
 
-The standard report switching taps off rule response (A) is "[We] [turn] off [the noun]. The water drains away."
+The standard report switching taps off rule response (A) is "[We] [turn] off [the noun].[if the noun is part of something] The water drains away.[end if]"
 
 Check an actor washing (this is the new block washing rule):
 	if the noun is fluid:
