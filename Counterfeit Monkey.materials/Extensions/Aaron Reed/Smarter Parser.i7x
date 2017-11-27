@@ -142,10 +142,8 @@ Section - Applicable Examples
 [These two say statements are currently neutered because of a bug in nested indexed text handling under Glulx in 6E72.]
 
 To say get noun example: [say "FLOWER, for example".]
-	let noun_example be text;
-	if the number of visible things > 0:
-		now noun_example is "[random marked-visible thing]";
-	otherwise:
+	let noun_example be "[random-visible-thing]";
+	if noun_example is "nothing":
 		now noun_example is "flower";
 	say "[noun_example in upper case]".
 

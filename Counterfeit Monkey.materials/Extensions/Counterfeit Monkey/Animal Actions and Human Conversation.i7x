@@ -5251,9 +5251,6 @@ Sanity-check kissing my mother:
 Instead of waiting in the presence of my mother:
 	say "[beat][line break][paragraph break]".
 
-To decide which object is apartmental stuff:
-	(- ApartmentalThing() -)
-
 Rule for beat-producing when the current interlocutor is my mother:
 	[carry out the caching scope activity with my mother;]
 	say run paragraph on;
@@ -5273,7 +5270,7 @@ Rule for beat-producing when the current interlocutor is my mother:
 	otherwise if a switched on thing (called danger) is marked-visible:
 		try my mother switching off the danger;
 	otherwise:
-		let target be apartmental stuff;
+		let target be random-visible-thing;
 		if target is something:
 			try my mother examining the target;
 		else:
