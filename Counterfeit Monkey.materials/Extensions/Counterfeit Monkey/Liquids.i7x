@@ -239,7 +239,7 @@ Instead of examining something (called target sink) which incorporates a tap (ca
 
 Before printing the name of a drain (called target) (this is the drain identification rule):
 	if target is part of something (called target sink) which is not the galley sink:
-		say "[random thing which includes the target] " (A).
+		say "[random thing which incorporates the target] " (A).
 
 Does the player mean doing something to the tap-water:
 	it is very likely.
