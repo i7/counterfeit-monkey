@@ -3590,7 +3590,15 @@ The ten-object is r-abstract. The heft of the ten-object is 0. Understand "ten" 
 
 The description of the Tao is "It presents itself as one of those circular yin-yang symbols, part black, part white. I'm afraid Atlantean understanding of Asian philosophies is fairly simplistic."
 
-The description of a tap is "It's a tap marked [one of]Hot[or]Cold[at random][if the item described is not part of something], though not screwed into any sort of plumbing fixture at the moment[end if]."
+A tap can be hot, unhot or undecided. A tap is usually undecided.
+
+Before examining an undecided tap (called the target tap):
+	if a random chance of 1 in 2 succeeds:
+		now the target tap is hot;
+	otherwise:
+		now the target tap is unhot.
+
+The description of a tap is "It's a tap marked [if the item described is hot]Hot[otherwise]Cold[end if][if the item described is not part of something], though not screwed into any sort of plumbing fixture at the moment[end if]."
 
 The description of the tape is "It's clear tape, the kind you use to wrap presents or make childhood art projects. I made an entire paper village when I was small, at significant expense in sticky tape."
 
