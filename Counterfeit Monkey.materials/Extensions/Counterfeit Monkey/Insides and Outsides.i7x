@@ -70,7 +70,7 @@ Instead of facing inside:
 	if dir is a direction:
 		let D be the door dir from the location;
 		if D is not a door:
-			let D be a random marked-visible facade fronting dir;
+			let D be a random facade in location fronting dir;
 		if D is something:
 			say "([the D])";
 			try searching D instead;
