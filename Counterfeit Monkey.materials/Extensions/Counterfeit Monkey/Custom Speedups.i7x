@@ -13,11 +13,11 @@ To rapidly set (n - an object) marked visible:
 To rapidly set everything marked-visible as seen:
 	(- MySetAllMarkedVisibleAsSeen(); -).
 
-To mark contents of (box - a container) visible:
-	(- MarkContentsVisible({box}); -).
+To mark contents of (box - an opaque container) visible:
+	(- if (child({box})) MarkContentsVisible(child({box})); -).
 
-To mark contents of (box - a container) invisible:
-	(- MarkContentsInvisible({box}); -).
+To mark contents of (box - an opaque container) invisible:
+	(- if (child({box})) MarkContentsInvisible(child({box})); -).
 
 To decide which object is random-visible-thing:
 	(- RandomVisibleThing() -)

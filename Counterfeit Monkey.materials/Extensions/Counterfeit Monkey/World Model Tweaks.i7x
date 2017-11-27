@@ -252,7 +252,6 @@ After opening an opaque container (called the box):
 After closing an opaque container (called the box):
 	if the box is closed:
 		mark contents of box invisible;
-		now the box is marked-visible;
 		continue the action.
 
 Sanity-check giving something held by someone (called the target) to the target:
