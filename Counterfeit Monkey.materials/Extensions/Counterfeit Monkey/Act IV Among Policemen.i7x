@@ -421,7 +421,9 @@ Instead of someone going to Bureau hallway from the Antechamber when the person 
 		say "'Pass?' demands the secretary in a bored voice. [The person asked] shrugs and goes no further."
 
 Instead of going to Bureau hallway from the Antechamber when the player does not enclose the pass and player-is-allowed is false:
-	say "[path-walked so far][one of][We] stride confidently toward [the noun] [--] that's my contribution, as you're more of a shuffler or possibly a slinker. Actually, I think a little of your posture must still be showing, because [we] [are] stopped by the secretary. [or]I do my best to give us a cocky swagger, but she's on to us now. [stopping]";
+	if the number of entries in the path so far of the player is greater than 1:
+		say "[path-walked so far]";
+	say "[one of][We] stride confidently toward [the noun] [--] that's my contribution, as you're more of a shuffler or possibly a slinker. Actually, I think a little of your posture must still be showing, because [we] [are] stopped by the secretary. [or]I do my best to give us a cocky swagger, but she's on to us now. [stopping]";
 	if the player is staid:
 		say paragraph break;
 	if the current interlocutor is not the secretary, silently try saying hello to the secretary;
@@ -435,7 +437,7 @@ Sanity-check showing the pass to the secretary:
 Instead of going to Bureau hallway from the Antechamber when the player encloses the pass and the secretary encloses the Regulation Authentication Scope and player-is-allowed is false:
 	if already caught is true:
 		make no decision;
-	if the number of entries in the path so far of the player is greater than 0:
+	if the number of entries in the path so far of the player is greater than 1:
 		say "[path-walked so far]";
 	if the pass is marked invisible:
 		if the pass is enclosed by a closed container (called the barrier):
