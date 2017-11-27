@@ -3848,9 +3848,6 @@ Shaped like a headless pyramid. "0.5 kg" is stamped in the top together with the
 > get all
 /weight: I (take|get|pick up|acquire) the weight.
 /paper: I (take|get|pick up|acquire) the paper.
-/filing cabinet: I (take|get|pick up|acquire) the filing cabinet.
-
-The filing cabinet is far too large for me to carry, and falls onto the floor.
 
 > e
 
@@ -4884,9 +4881,6 @@ Shaped like a headless pyramid. "0.5 kg" is stamped in the top together with the
 > get all
 /weight: You (take|get|pick up|acquire) the weight.
 /paper: You (take|get|pick up|acquire) the paper.
-/filing cabinet: You (take|get|pick up|acquire) the filing cabinet.
-
-The filing cabinet is far too large for you to carry, and falls onto the floor.
 
 > e
 
