@@ -139,12 +139,13 @@ To identify error as (why - a rule):
 
 Section - Applicable Examples
 
-[These two say statements are currently neutered because of a bug in nested indexed text handling under Glulx in 6E72.]
-
 To say get noun example: [say "FLOWER, for example".]
-	let noun_example be "[random-visible-thing]";
-	if noun_example is "nothing":
+	let example be random-visible-thing;
+	let noun_example be text;
+	if example is nothing:
 		now noun_example is "flower";
+	otherwise:
+		now noun_example is "[example]";
 	say "[noun_example in upper case]".
 
 To say get direction example: [say "NORTH, for example".]
