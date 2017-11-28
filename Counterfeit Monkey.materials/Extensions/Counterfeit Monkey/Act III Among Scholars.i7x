@@ -1582,6 +1582,9 @@ Check recycling something when the large carton is marked invisible:
 Carry out recycling something:
 	try inserting the noun into the large carton instead.
 
+Test snap with "unlegend / purloin keycard / w / drop snap in carton / w / e / sw / ne / drop snap / w / go to lecture hall at the podium / go to basement / drop snap / go to rectification room / go to monkey" holding the alterna-snap in Samuel Johnson Basement.
+
+
 Section 8 - Rectification Room
 
 The Rectification Room is west of the small door. It is indoors, checkpoint and southern. The description is "This is where equipment is brought for a tune-up, or to have its legal limits reinstalled (or, on rare occasions, removed). Access to these abilities is tightly controlled by the Bureau."
