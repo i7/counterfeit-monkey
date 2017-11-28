@@ -1571,7 +1571,7 @@ Instead of dropping something in Samuel Johnson Basement when the heft of the no
 		say "I'll just leave [regarding the noun][those] in the carton; less likely to be disturbed there.";
 	try inserting the noun into the large carton;
 
-After dropping something noisy in the large carton:
+After inserting something noisy into the large carton:
 	say "[We] set [the noun] in the carton, where [they] ought to provide a helpful distraction for the time being."
 
 Understand "recycle [something]" as recycling. Recycling is an action applying to one carried thing.
