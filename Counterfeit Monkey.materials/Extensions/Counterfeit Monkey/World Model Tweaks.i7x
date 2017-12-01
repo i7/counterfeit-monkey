@@ -739,8 +739,9 @@ A room-restriction rule for Cold Storage when Brock-argument has not happened:
 	rule fails. ]
 
 After going a direction for the third turn:
-	if the location is visited:
-		say "[first custom style][bracket]If you're traveling far, you can always type GO TO (location name) to get there automatically.[close bracket][roman type][paragraph break]";
+	unless we have approached:
+		if the location is visited:
+			say "[first custom style][bracket]If you're traveling far, you can always type GO TO (location name) to get there automatically.[close bracket][roman type][paragraph break]";
 	continue the action.
 
 

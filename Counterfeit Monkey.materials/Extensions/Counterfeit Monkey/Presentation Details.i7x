@@ -308,7 +308,8 @@ Carry out planning:
 	say "[line break]".
 
 Report planning for the second time:
-	say "[first custom style][bracket]Remember that you can move towards your goal locations with GO TO...[close bracket][roman type][paragraph break]";
+	if tutorial mode is true:
+		say "[first custom style][bracket]Remember that you can move towards your goal locations with GO TO...[close bracket][roman type][paragraph break]";
 
 To decide what number is the count of pending tasks:
 	let N be the number of filled rows in the Table of Tasks Pending;
@@ -317,7 +318,8 @@ To decide what number is the count of pending tasks:
 After going to Fair when the barrier is unlocked and we have not planned:
 	say "I'm glad to see you're feeling ready to face the wider world. [run paragraph on]";
 	try planning;
-	say "[first custom style][bracket]To go over our current goals, type GOALS at any time.[close bracket][roman type][paragraph break]";
+	if tutorial mode is true:
+		say "[first custom style][bracket]To go over our current goals, type GOALS at any time.[close bracket][roman type][paragraph break]";
 	continue the action.
 
 
