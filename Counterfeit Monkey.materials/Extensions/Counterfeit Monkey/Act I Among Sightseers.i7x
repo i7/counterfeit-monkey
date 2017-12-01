@@ -659,10 +659,13 @@ An instructional rule (this is the teach consulting rule):
 			make no decision;
 	otherwise:
 		make no decision;
-	say "[first custom style][bracket]We can LOOK UP interesting subjects IN books, if we like.[close bracket][roman type]";
+	say "[first custom style]You can LOOK UP interesting subjects IN books, if you like.[roman type]";
 	add the teach consulting rule to the completed instruction list, if absent;
-	record "Finished tutorial mode" as an achievement;
+	the player finishes tutorial in one turn from now;
 	rule succeeds;
+
+At the time when the player finishes tutorial:
+	record "Finished tutorial mode" as an achievement.
 
 The teach disabling graphics rule is listed after the teach meta-features rule in the instructional rules.
 
