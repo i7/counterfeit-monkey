@@ -3598,6 +3598,8 @@ Before examining an undecided tap (called the target tap):
 	otherwise:
 		now the target tap is unhot.
 
+Understand "hot" as a hot tap. Understand "cold" as an unhot tap.
+
 The description of a tap is "It's a tap marked [if the item described is hot]Hot[otherwise]Cold[end if][if the item described is not part of something], though not screwed into any sort of plumbing fixture at the moment[end if]."
 
 The description of the tape is "It's clear tape, the kind you use to wrap presents or make childhood art projects. I made an entire paper village when I was small, at significant expense in sticky tape."
