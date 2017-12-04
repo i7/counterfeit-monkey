@@ -301,7 +301,7 @@ Include (-
 	rtrue;
 ];
 
-[ EverythingCarriedIsWorn par o;
+[ EverythingCarriedIsWorn o;
 	for (o=child(player) : o : ) {
 		if (o hasnt worn)
 			rfalse;
