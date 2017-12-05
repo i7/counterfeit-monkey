@@ -885,7 +885,7 @@ The repository contains a bandit and a bandage.
 [car]
 Some carpi are a kind of thing.
 
-The repository contains a carpet, 3 carpi and 3 carps.
+The repository contains a carpet, 3 carpi, and 3 carp. [crap, cap, parc ...]
 
 [card]
 [The repository contains a cardboard.] [maybe unreachable]

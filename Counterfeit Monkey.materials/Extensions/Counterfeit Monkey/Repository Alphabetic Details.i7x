@@ -508,8 +508,8 @@ Sanity-check launching or mounting or entering the carpet:
 	say "It may look like a flying carpet, but I don't think it's actually magic." instead.
 
 [carp]
-The description of a carp is usually "A large decorative Chinese goldfish. Except not all that decorative, being dead." Understand "fish" as a carp.
-	The scent-description of a carp is "faint fishiness". The heft of a carp is 4. A carp is edible.
+The description of a carp is usually "Actually a large decorative Chinese goldfish. Except not really all that decorative anymore, being dead." Understand "fish" and "goldfish" as a carp.
+	The scent-description of a carp is "faint fishiness". The heft of a carp is 3. A carp is edible.
 
 Instead of eating a carp:
 	say "I require my fish to be cleaned before I eat it, if not cooked."
