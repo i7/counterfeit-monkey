@@ -18,11 +18,161 @@ wave w-remover at wheel
 get heel
 w
 wave p-remover at pear
+get ear
 go to gift shop
 wave m-remover at tomes
 wave s-remover at toes
+get toes
 go to heritage corner
 x diorama
 wave y-remover at army
+wave e-remover at tube
+open tub
+go to hostel
+up
+x lock
+remember lock
+open locker
+x girl
+show ear to girl
+turn dial
+x dial
+d
+talk to attendant
+ask attendant about locker
+up
+put gel on dial
+get clock
+open locker
+get all
+x letter
+remember
+x plans
+wave l-remover at plans
+wave s-remover at pans
+d
+w
+w
+go to cinema
+buy ticket
+w
+get all
+open backpack
+wear monocle
+n
+get jotter
+go to hesychius street
+talk to farmer
+ask about sale
+buy asparagus
+buy lime
+wave m-remover at lime
+n
+ne
+get chard
+look
+sw
+go to crumbling wall
+get fossil
+wave s-remover at fossil
+wave f-remover at foil
+go to close
+put gel on pan
+wave l-remover at plans
+put pans on spinner
+go to beach
+get funnel
+wave n-remover at funnel
+go to high street
+z
+go to high street
+wave h-remover at chard
+wave d-remover at card
+put fuel in car
+wave b-remover at garbage
+talk to mechanic
+ask mechanic about car
+give oil to mechanic
+go to counterfeit monkey
+e
+take off monocle
+put all in backpack
+close backpack
+go to counterfeit monkey
+open backpack
+y
+go to outdoor
+open backpack
+look
+wave p-remover at spill
+get sill
+go to counterfeit monkey
+talk to barman
+ask about slango
+challenge parker about the rum
+ask about paste
+ask how
+play
+show sill to barman
+put gel on sill
+wave s-remover at spill
+show pill to barman
+put gel on pill
+wave p-remover at spill
+get sill
+get paste
+go to tin hut
+prop trap door with sill
+down
+open crate
+get all
+wave r-remover at crate
+get cate
+up
+get sill
+go to aquarium
+ask whether
+say who
+x contraband
+wave m-remover at modems
+wave s-remover at odes
+put gel on ode
+wave m-remover at modems
+wave s-remover at preamps
+wave p-remover at preamp
+put paste on ream
+put paste on odes
+ask whether
+encourage lena
+put gel on as
+go to counterfeit monkey
+x slango
+say who
+explain
+z
+a trouble
+complain
+look
+e
+go to convenience
+get out
+put paste on car
+get out
+z
+get rifle
+shoot tree
+drop rifle
+enter car
+go to oval
+go to convenience
+wave s-remover at sink
+get ink
+x hole
+look in hole
+look at ash through monocle
+smell ash
+gel ash
+get trash
+wave t-remover at trash
 quit
-yes
+y
