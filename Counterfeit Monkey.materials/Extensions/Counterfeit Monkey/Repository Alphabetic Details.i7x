@@ -236,13 +236,13 @@ Instead of listening to the location in the presence of the bard:
 
 The basin is a container. The description of the basin is "A stainless steel bowl, appropriate to cooking or perhaps surgery."
 
-The basins are a container. The description of the basins is "A couple of nested metal bowls, so generic they might equally be used for mixing dough or for holding vital organs during a surgery. The irksome thing is that, having been made as a matched set, they cannot really be separated."
+[The basins are a container. The description of the basins is "A couple of nested metal bowls, so generic they might equally be used for mixing dough or for holding vital organs during a surgery. The irksome thing is that, having been made as a matched set, they cannot really be separated."]
 
-A basis is an r-abstract thing. The description is "It's abstract, but the best the abstraction was able to come up with in this case is something that looks like a small portable pedestal. Perhaps the base on which things are established? Something like that."
+[A basis is an r-abstract thing. The description is "It's abstract, but the best the abstraction was able to come up with in this case is something that looks like a small portable pedestal. Perhaps the base on which things are established? Something like that."]
 
-A bass is an r-abstract noisy thing. The description is "A deep resonant voice with very little visible at all, save a kind of trembling in the air. There's no mistaking where it is, though. It's currently [one of]reading out the nightly news, mostly about the great success of Serial Comma Day celebrations[or]singing a popular drinking song about synonyms[or]practicing scales[at random]." The heft of the bass is 0.
+[A bass is an r-abstract noisy thing. The description is "A deep resonant voice with very little visible at all, save a kind of trembling in the air. There's no mistaking where it is, though. It's currently [one of]reading out the nightly news, mostly about the great success of Serial Comma Day celebrations[or]singing a popular drinking song about synonyms[or]practicing scales[at random]." The heft of the bass is 0.]
 
-The bass-fish is a privately-named thing. The description is "A trophy of a fish. I don't know much about species, but it does look like it has a big mouth, certainly." The printed name is "bass". Understand "bass" or "fish" as the bass-fish. The heft of the bass-fish is 3.
+[The bass-fish is a privately-named thing. The description is "A trophy of a fish. I don't know much about species, but it does look like it has a big mouth, certainly." The printed name is "bass". Understand "bass" or "fish" as the bass-fish. The heft of the bass-fish is 3.]
 
 The heft of the bat is 1. The description of the bat is "It's small and black-furred, and looks like it would rather be in a cool dark place alone with some fruit."
 
@@ -507,7 +507,24 @@ The description of the carpet is "A substantial, rectangular rug of the sort on 
 Sanity-check launching or mounting or entering the carpet:
 	say "It may look like a flying carpet, but I don't think it's actually magic." instead.
 
+[carp]
+The description of a carp is usually "A large decorative Chinese goldfish. Except not all that decorative, being dead." Understand "fish" as a carp.
+	The scent-description of a carp is "faint fishiness". The heft of a carp is 4. A carp is edible.
+
+Instead of eating a carp:
+	say "I require my fish to be cleaned before I eat it, if not cooked."
+
+Instead of smelling a carp:
+	say "[We] have at least produced a fresh fish, rather than a rotten one: consider yourself lucky."
+
+Understand "clean [carp]" as a mistake ("I do not know a lot about the proper preparation of fish.").
+
+Understand "cook [carp]" as a mistake ("Even if you know how, there's no time for that now.").
+
+[carpi]
 The description of the carpi is "Small, irregularly-shaped bones, taken from the hand of a human skeleton. They look as though they ought to be used in divination; why else would anyone keep them around?"
+
+A carpi is plural-named.
 
 [CD]
 The description of the CD is "To judge by the label, it is one of King Crimson's longer works."

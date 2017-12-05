@@ -28,6 +28,7 @@ A bat is a kind of neuter animal.
 A bet is a kind of thing.
 A bit is a kind of thing.
 A bot is a kind of thing.
+A carp is a kind of thing. [not "a kind of animal" because you get a dead carp]
 A cat is a kind of neuter animal.
 [A car is a kind of vehicle.] [ These are defined in their own section, above, because so complicated.]
 A cart is a kind of vehicle.
@@ -879,15 +880,15 @@ A bantam is in the repository.
 The repository contains a bandit and a bandage.
 
 [bins]
-The repository contains some basins, a basis, a bass, a bass-fish, a ba.
+[The repository contains some basins, a basis, a bass, a bass-fish, a ba.] [There are no bins in the game any more.]
 
 [car]
 Some carpi are a kind of thing.
 
-The repository contains a carpet and 3 carpi.
+The repository contains a carpet, 3 carpi and 3 carps.
 
 [card]
-The repository contains a cardboard. [maybe unreachable]
+[The repository contains a cardboard.] [maybe unreachable]
 
 [cart]
 The repository contains a cartage.
@@ -934,7 +935,7 @@ A keyring, a key-lime, and a keycard are in the repository. [key + chard]
 The repository contains some leases, a lease, a lass, some eases. [the ass will have to be returned to pass form before we ever get to the T-inserter or anagramming gun, so no easels or teases are possible here.]
 
 [lie]
-litotes and a toilets-collective are in the repository. The printed name of the toilets-collective is "toilets".
+litotes and a toilets-collective are in the repository. The printed name of the toilets-collective is "toilets". A toilet called toilet-sample is in the repository. The printed name of the toilet-sample is "toilet".
 
 [mile]
 A mileage is in the repository.

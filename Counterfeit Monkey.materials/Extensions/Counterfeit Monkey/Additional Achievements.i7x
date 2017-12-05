@@ -14,21 +14,25 @@ A dangerous construction rule for a fishy thing (called the product):
 			if the product is a cod:
 				choose the row with item of cod-sample in Table of Fishy Things;
 			otherwise:
-				choose the row with item of product in Table of Fishy Things;
+				if the product is a carp:
+					choose the row with item of carp-sample in Table of Fishy Things;
+				otherwise:
+					choose the row with item of product in Table of Fishy Things;
 	if made entry is false:
 		now made entry is true;
 		increment fish-seen;
 		if fish-seen is greater than 4:
 			record "Camilla Downdweller award for creating five types of fish in one playthrough" as an achievement with break before.
 
-The char-sample is a thing. the cod-sample is a thing. The eel-sample is a thing.
+The carp-sample is a thing. The char-sample is a thing. The cod-sample is a thing. The eel-sample is a thing.
 
 Table of Fishy Things
 item (a thing)	made (a truth state)
 the sunlit ray	false
 the complicit shark	false
-the bass-fish	false
+[the bass-fish	false]
 the ahi	false
+the carp-sample	false
 the char-sample	false
 the cod-sample	false
 the eel-sample	false
