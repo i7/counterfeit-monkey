@@ -137,7 +137,7 @@ Sanity-check examining a sink:
 		say "The sinks are nothing special. Clean enough, I suppose." instead.
 
 Instead of doing something when the sink-collectives is the noun or the sink-collectives is the second noun:
-	say "[We][']ve already gotten rid of all the sinks to be found in this area."
+	say "[We][']ve already gotten rid of the sinks here."
 
 [After going to Public Convenience:
 	let N be the number of entries in the path so far of the player;
