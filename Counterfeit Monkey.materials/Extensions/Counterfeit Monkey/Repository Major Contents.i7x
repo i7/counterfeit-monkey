@@ -935,7 +935,7 @@ A keyring, a key-lime, and a keycard are in the repository. [key + chard]
 The repository contains some leases, a lease, a lass, some eases. [the ass will have to be returned to pass form before we ever get to the T-inserter or anagramming gun, so no easels or teases are possible here.]
 
 [lie]
-litotes and a toilets-collective are in the repository. The printed name of the toilets-collective is "toilets". A toilet called toilet-sample is in the repository. The printed name of the toilet-sample is "toilet".
+litotes and a toilets-collective are in the repository. The printed name of the toilets-collective is "toilets".
 
 [mile]
 A mileage is in the repository.
