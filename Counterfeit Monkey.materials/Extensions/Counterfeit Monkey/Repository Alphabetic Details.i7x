@@ -508,23 +508,17 @@ Sanity-check launching or mounting or entering the carpet:
 	say "It may look like a flying carpet, but I don't think it's actually magic." instead.
 
 [carp]
-The description of a carp is usually "Actually a large decorative Chinese goldfish. Except not really all that decorative anymore, being dead." Understand "fish" and "goldfish" as a carp.
+The description of a carp is usually "A large Asian carp with white and red scales. Not that decorative anymore, being dead." Understand "fish" and "goldfish" and "scales" as a carp.
 	The scent-description of a carp is "faint fishiness". The heft of a carp is 3. A carp is edible.
 
 Instead of eating a carp:
-	say "I require my fish to be cleaned before I eat it, if not cooked."
+	say "[We] [are] not hungry. Anyway, it would feel like eating a goldfish."
 
 Instead of smelling a carp:
 	say "[We] have at least produced a fresh fish, rather than a rotten one: consider yourself lucky."
 
-Understand "clean [carp]" as a mistake ("I do not know a lot about the proper preparation of fish.").
-
-Understand "cook [carp]" as a mistake ("Even if you know how, there's no time for that now.").
-
 [carpi]
 The description of the carpi is "Small, irregularly-shaped bones, taken from the hand of a human skeleton. They look as though they ought to be used in divination; why else would anyone keep them around?"
-
-A carpi is plural-named.
 
 [CD]
 The description of the CD is "To judge by the label, it is one of King Crimson's longer works."
@@ -3192,6 +3186,12 @@ Instead of doing something when the sud must be touched:
 The printed name of the sun-product is "sun". The heft of a sun-product is 1000. The description of a sun-product is "A mass of incandescent gas [--] well, plasma, really [--] fleeting thoughts and then".
 
 The description of the sunlit ray is "Not a ray of sunlight. No. This is a dead sea-creature, perpetually lit as though by the sun." The sunlit ray is edible. The scent-description is "seawater".
+
+Instead of eating the sunlit ray:
+	say "There is something other-worldly about this thing. I don't think [we] should eat it."
+
+Instead of smelling a the sunlit ray:
+	say "The sunlight has not caused the ray to rot: consider yourself lucky."
 
 [The skit is a man. The initial appearance is "A man wearing a tea-towel over his head is enacting some kind of skit about Gandhi." The skit wears a tea-towel. The skit is r-abstract. ]
 
