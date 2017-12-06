@@ -40,7 +40,7 @@ the eel-sample	false
 Definition: a thing is fishy:
 	if it is an item listed in the Table of Fishy Things:
 		yes;
-	if it is an eel or it is a char or it is a cod:
+	if it is an eel or it is a carp or it is a char or it is a cod:
 		yes;
 	no.
 
