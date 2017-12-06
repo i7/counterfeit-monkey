@@ -32,9 +32,12 @@ A browser proffers a browser. [K80_search_engine]
 A built-in desk proffers a built-in desk. [K65_desk]
 A button proffers a button. [K2_thing]
 A cack proffers a cack. [K2_thing]
+The carp-sample proffers the carp-sample.
 The cathedral-view proffers the cathedral-view. [K7_backdrop]
+The char-sample proffers the char-sample.
 A clear windows proffers a clear windows. [K2_thing]
 A clipping proffers a clipping. [K2_thing]
+The cod-sample proffers the cod-sample.
 A code-lock proffers a code-lock. [K2_thing]
 A coffee-pot proffers a coffee-pot. [K5_container]
 A colorful skirts proffers a colorful skirts. [K2_thing]
@@ -50,6 +53,7 @@ A draft document proffers a draft document. [K2_thing]
 A drum kit proffers a drum kit. [K88_instrument]
 The ebook reader's keyboard proffers the ebook reader's keyboard. [K71_keyboard]
 The ebook reader's software proffers the ebook reader's software. [K79_software]
+The eel-sample proffers the eel-sample.
 A ethnic bodices proffers a ethnic bodices. [K2_thing]
 The expensive laptop proffers the expensive laptop. [K75_laptop]
 The expensive laptop's keyboard proffers the expensive laptop's keyboard. [K71_keyboard]
