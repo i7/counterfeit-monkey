@@ -50,11 +50,14 @@ A dangerous construction rule for the rite:
 Freaky-seen is a number that varies. Freaky-seen is initially 0.
 
 A dangerous construction rule for a freaky thing (called the product):
-	choose the row with item of product in Table of Freaky Things;
+	if the product is the toes:
+		choose the row with item of the toe in Table of Freaky Things;
+		[We count the toes and the toe as one]
+	otherwise:
+		choose the row with item of product in Table of Freaky Things;
 	if made entry is false:
 		now made entry is true;
-		unless (the product is the toes and the toe is seen) or (the product is the toe and the toes are seen):
-			increment freaky-seen;
+		increment freaky-seen;
 		if freaky-seen is greater than 4:
 			record "Igor Rosehip award for creating at least five body parts in one playthrough" as an achievement with break before.
 
