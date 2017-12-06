@@ -3191,7 +3191,7 @@ Instead of eating the sunlit ray:
 	say "There is something other-worldly about this thing. I don't think [we] should eat it."
 
 Instead of smelling a the sunlit ray:
-	say "The sunlight has not caused the ray to rot: consider yourself lucky."
+	say "The sunlight has not caused the ray to rot yet: consider yourself lucky."
 
 [The skit is a man. The initial appearance is "A man wearing a tea-towel over his head is enacting some kind of skit about Gandhi." The skit wears a tea-towel. The skit is r-abstract. ]
 
