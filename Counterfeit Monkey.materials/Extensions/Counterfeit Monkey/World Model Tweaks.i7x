@@ -155,7 +155,10 @@ To decide whether (item - a thing) must be touched:
 An accessibility rule (this is the no touching NPC stuff rule):
 	if the touch-goal is enclosed by someone (called the owner) who is not the actor and the touch-goal must be touched:
 		if the person reaching is the player:
-			say "I don't dare invade the personal space of [the owner].";
+			if the owner is distant:
+				say "[The owner] is too far away.";
+			otherwise:
+				say "I don't dare invade the personal space of [the owner].";
 		rule fails;
 	make no decision.
 
@@ -782,7 +785,7 @@ Section 1 - Far Away Things and Facades
 
 Include Far away by Jon Ingold.
 
-Instead of throwing something at something far-off:
+Instead of throwing something at something distant:
 	say "Our aim isn't nearly good enough."
 
 suppress-exit-listing is a truth state that varies.

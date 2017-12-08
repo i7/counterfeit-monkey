@@ -9,7 +9,7 @@ Section - The basic definition
 
 A thing can be near or distant. A thing is usually near.
 
-Definition: a thing is far-off if it is distant or it is enclosed by something distant.
+[Definition: a thing is far-off if it is distant or it is enclosed by something distant].
 
 Section - The Access Flag
 
@@ -33,9 +33,9 @@ The check distance rule is listed before the access through barriers rule in the
 
 Accessibility rule (this is the check distance rule): 
 	if the action requires a touchable noun: 
-		if the noun is far-off and we can't get at the noun, rule fails;
+		if the noun is a thing and the noun is distant and we can't get at the noun, rule fails;
 	if the action requires a touchable second noun: 
-		if the second noun is far-off and we can't get at the second noun, rule fails.
+		if the second noun is a thing and the second noun is distant and we can't get at the second noun, rule fails.
 
 Section - Reporting Errors
 

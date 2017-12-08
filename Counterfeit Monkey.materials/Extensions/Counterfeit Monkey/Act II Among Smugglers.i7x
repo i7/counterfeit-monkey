@@ -1186,6 +1186,8 @@ Definition: a thing is unsuitable:
 A distant stuff rule when the person asked is the All-Purpose-Officer:
 	rule succeeds.
 
+The olive branch is distant. The live branch is distant. The stuffed octopus is distant. The protest-sign is distant. The signet is distant.
+
 Every turn when the player is in Traffic Circle:
 	if the teenagers are in the location:
 		if the brown tree is not in the location:
@@ -1205,12 +1207,14 @@ Every turn when the player is in Traffic Circle:
 			say "[The All-Purpose-Officer] fires the [restoration-gel rifle] at [the live branch], but the statue is holding it at a difficult angle. The gel splatters uselessly across [the huge-metal-arm].";
 		if the All-Purpose-Officer is not enclosed by the giant Atlantida statue:
 			try the All-purpose-officer entering the giant Atlantida statue;
+			now the All-purpose-officer is distant;
 			make no decision;
 		if the All-Purpose-Officer is not on the huge-metal-arm:
 			try the all-purpose-officer entering the huge-metal-arm;
 			make no decision;
-		if the target is the stuffed octopus and the All-Purpose-Officer carries the target:
-			try the All-Purpose-Officer dropping the target;
+		if the target is the stuffed octopus and the All-Purpose-Officer carries the stuffed octopus:
+			try the All-Purpose-Officer dropping the the stuffed octopus;
+			now the stuffed octopus is near;
 			make no decision;
 		try the All-Purpose-Officer touching the target;
 	otherwise:
@@ -1220,6 +1224,7 @@ Every turn when the player is in Traffic Circle:
 			make no decision;
 		if the All-Purpose-Officer is on the giant Atlantida statue:
 			try the All-purpose-officer exiting;
+			now the All-purpose-officer is near;
 			make no decision;
 		if the restoration-gel rifle is in the location:
 			try the All-Purpose-Officer taking the restoration-gel rifle;
