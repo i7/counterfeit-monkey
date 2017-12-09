@@ -1409,7 +1409,7 @@ When play begins (this is the setting up your bunk rule):
 	otherwise:
 		say "ERROR: found no leftmost drawer in Your Bunk!"
 
-Every turn when portholes are in location:
+Every turn when the location is nautical and portholes are in location:
 	if a random chance of 1 in 13 succeeds:
 		say "[one of]Odd patterns of light dance on the ceiling, reflected through the portholes from the water outside.[or]The yacht rolls gently under the influence of an especially strong wave.[or]The waves lap gently against the side of the ship.[or]Just outside the porthole, a seabird is visible resting on the waves; and then it floats on.[or]The wake of what must be quite a large ship raises the [i]True Macaque[/i] and then lowers her again.[as decreasingly likely outcomes]".
 
