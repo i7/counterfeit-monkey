@@ -18,6 +18,7 @@
 - Fixes a bug where the spinner would sometimes spin twice the same turn.
 - The map is now always the same width as the graphics window.
 - Allows turning tutorial mode back on unless we have left the starting area.
+- Adds new testing functionality where a file named AUTOTESTING.TXT (or just AUTOTESTING on some interpreters) will be read as a list of input commands.
 - Adds the testing command PAUSES OFF to disable the game pausing and waiting for a key press. Enable it again with PAUSES ON.
 - Adds the testing command RANDOM-SEED (number) to reset the random seed to any number.
 - Includes some primitive testing scripts that pipe a text file of commands into the game and compares the output to an older transcript.
@@ -40,6 +41,9 @@
 
 ### Gameplay changes
 
+- Adds four new achievements.
+- Disallows removing The Problem of Adjectives from the Language Studies seminar room bookcase.
+- Disallows putting restoration gel on the morning dress.
 - You can now leave the rock behind until you have found out that it is Brock.
 - Allows destroying fake people by destroying their container or supporter.
 - Allows cutting the kudzu with the jigsaw.
