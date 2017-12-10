@@ -263,7 +263,7 @@ Some yellow buildings are a facade in Back Alley. They front east. They are scen
 Does the player mean finding the yellow buildings:
 	it is very unlikely.
 
-Does the player mean doing something to the letter-remover when the location is Back Alley:
+Does the player mean doing something to the letter-remover:
 	it is very unlikely.
 
 The can't take what's already taken rule response (A) is "[We] already [have] [if the noun is the letter-remover][the noun][otherwise][regarding the noun][those][end if]." (A);
