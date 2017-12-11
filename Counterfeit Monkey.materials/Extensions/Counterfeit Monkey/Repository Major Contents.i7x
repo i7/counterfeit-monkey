@@ -28,7 +28,9 @@ A bat is a kind of neuter animal.
 A bet is a kind of thing.
 A bit is a kind of thing.
 A bot is a kind of thing.
+A generic-cap is a kind of wearable thing.
 A carp is a kind of thing. [not "a kind of animal" because you get a dead carp]
+Some carpi is a kind of thing.
 A cat is a kind of neuter animal.
 [A car is a kind of vehicle.] [ These are defined in their own section, above, because so complicated.]
 A cart is a kind of vehicle.
@@ -572,7 +574,7 @@ In the repository are some iron-pans, a plan, an i-pan,
 
 [polling charts]
 
-In the repository are a polling-chart, a strolling chap, and a patching roll.
+In the repository are a polling-chart, a strolling chap, a strolling cap, and a patching roll.
 
 [poppy]
 In the repository is a puppy.
@@ -883,12 +885,10 @@ The repository contains a bandit and a bandage.
 [The repository contains some basins, a basis, a bass, a bass-fish, a ba.] [There are no bins in the game any more.]
 
 [car]
-Some carpi are a kind of thing.
-
-The repository contains a carpet, 3 carpi, and 3 carp. [crap, cap, parc ...]
+The repository contains a carpet, 3 carpi, 3 carp, 3 generic-caps, PARC.
 
 [card]
-[The repository contains a cardboard.] [maybe unreachable]
+[The repository contains a cardboard.] [unreachable]
 
 [cart]
 The repository contains a cartage.

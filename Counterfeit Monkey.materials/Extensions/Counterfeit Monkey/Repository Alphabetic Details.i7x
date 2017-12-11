@@ -404,6 +404,8 @@ The camembert is an edible thing. The description of the camembert is "A rich, s
 	Sanity-check cutting the camembert:
 		say "A notch in the flesh of the camembert exposes the yellowish creamy interior." instead.
 
+Every generic-cap covers the head area. The description of a generic-cap is "A black sports cap with the logo of the local soccer team The Atlantis Cuttlefish.". The printed name of a generic-cap is "cap". Understand "cap" or "sports" or "logo" or "cuttlefish" as a generic-cap. The scent-description of a generic-cap is usually "sweat and hair wax".
+
 The description of the cartage is "'Cartage' here takes the form of an invoice for the transport of farm products by cart."
 
 The cassock is a floppy wearable thing. It covers the torso-area. The description is "An ankle-length robe of the most basic and severe black, the sort worn by priests of the more high-church denominations. It buttons down the front. In accordance with Atlantean traditions, white embroidery over the breast forms the letters A and Z."
@@ -1649,6 +1651,8 @@ Instead of attacking the pa:
 Every turn when the player carries a pa (called target):
 	move the target to the location;
 	say "[The target] is very heavy, and winds up (before his transformation is complete) stepping on our feet, and then scrambling away (with apologies)."
+
+The description of PARC is "Palo Alto Research Center [--] tons and tons of 1970s-era high tech concrete, steel, and plastic. At least it didn't turn into crap." The heft of PARC is 1000. The scent-description of PARC is "burnt electronics dust".
 
 [The description of the paint is "Bright blue paint, of the house-painting variety and not the thicker, more controllable kind used for art." The indefinite article is "some". ]
 
@@ -3170,6 +3174,8 @@ To say stopwatch elapsed time:
 
 Report switching off the stopwatch:
 	say "[We] turn off the stopwatch at [stopwatch elapsed time]." instead.
+
+The strolling cap is a wearable thing. It covers the head-area. The description is "A cotton cap with an extra long peak, which might offer a strolling person some protection against the sun." Understand "peak" and "cotton" as the strolling cap.
 
 The strolling chap is a man. The description is "He is walking back and forth, forth and back, at a leisurely pace, as though he had all the time in the world."
 
