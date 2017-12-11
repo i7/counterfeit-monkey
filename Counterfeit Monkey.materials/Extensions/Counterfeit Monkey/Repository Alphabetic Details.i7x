@@ -510,11 +510,11 @@ Sanity-check launching or mounting or entering the carpet:
 	say "It may look like a flying carpet, but I don't think it's actually magic." instead.
 
 [carp]
-The description of a carp is usually "A large Asian carp with red and white scales, the kind you might see in a decorative indoor pond of an expensive hotel. Not that decorative, though, in its current dead state." Understand "fish" and "goldfish" and "scales" as a carp.
+The description of a carp is usually "A large Asian carp with red and white scales, the kind that might be seen in the indoor pond of an expensive hotel. Not that decorative in its current dead state." Understand "fish" and "goldfish" and "scales" as a carp.
 	The scent-description of a carp is "faint fishiness". The heft of a carp is 3. A carp is edible.
 
 Instead of eating a carp:
-	say "That would feel like eating a large goldfish."
+	say "That would be like eating a large goldfish."
 
 Instead of smelling a carp:
 	say "[We] have at least produced a fresh fish, rather than a rotten one: consider yourself lucky."
