@@ -1290,7 +1290,7 @@ Instead of knocking on office-door-1 when the location of Professor Waterstone i
 	if we-have-knocked is false:
 		say "Professor Waterstone looks up at us through the window in the door, as if to ask 'Yes? Was there something you wanted to show me?'[paragraph break]";
 	let the selected object be nothing;
-	if held-over-object is something and held-over-object is not the player:
+	if held-over-object is not nothing and held-over-object is not the player:
 		let selected object be held-over-object;
 		now held-over-object is the player;
 	else if the player carries a Waterstone-inspiring thing (called target):
@@ -1564,7 +1564,7 @@ Instead of going to the Rectification Room when the large carton does not contai
 		say "[path-walked so far]";
 	otherwise:
 		clear the path-walked for the player;
-	say "[one of]Before [we] go through the door to the Rectification Room, it occurs to us that Professor Brown is just next door, and that he is likely to be able to hear if [we] do anything in there. Possibly some kind of masking noise is in order[or][if the noisemaker is something][The noisemaker] [do] make noise, but you figure we should leave [them] out here in the hallway so that it will be louder than whatever we do in the room[otherwise]I defer to your judgment that [we] ought to provide some masking sound before proceeding[end if][stopping].".
+	say "[one of]Before [we] go through the door to the Rectification Room, it occurs to us that Professor Brown is just next door, and that he is likely to be able to hear if [we] do anything in there. Possibly some kind of masking noise is in order[or][if the noisemaker is not nothing][The noisemaker] [do] make noise, but you figure we should leave [them] out here in the hallway so that it will be louder than whatever we do in the room[otherwise]I defer to your judgment that [we] ought to provide some masking sound before proceeding[end if][stopping].".
 
 Instead of dropping something in Samuel Johnson Basement when the heft of the noun is less than 4:
 	unless the noun is in the large carton:

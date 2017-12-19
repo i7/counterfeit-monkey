@@ -92,7 +92,7 @@ Rule for supplying a missing second noun while showing something to:
 		stop the action.
 
 Rule for supplying a missing second noun while showing something to when location is Language Studies Department Office and office-door-1 is closed and Professor Waterstone is on a chair:
-	if current interlocutor is something:
+	if current interlocutor is not nothing:
 		now second noun is current interlocutor;
 	otherwise:
 		now second noun is Professor Waterstone;
@@ -106,7 +106,7 @@ Rule for supplying a missing second noun while giving something to:
 		stop the action.
 
 Rule for supplying a missing second noun while giving something to when location is Language Studies Department Office and office-door-1 is closed and Professor Waterstone is on a chair:
-	if current interlocutor is something:
+	if current interlocutor is not nothing:
 		now second noun is current interlocutor;
 	otherwise:
 		now second noun is Professor Waterstone;

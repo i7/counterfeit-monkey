@@ -275,7 +275,7 @@ Sanity-check switching off a switched off tap:
 
 Before switching on a switched off tap (called target tap):
 	let the target sink be a random container which incorporates the target tap;
-	if the target sink is something:
+	if the target sink is not nothing:
 		[This works because we only allow the soap and derivates in sinks]
 		if there is a non-empty sink (called soap-sink) in location and there is a thing (called soap-thing) which is not tap-water in soap-sink:
 			now soap-thing is in target sink;
@@ -313,7 +313,7 @@ A first rule for writing a paragraph about a switched on tap:
 
 Last carry out an actor switching on a tap (called the target tap) (this is the move water supply rule):
 	let the target sink be a random container which incorporates the target tap;
-	if the target sink is something:
+	if the target sink is not nothing:
 		move tap-water to target sink.
 
 The standard report switching taps on rule response (A) is "[We] [turn] on [the noun].[if the noun is part of something] Water flows into the [random thing which incorporates the noun].[end if]"

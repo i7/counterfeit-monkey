@@ -4859,7 +4859,7 @@ Report Brock saying hello to the player for the first time:
 	assign "Test T-inserter on situations where it could build more than one thing";
 	assign "Escape the Bureau";
 	now the brock-commented-garment is a random thing worn by the player;
-	if the brock-commented-garment is something:
+	if the brock-commented-garment is not nothing:
 		queue nice-garment as postponed optional;
 	queue weird-you-look as postponed optional instead;
 
@@ -4929,7 +4929,7 @@ A Brock-suggestion rule when  "Test T-inserter on making abstracts" is completed
 			try Brock discussing still-cool;
 			rule succeeds.
 
-A Brock-suggestion rule when find noisy thing is something:
+A Brock-suggestion rule when find noisy thing is not nothing:
 	try Brock discussing interference-gelling;
 	rule succeeds.
 
@@ -5268,7 +5268,7 @@ Rule for beat-producing when the current interlocutor is my mother:
 		try my mother switching off the danger;
 	otherwise:
 		let target be random-visible-thing;
-		if target is something:
+		if target is not nothing:
 			try my mother examining the target;
 		else:
 			say "Mother looks faintly bewildered.[no line break]";

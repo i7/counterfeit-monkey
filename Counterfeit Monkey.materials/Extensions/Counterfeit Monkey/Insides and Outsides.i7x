@@ -71,7 +71,7 @@ Instead of facing inside:
 		let D be the door dir from the location;
 		if D is not a door:
 			let D be a random facade in location fronting dir;
-		if D is something:
+		if D is not nothing:
 			say "([the D])";
 			try searching D instead;
 		otherwise if dir is inside:
@@ -80,7 +80,7 @@ Instead of facing inside:
 			try facing dir instead;
 	otherwise:
 		let C be car-or-container;
-		if C is something:
+		if C is not nothing:
 			say "([the C])";
 			try searching C instead;
 		otherwise:

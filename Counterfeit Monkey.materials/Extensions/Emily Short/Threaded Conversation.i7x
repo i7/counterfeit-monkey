@@ -730,7 +730,7 @@ Section 1c - Subject-asking
 
 [Subject-asking handles asking about subjects mentioned by available quips.]
 
-Understand "ask about/for/-- [thing]" or "tell about/that/-- [thing]" as subject-asking when predicted-interlocutor is something. Subject-asking is an action applying to one visible thing.
+Understand "ask about/for/-- [thing]" or "tell about/that/-- [thing]" as subject-asking when predicted-interlocutor is not nothing. Subject-asking is an action applying to one visible thing.
 
 A quip has a list of objects called the mentions-list.
 
@@ -784,7 +784,7 @@ Carry out subject-asking:
 			if current interlocutor is the gift shop volunteer:
 				follow the gift shop volunteer doesn't know rule instead;
 			otherwise:
-				if the holder of the noun is current interlocutor and purchasing-quip is something:
+				if the holder of the noun is current interlocutor and purchasing-quip is not nothing:
 					try requesting the noun from the current interlocutor instead;
 			unless the noun is a distant backdrop or the noun is a person or the holder of the noun is current interlocutor:
 				try showing the noun to the current interlocutor instead;

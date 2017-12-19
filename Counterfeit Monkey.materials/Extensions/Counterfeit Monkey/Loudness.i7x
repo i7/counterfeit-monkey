@@ -17,7 +17,7 @@ The noisemaker is an object that varies.
 
 This is the make noise rule:
 	now the noisemaker is find noisy thing;
-	if the noisemaker is something:
+	if the noisemaker is not nothing:
 		try listening to the noisemaker.
 
 Instead of listening to a room:

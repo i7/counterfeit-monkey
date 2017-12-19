@@ -273,7 +273,7 @@ To decide what thing is the substitute from (matchlist - a list of things) (this
 			if prof-list is not empty:
 				decrease scr by 150;
 				[Something else proffers the contender. Don't choose this.]
-			if the first thing held by contender is something:
+			if the first thing held by contender is not nothing:
 				increase scr by 100;
 				[The contender contains something. Prefer this.]
 			if contender is r-abstract and the letter-remover is not upgraded:

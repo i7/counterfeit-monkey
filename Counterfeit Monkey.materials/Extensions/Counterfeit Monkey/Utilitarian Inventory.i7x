@@ -51,9 +51,9 @@ Instead of taking inventory when the current inventory listing style is utilitar
 				say "[paragraph break]Of that collection, [the packed-list are] packed away in the backpack, which is [if backpack is closed]closed for greater concealment[else]gaping wide open so everyone can see what's inside[end if]. ";
 	[ List any contents of other carried containers or supporters ]
 	let listed container be next listable container;
-	if listed container is something:
+	if listed container is not nothing:
 		say paragraph break;
-		while listed container is something:
+		while listed container is not nothing:
 			say "[The inventory-container-list of listed container are] [in-on the listed container]. [no line break]";
 			now listed container is next listable container;
 		now paragraph break needed is true;

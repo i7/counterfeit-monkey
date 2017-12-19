@@ -602,7 +602,7 @@ When Landing ends (this is the set us up on yacht rule):
 		repeat with item running through things proffered by Brock:
 			if item is enclosed by location:
 				now b-target is item;
-	if b-target is something:
+	if b-target is not nothing:
 		say "Slango gels [the b-target] easily enough. Then he and Brock turn the restoration gel on us. Slango ";
 		move b-target to the repository;
 	otherwise:
