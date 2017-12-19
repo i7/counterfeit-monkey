@@ -87,10 +87,10 @@ Understand "pour [a fluid thing] in/into [something]" as filling it with (with n
 Understand "pour [something] in/into [a container]" as filling it with (with nouns reversed).
 Understand "pour [a fluid thing] in/into [a container]" as filling it with (with nouns reversed).
 
-Every turn when a fluid thing (called target) is in a pan:
+[ Every turn when a fluid thing (called target) is in a pan:
 	unless the target is contained:
 		move the target to the location;
-		say "[The target] runs rapidly out through the slots of the pan."
+		say "[The target] runs rapidly out through the slots of the pan." ]
 
 Filling it with is an action applying to two things.
 
