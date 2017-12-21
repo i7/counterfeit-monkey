@@ -160,13 +160,13 @@ This is the stop removing error list rule:
 
 [And finally "insert all into"]
 A multiple action processing rule when the action name part of the current action is inserting it into action:
+	abide by the check self-containment rule;
 	if the second noun is the backpack:
 		abide by the fast backpack stowing rule;
 	otherwise:
 		abide by the stop inserting error list rule.
 
 This is the stop inserting error list rule:
-	abide by the check self-containment rule;
 	if the number of entries in the multiple object list is less than 2:
 		the rule succeeds;
 	abide by the check multiple insert rules for the second noun;
