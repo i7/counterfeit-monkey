@@ -145,11 +145,45 @@ Check filling the funnel with a fluid thing:
 Check filling a net with a fluid thing:
 	say "That would have about the same effect as pouring [the second noun] on our feet." instead.
 
-Check filling a non-empty container with a fluid thing (called the liquid):
-	say "[The liquid] would make a mess in there." instead.
+Check filling a non-empty container with a fluid thing:
+	if the second noun is the holder of the noun:
+		say "[The second noun] [are] in [the noun] already." instead;
+	otherwise:
+		say "[The second noun] would make a mess in there." instead.
 
 Check filling it with:
 	say "[one of]I'd rather leave [the second noun] where [they] [are].[or]I don't see much point to filling something with [second noun].[at random]" instead.
+
+
+Understand "empty [something]" as emptying. Emptying is an action applying to one thing.
+
+Carry out emptying:
+	if the noun is not a supporter and the noun is not a container:
+		if the holder of the noun is a supporter or the holder of the noun is a container:
+			try emptying the holder of the noun instead;
+		otherwise:
+			say "[The noun] [are] not something [we] can empty." instead;
+	if the noun is empty:
+		say "[The noun] [are] empty already." instead;
+	if the noun is fluid-filled:
+		say "I'd rather leave [the first thing held by the noun] where [they] [are]." instead;
+	say "[first custom style][bracket]Try to TAKE things from [the noun] instead.[close bracket][roman type][line break]".
+
+Understand "empty [something] in/into/on/onto [something]" as emptying it into. Emptying it into is an action applying to two things.
+
+Carry out emptying it into:
+	if the noun is not a supporter and the noun is not a container:
+		if the holder of the noun is a supporter or the holder of the noun is a container:
+			try emptying (the holder of the noun) into the second noun instead;
+		otherwise:
+			say "[The noun] [are] not something [we] can empty." instead;
+	if the second noun is not a supporter and the second noun is not a container:
+		say "[The second noun] [are] not something [we] can empty things into." instead;
+	if the noun is empty:
+		say "[The noun] [are] empty already." instead;
+	if the noun is fluid-filled:
+		say "I'd rather leave [the first thing held by the noun] where [they] [are]." instead;
+	say "[first custom style][bracket]Try to TAKE things from [the noun] and then PUT them [in-on the second noun] instead.[close bracket][roman type][line break]".
 
 Check an actor washing (this is the new restrict washing to the proximity of sinks rule):
 	if the actor can touch a washing-appropriate thing:
