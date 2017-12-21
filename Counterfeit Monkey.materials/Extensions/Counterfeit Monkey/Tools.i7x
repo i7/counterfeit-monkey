@@ -1365,7 +1365,9 @@ Before putting the restoration gel on something which is in a container (called 
 		if the number of things in the box is greater than 1 or the number of things proffered by the second noun is greater than 1 and the box is not the synthesizer:
 			say the liquid would make a  mess in the box instead.
 
-Before putting the restoration gel on something which is in the backpack:
+Before putting the restoration gel on something which is enclosed by the backpack:
+	if the backpack is closed:
+		try opening the backpack;
 	try taking the second noun;
 	if the player does not carry the second noun:
 		say "It seems best not to word-change things that are in the backpack." instead.
@@ -1712,7 +1714,9 @@ Before shooting something which is in a container (called the box) with the rest
 
 [Because it's possible to change something into an object that becomes fixed in place in the backpack, or too heavy to move...]
 
-Before shooting something which is in the backpack with the restoration-gel rifle:
+Before shooting something which is enclosed by the backpack with the restoration-gel rifle:
+	if the backpack is closed:
+		try opening the backpack;
 	try taking the noun;
 	if the player does not carry the noun:
 		say "It seems best not to word-change things that are in the backpack." instead.
