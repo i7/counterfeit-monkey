@@ -186,10 +186,10 @@ Carry out involuntarily-dropping:
 		stop the action.
 
 Report involuntarily-dropping:
-	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for [us] to carry, and [regarding the noun][fall] onto the [ground]." instead.
+	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for [us] to carry, and [regarding the noun][fall] onto the [fall-receiver]." instead.
 
 Report involuntarily-dropping an animal:
-	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for [us] to carry, and half-[regarding the noun][fall], half-[jump] to the [ground]." instead.
+	say "[The noun] [are] [if the heft of the noun is greater than 4]far too large[otherwise]too awkward[end if] for [us] to carry, and half-[regarding the noun][fall], half-[jump] to the [fall-receiver]." instead.
 
 Report involuntarily-dropping the boar:
 	now the boar is in the location;
@@ -199,7 +199,16 @@ Report involuntarily-dropping a person:
 	say "[The noun] [look] rather awkward, and clamber[s] out of our ineffective hold onto solid ground." instead.
 
 Report involuntarily-dropping a cat:
-	say "[The noun] [get] tired of being carried and leap[s] delicately to the [ground]." instead.
+	say "[The noun] [get] tired of being carried and [leap] delicately to the [fall-receiver]." instead.
+
+To say fall-receiver:
+	if the holder of the player is the location:
+		say "[ground]";
+	otherwise:
+		if the holder of the player is a car:
+			say "[holder of the player] floor";
+		otherwise:
+			say "[holder of the player]".
 
 Section 5 - Length and Strength
 
