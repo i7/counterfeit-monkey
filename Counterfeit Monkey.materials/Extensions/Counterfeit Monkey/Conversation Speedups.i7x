@@ -106,7 +106,7 @@ Include (-
 	];
 
 	[ MyRelabelAvailableQuips q;
-		if ((+ how-many-people-here +)) {
+		if ( how_many_people_here > 0 ) {
 			for (q = child((+quip-repository+)): q :q=sibling (q)) {
 				FollowRulebook ((+ the availability rules +), q, true);
 				if ( ResultOfRule() == (+ the it is available outcome +))

@@ -280,10 +280,33 @@ Characters who are "alert" will notice and greet the player when he comes into t
 
 A person can be alert.
 
-Definition: a person is alarmed if he is alert and he is not the current interlocutor.
+To decide which object is prospective-interlocutor:
+	(- ProspectiveInterlocutor() -).
 
-Every turn when an alarmed person (called the prospective interlocutor) is enclosed by the location:
-	try the prospective interlocutor saying hello to the player.
+The current interlocutor variable translates into I6 as "current_interlocutor".
+The how-many-people-here variable translates into I6 as "how_many_people_here".
+
+Include (-
+
+Global current_interlocutor = nothing;
+Global how_many_people_here = 0;
+
+-) after "Definitions.i6t".
+
+Include (-
+
+	[ ProspectiveInterlocutor p list no_items i;
+		list = (+ people-present +);
+		no_items = BlkValueRead(list, LIST_LENGTH_F);
+		for (i=0: i<no_items: i++ ) {
+			p = BlkValueRead(list, i+LIST_ITEM_BASE);
+			if ( current_interlocutor ~= p && p.(+ alert +) == true )
+				return p;
+		}
+		return nothing;
+	];
+
+-) after "Output.i6t".
 
 The new default greeting rule is listed instead of the default greeting rule in the report saying hello to rules.
 

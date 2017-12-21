@@ -640,7 +640,7 @@ Volume 3 - Performing Discussion
 
 Book 1 - The Current Interlocutor
 
-The current interlocutor is an object that varies. The current interlocutor is nothing.
+The current interlocutor is an object that varies. [The current interlocutor is nothing.]
 
 Understand "himself" as a man when the item described is the current interlocutor.
 Understand "herself" as a woman when the item described is the current interlocutor.
@@ -1107,6 +1107,10 @@ A first every turn rule (this is the update people-present rule):
 	if how-many-people-here is positive:
 		repeat with P running through people-present:
 			now P is marked-visible;
+	[The lines below are from an "Check for alert people in location" rule that I merged into this because it wouldn't get the right precedence no matter how I tried. See the ProspectiveInterlocutor code in Character Models.i7x]
+		let X be prospective-interlocutor;
+		if X is not nothing:
+			try X saying hello to the player.
 
 Every turn when the player is staid (this is the active conversation rule):
 	if how-many-people-here is positive:
