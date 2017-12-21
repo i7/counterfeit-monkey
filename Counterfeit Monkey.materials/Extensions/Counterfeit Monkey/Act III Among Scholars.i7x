@@ -239,7 +239,7 @@ The toolkit is a scenery thing on the dor-bar-top. The toolkit contains some scr
 	Instead of examining or searching the toolkit:
 		say "It offers an assortment: [a list of things *in the toolkit]."
 
-Rule for deciding whether all includes things enclosed by the toolkit while taking or removing:
+Rule for deciding whether all includes things in the toolkit while taking or removing:
 	if the action name part of the current action is the removing it from action:
 		it does;
 	it does not.
@@ -1378,28 +1378,28 @@ A last Water-reaction rule for something (called the target):
 			say "[line break]He seems to get that we're trying to show him [the target], but I don't think he's very interested. His work doesn't seem to be going well. It's probably to do with whatever he's trying to print on the department printer.";
 	rule succeeds.
 
-Sanity-check saying hello to Professor Waterstone when Professor Waterstone is enclosed by Waterstone's Office and office-door-1 is closed and the location is Language Studies Department Office:
+Sanity-check saying hello to Professor Waterstone when Professor Waterstone is in Waterstone's Office and office-door-1 is closed and the location is Language Studies Department Office:
 	say "Waterstone is unable to hear you through the closed door, which is presumably the purpose of closing it, so let's try knocking instead.";
 	try knocking on office-door-1 instead.
 
-Sanity-check giving something to Professor Waterstone when Professor Waterstone is enclosed by Waterstone's Office and office-door-1 is closed and the location is Language Studies Department Office:
+Sanity-check giving something to Professor Waterstone when Professor Waterstone is in Waterstone's Office and office-door-1 is closed and the location is Language Studies Department Office:
 	now held-over-object is the noun;
 	say "Waterstone is unable to hear you through the closed door, which is presumably the purpose of closing it, so let's try knocking instead.";
 	try knocking on office-door-1 instead.
 
-Sanity-check showing something to Professor Waterstone when Professor Waterstone is enclosed by Waterstone's Office and office-door-1 is closed and the location is Language Studies Department Office:
+Sanity-check showing something to Professor Waterstone when Professor Waterstone is in Waterstone's Office and office-door-1 is closed and the location is Language Studies Department Office:
 	now held-over-object is the noun;
 	say "Waterstone is unable to hear you through the closed door, which is presumably the purpose of closing it, so let's try knocking instead.";
 	try knocking on office-door-1 instead.
 
 Held-over-object is a thing that varies.
 
-Instead of showing something to special glass window when Professor Waterstone is enclosed by Waterstone's Office and office-door-1 is closed and the location is Language Studies Department Office:
+Instead of showing something to special glass window when Professor Waterstone is in Waterstone's Office and office-door-1 is closed and the location is Language Studies Department Office:
 	say "Though there is a window and Waterstone can watch the outer office from his desk, he is unable to hear you through the closed door, which is presumably the purpose of closing it. I will try knocking instead.";
 	now held-over-object is the noun;
 	try knocking on office-door-1.
 
-Instead of giving something to office-door-1 when Professor Waterstone is enclosed by Waterstone's Office and office-door-1 is closed and the location is Language Studies Department Office:
+Instead of giving something to office-door-1 when Professor Waterstone is in Waterstone's Office and office-door-1 is closed and the location is Language Studies Department Office:
 	say "Waterstone is unable to hear you through the closed door, which is presumably the purpose of closing it, so let's try knocking instead.";
 	now held-over-object is the noun;
 	try knocking on office-door-1.
@@ -1422,7 +1422,7 @@ Instead of searching the special glass window when office-door-1 is closed:
 	if the location is Waterstone's Office:
 		say "It's amazing what a great view there is."; [this actually should never happen because we shouldn't wind up trapped with W.]
 	otherwise:
-		if Professor Waterstone is enclosed by Waterstone's Office:
+		if Professor Waterstone is in Waterstone's Office:
 			say "Though he can easily see us through the office door window, Professor Waterstone resolutely ignores our impolite staring. He's trying to get something done on his laptop, but keeps stopping to stare at the screen or, apparently, to curse at it.";
 		otherwise:
 			say "Waterstone's office looks oddly bare now that the man himself is gone."

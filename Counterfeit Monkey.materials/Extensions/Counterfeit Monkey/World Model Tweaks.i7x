@@ -174,7 +174,7 @@ A first accessibility rule (this is the go to location rule):
 
 Rule for reaching outside a car (called C) (this is the can't reach outside car rule):
 	try exiting;
-	if the player is enclosed by C:
+	if the player is in C:
 		deny access;
 	make no decision.
 
@@ -225,7 +225,7 @@ The try opening rules is an object-based rulebook.
 The try reaching rules is an object-based rulebook.
 
 A try opening rule for a container (called the box):
-	if the player is not enclosed by the box:
+	if the player is not in the box:
 		if the box is not openable:
 			say "[The box] [aren't] open.";
 		otherwise:
@@ -553,7 +553,7 @@ To say walk-length for (N - a number):
 [The rather odd cycling guarantees that we don't repeat a word.]
 
 To say walk-drive:
-	if the player is enclosed by a vehicle:
+	if the player is in a vehicle:
 		say "drive";
 	otherwise:
 		say "[one of]walk[or]hike[as decreasingly likely outcomes]".
@@ -603,9 +603,9 @@ To clear all/the/-- path-walked for (worker - yourself):
 			let last movement be entry N in the described motion of the player;
 			truncate the described motion of the player to (N - 1) entries;
 			if N is 1:
-				say "We [if the player is enclosed by a vehicle]drive[otherwise]go[end if]";
+				say "We [if the player is in a vehicle]drive[otherwise]go[end if]";
 			otherwise:
-				say "We [if the player is enclosed by a vehicle]drive[otherwise]go[end if] [described motion of the player]";
+				say "We [if the player is in a vehicle]drive[otherwise]go[end if] [described motion of the player]";
 				if N is greater than 2:
 					say ", before heading";
 				otherwise:
@@ -1421,7 +1421,7 @@ Before going somewhere when the player is staid and the unleavable is not nothin
 This is the don't-leave-the-unleavable rule:
 	let the needed-thing be the unleavable;
 	while the needed-thing is not nothing:
-		if the needed-thing is enclosed by a closed container (called the box) and the player is not enclosed by the box:
+		if the needed-thing is enclosed by a closed container (called the box) and the player is not in the box:
 			try opening the box;
 		if the needed-thing is the iron-pans:
 			reduce iron-pans;

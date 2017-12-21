@@ -705,7 +705,7 @@ Report Slango saying hello to the player:
 	say "[one of]Slango meets our eye for a long minute without smiling[or]Slango nods to us[stopping]." instead.
 
 Definition: a thing is slango-related:
-	if it is enclosed by Slango:
+	if it is held by Slango:
 		yes;
 	no.
 

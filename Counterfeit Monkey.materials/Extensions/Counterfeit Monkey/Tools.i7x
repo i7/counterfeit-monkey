@@ -1017,7 +1017,7 @@ Last after examining something when the player wears the monocle:
 	continue the action.
 
 After wearing the monocle:
-	if the player is not enclosed by the kayak:
+	if the player is not in the kayak:
 		say "Everything turns computer-monitor green when viewed through our right eye. And staring fixedly at anything will turn up its authenticity status."
 
 Understand "stare at [something]" or "stare fixedly at [something]" as examining.
