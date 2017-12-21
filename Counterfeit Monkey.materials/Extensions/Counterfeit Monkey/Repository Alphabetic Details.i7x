@@ -2791,6 +2791,11 @@ Report the roc going north from Abandoned Shore:
 
 Roc-soaring is a scene. Roc-soaring begins when roc-flight ends. Roc-soaring ends when the time since roc-soaring began is 2 minutes.
 
+Understand "hang on" as a mistake ("That is about the only thing [we] can do.") when the player is held by the roc.
+
+Sanity-check waiting during roc-soaring:
+	say "That is about the only thing [we] can do." instead.
+
 Sanity-check doing something other than acting fast during roc-soaring:
 	say "I don't know about you, but I don't dare do anything but hang on." instead.
 
@@ -2961,9 +2966,9 @@ Table of Ultratests (continued)
 topic	stuff	setting
 "alterna-shuttle"	{ power cord, pastis, shuttle }	Workshop
 
-Test alterna-shuttle with "tutorial off / plug in dais / e / put pastis in bucket / w / put shuttle on dais / pull lever / turn switch / pull lever / get in shuttle / drive e" [holding the power cord and the pastis and the shuttle in the Workshop.]
+Test alterna-shuttle with "tutorial off / unlegend / plug in dais / e / put pastis in bucket / w / put shuttle on dais / pull lever / turn switch / pull lever / get in shuttle / drive e" [holding the power cord and the pastis and the shuttle in the Workshop.]
 
-The alterna-shuttle is a car. The printed name of the alterna-shuttle is "shuttle". Understand "shuttle" as the alterna-shuttle. The heft of the alterna-shuttle is 6. The description of the alterna-shuttle is "It is predictably painted blue, but it's just a little patrol shuttle, not one of the big vans for carting away arrested citizens."
+The alterna-shuttle is a car. The printed name of the alterna-shuttle is "shuttle". Understand "shuttle" as the alterna-shuttle. The heft of the alterna-shuttle is 6. The description of the alterna-shuttle is "It is predictably painted blue, but it's just a little patrol shuttle, not one of the big vans for carting away arrested citizens." The flexible appearance of the alterna-shuttle is "blank". The introduction of the alterna-shuttle is "".
 
 The description of the shuttlecock is "A curious object used in badminton: it's a plastic projectile shaped like a ball into one half of which a circle of feathers has been stuck. This makes it fly less quickly and more visibly."
 
@@ -4040,7 +4045,7 @@ The greeting of the troll is "The troll grunts."
 [A lightweight nod to tv tropes, focusing on the artifact section, both because it places us very early in the count and because it seemed like a suitable place to start for this game.]
 The trope count is an r-abstract thing. The description of the trope count is "The count is currently only up to '[one of]applied phlebotinum[or]amulet of concentrated awesome[or]amulet of dependency[or]amplifier artifact[or]antimatter[or]artifact of death[or]artifact of doom[or]artifact of attraction[cycling].' This could take a while."
 
-The truck is a car. The heft of the truck is 6. The description is "The cab of the truck is beaten and rusted, and the flatbed bears the stains of many years['] solo farming." Understand "cab" or "flatbed" as the truck.
+The truck is a car. The heft of the truck is 6. The description is "The cab of the truck is beaten and rusted, and the flatbed bears the stains of many years['] solo farming." Understand "cab" or "flatbed" as the truck. The flexible appearance of the truck is "blank". The introduction of the truck is "".
 
 
 The tub is an essential closed openable container. The description is "Now a handsome, giant-sized tub with RESTORATION GEL prominently emblazoned on the front." A restoration gel is in the tub. The description of the restoration gel is "The [holder of the restoration gel] contains a clear, sticky gel that restores objects to their original state, before any letter changing. This is a valuable item in your line of work." The indefinite article is "some".
