@@ -765,7 +765,7 @@ Carry out examining small children:
 
 Some small children are a person in Park Center. Understand "child" or "boy" or "girl" or "sibling" as the small children. The description is "They look small and harmless, but you're probably right that they have sticky hands." The children are scenery.
 
-Every turn when the location is Park Center and the location of the small children encloses the hoses:
+Every turn when the location is Park Center and the hoses are part of the marble fountain:
 	if a random chance of 1 in 2 succeeds:
 		say "[one of]A little boy[or]A small girl[at random] [one of]tries to catch the spraying hosewater in an open mouth[or]pushes a sibling into the path of the water[or]leaps gleefully through the arc of water[at random].";
 		now the description of the small children is "Most of them are now sopping wet, and loving it.";
@@ -776,7 +776,7 @@ There's a bang, a last glittering fan of water in the air.[paragraph break]";
 			gel-convert the hoses;
 			say "As for the Officer, she's already speaking into her radio as she turns away.".
 
-Every turn when the location is Park Center and the location of the small children encloses the ho:
+Every turn when the ho is in location:
 	say "It isn't but a few seconds before a watchful parent notices the ho strutting around and goes to report her.
 
 She is too stupid [--] as a constructed person [--] to put up much resistance when an officer shows up to escort her away.";

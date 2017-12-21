@@ -453,7 +453,7 @@ The description is "This frighteningly massive contraption has pipes and compres
 
 Understand "rust stains" or "stains" or "gauges" or "steam" or "power" or "generator" or "boilers" or "compression tanks" or "pipe" or "pipes" or "needles" or "large pipe" or "water" as the boiler.
 
-Every turn when the location contains the switched on boiler:
+Every turn when the location is Generator Room and the boiler is switched on:
 	if the remainder after dividing turn count by 3 is 0:
 		say "[one of]Light flashes[or]White light flashes[or]There's a particularly vibrant blue-white flash[or]There's a flash of light[or]Ice flashes into steam[or]A loud pfft! sounds[at random] [one of]within[or]inside[or]from within[or]in[at random] the boiler[one of] and[or] and all[or]. All[at random] the [one of]meters twitch[or]meter needles flicker into the red[or]steam gauge needles jump[at random][if a random chance of 1 in 3 succeeds] violently[end if]."
 
