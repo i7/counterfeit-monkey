@@ -169,8 +169,34 @@ The verb to weigh (it weighs, they weigh, it is weighing) implies the heft prope
 
 Definition: a thing is heavy if its heft is greater than 3.
 
-Every turn when the player carries a heavy thing (called burden):
-	try involuntarily-dropping the burden.
+Every turn:
+	let X be the burden;
+	if X is not nothing:
+		if the player does not carry X:
+			move X to the player;
+		try involuntarily-dropping X.
+
+To decide which object is the burden:
+	(- Burden() -).
+
+Include (-
+
+	[ Burden o;
+		for (o=child(player) : o : ) {
+			if (o.(+ heft +) > 3)
+				return o;
+			if (child(o)) o = child(o);
+			else
+				while (o) {
+					if (sibling(o)) { o = sibling(o); break; }
+					o = parent(o);
+					if (o == player) return nothing;
+				}
+		}
+		return nothing;
+	];
+
+-).
 
 Sanity-check waving a heavy thing:
 	say "Unlikely, unless [we] suddenly [become] a good deal stronger." instead.
