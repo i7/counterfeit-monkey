@@ -9,6 +9,7 @@ Rule for deciding whether all includes scenery: it does not.
 Rule for deciding whether all includes people while taking: it does not.
 Rule for deciding whether all includes things carried by other people while taking: it does not.
 
+Rule for deciding whether all includes the restoration gel: it does not.
 
 Rule for deciding whether all includes something (called special-target) while taking (this is the new excluding concealed items rule):
 	now special-target is marked for listing;
