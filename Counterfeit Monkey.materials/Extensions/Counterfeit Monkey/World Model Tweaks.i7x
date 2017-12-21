@@ -1880,8 +1880,49 @@ Instead of inserting a long thing into the backpack:
 Instead of inserting a fluid thing into the backpack:
 	say "[The noun] [one of]would make a real mess[or]would just spill[at random]."
 
-Instead of inserting the iron-pans into the backpack:
+Instead of inserting a heavy thing into the backpack:
 	say "There's nowhere near enough room."
+
+Check inserting a non-empty container into the backpack:
+	let N be the unsuitable of the noun;
+	if N is not nothing:
+		say backpack-refusal of N instead.
+
+Check inserting a non-empty supporter into the backpack:
+	let N be the unsuitable of the noun;
+	if N is not nothing:
+		say backpack-refusal of N instead.
+
+To decide which object is the unsuitable of (X - a thing):
+	(- Unsuitable({X}) -).
+
+Include (-
+
+	[ Unsuitable x o;
+		for (o=child(x) : o : ) {
+			if ( (o.(+ heft +) > 3) || (o.(+ short +) == false) || (o.(+ solid +) == false) )
+				return o;
+			if (child(o)) o = child(o);
+			else
+				while (o) {
+					if (sibling(o)) { o = sibling(o); break; }
+					o = parent(o);
+					if (o == x) return nothing;
+				}
+		}
+		return nothing;
+	];
+
+-).
+
+To say backpack-refusal of (N - a thing):
+	if N is fluid:
+		say "[The N] [one of]would make a real mess[or]would just spill[at random].";
+	otherwise:
+		if N is long:
+			say "[The N] [one of]couldn't possibly fit[or]would be much too long[or]would just stick out[at random].";
+		otherwise:
+			say "There's nowhere near enough room.".
 
 
 [PUT ALL IN BACKPACK can be quite slow, so let's speed it up a bit by skipping some checks]
@@ -1889,17 +1930,19 @@ This is the fast backpack stowing rule:
 	if the backpack is closed:
 		abide by the try opening rules for the backpack;
 	repeat with N running through multiple object list:
-		if N is fluid:
-			say "[N]: [The N] [one of]would make a real mess[or]would just spill[at random].";
+		if N is fluid or N is long or N is heavy:
+			say "[N]: [backpack-refusal of N]";
 		otherwise:
-			if N is long:
-				say "[N]: [The N] [one of]couldn't possibly fit[or]would be much too long[or]would just stick out[at random].";
-			otherwise:
-				if N is iron-pans:
-					say "[N]: There's nowhere near enough room.";
+			if (N is a container or N is a supporter) and N is non-empty:
+				let X be the unsuitable of N;
+				if X is not nothing:
+					say "[N]: [backpack-refusal of X]";
 				otherwise:
 					say "[N]: Done.";
 					now N is in backpack;
+			otherwise:
+				say "[N]: Done.";
+				now N is in backpack;
 	abide by the cancel multiple rule.
 
 
