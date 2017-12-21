@@ -2186,7 +2186,9 @@ Understand the commands "attack" and "punch" and "destroy" and "kill" and "murde
 
 Attacking it with is an action applying to one thing and one carried thing. Understand "attack [something] with [something preferably held]" as attacking it with.
 
-Understand the commands "punch" and "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as "attack".
+Understand "punch [something] with [something preferably held]" as attacking it with when the umlaut punch is marked invisible and the mutual punch is marked invisible.
+
+Understand the commands "destroy" and "kill" and "murder" and "hit" and "thump" and "break" and "smash" and "torture" and "wreck" as "attack".
 
 Does the player mean attacking the hanging figure with a long strong thing:
 	it is very likely.
@@ -2207,6 +2209,8 @@ Definition: a thing is attackable:
 	no.
 
 Understand "attack [something not attackable]" as attacking.
+
+Understand "punch [something not attackable]" as attacking when the umlaut punch is marked invisible and the mutual punch is marked invisible.
 
 Sanity-check attacking something which is not attackable with something:
 	try attacking the noun instead.
