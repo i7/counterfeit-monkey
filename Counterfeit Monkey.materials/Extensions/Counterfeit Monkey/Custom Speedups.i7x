@@ -20,7 +20,7 @@ To mark contents of (box - an opaque container) invisible:
 	(- if (child({box})) MarkContentsInvisible(child({box})); -).
 
 To decide which object is random-visible-thing:
-	(- RandomVisibleThing() -)
+	(- RandomVisibleThing() -).
 
 To decide which object is the unleavable:
 	(- FindUnleavableLoop(real_location) -).
