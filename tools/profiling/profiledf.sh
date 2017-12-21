@@ -14,7 +14,7 @@ rm "Counterfeit Monkey-startup-data.glkdata"
 
 touch testing.glkdata
 
-time $path_to_interpreter -uo --profile profile-raw --profcalls "../../Counterfeit Monkey.materials/Release/Counterfeit Monkey.gblorb" <"../command scripts/test_quagmire.txt" > profile-transcript.txt
+time $path_to_interpreter -uo --profile profile-raw --profcalls "../../Counterfeit Monkey.materials/Release/Counterfeit Monkey.gblorb" <"../command scripts/test_me.txt" > profile-transcript.txt
 
 if [ -s profile-report-df_old.txt ]; then
 	mv -f profile-report-df_old.txt profile-report-df_older.txt
