@@ -15,7 +15,7 @@ This is the attempt going in rule:
 			carry out the listing exits activity.
 
 This is the attempt going out rule:
-	if the player is enclosed by an enterable thing:
+	if the player is in an enterable thing or the player is on an enterable thing:
 		try exiting;
 	otherwise if out-direction of location is a direction and out-direction of location is not outside:
 		try going out-direction of location;
@@ -87,7 +87,7 @@ Instead of facing inside:
 			say "[one of]What should [we] look inside, exactly?[or][We]['re] not sure what to look inside here.[at random]"
 
 To decide which object is car-or-container:
-	if there is a car (called C) in location and the player is not enclosed by C:
+	if there is a car (called C) in location and the player is not in C:
 		decide on C;
 	let B be a random marked-visible container in location;
 	if B is a box listed in the Table of Obvious Containers to Look Inside and the player is not enclosed by B:
@@ -98,7 +98,10 @@ To decide which object is car-or-container:
 Instead of exiting when the player is not enclosed by an enterable thing and the player's command does not include "get off/down/up":
 		try going outside.
 
-Check entering a closed container (called the target) when the player is not enclosed by the target (this is the attempt opening on enter rule):
+Check entering something (called target) when the target is in a container (called the target-parent):
+	say "[The target-parent] is too small to allow for that." instead.
+
+Check entering a closed container (called the target) when the player is not in the target (this is the attempt opening on enter rule):
 	try opening the noun;
 	if the noun is closed, stop the action.
 

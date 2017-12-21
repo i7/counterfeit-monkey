@@ -2048,7 +2048,7 @@ The crowds are a backdrop. The crowds are in Fair, Monumental Staircase, Church 
 	understand "children" or "child" as the crowds when the small children are not in the location.
 	The description is "[if the location is a road]They are all in a hurry to get somewhere, though it is not clear exactly where or why[otherwise]The people seem to be enjoying themselves. I don't recogn[ize] anyone in particular, though[end if]."
 
-The High Street is east of Monumental Staircase. It is proper-named. The description is "[if the player is not enclosed by a car]Hustle, bustle, [grimy-dirt]; [ugly American chain shops]; lots and lots of people. [otherwise][We] [are] surrounded by tail-lights and impatient men swearing. [end if][if the protesters are in High Street]There seems to be a large organ[ize]d protest in progress: [protesters] completely cram the sidewalk to the southeast.[end if]"
+The High Street is east of Monumental Staircase. It is proper-named. The description is "[if the player is not in a car]Hustle, bustle, [grimy-dirt]; [ugly American chain shops]; lots and lots of people. [otherwise][We] [are] surrounded by tail-lights and impatient men swearing. [end if][if the protesters are in High Street]There seems to be a large organ[ize]d protest in progress: [protesters] completely cram the sidewalk to the southeast.[end if]"
 
 
 The grimy-dirt is scenery in High Street. Understand "grime" or "dirt" or "griminess" or "filth" as the grimy-dirt. The printed name is "dirt". The description is "Just a general griminess over all surfaces. Some parts of the city have recently been renovated, and some are being renovated now, scouring off the accumulated filth on facades and walls; but this area hasn't been treated yet and is simply unappealing."
