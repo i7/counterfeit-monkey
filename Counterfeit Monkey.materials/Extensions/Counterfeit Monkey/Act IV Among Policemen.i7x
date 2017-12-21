@@ -127,17 +127,30 @@ Before putting gel on the ash:
 	now the smell is nowhere.
 
 After reading a command when location is Public Convenience (this is the replace sinks with sink rule):
+	now the referred of the sink-collectives is false;
 	while the player's command includes "sinks":
+		now the referred of the sink-collectives is true;
 		replace the matched text with "sink".
 
-Some sink-collectives are scenery in the public convenience. The sink-collectives are privately-named. The printed name is "sinks". Understand "sink" as sink-collectives when there is no sink in location.
+Some sink-collectives are scenery in the public convenience. The sink-collectives are privately-named. The sink-collectives have a truth state called referred. The printed name is "sinks". Understand "sink" as sink-collectives when there is no sink in location.
 
-Sanity-check examining a sink:
-	if location is public convenience and there are at least two sinks in location:
-		say "The sinks are nothing special. Clean enough, I suppose." instead.
+Instead of examining a sink when the referred of the sink-collectives is true and there is more than one sink in location:
+	now the referred of the sink-collectives is false;
+	if location is not public convenience:
+		continue the action;
+	say "The sinks are nothing special. Clean enough, I suppose."
 
-Instead of doing something when the sink-collectives is the noun or the sink-collectives is the second noun:
-	say "[We][']ve already gotten rid of the sinks here."
+Instead of doing something when the sink-collectives is the second noun:
+	if the number of sinks in the location is 0:
+		say "[We][']ve already gotten rid of all the sinks to be found in this area." instead;
+	otherwise:
+		now the second noun is a random sink in location.
+
+Instead of doing something to the sink-collectives:
+	if the number of sinks in the location is 0:
+		say "[We][']ve already gotten rid of all the sinks to be found in this area.";
+	otherwise:
+		now the noun is a random sink in location.
 
 [After going to Public Convenience:
 	let N be the number of entries in the path so far of the player;
