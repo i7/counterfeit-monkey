@@ -1874,14 +1874,9 @@ The carrying capacity of the player is 10. ]
 
 [And now for the cases where the player explicitly tries to stash something inappropriate, e.g. with PUT ALE IN BACKPACK: ]
 
-Instead of inserting a long thing into the backpack:
-	say "[The noun] [one of]couldn't possibly fit[or]would be much too long[or]would just stick out[at random]."
-
-Instead of inserting a fluid thing into the backpack:
-	say "[The noun] [one of]would make a real mess[or]would just spill[at random]."
-
-Instead of inserting a heavy thing into the backpack:
-	say "There's nowhere near enough room."
+Check inserting something into the backpack:
+	if the noun is long or the noun is fluid or the noun is heavy:
+		say backpack-refusal of the noun instead.
 
 Check inserting a non-empty container into the backpack:
 	let N be the unsuitable of the noun;
