@@ -73,7 +73,7 @@ A thing can be contained or uncontained. A thing is usually uncontained.
 Every turn when the player carries a fluid thing (called the puddle):
 	unless the puddle is contained:
 		move the puddle to the location;
-		say "[The puddle][one of], true to its nature, leaks out onto the [ground][or] drips through our fingers onto the [ground][or] drips out of our hands[at random]."
+		say "[The puddle][one of], true to [their] nature, [leak] out onto the [fall-receiver][or] [drip] through our fingers onto the [fall-receiver][or] [drip] out of our hands[at random]."
 
 Definition: a container is fluid-filled rather than dry if the first thing held by it is an uncontained fluid thing.
 

@@ -1319,7 +1319,7 @@ Carry out someone saying hello to the player (this is the someone else says hell
 	set the interlocutor to the actor.
 
 Report someone saying hello to the player (this is the report someone saying hello rule):
-	say "[The person asked] say[s] hello."
+	say "[The person asked] [say] hello."
 
 
 Hailing is an action applying to nothing.

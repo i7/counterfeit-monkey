@@ -196,7 +196,7 @@ Report involuntarily-dropping the boar:
 	say "[We] more or less throw the boar as far away as possible. It seems the wisest course." instead.
 
 Report involuntarily-dropping a person:
-	say "[The noun] [look] rather awkward, and clamber[s] out of our ineffective hold onto solid ground." instead.
+	say "[The noun] [look] rather awkward, and [clamber] out of our ineffective hold onto solid ground." instead.
 
 Report involuntarily-dropping a cat:
 	say "[The noun] [get] tired of being carried and [leap] delicately to the [fall-receiver]." instead.

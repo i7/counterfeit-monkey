@@ -761,7 +761,7 @@ Instead of searching the tall window:
 		say "Through the window, there's a beautiful view of the sea; but further inspection also reveals a narrow strip of grassy ledge, really only just wide enough to stand on, before a steep descent over stones."
 
 Check attacking the tall window with something:
-	say "[The second noun] bounce[s] harmlessly off the window glass. It must be artificially strengthened or something." instead.
+	say "[The second noun] [bounce] harmlessly off the window glass. It must be artificially strengthened or something." instead.
 
 Instead of climbing the tall window:
 	try entering the tall window.

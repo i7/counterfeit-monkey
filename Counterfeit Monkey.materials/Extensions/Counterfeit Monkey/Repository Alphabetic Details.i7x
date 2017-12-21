@@ -2514,7 +2514,7 @@ Sanity-check connecting something:
 		make no decision;
 	if the noun is a device:
 		say "[The noun] [appear] to be adequately powered already." instead;
-	say "[The noun] feature[s] no dangling power cords or sockets." instead.
+	say "[The noun] [feature] no dangling power cords or sockets." instead.
 
 Carry out an actor connecting something:
 	try the actor connecting the dais socket to the wall socket.

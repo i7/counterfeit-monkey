@@ -122,7 +122,7 @@ Understand the command "chew" as "eat". [to cover the gum situation]
 
 Understand "climb on/onto [something]" as climbing.
 
-To make is a verb. To wish is a verb. To shy is a verb. To become is a verb. To make is a verb. To back is a verb. To fall is a verb. To cease is a verb. To meet is a verb. To hop is a verb. To peer is a verb. To ping is a verb. To stare is a verb. To decide is a verb. To shake is a verb. To withdraw is a verb. To bounce is a verb. To blink is a verb. To regard is a verb. To keep is a verb.
+To abut is a verb. To back is a verb. To become is a verb. To blink is a verb. To bounce is a verb. To cease is a verb. To clamber is a verb. To clatter is a verb. To cock is a verb. To decide is a verb. To drip is a verb. To exclaim is a verb. To fall is a verb. To feature is a verb. To flee is a verb. To flutter is a verb. To fold is a verb. To frown is a verb. To gag is a verb. To hop is a verb. To keep is a verb. To land is a verb. To leak is a verb. To leap is a verb. To make is a verb. To meet is a verb. To nod is a verb. To peer is a verb. To ping is a verb. To recite is a verb. To recoalesce is a verb. To recoil is a verb. To reform is a verb. To regard is a verb. To remark is a verb. To rest is a verb. To scrabble is a verb. To scramble is a verb. To shake is a verb. To shatter is a verb. To shift is a verb. To shy is a verb. To slip is a verb. To stare is a verb. To strike is a verb. To wish is a verb. To withdraw is a verb.
 
 [Before eating something which is not carried by the player:
 	try taking the noun;
@@ -932,7 +932,7 @@ Last check facing (this is the face adjacent directions rule):
 	otherwise if leftward thing is a road and rightward thing is a road:
 		say "That way is the corner of [the leftward thing] and [the rightward thing]." instead;
 	otherwise if leftward thing is a facade and rightward thing is a facade:
-		say "In that direction [one of][the leftward thing] abut[s] [the rightward thing], and there's no good way between them[or][the leftward thing] meet[s] the edge of [the rightward thing][or]lies the corner between [the leftward thing] and [the rightward thing][at random]." instead;
+		say "In that direction [one of][the leftward thing] [abut] [the rightward thing], and there's no good way between them[or][the leftward thing] [meet] the edge of [the rightward thing][or]lies the corner between [the leftward thing] and [the rightward thing][at random]." instead;
 	otherwise if leftward thing is a road:
 		say "That way is the corner of [the rightward thing] and the beginning of [leftward thing] running [leftway]." instead;
 	otherwise if rightward thing is a road:

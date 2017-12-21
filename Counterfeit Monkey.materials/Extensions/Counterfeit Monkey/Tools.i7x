@@ -653,7 +653,7 @@ Check unlocking the plexiglas case with something which is not the screwdriver:
 		if the second noun is floppy:
 			say "[The second noun] [are] not at all suited to the purpose. There's a reason they make screwdrivers for this." instead;
 		else:
-			say "[We] try contriving to get an edge of [the second noun] into the slot of the screws, but [the second noun] just slip[s] around unhelpfully. There's a reason they make screwdrivers for this." instead;
+			say "[We] try contriving to get an edge of [the second noun] into the slot of the screws, but [the second noun] just [slip] around unhelpfully. There's a reason they make screwdrivers for this." instead;
 
 Test unscrewing-bug with "unscrew case with as / unscrew screws with as" holding the as-coin in the Seminar Room.
 
@@ -1070,10 +1070,11 @@ Carry out looking at it through:
 		say "There is a dismissive blatt from [the second noun], and transposed over [the noun] is a faint, [if the noun is edible and the noun is proffered by something inedible]unappet[izing][otherwise]greenish[end if] image of [a list of things which proffer the noun]."
 
 Report someone looking at something through something:
-	if the noun is original, say "In response [the actor] looks through [the second noun] at [the noun], then nods briskly. '[one of]The genuine article[or]Definitely not fake[or]Looks clean[or]Not a forgery[or]Real[or]Yup, authentic[at random].'";
-	otherwise say "Thoughtfully [the actor] [peer] through [the second noun] at [the noun], then frown[s]. '[one of]Fake[or]An obvious forgery[or]Not at all the real thing[or]Bogus[or]I hope that came with a money-back guarantee[as decreasingly likely outcomes]!' [regarding the actor][they] [one of]say[s][or]remark[s][or]exclaim[s][as decreasingly likely outcomes]."
+	if the noun is original, say "In response [the actor] [look] through [the second noun] at [the noun], then [nod] briskly. '[one of]The genuine article[or]Definitely not fake[or]Looks clean[or]Not a forgery[or]Real[or]Yup, authentic[at random].'";
+	otherwise say "Thoughtfully [the actor] [peer] through [the second noun] at [the noun], then [regarding the actor][frown]. '[one of]Fake[or]An obvious forgery[or]Not at all the real thing[or]Bogus[or]I hope that came with a money-back guarantee[as decreasingly likely outcomes]!' [regarding the actor][they] [one of][say][or][remark][or][exclaim][as decreasingly likely outcomes]."
 
-
+After the secretary looking at something illegal through a scope:
+	stop the action.
 
 After the secretary looking at the disguised pass through a scope:
 	say "The secretary raises her Authentication Scope to look at the pass. There is a moment of silence. The scope does nothing.";
@@ -1635,7 +1636,7 @@ Check shooting something with the loaded anagramming gun:
 				add the item to the possibles list; [* We make a list because otherwise, for any set of anagrammed objects in the repository, we will always just swap back and forth between the first two that are implemented and never get to the others.]
 	let max be the number of entries in the possibles list;
 	if max is 0:
-		say "The gun fires ruggedly into [the noun], but is unable to make anything interesting out of [the initial key]. [The noun] recoalesce[s] into [their] original form." instead;
+		say "The gun fires ruggedly into [the noun], but is unable to make anything interesting out of [the initial key]. [The noun] [recoalesce] into [their] original form." instead;
 	otherwise:
 		now detritus is entry max of the possibles list.
 
@@ -1676,12 +1677,12 @@ Carry out shooting something with the anagramming gun:
 	record "using the anagramming gun" as achieved;
 
 Report shooting something with the anagramming gun when the detritus is unseen:
-	say "The gun fires ruggedly into [the noun], which shatter[s] and then reform[s] as [the detritus]. [run paragraph on][detritus description][paragraph break]";
+	say "The gun fires ruggedly into [the noun], which [shatter] and then [reform] as [the detritus]. [run paragraph on][detritus description][paragraph break]";
 	set pronouns from the detritus;
 	abide by the dangerous construction rules for the detritus instead.
 
 Report shooting something with the anagramming gun:
-	say "The gun fires ruggedly into [the noun], which shatter[s] and then reform[s] as [the detritus].";
+	say "The gun fires ruggedly into [the noun], which [shatter] and then [reform] as [the detritus].";
 	abide by the dangerous construction rules for the detritus instead.
 
 

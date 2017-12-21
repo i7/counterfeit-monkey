@@ -173,7 +173,7 @@ To say sits:
 	begin;
 		say "[regarding current-subject][are] ";
 	otherwise;
-		say "[regarding current-subject][one of][sit] [or]rest[s] [or][are] [or][are] sitting [at random]";
+		say "[regarding current-subject][one of][sit] [or][rest] [or][are] [or][are] sitting [at random]";
 	end if;
 
 To say (N - a thing) as a possibly-known item:
@@ -300,7 +300,7 @@ current-container-content-table is a table-name that varies. current-container-c
 
 Table of Container Content Disclosures
 disclosure
-"[The current-subject] [optional also]contain[s] [a list of mentionable things *in the current-subject]. "
+"[The current-subject] [optional also][contain] [a list of mentionable things *in the current-subject]. "
 "In [the current-subject] [is-are a list of mentionable things *in the current-subject]. "
 "There [mentionable-are] [optional also][a list of mentionable things *in the current-subject] in [the current-subject]. "
 
@@ -317,14 +317,14 @@ current-prementioned-supporters-table is a table-name that varies.  current-prem
 
 Table of Prementioned Supporters
 disclosure
-"[The list of mentioned things *in the current-subject] [mentioned-are] on [a current-subject][if current-subject supports something mentionable], which also hold[s] [a list of mentionable things *in the current-subject][end if]. "  
+"[The list of mentioned things *in the current-subject] [mentioned-are] on [a current-subject][if current-subject supports something mentionable], which also [hold] [a list of mentionable things *in the current-subject][end if]. "
 
 
 current-prementioned-containers-table is a table-name that varies.  current-prementioned-containers-table is the Table of Prementioned Containers.
 
 Table of Prementioned Containers
 disclosure
-"[The list of mentioned things *in the current-subject] [mentioned-are] in [a current-subject][if current-subject contains something mentionable], which also hold[s] [a list of mentionable things *in the current-subject][end if]. " 
+"[The list of mentioned things *in the current-subject] [mentioned-are] in [a current-subject][if current-subject contains something mentionable], which also [hold] [a list of mentionable things *in the current-subject][end if]. "
 
 Section 5 - Excluding concealed items
 
@@ -406,13 +406,13 @@ Version 7 of Tailored Room descriptions moves to a new way of managing internal 
 
 	Table of Prementioned Containers
 	disclosure
-	"[The list of mentioned things *in the current-subject] [mentioned-are] in [a current-subject][if current-subject contains something mentionable], which also hold[s] [a list of mentionable things *in the current-subject][end if]." 
+	"[The list of mentioned things *in the current-subject] [mentioned-are] in [a current-subject][if current-subject contains something mentionable], which also [hold] [a list of mentionable things *in the current-subject][end if]."
 
 The disclosure entry here is a template used by the extension to create a viable sentence. One of these lines is selected at random from the table to use in each situation, which means that if we would like to diversify the range of sentence options, we can simply continue the table in our own code, as in
 
 	Table of Prementioned Containers (continued)
 	disclosure
-	"[The list of mentioned things *in the current-subject] [mentioned-are] in [a current-subject], together with [a list of mentionable things *in the current-subject][end if]." 
+	"[The list of mentioned things *in the current-subject] [mentioned-are] in [a current-subject], together with [a list of mentionable things *in the current-subject][end if]."
 
 We may also swap these tables entirely for other tables of our own devising, as in
 

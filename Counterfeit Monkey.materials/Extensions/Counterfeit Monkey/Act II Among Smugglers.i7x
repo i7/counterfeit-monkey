@@ -1253,7 +1253,7 @@ Report the All-purpose-officer taking the stuffed octopus:
 	say "Lab[our]iously and with obvious irritation, the All-Purpose Officer pries the arms of the stuffed octopus off the statue's wrist, where they appear to have been fixed with glue." instead.
 
 Report the All-purpose-officer dropping the restoration-gel rifle:
-	say "[The actor] shift[s] the [noun] from one hand to another; looks around; and then props it against the foot of the statue." instead.
+	say "[The actor] [shift] the [noun] from one hand to another; looks around; and then props it against the foot of the statue." instead.
 
 Report dropping the restoration-gel rifle in the presence of the giant Atlantida statue:
 	say "[We] prop the rifle back at the foot of the statue." instead.

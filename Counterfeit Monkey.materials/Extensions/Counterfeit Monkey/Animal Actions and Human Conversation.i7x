@@ -65,13 +65,13 @@ Check something exiting when the actor is an animal in the synthesizer:
 	if the person asked is a bird:
 		say "[The person asked] [make] some attempts to flutter out of [the synthesizer], but [don't] get much lift and [give] up for the moment." instead;
 	otherwise:
-		say "[The person asked] scrabble[s] at the smooth sides of [the synthesizer], but can't get out." instead.
+		say "[The person asked] [scrabble] at the smooth sides of [the synthesizer], but can't get out." instead.
 
 Report something exiting when the actor is an animal and the container exited from is the t-inserter:
-	say "[The person asked] clamber[s] out of [the t-inserter]." instead.
+	say "[The person asked] [clamber] out of [the t-inserter]." instead.
 
 Report something exiting when the actor is a bird and the container exited from is the t-inserter:
-	say "[The person asked] [hop] and flutter[s] out of [the t-inserter]." instead.
+	say "[The person asked] [hop] and [flutter] out of [the t-inserter]." instead.
 
 Test kayakcat with "autoupgrade / wave s-remover at shackle / wave l-remover at bollard / wave d-remover at board / wave b-remover at boar / get oar / get in kayak / launch kayak / z" holding the tomcat in the Abandoned Shore.
 
@@ -550,13 +550,13 @@ Rule for refusing comment by someone when the noun is freaky:
 	if the current interlocutor is an animal:
 		make no decision;
 	if the current interlocutor exhibits caution:
-		say "[The current interlocutor] [one of]turns white[or]goes a bit green[or]looks like throwing up[or]obviously might faint[or]gags[at random]. After a moment to regain [their] composure, [they] flee[s] the vicinity.";
+		say "[The current interlocutor] [one of][turn] white[or][go] a bit green[or][look] like throwing up[or]obviously might faint[or][gag][at random]. After a moment to regain [their] composure, [they] [flee] the vicinity.";
 		now the current interlocutor is nowhere;
 		reset the interlocutor;
 	otherwise if the ostensible motive is you-are-tourist:
 		say "[The current interlocutor] [say], 'Don't worry, [the noun] [are] almost certainly fake. They make things like [the noun] with letter tools around here. Freaks out the tourists, though!'";
 	otherwise:
-		say "[one of][The current interlocutor] recoil[s] involuntarily.[or]'Ew!' says [the current interlocutor].[or]'Please take that away,' [the current interlocutor] [adapt the verb say].[or]'Yuck,' [the current interlocutor] [adapt the verb reply].[at random]"
+		say "[one of][The current interlocutor] [recoil] involuntarily.[or]'Ew!' says [the current interlocutor].[or]'Please take that away,' [the current interlocutor] [adapt the verb say].[or]'Yuck,' [the current interlocutor] [adapt the verb reply].[at random]"
 
 Last for refusing comment by someone when the noun is a long strong thing:
 	if the current interlocutor is an animal:
@@ -656,7 +656,7 @@ Rule for refusing comment by a police person (called stern person) when the noun
 		say "Based on our behavi[our] so for, [the stern person] [decide] this must be an attempt at bribery, and [take] us in. And while [we] [are] able to get around the bribery charge eventually, quite a few other undesirable facts come out in the process...";
 		end the story saying "That was an error in judgment";
 	otherwise:
-		say "[You-are-dangerous][The stern person] recite[s] to us a bit of the penal code applying to attempts to bribe officers of the law."
+		say "[You-are-dangerous][The stern person] [recite] to us a bit of the penal code applying to attempts to bribe officers of the law."
 
 Rule for refusing comment by someone when the noun is r-abstract:
 	if the current interlocutor is an animal:
@@ -678,7 +678,7 @@ Rule for refusing comment by someone (called listener) when the noun is the roll
 	otherwise if listener knows you-are-feckless:
 		say "'Hang on to your money.'";
 	otherwise:
-		say "[You-are-feckless][The listener] fold[s] our hand back over the bills. 'Better hold on to those.'"
+		say "[You-are-feckless][The listener] [fold] our hand back over the bills. 'Better hold on to those.'"
 
 Rule for refusing comment by someone who exhibits privateness when the noun is the letter:
 	if the current interlocutor is an animal:
@@ -696,7 +696,7 @@ Rule for refusing comment by someone when the noun is an as:
 		say "'[one of]Looks old[or]Huh[or]Looks like it came up heads[or]Tails, I see[at random].'"
 
 Sanity-check showing something to an animal (called viewer):
-	say "[The viewer] cock[s] [their] head[if the viewer is plural-named]s[end if]." instead.
+	say "[The viewer] [cock] [their] head[if the viewer is plural-named]s[end if]." instead.
 
 Rule for refusing comment by something:
 	say "[one of]This evokes no particular interest[or][The current interlocutor] [shake] [their] head[or][The current interlocutor] [don't] have anything to say in response[at random]."
@@ -5959,19 +5959,19 @@ Instead of throwing something at atlantida-woman:
 	if the noun is r-abstract:
 		say "[The noun] wouldn't make much impact, other than perhaps notionally. And Atlantida doesn't look like she's open to persuasion, even if the concept of [the noun] were one that carried weight in this situation.";
 	otherwise if the noun is floppy and the noun is long:
-		say "[The noun] [make] a poor projectile and land[s] back near our own feet.";
+		say "[The noun] [make] a poor projectile and [land] back near our own feet.";
 		move the noun to the location;
 	otherwise if the noun is long:
-		say "[We] cast [the noun], javelin-like, at Atlantida's heart, but [one of]she dodges[or][we] undercalculate the amount of force required and [the noun] clatter[s] to the ground instead[or]miss[at random]. Her expression is disdainful.";
+		say "[We] cast [the noun], javelin-like, at Atlantida's heart, but [one of]she dodges[or][we] undercalculate the amount of force required and [the noun] [clatter] to the ground instead[or]miss[at random]. Her expression is disdainful.";
 		move the noun to the location;
 	otherwise if the heft of the noun is less than 3:
 		let random-destiny be a random supporter which is in the location;
-		say "[We] fling [the noun] at Atlantida, but [one of][they] bounce[s] off unexcitingly and land[s] on[or]with a swipe of her arm she deflects [them] to[at random] [the random-destiny].";
+		say "[We] fling [the noun] at Atlantida, but [one of][they] [bounce] off unexcitingly and [land] on[or]with a swipe of her arm she deflects [them] to[at random] [the random-destiny].";
 		move the noun to the random-destiny;
 	otherwise if the heft of the noun is greater than 3:
 		say "[The noun] [are] too heavy for us to throw at all effectively.";
 	otherwise:
-		say "[We] chuck [the noun] at Atlantida. [They] strike[s] her hard enough to elicit an outraged 'Oof!', but that doesn't seem to have substantially impaired her."
+		say "[We] chuck [the noun] at Atlantida. [They] [strike] her hard enough to elicit an outraged 'Oof!', but that doesn't seem to have substantially impaired her."
 
 
 Understand "gun hand" as the restoration-gel rifle when the restoration-gel rifle is carried by Atlantida-woman.
