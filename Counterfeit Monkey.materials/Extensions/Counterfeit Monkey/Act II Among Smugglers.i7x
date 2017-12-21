@@ -442,7 +442,7 @@ Understand "hide" as a mistake ("[if the location is the Tin Hut and the Authent
 Rule for listing exits while looking in the tin hut:
 	do nothing instead.
 
-Some tarpaulin-covered masses are an enterable supporter in Tin Hut. They are fixed in place. The initial appearance is "Various [tarpaulin-covered masses] fill the room." The description is "From the shapes visible under the blue plastic, it appears that they are probably tables and stalls, buckets, signs, and other necessary features of the fish market when sales are in progress. There's a flattish area we could probably scramble onto." Understand "tarpaulin" or "tarp" or "tarps" or "tables" or "stalls" or "awnings" or "signs" or "buckets" or "table" or "stall" or "awning" or "bucket" or "flattish" or "area" as the masses.
+Some tarpaulin-covered masses are an enterable supporter in Tin Hut. They are fixed in place. The initial appearance is "Various [tarpaulin-covered masses] fill the room." The description is "From the shapes visible under the blue plastic, it appears that they are probably tables and stalls, buckets, signs, and other necessary features of the fish market when sales are in progress. There's a flattish area [if the player is on the tarpaulin-covered masses]where we are currently standing[otherwise]we could probably scramble onto[end if]." Understand "tarpaulin" or "tarp" or "tarps" or "tables" or "stalls" or "awnings" or "signs" or "buckets" or "table" or "stall" or "awning" or "bucket" or "flattish" or "area" as the masses.
 
 The masses allow seated, standing, and reclining. The posture of the masses is standing.
 
