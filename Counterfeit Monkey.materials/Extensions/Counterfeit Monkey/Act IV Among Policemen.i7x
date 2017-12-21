@@ -528,12 +528,11 @@ already caught is a truth state that varies.
 
 Understand "bribe [secretary]" as a mistake ("Attempts to bribe bureau employees carry sentences of up to ten years in prison. I'm not up for that, thanks.").
 
-Instead of taking something which is enclosed by the secretary:
-	say "Theft from bureau employees carries a sentence of up to fifteen years in prison and rationed use of plurals."
+Sanity-check taking something which is held by the secretary:
+	say "Theft from bureau employees carries a sentence of up to fifteen years in prison and rationed use of plurals." instead.
 
-Instead of kissing or attacking the secretary:
-	say "Violence against the person of a bureau employee is grounds for Cold Storage."
-
+Sanity-check kissing or attacking the secretary:
+	say "Violence against the person of a bureau employee is grounds for Cold Storage." instead.
 
 Instead of giving something to the secretary:
 	try showing the noun to the secretary.
