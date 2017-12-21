@@ -356,7 +356,10 @@ Check waving the letter-remover at a room creating the letter-remover:
 
 Check waving the letter-remover at something (called target) creating an uncontained fluid thing (called the liquid):
 	if the target is in a container (called target holder) and the number of things in target holder is greater than 1 and target holder is not the synthesizer:
-		say "[The liquid] would make a real mess in [the target holder]." instead.
+		say the liquid would make a mess in the target holder instead.
+
+To say (X - a thing) would make a mess in (Y - a container):
+	say "[We] better not. [one of][if X is seen][The X][otherwise][A X][end if] would make a real mess in [the Y][or][We] don't want to get [X] on everything in [the Y][cycling].";
 
 Check waving the letter-remover at a room creating something which is not the letter-remover:
 	abide by the dangerous destruction rules for the second noun;
@@ -1360,7 +1363,7 @@ Sanity-check putting the restoration gel on something irretrievable:
 Before putting the restoration gel on something which is in a container (called the box):
 	if the second noun is proffered by an uncontained fluid thing (called the liquid):
 		if the number of things in the box is greater than 1 or the number of things proffered by the second noun is greater than 1 and the box is not the synthesizer:
-			say "[The liquid] would make a real mess in [the box]." instead.
+			say the liquid would make a  mess in the box instead.
 
 Before putting the restoration gel on something which is in the backpack:
 	try taking the second noun;
@@ -1616,7 +1619,7 @@ Sanity-check shooting the loaded anagramming gun with the loaded anagramming gun
 
 Check shooting the pills with the loaded anagramming gun:
 	if the pills are in a container (called the box) and the number of things in the box is greater than 1 and the box is not the synthesizer:
-		say "The spill would make a real mess in [the box]." instead.
+		say the spill would make a mess in the box instead.
 
 Check shooting something with the loaded anagramming gun:
 	let initial key be the anagram key of the noun;
@@ -1705,7 +1708,7 @@ Sanity-check shooting something irretrievable with the restoration-gel rifle:
 Before shooting something which is in a container (called the box) with the restoration-gel rifle:
 	if the noun is proffered by an uncontained fluid thing (called the liquid):
 		if the number of things in the box is greater than 1 or the number of things proffered by the noun is greater than 1 and the box is not the synthesizer:
-			say "[The liquid] would make a real mess in [the box]." instead.
+			say the liquid would make a  mess in the box instead.
 
 [Because it's possible to change something into an object that becomes fixed in place in the backpack, or too heavy to move...]
 
