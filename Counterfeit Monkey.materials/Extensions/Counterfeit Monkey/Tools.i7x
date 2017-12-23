@@ -1379,7 +1379,8 @@ Before putting the restoration gel on something which is in a container (called 
 Before putting the restoration gel on something which is enclosed by the backpack:
 	if the backpack is closed:
 		try opening the backpack;
-	try taking the second noun;
+	if the backpack is open:
+		try taking the second noun;
 	if the player does not carry the second noun:
 		say "It seems best not to word-change things that are in the backpack." instead.
 
@@ -1728,7 +1729,8 @@ Before shooting something which is in a container (called the box) with the rest
 Before shooting something which is enclosed by the backpack with the restoration-gel rifle:
 	if the backpack is closed:
 		try opening the backpack;
-	try taking the noun;
+	if the backpack is open:
+		try taking the noun;
 	if the player does not carry the noun:
 		say "It seems best not to word-change things that are in the backpack." instead.
 
