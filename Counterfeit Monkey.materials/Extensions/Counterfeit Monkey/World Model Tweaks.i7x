@@ -128,7 +128,14 @@ To abut is a verb. To back is a verb. To become is a verb. To blink is a verb. T
 	try taking the noun;
 	if the player does not have the noun, stop the action. ]
 
-Before wearing something which is not carried by the player: if the noun is worn, continue the action; try taking the noun; if the player does not have the noun, stop the action.
+The basic accessibility rule does nothing when wearing something which is in the backpack.
+
+Before wearing something which is not carried by the player:
+	if the noun is worn:
+		continue the action;
+	try taking the noun;
+	if the player does not have the noun:
+		stop the action.
 
 Understand "plugh" or "xyzzy" or "frotz" or "plover" as a mistake ("What [we] do isn't magic. It's science.").
 
@@ -225,6 +232,8 @@ The try opening rules is an object-based rulebook.
 The try reaching rules is an object-based rulebook.
 
 A try opening rule for a container (called the box):
+	unless the action is not silent:
+		say "(opening [the box])";
 	if the player is not in the box:
 		if the box is not openable:
 			say "[The box] [aren't] open.";
