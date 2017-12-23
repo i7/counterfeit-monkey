@@ -1446,6 +1446,22 @@ Instead of someone trying touching the restoration gel:
 		gel-convert the person asked;
 		rule succeeds.
 
+Instead of touching a sticky-to-the-touch thing:
+	say "Sticky."
+
+Definition: a thing is sticky-to-the-touch:
+	if it is the restoration gel:
+		yes;
+	if it is the Origin Paste:
+		yes;
+	if it is the sticky:
+		yes;
+	if it is the tape:
+		yes;
+	if it is a tar:
+		yes.
+
+
 Definition: a thing (called itself) is original if it proffers itself and it is proffered by exactly one thing.
 
 To gel-convert (item - an object):
