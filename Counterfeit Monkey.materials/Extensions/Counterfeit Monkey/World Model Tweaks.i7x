@@ -1305,7 +1305,7 @@ Instead of climbing the scaffolding:
 
 Understand "cross [traffic]" or "ignore [traffic]" as a mistake ("You may have the nerve, but I don't.") when the traffic is marked-visible.
 
-Test car-behavior with "tutorial off / car-acquire / cross traffic / ignore traffic / drive to roundabout / park / get out of car / go to deep street / nw / e / climb masses / look through window / out / out / se / get in car / drive to tall street / go to roundabout / drive to monkey" in high street.
+Test car-behavior with "tutorial off / car-acquire / unmonkey / put remover in backpack / close backpack / cross traffic / ignore traffic / drive to roundabout / park / get out of car / go to deep street / nw / e / climb masses / look through window / out / out / se / get in car / drive to tall street / go to roundabout / drive to monkey" holding the backpack in high street.
 
 Test roundaboutation with "tutorial off / car-acquire / drive to roundabout / z / z / z" in high street.
 
