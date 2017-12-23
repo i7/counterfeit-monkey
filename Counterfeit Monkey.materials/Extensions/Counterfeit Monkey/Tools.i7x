@@ -464,6 +464,7 @@ To decide what thing is the homonym-match of (target - a thing):
 			if new text is old text:
 				if the description of the item is not the description of the target:
 					decide on item;
+					break;
 	decide on player.
 
 Chapter 3 - The T-inserter
@@ -768,11 +769,13 @@ To synthesize contents of (source - a thing):
 			otherwise:
 				if goal text exactly matches the text "[Y]":
 					now the chosen article is the item;
+					break;
 				otherwise:
 					let the goal text be the name of item minus the name of Y;
 					replace the text " " in goal text with "";
 					if goal text exactly matches the text "[X]":
 						now the chosen article is the item;
+						break;
 	if the chosen article is not Y:
 		if the heft of the chosen article is greater than 4 and source is synthesizer:
 			let N be "[chosen article]";
@@ -2199,6 +2202,7 @@ After inserting something into the cryptolock:
 			now item text is "[item text in lower case]";
 			if the goal text is item text:
 				now the chosen article is the item;
+				break;
 	if the chosen article is not the noun:
 		abide by the dangerous destruction rules for the noun;
 		now the chosen article is not proffered by anything;
