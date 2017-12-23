@@ -3180,7 +3180,7 @@ To say stopwatch elapsed time:
 Report switching off the stopwatch:
 	say "[We] turn off the stopwatch at [stopwatch elapsed time]." instead.
 
-The strolling cap is a wearable thing. It covers the head-area. The description is "A cotton cap with an extra long peak, which might offer a strolling person some protection against the sun." Understand "peak" and "cotton" as the strolling cap.
+The strolling cap is a floppy wearable thing. It covers the head-area. The description is "A cotton cap with an extra long peak, which might offer a strolling person some protection against the sun." Understand "peak" and "cotton" as the strolling cap.
 
 The strolling chap is a man. The description is "He is walking back and forth, forth and back, at a leisurely pace, as though he had all the time in the world."
 
