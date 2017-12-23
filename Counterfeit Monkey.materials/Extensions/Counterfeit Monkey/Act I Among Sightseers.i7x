@@ -1411,6 +1411,8 @@ The film ends and the projector goes dark.";
 
 
 Check inserting something into the projector:
+	if the noun is the fishing-reel:
+		say "It is not that kind of reel." instead;
 	if the noun is not the reel:
 		say "The projector can only really show reels of film." instead;
 	if the projector-switch is switched on:
@@ -1419,10 +1421,13 @@ Check inserting something into the projector:
 Sanity-check putting the reel on the projector:
 	try inserting the reel into the projector instead.
 
-Understand "thread [reel] on/onto [the projector]" as inserting it into.
-Understand "mount [reel] on/onto [the projector]" as inserting it into.
+Understand "thread [a thing] on/onto [the projector]" as inserting it into.
+Understand "mount [a thing] on/onto [the projector]" as inserting it into.
 
-Understand "show [reel] on [the projector]" as showing it on. Showing it on is an action applying to two things.
+Understand "show [a thing] on [the projector]" as showing it on. Showing it on is an action applying to two things.
+
+Sanity-check performing something on the projector:
+	try showing the noun on the projector instead.
 
 Instead of mounting the reel:
 	if the projector is in location:
@@ -1431,7 +1436,7 @@ Instead of mounting the reel:
 		say "There is nothing suitable here to mount it on."
 
 Check showing something which is not the reel on the projector:
-	say "[The noun] [are] not a reel of film." instead.
+	try inserting the noun into the projector instead.
 
 Check showing the reel on something which is not the projector:
 	say "[We] really need a film projector for that." instead.

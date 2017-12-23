@@ -2049,10 +2049,14 @@ Rule for supplying a missing second noun while performing something on:
 	otherwise:
 		if game-selection is marked-visible:
 			now the second noun is the game-selection;
-		else if computer-game-selection is marked-visible:
-			now the second noun is the computer-game-selection;
 		else:
-			say "There's no instrument handy." instead.
+			if computer-game-selection is marked-visible:
+				now the second noun is the computer-game-selection;
+			else:
+				if the projector is marked-visible:
+					now the second noun is the projector;
+				else:
+					say "There's no instrument handy." instead.
 
 Rule for supplying a missing noun while performing something on:
 	now the noun is the player. [as a safe generically-present thing]
