@@ -1261,11 +1261,11 @@ Instead of listening to office-door-1:
 		say "The door is open.".
 
 Instead of showing a Waterstone-inspiring thing to Professor Waterstone when the location is Waterstone's Office:
-	say "We are just about to show [Professor Waterstone] [the noun] when he suddenly gets up.";
+	say "We are just about to show [Professor Waterstone] [the noun], when he all of a sudden gets up from his chair.";
 	try Professor Waterstone discussing please-get-out.
 
 Instead of giving a Waterstone-inspiring thing to Professor Waterstone when the location is Waterstone's Office:
-	say "We are just about to give [the noun] to [Professor Waterstone] when he suddenly gets up.";
+	say "We are just about to give [the noun] to [Professor Waterstone], when he all of a sudden gets up from his chair.";
 	try Professor Waterstone discussing please-get-out.
 
 
@@ -1278,17 +1278,19 @@ Definition: a thing is Waterstone-inspiring:
 		yes;
 	no.
 
-We-have-knocked is a truth state that varies.
+Homonym-puzzle-established is a truth state that varies. Homonym-puzzle-established is initially false.
 
-To say He-Waterstone:
-	if we-have-knocked is true:
-		say "Waterstone";
-	otherwise:
-		say "He".
+[It is confusing if Watersone looks at the player's belongings before we even know that he is looking for anything. So we have this flag, homonym-puzzle-established, that indicates whether the player knows about the puzzle. This will be set to true if we have read the draft document, if we have already tried to show or give something to Waterstone, or simply by having knocked once on his door after being thrown out the first time.]
 
-Instead of knocking on office-door-1 when the location of Professor Waterstone is Waterstone's Office and office-door-1 is closed and the location is Language Studies Department Office:
-	if we-have-knocked is false:
+After examining or taking the draft document:
+	now homonym-puzzle-established is true;
+	continue the action.
+
+Instead of knocking on office-door-1 when Professor Waterstone is on a chair and office-door-1 is closed and the location is Language Studies Department Office:
+	if homonym-puzzle-established is false:
 		say "Professor Waterstone looks up at us through the window in the door, as if to ask 'Yes? Was there something you wanted to show me?'[paragraph break]";
+		now homonym-puzzle-established is true;
+		stop the action;
 	let the selected object be nothing;
 	if held-over-object is not nothing and held-over-object is not the player:
 		let selected object be held-over-object;
@@ -1306,25 +1308,22 @@ Instead of knocking on office-door-1 when the location of Professor Waterstone i
 	else:
 		repeat with item running through things enclosed by the location:
 			if item is waterstone-inspiring:
-				say "[if we-have-knocked is true]Waterstone looks up and gives a little frown. [end if]It's clear he doesn't know why we knocked. [The item] might interest him, but perhaps he can't see [them] from that angle. Maybe if we were holding [them].";
-				now we-have-knocked is true;
+				say "Waterstone looks up and gives a little frown. It's clear he doesn't know why we knocked. [The item] might interest him, but perhaps he can't see [them] from that angle. Maybe if we were holding [them].";
 				stop the action;
 	if the selected object is nothing:
-		say "[if we-have-knocked is true]Waterstone looks up and gives a little frown. [end if]It's clear he doesn't know why we knocked; to be honest I'm not sure why we did either.";
-		now we-have-knocked is true;
+		say "Waterstone looks up and gives a little frown. It's clear he doesn't know why we knocked; to be honest I'm not sure why we did either.";
 		stop the action;
 	otherwise:
 		follow the water-reaction rules for the selected object;
-	now we-have-knocked is true;
 	stop the action.
 
 The water-reaction rules are an object-based rulebook.
 
 A Water-reaction rule for a Waterstone-inspiring thing (called the target):
-	say "[He-Waterstone] looks at [the target], briefly arrested by some thought. He gets a monocle like mine out of his drawer. He looks through it at [the target], notes [the list of things which proffer the target]; grins. ";
+	say "Waterstone looks at [the target], briefly arrested by some thought. He gets a monocle like mine out of his drawer. He looks through it at [the target], notes [the list of things which proffer the target]; grins. ";
 	say "He gets up and comes out of his office.
 
-'This is perfect,' Waterstone says. 'One more example to put into my talk [--] but I really should be going [--] should be able to get a ride from my wife [--] if I leave now [--] Here, you can have this if it interests you. I won't have time to use it.' He sets an invitation down on the desk.
+'This is perfect,' He says. 'One more example to put into my talk [--] but I really should be going [--] should be able to get a ride from my wife [--] if I leave now [--] Here, you can have this if it interests you. I won't have time to use it.' He sets an invitation down on the desk.
 
 'Come back and talk to me again later,' he adds. 'We can discuss your goals as a student. And now I really have to go [--] should have gone hours ago.' (There, see: he can be a nice man. More or less.)
 
@@ -1340,35 +1339,35 @@ He locks his door again and goes out. I think he is actually humming something."
 	rule succeeds.
 
 A Water-reaction rule for the passage when the ass does not proffer the passage:
-	say "[one of][He-Waterstone] looks at the passage, briefly arrested by some thought. He gets a monocle like mine out of his drawer. He looks through it at the passage.
+	say "[one of]Waterstone looks at the passage, briefly arrested by some thought. He gets a monocle like mine out of his drawer. He looks through it at the passage.
 
 But what he sees disappoints him, and he shoves the monocle away again. He writes something on a paper and holds it up: 'Good thought [--] P-ASS-AGE [--] but it must have been genuinely constructed from [']ass['], not cobbled from [a list of things that proffer the passage]. Can't cite it.'
 
-This is an awful lot of writing; why the man can't come to the door and hold a conversation I don't know. But that's Waterstone for you[or]He checks the passage again, then shakes his head in disappointment when he sees it's not made with genuine ass[stopping].";
+This is an awful lot of writing; why the man can't come to the door and hold a conversation I don't know. But that's Waterstone for you[or]Waterstone checks the passage again, then shakes his head in disappointment when he sees it's not made with genuine ass[stopping].";
 	rule succeeds.
 
 A Water-reaction rule for the cock-ring:
-	say "[He-Waterstone] sees what [we][']ve made of the cock, and clutches desperately at his hair as though he's going to tear it out in tufts. His eyes bulge and water. I've never seen the man so close to apoplexy.
+	say "Waterstone sees what [we][']ve made of the cock, and clutches desperately at his hair as though he's going to tear it out in tufts. His eyes bulge and water. I've never seen the man so close to apoplexy.
 
 I think that was exactly the wrong thing, somehow.";
 	rule succeeds.
 
 A Water-reaction rule for a naughty-sounding thing (called target):
-	say "[He-Waterstone] glares at [the target]. Then he picks up a marker and writes on a piece of paper, '[one of]Yes, but how to change its name to something innocent?[no line break][or]Now you're just taunting me.[no line break][or]Please go away![no line break][stopping]' Having held up this sign for a minute, he crumples it and goes back to work.
+	say "Waterstone glares at [the target]. Then he picks up a marker and writes on a piece of paper, '[one of]Yes, but how to change its name to something innocent?[no line break][or]Now you're just taunting me.[no line break][or]Please go away![no line break][stopping]' Having held up this sign for a minute, he crumples it and goes back to work.
 
 If he were a cartoon there would be a thundercloud over his laptop.";
 	rule succeeds.
 
 A Water-reaction rule for the clock:
-	say "[He-Waterstone] inspects the clock through his monocle a moment. Then he picks up a marker and writes on a piece of paper, 'It was always a CLOCK. I need something where the original was naughty.' Having held up this sign for a minute, he crumples it and goes back to work.";
+	say "Waterstone inspects the clock through his monocle a moment. Then he picks up a marker and writes on a piece of paper, 'It was always a CLOCK. I need something where the original was naughty.' Having held up this sign for a minute, he crumples it and goes back to work.";
 	rule succeeds.
 
 A Water-reaction rule for the draft document:
-	say "[one of][He-Waterstone] stares at the draft document, apparently not recognizing it at first. Then he picks up a marker and writes on a piece of paper, 'Have you read it? Any ideas?' Having held up this sign for a minute, he crumples it and goes back to work.[or][He-Waterstone] looks up from his work long enough to give us an irritated glare. Perhaps we should consider what he suggested.[or]We get only a momentary flicker of attention from Waterstone. Perhaps we should have another look at the draft and think about what might interest him.[stopping]";
+	say "[one of]Waterstone stares at the draft document, apparently not recognizing it at first. Then he picks up a marker and writes on a piece of paper, 'Have you read it? Any ideas?' Having held up this sign for a minute, he crumples it and goes back to work.[or]Waterstone looks up from his work long enough to give us an irritated glare. Perhaps we should consider what he suggested.[or]We get only a momentary flicker of attention from Waterstone. Perhaps we should take another look at the draft and think about what might interest him.[stopping]";
 	rule succeeds.
 
 A last Water-reaction rule for something (called the target):
-	say "[one of][He-Waterstone] looks up from his work long enough to give us an irritated glare.[or][He-Waterstone] barely glances away from his typing this time.[or]Without looking up, Waterstone sticks out his tongue. Really, he's clearly very upset about his deadlines, it seems.[or][We] get only a momentary flicker of attention from Waterstone.[stopping]";
+	say "[one of]Waterstone looks up from his work long enough to give us an irritated glare.[or]Waterstone barely glances away from his typing this time.[or]Without looking up, Waterstone sticks out his tongue. Really, he's clearly very upset about his deadlines, it seems.[or][We] get only a momentary flicker of attention from Waterstone.[stopping]";
 	if the draft document is examined:
 		say "[line break]He seems to get that we're trying to show him [the target][one of], but as [they] [are] not related to the concept of homonym shame, it's not much help with his paper, so he probably doesn't want to be distracted[or], but [they] [are] not something whose original sounded dirty, so presumably that's not a lot of help with the paper[stopping].";
 	else:
@@ -1385,11 +1384,13 @@ Sanity-check saying hello to Professor Waterstone when Professor Waterstone is o
 Sanity-check giving something to Professor Waterstone when Professor Waterstone is on a chair and office-door-1 is closed and the location is Language Studies Department Office:
 	now held-over-object is the noun;
 	say "Waterstone is unable to hear you through the closed door, which is presumably the purpose of closing it, so let's try knocking instead.";
+	now homonym-puzzle-established is true;
 	try knocking on office-door-1 instead.
 
 Sanity-check showing something to Professor Waterstone when Professor Waterstone is on a chair and office-door-1 is closed and the location is Language Studies Department Office:
 	now held-over-object is the noun;
 	say "Waterstone is unable to hear you through the closed door, which is presumably the purpose of closing it, so let's try knocking instead.";
+	now homonym-puzzle-established is true;
 	try knocking on office-door-1 instead.
 
 Held-over-object is a thing that varies.
@@ -1397,17 +1398,20 @@ Held-over-object is a thing that varies.
 Instead of showing something to special glass window when Professor Waterstone is on a chair and office-door-1 is closed and the location is Language Studies Department Office:
 	say "Though there is a window and Waterstone can watch the outer office from his desk, he is unable to hear you through the closed door, which is presumably the purpose of closing it. I will try knocking instead.";
 	now held-over-object is the noun;
+	now homonym-puzzle-established is true;
 	try knocking on office-door-1.
 
 Instead of giving something to office-door-1 when Professor Waterstone is on a chair and office-door-1 is closed and the location is Language Studies Department Office:
 	say "Waterstone is unable to hear you through the closed door, which is presumably the purpose of closing it, so let's try knocking instead.";
 	now held-over-object is the noun;
+	now homonym-puzzle-established is true;
 	try knocking on office-door-1.
 
 A special glass window is part of office-door-1. The description of the special glass window is "It's nearly the width of the door, and fills most of the upper half of the frame."
 
 After deciding the scope of player when the player is in Language Studies Department Office:
-	place Waterstone's Office in scope.
+	if office-door-1 is closed:
+		place Waterstone's Office in scope.
 
 A description-concealing rule when the location is the Language Studies Department Office:
 	rapidly set all contents of Waterstone's Office not marked for listing.
@@ -1417,6 +1421,10 @@ A description-concealing rule when the location is the Language Studies Departme
 
 [Report Professor Waterstone locking office-door-1 with something:
 	say "Through the window in Waterstone's door, [we] can see him turning the lock. When he catches us watching he gives a tight, unfriendly smile and goes back to his desk." instead.]
+
+Check examining office-door-1 when the subcommand of office-door-1 matches "waterstone":
+	if Professor Waterstone is marked-visible:
+		try examining Professor Waterstone instead.
 
 Instead of searching the special glass window when office-door-1 is closed:
 	if the location is Waterstone's Office:
@@ -1481,6 +1489,22 @@ A small laptop is a laptop. The description is "It goes everywhere with Watersto
 
 Instead of taking the small laptop:
 	say "We reach out our hand. He watches us the way a bird of prey might watch the twitching of a small garden snake. Our hand retracts. We do not take Professor Waterstone's laptop."
+
+Table of Ultratests (continued)
+topic	stuff	setting
+"waters1"	{ clock, screwdriver, shuttle, tub, backpack, member }	Language Studies Seminar Room
+
+Test waters1 with "unlegend / autoupgrade / wave l-remover at clock / unscrew screws / g / open case / put shuttle and cock in synthesizer / get crossword / synthesize / get shuttlecock / gonear printer / n / show shuttlecock to waterstone / put shuttlecock in backpack / knock / put member in backpack / knock / show member to waterstone / show shuttlecock to waterstone".
+
+Table of Ultratests (continued)
+topic	stuff	setting
+"waters2"	{ clock, screwdriver, shuttle, tub, backpack, cream }	Language Studies Seminar Room
+
+Test waters2 with "unlegend / autoupgrade / wave l-remover at clock / unscrew screws / g / open case / put shuttle and cock in synthesizer / get crossword / synthesize / get shuttlecock / gonear printer / n / show shuttlecock to waterstone / wave c-remover at cream / open paper drawer / put ream in paper drawer / close paper drawer / show draft to waterstone / put shuttlecock in backpack / knock / get shuttlecock / knock".
+
+Test waters3 with "unlegend / autoupgrade / n / ask why / ask whether / wave c-remover at cream / open paper drawer / put ream in paper drawer / close paper drawer / read draft / knock / show letter-remover to waterstone / g / g" holding the cream in Language Studies Department Office.
+
+Test waters4 with "unlegend / autoupgrade / n / get invitation / ask about invitation / ask why / ask whether / wave c-remover at cream / open paper drawer / put ream in paper drawer / close paper drawer / knock / show letter-remover to waterstone / g / read draft / knock / show letter-remover to waterstone / g / g" holding the cream in Language Studies Department Office.
 
 Section 7 - Samuel Johnson Basement
 
