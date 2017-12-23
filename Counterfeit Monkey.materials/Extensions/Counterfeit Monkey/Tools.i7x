@@ -834,6 +834,13 @@ The spinner is part of the spinner-gate. It is a supporter. Understand "sculptur
 	The printed name of the spinner is "pedestal".
 	The carrying capacity is 1.
 
+Instead of examining the spinner:
+	say "[description of the spinner][line break]";
+	if the player wears the monocle:
+		try looking at the spinner through the monocle;
+	follow the spinner-turning rule;
+	say line break.
+
 Sanity-check switching on the spinner:
 	say "The sculpture appears to be permanently on." instead.
 
@@ -845,19 +852,12 @@ Sanity-check switching off the spinner:
 Section 2 - Spinning Functionality
 
 Every turn rule when the location is Roget Close and the spinner is non-empty (this is the spin the spinner rule) :
-	if turned-this-turn is time of day:
-		make no decision;
-	otherwise:
+	unless going or approaching: [Otherwise we might get a double spin when entering the room]
 		follow the spinner-turning rule;
 		say line break.
 
-Turned-this-turn is a time that varies.
-
 This is the spinner-turning rule:
-	if turned-this-turn is time of day:
-		make no decision;
-	now turned-this-turn is time of day;
-	let the chosen article be a random thing on the spinner;
+	let the chosen article be the first thing held by the spinner;
 	let X be the chosen article;
 	let goal text be "[printed name of the X]";
 	now goal text is "[goal text in lower case]";
@@ -889,9 +889,9 @@ This is the spinner-turning rule:
 			now the chosen article is essential;
 		[ if something (called source) which proffers the chosen article encloses an essential thing:
 			now the chosen article is essential; ]
-		now everything which is on the spinner is in the repository;
+		now X is in the repository;
 		move the chosen article to the spinner;
-		say "[if looking]After the mirror does its work,[otherwise]The mirror rotates in leisurely fashion, and when it is done[end if] there [is-are a list of things *in the spinner].[no line break]";
+		say "[if going or looking]After the mirror does its work,[otherwise]The mirror rotates in leisurely fashion, and when it is done[end if] there [are] [a first thing held by the spinner].[no line break]";
 		[The lines below is a hack to get rid of an annoying triple paragraph break caused by "try examining the chosen article".]
 		let N be the chosen article;
 		if N is unexamined:
@@ -914,9 +914,7 @@ This is the spinner-turning rule:
 		now X is marked invisible;
 	otherwise:
 		if looking:
-			if exactly one thing is on the spinner, say "It does";
-			otherwise say "[The list of things *in the spinner] [do]";
-			say " not change, however. ";
+			say "[Regarding the first thing held by the spinner][They] [do] not change, however. ";
 		otherwise:
 			say "The mirror revolves for a moment, [one of]without effect[or]without changing [the list of things *in the spinner][at random], though the word '[substitute text]' appears in startling green on the mirror's surface. "
 
@@ -926,12 +924,19 @@ topic	stuff	setting
 
 Test yambug with "tutorial off / wear monocle / buy yam / n / w / put yam on pedestal / z / x yam" [holding the roll of bills and the monocle in Hesychius Street.]
 
+Rule for writing a topic sentence about something (called special-target) which is on the spinner:
+	say "[The special-target] [are] slowly revolving on [a spinner]. [run paragraph on]";
+	if the special-target is as-yet-unknown:
+		introduce the special-target;
+		now the introduction of the special-target is "";
+	follow the spinner-turning rule.
+
 Rule for disclosing exterior of something (called special-target) which is on the spinner:
-	say "[The special-target] [are] slowly revolving on [a spinner][if a mentionable thing is on the spinner], together with [a list of mentionable things *in the spinner][end if]. [run paragraph on]";
+	say "[The special-target] [are] slowly revolving on [a spinner]. [run paragraph on]";
 	follow the spinner-turning rule.
 
 Rule for disclosing contents of the spinner (this is the spinner-content rule):
-	say "On [the spinner], [a list of things *in the spinner] revolve[s] idly. [run paragraph on]";
+	say "On [the spinner], [the first thing held by the spinner] [revolve] idly. [run paragraph on]";
 	follow the spinner-turning rule.
 
 Test spin-plans with "tutorial off / wave l-remover at plans / put pans on spinner / get snap / i / wave s-remover at snap / i / put nap on spinner / get pan / i / n" holding the secret-plans in Roget Close.
