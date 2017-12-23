@@ -1049,7 +1049,7 @@ Section 5 - Higgate's Office
 
 Higgate's office is an office. It is privately-controlled, checkpoint and southern.
 
-Higgate's office door is west of the Language Studies Department Office. Higgate's office door is a door. It is open and lockable and scenery. Understand "west door" as higgate's office door when the location is the Language Studies Department Office.
+Higgate's office door is west of the Language Studies Department Office. Higgate's office door is a door. It is open and lockable and scenery. The description is "A nondescript office door with Professor Higgate's name on it." Understand "west door" or "name" as higgate's office door when the location is the Language Studies Department Office.
 
 Understand "bureau tape" or "tape" as Higgate's office door when Higgate-arrested has happened.
 
