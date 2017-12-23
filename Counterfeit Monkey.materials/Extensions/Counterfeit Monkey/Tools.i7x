@@ -880,7 +880,10 @@ This is the spinner-turning rule:
 				let item text be "[item]";
 				now item text is "[item text in lower case]";
 				if the goal text is item text:
-					now the chosen article is the item;
+					unless item is the reel or item is the snap:
+					[make sure that we always get the fishing reel and the sound snap rather than the film reel or the clothes snap]
+						now the chosen article is the item;
+						break;
 	if the chosen article is not X:
 		abide by the dangerous destruction rules for X;
 		now the chosen article is not proffered by anything;
