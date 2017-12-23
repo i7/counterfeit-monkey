@@ -1006,16 +1006,18 @@ Dramatically, it tries to
 
 ]
 
-After going to Roundabout when the protesters are not off-stage and the player is not in Traffic Circle and seeking Slango has ended:
-	if the player is hurrying:
+After going to Roundabout when the protesters are not off-stage and the location is not Traffic Circle and seeking Slango has ended:
+	if the number of entries in the path so far of the player is greater than 1:
 		say "[path-walked so far][paragraph break][line break]";
+	otherwise:
 		clear path-walked for player;
-		increase path description count by 1;
+	increase path description count by 1;
 	say "The whole Roundabout has ground to a halt, with protesters walking in the street and in some places completely filling the road. But this is mostly a nuisance until I notice that there are a couple of teenagers handcuffed to a tree.
 
 I give the wheel a yank and run the car up onto the central traffic circle a little way. Call it a parking job. We need to get those kids out of here before their arrest is processed and they go to storage. I might not have the nerve to do anything by myself, but you're with me, and I'm starting to appreciate that's like being Batman. ";
 	if the player is in a car (called target):
 		move the target to Traffic Circle;
+		silently try switching off a random ignition which is part of target;
 		follow the compass-drawing rule instead;
 	otherwise:
 		move the player to Traffic Circle;
@@ -1026,6 +1028,9 @@ Sanity-check doing something when the location is Traffic Circle and the player 
 		say "We don't have a good angle on the action from inside the car." instead;
 	if the second noun is a thing and the second noun is not enclosed by a car and the second noun is not a car:
 		say "We don't have a good angle on the action from inside the car." instead;
+
+Instead of going or approaching when the player is in an undisguised car and the location is Traffic Circle:
+	say "[one of]The way we came is completely blocked by protesters. [or][stopping]We're not going anywhere by car from here." instead.
 
 Sanity-check exiting when the player is in an undisguised car and the location is Traffic Circle:
 	say "I can see an officer making his way between the cars and stopping at the fake ones. Maybe we'd better conceal our car before we leave it [--] we may need to make a quick getaway later." instead.
