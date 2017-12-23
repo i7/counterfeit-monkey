@@ -2355,8 +2355,18 @@ A description-concealing rule when the location is not Webster Court:
 Instead of examining the statue of Noah Webster when the player is not in Webster Court:
 	say "From this distance the statue is little more than a glare of sunlight."
 
-After deciding the scope of the player when Webster Court is adjacent to the location:
+After deciding the scope of the player when the location is Webster Court-adjacent:
 	place the statue of Noah Webster in scope.
+
+Definition: a room is Webster Court-adjacent:
+	if it is the Patriotic Chard-Garden:
+		yes;
+	if it is Roget Close:
+		yes;
+	if it is Hesychius Street:
+		yes;
+	if it is Crumbling Wall Face:
+		yes.
 
 My parents' home is a facade in Webster Court. The printed name is "my parents['] home". Understand "house" or "building" or "pink" or "large building" as my parents' home. The initial appearance is "The [one of]large building just to the north [--] yes, the one in pale pink [--][or]large, pale pink building north of us[stopping] is [my parents' home]." The introduction is "I think I mentioned that my parents were well off. My father works for the Bureau, embarrassingly, and my mother was born into the kind of money that we like to pretend doesn't exist on this island."
 	The description is "It's stucco and tile, inspired by southern California ideas of gracious living. There are potted palm trees inside, and leather sofas, and French oil paintings for which expensive importation lic[ense]s had to be bought.
