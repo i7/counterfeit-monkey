@@ -953,7 +953,7 @@ A first every turn rule (this is the win the tube rule):
 	if the barker is in location:
 		if the word-balance is tilting:
 			move the tube to the player;
-			move the barker to the repository;
+			now the barker is nowhere;
 			say "There is a [if the ear is in a pan]disgusted gasp[otherwise]cheer[end if] from the spectators. [The word-balance] tilts slowly but inexorably.
 
 	[The barker] looks astonished and displeased, except for a fraction of a second when he just noticeably winks. With exaggerated bad grace hands us [a gel]. 'There's your prize. And now this contest is over.'
