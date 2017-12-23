@@ -22,7 +22,7 @@ A dangerous construction rule for a fishy thing (called the product):
 		now made entry is true;
 		increment fish-seen;
 		if fish-seen is greater than 4:
-			record "Camilla Downdweller award for creating five types of fish in one playthrough" as an achievement with break before.
+			record "Camilla Downdweller award for creating five types of fish in one playthrough" as an achievement.
 
 The carp-sample is a thing. The char-sample is a thing. The cod-sample is a thing. The eel-sample is a thing.
 
