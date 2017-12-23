@@ -423,6 +423,8 @@ Instead of someone going to Bureau hallway from the Antechamber when the person 
 Instead of going to Bureau hallway from the Antechamber when the player does not enclose the pass and player-is-allowed is false:
 	if the number of entries in the path so far of the player is greater than 1:
 		say "[path-walked so far]";
+	otherwise:
+		clear path-walked for player;
 	say "[one of][We] stride confidently toward [the noun] [--] that's my contribution, as you're more of a shuffler or possibly a slinker. Actually, I think a little of your posture must still be showing, because [we] [are] stopped by the secretary. [or]I do my best to give us a cocky swagger, but she's on to us now. [stopping]";
 	if the player is staid:
 		say paragraph break;
@@ -439,6 +441,8 @@ Instead of going to Bureau hallway from the Antechamber when the player encloses
 		make no decision;
 	if the number of entries in the path so far of the player is greater than 1:
 		say "[path-walked so far]";
+	otherwise:
+		clear path-walked for player;
 	if the pass is marked invisible:
 		if the pass is enclosed by a closed container (called the barrier):
 			try opening the barrier;
