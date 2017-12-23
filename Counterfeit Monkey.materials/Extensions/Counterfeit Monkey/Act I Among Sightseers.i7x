@@ -2072,6 +2072,8 @@ Instead of examining the garage:
 	let N be the number of things which are not the mechanic in the garage;
 	unless N is 0:
 		say "[line break]In [the garage] [is-are a list of things which are not the mechanic *in the garage].";
+	if the player wears the monocle:
+		try looking at the garage through the monocle.
 
 Instead of putting gel on the mechanic:
 	try putting gel on the garage.
