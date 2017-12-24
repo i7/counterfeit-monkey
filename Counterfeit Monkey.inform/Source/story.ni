@@ -85,8 +85,8 @@ Include version 1/160718 of Startup Precomputation by Dannii Willis.
 The finalise startup precomputation rule is listed last in the when play begins rules.
 The initial conversation rule is listed after the finalise startup precomputation rule in the when play begins rules.
 
-Last after starting the virtual machine rule (this is the apologise for a slow start rule):
-	say "Counterfeit Monkey is starting. This may take a short moment.";
+[Last after starting the virtual machine rule (this is the apologise for a slow start rule):
+	say "Counterfeit Monkey is starting. This may take a short moment.";]
 
 
 Volume 2 - Source files inclusion
