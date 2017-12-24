@@ -1323,7 +1323,7 @@ A Water-reaction rule for a Waterstone-inspiring thing (called the target):
 	say "Waterstone looks at [the target], briefly arrested by some thought. He gets a monocle like mine out of his drawer. He looks through it at [the target], notes [the list of things which proffer the target]; grins. ";
 	say "He gets up and comes out of his office.
 
-'This is perfect,' He says. 'One more example to put into my talk [--] but I really should be going [--] should be able to get a ride from my wife [--] if I leave now [--] Here, you can have this if it interests you. I won't have time to use it.' He sets an invitation down on the desk.
+'This is perfect,' he says. 'One more example to put into my talk [--] but I really should be going [--] should be able to get a ride from my wife [--] if I leave now [--] Here, you can have this if it interests you. I won't have time to use it.' He sets an invitation down on the desk.
 
 'Come back and talk to me again later,' he adds. 'We can discuss your goals as a student. And now I really have to go [--] should have gone hours ago.' (There, see: he can be a nice man. More or less.)
 
