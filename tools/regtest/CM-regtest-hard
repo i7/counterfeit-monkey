@@ -70,8 +70,6 @@ I'm glad to see you're feeling ready to face the wider world. Here's what we thi
   Retrieve your remaining possessions from locker at hostel
   Meet your colleague Slango at Counterfeit Monkey
 
-[To go over our current goals, type GOALS at any time.]
-
 /(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) among the (crowds|booths of the fair). 
 
 Heritage Corner
@@ -364,7 +362,7 @@ A pleasantly sheltered lane in which I learned to ride a bicycle, and where my f
 
 If you look just north between the houses, you'll notice also the footpath down to an almost-private beach. It used to be open, but it's now gated off, and built into the gate is a chic modern sculpture. 
 
-On the pedestal, a May revolves idly. After the mirror does its work, there is a yam.
+On the pedestal, the May revolves idly. After the mirror does its work, there is a yam.
 
 A yam with whitish skin. Some of the dirt of the farm still adheres to it.
 
@@ -1003,8 +1001,6 @@ We surreptitiously smear some of the Origin Paste onto the car. Nothing obvious 
 [Your score has gone up by one point and is now thirty-eight.]
 
 > get out
-We switch the ignition off.
-
 We swing the car door open.
 
 We climb out of the car.
@@ -1068,7 +1064,7 @@ My apartment is that direction, but unless we have some reason to go there, it s
 > go to convenience
 /((We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short |quick)? )drive (over to|as far as|to) Tall Street. Then|(At|Once we get to) Tall Street) we pull easily into one of the available parking spots, since many people have now gone home.
 
-/(Then|After that|Next) (we |we have a (brief|quick|short) |we make the( brief| quick| short)? |it's a( brief| quick| short)? )(walk|hike).
+/(Then|After that|Next|From there) (we |we have a (brief|quick|short) |we make the( brief| quick| short)? |it's a( brief| quick| short)? )(walk|hike).
 
 Public Convenience
 There are just the two toilet stalls and a couple of sinks, but the place has been kept up reasonably well, if one doesn't count the graffiti.
@@ -2025,7 +2021,7 @@ There is a continuous angry whine from the jigsaw.
 /(There is a continuous angry whine from the jigsaw.|The noise is sudden and percussive, and repeats without a clear rhythm.)
 
 > put swat in carton
-We put the swat into the large carton.
+We set the swat in the carton, where it ought to provide a helpful distraction for the time being.
 
 /(There is a continuous angry whine from the jigsaw|The noise is sudden and percussive, and repeats without a clear rhythm).
 
@@ -2201,7 +2197,7 @@ There is a continuous angry whine from the jigsaw.
 > knock on waterstone's door
 /(Waterstone|He) looks at the camembert, briefly arrested by some thought. He gets a monocle like mine out of his drawer. He looks through it at the camembert, notes the member and the cat; grins. He gets up and comes out of his office.
 
-"This is perfect," Waterstone says. "One more example to put into my talk — but I really should be going — should be able to get a ride from my wife — if I leave now — Here, you can have this if it interests you. I won't have time to use it." He sets an invitation down on the desk.
+"This is perfect," he says. "One more example to put into my talk — but I really should be going — should be able to get a ride from my wife — if I leave now — Here, you can have this if it interests you. I won't have time to use it." He sets an invitation down on the desk.
 
 "Come back and talk to me again later," he adds. "We can discuss your goals as a student. And now I really have to go — should have gone hours ago." (There, see: he can be a nice man. More or less.)
 
@@ -2862,27 +2858,25 @@ There is a continuous angry whine from the jigsaw.
 
 There is a continuous angry whine from the jigsaw.
 
+Brock touches some gel to the jigsaw. "Just in case someone out there is listening." With an audible SPLORT, the jigsaw becomes a jigsaw. 
+
+/(We could|I'd like to|We want to|I'm inclined to|My response would be to) complain about Brock's recklessness or discover why Brock got stuck here. Or, then again, there's always finishing the job.
+
+> put gel on applet
+We dip out a pea-sized quantity of gel and rub it gently onto the applet. With an audible SPLORT, the applet becomes an apple.
+
 /(Brock|He)(( is|'s) studiously looking around the room| watches us with a slightly disturbing intentness in his eyes|( is|'s) looking at us, but when I look back, he cuts his eyes away|( is|'s) looking at everything but us). "I've half a mind to explore a little while we're down here just about unsupervised," Brock says reflectively.
 
 I glare at him.
 
 "I know there's no time," he says. "But there are supposed to be all sorts of things in the Bureau sub-basement that have never seen the light of day. DCL projects that went wrong, secret government experiments, possibly a buried command center."
 
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) complain about Brock's recklessness, discover why Brock got stuck here, or ask what buried command center he heard of. Or, then again, there's always finishing the job.
-
-> put gel on applet
-We dip out a pea-sized quantity of gel and rub it gently onto the applet. With an audible SPLORT, the applet becomes an apple. 
-
-There is a continuous angry whine from the jigsaw.
-
-/He (pauses, listening for noises outside|stands back, regarding the T-inserter thoughtfully|knocks on the top of the T-inserter|cranes to look around at the back of the machine, but doesn't find anything interesting|runs his fingers over the surface of the machine, checking for hot spots|runs a hand over the brass plate). "Next it would be good to see if this thing can build animates."
+/(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask what buried command center he heard of. Or, then again, there's always finishing the job.
 
 > wave p-remover at apple
 We reset the device to p. The apple gives way to the now-familiar ale.
 
-There is a continuous angry whine from the jigsaw.
-
-/(Brock touches some gel to the jigsaw. "(Just in case someone out there is listening|In the spirit of keeping the peace)." With an audible SPLORT, the jigsaw becomes a jigsaw.|He (pauses, listening for noises outside|stands back, regarding the T-inserter thoughtfully|knocks on the top of the T-inserter|cranes to look around at the back of the machine, but doesn't find anything interesting|runs his fingers over the surface of the machine, checking for hot spots). "If it can't do animates, that might be down to a legal restriction, of course, rather than a technical one, but I imagine that they'd be demo'ing a fully-capable product in this context.") 
+/He (pauses, listening for noises outside|stands back, regarding the T-inserter thoughtfully|knocks on the top of the T-inserter|cranes to look around at the back of the machine, but doesn't find anything interesting|runs his fingers over the surface of the machine, checking for hot spots|runs a hand over the brass plate). "Next it would be good to see if this thing can build animates."
 
 > put ale in t-inserter
 There is a loud and satisfying pop from the machine as it turns the ale into a tale.
@@ -3078,7 +3072,7 @@ The functional area continues to the south, and the hallway is west.
 > put pass in punch
 You put the pass into the wire basket of the umlaut punch. There is a hum as the punch warms up, then a bang! as the tines come down sharply, tattooing the pass.
 
-/Briefly the pass appears as the (speed|art|power|thrash|folk|death) metal band Päss, before fading back to itself: there just isn't enough energy to hold the conversion, given Päss's (fading|weak|dismal|non-existent) (name-recognition|reputation). (They haven't been playing many clubs lately|The reunion tour wasn't a big success|They never really got out of their parents' basement).
+/Briefly the pass appears as the (speed|art|power|thrash|folk|death|drone) metal band Päss, before fading back to itself: there just isn't enough energy to hold the conversion, given Päss's (fading|weak|dismal|non-existent) (name-recognition|reputation). (They haven't been playing many clubs lately|The reunion tour wasn't a big success|They never really got out of their parents' basement).
 
 When they are gone, a power chord remains in the air.
 

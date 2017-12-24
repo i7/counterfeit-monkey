@@ -81,8 +81,6 @@ I'm glad to see you're feeling ready to face the wider world. Here's what we thi
   Retrieve your remaining possessions from locker at hostel
   Meet your colleague Slango at Counterfeit Monkey
 
-[To go over our current goals, type GOALS at any time.]
-
 Fair
 Today is Serial Comma Day, one of the biggest holidays on the island, and a time when half the police force is off duty while the other half is over-extended. The perfect day to make an escape. The square at the center of town is therefore crowded with people, and there's an overpowering smell of artificial butter and spun sugar.
 
@@ -589,7 +587,7 @@ There is a dismissive blatt from the monocle, and transposed over the fuel is a 
 The snapping continues.
 
 > go to high street
-/(We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short |quick)? )(walk|hike) (over to|to) Webster Court. 
+/(We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short |quick)? )(walk|hike) (over to|to|as far as) Webster Court. 
 
 Webster Court
 A broad and plainly-paved court, named for the statue of Noah Webster.
@@ -1305,12 +1303,12 @@ I give the wheel a yank and run the car up onto the central traffic circle a lit
 Traffic Circle (jammed into the car)
 Normally no pedestrian ever comes to this circle of grass and litter: the flow of traffic is too constant and too fast. But the protest has stopped the traffic and I'm determined to do something about the two teenagers I saw just now, so here we are. Though we probably have to get out of the car if we're going to be useful.
 
-/(The car is making an unpleasant raspy growl|The snapping continues).
+The snapping continues.
 
 > get out
 I can see an officer making his way between the cars and stopping at the fake ones. Maybe we'd better conceal our car before we leave it — we may need to make a quick getaway later.
 
-/(The snapping continues|The car is making an unpleasant raspy growl).
+The snapping continues.
 
 > put paste on car
 We surreptitiously smear some of the Origin Paste onto the car. Nothing obvious happens, of course, but that is the whole point.
@@ -1320,8 +1318,6 @@ We surreptitiously smear some of the Origin Paste onto the car. Nothing obvious 
 [Your score has gone up by one point and is now thirty-eight.]
 
 > get out
-We switch the ignition off.
-
 We swing the car door open.
 
 We climb out of the car.
@@ -1403,7 +1399,7 @@ My apartment is that direction, but unless we have some reason to go there, it s
 > go to convenience
 /((It's a|We make the) (short|brief)? drive (to|over to) Tall Street. )?(Then|At Tall Street|There) we pull easily into one of the available parking spots, since many people have now gone home.
 
-/(Then|Next) we (make the|have a) (brief |short |quick )?(hike|walk). 
+/(Then|Next) we (make the |have a )?(brief |short |quick )?(hike|walk). 
 
 Public Convenience
 There are just the two toilet stalls and a couple of sinks, but the place has been kept up reasonably well, if one doesn't count the graffiti.
@@ -1479,7 +1475,7 @@ The snapping continues.
 The snapping continues.
 
 > go to antiques
-/((It's a short|We have a brief|We make the) drive away from the Bureau and back into the streets (over to|to|as far as) Long Street South. (There|Then)|Once we get to Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
+/((It's a |We have a |We make the )(brief|short)? drive away from the Bureau and back into the streets (over to|to|as far as) Long Street South. (There|Then)|Once we get to Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
 
 We show the appointment card, and are let in.
 
@@ -2541,12 +2537,12 @@ The snapping continues.
 > wave r-remover at pearl
 /We reset the device to r. There is a [a-z \-]+, and the pearl turns into a peal. It is the embodiment of a peal of bells: no weight or size, but the impression of bronze, early Gothic spires in a spare English countryside, and clangor.
 
-
+/(When you pay attention, the peal really is nearly deafening|The snapping continues).
 
 > put peal in carton
-We put the peal into the large carton.
+We set the peal in the carton, where it ought to provide a helpful distraction for the time being.
 
-
+/(When you pay attention, the peal really is nearly deafening|The snapping continues).
 
 > go to rectification room
 Rectification Room
@@ -2858,7 +2854,7 @@ The department printer also sits on the u-shaped desk.
 > knock on waterstone's door
 /(Waterstone|He) looks at the peacock, briefly arrested by some thought. He gets a monocle like mine out of his drawer. He looks through it at the peacock, notes the cock and the pea; grins. He gets up and comes out of his office.
 
-"This is perfect," Waterstone says. "One more example to put into my talk — but I really should be going — should be able to get a ride from my wife — if I leave now — Here, you can have this if it interests you. I won't have time to use it." He sets an invitation down on the desk.
+"This is perfect," he says. "One more example to put into my talk — but I really should be going — should be able to get a ride from my wife — if I leave now — Here, you can have this if it interests you. I won't have time to use it." He sets an invitation down on the desk.
 
 "Come back and talk to me again later," he adds. "We can discuss your goals as a student. And now I really have to go — should have gone hours ago." (There, see: he can be a nice man. More or less.)
 
@@ -4860,7 +4856,6 @@ A surveillance computer is mounted on the wall, an impressive flat screen readou
 The Workshop lies to the east. The door you came through is west, and there is also a spiral staircase down.
 
 > w
-[If you're traveling far, you can always type GO TO (location name) to get there automatically.]
 
 Oracle Project
 This is nothing less than the command center for a massive propaganda campaign. Paintings of Atlantida and polling charts cover the walls, dating back to the second world war and continuing straight through to the present.
@@ -5095,7 +5090,6 @@ A specialized wall socket is built into the east wall, clearly not part of the o
 You can go east to the Generator Room and west to the Surveillance Room from here.
 
 > e
-[If you're traveling far, you can always type GO TO (location name) to get there automatically.]
 
 Generator Room
 The walls are lined with concrete. Yellow paint lettering says CAUTION: HIGH ENERGY EQUIPMENT and DO NOT OPERATE WITHOUT TRAINING.
