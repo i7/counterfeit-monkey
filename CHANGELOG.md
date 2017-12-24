@@ -9,7 +9,7 @@
 - Many initial values are now hard-coded in the source for a quicker game start.
 - Adds a startup pre-computation function that caches the results of startup for faster subsequent game starts, and which can also read startup data from the blorb file on interpreters that support it.
 - Replaces most visibility tests with the marked-visible attribute from Scope Caching by Mike Ciul for a speedup.
-- Uses the list writers and other replacement functionality from Large Game Speedup by Andrew Plotkin. Inspired by this, similar speed-ups have been implemented elsewhere in the code.
+- Uses the list writers and other replacement functionality from Large Game Speedup by Andrew Plotkin. Inspired by this, many similar speed-ups have been implemented elsewhere in the code.
 - Adds a repsonse to trying to play the games on Brock's computer.
 - Implements asking the mechanic where to find a car.
 - Allows thanking more people.
@@ -35,13 +35,13 @@
 - Brock now comments on things you are wearing.
 - Adds responses for showing the draft document to Waterstone, and for showing him something homonym-shame-relevant too early. Rewords other responses to help clarifying this puzzle.
 - Adds responses to discourage the player from trying to stow things in the tin hut while hiding from the authenticator.
-- Adds a response to PUT PANS IN PANS.
 - Prevents the player from walking away with the student quarters coffee-maker.
 - The quip Ask how Professor Brown makes abstracts is now still suggested if you leave his office and return later.
 
 ### Gameplay changes
 
 - Adds four new achievements.
+- The letter-transformation tools will now consistently produce the same object when there are several viable.
 - Disallows removing The Problem of Adjectives from the Language Studies seminar room bookcase.
 - Disallows putting restoration gel on the morning dress.
 - You can now leave the rock behind until you have found out that it is Brock.
@@ -51,7 +51,10 @@
 - It is now possible to leave the snap temporarily behind as a masking noise.
 - Liquids and sinks behave more consistently. No longer can certain uncontained fluids be picked up and carried around in containers alongside other solid things or fluids.
 - It is no longer possible to put containers in the sink to fill them with soap.
-- The legend now stays attached to the map after gelling it.
+- Things that are not allowed in the backpack, such as fluids, long or heavy things, can no longer be snuck into the backpack by first placing them in another container or on a supporter.
+- You can no longer carry too heavy objects by hiding them in a lighter container or on a supporter.
+- It is not possible to climb into or onto things inside the car anymore.
+- The legend now stays attached to the map after you gel it.
 - Fixes to allow the roc following along when you take the kayak to the yacht.
 - It is no longer possible to leave essential objects behind by inserting them into a container and then letter-transforming the container.
 - Makes it more apparent when the car will not run by stopping you rather than making you automatically get out and walk to your destination.
@@ -59,10 +62,12 @@
 - Gelling the tub is now allowed.
 - Animals will no longer get out of containers such as the car on the same turn that they followed you into them.
 - Fixes a bug where placing an object in the garage before changing it into a car would prevent you from entering the car.
+- Adds carp, caps, PARC and a strolling cap.
 
 ### Parsing
 
 - The parser no longer asks for a second noun when attacking something unless a weapon is actually required.
+- Heavy objects are no longer picked up and then dropped when typing TAKE ALL.
 - Understands PIÑATA as the hanging Atlantida figure on interpreters that support unicode input.
 - Understands REMOVE SCREWS and REMOVE BLINDFOLD.
 - Gives a response when trying to get the mechanic to fuel the car.
@@ -92,13 +97,17 @@
 - Typing a number as a disambiguation choice will now pick the right selection.
 - Allows some greeting phrases used by other characters to be used by the player.
 - ACTIVATE, HOMONYM and SYNTHESIZE are now understood as verbs.
+- Taps can now be referred to as HOT or COLD.
 - UP is understood as standing up if there is no exit leading upwards.
+- Adds a response to PUT PANS IN PANS.
 
 ### Typos and cosmetic output errors
 
 - Properly announces any achievements awarded when winning the game.
 - Prints the intended message when trying to show something to an animal.
+- No longer describes the truck or the shuttle as "our car".
 - Fixes always showing your goals automatically after going through the barrier for the first time.
+- Hides some more instructional messages when tutorial mode is off.
 - No longer prints a message about walking through "the wealthy neighborhood" unless you actually do.
 - Fixes printing the article of the mourning dress when examining the shops.
 - The Babel Café is spelled with an accented é everywhere.
