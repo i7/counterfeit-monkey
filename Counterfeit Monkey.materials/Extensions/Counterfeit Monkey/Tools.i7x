@@ -215,6 +215,8 @@ Check waving something at a room:
 Check waving the letter-remover device at the letter-remover device:
 	say "This is physically impossible as well as pointless." instead.
 
+Before waving the letter-remover device at the small knob:
+	say "This is physically impossible as well as pointless." instead.
 
 [Check waving the letter-remover device at something which encloses the player:
 	say "A safety override prevents [the letter-remover] from working on objects which actually contain the operator at the time."]
