@@ -1202,14 +1202,14 @@ Carry out hashtesting:
 			if the hash code of the item is not H:
 				[say "Hashtest for [item] passed![line break]";
 			else:]
-				say "ERROR:Hashtest for [item] FAILED! Hash was [hash code of item], should have been [H]![line break]";
+				say "ERROR:Hashtest for [item] FAILED! Hash was [hash code of item] ([hash code of item as letter-hash]), should have been [H] ([H as letter-hash])![line break]";
 				now hash-fail is true;
 			now the item is unseen;
 	repeat with item running through rooms:
 		let T be "[item]";
 		let H be the letter-hash of T;
 		if the hash code of the item is not H:
-			say "ERROR:Hashtest for [item] FAILED! Hash was [hash code of item], should have been [H]![line break]";
+			say "ERROR:Hashtest for [item] FAILED! Hash was [hash code of item] ([hash code of item as letter-hash]), should have been [H] ([H as letter-hash])![line break]";
 			now hash-fail is true;
 	if hash-fail is false:
 		say "All tested hash codes are correct!"
