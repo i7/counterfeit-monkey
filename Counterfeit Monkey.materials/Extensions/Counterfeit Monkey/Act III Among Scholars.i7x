@@ -1184,7 +1184,10 @@ The description of Complete Lojban is "The book is bound in an ugly yellow bindi
 
 Rule for printing the name of Complete Lojban when Complete Lojban is not proper-named: say "[roman type]ugly yellow book"
 
-Carry out examining Complete Lojban: now the noun is proper-named.
+Carry out examining Complete Lojban:
+	unless the noun is proper-named:
+		now noun is proper-named;
+		reset hash code of noun.
 
 The sugar bowl is a container on the oval table. Instead of searching the sugar bowl, say "It is about a quarter full."
 

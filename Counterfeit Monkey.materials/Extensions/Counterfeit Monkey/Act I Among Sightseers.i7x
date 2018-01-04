@@ -2093,10 +2093,12 @@ Rule for listing exits when the location is High Street:
 	say "To the west, the street turns into a monumental staircase leading to the old fortified area[if the hostel is unvisited] [--] your hostel should be up that way [--] while[otherwise];[end if] a cross street heads southeast towards the main roundabout." High Street is a road.
 
 The distant-staircase is scenery in High Street. Instead of climbing or entering the distant-staircase, try going west. The description of the distant-staircase is "Broad flat stairs of white stone, with people going up and down[if Monumental Staircase is unvisited]. There's a good view from the top of those stairs: you can see the ships in the harbor and everything. Well, you'll know that, of course[end if]."
+The printed name of distant-staircase is "monumental staircase".
 
 The Roundabout is southeast of the High Street. The Roundabout is a checkpoint road. The description is "The traffic flows in a tight circle around a statue which [if Traffic Circle is visited][we] know all too well[otherwise][we] can never see clearly[end if][if the player is not in a car]. There is a pedestrian walkway around the outside of this circle, but crossing the tributary streets is an unpleasant experience involving considerable hazard. Unfortunately, there is no other quick way to get around this part of town[end if]."
 
 The hard-to-see statue is scenery in the Roundabout. The description is "[if Traffic Circle is visited]It is, curiously, easier to get a sense of from a distance than it was close-up in the Traffic Circle[otherwise]I've seen it before: it's supposed to be Atlantida, the Spirit of the Atlantean people[end if]. Kind of a 19th-century French style of thing: flowing bronze robes, one breast naked, plump fingers clasping an olive branch. But [we] can't stop and stare at it with the traffic the way it is." Understand "atlantida" or "olive" or "branch" or "robes" or "bronze" or "breast" or "naked" as the hard-to-see statue.
+The printed name of the hard-to-see statue is "giant Atlantida statue".
 
 Instead of opening a car when the location is the Roundabout and the player is in a car:
 	say "Are you mad? [we][']ll be killed."

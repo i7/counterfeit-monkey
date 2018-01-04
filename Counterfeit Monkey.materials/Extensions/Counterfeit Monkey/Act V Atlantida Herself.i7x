@@ -998,7 +998,7 @@ A description-concealing rule:
 	if the location is the Open Sea:
 		rapidly set all contents of the kayak not marked for listing.
 
-The viewed-yacht is a distant, privately-named scenery thing in Open Sea. Understand "slango's" or "yacht" as the viewed-yacht. The description is "It's just there on the horizon." The printed name is "Slango's yacht".
+The viewed-yacht is a distant, proper-named, privately-named scenery thing in Open Sea. Understand "slango's" or "yacht" as the viewed-yacht. The description is "It's just there on the horizon." The printed name is "Slango's yacht".
 
 Instead of finding viewed-yacht:
 	try going north.
@@ -1236,7 +1236,7 @@ The rest of the food is in the cabinet."
 A stove called a galley stove is in the Galley. The description of the galley stove is "A perfectly smooth, easy-to-clean black surface with electric burners underneath."
 
 [This is to avoid things being called "the galley sink galley sink's tap" and "the galley stove galley stove's switch"]
-The switch identification rule response (A) is "[unless the target is part of the galley stove or the target is part of the galley sink][random thing which incorporates the target] [end if]".
+The switch identification rule response (A) is "[unless the target is part of the galley stove or the target is part of the galley sink or the target is part of the galley stove's oven][random thing which incorporates the target] [end if]".
 
 A sink called a galley sink is in the Galley. The description of the galley sink is "Stainless steel, and very clean."
 
