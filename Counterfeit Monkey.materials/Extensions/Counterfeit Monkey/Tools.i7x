@@ -192,7 +192,8 @@ Carry out letter-removing the topic understood from something:
 				otherwise:
 					try removing the first thing held by the second noun from the second noun instead;
 			say "[We] can't see any such thing [in-on the second noun]." instead;
-	try tuning the letter-remover to the topic understood;
+	unless the current setting of the letter-remover is noun-text:
+		try tuning the letter-remover to the topic understood;
 	try waving the letter-remover at the second noun.
 
 Understand "wave [something preferably held] at/toward/over/around/on/across [thing]" as waving it at. Waving it at is an action applying to one carried thing and one visible thing.
