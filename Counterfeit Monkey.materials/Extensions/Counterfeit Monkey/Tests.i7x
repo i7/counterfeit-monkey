@@ -1226,6 +1226,27 @@ Carry out listing hash codes:
 		let H be the hash code of item;
 		say "[The item] has hash code [H]."
 
+Understand "check hash codes" as checking hash codes. Checking hash codes is an action applying to nothing.
+
+Carry out checking hash codes:
+	let L be a list of objects;
+	let no-errors be true;
+	now L is {};
+	repeat with item running through things:
+		unless item is a fact or item is a quip or item is a memory or item is a subject or item is a g-window or item is dummy-object or item is yourself or item is quip-repository or item is backup-repository or item is letter-remover or item is small knob:
+			add item to L;
+	repeat with item running through rooms:
+		add item to L;
+	sort L in printed name order;
+	repeat with item running through L:
+		let T be "[item]";
+		let H be the letter-hash of T;
+		unless H is the hash code of item:
+			say "[bracket][The item] should have hash code [H] ([H as letter-hash]), not [hash code of item] ([hash code of item as letter-hash]).[close bracket][line break]";
+			now no-errors is false;
+	if no-errors is true:
+		say "[bracket]All checked hash codes were correct![close bracket][line break]".
+
 
 Section 5 - Ultratest
 
