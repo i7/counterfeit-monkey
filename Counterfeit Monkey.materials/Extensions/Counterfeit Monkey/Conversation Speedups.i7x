@@ -4,7 +4,7 @@ Use authorial modesty.
 
 To sort quips for (n - a person):
 	(- MySortQuips({n}); -).
-	
+
 To rapidly relabel available quips:
 	(- MyRelabelAvailableQuips(); -).
 
@@ -33,7 +33,7 @@ with 70 blank rows.
 
 To decide whether (q - a quip) is periphery: (- (IsPeripheral({q})) -).
 
-Subject count is a number that varies. 
+Subject count is a number that varies.
 The subject count variable translates into I6 as "subject_count".
 
 
@@ -53,7 +53,7 @@ Include (-
 		TableSortPartial((+Table of Current Subjects +), subject_count, 1, 1);
 		EliminateDuplicates();
 	];
-	
+
 	[ WriteSubjects quip list i subject no_items;
 		list = quip.(+ mentions-list +);
 		no_items = BlkValueRead(list, LIST_LENGTH_F);
@@ -62,7 +62,7 @@ Include (-
 			subject_count++;
 			if (subject_count > 70)
 				print_ret "ERROR: More than 70 available subjects!^";
-				
+
 			((+ Table of Current Subjects +)-->1)-->(subject_count+COL_HSIZE) = subject;
 		}
 	];
@@ -74,14 +74,14 @@ Include (-
 			if (item == BlkValueRead(list, i+LIST_ITEM_BASE)) rtrue;
 		rfalse;
 	];
-	
+
 	[ ViableQuipWhichMentions thing quip;
 		for (quip=child((+quip-repository+)): quip : quip=sibling(quip))
 			if (MyMentions(quip, thing))
 				return quip;
 		return nothing;
 	];
-	
+
 	[ CompareSubjects x y i list no_items ;
 		list = x.(+ mentions-list +);
 		no_items = BlkValueRead(list, LIST_LENGTH_F);
@@ -118,11 +118,11 @@ Include (-
 		}
 	];
 
-	[ EliminateDuplicates i v last print_head;	
+	[ EliminateDuplicates i v last print_head;
 
 		last = TABLE_NOVALUE;
 		print_head = 0;
-		
+
 		! Get a value from this row. Compare the new value to the last. If they don't match, write new value at print_head position and advance print_head.
 		for (i = 1 : i <= subject_count : i++ ) {
 			v = ((+ Table of Current Subjects +)-->1)-->(i+COL_HSIZE);
@@ -133,7 +133,7 @@ Include (-
 			}
 			last = v;
 		}
-	
+
 		subject_count = print_head;
 		!print "Eliminated duplicate subjects. Current number: ",subject_count,".^";
 	];
@@ -141,7 +141,7 @@ Include (-
 	[ GetSubject index col;
 		return ((+ Table of Current Subjects +)-->1)-->(index+COL_HSIZE);
 	];
-	
+
 	[ MySetUnlistedPlausible q;
 		for (q = child((+quip-repository+)): q :q=sibling (q))
 			q.(+ listed-plausible +) = false;

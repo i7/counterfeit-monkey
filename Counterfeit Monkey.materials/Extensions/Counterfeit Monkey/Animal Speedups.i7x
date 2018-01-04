@@ -10,7 +10,7 @@ To rapidly make followers follow into (X - a vehicle):
 
 To rapidly make followers try exiting from (X - a container):
 	(- MyFakePeopleExiting({X}); -).
-	
+
 To rapidly make followers try going (X - an object) from (Y - a room):
 	(- MyFakePeopleGoing({Y},{X}); -).
 

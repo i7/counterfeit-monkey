@@ -47,7 +47,7 @@ The new ordinary-concealment rule is listed instead of the ordinary-concealment 
 
 A scope processing rule for a thing (called n) (this is the new swift rule):
 	rapidly set workflag of n.
-	
+
 The new swift rule is listed instead of the swift rule in the scope processing rules.
 
 
@@ -244,13 +244,13 @@ Include (-
 	];
 
 	[ MySetWorkFlagOfAllContents par;
-	
+
 		if (par.component_child)
 			MySetWorkFlagLoop(par.component_child);
 
 		if (par.component_sibling)
 			MySetWorkFlagLoop(par.component_sibling);
-			
+
 		if (child(par))
 			MySetWorkFlagLoop(child(par));
 	];
@@ -306,10 +306,10 @@ Include (-
 				o = child(o);
 			else
 				while (o) {
-					if (sibling(o)) { 
-						o = sibling(o); 
+					if (sibling(o)) {
+						o = sibling(o);
 						break;
-					}					
+					}
 					o = parent(o);
 					if ( o == parent(first) ) return;
 				}
@@ -417,7 +417,7 @@ Include (-
 		seen_count = 0;
 
 		col=TableFindCol((+ Table of Seen Things +), (+ output subject +), true);
-		
+
 		for (obj=IK2_First: obj : obj=obj.IK2_Link)
 			if (obj has workflag && obj hasnt mentioned) {
 				seen_count++;
@@ -436,7 +436,7 @@ Include (-
 
 		for (i=1: i <= seen_count : i++ ) {
 			output = ((+ Table of Seen Things +)-->output_col)-->(i+COL_HSIZE);
- 
+
 			output.(+ description-rank +) = 0;
 
 			FollowRulebook ((+ the ranking rules +), output, true);

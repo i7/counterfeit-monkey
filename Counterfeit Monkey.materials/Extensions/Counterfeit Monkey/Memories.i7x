@@ -169,7 +169,7 @@ Definition: a quip is Brock-mentioning:
 	if it is what buried command center he heard of:
 		yes;
 	no.
-	
+
 Carry out examining a bed:
 	trigger Brock-bed.
 

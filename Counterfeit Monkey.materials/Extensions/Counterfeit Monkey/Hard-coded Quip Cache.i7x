@@ -4,10 +4,10 @@ Use authorial modesty.
 
 Section 1 - Not for release
 
-The check for mis-defined items rule is not listed in any rulebook. The scan for unidentified subjects rule is not listed in any rulebook. 
+The check for mis-defined items rule is not listed in any rulebook. The scan for unidentified subjects rule is not listed in any rulebook.
 
 
-Section 2 - 
+Section 2 -
 
 The cache reporting rule is not listed in any rulebook. The caching thread position information rule is not listed in any rulebook. The indirect-following initializing rule is not listed in any rulebook.
 

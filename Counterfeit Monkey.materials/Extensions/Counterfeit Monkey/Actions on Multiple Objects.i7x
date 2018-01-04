@@ -205,7 +205,7 @@ The check for unsuitable containers rule is listed before the check for single i
 
 A last check multiple insert rule for something that incorporates a drawer (called target drawer):
 	now second noun is target drawer;
-		
+
 A last check multiple insert rule for something that incorporates an oven (called target oven):
 	now second noun is target oven;
 

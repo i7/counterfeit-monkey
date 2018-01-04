@@ -9,7 +9,7 @@ output item
 an object
 with 30 blank rows.
 
-Special listing count is a number that varies. 
+Special listing count is a number that varies.
 The special listing count variable translates into I6 as "special_listing_count".
 
 Include (-
@@ -76,7 +76,7 @@ To say the prepared list:
 
 To say a prepared list:
 	now current articulation style is indefinite;
-	say prepared list. 
+	say prepared list.
 
 To say prepared list:
 	if special listing count is 0:
@@ -121,10 +121,10 @@ To say is-are the prepared list delimited in (chosen style - a list style) style
 To dump list:
 	say list of the Table of Scored Listing;
 	now current list style is sequential.
-	
+
 [List arranging is an activity.
 
-Rule for list arranging: 
+Rule for list arranging:
 	sort Table of Scored Listing in assigned score order.
 
 To invert scored list:
@@ -134,7 +134,7 @@ First delimiter is text that varies. Second delimiter is text that varies. Alter
 
 List style is a kind of value. The list styles are defined by the Table of List Style Assignments.
 
-Current list style is a list style that varies. 
+Current list style is a list style that varies.
 
 Table of List Style Assignments
 list style	first delimiter	second delimiter	alternate second delimiter	indefinite name phrase	definite name phrase
@@ -144,7 +144,7 @@ semi-colon	"; "	"; "	" and "	"[a current listed object]"	"[the current listed ob
 comma	", "	", "	" and "	"[a current listed object]"	"[the current listed object]"
 null	" "	" "	" and "	"[current listed object]"	"[current listed object]"
 hyperconnective	" and "	" and "	" and "	"[a current listed object]"	"[the current listed object]"
-fragmentary	". "	". "	". "	"[A current listed object]"	"[The current listed object]" 
+fragmentary	". "	". "	". "	"[A current listed object]"	"[The current listed object]"
 enumerated	"; "	"; "	"; "	"([current enumeration]) [a current listed object]"	"([current enumeration]) [the current listed object]"
 
 To decide what number is the current enumeration:
@@ -154,7 +154,7 @@ To decide what number is the current enumeration:
 
 Current listing total is a number that varies. Current listing index is a number that varies. Current listed object is an object that varies.
 
-To say a/the/-- list of (selected table - a table-name): 
+To say a/the/-- list of (selected table - a table-name):
 	now current listing total is special listing count;
 	now current listing index is current listing total;
 	repeat with N running from 1 to special listing count:
