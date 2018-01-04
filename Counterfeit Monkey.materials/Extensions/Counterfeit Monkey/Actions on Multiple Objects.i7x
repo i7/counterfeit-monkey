@@ -342,4 +342,5 @@ topic	stuff	setting
 "all-lists"	{ apple, tomcat, tube, stick, twig, secret-plans, backpack, card, letter-remover, origin paste }	Tools Exhibit
 
 Test all-lists with "tutorial off / get all from tube / put all in tube / put all in paste / wave e-remover at tube / get gel / get gel from tub / put all in tub / get all from tub / wave l-remover at plans / wave s-remover at pans / wave d-remover at card / put all in pan / get pan / put all in backpack / look in backpack / enter car / close car / put car in backpack / put all in backpack / get out / get backpack / get all from backpack / get all from platform / put all on platform / put all in chamber / get all from chamber".
+
 Actions on Multiple Objects ends here.
