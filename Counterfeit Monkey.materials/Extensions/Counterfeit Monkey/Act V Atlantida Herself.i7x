@@ -1446,18 +1446,6 @@ Slango's Head is aft from Slango's Bunk.
 The description is "All the absolutely required amenities of a bathroom, packed into the least possible space. The international space station probably assigns more room to the bathroom functions."
 It is nautical and forbidden. It is indoors. It is a bathroom.
 
-When play begins (this is the setting up the nautical bathrooms rule):
-	repeat with item running through baths which are in nautical bathrooms:
-		now the printed name of the item is "shower";
-		now the hash code of the item is -1874835968;
-		repeat with shower-tap running through taps which are part of item:
-			now the hash code of shower-tap is -1849668096;
-		repeat with shower-drain running through drains which are part of item:
-			now the hash code of shower-drain is -1721678336;
-		now the description of the item is "Just a stand-up shower with a folding plastic door. At least the water is usually hot."
-
-The setting up the nautical bathrooms rule is listed after the initialize difficult hash codes rule in the when play begins rules.
-
 Section 13 - View from Outdoor Areas
 
 The island is a distant backdrop. It screens south. It is in Open Sea and Sunning Deck and Navigation Area and Foredeck. The description is "From here, [we] can see a lot of the shoreline: the Custom House on the top of its cliff (which at a distance doesn't seem very tall at all); the harbor and the docks, both the touristy portion and the more industrial areas; and then the headland and the ramparts of the old city, with the cannon emplacements (now disused). [We] can even make out just a bit of the sandier beaches on the northwest shore of the island, though at this distance it is impossible to people-watch." Understand "atlantis" or "anglophone" or "anglophone-atlantis" or "shore" or "shoreline" or "dock" or "docks" or "cliff" or "custom" or "house" or "cannon" or "ramparts" or "emplacements" or "old city" or "city" or "beach" or "beaches" or "sand" or "people" as the island.

@@ -62,63 +62,61 @@ To demonstrate letter-hash of (T - text):
 	let r be the letter-hash of "t";
 	say "temptress with t removed: [t with r removed as letter-hash].";]
 
+
 Include (-
-Array m1 --> 1;
-[ LetterHash T i n c d cp pk;
+[ LetterHash T i n c d cp pk b m;
 	cp = T-->0;
 	pk = TEXT_TY_Temporarily_Transmute(T);
 	n = TEXT_TY_CharacterLength(T);
-	m1-->0 = 0;
 	for (i=0: i<n: i++) {
 		d = -1;
 		c = BlkValueRead(T, i);
 		if ((c >= 'a') && (c <= 'z')) d = c-'a';
 		if ((c >= 'A') && (c <= 'Z')) d = c-'A';
 		if (d >= 0) {
-			@astorebit m1 d 1;
+			@shiftl 1 d b;
+			m = m | b;
 		}
 	}
 	TEXT_TY_Untransmute(T, pk, cp);
-	return m1-->0;
+	return m;
 ];
 
-[ ShowLetterHash h i j n b;
-	for (i=0: i<26: i++) {
-             n = (3 - i / 8) * 8 + i % 8;
-             for (j=0, b=1: j < n: j++, b=b*2);
-             if (h & b) print "1"; else print "0";
-	}
+[ ShowLetterHash h i b;
+   for (i=0, b=1; i<26; i++, b=b*2) {
+      if (h&b) print "1"; else print "0";
+   }
 ];
 -);
 
 Table of single character hashes
 character (a text)	hash (a number)
-"a"	16777216
-"b"	33554432
-"c"	67108864
-"d"	134217728
-"e"	268435456
-"f"	536870912
-"g"	1073741824
-"h"	-2147483648
-"i"	65536
-"j"	131072
-"k"	262144
-"l"	524288
-"m"	1048576
-"n"	2097152
-"o"	4194304
-"p"	8388608
-"q"	256
-"r"	512
-"s"	1024
-"t"	2048
-"u"	4096
-"v"	8192
-"w"	16384
-"x"	32768
-"y"	1
-"z"	2
+"a"	1
+"b"	2
+"c"	4
+"d"	8
+"e"	16
+"f"	32
+"g"	64
+"h"	128
+"i"	256
+"j"	512
+"k"	1024
+"l"	2048
+"m"	4096
+"n"	8192
+"o"	16384
+"p"	32768
+"q"	65536
+"r"	131072
+"s"	262144
+"t"	524288
+"u"	1048576
+"v"	2097152
+"w"	4194304
+"x"	8388608
+"y"	16777216
+"z"	33554432
 
 
 Hashing ends here.
