@@ -119,6 +119,8 @@ A first after reading a command rule (this is the implicitly change letter-remov
 		now N is "[N in lower case]";
 		if the letter-remover is in a closed backpack and the backpack is enclosed by location:
 			silently try opening the backpack;
+			if the backpack is closed:
+				stop the action;
 		if the player can touch the letter-remover:
 			unless N matches the regular expression "\l":
 				say "Only the 26 letters of the English alphabet are available to the letter-remover.";

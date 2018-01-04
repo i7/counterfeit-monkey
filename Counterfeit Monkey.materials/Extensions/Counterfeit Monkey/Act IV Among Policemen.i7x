@@ -557,6 +557,9 @@ Instead of giving something to the secretary:
 Instead of showing something to the secretary when the secretary encloses the Scope:
 	try the secretary looking at the noun through the scope.
 
+Sanity-check opening the backpack when the location is Antechamber and the backpack contains an illegal thing (called the offending item):
+	say "Better not. We don't want the secretary to see [the offending item]." instead.
+
 [After going to the Rotunda when the player encloses the pass:
 	say "You flash your pass at the secretary, and she shrugs, allowing you in."]
 
