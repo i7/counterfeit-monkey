@@ -1198,7 +1198,11 @@ The futon's sheets proffers the futon's sheets. [K62_sheets]
 The bed's blanket proffers the bed's blanket.
 The bed's pillow proffers the bed's pillow.
 The bed's sheets proffers the bed's sheets.
+The garish sign proffers the garish sign.
+The carton-sign proffers the carton-sign.
 The galley stove's oven proffers the galley stove's oven. [K45_oven]
+The galley stove's oven's switch proffers the galley stove's oven's switch.
+The galley stove's switch proffers the galley stove's switch.
 Yourself proffers yourself.
 Brock proffers the rock.
 The bandana proffers the banana.
