@@ -2447,8 +2447,13 @@ Instead of doing something to the pink door:
 	say "Walking into my parents['] house is the action perhaps most likely to get us caught."
 
 Rule for printing the name of the pink door:
-	if the the pink door is marked-visible, say "door here";
-	otherwise say "door of my parents['] villa".
+	if the the pink door is marked-visible:
+		if the action name part of current action is the waving it at action:
+			say "door";
+		otherwise:
+			say "door here";
+	otherwise:
+		say "door of my parents['] villa".
 
 [Because we need to stop you so that you can see the scene with Dad if you were otherwise just going to be passing through:]
 After going to Webster Court when Private Beach is visited and Patriotic Chard-Garden is visited and parental appearance has not happened :
