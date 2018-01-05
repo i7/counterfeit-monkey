@@ -117,7 +117,7 @@ A first after reading a command rule (this is the implicitly change letter-remov
 		if the number of characters in N is greater than 1:
 			make no decision;
 		now N is "[N in lower case]";
-		if the letter-remover is in a closed backpack and the backpack is enclosed by location:
+		if the letter-remover is in a closed backpack:
 			silently try opening the backpack;
 			if the backpack is closed:
 				stop the action;

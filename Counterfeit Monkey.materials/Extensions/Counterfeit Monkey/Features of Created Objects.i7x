@@ -13,7 +13,7 @@ A thing can be legal or illegal. A thing is usually legal.
 
 Tried-hiding-plans is a truth state that varies. Tried-hiding-plans is initially false.
 
-Before going to the Antechamber when the backpack is enclosed by location:
+Before going to the Antechamber:
 	if the player is hurrying:
 		if the number of entries in the described motion of the player is greater than 1:
 			say "[path-walked so far][line break][paragraph break]";
@@ -41,7 +41,7 @@ To say still-too-long:
 To stow gear:
 	let L be a list of things;
 	repeat with item running through things which are enclosed by the player:
-		if the item is marked-visible and the item is illegal and the item is not enclosed by a backpack:
+		if the item is marked-visible and the item is illegal and the item is not enclosed by the backpack:
 			add item to L;
 	if the number of entries in L is positive:
 		say "Before approaching the secretary ahead, we try to hide all our illegal things in the backpack.";
