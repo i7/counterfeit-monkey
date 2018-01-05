@@ -137,6 +137,13 @@ Before wearing something which is not carried by the player:
 	if the player does not have the noun:
 		stop the action.
 
+The basic accessibility rule does nothing when waving the letter-remover at something and the letter-remover is in the backpack.
+
+Before waving the letter-remover at something when the letter-remover is not carried by the player:
+	try taking the letter-remover;
+	if the player does not have the letter-remover:
+		stop the action.
+
 Understand "plugh" or "xyzzy" or "frotz" or "plover" as a mistake ("What [we] do isn't magic. It's science.").
 
 Understand "vomit" or "throw up" or "puke" or "barf" as a mistake ("[We] may feel a bit ill, but I don't think that's necessary.").
