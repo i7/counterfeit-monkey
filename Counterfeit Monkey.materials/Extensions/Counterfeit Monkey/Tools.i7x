@@ -460,6 +460,8 @@ She grins at us and sets the glass down neatly on the bar.[or]This time she lays
 
 
 To decide what thing is the homonym-match of (target - a thing):
+	if target is a sign:
+		decide on player;
 	let old text be "[target]";
 	let old text be "[old text in lower case]";
 	repeat with item running through things in the repository:
