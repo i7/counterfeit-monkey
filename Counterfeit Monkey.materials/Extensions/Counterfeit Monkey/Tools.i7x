@@ -467,9 +467,8 @@ To decide what thing is the homonym-match of (target - a thing):
 			let new text be "[item]";
 			let new text be "[new text in lower case]";
 			if new text is old text:
-				if the description of the item is not the description of the target:
+				if the substituted form of description of the item is not the substituted form of description of the target:
 					decide on item;
-					break;
 	decide on player.
 
 Chapter 3 - The T-inserter
