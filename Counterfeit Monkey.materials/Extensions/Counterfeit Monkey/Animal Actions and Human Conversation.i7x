@@ -1724,7 +1724,7 @@ Rule for refusing comment by the bartender:
 	otherwise if the target is a person:
 		say "'Making live [if the target is not an animal]people[otherwise]critters[end if] is outside my lic[ense], bub.' (Bub? Who says that? But she carries it off.)";
 		rule succeeds;
-	otherwise if the target is the piece:
+	otherwise if the target is the piece-alternate:
 		say "'Er… I think that would make a handgun, which would be illegal around here,' she says.";
 		rule succeeds;
 	otherwise:
