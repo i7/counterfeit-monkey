@@ -4173,7 +4173,7 @@ calm Lena is a performative quip.
 	It quip-supplies Lena.
 	It directly-follows modem-complaint, ode-complaint, preamp-complaint, reams-complaint.
 	[Every ode is mentioned by calm Lena.]
-	
+
 tease Lena about selling office supplies is a performative quip.
 	The comment is "'May I recommend that you branch out into office supply?' you ask. 'It's a lucrative business. Pamphlet-printing is very popular with the subversive element.'".
 	The mentions-list is {reams}.
