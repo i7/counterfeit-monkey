@@ -149,7 +149,6 @@ The surveillance computer's software proffers the surveillance computer's softwa
 A tall window proffers a tall window. [K4_door]
 A tattoos proffers a tattoos. [K2_thing]
 A temporary barrier proffers a temporary barrier. [K4_door]
-A fake-ten proffers a fake-ten. [Is one of these a mistake?]
 The thick-glass-pane proffers the thick-glass-pane. [K2_thing]
 A tiny refrigerator's freezer compartment proffers a tiny refrigerator's freezer compartment. [K43_freezer_compartment]
 The component-tome proffers the component-tome. [K2_thing]

@@ -3686,7 +3686,7 @@ The description of the tear is "It looks like any other droplet of water."
 Instead of tasting the tear:
 	say "It wouldn't survive the experience."
 
-A fake-ten is r-abstract. The heft of a fake-ten is 0. The description of a fake-ten is usually "The concept of ten is here represented by [one of]the letter X[or]the digits 1 and 0[or]the digit A[or]an Olympic judge holding up a scorecard[at random]." Understand "ten" as a fake-ten. The printed name of a fake-ten is "ten".
+[A fake-ten is r-abstract. The heft of a fake-ten is 0. The description of a fake-ten is usually "The concept of ten is here represented by [one of]the letter X[or]the digits 1 and 0[or]the digit A[or]an Olympic judge holding up a scorecard[at random]." Understand "ten" as a fake-ten. The printed name of a fake-ten is "ten".]
 
 The description of a tent is usually "It's one of those round pup tents, made of [one of][primary-color][or][secondary-color][at random] rip-stop nylon, big enough to sleep one diagonal adult or two children. There's a window of netting mesh so that it's possible to see inside." The tent is usually transparent openable enterable.
 

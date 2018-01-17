@@ -77,7 +77,6 @@ A tart is fake. [K161_tart]
 An alterna-tart is fake.
 A tattle is fake. [K163_tattle]
 A tear is fake. [K164_tear]
-A fake-ten is fake. [Is one of these a mistake?]
 A tent is fake. [K166_tent]
 A tin-can is fake. [K168_tin_can]
 A tint is fake. [K169_tint]
