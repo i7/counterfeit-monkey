@@ -410,8 +410,10 @@ Report waving the letter-remover device at something:
 		unless N is a used achievement:
 			say paragraph break;
 			record N as an achievement;
+	try examining the generated object;
 	abide by the dangerous construction rules for the generated object;
-	try examining the generated object instead.
+	stop the action.
+
 
 Report waving the letter-remover device at something creating a seen thing:
 	say "[The second noun] [give] way to the now-familiar [generated object].";
