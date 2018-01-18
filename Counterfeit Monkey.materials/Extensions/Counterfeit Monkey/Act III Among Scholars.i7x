@@ -983,7 +983,7 @@ Instead of putting something fluid on the output tray:
 
 Test paper-bug with "tutorial off / shutoffice / wave c-remover at cream / open paper-drawer / put ream in drawer / close drawer / z / open drawer / x paper" holding the cream in the Department office.
 
-A draft document is a thing. Understand "pages" or "speech" or "talk" or "asterisks" as the draft document. [Understand "paper" as the draft document when the paper is not visible.] The description is "It's fifteen pages double-spaced, and appears to be the draft of a talk Professor Waterstone is preparing to give at a convention. I immediately notice, however, that several portions of the speech are marked with angry triple asterisks [--] Waterstone's way of marking up parts of text that need serious revision.
+A draft document is a thing. Understand "pages" or "speech" or "talk" or "asterisks" as the draft document. [Understand "paper" as the draft document when the paper is not visible.] The description is "[homonym-shame-wanted]It's fifteen pages double-spaced, and appears to be the draft of a talk Professor Waterstone is preparing to give at a convention. I immediately notice, however, that several portions of the speech are marked with angry triple asterisks [--] Waterstone's way of marking up parts of text that need serious revision.
 
 The talk concerns 'homonym shame': the anxiety felt in the Victorian era, and still manifested at times in modern culture, about objects that shared the same name as (and therefore theoretically might be converted into) something rude. Methods of disguising the legs of pianos and crotches of trees occupy a good portion of Waterstone's exposition, and there is a page-long aside on methods of  making sure that donkeys are known by that name and not by the alternative.
 
@@ -1281,18 +1281,11 @@ Definition: a thing is Waterstone-inspiring:
 		yes;
 	no.
 
-Homonym-puzzle-established is a truth state that varies. Homonym-puzzle-established is initially false.
-
-[It is confusing if Watersone looks at the player's belongings before we even know that he is looking for anything. So we have this flag, homonym-puzzle-established, that indicates whether the player knows about the puzzle. This will be set to true if we have read the draft document, if we have already tried to show or give something to Waterstone, or simply by having knocked once on his door after being thrown out the first time.]
-
-After examining or taking the draft document:
-	now homonym-puzzle-established is true;
-	continue the action.
+[It is confusing if Watersone looks at the player's belongings before we even know that he is looking for anything. So we use a fact, homonym-shame-wanted, to check whether the player knows about the puzzle. This will be set to known if we have read the draft document, if we have already tried to show or give something to Waterstone, or simply by  knocking on his door after having been thrown out the first time.]
 
 Instead of knocking on office-door-1 when Professor Waterstone is on a chair and office-door-1 is closed and the location is Language Studies Department Office:
-	if homonym-puzzle-established is false:
-		say "Professor Waterstone looks up at us through the window in the door, as if to ask 'Yes? Was there something you wanted to show me?'[paragraph break]";
-		now homonym-puzzle-established is true;
+	if the player does not know homonym-shame-wanted:
+		say "Professor Waterstone looks up at us through the window in the door, as if to ask 'Yes? Was there something you wanted to show me?'[homonym-shame-wanted][paragraph break]";
 		stop the action;
 	let the selected object be nothing;
 	if held-over-object is not nothing and held-over-object is not the player:
@@ -1386,28 +1379,24 @@ Sanity-check saying hello to Professor Waterstone when Professor Waterstone is o
 
 Sanity-check giving something to Professor Waterstone when Professor Waterstone is on a chair and office-door-1 is closed and the location is Language Studies Department Office:
 	now held-over-object is the noun;
-	say "Waterstone is unable to hear you through the closed door, which is presumably the purpose of closing it, so let's try knocking instead.";
-	now homonym-puzzle-established is true;
+	say "Waterstone is unable to hear you through the closed door, which is presumably the purpose of closing it, so let's try knocking instead[homonym-shame-wanted].";
 	try knocking on office-door-1 instead.
 
 Sanity-check showing something to Professor Waterstone when Professor Waterstone is on a chair and office-door-1 is closed and the location is Language Studies Department Office:
 	now held-over-object is the noun;
-	say "Waterstone is unable to hear you through the closed door, which is presumably the purpose of closing it, so let's try knocking instead.";
-	now homonym-puzzle-established is true;
+	say "Waterstone is unable to hear you through the closed door, which is presumably the purpose of closing it, so let's try knocking instead[homonym-shame-wanted].";
 	try knocking on office-door-1 instead.
 
 Held-over-object is a thing that varies.
 
 Instead of showing something to special glass window when Professor Waterstone is on a chair and office-door-1 is closed and the location is Language Studies Department Office:
-	say "Though there is a window and Waterstone can watch the outer office from his desk, he is unable to hear you through the closed door, which is presumably the purpose of closing it. I will try knocking instead.";
+	say "Though there is a window and Waterstone can watch the outer office from his desk, he is unable to hear you through the closed door, which is presumably the purpose of closing it. I will try knocking instead[homonym-shame-wanted].";
 	now held-over-object is the noun;
-	now homonym-puzzle-established is true;
 	try knocking on office-door-1.
 
 Instead of giving something to office-door-1 when Professor Waterstone is on a chair and office-door-1 is closed and the location is Language Studies Department Office:
-	say "Waterstone is unable to hear you through the closed door, which is presumably the purpose of closing it, so let's try knocking instead.";
+	say "Waterstone is unable to hear you through the closed door, which is presumably the purpose of closing it, so let's try knocking instead[homonym-shame-wanted].";
 	now held-over-object is the noun;
-	now homonym-puzzle-established is true;
 	try knocking on office-door-1.
 
 A special glass window is part of office-door-1. The description of the special glass window is "It's nearly the width of the door, and fills most of the upper half of the frame."

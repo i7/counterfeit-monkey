@@ -780,7 +780,7 @@ After printing the name of the pants while taking inventory:
 	otherwise:
 		make no decision. ]
 
-Definition: a thing is bureau-allowed:
+[ Definition: a thing is bureau-allowed:
 	if it is part of something:
 		yes;
 	if it is the letter-remover:
@@ -801,7 +801,7 @@ Definition: a thing is bureau-allowed:
 		yes;
 	no.
 
-Definition: a thing is bureau-disallowed if it is not bureau-allowed.
+Definition: a thing is bureau-disallowed if it is not bureau-allowed. ]
 
 Section 5 - Cold Storage
 
