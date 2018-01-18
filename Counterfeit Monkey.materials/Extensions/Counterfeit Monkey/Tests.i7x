@@ -33,7 +33,7 @@ A last after starting the virtual machine rule (this is the no pauses rule):
 		if glulx system clock is supported:
 			start the timer;
 		otherwise:
-			say "[paragraph break][first custom style][bracket]This interpreter does not provide system clock functionality. Play time will not be shown at the end.[close bracket][roman type][paragraph break]";
+			say "[paragraph break][first custom style][bracket]This interpreter does not provide system clock functionality. Total play time will not be shown at the end of the game.[close bracket][roman type][paragraph break]";
 		say paragraph break;
 
 Understand "pauses on" as on-pausing. On-pausing is an action out of world.
