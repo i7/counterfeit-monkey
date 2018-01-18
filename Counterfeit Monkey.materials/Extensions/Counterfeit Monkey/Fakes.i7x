@@ -339,6 +339,7 @@ The mall figurine is fake. [I2186_mall_figurine]
 The mag is fake. [I1694_mag]
 The mare is fake. [I1641_mare]
 A massive plug is fake. [K178_massive_plug]
+The massive pug is fake.
 The meat-gown is fake. [I2444_meat_gown]
 The mechanic is fake. [I2450_mechanic]
 The member is fake. [I897_member]

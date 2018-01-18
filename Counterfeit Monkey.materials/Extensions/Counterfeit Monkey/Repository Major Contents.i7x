@@ -458,6 +458,9 @@ The repository contains a clock.
 [long table]
 The repository contains an angle bolt.
 
+[massive plug]
+The repository contains a massive pug.
+
 [Mark]
 The repository contains an ark.
 

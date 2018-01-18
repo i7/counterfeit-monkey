@@ -2521,6 +2521,8 @@ Carry out an actor connecting something:
 
 [There's really no particular point to having the britishizing goggles change the compatibility of the plug. I just couldn't resist.]
 
+The heft of the massive pug is 10. The massive pug is an animal. The scent-description of the massive pug is "puppies". The description of the massive pug is "With its  wrinkly, short-muzzled face, curled tail and fine, glossy coat of fawn fur, it would be adorable if not for the fact that it is large enough to fill the entire room."
+
 Section 13 - Pr - Pz
 
 The description of the preamp is "It looks like just one specimen from the group from which you were working."
