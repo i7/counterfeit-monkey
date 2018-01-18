@@ -3614,7 +3614,7 @@ The tan is an r-abstract. The heft of a tan is usually 0. The description is usu
 
 The description of the tat is "It looks like the end-of-day leftovers from a particularly ill-fav[our]ed yard sale. What's not broken is dirty, and what's not dirty is in terrible taste. There's a mechanical pencil with no lead, and a kiddie pool that leaks; a stained tablecloth that once had a pattern of squid tentacles on it; a bobble-headed doll representing the head player of the Maiana football team thirteen years ago."
 
-The ten-object is r-abstract. The heft of the ten-object is 0. Understand "ten" or "10" as the ten-object. The description of a ten-object is usually "The number of fingers, the number of toes." The printed name of a ten-object is usually "ten".
+The ten-object is r-abstract. The heft of the ten-object is 0. Understand "ten" or "10" as the ten-object. The description of a ten-object is usually "The concept of ten is here represented by [one of]the letter X[or]the digits 1 and 0[or]the digit A[or]an Olympic judge holding up a scorecard[or]two hands, exposing their fingers[or]two feet, spreading their toes[at random]." The printed name of a ten-object is usually "ten".
 
 The description of the Tao is "It presents itself as one of those circular yin-yang symbols, part black, part white. I'm afraid Atlantean understanding of Asian philosophies is fairly simplistic."
 
