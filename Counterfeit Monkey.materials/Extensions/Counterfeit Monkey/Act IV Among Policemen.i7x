@@ -731,7 +731,9 @@ Sanity-check going from the Sensitive Equipment Testing Room:
 		otherwise:
 			say "We can hardly leave Brock here." instead;
 	if Brock is in the location:
-		say "Brock is determined that we get the T-inserter tested before we leave, and it's probably faster to cooperate with him than to fight it out." instead.
+		say "Brock is determined that we get the T-inserter tested before we leave, and it's probably faster to cooperate with him than to fight it out." instead;
+	if the rock is enclosed by the player and Brock does not recollect getting-out-now and Brock does not recollect what-day:
+		say "We better talk to Brock first and find out what happened. Let's gel him." instead.
 
 
 Carry out putting gel on the rock when the player does not know brock-found:
