@@ -1371,6 +1371,18 @@ Instead of showing the rusty nail to the bartender:
 Instead of showing the rusty nails to the bartender:
 	try requesting the rusty nails from the bartender.
 
+Instead of requesting something from the bartender when the bartender does not carry the noun:
+	if the noun is the screwdriver:
+		carry out the refusing to buy activity with the screwdrivers;
+	otherwise:
+		if the noun is the gimlet:
+			carry out the refusing to buy activity with the gimlets;
+		otherwise:
+			if the noun is the rusty nail:
+				carry out the refusing to buy activity with the rusty nails;
+			otherwise:
+				continue the action.
+
 Does the player mean buying something from the bartender:
 	it is very likely.
 
@@ -1479,7 +1491,10 @@ Carry out the bartender discussing buy the rusty nail:
 	homonym-paddle the rusty nail;
 
 Rule for refusing to buy something (called target) which is in the toolkit:
-	say "[one of]We ask about [the target], but the bartender says she's limited to one drink per type per club member. 'They're a loss leader,' she explains. 'Tools are more expensive than cocktails, and then even with the rusty nails, there's the energy to run the paddle.'[or]The bartender has already explained that she can't sell us more drinks of the same kind. The profit margin is too low, apparently.[stopping]"
+	let drink-name be "[target]";
+	replace the regular expression ".$" in drink-name with ""; ["depluralize" the name of the tools, i.e. remove the last letter.]
+	let drink-name be drink-name in sentence case;
+	say "[one of]We ask for another [drink-name], but the bartender says she's limited to one drink per type per club member. 'They're a loss leader,' she explains. 'Tools are more expensive than cocktails, and then even with the rusty nails, there's the energy to run the paddle.'[or]The bartender has already explained that she can't sell us more drinks of the same kind. The profit margin is too low, apparently.[stopping]"
 
 Rule for refusing to buy a drink-form thing:
 	say "We've already paid for that." instead.
