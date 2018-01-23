@@ -1329,7 +1329,7 @@ I think I know where we can get one, though. My advisor Professor Waterstone [--
 Understand "message" as the legend.
 
 Before examining the legend when the legend is not introduced:
-	complete "Homonym-paddle the legend into the other kind of legend";
+	complete "Find a way to understand the map";
 	assign "Speak to Professor Waterstone and get his invitation to see the T-inserter";
 	assign "Gain entrance to the Bureau";
 	assign "Find Brock";
@@ -1337,7 +1337,7 @@ Before examining the legend when the legend is not introduced:
 
 To say figure-out-legend:
 	complete "Trace Brock's movements at the antique shop";
-	assign "Homonym-paddle the legend into the other kind of legend".
+	assign "Find a way to understand the map".
 
 
 

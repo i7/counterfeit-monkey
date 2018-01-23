@@ -318,14 +318,8 @@ To say square-refusal:
 	if the legend is handled or the fake-legend is in the repository:
 		say "Hadn't we better see what message Brock left?";
 		stop the action;
-	if the fake-legend is not seen:
-		say "[if the noun is not My Apartment and the noun is not Apartment Bathroom]My apartment is that direction, but unless[otherwise]Unless[end if] we have some reason to go there, it seems least suspicious to avoid my old neighborhood.";
-	else:
-		say "At a guess, we're looking for a homonym paddle so we can convert the legend. ";
-		if Drinks Club is visited:
-			say "The Fleur d'Or Drinks Club has to be our best bet.";
-		else:
-			say "I'm pretty sure they've got one in one of the fancy bars off north Long Street.".
+	otherwise:
+		say "[if the noun is not My Apartment and the noun is not Apartment Bathroom]My apartment is that direction, but unless[otherwise]Unless[end if] we have some reason to go there, it seems least suspicious to avoid my old neighborhood[if the fake-legend is seen]. We should figure out the map enough to know where we’re going[end if].";
 
 South of Long Street South is Palm Square. The description of Palm Square is "[if unvisited]Now this is my part of town: [end if]Palm Square is the beginning of the university district. To the [Southeast], through the iron gate, is the university campus proper; and that unobtrusive little doorway directly [south] of us leads into the Babel Café." Palm Square is proper-named, checkpoint and southern.
 
