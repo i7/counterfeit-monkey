@@ -735,6 +735,8 @@ Sanity-check going from the Sensitive Equipment Testing Room:
 	if the rock is enclosed by the player and Brock does not recollect getting-out-now and Brock does not recollect what-day:
 		say "We better talk to Brock first and find out what happened. Let's gel him." instead.
 
+Check waving the letter-remover at Brock when the current setting of the letter-remover is "b":
+	say "Brock would never forgive [us] if [we] turned him back into a rock now." instead.
 
 Carry out putting gel on the rock when the player does not know brock-found:
 	now the player knows brock-found;
