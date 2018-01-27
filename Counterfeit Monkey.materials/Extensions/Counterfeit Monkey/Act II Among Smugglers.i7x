@@ -1194,6 +1194,7 @@ A distant stuff rule when the person asked is the All-Purpose-Officer:
 The olive branch is distant. The live branch is distant. The stuffed octopus is distant. The protest-sign is distant. The signet is distant.
 
 Every turn when the player is in Traffic Circle:
+	let difference be the time of day minus the last irritation;
 	if the teenagers are in the location:
 		if the brown tree is not in the location:
 			now the teenagers are nowhere;
@@ -1202,10 +1203,11 @@ Every turn when the player is in Traffic Circle:
 				now the stuffed octopus is nowhere;
 			say "[line break][irritation reaction].";
 		otherwise:
-			say "[one of]'Go ahead, put us in Cold Storage!' shouts the defiant teenager. 'I'm happy to sleep through all this shit and wake up when we have jet packs and a government that respects the rights of its people.'[or]The nervous teenager looks unhappy. 'We won't get out of here until our families are all dead and global warming has reduced Atlantis to three square feet of hilltop.'[or]The nervous teenager struggles against her bonds.[or]One of the other protesters tries to free the teenagers while the All-Purpose Officer isn't paying attention, but the bonds are too strong.[or]The teenagers look at us rather desperately.[stopping]";
+			say "[one of]'Go ahead, put us in Cold Storage!' shouts the defiant teenager. 'I'm happy to sleep through all this shit and wake up when we have jet packs and a government that respects the rights of its people.'[or]The nervous teenager looks unhappy. 'We won't get out of here until our families are all dead and global warming has reduced Atlantis to three square feet of hilltop.'[or]The nervous teenager struggles against her bonds.[or]One of the other protesters tries to free the teenagers while the All-Purpose Officer isn't paying attention, but the bonds are too strong.[or]The teenagers look at us rather desperately[if the player carries the letter-remover and the All-Purpose-Officer is in Traffic Circle and the All-Purpose-Officer carries the restoration-gel rifle and the The olive branch is on the huge-metal-arm and a random chance of 1 in 2 succeeds]. One of them glances at our [letter-remover] and then at the olive branch[end if].[stopping]";
+			if difference is at least 11 minutes:
+				say "[line break][irritation reaction].";
 	otherwise:
-		let difference be the time of day minus the last irritation;
-		if difference is 1 minutes:
+		if difference is 1 minute:
 			say "The crowd is parting. We might be able to leave soon.";
 	if All-Purpose-Officer is enclosed by Traffic Circle and an unsuitable thing (called the target) is enclosed by the giant Atlantida statue:
 		if the target is the live branch and the All-Purpose-Officer carries the restoration-gel rifle:
@@ -1301,6 +1303,9 @@ Instead of shooting something with the restoration-gel rifle when the irritation
 
 Sanity-check taking the restoration-gel rifle when the All-Purpose-Officer is not enclosed by the giant Atlantida statue and protest-scenario is happening:
 	say "[The All-Purpose-officer] is right here. You have too much sense to make a move until he's a little more distracted." instead.
+
+When protest-scenario begins:
+	now last irritation is time of day.
 
 [When protest-scenario begins:
 	say "[An All-Purpose-officer] is scaling the statue, [diminutive affixer] under his arm. His restoration gel rifle is abandoned at the statue base, probably because it's not plausible to carry both at once.";]
