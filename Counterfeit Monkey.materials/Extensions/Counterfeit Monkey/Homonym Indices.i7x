@@ -344,7 +344,6 @@ The armchair has homonym index 339.
 The armpit has homonym index 340.
 The army-coat has homonym index 341.
 The army has homonym index 342.
-The fake-as has homonym index 343.
 The ascot has homonym index 344.
 The ash has homonym index 345.
 The asparagus has homonym index 346.
