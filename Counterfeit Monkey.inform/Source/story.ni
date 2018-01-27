@@ -544,6 +544,7 @@ Include Tests by Counterfeit Monkey.
 		•	Section 5 - Ultratest ]
 
 Include Letter Hash Codes by Counterfeit Monkey.
+Include Homonym Indices by Counterfeit Monkey.
 Include Initial Quip Positions by Counterfeit Monkey.
 Include Fakes by Counterfeit Monkey.
 Include Initial Proffering by Counterfeit Monkey.

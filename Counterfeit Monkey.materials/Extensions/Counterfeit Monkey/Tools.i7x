@@ -432,6 +432,8 @@ The homonym paddle is carried by the bartender. It is long and strong. The descr
 
 To prevent theft, the paddle is attached to the bartender's wrist by a thin steel cable and bracelet."
 
+A thing has a number called the homonym index. The homonym index of a thing is usually 0.
+
 To homonym-paddle (N - a thing):
 	move the N to the repository;
 	let X be the player;
@@ -462,17 +464,14 @@ She grins at us and sets the glass down neatly on the bar.[or]This time she lays
 
 
 To decide what thing is the homonym-match of (target - a thing):
-	if target is a sign:
-		decide on player;
 	let old text be "[target]";
 	let old text be "[old text in lower case]";
 	repeat with item running through things in the repository:
-		if the hash code of the item is the hash code of target:
+		if the hash code of the item is the hash code of target and the homonym index of the item is not the homonym index of target:
 			let new text be "[item]";
 			let new text be "[new text in lower case]";
 			if new text is old text:
-				if the substituted form of description of the item is not the substituted form of description of the target:
-					decide on item;
+				decide on item;
 	decide on player.
 
 Chapter 3 - The T-inserter
