@@ -319,6 +319,9 @@ Check waving the letter-remover at something:
 Check waving the letter-remover at the restoration gel:
 	abide by the don't change irretrievable rules for the restoration gel.
 
+Check waving the letter-remover at something creating the massive pug:
+	move the second noun to the holder of the noun.
+
 Check waving the letter-remover at something which is enclosed by the player:
 	if the player wears the second noun:
 		try taking off the second noun;
