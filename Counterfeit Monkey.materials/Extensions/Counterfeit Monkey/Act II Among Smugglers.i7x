@@ -1120,7 +1120,7 @@ To say irritation reaction:
 	now last irritation is the time of day.
 
 
-The protest-sign is on the giant Atlantida statue. The printed name is "sign". Understand "sign" as the protest-sign.
+The protest-sign is a sign on the giant Atlantida statue. The printed name is "sign". Understand "sign" as the protest-sign.
 
 The description of the protest-sign is "It reads:
 
