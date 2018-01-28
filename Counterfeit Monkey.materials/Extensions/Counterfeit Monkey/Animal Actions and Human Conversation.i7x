@@ -5360,7 +5360,7 @@ Sanity-check going from My Apartment when confrontation-with-mother has not happ
 	move my mother to the location instead.
 
 Sanity-check going from My Apartment during confrontation-with-mother:
-	say "I don't quite dare just walk out on Mother. Partly it's habit, partly the sense that she's more upset than she's letting on, and that if we push her the wrong way she'll contact the authorities."
+	say "I don't quite dare just walk out on Mother. Partly it's habit, partly the sense that she's more upset than she's letting on, and that if we push her the wrong way she'll contact the authorities." instead.
 
 Confrontation-with-mother is a scene. Confrontation-with-mother begins when my mother is in the location.
 
