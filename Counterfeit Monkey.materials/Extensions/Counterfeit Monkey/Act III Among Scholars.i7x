@@ -400,10 +400,10 @@ But if you insist, my apartment is actually pitifully easy to break into. That w
 
 Understand "force [something openable]" or "force [something openable] open" as opening.
 
-Rule for printing the name of my apartment while not looking:
+Rule for printing the name of my apartment while listing exits:
 	say "my apartment".
 
-Rule for printing the name of apartment bathroom while not looking:
+Rule for printing the name of apartment bathroom while listing exits:
 	say "apartment bathroom".
 
 After going through the bathroom window:
