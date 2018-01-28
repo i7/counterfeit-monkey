@@ -683,7 +683,8 @@ A dangerous construction rule for the cord:
 		let loc be the holder of the cord;
 		now the cord is nowhere;
 		move the power cord to loc;
-		now the printed name of power cord is "cord".
+		now the printed name of power cord is "cord";
+		reset hash code of power cord.
 
 Table of Ultratests (continued)
 topic	stuff	setting
