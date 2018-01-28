@@ -2,7 +2,9 @@ Version 1/160622 of Ultra Undo (for Glulx only) by Dannii Willis begins here.
 
 "Handles undo using external files for very big story files"
 
-Use maximum file based undo count of at least 10 translates as (- Constant ULTRA_UNDO_MAX_COUNT = {N}; -). 
+Use maximum file based undo count of at least 5 translates as (- Constant ULTRA_UNDO_MAX_COUNT = {N}; -).
+
+Use file based undo translates as (- Constant ULTRA_UNDO_ALWAYS_ON; -).
 
 [ If the interpreter cannot perform an undo for us, store the state using external files. We can do this by hijacking VM_Undo and VM_Save_Undo. ]
 
@@ -14,6 +16,12 @@ Global ultra_undo_needed = 0;
 
 ! Test if the VM is able to perform an undo. This is necessary because Git won't tell us that it can't.
 [ Ultra_Undo_Test res;
+
+#ifdef ULTRA_UNDO_ALWAYS_ON;
+	ultra_undo_needed = 1;
+	rfalse;
+#endif;
+
 	@saveundo res;
 	if ( res == 1 ) ! Failure
 	{
@@ -253,7 +261,9 @@ Ultra Undo ends here.
 
 Some interpreters have limitations which mean that for very large story files the Undo function stops working. So far the only known example of this is Emily Short's Counterfeit Monkey, for which this extension was written. Ultra Undo will keep Undo working when the interpreter cannot, by using external files. You do not need to do anything other than include the extension - it will take care of everything for you, including cleaning up after itself (i.e., deleting those files when the player quits or restarts.)
 
-There is a use option "maximum file based undo count" which controls how many how many turns can be undone using external files. By default that number is 10.
+There is a use option "maximum file based undo count" which controls how many how many turns can be undone using external files. By default that number is 5.
+
+The use option "file based undo" will switch on file based undo permanently, bypassing the standard memory based undo entirely. This can be used to lower the memory footprint of a game, and is also useful for testing.
 
 This extension is compatible with Conditional Undo by Jesse McGrew and Undo Output Control by Erik Temple.
 
