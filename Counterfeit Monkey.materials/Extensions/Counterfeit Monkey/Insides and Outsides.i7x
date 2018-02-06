@@ -11,7 +11,7 @@ This is the attempt going in rule:
 			say "([the C])";
 			try entering C;
 		otherwise:
-			say "[one of]Into what, exactly? [run paragraph on][or]There is no obvious way to enter. [run paragraph on][at random]";
+			say "[one of]Enter what, exactly? [run paragraph on][or]There's nothing obvious to enter here. [run paragraph on][at random]";
 			carry out the listing exits activity.
 
 This is the attempt going out rule:
