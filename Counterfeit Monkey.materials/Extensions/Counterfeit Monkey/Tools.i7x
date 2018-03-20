@@ -850,8 +850,9 @@ Instead of examining the spinner:
 	say "[description of the spinner][line break]";
 	if the player wears the monocle:
 		try looking at the spinner through the monocle;
-	follow the spinner-turning rule;
-	say line break.
+	if the spinner is non-empty:
+		follow the spinner-turning rule;
+		say line break.
 
 Sanity-check switching on the spinner:
 	say "The sculpture appears to be permanently on." instead.
