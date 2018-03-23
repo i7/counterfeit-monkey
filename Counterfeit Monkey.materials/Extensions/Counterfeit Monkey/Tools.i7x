@@ -96,15 +96,14 @@ Before doing something to the small knob:
 
 Understand "[letter-remover] [something]" as waving it at.
 
-After reading a command (this is the change X-remover to letter-remover rule):
+A command-string altering rule (this is the change X-remover to letter-remover rule):
 	say "[run paragraph on]";
-	let N be "[the player's command]";
-	replace the text " [current setting of the letter-remover]-remover" in N with " letter-remover";
-	change the text of the player's command to N;
+	replace the text " [current setting of the letter-remover]-remover" in player-command-substitute with " letter-remover";
 	say "[run paragraph on]";
 
-A first after reading a command rule (this is the implicitly change letter-remover setting rule):
-	let N be "[the player's command]";
+A first command-string altering rule (this is the implicitly change letter-remover setting rule):
+	now the letter-remover is static;
+	let N be player-command-substitute;
 	if N matches the regular expression ".-remover":
 		if N matches the regular expression "(.*) (.)-remover (.)*":
 			replace the regular expression "(.*) (.)-remover (.)*" in N with "\2";
@@ -116,21 +115,18 @@ A first after reading a command rule (this is the implicitly change letter-remov
 			make no decision;
 		if the number of characters in N is greater than 1:
 			make no decision;
-		now N is "[N in lower case]";
 		if the letter-remover is in a closed backpack:
 			silently try opening the backpack;
 			if the backpack is closed:
 				stop the action;
 		if the player can touch the letter-remover:
-			unless N matches the regular expression "\l":
+			unless N matches the regular expression "<a-z>":
 				say "Only the 26 letters of the English alphabet are available to the letter-remover.";
-				reject the player's command;
+				parsing fails;
 			now the current setting of the letter-remover is "[N]";
 			now the letter-remover is changing;
 		otherwise:
 			say "[run paragraph on]";
-
-
 
 The letter-remover can be static or changing. The letter-remover is static.
 
@@ -162,8 +158,8 @@ Check tuning it to:
 	let N be "[the topic understood]";
 	if the number of characters in N is greater than 1:
 		say "[We] can only tune the letter-remover device to one letter at a time." instead;
-	now N is "[N in lower case]";
-	unless N matches the regular expression "\l":
+	[now N is "[N in lower case]";]
+	unless N matches the regular expression "<a-z>":
 		say "Only the 26 letters of the English alphabet are available to the letter-remover." instead.
 
 Carry out tuning it to:

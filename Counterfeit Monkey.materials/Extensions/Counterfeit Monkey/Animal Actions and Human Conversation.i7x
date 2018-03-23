@@ -2858,11 +2858,11 @@ lie about visiting is a performative quip.
 	It directly-follows when-get-here.
 
 [because otherwise we get interference with the LIE ON THING command from Postures:]
-After reading a command when the current interlocutor is the backpacking girl (this is the replace lie with lieabout rule):
+A command-string altering rule when the current interlocutor is the backpacking girl (this is the replace lie with lieabout rule):
 	if the player's command matches "lie":
-		change the text of the player's command to "lieabout";
+		now player-command-substitute is "lieabout";
 	otherwise if the player's command includes "lie about":
-		change the text of the player's command to "lieabout".
+		now player-command-substitute is "lieabout".
 
 what-think-so-far is an NPC-directed quip.
 	The reply is "'Do you like this place so far?'"

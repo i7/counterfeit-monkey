@@ -57,18 +57,26 @@ Chapter - Understand preface
 	let disam-cmd be the player's command;
 	replace the regular expression "\)" in disam-cmd with " ";
 	change the text of the player's command to disam-cmd.]
-	
+
 Chapter - When to reset numbers
 
 [How long should the disambiguation ID number still be understood as referring to the assigned item? Some players will try to use the numbers on subsequent turns as shortcuts. However, keeping them indefinitely can create a problem with duplicate objects: the disambiguation ID property makes them distinguishable, so "two apples" will start being identified as "an apple" and "an apple." To address this, we reset the numbers as soon as the player enters a command which does not include a number.]
 
-After reading a command when the number of entries in list of disambiguables > 0 (this is the Numbered Disambiguation Choices reset disambiguation id when no numbers in command rule):
+A command-string altering rule when the number of entries in list of disambiguables > 0 (this is the Numbered Disambiguation Choices reset disambiguation id when no numbers in command rule):
+	let disam-cmd be player-command-substitute;
+	replace the text ")" in disam-cmd with " ";
+	unless disam-cmd matches the regular expression ".*\d.*":
+		follow the Numbered Disambiguation Choices reset disambiguables rule;
+	otherwise:
+		now player-command-substitute is disam-cmd.
+
+[After reading a command when the number of entries in list of disambiguables > 0 (this is the Numbered Disambiguation Choices reset disambiguation id when no numbers in command rule):
 	let disam-cmd be "[the player's command]";
 	replace the text ")" in disam-cmd with " ";
 	unless disam-cmd matches the regular expression ".*\d.*":
 		follow the Numbered Disambiguation Choices reset disambiguables rule;
 	otherwise:
-		change the text of the player's command to disam-cmd.
+		change the text of the player's command to disam-cmd.]
 
 Numbered Disambiguation Choices ends here.
 
