@@ -1404,11 +1404,19 @@ Instead of putting the restoration gel on the origin paste:
 
 Instead of putting the restoration gel on something:
 	say "[We] dip out a [if the heft of the second noun is 1]fingertip-coating[otherwise]pea-sized[end if] quantity of gel and rub it gently onto [the second noun]. [run paragraph on]";
-	gel-convert second noun.
+	gel-convert second noun;
+	if the second noun is in the repository:
+		express gel-admiration.
 
 Instead of putting the restoration gel on something fluid:
 	say "[We] just touch a coated fingertip of gel to [the second noun]. [run paragraph on]";
-	gel-convert second noun.
+	gel-convert second noun;
+	if the second noun is in the repository:
+		express gel-admiration.
+
+To express gel-admiration:
+	say "[one of][paragraph break]I'm starting to understand how you got into all the places you got into. Not that I judge you or your line of work, of course. [or][stopping][paragraph break]";
+	record "using the gel" as achieved.
 
 Instead of putting the restoration gel on yourself:
 	if atlantida-woman is seen:
@@ -1500,8 +1508,6 @@ To gel-convert (item - an object):
 			say "With an audible SPLORT, [the item] [become] [a list of things which proffer the item][if the destination is the location and the holder of the item is not the location] and falls to the [ground][end if]. ";
 			if description needed is true:
 				say "[parent description]";
-		say "[one of][paragraph break]I'm starting to understand how you got into all the places you got into. Not that I judge you or your line of work, of course. [or][stopping][paragraph break]";
-		record "using the gel" as achieved;
 		[It's possible, in rare cases, for something to be its own parent: AS+COT -> SCOT -> COT leaves a result that is one of its own earlier ingredients. So we need to account for that: ]
 		if the item does not proffer the item:
 			move the item to the repository;
@@ -1530,7 +1536,9 @@ Instead of putting the restoration gel on a naughty-sounding thing:
 	say "[We] squeeze out a pea-sized quantity of gel and rub it gently onto [--]
 
 No, let me rephrase. [We] clinically and distantly apply some of the restoration gel to an innocent portion of the object in question. [run paragraph on]";
-	gel-convert the second noun.
+	gel-convert the second noun;
+	if the second noun is in the repository:
+		express gel-admiration.
 
 
 Table of Ultratests (continued)
