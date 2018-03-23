@@ -1279,7 +1279,7 @@ Definition: a thing is Waterstone-inspiring:
 
 Instead of knocking on office-door-1 when Professor Waterstone is on a chair and office-door-1 is closed and the location is Language Studies Department Office:
 	if the player does not know homonym-shame-wanted:
-		say "Professor Waterstone looks up at us through the window in the door, as if to ask 'Yes? Was there something you wanted to show me?'[homonym-shame-wanted][paragraph break]";
+		say "Professor Waterstone looks up at us through the window in the door, as if to ask 'Yes? Was there something you wanted to show me?'[homonym-shame-wanted]";
 		stop the action;
 	let the selected object be nothing;
 	if held-over-object is not nothing and held-over-object is not the player:
