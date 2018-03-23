@@ -1422,11 +1422,19 @@ Instead of putting the restoration gel on yourself:
 	if atlantida-woman is seen:
 		say "[We] optimistically rub in a little gel, but it doesn't make any difference. We're stuck this way, for good.";
 	else:
-		say "A fingertip-dab isn't enough to undo the doubling-up [we] experienced, but if [we] applied more, there's a real chance [we][']d come apart into a you and a me. And [we] can't afford that right now."
+		say "A fingertip-dab of restoration gel isn't enough to undo the doubling-up [we] experienced, but if [we] applied more, there's a real chance [we][']d come apart into a you and a me. And [we] can't afford that right now."
 
 Yourself can be gelled or ungelled. Yourself is ungelled.
 
 Instead of wearing the restoration gel:
+	try putting the restoration gel on yourself.
+
+Instead of touching the restoration gel:
+	say "It is sticky to the touch. [run paragraph on]";
+	try putting the restoration gel on yourself.
+
+Instead of touching the tub when the subcommand of the tub matches "gel":
+	say "It is sticky to the touch. [run paragraph on]";
 	try putting the restoration gel on yourself.
 
 [Instead of putting the restoration gel on yourself during Nightfalling:
@@ -1461,19 +1469,15 @@ But no exciting conversions occur.[or][We] get some gel and try to be subtle abo
 [Before putting the restoration gel on something which encloses the player:
 	say "Are you insane? If [the second noun] go[es] away, we'll go too." instead. ]
 
-
-Instead of someone trying touching the restoration gel:
-	if the person asked can touch the restoration gel:
-		gel-convert the person asked;
-		rule succeeds.
-
 Instead of touching a sticky-to-the-touch thing:
 	say "Sticky."
 
 Definition: a thing is sticky-to-the-touch:
-	if it is the restoration gel:
-		yes;
 	if it is the Origin Paste:
+		yes;
+	if it is the tube:
+		yes;
+	if it is the tub:
 		yes;
 	if it is the sticky:
 		yes;
@@ -1481,7 +1485,6 @@ Definition: a thing is sticky-to-the-touch:
 		yes;
 	if it is a tar:
 		yes.
-
 
 Definition: a thing (called itself) is original if it proffers itself and it is proffered by exactly one thing.
 
