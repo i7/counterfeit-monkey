@@ -74,16 +74,6 @@ Include Threaded Actions by Emily Short.
 
 Include Thanking by Counterfeit Monkey.
 
-A first after reading a command rule when how-many-people-here is positive (this is the replace ask X to rule):
-	if the player's command includes "where to find":
-		replace the matched text with "where there seems";
-		make no decision;
-	unless the player's command includes "how to" or the player's command includes "where to":
-		if the player's command includes "to" and the player's command includes "ask/tell":
-			let N be "[player's command]";
-			replace the regular expression "^(ask|tell) (.*?) to " in N with "\2, ";
-			change the text of the player's command to N.
-
 Rule for supplying a missing second noun while showing something to:
 	find a suitable interlocutor;
 	now second noun is current interlocutor;
@@ -166,15 +156,22 @@ A quip can be listed or unlisted. A quip is usually listed.
 Plausibility rule for an unlisted quip:
 	it is dubious.
 
-After reading a command when how-many-people-here is positive (this is the rearrange thanks and hello rule):
-	let N be "[player's command]";
-	if the player's command includes "hi/hello":
-		replace the regular expression "^(hi|hello)," in N with "say hello to";
-	if the player's command includes "thank/thanks":
-		replace the regular expression "^(thanks|thank you)," in N with "thank";
-	change the text of the player's command to N.
+A command-string altering rule when how-many-people-here is positive (this is the rearrange thanks and hello rule):
+	if the player's command includes "hi/hello/thank/thanks":
+		replace the regular expression "^(hi|hello)," in player-command-substitute with "say hello to";
+		replace the regular expression "^(thanks|thank you)," in player-command-substitute with "thank".
 
 Understand "hey" or "hiya" or "yo" as hailing.
+
+A first after reading a command rule when how-many-people-here is positive (this is the replace ask X to rule):
+	if the player's command includes "where to find":
+		replace the matched text with "where there seems";
+		make no decision;
+	unless the player's command includes "how to" or the player's command includes "where to":
+		if the player's command includes "to" and the player's command includes "ask/tell":
+			let N be "[player's command]";
+			replace the regular expression "^(ask|tell) (.*?) to " in N with "\2, ";
+			change the text of the player's command to N.
 
 After reading a command when the current interlocutor is not nothing and player's command includes "ask/tell/a/t" and the player's command does not include "ask/tell/a/t about" (this is the new strip interlocutor from input rule):
 	if the player's command includes "[someone talk-eligible]":

@@ -402,6 +402,29 @@ Instead of drinking something which is not fluid:
 Understand "apply pressure to [something]" as pushing.
 Understand "lean on [something]" as pushing.
 
+Section 5 - Input string modification
+
+[Changing the text of the player's command will re-run the tokenisation step. In order to make this happen less frequently and save some cycles, we have a custom rulebook, "the command-string altering rules" that runs at the beginning of the After reading a command stage, copies the player's command to a global string (player-command-substitute), operates on this instead of on the "player's command" array and then changes the text of the player's command once after the changes are done.
+
+The reason we do it as a custom rulebook is to make sure that they run before any other After reading a command rules.]
+
+Player-command-substitute is some text that varies. Player-command-substitute is initially "".
+
+The command-string altering rules is a rulebook. The command-string altering rules have outcomes parsing fails (failure) and parsing continues (success).
+
+A last command-string altering rule:
+	parsing continues.
+
+A first after reading a command rule (this is the alter the command-string rule):
+	now player-command-substitute is the player's command;
+	now player-command-substitute is player-command-substitute in lower case;
+	follow the command-string altering rules;
+	if the outcome of the rulebook is the parsing fails outcome:
+		now player-command-substitute is "";
+		reject the player's command;
+	otherwise:
+		change the text of the player's command to player-command-substitute;
+		now player-command-substitute is "".
 
 Part 2 - Senses
 

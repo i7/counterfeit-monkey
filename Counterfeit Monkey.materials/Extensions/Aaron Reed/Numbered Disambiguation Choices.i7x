@@ -18,8 +18,8 @@ Chapter - Setup
 Section - Disambiguation ID
 
 Every thing has a number called disambiguation id. The disambiguation id of something is usually -1.
- 
-Understand the disambiguation id property as describing a thing. 
+
+Understand the disambiguation id property as describing a thing.
 
 Section - List of disambiguables
 
@@ -57,18 +57,26 @@ Chapter - Understand preface
 	let disam-cmd be the player's command;
 	replace the regular expression "\)" in disam-cmd with " ";
 	change the text of the player's command to disam-cmd.]
-	
+
 Chapter - When to reset numbers
 
 [How long should the disambiguation ID number still be understood as referring to the assigned item? Some players will try to use the numbers on subsequent turns as shortcuts. However, keeping them indefinitely can create a problem with duplicate objects: the disambiguation ID property makes them distinguishable, so "two apples" will start being identified as "an apple" and "an apple." To address this, we reset the numbers as soon as the player enters a command which does not include a number.]
 
-After reading a command when the number of entries in list of disambiguables > 0 (this is the Numbered Disambiguation Choices reset disambiguation id when no numbers in command rule):
+A command-string altering rule when the number of entries in list of disambiguables > 0 (this is the Numbered Disambiguation Choices reset disambiguation id when no numbers in command rule):
+	let disam-cmd be player-command-substitute;
+	replace the text ")" in disam-cmd with " ";
+	unless disam-cmd matches the regular expression ".*\d.*":
+		follow the Numbered Disambiguation Choices reset disambiguables rule;
+	otherwise:
+		now player-command-substitute is disam-cmd.
+
+[After reading a command when the number of entries in list of disambiguables > 0 (this is the Numbered Disambiguation Choices reset disambiguation id when no numbers in command rule):
 	let disam-cmd be "[the player's command]";
 	replace the text ")" in disam-cmd with " ";
 	unless disam-cmd matches the regular expression ".*\d.*":
 		follow the Numbered Disambiguation Choices reset disambiguables rule;
 	otherwise:
-		change the text of the player's command to disam-cmd.
+		change the text of the player's command to disam-cmd.]
 
 Numbered Disambiguation Choices ends here.
 
@@ -90,7 +98,7 @@ Example: * Curio Shop - A setting littered with opportunities for confused input
 
 	Include Numbered Disambiguation Choices by Aaron Reed.
 
-	The Curio Shop is a room.    
+	The Curio Shop is a room.
 
 	A dog is an animal in Curio Shop. A cast iron hot dog, a hot plate, a hot iron, a dog collar, a copy of Dog Fancier magazine, and a 16mm film are in Curio Shop. A 16mm film canister is in Curio Shop.
 
