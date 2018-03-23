@@ -59,7 +59,7 @@ A don't change irretrievable rule for a thing (called the item):
 Instead of waving the letter-remover device:
 	say "Whoa, whoa! Just waving that thing around without an exact aim could do a lot of damage. Wave it AT something, or don't wave it at all."
 
-The letter-remover device is a thing. It is essential and illegal. Understand "letter remover" or "plastic device" or "device" or "blunt-nosed" as letter-remover.
+The letter-remover device is a thing. It is essential and illegal and examined. Understand "letter remover" or "plastic device" or "device" or "blunt-nosed" as letter-remover.
 	The description of the letter-remover device is "It is a blunt-nosed plastic device, about the size of a laser pointer, that can be waved at things to remove excess [current setting in upper case]s. It is not very powerful, and often fails against large items. On the other hand, it has a wide range of action: it can be set to any letter [we] choose."
 	The introduction is "These are, if not exactly cheap, hardly unknown in Atlantis."
 	Understand "remover" as the letter-remover device.
