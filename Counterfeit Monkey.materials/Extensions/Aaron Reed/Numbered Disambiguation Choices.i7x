@@ -18,8 +18,8 @@ Chapter - Setup
 Section - Disambiguation ID
 
 Every thing has a number called disambiguation id. The disambiguation id of something is usually -1.
- 
-Understand the disambiguation id property as describing a thing. 
+
+Understand the disambiguation id property as describing a thing.
 
 Section - List of disambiguables
 
@@ -90,7 +90,7 @@ Example: * Curio Shop - A setting littered with opportunities for confused input
 
 	Include Numbered Disambiguation Choices by Aaron Reed.
 
-	The Curio Shop is a room.    
+	The Curio Shop is a room.
 
 	A dog is an animal in Curio Shop. A cast iron hot dog, a hot plate, a hot iron, a dog collar, a copy of Dog Fancier magazine, and a 16mm film are in Curio Shop. A 16mm film canister is in Curio Shop.
 
