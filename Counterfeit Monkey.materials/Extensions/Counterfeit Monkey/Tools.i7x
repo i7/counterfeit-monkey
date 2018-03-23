@@ -1415,7 +1415,7 @@ Instead of putting the restoration gel on something fluid:
 		express gel-admiration.
 
 To express gel-admiration:
-	say "[one of][paragraph break]I'm starting to understand how you got into all the places you got into. Not that I judge you or your line of work, of course. [or][stopping][paragraph break]";
+	say "[one of]I'm starting to understand how you got into all the places you got into. Not that I judge you or your line of work, of course.[or][run paragraph on][stopping]";
 	record "using the gel" as achieved.
 
 Instead of putting the restoration gel on yourself:
@@ -1508,6 +1508,7 @@ To gel-convert (item - an object):
 			say "With an audible SPLORT, [the item] [become] [a list of things which proffer the item][if the destination is the location and the holder of the item is not the location] and falls to the [ground][end if]. ";
 			if description needed is true:
 				say "[parent description]";
+		say paragraph break;
 		[It's possible, in rare cases, for something to be its own parent: AS+COT -> SCOT -> COT leaves a result that is one of its own earlier ingredients. So we need to account for that: ]
 		if the item does not proffer the item:
 			move the item to the repository;
