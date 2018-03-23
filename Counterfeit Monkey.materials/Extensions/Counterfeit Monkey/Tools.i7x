@@ -94,24 +94,22 @@ Before doing something to the small knob:
 	now the noun is the letter-remover device;
 	try the current action instead.
 
-Understand "[letter-remover] [something]" as waving it at.
-
-A command-string altering rule (this is the change X-remover to letter-remover rule):
-	say "[run paragraph on]";
+To expand X-remover-string:
 	replace the text " [current setting of the letter-remover]-remover" in player-command-substitute with " letter-remover";
-	say "[run paragraph on]";
+	replace the regular expression "^[current setting of the letter-remover]-remove " in player-command-substitute with "letter-remove ".
 
 A first command-string altering rule (this is the implicitly change letter-remover setting rule):
 	now the letter-remover is static;
 	let N be player-command-substitute;
-	if N matches the regular expression ".-remover":
+	if N matches the regular expression ".-remove":
 		if N matches the regular expression "(.*) (.)-remover (.)*":
 			replace the regular expression "(.*) (.)-remover (.)*" in N with "\2";
 		otherwise if N matches the regular expression "(.*) (.)-remover":
 			replace the regular expression "(.*) (.)-remover" in N with "\2";
 		otherwise:
-			replace the regular expression "(.)-remover.*" in N with "\1";
+			replace the regular expression "(.)-remove.*" in N with "\1";
 		if the current setting of the letter-remover exactly matches the text "[N]":
+			expand X-remover-string;
 			make no decision;
 		if the number of characters in N is greater than 1:
 			make no decision;
@@ -125,6 +123,7 @@ A first command-string altering rule (this is the implicitly change letter-remov
 				parsing fails;
 			now the current setting of the letter-remover is "[N]";
 			now the letter-remover is changing;
+			expand X-remover-string;
 		otherwise:
 			say "[run paragraph on]";
 
@@ -191,6 +190,11 @@ Carry out letter-removing the topic understood from something:
 	unless the current setting of the letter-remover is noun-text:
 		try tuning the letter-remover to the topic understood;
 	try waving the letter-remover at the second noun.
+
+Understand "letter-remove [something]" as vaguely letter-removing. Vaguely letter-removing is an action applying to one visible thing.
+
+Carry out vaguely letter-removing something:
+	try waving the letter-remover at the noun.
 
 Understand "wave [something preferably held] at/toward/over/around/on/across [thing]" as waving it at. Waving it at is an action applying to one carried thing and one visible thing.
 
