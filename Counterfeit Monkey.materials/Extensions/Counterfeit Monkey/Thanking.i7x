@@ -37,11 +37,11 @@ Rule for supplying a missing noun while thanking:
 		stop the action.
 
 
-[ No-noun-thanking is a hack to make commands like MECHANIC, THANK YOU work, as the rule for supplying a missing noun above won't work in those cases ]
+[ Vaguely thanking is a hack to make commands like MECHANIC, THANK YOU work, as the rule for supplying a missing noun above won't work in those cases ]
 
-Understand "thanks" or "thanks a lot" or "thank you" or "bless you" or "ta" or "cheers" or "much obliged" as no-noun-thanking when the person asked is not the player. No-noun-thanking is an action applying to nothing.
+Understand "thanks" or "thanks a lot" or "thank you" or "bless you" or "ta" or "cheers" or "much obliged" as vaguely thanking when the person asked is not the player. Vaguely thanking is an action applying to nothing.
 
-Instead of asking somebody to try no-noun-thanking:
+Instead of asking somebody to try vaguely thanking:
 	try thanking the person asked.
 
 Instead of asking somebody to try thanking:

@@ -110,10 +110,10 @@ Check exiting when the player is in a closed container (called the current-conta
 	if the current-container is closed, stop the action.
 
 Understand the command "enter" as something new.
-Understand "enter" as no-noun-entering. No-noun-entering is an action applying to nothing.
+Understand "enter" as vaguely entering. Vaguely entering is an action applying to nothing.
 Understand "enter [thing]" or "get in/into [thing]" as entering.
 
-Carry out no-noun-entering:
+Carry out vaguely entering:
 	try going inside.
 
 Understand "get out of [thing]" or "get out [thing]" or "exit [thing]" as getting out. Getting out is an action applying to one thing.
