@@ -827,25 +827,26 @@ Brock studies us for a moment more. Then he reaches into his pocket and pulls ou
 The print the final question rule response (A) is "[full-game achievements]Would you like to "
 
 To say full-game achievements:
-	let line break needed be false;
-	let N be some text;
-	if the new church is not visited:
-		now N is "Priscilla Parsons award for winning the game without ever entering the church";
+	if the story has ended finally:
+		let line break needed be false;
+		let N be some text;
+		if the new church is not visited:
+			now N is "Priscilla Parsons award for winning the game without ever entering the church";
+			unless N is a used achievement:
+				record N as an achievement;
+				now line break needed is true;
+		if hardness is true:
+			now N is "Andra award for completing the game in hard mode";
+		else:
+			now N is "Alex Rosehip award for completing the game in easy mode";
 		unless N is a used achievement:
 			record N as an achievement;
 			now line break needed is true;
-	if hardness is true:
-		now N is "Andra award for completing the game in hard mode";
-	else:
-		now N is "Alex Rosehip award for completing the game in easy mode";
-	unless N is a used achievement:
-		record N as an achievement;
-		now line break needed is true;
-	if the oil-paintings are stolen:
-		record "Roman 'Sticky' Fingerstain Award for impromptu art theft" as an achievement;
-		now line break needed is true;
-	if line break needed is true:
-		say line break.
+		if the oil-paintings are stolen:
+			record "Roman 'Sticky' Fingerstain Award for impromptu art theft" as an achievement;
+			now line break needed is true;
+		if line break needed is true:
+			say line break.
 
 
 Schedule and Time ends here.
