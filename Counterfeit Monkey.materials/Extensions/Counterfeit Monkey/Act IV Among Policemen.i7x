@@ -464,7 +464,7 @@ Instead of going to Bureau hallway from the Antechamber when the player encloses
 		stop the action;
 	if the player does not enclose the invitation:
 		now already caught is true;
-		say "[line break]The secretary looks at the pass, then looks at us. 'And the purpose of your visit?' [paragraph break][We] say [we] [are] here at invitation to examine the T-inserter. She asks where the invitation is. [We] admit [we] don't have it just at the moment. It is possible that I come off as particularly dishonest in my nervous attempts to convince her.";
+		say "[line break]The secretary looks at the pass, then looks at us. 'And the purpose of your visit?' [paragraph break][We] say [we] [are] here at invitation to examine the T-inserter. She asks where the invitation is. [We] admit [we] don't have it just at the moment. It is possible that I come off as particularly dishonest in my nervous attempts to convince her. She sends the room into lockdown.";
 		end the story saying "Our detention goes badly";
 		stop the action;
 	try the secretary looking at the pass through the scope;
