@@ -2860,7 +2860,8 @@ lie about visiting is a performative quip.
 [because otherwise we get interference with the LIE ON THING command from Postures:]
 A command-string altering rule when the current interlocutor is the backpacking girl (this is the replace lie with lieabout rule):
 	if the player's command matches "lie":
-		now player-command-substitute is "lieabout";
+		if lie about our origins is available or lie about visiting is available:
+			now player-command-substitute is "lieabout";
 	otherwise if the player's command includes "lie about":
 		now player-command-substitute is "lieabout".
 
