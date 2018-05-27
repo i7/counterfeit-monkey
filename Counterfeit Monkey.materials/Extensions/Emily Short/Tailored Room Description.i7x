@@ -2,8 +2,8 @@ Version 13/160717 of Tailored Room Description by Emily Short begins here.
 
 "An extension to go with Room Description Control, providing a different style of room description than the default. Parenthetical remarks such as (open) and (in which are...) are omitted in favor of full English sentences. Removes the requirement for Text Variations."
 
-Include Room Description Control by Emily Short. 
- 
+Include Room Description Control by Emily Short.
+
 
 Section 1 - Rankings
 
@@ -19,17 +19,17 @@ Definition: a thing is flexibly-described if the flexible appearance of it is no
 A ranking rule for something (called special-target) which is not in the holder of the player:
 	decrease the description-rank of the special-target by 2.
 
-A ranking rule for a flexibly-described thing (called special-target): 
+A ranking rule for a flexibly-described thing (called special-target):
 	increase description-rank of the special-target by 4.
 
 Definition: a thing is initially-described if it is not handled and its initial appearance is not "".
 
-A ranking rule for an initially-described thing (called special-target): 
+A ranking rule for an initially-described thing (called special-target):
 	increase description-rank of the special-target by 5.
-	
+
 A ranking rule for something (called special-target):
-	let N be the number of mentionable things enclosed by special-target; 
-	increase the description-rank of the special-target by N.    
+	let N be the number of mentionable things enclosed by special-target;
+	increase the description-rank of the special-target by N.
 
 
 Section 2 - The current-paragraph
@@ -43,18 +43,18 @@ A platter is on the table.
 current-paragraph is a thing. Referencing relates one thing to various things. The verb to reference (it references, he references, he referenced, it is referenced, it is referencing) implies the referencing relation.
 
 Before printing the name of something (called special-target) while writing a paragraph about:
-	now the current-paragraph references special-target. 
+	now the current-paragraph references special-target.
 
 Before writing a paragraph about something:
-	now current-paragraph does not reference anything;   
+	now current-paragraph does not reference anything;
 
 Section 3 - Writing Paragraph Rules
-		
+
 Rule for writing a paragraph about a deeply dull thing (called special-target) (this is the ordinary items rule):
 	carry out the disclosing contents activity with the holder of the special-target;
 	carry out the giving-surrounding-details-for activity with the special-target;
 	now held-break is true;
-	say "[run paragraph on]"; 
+	say "[run paragraph on]";
 
 Definition: a thing is deeply dull if it lacks relative interest.
 
@@ -77,13 +77,13 @@ To decide whether (special-target - a thing) lacks relative interest:
 		end repeat;
 	end if;
 	decide yes.
-	
+
 Rule for writing a paragraph about something (called special-target) (this is the standard paragraphs rule):
-	now the special-target is mentioned;  
+	now the special-target is mentioned;
 	set pronouns from the special-target;
 	carry out the writing a topic sentence about activity with the special-target;
 	if the holder of the special-target is not the location and the holder of the special-target is not referenced by current-paragraph:
-		carry out the disclosing exterior activity with the special-target; 
+		carry out the disclosing exterior activity with the special-target;
 	carry out the giving-surrounding-details-for activity with the special-target;
 	now held-break is true;
 	say "[run paragraph on]";
@@ -96,7 +96,7 @@ Rule for giving-surrounding-details-for something (called the special-target) (t
 		now every thing contained by the second special-target is mentioned;
 		now every thing supported by the second special-target is mentioned;
 		now every thing held by the second special-target is mentioned;
-		now every thing which is part of the second special-target is mentioned; 
+		now every thing which is part of the second special-target is mentioned;
 
 Held-break is a truth state that varies. Held-break is false.
 
@@ -106,17 +106,17 @@ Last after writing a paragraph about something when held-break is true:
 
 Writing a topic sentence about something is an activity.
 
-Rule for writing a topic sentence about something (called the special-target):  
+Rule for writing a topic sentence about something (called the special-target):
 	if the special-target is initially-described
 	begin;
-		say initial appearance of the special-target; say " "; 
+		say initial appearance of the special-target; say " ";
 	otherwise if the special-target is flexibly-described;
-		say flexible appearance of the special-target; say " "; 
-	otherwise; 
+		say flexible appearance of the special-target; say " ";
+	otherwise;
 		now the current-subject is special-target;
-		choose a random row in the current-topic-sentences-table; 
+		choose a random row in the current-topic-sentences-table;
 		say "[disclosure entry][run paragraph on]";
-	end if; 
+	end if;
 	now the current-paragraph references the special-target.
 
 
@@ -125,9 +125,9 @@ current-exterior is an object that varies.
 first-subject is an object that varies.
 count-of-mentionable-contents is a number that varies.
 count-of-mentioned-contents is a number that varies.
-	
+
 Definition: a thing is surprising if it is mentionable.
-	  
+
 Definition: a supporter is surprising if it supports a mentionable thing.
 
 Definition: a container is surprising if it contains a mentionable thing.
@@ -137,7 +137,7 @@ Definition: a person is surprising:
 	if it wears a mentionable thing, yes.
 
 Disclosing contents of something is an activity. Disclosing exterior of something is an activity.
- 
+
 Rule for disclosing exterior of something (called special-target) (this is the standard-exterior rule):
 	let the chosen table be the current-NE-table;
 	now current-subject is special-target; [so that printing routines can refer to it]
@@ -152,12 +152,12 @@ Rule for disclosing exterior of something (called special-target) (this is the s
 		now count-of-mentioned-contents is the number of mentioned things held by the current-exterior;
 		now nesting is false;
 		if the holder of the current-subject is a person, now the chosen table is the current-NC-table;
-		otherwise now the chosen table is the current-NE-table; 
+		otherwise now the chosen table is the current-NE-table;
 		choose a random row in the chosen table;
 		say "[disclosure entry][run paragraph on]";
 		if the count-of-mentionable-contents is greater than 0 and the current-exterior is in a room and the current-subject is the first-subject:
 			choose a random row in the current-ao-table;
-			say "[disclosure entry][run paragraph on]"; 
+			say "[disclosure entry][run paragraph on]";
 		otherwise if the current-exterior is not in a room:
 			choose a random row in the current-connectives-table;
 			say "[disclosure entry][run paragraph on]";
@@ -186,7 +186,7 @@ To say in-on (N - a thing):
 		say "part of [the N]";
 	otherwise if N is a container;
 		say "in [the N]";
-	otherwise; 
+	otherwise;
 		say "on [the N]";
 	end if;
 
@@ -196,24 +196,24 @@ To say in-on (N - a thing) as a possibly-known item:
 		say "part of ";
 	otherwise if N is a container;
 		say "in ";
-	otherwise; 
+	otherwise;
 		say "on ";
-	end if; 
+	end if;
 	say N as a possibly-known item.
 
-Rule for disclosing contents of a room (called special-target) (this is the disclosing-rooms rule): 
+Rule for disclosing contents of a room (called special-target) (this is the disclosing-rooms rule):
 	now the current-subject is special-target;
 	now count-of-mentionable-contents is the number of mentionable things held by the special-target;
 	now count-of-mentioned-contents is the number of mentioned things held by the special-target;
 	choose a random row in the current-room-content-table;
-	say "[disclosure entry][run paragraph on]". 
-	 
-Rule for disclosing contents of something (called special-target) (this is the disclosing-contents-of-holders rule): 
+	say "[disclosure entry][run paragraph on]".
+
+Rule for disclosing contents of something (called special-target) (this is the disclosing-contents-of-holders rule):
 	now the current-subject is special-target;
 	now count-of-mentionable-contents is the number of mentionable things held by the special-target;
 	now count-of-mentioned-contents is the number of mentioned things held by the special-target;
 	choose a random row in the relevant table;
-	say "[disclosure entry][run paragraph on]". 
+	say "[disclosure entry][run paragraph on]".
 
 To say optional also:
 	if count-of-mentioned-contents is greater than zero, say "also ".
@@ -222,7 +222,7 @@ To say mentioned-are:
 	otherwise say "is".
 To say mentionable-are:
 	if the count-of-mentionable-contents is greater than one, say "are";
-	otherwise say "is". 
+	otherwise say "is".
 
 Section 4 - Template Tables
 
@@ -264,12 +264,12 @@ disclosure
 
 Table of Nesting Exteriors
 disclosure
-"[in-on the current-exterior as a possibly-known item][if the current-exterior holds the player] beside you[end if]" 
+"[in-on the current-exterior as a possibly-known item][if the current-exterior holds the player] beside you[end if]"
 
 current-room-content-table is a table-name that varies. current-room-content-table is the Table of Room Content Disclosures.
 
 Table of Room Content Disclosures
-disclosure 
+disclosure
 "You can [optional also]see [a list of mentionable things *in the current-subject] [if current-subject is the location]here[otherwise]in [the current-subject][end if]. ".
 
 current-person-content-table is a table-name that varies. current-person-content-table is the Table of Person Content Disclosures.
@@ -308,7 +308,7 @@ disclosure
 current-supporter-content-table is a table-name that varies. current-supporter-content-table is the Table of Supporter Content Disclosures.
 
 Table of Supporter Content Disclosures
-disclosure 
+disclosure
 "On [the current-subject] [is-are a list of mentionable things *in the current-subject]. "
 "There [mentionable-are] [optional also][a list of mentionable things *in the current-subject] on [the current-subject]. "
 
@@ -328,7 +328,7 @@ disclosure
 
 Section 5 - Excluding concealed items
 
-Rule for deciding whether all includes something (called special-target) while taking (this is the excluding concealed items rule): 
+Rule for deciding whether all includes something (called special-target) while taking (this is the excluding concealed items rule):
 	now special-target is marked for listing;
 	follow the mentioning tedious things rule;
 	follow the determining concealment rule;
@@ -362,7 +362,7 @@ Initial appearance is a description of something that is printed when the player
 	The initial appearance of the cup is "Someone has casually tossed away a paper cup here."
 
 so that after being moved it will simply be described in the collection of random objects; but
-	
+
 	The flexible appearance of the tripod is "A tripod is set up [if the location is indoors]on the floor[otherwise]on the ground[end if]."
 
 so that the tripod will always have its own treatment, even if moved from room to room. If an item has both an initial appearance and a flexible appearance, the initial appearance will be consulted until the item is moved, and the flexible appearance afterward.
@@ -370,14 +370,14 @@ so that the tripod will always have its own treatment, even if moved from room t
 Section: Overriding the default for specific objects
 
 The entire protocol can be overwritten by providing a more particular rule for writing a paragraph about for specific items; so for instance
-	
+
 	Rule for writing a paragraph about a person (called dude):
 		say "[The dude] is standing way too close to you."
 
 would print this sentence and omit all other results.
 
 The printing of an item's holder is managed by the disclosing exterior activity. We can change the way this is handled by writing a new rule for disclosing exterior of something. For instance:
-	
+
 	Rule for disclosing exterior of tripod:
 		say "[The tripod] is perched awkwardly on [the holder of the tripod]. "
 
@@ -390,7 +390,7 @@ The printing of an item's contents is managed by the disclosing contents activit
 
 Again, this rule should produce output ending in a period and space, allowing for further sentences to follow without pause.
 
-Tailored Room Descriptions also excludes from TAKE ALL any items currently being concealed by our concealment rules. 
+Tailored Room Descriptions also excludes from TAKE ALL any items currently being concealed by our concealment rules.
 
 Chapter: Extra and Related Features
 
@@ -430,7 +430,7 @@ Example: * Doors and doors - Writing paragraphs about doors to generate sentence
 
 	*: "Doors and doors"
 
-	Include Tailored Room Description by Emily Short. 
+	Include Tailored Room Description by Emily Short.
 
 	The Jurassic Room is a room. The white door is a door. It is north of Jurassic and south of Cretaceous.
 
@@ -439,7 +439,7 @@ Example: * Doors and doors - Writing paragraphs about doors to generate sentence
 	The purple door and the grey door are doors. The purple door is south of the Triassic and north of the Museum Forecourt. The grey door is southwest of the Triassic and northeast of the Parking Lot.
 
 	Definition: a door is deeply dull: no.
-	
+
 	Rule for writing a paragraph about a door:
 		let N be the number of mentionable doors;
 		let O be the number of mentionable open doors;
@@ -447,12 +447,12 @@ Example: * Doors and doors - Writing paragraphs about doors to generate sentence
 		if N is O
 		begin;
 			say "[all O of them are]open.";
-		otherwise if O is greater than 0; 
+		otherwise if O is greater than 0;
 			say "[The list of open doors referenced by the current-paragraph] [if O is 1]is[otherwise]are[end if] open.";
-		otherwise; 
+		otherwise;
 			say "[all N of them are]closed.";
 		end if.
-	
+
 	To say all (N - a number) of them are:
 		if N is 0
 		begin;
@@ -464,7 +464,7 @@ Example: * Doors and doors - Writing paragraphs about doors to generate sentence
 		otherwise;
 			say "[one of]They are all [or]They're all [or]Every one of them is [or]All [N in words] are [purely at random]";
 		end if.
-	
+
 	Test me with "open white door / look / open black door / look / n / close door / look / open door / s / s / open grey door / look / open purple door / look".
 
 Example: * Boatman - A sample involving modified descriptions for items in an enterable container with the player.
@@ -473,24 +473,24 @@ Example: * Boatman - A sample involving modified descriptions for items in an en
 
 	 Include Tailored Room Description by Emily Short.
 
-	The Salt Lake is a room. 
+	The Salt Lake is a room.
 
 	The rowboat is an enterable container in the Salt Lake. Understand "boat" as the rowboat. It contains a boatman, a pole, and a bottle of fresh water. The boatman is a man.
 
-	The Salt Lake contains a single flipper. 
+	The Salt Lake contains a single flipper.
 
 	A ranking rule for the boatman: increase the description-rank of the boatman by 10.
- 	
+
 	Rule for writing a paragraph about the boatman when the boatman is in the rowboat:
 		if entering the rowboat, say "[The boatman] leans to one side to provide balance as you scramble in. [paragraph break]";
 		otherwise say "[The boatman] sits in [the rowboat], looking grim. [paragraph break]"
 
 	Rule for writing a paragraph about something while entering a container (called special-target):
 		say "In [the special-target] with you, you see [the list of mentionable things *in the special-target]."
-	
+
 	Rule for writing a paragraph about a deeply dull thing which is in the rowboat when the player is in the rowboat:
 		say "In the bottom of the boat, you see [a list of deeply dull mentionable things *in the rowboat]. [paragraph break]".
-	
+
 	Rule for writing a paragraph about a deeply dull thing which is in the Salt Lake:
 		say "Floating on the impossibly buoyant water: [a list of deeply dull mentionable things *in the Salt Lake]. [paragraph break]".
 
@@ -511,11 +511,11 @@ Example: ** Introductions - A system whereby both things and rooms can be given 
 		carry out the writing a topic sentence about activity with the special-target;
 		introduce the special-target;
 		say paragraph break.
-		
+
 	After examining an as-yet-unknown introduceable thing (called special-target):
 		introduce the special-target;
 		say paragraph break.
-	
+
 	To introduce (special-target - an object):
 		now the special-target is introduced;
 		say "[introduction of the special-target]".
@@ -528,74 +528,74 @@ Example: ** Introductions - A system whereby both things and rooms can be given 
 
 	The first time looking rule is listed after new object description rule in the carry out looking rules.
 
-	This is the first time looking rule: 
+	This is the first time looking rule:
 		if location is introduceable and the location is as-yet-unknown
 		begin;
 			introduce the location;
 			say paragraph break;
 		end if.
-	
+
 	A description-concealing rule:
-		now every thing which is held by an as-yet-unknown introduceable person is not marked for listing. 
-	
+		now every thing which is held by an as-yet-unknown introduceable person is not marked for listing.
+
 	Understand "think about [any introduceable introduced thing]" or "remember [any introduceable introduced thing]" as thinking about. Understand the commands "recall" or "consider" or "recollect" or "ponder" or "contemplate" as "remember".
 
 	Thinking about is an action applying to one visible thing.
 
-	Carry out thinking about: 
+	Carry out thinking about:
 		introduce the noun;
 		say paragraph break.
-	
+
 	Section 2 - The Scenario
 
-	The Maremma Breeding Ground is a room. 
+	The Maremma Breeding Ground is a room.
 
-	Logar is an animal in Maremma Breeding Ground. "Logar stands here, waiting for instructions." 
+	Logar is an animal in Maremma Breeding Ground. "Logar stands here, waiting for instructions."
 		The description is "A nine-month puppy, Logar is nonetheless a pretty sizable dog already."
 		The introduction is "He's your latest acquisition in a large collection of work dogs."
-	
+
 	Logar carries a bone.
 		The description of the bone is "Pretty well chewed already."
 		The introduction of the bone is "That bone came out of a leg of lamb, but there's not much left on it."
-	
+
 	Test me with "z / look / x logar / think about logar / x bone".
 
 Example: ** Gobs of Mayonnaise - A scenario with various objects competing for our attention.
 
 	*: "Gobs of Mayonnaise"
 
-	Include Tailored Room Description by Emily Short.  
+	Include Tailored Room Description by Emily Short.
 
 	The Farmhouse Kitchen is a room. "This place bears testament to its owners[apostrophe] patriotism, or possibly their devotion to Women's Day magazine. Pseudo-colonial decor abounds, including a multitude of tiny 13-star flags painted just under the ceiling. A heavy pedestal is located immediately opposite the door." The tiny 13-star flags are scenery in the Farmhouse Kitchen. "Stencilled all around the ceiling."
 
-	The chair is an enterable supporter in the Farmhouse Kitchen. It is pushable between rooms. 
-	
+	The chair is an enterable supporter in the Farmhouse Kitchen. It is pushable between rooms.
+
 	[And speaking of the possibility that there are people around:]
 
 	Jones is a man on the chair. Persuasion rule: persuasion succeeds. [For the sake of this example, we'll make Jones an obedient type.]
 
 	[Now, supposing we want people (all else being equal) to get prominent mention:]
 
-	A ranking rule for a person (called special-target): 
+	A ranking rule for a person (called special-target):
 		increase the description-rank of the special-target by 10.
 
 	[But not as prominent as any treasures or special articles:]
 
 	A treasure is a kind of thing. A ranking rule for a treasure (called special-target): increase the description-rank of the special-target by 75.
 
-	The pedestal is a supporter in Farmhouse Kitchen. It is scenery. On the pedestal is a bust of Washington. The bust is a treasure. The flexible appearance of the bust is "A bust of Washington glares proudly over the room[if the holder of the bust is not a room] from [the holder of the bust][otherwise]... from about knee height[end if]. " 
+	The pedestal is a supporter in Farmhouse Kitchen. It is scenery. On the pedestal is a bust of Washington. The bust is a treasure. The flexible appearance of the bust is "A bust of Washington glares proudly over the room[if the holder of the bust is not a room] from [the holder of the bust][otherwise]... from about knee height[end if]. "
 
-	The table is in the Farmhouse Kitchen. "A rough-hewn table uses up an entire corner of the room." 
+	The table is in the Farmhouse Kitchen. "A rough-hewn table uses up an entire corner of the room."
 
 	[Grouping items together is permitted:]
 
 	A utensil is a kind of thing. A knife is a utensil. A fork is a utensil. The knife and the fork are on the table.
 
-	Before listing contents: initially group utensils together. Before grouping together utensils: say "a place setting (consisting of ". After grouping together utensils: say ")". 
+	Before listing contents: initially group utensils together. Before grouping together utensils: say "a place setting (consisting of ". After grouping together utensils: say ")".
 
 	[We might also want to override the way contents of items are described in particular cases:]
 
-	On the table is a vase. In the vase is a flower.  
+	On the table is a vase. In the vase is a flower.
 
 	Rule for disclosing contents of the vase when at least two things are in the vase:
 		if something in the vase is mentioned, say "Besides [the list of mentioned things *in the vase] you can see in the vase [a list of mentionable things *in the vase]. ";
@@ -606,8 +606,8 @@ Example: ** Gobs of Mayonnaise - A scenario with various objects competing for o
 	[But let's say that when the diamond is in the glass, we don't notice it -- it's just so much more transparent stuff.]
 
 	A description-concealing rule:
-		if the diamond is in the glass, now the diamond is not marked for listing. 
-	
+		if the diamond is in the glass, now the diamond is not marked for listing.
+
 	The Closet is west of the Farmhouse Kitchen. The Closet contains a plastic box. The plastic box is closed and openable and transparent. In it are a rubber chicken and a light bulb.
 
 	[Since our current scheme doesn't print things like (open) or (closed), we'll provide our own substitute for the plastic box:]
@@ -620,9 +620,9 @@ Example: ** Gobs of Mayonnaise - A scenario with various objects competing for o
 	[Now, supposing we don't want anything on the shelf to be visible when the player isn't on the chair:]
 
 	A description-concealing rule when the player is not on the chair:
-		now every thing enclosed by the high shelf is not marked for listing. 
+		now every thing enclosed by the high shelf is not marked for listing.
 
 	[But we do want the jug to stand out when we're in sight of it:]
 
-	A ranking rule for the jug: 
-		increase  description-rank of the jug by 100.    
+	A ranking rule for the jug:
+		increase  description-rank of the jug by 100.
