@@ -20,7 +20,7 @@ The description of the temporary barrier is "It's a high metal fence, supported 
 Instead of looking under the temporary barrier:
 	say "[The temporary barrier] is set flush with the ground. There is certainly not enough room to crawl underneath."
 
-Instead of climbing the temporary barrier:
+Instead of climbing or standing up on or lying on or sitting on the temporary barrier:
 	say "The links of the fence are too close to offer easy purchase for feet, and the fence is high and barbed on top. They really don't want anyone coming through uninvited."
 
 Instead of pulling or pushing or turning or attacking the temporary barrier:
