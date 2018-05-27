@@ -126,10 +126,7 @@ Instead of an actor standing up (this is the convert standing up rule):
 		rule succeeds;
 	otherwise:
 		if the player is the actor:
-			if the holder of the actor is a thing:
-				say "You can't lie down on [the holder of the actor].";
-			otherwise:
-				say "There's nothing to stand on.";
+			say "There's nothing to stand on.";
 		rule fails.
 
 Section 6 - Disambiguating Postures
