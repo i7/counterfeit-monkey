@@ -31,22 +31,55 @@ Lying on is an action applying to one thing.
 Standing up on is an action applying to one thing.
 
 Carry out an actor sitting on (this is the standard carry out sitting on rule):
-	if the holder of the actor is not the noun, silently try the actor entering the noun;
 	if the holder of the actor is the noun:
-		if the actor is not seated, try the actor taking position seated;
-		otherwise follow the report taking position rules.
+		if the actor is seated:
+			say "[The actor] [are] already sitting on [the noun].";
+		otherwise:
+			try the actor taking position seated;
+	otherwise:
+		if the noun allows seated:
+			silently try the actor entering the noun;
+			if the holder of the actor is the noun:
+				if the actor is not seated:
+					try the actor taking position seated;
+				otherwise:
+					follow the report taking position rules;
+		otherwise:
+			say "[The actor] can't sit on [the noun].";
 
 Carry out an actor lying on (this is the standard carry out lying on rule):
-	if the holder of the actor is not the noun, silently try the actor entering the noun;
 	if the holder of the actor is the noun:
-		if the actor is not reclining, try the actor taking position reclining;
-		otherwise follow the report taking position rules.
+		if the actor is reclining:
+			say "[The actor] [are] already reclining on [the noun].";
+		otherwise:
+			try the actor taking position reclining;
+	otherwise:
+		if the noun allows reclining:
+			silently try the actor	entering the noun;
+			if the holder of the actor is the noun:
+				if the actor is not reclining:
+					try the actor taking position reclining;
+				otherwise:
+					follow the report taking position rules;
+		otherwise:
+			say "[The actor] can't lie on [the noun].";
 
 Carry out an actor standing up on (this is the standard carry out standing up on rule):
-	if the holder of the actor is not the noun, silently try the actor entering the noun;
 	if the holder of the actor is the noun:
-		if the actor is not standing, try the actor taking position standing;
-		otherwise follow the report taking position rules.
+		if the actor is standing:
+			say "[The actor] [are] already standing on [the noun].";
+		otherwise:
+			try the actor taking position standing;
+	otherwise:
+		if the noun allows standing:
+			silently try the actor entering the noun;
+			if the holder of the actor is the noun:
+				if the actor is not standing:
+					try the actor taking position standing;
+				otherwise:
+					follow the report taking position rules;
+		otherwise:
+			say "[The actor] can't stand on [the noun].";
 
 Section 5 - Sitting, Lying, and Standing with Default Objects
 
@@ -78,11 +111,10 @@ Instead of an actor lying down (this is the convert lying down rule):
 		if the posture of the actor is reclining:
 			rule succeeds;
 	otherwise:
-		if the player is the actor:
-			if the holder of the actor is a thing:
-				say "You can't lie down on [the holder of the actor].";
-			otherwise:
-				say "There's nothing to lie on.";
+		if the holder of the actor is a thing:
+			say "[The actor] can't lie down on [the holder of the actor].";
+		otherwise:
+			say "There's nothing here to lie on.";
 		rule fails.
 
 To decide whether (N - a person) can sit here:
@@ -105,29 +137,28 @@ Instead of an actor sitting down (this is the convert sitting down rule):
 		if the posture of the actor is seated:
 			rule succeeds;
 	otherwise:
-		if the player is the actor:
-			if the holder of the actor is a thing:
-				say "You can't sit down on [the holder of the actor].";
-			otherwise:
-				say "There's nothing to sit on.";
+		if the holder of the actor is a thing:
+			say "[The actor] can't sit down on [the holder of the actor].";
+		otherwise:
+			say "There's nothing here to sit on.";
 		rule fails.
 
 Instead of an actor standing up (this is the convert standing up rule):
-	if the holder of the actor is a thing and the holder of the actor allows standing:
+	let the source be the holder of the actor;
+	if the source is not the location:
+		if the posture of the actor is standing:
+			say "[The actor] [are] already standing.";
+			the rule succeeds;
+		otherwise:
+			try the actor exiting;
+			if the holder of the actor is the source:
+				rule fails;
+		rule succeeds;
+	otherwise:
 		try the actor taking position standing;
 		if the posture of the actor is standing:
 			rule succeeds;
 		rule fails;
-	otherwise if the holder of the actor is not the location:
-		let the source be the holder of the actor;
-		try the actor exiting;
-		if the holder of the actor is the source:
-			rule fails;
-		rule succeeds;
-	otherwise:
-		if the player is the actor:
-			say "There's nothing to stand on.";
-		rule fails.
 
 Section 6 - Disambiguating Postures
 
@@ -157,28 +188,19 @@ Taking position is an action applying to one posture.
 
 Check an actor taking position (this is the can't use inappropriate postures rule):
 	if the holder of the actor is not a room and the holder of the actor does not allow the posture understood:
-		if the actor is the player:
-			say "You can't take that position [in-on the holder of the actor].";
-		otherwise if the actor is visible:
-			say "[The actor] can't take that position.";
+		say "[The actor] can't take that position [in-on the holder of the actor].";
 		stop the action.
 
 Check an actor taking position (this is the can't use already used posture rule):
 	if the posture understood is the posture of the actor:
-		if the actor is the player:
-			say "You are already [the posture understood].";
-		otherwise:
-			if the actor is visible, say "[The actor] is already [the posture understood].";
+		say "[The actor] [are] already [the posture understood].";
 		stop the action.
 
 Carry out an actor taking position (this is the standard taking position rule):
 	now the posture of the actor is the posture understood.
 
-Report someone taking position (this is the stranger position report rule rule):
-	say "[The actor] is now [the posture of the actor][if the holder of the actor is not the location of the actor] [in-on the holder of the actor][end if]."
-
-Report taking position (this is the standard position report rule):
-	say "You are now [the posture of the player][if the holder of the player is not the location] [in-on the holder of the player][end if]."
+Report an actor taking position (this is the standard position report rule):
+	say "[The actor] [are] now [the posture of the actor][if the holder of the actor is not the location of the actor] [in-on the holder of the actor][end if]."
 
 To say in-on (item - a thing):
 	if the item is a container, say "in [the item]";

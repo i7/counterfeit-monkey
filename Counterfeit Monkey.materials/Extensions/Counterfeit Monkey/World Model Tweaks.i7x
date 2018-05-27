@@ -1640,13 +1640,6 @@ Instead of burning something in the presence of a stove:
 	otherwise:
 		say "It's true there's a handy stove here, but I don't see the point."
 
-[And fix posture reporting to reflect person...]
-
-The standard position report rule is not listed in any rulebook.
-
-Report taking position (this is the new standard position report rule):
-	say "[We] [are] now [the posture of the player][if the holder of the player is not the location] [in-on the holder of the player][end if]."
-
 [And this is provided entirely as a way to redirect attempts to sit at the piano or a desk or table]
 Understand "sit at [something]" as sitting at. Sitting at is an action applying to one thing.
 
