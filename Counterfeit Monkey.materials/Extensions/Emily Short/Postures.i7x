@@ -1,6 +1,6 @@
-Postures by Emily Short begins here.
+Version 2/180527 of Postures by Emily Short begins here.
 
-"Postures defines three postures -- seated, standing, and reclining -- and allows pieces of furniture to specify which postures are possible and preferred when the player is on those furnishings." 
+"Postures defines three postures -- seated, standing, and reclining -- and allows pieces of furniture to specify which postures are possible and preferred when the player is on those furnishings."
 
 Section 1 - The Concenpt
 
@@ -64,7 +64,7 @@ To decide whether (N - a person) can lie here:
 	if the location of N is posture-friendly:
 		yes;
 	no.
-	
+
 Instead of an actor lying down (this is the convert lying down rule):
 	if the holder of the actor contains something (called target) which allows reclining:
 		if the holder of the actor contains an enterable reclining thing (called the better target):
@@ -114,7 +114,7 @@ Instead of an actor sitting down (this is the convert sitting down rule):
 
 Instead of an actor standing up (this is the convert standing up rule):
 	if the holder of the actor is a thing and the holder of the actor allows standing:
-		try the actor taking position standing; 
+		try the actor taking position standing;
 		if the posture of the actor is standing:
 			rule succeeds;
 		rule fails;
@@ -226,11 +226,13 @@ Each piece of furniture comes with a range of possible postures, which can be ex
 
 	The bunk bed allows seated and reclining.
 
-This definition would say that we're allowed to sit or lie down on the bunk bed, but not to stand up on it. Player attempts to 
+This definition would say that we're allowed to sit or lie down on the bunk bed, but not to stand up on it. Player attempts to
 
 	>STAND ON BUNK BED
 
 will be rejected with
+
+	You can't take that position on the bunk bed.
 
 Section: Preferred Postures
 
@@ -262,7 +264,13 @@ This feature determines whether a player can take postures other than standing w
 
 	>LIE DOWN
 
-without naming where he wants to lie down. If the room is posture-friendly, he will lie down in the location. If it's posture-unfriendly, the game will look for an available piece of furniture that allows reclining (ideally one whose preferred posture is reclining) and try to lie on that, instead.
+without naming where he wants to lie down. The game will first look for an available piece of furniture that allows reclining (ideally one whose preferred posture is reclining) and try to lie on that, but if it finds none and the room is posture-friendly, the player will lie down on the floor. If the room is posture-unfriendly and there is no suitable piece of furniture, the game will be rejected with
+
+	There's nothing to lie on.
+
+Section: Change Log
+
+Version 2/180527 fixes a run-time error that could occur when typing LIE. It also always looks for a reasonable piece of furniture to sit or lie down on in a room rather than defaulting to the floor when typing just SIT or LIE, even if the room is posture-friendly.
 
 Example: * Muddy Lawn - A room where the player can't sit on the ground, plus a folding chair, a safer-to-sit-on driveway, and the ubiquitous guinea-pig Clark.
 
