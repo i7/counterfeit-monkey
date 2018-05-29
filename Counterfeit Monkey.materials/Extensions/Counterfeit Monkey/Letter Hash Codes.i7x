@@ -234,6 +234,7 @@ An ode has hash code 16408. [K130_ode]
 A officers has hash code 409908. [K10_man]
 A output tray has hash code 18530305. [K6_supporter]
 A pa has hash code 32769. [K133_pa]
+Some plural-pas have hash code 294913.
 The painted Moorish patterns has hash code 979353. [K2_thing]
 A paper-drawer has hash code 4358169. [K5_container]
 A par has hash code 163841. [K134_par]

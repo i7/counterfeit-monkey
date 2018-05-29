@@ -1533,10 +1533,13 @@ This is the don't-leave-the-unleavable rule:
 			reduce iron-pans;
 			if the i-pan is marked-visible:
 				now the needed-thing is the i-pan;
-		try taking the needed-thing;
-		if the player does not carry the needed-thing:
-			say "I don't think [we] should leave without [the needed-thing].";
-			the rule fails;
+		if the needed-thing is a person:
+			move needed-thing to the holder of the player;
+		otherwise:
+			try taking the needed-thing;
+			if the player does not carry the needed-thing:
+				say "I don't think [we] should leave without [the needed-thing].";
+				the rule fails;
 		let the needed-thing be the unleavable.
 
 A room can be publicly-available or privately-controlled. A room is usually publicly-available.

@@ -1779,6 +1779,8 @@ A last check shooting something with the anagramming gun:
 	if the detritus is a tear:
 		if there is an alterna-tear (called the goal) in the repository:
 			now the detritus is the goal;
+	if the detritus is a sap or the detritus is some plural-pas:
+		now the detritus is the spa.
 
 Carry out shooting something with the anagramming gun:
 	move the detritus to the holder of the noun;

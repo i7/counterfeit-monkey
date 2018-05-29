@@ -711,7 +711,7 @@ The description of a cod is "There's about twelve pounds of fish-and-chips-in-wa
 The code is scenery. The description of the code is "A bit of paper on which is written '305.'" Understand "bit" or "paper" or "bit of paper" or "numbers" or "number" as the code.
 
 
-The heft of the complicit shark is 10. The description of complicit shark is "It's dead, naturally. And a shark carcass is a large and unwieldy sort of thing to have lying around. There's a gash in one side that must have notionally killed it. Is the shark complicit in its own death? Or was there some other bit of shark-cooperation at work here? Hard to tell."
+The heft of the complicit shark is 8. The description of complicit shark is "It's dead, naturally. And a shark carcass is a large and unwieldy sort of thing to have lying around. There's a gash in one side that must have notionally killed it. Is the shark complicit in its own death? Or was there some other bit of shark-cooperation at work here? Hard to tell."
 	The scent-description of the complicit shark is "rotting fish".
 	Understand "gash" as the complicit shark.
 
@@ -760,7 +760,6 @@ The description of a CPU is "A central processing unit, the brains of pretty muc
 The cratering is r-abstract. The indefinite article is "some". The heft is 0. The description is "It's an image, light as air, of the moon and the craters on it."
 
 The crew-group is a privately-named plural-named person. The description of the crew-group is "Five (or six? it's extremely hard to count) swarthy sailors. They look buff and burly and have very thick eyebrows." The heft of the crew-group is 6.  The printed name of the crew-group is "crew". Understand "crew" as the crew-group.
-
 
 [Persuasion rule for asking the crew-group to try doing something:
 	rule succeeds.]
@@ -1693,12 +1692,24 @@ Instead of taking the oyster turd:
 
 Section 9 - Pa
 
-The description of a pa is "He's a Norman Rockwell figure: gruff, upstanding, honest, not a big talker. Doesn't actually come with a child attached, but it stands to reason he would have a large-ish brood of them." Understand "figure" or "man" or "guy" or "gentleman" as the pa.
+The description of a pa is "He's a Norman Rockwell figure: gruff, upstanding, honest, not a big talker. Doesn't actually come with a child attached, but it stands to reason he would have a large-ish brood of them." Understand "figure" or "man" or "guy" or "gentleman" or "singular-pa" as the pa.
 	The scent-description of a pa is "shaving cream".
 	The greeting of a pa is "'Hello there, young lady,' says the pa."
 
-Rule for writing a paragraph about a pa:
-	say "The pa you summoned is standing nearby, looking slightly confused.[if there is a mentionable thing in location][line break][end if]"
+Rule for writing a paragraph about a pa (called item):
+	say "The pa you summoned is standing nearby, looking slightly confused.[if there is a mentionable unmentioned thing which is not item in location][line break][end if]";
+	now item is mentioned.
+
+After reading a command (this is the replace plurals rule):
+	if the player's command includes "pas" and there is a plural-pas enclosed by location:
+		replace the matched text with "plural-pas";
+	if the player's command includes "pa" and there is a plural-pas enclosed by location and there is a pa enclosed by location:
+		replace the matched text with "singular-pa";
+	if the player's command includes "pots" and there is a plural-pots enclosed by location:
+		replace the matched text with "plural-pots";
+	if the player's command includes "pot" and there is a plural-pots enclosed by location:
+		if there is a pot enclosed by location or there is an alterna-pot enclosed by location:
+			replace the matched text with "singular-pot".
 
 Instead of subject-asking when the current interlocutor is a pa:
 	say "'Huh,' he says, in that gruff pre-occupied way of his."
@@ -1709,9 +1720,38 @@ Instead of kissing the pa:
 Instead of attacking the pa:
 	say "If it came to a fight, he would win."
 
-Every turn when the player carries a pa (called target):
-	move the target to the location;
-	say "[The target] is very heavy, and winds up (before his transformation is complete) stepping on our feet, and then scrambling away (with apologies)."
+
+Report involuntarily-dropping a pa:
+	say "[The noun] is very heavy, and winds up (before his transformation is complete) stepping on our feet, and then scrambling away (with apologies)." instead.
+
+Test pas with "autoupgrade / wave l-remover at plans / wave n-remover at pans / wave a-remover at soap / put sop on spinner / put gel on sop / wave o-remover at soap / look"
+
+Test pa with "autoupgrade / wave l-remover at plans / wave n-remover at pans / wave s-remover at pas / wave a-remover at soap / put sop on spinner / put gel on sop / wave o-remover at soap / look"
+
+Table of Ultratests (continued)
+topic	stuff	setting
+"pas"	{ secret-plans, soap, tub }	Roget Close
+"pa"	{ secret-plans, soap, tub }	Roget Close
+
+The description of some plural-pas is "A whole fleet of gruff, upstanding, fatherly men." The printed name of a plural-pas is "pas". Understand "pas" or "pa" as the plural-pas.
+	The scent-description of some plural-pas is "shaving cream".
+	The greeting of some plural-pas is "'Hello there, young lady,' one of the pas replies."
+
+Rule for writing a paragraph about some plural-pas (called item):
+	say "The pas you summoned are standing nearby, looking slightly confused.[if there is a mentionable unmentioned thing which is not item in location][line break][end if]";
+	now item is mentioned.
+
+Instead of subject-asking when the current interlocutor is a plural-pas:
+	say "'Huh,' one of them says, in a gruff pre-occupied way."
+
+Instead of kissing the plural-pas:
+	say "[one of][We] plant a kiss on the slightly stubbled cheek of one of them. He reddens.[or][We] lean in for another, but they dodge.[or]Would you take off[ense] if I mentioned I find this all a bit uncomfortable?[or]They clearly do not want our girlish affections.[stopping]".
+
+Instead of attacking the plural-pas:
+	say "If it came to a fight, they would win easily."
+
+Report involuntarily-dropping plural-pas:
+		say "[The noun] are very heavy, and some of them wind up (before their transformation is complete) stepping on our feet, then scrambling away (with apologies)." instead.
 
 [The description of PARC is "Palo Alto Research Center [--] tons and tons of 1970s-era high-tech plastic, steel, and concrete. At least the carp didn't turn into crap." The heft of PARC is 1000. The scent-description of PARC is "burnt electronics dust".]
 

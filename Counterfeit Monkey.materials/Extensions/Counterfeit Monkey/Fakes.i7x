@@ -49,6 +49,7 @@ A net is fake. [K128_net]
 A nit is fake. [K129_nit]
 An ode is fake. [K130_ode]
 A pa is fake. [K133_pa]
+Some plural-pas are fake.
 A par is fake. [K134_par]
 A part is fake. [K135_part]
 A pat is fake. [K136_pat]
