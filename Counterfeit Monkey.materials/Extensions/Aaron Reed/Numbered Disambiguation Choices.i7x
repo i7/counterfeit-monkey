@@ -4,6 +4,7 @@ Version 8/161029 of Numbered Disambiguation Choices by Aaron Reed begins here.
 
 [
 Updates:
+Version 9/180530: Added disambiguation id to rooms as well, to avoid a run-time error when typing a number if rooms are included in the list of disambiguation choices.
 Version 8/161029: Changed the default disambiguation id to -1 to avoid problems if the player gives "0" as an answer to the disambiguation question.
 Version 7: Updated for latest build.
 Version 6: Fixed an infelicity with indistinguishable objects reported by Victor Gijsbers. Started to fix a bug to do with animate people reported by Simon; this turns out to be a bug in Inform (http://inform7.com/mantis/view.php?id=700) which is not easy to work around, so leaving unfixed for now.
@@ -17,9 +18,9 @@ Chapter - Setup
 
 Section - Disambiguation ID
 
-Every thing has a number called disambiguation id. The disambiguation id of something is usually -1.
+Every thing has a number called disambiguation id. The disambiguation id of something is usually -1. Every room has a number called disambiguation id. The disambiguation id of a room is usually -1.
 
-Understand the disambiguation id property as describing a thing.
+Understand the disambiguation id property as describing a thing. Understand the disambiguation id property as describing a room.
 
 Section - List of disambiguables
 
@@ -31,7 +32,7 @@ disambiguation-busy is a truth state that varies. disambiguation-busy is false. 
 
 Chapter - Number Choices
 
-Before printing the name of something (called macguffin) while asking which do you mean (this is the Numbered Disambiguation Choices preface disambiguation objects with numbers rule):
+Before printing the name of an object (called macguffin) while asking which do you mean (this is the Numbered Disambiguation Choices preface disambiguation objects with numbers rule):
 	if disambiguation-busy is false:
 		now disambiguation-busy is true;
 		add macguffin to the list of disambiguables, if absent;
@@ -40,7 +41,7 @@ Before printing the name of something (called macguffin) while asking which do y
 		say "[the number of entries in list of disambiguables]";
 		say ") " (B).
 
-After printing the name of something while asking which do you mean (this is the Numbered Disambiguation Choices cleanup disambiguation-busy flag rule):
+After printing the name of an object while asking which do you mean (this is the Numbered Disambiguation Choices cleanup disambiguation-busy flag rule):
 	now disambiguation-busy is false.
 
 Before asking which do you mean (this is the Numbered Disambiguation Choices reset disambiguables rule):
