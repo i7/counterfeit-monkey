@@ -16,14 +16,15 @@ Include Numbered Disambiguation Choices by Aaron Reed.
 
 [This is to work around a problem where the parser is confused by numbered disambiguation choices. If it asks which souvenir we want to examine and we answer 1, the answer is parsed as "examine 1 souvenirs", which is a valid way of referring to anything that matches "souvenirs", not just the item with disambiguation id 1.]
 Does the player mean doing something when the player's command includes "[number]":
-	if the noun is not nothing and the disambiguation id of the noun is the number understood:
+	let N be the corresponding disvalue of the number understood;
+	if the noun is not nothing and the disambiguation id of the noun is N:
 		it is very likely;
-	otherwise if the second noun is not nothing and the disambiguation id of the second noun is the number understood:
+	otherwise if the second noun is not nothing and the disambiguation id of the second noun is N:
 		it is very likely;
 
 [For some reason the above is not triggered when disambiguating quips.]
 Does the player mean discussing a quip (called target quip) when the player's command includes "1":
-	if the disambiguation id of target quip is 1:
+	if the disambiguation id of target quip is s1:
 		it is very likely;
 	otherwise:
 		it is very unlikely.

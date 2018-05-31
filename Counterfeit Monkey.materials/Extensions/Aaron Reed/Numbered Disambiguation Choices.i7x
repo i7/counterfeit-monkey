@@ -18,7 +18,48 @@ Chapter - Setup
 
 Section - Disambiguation ID
 
-Every thing has a number called disambiguation id. The disambiguation id of something is usually -1. Every room has a number called disambiguation id. The disambiguation id of a room is usually -1.
+A disvalue is a kind of value. The disvalues are s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11 and s12.
+Understand "1" as s1.
+Understand "2" as s2.
+Understand "3" as s3.
+Understand "4" as s4.
+Understand "5" as s5.
+Understand "6" as s6.
+Understand "7" as s7.
+Understand "8" as s8.
+Understand "9" as s9.
+Understand "10" as s10.
+Understand "11" as s11.
+Understand "12" as s12.
+
+Every thing has a disvalue called disambiguation id. The disambiguation id of something is usually s0. Every room has a disvalue called disambiguation id. The disambiguation id of a room is usually s0.
+
+To decide which disvalue is the corresponding disvalue of (N - a number):
+	if N is:
+		-- 1:
+			decide on s1;
+		-- 2:
+			decide on s2;
+		-- 3:
+			decide on s3;
+		-- 4:
+			decide on s4;
+		-- 5:
+			decide on s5;
+		-- 6:
+			decide on s6;
+		-- 7:
+			decide on s7;
+		-- 8:
+			decide on s8;
+		-- 9:
+			decide on s9;
+		-- 10:
+			decide on s10;
+		-- 11:
+			decide on s11;
+	decide on s12.
+
 
 Understand the disambiguation id property as describing a thing. Understand the disambiguation id property as describing a room.
 
@@ -36,9 +77,10 @@ Before printing the name of an object (called macguffin) while asking which do y
 	if disambiguation-busy is false:
 		now disambiguation-busy is true;
 		add macguffin to the list of disambiguables, if absent;
-		now the disambiguation id of macguffin is the number of entries in list of disambiguables;
+		let N be the number of entries in list of disambiguables;
+		now the disambiguation id of macguffin is the corresponding disvalue of N;
 		say "" (A);
-		say "[the number of entries in list of disambiguables]";
+		say "[N]";
 		say ") " (B).
 
 After printing the name of an object while asking which do you mean (this is the Numbered Disambiguation Choices cleanup disambiguation-busy flag rule):
@@ -46,7 +88,7 @@ After printing the name of an object while asking which do you mean (this is the
 
 Before asking which do you mean (this is the Numbered Disambiguation Choices reset disambiguables rule):
 	repeat with item running through list of disambiguables:
-		now disambiguation id of item is -1;
+		now disambiguation id of item is s0;
 	truncate list of disambiguables to 0 entries.
 
 Chapter - Understand preface
