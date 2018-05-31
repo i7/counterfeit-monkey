@@ -11,16 +11,16 @@ Include Version 6 of Locksmith by Emily Short.
 A person can be staid or hurrying. A person is usually staid.
 A room can be proper-named or improper-named.
 
-Before refusing keys of something (this is the tell the preface blocked doors with path walked rule): 
+Before refusing keys of something (this is the tell the preface blocked doors with path walked rule):
 	say "[path-walked so far]" (A).
-	
+
 Rule for refusing keys of an object (called locked-thing) when the player is hurrying (this is the tell the player when blocked at a door rule):
 	say "Unfortunately, [we] [find] [we] [lack] a key fitting [the locked-thing].[no line break]" (A);
 	rule succeeds.
 
 A person has a list of objects called the path so far.
 A person has a list of indexed text called described motion.
-	
+
 To say path-walked so far:
 	carry out the describing path activity with the player.
 
@@ -36,18 +36,18 @@ Rule for describing path of someone (called the worker) (this is the default pat
 				say "[The worker] [head]" (A);
 			otherwise:
 				say "[The worker] [go] [described motion of the worker]" (B);
-				if N is greater than 2, say ", before heading" (C); 
-				otherwise say ", then [head]" (D); 
+				if N is greater than 2, say ", before heading" (C);
+				otherwise say ", then [head]" (D);
 			say " [the last movement]. [run paragraph on]" (E);
 		otherwise:
 			say "[The worker] [go] [described motion of the worker]. [run paragraph on]" (F);
 	clear path-walked for worker.
-		
+
 To clear all/the/-- path-walked for (worker - a person):
 	truncate the described motion of the worker to 0 entries;
 	truncate the path so far of the worker to 0 entries.
 
-Understand "go to [any visited room]" or "go back to [any visited room]" or "return to [any visited room]" or "revisit [any visited room]"  as approaching.  
+Understand "go to [any visited room]" or "go back to [any visited room]" or "return to [any visited room]" or "revisit [any visited room]"  as approaching.
 
 Approaching is an action applying to one visible thing.
 
@@ -77,26 +77,26 @@ An approach-finding rule (this is the approach-heading selection rule):
 An approach-finding rule (this is the refusing bad headings rule):
 	if approach-heading is not a direction:
 		say "[We] [can't] think how to get there from here." (A);
-		rule fails; 
+		rule fails;
 
 An approach-finding rule (this is the find outcome rule):
-	now approach-destination is the room approach-heading from the location; 
+	now approach-destination is the room approach-heading from the location;
 
 An approach-finding rule (this is the actual approach movement rule):
-	silently try going approach-heading. 
+	silently try going approach-heading.
 
 An approach-finding rule (this is the abort movement if held up rule):
 	if the location is not the approach-destination:
 		clear the path-walked for the player;
-		now the player is staid; 
+		now the player is staid;
 		if the location is not the initial room:
 			say conditional paragraph break;
 			try looking;
-		rule fails; 
+		rule fails;
 
 Carry out going while the player is hurrying (this is the creating a path history rule):
-	add the approach-heading to the path so far of the player; 
-	let approach-destination-name be "[the approach-destination]"; 
+	add the approach-heading to the path so far of the player;
+	let approach-destination-name be "[the approach-destination]";
 	let adverb be "";
 	let X be the number of entries in the path so far of the player;
 	if X is greater than 1:
@@ -113,7 +113,7 @@ An approach-finding rule (this is the final approach success rule):
 Carry out approaching (this is the default approaching rule):
 	clear path-walked for the player;
 	now the player is hurrying;
-	let initial location be the location; 
+	let initial location be the location;
 	while the location is not the noun:
 		follow the approach-finding rules;
 		if rule failed:
@@ -123,14 +123,14 @@ Carry out approaching (this is the default approaching rule):
 
 Carry out someone approaching (this is the other character approach rule):
 	clear path-walked for the actor;
-	let initial location be the location of the actor; 
+	let initial location be the location of the actor;
 	while the location of the actor is not the noun:
 		now approach-heading is the best route from the location of the actor to the noun, using doors;
 		if approach-heading is not a direction:
 			now approach-heading is the best route from the location of the actor to the noun, using even locked doors;
 		if approach-heading is not a direction:
-			stop the action; 
-		now approach-destination is the room approach-heading from the location of the actor; 
+			stop the action;
+		now approach-destination is the room approach-heading from the location of the actor;
 		try the actor going the approach-heading;
 		if the location of the actor is not the approach-destination:
 			stop the action.
@@ -139,7 +139,7 @@ Report approaching when the location is the noun and the number of entries in th
 	carry out the describing path activity with the player;
 	say paragraph break;
 	try looking instead.
-	
+
 Report approaching when the location is the noun (this is the default looking on arrival after approaching rule):
 	clear path-walked for the player;
 	try looking instead.
@@ -150,7 +150,7 @@ Approaches ends here.
 
 Approaches provides a GO TO ... action which allows the player to move to a named room, as long as the path lies through rooms he has already visited.
 
-Several Inform examples already show how to do this: what Approaches adds is a flexible and adaptable set of rules and more elegant reporting of movement through intermediate rooms before arrival at the final goal. 
+Several Inform examples already show how to do this: what Approaches adds is a flexible and adaptable set of rules and more elegant reporting of movement through intermediate rooms before arrival at the final goal.
 
 Chapter: Route-finding methods
 
@@ -163,24 +163,24 @@ If we wish to change this behavior, we may do so by replacing the approach-headi
 	An approach-finding rule (this is the approach-heading selection rule):
 		now approach-heading is the best route from the location to the noun through visited rooms, using doors;
 		if approach-heading is not a direction
-		begin; 
+		begin;
 			now approach-heading is the best route from the location to the noun through visited rooms, using even locked doors;
 		end if.
 
 Section: Routes through unvisited rooms
 
-If we wanted, we could replace this rule with another, such as 
+If we wanted, we could replace this rule with another, such as
 
 	An approach-finding rule (this is the new approach-heading selection rule):
 		now approach-heading is the best route from the location to the noun, using even locked doors.
 
-This eliminates the double-pass approach and allows the player to move across areas of the map as yet unvisited. 
+This eliminates the double-pass approach and allows the player to move across areas of the map as yet unvisited.
 
 This may still be too limiting, however, since by default Approaches only understands GO TO or RETURN TO or GO BACK TO or even REVISIT any room which the player has already visited. Names of unvisited rooms are not recognized, to protect the game's secrets.
 
 If we want to let the player move through unvisited rooms, we may also want to let him GO TO places he hasn't been yet; in that case we could add the line
 
-	Understand "go to [any room]" or "go back to [any room]" or "return to [any room]" or "revisit [any room]"  as approaching.  
+	Understand "go to [any room]" or "go back to [any room]" or "return to [any room]" or "revisit [any room]"  as approaching.
 
 See Riverside Path, below, for an example of how to combine these elements.
 
@@ -215,7 +215,7 @@ Section: The path history rule
 
 Approaches creates a description of the player's trip by making a list of pieces of indexed text, such as "south to the wishing well" or "northeast again to Peter's House". This list is called the described motion of a person; so when it comes time to print out the path description, we simply say "[described motion of the player]" and get a comma-delimited list of each of the directions the player goes.
 
-There are several points at which we can intervene to modify the text that is built and printed here. 
+There are several points at which we can intervene to modify the text that is built and printed here.
 
 One is to replace the creating a path history rule, which constructs these pieces of text. If we want to use essentially the same method but write the output text in a different language or using different conventions, that would be the best place to intervene.
 
@@ -235,9 +235,9 @@ For instance, we might change to the following if we wanted to be sure to list d
 		end if;
 		if the room-or-door approach-heading from the location is a door, now adverb is "[adverb]through [the room-or-door approach-heading from the location] ";
 		let N be indexed text;
-		if approach-destination is proper-named, 
+		if approach-destination is proper-named,
 			let N be "[approach-heading] [adverb]to [approach-destination-name]";
-		otherwise let N be "[approach-heading] [adverb]to [approach-destination-name in lower case]"; 
+		otherwise let N be "[approach-heading] [adverb]to [approach-destination-name in lower case]";
 		add N to the described motion of the player;
 		say "[run paragraph on]"; [a mildly inelegant hack to correct for the fact that the indexed-text handling is inserting gratuitous line breaks here]
 
@@ -245,7 +245,7 @@ or, if we planned very complicated variations, we could even break this behavior
 
 Section: The describing path of activity
 
-A second possibility is to rewrite the rule for describing path: "describing path of something" is an activity, so we can supply special rules for alternative player characters, while driving in a car, etc. 
+A second possibility is to rewrite the rule for describing path: "describing path of something" is an activity, so we can supply special rules for alternative player characters, while driving in a car, etc.
 
 The possibilities here are moderately complex; the "Jade Amphitheater" example below demonstrates one approach, whereby we might change our output to leave out the direction names and just list the rooms passed through, as in
 
@@ -284,7 +284,7 @@ So for example:
 
 	Use sequential action.
 
-	Seamus' Hut is a room. 
+	Seamus' Hut is a room.
 
 	South of Seamus' Hut is the hut door. The hut door is a door. It is lockable and unlocked. The tiny key unlocks the hut door. The player carries the tiny key.
 
@@ -310,7 +310,7 @@ Example: * Wide-Eyed Saloon - Demonstrating how to safely interrupt the player's
 
 	Instead of going to the church when the player does not carry the hymnal:
 		say "[path-walked so far]Entry into the church is barred without a hymnal, unfortunately."
-	
+
 	The player carries the hymnal.
 
 	Test me with "n / w / go to Saloon / drop hymnal / go to church / west".
@@ -323,13 +323,13 @@ As mentioned, we can override output with the rule for printing the name..., as 
 
 	*: "Proper Places"
 
-	Include Approaches by Emily Short. 
+	Include Approaches by Emily Short.
 
-	Paris is a room. 
+	Paris is a room.
 
 	West of Paris is the Bois du Boulogne. The Bois du Boulogne is proper-named.
 
-	South of Paris is an Unattended Pathway. 
+	South of Paris is an Unattended Pathway.
 
 	South of the Unattended Pathway is a Small Forbidding Hut.
 
@@ -346,28 +346,28 @@ This example is a little tricky in that we must invoke some of Inform's underlyi
 
 	*: "Traveling with Candles"
 
-	Include Approaches by Emily Short. 
-	
+	Include Approaches by Emily Short.
+
 	The Living Room is a room. The Kitchen is north of the Living Room. The Basement is below the Kitchen. The Oubliette is south of the Basement.
-	
+
 	The Basement and the Oubliette are dark.
-	
+
 	Instead of going to a provisionally dark room (called danger spot) when the player does not enclose a lit thing:
 		say "[path-walked so far]It looks dark in [the danger spot], [if the number of entries in the path so far of the player is greater than 0]though, [end if]so you stop";
 		if the number of entries in the path so far of the player is greater than 0:
 			say ".[no line break]";
 		otherwise:
 			say "."
-	
+
 	The player carries a lit thing called a candle.
-	
+
 	To decide whether (place - a room) finds light inside:
 		(- ( OffersLight({place}) ) -)
-	
+
 	Definition: a room is internally lit if it finds light inside.
-	
+
 	Definition: a room is provisionally dark if it is not internally lit.
-	
+
 	Test me with "n / d / s / drop candle / go to Living Room / get candle / n / drop candle / s / go to living room / go to basement / get candle / go to living room / drop candle / go to oubliette".
 
 Example: ** Riverside Path - A bicycle that the player can use to traverse multiple rooms at a time, when travel on foot is restricted to single-room movement.
@@ -389,7 +389,7 @@ Finally, because our travel is by vehicle, we're going to restrict the player to
 
 	Section 2 - Allowing travel to and through unvisited rooms
 
-	Understand "go to [any room]" or "go back to [any room]" or "return to [any room]" or "revisit [any room]"  as approaching. 
+	Understand "go to [any room]" or "go back to [any room]" or "return to [any room]" or "revisit [any room]"  as approaching.
 
 	The new approach heading finding rule is listed instead of the approach-heading selection rule in the approach-finding rules.
 
@@ -411,31 +411,31 @@ Here we want to change both the individual pieces of the movement description (u
 	*: "Jade Amphitheater"
 
 	Section 1 - Rules for Revising Output
-	
+
 	Include Approaches by Emily Short.
-	
+
 	The new creating a path history rule is listed instead of the creating a path history rule in the carry out going rules.
-	
+
 	Room sequence is a list of rooms that varies.
-	
+
 	Carry out going while the player is hurrying (this is the new creating a path history rule):
-		add the approach-heading to the path so far of the player; 
+		add the approach-heading to the path so far of the player;
 		add the approach-destination to the room sequence;
-	
+
 	Rule for describing path of the player:
-		let N be the number of entries in the room sequence; 
+		let N be the number of entries in the room sequence;
 		say "[We] [go] [if the location is the noun]to[otherwise]toward[end if] [entry N of room sequence]";
 		if N is greater than 1:
 			truncate the room sequence to (N - 1) entries;
-			say " by way of [the room sequence]"; 
+			say " by way of [the room sequence]";
 		say ". [run paragraph on]";
 		clear the path-walked for the player;
 		now room sequence is { }.
-	
+
 	Section 2 - Scenario
-	
+
 	The Crimson Chamber is north of the Mandarin Casket Room. The Mandarin Casket Room is west of the Silver Filigree Prison. The Silver Filigree Prison is northwest of the Shallow Jade Amphitheater. The Shallow Jade Amphitheater is north of the Grooved Channel. Below the Grooved Channel is the Carved Basin.
-	
+
 	A room is usually proper-named.
-	
-	Test me with "s / e / se / s / d / go to the Crimson Chamber". 
+
+	Test me with "s / e / se / s / d / go to the Crimson Chamber".

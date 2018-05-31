@@ -22,7 +22,7 @@ Chapter - Definitions
 
 Use MAX_EXPRESSION_NODES of 300.
 
-The reborn command is an indexed text that varies. The rejected command is an indexed text that varies. 
+The reborn command is an indexed text that varies. The rejected command is an indexed text that varies.
 
 Suppress parser error is a truth state that varies. sp reparse flag is a truth state that varies.
 
@@ -51,7 +51,7 @@ Section - Try Harder to Understand
 
 Before printing a parser error (this is the Smarter Parser trying harder to understand rule):
 	now the rejected command is the player's command;
-	now the reborn command is the player's command; 
+	now the reborn command is the player's command;
 	follow the Smarter Parser rules;
 	if the outcome of the rulebook is the reparse the command outcome:
 		if reborn command is not rejected command:
@@ -75,7 +75,7 @@ To announce the reparsed command:
 	say "[unless saved Smarter Parser error is empty]([italic type][saved Smarter Parser error][roman type])[command clarification break][end unless]>[reborn command in upper case]".
 
 To explain the reborn command:
-	say "[italic type][saved Smarter Parser error][roman type][line break]". 
+	say "[italic type][saved Smarter Parser error][roman type][line break]".
 
 To clean up the reparsed command:
 	while character number 1 in reborn command is " ":
@@ -118,7 +118,7 @@ To decide whether input contains (regex - an indexed text), even within words:
 	if even within words:
 		if reborn command matches the regular expression "[regex]":
 			decide yes;
-	otherwise: 
+	otherwise:
 		if reborn command matches the regular expression "\b[regex]\b":
 			decide yes;
 	decide no.
@@ -175,8 +175,8 @@ Section - Standardize
 
 
 A smarter parser rule when sp_normal (this is the standardize apostrophes rule):
-	replace the regular expression "[apostrophe](m|re)" in reborn command with " am"; 
-	replace the regular expression "[apostrophe]ll" in reborn command with " will"; 
+	replace the regular expression "[apostrophe](m|re)" in reborn command with " am";
+	replace the regular expression "[apostrophe]ll" in reborn command with " will";
 	replace the regular expression "[apostrophe]ve" in reborn command with " have".
 
 A smarter parser rule when sp_normal (this is the scandalous standardize swears rule):
@@ -533,7 +533,7 @@ A new rulebook, the smarter parser rules, is run just before printing a parser e
 
 Running the rulebook at the end of the turn cycle rather than the beginning means that nothing in this extension should conflict with game-specific code. If you define your own "what is" command, for instance, it will be parsed and dealt with before Smarter Parser has a chance to kick in.
 
-Here is the default rule set, in order, along with an example of the type of malformed command each is designed to catch. Most of these rules can understand a wide range of similar input. 
+Here is the default rule set, in order, along with an example of the type of malformed command each is designed to catch. Most of these rules can understand a wide range of similar input.
 
 	the standardize apostrophes rule
 	the scandalous standardize swears rule
@@ -561,7 +561,7 @@ Here is the default rule set, in order, along with an example of the type of mal
 		">I am strong"
 	the starting command with i rule
 		">I love this game"
-	the stripping adverbs rule	
+	the stripping adverbs rule
 		">go north carefully"
 	the unnecessary movement rule
 		">go to sword"
@@ -569,11 +569,11 @@ Here is the default rule set, in order, along with an example of the type of mal
 		">go somewhere"
 	the stripping pointless words rule
 		">anyway kill the troll"
-	the stripping failed with rule	
+	the stripping failed with rule
 		">kill goblin with a rock"
-	the generic surroundings rule	
+	the generic surroundings rule
 		">look at ground"
-	the stripping body parts rule	
+	the stripping body parts rule
 		">take woman's hand"
 	the stripping unnecessary addendum rule
 		">wait for a while"
@@ -682,5 +682,5 @@ Example: * Caverns and Kobolds - A tiny scenario to test misunderstood input wit
 	SP rule			message
 	no leet speak allowed rule		"This game requires you to use proper spelling and grammar."
 	stripping formal address rule		"I appreciate your respect, but all you need to do is type your commands directly."
-	
+
 	Test me with "ub4r l33t / what do I do then?? / who am i? / who are you / where am I!? / go to sword / please take the sword sir / this is stupid / drop the damned sword / why is the sky blue / I want to take the sword / go somewhere / carefully go north / anyway look around / touch ceiling / touch skull with my foot / scratch head / wait for a while / I like this game after all".

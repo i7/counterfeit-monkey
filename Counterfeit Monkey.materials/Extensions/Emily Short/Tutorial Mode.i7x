@@ -16,7 +16,7 @@ Check turning off tutorial mode (this is the can't turn off tutorial mode when i
 
 Carry out turning off tutorial mode (this is the default turning off tutorial mode rule):
 	now tutorial mode is false.
-	
+
 Report turning off tutorial mode (this is the default report turning off tutorial mode rule):
 	say "Tutorial mode is now off." (A)
 
@@ -27,17 +27,17 @@ Check turning on tutorial mode (this is the can't turn on tutorial mode when it 
 
 Carry out turning on tutorial mode (this is the default turning on tutorial mode rule):
 	now tutorial mode is true.
-	
+
 Report turning on tutorial mode (this is the default report turning on tutorial mode rule):
 	say "Tutorial mode is now on." (A)
 
 Section 2 - The Instructional Rules
 
 The expected action is a stored action that varies.
-The held rule is a rule that varies. 
+The held rule is a rule that varies.
 The completed instruction list is a list of rules that varies.
 
-Understand "restore" or "quit" or "save" or "restart" or "version" as "[meta]". 
+Understand "restore" or "quit" or "save" or "restart" or "version" as "[meta]".
 
 A first before rule (this is the react to expected actions rule):
 	if the current action is the expected action:
@@ -50,16 +50,16 @@ A first before rule (this is the react to expected actions rule):
 Before reading a command when tutorial mode is true (this is the offer new prompt rule):
 	follow the instructional rules.
 
-Definition: a thing is non-player if it is not the player. 
+Definition: a thing is non-player if it is not the player.
 
 A thing can be previously-mentioned. A thing is usually not previously-mentioned.
 
 Before printing the name of something (called the target):
 	now the target is previously-mentioned.
-	
+
 The instructional rules are a rulebook.
 
-An instructional rule (this is the teach looking rule): 
+An instructional rule (this is the teach looking rule):
 	if the teach looking rule is listed in the completed instruction list, make no decision;
 	say "To get a look around, type LOOK and press return. If you do not want help getting started, type TUTORIAL OFF." (A);
 	now the expected action is the action of looking;
@@ -69,10 +69,10 @@ An instructional rule (this is the teach looking rule):
 Carry out looking (this is the register looking rule):
 	add the teach looking rule to the completed instruction list, if absent.
 
-An instructional rule (this is the teach examining rule): 
+An instructional rule (this is the teach examining rule):
 	if the teach examining rule is listed in the completed instruction list, make no decision;
 	if a previously-mentioned non-player thing (called target) is enclosed by location:
-		let N be "[the target]"; 
+		let N be "[the target]";
 		let M be "[target]";
 		now N is N in upper case;
 		now M is M in upper case;
@@ -83,7 +83,7 @@ An instructional rule (this is the teach examining rule):
 	otherwise:
 		make no decision.
 
-Carry out examining something (this is the register examining rule): 
+Carry out examining something (this is the register examining rule):
 	add the teach examining rule to the completed instruction list, if absent;
 
 An instructional rule (this is the teach more examining rule):
@@ -168,13 +168,13 @@ Definition: a thing is take-worthy:
 	if it is part of something:
 		no;
 	if it is in a closed container:
-		no; 
+		no;
 	yes.
 
 Carry out taking something (this is the register taking rule):
 	add the teach taking rule to the completed instruction list, if absent.
 
-An instructional rule (this is the teach inventory rule): 
+An instructional rule (this is the teach inventory rule):
 	if the teach inventory rule is listed in the completed instruction list, make no decision;
 	if the player carries nothing, make no decision;
 	say "There's more we can do than just looking around. To check what you're holding at the moment, try typing INVENTORY, or I for short." (A);
@@ -189,10 +189,10 @@ A last instructional rule (this is the teach meta-features rule):
 	if the teach meta-features rule is listed in the completed instruction list, make no decision;
 	say "To save your current position, type SAVE. RESTORE allows you to bring back a game you have previously saved." (A);
 	add the teach meta-features rule to the completed instruction list;
-	rule succeeds. 
+	rule succeeds.
 
 Table of Instruction Followups
-selector	followup   
+selector	followup
 teach dropping rule	"Dropping things will move them into your environment, like this:"
 teach taking rule	"Well done. Now you'll get a message to tell you whether you succeeded in picking up something:"
 teach compass directions rule	"Good! Like other often-used instructions, compass directions can be abbreviated down to N, S, E, W, NE, NW, and so on. UP and DOWN are also possible -- keep an eye on room descriptions in order to learn more about where you can go and when. [paragraph break]As soon as you enter a new room, you'll get a description of what's there, like this:"
@@ -201,7 +201,7 @@ Tutorial Mode ends here.
 
 ---- Documentation ----
 
-Tutorial Mode is intended to make a work of interactive fiction act a little more like a commercial game with a standard tutorial mode that begins whenever the player first starts play. 
+Tutorial Mode is intended to make a work of interactive fiction act a little more like a commercial game with a standard tutorial mode that begins whenever the player first starts play.
 
 Tutorial mode by default teaches LOOK, EXAMINE, INVENTORY, TAKE, DROP, and the use of compass directions. It does this by prompting the player to try these commands whenever the situation is right -- so it will only prompt the player to try INVENTORY if he is holding something, TAKE if he can see a portable object, and so on. The intention is to create a tutorial that will work flexibly with a wide range of first rooms in games.
 
@@ -213,12 +213,12 @@ It's likely that in any given game, Tutorial Mode will still need a little adjus
 
 We can also add new instructional rules on the model of the existing ones. For example, we might add a new rule teaching the player to eat things like this:
 
-	An instructional rule (this is the teach eating rule): 
+	An instructional rule (this is the teach eating rule):
 		if the teach eating rule is listed in the completed instruction list, make no decision;
 		if the player can see a previously-mentioned edible thing (called target item):
 			let N be indexed text;
 			now N is "[target item]";
-			say "[italic type]If you get hungry, you can always try eating the food you find. Try EAT [N in upper case].[roman type]"; 
+			say "[italic type]If you get hungry, you can always try eating the food you find. Try EAT [N in upper case].[roman type]";
 			now the held rule is the teach eating rule;
 			rule succeeds;
 		otherwise:
@@ -241,15 +241,15 @@ It's often the case that we want to follow up a lesson by telling the player a l
 Example: * Silence in the Library - A very small environment showing how the instruction rules fire in various orders depending on the initial configuration.
 
 	*: "Silence in the Library"
-	
+
 	Include Tutorial Mode by Emily Short.
-	
+
 	The Infinite Library is a room. "This is an entire planet devoted to nothing but books. Judging from your nearly-equatorial position, you must be near the biography section. Off to the west, you can see a small shop."
-	
+
 	The Little Shop is west of the Infinite Library. "The shop sells an assortment of doodads and tourist trinkets for those who have recently been perusing the books. The main library is back to the east."
-	
+
 	The paperweight is a thing in the Little Shop. The description of the paperweight is "It is shaped like the face of William Shakespeare -- as he would look if troubled with severe indigestion."
-	
+
 	Test me with "look / west / l paperweight / jump / look at me / take paperweight / i".
 
 
