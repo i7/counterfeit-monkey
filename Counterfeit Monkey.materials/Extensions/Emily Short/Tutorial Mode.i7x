@@ -74,7 +74,9 @@ An instructional rule (this is the teach examining rule):
 	if a previously-mentioned non-player thing (called target) is enclosed by location:
 		let N be "[the target]"; 
 		let M be "[target]";
-		say "You can find out more if you LOOK AT [N in upper case] (or shorten it to L [M in upper case])." (A);
+		now N is N in upper case;
+		now M is M in upper case;
+		say "You can find out more if you LOOK AT [N] (or shorten it to L [M])." (A);
 		now the expected action is the action of examining the target;
 		now the held rule is the teach examining rule;
 		rule succeeds;
@@ -111,9 +113,10 @@ An instructional rule (this is the teach compass directions rule):
 	otherwise:
 		make no decision;
 	if way is nothing:
-		make no decision; 
+		make no decision;
 	let N be "[way]";
-	say "[one of]Feel free to look around some more. When you're ready to move on from here, try[or]No rush, but just a reminder that when you want to move to a new location, you can go[stopping] [N in upper case]." (A);
+	now N is N in upper case;
+	say "[one of]Feel free to look around some more. When you're ready to move on from here, try[or]No rush, but just a reminder that when you want to move to a new location, you can go[stopping] [N]." (A);
 	now the expected action is the action of going way;
 	now the held rule is the teach compass directions rule;
 	now movement reminder is the time of day;
@@ -129,20 +132,22 @@ Carry out going (this is the register going rule):
 An instructional rule (this is the teach dropping rule):
 	if the teach dropping rule is listed in the completed instruction list, make no decision;
 	unless the player carries at least two things, make no decision;
-	let target be a random thing carried by the player; 
+	let target be a random thing carried by the player;
 	let N be "[the target]";
-	say "If you want to get rid of something that you're holding you can always drop it, like this: DROP [N in upper case]." (A);
+	now N is N in upper case;
+	say "If you want to get rid of something that you're holding you can always drop it, like this: DROP [N]." (A);
 	add the teach dropping rule to the completed instruction list, if absent;
 	rule succeeds.
 
 Carry out dropping something (this is the register dropping rule):
-	add the teach dropping rule to the completed instruction list, if absent. 
+	add the teach dropping rule to the completed instruction list, if absent.
 
 An instructional rule (this is the teach taking rule):
 	if the teach taking rule is listed in the completed instruction list, make no decision;
 	if a take-worthy thing (called target item) is enclosed by location:
 		let N be "[the target item]";
-		say "You can pick things up when you see them, like this: TAKE [N in upper case]." (A);
+		now N is N in upper case;
+		say "You can pick things up when you see them, like this: TAKE [N]." (A);
 		now the expected action is the action of taking the target item;
 		now the held rule is the teach taking rule;
 		rule succeeds;

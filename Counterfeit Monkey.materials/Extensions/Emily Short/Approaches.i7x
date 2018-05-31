@@ -101,11 +101,11 @@ Carry out going while the player is hurrying (this is the creating a path histor
 	let X be the number of entries in the path so far of the player;
 	if X is greater than 1:
 		let previous direction be entry (X - 1) in the path so far of the player;
-		if the previous direction is the approach-heading, now adverb is "again ";   
-	let N be "[approach-heading] [adverb]to [approach-destination-name in lower case]"; 
-	if approach-destination is proper-named:
-		let N be "[approach-heading] [adverb]to [approach-destination-name]"; 
-	add N to the described motion of the player; 
+		if the previous direction is the approach-heading, now adverb is "again ";
+	let N be "[approach-heading] [adverb]to [approach-destination-name]";
+	unless approach-destination is proper-named:
+		now N is N in lower case;
+	add N to the described motion of the player;
 
 An approach-finding rule (this is the final approach success rule):
 	rule succeeds.

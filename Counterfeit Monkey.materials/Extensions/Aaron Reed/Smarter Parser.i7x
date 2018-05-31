@@ -146,17 +146,19 @@ To say get noun example: [say "FLOWER, for example".]
 		now noun_example is "flower";
 	otherwise:
 		now noun_example is "[example]";
-	say "[noun_example in upper case]".
+	now noun_example is noun_example in upper case;
+	say "[noun_example]".
 
 To say get direction example: [say "NORTH, for example".]
 	let randdir be a random sp_viable direction;
 	let dir_example be text;
 	if randdir is a direction:
 		now dir_example is "[randdir]";
-		say "[dir_example in upper case], for example";
+		now dir_example is dir_example in upper case;
+		say "[dir_example], for example";
 	otherwise:
 		say "NORTH, for example".
-		
+
 Definition: a direction is sp_viable if the room it from location is a room.
 
 Section - Tables

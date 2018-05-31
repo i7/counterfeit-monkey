@@ -76,18 +76,21 @@ To describe which (superset - a description of objects) are (subset - a descript
 		if subset count is 0:
 			rule succeeds;
 	let N be "[selection of the superset conforming to the description subset is-are]";
-	say "[N in sentence case] [member text]. ".
-			
+	now N is N in sentence case;
+	say "[N] [member text]. ".
+
 To describe which (superset - a description of objects) are (subset - a description of objects) rather than (difference set - a description of objects) with members being (member text - some text) and nonmembers being (nonmember text - some text):
 	let subset count be the number of members of subset;
 	let superset count be the number of members of superset; 
 	let difference count be the superset count minus subset count; 
 	if (difference count is greater than 0 and the difference count is less than subset count) or the subset count is 0:
 		let N be "[selection of the superset conforming to the description difference set is-are]";
-		say "[N in sentence case] [nonmember text]. ";
-	else:		
+		now N is N in sentence case;
+		say "[N] [nonmember text]. ";
+	else:
 		let N be "[selection of the superset conforming to the description subset is-are]";
-		say "[N in sentence case] [member text]. ".
+		now N is N in sentence case;
+		say "[N] [member text]. ".
 
 
 To say none of (superset - a description of objects) is-are:
