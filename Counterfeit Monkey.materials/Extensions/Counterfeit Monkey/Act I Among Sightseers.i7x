@@ -446,7 +446,8 @@ An instructional rule (this is the teach setting rule):
 	if the number of entries in the list of remaining letters is not 26:
 		make no decision;
 	let N be "[the letter-remover]";
-	say "[first custom style]It can be set to any letter we choose, hm? That sounds like a hint. Try SET [N in upper case] TO U.[roman type]";
+	now N is N in upper case;
+	say "[first custom style]It can be set to any letter we choose, hm? That sounds like a hint. Try SET [N] TO U.[roman type]";
 	now the expected action is the action of tuning the letter-remover to "u";
 	now the held rule is the teach setting rule;
 	rule succeeds.
@@ -533,7 +534,8 @@ An instructional rule (this is the teach more compass directions rule):
 	if way is nothing:
 		make no decision;
 	let N be "[way]";
-	say "[first custom style][one of]You can spend some more time looking around or checking out your inventory to see what you've changed in this location. When you're ready to move on, you can head[or]When you want to move to a new location, you can go[stopping] [N in upper case].[roman type]";
+	now N is N in upper case;
+	say "[first custom style][one of]You can spend some more time looking around or checking out your inventory to see what you've changed in this location. When you're ready to move on, you can head[or]When you want to move to a new location, you can go[stopping] [N].[roman type]";
 	now the expected action is the action of going way;
 	now the held rule is the teach more compass directions rule;
 	now next movement reminder is the time of day;
@@ -708,7 +710,8 @@ An instructional rule (this is the new teach compass directions rule):
 	if way is nothing:
 		make no decision;
 	let N be "[way]";
-	say "[first custom style][one of]Feel free to look around some more. When you're ready to move on from here, try[or]No rush, but just a reminder that when you want to move to a new location, you can go[stopping] [N in upper case].[roman type]" (A);
+	now N is N in upper case;
+	say "[first custom style][one of]Feel free to look around some more. When you're ready to move on from here, try[or]No rush, but just a reminder that when you want to move to a new location, you can go[stopping] [N].[roman type]" (A);
 	now the expected action is the action of going way;
 	now the held rule is the new teach compass directions rule;
 	now movement reminder is the time of day;

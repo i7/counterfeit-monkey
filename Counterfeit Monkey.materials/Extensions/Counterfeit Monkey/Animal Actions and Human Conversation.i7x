@@ -165,7 +165,8 @@ To say report-followers:
 To report followers:
 	if the number of entries in the incoming-list is not 0:
 		let N be "[The incoming-list with definite articles]";
-		say "[N] " in sentence case;
+		now N is N in sentence case;
+		say "[N] ";
 		if the player is in a car:
 			say "come[if the number of entries in incoming-list is 1 and entry 1 of incoming-list is not plural-named]s[end if] along with us";
 		otherwise:
@@ -1493,7 +1494,7 @@ Carry out the bartender discussing buy the rusty nail:
 Rule for refusing to buy something (called target) which is in the toolkit:
 	let drink-name be "[target]";
 	replace the regular expression ".$" in drink-name with ""; ["depluralize" the name of the tools, i.e. remove the last letter.]
-	let drink-name be drink-name in sentence case;
+	now drink-name is drink-name in sentence case;
 	say "[one of]We ask for another [drink-name], but the bartender says she's limited to one drink per type per club member. 'They're a loss leader,' she explains. 'Tools are more expensive than cocktails, and then even with the rusty nails, there's the energy to run the paddle.'[or]The bartender has already explained that she can't sell us more drinks of the same kind. The profit margin is too low, apparently.[stopping]"
 
 Rule for refusing to buy a drink-form thing:
@@ -3057,7 +3058,8 @@ The secondary apology of the gift shop volunteer is "[one of]sorry[or]I'm afraid
 The generic confrontational of the gift shop volunteer is "miss".
 
 This is the gift shop volunteer doesn't know rule:
-	let N be "[one of][generic adversative of the gift shop volunteer][or][secondary apology of the gift shop volunteer][at random]" in sentence case;
+	let N be "[one of][generic adversative of the gift shop volunteer][or][secondary apology of the gift shop volunteer][at random]";
+	now N is N in sentence case;
 	say "[We] frame up a vague question about [the noun].
 
 [beat] '[N], don't think I can help you there.'[paragraph break][conditional paragraph break]"

@@ -913,11 +913,15 @@ The default distant description rule is not listed in any rulebook.
 
 Rule for distantly describing a room (called target):
 	let N be "[the target]";
-	say "[We] can make out [N in lower case] that way."
+	unless the target is proper-named:
+		now N is N in lower case;
+	say "[We] can make out [N] that way."
 
 Rule for distantly describing a room (called target) which encloses someone when the location is indoors:
 	let N be "[the target]";
-	say "That way [we] can see [unless the target is proper-named][N in lower case][otherwise][the target][end if], in which [is-are a list of people enclosed by the target]."
+	unless the target is proper-named:
+		now N is N in lower case;
+	say "That way [we] can see [N], in which [is-are a list of people enclosed by the target]."
 
 When play begins (this is the nothing-to-see-that-way rule):
 	now nothing-to-see-that-way is "[We] can't see anything interesting in that direction."

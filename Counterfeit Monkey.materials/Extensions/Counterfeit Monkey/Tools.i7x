@@ -241,7 +241,7 @@ Setting action variables for waving the letter-remover device at an object which
 		now letter absence is true;
 	otherwise:
 		let starting text be "[second noun]";
-		now starting text is "[starting text in lower case]";
+		now starting text is starting text in lower case;
 		if the second noun is yourself:
 			now starting text is "alexandra";
 		replace the text "[current setting]" in the starting text with "";
@@ -250,7 +250,7 @@ Setting action variables for waving the letter-remover device at an object which
 		repeat with item running through things in repository:
 			if comparison number is the hash code of the item:
 				let goal text be "[printed name of the item]";
-				let goal text be "[goal text in lower case]";
+				now goal text is goal text in lower case;
 				if the goal text is the starting text:
 					if second noun proffers item:
 						now the generated object is item;
@@ -468,11 +468,11 @@ She grins at us and sets the glass down neatly on the bar.[or]This time she lays
 
 To decide what thing is the homonym-match of (target - a thing):
 	let old text be "[target]";
-	let old text be "[old text in lower case]";
+	now old text is old text in lower case;
 	repeat with item running through things in the repository:
 		if the hash code of the item is the hash code of target and the homonym index of the item is not the homonym index of target:
 			let new text be "[item]";
-			let new text be "[new text in lower case]";
+			now new text is new text in lower case;
 			if new text is old text:
 				decide on item;
 	decide on player.
@@ -528,9 +528,9 @@ Setting action variables for teeing something:
 
 To decide what text is the name of (Y - an object) minus the name of (X - an object):
 	let starting text be "[X]";
-	let starting text be "[starting text in lower case]";
+	now starting text is starting text in lower case;
 	let goal text be "[Y]";
-	let goal text be "[goal text in lower case]";
+	now goal text is goal text in lower case;
 	let character count be the number of characters in the goal text;
 	let matching success be true;
 	let next be 1;
@@ -791,7 +791,8 @@ To synthesize contents of (source - a thing):
 	if the chosen article is not Y:
 		if the heft of the chosen article is greater than 4 and source is synthesizer:
 			let N be "[chosen article]";
-			say "An indicator message lights up: OVERRIDE: GENERATED OBJECT [N in upper case] EXCEEDS MAXIMUM SIZE LIMIT.";
+			now N is N in upper case;
+			say "An indicator message lights up: OVERRIDE: GENERATED OBJECT [N] EXCEEDS MAXIMUM SIZE LIMIT.";
 			stop;
 		abide by the dangerous destruction rules for X;
 		abide by the dangerous destruction rules for Y;
@@ -873,7 +874,7 @@ This is the spinner-turning rule:
 	let the chosen article be the first thing held by the spinner;
 	let X be the chosen article;
 	let goal text be "[printed name of the X]";
-	now goal text is "[goal text in lower case]";
+	now goal text is goal text in lower case;
 	let max characters be the number of characters in the goal text;
 	let substitute text be some text;
 	repeat with Z running from 1 to max characters:
@@ -884,14 +885,14 @@ This is the spinner-turning rule:
 	if the chosen article is proffered by something (called the source) which is not the chosen article:
 		if the hash code of the source is the hash code of X:
 			let item text be "[source]";
-			now item text is "[item text in lower case]";
+			now item text is item text in lower case;
 			if the goal text is item text:
 				now the chosen article is the source;
 	if the chosen article is X:
 		repeat with item running through things in the repository:
 			if the hash code of the item is the hash code of X:
 				let item text be "[item]";
-				now item text is "[item text in lower case]";
+				now item text is item text in lower case;
 				if the goal text is item text:
 					unless item is the reel or item is the snap:
 					[make sure that we always get the fishing reel and the sound snap rather than the film reel or the clothes snap]
@@ -1684,9 +1685,9 @@ Check shooting something with the loaded anagramming gun:
 		if the hash code of the item is the hash code of the noun:
 			[say "[item]: ";]
 			let initial name be "[noun]";
-			let initial name be "[initial name in lower case]";
+			now initial name is initial name in lower case;
 			let comparison name be "[item]";
-			let comparison name be "[comparison name in lower case]";
+			now comparison name is comparison name in lower case;
 			let comparison key be the anagram key of the item;
 			[say "[comparison key]";
 			say "[noun]: [initial key]"; ]
@@ -1706,7 +1707,7 @@ To decide what list of text is the anagram key of (n - an object):
 	let count be the number of characters in starting form;
 	repeat with i running from 1 to count:
 		let char be "[character number i in starting form]";
-		let char be "[char in lower case]";
+		now char is char in lower case;
 		if char is not " ":
 			add char to anagram key;
 	sort anagram key;
@@ -1934,7 +1935,7 @@ But the effect fades almost instantly." instead.
 Report inserting something into the umlaut punch:
 	say "[We] put [the noun] into the wire basket of the umlaut punch. There is a hum as the punch warms up, then a bang! as the tines come down sharply, tattooing [the noun].[paragraph break]";
 	let sample be "[noun]";
-	now sample is "[sample in lower case]";
+	now sample is sample in lower case;
 	let replacement made be false;
 	if sample matches the text "u":
 		replace the text "u" in sample with "ü";
@@ -2038,7 +2039,7 @@ Check poking the Catalan needle with the Catalan needle:
 Carry out poking something with the Catalan punt volat needle:
 	let sample be text;
 	let sample be "[noun]";
-	now sample is "[sample in lower case]";
+	now sample is sample in lower case;
 	if sample matches the regular expression "(.*l)(l.*)":
 		say "The needle slips into place, trying to construct '[text matching subexpression 1]·[text matching subexpression 2]'. It fails, however, to make any recognizable word out of this, and the needle wire grows hotter and hotter in our hand as it tries to fix the change. Finally [we] have to pull out." instead;
 	otherwise:
@@ -2250,7 +2251,7 @@ After inserting something into the cryptolock:
 	repeat with item running through things in the repository:
 		if the hash code of the item is the source hash:
 			let item text be "[item]";
-			now item text is "[item text in lower case]";
+			now item text is item text in lower case;
 			if the goal text is item text:
 				now the chosen article is the item;
 				break;
@@ -2295,24 +2296,24 @@ To avoid confusion during the replacement process, we replace lower-case letters
 
 To decide what text is the encryption of (X - a thing):
 	let goal text be "[printed name of the X]";
-	let goal text be "[goal text in lower case]";
+	now goal text is goal text in lower case;
 	replace the text "a" in goal text with "E";
 	replace the text "e" in goal text with "I";
 	replace the text "i" in goal text with "O";
 	replace the text "o" in goal text with "U";
 	replace the text "u" in goal text with "A";
-	let goal text be "[goal text in lower case]";
+	now goal text is goal text in lower case;
 	decide on goal text.
 
 To decide what text is the back encryption of (X - a thing):
 	let goal text be "[printed name of the X]";
-	let goal text be "[goal text in lower case]";
+	now goal text is goal text in lower case;
 	replace the text "a" in goal text with "U";
 	replace the text "e" in goal text with "A";
 	replace the text "i" in goal text with "E";
 	replace the text "o" in goal text with "I";
 	replace the text "u" in goal text with "O";
-	let goal text be "[goal text in lower case]";
+	now goal text is goal text in lower case;
 	decide on goal text.
 
 
@@ -2322,7 +2323,7 @@ To figure out whether the game supplied any objects that could fruitfully be enc
 
 To decide what text is the hard encryption of (X - a thing):
 	let goal text be "[printed name of the X]";
-	let goal text be "[goal text in lower case]";
+	now goal text is goal text in lower case;
 	replace the text "a" in goal text with "B";
 	replace the text "b" in goal text with "E";
 	replace the text "c" in goal text with "E";
@@ -2349,12 +2350,12 @@ To decide what text is the hard encryption of (X - a thing):
 	replace the text "x" in goal text with "A";
 	replace the text "y" in goal text with "A";
 	replace the text "z" in goal text with "A";
-	let goal text be "[goal text in lower case]";
+	now goal text is goal text in lower case;
 	decide on goal text.
 
 To decide what text is the back hard encryption of (X - a thing):
 	let goal text be "[printed name of the X]";
-	let goal text be "[goal text in lower case]";
+	now goal text is goal text in lower case;
 	replace the text "a" in goal text with "Z";
 	replace the text "b" in goal text with "A";
 	replace the text "c" in goal text with "A";
@@ -2381,7 +2382,7 @@ To decide what text is the back hard encryption of (X - a thing):
 	replace the text "x" in goal text with "U";
 	replace the text "y" in goal text with "U";
 	replace the text "z" in goal text with "U";
-	let goal text be "[goal text in lower case]";
+	now goal text is goal text in lower case;
 	decide on goal text.
 
 

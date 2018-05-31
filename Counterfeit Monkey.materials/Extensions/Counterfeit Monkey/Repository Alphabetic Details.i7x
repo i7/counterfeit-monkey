@@ -4159,7 +4159,8 @@ To say generictext:
 		if word-choice is less than max and a random chance of 1 in 2 succeeds:
 			increase word-choice by 1;
 			now assemblage is "[assemblage][word number word-choice in content] ";
-	say assemblage in sentence case;
+	now assemblage is assemblage in sentence case;
+	say assemblage;
 
 
 The clothing-wrap is a privately-named floppy wearable thing. The heft of the clothing-wrap is 1. The printed name is "wrap". Understand "wrap" as the clothing-wrap.

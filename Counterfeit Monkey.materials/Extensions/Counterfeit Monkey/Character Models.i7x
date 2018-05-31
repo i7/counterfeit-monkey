@@ -448,27 +448,27 @@ A person has some text called the generic confrontational. The generic confronta
 
 To say Well:
 	let N be "[generic adversative of the current interlocutor]";
-	let N be "[N]" in sentence case;
+	now N is N in sentence case;
 	say "[N]".
 
 To say personal no:
 	let N be "[generic negative of the current interlocutor]";
-	let N be "[N]" in sentence case;
+	now N is N in sentence case;
 	say "[N]".
 
 To say personal yes:
 	let N be "[generic positive of the current interlocutor]";
-	let N be "[N]" in sentence case;
+	now N is N in sentence case;
 	say "[N]".
 
 To say awkward no:
 	let N be "[generic adversative of the current interlocutor], [generic negative of the current interlocutor]";
-	let N be "[N]" in sentence case;
+	now N is N in sentence case;
 	say "[N][apologetic]";
 
 To say awkward yes:
 	let N be "[generic adversative of the current interlocutor], [generic positive of the current interlocutor]";
-	let N be "[N]" in sentence case;
+	now N is N in sentence case;
 	say "[N][apologetic]";
 
 To say apologetic:
@@ -477,7 +477,7 @@ To say apologetic:
 
 To say awkward confrontation:
 	let N be "[generic confrontational of the current interlocutor]";
-	let N be "[N]" in sentence case;
+	now N is N in sentence case;
 	say "[N]";
 
 
