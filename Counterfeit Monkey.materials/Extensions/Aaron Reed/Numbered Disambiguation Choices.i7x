@@ -35,31 +35,18 @@ Understand "12" as s12.
 Every thing has a disvalue called disambiguation id. The disambiguation id of something is usually s0. Every room has a disvalue called disambiguation id. The disambiguation id of a room is usually s0.
 
 To decide which disvalue is the corresponding disvalue of (N - a number):
-	if N is:
-		-- 1:
-			decide on s1;
-		-- 2:
-			decide on s2;
-		-- 3:
-			decide on s3;
-		-- 4:
-			decide on s4;
-		-- 5:
-			decide on s5;
-		-- 6:
-			decide on s6;
-		-- 7:
-			decide on s7;
-		-- 8:
-			decide on s8;
-		-- 9:
-			decide on s9;
-		-- 10:
-			decide on s10;
-		-- 11:
-			decide on s11;
-	decide on s12.
+	(- MyDecideDisvalue ({N}) -).
 
+Include
+(-
+
+[ MyDecideDisvalue n;
+	if ((n == 0) || (n > 12))
+		return 13;
+	return n + 1;
+];
+
+-).
 
 Understand the disambiguation id property as describing a thing. Understand the disambiguation id property as describing a room.
 
