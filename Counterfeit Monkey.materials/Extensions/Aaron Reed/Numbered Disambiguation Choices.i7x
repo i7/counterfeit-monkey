@@ -18,7 +18,7 @@ Chapter - Setup
 
 Section - Disambiguation ID
 
-A disvalue is a kind of value. The disvalues are s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11 and s12.
+A disvalue is a kind of value. The disvalues are invalid-disvalue, default-disvalue, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11 and s12.
 Understand "1" as s1.
 Understand "2" as s2.
 Understand "3" as s3.
@@ -32,7 +32,7 @@ Understand "10" as s10.
 Understand "11" as s11.
 Understand "12" as s12.
 
-Every thing has a disvalue called disambiguation id. The disambiguation id of something is usually s0. Every room has a disvalue called disambiguation id. The disambiguation id of a room is usually s0.
+Every thing has a disvalue called disambiguation id. The disambiguation id of something is usually default-disvalue. Every room has a disvalue called disambiguation id. The disambiguation id of a room is usually default-disvalue.
 
 To decide which disvalue is the corresponding disvalue of (N - a number):
 	(- MyDecideDisvalue ({N}) -).
@@ -41,9 +41,9 @@ Include
 (-
 
 [ MyDecideDisvalue n;
-	if ((n == 0) || (n > 12))
-		return 13;
-	return n + 1;
+	if ((n < 1) || (n > 12))
+		return (+ invalid-disvalue +);
+	return n + 2;
 ];
 
 -).
@@ -75,7 +75,7 @@ After printing the name of an object while asking which do you mean (this is the
 
 Before asking which do you mean (this is the Numbered Disambiguation Choices reset disambiguables rule):
 	repeat with item running through list of disambiguables:
-		now disambiguation id of item is s0;
+		now disambiguation id of item is default-disvalue;
 	truncate list of disambiguables to 0 entries.
 
 Chapter - Understand preface
