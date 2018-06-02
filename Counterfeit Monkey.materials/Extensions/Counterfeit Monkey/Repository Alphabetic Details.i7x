@@ -2329,7 +2329,7 @@ Instead of searching the potage:
 
 The description of a pot is "It's a single ordinary cooking pot." The heft of a pot is 2.
 
-Some plural-pots are an open container. The description of the plural-pots is "They're a selection of heavy, high-quality stainless steel cooking pots, like the ones my mother has at home." The heft of the plural-pots is 3. The printed name of the plural-pots is "pots". Understand "pots" as the plural-pots.
+The description of some plural-pots is "They're a selection of heavy, high-quality stainless steel cooking pots, like the ones my mother has at home." The heft of some plural-pots is 3. The printed name of some plural-pots is "pots". Understand "pots" or "pot" as some plural-pots.
 
 The printed name of an alterna-pot is "pot". Understand "pot" or "marijuana" or "mary jane" or "mj" or "weed" or "dope" or "drugs" as the alterna-pot. The description of the alterna-pot is "An ounce or so of weed. I'm afraid I can't judge the quality of the product." The indefinite article of alterna-pot is "some".
 

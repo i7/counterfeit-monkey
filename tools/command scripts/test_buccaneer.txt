@@ -518,6 +518,7 @@ get pestos
 w
 plug dais into wall
 shoot stop with gun
+shoot pots with gun
 go to workshop
 wave c-remover at pic
 gel cate

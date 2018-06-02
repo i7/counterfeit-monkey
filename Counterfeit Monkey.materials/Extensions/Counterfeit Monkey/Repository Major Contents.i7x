@@ -68,6 +68,7 @@ A pi-object is a kind of thing. ["pi"]
 A pit is a kind of thing.
 A pit-hole is a kind of container. The printed name of a pit-hole is "pit".
 A pot is a kind of container.
+Some plural-pots are a kind of container.
 An alterna-pot is a kind of vegetable.
 A Ra is a kind of man.
 A ram is a kind of neuter animal.
@@ -721,7 +722,7 @@ The repository contains a mall figurine.
 The repository contains a sap, a sap-liquid, a sop,
 	a stop, [t-insert derivatives]
 	a top-toy, [derive insertions]
-	some pas, some pots, a spot, a pot, an alterna-pot. [anagram all]
+	some plural-pots, a spot, a pot, an alterna-pot. [anagram all]
 
 [soap-dispenser]
 
