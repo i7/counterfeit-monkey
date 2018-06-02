@@ -1214,9 +1214,18 @@ An ill is r-abstract. The description of an ill is usually "It manifests as a li
 Periodically it gains cartoonish eyes and eyebrows, and glowers at [us]."
 
 [Not actually in the repository at present — too easy?]
-An in-object is r-abstract. The printed name is "in". The description is usually "It represents the idea of having a connection or a way in to a normally closed institution. What my father would call networking and Slango would call nepotism, and my mother would have no name for at all because to her it is the normal way of the world everywhere.
+The in-object is r-abstract. The printed name is "in". The description is "A sucking hole of infinite gravity into which everything has to go."
 
-At the moment, this concept is embodied as a pair of abstract hands clasped in a handshake."
+[The description is usually "It represents the idea of having a connection or a way in to a normally closed institution. What my father would call networking and Slango would call nepotism, and my mother would have no name for at all because to her it is the normal way of the world everywhere.
+
+At the moment, this concept is embodied as a pair of abstract hands clasped in a handshake."]
+
+Understand "in" as the in-object.
+
+A dangerous construction rule for the in-object:
+	say "Everything in the area that isn't bolted down is relentlessly sucked in. That includes [us].";
+	end the story saying "[We] have become one with Cosmos";
+	rule succeeds.
 
 The description of the inapt sign is "The sign reads WARNING: [one of]DO NOT CLIMB DOME DURING THUNDERSTORM[or]WATCH OUT FOR BEARS[or]CARS PARKED WITHOUT A STICKER WILL BE TOWED AT OWNER'S EXPENSE[or]MUSHROOMS MAY BE POISONOUS[at random]."
 

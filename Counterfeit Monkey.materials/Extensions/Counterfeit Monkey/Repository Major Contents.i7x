@@ -403,6 +403,8 @@ In the repository is a baklava.
 [horses]
 In the repository are some hoses, a hoe, and a ho.
 
+In the repository is an in-object.
+
 [inciting fable]
 In the repository is a filing cabinet.
 
