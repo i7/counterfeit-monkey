@@ -606,7 +606,7 @@ To undo a turn:
 
 When play ends when the story has not ended finally:
 	custom-wait for any key;
-	say "That is, that's what would have happened if [we] had done something so foolish. Shall we suppose [we] didn't? >";
+	say "That is, that's what would have happened if [we] had done something so foolish. Shall we suppose [we] didn't? >>";
 	if the player consents:
 		if the turn count is greater than 1:
 			say "[line break]";
