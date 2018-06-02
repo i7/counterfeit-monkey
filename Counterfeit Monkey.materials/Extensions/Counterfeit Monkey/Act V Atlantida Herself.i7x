@@ -1235,8 +1235,13 @@ The rest of the food is in the cabinet."
 
 A stove called a galley stove is in the Galley. The description of the galley stove is "A perfectly smooth, easy-to-clean black surface with electric burners underneath."
 
-[This is to avoid things being called "the galley sink galley sink's tap" and "the galley stove galley stove's switch"]
-The switch identification rule response (A) is "[unless the target is part of the galley stove or the target is part of the galley sink or the target is part of the galley stove's oven][random thing which incorporates the target] [end if]".
+[To avoid things being called "the galley sink galley sink's tap" and "the galley stove galley stove's switch"]
+Before printing the name of a switch (called target) (this is the new switch identification rule):
+	if the target is part of something (called fixture):
+		unless the fixture is the galley stove or the fixture is the galley sink or the fixture is the galley stove's oven:
+			say "[fixture] ".
+
+The new switch identification rule is listed instead of the switch identification rule in the before printing the name rulebook.
 
 A sink called a galley sink is in the Galley. The description of the galley sink is "Stainless steel, and very clean."
 
