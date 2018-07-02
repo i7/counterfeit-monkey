@@ -1167,10 +1167,12 @@ The smell has hash code 268304.
 The snap has hash code 303105. [I1876_snap]
 The soap dispenser has hash code 450841. [I997_soap_dispenser]
 The soap has hash code 311297. [I996_soap]
+The soap-sap-receptacle-supporter has hash code 149536.
 The sock has hash code 279556. [I2220_sock]
 The sod has hash code 278536. [I2226_sod]
 The soil has hash code 280832. [I641_soil]
 The sop has hash code 311296. [I2187_sop]
+The sop-dispenser has hash code 450840. [I2187_sop]
 The sord has hash code 409608. [I2225_sord]
 The sot has hash code 802816. [I2288_sot]
 The souvenir tea-towels has hash code 8284433. [I596_souvenir_tea_towels]

@@ -718,14 +718,14 @@ The repository contains a mall figurine.
 
 [soap]
 
-The repository contains a sap, a sop,
+The repository contains a sap, a sap-liquid, a sop,
 	a stop, [t-insert derivatives]
 	a top-toy, [derive insertions]
 	some pas, some pots, a spot, a pot, an alterna-pot. [anagram all]
 
 [soap-dispenser]
 
-The repository contains a sap-dispenser.
+The repository contains a sap-dispenser and a sop-dispenser.
 
 [soil]
 

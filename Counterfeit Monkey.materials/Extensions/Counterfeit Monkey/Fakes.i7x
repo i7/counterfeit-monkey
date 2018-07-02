@@ -531,6 +531,7 @@ The snap is fake. [I1876_snap]
 The sock is fake. [I2220_sock]
 The sod is fake. [I2226_sod]
 The sop is fake. [I2187_sop]
+The sop-dispenser is fake.
 The sord is fake. [I2225_sord]
 The sot is fake. [I2288_sot]
 The spa is fake. [I1884_spa]

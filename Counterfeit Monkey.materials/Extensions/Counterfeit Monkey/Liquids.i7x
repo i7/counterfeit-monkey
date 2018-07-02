@@ -14,6 +14,10 @@ Instead of waving or squeezing or pulling or pushing or rubbing or turning an un
 	say "[The noun] [don't] really respond to that kind of manipulation."
 
 Instead of taking an uncontained fluid thing (called the fluid):
+	if the fluid is the sap-liquid or the fluid is the soap:
+		if the fluid is in a container (called receptacle):
+			say "[The fluid] is too fluid and sticky to pick up easily.";
+			stop the action;
 	say "[The fluid] [are] not the kind of thing [we] can just pick up and carry away."
 
 Understand "drink from [something]" as drinking.
@@ -82,10 +86,10 @@ Understand "fill [a container] with [something]" as filling it with.
 Understand "fill [something] with [a fluid thing]" as filling it with.
 Understand "fill [something] with [something]" as filling it with.
 
-Understand "pour [something] in/into [something]" as filling it with (with nouns reversed).
-Understand "pour [a fluid thing] in/into [something]" as filling it with (with nouns reversed).
-Understand "pour [something] in/into [a container]" as filling it with (with nouns reversed).
-Understand "pour [a fluid thing] in/into [a container]" as filling it with (with nouns reversed).
+Understand "empty [something] in/into [something]" as filling it with (with nouns reversed).
+Understand "empty [a fluid thing] in/into [something]" as filling it with (with nouns reversed).
+Understand "empty [something] in/into [a container]" as filling it with (with nouns reversed).
+Understand "empty [a fluid thing] in/into [a container]" as filling it with (with nouns reversed).
 
 [ Every turn when a fluid thing (called target) is in a pan:
 	unless the target is contained:
@@ -104,12 +108,13 @@ Check inserting something into a fluid thing (called the liquid):
 		say "[We] don't want to get [second noun] all over [the noun]." instead.
 
 Check putting an uncontained fluid thing (called the liquid) on something:
-	if the liquid is washing-appropriate:
-		try washing the second noun instead;
-	if the second noun is a drain (called D):
-		say "[The liquid] would disappear down [the D]." instead;
-	otherwise:
-		say "[We] don't want [noun] all over [the second noun]." instead.
+	unless the second noun is the spinner or the second noun is the programmable dais:
+		if the liquid is washing-appropriate:
+			try washing the second noun instead;
+		if the second noun is a drain (called D):
+			say "[The liquid] would disappear down [the D]." instead;
+		otherwise:
+			say "[We] don't want [noun] all over [the second noun]." instead.
 
 Check putting a fluid thing on a fluid thing:
 	say "There's no restoration gel that will separate mixed liquids, you know. I'd rather stay away from the chemistry experiments." instead.
@@ -118,7 +123,7 @@ Check inserting a fluid thing into a fluid thing:
 	say "There's no restoration gel that will separate mixed liquids, you know. I'd rather stay away from the chemistry experiments." instead.
 
 Sanity-check inserting an uncontained fluid thing into a container (called target):
-	unless the target is a pan:
+	unless the target is a pan or the target is the synthesizer or the target is the t-inserter or the target is the cryptolock:
 		try filling the second noun with the noun instead.
 
 Instead of inserting the funnel into a container which incorporates a drain:
@@ -156,6 +161,7 @@ Check filling it with:
 
 
 Understand "empty [something]" as emptying. Emptying is an action applying to one thing.
+Understand the command "pour" as "empty".
 
 Carry out emptying:
 	if the noun is not a supporter and the noun is not a container:
@@ -182,7 +188,11 @@ Carry out emptying it into:
 	if the noun is empty:
 		say "[The noun] [are] empty already." instead;
 	if the noun is fluid-filled:
-		say "I'd rather leave [the first thing held by the noun] where [they] [are]." instead;
+		let contents be the first thing held by the noun;
+		if the contents is the soap or the contents is the sap-liquid:
+			say "[The contents] sticks to the bottom of [the noun]." instead;
+		otherwise:
+			say "I'd rather leave [the contents] where [they] [are]." instead;
 	say "[first custom style][bracket]Try to TAKE things from [the noun] and then PUT them [in-on the second noun] instead.[close bracket][roman type][line break]".
 
 Check an actor washing (this is the new restrict washing to the proximity of sinks rule):

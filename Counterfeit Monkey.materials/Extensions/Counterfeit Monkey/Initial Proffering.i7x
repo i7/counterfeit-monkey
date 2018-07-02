@@ -938,11 +938,13 @@ The small tables proffers the small tables. [I789_small_tables]
 The smell proffers The smell.
 The snap proffers the snap. [I1876_snap]
 The soap dispenser proffers the soap dispenser. [I997_soap_dispenser]
+The soap-sap-receptacle-supporter proffers the soap-sap-receptacle-supporter.
 The soap proffers the soap. [I996_soap]
 The sock proffers the sock. [I2220_sock]
 The sod proffers the sod. [I2226_sod]
 The soil proffers the soil. [I641_soil]
 The sop proffers the sop. [I2187_sop]
+The sop-dispenser proffers the sop-dispenser. [I2187_sop]
 The sord proffers the sord. [I2225_sord]
 The sot proffers the sot. [I2288_sot]
 The souvenir tea-towels proffers the souvenir tea-towels. [I596_souvenir_tea_towels]
