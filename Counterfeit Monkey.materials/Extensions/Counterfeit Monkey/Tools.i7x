@@ -578,20 +578,24 @@ After teeing something:
 	otherwise:
 		continue the action;
 	let N be the number of entries in the possible-goals;
-	say "[if t-count is 1]There is a loud and satisfying pop[otherwise]There are [t-count in words] small pops[end if] from the machine as it turns [the noun] into [a goal-object]. ";
+	say "[if t-count is 1]There is a loud and satisfying pop[otherwise]There are [t-count in words] small pops[end if] from the machine as it turns [the noun] into [a goal-object]. [run paragraph on]";
+	if the goal-object is not examined:
+		try examining the goal-object;
 	say "There now: the T-inserter has constructed [if N is 2]both[otherwise]all of[end if] [possible-goals]. Not very stable, it seems. Slango will be interested to know that.";
 	complete "Test T-inserter on situations where it could build more than one thing";
 	set pronouns from the goal-object;
-	try examining the goal-object;
 	abide by the dangerous construction rules for the goal-object instead.
 
 Report teeing something:
 	say "[if t-count is 1]There is a loud and satisfying pop[otherwise]There are [t-count in words] small pops[end if] from the machine as it turns [the noun] into [a goal-object].";
+	let line break needed be true;
+	if the goal-object is not examined:
+		try examining the goal-object;
+		now line break needed is false;
 	if the number of entries in the possible-goals is greater than 1:
 		let N be the number of entries in the possible-goals;
-		say "[line break]Of course, there were other options there: the T-inserter could have made [N in words] words. But it seems to be disambiguating to [the goal-object]. The question now is whether it would do so consistently or whether its behavi[our] is underdetermined; [we] don't have time for a really thorough trial set, but checking a couple more times may be indicative.";
+		say "[if line break needed is true][line break][end if]Of course, there were other options there: the T-inserter could have made [N in words] words. But it seems to be disambiguating to [the goal-object]. The question now is whether it would do so consistently or whether its behavi[our] is underdetermined; [we] don't have time for a really thorough trial set, but checking a couple more times may be indicative.";
 	set pronouns from the goal-object;
-	try examining the goal-object;
 	abide by the dangerous construction rules for the goal-object instead.
 
 Test it-construction with "autoupgrade / wave a-remover at pita / wave p-remover at pit / wave t-remover at it / put i in t-inserter / get it / wave t-remover at it / put i in t-inserter" holding the pita in the Sensitive Equipment Testing Room.
@@ -809,7 +813,8 @@ To synthesize contents of (source - a thing):
 		move the chosen article to the source;
 		record "using the synthesizer" as achieved;
 		say "[The source] [if the source is a container]hums like a microwave oven for 43 seconds, then pings. Inside there [is-are a list of things *in the source][otherwise]glows vibrant blue for five seconds, leaving behind [a list of things *in the source][end if].";
-		try examining the chosen article;
+		if the chosen article is not examined:
+			try examining the chosen article;
 		set pronouns from the chosen article;
 		now the chosen article is marked-visible;
 		now X is marked invisible;
@@ -2268,14 +2273,20 @@ After inserting something into the cryptolock:
 		now everything which is in the cryptolock is in the repository;
 		move the chosen article to the cryptolock;
 		abide by the dangerous construction rules for the chosen article;
+		if the chosen article is the cord and the power cord is in the cryptolock:
+			now the chosen article is the power cord;
 		unless the chosen article is in the Generator room:
-			say "There is a churning noise from within [the cryptolock], and a moment later [we] see inside [a list of things *in the cryptolock]. ";
+			say "There is a churning noise from within [the cryptolock], and a moment later [we] see inside [a list of things *in the cryptolock]. [run paragraph on]";
+		let paragraph break needed be true;
 		now the chosen article is marked-visible;
 		now the noun is marked invisible;
+		if the chosen article is not examined:
+			try examining the chosen article;
+			now paragraph break needed is false;
 		record "using the vowel rotator" as achieved;
 		if the boiler is switched off:
 			now the boiler is switched on;
-			say "[paragraph break]This appears to have unlocked the mechanism. With a growl, the boiler comes to life.";
+			say "[if paragraph break needed is true][paragraph break][end if]This appears to have unlocked the mechanism. With a growl, the boiler comes to life.";
 		otherwise:
 			say "The boiler growls but cannot become any more on than it already is.";
 	otherwise:
