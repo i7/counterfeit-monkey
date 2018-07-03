@@ -387,16 +387,17 @@ Before going west in Palm Square when the bathroom window is scenery:
 	now the bathroom window is not scenery instead.
 
 Before unlocking or entering or opening the locked apartment door when the player does not enclose the key and the player is not in My Apartment:
-	if the bathroom window is scenery
-	begin;
+	if the bathroom window is scenery:
 		reveal bathroom window;
 		say "You had me leave my keys behind, remember?
 
-But if you insist, my apartment is actually pitifully easy to break into. That window there opens onto the bathroom, and you can force it from the outside without much effort." instead;
-	otherwise;
+But if you insist, my apartment is actually pitifully easy to break into. That window there opens onto the bathroom, and you can force it from the outside without much effort. ";
+		unless the player is hurrying:
+			say paragraph break;
+		stop the action;
+	otherwise:
 		say "If we want to go into my apartment, we're going to have to climb in my window. Here, let me just streamline this process for us.";
-		try entering bathroom window instead;
-	end if.
+		try entering bathroom window instead.
 
 Understand "force [something openable]" or "force [something openable] open" as opening.
 
