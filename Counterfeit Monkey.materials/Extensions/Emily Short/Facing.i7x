@@ -111,15 +111,18 @@ Section -
 Carry out looking toward (this is the describing a room from afar rule):
 	carry out the distantly describing activity with the noun.
 
-Report someone trying looking toward (this is the default report someone looking toward rule): 
+Report someone trying looking toward (this is the default report someone looking toward rule):
 	let N be "[the noun]";
-	say "[The person asked] [look] toward [N in lower case]." (A)
+	now N is N in lower case;
+	say "[The person asked] [look] toward [N]." (A)
 
 Distantly describing something is an activity.
 
 Rule for distantly describing a room (called target) (this is the default distant description rule):
-	let N be "[the target]"; 
-	say "[We] [see] [N in lower case] that way." (A)
+	let N be "[the target]";
+	unless the target is proper-named:
+		now N is N in lower case;
+	say "[We] [see] [N] that way." (A)
 
 Facing ends here.
 
