@@ -353,7 +353,6 @@ The heft of some buses is 10. The description of buses is "There's a whole fleet
 
 Section 3 - C
 
-
 The description of the cacao-nub-heap is "A conical heap about six inches high, made of bits of unprocessed cacao bean." Understand "nub" or "heap" or "cacao" as the cacao-nub-heap. The printed name of the cacao-nub-heap is "cacao nub heap". The cacao-nub-heap is edible. The scent-description of the cacao-nub-heap is "chocolate".
 
 A cad is a man. The description of the cad is "He is dressed with careless elegance, as I would expect from a rake and betrayer of ladies. [one of]As [we] look in his direction, he smiles lazily.[or]His gaze smoulders.[or]He ignores you in a way that makes you long to know him better. I, on the other hand, am trying to roll our eyes.[or]He acknowledges our glance, then quite deliberately looks away. Do you really go for this stuff?[or]He looks us up and down as though calculating what exactly [we] look like under this modern attire.[as decreasingly likely outcomes]". Understand "gentleman" or "man" or "fellow" as the cad.
