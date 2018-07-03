@@ -18,7 +18,7 @@ Chapter - Setup
 
 Section - Disambiguation ID
 
-A disvalue is a kind of value. The disvalues are invalid-disvalue, default-disvalue, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11 and s12.
+A disvalue is a kind of value. The disvalues are invalid-disvalue, default-disvalue, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14 and s15.
 Understand "1" as s1.
 Understand "2" as s2.
 Understand "3" as s3.
@@ -31,6 +31,9 @@ Understand "9" as s9.
 Understand "10" as s10.
 Understand "11" as s11.
 Understand "12" as s12.
+Understand "13" as s13.
+Understand "14" as s14.
+Understand "15" as s15.
 
 Every thing has a disvalue called disambiguation id. The disambiguation id of something is usually default-disvalue. Every room has a disvalue called disambiguation id. The disambiguation id of a room is usually default-disvalue.
 
@@ -41,7 +44,7 @@ Include
 (-
 
 [ MyDecideDisvalue n;
-	if ((n < 1) || (n > 12))
+	if ((n < 1) || (n > 15))
 		return (+ invalid-disvalue +);
 	return n + 2;
 ];
