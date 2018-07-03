@@ -1628,6 +1628,11 @@ Well, it's actually just a sort of slimy stuff, and there's not a lot of it, as 
 
 But still, not what you'd put into a glossy brochure touting the miracles of letter manipulation."
 
+The oyster turd is fluid.
+
+Instead of taking the oyster turd:
+	say "No way! It is too fluid to easily pick up anyway."
+
 The heft of the Oz is 20. The description of the Oz is "Look, we've got ourselves a shiny new Australia. It's pretty large, though, isn't it?"
 
 Section 9 - Pa
