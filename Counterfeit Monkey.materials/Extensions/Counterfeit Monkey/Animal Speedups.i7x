@@ -37,12 +37,6 @@ Include
 				continue;
 			if (parent(burden) == real_location or player or (+ boulders +))
 				continue;
-			if ( burden == (+ pirate +))
-				continue;
-			if ( burden == (+ pirate-crew +))
-				continue;
-			if ( burden == (+ crew-group +))
-				continue;
 			if ( burden == (+ Brock +))
 				continue;
 			if ( burden == (+ mechanic +))
@@ -65,6 +59,17 @@ Include
 				else TableBlankOutRow((+ Table of voluntary entry +), row);
 
 			}
+			else
+				if ( parent(burden) == (+ programmable dais +) ) {
+					row = TableBlankRow((+ Table of voluntary entry +));
+					! [ now enterer entry is burden]
+					TableLookUpEntry((+ Table of voluntary entry +),(+ enterer +), row, 1, burden);
+					! [ now box entry is programmable dais ]
+					TableLookUpEntry((+ Table of voluntary entry +),(+ holder box +), row,1, (+ programmable dais +) );
+					! [ now time entry is time of day]
+					TableLookUpEntry((+ Table of voluntary entry +),(+ entrance time +), row, 1, the_time);
+					continue;
+				}
 			TryAction(0, burden, ##Exit, 0, 0);
 		}
 	];
