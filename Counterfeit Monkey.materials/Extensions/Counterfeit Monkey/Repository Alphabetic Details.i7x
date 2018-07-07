@@ -4001,11 +4001,20 @@ Understand "set [trap]" as opening.
 Sanity-check opening the trap:
 	if the trap is open:
 		make no decision;
-	if the trap is not in the location:
-		say "It would be difficult, not to mention unsafe, to try to set the trap when it's anywhere but on the [ground]." instead.
+	if the trap is not in location:
+		say "It would be difficult, not to mention unsafe, to try to set the trap when it's anywhere but on the [ground]." instead;
+	if Boar Attack is happening:
+		say "[one of][We] briefly struggle to get the trap open, but the boar goes straight for [us] and [we] have to run in order to avoid it[or][We] [are] not going to try that again[stopping]." instead;
+	if the location is nautical:
+		say "In this cramped space, one of our friends is likely to step into the trap, if [we] don't do it [ourselves]." instead.
 
 Report opening the trap:
-	say "[We] apply a great deal of pressure to the levers of the trap and finally manage to get the jaws open." instead.
+	say "[We] apply a great deal of pressure to the levers of the trap and finally manage to get the jaws open";
+	if Atlantida-woman is in location:
+		say ".[paragraph break]'Did you really expect me to walk into that?' Atlantida asks, eyebrows raised." instead;
+	if further guards is happening or guard-imminence is happening or portcullis-threat is happening:
+		say ". [We] shudder to think of the consequences should somebody step into it";
+	say "." instead.
 
 Sanity-check taking the open trap:
 	say "[We] don't want to get our hand anywhere near the trap while it's still set to spring." instead.
