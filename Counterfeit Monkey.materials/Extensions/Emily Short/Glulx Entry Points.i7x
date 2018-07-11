@@ -64,6 +64,8 @@ The glulx input handling rules have outcomes replace player input (success) and 
 
 [This is an I7 version of the event handling that was included in the I6 HandleGlkEvent routine in previous versions of Glulx Entry Points, with minor changes to allow any event type to provide a replacement command. Converted to I7 code in version 10.]
 
+To follow (RL - a rule) without linebreaks: (- FollowRulebook({RL}, 0, true); -).
+
 To decide what number is the value returned by glk event handling (this is the handle glk event rule):
 	now glulx replacement command is "";
 	follow the glulx input handling rules for the current glk event;
@@ -71,11 +73,11 @@ To decide what number is the value returned by glk event handling (this is the h
 		decide on input replacement;
 	if the outcome of the rulebook is the require input to continue outcome:
 		decide on input continuation;
-	follow the command-counting rules;
+	follow the command-counting rules without linebreaks;
 	if the rule succeeded:
-		follow the input-cancelling rules;
-		follow the command-showing rules;
-		follow the command-pasting rules;
+		follow the input-cancelling rules without linebreaks;
+		follow the command-showing rules without linebreaks;
+		follow the command-pasting rules without linebreaks;
 		if the [command-pasting] rule succeeded:
 			decide on input replacement.
 
