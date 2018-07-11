@@ -118,34 +118,36 @@ The glulx character input rules is a rulebook.
 The glulx line input rules is a rulebook.
 The glulx hyperlink rules is a rulebook.
 
+To abide by (RB - a rulebook) without linebreaks:
+	(- if (FollowRulebook({RB}, 0, true)) rtrue; -).
+
 [ These rules route input to the separate event-handling rulebooks originally used by older versions of Glulx Entry Points. They do nothing if we have activated the direct event handling use option. ]
 
 Last glulx input handling rule for a timer-event when the direct event handling option is not active (this is the redirect to GEP timed activity rule):
-	abide by the glulx timed activity rules.
+	abide by the glulx timed activity rules without linebreaks.
 
 Last glulx input handling rule for a char-event when the direct event handling option is not active (this is the redirect to GEP character input rule):
-	abide by the glulx character input rules.
+	abide by the glulx character input rules without linebreaks.
 
 Last glulx input handling rule for a line-event when the direct event handling option is not active (this is the redirect to GEP line input rule):
-	follow the glulx line input rules;
+	follow the glulx line input rules without linebreaks;
 	if the rule succeeded:
 		replace player input.
 
 Last glulx input handling rule for a mouse-event when the direct event handling option is not active (this is the redirect to GEP mouse input rule):
-	abide by the glulx mouse input rules.
+	abide by the glulx mouse input rules without linebreaks.
 
 Last glulx input handling rule for an arrange-event when the direct event handling option is not active (this is the redirect to GEP arranging rule):
-	abide by the glulx arranging rules.
+	abide by the glulx arranging rules without linebreaks.
 
 Last glulx input handling rule for a redraw-event when the direct event handling option is not active (this is the redirect to GEP redrawing rule):
-	abide by the glulx redrawing rules.
+	abide by the glulx redrawing rules without linebreaks.
 
 Last glulx input handling rule for a sound-notify-event when the direct event handling option is not active (this is the redirect to GEP sound notification rule):
-	abide by the glulx sound notification rules.
+	abide by the glulx sound notification rules without linebreaks.
 
 Last glulx input handling rule for a hyperlink-event when the direct event handling option is not active (this is the redirect to GEP hyperlink rule):
-	abide by the glulx hyperlink rules.
-
+	abide by the glulx hyperlink rules without linebreaks.
 
 
 Section - Debounce arrange events - unindexed

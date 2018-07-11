@@ -35,7 +35,7 @@ Include (-
 [ playGraphlink x y;
 	(+ current graphlink x +) = x;
 	(+ current graphlink y +) = y;
-	FollowRulebook( (+ clicking graphlink rules +) );
+	FollowRulebook( (+ clicking graphlink rules +), 0, true);
 ];
 
 [ SetGraphLink ;
