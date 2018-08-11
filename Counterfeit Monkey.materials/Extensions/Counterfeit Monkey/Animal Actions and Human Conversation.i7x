@@ -197,7 +197,7 @@ Table of Animal Sets
 grouping (list of animals)	epithet (some text)
 {roc}	", just managing to squeeze through in our wake"
 {peacock, cat-sample}	"[one of], with the cat making ambitious swipes at the peacock's tail[or], the peacock doing its best to keep away from the cat[stopping]"
-{cat-sample, cock, ass}	"[one of], like three quarters of the Bremen Musicians. I guess that makes us the dog[or], again[stopping]"
+{cat-sample, cock, ass}	"[one of], like three quarters of the Bremen Musicians. I guess that makes [us] the dog[or], again[stopping]"
 {cat-sample, earl}	": the cat seems to be entranced by the earl's trailing ermine"
 {pet-sample, cat-sample}	"[one of]: [the cat-sample] looks as though [they] would like to make short work of [the pet-sample], but [the pet-sample] [are] cunning and [keep] close to our leg[or], [the pet-sample] still carefully dodging being alone with [the cat-sample][or]: [the pet-sample] because [they] [don't] want to be alone with [the cat-sample], [the cat-sample] because [they] would like to catch up with [the pet-sample][or] again[stopping]"
 
@@ -213,13 +213,13 @@ Sanity-check attacking an animal:
 	say "[We] may be in serious trouble, but you're not the kind of person who would take it out on dumb animals. At least [--] yes, that's a relief. You're not the sort." instead.
 
 Sanity-check saying hello to an animal:
-	say "[The noun] [one of][blink][or][regard] us mutely[at random]." instead.
+	say "[The noun] [one of][blink][or][regard] [us] mutely[at random]." instead.
 
 Sanity-check saying hello to an insect:
 	say "Our greeting has no visible effect whatever on [the noun]." instead.
 
 Sanity-check saying goodbye to an animal:
-	say "[The noun] [one of][regard] us mutely[or][are] completely indifferent[at random]." instead.
+	say "[The noun] [one of][regard] [us] mutely[or][are] completely indifferent[at random]." instead.
 
 Sanity-check saying goodbye to an insect:
 	say "Predictably, [the noun] [do] not react." instead.
@@ -5798,7 +5798,7 @@ A description-concealing rule:
 		now restoration-gel rifle is not marked for listing.
 
 Rule for writing a topic sentence about Atlantida-woman:
-	say "[Atlantida-woman] stands between us and the eastern exit, backlit by sunlight[if the player is gelled and atlantida-woman carries the rifle]. [The rifle] hangs loose in her hand[otherwise if the player is not gelled and the atlantida-woman carries the rifle]. She has [the rifle] trained on our torso[end if]. ";
+	say "[Atlantida-woman] stands between [us] and the eastern exit, backlit by sunlight[if the player is gelled and atlantida-woman carries the rifle]. [The rifle] hangs loose in her hand[otherwise if the player is not gelled and the atlantida-woman carries the rifle]. She has [the rifle] trained on our torso[end if]. ";
 	if Atlantida-woman does not carry the restoration-gel rifle:
 		say "She dwarfs [the inlaid desk] and all the other furnishings in the room. ";
 		now the inlaid desk is mentioned;
@@ -5850,7 +5850,7 @@ To say pulley-fall:
 	say "[run paragraph on]".
 
 Before shooting the restoration-gel rifle with the anagramming gun when the player is not gelled:
-	say "She sees us moving the gun into position, and our reflexes are slower than hers." instead.
+	say "She sees [us] moving the gun into position, and our reflexes are slower than hers." instead.
 
 
 gel-shot is an NPC-directed quip.
@@ -5927,7 +5927,7 @@ thing-about-democracy is an NPC-directed quip.
 The infertile astrologer sidles closer to us, smiling and making hand signs that I think are supposed to represent Aries. Old bat.[otherwise].'[end if]"
 
 After examining the infertile astrologer when Atlantida-woman does not recollect thing-about-democracy:
-	say "She's investigating the room and muttering to herself, but Atlantida seems to be ignoring her for the most part. She'll have worked her way over by us soon."
+	say "She's investigating the room and muttering to herself, but Atlantida seems to be ignoring her for the most part. She'll have worked her way over by [us] soon."
 
 After examining the infertile astrologer when Atlantida-woman recollects thing-about-democracy:
 	say "She's standing within arm's reach now."
@@ -5959,7 +5959,7 @@ Before putting restoration gel on the infertile astrologer:
 		queue not-long-now as immediate obligatory.
 
 Instead of throwing the tub at the Atlantida-woman:
-	say "We fling the tub at her. Unfortunately, the gel is sticky enough that it doesn't, as I had sort of hoped, spill out all over her. She dodges, then hurls it back at us [--] and she has better aim[casually queue anti-gel comment]."
+	say "[We] fling the tub at her. Unfortunately, the gel is sticky enough that it doesn't, as [we] had sort of hoped, spill out all over her. She dodges, then hurls it back at [us] [--] and she has better aim[casually queue anti-gel comment]."
 
 Instead of going somewhere in the presence of Atlantida-woman:
 	say "'I don't think so,' says Atlantida. As she's physically about twice our mass, I think she'll win this one."
@@ -5975,7 +5975,7 @@ cutting-remark is an NPC-directed quip.
 
 
 Before putting restoration gel on Atlantida-woman:
-	say "[We] dab a bit on our finger and approach, but she is far too large, far too spry. She catches our wrist and forces us aside, until the gel is harmlessly absorbed into our own skin[casually queue anti-gel comment]." instead.
+	say "[We] dab a bit on our finger and approach, but she is far too large, far too spry. She catches our wrist and forces [us] aside, until the gel is harmlessly absorbed into our own skin[casually queue anti-gel comment]." instead.
 
 anti-gel comment is an NPC-directed quip.
 	The reply is "'Oh, no, my dear,' Atlantida says. 'They could remake me, but it wouldn't be the [i]same[/i] me, would it? It would be some new construct. The Atlantida of today. And that's not the way to a consistent policy, is it?'"
@@ -6056,7 +6056,7 @@ After attacking atlantida-woman  with something when Atlantida-woman carries the
 		say "Atlantida raises the rifle and fires with certain aim before the blow has a chance to land. [run paragraph on]";
 		gel-convert the second noun;
 	otherwise:
-		say "[We] leap forward and slash with [the second noun][one of]. She parries the blow with the body of [the restoration-gel rifle]. It doesn't even look damaged[or]. She wards us off with the rifle[or]. She dodges[at random]."
+		say "[We] leap forward and slash with [the second noun][one of]. She parries the blow with the body of [the restoration-gel rifle]. It doesn't even look damaged[or]. She wards [us] off with the rifle[or]. She dodges[at random]."
 
 Report attacking atlantida-woman with the leaf:
 	say "[We] wield the leaf like a dagger[one of] and slice across her arm, drawing blood. She recoils, angry but not deterred[or]. This time [we] don't manage to land another blow[stopping]." instead.
@@ -6078,7 +6078,7 @@ Instead of throwing something at atlantida-woman:
 		say "[We] fling [the noun] at Atlantida, but [one of][they] [bounce] off unexcitingly and [land] on[or]with a swipe of her arm she deflects [them] to[at random] [the random-destiny].";
 		move the noun to the random-destiny;
 	otherwise if the heft of the noun is greater than 3:
-		say "[The noun] [are] too heavy for us to throw at all effectively.";
+		say "[The noun] [are] too heavy for [us] to throw at all effectively.";
 	otherwise:
 		say "[We] chuck [the noun] at Atlantida. [They] [strike] her hard enough to elicit an outraged 'Oof!', but that doesn't seem to have substantially impaired her."
 
@@ -6122,7 +6122,7 @@ So you tell me how it's going to be. Are you going to stay and see to things? >>
 To extend scene time:
 	while the number of filled rows in the Table of Guard Warnings is less than 10:
 		choose a blank row in the Table of Guard Warnings;
-		now description entry is "[one of]Strangely quiet out there[or]No signs of anyone coming for us quite yet[or]The lull continues[at random]."
+		now description entry is "[one of]Strangely quiet out there[or]No signs of anyone coming for [us] quite yet[or]The lull continues[at random]."
 
 Further guards is a scene. Further guards begins when atlantida chat has ended and the time since atlantida chat ended is at least 2 minutes.
 
@@ -6210,7 +6210,7 @@ Test lastmeeting with "tutorial off / establish / unlegend / load gun / open tub
 
 Section 14 - The Nicer Atlantida
 
-Atlantida-refreshed is a woman. "Atlantida stands nearby, urging us to hurry out via the Private Solarium[one of]. I think she's enjoying her role as conspiratorial heroine[or][stopping]." The printed name of atlantida-refreshed is "Atlantida". Understand "atlantida" as atlantida-refreshed. The description of Atlantida-refreshed is "She looks very similar to her earlier self, but the differences are there. The eyes are grey now. A tattoo of a writhing squid encircles her left wrist. Her face is younger."
+Atlantida-refreshed is a woman. "Atlantida stands nearby, urging [us] to hurry out via the Private Solarium[one of]. I think she's enjoying her role as conspiratorial heroine[or][stopping]." The printed name of atlantida-refreshed is "Atlantida". Understand "atlantida" as atlantida-refreshed. The description of Atlantida-refreshed is "She looks very similar to her earlier self, but the differences are there. The eyes are grey now. A tattoo of a writhing squid encircles her left wrist. Her face is younger."
 
 Atlantida-shooing is a scene. Atlantida-shooing begins when guard-imminence ends in postponement.
 

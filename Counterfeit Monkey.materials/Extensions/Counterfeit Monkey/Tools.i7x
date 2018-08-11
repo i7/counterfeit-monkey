@@ -1073,7 +1073,7 @@ Looking at it through is an action applying to one visible thing and one carried
 Check an actor looking at something through something:
 	if the second noun is not an Authentication Scope
 	begin;
-		if the actor is the player, say "[The second noun] won't give us a clear view of [the noun]." instead;
+		if the actor is the player, say "[The second noun] won't give [us] a clear view of [the noun]." instead;
 		stop the action;
 	end if.
 

@@ -26,7 +26,7 @@ A dangerous destruction rule for something (called changed seat) which encloses 
 
 The problem is that [they] [take] us along with [them].
 
-I've always wondered what this last passage to non-existence might be like. It turns out that there is a rushing noise, and a tunnel [we] travel very rapidly towards darkness; and all around us are other objects also in the middle of ceasing to be.";
+I've always wondered what this last passage to non-existence might be like. It turns out that there is a rushing noise, and a tunnel [we] travel very rapidly towards darkness; and all around [us] are other objects also in the middle of ceasing to be.";
 		end the story saying "[We] have left existence behind";
 		rule fails;
 	say "Instantly [the changed seat] [cease] to exist. [The irate victim], real[izing] what [we] [are] about just in time, has managed to leap out of the way, however; and the result is a hasty call to the police to report an Attempt to Render Inanimate, a charge pursued as though it were murder in most circumstances.";
@@ -47,7 +47,7 @@ Definition: a thing is enormous if the heft of it is greater than 8.
 The dangerous construction rules are an object-based rulebook.
 
 A dangerous construction rule for the ape:
-	say "The ape turns its face towards us and takes us in dislike. Its dislike involves a lot of hitting and ooking and throwing, and overall turns out quite painful.";
+	say "The ape turns its face towards [us] and takes [us] in dislike. Its dislike involves a lot of hitting and ooking and throwing, and overall turns out quite painful.";
 	end the story saying "That could have gone better";
 	rule succeeds.
 
@@ -61,7 +61,7 @@ A dangerous construction rule for a sink (called target sink):
 		now target sink is portable.
 
 A dangerous construction rule for something enormous (called the target):
-	say "Unfortunately, [the target] [are] more than sufficient to bury us under [their] bulk.";
+	say "Unfortunately, [the target] [are] more than sufficient to bury [us] under [their] bulk.";
 	end the story saying "That could have gone better";
 	rule succeeds;
 
@@ -71,7 +71,7 @@ Report waving the letter-remover at something creating the all:
 A dangerous construction rule for the all:
 	say "There is a hum of ferocious effort from the letter-remover as it strains to create 'all'. At first it seems likely that it will just break down, but ";
 	if the letter-remover is creature-enabled:
-		say "it gets through the aa (a spontaneous flow of lava) and the aardvark, before the aardwolf attacks and does us in.";
+		say "it gets through the aa (a spontaneous flow of lava) and the aardvark, before the aardwolf attacks and does [us] in.";
 	otherwise:
 		say "it gets through the aa (a spontaneous flow of lava); skips all creatures of the aard- variety thanks to its restraints on living animal-creation; and goes on to the abaca (a large hemp-yielding plant).
 

@@ -64,8 +64,8 @@ The description of the all is "It's everything. That simple." The all is r-abstr
 
 I also considered Amy Pond, but as I find her kind of annoying, I couldn't bring myself to do it.]
 
-The description of an Amy is usually "She smiles at us when we look at her. She has an air of confused good will, as though she means well but isn't quite paying attention to this plane of reality."
-	The greeting of an Amy is usually "'Oh, hello,' says Amy. She blinks at us a few times in surprise and then seems to forget again that we're here."
+The description of an Amy is usually "She smiles at [us] when we look at her. She has an air of confused good will, as though she means well but isn't quite paying attention to this plane of reality."
+	The greeting of an Amy is usually "'Oh, hello,' says Amy. She blinks at [us] a few times in surprise and then seems to forget again that we're here."
 
 The description of the anagram bullet is "Just one by itself. It can't be loaded like this, but it still manages to look vaguely sinister. It's heavy for its size and has a pointed end."
 
@@ -78,7 +78,7 @@ The ant is an insect. The heft of the ant is 0. The description is "This particu
 An applet is r-abstract. The heft is 0. The description is "An abstract representation. An anonymous browser window appears to hover in the air, [one of][if protest-scenario has happened and protest-scenario ended in DP-tanking]currently replaying a satellite footage of the deplural[ization] a few hours ago[otherwise]currently showing satellite footage of the big demonstration a few hours ago[end if][or]streaming a television show from one of Atlantis['] top chefs, demonstrating how to depluralize fruit for best effect. [one of]'Single varietal fruits produce the most intense flav[our],' she's explaining to the screen, a bushel of limes at her side[or]'A mixture of different varieties can produce a well-structured blend, as with a Bordeaux,' she continues[cycling][or]currently playing streaming video of a rally by the Atlantean Anti-Babel Party[or]streaming news clips of the Serial Comma Day celebration[or]streaming a public service message about keeping letter tools out of the hands of children[or]currently playing a web game about jumping cats[or]currently playing a text-based web game[as decreasingly likely outcomes]."
 
 The ape is a neuter animal.
-The initial appearance is "The ape, which is of the menacing kind rather than of the sweetly charming kind, has us fixed in an unpleasant stare."
+The initial appearance is "The ape, which is of the menacing kind rather than of the sweetly charming kind, has [us] fixed in an unpleasant stare."
 The description is "It is very large."
 
 The description of the arc is "A bent bow of steel, but more decorative than functional." The heft is 3.
@@ -377,7 +377,7 @@ The description of the breathable silky cotton is "A bolt of very pleasant mater
 
 The description of the brown tee is "It's a brown wooden peg for putting a golf ball on. Apparently the All-Purpose Officer performed a little light R-insertion when he found himself in need of a portable tree." The heft of the brown tee is 1. The brown tee is scenery.
 
-The bull is an animal. The description of the bull is "He looks as though he has just been transported away from his cows, and he isn't at all pleased about the change. As a matter of fact, he blames us personally."
+The bull is an animal. The description of the bull is "He looks as though he has just been transported away from his cows, and he isn't at all pleased about the change. As a matter of fact, he blames [us] personally."
 
 The heft of the bund is 10. The description of the bund is "An earthwork embankment designed to prevent oil repositories from bursting their banks and spilling into the surrounding waters."
 
@@ -389,7 +389,7 @@ Section 3 - C
 
 The description of the cacao-nub-heap is "A conical heap about six inches high, made of bits of unprocessed cacao bean." Understand "nub" or "heap" or "cacao" as the cacao-nub-heap. The printed name of the cacao-nub-heap is "cacao nub heap". The cacao-nub-heap is edible. The scent-description of the cacao-nub-heap is "chocolate".
 
-A cad is a man. The description of the cad is "He is dressed with careless elegance, as I would expect from a rake and betrayer of ladies. [one of]As [we] look in his direction, he smiles lazily.[or]His gaze smoulders.[or]He ignores you in a way that makes you long to know him better. I, on the other hand, am trying to roll our eyes.[or]He acknowledges our glance, then quite deliberately looks away. Do you really go for this stuff?[or]He looks us up and down as though calculating what exactly [we] look like under this modern attire.[as decreasingly likely outcomes]". Understand "gentleman" or "man" or "fellow" as the cad.
+A cad is a man. The description of the cad is "He is dressed with careless elegance, as I would expect from a rake and betrayer of ladies. [one of]As [we] look in his direction, he smiles lazily.[or]His gaze smoulders.[or]He ignores you in a way that makes you long to know him better. I, on the other hand, am trying to roll our eyes.[or]He acknowledges our glance, then quite deliberately looks away. Do you really go for this stuff?[or]He looks [us] up and down as though calculating what exactly [we] look like under this modern attire.[as decreasingly likely outcomes]". Understand "gentleman" or "man" or "fellow" as the cad.
 	The scent-description of the cad is "old-fashioned cologne".
 
 Rule for writing a topic sentence about the cad:
@@ -456,7 +456,7 @@ Sanity-check pushing or pulling or turning a cat:
 	say "[We] could do that, but cats are notoriously uncooperative about staying where put." instead.
 
 Instead of smiling at a cat:
-	say "[We] smile. [The noun] regards us with steady disdain."
+	say "[We] smile. [The noun] regards [us] with steady disdain."
 Instead of frowning at a cat:
 	say "[We] frown. [The noun] does not seem much abashed."
 
@@ -668,7 +668,7 @@ The chowder pro is a woman. The description of the chowder pro is "She's a proud
 Some coasts are a thing. The heft of the coasts is 12. The description is "A vast rocky coastline too large to fit in the present confines."
 
 [cock]
-The cock is a bird. It is noisy. The flexible appearance of the cock is "[if the cock is in the location]Wandering around nearby, for all the world as though this were a barnyard, is a large red-headed cock[otherwise]The cock [we] made earlier is regarding us suspiciously[end if]." The description of the cock is "It stares back at us malevolently through one eye." The heft of the cock is 3.
+The cock is a bird. It is noisy. The flexible appearance of the cock is "[if the cock is in the location]Wandering around nearby, for all the world as though this were a barnyard, is a large red-headed cock[otherwise]The cock [we] made earlier is regarding [us] suspiciously[end if]." The description of the cock is "It stares back at [us] malevolently through one eye." The heft of the cock is 3.
 	The scent-description of the cock is "something objectionable".
 
 Instead of listening to the cock:
@@ -703,8 +703,8 @@ The conference-poser is a woman.
 The printed name is "conference poser".
 Understand "conference" or "poser" as the conference-poser.
 The initial appearance is "The conference poser stands in the corner, cultivating an expression of keen intellectual skepticism."
-The description of the conference-poser is "She looks back at us with a martial gleam of the eye, willing us to be impressed by her.".
-	The greeting of the conference-poser is "The conference poser looks at us a little hazily and says, 'Oh, yes, didn't we meet at the [one of]Linguistics and Empire[or]Post-Colonial Consonants[or]Concept Formation Through Hiphop[or]Ecologically Responsible Linguistics[at random] [one of]symposium[or]workshop[or]conference[at random] in [one of]San Diego[or]Austin[or]Minsk[or]Liverpool[or]Lampeter[or]Montreal[or]Cologne[at random] [one of]last year[or]last winter[or]back in [a random number between 1995 and 2009][at random]?'"
+The description of the conference-poser is "She looks back at [us] with a martial gleam of the eye, willing [us] to be impressed by her.".
+	The greeting of the conference-poser is "The conference poser looks at [us] a little hazily and says, 'Oh, yes, didn't we meet at the [one of]Linguistics and Empire[or]Post-Colonial Consonants[or]Concept Formation Through Hiphop[or]Ecologically Responsible Linguistics[at random] [one of]symposium[or]workshop[or]conference[at random] in [one of]San Diego[or]Austin[or]Minsk[or]Liverpool[or]Lampeter[or]Montreal[or]Cologne[at random] [one of]last year[or]last winter[or]back in [a random number between 1995 and 2009][at random]?'"
 
 Every turn when the conference-poser is in the location:
 	say "[The conference-poser] says, '[one of]Yes, but we haven't really [i]problemat[ize]d[/i] [the random-visible-thing][or]I think a [one of]Marxist[or]Keynesian[or]Lacanian[or]Saussurian[or]Derridean[at random] understanding of [the random-visible-thing] is not, indeed cannot be, useful to us at this juncture[or]Statistical sentence analysis of a sufficient corpus of materials ought to reveal the likeliest forms for [a random r-abstract thing][or]What we have not considered is the possibility of synonym shame, for instance with words such as [i]donkey[/i] or [i]rooster[/i][or]My field is the study of hispanogerontology, the illicit practice of giving seniors a new lease on life by turning them into Señors[at random].'"
@@ -894,7 +894,7 @@ The elegantly winter pilot is a woman. Understand "aviatrix" or "slim" or "alert
 	The greeting of the elegantly winter pilot is "The pilot's greeting is a series of unidentifiable syllables. But somehow they hint at black forests dusted with snow, and a single jingling sleigh."
 
 The elf nun is a woman. Understand "pale" or "pointed" or "ears" or "white-blonde" or "hair" as the elf nun.
-	The initial appearance is "The elf nun stands watching us. Her eyes are very dark, almost blue-black."
+	The initial appearance is "The elf nun stands watching [us]. Her eyes are very dark, almost blue-black."
 	The description of the elf nun is "Her expression is deep and unreadable. From under her wimple, pale pointed ears and a few whisps of white-blonde hair show."
 	The elf nun wears a wimple. The description of the wimple is "Embroidered in white on white with Celtic crosses and patterns that speak of Kells."
 	The greeting of the elf nun is "'Blessings of growth and renewal be upon you,' says the elf nun. Her accent is sing-song and alien."
@@ -1211,7 +1211,7 @@ Some ills are r-abstract. The description of ills is usually "They manifest as l
 
 An ill is r-abstract. The description of an ill is usually "It manifests as a little ball of malevolence, like a palm-sized thundercloud. It looks like it's a generic item from phrases like 'to wish someone ill,' which is a mercy; I don't think I would have liked manifesting illness, even abstractly.
 
-Periodically it gains cartoonish eyes and eyebrows, and glowers at us."
+Periodically it gains cartoonish eyes and eyebrows, and glowers at [us]."
 
 [Not actually in the repository at present — too easy?]
 An in-object is r-abstract. The printed name is "in". The description is usually "It represents the idea of having a connection or a way in to a normally closed institution. What my father would call networking and Slango would call nepotism, and my mother would have no name for at all because to her it is the normal way of the world everywhere.
@@ -1229,11 +1229,11 @@ An ink is usually contained and fluid. The indefinite article is "some". The des
 Understand "write [text] with [ink]" as a mistake ("Ink like this requires the right kind of pen; we neither have nor need such a thing.").
 
 The infertile astrologer is a woman. The description of the infertile astrologer is "She's a woman with long grey hair, well past menopause." Understand "woman" as the infertile astrologer.
-	The greeting of the infertile astrologer is "'This meeting was predicted in the stars,' the astrologer informs us."
+	The greeting of the infertile astrologer is "'This meeting was predicted in the stars,' the astrologer informs [us]."
 
 Every turn when the infertile astrologer is in the location:
 	if a random chance of 1 in 2 succeeds:
-		say "[one of]'Mercury is in retrograde,' comments the astrologer. 'Expect disordered communications.'[or]The astrologer looks at us. 'Gemini, am I right?'[or]'Today is a day of revelation,' announces the astrologer.[or]'We concern ourselves with the colonial tents,' the astrologer admits.[in random order]".
+		say "[one of]'Mercury is in retrograde,' comments the astrologer. 'Expect disordered communications.'[or]The astrologer looks at [us]. 'Gemini, am I right?'[or]'Today is a day of revelation,' announces the astrologer.[or]'We concern ourselves with the colonial tents,' the astrologer admits.[in random order]".
 
 The printed name of the intaglio-pins is "intaglio pins". Understand "intaglio" or "pins" or "pin" as the intaglio-pins. The intaglio-pins are wearable. The description of the intaglio-pins is "A collection of crystal pins, with cameos of great figures carved into the backs of the crystal to give the impression (from the front) of a bust in low relief. They look like elegant antiques, if not worth a hundredth the value of the paintings."
 
@@ -1259,7 +1259,7 @@ The jack is a long strong thing. The description is "A heavy-duty jack, suitable
 
 [add: use jack on portcullis, put jack under portcullis, jack portcullis, raise portcullis with jack, raise portcullis]
 
-The jackass is a man. The description is "He's a middle-aged fellow with a yellowing smile. His eyes are unfriendly, and he's looking us over very suspiciously. Taking the least charitable possible view of everyone else's motives, then going off on offensive rants: that'll be his personal specialty."
+The jackass is a man. The description is "He's a middle-aged fellow with a yellowing smile. His eyes are unfriendly, and he's looking [us] over very suspiciously. Taking the least charitable possible view of everyone else's motives, then going off on offensive rants: that'll be his personal specialty."
 	The greeting of the jackass is "'Suppose you brought me here to hit me up for money,' says the jackass sourly. 'Might've known.'"
 
 The jigsaw is a device. Understand "tool" as the jigsaw. The description is "It's a portable power saw with the ability to slice right through wood or plastic. Dewalt cordless, if you're interested, with a massive battery."
@@ -1300,7 +1300,7 @@ Instead of putting something which is not the gel on the keyring:
 	say "Only keys can really be attached."
 
 The kind ladies are a plural-named woman. The description of the kind ladies is "They appear extremely earnest and helpful [--] some maternal, others more like that well-meaning aunt who is always asking if you need help with things because she really hasn't got anything to do at home."
-	The greeting of the kind ladies is "They look at us and wave, regal little waves."
+	The greeting of the kind ladies is "They look at [us] and wave, regal little waves."
 
 The kudu is a neuter animal. The description of the kudu is "It's a creature like an antelope, with tall, twisting horns and a little white tuft of beard."
 
@@ -2861,7 +2861,7 @@ If [we] crane as far as [we] safely can over our left shoulder, [we] can see the
 
 When roc-soaring ends:
 	say "I keep thinking [we] [are] going to lose our grip, but somehow [we] manage to stay on. Sooner than I expect, [we] make out the shine of Slango's yacht, and in the next moment [we] [are] above it. The roc circles once or twice before coming to land on the Sunning Deck.";
-	now the initial appearance of Slango is "Slango is out, having seen us landing. He looks nervy.";
+	now the initial appearance of Slango is "Slango is out, having seen [us] landing. He looks nervy.";
 	move the roc to the Sunning Deck;
 	set the current interlocutor to Slango;
 	[queue altern-where-is-Brock as immediate obligatory;]
@@ -2883,9 +2883,9 @@ After looking when the location is Open Sea and the roc is in Abandoned Shore:
 The printed name of a plural-rock is "rocks". A plural-rock is plural-named. Understand "rocks" as a plural-rock. The description of the plural-rock is "A heap of fist-sized rocks suitable for cobbling a path."]
 
 The rock-band is a person. The printed name of the rock-band is "rock band". Understand "rock" or "band" as the rock-band. The heft of the rock-band is 10. The description of the rock-band is "The band consists of a hot drummer, two long-haired guitarists, and a male vocalist with flame tattoos on his arms."
-	The greeting of a rock-band is "[one of]The drummer waves, one of the guitarists gives us the finger, and the male vocalist offers to sign his name on the breast of our choice. 'Left, right, or I can do across both.'
+	The greeting of a rock-band is "[one of]The drummer waves, one of the guitarists gives [us] the finger, and the male vocalist offers to sign his name on the breast of our choice. 'Left, right, or I can do across both.'
 
-We decline[or]The band offers another motley greeting[stopping]."
+[We] decline[or]The band offers another motley greeting[stopping]."
 
 
 
@@ -2916,10 +2916,10 @@ The rump stabber is a man. The description is "He is of less than average height
 
 Every turn when the rump stabber is in the location:
 	if a random chance of 1 in 3 succeeds:
-		say "The rump stabber gets into a good position and then, before we can turn around, stabs us in the behind.";
+		say "The rump stabber gets into a good position and then, before [we] can turn around, stabs [us] in the behind.";
 		end the story saying "Ouch.";
 	else:
-		say "The rump stabber keeps trying to angle around and stand behind us."
+		say "The rump stabber keeps trying to angle around and stand behind [us]."
 
 The rum stabber is a woman. The description is "She looks around in bewilderment, but there's no rum for her to attack."
 
@@ -2944,7 +2944,7 @@ The description of the salt is "A quantity of fluffy, slightly blue sea-salt, su
 
 The description of the saltcat is "It's a mixture of salt, lime, and meal, used to catch pigeons." The indefinite article of the saltcat is "some".
 
-The description of a sap is "A slack-faced fellow, eager to believe what he's told. The grin he's giving us right now is usually found only on golden retrievers."
+The description of a sap is "A slack-faced fellow, eager to believe what he's told. The grin he's giving [us] right now is usually found only on golden retrievers."
 
 The sap-dispenser is a closed container. The printed name is "sap dispenser". Understand "sap dispenser" or "dispenser" as the sap-dispenser. Understand "sap" as the sap-dispenser when the sap-liquid is marked invisible. It is fixed in place. The initial appearance of the sap-dispenser is "A sap dispenser hangs beside the mirror." The description of the sap-dispenser is "It's the kind where a squeeze will dispense sap into the sink[if the sap-liquid is not in the sap-dispenser]. It is also empty[end if]."
 
@@ -2980,7 +2980,7 @@ A screwdriver-drink is a contained fluid edible thing. The printed name of a scr
 The sed is r-abstract. The description of the sed is "A gibbering nonsense of streaming letters, slashes, and dots, which I am not able to interpret. Like perl, but older."
 
 
-The setter automaton is a push-button device. The heft of the setter automaton is 3. The description of the setter automaton is "It's a little like one of those Japanese robot dogs, only substantially more old-fashioned and artisanal. Its bright glass eyes watch us expectantly and its ruddy fur is thick and lustrous.".
+The setter automaton is a push-button device. The heft of the setter automaton is 3. The description of the setter automaton is "It's a little like one of those Japanese robot dogs, only substantially more old-fashioned and artisanal. Its bright glass eyes watch [us] expectantly and its ruddy fur is thick and lustrous.".
 
 Instead of switching on the setter automaton:
 	say "The setter automaton runs in a circle and barks several times, then sits expectantly and shuts off again."
@@ -2998,7 +2998,7 @@ The sharp limit is an r-abstract thing. The heft is 0. The description of the sh
 The shopping gab is an r-abstract noisy thing. The heft is 0. The description of the shopping gab is "Borrowed from some shopping channel, a perky announcer voice offers discounts on various Atlantean products."
 
 Instead of listening to the shopping gab:
-	say "The announcer currently wants us to know about [one of]cubic zirconia earrings in the shape of a squid plant[or]a juicer for making chard smoothies in your very own kitchen[or]the price of a pair of new hand towels[at random]."
+	say "The announcer currently wants [us] to know about [one of]cubic zirconia earrings in the shape of a squid plant[or]a juicer for making chard smoothies in your very own kitchen[or]the price of a pair of new hand towels[at random]."
 
 The description of the shred is "Just a torn rag-end of cloth. It is white and blue, and bears every evidence of having been part of an obligatory-service uniform." The shred is floppy and wearable. The heft of the shred is 1.
 
@@ -4107,7 +4107,7 @@ The trill is an r-abstract noisy thing. The heft of the trill is 0. The descript
 Instead of listening to the trill: say "The trill keeps on trilling."
 
 The troll is a man.
-The initial appearance is "The troll [one of]grunts[or]looks at us with an unpleasantly hungry expression[or]picks its nose[or]pounds one of its meaty fists into the opposite palm[or]looks around for something to smash[at random]."
+The initial appearance is "The troll [one of]grunts[or]looks at [us] with an unpleasantly hungry expression[or]picks its nose[or]pounds one of its meaty fists into the opposite palm[or]looks around for something to smash[at random]."
 The description of the troll is "Grey skin, yellow teeth, green eyes. Legs as big around as tree trunks. A pot belly, speaking of a great deal of food eaten raw."
 The greeting of the troll is "The troll grunts."
 
