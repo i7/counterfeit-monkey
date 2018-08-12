@@ -234,9 +234,7 @@ Section - Command showing rules
 The command-showing rules are a rulebook.
 
 A command-showing rule (this is the print text to the input prompt rule):
-	say input-style-for-glulx;
-	say Glulx replacement command;
-	say roman type;
+	say "[input-style-for-glulx][Glulx replacement command][roman type][conditional paragraph break]";
 
 To say input-style-for-Glulx:
 	(- glk_set_style(style_Input); -)
