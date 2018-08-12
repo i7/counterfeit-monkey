@@ -49,13 +49,13 @@ Include (-
 	! Call the real glk_select
 	@push event_struct;
 	@glk 192 1 0;
-	
+
 	! Copy values to our variables
 	GE_Event_Struct_type = event_struct-->0;
 	GE_Event_Struct_win = event_struct-->1;
 	GE_Event_Struct_val1 = event_struct-->2;
 	GE_Event_Struct_val2 = event_struct-->3;
-	
+
 	! Run the glulx input handling rules
 	!FollowRulebook( (+ the glulx input handling rules +), GE_Event_Struct_type, true );
 
