@@ -57,7 +57,7 @@ Include (-
 	GE_Event_Struct_val2 = event_struct-->3;
 	
 	! Run the glulx input handling rules
-	FollowRulebook( (+ the glulx input handling rules +), GE_Event_Struct_type, true );
+	!FollowRulebook( (+ the glulx input handling rules +), GE_Event_Struct_type, true );
 
 	! Copy back to the original event structure
 	event_struct-->0 = GE_Event_Struct_type;
