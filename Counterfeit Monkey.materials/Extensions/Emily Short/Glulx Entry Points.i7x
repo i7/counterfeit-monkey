@@ -248,9 +248,11 @@ The command-pasting rules are a rulebook.
 
 A command-pasting rule (this is the glue replacement command into parse buffer rule): 
 	change the text of the player's command to the Glulx replacement command;
+	copy input to secondary buffer;
 	rule succeeds.
 
-
+To copy input to secondary buffer:
+	(- VM_CopyBuffer(buffer2, buffer); -)
 
 Glulx Entry Points ends here.
 
