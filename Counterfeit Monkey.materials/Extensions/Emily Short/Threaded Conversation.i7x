@@ -295,7 +295,7 @@ Definition: a quip is recent
 	or it is the previous quip
 	or it is the grandparent quip.
 
-Definition: a quip (called target) is plausible:
+Definition: a quip is plausible:
 	if the current interlocutor is not a person, no;
 	if it is not flagged-ready, no;
 	follow the plausibility rules for it;
@@ -309,7 +309,7 @@ Availability rules are an object-based rulebook. The availability rules have out
 [	Availability determines whether a given quip is even allowed to be used. Available quips are a superset of plausible quips, which are limited to those quips that are contextually relevant,	]
 [	but (depending on the system) might not include everything that the player could reasonably choose to talk about at the moment.	]
 
-Definition: a quip (called target quip) is available:
+Definition: a quip is available:
 	follow the availability rules for it;
 	if the outcome of the rulebook is the it is available outcome:
 		yes.
