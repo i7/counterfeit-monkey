@@ -2,22 +2,18 @@ Echo replacement by Counterfeit Monkey begins here.
 
 Use authorial modesty.
 
-Suppressing echo is a truth state that varies.
 Echoed already is a truth state that varies.
 
 Include (-
 
-Global suppressing_echo = 0;
 Global echoed_already = 0;
 
 -) after "Definitions.i6t".
 
-The suppressing echo variable translates into I6 as "suppressing_echo".
 The echoed already variable translates into I6 as "echoed_already".
 
 When play begins (this is the check for echo suppression support rule):
 	if glulx line input echo suppression is supported:
-		now suppressing echo is true;
 		suppress line input echo in the main window.
 
 To suppress line input echo in the/-- main window:
@@ -187,7 +183,7 @@ Include (-
 
 	! === NEW ===
 
-    if (suppressing_echo == 1 && echoed_already == 0) {
+    if ((glk_gestalt(gestalt_LineInputEcho, 0)) && echoed_already == 0) {
 		glk_set_style(style_Input);
     	for (ix=WORDSIZE: ix<(a_buffer-->0)+WORDSIZE: ix++) print (char) a_buffer->ix;
     	style roman;
