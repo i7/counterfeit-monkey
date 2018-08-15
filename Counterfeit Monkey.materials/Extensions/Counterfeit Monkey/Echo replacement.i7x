@@ -183,11 +183,11 @@ Include (-
 
 	! === NEW ===
 
-    if ((glk_gestalt(gestalt_LineInputEcho, 0)) && echoed_already == 0) {
+	if ((glk_gestalt(gestalt_LineInputEcho, 0)) && echoed_already == 0) {
 		glk_set_style(style_Input);
-    	for (ix=WORDSIZE: ix<(a_buffer-->0)+WORDSIZE: ix++) print (char) a_buffer->ix;
-    	style roman;
-    	print "^";
+		for (ix=WORDSIZE: ix<(a_buffer-->0)+WORDSIZE: ix++) print (char) a_buffer->ix;
+		style roman;
+		print "^";
     }
     echoed_already = 0;
 
