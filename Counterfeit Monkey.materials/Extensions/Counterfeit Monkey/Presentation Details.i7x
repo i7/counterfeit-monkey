@@ -640,4 +640,6 @@ To say post-restore routine:
 		if the graphics window is g-present:
 			close the graphics window.
 
+[The last line above will close the graphics window if we have switched off graphics but restore a game made with graphics on. Some interpreters, such as Spatterlight and Zoom, will still show the graphics window for a split-second on restore.]
+
 Presentation Details ends here.
