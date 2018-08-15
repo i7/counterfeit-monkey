@@ -332,8 +332,10 @@ The File of Conclusions is called "monkeyac".
 When play begins (this is the load conclusions when starting rule):
 	read the achievements.
 
-Last carry out restoring the game (this is the load conclusions when restoring rule):
-	read the achievements.
+[The rule below will never run on a sucessful restore]
+
+[Last carry out restoring the game rule (this is the load conclusions when restoring rule):
+	read the achievements.]
 
 To read the achievements:
 	if the File of Conclusions exists:
@@ -615,5 +617,27 @@ When play ends when the story has not ended finally:
 			resume the story;
 		try looking.
 
+Section 5 - Post-restore routine
+
+[Hack to make some code always run after restoring a game, to make adjustments in case the save file was made on an interpreter with different capabilities or by someone with different achievements.]
+
+restore the game rule response (B) is "[post-restore routine]";
+
+To say post-restore routine:
+	say "Ok. ";
+	read the achievements;
+	if glulx line input echo suppression is supported:
+		suppress line input echo in the main window;
+	unless graphics is disabled:
+		if glulx graphics is supported:
+			now current graphics drawing rule is the compass-drawing rule;
+			unless the measuring window is g-present:
+				open the measuring window;
+			unless the graphics window is g-present:
+				open the graphics window;
+			start looking for graphlinks;
+	otherwise:
+		if the graphics window is g-present:
+			close the graphics window.
 
 Presentation Details ends here.

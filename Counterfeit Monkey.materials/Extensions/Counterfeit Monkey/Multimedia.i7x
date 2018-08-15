@@ -50,9 +50,10 @@ To adjust width of the graphics window:
 
 When identification ends (this is the open the graphics window rule):
 	if glulx graphics is supported:
-		now current graphics drawing rule is the compass-drawing rule;
-		open the graphics window;
-		start looking for graphlinks.
+		unless graphics is disabled:
+			now current graphics drawing rule is the compass-drawing rule;
+			open the graphics window;
+			start looking for graphlinks.
 
 A glulx input handling rule for an arrange-event (this is the update the status line after arranging rule):
 	update the status line.
@@ -418,29 +419,53 @@ To redraw the map and compass:
 				otherwise:
 					draw the unvisited image of the way in graphics window at x X and y Y scaled to width grid-size and height grid-size;
 
-
 Understand "graphics on" or "enable graphics" or "graphics" or "graphics mode" as enabling graphics. Enabling graphics is an action out of world.
 
+Include (-
+
+Array graphics_disabled --> 1;
+
+-) after "Definitions.i6t".
+
+To set graphics disabled flag:
+    (- if (arrayAsMillisecs(totalTestStartTime) == 0) @protect graphics_disabled 4;
+    graphics_disabled-->0 = 1; -)
+
+[We can only have one restore and restart protected variable at a time, so skip protecting the graphics_disabled flag if we are measuring total play time.]
+
+To unset graphics disabled flag:
+    (- graphics_disabled-->0 = 0; -)
+
+To decide whether graphics is disabled:
+	(- graphics_disabled-->0 -).
+
+
 Carry out enabling graphics:
+	unless glulx graphics is supported:
+		say "[first custom style][bracket]This interpreter does not support displaying graphics.[close bracket][roman type][paragraph break]" instead;
 	if the graphics window is g-present:
 		say "[first custom style][bracket]Graphics are already enabled.[close bracket][roman type][paragraph break]";
 	otherwise:
-		unless glulx graphics is supported:
-			say "[bracket]This interpreter does not support displaying graphics.[close bracket][paragraph break]" instead;
+		unless the measuring window is g-present:
+			open the measuring window;
+		now current graphics drawing rule is the compass-drawing rule;
 		open the graphics window;
 		start looking for graphlinks;
+		unset graphics disabled flag;
 		say "[first custom style][bracket]Graphics are now enabled.[close bracket][roman type][paragraph break]".
 
 Understand "graphics off" or "text only" or "text mode" as disabling graphics. Disabling graphics is an action out of world.
 
 Carry out disabling graphics:
+	unless glulx graphics is supported:
+		say "[first custom style][bracket]This interpreter does not support displaying graphics.[close bracket][roman type][paragraph break]" instead;
 	add the teach disabling graphics rule to the completed instruction list, if absent;
 	if the graphics window is g-present:
 		close the graphics window;
+		set graphics disabled flag;
 		say "[first custom style][bracket]Graphics are now disabled.[close bracket][roman type][paragraph break]";
 	otherwise:
 		say "[first custom style][bracket]Graphics are already disabled.[close bracket][roman type][paragraph break]".
-
 
 Chapter 2 - Sounds
 
