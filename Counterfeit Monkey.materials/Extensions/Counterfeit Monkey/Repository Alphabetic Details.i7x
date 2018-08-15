@@ -21,7 +21,7 @@ The description of the ad is "A folded, rumpled newspaper ad for [ad subject]." 
 
 Before examining the ad for the first time:
 	if the restoration gel is not seen:
-		now the ad subject of the ad is "Restoring Gel: a unique patented formula to restore lost letters and undo the effects of a letter-remover";
+		now the ad subject of the ad is "Restoration Gel: a unique patented formula to restore lost letters and undo the effects of a letter-remover";
 	otherwise:
 		now the ad subject is "[one of]fixed-price dinners at Literal[or]an exhibit on the pre-history of linguistic concepts at the local museum, especially highlighting their possession of an amazing classic codex[or]seaweed wrap treatments at the Fleur d'Or spa[sticky random]";
 
