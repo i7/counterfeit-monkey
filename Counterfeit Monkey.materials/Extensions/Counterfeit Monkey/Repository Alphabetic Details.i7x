@@ -742,11 +742,9 @@ The description of the cud is "It's best not to look too closely.". The scent-de
 
 The curd is edible. The description of the curd is "A soft white clump of cheese substance."
 
-The description of the cut is "A rough oval of skin, on which there's a visible cut [--] nothing serious, something on the order of a paper cut."
-
-
-
 The curse advertisement is a fixed in place thing. The description is "It's an ad of the kind you sometimes find in the back of underground newspapers, offering to take off the rude-object restrictions off a letter-remover, 'for private home use only.'"
+
+The description of the cut is "A rough oval of skin, on which there's a visible cut [--] nothing serious, something on the order of a paper cut."
 
 Section 4 - D
 
