@@ -24,13 +24,13 @@ Report requesting hint about the player:
 	say "Each of us is perhaps a bit of a puzzle to the other, it's true. But we've only got to share this body for a few hours, right?" instead.
 
 Report requesting hint about the letter-remover:
-	say "This is a highly useful multi-purpose device, which we're going to need many times in order to get off this island, I'm guessing. We can set it to a particular letter and wave it at things [—-] or, as a shortcut, just WAVE A-REMOVER AT COAT, for instance." instead.
+	say "This is a highly useful multi-purpose device, which we're going to need many times in order to get off this island, I'm guessing. We can set it to a particular letter and wave it at things [--] or, as a shortcut, just WAVE A-REMOVER AT COAT, for instance." instead.
 
 Report requesting hint about the homonym paddle:
 	say "The homonym paddle transforms any object into another object with the same name. We're not going to succeed in stealing it from the bartender, but in many cases she may be willing to make the transformation for us, if we show things to her." instead.
 
 Report requesting hint about the t-inserter machine:
-	say "Putting items into the T-inserter will add the letter T to them [—-] in some cases, multiple Ts." instead.
+	say "Putting items into the T-inserter will add the letter T to them [--] in some cases, multiple Ts." instead.
 
 Report requesting hint about the synthesizer:
 	say "To synthesize two objects, we need to place both inside the synthesizer (so very large items may not fit), then turn the synthesizer on." instead.
@@ -71,7 +71,7 @@ Report requesting hint about the Catalan punt volat needle:
 	say "I can't think of any reason why that would ever be useful to us." instead.
 
 Report requesting hint about the programmable dais:
-	say "It looks to me as though this can do the functions of a synthes[ize]r and of a homonym paddle [—-] and possibly also get around some of the size and power restrictions we've faced with earlier tools. Switching the switch will swap over from one function to the other." instead.
+	say "It looks to me as though this can do the functions of a synthes[ize]r and of a homonym paddle [--] and possibly also get around some of the size and power restrictions we've faced with earlier tools. Switching the switch will swap over from one function to the other." instead.
 
 Report requesting hint about the spinner:
 	if the spinner-gate is locked:
@@ -123,7 +123,7 @@ Report requesting hint about the gift shop volunteer:
 	say "To me, he looks like a slightly bored old man. Chat with him if you want, but I don't think he's going to solve any major problems for us." instead.
 
 Report requesting hint about the depluralizing cannon:
-	say "If it weren't for this thing, Anglophone Atlantis wouldn't exist [—-] not as an independent country, anyhow. That said, I don't think we're going to find a use for it ourselves, and that's just as well. Depluralizing people is typically considered a war crime." instead.
+	say "If it weren't for this thing, Anglophone Atlantis wouldn't exist [--] not as an independent country, anyhow. That said, I don't think we're going to find a use for it ourselves, and that's just as well. Depluralizing people is typically considered a war crime." instead.
 
 
 Chapter 4 - Puzzle Hints
@@ -190,7 +190,7 @@ Report requesting hint about the locker:
 	say "Since the lock has been dealt with, we should be set." instead.
 
 Report requesting hint about the backpacking girl:
-	say "[one of]We can't retrieve our things with the backpacking girl here watching, so we'll have to get her to leave[or]I bet we could freak her out with one of those standard tricks Atlanteans play on tourists [—-] show her something really upsetting that's actually letter-created[or]Like maybe a disembodied body part[or][body-part-suggestion][stopping]." instead.
+	say "[one of]We can't retrieve our things with the backpacking girl here watching, so we'll have to get her to leave[or]I bet we could freak her out with one of those standard tricks Atlanteans play on tourists [--] show her something really upsetting that's actually letter-created[or]Like maybe a disembodied body part[or][body-part-suggestion][stopping]." instead.
 
 To say body-part-suggestion:
 	if the player carries a freaky thing (called recommended freaky):
