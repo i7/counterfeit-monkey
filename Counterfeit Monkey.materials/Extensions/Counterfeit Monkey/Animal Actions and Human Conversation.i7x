@@ -5588,7 +5588,7 @@ Instead of saying sorry when father is marked-visible and be comforting is avail
 be comforting is a weakly-phrased performative quip.
 	Understand "comfort" as be comforting. The comment is "'It did matter to me that you tried to help,' we say. 'But no one here is ever going to try my solution. I have to leave if I want to, well, to take my shot at saving the world, essentially.'".
 	The mentions-list is {yourself, research}.
-	The reply is "'That's not[--]—' He bangs his fist into the wall and pulls it away with a wince. 'That's not how it works. Jesus. Saving the world is boring and incremental and institutional. I mean, it will be for you too [--]] if you want to do your crazy project the first thing you're going to need to do is spend hours in meetings with NGOs.'".
+	The reply is "'That's not[--]' He bangs his fist into the wall and pulls it away with a wince. 'That's not how it works. Jesus. Saving the world is boring and incremental and institutional. I mean, it will be for you too [--] if you want to do your crazy project the first thing you're going to need to do is spend hours in meetings with NGOs.'".
 	It quip-supplies Father.
 	It directly-follows what-are-you
 
