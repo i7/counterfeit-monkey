@@ -1,5 +1,48 @@
 # Change log
 
+## Unreleased
+
+- If you disable graphics, they will now stay disabled after a restart or restore.
+- Updates the map images used on the boat to eliminate black lines that would sometimes appear when switching graphics off and then on.
+- Fixes a hang that would occur on some interpreters when resizing the game window or clicking on the compass rose while being asked to reply yes or no.
+- Many minor optimizations should improve performance a little on slower interpreters and devices.
+
+### Gameplay changes
+
+- No longer awards achievements when you die that were meant to be awarded when finishing the game.
+- No longer awards a point (or expresses admiration for the player) if a non-player character puts restoration gel on something.
+- Automatically opens the backpack when necessary to use the letter-remover.
+- Disallows opening the backpack when doing so would reveal something incriminating to the secretary.
+- Homonyming now works properly on things with randomized descriptions.
+- Homonyming the activist's sign no longer turns it into a protesters' sign.
+- In general, homonyming will no longer transform a thing into another of the same kind, with the exception of the card.
+- The bartender will no longer paddle the musical piece.
+- Gives a proper response when asking the bartender to paddle a tool that you made by gelling a drink. It still doesn't make a huge amount of sense, though.
+- Living things will no longer immediately get off the programmable dais.
+- Improves clues to help the protest-scenario along.
+- Makes touching the gel equivalent of putting it on us.
+- Prevents the player from walking out on Mother. Previously we would print a refusal message, but still carry out the action.
+- Tones down the clues to the legend puzzle.
+- It is no longer allowed to walk away with the rock until we have gelled it once.
+- Disallows B-removing Brock.
+- No longer allows waving the letter-remover at the small knob on the letter-remover.
+- No longer allows picking up the oyster turd.
+- Adds a massive pug.
+
+### Parsing
+- Makes all player input case-insensitive.
+- Makes commands like X-REMOVE CODEX or P-REMOVE APPLE work.
+- When typing commands like REMOVE X FROM CODEX, the game will no longer try to change the setting of the letter-remover if it already is X.
+- Many fixes to weird behavior when trying to stand, sit and recline on things.
+- Fixes a run-time error that would occur when typing a number as a reply when asked to disambiguate between rooms.
+- Fixes some cases when using the definite article "the" would make the parser misunderstand commands.
+
+### Typos and cosmetic output errors
+- Always describe new letter-transformed creations when we haven't seen them before. Before the player would never get to see the description of some things that instantly killed them.
+- Removes a superfluous line break when clicking the compass rose.
+- Examining the spinner sculpture while it is empty no longer causes a run-time error.
+- The ad no longer refers to the restoration gel as "restoring gel".
+
 ## Release 7
 
 - The game and all its extensions have been ported to Inform 6M62. This allows us to simplify the code in many places. We have tried hard to ensure that nothing was broken in the process.
