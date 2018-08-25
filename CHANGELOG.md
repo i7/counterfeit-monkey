@@ -3,9 +3,9 @@
 ## Unreleased
 
 - If you disable graphics, they will now stay disabled after a restart or restore.
-- Updates the map images used on the boat to eliminate black lines that would sometimes appear when switching graphics off and then on.
+- The map images used on the boat have been updated to eliminate black lines that would sometimes appear when switching graphics off and then on.
 - Fixes a hang that would occur on some interpreters when resizing the game window or clicking on the compass rose while being asked to reply yes or no.
-- Many minor optimizations should improve performance a little on slower interpreters and devices.
+- Many small optimizations should improve performance a little on slower interpreters and devices.
 
 ### Gameplay changes
 
@@ -38,7 +38,7 @@
 - Fixes some cases when using the definite article "the" would make the parser misunderstand commands.
 
 ### Typos and cosmetic output errors
-- Always describe new letter-transformed creations when we haven't seen them before. Before the player would never get to see the description of some things that instantly killed them.
+- Always describe new letter-transformed creations when we haven't seen them before. Previously, the player would sometimes never get to see the descriptions of things that instantly killed them.
 - Removes a superfluous line break when clicking the compass rose.
 - Examining the spinner sculpture while it is empty no longer causes a run-time error.
 - The ad no longer refers to the restoration gel as "restoring gel".
