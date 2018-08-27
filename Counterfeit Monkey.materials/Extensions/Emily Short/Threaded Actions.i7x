@@ -167,16 +167,18 @@ Instead of giving something to someone (this is the default commenting on offere
 		carry out the refusing comment by activity with the second noun.
 
 Availability rule for an offering quip (called target) (this is the can't give if the mentioned thing is not possessed rule):
-	repeat with item running through mentions-list of target:
-		if item is enclosed by the player:
-			make no decision;
+	unless mention-start-index of target is -1:
+		repeat with N running from mention-start-index of target to mention-stop-index of target:
+			if mentions-index N is enclosed by the player:
+				make no decision;
 	it is off-limits.
 
 
 Availability rule for a demonstration quip (called target) (this is the can't show if the mentioned thing is invisible rule):
-	repeat with item running through mentions-list of target:
-		if item is enclosed by the location:
-			make no decision;
+	unless mention-start-index of target is -1:
+		repeat with N running from mention-start-index of target to mention-stop-index of target:
+			if mentions-index N is enclosed by the location:
+				make no decision;
 	it is off-limits.
 
 Threaded Actions ends here.

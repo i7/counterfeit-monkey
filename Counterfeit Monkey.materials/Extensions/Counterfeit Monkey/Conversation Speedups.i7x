@@ -44,7 +44,6 @@ Global subject_count = 0;
 
 -) after "Definitions.i6t".
 
-
 Include (-
 
 	[ PopulateSubjectsTable quip col;
@@ -55,11 +54,12 @@ Include (-
 		EliminateDuplicates();
 	];
 
-	[ WriteSubjects quip list i subject no_items;
-		list = quip.(+ mentions-list +);
-		no_items = BlkValueRead(list, LIST_LENGTH_F);
-		for (i=0: i<no_items: i++ ) {
-			subject = BlkValueRead(list, i+LIST_ITEM_BASE);
+	[ WriteSubjects quip idx i subject end;
+		idx = quip.(+ mention-start-index +);
+		if (idx == -1) rfalse;
+		end = quip.(+ mention-stop-index +);
+		for (i=idx: i<=end: i++ ) {
+			subject = mentions_array --> i;
 			subject_count++;
 			if (subject_count > 70)
 				print_ret "ERROR: More than 70 available subjects!^";
@@ -68,11 +68,12 @@ Include (-
 		}
 	];
 
-	[ MyMentions quip item list i no_items;
-		list = quip.(+ mentions-list +);
-		no_items = BlkValueRead(list, LIST_LENGTH_F);
-		for (i=0: i<no_items: i++ )
-			if (item == BlkValueRead(list, i+LIST_ITEM_BASE)) rtrue;
+	[ MyMentions quip item idx i end;
+		idx = quip.(+ mention-start-index +);
+		if (idx == -1) rfalse;
+		end = quip.(+ mention-stop-index +);
+		for (i=idx: i<=end: i++ )
+			if (item == mentions_array --> i) rtrue;
 		rfalse;
 	];
 
@@ -83,11 +84,12 @@ Include (-
 		return nothing;
 	];
 
-	[ CompareSubjects x y i list no_items ;
-		list = x.(+ mentions-list +);
-		no_items = BlkValueRead(list, LIST_LENGTH_F);
-		for (i=0: i<no_items: i++ )
-			if ( MyMentions(y, BlkValueRead(list, i+LIST_ITEM_BASE)) )
+	[ CompareSubjects x y i idx end ;
+		idx = x.(+ mention-start-index +);
+		end = x.(+ mention-stop-index +);
+		if (idx == -1) rfalse;
+		for (i=idx: i<=end: i++ )
+			if ( MyMentions(y, mentions_array --> i) )
 				rtrue;
 		rfalse;
 	];
@@ -174,8 +176,15 @@ Include (-
 						print q;
 	];
 
+	[ MyMentionsIndex i;
+		if (i < 0) return nothing;
+		return mentions_array --> i;
+	];
 
 -).
+
+To decide which thing is mentions-index (N - a number):
+	(- MyMentionsIndex({N}) -).
 
 Section - People present
 
@@ -194,7 +203,6 @@ To decide which person is present-person (N - a number):
 	(- people_present --> {N} -).
 
 Include (-
-
 
 [ MyCountPeople i;
 
@@ -238,6 +246,6 @@ Include (-
 	rtrue;
 ];
 
--)
+-).
 
 Conversation Speedups ends here.
