@@ -1107,7 +1107,7 @@ A first every turn rule (this is the update people-present rule):
 To headcount:
 	(- MyCountPeople(); -). [See the section People present in Conversation Speedups.i7x]
 
-Every turn when the player is staid (this is the active conversation rule):
+Every turn (this is the active conversation rule):
 	if how-many-people-here is positive:
 		follow the conversation-reply rules.
 
