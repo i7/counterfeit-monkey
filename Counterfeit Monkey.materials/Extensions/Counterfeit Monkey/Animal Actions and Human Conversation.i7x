@@ -849,7 +849,7 @@ An availability rule for where oil might be:
 	make no decision.
 
 where oil might be is an unlisted questioning quip.
-	The printed name is "where we might find oil".
+	The printed name is "where we might find oil". The true-name is "where oil might be".
 	Understand "find" or "some" or "could" or "there is" or "we" as where oil might be.
 	The comment is "'Do you have any oil? Or do you know where we could find some?'"
 	The reply is "[one of]He looks stumped for a minute, then offers, 'Comes in a can.'[or]'Yup, likely there's a source of oil around somewhere.'[stopping]".
@@ -864,7 +864,7 @@ An availability rule for where fuel might be:
 
 where fuel might be is an unlisted questioning quip.
 	The mentions-list is {gas, fuel}.
-	The printed name is "where we could find some fuel".
+	The printed name is "where we could find some fuel". The true-name is "where fuel might be".
 	Understand "we" or "could" or "find" or "some" or "there is" or "gas" as where fuel might be.
 	The comment is "'Do you have any [one of]gas[or]fuel[at random]? Or do you know where we could find some?'"
 	The reply is "He chews on his tongue a couple of times and then notes that he heard [one of]gas comes from old plants[or]fuel was usually found by digging in the ground[at random]."
