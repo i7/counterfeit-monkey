@@ -2,6 +2,8 @@ Conversation Speedups by Counterfeit Monkey begins here.
 
 Use authorial modesty.
 
+Section - The mentioning relation
+
 To sort quips for (n - a person):
 	(- MySortQuips({n}); -).
 
@@ -35,7 +37,6 @@ To decide whether (q - a quip) is periphery: (- (IsPeripheral({q})) -).
 
 Subject count is a number that varies.
 The subject count variable translates into I6 as "subject_count".
-
 
 Include (-
 
@@ -176,5 +177,67 @@ Include (-
 
 -).
 
+Section - People present
+
+Include (-
+
+Global how_many_people_here = 0;
+
+Array people_present --> 71; ! To simplify things, we don't use element 0
+
+-) after "Definitions.i6t".
+
+How-many-people-here is a number that varies.
+The how-many-people-here variable translates into I6 as "how_many_people_here".
+
+To decide which person is present-person (N - a number):
+	(- people_present --> {N} -).
+
+Include (-
+
+
+[ MyCountPeople i;
+
+	how_many_people_here = 0;
+	MyCountPeopleLoop(real_location);
+	if(how_many_people_here >= 71)
+		print "^ERROR! More than 70 people in location!^";
+];
+
+[ MyCountPeopleLoop start o;
+
+	!loop through everything in start object
+	for (o=start : o : ) {
+
+		if (o ofclass (+ person +) && o ~= (+ player +)) {
+
+				how_many_people_here++;
+				if(how_many_people_here >= 71) rfalse;
+				people_present --> how_many_people_here = o;
+				give o (+ marked-visible +);
+		}
+
+		!Check any components recursively
+		if (o.component_child)
+			MyCountPeopleLoop(o.component_child);
+
+		if (o.component_sibling)
+			MyCountPeopleLoop(o.component_sibling);
+
+		if (child(o)) o = child(o);
+		else
+			while (o) {
+
+				if (sibling(o)) { o = sibling(o); break; }
+
+				o = parent(o);
+				if ( o == parent(start)) rtrue;
+
+			}
+	}
+	rtrue;
+];
+
+-)
 
 Conversation Speedups ends here.

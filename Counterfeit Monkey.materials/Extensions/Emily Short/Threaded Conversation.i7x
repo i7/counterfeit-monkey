@@ -85,10 +85,6 @@ generic-quip is a npc-directed quip. Availability rule for generic-quip: it is o
 
 Definition: a quip is viable if it is in the quip-repository.
 
-People-present is a list of people that varies.
-How-many-people-here is a number that varies.
-
-
 Part Three - Defining Facts
 
 A fact is a kind of object. Some facts are defined by the Table of All Known Facts.
@@ -160,8 +156,8 @@ Part One - Learning Facts
 Fact-awareness relates various people to various facts. The verb to know implies the fact-awareness relation.
 
 Before printing the name of a fact (called target) while an actor discussing something (this is the broadcast spoken facts rule):
-	repeat with listener running through people-present[who can see the person asked]:
-		now the listener knows the target;
+	repeat with N running from 1 to how-many-people-here [who can see the person asked]:
+		now present-person N knows the target;
 
 Before printing the name of a fact (called target) (this is the player learns facts rule):
 	now the player knows the target.
@@ -170,8 +166,8 @@ Rule for printing the name of a fact (this is the silence actual output of facts
 	do nothing instead.
 
 To say forget (target - a fact):
-	repeat with listener running through people-present[who can see the person asked]:
-		now the listener does not know the target.
+	repeat with N running from 1 to how-many-people-here [who can see the person asked]:
+		now present-person N does not know the target.
 
 
 Part Two - Thinking and Review of Known Facts
@@ -831,7 +827,7 @@ Section 3 - The Player Discussing
 Check discussing (this is the cannot talk without an interlocutor rule):
 	unless the current interlocutor is a person:
 		if how-many-people-here is 1:
-			try discussing the noun with entry 1 of people-present instead;
+			try discussing the noun with present-person 1 instead;
 		otherwise:
 			say "[We]['re not] talking to anyone right [now]." (A) instead.
 
@@ -1067,8 +1063,8 @@ To perform the/-- next queued conversation for (chosen person - a person):
 To perform the/-- (chosen precedence - a quip-precedence) conversation for every person:
 	if the current interlocutor is a person and the current interlocutor is marked-visible,
 		perform the chosen precedence conversation for the current interlocutor;
-	repeat with target running through people-present:
-		if the target is not the current interlocutor, perform the chosen precedence conversation for the target.
+		repeat with N running from 1 to how-many-people-here:
+			if present-person N is not the current interlocutor, perform the chosen precedence conversation for present-person N.
 
 To perform the/-- (chosen precedence - a quip-precedence) conversation for (chosen person - a person):
 	if the number of entries in the planned conversation of the chosen person is greater than 0:
@@ -1080,8 +1076,8 @@ To perform the/-- (chosen precedence - a quip-precedence) conversation for (chos
 To perform the/-- next queued conversation for every person:
 	if the current interlocutor is a person and the current interlocutor is marked-visible,
 		perform the next queued conversation for the current interlocutor;
-	repeat with target running through people-present:
-		if the target is not the current interlocutor, perform the next queued conversation for the target.
+	repeat with N running from 1 to how-many-people-here:
+		if present-person N is not the current interlocutor, perform the next queued conversation for present-person N.
 
 Section 2 - Deletion Phrases
 
@@ -1102,15 +1098,14 @@ Section 3 - Conversation Reply Rules
 [This is what makes the NPCs actually respond to things: all answers to player conversation, and independent conversation on the NPCs' part, comes from the conversation reply rules.]
 
 A first every turn rule (this is the update people-present rule):
-	now people-present is the list of other people enclosed by location;
-	now how-many-people-here is the number of entries in people-present;
-	if how-many-people-here is positive:
-		repeat with P running through people-present:
-			now P is marked-visible;
+	headcount;
 	[The lines below are from an "Check for alert people in location" rule that I merged into this because it wouldn't get the right precedence no matter how I tried. See the ProspectiveInterlocutor code in Character Models.i7x]
-		let X be prospective-interlocutor;
-		if X is not nothing:
-			try X saying hello to the player.
+	let X be prospective-interlocutor;
+	if X is not nothing:
+		try X saying hello to the player.
+
+To headcount:
+	(- MyCountPeople(); -). [See the section People present in Conversation Speedups.i7x]
 
 Every turn when the player is staid (this is the active conversation rule):
 	if how-many-people-here is positive:

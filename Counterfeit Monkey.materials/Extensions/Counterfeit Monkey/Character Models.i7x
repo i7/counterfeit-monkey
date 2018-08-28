@@ -120,7 +120,7 @@ To find a suitable interlocutor:
 	if the current interlocutor is nothing:
 		if how-many-people-here is positive:
 			if how-many-people-here is 1:
-				try saying hello to entry 1 of people-present;
+				try saying hello to present-person 1;
 			otherwise:
 				let L be { bartender, Slango, barman, Kate };
 				repeat with vip running through L:
@@ -281,29 +281,25 @@ To decide which object is prospective-interlocutor:
 	(- ProspectiveInterlocutor() -).
 
 The current interlocutor variable translates into I6 as "current_interlocutor".
-The how-many-people-here variable translates into I6 as "how_many_people_here".
 
 Include (-
 
 Global current_interlocutor = nothing;
-Global how_many_people_here = 0;
 
 -) after "Definitions.i6t".
 
 Include (-
 
 	[ ProspectiveInterlocutor p list no_items i;
-		list = (+ people-present +);
-		no_items = BlkValueRead(list, LIST_LENGTH_F);
-		for (i=0: i<no_items: i++ ) {
-			p = BlkValueRead(list, i+LIST_ITEM_BASE);
+		for (i=1: i<=how_many_people_here: i++ ) {
+			p = people_present --> i;
 			if ( current_interlocutor ~= p && p.(+ alert +) == true )
 				return p;
 		}
 		return nothing;
 	];
 
--) after "Output.i6t".
+-).
 
 The new default greeting rule is listed instead of the default greeting rule in the report saying hello to rules.
 

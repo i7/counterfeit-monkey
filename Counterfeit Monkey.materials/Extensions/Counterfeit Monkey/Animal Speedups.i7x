@@ -29,10 +29,8 @@ Include
 
 
 	[ MyContainedPeopleExiting burden list no_items i row;
-		list = (+ people-present +);
-		no_items = BlkValueRead(list, LIST_LENGTH_F);
-		for (i=0: i<no_items: i++ ) {
-			burden = BlkValueRead(list, i+LIST_ITEM_BASE);
+		for (i=1: i<=how_many_people_here: i++ ) {
+			burden = people_present --> i;
 			if (~~(burden.(+ fake +)))
 				continue;
 			if (parent(burden) == real_location or player or (+ boulders +))

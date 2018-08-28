@@ -13,8 +13,8 @@ To set (attitude - a mood):
 	now the current mood of the current interlocutor is attitude.
 
 Before reading a command (this is the mood record-keeping rule):
-	repeat with target running through people-present:
-		now the previous mood of the target is the current mood of the target.
+	repeat with N running from 1 to how-many-people-here:
+		now the previous mood of present-person N is the current mood of present-person N.
 
 Include (-
 
