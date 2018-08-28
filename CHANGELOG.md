@@ -2,8 +2,6 @@
 
 ## Unreleased
 
-- If you disable graphics, they will now stay disabled after a restart or restore.
-- The map images used on the boat have been updated to eliminate black lines that would sometimes appear when switching graphics off and then on.
 - Fixes a hang that would occur on some interpreters when resizing the game window or clicking on the compass rose while being asked to reply yes or no.
 - Many small optimizations should improve performance a little on slower interpreters and devices.
 
@@ -38,7 +36,10 @@
 - Fixes some cases when using the definite article "the" would make the parser misunderstand commands.
 
 ### Typos and cosmetic output errors
+- If you disable graphics, they will now stay disabled after a restart or restore. Not after quitting the interpreter, though.
+- The map images used on the yacht have been updated to eliminate black lines that would sometimes appear when switching graphics off and then on.
 - Always describe new letter-transformed creations when we haven't seen them before. Previously, the player would sometimes never get to see the descriptions of things that instantly killed them.
+- Some letter-transformation tools would print a full description of their creations every time, even if we created the same thing over and over. Now only the homonyming dais does this.
 - Removes a superfluous line break when clicking the compass rose.
 - Examining the spinner sculpture while it is empty no longer causes a run-time error.
 - The ad no longer refers to the restoration gel as "restoring gel".
