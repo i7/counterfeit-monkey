@@ -19,8 +19,6 @@ When play begins (this is the check for echo suppression support rule):
 To suppress line input echo in the/-- main window:
 	(- glk_set_echo_line_event(gg_mainwin, GLK_NULL); -)
 
-The check for echo suppression support rule is listed after the finalise startup precomputation rule in the when play begins rules.
-
 A command-showing rule (this is the new print text to the input prompt rule):
 	now echoed already is true;
 	say "[input-style-for-glulx][Glulx replacement command][roman type][conditional paragraph break]".
