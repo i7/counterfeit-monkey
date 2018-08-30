@@ -19,7 +19,7 @@ Carry out generating mentions-array:
 				increment N;
 			now mention-stop-index of Q is (N - 1);
 	say ";[paragraph break]-) after 'Definitions.i6t'.[paragraph break]Mentions array ends here.";
-	say "[paragraph break]Mentions indices by Counterfeit Monkey begins here.[paragraph break]Use authorial modesty.[paragraph break]";
+	say "[paragraph break]Mentions indices by Counterfeit Monkey begins here.[paragraph break]Use authorial modesty.[paragraph break]A quip has a number called the mention-start-index. The mention-start-index of a quip is usually -1.[line break]A quip has a number called mention-stop-index. The mention-stop-index of a quip is usually -1.[paragraph break]";
 	repeat with Q running through quips:
 		unless mention-start-index of Q is -1:
 			say "[True-name of Q] has mention-start-index [mention-start-index of Q].";
