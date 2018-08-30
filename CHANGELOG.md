@@ -3,7 +3,6 @@
 ## Unreleased
 
 - Fixes a hang that would occur on some interpreters when resizing the game window or clicking on the compass rose while being asked to reply yes or no.
-- Many small optimizations should improve performance a little on slower interpreters and devices.
 
 ### Gameplay changes
 
