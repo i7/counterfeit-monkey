@@ -37,6 +37,8 @@
 ### Typos and cosmetic output errors
 - If you disable graphics, they will now stay disabled after a restart or restore. Not after quitting the interpreter, though.
 - The map images used on the yacht have been updated to eliminate black lines that would sometimes appear when switching graphics off and then on.
+- Fixes a bug where a save game from a different computer would make the game award you the achievements from that other computer. Now the achievements will be reloaded from the monkeyac file after a restore.
+- Fixes a similar bug where restoring a save game from an interpreter without support for graphics would break the map display on an interpreter which supports graphics.
 - Always describe new letter-transformed creations when we haven't seen them before. Previously, the player would sometimes never get to see the descriptions of things that instantly killed them.
 - Some letter-transformation tools would print a full description of their creations every time, even if we created the same thing over and over. Now only the homonyming dais does this.
 - Removes a superfluous line break when clicking the compass rose.
