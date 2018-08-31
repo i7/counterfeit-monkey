@@ -51,7 +51,7 @@ Use MAX_STATIC_DATA of 3000000.
 Use MAX_PROP_TABLE_SIZE of 4000000.
 Use MAX_INDIV_PROP_TABLE_SIZE of 2000.
 Use MAX_STACK_SIZE of  600000.
-Use MAX_SYMBOLS of 80000.
+Use MAX_SYMBOLS of 90000.
 Use MAX_EXPRESSION_NODES of 600.
 Use MAX_LOCAL_VARIABLES of 128.
 Use MAX_OBJECTS of 3000.
@@ -554,6 +554,9 @@ Include Fakes by Counterfeit Monkey.
 Include Initial Proffering by Counterfeit Monkey.
 Include Backdrops by Counterfeit Monkey.
 Include Hard-coded Quip Cache by Counterfeit Monkey.
+Include Mentions Indices by Counterfeit Monkey.
+Include Mentions Array by Counterfeit Monkey.
+[Include Regenerate Mentions by Counterfeit Monkey.]
 
 [The following source files are included above:
 

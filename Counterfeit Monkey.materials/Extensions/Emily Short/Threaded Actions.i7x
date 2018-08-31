@@ -166,18 +166,66 @@ Instead of giving something to someone (this is the default commenting on offere
 	otherwise:
 		carry out the refusing comment by activity with the second noun.
 
-Availability rule for an offering quip (called target) (this is the can't give if the mentioned thing is not possessed rule):
-	repeat with item running through mentions-list of target:
-		if item is enclosed by the player:
-			make no decision;
-	it is off-limits.
+[Availability rule for an offering quip (called target) (this is the can't give if the mentioned thing is not possessed rule):
+	unless mention-start-index of target is -1:
+		repeat with N running from mention-start-index of target to mention-stop-index of target:
+			if mentions-index N is enclosed by the player:
+				make no decision;
+	it is off-limits.]
 
+Availability rule for an offering quip (called target) (this is the can't give if the mentioned thing is not possessed rule):
+	if target mentions-possessed-thing:
+		make no decision;
+	otherwise:
+		it is off-limits.
+
+To decide whether (Q - a quip) mentions-possessed-thing:
+	(- MyMentionsPossessed({Q}) -)
+
+[Availability rule for a demonstration quip (called target) (this is the can't show if the mentioned thing is invisible rule):
+	unless mention-start-index of target is -1:
+		repeat with N running from mention-start-index of target to mention-stop-index of target:
+			if mentions-index N is enclosed by the location:
+				make no decision;
+	it is off-limits.]
 
 Availability rule for a demonstration quip (called target) (this is the can't show if the mentioned thing is invisible rule):
-	repeat with item running through mentions-list of target:
-		if item is enclosed by the location:
-			make no decision;
-	it is off-limits.
+	if target mentions-present-thing:
+		make no decision;
+	otherwise:
+		it is off-limits.
+
+To decide whether (Q - a quip) mentions-present-thing:
+	(- MyMentionsPresent({Q}) -)
+
+Include (-
+
+	[ MyMentionsPossessed quip idx end item i;
+		idx = quip.(+ mention-start-index +);
+		if (idx == -1) rfalse;
+		end = quip.(+ mention-stop-index +);
+		for (i=idx: i<=end: i++ ) {
+			item = mentions_array --> i;
+			for ( : item && item ~= real_location : item=parent(item) )
+				if (item == player) rtrue;
+		}
+		rfalse;
+	];
+
+	[ MyMentionsPresent quip idx end item i;
+		idx = quip.(+ mention-start-index +);
+		if (idx == -1) rfalse;
+		end = quip.(+ mention-stop-index +);
+		for (i=idx: i<=end: i++ ) {
+			item = mentions_array --> i;
+			for ( : item : item=parent(item) )
+				if (item == real_location) rtrue;
+		}
+		rfalse;
+	];
+
+-).
+
 
 Threaded Actions ends here.
 
