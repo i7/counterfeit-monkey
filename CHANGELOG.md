@@ -3,6 +3,8 @@
 ## Unreleased
 
 - Fixes a hang that would occur on some interpreters when resizing the game window or clicking on the compass rose while being asked to reply yes or no.
+- Fixes a bug where a save game from a different computer would make the game award you the achievements from that other computer. Now the achievements are properly reloaded from the monkeyac file after a restore.
+- Works around a bug where the player could get stuck after showing the pass to the secretary.
 
 ### Gameplay changes
 
@@ -20,7 +22,7 @@
 - Makes touching the gel equivalent of putting it on us.
 - Prevents the player from walking out on Mother. Previously we would print a refusal message, but still carry out the action.
 - Tones down the clues to the legend puzzle.
-- It is no longer allowed to walk away with the rock until we have gelled it once.
+- It is no longer possible to walk away with the rock until we have gelled it once.
 - Disallows B-removing Brock.
 - No longer allows waving the letter-remover at the small knob on the letter-remover.
 - No longer allows picking up the oyster turd.
@@ -33,12 +35,12 @@
 - Many fixes to weird behavior when trying to stand, sit and recline on things.
 - Fixes a run-time error that would occur when typing a number as a reply when asked to disambiguate between rooms.
 - Fixes some cases when using the definite article "the" would make the parser misunderstand commands.
+- Adds responses when trying to use the power cord in unintended ways. Previously the player would sometimes get a blank response.
 
 ### Typos and cosmetic output errors
 - If you disable graphics, they will now stay disabled after a restart or restore. Not after quitting the interpreter, though.
 - The map images used on the yacht have been updated to eliminate black lines that would sometimes appear when switching graphics off and then on.
-- Fixes a bug where a save game from a different computer would make the game award you the achievements from that other computer. Now the achievements will be reloaded from the monkeyac file after a restore.
-- Fixes a similar bug where restoring a save game from an interpreter without support for graphics would break the map display on an interpreter which supports graphics.
+- Fixes a bug where restoring a save game from an interpreter without support for graphics would break the map display on an interpreter which supports graphics.
 - Always describe new letter-transformed creations when we haven't seen them before. Previously, the player would sometimes never get to see the descriptions of things that instantly killed them.
 - Some letter-transformation tools would print a full description of their creations every time, even if we created the same thing over and over. Now only the homonyming dais does this.
 - Removes a superfluous line break when clicking the compass rose.
