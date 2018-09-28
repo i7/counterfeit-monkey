@@ -2375,7 +2375,7 @@ Sanity-check taking a massive plug:
 	otherwise:
 		try taking the power cord instead.
 
-Understand "unplug [a massive plug] from [a power socket]" as unplugging it from. Understand "unplug [something] from [something]" as unplugging it from. Unplugging it from is an action applying to two things. Understand "unplug [something]" as unplugging it from.
+Understand "unplug [a massive plug] from [a power socket]" as unplugging it from. Understand "unplug [something] from [something]" as unplugging it from. Unplugging it from is an action applying to two things. Understand "unplug [something]" as unplugging it from. Understand "detach [something]" as unplugging it from.
 
 Rule for supplying a missing second noun when unplugging something from:
 	if the noun is a massive plug:
@@ -2462,11 +2462,14 @@ Sanity-check plugging the power cord into something:
 			try plugging the target plug into the second noun instead;
 		otherwise:
 			say "The plugs are fully plugged in already." instead;
-	otherwise if the second noun incorporates a power socket (called target socket):
-		if a massive plug (called target plug) is free:
-			try plugging the target plug into the target socket instead;
+	otherwise:
+		if the second noun incorporates a power socket (called target socket):
+			if a massive plug (called target plug) is free:
+				try plugging the target plug into the target socket instead;
+			otherwise:
+				say "The plugs are fully plugged in already." instead;
 		otherwise:
-			say "The plugs are fully plugged in already." instead;
+			try plugging a random massive plug into the second noun instead.
 
 Carry out plugging a massive plug into a power socket:
 	if the power cord is not in the location:
@@ -2485,6 +2488,7 @@ Sanity-check going somewhere when the player carries the power cord:
 Understand "plug [a power socket] into [a power socket]" as connecting it to.  Understand "plug in [a power socket] in [a power socket]" as connecting it to. Connecting it to is an action applying to two things.
 
 Understand "connect [a power socket] to [a power socket]" as connecting it to.
+Understand "connect [a power cord] to [a power socket]" as plugging it into.
 
 Sanity-check an actor connecting something to something:
 	[carry out the caching scope activity with the actor;]
@@ -2509,8 +2513,11 @@ Understand "plug in [something]" as connecting.
 Sanity-check connecting something:
 	if the noun is a power socket:
 		make no decision;
-	if the noun is a massive plug:
-		make no decision;
+	if the noun is a massive plug or the noun is the power cord:
+		if the location is not Workshop:
+			say "There seems to be nothing suitable here to plug [the noun] into." instead;
+		otherwise:
+			make no decision;
 	if the noun incorporates a power socket:
 		make no decision;
 	if the noun incorporates a massive plug:
@@ -2520,7 +2527,10 @@ Sanity-check connecting something:
 	say "[The noun] [feature] no dangling power cords or sockets." instead.
 
 Carry out an actor connecting something:
-	try the actor connecting the dais socket to the wall socket.
+	if there is a massive plug plugged into the dais socket and there is a massive plug plugged into the wall socket:
+		say "The plugs are fully plugged in already." instead;
+	otherwise:
+		try the actor connecting the dais socket to the wall socket.
 
 [There's really no particular point to having the britishizing goggles change the compatibility of the plug. I just couldn't resist.]
 
