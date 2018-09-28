@@ -728,25 +728,40 @@ Section 1c - Subject-asking
 
 Understand "ask about/for/-- [thing]" or "tell about/that/-- [thing]" as subject-asking when predicted-interlocutor is not nothing. Subject-asking is an action applying to one visible thing.
 
-A quip has a list of objects called the mentions-list.
+[A quip has a list of objects called the mentions-list.]
 
-When play begins (this is the add indistinguishable to mentions-lists rule):
+When play begins (this is the add indistinguishable to mentions-array rule):
 	repeat with I running through cars:
-		add I to mentions-list of where there seems garage;
-		add I to mentions-list of whether car be fixed;
-		add I to mentions-list of why the car does not run;
-		add I to mentions-list of where there seems a car;
-		add I to mentions-list of where there seems a car-2;
+		unless I is the alterna-shuttle or I is the truck:
+			mentions-add I to where there seems garage;
+			mentions-add I to whether car be fixed;
+			mentions-add I to why the car does not run;
+			mentions-add I to where there seems a car;
+			mentions-add I to where there seems a car-2;
 	repeat with I running through oils:
-		add I to mentions-list of whether the oil seems interesting;
-		add I to mentions-list of whether car be fixed;
-		add I to mentions-list of whether the oil will work;
-		add I to mentions-list of check out this oil;
-		add I to mentions-list of check out this oil-1;
-		add I to mentions-list of where oil might be;
-		add I to mentions-list of we'll find some;
+		mentions-add I to whether the oil seems interesting;
+		mentions-add I to whether car be fixed;
+		mentions-add I to whether the oil will work;
+		mentions-add I to check out this oil;
+		mentions-add I to check out this oil-1;
+		mentions-add I to where oil might be;
+		mentions-add I to we'll find some;
 	repeat with I running through odes:
-		add I to mentions-list of calm Lena.
+		mentions-add I to calm Lena;
+
+To mentions-add (X - a thing) to (Q - a quip):
+	let found be false;
+	repeat with N running from mention-start-index of Q to mention-stop-index of Q:
+		if mentions-index N is dummy-object:
+			set mentions-index N to X;
+			now found is true;
+			break;
+	if found is false:
+		say "Error: Found nowhere to insert [X] in the quip '[Q]'."
+
+To set mentions-index (N - a number) to (X - a thing):
+	(- mentions_array --> {N} = {X}; -)
+
 
 After deciding the scope of the player when the action name part of current action is the starting a conversation with it about action:
 	repeat with N running from 1 to subject count:
