@@ -343,6 +343,12 @@ Report opening the Etymological Reversing Chamber for the first time:
 Instead of switching on the Etymological Reversing Chamber:
 	say "It is not plugged in, nor is there any plausible way to plug it in around here. Just as well: it probably draws a lot of power."
 
+Sanity-check plugging the power cord into the Etymological Reversing Chamber:
+	say "The plug is the wrong size. And there is no power outlet within reach." instead.
+
+Sanity-check plugging a massive plug into the Etymological Reversing Chamber:
+	try plugging the power cord into the Etymological Reversing Chamber instead.
+
 Table of Ultratests (continued)
 topic	stuff	setting
 "reversing"	{ army, members }	Tools Exhibit
