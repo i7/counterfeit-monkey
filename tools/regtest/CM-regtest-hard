@@ -6,7 +6,7 @@
 ** interpreter: ./git-remglk
 
 * hard
-Can you hear me? >> 
+Can you hear me? >>
 > yes
 
 Good, you're conscious. We're conscious. I've heard urban legends about synthesis going wrong, one half person getting lost.
@@ -49,7 +49,7 @@ A narrow alley runs between buildings to the south, while the street continues e
 Ampersand Bend
 A bend in the street, which runs west and north. This district combines the old and the new: a small museum in an ancient stone building to the east, a shiny real estate office south. The window of the museum is currently displaying one of its exhibits, a codex.
 
-A temporary barrier blocks this empty street from the busy fair to the north, though there is a door that could be opened with the correct code. From here the gaiety and excitement of the holiday are fairly loud. 
+A temporary barrier blocks this empty street from the busy fair to the north, though there is a door that could be opened with the correct code. From here the gaiety and excitement of the holiday are fairly loud.
 
 > wave x-remover at codex
 /We smoothly, and almost without thinking about it, reset your device to be an X-remover. There is a [a-z \-]+, and the codex turns into a code. A bit of paper on which is written "305."
@@ -65,19 +65,19 @@ We set the wheels of the code-lock to 305.
 Click! The barrier door unlocks.
 
 > go to heritage corner
-I'm glad to see you're feeling ready to face the wider world. Here's what we think we need to do: 
+I'm glad to see you're feeling ready to face the wider world. Here's what we think we need to do:
   Get my backpack from the cinema
   Retrieve your remaining possessions from locker at hostel
   Meet your colleague Slango at Counterfeit Monkey
 
-/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) among the (crowds|booths of the fair). 
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) among the (crowds|booths of the fair).
 
 Heritage Corner
 This patch of the town square has been paved over in octagonal bricks and is commonly used for displays of traditional dancing: over-50 women in home-made embroidered aprons, skipping arm-in-arm and jumping over broomsticks.
 
 No, there aren't any here now. But trust me. It's an unforgettable sight.
 
-Under a bit of shelter in the corner, a diorama table shows scenes from local history, rotated out each week. This week's diorama represents the first sitting of the Committee for the New Orthodox Orthography. 
+Under a bit of shelter in the corner, a diorama table shows scenes from local history, rotated out each week. This week's diorama represents the first sitting of the Committee for the New Orthodox Orthography.
 
 The park continues to the north and west; to the east is a backpackers' hostel where you've stayed recently and where you stowed the rest of your important possessions.
 
@@ -96,14 +96,14 @@ We run our thumb over the dial, setting the device to a Y-remover. We wave the Y
 /We (take|get|pick up|acquire) the member.
 
 > go to midway
-/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) among the (crowds|booths of the fair). 
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) among the (crowds|booths of the fair).
 
 Midway
 Here in front of the pharmacy in the southwestern corner of the town square, various contests have been set up — a strong-man hammering contest, a contest to see who can burst the most balloons using a styrofoam dart-plane, and so on.
 
-I assume you've noticed, though, the word-balance, which comes up as high as our hip. On the right pan is an apple and on the left a prickly pear.  
+I assume you've noticed, though, the word-balance, which comes up as high as our hip. On the right pan is an apple and on the left a prickly pear.
 
-/Beside the word-balance is a barker in a blue suit, the same regulation blue used by the Bureau of Orthography. The barker (is also carrying|has) a tube. 
+/Beside the word-balance is a barker in a blue suit, the same regulation blue used by the Bureau of Orthography. The barker (is also carrying|has) a tube.
 
 /("One tube of restoration gel goes to the first person who can unbalance the word-balance!"|"Put the beam out of alignment and win a fabulous prize!"|"Step up and try your hand at the fabulous word-balance!") (cries|says|calls) the barker(, (glance sweeping the crowd|holding up a tube)| appealingly).
 
@@ -130,12 +130,12 @@ We open the tub, revealing some restoration gel.
 /We (take|get|pick up|acquire) the ale. A delicious nutbrown ale in a cool glass.
 
 > go to church garden
-/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) (among the (crowds|booths of the fair)|pushing through the dense crowds). 
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) (among the (crowds|booths of the fair)|pushing through the dense crowds).
 
 Church Garden
 One might expect a graveyard, but burial inside the city walls has been forbidden for sanitation reasons since well before the New Church was built. Instead, there is a small meditation garden, which was once designed as an intricate knotwork of shrubs.
 
-The knotwork has since grown into a thicket. 
+The knotwork has since grown into a thicket.
 
 > wave h-remover at thicket
 We reset the device to h. The thicket abruptly shrivels and flattens itself, and in its place a ticket flutters to earth.
@@ -144,14 +144,14 @@ We reset the device to h. The thicket abruptly shrivels and flattens itself, and
 /ticket: We (take|get|pick up|acquire) the ticket. It reads ADMIT ONE in large black letters.
 
 > go to hostel
-/(We |We have a (healthy|fair) |We make the( fair| healthy)? |It's a( fair| healthy)? )(walk|hike) (among the (crowds|booths of the fair)|pushing through the dense crowds). 
+/(We |We have a (healthy|fair) |We make the( fair| healthy)? |It's a( fair| healthy)? )(walk|hike) (among the (crowds|booths of the fair)|pushing through the dense crowds).
 
 Hostel
 I take it this is where you stayed from the time you got to town until our operation. I would have expected that someone with your credentials would have been able to afford something better: The Fleur d'Or, maybe? But maybe you thought this was lower-profile. At least it's clean and doesn't smell funny.
 
 The desk attendant is sort of eying us. She doesn't recognize you — us — but that's a good thing, I think.
 
-Discarded in one corner is Guidebook to Anglophone Atlantis. 
+Discarded in one corner is Guidebook to Anglophone Atlantis.
 
 There's a spiral staircase that leads up to the dormitory rooms.
 
@@ -160,9 +160,9 @@ There's a spiral staircase that leads up to the dormitory rooms.
 Dormitory Room
 Painted off-white, with hard wood floors under many layers of protective gloss coating: there are no surfaces in this room that would take a stain. Four dorm beds are lined up against the wall.
 
-The locker you identify as your own sits near one of the beds, still locked with its dial lock.  
+The locker you identify as your own sits near one of the beds, still locked with its dial lock.
 
-A girl of about 19 is standing in the middle of the room, looking around as though she can't quite believe where she landed or what she's doing here. She is carrying a heavy pack and wearing a pink t-shirt. 
+A girl of about 19 is standing in the middle of the room, looking around as though she can't quite believe where she landed or what she's doing here. She is carrying a heavy pack and wearing a pink t-shirt.
 
 "Hey," says the girl. "Do you think this place is safe?" she asks conspiratorially.
 
@@ -186,7 +186,7 @@ It's curious, now you look at it: it's a combination lock with a dial face, but 
 > gel lock
 We dip out a pea-sized quantity of gel and rub it gently onto the lock. With an audible SPLORT, the lock becomes a broken clock and falls to the floor. It appears to be one of those archetypal alarm clocks that crows at sunrise and generally makes a nuisance of itself. It shows the time to be about twenty past nine.
 
-I'm starting to understand how you got into all the places you got into. Not that I judge you or your line of work, of course. 
+I'm starting to understand how you got into all the places you got into. Not that I judge you or your line of work, of course.
 
 [Your score has gone up by one point and is now eight.]
 
@@ -242,7 +242,7 @@ Whatever is scheduled for later showing has not started yet, and is probably not
 
 My backpack is stowed under a seat in the third row from the back. I figured that it would be undisturbed there for a couple of hours, in the dark and out of sight, and if anyone found it they would probably turn it in to Lost and Found. But it is a big relief to find it still there.
 
-There are a flash drive and a monocle in the backpack. 
+There are a flash drive and a monocle in the backpack.
 
 We can go north and east to the Cinema Lobby from here.
 
@@ -258,14 +258,14 @@ We open the backpack.
 Everything turns computer-monitor green when viewed through our right eye. And staring fixedly at anything will turn up its authenticity status.
 
 > go to patriotic chard-garden
-/We( have a rather tiring)? walk from the kitschy splendor of the fair along the old walls and into the placid sunlight among the villas of the rich. 
+/We( have a rather tiring)? walk from the kitschy splendor of the fair along the old walls and into the placid sunlight among the villas of the rich.
 
 Patriotic Chard-Garden
 A narrow strip of land between the house and the edge of my parents' property. The eastern edge runs right up to the decaying old wall of the city, which here means some stumpy masonry on this side and a dizzying drop on the other.
 
 The rest of their terraces and gardens are fenced off.
 
-A little chard still grows in the nearest bed, carefully tended to thrive in this climate. 
+A little chard still grows in the nearest bed, carefully tended to thrive in this climate.
 
 Because it's so linguistically productive, chard is something of a national symbol; and during the world wars, there was a fad of gardening at home. After the war, it became common for affluent people with a little bit of land to keep their garden, so that if you were down on your luck you could glean a few leaves.
 
@@ -280,7 +280,7 @@ A narrow strip of land between the house and the edge of my parents' property. T
 
 The rest of their terraces and gardens are fenced off.
 
-At our feet is a patch of soil. 
+At our feet is a patch of soil.
 
 > wave s-remover at soil
 With a distinct whiff of mechanics and the summer time, the soil turns into some oil. A can of what appears to be motor oil. It is sludgy and black.
@@ -321,7 +321,7 @@ The farmer makes a little cluck sound which seems to mean that he sees us but do
 Roget Close
 A pleasantly sheltered lane in which I learned to ride a bicycle, and where my friend Lucy used to live, before she and her parents moved off-island. Restrictions were looser even twenty years ago. Our old schoolhouse is just west of here.
 
-If you look just north between the houses, you'll notice also the footpath down to an almost-private beach. It used to be open, but it's now gated off, and built into the gate is a chic modern sculpture. 
+If you look just north between the houses, you'll notice also the footpath down to an almost-private beach. It used to be open, but it's now gated off, and built into the gate is a chic modern sculpture.
 
 > put yam on spinner
 We put the yam on the pedestal.
@@ -332,7 +332,7 @@ This is the sheet for the month of May, torn from a calendar. Someone has put a 
 
 There is a dismissive blatt from the monocle, and transposed over the May is a faint, greenish image of a yam.
 
-The gate clicks open. 
+The gate clicks open.
 
 [Your score has gone up by one point and is now fifteen.]
 
@@ -360,7 +360,7 @@ There is a dismissive blatt from the monocle, and transposed over the sag is a f
 Roget Close
 A pleasantly sheltered lane in which I learned to ride a bicycle, and where my friend Lucy used to live, before she and her parents moved off-island. Restrictions were looser even twenty years ago. Our old schoolhouse is just west of here.
 
-If you look just north between the houses, you'll notice also the footpath down to an almost-private beach. It used to be open, but it's now gated off, and built into the gate is a chic modern sculpture. 
+If you look just north between the houses, you'll notice also the footpath down to an almost-private beach. It used to be open, but it's now gated off, and built into the gate is a chic modern sculpture.
 
 On the pedestal, the May revolves idly. After the mirror does its work, there is a yam.
 
@@ -419,12 +419,12 @@ I wave back rather weakly.
 He gets on his small red scooter, checks his helmet, and revs off to the south. Off, apparently, to investigate the synthesizer that put us together. That will go slowly because of the holiday, but I'm guessing there will be Bureau investigators crawling all over the south side of old town in an hour or two.
 
 > go to high street
-/(We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short |quick)? )(walk|hike) out of the cocooning silence of the wealthy streets and back among the fair booths. 
+/(We |We have a (brief|short|quick) |We make the( brief| short| quick)? |It's a( brief| short |quick)? )(walk|hike) out of the cocooning silence of the wealthy streets and back among the fair booths.
 
 High Street
 Hustle, bustle, dirt; ugly American chain shops; lots and lots of people. There seems to be a large organized protest in progress: protesters completely cram the sidewalk to the southeast.
 
-The curb is lined with garbage. 
+The curb is lined with garbage.
 
 To the west, the street turns into a monumental staircase leading to the old fortified area; a cross street heads southeast towards the main roundabout.
 
@@ -485,9 +485,9 @@ We switch on the ignition and the car comes to life. Smelly, trembling, putt-put
 Fish Market
 Not very fishy at the moment, in fact: all the real trade happens in the early morning; then there is a period of tourist trade when the seafood sale tails off and most of the purchases are of polished conch shells and starfish; and then a little after noon the area clears out completely, leaving only briny rivulets on the concrete.
 
-A tall, stern woman is standing in the middle of the market. She wears the black caped uniform of an Authenticator, and a monocle just like mine. And I don't think I want her to see us. 
+A tall, stern woman is standing in the middle of the market. She wears the black caped uniform of an Authenticator, and a monocle just like mine. And I don't think I want her to see us.
 
-Just east of here is a rusting corrugated tin building, which was built to house various possessions of the fishermen. 
+Just east of here is a rusting corrugated tin building, which was built to house various possessions of the fishermen.
 
 [Your score has gone up by five points and is now twenty-six.]
 
@@ -497,9 +497,9 @@ While the Authenticator's back is turned, we slip inside...
 Tin Hut
 Most of the light in here comes from circular windows punched into the tin walls just under the ceiling. From the inside, the building looks both larger and more sound than it appears from outside: there are plenty of sturdy struts supporting the roof and keeping the walls upright.
 
-Various tarpaulin-covered masses fill the room. 
+Various tarpaulin-covered masses fill the room.
 
-A trap door is set in the floor. 
+A trap door is set in the floor.
 
 Sometimes smugglers and forgers have been known to stash things in here, since the building is close to the docks but rarely attracts the interest of customs officials.
 
@@ -525,7 +525,7 @@ We close the backpack.
 > go to counterfeit monkey
 I don't think there's anything showing that should get us into trouble. Timidly we open the door; the Authenticator has her back to us. We slip out. She makes one more turn in place — monocled gaze sliding across us without stopping — and then she strides away to the north.
 
-/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) through the marina district. 
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) through the marina district.
 
 Counterfeit Monkey
 It takes a minute for us to adjust to the light in here. Built when people were a bit shorter and ceilings were a bit lower, the Counterfeit Monkey is always smoky and never well lit, even in the middle of the day.
@@ -586,7 +586,7 @@ He heads into the interior of the café.
 /We (take|get|pick up|acquire) the sill.
 
 > go to counterfeit monkey
-/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) through the marina district. 
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) through the marina district.
 
 Counterfeit Monkey
 Infamously this pub was raided in 1929, the year that the Bureau developed its first meager attempt at an Authentication Scope, and dozens of smugglers and fraudulent businessmen went to jail. But neither that raid nor subsequent scrutiny has ever shut the place down entirely. Built when people were a bit shorter and ceilings were a bit lower, the Counterfeit Monkey is always smoky and never well lit, even in the middle of the day.
@@ -606,7 +606,7 @@ Parker acknowledges our return with a nod.
 > ask about slango
 "I wonder whether you've seen an associate of mine," we say to Parker. "Name of Slango."
 
-Parker looks over the bar at us. "He comes in here from time to time," he says. "Very regular customer. Always has about three rum and cokes." 
+Parker looks over the bar at us. "He comes in here from time to time," he says. "Very regular customer. Always has about three rum and cokes."
 
 This is a lie, and therefore a test. Slango doesn't drink alcohol himself and doesn't permit drunkenness in his crew.
 
@@ -622,7 +622,7 @@ Lady friend? This can only mean Lena, she being the only female native with whom
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether we can have the Origin Paste.
 
 > ask about paste
-"That Origin Paste for sale?" 
+"That Origin Paste for sale?"
 
 "Well now," he says, grinning, "that would surely be illegal, would it not? Origin Paste is after all a controlled substance in this country, due to its unhappy association with fraudulent activities. On the other hand there is no law against someone winning the Origin Paste in a completely legitimate game of chance or skill."
 
@@ -631,7 +631,7 @@ Lady friend? This can only mean Lena, she being the only female native with whom
 > ask how
 "Explain this game as though I have no idea what you're talking about," you say, leaning on the bar in an interested fashion. Are you flirting with Parker? No? Okay. Good to know.
 
-"It's a designated challenge game," says Parker. You've seen this played before, but he explains the rules anyway. 
+"It's a designated challenge game," says Parker. You've seen this played before, but he explains the rules anyway.
 
 "There are two contestants, one challenger and one defender.
 
@@ -654,14 +654,14 @@ I get out the roll of bills and he peels off two twenties.
 "Thank you. Now, you pick your entry article, and I'll ask one of these good gentlemen to suggest a defense category."
 
 > show sill to barman
-"Right," says the barman. "The sill it is." 
+"Right," says the barman. "The sill it is."
 
-He turns towards the group assembled around the dartboard. "Anyone want to defend against this character?" (with a nod at you). 
+He turns towards the group assembled around the dartboard. "Anyone want to defend against this character?" (with a nod at you).
 
 "Something smaller than a pebble!" suggests a woman in the front row. She passes forward her own ante to the bar, and the game is on.
 
 > put gel on sill
-We dip out a pea-sized quantity of gel and rub it gently onto the sill. With an audible SPLORT, the sill becomes a spill. 
+We dip out a pea-sized quantity of gel and rub it gently onto the sill. With an audible SPLORT, the sill becomes a spill.
 
 /The spill drips (out of our hands|through our fingers onto the floor).
 
@@ -684,7 +684,7 @@ This produces a squawk of surprise and irritation from the defendant, and you ge
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether he has any other games going.
 
 > put gel on pill
-We dip out a fingertip-coating quantity of gel and rub it gently onto the pill. With an audible SPLORT, the pill becomes a spill. 
+We dip out a fingertip-coating quantity of gel and rub it gently onto the pill. With an audible SPLORT, the pill becomes a spill.
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether he has any other games going.
 
@@ -706,14 +706,14 @@ The only problem with it is the distinctive smell.
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask whether he has any other games going.
 
 > go to tin hut
-/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) through the marina district. 
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) through the marina district.
 
 Tin Hut
 Most of the light in here comes from circular windows punched into the tin walls just under the ceiling. From the inside, the building looks both larger and more sound than it appears from outside: there are plenty of sturdy struts supporting the roof and keeping the walls upright.
 
-Various tarpaulin-covered masses fill the room. 
+Various tarpaulin-covered masses fill the room.
 
-A trap door is set in the floor. 
+A trap door is set in the floor.
 
 > prop trap door with sill
 We prop the trap door open with the sill.
@@ -725,7 +725,7 @@ An awkward, low, concrete-lined crawlspace beneath the tin hut. It smells somewh
 
 The trap door, wedged open by a sill, admits the only light.
 
-The only significant thing down here is a crate. 
+The only significant thing down here is a crate.
 
 > open crate
 We open the crate, revealing a watch, a band, and a single discarded leaflet.
@@ -746,9 +746,9 @@ We open the crate, revealing a watch, a band, and a single discarded leaflet.
 Tin Hut
 Most of the light in here comes from circular windows punched into the tin walls just under the ceiling. From the inside, the building looks both larger and more sound than it appears from outside: there are plenty of sturdy struts supporting the roof and keeping the walls upright.
 
-Various tarpaulin-covered masses fill the room. 
+Various tarpaulin-covered masses fill the room.
 
-A trap door is set in the floor, propped by a sill. 
+A trap door is set in the floor, propped by a sill.
 
 > get sill
 /We (take|get|pick up|acquire) the sill.
@@ -756,7 +756,7 @@ A trap door is set in the floor, propped by a sill.
 The trap-door makes a creaking noise and slams shut again.
 
 > go to aquarium
-/(We |We have a (brief|quick) |We make the( brief| quick)? |It's a( brief| quick)? )(walk|hike) through the marina district. 
+/(We |We have a (brief|quick) |We make the( brief| quick)? |It's a( brief| quick)? )(walk|hike) through the marina district.
 
 Aquarium Bookstore
 The shop takes its name from the collection of fish mounted on every wall: swordfish, bass, other things I don't recognize. Underneath these dubious tokens, the walls are covered with bookshelves, and there are stacks of books on the floor where the shelves have proven insufficient.
@@ -781,7 +781,7 @@ Lena is present, all right. In fact she watches us keenly the instant we come in
 > say who
 "Lena, it's Andra. And company. Maybe Slango mentioned that I was auditioning a new silent partner."
 
-"I don't know what you're talking about," she says. "But since you're here, whoever you are, I wonder whether you'd like to have a look at some merchandise of mine that could use a spruce." 
+"I don't know what you're talking about," she says. "But since you're here, whoever you are, I wonder whether you'd like to have a look at some merchandise of mine that could use a spruce."
 
 Aha. She wants us to prove our identity; probably has contraband that needs concealing, and wants us to do the deed as proof of trustworthiness.
 
@@ -819,7 +819,7 @@ We reset the device to s. With a distinct whiff of paper, the odes turn into an 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) calm Lena.
 
 > put gel on ode
-We dip out a pea-sized quantity of gel and rub it gently onto the ode. With an audible SPLORT, the ode becomes some modems. 
+We dip out a pea-sized quantity of gel and rub it gently onto the ode. With an audible SPLORT, the ode becomes some modems.
 
 "Let's go back to the odes," Lena suggests.
 
@@ -862,9 +862,9 @@ We smear some of the Origin Paste onto the odes. Nothing obvious happens, of cou
 > encourage lena
 "That would be extremely helpful," we say. Perhaps we can finally get off this island and back into our separate skins, which would not be one minute too soon for me.
 
-/"Very good," she says. She goes over to one of the free-standing shelves and takes out copies of [A-Za-z' ]+. Behind these works of literature she finds what looks like a cellular phone; but it mustn't be one, or at least not of the usual variety, because the Bureau tightly controls such items. 
+/"Very good," she says. She goes over to one of the free-standing shelves and takes out copies of [A-Za-z' ]+. Behind these works of literature she finds what looks like a cellular phone; but it mustn't be one, or at least not of the usual variety, because the Bureau tightly controls such items.
 
-We hear half a conversation. "It's me. There's someone to see... yes, I had her do the contraband... I don't know, a little taller and a lot less mean... Oh! I see. She looks healthy enough... I'm not running a restaurant! Okay. Okay. I'll talk to you later, sweetie. Bye." 
+We hear half a conversation. "It's me. There's someone to see... yes, I had her do the contraband... I don't know, a little taller and a lot less mean... Oh! I see. She looks healthy enough... I'm not running a restaurant! Okay. Okay. I'll talk to you later, sweetie. Bye."
 
 Without meeting our eye, she buries the phone back in its previous location. Then she says, "He's coming in direct. He says go over to Counterfeit Monkey and he'll be right over as originally planned, and he's sorry about the wait."
 
@@ -970,7 +970,7 @@ He heads out towards the docks and quickly disappears from view — returning to
 Counterfeit Monkey
 Built when people were a bit shorter and ceilings were a bit lower, the Counterfeit Monkey is always smoky and never well lit, even in the middle of the day.
 
-The clientele are currently engaged in a game of darts, while the barman watches and practices a sarcastic wit on those who embarrass themselves. 
+The clientele are currently engaged in a game of darts, while the barman watches and practices a sarcastic wit on those who embarrass themselves.
 
 > e
 
@@ -979,10 +979,10 @@ Here are some dozens of boats tied up: some of them are small to medium-sized fi
 
 To the east, up a moderate rise from the sea-level docks, is the imposing exterior of the Customs House. The classical look is only a little undermined by the public-service posters along the front. There passports are inspected and cargo passed under authentication, foreign items renamed or confiscated, and suspected smugglers interrogated.
 
-Immediately west, the Counterfeit Monkey's sign sways in the wind. 
+Immediately west, the Counterfeit Monkey's sign sways in the wind.
 
 > go to convenience
-/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )drive through the marina district (over to|to|as far as) the Roundabout. 
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )drive through the marina district (over to|to|as far as) the Roundabout.
 
 The whole Roundabout has ground to a halt, with protesters walking in the street and in some places completely filling the road. But this is mostly a nuisance until I notice that there are a couple of teenagers handcuffed to a tree.
 
@@ -1069,7 +1069,7 @@ My apartment is that direction, but unless we have some reason to go there, it s
 Public Convenience
 There are just the two toilet stalls and a couple of sinks, but the place has been kept up reasonably well, if one doesn't count the graffiti.
 
-A soap dispenser hangs beside the mirror. 
+A soap dispenser hangs beside the mirror.
 
 About knee-height in one of the stalls is a hole that runs right through the wall between the men's and women's restrooms. It's here that you and Brock and Slango usually leave things for one another.
 
@@ -1114,7 +1114,7 @@ What sets this one apart is the lettering, each sigil no bigger than a flea, car
 
 We don't, of course. There are better things to do. More important places to go. The administrative part of the bureau is away to the south, and there is an exhibit of letter tools to the east, which is open to the public.
 
-/Near the street entrance is a sizable informational bulletin-board advertising the services of the Bureau; and next to this, pushed back to be out of the way, is a bin. (The bin contains a shuttle|There is a shuttle in the bin|In the bin is a shuttle). 
+/Near the street entrance is a sizable informational bulletin-board advertising the services of the Bureau; and next to this, pushed back to be out of the way, is a bin. (The bin contains a shuttle|There is a shuttle in the bin|In the bin is a shuttle).
 
 > get bin
 /We (take|get|pick up|acquire) the bin. BUREAU PARKING, reads the bin, in thick black marker. DO NOT TAKE UNLESS AUTHORIZED.
@@ -1125,11 +1125,11 @@ We don't, of course. There are better things to do. More important places to go.
 We show the appointment card, and are let in.
 
 Arbot Maps & Antiques
-There is a large collection of vintage and antique maps under glass — the island of Atlantis as a whole, street maps of here and of Maiana, navigation maps of the harbor, and then maps of more distant places as well. 
+There is a large collection of vintage and antique maps under glass — the island of Atlantis as a whole, street maps of here and of Maiana, navigation maps of the harbor, and then maps of more distant places as well.
 
-A stylish mannequin near the front sports a pair of Britishizing goggles. 
+A stylish mannequin near the front sports a pair of Britishizing goggles.
 
-Overseeing all this is a woman named Kate. 
+Overseeing all this is a woman named Kate.
 
 "Welcome to Arbot," says Kate. "Feel free to browse and ask me any questions you may have about the merchandise."
 
@@ -1164,7 +1164,7 @@ The back wall is dramatically decorated with bottled liquors of all sorts, from 
 
 What makes this place technically a drinks club rather than a bar is its license to serve letter-manufactured food and drink. A toolkit on the bar contains some gimlets and some rusty nails, ready to be transformed into their respective cocktails.
 
-The bartender is in the middle of showing her homonym paddle to a patron holding a gin and tonic. The other patrons are scattered around the room at small tables, drinking or talking among themselves. 
+The bartender is in the middle of showing her homonym paddle to a patron holding a gin and tonic. The other patrons are scattered around the room at small tables, drinking or talking among themselves.
 
 She acknowledges us with a nod as we stroll up to the bar and get close enough to hear their conversation. "It was originally produced as a toy, but it's actually a bit dangerous," the bartender is saying.
 
@@ -1212,7 +1212,7 @@ I think I know where we can get one, though. My advisor Professor Waterstone —
 Palm Square
 Now this is my part of town: Palm Square is the beginning of the university district. To the southeast, through the iron gate, is the university campus proper; and that unobtrusive little doorway directly south of us leads into the Babel Café.
 
-I live in the apartment complex that runs along the west side of the square — in fact, my apartment door is immediately to the southwest. 
+I live in the apartment complex that runs along the west side of the square — in fact, my apartment door is immediately to the southwest.
 
 > w
 That way lies the bathroom window of my apartment. Though in fact, if you have a mind to break in, it's the easiest way: it's not hard to force the window.
@@ -1234,12 +1234,12 @@ I step us back and stare up at her. "I'm a friend of Alex," I say. "He called an
 
 In a mutter she adds, "Not like he has anything worth stealing anyway." She vanishes from view.
 
-The window is uncomfortably high and it takes a little scramble to get in, but soon we are inside. 
+The window is uncomfortably high and it takes a little scramble to get in, but soon we are inside.
 
 Apartment Bathroom
 /An antique nightstand of my mother's, which does not actually fit anywhere near my bed, is jammed into one corner of the bathroom. (On the nightstand are a key and a ring|There are a key and a ring on the nightstand).
 
-The bathroom window gives some weak sunlight. 
+The bathroom window gives some weak sunlight.
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) climb back out the window, or we could go south into the rest of my apartment.
 
@@ -1283,7 +1283,7 @@ Mother picks her way to the refrigerator, which she opens, revealing only some y
 > z
 She gives the refrigerator door a little push and it swings closed.
 
-"How well do you know him?" Mother asks. She immediately catches herself, and adds: "I'm not inquiring into the details of your relationship. But I am concerned about him. He has seemed very unhappy recently about his work. Has he said anything to you about that? Wanting to leave the program, or change careers, or... anything?" 
+"How well do you know him?" Mother asks. She immediately catches herself, and adds: "I'm not inquiring into the details of your relationship. But I am concerned about him. He has seemed very unhappy recently about his work. Has he said anything to you about that? Wanting to leave the program, or change careers, or... anything?"
 
 I didn't think she'd noticed.
 
@@ -1292,7 +1292,7 @@ I didn't think she'd noticed.
 > reassure
 "I think it's graduate school getting to him a bit," we lie. I am pretty sure this is what my mother thinks: she has little time for whining or sulking, and I believe she considers any ideological queasiness I may have exhibited to be just malingering about research that is not going well.
 
-"Really?" she says. "Hm." 
+"Really?" she says. "Hm."
 
 I would like her to go on, but she doesn't: because it would be indiscreet, because she doesn't trust us.
 
@@ -1311,7 +1311,7 @@ She's not even visible through the window any longer.
 Apartment Bathroom
 /An antique nightstand of my mother's, which does not actually fit anywhere near my bed, is jammed into one corner of the bathroom. (On the nightstand are a key and a ring|There are a key and a ring on the nightstand).
 
-The bathroom window gives some weak sunlight. 
+The bathroom window gives some weak sunlight.
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) climb back out the window, or we could go south into the rest of my apartment.
 
@@ -1328,7 +1328,7 @@ It is the perfect combination of technical paranoia and old-fashioned pretentiou
 My Apartment
 It's an efficiency: note the kitchen area, with all the usual appliances, in one corner. My mother attempted to provide a microwave, rice cooker, toaster, waffle iron, and julienne-fry-maker, but I pointed out that these objects would triple-populate the two square feet of available counter space.
 
-My futon is on the floor in the opposite corner.  
+My futon is on the floor in the opposite corner.
 
 /(There are Journal of Third-World Economics and Studies in Primary Language Acquisition on the counter|On the counter are Journal of Third-World Economics and Studies in Primary Language Acquisition).
 
@@ -1340,9 +1340,9 @@ We open the apartment door.
 Palm Square
 Palm Square is the beginning of the university district. To the southeast, through the iron gate, is the university campus proper; and that unobtrusive little doorway directly south of us leads into the Babel Café.
 
-I live in the apartment complex that runs along the west side of the square — in fact, my apartment door is immediately to the southwest. 
+I live in the apartment complex that runs along the west side of the square — in fact, my apartment door is immediately to the southwest.
 
-My bathroom window remains vulnerably open.  
+My bathroom window remains vulnerably open.
 
 > go to babel
 Babel Café
@@ -1350,9 +1350,9 @@ Through many changes of management, this institution has fed the denizens of the
 
 /A clerk in a white apron stands behind the long glass case. ((In the long glass case|There) are|The long glass case contains) a pocket-bread and a honey pastry triangle( in the long glass case)?.
 
-The tables are square wooden things painted dark blue (not the vibrant blue of the Bureau, but something closer to midnight), and the upper surfaces are découpaged with antique travel postcards. 
+The tables are square wooden things painted dark blue (not the vibrant blue of the Bureau, but something closer to midnight), and the upper surfaces are découpaged with antique travel postcards.
 
-A blue plaque is mounted on the wall. 
+A blue plaque is mounted on the wall.
 
 The clerk grins at us in a welcoming way.
 
@@ -1360,9 +1360,9 @@ The clerk grins at us in a welcoming way.
 Palm Square
 Palm Square is the beginning of the university district. To the southeast, through the iron gate, is the university campus proper; and that unobtrusive little doorway directly south of us leads into the Babel Café.
 
-I live in the apartment complex that runs along the west side of the square — in fact, my apartment door is immediately to the southwest. 
+I live in the apartment complex that runs along the west side of the square — in fact, my apartment door is immediately to the southwest.
 
-My bathroom window remains vulnerably open.  
+My bathroom window remains vulnerably open.
 
 > unlock gate with ring
 We unlock the sturdy iron gate.
@@ -1371,20 +1371,20 @@ We unlock the sturdy iron gate.
 University Oval
 This is the center of the university, a broad grassy oval shaded with sycamore trees and surrounded by buildings in brick or white stone.
 
-An activist is standing in our way, gripping a sign that says "TOXI WASTE AWARENESS!". 
+An activist is standing in our way, gripping a sign that says "TOXI WASTE AWARENESS!".
 
-Immediately south of here is the building where I spend most of my time, Samuel Johnson Hall. 
+Immediately south of here is the building where I spend most of my time, Samuel Johnson Hall.
 
 "Do you have a minute to help save the environment?" the activist asks brightly.
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) say no or say yes.
 
 > say no
-"I'm sorry, I'm in a hurry," we say. 
+"I'm sorry, I'm in a hurry," we say.
 
 Evidently she has a greater than usual flair for drama, because she refuses to be brushed off that easily. "You're in a hurry now," she says, "but in a few short decades, you'll be much too late. Please, for the good of your planet."
 
-She sets down the sign in order to free her hands for more expressive argument. "Listen, we're trying to gain financial support to make a major advertising campaign pushing the concept of toxi waste throughout the anglophone world. If you know anything about linguistic efficacy, I'm sure you can imagine the implications." 
+She sets down the sign in order to free her hands for more expressive argument. "Listen, we're trying to gain financial support to make a major advertising campaign pushing the concept of toxi waste throughout the anglophone world. If you know anything about linguistic efficacy, I'm sure you can imagine the implications."
 
 I can, in fact, imagine the implications, probably a little better than she would like.
 
@@ -1416,14 +1416,14 @@ That's to say that we study how the ability to change things based on their name
 
 The department office, with several professorial offices leading off of it, is to the southeast. To the southwest is the seminar room, where many of the upper-level courses occur, and which also contains the department library; downstairs is the basement, where the graduate students and junior instructors are kept.
 
-On the wall hangs a framed photograph of Professor Waterstone, with the words SHAPLY CHAIR in big letters underneath. 
+On the wall hangs a framed photograph of Professor Waterstone, with the words SHAPLY CHAIR in big letters underneath.
 
 > se
 
 Language Studies Department Office
 This big, slightly drab area holds such useful objects as the mailboxes and the secretary's computer. On ordinary days the secretary would be in as well, presiding over affairs. The offices of individual professors lie north and west.
 
-The department printer also sits on the u-shaped desk. 
+The department printer also sits on the u-shaped desk.
 
 This corner office was won in a battle of wills with several other departments during the most recent rebuilding drive. Professor Waterstone is fond of reminding the others that he was the one to obtain this favorable position whenever there is a disagreement about procedure.
 
@@ -1436,7 +1436,7 @@ Professor Waterstone is sitting here. Waterstone is my dissertation advisor. (He
 
 We can see an invitation on a desk. It's from Dental Consonants Limited. Their design of stationery is unmistakable.
 
-In front of Professor Waterstone is a small laptop. 
+In front of Professor Waterstone is a small laptop.
 
 He looks up at us gravely. "I don't believe we've met," he says. "Can I help you?"
 
@@ -1465,7 +1465,7 @@ A moment later the printer whirs thoughtfully.
 Language Studies Department Office
 This big, slightly drab area holds such useful objects as the mailboxes and the secretary's computer. On ordinary days the secretary would be in as well, presiding over affairs. The offices of individual professors lie north and west, though the north door is closed.
 
-The department printer also sits on the u-shaped desk. 
+The department printer also sits on the u-shaped desk.
 
 > x printer
 The networked printer handles output for all the computers in the department. The indicator lights glow red to indicate that the paper-drawer is empty. An additional light indicates that some document is in the queue to print and is waiting for the printer to be ready.
@@ -1504,7 +1504,7 @@ We reset the device to c. The cream gives way to the now-familiar ream.
 Language Studies Department Office
 This big, slightly drab area holds such useful objects as the mailboxes and the secretary's computer. On ordinary days the secretary would be in as well, presiding over affairs. The offices of individual professors lie north and west, though the north door is closed.
 
-The department printer also sits on the u-shaped desk. The paper drawer stands open. 
+The department printer also sits on the u-shaped desk. The paper drawer stands open.
 
 > put ream in printer
 The ream fits exactly into the depth of the drawer. We adjust the plastic clamps that hold pages in place until everything is snug.
@@ -1588,7 +1588,7 @@ They recently redid this room, and whoever picked the decorations had postmodern
 
 /Professor Higgate waits a little absent-mindedly nearby, looking over the bookshelf. (There|On the bookshelf) are History of the Standards Revolution and Lives of the Lexicographers( on the bookshelf)?.
 
-/A massive plexiglas case takes up one corner of the room. (There is|The plexiglas case contains|In the plexiglas case is) a compact but high-powered late model synthesizer( in the plexiglas case)?. 
+/A massive plexiglas case takes up one corner of the room. (There is|The plexiglas case contains|In the plexiglas case is) a compact but high-powered late model synthesizer( in the plexiglas case)?.
 
 The big table at the center of the room is an irregular polygon, with one chair pushed up to the shortest side. I think the shape is intended to undermine traditional conceptions of academic hierarchy, but in practice it  just means that whoever gets to seminar late has to sit with a table angle jabbing him in the stomach.
 
@@ -1622,9 +1622,9 @@ I know all this because Brown cornered me in the hallway one afternoon and talke
 > ask what
 "What are you up to there?" we ask. Asking Brown questions when he's working is a bit of a crap-shoot, I tell you now.
 
-He wiggles his nose back and forth. I knew him for three months before I figured out what the wiggle is: it is his hands-free way of working his spectacles back up his nose when they start to slide down. 
+He wiggles his nose back and forth. I knew him for three months before I figured out what the wiggle is: it is his hands-free way of working his spectacles back up his nose when they start to slide down.
 
-Without looking at us, he says, "I'm getting ready to do a new calibration run on 'love'." 
+Without looking at us, he says, "I'm getting ready to do a new calibration run on 'love'."
 
 This is a favorite of his, because you can get it so easily from a glove, so the materials are inexpensive.
 
@@ -1635,11 +1635,11 @@ This is a favorite of his, because you can get it so easily from a glove, so the
 
 "It varies," Professor Brown replies. "The manifestation of a complex concept depends on a variety of circumstances; by default if multiple concepts are available, the letter tool will produce whichever concept requires least energy to produce, but in cases where several concepts are indistinguishably popular, the results are apparently random.
 
-"Recent research suggests that the outcome can be influenced by the language community surrounding the operation and even by the intention of the tool's user (to a limited degree); but I am not interested in pursuing those angles at present." 
+"Recent research suggests that the outcome can be influenced by the language community surrounding the operation and even by the intention of the tool's user (to a limited degree); but I am not interested in pursuing those angles at present."
 
 There: Professor Brown in a nutshell. Did he tell you anything you wanted to know? No.
 
-The deal is that manifestations of "love" tend to look like stuff you'd find on a greeting card: roses, hearts, kiss symbols. Every once in a while you get something a little more platonic. But it's a let-down, if you want to know the truth. Most significant abstracts are like that: all you get by reifying them is a popular visualization. 
+The deal is that manifestations of "love" tend to look like stuff you'd find on a greeting card: roses, hearts, kiss symbols. Every once in a while you get something a little more platonic. But it's a let-down, if you want to know the truth. Most significant abstracts are like that: all you get by reifying them is a popular visualization.
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) ask how Professor Brown makes abstracts.
 
@@ -1684,7 +1684,7 @@ Dank and malodorous: there are no windows down here, and the drainage is terribl
 
 The stairs up are here; the lecture room at the east. Immediately south is the Graduate Student Office, and southwest is Professor Brown's office. The most interesting of all is the small door west, trying to look inconspicuous, but locked with a keycard lock: it's where the department stores its most dangerous licensed equipment.
 
-/A large open carton stands against the wall right between Brown's lab door and the interesting door. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." ((In the large carton|There) is|The large carton contains) a pineapple( in the large carton)?. 
+/A large open carton stands against the wall right between Brown's lab door and the interesting door. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." ((In the large carton|There) is|The large carton contains) a pineapple( in the large carton)?.
 
 > s
 
@@ -1693,7 +1693,7 @@ A small windowless room divided into cubicles for individual graduate students.
 
 A tiny refrigerator stores lunches (sometimes) and looted leftovers from department receptions (when available). The door is currently open, revealing a silver platter (littered with the remains of a party, including a crumpled cocktail napkin and a shrimp tail). On top of the fridge there is a coffee-maker.
 
-My cubicle is the one with the swivel-chair, towards the back of the room by the water cooler. 
+My cubicle is the one with the swivel-chair, towards the back of the room by the water cooler.
 
 > x sticky
 /(I can't see what you're talking about.|That noun did not make sense in this context.|Maybe that means something different to you, but I can't see any such thing.|I don't know what you think you're talking about, because we can't see any such thing here.)
@@ -1704,9 +1704,9 @@ My cubicle is the one with the swivel-chair, towards the back of the room by the
 University Oval
 This is the center of the university, a broad grassy oval shaded with sycamore trees and surrounded by buildings in brick or white stone.
 
-Immediately south of here is the building where I spend most of my time, Samuel Johnson Hall. 
+Immediately south of here is the building where I spend most of my time, Samuel Johnson Hall.
 
-A sign lies on the grass, abandoned by its owner. 
+A sign lies on the grass, abandoned by its owner.
 
 > wave g-remover at sign
 We reset the device to g. With a distinct whiff of sulfur, the sign turns into a sin. An abstract representation of willfully clueless meddling. Not a sin known to Dante, perhaps; but modern democracies have their own forms of wrong-doing.
@@ -1736,7 +1736,7 @@ You have earned 53 points:
 
 You have not yet removed a, f, i, j, k, n, o, q, t, u, v, w, or z from anything.
 
-The achievements you have accomplished so far include: 
+The achievements you have accomplished so far include:
 
   Finished tutorial mode
 
@@ -1748,7 +1748,7 @@ Dank and malodorous: there are no windows down here, and the drainage is terribl
 
 The stairs up are here; the lecture room at the east. Immediately south is the Graduate Student Office, and southwest is Professor Brown's office. The most interesting of all is the small door west, trying to look inconspicuous, but locked with a keycard lock: it's where the department stores its most dangerous licensed equipment.
 
-/A large open carton stands against the wall right between Brown's lab door and the interesting door. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." (In the large carton is|The large carton contains|There is) a pineapple( in the large carton)?. 
+/A large open carton stands against the wall right between Brown's lab door and the interesting door. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." (In the large carton is|The large carton contains|There is) a pineapple( in the large carton)?.
 
 > x door
 It has no label, only a keycard-reading lock.
@@ -1782,7 +1782,7 @@ The Fleur d'Or is a high-end hotel that serves businessmen and luxury tourists i
 
 The spotlights in the ceiling light the floor in distinct pools of Bureau blue, and a sheet of frosted glass etched with random letters separates the lobby from the drinks club to the west.
 
-There is no one at the glossy piano in the corner, though a piece has been left on the piano bench. 
+There is no one at the glossy piano in the corner, though a piece has been left on the piano bench.
 
 >random-seed 1234
 [Random-number generator seeded with 1234.]
@@ -1794,7 +1794,7 @@ The back wall is dramatically decorated with bottled liquors of all sorts, from 
 
 What makes this place technically a drinks club rather than a bar is its license to serve letter-manufactured food and drink. A toolkit on the bar contains some gimlets and some rusty nails, ready to be transformed into their respective cocktails.
 
-The bartender and Mark are still talking about the homonym paddle. Mark is holding a gin and tonic. The other patrons are scattered around the room at small tables, drinking or talking among themselves. 
+The bartender and Mark are still talking about the homonym paddle. Mark is holding a gin and tonic. The other patrons are scattered around the room at small tables, drinking or talking among themselves.
 
 /"(Hello|Hi)," the bartender says.
 
@@ -1819,7 +1819,7 @@ They recently redid this room, and whoever picked the decorations had postmodern
 
 /A massive plexiglas case takes up one corner of the room. (There is|The plexiglas case contains|In the plexiglas case is) a compact but high-powered late model synthesizer( in the plexiglas case)?.
 
-The big table at the center of the room is an irregular polygon, with one chair pushed up to the shortest side. 
+The big table at the center of the room is an irregular polygon, with one chair pushed up to the shortest side.
 
 I shut the door so that we don't get interrupted.
 
@@ -1850,7 +1850,7 @@ We can go north to Long Street North, south to Palm Square, and west to Arbot Ma
 There is a continuous angry whine from the jigsaw.
 
 > put gel on car
-We dip out a pea-sized quantity of gel and rub it gently onto the car. With an audible SPLORT, the car becomes some chard. 
+We dip out a pea-sized quantity of gel and rub it gently onto the car. With an audible SPLORT, the car becomes some chard.
 
 There is a continuous angry whine from the jigsaw.
 
@@ -1874,7 +1874,7 @@ They recently redid this room, and whoever picked the decorations had postmodern
 
 /A massive plexiglas case takes up one corner of the room. (In the plexiglas case is|There is|The plexiglas case contains) a compact but high-powered late model synthesizer( in the plexiglas case)?. (There|(In the|The) compact but high-powered late model synthesizer) (are|contains) a key and a crossword( in the compact but high-powered late model synthesizer)?.
 
-The big table at the center of the room is an irregular polygon, with one chair pushed up to the shortest side. 
+The big table at the center of the room is an irregular polygon, with one chair pushed up to the shortest side.
 
 For safety, I shut the door behind us.
 
@@ -1949,11 +1949,11 @@ There is a continuous angry whine from the jigsaw.
 Language Studies Seminar Room
 They recently redid this room, and whoever picked the decorations had postmodern tastes.
 
-/The bookshelves lining the walls contain the department library. (There|On the bookshelf) are The Problem of Adjectives, History of the Standards Revolution, and Lives of the Lexicographers( on the bookshelf)?. 
+/The bookshelves lining the walls contain the department library. (There|On the bookshelf) are The Problem of Adjectives, History of the Standards Revolution, and Lives of the Lexicographers( on the bookshelf)?.
 
 /A massive plexiglas case takes up one corner of the room. (There is|The plexiglas case contains|In the plexiglas case is) a compact but high-powered late model synthesizer( in the plexiglas case)?.
 
-The big table at the center of the room is an irregular polygon, with one chair pushed up to the shortest side. 
+The big table at the center of the room is an irregular polygon, with one chair pushed up to the shortest side.
 
 For safety, I shut the door behind us.
 
@@ -1968,7 +1968,7 @@ We put the pass into the synthesizer.
 There is a continuous angry whine from the jigsaw.
 
 > put gel on crossword
-We dip out a pea-sized quantity of gel and rub it gently onto the crossword. With an audible SPLORT, the crossword becomes a word and a cross. 
+We dip out a pea-sized quantity of gel and rub it gently onto the crossword. With an audible SPLORT, the crossword becomes a word and a cross.
 
 There is a continuous angry whine from the jigsaw.
 
@@ -2001,7 +2001,7 @@ Dank and malodorous: there are no windows down here, and the drainage is terribl
 
 The stairs up are here; the lecture room at the east. Immediately south is the Graduate Student Office, and southwest is Professor Brown's office. The most interesting of all is the small door west, trying to look inconspicuous, but locked with a keycard lock: it's where the department stores its most dangerous licensed equipment. At the moment it stands invitingly open.
 
-/A large open carton stands against the wall right between Brown's lab door and the interesting door. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." (In the large carton is|The large carton contains|There is) a pineapple( in the large carton)?. 
+/A large open carton stands against the wall right between Brown's lab door and the interesting door. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." (In the large carton is|The large carton contains|There is) a pineapple( in the large carton)?.
 
 There is a continuous angry whine from the jigsaw.
 
@@ -2110,7 +2110,7 @@ Dank and malodorous: there are no windows down here, and the drainage is terribl
 
 The stairs up are here; the lecture room at the east. Immediately south is the Graduate Student Office, and southwest is Professor Brown's office. The most interesting of all is the small door west, trying to look inconspicuous, but locked with a keycard lock: it's where the department stores its most dangerous licensed equipment. At the moment it stands invitingly open.
 
-/A large open carton stands against the wall right between Brown's lab door and the Rectification Room. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." (In the large carton are|The large carton contains|There are) a swat and a pineapple( in the large carton)?. 
+/A large open carton stands against the wall right between Brown's lab door and the Rectification Room. "Recycling," reads the sign over the carton. "Place your lab-created items here for processing." (In the large carton are|The large carton contains|There are) a swat and a pineapple( in the large carton)?.
 
 /(There is a continuous angry whine from the jigsaw.|The noise is sudden and percussive, and repeats without a clear rhythm.)
 
@@ -2121,7 +2121,7 @@ The main lecture hall used for large survey courses in language studies offered 
 
 A poster at the front of the room announces a conference on cultural reactions to linguistic change. It is being held in Nice the day after tomorrow, with Professor Waterstone as keynote speaker, on the topic of "homonym shame". Somehow I had forgotten about the date of this: I've been too much worried about our escape.
 
-The room extends south, full of hard wooden seats. Abandoned on one near the back is a coat. 
+The room extends south, full of hard wooden seats. Abandoned on one near the back is a coat.
 
 There is a continuous angry whine from the jigsaw.
 
@@ -2129,7 +2129,7 @@ There is a continuous angry whine from the jigsaw.
 Lecture Hall (among the seats)
 Many are the fine hours I have spent here dozing; and many are the students of mine who have done the same. The circle of life becomes complete.
 
-The room extends north, full of hard wooden seats. Abandoned on one near the back is a coat. 
+The room extends north, full of hard wooden seats. Abandoned on one near the back is a coat.
 
 Someone has taped to the wall a course advertisement for next quarter, inviting interested undergraduates to enroll in Interlingua 101. Probably Professor Higgate's work.
 
@@ -2148,11 +2148,11 @@ There is a continuous angry whine from the jigsaw.
 Language Studies Seminar Room
 They recently redid this room, and whoever picked the decorations had postmodern tastes.
 
-/The bookshelves lining the walls contain the department library. (There|On the bookshelf) are The Problem of Adjectives, History of the Standards Revolution, and Lives of the Lexicographers( on the bookshelf)?. 
+/The bookshelves lining the walls contain the department library. (There|On the bookshelf) are The Problem of Adjectives, History of the Standards Revolution, and Lives of the Lexicographers( on the bookshelf)?.
 
-/A massive plexiglas case takes up one corner of the room. (There is|The plexiglas case contains|In the plexiglas case is) a compact but high-powered late model synthesizer( in the plexiglas case)?. 
+/A massive plexiglas case takes up one corner of the room. (There is|The plexiglas case contains|In the plexiglas case is) a compact but high-powered late model synthesizer( in the plexiglas case)?.
 
-The big table at the center of the room is an irregular polygon, with one chair pushed up to the shortest side. 
+The big table at the center of the room is an irregular polygon, with one chair pushed up to the shortest side.
 
 For safety, I shut the door behind us.
 
@@ -2185,12 +2185,12 @@ There is a continuous angry whine from the jigsaw.
 There is a continuous angry whine from the jigsaw.
 
 > go to department office
-/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike). 
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike).
 
 Language Studies Department Office
 This big, slightly drab area holds such useful objects as the mailboxes and the secretary's computer. On ordinary days the secretary would be in as well, presiding over affairs. The offices of individual professors lie north and west, though both doors are closed.
 
-The department printer also sits on the u-shaped desk. 
+The department printer also sits on the u-shaped desk.
 
 There is a continuous angry whine from the jigsaw.
 
@@ -2234,14 +2234,14 @@ We already have that.
 There is a continuous angry whine from the jigsaw.
 
 > go to tall street
-/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) (over to|as far as|to) University Oval. 
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) (over to|as far as|to) University Oval.
 
 University Oval
 This is the center of the university, a broad grassy oval shaded with sycamore trees and surrounded by buildings in brick or white stone.
 
-Immediately south of here is the building where I spend most of my time, Samuel Johnson Hall. 
+Immediately south of here is the building where I spend most of my time, Samuel Johnson Hall.
 
-We can also see a sin here. 
+We can also see a sin here.
 
 There are a couple of officers lounging by the university gate. We won't be able to go by without being seen.
 
@@ -2300,7 +2300,7 @@ Time passes.
 There is a continuous angry whine from the jigsaw.
 
 > go to tall street
-/(We |We have a (brief|quick|fair) |We make the( brief| quick| fair)? |It's a( brief| quick| fair)? )(walk|hike) out from under the sycamores in the Oval and up Long Street. 
+/(We |We have a (brief|quick|fair) |We make the( brief| quick| fair)? |It's a( brief| quick| fair)? )(walk|hike) out from under the sycamores in the Oval and up Long Street.
 
 Tall Street
 Tall Street is full of families, some reaching as far as the old park at the east end of the street.
@@ -2314,7 +2314,7 @@ There is a continuous angry whine from the jigsaw.
 Abandoned Park
 In contrast with the parks in the more savory parts of town, this is a bit of patchy grass where local dogs occasionally come out to do their business. A granite war memorial is fixed at the center, which is why tourist maps optimistically call the place Monument Green. But the memorial is only moderately monumental and the grass hardly green at all.
 
-We step on a bent twig before we back away again. 
+We step on a bent twig before we back away again.
 
 It is a place that might have been developed long ago; only it is known that there are remains of Roman settlement here, and there is a risk that digging out the foundations would turn up some of those ruins, exposing a large number of Latin-language objects to the light of day. To prevent this catastrophe the whole area has been placed off limits to development.
 
@@ -2329,9 +2329,9 @@ There is a continuous angry whine from the jigsaw.
 Bus Station
 A currently-desolate depot from which buses run seasonally to Maiana, the island's other major town. The old station building is a low, rectilinear edifice from the 60s, all pebbled concrete and sheet glass, but it's shut, leaving accessible only a series of empty bus bays and a wall-mounted schedule. The public convenience to the east is the only thing open, while the area to the northwest is open parkland.
 
-A dove flutters from one surface to another, occasionally stopping to stare at us. 
+A dove flutters from one surface to another, occasionally stopping to stare at us.
 
-A shed, rather ramshackle and unlikely, sits on the pavement, where it ought to be in the way of incoming buses. 
+A shed, rather ramshackle and unlikely, sits on the pavement, where it ought to be in the way of incoming buses.
 
 There is a continuous angry whine from the jigsaw.
 
@@ -2368,7 +2368,7 @@ There is a continuous angry whine from the jigsaw.
 /((The latest child's attack swings wide of the figure|Among a general rumble of assent, one of the fathers gives Atlantida a hard smack with a baseball bat. She doesn't crack|Another child takes a whack at the hanging figure. She bounces away from the blow, but does not break|The next child doesn't seem to have been properly blindfolded and connects with surprising dexterity and sureness, but the thing doesn't break).)?
 
 > put gel on password
-We dip out a pea-sized quantity of gel and rub it gently onto the password. With an audible SPLORT, the password becomes a word and a pass. 
+We dip out a pea-sized quantity of gel and rub it gently onto the password. With an audible SPLORT, the password becomes a word and a pass.
 
 There is a continuous angry whine from the jigsaw.
 
@@ -2407,7 +2407,7 @@ There is a continuous angry whine from the jigsaw.
 Fleur d'Or Lobby
 The spotlights in the ceiling light the floor in distinct pools of Bureau blue, and a sheet of frosted glass etched with random letters separates the lobby from the drinks club to the west.
 
-There is no one at the glossy piano in the corner, though a piece has been left on the piano bench. 
+There is no one at the glossy piano in the corner, though a piece has been left on the piano bench.
 
 There is a continuous angry whine from the jigsaw.
 
@@ -2457,11 +2457,11 @@ It sounds as though the sky is making popcorn.
 Language Studies Seminar Room
 They recently redid this room, and whoever picked the decorations had postmodern tastes.
 
-/The bookshelves lining the walls contain the department library. (There|On the bookshelf) are The Problem of Adjectives, History of the Standards Revolution, and Lives of the Lexicographers( on the bookshelf)?. 
+/The bookshelves lining the walls contain the department library. (There|On the bookshelf) are The Problem of Adjectives, History of the Standards Revolution, and Lives of the Lexicographers( on the bookshelf)?.
 
-/A massive plexiglas case takes up one corner of the room. (In the plexiglas case is|There is|The plexiglas case contains) a compact but high-powered late model synthesizer( in the plexiglas case)?. 
+/A massive plexiglas case takes up one corner of the room. (In the plexiglas case is|There is|The plexiglas case contains) a compact but high-powered late model synthesizer( in the plexiglas case)?.
 
-The big table at the center of the room is an irregular polygon, with one chair pushed up to the shortest side. 
+The big table at the center of the room is an irregular polygon, with one chair pushed up to the shortest side.
 
 For safety, I shut the door behind us.
 
@@ -2550,12 +2550,12 @@ We settle the hairpiece on our head and adjust our hair underneath.
 There is a continuous angry whine from the jigsaw.
 
 > go to bus station
-/(We |We have a (long|lengthy|rather tiring) |We make the( rather tiring| long| lengthy)? |It's a( long| lengthy| rather tiring)? )(walk|hike) out from under the sycamores in the Oval and up Long Street. 
+/(We |We have a (long|lengthy|rather tiring) |We make the( rather tiring| long| lengthy)? |It's a( long| lengthy| rather tiring)? )(walk|hike) out from under the sycamores in the Oval and up Long Street.
 
 Bus Station
 A currently-desolate depot from which buses run seasonally to Maiana, the island's other major town. The old station building is a low, rectilinear edifice from the 60s, all pebbled concrete and sheet glass, but it's shut, leaving accessible only a series of empty bus bays and a wall-mounted schedule. The public convenience to the east is the only thing open, while the area to the northwest is open parkland.
 
-A dove flutters from one surface to another, occasionally stopping to stare at us. 
+A dove flutters from one surface to another, occasionally stopping to stare at us.
 
 There is a continuous angry whine from the jigsaw.
 
@@ -2580,7 +2580,7 @@ With a distinct whiff of sweaty animal, the dove turns into a doe. She looks ver
 There is a continuous angry whine from the jigsaw.
 
 > put gel on doe
-We dip out a pea-sized quantity of gel and rub it gently onto the doe. With an audible SPLORT, the doe becomes a dove. 
+We dip out a pea-sized quantity of gel and rub it gently onto the doe. With an audible SPLORT, the doe becomes a dove.
 
 There is a continuous angry whine from the jigsaw.
 
@@ -2592,7 +2592,7 @@ Echoing space, marble floor, eye-like skylight many meters above us: so far, the
 
 What sets this one apart is the lettering, each sigil no bigger than a flea, carved over every inch of the walls. Inscribed here is, in fact, the entire text of A New Orthodox Orthography. The administrative part of the bureau is away to the south, and there is an exhibit of letter tools to the east, which is open to the public.
 
-Near the street entrance is a sizable informational bulletin-board advertising the services of the Bureau.  
+Near the street entrance is a sizable informational bulletin-board advertising the services of the Bureau.
 
 There is a continuous angry whine from the jigsaw.
 
@@ -2630,7 +2630,7 @@ The most important task of any government bureau is to keep away time-wasters, i
 
 An instructive notice details the criteria for entry to the Bureau proper.
 
-Here to guard access to the rest of the building is a secretary on a tall stool. The secretary is carrying the Regulation Authentication Scope and wearing a pencil skirt and a plain white top. 
+Here to guard access to the rest of the building is a secretary on a tall stool. The secretary is carrying the Regulation Authentication Scope and wearing a pencil skirt and a plain white top.
 
 We can go north to the Rotunda and east from here.
 
@@ -2730,9 +2730,9 @@ We can go north and up to the Bureau Hallway from here.
 Bureau Basement Middle
 The hallway continues both north and south, flanked by doors painted immutable colors: hyacinth, celadon, chartreuse.
 
-The cute security door at the north end is solidly shut. 
+The cute security door at the north end is solidly shut.
 
-An adorable video camera hangs in the left corner above the door. 
+An adorable video camera hangs in the left corner above the door.
 
 > n
 The guards have apparently been instructed to allow us in, because as we approach, the door slides open.
@@ -2742,7 +2742,7 @@ The door seals behind us as soon as we are through.
 Bureau Basement Secret Section
 The heightened security on this side of the door is obvious everywhere we look. The floor is tiled in paisley tiles. The light fixtures give off pale pink light. The walls are covered in frog leather. The doors are locked with padlocks the size of handbags, locks decorated à la Louis Quinze, combination locks made of solid gold. There is not a bare noun in sight.
 
-The cute security door at the south end is solidly shut. 
+The cute security door at the south end is solidly shut.
 
 The hallway runs from south (comparatively normal) to north (deeply frightening). Just west is the equipment testing room.
 
@@ -2751,9 +2751,9 @@ The hallway runs from south (comparatively normal) to north (deeply frightening)
 Sensitive Equipment Testing Room
 A room with no windows, no cameras, no recording equipment, and barely any furniture.
 
-A rock sits in one corner of the room. 
+A rock sits in one corner of the room.
 
-At the center of the room is a gleaming new T-inserter Machine. This is a state of the art device: letter removal has been well understood for decades, but insertion is much more dangerous and difficult, fraught with ambiguity. 
+At the center of the room is a gleaming new T-inserter Machine. This is a state of the art device: letter removal has been well understood for decades, but insertion is much more dangerous and difficult, fraught with ambiguity.
 
 > open pack
 We open the backpack.
@@ -2771,12 +2771,12 @@ We already have that.
 There is a continuous angry whine from the jigsaw.
 
 > put gel on hairpiece
-We dip out a pea-sized quantity of gel and rub it gently onto the hairpiece. With an audible SPLORT, the hairpiece becomes a hair and a piece. 
+We dip out a pea-sized quantity of gel and rub it gently onto the hairpiece. With an audible SPLORT, the hairpiece becomes a hair and a piece.
 
 There is a continuous angry whine from the jigsaw.
 
 > put gel on hair
-We dip out a fingertip-coating quantity of gel and rub it gently onto the hair. With an audible SPLORT, the hair becomes a chair. 
+We dip out a fingertip-coating quantity of gel and rub it gently onto the hair. With an audible SPLORT, the hair becomes a chair.
 
 There is a continuous angry whine from the jigsaw.
 
@@ -2819,7 +2819,7 @@ The waxen look melts and he grins. "Thank god. It's harder than you'd expect bei
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) suggest we get out of here, complain about Brock's recklessness, or rejoice that Brock is okay. Then again, we could just get to work so we can be out of here faster.
 
 > gel ale
-We just touch a coated fingertip of gel to the ale. With an audible SPLORT, the ale becomes an apple. 
+We just touch a coated fingertip of gel to the ale. With an audible SPLORT, the ale becomes an apple.
 
 There is a continuous angry whine from the jigsaw.
 
@@ -2858,7 +2858,7 @@ There is a continuous angry whine from the jigsaw.
 
 There is a continuous angry whine from the jigsaw.
 
-Brock touches some gel to the jigsaw. "Just in case someone out there is listening." With an audible SPLORT, the jigsaw becomes a jigsaw. 
+Brock touches some gel to the jigsaw. "Just in case someone out there is listening." With an audible SPLORT, the jigsaw becomes a jigsaw.
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) complain about Brock's recklessness or discover why Brock got stuck here. Or, then again, there's always finishing the job.
 
@@ -2883,14 +2883,14 @@ There is a loud and satisfying pop from the machine as it turns the ale into a t
 
 Of course, there were other options there: the T-inserter could have made two words. But it seems to be disambiguating to the tale. The question now is whether it would do so consistently or whether its behavior is underdetermined; we don't have time for a really thorough trial set, but checking a couple more times may be indicative.
 
-It begins with "once upon a time," and the letters scroll up delicately through the air when we start to read. It weaves a narrative as follows: 
+It begins with "once upon a time," and the letters scroll up delicately through the air when we start to read. It weaves a narrative as follows:
 
 /Once upon a time,*
 
 Achievement accomplished: Propper Rosehip award for talespinning!
 
 > put gel on tale
-We dip out a pea-sized quantity of gel and rub it gently onto the tale. With an audible SPLORT, the tale becomes an apple. 
+We dip out a pea-sized quantity of gel and rub it gently onto the tale. With an audible SPLORT, the tale becomes an apple.
 
 > wave p-remover at apple
 The apple gives way to the now-familiar ale.
@@ -2900,9 +2900,9 @@ The apple gives way to the now-familiar ale.
 > put ale in t-inserter
 We momentarily lift the ale out of the T-inserter machine and then drop it back in.
 
-There are three small pops from the machine as it turns the ale into a tattle. There now: the T-inserter has constructed both tale and tattle. Not very stable, it seems. Slango will be interested to know that.
+There are three small pops from the machine as it turns the ale into a tattle. It is non-physical, but it sounds like a waspish playground voice recounting the sins of another child.
 
-It is non-physical, but it sounds like a waspish playground voice recounting the sins of another child.
+There now: the T-inserter has constructed both tale and tattle. Not very stable, it seems. Slango will be interested to know that.
 
 /(An excited child's voice says, "Freddy made an underage twine purchase."|"Daddy, Timmy turned my bread into a bead!" tattles a childish voice.|A child's voice from the tattle says, "Mom! Timmy took the R out of my rice!")?
 
@@ -2910,12 +2910,12 @@ It is non-physical, but it sounds like a waspish playground voice recounting the
 
 /(An excited child's voice says, "Freddy made an underage twine purchase."|"Daddy, Timmy turned my bread into a bead!" tattles a childish voice.|A child's voice from the tattle says, "Mom! Timmy took the R out of my rice!"|"Daddy, David says he's going to turn my cake into caca," whimpers a small child.)?
 
-/(Brock touches some gel to the tattle. "(In the spirit of keeping the peace|Just in case someone out there is listening)." With an audible SPLORT, the tattle becomes an apple.)? 
+/(Brock touches some gel to the tattle. "(In the spirit of keeping the peace|Just in case someone out there is listening)." With an audible SPLORT, the tattle becomes an apple.)?
 
 > get all from t-inserter
 /We (take|get|pick up|acquire) the (tattle|apple. Red-cheeked and rosy).
 
-/(Brock touches some gel to the tattle. "(In the spirit of keeping the peace|Just in case someone out there is listening)." With an audible SPLORT, the tattle becomes an apple.)? 
+/(Brock touches some gel to the tattle. "(In the spirit of keeping the peace|Just in case someone out there is listening)." With an audible SPLORT, the tattle becomes an apple.)?
 
 > wave e-remover at piece
 /We reset the device to e. There is a [a-z \-]+, and the piece turns into a pic. It's a snapshot of a happy family visiting Typo Land Funfair, the closest thing Anglophone Atlantis has to an amusement park.
@@ -2936,7 +2936,7 @@ The Pict gets out of the T-inserter machine.
 [Your score has gone up by three points and is now eighty-two.]
 
 > gel pict
-We dip out a pea-sized quantity of gel and rub it gently onto the Pict. With an audible SPLORT, the Pict becomes a piece. 
+We dip out a pea-sized quantity of gel and rub it gently onto the Pict. With an audible SPLORT, the Pict becomes a piece.
 
 > get all
 /piece: We (take|get|pick up|acquire) the piece.
@@ -2947,11 +2947,11 @@ We dip out a pea-sized quantity of gel and rub it gently onto the Pict. With an 
 Bureau Basement Secret Section
 The heightened security on this side of the door is obvious everywhere we look. The floor is tiled in paisley tiles. The light fixtures give off pale pink light. The walls are covered in frog leather. The doors are locked with padlocks the size of handbags, locks decorated à la Louis Quinze, combination locks made of solid gold. There is not a bare noun in sight.
 
-The cute security door at the south end is solidly shut. 
+The cute security door at the south end is solidly shut.
 
 The hallway runs from south (comparatively normal) to north (deeply frightening). Just west is the equipment testing room.
 
-"Alex." 
+"Alex."
 
 I can't help it: I stop and turn. It's too ingrained in me. And it's my father's voice.
 
@@ -3004,7 +3004,7 @@ Then he's gone.
 Cold Storage
 Shelves on both sides of the room are full of objects on stands: objects that used to be men and women, and in a few cases even children. The stand labels preserve their original names.
 
-A duty roster is posted prominently. 
+A duty roster is posted prominently.
 
 If this goes wrong, we could wind up living in here permanently. So we'd better figure whom to send out, and do it fast.
 
@@ -3018,7 +3018,7 @@ If this goes wrong, we could wind up living in here permanently. So we'd better 
 Time passes.
 
 > gel stands
-Hang on — are you sure you want to send one of these poor bastards out there? It would be cruel to get their hopes up just to have them re-arrested, not to mention that it would make my father look like a fool if he arrested a dissident who turned out to have been in storage all along. >> 
+Hang on — are you sure you want to send one of these poor bastards out there? It would be cruel to get their hopes up just to have them re-arrested, not to mention that it would make my father look like a fool if he arrested a dissident who turned out to have been in storage all along. >>
 
 > yes
 
@@ -3047,7 +3047,7 @@ A faint spell comes over you and you feel dizzy.
 Bureau Basement Secret Section
 The heightened security on this side of the door is obvious everywhere you look. The floor is tiled in paisley tiles. The light fixtures give off pale pink light. The walls are covered in frog leather. The doors are locked with padlocks the size of handbags, locks decorated à la Louis Quinze, combination locks made of solid gold. There is not a bare noun in sight.
 
-The cute security door at the south end is solidly shut; there's no sign of anyone still waiting on this side of it. 
+The cute security door at the south end is solidly shut; there's no sign of anyone still waiting on this side of it.
 
 Going south through the security door isn't an option; our only way out is north. Just west is the equipment testing room, and southwest is Cold Storage.
 
@@ -3058,7 +3058,7 @@ The ridiculous décor continues, now so extreme that I cannot even put a name to
 
 An open archway leads to storage space east of here.
 
-Hanging in the air at the north end of the hallway is an odor. 
+Hanging in the air at the north end of the hallway is an odor.
 
 > e
 
@@ -3098,9 +3098,9 @@ The repeated power chord makes it sound as though some heavy equipment is being 
 Display Reloading Room
 This area is more or less empty. Hazard tape marks off an area of the floor to indicate that you shouldn't stand there.
 
-A black and white tv monitor is embedded in the wall.  
+A black and white tv monitor is embedded in the wall.
 
-There is a small black push-button on the wall. 
+There is a small black push-button on the wall.
 
 > press button
 A heavy clunk sounds. On the tv monitor, you see the display case black out.
@@ -3144,7 +3144,7 @@ The ridiculous décor continues, now so extreme that I cannot even put a name to
 
 An open archway leads to storage space east of here.
 
-Hanging in the air at the north end of the hallway is an odor. 
+Hanging in the air at the north end of the hallway is an odor.
 
 > shoot odor
 (with the anagramming gun)
@@ -3160,7 +3160,7 @@ You open the door, revealing a room beyond.
 Oracle Project
 This is nothing less than the command center for a massive propaganda campaign. Paintings of Atlantida and polling charts cover the walls, dating back to the second world war and continuing straight through to the present.
 
-/(On the long table|There) are a paperweight and an inciting fable( on the long table)?. 
+/(On the long table|There) are a paperweight and an inciting fable( on the long table)?.
 
 You can go south to Wonderland and east from here.
 
@@ -3188,7 +3188,7 @@ Checking through the filing cabinet for 1942 reveals some images of Atlantida. H
 A business-like, formidable Atlantida in the early 80s, looking Strong On Defense and Tough On Misspelling, with an olive branch in one hand and an anagramming gun in the other.
 
 > gel paperweight
-You dip out a pea-sized quantity of gel and rub it gently onto the paperweight. With an audible SPLORT, the paperweight becomes a weight and a paper. 
+You dip out a pea-sized quantity of gel and rub it gently onto the paperweight. With an audible SPLORT, the paperweight becomes a weight and a paper.
 
 > x paper
 It contains a memo, dated to May of 1983. "Attention," it says. "Due to subversive counter-propaganda altering the abstract concept, Subject A must NO LONGER BE GELLED AFTER USE, since reconstructing her may produce anomalous results. She will from now on be housed in a continuous living state in the historic apartments."
@@ -3203,7 +3203,7 @@ Shaped like a headless pyramid. "0.5 kg" is stamped in the top together with the
 > e
 
 Surveillance Room
-A surveillance computer is mounted on the wall, an impressive flat screen readout displaying current activity. 
+A surveillance computer is mounted on the wall, an impressive flat screen readout displaying current activity.
 
 Another room lies to the east. The door you came through is west, and there is also a spiral staircase down.
 
@@ -3212,7 +3212,7 @@ Another room lies to the east. The door you came through is west, and there is a
 Tunnel through Chalk
 This passage has been cut through natural cliff rock and looks older than the Bureau itself. The walls are rough-hewn, exposing sedimentary strata. Here and there it looks as though someone has actually excavated a favored rock or relic.
 
-Blocking the far end of the corridor is a metal portcullis. It is currently lowered. From the pulley above the portcullis hangs a counter. 
+Blocking the far end of the corridor is a metal portcullis. It is currently lowered. From the pulley above the portcullis hangs a counter.
 
 You can go east through the portcullis (closed) and up to the Surveillance Room from here.
 
@@ -3224,7 +3224,7 @@ You can go east through the portcullis (closed) and up to the Surveillance Room 
 > up
 
 Surveillance Room
-A surveillance computer is mounted on the wall, an impressive flat screen readout displaying current activity. 
+A surveillance computer is mounted on the wall, an impressive flat screen readout displaying current activity.
 
 Another room lies to the east. The door you came through is west, and there is also a spiral staircase down to the tunnel.
 
@@ -3233,9 +3233,9 @@ Another room lies to the east. The door you came through is west, and there is a
 Workshop
 A room whose importance is obvious from how clean it is and how little furniture it is allowed to have.
 
-A programmable dais sits in the middle of the room. It has the raw look of lab equipment rather than a nice smooth commercial instrument. 
+A programmable dais sits in the middle of the room. It has the raw look of lab equipment rather than a nice smooth commercial instrument.
 
-A specialized wall socket is built into the east wall, clearly not part of the ordinary power system for the Bureau. 
+A specialized wall socket is built into the east wall, clearly not part of the ordinary power system for the Bureau.
 
 You can go east and west to the Surveillance Room from here.
 
@@ -3244,9 +3244,9 @@ You can go east and west to the Surveillance Room from here.
 Generator Room
 The walls are lined with concrete. Yellow paint lettering says CAUTION: HIGH ENERGY EQUIPMENT and DO NOT OPERATE WITHOUT TRAINING.
 
-A first aid station is built onto the wall. It is closed. 
+A first aid station is built onto the wall. It is closed.
 
-Most of the room is taken up with a gigantic boiler installation that is currently off. The locking mechanism is a brushed steel bucket, currently empty. 
+Most of the room is taken up with a gigantic boiler installation that is currently off. The locking mechanism is a brushed steel bucket, currently empty.
 
 > look in pane
 Water lies stagnant inside a large pipe, and a metal rod points down towards the water.
@@ -3261,7 +3261,7 @@ You open the first aid station, revealing some balm.
 The gun fires ruggedly into the balm, which shatters and then reforms as the lamb. He is white and fluffy, with a surprisingly long tail.
 
 > put lamb in bucket
-There is a churning noise from within the brushed steel bucket, and a moment later you see inside an oboe. 
+There is a churning noise from within the brushed steel bucket, and a moment later you see inside an oboe. It's a reed instrument with a lot of metal hardware outside. Neither of us has ever learned to play, so lack the expertise to say whether it's a good or bad version of the instrument.
 
 This appears to have unlocked the mechanism. With a growl, the boiler comes to life.
 
@@ -3275,16 +3275,16 @@ Water flows steadily through a large pipe. Floating on the surface of the water 
 Gradually the passage of the water cools the pane down again.
 
 > get oboe
-/You (take|get|pick up|acquire) the oboe. It's a reed instrument with a lot of metal hardware outside. Neither of us has ever learned to play, so lack the expertise to say whether it's a good or bad version of the instrument.
+/You (take|get|pick up|acquire) the oboe.
 
 > w
 
 Workshop
 A room whose importance is obvious from how clean it is and how little furniture it is allowed to have.
 
-A programmable dais sits in the middle of the room. It has the raw look of lab equipment rather than a nice smooth commercial instrument. 
+A programmable dais sits in the middle of the room. It has the raw look of lab equipment rather than a nice smooth commercial instrument.
 
-A specialized wall socket is built into the east wall, clearly not part of the ordinary power system for the Bureau. 
+A specialized wall socket is built into the east wall, clearly not part of the ordinary power system for the Bureau.
 
 You can go east to the Generator Room and west to the Surveillance Room from here.
 
@@ -3316,7 +3316,7 @@ A very substantial hunk of metal with a ring at the top end, suitable for attach
 Tunnel through Chalk
 This passage has been cut through natural cliff rock and looks older than the Bureau itself. The walls are rough-hewn, exposing sedimentary strata. Here and there it looks as though someone has actually excavated a favored rock or relic.
 
-Blocking the far end of the corridor is a metal portcullis. It is currently lowered. There's a pulley and hook arrangement above the portcullis, but the hook is empty. 
+Blocking the far end of the corridor is a metal portcullis. It is currently lowered. There's a pulley and hook arrangement above the portcullis, but the hook is empty.
 
 You can go east through the portcullis (closed) and up to the Surveillance Room from here.
 
@@ -3333,9 +3333,9 @@ You open the portcullis.
 Personal Apartment
 At a guess, this is a room hardly anyone ever visits, or even knows about. Though the ceiling and one wall are bare cave, the rest has been paneled and  graciously decorated in the style of the end of the 18th century. Oil paintings on the walls depict great men and women of Atlantis gone by: Phyllida Shaply, Amelia Landison, Clarence Arbot, Jon Rosehip. An antique bed stands in the center of the room.
 
-The metal portcullis guards the way back. It is currently raised. From the pulley above the portcullis hangs a counterweight. 
+The metal portcullis guards the way back. It is currently raised. From the pulley above the portcullis hangs a counterweight.
 
-/(There|On the inlaid desk) are a stack of files and a rubber stamp( on the inlaid desk)?. 
+/(There|On the inlaid desk) are a stack of files and a rubber stamp( on the inlaid desk)?.
 
 Air and sunlight stream in from the east.
 
@@ -3347,7 +3347,7 @@ Please press SPACE to continue.
 
 A very tall woman with Bureau-blue eyes steps into the room from the east, carrying a restoration gel rifle. Her face is ageless, her mouth full-lipped but proud. We've never met, but you recognize her at once.
 
-Atlantida moves the rifle a fraction and fires through the portcullis at the counterweight. With an audible SPLORT, the counterweight becomes a weight and a counter. 
+Atlantida moves the rifle a fraction and fires through the portcullis at the counterweight. With an audible SPLORT, the counterweight becomes a weight and a counter.
 
 The weight falls to the ground.
 
@@ -3389,9 +3389,9 @@ You dab a bit on our finger and approach, but she is far too large, far too spry
 "Oh, no, my dear," Atlantida says. "They could remake me, but it wouldn't be the same me, would it? It would be some new construct. The Atlantida of today. And that's not the way to a consistent policy, is it?"
 
 > gel astrologer
-You dip out a pea-sized quantity of gel and rub it gently onto the infertile astrologer. With an audible SPLORT, the infertile astrologer becomes a restoration gel rifle. 
+You dip out a pea-sized quantity of gel and rub it gently onto the infertile astrologer. With an audible SPLORT, the infertile astrologer becomes a restoration gel rifle.
 
-Atlantida realizes that the restoration gel rifle is now a couple of meters away from her. 
+Atlantida realizes that the restoration gel rifle is now a couple of meters away from her.
 
 She presses a button on something in her hand. Far away, a high-pitched bell rings.
 
@@ -3414,11 +3414,11 @@ There's a distant sound of movement. Someone is looking for us.
 > e
 
 Private Solarium
-A window in the north wall, cut out through the cliff face, gives a view of tranquil sea under a darkening sky. 
+A window in the north wall, cut out through the cliff face, gives a view of tranquil sea under a darkening sky.
 
-/Left on a coffee table \(as though waiting for maid service\) is a silver tray. (On the silver tray|There) are some jacks, a cloth napkin, some crumbs, and a dirty coffee cup( on the silver tray)?. 
+/Left on a coffee table \(as though waiting for maid service\) is a silver tray. (On the silver tray|There) are some jacks, a cloth napkin, some crumbs, and a dirty coffee cup( on the silver tray)?.
 
-/(On the chaise longue is an ebook reader|There is an ebook reader on the chaise longue). 
+/(On the chaise longue is an ebook reader|There is an ebook reader on the chaise longue).
 
 > n
 You could do that. You could climb out that window and not look back. It would be faster, easier, unquestionably safer. But what about the people we're leaving behind? What about my father and Professor Higgate? What about the protesters who got arrested today?
@@ -3447,9 +3447,9 @@ A set of children's playing jacks. They are lined up, with curious precision, in
 Workshop
 A room whose importance is obvious from how clean it is and how little furniture it is allowed to have.
 
-A programmable dais sits in the middle of the room. It has the raw look of lab equipment rather than a nice smooth commercial instrument. 
+A programmable dais sits in the middle of the room. It has the raw look of lab equipment rather than a nice smooth commercial instrument.
 
-A power cord snakes across the floor, connecting the dais socket to the wall socket. 
+A power cord snakes across the floor, connecting the dais socket to the wall socket.
 
 You can go east to the Generator Room and west to the Surveillance Room from here.
 
@@ -3476,11 +3476,11 @@ She gets to her feet.
 Personal Apartment
 At a guess, this is a room hardly anyone ever visits, or even knows about. Though the ceiling and one wall are bare cave, the rest has been paneled and  graciously decorated in the style of the end of the 18th century. Oil paintings on the walls depict great men and women of Atlantis gone by: Phyllida Shaply, Amelia Landison, Clarence Arbot, Jon Rosehip. An antique bed stands in the center of the room.
 
-Atlantida stands nearby, urging us to hurry out via the Private Solarium. I think she's enjoying her role as conspiratorial heroine. 
+Atlantida stands nearby, urging us to hurry out via the Private Solarium. I think she's enjoying her role as conspiratorial heroine.
 
-The metal portcullis guards the way back. It is currently raised a few feet by a jack. From the pulley above the portcullis hangs a counter. 
+The metal portcullis guards the way back. It is currently raised a few feet by a jack. From the pulley above the portcullis hangs a counter.
 
-/(There|On the inlaid desk) are a stack of files and a rubber stamp( on the inlaid desk)?. 
+/(There|On the inlaid desk) are a stack of files and a rubber stamp( on the inlaid desk)?.
 
 Air and sunlight stream in from the east.
 
@@ -3497,13 +3497,13 @@ The portcullis should at least slow down anyone coming after us. Though that's o
 She follows. "Go, go," she says. "You've done good work today. Atlantis is grateful."
 
 Private Solarium
-Atlantida stands nearby, urging us to hurry out via the Private Solarium. 
+Atlantida stands nearby, urging us to hurry out via the Private Solarium.
 
-A window in the north wall, cut out through the cliff face, gives a view of tranquil sea under a darkening sky. 
+A window in the north wall, cut out through the cliff face, gives a view of tranquil sea under a darkening sky.
 
-/Left on a coffee table \(as though waiting for maid service\) is a silver tray. (On the silver tray|There) are a cloth napkin, some crumbs, and a dirty coffee cup( on the silver tray)?. 
+/Left on a coffee table \(as though waiting for maid service\) is a silver tray. (On the silver tray|There) are a cloth napkin, some crumbs, and a dirty coffee cup( on the silver tray)?.
 
-/(There|On the chaise longue) is an ebook reader( on the chaise longue)?. 
+/(There|On the chaise longue) is an ebook reader( on the chaise longue)?.
 
 From the other room, the noises make it sound as though someone is using a metal torch to dismantle the portcullis bar by bar.
 
@@ -3541,7 +3541,7 @@ This bit is the aft portion, broad and flat and suitable for sunning oneself.
 
 Slango has come out, though he's standing well back from the roc, which is surveying the scene speculatively.
 
-Fixed on the roof above the entry to the navigation area is a white object that looks a little like an igloo. It is the communication unit that handles the yacht's wifi connection. 
+Fixed on the roof above the entry to the navigation area is a white object that looks a little like an igloo. It is the communication unit that handles the yacht's wifi connection.
 
 Slango gels the roc easily enough. Then he and Brock turn the restoration gel on us. Slango is determined to separate you from me before he has a real talk with either of us; and it's not until a number of swipes in that he realizes how wrong things are.
 
@@ -3572,7 +3572,7 @@ Please press SPACE to continue.
 Your Bunk (aboard the True Macaque) (on your bed)
 Amazing: it's even tinier than my apartment, and the bed isn't even a twin in width. Across from the bed is a built-in bench, with portholes above, just at the waterline.
 
-Your wardrobe door is firmly closed, which is helpful because otherwise it is tricky walking around in here. 
+Your wardrobe door is firmly closed, which is helpful because otherwise it is tricky walking around in here.
 
 [Your score has gone up by fifteen points and is now one hundred.]
 
@@ -3613,7 +3613,7 @@ You have earned 100 points:
 
 You have not yet removed a, f, j, n, q, u, w, or z from anything.
 
-The achievements you have accomplished so far include: 
+The achievements you have accomplished so far include:
 
   Finished tutorial mode
   Finn Rosehip award for gnu-hunting
@@ -3651,7 +3651,7 @@ Smaller than the kitchen in a comfortable house, but carefully and elegantly fit
 
 There's even a little washing machine, for items too big to hand-wash in the sink.
 
-/(On the built-in table are a newspaper and a pan|There are a newspaper and a pan on the built-in table). 
+/(On the built-in table are a newspaper and a pan|There are a newspaper and a pan on the built-in table).
 
 On the port wall, built-in shelves hold a battered selection of games.
 
