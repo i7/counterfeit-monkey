@@ -287,7 +287,7 @@ Every turn during Boar Mating:
 
 [The boar attack is based on several accounts of real life attacks in which the boar repeatedly rushed the victim (often unprovoked), gashing in several places. The most serious wounds generally are abdominal wounds inflicted after the boar has knocked the victim down. It would be more true to life if the boar also left gashes in the protagonist's leg in the process of knocking her down, but I decided to skip that because I didn't want to deal with a game state in which the protagonist was wounded but not dead: it would have needlessly complicated the writing of the end-game to no interesting narrative effect.]
 
-Boar Attack is a recurring scene. Boar Attack begins when the boar is enclosed by location and the suid is not enclosed by location. Boar Attack ends in relief when the boar is marked invisible. Boar attack ends in distraction when the boar is enclosed by location and the suid is enclosed by location. Boar Attack ends in death when the time since Boar Attack began is 3 minutes.
+Boar Attack is a recurring scene. Boar Attack begins when the boar is enclosed by location and the suid is not enclosed by location. Boar Attack ends in relief when the boar is marked invisible. Boar attack ends in distraction when the boar is enclosed by location and the suid is enclosed by location. Boar Attack ends in death when the time since Boar Attack began is greater than 2 minutes.
 
 Every turn during Boar Attack:
 	let T be the time since Boar Attack began;
@@ -2804,7 +2804,7 @@ Report the roc going north from Abandoned Shore:
 
 [The roc flies more or less the way condors fly, as documented by youtube. I'm not sure how far a bird of the roc's mass would need to descend before starting to glide, and almost certainly I haven't given it enough clearance, but text is at least more forgiving than an animation would be.]
 
-Roc-soaring is a scene. Roc-soaring begins when roc-flight ends. Roc-soaring ends when the time since roc-soaring began is 2 minutes.
+Roc-soaring is a scene. Roc-soaring begins when roc-flight ends. Roc-soaring ends when the time since roc-soaring began is greater than 1 minute.
 
 Understand "hang on" as a mistake ("That is about the only thing [we] can do.") when the player is held by the roc.
 
@@ -3722,7 +3722,7 @@ Tick-removal is a scene. Tick-removal begins when the tick is marked-visible.
 Every turn during tick-removal:
 	say "[one of]That is, of course, if it doesn't attach to our skin and give us Lyme disease[or]I guess what I'm trying to say here is that I don't want our very own pet tick[or]...Okay, sorry, there's something I just need to do here. Blame my phobias if you will[stopping]."
 
-Tick-removal ends painfully when the time since tick-removal began is 3 minutes. Tick-removal ends well when the tick is marked invisible.
+Tick-removal ends painfully when the time since tick-removal began is greater than 2 minutes. Tick-removal ends well when the tick is marked invisible.
 
 Instead of putting the tick on something:
 	say "If [we] set it down, it'll be lost for good."

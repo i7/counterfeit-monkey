@@ -5784,7 +5784,7 @@ not-long-now is an NPC-directed quip.
 
 Waiting for guards is a scene. Waiting for guards begins when atlantida-woman recollects summoning-guards.
 
-Waiting for guards ends in capture when the time since waiting for guards began is 2 minutes.
+Waiting for guards ends in capture when the time since waiting for guards began is greater than 1 minute.
 
 Report waiting during waiting for guards:
 	say "[one of]I don't think we have much time left[or]Time is slipping past, time when we could be doing something[or]It can't be much longer now[at random]." instead.
@@ -6206,7 +6206,7 @@ Carry out going through the tall window:
 	otherwise:
 		say "[We] close the window behind us.";
 
-Portcullis-threat is a scene. Portcullis-threat begins when Atlantida-shooing ends. Portcullis-threat ends in delay when the portcullis is closed. Portcullis-threat ends in capture when the time since Portcullis-threat began is 4 minutes and the portcullis is open.
+Portcullis-threat is a scene. Portcullis-threat begins when Atlantida-shooing ends. Portcullis-threat ends in delay when the portcullis is closed. Portcullis-threat ends in capture when the time since Portcullis-threat began is greater than 3 minutes and the portcullis is open.
 
 [This should never happen. The guards are supposed to capture us if we try to escape without shutting the portcullis first.]
 Portcullis-threat ends in freedom when the location is Precarious Perch.
@@ -6245,7 +6245,7 @@ When Portcullis-breaking ends in stupidity:
 When Portcullis-breaking ends in final-threat:
 	say "From the other room, the noises make it sound as though someone is using a metal torch to dismantle the portcullis bar by bar.";
 
-Guard-capture is a scene. Guard-capture begins when Portcullis-breaking ends in final-threat. Guard-capture ends in capture when the time since Guard-capture began is 5 minutes.
+Guard-capture is a scene. Guard-capture begins when Portcullis-breaking ends in final-threat. Guard-capture ends in capture when the time since Guard-capture began is greater than 4 minutes.
 
 Guard-capture ends in freedom when the location is Precarious Perch.
 
