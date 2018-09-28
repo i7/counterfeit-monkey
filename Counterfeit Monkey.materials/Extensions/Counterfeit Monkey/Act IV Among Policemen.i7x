@@ -500,14 +500,17 @@ Sanity-check going to the Rotunda when the secretary carries the pass:
 
 Attempting entry is a scene. Attempting Entry begins when the secretary carries the invitation.
 
+Entry-attempt-flag is a truth state that varies. Entry-attempt-timer is initially false.
+
 Instead of doing something other than waiting during Attempting entry:
 	say "I'm handling this."
 
 Instead of waiting during Attempting Entry:
 	say "Sure, hang in there. I'm pretty sure that what [we] need here is to act as much like Professor Waterstone himself as humanly possible."
 
-Every turn during attempting entry:
-	if time since Attempting Entry began is 1 minute:
+Every turn during Attempting Entry:
+	if time since Attempting Entry began is greater than 0 minutes and entry-attempt-flag is false:
+		now entry-attempt-flag is true;
 		say "'Professor Waterstone is a busy man,' I say. 'If you want me to tell him you wouldn't cooperate, I'm just as happy not to work on Serial Comma Day. But if DCL wants his endorsement or advice, they'll have to work within his schedule. If you are going to turn me away, however, I would like the opportunity to speak with your manager.'
 
 The secretary scowls. 'Fine. I'll contact Waterstone.' She places a call [--] on speakerphone, no less [--] glaring all the time.
@@ -524,7 +527,9 @@ The secretary scowls. 'Fine. I'll contact Waterstone.' She places a call [--] on
 
 'Sir, you are aware that this is highly irregular!'";
 
-Attempting  entry ends when the time since Attempting entry began is three minutes.
+[The rule below used to say "when the time since Attempting entry began is three minutes", but apparently it is somehow possible to get the game to skip ahead more than one minute in a turn, thus bypassing the old check. I still need to figure out exactly how this happens.]
+
+Attempting entry ends when the time since Attempting entry began is greater than two minutes and entry-attempt-flag is true.
 
 When attempting entry ends:
 	record "passing the secretarial test" as achieved;
@@ -541,8 +546,7 @@ She looks over our other visible possessions ([the list of not worn things which
 Instead of putting gel on something in the presence of the secretary:
 	say "I think the secretary would find that a little too interesting."
 
-
-already caught is a truth state that varies.
+Already caught is a truth state that varies.
 
 [A person can be allowed or barred. A person is usually barred.]
 
