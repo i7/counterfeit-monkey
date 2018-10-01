@@ -2377,6 +2377,9 @@ Sanity-check taking a massive plug:
 
 Understand "unplug [a massive plug] from [a power socket]" as unplugging it from. Understand "unplug [something] from [something]" as unplugging it from. Unplugging it from is an action applying to two things. Understand "unplug [something]" as unplugging it from. Understand "detach [something]" as unplugging it from.
 
+Does the player mean unplugging a free massive plug from:
+	it is very unlikely.
+
 Rule for supplying a missing second noun when unplugging something from:
 	if the noun is a massive plug:
 		if the noun is plugged into something (called target socket):
