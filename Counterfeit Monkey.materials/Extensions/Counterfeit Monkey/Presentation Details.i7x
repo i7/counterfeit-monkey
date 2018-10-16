@@ -332,7 +332,7 @@ The File of Conclusions is called "monkeyac".
 When play begins (this is the load conclusions when starting rule):
 	read the achievements.
 
-[The rule below will never run on a sucessful restore]
+[The rule below will never run on a successful restore]
 
 [Last carry out restoring the game rule (this is the load conclusions when restoring rule):
 	read the achievements.]
