@@ -1,6 +1,6 @@
 # Change log
 
-## Unreleased
+## Release 8
 
 - Fixes a hang that would occur on some interpreters when resizing the game window or clicking on the compass rose while being asked to reply yes or no.
 - Fixes a bug where the game would use the achievements from the save file rather than the external monkeyac file after restoring, This meant that a save game from a different session, such as from another interpreter or computer, would award you the achievements from that session. Achievements are now properly reloaded from the monkeyac file after a restore.
