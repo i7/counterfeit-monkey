@@ -3,20 +3,20 @@
 ## Unreleased
 
 - Fixes a hang that would occur on some interpreters when resizing the game window or clicking on the compass rose while being asked to reply yes or no.
-- Fixes a bug where a save game from a different computer would make the game award you the achievements from that other computer. Now the achievements are properly reloaded from the monkeyac file after a restore.
+- Fixes a bug where the game would use the achievements from the save file rather than the external monkeyac file after restoring, This meant that a save game from a different session, such as from another interpreter or computer, would award you the achievements from that session. Achievements are now properly reloaded from the monkeyac file after a restore.
 - Works around a bug where the player could get stuck after showing the pass to the secretary.
 
 ### Gameplay changes
 
-- No longer awards achievements when you die that were meant to be awarded when finishing the game.
-- No longer awards a point (or expresses admiration for the player) if a non-player character puts restoration gel on something.
-- Automatically opens the backpack when necessary to use the letter-remover.
+- No longer awards achievements upon dying that were meant to be awarded when finishing the game.
+- No longer awards a point (or expresses admiration for the player) when a non-player character puts restoration gel on something before the player does.
+- Automatically opens the backpack when necessary in order to use the letter-remover.
 - Disallows opening the backpack when doing so would reveal something incriminating to the secretary.
 - Homonyming now works properly on things with randomized descriptions.
 - Homonyming the activist's sign no longer turns it into a protesters' sign.
-- In general, homonyming will no longer transform a thing into another of the same kind, with the exception of the card.
+- Homonyming will no longer transform something into another of the same kind, with the exception of the card.
 - The bartender will no longer paddle the musical piece.
-- Gives a proper response when asking the bartender to paddle a tool that you made by gelling a drink. It still doesn't make a huge amount of sense, though.
+- Gives a mildly suitable response when asking the bartender to paddle a tool that you made by gelling a drink.
 - Living things will no longer immediately get off the programmable dais.
 - Improves clues to help the protest-scenario along.
 - Makes touching the gel equivalent of putting it on us.
