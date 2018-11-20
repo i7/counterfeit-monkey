@@ -799,7 +799,7 @@ Carry out subject-asking:
 					try requesting the noun from the current interlocutor instead;
 			unless the noun is a distant backdrop or the noun is a person or the holder of the noun is current interlocutor:
 				try showing the noun to the current interlocutor instead;
-		say "[The current interlocutor] [don't] [one of]seem interested in talking[or][have] anything to say[at random] about [the noun] at the moment."
+		say "[The current interlocutor] [don't] [one of]seem interested in talking[or]have anything to say[at random] about [the noun] at the moment."
 
 
 Chapter 2 - Setting discussing variables
