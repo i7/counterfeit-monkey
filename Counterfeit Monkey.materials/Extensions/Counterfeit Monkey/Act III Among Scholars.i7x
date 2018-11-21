@@ -1922,7 +1922,7 @@ Rule for writing a topic sentence about the page when the page is on the podium:
 	say "Some previous lecturer has left [a page] on [the podium]. [run paragraph on]"
 
 Before local looking Lecture Hall 1:
-	if the subcommand of the noun matches the text "podium":
+	if the subcommand of the noun matches "podium":
 		try examining the podium instead.
 
 Test page with "tutorial off / look / x podium / look" in Lecture Hall 1.

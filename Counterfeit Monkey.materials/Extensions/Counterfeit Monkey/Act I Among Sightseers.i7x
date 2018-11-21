@@ -204,7 +204,7 @@ Does the player mean approaching My Apartment:
 	it is very likely.
 
 Instead of finding the elderly apartments:
-	if the subcommand of the elderly apartments matches the text "apartment":
+	if the subcommand of the elderly apartments matches "apartment":
 		try approaching My Apartment.
 
 The reflective window is a fixed in place mirror in Sigil Street.
@@ -1147,7 +1147,7 @@ A diorama table is fixed in place in Heritage Corner. It is a supporter. The ini
 
 The description of the diorama table is "The patriotic scene is set against the backdrop of the Bureau's buildings ca. 1895, where the committee first met, but the historians have included a bit of the building exterior to show that the meetings were conducted under army guard. The writing of dictionaries has not always been bloodless[if the army is not on the diorama table and the members are not on the diorama table]. Both army and members are missing[otherwise if the army is not on the diorama table]. The army has been removed[otherwise if the members are not on the diorama table and the member is on the diorama table]. The members have been reduced to a single [member][otherwise if the members are not on the diorama table]. The members have been removed[end if].". Understand "backdrop" or "setting" or "buildings" or "bureau" or "bureau's" or "building" or "scenery" as the diorama table when the location is Heritage Corner.
 
-Instead of finding the diorama table when the subcommand of the diorama table matches the text "bureau":
+Instead of finding the diorama table when the subcommand of the diorama table matches "bureau":
 	try approaching the Rotunda.
 
 The diorama-shelter is part of the diorama table. The printed name is "shelter". Understand "shelter" or "bit" or "bit of" or "clear" or "plastic" or "hood" as the diorama-shelter. The description is "Little more than a clear plastic hood to protect the diorama beneath."
@@ -1220,7 +1220,7 @@ The hostel-exterior is a facade in Heritage Corner. It is scenery. The printed n
 The octagonal bricks are scenery in Heritage Corner. The description is "Alternating with square bricks of a slightly darker shade of maroon. Nothing about this seems remotely significant." Understand "ground" or "paving" or "floor" as the octagonal bricks.
 
 Instead of examining the octagonal bricks:
-	if the subcommand of the noun matches the text "bricks":
+	if the subcommand of the noun matches "bricks":
 		try examining the hostel-exterior instead;
 	otherwise:
 		continue the action.
@@ -1647,7 +1647,7 @@ A backpacking girl is an alert tourist woman in the dormitory room. She exhibits
 	The flexible appearance of the heavy pack is "A massively full pack leans against one of the beds."
 	Understand "tourist" as the backpacking girl.
 
-Instead of finding a person when the subcommand of the noun matches the text "girl":
+Instead of finding a person when the subcommand of the noun matches "girl":
 	try finding the backpacking girl.
 
 Does the player mean finding the backpacking girl:
@@ -1910,7 +1910,7 @@ Some postcards are on the wire racks. The description of the postcards is "You m
 Does the player mean finding the postcards:
 	it is very unlikely.
 
-Instead of finding the postcards when the subcommand of the postcards matches the text "walls":
+Instead of finding the postcards when the subcommand of the postcards matches "walls":
 	try approaching the old city walls.
 
 A dangerous construction rule for the wire racks:
@@ -2794,10 +2794,10 @@ At the time when sandcastle washes away:
 Does the player mean finding the museum exterior:
 	it is very likely.
 
-Instead of finding the sandcastle when the subcommand of the sandcastle matches the text "wall":
+Instead of finding the sandcastle when the subcommand of the sandcastle matches "wall":
 	try approaching the old city walls.
 
-Instead of finding the museum exterior when the subcommand of the museum exterior matches the text "wall":
+Instead of finding the museum exterior when the subcommand of the museum exterior matches "wall":
 	try approaching the old city walls.
 
 Test sandcastle with "x castle / build castle / build sandcastle / look / smell castle / taste castle / touch castle / x castle / z".

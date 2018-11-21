@@ -1289,7 +1289,7 @@ Sanity-check putting the tube on the tube:
 			say "Well, I guess the tube is on (and under, and all around) whatever little restoration gel remains already." instead.
 
 Before putting the tub on something:
-	if the subcommand of the tub matches the text "gel" or the subcommand of the tub matches the text "restoration gel":
+	if the subcommand of the tub matches "gel" or the subcommand of the tub matches "restoration gel":
 		if the tub is in the backpack and the backpack is closed:
 			try opening the backpack;
 			if the backpack is closed:
@@ -1343,7 +1343,7 @@ Sanity-check putting the origin paste on the origin paste:
 	say "The Origin Paste is smeared all over itself already, I guess." instead.
 
 Sanity-check taking the tub when the player carries the tub:
-	if the subcommand of the tub matches the text "gel" or the subcommand of the tub matches the text "restoration gel":
+	if the subcommand of the tub matches "gel" or the subcommand of the tub matches "restoration gel":
 		say "[don't remove gel from tub]" instead.
 
 Sanity-check removing the tub from the tub:
@@ -1363,7 +1363,7 @@ Instead of removing the tube from the tube:
 	try taking the tube.
 
 Before doing something when the noun is the tube or the second noun is the tube:
-	if the subcommand of the tube matches the text "gel" or the subcommand of the tube matches the text "restoration gel":
+	if the subcommand of the tube matches "gel" or the subcommand of the tube matches "restoration gel":
 		if the barker carries the tube:
 			if not taking and the tube must be touched:
 				say "We don't have the gel at the moment." instead;
@@ -1439,7 +1439,7 @@ Instead of touching the restoration gel:
 	say "It is sticky to the touch. [run paragraph on]";
 	try putting the restoration gel on yourself.
 
-Instead of touching the tub when the subcommand of the tub matches "gel":
+Instead of touching the tub when the subcommand of the tub matches "gel" or the subcommand of the tub matches "restoration gel":
 	say "It is sticky to the touch. [run paragraph on]";
 	try putting the restoration gel on yourself.
 

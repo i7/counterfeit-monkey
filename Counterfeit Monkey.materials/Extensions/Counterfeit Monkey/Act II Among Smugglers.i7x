@@ -24,7 +24,7 @@ The Post Office is a facade in Deep Street. It fronts southeast. It is scenery. 
 
 The convenience store is a facade in Deep Street. It fronts northeast. It is scenery. Understand "shop" or "grocery" as the convenience store. The description is "During normal business hours, it sells the usual assortment: sandwiches, cold drinks, bus tickets, recharge packets for letter tools, disposable cameras. Currently it is shut, however."
 
-Instead of finding the convenience store when the subcommand of the convenience store matches the text "convenience":
+Instead of finding the convenience store when the subcommand of the convenience store matches "convenience":
 	try approaching Public Convenience.
 
 The white concrete buildings are scenery in Deep Street. Instead of entering the white concrete buildings, say "They're all private apartments, run down but nevertheless expensive on the grounds of location alone." The description of the white concrete buildings is "Each has its [balcony] and its [laundry] flapping on clothes lines; but there the uniformity ends. Some are decorated in a curious fantasia of [painted Moorish patterns]; others a daring kind of art nouveau, all organic curves and windows that glance out under lowered concrete lids."
