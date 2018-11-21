@@ -6,7 +6,7 @@ Use authorial modesty.
 
 Chapter - Miscellaneous Definitions
 
-Use static object grouping translates as (- Constant STATIC_OBJECT_GROUPING; -). 
+Use static object grouping translates as (- Constant STATIC_OBJECT_GROUPING; -).
 
 [These adjectives are much faster than "if nothing is in..." or "if the number of things in ... is zero". (Note that the Standard Rules do not define "empty" on containers and supporters; these adjectives are my invention.)]
 Definition: a container is empty rather than non-empty if the first thing held by it is nothing.
@@ -190,7 +190,7 @@ Include (-
 		give a ~list_filter_permits;
 	else
 		give a list_filter_permits;
-		
+
 	objectloop (o in a) {
 		ListFilterContents(o);
 	}
@@ -272,7 +272,7 @@ Include (-
 		@push MarkedObjectArray; @push MarkedObjectLength;
 		MarkedObjectArray = RequisitionStack(length);
 		MarkedObjectLength = length;
-		if (MarkedObjectArray == 0) return RunTimeProblem(RTP_LISTWRITERMEMORY); 
+		if (MarkedObjectArray == 0) return RunTimeProblem(RTP_LISTWRITERMEMORY);
 
 		! common_parent is always set
 		ObjectTreeCoalesce(child(common_parent));
@@ -290,49 +290,49 @@ Include (-
 -) after "WriteListOfMarkedObjects" in "ListWriter.i6t".
 
 To say a list of (OS - description of objects) *in (parent - object):
-	(- 
+	(-
 		objectloop ({-my:1} in {parent}) if ({-matches-description:1:OS})
 		give {-my:1} workflag2; else give {-my:1} ~workflag2;
 		WriteListOfMarkedContentsObjects(ENGLISH_BIT, {parent});
 	 -).
 To say A list of (OS - description of objects) *in (parent - object):
-	(- 
+	(-
 		objectloop ({-my:1} in {parent}) if ({-matches-description:1:OS})
 		give {-my:1} workflag2; else give {-my:1} ~workflag2;
 		WriteListOfMarkedContentsObjects(ENGLISH_BIT+CFIRSTART_BIT, {parent});
 		 -).
 To say list of (OS - description of objects) *in (parent - object):
-	(- 
+	(-
 		objectloop ({-my:1} in {parent}) if ({-matches-description:1:OS})
 		give {-my:1} workflag2; else give {-my:1} ~workflag2;
 		WriteListOfMarkedContentsObjects(ENGLISH_BIT+NOARTICLE_BIT, {parent});
 		 -).
 To say the list of (OS - description of objects) *in (parent - object):
-	(- 
+	(-
 		objectloop ({-my:1} in {parent}) if ({-matches-description:1:OS})
 		give {-my:1} workflag2; else give {-my:1} ~workflag2;
 		WriteListOfMarkedContentsObjects(ENGLISH_BIT+DEFART_BIT, {parent});
 		 -).
 To say The list of (OS - description of objects) *in (parent - object):
-	(- 
+	(-
 		objectloop ({-my:1} in {parent}) if ({-matches-description:1:OS})
 		give {-my:1} workflag2; else give {-my:1} ~workflag2;
 		WriteListOfMarkedContentsObjects(ENGLISH_BIT+DEFART_BIT+CFIRSTART_BIT, {parent});
 		 -).
 To say is-are a list of (OS - description of objects) *in (parent - object):
-	(- 
+	(-
 		objectloop ({-my:1} in {parent}) if ({-matches-description:1:OS})
 		give {-my:1} workflag2; else give {-my:1} ~workflag2;
 		WriteListOfMarkedContentsObjects(ENGLISH_BIT+ISARE_BIT, {parent});
 		 -).
 To say is-are list of (OS - description of objects) *in (parent - object):
-	(- 
+	(-
 		objectloop ({-my:1} in {parent}) if ({-matches-description:1:OS})
 		give {-my:1} workflag2; else give {-my:1} ~workflag2;
 		WriteListOfMarkedContentsObjects(ENGLISH_BIT+ISARE_BIT+NOARTICLE_BIT, {parent});
 		 -).
 To say is-are the list of (OS - description of objects) *in (parent - object):
-	(- 
+	(-
 		objectloop ({-my:1} in {parent}) if ({-matches-description:1:OS})
 		give {-my:1} workflag2; else give {-my:1} ~workflag2;
 		WriteListOfMarkedContentsObjects(ENGLISH_BIT+DEFART_BIT+ISARE_BIT, {parent});
@@ -499,9 +499,9 @@ As you see, a lag of nearly two seconds (in the Javascript interpreter) is cut t
 		initially group pieces together as "chess pieces";
 		initially group cards together.
 
-	Before grouping together cards: 
-		say "[listing group size in words] playing cards (". 
-	After grouping together cards: 
+	Before grouping together cards:
+		say "[listing group size in words] playing cards (".
+	After grouping together cards:
 		say ")".
 
 	Instead of jumping:
