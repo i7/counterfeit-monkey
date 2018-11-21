@@ -269,7 +269,7 @@ The description of the blest sandal is "A very worn and dusty relic, of which on
 Sanity-check wearing the blest sandal:
 	say "It just wouldn't seem right." instead.
 
-The boa is a floppy wearable thing. The description of the boa is "Made of bright pink synthetic feathers. It would really liven up our look, I have to say." Understand "bright" or "pink" or "synthetic" or "feathers" as the boa. Understand "feather boa" as the boa. Understand "feather" as the boa when the hackle is marked invisible.
+The boa is a floppy wearable thing. The description of the boa is "Made of bright pink synthetic feathers. It [if the boa is worn]really livens[otherwise]would really liven[end if] up our look, I have to say." Understand "bright" or "pink" or "synthetic" or "feathers" as the boa. Understand "feather boa" as the boa. Understand "feather" as the boa when the hackle is marked invisible.
 	The scent-description of the boa is "plastic".
 
 The boar is a neuter animal. The description of the boar is "In the old days they used to hunt these animals, and I can understand the impulse. It's like a pig, but even uglier and bristlier, with long dangerous-looking tusky teeth coming out of both its top and bottom jaws." The heft is 7.
