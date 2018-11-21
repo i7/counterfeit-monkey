@@ -271,7 +271,7 @@ Sanity-check dropping secret-plans in the Tin Hut:
 Sanity-check dropping an illegal thing in the Tin Hut when the Authenticator is in Fish Market:
 	say "It doesn't feel safe leaving [the noun] here even for a short period." instead.
 
-Sanity-check propping the trap-door with an illegal thing when the Authenticator is in Fish Market:
+Sanity-check propping the trap-door with an illegal thing which is not the secret-plans when the Authenticator is in Fish Market:
 	say "It doesn't feel safe leaving [the second noun] here even for a short period." instead.
 
 Sanity-check inserting an illegal thing into something when the Authenticator is in Fish Market:
