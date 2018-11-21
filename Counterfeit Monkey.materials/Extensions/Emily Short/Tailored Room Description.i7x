@@ -591,7 +591,7 @@ Example: ** Gobs of Mayonnaise - A scenario with various objects competing for o
 
 	A utensil is a kind of thing. A knife is a utensil. A fork is a utensil. The knife and the fork are on the table.
 
-	Before listing contents: initially group utensils together. Before grouping together utensils: say "a place setting (consisting of ". After grouping together utensils: say ")".
+	Before listing contents: group utensils together. Before grouping together utensils: say "a place setting (consisting of ". After grouping together utensils: say ")".
 
 	[We might also want to override the way contents of items are described in particular cases:]
 

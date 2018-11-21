@@ -1,7 +1,7 @@
 Version 13/160517 of Room Description Control by Emily Short begins here.
 
 "A framework by which the author can considerably change the listing of objects in a room description. Includes facilities for concealing objects arbitrarily and changing the order in which objects are listed."
- 
+
 
 Section 1 - Priority and Concealment Rules
 
@@ -11,13 +11,13 @@ The new object description rule is listed instead of the room description paragr
 
 When play begins (this is the mark every thing as unmentioned when play begins rule):
 	now every thing is unmentioned.
-	
+
 Before reading a command (this is the mark everything unmentioned rule):
 	now every thing is unmentioned.
 
 This is the new object description rule:
 	follow the description-priority rules.
-	
+
 The description-priority rules are a rulebook.
 
 A description-priority rule (this is the marking rule):
@@ -28,13 +28,13 @@ A description-priority rule (this is the mentioning tedious things rule):
 	now the player is not marked for listing;
 	now every thing enclosed by the player is not marked for listing;
 	now every scenery thing is not marked for listing;
-	
-A description-priority rule (this is the determining concealment rule): 
-	follow the description-concealing rules.
-	
-The description-concealing rules are a rulebook. 
 
-A description-concealing rule (this is the concealing parts rule): 
+A description-priority rule (this is the determining concealment rule):
+	follow the description-concealing rules.
+
+The description-concealing rules are a rulebook.
+
+A description-concealing rule (this is the concealing parts rule):
 	now everything that is part of something is not marked for listing.
 
 A description-concealing rule (this is the ordinary-concealment rule):
@@ -55,40 +55,40 @@ A description-priority rule (this is the loading table rule):
 
 lowest-rank is a number that varies.
 
-A description-priority rule (this is the description-ranking rule): 
+A description-priority rule (this is the description-ranking rule):
 	now lowest-rank is 1000;
 	repeat through the Table of Seen Things
-	begin;  
+	begin;
 		now the description-rank of the output subject entry is 0;
 		follow the ranking rules for the output subject entry;
 		now the current rank entry is the description-rank of the output subject entry;
 		if description-rank of the output subject entry is less than lowest-rank, now lowest-rank is description-rank of the output subject entry;
 	end repeat;
-	sort the Table of Seen Things in reverse current rank order; 
+	sort the Table of Seen Things in reverse current rank order;
 
 A description-priority rule (this is the reporting descriptions rule):
 	repeat through the Table of Seen things
-	begin; 
+	begin;
 		if the output subject entry is unmentioned, carry out the writing a paragraph about activity with the output subject entry;
-	end repeat. 
-	
+	end repeat.
+
 [A description-priority rule (this is the final description rule):
 	say paragraph break.]
 
-After printing the name of something (called special-target) while writing a paragraph about something: 
+After printing the name of something (called special-target) while writing a paragraph about something:
 	now the special-target is not marked for listing;
 	now the special-target is mentioned.
-	
+
 A thing has a number called description-rank.
 
 Ranking rules are an object-based rulebook.
-	 
+
 
 Table of Seen Things
 output subject	current rank
 an object	a number
-with 60 blank rows. 
- 
+with 60 blank rows.
+
 Definition: a thing is mentionable if it is marked for listing and it is unmentioned. Definition: a thing is unmentionable if it is not mentionable.
 
 Definition: a thing is descriptively dull if the description-rank of it is lowest-rank.
@@ -118,7 +118,7 @@ Include (-
   ];
 -) after "Definitions.i6t".
 
-A scope processing rule for a thing (called n) (this is the swift rule): now n is marked for listing. 
+A scope processing rule for a thing (called n) (this is the swift rule): now n is marked for listing.
 
 Section 2 - Entering and Leaving
 
@@ -133,7 +133,7 @@ A description-concealing rule while entering a container (called special-target)
 
 Section 3 - Debugging - Not for release
 
-Understand "paragraphs" or "paragraphs off" as paragraph-debugging. paragraph-debugging is an action out of world. 
+Understand "paragraphs" or "paragraphs off" as paragraph-debugging. paragraph-debugging is an action out of world.
 
 Paragraph-debug-state is a number that varies. Paragraph-debug-state is 0.
 
@@ -171,7 +171,7 @@ Section: Concealment
 (1) Concealment. Room description control allows the author to mark any visible item as "not marked for listing" before it reaches the later stages of room description, using description-concealing rules. Thus we might turn off mention of items on a high shelf like this:
 
 	A description-concealing rule when the player is not on the chair:
-		now every thing enclosed by the high shelf is not marked for listing. 
+		now every thing enclosed by the high shelf is not marked for listing.
 
 or make some objects invisible in certain circumstances:
 
@@ -187,14 +187,14 @@ Section: Sorting
 
 (2) Sorting of objects. Next we are allowed to determine the order in which we would like items in a room description to appear in the Table of Seen Things. Room Description Control calls an object-based rulebook called the ranking rules to determine how items should be ranked. The higher an item's rank, the higher it will be sorted in the Table of Seen Things and the sooner in the room description it will appear. So for instance we might encourage Inform to mention people sooner than everyone else:
 
-	A ranking rule for a person (called special-target): 
+	A ranking rule for a person (called special-target):
 		increase the description-rank of the special-target by 10.
 
 or to prefer items with initial appearance properties:
-	
+
 	Definition: a thing is initially-described if it provides the property initial appearance.
 
-	A ranking rule for an initially-described thing (called special-target): 
+	A ranking rule for an initially-described thing (called special-target):
 		increase description-rank of the special-target by 5.
 
 All the ranking rules are considered in sequence unless a rule explicitly succeeds or fails, so if we have multiple ranking rules applying to a single item, they will all be observed; description-ranks can thus be determined cumulatively.
@@ -234,7 +234,7 @@ A debugging verb PARAGRAPHS is provided. Turning PARAGRAPHS on will cause the de
 
 Section: Change Log
 
-Version 5 fixes a small but very annoying bug preventing proper release of finished game files. 
+Version 5 fixes a small but very annoying bug preventing proper release of finished game files.
 
 Version 6 updates to use "object-based rulebook" rather than "object-based-rulebook", as required by Inform 5G67, and also clears up a bug whereby an NPC entering an object could trigger a description of the location entered.
 
