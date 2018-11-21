@@ -80,8 +80,8 @@ Does the player mean pushing the small black push-button:
 
 Instead of pushing the small black push-button:
 	if the display-platform is in the location:
-		if an essential thing (called essential item) is on the display-platform:
-			say "Best not to part with [the list of essential things *in the display-platform]." instead;
+		if an essential thing (called essential item) is enclosed by the display-platform:
+			say "Best not to part with [the list of essential things enclosed by the display-platform]." instead;
 		raise the display;
 	otherwise:
 		lower the display.
