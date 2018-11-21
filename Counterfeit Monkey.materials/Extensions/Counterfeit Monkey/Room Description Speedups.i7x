@@ -352,8 +352,11 @@ Include (-
 		sib=child(parent(obj));
 		if (~~sib) sib = (obj.component_parent).component_child;
 		for (: sib : sib=sibling(sib))
-			if (sib.list_together == obj.list_together)
+			if (sib.list_together == obj.list_together || Identical(obj, sib))
+			{
 				give sib mentioned;
+				give sib ~workflag;
+			}
 	];
 
 	[ MyConcealPossessions obj obj2;

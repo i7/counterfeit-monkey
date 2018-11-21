@@ -346,8 +346,8 @@ When play begins (this is the initially list contents rule):
 	if the static object grouping option is active:
 		follow the initially listing contents rules.
 
-To initially group (OS - description of objects) together: (- InitiallyGroupTogether({OS}, {-list-together}); -).
-To initially group (OS - description of objects) together giving articles: (- InitiallyGroupTogether({OS}, {-articled-list-together}); -).
+To initially group (OS - description of objects) together: (- InitiallyGroupTogether({OS}, {-list-together:unarticled}); -).
+To initially group (OS - description of objects) together giving articles: (- InitiallyGroupTogether({OS}, {-list-together:articled}); -).
 To initially group (OS - description of objects) together as (T - text): (- InitiallyGroupTogether({OS}, {T}); -).
 
 Include (-

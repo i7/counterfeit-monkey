@@ -74,6 +74,7 @@ Include version 1/160501 of Ultra Undo by Dannii Willis.
 The release number is 8.
 
 Use scoring.
+Use static object grouping.
 [Use no deprecated features.]
 
 Include Scope Caching by Mike Ciul.
