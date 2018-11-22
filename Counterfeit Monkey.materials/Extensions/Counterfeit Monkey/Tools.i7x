@@ -1368,7 +1368,10 @@ Before doing something when the noun is the tube or the second noun is the tube:
 			if not taking and the tube must be touched:
 				say "We don't have the gel at the moment." instead;
 		otherwise:
-			say "[one of]Unfortunately, there's hardly any gel remaining in the tube.[or]There isn't enough gel remaining in the little tube for use.[at random]" instead.
+			if the current action is shooting the tube with the restoration-gel rifle:
+				continue the action;
+			otherwise:
+				say "[one of]Unfortunately, there's hardly any gel remaining in the tube.[or]There isn't enough gel remaining in the little tube for use.[at random]" instead.
 
 Sanity-check putting the restoration gel on something when the tub is in a closed backpack:
 	try opening the backpack.
@@ -1583,6 +1586,9 @@ Does the player mean shooting something with the restoration gel:
 Does the player mean shooting something with the tub:
 	it is very unlikely.
 
+Does the player mean shooting the tube with the restoration-gel rifle:
+	it is very unlikely.
+
 Does the player mean shooting something with a pistol:
 	it is very likely.
 
@@ -1596,6 +1602,13 @@ Does the player mean doing something with the restoration-gel rifle:
 	it is unlikely.
 
 Sanity-check shooting the restoration gel with:
+	if the restoration-gel rifle is marked-visible and the player's command does not include "gel/at with/gel":
+		if the player's command includes "shoot/fire gel" or the player's command includes "shoot/fire restoration gel":
+			replace the matched text with "shoot rifle";
+			now the reborn command is the substituted form of "[player's command]";
+			now sp reparse flag is true instead;
+
+Sanity-check shooting the tube with:
 	if the restoration-gel rifle is marked-visible and the player's command does not include "gel/at with/gel":
 		if the player's command includes "shoot/fire gel" or the player's command includes "shoot/fire restoration gel":
 			replace the matched text with "shoot rifle";
