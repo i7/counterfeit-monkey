@@ -533,7 +533,7 @@ The ground is covered with glitter and candy and confetti; the Atlantida has bro
 
 Section 7 - Fireworks
 
-Fireworks is a scene. Fireworks begins when Pinata Celebration has ended and the time since Pinata Celebration ended is 2 minutes. Fireworks ends when the number of filled rows in the Table of Pyrotechnics is 0.
+Fireworks is a scene. Fireworks begins when Pinata Celebration has ended and the time since Pinata Celebration ended is at least 2 minutes. Fireworks ends when the number of filled rows in the Table of Pyrotechnics is 0.
 
 [Instead of going to a room during Fireworks:
 	say "[We] [are] relishing the not moving for a moment."]

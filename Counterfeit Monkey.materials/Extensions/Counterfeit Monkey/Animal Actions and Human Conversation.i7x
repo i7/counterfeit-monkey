@@ -6059,7 +6059,7 @@ To extend scene time:
 		choose a blank row in the Table of Guard Warnings;
 		now description entry is "[one of]Strangely quiet out there[or]No signs of anyone coming for us quite yet[or]The lull continues[at random]."
 
-Further guards is a scene. Further guards begins when atlantida chat has ended and the time since atlantida chat ended is 2 minutes.
+Further guards is a scene. Further guards begins when atlantida chat has ended and the time since atlantida chat ended is at least 2 minutes.
 
 When further guards begins:
 	say "There's a distant sound of movement. Someone is looking for us."
