@@ -1779,13 +1779,39 @@ Rule for refusing comment by the bartender when the noun is the Slangovia map or
 
 She smirks. Then she taps the legend with her paddle and it transforms into a proper map legend.[or]'Okay, one more time.'[or]She may be tiring of this operation.[stopping]".
 
-
 Check examining the legend for the first time:
 	say "[legend description][paragraph break]";
 	introduce legend;
 	record "reading a legend" as achieved;
 	say paragraph break;
 	follow the the new notify score changes rule instead.
+
+Instead of taking the legend:
+	if the player carries the map:
+		try pulling the legend;
+	otherwise:
+		try taking the slangovia map.
+
+Instead of taking the fake-legend:
+	if the player carries the map:
+		try pulling the fake-legend;
+	otherwise:
+		try taking the slangovia map.
+
+Instead of pulling the legend:
+	say "The legend is carefully glued to the map. [We] don't want to ruin it, or the map."
+
+Instead of pulling the fake-legend:
+	say "The legend is carefully glued to the map. [We] don't want to ruin it, or the map."
+
+Sanity-check dropping the fake-legend:
+	try dropping the slangovia map instead.
+
+Sanity-check dropping the legend:
+	try dropping the slangovia map instead.
+
+Instead of buying the fake-legend from Kate:
+	try discussing buy the Slangovia map.
 
 Rule for refusing comment by the bartender when the noun is the Slangovia map or the noun is the legend:
 	if the legend is not part of the Slangovia map:
