@@ -95,7 +95,7 @@ Definition: a thing is descriptively dull if the description-rank of it is lowes
 
 [This portion makes sure that items that are listed together in groups get properly flagged 'mentioned':]
 
-After printing a number of something (called target):
+After printing the plural name of something (called target):
 	set clones of target mentioned.
 
 To decide whether (X - a thing) nominally matches (Y - a thing):
