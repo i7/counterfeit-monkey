@@ -1510,6 +1510,9 @@ Sanity-check punching something:
 	unless the noun is a notepad or the noun is a ream:
 		say "[The noun] will not slide into the punch." instead.
 
+Sanity-check punching the player:
+	say "Our hand is too large to fit, which is just as well." instead.
+
 Report punching something:
 	say "[The mutual punch] drives a small, tidy hole through [the noun]." instead.
 
