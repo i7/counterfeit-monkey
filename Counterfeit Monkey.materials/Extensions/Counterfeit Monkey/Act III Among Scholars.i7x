@@ -239,9 +239,10 @@ The toolkit is a scenery thing on the dor-bar-top. The toolkit contains some scr
 	Instead of examining or searching the toolkit:
 		say "It offers an assortment: [a list of things *in the toolkit]."
 
-Rule for deciding whether all includes things in the toolkit while taking or removing:
-	if the action name part of the current action is the removing it from action:
-		it does;
+Rule for deciding whether all includes things in the toolkit while removing something from the toolkit:
+	it does.
+
+Rule for deciding whether all includes things in the toolkit while taking:
 	it does not.
 
 Instead of inserting something into the toolkit:
@@ -444,7 +445,7 @@ Report opening the bathroom window for the first time:
 Report closing the bathroom window:
 	say "[We] slide the window shut[one of]. I feel obscurely better now[or][stopping]." instead.
 
-Before: if the current action involves the bathroom window,
+Before: if the noun is the bathroom window or the second noun is the bathroom window,
 	reveal bathroom window.
 
 To reveal bathroom window:

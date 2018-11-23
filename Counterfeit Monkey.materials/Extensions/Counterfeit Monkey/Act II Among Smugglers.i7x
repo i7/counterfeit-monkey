@@ -1043,7 +1043,7 @@ Traffic Circle is inside from the Roundabout. It is a privately-controlled check
 
 Out-direction of Traffic Circle is outside. [The roundabout and the traffic circle are the only place where the standard outside and inside directions are used]
 
-The no-dropping rule does nothing when the current action is dropping the restoration-gel rifle and the location is Traffic Circle.
+The no-dropping rule does nothing when the noun is the restoration-gel rifle and the location is Traffic Circle.
 
 [Procedural rule while dropping the restoration-gel rifle when the location is Traffic Circle:
 	ignore the no-dropping rule.]

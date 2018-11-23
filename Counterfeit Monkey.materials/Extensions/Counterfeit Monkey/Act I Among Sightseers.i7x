@@ -1740,8 +1740,14 @@ Instead of waving the letter-remover at the locker when the backpacking girl is 
 Instead of waving the letter-remover at the lock when the backpacking girl is marked-visible:
 	try taking the lock.
 
+Sanity-check showing the locker to the backpacking girl:
+	carry out the refusing comment by activity with the backpacking girl instead.
+
+Sanity-check showing the lock to the backpacking girl:
+	carry out the refusing comment by activity with the backpacking girl instead.
+
 An accessibility rule when the touch-goal is the lock or the touch-goal is the locker:
-	if the backpacking girl is marked invisible or the action name part of current action is the showing it to action:
+	if the backpacking girl is marked invisible:
 		make no decision;
 	otherwise:
 		say "[The backpacking girl] is watching our every move with unconcealed curiosity, which makes me a little hesitant to do anything with the locker[one of][or]. Maybe if we freaked her out somehow she would go away[or]. I think our best bet is to show her something that really weirds her out[stopping]." instead.
@@ -1786,10 +1792,9 @@ Instead of setting the lock to something:
 
 Locking something with something is key-related behavior. Unlocking something with something is key-related behavior. Unlocking keylessly something is key-related behavior. Locking keylessly something is key-related behavior. Opening something is key-related behavior. Closing something is key-related behavior.
 
-Instead of key-related behavior when the current action involves the locker and the lock is part of the locker:
+Sanity-check key-related behavior when (the noun is the locker or the second noun is the locker) and the lock is part of the locker:
 	if the noun is the locker, now the noun is the lock;
 	if the second noun is the locker, now the second noun is the lock;
-	try the current action.
 
 Instead of attacking the locker with something:
 	say "It is built to withstand attack, as witness the several dents in the frame that nonetheless failed to pop the door out."
@@ -2387,6 +2392,7 @@ Parental appearance is a scene. Parental appearance begins when the location is 
 
 When parental appearance begins:
 	move fake-father to the location;
+	now allowed-action is false;
 	say "The door to my parents['] house opens and my father comes out. He's talking over his shoulder: 'Sorry, dear, but [i]someone[/i] has to be on call.'
 
 My mother answers from inside, but we can't make out what she's saying.
@@ -2410,21 +2416,33 @@ fake-father is a man. fake-father is privately-named. The printed name of fake-f
 After writing a paragraph about fake-father:
 	set pronouns from fake-father.
 
+Allowed-action is a truth state that varies. Allowed-action is initially false;
+
+Sanity-check listing exits during parental appearance:
+	now allowed-action is true.
+
+Sanity-check taking off the monocle during parental appearance:
+	now allowed-action is true.
+
+Sanity-check opening the backpack during parental appearance:
+	now allowed-action is true.
+
+Sanity-check inserting the monocle into the backpack during parental appearance:
+	now allowed-action is true.
+
+Sanity-check waiting during parental appearance:
+	say "We hold our breath." instead;
+
+Sanity-check going somewhere during parental appearance:
+	say "Hang on; I want to see where [fake-father] goes." instead;
+
 Sanity-check doing something other than acting fast during parental appearance:
 	[I don't know how this worked in 6G60, or what changed. Now the behavior at least matches that version.]
-	if the current action is the action of listing exits:
-		make no decision;
-	if the current action is the action of taking off the monocle:
-		make no decision;
-	if the current action is the action of opening the backpack:
-		make no decision;
-	if the current action is the action of inserting the monocle into the backpack:
-		make no decision;
-	if the current action is the action of waiting:
-		say "We hold our breath." instead;
-	if the action name part of the current action is the going action:
-		say "Hang on; I want to see where [fake-father] goes." instead;
-	say "We don't dare drawing father's attention. I'm going to have us stand over here as though checking on the health of the neighb[our][']s lawn, shall I?" instead.
+	[let through all actions if the allow-action flag is true]
+	if allowed-action is true:
+		now allowed-action is false;
+	otherwise:
+		say "We don't dare drawing father's attention. I'm going to have us stand over here as though checking on the health of the neighb[our][']s lawn, shall I?" instead.
 
 Parental appearance ends when turn-taken is true.
 
@@ -2449,12 +2467,12 @@ A room-restriction rule for Foyer:
 Instead of doing something to the pink door:
 	say "Walking into my parents['] house is the action perhaps most likely to get us caught."
 
-Rule for printing the name of the pink door:
+Rule for printing the name of the pink door when waving the letter-remover at the pink door:
+	say "door";
+
+Rule for printing the name of the pink door when not waving the letter-remover at the pink door:
 	if the the pink door is marked-visible:
-		if the action name part of current action is the waving it at action:
-			say "door";
-		otherwise:
-			say "door here";
+		say "door here";
 	otherwise:
 		say "door of my parents['] villa".
 
@@ -2501,7 +2519,7 @@ Instead of taking the soil when the soil is in the location:
 	move the dirt to the location;
 	say "The dirt is more than we can contain, and spills out onto the ground instead." ]
 
-Before doing something when the current action involves the soil and the chard is in the location:
+Before doing something when (the noun is the soil or the second noun is the soil) and the chard is in the location:
 	say "The soil is hard to see under the chard." instead.
 
 A description-concealing rule when the soil is marked for listing:

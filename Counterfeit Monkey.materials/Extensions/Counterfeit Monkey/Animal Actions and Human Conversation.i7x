@@ -1431,12 +1431,11 @@ buy a drink is an unlisted repeatable purchasing quip.
 	The reply is "[one of]'What'll you have?' she asks. 'I can't pour you a generic beverage.'[or]'Pick your poison,' she says.[or]'Sure. What do you want?'[at random]".
 	It quip-supplies the bartender.
 
+Sanity-check buying the generic cocktail from the bartender:
+	try discussing buy a drink instead.
 
 Sanity-check doing something to the generic cocktail:
-	if the current action is removing the generic cocktail from the bartender:
-		say "[We] dare not invade the personal space of [the bartender]." instead;
-	unless the current action is buying the generic cocktail from the bartender:
-		say "Which one? All the cocktails here are specific recipes." instead.
+	say "Which one? All the cocktails here are specific recipes." instead.
 
 Does the player mean doing something to the generic cocktail:
 	it is very unlikely.
@@ -3801,7 +3800,7 @@ complain that the game seems unfair is a performative quip.
 	It quip-supplies the barman.
 	It indirectly-follows Time up.
 
-The carrying requirements rule does nothing when the action name part of the current action is the showing it to action.
+The carrying requirements rule does nothing when showing an object to an object.
 
 The can't show what you haven't got rule is not listed in any rulebook.
 The block showing rule is not listed in any rulebook.

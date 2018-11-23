@@ -42,16 +42,18 @@ Rule for deciding whether all includes a heavy thing while taking:
 Rule for deciding whether all includes books on the LSR bookcase while taking:
 	it does not.
 
-Rule for deciding whether all includes things enclosed by the player while taking or taking off or removing (this is the new exclude indirect possessions from take all rule):
-	if the action name part of the current action is the removing it from action:
-		it does;
+Rule for deciding whether all includes things enclosed by the player while removing an object from an object:
+	it does.
+
+Rule for deciding whether all includes things enclosed by the player while taking (this is the new exclude indirect possessions from take all rule):
 	it does not.
 
 The the new exclude indirect possessions from take all rule is listed instead of the exclude indirect possessions from take all rule in the for deciding whether all includes rulebook.
 
-Rule for deciding whether all includes things enclosed by the backpack while taking or taking off or removing ( this is the exclude contents of backpack from take all rule ):
-	if the action name part of the current action is the removing it from action:
-		it does;
+Rule for deciding whether all includes things enclosed by the backpack while removing an object from an object:
+	it does.
+
+Rule for deciding whether all includes things enclosed by the backpack while taking ( this is the exclude contents of backpack from take all rule ):
 	it does not.
 
 Rule for deciding whether all includes other people carried by the person asked while dropping or throwing or inserting or putting (this is the new exclude people from drop all rule):
@@ -99,7 +101,7 @@ A multiple action processing rule when dropping:
 			alter the multiple object list to {}.
 
 [Next "put all on"]
-A multiple action processing rule when the action name part of the current action is the putting it on action:
+A multiple action processing rule when putting an object on an object:
 	abide by the stop putting error list rule.
 
 This is the stop putting error list rule:
@@ -143,7 +145,7 @@ This is the check self-containment rule:
 			the rule fails.
 
 [Then "remove all from"]
-A multiple action processing rule when the action name part of the current action is the removing it from action:
+A multiple action processing rule when removing an object from an object:
 	abide by the stop removing error list rule.
 
 This is the stop removing error list rule:
@@ -159,7 +161,7 @@ This is the stop removing error list rule:
 		abide by the try opening rules for the second noun.
 
 [And finally "insert all into"]
-A multiple action processing rule when the action name part of the current action is inserting it into action:
+A multiple action processing rule when inserting:
 	abide by the check self-containment rule;
 	if the second noun is the backpack:
 		abide by the fast backpack stowing rule;

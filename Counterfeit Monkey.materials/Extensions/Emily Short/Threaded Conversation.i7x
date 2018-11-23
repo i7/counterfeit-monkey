@@ -763,7 +763,7 @@ To set mentions-index (N - a number) to (X - a thing):
 	(- mentions_array --> {N} = {X}; -)
 
 
-After deciding the scope of the player when the action name part of current action is the starting a conversation with it about action:
+After deciding the scope of the player when starting a conversation with an object about an object:
 	repeat with N running from 1 to subject count:
 		place subject-number N in scope.
 

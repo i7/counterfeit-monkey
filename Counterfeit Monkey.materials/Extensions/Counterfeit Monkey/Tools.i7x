@@ -90,9 +90,8 @@ A small knob is part of the letter-remover device. Understand "dial" as the smal
 After printing the name of the small knob:
 	say " on your [letter-remover]".
 
-Before doing something to the small knob:
-	now the noun is the letter-remover device;
-	try the current action instead.
+Sanity-check doing something to the small knob:
+	now the noun is the letter-remover device.
 
 To expand X-remover-string:
 	replace the text " [current setting of the letter-remover]-remover" in player-command-substitute with " letter-remover";

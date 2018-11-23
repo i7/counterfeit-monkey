@@ -1917,15 +1917,12 @@ waiting
 with 25 blank rows.
 
 Every turn (this is the blank out Table of Past Actions rule):
-	if the number of blank rows in the Table of Past Actions is 0
-	begin;
-		choose a random row in the Table of Past Actions;
-		blank out the whole row;
-	end if;
-	choose a blank row in the Table of Past Actions;
-	now the chosen action entry is the current action.
-
-
+	unless the remainder after dividing turn count by 2 is 0:
+		if the number of blank rows in the Table of Past Actions is 0:
+			choose a random row in the Table of Past Actions;
+			blank out the whole row;
+		choose a blank row in the Table of Past Actions;
+		now the chosen action entry is the current action.
 
 A pat is usually edible. The description of a pat is "Considering everything it could have been, [we] [are] lucky with this pat: it is only a pat of butter." Understand "pat of butter" or "butter" as a pat. The heft of a pat is 1.
 	The scent-description of a pat is "cool butter".

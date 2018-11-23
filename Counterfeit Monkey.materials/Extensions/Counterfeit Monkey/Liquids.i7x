@@ -56,7 +56,7 @@ Sanity-check burning oil:
 Rule for deciding whether all includes an uncontained fluid thing while taking:
 	it does not.
 
-Rule for deciding whether all includes an uncontained fluid thing while the action name part of the current action is the removing it from action:
+Rule for deciding whether all includes an uncontained fluid thing while removing object from object:
 	it does not.
 
 Sanity-check tying an uncontained fluid to something:
