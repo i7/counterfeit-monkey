@@ -68,6 +68,20 @@ Instead of examining the maps collection when the Slangovia map is unseen:
 	move the Slangovia map to the location;
 	say "[We] study the maps. One in the collection stands out: a [Slangovia map], framed like all the others but of suspiciously recent vintage."
 
+Sanity-check taking the maps collection:
+	if the Slangovia map is seen:
+		say "None of the other maps seems important." instead;
+	otherwise:
+		try examining the maps collection instead.
+
+Sanity-check buying the maps collection from Kate:
+	if the Slangovia map is seen:
+		say "None of the other maps seems important." instead;
+	otherwise:
+		 try examining the maps collection instead.
+
+Understand "map" as the maps collection when the location is Arbot Antiques and the slangovia map is not enclosed by location.
+
 The Slangovia map is a thing. The printed name is "map of Slangovia". Understand "of Slangovia" as the Slangovia map. The description is "It's a detailed street map pretending to correspond to some remote South African town called Slangovia. Cryptic icons dot the surface. There is a [fake-legend] in the lower right corner that appears to be a separate piece glued on."
 	The fake-legend is part of Slangovia map. The printed name of the fake-legend is "legend". The description of the fake-legend is "This legend tells of Iphis and Ianthe: Iphis, a girl raised in disguise as a boy, falls in love with her playmate Ianthe. She prays to the goddess Isis, who takes pity and transforms Iphis into a man, able to marry Ianthe after all." Understand "legend" as the fake-legend.
 	The introduction of the fake-legend is "It bears no obvious relation to the map of Slangovia."
