@@ -357,7 +357,7 @@ We are surrounded by kiosks for spell-offs, face-painting, and other activities 
 The Fair continues with a selection of carnival games to the west, and with open park to the north and east.
 
 > go to cinema
-/We have a (brief|short) walk among the crowds.
+/We (have a (brief|short) walk|walk) among the crowds.
 
 Cinema Lobby
 This is a small, one-screen theater. The seats are not comfortable and the screen is not large. The projector is old. The management is lazy. No food is served.
@@ -419,7 +419,7 @@ A jotter is propped up next to the projector.
 /We (take|get|pick up|acquire) the jotter. It's a little spiral-bound notebook, the kind reporters in old movies carry. It's full of notes: running times of movies. Numbers of people in the audience. Who clapped during potentially subversive scenes. Who arrived in a group of more than three.
 
 > go to hesychius street
-/We (make the fair walk|walk) away from the crowds and the fair and over the top of the old walls.
+/We (make the fair walk|have a healthy walk|walk) away from the crowds and the fair and over the top of the old walls.
 
 Hesychius Street
 As the street names make obvious, this part of town was laid out in a different political age, when it was considered more important to commemorate linguistic richness than to standardize practices.
@@ -440,7 +440,7 @@ The farmer makes a little cluck sound which seems to mean that he sees us but do
 > ask about sale
 "What is for sale?" we ask.
 
-"All that's left this time of day is some asparagus, a lime, and a yam," the farmer replies.
+/"(All that's left this time of day is|I got) some asparagus, a lime, and a yam," the farmer replies.
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) recommend other vegetables.
 
@@ -529,7 +529,7 @@ We reset the device to f. With a distinct whiff of mechanics and the summer time
 There is a dismissive blatt from the monocle, and transposed over the oil is a faint, greenish image of a fossil.
 
 > go to close
-/(We walk|It's a brief hike) down from the walls and through the wide peaceful streets where the rich live.
+/(We walk|It's a (brief hike|short walk)) down from the walls and through the wide peaceful streets where the rich live.
 
 Roget Close
 A pleasantly sheltered lane in which I learned to ride a bicycle, and where my friend Lucy used to live, before she and her parents moved off-island. Restrictions were looser even twenty years ago. Our old schoolhouse is just west of here.
@@ -559,7 +559,7 @@ The gate clicks open.
 [Your score has gone up by one point and is now fifteen.]
 
 > go to beach
-We take the snap.
+/We (take|get) the snap.
 
 We slip between the houses and down a path that looks as though it might lead to someone's back yard. No one has ever put up signage to correct this misapprehension because no one who lives around here is eager to encourage strangers on the private beach.
 
@@ -1326,7 +1326,7 @@ We climb out of the car.
 Traffic Circle
 A giant Atlantida statue stands at the center, decorated in an unorthodox fashion with a sign and a stuffed octopus. Atlantida is to us a bit as Uncle Sam might be to you, except that she embodies the spirit of the people rather than the government. In recent years she's become a symbol of opposition to the Bureau.
 
-/Two teenagers are cuffed to a brown tree, apparently for safe-keeping while the All-Purpose Officer undoes their vandalism. He (has|is carrying) a diminutive affixer.
+/Two teenagers are cuffed to a brown tree, apparently for safe-keeping while the All-Purpose Officer undoes their vandalism. He (has|is (carrying|holding)) a diminutive affixer.
 
 The snapping continues.
 
@@ -1397,7 +1397,7 @@ Confusing signs point in various directions: northeast to Deep Street, northwest
 My apartment is that direction, but unless we have some reason to go there, it seems least suspicious to avoid my old neighborhood.
 
 > go to convenience
-/((It's a|We make the) (short|brief)? drive (to|over to) Tall Street. )?(Then|At Tall Street|There) we pull easily into one of the available parking spots, since many people have now gone home.
+/((It's a|We make the) (short|brief)? drive (to|over to) Tall Street. )?(Then|At Tall Street|There|Once we get to Tall Street) we pull easily into one of the available parking spots, since many people have now gone home.
 
 /(Then|Next) we (make the |have a )?(brief |short |quick )?(hike|walk).
 
@@ -1475,7 +1475,7 @@ The snapping continues.
 The snapping continues.
 
 > go to antiques
-/((It's a |We have a |We make the )(brief|short)? drive away from the Bureau and back into the streets (over to|to|as far as) Long Street South. (There|Then)|Once we get to Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
+/((It's a |We have a |We make the |We)(brief|short)? drive away from the Bureau and back into the streets (over to|to|as far as) Long Street South. (There|Then)|Once we get to Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
 
 We show the appointment card, and are let in.
 
@@ -1937,7 +1937,7 @@ We reset the device to c. The cream gives way to the now-familiar ream.
 The snapping continues.
 
 > go to language studies department office
-/(It's|We have) a (quick|brief) (hike|walk).
+/(It's|We (have|make)) (a|the) (quick |brief )?(hike|walk).
 
 Language Studies Department Office
 This big, slightly drab area holds such useful objects as the mailboxes and the secretary's computer. On ordinary days the secretary would be in as well, presiding over affairs. The offices of individual professors lie north and west, though the north door is closed.
@@ -2179,7 +2179,7 @@ The snapping continues.
 I don't know what you think you're talking about, because we can't see any such thing here.
 
 > go to oval
-/(We |We have a|We make the|It's a)( brief| quick| short)? (walk|hike).
+/(We|We have a|We make the|It's a)( brief| quick| short)? (walk|hike).
 
 University Oval
 This is the center of the university, a broad grassy oval shaded with sycamore trees and surrounded by buildings in brick or white stone.
@@ -2371,7 +2371,7 @@ We dip out a pea-sized quantity of gel and rub it gently onto the car. With an a
 The snapping continues.
 
 > wave h-remover at chard
-/We reset the device to h. The chard gives way to the card. This time it's (Justice. A woman in a blue dress sits on a throne. She carries a letter-remover in one hand and her eyes are blind-folded|the Fool. A shiftless young woman is carrying a loaded backpack, striding across a sunny landscape|the Twins. They're male and female. A floating, sky-born figure above them is either choosing one or about to shoot one: it's hard to know what to make of the pointer or arrow it wield|Temperance. An official-looking man is operating a gigantic synthesizer. Out of its bottom fall a flood of oxymoronic figures: a dwarf elephant, a giant mouse, a bittersweet cake|Strength. A young nude lady lounges in the embrace of a giant squid. They are apparently on very good terms).
+/We reset the device to h. The chard gives way to the card. This time it's (Justice. A woman in a blue dress sits on a throne. She carries a letter-remover in one hand and her eyes are blind-folded|the Fool. A shiftless young woman is carrying a loaded backpack, striding across a sunny landscape|the Twins. They're male and female. A floating, sky-born figure above them is either choosing one or about to shoot one: it's hard to know what to make of the pointer or arrow it wield|Temperance. An official-looking man is operating a gigantic synthesizer. Out of its bottom fall a flood of oxymoronic figures: a dwarf elephant, a giant mouse, a bittersweet cake|Strength. A young nude lady lounges in the embrace of a giant squid. They are apparently on very good terms|the Tower. It represents the Tower of Babel being struck by lightning. The top of the tower is falling over, and terrified builders run in every direction. In Atlantean terms it is the end of the world).
 
 The snapping continues.
 
@@ -3478,7 +3478,7 @@ The snapping continues.
 
 "Nice swatch."
 
-/He (runs a hand over (the small nozzles|the brass plate)|knocks on the top of the T-inserter|stands back, regarding the T-inserter thoughtfully|pauses, listening for noises outside). "First we should see whether this thing can reify abstracts."
+/He (runs a hand over (the small nozzles|the brass plate)|knocks on the top of the T-inserter|stands back, regarding the T-inserter thoughtfully|pauses, listening for noises outside|runs his fingers over the surface of the machine, checking for hot spots). "First we should see whether this thing can reify abstracts."
 
 > z
 Time passes.
@@ -3547,7 +3547,7 @@ Of course, there were other options there: the T-inserter could have made two wo
 
 "No problem creating creatures," Brock says judiciously.
 
-/(The tit stares at us|He's looking at us, but when I look back, he cuts his eyes away|He watches us with a slightly disturbing intentness in his eyes|He cranes to look around at the back of the machine, but doesn't find anything interesting|He pauses, listening for noises outside|He runs his fingers over the surface of the machine, checking for hot spots). ("As our next trick we need to look at the stabilization performance," Brock says. "Inserters sometimes run into trouble if there's a case where the same base word could be expanded to multiple derivatives — for instance, if you S-inserted CREAM, it wouldn't know whether to make CREAMS or SCREAM or SCREAMS.")?
+/(The tit stares at us|He's looking at us, but when I look back, he cuts his eyes away|He watches us with a slightly disturbing intentness in his eyes|He cranes to look around at the back of the machine, but doesn't find anything interesting|He pauses, listening for noises outside|He runs his fingers over the surface of the machine, checking for hot spots|He stands back, regarding the T-inserter thoughtfully). ("As our next trick we need to look at the stabilization performance," Brock says. "Inserters sometimes run into trouble if there's a case where the same base word could be expanded to multiple derivatives — for instance, if you S-inserted CREAM, it wouldn't know whether to make CREAMS or SCREAM or SCREAMS.")?
 
 The tit clambers out of the T-inserter machine.
 
@@ -3718,7 +3718,7 @@ The functional area continues to the south, and the hallway is west.
 > put pass in punch
 I put the pass into the wire basket of the umlaut punch. There is a hum as the punch warms up, then a bang! as the tines come down sharply, tattooing the pass.
 
-/Briefly the pass appears as the (art|thrash|death|speed) metal band Päss, before fading back to itself: there just isn't enough energy to hold the conversion, given Päss's (weak|non-existent|fading) (name-recognition|reputation). The(y never really got out of their parents' basement|y haven't been playing many clubs lately| reunion tour wasn't a big success).
+/Briefly the pass appears as the (art|thrash|death|speed|power) metal band Päss, before fading back to itself: there just isn't enough energy to hold the conversion, given Päss's (weak|non-existent|fading) (name-recognition|reputation). The(y never really got out of their parents' basement|y haven't been playing many clubs lately| reunion tour wasn't a big success).
 
 When they are gone, a power chord remains in the air.
 
@@ -4129,7 +4129,7 @@ A very substantial hunk of metal with a ring at the top end, suitable for attach
 /I (take|get|pick up|acquire) the counterweight.
 
 > go to tunnel
-/(I |I have a (brief|quick|short) |I make the ( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike).
+/(I |I have a (brief|quick|short) |I make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike).
 
 Tunnel through Chalk
 This passage has been cut through natural cliff rock and looks older than the Bureau itself. The walls are rough-hewn, exposing sedimentary strata. Here and there it looks as though someone has actually excavated a favored rock or relic.
