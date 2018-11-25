@@ -3062,7 +3062,7 @@ A first conversation-reply rule when the current interlocutor is the backpacking
 Instead of waiting when the current interlocutor is the backpacking girl:
 	say "[beat][paragraph break]".
 
-privacy-subject is a subject. Understand "privacy" as privacy-subject.
+privacy-subject is a subject. Understand "privacy" as privacy-subject. The printed name of privacy-subject is "privacy".
 
 ask for privacy is a repeatable performative quip.
 	The comment is "[one of]'Would you mind giving me a minute?' we say. 'Sorry, I could just use a little privacy.'[or]'I'd really like to be alone for a couple of minutes now,' we say.[or]'This will just take a moment, but you would you mind giving me the room to myself?' we say.[at random]".
