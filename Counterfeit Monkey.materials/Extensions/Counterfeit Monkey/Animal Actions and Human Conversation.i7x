@@ -434,6 +434,9 @@ where there seems Arbot is a weakly-phrased location-questioning quip.
 	It is background-information.
 	The correct answer is Arbot Maps & Antiques.
 
+Instead of discussing where there seems Arbot when the location is Arbot Maps & Antiques:
+	try discussing what types of antiques they sell here.
+
 where there seems cinema is a weakly-phrased location-questioning quip.
 	The printed name is "where there is a cinema". The true-name is "where there seems cinema".
 	Understand "is" or "a" or "cinema" as where there seems cinema.  The place-sought is "a cinema".
@@ -2041,11 +2044,11 @@ She doesn't disagree, but doesn't elaborate, either."
 	It indirectly-follows what sort of demonstration.
 	It quip-supplies Kate.
 
-what types of antiques they sell here is an unlisted questioning quip.
+what types of antiques they sell here is a repeatable unlisted questioning quip.
 	Understand "type" or "kind" or "sort" or "antique" or "you" as what types of antiques they sell here.
 	[The mentions-list is {the maps collection}.]
 	The comment is "'What sorts of antiques do you sell here?'"
-	The reply is "'What you see around you on the floor is fairly representative,' Kate replies. 'Maps are a specialty, but we also carry older models of linguistic tools as well as unusual or vintage Atlantean artifacts.'"
+	The reply is "[one of]'What you see around you on the floor is fairly representative,' Kate replies. 'Maps are a specialty, but we also carry older models of linguistic tools as well as unusual or vintage Atlantean artifacts.'[or]Kate explains again that maps are their specialty, but that they also carry other artifacts and tools.[stopping]".
 	It quip-supplies Kate.
 
 Does the player mean discussing why Arbot now sells antiques:
