@@ -1759,7 +1759,7 @@ Some hard wood floors are scenery in the Dormitory room. Understand "floor" or "
 
 Instead of putting something on the hard wood floors, try dropping the noun.
 
-The locker is a fixed in place closed openable container in the Dormitory Room. The lock is part of the locker. The initial appearance of the locker is "The [locker] you identify as your own sits near one of the beds[if the locker is open], door standing open[otherwise if the lock is part of the locker], still locked with its dial [lock-name][otherwise], closed but not locked[end if]. ".
+The locker is a fixed in place closed openable container in the Dormitory Room. The lock is part of the locker. The initial appearance of the locker is "The [locker] you identify as your own sits near one of the beds[if the locker is open], door standing open[otherwise if the lock is part of the locker], still locked with its dial [lock-name][otherwise], closed but not locked[end if]. ". Understand "lockers" as the locker.
 
 A ranking rule for the locker:
 	increase description-rank of the locker by 100.
