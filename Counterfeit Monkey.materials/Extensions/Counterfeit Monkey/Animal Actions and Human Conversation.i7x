@@ -1624,6 +1624,9 @@ what the paddle does is an unlisted repeatable questioning quip.
 	The reply is "[one of]'This item,' says the bartender, flourishing it for you to see, 'is a genuine licensed homonym paddle. Changes one item into another item as long as the two have identical names.'[or]The bartender explains again the concept of a homonym paddle that is able to convert an item into another item of the same name.[stopping]".
 	It quip-supplies the bartender.
 
+Instead of subject-asking the homonym paddle:
+	try discussing what the paddle does.
+
 To say atmospheric-event:
 	if the bartender is not the current interlocutor:
 		say "[The patron] and [the bartender] from earlier are still here.[no line break]";
