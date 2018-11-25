@@ -242,7 +242,7 @@ Whatever is scheduled for later showing has not started yet, and is probably not
 
 My backpack is stowed under a seat in the third row from the back. I figured that it would be undisturbed there for a couple of hours, in the dark and out of sight, and if anyone found it they would probably turn it in to Lost and Found. But it is a big relief to find it still there.
 
-There are a flash drive and a monocle in the backpack.
+/(There are a flash drive and a monocle in the backpack|The backpack contains a flash drive and a monocle).
 
 We can go north and east to the Cinema Lobby from here.
 
@@ -258,7 +258,7 @@ We open the backpack.
 Everything turns computer-monitor green when viewed through our right eye. And staring fixedly at anything will turn up its authenticity status.
 
 > go to patriotic chard-garden
-/We( have a rather tiring)? walk from the kitschy splendor of the fair along the old walls and into the placid sunlight among the villas of the rich.
+/(We( have a rather tiring)?|It's a lengthy) walk from the kitschy splendor of the fair along the old walls and into the placid sunlight among the villas of the rich.
 
 Patriotic Chard-Garden
 A narrow strip of land between the house and the edge of my parents' property. The eastern edge runs right up to the decaying old wall of the city, which here means some stumpy masonry on this side and a dizzying drop on the other.
@@ -301,7 +301,7 @@ On holidays like today, this street is often host to a farmer's market; though i
 One remaining farmer lazes here, watching his stall.
 
 > buy yam
-/We (greet|say hi to) the farmer.
+/We (greet|say hi to|wave at) the farmer.
 
 The farmer makes a little cluck sound which seems to mean that he sees us but doesn't care to waste an entire syllable on acknowledging it.
 
@@ -1120,7 +1120,7 @@ We don't, of course. There are better things to do. More important places to go.
 /We (take|get|pick up|acquire) the bin. BUREAU PARKING, reads the bin, in thick black marker. DO NOT TAKE UNLESS AUTHORIZED.
 
 > go to antiques
-/(((It's|We have) a (quick|short|brief)) drive away from the Bureau and back into the streets to Long Street South. (There|Then)|(At|Once we get to) Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
+/(((It's|We have) a (quick|short|brief)|We) drive away from the Bureau and back into the streets to Long Street South. (There|Then)|(At|Once we get to) Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
 
 We show the appointment card, and are let in.
 
@@ -1173,7 +1173,7 @@ She acknowledges us with a nod as we stroll up to the bar and get close enough t
 "Various ways," she says. "Suppose I hit a small object that has a big homonym, like say a plane. You know, the carpentry kind. Suddenly I've got an airplane-style plane on top of me."
 
 > show legend to bartender
-/"(Check this out,|What do you make of this\?|Here, have a look a this)" we (say|ask)(, (holding out|showing off) the legend( for inspection)?)?.
+/"(Check this out,|What do you make of this\?|Here, have a look at this,)" we (say|ask)(, (holding out|showing off) the legend( for inspection)?)?.
 
 "This?" she says, looking a little surprised. "You want it converted?"
 
@@ -1808,7 +1808,7 @@ The bartender and Mark are still talking about the homonym paddle. Mark is holdi
 She shrugs good-naturedly, hits the jigsaw with the paddle, and grins at us. We look down at what we're holding: It's a portable power saw with the ability to slice right through wood or plastic. Dewalt cordless, if you're interested, with a massive battery.
 
 > go to seminar room
-/((We |We have a (brief|quick) |We make the( brief| quick)? |It's a( brief| quick)? )drive (to|as far as) Long Street South. (Then|There)|(At|Once we get to) Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
+/((We |We have a (brief|quick) |We make the( brief| quick)? |It's a( brief| quick)? )drive (to|as far as|over to) Long Street South. (Then|There)|(At|Once we get to) Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
 
 /(Then|After that|From there|Next) (we |we have a (brief|quick|short) |we make the( brief| quick| short)? |it's a( brief| quick| short)? )(walk|hike).
 
@@ -2808,8 +2808,6 @@ We dip out a pea-sized quantity of gel and rub it gently onto the rock. With an 
 
 There is a continuous angry whine from the jigsaw.
 
-Brock looks rather awkward, and clambers out of our ineffective hold onto solid ground.
-
 Brock stands, dusting himself off. He looks us up and down without expression, without any sign of recognition. "What day is it?" he asks.
 
 "Still Serial Comma Day," you say. "Brock, it's me. And Alex, but I'm here."
@@ -2858,7 +2856,7 @@ There is a continuous angry whine from the jigsaw.
 
 There is a continuous angry whine from the jigsaw.
 
-Brock touches some gel to the jigsaw. "Just in case someone out there is listening." With an audible SPLORT, the jigsaw becomes a jigsaw.
+/Brock touches some gel to the jigsaw. "(Just in case someone out there is listening|In the spirit of keeping the peace)." With an audible SPLORT, the jigsaw becomes a jigsaw.
 
 /(We could|I'd like to|We want to|I'm inclined to|My response would be to) complain about Brock's recklessness or discover why Brock got stuck here. Or, then again, there's always finishing the job.
 
