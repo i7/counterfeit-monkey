@@ -3290,6 +3290,7 @@ whether anyone ever wins is a questioning quip.
 	The reply is "'No one has won today,' he says, which is not an answer.".
 	It quip-supplies the barker.
 	It directly-follows barker-advertisement.
+	Understand "does" and "win" as whether anyone ever wins.
 
 compliment the blue suit is a performative quip.
 	[The mentions-list is {suit, fashion}.]
