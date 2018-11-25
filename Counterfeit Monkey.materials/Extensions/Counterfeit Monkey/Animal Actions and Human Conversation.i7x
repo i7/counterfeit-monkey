@@ -2863,11 +2863,16 @@ sympathize about jetlag is a performative quip.
 
 be honest about our origins is a weakly-phrased unlisted performative quip.
 	The comment is "'[if the backpacking girl recollects lie about our origins]Actually the truth is [end if]I spent some of my life around here and some of it traveling around the Mediterranean, living on a yacht and conducting acts of international espionage. That's when I wasn't working on a university degree in language studies.'".
-	Understand "tell the truth" or "tell truth" or "be truthful" as be honest our origins.
-	[The mentions-list is {yourself}.]
+	Understand "be truthful" or "truth" as be honest about our origins.
+	[The mentions-list is {yourself, truth-subject}.]
 	The reply is "[if the backpacking girl recollects lie about our origins]'There's nothing wrong with coming from California,' she says. 'You don't have to make something up.'[otherwise]'...Right,' she says. 'I'm guessing world-traveling professor-spies don't stay in youth hostels.'[end if]".
 	It quip-supplies the backpacking girl.
 	It indirectly-follows sympathize about jetlag.
+
+truth-subject is a subject. Understand "truth" as truth-subject. The printed name of truth-subject is "truth".
+
+Instead of subject-asking truth-subject when be honest about our origins is not available:
+ say "[one of]We'd better not[or]That wouldn't be such a good idea[or]I'd prefer not to[at random]."
 
 lie about our origins is a weakly-phrased performative quip.
 	The comment is "'[if the backpacking girl recollects be honest about our origins]Actually the truth is [end if]I grew up in California,' you say. 'In... sort of a suburb of Los Angeles, though pretty far out. Fontana, if you've heard of that.'".

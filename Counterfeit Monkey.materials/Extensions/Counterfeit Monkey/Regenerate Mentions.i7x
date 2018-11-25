@@ -227,7 +227,7 @@ The mentions-list of sympathize on the topic of parents is {Family}.
 The mentions-list of compliment the nose ring is {nose-ring}.
 The mentions-list of whether she seems really from canada is {heavy pack}.
 The mentions-list of sympathize about jetlag is {Transportation}.
-The mentions-list of be honest about our origins is {yourself}.
+The mentions-list of be honest about our origins is {yourself, truth-subject}.
 The mentions-list of lie about our origins is {yourself}.
 The mentions-list of lie about visiting is {Celebration, yourself}.
 The mentions-list of equivocate about Atlantis is {yourself}.
