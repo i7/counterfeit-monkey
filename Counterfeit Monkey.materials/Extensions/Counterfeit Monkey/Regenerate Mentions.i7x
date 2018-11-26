@@ -116,6 +116,10 @@ The internal-name of Atlantida-refreshed is "Atlantida-refreshed".
 The internal-name of Slangovia map is "Slangovia map".
 The internal-name of attendant is "attendant".
 The internal-name of roll of bills is "roll of bills".
+The internal-name of privacy-subject is "privacy-subject".
+The internal-name of truth-subject is "truth-subject".
+
+
 
 Section - Mentions-lists
 
