@@ -168,8 +168,8 @@ A first after reading a command rule when how-many-people-here is positive (this
 		if the player's command includes "where to find a/--" or the player's command includes "where i/we could find a/--" or the player's command includes "where there is a/--":
 			replace the matched text with "where there seems";
 			make no decision;
-	unless the player's command includes "how to" or the player's command includes "where to" or the player's command includes "likes to" or the player's command includes "go to":
-		if the player's command includes "to" and the player's command includes "ask/tell":
+	if the player's command includes "to" and the player's command includes "ask/tell":
+		unless the player's command includes "how to" or the player's command includes "where to" or the player's command includes "likes to" or the player's command includes "go to":
 			let N be "[player's command]";
 			replace the regular expression "^(ask|tell) (.*?) to " in N with "\2, ";
 			change the text of the player's command to N.
