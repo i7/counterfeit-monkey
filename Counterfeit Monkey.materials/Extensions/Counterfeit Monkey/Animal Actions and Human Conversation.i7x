@@ -420,6 +420,21 @@ where lodging seems found is a weakly-phrased location-questioning quip.
 	It is background-information.
 	The correct answer is Hostel.
 
+Instead of discussing where lodging seems found when location is hostel:
+	if the player's command includes "where":
+		continue the action;
+	otherwise:
+		if whether there seem beds available is available:
+			try discussing whether there seem beds available;
+		otherwise:
+			say "[first custom style]That does not seem to be a topic of conversation at the moment.[roman type][paragraph break]".
+
+Instead of discussing where lodging seems found when location is dormitory:
+	if the player's command includes "where":
+		continue the action;
+	otherwise:
+		say "[first custom style]That does not seem to be a topic of conversation at the moment.[roman type][paragraph break]".
+
 where there seems hotel is a weakly-phrased location-questioning quip.
 	The printed name is "where there is a hotel". The true-name is "where there seems hotel".
 	Understand "is" or "a" or "fleur" or "d'or" as where there seems hotel.  The place-sought is "a hotel".
@@ -429,13 +444,16 @@ where there seems hotel is a weakly-phrased location-questioning quip.
 
 where there seems Arbot is a weakly-phrased location-questioning quip.
 	The printed name is "where to find Arbot Maps & Antiques". The true-name is "where there seems Arbot".
-	Understand "is" or "Arbot" or "antiques" or "arbots" or "arbot's" or "maps" or "&" as where there seems arbot.  The place-sought is "an antiques store".
+	Understand "is" or "Arbot" or "antiques" or "an" or "store" or "shop" or "arbots" or "arbot's" or "maps" or "&" as where there seems arbot.  The place-sought is "an antiques store".
 	[The mentions-list is {geography}.]
 	It is background-information.
 	The correct answer is Arbot Maps & Antiques.
 
 Instead of discussing where there seems Arbot when the location is Arbot Maps & Antiques:
-	try discussing what types of antiques they sell here.
+	if the player's command includes "where":
+		continue the action;
+	otherwise:
+		try discussing what types of antiques they sell here.
 
 where there seems cinema is a weakly-phrased location-questioning quip.
 	The printed name is "where there is a cinema". The true-name is "where there seems cinema".
@@ -444,12 +462,27 @@ where there seems cinema is a weakly-phrased location-questioning quip.
 	It is background-information.
 	The correct answer is Cinema.
 
+Instead of discussing where there seems cinema when the location is the cinema lobby:
+	if the player's command includes "where":
+		continue the action;
+	otherwise:
+		try subject-asking entertainment.
+
 where there seems pub is a weakly-phrased location-questioning quip.
 	The printed name is "where there is a pub". The true-name is "where there seems pub".
 	Understand "is" or "a" or "bar" as where there seems pub.  The place-sought is "a pub".
 	[The mentions-list is {geography, counterfeit monkey-as-subject}.]
 	It is background-information.
 	The correct answer is Counterfeit Monkey.
+
+Instead of discussing where there seems pub when the location is Counterfeit Monkey:
+	if the player's command includes "where":
+		continue the action;
+	otherwise:
+		if how long he hath worked at bar is available:
+			try discussing how long he hath worked at bar;
+		otherwise:
+			say "[first custom style]That does not seem to be a topic of conversation at the moment.[roman type][paragraph break]".
 
 suggest-tourist-information is an NPC-directed quip.
 	The reply is "[if current interlocutor is attendant and guidebook is marked-visible]'You're welcome to that Guidebook, you know. It has a lot of spare information.'[otherwise]'If you have trouble finding your way, you can ask other people on the way.'[end if]"
