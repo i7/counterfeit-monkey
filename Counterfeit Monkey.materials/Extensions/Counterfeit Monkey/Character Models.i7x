@@ -164,10 +164,11 @@ A command-string altering rule when how-many-people-here is positive (this is th
 Understand "hey" or "hiya" or "yo" as hailing.
 
 A first after reading a command rule when how-many-people-here is positive (this is the replace ask X to rule):
-	if the player's command includes "where to find":
-		replace the matched text with "where there seems";
-		make no decision;
-	unless the player's command includes "how to" or the player's command includes "where to":
+	if the player's command includes "where":
+		if the player's command includes "where to find a/--" or the player's command includes "where i/we could find a/--" or the player's command includes "where there is a/--":
+			replace the matched text with "where there seems";
+			make no decision;
+	unless the player's command includes "how to" or the player's command includes "where to" or the player's command includes "likes to" or the player's command includes "go to":
 		if the player's command includes "to" and the player's command includes "ask/tell":
 			let N be "[player's command]";
 			replace the regular expression "^(ask|tell) (.*?) to " in N with "\2, ";

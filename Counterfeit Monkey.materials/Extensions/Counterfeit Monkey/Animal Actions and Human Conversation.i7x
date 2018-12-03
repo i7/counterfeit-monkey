@@ -378,7 +378,7 @@ where there seems internet service is a weakly-phrased location-questioning quip
 
 where food seems sold is a weakly-phrased location-questioning quip.
 	The printed name is "where food is sold". The true-name is "where food seems sold".
-	Understand "is" as where food seems sold.  The place-sought is "a source of groceries".
+	Understand "is" or "where there seems" as where food seems sold.  The place-sought is "a source of groceries".
 	[The mentions-list is {food, geography}.]
 	The reply is "[one of]'All the regular grocery stores are probably closed for Serial Comma Day, but you could try the farmer's market up on Hesychius Street.'[or][holiday closures][at random]".
 	It is background-information.
@@ -386,28 +386,28 @@ where food seems sold is a weakly-phrased location-questioning quip.
 
 where a school seems is a weakly-phrased location-questioning quip.
 	The printed name is "where a school is". The true-name is "where a school seems".
-	Understand "is" or "elementary" or "grammar" or "comprehensive" or "junior" as where a school seems.  The place-sought is "an elementary school".
+	Understand "is" or "elementary" or "grammar" or "comprehensive" or "junior" or "where there seems" as where a school seems.  The place-sought is "an elementary school".
 	[The mentions-list is {education, geography}.]
 	It is background-information.
 	The correct answer is Roget Close.
 
 where customs seems found is a weakly-phrased location-questioning quip.
 	The printed name is "where customs is found". The true-name is "where customs seems found".
-	Understand "is" as where customs seems found.  The place-sought is "customs services".
+	Understand "is" or "where there seems" as where customs seems found.  The place-sought is "customs services".
 	[The mentions-list is {immigration, geography}.]
 	It is background-information.
 	The correct answer is Customs House.
 
 where post office seems found is a weakly-phrased location-questioning quip.
 	The printed name is "where a post office is found". The true-name is "where post office seems found".
-	Understand "is" or "post office" or "postal" or "mail" or "postal/mail service" as where post office seems found.  The place-sought is "a post office".
+	Understand "is" or "post office" or "postal" or "mail" or "postal/mail service" or "where there seems" as where post office seems found.  The place-sought is "a post office".
 	[The mentions-list is {geography}.]
 	It is background-information.
 	The correct answer is Deep Street.
 
 where pharmacy seems found is a weakly-phrased location-questioning quip.
 	The printed name is "where a pharmacy is found". The true-name is "where pharmacy seems found".
-	Understand "is" or "drugs" or "drug" or "druggist" or "chemist" or "chemists" as where pharmacy seems found.  The place-sought is "a pharmacy".
+	Understand "is" or "drugs" or "drug" or "druggist" or "chemist" or "chemists" or "where there seems" as where pharmacy seems found.  The place-sought is "a pharmacy".
 	[The mentions-list is {geography}.]
 	It is background-information.
 	The correct answer is Midway.
@@ -415,7 +415,7 @@ where pharmacy seems found is a weakly-phrased location-questioning quip.
 where lodging seems found is a weakly-phrased location-questioning quip.
 	The printed name is "where lodging is found".
 	The  true-name is "where lodging seems found".
-	Understand "is" or "hostel" as where lodging seems found.  The place-sought is "lodging for the night".
+	Understand "is" or "hostel" or "lodgings" or "where there seems" as where lodging seems found.  The place-sought is "lodging for the night".
 	[The mentions-list is {geography}.]
 	It is background-information.
 	The correct answer is Hostel.
@@ -787,7 +787,7 @@ why the car does not run is a questioning quip.
 	[Every car is mentioned by why the car does not run.]
 
 where there seems a car-2 is an unlisted repeatable questioning quip.
-	Understand "buy car" or "car" or "there is" or "buy a car" or "i could" or "we could" as where there seems a car-2. The printed name is "where to find a car". The true-name is "where there seems a car-2".
+	Understand "buy car" or "car" or "buy a car" or "i could" or "we could" as where there seems a car-2. The printed name is "where to find a car". The true-name is "where there seems a car-2".
 	It quip-supplies the mechanic.
 	The comment is "'I'm looking for a car,' we say.".
 	The reply is "'Sorry,' he mumbles. '[one of]I fix them. I don't sell them[or]Perhaps you should ask somebody else[stopping].'".
@@ -2510,7 +2510,7 @@ where to get a pass is a questioning quip.
 	The comment is "[one of]'Where did you say we might get a pass to visit the rest of the building?' we ask, in my very most polite schoolboy voice.[or]'Where did you say the passes were given out?' we ask.[stopping]".
 	The reply is "[one of][set distrustful]'Those with appropriately ranked academic research jobs are already in receipt of documentation,' she replies.[or]'I did not say,' she replies.[or]She ignores you.[stopping]".
 	It quip-supplies the secretary.
-	It is repeatable.
+	It is repeatable. Understand "where there seems" as where to get a pass.
 
 An availability rule for where to get a pass:
 	if player-is-allowed is true, it is off-limits;
