@@ -481,6 +481,11 @@ A glulx resetting-windows rule (this is the find existing windows rule):
 			now gg_quotewin is the current glulx rock-ref;
 
 A first glulx object-updating rule (this is the recalibrate windows rule):
+	if the starting the virtual machine activity is going on:
+		if the main window is g-present:
+			now the main window is g-required;
+		if the status window is g-present and the no status line option is not active:
+			now the status window is g-required;
 	calibrate windows;
 	focus the current focus window;
 
@@ -795,11 +800,9 @@ A glulx zeroing-reference rule (this is the set generic text styles rule):
 [ Gargoyle sets the cursor color to whatever the last text-buffer color hint was. We will reset it using a variable the story author can change.
 This is apparently by design, but seems unuseful and buggy to me. I raised the issue at https://groups.google.com/forum/#!topic/garglk-dev/DdqG0Ppt2lY ]
 
-The Gargoyle cursor color is initially "#000000".
+[The Gargoyle cursor color is initially "#000000".
 After constructing a textual g-window (this is the Gargoyle cursor color rule):
-	set the color of wintype 3 for normal-style to the Gargoyle cursor color;
-
-
+	set the color of wintype 3 for normal-style to the Gargoyle cursor color;]
 
 Section - Applying window specific styles
 
@@ -904,17 +907,17 @@ First after constructing a textual g-window (called win) (this is the reset the 
 Gargoyle sets the colour of its window padding based on the last background colour style hint given to the normal style. So after clearing all the background colours and styles, we set it based on the background color of the main window, or just set white if it isn't set. ]
 
 [ This phrase is made available in case you want to set the colour at some other time (such as when opening a pop-over window) ]
-To set the Gargoyle window padding to (T - a text):
+[To set the Gargoyle window padding to (T - a text):
 	set the background color of wintype 3 for normal-style to T;
 
 To set the Gargoyle background color to the color (T - a text) (deprecated):
-	set the background color of wintype 3 for normal-style to T;
+	set the background color of wintype 3 for normal-style to T;]
 
-After constructing a textual g-window (this is the Gargoyle window padding rule):
+[After constructing a textual g-window (this is the Gargoyle window padding rule):
 	let T be the background color of the acting main window;
 	if T is empty:
 		let T be "#FFFFFF";
-	set the Gargoyle window padding to T;
+	set the Gargoyle window padding to T;]
 
 
 
