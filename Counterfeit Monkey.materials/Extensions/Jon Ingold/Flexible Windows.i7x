@@ -430,7 +430,7 @@ To decide what number is the height of (win - a g-window):
 To decide what number is the width of (win - a g-window):
 	(- FW_WindowSize( {win}, 0 ) -).
 
-Include (-  
+Include (-
 [ FW_WindowSize win index;
 	! if win is g-present:
 	if ( GetEitherOrProperty( win, (+ g-present +) ) )
@@ -927,7 +927,7 @@ Flexible Windows ends here.
 ---- DOCUMENTATION ----
 
 Chapter: Introduction
-	
+
 Flexible Windows allows the Glulx author to construct and fill a series of multiple windows, which can be created and destroyed safely during the course of play. Restarts and restores are all handled properly. Windows can be graphical, text-buffers (like the main window is) or text-grids (in which case, glk calls can be used to place characters anywhere within them).
 
 Although Flexible Windows does not supply any rules for using graphical windows beyond the most basic, several can be found in Emily Short's Simple Graphical Window extension. Version 15/160929 of Flexible Windows is compatible with version 10/160929 of Simple Graphical Window. Older versions of these two extensions are not compatible with each other.
@@ -941,7 +941,7 @@ Chapter: Window Types, Properties, and Styles
 
 Section: Window Type
 
-Each window is a thing of the kind g-window. There are three types of Glulx window: text buffer, text grid and graphics. A text buffer is a teletype-style stream of text (akin to the main window), a graphics screen cannot accept text but can render images, and a text grid (akin to the status bar) allows for flexible positioning of text characters (for instance, centering text). 
+Each window is a thing of the kind g-window. There are three types of Glulx window: text buffer, text grid and graphics. A text buffer is a teletype-style stream of text (akin to the main window), a graphics screen cannot accept text but can render images, and a text grid (akin to the status bar) allows for flexible positioning of text characters (for instance, centering text).
 
 There are two potential ways to define a window's type. One is to declare it to be of the appropriate kind:
 
@@ -954,12 +954,12 @@ The other way is to set the "type" property to one of g-text-buffer, g-text-grid
 	The type of the main window is g-text-buffer.
 	The type of the status window is g-text-grid.
 
-	
+
 Section: Window Position
-	
+
 All games start, by default, with a status bar along the top of the screen, and the main window below.
 
-Glulx windows are formed from the main window by carving off segments using either horizontal or vertical strokes, with each stroke creating one new window, from which further windows can be cut. This automatically creates a tree-structure for windows, with each new window being sliced from one that came before. The extension refers to this process as "spawning", and you set up your layout of windows by telling the game which window spawns which. 
+Glulx windows are formed from the main window by carving off segments using either horizontal or vertical strokes, with each stroke creating one new window, from which further windows can be cut. This automatically creates a tree-structure for windows, with each new window being sliced from one that came before. The extension refers to this process as "spawning", and you set up your layout of windows by telling the game which window spawns which.
 
 The position of each new window is specified using one of four positions: g-placeabove, g-placebelow, g-placeleft and g-placeright. Note that these indicate where the new window will be, rather than the direction of the slice taken.
 
@@ -1017,7 +1017,7 @@ If we set numbers ending in 5 for our manual rocks, we will never conflict with 
 
 
 Chapter: Using Windows
-	
+
 Section: Overview
 
 This extension provides little in the way of support for graphics windows or text grid windows, both of which can display images and draw shapes in a full range of colours. Text grids can also locate the cursor (so, say, could be used to make a pac-man game). A few useful phrases for text-buffer windows are supplied.
@@ -1035,7 +1035,7 @@ The only point to note is that the "open" command will, if necessary, also open 
 Section: Closing a Window
 
 To close the window:
-	
+
 	close side window
 
 The point above applies here, in reverse: shutting a window will also shut all sub-windows contained by it.
@@ -1050,7 +1050,7 @@ The refreshing activity is for redrawing windows. We can invoke the refreshing a
 To refresh all the windows:
 
 	refresh all windows
-	
+
 The refreshing activity will automatically first check if the window is present, focus the window, and clear the window, so we usually won't need to do those things manually.
 
 Rules for the refreshing activity should (ideally) be able to reconstruct entirely the contents of the window (otherwise, after an UNDO or a RESTORE, information will be lost):
@@ -1058,14 +1058,14 @@ Rules for the refreshing activity should (ideally) be able to reconstruct entire
 	Rule for refreshing the side window (this is the display inventory in side window rule):
 		try taking inventory;
 
-		
-Section: Checking if a Window is Present		
-		
+
+Section: Checking if a Window is Present
+
 To check the existence of a window at any time, we can test for the g-present property:
 
 	if side window is g-present
 	if side window is g-unpresent
-	
+
 When we refresh a window, this will be done automatically.
 
 
@@ -1074,7 +1074,7 @@ Section: Focusing a Window
 To manually move the focus to a particular window:
 
 	focus side window
-	
+
 This is usually not necessary, as focusing is done automatically when we refresh a window.
 
 
@@ -1083,18 +1083,18 @@ Section: Clearing a Window
 To manually clear a window:
 
 	clear side window
-	
+
 This is usually not necessary, as clearing is done automatically when we refresh a window.
-	
-	
+
+
 Section: Checking Which Window is in Focus
 
 To find out which window is currently in focus, we can check the variable "current focus window":
 
 	Rule for printing the name of the old book while taking inventory and the current focus window is side window:
 		say "The Meteor, the Stone (etc.)" instead.
-		
-		
+
+
 Section: Turning Off the Status Line
 
 By default, Glulx games will incorporate a status line. To turn this off quickly, a use option is provided:
@@ -1114,13 +1114,13 @@ Example: * Inventory Window - A simple example showing how to place a side windo
 
 	Rule for refreshing the side window:
 		try taking inventory.
-	
+
 	When play begins:
 		open the side window.
-	
+
 	Every turn:
 		refresh the side window.
-	
+
 	The Study is a room. In the study is an old oak desk. On the desk is a Parker pen, a letter, an envelope and twenty dollars.
 
 	Test me with "take pen/take letter/i/take all".
