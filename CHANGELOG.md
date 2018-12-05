@@ -8,6 +8,7 @@
 
 ### Gameplay changes
 
+- It is no longer possible to make the game unwinnable by putting crucial objects in the etymological reversing chamber and then lowering the platform.
 - No longer awards achievements upon dying that were meant to be awarded when finishing the game.
 - No longer awards a point (or expresses admiration for the player) when a non-player character puts restoration gel on something before the player does.
 - Automatically opens the backpack when necessary in order to use the letter-remover.
@@ -29,6 +30,10 @@
 - Adds a massive pug.
 
 ### Parsing
+
+- Asking about the current location is no longer understood as asking where to find the current location.
+- Understands more synonyms when asking where to find locations and things, such as ASK WHERE TO FIND A GARAGE.
+- The quips ASK WHAT HE LIKES TO EAT and ASK WHY HE DOESN'T GO TO THE DEMONSTRATION are now properly understood.
 - Makes all player input case-insensitive.
 - Makes commands like X-REMOVE CODEX or P-REMOVE APPLE work.
 - When typing commands like REMOVE X FROM CODEX, the game will no longer try to change the setting of the letter-remover if it already is X.
@@ -38,6 +43,10 @@
 - Adds responses when trying to use the power cord in unintended ways. Previously the player would sometimes get a blank response.
 
 ### Typos and cosmetic output errors
+
+- Fixes the message "X doesn't have anything to say about Y at the moment" which was previously sometimes printed as "X doesn't has anything to say about Y at the moment."
+- Groups of certain identical objects, such as two cans of oil, are no longer mentioned twice in room descriptions.
+- Fixes a bug that would override interpreter settings for text color after a restart and set the text to black on white on interpreters that support GLK styles.
 - If you disable graphics, they will now stay disabled after a restart or restore. Not after quitting the interpreter, though.
 - The map images used on the yacht have been updated to eliminate black lines that would sometimes appear when switching graphics off and then on.
 - Fixes a bug where restoring a save game from an interpreter without support for graphics would break the map display on an interpreter which supports graphics.
