@@ -598,6 +598,15 @@ There are three cameo appearances by IF community members (or their alter egos).
 
 Please report bugs at https://github.com/i7/counterfeit-monkey/issues"
 
+Carry out asking for help (this is the new help request rule):
+	now the current menu is the Table of Basic Help Options;
+	carry out the displaying activity;
+	clear the screen;
+	[We must explicitly update the status line after closing the help menu, otherwise the graphics window will think it still is two lines shorter than it is, resulting in a black area below the map on Glk spec compliant interpreters.]
+	update the status line;
+	try looking.
+
+The new help request rule is listed instead of the help request rule in the carry out asking for help rulebook.
 
 Section 4 - Resurrection
 
