@@ -608,6 +608,17 @@ Carry out asking for help (this is the new help request rule):
 
 The new help request rule is listed instead of the help request rule in the carry out asking for help rulebook.
 
+The constructing status line while displaying rule is not listed in any rulebook.
+
+Rule for constructing the status line while displaying (this is the new constructing status line while displaying rule):
+	if the endnode flag is 0,
+		fill status bar with Table of Deep Menu Status;
+	otherwise fill status bar with Table of Shallow Menu Status;
+	[We must redraw the map every time the status bar changes height, otherwise the bottom will get cut off on Glk spec compliant interpreters.]
+	adjust width of the graphics window;
+	redraw the map and compass;
+	rule succeeds.
+
 Section 4 - Resurrection
 
 [In versions 1-4 of the game, it was possible to die instantly in assorted ways. On an interpreter with working UNDO, it was possible to take this turn back, but a) some novice players may not realize this and b) some interpreters choked on trying to undo things given how very large the game state is.]
