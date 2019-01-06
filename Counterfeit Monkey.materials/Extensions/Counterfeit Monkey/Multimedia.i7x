@@ -408,6 +408,8 @@ To redraw the map and compass:
 		[ Draw the blue background below the map and add a pixel to the height to ensure that odd heights don't leave a 1 pixel black line ]
 		let padding height be (total height - scaled height) / 2 + 1;
 		draw figure of background colour in graphics window at x 0 and y (((total height - scaled height) / 2) + scaled height) scaled to width ideal-width and height padding height;
+		[ Draw a black square at the top to cover any artifacts left over after changing height ]
+		draw a rectangle of color "$000000" in graphics window at x 0 and y 0 of width ideal-width and height (total height - scaled height) / 2;
 		determine compass coordinates;
 		draw Figure of center-squiggle in graphics window at x x-coordinate of north and y y-coordinate of west scaled to width grid-size and height grid-size;
 		repeat with way running through directions:
