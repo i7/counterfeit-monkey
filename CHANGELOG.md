@@ -1,5 +1,9 @@
 # Change log
 
+## Unreleased
+
+- Fixes glitches in the map graphics on some interpreters when displaying the help menu. It is still slightly broken in the Mac IDE, though.
+
 ## Release 8
 
 - Fixes a hang that would occur on some interpreters when resizing the game window or clicking on the compass rose while being asked to reply yes or no.
