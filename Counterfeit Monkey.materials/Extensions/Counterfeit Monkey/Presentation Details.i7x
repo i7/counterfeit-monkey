@@ -604,6 +604,7 @@ Carry out asking for help (this is the new help request rule):
 	clear the screen;
 	[We must explicitly update the status line after closing the help menu, otherwise the graphics window will think it still is two lines shorter than it is, resulting in a black area below the map on Glk spec compliant interpreters.]
 	update the status line;
+	follow the compass-drawing rule;
 	try looking.
 
 The new help request rule is listed instead of the help request rule in the carry out asking for help rulebook.
