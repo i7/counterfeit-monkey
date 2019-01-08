@@ -2934,9 +2934,9 @@ The description of the saltcat is "It's a mixture of salt, lime, and meal, used 
 
 The description of a sap is "A slack-faced fellow, eager to believe what he's told. The grin he's giving us right now is usually found only on golden retrievers."
 
-The sap-dispenser is a closed transparent container. The printed name is "sap dispenser". Understand "sap dispenser" or "dispenser" as the sap-dispenser. It is scenery. The initial appearance of the sap-dispenser is "A sap dispenser hangs beside the mirror." The description of the sap-dispenser is "It's the kind where a squeeze will dispense sap into the sink[if the sap-liquid is not in the sap-dispenser]. It is also empty[end if]."
+The sap-dispenser is a closed container. The printed name is "sap dispenser". Understand "sap dispenser" or "dispenser" as the sap-dispenser. Understand "sap" as the sap-dispenser when the sap-liquid is marked invisible. It is fixed in place. The initial appearance of the sap-dispenser is "A sap dispenser hangs beside the mirror." The description of the sap-dispenser is "It's the kind where a squeeze will dispense sap into the sink[if the sap-liquid is not in the sap-dispenser]. It is also empty[end if]."
 
-A sap-liquid is a fluid thing. The indefinite article is "some". The scent-description is "pine resin". The printed name is "sap". Understand "sap" as the sap-liquid. The description is "Sticky and yellow-col[our]ed goo from a tree, rather than 'sap' as in a person. But considering it comes from a sap dispenser, that was probably inevitable."
+A sap-liquid is a fluid thing. The indefinite article is "some". The scent-description is "pine resin". The printed name is "sap". Understand "sap" as the sap-liquid. The description is "Sticky and yellow-col[our]ed goo from a tree, rather than 'sap' as in a person. But considering it comes from a dispenser, that was probably inevitable."
 
 Sanity-check touching the sap-liquid:
 	say "It would be sticky and be hard to get off." instead.
@@ -2944,8 +2944,7 @@ Sanity-check touching the sap-liquid:
 Sanity-check burning the sap-liquid:
 	say "I think some resins might burn when dry, but I'm not sure that applies here, and in any case it wouldn't help." instead.
 
-Instead of squeezing the sap-dispenser:
-	say "Nothing much comes out."
+The sop-dispenser is a closed container. The printed name is "sop dispenser". Understand "sop dispenser" or "dispenser" as the sop-dispenser. Understand "sop" as the sop-dispenser when the sop is marked invisible. It is fixed in place. The initial appearance of the sop-dispenser is "A sop dispenser hangs beside the mirror." The description of the sop-dispenser is "It's the kind where a squeeze will dispense a sop into the sink[if the sop is not in the sop-dispenser]. It is also empty[end if]."
 
 The satin-pin is wearable. The printed name of the satin-pin is "satin pin". Understand "satin" or "satin pin" as the satin-pin. Understand "pin" as the satin-pin when the pin is marked invisible. The description of the satin-pin is "It's a little brooch, probably not very valuable, bearing a blue and white satin rosette. The edges of the rosette have yellowed with age, and there is a blob of glue at the center that must once have held some additional decoration."
 

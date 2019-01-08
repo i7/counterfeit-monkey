@@ -163,42 +163,7 @@ Instead of doing something to the sink-collectives:
 	say "I double-take before remembering to go into the women's side; it's a good thing you're nudging me along.";
 	continue the action.]
 
-A soap is a fluid thing. The indefinite article is "some". The description is "Clear fluid for washing up with."
-	The scent-description is "herbes de Provence".
-
-Does the player mean waving the letter-remover at the soap:
-	it is very likely.
-
-The soap dispenser is a closed container in the Public Convenience. It is privately-named. Understand "dispenser" or "soap dispenser" as the soap dispenser. Understand "soap" as the soap dispenser when the soap is marked invisible. It is fixed in place. The initial appearance of the soap dispenser is "A [soap dispenser] hangs beside the mirror." The description of the soap dispenser is "It's the kind where a squeeze will dispense new soap into the sink[if the soap is not in the soap dispenser]. It is also empty[end if]."
-
-Does the player mean waving the letter-remover at the soap dispenser:
-	it is very unlikely.
-
-Sanity-check taking the soap dispenser when the soap is in the soap dispenser:
-	if the subcommand of the soap dispenser matches "soap":
-		try squeezing the soap dispenser instead.
-
-Instead of squeezing the soap dispenser:
-	if soap is in the dispenser:
-		if the number of sinks in the location is greater than 0:
-			let target be a random sink in the location;
-			if a switched on tap (called target tap) is part of the target:
-				silently try switching off target tap;
-				say "First switching off [the target tap], [we][run paragraph on]";
-			otherwise:
-				if a switched on tap (called target tap) is enclosed by location:
-					say "Fortunately, the faucet below the soap dispenser is not running. ";
-				say "[We][run paragraph on]";
-			say " give the dispenser a squeeze. It deposits some soap in [the target] [--] just viscous enough not to drain away instantly.";
-			move the soap to the target;
-		otherwise:
-			say "[We] give the dispenser a squeeze and it deposits some soap on the floor, the sink having been removed from the area.";
-			move the soap to the location;
-	otherwise:
-		say "This time nothing much comes out."
-
-The soap is in the soap dispenser.
-
+Include Dispensers by Counterfeit Monkey.
 
 The wall-hole is a fixed in place container in the Public Convenience. Understand "hole" or "hole in the wall" or "hole in wall" or "wall" as the wall-hole. The printed name is "[if looking]hole[otherwise]hole in the wall[end if]". The initial appearance is "About knee-height in one of the stalls is a [wall-hole] that runs right through the wall between the men's and women's restrooms." The description of the wall-hole is "It's too small to get a good look through, really, and usually cluttered with junk."
 

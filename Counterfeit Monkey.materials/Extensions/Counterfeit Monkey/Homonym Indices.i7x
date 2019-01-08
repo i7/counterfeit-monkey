@@ -1279,5 +1279,7 @@ An ignition has homonym index 1275.
 A tap has homonym index 1276.
 A bath has homonym index 1277.
 Yourself has homonym index 1278.
+The soap-sap-receptacle-supporter has homonym index 1286.
+The sop-dispenser has homonym index 1287.
 
 Homonym Indices ends here.

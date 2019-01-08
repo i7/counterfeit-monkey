@@ -326,7 +326,7 @@ Check waving the letter-remover at something which is enclosed by the player:
 		try taking off the second noun;
 		if the player does not carry the second noun:
 			say "Altering one's clothes while they're on can have some unfortunate side effects." instead;
-	if the player does not carry the second noun:
+	if the player does not carry the second noun and the second noun is not an uncontained fluid:
 		try taking the second noun;
 		if the player does not carry the second noun:
 			let enclosure be the holder of the second noun;
