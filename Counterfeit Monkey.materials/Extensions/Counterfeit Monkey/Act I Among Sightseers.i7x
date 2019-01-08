@@ -1424,10 +1424,10 @@ Check inserting something into the projector:
 Sanity-check putting the reel on the projector:
 	try inserting the reel into the projector instead.
 
-Understand "thread [a thing] on/onto [the projector]" as inserting it into.
-Understand "mount [a thing] on/onto [the projector]" as inserting it into.
+Understand "thread [something] on/onto [the projector]" as inserting it into.
+Understand "mount [something] on/onto [the projector]" as inserting it into.
 
-Understand "show [a thing] on [the projector]" as showing it on. Showing it on is an action applying to two things.
+Understand "show [something] on [the projector]" as showing it on. Showing it on is an action applying to two things.
 
 Sanity-check performing something on the projector:
 	try showing the noun on the projector instead.
