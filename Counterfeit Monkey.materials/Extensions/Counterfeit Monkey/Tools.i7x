@@ -1617,8 +1617,8 @@ Sanity-check shooting the tube with:
 Does the player mean shooting something enclosed by the player with: it is very unlikely.
 Does the player mean shooting a pistol (called P) with P: it is very unlikely.
 
-Understand "shoot [something] with [something]" as shooting it with.
-Understand "fire at [something] with [something]" as shooting it with (with nouns reversed).
+Understand "shoot [thing] with [thing]" as shooting it with.
+Understand "fire at [thing] with [thing]" as shooting it with (with nouns reversed).
 Understand "shoot [thing] at [thing]" as shooting it with (with nouns reversed).
 Understand "fire [thing] at [thing]" as shooting it with (with nouns reversed).
 
