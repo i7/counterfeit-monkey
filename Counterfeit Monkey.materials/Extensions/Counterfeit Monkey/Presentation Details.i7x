@@ -598,12 +598,19 @@ There are three cameo appearances by IF community members (or their alter egos).
 
 Please report bugs at https://github.com/i7/counterfeit-monkey/issues"
 
+This is the link-free map drawing rule:
+	redraw the map and compass.
+
 Carry out asking for help (this is the new help request rule):
 	now the current menu is the Table of Basic Help Options;
+	[We disable the compass links while displaying the help menu.]
+	now the current graphics drawing rule is the link-free map drawing rule;
+	clear compass graphlinks;
 	carry out the displaying activity;
 	clear the screen;
 	[We must explicitly update the status line after closing the help menu, otherwise the graphics window will think it still is two lines shorter than it is, resulting in a black area below the map on Glk spec compliant interpreters.]
 	update the status line;
+	now the current graphics drawing rule is the compass-drawing rule;
 	follow the compass-drawing rule;
 	try looking.
 
