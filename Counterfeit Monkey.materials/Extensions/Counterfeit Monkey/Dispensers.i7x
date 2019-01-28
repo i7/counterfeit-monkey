@@ -140,6 +140,29 @@ Check putting something on the soap-sap-receptacle-supporter when the soap-sap-r
 	otherwise:
 		say "[The item] [are] already under the [soap-or-sap-dispenser]. There is no more room there." instead.
 
+Instead of putting the backpack on the soap-sap-receptacle-supporter:
+	say "We don't want to get the backpack wet."
+
+Check putting something on the soap-sap-receptacle-supporter when the noun is non-empty:
+	let thing-list be the list of things enclosed by noun;
+	let taken-list be a list of things;
+	repeat with the target running through thing-list:
+		if target is fluid:
+			say "We don't want anything to mix with [the target] in [the noun].";
+			repeat with N running from 1 to the number of entries in taken-list:
+				move entry N of taken-list to noun;
+			stop the action;
+		otherwise:
+			silently try taking the target;
+			if the player carries the target:
+				add target to taken-list;
+			otherwise:
+				repeat with N running from 1 to the number of entries in taken-list:
+					move entry N of taken-list to noun;
+				the rule fails;
+	if the number of entries in taken-list is at least 1:
+		say "We take [taken-list with definite articles] out of [the noun].[paragraph break]";
+
 Report putting something on the soap-sap-receptacle-supporter:
 	say "We place [the noun] on the [floor-or-sink], right below the [soap-or-sap-dispenser]." instead.
 
