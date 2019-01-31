@@ -56,6 +56,10 @@ Instead of squeezing something dispenser-like (called dispenser-thing):
 				say "We give the dispenser a squeeze and it deposits [a soap-like] on the floor, the sink having been removed from the area.";
 				now target is the location;
 			otherwise:
+				if target is non-empty:
+					emergency-empty target;
+					if target is non-empty:
+						stop the action;
 				say "We give the dispenser a squeeze. It deposits [a soap-like] in [the target].";
 		move the soap-like to the target;
 	otherwise:
@@ -144,24 +148,29 @@ Instead of putting the backpack on the soap-sap-receptacle-supporter:
 	say "We don't want to get the backpack wet."
 
 Check putting something on the soap-sap-receptacle-supporter when the noun is non-empty:
-	let thing-list be the list of things enclosed by noun;
+	emergency-empty the noun;
+	if the noun is non-empty:
+		stop the action.
+
+To emergency-empty (X - a container):
+	let thing-list be the list of things enclosed by X;
 	let taken-list be a list of things;
 	repeat with the target running through thing-list:
 		if target is fluid:
-			say "We don't want anything to mix with [the target] in [the noun].";
+			say "We don't want anything to mix with [the target] in [the X].";
 			repeat with N running from 1 to the number of entries in taken-list:
-				move entry N of taken-list to noun;
-			stop the action;
+				move entry N of taken-list to X;
+			make no decision;
 		otherwise:
 			silently try taking the target;
 			if the player carries the target:
 				add target to taken-list;
 			otherwise:
 				repeat with N running from 1 to the number of entries in taken-list:
-					move entry N of taken-list to noun;
-				the rule fails;
+					move entry N of taken-list to X;
+				make no decision;
 	if the number of entries in taken-list is at least 1:
-		say "We take [taken-list with definite articles] out of [the noun].[paragraph break]";
+		say "We take [taken-list with definite articles] out of [the X].[paragraph break]";
 
 Report putting something on the soap-sap-receptacle-supporter:
 	say "We place [the noun] on the [floor-or-sink], right below the [soap-or-sap-dispenser]." instead.
