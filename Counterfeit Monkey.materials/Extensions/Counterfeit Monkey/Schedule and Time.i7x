@@ -118,7 +118,7 @@ difference (a number)	locale (a text)
 -3	"[one of]Santiago[or]Buenos Aires[at random]"
 -4	"[one of]Halifax[or]La Paz[at random]"
 -5	"[one of]Philadelphia[or]Atlanta[or]Indianapolis[or]Detroit[or]Columbus[or]Havana[or]Miami[or]Toronto[or]Ottawa[or]Kingston[or]DC[or]New York[or]Boston[at random]"
--6	"[one of]Winnepeg[or]Houston[or]Minneapolis[or]Chicago[or]New Orleans[or]San Salvador[at random]"
+-6	"[one of]Winnipeg[or]Houston[or]Minneapolis[or]Chicago[or]New Orleans[or]San Salvador[at random]"
 -7	"[one of]Denver[or]Edmonton[or]Phoenix[or]Salt Lake City[at random]"
 -8	"[one of]San Francisco[or]San Fran[or]Portland[or]Seattle[or]Vancouver[or]LA[or]San Diego[at random]"
 -9	"Anchorage"
@@ -206,7 +206,7 @@ Before going to University Oval:
 
 Section 5 - Higgate's Arrest
 
-[Because we need to stop you so so that you see the scene if you're just passing through:]
+[Because we need to stop you so that you see the scene if you're just passing through:]
 After going to University Oval:
 	if (the invitation is handled and higgate-arrested has not happened) or (activist is in University Oval and activist does not recollect at least three quips):
 		let N be the number of entries in the path so far of the player;
@@ -544,7 +544,7 @@ When Fireworks begins:
 		say "The sky cracks with a tremendous boom, and you register a flash of golden fire overhead.";
 	otherwise:
 		say "There is a huge distant noise. Something is happening to the sky.";
-	say "Slango tooks one look at us and wraps us in a blanket. 'Stay here,' he says firmly. ";
+	say "Slango takes one look at us and wraps us in a blanket. 'Stay here,' he says firmly. ";
 	if the player encloses the rock or the roc is visible:
 		now Brock is in Brock's Stateroom;
 		now the rock is in the repository;
