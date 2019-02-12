@@ -4094,7 +4094,7 @@ Instead of smelling the tub, try smelling the restoration gel.
 Some tubas are an instrument. The heft of the tubas is 5. The description of the tubas is "A shiny, cacophonous mass."
 
 Instead of listening to the tubas:
-	say "Mercifully, they didn't materialize with a complement of tuba players, so there's nothign to hear." instead.
+	say "Mercifully, they didn't materialize with a complement of tuba players, so there's nothing to hear." instead.
 
 A tuba is an instrument. The heft of the tuba is 2. The description of the tuba is "I associate instruments like this entirely with band practice misery."
 
