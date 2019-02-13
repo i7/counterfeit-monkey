@@ -272,8 +272,10 @@ To decide what thing is the substitute from (matchlist - a list of things) (this
 		let high-score be 0;
 		repeat with contender running through matchlist:
 			let scr be 500;
-			let prof-list be the list of things that proffer contender;
-			remove contender from prof-list, if present;
+			let prof-list be a list of things;
+			repeat with X running through things that proffer contender:
+				if X is not contender and X does not proffer the second noun:
+					add X to prof-list;
 			if prof-list is not empty:
 				decrease scr by 150;
 				[Something else proffers the contender. Don't choose this.]
