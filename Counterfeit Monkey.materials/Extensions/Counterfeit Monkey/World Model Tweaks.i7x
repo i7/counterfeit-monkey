@@ -173,7 +173,7 @@ An accessibility rule (this is the no touching NPC stuff rule):
 			if the owner is distant:
 				say "[The owner] is too far away.";
 			otherwise:
-				say "I don't dare invade the personal space of [the owner].";
+				say "[We] don't dare invade the personal space of [the owner].";
 		rule fails;
 	make no decision.
 
