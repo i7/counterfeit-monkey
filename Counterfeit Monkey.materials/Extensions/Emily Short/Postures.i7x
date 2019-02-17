@@ -162,22 +162,22 @@ Instead of an actor standing up (this is the convert standing up rule):
 
 Section 6 - Disambiguating Postures
 
-Does the player mean sitting on something when the posture of the noun is seated (this is the prefer sitting on seating objects rule):
+Does the player mean sitting on something when the noun is enterable and the posture of the noun is seated (this is the prefer sitting on seating objects rule):
 	it is very likely.
 
-Does the player mean standing up on something when the posture of the noun is standing (this is the prefer standing on standing objects rule):
+Does the player mean standing up on something when the noun is enterable and the posture of the noun is standing (this is the prefer standing on standing objects rule):
 	it is very likely.
 
-Does the player mean lying on something when the posture of the noun is reclining (this is the prefer lying on reclining objects rule):
+Does the player mean lying on something when the noun is enterable and the posture of the noun is reclining (this is the prefer lying on reclining objects rule):
 	it is very likely.
 
-Does the player mean asking someone to try sitting on something when the posture of the noun is seated (this is the prefer request sitting on seating objects rule):
+Does the player mean asking someone to try sitting on something when the noun is enterable and the posture of the noun is seated (this is the prefer request sitting on seating objects rule):
 	it is very likely.
 
-Does the player mean asking someone to try standing up on something when the posture of the noun is standing (this is the prefer request standing on standing objects rule):
+Does the player mean asking someone to try standing up on something when the noun is enterable and the posture of the noun is standing (this is the prefer request standing on standing objects rule):
 	it is very likely.
 
-Does the player mean asking someone to try lying on something when the posture of the noun is reclining (this is the prefer request lying on reclining objects rule):
+Does the player mean asking someone to try lying on something when the the noun is enterable and posture of the noun is reclining (this is the prefer request lying on reclining objects rule):
 	it is very likely.
 
 Section 7 - Taking Position Action
