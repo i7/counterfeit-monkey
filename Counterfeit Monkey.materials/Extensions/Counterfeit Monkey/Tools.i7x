@@ -245,7 +245,6 @@ Setting action variables for waving the letter-remover device at an object which
 			now starting text is "alexandra";
 		replace the text "[current setting]" in the starting text with "";
 		now generated object is the letter-remover device;
-		let match-list be a list of things;
 		repeat with item running through things in repository:
 			if comparison number is the hash code of the item:
 				let goal text be "[printed name of the item]";
@@ -254,9 +253,8 @@ Setting action variables for waving the letter-remover device at an object which
 					if second noun proffers item:
 						now the generated object is item;
 						make no decision;
-					add item to match-list;
-		unless match-list is empty:
-			now the generated object is substitute from match-list;
+					match-add item;
+		now the generated object is the best of all matches;
 		if the generated object is the letter-remover device:
 			now the disappointment text is the starting text.
 
@@ -266,14 +264,16 @@ The disappointment text is some text that varies.
 
 [The jury is still out on whether this could ever happen when using the other letter-transformation tools.]
 
-To decide what thing is the substitute from (matchlist - a list of things) (this is the intelligent substitution rule):
+Include Intelligent Substitution by Counterfeit Monkey.
+
+[To decide what thing is the substitute from (matchlist - a list of things) (this is the intelligent substitution rule):
 	if the number of entries in matchlist is greater than 1:
-		let high-scorers be a list of things;
+		let high-scorer be nothing;
 		let high-score be 0;
 		repeat with contender running through matchlist:
 			let scr be 500;
 			let part-of-other-chain be false;
-			repeat with X running through things that proffer contender:
+			repeat with X running through things in repository that proffer contender:
 				if X is not contender and X does not proffer the second noun:
 					now part-of-other-chain is true;
 			if part-of-other-chain is true:
@@ -293,19 +293,12 @@ To decide what thing is the substitute from (matchlist - a list of things) (this
 					increase scr by 101;
 				if contender is operational:
 					increase scr by 100;
-			if scr is high-score:
-				add contender to high-scorers;
-			otherwise:
-				[This is the new highest score. Clean out the old ones.]
-				if scr is greater than high-score:
-					now high-score is scr;
-					now high-scorers is {};
-					add contender to high-scorers;
-		[sort high-scorers in random order;]
-		[Choose an object from those with the highest score]
-		decide on entry 1 in high-scorers;
+			if scr is greater than high-score or high-scorer is nothing:
+				now high-score is scr;
+				now high-scorer is contender;
+		decide on high-scorer;
 	otherwise:
-		decide on entry 1 in matchlist.
+		decide on entry 1 in matchlist.]
 
 [Check waving the letter-remover at a foreign-tongued thing:
 	say "[The letter-remover] squeaks as though frightened[one of]. Apparently encountering objects that aren't in English generates its own alarm tone[or] by the foreign-language [second noun][stopping]." instead. ]
