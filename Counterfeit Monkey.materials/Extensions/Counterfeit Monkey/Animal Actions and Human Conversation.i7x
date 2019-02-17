@@ -802,6 +802,9 @@ Instead of asking the mechanic to try doing something when a car is the noun or 
 	otherwise:
 		say "The mechanic just looks confused."
 
+Instead of asking the mechanic to try oiling a car:
+	try discussing whether the oil will work.
+
 Availability rule for why the car does not run:
 	if a damaged car is in the location:
 		make no decision;

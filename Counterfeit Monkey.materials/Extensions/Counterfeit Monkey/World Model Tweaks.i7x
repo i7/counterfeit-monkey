@@ -1110,7 +1110,7 @@ A car is a kind of vehicle. A car is usually transparent. The heft of a car is 7
 	The introduction is "Here is how my mother gets around. She takes a 300 Euro Hermès scarf with an orange border and a pattern of prancing horses. She tosses it in the air. As it falls, she shoots it twice, like a clay pigeon: once to take out the F, the second time for the S. And such a car: buttery leather seats, jaguar lines. If someone asks how she gets such good results, she jokes that it's because of her quality materials.
 
 Suffice it to say that we are not similarly blessed."
-	Understand "toy" or "sub-subcompact" or "door" or "tank" as a car.
+	Understand "toy" or "sub-subcompact" or "door" or "tank" or "engine" as a car.
 	The scent-description of a car is "metal parts and oil".
 
 A car can be fueled or unfueled. A car is usually unfueled.
@@ -1187,6 +1187,17 @@ Check tuning:
 
 Sanity-check inserting oil into a car:
 	say "In my limited interactions with motor vehicles, I've always taken the machine to a garage for any corrective work. This includes topping up the oil." instead.
+
+Understand "oil [something]" or "lubricate [something]" as oiling. Oiling is an action applying to one thing.
+
+Sanity-check oiling when there is no oil enclosed by location and the poppy-oil is not enclosed by location:
+	say "There is no oil here." instead.
+
+Check oiling something which is not a car:
+	say "[The noun] [don't] need oiling." instead.
+
+Carry out oiling:
+	try tuning the noun.
 
 Report opening a car:
 	say "[one of][We] open the car door: perhaps unsurprisingly, it comes without an effective lock system.[or][We] swing the car door open.[or][We] open the door of the car.[stopping]" instead.
