@@ -1066,6 +1066,8 @@ Instead of going from a road to a road:
 	if a car (called target) is in location:
 		if more than one car is in location:
 			now the target is a random fueled car in location;
+			if target is nothing:
+				now the target is a random car in location;
 		try entering the target;
 		if the player is in the target:
 			try going the noun instead;
