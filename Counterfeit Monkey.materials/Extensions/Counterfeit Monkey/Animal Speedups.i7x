@@ -28,7 +28,7 @@ Include
 	];
 
 
-	[ MyContainedPeopleExiting burden list no_items i row;
+	[ MyContainedPeopleExiting burden list no_items i row t;
 		for (i=1: i<=how_many_people_here: i++ ) {
 			burden = people_present --> i;
 			if (~~(burden.(+ fake +)))

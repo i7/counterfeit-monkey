@@ -496,7 +496,7 @@ To decide what thing is the homonym-match of (target - a thing):
 
 Chapter 3 - The T-inserter
 
-The T-inserter machine is a fixed in place container in the Sensitive Equipment Testing Room. The initial appearance is "At the cen[ter] of the room is a gleaming new T-inserter Machine[if the machine is non-empty], currently containing [a random thing in the T-inserter machine][end if][one of]. This is a state of the art device: letter removal has been well understood for decades, but insertion is much more dangerous and difficult, fraught with ambiguity[or][stopping]." The description is "Made of brushed steel, it resembles an industrial espresso machine, with a space in which to insert items. A dozen small nozzles poke into this space, and the grate beneath is ready to drain off any superfluity of T-ness. There is a tiny brass plate near the base of the machine."
+The T-inserter machine is a fixed in place enterable container in the Sensitive Equipment Testing Room. The initial appearance is "At the cen[ter] of the room is a gleaming new T-inserter Machine[if the machine is non-empty], currently containing [a random thing in the T-inserter machine][end if][one of]. This is a state of the art device: letter removal has been well understood for decades, but insertion is much more dangerous and difficult, fraught with ambiguity[or][stopping]." The description is "Made of brushed steel, it resembles an industrial espresso machine, with a space in which to insert items. A dozen small nozzles poke into this space, and the grate beneath is ready to drain off any superfluity of T-ness. There is a tiny brass plate near the base of the machine."
 
 Understand "space" and "grate" and "inserter" as the machine. The carrying capacity of the T-inserter Machine is 1.
 
@@ -518,6 +518,9 @@ Sanity-check inserting something irretrievable into the T-inserter:
 
 After inserting something into the T-inserter:
 	try teeing the noun.
+
+Check entering the T-inserter:
+	say "It is not easily enterable. And even if it was, [we]['re] not sure it would be such a good idea." instead.
 
 teeing is an action applying to one thing. The teeing action has an object called the goal-object (matched as "to"). The teeing action has a number called the t-count. The teeing action has a list of objects called the possible-goals. The teeing action has a list of texts called the possible-goal-texts.
 
@@ -724,7 +727,7 @@ Sanity-check locking keylessly the plexiglas case:
 Sanity-check turning the screws when the screws are not part of the plexiglas case:
 	say "There's no point now: they're not holding anything in place." instead.
 
-The synthesizer is a container in the plexiglas case. The heft of the synthesizer is 4. The synthesizer is fixed in place. Understand "synth" or "synthesiser" or "machine" as the synthesizer.
+The synthesizer is an enterable container in the plexiglas case. The heft of the synthesizer is 4. The synthesizer is fixed in place. Understand "synth" or "synthesiser" or "machine" as the synthesizer.
 	The description is "It is designed to accept two items and then be turned on. It is shiny and white, and looks a little like a bathtub for very short people."
 	The introduction is "It was a full-sized, human version of this that made us what [we] [are] now, so the object makes both of us feel a little skittish and self-conscious."
 
@@ -890,6 +893,12 @@ Sanity-check switching off the spinner:
 	say "If there is an off-switch, it's nowhere we can see it." instead.
 
 
+
+Instead of climbing the spinner-gate:
+	if the player is on the spinner:
+		say "The gate is still too high to climb even now that we're on the sculpture.";
+	otherwise:
+		say "The iron bars of the gate are too close to climb through and too tall to climb over."
 
 Section 2 - Spinning Functionality
 
@@ -2107,6 +2116,8 @@ The programmable dais is an enterable supporter in the Workshop. Understand "mac
 	The initial appearance is "A programmable dais sits in the middle of the room. It has the raw look of lab equipment rather than a nice smooth commercial instrument."
 	The description is "It's a round black metal platform with substantial stabil[izing] coils visible underneath, five or six feet in diameter. This is experimental lab grade letter equipment, ferociously powerful, insanely dangerous."
 
+The programmable dais allows seated, standing and reclining.
+
 After examining the programmable dais:
 	say "The dais has [a list of things which are part of the dais]."
 
@@ -2244,7 +2255,7 @@ Chapter 16 - The Cryptolock aka Vowel Rotator
 
 The puzzle here is completely different depending on whether you're playing hard mode or easy mode.]
 
-The cryptolock is a scenery container in the Generator Room. It is fixed in place. The printed name of the cryptolock is "brushed steel bucket". Understand "brushed" or "steel" or "container" or "bucket"  as the cryptolock.
+The cryptolock is a scenery enterable container in the Generator Room. It is fixed in place. The printed name of the cryptolock is "brushed steel bucket". Understand "brushed" or "steel" or "container" or "bucket"  as the cryptolock.
 
 The cryptoswitch is a device. The cryptoswitch is part of the cryptolock. The printed name of the cryptoswitch is "reverse switch". Understand "reverse" or "switch" as the cryptoswitch.
 
@@ -2277,6 +2288,9 @@ Check inserting something into the cryptolock when the cryptolock contains somet
 
 Check inserting something into the cryptolock when the heft of the noun is greater than 3:
 	say "[The noun] [are] too big to fit into [the cryptolock]." instead.
+
+Check entering the cryptolock:
+	say "[We] wouldn't fit. And even if [we] did, [we]['re] not sure it would be such a good idea." instead.
 
 Test bucket-size with "put coat in bucket / wave a-remover at coat / get cot / put cot in bucket" holding the coat in the Generator Room.
 
