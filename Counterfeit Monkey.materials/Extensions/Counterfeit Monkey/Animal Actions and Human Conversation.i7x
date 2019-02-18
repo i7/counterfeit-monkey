@@ -37,16 +37,6 @@ Every turn (this is the contained people exiting rule):
 		if the burden is the mechanic:
 			next;
 		if the burden is fake:
-			if the burden is an enterer listed in the Table of voluntary entry:
-				choose the row with enterer of burden in Table of voluntary entry;
-				if holder box entry is holder of burden:
-					if entrance time entry is time of day:
-						next;
-					otherwise:
-						if a random chance of 1 in 10 succeeds:
-							blank out the whole row;
-						otherwise:
-							next;
 			try the burden exiting;]
 
 
@@ -89,11 +79,6 @@ Carry out entering a vehicle:
 	now pursuing-state is true;
 	rapidly make followers follow into noun;
 	now pursuing-state is false.
-
-
-Table of voluntary entry
-enterer (a person)	holder box (a thing)	entrance time (a time)
-with 20 blank rows.
 
 Check a fake person entering a vehicle when the heft of the person asked is greater than 3:
 	say "[The person asked] makes an effort to get in, but does not remotely fit.";

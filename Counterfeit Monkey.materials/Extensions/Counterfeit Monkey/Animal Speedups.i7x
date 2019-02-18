@@ -33,41 +33,12 @@ Include
 			burden = people_present --> i;
 			if (~~(burden.(+ fake +)))
 				continue;
-			if (parent(burden) == real_location or player or (+ boulders +) or (+ repository +))
+			if (parent(burden) == real_location or player or parent(player) or (+ boulders +) or (+ repository +))
 				continue;
 			if ( burden == (+ Brock +))
 				continue;
 			if ( burden == (+ mechanic +))
 				continue;
-			if (ExistsTableRowCorr((+ Table of voluntary entry +),(+ enterer +),burden)) {
-				![choose the row with enterer of burden in Table of voluntary entry;]
-				row = TableRowCorr((+ Table of voluntary entry +), (+ enterer +), burden);
-				![if box entry is holder of burden:]
-				if (TableLookUpEntry((+ Table of voluntary entry +),(+ holder box +),row) == parent(burden))
-					![if entrance time entry is time of day:]
-					if (TableLookUpEntry((+ Table of voluntary entry +),(+ entrance time +),row) == the_time)
-						continue;
-					else
-						![if a random chance of 1 in 10 succeeds:]
-						if (random(10) <= 1)
-							![blank out the whole row;]
-							TableBlankOutRow((+ Table of voluntary entry +), row);
-						else
-							continue;
-				else TableBlankOutRow((+ Table of voluntary entry +), row);
-
-			}
-			else
-				if ( parent(burden) == (+ programmable dais +) ) {
-					row = TableBlankRow((+ Table of voluntary entry +));
-					! [ now enterer entry is burden]
-					TableLookUpEntry((+ Table of voluntary entry +),(+ enterer +), row, 1, burden);
-					! [ now box entry is programmable dais ]
-					TableLookUpEntry((+ Table of voluntary entry +),(+ holder box +), row,1, (+ programmable dais +) );
-					! [ now time entry is time of day]
-					TableLookUpEntry((+ Table of voluntary entry +),(+ entrance time +), row, 1, the_time);
-					continue;
-				}
 			TryAction(0, burden, ##Exit, 0, 0);
 		}
 	];
@@ -79,18 +50,6 @@ Include
 			last = sibling(traveler);
 			if (traveler ofclass (+ person +) && traveler.(+ fake +) && traveler ~= (+ roc +)) {
 				TryAction(0, traveler, ##Enter, car, 0);
-				if ( parent(traveler) == car) {
-					if (ExistsTableRowCorr((+ Table of voluntary entry +),(+ enterer +),traveler))
-						row = TableRowCorr((+ Table of voluntary entry +), (+ enterer +), traveler);
-					else
-						row = TableBlankRow((+ Table of voluntary entry +));
-					! [ now enterer entry is traveler]
-					TableLookUpEntry((+ Table of voluntary entry +),(+ enterer +), row, 1, traveler);
-					! [ now box entry is noun]
-					TableLookUpEntry((+ Table of voluntary entry +),(+ holder box +), row,1,car);
-					! [ now time entry is time of day]
-					TableLookUpEntry((+ Table of voluntary entry +),(+ entrance time +), row, 1, the_time);
-				}
 			}
 		}
 	];
