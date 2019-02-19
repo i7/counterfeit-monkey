@@ -23,7 +23,7 @@ Include
 		matches_array --> matches_count = x;
 	];
 
-	[ MyIntelligentSubstitution contender best_match highscore score i x part_of_chain;
+	[ MyIntelligentSubstitution contender best_match highscore score i x;
 
 		if (matches_count == 0)
 		{
@@ -44,8 +44,6 @@ Include
 			contender = matches_array --> i;
 			score = 500;
 
-			part_of_chain = false;
-
 			! [repeat with X running through things in repository that proffer contender:]
 			! [if X is not contender and X does not proffer the second noun:]
 
@@ -56,18 +54,15 @@ Include
 					!print (The)contender, " is proffered by ", (the)x;
 					if (~~Relation_TestVtoV(x, (+ the proffering relation +), second, false))
 					{
-						part_of_chain = true;
+						!Something else proffers the contender. Don't choose this.
+						score = score - 250;
 						!print ", which also does not proffer ", (the)second, ", so disfavor it.^";
+						break;
 					}
 					!else
 						!print ", but which also proffers ", (the)second, ".^";
 				}
 			}
-
-			if (part_of_chain == true)
-				score = score - 250;
-
-			!Something else proffers the contender. Don't choose this.
 
             if (child(contender) ~= nothing)
                 score = score + 100;
