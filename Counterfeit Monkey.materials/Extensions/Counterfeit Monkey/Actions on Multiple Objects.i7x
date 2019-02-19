@@ -6,9 +6,16 @@ Section 6 - Actions on multiple objects
 
 Rule for deciding whether all includes fixed in place things: it does not.
 Rule for deciding whether all includes scenery: it does not.
-Rule for deciding whether all includes people while taking: it does not.
 Rule for deciding whether all includes things carried by other people while taking: it does not.
 Rule for deciding whether all includes rooms: it does not.
+
+Rule for deciding whether all includes people while taking (this is the new exclude people from take all rule): it does not.
+
+Rule for deciding whether all includes people (called P) while removing an object from an object:
+	unless P is not the player and (P is on the programmable dais or P is in the synthesizer):
+		it does not.
+
+The new exclude people from take all rule is listed instead of the exclude people from take all rule in the for deciding whether all includes rulebook.
 
 Rule for deciding whether all includes the restoration gel: it does not.
 
