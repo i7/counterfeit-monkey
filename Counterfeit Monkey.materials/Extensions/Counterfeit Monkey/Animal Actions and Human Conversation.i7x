@@ -224,6 +224,8 @@ Sanity-check saying goodbye to an animal:
 Sanity-check saying goodbye to an insect:
 	say "Predictably, [the noun] [do] not react." instead.
 
+Sanity-check answering an animal that:
+	 try saying hello to the noun instead.
 
 Book 2 - Person Behavior
 
