@@ -227,6 +227,9 @@ Sanity-check saying goodbye to an insect:
 Sanity-check answering an animal that:
 	 try saying hello to the noun instead.
 
+Sanity-check starting a conversation with an animal about an object:
+	 try saying hello to the noun instead.
+
 Book 2 - Person Behavior
 
 Part 1 - Universal Groundwork
