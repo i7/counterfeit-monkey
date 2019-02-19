@@ -56,6 +56,9 @@ Rule for deciding whether all includes things enclosed by the backpack while rem
 Rule for deciding whether all includes things enclosed by the backpack while taking ( this is the exclude contents of backpack from take all rule ):
 	it does not.
 
+Rule for deciding whether all includes things on the oval table while taking:
+	it does not.
+
 Rule for deciding whether all includes other people carried by the person asked while dropping or throwing or inserting or putting (this is the new exclude people from drop all rule):
 	it does.
 
@@ -149,7 +152,7 @@ A multiple action processing rule when removing an object from an object:
 	abide by the stop removing error list rule.
 
 This is the stop removing error list rule:
-	if the second noun is toolkit or the second noun is heavy pack or second noun is tub or second noun is the bartender:
+	if the second noun is toolkit or the second noun is heavy pack or second noun is tub or second noun is the bartender or second noun is the oval table:
 		try removing the first thing held by the second noun from the second noun;
 		abide by the cancel multiple rule;
 	if second noun is enclosed by display case or second noun is display case:
