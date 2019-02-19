@@ -1456,7 +1456,7 @@ The snapping continues.
 The snapping continues.
 
 > go to rotunda
-/(We|(We have|It's) a( brief| short| quick)?) (walk|hike).
+/(We|(We have|It's|We make) (a|the)( brief| short| quick)?) (walk|hike).
 
 Rotunda
 Echoing space, marble floor, eye-like skylight many meters above us: so far, the Rotunda might belong to any 19th-century government bureau of means and self-importance.
@@ -1475,7 +1475,7 @@ The snapping continues.
 The snapping continues.
 
 > go to antiques
-/((It's a |We have a |We make the |We)(brief|short)? drive away from the Bureau and back into the streets (over to|to|as far as) Long Street South. (There|Then)|Once we get to Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
+/((It's a |We have a |We make the |We)(brief|short|quick)? drive away from the Bureau and back into the streets (over to|to|as far as) Long Street South. (There|Then)|Once we get to Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
 
 We show the appointment card, and are let in.
 
@@ -1518,7 +1518,7 @@ The snapping continues.
 > go to drinks club
 /((It's a( short| brief| quick)?|We make the( short| brief| quick)?|We) drive (over to|to) Long Street North. )?((Once we get to|At) Long Street North|There) we pull easily into one of the available parking spots, since many people have now gone home.
 
-/(Then|From there) (it's a( short| brief| quick)?|we make the( short| brief| quick)?|we) (walk|hike).
+/(Then|From there|After that) (it's a( short| brief| quick)?|we make the( short| brief| quick)?|we) (walk|hike).
 
 Fleur d'Or Drinks Club
 The back wall is dramatically decorated with bottled liquors of all sorts, from gin to cachaça; there's a giant bottle of Campari, taller than your average three-year-old, with a red ribbon around its neck.
@@ -1937,7 +1937,7 @@ We reset the device to c. The cream gives way to the now-familiar ream.
 The snapping continues.
 
 > go to language studies department office
-/(It's|We (have|make)) (a|the) (quick |brief )?(hike|walk).
+/((It's|We (have|make)) (a|the) (quick |brief )?|We )(hike|walk).
 
 Language Studies Department Office
 This big, slightly drab area holds such useful objects as the mailboxes and the secretary's computer. On ordinary days the secretary would be in as well, presiding over affairs. The offices of individual professors lie north and west, though the north door is closed.
@@ -2225,7 +2225,7 @@ The achievements you have accomplished so far include:
   Finished tutorial mode
 
 > go to samuel johnson basement
-/(We |We have a (brief|quick) |We make the( brief| quick)? |It's a( brief| quick)? )(walk|hike).
+/(We |We have a (brief|quick) |We make the( brief| quick)? |It's a( brief| quick| short)? )(walk|hike).
 
 Samuel Johnson Basement
 Dank and malodorous: there are no windows down here, and the drainage is terrible.
@@ -2298,7 +2298,7 @@ The snapping continues.
 > go to seminar room
 /((We |We have a( brief| short) |We make the( brief| short)? |It's a( brief| short)? )drive (as far as|over to|to) Long Street South. )?(Then|There|(At|Once we get to) Long Street South) we pull easily into one of the available parking spots, since many people have now gone home.
 
-/(Then|Next) (we |we have a (brief|quick|short) |we make the( brief| quick| short)? |it's a( brief| quick| short)? )(walk|hike).
+/(Then|Next|From there) (we |we have a (brief|quick|short) |we make the( brief| quick| short)? |it's a( brief| quick| short)? )(walk|hike).
 
 Language Studies Seminar Room
 They recently redid this room, and whoever picked the decorations had postmodern tastes.
@@ -2875,7 +2875,7 @@ Time passes.
 
 Smaller, meaner sans-serif lettering across the bottom adds: "Bring this card for admission."
 
-/(The snapping continues|The peacock (makes a practice noise in its throat|trills self-importantly)).
+/(The snapping continues|The peacock (makes a practice noise in its throat|trills self-importantly|ruffles its many feathers)).
 
 [Your score has gone up by ten points and is now seventy.]
 
@@ -3221,7 +3221,7 @@ The snapping continues.
 /(I can't see what you're talking about|Maybe that means something different to you, but I can't see any such thing).
 
 > go to abandoned park
-/(We |We have a (rather tiring |long |lengthy )?|We make the (rather tiring |long | lengthy )?|It's a (rather tiring |long |lengthy )?)(walk|hike) out from under the sycamores in the Oval and up Long Street.
+/(We |We have a (rather tiring |long |lengthy )?|We make the (rather tiring |long |lengthy )?|It's a (rather tiring |long |lengthy )?)(walk|hike) out from under the sycamores in the Oval and up Long Street.
 
 Abandoned Park
 In contrast with the parks in the more savory parts of town, this is a bit of patchy grass where local dogs occasionally come out to do their business. A granite war memorial is fixed at the center.
@@ -3557,7 +3557,7 @@ We scoop the tit into our arms.
 /(He stands back, regarding the T-inserter thoughtfully. "As our next trick we need to look at the stabilization performance," Brock says. "Inserters sometimes run into trouble if there's a case where the same base word could be expanded to multiple derivatives — for instance, if you S-inserted CREAM, it wouldn't know whether to make CREAMS or SCREAM or SCREAMS.")?
 
 > wave t-remover at tit
-/There is a [a-z\- ]+, and the tit turns into an I. It's an abstract that looks like a bit of mirror. When I look at it I see Alex, my proper self, and not just restored to my usual body, but photo-retouched to be that bit smarter and freer of skin-blemishes, well-dressed. It's like looking in the mirror at reality as it should be.
+The tit gives way to the now-familiar I.
 
 > put i in t-inserter
 There is a loud and satisfying pop from the machine as it turns the I into an it.
@@ -4258,7 +4258,7 @@ A set of children's playing jacks. They are lined up, with curious precision, in
 /I reset the device to s. There is a [a-z \-]+, and the jacks turn into a jack. A heavy-duty jack, suitable for raising cars or other substantial objects.
 
 > go to workshop
-/I (make the )?(walk|hike) (over to|as far as|to) Personal Apartment. There I try propping the portcullis with the jack.
+/(It's a |I (make the ))?(short |quick |brief |)(walk|hike) (over to|as far as|to) Personal Apartment. There I try propping the portcullis with the jack.
 
 /(Then|Next|After that|From there) (I |I have a (brief|quick|short) |I make the( brief| quick| short)? |it's a( brief| quick| short)? )(walk|hike).
 
