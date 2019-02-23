@@ -764,6 +764,7 @@ Table of Ultratests (continued)
 topic	stuff	setting
 "mechanicbug"	{ tub, funnel, foil, chard }	high street
 "mech2"	{ tub, funnel, foil, chard }	high street
+"two-cars"	{ gas, soil }	high street
 
 Test mechanicbug with "tutorial off / wave b-remover at garbage / test car-series / wave h-remover at chard / wave d-remover at card / test car-series / open tub / gel car / wave f-remover at foil / test car-series / wave d-remover at chard / wave h-remover at char / test car-series / wave n-remover at funnel / test car-series / put fuel in car / test car-series" [holding the tub and the funnel and the foil and the chard in high street.]
 
@@ -771,6 +772,14 @@ Test mechanicbug with "tutorial off / wave b-remover at garbage / test car-serie
 Test mech2 with "tutorial off / wave b-remover at garbage / test car-series / wave h-remover at chard / wave d-remover at card / test car-series / open tub / gel car / wave n-remover at funnel / test car-series / wave d-remover at chard / wave h-remover at char / test car-series / put fuel in car / test car-series / wave f-remover at foil / test car-series" [holding the tub and the funnel and the foil and the chard in high street.]
 
 Test car-series with "ask mechanic to fix car / show fuel to mechanic / ask mechanic about fuel / show gas to mechanic / ask mechanic about gas / show oil to mechanic / ask mechanic about oil / ask mechanic about car / show car to mechanic / get in car / start car / switch on car / switch on ignition / get out".
+
+Test two-cars with "tutorial off / car-acquire / purloin chair / wave s-remover at soil / wave i-remover at chair / wave h-remover at char / test mechanicbug".
+
+Does the player mean showing a damaged car to the mechanic:
+	it is very likely.
+
+Does the player mean showing an unfueled car to the mechanic:
+	it is very likely.
 
 Instead of showing an operational car to the mechanic:
 	say "We signify the car by pointing.";
@@ -789,7 +798,7 @@ whether car be fixed is a questioning quip.
 	The true-name is "whether car be fixed".
 	Understand "is" as whether car be fixed.
 	The comment is "'Is the car fixed now?' we ask."
-	The reply is "'The oil is in,' the mechanic says[if at least one car is fueled]. 'Should run all right[otherwise]. 'Might be it's out of fuel, though[end if].'".
+	The reply is "'The oil is in,' the mechanic says[unless there is an unfueled car in location]. 'Should run all right[otherwise]. 'Might be it's out of fuel, though[end if].'".
 	It quip-supplies the mechanic.
 	It is repeatable.
 	[Every car is mentioned by whether car be fixed.]
@@ -799,10 +808,10 @@ Instead of showing a damaged car to the mechanic:
 	say "We indicate the car with gestures.";
 	try the mechanic discussing why the car does not run.
 
-Instead of asking the mechanic to try doing something when a car is the noun or a car is the second noun:
+Instead of asking the mechanic to try doing something when the noun is a car or the second noun is a car:
 	if the noun is an oil or the second noun is an oil:
 		try discussing whether the oil will work;
-	otherwise if no car is operational:
+	otherwise if no car is operational or a damaged car is in location:
 		try discussing why the car does not run;
 	otherwise:
 		say "The mechanic just looks confused."
@@ -843,7 +852,7 @@ Carry out the mechanic discussing why the car does not run:
 	assign "Get oil for the mechanic".
 
 Instead of showing an oil to the mechanic:
-	if at least one car is operational:
+	if at least one car is operational and there is no damaged car in location:
 		continue the action;
 	otherwise:
 		try giving the noun to the mechanic.
@@ -851,14 +860,14 @@ Instead of showing an oil to the mechanic:
 Instead of giving an oil to the mechanic when there is no car in location:
 	try discussing check out this oil-1.
 
-Instead of giving an oil to the mechanic when at least one car is operational:
+Instead of giving an oil to the mechanic when at least one car is operational and there is no damaged car in location:
 	try discussing check out this oil.
 
 Carry out the mechanic discussing whether the oil will work:
 	complete "Get oil for the mechanic";
 	record "repairing our car" as achieved.
 
-whether the oil will work is an unlisted offering quip.
+whether the oil will work is a repeatable unlisted offering quip.
 	The comment is "'Will this work?' [We] hold out the oil."
 	The reply is "[thank-mechanic]'Should do,' he says. Rolling up his sleeves, he goes to work on the car. There is no small amount of banging and muttering, but finally he stands back and announces that he believes it is now in working condition."
 	It indirectly-follows why the car does not run.
@@ -877,7 +886,7 @@ check out this oil-1 is an unlisted repeatable demonstration quip.
 	[Every oil is mentioned by check out this oil-1.]
 
 Availability rule for check out this oil:
-	if the player encloses an oil and at least one car is operational:
+	if the player encloses an oil and at least one car is operational and there is no damaged car in location:
 		make no decision;
 	it is off-limits.
 
@@ -960,7 +969,7 @@ An availability rule for whether the oil will work:
 Carry out the mechanic discussing whether the oil will work:
 	let chosen-oil be a random oil enclosed by the player;
 	now the chosen-oil is nowhere;
-	let target be a random car in location;
+	let target be a random damaged car in location;
 	now the target is operational.
 
 thank the mechanic is a thanking quip. It assumes thank-mechanic.

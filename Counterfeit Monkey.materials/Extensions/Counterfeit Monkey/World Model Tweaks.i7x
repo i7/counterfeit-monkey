@@ -1068,7 +1068,7 @@ Instead of going from a road to a road:
 		continue the action;
 	if a car (called target) is in location:
 		if more than one car is in location:
-			now the target is a random fueled car in location;
+			now the target is a random fueled operational car in location;
 			if target is nothing:
 				now the target is a random car in location;
 		try entering the target;

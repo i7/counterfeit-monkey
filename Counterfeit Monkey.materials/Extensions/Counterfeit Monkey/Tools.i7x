@@ -349,6 +349,16 @@ Check waving the letter-remover at something creating a person when the letter-r
 Check waving the letter-remover at something creating an r-abstract thing when the letter-remover device is not upgraded:
 	say "[The second noun] flickers and there is a brief image of [a generated object] in [regarding the second noun][their] place [--] the concept strangely embodied in a physical form [--] before the power gives out[one of]. I guess your device there just isn't tuned to reify abstracts[stopping]." instead;
 
+Check waving the letter-remover at something creating a car:
+	if the second noun is enclosed by a container (called outer):
+		unless the outer is the garage:
+			say "It is probably not a good idea to create a car inside [the outer]. Perhaps [we] should put [the second noun] somewhere safer first." instead.
+
+Check putting gel on something which is proffered by a car:
+	if the second noun is enclosed by a container (called outer):
+		unless the outer is the garage:
+			say "It is probably not a good idea to create a car inside [the outer]. Perhaps [we] should put [the second noun] somewhere safer first." instead.
+
 Check waving the letter-remover device at something (this is the checking for danger rule):
 	abide by the dangerous destruction rules for the second noun;
 	[abide by the dangerous construction rules for the generated object.]
