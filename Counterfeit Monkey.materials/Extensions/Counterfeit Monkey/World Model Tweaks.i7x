@@ -892,9 +892,12 @@ Understand "here" or "surroundings" as a room when the item described is the loc
 
 Understand "examine [thing]" or "look [thing]" or "look at [thing]" as examining.
 
-Understand "examine [any locally-present room]" or "look at [any locally-present room]" or "look [any locally-present room]" as local looking. Understand "look around" as looking.
+Understand "examine [room]" or "look at [room]" or "look [room]" as local looking. Understand "look around" as looking.
 
 Local looking is an action applying to one thing.
+
+After deciding the scope of the player while local looking:
+	place the location in scope.
 
 Carry out local looking:
 	try looking.

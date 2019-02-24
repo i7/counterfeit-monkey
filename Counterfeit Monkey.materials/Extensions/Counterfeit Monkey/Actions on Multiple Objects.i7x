@@ -8,6 +8,7 @@ Rule for deciding whether all includes fixed in place things: it does not.
 Rule for deciding whether all includes scenery: it does not.
 Rule for deciding whether all includes people while taking: it does not.
 Rule for deciding whether all includes things carried by other people while taking: it does not.
+Rule for deciding whether all includes rooms: it does not.
 
 Rule for deciding whether all includes the restoration gel: it does not.
 
