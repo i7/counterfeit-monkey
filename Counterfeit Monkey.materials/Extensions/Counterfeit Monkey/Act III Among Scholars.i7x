@@ -45,7 +45,7 @@ Section 2 - The Antiques Dealership
 After going to Arbot Maps & Antiques:
 	if Arbot Maps & Antiques is visited:
 		make no decision;
-	if the player carries the appointment card:
+	if the player encloses the appointment card:
 		say "We show the appointment card, and are let in.";
 		now Kate carries the appointment card;
 		now where there seems Arbot is nowhere;
