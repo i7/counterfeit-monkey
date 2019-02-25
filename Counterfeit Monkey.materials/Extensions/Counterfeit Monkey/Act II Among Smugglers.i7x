@@ -70,7 +70,12 @@ A ranking rule when aquarium-exterior is not as-yet-unknown and Aquarium is visi
 	increase description-rank of the target by 20.
 
 Rule for writing a topic sentence about a car (called target car) when the location is Deep Street and Aquarium is visited and aquarium-exterior is not as-yet-unknown and aquarium-exterior is mentionable:
-	say "Our pathetic little [target car] is parked right outside [the aquarium-exterior]. "
+	let N be the number of cars in location;
+	if N is greater than 1:
+		say "Our pathetic little cars are parked right outside [the aquarium-exterior]. ";
+		now every car in location is mentioned;
+	otherwise:
+		say "Our pathetic little [target car] is parked right outside [the aquarium-exterior]. "
 
 Instead of searching aquarium-exterior:
 	if the aquarium-closed-sign is marked-visible:
