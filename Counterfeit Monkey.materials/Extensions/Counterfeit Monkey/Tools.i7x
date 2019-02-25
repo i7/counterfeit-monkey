@@ -351,12 +351,12 @@ Check waving the letter-remover at something creating an r-abstract thing when t
 
 Check waving the letter-remover at something creating a car:
 	if the second noun is enclosed by a container (called outer):
-		unless the outer is the garage:
+		unless the outer is the garage or the outer is the synthesizer:
 			say "It is probably not a good idea to create a car inside [the outer]. Perhaps [we] should put [the second noun] somewhere safer first." instead.
 
 Check putting gel on something which is proffered by a car:
 	if the second noun is enclosed by a container (called outer):
-		unless the outer is the garage:
+		unless the outer is the garage or the outer is the synthesizer:
 			say "It is probably not a good idea to create a car inside [the outer]. Perhaps [we] should put [the second noun] somewhere safer first." instead.
 
 Check waving the letter-remover device at something (this is the checking for danger rule):
