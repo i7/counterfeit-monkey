@@ -124,7 +124,7 @@ The update remembered positions of cached things rule is listed after the cache 
 First report remembering (this is the Remembering specific report remembering rule):
 	if remembered location of noun is nothing, continue the action;
 	say the message corresponding to a rule name of Remembering specific report remembering rule in Table of Remembering Messages;
-	stop the action. 
+	stop the action.
 
 Volume - Testing commands - not for release
 
@@ -251,7 +251,7 @@ Example: * Which Rubber - Uses Scope Caching to prevent an infinite loop. Withou
 
 	After deciding the scope of the player in Indoors when the front door is open:
 		place the outdoor view in scope.
-	
+
 	Test me with "rules/open door/get rubber/scopestat/scopestat bob"
 
 Section: Changes
