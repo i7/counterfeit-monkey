@@ -76,10 +76,6 @@ After reading a command (this is the cache player's scope rule):
 
 The cache player's scope rule is listed first in the after reading a command rules.
 
-Before looking (this is the cache scope before looking rule):
-	Carry out the caching scope activity with the player;
-	Trust the scope cache until next turn.
-
 Volume - Interactions with Conditional Backdrops (for use with Conditional Backdrops by Mike Ciul)
 
 After moving floating objects (this is the cache scope after moving floating objects rule):
