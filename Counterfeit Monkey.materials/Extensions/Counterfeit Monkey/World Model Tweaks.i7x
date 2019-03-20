@@ -14,6 +14,16 @@ Section 1 - Smarter Parser
 Include Smarter Parser by Aaron Reed.
 Include Numbered Disambiguation Choices by Aaron Reed.
 
+A command-string altering rule when the number of entries in list of disambiguables > 0 (this is the New Numbered Disambiguation Choices reset disambiguation id when no numbers in command rule):
+	let disam-cmd be player-command-substitute;
+	replace the text ")" in disam-cmd with " ";
+	unless disam-cmd matches the regular expression ".*\d.*":
+		follow the Numbered Disambiguation Choices reset disambiguables rule;
+	otherwise:
+		now player-command-substitute is disam-cmd.
+
+The Numbered Disambiguation Choices reset disambiguation id when no numbers in command rule is not listed in any rulebook.
+
 [This is to work around a problem where the parser is confused by numbered disambiguation choices. If it asks which souvenir we want to examine and we answer 1, the answer is parsed as "examine 1 souvenirs", which is a valid way of referring to anything that matches "souvenirs", not just the item with disambiguation id 1.]
 Does the player mean doing something when the player's command includes "[number]":
 	let N be the corresponding disvalue of the number understood;
