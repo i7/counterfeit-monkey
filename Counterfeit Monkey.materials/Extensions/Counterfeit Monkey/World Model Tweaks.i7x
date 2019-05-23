@@ -1242,11 +1242,31 @@ An ignition is a kind of device. One ignition is part of every car. Understand "
 
 The gas-gauge is a kind of thing. One gas-gauge is part of every car. The description is "[if the item described is part of a car that is fueled]It points over at the right, which must be Full[otherwise]It points all the way around at the left, or Empty[car-broken][end if]." The printed name of the gas-gauge is "gas gauge". Understand "gauge" or "gas gauge" as the gas-gauge.
 
+Before switching on an ignition which is part of a closed car (called target car):
+	unless the player is in the target car:
+		try opening the target car;
+		if the target car is not open:
+			stop the action.
+
 Before switching on an ignition which is part of an open car (called target car):
+	unless the player is in the target car:
+		try entering the target car;
+		if the player is not in the target car:
+			stop the action;
 	silently try closing target car.
 
+Check switching on an ignition which is part of a closed car (called target car):
+	unless the player is in the target car:
+		try opening the target car;
+		if the target car is not open:
+			stop the action.
+
 Check switching on an ignition which is part of an unfueled car:
-	say "[car-broken]There's no gas in the car; without fuel, it's not going far." instead.
+	assign "Fuel the car";
+	say "[car-broken][car-needs-fuel]." instead.
+
+To say car-needs-fuel:
+	say "[car-broken][one of]The extremely primitive dial in front of us is pointing all the way to the left. I think that's its way of saying it's out of fuel. At any rate, the engine won't start[or]There's no gas in the car; without fuel, it's not going far[stopping]".
 
 Check switching on an ignition which is part of a damaged car:
 	say "[car-broken]Though the engine does briefly turn on, there's clearly something wrong with it, from the unpleasant noises and the flashing lights on the dash. Perhaps it needs oil." instead.
@@ -1264,7 +1284,7 @@ A car can be operational or damaged. A car is usually damaged.
 
 Sanity-check going by unfueled car:
 	assign "Fuel the car";
-	say "[car-broken]The extremely primitive dial in front of us is pointing all the way to the left. I think that's its way of saying it's out of fuel. At any rate, the engine won't start." instead.
+	say "[car-broken][car-needs-fuel]." instead.
 
 Sanity-check going by damaged car:
 	say "[car-broken]The car refuses to run properly: evidently you got us a lemon. It's going to take some tuning up before it will go." instead.
