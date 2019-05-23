@@ -225,11 +225,17 @@ Before taking something which is in a closed container (called the source):
 	abide by the try reaching rules for the noun.
 
 Check an actor inserting something into (this is the new can't insert what's not held rule):
-	if the actor is carrying the noun, continue the action;
-	if the actor is wearing the noun, continue the action;
-	if the second noun is not a container, continue the action;
+	if the actor is carrying the noun:
+		continue the action;
+	if the actor is wearing the noun:
+		continue the action;
+	if the second noun is not a container:
+		continue the action;
 	carry out the implicitly taking activity with the noun;
-	if the actor is carrying the noun, continue the action;
+	if the actor is carrying the noun:
+		if the second noun is closed:
+			abide by the try opening rules for the second noun;
+		continue the action;
 	stop the action.
 
 The new can't insert what's not held rule is listed instead of the can't insert what's not held rule in the check inserting it into rulebook
