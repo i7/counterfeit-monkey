@@ -896,6 +896,17 @@ check out this oil is an unlisted repeatable demonstration quip.
 	It quip-supplies the mechanic.
 	[Every oil is mentioned by check out this oil.]
 
+Instead of giving the poppy-oil to the mechanic:
+	try showing the poppy-oil to the mechanic.
+
+Instead of showing the poppy-oil to the mechanic:
+	say "[demonstration of the poppy-oil][paragraph break]";
+	if there is a damaged car in location:
+		say "'[one of]That's the wrong kind of oil[or]That is not the kind of oil we need[at random][no line break]";
+	otherwise:
+		say "'[one of]I know nothing about that kind of oil[or]I have no use for that[or]That is not the kind of oil I have use for[at random][no line break]";
+	say ",' he [one of]says[or]remarks[or]shrugs[at random]."
+
 An availability rule for where oil might be:
 	if an oil is seen:
 		it is off-limits;
