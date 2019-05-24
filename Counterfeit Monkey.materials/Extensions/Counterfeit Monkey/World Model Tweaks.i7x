@@ -1084,7 +1084,7 @@ Instead of going from a road to a road:
 		continue the action;
 	if a car (called target) is in location:
 		if more than one car is in location:
-			now the target is a random fueled car in location;
+			now the target is a random fueled operational car in location;
 			if target is nothing:
 				now the target is a random car in location;
 		try entering the target;
@@ -1126,13 +1126,24 @@ Understand "honk" or "honk at [text]" as a mistake ("[if the player is not in a 
 
 Understand "protest" or "join protest" or "picket" as a mistake ("If I thought you could change Atlantis that way, I'd be on board. But I've given up on social action long since.").
 
-A car is a kind of vehicle. A car is usually transparent. The heft of a car is 7. The flexible appearance of a car is "Our car[one of] [--] a sub-sub-compact that looks like it might be outraced by a kid on a scooter [--][or] [--] which might better be described as a covered bicycle [--][or][at random] is parked [if the location is offroad]illegally [end if]nearby."
+A car is a kind of vehicle. A car is usually transparent. The heft of a car is 7. The flexible appearance of a car is "".
 	The description of a car is "It is little larger than a toy, but that is what you want when driving on the streets around here. Any substantial vehicle wouldn't fit down the winding drives."
 	The introduction is "Here is how my mother gets around. She takes a 300 Euro Hermès scarf with an orange border and a pattern of prancing horses. She tosses it in the air. As it falls, she shoots it twice, like a clay pigeon: once to take out the F, the second time for the S. And such a car: buttery leather seats, jaguar lines. If someone asks how she gets such good results, she jokes that it's because of her quality materials.
 
 Suffice it to say that we are not similarly blessed."
 	Understand "toy" or "sub-subcompact" or "door" or "tank" or "engine" as a car.
 	The scent-description of a car is "metal parts and oil".
+
+Rule for writing a topic sentence about a car (called target car):
+	let N be 0;
+	repeat with C running through cars in location:
+		unless C is the alterna-shuttle or C is the truck:
+			increment N;
+			now C is mentioned;
+	if N is greater than 1:
+		say "There are [N in words] cars parked [if the location is offroad]illegally [end if]nearby. ";
+	otherwise:
+		say "Our car[one of] [--] a sub-sub-compact that looks like it might be outraced by a kid on a scooter [--][or] [--] which might better be described as a covered bicycle [--][or][at random] is parked [if the location is offroad]illegally [end if]nearby. "
 
 A car can be fueled or unfueled. A car is usually unfueled.
 
