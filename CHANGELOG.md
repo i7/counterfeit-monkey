@@ -2,7 +2,27 @@
 
 ## Unreleased
 
-- Fixes glitches in the map graphics on some interpreters when displaying the help menu. It is still slightly broken in the Mac IDE, though.
+- Fixes a run-time error that could occur during disambiguation when trying to take a posture. Previously, SIT ON DAIS would cause the parser to throw an error when trying to access a non-existent posture property of the dais socket.
+
+### Gameplay changes
+- The single ream will no longer be covered in origin paste when created from the cream.
+- The player will now open the backpack automatically when trying to put non-held things into it. Previously, this would only work for held objects.
+- The player will no longer close the car door when trying to start a non-functional car while standing outside it. They will also get inside the car before trying to start it.
+- It is no longer possible to create huge objects inside small containers, with some exceptions.
+- The mechanic will now fix a second car.
+- The mechanic now responds to attempts to fix the car with poppy oil.
+- The player will now be allowed into Arbot Maps & Antiques even if the appointment card is inside the backpack.
+- Adds an OIL verb, only useful when ordering the mechanic.
+- If a fuelled car is turned into something else, it will now still be fuelled when re-created.
+- Sap and soap from the dispenser can now be collected by placing a suitable container under it. Also adds a sop dispenser for symmetry.
+
+### Typos and cosmetic output errors
+- Now shows the correct error message when trying to EXAMINE ALL or other multiple objects.
+- Fixes a double response that would occur when trying to give animals orders.
+- Fixes a repeated message that would occur if we don't reply to Higgates initial question about whether we speak
+Lojban.
+- No longer repeats the refusal message when trying to TAKE ALL FROM Professor Higgate's table.
+- Fixes some glitches in the map graphics on certain interpreters when displaying the help menu. It is still slightly broken in the Mac IDE, though.
 
 ## Release 8
 
@@ -50,11 +70,11 @@
 
 - Fixes the message "X doesn't have anything to say about Y at the moment" which was previously sometimes printed as "X doesn't has anything to say about Y at the moment."
 - Groups of certain identical objects, such as two cans of oil, are no longer mentioned twice in room descriptions.
-- Fixes a bug that would override interpreter settings for text color after a restart and set the text to black on white on interpreters that support GLK styles.
-- If you disable graphics, they will now stay disabled after a restart or restore. Not after quitting the interpreter, though.
+- Fixes a bug that would override interpreter settings for text color after a restart and set the text to black on white on interpreters with support for GLK styles.
+- If you disable graphics, they will now stay disabled after a restart or restore. Not after quitting and restarting the interpreter, though.
 - The map images used on the yacht have been updated to eliminate black lines that would sometimes appear when switching graphics off and then on.
 - Fixes a bug where restoring a save game from an interpreter without support for graphics would break the map display on an interpreter which supports graphics.
-- Always describe new letter-transformed creations when we haven't seen them before. Previously, the player would sometimes never get to see the descriptions of things that instantly killed them.
+- Always describe new letter-transformed creations when we haven't seen them before. Previously, the player would in some cases never get to see the descriptions of things that instantly killed them.
 - Some letter-transformation tools would print a full description of their creations every time, even if we created the same thing over and over. Now only the homonyming dais does this.
 - Removes a superfluous line break when clicking the compass rose.
 - Examining the spinner sculpture while it is empty no longer causes a run-time error.
