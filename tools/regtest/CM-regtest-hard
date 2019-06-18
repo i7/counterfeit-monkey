@@ -1496,7 +1496,7 @@ We open the tiny refrigerator, revealing some cream and a silver platter.
 /We (take|get|pick up|acquire) the cream. Kept around to go with the coffee. It doesn't seem to have gone off yet, which is a wonder.
 
 > wave c-remover at cream
-We reset the device to c. The cream gives way to the now-familiar ream.
+/We reset the device to c. There is a [a-z \-]+, and the cream turns into a ream. One ream, which is to say 500 sheets, of generic printer or copier paper. The sheets are an attractive milky color.
 
 > go to language studies department office
 /(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike).
@@ -1931,7 +1931,7 @@ Before we go through the door to the Rectification Room, it occurs to us that Pr
 There is a continuous angry whine from the jigsaw.
 
 > put gel on as
-I don't know what you think you're talking about, because we can't see any such thing here.
+/(Maybe that means something different to you, but I can't see any such thing|I don't know what you think you're talking about, because we can't see any such thing here).
 
 > wave i-remover at pastis
 /We reset the device to i. There is a [a-z \-]+, and the pastis turns into some pasts. It looks from the side like a shard of glass, but seen straight on, it captures previous events. At the moment it is replaying us *
@@ -3007,10 +3007,10 @@ A duty roster is posted prominently.
 If this goes wrong, we could wind up living in here permanently. So we'd better figure whom to send out, and do it fast.
 
 > get pea
-/(I can't see what you're talking about.|That noun did not make sense in this context.|Maybe that means something different to you, but I can't see any such thing.)
+/(I (can't see what|don't know what you think) you're talking about|That noun did not make sense in this context|Maybe that means something different to you, but I can't see any such thing).
 
 > wave e-remover at pea
-/(I can't see what you're talking about.|That noun did not make sense in this context.|Maybe that means something different to you, but I can't see any such thing.)
+/(I can't see what you're talking about|That noun did not make sense in this context|Maybe that means something different to you, but I can't see any such thing|I don't know what you think you're talking about, because we can't see any such thing here).
 
 > z
 Time passes.

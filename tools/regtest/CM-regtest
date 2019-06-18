@@ -1932,7 +1932,7 @@ The snapping continues.
 The snapping continues.
 
 > wave c-remover at cream
-We reset the device to c. The cream gives way to the now-familiar ream.
+/We reset the device to c. There is a [a-z \-]+, and the cream turns into a ream. One ream, which is to say 500 sheets, of generic printer or copier paper. The sheets are an attractive milky color.
 
 The snapping continues.
 
@@ -2357,7 +2357,7 @@ The snapping continues.
 Long Street South
 Long Street is lined on each side with a double-row of tall, anemic palm trees that bend towards one another many feet overhead. We are now in the southern part of this long corridor, between the Canadian Embassy and Arbot Maps & Antiques.
 
-/Someone has left a shopping bag at the roadside — maybe by accident when loading up a car, maybe because they mean to come back for it. (In the|The) shopping bag (are|contains) a ball and a jigsaw.
+/Someone has left a shopping bag at the roadside — maybe by accident when loading up a car, maybe because they mean to come back for it. ((In the|The) shopping bag (are|contains) a ball and a jigsaw|There are a ball and a jigsaw in the shopping bag).
 
 /Our car (— (a sub-sub-compact that looks like it might be outraced by a kid on a scooter|which might better be described as a covered bicycle) — )?is parked nearby.
 
@@ -2449,7 +2449,7 @@ Before we go through the door to the Rectification Room, it occurs to us that Pr
 The snapping continues.
 
 > put gel on as
-I don't know what you think you're talking about, because we can't see any such thing here.
+/(I don't know what you think you're talking about, because we can't see any such thing here|Maybe that means something different to you, but I can't see any such thing).
 
 > wave i-remover at pastis
 /We reset the device to i. There is a [a-z \-]+, and the pastis turns into some pasts. It looks from the side like a shard of glass, but seen straight on, it captures previous events. At the moment it is replaying*
@@ -3212,13 +3212,13 @@ The snapping continues.
 The snapping continues.
 
 > wave s-remover at plans
-/(I can't see what you're talking about|Maybe that means something different to you, but I can't see any such thing).
+/(I can't see what you're talking about|Maybe that means something different to you, but I can't see any such thing|I don't know what you think you're talking about, because we can't see any such thing here).
 
 > wave l-remover at plan
-/(I can't see what you're talking about|Maybe that means something different to you, but I can't see any such thing).
+/(I can't see what you're talking about|Maybe that means something different to you, but I can't see any such thing|I don't know what you think you're talking about, because we can't see any such thing here).
 
 > get pan
-/(I can't see what you're talking about|Maybe that means something different to you, but I can't see any such thing).
+/(I can't see what you're talking about|Maybe that means something different to you, but I can't see any such thing|I don't know what you think you're talking about, because we can't see any such thing here).
 
 > go to abandoned park
 /(We |We have a (rather tiring |long |lengthy )?|We make the (rather tiring |long |lengthy )?|It's a (rather tiring |long |lengthy )?)(walk|hike) out from under the sycamores in the Oval and up Long Street.
