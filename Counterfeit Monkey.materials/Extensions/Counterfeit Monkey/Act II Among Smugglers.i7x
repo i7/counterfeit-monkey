@@ -105,6 +105,10 @@ After going from the Aquarium when Slango is in the Counterfeit Monkey:
 	say "'This would be a good time to stop for lunch and a little siesta,' says Lena, following us to the door. As we go out, she's rolling down the shades and putting up a closed sign.";
 	move the single ream to the repository;
 	move the odes-book to the repository; [The ream object actually does double-duty and will reappear when we need to fix the printer.]
+	now the single ream is not seen;
+	now the single ream is not handled;
+	now the single ream is not examined;
+	now the single ream is not disguised;
 	now the aquarium-closed-sign is part of the aquarium-exterior;
 	continue the action.
 
