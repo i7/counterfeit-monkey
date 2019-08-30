@@ -1,10 +1,11 @@
-Version 8/161029 of Numbered Disambiguation Choices by Aaron Reed begins here.
+Version 10/190320 of Numbered Disambiguation Choices by Aaron Reed begins here.
 
 "Numbers the options in disambiguation questions, to help new players and solve the 'disambiguation loop' problem caused by indistinguishable objects."
 
 [
 Updates:
-Version 9/180530: Added disambiguation id to rooms as well, to avoid a run-time error when typing a number if rooms are included in the list of disambiguation choices.
+Version 10/190320: Removed Counterfeit Monkey-specific code and added a fix for when the parser understands numbers as referring to a number of things instead of a disambiguation choice.
+Version 9/180530: Added disambiguation id to rooms as well, to avoid a run-time error when typing a number if rooms are included in the list of disambiguation choices. Use a kind of value ("disvalue") instead of numbers to speed things up. In this way we also completely avoid the problem the previous version tried to fix.
 Version 8/161029: Changed the default disambiguation id to -1 to avoid problems if the player gives "0" as an answer to the disambiguation question.
 Version 7: Updated for latest build.
 Version 6: Fixed an infelicity with indistinguishable objects reported by Victor Gijsbers. Started to fix a bug to do with animate people reported by Simon; this turns out to be a bug in Inform (http://inform7.com/mantis/view.php?id=700) which is not easy to work around, so leaving unfixed for now.
@@ -18,7 +19,10 @@ Chapter - Setup
 
 Section - Disambiguation ID
 
+[We use kinds of value rather than standard numbers here for performance reasons.]
+
 A disvalue is a kind of value. The disvalues are invalid-disvalue, default-disvalue, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14 and s15.
+
 Understand "1" as s1.
 Understand "2" as s2.
 Understand "3" as s3.
@@ -83,6 +87,8 @@ Before asking which do you mean (this is the Numbered Disambiguation Choices res
 
 Chapter - Understand preface
 
+[This has now been baked into the rule below for performance reasons, but we'll leave it commented-out here for clarity, and also an illustration of two things that are slow in Inform 7: regular expressions and changing the text of the player's command.]
+
 [In testing, some players would try to respond with something like "1) dog collar". If we replace closing parentheses from the input with a space, this can still be understood, rather than producing an unhelpful error.]
 
 [After reading a command (this is the Numbered Disambiguation Choices strip closing parenthesis rule):
@@ -102,6 +108,17 @@ After reading a command when the number of entries in list of disambiguables > 0
 		follow the Numbered Disambiguation Choices reset disambiguables rule;
 	otherwise:
 		change the text of the player's command to disam-cmd.
+
+Chapter - Understand numbers as referring to a choice rather than a number of things
+
+[This is to work around a problem where the parser is confused by numbered disambiguation choices. If it asks which souvenir we want to examine and we answer 1, the answer is parsed as "examine 1 souvenirs", which is a valid way of referring to anything that matches "souvenirs", not just the item with disambiguation id 1.]
+
+Does the player mean doing something when the player's command includes "[number]":
+	let N be the corresponding disvalue of the number understood;
+	if the noun is not nothing and the disambiguation id of the noun is N:
+		it is very likely;
+	otherwise if the second noun is not nothing and the disambiguation id of the second noun is N:
+		it is very likely;
 
 Numbered Disambiguation Choices ends here.
 
