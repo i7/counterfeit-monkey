@@ -2,23 +2,26 @@
 
 ## Unreleased
 
-- Fixes a run-time error that could occur during disambiguation when trying to take a posture. Previously, SIT ON DAIS would cause the parser to throw an error when trying to access a non-existent posture property of the dais socket.
+- Fixes a run-time error that could occur during disambiguation when trying to take a posture. Previously, SIT ON DAIS would cause the parser to throw an error trying to access a non-existent posture property of the dais socket.
+- Fixes a run-time error that would occur when turning the blouse of the hostel attendant into a louse (and the louse then tries to escape from the repository.)
+- The balcony scenery object mentioned in the description of the white concrete buildings in Deep Street is no longer attached to the yellow buildings in Back Alley.
+- The orc swords can now be referred to.
 
 ### Gameplay changes
 - The single ream will no longer be covered in origin paste when created from the cream.
-- The player will now open the backpack automatically when trying to put non-held things into it. Previously, this would only work for held objects.
+- The player will now open the backpack automatically when trying to put non-held things into it. Previously, this would only work for held objects. PUT ALL IN BACKPACK will still not automatically open the backpack.
 - The player will no longer close the car door when trying to start a non-functional car while standing outside it. They will also get inside the car before trying to start it.
 - It is no longer possible to create huge objects inside small containers, with some exceptions.
-- The mechanic will now fix a second car.
-- The mechanic now responds to attempts to fix the car with poppy oil.
-- The player will now be allowed into Arbot Maps & Antiques even if the appointment card is inside the backpack.
-- Adds an OIL verb, only useful when ordering the mechanic.
-- If a fuelled car is turned into something else, it will now still be fuelled when re-created.
-- Sap and soap from the dispenser can now be collected by placing a suitable container under it. Also adds a sop dispenser for symmetry.
+- The mechaning can fix a second broken car.
+- The mechanic now responds to attempts to fix a car with poppy oil.
+- The player will be allowed into Arbot Maps & Antiques even if the appointment card is inside the backpack.
+- Adds an OIL verb, useful when asking the mechanic to fix the car using commands such as ASK MECHANIC TO OIL CAR or MECHANIC, OIL ENGINE.
+- When a fuelled car is turned into something else, it will still be fuelled when re-created.
+- Sap and soap can be collected from the dispenser by placing a suitable container below it. Also adds a sop dispenser for symmetry.
 
 ### Typos and cosmetic output errors
-- Now shows the correct error message when trying to EXAMINE ALL or other multiple objects.
-- Fixes a double response that would occur when trying to give animals orders.
+- Now shows the correct error message when trying to EXAMINE ALL or other multiple objects ("You can't use multiple objects with that verb" instead of "You can't see any such thing.")
+- Removes an superfluous message that was shown when trying to give animals orders.
 - Fixes a repeated message that would occur if we don't reply to Higgates initial question about whether we speak
 Lojban.
 - No longer repeats the refusal message when trying to TAKE ALL FROM Professor Higgate's table.
