@@ -33,7 +33,7 @@ Include
 			burden = people_present --> i;
 			if (~~(burden.(+ fake +)))
 				continue;
-			if (parent(burden) == real_location or player or (+ boulders +))
+			if (parent(burden) == real_location or player or (+ boulders +) or (+ repository +))
 				continue;
 			if ( burden == (+ Brock +))
 				continue;
