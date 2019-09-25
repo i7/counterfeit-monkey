@@ -1630,7 +1630,7 @@ The description of the oil-painting is "Just one painting, but a very valuable o
 The orc is a man. Understand "grunk" as the orc. The description of the orc is "He's dressed in the traditional smelly pants of an orcish pig farmer."
 	The greeting of the orc is "'Orc happy to meet stranger,' says the orc."
 
-The description of the orc-swords is "A heap of junky plastic fantasy swords, too flimsy to support even the most basic roleplaying purposes. Possibly they're a souvenir of some sort?" The heft of the orc-swords is 6. The printed name of the orc-swords is "orc swords".
+The description of the orc-swords is "A heap of junky plastic fantasy swords, too flimsy to support even the most basic roleplaying purposes. Possibly they're a souvenir of some sort?" The heft of the orc-swords is 6. The printed name of the orc-swords is "orc swords". Understand "orc" or "swords" or "sword" as the orc-swords.
 
 The orc-word is noisy. The printed name of the orc-word is "orc word". Understand "orc" or "word" as the orc-word. The description of the orc-word is "Something snarling and full of hard consonants. I think this must be from someone's constructed language, and whatever it is bears a resemblance to Klingon."
 
