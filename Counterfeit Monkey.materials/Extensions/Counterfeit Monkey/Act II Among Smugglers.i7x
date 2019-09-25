@@ -31,7 +31,7 @@ The white concrete buildings are scenery in Deep Street. Instead of entering the
 
 The painted Moorish patterns are part of the white concrete buildings. The description is "Black, gold, rose and red, they mark out arches and stripe eaves."
 
-The balcony is part of the buildings. Understand "balconies" as the balcony. Instead of climbing the balcony, say "The lowest is still many feet above the sidewalk level." The description of the balcony is "Many are rounded, like boxes at the opera."
+The balcony is part of the white concrete buildings. Understand "balconies" as the balcony. Instead of climbing the balcony, say "The lowest is still many feet above the sidewalk level." The description of the balcony is "Many are rounded, like boxes at the opera."
 
 The laundry is part of the balcony. The description is "Mostly bleached t-shirts and underpants and the odd sheet pinned to a line." Understand "clothes" or "lines" or "line" or "underpants" or "odd" or "sheet" or "t-shirts" or "bleached" as the laundry.
 
