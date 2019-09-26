@@ -90,10 +90,14 @@ Before approaching the Aquarium when the Counterfeit Monkey is unvisited:
 	say "I'm sure that would be interesting under other circumstances, but [we] have an appointment to keep." instead.
 
 
-Before going to the Aquarium when the aquarium-closed-sign is marked-visible:
+Before going to the Aquarium when the aquarium-closed-sign is part of the aquarium-exterior:
 	say "[rejection-from-aquarium]" instead.
 
-Before approaching the Aquarium when the aquarium-closed-sign:
+Before approaching the Aquarium when the aquarium-closed-sign is part of the aquarium-exterior:
+	unless the location is Deep Street:
+		try approaching Deep Street;
+		if the location is not Deep Street:
+			stop the action;
 	say "[rejection-from-aquarium]" instead.
 
 To say rejection-from-aquarium:
