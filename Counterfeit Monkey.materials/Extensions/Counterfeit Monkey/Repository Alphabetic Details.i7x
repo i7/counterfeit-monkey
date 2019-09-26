@@ -308,12 +308,14 @@ Every turn during Boar Mating:
 
 [The boar attack is based on several accounts of real life attacks in which the boar repeatedly rushed the victim (often unprovoked), gashing in several places. The most serious wounds generally are abdominal wounds inflicted after the boar has knocked the victim down. It would be more true to life if the boar also left gashes in the protagonist's leg in the process of knocking her down, but I decided to skip that because I didn't want to deal with a game state in which the protagonist was wounded but not dead: it would have needlessly complicated the writing of the end-game to no interesting narrative effect.]
 
-Boar Attack is a recurring scene. Boar Attack begins when the boar is in location and the suid is not enclosed by location and the roc is not enclosed by location. Boar Attack ends in relief when the boar is marked invisible. Boar attack ends in distraction when the boar is enclosed by location and the suid is enclosed by location. Boar Attack ends in fear when the roc is marked-visible. Boar Attack ends in death when the time since Boar Attack began is greater than 2 minutes.
+Boar Attack is a recurring scene. Boar Attack begins when the boar is enclosed by location and the suid is not enclosed by location and the roc is not enclosed by location. Boar Attack ends in relief when the boar is marked invisible. Boar attack ends in distraction when the boar is enclosed by location and the suid is enclosed by location. Boar Attack ends in fear when the roc is marked-visible. Boar Attack ends in death when the time since Boar Attack began is greater than 2 minutes.
 
 When Boar Attack ends in fear:
 	say "The boar stops abruptly at the sight of the roc."
 
 Every turn during Boar Attack:
+	if the boar is not in location:
+		move the boar to location;
 	let T be the time since Boar Attack began;
 	let N be T divided by 1 minute;
 	increment N;
@@ -336,7 +338,7 @@ Instead of jumping during Boar Attack:
 
 Some tusks are part of the boar. The description of the tusks is "Let's not find out anything more personal about them."
 
-Boar Hiding is a recurring scene. Boar hiding begins when the boar is in location and the roc is in location and the suid is not marked-visible. Boar hiding ends in attack when the boar is marked-visible and the roc is not in location. Boar hiding ends in distraction when the suid is marked-visible. Boar hiding ends in relief when the boar is marked invisible.
+Boar Hiding is a recurring scene. Boar hiding begins when the boar is enclosed by location and the roc is in location and the suid is not marked-visible. Boar hiding ends in attack when the boar is marked-visible and the roc is not in location. Boar hiding ends in distraction when the suid is marked-visible. Boar hiding ends in relief when the boar is marked invisible.
 
 Every turn during Boar Hiding:
 	say "[one of]The boar looks at [us] unpleasantly, but the roc flaps it wings and steps between [us] and the boar[or]The roc is pacing back and forth in front of the boar, which squeals with fear[or]The boar takes a tentative step towards [us], but one stern look from the roc makes it turn on the spot[cycling]."
