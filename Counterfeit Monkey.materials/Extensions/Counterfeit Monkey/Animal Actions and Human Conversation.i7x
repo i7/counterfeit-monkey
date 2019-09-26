@@ -5620,8 +5620,8 @@ After going from the Sensitive Equipment Testing Room:
 
 Confrontation-with-father is a scene. Confrontation-with-father begins when the current interlocutor is father.
 
-Instead of going somewhere during confrontation-with-father:
-	say "I can't walk away on him. Not until I know what he means to do."
+Sanity-check going somewhere during confrontation-with-father:
+	say "I can't walk away on him. Not until I know what he means to do." instead.
 
 When confrontation-with-father begins:
 	move father to the location;
