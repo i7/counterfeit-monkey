@@ -89,15 +89,12 @@ Before going to the Aquarium when the Counterfeit Monkey is unvisited:
 Before approaching the Aquarium when the Counterfeit Monkey is unvisited:
 	say "I'm sure that would be interesting under other circumstances, but [we] have an appointment to keep." instead.
 
-
 Before going to the Aquarium when the aquarium-closed-sign is part of the aquarium-exterior:
-	say "[rejection-from-aquarium]" instead.
-
-Before approaching the Aquarium when the aquarium-closed-sign is part of the aquarium-exterior:
-	unless the location is Deep Street:
-		try approaching Deep Street;
-		if the location is not Deep Street:
-			stop the action;
+	let N be the number of entries in the path so far of the player;
+	if N is greater than 1:
+		say "[path-walked so far]";
+	otherwise:
+		clear the path-walked for the player;
 	say "[rejection-from-aquarium]" instead.
 
 To say rejection-from-aquarium:
