@@ -319,6 +319,9 @@ Every turn during Boar Attack:
 	let T be the time since Boar Attack began;
 	let N be T divided by 1 minute;
 	increment N;
+	if N > 1 and the player is in a closed car (called current-car):
+		say "[one of]With a grunt, the boar hits the side of [the current-car] headfirst; the door flies wide open from the impact[or]Annoyed, the boar headbutts the car door open again[stopping].[paragraph break]";
+		now current-car is open;
 	choose row N in the Table of Boar Attacks;
 	say "[description entry][paragraph break]".
 
