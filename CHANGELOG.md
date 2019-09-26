@@ -4,6 +4,7 @@
 
 - Fixes a run-time error that could occur during disambiguation when trying to take a posture. Previously, SIT ON DAIS would cause the parser to throw an error trying to access a non-existent posture property of the dais socket.
 - Fixes a run-time error that would occur when turning the blouse of the hostel attendant into a louse (and the louse then tries to escape from the repository.)
+- It is no longer possible to get back into the Aquarium Bookstore after Lena has closed it.
 - The balcony scenery object mentioned in the description of the white concrete buildings in Deep Street is no longer attached to the yellow buildings in Back Alley.
 - The orc swords can now be referred to.
 
@@ -12,7 +13,7 @@
 - The player will now open the backpack automatically when trying to put non-held things into it. Previously, this would only work for held objects. PUT ALL IN BACKPACK will still not automatically open the backpack.
 - The player will no longer close the car door when trying to start a non-functional car while standing outside it. They will also get inside the car before trying to start it.
 - It is no longer possible to create huge objects inside small containers, with some exceptions.
-- The mechaning can fix a second broken car.
+- The mechanic can fix a second broken car.
 - The mechanic now responds to attempts to fix a car with poppy oil.
 - The player will be allowed into Arbot Maps & Antiques even if the appointment card is inside the backpack.
 - Adds an OIL verb, useful when asking the mechanic to fix the car using commands such as ASK MECHANIC TO OIL CAR or MECHANIC, OIL ENGINE.
@@ -24,6 +25,7 @@
 - Removes an superfluous message that was shown when trying to give animals orders.
 - Fixes a repeated message that would occur if we don't reply to Higgates initial question about whether we speak
 Lojban.
+- Gets rid of an erroneous message about being let in through the security door if trying to leave though it when confronted by Alex's father.
 - No longer repeats the refusal message when trying to TAKE ALL FROM Professor Higgate's table.
 - Fixes some glitches in the map graphics on certain interpreters when displaying the help menu. It is still slightly broken in the Mac IDE, though.
 
