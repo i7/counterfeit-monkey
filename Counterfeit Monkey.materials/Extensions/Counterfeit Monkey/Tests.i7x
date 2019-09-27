@@ -346,7 +346,6 @@ Carry out animal-summoning:
 Report animal-summoning:
 	try looking.
 
-
 [Since it takes several steps to get a working car, sometimes we want to be able to test without going through that rigamarole.]
 
 Understand "car-acquire" as car-acquiring. Car-acquiring is an action out of world.
