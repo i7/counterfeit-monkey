@@ -4063,7 +4063,7 @@ Sanity-check attacking the trap with something:
 	try springing the trap with the second noun instead.
 
 Understand "step into/in [thing]" as entering.
-Understand "step on [thing]" as standing up on.
+Understand "step on/onto [thing]" as standing up on.
 
 Instead of standing up on the trap:
 	try entering the trap.
