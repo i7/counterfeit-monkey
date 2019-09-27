@@ -5798,7 +5798,7 @@ A description-concealing rule:
 		now restoration-gel rifle is not marked for listing.
 
 Rule for writing a topic sentence about Atlantida-woman:
-	say "[Atlantida-woman] stands between [us] and the eastern exit, backlit by sunlight[if the player is gelled and atlantida-woman carries the rifle]. [The rifle] hangs loose in her hand[otherwise if the player is not gelled and the atlantida-woman carries the rifle]. She has [the rifle] trained on our torso[end if]. ";
+	say "[Atlantida-woman] stands between us and the eastern exit, backlit by sunlight[if the player is gelled and atlantida-woman carries the rifle]. [The rifle] hangs loose in her hand[otherwise if the player is not gelled and the atlantida-woman carries the rifle]. She has [the rifle] trained on our torso[end if]. ";
 	if Atlantida-woman does not carry the restoration-gel rifle:
 		say "She dwarfs [the inlaid desk] and all the other furnishings in the room. ";
 		now the inlaid desk is mentioned;
@@ -5850,7 +5850,7 @@ To say pulley-fall:
 	say "[run paragraph on]".
 
 Before shooting the restoration-gel rifle with the anagramming gun when the player is not gelled:
-	say "She sees [us] moving the gun into position, and our reflexes are slower than hers." instead.
+	say "She sees us moving the gun into position, and our reflexes are slower than hers." instead.
 
 
 gel-shot is an NPC-directed quip.
@@ -5927,7 +5927,7 @@ thing-about-democracy is an NPC-directed quip.
 The infertile astrologer sidles closer to us, smiling and making hand signs that I think are supposed to represent Aries. Old bat.[otherwise].'[end if]"
 
 After examining the infertile astrologer when Atlantida-woman does not recollect thing-about-democracy:
-	say "She's investigating the room and muttering to herself, but Atlantida seems to be ignoring her for the most part. She'll have worked her way over by [us] soon."
+	say "She's investigating the room and muttering to herself, but Atlantida seems to be ignoring her for the most part. She'll have worked her way over by us soon."
 
 After examining the infertile astrologer when Atlantida-woman recollects thing-about-democracy:
 	say "She's standing within arm's reach now."
@@ -5959,7 +5959,7 @@ Before putting restoration gel on the infertile astrologer:
 		queue not-long-now as immediate obligatory.
 
 Instead of throwing the tub at the Atlantida-woman:
-	say "[We] fling the tub at her. Unfortunately, the gel is sticky enough that it doesn't, as [we] had sort of hoped, spill out all over her. She dodges, then hurls it back at [us] [--] and she has better aim[casually queue anti-gel comment]."
+	say "We fling the tub at her. Unfortunately, the gel is sticky enough that it doesn't, as we had sort of hoped, spill out all over her. She dodges, then hurls it back at us [--] and she has better aim[casually queue anti-gel comment]."
 
 Instead of going somewhere in the presence of Atlantida-woman:
 	say "'I don't think so,' says Atlantida. As she's physically about twice our mass, I think she'll win this one."
@@ -5975,7 +5975,7 @@ cutting-remark is an NPC-directed quip.
 
 
 Before putting restoration gel on Atlantida-woman:
-	say "[We] dab a bit on our finger and approach, but she is far too large, far too spry. She catches our wrist and forces [us] aside, until the gel is harmlessly absorbed into our own skin[casually queue anti-gel comment]." instead.
+	say "We dab a bit on our finger and approach, but she is far too large, far too spry. She catches our wrist and forces us aside, until the gel is harmlessly absorbed into our own skin[casually queue anti-gel comment]." instead.
 
 anti-gel comment is an NPC-directed quip.
 	The reply is "'Oh, no, my dear,' Atlantida says. 'They could remake me, but it wouldn't be the [i]same[/i] me, would it? It would be some new construct. The Atlantida of today. And that's not the way to a consistent policy, is it?'"
