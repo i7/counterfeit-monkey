@@ -1692,7 +1692,7 @@ Every turn when the player carries a pa (called target):
 	move the target to the location;
 	say "[The target] is very heavy, and winds up (before his transformation is complete) stepping on our feet, and then scrambling away (with apologies)."
 
-The description of PARC is "Palo Alto Research Center [--] tons and tons of 1970s-era high tech concrete, steel, and plastic. At least it didn't turn into crap." The heft of PARC is 1000. The scent-description of PARC is "burnt electronics dust".
+The description of PARC is "Palo Alto Research Center [--] tons and tons of 1970s-era high-tech plastic, steel, and concrete. At least the carp didn't turn into crap." The heft of PARC is 1000. The scent-description of PARC is "burnt electronics dust".
 
 [The description of the paint is "Bright blue paint, of the house-painting variety and not the thicker, more controllable kind used for art." The indefinite article is "some". ]
 
