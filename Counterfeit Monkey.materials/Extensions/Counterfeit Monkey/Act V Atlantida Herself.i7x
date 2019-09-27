@@ -563,7 +563,7 @@ Every turn when the portcullis is open and the counterweight is not on the pulle
 
 Check opening portcullis:
 	if the counterweight is not on the pulley:
-		say "[We] strain at the base of the gate, but the portcullis is much too heavy for us to lift unaided. We need some kind of mechanical advantage." instead.
+		say "[We] strain at the base of the gate, but the portcullis is much too heavy for [us] to lift unaided. [We] need some kind of mechanical advantage." instead.
 
 Report putting something on the pulley:
 	say "[We] hang [the noun] on the hook." instead.
@@ -591,7 +591,7 @@ Sanity-check unlocking the portcullis with the jack:
 	try propping the portcullis with the jack instead.
 
 Report propping the portcullis with the jack:
-	say "[We] slip [the jack] under the portcullis and raise it a few feet [--] enough for us to slip past." instead.
+	say "[We] slip [the jack] under the portcullis and raise it a few feet [--] enough for [us] to slip past." instead.
 
 After deciding the scope of the player when the location is Personal Apartment or the location is Tunnel through Chalk:
 	if the portcullis is wedged by something (called the impediment):
@@ -740,7 +740,7 @@ The description of the tall window is "[if the tall window is open]The window st
 After examining the tall window, try searching the tall window.
 
 Sanity-check unlocking keylessly the tall window when the tall window is locked:
-		say "It's locked again. There's no way for us but forward from here." instead.
+		say "It's locked again. There's no way for [us] but forward from here." instead.
 
 Rule for writing a paragraph about the tall window when the location is the Precarious Perch:
 	if the tall window is open:
@@ -862,7 +862,7 @@ Instead of going up in Abandoned Shore:
 	say "[We] doubt whether [we] would make the return trip. It was bad enough coming down."
 
 Instead of going north in Abandoned Shore when the player is not in the kayak:
-	say "[We] have too far to go; just swimming won't get us out to Slango's yacht."
+	say "[We] have too far to go; just swimming won't get [us] out to Slango's yacht."
 
 Abandoned Shore is below Precarious Perch. It is forbidden and checkpoint. The description is "There's a little inlet of shore here, mostly boulders with little sand, completely cut off from the dock area and sheltered by the curve of the rock so that it wouldn't be visible from the sea unless someone were very close in."
 
@@ -986,7 +986,7 @@ Check facing in abandoned shore:
 Report facing in Abandoned Shore:
 	say "The charm of this place is that it's very hard to see anything in any direction but the ocean. In every other direction [we] are completely protected by rocks." instead.
 
-Open Sea is north of the Abandoned Shore. It is forbidden and checkpoint. The description is "The water stretches in all directions, but [we] can see off to the north where [viewed-yacht] is anchored, ready to bring us back aboard. Its metallic blue shape almost blends in with the water."
+Open Sea is north of the Abandoned Shore. It is forbidden and checkpoint. The description is "The water stretches in all directions, but [we] can see off to the north where [viewed-yacht] is anchored, ready to bring [us] back aboard. Its metallic blue shape almost blends in with the water."
 	The introduction is "If [we] were further around the island to the east, [we] might be able to see bits of the drowned city: both the buildings that were legitimately destroyed when the land sunk into the sea, and the areas where during the Civil Dispute of Standard[ization] the authorities dumped unwanted foreign archaeological [if the player is wearing britishizing goggles]artefact[otherwise]artifact[end if]s. But here I'm afraid it's just shellfish and sand down there."
 
 Rule for listing exits when looking in the Open Sea:
@@ -1008,7 +1008,7 @@ Instead of launching the kayak in Open Sea:
 	try going north instead.
 
 Instead of exiting in Open Sea:
-	say "Leaving the kayak at this juncture would only get us all wet. And I'm too tired for that right now."
+	say "Leaving the kayak at this juncture would only get [us] all wet. And [we]['re] too tired for that right now."
 
 Instead of putting gel on the oar when the player is in the kayak and the location is Open Sea:
 	say "It would be extremely inconvenient to lose the oar at this juncture."
