@@ -4001,11 +4001,22 @@ Understand "set [trap]" as opening.
 Sanity-check opening the trap:
 	if the trap is open:
 		make no decision;
-	if the trap is not in the location:
-		say "It would be difficult, not to mention unsafe, to try to set the trap when it's anywhere but on the [ground]." instead.
+	if the trap is not in location:
+		say "It would be difficult, not to mention unsafe, to try to set the trap when it's anywhere but on the [ground]." instead;
+	if Boar Attack is happening:
+		say "[one of][We] briefly struggle to get the trap open, but the boar goes straight for [us] and [we] have to run[or][We] [are] not going to try that again[stopping]." instead;
+	if the location is nautical:
+		say "In this cramped space, one of our friends is going to step on the trap, if [we] don't do it first." instead.
 
 Report opening the trap:
-	say "[We] apply a great deal of pressure to the levers of the trap and finally manage to get the jaws open." instead.
+	say "[We] apply a great deal of pressure to the levers of the trap and finally manage to get the jaws open";
+	if Atlantida-woman is in location:
+		say ".[paragraph break]'Did you really expect me to walk into that?' Atlantida asks, with genuine surprise in her voice." instead;
+	if further guards is happening or guard-imminence is happening or portcullis-threat is happening or atlantida-refreshed is in location:
+		say ". I really don't want to think about what will happen if somebody steps on it";
+	if atlantida-refreshed is in location:
+		say ".[paragraph break]'That seems brutal,' Atlantida remarks";
+	say "." instead.
 
 Sanity-check taking the open trap:
 	say "[We] don't want to get our hand anywhere near the trap while it's still set to spring." instead.
@@ -4050,6 +4061,12 @@ Report springing the trap with something:
 
 Sanity-check attacking the trap with something:
 	try springing the trap with the second noun instead.
+
+Understand "step into/in [thing]" as entering.
+Understand "step on [thing]" as standing up on.
+
+Instead of standing up on the trap:
+	try entering the trap.
 
 Instead of entering the open trap:
 	say "Even you don't have the self-control [--] or the suicidal inclination [--] necessary to break your own leg with forty pounds worth of cold iron bear trap."

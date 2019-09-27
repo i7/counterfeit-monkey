@@ -5993,13 +5993,7 @@ that the outside world matters is an unlisted informative quip.
 	It quip-supplies Atlantida-woman.
 
 Availability rule for that the outside world matters:
-	if Atlantida-woman recollects thing-about-democracy:
-		make no decision;
-	otherwise:
-		it is off-limits.
-
-Availability rule for how she justifies cold storage:
-	if Atlantida-woman recollects thing-about-democracy:
+	if Atlantida-woman recollects gel-shot:
 		make no decision;
 	otherwise:
 		it is off-limits.
@@ -6208,11 +6202,11 @@ We say nothing.";
 Table of Ultratests (continued)
 topic	stuff	setting
 "almostlast"	{ anagramming gun, bullets, tub, counterweight }	The Tunnel
-"lastmeeting"	{ anagramming gun, tub }	Personal Apartment
+"lastmeeting"	{ anagramming gun, bullets, tub }	Personal Apartment
 
-Test almostlast with "tutorial off / load gun / put counterweight on hook / open tub / open portcullis / go through portcullis / x files / a cold storage / look / shoot anagramming gun at gel rifle / look / gel astrologer / shoot gel rifle at atlantida" [in the Tunnel  holding the anagramming gun and the bullets and the tub and the counterweight.]
+Test almostlast with "tutorial off / establish / unlegend / load gun / put counterweight on hook / open tub / open portcullis / go through portcullis / x files / z / a cold storage / look / shoot anagramming gun at gel rifle / look / gel astrologer / shoot gel rifle at atlantida" [in the Tunnel  holding the anagramming gun and the bullets and the tub and the counterweight.]
 
-Test lastmeeting with "tutorial off / open tub / x files / a cold storage / look / shoot anagramming gun at gel rifle / look / gel astrologer / shoot gel rifle at atlantida" [in the Personal Apartment holding the anagramming gun and the tub.]
+Test lastmeeting with "tutorial off / establish / unlegend / load gun / open tub / x files / a cold storage / look / shoot anagramming gun at gel rifle / look / gel astrologer / shoot gel rifle at atlantida" [in the Personal Apartment holding the anagramming gun and the tub.]
 
 Section 14 - The Nicer Atlantida
 
@@ -6310,6 +6304,18 @@ Portcullis-threat ends in freedom when the location is Precarious Perch.
 
 When Portcullis-threat begins:
 	say "Someone is coming into the workshop upstairs. There's at most a few seconds before they'll be down the tunnel.";
+	if there is an open trap in Oracle Project:
+		the trap is discovered in 1 turn from now;
+	if there is an open trap in the surveillance room:
+		the trap is discovered in 2 turns from now;
+	if there is an open trap in the tunnel through chalk:
+		the trap is discovered in 3 turns from now.
+
+At the time when the trap is discovered:
+	let N be "[the holder of the trap]";
+	let N be N in lower case;
+	now the trap is closed;
+	say "'What's this?' [we] hear a faint voice say from the general direction of [N]. Then there is a loud snap. We flinch, but the blood-curling scream never comes. 'Good thing nobody stepped into that' another voice says, followed by some nervous laughter."
 
 Check going to the Tunnel from Personal Apartment when Portcullis-threat is happening:
 	say "[We] run straight into the guards. [We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
@@ -6325,7 +6331,7 @@ Instead of going to Private Solarium from Personal Apartment when Portcullis-thr
 		say "The guards are coming down the tunnel right now. [We] should find a way to delay them."
 
 When Portcullis-threat ends in capture:
-	say "The guards arrive. [We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
+	say "The guards arrive. [if there is an open trap in location]The first to enter stops just as she is about to step into the trap, and then proceeds to spring it with her rifle. [end if][We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
 	end the story saying "That could have gone better"
 
 When Portcullis-threat ends in delay:
