@@ -6315,7 +6315,7 @@ At the time when the trap is discovered:
 	let N be "[the holder of the trap]";
 	let N be N in lower case;
 	now the trap is closed;
-	say "'What's this?' [we] hear somebody say from the general direction of [N]. Then there is a loud snap. We flinch, but there is no blood-curling scream. 'We're lucky nobody stepped into that' a male voice says, followed by some brief relieved laughter."
+	say "'What's this?' [we] hear a faint voice say from the general direction of [N]. Then there is a loud snap. We flinch, but the blood-curling scream never comes. 'Good thing nobody stepped into that' another voice says, followed by some nervous laughter."
 
 Check going to the Tunnel from Personal Apartment when Portcullis-threat is happening:
 	say "[We] run straight into the guards. [We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
@@ -6331,7 +6331,7 @@ Instead of going to Private Solarium from Personal Apartment when Portcullis-thr
 		say "The guards are coming down the tunnel right now. [We] should find a way to delay them."
 
 When Portcullis-threat ends in capture:
-	say "The guards arrive. [if there is an open trap in location]The first one to enter deftly stops before the trap, and then proceeds to spring it with her rifle. [end if][We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
+	say "The guards arrive. [if there is an open trap in location]The first to enter stops just as she is about to step into the trap, and then proceeds to spring it with her rifle. [end if][We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
 	end the story saying "That could have gone better"
 
 When Portcullis-threat ends in delay:
