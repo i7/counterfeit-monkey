@@ -291,7 +291,7 @@ Instead of taking the model T:
 	say "It is much too large to lift."
 
 Instead of switching on the Model T:
-	say "It doesn't switch. It requires coal and water and a lot of patience, and [we] don't have a long supply of any of those things. Besides, it would only do 1/26th of what the ordinary letter remover can do."
+	say "It doesn't switch. It requires coal and water and a lot of patience, and [we] don't have a long supply of any of those things. Besides, it would only do 1/26th of what the ordinary letter-remover can do."
 
 
 
