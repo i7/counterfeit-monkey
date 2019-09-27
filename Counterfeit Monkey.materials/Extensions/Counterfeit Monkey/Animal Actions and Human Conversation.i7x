@@ -5993,13 +5993,7 @@ that the outside world matters is an unlisted informative quip.
 	It quip-supplies Atlantida-woman.
 
 Availability rule for that the outside world matters:
-	if Atlantida-woman recollects thing-about-democracy:
-		make no decision;
-	otherwise:
-		it is off-limits.
-
-Availability rule for how she justifies cold storage:
-	if Atlantida-woman recollects thing-about-democracy:
+	if Atlantida-woman recollects gel-shot:
 		make no decision;
 	otherwise:
 		it is off-limits.
@@ -6208,11 +6202,11 @@ We say nothing.";
 Table of Ultratests (continued)
 topic	stuff	setting
 "almostlast"	{ anagramming gun, bullets, tub, counterweight }	The Tunnel
-"lastmeeting"	{ anagramming gun, tub }	Personal Apartment
+"lastmeeting"	{ anagramming gun, bullets, tub }	Personal Apartment
 
-Test almostlast with "tutorial off / load gun / put counterweight on hook / open tub / open portcullis / go through portcullis / x files / a cold storage / look / shoot anagramming gun at gel rifle / look / gel astrologer / shoot gel rifle at atlantida" [in the Tunnel  holding the anagramming gun and the bullets and the tub and the counterweight.]
+Test almostlast with "tutorial off / establish / unlegend / load gun / put counterweight on hook / open tub / open portcullis / go through portcullis / x files / z / a cold storage / look / shoot anagramming gun at gel rifle / look / gel astrologer / shoot gel rifle at atlantida" [in the Tunnel  holding the anagramming gun and the bullets and the tub and the counterweight.]
 
-Test lastmeeting with "tutorial off / open tub / x files / a cold storage / look / shoot anagramming gun at gel rifle / look / gel astrologer / shoot gel rifle at atlantida" [in the Personal Apartment holding the anagramming gun and the tub.]
+Test lastmeeting with "tutorial off / establish / unlegend / load gun / open tub / x files / a cold storage / look / shoot anagramming gun at gel rifle / look / gel astrologer / shoot gel rifle at atlantida" [in the Personal Apartment holding the anagramming gun and the tub.]
 
 Section 14 - The Nicer Atlantida
 
