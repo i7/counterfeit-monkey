@@ -29,6 +29,7 @@ A bet is a kind of thing.
 A bit is a kind of thing.
 A bot is a kind of thing.
 A generic-cap is a kind of floppy wearable thing.
+An alterna-cap is a kind of thing.
 A carp is a kind of thing. [not "a kind of animal" because you get a dead carp]
 Some carpi is a kind of thing.
 A cat is a kind of neuter animal.
@@ -40,7 +41,9 @@ A chert is a kind of thing.
 A chat is a kind of thing.
 A cod is a kind of thing.
 A cot is a kind of clothed bed.
+A CPU is a kind of thing.
 A CRT is a kind of device.
+A generic-cup is a kind of container.
 An eel is a kind of thing. [not "a kind of animal" because you get a dead eel]
 A git is a kind of man.
 A hart is a kind of neuter animal.
@@ -90,7 +93,8 @@ A tar is a kind of thing.
 A tart is a kind of thing. [chard, pearl]
 An alterna-tart is a kind of woman.
 A tattle is a kind of thing.
-A tear is a kind of thing.
+A tear is a kind of fluid thing.
+An alterna-tear is a kind of thing.
 A ten-object is a kind of thing.
 A tent is a kind of container.
 Some plural-tents is a kind of container.
@@ -307,7 +311,7 @@ The repository contains a curse advertisement.
 [crate]
 
 The repository contains a rate, a cate, a rat, a cat,
-	a tear, a tar, an art, [anagram all]
+	a tear, an alterna-tear, a tar, an art, [anagram all]
 	a tier, [vowel-rotation]
 	a rite, [anagram the rotation]
 	a titer, a titter, a tart, an alterna-tart, [t-insert]
@@ -523,7 +527,7 @@ In the repository is a pearl.
 
 In the repository are an earl, a perl, a peal, an ear, a pal, a pea, a par, a pa,
 	a pie, a pier, a poi, [vowel rotation]
-	a petal, a tear, a peat, a part, a pat, [t-insert derivatives]
+	a petal, a tear, an alterna-tear, a peat, a part, a pat, [t-insert derivatives]
 	a tar, a pet, an art, [derive insertions]
 	a pit, [vowel rotation]
 	a tart, an alterna-tart, [insert derivatives]
@@ -891,7 +895,10 @@ The repository contains a bandit and a bandage.
 [The repository contains some basins, a basis, a bass, a bass-fish, a ba.] [There are no bins in the game any more.]
 
 [car]
-The repository contains a carpet, 3 carpi, 3 carp, 3 generic-caps, PARC.
+The repository contains a carpet, 3 carpi, 3 carp, 3 generic-caps, 3 alterna-caps,
+3 CPUs, PARC, [anagrams from cup and carp]
+3 generic-cups, [reverse cryptolock cap]
+a cop. [reverse cryptolock cup]
 
 [card]
 [The repository contains a cardboard.] [unreachable]

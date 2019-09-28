@@ -1279,7 +1279,12 @@ An ignition has homonym index 1275.
 A tap has homonym index 1276.
 A bath has homonym index 1277.
 Yourself has homonym index 1278.
+An alterna-tear has homonym index 1280.
 The passkey-thing has homonym index 1281.
+A generic-cup has homonym index 1282.
+A CPU has homonym index 1283.
+A cop has homonym index 1284.
+An alterna-cap has homonym index 1285.
 The soap-sap-receptacle-supporter has homonym index 1286.
 The sop-dispenser has homonym index 1287.
 

@@ -22,6 +22,7 @@ A car is fake. [K35_car]
 A carpi is fake. [K177_carpi]
 A carp is fake.
 A generic-cap is fake.
+An alterna-cap is fake.
 A cart is fake. [K109_cart]
 A cat is fake. [K108_cat]
 A char is fake. [K110_char]
@@ -29,6 +30,7 @@ A chart is fake. [K111_chart]
 A chat is fake. [K113_chat]
 A chert is fake. [K112_chert]
 A cod is fake. [K114_cod]
+The cop is fake.
 A cot is fake. [K115_cot]
 A drum kit is fake. [K88_instrument]
 A eel is fake. [K117_eel]
@@ -77,6 +79,7 @@ A tart is fake. [K161_tart]
 An alterna-tart is fake.
 A tattle is fake. [K163_tattle]
 A tear is fake. [K164_tear]
+An alterna-tear is fake.
 A tent is fake. [K166_tent]
 A tin-can is fake. [K168_tin_can]
 A tint is fake. [K169_tint]
@@ -216,6 +219,7 @@ The cork is fake. [I1935_cork]
 The counter-alternate is fake. [I1621_counter_alternate]
 The counterweight is fake. [I2322_counterweight]
 The countertop is fake. [I2323_countertop]
+A CPU is fake.
 The cratering is fake. [I2324_cratering]
 The crew-group is fake. [I1954_crew_group]
 The cross is fake. [I1654_cross]
@@ -225,6 +229,7 @@ The crosspiece is fake. [I2326_crosspiece]
 The crow rod is fake. [I1659_crow_rod]
 The crumb is fake. [I1652_crumb]
 The cud is fake. [I1574_cud]
+A generic-cup is fake.
 The curd is fake. [I1572_curd]
 The curse advertisement is fake. [I1624_curse_advertisement]
 The cut is fake. [I1577_cut]

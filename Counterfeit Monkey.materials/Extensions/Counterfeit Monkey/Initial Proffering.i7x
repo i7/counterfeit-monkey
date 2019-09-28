@@ -43,6 +43,7 @@ A coffee-pot proffers a coffee-pot. [K5_container]
 A colorful skirts proffers a colorful skirts. [K2_thing]
 A confetti mess proffers a confetti mess. [K2_thing]
 A contraband box proffers a contraband box. [K5_container]
+The cop proffers the cop.
 A crowds proffers a crowds. [K7_backdrop]
 A current-paragraph proffers a current-paragraph. [K2_thing]
 A map-customer proffers a map-customer. [K11_woman]

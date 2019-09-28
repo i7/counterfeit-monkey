@@ -557,6 +557,10 @@ Check teeing something:
 Check teeing something:
 	abide by the dangerous destruction rules for the noun.
 
+Check teeing the ear:
+	if the goal-object is a tear and an alterna-tear (called the goal) is in the repository:
+		now the goal-object is the goal.
+
 Carry out teeing something:
 	now the goal-object is not proffered by anything;
 	if the goal-object is r-abstract:
@@ -1737,6 +1741,11 @@ To decide what list of text is the anagram key of (n - an object):
 
 Check shooting something with the anagramming gun:
 	abide by the dangerous destruction rules for the noun.
+
+A last check shooting something with the anagramming gun:
+	if the detritus is a tear:
+		if there is an alterna-tear (called the goal) in the repository:
+			now the detritus is the goal;
 
 Carry out shooting something with the anagramming gun:
 	move the detritus to the holder of the noun;

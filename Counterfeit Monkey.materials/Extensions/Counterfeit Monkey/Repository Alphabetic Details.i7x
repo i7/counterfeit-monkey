@@ -437,7 +437,23 @@ The camembert is an edible thing. The description of the camembert is "A rich, s
 	Sanity-check cutting the camembert:
 		say "A notch in the flesh of the camembert exposes the yellowish creamy interior." instead.
 
-Every generic-cap covers the head area. The description of a generic-cap is "A black sports cap with the logo of the local soccer team The Atlantis Cuttlefish.". The printed name of a generic-cap is "cap". Understand "cap" or "sports" or "logo" or "cuttlefish" as a generic-cap. The scent-description of a generic-cap is usually "sweat and hair wax".
+Every generic-cap covers the head area. The description of a generic-cap is "A black sports cap with the logo of my father's fav[our]ite soccer team The Atlantis Cuttlefish.". The printed name of a generic-cap is "cap". Understand "cap" or "sports" or "logo" or "cuttlefish" as a generic-cap. The scent-description of a generic-cap is usually "sweat and hair wax".
+
+The description of an alterna-cap is "A small plastic snap cap that looks like it used to sit on a tube or bottle of some kind."
+
+Understand "cap" or "plastic" and "snap" as an alterna-cap. The printed name of alterna-cap is "cap".
+
+Sanity-check putting an alterna-cap on the tube:
+	say "The cap doesn't fit. It must belong to a different tube." instead
+
+Sanity-check putting an alterna-cap on the bottle of vodka:
+	say "The vodka bottle already has a cap." instead
+
+Sanity-check putting an alterna-cap on the bottle of ouzo:
+	say "The ouzo bottle already has a cap." instead
+
+Sanity-check putting an alterna-cap on an contained fluid thing (called current bottle):
+	say "[The current bottle] [are] already [have] [if the current bottle is plural-named]caps[otherwise]a cap[end if]." instead.
 
 The description of the cartage is "'Cartage' here takes the form of an invoice for the transport of farm products by cart."
 
@@ -709,7 +725,12 @@ The description of the conference-poser is "She looks back at [us] with a martia
 Every turn when the conference-poser is in the location:
 	say "[The conference-poser] says, '[one of]Yes, but we haven't really [i]problemat[ize]d[/i] [the random-visible-thing][or]I think a [one of]Marxist[or]Keynesian[or]Lacanian[or]Saussurian[or]Derridean[at random] understanding of [the random-visible-thing] is not, indeed cannot be, useful to us at this juncture[or]Statistical sentence analysis of a sufficient corpus of materials ought to reveal the likeliest forms for [a random r-abstract thing][or]What we have not considered is the possibility of synonym shame, for instance with words such as [i]donkey[/i] or [i]rooster[/i][or]My field is the study of hispanogerontology, the illicit practice of giving seniors a new lease on life by turning them into Señors[at random].'"
 
-The description of the cord is "It's a thin glittery red cord of the kind used to tie up Christmas packages."
+The cop is a woman. The description of the cop is "A uniformed All-Purpose Officer with a grim countenance, her restoration-gel rifle aimed straight at [us]."
+
+A dangerous construction rule for the cop:
+	say "Before [we] have time to act, the All-Purpose Officer has called for backup. 'You better have a good explanation for this,' she says.[paragraph break]As it turns out, [we] don't.";
+	end the story saying "That could have gone better";
+	the rule succeeds.
 
 The description of the cord is "It's a thin glittery red cord of the kind used to tie up Christmas packages."
 
@@ -734,9 +755,9 @@ The description of the counterweight is "A very substantial hunk of metal with a
 
 The description of the countertop is "The result is a slab of good black granite, shiny and easy to clean, with a pre-cut hole, probably where a kitchen sink would be meant for installation." The heft of the countertop is 8.
 
+The description of a CPU is "A central processing unit, the brains of pretty much every modern device. This one is stamp-sized, with rows of tiny legs on every side.". Understand "processing" or "central" or "unit" or "legs" as a CPU.
+
 The cratering is r-abstract. The indefinite article is "some". The heft is 0. The description is "It's an image, light as air, of the moon and the craters on it."
-
-
 
 The crew-group is a privately-named plural-named person. The description of the crew-group is "Five (or six? it's extremely hard to count) swarthy sailors. They look buff and burly and have very thick eyebrows." The heft of the crew-group is 6.  The printed name of the crew-group is "crew". Understand "crew" as the crew-group.
 
@@ -767,6 +788,8 @@ Carry out switching off a CRT:
 The description of the crumb is "It's just one tiny little flake from a croissant or pastry."
 
 The description of the cud is "It's best not to look too closely.". The scent-description is "grassy manure".
+
+The description of a generic-cup is "A black porcelain coffee cup, bearing the logo of my father's fav[our]ite soccer team The Atlantis Cuttlefish.". The printed name of a generic-cup is "cup". Understand "cup" or "coffee" or "black" or "porcelain" or "logo" or "cuttlefish" as a generic-cup.
 
 The curd is edible. The description of the curd is "A soft white clump of cheese substance."
 
@@ -3733,10 +3756,12 @@ The tea is an edible contained fluid thing. The scent-description is "[one of]be
 Check waving the letter-remover at the tea when the current setting of the letter-remover is "t":
 	say "For a flickering moment, the letter-remover very nearly manages to conjure some No Tea in its place." instead.
 
-The description of the tear is "It looks like any other droplet of water."
+The description of a tear is "It looks like any other droplet of water."
 
-Instead of tasting the tear:
+Instead of tasting a tear:
 	say "It wouldn't survive the experience."
+
+The description of an alterna-tear is "A piece of cloth with a hole torn right through it. Much easier to transport than the other kind of tear." The printed name of an alterna-tear is "tear". Understand "tear" as an alterna-tear.
 
 [A fake-ten is r-abstract. The heft of a fake-ten is 0. The description of a fake-ten is usually "The concept of ten is here represented by [one of]the letter X[or]the digits 1 and 0[or]the digit A[or]an Olympic judge holding up a scorecard[at random]." Understand "ten" as a fake-ten. The printed name of a fake-ten is "ten".]
 
