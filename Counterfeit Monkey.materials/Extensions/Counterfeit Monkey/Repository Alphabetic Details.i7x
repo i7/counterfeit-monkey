@@ -1236,7 +1236,7 @@ At the moment, this concept is embodied as a pair of giant hands clasped in a ha
 
 A dangerous construction rule for the in-object:
 	say "True to its nature, the in attracts [us] like a moth to a flame, then crushes [us] to pulp in its firm grasp.";
-	end the story saying "At least [we] are truly in now";
+	end the story saying "At least [we] [are] truly in now";
 	rule succeeds.
 
 The description of the inapt sign is "The sign reads WARNING: [one of]DO NOT CLIMB DOME DURING THUNDERSTORM[or]WATCH OUT FOR BEARS[or]CARS PARKED WITHOUT A STICKER WILL BE TOWED AT OWNER'S EXPENSE[or]MUSHROOMS MAY BE POISONOUS[at random]."
