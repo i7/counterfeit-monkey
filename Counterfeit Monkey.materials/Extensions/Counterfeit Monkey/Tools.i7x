@@ -2288,10 +2288,11 @@ After inserting something into the cryptolock:
 		[ if something which proffers the chosen article encloses an essential thing:
 			now the chosen article is essential; ]
 		now everything which is in the cryptolock is in the repository;
-		move the chosen article to the cryptolock;
-		abide by the dangerous construction rules for the chosen article;
-		if the chosen article is the cord and the power cord is in the cryptolock:
+		if the chosen article is the cord and the power chord is not seen:
 			now the chosen article is the power cord;
+			now the printed name of power cord is "cord";
+			reset hash code of power cord;
+		move the chosen article to the cryptolock;
 		unless the chosen article is in the Generator room:
 			say "There is a churning noise from within [the cryptolock], and a moment later [we] see inside [a list of things *in the cryptolock]. [run paragraph on]";
 		let paragraph break needed be true;
@@ -2301,6 +2302,7 @@ After inserting something into the cryptolock:
 			try examining the chosen article;
 			now paragraph break needed is false;
 		record "using the vowel rotator" as achieved;
+		abide by the dangerous construction rules for the chosen article;
 		if the boiler is switched off:
 			now the boiler is switched on;
 			say "[if paragraph break needed is true][paragraph break][end if]This appears to have unlocked the mechanism. With a growl, the boiler comes to life.";

@@ -711,13 +711,7 @@ Every turn when the conference-poser is in the location:
 
 The description of the cord is "It's a thin glittery red cord of the kind used to tie up Christmas packages."
 
-A dangerous construction rule for the cord:
-	if the power chord is not seen:
-		let loc be the holder of the cord;
-		now the cord is nowhere;
-		move the power cord to loc;
-		now the printed name of power cord is "cord";
-		reset hash code of power cord.
+The description of the cord is "It's a thin glittery red cord of the kind used to tie up Christmas packages."
 
 Table of Ultratests (continued)
 topic	stuff	setting
