@@ -953,7 +953,7 @@ The repository contains a papa and some papas and an aa and an aas-object.
 The repository contains  a passage-place. ["page", "passage"]
 
 [pass]
-The repository contains a password-thing, a passcard, a passage.
+The repository contains a password-thing, a passcard, a passage, a passkey-thing.
 
 [pat]
 The repository contains a patera.

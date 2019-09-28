@@ -396,6 +396,7 @@ The pass is fake. [I1481_pass]
 The passage-place is fake. [I2353_passage_place]
 The passage is fake. [I2356_passage]
 The passcard is fake. [I2355_passcard]
+The passkey-thing is fake.
 The password-thing is fake. [I2354_password_thing]
 The pastel bras is fake. [I1536_pastel_bras]
 The pastis is fake. [I1480_pastis]

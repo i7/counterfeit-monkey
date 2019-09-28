@@ -237,6 +237,7 @@ The painted Moorish patterns has hash code 979353. [K2_thing]
 A paper-drawer has hash code 4358169. [K5_container]
 A par has hash code 163841. [K134_par]
 A part has hash code 688129. [K135_part]
+The passkey-thing has hash code 17073169.
 A pat has hash code 557057. [K136_pat]
 A pat-items has hash code 819201. [K137_pat_items]
 The spinner has hash code 821273. [K6_supporter]

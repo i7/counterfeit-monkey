@@ -1767,6 +1767,9 @@ The description of the pass is "A Bureau of Orthography visiting pass, a very va
 The description of the passcard is "A variant of a passport: it has an image on the front that looks more or less like us, though with more hair, and the stripe on the back is imprinted, presumably, with various biometric information. It's no good at unlocking doors, however."
 	The scent-description of the passcard is "plastic".
 
+The passkey-thing is a passkey. The description of the passkey-thing is "Looks like an ordinary door key, but one which might be able to unlock every front door in some apartment building or residential area. There is no clue as to where, though, which makes it kind of useless."
+	The printed name of the passkey-thing is "passkey". Understand "passkey" and "key" as the passkey-thing. The scent-description of the passkey-thing is "sweaty metal".
+
 The passage is a notepad. The heft of the passage is 1. The description of the passage is "A short piece of prose neatly letterpressed onto a large sheet of paper. It reads:
 
 [i]The alphabet is a system of interchangeable parts. The word form can be surgically revised, instead of rewritten, to become the word farm or firm or fork or fort or from, or with a little more trouble, to become the word pineapple. [--] Robert Bringhurst[/i]".

@@ -729,6 +729,7 @@ The passage-place proffers the passage-place. [I2353_passage_place]
 The passage proffers the passage. [I2356_passage]
 The passage-exit proffers the passage-exit. [I2458_passage_exit]
 The passcard proffers the passcard. [I2355_passcard]
+The passkey-thing proffers the passkey-thing.
 The password-thing proffers the password-thing. [I2354_password_thing]
 The pastel bras proffers the pastel bras. [I1536_pastel_bras]
 The pasts proffers the pasts. [I1482_pasts]
