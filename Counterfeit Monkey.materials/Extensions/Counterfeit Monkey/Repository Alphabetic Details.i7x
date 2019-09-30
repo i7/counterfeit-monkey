@@ -280,7 +280,7 @@ The printed name of the abstract-bend is "bend". Understand "bend" as the abstra
 
 The bet is usually r-abstract. Understand "wager" or "betting book" as a bet. The description of a bet is usually "It's represented as a wager written down in a betting book, the current entry concerning [one of]this year's chard harvest[or]the number of days it's destined to be rainy in Atlantis this year[or]a horse inventively named Mare[or]the minimum possible driving time from Palm Square over to the Rust Tip Parking Lot in Maiana on the other side of the island[sticky random]."
 
-The heft of the big revel is 20. The description of the big revel is "It's the entirety of a party in true Gatsby style: dancers doing the Charleston, the orchestra to play the music, the waiters to circulate the canapes, some sculptures, a fountain or two, a fireworks display."
+[The heft of the big revel is 20. The description of the big revel is "It's the entirety of a party in true Gatsby style: dancers doing the Charleston, the orchestra to play the music, the waiters to circulate the canapes, some sculptures, a fountain or two, a fireworks display."]
 
 The bind is r-abstract. The description of the bind is "It's represented as an old-fashioned illustration of Odysseus['] passage between the rock and the hard place. Scylla's heads poke out over the water, her doggy eyes red with wrath."
 
@@ -381,7 +381,7 @@ The bull is an animal. The description of the bull is "He looks as though he has
 
 The heft of the bund is 10. The description of the bund is "An earthwork embankment designed to prevent oil repositories from bursting their banks and spilling into the surrounding waters."
 
-The heft of a fake-bus is 10. The description of a fake-bus is "It's one of the coaches that runs a regular service between here and Maiana. The windows are tinted to keep off the worst of the afternoon glare.". The printed name of the fake-bus is "bus". Understand "bus" as the fake-bus.
+[The heft of a fake-bus is 10. The description of a fake-bus is "It's one of the coaches that runs a regular service between here and Maiana. The windows are tinted to keep off the worst of the afternoon glare.". The printed name of the fake-bus is "bus". Understand "bus" as the fake-bus.]
 
 The heft of some buses is 10. The description of buses is "There's a whole fleet of them, perhaps every bus on the island. They're dusty: the road to Maiana gets dry in the summer."
 
@@ -725,12 +725,12 @@ The description of the conference-poser is "She looks back at [us] with a martia
 Every turn when the conference-poser is in the location:
 	say "[The conference-poser] says, '[one of]Yes, but we haven't really [i]problemat[ize]d[/i] [the random-visible-thing][or]I think a [one of]Marxist[or]Keynesian[or]Lacanian[or]Saussurian[or]Derridean[at random] understanding of [the random-visible-thing] is not, indeed cannot be, useful to us at this juncture[or]Statistical sentence analysis of a sufficient corpus of materials ought to reveal the likeliest forms for [a random r-abstract thing][or]What we have not considered is the possibility of synonym shame, for instance with words such as [i]donkey[/i] or [i]rooster[/i][or]My field is the study of hispanogerontology, the illicit practice of giving seniors a new lease on life by turning them into Señors[at random].'"
 
-The cop is a woman. The description of the cop is "A uniformed All-Purpose Officer with a grim countenance, her restoration-gel rifle aimed straight at [us]."
+[The cop is a woman. The description of the cop is "A uniformed All-Purpose Officer with a grim countenance, her restoration-gel rifle aimed straight at [us]."]
 
-A dangerous construction rule for the cop:
+[A dangerous construction rule for the cop:
 	say "Before [we] have time to act, the All-Purpose Officer has called for backup. 'You better have a good explanation for this,' she says.[paragraph break]As it turns out, [we] don't.";
 	end the story saying "That could have gone better";
-	the rule succeeds.
+	the rule succeeds.]
 
 The description of the cord is "It's a thin glittery red cord of the kind used to tie up Christmas packages."
 
@@ -1184,10 +1184,10 @@ Sanity-check digging in heel:
 	say "Oh, I think we can both be stubborn when we have to." instead.
 
 
-The herds are a neuter animal. The heft of the herds is 10. The description of the herds is "Cows, goats, and sheep, all mingled together and furious to be thus manifested without a shepherd."
+The herds are a neuter animal. The heft of the herds is 8. The description of the herds is "Cows, goats, and sheep, all mingled together and furious to be thus manifested without a shepherd."
 
-Every turn when the herds are in the location:
-	say "Something spooks the herds [--] not surprising, as there is scarcely enough room here for them to move. The cows try to go one direction, the goats another, and we are dragged underhoof.";
+Every turn when the herds are enclosed by the location:
+	say "Something spooks the herds [--] not surprising, as there is scarcely enough room here for them to move. The cows try to go one direction, the goats another, and [we] [are] dragged underhoof.";
 	end the story saying "That was unwise".
 
 The ho is a woman. The description of the ho is "She looks to be in her mid-twenties and is wearing a tight, neon blue outfit that makes her look like a naked water nymph."
@@ -1329,7 +1329,7 @@ Every turn when the kudu is in location:
 	say "The kudu looks at us cleverly for a moment and then bounds away.";
 	now the kudu is nowhere.
 
-The heft of the lab-thing is 10. The description of the lab-thing is "A full-sized scientific research laboratory, one of the many owned by Dental Consonants Limited." The printed name of the lab-thing is "lab". Understand "lab" or "laboratory" as the lab-thing.
+[The heft of the lab-thing is 10. The description of the lab-thing is "A full-sized scientific research laboratory, one of the many owned by Dental Consonants Limited." The printed name of the lab-thing is "lab". Understand "lab" or "laboratory" as the lab-thing.]
 
 The lam is r-abstract. The description of the lam is "The abstract image of being on the lam. A pair of leg-irons lies discarded on the ground. A man runs through the woods. A marshall organizes a team to follow him. There's a sequence involving a chase through sewers and another involving some fake identification. It all feels a little familiar for comfort."
 
@@ -1406,7 +1406,7 @@ To say relevant lie:
 
 The printed name of the lime-powder is "lime". Understand "powder" or "lime" as the lime-powder. The description of the lime-powder is "A heap of dry chalky powder." The indefinite article of the lime-powder is "some".
 
-Some litotes are an r-abstract thing. The description is "A not unimpressive figure of speech."
+The litotes is an r-abstract thing. The description is "A not unimpressive figure of speech."
 
 	Sanity-check smelling litotes:
 		say "The litotes is not unfree of scent." instead.
@@ -1646,7 +1646,7 @@ The description of the officer is "A single, irate-looking officer."
 
 The printed name of the offices-thing is "offices". The description of the offices-thing is "A whole configuration of cubicles: it's come out as small as possible and yet still takes up a substantial amount of space. It's frankly surprising that it didn't squash anyone."
 
-The heft of the Ohio is 20. The description of the Ohio is "All I get is a confused impression of factories and battleground politics before the whole thing comes crashing down on us."
+[The heft of the Ohio is 20. The description of the Ohio is "All I get is a confused impression of factories and battleground politics before the whole thing comes crashing down on us."]
 
 The description of an oil is "A can of what appears to be motor oil. It is sludgy and black." The indefinite article of the oil is "some". The scent-description of an oil is "mechanics and the summer time". The printed name of an oil is "oil". Understand "oil" or "can" or "motor oil" as oil.
 	Understand "cans" as the plural of oil.
@@ -1689,7 +1689,7 @@ The oyster turd is fluid.
 Instead of taking the oyster turd:
 	say "No way! It is too fluid to easily pick up anyway."
 
-The heft of the Oz is 20. The description of the Oz is "Look, we've got ourselves a shiny new Australia. It's pretty large, though, isn't it?"
+[The heft of the Oz is 20. The description of the Oz is "Look, we've got ourselves a shiny new Australia. It's pretty large, though, isn't it?"]
 
 Section 9 - Pa
 
@@ -1713,7 +1713,7 @@ Every turn when the player carries a pa (called target):
 	move the target to the location;
 	say "[The target] is very heavy, and winds up (before his transformation is complete) stepping on our feet, and then scrambling away (with apologies)."
 
-The description of PARC is "Palo Alto Research Center [--] tons and tons of 1970s-era high-tech plastic, steel, and concrete. At least the carp didn't turn into crap." The heft of PARC is 1000. The scent-description of PARC is "burnt electronics dust".
+[The description of PARC is "Palo Alto Research Center [--] tons and tons of 1970s-era high-tech plastic, steel, and concrete. At least the carp didn't turn into crap." The heft of PARC is 1000. The scent-description of PARC is "burnt electronics dust".]
 
 [The description of the paint is "Bright blue paint, of the house-painting variety and not the thicker, more controllable kind used for art." The indefinite article is "some". ]
 
@@ -2286,7 +2286,7 @@ Some pit-items are a thing. The description of the pit-items is "Assorted stones
 
 The pita is an edible thing. The description of the pita is "A round, brown pocket-bread." The scent-description of the pita is "baked goods".
 
-The pit-trap is an open enterable container. It is fixed in place. The heft of the pit-trap is 10. The printed name of a pit-trap is "pit trap". Understand "pit trap" or "deep pit" or "pit" or "rocks" or "stones" or "stakes" or "sharpened" or "stake" as a pit-trap. The description of a pit-trap is "It's a deep pit lined with rocks, set into the surface of [the holder of the item described]. Sharpened stakes jut upward from the bottom, ready to stab any large mammal unfortunate enough to fall in."
+The pit-trap is an open enterable container. It is fixed in place. The printed name of a pit-trap is "pit trap". Understand "pit trap" or "deep pit" or "pit" or "rocks" or "stones" or "stakes" or "sharpened" or "stake" as a pit-trap. The description of a pit-trap is "It's a deep pit lined with rocks, set into the surface of [the holder of the item described]. Sharpened stakes jut upward from the bottom, ready to stab any large mammal unfortunate enough to fall in."
 
 Instead of inserting something into the pit-trap:
 	say "That is not a good way to get rid of [the noun]."
@@ -2295,7 +2295,7 @@ Instead of entering the pit-trap:
 	say "Against my better judgment, [we] slip over the edge into the pit trap and are impaled on the spikes below. It will be some considerable time before anyone thinks to check down here.";
 	end the story saying "What made you think that was a good idea?"
 
-The heft of Pisa is 20. The description of Pisa is "It's manifested mostly as the leaning tower, but that's still quite a bit more than can fit into this environment."
+[The heft of Pisa is 20. The description of Pisa is "It's manifested mostly as the leaning tower, but that's still quite a bit more than can fit into this environment."]
 
 The printed name of the plain-plate is "plate". Understand "plate" as plain-plate.
 
@@ -2600,7 +2600,7 @@ Carry out an actor connecting something:
 
 [There's really no particular point to having the britishizing goggles change the compatibility of the plug. I just couldn't resist.]
 
-The heft of the massive pug is 10. The massive pug is a neuter animal. The scent-description of the massive pug is "puppies". The description of the massive pug is "With its  wrinkly, short-muzzled face, curled tail and fine, glossy coat of fawn fur, it would be adorable if not for the fact that it is large enough to fill the entire room."
+[The heft of the massive pug is 10. The massive pug is a neuter animal. The scent-description of the massive pug is "puppies". The description of the massive pug is "With its  wrinkly, short-muzzled face, curled tail and fine, glossy coat of fawn fur, it would be adorable if not for the fact that it is large enough to fill the entire room."]
 
 Section 13 - Pr - Pz
 
@@ -3916,7 +3916,7 @@ The toil is r-abstract. The description of toil is "An utterly typical Atlantean
 
 [It was, unsurprisingly, Graham who suggested TS Eliot as an alternate anagram for toilets/litotes.]
 
-The description of the toilets-collective is "Enough toilets to stock a public restroom for a thea[ter] or a small sporting venue[one of]. And here I was hoping we'd get T.S. Eliot.[or].[stopping]". The heft of the toilets-collective is 10. The toilets-collective is plural-named. The toilets-collective is a toilet.
+[The description of the toilets-collective is "Enough toilets to stock a public restroom for a thea[ter] or a small sporting venue[one of]. And here I was hoping we'd get T.S. Eliot.[or].[stopping]". The heft of the toilets-collective is 10. The toilets-collective is plural-named. The toilets-collective is a toilet.]
 
 The description of the toll is "It's a list of prices for taking the high road across to Maiana. Different prices pertain depending on whether the toll-payer is driving a horse-cart or a donkey-cart."
 
@@ -4276,7 +4276,7 @@ Sanity-check taking the yams-collection:
 
 The description of the zen frond rinse is "This blue plastic bottle contains all that is necessary to maintain one's ferns in a state suitable for a Buddhist garden." The scent-description is "soapy chemicals".
 
-The heft of the zoo is 20. The description of the zoo is "Giraffes, bison, zebras, elephants, panthers, a polar bear: charismatic megafauna from every continent come tumbling past, and eventually overwhelm us."
+[The heft of the zoo is 20. The description of the zoo is "Giraffes, bison, zebras, elephants, panthers, a polar bear: charismatic megafauna from every continent come tumbling past, and eventually overwhelm us."]
 
 
 Repository Alphabetic Details ends here.

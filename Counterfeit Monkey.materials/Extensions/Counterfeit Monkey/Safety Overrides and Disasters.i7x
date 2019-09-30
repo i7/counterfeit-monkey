@@ -61,7 +61,7 @@ A dangerous construction rule for a sink (called target sink):
 		now target sink is portable.
 
 A dangerous construction rule for something enormous (called the target):
-	say "Unfortunately, [the target] [are] more than sufficient to bury [us] under [their] bulk.";
+	say "Unfortunately, [the target] [are] more than sufficient to bury [us] under [regarding the target][their] bulk.";
 	end the story saying "That could have gone better";
 	rule succeeds;
 

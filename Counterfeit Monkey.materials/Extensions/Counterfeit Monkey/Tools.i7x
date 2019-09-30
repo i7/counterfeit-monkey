@@ -313,8 +313,19 @@ Check waving the letter-remover at something:
 Check waving the letter-remover at the restoration gel:
 	abide by the don't change irretrievable rules for the restoration gel.
 
-Check waving the letter-remover at something creating the massive pug:
-	move the second noun to the holder of the noun.
+Check waving the letter-remover at the massive plug when the current setting of the letter-remover is "l":
+	say "With a pleasant smell of puppies, the massive plug turns into a massive pug. Its  wrinkly, short-muzzled face, curled tail and fine, glossy coat of fawn fur would be adorable if not for the fact that it is large enough to fill the room.
+
+Massive or not, the pug still seems to have room for more, and before [we] can react, it has gobbled [us] up.";
+	end the story saying "[We] have become dog food";
+	stop the action.
+
+Check waving the letter-remover at the lamb when the current setting of the letter-remover is "m":
+	say "There is [one of]a flash of psychedelic col[our]s[or]a mad-scientist cackle[or]a [pastel-color] cloud[or]a flash of [primary-color] light[or]a smell of anise[or]a distinct spearmint flavor[at random], and the lamb turns into a lab. A full-sized scientific research laboratory, one of the many owned by Dental Consonants Limited.
+
+Unfortunately, the lab is more than enough to bury [us] under its bulk.";
+	end the story saying "That could have gone better";
+	stop the action.
 
 Check waving the letter-remover at something which is enclosed by the player:
 	if the player wears the second noun:
@@ -808,7 +819,6 @@ To synthesize contents of (source - a thing):
 			stop;
 		abide by the dangerous destruction rules for X;
 		abide by the dangerous destruction rules for Y;
-		abide by the dangerous construction rules for the chosen article;
 		now the chosen article is not proffered by anything;
 		repeat with item running through contents-list:
 			now the item proffers the chosen article;
@@ -827,6 +837,7 @@ To synthesize contents of (source - a thing):
 		now the chosen article is marked-visible;
 		now X is marked invisible;
 		now Y is marked invisible;
+		abide by the dangerous construction rules for the chosen article;
 	otherwise:
 		say "[The source] whirs for a moment, then dies down again.";
 
@@ -1706,6 +1717,27 @@ Check shooting the pills with the loaded anagramming gun:
 	if the pills are in a container (called the box) and the number of things in the box is greater than 1 and the box is not the synthesizer:
 		say the spill would make a mess in the box instead.
 
+Check shooting the litotes with the loaded anagramming gun:
+	say "The gun fires ruggedly into the litotes, which shatters and then reforms as a some of toilets. Enough toilets to stock a public restroom for a thea[ter] or a small sporting venue. And here I was hoping we'd get T.S. Eliot.
+
+Unfortunately, the toilets completely bury [us] under their bulk.";
+	end the story saying "That could have gone better.";
+	stop the action.
+
+Check shooting the carp with the loaded anagramming gun:
+	say "The gun fires ruggedly into the carp, which shatters and then reforms as PARC. Palo Alto Research Center [--] tons and tons of 1970s-era high-tech plastic, steel, and concrete.
+
+Unfortunately, PARC is more than sufficient to bury [us] under its bulk.";
+	end the story saying "That could have gone better.";
+	stop the action.
+
+Check shooting the big lever with the loaded anagramming gun:
+	say "The gun fires ruggedly into the carp, which shatters and then reforms as a big revel. It's the entirety of a party in true Gatsby style: dancers doing the Charleston, the orchestra to play the music, the waiters to circulate the canapes, some sculptures, a fountain or two, a fireworks display.
+
+Unfortunately, the revel is more than big enough to bury [us] under its bulk.";
+	end the story saying "That could have gone better.";
+	stop the action.
+
 Check shooting something with the loaded anagramming gun:
 	let initial key be the anagram key of the noun;
 	now detritus is the noun;
@@ -2160,7 +2192,8 @@ Instead of switching on the big lever:
 					if the result is the passage-place:
 						say "[The programmable dais] glows deep red, then deeper. There's a roar like a stadium being demolished, and a passage opens, descending into the dais itself." instead;
 					otherwise:
-						say "[The programmable dais] glows deep red. Almost at once [the result] [are] lying on the surface. [result description][line break]" instead;
+						say "[The programmable dais] glows deep red. Almost at once [the result] [are] lying on the surface. [result description][line break]";
+						abide by the dangerous construction rules for the target instead;
 			say "[The programmable dais] goes red, then dims again. Apparently it can't find a homonym to fit [the list of things *in the programmable dais]." instead;
 	now the big lever is switched off.
 
@@ -2260,10 +2293,17 @@ Check inserting something into the cryptolock when the cryptolock contains somet
 Check inserting something into the cryptolock when the heft of the noun is greater than 3:
 	say "[The noun] [are] too big to fit into [the cryptolock]." instead.
 
-A dangerous construction rule for something (called the target):
-	if the target is in the cryptolock and the heft of the target is greater than 3:
-		now the target is in the Generator Room;
-		say "There is a churning noise from within [the cryptolock] as [a target] [are] formed within. The finished [target] [are] too big to fit in the bucket, however, and [fall] out during the process of formation. "
+After inserting the ass into the cryptolock when hardness is true and the cryptoswitch is switched on:
+	say "There is a churning noise from within [the cryptolock] and 'zoo' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like giraffes, bison, zebras, elephants, panthers, a polar bear and other charismatic megafauna in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead;
+
+After inserting a generic-cup into the cryptolock when hardness is false and the cryptoswitch is switched on:
+	say "There is a churning noise from within [the cryptolock] and 'cop' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like an All-Purpose Officer in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead;
+
+After inserting the pose into the cryptolock when hardness is false and the cryptoswitch is switched on:
+	say "There is a churning noise from within [the cryptolock] and 'pisa' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like a leaning tower in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead;
+
+After inserting a tint into the cryptolock when hardness is true and the cryptoswitch is switched on:
+	say "There is a churning noise from within [the cryptolock] and 'ohio' appears in letters of vivid purple smoke. [We] get a confused impression of factories and battleground politics in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead;
 
 Test bucket-size with "put coat in bucket / wave a-remover at coat / get cot / put cot in bucket" holding the coat in the Generator Room.
 
@@ -2305,7 +2345,10 @@ After inserting something into the cryptolock:
 			now the printed name of power cord is "cord";
 			reset hash code of power cord;
 		move the chosen article to the cryptolock;
-		unless the chosen article is in the Generator room:
+		if the heft of the chosen article is greater than 3:
+			now the chosen article is in the Generator Room;
+			say "There is a churning noise from within [the cryptolock] as [a chosen article] [are] formed within. The finished [chosen article] [are] too big to fit in the bucket, however, and [fall] out during the process of formation. [run paragraph on]";
+		otherwise:
 			say "There is a churning noise from within [the cryptolock], and a moment later [we] see inside [a list of things *in the cryptolock]. [run paragraph on]";
 		let paragraph break needed be true;
 		now the chosen article is marked-visible;
