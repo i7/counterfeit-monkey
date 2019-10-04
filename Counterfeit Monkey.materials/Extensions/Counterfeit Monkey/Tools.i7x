@@ -1052,7 +1052,7 @@ In the backpack is an authentication scope called a monocle. The description of 
 	The monocle is essential.
 	The monocle covers the face-area.
 
-Last after examining something when the player wears the monocle:
+Last after examining something when the player wears the monocle (this is the use monocle after examine rule):
 	if the noun is not the monocle:
 		try looking at the noun through the monocle;
 	continue the action.
