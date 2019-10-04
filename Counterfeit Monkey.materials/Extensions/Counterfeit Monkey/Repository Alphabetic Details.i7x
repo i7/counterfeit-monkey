@@ -1795,7 +1795,7 @@ The passage is a notepad. The heft of the passage is 1. The description of the p
 
 [i]The alphabet is a system of interchangeable parts. The word form can be surgically revised, instead of rewritten, to become the word farm or firm or fork or fort or from, or with a little more trouble, to become the word pineapple. [--] Robert Bringhurst[/i]".
 
-The passage-place is a thing. The printed name is "passage". Understand "passage" or "corridor" as the passage-place. The heft of the passage-place is 10. The passage-place is fixed in place. The description is "It's a dark, stone-lined corridor leading into the earth." The initial appearance is "A passage lined in stone descends into the face of [the programmable dais]."
+The passage-place is a thing. The printed name is "passage". Understand "passage" or "corridor" as the passage-place. The passage-place is fixed in place. The description is "It's a dark, stone-lined corridor leading into the earth." The initial appearance is "A passage lined in stone descends into the face of [the programmable dais]."
 
 [This portion is, again, totally an Easter egg: there's no need to go to the Shadow Chamber, and on the whole it's pretty unlikely that anyone will on the first try. However, it's a repository for palindromes and word puzzles of non-English and slightly superstitious origin, suggesting that some sense of magic attached to these even before linguistic efficacy was widely detected.]
 
