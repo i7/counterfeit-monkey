@@ -1503,6 +1503,9 @@ Definition: a thing is sticky-to-the-touch:
 	if it is a tar:
 		yes.
 
+Instead of touching a fluid thing:
+	say "Wet."
+
 Definition: a thing (called itself) is original if it proffers itself and it is proffered by exactly one thing.
 
 To gel-convert (item - an object):
