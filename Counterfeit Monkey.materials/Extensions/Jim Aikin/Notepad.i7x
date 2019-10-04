@@ -70,7 +70,8 @@ After examining a notepad (called N) (this is the notepad output rule):
 		if term is terminated:
 			say "'[memo of N]'[paragraph break]" (B);
 		otherwise:
-			say "'[memo of N].'" (C).
+			say "'[memo of N].'" (C);
+	continue the action.
 
 Section 3 - Writing It On
 
