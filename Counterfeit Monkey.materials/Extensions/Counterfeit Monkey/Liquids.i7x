@@ -251,6 +251,8 @@ Definition: a thing is washing-appropriate:
 		yes;
 	if it is tap-water:
 		yes;
+	if it is secret-chamber-water:
+		yes;
 	if it is a tap which is part of something:
 		yes;
 	if it incorporates a tap:

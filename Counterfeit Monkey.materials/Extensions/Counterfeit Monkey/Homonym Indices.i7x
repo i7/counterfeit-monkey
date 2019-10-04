@@ -1222,6 +1222,7 @@ The watchword has homonym index 1218.
 The water cooler has homonym index 1219.
 The fountain-water has homonym index 1220.
 The tap-water has homonym index 1220.
+The secret-chamber-water has homonym index 1220.
 The weight has homonym index 1222.
 The wet epigraph has homonym index 1223.
 The wheel has homonym index 1224.

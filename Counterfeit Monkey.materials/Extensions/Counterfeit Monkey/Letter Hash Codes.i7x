@@ -1367,6 +1367,7 @@ The watchword has hash code 4866189. [I2423_watchword]
 The water cooler has hash code 4868117. [I946_water_cooler]
 The fountain-water has hash code 4849681.
 The tap-water has hash code 4849681.
+The secret-chamber-water has hash code 4849681.
 The weight has hash code 4719056. [I1772_weight]
 The wet epigraph has hash code 4882897. [I1775_wet_epigraph]
 The wheel has hash code 4196496. [I494_wheel]

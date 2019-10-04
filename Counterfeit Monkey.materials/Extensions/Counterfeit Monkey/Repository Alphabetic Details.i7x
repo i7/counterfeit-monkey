@@ -1813,7 +1813,7 @@ To say assign-amanda:
 The Greek inscription is fixed in place in the shadow chamber.
 The initial appearance is "Cold water flows from a crack in the wall. Above it, words are carved: ΝΙΨΟΝ ΑΝΟΜΗΜΑΤΑ ΜΗ ΜΟΝΑΝ ΟΨΙΝ."
 The description is "The words are ΝΙΨΟΝ ΑΝΟΜΗΜΑΤΑ ΜΗ ΜΟΝΑΝ ΟΨΙΝ."
-Understand "cold" or "water" or "greek" as the Greek inscription.
+Understand "greek" or "words" or "carved" as the Greek inscription.
 
 The sator inscription is fixed in place in the Shadow Chamber.
 The initial appearance is "On the opposite wall is a square of inscribed letters, this time Roman."
@@ -1822,11 +1822,8 @@ The description is "It reads:
 [fixed letter spacing]SATOR[line break]AREPO[line break]TENET[line break]OPERA[line break]ROTAS[variable letter spacing]".
 		Understand "roman" or "letters" or "lettering" or "square" or "square of" as the sator inscription.
 
-
-
 Rule for printing the name of the sator inscription when not shooting:
 	say "Roman inscription".
-
 
 Sanity-check examining a book in Shadow Chamber:
 	say "There's not enough light to read comfortably." instead.
@@ -1835,6 +1832,14 @@ Sanity-check consulting a book about something in Shadow Chamber:
 	say "There's not enough light to read comfortably." instead.
 
 Some dim lights are scenery in the Shadow Chamber. The description is "They glow faintly orange and are just sufficient to give a sense of the place."
+
+The secret-chamber-water is in the Shadow Chamber. The secret-chamber-water is fluid and scenery.
+	The indefinite article is "some". The printed name is "water".
+	Understand "cold/water" or "crack" as the secret-chamber-water.
+	Instead of taking the secret-chamber-water, say "[We] can't, not having webbed fingers."
+	Instead of drinking the secret-chamber-water, say "The water is cold and refreshing."
+	The scent-description of the secret-chamber-water is "wet rock".
+	The description of the secret-chamber-water is "The water flows from a crack in the wall and disappears down another crack in the floor. Above it, words are carved: ΝΙΨΟΝ ΑΝΟΜΗΜΑΤΑ ΜΗ ΜΟΝΑΝ ΟΨΙΝ."
 
 The passage-exit is a door. It is scenery. The printed name is "passage". Understand "passage" or "exit" or "passageway" as the passage-exit. It is above Shadow Chamber. Through the passage-exit is the Workshop. The description of the passage-exit is "The way back to the Workshop is entirely dark."
 

@@ -1132,6 +1132,7 @@ The watchword proffers the watchword. [I2423_watchword]
 The water cooler proffers the water cooler. [I946_water_cooler]
 The fountain-water proffers The fountain-water.
 The tap-water proffers The tap-water.
+The secret-chamber-water proffers the secret-chamber-water.
 The weight proffers the weight. [I1772_weight]
 The wet epigraph proffers the wet epigraph. [I1775_wet_epigraph]
 The wheel proffers the wheel. [I494_wheel]
