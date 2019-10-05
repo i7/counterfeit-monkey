@@ -1810,9 +1810,9 @@ Rule for refusing comment by the bartender:
 		say "'Er… I think that would make a handgun, which would be illegal around here,' she says.";
 		rule succeeds;
 	otherwise:
-		if something (called the source) proffers the noun:
+		if something proffers the noun:
 			now the target is not proffered by anything;
-			now the source proffers the target;
+			now everything which proffers the noun proffers the target;
 		if the noun is part of something (called the encloser):
 			now the target is part of the encloser;
 		otherwise:

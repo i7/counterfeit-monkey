@@ -2149,9 +2149,9 @@ Instead of switching on the big lever:
 			if exactly one thing (called target) is on the programmable dais:
 				let result be the homonym-match of the target;
 				if the result is not the player:
-					if something (called the source) proffers the target:
+					if something proffers the target:
 						now the result is not proffered by anything;
-						now the source proffers the result;
+						now everything which proffers the target proffers the result;
 					abide by the dangerous destruction rules for the target;
 					move the result to the programmable dais;
 					move the target to the repository;
