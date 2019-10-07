@@ -10,14 +10,14 @@ Chapter 1 - The Letter-Remover
 Section 1 - Normal Behavior
 
 Definition: a thing is irretrievable:
-	if it is the player:
-		no;
-	if it encloses the player:
-		no; [because we've got a different disaster lined up to deal with this.]
 	if it is the letter-remover:
 		yes;
 	if it is the tub:
 		yes;
+	if it is the player:
+		no;
+	if it encloses the player:
+		no; [because we've got a different disaster lined up to deal with this.]
 	if it encloses an essential thing:
 		yes;
 	no.
@@ -28,6 +28,22 @@ Check waving the letter-remover at something irretrievable:
 
 The don't change irretrievable rules is an object-based rulebook.
 
+[The irretrievable-ordinal stuff below is a lazy way to try and get some variation, avoiding repeated phrases such as "We try to retrieve everything important from the pit. We try to retrieve everything important from the crate." Instead we get "First, we try to retrieve everything important from the pit. Second, we try to retrieve everything important from the crate. Third, we try to retrieve everything important from the coffer."]
+
+Last-irretrievable-turn is a number that varies.
+
+Current-irretrievable-ordinal is a number that varies.
+
+To say irretrievable-ordinal:
+	if the turn count is last-irretrievable-turn:
+		increment current-irretrievable-ordinal;
+	otherwise:
+		now current-irretrievable-ordinal is 1;
+		now last-irretrievable-turn is the turn count;
+	let N be "[ordinal of current-irretrievable-ordinal]";
+	now N is N in sentence case;
+	say "[N]".
+
 A don't change irretrievable rule for a thing (called the item):
 	if the item is the tub or the item is the letter-remover or the item is the restoration gel:
 		say "It would be a bad idea to change the form of [the item]. [We] might not be able to get it back.";
@@ -37,7 +53,7 @@ A don't change irretrievable rule for a thing (called the item):
 		the rule fails;
 	if the item is a person:
 		make no decision;
-	say "First [we] try to remove everything useful from [the item]. [run paragraph on]";
+	say "[irretrievable-ordinal], [we] try to retrieve everything important from [the item]. [run paragraph on]";
 	let essential-list be the list of essential things enclosed by item;
 	let taken-list be a list of things;
 	let holder-list be a list of things;
@@ -781,8 +797,10 @@ Carry out synth-activating:
 	otherwise:
 		 say "There is no synthesizer here."
 
-Sanity-check inserting something irretrievable into the synthesizer:
-	abide by the don't change irretrievable rules for the noun.
+Sanity-check switching on the synthesizer:
+	repeat with item running through things in the synthesizer:
+		if item is irretrievable:
+			abide by the don't change irretrievable rules for item.
 
 Instead of switching on the synthesizer when the synthesizer contains the roll and the synthesizer contains the rock:
 	say "You can't get to rock & roll with just a synthes[ize]r. You'd need an ampersand generator, which unfortunately (despite promising research and a prototype resembling a pretzel-maker) has yet to achieve stable results."
@@ -2172,8 +2190,10 @@ Sanity-check pulling the big lever:
 Sanity-check pushing the big lever:
 	try switching on the programmable dais instead.
 
-Sanity-check putting something irretrievable on the programmable dais:
-	abide by the don't change irretrievable rules for the noun.
+Sanity-check switching on the big lever:
+	repeat with item running through things on the programmable dais:
+		if item is irretrievable:
+			abide by the don't change irretrievable rules for item.
 
 Sanity-check switching on the programmable dais:
 	try switching on the big lever instead.
