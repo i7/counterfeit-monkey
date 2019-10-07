@@ -192,7 +192,7 @@ The ban is r-abstract. The heft is 0. The description of the ban is "The abstrac
 
 This was a famous political cartoon a year or two ago; it represents in small the Bureau's legislation against unauthor[ize]d access to parts of the internet outside our firewall. The artist hasn't produced any further cartoons."
 
-The alterna-band is a person. The printed name of the alterna-band is "band". Understand "band" as the alterna-band. The heft of the alterna-band is 10. The description of the alterna-band is "The band consists of a thuggish drummer, two guitarists, and a girl vocalist with straight black hair and chunky glasses. They bear a certain resemblance to The Anagrammists, an Altantean alternative band with a brief heyday in the late 90s before the members mysteriously dispersed."
+The alterna-band is a person. The printed name of the alterna-band is "band". Understand "band" as the alterna-band. The heft of the alterna-band is 8. The description of the alterna-band is "The band consists of a thuggish drummer, two guitarists, and a girl vocalist with straight black hair and chunky glasses. They bear a certain resemblance to The Anagrammists, an Altantean alternative band with a brief heyday in the late 90s before the members mysteriously dispersed."
 
 The bandage is a wearable floppy thing. The description of the bandage is "It's made of thick strips of white gauze and looks like it ought to be worn by a WWI veteran. Happily, it manifested without any blood or bodily fluids already in evidence." The heft of the bandage is 1.
 
@@ -1795,7 +1795,7 @@ The passage is a notepad. The heft of the passage is 1. The description of the p
 
 [i]The alphabet is a system of interchangeable parts. The word form can be surgically revised, instead of rewritten, to become the word farm or firm or fork or fort or from, or with a little more trouble, to become the word pineapple. [--] Robert Bringhurst[/i]".
 
-The passage-place is a thing. The printed name is "passage". Understand "passage" or "corridor" as the passage-place. The heft of the passage-place is 10. The passage-place is fixed in place. The description is "It's a dark, stone-lined corridor leading into the earth." The initial appearance is "A passage lined in stone descends into the face of [the programmable dais]."
+The passage-place is a thing. The printed name is "passage". Understand "passage" or "corridor" as the passage-place. The heft of the passage-place is 8. The passage-place is fixed in place. The description is "It's a dark, stone-lined corridor leading into the earth." The initial appearance is "A passage lined in stone descends into the face of [the programmable dais]."
 
 [This portion is, again, totally an Easter egg: there's no need to go to the Shadow Chamber, and on the whole it's pretty unlikely that anyone will on the first try. However, it's a repository for palindromes and word puzzles of non-English and slightly superstitious origin, suggesting that some sense of magic attached to these even before linguistic efficacy was widely detected.]
 
@@ -2286,7 +2286,7 @@ Some pit-items are a thing. The description of the pit-items is "Assorted stones
 
 The pita is an edible thing. The description of the pita is "A round, brown pocket-bread." The scent-description of the pita is "baked goods".
 
-The pit-trap is an open enterable container. It is fixed in place. The printed name of a pit-trap is "pit trap". Understand "pit trap" or "deep pit" or "pit" or "rocks" or "stones" or "stakes" or "sharpened" or "stake" as a pit-trap. The description of a pit-trap is "It's a deep pit lined with rocks, set into the surface of [the holder of the item described]. Sharpened stakes jut upward from the bottom, ready to stab any large mammal unfortunate enough to fall in."
+The pit-trap is an open enterable container. It is fixed in place. The heft of the pit-trap is 8. The printed name of a pit-trap is "pit trap". Understand "pit trap" or "deep pit" or "pit" or "rocks" or "stones" or "stakes" or "sharpened" or "stake" as a pit-trap. The description of a pit-trap is "It's a deep pit lined with rocks, set into the surface of [the holder of the item described]. Sharpened stakes jut upward from the bottom, ready to stab any large mammal unfortunate enough to fall in."
 
 Instead of inserting something into the pit-trap:
 	say "That is not a good way to get rid of [the noun]."
@@ -2911,7 +2911,7 @@ After looking when the location is Open Sea and the roc is in Abandoned Shore:
 
 The printed name of a plural-rock is "rocks". A plural-rock is plural-named. Understand "rocks" as a plural-rock. The description of the plural-rock is "A heap of fist-sized rocks suitable for cobbling a path."]
 
-The rock-band is a person. The printed name of the rock-band is "rock band". Understand "rock" or "band" as the rock-band. The heft of the rock-band is 10. The description of the rock-band is "The band consists of a hot drummer, two long-haired guitarists, and a male vocalist with flame tattoos on his arms."
+The rock-band is a person. The printed name of the rock-band is "rock band". Understand "rock" or "band" as the rock-band. The heft of the rock-band is 8. The description of the rock-band is "The band consists of a hot drummer, two long-haired guitarists, and a male vocalist with flame tattoos on his arms."
 	The greeting of a rock-band is "[one of]The drummer waves, one of the guitarists gives [us] the finger, and the male vocalist offers to sign his name on the breast of our choice. 'Left, right, or I can do across both.'
 
 [We] decline[or]The band offers another motley greeting[stopping]."
@@ -2996,7 +2996,7 @@ The saint-pint is a container. The printed name of the saint-pint is "saint pint
 The Scot is a man. The description is "The full stereotype: bagpipes, kilt, sporran. If you look at him too long, he says, 'Och.'" Understand "bagpipes" or "kilt" or "sporran" or "man" as the Scot.
 	The greeting of the Scot is "'Och,' he says. A tic."
 
-The scree is a thing. The heft of the scree is 9. The description of the scree is "The scree is a sloping pile of small and mid-sized stones, most of them roughly broken off. They look like the result of a rockfall rather than of, say, long erosion by water." The indefinite article of the scree is "some". Understand "stones" or "stone" or "rubble" as the scree.
+The scree is a fixed in place thing. The heft of the scree is 8. The description of the scree is "The scree is a sloping pile of small and mid-sized stones, most of them roughly broken off. They look like the result of a rockfall rather than of, say, long erosion by water." The indefinite article of the scree is "some". Understand "stones" or "stone" or "rubble" as the scree.
 
 Instead of climbing the scree:
 	say "As soon as [we] get a step or two up the pile, [we] slide back down again."
@@ -3128,9 +3128,7 @@ The description of the sop is "A hunk of bread dipped in something red-brown.". 
 
 The description of a son is "He's the ideal image of Atlantean boyhood. Missing front tooth, tan from days in the sunshine, a spelling commendation patch sewn into his shirt." Understand "missing" or "front tooth" or "tooth" or "atlantean" or "boyhood" as the son.
 
-
-The sord is a bird. The heft of the sord is 10. The description of the sord is "A whole flight of mallards; only not in flight at the moment. They're currently quacking and pecking the [ground]."
-
+The sord is a bird. The heft of the sord is 8. The description of the sord is "A whole flight of mallards; only not in flight at the moment. They're currently quacking and pecking the [ground]."
 
 The sot is a man. The description is "He's wearing a stained wife-beater shirt and looks like he hasn't been sober since 1982. Note the four-day beard." Understand "wife-beater" or "shirt" or "beard" or "four-day" as the sot.
 	The greeting of the sot is "The sot looks at us blearily but does not attempt speech."
@@ -3929,11 +3927,11 @@ The tom is a bird. The heft of the tom is 3. The description of the tom is "It's
 The tomato sauterne is a contained edible fluid thing. The heft of the tomato sauterne is 2. The description of the tomato sauterne is "The clear glass bottle contains a dessert wine [--] not the golden col[our] one might expect of a sauterne, but virulently red. Curly Edwardian script on the label declares the wine to be a tomato sauterne, vintage 2003, based on 'a unique recipe from the Channel Islands.' It also describes the winery as 'the Château d'Yquem of Guernsey.'"
 	The scent-description is "sticky-sweet marinara sauce".
 
-Some toms are a bird. The heft of the toms is 10. The description of the toms is "A whole collection of male turkeys."
+Some toms are a bird. The heft of the toms is 8. The description of the toms is "A whole collection of male turkeys."
 
 The tomcat is a cat. The printed name is "tomcat". The heft of the tomcat is 3. The description of the tomcat is "It's angry and feral and looks like it is ancestrally part bobcat or something else mad and wild."
 
-Some tomcats are a cat. The heft of the tomcats is 10. The printed name is "tomcats". The description of the tomcats is "Wrathful, hissing, un-herd-able. They don't like one another and they don't like us. Let's get rid of them as soon as possible."
+Some tomcats are a cat. The heft of the tomcats is 8. The printed name is "tomcats". The description of the tomcats is "Wrathful, hissing, un-herd-able. They don't like one another and they don't like us. Let's get rid of them as soon as possible."
 
 
 The description of the tome is "Extremely dusty, learned, and virtuous, such that I almost fall asleep just looking at it. It's nothing so ribald as the Bible, or even a hymnal or order of service: it appears rather to be a selection of sermons of the 18th century, from a period when it was considered somehow exciting to sit through a three-hour discourse on theology."
