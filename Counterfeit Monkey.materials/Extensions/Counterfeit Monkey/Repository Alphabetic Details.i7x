@@ -4178,13 +4178,13 @@ Instead of waving the wand batch:
 
 The warm rods are long and strong. The description of the warm rods is "Lengths of rebar, warm as though left out in the noonday sun."
 
-The heft of the war-object is 20. The printed name of the war-object is "war". Understand "war" as the war-object. The description of the war-object is "I suppose we were hoping for some abstract conceptual representation, but what we get is loud noises and screaming and a yellowish gas all around, and something screaming down from the sky".
+[The heft of the war-object is 20. The printed name of the war-object is "war". Understand "war" as the war-object. The description of the war-object is "I suppose we were hoping for some abstract conceptual representation, but what we get is loud noises and screaming and a yellowish gas all around, and something screaming down from the sky".]
 
 The description of the warm rod is "Heavy, metal, slightly warm. Not radioactive, I hope?". The warm rod is strong and long.
 
 The description of the warp is "It's a small hand-loom with the warp thread put on but none of the weaving actually completed yet. There is no string or yarn to make the weft."
 
-The description of the wart-object is "Disconnected from any body, it is just a bulb of soft brownish skin-flesh with a couple of hairs sticking out." The heft of the wart-object is 1. The printed name of the wart-object is "wart". Understand "wart" as the wart-object.
+[The description of the wart-object is "Disconnected from any body, it is just a bulb of soft brownish skin-flesh with a couple of hairs sticking out." The heft of the wart-object is 1. The printed name of the wart-object is "wart". Understand "wart" as the wart-object.]
 
 Sanity-check writing the topic understood on the wart recipe:
 	say "There's barely any blank space remaining." instead.

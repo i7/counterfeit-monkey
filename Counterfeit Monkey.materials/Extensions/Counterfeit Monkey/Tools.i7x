@@ -327,6 +327,13 @@ Unfortunately, the lab is more than enough to bury [us] under its bulk.";
 	end the story saying "That could have gone better";
 	stop the action.
 
+Check waving the letter-remover at the warp when the current setting of the letter-remover is "p":
+	say "There is [one of]a flash of psychedelic col[our]s[or]a mad-scientist cackle[or]a [pastel-color] cloud[or]a flash of [primary-color] light[or]a smell of anise[or]a distinct spearmint flavor[at random], and the warp turns into a war. I suppose we were hoping for some abstract conceptual representation, but what we get is loud noises and screaming and a yellowish gas all around, and something screaming down from the sky.
+
+Unfortunately, the first casualty of war is [us].";
+	end the story saying "That could have gone better";
+	stop the action.
+
 Check waving the letter-remover at something which is enclosed by the player:
 	if the player wears the second noun:
 		try taking off the second noun;

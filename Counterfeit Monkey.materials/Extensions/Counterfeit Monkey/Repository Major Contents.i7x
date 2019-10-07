@@ -837,9 +837,9 @@ The repository contains a wire rack.
 The repository contains a rap, a clothing-wrap,
 	a warp, [anagram]
 	a trap, [t-insert derivatives]
-	a tap, a war-object, [derive insertions]
+	a tap, [a war-object,] [derive insertions]
 	a par, a part, a pat, [anagram all]
-	a wart-object, [t-insert derivatives]
+	[a wart-object,] [t-insert derivatives]
 	a pet, a pit, a pot, an alterna-pot. [vowel-rotation]
 
 [yam]

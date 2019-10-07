@@ -1209,12 +1209,12 @@ The wall socket has homonym index 1205.
 The wall-mounted schedule has homonym index 1206.
 The wand batch has homonym index 1207.
 The war memorial has homonym index 1208.
-The war-object has homonym index 1209.
+[The war-object has homonym index 1209.]
 The warm rod has homonym index 1210.
 The warm rods has homonym index 1211.
 The warp has homonym index 1212.
 The wart recipe has homonym index 1213.
-The wart-object has homonym index 1214.
+[The wart-object has homonym index 1214.]
 The washing machine has homonym index 1215.
 The watch has homonym index 1216.
 The watchband has homonym index 1217.
