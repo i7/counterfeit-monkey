@@ -53,7 +53,7 @@ An ink is a kind of thing.
 An ill is a kind of thing.
 An it-object is a kind of thing. ["it"]
 A lee is a kind of container.
-A mart is a kind of thing.
+[A mart is a kind of thing.]
 A mat is a kind of supporter. A mat is usually portable.
 A May is a kind of thing.
 A net is a kind of container.
@@ -165,7 +165,7 @@ The repository contains an ale, an applet, a lappet, a tale, and a tattle.
 The repository contains Amy, an arm,
 	a ram, a yam, a May, a Mary,  [anagram]
 	a tram, [t-insert]
-	a mart, [anagram]
+	[a mart,] [anagram]
 	an art, a mat, [derive]
 	a tart, an alterna-tart, [t insert]
 	a rat, a tar. [anagram]
@@ -322,7 +322,7 @@ The repository contains a rate, a cate, a rat, a cat,
 The repository contains a single ream, a ram, Ra,
 	a tram, a rat, [t-insert derivatives]
 	a tam, [derive insertables]
-	a mare, a mart, a tar, an art, a mat, [anagram all]
+	a mare, [a mart,] a tar, an art, a mat, [anagram all]
 	a tart, an alterna-tart. [t-insert]
 
 [crumbs]
@@ -679,7 +679,7 @@ The repository contains a shred and a sed.
 The repository contains a hopping bag and a shopping gab.
 
 [shred]
-The repository contains some herds.
+[The repository contains some herds.]
 
 [shrimp tail]
 The repository contains a sharp limit, a harp limit, and a mirth pail.

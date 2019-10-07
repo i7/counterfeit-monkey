@@ -550,7 +550,7 @@ The hard-to-see statue proffers the hard-to-see statue. [I612_hard_to_see_statue
 The harp limit proffers the harp limit. [I1968_harp_limit]
 The heavy pack proffers the heavy pack. [I565_heavy_pack]
 The heel proffers the heel. [I2256_heel]
-The herds proffers the herds. [I1966_herds]
+[The herds proffers the herds.] [I1966_herds]
 The hidden-ticket proffers the hidden-ticket. [I2615_hidden_ticket]
 The hillside proffers the hillside. [I656_hillside]
 The ho proffers the ho. [I1707_ho]

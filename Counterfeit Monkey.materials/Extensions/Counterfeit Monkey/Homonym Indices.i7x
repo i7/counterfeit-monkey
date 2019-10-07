@@ -130,7 +130,7 @@ A lipstick advertisements has homonym index 125.
 A lock has homonym index 126.
 The low relief has homonym index 127.
 The Slangovia map has homonym index 128.
-A mart has homonym index 129.
+[A mart has homonym index 129.]
 A massive plug has homonym index 130.
 [The massive pug has homonym index 131.]
 The massive switch has homonym index 132.
@@ -639,7 +639,7 @@ The hard-to-see statue has homonym index 635.
 The harp limit has homonym index 636.
 The heavy pack has homonym index 637.
 The heel has homonym index 638.
-The herds has homonym index 639.
+[The herds has homonym index 639.]
 The hidden-ticket has homonym index 640.
 The hillside has homonym index 641.
 The ho has homonym index 642.

@@ -1738,6 +1738,20 @@ Unfortunately, the revel is more than big enough to bury [us] under its bulk.";
 	end the story saying "That could have gone better.";
 	stop the action.
 
+Check shooting the shred with the loaded anagramming gun:
+	say "The gun fires ruggedly into the shred, which shatters and then reforms as a herd. Cows, goats, and sheep, all mingled together and furious to be thus manifested without a shepherd.
+
+Something spooks the herds [--] not surprising, as there is scarcely enough room here for them to move. The cows try to go one direction, the goats another, and [we] [are] dragged underhoof.";
+	end the story saying "That was unwise";
+	stop the action.
+
+Check shooting a tram with the loaded anagramming gun:
+	say "The gun fires ruggedly into the tram, which shatters and then reforms as a mart. One of those small markets selling mostly convenience foods and things that don't spoil quickly.
+
+Unfortunately, the mart is more than sufficient to bury [us] under its bulk.";
+	end the story saying "That could have gone better.";
+	stop the action.
+
 Check shooting something with the loaded anagramming gun:
 	let initial key be the anagram key of the noun;
 	now detritus is the noun;

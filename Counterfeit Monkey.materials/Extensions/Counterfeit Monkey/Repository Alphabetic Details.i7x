@@ -1184,11 +1184,11 @@ Sanity-check digging in heel:
 	say "Oh, I think we can both be stubborn when we have to." instead.
 
 
-The herds are a neuter animal. The heft of the herds is 8. The description of the herds is "Cows, goats, and sheep, all mingled together and furious to be thus manifested without a shepherd."
+[The herds are a neuter animal. The heft of the herds is 8. The description of the herds is "Cows, goats, and sheep, all mingled together and furious to be thus manifested without a shepherd."
 
 Every turn when the herds are enclosed by the location:
 	say "Something spooks the herds [--] not surprising, as there is scarcely enough room here for them to move. The cows try to go one direction, the goats another, and [we] [are] dragged underhoof.";
-	end the story saying "That was unwise".
+	end the story saying "That was unwise".]
 
 The ho is a woman. The description of the ho is "She looks to be in her mid-twenties and is wearing a tight, neon blue outfit that makes her look like a naked water nymph."
 
@@ -1434,7 +1434,7 @@ Sanity-check taking the mall figurine:
 
 The mare is a female animal. The description of the mare is "She's a handsome creature, black all over, and with a long mane. She seems to belong to a novel for young girls, or possibly a music video."
 
-The description of the mart is "One of those small markets selling mostly convenience foods and things that don't spoil quickly." The heft of a mart is 12.
+[The description of the mart is "One of those small markets selling mostly convenience foods and things that don't spoil quickly." The heft of a mart is 12.]
 
 The description of a mat is "A woven jute mat, the kind people leave outside their doors for cleaning your shoes. It's got a traditional border pattern of chard leaves and curling waves running around the outside."
 
