@@ -1052,7 +1052,7 @@ The projector has hash code 705044. [I537_projector]
 The counterfeit-monkey-exterior has hash code 1081346. [I717_counterfeit_monkey_exte]
 The pun has hash code 1089536.
 The puns has hash code 1351680.
-The punts has hash code 1875968.
+[The punts has hash code 1875968.]
 The puppy has hash code 17858560.
 The pus has hash code 1343488.
 The quid has hash code 1114376.
@@ -1210,7 +1210,7 @@ The steer automaton has hash code 1994769. [I1955_steer_automaton]
 The stick has hash code 787716. [I2215_stick]
 The stickball has hash code 789767. [I2392_stickball]
 The sticky has hash code 17564932. [I945_sticky]
-The still has hash code 788736. [I2201_still]
+[The still has hash code 788736.] [I2201_still]
 The stillage has hash code 788817. [I2393_stillage]
 The stoats has hash code 802817. [I2412_stoats]
 The stock has hash code 803844. [I2219_stock]

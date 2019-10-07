@@ -574,7 +574,7 @@ The repository contains a pita, a pit, a PTA, an it-object, a pa, a pi-object, a
 [plans]
 In the repository are some iron-pans, a plan, an i-pan,
 	some pens, a pen, some pins, a pin, a pi-object, a pun, some puns, [vowel rotation]
-	some plants, a plant, a pant, a pint, some pints, a fake-punt, some punts, [t-insert derivatives]
+	some plants, a plant, a pant, a pint, some pints, a fake-punt, [some punts,] [t-insert derivatives]
 	some pants, some plats, a plat, a pat, a pit, some pit-items, some pat-items, an ant, a pus, [derive insertions]
 	a snap, an alterna-snap, a nap, a splat, a tap, a spit, a spat, a tan, [anagram all]
 	a sap, a slat, [derive anagrams]
@@ -740,7 +740,7 @@ The repository contains a sap-dispenser and a sop-dispenser.
 
 The repository contains a pill, a sill, an ill, a self-object, a pi-object,
 	some pills, some ills, [anagram, then p-remove]
-	a still, a till, some tills,  [t-insert derivatives]
+	[a still,] a till, some tills,  [t-insert derivatives]
 	a poll, a toll. [vowel rotation]
 
 [squid]

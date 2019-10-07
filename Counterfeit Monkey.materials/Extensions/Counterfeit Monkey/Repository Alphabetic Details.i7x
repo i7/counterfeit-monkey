@@ -2617,7 +2617,7 @@ Some puns are r-abstract. The heft of the puns is 0. The description of puns is 
 
 The heft of the fake-punt is 6. The description of the fake-punt is "It's a long, flat-bottomed wooden boat intended to be driven by pole rather than by a sail or oars. We don't have a lot of locations for punting around here, but I've read about the practice." The printed name of the fake-punt is "punt". Understand "punt" as the fake-punt.
 
-The heft of the punts is 10. The description of the punts is "An assortment of punts, which by the looks of them are usually driven from the Cambridge end."
+[The heft of the punts is 10. The description of the punts is "An assortment of punts, which by the looks of them are usually driven from the Cambridge end."]
 
 
 The puppy is a female animal. The description of the puppy is "She's a tiny black and white papillon with lots of fur and large, trusting eyes." Understand "papillon" as the puppy. The heft of the puppy is 2.
@@ -3225,8 +3225,8 @@ The description of the stick is "It is about two feet long. It's stripped of its
 
 The stickball is an r-abstract thing. The description is "A pick-up sandlot game, represented here by the image of small dusty figures running around, transparent as holograms." The heft of the stickball is 0.
 
-The description of the still is "A room-sized installation of glass tubes and boilers. Inside is some kind of illicit moonshine product." The still is a container. The heft of the still is 12. The still is transparent.
-	The scent-description of the still is "heady quantities of ethanol".
+[The description of the still is "A room-sized installation of glass tubes and boilers. Inside is some kind of illicit moonshine product." The still is a container. The heft of the still is 12. The still is transparent.
+	The scent-description of the still is "heady quantities of ethanol".]
 
 The stillage is a supporter. Instead of putting something on the stillage: say "The stillage is really designed to support kegs and nothing else." The description of the stillage is "It's a rack for supporting kegs in such a position that they can be easily tapped and used."
 

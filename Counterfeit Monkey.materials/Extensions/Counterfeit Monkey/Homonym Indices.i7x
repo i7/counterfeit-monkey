@@ -912,7 +912,7 @@ The projector has homonym index 908.
 The counterfeit-monkey-exterior has homonym index 909.
 The pun has homonym index 910.
 The puns has homonym index 911.
-The punts has homonym index 912.
+[The punts has homonym index 912.]
 The puppy has homonym index 913.
 The pus has homonym index 914.
 The quid has homonym index 915.
@@ -1066,7 +1066,7 @@ The steer automaton has homonym index 1062.
 The stick has homonym index 1063.
 The stickball has homonym index 1064.
 The sticky has homonym index 1065.
-The still has homonym index 1066.
+[The still has homonym index 1066.]
 The stillage has homonym index 1067.
 The stoats has homonym index 1068.
 The stock has homonym index 1069.
