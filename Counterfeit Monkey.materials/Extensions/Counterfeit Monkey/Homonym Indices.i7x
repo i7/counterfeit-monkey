@@ -1066,7 +1066,7 @@ The steer automaton has homonym index 1062.
 The stick has homonym index 1063.
 The stickball has homonym index 1064.
 The sticky has homonym index 1065.
-[The still has homonym index 1066.]
+The still has homonym index 1066.
 The stillage has homonym index 1067.
 The stoats has homonym index 1068.
 The stock has homonym index 1069.

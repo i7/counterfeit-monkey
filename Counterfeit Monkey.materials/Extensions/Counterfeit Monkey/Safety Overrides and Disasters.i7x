@@ -137,13 +137,6 @@ Unfortunately, the punts are more than sufficient to bury [us] under their bulk.
 	end the story saying "That could have gone better";
 	stop the action.
 
-A last check inserting the sill into the T-inserter:
-	say "There is a loud and satisfying pop from the machine as it turns the sill into a still. A room-sized installation of glass tubes and boilers. Inside is some kind of illicit moonshine product.
-
-Unfortunately, the still is more than sufficient to bury [us] under its bulk.";
-	end the story saying "That could have gone better";
-	stop the action.
-
 [Anagramming gun]
 
 Check shooting the litotes with the loaded anagramming gun:
