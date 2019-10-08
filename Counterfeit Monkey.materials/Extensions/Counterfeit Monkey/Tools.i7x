@@ -329,27 +329,6 @@ Check waving the letter-remover at something:
 Check waving the letter-remover at the restoration gel:
 	abide by the don't change irretrievable rules for the restoration gel.
 
-Check waving the letter-remover at the massive plug when the current setting of the letter-remover is "l":
-	say "With a pleasant smell of puppies, the massive plug turns into a massive pug. Its  wrinkly, short-muzzled face, curled tail and fine, glossy coat of fawn fur would be adorable if not for the fact that it is large enough to fill the room.
-
-Massive or not, the pug still seems to have room for more, and before [we] can react, it has gobbled [us] up.";
-	end the story saying "[We] have become dog food";
-	stop the action.
-
-Check waving the letter-remover at the lamb when the current setting of the letter-remover is "m":
-	say "There is [one of]a flash of psychedelic col[our]s[or]a mad-scientist cackle[or]a [pastel-color] cloud[or]a flash of [primary-color] light[or]a smell of anise[or]a distinct spearmint flavor[at random], and the lamb turns into a lab. A full-sized scientific research laboratory, one of the many owned by Dental Consonants Limited.
-
-Unfortunately, the lab is more than enough to bury [us] under its bulk.";
-	end the story saying "That could have gone better";
-	stop the action.
-
-Check waving the letter-remover at the warp when the current setting of the letter-remover is "p":
-	say "There is [one of]a flash of psychedelic col[our]s[or]a mad-scientist cackle[or]a [pastel-color] cloud[or]a flash of [primary-color] light[or]a smell of anise[or]a distinct spearmint flavor[at random], and the warp turns into a war. I suppose we were hoping for some abstract conceptual representation, but what we get is loud noises and screaming and a yellowish gas all around, and something screaming down from the sky.
-
-Unfortunately, the first casualty of war is [us].";
-	end the story saying "That could have gone better";
-	stop the action.
-
 Check waving the letter-remover at something which is enclosed by the player:
 	if the player wears the second noun:
 		try taking off the second noun;
@@ -536,20 +515,6 @@ Sanity-check inserting something (called item) into the t-inserter when the t-in
 
 Sanity-check inserting something irretrievable into the T-inserter:
 	abide by the don't change irretrievable rules for the noun.
-
-Check inserting the puns into the T-inserter:
-	say "There is a loud and satisfying pop from the machine as it turns the puns into some punts. An assortment of punts, which by the looks of them are usually driven from the Cambridge end.
-
-Unfortunately, the punts are more than sufficient to bury [us] under their bulk.";
-	end the story saying "That could have gone better";
-	stop the action.
-
-Check inserting the sill into the T-inserter:
-	say "There is a loud and satisfying pop from the machine as it turns the sill into a still. A room-sized installation of glass tubes and boilers. Inside is some kind of illicit moonshine product.
-
-Unfortunately, the still is more than sufficient to bury [us] under its bulk.";
-	end the story saying "That could have gone better";
-	stop the action.
 
 After inserting something into the T-inserter:
 	try teeing the noun.
@@ -1756,41 +1721,6 @@ Check shooting the pills with the loaded anagramming gun:
 	if the pills are in a container (called the box) and the number of things in the box is greater than 1 and the box is not the synthesizer:
 		say the spill would make a mess in the box instead.
 
-Check shooting the litotes with the loaded anagramming gun:
-	say "The gun fires ruggedly into the litotes, which shatters and then reforms as a some of toilets. Enough toilets to stock a public restroom for a thea[ter] or a small sporting venue. And here I was hoping we'd get T.S. Eliot.
-
-Unfortunately, the toilets completely bury [us] under their bulk.";
-	end the story saying "That could have gone better.";
-	stop the action.
-
-Check shooting the carp with the loaded anagramming gun:
-	say "The gun fires ruggedly into the carp, which shatters and then reforms as PARC. Palo Alto Research Center [--] tons and tons of 1970s-era high-tech plastic, steel, and concrete.
-
-Unfortunately, PARC is more than sufficient to bury [us] under its bulk.";
-	end the story saying "That could have gone better.";
-	stop the action.
-
-Check shooting the big lever with the loaded anagramming gun:
-	say "The gun fires ruggedly into the carp, which shatters and then reforms as a big revel. It's the entirety of a party in true Gatsby style: dancers doing the Charleston, the orchestra to play the music, the waiters to circulate the canapes, some sculptures, a fountain or two, a fireworks display.
-
-Unfortunately, the revel is more than big enough to bury [us] under its bulk.";
-	end the story saying "That could have gone better.";
-	stop the action.
-
-Check shooting the shred with the loaded anagramming gun:
-	say "The gun fires ruggedly into the shred, which shatters and then reforms as a herd. Cows, goats, and sheep, all mingled together and furious to be thus manifested without a shepherd.
-
-Something spooks the herds [--] not surprising, as there is scarcely enough room here for them to move. The cows try to go one direction, the goats another, and [we] [are] dragged underhoof.";
-	end the story saying "That was unwise";
-	stop the action.
-
-Check shooting a tram with the loaded anagramming gun:
-	say "The gun fires ruggedly into the tram, which shatters and then reforms as a mart. One of those small markets selling mostly convenience foods and things that don't spoil quickly.
-
-Unfortunately, the mart is more than sufficient to bury [us] under its bulk.";
-	end the story saying "That could have gone better.";
-	stop the action.
-
 Check shooting something with the loaded anagramming gun:
 	let initial key be the anagram key of the noun;
 	now detritus is the noun;
@@ -2347,18 +2277,6 @@ Check inserting something into the cryptolock when the cryptolock contains somet
 
 Check inserting something into the cryptolock when the heft of the noun is greater than 3:
 	say "[The noun] [are] too big to fit into [the cryptolock]." instead.
-
-After inserting the ass into the cryptolock when hardness is true and the cryptoswitch is switched on:
-	say "There is a churning noise from within [the cryptolock] and 'zoo' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like giraffes, bison, zebras, elephants, panthers, a polar bear and other charismatic megafauna in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead;
-
-After inserting a generic-cup into the cryptolock when hardness is false and the cryptoswitch is switched on:
-	say "There is a churning noise from within [the cryptolock] and 'cop' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like an All-Purpose Officer in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead;
-
-After inserting the pose into the cryptolock when hardness is false and the cryptoswitch is switched on:
-	say "There is a churning noise from within [the cryptolock] and 'pisa' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like a leaning tower in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead;
-
-After inserting a tint into the cryptolock when hardness is true and the cryptoswitch is switched on:
-	say "There is a churning noise from within [the cryptolock] and 'ohio' appears in letters of vivid purple smoke. [We] get a confused impression of factories and battleground politics in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead;
 
 Test bucket-size with "put coat in bucket / wave a-remover at coat / get cot / put cot in bucket" holding the coat in the Generator Room.
 
