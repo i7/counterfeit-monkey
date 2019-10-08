@@ -53,7 +53,7 @@ An ink is a kind of thing.
 An ill is a kind of thing.
 An it-object is a kind of thing. ["it"]
 A lee is a kind of container.
-A mart is a kind of thing.
+[A mart is a kind of thing.]
 A mat is a kind of supporter. A mat is usually portable.
 A May is a kind of thing.
 A net is a kind of container.
@@ -165,7 +165,7 @@ The repository contains an ale, an applet, a lappet, a tale, and a tattle.
 The repository contains Amy, an arm,
 	a ram, a yam, a May, a Mary,  [anagram]
 	a tram, [t-insert]
-	a mart, [anagram]
+	[a mart,] [anagram]
 	an art, a mat, [derive]
 	a tart, an alterna-tart, [t insert]
 	a rat, a tar. [anagram]
@@ -176,8 +176,8 @@ The repository contains a cat-mayor.
 [as]
 
 In the repository are a pastis, a pass, some pasts, a pat, an ass, and a pa, [removals]
-	some pestos, some pests, a pet, [vowel rotator]
-	a zoo. [reverse hard mode cryptolock]
+	some pestos, some pests, a pet. [vowel rotator]
+	[a zoo.] [reverse hard mode cryptolock]
 
 [ash]
 In the repository is a trash and a rash and a fake-as.
@@ -203,7 +203,7 @@ The repository contains a ba, an all,
 
 [balm]
 The repository contains a lamb, [anagramming]
-	a lam, a lab-thing,
+	a lam, [a lab-thing,]
 	[a limb, ]
 	an oboe. [the oboe only via hard-mode encryption]
 
@@ -218,11 +218,11 @@ The repository contains a ban and an alterna-band
 
 [basis]
 
-The repository contains a fake-bus and some buses.
+The repository contains [a fake-bus and] some buses.
 
 [big lever]
 
-The repository contains a big revel.
+[The repository contains a big revel.]
 
 [bin]
 
@@ -322,7 +322,7 @@ The repository contains a rate, a cate, a rat, a cat,
 The repository contains a single ream, a ram, Ra,
 	a tram, a rat, [t-insert derivatives]
 	a tam, [derive insertables]
-	a mare, a mart, a tar, an art, a mat, [anagram all]
+	a mare, [a mart,] a tar, an art, a mat, [anagram all]
 	a tart, an alterna-tart. [t-insert]
 
 [crumbs]
@@ -466,7 +466,7 @@ The repository contains a clock.
 The repository contains an angle bolt.
 
 [massive plug]
-The repository contains a massive pug.
+[The repository contains a massive pug.]
 
 [Mark]
 The repository contains an ark.
@@ -535,7 +535,7 @@ In the repository are an earl, a perl, a peal, an ear, a pal, a pea, a par, a pa
 	a tepal, a plain-plate, a rate, a tape, a tap, a rat, [anagram each]
 	an ire, [vowel rotation]
 	a hod, [reverse mode cryptolock on ire]
-	Oz, [reverse mode cryptolock on Pa]
+	[Oz,] [reverse hard mode cryptolock on Pa or Ra, but both are too big to fit in the bucket]
 	a trap, a pleat, a rattle, [t-insert anagrams]
 	a Ra, a pate, an ale, [derive anagrams]
 	a tattle, a tale. [t-insert derivatives]
@@ -574,7 +574,7 @@ The repository contains a pita, a pit, a PTA, an it-object, a pa, a pi-object, a
 [plans]
 In the repository are some iron-pans, a plan, an i-pan,
 	some pens, a pen, some pins, a pin, a pi-object, a pun, some puns, [vowel rotation]
-	some plants, a plant, a pant, a pint, some pints, a fake-punt, some punts, [t-insert derivatives]
+	some plants, a plant, a pant, a pint, some pints, a fake-punt, [some punts,] [t-insert derivatives]
 	some pants, some plats, a plat, a pat, a pit, some pit-items, some pat-items, an ant, a pus, [derive insertions]
 	a snap, an alterna-snap, a nap, a splat, a tap, a spit, a spat, a tan, [anagram all]
 	a sap, a slat, [derive anagrams]
@@ -590,7 +590,7 @@ In the repository are a polling-chart, a strolling chap, a strolling cap, and a 
 In the repository is a puppy.
 
 [poster]
-The repository contains a poser, a pose, a Poe, Pisa.
+The repository contains a poser, a pose, a Poe. [, Pisa.]
 
 [power chord]
 The repository contains a power cord,
@@ -679,7 +679,7 @@ The repository contains a shred and a sed.
 The repository contains a hopping bag and a shopping gab.
 
 [shred]
-The repository contains some herds.
+[The repository contains some herds.]
 
 [shrimp tail]
 The repository contains a sharp limit, a harp limit, and a mirth pail.
@@ -693,15 +693,15 @@ The repository contains an alterna-shuttle.
 [sign, four times]
 
 The repository contains a signet,	[by the hand of the officer]
-	4 sins, 4 sons, 4 sun-products, [2 in-objects,] 4 self-objects, 4 sigs,
+	4 sins, 4 sons, a sun-product, [2 in-objects,] 4 self-objects, 4 sigs,
 	4 stints, 4 tints, 4 TNTs, 4 tin-cans          ["tin"], 4 tits, [t-insert derivatives]
 	4 stents, 4 tents, 4 ten-objects, 4 tans, 4 plural-tents, [vowel rotation]
 	4 tots, [vowel-rotation]
 	4 nits, [anagram all]
 	4 nets,
 	4 it-objects, [derive anagrams]
-	a ton, a tun, [vowel rotation. Only one needed of each of these because it is game-ending to create successfully.]
-	an Ohio. [reverse mode cryptolock on tint, only one needed]
+	a ton, a tun. [vowel rotation. Only one needed of each of these because it is game-ending to create successfully.]
+	[an Ohio.] [reverse mode cryptolock on tint, only one needed]
 
 [silver chain]
 The repository contains a ravens chili and a raven chili.
@@ -740,7 +740,7 @@ The repository contains a sap-dispenser and a sop-dispenser.
 
 The repository contains a pill, a sill, an ill, a self-object, a pi-object,
 	some pills, some ills, [anagram, then p-remove]
-	a still, a till, some tills,  [t-insert derivatives]
+	[a still,] a till, some tills,  [t-insert derivatives]
 	a poll, a toll. [vowel rotation]
 
 [squid]
@@ -837,9 +837,9 @@ The repository contains a wire rack.
 The repository contains a rap, a clothing-wrap,
 	a warp, [anagram]
 	a trap, [t-insert derivatives]
-	a tap, a war-object, [derive insertions]
+	a tap, [a war-object,] [derive insertions]
 	a par, a part, a pat, [anagram all]
-	a wart-object, [t-insert derivatives]
+	[a wart-object,] [t-insert derivatives]
 	a pet, a pit, a pot, an alterna-pot. [vowel-rotation]
 
 [yam]
@@ -892,13 +892,13 @@ A bantam is in the repository.
 The repository contains a bandit and a bandage.
 
 [bins]
-[The repository contains some basins, a basis, a bass, a bass-fish, a ba.] [There are no bins in the game any more.]
+[The repository contains some basins, a basis, a bass, a bass-fish, a ba.] [There are no bins (plural) in the game any more (only a singular bin).]
 
 [car]
 The repository contains a carpet, 3 carpi, 3 carp, 3 generic-caps, 3 alterna-caps,
-3 CPUs, PARC, [anagrams from cup and carp]
-3 generic-cups, [reverse cryptolock cap]
-a cop. [reverse cryptolock cup]
+3 CPUs, [PARC,] [anagrams from cup and carp]
+3 generic-cups. [reverse cryptolock cap]
+[a cop. [reverse cryptolock cup]]
 
 [card]
 [The repository contains a cardboard.] [unreachable]
@@ -948,7 +948,7 @@ A keyring, a key-lime, and a keycard are in the repository. [key + chard]
 The repository contains some leases, a lease, a lass, some eases. [the ass will have to be returned to pass form before we ever get to the T-inserter or anagramming gun, so no easels or teases are possible here.]
 
 [lie]
-litotes and a toilets-collective are in the repository. The printed name of the toilets-collective is "toilets".
+A litotes is in the repository. [Some toilets-collective are in the repository. The printed name of the toilets-collective is "toilets".]
 
 [mile]
 A mileage is in the repository.

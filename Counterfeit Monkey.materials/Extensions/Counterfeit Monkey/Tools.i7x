@@ -10,14 +10,14 @@ Chapter 1 - The Letter-Remover
 Section 1 - Normal Behavior
 
 Definition: a thing is irretrievable:
-	if it is the player:
-		no;
-	if it encloses the player:
-		no; [because we've got a different disaster lined up to deal with this.]
 	if it is the letter-remover:
 		yes;
 	if it is the tub:
 		yes;
+	if it is the player:
+		no;
+	if it encloses the player:
+		no; [because we've got a different disaster lined up to deal with this.]
 	if it encloses an essential thing:
 		yes;
 	no.
@@ -28,6 +28,22 @@ Check waving the letter-remover at something irretrievable:
 
 The don't change irretrievable rules is an object-based rulebook.
 
+[The irretrievable-ordinal stuff below is a lazy way to try and get some variation, avoiding repeated phrases such as "We try to retrieve everything important from the pit. We try to retrieve everything important from the crate." Instead we get "First, we try to retrieve everything important from the pit. Second, we try to retrieve everything important from the crate. Third, we try to retrieve everything important from the coffer."]
+
+Last-irretrievable-turn is a number that varies.
+
+Current-irretrievable-ordinal is a number that varies.
+
+To say irretrievable-ordinal:
+	if the turn count is last-irretrievable-turn:
+		increment current-irretrievable-ordinal;
+	otherwise:
+		now current-irretrievable-ordinal is 1;
+		now last-irretrievable-turn is the turn count;
+	let N be "[ordinal of current-irretrievable-ordinal]";
+	now N is N in sentence case;
+	say "[N]".
+
 A don't change irretrievable rule for a thing (called the item):
 	if the item is the tub or the item is the letter-remover or the item is the restoration gel:
 		say "It would be a bad idea to change the form of [the item]. [We] might not be able to get it back.";
@@ -37,7 +53,7 @@ A don't change irretrievable rule for a thing (called the item):
 		the rule fails;
 	if the item is a person:
 		make no decision;
-	say "First [we] try to remove everything useful from [the item]. [run paragraph on]";
+	say "[irretrievable-ordinal], [we] try to retrieve everything important from [the item]. [run paragraph on]";
 	let essential-list be the list of essential things enclosed by item;
 	let taken-list be a list of things;
 	let holder-list be a list of things;
@@ -312,9 +328,6 @@ Check waving the letter-remover at something:
 
 Check waving the letter-remover at the restoration gel:
 	abide by the don't change irretrievable rules for the restoration gel.
-
-Check waving the letter-remover at something creating the massive pug:
-	move the second noun to the holder of the noun.
 
 Check waving the letter-remover at something which is enclosed by the player:
 	if the player wears the second noun:
@@ -749,8 +762,10 @@ Carry out synth-activating:
 	otherwise:
 		 say "There is no synthesizer here."
 
-Sanity-check inserting something irretrievable into the synthesizer:
-	abide by the don't change irretrievable rules for the noun.
+Sanity-check switching on the synthesizer:
+	repeat with item running through things in the synthesizer:
+		if item is irretrievable:
+			abide by the don't change irretrievable rules for item.
 
 Instead of switching on the synthesizer when the synthesizer contains the roll and the synthesizer contains the rock:
 	say "You can't get to rock & roll with just a synthes[ize]r. You'd need an ampersand generator, which unfortunately (despite promising research and a prototype resembling a pretzel-maker) has yet to achieve stable results."
@@ -808,7 +823,6 @@ To synthesize contents of (source - a thing):
 			stop;
 		abide by the dangerous destruction rules for X;
 		abide by the dangerous destruction rules for Y;
-		abide by the dangerous construction rules for the chosen article;
 		now the chosen article is not proffered by anything;
 		repeat with item running through contents-list:
 			now the item proffers the chosen article;
@@ -827,6 +841,7 @@ To synthesize contents of (source - a thing):
 		now the chosen article is marked-visible;
 		now X is marked invisible;
 		now Y is marked invisible;
+		abide by the dangerous construction rules for the chosen article;
 	otherwise:
 		say "[The source] whirs for a moment, then dies down again.";
 
@@ -2105,8 +2120,10 @@ Sanity-check pulling the big lever:
 Sanity-check pushing the big lever:
 	try switching on the programmable dais instead.
 
-Sanity-check putting something irretrievable on the programmable dais:
-	abide by the don't change irretrievable rules for the noun.
+Sanity-check switching on the big lever:
+	repeat with item running through things on the programmable dais:
+		if item is irretrievable:
+			abide by the don't change irretrievable rules for item.
 
 Sanity-check switching on the programmable dais:
 	try switching on the big lever instead.
@@ -2160,7 +2177,8 @@ Instead of switching on the big lever:
 					if the result is the passage-place:
 						say "[The programmable dais] glows deep red, then deeper. There's a roar like a stadium being demolished, and a passage opens, descending into the dais itself." instead;
 					otherwise:
-						say "[The programmable dais] glows deep red. Almost at once [the result] [are] lying on the surface. [result description][line break]" instead;
+						say "[The programmable dais] glows deep red. Almost at once [the result] [are] lying on the surface. [result description][line break]";
+						abide by the dangerous construction rules for the target instead;
 			say "[The programmable dais] goes red, then dims again. Apparently it can't find a homonym to fit [the list of things *in the programmable dais]." instead;
 	now the big lever is switched off.
 
@@ -2260,11 +2278,6 @@ Check inserting something into the cryptolock when the cryptolock contains somet
 Check inserting something into the cryptolock when the heft of the noun is greater than 3:
 	say "[The noun] [are] too big to fit into [the cryptolock]." instead.
 
-A dangerous construction rule for something (called the target):
-	if the target is in the cryptolock and the heft of the target is greater than 3:
-		now the target is in the Generator Room;
-		say "There is a churning noise from within [the cryptolock] as [a target] [are] formed within. The finished [target] [are] too big to fit in the bucket, however, and [fall] out during the process of formation. "
-
 Test bucket-size with "put coat in bucket / wave a-remover at coat / get cot / put cot in bucket" holding the coat in the Generator Room.
 
 After inserting something into the cryptolock:
@@ -2305,7 +2318,10 @@ After inserting something into the cryptolock:
 			now the printed name of power cord is "cord";
 			reset hash code of power cord;
 		move the chosen article to the cryptolock;
-		unless the chosen article is in the Generator room:
+		if the heft of the chosen article is greater than 3:
+			now the chosen article is in the Generator Room;
+			say "There is a churning noise from within [the cryptolock] as [a chosen article] [are] formed within. The finished [chosen article] [are] too big to fit in the bucket, however, and [fall] out during the process of formation. [run paragraph on]";
+		otherwise:
 			say "There is a churning noise from within [the cryptolock], and a moment later [we] see inside [a list of things *in the cryptolock]. [run paragraph on]";
 		let paragraph break needed be true;
 		now the chosen article is marked-visible;

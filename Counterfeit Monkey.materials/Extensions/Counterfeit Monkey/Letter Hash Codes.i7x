@@ -218,9 +218,9 @@ A lipstick advertisements has hash code 3063069. [K2_thing]
 A lock has hash code 19460. [K2_thing]
 The low relief has hash code 4344112. [K2_thing]
 The Slangovia map has hash code 2423137. [K2_thing]
-A mart has hash code 659457. [K125_mart]
+[A mart has hash code 659457.] [K125_mart]
 A massive plug has hash code 3447121. [K178_massive_plug]
-The massive pug has hash code 3445073.
+[The massive pug has hash code 3445073.]
 The massive switch has hash code 7082389. [K2_thing]
 A mat has hash code 528385. [K126_mat]
 The mess of cabling has hash code 293239. [K2_thing]
@@ -370,7 +370,7 @@ The Monumental Staircase has hash code 1997077.
 Mother has hash code 17453200. [K11_woman]
 My parents' home has hash code 17756305.
 The pink door has hash code 19855673.
-Ohio has hash code 16768. [I1975_ohio]
+[Ohio has hash code 16768.] [I1975_ohio]
 Pat-Chris has hash code 17758621. [K68_book]
 Projection Booth has hash code 713622. [K1_room]
 Roget Close has hash code 936020. [K1_room]
@@ -411,13 +411,13 @@ The Model T has hash code 546840. [I1009_model_t]
 The Nexami Engeo has hash code 8417617. [I696_nexami_engeo]
 The Origin Paste has hash code 975185. [I1364_origin_paste]
 The Outdoor Cafe has hash code 1720365. [K1_room]
-Oz has hash code 33570816. [I1802_oz]
+[Oz has hash code 33570816.] [I1802_oz]
 The PTA has hash code 557057. [I1844_pta]
 The Patriotic Chard-Garden has hash code 713181. [K1_room]
 The Picard has hash code 164109. [I2363_picard]
 The Picross has hash code 442628. [I2364_picross]
 The Pict has hash code 557316. [I1829_pict]
-The Pisa has hash code 295169. [I1907_pisa]
+[The Pisa has hash code 295169.] [I1907_pisa]
 The Poe has hash code 49168. [I1906_poe]
 The Post Office has hash code 835892. [I664_post_office]
 Professor Brown has hash code 4644914. [I950_professor_brown]
@@ -526,7 +526,7 @@ The bed has hash code 26. [I1096_fancy_bed]
 The beige buildings has hash code 1321306. [I480_beige_buildings]
 The bell has hash code 2066.
 The bench has hash code 8342.
-The big revel has hash code 2230610.
+[The big revel has hash code 2230610.]
 The big table has hash code 526675.
 The bikini bottoms have hash code 816386.
 The bill has hash code 2306.
@@ -635,7 +635,7 @@ The conference poster has hash code 974900. [I957_conference_poster]
 The controls has hash code 944132. [I1146_controls]
 The convenience store has hash code 3039508. [I665_convenience_store]
 The convenience-exterior has hash code 3205398. [I980_convenience_exterior]
-The cop has hash code 49156.
+[The cop has hash code 49156.]
 The cord has hash code 147468.
 The cork has hash code 148484.
 The counter-alternate has hash code 1728532. [I1621_counter_alternate]
@@ -710,7 +710,7 @@ Enormous padlocks has hash code 1506333.
 The equipment shelves has hash code 4045200.
 The era has hash code 131089.
 The ermine has hash code 143632.
-The fake-bus has hash code 1310722. [I1524_fake_bus]
+[The fake-bus has hash code 1310722.] [I1524_fake_bus]
 The fake-punt has hash code 1613824. [I1868_fake_punt]
 The fame has hash code 4145. [I1674_fame]
 The fancy locks have hash code 17067045. [I1035_fancy_locks]
@@ -830,7 +830,7 @@ The kiosks have hash code 279808. [I496_kiosks]
 The kitchen area has hash code 664981. [I832_kitchen_area]
 The knitted wool cap has hash code 4779293. [I599_knitted_wool_cap]
 The kudu has hash code 1049608. [I1718_kudu]
-The lab-thing has hash code 2051. [I1515_lab_thing]
+[The lab-thing has hash code 2051.] [I1515_lab_thing]
 The lam has hash code 6145. [I1514_lam]
 The lamb-granulate has hash code 1718355. [I1720_lamb_granulate]
 The lamb-granulates has hash code 1980499. [I1059_lamb_granulates]
@@ -951,7 +951,7 @@ The paper has hash code 163857. [I1771_paper]
 The paper-model has hash code 186393. [I1770_paper_model]
 The paper-models has hash code 448537. [I595_paper_models]
 The paperweight has hash code 4882897. [I1062_paperweight]
-PARC has hash code 163845.
+[PARC has hash code 163845.]
 The pass has hash code 294913. [I1481_pass]
 The passage-place has hash code 294993. [I2353_passage_place]
 The passage has hash code 294993. [I2356_passage]
@@ -1052,7 +1052,7 @@ The projector has hash code 705044. [I537_projector]
 The counterfeit-monkey-exterior has hash code 1081346. [I717_counterfeit_monkey_exte]
 The pun has hash code 1089536.
 The puns has hash code 1351680.
-The punts has hash code 1875968.
+[The punts has hash code 1875968.]
 The puppy has hash code 17858560.
 The pus has hash code 1343488.
 The quid has hash code 1114376.
@@ -1210,7 +1210,7 @@ The steer automaton has hash code 1994769. [I1955_steer_automaton]
 The stick has hash code 787716. [I2215_stick]
 The stickball has hash code 789767. [I2392_stickball]
 The sticky has hash code 17564932. [I945_sticky]
-The still has hash code 788736. [I2201_still]
+[The still has hash code 788736.] [I2201_still]
 The stillage has hash code 788817. [I2393_stillage]
 The stoats has hash code 802817. [I2412_stoats]
 The stock has hash code 803844. [I2219_stock]
@@ -1292,7 +1292,7 @@ The toe has hash code 540688. [I2235_toe]
 The toe-ring has hash code 680272. [I2407_toe_ring]
 The toes have hash code 802832. [I2232_toes]
 The toil has hash code 542976. [I1678_toil]
-The toilets-collective has hash code 805136. [I2346_toilets_collective]
+[The toilets-collective has hash code 805136.] [I2346_toilets_collective]
 The toll has hash code 542720. [I2205_toll]
 The tom has hash code 544768. [I2236_tom]
 The tomato sauterne has hash code 1994769. [I1959_tomato_sauterne]
@@ -1354,12 +1354,12 @@ The wall socket has hash code 5000213. [I2467_wall_socket]
 The wall-mounted schedule has hash code 6060189. [I976_wall_mounted_schedule]
 The wand batch has hash code 4726927.
 The war memorial has hash code 4348177.
-The war-object has hash code 4325377. [I2262_war_object]
+[The war-object has hash code 4325377.] [I2262_war_object]
 The warm rod has hash code 4345865. [I2228_warm_rod]
 The warm rods have hash code 4608009. [I2227_warm_rods]
 The warp has hash code 4358145. [I2261_warp]
 The wart recipe has hash code 4882709. [I2370_wart_recipe]
-The wart-object has hash code 4849665. [I2263_wart_object]
+[The wart-object has hash code 4849665.] [I2263_wart_object]
 The washing machine has hash code 4469205. [I1167_washing_machine]
 The watch has hash code 4718725. [I710_watch]
 The watchband has hash code 4726927. [I2422_watchband]
@@ -1396,7 +1396,7 @@ The yellow buildings have hash code 22309210.
 The yellow-paint has hash code 565505. [K2_thing]
 Your wardrobe has hash code 22167579. [I1213_your_wardrobe]
 The zen frond rinse has hash code 33972536. [I1681_zen_frond_rinse]
-The zoo has hash code 33570816. [I1485_zoo]
+[The zoo has hash code 33570816.] [I1485_zoo]
 The sator inscription has hash code 979205.
 The rotas inscription has hash code 979205.
 The sturdy iron gate has hash code 20865497.

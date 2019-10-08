@@ -130,9 +130,9 @@ A lipstick advertisements has homonym index 125.
 A lock has homonym index 126.
 The low relief has homonym index 127.
 The Slangovia map has homonym index 128.
-A mart has homonym index 129.
+[A mart has homonym index 129.]
 A massive plug has homonym index 130.
-The massive pug has homonym index 131.
+[The massive pug has homonym index 131.]
 The massive switch has homonym index 132.
 A mat has homonym index 133.
 The mess of cabling has homonym index 134.
@@ -253,7 +253,7 @@ Matt has homonym index 248.
 Meg has homonym index 249.
 Mother has homonym index 250.
 The pink door has homonym index 251.
-Ohio has homonym index 252.
+[Ohio has homonym index 252.]
 Pat-Chris has homonym index 253.
 The anemic palm trees has homonym index 254.
 The Aga has homonym index 255.
@@ -284,12 +284,12 @@ Mary has homonym index 279.
 The Model T has homonym index 280.
 The Nexami Engeo has homonym index 281.
 The Origin Paste has homonym index 282.
-Oz has homonym index 283.
+[Oz has homonym index 283.]
 The PTA has homonym index 284.
 The Picard has homonym index 285.
 The Picross has homonym index 286.
 The Pict has homonym index 287.
-The Pisa has homonym index 288.
+[The Pisa has homonym index 288.]
 The Poe has homonym index 289.
 The Post Office has homonym index 290.
 Professor Brown has homonym index 291.
@@ -390,7 +390,7 @@ The bed has homonym index 386.
 The beige buildings has homonym index 387.
 The bell has homonym index 388.
 The bench has homonym index 389.
-The big revel has homonym index 390.
+[The big revel has homonym index 390.]
 The big table has homonym index 391.
 The bikini bottoms has homonym index 392.
 The bill has homonym index 393.
@@ -572,7 +572,7 @@ Enormous padlocks has homonym index 568.
 The equipment shelves has homonym index 569.
 The era has homonym index 570.
 The ermine has homonym index 571.
-The fake-bus has homonym index 572.
+[The fake-bus has homonym index 572.]
 The fake-punt has homonym index 573.
 The fame has homonym index 574.
 The fancy locks has homonym index 575.
@@ -639,7 +639,7 @@ The hard-to-see statue has homonym index 635.
 The harp limit has homonym index 636.
 The heavy pack has homonym index 637.
 The heel has homonym index 638.
-The herds has homonym index 639.
+[The herds has homonym index 639.]
 The hidden-ticket has homonym index 640.
 The hillside has homonym index 641.
 The ho has homonym index 642.
@@ -690,7 +690,7 @@ The kiosks has homonym index 686.
 The kitchen area has homonym index 687.
 The knitted wool cap has homonym index 688.
 The kudu has homonym index 689.
-The lab-thing has homonym index 690.
+[The lab-thing has homonym index 690.]
 The lam has homonym index 691.
 The lamb-granulate has homonym index 692.
 The lamb-granulates has homonym index 693.
@@ -811,7 +811,7 @@ The paper has homonym index 807.
 The paper-model has homonym index 808.
 The paper-models has homonym index 809.
 The paperweight has homonym index 810.
-PARC has homonym index 811.
+[PARC has homonym index 811.]
 The pass has homonym index 812.
 The passage-place has homonym index 813.
 The passage has homonym index 814.
@@ -912,7 +912,7 @@ The projector has homonym index 908.
 The counterfeit-monkey-exterior has homonym index 909.
 The pun has homonym index 910.
 The puns has homonym index 911.
-The punts has homonym index 912.
+[The punts has homonym index 912.]
 The puppy has homonym index 913.
 The pus has homonym index 914.
 The quid has homonym index 915.
@@ -1066,7 +1066,7 @@ The steer automaton has homonym index 1062.
 The stick has homonym index 1063.
 The stickball has homonym index 1064.
 The sticky has homonym index 1065.
-The still has homonym index 1066.
+[The still has homonym index 1066.]
 The stillage has homonym index 1067.
 The stoats has homonym index 1068.
 The stock has homonym index 1069.
@@ -1147,7 +1147,7 @@ The toe has homonym index 1143.
 The toe-ring has homonym index 1144.
 The toes has homonym index 1145.
 The toil has homonym index 1146.
-The toilets-collective has homonym index 1147.
+[The toilets-collective has homonym index 1147.]
 The toll has homonym index 1148.
 The tom has homonym index 1149.
 The tomato sauterne has homonym index 1150.
@@ -1209,12 +1209,12 @@ The wall socket has homonym index 1205.
 The wall-mounted schedule has homonym index 1206.
 The wand batch has homonym index 1207.
 The war memorial has homonym index 1208.
-The war-object has homonym index 1209.
+[The war-object has homonym index 1209.]
 The warm rod has homonym index 1210.
 The warm rods has homonym index 1211.
 The warp has homonym index 1212.
 The wart recipe has homonym index 1213.
-The wart-object has homonym index 1214.
+[The wart-object has homonym index 1214.]
 The washing machine has homonym index 1215.
 The watch has homonym index 1216.
 The watchband has homonym index 1217.
@@ -1251,7 +1251,7 @@ The yellow buildings has homonym index 1246.
 The yellow-paint has homonym index 1247.
 Your wardrobe has homonym index 1248.
 The zen frond rinse has homonym index 1249.
-The zoo has homonym index 1250.
+[The zoo has homonym index 1250.]
 The sator inscription has homonym index 1251.
 The rotas inscription has homonym index 1252.
 The sturdy iron gate has homonym index 1253.
@@ -1284,7 +1284,7 @@ An alterna-tear has homonym index 1280.
 The passkey-thing has homonym index 1281.
 A generic-cup has homonym index 1282.
 A CPU has homonym index 1283.
-A cop has homonym index 1284.
+[A cop has homonym index 1284.]
 An alterna-cap has homonym index 1285.
 The soap-sap-receptacle-supporter has homonym index 1286.
 The sop-dispenser has homonym index 1287.
