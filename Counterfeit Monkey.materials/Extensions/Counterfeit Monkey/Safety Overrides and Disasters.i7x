@@ -108,7 +108,7 @@ Section 3 - Custom game enders
 [Letter-remover]
 
 Check waving the letter-remover at the massive plug when the current setting of the letter-remover is "l":
-	say "With a pleasant smell of puppies, the massive plug turns into a massive pug. Its  wrinkly, short-muzzled face, curled tail and fine, glossy coat of fawn fur would be adorable if not for the fact that it is large enough to fill the entire room.
+	say "With a pleasant smell of puppies, the massive plug turns into a massive pug. Its wrinkly, short-muzzled face, curled tail and fine, glossy coat of fawn fur would be adorable if not for the fact that it is large enough to fill the entire room.
 
 Massive or not, the pug still seems to have room for more, and before [we] have time to react, it has gobbled [us] up.";
 	end the story saying "[We] have become dog food";
@@ -154,7 +154,7 @@ Unfortunately, PARC is more than sufficient to bury [us] under its bulk.";
 	stop the action.
 
 Check shooting the big lever with the loaded anagramming gun:
-	say "The gun fires ruggedly into the carp, which shatters and then reforms as a big revel. It's the entirety of a party in true Gatsby style: dancers doing the Charleston, the orchestra to play the music, the waiters to circulate the canapes, some sculptures, a fountain or two, a fireworks display.
+	say "The gun fires ruggedly into the big lever, which shatters and then reforms as a big revel. It's the entirety of a party in true Gatsby style: dancers doing the Charleston, the orchestra to play the music, the waiters to circulate the canapes, some sculptures, a fountain or two, a fireworks display.
 
 Unfortunately, the revel is more than big enough to bury [us] under its bulk.";
 	end the story saying "That could have gone better.";
