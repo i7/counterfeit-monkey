@@ -1235,7 +1235,7 @@ The in-object is r-abstract. The printed name is "in". The description is "It re
 At the moment, this concept is embodied as a pair of giant hands clasped in a handshake."
 
 A dangerous construction rule for the in-object:
-	say "True to its nature, the in attracts [us] like a moth to a flame, then crushes [us] to pulp in its firm grasp.";
+	say "True to its nature, the in pulls [us] in like a moth to a flame, then crushes [us] to pulp in its firm grasp.";
 	end the story saying "At least [we] [are] truly in now";
 	rule succeeds.
 
