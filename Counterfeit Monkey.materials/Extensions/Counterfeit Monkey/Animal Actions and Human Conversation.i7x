@@ -37,16 +37,6 @@ Every turn (this is the contained people exiting rule):
 		if the burden is the mechanic:
 			next;
 		if the burden is fake:
-			if the burden is an enterer listed in the Table of voluntary entry:
-				choose the row with enterer of burden in Table of voluntary entry;
-				if holder box entry is holder of burden:
-					if entrance time entry is time of day:
-						next;
-					otherwise:
-						if a random chance of 1 in 10 succeeds:
-							blank out the whole row;
-						otherwise:
-							next;
 			try the burden exiting;]
 
 
@@ -61,21 +51,167 @@ Check something exiting when the actor is an animal in the kayak:
 	if the kayak is enclosed by location and the location is not abandoned shore:
 		say "[one of][The person asked] [make] as though to climb out of [the kayak], then [see] that everything outside is made of water, and [withdraw] sulkily.[or][The person asked] [wait] in the bottom of [the kayak].[stopping]" instead.
 
-Check something exiting when the actor is an animal in the synthesizer:
-	if the person asked is a bird:
-		say "[The person asked] [make] some attempts to flutter out of [the synthesizer], but [don't] get much lift and [give] up for the moment." instead;
+Check something exiting when the actor is in the synthesizer and the player is enclosed by the seminar room:
+	if the actor is a bird:
+		say "[The actor] [make] some attempts to flutter out of [the synthesizer], but [don't] get much lift and [give] up for the moment.";
 	otherwise:
-		say "[The person asked] [scrabble] at the smooth sides of [the synthesizer], but can't get out." instead.
+		if the actor is an animal:
+			say "[The actor] [scrabble] at the smooth sides of [the synthesizer], but can't get out.";
+		otherwise:
+			follow the exit attempt rules for the actor;
+	stop the action.
+
+Check something exiting when the actor is on the programmable dais:
+	follow the exit attempt rules for the actor;
+	stop the action.
+
+The exit attempt rules are an object-based rulebook.
+
+To fidget is a verb. To pace is a verb.
+
+An exit attempt rule for a person (called exiter):
+	if a random chance of 1 in 2 succeeds:
+		say "[The exiter] [one of][fidget] uncomfortably[or][pace] around[at random] [in-on the holder of the exiter].";
+		the rule succeeds;
+	let preposition be text;
+	if the holder of exiter is the programmable dais:
+		now preposition is "off";
+	otherwise:
+		now preposition is "out of";
+	say "[The exiter] [one of][make] as if to get[or][appear] to consider getting[or][seem] to contemplate getting[at random] [preposition] [the holder of the exiter]";
+	if a random chance of 1 in 2 succeeds:
+		say ", but [regarding the exiter][one of][decide] against it[or]something makes [them] change [their] mind[at random][run paragraph on]";
+	say "."
+
+
+Section 3 - Ushering animals and people on and off dais and synthesizer
+
+Understand "usher [someone] on/onto/up/into/in [something]" as ushering it onto. Ushering it onto is an action applying to two things.
+
+Understand the command "lead" as "usher".
+Understand "push [someone] onto/into [something]" as ushering it onto.
+
+Understand "usher [someone] off/from [something]" as ushering it off. Ushering it off is an action applying to two things.
+
+Understand "usher [someone] down from [something]" as ushering it off.
+Understand "usher [someone] out of [something]" as ushering it off.
+Understand "push [someone] down from [something]" as ushering it off.
+Understand "push [someone] out of [something]" as ushering it off.
+Understand "push [someone] off [something]" as ushering it off.
+
+Definition: A thing is synth-like if it is the programmable dais or it is the synthesizer or it is the cryptolock or it is the t-inserter or it is the spinner.
+
+Definition: a person is human if it is not an animal.
+
+Check ushering someone onto something when the holder of the noun is the second noun:
+	say "[The noun] [are] already [in-on the second noun].";
+	stop the action.
+
+Check ushering someone onto something when the second noun is not the synthesizer and the second noun is not the programmable dais and the second noun is not the spinner:
+	say "[The noun] [seem] unwilling to get [in-on the second noun][if the second noun is the t-inserter], and it would be near impossible for [regarding the noun][them] to get up there even if [they] wanted to[end if][if the second noun is the cryptolock], and [regarding the noun][they] wouldn't fit even if [they] wanted to[end if].";
+	stop the action.
+
+Carry out ushering someone onto something:
+	if the second noun is not empty and the carrying capacity of the second noun is 1:
+		say "There is no more room [in-on the second noun].";
+		stop the action;
+	say "[random-ushering-phrase] up [if second noun is a supporter]on[otherwise]into[end if] [the second noun].";
+	now the noun is on the second noun.
+
+Check ushering someone off something when the holder of the noun is the location:
+	say "[The noun] [are] not [in-on the second noun].";
+	stop the action.
+
+Carry out ushering someone off something:
+	say "[random-ushering-phrase] down from [the second noun] to the floor.";
+	now the noun is in the location.
+
+Does the player mean ushering the player onto something:
+	it is very unlikely.
+
+Instead of ushering the player onto something:
+	try entering the second noun.
+
+Instead of ushering a real person off something:
+	try asking the noun to try exiting.
+
+Instead of ushering the player off something:
+	try exiting.
+
+Instead of ushering a real person onto something:
+	try asking the noun to try entering the second noun.
+
+To say random-ushering-phrase:
+	if a random chance of 1 in 2 succeeds:
+		say "[We][one of] carefully[or] gently[or] laboriously[or][at random]";
+	otherwise:
+		say "[one of]Carefully[or]Gently[or]Laboriously[at random], [we]";
+	say " [one of]help[or]usher[or]lead[at random] [the noun]";
+
+Instead of asking a fake person (called the enterer) to try standing up on something enterable (called target):
+	try ushering the enterer onto the target.
+
+Instead of asking a fake person (called the enterer) to try sitting on something enterable (called the target):
+	try ushering the enterer onto the target.
+
+Instead of asking someone fake (called the enterer) to try lying on something enterable (called the target):
+	try ushering the enterer onto the target.
+
+Instead of asking someone fake (called the enterer) to try entering something enterable (called the target):
+	try ushering the enterer onto the target.
+
+Instead of asking a fake person (called enterer) to try getting off a thing (called target):
+	try ushering the enterer off the target.
+
+Instead of asking a fake person (called the enterer) to try exiting:
+	if the holder of the enterer is not synth-like:
+		continue the action;
+	try ushering the enterer off the holder of the enterer.
+
+To say ushertake (creature - a person):
+	say "[The creature] [are] unwilling to be carried, but [we] [one of]carefully [or]gently [or][at random][one of]help[or]usher[or]lead[at random] [regarding creature][them]".
+
+Sanity-check taking a fake person which is on the programmable dais:
+	unless the player is on the programmable dais or (the noun is an animal and the heft of the noun is less than 4) or the noun is not touchable:
+		now the noun is in location;
+		say "[ushertake noun] down from the dais.";
+		stop the action.
+
+Sanity-check removing a fake person from the programmable dais:
+	unless the noun is not touchable or the noun is an animal and the heft of the noun is less than 4:
+		now the noun is in location;
+		say "[ushertake noun] down from the dais to the floor.";
+		stop the action.
+
+Sanity-check taking a fake person which is in the synthesizer:
+	unless the player is in the synthesizer or the noun is not touchable or (the noun is an animal and the heft of the noun is less than 4):
+		now the noun is in location;
+		say "[ushertake noun] out of the synthesizer and down to the floor.";
+		stop the action.
+
+Sanity-check removing a fake person from the synthesizer:
+	unless the noun is not touchable or (the noun is an animal and the heft of the noun is less than 4):
+		now the noun is in location;
+		say "[ushertake noun] out of the synthesizer and down to the floor.";
+		stop the action.
+
+Sanity-check putting a fake person on a synth-like thing:
+	if the noun is in location and (the noun is human or the heft of the noun is greater than 3):
+		try ushering the noun onto the second noun instead.
+
+Sanity-check inserting a fake person into a synth-like thing:
+	if the noun is in location and (the noun is human or the heft of the noun is greater than 3):
+		try ushering the noun onto the second noun instead.
 
 Report something exiting when the actor is an animal and the container exited from is the t-inserter:
-	say "[The person asked] [clamber] out of [the t-inserter]." instead.
+	say "[The actor] [clamber] out of [the t-inserter]." instead.
 
 Report something exiting when the actor is a bird and the container exited from is the t-inserter:
-	say "[The person asked] [hop] and [flutter] out of [the t-inserter]." instead.
+	say "[The actor] [hop] and [flutter] out of [the t-inserter]." instead.
 
 Test kayakcat with "autoupgrade / wave s-remover at shackle / wave l-remover at bollard / wave d-remover at board / wave b-remover at boar / get oar / get in kayak / launch kayak / z" holding the tomcat in the Abandoned Shore.
 
-Section 2 - Animal Following
+Section 3 - Animal Following
 
 [Carry out entering the line:
 	now pursuing-state is true;
@@ -89,11 +225,6 @@ Carry out entering a vehicle:
 	now pursuing-state is true;
 	rapidly make followers follow into noun;
 	now pursuing-state is false.
-
-
-Table of voluntary entry
-enterer (a person)	holder box (a thing)	entrance time (a time)
-with 20 blank rows.
 
 Check a fake person entering a vehicle when the heft of the person asked is greater than 3:
 	say "[The person asked] makes an effort to get in, but does not remotely fit.";

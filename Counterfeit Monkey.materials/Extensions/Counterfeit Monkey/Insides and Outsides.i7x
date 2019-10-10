@@ -101,7 +101,7 @@ Instead of exiting when the player is not enclosed by an enterable thing and the
 Check entering something (called target) when the target is in a container (called the target-parent):
 	say "[The target-parent] is too small to allow for that." instead.
 
-Check entering a closed container (called the target) when the player is not in the target (this is the attempt opening on enter rule):
+Check entering a closed enterable container (called the target) when the player is not in the target (this is the attempt opening on enter rule):
 	try opening the noun;
 	if the noun is closed, stop the action.
 

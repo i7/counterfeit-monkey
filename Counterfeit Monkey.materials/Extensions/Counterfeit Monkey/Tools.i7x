@@ -486,8 +486,10 @@ She grins at us and sets the glass down neatly on the bar.[or]This time she lays
 To decide what thing is the homonym-match of (target - a thing):
 	let old text be "[target]";
 	now old text is old text in lower case;
+	let target-hash be the hash code of target;
+	let target-index be the homonym index of target;
 	repeat with item running through things in the repository:
-		if the hash code of the item is the hash code of target and the homonym index of the item is not the homonym index of target:
+		if the hash code of the item is target-hash and the homonym index of the item is not target-index:
 			let new text be "[item]";
 			now new text is new text in lower case;
 			if new text is old text:
@@ -496,7 +498,7 @@ To decide what thing is the homonym-match of (target - a thing):
 
 Chapter 3 - The T-inserter
 
-The T-inserter machine is a fixed in place container in the Sensitive Equipment Testing Room. The initial appearance is "At the cen[ter] of the room is a gleaming new T-inserter Machine[if the machine is non-empty], currently containing [a random thing in the T-inserter machine][end if][one of]. This is a state of the art device: letter removal has been well understood for decades, but insertion is much more dangerous and difficult, fraught with ambiguity[or][stopping]." The description is "Made of brushed steel, it resembles an industrial espresso machine, with a space in which to insert items. A dozen small nozzles poke into this space, and the grate beneath is ready to drain off any superfluity of T-ness. There is a tiny brass plate near the base of the machine."
+The T-inserter machine is a fixed in place enterable container in the Sensitive Equipment Testing Room. The initial appearance is "At the cen[ter] of the room is a gleaming new T-inserter Machine[if the machine is non-empty], currently containing [a random thing in the T-inserter machine][end if][one of]. This is a state of the art device: letter removal has been well understood for decades, but insertion is much more dangerous and difficult, fraught with ambiguity[or][stopping]." The description is "Made of brushed steel, it resembles an industrial espresso machine, with a space in which to insert items. A dozen small nozzles poke into this space, and the grate beneath is ready to drain off any superfluity of T-ness. There is a tiny brass plate near the base of the machine."
 
 Understand "space" and "grate" and "inserter" as the machine. The carrying capacity of the T-inserter Machine is 1.
 
@@ -518,6 +520,9 @@ Sanity-check inserting something irretrievable into the T-inserter:
 
 After inserting something into the T-inserter:
 	try teeing the noun.
+
+Check entering the T-inserter:
+	say "It is not easily enterable. And even if it was, [we]['re] not sure it would be such a good idea." instead.
 
 teeing is an action applying to one thing. The teeing action has an object called the goal-object (matched as "to"). The teeing action has a number called the t-count. The teeing action has a list of objects called the possible-goals. The teeing action has a list of texts called the possible-goal-texts.
 
@@ -724,7 +729,7 @@ Sanity-check locking keylessly the plexiglas case:
 Sanity-check turning the screws when the screws are not part of the plexiglas case:
 	say "There's no point now: they're not holding anything in place." instead.
 
-The synthesizer is a container in the plexiglas case. The heft of the synthesizer is 4. The synthesizer is fixed in place. Understand "synth" or "synthesiser" or "machine" as the synthesizer.
+The synthesizer is an enterable container in the plexiglas case. The heft of the synthesizer is 4. The synthesizer is fixed in place. Understand "synth" or "synthesiser" or "machine" as the synthesizer.
 	The description is "It is designed to accept two items and then be turned on. It is shiny and white, and looks a little like a bathtub for very short people."
 	The introduction is "It was a full-sized, human version of this that made us what [we] [are] now, so the object makes both of us feel a little skittish and self-conscious."
 
@@ -870,7 +875,7 @@ That in turn necessitated other changes as follow:
 
 This is all a lot of bother just for the sake of adding an achievement/easter egg that most players probably won't notice. In each case, though, I felt as though the result of the design fix was a richer, more interesting setting with more playful manipulation available. Adding the yam to the game also provided another purpose for the farmer, who had been relatively useless (other than as the provider of the totally optional lime) ever since he stopped selling chard.  ]
 
-The spinner is part of the spinner-gate. It is a supporter. Understand "sculpture" or "mirror" or "statue" or "pedestal" or "cone" as the spinner.
+The spinner is part of the spinner-gate. It is an enterable supporter. The posture of the spinner is standing. The spinner allows seated and standing. Understand "sculpture" or "mirror" or "statue" or "pedestal" or "cone" as the spinner.
 	The description of the spinner is "The base of the sculpture is a cone about four feet tall. On top of that is a flat circular pedestal, and there is a mirror that rotates around the outer circumference. The mirrored surface faces inward, so that it is sometimes reflecting [if the spinner is non-empty][the random thing on the spinner] on the pedestal[otherwise]whatever might be on the pedestal (currently nothing)[end if] and sometimes concealing [if the spinner is non-empty][them][otherwise]it[end if] from view.".
 	The printed name of the spinner is "pedestal".
 	The carrying capacity is 1.
@@ -889,7 +894,14 @@ Sanity-check switching on the spinner:
 Sanity-check switching off the spinner:
 	say "If there is an off-switch, it's nowhere we can see it." instead.
 
+Instead of climbing the spinner:
+	try entering the spinner.
 
+Instead of climbing the spinner-gate:
+	if the player is on the spinner:
+		say "The gate is still too high to climb even now that we're on the sculpture.";
+	otherwise:
+		say "The iron bars of the gate are too close to climb through and too tall to climb over."
 
 Section 2 - Spinning Functionality
 
@@ -917,13 +929,15 @@ This is the spinner-turning rule:
 			if the goal text is item text:
 				now the chosen article is the source;
 	if the chosen article is X:
+		let x-homonym be the homonym index of X;
+		let x-hash be the hash code of X;
 		repeat with item running through things in the repository:
-			if the hash code of the item is the hash code of X:
+			if the hash code of the item is x-hash:
 				let item text be "[item]";
 				now item text is item text in lower case;
 				if the goal text is item text:
-					unless item is the reel or item is the snap:
-					[make sure that we always get the fishing reel and the sound snap rather than the film reel or the clothes snap]
+					unless item is the reel or item is the snap or the homonym index of item is x-homonym:
+					[Make sure that we always get the fishing reel and the sound snap rather than the film reel or the clothes snap. Also make sure that a palindrome is not transformed into another instance of itself.]
 						now the chosen article is the item;
 						break;
 	if the chosen article is not X:
@@ -1725,8 +1739,9 @@ Check shooting something with the loaded anagramming gun:
 	let initial key be the anagram key of the noun;
 	now detritus is the noun;
 	let the possibles list be a list of things;
+	let noun-hash be the hash code of the noun;
 	repeat with item running through things in the repository:
-		if the hash code of the item is the hash code of the noun:
+		if the hash code of the item is noun-hash:
 			[say "[item]: ";]
 			let initial name be "[noun]";
 			now initial name is initial name in lower case;
@@ -2107,6 +2122,8 @@ The programmable dais is an enterable supporter in the Workshop. Understand "mac
 	The initial appearance is "A programmable dais sits in the middle of the room. It has the raw look of lab equipment rather than a nice smooth commercial instrument."
 	The description is "It's a round black metal platform with substantial stabil[izing] coils visible underneath, five or six feet in diameter. This is experimental lab grade letter equipment, ferociously powerful, insanely dangerous."
 
+The programmable dais allows seated, standing and reclining.
+
 After examining the programmable dais:
 	say "The dais has [a list of things which are part of the dais]."
 
@@ -2244,7 +2261,7 @@ Chapter 16 - The Cryptolock aka Vowel Rotator
 
 The puzzle here is completely different depending on whether you're playing hard mode or easy mode.]
 
-The cryptolock is a scenery container in the Generator Room. It is fixed in place. The printed name of the cryptolock is "brushed steel bucket". Understand "brushed" or "steel" or "container" or "bucket"  as the cryptolock.
+The cryptolock is a scenery enterable container in the Generator Room. It is fixed in place. The printed name of the cryptolock is "brushed steel bucket". Understand "brushed" or "steel" or "container" or "bucket"  as the cryptolock.
 
 The cryptoswitch is a device. The cryptoswitch is part of the cryptolock. The printed name of the cryptoswitch is "reverse switch". Understand "reverse" or "switch" as the cryptoswitch.
 
@@ -2277,6 +2294,9 @@ Check inserting something into the cryptolock when the cryptolock contains somet
 
 Check inserting something into the cryptolock when the heft of the noun is greater than 3:
 	say "[The noun] [are] too big to fit into [the cryptolock]." instead.
+
+Check entering the cryptolock:
+	say "[We] wouldn't fit. And even if [we] did, [we]['re] not sure it would be such a good idea." instead.
 
 Test bucket-size with "put coat in bucket / wave a-remover at coat / get cot / put cot in bucket" holding the coat in the Generator Room.
 

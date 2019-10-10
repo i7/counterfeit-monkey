@@ -855,8 +855,6 @@ Instead of going from the Cold Storage when Cold Dilemma is happening:
 Every turn when Cold Dilemma is happening and the time since Cold Dilemma began is 1 minute and father is in a room:
 	say "I vote [we] gel Brock and send him out to my father. No, hear me out. Brock's cover is probably not in great shape anyway. You might be able to rescue him later. And it would be a coup for my father to have a real big arrest to put on the record."
 
-Definition: a person is human if it is not an animal.
-
 Every turn when Cold Dilemma is happening and there is someone human (called the victim) who is not the player enclosed by location:
 	if victim is Brock:
 		say "You're silent. I'm not letting you act again. You're not stopping me.
