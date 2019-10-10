@@ -1798,13 +1798,19 @@ When play begins (this is the chair and desk postures rule):
 	now every desk allows seated;
 	now every desk allows standing.
 
+To decide whether the action is silent:
+	(- (keep_silent == true) -).
+
 Before entering a chair which supports something (called the impediment):
 	if the noun supports a person:
 		say "[The noun] [are] plainly occupied." instead;
 	otherwise:
 		try taking the impediment;
 		if the impediment is on the noun:
-			stop the action.
+			stop the action;
+		otherwise:
+			if the action is silent:
+				say "[We] pick up [the impediment] first to make room on [the noun]."
 
 Rule for writing a topic sentence about an as-yet-unknown introduceable person (called special-target) who is on a chair (called secondary-target):
 	now the secondary-target is mentioned;
