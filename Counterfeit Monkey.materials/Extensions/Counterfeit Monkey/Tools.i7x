@@ -935,8 +935,8 @@ This is the spinner-turning rule:
 				let item text be "[item]";
 				now item text is item text in lower case;
 				if the goal text is item text:
-					unless item is the reel or item is the snap:
-					[make sure that we always get the fishing reel and the sound snap rather than the film reel or the clothes snap]
+					unless item is the reel or item is the snap or the homonym index of item is x-homonym:
+					[Make sure that we always get the fishing reel and the sound snap rather than the film reel or the clothes snap. Also make sure that a palindrome is not transformed into another instance of itself.]
 						now the chosen article is the item;
 						break;
 	if the chosen article is not X:
