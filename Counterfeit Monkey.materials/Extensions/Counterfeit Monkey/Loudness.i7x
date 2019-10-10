@@ -50,8 +50,11 @@ Array noisy_things --> 10;
 	! Search the container of the player for noisy things
 	audible_ceiling = parent (player);
 
-	while (~~(audible_ceiling == real_location || (audible_ceiling has openable && audible_ceiling hasnt open)))
+	while (audible_ceiling && ~~(audible_ceiling == real_location || (audible_ceiling has openable && audible_ceiling hasnt open)))
 		audible_ceiling = parent(audible_ceiling);
+
+	if (audible_ceiling == nothing)
+			audible_ceiling = real_location;
 
 	! We could be inside something noisy
 	if (audible_ceiling provides (+ noisy +) && audible_ceiling.(+ noisy +))
