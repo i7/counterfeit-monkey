@@ -375,13 +375,10 @@ Include (-
 			if (obj has workflag) {
 				give obj ~workflag;
 				for (obj2 = parent(obj): obj2 : obj2 = parent (obj2)) {
-					!if (obj2 == car || (obj2 provides component_parent && obj2.component_parent == car)) {
 					if (obj2 == car) {
 						give obj workflag;
 						break;
 					}
-					!if (obj2 provides component_parent && obj2.component_parent)
-					!	obj2 = obj2.component_parent;
 				}
 			}
 	];
