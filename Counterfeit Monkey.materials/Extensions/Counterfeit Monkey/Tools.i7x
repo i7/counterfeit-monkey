@@ -486,8 +486,10 @@ She grins at us and sets the glass down neatly on the bar.[or]This time she lays
 To decide what thing is the homonym-match of (target - a thing):
 	let old text be "[target]";
 	now old text is old text in lower case;
+	let target-hash be the hash code of target;
+	let target-index be the homonym index of target;
 	repeat with item running through things in the repository:
-		if the hash code of the item is the hash code of target and the homonym index of the item is not the homonym index of target:
+		if the hash code of the item is target-hash and the homonym index of the item is not target-index:
 			let new text be "[item]";
 			now new text is new text in lower case;
 			if new text is old text:
@@ -926,8 +928,10 @@ This is the spinner-turning rule:
 			if the goal text is item text:
 				now the chosen article is the source;
 	if the chosen article is X:
+		let x-homonym be the homonym index of X;
+		let x-hash be the hash code of X;
 		repeat with item running through things in the repository:
-			if the hash code of the item is the hash code of X:
+			if the hash code of the item is x-hash:
 				let item text be "[item]";
 				now item text is item text in lower case;
 				if the goal text is item text:
@@ -1734,8 +1738,9 @@ Check shooting something with the loaded anagramming gun:
 	let initial key be the anagram key of the noun;
 	now detritus is the noun;
 	let the possibles list be a list of things;
+	let noun-hash be the hash code of the noun;
 	repeat with item running through things in the repository:
-		if the hash code of the item is the hash code of the noun:
+		if the hash code of the item is noun-hash:
 			[say "[item]: ";]
 			let initial name be "[noun]";
 			now initial name is initial name in lower case;
