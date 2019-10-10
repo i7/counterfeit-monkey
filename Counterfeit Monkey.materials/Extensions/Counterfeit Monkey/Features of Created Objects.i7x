@@ -207,7 +207,10 @@ Carry out involuntarily-dropping something which is not a person:
 	now the noun is handled.
 
 Carry out involuntarily-dropping:
-	try silently dropping the noun; [this is better than just moving to the location because it copes with cases where the thing needs to land in a vehicle or supporter.]
+	if the player is on the spinner:
+		now the noun is in the location;
+	otherwise:
+		try silently dropping the noun; [this is better than just moving to the location because it copes with cases where the thing needs to land in a vehicle or supporter.]
 	if the player carries the noun:
 		stop the action.
 
