@@ -875,7 +875,7 @@ That in turn necessitated other changes as follow:
 
 This is all a lot of bother just for the sake of adding an achievement/easter egg that most players probably won't notice. In each case, though, I felt as though the result of the design fix was a richer, more interesting setting with more playful manipulation available. Adding the yam to the game also provided another purpose for the farmer, who had been relatively useless (other than as the provider of the totally optional lime) ever since he stopped selling chard.  ]
 
-The spinner is part of the spinner-gate. It is a supporter. Understand "sculpture" or "mirror" or "statue" or "pedestal" or "cone" as the spinner.
+The spinner is part of the spinner-gate. It is an enterable supporter. The posture of the spinner is standing. The spinner allows seated and standing. Understand "sculpture" or "mirror" or "statue" or "pedestal" or "cone" as the spinner.
 	The description of the spinner is "The base of the sculpture is a cone about four feet tall. On top of that is a flat circular pedestal, and there is a mirror that rotates around the outer circumference. The mirrored surface faces inward, so that it is sometimes reflecting [if the spinner is non-empty][the random thing on the spinner] on the pedestal[otherwise]whatever might be on the pedestal (currently nothing)[end if] and sometimes concealing [if the spinner is non-empty][them][otherwise]it[end if] from view.".
 	The printed name of the spinner is "pedestal".
 	The carrying capacity is 1.
@@ -894,7 +894,8 @@ Sanity-check switching on the spinner:
 Sanity-check switching off the spinner:
 	say "If there is an off-switch, it's nowhere we can see it." instead.
 
-
+Instead of climbing the spinner:
+	try entering the spinner.
 
 Instead of climbing the spinner-gate:
 	if the player is on the spinner:
