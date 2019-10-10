@@ -125,8 +125,12 @@ This is the stop putting error list rule:
 	if the second noun is single put on only:
 		abide by the fake put on rule;
 	otherwise:
-		if the second noun is not touchable:
-			abide by the try reaching rules for the second noun.
+		if the carrying capacity of the second noun is 1:
+			say "[The second noun] only [have] room for one thing at a time.";
+			abide by the cancel multiple rule;
+		otherwise:
+			if the second noun is not touchable:
+				abide by the try reaching rules for the second noun.
 
 Definition: a thing is single put on only:
 	if it is the hard wood floors:
@@ -208,7 +212,10 @@ A check multiple insert rule for a thing (called the target) (this is the check 
 
 A check multiple insert rule for a container (called the target) (this is the check for small containers rule):
 	if the carrying capacity of target is less than 3:
-		say "It makes no sense to insert a lot of random things in [the target].";
+		if the carrying capacity of target is 1:
+			say "[The target] only [take] one thing at a time.";
+		otherwise:
+			say "It makes no sense to insert a lot of random things in [the target].";
 		abide by the cancel multiple rule.
 
 A check multiple insert rule for a single insert only thing (this is the check for single insert containers rule):
@@ -292,14 +299,12 @@ the rack
 [The things listed in this table gives a the reply "It makes no sense to put a lot of random stuff on" when trying to put all on them.]
 Table of unsuitable supporters
 Support (a thing)
-spinner
 pen
 left pan
 right pan
 the pulley
 diorama table
 portcullis
-projector
 
 [The things listed in this table gives a single custom reply when trying to insert all into them.]
 Table of snarky containers
@@ -328,6 +333,7 @@ origin paste
 long glass case
 shrine
 pit-trap
+projector
 
 [The things listed in this table gives a the reply "It makes no sense to insert a lot of random things in" when trying to insert all into them.]
 Table of unsuitable containers
