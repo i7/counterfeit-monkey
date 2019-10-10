@@ -234,7 +234,7 @@ Report involuntarily-dropping a cat:
 	say "[The noun] [get] tired of being carried and [leap] delicately to the [fall-receiver]." instead.
 
 To say fall-receiver:
-	if the holder of the player is the location:
+	if the holder of the player is the location or the holder of the player is the spinner:
 		say "[ground]";
 	otherwise:
 		if the holder of the player is a car:
