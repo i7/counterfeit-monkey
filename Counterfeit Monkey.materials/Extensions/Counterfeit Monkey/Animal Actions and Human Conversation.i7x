@@ -107,6 +107,12 @@ Check ushering someone onto something when the holder of the noun is the second 
 	say "[The noun] [are] already [in-on the second noun].";
 	stop the action.
 
+Check ushering someone onto something when the holder of the noun is the player:
+	if the second noun is a container:
+		try inserting the noun into the second noun instead;
+	otherwise:
+		try putting the noun on the second noun instead.
+
 Check ushering someone onto something when the second noun is not the synthesizer and the second noun is not the programmable dais and the second noun is not the spinner:
 	say "[The noun] [seem] unwilling to get [in-on the second noun][if the second noun is the t-inserter], and it would be near impossible for [regarding the noun][them] to get up there even if [they] wanted to[end if][if the second noun is the cryptolock], and [regarding the noun][they] wouldn't fit even if [they] wanted to[end if].";
 	stop the action.
@@ -118,7 +124,7 @@ Carry out ushering someone onto something:
 	say "[random-ushering-phrase] up [if second noun is a supporter]on[otherwise]into[end if] [the second noun].";
 	now the noun is on the second noun.
 
-Check ushering someone off something when the holder of the noun is the location:
+Check ushering someone off something when the holder of the noun is not the second noun:
 	say "[The noun] [are] not [in-on the second noun].";
 	stop the action.
 
@@ -132,11 +138,11 @@ Does the player mean ushering the player onto something:
 Instead of ushering the player onto something:
 	try entering the second noun.
 
-Instead of ushering a real person off something:
-	try asking the noun to try exiting.
-
 Instead of ushering the player off something:
 	try exiting.
+
+Instead of ushering a real person off something:
+	try asking the noun to try exiting.
 
 Instead of ushering a real person onto something:
 	try asking the noun to try entering the second noun.
