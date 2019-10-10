@@ -62,6 +62,13 @@ A smarter parser rule when sp_normal (this is the new stripping adverbs rule):
 		identify error as stripping adverbs rule;
 		reparse the command.
 
+The new signs of frustration rule is listed instead of the signs of frustration rule in the Smarter Parser rulebook.
+
+A smarter parser rule when sp_normal (this is the new signs of frustration rule):
+	if input contains "(dumb|moron|idiot|lame|duh|retard|suck|blow)(ic|ed|s)?" or input contains "(_swear|stupid|bored|boring|die|suicide|death|hate)":
+		identify error as signs of frustration rule;
+		reject the command.
+
 The stripping failed with rule is not listed in any rulebook. [There are too many actions in the game where "with" IS fruitful, so this often gives a misleading response.]
 
 The Smarter Parser simplify punctuation rule is not listed in any rulebook.
