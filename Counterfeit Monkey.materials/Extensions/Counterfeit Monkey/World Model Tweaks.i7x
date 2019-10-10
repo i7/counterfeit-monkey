@@ -1609,7 +1609,14 @@ Include Postures by Emily Short.
 
 Sanity-check going up when the room up from the location is nothing:
 	if the player is not standing:
-		try taking position standing instead.
+		if the player is on a supporter:
+			try exiting instead;
+		otherwise:
+			try taking position standing instead;
+
+Sanity-check going down when the room down from the location is nothing:
+	if the player is on a supporter and the player is not seated:
+		try exiting instead.
 
 Check going to a room when the player is not in the location:
 	while the player is not in the location:
