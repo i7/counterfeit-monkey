@@ -107,15 +107,18 @@ Check ushering someone onto something when the holder of the noun is the second 
 	say "[The noun] [are] already [in-on the second noun].";
 	stop the action.
 
-Check ushering someone onto something when the holder of the noun is the player:
+A first check ushering someone onto something when the holder of the noun is the player:
 	if the second noun is a container:
 		try inserting the noun into the second noun instead;
 	otherwise:
 		try putting the noun on the second noun instead.
 
 Check ushering someone onto something when the second noun is not the synthesizer and the second noun is not the programmable dais and the second noun is not the spinner:
-	say "[The noun] [seem] unwilling to get [in-on the second noun][if the second noun is the t-inserter], and it would be near impossible for [regarding the noun][them] to get up there even if [they] wanted to[end if][if the second noun is the cryptolock], and [regarding the noun][they] wouldn't fit even if [they] wanted to[end if].";
-	stop the action.
+	if the noun is an animal and the heft of the noun is less than 4:
+		try inserting the noun into the second noun instead;
+	otherwise:
+		say "[The noun] [seem] unwilling to get [in-on the second noun][if the second noun is the t-inserter], and it would be near impossible for [regarding the noun][them] to get up there even if [they] wanted to[end if][if the second noun is the cryptolock], and [regarding the noun][they] wouldn't fit even if [they] wanted to[end if].";
+		stop the action.
 
 Carry out ushering someone onto something:
 	if the second noun is not empty and the carrying capacity of the second noun is 1:
