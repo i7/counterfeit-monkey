@@ -66,7 +66,7 @@ The new describe contents rule is listed instead of the describe contents entere
 This is the new describe contents rule:
 	if the person asked is the player, follow the description-priority rules.
 
-A description-concealing rule while entering a container (called special-target):
+A description-concealing rule while entering a thing (called special-target):
 	rapidly set stuff outside special-target not marked for listing.
 
 Section -
@@ -171,7 +171,7 @@ To set clones of (n - an object) mentioned:
 To rapidly conceal possessions:
 	(- MyConcealPossessions(); -).
 
-To rapidly set stuff outside (X - a container) not marked for listing:
+To rapidly set stuff outside (X - a thing) not marked for listing:
 	(- MyHideExteriorStuff({X}); -).
 
 To rapidly hide possessions of followers in (n - a container):
