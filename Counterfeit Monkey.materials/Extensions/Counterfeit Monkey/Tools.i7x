@@ -899,7 +899,7 @@ Instead of climbing the spinner:
 
 Instead of climbing the spinner-gate:
 	if the player is on the spinner:
-		say "The gate is still too high to climb even now that we're on the sculpture.";
+		say "The gate is still too high, even now that we're on the sculpture.";
 	otherwise:
 		say "The iron bars of the gate are too close to climb through and too tall to climb over."
 
