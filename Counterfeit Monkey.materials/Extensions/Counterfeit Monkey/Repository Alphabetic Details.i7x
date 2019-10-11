@@ -3963,7 +3963,7 @@ Sanity-check pushing the tot to a direction:
 Sanity-check washing the tot:
 	say "I know you think on general principles that all small children are by definition sticky and need a bath, but this one seems to have manifested in a treacle-free condition." instead.
 
-Some plural-tots are people. The printed name of the plural-tots is "tots". Understand "tots" as the plural-tots. The heft of the tots is 3. The description of the plural-tots is "An angelic boy and girl, looking like an illustration for Hansel and Gretel. They are wide-eyed and very small, and don't actually look capable of any independent thought. Sometimes one sucks its thumb."
+Some plural-tots are people. The printed name of the plural-tots is "tots". Understand "tots" as the plural-tots. The heft of the plural-tots is 3. The description of the plural-tots is "An angelic boy and girl, looking like an illustration for Hansel and Gretel. They are wide-eyed and very small, and don't actually look capable of any independent thought. Sometimes one sucks its thumb."
 
 Sanity-check pushing the plural-tots to a direction:
 	say "[We] give them an encouraging push; the girl starts to whimper. Maybe they're more inclined to follow than to be shoved?" instead.
