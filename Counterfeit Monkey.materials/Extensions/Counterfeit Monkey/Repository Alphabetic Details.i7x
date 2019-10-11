@@ -3953,7 +3953,7 @@ The tort is an r-abstract thing. The heft of the tort is 0. The description of t
 
 The torte is an edible thing. The description of the torte is "It is a thickly iced chocolate torte with a fine dusting of confectioner's sugar and layered with apricot jam." The heft of a torte is 1. The scent-description of the torte is "cocoa and apricots".
 
-The heft of a tot is 3. The description of a tot is "An angelic little girl with big blue eyes and golden curls. She looks as though she was recently rescued from a Victorian orphanage by a kindly gentleman of means."
+The heft of a tot is 3. The scent-description of a tot is "carbolic soap". The description of a tot is "An angelic little girl with big blue eyes and golden curls. She looks as though she was recently rescued from a Victorian orphanage by a kindly gentleman of means."
 	The greeting of a tot is "'Hewwo thew,' lisps the tot[if the player carries an edible thing]. Her eyes fix hopefully on [the random edible thing carried by the player][end if]."
 
 [The normal response to pushing people in some direction says that only very small children can be manipulated that way; but of course, the tot *is* very small…]
@@ -3963,7 +3963,7 @@ Sanity-check pushing the tot to a direction:
 Sanity-check washing the tot:
 	say "I know you think on general principles that all small children are by definition sticky and need a bath, but this one seems to have manifested in a treacle-free condition." instead.
 
-Some plural-tots are people. The printed name of the plural-tots is "tots". Understand "tots" as the plural-tots. The heft of the plural-tots is 3. The description of the plural-tots is "An angelic boy and girl, looking like an illustration for Hansel and Gretel. They are wide-eyed and very small, and don't actually look capable of any independent thought. Sometimes one sucks its thumb."
+Some plural-tots are people. The printed name of the plural-tots is "tots". Understand "tots" as the plural-tots. The heft of the plural-tots is 3. The scent-description of the plural-tots is "carbolic soap". The description of the plural-tots is "An angelic boy and girl, looking like an illustration for Hansel and Gretel. They are wide-eyed and very small, and don't actually look capable of any independent thought. Sometimes one sucks its thumb."
 
 Sanity-check pushing the plural-tots to a direction:
 	say "[We] give them an encouraging push; the girl starts to whimper. Maybe they're more inclined to follow than to be shoved?" instead.
