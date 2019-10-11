@@ -76,6 +76,7 @@ the rash	false
 the sword-arm	false
 the arm	false
 the alterna-tit	false
+the tiptoe	false
 
 Definition: a thing is freaky:
 	if it is an item listed in the Table of Freaky Things:
