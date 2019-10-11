@@ -152,7 +152,7 @@ Does the player mean doing something when the second noun is the as-coin and act
 
 The fake-as is an as.
 
-The ass is a rideable animal. The initial appearance is "Adorably miniature, as donkeys on this island tend to be: he comes up to roughly knee-height and could be carried like a dog, though his sentiments on the experience might not be flattering. He does still have a bite, and back legs."
+The ass is a rideable animal. The ass is portable. The initial appearance is "Adorably miniature, as donkeys on this island tend to be: he comes up to roughly knee-height and could be carried like a dog, though his sentiments on the experience might not be flattering. He does still have a bite, and back legs."
 	The description of the ass is "He is not the ideal companion in a mission of stealth."
 	The heft is 3.
 
