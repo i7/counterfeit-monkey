@@ -5,14 +5,25 @@ Use authorial modesty.
 
 Book 1 - Some Rules of Animal Behavior
 
-Section 1 - Lifting Animals
+Section 1 - Lifting Animals and Children
 
-Instead of taking an animal when the heft of the noun is less than 4:
-	if the player carries the noun:
-		say "[We][']ve already got [the noun].";
-	otherwise:
-		say "[We] scoop [the noun] into our arms.";
-		now the player carries the noun.
+Definition: a person is human if it is not an animal.
+Definition: a person (called P) is portably-small if the heft of P is less than 4.
+
+Check an actor taking (this is the new can't take other people rule):
+	if the noun is a person and the noun is not portably-small:
+		if the actor is the player, say "I don't suppose [the noun] [would care] for that." (A);
+		stop the action.
+
+The new can't take other people rule is listed instead of the can't take other people rule in the check taking rulebook.
+
+Report taking an animal:
+	say "[We] scoop [the noun] into our arms.";
+	stop the action.
+
+Report taking an portably-small human person:
+	say "Against the protests of [the noun], [we] scoop [regarding the noun][them] into our arms.";
+	stop the action.
 
 [Every turn:
 	now the score is the number of useful things enclosed by the player;
@@ -101,8 +112,6 @@ Understand "push [someone] off [something]" as ushering it off.
 
 Definition: A thing is synth-like if it is the programmable dais or it is the synthesizer or it is the cryptolock or it is the t-inserter or it is the spinner.
 
-Definition: a person is human if it is not an animal.
-
 Check ushering someone onto something when the holder of the noun is the second noun:
 	say "[The noun] [are] already [in-on the second noun].";
 	stop the action.
@@ -114,7 +123,7 @@ A first check ushering someone onto something when the holder of the noun is the
 		try putting the noun on the second noun instead.
 
 Check ushering someone onto something when the second noun is not the synthesizer and the second noun is not the programmable dais and the second noun is not the spinner:
-	if the noun is an animal and the heft of the noun is less than 4:
+	if the noun is portably-small:
 		try inserting the noun into the second noun instead;
 	otherwise:
 		say "[The noun] [seem] unwilling to get [in-on the second noun][if the second noun is the t-inserter], and it would be near impossible for [regarding the noun][them] to get up there even if [they] wanted to[end if][if the second noun is the cryptolock], and [regarding the noun][they] wouldn't fit even if [they] wanted to[end if].";
@@ -181,35 +190,35 @@ To say ushertake (creature - a person):
 	say "[The creature] [are] unwilling to be carried, but [we] [one of]carefully [or]gently [or][at random][one of]help[or]usher[or]lead[at random] [regarding creature][them]".
 
 Sanity-check taking a fake person which is on the programmable dais:
-	unless the player is on the programmable dais or (the noun is an animal and the heft of the noun is less than 4) or the noun is not touchable:
+	unless the player is on the programmable dais or the noun is portably-small or the noun is not touchable:
 		now the noun is in location;
 		say "[ushertake noun] down from the dais.";
 		stop the action.
 
 Sanity-check removing a fake person from the programmable dais:
-	unless the noun is not touchable or the noun is an animal and the heft of the noun is less than 4:
+	unless the noun is not touchable or the noun is portably-small:
 		now the noun is in location;
 		say "[ushertake noun] down from the dais to the floor.";
 		stop the action.
 
 Sanity-check taking a fake person which is in the synthesizer:
-	unless the player is in the synthesizer or the noun is not touchable or (the noun is an animal and the heft of the noun is less than 4):
+	unless the player is in the synthesizer or the noun is not touchable or the noun is portably-small:
 		now the noun is in location;
 		say "[ushertake noun] out of the synthesizer and down to the floor.";
 		stop the action.
 
 Sanity-check removing a fake person from the synthesizer:
-	unless the noun is not touchable or (the noun is an animal and the heft of the noun is less than 4):
+	unless the noun is not touchable or noun is portably-small:
 		now the noun is in location;
 		say "[ushertake noun] out of the synthesizer and down to the floor.";
 		stop the action.
 
 Sanity-check putting a fake person on a synth-like thing:
-	if the noun is in location and (the noun is human or the heft of the noun is greater than 3):
+	if the noun is in location and the noun is not portably-small:
 		try ushering the noun onto the second noun instead.
 
 Sanity-check inserting a fake person into a synth-like thing:
-	if the noun is in location and (the noun is human or the heft of the noun is greater than 3):
+	if the noun is in location and the noun is not portably-small:
 		try ushering the noun onto the second noun instead.
 
 Report something exiting when the actor is an animal and the container exited from is the t-inserter:
