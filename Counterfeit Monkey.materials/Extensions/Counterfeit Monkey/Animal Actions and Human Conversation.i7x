@@ -58,8 +58,8 @@ Every turn (this is the contained people exiting rule):
 		yes;
 	no.]
 
-Check something exiting when the actor is an animal in the kayak:
-	if the kayak is enclosed by location and the location is not abandoned shore:
+Check something exiting when the actor is in the kayak and the location is not abandoned shore:
+	if the kayak is in location and the actor is not the player:
 		say "[one of][The person asked] [make] as though to climb out of [the kayak], then [see] that everything outside is made of water, and [withdraw] sulkily.[or][The person asked] [wait] in the bottom of [the kayak].[stopping]" instead.
 
 Check something exiting when the actor is in the synthesizer and the player is enclosed by the seminar room:
