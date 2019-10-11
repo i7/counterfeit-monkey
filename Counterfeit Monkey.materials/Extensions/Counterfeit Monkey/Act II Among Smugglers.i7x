@@ -561,7 +561,7 @@ topic	stuff
 Test crate-bug with "drop crate / put tub in crate / wave c-remover at crate / autoupgrade / wave c-remover at crate / open tub / gel rate / put plans in crate / wave c-remover at crate / n" [holding the tub and the crate and the plans.]
 
 Report involuntarily-dropping the crate:
-	say "[We] [are] forced to set the bulky crate down on the [ground]." instead.
+	say "[We] [are] forced to set the bulky crate down on the [fall-receiver]." instead.
 
 Instead of taking the crate:
 	say "[The crate] is too substantial to shift easily."
