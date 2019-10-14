@@ -3722,11 +3722,15 @@ A tad is r-abstract. The description of a tad is "A very small measure, like a t
 
 The description of the tam is "A slightly baggy crocheted cap, striped in shades of blue and white." The tam is wearable. It covers the head-area.
 
-The description of the tamale is "Still partly in its wrapper, and steaming hot. You seem to know what it is [--] some kind of traditionally Mexican or meso-American foodstuff? [--] but I can't say that it's familiar around here. The exterior looks like prepared corn dough of a fairly coarse kind. It smells like the interior may be spiced meat.". The tamale is edible.
+The description of a tamale is "Still partly in its wrapper, and steaming hot. You seem to know what it is [--] some kind of traditionally Mexican or meso-American foodstuff? [--] but I can't say that it's familiar around here. The exterior looks like prepared corn dough of a fairly coarse kind. It smells like the interior may be spiced meat.". The tamale is edible.
 
-Instead of searching the tamale:
-	now the description of the tamale is "Still partly in its wrapper, and gradually cooling. You seem to know what it is [--] some kind of traditionally Mexican or meso-American foodstuff? [--] but I can't say that it's familiar around here. The exterior is prepared corn dough of a fairly coarse kind, and [we] have crumbled this enough to reveal the spiced meat inside.";
+Instead of searching a tamale:
+	repeat with T running through tamales:
+		now the description of T is "Still partly in its wrapper, and gradually cooling. You seem to know what it is [--] some kind of traditionally Mexican or meso-American foodstuff? [--] but I can't say that it's familiar around here. The exterior is prepared corn dough of a fairly coarse kind, and [we] have crumbled this enough to reveal the spiced meat inside.";
 	say "Yup, definitely spiced meat."
+
+Check waving the letter-remover at a tamale when the current setting of the letter-remover is "e":
+	say "[The second noun] doesn't change, which is unsurprising considering a 'tamal' is just a different spelling of the same thing." instead.
 
 The tan is an r-abstract. The heft of a tan is usually 0. The description is usually "The col[our] is the col[our] of bronzed skin as found on the beaches of Maui; a lazy, relaxed, year-round tan.". The scent-description of a tan is usually "coconut oil".
 

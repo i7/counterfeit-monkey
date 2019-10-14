@@ -1104,7 +1104,7 @@ The taco has homonym index 1100.
 The tad has homonym index 1101.
 The tall stool has homonym index 1102.
 The tam has homonym index 1103.
-The tamale has homonym index 1104.
+A tamale has homonym index 1104.
 The tape has homonym index 1105.
 The tarpan has homonym index 1106.
 The tarpaulin-covered masses has homonym index 1107.

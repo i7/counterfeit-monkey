@@ -1250,7 +1250,7 @@ The taco has hash code 540677.
 The tad has hash code 524297.
 The tall stool has hash code 804865.
 The tam has hash code 528385.
-The tamale has hash code 530449.
+A tamale has hash code 530449.
 The tape has hash code 557073.
 The tarpan has hash code 696321.
 The tarpaulin-covered masses has hash code 4127005. [I704_tarpaulin_covered_masse]

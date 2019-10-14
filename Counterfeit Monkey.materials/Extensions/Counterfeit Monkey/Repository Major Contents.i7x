@@ -89,6 +89,7 @@ A stint is a kind of thing.
 A strand is a kind of thing.  ["strand"]
 A sun-product is a kind of thing.
 A tale is a kind of thing.
+A tamale is a kind of edible thing.
 A tan is a kind of thing.
 A tar is a kind of thing.
 A tart is a kind of thing. [chard, pearl]
@@ -159,7 +160,7 @@ The repository contains a flint crepe cap.
 
 [apple]
 
-The repository contains an ale, an applet, a lappet, a tale, and a tattle.
+The repository contains an ale, an applet, a lappet, a tale, a tamale, and a tattle.
 
 [army]
 
@@ -539,7 +540,7 @@ In the repository are an earl, a perl, a peal, an ear, a pal, a pea, a par, a pa
 	[Oz,] [reverse hard mode cryptolock on Pa or Ra, but both are too big to fit in the bucket]
 	a trap, a pleat, a rattle, [t-insert anagrams]
 	a Ra, a pate, an ale, [derive anagrams]
-	a tattle, a tale. [t-insert derivatives]
+	a tattle, a tale, and a tamale. [t-insert derivatives]
 
 [pearl ring]
 In the repository is a larger-pin.
@@ -1043,7 +1044,7 @@ A stopcock and a stoppage are in the repository.
 A swordstick and a sword-arm are in the repository.
 
 [tam]
-A tamale is in the repository.
+In the repository is a tamale.
 
 [tar]
 A tartar, a tarpan, and a tartrate are in the repository.
