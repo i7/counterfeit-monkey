@@ -991,7 +991,7 @@ Picard, Picross, a picrate, and a pirate are in the repository.
 A pineapple-ring is in the repository.
 
 [pit]
-A pit-trap is in the repository.
+A pit-trap and some pit-traps are in the repository.
 
 [pirate]
 A pirate-crew and a wart recipe are in the repository.

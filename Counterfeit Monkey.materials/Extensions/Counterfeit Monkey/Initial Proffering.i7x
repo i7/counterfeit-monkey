@@ -783,6 +783,7 @@ The pirate-crew proffers the pirate-crew. [I2369_pirate_crew]
 The pit-items proffers the pit-items. [I1873_pit_items]
 The alterna-pits proffer the alterna-pits.
 The pit-trap proffers the pit-trap. [I2368_pit_trap]
+The pit-traps proffers the pit-traps.
 The pita proffers the pita. [I1843_pita]
 The plain white top proffers the plain white top. [I1016_plain_white_top]
 The plain-plate proffers the plain-plate. [I1798_plain_plate]

@@ -1014,6 +1014,7 @@ The pirate-crew has hash code 4882709.
 The pit-items have hash code 819456. [Printed name "pits"]
 The alterna-pits have hash code 819456. [Printed name "pits"]
 The pit-trap has hash code 688385. [I2368_pit_trap]
+The pit-traps have hash code 950529. [I2368_pit_trap]
 The pita has hash code 557313. [I1843_pita]
 The plain white top has hash code 4778385. [I1016_plain_white_top]
 The plain-plate has hash code 559121. [I1798_plain_plate]

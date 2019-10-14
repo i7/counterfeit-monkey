@@ -335,6 +335,7 @@ origin paste
 long glass case
 shrine
 pit-trap
+pit-traps
 projector
 
 [The things listed in this table gives a the reply "It makes no sense to insert a lot of random things in" when trying to insert all into them.]

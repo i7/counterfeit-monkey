@@ -869,6 +869,7 @@ The pirate has homonym index 865.
 The pirate-crew has homonym index 866.
 The pit-items has homonym index 867.
 The pit-trap has homonym index 868.
+The pit-traps have homonym index 868.
 The pita has homonym index 869.
 The plain white top has homonym index 870.
 The plain-plate has homonym index 871.
