@@ -220,7 +220,7 @@ The repository contains a ban and an alterna-band
 
 [basis]
 
-The repository contains [a fake-bus and] some buses.
+[The repository contains a fake-bus and some buses.]
 
 [big lever]
 

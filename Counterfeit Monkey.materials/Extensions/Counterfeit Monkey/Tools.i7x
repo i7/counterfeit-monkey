@@ -424,7 +424,7 @@ Report waving the letter-remover device at something:
 	if the scent-description of the generated object is not "":
 		say "With a distinct whiff of [the scent-description of the generated object], [the second noun] [turn] into [a generated object]. [run paragraph on]";
 	otherwise:
-		say "There is [one of]a flash of psychedelic col[our]s[or]a mad-scientist cackle[or]a [pastel-color] cloud[or]a flash of [primary-color] light[or]a smell of anise[or]a distinct spearmint flavor[at random], and [the second noun] [turn] into [a generated object]. [run paragraph on]";
+		say "[random-letter-removal-text][the second noun] [turn] into [a generated object]. [run paragraph on]";
 	if the number of entries in the list of remaining letters is 0:
 		let N be "Admiral Thoureaux award for removing every letter of the alphabet in one playthrough";
 		unless N is a used achievement:

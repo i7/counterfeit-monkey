@@ -428,7 +428,7 @@ The built-in table has homonym index 424.
 The bull has homonym index 425.
 The bund has homonym index 426.
 The bus bays has homonym index 427.
-The buses has homonym index 428.
+[The buses has homonym index 428.]
 The bushes has homonym index 429.
 The business-school-exterior has homonym index 430.
 The button-up shirt has homonym index 431.

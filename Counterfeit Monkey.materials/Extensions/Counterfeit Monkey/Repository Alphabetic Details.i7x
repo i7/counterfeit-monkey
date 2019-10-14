@@ -379,11 +379,11 @@ The description of the brown tee is "It's a brown wooden peg for putting a golf 
 
 The bull is an animal. The description of the bull is "He looks as though he has just been transported away from his cows, and he isn't at all pleased about the change. As a matter of fact, he blames [us] personally."
 
-The heft of the bund is 10. The description of the bund is "An earthwork embankment designed to prevent oil repositories from bursting their banks and spilling into the surrounding waters."
+[The heft of the bund is 10. The description of the bund is "An earthwork embankment designed to prevent oil repositories from bursting their banks and spilling into the surrounding waters."]
 
 [The heft of a fake-bus is 10. The description of a fake-bus is "It's one of the coaches that runs a regular service between here and Maiana. The windows are tinted to keep off the worst of the afternoon glare.". The printed name of the fake-bus is "bus". Understand "bus" as the fake-bus.]
 
-The heft of some buses is 10. The description of buses is "There's a whole fleet of them, perhaps every bus on the island. They're dusty: the road to Maiana gets dry in the summer."
+[The heft of some buses is 10. The description of buses is "There's a whole fleet of them, perhaps every bus on the island. They're dusty: the road to Maiana gets dry in the summer."]
 
 Section 3 - C
 

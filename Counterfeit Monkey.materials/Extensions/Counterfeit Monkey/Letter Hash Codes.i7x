@@ -564,7 +564,7 @@ The built-in table has hash code 1583379. [I1159_built_in_table]
 The bull has hash code 1050626.
 The bund has hash code 1056778.
 The bus bays has hash code 18087939.
-The buses has hash code 1310738.
+[The buses has hash code 1310738.]
 The bushes has hash code 1310866.
 The business-school-exterior has hash code 1337750. [I849_business_school_exterio]
 The button-up shirt has hash code 2023810. [I727_button_up_shirt]
