@@ -1010,7 +1010,7 @@ A potass is in the repository.
 
 
 [ram]
-A rampart, a ramcat, and a rampage are in the repository.
+A [rampart, a] ramcat, and a rampage are in the repository.
 
 
 [ring]

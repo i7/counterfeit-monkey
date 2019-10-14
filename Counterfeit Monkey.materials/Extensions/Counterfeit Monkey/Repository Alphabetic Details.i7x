@@ -2716,7 +2716,7 @@ The rampage is an r-abstract thing. It is noisy. The description of the rampage 
 	Instead of listening to the rampage:
 		say "The rampage [one of]sounds like death metal and crashing cars[or]blares on[or]is screeching in the tones of tearing metal[at random]."
 
-The heft of the rampart is 12. The description of the rampart is "A mass of earthwork and stone."
+[The heft of the rampart is 12. The description of the rampart is "A mass of earthwork and stone."]
 
 A rap is usually noisy. A rap is usually r-abstract. The description of the rap is "A pulsating ball of angry air."
 

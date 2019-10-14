@@ -922,7 +922,7 @@ The railings has homonym index 918.
 The rale has homonym index 919.
 The ramcat has homonym index 920.
 The rampage has homonym index 921.
-The rampart has homonym index 922.
+[The rampart has homonym index 922.]
 The plural-rams has homonym index 923.
 The random foodstuffs has homonym index 924.
 The rape has homonym index 925.
