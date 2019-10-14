@@ -188,4 +188,104 @@ After inserting the pose into the cryptolock when hardness is false and the cryp
 After inserting a tint into the cryptolock when hardness is true and the cryptoswitch is switched on:
 	say "There is a churning noise from within [the cryptolock] and 'ohio' appears in letters of vivid purple smoke. [We] get a confused impression of factories and battleground politics in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead;
 
+[Synthesizer and programmable dais, set to synthesize]
+
+The synthesis-override rules are an object-based rulebook.
+
+The-other-thing is a thing that varies.
+Object-name is some text that varies.
+
+A synthesis-override rule for the roll:
+	if the-other-thing is the rock:
+		say "You can't get to rock & roll with just a synthes[ize]r. You'd need an ampersand generator, which unfortunately (despite promising research and a prototype resembling a pretzel-maker) has yet to achieve stable results.";
+		the rule fails.
+
+A synthesis-override rule for the sill:
+	if the-other-thing is the cate:
+		say "It feels like [we] ought to be close to getting a silicate out of all this, but no, I fear not. That final L on SILL is going nowhere.";
+		the rule fails.
+
+A synthesis-override rule for the key-lime:
+	if the-other-thing is a pi-object:
+		say "What, are you hoping for key lime π? I'm afraid the synthes[ize]r is literal-minded and doesn't do puns as such.";
+		the rule fails.
+
+A synthesis-override rule for the i-pan:
+	if the-other-thing is the ear:
+		say "That Indian soft cheese is called paneer, you know, not panear.";
+		the rule fails.
+
+A synthesis-override rule for the cock:
+	if the-other-thing is a pit or the-other-thing is the pit-items:
+		if the-other-thing is a pit:
+			now object-name is "COCKPIT";
+			abide by the location-check rule;
+			say "The programmable dais glows vibrant blue for five seconds, leaving behind a cockpit.
+
+It's a tiny room lined on every surface with buttons and instrument readouts and warning signs, altimeters and radios and all sorts of other gadgets I don't recognize.
+
+Unfortunately, the cockpit is more than sufficient to bury [us] under its bulk.";
+		otherwise:
+			now object-name is "COCKPITS";
+			abide by the location-check rule;
+			say "The programmable dais glows vibrant blue for five seconds, leaving behind some cockpits.
+
+It's a number of tiny rooms lined on every surface with buttons and instrument readouts and warning signs, altimeters and radios and all sorts of other gadgets I don't recognize.
+
+Unfortunately, the cockpits are more than sufficient to bury [us] under their bulk.";
+		end the story saying "That could have gone better";
+		the rule fails.
+
+A synthesis-override rule for a cat:
+	if the-other-thing is the members or the-other-thing is the army:
+		if the-other-thing is the army:
+			now object-name is "CAT ARMY";
+			abide by the location-check rule;
+			say "The programmable dais glows vibrant blue for five seconds, leaving behind a cat army.
+
+There are dozens of them, and they move in curiously regimented, uncatlike ways, as though the big tabby at the front of the group really is their commanding officer.
+
+Apparently, the cat army considers [us] a threat. Before [we] have time to react, its combined teeth and claws make short work of [us].";
+		otherwise:
+			now object-name is "CAMEMBERTS";
+			abide by the location-check rule;
+			say "The programmable dais glows vibrant blue for five seconds, leaving behind some camemberts.
+
+A whole stack of French camembert, which would be convenient if we were opening a black market deli, but may be hard to explain under other circumstances. Also not terribly portable.
+
+Unfortunately, the camemberts are more than sufficient to bury [us] under their bulk.";
+		end the story saying "That could have gone better";
+		the rule fails.
+
+A synthesis-override rule for a cot:
+	if the-other-thing is the ass:
+		now object-name is "COASTS";
+		abide by the location-check rule;
+		say "The programmable dais glows vibrant blue for five seconds, leaving behind some coasts.
+
+A vast rocky coastline too large to fit in the present confines.
+
+Unfortunately, the coasts are more than sufficient to bury [us] under their bulk.";
+		end the story saying "That could have gone better";
+		the rule fails.
+
+A synthesis-override rule for the arc:
+	if the-other-thing is the tic:
+		now object-name is "ARCTIC";
+		abide by the location-check rule;
+		say "The programmable dais glows vibrant blue for five seconds, leaving behind an arctic.
+
+Enormous, frozen plains graced only by the occasional caribou, polar bear, and oil rig.
+
+Unfortunately, the arctic is more than sufficient to bury [us] under its bulk";
+		end the story saying "That could have gone better";
+		the rule fails.
+
+This is the location-check rule:
+	if the location is the Language Studies Seminar Room:
+		say "An indicator message lights up: OVERRIDE: GENERATED OBJECT [object-name] EXCEEDS MAXIMUM SIZE LIMIT.";
+		the rule fails;
+
+[arctic, camemberts, cat army, -cockpit, coasts, rampart]
+
 Safety Overrides and Disasters ends here.
