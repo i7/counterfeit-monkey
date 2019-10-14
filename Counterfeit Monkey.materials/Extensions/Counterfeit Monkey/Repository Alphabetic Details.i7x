@@ -2338,6 +2338,8 @@ When play begins:
 
 Some pit-items are a thing. The description of the pit-items is "Assorted stones from different fruits.". The scent-description of the pit is "apricot and cherry". The printed name of the pit-items is "pits". Understand "pits" or "apricot" or "cherry" or "stones" or "stone" or "pit" as the pit-items.
 
+Understand "pits" as the alterna-pits. The alterna-pits are a fixed in place container. The printed name of the alterna-pits is "pits". The description of the alterna-pits is "It's a number of cavities in the surface of [the holder of the item described], all of them too small for our body to fit into."
+
 The pita is an edible thing. The description of the pita is "A round, brown pocket-bread." The scent-description of the pita is "baked goods".
 
 The pit-trap is an open enterable container. It is fixed in place. The heft of the pit-trap is 8. The printed name of a pit-trap is "pit trap". Understand "pit trap" or "deep pit" or "pit" or "rocks" or "stones" or "stakes" or "sharpened" or "stake" as a pit-trap. The description of a pit-trap is "It's a deep pit lined with rocks, set into the surface of [the holder of the item described]. Sharpened stakes jut upward from the bottom, ready to stab any large mammal unfortunate enough to fall in."

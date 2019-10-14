@@ -1011,7 +1011,8 @@ The pint has hash code 565504.
 The pints has hash code 827648.
 The pirate has hash code 688401.
 The pirate-crew has hash code 4882709.
-The pit-items has hash code 819456. [Printed name "pits"]
+The pit-items have hash code 819456. [Printed name "pits"]
+The alterna-pits have hash code 819456. [Printed name "pits"]
 The pit-trap has hash code 688385. [I2368_pit_trap]
 The pita has hash code 557313. [I1843_pita]
 The plain white top has hash code 4778385. [I1016_plain_white_top]

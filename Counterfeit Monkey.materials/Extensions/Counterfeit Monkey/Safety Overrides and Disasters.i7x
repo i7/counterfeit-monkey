@@ -261,7 +261,7 @@ Unfortunately, the rampart is more than sufficient to bury [us] under its bulk."
 		the rule fails.
 
 A synthesis-override rule for the cock:
-	if the-other-thing is a pit or the-other-thing is the pit-items:
+	if the-other-thing is a pit or the-other-thing is the pit-items or the-other-thing is the alterna-pits:
 		if the-other-thing is a pit:
 			now object-name is "COCKPIT";
 			abide by the location-check rule;

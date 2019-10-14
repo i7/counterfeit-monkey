@@ -1293,5 +1293,6 @@ A ma has homonym index 1288.
 A mama has homonym index 1289.
 The me-object has homonym index 1290.
 The plural-ills have homonym index 1291.
+The alterna-pits have homonym index 1292.
 
 Homonym Indices ends here.

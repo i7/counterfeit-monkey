@@ -448,6 +448,7 @@ The pints is fake. [I1867_pints]
 The pirate is fake. [I2366_pirate]
 The pirate-crew is fake. [I2369_pirate_crew]
 The pit-items is fake. [I1873_pit_items]
+The alterna-pits are fake.
 The pit-trap is fake. [I2368_pit_trap]
 The pita is fake. [I1843_pita]
 The plain-plate is fake. [I1798_plain_plate]
