@@ -3886,7 +3886,7 @@ The tier is r-abstract. The description of the tier is "It's represented as a ce
 
 The description of the till is "An old-fashioned cash register with separate keys for half- and quarter-cents: Atlantean currency inflated more slowly than most, and still had absurdly low numbers until we went over to the Euro. Both sides are molded with a graceful female figure holding a cornucopia of goods from land and sea." The till is an openable closed container.
 
-The description of the tills is "There is a whole heap of them, mostly old-style cash registers from before they were computerized, but also some more recent sorts, and even one of those clever modern ones that is just a prop for a tablet computer."
+The description of the tills is "There is a whole heap of them, mostly old-style cash registers from before they were computerized, but also some more recent sorts, and even one of those clever modern ones that is just a prop for a tablet computer." The heft of the tills is 10.
 
 The tillage is r-abstract. The description of the tillage is "The fleeting images show acres of rolling farmland being worked over in preparation for planting. It looks like more wide-open space than we usually have in one place here on Atlantis. Perhaps the farmland pictured is French or even American."
 
