@@ -476,7 +476,7 @@ Instead of smiling at a cat:
 Instead of frowning at a cat:
 	say "[We] frown. [The noun] does not seem much abashed."
 
-The cat-army is a cat. The printed name is "cat army". Understand "cat" or "army" as the cat-army. The heft of the cat-army is 10. The description is "There are dozens of them, and they move in curiously regimented, uncatlike ways, as though the big tabby at the front of the group really is their commanding officer."
+The cat-army is a cat. The printed name is "cat army". Understand "cat" or "army" as the cat-army. The heft of the cat-army is 8. The description is "There are dozens of them, and they move in curiously regimented, uncatlike ways, as though the big tabby at the front of the group really is their commanding officer."
 
 The printed name of the cat-mayor is "cat mayor". Understand "cat" or "mayor" as the cat-mayor. The cat-mayor is a cat. The description of the cat-mayor is "Like an ordinary cat, only wearing tiny black leather boots and displaying, if possible, an even greater regard for its own dignity than the average feline." The cat-mayor wears tiny black leather boots.
 
