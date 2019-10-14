@@ -183,7 +183,6 @@ The footpath entrance has hash code 712885. [K7_backdrop]
 A freezer compartment has hash code 34271285. [K43_freezer_compartment]
 A fridge-top has hash code 131448. [printed name is "fridge"]
 The frozen dinners have hash code 33972536. [K2_thing]
-
 A gas-gauge has hash code 1310801. [K37_gas_gauge]
 A git has hash code 524608. [K118_git]
 A goatee has hash code 540753. [K2_thing]
@@ -201,6 +200,7 @@ A huge-metal-arm has hash code 1710289. [K6_supporter]
 A hundreds of people have hash code 1501368. [K8_person]
 A ignition has hash code 549184. [K36_ignition]
 A ill has hash code 2304. [K122_ill]
+The plural-ills have hash code 264448.
 The in-object has hash code 8448. [K2_thing]
 A ink has hash code 9472. [K121_ink]
 A invitation has hash code 2646273. [K2_thing]
@@ -218,11 +218,14 @@ A lipstick advertisements has hash code 3063069. [K2_thing]
 A lock has hash code 19460. [K2_thing]
 The low relief has hash code 4344112. [K2_thing]
 The Slangovia map has hash code 2423137. [K2_thing]
+A ma has hash code 4097.
+A mama has hash code 4097.
 [A mart has hash code 659457.] [K125_mart]
 A massive plug has hash code 3447121. [K178_massive_plug]
 [The massive pug has hash code 3445073.]
 The massive switch has hash code 7082389. [K2_thing]
 A mat has hash code 528385. [K126_mat]
+A me-object has hash code 4112. [Printed name "me"]
 The mess of cabling has hash code 293239. [K2_thing]
 A mirror has hash code 151808. [K58_mirror]
 The mourning dress has hash code 1470808. [K2_thing]
@@ -234,6 +237,7 @@ An ode has hash code 16408. [K130_ode]
 A officers has hash code 409908. [K10_man]
 A output tray has hash code 18530305. [K6_supporter]
 A pa has hash code 32769. [K133_pa]
+Some plural-pas have hash code 294913.
 The painted Moorish patterns has hash code 979353. [K2_thing]
 A paper-drawer has hash code 4358169. [K5_container]
 A par has hash code 163841. [K134_par]
@@ -466,7 +470,7 @@ The applet has hash code 559121. [I1460_applet]
 The aquarium-closed-sign has hash code 289116. [K2_thing]
 The arc has hash code 131077. [I1578_arc]
 The arcsin has hash code 401669. [I2280_arcsin]
-The arctic has hash code 655621. [I2281_arctic]
+[The arctic has hash code 655621.] [I2281_arctic]
 The ark has hash code 132097. [I1736_ark]
 The arm has hash code 135169. [I1465_arm]
 The armband has hash code 143371. [I2282_armband]
@@ -561,9 +565,9 @@ The buildings-general has hash code 1452379. [I846_buildings_general]
 The gameshelves has hash code 3942802. [I1164_gameshelves]
 The built-in table has hash code 1583379. [I1159_built_in_table]
 The bull has hash code 1050626.
-The bund has hash code 1056778.
+[The bund has hash code 1056778.]
 The bus bays has hash code 18087939.
-The buses has hash code 1310738.
+[The buses has hash code 1310738.]
 The bushes has hash code 1310866.
 The business-school-exterior has hash code 1337750. [I849_business_school_exterio]
 The button-up shirt has hash code 2023810. [I727_button_up_shirt]
@@ -571,7 +575,7 @@ The cacao-nub-heap has hash code 1106071. [I1493_cacao_nub_heap]
 The cad has hash code 13. [I1568_cad]
 The cafe building has hash code 1059183. [I694_cafe_building]
 The camembert has hash code 659479.
-The camemberts has hash code 921623.
+[The camemberts has hash code 921623.]
 The card has hash code 131085.
 [The cardboard has hash code 255853056. [I2307_cardboard]]
 The carp-sample has hash code 432149.
@@ -611,12 +615,12 @@ The cloth napkin has hash code 585093.
 The clothing shops have hash code 2048274. [I471_clothing_shops]
 The cluck has hash code 1051652.
 The coarse woolen clothing has hash code 5138901. [I2460_coarse_woolen_clothing]
-The coasts has hash code 802821. [I2321_coasts]
+[The coasts has hash code 802821.] [I2321_coasts]
 The coat has hash code 540677. [I960_coat]
 The cock has hash code 17412. [I899_cock]
 The cock-ale has hash code 19477. [I2318_cock_ale]
 The cock-ring has hash code 156996. [I2317_cock_ring]
-The cockpit has hash code 574724. [I2319_cockpit]
+[The cockpit has hash code 574724.] [I2319_cockpit]
 The cod-sample has hash code 317469.
 The code has hash code 16412. [I1617_code]
 The codex has hash code 8405020. [I465_codex]
@@ -1007,8 +1011,10 @@ The pint has hash code 565504.
 The pints has hash code 827648.
 The pirate has hash code 688401.
 The pirate-crew has hash code 4882709.
-The pit-items has hash code 819456. [I1873_pit_items]
+The pit-items have hash code 819456. [Printed name "pits"]
+The alterna-pits have hash code 819456. [Printed name "pits"]
 The pit-trap has hash code 688385. [I2368_pit_trap]
+The pit-traps have hash code 950529. [I2368_pit_trap]
 The pita has hash code 557313. [I1843_pita]
 The plain white top has hash code 4778385. [I1016_plain_white_top]
 The plain-plate has hash code 559121. [I1798_plain_plate]
@@ -1062,7 +1068,7 @@ The railings have hash code 403777.
 The rale has hash code 133137.
 The ramcat has hash code 659461.
 The rampage has hash code 168017.
-The rampart has hash code 692225.
+[The rampart has hash code 692225.]
 The plural-rams have hash code 397313. [I1914_plural_rams]
 The random foodstuffs has hash code 1994793. [I495_random_foodstuffs]
 The rape has hash code 163857. [I1789_rape]
@@ -1210,7 +1216,7 @@ The steer automaton has hash code 1994769. [I1955_steer_automaton]
 The stick has hash code 787716. [I2215_stick]
 The stickball has hash code 789767. [I2392_stickball]
 The sticky has hash code 17564932. [I945_sticky]
-The still has hash code 788736. [I2201_still]
+[The still has hash code 788736.] [I2201_still]
 The stillage has hash code 788817. [I2393_stillage]
 The stoats has hash code 802817. [I2412_stoats]
 The stock has hash code 803844. [I2219_stock]
@@ -1249,7 +1255,7 @@ The taco has hash code 540677.
 The tad has hash code 524297.
 The tall stool has hash code 804865.
 The tam has hash code 528385.
-The tamale has hash code 530449.
+A tamale has hash code 530449.
 The tape has hash code 557073.
 The tarpan has hash code 696321.
 The tarpaulin-covered masses has hash code 4127005. [I704_tarpaulin_covered_masse]

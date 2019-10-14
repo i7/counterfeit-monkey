@@ -107,6 +107,13 @@ Section 3 - Custom game enders
 
 [Letter-remover]
 
+Check waving the letter-remover at the bushes when the current setting of the letter-remover is "h":
+	say "[random-letter-removal-text]the bushes turns into some buses. There's a whole fleet of them, perhaps every bus on the island. They're dusty: the road to Maiana gets dry in the summer.
+
+Unfortunately, the buses are more than enough to bury [us] under their bulk.";
+	end the story saying "That could have gone better";
+	stop the action.
+
 Check waving the letter-remover at the massive plug when the current setting of the letter-remover is "l":
 	say "With a pleasant smell of puppies, the massive plug turns into a massive pug. Its wrinkly, short-muzzled face, curled tail and fine, glossy coat of fawn fur would be adorable if not for the fact that it is large enough to fill the entire room.
 
@@ -115,18 +122,21 @@ Massive or not, the pug still seems to have room for more, and before [we] have 
 	stop the action.
 
 Check waving the letter-remover at the lamb when the current setting of the letter-remover is "m":
-	say "There is [one of]a flash of psychedelic col[our]s[or]a mad-scientist cackle[or]a [pastel-color] cloud[or]a flash of [primary-color] light[or]a smell of anise[or]a distinct spearmint flavor[at random], and the lamb turns into a lab. A full-sized scientific research laboratory, one of the many owned by Dental Consonants Limited.
+	say "[random-letter-removal-text]the lamb turns into a lab. A full-sized scientific research laboratory, one of the many owned by Dental Consonants Limited.
 
 Unfortunately, the lab is more than enough to bury [us] under its bulk.";
 	end the story saying "That could have gone better";
 	stop the action.
 
 Check waving the letter-remover at the warp when the current setting of the letter-remover is "p":
-	say "There is [one of]a flash of psychedelic col[our]s[or]a mad-scientist cackle[or]a [pastel-color] cloud[or]a flash of [primary-color] light[or]a smell of anise[or]a distinct spearmint flavor[at random], and the warp turns into a war. I suppose we were hoping for some abstract conceptual representation, but what we get is loud noises and screaming and a yellowish gas all around, and something screaming down from the sky.
+	say "[random-letter-removal-text]the warp turns into a war. I suppose we were hoping for some abstract conceptual representation, but what we get is loud noises and screaming and a yellowish gas all around, and something screaming down from the sky.
 
 Unfortunately, the first casualty of war is [us].";
 	end the story saying "That could have gone better";
 	stop the action.
+
+To say random-letter-removal-text:
+	say "There is [one of]a flash of psychedelic col[our]s[or]a mad-scientist cackle[or]a [pastel-color] cloud[or]a flash of [primary-color] light[or]a smell of anise[or]a distinct spearmint flavor[at random], and ".
 
 [T-inserter]
 
@@ -134,6 +144,13 @@ A last check inserting the puns into the T-inserter:
 	say "There is a loud and satisfying pop from the machine as it turns the puns into some punts. An assortment of punts, which by the looks of them are usually driven from the Cambridge end.
 
 Unfortunately, the punts are more than sufficient to bury [us] under their bulk.";
+	end the story saying "That could have gone better";
+	stop the action.
+
+A last check inserting the sill into the T-inserter:
+	say "There is a loud and satisfying pop from the machine as it turns the sill into a still. A room-sized installation of glass tubes and boilers. Inside is some kind of illicit moonshine product.
+
+Unfortunately, the still is more than sufficient to bury [us] under its bulk.";
 	end the story saying "That could have gone better";
 	stop the action.
 
@@ -187,5 +204,128 @@ After inserting the pose into the cryptolock when hardness is false and the cryp
 
 After inserting a tint into the cryptolock when hardness is true and the cryptoswitch is switched on:
 	say "There is a churning noise from within [the cryptolock] and 'ohio' appears in letters of vivid purple smoke. [We] get a confused impression of factories and battleground politics in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead;
+
+After inserting the band into the cryptolock when hardness is false and the cryptoswitch is switched on:
+	say "[bund-refusal-text]." instead.
+
+After inserting the bond into the cryptolock when hardness is false and the cryptoswitch is switched off:
+	say "[bund-refusal-text]." instead.
+
+To say bund-refusal-text:
+	say "There is a churning noise from within [the cryptolock] and 'bund' appears in letters of vivid purple smoke. [We] get a vision of a huge earthwork embankment, designed to prevent oil repositories from bursting their banks and spilling into the surrounding waters. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result".
+
+After inserting a pat-items into the cryptolock when hardness is false and the cryptoswitch is switched off:
+	say "[pets-refusal-text]." instead.
+
+After inserting a pit-items into the cryptolock when hardness is false and the cryptoswitch is switched on:
+	say "[pets-refusal-text]." instead.
+
+To say pets-refusal-text:
+	say "There is a churning noise from within [the cryptolock] and 'pets' appears in letters of vivid purple smoke. [We] get a glimpse of a huge squirming mess of little furry creatures in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result".
+
+[Synthesizer and programmable dais, set to synthesize]
+
+The synthesis-override rules are an object-based rulebook.
+
+The-other-thing is a thing that varies.
+Object-name is some text that varies.
+
+A synthesis-override rule for the roll:
+	if the-other-thing is the rock:
+		say "You can't get to rock & roll with just a synthes[ize]r. You'd need an ampersand generator, which unfortunately (despite promising research and a prototype resembling a pretzel-maker) has yet to achieve stable results.";
+		the rule fails.
+
+A synthesis-override rule for the sill:
+	if the-other-thing is the cate:
+		say "It feels like [we] ought to be close to getting a silicate out of all this, but no, I fear not. That final L on SILL is going nowhere.";
+		the rule fails.
+
+A synthesis-override rule for the key-lime:
+	if the-other-thing is a pi-object:
+		say "What, are you hoping for key lime π? I'm afraid the synthes[ize]r is literal-minded and doesn't do puns as such.";
+		the rule fails.
+
+A synthesis-override rule for the i-pan:
+	if the-other-thing is the ear:
+		say "That Indian soft cheese is called paneer, you know, not panear.";
+		the rule fails.
+
+A synthesis-override rule for a ram:
+	if the-other-thing is a part:
+		now object-name is "RAMPART";
+		abide by the location-check rule;
+		say "The programmable dais glows vibrant blue for five seconds, leaving behind a rampart. A mass of earthwork and stone.
+
+Unfortunately, the rampart is more than sufficient to bury [us] under its bulk.";
+		end the story saying "That could have gone better";
+		the rule fails.
+
+A synthesis-override rule for the cock:
+	if the-other-thing is a pit or the-other-thing is the pit-items or the-other-thing is the alterna-pits:
+		if the-other-thing is a pit:
+			now object-name is "COCKPIT";
+			abide by the location-check rule;
+			say "The programmable dais glows vibrant blue for five seconds, leaving behind a cockpit. It's a tiny room lined on every surface with buttons and instrument readouts and warning signs, altimeters and radios and all sorts of other gadgets I don't recognize.
+
+Unfortunately, the cockpit is more than sufficient to bury [us] under its bulk.";
+		otherwise:
+			now object-name is "COCKPITS";
+			abide by the location-check rule;
+			say "The programmable dais glows vibrant blue for five seconds, leaving behind some cockpits. It's a number of tiny rooms lined on every surface with buttons and instrument readouts and warning signs, altimeters and radios and all sorts of other gadgets I don't recognize.
+
+Unfortunately, the cockpits are more than sufficient to bury [us] under their bulk.";
+		end the story saying "That could have gone better";
+		the rule fails.
+
+A synthesis-override rule for a cat:
+	if the-other-thing is the members:
+		now object-name is "CAMEMBERTS";
+		abide by the location-check rule;
+		say "The programmable dais glows vibrant blue for five seconds, leaving behind some camemberts. A whole stack of French camembert, which would be convenient if we were opening a black market deli, but may be hard to explain under other circumstances. Also not terribly portable.
+
+Unfortunately, the camemberts are more than sufficient to bury [us] under their bulk.";
+		end the story saying "That could have gone better";
+		the rule fails.
+
+A synthesis-override rule for a cot:
+	if the-other-thing is the ass:
+		now object-name is "COASTS";
+		abide by the location-check rule;
+		say "The programmable dais glows vibrant blue for five seconds, leaving behind some coasts. A vast rocky coastline too large to fit in the present confines.
+
+Unfortunately, the coasts are more than sufficient to bury [us] under their bulk.";
+		end the story saying "That could have gone better";
+		the rule fails.
+
+A synthesis-override rule for the arc:
+	if the-other-thing is the tic:
+		now object-name is "ARCTIC";
+		abide by the location-check rule;
+		say "The programmable dais glows vibrant blue for five seconds, leaving behind an arctic. Enormous, frozen plains graced only by the occasional caribou, polar bear, and oil rig.
+
+Unfortunately, the arctic is more than sufficient to bury [us] under its bulk";
+		end the story saying "That could have gone better";
+		the rule fails.
+
+This is the location-check rule:
+	if the location is the Language Studies Seminar Room:
+		say "An indicator message lights up: OVERRIDE: GENERATED OBJECT [object-name] EXCEEDS MAXIMUM SIZE LIMIT.";
+		the rule fails;
+
+A synthesis-override rule for an as:
+	if the-other-thing is a May:
+		say "Nice try, but the word 'Maya' is generally used as an unmarked plural, without distinction between singular and plural forms.";
+		the rule fails;
+	if the-other-thing is a pit or the-other-thing is a pit-hole:
+		say "Nice try, but the word 'pita' is generally used as an unmarked plural, without distinction between singular and plural forms.";
+		the rule fails;
+	if the-other-thing is a CRT:
+		now object-name is "CARTS";
+		abide by the location-check rule;
+		say "The programmable dais glows vibrant blue for five seconds, leaving behind some carts. An assortment of carts of different kinds and sizes: from horse-buggies and hospital gurneys to rickshaws and palanquins; some of them with beasts of draught attached, including a full-grown Indian elephant.
+
+Unfortunately, the carts are more than sufficient to bury [us] under their bulk.";
+		end the story saying "That could have gone better";
+		the rule fails.
 
 Safety Overrides and Disasters ends here.

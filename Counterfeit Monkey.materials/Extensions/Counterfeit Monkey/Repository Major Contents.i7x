@@ -56,6 +56,8 @@ A lee is a kind of container.
 [A mart is a kind of thing.]
 A mat is a kind of supporter. A mat is usually portable.
 A May is a kind of thing.
+A ma is a kind of woman.
+A mama is a kind of woman.
 A net is a kind of container.
 A nit is a kind of thing.
 An ode is a kind of thing.
@@ -64,6 +66,7 @@ A self-object is a kind of thing. ["I"]
 A pa is a kind of man.
 A par is a kind of thing.
 A part is a kind of thing.
+Some plural-pas are a kind of plural-named man.
 A pat is a kind of thing.
 Some pat-items are a kind of thing.
 A pet is a kind of neuter animal.
@@ -88,6 +91,7 @@ A stint is a kind of thing.
 A strand is a kind of thing.  ["strand"]
 A sun-product is a kind of thing.
 A tale is a kind of thing.
+A tamale is a kind of edible thing.
 A tan is a kind of thing.
 A tar is a kind of thing.
 A tart is a kind of thing. [chard, pearl]
@@ -158,15 +162,15 @@ The repository contains a flint crepe cap.
 
 [apple]
 
-The repository contains an ale, an applet, a lappet, a tale, and a tattle.
+The repository contains an ale, an applet, a lappet, a tale, a tamale, and a tattle.
 
 [army]
 
 The repository contains Amy, an arm,
-	a ram, a yam, a May, a Mary,  [anagram]
+	a ram, a yam, a May, a ma, a Mary, [anagram]
 	a tram, [t-insert]
 	[a mart,] [anagram]
-	an art, a mat, [derive]
+	an art, a mat, a ma, a mama, [derive]
 	a tart, an alterna-tart, [t insert]
 	a rat, a tar. [anagram]
 
@@ -214,11 +218,11 @@ The repository contains a bandana. [banana]
 [band]
 
 The repository contains a ban and an alterna-band
-	and an abstract-bend, a bind, a bond, a bund.
+	and an abstract-bend, a bind, a bond [, a bund].
 
 [basis]
 
-The repository contains [a fake-bus and] some buses.
+[The repository contains a fake-bus and some buses.]
 
 [big lever]
 
@@ -322,7 +326,7 @@ The repository contains a rate, a cate, a rat, a cat,
 The repository contains a single ream, a ram, Ra,
 	a tram, a rat, [t-insert derivatives]
 	a tam, [derive insertables]
-	a mare, [a mart,] a tar, an art, a mat, [anagram all]
+	a mare, [a mart,] a tar, an art, a mat, a ma, [anagram all]
 	a tart, an alterna-tart. [t-insert]
 
 [crumbs]
@@ -387,7 +391,7 @@ The repository contains a garage. [the garbage]
 The repository contains a mug, [anagram/spinner]
 	a mu, [letter-removal]
 	a mut and a mutt, [t-insertion]
-	a mat, a Matt, a gam, a mag, a Meg, a gem.  [vowel-rotation]
+	a mat, a Matt, a ma, a mama, a gam, a mag, a Meg, a me-object, a gem.  [vowel-rotation]
 
 [gimlet]
 
@@ -538,7 +542,7 @@ In the repository are an earl, a perl, a peal, an ear, a pal, a pea, a par, a pa
 	[Oz,] [reverse hard mode cryptolock on Pa or Ra, but both are too big to fit in the bucket]
 	a trap, a pleat, a rattle, [t-insert anagrams]
 	a Ra, a pate, an ale, [derive anagrams]
-	a tattle, a tale. [t-insert derivatives]
+	a tattle, a tale, and a tamale. [t-insert derivatives]
 
 [pearl ring]
 In the repository is a larger-pin.
@@ -575,11 +579,11 @@ The repository contains a pita, a pit, a PTA, an it-object, a pa, a pi-object, a
 In the repository are some iron-pans, a plan, an i-pan,
 	some pens, a pen, some pins, a pin, a pi-object, a pun, some puns, [vowel rotation]
 	some plants, a plant, a pant, a pint, some pints, a fake-punt, [some punts,] [t-insert derivatives]
-	some pants, some plats, a plat, a pat, a pit, some pit-items, some pat-items, an ant, a pus, [derive insertions]
+	some pants, some plats, a plat, a pat, a pit, some pit-items, some alterna-pits, some pat-items, an ant, a pus, [derive insertions]
 	a snap, an alterna-snap, a nap, a splat, a tap, a spit, a spat, a tan, [anagram all]
 	a sap, a slat, [derive anagrams]
 	a pet, a pot, an alterna-pot, a ten-object, an Ent, [vowel rotation]
-	a spa, a pa, [derive derivatives]
+	a spa, a pa, some plural-pas, [derive derivatives]
 	a salt, a top-toy, a net. [anagram derivatives]
 
 [polling charts]
@@ -726,6 +730,7 @@ The repository contains a mall figurine.
 [soap]
 
 The repository contains a sap, a sap-liquid, a sop,
+	some plural-pas, [spinner]
 	a stop, [t-insert derivatives]
 	a top-toy, [derive insertions]
 	some plural-pots, a spot, a pot, an alterna-pot. [anagram all]
@@ -739,7 +744,7 @@ The repository contains a sap-dispenser and a sop-dispenser.
 [spill]
 
 The repository contains a pill, a sill, an ill, a self-object, a pi-object,
-	some pills, some ills, [anagram, then p-remove]
+	some pills, some plural-ills, [anagram, then p-remove]
 	[a still,] a till, some tills,  [t-insert derivatives]
 	a poll, a toll. [vowel rotation]
 
@@ -843,7 +848,7 @@ The repository contains a rap, a clothing-wrap,
 	a pet, a pit, a pot, an alterna-pot. [vowel-rotation]
 
 [yam]
-The repository contains an Amy and a May.
+The repository contains an Amy and a May and a ma.
 
 [yellow paint lettering]
 The repository contains an elegantly winter pilot.
@@ -865,7 +870,7 @@ The repository contains a bondage.
 The repository contains an airfoil.
 
 [arc]
-The repository contains an arcsin and an arctic.
+The repository contains an arcsin [and an arctic].
 
 [arm]
 The repository contains an armband, an armpit, and an armchair.
@@ -907,7 +912,8 @@ The repository contains a carpet, 3 carpi, 3 carp, 3 generic-caps, 3 alterna-cap
 The repository contains a cartage.
 
 [cat]
-Some camemberts and a camembert, a climate, a catnap, and a cat-army are in the repository.
+[Some camemberts and a]
+A camembert, a climate, a catnap, and a cat-army are in the repository.
 
 A yam-cart is in the repository. [anagrammed from cat-army]
 
@@ -915,10 +921,10 @@ A yam-cart is in the repository. [anagrammed from cat-army]
 A charring and a charlie are in the repository.
 
 [cock]
-A cock-ring, a cock-ale, a cockpit, and a cassock are in the repository.
+A cock-ring, a cock-ale, [a cockpit,] and a cassock are in the repository.
 
 [cot]
-Some coasts are in the repository.
+[Some coasts are in the repository.]
 
 [counter]
 A counterweight and a countertop are in the repository.
@@ -985,7 +991,7 @@ Picard, Picross, a picrate, and a pirate are in the repository.
 A pineapple-ring is in the repository.
 
 [pit]
-A pit-trap is in the repository.
+A pit-trap and some pit-traps are in the repository.
 
 [pirate]
 A pirate-crew and a wart recipe are in the repository.
@@ -1004,7 +1010,7 @@ A potass is in the repository.
 
 
 [ram]
-A rampart, a ramcat, and a rampage are in the repository.
+A [rampart, a] ramcat, and a rampage are in the repository.
 
 
 [ring]
@@ -1041,7 +1047,7 @@ A stopcock and a stoppage are in the repository.
 A swordstick and a sword-arm are in the repository.
 
 [tam]
-A tamale is in the repository.
+In the repository is a tamale.
 
 [tar]
 A tartar, a tarpan, and a tartrate are in the repository.

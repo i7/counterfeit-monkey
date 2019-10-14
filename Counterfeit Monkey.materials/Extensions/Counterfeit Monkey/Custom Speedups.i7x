@@ -120,6 +120,7 @@ Include (-
 	[ IsUnleavable obj;
 		if (~~(obj ofclass (+ thing +))) rfalse;
 		if (~~(obj.(+ essential +))) rfalse;
+		if (obj ofclass (+ person +) && parent(obj) == parent((+ player +))) rfalse;
 		if (~~(obj.(+ seen +))) rfalse;
 		if ( obj == (+ origin paste +) && ~~(obj.(+ won +))) rfalse;
 		if ( obj == (+ rock +) && ~~(Relation_TestVtoV((+ player +), (+ the fact-awareness relation +), (+ brock-found +), false))) rfalse;

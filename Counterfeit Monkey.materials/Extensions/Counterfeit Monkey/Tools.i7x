@@ -424,7 +424,7 @@ Report waving the letter-remover device at something:
 	if the scent-description of the generated object is not "":
 		say "With a distinct whiff of [the scent-description of the generated object], [the second noun] [turn] into [a generated object]. [run paragraph on]";
 	otherwise:
-		say "There is [one of]a flash of psychedelic col[our]s[or]a mad-scientist cackle[or]a [pastel-color] cloud[or]a flash of [primary-color] light[or]a smell of anise[or]a distinct spearmint flavor[at random], and [the second noun] [turn] into [a generated object]. [run paragraph on]";
+		say "[random-letter-removal-text][the second noun] [turn] into [a generated object]. [run paragraph on]";
 	if the number of entries in the list of remaining letters is 0:
 		let N be "Admiral Thoureaux award for removing every letter of the alphabet in one playthrough";
 		unless N is a used achievement:
@@ -772,18 +772,6 @@ Sanity-check switching on the synthesizer:
 		if item is irretrievable:
 			abide by the don't change irretrievable rules for item.
 
-Instead of switching on the synthesizer when the synthesizer contains the roll and the synthesizer contains the rock:
-	say "You can't get to rock & roll with just a synthes[ize]r. You'd need an ampersand generator, which unfortunately (despite promising research and a prototype resembling a pretzel-maker) has yet to achieve stable results."
-
-Instead of switching on the synthesizer when the synthesizer contains the sill and the synthesizer contains the cate:
-	say "It feels like [we] ought to be close to getting a silicate out of all this, but no, I fear not. That final L on SILL is going nowhere."
-
-Instead of switching on the synthesizer when the synthesizer contains the key-lime and the synthesizer contains a pi-object:
-	say "What, are you hoping for key lime π? I'm afraid the synthes[ize]r is literal-minded and doesn't do puns as such."
-
-Instead of switching on the synthesizer when the synthesizer contains a pan and the synthesizer contains the ear:
-	say "That Indian soft cheese is called paneer, you know, not panear."
-
 Instead of switching on the synthesizer:
 	synthesize contents of synthesizer.
 
@@ -799,6 +787,10 @@ To synthesize contents of (source - a thing):
 		stop;
 	let X be entry 1 in contents-list;
 	let Y be entry 2 in contents-list;
+	now the-other-thing is Y;
+	abide by the synthesis-override rules for X;
+	now the-other-thing is X;
+	abide by the synthesis-override rules for Y;
 	let the chosen article be Y;
 	let comparison number be the hash code of X with the hash code of Y added;
 	repeat with item running through things in the repository:
@@ -1779,6 +1771,8 @@ A last check shooting something with the anagramming gun:
 	if the detritus is a tear:
 		if there is an alterna-tear (called the goal) in the repository:
 			now the detritus is the goal;
+	if the detritus is a sap or the detritus is some plural-pas:
+		now the detritus is the spa.
 
 Carry out shooting something with the anagramming gun:
 	move the detritus to the holder of the noun;

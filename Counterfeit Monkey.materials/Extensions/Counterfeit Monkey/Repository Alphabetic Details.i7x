@@ -106,7 +106,7 @@ The ascot is a floppy wearable thing. The heft of the ascot is 1. The descriptio
 
 The alterna-letter is an r-abstract thing. The description of the alterna-letter is "A giant floating letter A." The printed name is "letter". Understand "letter" as the alterna-letter. The heft of the alterna-letter is 0.
 
-The heft of the arctic is 12. The description of the arctic is "Enormous, frozen plains graced only by the occasional caribou, polar bear, and oil rig."
+[The heft of the arctic is 12. The description of the arctic is "Enormous, frozen plains graced only by the occasional caribou, polar bear, and oil rig."]
 
 The description of the airfoil is "A big, awkward metal piece from something; it looks like a propellor blade." The heft of the airfoil is 6.
 
@@ -379,11 +379,11 @@ The description of the brown tee is "It's a brown wooden peg for putting a golf 
 
 The bull is an animal. The description of the bull is "He looks as though he has just been transported away from his cows, and he isn't at all pleased about the change. As a matter of fact, he blames [us] personally."
 
-The heft of the bund is 10. The description of the bund is "An earthwork embankment designed to prevent oil repositories from bursting their banks and spilling into the surrounding waters."
+[The heft of the bund is 10. The description of the bund is "An earthwork embankment designed to prevent oil repositories from bursting their banks and spilling into the surrounding waters."]
 
 [The heft of a fake-bus is 10. The description of a fake-bus is "It's one of the coaches that runs a regular service between here and Maiana. The windows are tinted to keep off the worst of the afternoon glare.". The printed name of the fake-bus is "bus". Understand "bus" as the fake-bus.]
 
-The heft of some buses is 10. The description of buses is "There's a whole fleet of them, perhaps every bus on the island. They're dusty: the road to Maiana gets dry in the summer."
+[The heft of some buses is 10. The description of buses is "There's a whole fleet of them, perhaps every bus on the island. They're dusty: the road to Maiana gets dry in the summer."]
 
 Section 3 - C
 
@@ -427,10 +427,10 @@ He smiles knowingly, but merely straightens his cuffs."
 Instead of putting the restoration gel on the cad:
 	say "As you approach, he takes a step backward and fends you off with one (finely-boned yet manly) hand. [one of]'I think not,' he says, in a low voice that thrills you deeply. 'I never would allow a lady to apply an unknown liniment to my person.'[or]Apparently he hasn't changed his stance on unidentified substances.[stopping]".
 
-Some camemberts are an edible thing. The description of the camemberts is "A whole stack of French camembert, which would be convenient if [we] were opening a black market deli, but may be hard to explain under other circumstances. Also not terribly portable." Understand "cheese" or "rind" as the camemberts. The heft of the camemberts is 10.
+[Some camemberts are an edible thing. The description of the camemberts is "A whole stack of French camembert, which would be convenient if [we] were opening a black market deli, but may be hard to explain under other circumstances. Also not terribly portable." Understand "cheese" or "rind" as the camemberts. The heft of the camemberts is 10.
 	The scent-description of the camemberts is "cheese rind".
-	Sanity-check cutting the camembert:
-		say "A notch in the flesh of the nearest camemberts exposes the yellowish creamy interior." instead.
+	Sanity-check cutting the camemberts:
+		say "A notch in the flesh of the nearest camemberts exposes the yellowish creamy interior." instead.]
 
 The camembert is an edible thing. The description of the camembert is "A rich, soft, creamy cheese with a white rind. This one isn't too runny yet." Understand "cheese" or "rind" as the camembert.
 	The scent-description of the camembert is "cheese rind".
@@ -476,7 +476,7 @@ Instead of smiling at a cat:
 Instead of frowning at a cat:
 	say "[We] frown. [The noun] does not seem much abashed."
 
-The cat-army is a cat. The printed name is "cat army". Understand "cat" or "army" as the cat-army. The heft of the cat-army is 10. The description is "There are dozens of them, and they move in curiously regimented, uncatlike ways, as though the big tabby at the front of the group really is their commanding officer."
+The cat-army is a cat. The printed name is "cat army". Understand "cat" or "army" as the cat-army. The heft of the cat-army is 8. The description is "There are dozens of them, and they move in curiously regimented, uncatlike ways, as though the big tabby at the front of the group really is their commanding officer."
 
 The printed name of the cat-mayor is "cat mayor". Understand "cat" or "mayor" as the cat-mayor. The cat-mayor is a cat. The description of the cat-mayor is "Like an ordinary cat, only wearing tiny black leather boots and displaying, if possible, an even greater regard for its own dignity than the average feline." The cat-mayor wears tiny black leather boots.
 
@@ -681,7 +681,7 @@ The chowder pro is a woman. The description of the chowder pro is "She's a proud
 
 [coasts]
 
-Some coasts are a thing. The heft of the coasts is 12. The description is "A vast rocky coastline too large to fit in the present confines."
+[Some coasts are a thing. The heft of the coasts is 12. The description is "A vast rocky coastline too large to fit in the present confines."]
 
 [cock]
 The cock is a bird. It is noisy. The flexible appearance of the cock is "[if the cock is in the location]Wandering around nearby, for all the world as though this were a barnyard, is a large red-headed cock[otherwise]The cock [we] made earlier is regarding [us] suspiciously[end if]." The description of the cock is "It stares back at [us] malevolently through one eye." The heft of the cock is 3.
@@ -692,7 +692,7 @@ Instead of listening to the cock:
 
 Test cockbug with "autoupgrade / wave l-remover at clock / open tub / gel cock" holding the clock and the tub.
 
-The cockpit is a thing. The heft of the cockpit is 10. The description is "It's a tiny room lined on every surface with buttons and instrument readouts and warning signs, altimeters and radios and all sorts of other gadgets I don't recognize." Understand "buttons" and "readouts" and "instrument" and "warning" and "signs" and "altimeters" and "radios" and "gadgets" and "button" and "readout" and "sign" and "altimeter" and "radio" and "gadget" as the cockpit.
+[The cockpit is a thing. The heft of the cockpit is 10. The description is "It's a tiny room lined on every surface with buttons and instrument readouts and warning signs, altimeters and radios and all sorts of other gadgets I don't recognize." Understand "buttons" and "readouts" and "instrument" and "warning" and "signs" and "altimeters" and "radios" and "gadgets" and "button" and "readout" and "sign" and "altimeter" and "radio" and "gadget" as the cockpit.]
 
 The cock-ring is a wearable thing. The printed name is "cock ring". The cock-ring is naughty-sounding. The description is "A sturdy ring of black rubber[one of]. Which reminds me [--] never mind[or]. And no, I'm not going to tell you about that memory[or]. Stop prying[stopping]."  Understand "cock" or "ring" as cock-ring.
 	Sanity-check wearing the cock-ring:
@@ -711,7 +711,7 @@ The description of a cod is "There's about twelve pounds of fish-and-chips-in-wa
 The code is scenery. The description of the code is "A bit of paper on which is written '305.'" Understand "bit" or "paper" or "bit of paper" or "numbers" or "number" as the code.
 
 
-The heft of the complicit shark is 10. The description of complicit shark is "It's dead, naturally. And a shark carcass is a large and unwieldy sort of thing to have lying around. There's a gash in one side that must have notionally killed it. Is the shark complicit in its own death? Or was there some other bit of shark-cooperation at work here? Hard to tell."
+The heft of the complicit shark is 8. The description of complicit shark is "It's dead, naturally. And a shark carcass is a large and unwieldy sort of thing to have lying around. There's a gash in one side that must have notionally killed it. Is the shark complicit in its own death? Or was there some other bit of shark-cooperation at work here? Hard to tell."
 	The scent-description of the complicit shark is "rotting fish".
 	Understand "gash" as the complicit shark.
 
@@ -760,7 +760,6 @@ The description of a CPU is "A central processing unit, the brains of pretty muc
 The cratering is r-abstract. The indefinite article is "some". The heft is 0. The description is "It's an image, light as air, of the moon and the craters on it."
 
 The crew-group is a privately-named plural-named person. The description of the crew-group is "Five (or six? it's extremely hard to count) swarthy sailors. They look buff and burly and have very thick eyebrows." The heft of the crew-group is 6.  The printed name of the crew-group is "crew". Understand "crew" as the crew-group.
-
 
 [Persuasion rule for asking the crew-group to try doing something:
 	rule succeeds.]
@@ -1224,7 +1223,7 @@ Test ibug with "tutorial off / autoupgrade / wave p-remover at pill / wave l-rem
 
 The ice-wig japes are an r-abstract thing. The printed name is "ice wig japes". Understand "ice wig" as the ice-wig japes. The description is "It displays, in miniature, some kind of comedy routine involving a set of ice skaters passing back and forth a huge wig also made of solid ice, which they take it in turns to wear (no doubt uncomfortably) over their caps."
 
-Some ills are r-abstract. The description of ills is usually "They manifest as little balls of malevolence, like the critters that flew out of Pandora's box in a children's illustration."
+The plural-ills are r-abstract. The description of the plural-ills is "They manifest as little balls of malevolence, like the critters that flew out of Pandora's box in a children's illustration." The printed name of the plural-ills are "ills". Understand "ills" as the plural-ills.
 
 An ill is r-abstract. The description of an ill is usually "It manifests as a little ball of malevolence, like a palm-sized thundercloud. It looks like it's a generic item from phrases like 'to wish someone ill,' which is a mercy; I don't think I would have liked manifesting illness, even abstractly.
 
@@ -1425,6 +1424,13 @@ The louse is an insect. The heft of the louse is 1. Understand "lice" as the lou
 
 Section 8 - M through O
 
+The description of a ma is "She's a Norman Rockwell figure: smiling in her apron, trying to keep up a perfect appearance while visibly exhausted from all her housework. Doesn't actually come with a child attached." Understand "figure" or "apron" as a ma.
+	The scent-description of a ma is "soap".
+
+The description of a mama is "Like a ma, only longer ago: not Norman Rockwell, but a Victorian Mama, in a long dark dress hiding a corset, her hair in a tight bun at the back of the neck." Understand "dress" and "corset" and "lady" and "bun" as a mama.
+	The greeting of a mama is "'Well, hello to you, Ma'am,' says the mama."
+	The scent-description of a mama is "carbolic soap".
+
 The description of the mag is "It's a glossy magazine for photography enthusiasts on the island. There's a several page spread of tilt-shift images of the harbor, making it all look like a child's toy set." Understand "magazine" as the mag.
 
 The description of the mall figurine is "It's a painted porcelain representation of a shopping mall. Delicate brushwork delineates the spaces in the parking lot, and the pharmacy sign has been modeled with special care." The mall figurine is fixed in place.
@@ -1445,6 +1451,11 @@ Mary is a proper-named woman. The description is "She's wearing a blue robe and 
 The description of a May is usually "This is the sheet for the month of May, torn from a calendar. Someone has put a gold star on the 21st, and 'Dinner with the Shaplys' is penciled onto the 30th." The heft of the May is usually 1.
 
 Meg is a proper-named woman. The description of Meg is "She's in her mid-sixties, with salt-and-pepper hair and a dry, rather sardonic smile."
+
+Me-object is a proper-named neuter person. The printed name of me-object is "me". Understand "me" as the me-object. The description of the me-object is "It's an abstract that looks like a bit of mirror. When I look at it I see Alex, my proper self, and not just restored to my usual body, but photo-retouched to be that bit smarter and freer of skin-blemishes, well-dressed. It's like looking in the mirror at reality as it should be.
+
+You doubtless see yourself too [--] as you are, or perhaps as you want to be." The me-object is r-abstract.
+
 
 The description of the member is "It is a figure of a member of the Committee to Establish an Orthodox Orthography. It is plastic, small enough to sit on our palm, and wears the stiff clothing and conservative hairstyle of about 1895. It looks slightly cross, as though the member has guessed its work would take another 15 years to complete."
 
@@ -1693,12 +1704,26 @@ Instead of taking the oyster turd:
 
 Section 9 - Pa
 
-The description of a pa is "He's a Norman Rockwell figure: gruff, upstanding, honest, not a big talker. Doesn't actually come with a child attached, but it stands to reason he would have a large-ish brood of them." Understand "figure" or "man" or "guy" or "gentleman" as the pa.
+The description of a pa is "He's a Norman Rockwell figure: gruff, upstanding, honest, not a big talker. Doesn't actually come with a child attached, but it stands to reason he would have a large-ish brood of them." Understand "figure" or "man" or "guy" or "gentleman" or "singular-pa" as the pa.
 	The scent-description of a pa is "shaving cream".
 	The greeting of a pa is "'Hello there, young lady,' says the pa."
 
-Rule for writing a paragraph about a pa:
-	say "The pa you summoned is standing nearby, looking slightly confused.[if there is a mentionable thing in location][line break][end if]"
+Rule for writing a paragraph about a pa (called item):
+	say "The pa you summoned is standing nearby, looking slightly confused.[if there is a mentionable unmentioned thing which is not item in location][line break][end if]";
+	now item is mentioned.
+
+After reading a command (this is the replace plurals rule):
+	if the player's command includes "pas" and there is a plural-pas enclosed by location:
+		replace the matched text with "plural-pas";
+	if the player's command includes "pa" and there is a plural-pas enclosed by location and there is a pa enclosed by location:
+		replace the matched text with "singular-pa";
+	if the player's command includes "ills" and the plural-ills are enclosed by location:
+		replace the matched text with "plural-ills";
+	if the player's command includes "pots" and there is a plural-pots enclosed by location:
+		replace the matched text with "plural-pots";
+	if the player's command includes "pot" and there is a plural-pots enclosed by location:
+		if there is a pot enclosed by location or there is an alterna-pot enclosed by location:
+			replace the matched text with "singular-pot".
 
 Instead of subject-asking when the current interlocutor is a pa:
 	say "'Huh,' he says, in that gruff pre-occupied way of his."
@@ -1709,9 +1734,38 @@ Instead of kissing the pa:
 Instead of attacking the pa:
 	say "If it came to a fight, he would win."
 
-Every turn when the player carries a pa (called target):
-	move the target to the location;
-	say "[The target] is very heavy, and winds up (before his transformation is complete) stepping on our feet, and then scrambling away (with apologies)."
+
+Report involuntarily-dropping a pa:
+	say "[The noun] is very heavy, and winds up (before his transformation is complete) stepping on our feet, and then scrambling away (with apologies)." instead.
+
+Test pas with "autoupgrade / wave l-remover at plans / wave n-remover at pans / wave a-remover at soap / put sop on spinner / put gel on sop / wave o-remover at soap / look"
+
+Test pa with "autoupgrade / wave l-remover at plans / wave n-remover at pans / wave s-remover at pas / wave a-remover at soap / put sop on spinner / put gel on sop / wave o-remover at soap / look"
+
+Table of Ultratests (continued)
+topic	stuff	setting
+"pas"	{ secret-plans, soap, tub }	Roget Close
+"pa"	{ secret-plans, soap, tub }	Roget Close
+
+The description of some plural-pas is "A whole fleet of gruff, upstanding, fatherly men." The printed name of a plural-pas is "pas". Understand "pas" or "pa" as the plural-pas.
+	The scent-description of some plural-pas is "shaving cream".
+	The greeting of some plural-pas is "'Hello there, young lady,' one of them replies."
+
+Rule for writing a paragraph about some plural-pas (called item):
+	say "The pas you summoned are standing nearby, looking slightly confused.[if there is a mentionable unmentioned thing which is not item in location][line break][end if]";
+	now item is mentioned.
+
+Instead of subject-asking when the current interlocutor is a plural-pas:
+	say "'Huh,' one of them says, in a gruff pre-occupied way."
+
+Instead of kissing the plural-pas:
+	say "[one of][We] plant a kiss on the slightly stubbled cheek of one of them. He reddens.[or][We] lean in for another, but they dodge.[or]Would you take off[ense] if I mentioned I find this all a bit uncomfortable?[or]They clearly do not want our girlish affections.[stopping]".
+
+Instead of attacking the plural-pas:
+	say "If it came to a fight, they would win easily."
+
+Report involuntarily-dropping plural-pas:
+		say "[The noun] are very heavy, and some of them wind up (before their transformation is complete) stepping on our feet, then scrambling away (with apologies)." instead.
 
 [The description of PARC is "Palo Alto Research Center [--] tons and tons of 1970s-era high-tech plastic, steel, and concrete. At least the carp didn't turn into crap." The heft of PARC is 1000. The scent-description of PARC is "burnt electronics dust".]
 
@@ -2273,7 +2327,7 @@ Instead of smelling the pirate-crew:
 
 Test crew with "tutorial off / autoupgrade / test pirate-spot / wave s-remover at screws / put gel on crew / put screws on platform / wave s-remover at screws / turn on platform / show spot to crew" in the Workshop holding the screws.
 
-The description of the pit is "The hard cen[ter] of a fruit, clean and dry of any flesh.". The scent-description  of the pit is "peaches".
+The description of a pit is "The hard cen[ter] of a fruit, clean and dry of any flesh.". The scent-description  of the pit is "peaches".
 
 Understand "pit" as a pit-hole. A pit-hole is usually open and fixed in place. The description of a pit-hole is "It's a cavity in the surface of [the holder of the item described], too small for our body to fit into."
 
@@ -2284,6 +2338,8 @@ When play begins:
 
 Some pit-items are a thing. The description of the pit-items is "Assorted stones from different fruits.". The scent-description of the pit is "apricot and cherry". The printed name of the pit-items is "pits". Understand "pits" or "apricot" or "cherry" or "stones" or "stone" or "pit" as the pit-items.
 
+Understand "pits" as the alterna-pits. The alterna-pits are a fixed in place container. The printed name of the alterna-pits is "pits". The description of the alterna-pits is "It's a number of cavities in the surface of [the holder of the item described], all of them too small for our body to fit into."
+
 The pita is an edible thing. The description of the pita is "A round, brown pocket-bread." The scent-description of the pita is "baked goods".
 
 The pit-trap is an open enterable container. It is fixed in place. The heft of the pit-trap is 8. The printed name of a pit-trap is "pit trap". Understand "pit trap" or "deep pit" or "pit" or "rocks" or "stones" or "stakes" or "sharpened" or "stake" as a pit-trap. The description of a pit-trap is "It's a deep pit lined with rocks, set into the surface of [the holder of the item described]. Sharpened stakes jut upward from the bottom, ready to stab any large mammal unfortunate enough to fall in."
@@ -2293,6 +2349,15 @@ Instead of inserting something into the pit-trap:
 
 Instead of entering the pit-trap:
 	say "Against my better judgment, [we] slip over the edge into the pit trap and are impaled on the spikes below. It will be some considerable time before anyone thinks to check down here.";
+	end the story saying "What made you think that was a good idea?"
+
+The pit-traps are an open enterable container. They are fixed in place. The heft of the pit-traps is 8. The printed name of the pit-traps is "pit traps". Understand "pit traps" or "pits" or "rocks" or "stones" or "stakes" or "sharpened" or "stake" as the pit-traps. The description of the pit-traps is "It's a number of deep pits lined with rocks, set into the surface of [the holder of the item described], close enough to each other to trigger some mild trypophobia. Sharpened stakes jut upward from the bottom, ready to stab any large mammal unfortunate enough to fall in."
+
+Instead of inserting something into the pit-traps:
+	say "That is not a good way to get rid of [the noun]."
+
+Instead of entering the pit-traps:
+	say "Against my better judgment, [we] slip over the edge into one of the pits and are impaled on the spikes below. It will be some considerable time before anyone thinks to check down here.";
 	end the story saying "What made you think that was a good idea?"
 
 [The heft of Pisa is 20. The description of Pisa is "It's manifested mostly as the leaning tower, but that's still quite a bit more than can fit into this environment."]
@@ -2354,11 +2419,11 @@ Instead of searching the potage:
 	say "Is that a [one of]chunk[or]slice[or]sliver[at random] of [one of]carrot[or]leek[or]onion[or]turnip[or]yam[or]potato[or]Jerusalem artichoke[cycling]? No, it's sunk again."
 
 The description of a pot is "It's a single ordinary cooking pot." The heft of a pot is 2.
+Understand "singular-pot" as a pot.
+
+The printed name of an alterna-pot is "pot". Understand "pot" or "marijuana" or "mary jane" or "mj" or "weed" or "dope" or "drugs" or "singular-pot" as the alterna-pot. The description of the alterna-pot is "An ounce or so of weed. I'm afraid I can't judge the quality of the product." The indefinite article of alterna-pot is "some".
 
 The description of some plural-pots is "They're a selection of heavy, high-quality stainless steel cooking pots, like the ones my mother has at home." The heft of some plural-pots is 3. The printed name of some plural-pots is "pots". Understand "pots" or "pot" as some plural-pots.
-
-The printed name of an alterna-pot is "pot". Understand "pot" or "marijuana" or "mary jane" or "mj" or "weed" or "dope" or "drugs" as the alterna-pot. The description of the alterna-pot is "An ounce or so of weed. I'm afraid I can't judge the quality of the product." The indefinite article of alterna-pot is "some".
-
 
 The description of the potass is "Potassium, appearing under its older pharmaceutical abbreviation. It's a dull silverish metal whose surface rapidly oxidizes in the atmosphere. Beware dropping it in water." The indefinite article is "some".
 
@@ -2664,7 +2729,7 @@ The rampage is an r-abstract thing. It is noisy. The description of the rampage 
 	Instead of listening to the rampage:
 		say "The rampage [one of]sounds like death metal and crashing cars[or]blares on[or]is screeching in the tones of tearing metal[at random]."
 
-The heft of the rampart is 12. The description of the rampart is "A mass of earthwork and stone."
+[The heft of the rampart is 12. The description of the rampart is "A mass of earthwork and stone."]
 
 A rap is usually noisy. A rap is usually r-abstract. The description of the rap is "A pulsating ball of angry air."
 
@@ -3225,8 +3290,8 @@ The description of the stick is "It is about two feet long. It's stripped of its
 
 The stickball is an r-abstract thing. The description is "A pick-up sandlot game, represented here by the image of small dusty figures running around, transparent as holograms." The heft of the stickball is 0.
 
-The description of the still is "A room-sized installation of glass tubes and boilers. Inside is some kind of illicit moonshine product." The still is a container. The heft of the still is 12. The still is transparent.
-	The scent-description of the still is "heady quantities of ethanol".
+[The description of the still is "A room-sized installation of glass tubes and boilers. Inside is some kind of illicit moonshine product." The still is a container. The heft of the still is 12. The still is transparent.
+	The scent-description of the still is "heady quantities of ethanol".]
 
 The stillage is a supporter. Instead of putting something on the stillage: say "The stillage is really designed to support kegs and nothing else." The description of the stillage is "It's a rack for supporting kegs in such a position that they can be easily tapped and used."
 
@@ -3644,8 +3709,6 @@ To decide what tale-protagonist is a suitable protagonist for (T - a tale-apex):
 	decide on a random tale-protagonist.
 
 
-
-
 Section 17 - The rest of T
 
 A tab is r-abstract. The description of the tab is "It lists the price of a tasting menu for two at the Literal Restaurant (seven courses not counting the intermezzo beet sorbet), with accompanying wine flights, espresso, and brandy to follow. Someone's expense account is shivering in a corner right now."
@@ -3682,11 +3745,15 @@ A tad is r-abstract. The description of a tad is "A very small measure, like a t
 
 The description of the tam is "A slightly baggy crocheted cap, striped in shades of blue and white." The tam is wearable. It covers the head-area.
 
-The description of the tamale is "Still partly in its wrapper, and steaming hot. You seem to know what it is [--] some kind of traditionally Mexican or meso-American foodstuff? [--] but I can't say that it's familiar around here. The exterior looks like prepared corn dough of a fairly coarse kind. It smells like the interior may be spiced meat.". The tamale is edible.
+The description of a tamale is "Still partly in its wrapper, and steaming hot. You seem to know what it is [--] some kind of traditionally Mexican or meso-American foodstuff? [--] but I can't say that it's familiar around here. The exterior looks like prepared corn dough of a fairly coarse kind. It smells like the interior may be spiced meat.". The tamale is edible.
 
-Instead of searching the tamale:
-	now the description of the tamale is "Still partly in its wrapper, and gradually cooling. You seem to know what it is [--] some kind of traditionally Mexican or meso-American foodstuff? [--] but I can't say that it's familiar around here. The exterior is prepared corn dough of a fairly coarse kind, and [we] have crumbled this enough to reveal the spiced meat inside.";
+Instead of searching a tamale:
+	repeat with T running through tamales:
+		now the description of T is "Still partly in its wrapper, and gradually cooling. You seem to know what it is [--] some kind of traditionally Mexican or meso-American foodstuff? [--] but I can't say that it's familiar around here. The exterior is prepared corn dough of a fairly coarse kind, and [we] have crumbled this enough to reveal the spiced meat inside.";
 	say "Yup, definitely spiced meat."
+
+Check waving the letter-remover at a tamale when the current setting of the letter-remover is "e":
+	say "[The second noun] doesn't change, which is unsurprising considering a 'tamal' is just a different spelling of the same thing." instead.
 
 The tan is an r-abstract. The heft of a tan is usually 0. The description is usually "The col[our] is the col[our] of bronzed skin as found on the beaches of Maui; a lazy, relaxed, year-round tan.". The scent-description of a tan is usually "coconut oil".
 
@@ -3832,7 +3899,7 @@ The tier is r-abstract. The description of the tier is "It's represented as a ce
 
 The description of the till is "An old-fashioned cash register with separate keys for half- and quarter-cents: Atlantean currency inflated more slowly than most, and still had absurdly low numbers until we went over to the Euro. Both sides are molded with a graceful female figure holding a cornucopia of goods from land and sea." The till is an openable closed container.
 
-The description of the tills is "There is a whole heap of them, mostly old-style cash registers from before they were computerized, but also some more recent sorts, and even one of those clever modern ones that is just a prop for a tablet computer."
+The description of the tills is "There is a whole heap of them, mostly old-style cash registers from before they were computerized, but also some more recent sorts, and even one of those clever modern ones that is just a prop for a tablet computer." The heft of the tills is 10.
 
 The tillage is r-abstract. The description of the tillage is "The fleeting images show acres of rolling farmland being worked over in preparation for planting. It looks like more wide-open space than we usually have in one place here on Atlantis. Perhaps the farmland pictured is French or even American."
 

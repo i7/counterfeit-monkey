@@ -336,7 +336,7 @@ The applet has homonym index 331.
 The aquarium-closed-sign has homonym index 332.
 The arc has homonym index 333.
 The arcsin has homonym index 334.
-The arctic has homonym index 335.
+[The arctic has homonym index 335.]
 The ark has homonym index 336.
 The arm has homonym index 337.
 The armband has homonym index 338.
@@ -426,9 +426,9 @@ The buildings-general has homonym index 422.
 The gameshelves has homonym index 423.
 The built-in table has homonym index 424.
 The bull has homonym index 425.
-The bund has homonym index 426.
+[The bund has homonym index 426.]
 The bus bays has homonym index 427.
-The buses has homonym index 428.
+[The buses has homonym index 428.]
 The bushes has homonym index 429.
 The business-school-exterior has homonym index 430.
 The button-up shirt has homonym index 431.
@@ -436,7 +436,7 @@ The cacao-nub-heap has homonym index 432.
 The cad has homonym index 433.
 The cafe building has homonym index 434.
 The camembert has homonym index 435.
-The camemberts has homonym index 436.
+[The camemberts has homonym index 436.]
 The card has homonym index 437.
 The carp-sample has homonym index 438.
 The carpet has homonym index 439.
@@ -475,12 +475,12 @@ The cloth napkin has homonym index 471.
 The clothing shops has homonym index 472.
 The cluck has homonym index 473.
 The coarse woolen clothing has homonym index 474.
-The coasts has homonym index 475.
+[The coasts has homonym index 475.]
 The coat has homonym index 476.
 The cock has homonym index 477.
 The cock-ale has homonym index 478.
 The cock-ring has homonym index 479.
-The cockpit has homonym index 480.
+[The cockpit has homonym index 480.]
 The cod-sample has homonym index 481.
 The code has homonym index 482.
 The codex has homonym index 483.
@@ -869,6 +869,7 @@ The pirate has homonym index 865.
 The pirate-crew has homonym index 866.
 The pit-items has homonym index 867.
 The pit-trap has homonym index 868.
+The pit-traps have homonym index 868.
 The pita has homonym index 869.
 The plain white top has homonym index 870.
 The plain-plate has homonym index 871.
@@ -922,7 +923,7 @@ The railings has homonym index 918.
 The rale has homonym index 919.
 The ramcat has homonym index 920.
 The rampage has homonym index 921.
-The rampart has homonym index 922.
+[The rampart has homonym index 922.]
 The plural-rams has homonym index 923.
 The random foodstuffs has homonym index 924.
 The rape has homonym index 925.
@@ -1066,7 +1067,7 @@ The steer automaton has homonym index 1062.
 The stick has homonym index 1063.
 The stickball has homonym index 1064.
 The sticky has homonym index 1065.
-The still has homonym index 1066.
+[The still has homonym index 1066.]
 The stillage has homonym index 1067.
 The stoats has homonym index 1068.
 The stock has homonym index 1069.
@@ -1104,7 +1105,7 @@ The taco has homonym index 1100.
 The tad has homonym index 1101.
 The tall stool has homonym index 1102.
 The tam has homonym index 1103.
-The tamale has homonym index 1104.
+A tamale has homonym index 1104.
 The tape has homonym index 1105.
 The tarpan has homonym index 1106.
 The tarpaulin-covered masses has homonym index 1107.
@@ -1280,6 +1281,7 @@ An ignition has homonym index 1275.
 A tap has homonym index 1276.
 A bath has homonym index 1277.
 Yourself has homonym index 1278.
+Some plural-pas have homonym index 1279.
 An alterna-tear has homonym index 1280.
 The passkey-thing has homonym index 1281.
 A generic-cup has homonym index 1282.
@@ -1288,5 +1290,10 @@ A CPU has homonym index 1283.
 An alterna-cap has homonym index 1285.
 The soap-sap-receptacle-supporter has homonym index 1286.
 The sop-dispenser has homonym index 1287.
+A ma has homonym index 1288.
+A mama has homonym index 1289.
+The me-object has homonym index 1290.
+The plural-ills have homonym index 1291.
+The alterna-pits have homonym index 1292.
 
 Homonym Indices ends here.
