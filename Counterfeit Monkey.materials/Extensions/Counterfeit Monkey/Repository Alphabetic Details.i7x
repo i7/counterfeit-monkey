@@ -692,7 +692,7 @@ Instead of listening to the cock:
 
 Test cockbug with "autoupgrade / wave l-remover at clock / open tub / gel cock" holding the clock and the tub.
 
-The cockpit is a thing. The heft of the cockpit is 10. The description is "It's a tiny room lined on every surface with buttons and instrument readouts and warning signs, altimeters and radios and all sorts of other gadgets I don't recognize." Understand "buttons" and "readouts" and "instrument" and "warning" and "signs" and "altimeters" and "radios" and "gadgets" and "button" and "readout" and "sign" and "altimeter" and "radio" and "gadget" as the cockpit.
+[The cockpit is a thing. The heft of the cockpit is 10. The description is "It's a tiny room lined on every surface with buttons and instrument readouts and warning signs, altimeters and radios and all sorts of other gadgets I don't recognize." Understand "buttons" and "readouts" and "instrument" and "warning" and "signs" and "altimeters" and "radios" and "gadgets" and "button" and "readout" and "sign" and "altimeter" and "radio" and "gadget" as the cockpit.]
 
 The cock-ring is a wearable thing. The printed name is "cock ring". The cock-ring is naughty-sounding. The description is "A sturdy ring of black rubber[one of]. Which reminds me [--] never mind[or]. And no, I'm not going to tell you about that memory[or]. Stop prying[stopping]."  Understand "cock" or "ring" as cock-ring.
 	Sanity-check wearing the cock-ring:

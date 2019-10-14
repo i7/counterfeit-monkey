@@ -620,7 +620,7 @@ The coat has hash code 540677. [I960_coat]
 The cock has hash code 17412. [I899_cock]
 The cock-ale has hash code 19477. [I2318_cock_ale]
 The cock-ring has hash code 156996. [I2317_cock_ring]
-The cockpit has hash code 574724. [I2319_cockpit]
+[The cockpit has hash code 574724.] [I2319_cockpit]
 The cod-sample has hash code 317469.
 The code has hash code 16412. [I1617_code]
 The codex has hash code 8405020. [I465_codex]

@@ -921,7 +921,7 @@ A yam-cart is in the repository. [anagrammed from cat-army]
 A charring and a charlie are in the repository.
 
 [cock]
-A cock-ring, a cock-ale, a cockpit, and a cassock are in the repository.
+A cock-ring, a cock-ale, [a cockpit,] and a cassock are in the repository.
 
 [cot]
 [Some coasts are in the repository.]

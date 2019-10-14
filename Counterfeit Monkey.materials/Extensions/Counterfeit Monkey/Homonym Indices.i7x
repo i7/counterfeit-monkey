@@ -480,7 +480,7 @@ The coat has homonym index 476.
 The cock has homonym index 477.
 The cock-ale has homonym index 478.
 The cock-ring has homonym index 479.
-The cockpit has homonym index 480.
+[The cockpit has homonym index 480.]
 The cod-sample has homonym index 481.
 The code has homonym index 482.
 The codex has homonym index 483.
