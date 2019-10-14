@@ -744,7 +744,7 @@ The repository contains a sap-dispenser and a sop-dispenser.
 [spill]
 
 The repository contains a pill, a sill, an ill, a self-object, a pi-object,
-	some pills, some ills, [anagram, then p-remove]
+	some pills, some plural-ills, [anagram, then p-remove]
 	[a still,] a till, some tills,  [t-insert derivatives]
 	a poll, a toll. [vowel rotation]
 

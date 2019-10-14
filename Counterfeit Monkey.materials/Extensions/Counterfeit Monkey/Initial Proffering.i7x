@@ -770,6 +770,7 @@ The pier proffers the pier. [I1784_pier]
 The pig-tat-inn proffers the pig-tat-inn. [I1763_pig_tat_inn]
 The pill proffers the pill. [I2198_pill]
 The pills proffers the pills. [I2200_pills]
+The plural-ills proffer the plural-ills.
 The pin proffers the pin. [I1860_pin]
 The pin-t-shirt proffers the pin-t-shirt. [I1840_pin_t_shirt]
 The pineapple-ring proffers the pineapple-ring. [I2367_pineapple_ring]

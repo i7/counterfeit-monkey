@@ -1223,7 +1223,7 @@ Test ibug with "tutorial off / autoupgrade / wave p-remover at pill / wave l-rem
 
 The ice-wig japes are an r-abstract thing. The printed name is "ice wig japes". Understand "ice wig" as the ice-wig japes. The description is "It displays, in miniature, some kind of comedy routine involving a set of ice skaters passing back and forth a huge wig also made of solid ice, which they take it in turns to wear (no doubt uncomfortably) over their caps."
 
-Some ills are r-abstract. The description of ills is usually "They manifest as little balls of malevolence, like the critters that flew out of Pandora's box in a children's illustration."
+The plural-ills are r-abstract. The description of the plural-ills is "They manifest as little balls of malevolence, like the critters that flew out of Pandora's box in a children's illustration." The printed name of the plural-ills are "ills". Understand "ills" as the plural-ills.
 
 An ill is r-abstract. The description of an ill is usually "It manifests as a little ball of malevolence, like a palm-sized thundercloud. It looks like it's a generic item from phrases like 'to wish someone ill,' which is a mercy; I don't think I would have liked manifesting illness, even abstractly.
 
@@ -1717,6 +1717,8 @@ After reading a command (this is the replace plurals rule):
 		replace the matched text with "plural-pas";
 	if the player's command includes "pa" and there is a plural-pas enclosed by location and there is a pa enclosed by location:
 		replace the matched text with "singular-pa";
+	if the player's command includes "ills" and the plural-ills are enclosed by location:
+		replace the matched text with "plural-ills";
 	if the player's command includes "pots" and there is a plural-pots enclosed by location:
 		replace the matched text with "plural-pots";
 	if the player's command includes "pot" and there is a plural-pots enclosed by location:

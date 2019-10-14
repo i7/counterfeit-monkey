@@ -40,6 +40,7 @@ The strand is fake. [K156_strand]
 A hart is fake. [K119_hart]
 A hat is fake. [K120_hat]
 An ill is fake. [K122_ill]
+The plural-ills are fake.
 An ink is fake. [K121_ink]
 An it-object is fake. [K123_it_object]
 A lee is fake. [K124_lee]
