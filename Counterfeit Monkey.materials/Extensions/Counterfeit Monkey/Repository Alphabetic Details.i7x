@@ -2325,7 +2325,7 @@ Instead of smelling the pirate-crew:
 
 Test crew with "tutorial off / autoupgrade / test pirate-spot / wave s-remover at screws / put gel on crew / put screws on platform / wave s-remover at screws / turn on platform / show spot to crew" in the Workshop holding the screws.
 
-The description of the pit is "The hard cen[ter] of a fruit, clean and dry of any flesh.". The scent-description  of the pit is "peaches".
+The description of a pit is "The hard cen[ter] of a fruit, clean and dry of any flesh.". The scent-description  of the pit is "peaches".
 
 Understand "pit" as a pit-hole. A pit-hole is usually open and fixed in place. The description of a pit-hole is "It's a cavity in the surface of [the holder of the item described], too small for our body to fit into."
 
