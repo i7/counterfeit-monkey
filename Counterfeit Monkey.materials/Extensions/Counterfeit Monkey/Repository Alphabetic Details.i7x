@@ -1424,6 +1424,13 @@ The louse is an insect. The heft of the louse is 1. Understand "lice" as the lou
 
 Section 8 - M through O
 
+The description of a ma is "She's a Norman Rockwell figure: smiling in her apron, trying to keep up a perfect appearance while visibly exhausted from all her housework. Doesn't actually come with a child attached." Understand "figure" or "apron" as a ma.
+	The scent-description of a ma is "soap".
+
+The description of a mama is "Like a ma, only longer ago: not Norman Rockwell, but a Victorian Mama, in a long dark dress hiding a corset, her hair in a tight bun at the back of the neck." Understand "dress" and "corset" and "lady" and "bun" as a mama.
+	The greeting of a mama is "'Well, hello to you, Ma'am,' says the mama."
+	The scent-description of a mama is "carbolic soap".
+
 The description of the mag is "It's a glossy magazine for photography enthusiasts on the island. There's a several page spread of tilt-shift images of the harbor, making it all look like a child's toy set." Understand "magazine" as the mag.
 
 The description of the mall figurine is "It's a painted porcelain representation of a shopping mall. Delicate brushwork delineates the spaces in the parking lot, and the pharmacy sign has been modeled with special care." The mall figurine is fixed in place.
@@ -1740,7 +1747,7 @@ topic	stuff	setting
 
 The description of some plural-pas is "A whole fleet of gruff, upstanding, fatherly men." The printed name of a plural-pas is "pas". Understand "pas" or "pa" as the plural-pas.
 	The scent-description of some plural-pas is "shaving cream".
-	The greeting of some plural-pas is "'Hello there, young lady,' one of the pas replies."
+	The greeting of some plural-pas is "'Hello there, young lady,' one of them replies."
 
 Rule for writing a paragraph about some plural-pas (called item):
 	say "The pas you summoned are standing nearby, looking slightly confused.[if there is a mentionable unmentioned thing which is not item in location][line break][end if]";

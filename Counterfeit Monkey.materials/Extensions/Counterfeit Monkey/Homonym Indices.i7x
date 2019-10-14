@@ -1289,6 +1289,8 @@ A CPU has homonym index 1283.
 An alterna-cap has homonym index 1285.
 The soap-sap-receptacle-supporter has homonym index 1286.
 The sop-dispenser has homonym index 1287.
+A ma has homonym index 1288.
+A mama has homonym index 1289.
 The me-object has homonym index 1290.
 
 Homonym Indices ends here.

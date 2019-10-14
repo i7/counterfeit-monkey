@@ -218,6 +218,8 @@ A lipstick advertisements has hash code 3063069. [K2_thing]
 A lock has hash code 19460. [K2_thing]
 The low relief has hash code 4344112. [K2_thing]
 The Slangovia map has hash code 2423137. [K2_thing]
+A ma has hash code 4097.
+A mama has hash code 4097.
 [A mart has hash code 659457.] [K125_mart]
 A massive plug has hash code 3447121. [K178_massive_plug]
 [The massive pug has hash code 3445073.]
