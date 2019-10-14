@@ -924,7 +924,7 @@ A charring and a charlie are in the repository.
 A cock-ring, a cock-ale, a cockpit, and a cassock are in the repository.
 
 [cot]
-Some coasts are in the repository.
+[Some coasts are in the repository.]
 
 [counter]
 A counterweight and a countertop are in the repository.

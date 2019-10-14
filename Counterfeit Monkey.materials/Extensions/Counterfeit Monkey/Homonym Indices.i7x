@@ -475,7 +475,7 @@ The cloth napkin has homonym index 471.
 The clothing shops has homonym index 472.
 The cluck has homonym index 473.
 The coarse woolen clothing has homonym index 474.
-The coasts has homonym index 475.
+[The coasts has homonym index 475.]
 The coat has homonym index 476.
 The cock has homonym index 477.
 The cock-ale has homonym index 478.

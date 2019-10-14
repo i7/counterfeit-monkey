@@ -615,7 +615,7 @@ The cloth napkin has hash code 585093.
 The clothing shops have hash code 2048274. [I471_clothing_shops]
 The cluck has hash code 1051652.
 The coarse woolen clothing has hash code 5138901. [I2460_coarse_woolen_clothing]
-The coasts has hash code 802821. [I2321_coasts]
+[The coasts has hash code 802821.] [I2321_coasts]
 The coat has hash code 540677. [I960_coat]
 The cock has hash code 17412. [I899_cock]
 The cock-ale has hash code 19477. [I2318_cock_ale]

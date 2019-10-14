@@ -284,9 +284,7 @@ A synthesis-override rule for a cot:
 	if the-other-thing is the ass:
 		now object-name is "COASTS";
 		abide by the location-check rule;
-		say "The programmable dais glows vibrant blue for five seconds, leaving behind some coasts.
-
-A vast rocky coastline too large to fit in the present confines.
+		say "The programmable dais glows vibrant blue for five seconds, leaving behind some coasts. A vast rocky coastline too large to fit in the present confines.
 
 Unfortunately, the coasts are more than sufficient to bury [us] under their bulk.";
 		end the story saying "That could have gone better";

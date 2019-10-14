@@ -681,7 +681,7 @@ The chowder pro is a woman. The description of the chowder pro is "She's a proud
 
 [coasts]
 
-Some coasts are a thing. The heft of the coasts is 12. The description is "A vast rocky coastline too large to fit in the present confines."
+[Some coasts are a thing. The heft of the coasts is 12. The description is "A vast rocky coastline too large to fit in the present confines."]
 
 [cock]
 The cock is a bird. It is noisy. The flexible appearance of the cock is "[if the cock is in the location]Wandering around nearby, for all the world as though this were a barnyard, is a large red-headed cock[otherwise]The cock [we] made earlier is regarding [us] suspiciously[end if]." The description of the cock is "It stares back at [us] malevolently through one eye." The heft of the cock is 3.
