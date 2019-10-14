@@ -3696,8 +3696,6 @@ To decide what tale-protagonist is a suitable protagonist for (T - a tale-apex):
 	decide on a random tale-protagonist.
 
 
-
-
 Section 17 - The rest of T
 
 A tab is r-abstract. The description of the tab is "It lists the price of a tasting menu for two at the Literal Restaurant (seven courses not counting the intermezzo beet sorbet), with accompanying wine flights, espresso, and brandy to follow. Someone's expense account is shivering in a corner right now."

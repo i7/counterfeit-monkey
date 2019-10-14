@@ -183,7 +183,6 @@ The footpath entrance has hash code 712885. [K7_backdrop]
 A freezer compartment has hash code 34271285. [K43_freezer_compartment]
 A fridge-top has hash code 131448. [printed name is "fridge"]
 The frozen dinners have hash code 33972536. [K2_thing]
-
 A gas-gauge has hash code 1310801. [K37_gas_gauge]
 A git has hash code 524608. [K118_git]
 A goatee has hash code 540753. [K2_thing]
