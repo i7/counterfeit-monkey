@@ -305,6 +305,20 @@ This is the location-check rule:
 		say "An indicator message lights up: OVERRIDE: GENERATED OBJECT [object-name] EXCEEDS MAXIMUM SIZE LIMIT.";
 		the rule fails;
 
-[arctic, camemberts, cat army, -cockpit, coasts, rampart]
+A synthesis-override rule for an as:
+	if the-other-thing is a May:
+		say "Nice try, but the word 'Maya' is generally used as an unmarked plural, without distinction between singular and plural forms.";
+		the rule fails;
+	if the-other-thing is a pit or the-other-thing is a pit-hole:
+		say "Nice try, but the word 'pita' is generally used as an unmarked plural, without distinction between singular and plural forms.";
+		the rule fails;
+	if the-other-thing is a CRT:
+		now object-name is "CARTS";
+		abide by the location-check rule;
+		say "The programmable dais glows vibrant blue for five seconds, leaving behind some carts. An assortment of carts of different kinds and sizes: from horse-buggies and hospital gurneys to rickshaws and palanquins; some of them with beasts of draught attached, including a full-grown Indian elephant.
+
+Unfortunately, the carts are more than sufficient to bury [us] under their bulk.";
+		end the story saying "That could have gone better";
+		the rule fails.
 
 Safety Overrides and Disasters ends here.
