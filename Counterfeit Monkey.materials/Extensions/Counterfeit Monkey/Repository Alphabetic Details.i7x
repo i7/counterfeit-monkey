@@ -3277,8 +3277,8 @@ The description of the stick is "It is about two feet long. It's stripped of its
 
 The stickball is an r-abstract thing. The description is "A pick-up sandlot game, represented here by the image of small dusty figures running around, transparent as holograms." The heft of the stickball is 0.
 
-The description of the still is "A room-sized installation of glass tubes and boilers. Inside is some kind of illicit moonshine product." The still is a container. The heft of the still is 12. The still is transparent.
-	The scent-description of the still is "heady quantities of ethanol".
+[The description of the still is "A room-sized installation of glass tubes and boilers. Inside is some kind of illicit moonshine product." The still is a container. The heft of the still is 12. The still is transparent.
+	The scent-description of the still is "heady quantities of ethanol".]
 
 The stillage is a supporter. Instead of putting something on the stillage: say "The stillage is really designed to support kegs and nothing else." The description of the stillage is "It's a rack for supporting kegs in such a position that they can be easily tapped and used."
 
