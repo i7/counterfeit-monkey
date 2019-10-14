@@ -188,7 +188,7 @@ The button is fake.
 The cacao-nub-heap is fake. [I1493_cacao_nub_heap]
 The cad is fake. [I1568_cad]
 The camembert is fake. [I2310_camembert]
-The camemberts is fake. [I2309_camemberts]
+[The camemberts is fake.] [I2309_camemberts]
 The card is fake. [I1566_card]
 [The cardboard is fake. [I2307_cardboard]]
 The carpet is fake. [I2303_carpet]

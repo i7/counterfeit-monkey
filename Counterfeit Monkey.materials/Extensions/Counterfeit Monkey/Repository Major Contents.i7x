@@ -912,7 +912,8 @@ The repository contains a carpet, 3 carpi, 3 carp, 3 generic-caps, 3 alterna-cap
 The repository contains a cartage.
 
 [cat]
-Some camemberts and a camembert, a climate, a catnap, and a cat-army are in the repository.
+[Some camemberts and a]
+A camembert, a climate, a catnap, and a cat-army are in the repository.
 
 A yam-cart is in the repository. [anagrammed from cat-army]
 

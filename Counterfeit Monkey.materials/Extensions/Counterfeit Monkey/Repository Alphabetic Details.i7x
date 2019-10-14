@@ -427,10 +427,10 @@ He smiles knowingly, but merely straightens his cuffs."
 Instead of putting the restoration gel on the cad:
 	say "As you approach, he takes a step backward and fends you off with one (finely-boned yet manly) hand. [one of]'I think not,' he says, in a low voice that thrills you deeply. 'I never would allow a lady to apply an unknown liniment to my person.'[or]Apparently he hasn't changed his stance on unidentified substances.[stopping]".
 
-Some camemberts are an edible thing. The description of the camemberts is "A whole stack of French camembert, which would be convenient if [we] were opening a black market deli, but may be hard to explain under other circumstances. Also not terribly portable." Understand "cheese" or "rind" as the camemberts. The heft of the camemberts is 10.
+[Some camemberts are an edible thing. The description of the camemberts is "A whole stack of French camembert, which would be convenient if [we] were opening a black market deli, but may be hard to explain under other circumstances. Also not terribly portable." Understand "cheese" or "rind" as the camemberts. The heft of the camemberts is 10.
 	The scent-description of the camemberts is "cheese rind".
-	Sanity-check cutting the camembert:
-		say "A notch in the flesh of the nearest camemberts exposes the yellowish creamy interior." instead.
+	Sanity-check cutting the camemberts:
+		say "A notch in the flesh of the nearest camemberts exposes the yellowish creamy interior." instead.]
 
 The camembert is an edible thing. The description of the camembert is "A rich, soft, creamy cheese with a white rind. This one isn't too runny yet." Understand "cheese" or "rind" as the camembert.
 	The scent-description of the camembert is "cheese rind".

@@ -436,7 +436,7 @@ The cacao-nub-heap has homonym index 432.
 The cad has homonym index 433.
 The cafe building has homonym index 434.
 The camembert has homonym index 435.
-The camemberts has homonym index 436.
+[The camemberts has homonym index 436.]
 The card has homonym index 437.
 The carp-sample has homonym index 438.
 The carpet has homonym index 439.

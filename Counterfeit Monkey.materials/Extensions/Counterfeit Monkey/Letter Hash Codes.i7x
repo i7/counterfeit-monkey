@@ -575,7 +575,7 @@ The cacao-nub-heap has hash code 1106071. [I1493_cacao_nub_heap]
 The cad has hash code 13. [I1568_cad]
 The cafe building has hash code 1059183. [I694_cafe_building]
 The camembert has hash code 659479.
-The camemberts has hash code 921623.
+[The camemberts has hash code 921623.]
 The card has hash code 131085.
 [The cardboard has hash code 255853056. [I2307_cardboard]]
 The carp-sample has hash code 432149.

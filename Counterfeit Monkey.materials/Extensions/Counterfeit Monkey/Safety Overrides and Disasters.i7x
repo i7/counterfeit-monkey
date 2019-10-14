@@ -243,43 +243,38 @@ A synthesis-override rule for the i-pan:
 		say "That Indian soft cheese is called paneer, you know, not panear.";
 		the rule fails.
 
+A synthesis-override rule for a ram:
+	if the-other-thing is a part:
+		now object-name is "RAMPART";
+		abide by the location-check rule;
+		say "The programmable dais glows vibrant blue for five seconds, leaving behind a rampart. A mass of earthwork and stone.
+
+Unfortunately, the rampart is more than sufficient to bury [us] under its bulk.";
+		end the story saying "That could have gone better";
+		the rule fails.
+
 A synthesis-override rule for the cock:
 	if the-other-thing is a pit or the-other-thing is the pit-items:
 		if the-other-thing is a pit:
 			now object-name is "COCKPIT";
 			abide by the location-check rule;
-			say "The programmable dais glows vibrant blue for five seconds, leaving behind a cockpit.
-
-It's a tiny room lined on every surface with buttons and instrument readouts and warning signs, altimeters and radios and all sorts of other gadgets I don't recognize.
+			say "The programmable dais glows vibrant blue for five seconds, leaving behind a cockpit. It's a tiny room lined on every surface with buttons and instrument readouts and warning signs, altimeters and radios and all sorts of other gadgets I don't recognize.
 
 Unfortunately, the cockpit is more than sufficient to bury [us] under its bulk.";
 		otherwise:
 			now object-name is "COCKPITS";
 			abide by the location-check rule;
-			say "The programmable dais glows vibrant blue for five seconds, leaving behind some cockpits.
-
-It's a number of tiny rooms lined on every surface with buttons and instrument readouts and warning signs, altimeters and radios and all sorts of other gadgets I don't recognize.
+			say "The programmable dais glows vibrant blue for five seconds, leaving behind some cockpits. It's a number of tiny rooms lined on every surface with buttons and instrument readouts and warning signs, altimeters and radios and all sorts of other gadgets I don't recognize.
 
 Unfortunately, the cockpits are more than sufficient to bury [us] under their bulk.";
 		end the story saying "That could have gone better";
 		the rule fails.
 
 A synthesis-override rule for a cat:
-	if the-other-thing is the members or the-other-thing is the army:
-		if the-other-thing is the army:
-			now object-name is "CAT ARMY";
-			abide by the location-check rule;
-			say "The programmable dais glows vibrant blue for five seconds, leaving behind a cat army.
-
-There are dozens of them, and they move in curiously regimented, uncatlike ways, as though the big tabby at the front of the group really is their commanding officer.
-
-Apparently, the cat army considers [us] a threat. Before [we] have time to react, its combined teeth and claws make short work of [us].";
-		otherwise:
-			now object-name is "CAMEMBERTS";
-			abide by the location-check rule;
-			say "The programmable dais glows vibrant blue for five seconds, leaving behind some camemberts.
-
-A whole stack of French camembert, which would be convenient if we were opening a black market deli, but may be hard to explain under other circumstances. Also not terribly portable.
+	if the-other-thing is the members:
+		now object-name is "CAMEMBERTS";
+		abide by the location-check rule;
+		say "The programmable dais glows vibrant blue for five seconds, leaving behind some camemberts. A whole stack of French camembert, which would be convenient if we were opening a black market deli, but may be hard to explain under other circumstances. Also not terribly portable.
 
 Unfortunately, the camemberts are more than sufficient to bury [us] under their bulk.";
 		end the story saying "That could have gone better";
