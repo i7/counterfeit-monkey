@@ -646,6 +646,7 @@ The mannequin proffers the mannequin. [I762_mannequin]
 [The massive pug proffers the massive pug.]
 The marble fountain proffers the marble fountain. [I488_marble_fountain]
 The mare proffers the mare. [I1641_mare]
+The me-object proffers the me-object.
 The meat-gown proffers the meat-gown. [I2444_meat_gown]
 The mechanic proffers the mechanic. [I2450_mechanic]
 The member proffers the member. [I897_member]

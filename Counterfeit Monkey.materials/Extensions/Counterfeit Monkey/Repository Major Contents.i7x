@@ -389,7 +389,7 @@ The repository contains a garage. [the garbage]
 The repository contains a mug, [anagram/spinner]
 	a mu, [letter-removal]
 	a mut and a mutt, [t-insertion]
-	a mat, a Matt, a gam, a mag, a Meg, a gem.  [vowel-rotation]
+	a mat, a Matt, a ma, a mama, a gam, a mag, a Meg, a me-object, a gem.  [vowel-rotation]
 
 [gimlet]
 
