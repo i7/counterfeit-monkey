@@ -870,7 +870,7 @@ The repository contains a bondage.
 The repository contains an airfoil.
 
 [arc]
-The repository contains an arcsin and an arctic.
+The repository contains an arcsin [and an arctic].
 
 [arm]
 The repository contains an armband, an armpit, and an armchair.

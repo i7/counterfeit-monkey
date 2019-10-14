@@ -106,7 +106,7 @@ The ascot is a floppy wearable thing. The heft of the ascot is 1. The descriptio
 
 The alterna-letter is an r-abstract thing. The description of the alterna-letter is "A giant floating letter A." The printed name is "letter". Understand "letter" as the alterna-letter. The heft of the alterna-letter is 0.
 
-The heft of the arctic is 12. The description of the arctic is "Enormous, frozen plains graced only by the occasional caribou, polar bear, and oil rig."
+[The heft of the arctic is 12. The description of the arctic is "Enormous, frozen plains graced only by the occasional caribou, polar bear, and oil rig."]
 
 The description of the airfoil is "A big, awkward metal piece from something; it looks like a propellor blade." The heft of the airfoil is 6.
 

@@ -301,9 +301,7 @@ A synthesis-override rule for the arc:
 	if the-other-thing is the tic:
 		now object-name is "ARCTIC";
 		abide by the location-check rule;
-		say "The programmable dais glows vibrant blue for five seconds, leaving behind an arctic.
-
-Enormous, frozen plains graced only by the occasional caribou, polar bear, and oil rig.
+		say "The programmable dais glows vibrant blue for five seconds, leaving behind an arctic. Enormous, frozen plains graced only by the occasional caribou, polar bear, and oil rig.
 
 Unfortunately, the arctic is more than sufficient to bury [us] under its bulk";
 		end the story saying "That could have gone better";

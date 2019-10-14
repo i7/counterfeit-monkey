@@ -336,7 +336,7 @@ The applet has homonym index 331.
 The aquarium-closed-sign has homonym index 332.
 The arc has homonym index 333.
 The arcsin has homonym index 334.
-The arctic has homonym index 335.
+[The arctic has homonym index 335.]
 The ark has homonym index 336.
 The arm has homonym index 337.
 The armband has homonym index 338.
