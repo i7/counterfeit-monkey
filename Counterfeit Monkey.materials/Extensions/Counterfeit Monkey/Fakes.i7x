@@ -179,7 +179,7 @@ The breathable silky cotton is fake. [I2231_breathable_silky_cotto]
 The broken component is fake. [I1538_broken_component]
 The brown tee is fake. [I2417_brown_tee]
 The bull is fake. [I1503_bull]
-The bund is fake. [I1523_bund]
+[The bund is fake.] [I1523_bund]
 [The buses is fake.] [I1525_buses]
 The button is fake.
 The cacao-nub-heap is fake. [I1493_cacao_nub_heap]

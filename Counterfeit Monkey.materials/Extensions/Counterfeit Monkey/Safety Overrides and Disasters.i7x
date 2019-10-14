@@ -198,6 +198,24 @@ After inserting the pose into the cryptolock when hardness is false and the cryp
 After inserting a tint into the cryptolock when hardness is true and the cryptoswitch is switched on:
 	say "There is a churning noise from within [the cryptolock] and 'ohio' appears in letters of vivid purple smoke. [We] get a confused impression of factories and battleground politics in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead;
 
+After inserting the band into the cryptolock when hardness is false and the cryptoswitch is switched on:
+	say "[bund-refusal-text]." instead.
+
+After inserting the bond into the cryptolock when hardness is false and the cryptoswitch is switched off:
+	say "[bund-refusal-text]." instead.
+
+To say bund-refusal-text:
+	say "There is a churning noise from within [the cryptolock] and 'bund' appears in letters of vivid purple smoke. [We] get a vision of a huge earthwork embankment, designed to prevent oil repositories from bursting their banks and spilling into the surrounding waters. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result".
+
+After inserting a pat-items into the cryptolock when hardness is false and the cryptoswitch is switched off:
+	say "[pets-refusal-text]." instead.
+
+After inserting a pit-items into the cryptolock when hardness is false and the cryptoswitch is switched on:
+	say "[pets-refusal-text]." instead.
+
+To say pets-refusal-text:
+	say "There is a churning noise from within [the cryptolock] and 'pets' appears in letters of vivid purple smoke. [We] get a glimpse of a huge squirming mess of little furry creatures in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result".
+
 [Synthesizer and programmable dais, set to synthesize]
 
 The synthesis-override rules are an object-based rulebook.

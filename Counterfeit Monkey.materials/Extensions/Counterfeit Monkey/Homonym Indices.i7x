@@ -426,7 +426,7 @@ The buildings-general has homonym index 422.
 The gameshelves has homonym index 423.
 The built-in table has homonym index 424.
 The bull has homonym index 425.
-The bund has homonym index 426.
+[The bund has homonym index 426.]
 The bus bays has homonym index 427.
 [The buses has homonym index 428.]
 The bushes has homonym index 429.

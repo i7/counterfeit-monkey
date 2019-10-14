@@ -562,7 +562,7 @@ The buildings-general has hash code 1452379. [I846_buildings_general]
 The gameshelves has hash code 3942802. [I1164_gameshelves]
 The built-in table has hash code 1583379. [I1159_built_in_table]
 The bull has hash code 1050626.
-The bund has hash code 1056778.
+[The bund has hash code 1056778.]
 The bus bays has hash code 18087939.
 [The buses has hash code 1310738.]
 The bushes has hash code 1310866.

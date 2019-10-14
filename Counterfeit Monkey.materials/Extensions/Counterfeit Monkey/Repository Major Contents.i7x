@@ -216,7 +216,7 @@ The repository contains a bandana. [banana]
 [band]
 
 The repository contains a ban and an alterna-band
-	and an abstract-bend, a bind, a bond, a bund.
+	and an abstract-bend, a bind, a bond [, a bund].
 
 [basis]
 
