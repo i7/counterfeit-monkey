@@ -82,7 +82,7 @@ Rule for writing a paragraph about something (called special-target) (this is th
 	now the special-target is mentioned;
 	set pronouns from the special-target;
 	carry out the writing a topic sentence about activity with the special-target;
-	if the holder of the special-target is not the location and the holder of the special-target is not referenced by current-paragraph:
+	if the holder of the special-target is not the location and the holder of the special-target is not referenced by current-paragraph and the holder of the holder of the special-target is not nothing:
 		carry out the disclosing exterior activity with the special-target;
 	carry out the giving-surrounding-details-for activity with the special-target;
 	now held-break is true;
@@ -143,7 +143,7 @@ Rule for disclosing exterior of something (called special-target) (this is the s
 	now current-subject is special-target; [so that printing routines can refer to it]
 	now first-subject is special-target;
 	let nesting be false;
-	while the holder of the current-subject is not a room:
+	while the holder of the current-subject is not a room and the holder of the current-subject is not nothing:
 		if nesting is false:
 			choose a random row in the current-subject-introductions-table;
 			say "[disclosure entry][run paragraph on]";
