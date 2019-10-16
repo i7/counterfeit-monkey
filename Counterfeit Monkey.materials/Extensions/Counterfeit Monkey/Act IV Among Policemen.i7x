@@ -153,16 +153,16 @@ Instead of doing something to the sink-collectives:
 		now the noun is a random sink in location.
 
 Check waving the letter-remover at a tap which is part of a sink when the current setting of the letter-remover is "s":
-	say "An ink tap would be a convenient source of ink if only the Atlantis plumbing infrastructure was adapted to support it. But otherwise I guess it wouldn't be any different from any old tap, which might explain why the letter-remover can't be bothered to bring it about." instead.
+	say "An ink tap would be a convenient source of ink if only the Atlantis plumbing infrastructure was adapted to support it. But otherwise I guess it wouldn't be different from any old tap, which might explain why the letter-remover can't be bothered to bring it about." instead.
 
 Check waving the letter-remover at a tap which is part of a sink when the current setting of the letter-remover is "k":
-	say "A sin tap would be a convenient source of sin if only the Atlantis plumbing infrastructure was adapted to support it. But otherwise I guess it wouldn't be any different from any old tap, which might explain why the letter-remover can't be bothered to bring it about." instead.
+	say "A sin tap would be a convenient source of sin if only the Atlantis plumbing infrastructure was adapted to support it. But otherwise I guess it wouldn't be different from any old tap, which might explain why the letter-remover can't be bothered to bring it about." instead.
 
 Check waving the letter-remover at a drain which is part of a sink when the current setting of the letter-remover is "s":
-	say "An ink drain would be a convenient way to get rid of excess ink if only the Atlantean sewage system was adapted to handle it. But otherwise I guess it wouldn't be any different from any old drain, which might explain why the letter-remover can't be bothered to bring it about." instead.
+	say "An ink drain would be a convenient way to get rid of excess ink if only the Atlantean sewage system was adapted to handle it. But otherwise I guess it wouldn't be different from any old drain, which might explain why the letter-remover can't be bothered to bring it about." instead.
 
 Check waving the letter-remover at a drain which is part of a sink when the current setting of the letter-remover is "k":
-	say "A sin drain would be a convenient way to cleanse Atlantis of sin if only the sewage system could be adapted to handle it. But otherwise I guess it wouldn't be any different from any old drain, which might explain why the letter-remover can't be bothered to bring it about." instead.
+	say "A sin drain would be a convenient way to cleanse Atlantis of sin if only the sewage system could be adapted to handle it. But otherwise I guess it wouldn't be different from any old drain, which might explain why the letter-remover can't be bothered to bring it about." instead.
 
 Check waving the letter-remover at a drain when the current setting of the letter-remover is "d":
 	say "With a pungent whiff of sewage, the drain disappears.[paragraph break]An ominous silence is broken by the deafening noise of shattering porcelain, as [we] [are] crushed under a huge pile of [holder of the second noun]s, raining from [if the location is indoors]some impossible place just below the ceiling[otherwise]the sky[end if].";
