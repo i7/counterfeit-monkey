@@ -484,8 +484,8 @@ Sanity-check going to the Rotunda when the secretary carries the pass:
 
 Attempting entry is a scene. Attempting Entry begins when the secretary carries the invitation.
 
-Instead of doing something other than waiting during Attempting entry:
-	say "I'm handling this."
+Sanity-check doing something other than waiting during Attempting entry:
+	say "I'm handling this." instead.
 
 Instead of waiting during Attempting Entry:
 	say "Sure, hang in there. I'm pretty sure that what [we] need here is to act as much like Professor Waterstone himself as humanly possible."
