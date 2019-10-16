@@ -2,32 +2,65 @@
 
 ## Unreleased
 
+### Improved world model
+
 - Fixes a run-time error that could occur during disambiguation when trying to take a posture. Previously, SIT ON DAIS would cause the parser to throw an error trying to access a non-existent posture property of the dais socket.
 - Fixes a run-time error that would occur when turning the blouse of the hostel attendant into a louse (and the louse then tries to escape from the repository.)
+- Fixes a run-time error that could occur when a living creature was created on the spinner sculpture during a room description.
 - It is no longer possible to get back into the Aquarium Bookstore after Lena has closed it.
 - The balcony scenery object mentioned in the description of the white concrete buildings in Deep Street is no longer attached to the yellow buildings in Back Alley.
-- The orc swords can now be referred to.
+- It is no longer sometimes possible to leave essential things behind in containers changed by the programmable dais and the synthesizer.
+- All the original objects will now be restored when gelling something after honomym-changing a synthesized thing, rather than just one of them.
+- The single ream will no longer be covered in origin paste when created from the cream.
+- The player will be allowed into Arbot Maps & Antiques even if the appointment card is inside the backpack.
+- When a fuelled car is turned into something else, it will still be fuelled when re-created.
+- The monocle will now work properly when examining things that can be written on.
 
 ### Gameplay changes
-- The single ream will no longer be covered in origin paste when created from the cream.
-- The player will now open the backpack automatically when trying to put non-held things into it. Previously, this would only work for held objects. PUT ALL IN BACKPACK will still not automatically open the backpack.
-- The player will no longer close the car door when trying to start a non-functional car while standing outside it. They will also get inside the car before trying to start it.
-- It is no longer possible to create huge objects inside small containers, with some exceptions.
-- The mechanic can fix a second broken car.
-- The mechanic now responds to attempts to fix a car with poppy oil.
-- The player will be allowed into Arbot Maps & Antiques even if the appointment card is inside the backpack.
-- Adds an OIL verb, useful when asking the mechanic to fix the car using commands such as ASK MECHANIC TO OIL CAR or MECHANIC, OIL ENGINE.
-- When a fuelled car is turned into something else, it will still be fuelled when re-created.
-- Sap and soap can be collected from the dispenser by placing a suitable container below it. Also adds a sop dispenser for symmetry.
 
-### Typos and cosmetic output errors
+- Sap and soap can be collected from the dispenser by placing a suitable container below it. Also adds a sop dispenser for symmetry.
+- It is no longer possible to create a car inside small containers, with some exceptions.
+- The mechanic can make a second broken car functional.
+- The roc will protect the player from the boar.
+- The mechanic now responds to attempts to fix a car with poppy oil.
+- The player can now get on the spinner sculpture.
+- The tot and tots can be picked up.
+- Creatures no longer leave supporters or containers randomly.
+- The player can no longer carry created creatures past the secretary.
+- Adds responses to attempts to use the trap against the boar and the guards.
+- The boar will now butt the car door open before killing a player trying to hide in a car.
+
+### Parsing
+
+- People and living creatures that can't be carried can now still be easily moved on and off some letter tools with commands like PUT PIRATE ON DAIS or TAKE PIRATE FROM DAIS or PIRATE, GET OFF. This also makes it easier to clear the programmable dais and similar with GET ALL FROM DAIS.
+- The player will now open the backpack automatically when trying to put non-held things into it. Previously, this would only work with held objects.
+- Non-enterable containers are not opened automatically when trying to enter them.
+- Adds an OIL verb, useful when asking the mechanic to fix the car using commands such as ASK MECHANIC TO OIL CAR or MECHANIC, OIL ENGINE.
+- The player will no longer close the car door when trying to start a non-functional car while outside it. They will also get inside the car before trying to start it.
+- The orc swords can be interacted with.
+- The water in the secret chamber can be interacted with.
+- It is now always mentioned that the player automatically picks up anything on a chair before sitting down. This was previously done silently, causing confusion.
+
+### Word repository
+
+- Adds MA, MAMA, ME, PAS (plural pa), PASSKEY, another kind of plural PITS, plural PIT TRAPS, two kinds of CAP (from the carp), a CUP (wovel-rotating the cap), a CPU (anagramming the cup), and a non-liquid kind of TEAR.
+- Fixes the broken plural ILLS and plural POTS that were listed in the code but not possible to create.
+- Adds responses to attempts to make IN, COP, COCKPITS, CARTS, MAYAS, PITAS, PETS, SINK RAIN, INK DRAIN, SIN DRAIN, INK TAP, and SIN TAP.
+- Creating SCREE, SORD, TOMS, ROCK BAND, CAT ARMY or COMPLICIT SHARK no longer ends the game. This makes it possible to create some previously unreachable objects, such as YAM CART and TOMCATS.
+- Creating TILLS does end the game, however, saving us from implementing plural TOLLS  and TELLS.
+- The joke responses to attempting to synthesize ROCK and ROLL, KEY-LIME and PI, SILL and CATE, and PAN and EAR now work when using the programmable dais as well as the synthesizer.
+
+### Cosmetic output errors
+
 - Now shows the correct error message when trying to EXAMINE ALL or other multiple objects ("You can't use multiple objects with that verb" instead of "You can't see any such thing.")
 - Removes an superfluous message that was shown when trying to give animals orders.
 - Fixes a repeated message that would occur if we don't reply to Higgates initial question about whether we speak
 Lojban.
 - Gets rid of an erroneous message about being let in through the security door if trying to leave though it when confronted by Alex's father.
 - No longer repeats the refusal message when trying to TAKE ALL FROM Professor Higgate's table.
+- Groups of plural tents are no longer called plural-tents (as in "We are carrying twelve plural-tents.")
 - Fixes some glitches in the map graphics on certain interpreters when displaying the help menu. It is still slightly broken in the Mac IDE, though.
+- Fixes bits of room description being printed when getting on a supporter.
 
 ## Release 8
 
