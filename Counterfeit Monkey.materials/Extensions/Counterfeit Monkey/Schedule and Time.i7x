@@ -654,7 +654,7 @@ When Landing ends (this is the set us up on yacht rule):
 			now the item is on the built-in table;
 		otherwise if the item is essential:
 			now the item is in Brock's Stateroom;
-		otherwise if the item is some pots or the item is a pot:
+		otherwise if the item is the plural-pots or the item is a pot:
 			now the item is on the galley stove;
 		otherwise:
 			let the target be a random drawer which is part of your bed;
