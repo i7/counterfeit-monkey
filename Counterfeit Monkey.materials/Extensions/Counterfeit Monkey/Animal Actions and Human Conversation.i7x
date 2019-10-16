@@ -97,10 +97,10 @@ An exit attempt rule for a person (called exiter):
 
 Section 3 - Ushering animals and people on and off dais and synthesizer
 
-Understand "usher [someone] on/onto/up/into/in [something]" as ushering it onto. Ushering it onto is an action applying to two things.
+Understand "usher [someone] onto/on/up/into/in [something]" as ushering it onto. Ushering it onto is an action applying to two things.
 
 Understand the command "lead" as "usher".
-Understand "push [someone] onto/into [something]" as ushering it onto.
+Understand "push [someone] onto/into/on/to [something]" as ushering it onto.
 
 Understand "usher [someone] off/from [something]" as ushering it off. Ushering it off is an action applying to two things.
 
@@ -108,7 +108,9 @@ Understand "usher [someone] down from [something]" as ushering it off.
 Understand "usher [someone] out of [something]" as ushering it off.
 Understand "push [someone] down from [something]" as ushering it off.
 Understand "push [someone] out of [something]" as ushering it off.
-Understand "push [someone] off [something]" as ushering it off.
+Understand "push [someone] off/from [something]" as ushering it off.
+Understand "take [someone] from [something]" as ushering it off.
+Understand "get [someone] from [something]" as ushering it off.
 
 Definition: A thing is synth-like if it is the programmable dais or it is the synthesizer or it is the cryptolock or it is the t-inserter or it is the spinner.
 
@@ -148,6 +150,9 @@ Carry out ushering someone off something:
 	now the noun is in the location.
 
 Does the player mean ushering the player onto something:
+	it is very unlikely.
+
+Does the player mean ushering someone onto something which is not enterable:
 	it is very unlikely.
 
 Instead of ushering the player onto something:
