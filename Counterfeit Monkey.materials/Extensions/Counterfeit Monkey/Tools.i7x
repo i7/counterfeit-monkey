@@ -963,6 +963,9 @@ This is the spinner-turning rule:
 		set pronouns from the chosen article;
 		now the chosen article is marked-visible;
 		now X is marked invisible;
+		if the chosen article is a person and the chosen article is on the spinner:
+			say "[The chosen article] [get] down from the sculpture. ";
+			move the chosen article to location;
 	otherwise:
 		if looking:
 			say "[Regarding the first thing held by the spinner][They] [do] not change, however. ";
