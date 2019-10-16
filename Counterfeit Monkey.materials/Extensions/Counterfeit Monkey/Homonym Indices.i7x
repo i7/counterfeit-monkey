@@ -165,7 +165,7 @@ The portico has homonym index 160.
 A pot has homonym index 161.
 An alterna-pot has homonym index 162.
 A pot-of-yogurt has homonym index 163.
-Some plural-pots has homonym index 164.
+The plural-pots have homonym index 164.
 A power chord has homonym index 165.
 A prickly-pear has homonym index 166.
 A projector-switch has homonym index 167.

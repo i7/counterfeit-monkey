@@ -65,6 +65,7 @@ A pit-hole is fake. [K141_pit_hole]
 A plural-tents is fake. [K167_plural_tents]
 A pot is fake. [K142_pot]
 An alterna-pot is fake.
+The plural-pots are fake.
 A ram is fake. [K145_ram]
 A rap is fake. [K146_rap]
 A rat is fake. [K147_rat]

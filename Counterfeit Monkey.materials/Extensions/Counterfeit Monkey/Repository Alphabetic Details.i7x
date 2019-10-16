@@ -1719,9 +1719,9 @@ After reading a command (this is the replace plurals rule):
 		replace the matched text with "singular-pa";
 	if the player's command includes "ills" and the plural-ills are enclosed by location:
 		replace the matched text with "plural-ills";
-	if the player's command includes "pots" and there is a plural-pots enclosed by location:
+	if the player's command includes "pots" and the plural-pots are enclosed by location:
 		replace the matched text with "plural-pots";
-	if the player's command includes "pot" and there is a plural-pots enclosed by location:
+	if the player's command includes "pot" and the plural-pots are enclosed by location:
 		if there is a pot enclosed by location or there is an alterna-pot enclosed by location:
 			replace the matched text with "singular-pot".
 
@@ -2423,7 +2423,7 @@ Understand "singular-pot" as a pot.
 
 The printed name of an alterna-pot is "pot". Understand "pot" or "marijuana" or "mary jane" or "mj" or "weed" or "dope" or "drugs" or "singular-pot" as the alterna-pot. The description of the alterna-pot is "An ounce or so of weed. I'm afraid I can't judge the quality of the product." The indefinite article of alterna-pot is "some".
 
-The description of some plural-pots is "They're a selection of heavy, high-quality stainless steel cooking pots, like the ones my mother has at home." The heft of some plural-pots is 3. The printed name of some plural-pots is "pots". Understand "pots" or "pot" as some plural-pots.
+Some plural-pots are a plural-named open container. The description of the plural-pots is "They're a selection of heavy, high-quality stainless steel cooking pots, like the ones my mother has at home." The heft of the plural-pots is 3. The printed name of the plural-pots is "pots". Understand "pots" or "pot" as the plural-pots.
 
 The description of the potass is "Potassium, appearing under its older pharmaceutical abbreviation. It's a dull silverish metal whose surface rapidly oxidizes in the atmosphere. Beware dropping it in water." The indefinite article is "some".
 
