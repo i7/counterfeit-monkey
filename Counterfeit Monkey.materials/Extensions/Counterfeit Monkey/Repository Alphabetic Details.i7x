@@ -569,7 +569,7 @@ Instead of smelling a carp:
 	say "[We] have at least produced a fresh fish, rather than a rotten one: consider yourself lucky."
 
 [carpi]
-The description of the carpi is "Small, irregularly-shaped bones, taken from the hand of a human skeleton. They look as though they ought to be used in divination; why else would anyone keep them around?"
+The description of some carpi is "Small, irregularly-shaped bones, taken from the hand of a human skeleton. They look as though they ought to be used in divination; why else would anyone keep them around?"
 
 [CD]
 The description of the CD is "To judge by the label, it is one of King Crimson's longer works."
@@ -1223,7 +1223,7 @@ Test ibug with "tutorial off / autoupgrade / wave p-remover at pill / wave l-rem
 
 The ice-wig japes are an r-abstract thing. The printed name is "ice wig japes". Understand "ice wig" as the ice-wig japes. The description is "It displays, in miniature, some kind of comedy routine involving a set of ice skaters passing back and forth a huge wig also made of solid ice, which they take it in turns to wear (no doubt uncomfortably) over their caps."
 
-The plural-ills are r-abstract. The description of the plural-ills is "They manifest as little balls of malevolence, like the critters that flew out of Pandora's box in a children's illustration." The printed name of the plural-ills are "ills". Understand "ills" as the plural-ills.
+The plural-ills are r-abstract. The description of the plural-ills is "They manifest as little balls of malevolence, like the critters that flew out of Pandora's box in a children's illustration." The printed name of the plural-ills are "ills". Understand "ills" or "ill" as the plural-ills.
 
 An ill is r-abstract. The description of an ill is usually "It manifests as a little ball of malevolence, like a palm-sized thundercloud. It looks like it's a generic item from phrases like 'to wish someone ill,' which is a mercy; I don't think I would have liked manifesting illness, even abstractly.
 
@@ -1704,26 +1704,37 @@ Instead of taking the oyster turd:
 
 Section 9 - Pa
 
-The description of a pa is "He's a Norman Rockwell figure: gruff, upstanding, honest, not a big talker. Doesn't actually come with a child attached, but it stands to reason he would have a large-ish brood of them." Understand "figure" or "man" or "guy" or "gentleman" or "singular-pa" as the pa.
+The description of a pa is "He's a Norman Rockwell figure: gruff, upstanding, honest, not a big talker. Doesn't actually come with a child attached, but it stands to reason he would have a large-ish brood of them." Understand "figure" or "man" or "guy" or "gentleman" or "pa-singular" as the pa.
 	The scent-description of a pa is "shaving cream".
 	The greeting of a pa is "'Hello there, young lady,' says the pa."
 
 Rule for writing a paragraph about a pa (called item):
-	say "The pa you summoned is standing nearby, looking slightly confused.[if there is a mentionable unmentioned thing which is not item in location][line break][end if]";
-	now item is mentioned.
+	say "[The item] you summoned is standing nearby, looking slightly confused";
+	let N be the number of pas in location;
+	if N is 2:
+		say ". Next to him is another pa";
+	otherwise:
+		if N is greater than 2:
+			say ". Next to him are [N in words] other pas";
+	now N is the number of plural-pas in location;
+	if N is greater than 1:
+		say ". Next to him are [N in words] entire groups of pas, standning separate";
+	otherwise:
+		if N is 1:
+			say ". Next to him is a group of pas, standning separate";
+	now every plural-pas in location is mentioned;
+	now every pa in location is mentioned;
+	say ".[paragraph break]".
 
 After reading a command (this is the replace plurals rule):
 	if the player's command includes "pas" and there is a plural-pas enclosed by location:
 		replace the matched text with "plural-pas";
 	if the player's command includes "pa" and there is a plural-pas enclosed by location and there is a pa enclosed by location:
-		replace the matched text with "singular-pa";
-	if the player's command includes "ills" and the plural-ills are enclosed by location:
-		replace the matched text with "plural-ills";
-	if the player's command includes "pots" and the plural-pots are enclosed by location:
-		replace the matched text with "plural-pots";
-	if the player's command includes "pot" and the plural-pots are enclosed by location:
-		if there is a pot enclosed by location or there is an alterna-pot enclosed by location:
-			replace the matched text with "singular-pot".
+		replace the matched text with "pa-singular";
+	if the player's command includes "tents" and there are some plural-tents enclosed by location:
+		replace the matched text with "plural-tents";
+	if the player's command includes "tent" and there are some plural-tents enclosed by location and there is a tent enclosed by location:
+		replace the matched text with "tent-singular";
 
 Instead of subject-asking when the current interlocutor is a pa:
 	say "'Huh,' he says, in that gruff pre-occupied way of his."
@@ -1733,7 +1744,6 @@ Instead of kissing the pa:
 
 Instead of attacking the pa:
 	say "If it came to a fight, he would win."
-
 
 Report involuntarily-dropping a pa:
 	say "[The noun] is very heavy, and winds up (before his transformation is complete) stepping on our feet, and then scrambling away (with apologies)." instead.
@@ -1747,21 +1757,35 @@ topic	stuff	setting
 "pas"	{ secret-plans, soap, tub }	Roget Close
 "pa"	{ secret-plans, soap, tub }	Roget Close
 
-The description of some plural-pas is "A whole fleet of gruff, upstanding, fatherly men." The printed name of a plural-pas is "pas". Understand "pas" or "pa" as the plural-pas.
+The description of some plural-pas is "A whole fleet of gruff, upstanding, fatherly men." The printed name of a plural-pas is "pas". Understand "pas" or "pa" or "group" or "groups" as the plural-pas.
 	The scent-description of some plural-pas is "shaving cream".
 	The greeting of some plural-pas is "'Hello there, young lady,' one of them replies."
 
 Rule for writing a paragraph about some plural-pas (called item):
-	say "The pas you summoned are standing nearby, looking slightly confused.[if there is a mentionable unmentioned thing which is not item in location][line break][end if]";
-	now item is mentioned.
+	say "[The item] you summoned are standing nearby, looking slightly confused";
+	let N be the number of plural-pas in location;
+	if N is 2:
+		say ". Next to them is another group of pas";
+	now N is the number of pas in location;
+	if N is greater than 1:
+		say ". Next to them are [N in words] single pas, standning separate";
+	otherwise:
+		if N is 1:
+			say ". Next to them is a single pa, standning separate";
+	now every plural-pas in location is mentioned;
+	now every pa in location is mentioned;
+	say ".[paragraph break]".
+
+Rule for printing the plural name of plural-pas:
+	say "groups of pas".
 
 Instead of subject-asking when the current interlocutor is a plural-pas:
 	say "'Huh,' one of them says, in a gruff pre-occupied way."
 
-Instead of kissing the plural-pas:
+Instead of kissing plural-pas:
 	say "[one of][We] plant a kiss on the slightly stubbled cheek of one of them. He reddens.[or][We] lean in for another, but they dodge.[or]Would you take off[ense] if I mentioned I find this all a bit uncomfortable?[or]They clearly do not want our girlish affections.[stopping]".
 
-Instead of attacking the plural-pas:
+Instead of attacking plural-pas:
 	say "If it came to a fight, they would win easily."
 
 Report involuntarily-dropping plural-pas:
@@ -3835,9 +3859,12 @@ The description of an alterna-tear is "A piece of cloth with a hole torn right t
 
 [A fake-ten is r-abstract. The heft of a fake-ten is 0. The description of a fake-ten is usually "The concept of ten is here represented by [one of]the letter X[or]the digits 1 and 0[or]the digit A[or]an Olympic judge holding up a scorecard[at random]." Understand "ten" as a fake-ten. The printed name of a fake-ten is "ten".]
 
-The description of a tent is usually "It's one of those round pup tents, made of [one of][primary-color][or][secondary-color][at random] rip-stop nylon, big enough to sleep one diagonal adult or two children. There's a window of netting mesh so that it's possible to see inside." The tent is usually transparent openable enterable.
+The description of a tent is usually "It's one of those round pup tents, made of [one of][primary-color][or][secondary-color][at random] rip-stop nylon, big enough to sleep one diagonal adult or two children. There's a window of netting mesh so that it's possible to see inside." The tent is usually transparent openable enterable. Understand "tent-singular" as a tent.
 
 The printed name of the plural-tents is "tents". Understand "tents" as the plural-tents. The description of some plural-tents is usually "They're half a dozen identical A-line tents in olive-drab, looking like a temporary encampment from a 20th century war." A plural-tents is usually plural-named transparent openable enterable.
+
+Rule for printing the plural name of plural-tents:
+	say "groups of tents".
 
 The description of the tepal is "It appears to be the petal from a tulip (or perhaps tulips don't have petals, properly speaking?). The col[our]ation is vivid and baroque, lush impenetrable black streaked with red, like a love note from Amsterdam."
 
