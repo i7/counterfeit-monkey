@@ -1710,18 +1710,18 @@ The description of a pa is "He's a Norman Rockwell figure: gruff, upstanding, ho
 
 Rule for writing a paragraph about a pa (called item):
 	say "[The item] you summoned is standing nearby, looking slightly confused";
-	let N be the number of pas in location;
-	if N is 2:
+	let N be the number of pas in location - 1;
+	if N is 1:
 		say ". Next to him is another pa";
 	otherwise:
-		if N is greater than 2:
+		if N is greater than 1:
 			say ". Next to him are [N in words] other pas";
-	now N is the number of plural-pas in location;
-	if N is greater than 1:
-		say ". Next to him are [N in words] entire groups of pas, standning separate";
+	let P be the number of plural-pas in location;
+	if P is greater than 1:
+		say ". Next to [if N > 1]them[otherwise]him[end if] are [P in words] entire groups of pas, standning separate";
 	otherwise:
-		if N is 1:
-			say ". Next to him is a group of pas, standning separate";
+		if P is 1:
+			say ". Next to [if N > 1]them[otherwise]him[end if] is a group of pas, standning separate";
 	now every plural-pas in location is mentioned;
 	now every pa in location is mentioned;
 	say ".[paragraph break]".
@@ -1757,7 +1757,7 @@ topic	stuff	setting
 "pas"	{ secret-plans, soap, tub }	Roget Close
 "pa"	{ secret-plans, soap, tub }	Roget Close
 
-The description of some plural-pas is "A whole fleet of gruff, upstanding, fatherly men." The printed name of a plural-pas is "pas". Understand "pas" or "pa" or "group" or "groups" as the plural-pas.
+The description of some plural-pas is "A whole fleet of gruff, upstanding, fatherly men." The printed name of a plural-pas is "pas". Understand "pas" or "pa" or "group" or "groups" or "fleet" as the plural-pas.
 	The scent-description of some plural-pas is "shaving cream".
 	The greeting of some plural-pas is "'Hello there, young lady,' one of them replies."
 
