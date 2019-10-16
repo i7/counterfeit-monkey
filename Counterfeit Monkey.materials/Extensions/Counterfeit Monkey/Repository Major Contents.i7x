@@ -31,7 +31,7 @@ A bot is a kind of thing.
 A generic-cap is a kind of floppy wearable thing.
 An alterna-cap is a kind of thing.
 A carp is a kind of thing. [not "a kind of animal" because you get a dead carp]
-Some carpi is a kind of thing.
+Some carpi are a kind of plural-named thing.
 A cat is a kind of neuter animal.
 [A car is a kind of vehicle.] [ These are defined in their own section, above, because so complicated.]
 A cart is a kind of vehicle.
@@ -74,7 +74,6 @@ A pi-object is a kind of thing. ["pi"]
 A pit is a kind of thing.
 A pit-hole is a kind of container. The printed name of a pit-hole is "pit".
 A pot is a kind of container.
-Some plural-pots are a kind of container.
 An alterna-pot is a kind of vegetable.
 A Ra is a kind of man.
 A ram is a kind of neuter animal.
