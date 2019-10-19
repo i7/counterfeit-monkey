@@ -357,10 +357,10 @@ Check waving the letter-remover at something creating the letter-remover:
 	say "A safety override mechanism kicks into play before the operation is complete; the device plays a short snickering noise. Evidently its one joy in life is detecting and foiling practical jokes." instead;]
 
 Check waving the letter-remover at something creating a person when the letter-remover device is not creature-enabled:
-	say "[The second noun] flickers and there is a brief image of [a generated object] in [regarding the second noun][their] place, but a legal override kicks in: [a-an letter-remover] is hardware-crippled to prevent generating any living creature." instead;
+	say "[The second noun] [flicker] and there is a brief image of [a generated object] in [regarding the second noun][their] place, but a legal override kicks in: [a-an letter-remover] is hardware-crippled to prevent generating any living creature." instead.
 
 Check waving the letter-remover at something creating an r-abstract thing when the letter-remover device is not upgraded:
-	say "[The second noun] flickers and there is a brief image of [a generated object] in [regarding the second noun][their] place [--] the concept strangely embodied in a physical form [--] before the power gives out[one of]. I guess your device there just isn't tuned to reify abstracts[stopping]." instead;
+	say "[The second noun] [flicker] and there is a brief image of [a generated object] in [regarding the second noun][their] place [--] the concept strangely embodied in a physical form [--] before the power gives out[one of]. I guess your device there just isn't tuned to reify abstracts[stopping]." instead.
 
 Check waving the letter-remover at something creating a car:
 	if the second noun is enclosed by a container (called outer):
