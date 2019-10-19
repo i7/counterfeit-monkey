@@ -29,6 +29,7 @@
 - The player can no longer carry created creatures past the secretary.
 - Adds responses to attempts to use the trap against the boar and the guards.
 - The boar will now butt the car door open before killing a player trying to hide in a car.
+- The tiptoe and the the bodypart kind of tit now count toward the Igor Rosehip achievement.
 
 ### Parsing
 
@@ -44,9 +45,9 @@
 ### Word repository
 
 - Adds MA, MAMA, ME, PAS (plural pa), PASSKEY, another kind of plural PITS, plural PIT TRAPS, two kinds of CAP (from the carp), a CUP (wovel-rotating the cap), a CPU (anagramming the cup), and a non-liquid kind of TEAR.
-- Fixes the broken plural ILLS and plural POTS that were listed in the code but not possible to create.
-- Adds responses to attempts to make IN, COP, COCKPITS, CARTS, MAYAS, PITAS, PETS, SINK RAIN, INK DRAIN, SIN DRAIN, INK TAP, and SIN TAP.
-- Creating SCREE, SORD, TOMS, ROCK BAND, CAT ARMY or COMPLICIT SHARK no longer ends the game. This makes it possible to create some previously unreachable objects, such as YAM CART and TOMCATS.
+- Fixes the broken plural ILLS and plural POTS that were listed in the code but impossible to create.
+- Adds responses to attempts to make ANTS, IN, COP, COCKPITS, CARTS, MAYAS, PITAS, PETS, SINK RAIN, INK DRAIN, SIN DRAIN, INK TAP, and SIN TAP.
+- Creating CAT ARMY, COMPLICIT SHARK SCREE, SORD, TOMS, RIG, or ROCK BAND no longer ends the game. This makes it possible to create some previously unreachable objects, such as YAM CART and TOMCATS.
 - Creating TILLS does end the game, however, saving us from implementing plural TOLLS  and TELLS.
 - The joke responses to attempting to synthesize ROCK and ROLL, KEY-LIME and PI, SILL and CATE, and PAN and EAR now work when using the programmable dais as well as the synthesizer.
 
