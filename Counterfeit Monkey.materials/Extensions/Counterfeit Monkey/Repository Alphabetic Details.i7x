@@ -2840,7 +2840,7 @@ Instead of turning the fishing-reel:
 	say "[We] crank the reel a few times, but as it's not attached to a line, nothing very interesting results."
 
 A rig is a device.
-The heft of the rig is 10.
+The heft of the rig is 8.
 The initial appearance is "A rig is set up here[if the rig is lit], lighting the vicinity[end if]."
 The description of the rig is "A whole collection of lighting units on poles and stands."
 
