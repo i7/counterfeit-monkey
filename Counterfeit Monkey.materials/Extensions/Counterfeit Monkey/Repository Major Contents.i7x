@@ -366,7 +366,7 @@ The repository contains a rodeo beaker.
 
 [farmer]
 
-The repository contains a fame. [Actually producing this ends the game.]
+[The repository contains a fame.] [Actually producing this ends the game.]
 
 [fossil]
 

@@ -715,7 +715,7 @@ The era has hash code 131089.
 The ermine has hash code 143632.
 [The fake-bus has hash code 1310722.] [I1524_fake_bus]
 The fake-punt has hash code 1613824. [I1868_fake_punt]
-The fame has hash code 4145. [I1674_fame]
+[The fame has hash code 4145.] [I1674_fame]
 The fancy locks have hash code 17067045. [I1035_fancy_locks]
 The farmer has hash code 135217.
 The farmer's stall has hash code 923697.

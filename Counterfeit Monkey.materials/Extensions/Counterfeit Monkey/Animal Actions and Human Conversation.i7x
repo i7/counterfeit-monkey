@@ -1492,8 +1492,8 @@ where there seems a car is an unlisted questioning quip. It assumes car-needed.
 	It quip-supplies the farmer.
 	[Every car is mentioned by where there seems a car.]
 
-Instead of waving letter-remover at farmer creating fame:
-	say "[The second noun] flickers and there is a brief image of [a generated object] in [regarding the second noun][their] place [--] the concept strangely embodied in a physical form [--] before the power gives out.[paragraph break]";
+Instead of waving letter-remover at farmer when the current setting of the letter-remover is "r":
+	say "[The second noun] flickers and there is a brief image of fame in [regarding the second noun][their] place [--] the concept strangely embodied in a physical form [--] before the power gives out.[paragraph break]";
 	say "'Young lady, you just bought yourself a long, long jail term,' says the farmer. 'What, did you think I wouldn't notice what you just tried to do?'
 
 I open my mouth to try to talk him out of it, but his thumb has already hit speed dial. I guess when your profession places you at this kind of risk, you tend to be ready for trouble.";

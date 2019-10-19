@@ -933,7 +933,7 @@ The era is r-abstract. The description of the era is "Across an imaginary screen
 
 Section 6 - F through H
 
-A fame is a thing. The indefinite article is "some". It is r-abstract. The description is "It looks like an enormous star in twinkle lights." [The player in fact should never be able to make this, because the farmer and stall should clear out by the time the player has r-abstract abilities.]
+[A fame is a thing. The indefinite article is "some". It is r-abstract. The description is "It looks like an enormous star in twinkle lights."] [The player in fact should never be able to make this, because the farmer and stall should clear out by the time the player has r-abstract abilities.]
 
 The initial appearance of the filing cabinet is "A filing cabinet stands in the corner." Understand "files" or "file" as the filing cabinet. The heft of the filing cabinet is 8. The description of the filing cabinet is "There are numerous files, and they are organized chronologically, so that it's possible to look up a specific year. They appear to begin in 1942."
 

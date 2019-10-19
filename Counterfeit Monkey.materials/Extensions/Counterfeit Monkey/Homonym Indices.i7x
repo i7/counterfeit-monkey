@@ -574,7 +574,7 @@ The era has homonym index 570.
 The ermine has homonym index 571.
 [The fake-bus has homonym index 572.]
 The fake-punt has homonym index 573.
-The fame has homonym index 574.
+[The fame has homonym index 574.]
 The fancy locks has homonym index 575.
 The farmer has homonym index 576.
 The farmer's stall has homonym index 577.
