@@ -1125,7 +1125,7 @@ Understand "honk" or "honk at [text]" as a mistake ("[if the player is not in a 
 
 Understand "protest" or "join protest" or "picket" as a mistake ("If I thought you could change Atlantis that way, I'd be on board. But I've given up on social action long since.").
 
-A car is a kind of vehicle. A car is usually transparent. The heft of a car is 7. The flexible appearance of a car is "".
+A car is a kind of vehicle. A car is usually transparent. The heft of a car is 8. The flexible appearance of a car is "".
 	The description of a car is "It is little larger than a toy, but that is what you want when driving on the streets around here. Any substantial vehicle wouldn't fit down the winding drives."
 	The introduction is "Here is how my mother gets around. She takes a 300 Euro Hermès scarf with an orange border and a pattern of prancing horses. She tosses it in the air. As it falls, she shoots it twice, like a clay pigeon: once to take out the F, the second time for the S. And such a car: buttery leather seats, jaguar lines. If someone asks how she gets such good results, she jokes that it's because of her quality materials.
 
