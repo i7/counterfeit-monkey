@@ -119,7 +119,7 @@ The description of the art is "It's a very plausible copy of [one of]'Still Life
 	The indefinite article is "some".
 	The scent-description of the art is "linseed oil".
 
-An as is a kind of thing. The description of an as is "[one of]It appears to be an as, a [or]A [stopping]Roman coin of very low denomination[one of]. (Your knowledge, not mine. Should I ask how you know such things?)[or].[stopping] It is made of copper and has the letters S C stamped on one side." Understand "as/roman/coin/copper" as an as. The heft of an as is 1. The printed name of an as is "as". Understand "asses" as the plural of as.
+The description of an as is "[one of]It appears to be an as, a [or]A [stopping]Roman coin of very low denomination[one of]. (Your knowledge, not mine. Should I ask how you know such things?)[or].[stopping] It is made of copper and has the letters S C stamped on one side." Understand "as/roman/coin/copper" as an as. The heft of an as is 1. The printed name of an as is "as". Understand "asses" as the plural of as.
 
 Instead of searching or looking under an as:
     say "We inspect both obverse and reverse, but come away none the wiser."

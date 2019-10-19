@@ -23,6 +23,7 @@ An air is a kind of thing.
 An ale is a kind of thing.
 An Amy is a kind of woman.
 An art is a kind of thing.
+An as is a kind of thing.
 A ba is a kind of bird.
 A bat is a kind of neuter animal.
 A bet is a kind of thing.
@@ -582,7 +583,7 @@ In the repository are some iron-pans, a plan, an i-pan,
 	a snap, an alterna-snap, a nap, a splat, a tap, a spit, a spat, a tan, [anagram all]
 	a sap, a slat, [derive anagrams]
 	a pet, a pot, an alterna-pot, a ten-object, an Ent, [vowel rotation]
-	a spa, a pa, some plural-pas, [derive derivatives]
+	a spa, a pa, some plural-pas, an as, [derive derivatives]
 	a salt, a top-toy, a net. [anagram derivatives]
 
 [polling charts]
@@ -729,7 +730,7 @@ The repository contains a mall figurine.
 [soap]
 
 The repository contains a sap, a sap-liquid, a sop,
-	some plural-pas, [spinner]
+	some plural-pas, an as, [spinner]
 	a stop, [t-insert derivatives]
 	a top-toy, [derive insertions]
 	some plural-pots, a spot, a pot, an alterna-pot. [anagram all]
