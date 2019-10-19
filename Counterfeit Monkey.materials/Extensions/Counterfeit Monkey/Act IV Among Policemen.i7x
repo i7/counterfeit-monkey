@@ -166,8 +166,7 @@ Check waving the letter-remover at a drain which is part of a sink when the curr
 
 Check waving the letter-remover at a drain when the current setting of the letter-remover is "d":
 	say "With a pungent whiff of sewage, the drain disappears.[paragraph break]An ominous silence is broken by the deafening noise of shattering porcelain, as [we] [are] crushed under a huge pile of [holder of the second noun]s, raining from [if the location is indoors]some impossible place just below the ceiling[otherwise]the sky[end if].";
-	end the story saying "That could have gone better";
-	stop the action.
+	abide by the game-ending rule.
 
 [After going to Public Convenience:
 	let N be the number of entries in the path so far of the player;

@@ -48,8 +48,7 @@ The dangerous construction rules are an object-based rulebook.
 
 A dangerous construction rule for the ape:
 	say "The ape turns its face towards [us] and takes [us] in dislike. Its dislike involves a lot of hitting and ooking and throwing, and overall turns out quite painful.";
-	end the story saying "That could have gone better";
-	rule succeeds.
+	abide by the game-ending rule.
 
 A dangerous construction rule for a car (called target car) when target car is enclosed by the garage:
 	move target car to location.
@@ -62,8 +61,7 @@ A dangerous construction rule for a sink (called target sink):
 
 A dangerous construction rule for something enormous (called the target):
 	say "Unfortunately, [the target] [are] more than sufficient to bury [us] under [regarding the target][their] bulk.";
-	end the story saying "That could have gone better";
-	rule succeeds;
+	abide by the game-ending rule.
 
 Report waving the letter-remover at something creating the all:
 	abide by the dangerous construction rules for the all.
@@ -76,8 +74,7 @@ A dangerous construction rule for the all:
 		say "it gets through the aa (a spontaneous flow of lava); skips all creatures of the aard- variety thanks to its restraints on living animal-creation; and goes on to the abaca (a large hemp-yielding plant).
 
 Unfortunately, it's done a bit too zealous a job with the aa, and before it gets to whatever comes after abaca, the lava is flowing in our direction.";
-	end the story saying "That could have gone better";
-	rule succeeds;
+	abide by the game-ending rule.
 
 A last dangerous construction rule for a freaky thing (called target) when the current interlocutor is the backpacking girl:
 	try showing the target to the backpacking girl.
@@ -111,8 +108,7 @@ Check waving the letter-remover at the bushes when the current setting of the le
 	say "[random-letter-removal-text]the bushes turns into some buses. There's a whole fleet of them, perhaps every bus on the island. They're dusty: the road to Maiana gets dry in the summer.
 
 Unfortunately, the buses are more than enough to bury [us] under their bulk.";
-	end the story saying "That could have gone better";
-	stop the action.
+	abide by the game-ending rule.
 
 Check waving the letter-remover at the massive plug when the current setting of the letter-remover is "l":
 	say "With a pleasant smell of puppies, the massive plug turns into a massive pug. Its wrinkly, short-muzzled face, curled tail and fine, glossy coat of fawn fur would be adorable if not for the fact that it is large enough to fill the entire room.
@@ -132,8 +128,7 @@ Check waving the letter-remover at the warp when the current setting of the lett
 	say "[random-letter-removal-text]the warp turns into a war. I suppose we were hoping for some abstract conceptual representation, but what we get is loud noises and screaming and a yellowish gas all around, and something screaming down from the sky.
 
 Unfortunately, the first casualty of war is [us].";
-	end the story saying "That could have gone better";
-	stop the action.
+	abide by the game-ending rule.
 
 To say random-letter-removal-text:
 	say "There is [one of]a flash of psychedelic col[our]s[or]a mad-scientist cackle[or]a [pastel-color] cloud[or]a flash of [primary-color] light[or]a smell of anise[or]a distinct spearmint flavor[at random], and ".
@@ -144,38 +139,51 @@ A last check inserting the puns into the T-inserter:
 	say "There is a loud and satisfying pop from the machine as it turns the puns into some punts. An assortment of punts, which by the looks of them are usually driven from the Cambridge end.
 
 Unfortunately, the punts are more than sufficient to bury [us] under their bulk.";
-	end the story saying "That could have gone better";
-	stop the action.
+	abide by the game-ending rule.
 
 A last check inserting the sill into the T-inserter:
 	say "There is a loud and satisfying pop from the machine as it turns the sill into a still. A room-sized installation of glass tubes and boilers. Inside is some kind of illicit moonshine product.
 
 Unfortunately, the still is more than sufficient to bury [us] under its bulk.";
-	end the story saying "That could have gone better";
-	stop the action.
+	abide by the game-ending rule.
+
+A last check inserting the plural-ills into the T-inserter:
+	say "There is a loud and satisfying pop from the machine as it turns the ills into some tills. There is a whole heap of them, mostly old-style cash registers from before they were computerized, but also some more recent sorts, and even one of those clever modern ones that is just a prop for a tablet computer.
+
+Unfortunately, the tills are more than sufficient to bury [us] under their bulk.";
+	abide by the game-ending rule.
 
 [Anagramming gun]
+
+Check shooting the pal with the loaded anagramming gun:
+	say "The gun fires ruggedly into the pal, which shatters and then reforms as the alp. It looks quite a lot like the Eiger from this angle.
+
+Unfortunately, the alp is more than sufficient to bury [us] under its bulk";
+	abide by the game-ending rule.
+
+Check shooting the lap with the loaded anagramming gun:
+	say "The gun fires ruggedly into the lap, which shatters and then reforms as the alp. It looks quite a lot like the Eiger from this angle.
+
+Unfortunately, the alp is more than sufficient to bury [us] under its bulk";
+	abide by the game-ending rule.
 
 Check shooting the litotes with the loaded anagramming gun:
 	say "The gun fires ruggedly into the litotes, which shatters and then reforms as a some of toilets. Enough toilets to stock a public restroom for a thea[ter] or a small sporting venue. And here I was hoping we'd get T.S. Eliot.
 
 Unfortunately, the toilets are more than sufficient to completely bury [us] under their bulk.";
-	end the story saying "That could have gone better.";
-	stop the action.
+	abide by the game-ending rule.
 
 Check shooting the carp with the loaded anagramming gun:
 	say "The gun fires ruggedly into the carp, which shatters and then reforms as PARC. Palo Alto Research Center [--] tons and tons of 1970s-era high-tech plastic, steel, and concrete.
 
 Unfortunately, PARC is more than sufficient to bury [us] under its bulk.";
-	end the story saying "That could have gone better.";
-	stop the action.
+	abide by the game-ending rule.
 
 Check shooting the big lever with the loaded anagramming gun:
 	say "The gun fires ruggedly into the big lever, which shatters and then reforms as a big revel. It's the entirety of a party in true Gatsby style: dancers doing the Charleston, the orchestra to play the music, the waiters to circulate the canapes, some sculptures, a fountain or two, a fireworks display.
 
 Unfortunately, the revel is more than big enough to bury [us] under its bulk.";
-	end the story saying "That could have gone better.";
-	stop the action.
+	abide by the game-ending rule.
 
 Check shooting the shred with the loaded anagramming gun:
 	say "The gun fires ruggedly into the shred, which shatters and then reforms as a herd. Cows, goats, and sheep, all mingled together and furious to be thus manifested without a shepherd.
@@ -257,8 +265,7 @@ A synthesis-override rule for a ram:
 		say "The programmable dais glows vibrant blue for five seconds, leaving behind a rampart. A mass of earthwork and stone.
 
 Unfortunately, the rampart is more than sufficient to bury [us] under its bulk.";
-		end the story saying "That could have gone better";
-		the rule fails.
+		abide by the game-ending rule.
 
 A synthesis-override rule for the cock:
 	if the-other-thing is a pit or the-other-thing is the pit-items or the-other-thing is the alterna-pits:
@@ -274,8 +281,7 @@ Unfortunately, the cockpit is more than sufficient to bury [us] under its bulk."
 			say "The programmable dais glows vibrant blue for five seconds, leaving behind some cockpits. It's a number of tiny rooms lined on every surface with buttons and instrument readouts and warning signs, altimeters and radios and all sorts of other gadgets I don't recognize.
 
 Unfortunately, the cockpits are more than sufficient to bury [us] under their bulk.";
-		end the story saying "That could have gone better";
-		the rule fails.
+		abide by the game-ending rule.
 
 A synthesis-override rule for a cat:
 	if the-other-thing is the members:
@@ -284,8 +290,7 @@ A synthesis-override rule for a cat:
 		say "The programmable dais glows vibrant blue for five seconds, leaving behind some camemberts. A whole stack of French camembert, which would be convenient if we were opening a black market deli, but may be hard to explain under other circumstances. Also not terribly portable.
 
 Unfortunately, the camemberts are more than sufficient to bury [us] under their bulk.";
-		end the story saying "That could have gone better";
-		the rule fails.
+		abide by the game-ending rule.
 
 A synthesis-override rule for a cot:
 	if the-other-thing is the ass:
@@ -294,8 +299,7 @@ A synthesis-override rule for a cot:
 		say "The programmable dais glows vibrant blue for five seconds, leaving behind some coasts. A vast rocky coastline too large to fit in the present confines.
 
 Unfortunately, the coasts are more than sufficient to bury [us] under their bulk.";
-		end the story saying "That could have gone better";
-		the rule fails.
+		abide by the game-ending rule.
 
 A synthesis-override rule for the arc:
 	if the-other-thing is the tic:
@@ -304,8 +308,7 @@ A synthesis-override rule for the arc:
 		say "The programmable dais glows vibrant blue for five seconds, leaving behind an arctic. Enormous, frozen plains graced only by the occasional caribou, polar bear, and oil rig.
 
 Unfortunately, the arctic is more than sufficient to bury [us] under its bulk";
-		end the story saying "That could have gone better";
-		the rule fails.
+		abide by the game-ending rule.
 
 This is the location-check rule:
 	if the location is the Language Studies Seminar Room:
@@ -325,7 +328,10 @@ A synthesis-override rule for an as:
 		say "The programmable dais glows vibrant blue for five seconds, leaving behind some carts. An assortment of carts of different kinds and sizes: from horse-buggies and hospital gurneys to rickshaws and palanquins; some of them with beasts of draught attached, including a full-grown Indian elephant.
 
 Unfortunately, the carts are more than sufficient to bury [us] under their bulk.";
-		end the story saying "That could have gone better";
-		the rule fails.
+		abide by the game-ending rule.
+
+This is the game-ending rule:
+	end the story saying "That could have gone better";
+	the rule fails.
 
 Safety Overrides and Disasters ends here.

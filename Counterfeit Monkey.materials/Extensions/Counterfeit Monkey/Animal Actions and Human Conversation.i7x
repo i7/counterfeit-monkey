@@ -6476,7 +6476,7 @@ At the time when the trap is discovered:
 
 Check going to the Tunnel from Personal Apartment when Portcullis-threat is happening:
 	say "[We] run straight into the guards. [We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
-	end the story saying "That could have gone better"
+	abide by the game-ending rule.
 
 Instead of going to Private Solarium from Personal Apartment when Portcullis-threat is happening or Atlantida-shooing is happening:
 	if the player is hurrying:
@@ -6489,7 +6489,7 @@ Instead of going to Private Solarium from Personal Apartment when Portcullis-thr
 
 When Portcullis-threat ends in capture:
 	say "The guards arrive. [if there is an open trap in location]The first to enter stops just as she is about to step into the trap, and then proceeds to spring it with her rifle. [end if][We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
-	end the story saying "That could have gone better"
+	abide by the game-ending rule.
 
 When Portcullis-threat ends in delay:
 	say "The portcullis should at least slow down anyone coming after us. Though that's only moderately comforting."
@@ -6500,7 +6500,7 @@ Portcullis-breaking ends in stupidity when the portcullis is open. Portcullis-br
 
 When Portcullis-breaking ends in stupidity:
 	say "Reopening the portcullis turns out to have been a poor idea, because it means there's nothing to delay the guards storming down from above. [We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
-	end the story saying "That could have gone better"
+	abide by the game-ending rule.
 
 When Portcullis-breaking ends in final-threat:
 	say "From the other room, the noises make it sound as though someone is using a metal torch to dismantle the portcullis bar by bar.";
@@ -6513,7 +6513,7 @@ When Guard-capture ends in capture:
 	say "Despite the admonishments of the new Atlantida, the Bureau officers who get through the door are not inclined to stop and chat.
 
 [We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
-	end the story saying "That could have gone better"
+	abide by the game-ending rule.
 
 
 Animal Actions and Human Conversation ends here.
