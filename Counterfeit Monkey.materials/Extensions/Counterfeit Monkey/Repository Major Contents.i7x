@@ -534,7 +534,7 @@ In the repository are an earl, a perl, a peal, an ear, a pal, a pea, a par, a pa
 	a tar, a pet, an art, [derive insertions]
 	a pit, [vowel rotation]
 	a tart, an alterna-tart, [insert derivatives]
-	a rale, a rape, a rape-alternate, a leap, a plea, an era, a lap, an alp, an ape, a rap,
+	a rale, a rape, a rape-alternate, a leap, a plea, an era, a lap, [an alp,] an ape, a rap,
 	a tepal, a plain-plate, a rate, a tape, a tap, a rat, [anagram each]
 	an ire, [vowel rotation]
 	a hod, [reverse mode cryptolock on ire]

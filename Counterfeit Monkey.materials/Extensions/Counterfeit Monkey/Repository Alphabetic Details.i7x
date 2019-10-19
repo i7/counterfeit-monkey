@@ -110,7 +110,7 @@ The alterna-letter is an r-abstract thing. The description of the alterna-letter
 
 The description of the airfoil is "A big, awkward metal piece from something; it looks like a propellor blade." The heft of the airfoil is 6.
 
-The heft of the alp is 12. The description of the alp is "It looks quite a lot like the Eiger from this angle."
+[The heft of the alp is 12. The description of the alp is "It looks quite a lot like the Eiger from this angle."]
 
 The armpit is a thing. The description of the armpit is "It's a relatively inoffensive armpit as these things go, but, because detached from the rest of a body, it still looks like something a serial killer would leave around."
 	The scent-description is "deod[our]ant".
