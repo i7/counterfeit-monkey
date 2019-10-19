@@ -337,7 +337,7 @@ The aquarium-closed-sign has homonym index 332.
 The arc has homonym index 333.
 The arcsin has homonym index 334.
 [The arctic has homonym index 335.]
-The ark has homonym index 336.
+[The ark has homonym index 336.]
 The arm has homonym index 337.
 The armband has homonym index 338.
 The armchair has homonym index 339.
@@ -534,7 +534,7 @@ The decaying old wall has homonym index 530.
 The defaced ashlar block has homonym index 531.
 The depluralizing cannon has homonym index 532.
 The diamond-studded collar has homonym index 533.
-The dig has homonym index 534.
+[The dig has homonym index 534.]
 The dim lights has homonym index 535.
 The diminutive affixer has homonym index 536.
 The diorama table has homonym index 537.
@@ -1021,7 +1021,7 @@ The silver platter has homonym index 1016.
 The silver tray has homonym index 1017.
 The sink-collectives has homonym index 1018.
 The skylight has homonym index 1019.
-The slack towel has homonym index 1020.
+[The slack towel has homonym index 1020.]
 The slat has homonym index 1021.
 The slogans has homonym index 1022.
 The small black push-button has homonym index 1023.
@@ -1130,7 +1130,7 @@ The tidy puce coffer has homonym index 1125.
 The tier has homonym index 1126.
 The till has homonym index 1127.
 The tillage has homonym index 1128.
-The tills has homonym index 1129.
+[The tills has homonym index 1129.]
 The tilting-piano has homonym index 1130.
 The tiny black leather boots has homonym index 1131.
 The tiny refrigerator has homonym index 1132.
@@ -1157,7 +1157,7 @@ The tomcats has homonym index 1152.
 The tomes has homonym index 1153.
 The toms has homonym index 1154.
 The tomtit has homonym index 1155.
-The ton has homonym index 1156.
+[The ton has homonym index 1156.]
 The toolkit has homonym index 1157.
 The torc has homonym index 1158.
 The tort has homonym index 1159.
@@ -1189,7 +1189,7 @@ The tuba has homonym index 1184.
 The tubas has homonym index 1185.
 The tube has homonym index 1186.
 The tuck has homonym index 1187.
-The tun has homonym index 1188.
+[The tun has homonym index 1188.]
 The turret-view has homonym index 1189.
 The tv monitor has homonym index 1190.
 The twig has homonym index 1191.

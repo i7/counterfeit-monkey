@@ -121,8 +121,13 @@ Check waving the letter-remover at the lamb when the current setting of the lett
 	say "[random-letter-removal-text]the lamb turns into a lab. A full-sized scientific research laboratory, one of the many owned by Dental Consonants Limited.
 
 Unfortunately, the lab is more than enough to bury [us] under its bulk.";
-	end the story saying "That could have gone better";
-	stop the action.
+	abide by the game-ending rule.
+
+Check waving the letter-remover at the patron when the current setting of the letter-remover is "m" and the player knows mark-known:
+	say "With a distinct whiff of newly sawn planks, Mark turns into an ark. From here, the width of the bow in cubits is hard to guess. It just looks huge, much too huge for the little space it's crammed into…
+
+Unfortunately, the ark is more than sufficient to bury us under its bulk.";
+	abide by the game-ending rule.
 
 Check waving the letter-remover at the warp when the current setting of the letter-remover is "p":
 	say "[random-letter-removal-text]the warp turns into a war. I suppose we were hoping for some abstract conceptual representation, but what we get is loud noises and screaming and a yellowish gas all around, and something screaming down from the sky.
@@ -196,22 +201,39 @@ Check shooting a tram with the loaded anagramming gun:
 	say "The gun fires ruggedly into the tram, which shatters and then reforms as a mart. One of those small markets selling mostly convenience foods and things that don't spoil quickly.
 
 Unfortunately, the mart is more than sufficient to bury [us] under its bulk.";
-	end the story saying "That could have gone better.";
+	abide by the game-ending rule.
+
+Check shooting the wall socket with the loaded anagramming gun:
+	say "The gun fires ruggedly into the wall socket, which shatters and then reforms as the slack towel. Not easy to tell from any other towel, though an argument could be made that it's especially limp and lacking in pile.
+
+Unfortunately, having the towel swapped in for an electrical component starts a small fire, which soon sets off the alarms in the area.";
+	end the story saying "That could have gone quite a lot better";
 	stop the action.
 
 [Cryptolock bucket]
 
 After inserting the ass into the cryptolock when hardness is true and the cryptoswitch is switched on:
-	say "There is a churning noise from within [the cryptolock] and 'zoo' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like giraffes, bison, zebras, elephants, panthers, a polar bear and other charismatic megafauna in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead;
+	say "There is a churning noise from within [the cryptolock] and 'zoo' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like giraffes, bison, zebras, elephants, panthers, a polar bear and other charismatic megafauna in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
 
 After inserting a generic-cup into the cryptolock when hardness is false and the cryptoswitch is switched on:
-	say "There is a churning noise from within [the cryptolock] and 'cop' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like an All-Purpose Officer through the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead;
+	say "There is a churning noise from within [the cryptolock] and 'cop' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like an All-Purpose Officer through the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
+
+After inserting the dog into the cryptolock when hardness is false and the cryptoswitch is switched on:
+	say "There is a churning noise from within [the cryptolock] and 'dig' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like a huge dig. It's a large affair: not child's a dig in the garden or even an archaeological dig undertaken with shovels and picks, but a massive industrial dig, the kind that happens beneath a major American city that didn't have the foresight to put down subways in 1890 when it would have been cheaper.
+
+There's mud and stone and a cylindrical drilling machine five stories high. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
 
 After inserting the pose into the cryptolock when hardness is false and the cryptoswitch is switched on:
-	say "There is a churning noise from within [the cryptolock] and 'pisa' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like a leaning tower through the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead;
+	say "There is a churning noise from within [the cryptolock] and 'pisa' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like a leaning tower through the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
 
 After inserting a tint into the cryptolock when hardness is true and the cryptoswitch is switched on:
-	say "There is a churning noise from within [the cryptolock] and 'ohio' appears in letters of vivid purple smoke. [We] get a confused impression of factories and battleground politics in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead;
+	say "There is a churning noise from within [the cryptolock] and 'ohio' appears in letters of vivid purple smoke. [We] get a confused impression of factories and battleground politics in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
+
+After inserting a tin-can into the cryptolock when hardness is false and the cryptoswitch is switched off:
+	say "There is a churning noise from within [the cryptolock] and 'ton' appears in letters of vivid purple smoke. [We] get a vision of a huge block of concrete in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
+
+After inserting a tan into the cryptolock when hardness is false and the cryptoswitch is switched on:
+	say "There is a churning noise from within [the cryptolock] and 'tun' appears in letters of vivid purple smoke. [We] get a glimpse of a huge vat for wine in the smoke, about 250 gallons worth: the equivalent of three puncheons or four hogsheads or 14 rundlets. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
 
 After inserting the band into the cryptolock when hardness is false and the cryptoswitch is switched on:
 	say "[bund-refusal-text]." instead.

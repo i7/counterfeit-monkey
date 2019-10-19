@@ -345,7 +345,7 @@ The repository contains a multiple dropkick cancan.
 The repository contains a tidy puce coffer.
 
 [dog]
-The repository contains a god and a dig.
+The repository contains a god. [and a dig.]
 
 [dove]
 
@@ -472,7 +472,7 @@ The repository contains an angle bolt.
 [The repository contains a massive pug.]
 
 [Mark]
-The repository contains an ark.
+[The repository contains an ark.]
 
 [meat studded gown]
 The repository contains two-added-nutmegs.
@@ -697,13 +697,13 @@ The repository contains an alterna-shuttle.
 
 The repository contains a signet,	[by the hand of the officer]
 	4 sins, 4 sons, a sun-product, [2 in-objects,] 4 self-objects, 4 sigs,
-	4 stints, 4 tints, 4 TNTs, 4 tin-cans          ["tin"], 4 tits, [t-insert derivatives]
+	4 stints, 4 tints, 4 TNTs, 4 tin-cans ["tin"], 4 tits, [t-insert derivatives]
 	4 stents, 4 tents, 4 ten-objects, 4 tans, 4 plural-tents, [vowel rotation]
 	4 tots, [vowel-rotation]
 	4 nits, [anagram all]
 	4 nets,
-	4 it-objects, [derive anagrams]
-	a ton, a tun. [vowel rotation. Only one needed of each of these because it is game-ending to create successfully.]
+	4 it-objects. [derive anagrams]
+	[a ton, a tun.] [vowel rotation. Only one needed of each of these because it is game-ending to create successfully.]
 	[an Ohio.] [reverse mode cryptolock on tint, only one needed]
 
 [silver chain]
@@ -744,7 +744,7 @@ The repository contains a sap-dispenser and a sop-dispenser.
 
 The repository contains a pill, a sill, an ill, a self-object, a pi-object,
 	some pills, some plural-ills, [anagram, then p-remove]
-	[a still,] a till, some tills,  [t-insert derivatives]
+	[a still,] a till, [some tills,]  [t-insert derivatives]
 	a poll, a toll. [vowel rotation]
 
 [squid]
@@ -812,7 +812,7 @@ The repository contains a wig and a Ben-wig. [twig / bent twig -- the Ben-wig is
 The repository contains a mutual punch.
 
 [wall socket]
-The repository contains a slack towel.
+[The repository contains a slack towel.]
 
 Table of Ultratests (continued)
 topic	stuff	setting

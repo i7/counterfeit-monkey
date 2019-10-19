@@ -471,7 +471,7 @@ The aquarium-closed-sign has hash code 289116. [K2_thing]
 The arc has hash code 131077. [I1578_arc]
 The arcsin has hash code 401669. [I2280_arcsin]
 [The arctic has hash code 655621.] [I2281_arctic]
-The ark has hash code 132097. [I1736_ark]
+[The ark has hash code 132097.] [I1736_ark]
 The arm has hash code 135169. [I1465_arm]
 The armband has hash code 143371. [I2282_armband]
 The armchair has hash code 135557. [I2284_armchair]
@@ -675,7 +675,7 @@ The decaying old wall has hash code 20998493. [I639_decaying_old_wall]
 The defaced ashlar block has hash code 412863. [I613_defaced_ashlar_block]
 The depluralizing cannon has hash code 34793821.
 The diamond-studded collar has hash code 1997085. [I2449_diamond_studded_collar]
-The dig has hash code 328. [I1663_dig]
+[The dig has hash code 328.] [I1663_dig]
 The dim lights has hash code 793032. [I2457_dim_lights]
 The diminutive affixer has hash code 12202297. [I745_diminutive_affixer]
 The diorama table has hash code 678171. [I518_diorama_table]
@@ -1168,7 +1168,7 @@ The silver platter has hash code 3049745. [I939_silver_platter]
 The silver tray has hash code 19794193. [I1104_silver_tray]
 The sink-collectives has hash code 271616. [I995_sink_collectives]
 The skylight has hash code 17567168. [I1001_skylight]
-The slack towel has hash code 5000213. [I2253_slack_towel]
+[The slack towel has hash code 5000213.] [I2253_slack_towel]
 The slat has hash code 788481. [I1882_slat]
 The slogans has hash code 288833. [I359_slogans]
 The small black push-button has hash code 1899655. [I1049_small_black_push_butto]
@@ -1280,7 +1280,7 @@ The tidy puce coffer has hash code 18530620. [I1661_tidy_puce_coffer]
 The tier has hash code 655632. [I1626_tier]
 The till has hash code 526592. [I2202_till]
 The tillage has hash code 526673. [I2402_tillage]
-The tills have hash code 788736. [I2203_tills]
+[The tills have hash code 788736.] [I2203_tills]
 The tilting-piano has hash code 584001. [I1753_tilting_piano]
 The tiny black leather boots have hash code 17722775. [I2430_tiny_black_leather_boo]
 The tiny refrigerator has hash code 17457521. [I933_tiny_refrigerator]
@@ -1307,7 +1307,7 @@ The tomcats has hash code 806917. [I2408_tomcats]
 The tomes has hash code 806928. [I593_tomes]
 The toms has hash code 806912.
 The tomtit has hash code 545024.
-The ton has hash code 548864.
+[The ton has hash code 548864.]
 The toolkit has hash code 544000.
 The torc has hash code 671748.
 The tort has hash code 671744.
@@ -1339,7 +1339,7 @@ The tuba has hash code 1572867.
 The tubas has hash code 1835011.
 The tube has hash code 1572882.
 The tuck has hash code 1573892.
-The tun has hash code 1581056.
+[The tun has hash code 1581056.]
 The turret-view has hash code 1703952. [I614_turret_view]
 The tv monitor has hash code 2781440. [I1047_tv_monitor]
 The twig has hash code 4718912. [I970_twig]

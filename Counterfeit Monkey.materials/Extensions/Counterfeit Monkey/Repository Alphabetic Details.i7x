@@ -85,7 +85,7 @@ The description of the arc is "A bent bow of steel, but more decorative than fun
 
 The arcsin is r-abstract. The description of the arcsin is "It's a simple midair graph: a piece of a sine wave stood on end. There is something deeply pleasing about the structure despite its simplicity, as with almost all mathematical abstracts."
 
-The ark is a vehicle. The heft of the ark is 10. The description of the ark is "From here, the width of the bow in cubits is hard to guess. It just looks huge, much too huge for the little space it's crammed into…". The scent-description of the ark is "newly sawn planks".
+[The ark is a vehicle. The heft of the ark is 10. The description of the ark is "From here, the width of the bow in cubits is hard to guess. It just looks huge, much too huge for the little space it's crammed into…". The scent-description of the ark is "newly sawn planks".]
 
 The arm is a long thing. The description is "A girl's arm, by the look of it, amputated neatly at the shoulder joint. The fingernails are painted shell-pink." Understand "shoulder" or "joint" or "fingernails" or "nails" or "nail" or "wrist" or "elbow" as the arm.
 
@@ -802,9 +802,9 @@ The heft of the daft document is 2. The description of the daft document is "It'
 
 The heft of the dart document is 2. The description of the dart document is "The dart document provides a set of rules and regulations for professional dart competitions, including minimum distance to the board, heft and design of the darts themselves, size and arrangement of the dartboard point areas, and so on."
 
-The heft of the dig is 20. The description of the dig is "It's a large affair: not child's a dig in the garden or even an archaeological dig undertaken with shovels and picks, but a massive industrial dig, the kind that happens beneath a major American city that didn't have the foresight to put down subways in 1890 when it would have been cheaper.
+[The heft of the dig is 20. The description of the dig is "It's a large affair: not child's a dig in the garden or even an archaeological dig undertaken with shovels and picks, but a massive industrial dig, the kind that happens beneath a major American city that didn't have the foresight to put down subways in 1890 when it would have been cheaper.
 
-There's mud and stone and a cylindrical drilling machine five stories high."
+There's mud and stone and a cylindrical drilling machine five stories high."]
 
 The diva is a woman. The description of the diva is "Though I couldn't put a name to her, we both feel as though we've seen her face many times on the sides of many buildings[if the diva wears the meat-gown]. She is wearing glamorous dress decorated with slabs of meat[end if][if the diva wears the bacon chapeau]. On her head is an eye-catching bacon chapeau[end if]."
 
@@ -3187,11 +3187,11 @@ Sanity-check washing a sin:
 Sanity-check entering a sin:
 	say "Entering a state of sin, do you mean? I have the impression you have that covered." instead.
 
-The description of the slack towel is "Not easy to tell from any other towel, though an argument could be made that it's especially limp and lacking in pile."
+[The description of the slack towel is "Not easy to tell from any other towel, though an argument could be made that it's especially limp and lacking in pile."
 
 A dangerous construction rule for the slack towel:
 	say "Unfortunately, having the towel swapped in for an electrical component starts a small fire, which soon sets off the alarms in the area.";
-	end the story saying "That could have gone quite a lot better".
+	end the story saying "That could have gone quite a lot better".]
 
 The slat is a long thing. The description of the slat is "A board of white wood, probably extracted from a fence somewhere."
 
@@ -3926,7 +3926,7 @@ The tier is r-abstract. The description of the tier is "It's represented as a ce
 
 The description of the till is "An old-fashioned cash register with separate keys for half- and quarter-cents: Atlantean currency inflated more slowly than most, and still had absurdly low numbers until we went over to the Euro. Both sides are molded with a graceful female figure holding a cornucopia of goods from land and sea." The till is an openable closed container.
 
-The description of the tills is "There is a whole heap of them, mostly old-style cash registers from before they were computerized, but also some more recent sorts, and even one of those clever modern ones that is just a prop for a tablet computer." The heft of the tills is 10.
+[The description of the tills is "There is a whole heap of them, mostly old-style cash registers from before they were computerized, but also some more recent sorts, and even one of those clever modern ones that is just a prop for a tablet computer." The heft of the tills is 10.]
 
 The tillage is r-abstract. The description of the tillage is "The fleeting images show acres of rolling farmland being worked over in preparation for planting. It looks like more wide-open space than we usually have in one place here on Atlantis. Perhaps the farmland pictured is French or even American."
 
@@ -4032,7 +4032,7 @@ The description of the tome is "Extremely dusty, learned, and virtuous, such tha
 
 The description of the tomtit is "A small bird with some of its markings in black. I don't claim to be expert in these things, and neither, it seems, are you." The tomtit is a bird.
 
-The description of the ton is "A big block of concrete. A fatal big block of concrete, as it turns out." The heft of the ton is 12.
+[The description of the ton is "A big block of concrete. A fatal big block of concrete, as it turns out." The heft of the ton is 12.]
 
 The top-toy is privately-named. The printed name of the top-toy is "top". Understand "top" or "toy" as the top-toy. The description of the top-toy is "One of those painted wooden tops given to small children. The plants and animals on the side are typically Atlantean: an Atlantean miniature donkey, a squid, an olive tree, and a humble chard plant. In fact, each of these is subscribed with a word; these are, respectively, PERSISTENCE, INVENTION, FRUITFULNESS, and RESOURCE."
 
@@ -4250,11 +4250,9 @@ Instead of listening to the tubas:
 
 A tuba is an instrument. The heft of the tuba is 2. The description of the tuba is "I associate instruments like this entirely with band practice misery."
 
-
 The tuck is r-abstract. The description of a tuck is "A neatly-stitched fold in a piece of cloth."
 
-The heft of the tun is 12. The description of the tun is "It's a huge vat for wine, about 250 gallons worth: the equivalent of three puncheons or four hogsheads or 14 rundlets."
-
+[The heft of the tun is 12. The description of the tun is "It's a huge vat for wine, about 250 gallons worth: the equivalent of three puncheons or four hogsheads or 14 rundlets."]
 
 The description of two-added-nutmegs is "The nutmegs do somehow convey an air of superfluity. They're embarrassed. They've made their dish too spicy. They feel ashamed." The printed name of two-added-nutmegs is "two added nutmegs". Understand "two" or "added" or "nutmegs" or "spice" as the two-added-nutmegs.
 
