@@ -2404,6 +2404,9 @@ The description of the plain-plate is "A commemorative plate celebrating the isl
 
 The plea is r-abstract. The plea is noisy. The description of the plea is "A querulous voice is requesting a judge to go leniently on a first off[ense] of using unauthor[ize]d foreign words in public."
 
+Instead of listening to the plea:
+	say "[one of]When listening to it, I must say the plea makes kind of sense[or]The plea goes on like a crying violin[or]The plea actually sounds pretty convincing[cycling]."
+
 The description of the pleat is "A bit of cloth from a schoolgirl's plaid skirt, complete with the stitched-in fold."
 
 Poe is a man. Poe is proper-named. The description is "For a famed author, he looks unhinged. His clothes are shabby, his eyes wild, and he keeps looking around him as though he expects something to jump from the shadows."
