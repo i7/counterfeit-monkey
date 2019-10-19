@@ -3782,7 +3782,7 @@ Instead of searching a tamale:
 Check waving the letter-remover at a tamale when the current setting of the letter-remover is "e":
 	say "[The second noun] doesn't change, which is unsurprising considering a 'tamal' is just a different spelling of the same thing." instead.
 
-The tan is an r-abstract. The heft of a tan is usually 0. The description is usually "The col[our] is the col[our] of bronzed skin as found on the beaches of Maui; a lazy, relaxed, year-round tan.". The scent-description of a tan is usually "coconut oil".
+A tan is an r-abstract. The heft of a tan is usually 0. The description is "The col[our] is the col[our] of bronzed skin as found on the beaches of Maui; a lazy, relaxed, year-round tan.". The scent-description of a tan is "coconut oil".
 
 The description of the tat is "It looks like the end-of-day leftovers from a particularly ill-fav[our]ed yard sale. What's not broken is dirty, and what's not dirty is in terrible taste. There's a mechanical pencil with no lead, and a kiddie pool that leaks; a stained tablecloth that once had a pattern of squid tentacles on it; a bobble-headed doll representing the head player of the Maiana football team thirteen years ago."
 
