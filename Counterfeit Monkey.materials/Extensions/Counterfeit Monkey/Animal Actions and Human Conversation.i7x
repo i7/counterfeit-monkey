@@ -253,7 +253,7 @@ Carry out entering a vehicle:
 	now pursuing-state is false.
 
 Check a fake person entering a vehicle when the heft of the person asked is greater than 3:
-	say "[The person asked] makes an effort to get in, but does not remotely fit.";
+	say "[The person asked] [make] an effort to get in, but [do] not remotely fit.";
 	stop the action.
 
 Check a fake person going from a road to a road when the protesters are not off-stage:
