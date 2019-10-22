@@ -124,15 +124,31 @@ A first check ushering someone onto something when the holder of the noun is the
 	otherwise:
 		try putting the noun on the second noun instead.
 
-Check ushering someone onto something when the second noun is not the synthesizer and the second noun is not the programmable dais and the second noun is not the spinner:
+Check ushering someone onto the cryptolock:
 	if the noun is portably-small:
-		if the second noun is a container:
-			try inserting the noun into the second noun instead;
-		otherwise:
-			try putting the noun on the second noun instead;
+		try inserting the noun into the second noun instead;
 	otherwise:
-		say "[The noun] [seem] unwilling to get [in-on the second noun][if the second noun is the t-inserter], and it would be near impossible for [regarding the noun][them] to get up there even if [they] wanted to[end if][if the second noun is the cryptolock], and [regarding the noun][they] wouldn't fit even if [they] wanted to[end if].";
-		stop the action.
+		say "[The noun] [seem] unwilling to get into the bucket, and [they] wouldn't fit even if [they] wanted to.";
+	stop the action.
+
+Carry out ushering someone onto the t-inserter:
+	if the t-inserter is not empty:
+		let target be the first thing held by t-inserter;
+		if Brock is not in location:
+			say "[The target] [are] in there already.";
+			stop the action;
+		otherwise:
+			say "'[one of]Here, [the target] [are] in your way[or]Let me get that for you[or]Here[or]I've got that[at random].' [run paragraph on]";
+			try Brock taking the target;
+			if Brock is carrying the target:
+				try Brock dropping the target;
+			otherwise:
+				say "Brock tries to remove [the target] from the T-inserter for you, but fails.";
+				stop the action;
+	now the player carries the noun;
+	say "[random-ushering-phrase] into [the second noun]. [run paragraph on]";
+	try inserting the noun into the t-inserter;
+	stop the action.
 
 Carry out ushering someone onto something:
 	if the second noun is not empty and the carrying capacity of the second noun is 1:
