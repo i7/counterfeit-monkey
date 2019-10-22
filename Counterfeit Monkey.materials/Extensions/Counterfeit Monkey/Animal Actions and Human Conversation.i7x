@@ -124,6 +124,16 @@ A first check ushering someone onto something when the holder of the noun is the
 	otherwise:
 		try putting the noun on the second noun instead.
 
+Check ushering someone onto something which is not synth-like:
+	if the noun is portably-small:
+		if the second noun is a container:
+			try inserting the noun into the second noun instead;
+		otherwise:
+			try putting the noun on the second noun instead;
+	otherwise:
+		say "[The noun] [seem] unwilling to get [in-on the second noun].";
+		stop the action.
+
 Check ushering someone onto the cryptolock:
 	if the noun is portably-small:
 		try inserting the noun into the second noun instead;
