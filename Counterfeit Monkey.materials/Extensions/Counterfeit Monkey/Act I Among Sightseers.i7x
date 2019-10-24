@@ -1279,7 +1279,7 @@ Instead of listening to the Screening Room:
 
 The film screen is scenery in the screening room. Understand "show" or "movie" as the film screen. The printed name is "screen". The description is "[if the reel is in the projector and the projector is switched on]The screen flickers black and white[otherwise if the projector is switched on]The white beam from the projector illuminates it, but no movie is showing[otherwise]The screen is empty: nothing is yet being shown. It is also very very small by modern cinema standards[end if]."
 
-The seats are an enterable supporter in the Screening Room. The seats are scenery and plural-named. The description is "In an age of stadium seating and theater chairs that resemble home recliners, these don't even have the usual old-fashioned red plush. They are hard wooden seats such as might be found in a puritanical schoolroom." Understand "row" or "rows" or "seat" or "seating" or "chairs" or "chair" as the seats.
+The seats are an enterable supporter in the Screening Room. The seats allow seated, standing, and reclining. The posture of the seats is seated. The seats are scenery and plural-named. The description is "In an age of stadium seating and theater chairs that resemble home recliners, these don't even have the usual old-fashioned red plush. They are hard wooden seats such as might be found in a puritanical schoolroom." Understand "row" or "rows" or "seat" or "seating" or "chairs" or "chair" as the seats.
 	Instead of looking under the seats when the backpack is in the Screening Room:
 		say "I've already located the backpack, right where I left it."
 	The scent-description of the seats is "a mixture of wood lacquer and popcorn grease".
