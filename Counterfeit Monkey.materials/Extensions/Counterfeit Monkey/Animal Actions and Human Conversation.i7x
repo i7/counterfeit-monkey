@@ -263,6 +263,26 @@ Report something exiting when the actor is a bird and the container exited from 
 
 Test kayakcat with "autoupgrade / wave s-remover at shackle / wave l-remover at bollard / wave d-remover at board / wave b-remover at boar / get oar / get in kayak / launch kayak / z" holding the tomcat in the Abandoned Shore.
 
+Rule for reaching outside something synth-like:
+	unless listening:
+		let H be the holder of the player;
+		while H is not the location:
+			try exiting;
+			if the holder of the player is H:
+				say "[We] cannot reach [regarding the noun][them] from [the holder of the player].";
+				deny access;
+			now H is the holder of the player;
+		make no decision.
+
+[The above rule somehow does not work for the spinner, probably something to do with it being part of a door]
+An accessibility rule when the player is on the spinner:
+	if listening:
+		make no decision;
+	unless the touch-goal is enclosed by the player or the touch-goal is the spinner or the touch-goal is the spinner-gate:
+		if the touch-goal must be touched:
+			try exiting;
+			make no decision.
+
 Section 3 - Animal Following
 
 [Carry out entering the line:
@@ -273,7 +293,7 @@ Section 3 - Animal Following
 		try the traveler entering the noun;
 	now pursuing-state is false.]
 
-Carry out entering a vehicle:
+Carry out entering a vehicle in location:
 	now pursuing-state is true;
 	rapidly make followers follow into noun;
 	now pursuing-state is false.
@@ -293,9 +313,10 @@ Rule for writing a paragraph about a fake person which is in a car (called targe
 	say "Sitting in [the target] [is-are the list of fake people *in the target][if the number of fake people in the target is greater than 1], like players in a Marx Brothers movie[end if]. [paragraph break]"
 
 Carry out exiting:
-	now pursuing-state is true;
-	rapidly make followers try exiting from the container exited from;
-	now pursuing-state is false.
+	unless the container exited from is synth-like:
+		now pursuing-state is true;
+		rapidly make followers try exiting from the container exited from;
+		now pursuing-state is false.
 
 Carry out going:
 	now pursuing-state is true;
