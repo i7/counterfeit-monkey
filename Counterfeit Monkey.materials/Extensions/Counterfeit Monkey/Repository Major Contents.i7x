@@ -731,7 +731,7 @@ The repository contains a mall figurine.
 
 The repository contains a sap, a sap-liquid, a sop,
 	some plural-pas, an as, [spinner]
-	a stop, [t-insert derivatives]
+	a stop, some pat-items, [t-insert derivatives]
 	a top-toy, [derive insertions]
 	some plural-pots, a spot, a pot, an alterna-pot. [anagram all]
 
