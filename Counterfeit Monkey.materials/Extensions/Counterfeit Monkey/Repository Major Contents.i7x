@@ -170,7 +170,7 @@ The repository contains Amy, an arm,
 	a ram, a yam, a May, a ma, a Mary, [anagram]
 	a tram, [t-insert]
 	[a mart,] [anagram]
-	an art, a mat, a ma, a mama, [derive]
+	an art, a mat, a mama, [derive]
 	a tart, an alterna-tart, [t insert]
 	a rat, a tar. [anagram]
 
