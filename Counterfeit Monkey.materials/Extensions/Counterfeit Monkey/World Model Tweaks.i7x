@@ -197,10 +197,11 @@ A first accessibility rule (this is the go to location rule):
 	make no decision.
 
 Rule for reaching outside a car (called C) (this is the can't reach outside car rule):
-	try exiting;
-	if the player is in C:
-		deny access;
-	make no decision.
+	unless listening:
+		try exiting;
+		if the player is in C:
+			deny access;
+		make no decision.
 
 To decide what object is the touch-goal:
 	(- (untouchable_object) -).
