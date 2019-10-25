@@ -15,15 +15,16 @@
 - The player will be allowed into Arbot Maps & Antiques even if the appointment card is inside the backpack.
 - When a fuelled car is turned into something else, it will still be fuelled when re-created.
 - The monocle will now work properly when examining things that can be written on.
+- It was impossible to enter a car if there was a noisy thing outside it.
 
 ### Gameplay changes
 
 - Sap and soap can be collected from the dispenser by placing a suitable container below it. Also adds a sop dispenser for symmetry.
 - It is no longer possible to create a car inside small containers, with some exceptions.
-- The mechanic can make a second broken car functional.
 - The roc will protect the player from the boar.
+- The mechanic can now fix a second broken car.
 - The mechanic now responds to attempts to fix a car with poppy oil.
-- The player can now get on the spinner sculpture.
+- The player can now get on the spinner sculpture and enter the synthesizer and T-inserter machine, but not actually get changed by them.
 - The tot and tots can be picked up.
 - Creatures no longer leave supporters or containers randomly.
 - The player can no longer carry created creatures past the secretary.
@@ -49,19 +50,22 @@
 - Adds responses to attempts to make ANTS, IN, COP, COCKPITS, CARTS, MAYAS, PITAS, PETS, SINK RAIN, INK DRAIN, SIN DRAIN, INK TAP, and SIN TAP.
 - Creating CAT ARMY, COMPLICIT SHARK SCREE, SORD, TOMS, RIG, or ROCK BAND no longer ends the game. This makes it possible to create some previously unreachable objects, such as YAM CART and TOMCATS.
 - Creating TILLS does end the game, however, saving us from implementing plural TOLLS  and TELLS.
+- The TRAM is now a portable model, so that the TRAMCAR and the TRAMPET can be created.
 - The joke responses to attempting to synthesize ROCK and ROLL, KEY-LIME and PI, SILL and CATE, and PAN and EAR now work when using the programmable dais as well as the synthesizer.
 
 ### Cosmetic output errors
 
 - Now shows the correct error message when trying to EXAMINE ALL or other multiple objects ("You can't use multiple objects with that verb" instead of "You can't see any such thing.")
 - Removes an superfluous message that was shown when trying to give animals orders.
-- Fixes a repeated message that would occur if we don't reply to Higgates initial question about whether we speak
-Lojban.
+- Fixes a repeated message that would occur if we don't reply to Higgates initial question about whether we speak Lojban.
 - Gets rid of an erroneous message about being let in through the security door if trying to leave though it when confronted by Alex's father.
 - No longer repeats the refusal message when trying to TAKE ALL FROM Professor Higgate's table.
 - Groups of plural tents are no longer called plural-tents (as in "We are carrying twelve plural-tents.")
 - Fixes some glitches in the map graphics on certain interpreters when displaying the help menu. It is still slightly broken in the Mac IDE, though.
 - Fixes bits of room description being printed when getting on a supporter.
+- There is now a custom message when listening to the plea. As the plea is listed as noisy, "We hear nothing unexpected" would be printed every turn when it was present if there were no other noisy things present.
+- Fixes a couple of messages with verbs that were not being adapted to plural-named subjects: the ones printed when trying to create living things or abstracts with a non-upgraded letter-remover ("The pans flickers and there is a brief image of …") or when large creatures try to follow the player into a small container ("The toms makes an effort to get in, but does not remotely fit.")
+- If the player was inside a container, it would sometimes be printed twice or more in the room description header, such as "Back Alley (in the tent) (in the tent)."
 
 ## Release 8
 
