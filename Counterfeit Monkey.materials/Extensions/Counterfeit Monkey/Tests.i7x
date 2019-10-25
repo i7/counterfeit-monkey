@@ -586,40 +586,40 @@ When play begins:
 	say "I believe that makes [C] items with distinct names." ]
 
 
-[Understand "list all sizes" as listing all sizes. Listing all sizes is an action out of world.
+Understand "list all sizes" as listing all sizes. Listing all sizes is an action out of world.
 
 Carry out listing all sizes:
 	say "Size 0 (abstracts and the totally weightless):[line break]";
 	try listing size 0;
-	paragraph break;
+	say paragraph break;
 	say "Size 1:[line break]";
 	try listing size 1;
-	paragraph break;
+	say paragraph break;
 	say "Size 2:[line break]";
 	try listing size 2;
-	paragraph break;
+	say paragraph break;
 	say "Size 3:[line break]";
 	try listing size 3;
-	paragraph break;
+	say paragraph break;
 	say "Size 4:[line break]";
 	try listing size 4;
-	paragraph break;
+	say paragraph break;
 	say "Size 5:[line break]";
 	try listing size 5;
-	paragraph break;
+	say paragraph break;
 	say "Size 6:[line break]";
 	try listing size 6;
-	paragraph break;
+	say paragraph break;
 	say "Size 7:[line break]";
 	try listing size 7;
-	paragraph break;
+	say paragraph break;
 	say "Size 8:[line break]";
 	try listing size 8;
-	paragraph break;
+	say paragraph break;
 	say "Size 9 and up (large enough to crush the player on creation):[line break]";
 	repeat with N running from 9 to 20:
 		try listing size N;
-	paragraph break;]
+	say paragraph break;
 
 [ The mentioning relation broke horribly when porting from 6G60 because some quips had locations listed as mentioned. The compiler seemed to accept it, but instead a long list of random things were suddenly mentioned by the quip. Use this to test if it happens again. ]
 
