@@ -6373,7 +6373,16 @@ description
 
 Guard-imminence is a scene. Guard-imminence begins when the programmable dais is in location and the atlantida-shellfish is enclosed by location. Guard-imminence ends in postponement when atlantida-refreshed is enclosed by location. [The design principle here is that the player is on a timer, but every time he succeeds at moving the plot forward, that timer is stopped and a new one starts. So it's never possible to fail a late-stage scene because of having taken too long in an earlier stage.]
 
+The trap can be set-for-guards.
+
+When Guard-imminence begins:
+	if there is an open trap in Oracle Project or there is an open trap in the surveillance room:
+		now the trap is set-for-guards;
+		the trap is discovered in 7 turns from now;
+
 Every turn during Guard-imminence:
+	if the trap is in location:
+		now the trap is not set-for-guards;
 	repeat through the Table of Severe Guard Warnings:
 		if there is a description entry:
 			unless the description entry is "":
@@ -6508,6 +6517,7 @@ Portcullis-threat ends in freedom when the location is Precarious Perch.
 
 When Portcullis-threat begins:
 	say "Someone is coming into the workshop upstairs. There's at most a few seconds before they'll be down the tunnel.";
+	now the trap is set-for-guards;
 	if there is an open trap in Oracle Project:
 		the trap is discovered in 1 turn from now;
 	if there is an open trap in the surveillance room:
@@ -6516,10 +6526,11 @@ When Portcullis-threat begins:
 		the trap is discovered in 3 turns from now.
 
 At the time when the trap is discovered:
-	let N be "[the holder of the trap]";
-	let N be N in lower case;
-	now the trap is closed;
-	say "'What's this?' [we] hear a faint voice say from the general direction of [N]. Then there is a loud snap. We flinch, but the blood-curling scream never comes. 'Good thing nobody stepped into that' another voice says, followed by some nervous laughter."
+	if the trap is set-for-guards:
+		let N be "[the holder of the trap]";
+		let N be N in lower case;
+		now the trap is closed;
+		say "'What's this?' [we] hear a faint voice say from the general direction of [N]. Then there is a loud snap. We flinch, but the blood-curling scream never comes. 'Good thing you didn't step into that' another voice says, followed by some nervous laughter."
 
 Check going to the Tunnel from Personal Apartment when Portcullis-threat is happening:
 	say "[We] run straight into the guards. [We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
