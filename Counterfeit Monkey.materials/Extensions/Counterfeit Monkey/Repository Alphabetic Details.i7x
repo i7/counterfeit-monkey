@@ -4085,9 +4085,9 @@ The description of the toy rug is "It is a tiny but intricately woven oriental r
 
 The track is long and strong. The description of the track is "It's a piece of the old tramcar track that used to run up Long Street from the docks. The original has mostly been pulled up now, of course, but there are still a few bits in the street. This length is about a half [if the player wears the britishizing goggles]metre[otherwise]meter[end if] long. And heavy." The heft of the track is 3.
 
-The description of a tram is "A miniature of one of the old-style trams that used to putt up Long Street from the docks back in the 20s and 30s. It is olive-col[our]ed and very detailed, with wood flooring and sideboards, and carries an tiny advertisement for ladies['] hair rinse on the side." The heft of a tram is 1.
+The description of a tram is "A toy model of one of the old-style trams that used to putt up Long Street from the docks back in the 20s and 30s. It is olive-col[our]ed and very detailed, with wood flooring and sideboards, and carries an tiny advertisement for ladies['] hair rinse on the side." The heft of a tram is 1.
 
-The description of the tramcar is "One of the old-style trams that used to putt up Long Street from the docks back in the 20s and 30s. It is olive-col[our]ed, with wood flooring and sideboards, and carries an advertisement for ladies['] hair rinse on the side.". The heft of the tramcar is 8. The tramcar is an enterable container.
+The description of the tramcar is "One of the old-style trams that used to putt up Long Street from the docks back in the 20s and 30s. This one is full-size. It is olive-col[our]ed, with wood flooring and sideboards, and carries an advertisement for ladies['] hair rinse on the side.". The heft of the tramcar is 8. The tramcar is an enterable container.
 
 The trampet is an enterable portable supporter. The description of the trampet is "It's a very small trampoline used for therapeutic exercises." The trampet allows seated and standing.
 	The trampet has a number called the jump count.
