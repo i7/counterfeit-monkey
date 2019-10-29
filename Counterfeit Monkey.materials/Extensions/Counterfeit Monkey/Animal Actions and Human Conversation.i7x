@@ -6483,6 +6483,8 @@ return the rifle is an unlisted performative quip.
 	It quip-supplies atlantida-refreshed.
 
 Carry out going to the Surveillance Room during Atlantida-shooing:
+	if the trap is in Surveillance room and the trap is set-for-guards:
+		end game by running into guards;
 	now Atlantida-refreshed is in the Surveillance Room;
 	if the player is staid:
 		say "Atlantida follows, looking around sharply. Her expression when she sees the computers and television screens is wry, but she doesn't say anything. No time now, perhaps."
@@ -6546,6 +6548,17 @@ Instead of going to Private Solarium from Personal Apartment when Portcullis-thr
 			clear the path-walked for the player;
 	otherwise:
 		say "The guards are coming down the tunnel right now. [We] should find a way to delay them."
+
+Check going to the Oracle Project during Atlantida-shooing:
+	if the trap is in Oracle Project and the trap is set-for-guards:
+		end game by running into guards.
+
+Check going to the Tunnel from Personal Apartment when Portcullis-threat is happening:
+	end game by running into guards.
+
+To end game by running into guards:
+	say "[We] run straight into the guards. [We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
+	abide by the game-ending rule.
 
 When Portcullis-threat ends in capture:
 	say "The guards arrive. [if there is an open trap in location]The first to enter stops just as she is about to step into the trap, and then proceeds to spring it with her rifle. [end if][We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
