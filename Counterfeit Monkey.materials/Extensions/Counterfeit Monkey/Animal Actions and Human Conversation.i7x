@@ -6532,9 +6532,11 @@ At the time when the trap is discovered:
 		now the trap is closed;
 		say "'What's this?' [we] hear a faint voice say from the general direction of [N]. Then there is a loud snap. We flinch, but the blood-curling scream never comes. 'Good thing you didn't step into that' another voice says, followed by some nervous laughter."
 
-Check going to the Tunnel from Personal Apartment when Portcullis-threat is happening:
-	say "[We] run straight into the guards. [We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
-	abide by the game-ending rule.
+Table of Ultratests (continued)
+topic	stuff	setting
+"guardtrap"	{ trap, tub, jack }	Personal Apartment
+
+Test guardtrap with "tutorial off / establish / unlegend / wait / purloin rifle / shoot gel rifle at atlantida"
 
 Instead of going to Private Solarium from Personal Apartment when Portcullis-threat is happening or Atlantida-shooing is happening:
 	if the player is hurrying:
