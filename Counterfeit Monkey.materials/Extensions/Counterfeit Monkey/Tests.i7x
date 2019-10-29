@@ -420,6 +420,8 @@ Carry out establishing longs:
 	now the crosspiece is not proffered by anything;
 	now the cross proffers the crosspiece;
 	now the piece proffers the crosspiece;
+	now the counter proffers the counterweight;
+	now the weight proffers the counterweight.
 
 [Multi-step test with writing]
 
