@@ -912,7 +912,7 @@ The nap has hash code 40961.
 The nib has hash code 8450. [I1527_nib]
 The nightstand has hash code 795081.
 The nitrate has hash code 663825.
-The non-sand has hash code 270345. [Printed name is "sand"]
+The non-sand has hash code 1460250. [Printed name is "boulders"]
 The nose-ring has hash code 418128.
 The noted drum act has hash code 1732637.
 The noted drum fact has hash code 1732669.

@@ -873,7 +873,7 @@ Some tidal pools are scenery in Abandoned Shore. The description is "Pools of se
 Instead of climbing the boulders:
 	say "While it might be possible to scramble up over the curve of rock and get a glimpse of the harbor, there's an equally good possibility that doing so would get [me] undesirable attention."
 
-The non-sand is scenery in Abandoned Shore. The non-sand is privately-named. Understand "sand" as the non-sand. The printed name of the non-sand is "sand".
+The non-sand is scenery in Abandoned Shore. The printed name is "boulders". The indefinite article is "some". The non-sand is privately-named. Understand "sand" as the non-sand.
 
 Sanity-check doing something when the noun is non-sand or the second noun is non-sand:
 	say "There's very little sand here, just boulders." instead.
