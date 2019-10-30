@@ -341,7 +341,7 @@ Instead of jumping during Boar Attack:
 
 Some tusks are part of the boar. The description of the tusks is "Let's not find out anything more personal about them."
 
-Boar Hiding is a recurring scene. Boar hiding begins when the boar is enclosed by location and the roc is in location and the suid is not marked-visible. Boar hiding ends in attack when the boar is marked-visible and the roc is not in location. Boar hiding ends in distraction when the suid is marked-visible. Boar hiding ends in relief when the boar is marked invisible.
+Boar Hiding is a recurring scene. Boar hiding begins when the boar is enclosed by location and the roc is enclosed by location and the suid is not marked-visible. Boar hiding ends in attack when the boar is marked-visible and the roc is not enclosed by location. Boar hiding ends in distraction when the suid is marked-visible. Boar hiding ends in relief when the boar is marked invisible.
 
 Every turn during Boar Hiding:
 	say "[one of]The boar looks at [us] unpleasantly, but the roc flaps it wings and steps between [us] and the boar[or]The roc is pacing back and forth in front of the boar, which squeals with fear[or]The boar takes a tentative step towards [us], but one stern look from the roc makes it turn on the spot[cycling]."
