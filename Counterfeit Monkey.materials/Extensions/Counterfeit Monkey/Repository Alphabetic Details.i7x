@@ -4139,7 +4139,7 @@ Report opening the trap:
 	if Atlantida-woman is in location:
 		say ".[paragraph break]'Did you really expect me to walk into that?' Atlantida asks, with genuine surprise in her voice." instead;
 	if further guards is happening or guard-imminence is happening or portcullis-threat is happening or atlantida-refreshed is in location:
-		say ". I really don't want to think about what would happen if somebody stepped into it";
+		say ". I really don't want to think about what will happen if somebody steps on it";
 	if atlantida-refreshed is in location:
 		say ".[paragraph break]'That seems brutal,' Atlantida remarks";
 	say "." instead.
