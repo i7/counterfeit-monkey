@@ -50,7 +50,7 @@ Include
 		LIST_OF_TY_SetLength((+ incoming-list +), 0, -1, 1);
 		for (traveler = child(real_location): traveler : traveler = last) {
 			last = sibling(traveler);
-			if (traveler ofclass (+ person +) && traveler.(+ fake +) && traveler ~= (+ roc +)) {
+			if (traveler ofclass (+ person +) && traveler.(+ fake +) && traveler ~= (+ roc +) && traveler ~= (+ boar +)) {
 				TryAction(0, traveler, ##Enter, car, 0);
 			}
 		}
