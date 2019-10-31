@@ -1452,7 +1452,7 @@ The description of a May is usually "This is the sheet for the month of May, tor
 
 Meg is a proper-named woman. The description of Meg is "She's in her mid-sixties, with salt-and-pepper hair and a dry, rather sardonic smile."
 
-Me-object is a proper-named neuter person. The printed name of me-object is "me". Understand "me" as the me-object. The description of the me-object is "It's an abstract that looks like a bit of mirror. When I look at it I see Alex, my proper self, and not just restored to my usual body, but photo-retouched to be that bit smarter and freer of skin-blemishes, well-dressed. It's like looking in the mirror at reality as it should be.
+The printed name of me-object is "me". Understand "me" as the me-object. The description of the me-object is "It's an abstract that looks like a bit of mirror. When I look at it I see Alex, my proper self, and not just restored to my usual body, but photo-retouched to be that bit smarter and freer of skin-blemishes, well-dressed. It's like looking in the mirror at reality as it should be.
 
 You doubtless see yourself too [--] as you are, or perhaps as you want to be." The me-object is r-abstract.
 
