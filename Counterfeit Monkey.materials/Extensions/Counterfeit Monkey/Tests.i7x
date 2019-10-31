@@ -705,8 +705,16 @@ Understand "all-greet" as testing greetings. Testing greetings is an action appl
 
 Carry out testing greetings:
 	repeat with item running through people who are not animals:
-		move the item to the location;
-		try the item saying hello to the player.
+		let O be the holder of item;
+		unless O is the location:
+			move the item to the location;
+		say "[bracket][The item][close bracket]";
+		try the item saying hello to the player;
+		if O is nothing:
+			now the item is nowhere;
+		otherwise:
+			unless O is the location:
+				move the item to O.
 
 [This goes through locations and tests how well they describe the surroundings if the player types LOOK (DIRECTION). This is partly an act of world-building self-discipline: we never want there to be streets without buildings fronting them, even if those buildings aren't important and aren't part of the primary description. There should always be *something* there to reward playful investigation.]
 Understand "pound face" as testing facing. Testing facing is an action out of world.
