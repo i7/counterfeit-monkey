@@ -3469,7 +3469,7 @@ why gift shop volunteer seems here is a questioning quip.
 	It quip-supplies the gift shop volunteer.
 	It indirectly-follows what seems worth seeing in the New Church.
 
-My mother is a woman.
+my mother is a woman.
 
 remind the gift shop volunteer that Mrs Rosehip seems married is a performative quip.
 	The printed name is "remind the gift shop volunteer that [Mrs] Rosehip is married". The true-name is "remind the gift shop volunteer that Mrs Rosehip seems married".
