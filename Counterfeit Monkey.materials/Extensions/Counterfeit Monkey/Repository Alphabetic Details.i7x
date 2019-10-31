@@ -2330,6 +2330,8 @@ Test pirate-spot with "tutorial off / autoupgrade / powerup / wave c-remover at 
 The pirate-crew is a man. The printed name is "pirate crew". The description is "A fiercer, blacker-browed gang of individuals you couldn't hope to meet. Half of them have scurvy and half are missing at least a finger, and when they talk (strictly among themselves), it's all growls from the corner of the mouth." Understand "pirate" or "pirates" or "crew" as the pirate-crew.
 	The scent-description of the pirate-crew is "unwashedness".
 
+The greeting of the pirate-crew is "'Yarr,' says the pirate crew. Their voices are rough and they don't sound entirely sober."
+
 [The pirate-crew can be cowed.
 
 Persuasion rule for asking the pirate-crew to try doing something:
