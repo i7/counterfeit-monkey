@@ -34,6 +34,7 @@ An alterna-cap is a kind of thing.
 A carp is a kind of thing. [not "a kind of animal" because you get a dead carp]
 Some carpi are a kind of plural-named thing.
 A cat is a kind of neuter animal.
+A cat-army is a kind of neuter animal.
 [A car is a kind of vehicle.] [ These are defined in their own section, above, because so complicated.]
 A cart is a kind of vehicle.
 A char is a kind of thing. [not "a kind of animal" because you get a dead char]
@@ -111,6 +112,7 @@ A top-toy is a kind of thing.
 A tot is a kind of woman.
 A tote-bag is a kind of container.
 A tram is a kind of thing.
+A yam-cart is a kind of cart.
 [A yam is a kind of vegetable.] [* The yam kind is actually defined earlier because we need one for the farmer to be carrying, as well.]
 
 Section 3 - Individual Items Broken Down By Product
@@ -254,6 +256,7 @@ The repository contains 2 strands, 2 chars, 2 cars, 2 airs,
 	a chart, a cart, [t-insert ONE of the chair derivative sets]
 	a chert, [vowel-rotate the chart]
 	a hart, an art, a chat, a cat, a hat, a CRT, [derive insertions]
+	a cat-army, [cat + army]
 	a rat, a tar, [anagram all]
 	a tart, an alterna-tart [t-insert anagrams]. [chair]
 
@@ -848,7 +851,7 @@ The repository contains a rap, a clothing-wrap,
 	a pet, a pit, a pot, an alterna-pot. [vowel-rotation]
 
 [yam]
-The repository contains an Amy and a May and a ma.
+The repository contains an Amy and a May and a ma and a yam-cart. [yam + cart]
 
 [yellow paint lettering]
 The repository contains an elegantly winter pilot.
@@ -913,9 +916,9 @@ The repository contains a cartage.
 
 [cat]
 [Some camemberts and a]
-A camembert, a climate, a catnap, and a cat-army are in the repository.
+A camembert, a climate, and a catnap are in the repository.
 
-A yam-cart is in the repository. [anagrammed from cat-army]
+The repository contains a cat-army and a yam-cart. [anagrammed from cat-army]
 
 [char]
 A charring and a charlie are in the repository.

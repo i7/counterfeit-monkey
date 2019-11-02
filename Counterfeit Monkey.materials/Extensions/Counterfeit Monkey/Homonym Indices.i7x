@@ -443,7 +443,7 @@ The carpet has homonym index 439.
 The cartage has homonym index 440.
 The cassock has homonym index 441.
 The cat-mayor has homonym index 442.
-The cat-army has homonym index 443.
+A cat-army has homonym index 443.
 The cate has homonym index 444.
 The catnap has homonym index 445.
 The cd has homonym index 446.
@@ -1247,7 +1247,7 @@ The worn leather jacket has homonym index 1241.
 The clothing-wrap has homonym index 1242.
 The wrap has homonym index 1243.
 The yam has homonym index 1244.
-The yam-cart has homonym index 1245.
+A yam-cart has homonym index 1245.
 The yellow buildings has homonym index 1246.
 The yellow-paint has homonym index 1247.
 Your wardrobe has homonym index 1248.

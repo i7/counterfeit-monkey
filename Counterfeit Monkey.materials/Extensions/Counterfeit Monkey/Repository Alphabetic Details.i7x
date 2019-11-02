@@ -476,7 +476,13 @@ Instead of smiling at a cat:
 Instead of frowning at a cat:
 	say "[We] frown. [The noun] does not seem much abashed."
 
-The cat-army is a cat. The printed name is "cat army". Understand "cat" or "army" as the cat-army. The heft of the cat-army is 8. The description is "There are dozens of them, and they move in curiously regimented, uncatlike ways, as though the big tabby at the front of the group really is their commanding officer."
+The printed name of a cat-army is "cat army". Understand "cat" or "cats" or "army" as a cat-army. The heft of a cat-army is 8. The description of a cat-army is "There are dozens of them, and they move in curiously regimented, uncatlike ways, as though the big tabby at the front of the group really is their commanding officer."
+
+Rule for printing the plural name of cat-army:
+	say "cat armies".
+
+Check waving the letter-remover at a cat-army when the current setting of the letter-remover is "y":
+	say "The device buzzes, puzzled. It has tried to create a 'cat arm': I guess the forelegs of cats don't really qualify as arms. Well, not to this letter-remover anyway." instead.
 
 The printed name of the cat-mayor is "cat mayor". Understand "cat" or "mayor" as the cat-mayor. The cat-mayor is a cat. The description of the cat-mayor is "Like an ordinary cat, only wearing tiny black leather boots and displaying, if possible, an even greater regard for its own dignity than the average feline." The cat-mayor wears tiny black leather boots.
 
@@ -4358,7 +4364,10 @@ The clothing-wrap is a privately-named floppy wearable thing. The heft of the cl
 
 The description of a yam is "This particular one is as long as a baby's forearm and light brown."
 
-The yam-cart is a cart. Understand "yam cart" or "cart" as the yam-cart. The printed name of the yam-cart is "yam cart". The description of the yam-cart is "A cart made of metal and wood, designed for displaying goods at a farmer's market or similar fair. It is dedicated entirely to the purveyance of yams: large yams, small yams, white yams, purple yams, yams bearing an incidental resemblance to the head of Ronald Reagan and other yams that look a little bit like the Virgin Mary. Japanese mountain yams are available, as is a ground yam powder for making brown yam paste."
+Understand "yam cart" or "cart" as a yam-cart. The printed name of a yam-cart is "yam cart". The description of a yam-cart is "A cart made of metal and wood, designed for displaying goods at a farmer's market or similar fair. It is dedicated entirely to the purveyance of yams: large yams, small yams, white yams, purple yams, yams bearing an incidental resemblance to the head of Ronald Reagan and other yams that look a little bit like the Virgin Mary. Japanese mountain yams are available, as is a ground yam powder for making brown yam paste."
+
+Rule for printing the plural name of yam-cart:
+	say "yam carts".
 
 The yams-collection is part of the yam-cart. The yams-collection is edible. Understand "yam" or "yams" or "large" or "small" or "white" or "purple" or "ronald reagan" or "virgin mary" or "japanese" or "mountain" or "ground" or "powder" or "brown" or "paste" or "collection of yams" or "collection" as the yams-collection. The printed name of the yams-collection is "collection of yams".
 	The description is "I find the yam display a bit overwhelming, myself."

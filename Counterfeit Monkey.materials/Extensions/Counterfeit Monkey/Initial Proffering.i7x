@@ -359,7 +359,6 @@ The carpet proffers the carpet. [I2303_carpet]
 The cartage proffers the cartage. [I2308_cartage]
 The cassock proffers the cassock. [I2320_cassock]
 The cat-mayor proffers the cat-mayor. [I1479_cat_mayor]
-The cat-army proffers the cat-army. [I2313_cat_army]
 The cate proffers the cate. [I1625_cate]
 The catnap proffers the catnap. [I2312_catnap]
 The cd proffers the cd. [I1570_cd]
@@ -1160,7 +1159,6 @@ The worn leather jacket proffers the worn leather jacket. [I953_worn_leather_jac
 The clothing-wrap proffers the clothing-wrap. [I2260_clothing_wrap]
 The wrap proffers the wrap. [I800_wrap]
 The white-yam proffers the white-yam.
-The yam-cart proffers the yam-cart. [I2314_yam_cart]
 The yellow buildings proffer the yellow buildings.
 The yellow-paint proffers the yellow-paint. [K2_thing]
 The your wardrobe proffers the your wardrobe. [I1213_your_wardrobe]

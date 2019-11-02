@@ -583,7 +583,7 @@ The carpet has hash code 688149.
 The cartage has hash code 655445.
 The cassock has hash code 279557.
 The cat-mayor has hash code 17453061. [I1479_cat_mayor]
-The cat-army has hash code 17436677. [I2313_cat_army]
+A cat-army has hash code 17436677. [I2313_cat_army]
 The cate has hash code 524309. [I1625_cate]
 The catnap has hash code 565253. [I2312_catnap]
 The cd has hash code 12. [I1570_cd]
@@ -1397,7 +1397,7 @@ The worn leather jacket has hash code 4877973.
 The clothing-wrap has hash code 4358145. [I2260_clothing_wrap]
 The wrap has hash code 4358145. [I800_wrap]
 The yam has hash code 16781313. [I630_white_yam]
-The yam-cart has hash code 17436677. [I2314_yam_cart]
+A yam-cart has hash code 17436677. [I2314_yam_cart]
 The yellow buildings have hash code 22309210.
 The yellow-paint has hash code 565505. [K2_thing]
 Your wardrobe has hash code 22167579. [I1213_your_wardrobe]
