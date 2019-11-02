@@ -264,7 +264,7 @@ After inserting a pit-items into the cryptolock when hardness is false and the c
 	say "[pets-refusal-text]." instead.
 
 To say pets-refusal-text:
-	say "There is a churning noise from within [the cryptolock] and 'pets' appears in letters of vivid purple smoke. [We] get a glimpse of a huge squirming mess of little furry creatures in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result".
+	say "There is a churning noise from within [the cryptolock] and 'pets' appears in letters of vivid purple smoke. [We] get a glimpse of a huge squirming mass of little furry creatures in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result".
 
 [Synthesizer and programmable dais, set to synthesize]
 
