@@ -453,7 +453,7 @@ Sanity-check putting an alterna-cap on the bottle of ouzo:
 	say "The ouzo bottle already has a cap." instead
 
 Sanity-check putting an alterna-cap on an contained fluid thing (called current bottle):
-	say "[The current bottle] [are] already [have] [if the current bottle is plural-named]caps[otherwise]a cap[end if]." instead.
+	say "[The current bottle] already [have] [if the current bottle is plural-named]caps[otherwise]a cap[end if]." instead.
 
 The description of the cartage is "'Cartage' here takes the form of an invoice for the transport of farm products by cart."
 
