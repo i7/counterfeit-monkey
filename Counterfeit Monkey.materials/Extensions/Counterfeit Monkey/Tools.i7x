@@ -1714,6 +1714,9 @@ Section 3 - Loading the Gun
 Sanity-check inserting the bullets into a gun:
 	try loading the noun into the second noun instead.
 
+Sanity-check inserting the anagram bullet into a gun:
+	try loading the anagram bullet into the second noun instead.
+
 Understand "load [something] with [something]" as loading it into (with nouns reversed).
 Understand "load [something] into [something]" as loading it into.
 Understand "load [anagramming gun] with [anagram bullets]" as loading it into (with nouns reversed).
@@ -1728,6 +1731,9 @@ Check loading something into something ungunlike:
 
 Check loading something which is not the anagram bullets into something:
 	say "[The noun] [are] not ammunition." instead.
+
+Check loading the anagram bullet into something:
+	say "The single bullet can't be loaded like this." instead.
 
 Carry out loading the anagram bullets into the anagramming gun:
 	now the anagram bullets are nowhere;
