@@ -2374,7 +2374,7 @@ Understand "pits" as the alterna-pits. The alterna-pits are a fixed in place con
 
 The pita is an edible thing. The description of the pita is "A round, brown pocket-bread." The scent-description of the pita is "baked goods".
 
-The pit-trap is an open enterable container. It is fixed in place. The heft of the pit-trap is 8. The printed name of a pit-trap is "pit trap". Understand "pit trap" or "deep pit" or "pit" or "rocks" or "stones" or "stakes" or "sharpened" or "stake" as a pit-trap. The description of a pit-trap is "It's a deep pit lined with rocks, set into the surface of [the holder of the item described]. Sharpened stakes jut upward from the bottom, ready to stab any large mammal unfortunate enough to fall in."
+The pit-trap is an open enterable container. It is fixed in place. The heft of the pit-trap is 8. The printed name of a pit-trap is "pit trap". Understand "pit" or "trap" or "deep pit" or "rocks" or "stones" or "stakes" or "sharpened" or "stake" as a pit-trap. The description of a pit-trap is "It's a deep pit lined with rocks, set into the surface of [the holder of the item described]. Sharpened stakes jut upward from the bottom, ready to stab any large mammal unfortunate enough to fall in."
 
 Instead of inserting something into the pit-trap:
 	say "That is not a good way to get rid of [the noun]."
@@ -2383,7 +2383,7 @@ Instead of entering the pit-trap:
 	say "Against my better judgment, [we] slip over the edge into the pit trap and are impaled on the spikes below. It will be some considerable time before anyone thinks to check down here.";
 	end the story saying "What made you think that was a good idea?"
 
-The pit-traps are an open enterable container. They are fixed in place. The heft of the pit-traps is 8. The printed name of the pit-traps is "pit traps". Understand "pit traps" or "pits" or "rocks" or "stones" or "stakes" or "sharpened" or "stake" as the pit-traps. The description of the pit-traps is "It's a number of deep pits lined with rocks, set into the surface of [the holder of the item described], close enough to each other to trigger some mild trypophobia. Sharpened stakes jut upward from the bottom, ready to stab any large mammal unfortunate enough to fall in."
+The pit-traps are an open enterable container. They are fixed in place. The heft of the pit-traps is 8. The printed name of the pit-traps is "pit traps". Understand "pit" or "traps" or "pits" or "rocks" or "stones" or "stakes" or "sharpened" or "stake" as the pit-traps. The description of the pit-traps is "It's a number of deep pits lined with rocks, set into the surface of [the holder of the item described], close enough to each other to trigger some mild trypophobia. Sharpened stakes jut upward from the bottom, ready to stab any large mammal unfortunate enough to fall in."
 
 Instead of inserting something into the pit-traps:
 	say "That is not a good way to get rid of [the noun]."
