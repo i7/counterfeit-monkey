@@ -344,7 +344,7 @@ Some tusks are part of the boar. The description of the tusks is "Let's not find
 Boar Hiding is a recurring scene. Boar hiding begins when the boar is enclosed by location and the roc is enclosed by location and the suid is not marked-visible. Boar hiding ends in attack when the boar is marked-visible and the roc is not enclosed by location. Boar hiding ends in distraction when the suid is marked-visible. Boar hiding ends in relief when the boar is marked invisible.
 
 Every turn during Boar Hiding:
-	say "[one of]The boar looks at [us] unpleasantly, but the roc flaps it wings and steps between [us] and the boar[or]The roc is pacing back and forth in front of the boar, which squeals with fear[or]The boar takes a tentative step towards [us], but one stern look from the roc makes it turn on the spot[cycling]."
+	say "[one of]The boar looks at [us] unpleasantly, but the roc flaps it wings and steps between [us] and the boar[or]The roc is pacing back and forth in front of the boar, which squeals with fear[or]The boar takes a tentative step toward [us], but one stern look from the roc makes it turn on the spot[cycling]."
 
 The board is a thing. The description of the board is "It's a fairly generic plank [--] sort of pine, by the looks of it, though constructed things tend to be a little vague on niceties such as species [--] and looks like it's designed to be part of a new deck or somesuch thing." The board is long.
 	The scent-description of the board is "raw wood".
