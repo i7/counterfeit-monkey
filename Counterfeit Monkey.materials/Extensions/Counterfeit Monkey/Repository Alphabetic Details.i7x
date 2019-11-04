@@ -328,7 +328,7 @@ Every turn during Boar Attack:
 
 Table of Boar Attacks
 description
-"The boar gives us a very nasty kind of look, and then [--] without any provocation, I'm sure [--] starts running right at us[if the player is in the kayak], even into the surf[end if][if there is an open trap in location], nimbly avoiding the trap[end if]."
+"The boar gives us a very nasty kind of look, and then [--] without any provocation, I'm sure [--] starts running right at us[if the player is in the kayak], even into the surf[end if][if there is an open trap in location] (nimbly avoiding the trap)[end if]."
 "The boar just barely misses giving us a long gash in [if the player is in the kayak]the stomach[otherwise]the thigh[end if], but it wheels around for another attempt. If it knocks us down, I am not too hopeful about our experience with those tusks."
 "I try to get us out of the way in one direction, you in another, and the result is that the boar knocks [if the player is in the kayak]the kayak over[otherwise]us flat[end if] with the butt of its head. It stands over us snorting."
 
