@@ -81,18 +81,19 @@ The exit attempt rules are an object-based rulebook.
 To fidget is a verb. To pace is a verb.
 
 An exit attempt rule for a person (called exiter):
-	if a random chance of 1 in 2 succeeds:
-		say "[The exiter] [one of][fidget] uncomfortably[or][pace] around[at random] [in-on the holder of the exiter].";
-		the rule succeeds;
-	let preposition be text;
-	if the holder of exiter is the programmable dais:
-		now preposition is "off";
-	otherwise:
-		now preposition is "out of";
-	say "[The exiter] [one of][make] as if to get[or][appear] to consider getting[or][seem] to contemplate getting[at random] [preposition] [the holder of the exiter]";
-	if a random chance of 1 in 2 succeeds:
-		say ", but [regarding the exiter][one of][decide] against it[or]something makes [them] change [their] mind[at random][run paragraph on]";
-	say "."
+	if a random chance of 1 in 3 succeeds:
+		if a random chance of 1 in 2 succeeds:
+			say "[The exiter] [one of][fidget] uncomfortably[or][pace] around[at random] [in-on the holder of the exiter].";
+			the rule succeeds;
+		let preposition be text;
+		if the holder of exiter is the programmable dais:
+			now preposition is "off";
+		otherwise:
+			now preposition is "out of";
+		say "[The exiter] [one of][make] as if to get[or][appear] to consider getting[or][seem] to contemplate getting[at random] [preposition] [the holder of the exiter]";
+		if a random chance of 1 in 2 succeeds:
+			say ", but [regarding the exiter][one of][decide] against it[or]something makes [them] change [their] mind[at random][run paragraph on]";
+		say "."
 
 
 Section 3 - Ushering animals and people on and off dais and synthesizer
