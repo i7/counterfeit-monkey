@@ -74,7 +74,15 @@ Rule for deciding whether all includes other people carried by the person asked 
 
 The new exclude people from drop all rule is listed instead of the exclude people from drop all rule in the for deciding whether all includes rulebook.
 
-[Hack to avoid "What do you want to drop those things in?" when typing DROP ALL while carrying nothing.]
+[Hack to avoid the "What do you want to drop those things in?" response when typing DROP ALL while carrying nothing.
+
+See http://inform7.com/mantis/view.php?id=1720 and https://intfiction.org/t/there-are-none-at-all-available/43530/3
+We make sure that the multiple object list is never empty when dropping, by including the player object in it. Then we remove the player from the list again later, in A multiple action processing rule when dropping below, and print a custom message if it was the only thing in the list.
+
+In this way, we completely bypass the parser’s buggy handling of DROP ALL when nothing can be dropped, by making it think that there is always something there to drop.
+
+The actual bug has nothing to do with the player object, I only used that because it is a convenient dummy object that is usually in scope.]
+
 Rule for deciding whether all includes the person asked while dropping:
 	if the person asked is empty:
 		it does.
