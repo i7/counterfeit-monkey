@@ -159,7 +159,7 @@ Definition: a thing is single put on only:
 		yes.
 
 
-[To make sure that we don't try things like inserting the bag in the pan when the pan already is inside the bag. That is blocked further down the line too, but this rule prevents that ugly error messages are printed at the wrong time.]
+[To make sure that we don't try things like inserting the bag in the pan when the pan already is inside the bag. That is blocked further down the line too, but this rule prevents ugly error messages printed at the wrong stage.]
 This is the check self-containment rule:
 	if the holder of the second noun is listed in the multiple object list:
 		let L be the multiple object list;
