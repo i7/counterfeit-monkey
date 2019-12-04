@@ -6377,16 +6377,7 @@ description
 
 Guard-imminence is a scene. Guard-imminence begins when the programmable dais is in location and the atlantida-shellfish is enclosed by location. Guard-imminence ends in postponement when atlantida-refreshed is enclosed by location. [The design principle here is that the player is on a timer, but every time he succeeds at moving the plot forward, that timer is stopped and a new one starts. So it's never possible to fail a late-stage scene because of having taken too long in an earlier stage.]
 
-The trap can be set-for-guards.
-
-When Guard-imminence begins:
-	if there is an open trap in Oracle Project or there is an open trap in the surveillance room:
-		now the trap is set-for-guards;
-		the trap is discovered in 7 turns from now;
-
 Every turn during Guard-imminence:
-	if the trap is in location:
-		now the trap is not set-for-guards;
 	repeat through the Table of Severe Guard Warnings:
 		if there is a description entry:
 			unless the description entry is "":
@@ -6487,8 +6478,6 @@ return the rifle is an unlisted performative quip.
 	It quip-supplies atlantida-refreshed.
 
 Carry out going to the Surveillance Room during Atlantida-shooing:
-	if the trap is in Surveillance room and the trap is set-for-guards:
-		end game by running into guards;
 	now Atlantida-refreshed is in the Surveillance Room;
 	if the player is staid:
 		say "Atlantida follows, looking around sharply. Her expression when she sees the computers and television screens is wry, but she doesn't say anything. No time now, perhaps."
@@ -6522,27 +6511,7 @@ Portcullis-threat is a scene. Portcullis-threat begins when Atlantida-shooing en
 Portcullis-threat ends in freedom when the location is Precarious Perch.
 
 When Portcullis-threat begins:
-	say "Someone is coming into the workshop upstairs. There's at most a few seconds before they'll be down the tunnel.";
-	now the trap is set-for-guards;
-	if there is an open trap in Oracle Project:
-		the trap is discovered in 1 turn from now;
-	if there is an open trap in the surveillance room:
-		the trap is discovered in 2 turns from now;
-	if there is an open trap in the tunnel through chalk:
-		the trap is discovered in 3 turns from now.
-
-At the time when the trap is discovered:
-	if the trap is set-for-guards:
-		let N be "[the holder of the trap]";
-		let N be N in lower case;
-		now the trap is closed;
-		say "'What's this?' [we] hear a faint voice say from the general direction of [N]. Then there is a loud snap. We flinch, but the blood-curling scream never comes. 'Good thing you didn't step into that' another voice says, followed by some nervous laughter."
-
-Table of Ultratests (continued)
-topic	stuff	setting
-"guardtrap"	{ trap, tub, jack }	Personal Apartment
-
-Test guardtrap with "tutorial off / establish / unlegend / wait / purloin rifle / shoot gel rifle at atlantida"
+	say "Someone is coming into the workshop upstairs. There's at most a few seconds before they'll be down the tunnel."
 
 Instead of going to Private Solarium from Personal Apartment when Portcullis-threat is happening or Atlantida-shooing is happening:
 	if the player is hurrying:
@@ -6553,10 +6522,6 @@ Instead of going to Private Solarium from Personal Apartment when Portcullis-thr
 	otherwise:
 		say "The guards are coming down the tunnel right now. [We] should find a way to delay them."
 
-Check going to the Oracle Project during Atlantida-shooing:
-	if the trap is in Oracle Project and the trap is set-for-guards:
-		end game by running into guards.
-
 Check going to the Tunnel from Personal Apartment when Portcullis-threat is happening:
 	end game by running into guards.
 
@@ -6565,7 +6530,7 @@ To end game by running into guards:
 	abide by the game-ending rule.
 
 When Portcullis-threat ends in capture:
-	say "The guards arrive. [if there is an open trap in location]The first to enter stops just as she is about to step into the trap, and then proceeds to spring it with her rifle. [end if][We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
+	say "The guards arrive. [We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
 	abide by the game-ending rule.
 
 When Portcullis-threat ends in delay:
