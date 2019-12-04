@@ -113,7 +113,6 @@ A huge-metal-arm has homonym index 108.
 A hundreds of people has homonym index 109.
 A ignition has homonym index 110.
 A ill has homonym index 111.
-The in-object has homonym index 112.
 A ink has homonym index 113.
 A invitation has homonym index 114.
 A island has homonym index 115.

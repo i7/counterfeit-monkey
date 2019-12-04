@@ -201,7 +201,6 @@ A hundreds of people have hash code 1501368. [K8_person]
 A ignition has hash code 549184. [K36_ignition]
 A ill has hash code 2304. [K122_ill]
 The plural-ills have hash code 264448.
-The in-object has hash code 8448. [K2_thing]
 A ink has hash code 9472. [K121_ink]
 A invitation has hash code 2646273. [K2_thing]
 A island has hash code 272649. [K7_backdrop]

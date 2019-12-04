@@ -1231,15 +1231,6 @@ An ill is r-abstract. The description of an ill is usually "It manifests as a li
 
 Periodically it gains cartoonish eyes and eyebrows, and glowers at [us]."
 
-The in-object is r-abstract. The printed name is "in". The description is "It represents the idea of having a connection or a way in to a normally closed institution. What my father would call networking and Slango would call nepotism, and my mother would have no name for at all because to her it is the normal way of the world everywhere.
-
-At the moment, this concept is embodied as a pair of giant hands clasped in a handshake."
-
-A dangerous construction rule for the in-object:
-	say "True to its nature, the in pulls [us] in like a moth to a flame, then crushes [us] to pulp in its firm grasp.";
-	end the story saying "At least [we] [are] truly in now";
-	rule succeeds.
-
 The description of the inapt sign is "The sign reads WARNING: [one of]DO NOT CLIMB DOME DURING THUNDERSTORM[or]WATCH OUT FOR BEARS[or]CARS PARKED WITHOUT A STICKER WILL BE TOWED AT OWNER'S EXPENSE[or]MUSHROOMS MAY BE POISONOUS[at random]."
 
 The inapt sin is r-abstract. The heft of the inapt sin is 0. The description of the inapt sin is "It displays a very puritanical man praying on a street corner: the sin of spiritual pride, perhaps."

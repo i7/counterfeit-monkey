@@ -308,7 +308,6 @@ The hurt is fake. [I1576_hurt]
 The i-pan is fake. [I1858_i_pan]
 The ice-wig japes are fake. [I1712_ice_wig_japes]
 An ignition is fake. [K36_ignition]
-The in-object is fake.
 The inapt sign is fake. [I1756_inapt_sign]
 The inapt sin is fake. [I1757_inapt_sin]
 The inapt tint is fake. [I1767_inapt_tint]

@@ -51,7 +51,6 @@ A git is a kind of man.
 A hairpiece is a kind of wearable thing.
 A hart is a kind of neuter animal.
 A hat is a kind of thing.
-[An in-object is a kind of thing. ["in"] The printed name of an in-object is "in". Understand "in" as an in-object.]
 An ink is a kind of thing.
 An ill is a kind of thing.
 An it-object is a kind of thing. ["it"]
@@ -420,8 +419,6 @@ In the repository is a baklava.
 
 [horses]
 In the repository are some hoses, a hoe, and a ho.
-
-In the repository is an in-object.
 
 [inciting fable]
 In the repository is a filing cabinet.
