@@ -305,14 +305,11 @@ Report waving the letter-remover at the boar:
 Boar Mating is a recurring scene. Boar mating begins when the boar is enclosed by location and the suid is enclosed by location. Boar mating ends in disappointment when the boar is enclosed by location and the suid is not enclosed by location. Boar mating ends in death when the boar is marked invisible.
 
 Every turn during Boar Mating:
-	say "[one of]The boar [if the roc is not in location]looks at [us] unpleasantly, but then [otherwise]seems to forget all about [us] and the roc, as [end if]the pleasing scent of the [suid] attracts it instead[or]The boar is circling the suid, as near as it can in this awkward space[or][one of]The boar follows the suid around, its nose at her butt[or]The suid is trying to walk away from the boar[or]The boar makes an attempt to mount the suid, but slips on the sand[or]The suid squeals indignantly and walks away from the boar, who follows[at random][stopping]."
+	say "[one of]The boar looks at [us] unpleasantly, but then the pleasing scent of the [suid] attracts it instead[or]The boar is circling the suid, as near as it can in this awkward space[or][one of]The boar follows the suid around, its nose at her butt[or]The suid is trying to walk away from the boar[or]The boar makes an attempt to mount the suid, but slips on the sand[or]The suid squeals indignantly and walks away from the boar, who follows[at random][stopping]."
 
 [The boar attack is based on several accounts of real life attacks in which the boar repeatedly rushed the victim (often unprovoked), gashing in several places. The most serious wounds generally are abdominal wounds inflicted after the boar has knocked the victim down. It would be more true to life if the boar also left gashes in the protagonist's leg in the process of knocking her down, but I decided to skip that because I didn't want to deal with a game state in which the protagonist was wounded but not dead: it would have needlessly complicated the writing of the end-game to no interesting narrative effect.]
 
-Boar Attack is a recurring scene. Boar Attack begins when the boar is enclosed by location and the suid is not enclosed by location and the roc is not enclosed by location. Boar Attack ends in relief when the boar is marked invisible. Boar attack ends in distraction when the boar is enclosed by location and the suid is enclosed by location. Boar Attack ends in fear when the roc is marked-visible. Boar Attack ends in death when the time since Boar Attack began is greater than 2 minutes.
-
-When Boar Attack ends in fear:
-	say "The boar stops abruptly at the sight of the roc."
+Boar Attack is a recurring scene. Boar Attack begins when the boar is enclosed by location and the suid is not enclosed by location. Boar Attack ends in relief when the boar is marked invisible. Boar attack ends in distraction when the boar is enclosed by location and the suid is enclosed by location. Boar Attack ends in death when the time since Boar Attack began is greater than 2 minutes.
 
 Every turn during Boar Attack:
 	if the boar is not in location:
@@ -341,11 +338,6 @@ Instead of jumping during Boar Attack:
 	say "[We] do our best to get out of the way."
 
 Some tusks are part of the boar. The description of the tusks is "Let's not find out anything more personal about them."
-
-Boar Hiding is a recurring scene. Boar hiding begins when the boar is enclosed by location and the roc is enclosed by location and the suid is not marked-visible. Boar hiding ends in attack when the boar is marked-visible and the roc is not enclosed by location. Boar hiding ends in distraction when the suid is marked-visible. Boar hiding ends in relief when the boar is marked invisible.
-
-Every turn during Boar Hiding:
-	say "[one of]The boar looks at [us] unpleasantly, but the roc flaps it wings and steps between [us] and the boar[or]The roc is pacing back and forth in front of the boar, which squeals with fear[or]The boar takes a tentative step toward [us], but one stern look from the roc makes it turn on the spot[cycling]."
 
 The board is a thing. The description of the board is "It's a fairly generic plank [--] sort of pine, by the looks of it, though constructed things tend to be a little vague on niceties such as species [--] and looks like it's designed to be part of a new deck or somesuch thing." The board is long.
 	The scent-description of the board is "raw wood".
