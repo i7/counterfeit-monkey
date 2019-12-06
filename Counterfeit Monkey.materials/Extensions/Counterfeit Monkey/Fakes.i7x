@@ -21,7 +21,6 @@ A bot is fake. [K107_bot]
 A car is fake. [K35_car]
 A carpi is fake. [K177_carpi]
 A carp is fake.
-A generic-cap is fake.
 A cart is fake. [K109_cart]
 A cat is fake. [K108_cat]
 A char is fake. [K110_char]

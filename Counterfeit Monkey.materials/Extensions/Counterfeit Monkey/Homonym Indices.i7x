@@ -605,7 +605,6 @@ The gas has homonym index 602.
 The spinner-gate has homonym index 603.
 The geas has homonym index 604.
 The gem has homonym index 605.
-The generic-cap has homonym index 606.
 The generic cocktail has homonym index 607.
 The genre apron has homonym index 608.
 The giant Atlantida statue has homonym index 609.

@@ -430,10 +430,6 @@ The camembert is an edible thing. The description of the camembert is "A rich, s
 	Sanity-check cutting the camembert:
 		say "A notch in the flesh of the camembert exposes the yellowish creamy interior." instead.
 
-Every generic-cap covers the head area. The description of a generic-cap is "A black sports cap with the logo of my father's fav[our]ite soccer team The Atlantis Cuttlefish.". The printed name of a generic-cap is "cap". Understand "cap" or "sports" or "logo" or "cuttlefish" as a generic-cap. The scent-description of a generic-cap is usually "sweat and hair wax".
-
-The description of an alterna-cap is "A small plastic snap cap that looks like it used to sit on a tube or bottle of some kind."
-
 The description of the cartage is "'Cartage' here takes the form of an invoice for the transport of farm products by cart."
 
 The cassock is a floppy wearable thing. It covers the torso-area. The description is "An ankle-length robe of the most basic and severe black, the sort worn by priests of the more high-church denominations. It buttons down the front. In accordance with Atlantean traditions, white embroidery over the breast forms the letters A and Z."
