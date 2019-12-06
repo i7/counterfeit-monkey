@@ -1283,7 +1283,6 @@ Yourself has homonym index 1278.
 Some plural-pas have homonym index 1279.
 An alterna-tear has homonym index 1280.
 The passkey-thing has homonym index 1281.
-A generic-cup has homonym index 1282.
 [A cop has homonym index 1284.]
 The soap-sap-receptacle-supporter has homonym index 1286.
 The sop-dispenser has homonym index 1287.

@@ -233,7 +233,6 @@ The crosspiece is fake. [I2326_crosspiece]
 The crow rod is fake. [I1659_crow_rod]
 The crumb is fake. [I1652_crumb]
 The cud is fake. [I1574_cud]
-A generic-cup is fake.
 The curd is fake. [I1572_curd]
 The curse advertisement is fake. [I1624_curse_advertisement]
 The cut is fake. [I1577_cut]

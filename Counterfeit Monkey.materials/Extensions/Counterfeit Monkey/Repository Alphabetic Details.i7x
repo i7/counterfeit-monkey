@@ -771,8 +771,6 @@ The description of the crumb is "It's just one tiny little flake from a croissan
 
 The description of the cud is "It's best not to look too closely.". The scent-description is "grassy manure".
 
-The description of a generic-cup is "A black porcelain coffee cup, bearing the logo of my father's fav[our]ite soccer team The Atlantis Cuttlefish.". The printed name of a generic-cup is "cup". Understand "cup" or "coffee" or "black" or "porcelain" or "logo" or "cuttlefish" as a generic-cup.
-
 The curd is edible. The description of the curd is "A soft white clump of cheese substance."
 
 The curse advertisement is a fixed in place thing. The description is "It's an ad of the kind you sometimes find in the back of underground newspapers, offering to take off the rude-object restrictions off a letter-remover, 'for private home use only.'"

@@ -222,9 +222,6 @@ Unfortunately, having the towel swapped in for an electrical component starts a 
 After inserting the ass into the cryptolock when hardness is true and the cryptoswitch is switched on:
 	say "There is a churning noise from within [the cryptolock] and 'zoo' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like giraffes, bison, zebras, elephants, panthers, a polar bear and other charismatic megafauna in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
 
-After inserting a generic-cup into the cryptolock when hardness is false and the cryptoswitch is switched on:
-	say "There is a churning noise from within [the cryptolock] and 'cop' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like an All-Purpose Officer through the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
-
 After inserting the dog into the cryptolock when hardness is false and the cryptoswitch is switched on:
 	say "There is a churning noise from within [the cryptolock] and 'dig' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like a huge dig. It's a large affair: not child's a dig in the garden or even an archaeological dig undertaken with shovels and picks, but a massive industrial dig, the kind that happens beneath a major American city that didn't have the foresight to put down subways in 1890 when it would have been cheaper.
 

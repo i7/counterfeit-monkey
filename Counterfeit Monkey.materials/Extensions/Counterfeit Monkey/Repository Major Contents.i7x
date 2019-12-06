@@ -43,7 +43,6 @@ A chat is a kind of thing.
 A cod is a kind of thing.
 A cot is a kind of clothed bed.
 A CRT is a kind of device.
-A generic-cup is a kind of container.
 An eel is a kind of thing. [not "a kind of animal" because you get a dead eel]
 A git is a kind of man.
 A hairpiece is a kind of wearable thing.
