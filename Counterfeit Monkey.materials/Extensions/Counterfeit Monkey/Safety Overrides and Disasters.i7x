@@ -207,42 +207,31 @@ Unfortunately, having the towel swapped in for an electrical component starts a 
 [Cryptolock bucket]
 
 After inserting the ass into the cryptolock when hardness is true and the cryptoswitch is switched on:
-	say "There is a churning noise from within [the cryptolock] and 'zoo' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like giraffes, bison, zebras, elephants, panthers, a polar bear and other charismatic megafauna in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
+	cryptolock-refuse "zoo" instead.
 
 After inserting the dog into the cryptolock when hardness is false and the cryptoswitch is switched on:
-	say "There is a churning noise from within [the cryptolock] and 'dig' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like a huge dig. It's a large affair: not child's a dig in the garden or even an archaeological dig undertaken with shovels and picks, but a massive industrial dig, the kind that happens beneath a major American city that didn't have the foresight to put down subways in 1890 when it would have been cheaper.
-
-There's mud and stone and a cylindrical drilling machine five stories high. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
+	cryptolock-refuse "dig" instead.
 
 After inserting the pose into the cryptolock when hardness is false and the cryptoswitch is switched on:
-	say "There is a churning noise from within [the cryptolock] and 'pisa' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like a leaning tower through the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
+	cryptolock-refuse "pisa" instead.
 
 After inserting a tint into the cryptolock when hardness is true and the cryptoswitch is switched on:
-	say "There is a churning noise from within [the cryptolock] and 'ohio' appears in letters of vivid purple smoke. [We] get a confused impression of factories and battleground politics in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
+	cryptolock-refuse "ohio" instead.
 
 After inserting a tin-can into the cryptolock when hardness is false and the cryptoswitch is switched off:
-	say "There is a churning noise from within [the cryptolock] and 'ton' appears in letters of vivid purple smoke. [We] get a vision of a huge block of concrete in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
+	cryptolock-refuse "ton" instead.
 
 After inserting a tan into the cryptolock when hardness is false and the cryptoswitch is switched on:
-	say "There is a churning noise from within [the cryptolock] and 'tun' appears in letters of vivid purple smoke. [We] get a glimpse of a huge vat for wine in the smoke, about 250 gallons worth: the equivalent of three puncheons or four hogsheads or 14 rundlets. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
+	cryptolock-refuse "tun" instead.
 
 After inserting the band into the cryptolock when hardness is false and the cryptoswitch is switched on:
-	say "[bund-refusal-text]." instead.
+	cryptolock-refuse "bund" instead.
 
 After inserting the bond into the cryptolock when hardness is false and the cryptoswitch is switched off:
-	say "[bund-refusal-text]." instead.
+	cryptolock-refuse "bund" instead.
 
-To say bund-refusal-text:
-	say "There is a churning noise from within [the cryptolock] and 'bund' appears in letters of vivid purple smoke. [We] get a vision of a huge earthwork embankment, designed to prevent oil repositories from bursting their banks and spilling into the surrounding waters. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result".
-
-After inserting a pat-items into the cryptolock when hardness is false and the cryptoswitch is switched off:
-	say "[pets-refusal-text]." instead.
-
-After inserting a pit-items into the cryptolock when hardness is false and the cryptoswitch is switched on:
-	say "[pets-refusal-text]." instead.
-
-To say pets-refusal-text:
-	say "There is a churning noise from within [the cryptolock] and 'pets' appears in letters of vivid purple smoke. [We] get a glimpse of a huge squirming mass of little furry creatures in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result".
+To cryptolock-refuse (X - some text):
+	say "There is a churning noise from within [the cryptolock] and '[X]' appears in letters of vivid purple smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result."
 
 [Synthesizer and programmable dais, set to synthesize]
 
