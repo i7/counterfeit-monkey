@@ -1416,11 +1416,6 @@ The description of a May is usually "This is the sheet for the month of May, tor
 
 Meg is a proper-named woman. The description of Meg is "She's in her mid-sixties, with salt-and-pepper hair and a dry, rather sardonic smile."
 
-The printed name of me-object is "me". Understand "me" as the me-object. The description of the me-object is "It's an abstract that looks like a bit of mirror. When I look at it I see Alex, my proper self, and not just restored to my usual body, but photo-retouched to be that bit smarter and freer of skin-blemishes, well-dressed. It's like looking in the mirror at reality as it should be.
-
-You doubtless see yourself too [--] as you are, or perhaps as you want to be." The me-object is r-abstract.
-
-
 The description of the member is "It is a figure of a member of the Committee to Establish an Orthodox Orthography. It is plastic, small enough to sit on our palm, and wears the stiff clothing and conservative hairstyle of about 1895. It looks slightly cross, as though the member has guessed its work would take another 15 years to complete."
 
 The alterna-members are a naughty-sounding r-abstract thing. The printed name is "members". Understand "members" as the alterna-members. The description is "A group of floating green numbers, currently [a random number between 1 and 30], [a random number between 31 and 70], and [a random number between 71 and 100]: perhaps members of the set of integers, then?"

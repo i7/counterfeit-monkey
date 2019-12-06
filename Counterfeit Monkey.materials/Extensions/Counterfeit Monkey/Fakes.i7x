@@ -44,7 +44,6 @@ An it-object is fake. [K123_it_object]
 A lee is fake. [K124_lee]
 [A mart is fake.] [K125_mart]
 A mat is fake. [K126_mat]
-A me-object is fake.
 A net is fake. [K128_net]
 A nit is fake. [K129_nit]
 An ode is fake. [K130_ode]
