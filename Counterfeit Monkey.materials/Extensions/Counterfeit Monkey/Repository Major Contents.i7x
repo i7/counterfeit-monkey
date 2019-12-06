@@ -107,7 +107,7 @@ A TNT is a kind of thing.
 A top-toy is a kind of thing.
 A tot is a kind of woman.
 A tote-bag is a kind of container.
-A tram is a kind of thing.
+A tram is a kind of vehicle.
 A yam-cart is a kind of cart.
 [A yam is a kind of vegetable.] [* The yam kind is actually defined earlier because we need one for the farmer to be carrying, as well.]
 
