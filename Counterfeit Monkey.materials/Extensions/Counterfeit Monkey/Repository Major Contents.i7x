@@ -30,7 +30,6 @@ A bet is a kind of thing.
 A bit is a kind of thing.
 A bot is a kind of thing.
 A generic-cap is a kind of floppy wearable thing.
-An alterna-cap is a kind of thing.
 A carp is a kind of thing. [not "a kind of animal" because you get a dead carp]
 Some carpi are a kind of plural-named thing.
 A cat is a kind of neuter animal.

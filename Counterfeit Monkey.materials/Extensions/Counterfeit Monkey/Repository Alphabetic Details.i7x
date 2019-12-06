@@ -434,20 +434,6 @@ Every generic-cap covers the head area. The description of a generic-cap is "A b
 
 The description of an alterna-cap is "A small plastic snap cap that looks like it used to sit on a tube or bottle of some kind."
 
-Understand "cap" or "plastic" and "snap" as an alterna-cap. The printed name of alterna-cap is "cap".
-
-Sanity-check putting an alterna-cap on the tube:
-	say "The cap doesn't fit. It must belong to a different tube." instead
-
-Sanity-check putting an alterna-cap on the bottle of vodka:
-	say "The vodka bottle already has a cap." instead
-
-Sanity-check putting an alterna-cap on the bottle of ouzo:
-	say "The ouzo bottle already has a cap." instead
-
-Sanity-check putting an alterna-cap on an contained fluid thing (called current bottle):
-	say "[The current bottle] already [have] [if the current bottle is plural-named]caps[otherwise]a cap[end if]." instead.
-
 The description of the cartage is "'Cartage' here takes the form of an invoice for the transport of farm products by cart."
 
 The cassock is a floppy wearable thing. It covers the torso-area. The description is "An ankle-length robe of the most basic and severe black, the sort worn by priests of the more high-church denominations. It buttons down the front. In accordance with Atlantean traditions, white embroidery over the breast forms the letters A and Z."
