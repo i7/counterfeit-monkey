@@ -1395,9 +1395,6 @@ The louse is an insect. The heft of the louse is 1. Understand "lice" as the lou
 
 Section 8 - M through O
 
-The description of a ma is "She's a Norman Rockwell figure: smiling in her apron, trying to keep up a perfect appearance while visibly exhausted from all her housework. Doesn't actually come with a child attached." Understand "figure" or "apron" as a ma.
-	The scent-description of a ma is "soap".
-
 The description of a mama is "Like a ma, only longer ago: not Norman Rockwell, but a Victorian Mama, in a long dark dress hiding a corset, her hair in a tight bun at the back of the neck." Understand "dress" and "corset" and "lady" and "bun" as a mama.
 	The greeting of a mama is "'Well, hello to you, Ma'am,' says the mama."
 	The scent-description of a mama is "carbolic soap".

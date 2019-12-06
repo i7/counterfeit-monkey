@@ -54,7 +54,6 @@ A lee is a kind of container.
 [A mart is a kind of thing.]
 A mat is a kind of supporter. A mat is usually portable.
 A May is a kind of thing.
-A ma is a kind of woman.
 A mama is a kind of woman.
 A net is a kind of container.
 A nit is a kind of thing.
@@ -167,7 +166,7 @@ The repository contains an ale, an applet, a lappet, a tale, a tamale, and a tat
 [army]
 
 The repository contains Amy, an arm,
-	a ram, a yam, a May, a ma, a Mary, [anagram]
+	a ram, a yam, a May, a Mary, [anagram]
 	a tram, [t-insert]
 	[a mart,] [anagram]
 	an art, a mat, a mama, [derive]
@@ -331,7 +330,7 @@ The repository contains a rate, a cate, a rat, a cat,
 The repository contains a single ream, a ram, Ra,
 	a tram, a rat, [t-insert derivatives]
 	a tam, [derive insertables]
-	a mare, [a mart,] a tar, an art, a mat, a ma, [anagram all]
+	a mare, [a mart,] a tar, an art, a mat, [anagram all]
 	a tart, an alterna-tart. [t-insert]
 
 [crumbs]
@@ -396,7 +395,7 @@ The repository contains a garage. [the garbage]
 The repository contains a mug, [anagram/spinner]
 	a mu, [letter-removal]
 	a mut and a mutt, [t-insertion]
-	a mat, a Matt, a ma, a mama, a gam, a mag, a Meg, a me-object, a gem.  [vowel-rotation]
+	a mat, a Matt, a mama, a gam, a mag, a Meg, a me-object, a gem.  [vowel-rotation]
 
 [gimlet]
 
@@ -856,7 +855,7 @@ The repository contains a rap, a clothing-wrap,
 	a pet, a pit, a pot, an alterna-pot. [vowel-rotation]
 
 [yam]
-The repository contains an Amy and a May and a ma and a yam-cart. [yam + cart]
+The repository contains an Amy and a May and and a yam-cart. [yam + cart]
 
 [yellow paint lettering]
 The repository contains an elegantly winter pilot.
