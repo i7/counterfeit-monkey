@@ -54,7 +54,6 @@ A lee is a kind of container.
 [A mart is a kind of thing.]
 A mat is a kind of supporter. A mat is usually portable.
 A May is a kind of thing.
-A mama is a kind of woman.
 A net is a kind of container.
 A nit is a kind of thing.
 An ode is a kind of thing.
@@ -169,7 +168,7 @@ The repository contains Amy, an arm,
 	a ram, a yam, a May, a Mary, [anagram]
 	a tram, [t-insert]
 	[a mart,] [anagram]
-	an art, a mat, a mama, [derive]
+	an art, a mat, [derive]
 	a tart, an alterna-tart, [t insert]
 	a rat, a tar. [anagram]
 
@@ -395,7 +394,7 @@ The repository contains a garage. [the garbage]
 The repository contains a mug, [anagram/spinner]
 	a mu, [letter-removal]
 	a mut and a mutt, [t-insertion]
-	a mat, a Matt, a mama, a gam, a mag, a Meg, a me-object, a gem.  [vowel-rotation]
+	a mat, a Matt, a gam, a mag, a Meg, a me-object, a gem.  [vowel-rotation]
 
 [gimlet]
 

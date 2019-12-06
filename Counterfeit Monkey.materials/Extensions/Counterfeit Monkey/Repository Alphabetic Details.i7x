@@ -1395,10 +1395,6 @@ The louse is an insect. The heft of the louse is 1. Understand "lice" as the lou
 
 Section 8 - M through O
 
-The description of a mama is "Like a ma, only longer ago: not Norman Rockwell, but a Victorian Mama, in a long dark dress hiding a corset, her hair in a tight bun at the back of the neck." Understand "dress" and "corset" and "lady" and "bun" as a mama.
-	The greeting of a mama is "'Well, hello to you, Ma'am,' says the mama."
-	The scent-description of a mama is "carbolic soap".
-
 The description of the mag is "It's a glossy magazine for photography enthusiasts on the island. There's a several page spread of tilt-shift images of the harbor, making it all look like a child's toy set." Understand "magazine" as the mag.
 
 The description of the mall figurine is "It's a painted porcelain representation of a shopping mall. Delicate brushwork delineates the spaces in the parking lot, and the pharmacy sign has been modeled with special care." The mall figurine is fixed in place.
