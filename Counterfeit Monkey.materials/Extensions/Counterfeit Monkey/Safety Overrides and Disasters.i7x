@@ -104,19 +104,6 @@ Section 3 - Custom game enders
 
 [Letter-remover]
 
-Check waving the letter-remover at the pants when the current setting of the letter-remover is "p":
-	if the letter-remover is not creature-enabled:
-		say "The pants flicker and there is a brief image of some ants in their place, but a legal override kicks in: a P-remover is hardware-crippled to prevent generating any living creature." instead;
-	otherwise:
-		say "[random-letter-removal-text]the pants turn into some ants. A huge amount of them, in fact, large and fire-red. They crawl [unless the player carries the pants]out of [the holder of the pants] and [end if]all over our body, giving us several painful stings.
-
-Did I never tell you about my fire ant allergy? My mother was always absurdly protective because I nearly died when I was two. I think that explains a few things about my personality.
-
-[We] can just hope the synthesis process has changed that about our body.
-
-Are those hives? I can't breathe; can you?";
-		end the story saying "[We] have succumbed to an allergen".
-
 Check waving the letter-remover at the massive plug when the current setting of the letter-remover is "l":
 	say "With a pleasant smell of puppies, the massive plug turns into a massive pug. Its wrinkly, short-muzzled face, curled tail and fine, glossy coat of fawn fur would be adorable if not for the fact that it is large enough to fill the entire room.
 
