@@ -96,7 +96,7 @@ An exit attempt rule for a person (called exiter):
 		say "."
 
 
-Section 3 - Ushering animals and people on and off dais and synthesizer
+Section 3 - Ushering animals and people on and off transformation tools
 
 Understand "usher [someone] onto/on/up/into/in [something]" as ushering it onto. Ushering it onto is an action applying to two things.
 
