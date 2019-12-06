@@ -150,7 +150,6 @@ A colorful skirts has hash code 1985828. [K2_thing]
 A confetti mess has hash code 815412. [K2_thing]
 A contraband box has hash code 9068559. [K5_container]
 A cot has hash code 540676. [K115_cot]
-A CPU has hash code 1081348.
 A crowds has hash code 4603916. [K7_backdrop]
 A current-paragraph has hash code 1745109. [K2_thing]
 A map-customer has hash code 1986580. [K11_woman]

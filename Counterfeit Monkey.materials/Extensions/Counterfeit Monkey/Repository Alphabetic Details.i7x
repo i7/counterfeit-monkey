@@ -754,8 +754,6 @@ The description of the counterweight is "A very substantial hunk of metal with a
 
 The description of the countertop is "The result is a slab of good black granite, shiny and easy to clean, with a pre-cut hole, probably where a kitchen sink would be meant for installation." The heft of the countertop is 8.
 
-The description of a CPU is "A central processing unit, the brains of pretty much every modern device. This one is stamp-sized, with rows of tiny legs on every side.". Understand "processing" or "central" or "unit" or "legs" as a CPU.
-
 The cratering is r-abstract. The indefinite article is "some". The heft is 0. The description is "It's an image, light as air, of the moon and the craters on it."
 
 The crew-group is a privately-named plural-named person. The description of the crew-group is "Five (or six? it's extremely hard to count) swarthy sailors. They look buff and burly and have very thick eyebrows." The heft of the crew-group is 6.  The printed name of the crew-group is "crew". Understand "crew" as the crew-group.

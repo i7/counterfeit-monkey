@@ -225,7 +225,6 @@ The cork is fake. [I1935_cork]
 The counter-alternate is fake. [I1621_counter_alternate]
 The counterweight is fake. [I2322_counterweight]
 The countertop is fake. [I2323_countertop]
-A CPU is fake.
 The cratering is fake. [I2324_cratering]
 The crew-group is fake. [I1954_crew_group]
 The cross is fake. [I1654_cross]
