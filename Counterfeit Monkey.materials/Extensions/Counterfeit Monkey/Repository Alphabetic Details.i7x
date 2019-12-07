@@ -1681,21 +1681,10 @@ Rule for writing a paragraph about a pa (called item):
 	otherwise:
 		if N is greater than 1:
 			say ". Next to him are [N in words] other pas";
-	let P be the number of plural-pas in location;
-	if P is greater than 1:
-		say ". Next to [if N > 1]them[otherwise]him[end if] are [P in words] entire groups of pas, standning separate";
-	otherwise:
-		if P is 1:
-			say ". Next to [if N > 1]them[otherwise]him[end if] is a group of pas, standning separate";
-	now every plural-pas in location is mentioned;
 	now every pa in location is mentioned;
 	say ".[paragraph break]".
 
 After reading a command (this is the replace plurals rule):
-	if the player's command includes "pas" and there is a plural-pas enclosed by location:
-		replace the matched text with "plural-pas";
-	if the player's command includes "pa" and there is a plural-pas enclosed by location and there is a pa enclosed by location:
-		replace the matched text with "pa-singular";
 	if the player's command includes "tents" and there are some plural-tents enclosed by location:
 		replace the matched text with "plural-tents";
 	if the player's command includes "tent" and there are some plural-tents enclosed by location and there is a tent enclosed by location:
@@ -1721,40 +1710,6 @@ Table of Ultratests (continued)
 topic	stuff	setting
 "pas"	{ secret-plans, soap, tub }	Roget Close
 "pa"	{ secret-plans, soap, tub }	Roget Close
-
-The description of some plural-pas is "A whole fleet of gruff, upstanding, fatherly men." The printed name of a plural-pas is "pas". Understand "pas" or "pa" or "group" or "groups" or "fleet" as the plural-pas.
-	The scent-description of some plural-pas is "shaving cream".
-	The greeting of some plural-pas is "'Hello there, young lady,' one of them replies."
-
-Rule for writing a paragraph about some plural-pas (called item):
-	say "[The item] you summoned are standing nearby, looking slightly confused";
-	let N be the number of plural-pas in location;
-	if N is 2:
-		say ". Next to them is another group of pas";
-	now N is the number of pas in location;
-	if N is greater than 1:
-		say ". Next to them are [N in words] single pas, standning separate";
-	otherwise:
-		if N is 1:
-			say ". Next to them is a single pa, standning separate";
-	now every plural-pas in location is mentioned;
-	now every pa in location is mentioned;
-	say ".[paragraph break]".
-
-Rule for printing the plural name of plural-pas:
-	say "groups of pas".
-
-Instead of subject-asking when the current interlocutor is a plural-pas:
-	say "'Huh,' one of them says, in a gruff pre-occupied way."
-
-Instead of kissing plural-pas:
-	say "[one of][We] plant a kiss on the slightly stubbled cheek of one of them. He reddens.[or][We] lean in for another, but they dodge.[or]Would you take off[ense] if I mentioned I find this all a bit uncomfortable?[or]They clearly do not want our girlish affections.[stopping]".
-
-Instead of attacking plural-pas:
-	say "If it came to a fight, they would win easily."
-
-Report involuntarily-dropping plural-pas:
-		say "[The noun] are very heavy, and some of them wind up (before their transformation is complete) stepping on our feet, then scrambling away (with apologies)." instead.
 
 [The description of PARC is "Palo Alto Research Center [--] tons and tons of 1970s-era high-tech plastic, steel, and concrete. At least the carp didn't turn into crap." The heft of PARC is 1000. The scent-description of PARC is "burnt electronics dust".]
 

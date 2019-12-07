@@ -62,7 +62,6 @@ A self-object is a kind of thing. ["I"]
 A pa is a kind of man.
 A par is a kind of thing.
 A part is a kind of thing.
-Some plural-pas are a kind of plural-named man.
 A pat is a kind of thing.
 Some pat-items are a kind of thing.
 A pet is a kind of neuter animal.
@@ -586,8 +585,8 @@ In the repository are some iron-pans, a plan, an i-pan,
 	a snap, an alterna-snap, a nap, a splat, a tap, a spit, a spat, a tan, [anagram all]
 	a sap, a slat, [derive anagrams]
 	a pet, a pot, an alterna-pot, a ten-object, an Ent, [vowel rotation]
-	a spa, a pa, some plural-pas, an as, [derive derivatives]
 	a pita, [pa + it-object from e.g. ball->ba->bat->bet->bit] a PTA,
+	a spa, a pa, an as, [derive derivatives]
 	a salt, a top-toy, a net. [anagram derivatives]
 
 [polling charts]
@@ -735,7 +734,6 @@ The repository contains a mall figurine.
 
 The repository contains a sap, a sap-liquid, a sop,
 	a pa, a pita, a PTA, a pit,
-	some plural-pas, an as, [spinner]
 	a stop, some pat-items, [t-insert derivatives]
 	a top-toy, [derive insertions]
 	some plural-pots, a spot, a pot, an alterna-pot. [anagram all]
