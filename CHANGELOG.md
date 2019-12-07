@@ -13,7 +13,7 @@
 - All of the original objects will now be restored after gelling something created by honomym-changing a synthesized thing.
 - The single ream will no longer be covered in origin paste when created from the cream.
 - The player will be allowed into Arbot Maps & Antiques even if the appointment card is inside the backpack.
-- When a fuelled car is turned into something else, it will still be fuelled when re-created.
+- When a fuelled car is turned into something else, it will still be fuelled when re-created. The same applies to a car fixed by the mechanic.
 - The monocle now works properly when examining things that can be written on.
 - It was impossible to enter a car if there was a noisy thing outside it.
 
@@ -48,7 +48,7 @@
 - Adds MA, MAMA, ME, PAS (plural pa), PASSKEY, another kind of plural PITS, plural PIT TRAPS, two kinds of CAP (from the carp), a CUP (wovel-rotating the cap), a CPU (anagramming the cup), and a non-liquid kind of TEAR.
 - Fixes the broken plural ILLS and plural POTS that were listed in the code but impossible to create.
 - Adds responses to attempts to make ANTS, IN, COP, COCKPITS, CARTS, MAYAS, PITAS, PETS, SINK RAIN, INK DRAIN, SIN DRAIN, INK TAP, and SIN TAP.
-- Creating CAT ARMY, COMPLICIT SHARK SCREE, SORD, TOMS, RIG, or ROCK BAND no longer ends the game. This makes it possible to create some previously unreachable objects, such as TOMCATS.
+- Creating CAT ARMY, COMPLICIT SHARK, SCREE, SORD, TOMS, RIG, or ROCK BAND no longer ends the game. This makes it possible to create some previously unreachable objects, such as TOMCATS.
 - Creating TILLS does end the game, however, saving us from implementing plural TOLLS  and TELLS.
 - The TRAM is now a portable model, so that the TRAMCAR and the TRAMPET can be created.
 - The joke responses to attempting to synthesize ROCK and ROLL, KEY-LIME and PI, SILL and CATE, and PAN and EAR now work when using the programmable dais as well as the synthesizer.
