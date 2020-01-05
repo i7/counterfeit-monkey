@@ -1,5 +1,7 @@
 Version 2/180527 of Postures by Emily Short begins here.
 
+[NOTE: If you are considering using this in your own project, the version in the extensions repository is probably better: https://github.com/i7/extensions/blob/master/Emily%20Short/Postures.i7x ]
+
 "Postures defines three postures -- seated, standing, and reclining -- and allows pieces of furniture to specify which postures are possible and preferred when the player is on those furnishings."
 
 Section 1 - The Concenpt
