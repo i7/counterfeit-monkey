@@ -2221,7 +2221,7 @@ Instead of burning the picrate:
 
 The description of Picross is "It appears to be a Japanese puzzle game for hand-held consoles, but since [we] don't have one of those, it won't be much use."
 
-The pict is a man. The description of the pict is "A long-boned man with a fair thatch of hair, [if the pict wears the coarse woolen clothing]dressed in coarse woolen clothing[end if][if the pict wears the coarse woolen clothing and the pict wears the silver chain] and [end if][if the pict wears the silver chain]wearing a silver chain around his neck[end if][if the number of things worn by the Pict is 0]dressed only in a savage self-confidence[end if]. He doesn't look as though he speaks English, somehow."
+The pict is a man. The description of the pict is "A long-boned man with a fair thatch of hair, [if the pict wears the coarse woolen clothing]dressed in [coarse woolen clothing][end if][if the pict wears the coarse woolen clothing and the pict wears the silver chain] and [end if][if the pict wears the silver chain]wearing a [silver chain] around his neck[end if][if the number of things worn by the Pict is 0]dressed only in a savage self-confidence[end if]. He doesn't look as though he speaks English, somehow."
 	The scent-description is "barley and cattle".
 	The Pict wears a silver chain and coarse woolen clothing.
 	The greeting of the Pict is "'Yah!' says the Pict. Not clear whether this means 'Hello, friend' or 'I plan soon to cleave your skull with my axe,' but he's noticed we're here."
