@@ -1675,7 +1675,13 @@ Rule for printing the plural name of oil:
 Instead of tasting oil:
 	say "Once again, your ideas disturb me."
 
-The description of the oil-painting is "Just one painting, but a very valuable one nonetheless, showing Ms Shaply as a young woman." Understand "oil" or "painting" as the oil-painting. The printed name of the oil-painting is "oil painting".
+The description of the oil-painting is "Just one painting, but a very valuable one nonetheless, showing Ms Shaply as a young woman." Understand "oil" or "painting" as the oil-painting. The printed name of the oil-painting is "oil painting". The heft of the oil-painting is 5.
+
+Check inserting the oil-painting into something which is not the t-inserter:
+	say "[The noun] is much too large to fit inside [the second noun]." instead.
+
+Check putting the oil-painting on something:
+	say "The [oil-painting] is too large to fit on [the second noun]." instead.
 
 The orc is a man. Understand "grunk" as the orc. The description of the orc is "He's dressed in the traditional smelly pants of an orcish pig farmer."
 	The greeting of the orc is "'Orc happy to meet stranger,' says the orc."
