@@ -428,7 +428,7 @@ The built-in table has homonym index 424.
 The bull has homonym index 425.
 [The bund has homonym index 426.]
 The bus bays has homonym index 427.
-[The buses has homonym index 428.]
+The buses have homonym index 428.
 The bushes has homonym index 429.
 The business-school-exterior has homonym index 430.
 The button-up shirt has homonym index 431.
@@ -572,7 +572,7 @@ Enormous padlocks has homonym index 568.
 The equipment shelves has homonym index 569.
 The era has homonym index 570.
 The ermine has homonym index 571.
-[The fake-bus has homonym index 572.]
+The fake-bus has homonym index 572.
 The fake-punt has homonym index 573.
 [The fame has homonym index 574.]
 The fancy locks has homonym index 575.

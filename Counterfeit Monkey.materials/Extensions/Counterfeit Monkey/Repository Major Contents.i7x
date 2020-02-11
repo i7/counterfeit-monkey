@@ -224,7 +224,7 @@ The repository contains a ban and an alterna-band
 
 [basis]
 
-[The repository contains a fake-bus and some buses.]
+The repository contains a fake-bus and some buses.
 
 [big lever]
 
@@ -899,8 +899,8 @@ A bantam is in the repository.
 [band]
 The repository contains a bandit and a bandage.
 
-[bins]
-[The repository contains some basins, a basis, a bass, a bass-fish, a ba.] [There are no bins (plural) in the game any more (only a singular bin).]
+[bin]
+The repository contains some basins, a basis, a bass, a bass-fish, a ba.
 
 [car]
 The repository contains a carpet, 3 carpi, 3 carp, 3 generic-caps, 3 alterna-caps,

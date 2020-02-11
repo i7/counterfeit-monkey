@@ -30,7 +30,7 @@ Table of Fishy Things
 item (a thing)	made (a truth state)
 the sunlit ray	false
 the complicit shark	false
-[the bass-fish	false]
+the bass-fish	false
 the ahi	false
 the carp-sample	false
 the char-sample	false

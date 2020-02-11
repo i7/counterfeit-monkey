@@ -520,10 +520,10 @@ The barker has hash code 132115. [I509_barker]
 The barman has hash code 143363. [I723_barman]
 The bartender has hash code 663579. [I778_bartender]
 The basin has hash code 270595. [I2291_basin]
-[The basins has hash code 52495360.] [I2297_basins]
-[The basis has hash code 50398208.] [I2298_basis]
-[The bass has hash code 50332672.] [I2299_bass]
-[The bass-fish has hash code 50332672.] [I2300_bass_fish]
+The basins have hash code 52495360. [I2297_basins]
+The basis has hash code 50398208. [I2298_basis]
+The bass has hash code 50332672. [I2299_bass]
+The bass-fish has hash code 50332672. [I2300_bass_fish]
 The game-selection has hash code 948607. [I1165_game_selection]
 The bed has hash code 26. [I1096_fancy_bed]
 The beige buildings has hash code 1321306. [I480_beige_buildings]
@@ -567,7 +567,7 @@ The built-in table has hash code 1583379. [I1159_built_in_table]
 The bull has hash code 1050626.
 [The bund has hash code 1056778.]
 The bus bays has hash code 18087939.
-[The buses has hash code 1310738.]
+The buses have hash code 1310738.
 The bushes has hash code 1310866.
 The business-school-exterior has hash code 1337750. [I849_business_school_exterio]
 The button-up shirt has hash code 2023810. [I727_button_up_shirt]

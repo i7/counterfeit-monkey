@@ -258,13 +258,13 @@ Instead of listening to the location in the presence of the bard:
 
 The basin is a container. The description of the basin is "A stainless steel bowl, appropriate to cooking or perhaps surgery."
 
-[The basins are a container. The description of the basins is "A couple of nested metal bowls, so generic they might equally be used for mixing dough or for holding vital organs during a surgery. The irksome thing is that, having been made as a matched set, they cannot really be separated."]
+The basins are a container. The description of the basins is "A couple of nested metal bowls, so generic they might equally be used for mixing dough or for holding vital organs during a surgery. The irksome thing is that, having been made as a matched set, they cannot really be separated."
 
-[A basis is an r-abstract thing. The description is "It's abstract, but the best the abstraction was able to come up with in this case is something that looks like a small portable pedestal. Perhaps the base on which things are established? Something like that."]
+A basis is an r-abstract thing. The description is "It's abstract, but the best the abstraction was able to come up with in this case is something that looks like a small portable pedestal. Perhaps the base on which things are established? Something like that."
 
-[A bass is an r-abstract noisy thing. The description is "A deep resonant voice with very little visible at all, save a kind of trembling in the air. There's no mistaking where it is, though. It's currently [one of]reading out the nightly news, mostly about the great success of Serial Comma Day celebrations[or]singing a popular drinking song about synonyms[or]practicing scales[at random]." The heft of the bass is 0.]
+A bass is an r-abstract noisy thing. The description is "A deep resonant voice with very little visible at all, save a kind of trembling in the air. There's no mistaking where it is, though. It's currently [one of]reading out the nightly news, mostly about the great success of Serial Comma Day celebrations[or]singing a popular drinking song about synonyms[or]practicing scales[at random]." The heft of the bass is 0.
 
-[The bass-fish is a privately-named thing. The description is "A trophy of a fish. I don't know much about species, but it does look like it has a big mouth, certainly." The printed name is "bass". Understand "bass" or "fish" as the bass-fish. The heft of the bass-fish is 3.]
+The bass-fish is a privately-named thing. The description is "A trophy of a fish. I don't know much about species, but it does look like it has a big mouth, certainly." The printed name is "bass". Understand "bass" or "fish" as the bass-fish. The heft of the bass-fish is 3.
 
 The heft of the bat is 1. The description of the bat is "It's small and black-furred, and looks like it would rather be in a cool dark place alone with some fruit."
 
@@ -381,9 +381,9 @@ The bull is an animal. The description of the bull is "He looks as though he has
 
 [The heft of the bund is 10. The description of the bund is "An earthwork embankment designed to prevent oil repositories from bursting their banks and spilling into the surrounding waters."]
 
-[The heft of a fake-bus is 10. The description of a fake-bus is "It's one of the coaches that runs a regular service between here and Maiana. The windows are tinted to keep off the worst of the afternoon glare.". The printed name of the fake-bus is "bus". Understand "bus" as the fake-bus.]
+The heft of a fake-bus is 10. The description of a fake-bus is "It's one of the coaches that runs a regular service between here and Maiana. The windows are tinted to keep off the worst of the afternoon glare.". The printed name of the fake-bus is "bus". Understand "bus" as the fake-bus.
 
-[The heft of some buses is 10. The description of buses is "There's a whole fleet of them, perhaps every bus on the island. They're dusty: the road to Maiana gets dry in the summer."]
+The heft of some buses is 10. The description of buses is "There's a whole fleet of them, perhaps every bus on the island. They're dusty: the road to Maiana gets dry in the summer."
 
 Section 3 - C
 

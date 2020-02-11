@@ -117,12 +117,6 @@ Did I never tell you about my fire ant allergy? My mother was always absurdly pr
 Are those hives? I can't breathe; can you?";
 		end the story saying "[We] have succumbed to an allergen".
 
-Check waving the letter-remover at the bushes when the current setting of the letter-remover is "h":
-	say "[random-letter-removal-text]the bushes turns into some buses. There's a whole fleet of them, perhaps every bus on the island. They're dusty: the road to Maiana gets dry in the summer.
-
-Unfortunately, the buses are more than enough to bury [us] under their bulk.";
-	abide by the game-ending rule.
-
 Check waving the letter-remover at the massive plug when the current setting of the letter-remover is "l":
 	say "With a pleasant smell of puppies, the massive plug turns into a massive pug. Its wrinkly, short-muzzled face, curled tail and fine, glossy coat of fawn fur would be adorable if not for the fact that it is large enough to fill the entire room.
 
