@@ -2330,9 +2330,6 @@ Check inserting something into the cryptolock when the cryptolock contains somet
 	if the blockage is in the cryptolock:
 		stop the action.
 
-Check inserting something into the cryptolock when the heft of the noun is greater than 3:
-	say "[The noun] [are] too big to fit into [the cryptolock]." instead.
-
 Check entering the cryptolock:
 	say "[We] wouldn't fit. And even if [we] did, [we]['re] not sure it would be such a good idea." instead.
 

@@ -280,6 +280,10 @@ A try reaching rule for something (called the target):
 		say "[We] cannot reach [the second noun] from here.";
 		abide by the cancel multiple rule.
 
+Check inserting something heavy into something when the carrying capacity of the second noun is 1:
+	unless the second noun is the t-inserter:
+		say "[The noun] [are] too big to fit into [the second noun]." instead.
+
 After opening an opaque container (called the box):
 	if the box is open:
 		mark contents of box visible;
