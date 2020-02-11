@@ -660,7 +660,7 @@ A rubber stamp is a thing on the inlaid desk. The description is "It is made to 
 
 Understand "stamp [text]" as a mistake ("It seems unlikely that our tampering would go unnoticed.") when the rubber stamp is marked-visible.
 
-The oil-paintings are scenery in Personal Apartment. They are plural-named. The printed name is "[if looking]Oil[otherwise]oil[end if] paintings". Understand "oil" or "painting" or "paintings" or "portraits" or "portrait" as the oil-paintings. The description is "They look like originals. I have seen some of these portraits before, in books at school or in the museum, but was given to understand that they'd been stolen, leaving only photographs or replicas."
+The oil-paintings are scenery in Personal Apartment. They are plural-named. The printed name is "[if looking]Oil[otherwise]oil[end if] paintings". Understand "oil" or "painting" or "paintings" or "portraits" or "portrait" as the oil-paintings. The heft of the oil-paintings is 5. The description is "They look like originals. I have seen some of these portraits before, in books at school or in the museum, but was given to understand that they'd been stolen, leaving only photographs or replicas."
 
 The oil-paintings can be stolen. The oil-paintings are not stolen.
 
