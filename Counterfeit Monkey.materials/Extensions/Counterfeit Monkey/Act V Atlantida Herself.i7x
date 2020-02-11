@@ -161,7 +161,7 @@ Instead of going north in Wonderland when the secret-door is closed and The Orac
 
 Section 3 - Equipment Archive
 
-Equipment Archive is a room. It is indoors, forbidden and southern. The description is "The ceiling is mirrored, perhaps to make it harder for anyone to sneak around without being noticed among the shelves."
+Equipment Archive is a room. It is indoors, forbidden and southern. The description is "The [if boldening is true][bold type][end if]ceiling[roman type] is mirrored, perhaps to make it harder for anyone to sneak around without being noticed among the shelves."
 
 A ceiling mirror is a mirror in the Equipment Archive.
 
