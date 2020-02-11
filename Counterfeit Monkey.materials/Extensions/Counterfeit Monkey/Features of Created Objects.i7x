@@ -183,7 +183,7 @@ Include (-
 
 	[ Burden o;
 		for (o=child(player) : o : ) {
-			if (o.(+ heft +) > 3)
+			if (o.(+ heft +) > 3 || o has scenery || o has static)
 				return o;
 			if (child(o)) o = child(o);
 			else
