@@ -1943,7 +1943,7 @@ Before local looking Lecture Hall 1:
 Test page with "tutorial off / look / x podium / look" in Lecture Hall 1.
 
 The conference poster is a fixed in place thing in Lecture Hall 1. Understand "title" or "papyrus" or "font" or "daguerreotype" or "catchy" or "portly woman" or "speakers" or "pictures" or "inset" or "waterstone" as the conference poster.
-	The initial appearance is "A poster at the front of the room announces a conference on cultural reactions to linguistic change. It is being held in Nice the day after tomorrow, with Professor Waterstone as keynote speaker, on the topic of 'homonym shame'."
+	The initial appearance is "A [poster] at the front of the room announces a conference on cultural reactions to linguistic change. It is being held in Nice the day after tomorrow, with Professor Waterstone as keynote speaker, on the topic of 'homonym shame'."
 	The introduction is "Somehow I had forgotten about the date of this: I've been too much worried about our escape."
 	The description is "It's the usual sort of thing: the conference title set in Papyrus font; a stock daguerreotype of a portly woman holding a letter-remover the size of a policeman's cosh; inset pictures of the major speakers, with pride of place for Waterstone himself."
 
