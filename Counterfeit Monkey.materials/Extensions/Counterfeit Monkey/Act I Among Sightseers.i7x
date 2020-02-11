@@ -1198,7 +1198,7 @@ This is the diorama follow-on rule:
 		if the diorama table does not support anything:
 			say "The scenery appears to have been hot-glued in place.";
 		otherwise:
-			say "[The list of things on the diorama table] [are] movable, but the rest of the scenery appears to have been hot-glued in place.";
+			say "[The list of things *in the diorama table] [if the number of things on the diorama table is 1 and the members are not on the diorama table]is[otherwise]are[end if] movable, but the rest of the scenery appears to have been hot-glued in place.";
 		rule succeeds.
 
 
