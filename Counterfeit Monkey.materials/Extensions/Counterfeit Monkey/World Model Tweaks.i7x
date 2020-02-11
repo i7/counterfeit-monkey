@@ -238,7 +238,7 @@ Check an actor inserting something into (this is the new can't insert what's not
 		continue the action;
 	stop the action.
 
-The new can't insert what's not held rule is listed instead of the can't insert what's not held rule in the check inserting it into rulebook
+The new can't insert what's not held rule is listed instead of the can't insert what's not held rule in the check inserting it into rulebook.
 
 Instead of inserting something into a supporter which incorporates a drawer (called target drawer):
 	try inserting the noun into target drawer.
