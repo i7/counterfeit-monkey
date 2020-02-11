@@ -3926,7 +3926,7 @@ Test coffer with "load gun / shoot cup" [holding the anagramming gun and the bul
 
 The tidy puce coffer is a closed openable container. The description is "It's a heavy, old-fashioned box with a peaked lid, lacquered all over in a shade somewhere between dark pink and dusty purple. It is very clean and precisely crafted."
 
-The tilting-piano is an instrument. Understand "tilting" or "piano" as the tilting-piano. The printed name of the tilting-piano is "tilting piano". The description is "The legs on one side of the piano are very much lower than on the other side, so that the keyboard can only be played by someone with a very unconventional posture. To make the object look all the more carnivalesque, it is painted white and studded with blue and white rhinestones."
+The tilting-piano is an instrument. Understand "tilting" or "piano" as the tilting-piano. The printed name of the tilting-piano is "tilting piano". The heft of the tilting-piano is 5. The description is "The legs on one side of the piano are very much lower than on the other side, so that the keyboard can only be played by someone with a very unconventional posture. To make the object look all the more carnivalesque, it is painted white and studded with blue and white rhinestones."
 
 Table of Ultratests (continued)
 topic	stuff	setting
