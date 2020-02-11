@@ -1918,7 +1918,10 @@ After deciding the scope of the player when the location is Lecture Hall 1:
 
 Rule for listing exits when looking in Lecture Hall 1: do nothing instead.
 
-The printed name is "Lecture Hall (at the podium)". Understand "podium" or "at podium" or "at the podium" or "(at podium)" or "(at the podium)" as Lecture Hall 1.
+The printed name is "Lecture Hall". Understand "podium" or "at podium" or "at the podium" or "(at podium)" or "(at the podium)" as Lecture Hall 1.
+
+After printing the name of Lecture Hall 1 while not constructing the status line:
+	say " [roman type](at the [podium])".
 
 The podium is a supporter in Lecture Hall 1. It is scenery. The description is "An advanced, pre-wired [podium] that allows the instructor to project slides from a laptop or show movies."
 
@@ -1956,9 +1959,11 @@ A dangerous destruction rule for the conference poster:
 Sanity-check looking under the conference poster when the conference poster is fixed in place:
 	say "That would be hard to do without ripping it off the wall." instead.
 
-Lecture Hall 2 is south of Lecture Hall 1. The printed name is "Lecture Hall (among the seats)". Understand "seats" or "among the seats" or "among seats" or "(among seats)" or "(among the seats)" as Lecture Hall 2. Lecture Hall 2 is indoors and southern.
+Lecture Hall 2 is south of Lecture Hall 1. The printed name is "Lecture Hall". Understand "seats" or "among the seats" or "among seats" or "(among seats)" or "(among the seats)" as Lecture Hall 2. Lecture Hall 2 is indoors and southern.
 	The description is "Many are the fine hours I have spent here dozing; and many are the students of mine who have done the same. The circle of life becomes complete."
 
+After printing the name of Lecture Hall 2 while not constructing the status line:
+	say " [roman type](among the [if boldening is true][bold type][end if]seats[roman type])".
 
 Some wooden seats are supporters in Lecture Hall 2. Understand "hard" or "wood" as the wooden seats. The initial appearance is "The room extends [if Location is Lecture Hall 1]south[otherwise]north[end if], full of hard [wooden seats]." The description is "Ingeniously uncomfortable."
 
