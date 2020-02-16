@@ -363,10 +363,33 @@ Table of Possible Achievements
 achievement (some text)
 with 40 blank rows.
 
+Table of All Achievements
+achievement (some text)
+"Finished tutorial mode”
+"Alex Rosehip award for completing the game in easy mode"
+"Andra award for completing the game in hard mode"
+"Priscilla Parsons award for winning the game without ever entering the church"
+"Lucius Quagmire award for viewing unusual films"
+"Reverend Plaice award for placing the cross on the altar while liturgically dressed"
+"Jocasta Higgate award for reconstructing pagan worship on the island"
+”Finn Rosehip award for gnu-hunting"
+"Camilla Downdweller award for creating five types of fish in one playthrough"
+"Lester Parsons award for discovering unspecified local rites"
+"Igor Rosehip award for creating at least five body parts in one playthrough"
+"Horace Fingerstain award for jotting some notes"
+"Lord Michael Rosehip award for showing the black spot to a pirate crew"
+"Mort Shaply award for showing Poe a raven-based foodstuff"
+"Propper Rosehip award for talespinning"
+"Roman 'Sticky' Fingerstain award for impromptu art theft"
+
 Table of Final Question Options (continued)
 final question wording	only if victorious	topic	final response rule	final response activity
-"review the ACHIEVEMENTS you've reached so far"	false	"review/achievements"	list achievements rule	--
+"review your final SCORE"	false	"review/score"	list score rule	--
+"reveal what ACHIEVEMENTS you have yet to accomplish"	false	"reveal/achievements"	list remaining achievements rule	--
 "learn about some of the SOURCES used in creating this game"	true	"sources/source/learn"	list sources rule	--
+
+This is the list score rule:
+	try requesting the score.
 
 This is the list achievements rule:
 	read the achievements;
@@ -382,6 +405,19 @@ To decide whether (chosen ending - text) is a used achievement:
 		if N is achievement entry:
 			yes;
 	no.
+
+This is the list remaining achievements rule:
+	read the achievements;
+	let L be a list of texts;
+	repeat through the Table of All Achievements:
+		unless achievement entry is a used achievement:
+			add achievement entry to L;
+	if L is empty:
+		say "Congratulations! You have accomplished all the achievements!";
+	otherwise:
+		say "These achievements you have yet to accomplish:[paragraph break]";
+		repeat with A running through L:
+			say "  [A][line break]".
 
 This is the list sources rule:
 	say "I started working in earnest on this game in 2008. Since that time, the US has undergone two presidential elections; for months, the Occupy Seattle protests filled a city block just a short stroll from my apartment; and the successes and failures of the Arab Spring were constantly in the news. These experiences introduced more serious themes into what was initially a purely silly game.
