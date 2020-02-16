@@ -45,7 +45,7 @@ Definition: a thing is fishy:
 	no.
 
 A dangerous construction rule for the rite:
-	record "Lester Parsons Award for discovering unspecified local rites" as an achievement.
+	record "Lester Parsons award for discovering unspecified local rites" as an achievement.
 
 Freaky-seen is a number that varies. Freaky-seen is initially 0.
 

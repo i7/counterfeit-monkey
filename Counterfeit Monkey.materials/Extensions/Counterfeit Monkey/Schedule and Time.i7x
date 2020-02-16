@@ -843,7 +843,7 @@ To say full-game achievements:
 			record N as an achievement;
 			now line break needed is true;
 		if the oil-paintings are stolen:
-			record "Roman 'Sticky' Fingerstain Award for impromptu art theft" as an achievement;
+			record "Roman 'Sticky' Fingerstain award for impromptu art theft" as an achievement;
 			now line break needed is true;
 		if line break needed is true:
 			say line break.
