@@ -884,6 +884,20 @@ Carry out pounding all-lists:
 		say "(remove apple from [item])";
 		try removing apple from item;
 
+Understand "accomplish achievements" as accomplishing achievements. Accomplishing achievements is an action out of world.
+
+Carry out accomplishing achievements:
+	repeat through Table of all achievements:
+		record achievement entry as an achievement.
+
+Understand "end the/-- game/story" as ending. Ending is an action out of world. Carry out ending:
+	say "[bracket]Press a key[close bracket]";
+	end the story saying "This was just a test of the ending functionality".
+
+Understand "end the/-- game/story finally" as final ending. Final ending is an action out of world. Carry out final ending:
+	end the story finally saying "This is just a test of the final ending functionality";
+
+
 [Object responses for everything in the repository.]
 
 Include Object Response Tests by Juhana Leinonen.
