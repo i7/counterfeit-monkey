@@ -364,23 +364,23 @@ achievement (some text)
 with 40 blank rows.
 
 Table of All Achievements
-achievement (some text)
-"Finished tutorial mode”
-"Alex Rosehip award for completing the game in easy mode"
-"Andra award for completing the game in hard mode"
-"Priscilla Parsons award for winning the game without ever entering the church"
-"Lucius Quagmire award for viewing unusual films"
-"Reverend Plaice award for placing the cross on the altar while liturgically dressed"
-"Jocasta Higgate award for reconstructing pagan worship on the island"
-”Finn Rosehip award for gnu-hunting"
-"Camilla Downdweller award for creating five types of fish in one playthrough"
-"Lester Parsons award for discovering unspecified local rites"
-"Igor Rosehip award for creating at least five body parts in one playthrough"
-"Horace Fingerstain award for jotting some notes"
-"Lord Michael Rosehip award for showing the black spot to a pirate crew"
-"Mort Shaply award for showing Poe a raven-based foodstuff"
-"Propper Rosehip award for talespinning"
-"Roman 'Sticky' Fingerstain award for impromptu art theft"
+achievement (some text)	done (a truth state)
+"Finished tutorial mode”	true
+"Alex Rosehip award for completing the game in easy mode"	true
+"Andra award for completing the game in hard mode"	true
+"Priscilla Parsons award for winning the game without ever entering the church"	true
+"Lucius Quagmire award for viewing unusual films"	true
+"Reverend Plaice award for placing the cross on the altar while liturgically dressed"	true
+"Jocasta Higgate award for reconstructing pagan worship on the island"	true
+”Finn Rosehip award for gnu-hunting"	true
+"Camilla Downdweller award for creating five types of fish in one playthrough"	true
+"Lester Parsons award for discovering unspecified local rites"	true
+"Igor Rosehip award for creating at least five body parts in one playthrough"	true
+"Horace Fingerstain award for jotting some notes"	true
+"Lord Michael Rosehip award for showing the black spot to a pirate crew"	true
+"Mort Shaply award for showing Poe a raven-based foodstuff"	true
+"Propper Rosehip award for talespinning"	true
+"Roman 'Sticky' Fingerstain award for impromptu art theft"	true
 
 Table of Final Question Options (continued)
 final question wording	only if victorious	topic	final response rule	final response activity
@@ -408,16 +408,18 @@ To decide whether (chosen ending - text) is a used achievement:
 
 This is the list remaining achievements rule:
 	read the achievements;
-	let L be a list of texts;
+	let all-done be true;
 	repeat through the Table of All Achievements:
 		unless achievement entry is a used achievement:
-			add achievement entry to L;
-	if L is empty:
+			now done entry is false;
+			now all-done is false;
+	if all-done is true:
 		say "Congratulations! You have accomplished all the achievements!";
 	otherwise:
 		say "These achievements you have yet to accomplish:[paragraph break]";
-		repeat with A running through L:
-			say "  [A][line break]".
+		repeat through the Table of All Achievements:
+			if done entry is false:
+				say "  [achievement entry][line break]".
 
 This is the list sources rule:
 	say "I started working in earnest on this game in 2008. Since that time, the US has undergone two presidential elections; for months, the Occupy Seattle protests filled a city block just a short stroll from my apartment; and the successes and failures of the Arab Spring were constantly in the news. These experiences introduced more serious themes into what was initially a purely silly game.
