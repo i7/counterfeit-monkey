@@ -354,7 +354,7 @@ After reading a command during identification (this is the parse identification 
 			otherwise:
 				say "...er, no. We're Alexandra now. Before the synthesis, I was Alex. You were...";
 		otherwise:
-			now new first name is "[the player's command]";
+			now new first name is the player's command;
 			replace the regular expression "\p" in new first name with "";
 			now new first name is new first name in sentence case;
 			if new first name is "Andra":

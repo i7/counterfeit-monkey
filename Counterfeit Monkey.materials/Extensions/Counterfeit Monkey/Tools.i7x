@@ -136,7 +136,7 @@ A first command-string altering rule (this is the implicitly change letter-remov
 			unless N matches the regular expression "<a-z>":
 				say "Only the 26 letters of the English alphabet are available to the letter-remover.";
 				parsing fails;
-			now the current setting of the letter-remover is "[N]";
+			now the current setting of the letter-remover is N;
 			now the letter-remover is changing;
 			expand X-remover-string;
 		otherwise:
