@@ -48,6 +48,7 @@ A CRT is a kind of device.
 A generic-cup is a kind of container.
 An eel is a kind of thing. [not "a kind of animal" because you get a dead eel]
 A git is a kind of man.
+A hairpiece is a kind of wearable thing.
 A hart is a kind of neuter animal.
 A hat is a kind of thing.
 [An in-object is a kind of thing. ["in"] The printed name of an in-object is "in". Understand "in" as an in-object.]
@@ -253,6 +254,7 @@ The repository contains a monk corpse bonnet, a broken component and a cement po
 [three unnamed chairs, of which two are occupied and cannot be moved to the T-inserter or anagram gun]
 
 The repository contains 2 strands, 2 chars, 2 cars, 2 airs,
+	a chair, [char + I (self-object)]
 	a chart, a cart, [t-insert ONE of the chair derivative sets]
 	a chert, [vowel-rotate the chart]
 	a hart, an art, a chat, a cat, a hat, a CRT, [derive insertions]

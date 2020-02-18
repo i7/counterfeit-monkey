@@ -632,7 +632,7 @@ The grit has homonym index 628.
 The gum has homonym index 629.
 The hackle has homonym index 630.
 The hairband has homonym index 631.
-The hairpiece has homonym index 632.
+A hairpiece has homonym index 632.
 The hairstick has homonym index 633.
 The hard wood floors has homonym index 634.
 The hard-to-see statue has homonym index 635.

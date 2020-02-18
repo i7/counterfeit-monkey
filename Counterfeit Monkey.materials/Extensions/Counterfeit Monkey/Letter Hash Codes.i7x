@@ -775,7 +775,8 @@ The grit has hash code 655680.
 The gum has hash code 1052736. [I647_gum]
 The hackle has hash code 3221. [I1961_hackle]
 The hairband has hash code 139659. [I2333_hairband]
-The hairpiece has hash code 164245. [I2334_hairpiece]
+A hairpiece has hash code 164245. [I2334_hairpiece]
+The red hairpiece has hash code 164253. [I2334_hairpiece]
 The hairstick has hash code 918917.
 The hard wood floors has hash code 4606121. [I576_hard_wood_floors]
 The hard-to-see statue has hash code 1845593. [I612_hard_to_see_statue]
@@ -1064,6 +1065,7 @@ The pus has hash code 1343488.
 The quid has hash code 1114376.
 The rack has hash code 132101.
 The rad worm has hash code 4345865.
+The red hair has hash code 131481.
 The railings have hash code 403777.
 The rale has hash code 133137.
 The ramcat has hash code 659461.

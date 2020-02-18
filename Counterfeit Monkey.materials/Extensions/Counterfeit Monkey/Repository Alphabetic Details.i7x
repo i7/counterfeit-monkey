@@ -1080,6 +1080,10 @@ A strand is privately-named. The description of a strand is "A single strand, ab
 Rule for printing the plural name of a strand:
 	say "hairs".
 
+The red hair is a strand in the repository. The printed name of the red hair is "red hair". The description of the red hair is "A single strand, about a foot long, of red hair."
+
+The red hairpiece is a hairpiece in the repository. The description of the red hairpiece is "A fairly natural-looking extension, red in col[our], attachable by comb. It [if worn]comes[otherwise]should come[end if] to about shoulder length on us."
+
 [Again, there is no gameplay reason whatever for the procedural element here, but it feels more in keeping with the rest of the game to have it this way than to use a static list.]
 The genre apron is a wearable thing. The description of the genre apron is "It is an ordinary apron, but lists across the front [i][genre-list][/i] and so on."
 
@@ -1155,11 +1159,10 @@ The description of the grit is "It's a small quantity of fine sand, the kind tha
 
 The hairband is wearable. It covers the head-area. The description is "It's blue, with felt flowers and rhinestones. I think it may be meant for a younger wearer than ourself."
 
-The hairpiece is wearable. It covers the head-area. The description is "A fairly natural-looking extension the col[our] of our own hair, attachable by comb. It [if worn]comes[otherwise]should come[end if] to about shoulder length on us."
+Every hairpiece covers the head-area. The description of a hairpiece is "A fairly natural-looking extension, the col[our] of our own hair, attachable by comb. It [if worn]comes[otherwise]should come[end if] to about shoulder length on us."
 
-Sanity-check cutting the hairpiece:
+Sanity-check cutting a hairpiece:
 	say "It's reasonably well-trimmed as it stands. I wouldn't trust myself to re-style it." instead.
-
 
 
 The harp limit is an r-abstract thing. The heft is 0. The description of the harp limit is "In its presence, no more than two pedal harps can be played (or a single double chromatic harp)."
@@ -1873,7 +1876,7 @@ The description of the par is "Rather weakly represented by a golfing score-card
 The description of the part is "It is made of dull grey metal, with an octagonal shape at one end and a hole for a screw or bolt at the other. I have no idea what it goes with. It might be a plumber's part, or a part for a car, or something else entirely.".
 	The scent-description of the part is "metal".
 
-The description of the pass is "A Bureau of Orthography visiting pass, a very valuable commodity in these parts. Forging one is grounds for imprisonment. There is a picture on the front that looks more or less like us, though with considerably more hair."
+The description of the pass is "A Bureau of Orthography visiting pass, a very valuable commodity in these parts. Forging one is grounds for imprisonment. There is a picture on the front that looks more or less like us, though with considerably more [if hardness is true]and redder [end if]hair."
 
 The description of the passcard is "A variant of a passport: it has an image on the front that looks more or less like us, though with more hair, and the stripe on the back is imprinted, presumably, with various biometric information. It's no good at unlocking doors, however."
 	The scent-description of the passcard is "plastic".

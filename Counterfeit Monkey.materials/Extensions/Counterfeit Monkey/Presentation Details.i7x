@@ -527,9 +527,11 @@ Carry out selecting hard mode:
 	now the printed name of the twig is "bent twig";
 	now the printed name of the fossil is "twisty fossil";
 	now the printed name of the tomes is "dusty tomes";
+	now the printed name of the LSR chair is "red chair";
 	reset hash code of the twig;
 	reset hash code of the fossil;
 	reset hash code of the tomes;
+	reset hash code of the LSR chair;
 	now the the sticky is nowhere;
 	now the the banana is nowhere;
 	move the pineapple to the large carton;
@@ -539,6 +541,7 @@ Carry out selecting hard mode:
 	move the prickly-pear to the holder of the pear;
 	now the the pear is nowhere;
 	now the the wheel is nowhere;
+	now the description of the LSR chair is "It is an ordinary inexpensive variety of chair, made locally and found around the island in great numbers. This one has been painted red.";
 	now the introduction of the clock is "It's stopped working sometime in the recent past, possibly thanks to its fall when we gelled it.";
 	[follow the initialize hash codes rule;]
 	now tutorial mode is false;
@@ -561,6 +564,7 @@ Understand "model" as the army when hardness is true.
 Understand "bent" as the twig when hardness is true.
 Understand "dusty" as the tomes when hardness is true.
 Understand "twisty" as the fossil when hardness is true.
+Understand "red" as the LSR chair when hardness is true.
 
 Before printing the name of the clock when hardness is true and printed name of the clock is not "broken clock":
 	if the clock is in the repository:

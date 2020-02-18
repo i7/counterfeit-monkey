@@ -824,12 +824,7 @@ After looking in the Language Studies Seminar Room when the seminar door is open
 		say "[One of]I shut the door so that [we] don't get interrupted.[or]For safety, I shut the door behind us.[stopping]";
 	continue the action.
 
-The Language Studies Seminar Room contains a chair.
-
-When play begins (this is the setting up the language studies seminar room rule):
-	let T be a random chair in the Language Studies Seminar Room;
-	now T is not scenery;
-	now T is not fixed in place.
+The LSR chair is a chair in The Language Studies Seminar Room. The printed name of the LSR chair is "chair". The LSR chair is not scenery. The LSR chair is portable.
 
 Before going from the Language Studies Seminar Room when the player carries  Problem of Adjectives:
 	try putting Problem of Adjectives on the LSR bookcase.
@@ -842,7 +837,7 @@ Carry out putting Problem of Adjectives on the LSR Bookcase:
 
 The LSR bookcase is a supporter in the Language Studies Seminar Room. The initial appearance is "The bookshelves lining the walls contain the department library." The description is "Built in and sturdily made." The printed name is "bookshelf". Understand "shelf" or "shelves" or "bookshelf" as the LSR bookcase.
 
-The big table is a supporter in the Language Studies Seminar Room.  "The [big table] at the cen[ter] of the room is an irregular polygon[if exactly one not handled chair is in location], with one [random not handled chair in location] pushed up to the shortest side[end if]."
+The big table is a supporter in the Language Studies Seminar Room.  "The [big table] at the cen[ter] of the room is an irregular polygon[if the LSR chair is in location and the LSR chair is not handled], with one [LSR chair] pushed up to the shortest side[end if]."
 	The introduction is "I think the shape is intended to undermine traditional conceptions of academic hierarchy, but in practice it  just means that whoever gets to seminar late has to sit with a table angle jabbing him in the stomach."
 	The description is "Crafted from some exotic wood with lots of interesting burl structure. There was a wealthy donor behind the construction of this room."
 	Understand "polygon" as the big table.

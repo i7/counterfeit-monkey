@@ -5511,7 +5511,7 @@ Brock-smoochies is an unlisted performative quip.
 	The printed name is "ask Brock to kiss you".
 	The true-name is "Brock-smoochies".
 	The comment is "You put our arms around Brock. He looks surprised, then pulls us in."
-	The reply is "'I thought we would leave this kind of thing until you were gelled,' Brock comments after a moment, pushing a bit of [if the player is wearing the wig or the player is wearing the hairpiece]fake [end if]hair out of our eyes. 'Does your passenger not mind?'
+	The reply is "'I thought we would leave this kind of thing until you were gelled,' Brock comments after a moment, pushing a bit of [if the player is wearing the wig or the player is wearing a hairpiece]fake [end if]hair out of our eyes. 'Does your passenger not mind?'
 
 I mind, for the record. I totally mind. And the fact that this body is enthusiastic about kissing Brock just makes it weirder.
 

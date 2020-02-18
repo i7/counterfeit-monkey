@@ -438,13 +438,13 @@ Instead of going to Bureau hallway from the Antechamber when the player encloses
 		try taking the pass;
 	otherwise:
 		say "[We] show our pass to the secretary.";
-	if the player does not wear the hairpiece and the player does not wear the wig:
+	if the player does not wear a hairpiece and the player does not wear the wig:
 		now already caught is true;
 		say "[line break]The secretary looks at the pass, then looks at us. 'This isn't you on the pass,' she says. [paragraph break]'I've changed my hair,' I explain. 'And I'm wearing different contacts. And I've lost some weight.'[paragraph break]She looks at the picture, then at us again. 'Nope,' she says [--] and sends the room into lockdown.[paragraph break]I'm telling you, it's the hair that did it. If that matched better, I doubt she would have looked so closely at the rest.";
 		end the story saying "Our arrest goes badly";
 		stop the action;
-	if the player wears the hairpiece and the hairpiece is not disguised:
-		try the secretary looking at the hairpiece through the scope;
+	if the player wears a hairpiece (called H) which is not disguised:
+		try the secretary looking at H through the scope;
 		end the story saying "Our detention goes badly";
 		stop the action;
 	if the player wears the wig and the wig is not disguised:
