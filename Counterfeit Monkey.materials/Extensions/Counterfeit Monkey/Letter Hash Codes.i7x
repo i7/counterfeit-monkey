@@ -520,10 +520,10 @@ The barker has hash code 132115. [I509_barker]
 The barman has hash code 143363. [I723_barman]
 The bartender has hash code 663579. [I778_bartender]
 The basin has hash code 270595. [I2291_basin]
-The basins have hash code 52495360. [I2297_basins]
-The basis has hash code 50398208. [I2298_basis]
-The bass has hash code 50332672. [I2299_bass]
-The bass-fish has hash code 50332672. [I2300_bass_fish]
+The basins have hash code 270595. [I2297_basins]
+The basis has hash code 262403. [I2298_basis]
+The bass has hash code 262147. [I2299_bass]
+The bass-fish has hash code 262147. [I2300_bass_fish]
 The game-selection has hash code 948607. [I1165_game_selection]
 The bed has hash code 26. [I1096_fancy_bed]
 The beige buildings has hash code 1321306. [I480_beige_buildings]
@@ -713,7 +713,7 @@ Enormous padlocks has hash code 1506333.
 The equipment shelves has hash code 4045200.
 The era has hash code 131089.
 The ermine has hash code 143632.
-[The fake-bus has hash code 1310722.] [I1524_fake_bus]
+The fake-bus has hash code 1310722. [I1524_fake_bus]
 The fake-punt has hash code 1613824. [I1868_fake_punt]
 [The fame has hash code 4145.] [I1674_fame]
 The fancy locks have hash code 17067045. [I1035_fancy_locks]
