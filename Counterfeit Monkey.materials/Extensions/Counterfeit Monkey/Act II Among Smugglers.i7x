@@ -395,6 +395,12 @@ Rule for writing a topic sentence about Nexami Engeo:
 
 The wire chair is a chair in the outdoor cafe. It is scenery. On the wire chair is Nexami.
 
+Check waving the letter-remover at the wire chair when Nexami is on the wire chair:
+		say "If we change the chair while Nexami is sitting on it, he might disappear along with it. Let's not do that." instead.
+
+Check waving the letter-remover at the wire chair when the current setting of the letter-remover is "c":
+	say "The waitstaff would certainly notice." instead.
+
 A spill is on the round black tables. It is fluid scenery. The flexible appearance is "There's [a spill] [if the spill is in the location]on the [ground][otherwise][in-on the holder of the spill][end if]." The description is "It looks like a quantity of red wine, just waiting to stain some vulnerable bit of clothing."
 
 Report Nexami saying hello to the player for the first time:
