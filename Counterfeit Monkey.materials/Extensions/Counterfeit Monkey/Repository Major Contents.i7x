@@ -89,7 +89,7 @@ A son is a kind of man.
 A stink is a kind of air.
 A stent is a kind of thing.
 A stint is a kind of thing.
-A strand is a kind of thing.  ["strand"]
+A strand is a kind of thing.  ["hair"]
 A sun-product is a kind of thing.
 A tale is a kind of thing.
 A tamale is a kind of edible thing.
