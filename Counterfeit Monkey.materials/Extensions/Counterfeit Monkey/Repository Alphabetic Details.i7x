@@ -51,7 +51,7 @@ Sanity-check doing something when the second noun is an air and the second noun 
 
 Test air with "purloin air / x air / wear monocle / x air / touch air / smell air / drop air / listen to air / taste air / tie sky to air" holding the monocle.
 
-Every turn when the player carries an air (called target air):
+Every turn when an air (called target air) is enclosed by location:
 	move the target air to the repository;
 	say "The air becomes indistinguishable from all the other air around us."
 
