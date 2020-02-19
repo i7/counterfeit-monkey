@@ -393,7 +393,7 @@ Rule for writing a paragraph about Nexami when Nexami is not as-yet-unknown:
 Rule for writing a topic sentence about Nexami Engeo:
 	say "[one of]Curiously, there's an acquaintance of yours here: [or][stopping][Nexami Engeo] is at one of the [round black tables]. [run paragraph on]"
 
-The wire chair is a chair in the outdoor cafe. It is scenery. On the wire chair is Nexami.
+The wire chair is a chair in the outdoor cafe. On the wire chair is Nexami.
 
 Check waving the letter-remover at the wire chair when Nexami is on the wire chair:
 		say "If we change the chair while Nexami is sitting on it, he might disappear along with it. Let's not do that." instead.
