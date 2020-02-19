@@ -355,7 +355,7 @@ To record (slug - some text) as an achievement with conditional break (breakflag
 		now the achievement entry is N;
 		say "[if breakflag is true][line break][end if][first custom style]Achievement accomplished: [N]![roman type][paragraph break]";
 		if the number of filled rows in Table of Possible Achievements is number-of-achievements:
-			now N is "Atlantida award for accomplishing every possible achievement in the game";
+			now N is "Atlantida award for accomplishing every achievement in the game";
 			unless N is a used achievement:
 				record N as an achievement;
 	write File of Conclusions from the Table of Possible Achievements.
