@@ -1080,9 +1080,9 @@ A strand is privately-named. The description of a strand is "A single strand, ab
 Rule for printing the plural name of a strand:
 	say "hairs".
 
-The red hair is a strand in the repository. The printed name of the red hair is "red hair". The description of the red hair is "A single strand, about a foot long, of red hair."
+The printed name of the red hair is "red hair". The description of the red hair is "A single strand, about a foot long, of red hair."
 
-The red hairpiece is a hairpiece in the repository. The description of the red hairpiece is "A fairly natural-looking extension, red in col[our], attachable by comb. It [if worn]comes[otherwise]should come[end if] to about shoulder length on us."
+The description of the red hairpiece is "A fairly natural-looking extension, red in col[our], attachable by comb. It [if worn]comes[otherwise]should come[end if] to about shoulder length on us."
 
 [Again, there is no gameplay reason whatever for the procedural element here, but it feels more in keeping with the rest of the game to have it this way than to use a static list.]
 The genre apron is a wearable thing. The description of the genre apron is "It is an ordinary apron, but lists across the front [i][genre-list][/i] and so on."

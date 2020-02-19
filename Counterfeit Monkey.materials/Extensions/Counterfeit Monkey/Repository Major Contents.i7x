@@ -262,6 +262,8 @@ The repository contains 2 strands, 2 chars, 2 cars, 2 airs,
 	a rat, a tar, [anagram all]
 	a tart, an alterna-tart [t-insert anagrams]. [chair]
 
+The red hair is a strand in the repository. [Only possible to create in hard mode]
+
 [catalan punt volat needle]
 The repository contains an untalented naval polecat.
 
@@ -945,6 +947,8 @@ The repository contains an earring, an earwig, an earpiece, and an earlap.
 
 [hair]
 The repository contains a hairband, a hairpiece and a hairstick.
+
+The red hairpiece is a hairpiece in the repository. [Only possible to make in hard mode]
 
 [jackass]
 The repository contains a jackass.
