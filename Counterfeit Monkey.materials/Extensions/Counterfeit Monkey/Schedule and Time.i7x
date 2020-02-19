@@ -845,17 +845,6 @@ To say full-game achievements:
 		if the oil-paintings are stolen:
 			record "Roman 'Sticky' Fingerstain award for impromptu art theft" as an achievement;
 			now line break needed is true;
-		read the achievements;
-		let all-done be true;
-		repeat through the Table of All Achievements:
-			unless achievement entry is a used achievement:
-				now all-done is false;
-				break;
-		if all-done is true:
-			now N is "Atlantida award for accomplishing every possible achievement in the game";
-			unless N is a used achievement:
-				record N as an achievement;
-				now line break needed is true;
 		if line break needed is true:
 			say line break.
 
