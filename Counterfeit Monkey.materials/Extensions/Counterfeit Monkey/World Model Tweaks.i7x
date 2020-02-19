@@ -1700,8 +1700,8 @@ Instead of searching a mirror when the player wears a wig:
 Instead of searching a mirror when the player wears a hairpiece and the player wears the monocle:
 	say "The hairpiece/monocle combination makes us look like some sort of funky steampunk engineer, which might not be the most inconspicuous way to go."
 
-Instead of searching a mirror when the player wears a hairpiece:
-	say "The hairpiece looks surprisingly natural[if the pass is seen], and [we] resemble the image on the pass much better than [we] do without[end if]."
+Instead of searching a mirror when the player wears a hairpiece (called H):
+	say "[The H] looks surprisingly natural[if the pass is seen], and [we] resemble the image on the pass much better than [we] do without[end if]."
 
 Instead of searching a mirror when the player wears a monocle:
 	say "The monocle makes our right eye look deep green, and it has a sinister quality as well."
