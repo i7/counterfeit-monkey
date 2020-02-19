@@ -19,7 +19,7 @@ Section 2 - Kinds of Thing
 
 An aa is a kind of thing.
 An age is a kind of thing.
-An air is a kind of thing.
+An air is a kind of fluid thing.
 An ale is a kind of thing.
 An Amy is a kind of woman.
 An art is a kind of thing.
