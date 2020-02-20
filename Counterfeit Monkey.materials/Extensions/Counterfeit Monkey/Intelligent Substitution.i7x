@@ -132,27 +132,10 @@ Include
 			contender = matches_array --> i;
 			score = 500;
 
-			if (Relation_TestVtoV(source, (+ the proffering relation +), contender, false))
-			{
-				score = score + 250;
-			}
-
-			for (x = IK2_First: x : x = x.IK2_Link)
-			{
-				if (x ~= contender && Relation_TestVtoV(contender, (+ the proffering relation +), x, false))
-				{
-					!print (The)contender, " proffers ", (the)x;
-					if (~~Relation_TestVtoV(source, (+ the proffering relation +), x, false))
-					{
-						!Something else proffers the contender. Don't choose this.
-						score = score - 250;
-						!print ", which also is not proffered by ", (the)source, ", so disfavor it.^";
-						break;
-					}
-					!else
-						!print ", but which is proffered by ", (the)source, ".^";
-				}
-			}
+			if (~~contender.(+ fake +))
+				score = score - 250;
+			!Non-fake things should generally not be moved out of the repository
+			!except by gelling
 
             if (child(contender) ~= nothing)
                 score = score + 100;
@@ -161,15 +144,6 @@ Include
             if (contender.(+ seen +))
                 score = score + 1;
             !Prefer things we have already created.
-
-            if (contender ofclass (+ car +))
-            {
-                if (contender.(+ fueled +))
-                    score = score + 101;
-                else if (contender.(+ operational +))
-                    score = score + 100;
-            }
-            !Prefer fueled and oiled cars.
 
             if (score > highscore)
             {
