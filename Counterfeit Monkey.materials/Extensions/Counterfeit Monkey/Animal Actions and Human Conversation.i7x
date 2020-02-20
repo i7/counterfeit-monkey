@@ -4585,6 +4585,7 @@ topic	stuff	setting
 "as"	{ tub, ash, as-coin, coat }	Workshop
 
 Test Lena with "tutorial off / z / open tub / ask about slango / say who we are / z / z / wave m-remover at modems / wave s-remover at odes / gel ode / wave m-remover at modems / wave p-remover at preamps / wave s-remover at reams / put paste on odes / put paste on ream / ask whether / encourage" [in the Aquarium holding tub and the origin paste].
+
 Test as with "tutorial off / open tub / powerup / put as on dais / wave a-remover at coat / put cot on dais / set switch to synthesize / pull lever / wave h-remover at ash / get as / i / gel ascot / l / i".
 
 Section 5 - Professor Brown
