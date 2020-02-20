@@ -1826,6 +1826,9 @@ A dangerous construction rule for a chair (called C):
 Rule for printing the plural name of chair:
 	say "chairs".
 
+Does the player mean doing something to the LSR chair:
+	it is very likely.
+
 Table of Ultratests (continued)
 topic	stuff	setting
 "chair"	{ LSR chair, chard, pita, tub }	Workshop
