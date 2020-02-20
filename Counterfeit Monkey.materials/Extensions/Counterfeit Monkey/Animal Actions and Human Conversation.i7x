@@ -1003,7 +1003,7 @@ whether car be fixed is a questioning quip.
 	The true-name is "whether car be fixed".
 	Understand "is" as whether car be fixed.
 	The comment is "'Is the car fixed now?' we ask."
-	The reply is "'The oil is in,' the mechanic says[unless there is an unfueled car in location]. 'Should run all right[otherwise]. 'Might be it's out of fuel, though[end if].'".
+	The reply is "'The oil is in,' the mechanic says[unless there is no fueled car in location]. 'Should run all right[otherwise]. 'Might be it's out of fuel, though[end if].'".
 	It quip-supplies the mechanic.
 	It is repeatable.
 	[Every car is mentioned by whether car be fixed.]
