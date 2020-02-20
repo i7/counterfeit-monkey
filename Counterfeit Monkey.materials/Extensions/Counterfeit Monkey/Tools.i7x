@@ -1568,7 +1568,7 @@ To gel-convert (item - an object):
 		let destination be home for the item;
 		repeat with source running through things which proffer the item:
 			if source is not in repository:
-				say "[line break][bracket]gel-convert: BUG! [The source] is not in the repository. It will be moved from [the holder of the secondary] to [the destination].[close bracket][line break]";
+				say "[line break][bracket]gel-convert: BUG! [The source] is not in the repository. It will be moved from [the holder of the source] to [the destination].[close bracket][line break]";
 			now the source is in the destination;
 			now the source is marked-visible;
 			if source is stuck:
