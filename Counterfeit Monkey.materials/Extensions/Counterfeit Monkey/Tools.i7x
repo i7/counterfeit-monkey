@@ -1835,7 +1835,7 @@ Carry out shooting something with the anagramming gun:
 	record "using the anagramming gun" as achieved;
 
 Report shooting something with the anagramming gun when the detritus is unseen:
-	say "The gun fires ruggedly into [the noun], which [shatter] and then [reform] as [the detritus]. [run paragraph on][detritus description][paragraph break]";
+	say "The gun fires ruggedly into [the noun], which [shatter] and then [reform] as [a detritus]. [run paragraph on][detritus description][paragraph break]";
 	set pronouns from the detritus;
 	abide by the dangerous construction rules for the detritus instead.
 
