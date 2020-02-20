@@ -113,8 +113,6 @@ Include
 
 	[ MySynthSubstitution source contender best_match highscore score i x;
 
-		print "MySynthSubstitution: matches_count == ", matches_count, "^";
-
 		if (matches_count == 0)
 		{
 			return (+ letter-remover +);
