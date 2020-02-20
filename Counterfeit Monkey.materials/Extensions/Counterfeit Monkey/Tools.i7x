@@ -823,28 +823,23 @@ To synthesize contents of (source - a thing):
 	abide by the synthesis-override rules for X;
 	now the-other-thing is X;
 	abide by the synthesis-override rules for Y;
-	let the chosen article be Y;
 	let comparison number be the hash code of X with the hash code of Y added;
 	repeat with item running through things in the repository:
-		let matching success be true;
 		if the comparison number is the hash code of the item:
 			let the goal text be the name of the item minus the name of X;
 			replace the text " " in goal text with "";
-			if the goal text is "0":
-				now the matching success is false;
-			otherwise:
+			if the goal text is not "0":
 				if goal text exactly matches the text "[Y]":
 					unless the item is the passage-place:
-						now the chosen article is the item;
-						break;
+						match-add item;
 				otherwise:
 					let the goal text be the name of item minus the name of Y;
 					replace the text " " in goal text with "";
 					if goal text exactly matches the text "[X]":
 						unless the item is the passage-place:
-							now the chosen article is the item;
-							break;
-	if the chosen article is not Y:
+							match-add item;
+	let the chosen article be the best synthesis-match using X;
+	if the chosen article is not the letter-remover device:
 		if the heft of the chosen article is greater than 4 and source is synthesizer:
 			let N be "[chosen article]";
 			now N is N in upper case;

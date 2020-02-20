@@ -8,6 +8,9 @@ To match-add (X - a thing):
 To decide which thing is the best of all matches:
 	(- MyIntelligentSubstitution() -).
 
+To decide which thing is the best synthesis-match using (X - a thing):
+	(- MySynthSubstitution({X}) -).
+
 Include (-
 
 Array matches_array --> 51; ! For simplicity, we don't use element 0
@@ -24,7 +27,6 @@ Include
 	];
 
 	[ MyIntelligentSubstitution contender best_match highscore score i x;
-
 		if (matches_count == 0)
 		{
 			return (+ letter-remover +);
@@ -44,7 +46,7 @@ Include
 			contender = matches_array --> i;
 			score = 500;
 
-			! [repeat with X running through things in repository that proffer contender:]
+			! [repeat with X running through things that proffer contender:]
 			! [if X is not contender and X does not proffer the second noun:]
 
 			for (x = IK2_First: x : x = x.IK2_Link)
@@ -107,6 +109,87 @@ Include
         else
         	return matches_array --> 1;
 	];
+
+
+	[ MySynthSubstitution source contender best_match highscore score i x;
+
+		print "MySynthSubstitution: matches_count == ", matches_count, "^";
+
+		if (matches_count == 0)
+		{
+			return (+ letter-remover +);
+		}
+
+		if (matches_count == 1)
+		{
+			matches_count = 0;
+			return matches_array --> 1;
+		}
+
+		best_match = nothing;
+		highscore = 0;
+
+		for (i = 1: i <= matches_count : i++)
+		{
+			contender = matches_array --> i;
+			score = 500;
+
+			if (Relation_TestVtoV(source, (+ the proffering relation +), contender, false))
+			{
+				score = score + 250;
+			}
+
+			for (x = IK2_First: x : x = x.IK2_Link)
+			{
+				if (x ~= contender && Relation_TestVtoV(contender, (+ the proffering relation +), x, false))
+				{
+					!print (The)contender, " proffers ", (the)x;
+					if (~~Relation_TestVtoV(source, (+ the proffering relation +), x, false))
+					{
+						!Something else proffers the contender. Don't choose this.
+						score = score - 250;
+						!print ", which also is not proffered by ", (the)source, ", so disfavor it.^";
+						break;
+					}
+					!else
+						!print ", but which is proffered by ", (the)source, ".^";
+				}
+			}
+
+            if (child(contender) ~= nothing)
+                score = score + 100;
+			!The contender contains something. Prefer this.
+
+            if (contender.(+ seen +))
+                score = score + 1;
+            !Prefer things we have already created.
+
+            if (contender ofclass (+ car +))
+            {
+                if (contender.(+ fueled +))
+                    score = score + 101;
+                else if (contender.(+ operational +))
+                    score = score + 100;
+            }
+            !Prefer fueled and oiled cars.
+
+            if (score > highscore)
+            {
+			highscore = score;
+			best_match = contender;
+            }
+        }
+
+		matches_count = 0;
+		if (best_match ~= nothing)
+		{
+			!print "Chose ",(the)best_match," with a score of ", highscore,".^";
+			return best_match;
+        }
+        else
+		return matches_array --> 1;
+	];
+
 -).
 
 Intelligent Substitution ends here.
