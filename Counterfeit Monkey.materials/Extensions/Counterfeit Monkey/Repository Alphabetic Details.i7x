@@ -131,9 +131,10 @@ Instead of touching or squeezing or rubbing an as:
 Rule for initially listing contents:
     initially group ases together.
 
-Rule for grouping together ases:
+Rule for grouping together an as (called target):
     say "[listing group size in words] asses";
-    now every as is mentioned.
+    let source be the holder of the target;
+    now every as held by the source is mentioned.
 
 Does the player mean doing something to the as-coin when the subcommand of the as-coin matches "as":
     it is likely.
