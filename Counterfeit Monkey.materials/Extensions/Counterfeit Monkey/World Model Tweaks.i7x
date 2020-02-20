@@ -1418,7 +1418,7 @@ Understand "cross [traffic]" or "ignore [traffic]" as a mistake ("You may have t
 
 Test car-behavior with "tutorial off / car-acquire / unmonkey / put remover in backpack / close backpack / cross traffic / ignore traffic / drive to roundabout / park / get out of car / go to deep street / nw / e / climb masses / look through window / out / out / se / get in car / drive to tall street / go to roundabout / drive to monkey" holding the backpack in high street.
 
-Test roundaboutation with "tutorial off / car-acquire / drive to roundabout / z / z / z" in high street.
+Test roundaboutation with "tutorial off / unlegend / car-acquire / drive to roundabout / z / z / z" in high street.
 
 Section 4 - The View From Inside
 
