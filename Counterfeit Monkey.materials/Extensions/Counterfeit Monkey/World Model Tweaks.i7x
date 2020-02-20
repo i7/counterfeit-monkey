@@ -1807,7 +1807,10 @@ A desk is a kind of supporter. [Every desk incorporates two vertical drawers.] A
 Instead of inserting something into a desk:
 		say "[The second noun] [don't] have a drawer."
 
-A chair is a kind of supporter. A chair is usually scenery. A chair is always enterable. Understand "seat" as a chair. Understand "take [chair]" as entering. The description of a chair is usually "It is an ordinary inexpensive variety of chair, made locally and found around the island in great numbers." A chair is usually seated.
+A chair is a kind of supporter. A chair is usually scenery. A chair is always enterable. Understand "seat" as a chair. The description of a chair is usually "It is an ordinary inexpensive variety of chair, made locally and found around the island in great numbers." A chair is usually seated.
+
+Instead of taking a chair when the subcommand of the noun matches "seat":
+	try entering the noun.
 
 Rule for initially listing contents:
     initially group chairs together.
