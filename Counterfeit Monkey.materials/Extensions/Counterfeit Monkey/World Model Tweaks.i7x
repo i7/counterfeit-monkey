@@ -1800,6 +1800,23 @@ Instead of inserting something into a desk:
 
 A chair is a kind of supporter. A chair is usually scenery. A chair is always enterable. Understand "seat" as a chair. Understand "take [chair]" as entering. The description of a chair is usually "It is an ordinary inexpensive variety of chair, made locally and found around the island in great numbers." A chair is usually seated.
 
+Rule for initially listing contents:
+    initially group chairs together.
+
+Rule for grouping together a chair (called target):
+	say "[listing group size in words] chairs";
+	let source be the holder of the target;
+	if hardness is true and the LSR chair is held by the source:
+		say ", one of them red,";
+	now every chair held by the source is mentioned.
+
+A dangerous construction rule for a chair (called C):
+	now C is not scenery;
+	now C is portable.
+
+Rule for printing the plural name of chair:
+	say "chairs".
+
 When play begins (this is the chair and desk postures rule):
 	now every chair allows seated;
 	now every chair allows standing;
