@@ -1566,13 +1566,15 @@ To gel-convert (item - an object):
 	if the item is not original:
 		abide by the dangerous destruction rules for the item;
 		let destination be home for the item;
-		now everything which proffers the item is in the destination;
-		now everything which proffers the item is marked-visible;
+		repeat with source running through things which proffer the item:
+			if source is not in repository:
+				say "[line break][bracket]gel-convert: BUG! [The source] is not in the repository. It will be moved from [the holder of the secondary] to [the destination].[close bracket][line break]";
+			now the source is in the destination;
+			now the source is marked-visible;
+			if source is stuck:
+				now source is part of the destination;
 		now the item is marked invisible;
 		[play the sound of gel splort;]
-		repeat with secondary running through things which proffer the item:
-			if secondary is stuck:
-				now secondary is part of the destination;
 		let description needed be false;
 		if exactly one thing (called the parent) proffers the item:
 			set pronouns from parent;
