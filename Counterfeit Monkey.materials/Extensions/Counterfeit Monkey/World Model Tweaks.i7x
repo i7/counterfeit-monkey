@@ -1153,6 +1153,12 @@ A car can be fueled or unfueled. A car is usually unfueled.
 
 Definition: a thing is fuel-like if it is the fuel or it is the gas.
 
+Does the player mean entering a fueled car:
+	it is very likely.
+
+Does the player mean entering an operational car:
+	it is very likely.
+
 Sanity-check inserting a fuel-like thing into a car:
 	try fueling the second noun with the noun instead.
 
@@ -1171,6 +1177,9 @@ Rule for supplying a missing second noun while fueling something with:
 
 Instead of filling a car with a fuel-like thing:
 	try fueling the noun with the second noun.
+
+Does the player mean fueling an unfueled car with something:
+	it is very likely.
 
 Check fueling something with a vegetable:
 	say "I've heard of biodiesel, but that carries the point too far." instead.
