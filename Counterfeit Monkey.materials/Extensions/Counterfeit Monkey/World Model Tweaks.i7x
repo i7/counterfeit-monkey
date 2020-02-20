@@ -1826,6 +1826,18 @@ A dangerous construction rule for a chair (called C):
 Rule for printing the plural name of chair:
 	say "chairs".
 
+Table of Ultratests (continued)
+topic	stuff	setting
+"chair"	{ LSR chair, chard, pita, tub }	Workshop
+
+Test chair with "tutorial off / powerup / autoupgrade / open tub / wave c-remover at chair / wave d-remover at chard / wave a-remover at pita / wave t-remover at pit / wave p-remover at pi / put char and i on dais / synthesize / get chair / put gel on hair / l / take chair".
+
+Test char with "tutorial off / purloin char / wave h-remover at char / wave i-remover at chair / put gel on car" holding the tub in the Language Studies Seminar Room.
+
+Test ascot with "tutorial off / autoupgrade / powerup / purloin as / purloin cot / put as and cot on dais / synthesize / wave a-remover at ascot / wave s-remover at scot / gel cot" holding the tub in the Workshop.
+
+Test lostfuel with "tutorial off / autoupgrade / unlegend / unprotest / purloin chard / purloin funnel / purloin soil / purloin chair / wave b-remover at garbage / wave d-remover at chard / wave h-remover at char / wave n-remover at funnel / fuel car / gel car / wave i-remover at chair / wave h-remover at char / gel car / wave h-remover at chard / wave d-remover at card / wave s-remover at soil / wave i-remover at chair / wave h-remover at char / give oil to mechanic / ask mechanic about car / enter car / se" holding the tub in High Street.
+
 When play begins (this is the chair and desk postures rule):
 	now every chair allows seated;
 	now every chair allows standing;
