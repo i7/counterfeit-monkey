@@ -829,13 +829,17 @@ To synthesize contents of (source - a thing):
 			let the goal text be the name of the item minus the name of X;
 			replace the text " " in goal text with "";
 			if the goal text is not "0":
-				if goal text exactly matches the text "[Y]":
+				let Y-name be the printed name of Y;
+				now Y-name is Y-name in lower case;
+				if goal text exactly matches the text Y-name:
 					unless the item is the passage-place:
 						match-add item;
 				otherwise:
 					let the goal text be the name of item minus the name of Y;
 					replace the text " " in goal text with "";
-					if goal text exactly matches the text "[X]":
+					let X-name be the printed name of X;
+					now X-name is X-name in lower case;
+					if goal text exactly matches the text X-name:
 						unless the item is the passage-place:
 							match-add item;
 	let the chosen article be the best synthesis-match using X;
