@@ -381,18 +381,25 @@ Include Tutorial Mode by Emily Short.
 The teach inventory rule is listed before the teach dropping rule in the instructional rules.
 
 [Turn off tutorial mode if you've already done it...]
-A first instructional rule:
-	if "Finished tutorial mode" is a used achievement:
-		now tutorial mode is false;
-		stop.
+A first instructional rule (this is the turn off tutorial mode rule):
+	if the turn off tutorial mode rule is not listed in the completed instruction list:
+		add the turn off tutorial mode rule to the completed instruction list;
+		read the achievements;
+		if "Finished tutorial mode" is a used achievement:
+			now tutorial mode is false;
+			stop;
 
 Check turning on tutorial mode:
 	if "Finished tutorial mode" is a used achievement:
 		if Monumental Staircase is visited:
 			say "[first custom style]Tutorial mode doesn't work this far into the game. Please restart before turning it on again.[roman type][paragraph break]" instead;
 		otherwise:
-			choose row with achievement of "Finished tutorial mode" in Table of Possible Achievements;
-			blank out the whole row.
+			say "This will erase the 'Finished tutorial mode' achievement. Are you sure? >> [run paragraph on]";
+			if the player consents:
+				choose row with achievement of "Finished tutorial mode" in Table of Possible Achievements;
+				blank out the whole row;
+				write File of Conclusions from the Table of Possible Achievements.
+
 
 An instructional rule (this is the teach examining thoroughness rule):
 	if the teach examining thoroughness rule is listed in the completed instruction list:
