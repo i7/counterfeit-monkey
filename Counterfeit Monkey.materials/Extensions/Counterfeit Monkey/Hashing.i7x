@@ -31,7 +31,7 @@ A room has a number called the hash code.
 		now the hash code of the item is letter-hash of T.]
 
 To reset hash code of (item - a thing):
-	let T be "[item]";
+	let T be the printed name of item;
 	now the hash code of the item is letter-hash of T.
 
 To say (N - number) as letter-hash:
