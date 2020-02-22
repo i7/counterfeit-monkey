@@ -10,7 +10,7 @@ The creating a path history rule is not listed in any rulebook.
 
 This is the even newer creating a path history rule:
 	add the approach-heading to the path so far of the player;
-	let approach-destination-name be "[the approach-destination]";
+	let approach-destination-name be the printed name of the approach-destination;
 	let adverb be "";
 	let X be the number of entries in the path so far of the player;
 	if X is greater than 1:
