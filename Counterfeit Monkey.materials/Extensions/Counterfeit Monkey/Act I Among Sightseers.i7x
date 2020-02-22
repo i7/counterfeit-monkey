@@ -471,7 +471,6 @@ An instructional rule (this is the teach waving rule):
 		make no decision;
 	if the mourning dress is not enclosed by location:
 		make no decision;
-	let N be "[the letter-remover]";
 	say "[first custom style]That letter-remover is going to be very important as we try to escape here. To test it out, try WAVE U-REMOVER AT MOURNING DRESS.[roman type]";
 	now the expected action is the action of waving the letter-remover at the mourning dress;
 	now the held rule is the teach waving rule;
