@@ -398,7 +398,9 @@ Check turning on tutorial mode:
 			if the player consents:
 				choose row with achievement of "Finished tutorial mode" in Table of Possible Achievements;
 				blank out the whole row;
-				write File of Conclusions from the Table of Possible Achievements.
+				write File of Conclusions from the Table of Possible Achievements;
+			otherwise:
+				stop the action.
 
 
 An instructional rule (this is the teach examining thoroughness rule):
