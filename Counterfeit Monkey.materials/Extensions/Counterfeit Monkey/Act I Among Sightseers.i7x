@@ -439,7 +439,8 @@ An instructional rule (this is the teach about letter-remover rule):
 	if the number of entries in the list of remaining letters is not 26:
 		make no decision;
 	let N be "[letter-remover]";
-	say "[first custom style]That looks interesting. Try looking at that [letter-remover][one of][or]. L [N in upper case][stopping].[roman type]";
+	now N is N in upper case;
+	say "[first custom style]That looks interesting. Try looking at that [letter-remover][one of][or]. L [N][stopping].[roman type]";
 	now the expected action is the action of examining the mourning dress;
 	now the held rule is the teach examining super thoroughness rule;
 	rule succeeds.
