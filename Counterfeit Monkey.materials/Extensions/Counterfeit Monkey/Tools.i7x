@@ -853,8 +853,8 @@ To synthesize contents of (source - a thing):
 		abide by the dangerous destruction rules for X;
 		abide by the dangerous destruction rules for Y;
 		now the chosen article is not proffered by anything;
-		repeat with item running through contents-list:
-			now the item proffers the chosen article;
+		now X proffers the chosen article;
+		now Y proffers the chosen article;
 		if an essential thing (called parent) proffers the chosen article:
 			now the chosen article is essential;
 		[if something which proffers the chosen article encloses an essential thing:
