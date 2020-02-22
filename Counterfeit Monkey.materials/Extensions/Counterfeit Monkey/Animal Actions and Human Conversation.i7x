@@ -1760,7 +1760,7 @@ Carry out the bartender discussing buy the rusty nail:
 	homonym-paddle the rusty nail;
 
 Rule for refusing to buy something (called target) which is in the toolkit:
-	let drink-name be "[target]";
+	let drink-name be printed name of target;
 	replace the regular expression ".$" in drink-name with ""; ["depluralize" the name of the tools, i.e. remove the last letter.]
 	now drink-name is drink-name in sentence case;
 	say "[one of]We ask for another [drink-name], but the bartender says she's limited to one drink per type per club member. 'They're a loss leader,' she explains. 'Tools are more expensive than cocktails, and then even with the rusty nails, there's the energy to run the paddle.'[or]The bartender has already explained that she can't sell us more drinks of the same kind. The profit margin is too low, apparently.[stopping]"

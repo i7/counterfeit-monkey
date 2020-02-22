@@ -4356,7 +4356,7 @@ To say generictext:
 	let N be a random number between 20 and 30;
 	let assemblage be text;
 	repeat with I running from 1 to N:
-		let content be "[description of a random seen thing]";
+		let content be description of a random seen thing;
 		if content is "":
 			next;
 		let max be the number of words in content;

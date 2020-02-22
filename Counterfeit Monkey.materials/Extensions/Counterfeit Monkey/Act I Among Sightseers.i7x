@@ -540,7 +540,7 @@ An instructional rule (this is the teach more compass directions rule):
 		make no decision;
 	if way is nothing:
 		make no decision;
-	let N be "[way]";
+	let N be the printed name of way;
 	now N is N in upper case;
 	say "[first custom style][one of]You can spend some more time looking around or checking out your inventory to see what you've changed in this location. When you're ready to move on, you can head[or]When you want to move to a new location, you can go[stopping] [N].[roman type]";
 	now the expected action is the action of going way;
@@ -716,7 +716,7 @@ An instructional rule (this is the new teach compass directions rule):
 		make no decision;
 	if way is nothing:
 		make no decision;
-	let N be "[way]";
+	let N be the printed name of way;
 	now N is N in upper case;
 	say "[first custom style][one of]Feel free to look around some more. When you're ready to move on from here, try[or]No rush, but just a reminder that when you want to move to a new location, you can go[stopping] [N].[roman type]" (A);
 	now the expected action is the action of going way;

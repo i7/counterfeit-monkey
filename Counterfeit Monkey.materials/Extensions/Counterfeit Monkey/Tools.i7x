@@ -255,15 +255,15 @@ Setting action variables for waving the letter-remover device at an object which
 	if comparison number is the hash code of the second noun:
 		now letter absence is true;
 	otherwise:
-		let starting text be "[second noun]";
+		let starting text be the printed name of second noun;
 		now starting text is starting text in lower case;
 		if the second noun is yourself:
 			now starting text is "alexandra";
-		replace the text "[current setting]" in the starting text with "";
+		replace the text current setting in the starting text with "";
 		now generated object is the letter-remover device;
 		repeat with item running through things in repository:
 			if comparison number is the hash code of the item:
-				let goal text be "[printed name of the item]";
+				let goal text be printed name of the item;
 				now goal text is goal text in lower case;
 				if the goal text is the starting text:
 					if second noun proffers item:

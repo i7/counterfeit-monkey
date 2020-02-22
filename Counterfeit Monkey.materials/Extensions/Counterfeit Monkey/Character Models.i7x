@@ -444,19 +444,19 @@ A person has some text called the secondary apology. The secondary apology of a 
 A person has some text called the generic confrontational. The generic confrontational of a person is usually "look".
 
 To say Well:
-	let N be "[generic adversative of the current interlocutor]";
+	let N be generic adversative of the current interlocutor;
 	now N is N in sentence case;
-	say "[N]".
+	say N.
 
 To say personal no:
-	let N be "[generic negative of the current interlocutor]";
+	let N be generic negative of the current interlocutor;
 	now N is N in sentence case;
-	say "[N]".
+	say N.
 
 To say personal yes:
-	let N be "[generic positive of the current interlocutor]";
+	let N be generic positive of the current interlocutor;
 	now N is N in sentence case;
-	say "[N]".
+	say N.
 
 To say awkward no:
 	let N be "[generic adversative of the current interlocutor], [generic negative of the current interlocutor]";
@@ -473,9 +473,9 @@ To say apologetic:
 		say ", [secondary apology of the current interlocutor]";
 
 To say awkward confrontation:
-	let N be "[generic confrontational of the current interlocutor]";
+	let N be generic confrontational of the current interlocutor;
 	now N is N in sentence case;
-	say "[N]";
+	say N;
 
 
 To say ignorance:

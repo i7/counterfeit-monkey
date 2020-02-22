@@ -349,16 +349,15 @@ To record (slug - some text) as an achievement with break before:
 
 To record (slug - some text) as an achievement with conditional break (breakflag - a truth state):
 	read the achievements;
-	let N be "[slug]";
-	unless N is a used achievement:
+	unless slug is a used achievement:
 		choose a blank row in the Table of Possible Achievements;
-		now the achievement entry is N;
-		say "[if breakflag is true][line break][end if][first custom style]Achievement accomplished: [N]![roman type][paragraph break]";
+		now the achievement entry is slug;
+		say "[if breakflag is true][line break][end if][first custom style]Achievement accomplished: [slug]![roman type][paragraph break]";
 		write File of Conclusions from the Table of Possible Achievements;
 		if the number of filled rows in Table of Possible Achievements is number-of-achievements:
-			now N is "Atlantida award for accomplishing every achievement in the game";
-			unless N is a used achievement:
-				record N as an achievement.
+			now slug is "Atlantida award for accomplishing every achievement in the game";
+			unless slug is a used achievement:
+				record slug as an achievement.
 
 Number-of-achievements is a number that varies. Number-of-achievements is 16.
 
@@ -403,7 +402,7 @@ This is the list achievements rule:
 			say "  [achievement entry][line break]".
 
 To decide whether (chosen ending - text) is a used achievement:
-	let N be "[chosen ending]";
+	let N be chosen ending;
 	repeat through the Table of Possible Achievements:
 		if N is achievement entry:
 			yes;
