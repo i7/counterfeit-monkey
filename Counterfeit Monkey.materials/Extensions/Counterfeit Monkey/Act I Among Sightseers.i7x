@@ -507,7 +507,7 @@ This is the teach scoring rule:
 		make no decision;
 	unless the score is 1:
 		make no decision;
-	if waving the letter-remover at something:
+	if waiting:
 		say "[first custom style]Something we did has just raised our score! We must be on the right track. To find out what exactly we did right, type SCORE.[roman type]";
 	otherwise:
 		say "[first custom style]To see how we're doing so far, type SCORE.[roman type]";
