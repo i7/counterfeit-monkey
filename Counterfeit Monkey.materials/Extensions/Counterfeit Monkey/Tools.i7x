@@ -256,6 +256,7 @@ Setting action variables for waving the letter-remover device at an object which
 		now letter absence is true;
 	otherwise:
 		let starting text be the printed name of second noun;
+		now the second noun is seen;
 		now starting text is starting text in lower case;
 		if the second noun is yourself:
 			now starting text is "alexandra";
