@@ -764,6 +764,7 @@ A ranking rule for Brock when Farewell is happening:
 Farewell ends when the newspaper is examined.
 
 When Farewell ends:
+	pre-remove achievements option at game end;
 	if atlantida-refreshed is seen:
 		if the story viewpoint is first person plural or the story viewpoint is first person singular:
 			say "[betrayed-outcome]";
