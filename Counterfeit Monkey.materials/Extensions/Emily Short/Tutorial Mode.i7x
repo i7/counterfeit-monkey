@@ -73,7 +73,7 @@ An instructional rule (this is the teach examining rule):
 	if the teach examining rule is listed in the completed instruction list, make no decision;
 	if a previously-mentioned non-player thing (called target) is enclosed by location:
 		let N be "[the target]";
-		let M be "[target]";
+		let M be the printed name of the target;
 		now N is N in upper case;
 		now M is M in upper case;
 		say "You can find out more if you LOOK AT [N] (or shorten it to L [M])." (A);
@@ -114,7 +114,7 @@ An instructional rule (this is the teach compass directions rule):
 		make no decision;
 	if way is nothing:
 		make no decision;
-	let N be "[way]";
+	let N be the printed name of way;
 	now N is N in upper case;
 	say "[one of]Feel free to look around some more. When you're ready to move on from here, try[or]No rush, but just a reminder that when you want to move to a new location, you can go[stopping] [N]." (A);
 	now the expected action is the action of going way;
