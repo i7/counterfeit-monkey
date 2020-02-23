@@ -145,7 +145,7 @@ To say get noun example: [say "FLOWER, for example".]
 	if example is nothing:
 		now noun_example is "flower";
 	otherwise:
-		now noun_example is "[example]";
+		now noun_example is the printed name of example;
 	now noun_example is noun_example in upper case;
 	say "[noun_example]".
 
@@ -153,7 +153,7 @@ To say get direction example: [say "NORTH, for example".]
 	let randdir be a random sp_viable direction;
 	let dir_example be text;
 	if randdir is a direction:
-		now dir_example is "[randdir]";
+		now dir_example is the printed name of randdir;
 		now dir_example is dir_example in upper case;
 		say "[dir_example], for example";
 	otherwise:
