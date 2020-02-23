@@ -1877,7 +1877,7 @@ The description of the par is "Rather weakly represented by a golfing score-card
 The description of the part is "It is made of dull grey metal, with an octagonal shape at one end and a hole for a screw or bolt at the other. I have no idea what it goes with. It might be a plumber's part, or a part for a car, or something else entirely.".
 	The scent-description of the part is "metal".
 
-The description of the pass is "A Bureau of Orthography visiting pass, a very valuable commodity in these parts. Forging one is grounds for imprisonment. There is a picture on the front that looks more or less like us, though with considerably more [if hardness is true]and redder [end if]hair."
+The description of the pass is "A Bureau of Orthography visiting pass, a very valuable commodity in these parts. Forging one is grounds for imprisonment. There is a picture on the front that looks more or less like us, though with [if hardness is true]redder and [end if]considerably more hair."
 
 The description of the passcard is "A variant of a passport: it has an image on the front that looks more or less like us, though with more hair, and the stripe on the back is imprinted, presumably, with various biometric information. It's no good at unlocking doors, however."
 	The scent-description of the passcard is "plastic".
