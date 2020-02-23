@@ -2070,7 +2070,7 @@ The snapping continues.
 [Your score has gone up by two points and is now fifty.]
 
 > go to brown's lab
-/(We( make the| have a)?|It's a)( short| brief)? walk|hike.
+/(We( make the| have a)?|It's a)( short| brief| quick)? walk|hike.
 
 Brown's Lab
 Professor Brown, the Reification of Abstracts researcher, is hunched over his work table. Brown is only barely a professor at all — actually, his working title is Senior Lecturer, and he holds a yearly contract which the University has the option to renew at whim. This prevents him going elsewhere while ensuring that he never has a fully-funded lab of his own. All the electrical equipment down here is tinker-toys compared to the stuff he really wants; in fact, half of it he built himself with components he bought with his own money.
@@ -2266,7 +2266,7 @@ The back wall is dramatically decorated with bottled liquors of all sorts, from 
 
 What makes this place technically a drinks club rather than a bar is its license to serve letter-manufactured food and drink. A toolkit on the bar contains some screwdrivers, some gimlets, and some rusty nails, ready to be transformed into their respective cocktails.
 
-/The bartender and Mark are still talking about the homonym paddle. Mark (has|is holding) a gin and tonic. The other patrons are scattered around the room at small tables, drinking or talking among themselves.
+/The bartender and Mark are still talking about the homonym paddle. Mark (has|is holding|is carrying) a gin and tonic. The other patrons are scattered around the room at small tables, drinking or talking among themselves.
 
 /"(Hi|Hello|Hi there)," the bartender says.
 
@@ -2542,7 +2542,7 @@ The snapping continues.
 > put peal in carton
 We set the peal in the carton, where it ought to provide a helpful distraction for the time being.
 
-/(When you pay attention, the peal really is nearly deafening|The snapping continues).
+/(When you pay attention, the peal really is nearly deafening|The snapping continues|The bells go on and on like a cheap alarm clock I once had).
 
 > go to rectification room
 Rectification Room
@@ -3547,7 +3547,7 @@ Of course, there were other options there: the T-inserter could have made two wo
 
 "No problem creating creatures," Brock says judiciously.
 
-/(The tit stares at us|He's looking at us, but when I look back, he cuts his eyes away|He watches us with a slightly disturbing intentness in his eyes|He cranes to look around at the back of the machine, but doesn't find anything interesting|He pauses, listening for noises outside|He runs his fingers over the surface of the machine, checking for hot spots|He stands back, regarding the T-inserter thoughtfully). ("As our next trick we need to look at the stabilization performance," Brock says. "Inserters sometimes run into trouble if there's a case where the same base word could be expanded to multiple derivatives — for instance, if you S-inserted CREAM, it wouldn't know whether to make CREAMS or SCREAM or SCREAMS.")?
+/(The tit stares at us|He's looking at us, but when I look back, he cuts his eyes away|He watches us with a slightly disturbing intentness in his eyes|He cranes to look around at the back of the machine, but doesn't find anything interesting|He pauses, listening for noises outside|He runs his fingers over the surface of the machine, checking for hot spots|He stands back, regarding the T-inserter thoughtfully|He knocks on the top of the T-inserter). ("As our next trick we need to look at the stabilization performance," Brock says. "Inserters sometimes run into trouble if there's a case where the same base word could be expanded to multiple derivatives — for instance, if you S-inserted CREAM, it wouldn't know whether to make CREAMS or SCREAM or SCREAMS.")?
 
 The tit clambers out of the T-inserter machine.
 
@@ -3792,7 +3792,7 @@ Hanging in the air at the north end of the hallway is an odor.
 
 > shoot odor
 (with the anagramming gun)
-The gun fires ruggedly into the odor, which shatters and then reforms as the door. It is part of the north wall, and currently closed.
+The gun fires ruggedly into the odor, which shatters and then reforms as a door. It is part of the north wall, and currently closed.
 
 [Your score has gone up by one point and is now eighty-four.]
 
@@ -4195,7 +4195,7 @@ Atlantida smiles with half a mouth. "You've arrived on a difficult day. In the o
 /(I could|I'd like to|I want to|I'm inclined to|My response would be to) ask whether the protesters feel the same way.
 
 > shoot gun at rifle
-The gun fires ruggedly into the restoration gel rifle, which shatters and then reforms as the infertile astrologer. She's a woman with long grey hair, well past menopause.
+The gun fires ruggedly into the restoration gel rifle, which shatters and then reforms as an infertile astrologer. She's a woman with long grey hair, well past menopause.
 
 The infertile astrologer falls awkwardly to earth and looks around in confusion.
 
@@ -4558,7 +4558,7 @@ Brock studies us for a moment more. Then he reaches into his pocket and pulls ou
 In that game you scored 100 out of a possible 100, in 492 turns, earning you the rank of Successful Revolutionary.
 
 
-Would you like to RESTART, RESTORE a saved game, QUIT, UNDO the last command, review the ACHIEVEMENTS you've reached so far, or learn about some of the SOURCES used in creating this game?
+Would you like to RESTART, RESTORE a saved game, QUIT, UNDO the last command, review your final SCORE, reveal what ACHIEVEMENTS you have yet to accomplish, or learn about some of the SOURCES used in creating this game?
 > restart
 
 
@@ -4739,7 +4739,7 @@ Hanging in the air at the north end of the hallway is an odor.
 
 > shoot odor
 (with the anagramming gun)
-The gun fires ruggedly into the odor, which shatters and then reforms as the door. It is part of the north wall, and currently closed.
+The gun fires ruggedly into the odor, which shatters and then reforms as a door. It is part of the north wall, and currently closed.
 
 [Your score has gone up by one point and is now eighty-three.]
 
@@ -5215,7 +5215,7 @@ Atlantida smiles with half a mouth. "You've arrived on a difficult day. In the o
 /(You could|I'd like to|You want to|I'm inclined to|My response would be to) ask whether the protesters feel the same way.
 
 > shoot rifle with anagramming gun
-The gun fires ruggedly into the restoration gel rifle, which shatters and then reforms as the infertile astrologer. She's a woman with long grey hair, well past menopause.
+The gun fires ruggedly into the restoration gel rifle, which shatters and then reforms as an infertile astrologer. She's a woman with long grey hair, well past menopause.
 
 The infertile astrologer falls awkwardly to earth and looks around in confusion.
 
@@ -5526,14 +5526,24 @@ He leans back and looks at us.
 In that game you scored 99 out of a possible 100, in 492 turns, earning you the rank of Enemy of the State.
 
 
-Would you like to RESTART, RESTORE a saved game, QUIT, UNDO the last command, review the ACHIEVEMENTS you've reached so far, or learn about some of the SOURCES used in creating this game?
+Would you like to RESTART, RESTORE a saved game, QUIT, UNDO the last command, review your final SCORE, reveal what ACHIEVEMENTS you have yet to accomplish, or learn about some of the SOURCES used in creating this game?
 > achievements
-The achievements you have accomplished so far include:
+These achievements you have yet to accomplish:
 
-  Alex Rosehip award for completing the game in easy mode
-  Finished tutorial mode
-  Finn Rosehip award for gnu-hunting
+  Andra award for completing the game in hard mode
+  Priscilla Parsons award for winning the game without ever entering the church
+  Lucius Quagmire award for viewing unusual films
+  Reverend Plaice award for placing the cross on the altar while liturgically dressed
+  Jocasta Higgate award for reconstructing pagan worship on the island
+  Camilla Downdweller award for creating five types of fish in one playthrough
+  Lester Parsons award for discovering unspecified local rites
+  Igor Rosehip award for creating at least five body parts in one playthrough
+  Horace Fingerstain award for jotting some notes
+  Lord Michael Rosehip award for showing the black spot to a pirate crew
+  Mort Shaply award for showing Poe a raven-based foodstuff
+  Propper Rosehip award for talespinning
+  Roman "Sticky" Fingerstain award for impromptu art theft
 
-Would you like to RESTART, RESTORE a saved game, QUIT, UNDO the last command, review the ACHIEVEMENTS you've reached so far, or learn about some of the SOURCES used in creating this game?
+Would you like to RESTART, RESTORE a saved game, QUIT, UNDO the last command, review your final SCORE, reveal what ACHIEVEMENTS you have yet to accomplish, or learn about some of the SOURCES used in creating this game?
 
 > restart
