@@ -440,7 +440,7 @@ An instructional rule (this is the teach about letter-remover rule):
 		make no decision;
 	if the number of entries in the list of remaining letters is not 26:
 		make no decision;
-	let N be "[letter-remover]";
+	let N be the printed name of letter-remover;
 	now N is N in upper case;
 	say "[first custom style]That looks interesting. Try looking at that [letter-remover][one of][or]. L [N][stopping].[roman type]";
 	now the expected action is the action of examining the mourning dress;

@@ -42,7 +42,7 @@ To say irretrievable-ordinal:
 		now last-irretrievable-turn is the turn count;
 	let N be "[ordinal of current-irretrievable-ordinal]";
 	now N is N in sentence case;
-	say "[N]".
+	say N.
 
 A don't change irretrievable rule for a thing (called the item):
 	if the item is the tub or the item is the letter-remover or the item is the restoration gel:
@@ -76,10 +76,10 @@ Instead of waving the letter-remover device:
 	say "Whoa, whoa! Just waving that thing around without an exact aim could do a lot of damage. Wave it AT something, or don't wave it at all."
 
 The letter-remover device is a thing. It is essential and illegal and examined. Understand "letter remover" or "plastic device" or "device" or "blunt-nosed" as letter-remover.
-	The description of the letter-remover device is "It is a blunt-nosed plastic device, about the size of a laser pointer, that can be waved at things to remove excess [current setting in upper case]s. It is not very powerful, and often fails against large items. On the other hand, it has a wide range of action: it can be set to any letter [we] choose."
+	The description of the letter-remover device is "It is a blunt-nosed plastic device, about the size of a laser pointer, that can be waved at things to remove excess [current setting of letter-remover in upper case]s. It is not very powerful, and often fails against large items. On the other hand, it has a wide range of action: it can be set to any letter [we] choose."
 	The introduction is "These are, if not exactly cheap, hardly unknown in Atlantis."
 	Understand "remover" as the letter-remover device.
-	The printed name of the letter-remover device is "[current setting in upper case]-remover". The indefinite article of the letter-remover device is "your".
+	The printed name of the letter-remover device is "[current setting of letter-remover in upper case]-remover". The indefinite article of the letter-remover device is "your".
 
 After printing the name of the letter-remover device while taking inventory:
 	if the letter-remover device is upgraded:
@@ -123,7 +123,7 @@ A first command-string altering rule (this is the implicitly change letter-remov
 			replace the regular expression "(.*) (.)-remover" in N with "\2";
 		otherwise:
 			replace the regular expression "(.)-remove.*" in N with "\1";
-		if the current setting of the letter-remover exactly matches the text "[N]":
+		if the current setting of the letter-remover exactly matches the text N:
 			expand X-remover-string;
 			make no decision;
 		if the number of characters in N is greater than 1:
@@ -343,9 +343,9 @@ Check waving the letter-remover at something which is enclosed by the player:
 
 Check waving the letter-remover at something creating the letter-remover:
 	if the disappointment text matches the regular expression ".*\s.*":
-		let presumed second noun be "[second noun]";
+		let presumed second noun be the printed name of the second noun;
 		let C be the number of words in presumed second noun;
-		let presumed second noun be "[word number C in presumed second noun]";
+		let presumed second noun be word number C in presumed second noun;
 		now the prior named object is the second noun;
 		say "The device buzzes, puzzled. It has tried to create a '[disappointment text]': evidently '[presumed second noun]' [are] too tightly bound to [their] modifiers and can't be manipulated separately[one of]. This is a serious problem in my field of study, incidentally[or][stopping][if the second noun is fixed in place or the second noun is scenery]. Or perhaps it just doesn't have sufficient power to handle [the second noun][end if]." instead;
 	otherwise:
@@ -485,13 +485,13 @@ She grins at us and sets the glass down neatly on the bar.[or]This time she lays
 
 
 To decide what thing is the homonym-match of (target - a thing):
-	let old text be "[target]";
+	let old text be the printed name of target;
 	now old text is old text in lower case;
 	let target-hash be the hash code of target;
 	let target-index be the homonym index of target;
 	repeat with item running through things in the repository:
 		if the hash code of the item is target-hash and the homonym index of the item is not target-index:
-			let new text be "[item]";
+			let new text be the printed name of item;
 			now new text is new text in lower case;
 			if new text is old text:
 				decide on item;
@@ -533,7 +533,7 @@ teeing is an action applying to one thing. The teeing action has an object calle
 [We can't guess where to stick our ts in order to arrive at other objects. And because the starting object might already contain one or more instances of T, we can't just strip the Ts from our goal objects and see if they match. What we have to do instead is go through the name of all our target objects, subtract the name of the starting object, and see if all that is left is a string of ts. This gives us an opportunity to do some detailed work with individual characters:]
 
 Setting action variables for teeing something:
-	let starting text be "[printed name of the noun]";
+	let starting text be printed name of the noun;
 	let Y be the single-letter-hash of "t";
 	let comparison number be the hash code of the noun with Y added;
 	repeat with item running through things in repository:
@@ -544,7 +544,7 @@ Setting action variables for teeing something:
 			let X be the number of times the goal text matches the regular expression "<tT>";
 			[say "[item]: [goal text] (success [matching success])[line break]";]
 			if the matching success is true and goal text exactly matches the regular expression "<tT>+":
-				let name text be "[item]";
+				let name text be printed name of item;
 				unless name text is listed in possible-goal-texts:
 					if the goal-object is multiply-made or the goal-object is nothing:
 						now the goal-object is the item;
@@ -553,9 +553,9 @@ Setting action variables for teeing something:
 					add name text to possible-goal-texts.
 
 To decide what text is the name of (Y - an object) minus the name of (X - an object):
-	let starting text be "[X]";
+	let starting text be printed name of X;
 	now starting text is starting text in lower case;
-	let goal text be "[Y]";
+	let goal text be the printed name of Y;
 	now goal text is goal text in lower case;
 	let character count be the number of characters in the goal text;
 	let matching success be true;
@@ -846,7 +846,7 @@ To synthesize contents of (source - a thing):
 	let the chosen article be the best synthesis-match using X;
 	if the chosen article is not the letter-remover device:
 		if the heft of the chosen article is greater than 4 and source is synthesizer:
-			let N be "[chosen article]";
+			let N be the printed name of chosen article;
 			now N is N in upper case;
 			say "An indicator message lights up: OVERRIDE: GENERATED OBJECT [N] EXCEEDS MAXIMUM SIZE LIMIT.";
 			stop;
@@ -940,7 +940,7 @@ Every turn rule when the location is Roget Close and the spinner is non-empty (t
 This is the spinner-turning rule:
 	let the chosen article be the first thing held by the spinner;
 	let X be the chosen article;
-	let goal text be "[printed name of the X]";
+	let goal text be printed name of the X;
 	now goal text is goal text in lower case;
 	let max characters be the number of characters in the goal text;
 	let substitute text be some text;
@@ -951,7 +951,7 @@ This is the spinner-turning rule:
 	[since the spinner's likely to be undoing its own work, allow it to get the original back.]
 	if the chosen article is proffered by something (called the source) which is not the chosen article:
 		if the hash code of the source is the hash code of X:
-			let item text be "[source]";
+			let item text be the printed name of source;
 			now item text is item text in lower case;
 			if the goal text is item text:
 				now the chosen article is the source;
@@ -960,7 +960,7 @@ This is the spinner-turning rule:
 		let x-hash be the hash code of X;
 		repeat with item running through things in the repository:
 			if the hash code of the item is x-hash:
-				let item text be "[item]";
+				let item text be the printed name of item;
 				now item text is item text in lower case;
 				if the goal text is item text:
 					unless item is the reel or item is the snap or the homonym index of item is x-homonym:
@@ -977,7 +977,7 @@ This is the spinner-turning rule:
 			now the chosen article is essential; ]
 		now X is in the repository;
 		move the chosen article to the spinner;
-		say "[if going or looking]After the mirror does its work,[otherwise]The mirror rotates in leisurely fashion, and when it is done[end if] there [are] [a first thing held by the spinner].[no line break]";
+		say "[if going or looking]After the mirror does its work,[otherwise]The mirror rotates in leisurely fashion, and when it is done[end if] there [regarding the first thing held by the spinner][are] [a first thing held by the spinner].[no line break]";
 		[The lines below is a hack to get rid of an annoying triple paragraph break caused by "try examining the chosen article".]
 		let N be the chosen article;
 		if N is unexamined:
@@ -1063,7 +1063,7 @@ Every turn when the turntable is visible and something is on the turntable:
 This is the turntable-turning rule:
 	let the chosen article be a random thing on the turntable;
 	let X be the chosen article;
-	let goal text be "[printed name of the X]";
+	let goal text be printed name of the X;
 	if the turntable is clockwise
 	begin;	[put first letter at the end, as in ape --> pea]
 		if the goal text matches the regular expression "(.)(.*)", replace the regular expression "(.)(.*)" in goal text with "\2\1";
@@ -1781,9 +1781,9 @@ Check shooting something with the loaded anagramming gun:
 	repeat with item running through things in the repository:
 		if the hash code of the item is noun-hash:
 			[say "[item]: ";]
-			let initial name be "[noun]";
+			let initial name be the printed name of noun;
 			now initial name is initial name in lower case;
-			let comparison name be "[item]";
+			let comparison name be the printed name of item;
 			now comparison name is comparison name in lower case;
 			let comparison key be the anagram key of the item;
 			[say "[comparison key]";
@@ -1796,14 +1796,16 @@ Check shooting something with the loaded anagramming gun:
 	otherwise:
 		now detritus is entry max of the possibles list.
 
-To decide what list of text is the anagram key of (n - an object):
+To decide what list of text is the anagram key of (N - an object):
 	let anagram key be a list of text;
-	let starting form be "[n]";
-	if n is yourself:
+	let starting form be some text;
+	if N is yourself:
 		now starting form is "alexandra";
+	otherwise:
+		now starting form is the printed name of N;
 	let count be the number of characters in starting form;
 	repeat with i running from 1 to count:
-		let char be "[character number i in starting form]";
+		let char be character number i in starting form;
 		now char is char in lower case;
 		if char is not " ":
 			add char to anagram key;
@@ -2038,7 +2040,7 @@ But the effect fades almost instantly." instead.
 
 Report inserting something into the umlaut punch:
 	say "[We] put [the noun] into the wire basket of the umlaut punch. There is a hum as the punch warms up, then a bang! as the tines come down sharply, tattooing [the noun].[paragraph break]";
-	let sample be "[noun]";
+	let sample be the printed name of noun;
 	now sample is sample in lower case;
 	let replacement made be false;
 	if sample matches the text "u":
@@ -2142,7 +2144,7 @@ Check poking the Catalan needle with the Catalan needle:
 
 Carry out poking something with the Catalan punt volat needle:
 	let sample be text;
-	let sample be "[noun]";
+	let sample be the printed name of noun;
 	now sample is sample in lower case;
 	if sample matches the regular expression "(.*l)(l.*)":
 		say "The needle slips into place, trying to construct '[text matching subexpression 1]·[text matching subexpression 2]'. It fails, however, to make any recognizable word out of this, and the needle wire grows hotter and hotter in our hand as it tries to fix the change. Finally [we] have to pull out." instead;
@@ -2354,7 +2356,7 @@ After inserting something into the cryptolock:
 	let chosen article be the noun;
 	repeat with item running through things in the repository:
 		if the hash code of the item is the source hash:
-			let item text be "[item]";
+			let item text be the printed name of item;
 			now item text is item text in lower case;
 			if the goal text is item text:
 				now the chosen article is the item;
@@ -2410,7 +2412,7 @@ Test crypto with "tutorial off / autoupgrade / x boiler / look through pane / w 
 To avoid confusion during the replacement process, we replace lower-case letters with upper-case ones to show they've already been changed.]
 
 To decide what text is the encryption of (X - a thing):
-	let goal text be "[printed name of the X]";
+	let goal text be the printed name of the X;
 	now goal text is goal text in lower case;
 	replace the text "a" in goal text with "E";
 	replace the text "e" in goal text with "I";
@@ -2421,7 +2423,7 @@ To decide what text is the encryption of (X - a thing):
 	decide on goal text.
 
 To decide what text is the back encryption of (X - a thing):
-	let goal text be "[printed name of the X]";
+	let goal text be the printed name of the X;
 	now goal text is goal text in lower case;
 	replace the text "a" in goal text with "U";
 	replace the text "e" in goal text with "A";
@@ -2437,7 +2439,7 @@ To decide what text is the back encryption of (X - a thing):
 To figure out whether the game supplied any objects that could fruitfully be encrypted this way, we ran the encryption on every object in the game and inspected the results for things that were really words.]
 
 To decide what text is the hard encryption of (X - a thing):
-	let goal text be "[printed name of the X]";
+	let goal text be the printed name of the X;
 	now goal text is goal text in lower case;
 	replace the text "a" in goal text with "B";
 	replace the text "b" in goal text with "E";
@@ -2469,7 +2471,7 @@ To decide what text is the hard encryption of (X - a thing):
 	decide on goal text.
 
 To decide what text is the back hard encryption of (X - a thing):
-	let goal text be "[printed name of the X]";
+	let goal text be the printed name of the X;
 	now goal text is goal text in lower case;
 	replace the text "a" in goal text with "Z";
 	replace the text "b" in goal text with "A";

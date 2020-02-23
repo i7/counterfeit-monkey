@@ -11,7 +11,7 @@ Instead of taking inventory when the current inventory listing style is utilitar
 	now inventory count is populate inventory table;
 	repeat with R running from 1 to inventory count:
 		choose row R in Table of Inventory Ordering;
-		let N be "[referent entry]";
+		let N be the printed name of referent entry;
 		now appearance entry is N in lower case;
 	sort Table of Inventory Ordering up to row inventory count in appearance order;
 	let paragraph break needed be false;

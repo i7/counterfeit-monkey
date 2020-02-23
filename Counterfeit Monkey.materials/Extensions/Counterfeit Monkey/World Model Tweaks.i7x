@@ -936,13 +936,13 @@ Rule for distantly describing a proper-named room (called target) (this is the n
 The default distant description rule is not listed in any rulebook.
 
 Rule for distantly describing a room (called target):
-	let N be "[the target]";
+	let N be the printed name of the target;
 	unless the target is proper-named:
 		now N is N in lower case;
 	say "[We] can make out [N] that way."
 
 Rule for distantly describing a room (called target) which encloses someone when the location is indoors:
-	let N be "[the target]";
+	let N be the printed name of the target;
 	unless the target is proper-named:
 		now N is N in lower case;
 	say "That way [we] can see [N], in which [is-are a list of people enclosed by the target]."
