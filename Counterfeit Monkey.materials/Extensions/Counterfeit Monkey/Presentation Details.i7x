@@ -330,7 +330,10 @@ Section 4 - Achievements
 The File of Conclusions is called "monkeyac".
 
 When play begins (this is the load conclusions when starting rule):
-	read the achievements.
+	read the achievements;
+	if "Atlantida award for accomplishing every achievement in the game" is a used achievement:
+		choose row with final response rule of list remaining achievements rule in Table of Final Question Options;
+		blank out the whole row.
 
 [The rule below will never run on a successful restore]
 
@@ -357,6 +360,8 @@ To record (slug - some text) as an achievement with conditional break (breakflag
 		if the number of filled rows in Table of Possible Achievements is number-of-achievements:
 			now slug is "Atlantida award for accomplishing every achievement in the game";
 			unless slug is a used achievement:
+				choose row with final response rule of list remaining achievements rule in Table of Final Question Options;
+				blank out the whole row;
 				record slug as an achievement.
 
 Number-of-achievements is a number that varies. Number-of-achievements is 16.
