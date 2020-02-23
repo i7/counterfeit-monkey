@@ -773,6 +773,28 @@ When Farewell ends:
 		say "[no-atlantida-outcome]";
 	end the story finally saying "The End";
 
+To pre-remove achievements option at game end:
+	read the achievements;
+	if there is final response rule of list remaining achievements rule in Table of Final Question Options:
+		let N be some text;
+		let score be 0;
+		if the new church is not visited:
+			now N is "Priscilla Parsons award for winning the game without ever entering the church";
+			unless N is a used achievement:
+				increment score;
+		if hardness is true:
+			now N is "Andra award for completing the game in hard mode";
+		else:
+			now N is "Alex Rosehip award for completing the game in easy mode";
+		unless N is a used achievement:
+			increment score;
+		if the oil-paintings are stolen:
+			now N is "Roman 'Sticky' Fingerstain award for impromptu art theft";
+			unless N is a used achievement:
+				increment score;
+		if score + the number of filled rows in Table of Possible Achievements >= number-of-achievements:
+			choose row with final response rule of list remaining achievements rule in Table of Final Question Options;
+			blank out the whole row.
 
 To say no-atlantida-outcome:
 	say "Brock comes down and hands us a coffee. You look like you could use this. We've hit Mallorca,' he says. 'Slango's in town resupplying.'

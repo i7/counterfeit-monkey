@@ -895,6 +895,7 @@ Understand "end the/-- game/story" as ending. Ending is an action out of world. 
 	end the story saying "This was just a test of the ending functionality".
 
 Understand "end the/-- game/story finally" as final ending. Final ending is an action out of world. Carry out final ending:
+	pre-remove achievements option at game end;
 	end the story finally saying "This is just a test of the final ending functionality";
 
 
