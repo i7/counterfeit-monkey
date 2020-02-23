@@ -402,10 +402,15 @@ This is the list score rule:
 This is the list achievements rule:
 	read the achievements;
 	unless the number of filled rows in the Table of Possible Achievements is 0:
+		let atlantida-achievement be "Atlantida award for accomplishing every achievement in the game";
 		sort the table of Possible Achievements in achievement order;
 		say "The achievements you have accomplished so far include: [paragraph break]";
 		repeat through the Table of Possible Achievements:
-			say "  [achievement entry][line break]".
+			unless achievement entry is atlantida-achievement:
+				say "  [achievement entry][line break]";
+		if atlantida-achievement is a used achievement:
+			say "  [atlantida-achievement][line break]".
+
 
 To decide whether (chosen ending - text) is a used achievement:
 	let N be chosen ending;
