@@ -83,14 +83,7 @@ The new standard surroundings rule is listed instead of the standard surrounding
 
 [ And these from the Standard Rules ]
 
-This is the new declare everything initially unmentioned rule:
-	rapidly set all things not mentioned.
-
-The new declare everything initially unmentioned rule is listed instead of the declare everything initially unmentioned rule in the turn sequence rulebook.
-
-[The new declare everything initially unmentioned rule is listed instead of the declare everything initially unmentioned rule in the startup rulebook.]
-
-The declare everything initially unmentioned rule is not listed in the startup rulebook.
+The declare everything initially unmentioned rule is not listed in any rulebook.
 
 The new declare everything unmentioned rule is listed instead of the declare everything unmentioned rule in the carry out looking rules.
 
