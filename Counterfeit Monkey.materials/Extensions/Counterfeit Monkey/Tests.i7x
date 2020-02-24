@@ -1143,17 +1143,7 @@ Understand "pound anagrams" as testing anagrams. Testing anagrams is an action a
 
 Carry out testing anagrams:
 	repeat with item running through synthesizable things:
-		hash item;
-		say " - [item][line break]";
-
-To hash (N - a thing):
-	let anagram key be a list of text;
-	let starting form be "[n]";
-	let count be the number of characters in starting form;
-	repeat with i running from 1 to count:
-		add "[character number i in starting form]" to anagram key;
-	sort anagram key;
-	say anagram key.
+		say "[anagram key of item] - [item][line break]";
 
 Understand "list sources" as listing sources. Listing sources is an action applying to nothing.
 
