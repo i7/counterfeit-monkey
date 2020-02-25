@@ -285,7 +285,7 @@ The Model T has homonym index 280.
 The Nexami Engeo has homonym index 281.
 The Origin Paste has homonym index 282.
 [Oz has homonym index 283.]
-The PTA has homonym index 284.
+A PTA has homonym index 284.
 The Picard has homonym index 285.
 The Picross has homonym index 286.
 The Pict has homonym index 287.
@@ -870,7 +870,7 @@ The pirate-crew has homonym index 866.
 The pit-items has homonym index 867.
 The pit-trap has homonym index 868.
 The pit-traps have homonym index 868.
-The pita has homonym index 869.
+A pita has homonym index 869.
 The plain white top has homonym index 870.
 The plain-plate has homonym index 871.
 The plan has homonym index 872.

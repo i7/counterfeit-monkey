@@ -76,8 +76,10 @@ A pet is a kind of neuter animal.
 A pi-object is a kind of thing. ["pi"]
 A pit is a kind of thing.
 A pit-hole is a kind of container. The printed name of a pit-hole is "pit".
+A pita is a kind of edible thing.
 A pot is a kind of container.
 An alterna-pot is a kind of vegetable.
+A PTA is a kind of ambiguously plural person.
 A Ra is a kind of man.
 A ram is a kind of neuter animal.
 A rap is a kind of thing.
@@ -183,6 +185,7 @@ The repository contains a cat-mayor.
 [as]
 
 In the repository are a pastis, a pass, some pasts, a pat, an ass, and a pa, [removals]
+	a pita, [pa + it-object from e.g. piece->pic->pict->pit] a PTA,
 	some pestos, some pests, a pet. [vowel rotator]
 	[a zoo.] [reverse hard mode cryptolock]
 
@@ -537,6 +540,7 @@ In the repository is a pearl.
 [pearl]
 
 In the repository are an earl, a perl, a peal, an ear, a pal, a pea, a par, a pa,
+	a pita, [pa + it-object from e.g. wrap->rap->trap->part->pat->pet->pit] a PTA,
 	a pie, a pier, a poi, [vowel rotation]
 	a petal, a tear, an alterna-tear, a peat, a part, a pat, [t-insert derivatives]
 	a tar, a pet, an art, [derive insertions]
@@ -591,6 +595,7 @@ In the repository are some iron-pans, a plan, an i-pan,
 	a sap, a slat, [derive anagrams]
 	a pet, a pot, an alterna-pot, a ten-object, an Ent, [vowel rotation]
 	a spa, a pa, some plural-pas, an as, [derive derivatives]
+	a pita, [pa + it-object from e.g. ball->ba->bat->bet->bit] a PTA,
 	a salt, a top-toy, a net. [anagram derivatives]
 
 [polling charts]

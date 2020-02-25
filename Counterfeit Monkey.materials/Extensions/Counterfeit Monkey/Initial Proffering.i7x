@@ -201,7 +201,6 @@ The Model T proffers the Model T. [I1009_model_t]
 The Nexami Engeo proffers the Nexami Engeo. [I696_nexami_engeo]
 The Origin Paste proffers the Origin Paste. [I1364_origin_paste]
 [The Oz proffers the Oz.] [I1802_oz]
-The PTA proffers the PTA. [I1844_pta]
 The Picard proffers the Picard. [I2363_picard]
 The Picross proffers the Picross. [I2364_picross]
 The Pict proffers the Pict. [I1829_pict]
@@ -784,7 +783,6 @@ The pit-items proffers the pit-items. [I1873_pit_items]
 The alterna-pits proffer the alterna-pits.
 The pit-trap proffers the pit-trap. [I2368_pit_trap]
 The pit-traps proffers the pit-traps.
-The pita proffers the pita. [I1843_pita]
 The plain white top proffers the plain white top. [I1016_plain_white_top]
 The plain-plate proffers the plain-plate. [I1798_plain_plate]
 The plan proffers the plan. [I1857_plan]
@@ -1221,7 +1219,6 @@ The pearl proffers the pear.
 The clock proffers the lock.
 The watch is proffered by the swatch.
 The garbage proffers the mechanic.
-The pocket-bread is proffered by the pita.
 The honey triangle is proffered by the baklava.
 The crossword is proffered by the cross.
 The crossword is proffered by the word.

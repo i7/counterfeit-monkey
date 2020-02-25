@@ -638,7 +638,11 @@ Report teeing something:
 	set pronouns from the goal-object;
 	abide by the dangerous construction rules for the goal-object instead.
 
-Test it-construction with "autoupgrade / wave a-remover at pita / wave p-remover at pit / wave t-remover at it / put i in t-inserter / get it / wave t-remover at it / put i in t-inserter" holding the pita in the Sensitive Equipment Testing Room.
+Table of Ultratests (continued)
+topic	stuff	setting
+"it-construction"	{ pocket-bread, tub }	Sensitive Equipment Testing Room
+
+Test it-construction with "autoupgrade / gel pocket-bread / wave a-remover at pita / wave p-remover at pit / wave t-remover at it / put i in t-inserter / get it / wave t-remover at it / put i in t-inserter" [holding the pocket-bread in the Sensitive Equipment Testing Room].
 
 Chapter 4 - The Synthesizer
 

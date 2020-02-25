@@ -105,7 +105,8 @@ When play begins (this is the setting proffered rule):
 	now the mechanic is not proffered by anything;
 	now the garbage proffers the mechanic;
 	now the pocket-bread is not proffered by anything;
-	now the pocket-bread is proffered by the pita;
+	now the pocket-bread is proffered by a random pita (called P);
+	now P is real;
 	now the honey triangle is not proffered by anything;
 	now the honey triangle is proffered by the baklava;
 	now the crossword is not proffered by anything;
@@ -139,11 +140,13 @@ A thing can be fake or real. A thing is usually real.
 
 When play begins (this is the setting real and fake rule):
 	now every thing enclosed by the repository is fake;
+	now the pearl is real;
 	now patsy-woman is real;
 	now Brock is real.
 
-Definition: a thing is discovered if it is fake and it is seen.
+[Definition: a thing is discovered if it is fake and it is seen.]
 
+The setting real and fake rule is listed before the setting proffered rule in the When play begins rules.
 
 Section 3 - Concreteness
 

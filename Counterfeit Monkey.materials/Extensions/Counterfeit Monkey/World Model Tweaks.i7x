@@ -1834,9 +1834,9 @@ Does the player mean doing something to the LSR chair:
 
 Table of Ultratests (continued)
 topic	stuff	setting
-"chair"	{ LSR chair, chard, pita, tub }	Workshop
+"chair"	{ LSR chair, chard, pocket-bread, tub }	Workshop
 
-Test chair with "tutorial off / powerup / autoupgrade / open tub / wave c-remover at chair / wave d-remover at chard / wave a-remover at pita / wave t-remover at pit / wave p-remover at pi / put char and i on dais / synthesize / get chair / put gel on hair / l / take chair".
+Test chair with "tutorial off / powerup / autoupgrade / open tub / wave c-remover at chair / wave d-remover at chard / gel pocket-bread / wave a-remover at pita / wave t-remover at pit / wave p-remover at pi / put char and i on dais / synthesize / get chair / put gel on hair / l / take chair".
 
 Test char with "tutorial off / purloin char / wave h-remover at char / wave i-remover at chair / put gel on car" holding the tub in the Language Studies Seminar Room.
 

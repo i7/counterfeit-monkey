@@ -2757,9 +2757,9 @@ Instead of climbing underfoot-path:
 
 Table of Ultratests (continued)
 topic	stuff	setting
-"shrine"	{ god, pita, roll of bills, as-coin, cross, army, members, yellow sign, Guidebook }	Winding Footpath
+"shrine"	{ god, pocket-bread, tub, roll of bills, as-coin, cross, army, members, yellow sign, Guidebook }	Winding Footpath
 
-Test shrine with "tutorial off / autoupgrade / wave z-remover at kudzu / look behind bushes / put god in shrine / look / get god / wave a-remover at pita / wave t-remover at pit / put pi in shrine / look / get pi / put bills in shrine / look / get bills / put as in shrine / look / get as / put cross in shrine / look / get cross / put army in shrine / look / get army / put members in shrine / look / get members / wave s-remover at members / put member in shrine / look /  get member / wave g-remover at sign / put sin in shrine / look / get sin / put guidebook in shrine / look / get guidebook" [holding the god and the pita and the roll of bills and the as and the cross and the army and the members and the yellow sign and the Guidebook in the Winding Footpath.]
+Test shrine with "tutorial off / autoupgrade / gel pocket-bread / wave z-remover at kudzu / look behind bushes / put god in shrine / look / get god / wave a-remover at pita / wave t-remover at pit / put pi in shrine / look / get pi / put bills in shrine / look / get bills / put as in shrine / look / get as / put cross in shrine / look / get cross / put army in shrine / look / get army / put members in shrine / look / get members / wave s-remover at members / put member in shrine / look /  get member / wave g-remover at sign / put sin in shrine / look / get sin / put guidebook in shrine / look / get guidebook" [holding the god and the pita and the roll of bills and the as and the cross and the army and the members and the yellow sign and the Guidebook in the Winding Footpath.]
 
 Section 6 - The Beach
 

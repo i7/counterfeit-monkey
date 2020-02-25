@@ -5146,9 +5146,9 @@ When Brock-argument begins:
 		now Brock carries the last-sign.
 
 Definition: a thing is it-derivative:
-	if it is the spill or it is the pita or it is the piece or it is a sign:
+	if it is the spill or it is a pita or it is the piece or it is a sign:
 		yes;
-	if it is proffered by the spill or it is proffered by the pita or it is proffered by the piece or it is proffered by a sign:
+	if it is proffered by the spill or it is proffered by a pita or it is proffered by the piece or it is proffered by a sign:
 		yes;
 	no.
 
