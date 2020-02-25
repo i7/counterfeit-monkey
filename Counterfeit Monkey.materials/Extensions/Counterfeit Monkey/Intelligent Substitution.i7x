@@ -133,9 +133,29 @@ Include
 			score = 500;
 
 			if (~~contender.(+ fake +))
+			{
 				score = score - 250;
+				!print (The)contender, " is real, so disfavor it.^";
+			}
 			!Non-fake things should generally not be moved out of the repository
 			!except by gelling
+
+			for (x = IK2_First: x : x = x.IK2_Link)
+			{
+				if (x ~= contender && Relation_TestVtoV(x, (+ the proffering relation +), contender, false))
+				{
+					print (The)contender, " is proffered by ", (the)x;
+					if (~~Relation_TestVtoV(x, (+ the proffering relation +), source, false))
+					{
+						!Something else proffers the contender. Don't choose this.
+						score = score - 250;
+						!print ", which also does not proffer ", (the)source, ", so disfavor it.^";
+						break;
+					}
+					!else
+						!print ", but which also proffers ", (the)source, ".^";
+				}
+			}
 
             if (child(contender) ~= nothing)
                 score = score + 100;
