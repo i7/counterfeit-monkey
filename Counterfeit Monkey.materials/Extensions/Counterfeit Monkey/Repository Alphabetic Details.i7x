@@ -1277,7 +1277,7 @@ The indefinite article of the ire is "some". The description of the ire is "It m
 
 Rule for clarifying the parser's choice of the it-object: do nothing instead.
 
-The printed name of an it-object is "it". Understand "it" or "pronoun" as an it-object. The description of an it-object is "It's itself. It. The epitome of itness. Philosophers would pay millions." An it-object is r-abstract.
+The printed name of an it-object is "it". Understand "it" or "pronoun" as an it-object. The description of an it-object is "It's itself. It. The epitome of itness. Philosophers would pay millions." An it-object is r-abstract. Rule for printing the plural name of an it-object: say "it".
 
 When play begins (this is the setting up it and tit rule):
 	let target be a random it-object;
