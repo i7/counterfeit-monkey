@@ -1844,6 +1844,12 @@ Some secret-plans are in the locker. They are privately-named.
 	Understand "plan" or "plans" as the secret-plans.
 	The description of the secret-plans is "The plans are rolled up and stuck shut with a label that reads 'PROPERTY OF DENTAL CONSONANTS LIMITED [--] UNAUTHOR[IZE]D USE ILLEGAL'. They're just a set of prints from the main computer design, of course, but still extremely informative: to the right engineer, they might reveal the secret of T-insertion for replication by other companies. These are what you and Brock were originally contracted to lift from the island, at a fee in the multiple millions.". The secret-plans are essential, illegal, floppy, and long. Understand "tube" as the secret-plans when the tube is marked invisible. Understand "label" as the secret-plans.
 
+[We need these variables to keep track of the smuggled plans across several transformations, in particular when synthesized with other items, in order to print (really the smuggled plans in disguise) after the correct object in the inventory.]
+The secret-plans has an object called the derivate. The derivate of the secret-plans is the secret-plans.
+
+The secret-plans has an object called the previous derivate. The previous derivate of the secret-plans is the secret-plans.
+
+
 Understand "count [bills]" as a mistake ("[We] thumb quickly through the bills [--] smaller currency on the outside, larger denominations on the inside. I wouldn't have thought I could add that quickly and accurately, but you, evidently, have more practice. It works out to just over fifteen thousand euros.").
 
 

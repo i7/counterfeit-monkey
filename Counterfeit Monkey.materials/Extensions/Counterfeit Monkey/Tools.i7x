@@ -407,6 +407,8 @@ Carry out waving the letter-remover device at something:
 		now every thing which proffers the second noun proffers the generated object;
 	if an essential thing (called source) proffers the generated object:
 		now the generated object is essential;
+		if the second noun is derivate of the secret-plans:
+			now the derivate of the secret-plans is the generated object;
 	[if something (called source) which encloses an essential thing proffers the generated object:
 		now the generated object is essential; ]
 	[so that 'take it' or whatever will work, after we've made something: ]
@@ -468,6 +470,10 @@ To homonym-paddle (N - a thing):
 	unless X is the player:
 		record "getting a product of the homonym paddle" as achieved;
 		move the X to the dor-bar-top;
+		if N is essential:
+			now X is essential;
+			if N is the derivate of the secret-plans:
+				now derivate of the secret-plans is X;
 		set pronouns from X;
 		now X does not proffer X;
 		now N proffers X;
@@ -591,6 +597,10 @@ Carry out teeing something:
 		complete "Test T-inserter on making creatures";
 	if the number of entries in the possible-goals is greater than 1:
 		now the goal-object is multiply-made;
+	if noun is essential:
+		now goal-object is essential;
+		if noun is the derivate of the secret-plans:
+			now derivate of the secret-plans is goal-object;
 	now every thing which proffers the noun proffers the goal-object;
 	move the goal-object to the holder of the noun;
 	now goal-object is marked-visible;
@@ -857,6 +867,9 @@ To synthesize contents of (source - a thing):
 		now Y proffers the chosen article;
 		if an essential thing (called parent) proffers the chosen article:
 			now the chosen article is essential;
+			if X is derivate of the secret-plans or Y is derivate of the secret-plans :
+				now the previous derivate of the secret-plans is the derivate of the secret-plans;
+				now the derivate of the secret-plans is the chosen article;
 		[if something which proffers the chosen article encloses an essential thing:
 			now the chosen article is essential; ]
 		now X is in the repository;
@@ -973,6 +986,8 @@ This is the spinner-turning rule:
 		now everything which proffers X proffers the chosen article;
 		if an essential thing (called source) proffers the chosen article:
 			now the chosen article is essential;
+			if X is the derivate of the secret-plans:
+				now derivate of the secret-plans is the chosen article;
 		[ if something (called source) which proffers the chosen article encloses an essential thing:
 			now the chosen article is essential; ]
 		now X is in the repository;
@@ -1586,6 +1601,10 @@ To gel-convert (item - an object):
 			abide by the dangerous construction rules for the parent;
 			if the parent is unseen:
 				now description needed is true;
+		if item is derivate of the secret-plans:
+			now derivate of the secret-plans is previous derivate of secret-plans;
+			if derivate of the secret-plans is not held by destination:
+				say "BUG! Derivate of the secret-plans ([derivate of the secret-plans]) [were] not recreated when gelling [the item]!";
 		if item is hoses or item is hoe:
 			say "[The item] [become] [a list of things which proffer the item], redecorating the fountain. [run paragraph on]";
 		otherwise:
@@ -1835,6 +1854,8 @@ Carry out shooting something with the anagramming gun:
 		now every thing which proffers the noun proffers the detritus;
 	if an essential thing (called source) proffers the detritus:
 		now the detritus is essential;
+		if the noun is the derivate of the secret-plans:
+			now derivate of the secret-plans is the detritus;
 	[ if something (called source) which proffers the detritus encloses an essential thing:
 		now the detritus is essential; ]
 	now the detritus is marked-visible;
@@ -2369,6 +2390,8 @@ After inserting something into the cryptolock:
 			say "There is a churning noise from within [the cryptolock] and '[goal text]' appears in letters of vivid purple smoke. Additional letters read 'SAFETY OVERRIDE.' Then the smoke dissipates without result." instead;
 		if an essential thing (called source) proffers the chosen article:
 			now the chosen article is essential;
+			if noun is the derivate of the secret-plans:
+				now the derivate of the secret-plans is the chosen article;
 		[ if something which proffers the chosen article encloses an essential thing:
 			now the chosen article is essential; ]
 		now everything which is in the cryptolock is in the repository;

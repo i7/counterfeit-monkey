@@ -77,14 +77,13 @@ topic (a topic)	stuff (a list of objects)	setting (a room)
 
 Test newutility with "tutorial off / i / put all in backpack / i / wave l-remover at plans / put pans in backpack / i / put all in backpack / i / close backpack / i / x backpack / open backpack / x backpack / i / wear wig / i / wear monocle / i / drop backpack / i / x me" [holding the backpack and the secret-plans and the lime and the cate and the wig.]
 
-After printing the name of something (called target) which is proffered by the secret-plans while taking inventory:
-	if the current inventory listing style is utilitarian and the target is not secret-plans:
+After printing the name of the derivate of the secret-plans while taking inventory:
+	if the current inventory listing style is utilitarian and the derivate of the secret-plans is not the secret-plans:
 		say "[roman type] (really the smuggled plans in disguise)".
 
 After printing the name of the tub while taking inventory:
 	if the current inventory listing style is utilitarian:
 		say " of restoration gel".
-
 
 To decide which number is populate inventory table:
 	(- ( PopulateTableOfInventoryOrdering() ) -).
