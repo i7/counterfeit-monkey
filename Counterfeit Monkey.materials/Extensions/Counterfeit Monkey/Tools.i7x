@@ -1608,7 +1608,7 @@ To gel-convert (item - an object):
 		if item is derivate of the secret-plans:
 			now derivate of the secret-plans is previous derivate of secret-plans;
 			if derivate of the secret-plans is not held by destination:
-				say "BUG! Derivate of the secret-plans ([derivate of the secret-plans]) [were] not recreated when gelling [the item]!";
+				say "BUG! Derivate of the secret-plans ([derivate of the secret-plans]) was not recreated when gelling [the item]!";
 		if item is hoses or item is hoe:
 			say "[The item] [become] [a list of things which proffer the item], redecorating the fountain. [run paragraph on]";
 		otherwise:
