@@ -4001,7 +4001,7 @@ The tiptop is r-abstract. The description of the tiptop is "At the moment it res
 The description of the tit is "A small, harmless-looking bird." A tit is naughty-sounding. The heft of a tit is 2.
 
 The description of the alterna-tit is "It is indeed a severed breast. Maybe a C-cup, creamy-skinned and all, but the fact that it looks like it's been raggedly chopped off by a serial killer really decreases the appeal."
-The printed name of the alterna-tit is "tit".
+Understand "tit" or "breast" as the alterna-tit. The printed name of the alterna-tit is "tit".
 
 The titan of diarists is a man. The description is "He looks vaguely, non-specifically reminiscent of Pepys. At any rate, the kind of guy who would have gone through the London Fire."
 
