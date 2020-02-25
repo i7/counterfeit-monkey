@@ -421,7 +421,7 @@ The peacoat is fake. [I2360_peacoat]
 The peacock is fake. [I2358_peacock]
 The peacod is fake. [I2359_peacod]
 The peal is fake. [I1779_peal]
-The pearl is fake. [I1776_pearl]
+The pear is fake.
 The pearl-ring is fake. [I2361_pearl_ring]
 The peat is fake. [I1787_peat]
 The pen is fake. [I535_pen]
