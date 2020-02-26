@@ -51,6 +51,7 @@ Include
 			if (~~contender.(+ fake +))
 			{
 				score = score - 250;
+				!print (The)contender, ", match ", i, ", is not fake, so disfavor it.^";
 			}
 
 			! [repeat with X running through things that proffer contender:]
@@ -59,7 +60,7 @@ Include
 			{
 				if (x ~= contender && Relation_TestVtoV(x, (+ the proffering relation +), contender, false))
 				{
-					!print (The)contender, " is proffered by ", (the)x;
+					!print (The)contender, ", match ", i, ", is proffered by ", (the)x;
 					if (~~Relation_TestVtoV(x, (+ the proffering relation +), source, false))
 					{
 						! Something else is proffered by the contender.
@@ -68,56 +69,56 @@ Include
 						!print ", which also does not proffer ", (the)source, ", so disfavor it.^";
 						break;
 					}
-					!else
+					else
 						!print ", but which also proffers ", (the)source, ".^";
 				}
 			}
-		}
 
-		! The contender contains something. Prefer this.
-            if (child(contender) ~= nothing)
-		{
-                score = score + 100;
-		}
-
-            ! Prefer things we have already created.
-            if (contender.(+ seen +))
-		{
-			score = score + 1;
-            }
-
-		! These checks are only relevant if we are using the letter-remover
-		if (tool == (+ letter-remover +))
-		{
-			! The letter-remover is not upgraded to create this.
-			! Don't choose this.
-			if ( (~~contender.(+ r-concrete +)) && ~~(+ letter-remover +).(+ upgraded +))
+			! The contender contains something. Prefer this.
+				if (child(contender) ~= nothing)
 			{
-				score = score - 100;
-			}
-
-			!  The letter-remover is not upgraded to create this.
-			!  Don't choose this.
-			if (contender ofclass (+ person +) && ~~(+ letter-remover +).(+ creature-enabled +))
-			{
-				score = score - 100;
-			}
-
-			! Prefer fueled and oiled cars.
-			if (contender ofclass (+ car +))
-			{
-				if (contender.(+ fueled +))
-					score = score + 101;
-				else if (contender.(+ operational +))
 					score = score + 100;
 			}
-            }
 
-            if (score > highscore)
-            {
-			highscore = score;
-			best_match = contender;
-            }
+			! Prefer things we have already created.
+			if (contender.(+ seen +))
+			{
+				score = score + 1;
+			}
+
+			! These checks are only relevant if we are using the letter-remover
+			if (tool == (+ letter-remover +))
+			{
+				! The letter-remover is not upgraded to create this.
+				! Don't choose this.
+				if ( (~~contender.(+ r-concrete +)) && ~~(+ letter-remover +).(+ upgraded +))
+				{
+					score = score - 100;
+				}
+
+				!  The letter-remover is not upgraded to create this.
+				!  Don't choose this.
+				if (contender ofclass (+ person +) && ~~(+ letter-remover +).(+ creature-enabled +))
+				{
+					score = score - 100;
+				}
+
+				! Prefer fueled and oiled cars.
+				if (contender ofclass (+ car +))
+				{
+					if (contender.(+ fueled +))
+						score = score + 101;
+					else if (contender.(+ operational +))
+						score = score + 100;
+				}
+			}
+
+			if (score > highscore)
+			{
+				highscore = score;
+				best_match = contender;
+			}
+		}
 
 		matches_count = 0;
 
