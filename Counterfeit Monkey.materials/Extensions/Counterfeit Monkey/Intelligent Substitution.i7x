@@ -69,7 +69,7 @@ Include
 						!print ", which also does not proffer ", (the)source, ", so disfavor it.^";
 						break;
 					}
-					else
+					!else
 						!print ", but which also proffers ", (the)source, ".^";
 				}
 			}
