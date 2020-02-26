@@ -956,7 +956,7 @@ The repository contains an earring, an earwig, an earpiece, and an earlap.
 [hair]
 The repository contains a hairband, a hairpiece and a hairstick.
 
-The red hairpiece is a hairpiece in the repository. [Only possible to make in hard mode]
+The red hairpiece is a hairpiece in the repository. [Only possible to make from red chair in hard mode]
 
 [jackass]
 The repository contains a jackass.
