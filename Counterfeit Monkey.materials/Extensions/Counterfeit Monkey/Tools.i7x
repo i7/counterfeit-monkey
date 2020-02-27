@@ -528,8 +528,9 @@ Sanity-check inserting something irretrievable into the T-inserter:
 After inserting something into the T-inserter:
 	try teeing the noun.
 
-Check entering the T-inserter:
-	say "It is not easily enterable. And even if it was, [we]['re] not sure it would be such a good idea." instead.
+Check entering a synth-like thing:
+	unless the noun is the programmable dais:
+		say "It's not made for human-sized things. And even if it was, I'm not sure changing [us] like this would be a good idea." instead.
 
 teeing is an action applying to one thing. The teeing action has an object called the goal-object (matched as "to"). The teeing action has a number called the t-count. The teeing action has a list of objects called the possible-goals. The teeing action has a list of texts called the possible-goal-texts.
 
@@ -639,7 +640,7 @@ Test it-construction with "autoupgrade / wave a-remover at pita / wave p-remover
 
 Chapter 4 - The Synthesizer
 
-The plexiglas case is a thing in the Language Studies Seminar Room. It is transparent, closed, openable, lockable, and locked. It is fixed in place. The initial appearance is "A massive plexiglas case takes up one corner of the room." The description is "The case is made of very thick protective plastic on a metal frame[if the screws are part of the plexiglas case and the plexiglas case is lockable]. It is thoroughly locked shut; I don't think [we][']ll have any luck with normal forms of approach. However, plexiglas is a cuttable substance with the right tools, and then there are the screws at the back[otherwise if the plexiglas case is not lockable]. The lid has been compromised by a saw, and the case is now permanenty open[end if]."
+The plexiglas case is a thing in the Language Studies Seminar Room. It is enterable, transparent, closed, openable, lockable, and locked. It is fixed in place. The initial appearance is "A massive plexiglas case takes up one corner of the room." The description is "The case is made of very thick protective plastic on a metal frame[if the screws are part of the plexiglas case and the plexiglas case is lockable]. It is thoroughly locked shut; I don't think [we][']ll have any luck with normal forms of approach. However, plexiglas is a cuttable substance with the right tools, and then there are the screws at the back[otherwise if the plexiglas case is not lockable]. The lid has been compromised by a saw, and the case is now permanenty open[end if]."
 
 Test plexibug with "tutorial off / get plexiglas" in the Language Studies Seminar Room.
 
@@ -763,6 +764,9 @@ Instead of turning the plexiglas case when the player's command includes "unscre
 
 Instead of inserting something into the plexiglas case:
 	try inserting the noun into the synthesizer.
+
+Instead of entering the plexiglas case:
+	try entering the synthesizer.
 
 The synthesizer is an enterable container in the plexiglas case. The heft of the synthesizer is 4. The synthesizer is fixed in place. Understand "synth" or "synthesiser" or "machine" as the synthesizer.
 	The description is "It is designed to accept two items and then be turned on. It is shiny and white, and looks a little like a bathtub for very short people."
@@ -2344,9 +2348,6 @@ Check inserting something into the cryptolock when the cryptolock contains somet
 	try taking the blockage;
 	if the blockage is in the cryptolock:
 		stop the action.
-
-Check entering the cryptolock:
-	say "[We] wouldn't fit. And even if [we] did, [we]['re] not sure it would be such a good idea." instead.
 
 Test bucket-size with "put coat in bucket / wave a-remover at coat / get cot / put cot in bucket" holding the coat in the Generator Room.
 

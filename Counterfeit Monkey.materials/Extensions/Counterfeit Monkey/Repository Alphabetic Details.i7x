@@ -1673,7 +1673,7 @@ The description of a pa is "He's a Norman Rockwell figure: gruff, upstanding, ho
 	The scent-description of a pa is "shaving cream".
 	The greeting of a pa is "'Hello there, young lady,' says the pa."
 
-Rule for writing a paragraph about a pa (called item):
+Rule for writing a paragraph about a pa (called item) when item is in location:
 	say "[The item] you summoned is standing nearby, looking slightly confused";
 	let N be the number of pas in location - 1;
 	if N is 1:

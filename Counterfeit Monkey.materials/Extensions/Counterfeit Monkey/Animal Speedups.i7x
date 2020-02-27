@@ -37,9 +37,7 @@ Include
 				continue;
 			if (parent(burden) == real_location or player or (+ boulders +) or (+ repository +))
 				continue;
-			if ( burden == (+ Brock +))
-				continue;
-			if ( burden == (+ mechanic +))
+			if ( burden == (+ Brock +) or (+ mechanic +) or (+ pirate +) or (+ pirate-crew +) or (+ crew-group +))
 				continue;
 			TryAction(0, burden, ##Exit, 0, 0);
 		}

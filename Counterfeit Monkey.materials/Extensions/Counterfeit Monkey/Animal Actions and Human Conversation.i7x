@@ -62,26 +62,32 @@ Check something exiting when the actor is in the kayak and the location is not a
 	if the kayak is in location and the actor is not the player:
 		say "[one of][The person asked] [make] as though to climb out of [the kayak], then [see] that everything outside is made of water, and [withdraw] sulkily.[or][The person asked] [wait] in the bottom of [the kayak].[stopping]" instead.
 
-Check something exiting when the actor is in the synthesizer and the player is enclosed by the seminar room:
+Check something exiting when the actor is in the synthesizer and the player is enclosed by the Language Studies Seminar Room:
 	if the actor is a bird:
 		say "[The actor] [make] some attempts to flutter out of [the synthesizer], but [don't] get much lift and [give] up for the moment.";
 	otherwise:
 		if the actor is an animal:
 			say "[The actor] [scrabble] at the smooth sides of [the synthesizer], but can't get out.";
 		otherwise:
-			follow the exit attempt rules for the actor;
+			make no decision;
 	stop the action.
 
-Check something exiting when the actor is on the programmable dais:
+After an actor exiting when the container exited from is the synthesizer:
+	move the actor to the Language Studies Seminar Room;
+	continue the action.
+
+[Check something exiting when the actor is on the programmable dais:
 	follow the exit attempt rules for the actor;
-	stop the action.
+	stop the action.]
 
 The exit attempt rules are an object-based rulebook.
 
 To fidget is a verb. To pace is a verb.
 
-An exit attempt rule for a person (called exiter):
-	if a random chance of 1 in 3 succeeds:
+[An exit attempt rule for a person (called exiter):
+	do nothing.]
+
+	[if a random chance of 1 in 3 succeeds:
 		if a random chance of 1 in 2 succeeds:
 			say "[The exiter] [one of][fidget] uncomfortably[or][pace] around[at random] [in-on the holder of the exiter].";
 			the rule succeeds;
@@ -93,7 +99,7 @@ An exit attempt rule for a person (called exiter):
 		say "[The exiter] [one of][make] as if to get[or][appear] to consider getting[or][seem] to contemplate getting[at random] [preposition] [the holder of the exiter]";
 		if a random chance of 1 in 2 succeeds:
 			say ", but [regarding the exiter][one of][decide] against it[or]something makes [them] change [their] mind[at random][run paragraph on]";
-		say "."
+		say "."]
 
 Definition: A thing is synth-like if it is the programmable dais or it is the synthesizer or it is the cryptolock or it is the t-inserter or it is the spinner.
 
@@ -140,7 +146,7 @@ Carry out entering a vehicle in location:
 	rapidly make followers follow into noun;
 	now pursuing-state is false.
 
-Check a fake person entering a vehicle when the heft of the person asked is greater than 3:
+Check a fake person entering a vehicle when the heft of the person asked is greater than 4:
 	say "[The person asked] [make] an effort to get in, but [do] not remotely fit.";
 	stop the action.
 
