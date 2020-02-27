@@ -155,10 +155,9 @@ Rule for writing a paragraph about a fake person which is in a car (called targe
 	say "Sitting in [the target] [is-are the list of fake people *in the target][if the number of fake people in the target is greater than 1], like players in a Marx Brothers movie[end if]. [paragraph break]"
 
 Carry out exiting:
-	unless the container exited from is synth-like:
-		now pursuing-state is true;
-		rapidly make followers try exiting from the container exited from;
-		now pursuing-state is false.
+	now pursuing-state is true;
+	rapidly make followers try exiting from the container exited from;
+	now pursuing-state is false.
 
 Carry out going:
 	now pursuing-state is true;

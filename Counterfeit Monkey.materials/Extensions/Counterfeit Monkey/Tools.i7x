@@ -528,11 +528,8 @@ Sanity-check inserting something irretrievable into the T-inserter:
 After inserting something into the T-inserter:
 	try teeing the noun.
 
-Report entering the T-inserter:
-	say "[one of]It is not really meant for people, but [we] manage to get into the T-inserter without breaking anything[or][We] climb into the T-inserter again[stopping]. It briefly whirs to life, then gives a disappointed sort of whuff when it finds no good place for T-insertion in 'alexandra.'";
-	if Brock is in location:
-		say "[line break]'Hey, what are you doing?' Brock asks.";
-	stop the action.
+Check entering the T-inserter:
+	say "It is not easily enterable. And even if it was, [we]['re] not sure it would be such a good idea." instead.
 
 teeing is an action applying to one thing. The teeing action has an object called the goal-object (matched as "to"). The teeing action has a number called the t-count. The teeing action has a list of objects called the possible-goals. The teeing action has a list of texts called the possible-goal-texts.
 
@@ -642,7 +639,7 @@ Test it-construction with "autoupgrade / wave a-remover at pita / wave p-remover
 
 Chapter 4 - The Synthesizer
 
-The plexiglas case is an enterable container in the Language Studies Seminar Room. It is transparent, closed, openable, lockable, and locked. It is fixed in place. The initial appearance is "A massive plexiglas case takes up one corner of the room." The description is "The case is made of very thick protective plastic on a metal frame[if the screws are part of the plexiglas case and the plexiglas case is lockable]. It is thoroughly locked shut; I don't think [we][']ll have any luck with normal forms of approach. However, plexiglas is a cuttable substance with the right tools, and then there are the screws at the back[otherwise if the plexiglas case is not lockable]. The lid has been compromised by a saw, and the case is now permanenty open[end if]."
+The plexiglas case is a thing in the Language Studies Seminar Room. It is transparent, closed, openable, lockable, and locked. It is fixed in place. The initial appearance is "A massive plexiglas case takes up one corner of the room." The description is "The case is made of very thick protective plastic on a metal frame[if the screws are part of the plexiglas case and the plexiglas case is lockable]. It is thoroughly locked shut; I don't think [we][']ll have any luck with normal forms of approach. However, plexiglas is a cuttable substance with the right tools, and then there are the screws at the back[otherwise if the plexiglas case is not lockable]. The lid has been compromised by a saw, and the case is now permanenty open[end if]."
 
 Test plexibug with "tutorial off / get plexiglas" in the Language Studies Seminar Room.
 
@@ -766,29 +763,6 @@ Instead of turning the plexiglas case when the player's command includes "unscre
 
 Instead of inserting something into the plexiglas case:
 	try inserting the noun into the synthesizer.
-
-Sanity-check entering the plexiglas case:
-	synth-entering-hack;
-	stop the action.
-
-Sanity-check entering the synthesizer:
-	synth-entering-hack;
-	stop the action.
-
-To synth-entering-hack:
-	if the player is enclosed by the plexiglas case:
-		say "We are already in [the noun]." instead;
-	if the plexiglas case is closed:
-		say "The plexiglas case is closed." instead;
-	if the player is not in location:
-		say "We cannot reach it from [the holder of the player]." instead;
-	say "[one of]It is not really made for people, but we somehow manage to get into the synthesizer without breaking it[or]We get back into the synthesizer[stopping].";
-	move the player to the synthesizer, without printing a room description;
-	stop the action.
-
-After exiting when the container exited from is the synthesizer:
-	move the player to the location, without printing a room description;
-	continue the action.
 
 The synthesizer is an enterable container in the plexiglas case. The heft of the synthesizer is 4. The synthesizer is fixed in place. Understand "synth" or "synthesiser" or "machine" as the synthesizer.
 	The description is "It is designed to accept two items and then be turned on. It is shiny and white, and looks a little like a bathtub for very short people."
