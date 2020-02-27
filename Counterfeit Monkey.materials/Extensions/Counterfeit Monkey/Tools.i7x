@@ -1417,7 +1417,7 @@ Sanity-check putting the tub on the tub:
 			try putting the restoration gel on the tub instead.
 
 Sanity-check putting the restoration gel on the tub:
-	say "There is restoration gel all over the inside of the tub already, so I guess it must have some kind of restoration-gel resistant coating." instead.
+	say "There is restoration gel all over the inside of the tub already, so I guess it has some kind of restoration gel-resistant coating." instead.
 
 Sanity-check putting the tub on the restoration gel:
 	say "Well, I guess the tub is on (and under, and all around) the restoration gel already." instead.
