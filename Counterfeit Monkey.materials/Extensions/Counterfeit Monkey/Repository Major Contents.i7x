@@ -852,7 +852,7 @@ The repository contains a rap, a clothing-wrap,
 	a pet, a pit, a pot, an alterna-pot. [vowel-rotation]
 
 [yam]
-The repository contains an Amy and a May and and a yam-cart. [yam + cart]
+The repository contains an Amy and a May.
 
 [yellow paint lettering]
 The repository contains an elegantly winter pilot.
@@ -904,10 +904,7 @@ The repository contains a bandit and a bandage.
 The repository contains some basins, a basis, a bass, a bass-fish, a ba.
 
 [car]
-The repository contains a carpet, 3 carpi, 3 carp, 3 generic-caps, 3 alterna-caps,
-3 CPUs, [PARC,] [anagrams from cup and carp]
-3 generic-cups. [reverse cryptolock cap]
-[a cop. [reverse cryptolock cup]]
+The repository contains a carpet, 3 carpi, 3 carp.
 
 [card]
 [The repository contains a cardboard.] [unreachable]
@@ -919,7 +916,7 @@ The repository contains a cartage.
 [Some camemberts and a]
 A camembert, a climate, and a catnap are in the repository.
 
-The repository contains a cat-army and a yam-cart. [anagrammed from cat-army]
+The repository contains a cat-army and two yam-carts. [anagrammed from cat-army and yam + cart]
 
 [char]
 A charring and a charlie are in the repository.
