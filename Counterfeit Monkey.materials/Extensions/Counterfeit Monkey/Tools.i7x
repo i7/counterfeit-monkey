@@ -771,9 +771,6 @@ Instead of turning the plexiglas case when the player's command includes "unscre
 Instead of inserting something into the plexiglas case:
 	try inserting the noun into the synthesizer.
 
-Instead of ushering someone onto the plexiglas case:
-	try ushering the noun onto the synthesizer.
-
 Sanity-check entering the plexiglas case:
 	synth-entering-hack;
 	stop the action.

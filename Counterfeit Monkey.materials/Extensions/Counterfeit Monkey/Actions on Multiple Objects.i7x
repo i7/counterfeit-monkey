@@ -16,7 +16,7 @@ Rule for deciding whether all includes people (called P) while taking (this is t
 The new exclude people from take all rule is listed instead of the exclude people from take all rule in the for deciding whether all includes rulebook.
 
 Rule for deciding whether all includes people (called P) while removing an object from an object:
-	unless P is not the player and (P is on the programmable dais or P is in the synthesizer) or P is portably-small:
+	unless P is portably-small:
 		it does not.
 
 Rule for deciding whether all includes the restoration gel: it does not.
