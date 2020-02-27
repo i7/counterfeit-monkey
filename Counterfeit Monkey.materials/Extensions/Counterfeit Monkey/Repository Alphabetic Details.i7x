@@ -2286,16 +2286,7 @@ Some pit-items are a thing. The description of the pit-items is "Assorted stones
 
 Understand "pits" as the alterna-pits. The alterna-pits are a fixed in place container. The printed name of the alterna-pits is "pits". The description of the alterna-pits is "It's a number of cavities in the surface of [the holder of the item described], all of them too small for our body to fit into."
 
-The description of a pita is "A round, brown pocket-bread." The scent-description of a pita is "baked goods". Rule for printing the plural name of pita: say "pita".
-
-Table of Ultratests (continued)
-topic	stuff	setting
-"pita"	{ pocket-bread, tub, secret-plans, monocle, as-coin, piece, pearl, wrap, ball, ring, bright yellow sign, last-sign }	Public Convenience
-
-Test pita with "tutorial off / autoupgrade / powerup / wear monocle / wave a-remover at soap dispenser / squeeze dispenser / get sop / wave k-remover at sink / wave k-remover at sink / get sin / get sin / gonear Sensitive Equipment Testing Room / put sop in t-inserter / wave s-remover at stop / test gun-ownership / shoot top / get pot / wave e-remover at piece / put pic in t-inserter / wave c-remover at pict / get pit / wave w-remover at wrap / shoot rap / get par / wave n-remover at ring / put rig in t-inserter / shoot trig / wave r-remover at grit / wave g-remover at git / get it / put sin in t-inserter / wave s-remover at stint / wave n-remover at tint / wave t-remover at tit / put i in t-inserter / wave t-remover at tit / put i in t-inserter / get it / put sin in t-inserter / wave s-remover at stint / wave n-remover at tint / wave t-remover at tit / put i in t-inserter / wave t-remover at tit / put i in t-inserter / get it / wave l-remover at ball / put ba in t-inserter / get bat / wave g-remover at sign / put sin in t-inserter / wave s-remover at stint / wave n-remover at tint / wave t-remover at tit / put i in t-inserter / wave t-remover at tit / put i in t-inserter / get it / wave g-remover at sign / put sin in t-inserter / wave s-remover at stint / wave n-remover at tint / wave t-remover at tit / put i in t-inserter / wave t-remover at tit / put i in t-inserter / get it / gonear Generator Room / put bat in bucket / put bet in bucket / wave b-remover at bit / 1 / get it / switch switch / put pot in bucket / put pit in bucket / put pet in bucket / wave t-remover at pat / put pit in bucket / put pet in bucket / wave t-remover at pat / gel as / wave i-remover at pastis / wave s-remover at pasts / wave t-remover at pat / unlegend / w / wave r-remover at pearl / wave e-remover at peal / wave l-remover at pal / wave s-remover at plans / wave l-remover at plan / wave n-remover at pan / put pa and it on dais / synthesize / get pita / put pa and it on dais / 2 / synthesize / get pita / put pa and it on dais / 2 / synthesize / get pita / wave r-remover at par / put pa and it on dais / 2 / synthesize / get pita / put pa and it on dais / 2 / synthesize / get pita "
-
-Does the player mean waving the letter-remover at the bright yellow sign:
-	it is very likely.
+The pita is an edible thing. The description of the pita is "A round, brown pocket-bread." The scent-description of the pita is "baked goods".
 
 The pit-trap is an open enterable container. It is fixed in place. The heft of the pit-trap is 8. The printed name of a pit-trap is "pit trap". Understand "pit" or "trap" or "deep pit" or "rocks" or "stones" or "stakes" or "sharpened" or "stake" as a pit-trap. The description of a pit-trap is "It's a deep pit lined with rocks, set into the surface of [the holder of the item described]. Sharpened stakes jut upward from the bottom, ready to stab any large mammal unfortunate enough to fall in."
 
@@ -2629,21 +2620,10 @@ Section 13 - Pr - Pz
 
 The description of the preamp is "It looks like just one specimen from the group from which you were working."
 
-The description of a PTA is "About a half-dozen soccer moms in sensible shoes, and a lone father, who looks bemused." A PTA is noisy. Understand "soccer moms" or "moms" or "shoes" or "lone" or "father" as a PTA.
+The PTA is an ambiguously plural person. The description of the PTA is "About a half-dozen soccer moms in sensible shoes, and a lone father, who looks bemused." The PTA is noisy. Understand "soccer moms" or "moms" or "shoes" or "lone" or "father" as the PTA.
 
-Instead of listening to a PTA:
+Instead of listening to the PTA:
 	say "[one of]The PTA members are currently debating whether it is appropriate to include pre-English-language history of Atlantis in the curriculum[or]One of the PTA members is currently arguing to eliminate the story of the Tower of Babel from the literature curriculum on the grounds that it is unduly traumatic for the young[or]The PTA members are working out a bake-sale roster to pay for fresh copies of the New Orthodox Orthography to be placed in the school library[or]One PTA mother is explaining why she felt her daughter should have been given the part of the letter Y in the school play[at random]."
-
-Rule for writing a paragraph about a PTA (called item):
-	say "[The item] you summoned is nearby, engaged in lively debate";
-	let N be the number of PTAs in location - 1;
-	if N is 1:
-		say " with the other PTA next to them";
-	otherwise:
-		if N is greater than 1:
-			say " with one of the other [N in words] PTAs here";
-	now every PTA in location is mentioned;
-	say ".[paragraph break]".
 
 The pun is r-abstract. The heft of the pun is 0. The description of a pun is "Currently the pun reads '[one of]Atheism is a non-prophet organization[or]The butcher backed up into the meat grinder and got a little behind in his work[at random].'"
 

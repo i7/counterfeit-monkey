@@ -68,10 +68,8 @@ A pet is a kind of neuter animal.
 A pi-object is a kind of thing. ["pi"]
 A pit is a kind of thing.
 A pit-hole is a kind of container. The printed name of a pit-hole is "pit".
-A pita is a kind of edible thing.
 A pot is a kind of container.
 An alterna-pot is a kind of vegetable.
-A PTA is a kind of ambiguously plural person.
 A Ra is a kind of man.
 A ram is a kind of neuter animal.
 A rap is a kind of thing.
@@ -177,7 +175,6 @@ The repository contains a cat-mayor.
 [as]
 
 In the repository are a pastis, a pass, some pasts, a pat, an ass, and a pa, [removals]
-	a pita, [pa + it-object from e.g. sink->sin->stint->tint->tit->i->it] a PTA,
 	some pestos, some pests, a pet. [vowel rotator]
 	[a zoo.] [reverse hard mode cryptolock]
 
@@ -530,7 +527,6 @@ In the repository is a pearl.
 [pearl]
 
 In the repository are an earl, a perl, a peal, an ear, a pal, a pea, a par, a pa,
-	a pita, [pa + it-object from e.g. sink->sin->stint->tint->tit->i->it] a PTA,
 	a pie, a pier, a poi, [vowel rotation]
 	a petal, a tear, an alterna-tear, a peat, a part, a pat, [t-insert derivatives]
 	a tar, a pet, an art, [derive insertions]
@@ -553,7 +549,7 @@ In the repository is a larger-pin.
 In the repository are a piece-alternate, [homonym]
 	a pic, a pi-object, a self-object,
 	a Pict, a pit, an it-object, a tit, [t-insert derivatives]
-	a pot, a pat, a pa, a pita, [pa + it-object from e.g. sink->sin->stint->tint->tit->i->it] a PTA,
+	a pot, a pat, a pa,
 	a tot, [vowel rotation]
 	a tip, [anagrams]
 	an alterna-tit, [homonymy]
@@ -585,7 +581,6 @@ In the repository are some iron-pans, a plan, an i-pan,
 	a snap, an alterna-snap, a nap, a splat, a tap, a spit, a spat, a tan, [anagram all]
 	a sap, a slat, [derive anagrams]
 	a pet, a pot, an alterna-pot, a ten-object, an Ent, [vowel rotation]
-	a pita, [pa + it-object from e.g. ball->ba->bat->bet->bit] a PTA,
 	a spa, a pa, an as, [derive derivatives]
 	a salt, a top-toy, a net. [anagram derivatives]
 
@@ -733,8 +728,7 @@ The repository contains a mall figurine.
 [soap]
 
 The repository contains a sap, a sap-liquid, a sop,
-	a pa, a pita, a PTA, a pit,
-	a stop, some pat-items, [t-insert derivatives]
+	a pa, a stop, some pat-items, [t-insert derivatives]
 	a top-toy, [derive insertions]
 	some plural-pots, a spot, a pot, an alterna-pot. [anagram all]
 
@@ -847,7 +841,7 @@ The repository contains a rap, a clothing-wrap,
 	a trap, [t-insert derivatives]
 	a tap, [a war-object,] [derive insertions]
 	a par, a part, a pat, [anagram all]
-	a pa, a pita, [pa + it-object from e.g. sink->sin->stint->tint->tit->i->it] a PTA,
+	a pa,
 	[a wart-object,] [t-insert derivatives]
 	a pet, a pit, a pot, an alterna-pot. [vowel-rotation]
 
