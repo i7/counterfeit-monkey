@@ -86,6 +86,9 @@ The Slangovia map is a thing. The printed name is "map of Slangovia". Understand
 	The fake-legend is part of Slangovia map. The printed name of the fake-legend is "legend". The description of the fake-legend is "This legend tells of Iphis and Ianthe: Iphis, a girl raised in disguise as a boy, falls in love with her playmate Ianthe. She prays to the goddess Isis, who takes pity and transforms Iphis into a man, able to marry Ianthe after all." Understand "legend" as the fake-legend.
 	The introduction of the fake-legend is "It bears no obvious relation to the map of Slangovia."
 
+Does the player mean subject-asking the fake-legend:
+	it is very likely.
+
 The mannequin is a supporter in Arbot Maps & Antiques. The description is "A head and torso only, and abstractly rendered. The vaguely masculine shape is covered in coarse white linen." Understand "head" and "torso" and "masculine" and "shape" and "coarse" and "white" and "linen" as the mannequin.
 
 Rule for writing a topic sentence about the mannequin:
