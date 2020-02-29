@@ -149,7 +149,7 @@ When play begins (this is the setting real and fake rule):
 	now patsy-woman is real;
 	now Brock is real.
 
-Definition: a thing is discovered if it is fake and it is seen.
+[Definition: a thing is discovered if it is fake and it is seen.]
 
 
 Section 3 - Concreteness
