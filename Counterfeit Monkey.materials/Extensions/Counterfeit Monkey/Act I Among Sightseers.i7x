@@ -2892,8 +2892,8 @@ Instead of rubbing the funnel:
 	otherwise:
 		say "[We][']ve brushed away most of the adhering sand, but there are always going to be a few grains left."
 
-Instead of wearing the funnel:
-	say "I try setting it on our head as a cap, but it slides off again."
+Sanity-check wearing the funnel:
+	say "I try setting it on our head as a cap, but it slides off again." instead.
 
 Instead of searching the funnel:
 	say "It restricts our view comically, as though [we] were peering through a doll's periscope. But the utility is limited."
