@@ -139,6 +139,13 @@ A thing can be fake or real. A thing is usually real.
 
 When play begins (this is the setting real and fake rule):
 	now every thing enclosed by the repository is fake;
+	now the trash is real;
+	now the pearl is real;
+	now the pita is real;
+	now the pastis is real;
+	now the brown tee is real;
+	now the paper is real;
+	now the weight is real;
 	now patsy-woman is real;
 	now Brock is real.
 
