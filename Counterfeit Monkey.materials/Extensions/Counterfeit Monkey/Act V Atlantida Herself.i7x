@@ -312,7 +312,7 @@ topic	title	data
 "utopian/utopia/linguistics/language" or "linguistics"	"Utopian Linguistics Conference"	"'No subject contact. Question concerning support for Utopian Linguistics Conference. Subject A ruled to permit conference to proceed with intensive surveillance of all attending.'"
 "university/school/scholarship/waterstone/linguistics/language"	"Inquiry on University Maintenance and Fees"	"'No subject contact. Question concerned university funding. Subject recommended preferential funding for those departments [']most likely to promote Atlantis['] pre-eminent standing and def[ense].['] List of departments submitted in paper form and approved by Subject A with three amendments as attached.'"
 "andra/me/us/alexandra"	"[--]"	"There is no direct reference to you in here."
-"you/alex/rosehip" or "alex rosehip"	"[--]"	"There is no direct reference to me in here."
+"you/us/alexandra/alex/rosehip" or "alex rosehip"	"[--]"	"There is no direct reference to me in here."
 "dad/father/rosehip"	"[--]"	"A quick search turns up no access attempts by my father. It would seem he doesn't have access here, whatever that means."
 "Atlantida"	"[--]"	"That name doesn't appear. At all."
 
