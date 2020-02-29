@@ -3834,6 +3834,8 @@ challenge Parker about the rum is a performative quip.
 	It directly-follows whether he hath seen slango.
 Understand "barman" or "him" or "bartender" as challenge Parker about the rum.
 
+Rum-subject is a subject. Understand "rum" as rum-subject. The printed name of rum-subject is "rum".
+
 [check up on Lena is a performative quip. The comment is "'Lena at home, then?'".
 	[The mentions-list is {Lena}.]
 	The reply is "He shrugs. 'Lena's got a lot of different projects going on. I don't keep track.'".

@@ -310,186 +310,186 @@ donate has mention-stop-index 217.
 whether he hath seen slango has mention-start-index 218.
 whether he hath seen slango has mention-stop-index 218.
 challenge Parker about the rum has mention-start-index 219.
-challenge Parker about the rum has mention-stop-index 219.
-whether we can hath origin paste has mention-start-index 220.
-whether we can hath origin paste has mention-stop-index 220.
-how one might go about winning has mention-start-index 221.
-how one might go about winning has mention-stop-index 221.
-play the game has mention-start-index 222.
-play the game has mention-stop-index 223.
-complain that the game seems unfair has mention-start-index 224.
-complain that the game seems unfair has mention-stop-index 224.
-whether he hath any other games going has mention-start-index 225.
-whether he hath any other games going has mention-stop-index 225.
-how long he hath worked at  bar has mention-start-index 226.
-how long he hath worked at  bar has mention-stop-index 226.
-what he thinks about the Bureau has mention-start-index 227.
-what he thinks about the Bureau has mention-stop-index 228.
-whether he hates customs officials has mention-start-index 229.
-whether he hates customs officials has mention-stop-index 231.
-whether he believes in god-2 has mention-start-index 232.
-whether he believes in god-2 has mention-stop-index 232.
-who we seem has mention-start-index 233.
-who we seem has mention-stop-index 233.
-explain Brock's probable reasons has mention-start-index 234.
-explain Brock's probable reasons has mention-stop-index 234.
-whether we can leave now has mention-start-index 235.
-whether we can leave now has mention-stop-index 235.
-what the trouble was has mention-start-index 236.
-what the trouble was has mention-stop-index 236.
-complain about the inefficiency of this scheme has mention-start-index 237.
-complain about the inefficiency of this scheme has mention-stop-index 238.
-whether she hath seen slango has mention-start-index 239.
-whether she hath seen slango has mention-stop-index 239.
-who we seem-3 has mention-start-index 240.
-who we seem-3 has mention-stop-index 240.
-calm Lena has mention-start-index 241.
-calm Lena has mention-stop-index 247.
-tease Lena about selling office supplies has mention-start-index 248.
-tease Lena about selling office supplies has mention-stop-index 248.
-what she kens about authentication scopes has mention-start-index 249.
-what she kens about authentication scopes has mention-stop-index 250.
-quip-about-paste has mention-start-index 251.
-quip-about-paste has mention-stop-index 251.
-encourage Lena to contact Slango has mention-start-index 252.
-encourage Lena to contact Slango has mention-stop-index 252.
-thank Lena has mention-start-index 253.
-thank Lena has mention-stop-index 254.
-what he seems doing has mention-start-index 255.
-what he seems doing has mention-stop-index 256.
-what love looks like has mention-start-index 257.
-what love looks like has mention-stop-index 257.
-what he thinks of Higgate has mention-start-index 258.
-what he thinks of Higgate has mention-stop-index 258.
-what he thinks of you has mention-start-index 259.
-what he thinks of you has mention-stop-index 259.
-what he thinks of Waterstone has mention-start-index 260.
-what he thinks of Waterstone has mention-stop-index 260.
-why Waterstone gave him the conch shell has mention-start-index 261.
-why Waterstone gave him the conch shell has mention-stop-index 261.
-what Professor Brown thinks of the academic job market has mention-start-index 262.
-what Professor Brown thinks of the academic job market has mention-stop-index 262.
-wish Professor Brown luck has mention-start-index 263.
-wish Professor Brown luck has mention-stop-index 264.
-how Professor Brown makes abstracts has mention-start-index 265.
-how Professor Brown makes abstracts has mention-stop-index 265.
-whether he can fix the letter-remover has mention-start-index 266.
-whether he can fix the letter-remover has mention-stop-index 266.
-what he thinks of the letter-remover has mention-start-index 267.
-what he thinks of the letter-remover has mention-stop-index 267.
-why reifying living creatures seems cruel has mention-start-index 268.
-why reifying living creatures seems cruel has mention-stop-index 268.
-thank Professor Brown has mention-start-index 269.
-thank Professor Brown has mention-stop-index 269.
-what he thinks about the word has mention-start-index 270.
-what he thinks about the word has mention-stop-index 270.
-what he thinks about the pasts has mention-start-index 271.
-what he thinks about the pasts has mention-stop-index 271.
-that we do not speak Lojban has mention-start-index 272.
-that we do not speak Lojban has mention-stop-index 272.
-how Professor Higgate seems doing has mention-start-index 273.
-how Professor Higgate seems doing has mention-stop-index 273.
-what would be so bad about directing graduate studies has mention-start-index 274.
-what would be so bad about directing graduate studies has mention-stop-index 274.
-what the romance novel might be has mention-start-index 275.
-what the romance novel might be has mention-stop-index 275.
-whether Professor Higgate would translate part of the novel has mention-start-index 276.
-whether Professor Higgate would translate part of the novel has mention-stop-index 277.
-whether she encountered activists has mention-start-index 278.
-whether she encountered activists has mention-stop-index 279.
-whether she might let us into the language studies seminar room has mention-start-index 280.
-whether she might let us into the language studies seminar room has mention-stop-index 281.
-how we might return a book has mention-start-index 282.
-how we might return a book has mention-stop-index 282.
-which conlangs she kens has mention-start-index 283.
-which conlangs she kens has mention-stop-index 283.
-make up some excuse has mention-start-index 284.
-make up some excuse has mention-stop-index 284.
-that we just dropped by to meet him has mention-start-index 285.
-that we just dropped by to meet him has mention-stop-index 285.
-where to find Professor Brown has mention-start-index 286.
-where to find Professor Brown has mention-stop-index 286.
-whether he met the activists has mention-start-index 287.
-whether he met the activists has mention-stop-index 287.
-what he kens about me has mention-start-index 288.
-what he kens about me has mention-stop-index 288.
-why he seems working on Serial Comma Day has mention-start-index 289.
-why he seems working on Serial Comma Day has mention-stop-index 290.
-why he doesn't go to the demonstration has mention-start-index 291.
-why he doesn't go to the demonstration has mention-stop-index 291.
-suggest we get out of here has mention-start-index 292.
-suggest we get out of here has mention-stop-index 294.
-insist on leaving immediately has mention-start-index 295.
-insist on leaving immediately has mention-stop-index 298.
-accept Brock's lunacy has mention-start-index 299.
-accept Brock's lunacy has mention-stop-index 301.
-complain about Brock's recklessness has mention-start-index 302.
-complain about Brock's recklessness has mention-stop-index 304.
-remind Brock that synthesis was necessary because of him has mention-start-index 305.
-remind Brock that synthesis was necessary because of him has mention-stop-index 306.
-defend Alex has mention-start-index 307.
-defend Alex has mention-stop-index 308.
-accept his advice has mention-start-index 309.
-accept his advice has mention-stop-index 309.
-discover why Brock got stuck here has mention-start-index 310.
-discover why Brock got stuck here has mention-stop-index 313.
-rejoice that brock seems okay has mention-start-index 314.
-rejoice that brock seems okay has mention-stop-index 315.
-claim-to be fine has mention-start-index 316.
-claim-to be fine has mention-stop-index 317.
-what buried command center he heard of has mention-start-index 318.
-what buried command center he heard of has mention-stop-index 319.
-we're his girlfriend has mention-start-index 320.
-we're his girlfriend has mention-stop-index 321.
-claim to hath seen him this morning has mention-start-index 322.
-claim to hath seen him this morning has mention-stop-index 322.
-we don't ken has mention-start-index 323.
-we don't ken has mention-stop-index 323.
-reassure Mother has mention-start-index 324.
-reassure Mother has mention-stop-index 325.
-suggest the truth has mention-start-index 326.
-suggest the truth has mention-stop-index 326.
-we wouldn't do anything dangerous has mention-start-index 327.
-we wouldn't do anything dangerous has mention-stop-index 328.
-probably nothing has mention-start-index 329.
-probably nothing has mention-stop-index 329.
-explain we might go out has mention-start-index 330.
-explain we might go out has mention-stop-index 331.
-claim he didn't say has mention-start-index 332.
-claim he didn't say has mention-stop-index 332.
-agree to take care of the monocle has mention-start-index 333.
-agree to take care of the monocle has mention-stop-index 333.
-deny everything has mention-start-index 334.
-deny everything has mention-stop-index 334.
-lay out our reasons has mention-start-index 335.
-lay out our reasons has mention-stop-index 336.
-be comforting has mention-start-index 337.
-be comforting has mention-stop-index 338.
-quibble has mention-start-index 339.
-quibble has mention-stop-index 339.
-deny being a spy has mention-start-index 340.
-deny being a spy has mention-stop-index 340.
-say thanks for pointing out spill has mention-start-index 341.
-say thanks for pointing out spill has mention-stop-index 341.
-that it's one of those things atlanteans learn has mention-start-index 342.
-that it's one of those things atlanteans learn has mention-stop-index 342.
-what-atlantis has mention-start-index 343.
-what-atlantis has mention-stop-index 343.
-how fusion happens has mention-start-index 344.
-how fusion happens has mention-stop-index 344.
-whether the protesters feel the same way has mention-start-index 345.
-whether the protesters feel the same way has mention-stop-index 346.
-that the outside world matters has mention-start-index 347.
-that the outside world matters has mention-stop-index 347.
-how she justifies cold storage has mention-start-index 348.
-how she justifies cold storage has mention-stop-index 349.
-thank Atlantida has mention-start-index 350.
-thank Atlantida has mention-stop-index 350.
-return the rifle has mention-start-index 351.
-return the rifle has mention-stop-index 351.
-enough-in-school has mention-start-index 352.
-enough-in-school has mention-stop-index 353.
-mutual-embarrassment has mention-start-index 354.
-mutual-embarrassment has mention-stop-index 354.
+challenge Parker about the rum has mention-stop-index 220.
+whether we can hath origin paste has mention-start-index 221.
+whether we can hath origin paste has mention-stop-index 221.
+how one might go about winning has mention-start-index 222.
+how one might go about winning has mention-stop-index 222.
+play the game has mention-start-index 223.
+play the game has mention-stop-index 224.
+complain that the game seems unfair has mention-start-index 225.
+complain that the game seems unfair has mention-stop-index 225.
+whether he hath any other games going has mention-start-index 226.
+whether he hath any other games going has mention-stop-index 226.
+how long he hath worked at  bar has mention-start-index 227.
+how long he hath worked at  bar has mention-stop-index 227.
+what he thinks about the Bureau has mention-start-index 228.
+what he thinks about the Bureau has mention-stop-index 229.
+whether he hates customs officials has mention-start-index 230.
+whether he hates customs officials has mention-stop-index 232.
+whether he believes in god-2 has mention-start-index 233.
+whether he believes in god-2 has mention-stop-index 233.
+who we seem has mention-start-index 234.
+who we seem has mention-stop-index 234.
+explain Brock's probable reasons has mention-start-index 235.
+explain Brock's probable reasons has mention-stop-index 235.
+whether we can leave now has mention-start-index 236.
+whether we can leave now has mention-stop-index 236.
+what the trouble was has mention-start-index 237.
+what the trouble was has mention-stop-index 237.
+complain about the inefficiency of this scheme has mention-start-index 238.
+complain about the inefficiency of this scheme has mention-stop-index 239.
+whether she hath seen slango has mention-start-index 240.
+whether she hath seen slango has mention-stop-index 240.
+who we seem-3 has mention-start-index 241.
+who we seem-3 has mention-stop-index 241.
+calm Lena has mention-start-index 242.
+calm Lena has mention-stop-index 248.
+tease Lena about selling office supplies has mention-start-index 249.
+tease Lena about selling office supplies has mention-stop-index 249.
+what she kens about authentication scopes has mention-start-index 250.
+what she kens about authentication scopes has mention-stop-index 251.
+quip-about-paste has mention-start-index 252.
+quip-about-paste has mention-stop-index 252.
+encourage Lena to contact Slango has mention-start-index 253.
+encourage Lena to contact Slango has mention-stop-index 253.
+thank Lena has mention-start-index 254.
+thank Lena has mention-stop-index 255.
+what he seems doing has mention-start-index 256.
+what he seems doing has mention-stop-index 257.
+what love looks like has mention-start-index 258.
+what love looks like has mention-stop-index 258.
+what he thinks of Higgate has mention-start-index 259.
+what he thinks of Higgate has mention-stop-index 259.
+what he thinks of you has mention-start-index 260.
+what he thinks of you has mention-stop-index 260.
+what he thinks of Waterstone has mention-start-index 261.
+what he thinks of Waterstone has mention-stop-index 261.
+why Waterstone gave him the conch shell has mention-start-index 262.
+why Waterstone gave him the conch shell has mention-stop-index 262.
+what Professor Brown thinks of the academic job market has mention-start-index 263.
+what Professor Brown thinks of the academic job market has mention-stop-index 263.
+wish Professor Brown luck has mention-start-index 264.
+wish Professor Brown luck has mention-stop-index 265.
+how Professor Brown makes abstracts has mention-start-index 266.
+how Professor Brown makes abstracts has mention-stop-index 266.
+whether he can fix the letter-remover has mention-start-index 267.
+whether he can fix the letter-remover has mention-stop-index 267.
+what he thinks of the letter-remover has mention-start-index 268.
+what he thinks of the letter-remover has mention-stop-index 268.
+why reifying living creatures seems cruel has mention-start-index 269.
+why reifying living creatures seems cruel has mention-stop-index 269.
+thank Professor Brown has mention-start-index 270.
+thank Professor Brown has mention-stop-index 270.
+what he thinks about the word has mention-start-index 271.
+what he thinks about the word has mention-stop-index 271.
+what he thinks about the pasts has mention-start-index 272.
+what he thinks about the pasts has mention-stop-index 272.
+that we do not speak Lojban has mention-start-index 273.
+that we do not speak Lojban has mention-stop-index 273.
+how Professor Higgate seems doing has mention-start-index 274.
+how Professor Higgate seems doing has mention-stop-index 274.
+what would be so bad about directing graduate studies has mention-start-index 275.
+what would be so bad about directing graduate studies has mention-stop-index 275.
+what the romance novel might be has mention-start-index 276.
+what the romance novel might be has mention-stop-index 276.
+whether Professor Higgate would translate part of the novel has mention-start-index 277.
+whether Professor Higgate would translate part of the novel has mention-stop-index 278.
+whether she encountered activists has mention-start-index 279.
+whether she encountered activists has mention-stop-index 280.
+whether she might let us into the language studies seminar room has mention-start-index 281.
+whether she might let us into the language studies seminar room has mention-stop-index 282.
+how we might return a book has mention-start-index 283.
+how we might return a book has mention-stop-index 283.
+which conlangs she kens has mention-start-index 284.
+which conlangs she kens has mention-stop-index 284.
+make up some excuse has mention-start-index 285.
+make up some excuse has mention-stop-index 285.
+that we just dropped by to meet him has mention-start-index 286.
+that we just dropped by to meet him has mention-stop-index 286.
+where to find Professor Brown has mention-start-index 287.
+where to find Professor Brown has mention-stop-index 287.
+whether he met the activists has mention-start-index 288.
+whether he met the activists has mention-stop-index 288.
+what he kens about me has mention-start-index 289.
+what he kens about me has mention-stop-index 289.
+why he seems working on Serial Comma Day has mention-start-index 290.
+why he seems working on Serial Comma Day has mention-stop-index 291.
+why he doesn't go to the demonstration has mention-start-index 292.
+why he doesn't go to the demonstration has mention-stop-index 292.
+suggest we get out of here has mention-start-index 293.
+suggest we get out of here has mention-stop-index 295.
+insist on leaving immediately has mention-start-index 296.
+insist on leaving immediately has mention-stop-index 299.
+accept Brock's lunacy has mention-start-index 300.
+accept Brock's lunacy has mention-stop-index 302.
+complain about Brock's recklessness has mention-start-index 303.
+complain about Brock's recklessness has mention-stop-index 305.
+remind Brock that synthesis was necessary because of him has mention-start-index 306.
+remind Brock that synthesis was necessary because of him has mention-stop-index 307.
+defend Alex has mention-start-index 308.
+defend Alex has mention-stop-index 309.
+accept his advice has mention-start-index 310.
+accept his advice has mention-stop-index 310.
+discover why Brock got stuck here has mention-start-index 311.
+discover why Brock got stuck here has mention-stop-index 314.
+rejoice that brock seems okay has mention-start-index 315.
+rejoice that brock seems okay has mention-stop-index 316.
+claim-to be fine has mention-start-index 317.
+claim-to be fine has mention-stop-index 318.
+what buried command center he heard of has mention-start-index 319.
+what buried command center he heard of has mention-stop-index 320.
+we're his girlfriend has mention-start-index 321.
+we're his girlfriend has mention-stop-index 322.
+claim to hath seen him this morning has mention-start-index 323.
+claim to hath seen him this morning has mention-stop-index 323.
+we don't ken has mention-start-index 324.
+we don't ken has mention-stop-index 324.
+reassure Mother has mention-start-index 325.
+reassure Mother has mention-stop-index 326.
+suggest the truth has mention-start-index 327.
+suggest the truth has mention-stop-index 327.
+we wouldn't do anything dangerous has mention-start-index 328.
+we wouldn't do anything dangerous has mention-stop-index 329.
+probably nothing has mention-start-index 330.
+probably nothing has mention-stop-index 330.
+explain we might go out has mention-start-index 331.
+explain we might go out has mention-stop-index 332.
+claim he didn't say has mention-start-index 333.
+claim he didn't say has mention-stop-index 333.
+agree to take care of the monocle has mention-start-index 334.
+agree to take care of the monocle has mention-stop-index 334.
+deny everything has mention-start-index 335.
+deny everything has mention-stop-index 335.
+lay out our reasons has mention-start-index 336.
+lay out our reasons has mention-stop-index 337.
+be comforting has mention-start-index 338.
+be comforting has mention-stop-index 339.
+quibble has mention-start-index 340.
+quibble has mention-stop-index 340.
+deny being a spy has mention-start-index 341.
+deny being a spy has mention-stop-index 341.
+say thanks for pointing out spill has mention-start-index 342.
+say thanks for pointing out spill has mention-stop-index 342.
+that it's one of those things atlanteans learn has mention-start-index 343.
+that it's one of those things atlanteans learn has mention-stop-index 343.
+what-atlantis has mention-start-index 344.
+what-atlantis has mention-stop-index 344.
+how fusion happens has mention-start-index 345.
+how fusion happens has mention-stop-index 345.
+whether the protesters feel the same way has mention-start-index 346.
+whether the protesters feel the same way has mention-stop-index 347.
+that the outside world matters has mention-start-index 348.
+that the outside world matters has mention-stop-index 348.
+how she justifies cold storage has mention-start-index 349.
+how she justifies cold storage has mention-stop-index 350.
+thank Atlantida has mention-start-index 351.
+thank Atlantida has mention-stop-index 351.
+return the rifle has mention-start-index 352.
+return the rifle has mention-stop-index 352.
+enough-in-school has mention-start-index 353.
+enough-in-school has mention-stop-index 354.
+mutual-embarrassment has mention-start-index 355.
+mutual-embarrassment has mention-stop-index 355.
 
-Mentions indices ends here
+Mentions indices ends here.

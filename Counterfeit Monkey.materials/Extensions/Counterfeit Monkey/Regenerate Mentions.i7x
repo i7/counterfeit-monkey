@@ -267,7 +267,7 @@ The mentions-list of point out that being from Language Studies does not make us
 The mentions-list of explain about our plans is {environment}.
 The mentions-list of donate is {roll of bills}.
 The mentions-list of whether he hath seen slango is {Slango}.
-The mentions-list of challenge Parker about the rum is {Slango}.
+The mentions-list of challenge Parker about the rum is {Slango, rum-subject}.
 The mentions-list of whether we can hath origin paste is {Origin Paste}.
 The mentions-list of how one might go about winning is {Origin Paste}.
 The mentions-list of play the game is {Origin Paste, Entertainment}.
