@@ -1,0 +1,2115 @@
+# CM-regtest: test script for regtest.py
+# For a full description, see <http://eblong.com/zarf/plotex/regtest.html>
+
+# These two lines can be changed to appropriate paths for your system and uncommented:
+#** game: "../Counterfeit Monkey.materials/Release/Counterfeit Monkey.gblorb"
+#** interpreter: ./git-remglk
+
+* tests
+
+Can you hear me? >>
+> yes
+
+Good, you're conscious. We're conscious. I've heard urban legends about synthesis going wrong, one half person getting lost.
+
+Do you remember our name?
+> andra
+Exactly right. And I'm Alex, making us jointly Alexandra. As far as I can tell, the operation was a success. We're meant to be one person now, unrecognizable to anyone who knew us before.
+
+Counterfeit Monkey
+A Removal by Emily Short
+/Release.*
+
+
+Let's try to get a look around. I haven't been able to run our body without your help, but maybe now you're awake, it'll work better.
+
+>tutorial off
+/Tutorial mode is.*
+
+>random-seed 1234
+[Random-number generator seeded with 1234.]
+
+>purloin backpack
+Which do you mean, 1) where my backpack is, 2) demonstrate the lost backpack, the 3) backpack, or the 4) heavy pack?
+
+>3
+[Purloined.]
+
+>purloin plans
+Which do you mean, 1) what sort of demonstration, 2) explain about our plans, the 3) plans, or the 4) plans?
+
+>4
+[Purloined.]
+
+>purloin cate
+[Purloined.]
+
+>purloin lime
+Which do you mean, 1) buy the lime, the 2) lime, 3) lime, or the 4) key lime?
+
+>2
+[Purloined.]
+
+>purloin wig
+Which do you mean, the 1) wig or the 2) Ben wig?
+
+>1
+[Purloined.]
+
+>i
+We are equipped with the following essentials: a backpack, a flash drive, a monocle, some plans, and your R-remover.
+
+We are also carrying a cate, a lime, and a wig.
+
+The flash drive and the monocle are in the backpack, which is closed for greater concealment.
+
+>put all in backpack
+We open the backpack.
+wig: Done.
+lime: Done.
+cate: Done.
+/plans: The plans (couldn't possibly fit|would be much too long).
+R-remover: Done.
+
+>i
+We are equipped with the following essentials: a backpack, a flash drive, a monocle, some plans, and your R-remover.
+
+We are also carrying a cate, a lime, and a wig.
+
+Everything we carry is in the backpack except the plans. The backpack is gaping wide open so everyone can see what's inside.
+
+>wave l-remover at plans
+We smoothly, and almost without thinking about it, reset your device to be an L-remover. There is a smell of anise, and the plans turn into some pans. A set of flat skillets in cast iron: extremely bulky and heavy.
+
+We can't reasonably carry the whole stack of pans, so they fall to the ground with a dramatic crash.
+
+[Your score has gone up by one point.]
+
+Something makes you think of how we got here.
+
+[MEMORIES will list your currently active memories]
+>put pans in backpack
+There's nowhere near enough room.
+
+>i
+We are equipped with the following essentials: a backpack, a flash drive, your L-remover, and a monocle.
+
+We are also carrying a cate, a lime, and a wig.
+
+Everything we carry is in the backpack except the L-remover. The backpack is gaping wide open so everyone can see what's inside.
+
+>put all in backpack
+L-remover: Done.
+
+>i
+We are equipped with the following essentials: a backpack, a flash drive, your L-remover, and a monocle.
+
+We are also carrying a cate, a lime, and a wig.
+
+Everything we carry is in the backpack, which is gaping wide open so everyone can see what's inside.
+
+>close backpack
+We close the backpack.
+
+>i
+We are equipped with the following essentials: a backpack, a flash drive, your L-remover, and a monocle.
+
+We are also carrying a cate, a lime, and a wig.
+
+Everything we carry is in the backpack, which is closed for greater concealment.
+
+>x backpack
+Mine: a little bit worn, but capacious. It doesn't have any identifying marks on it, and I thought a brand-new bag would look more suspicious. It's closed.
+
+In the backpack are your L-remover, a cate, a lime, a wig, a flash drive, and a monocle.
+
+I figured that it would be undisturbed there for a couple of hours, in the dark and out of sight, and if anyone found it they would probably turn it in to Lost and Found. But it is a big relief to find it still there.
+
+/You (are reminded|have a fleeting thought) of how we got here.
+
+[MEMORIES will list your currently active memories]
+>open backpack
+We open the backpack.
+
+>x backpack
+Mine: a little bit worn, but capacious. It doesn't have any identifying marks on it, and I thought a brand-new bag would look more suspicious. It currently gapes open.
+
+In the backpack are your L-remover, a cate, a lime, a wig, a flash drive, and a monocle.
+
+>i
+We are equipped with the following essentials: a backpack, a flash drive, your L-remover, and a monocle.
+
+We are also carrying a cate, a lime, and a wig.
+
+Everything we carry is in the backpack, which is gaping wide open so everyone can see what's inside.
+
+>wear wig
+(first taking the wig)
+We settle the wig on our head and adjust our hair underneath.
+
+>i
+We are equipped with the following essentials: a backpack, a flash drive, your L-remover, and a monocle.
+
+We are also carrying a cate, a lime, and a wig.
+
+Everything we carry is in the backpack except the wig. The backpack is gaping wide open so everyone can see what's inside.
+
+We are wearing the wig.
+
+>wear monocle
+(first taking the monocle)
+Everything turns computer-monitor green when viewed through our right eye. And staring fixedly at anything will turn up its authenticity status.
+
+>i
+We are equipped with the following essentials: a backpack, a flash drive, your L-remover, and a monocle.
+
+We are also carrying a cate, a lime, and a wig.
+
+Everything we carry is in the backpack except the monocle and the wig. The backpack is gaping wide open so everyone can see what's inside.
+
+We are wearing the monocle and the wig.
+
+>drop backpack
+We put down the backpack.
+
+>i
+We are equipped with a monocle — an essential we mustn't part with.
+
+We are also carrying a wig.
+
+We are wearing the monocle and the wig.
+
+>x me
+This body is more you than me — well, it would be, since we came out a girl. Still, I feel a bit odd inspecting us too closely. It feels like invading your privacy.
+
+We are wearing the monocle and the wig.
+
+>purloin the twig
+[Purloined.]
+
+>purloin the clock
+[Purloined.]
+
+>purloin the tomes
+[Purloined.]
+
+>purloin the members
+Which do you mean, the 1) members or the 2) members?
+
+>2
+[Purloined.]
+
+>purloin the army
+Which do you mean, the 1) army, a 2) cat army, or the 3) army coat?
+
+>1
+[Purloined.]
+
+>hard
+Once you've selected hard mode, you can't go back: certain puzzles with multiple solutions will be made more difficult and some puzzles will be altered entirely. Are you sure? >>
+>y
+
+Counterfeit Monkey is now in "hard" mode. Tutorials are off. The world is reconfigured against you. Good luck.
+
+>drop all
+army: We put down the army.
+members: We put down the members.
+broken clock: We put down the broken clock.
+bent twig: We put down the bent twig.
+
+>look
+Back Alley
+This isn't much, is it? Just the back sides of a couple of buildings, some peeling yellow paint, and not even much by way of windows to look in through. I think the place where we had the procedure done is just a block or two away, but I've already lost the door. I imagine they change it.
+
+This alley runs north to the open street, towards the town square. That's the way we'll want to go first.
+
+/We can see a backpack here. (There|In the backpack) are your L-remover, a cate, a lime, and a flash drive( in the backpack)?.
+
+We can also see some dusty tomes, a bent twig, a broken clock, some members, an army, and some pans here. 
+
+>look carefully
+Back Alley
+There is nothing here but the back sides of a couple of buildings, some peeling yellow paint; not even much by way of windows to look in through.
+
+This alley runs north to the open street, towards the town square.
+
+/We can see a backpack here. (There|In the backpack) are your L-remover, a cate, a lime, and a flash drive( in the backpack)?.
+
+We can also see some dusty tomes, a bent twig, a broken clock, some members, an army, and some pans here. 
+
+>x bent twig
+Nine or ten inches long, very thin and somewhat flexible. There are no leaves left on it.
+
+The monocle pings happily as we sight the bent twig with the crosshairs.
+
+/(Something makes you think|You are reminded) of how we got here.
+
+[MEMORIES will list your currently active memories]
+>x broken clock
+It appears to be one of those archetypal alarm clocks that crows at sunrise and generally makes a nuisance of itself. It shows the time to be about ten past nine.
+
+It's stopped working sometime in the recent past, possibly thanks to its fall when we gelled it.
+
+>wave t-remover at twig
+We run our thumb over the dial, setting the device to a T-remover. With a distinct whiff of the faintest whiff of dust, the bent twig turns into a Ben wig. It is a wig belonging to — at a guess — a Ben Franklin costume. A rubbery pate simulates baldness at the top of the head, while grey curls hang below. It would not, I fear, look remotely persuasive on our head.
+
+There is a dismissive blatt from the monocle, and transposed over the Ben wig is a faint, greenish image of a bent twig.
+
+>wave l-remover at clock
+We reset the device to l. The device buzzes, puzzled. It has tried to create a "broken cock": evidently "clock" is too tightly bound to its modifiers and can't be manipulated separately. This is a serious problem in my field of study, incidentally.
+
+>wave m-remover at tomes
+We reset the device to m. The device buzzes, puzzled. It has tried to create a "dusty toes": evidently "tomes" are too tightly bound to their modifiers and can't be manipulated separately. Or perhaps it just doesn't have sufficient power to handle the dusty tomes.
+
+>wave s-remover at members
+We reset the device to s. There is a distinct spearmint flavor, and the members turn into a member. It is a figure of a member of the Committee to Establish an Orthodox Orthography. It is plastic, small enough to sit on our palm, and wears the stiff clothing and conservative hairstyle of about 1895. It looks slightly cross, as though the member has guessed its work would take another 15 years to complete.
+
+There is a dismissive blatt from the monocle, and transposed over the member is a faint, greenish image of some members.
+
+You have a fleeting thought of how we got here.
+
+[MEMORIES will list your currently active memories]
+>wave y-remover at army
+We reset the device to y. We wave the Y-remover at the army and produce an arm, severed (because after all it would be beyond the parameters of the change to generate the person whose body part it is). It is only moderately gory, and most locals get used to seeing this kind of thing as a prank from six-year-olds every halloween. Still, it might startle a tourist.
+
+>gonear drinks club
+Fleur d'Or Drinks Club
+The back wall is dramatically decorated with bottled liquors of all sorts, from gin to cachaça; there's a giant bottle of Campari, taller than your average three-year-old, with a red ribbon around its neck.
+
+What makes this place technically a drinks club rather than a bar is its license to serve letter-manufactured food and drink. A toolkit on the bar contains some gimlets and some rusty nails, ready to be transformed into their respective cocktails.
+
+The bartender is in the middle of showing her homonym paddle to a patron holding a gin and tonic. The other patrons are scattered around the room at small tables, drinking or talking among themselves.
+
+She acknowledges us with a nod as we stroll up to the bar and get close enough to hear their conversation. "It was originally produced as a toy, but it's actually a bit dangerous," the bartender is saying.
+
+"Dangerous? How so?" asks the patron.
+
+"Various ways," she says. "Suppose I hit a small object that has a big homonym, like say a plane. You know, the carpentry kind. Suddenly I've got an airplane-style plane on top of me."
+
+>autoupgrade
+"What if you hit something that doesn't mean anything else?" the patron asks. "Like a chicken?"
+
+"Nothing," she says. "That's safe." As though to demonstrate, she smacks the paddle against her left buttock. "See? I don't get changed into a different bartender. Want to try?"
+
+She holds up the paddle as though she's going to tap him with it.
+
+"Uh... my name is Mark," he says.
+
+"Maybe not, then!" she says, laughing brightly.
+
+>wave p-remover at patron
+We reset the device to p. The letter-remover finds no p in Mark.
+
+"That was a little dangerous, wasn't it?" Mark asks. "If you had tapped me with that thing, wouldn't I be a giant X on the carpet now?"
+
+"Not for long," the bartender says. "I do have some restoration gel for emergencies. Or I could just hit you again with the paddle. But there would be an incident report and I could lose my license. So, yeah, better not."
+
+>wave m-remover at patron
+We reset the device to m. With a distinct whiff of newly sawn planks, Mark turns into an ark. From here, the width of the bow in cubits is hard to guess. It just looks huge, much too huge for the little space it's crammed into…
+
+Unfortunately, the ark is more than sufficient to bury us under its bulk.
+
+That is, that's what would have happened if we had done something so foolish. Shall we suppose we didn't? >>
+>y
+
+Fleur d'Or Drinks Club
+[Previous turn undone.]
+
+>say hello
+We already have the attention of the bartender, not to mention the curiosity of Mark.
+
+>g
+We already have the attention of the bartender, not to mention the curiosity of Mark.
+
+>ask about paddle
+"Tell me about that paddle," we say.
+
+"This item," says the bartender, flourishing it for you to see, "is a genuine licensed homonym paddle. Changes one item into another item as long as the two have identical names."
+
+>say hello to mark
+We already have the attention of the bartender, not to mention the curiosity of Mark.
+
+>ask mark about mark
+We give Mark a look to say his input would be welcome as well.
+
+/The bartender (doesn't seem interested in talking|doesn't have anything to say) about Mark at the moment.
+
+>ask mark about the paddle
+We give Mark a look to say his input would be welcome as well.
+
+"Tell me about that paddle," we say.
+
+The bartender explains again the concept of a homonym paddle that is able to convert an item into another item of the same name.
+
+>gonear parker
+Counterfeit Monkey
+It takes a minute for us to adjust to the light in here. Built when people were a bit shorter and ceilings were a bit lower, the Counterfeit Monkey is always smoky and never well lit, even in the middle of the day.
+
+"Help you?" asks Parker the barman unenthusiastically.
+
+/((I'm inclined|We want|I'd like) to|We could) ask whether he has seen Slango.
+
+>ask parker about slango
+"I wonder whether you've seen an associate of mine," we say to Parker. "Name of Slango."
+
+Parker looks over the bar at us. "He comes in here from time to time," he says. "Very regular customer. Always has about three rum and cokes."
+
+This is a lie, and therefore a test. Slango doesn't drink alcohol himself and doesn't permit drunkenness in his crew.
+
+/We (want to|could) challenge Parker about the rum.
+
+>ask men about slango
+They're... busy. At best interrupting them would interrupt their code, and at worst it would make them think we are a Bureau agent.
+
+/(We (want to|could)|I'd like to) challenge Parker about the rum.
+
+>gonear arbot
+(Arbot Maps & Antiques)
+Arbot Maps & Antiques
+There is a large collection of vintage and antique maps under glass — the island of Atlantis as a whole, street maps of here and of Maiana, navigation maps of the harbor, and then maps of more distant places as well.
+
+A stylish mannequin near the front sports a pair of Britishizing goggles.
+
+Overseeing all this is a woman named Kate.
+
+"Welcome to Arbot," says Kate. "Feel free to browse and ask me any questions you may have about the merchandise."
+
+>purloin the customer
+Who do you mean, the 1) clientele, the 2) customer, or 3) Mark?
+
+>2
+[Purloined.]
+
+>purloin the papas
+[Purloined.]
+
+>z
+/(Time passes|We kill some time (comparing ourselves to the mannequin|admiring the merchandise|staring idly into space|gazing out the shop window)).
+
+The papas look rather awkward, and clamber out of our ineffective hold onto solid ground.
+
+>ask about maps
+"What do you think of this?" we ask, pointing to the maps collection.
+
+/(Kate doesn't have anything to say in response|This evokes no particular interest).
+
+The customer looks rather awkward, and clambers out of our ineffective hold onto solid ground.
+
+>say hello to customer
+The customer is already included in the conversation.
+
+>ask customer about maps
+We give the customer a look to say her input would be welcome as well.
+
+"What do you think of this?" we ask, pointing to the maps collection.
+
+Kate shakes her head.
+
+>say hello to papas
+The papas are already included in the conversation.
+
+>ask papas about maps
+We give the papas a look to say their input would be welcome as well.
+
+"What do you think of this?" we ask, pointing to the maps collection.
+
+/(This evokes no particular interest|Kate doesn't have anything to say in response).
+
+>purloin the key.
+Which do you mean, the 1) key, the 2) key lime, or the 3) passkey?
+
+>1
+[Purloined.]
+
+>x key
+It's made of an extremely ordinary blank.
+
+The key unlocks the apartment door.
+
+>x key
+It's made of an extremely ordinary blank.
+
+The key unlocks the apartment door.
+
+The monocle pings happily as we sight the key with the crosshairs.
+
+> purloin backpack
+Which do you mean, 1) where my backpack is, 2) demonstrate the lost backpack, the 3) backpack, or the 4) heavy pack?
+
+> 3
+[Purloined.]
+
+>gonear High Street
+
+>car-acquire
+High Street
+Hustle, bustle, dirt; ugly American chain shops; lots and lots of people. 
+
+The curb is lined with garbage. 
+
+Our car — a sub-sub-compact that looks like it might be outraced by a kid on a scooter — is parked nearby. Here is how my mother gets around. She takes a 300 Euro Hermès scarf with an orange border and a pattern of prancing horses. She tosses it in the air. As it falls, she shoots it twice, like a clay pigeon: once to take out the F, the second time for the S. And such a car: buttery leather seats, jaguar lines. If someone asks how she gets such good results, she jokes that it's because of her quality materials.
+
+Suffice it to say that we are not similarly blessed.
+
+To the west, the street turns into a monumental staircase leading to the old fortified area — your hostel should be up that way — while a cross street heads southeast towards the main roundabout.
+
+>unprotest
+>put remover in backpack
+We put the P-remover into the backpack.
+
+>close backpack
+We close the backpack.
+
+>cross traffic
+You may have the nerve, but I don't.
+
+>ignore traffic
+You may have the nerve, but I don't.
+
+>drive to roundabout
+We open the car door: perhaps unsurprisingly, it comes without an effective lock system.
+
+We get into the car.
+
+We switch on the ignition and the car comes to life. Smelly, trembling, putt-putting life, but still, not bad for something we conjured out of a vegetable picked outside my parents' place.
+
+Roundabout (jammed into the car)
+We are jammed into the car with our knees almost at our chin, looking out through the bulbous little windshield. The motor is growling like a housecat with pneumonia.
+
+The traffic flows in a tight circle around a statue which we can never see clearly.
+
+Confusing signs point in various directions: northeast to Deep Street, northwest to High Street, south to Long Street, east to Tall Street.
+
+The car is making an unpleasant raspy growl.
+
+/(Please don't try to change lanes|They're honking at us for a reason, you know).
+
+>park
+We couldn't possibly park here.
+
+The car is making an unpleasant raspy growl.
+
+>get out of car
+We couldn't possibly park here.
+
+The car is making an unpleasant raspy growl.
+
+/(Please don't try to change lanes|They're honking at us for a reason, you know).
+
+>go to deep street
+
+Deep Street (jammed into the car)
+We are jammed into the car with our knees almost at our chin, looking out through the bulbous little windshield. The motor is growling like a housecat with pneumonia.
+
+This road descends steeply from southwest to northwest, passing between white concrete buildings to provide access to the marina — the Fish Market, the Docks, and a bar or two. The street is in deep shadow, protected from sunlight from almost any angle by its narrowness and by the height of the walls.
+
+The Aquarium Bookstore is to the east. It is an esoteric bookstore (and purveyor of other things), but one whose owner has helped you in the past.
+
+We can go northwest, southwest to the Roundabout, east, and west from here.
+
+The car is making an unpleasant raspy growl.
+
+>nw
+Since there's no way by road, we'll have to leave the car here. It is a moment's work to find a parking spot. We switch the ignition off.
+
+We swing the car door open.
+
+We climb out of the car.
+
+Fish Market
+Not very fishy at the moment, in fact: all the real trade happens in the early morning; then there is a period of tourist trade when the seafood sale tails off and most of the purchases are of polished conch shells and starfish; and then a little after noon the area clears out completely, leaving only briny rivulets on the concrete.
+
+A tall, stern woman is standing in the middle of the market. She wears the black caped uniform of an Authenticator, and a monocle just like mine. And I don't think I want her to see us. 
+
+Just east of here is a rusting corrugated tin building, which was built to house various possessions of the fishermen. 
+
+>e
+While the Authenticator's back is turned, we slip inside...
+
+Tin Hut
+Most of the light in here comes from circular windows punched into the tin walls just under the ceiling. From the inside, the building looks both larger and more sound than it appears from outside: there are plenty of sturdy struts supporting the roof and keeping the walls upright.
+
+Various tarpaulin-covered masses fill the room. 
+
+A trap door is set in the floor. 
+
+Sometimes smugglers and forgers have been known to stash things in here, since the building is close to the docks but rarely attracts the interest of customs officials.
+
+We catch our breath and look over our belongings to see if anything suspicious is showing. The monocle might be a little too conspicuous.
+
+>climb masses
+We identify the sturdiest-looking part of the construction and clamber onto it.
+
+>look through window
+We put an eye to one of the windows. The Authenticator is still in sight. Two assistants are in the middle of arresting a man for selling germ-based gems, but she is ignoring this play and looking for something or someone else.
+
+>out
+We get off the tarpaulin-covered masses.
+
+
+>out
+I don't think we want to show off the monocle around the Authenticator.
+
+> put monocle in backpack
+We open the backpack.
+
+We gently remove the monocle.
+
+We put the monocle into the backpack.
+
+More racket comes in through the windows.
+
+>out
+I don't think we want to show off the P-remover and the monocle around the Authenticator.
+
+> close backpack
+We close the backpack.
+
+>out
+I don't think there's anything showing that should get us into trouble. Timidly we open the door; the Authenticator has her back to us. We slip out. She makes one more turn in place — monocled gaze sliding across us without stopping — and then she strides away to the north.
+
+Fish Market
+Not very fishy at the moment, in fact: all the real trade happens in the early morning; then there is a period of tourist trade when the seafood sale tails off and most of the purchases are of polished conch shells and starfish; and then a little after noon the area clears out completely, leaving only briny rivulets on the concrete.
+
+Just east of here is a rusting corrugated tin building, which was built to house various possessions of the fishermen. 
+
+We can go north, south, southeast to Deep Street, and east to the Tin Hut from here.
+
+>se
+
+Deep Street
+This road descends steeply from southwest to northwest, passing between white concrete buildings to provide access to the marina — the Fish Market, the Docks, and a bar or two. The street is in deep shadow, protected from sunlight from almost any angle by its narrowness and by the height of the walls.
+
+The Aquarium Bookstore is to the east. It's dim inside, but occasional movements suggest that the proprietor, Slango's friend Lena, is inside. 
+
+/Our car ?(— which might better be described as a covered bicycle — )is parked nearby. 
+
+We can go northwest to the Fish Market, southwest to the Roundabout, east, and west from here.
+
+>get in car
+We get into the car.
+
+>drive to tall street
+/(We|It's a (brief|short)) drive up the steep switchback of Deep Street and through the perilous traffic of the roundabout. 
+
+Tall Street (jammed into the car)
+We are jammed into the car with our knees almost at our chin, looking out through the bulbous little windshield. The motor is growling like a housecat with pneumonia.
+
+Tall Street is very quiet. No celebrations have reached this far, and neither is there any business today; so it has an air of dull abandonment. At the east end the street bends to go around an old park rarely visited.
+
+To the south is the important blue rotunda of the Bureau of Orthography. The street runs west towards the busy roundabout.
+
+The car is making an unpleasant raspy growl.
+
+>go to roundabout
+
+Roundabout (jammed into the car)
+We are jammed into the car with our knees almost at our chin, looking out through the bulbous little windshield. The motor is growling like a housecat with pneumonia.
+
+The traffic flows in a tight circle around a statue which we can never see clearly.
+
+Confusing signs point in various directions: northeast to Deep Street, northwest to High Street, south to Long Street, east to Tall Street.
+
+The car is making an unpleasant raspy growl.
+
+>drive to monkey
+/((We|It's a (brief|short)) drive over to Deep Street. Then|At Deep Street) we pull easily into one of the available parking spots, since many people have now gone home.
+
+/(Then|Next) we (make the|have a) short walk through the marina district. 
+
+Counterfeit Monkey
+Infamously this pub was raided in 1929, the year that the Bureau developed its first meager attempt at an Authentication Scope, and dozens of smugglers and fraudulent businessmen went to jail. But neither that raid nor subsequent scrutiny has ever shut the place down entirely. Built when people were a bit shorter and ceilings were a bit lower, the Counterfeit Monkey is always smoky and never well lit, even in the middle of the day.
+
+The clientele are currently engaged in a game of darts, while the barman watches and practices a sarcastic wit on those who embarrass themselves. There is also a quantity of Origin Paste sitting out on the bar. 
+
+Parker acknowledges our return with a nod.
+
+I'd like to ask whether we can have the Origin Paste.
+
+>gonear tin hut
+Which do you mean, the 1) tin building or the 2) Tin Hut?
+
+>2
+Tin Hut
+Most of the light in here comes from circular windows punched into the tin walls just under the ceiling. From the inside, the building looks both larger and more sound than it appears from outside: there are plenty of sturdy struts supporting the roof and keeping the walls upright.
+
+Various tarpaulin-covered masses fill the room. 
+
+A trap door is set in the floor.
+
+>d
+We open the trap door.
+
+Crawlspace
+An awkward, low, concrete-lined crawlspace beneath the tin hut. It smells somewhat like animals; in spite of this it clearly gets a bit more use than anyone would like the customs officials to know about.
+
+The trap door, wedged open by nothing, admits the only light.
+
+The only significant thing down here is a crate. 
+
+The trap-door makes a creaking noise and slams shut again. I DO NOT LIKE being in the dark in a confined space with potential rats. Sorry, I'm getting us out of here. You can come back later.
+
+We open the trap door.
+
+Tin Hut
+Most of the light in here comes from circular windows punched into the tin walls just under the ceiling. From the inside, the building looks both larger and more sound than it appears from outside: there are plenty of sturdy struts supporting the roof and keeping the walls upright.
+
+Various tarpaulin-covered masses fill the room. 
+
+A trap door is set in the floor. 
+
+>u
+There is no way upwards. We can go west to the Fish Market and down through the trap door to the Crawlspace from here.
+
+The trap-door makes a creaking noise and slams shut again.
+
+>open door
+We open the trap door.
+
+The trap-door makes a creaking noise and slams shut again.
+
+>purloin twig
+[Purloined.]
+
+>prop door with twig
+A nice thought, but the twig is too short and supple to make an effective prop. One needs something a bit longer.
+
+>prop door with wig
+The wig is not long enough to prop the trap door very effectively, and even if it were, it wouldn't hold up against the pressure of the springs.
+
+>purloin plans
+Which do you mean, 1) what sort of demonstration, 2) explain about our plans, the 3) plans, or the 4) plans?
+
+>4
+[Purloined.]
+
+>prop door with plans
+The plans are long enough, but too flexible to provide much support against the springs of the trap door.
+
+>prop door with fish
+/(Maybe that means something different to you, but I can't see any such thing|I don't know what you think you're talking about, because we can't see any such thing here).
+
+>look
+Tin Hut
+Most of the light in here comes from circular windows punched into the tin walls just under the ceiling. From the inside, the building looks both larger and more sound than it appears from outside: there are plenty of sturdy struts supporting the roof and keeping the walls upright.
+
+Various tarpaulin-covered masses fill the room. 
+
+A trap door is set in the floor. 
+
+>purloin stick
+[Purloined.]
+
+>prop door with stick
+We prop the trap door open with the stick.
+
+>d
+
+Crawlspace
+An awkward, low, concrete-lined crawlspace beneath the tin hut. It smells somewhat like animals; in spite of this it clearly gets a bit more use than anyone would like the customs officials to know about.
+
+The trap door, wedged open by a stick, admits the only light.
+
+The only significant thing down here is a crate. 
+
+>u
+
+Tin Hut
+Most of the light in here comes from circular windows punched into the tin walls just under the ceiling. From the inside, the building looks both larger and more sound than it appears from outside: there are plenty of sturdy struts supporting the roof and keeping the walls upright.
+
+Various tarpaulin-covered masses fill the room. 
+
+A trap door is set in the floor, propped by a stick. 
+
+>wave t-remover at stick
+We reset the device to t. With a distinct whiff of stomach acid, the stick turns into some sick. It looks like half-digested pepperoni pizza, plus miscellaneous juices.
+
+The trap-door makes a creaking noise and slams shut again.
+
+>purloin tub
+[Purloined.]
+
+>gel sick
+We just touch a coated fingertip of gel to the sick. With an audible SPLORT, the sick becomes a stick. 
+
+I'm starting to understand how you got into all the places you got into. Not that I judge you or your line of work, of course.
+
+[Your score has gone up by one point and is now seven.]
+
+>prop door with stick
+(first taking the stick)
+We prop the trap door open with the stick.
+
+>d
+
+Crawlspace
+An awkward, low, concrete-lined crawlspace beneath the tin hut. It smells somewhat like animals; in spite of this it clearly gets a bit more use than anyone would like the customs officials to know about.
+
+The trap door, wedged open by a stick, admits the only light.
+
+The only significant thing down here is a crate. 
+
+>wave t-remover at stick
+The stick gives way to the now-familiar sick.
+
+The trap-door makes a creaking noise and slams shut again. I DO NOT LIKE being in the dark in a confined space with potential rats. Sorry, I'm getting us out of here. You can come back later.
+
+We open the trap door.
+
+Tin Hut
+Most of the light in here comes from circular windows punched into the tin walls just under the ceiling. From the inside, the building looks both larger and more sound than it appears from outside: there are plenty of sturdy struts supporting the roof and keeping the walls upright.
+
+Various tarpaulin-covered masses fill the room. 
+
+A trap door is set in the floor. 
+
+We can also see some sick here.
+
+>purloin hairstick
+[Purloined.]
+
+>wear hairstick
+We pull off the wig and smoothe down our hair.
+
+>purloin ben wig
+[Purloined.]
+
+>wear ben wig
+We pull off the hairstick and smoothe down our hair.
+
+We settle the Ben wig on our head and adjust our hair underneath.
+
+>purloin britishizing goggles
+[Purloined.]
+
+>wear britishizing goggles
+We put on the Britishising goggles. An experimental prototype that (from the perspective of the viewer only) adds -u- into words ending in -or, and reverses -er into -re wherever possible. Subjects wearing the Britishising goggles generally began to develop implausible accents and to have better than usual success wooing American tourists. Otherwise, the goggles are not much use: like my monocle, they don't affect the actual form of an object in any way.
+
+The surplus stock were mostly given away as rewards to supporters of public television, and the Bureau discouraged even recreational use in the 1980s as they began to make progress towards greater linguistic purity.
+
+>wear monocle
+We gently remove the Britishizing goggles.
+
+Everything turns computer-monitor green when viewed through our right eye. And staring fixedly at anything will turn up its authenticity status.
+
+>purloin swatch
+[Purloined.]
+
+>blindfold me with swatch
+We gently remove the monocle.
+
+We pull off the Ben wig and smoothe down our hair.
+
+We tie the swatch over our eyes. To be honest, it only partially obscures our vision; we still have a pretty good idea where everything is.
+
+>wear monocle
+We take off the swatch.
+
+Everything turns computer-monitor green when viewed through our right eye. And staring fixedly at anything will turn up its authenticity status.
+
+>gonear Winding Footpath
+Winding Footpath
+The footpath winds between the villas, sloping steeply downward. It is narrow, and bushes left and right conceal it even from the windows of the people living nearby.
+
+>x path
+There are traces of sand on the pathway, tracked up from the beach.
+
+The monocle pings happily as we sight the footpath with the crosshairs.
+
+>gonear Outdoor Cafe
+Outdoor Café
+From this slightly raised terrace, tourists have a view of the activity in the market and out over the docks.
+
+Curiously, there's an acquaintance of yours here: Nexami Engeo is at one of the round black metal tables. He's a musician, the front man of engeo. Your gang helped him out with some customs issues because of his unusual name.
+
+Nexami nods to us. "Watch out. That table next to you has something sticky spilled on it." And indeed there is a spill. You were about to lean on it nonchalantly.
+
+We want to say thanks for pointing out spill or ask what he is doing in Atlantis.
+
+>jump
+I don't think that would help.
+
+My response would be to say thanks for pointing out spill or ask what he is doing in Atlantis.
+
+>dive
+(in the spill)
+The spill isn't exactly deep enough to bathe in.
+
+Nexami stands up and mutters something. I have a little trouble with his Scottish accent — we don't get a lot of that around here, for obvious reasons — but you interpret it as him saying he'd better go pay up.
+
+He heads into the interior of the café.
+
+>jump into the spill
+The spill isn't exactly deep enough to swim in.
+
+>dive in the spill
+The spill isn't exactly deep enough to dive into.
+
+>dive into the spill
+The spill isn't exactly deep enough to swim in.
+
+>surf
+Even if we were down by the water, the waves on this island aren't really surfable.
+
+>bodysurf
+Even if we were down by the water, the ocean around here isn't very surfable.
+
+>wind surf
+Even if we were down by the water, the waves on this island aren't really surfable.
+
+>swim
+We'd need to be closer to the shore.
+
+>gonear Private Beach
+Private Beach
+This is little more than a strip of fine yellow sand, perhaps twenty meters from side to side, and five from the hillside to the waterline. A little sage grows on the hillside, escaped from some garden, along with wilder plants. Above, at the top of that slope, are houses with balconies overlooking the sea, but from this angle it's impossible to see much of them, or for them (you'll have to take my word on this) to see us.
+
+>jump
+I don't think that would help.
+
+>dive
+(in the sea)
+The shore here slopes gradually, with very shallow water at the beginning.
+
+>jump into the ocean
+The shore here slopes gradually, with very shallow water at the beginning.
+
+>surf
+The waves around here are nothing like big enough, even if we had a board.
+
+>bodysurf
+The waves around here are nothing like big enough, even if we had the skill and wanted to get our things all wet.
+
+>wind surf
+The waves around here are nothing like big enough, even if we had a board.
+
+>swim
+Considering the delicacy of our possessions and the distance we need to travel, swimming is not a viable solution.
+
+>gonear Precarious Perch
+Precarious Perch
+From up here there's a handsome distant sea, which isn't so far down really. But it's a scramble down a nearly sheer cliff for the first bit, until we make it down to the rockfall below, and it would be easy for a careless person to injure herself.
+
+It's hard to see through the tall window to the room behind: mostly it reflects the sea.
+
+>dive
+(in the distant sea)
+We'd never make it from here.
+
+>jump into the sea
+We'd never make it from here.
+
+>surf
+Even if we were down by the water, the waves on this island aren't really surfable.
+
+>bodysurf
+Even if we were down by the water, the ocean around here isn't very surfable.
+
+>wind surf
+Even if we were down by the water, the waves on this island aren't really surfable.
+
+>swim
+We'd need to be closer to the shore.
+
+>jump
+You give a sudden, mad spring before I can clamp down on the impulse, and then we are in mid-air and I can see the boulders below and time seems to be going very slowly
+
+until it isn't.
+
+That is, that's what would have happened if we had done something so foolish. Shall we suppose we didn't? >> 
+
+>n
+
+
+
+    *** We wake up four days later in hospital with one leg paralyzed ***
+
+
+In that game you scored 7 out of a possible 100, in 105 turns, earning you the rank of Graduate Student.
+
+/Total play time: *
+
+Would you like to RESTART, RESTORE a saved game, QUIT, UNDO the last command, review your final SCORE, or reveal what ACHIEVEMENTS you have yet to accomplish?
+
+>restart
+
+>y
+
+Good, you're conscious. We're conscious. I've heard urban legends about synthesis going wrong, one half person getting lost.
+
+Do you remember our name?
+
+>andra
+
+Exactly right. And I'm Alex, making us jointly Alexandra. As far as I can tell, the operation was a success. We're meant to be one person now, unrecognizable to anyone who knew us before.
+
+Counterfeit Monkey
+A Removal by Emily Short
+/Release.*
+
+Let's try to get a look around. I haven't been able to run our body without your help, but maybe now you're awake, it'll work better.
+
+>gonear Tools Exhibit
+Tools and Techniques Exhibit
+This area, though technically part of the Bureau, is open to the public as a display of the tools (past and present) of orthographical dominance. Everything is, alas, behind glass. Over at one end of the room is a Regency version of your own letter-remover — known as the Model T, because that is all it was originally able to remove.
+
+Next to that there is an anagramming gun and an Etymological Reversing Chamber.
+
+>purloin apple
+Which do you mean, the 1) apple or the 2) ripening apple?
+
+>1
+>purloin tomcat
+Who do you mean, the 1) funded tomcat or the 2) tomcat?
+
+>2
+[Purloined.]
+
+>purloin tube
+Which do you mean, the 1) tube or the 2) plans?
+
+>1
+[Purloined.]
+
+>purloin plans
+Which do you mean, 1) what sort of demonstration, 2) explain about our plans, the 3) plans, or the 4) plans?
+
+>4
+[Purloined.]
+
+>purloin stick
+[Purloined.]
+
+>purloin twig
+[Purloined.]
+
+>purloin card
+Which do you mean, the 1) card, a 2) par, the 3) keycard, or the 4) appointment card?
+
+>1
+[Purloined.]
+
+>purloin Origin Paste
+[Purloined.]
+
+>purloin backpack
+Which do you mean, 1) where my backpack is, 2) demonstrate the lost backpack, the 3) backpack, or the 4) heavy pack?
+
+>3
+[Purloined.]
+
+>i
+We are equipped with the following essentials: a backpack, a flash drive, a monocle, some Origin Paste, some plans, your R-remover, and a tube.
+
+We are also carrying an apple, a card, a stick, a tomcat, and a twig.
+
+The flash drive and the monocle are in the backpack, which is closed for greater concealment. 
+
+>get all from tube
+We squeeze vigorously, but nothing comes out.
+
+>put all in tube
+The tube's opening is too small.
+
+>put all in paste
+/That would only make a mess. Try rubbing some paste on (things|stuff) instead.
+
+>wave e-remover at tube
+/We smoothly, and almost without thinking about it, reset your device to be an E-remover. There is a [a-z  \-]+, and the tube turns into a tub. Now a handsome, giant\-sized tub with RESTORATION GEL prominently emblazoned on the front.
+
+[Your score has gone up by one point.]
+
+>get gel
+We better leave the restoration gel in there until we have decided what to put it on.
+
+>get gel from tub
+(I only understood the first part of that — trying anyway. Retrying that as "get gel".)
+
+We better leave the restoration gel in there until we have decided what to put it on.
+
+>put all in tub
+/That would only make a mess. Try rubbing some gel on (things|stuff) instead.
+
+>get all from tub
+We better leave the restoration gel in there until we have decided what to put it on.
+
+>wave l-remover at plans
+/We run our thumb over the dial, setting the device to an L-remover. There is a [a-z  \-]+, and the plans turn into some pans. A set of flat skillets in cast iron: extremely bulky and heavy.
+
+We can't reasonably carry the whole stack of pans, so they fall to the floor with a dramatic crash.
+
+>wave s-remover at pans
+/We reset the device to s. There is a [a-z  \-]+, and the pans turn into a pan. An omelet-sized skillet in cast iron.
+
+>wave d-remover at card
+We reset the device to d. With a distinct whiff of metal parts and oil, the card turns into a car. It is little larger than a toy, but that is what you want when driving on the streets around here. Any substantial vehicle wouldn't fit down the winding drives.
+
+Here is how my mother gets around. She takes a 300 Euro Hermès scarf with an orange border and a pattern of prancing horses. She tosses it in the air. As it falls, she shoots it twice, like a clay pigeon: once to take out the F, the second time for the S. And such a car: buttery leather seats, jaguar lines. If someone asks how she gets such good results, she jokes that it's because of her quality materials.
+
+Suffice it to say that we are not similarly blessed.
+
+The car is far too large for us to carry, and falls onto the floor.
+
+>put all in pan
+tub: Done.
+Origin Paste: Done.
+twig: Done.
+stick: Done.
+tomcat: Done.
+apple: Done.
+D-remover: Done.
+
+The tomcat gets out of the pan.
+
+>get pan
+/We (get|pick up) the pan.
+
+[Your score has gone up by three points and is now four.]
+
+>put all in backpack
+There are none at all available!
+
+>look in backpack
+In the backpack are a flash drive and a monocle.
+
+>enter car
+We open the car door: perhaps unsurprisingly, it comes without an effective lock system.
+
+The cat comes along with us. 
+
+We get into the car.
+
+>close car
+We close the car door.
+
+>put car in backpack
+We can't put the car into itself.
+
+>put all in backpack
+There are none at all available!
+
+>get out
+We swing the car door open.
+
+The cat gets out of the car. 
+
+We climb out of the car.
+
+>get backpack
+/We (get|take|acquire|pick up) the backpack. Mine: a little bit worn, but capacious. It doesn't have any identifying marks on it, and I thought a brand\-new bag would look more suspicious. It's closed.
+
+>get all from backpack
+We open the backpack.
+
+/flash drive: We (get|take|acquire|pick up) the flash drive.
+/monocle: We (get|acquire) the monocle.
+
+>get all from platform
+I don't want to sound like I doubt your criminal credentials, or whatever, but I doubt even you can successfully steal from this display case. The casing material would stop a bullet. 
+
+>put all on platform
+The display case isn't open.
+
+>put all in chamber
+The display case isn't open.
+
+>get all from chamber
+No. Sorry, I just don't see how it could possibly work without our getting caught. The casing material would stop a bullet.
+
+>purloin origin paste
+[Purloined.]
+
+>gel pan
+First, we try to retrieve everything important from the pan. We take the D-remover and the tub.
+
+We dip out a pea-sized quantity of gel and rub it gently onto the pan. With an audible SPLORT, the pan becomes some plans. 
+
+I'm starting to understand how you got into all the places you got into. Not that I judge you or your line of work, of course.
+
+[Your score has gone up by one point and is now five.]
+
+>gonear rotunda
+(the Rotunda)
+Rotunda
+Echoing space, marble floor, eye-like skylight many meters above us: so far, the Rotunda might belong to any 19th-century government bureau of means and self-importance.
+
+What sets this one apart is the lettering, each sigil no bigger than a flea, carved over every inch of the walls. Inscribed here is, in fact, the entire text of A New Orthodox Orthography, which means that if we had a great deal of patience and many rolls of butcher paper, we could take rubbings and wind up with our very own volume.
+
+We don't, of course. There are better things to do. More important places to go. The administrative part of the bureau is away to the south, and there is an exhibit of letter tools to the east, which is open to the public.
+
+/Near the street entrance is a sizable informational bulletin-board advertising the services of the Bureau; and next to this, pushed back to be out of the way, is a bin. (There is a shuttle in the bin|In the bin is a shuttle).
+
+>purloin crate.
+[Purloined.]
+
+>purloin silver tray
+[Purloined.]
+
+>put tray in crate
+We open the crate, revealing a watch, a band, and a single discarded leaflet.
+
+We put the silver tray into the crate.
+
+We are forced to set the bulky crate down on the floor.
+
+>put plans on tray
+We put the plans on the silver tray.
+
+>close crate
+We close the crate.
+
+>unlegend
+>south
+We open the crate, revealing a silver tray, a watch, a band, and a single discarded leaflet.
+
+/We (get|take|acquire|pick up) the plans. The plans are rolled up and stuck shut with a label that reads \"PROPERTY OF DENTAL CONSONANTS LIMITED \— UNAUTHORIZED USE ILLEGAL\". They're just a set of prints from the main computer design, of course, but still extremely informative: to the right engineer, they might reveal the secret of T\-insertion for replication by other companies. These are what you and Brock were originally contracted to lift from the island, at a fee in the multiple millions.
+
+We try hiding the plans in the backpack before approaching the secretary ahead, but they are too long to fit. We decide to stay where we are for now.
+
+>tempus
+/It's (only two in Kiritimati|nearly two in Jerusalem|roughly nine in Buenos Aires).
+
+>clock advance
+It is now early afternoon.
+
+>tempus
+/It's (around nine o'clock in Taipei|just eight o'clock in Indianapolis|just seven o'clock in Houston).
+
+>clock advance
+It is now mid afternoon.
+
+>tempus
+/It's (nearly nine in Bangkok|only nine in Atlanta|already ten in Shanghai).
+
+>clock advance
+It is now late afternoon.
+
+>tempus
+/It's (about eleven in the morning in Jakarta|about seven PM in Nairobi|only seven in the morning in Anchorage).
+
+>clock advance
+It is now sunset.
+
+>tempus
+/It's (already five in Sydney|about one in Havana|nearly eight in Cape Town).
+
+>clock advance
+It is now evening.
+
+>tempus
+/It's (about ten o'clock in Cairo|roughly midday in San Diego|about nine o'clock in Suva).
+
+>clock advance
+It is now noon.
+
+>restart
+Are you sure you want to restart? 
+
+>y
+
+>y
+
+Good, you're conscious. We're conscious. I've heard urban legends about synthesis going wrong, one half person getting lost.
+
+Do you remember our name?
+
+>andra
+Exactly right. And I'm Alex, making us jointly Alexandra. As far as I can tell, the operation was a success. We're meant to be one person now, unrecognizable to anyone who knew us before.
+
+Counterfeit Monkey
+A Removal by Emily Short
+/Release *
+
+
+Let's try to get a look around. I haven't been able to run our body without your help, but maybe now you're awake, it'll work better.
+
+>n
+
+Sigil Street
+The buildings here are two and three stories, with shops at ground level and elderly apartments above. The shops are closed for the holiday: a typographer's office, tourist boutiques of colorful skirts and ethnic bodices (rarely if ever worn by natives) and t-shirts covered with font designs.
+
+Passing by the reflective window we catch the sight of our single blended body, and it creeps me out.
+
+A narrow alley runs between buildings to the south, while the street continues east.
+
+>e
+
+Ampersand Bend
+A bend in the street, which runs west and north. This district combines the old and the new: a small museum in an ancient stone building to the east, a shiny real estate office south. The window of the museum is currently displaying one of its exhibits, a codex.
+
+A temporary barrier blocks this empty street from the busy fair to the north, though there is a door that could be opened with the correct code. From here the gaiety and excitement of the holiday are fairly loud. 
+
+>use code
+If only the code were written down somewhere nearby.
+
+>use code on lock
+If only the code were written down somewhere nearby.
+
+>type code
+You'll have to specify what you want to type on.
+
+>type code on code-lock
+If only the code were written down somewhere nearby.
+
+>type code on barrier
+If only the code were written down somewhere nearby.
+
+>set lock to code
+If only the code were written down somewhere nearby.
+
+>set barrier to code
+If only the code were written down somewhere nearby.
+
+>enter code
+If only the code were written down somewhere nearby.
+
+>enter code on lock
+If only the code were written down somewhere nearby.
+
+>enter code on barrier
+If only the code were written down somewhere nearby.
+
+>enter code in lock
+If only the code were written down somewhere nearby.
+
+>wave x-remover at codex
+/We smoothly, and almost without thinking about it, reset your device to be an X-remover. There is a [a-z  \-]+, and the codex turns into a code. A bit of paper on which is written "305."
+
+[Your score has gone up by one point.]
+
+>use code
+We set the wheels of the code-lock to 305.
+
+Click! The barrier door unlocks.
+
+>use code on lock
+The temporary barrier door was already unlocked.
+
+>type code
+You'll have to specify what you want to type on.
+
+>type code on lock
+The temporary barrier door was already unlocked.
+
+>type code on lock
+The temporary barrier door was already unlocked.
+
+>set lock to code
+The temporary barrier door was already unlocked.
+
+>set barrier to code
+The temporary barrier door was already unlocked.
+
+>set lock to 305
+The temporary barrier door was already unlocked.
+
+>set barrier to 305
+The temporary barrier door was already unlocked.
+
+>enter code on lock
+The temporary barrier door was already unlocked.
+
+>enter code in lock
+The temporary barrier door was already unlocked.
+
+>enter code on barrier
+The temporary barrier door was already unlocked.
+
+>enter code
+The temporary barrier door was already unlocked.
+
+>enter code in barrier
+The temporary barrier door was already unlocked.
+
+>gonear Projection Booth
+
+>purloin reel
+Which do you mean, the 1) reel or the 2) reel?
+
+>1
+[Purloined.]
+
+>put reel on projector
+We put the reel into the projector.
+
+>turn on projector
+We flip the switch. The projector comes to life with a hum. There's the usual flickering of light and dust, and then a black and white movie begins to play.
+
+Achievement accomplished: Lucius Quagmire award for viewing unusual films!
+
+/A jolly title card comes up, which reads "(Uova di Pasqua|Huevos de pascua)".
+
+/The scene opens on a (priest purchasing a set of paints. Afterward, the camera closes and holds for a long time on a glass jar of pickled eggs. Finally a young boy's hand reaches in and extracts one of the pickles. The rest of the boy is not shown|skinny spinster doing some shopping at a farmer's market. Afterward, a dead rabbit on a string hangs from the tree. The shot holds there for a long period. Wind rustles in the grass).
+
+>take reel
+We switch the projector switch off.
+
+/We (take|get|pick up) the reel. A reel of film, unlabeled.
+
+>mount reel
+We put the reel into the projector.
+
+>take reel
+/We (take|get|pick up) the reel.
+
+>thread reel
+(on the projector)
+We put the reel into the projector.
+
+>take reel
+/We (take|get|pick up) the reel.
+
+>show reel
+You must show the reel to someone specific.
+
+>show reel on projector
+We put the reel into the projector.
+
+We flip the switch. The projector comes to life with a hum. There's the usual flickering of light and dust, and then a black and white movie begins to play.
+
+/A jolly title card comes up, which reads "(Uova di Pasqua|Huevos de pascua|Les oeufs de Pâques)".
+
+/The scene opens on a (husky-voiced housewife reading a newspaper. Afterward, a nurse in wartime uniform is making a fuss over a white rabbit in a cage|priest carrying a cage containing a rabbit. Afterward, church bells are ringing in the spire of a Gothic church).
+
+>s
+
+Screening Room
+Whatever is scheduled for later showing has not started yet, and is probably not destined to start for some time; at any rate, the screen is blank and no audience has yet assembled.
+
+My backpack is stowed under a seat in the third row from the back. I figured that it would be undisturbed there for a couple of hours, in the dark and out of sight, and if anyone found it they would probably turn it in to Lost and Found. But it is a big relief to find it still there.
+
+/(In the backpack are a flash drive and a monocle|There are a flash drive and a monocle in the backpack). 
+
+We can go north to the Projection Booth and east from here.
+
+/(On the screen|In the movie|As we watch), (a skinny spinster kneels in the dirt, burying eggs in a row as though they were tulip bulbs. It's impossible to make out what's being said, but the music is melancholy, played on a distressed fiddle|a woman clings to the lapels of a sharply-dressed gentleman. He pushes her away. She takes off a brooch shaped like a rooster and flings it at his feet. He picks it up and slowly pins it to his tie).
+
+Next a plane buzzes low to the ground over a peaceful-looking farm. A man parachutes out, lands, and sneaks into the barn. He is carrying a number of pamphlets in English. It's impossible to make out what's being said, but the music is melancholy, played on a distressed fiddle.
+
+>z
+Time passes.
+
+/(On the screen|In the movie|As we watch), a (country church explodes from the inside, the stained glass blowing out in all directions. Beleaguered peasants watch with dumb incredulity. A small girl bleeds|husky-voiced housewife runs into a burning house and remains there while the fire burns higher and higher, only to return with a book in a worn black binding. From the notches cut into the edges of the page, it appears to be a Bible or a dictionary).
+
+/Finally, a (priest reads the service over a casket|skinny spinster watches as an egg begins to chip from the inside. Something is trying to get out).
+
+>z
+Time passes.
+
+The credits come up on the screen. Not a single one of these names is suitable for daily use on the island. After three cards of names, a final note comes up reading, DISTRIBUTED UNDER THE HAND OF LUCIUS QUAGMIRE. FOR THE DISTURBANCE OF MEANING.
+
+The film ends and the projector goes dark.
+
+>n
+/We (get|take|pick up) the backpack. Mine: a little bit worn, but capacious. It doesn't have any identifying marks on it, and I thought a brand-new bag would look more suspicious. It's closed.
+
+Projection Booth
+The booth is small and lined with grey carpet. It smells faintly of hot dogs.
+
+A projector has been set up facing the screen and a reel threaded into it. 
+
+A jotter is propped up next to the projector. 
+
+[Your score has gone up by three points and is now four.]
+
+>gonear Dormitory Room
+Dormitory Room
+Painted off-white, with hard wood floors under many layers of protective gloss coating: there are no surfaces in this room that would take a stain. Four dorm beds are lined up against the wall.
+
+The locker you identify as your own sits near one of the beds, still locked with its dial lock.  
+
+A girl of about 19 is standing in the middle of the room, looking around as though she can't quite believe where she landed or what she's doing here. She is carrying a heavy pack and wearing a pink t-shirt.
+
+
+"Hey," says the girl. "Do you think this place is safe?" she asks conspiratorially.
+
+I must look blank, because she goes on, "I saw this documentary once, right, about a serial killer who went from youth hostel to youth hostel, grooming girls and killing them. And then he'd chop up the bodies and put the body parts into the lockers. And no one would find out until he'd gone away again."
+
+Nothing like that has happened around here, but she seems to get a charge out of scaring herself with this story.
+
+We want to ask for privacy.
+
+>look
+Dormitory Room
+Painted off-white, with hard wood floors under many layers of protective gloss coating: there are no surfaces in this room that would take a stain. Four dorm beds are lined up against the wall.
+
+The locker you identify as your own sits near one of the beds, still locked with its dial lock.  
+
+The backpacking girl is still hanging out here. She is carrying a heavy pack and wearing a pink t-shirt. 
+
+>gonear the Cathedral Gift Shop
+Cathedral Gift Shop
+This area used to be a sort of antechamber where the priests and choir might gather for processions into the church, but it has now been done over for retail purposes. This is one of several schemes to make the New Church pay for its own upkeep: a problem is that people somehow feel everything associated with a church ought to be free, including lunchtime concerts, potluck suppers, and Thursday-night lecture series.
+
+The elderly man in charge of the gift shop nods at us as we come in.
+
+A long line of dusty tomes are lined up on one of the shelves, marked "free for taking". None are missing. 
+
+/(We want to|We could|My response would be to|I'd like to) ask what is worth seeing in the New Church.
+
+>x postcards
+You may be a tourist in these parts, but I, my curious friend, am not: so I find these pictures all rather foolish, and not at all representative of the town as it really is.
+
+>wave s-remover at racks
+/We run our thumb over the dial, setting the device to an S-remover. There is a [a-z  \-]+, and the wire racks turn into a wire rack. The new rack is miraculously much larger than the individual racks before, so it can still hold all the same merchandise.
+
+/(We want to|We could|My response would be to|I'd like to) ask what is worth seeing in the New Church.
+
+>x postcards
+You may be a tourist in these parts, but I, my curious friend, am not: so I find these pictures all rather foolish, and not at all representative of the town as it really is.
+
+>purloin tub
+[Purloined.]
+
+>gel rack
+We dip out a pea-sized quantity of gel and rub it gently onto the wire rack. With an audible SPLORT, the wire rack becomes some wire racks. 
+
+I'm starting to understand how you got into all the places you got into. Not that I judge you or your line of work, of course.
+
+/(We want to|We could|My response would be to|I'd like to) ask what is worth seeing in the New Church.
+
+[Your score has gone up by one point and is now five.]
+
+>x postcards
+You may be a tourist in these parts, but I, my curious friend, am not: so I find these pictures all rather foolish, and not at all representative of the town as it really is.
+
+>gonear Roget Close
+Roget Close
+A pleasantly sheltered lane in which I learned to ride a bicycle, and where my friend Lucy used to live, before she and her parents moved off-island. Restrictions were looser even twenty years ago. Our old schoolhouse is just west of here.
+
+If you look just north between the houses, you'll notice also the footpath down to an almost-private beach. It used to be open, but it's now gated off, and built into the gate is a chic modern sculpture. 
+
+>x school
+It's where I went to school until I was twelve, as did most of the kids in this area. It's an old building with big arched windows and faded floorboards, and in the afternoon the schoolyard smells of spilled milk going sour in the sun. From this direction there's not much to see but the screen of palm trees in front.
+
+>x palm
+They aren't the very tall and graceful kind, but a stumpier variety, forming a sort of vegetative colonnade in front of the school building. There's some gum stuck to the base of the nearest tree.
+
+>look
+Roget Close
+A pleasantly sheltered lane in which I learned to ride a bicycle, and where my friend Lucy used to live, before she and her parents moved off-island. Restrictions were looser even twenty years ago. Our old schoolhouse is just west of here.
+
+Gum adheres to one of the palm trees, left no doubt by some departing school kid. 
+
+If you look just north between the houses, you'll notice also the footpath down to an almost-private beach. It used to be open, but it's now gated off, and built into the gate is a chic modern sculpture. 
+
+/You (are reminded|have a fleeting thought) of your crew's skill.
+
+[MEMORIES will list your currently active memories]
+>x gum
+The lump of blue-green gum has largely dried, but is still intensely unappetizing.
+
+>get gum
+/We (take|get|pick up) the gum.
+
+>look
+Roget Close
+A pleasantly sheltered lane in which I learned to ride a bicycle, and where my friend Lucy used to live, before she and her parents moved off-island. Restrictions were looser even twenty years ago. Our old schoolhouse is just west of here.
+
+If you look just north between the houses, you'll notice also the footpath down to an almost-private beach. It used to be open, but it's now gated off, and built into the gate is a chic modern sculpture. 
+
+>x palm trees
+They aren't the very tall and graceful kind, but a stumpier variety, forming a sort of vegetative colonnade in front of the school building.
+
+>chew gum
+I'm afraid I've never cared for ABC gum.
+
+>eat gum
+I'm afraid I've never cared for ABC gum.
+
+>drop gum
+We put down the gum.
+
+>look
+Roget Close
+A pleasantly sheltered lane in which I learned to ride a bicycle, and where my friend Lucy used to live, before she and her parents moved off-island. Restrictions were looser even twenty years ago. Our old schoolhouse is just west of here.
+
+If you look just north between the houses, you'll notice also the footpath down to an almost-private beach. It used to be open, but it's now gated off, and built into the gate is a chic modern sculpture. 
+
+We can also see some gum here. 
+
+/You (are reminded|have a fleeting thought) of your crew's skill.
+
+[MEMORIES will list your currently active memories]
+>get gum
+/We (take|get|pick up) the gum.
+
+>put gum on spinner
+We put the gum on the pedestal.
+
+The mirror rotates in leisurely fashion, and when it is done there is a mug.
+
+It's a super-sized black mug with "TEA INSERTION GROUP" on the side in crisp white letters. Must be an employee gift over at Dental Consonants Limited.
+
+The gate clicks open. 
+
+[Your score has gone up by one point and is now six.]
+
+>get mug
+/We (take|get|pick up) the mug.
+
+>x mug
+It's a super-sized black mug with "TEA INSERTION GROUP" on the side in crisp white letters. Must be an employee gift over at Dental Consonants Limited.
+
+>wave g-remover at mug
+We reset the device to g. The mug flickers and there is a brief image of a mu in its place — the concept strangely embodied in a physical form — before the power gives out. I guess your device there just isn't tuned to reify abstracts.
+
+>unlegend
+>n
+We slip between the houses and down a path that looks as though it might lead to someone's back yard. No one has ever put up signage to correct this misapprehension because no one who lives around here is eager to encourage strangers on the private beach.
+
+Soon, however, the footpath begins to descend purposefully towards the level of the ocean.
+
+Winding Footpath
+The footpath winds between the villas, sloping steeply downward. It is narrow, and bushes left and right conceal it even from the windows of the people living nearby.
+
+>purloin foil
+
+>1
+[Purloined.]
+
+>x foil
+
+>x foil
+One of those long springy swords used for fencing. It has a button at the tip to prevent harm to one's opponent.
+
+>cut kudzu with foil
+The foil doesn't offer much of an edge.
+
+>purloin monocle
+[Purloined.]
+
+>wear monocle
+Everything turns computer-monitor green when viewed through our right eye. And staring fixedly at anything will turn up its authenticity status.
+
+>x path
+There are traces of sand on the pathway, tracked up from the beach.
+
+The monocle pings happily as we sight the footpath with the crosshairs.
+
+>purloin god
+Which do you mean, 1) whether he believes in God, 2) what sort of God he believes in, 3) whether he believes in God, the 4) sculpted figures, or the 5) god?
+
+>5
+[Purloined.]
+
+>purloin pita
+[Purloined.]
+
+>purloin roll of bills
+[Purloined.]
+
+>purloin as
+[Purloined.]
+
+>purloin cross
+Which do you mean, the 1) first aid station or the 2) cross?
+
+>2
+[Purloined.]
+
+>purloin army
+Which do you mean, the 1) army, a 2) cat army, or the 3) army coat?
+
+>1
+[Purloined.]
+
+>purloin members
+Which do you mean, the 1) members or the 2) members?
+
+>1
+[Purloined.]
+
+>purloin sign
+Which do you mean, the 1) typographer's office, the 2) hostel, the 3) closed sign, the 4) sign, the 5) sign, the 6) sign, the 7) sign, the 8) inapt sign, or the 9) sign?
+
+>9
+[Purloined.]
+
+>purloin Guidebook to Anglophone Atlantis
+[Purloined.]
+
+>autoupgrade
+>wave z-remover at kudzu
+We reset the device to z. With a distinct whiff of sweaty animal, the kudzu turns into a kudu. It's a creature like an antelope, with tall, twisting horns and a little white tuft of beard.
+
+There is a dismissive blatt from the monocle, and transposed over the kudu is a faint, greenish image of some kudzu.
+
+The kudu looks at us cleverly for a moment and then bounds away.
+
+>look behind bushes
+Hunting behind the bushes reveals something I vaguely remember seeing when I was a child, but not noticing again since: built into the wall is what looks like a very ancient sort of shrine.
+
+>put god in shrine
+We stand the god up in the niche in a place of solemn honor. It fits perfectly, as though shaped for just this use.
+
+For a moment, with the air still and hot, and no one visible in any direction, we might almost believe that the past two millennia have been nothing, and that the shrine is fresh and new.
+
+But Anglophone Atlantis prefers to forget what it was.
+
+Achievement accomplished: Jocasta Higgate award for reconstructing pagan worship on the island!
+
+>look
+Winding Footpath
+The footpath winds between the villas, sloping steeply downward. It is narrow, and bushes left and right conceal it even from the windows of the people living nearby.
+
+Now that the bushes have been cleared a little, the ancient shrine is plainly visible, and a god is set up in the place of honor. 
+
+>get god
+/We (take|get|pick up|acquire) the god. A small, heavy metal figurine representing some pagan deity. He carries a bow and quiver, and looks prepared to use them.
+
+>wave a-remover at pita
+We reset the device to a. With a distinct whiff of apricot and cherry, the pita turns into a pit. The hard center of a fruit, clean and dry of any flesh.
+
+There is a dismissive blatt from the monocle, and transposed over the pit is a faint, greenish image of a pita.
+
+>wave t-remover at pit
+/We reset the device to t. There is a [a-z  \-]+, and the pit turns into pi. For something so simple, it is astonishingly beautiful: a perfect circle in translucent silver, absolute and unflawed.
+
+There is a dismissive blatt from the monocle, and transposed over pi is a faint, greenish image of a pita.
+
+>put pi in shrine
+We set pi in the niche, where it gleams in crisp and perfect contrast to the old and battered superstitious monument. Pure and eternal mathematics, exalted by the frail hand of man; or something like that.
+
+>look
+Winding Footpath
+The footpath winds between the villas, sloping steeply downward. It is narrow, and bushes left and right conceal it even from the windows of the people living nearby.
+
+Now that the bushes have been cleared a little, the ancient shrine is plainly visible, and pi is set up in the place of honor. 
+
+>get pi
+/We (take|get|pick up|acquire) pi.
+
+>put bills in shrine
+We set up a cult to cash and contemplate it for a minute. There's no one else around to appreciate the point, though, and we need the money, so it will have to be a temporary installation only.
+
+>look
+Winding Footpath
+The footpath winds between the villas, sloping steeply downward. It is narrow, and bushes left and right conceal it even from the windows of the people living nearby.
+
+Now that the bushes have been cleared a little, the ancient shrine is plainly visible, and a roll is set up in the place of honor. 
+
+>get bills
+/We (take|get|pick up) the roll. Now that is more like it: you've got us a tidy little stash of euros here.
+
+>put as in shrine
+We set the as in the shrine, as though to leave a small offering for whatever deities these were.
+
+>look
+Winding Footpath
+The footpath winds between the villas, sloping steeply downward. It is narrow, and bushes left and right conceal it even from the windows of the people living nearby.
+
+Now that the bushes have been cleared a little, the ancient shrine is plainly visible, and an as is set up in the place of honor. 
+
+>get as
+/We (take|get|pick up|acquire) the as. It appears to be an as, a Roman coin of very low denomination. \(Your knowledge, not mine. Should I ask how you know such things\?\) It is made of copper and has the letters S C stamped on one side.
+
+>put cross in shrine
+We appropriate the ancient pagan shrine for a more Christian purpose, as many others must have done here when Atlantis was first converted in the fourth century.
+
+>look
+Winding Footpath
+The footpath winds between the villas, sloping steeply downward. It is narrow, and bushes left and right conceal it even from the windows of the people living nearby.
+
+Now that the bushes have been cleared a little, the ancient shrine is plainly visible, and a cross is set up in the place of honor. 
+
+>get cross
+/We (take|get|pick up|acquire) the cross. It's handsome, made of metal, the sort of thing that might adorn a church altar; I don't have the expertise to say whether it's especially valuable.
+
+>put army in shrine
+The figures of the soldiers form a neat line in the shrine niche. It looks as though a child had come here to play.
+
+>look
+Winding Footpath
+The footpath winds between the villas, sloping steeply downward. It is narrow, and bushes left and right conceal it even from the windows of the people living nearby.
+
+Now that the bushes have been cleared a little, the ancient shrine is plainly visible, and an army is set up in the place of honor. 
+
+>get army
+/We (take|get|pick up|acquire) the army. A collection of soldier figurines in blue uniforms.
+
+>put members in shrine
+The set of members just barely fits into the shrine. They look odd and plastic against the rough stone.
+
+>look
+Winding Footpath
+The footpath winds between the villas, sloping steeply downward. It is narrow, and bushes left and right conceal it even from the windows of the people living nearby.
+
+Now that the bushes have been cleared a little, the ancient shrine is plainly visible, and some members are set up in the place of honor. 
+
+>get members
+/We (take|get|pick up|acquire) the members. Mostly men and a few women, sternly dressed and with solemn expressions.
+
+>wave s-remover at members
+/We reset the device to s. There is a [a-z  \-]+, and the members turn into a member. It is a figure of a member of the Committee to Establish an Orthodox Orthography. It is plastic, small enough to sit on our palm, and wears the stiff clothing and conservative hairstyle of about 1895. It looks slightly cross, as though the member has guessed its work would take another 15 years to complete.
+
+There is a dismissive blatt from the monocle, and transposed over the member is a faint, greenish image of some members.
+
+>put member in shrine
+We plant the member in the shrine, where it looks pedantic and pin-headed. What is the point of its obsession about punctuation and spelling, in the broader scope of things?
+
+>look
+Winding Footpath
+The footpath winds between the villas, sloping steeply downward. It is narrow, and bushes left and right conceal it even from the windows of the people living nearby.
+
+Now that the bushes have been cleared a little, the ancient shrine is plainly visible, and a member is set up in the place of honor. 
+
+>get member
+/We (take|get|pick up|acquire) the member.
+
+>wave g-remover at sign
+We reset the device to g. With a distinct whiff of sulfur, the sign turns into a sin. An abstract representation of pettiness of spirit and obsession with needless detail, embodied by the image of a grey-skinned bureaucrat and a huge heap of papers.
+
+There is a dismissive blatt from the monocle, and transposed over the sin is a faint, greenish image of a sign.
+
+>put sin in shrine
+We arrange the sin in the shrine niche, as some sort of ironic statement about what people worship these days.
+
+>look
+Winding Footpath
+The footpath winds between the villas, sloping steeply downward. It is narrow, and bushes left and right conceal it even from the windows of the people living nearby.
+
+Now that the bushes have been cleared a little, the ancient shrine is plainly visible, and a sin is set up in the place of honor. 
+
+>get sin
+/We (take|get|pick up|acquire) the sin.
+
+>put guidebook in shrine
+We set Guidebook to Anglophone Atlantis down in the niche. A pointed gesture, that: this shrine is just one of the many things around the island that the Guidebook does not, and cannot, acknowledge.
+
+>look
+Winding Footpath
+The footpath winds between the villas, sloping steeply downward. It is narrow, and bushes left and right conceal it even from the windows of the people living nearby.
+
+Now that the bushes have been cleared a little, the ancient shrine is plainly visible, and Guidebook to Anglophone Atlantis is set up in the place of honor. 
+
+>get guidebook
+/We (take|get|pick up|acquire) Guidebook to Anglophone Atlantis. A much-thumbed and several years out-of-date guidebook to this immediate area. The cover is tomato-red but the pages are crinkly and beige: it appears that someone has spilled coffee on it.
+
+There's too much here to take in in a quick read, but we could look up specific topics if we wanted to read more.
+
+>n
+We continue down until there is a chink of a view of the sea. Then the path descends through a few last hairpin twists among rocks, and comes out suddenly on a little beach.
+
+Private Beach
+This is little more than a strip of fine yellow sand, perhaps twenty meters from side to side, and five from the hillside to the waterline. A little sage grows on the hillside, escaped from some garden, along with wilder plants. Above, at the top of that slope, are houses with balconies overlooking the sea, but from this angle it's impossible to see much of them, or for them (you'll have to take my word on this) to see us.
+
+Something green and plastic just barely pokes out of the sand. 
+
+>x castle
+At the edge of the water the sand is disturbed just enough to suggest where a previous sandcastle might have been, but that is all.
+
+The monocle pings happily as we sight the sandcastle with the crosshairs.
+
+>random-seed 1234
+
+>build castle
+It would be madness to spend long on such projects when we have so much else to be doing, but we do, for old times' sake (mine, at least), construct a couple of hasty cylindrical turrets and a protective wall of sorts.
+
+>build sandcastle
+It would be pleasant to make believe that we were young and had no other concerns but to sit on the beach and make castles. But we both know that's not the case.
+
+>look
+Private Beach
+This is little more than a strip of fine yellow sand, perhaps twenty meters from side to side, and five from the hillside to the waterline. A little sage grows on the hillside, escaped from some garden, along with wilder plants. Above, at the top of that slope, are houses with balconies overlooking the sea, but from this angle it's impossible to see much of them, or for them (you'll have to take my word on this) to see us.
+
+A fragile sandcastle stands near the water's edge. 
+
+Something green and plastic just barely pokes out of the sand. 
+
+>smell castle
+It smells like salt and seaweed.
+
+>taste castle
+/(I have an aversion to licking things that aren't meant for human consumption.|Doesn't that seem kind of germy\?)
+
+>touch castle
+/We (draw in some windows with our pinky|poke a little door into the base of one of the turrets|smoothe down one of the turrets).
+
+>touch castle
+/We (draw in some windows with our pinky|poke a little door into the base of one of the turrets|smoothe down one of the turrets).
+
+>x castle
+No more than a couple of cylindrical turrets and a protective wall.
+
+The monocle pings happily as we sight the sandcastle with the crosshairs.
+
+>touch castle
+/We (draw in some windows with our pinky|poke a little door into the base of one of the turrets|smoothe down one of the turrets).
+
+>touch castle
+/We (draw in some windows with our pinky|poke a little door into the base of one of the turrets|smoothe down one of the turrets).
+
+>touch castle
+/We (draw in some windows with our pinky|poke a little door into the base of one of the turrets|smoothe down one of the turrets).
+
+>touch castle
+/We (draw in some windows with our pinky|poke a little door into the base of one of the turrets|smoothe down one of the turrets).
+
+But our efforts are in vain, because an especially forward wave slides up the beach and demolishes the whole construction.
+
+>x castle
+At the edge of the water the sand is disturbed just enough to suggest where a previous sandcastle might have been, but that is all.
+
+The monocle pings happily as we sight the sandcastle with the crosshairs.
+
+>x funnel
+All that's visible from here is the tip of something green.
+
+>dig in sand
+We brush away the sand covering a funnel, left over from some child's building project.
+
+>look
+Private Beach
+This is little more than a strip of fine yellow sand, perhaps twenty meters from side to side, and five from the hillside to the waterline. A little sage grows on the hillside, escaped from some garden, along with wilder plants. Above, at the top of that slope, are houses with balconies overlooking the sea, but from this angle it's impossible to see much of them, or for them (you'll have to take my word on this) to see us.
+
+Half-hidden in the sand, no doubt left over from some kid's sandcastle project, is a plastic funnel. 
+
+>x funnel
+A gaudy green plastic toy suitable for funneling water and shaping conical sand-turrets. It's all sandy.
+
+/(You are reminded|Something makes you think) of your austere childhood.
+
+[MEMORIES will list your currently active memories]
+>get funnel
+/We (get|take|pick up|acquire) the funnel.
+
+>clean funnel
+We've brushed away most of the adhering sand, but there are always going to be a few grains left.
+
+>look in funnel
+It restricts our view comically, as though we were peering through a doll's periscope. But the utility is limited.
+
+>wear funnel
+I try setting it on our head as a cap, but it slides off again.
+
+>gonear Park Center
+Park Center
+This is a handsome expanse of grass, shaped like a rectangle with rounds cut from the corners, bounded by railings along the north side. There are no stalls and no barkers here, but small children are running around an impressive marble fountain.
+
+I gather from the direction of your thoughts that you dislike small children, so I'll restrain myself from trying to communicate with them.
+
+>purloin apple
+Which do you mean, the 1) apple or the 2) ripening apple?
+
+>1
+[Purloined.]
+
+>drop funnel
+We put down the funnel.
+
+>take funnel
+/We (take|get|pick up|acquire) the funnel.
+
+>wash funnel
+We dip the funnel in the water and quickly shake it dry.
+
+>fill funnel with water
+That would have about the same effect as pouring the water on our feet.
+
+>wave p-remover at apple
+We reset the device to p. There's a smell of fermenting apple, then cider, then something more malty. In the apple's place there is now a glass of nutbrown ale.
+
+>fill funnel with ale
+That would have about the same effect as pouring the ale on our feet.
+
+>put funnel in water
+We dip the funnel in the water and quickly shake it dry.
+
+>put funnel in fountain
+We dip the funnel in the water and quickly shake it dry.
+
+>gonear My Apartment
+My Apartment
+I should point out my copy of The Problem of Adjectives. I should have taken it back to the library — I meant to take it back to the library — but there just wasn't time. The last couple of hours before I came to meet you were frantic. The way I figured it, my parents or someone will come looking for me and they'll take it back for me. I think.
+
+I'd apologize for the mess, but should we really be here? I'm reconciled to leaving all my things behind, you know. You made me promise that I didn't mind.
+
+>drop funnel
+We put down the funnel.
+
+>take funnel
+/We (take|get|pick up|acquire) the funnel.
+
+>wash funnel
+We run some water from the sink tap over the funnel, leaving it glistening and clean.
+
+>put funnel in water
+We run some water from the sink tap over the funnel, leaving it glistening and clean.
+
+>put funnel in sink
+We run some water from the sink tap over the funnel, leaving it glistening and clean.
+
+>gonear Aquarium Bookstore
+Which do you mean, 1) Aquarium Bookstore or the 2) Aquarium Bookstore?
+
+>2
+Aquarium Bookstore
+The shop takes its name from the collection of fish mounted on every wall: swordfish, bass, other things I don't recognize. Underneath these dubious tokens, the walls are covered with bookshelves, and there are stacks of books on the floor where the shelves have proven insufficient.
+
+The merchandise consists mainly, but not exclusively, of books, and the selection caters to odd tastes. You once picked up in here a book about a man who R-removed a wrench, and then had his way with it. You and Brock had a good time with that one for the next month and a half.
+
+Lena is present, all right. In fact she watches us keenly the instant we come into the shop. Lena is an associate of Slango's. You hadn't realized that had crossed over into a romance. Slango has never, ever in your recollection dated anyone. And now this.
+
+"Happy Serial Comma Day," she says.
+
+/(We could|My response would be to) ask whether she has seen Slango or say who we are.
+
+>browse
+/Our eyes scan over the merchandise and pick out( [a-z]+ copies of)? (Ba's Journey|Quagmire Manifesto|Pat and Chris and the Homonym Paddle|Dyslexic Coalition)( inexplicably filed under \"(true\-love comedy|fantasy|textbooks|medical\-investigation steampunk|documentary letter collections|short stories|high\-technology kink mystery)\")?.
+
+The monocle pings happily as we sight the merchandise with the crosshairs.
+
+/(We could|My response would be to) ask whether she has seen Slango or say who we are.
+
+>browse merchandise
+/Our eyes scan over the merchandise and pick out( [a-z]+ copies of)? (Ba's Journey|Quagmire Manifesto|Pat and Chris and the Homonym Paddle|Dyslexic Coalition)( inexplicably filed under \"(true\-love comedy|fantasy|textbooks|medical\-investigation steampunk|documentary letter collections|short stories|high\-technology kink mystery)\")?.
+
+/(We could|My response would be to) ask whether she has seen Slango or say who we are.
+
+>x merchandise
+/Our eyes scan over the merchandise and pick out( [a-z]+ copies of)? (Ba's Journey|Quagmire Manifesto|Pat and Chris and the Homonym Paddle|Dyslexic Coalition)( inexplicably filed under \"(true\-love comedy|fantasy|textbooks|medical\-investigation steampunk|documentary letter collections|short stories|high\-technology kink mystery)\")?.
+
+The monocle pings happily as we sight the merchandise with the crosshairs.
+
+>look at merchandise
+/Our eyes scan over the merchandise and pick out( [a-z]+ copies of)? (Ba's Journey|Quagmire Manifesto|Pat and Chris and the Homonym Paddle|Dyslexic Coalition)( inexplicably filed under \"(true\-love comedy|fantasy|textbooks|medical\-investigation steampunk|documentary letter collections|short stories|high\-technology kink mystery)\")?.
+
+The monocle pings happily as we sight the merchandise with the crosshairs.
+
+>g
+/Our eyes scan over the merchandise and pick out( [a-z]+ copies of)? (Ba's Journey|Quagmire Manifesto|Pat and Chris and the Homonym Paddle|Dyslexic Coalition)( inexplicably filed under \"(true\-love comedy|fantasy|textbooks|medical\-investigation steampunk|documentary letter collections|short stories|high\-technology kink mystery)\")?.
+
+The monocle pings happily as we sight the merchandise with the crosshairs.
+
+>g
+/Our eyes scan over the merchandise and pick out( [a-z]+ copies of)? (Ba's Journey|Quagmire Manifesto|Pat and Chris and the Homonym Paddle|Dyslexic Coalition)( inexplicably filed under \"(true\-love comedy|fantasy|textbooks|medical\-investigation steampunk|documentary letter collections|short stories|high\-technology kink mystery)\")?.
+
+The monocle pings happily as we sight the merchandise with the crosshairs.
+
+>g
+/Our eyes scan over the merchandise and pick out( [a-z]+ copies of)? (Ba's Journey|Quagmire Manifesto|Pat and Chris and the Homonym Paddle|Dyslexic Coalition)( inexplicably filed under \"(true\-love comedy|fantasy|textbooks|medical\-investigation steampunk|documentary letter collections|short stories|high\-technology kink mystery)\")?.
+
+The monocle pings happily as we sight the merchandise with the crosshairs.
+
+>purloin plans
+Which do you mean, 1) what sort of demonstration, 2) explain about our plans, the 3) plans, or the 4) plans?
+
+>4
+[Purloined.]
+
+>gonear Deep Street
+Deep Street
+This road descends steeply from southwest to northwest, passing between white concrete buildings to provide access to the marina — the Fish Market, the Docks, and a bar or two. The street is in deep shadow, protected from sunlight from almost any angle by its narrowness and by the height of the walls.
+
+The Aquarium Bookstore is to the east. It is an esoteric bookstore (and purveyor of other things), but one whose owner has helped you in the past.
+
+We can go northwest, southwest, east to the Aquarium Bookstore, and west from here.
+
+>nw
+
+Fish Market
+Not very fishy at the moment, in fact: all the real trade happens in the early morning; then there is a period of tourist trade when the seafood sale tails off and most of the purchases are of polished conch shells and starfish; and then a little after noon the area clears out completely, leaving only briny rivulets on the concrete.
+
+A tall, stern woman is standing in the middle of the market. She wears the black caped uniform of an Authenticator, and a monocle just like mine. And I don't think I want her to see us. 
+
+Just east of here is a rusting corrugated tin building, which was built to house various possessions of the fishermen. 
+
+>e
+While the Authenticator's back is turned, we slip inside...
+
+Tin Hut
+Most of the light in here comes from circular windows punched into the tin walls just under the ceiling. From the inside, the building looks both larger and more sound than it appears from outside: there are plenty of sturdy struts supporting the roof and keeping the walls upright.
+
+Various tarpaulin-covered masses fill the room. 
+
+A trap door is set in the floor. 
+
+Sometimes smugglers and forgers have been known to stash things in here, since the building is close to the docks but rarely attracts the interest of customs officials.
+
+We catch our breath and look over our belongings to see if anything suspicious is showing. The P-remover, the monocle, and the plans might be a little too conspicuous.
+
+>drop plans
+It doesn't feel safe leaving the plans here even for a short period.
+
+>w
+I don't think we want to show off the P-remover, the monocle, and the plans around the Authenticator.
+
+>wave l-remover at plans
+/We reset the device to l. There is a [a-z  \-]+, and the plans turn into some pans. A set of flat skillets in cast iron: extremely bulky and heavy.
+
+There is a dismissive blatt from the monocle, and transposed over the pans is a faint, greenish image of some plans.
+
+We can't reasonably carry the whole stack of pans, so they fall to the floor with a dramatic crash.
+
+Let's hope she didn't hear that.
+
+>wave s-remover at plan
+I don't know what you think you're talking about, because we can't see any such thing here.
+
+>x masses
+From the shapes visible under the blue plastic, it appears that they are probably tables and stalls, buckets, signs, and other necessary features of the fish market when sales are in progress. There's a flattish area we could probably scramble onto.
+
+>stand on masses
+We are now standing on the tarpaulin-covered masses.
+
+>climb on masses
+But we're already on the tarpaulin-covered masses.
+
+>jump onto flattish area
+But we're already on the tarpaulin-covered masses.
+
+>scramble onto flattish area
+But we're already on the tarpaulin-covered masses.
+
+>go to flattish area
+The tarpaulin-covered masses should be close by.
+
+>look through window
+We put an eye to one of the windows. The Authenticator is still in sight. Two assistants are in the middle of arresting a man for selling germ-based gems, but she is ignoring this play and looking for something or someone else.
+
+>gel pans
+
+>get plans
+
+>gonear Back Alley
+
+>purloin crate
+
+>drop crate
+We put down the crate.
+
+>put tub in crate
+We open the crate, revealing a watch, a band, and a single discarded leaflet.
+
+We put the tub into the crate.
+
+>wave c-remover at crate
+First, we try to retrieve everything important from the crate. We take the tub.
+
+/There is a [a-z  \-]+, and the crate turns into a rate. A fluctuating, fizzing number with a dozen decimal points or more, never the same two times we look.
+
+/You (are reminded|have a fleeting thought) of how we got here.
+
+[MEMORIES will list your currently active memories]
+
+>gel rate
+We dip out a pea-sized quantity of gel and rub it gently onto the rate. With an audible SPLORT, the rate becomes a crate. 
+
+>put plans in crate
+We put the plans into the crate.
+
+>wave c-remover at crate
+First, we try to retrieve everything important from the crate. We take the plans.
+
+The crate gives way to the now-familiar rate.
+
+>n
+
+Sigil Street
+The buildings here are two and three stories, with shops at ground level and elderly apartments above. The shops are closed for the holiday: a typographer's office, tourist boutiques of colorful skirts and ethnic bodices (rarely if ever worn by natives) and t-shirts covered with font designs.
+
+The reflective window of the closed shops reflect our synthesized self.
+
+A narrow alley runs between buildings to the south, while the street continues east.
+
