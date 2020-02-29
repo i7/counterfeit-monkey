@@ -2290,7 +2290,7 @@ The Walltop is a region. The Old City Walls, the Crumbling Wall Face, and the Ol
 Instead of listening to a location in Walltop:
 	say "The noises that reach us are the sounds of distant traffic, the occasional horn blast from the docks, and some cheery shouting from the direction of the fair."
 
-Test wallbug with "tutorial on / n" in Crumbling Wall Face.
+Test wallbug with "tutorial on / Y / n" in Crumbling Wall Face.
 
 Chapter 2 - Residential District
 
