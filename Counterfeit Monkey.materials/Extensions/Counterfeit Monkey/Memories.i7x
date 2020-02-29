@@ -176,6 +176,9 @@ Carry out examining a bed:
 Carry out examining a dorm bed:
 	trigger Brock-bed.
 
+Check remembering Brock-bed:
+	if the uses of the noun is greater than 5:
+		say "I get the idea. You don't need to show me more." instead.
 
 Carry out remembering Brock-bed:
 	if the uses of the noun is:
