@@ -16,56 +16,63 @@
 - When a fuelled car is turned into something else, it will still be fuelled when re-created. The same applies to a car fixed by the mechanic.
 - The monocle now works properly when examining things that can be written on.
 - It was impossible to enter a car if there was a noisy thing outside it.
+- It is no longer possible to create a car inside small containers, with some exceptions.
+- Very large objects can no longer be inserted into small containers.
+- The player will drop any scenery or non-portable objects created in the inventory.
 
 ### Gameplay changes
 
 - Sap and soap can be collected from the dispenser by placing a suitable container below it. Also adds a sop dispenser for symmetry.
-- It is no longer possible to create a car inside small containers, with some exceptions.
-- The roc will protect the player from the boar.
 - The mechanic can now fix a second broken car.
 - The mechanic now responds to attempts to fix a car with poppy oil.
-- The player can now get on the spinner sculpture and enter the synthesizer and the T-inserter machine, but not actually get changed by them.
 - The tot and tots can be picked up.
-- Creatures no longer leave supporters or containers randomly.
+- Creatures no longer leave supporters or containers randomly. The behavior is now similar to the way it was in release 6 and earlier: people will leave the synthesizer immediately, but not animals. Creatures will get off the programmable dais immediately, with some exceptions.
 - The player can no longer carry created creatures past the secretary.
-- Adds responses to attempts to use the trap against the boar and the guards.
 - The boar will now butt the car door open if the player tries to hide inside a car.
 - The tiptoe and the the bodypart kind of tit now count toward the Igor Rosehip achievement.
+- When the game ends, the ACHIEVEMENTS command will list any achievements the player has not yet accomplished.
+- On hard mode, the chair in the Language Studies Seminar Room is now red, and as a consequence the hair and the hairpiece also are red. This prevents an unwinnable situation that would occur if the player destroyed the hair by turning it into air. 
+- The air will now disappear even if the player is not holding it.
+- The oil painting and the tilting piano are now too heavy to carry.
 
 ### Parsing
 
-- People and living creatures that can't be carried can now still be easily moved on and off some letter tools with commands like PUT PIRATE ON DAIS or TAKE PIRATE FROM DAIS or PIRATE, GET OFF. This also makes it easier to clear the programmable dais and similar with GET ALL FROM.
 - The player will now open the backpack automatically when trying to put non-held things into it. Previously, this would only work with held objects.
 - Non-enterable containers are no longer opened automatically when trying to enter them.
 - Adds an OIL verb, useful when asking the mechanic to fix the car using commands such as ASK MECHANIC TO OIL CAR or MECHANIC, OIL ENGINE.
-- The player will no longer close the car door when trying to start a non-functional car while outside it. They will also get inside the car before trying to start it.
-- The orc swords can be interacted with.
+- The player will no longer close the car door when trying to start a non-functional car while standing outside it. They will also get inside the car before trying to start it.
+- The orc swords and the bodypart kind of tit can be interacted upon.
 - The water in the secret chamber can be interacted with.
 - It is now always mentioned that the player automatically picks up anything on a chair before sitting down. This was previously done silently, causing some confusion.
+- Turning the tutorial mode back on now works properly. Previously it would turn back off as soon as the player listed their goals. Note that this will also remove the "finished tutorial mode" achievement until the tutorial is once again finished.
+- Creating a synthesis out of two objects with names in all caps now works properly.
+- GET SEAT or TAKE CHAIR no longer makes the player sit on the chair, while TAKE A SEAT still does.
 
 ### Word repository
 
-- Adds MA, MAMA, ME, PAS (plural pa), PASSKEY, another kind of plural PITS, plural PIT TRAPS, two kinds of CAP (from the carp), a CUP (wovel-rotating the cap), a CPU (anagramming the cup), and a non-liquid kind of TEAR.
+- Adds PASSKEY, another kind of plural PITS, plural PIT TRAPS, and a non-liquid kind of TEAR.
 - Fixes the broken plural ILLS and plural POTS that were listed in the code but impossible to create.
-- Adds responses to attempts to make ANTS, IN, COP, COCKPITS, CARTS, MAYAS, PITAS, PETS, SINK RAIN, INK DRAIN, SIN DRAIN, INK TAP, and SIN TAP.
 - Creating CAT ARMY, COMPLICIT SHARK, SCREE, SORD, TOMS, RIG, or ROCK BAND no longer ends the game. This makes it possible to create some previously unreachable objects, such as TOMCATS.
 - Creating TILLS does end the game, however, saving us from implementing plural TOLLS  and TELLS.
-- The TRAM is now a portable model, so that the TRAMCAR and the TRAMPET can be created.
 - The joke responses to attempting to synthesize ROCK and ROLL, KEY-LIME and PI, SILL and CATE, and PAN and EAR now work when using the programmable dais as well as the synthesizer.
+- The BASINS and derivatives BASIS and BASS are reinstated. These were removed by mistake in release 7.
 
 ### Cosmetic output errors
 
-- Now shows the correct error message when trying to EXAMINE ALL or other multiple objects ("You can't use multiple objects with that verb" instead of "You can't see any such thing.")
+- Now shows the correct error message when trying to EXAMINE ALL or examining other multiple objects ("You can't use multiple objects with that verb" instead of "You can't see any such thing.")
 - Removes an superfluous message that was shown when trying to give animals orders.
 - Fixes a repeated message that would occur if we don't reply to Higgates initial question about whether we speak Lojban.
 - Gets rid of an erroneous message about being let in through the security door if trying to leave though it when confronted by Alex's father.
 - No longer repeats the refusal message when trying to TAKE ALL FROM Professor Higgate's table.
 - Groups of plural tents are no longer called plural-tents, as in "We are carrying twelve plural-tents."
+- Plural of it-objects is now "it", as in "We are carrying two it" rather than "We are carrying two it-objects."
 - Fixes some glitches in the map graphics on certain interpreters when displaying the help menu. It is still slightly broken in the Mac IDE, though.
-- Fixes bits of room description being printed when getting on a supporter.
+- Removes fragments of the room description that were being printed when getting on a supporter.
 - There is now a custom message when listening to the plea. As the plea is listed as noisy, "We hear nothing unexpected" would sometimes be printed every turn when it was present.
 - Fixes a couple of messages with verbs that were not adapted to plural-named subjects: when trying to create living things or abstracts with a non-upgraded letter-remover ("The pans flickers and there is a brief image of …") and when large creatures try to follow the player into a small container ("The toms makes an effort to get in, but does not remotely fit.")
 - If the player was inside a container, it would sometimes be printed twice or more in the room description header, such as "Back Alley (in the tent) (in the tent)."
+- The inventory comment "(really the smuggled plans in disguise)" would get lost if the disguised plans were synthesized into something else.
+- More objects are now highlighted in highlighting mode, such as the Lecture Hall podium, seats, and conference poster in room descriptions, the Equipment Archive ceiling, the things on the diorama table, and the clothes of the pict and the diva.
 
 ## Release 8
 
