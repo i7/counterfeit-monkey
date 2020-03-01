@@ -214,10 +214,7 @@ Carry out involuntarily-dropping something which is not a person:
 	now the noun is handled.
 
 Carry out involuntarily-dropping:
-	if the player is on the spinner:
-		now the noun is in the location;
-	otherwise:
-		try silently dropping the noun; [this is better than just moving to the location because it copes with cases where the thing needs to land in a vehicle or supporter.]
+	try silently dropping the noun; [this is better than just moving to the location because it copes with cases where the thing needs to land in a vehicle or supporter.]
 	if the player carries the noun:
 		stop the action.
 
@@ -241,13 +238,14 @@ Report involuntarily-dropping a cat:
 	say "[The noun] [get] tired of being carried and [leap] delicately to the [fall-receiver]." instead.
 
 To say fall-receiver:
-	if the holder of the player is the location or the holder of the player is the spinner:
+	let H be the holder of the player;
+	if H is the location:
 		say "[ground]";
 	otherwise:
-		if the holder of the player is a car:
-			say "[holder of the player] floor";
+		if H is a car:
+			say "[H] floor";
 		otherwise:
-			say "[holder of the player]".
+			say the printed name of H.
 
 Section 5 - Length and Strength
 
