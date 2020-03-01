@@ -742,10 +742,18 @@ Report unlocking the plexiglas case with the screwdriver:
 
 Sanity-check locking the plexiglas case with something:
 	say "[We][']ll never get the screws back in. [We] just have to hope no one notices what [we] did until [we] [are] long gone." instead.
+
 Sanity-check locking keylessly the plexiglas case:
 	say "[We][']ll never get the screws back in. [We] just have to hope no one notices what [we] did until [we] [are] long gone." instead.
+
 Sanity-check turning the screws when the screws are not part of the plexiglas case:
 	say "There's no point now: they're not holding anything in place." instead.
+
+Sanity-check unlocking the screws with something:
+	try turning the screws instead.
+
+Instead of turning the plexiglas case when the player's command includes "unscrew":
+	try unlocking keylessly the plexiglas case.
 
 Instead of inserting something into the plexiglas case:
 	try inserting the noun into the synthesizer.
