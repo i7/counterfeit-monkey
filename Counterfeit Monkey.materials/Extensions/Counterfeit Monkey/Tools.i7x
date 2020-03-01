@@ -726,6 +726,13 @@ Setting action variables for unlocking the screws with something:
 Carry out unlocking the plexiglas case with the screwdriver:
 	move the screws to the location.
 
+Instead of unlocking the plexiglas case with the screwdriver when the plexiglas case is unlocked:
+	if the screws are part of the plexiglas case:
+		move the screws to the location;
+		say "[We] awkwardly and silently squeeze against the wall and angle ourself so that [we] can reach the screws with the screwdriver. It's annoying work, but eventually [we] do work all the screws free.";
+	otherwise:
+		say "Thanks to our earlier efforts, the plexiglas case is now unlocked permanently."
+
 Instead of unlocking the plexiglas case with the screwdriver for the first time:
 	say "[We] squeeze ourselves against the wall and angle to reach the screws with the screwdriver. I start on the first screw when[--]
 
@@ -753,7 +760,13 @@ Sanity-check unlocking the screws with something:
 	try turning the screws instead.
 
 Instead of turning the plexiglas case when the player's command includes "unscrew":
-	try unlocking keylessly the plexiglas case.
+	if the screwdriver is not enclosed by location:
+		say "I don't think we can pry the screws out with our fingers.";
+	otherwise:
+		if the screws are part of the plexiglas case:
+			try unlocking the plexiglas case with the screwdriver;
+		otherwise:
+			say "All screws have been removed."
 
 Instead of inserting something into the plexiglas case:
 	try inserting the noun into the synthesizer.
