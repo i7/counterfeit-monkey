@@ -1809,7 +1809,7 @@ Instead of inserting something into a desk:
 
 A chair is a kind of supporter. A chair is usually scenery. A chair is always enterable. Understand "seat" as a chair. The description of a chair is usually "It is an ordinary inexpensive variety of chair, made locally and found around the island in great numbers." A chair is usually seated.
 
-Instead of taking a chair when the subcommand of the noun matches "seat":
+Instead of taking a chair when the subcommand of the noun matches "seat" and the player's command includes "take":
 	try entering the noun.
 
 Rule for initially listing contents:
