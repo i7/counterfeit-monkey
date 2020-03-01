@@ -46,6 +46,7 @@
 - It is now always mentioned that the player automatically picks up anything on a chair before sitting down. This was previously done silently, causing some confusion.
 - Turning the tutorial mode back on now works properly. Previously it would turn back off as soon as the player listed their goals. Note that this will also remove the "finished tutorial mode" achievement until the tutorial is once again finished.
 - Creating a synthesis out of two objects with names in all caps now works properly.
+- Searching for ME in the surveillance computer will only show resluts for Andra, searching for YOU will only show results for Alex, while US or ALEXANDRA will show results for both.
 - GET SEAT or TAKE CHAIR no longer makes the player sit on the chair, while TAKE A SEAT still does.
 
 ### Word repository
