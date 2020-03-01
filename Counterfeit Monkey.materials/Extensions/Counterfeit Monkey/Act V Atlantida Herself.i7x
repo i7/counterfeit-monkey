@@ -831,7 +831,7 @@ Report touching the sea-view:
 		-- evening:
 			say "The water retains the heat of a very sunny day, though the air is cooling quickly." instead;
 
-Precarious Perch is a room. It is forbidden and checkpoint. The description is "From up here there's a handsome [distant-sea-view], which isn't [i]so[/i] far down [i]really[/i]. But it's a scramble down a nearly sheer cliff for the first bit, until [we] make it down to the rockfall below, and it would be easy for a careless person to injure herself."
+Precarious Perch is a room. It is forbidden and checkpoint. The description is "From up here there's a handsome [if boldening is true][bold type][end if]view of the sea[roman type], which isn't [i]so[/i] far down [i]really[/i]. But it's a scramble down a nearly sheer cliff for the first bit, until [we] make it down to the rockfall below, and it would be easy for a careless person to injure herself."
 
 In-direction of Precarious Perch is south. [Back into private solarium]
 
