@@ -62,26 +62,32 @@ Check something exiting when the actor is in the kayak and the location is not a
 	if the kayak is in location and the actor is not the player:
 		say "[one of][The person asked] [make] as though to climb out of [the kayak], then [see] that everything outside is made of water, and [withdraw] sulkily.[or][The person asked] [wait] in the bottom of [the kayak].[stopping]" instead.
 
-Check something exiting when the actor is in the synthesizer and the player is enclosed by the seminar room:
+Check something exiting when the actor is in the synthesizer and the player is enclosed by the Language Studies Seminar Room:
 	if the actor is a bird:
 		say "[The actor] [make] some attempts to flutter out of [the synthesizer], but [don't] get much lift and [give] up for the moment.";
 	otherwise:
 		if the actor is an animal:
 			say "[The actor] [scrabble] at the smooth sides of [the synthesizer], but can't get out.";
 		otherwise:
-			follow the exit attempt rules for the actor;
+			make no decision;
 	stop the action.
 
-Check something exiting when the actor is on the programmable dais:
+After an actor exiting when the container exited from is the synthesizer:
+	move the actor to the Language Studies Seminar Room;
+	continue the action.
+
+[Check something exiting when the actor is on the programmable dais:
 	follow the exit attempt rules for the actor;
-	stop the action.
+	stop the action.]
 
 The exit attempt rules are an object-based rulebook.
 
 To fidget is a verb. To pace is a verb.
 
-An exit attempt rule for a person (called exiter):
-	if a random chance of 1 in 3 succeeds:
+[An exit attempt rule for a person (called exiter):
+	do nothing.]
+
+	[if a random chance of 1 in 3 succeeds:
 		if a random chance of 1 in 2 succeeds:
 			say "[The exiter] [one of][fidget] uncomfortably[or][pace] around[at random] [in-on the holder of the exiter].";
 			the rule succeeds;
@@ -93,168 +99,9 @@ An exit attempt rule for a person (called exiter):
 		say "[The exiter] [one of][make] as if to get[or][appear] to consider getting[or][seem] to contemplate getting[at random] [preposition] [the holder of the exiter]";
 		if a random chance of 1 in 2 succeeds:
 			say ", but [regarding the exiter][one of][decide] against it[or]something makes [them] change [their] mind[at random][run paragraph on]";
-		say "."
-
-
-Section 3 - Ushering animals and people on and off transformation tools
-
-Understand "usher [someone] onto/on/up/into/in [something]" as ushering it onto. Ushering it onto is an action applying to two things.
-
-Understand the command "lead" as "usher".
-Understand "push [someone] onto/into/on/to [something]" as ushering it onto.
-
-Understand "usher [someone] off/from [something]" as ushering it off. Ushering it off is an action applying to two things.
-
-Understand "usher [someone] down from [something]" as ushering it off.
-Understand "usher [someone] out of [something]" as ushering it off.
-Understand "push [someone] down from [something]" as ushering it off.
-Understand "push [someone] out of [something]" as ushering it off.
-Understand "push [someone] off/from [something]" as ushering it off.
-Understand "take [someone] from [something]" as ushering it off.
-Understand "get [someone] from [something]" as ushering it off.
+		say "."]
 
 Definition: A thing is synth-like if it is the programmable dais or it is the synthesizer or it is the cryptolock or it is the t-inserter or it is the spinner.
-
-Check ushering someone onto something when the holder of the noun is the second noun:
-	say "[The noun] [are] already [in-on the second noun].";
-	stop the action.
-
-A first check ushering someone onto something when the holder of the noun is the player:
-	if the second noun is a container:
-		try inserting the noun into the second noun instead;
-	otherwise:
-		try putting the noun on the second noun instead.
-
-Check ushering someone onto something which is not synth-like:
-	if the noun is portably-small:
-		if the second noun is a container:
-			try inserting the noun into the second noun instead;
-		otherwise:
-			try putting the noun on the second noun instead;
-	otherwise:
-		say "[The noun] [seem] unwilling to get [in-on the second noun].";
-		stop the action.
-
-Check ushering someone onto the cryptolock:
-	if the noun is portably-small:
-		try inserting the noun into the second noun instead;
-	otherwise:
-		say "[The noun] [seem] unwilling to get into the bucket, and [they] wouldn't fit even if [they] wanted to.";
-	stop the action.
-
-Carry out ushering someone onto the t-inserter:
-	if the t-inserter is not empty:
-		let target be the first thing held by t-inserter;
-		if Brock is not in location:
-			say "[The target] [are] in there already.";
-			stop the action;
-		otherwise:
-			say "'[one of]Here, [the target] [are] in your way[or]Let me get that for you[or]Here[or]I've got that[at random].' [run paragraph on]";
-			try Brock taking the target;
-			if Brock is carrying the target:
-				try Brock dropping the target;
-			otherwise:
-				say "Brock tries to remove [the target] from the T-inserter for you, but fails.";
-				stop the action;
-	now the player carries the noun;
-	say "[random-ushering-phrase] into [the second noun]. [run paragraph on]";
-	try inserting the noun into the t-inserter;
-	stop the action.
-
-Carry out ushering someone onto something:
-	if the second noun is not empty and the carrying capacity of the second noun is 1:
-		say "There is no more room [in-on the second noun].";
-		stop the action;
-	say "[random-ushering-phrase] up [if second noun is a supporter]on[otherwise]into[end if] [the second noun].";
-	now the noun is on the second noun.
-
-Check ushering someone off something when the holder of the noun is not the second noun:
-	say "[The noun] [are] not [in-on the second noun].";
-	stop the action.
-
-Carry out ushering someone off something:
-	say "[random-ushering-phrase] down from [the second noun] to the floor.";
-	now the noun is in the location.
-
-Does the player mean ushering the player onto something:
-	it is very unlikely.
-
-Does the player mean ushering someone onto something which is not enterable:
-	it is very unlikely.
-
-Instead of ushering the player onto something:
-	try entering the second noun.
-
-Instead of ushering the player off something:
-	try exiting.
-
-Instead of ushering a real person off something:
-	try asking the noun to try exiting.
-
-Instead of ushering a real person onto something:
-	try asking the noun to try entering the second noun.
-
-To say random-ushering-phrase:
-	if a random chance of 1 in 2 succeeds:
-		say "[We][one of] carefully[or] gently[or] laboriously[or][at random]";
-	otherwise:
-		say "[one of]Carefully[or]Gently[or]Laboriously[at random], [we]";
-	say " [one of]help[or]usher[or]lead[at random] [the noun]";
-
-Instead of asking a fake person (called the enterer) to try standing up on something enterable (called target):
-	try ushering the enterer onto the target.
-
-Instead of asking a fake person (called the enterer) to try sitting on something enterable (called the target):
-	try ushering the enterer onto the target.
-
-Instead of asking someone fake (called the enterer) to try lying on something enterable (called the target):
-	try ushering the enterer onto the target.
-
-Instead of asking someone fake (called the enterer) to try entering something enterable (called the target):
-	try ushering the enterer onto the target.
-
-Instead of asking a fake person (called enterer) to try getting off a thing (called target):
-	try ushering the enterer off the target.
-
-Instead of asking a fake person (called the enterer) to try exiting:
-	if the holder of the enterer is not synth-like:
-		continue the action;
-	try ushering the enterer off the holder of the enterer.
-
-To say ushertake (creature - a person):
-	say "[The creature] [are] unwilling to be carried, but [we] [one of]carefully [or]gently [or][at random][one of]help[or]usher[or]lead[at random] [regarding creature][them]".
-
-Sanity-check taking a fake person which is on the programmable dais:
-	unless the player is on the programmable dais or the noun is portably-small or the noun is not touchable:
-		now the noun is in location;
-		say "[ushertake noun] down from the dais.";
-		stop the action.
-
-Sanity-check removing a fake person from the programmable dais:
-	unless the noun is not touchable or the noun is portably-small:
-		now the noun is in location;
-		say "[ushertake noun] down from the dais to the floor.";
-		stop the action.
-
-Sanity-check taking a fake person which is in the synthesizer:
-	unless the player is in the synthesizer or the noun is not touchable or the noun is portably-small:
-		now the noun is in location;
-		say "[ushertake noun] out of the synthesizer and down to the floor.";
-		stop the action.
-
-Sanity-check removing a fake person from the synthesizer:
-	unless the noun is not touchable or noun is portably-small:
-		now the noun is in location;
-		say "[ushertake noun] out of the synthesizer and down to the floor.";
-		stop the action.
-
-Sanity-check putting a fake person on a synth-like thing:
-	if the noun is in location and the noun is not portably-small:
-		try ushering the noun onto the second noun instead.
-
-Sanity-check inserting a fake person into a synth-like thing:
-	if the noun is in location and the noun is not portably-small:
-		try ushering the noun onto the second noun instead.
 
 Report something exiting when the actor is an animal and the container exited from is the t-inserter:
 	say "[The actor] [clamber] out of [the t-inserter]." instead.
@@ -284,7 +131,7 @@ An accessibility rule when the player is on the spinner:
 			try exiting;
 			make no decision.
 
-Section 3 - Animal Following
+Section 2 - Animal Following
 
 [Carry out entering the line:
 	now pursuing-state is true;
@@ -299,7 +146,7 @@ Carry out entering a vehicle in location:
 	rapidly make followers follow into noun;
 	now pursuing-state is false.
 
-Check a fake person entering a vehicle when the heft of the person asked is greater than 3:
+Check a fake person entering a vehicle when the heft of the person asked is greater than 4:
 	say "[The person asked] [make] an effort to get in, but [do] not remotely fit.";
 	stop the action.
 
@@ -314,10 +161,9 @@ Rule for writing a paragraph about a fake person which is in a car (called targe
 	say "Sitting in [the target] [is-are the list of fake people *in the target][if the number of fake people in the target is greater than 1], like players in a Marx Brothers movie[end if]. [paragraph break]"
 
 Carry out exiting:
-	unless the container exited from is synth-like:
-		now pursuing-state is true;
-		rapidly make followers try exiting from the container exited from;
-		now pursuing-state is false.
+	now pursuing-state is true;
+	rapidly make followers try exiting from the container exited from;
+	now pursuing-state is false.
 
 Carry out going:
 	now pursuing-state is true;
@@ -5148,9 +4994,9 @@ When Brock-argument begins:
 		now Brock carries the last-sign.
 
 Definition: a thing is it-derivative:
-	if it is the spill or it is a pita or it is the piece or it is a sign:
+	if it is the spill or it is the pita or it is the piece or it is a sign:
 		yes;
-	if it is proffered by the spill or it is proffered by a pita or it is proffered by the piece or it is proffered by a sign:
+	if it is proffered by the spill or it is proffered by the pita or it is proffered by the piece or it is proffered by a sign:
 		yes;
 	no.
 
@@ -6377,16 +6223,7 @@ description
 
 Guard-imminence is a scene. Guard-imminence begins when the programmable dais is in location and the atlantida-shellfish is enclosed by location. Guard-imminence ends in postponement when atlantida-refreshed is enclosed by location. [The design principle here is that the player is on a timer, but every time he succeeds at moving the plot forward, that timer is stopped and a new one starts. So it's never possible to fail a late-stage scene because of having taken too long in an earlier stage.]
 
-The trap can be set-for-guards.
-
-When Guard-imminence begins:
-	if there is an open trap in Oracle Project or there is an open trap in the surveillance room:
-		now the trap is set-for-guards;
-		the trap is discovered in 7 turns from now;
-
 Every turn during Guard-imminence:
-	if the trap is in location:
-		now the trap is not set-for-guards;
 	repeat through the Table of Severe Guard Warnings:
 		if there is a description entry:
 			unless the description entry is "":
@@ -6487,8 +6324,6 @@ return the rifle is an unlisted performative quip.
 	It quip-supplies atlantida-refreshed.
 
 Carry out going to the Surveillance Room during Atlantida-shooing:
-	if the trap is in Surveillance room and the trap is set-for-guards:
-		end game by running into guards;
 	now Atlantida-refreshed is in the Surveillance Room;
 	if the player is staid:
 		say "Atlantida follows, looking around sharply. Her expression when she sees the computers and television screens is wry, but she doesn't say anything. No time now, perhaps."
@@ -6522,27 +6357,7 @@ Portcullis-threat is a scene. Portcullis-threat begins when Atlantida-shooing en
 Portcullis-threat ends in freedom when the location is Precarious Perch.
 
 When Portcullis-threat begins:
-	say "Someone is coming into the workshop upstairs. There's at most a few seconds before they'll be down the tunnel.";
-	now the trap is set-for-guards;
-	if there is an open trap in Oracle Project:
-		the trap is discovered in 1 turn from now;
-	if there is an open trap in the surveillance room:
-		the trap is discovered in 2 turns from now;
-	if there is an open trap in the tunnel through chalk:
-		the trap is discovered in 3 turns from now.
-
-At the time when the trap is discovered:
-	if the trap is set-for-guards:
-		let N be "[the holder of the trap]";
-		let N be N in lower case;
-		now the trap is closed;
-		say "'What's this?' [we] hear a faint voice say from the general direction of [N]. Then there is a loud snap. We flinch, but the blood-curling scream never comes. 'Good thing you didn't step into that' another voice says, followed by some nervous laughter."
-
-Table of Ultratests (continued)
-topic	stuff	setting
-"guardtrap"	{ trap, tub, jack }	Personal Apartment
-
-Test guardtrap with "tutorial off / establish / unlegend / wait / purloin rifle / shoot gel rifle at atlantida"
+	say "Someone is coming into the workshop upstairs. There's at most a few seconds before they'll be down the tunnel."
 
 Instead of going to Private Solarium from Personal Apartment when Portcullis-threat is happening or Atlantida-shooing is happening:
 	if the player is hurrying:
@@ -6553,10 +6368,6 @@ Instead of going to Private Solarium from Personal Apartment when Portcullis-thr
 	otherwise:
 		say "The guards are coming down the tunnel right now. [We] should find a way to delay them."
 
-Check going to the Oracle Project during Atlantida-shooing:
-	if the trap is in Oracle Project and the trap is set-for-guards:
-		end game by running into guards.
-
 Check going to the Tunnel from Personal Apartment when Portcullis-threat is happening:
 	end game by running into guards.
 
@@ -6565,7 +6376,7 @@ To end game by running into guards:
 	abide by the game-ending rule.
 
 When Portcullis-threat ends in capture:
-	say "The guards arrive. [if there is an open trap in location]The first to enter stops just as she is about to step into the trap, and then proceeds to spring it with her rifle. [end if][We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
+	say "The guards arrive. [We] [are] captured and taken away for interrogation, and it's some time before Atlantida is able to arrange for our release.";
 	abide by the game-ending rule.
 
 When Portcullis-threat ends in delay:

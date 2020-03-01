@@ -105,8 +105,7 @@ When play begins (this is the setting proffered rule):
 	now the mechanic is not proffered by anything;
 	now the garbage proffers the mechanic;
 	now the pocket-bread is not proffered by anything;
-	now the pocket-bread is proffered by a random pita (called P);
-	now P is real;
+	now the pocket-bread is proffered by the pita;
 	now the honey triangle is not proffered by anything;
 	now the honey triangle is proffered by the baklava;
 	now the crossword is not proffered by anything;
@@ -140,13 +139,18 @@ A thing can be fake or real. A thing is usually real.
 
 When play begins (this is the setting real and fake rule):
 	now every thing enclosed by the repository is fake;
+	now the trash is real;
 	now the pearl is real;
+	now the pita is real;
+	now the pastis is real;
+	now the brown tee is real;
+	now the paper is real;
+	now the weight is real;
 	now patsy-woman is real;
 	now Brock is real.
 
 [Definition: a thing is discovered if it is fake and it is seen.]
 
-The setting real and fake rule is listed before the setting proffered rule in the When play begins rules.
 
 Section 3 - Concreteness
 
@@ -210,10 +214,7 @@ Carry out involuntarily-dropping something which is not a person:
 	now the noun is handled.
 
 Carry out involuntarily-dropping:
-	if the player is on the spinner or the player is in the T-inserter:
-		now the noun is in the location;
-	otherwise:
-		try silently dropping the noun; [this is better than just moving to the location because it copes with cases where the thing needs to land in a vehicle or supporter.]
+	try silently dropping the noun; [this is better than just moving to the location because it copes with cases where the thing needs to land in a vehicle or supporter.]
 	if the player carries the noun:
 		stop the action.
 
@@ -238,13 +239,13 @@ Report involuntarily-dropping a cat:
 
 To say fall-receiver:
 	let H be the holder of the player;
-	if H is the location or H is the spinner or H is the T-inserter:
+	if H is the location:
 		say "[ground]";
 	otherwise:
-		if the H is a car:
+		if H is a car:
 			say "[H] floor";
 		otherwise:
-			say "[H]".
+			say the printed name of H.
 
 Section 5 - Length and Strength
 

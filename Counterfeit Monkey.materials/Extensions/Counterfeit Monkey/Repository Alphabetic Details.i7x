@@ -305,14 +305,11 @@ Report waving the letter-remover at the boar:
 Boar Mating is a recurring scene. Boar mating begins when the boar is enclosed by location and the suid is enclosed by location. Boar mating ends in disappointment when the boar is enclosed by location and the suid is not enclosed by location. Boar mating ends in death when the boar is marked invisible.
 
 Every turn during Boar Mating:
-	say "[one of]The boar [if the roc is not in location]looks at [us] unpleasantly, but then [otherwise]seems to forget all about [us] and the roc, as [end if]the pleasing scent of the [suid] attracts it instead[or]The boar is circling the suid, as near as it can in this awkward space[or][one of]The boar follows the suid around, its nose at her butt[or]The suid is trying to walk away from the boar[or]The boar makes an attempt to mount the suid, but slips on the sand[or]The suid squeals indignantly and walks away from the boar, who follows[at random][stopping]."
+	say "[one of]The boar looks at [us] unpleasantly, but then the pleasing scent of the [suid] attracts it instead[or]The boar is circling the suid, as near as it can in this awkward space[or][one of]The boar follows the suid around, its nose at her butt[or]The suid is trying to walk away from the boar[or]The boar makes an attempt to mount the suid, but slips on the sand[or]The suid squeals indignantly and walks away from the boar, who follows[at random][stopping]."
 
 [The boar attack is based on several accounts of real life attacks in which the boar repeatedly rushed the victim (often unprovoked), gashing in several places. The most serious wounds generally are abdominal wounds inflicted after the boar has knocked the victim down. It would be more true to life if the boar also left gashes in the protagonist's leg in the process of knocking her down, but I decided to skip that because I didn't want to deal with a game state in which the protagonist was wounded but not dead: it would have needlessly complicated the writing of the end-game to no interesting narrative effect.]
 
-Boar Attack is a recurring scene. Boar Attack begins when the boar is enclosed by location and the suid is not enclosed by location and the roc is not enclosed by location. Boar Attack ends in relief when the boar is marked invisible. Boar attack ends in distraction when the boar is enclosed by location and the suid is enclosed by location. Boar Attack ends in fear when the roc is marked-visible. Boar Attack ends in death when the time since Boar Attack began is greater than 2 minutes.
-
-When Boar Attack ends in fear:
-	say "The boar stops abruptly at the sight of the roc."
+Boar Attack is a recurring scene. Boar Attack begins when the boar is enclosed by location and the suid is not enclosed by location. Boar Attack ends in relief when the boar is marked invisible. Boar attack ends in distraction when the boar is enclosed by location and the suid is enclosed by location. Boar Attack ends in death when the time since Boar Attack began is greater than 2 minutes.
 
 Every turn during Boar Attack:
 	if the boar is not in location:
@@ -329,7 +326,7 @@ Every turn during Boar Attack:
 
 Table of Boar Attacks
 description
-"The boar gives us a very nasty kind of look, and then [--] without any provocation, I'm sure [--] starts running right at us[if the player is in the kayak], even into the surf[end if][if there is an open trap in location] (nimbly avoiding the trap)[end if]."
+"The boar gives us a very nasty kind of look, and then [--] without any provocation, I'm sure [--] starts running right at us[if the player is in the kayak], even into the surf[end if]."
 "The boar just barely misses giving us a long gash in [if the player is in the kayak]the stomach[otherwise]the thigh[end if], but it wheels around for another attempt. If it knocks us down, I am not too hopeful about our experience with those tusks."
 "I try to get us out of the way in one direction, you in another, and the result is that the boar knocks [if the player is in the kayak]the kayak over[otherwise]us flat[end if] with the butt of its head. It stands over us snorting."
 
@@ -341,11 +338,6 @@ Instead of jumping during Boar Attack:
 	say "[We] do our best to get out of the way."
 
 Some tusks are part of the boar. The description of the tusks is "Let's not find out anything more personal about them."
-
-Boar Hiding is a recurring scene. Boar hiding begins when the boar is enclosed by location and the roc is enclosed by location and the suid is not marked-visible. Boar hiding ends in attack when the boar is marked-visible and the roc is not enclosed by location. Boar hiding ends in distraction when the suid is marked-visible. Boar hiding ends in relief when the boar is marked invisible.
-
-Every turn during Boar Hiding:
-	say "[one of]The boar looks at [us] unpleasantly, but the roc flaps it wings and steps between [us] and the boar[or]The roc is pacing back and forth in front of the boar, which squeals with fear[or]The boar takes a tentative step toward [us], but one stern look from the roc makes it turn on the spot[cycling]."
 
 The board is a thing. The description of the board is "It's a fairly generic plank [--] sort of pine, by the looks of it, though constructed things tend to be a little vague on niceties such as species [--] and looks like it's designed to be part of a new deck or somesuch thing." The board is long.
 	The scent-description of the board is "raw wood".
@@ -437,24 +429,6 @@ The camembert is an edible thing. The description of the camembert is "A rich, s
 	The scent-description of the camembert is "cheese rind".
 	Sanity-check cutting the camembert:
 		say "A notch in the flesh of the camembert exposes the yellowish creamy interior." instead.
-
-Every generic-cap covers the head area. The description of a generic-cap is "A black sports cap with the logo of my father's fav[our]ite soccer team The Atlantis Cuttlefish.". The printed name of a generic-cap is "cap". Understand "cap" or "sports" or "logo" or "cuttlefish" as a generic-cap. The scent-description of a generic-cap is usually "sweat and hair wax".
-
-The description of an alterna-cap is "A small plastic snap cap that looks like it used to sit on a tube or bottle of some kind."
-
-Understand "cap" or "plastic" and "snap" as an alterna-cap. The printed name of alterna-cap is "cap".
-
-Sanity-check putting an alterna-cap on the tube:
-	say "The cap doesn't fit. It must belong to a different tube." instead
-
-Sanity-check putting an alterna-cap on the bottle of vodka:
-	say "The vodka bottle already has a cap." instead
-
-Sanity-check putting an alterna-cap on the bottle of ouzo:
-	say "The ouzo bottle already has a cap." instead
-
-Sanity-check putting an alterna-cap on an contained fluid thing (called current bottle):
-	say "[The current bottle] already [have] [if the current bottle is plural-named]caps[otherwise]a cap[end if]." instead.
 
 The description of the cartage is "'Cartage' here takes the form of an invoice for the transport of farm products by cart."
 
@@ -762,8 +736,6 @@ The description of the counterweight is "A very substantial hunk of metal with a
 
 The description of the countertop is "The result is a slab of good black granite, shiny and easy to clean, with a pre-cut hole, probably where a kitchen sink would be meant for installation." The heft of the countertop is 8.
 
-The description of a CPU is "A central processing unit, the brains of pretty much every modern device. This one is stamp-sized, with rows of tiny legs on every side.". Understand "processing" or "central" or "unit" or "legs" as a CPU.
-
 The cratering is r-abstract. The indefinite article is "some". The heft is 0. The description is "It's an image, light as air, of the moon and the craters on it."
 
 The crew-group is a privately-named plural-named person. The description of the crew-group is "Five (or six? it's extremely hard to count) swarthy sailors. They look buff and burly and have very thick eyebrows." The heft of the crew-group is 6.  The printed name of the crew-group is "crew". Understand "crew" as the crew-group.
@@ -794,8 +766,6 @@ Carry out switching off a CRT:
 The description of the crumb is "It's just one tiny little flake from a croissant or pastry."
 
 The description of the cud is "It's best not to look too closely.". The scent-description is "grassy manure".
-
-The description of a generic-cup is "A black porcelain coffee cup, bearing the logo of my father's fav[our]ite soccer team The Atlantis Cuttlefish.". The printed name of a generic-cup is "cup". Understand "cup" or "coffee" or "black" or "porcelain" or "logo" or "cuttlefish" as a generic-cup.
 
 The curd is edible. The description of the curd is "A soft white clump of cheese substance."
 
@@ -1239,15 +1209,6 @@ An ill is r-abstract. The description of an ill is usually "It manifests as a li
 
 Periodically it gains cartoonish eyes and eyebrows, and glowers at [us]."
 
-The in-object is r-abstract. The printed name is "in". The description is "It represents the idea of having a connection or a way in to a normally closed institution. What my father would call networking and Slango would call nepotism, and my mother would have no name for at all because to her it is the normal way of the world everywhere.
-
-At the moment, this concept is embodied as a pair of giant hands clasped in a handshake."
-
-A dangerous construction rule for the in-object:
-	say "True to its nature, the in pulls [us] in like a moth to a flame, then crushes [us] to pulp in its firm grasp.";
-	end the story saying "At least [we] [are] truly in now";
-	rule succeeds.
-
 The description of the inapt sign is "The sign reads WARNING: [one of]DO NOT CLIMB DOME DURING THUNDERSTORM[or]WATCH OUT FOR BEARS[or]CARS PARKED WITHOUT A STICKER WILL BE TOWED AT OWNER'S EXPENSE[or]MUSHROOMS MAY BE POISONOUS[at random]."
 
 The inapt sin is r-abstract. The heft of the inapt sin is 0. The description of the inapt sin is "It displays a very puritanical man praying on a street corner: the sin of spiritual pride, perhaps."
@@ -1434,13 +1395,6 @@ The louse is an insect. The heft of the louse is 1. Understand "lice" as the lou
 
 Section 8 - M through O
 
-The description of a ma is "She's a Norman Rockwell figure: smiling in her apron, trying to keep up a perfect appearance while visibly exhausted from all her housework. Doesn't actually come with a child attached." Understand "figure" or "apron" as a ma.
-	The scent-description of a ma is "soap".
-
-The description of a mama is "Like a ma, only longer ago: not Norman Rockwell, but a Victorian Mama, in a long dark dress hiding a corset, her hair in a tight bun at the back of the neck." Understand "dress" and "corset" and "lady" and "bun" as a mama.
-	The greeting of a mama is "'Well, hello to you, Ma'am,' says the mama."
-	The scent-description of a mama is "carbolic soap".
-
 The description of the mag is "It's a glossy magazine for photography enthusiasts on the island. There's a several page spread of tilt-shift images of the harbor, making it all look like a child's toy set." Understand "magazine" as the mag.
 
 The description of the mall figurine is "It's a painted porcelain representation of a shopping mall. Delicate brushwork delineates the spaces in the parking lot, and the pharmacy sign has been modeled with special care." The mall figurine is fixed in place.
@@ -1461,11 +1415,6 @@ Mary is a proper-named woman. The description is "She's wearing a blue robe and 
 The description of a May is usually "This is the sheet for the month of May, torn from a calendar. Someone has put a gold star on the 21st, and 'Dinner with the Shaplys' is penciled onto the 30th." The heft of the May is usually 1.
 
 Meg is a proper-named woman. The description of Meg is "She's in her mid-sixties, with salt-and-pepper hair and a dry, rather sardonic smile."
-
-The printed name of me-object is "me". Understand "me" as the me-object. The description of the me-object is "It's an abstract that looks like a bit of mirror. When I look at it I see Alex, my proper self, and not just restored to my usual body, but photo-retouched to be that bit smarter and freer of skin-blemishes, well-dressed. It's like looking in the mirror at reality as it should be.
-
-You doubtless see yourself too [--] as you are, or perhaps as you want to be." The me-object is r-abstract.
-
 
 The description of the member is "It is a figure of a member of the Committee to Establish an Orthodox Orthography. It is plastic, small enough to sit on our palm, and wears the stiff clothing and conservative hairstyle of about 1895. It looks slightly cross, as though the member has guessed its work would take another 15 years to complete."
 
@@ -1724,7 +1673,7 @@ The description of a pa is "He's a Norman Rockwell figure: gruff, upstanding, ho
 	The scent-description of a pa is "shaving cream".
 	The greeting of a pa is "'Hello there, young lady,' says the pa."
 
-Rule for writing a paragraph about a pa (called item):
+Rule for writing a paragraph about a pa (called item) when item is in location:
 	say "[The item] you summoned is standing nearby, looking slightly confused";
 	let N be the number of pas in location - 1;
 	if N is 1:
@@ -1732,21 +1681,10 @@ Rule for writing a paragraph about a pa (called item):
 	otherwise:
 		if N is greater than 1:
 			say ". Next to him are [N in words] other pas";
-	let P be the number of plural-pas in location;
-	if P is greater than 1:
-		say ". Next to [if N > 1]them[otherwise]him[end if] are [P in words] entire groups of pas, standning separate";
-	otherwise:
-		if P is 1:
-			say ". Next to [if N > 1]them[otherwise]him[end if] is a group of pas, standning separate";
-	now every plural-pas in location is mentioned;
 	now every pa in location is mentioned;
 	say ".[paragraph break]".
 
 After reading a command (this is the replace plurals rule):
-	if the player's command includes "pas" and there is a plural-pas enclosed by location:
-		replace the matched text with "plural-pas";
-	if the player's command includes "pa" and there is a plural-pas enclosed by location and there is a pa enclosed by location:
-		replace the matched text with "pa-singular";
 	if the player's command includes "tents" and there are some plural-tents enclosed by location:
 		replace the matched text with "plural-tents";
 	if the player's command includes "tent" and there are some plural-tents enclosed by location and there is a tent enclosed by location:
@@ -1772,40 +1710,6 @@ Table of Ultratests (continued)
 topic	stuff	setting
 "pas"	{ secret-plans, soap, tub }	Roget Close
 "pa"	{ secret-plans, soap, tub }	Roget Close
-
-The description of some plural-pas is "A whole fleet of gruff, upstanding, fatherly men." The printed name of a plural-pas is "pas". Understand "pas" or "pa" or "group" or "groups" or "fleet" as the plural-pas.
-	The scent-description of some plural-pas is "shaving cream".
-	The greeting of some plural-pas is "'Hello there, young lady,' one of them replies."
-
-Rule for writing a paragraph about some plural-pas (called item):
-	say "[The item] you summoned are standing nearby, looking slightly confused";
-	let N be the number of plural-pas in location;
-	if N is 2:
-		say ". Next to them is another group of pas";
-	now N is the number of pas in location;
-	if N is greater than 1:
-		say ". Next to them are [N in words] single pas, standning separate";
-	otherwise:
-		if N is 1:
-			say ". Next to them is a single pa, standning separate";
-	now every plural-pas in location is mentioned;
-	now every pa in location is mentioned;
-	say ".[paragraph break]".
-
-Rule for printing the plural name of plural-pas:
-	say "groups of pas".
-
-Instead of subject-asking when the current interlocutor is a plural-pas:
-	say "'Huh,' one of them says, in a gruff pre-occupied way."
-
-Instead of kissing plural-pas:
-	say "[one of][We] plant a kiss on the slightly stubbled cheek of one of them. He reddens.[or][We] lean in for another, but they dodge.[or]Would you take off[ense] if I mentioned I find this all a bit uncomfortable?[or]They clearly do not want our girlish affections.[stopping]".
-
-Instead of attacking plural-pas:
-	say "If it came to a fight, they would win easily."
-
-Report involuntarily-dropping plural-pas:
-		say "[The noun] are very heavy, and some of them wind up (before their transformation is complete) stepping on our feet, then scrambling away (with apologies)." instead.
 
 [The description of PARC is "Palo Alto Research Center [--] tons and tons of 1970s-era high-tech plastic, steel, and concrete. At least the carp didn't turn into crap." The heft of PARC is 1000. The scent-description of PARC is "burnt electronics dust".]
 
@@ -2382,16 +2286,7 @@ Some pit-items are a thing. The description of the pit-items is "Assorted stones
 
 Understand "pits" as the alterna-pits. The alterna-pits are a fixed in place container. The printed name of the alterna-pits is "pits". The description of the alterna-pits is "It's a number of cavities in the surface of [the holder of the item described], all of them too small for our body to fit into."
 
-The description of a pita is "A round, brown pocket-bread." The scent-description of a pita is "baked goods". Rule for printing the plural name of pita: say "pita".
-
-Table of Ultratests (continued)
-topic	stuff	setting
-"pita"	{ pocket-bread, tub, secret-plans, monocle, as-coin, piece, pearl, wrap, ball, ring, bright yellow sign, last-sign }	Public Convenience
-
-Test pita with "tutorial off / autoupgrade / powerup / wear monocle / wave a-remover at soap dispenser / squeeze dispenser / get sop / wave k-remover at sink / wave k-remover at sink / get sin / get sin / gonear Sensitive Equipment Testing Room / put sop in t-inserter / wave s-remover at stop / test gun-ownership / shoot top / get pot / wave e-remover at piece / put pic in t-inserter / wave c-remover at pict / get pit / wave w-remover at wrap / shoot rap / get par / wave n-remover at ring / put rig in t-inserter / shoot trig / wave r-remover at grit / wave g-remover at git / get it / put sin in t-inserter / wave s-remover at stint / wave n-remover at tint / wave t-remover at tit / put i in t-inserter / wave t-remover at tit / put i in t-inserter / get it / put sin in t-inserter / wave s-remover at stint / wave n-remover at tint / wave t-remover at tit / put i in t-inserter / wave t-remover at tit / put i in t-inserter / get it / wave l-remover at ball / put ba in t-inserter / get bat / wave g-remover at sign / put sin in t-inserter / wave s-remover at stint / wave n-remover at tint / wave t-remover at tit / put i in t-inserter / wave t-remover at tit / put i in t-inserter / get it / wave g-remover at sign / put sin in t-inserter / wave s-remover at stint / wave n-remover at tint / wave t-remover at tit / put i in t-inserter / wave t-remover at tit / put i in t-inserter / get it / gonear Generator Room / put bat in bucket / put bet in bucket / wave b-remover at bit / 1 / get it / switch switch / put pot in bucket / put pit in bucket / put pet in bucket / wave t-remover at pat / put pit in bucket / put pet in bucket / wave t-remover at pat / gel as / wave i-remover at pastis / wave s-remover at pasts / wave t-remover at pat / unlegend / w / wave r-remover at pearl / wave e-remover at peal / wave l-remover at pal / wave s-remover at plans / wave l-remover at plan / wave n-remover at pan / put pa and it on dais / synthesize / get pita / put pa and it on dais / 2 / synthesize / get pita / put pa and it on dais / 2 / synthesize / get pita / wave r-remover at par / put pa and it on dais / 2 / synthesize / get pita / put pa and it on dais / 2 / synthesize / get pita "
-
-Does the player mean waving the letter-remover at the bright yellow sign:
-	it is very likely.
+The pita is an edible thing. The description of the pita is "A round, brown pocket-bread." The scent-description of the pita is "baked goods".
 
 The pit-trap is an open enterable container. It is fixed in place. The heft of the pit-trap is 8. The printed name of a pit-trap is "pit trap". Understand "pit" or "trap" or "deep pit" or "rocks" or "stones" or "stakes" or "sharpened" or "stake" as a pit-trap. The description of a pit-trap is "It's a deep pit lined with rocks, set into the surface of [the holder of the item described]. Sharpened stakes jut upward from the bottom, ready to stab any large mammal unfortunate enough to fall in."
 
@@ -2725,21 +2620,10 @@ Section 13 - Pr - Pz
 
 The description of the preamp is "It looks like just one specimen from the group from which you were working."
 
-The description of a PTA is "About a half-dozen soccer moms in sensible shoes, and a lone father, who looks bemused." A PTA is noisy. Understand "soccer moms" or "moms" or "shoes" or "lone" or "father" as a PTA.
+The PTA is an ambiguously plural person. The description of the PTA is "About a half-dozen soccer moms in sensible shoes, and a lone father, who looks bemused." The PTA is noisy. Understand "soccer moms" or "moms" or "shoes" or "lone" or "father" as the PTA.
 
-Instead of listening to a PTA:
+Instead of listening to the PTA:
 	say "[one of]The PTA members are currently debating whether it is appropriate to include pre-English-language history of Atlantis in the curriculum[or]One of the PTA members is currently arguing to eliminate the story of the Tower of Babel from the literature curriculum on the grounds that it is unduly traumatic for the young[or]The PTA members are working out a bake-sale roster to pay for fresh copies of the New Orthodox Orthography to be placed in the school library[or]One PTA mother is explaining why she felt her daughter should have been given the part of the letter Y in the school play[at random]."
-
-Rule for writing a paragraph about a PTA (called item):
-	say "[The item] you summoned is nearby, engaged in lively debate";
-	let N be the number of PTAs in location - 1;
-	if N is 1:
-		say " with the other PTA next to them";
-	otherwise:
-		if N is greater than 1:
-			say " with one of the other [N in words] PTAs here";
-	now every PTA in location is mentioned;
-	say ".[paragraph break]".
 
 The pun is r-abstract. The heft of the pun is 0. The description of a pun is "Currently the pun reads '[one of]Atheism is a non-prophet organization[or]The butcher backed up into the meat grinder and got a little behind in his work[at random].'"
 
@@ -4123,7 +4007,7 @@ The description of the toy rug is "It is a tiny but intricately woven oriental r
 
 The track is long and strong. The description of the track is "It's a piece of the old tramcar track that used to run up Long Street from the docks. The original has mostly been pulled up now, of course, but there are still a few bits in the street. This length is about a half [if the player wears the britishizing goggles]metre[otherwise]meter[end if] long. And heavy." The heft of the track is 3.
 
-The description of a tram is "A toy model of one of the old-style trams that used to putt up Long Street from the docks back in the 20s and 30s. It is olive-col[our]ed and very detailed, with wood flooring and sideboards, and carries a tiny advertisement for ladies['] hair rinse on the side." The heft of a tram is 1.
+The description of a tram is "One of the old-style trams that used to putt up Long Street from the docks back in the 20s and 30s. It is olive-col[our]ed, with wood flooring and sideboards, and carries an advertisement for ladies['] hair rinse on the side." The heft of a tram is 8.
 
 The description of the tramcar is "One of the old-style trams that used to putt up Long Street from the docks back in the 20s and 30s. This one is full-size. It is olive-col[our]ed, with wood flooring and sideboards, and carries an advertisement for ladies['] hair rinse on the side.". The heft of the tramcar is 8. The tramcar is an enterable container.
 
@@ -4166,21 +4050,10 @@ Sanity-check opening the trap:
 	if the trap is open:
 		make no decision;
 	if the trap is not in location:
-		say "It would be difficult, not to mention unsafe, to try to set the trap when it's anywhere but on the [ground]." instead;
-	if Boar Attack is happening:
-		say "[one of][We] briefly struggle to get the trap open, but the boar goes straight for [us] and [we] have to run[or][We] [are] not going to try that again[stopping]." instead;
-	if the location is nautical:
-		say "In this cramped space, one of our friends is going to step on the trap, if [we] don't do it first." instead.
+		say "It would be difficult, not to mention unsafe, to try to set the trap when it's anywhere but on the [ground]." instead.
 
 Report opening the trap:
-	say "[We] apply a great deal of pressure to the levers of the trap and finally manage to get the jaws open";
-	if Atlantida-woman is in location:
-		say ".[paragraph break]'Did you really expect me to walk into that?' Atlantida asks, with genuine surprise in her voice." instead;
-	if further guards is happening or guard-imminence is happening or portcullis-threat is happening or atlantida-refreshed is in location:
-		say ". I really don't want to think about what will happen if somebody steps on it";
-	if atlantida-refreshed is in location:
-		say ".[paragraph break]'That seems brutal,' Atlantida remarks";
-	say "." instead.
+	say "[We] apply a great deal of pressure to the levers of the trap and finally manage to get the jaws open." instead.
 
 Sanity-check taking the open trap:
 	say "[We] don't want to get our hand anywhere near the trap while it's still set to spring." instead.

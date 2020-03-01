@@ -29,8 +29,6 @@ A bat is a kind of neuter animal.
 A bet is a kind of thing.
 A bit is a kind of thing.
 A bot is a kind of thing.
-A generic-cap is a kind of floppy wearable thing.
-An alterna-cap is a kind of thing.
 A carp is a kind of thing. [not "a kind of animal" because you get a dead carp]
 Some carpi are a kind of plural-named thing.
 A cat is a kind of neuter animal.
@@ -43,15 +41,12 @@ A chert is a kind of thing.
 A chat is a kind of thing.
 A cod is a kind of thing.
 A cot is a kind of clothed bed.
-A CPU is a kind of thing.
 A CRT is a kind of device.
-A generic-cup is a kind of container.
 An eel is a kind of thing. [not "a kind of animal" because you get a dead eel]
 A git is a kind of man.
 A hairpiece is a kind of wearable thing.
 A hart is a kind of neuter animal.
 A hat is a kind of thing.
-[An in-object is a kind of thing. ["in"] The printed name of an in-object is "in". Understand "in" as an in-object.]
 An ink is a kind of thing.
 An ill is a kind of thing.
 An it-object is a kind of thing. ["it"]
@@ -59,8 +54,6 @@ A lee is a kind of container.
 [A mart is a kind of thing.]
 A mat is a kind of supporter. A mat is usually portable.
 A May is a kind of thing.
-A ma is a kind of woman.
-A mama is a kind of woman.
 A net is a kind of container.
 A nit is a kind of thing.
 An ode is a kind of thing.
@@ -69,17 +62,14 @@ A self-object is a kind of thing. ["I"]
 A pa is a kind of man.
 A par is a kind of thing.
 A part is a kind of thing.
-Some plural-pas are a kind of plural-named man.
 A pat is a kind of thing.
 Some pat-items are a kind of thing.
 A pet is a kind of neuter animal.
 A pi-object is a kind of thing. ["pi"]
 A pit is a kind of thing.
 A pit-hole is a kind of container. The printed name of a pit-hole is "pit".
-A pita is a kind of edible thing.
 A pot is a kind of container.
 An alterna-pot is a kind of vegetable.
-A PTA is a kind of ambiguously plural person.
 A Ra is a kind of man.
 A ram is a kind of neuter animal.
 A rap is a kind of thing.
@@ -114,7 +104,7 @@ A TNT is a kind of thing.
 A top-toy is a kind of thing.
 A tot is a kind of woman.
 A tote-bag is a kind of container.
-A tram is a kind of thing.
+A tram is a kind of vehicle.
 A yam-cart is a kind of cart.
 [A yam is a kind of vegetable.] [* The yam kind is actually defined earlier because we need one for the farmer to be carrying, as well.]
 
@@ -172,10 +162,10 @@ The repository contains an ale, an applet, a lappet, a tale, a tamale, and a tat
 [army]
 
 The repository contains Amy, an arm,
-	a ram, a yam, a May, a ma, a Mary, [anagram]
+	a ram, a yam, a May, a Mary, [anagram]
 	a tram, [t-insert]
 	[a mart,] [anagram]
-	an art, a mat, a mama, [derive]
+	an art, a mat, [derive]
 	a tart, an alterna-tart, [t insert]
 	a rat, a tar. [anagram]
 
@@ -185,7 +175,6 @@ The repository contains a cat-mayor.
 [as]
 
 In the repository are a pastis, a pass, some pasts, a pat, an ass, and a pa, [removals]
-	a pita, [pa + it-object from e.g. sink->sin->stint->tint->tit->i->it] a PTA,
 	some pestos, some pests, a pet. [vowel rotator]
 	[a zoo.] [reverse hard mode cryptolock]
 
@@ -336,7 +325,7 @@ The repository contains a rate, a cate, a rat, a cat,
 The repository contains a single ream, a ram, Ra,
 	a tram, a rat, [t-insert derivatives]
 	a tam, [derive insertables]
-	a mare, [a mart,] a tar, an art, a mat, a ma, [anagram all]
+	a mare, [a mart,] a tar, an art, a mat, [anagram all]
 	a tart, an alterna-tart. [t-insert]
 
 [crumbs]
@@ -401,7 +390,7 @@ The repository contains a garage. [the garbage]
 The repository contains a mug, [anagram/spinner]
 	a mu, [letter-removal]
 	a mut and a mutt, [t-insertion]
-	a mat, a Matt, a ma, a mama, a gam, a mag, a Meg, a me-object, a gem.  [vowel-rotation]
+	a mat, a Matt, a gam, a mag, a Meg, a gem.  [vowel-rotation]
 
 [gimlet]
 
@@ -420,8 +409,6 @@ In the repository is a baklava.
 
 [horses]
 In the repository are some hoses, a hoe, and a ho.
-
-In the repository is an in-object.
 
 [inciting fable]
 In the repository is a filing cabinet.
@@ -540,7 +527,6 @@ In the repository is a pearl.
 [pearl]
 
 In the repository are an earl, a perl, a peal, an ear, a pal, a pea, a par, a pa,
-	a pita, [pa + it-object from e.g. sink->sin->stint->tint->tit->i->it] a PTA,
 	a pie, a pier, a poi, [vowel rotation]
 	a petal, a tear, an alterna-tear, a peat, a part, a pat, [t-insert derivatives]
 	a tar, a pet, an art, [derive insertions]
@@ -563,7 +549,7 @@ In the repository is a larger-pin.
 In the repository are a piece-alternate, [homonym]
 	a pic, a pi-object, a self-object,
 	a Pict, a pit, an it-object, a tit, [t-insert derivatives]
-	a pot, a pat, a pa, a pita, [pa + it-object from e.g. sink->sin->stint->tint->tit->i->it] a PTA,
+	a pot, a pat, a pa,
 	a tot, [vowel rotation]
 	a tip, [anagrams]
 	an alterna-tit, [homonymy]
@@ -595,8 +581,7 @@ In the repository are some iron-pans, a plan, an i-pan,
 	a snap, an alterna-snap, a nap, a splat, a tap, a spit, a spat, a tan, [anagram all]
 	a sap, a slat, [derive anagrams]
 	a pet, a pot, an alterna-pot, a ten-object, an Ent, [vowel rotation]
-	a spa, a pa, some plural-pas, an as, [derive derivatives]
-	a pita, [pa + it-object from e.g. ball->ba->bat->bet->bit] a PTA,
+	a spa, a pa, an as, [derive derivatives]
 	a salt, a top-toy, a net. [anagram derivatives]
 
 [polling charts]
@@ -743,9 +728,7 @@ The repository contains a mall figurine.
 [soap]
 
 The repository contains a sap, a sap-liquid, a sop,
-	a pa, a pita, a PTA, a pit,
-	some plural-pas, an as, [spinner]
-	a stop, some pat-items, [t-insert derivatives]
+	a pa, a stop, some pat-items, [t-insert derivatives]
 	a top-toy, [derive insertions]
 	some plural-pots, a spot, a pot, an alterna-pot. [anagram all]
 
@@ -858,12 +841,12 @@ The repository contains a rap, a clothing-wrap,
 	a trap, [t-insert derivatives]
 	a tap, [a war-object,] [derive insertions]
 	a par, a part, a pat, [anagram all]
-	a pa, a pita, [pa + it-object from e.g. sink->sin->stint->tint->tit->i->it] a PTA,
+	a pa,
 	[a wart-object,] [t-insert derivatives]
 	a pet, a pit, a pot, an alterna-pot. [vowel-rotation]
 
 [yam]
-The repository contains an Amy and a May and a ma and a yam-cart. [yam + cart]
+The repository contains an Amy and a May.
 
 [yellow paint lettering]
 The repository contains an elegantly winter pilot.
@@ -915,10 +898,7 @@ The repository contains a bandit and a bandage.
 The repository contains some basins, a basis, a bass, a bass-fish, a ba.
 
 [car]
-The repository contains a carpet, 3 carpi, 3 carp, 3 generic-caps, 3 alterna-caps,
-3 CPUs, [PARC,] [anagrams from cup and carp]
-3 generic-cups. [reverse cryptolock cap]
-[a cop. [reverse cryptolock cup]]
+The repository contains a carpet, 3 carpi, 3 carp.
 
 [card]
 [The repository contains a cardboard.] [unreachable]
@@ -930,7 +910,7 @@ The repository contains a cartage.
 [Some camemberts and a]
 A camembert, a climate, and a catnap are in the repository.
 
-The repository contains a cat-army and a yam-cart. [anagrammed from cat-army]
+The repository contains a cat-army and two yam-carts. [anagrammed from cat-army and yam + cart]
 
 [char]
 A charring and a charlie are in the repository.

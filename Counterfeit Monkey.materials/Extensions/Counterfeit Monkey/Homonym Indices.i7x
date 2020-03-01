@@ -113,7 +113,6 @@ A huge-metal-arm has homonym index 108.
 A hundreds of people has homonym index 109.
 A ignition has homonym index 110.
 A ill has homonym index 111.
-The in-object has homonym index 112.
 A ink has homonym index 113.
 A invitation has homonym index 114.
 A island has homonym index 115.
@@ -285,7 +284,7 @@ The Model T has homonym index 280.
 The Nexami Engeo has homonym index 281.
 The Origin Paste has homonym index 282.
 [Oz has homonym index 283.]
-A PTA has homonym index 284.
+The PTA has homonym index 284.
 The Picard has homonym index 285.
 The Picross has homonym index 286.
 The Pict has homonym index 287.
@@ -606,7 +605,6 @@ The gas has homonym index 602.
 The spinner-gate has homonym index 603.
 The geas has homonym index 604.
 The gem has homonym index 605.
-The generic-cap has homonym index 606.
 The generic cocktail has homonym index 607.
 The genre apron has homonym index 608.
 The giant Atlantida statue has homonym index 609.
@@ -870,7 +868,7 @@ The pirate-crew has homonym index 866.
 The pit-items has homonym index 867.
 The pit-trap has homonym index 868.
 The pit-traps have homonym index 868.
-A pita has homonym index 869.
+The pita has homonym index 869.
 The plain white top has homonym index 870.
 The plain-plate has homonym index 871.
 The plan has homonym index 872.
@@ -1281,18 +1279,11 @@ An ignition has homonym index 1275.
 A tap has homonym index 1276.
 A bath has homonym index 1277.
 Yourself has homonym index 1278.
-Some plural-pas have homonym index 1279.
 An alterna-tear has homonym index 1280.
 The passkey-thing has homonym index 1281.
-A generic-cup has homonym index 1282.
-A CPU has homonym index 1283.
 [A cop has homonym index 1284.]
-An alterna-cap has homonym index 1285.
 The soap-sap-receptacle-supporter has homonym index 1286.
 The sop-dispenser has homonym index 1287.
-A ma has homonym index 1288.
-A mama has homonym index 1289.
-The me-object has homonym index 1290.
 The plural-ills have homonym index 1291.
 The alterna-pits have homonym index 1292.
 

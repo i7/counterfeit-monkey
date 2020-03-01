@@ -104,19 +104,6 @@ Section 3 - Custom game enders
 
 [Letter-remover]
 
-Check waving the letter-remover at the pants when the current setting of the letter-remover is "p":
-	if the letter-remover is not creature-enabled:
-		say "The pants flicker and there is a brief image of some ants in their place, but a legal override kicks in: a P-remover is hardware-crippled to prevent generating any living creature." instead;
-	otherwise:
-		say "[random-letter-removal-text]the pants turn into some ants. A huge amount of them, in fact, large and fire-red. They crawl [unless the player carries the pants]out of [the holder of the pants] and [end if]all over our body, giving us several painful stings.
-
-Did I never tell you about my fire ant allergy? My mother was always absurdly protective because I nearly died when I was two. I think that explains a few things about my personality.
-
-[We] can just hope the synthesis process has changed that about our body.
-
-Are those hives? I can't breathe; can you?";
-		end the story saying "[We] have succumbed to an allergen".
-
 Check waving the letter-remover at the massive plug when the current setting of the letter-remover is "l":
 	say "With a pleasant smell of puppies, the massive plug turns into a massive pug. Its wrinkly, short-muzzled face, curled tail and fine, glossy coat of fawn fur would be adorable if not for the fact that it is large enough to fill the entire room.
 
@@ -220,45 +207,31 @@ Unfortunately, having the towel swapped in for an electrical component starts a 
 [Cryptolock bucket]
 
 After inserting the ass into the cryptolock when hardness is true and the cryptoswitch is switched on:
-	say "There is a churning noise from within [the cryptolock] and 'zoo' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like giraffes, bison, zebras, elephants, panthers, a polar bear and other charismatic megafauna in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
-
-After inserting a generic-cup into the cryptolock when hardness is false and the cryptoswitch is switched on:
-	say "There is a churning noise from within [the cryptolock] and 'cop' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like an All-Purpose Officer through the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
+	cryptolock-refuse "zoo" instead.
 
 After inserting the dog into the cryptolock when hardness is false and the cryptoswitch is switched on:
-	say "There is a churning noise from within [the cryptolock] and 'dig' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like a huge dig. It's a large affair: not child's a dig in the garden or even an archaeological dig undertaken with shovels and picks, but a massive industrial dig, the kind that happens beneath a major American city that didn't have the foresight to put down subways in 1890 when it would have been cheaper.
-
-There's mud and stone and a cylindrical drilling machine five stories high. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
+	cryptolock-refuse "dig" instead.
 
 After inserting the pose into the cryptolock when hardness is false and the cryptoswitch is switched on:
-	say "There is a churning noise from within [the cryptolock] and 'pisa' appears in letters of vivid purple smoke. [We] catch a glimpse of what looks like a leaning tower through the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
+	cryptolock-refuse "pisa" instead.
 
 After inserting a tint into the cryptolock when hardness is true and the cryptoswitch is switched on:
-	say "There is a churning noise from within [the cryptolock] and 'ohio' appears in letters of vivid purple smoke. [We] get a confused impression of factories and battleground politics in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
+	cryptolock-refuse "ohio" instead.
 
 After inserting a tin-can into the cryptolock when hardness is false and the cryptoswitch is switched off:
-	say "There is a churning noise from within [the cryptolock] and 'ton' appears in letters of vivid purple smoke. [We] get a vision of a huge block of concrete in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
+	cryptolock-refuse "ton" instead.
 
 After inserting a tan into the cryptolock when hardness is false and the cryptoswitch is switched on:
-	say "There is a churning noise from within [the cryptolock] and 'tun' appears in letters of vivid purple smoke. [We] get a glimpse of a huge vat for wine in the smoke, about 250 gallons worth: the equivalent of three puncheons or four hogsheads or 14 rundlets. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result." instead.
+	cryptolock-refuse "tun" instead.
 
 After inserting the band into the cryptolock when hardness is false and the cryptoswitch is switched on:
-	say "[bund-refusal-text]." instead.
+	cryptolock-refuse "bund" instead.
 
 After inserting the bond into the cryptolock when hardness is false and the cryptoswitch is switched off:
-	say "[bund-refusal-text]." instead.
+	cryptolock-refuse "bund" instead.
 
-To say bund-refusal-text:
-	say "There is a churning noise from within [the cryptolock] and 'bund' appears in letters of vivid purple smoke. [We] get a vision of a huge earthwork embankment, designed to prevent oil repositories from bursting their banks and spilling into the surrounding waters. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result".
-
-After inserting a pat-items into the cryptolock when hardness is false and the cryptoswitch is switched off:
-	say "[pets-refusal-text]." instead.
-
-After inserting a pit-items into the cryptolock when hardness is false and the cryptoswitch is switched on:
-	say "[pets-refusal-text]." instead.
-
-To say pets-refusal-text:
-	say "There is a churning noise from within [the cryptolock] and 'pets' appears in letters of vivid purple smoke. [We] get a glimpse of a huge squirming mass of little furry creatures in the smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result".
+To cryptolock-refuse (X - some text):
+	say "There is a churning noise from within [the cryptolock] and '[X]' appears in letters of vivid purple smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result."
 
 [Synthesizer and programmable dais, set to synthesize]
 
@@ -343,21 +316,6 @@ This is the location-check rule:
 	if the location is the Language Studies Seminar Room:
 		say "An indicator message lights up: OVERRIDE: GENERATED OBJECT [object-name] EXCEEDS MAXIMUM SIZE LIMIT.";
 		the rule fails;
-
-A synthesis-override rule for an as:
-	if the-other-thing is a May:
-		say "Nice try, but the word 'Maya' is generally used as an unmarked plural, without distinction between singular and plural forms.";
-		the rule fails;
-	if the-other-thing is a pit or the-other-thing is a pit-hole:
-		say "Nice try, but the word 'pita' is generally used as an unmarked plural, without distinction between singular and plural forms.";
-		the rule fails;
-	if the-other-thing is a CRT:
-		now object-name is "CARTS";
-		abide by the location-check rule;
-		say "The programmable dais glows vibrant blue for five seconds, leaving behind some carts. An assortment of carts of different kinds and sizes: from horse-buggies and hospital gurneys to rickshaws and palanquins; some of them with beasts of draught attached, including a full-grown Indian elephant.
-
-Unfortunately, the carts are more than sufficient to bury [us] under their bulk.";
-		abide by the game-ending rule.
 
 This is the game-ending rule:
 	end the story saying "That could have gone better";
