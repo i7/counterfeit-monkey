@@ -74,6 +74,8 @@
 - If the player was inside a container, it would sometimes be printed twice or more in the room description header, such as "Back Alley (in the tent) (in the tent)."
 - The inventory comment "(really the smuggled plans in disguise)" would get lost if the disguised plans were synthesized into something else.
 - More objects are now highlighted in highlighting mode, such as the Lecture Hall podium, seats, and conference poster in room descriptions, the Equipment Archive ceiling, the things on the diorama table, and the clothes of the pict and the diva.
+- Variable-width text is restored after printing the description of the sig.
+- Prints a room description and updates the map after successfully entering the antique shop for the first time.
 
 ## Release 8
 
