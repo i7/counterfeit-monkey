@@ -3077,7 +3077,7 @@ Instead of searching the sickest offal:
 
 Then again possibly not."
 
-The description of a sig is "It reads: [fixed letter spacing][line break][line break]-- [line break][if the item described is proffered by the garish sign]GREED IS GOOD. -- Gordon Gekko[otherwise if the item described is proffered by the carton-sign]Education is its own end[otherwise if the item described is proffered by the last-sign]The contents of the foregoing post may not be reproduced in any medium without the permission of the sender[otherwise]Decisions are made by those who show up.[line break] -- President Bartlet, by way of Harry S. Truman and/or Woody Allen. Or maybe Abe Lincoln.[end if].". A sig is r-abstract.
+The description of a sig is "It reads: [fixed letter spacing][line break][line break]-- [line break][if the item described is proffered by the garish sign]GREED IS GOOD. -- Gordon Gekko[otherwise if the item described is proffered by the carton-sign]Education is its own end[otherwise if the item described is proffered by the last-sign]The contents of the foregoing post may not be reproduced in any medium without the permission of the sender[otherwise]Decisions are made by those who show up.[line break] -- President Bartlet, by way of Harry S. Truman and/or Woody Allen. Or maybe Abe Lincoln[end if].[variable letter spacing]". A sig is r-abstract.
 
 [carton-sign, garish sign, last-sign, otherwise]
 The last-sign is a sign. The printed name is "sign". Understand "sign" as the last-sign. The description is "It reads: 'Reminder: the six-monthly security remodel is set for this coming Tuesday. Please be prepared to cooperate with the floorers as they install our new coprolite tiles, and leave no secure documents visible.'"
