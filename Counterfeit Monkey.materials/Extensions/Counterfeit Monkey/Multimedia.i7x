@@ -32,6 +32,9 @@ When play begins (this is the open the measuring window rule):
 	if glulx graphics is supported:
 		open the measuring window.
 
+Map-ratio is a real number that varies.
+Map-ratio is initially 0.8395. [I guess this is how we do "constants" in Inform 7.]
+
 Ideal-width is a number that varies.
 
 To adjust width of the graphics window:
@@ -43,8 +46,8 @@ To adjust width of the graphics window:
 	let real-ideal be 0.0;
 	now real-ideal is ideal-width;
 	let ratio be real-ideal divided by the height of the graphics window;
-	if ratio > 0.8395: [ Too low to show the entire map when scaled to window width ]
-		now ideal-width is (height of graphics window * 0.8395) to the nearest whole number;
+	if ratio > map-ratio: [ Too low to show the entire map when scaled to window width ]
+		now ideal-width is (height of graphics window * map-ratio) to the nearest whole number;
 	if ideal-width is not original width: [ The width has changed ]
 		force the size of graphics window to ideal-width.
 
@@ -403,7 +406,7 @@ Figure of background colour is the file "map-background-colour.png".
 To redraw the map and compass:
 	if the graphics window is g-present:
 		let total height be height of the graphics window;
-		let scaled height be (ideal-width / 0.8395) to the nearest whole number;
+		let scaled height be (ideal-width / map-ratio) to the nearest whole number;
 		draw the local map of the location in graphics window at x 0 and y ((total height - scaled height) / 2) scaled to width ideal-width and height scaled height;
 		[ Draw the blue background below the map and add a pixel to the height to ensure that odd heights don't leave a 1 pixel black line ]
 		let padding height be (total height - scaled height) / 2 + 1;
