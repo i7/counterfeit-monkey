@@ -6136,6 +6136,8 @@ Instead of throwing something at atlantida-woman:
 	otherwise:
 		say "[We] chuck [the noun] at Atlantida. [They] [strike] her hard enough to elicit an outraged 'Oof!', but that doesn't seem to have substantially impaired her."
 
+Does the player mean doing something to the Atlantida-woman:
+	it is very likely.
 
 Understand "gun hand" as the restoration-gel rifle when the restoration-gel rifle is carried by Atlantida-woman.
 
