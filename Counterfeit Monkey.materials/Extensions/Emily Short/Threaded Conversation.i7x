@@ -837,6 +837,14 @@ Rule for printing a parser error when the latest parser error is the noun did no
 	otherwise:
 		make no decision.
 
+Rule for printing a parser error when the latest parser error is the didn't understand that number error (this is the prevent number error rule):
+	if the player's command includes "say/ask/answer/discuss/tell/a/t" and the player's command includes "[any person]":
+		if the current interlocutor is a person:
+			say "That doesn't seem to be a topic of conversation at the moment." (A) instead;
+		otherwise:
+			say "[We] [aren't] talking to anyone." (B) instead; ['You aren't talking to anyone.']
+	make no decision.
+
 Section 3 - The Player Discussing
 
 Check discussing (this is the cannot talk without an interlocutor rule):
