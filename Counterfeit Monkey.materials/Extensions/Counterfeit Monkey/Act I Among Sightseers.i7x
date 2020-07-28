@@ -196,7 +196,7 @@ Rule for listing exits while looking in Ampersand Bend:
 
 Sigil Street is west of Ampersand Bend. The description is "The buildings here are two and three [if the player wears the Britishizing goggles]storeys[otherwise]stories[end if], with shops at ground level and [apartments] above. The shops are closed for the holiday: [a typographer's office], [clothing shops] of col[our]ful skirts and ethnic bodices (rarely if ever worn by natives) and t-shirts covered with font designs[if the reflective window is in Sigil Street].
 
-[one of]Passing by [the reflective window] [we] catch the sight of our single blended body, and it creeps me out[or][The reflective window] of the closed shops reflect our synthes[ize]d self[stopping][end if]."
+[one of]Passing by [the reflective window] [we] catch the sight of our single blended body, and it creeps me out[or][The reflective window] of a closed shop reflects our synthes[ize]d self[stopping][end if]."
 
 Some elderly apartments are scenery in Sigil Street. The description is "From down here [we] can only see the shuttered windows and the occasional balcony or awning, but you can guess what they're probably like from the environment: old-fashioned inside, kitchens and bathrooms awkwardly fitted into niches and closets of buildings that weren't designed for plumbing. But they're also probably rather [if the player wears the Britishizing goggles]cosy[otherwise]cozy[end if] and handsome, with exposed beams under the ceiling." Understand "flat" or "apartment" or "building" or "buildings" as the elderly apartments when location is Sigil Street.
 
