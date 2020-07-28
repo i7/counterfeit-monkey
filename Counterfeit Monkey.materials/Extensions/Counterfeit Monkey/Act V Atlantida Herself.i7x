@@ -153,7 +153,7 @@ Rule for printing the name of the odor while shooting the odor with the anagramm
 Rule for printing the name of the odor while waving the letter-remover at the odor:
 	say "odor".
 
-Instead of going north in Wonderland when the secret-door is closed and The Oracle Project is nonsecret:
+Instead of going north in Wonderland when the secret-door is closed and the secret-door is seen:
 	if the secret-door is marked-visible:
 		say "[The secret-door] is not open.";
 	otherwise:
