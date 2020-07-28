@@ -78,6 +78,9 @@
 - More objects are now highlighted in highlighting mode, such as the Lecture Hall podium, seats, and conference poster in room descriptions, the Equipment Archive ceiling, the things on the diorama table, and the clothes of the pict and the diva.
 - Variable-width text is restored after printing the description of the sig.
 - Always prints a room description and updates the map after successfully entering the antique shop for the first time.
+- Fixes a description of the reflective window in Sigil Street.
+- Acknowledges the existence of the secret door when we have created it but not opened it yet and try to go through it.
+- Adds a missing "one" in the description of History of the Standards Revolution.
 
 ## Release 8
 
