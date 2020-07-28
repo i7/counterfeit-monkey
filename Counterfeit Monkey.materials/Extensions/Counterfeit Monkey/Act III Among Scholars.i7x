@@ -846,7 +846,7 @@ The big table is a supporter in the Language Studies Seminar Room.  "The [big ta
 	The description is "Crafted from some exotic wood with lots of interesting burl structure. There was a wealthy donor behind the construction of this room."
 	Understand "polygon" as the big table.
 
-History of the Standards Revolution is a book on the LSR bookcase. The description of History of the Standards Revolution is "It covers in minute detail the process by which the island standard[ize]d spelling and leveraged its linguistic power." The introduction is "[History] is of those bog-standard texts that everyone in my field owns a copy of and uses as a doorstop. Very occasionally something still arises that I need to look up, but I just about memor[ize]d it in preparation for my comprehensive exams."
+History of the Standards Revolution is a book on the LSR bookcase. The description of History of the Standards Revolution is "It covers in minute detail the process by which the island standard[ize]d spelling and leveraged its linguistic power." The introduction is "[History] is one of those bog-standard texts that everyone in my field owns a copy of and uses as a doorstop. Very occasionally something still arises that I need to look up, but I just about memor[ize]d it in preparation for my comprehensive exams."
 
 Lives of the Lexicographers is a book on the LSR bookcase. The description of Lives of the Lexicographers is "It is a substantial history of the major contributors to the art of dictionary-creation, and a useful guide to the specialist bibliography on each figure."
 
