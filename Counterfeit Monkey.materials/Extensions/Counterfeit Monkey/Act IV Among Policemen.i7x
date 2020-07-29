@@ -821,8 +821,8 @@ Instead of looking at the objects-on-stands through the monocle:
 Table of Ultratests (continued)
 topic	stuff	setting
 "storage1"	{ rock, tub, monocle }	Cold Storage
-"storage 2"	{ rock, tub, monocle }	Cold Storage
-"storage-bug"	{ rock, tub, monocle }	Cold Storage
+"storage2"	{ rock, tub, monocle }	Cold Storage
+"storage-bug"	{ dove, rock, tub, monocle }	Cold Storage
 
 Test storage1 with "placefather / tutorial off / open tub / out / gel rock / z" [holding the rock and the tub and the monocle in Cold Storage].
 Test storage2 with "placefather / tutorial off / open tub / out / x objects / gel object / z" [holding the rock and the tub and the monocle in Cold Storage].
