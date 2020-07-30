@@ -35,7 +35,7 @@ Include
 				continue;
 			if (parent(burden) == parent((+ player +)) && real_location ~= (+ Open Sea +))
 				continue;
-			if (parent(burden) == real_location or player or (+ boulders +) or (+ repository +))
+			if (parent(burden) == real_location or player or (+ boulders +) or (+ repository +) or (+ display-platform +) )
 				continue;
 			if ( burden == (+ Brock +) or (+ mechanic +) or (+ pirate +) or (+ pirate-crew +) or (+ crew-group +))
 				continue;
