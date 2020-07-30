@@ -1701,19 +1701,22 @@ A mirror is a kind of thing. A mirror is in every bathroom. A mirror is in every
 The description of a mirror is "It's gleaming and shiny and very clean and I don't want to look in it."
 
 Instead of searching a mirror when the player wears a wig and the player wears the monocle:
-	say "The wig and the monocle together suggest some sort of steampunk fancy dress party."
+	say "The wig and the monocle together suggest some sort of steampunk fancy dress party.";
+	try looking at the noun through the monocle.
 
 Instead of searching a mirror when the player wears a wig:
 	say "The wig looks surprisingly natural[if the pass is seen], and [we] resemble the image on the pass much better than [we] do without[end if]."
 
 Instead of searching a mirror when the player wears a hairpiece and the player wears the monocle:
-	say "The hairpiece/monocle combination makes us look like some sort of funky steampunk engineer, which might not be the most inconspicuous way to go."
+	say "The hairpiece/monocle combination makes us look like some sort of funky steampunk engineer, which might not be the most inconspicuous way to go.";
+	try looking at the noun through the monocle.
 
 Instead of searching a mirror when the player wears a hairpiece (called H):
 	say "[The H] looks surprisingly natural[if the pass is seen], and [we] resemble the image on the pass much better than [we] do without[end if]."
 
 Instead of searching a mirror when the player wears a monocle:
-	say "The monocle makes our right eye look deep green, and it has a sinister quality as well."
+	say "The monocle makes our right eye look deep green, and it has a sinister quality as well.";
+	try looking at the noun through the monocle.
 
 Instead of searching a mirror:
 	say "I have not gotten used to what we look like since we were synthes[ize]d into a single female body. The face that looks back is deeply scary. It's not me. And it's not you either. It's more like one of those computer composites you can have done to envision future offspring: if you and I were to have a somewhat androgynous daughter she might look like this[one of].
