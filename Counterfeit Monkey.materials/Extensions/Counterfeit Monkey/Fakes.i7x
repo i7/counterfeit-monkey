@@ -176,7 +176,7 @@ The bondage is fake. [I2278_bondage]
 The branding is fake. [I2380_branding]
 The breathable silky cotton is fake. [I2231_breathable_silky_cotto]
 The broken component is fake. [I1538_broken_component]
-The bull is fake. [I1503_bull]
+[The bull is fake.] [I1503_bull]
 [The bund is fake.] [I1523_bund]
 The buses are fake. [I1525_buses]
 The button is fake.

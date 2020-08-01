@@ -230,6 +230,9 @@ After inserting the band into the cryptolock when hardness is false and the cryp
 After inserting the bond into the cryptolock when hardness is false and the cryptoswitch is switched off:
 	cryptolock-refuse "bund" instead.
 
+After inserting the ball into the cryptolock when hardness is false and the cryptoswitch is switched on:
+	cryptolock-refuse "bull" instead.
+
 To cryptolock-refuse (X - some text):
 	say "There is a churning noise from within [the cryptolock] and '[X]' appears in letters of vivid purple smoke. Then additional letters read 'SAFETY OVERRIDE.' The smoke dissipates without result."
 

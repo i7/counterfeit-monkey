@@ -194,7 +194,7 @@ The repository contains a bat, a bet, a bit, and a bot, [removal and rotation]
 [ball]
 
 The repository contains a ba, an all,
-	a bell, a bill, a bull, [vowel-rotation]
+	a bell, a bill, [a bull,] [vowel-rotation]
 	a bat, [t-insertion]
 	a bet, a bit, a bot, [vowel-rotation]
 	an it-object, an ell, an ill, [removal]

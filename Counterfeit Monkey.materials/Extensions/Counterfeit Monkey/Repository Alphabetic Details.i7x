@@ -370,7 +370,7 @@ The description of the breathable silky cotton is "A bolt of very pleasant mater
 
 The description of the brown tee is "It's a brown wooden peg for putting a golf ball on. Apparently the All-Purpose Officer performed a little light R-insertion when he found himself in need of a portable tree." The heft of the brown tee is 1. The brown tee is scenery.
 
-The bull is an animal. The description of the bull is "He looks as though he has just been transported away from his cows, and he isn't at all pleased about the change. As a matter of fact, he blames [us] personally."
+[The bull is an animal. The description of the bull is "He looks as though he has just been transported away from his cows, and he isn't at all pleased about the change. As a matter of fact, he blames [us] personally."]
 
 [The heft of the bund is 10. The description of the bund is "An earthwork embankment designed to prevent oil repositories from bursting their banks and spilling into the surrounding waters."]
 
