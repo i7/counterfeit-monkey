@@ -2661,7 +2661,7 @@ topic	stuff	setting
 
 Test rackbug with "tutorial off / put ruck in bucket / get rack / put gel on rack" [holding the ruck and the tub in the Generator Room.]
 
-The rack is a supporter. It is not fixed in place. Understand "pegs" or "peg" as the rack. The description of the rack is "It's a wooden support with a few pegs for hanging up coats or jackets."
+The rack is a supporter. It is not fixed in place. Understand "pegs" or "peg" as the rack. The heft of the rack is 4. The description of the rack is "It's a wooden support with a few pegs for hanging up coats or jackets."
 
 The rad worm is a neuter animal. The description of the rad worm is "It's an earthworm, but with bands of psychedelic col[our]."
 
