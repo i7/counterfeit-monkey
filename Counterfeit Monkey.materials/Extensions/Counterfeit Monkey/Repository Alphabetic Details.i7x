@@ -1811,7 +1811,7 @@ To say assign-amanda:
 The Greek inscription is fixed in place in the shadow chamber.
 The initial appearance is "Cold water flows from a crack in the wall. Above it, words are carved: ΝΙΨΟΝ ΑΝΟΜΗΜΑΤΑ ΜΗ ΜΟΝΑΝ ΟΨΙΝ."
 The description is "The words are ΝΙΨΟΝ ΑΝΟΜΗΜΑΤΑ ΜΗ ΜΟΝΑΝ ΟΨΙΝ."
-Understand "greek" or "words" or "carved" as the Greek inscription.
+Understand "greek" or "words" or "carved" or "nipson" as the Greek inscription.
 
 The sator inscription is fixed in place in the Shadow Chamber.
 The initial appearance is "On the opposite wall is a square of inscribed letters, this time Roman."
