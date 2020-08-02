@@ -5389,7 +5389,7 @@ Test Brockscene with "tutorial off / autoupgrade / unmonkey / open tub /  gel ro
 Table of Ultratests (continued)
 topic	stuff	setting
 "Misdirection"	{ tub, apple, roll of bills, piece }	Bureau Secret Section
-"BrockAlt"	{ tub, seer automaton, chard, roll }	Equipment Testing
+"BrockAlt"	{ tub, seer automaton, chard, roll of bills }	Equipment Testing
 
 Test Misdirection with "tutorial off / autoupgrade /unmonkey / sw / n / w / e / open tub / gel rock / e" [holding the tub and the apple and the roll of bills and the piece in Bureau Secret Section.]
 
