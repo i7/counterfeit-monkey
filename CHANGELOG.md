@@ -27,6 +27,7 @@
 - The mechanic now responds to attempts to fix a car with poppy oil.
 - The tot and tots can be picked up.
 - Creatures no longer leave supporters or containers randomly. The behavior is now similar to the way it was in release 6 and earlier: people will leave the synthesizer immediately, but not animals. Creatures will get off the programmable dais immediately, with some exceptions.
+- Creatures will not get off the display platform in the Display Reloading Room, to allow for a couple of cock jokes.
 - The player can no longer carry created creatures past the secretary.
 - The boar will now butt the car door open if the player tries to hide inside a car.
 - The tiptoe and the the bodypart kind of tit now count toward the Igor Rosehip achievement.
@@ -34,6 +35,7 @@
 - On hard mode, the chair in the Language Studies Seminar Room is now red, and as a consequence the hair and the hairpiece also are red. This prevents an unwinnable situation that would occur if the player destroyed the hair by turning it into air. 
 - The air will now disappear even if the player is not holding it.
 - The oil painting and the tilting piano are now too heavy to carry.
+- The bull will trigger the safety override of the bucket.
 
 ### Parsing
 
@@ -50,6 +52,7 @@
 - GET SEAT or TAKE CHAIR no longer makes the player sit on the chair, while TAKE A SEAT still does.
 - No longer asks "Who do you mean, 1) Atlantida or 2) Atlantida?" when typing ASK ABOUT ATLANTIDA outside of conversation.
 - No longer gives the error "I didn't understand that number" when typing ASK ABOUT an ambiguous, absent person (such as ASK ABOUT ATLANTIDA) and then answering a resulting "Who do you mean?" question.
+- Looking at a mirror while wearing the monocle will now tell the player that the mirror is real. Previously, this would only happen when explicitly typing LOOK AT MIRROR THROUGH MONOCLE.
 
 ### Word repository
 
@@ -81,6 +84,8 @@
 - Fixes a description of the reflective window in Sigil Street.
 - Acknowledges the existence of the secret door when we have created it but not opened it yet and try to go through it.
 - Adds a missing "one" in the description of History of the Standards Revolution.
+- The rack is now too cumbersome to carry, rather than much too heavy.
+- In some endings, Brock would refer to the T-inserter as "T-remover".
 
 ## Release 8
 
