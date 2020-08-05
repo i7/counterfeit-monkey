@@ -822,7 +822,7 @@ To say unbetrayed-outcome:
 
 'One for the history books,' he says, with a crooked smile. 'They're showing satellite clips. Big olive garland on the depluralizing tank. People dancing on cars. Some old guy belting out La Marseillaise in the Bureau Rotunda.'
 
-Brock sits down opposite us. 'In other news,' he remarks, 'it looks like your cut of the T-remover plans, with all the tests we ran, is going to come out to this.' He writes a number. The number has six zeroes.
+Brock sits down opposite us. 'In other news,' he remarks, 'it looks like your cut of the T-inserter plans, with all the tests we ran, is going to come out to this.' He writes a number. The number has six zeroes.
 
 He leans back and looks at us.
 
