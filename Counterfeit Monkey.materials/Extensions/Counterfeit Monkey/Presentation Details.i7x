@@ -46,7 +46,7 @@ Section 3 - Styles
 Table of User Styles (continued)
 style name (a glulx text style)	background color (a text)	color (a text)	first line indentation (a number)	fixed width (a truth state)	font weight (a font weight)	indentation (a number)	italic (a truth state)	justification (a text justification)	relative size (a number)	reversed (a truth state)
 special-style-2	--	"#444444"	0	false	light-weight	0	true	left-justified
-special-style-1	--	"#888888"
+special-style-1	--	"#767676"
 
 Before listing plausible quips [when dialogue tinting is true]:
 	say "[second custom style][run paragraph on]".
