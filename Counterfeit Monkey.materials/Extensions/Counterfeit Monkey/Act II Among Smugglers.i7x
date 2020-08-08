@@ -405,7 +405,7 @@ A spill is on the round black tables. It is fluid scenery. The flexible appearan
 
 Report Nexami saying hello to the player for the first time:
 	now the spill is not scenery;
-	say "Nexami nods to us. 'Watch out. That table next to you has something sticky spilled on it.' And indeed there is a spill. You were about to lean on it nonchalantly." instead.
+	say "Nexami nods to us. 'Watch out. That table next to you has something sticky spilled on it.' And indeed there is a [spill]. You were about to lean on it nonchalantly." instead.
 
 Nexami-encounter is a scene. Nexami-encounter begins when Nexami is the current interlocutor. Nexami-encounter ends in abandonment when Nexami is not the current interlocutor. Nexami-encounter ends in departure when the time since Nexami-encounter began is greater than one minute.
 
