@@ -1051,7 +1051,7 @@ A strand is privately-named. The description of a strand is "A single strand, ab
 Rule for printing the plural name of a strand:
 	say "hairs".
 
-The printed name of the red hair is "red hair". The description of the red hair is "A single strand, about a foot long, of red hair."
+The printed name of the red hair is "red hair". The description of the red hair is "A single strand, about a foot long, of red hair." Understand "red" as the red hair.
 
 The description of the red hairpiece is "A fairly natural-looking extension, red in col[our], attachable by comb. It [if worn]comes[otherwise]should come[end if] to about shoulder length on us."
 
