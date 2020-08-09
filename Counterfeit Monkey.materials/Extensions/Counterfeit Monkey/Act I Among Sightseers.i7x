@@ -2258,7 +2258,7 @@ rule for listing exits while looking in Crumbling Wall Face:
 Instead of facing southeast in Crumbling Wall Face:
 	say "[We] would have to go south and then east to reach it, but that way is the top of the hexagonal turret."
 
-The fossil is a thing in Crumbling Wall Face. The initial appearance is "Among the rubble fill of the wall is [if we have examined the fossil]a fossil[otherwise]an odd spiral-shaped rock[end if]."
+The fossil is a thing in Crumbling Wall Face. The initial appearance is "Among the rubble fill of the wall is [if we have examined the fossil]a [otherwise]an odd spiral-shaped [end if][if boldening is true][bold type][end if][if we have examined the fossil]fossil[otherwise]rock[roman type][end if]."
 	Understand "odd" or "spiral-shaped" or "spiral" or "shaped" or "rock" or "stone" as the fossil.
 	The description is "[one of]The spiral rock turns out to be a fossil, from one of those sea creatures long ago.[or]It is perhaps an inch and a half long, the shape of a corkscrew seashell that once housed something small and soft. There are thousands of these things around; they're not exactly valuable, but an interesting curiosity all the same.[stopping]".
 
