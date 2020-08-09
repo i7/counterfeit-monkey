@@ -2322,6 +2322,12 @@ The cryptolock is a scenery enterable container in the Generator Room. It is fix
 
 The cryptoswitch is a device. The cryptoswitch is part of the cryptolock. The printed name of the cryptoswitch is "reverse switch". Understand "reverse" or "switch" as the cryptoswitch.
 
+Instead of pushing the cryptoswitch when the cryptoswitch is switched on:
+	try switching off the cryptoswitch.
+
+Instead of pushing the cryptoswitch when the cryptoswitch is switched off:
+	try switching on the cryptoswitch.
+
 Report switching on the cryptoswitch:
 	say "The switch thunks over into the Reverse position." instead.
 
