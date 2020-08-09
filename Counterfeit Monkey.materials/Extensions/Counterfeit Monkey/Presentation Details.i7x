@@ -365,7 +365,7 @@ To record (slug - some text) as an achievement with conditional break (breakflag
 					choose row with final response rule of list remaining achievements rule in Table of Final Question Options;
 					blank out the whole row.
 
-Number-of-achievements is a number that varies. Number-of-achievements is 16.
+Number-of-achievements is a number that varies. Number-of-achievements is 18.
 
 Table of Possible Achievements
 achievement (some text)
@@ -373,21 +373,23 @@ with 40 blank rows.
 
 Table of All Achievements
 achievement (some text)	done (a truth state)
-"Finished tutorial mode”	true
+"Admiral Thoureaux award for removing every letter of the alphabet in one playthrough"	true
 "Alex Rosehip award for completing the game in easy mode"	true
+"Amanda Waterstone award for discovering cultic passages"	true
 "Andra award for completing the game in hard mode"	true
-"Priscilla Parsons award for winning the game without ever entering the church"	true
-"Lucius Quagmire award for viewing unusual films"	true
-"Reverend Plaice award for placing the cross on the altar while liturgically dressed"	true
-"Jocasta Higgate award for reconstructing pagan worship on the island"	true
-”Finn Rosehip award for gnu-hunting"	true
 "Camilla Downdweller award for creating five types of fish in one playthrough"	true
-"Lester Parsons award for discovering unspecified local rites"	true
-"Igor Rosehip award for creating at least five body parts in one playthrough"	true
+"Finished tutorial mode”	true
+”Finn Rosehip award for gnu-hunting"	true
 "Horace Fingerstain award for jotting some notes"	true
+"Igor Rosehip award for creating at least five body parts in one playthrough"	true
+"Jocasta Higgate award for reconstructing pagan worship on the island"	true
+"Lester Parsons award for discovering unspecified local rites"	true
 "Lord Michael Rosehip award for showing the black spot to a pirate crew"	true
+"Lucius Quagmire award for viewing unusual films"	true
 "Mort Shaply award for showing Poe a raven-based foodstuff"	true
+"Priscilla Parsons award for winning the game without ever entering the church"	true
 "Propper Rosehip award for talespinning"	true
+"Reverend Plaice award for placing the cross on the altar while liturgically dressed"	true
 "Roman 'Sticky' Fingerstain award for impromptu art theft"	true
 
 Table of Final Question Options (continued)
