@@ -2176,7 +2176,7 @@ Understand the commands "pierce" and "stick" and "penetrate" as "poke".
 Chapter 15 - The Workshop Platform
 
 The programmable dais is an enterable supporter in the Workshop. Understand "machine" or "equipment" or "platform" or "big" or "black" or "metal" or "round" or "machinery" or "coil" or "coils" as the dais.
-	The initial appearance is "A programmable dais sits in the middle of the room. It has the raw look of lab equipment rather than a nice smooth commercial instrument."
+	The initial appearance is "A [programmable dais] sits in the middle of the room. It has the raw look of lab equipment rather than a nice smooth commercial instrument."
 	The description is "It's a round black metal platform with substantial stabil[izing] coils visible underneath, five or six feet in diameter. This is experimental lab grade letter equipment, ferociously powerful, insanely dangerous."
 
 The programmable dais allows seated, standing and reclining.
