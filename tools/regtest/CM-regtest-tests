@@ -12245,8 +12245,10 @@ We open the plexiglas case.
 >get puzzle
 We take the crossword. It looks like it's been snipped out of Chard-Farmer's Weekly, but it hasn't been filled in at all.
 
->put hair in synthesizer
-(first taking the red hair)
+>get red
+We pick up the red hair.
+
+>put red hair in synthesizer
 Voices from the hallway. I freeze. For a moment we hear them all too sharply: "You check downstairs, I'll ask the professors." It's a conversation of security guards, or police, or Bureau Officers. Someone is being looked for.
 
 Then it's over. We put the red hair into the synthesizer.
@@ -12270,7 +12272,7 @@ A fairly natural-looking extension, red in color, attachable by comb. It should 
 
 [Your score has gone up by one point and is now two.]
 
->wear hairpiece
+>wear red
 (first taking the red hairpiece)
 We settle the red hairpiece on our head and adjust our hair underneath.
 
@@ -12285,12 +12287,12 @@ Curiously, there's an acquaintance of yours here: Nexami Engeo is at one of the 
 
 Nexami nods to us. "Watch out. That table next to you has something sticky spilled on it." And indeed there is a spill. You were about to lean on it nonchalantly.
 
-I'm inclined to say thanks for pointing out spill or ask what he is doing in Atlantis.
+/(I'm inclined to|I'd like to|We want to) say thanks for pointing out spill or ask what he is doing in Atlantis.
 
 >wave c-remover at wire chair
 If we change the chair while Nexami is sitting on it, he might disappear along with it. Let's not do that.
 
-I'd like to say thanks for pointing out spill or ask what he is doing in Atlantis.
+/(I'm inclined to|I'd like to|We want to) say thanks for pointing out spill or ask what he is doing in Atlantis.
 
 >thanks
 "Hey, thanks."
@@ -12332,7 +12334,7 @@ We run our thumb over the dial, setting the device to a T-remover. The tit flick
 
 >autoupgrade
 >wave t-remover at tit
-There is a pink cloud, and the tit turns into an I. It's an abstract that looks like a bit of mirror. When I look at it I see Alex, my proper self, and not just restored to my usual body, but photo-retouched to be that bit smarter and freer of skin-blemishes, well-dressed. It's like looking in the mirror at reality as it should be.
+/There is a [a-z  \-]+, and the tit turns into an I. It's an abstract that looks like a bit of mirror. When I look at it I see Alex, my proper self, and not just restored to my usual body, but photo-retouched to be that bit smarter and freer of skin-blemishes, well-dressed. It's like looking in the mirror at reality as it should be.
 
 You doubtless see yourself too — as you are, or perhaps as you want to be.
 
@@ -12355,13 +12357,16 @@ It is an ordinary inexpensive variety of chair, made locally and found around th
 >wave c-remover at chair
 We reset the device to c. There is a smell of anise, and the chair turns into a hair. A single strand, about a foot long, of blonde hair.
 
->gel hairpiece
+>gel red hairpiece
 We can't gel the red hairpiece without any gel.
 
 >purloin tub
 [Purloined.]
 
->gel hairpiece
+>gel red
+Which do you mean, the 1) red hairpiece or the 2) screwdriver?
+
+>1
 We dip out a pea-sized quantity of gel and rub it gently onto the red hairpiece. With an audible SPLORT, the red hairpiece becomes a red hair and a piece. 
 
 I'm starting to understand how you got into all the places you got into. Not that I judge you or your line of work, of course.
@@ -12427,7 +12432,7 @@ That is, that's what would have happened if we had done something so foolish. Sh
     *** That could have gone better ***
 
 
-In that game you scored 3 out of a possible 100, in 34 turns, earning you the rank of Graduate Student.
+In that game you scored 3 out of a possible 100, in 35 turns, earning you the rank of Graduate Student.
 
 
 /Total play time: .*
