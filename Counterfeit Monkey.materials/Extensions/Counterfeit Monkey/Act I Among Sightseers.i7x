@@ -2654,7 +2654,7 @@ Instead of searching or looking under the bushes:
 	if the kudzu is part of the bushes:
 		say "It's hard to get a good look under the bushes with all this kudzu in the way." instead;
 	if the bushes are shrine-hiding:
-		say "Hunting behind the bushes reveals something I vaguely remember seeing when I was a child, but not noticing again since: built into the wall is what looks like a very ancient sort of shrine.";
+		say "Hunting behind the bushes reveals something I vaguely remember seeing when I was a child, but not noticing again since: built into the wall is what looks like a very ancient sort of [shrine].";
 		now the bushes are shrine-revealing;
 	otherwise:
 		say "There's nothing more to find, really."
@@ -2680,7 +2680,7 @@ Sanity-check doing something when location is Winding Footpath and the bushes ar
 
 [The nymph 'shrine' is nod to the island's Roman history. There's nothing in the game to reveal this, really, but the idea is that this stone is actually a panel from an imperial-era sarcophagus (nymphs were often featured on such panels, and sarcophagus carvers were of very varied levels of skill). Subsequent inhabitants moved it.]
 
-The shrine is a fixed in place container in the Winding Footpath. The initial appearance is "Now that the bushes have been cleared a little, the ancient shrine is plainly visible[if the shrine is non-empty], and [a random thing in the shrine] [are] set up in the place of hon[our][end if]." Understand "ancient" or "wall" or "niche" or "stone" or "backing" as the shrine. The description of the shrine is "There's a niche dug into the stone of the wall, above a [low relief] of three ladies. It's not very good work to start with, and has been eroded by a lot of weather, and I wouldn't be surprised if this weren't its original location; it probably stood somewhere else and was brought here.".
+The shrine is a fixed in place container in the Winding Footpath. The initial appearance is "Now that the bushes have been cleared a little, the ancient [shrine] is plainly visible[if the shrine is non-empty], and [a random thing in the shrine] [are] set up in the place of hon[our][end if]." Understand "ancient" or "wall" or "niche" or "stone" or "backing" as the shrine. The description of the shrine is "There's a niche dug into the stone of the wall, above a [low relief] of three ladies. It's not very good work to start with, and has been eroded by a lot of weather, and I wouldn't be surprised if this weren't its original location; it probably stood somewhere else and was brought here.".
 
 The carrying capacity of the shrine is 1.
 
