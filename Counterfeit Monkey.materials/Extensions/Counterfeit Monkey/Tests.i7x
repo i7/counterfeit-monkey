@@ -891,6 +891,15 @@ Carry out accomplishing achievements:
 	repeat through Table of all achievements:
 		record achievement entry as an achievement.
 
+Understand "delete achievements" as deleting achievements. Deleting achievements is an action out of world.
+
+Carry out deleting achievements:
+	say "Warning! This will delete any recorded achievements and overwrite the monkeyac file with a blank file of the same name. This can not be undone. Do you want to continue? >>" ;
+	if the player consents:
+		blank out the whole of the Table of Possible achievements;
+		write File of Conclusions from the Table of Possible Achievements;
+		say "[first custom style][bracket]Achievements deleted.[close bracket][roman type][line break]".
+
 Understand "end the/-- game/story" as ending. Ending is an action out of world. Carry out ending:
 	say "[bracket]Press a key[close bracket]";
 	end the story saying "This was just a test of the ending functionality".
