@@ -53,6 +53,7 @@
 - No longer asks "Who do you mean, 1) Atlantida or 2) Atlantida?" when typing ASK ABOUT ATLANTIDA outside of conversation.
 - No longer gives the error "I didn't understand that number" when typing ASK ABOUT an ambiguous, absent person (such as ASK ABOUT ATLANTIDA) and then answering a resulting "Who do you mean?" question.
 - Looking at a mirror while wearing the monocle will now tell the player that the mirror is real. Previously, this would only happen when explicitly typing LOOK AT MIRROR THROUGH MONOCLE.
+- Flipping the cryptobucket reverse switch with FLIP SWITCH now works as expected.
 
 ### Word repository
 
@@ -79,13 +80,14 @@
 - If the player was inside a container, it would sometimes be printed twice or more in the room description header, such as "Back Alley (in the tent) (in the tent)."
 - The inventory comment "(really the smuggled plans in disguise)" would get lost if the disguised plans were synthesized into something else.
 - More objects are now highlighted in highlighting mode, such as the Lecture Hall podium, seats, and conference poster in room descriptions, the Equipment Archive ceiling, the things on the diorama table, and the clothes of the pict and the diva.
-- Variable-width text is restored after printing the description of the sig.
+- Variable-width text is restored after printing the (fixed-width) description of the sig.
 - Always prints a room description and updates the map after successfully entering the antique shop for the first time.
 - Fixes a description of the reflective window in Sigil Street.
 - Acknowledges the existence of the secret door when we have created it but not opened it yet and try to go through it.
 - Adds a missing "one" in the description of History of the Standards Revolution.
 - The rack is now too cumbersome to carry, rather than much too heavy.
 - In some endings, Brock would refer to the T-inserter as "T-remover".
+- On interpreters that support text color, light grey text, such as the tutorial messages, is now a little darker, hopefully improving legibility.
 
 ## Release 8
 
