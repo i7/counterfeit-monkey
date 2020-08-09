@@ -766,7 +766,7 @@ Instead of going east in University Oval:
 	try examining east-campus-extension.
 
 An activist is an alert woman in University Oval. Understand "student" or "protester" as the activist. The initial appearance is "[An activist] is standing in our way[if the activist carries the bright yellow sign], gripping [a bright yellow sign] that says 'TOXI WASTE AWARENESS!'[end if]." The description of the activist is "An earnest-looking woman, about 22."
-	The activist carries a bright yellow sign. The bright yellow sign is a sign. The description of the bright yellow sign is "The sign is bright yellow and says 'TOXI WASTE AWARENESS!'" The initial appearance is "A sign lies on the grass, abandoned by its owner."
+	The activist carries a bright yellow sign. The bright yellow sign is a sign. The description of the bright yellow sign is "The sign is bright yellow and says 'TOXI WASTE AWARENESS!'" The initial appearance is "A [bright yellow sign] lies on the grass, abandoned by its owner."
 	The printed name of the bright yellow sign is "sign".
 
 
