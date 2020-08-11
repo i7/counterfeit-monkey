@@ -1,6 +1,6 @@
 # Change log
 
-## Unreleased
+## Release 9
 
 ### Improved world model
 
