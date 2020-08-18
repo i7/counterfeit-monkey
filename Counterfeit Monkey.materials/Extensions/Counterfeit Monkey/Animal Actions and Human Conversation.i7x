@@ -5884,6 +5884,7 @@ When Atlantida chat begins:
 	[queue how fusion happens as postponed obligatory;]
 	queue thing-about-democracy as postponed obligatory;
 	queue summoning-guards as postponed obligatory;
+	follow the attempt to create Atlantida fight savefile rule.
 
 Report taking something which is proffered by the restoration-gel rifle when atlantida chat is happening:
 	say "We sidle over and casually pick up [the noun] as though we were just curious. Or maybe had an insatiable urge to tidy up." instead.

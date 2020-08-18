@@ -695,10 +695,71 @@ When play ends when the story has not ended finally:
 	if the player consents:
 		if the turn count is greater than 1:
 			say "[line break]";
-			undo a turn;
+			cheat death;
 		otherwise:
 			resume the story;
 		try looking.
+
+To cheat death:
+	if the location is Personal Apartment and Atlantida-woman is in location and the restoration-gel rifle is not in location and the restoration-gel rifle is not carried by the player:
+		unless the File of Automated Tests exists or the File of Tests exists:
+			follow the attempt to load Atlantida fight savefile rule;
+	undo a turn;
+
+The attempt to load Atlantida fight savefile rule translates into I6 as "Atlantida_Fight_Attempt_Load".
+
+The attempt to create Atlantida fight savefile rule translates into I6 as "Atlantida_Fight_Attempt_Save".
+
+Include (-
+
+[ Atlantida_Fight_Attempt_Load fref res;
+
+	fref = glk_fileref_create_by_name( fileusage_SavedGame, Glulx_ChangeAnyToCString("CM-Atlantida-fight-autosave"), GG_SAVESTR_ROCK );
+	if ( fref )
+	{
+		if ( glk_fileref_does_file_exist( fref ) )
+		{
+			gg_savestr = glk_stream_open_file( fref, filemode_Read, GG_SAVESTR_ROCK );
+		}
+		glk_fileref_destroy( fref );
+	}
+
+	! Try to restore from Atlantida fight autosave file
+	if ( gg_savestr )
+	{
+		@restore gg_savestr res;
+		glk_stream_close( gg_savestr, 0 );
+		gg_savestr = 0;
+	}
+
+	rfalse;
+];
+
+[ Atlantida_Fight_Attempt_Save fref res;
+	! Save to an external file
+	fref = glk_fileref_create_by_name( fileusage_SavedGame, Glulx_ChangeAnyToCString("CM-Atlantida-fight-autosave"), GG_SAVESTR_ROCK );
+	if ( fref )
+	{
+		gg_savestr = glk_stream_open_file( fref, filemode_Write, GG_SAVESTR_ROCK );
+		glk_fileref_destroy( fref );
+		if ( gg_savestr )
+		{
+			@save gg_savestr res;
+
+			! We successfully loaded the atlantida fight autosave file!
+			if ( res == -1 )
+			{
+				GGRecoverObjects();
+				print "[Restarted scene.]^^";
+			}
+			glk_stream_close( gg_savestr, 0 );
+			gg_savestr = 0;
+		}
+	}
+	rfalse;
+];
+
+-).
 
 Section 5 - Post-restore routine
 
