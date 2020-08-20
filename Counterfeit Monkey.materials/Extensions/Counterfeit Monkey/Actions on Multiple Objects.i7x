@@ -58,7 +58,7 @@ Rule for deciding whether all includes things enclosed by the player while remov
 Rule for deciding whether all includes things enclosed by the player while taking (this is the new exclude indirect possessions from take all rule):
 	it does not.
 
-The the new exclude indirect possessions from take all rule is listed instead of the exclude indirect possessions from take all rule in the for deciding whether all includes rulebook.
+The new exclude indirect possessions from take all rule is listed instead of the exclude indirect possessions from take all rule in the for deciding whether all includes rulebook.
 
 Rule for deciding whether all includes things enclosed by the backpack while removing an object from an object:
 	it does.
