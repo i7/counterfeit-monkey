@@ -710,10 +710,18 @@ The attempt to load Atlantida fight savefile rule translates into I6 as "Atlanti
 
 The attempt to create Atlantida fight savefile rule translates into I6 as "Atlantida_Fight_Attempt_Save".
 
+
 Include (-
 
-[ Atlantida_Fight_Attempt_Load fref res;
+Array atlantida_autosave_checksum -> 50;
+Array comparison_checksum -> 50;
 
+-) after "Definitions.i6t".
+
+Include (-
+
+[ Atlantida_Fight_Attempt_Load fref res i match;
+	match = true;
 	fref = glk_fileref_create_by_name( fileusage_SavedGame, Glulx_ChangeAnyToCString("CM-Atlantida-fight-autosave"), GG_SAVESTR_ROCK );
 	if ( fref )
 	{
@@ -727,30 +735,55 @@ Include (-
 	! Try to restore from Atlantida fight autosave file
 	if ( gg_savestr )
 	{
-		@restore gg_savestr res;
+		! Check if this file is the same as the one we saved earlier this session
+		glk_get_buffer_stream(gg_savestr, comparison_checksum, 50);
+
+		for ( i = 0 : i < 50 : i++ )
+		{
+			if (atlantida_autosave_checksum->i ~= comparison_checksum->i)
+			{
+				match = false;
+				break;
+			}
+		}
+		if (match)
+		{
+			glk_stream_set_position(gg_savestr, 0, seekmode_Start);
+			@restore gg_savestr res;
+		}
 		glk_stream_close( gg_savestr, 0 );
 		gg_savestr = 0;
 	}
-
 	rfalse;
 ];
 
-[ Atlantida_Fight_Attempt_Save fref res;
+[ Atlantida_Fight_Attempt_Save fref res i;
 	! Save to an external file
 	fref = glk_fileref_create_by_name( fileusage_SavedGame, Glulx_ChangeAnyToCString("CM-Atlantida-fight-autosave"), GG_SAVESTR_ROCK );
 	if ( fref )
 	{
-		gg_savestr = glk_stream_open_file( fref, filemode_Write, GG_SAVESTR_ROCK );
+		gg_savestr = glk_stream_open_file( fref, filemode_ReadWrite, GG_SAVESTR_ROCK );
 		glk_fileref_destroy( fref );
 		if ( gg_savestr )
 		{
 			@save gg_savestr res;
 
-			! We successfully loaded the atlantida fight autosave file!
 			if ( res == -1 )
 			{
+				! We successfully loaded the atlantida fight autosave file
 				GGRecoverObjects();
 				print "[Restarted scene.]^^";
+			}
+			else
+			{
+				! Rewind stream and read first 50 bytes into a checksum array
+				! which, if we save manually during this scene, will be
+				! included in the save file. This will be compared against
+				! the autosave file if we die and attempt to autorestore later.
+				! In this way, we avoid autorestoring an autosave from a different
+				! playthrough.
+				glk_stream_set_position(gg_savestr, 0, seekmode_Start);
+				glk_get_buffer_stream(gg_savestr, atlantida_autosave_checksum, 50);
 			}
 			glk_stream_close( gg_savestr, 0 );
 			gg_savestr = 0;
