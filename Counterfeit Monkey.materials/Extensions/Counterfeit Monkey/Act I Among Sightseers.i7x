@@ -251,9 +251,9 @@ The typographer's office is a facade in Sigil Street.  It is scenery.
 Instead of looking toward Back Alley:
 	say "It doesn't look like there's anything interesting back that way."
 
-Back Alley is south of Sigil Street. The description is "[one of]This isn't much, is it? Just[or]There is nothing here but[stopping] the back sides of a couple of [yellow buildings], some peeling yellow paint[one of], and[or];[stopping] not even much by way of windows to look in through. [if unvisited]I think the place where [we] had the procedure done is just a block or two away, but I've already lost the door. I imagine they change it. [end if]
+Back Alley is south of Sigil Street. The description is "[one of]This isn't much, is it? Just[or]There is nothing here but[stopping] the back sides of a couple of [yellow buildings], some peeling yellow paint[one of], and[or];[stopping] not even much by way of windows to look in through. [if Sigil Street is unvisited]I think the place where [we] had the procedure done is just a block or two away, but I've already lost the door. I imagine they change it. [end if]
 
-This alley runs north to the open street, towards the town square[if unvisited]. That's the way [we][']ll want to go first[end if]."
+This alley runs north to the open street, towards the town square[if Sigil Street is unvisited]. That's the way [we][']ll want to go first[end if]."
 The dull house-back is a facade in Back Alley. It fronts south. It is scenery. The description is "The owners of the house obviously didn't want a view in this direction, as there aren't any windows to see through, just a wall scarred by decades of occasional remodeling."
 	The closure notice is "There are no doors in [the item described]. ".
 

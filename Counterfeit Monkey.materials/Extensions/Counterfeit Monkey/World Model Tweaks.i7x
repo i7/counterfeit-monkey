@@ -518,16 +518,25 @@ This is the new generate exit list rule:
 	if exits is 0, say "[no obvious exits]";
 	otherwise say "[We] can go [list of exit-listable directions] from here.".
 
-[Don't print a room description after getting up from or out of an object.]
 The describe room emerged into rule is not listed in any rulebook.
 The describe room stood up into rule is not listed in any rulebook.
+[Don't print a room description after getting up from or out of an object.]
 
-[Don't list exits when printing BRIEF or SUPERBRIEF descriptions.]
-Rule for listing exits when set to sometimes abbreviated room descriptions and the location is visited:
-	do nothing.
 
-Rule for listing exits when set to abbreviated room descriptions:
-	do nothing.
+[Don't list exits when printing BRIEF or SUPERBRIEF descriptions]
+This is the new exits rule:
+	unless set to sometimes abbreviated room descriptions and the location is visited:
+		unless set to abbreviated room descriptions:
+			if list exits is true:
+				carry out the listing exits activity.
+
+The new exits rule is listed instead of the exits rule in the carry out looking rules.
+
+Carry out preferring sometimes abbreviated room descriptions:
+	now Back Alley is visited.
+
+Carry out preferring abbreviated room descriptions:
+	now Back Alley is visited.
 
 Section 2 - Finding
 
