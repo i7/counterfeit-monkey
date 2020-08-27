@@ -518,9 +518,16 @@ This is the new generate exit list rule:
 	if exits is 0, say "[no obvious exits]";
 	otherwise say "[We] can go [list of exit-listable directions] from here.".
 
+[Don't print a room description after getting up from or out of an object.]
 The describe room emerged into rule is not listed in any rulebook.
 The describe room stood up into rule is not listed in any rulebook.
-[Don't print a room description after getting up from or out of an object.]
+
+[Don't list exits when printing BRIEF or SUPERBRIEF descriptions.]
+Rule for listing exits when set to sometimes abbreviated room descriptions and the location is visited:
+	do nothing.
+
+Rule for listing exits when set to abbreviated room descriptions:
+	do nothing.
 
 Section 2 - Finding
 
