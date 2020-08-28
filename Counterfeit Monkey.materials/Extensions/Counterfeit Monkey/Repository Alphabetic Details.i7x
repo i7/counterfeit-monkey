@@ -3922,7 +3922,7 @@ The toasts are an edible thing. The description of the toasts is "Two slices, on
 
 The description of the toe is "It looks like a little toe raggedly cut off with a bread knife. It wasn't, of course." The heft of the toe is 1. The scent-description of the toe is "inner shoe".
 
-The description of the toes is "It looks like a set of toes raggedly cut off with a bread knife. They weren't, of course." The heft of the toes is 1. The scent-description of the toes is "inner shoe". The toes are plural-named.
+The description of the toes is "It looks like a set of toes raggedly cut off with a bread knife. They weren't, of course." The heft of the toes is 1. The scent-description of the toes is "inner shoe". The toes are plural-named. Understand "toe" as the toes.
 
 To say body-part-prank:
 	say "[one of] (because after all it would be beyond the parameters of the change to generate the person whose body part it is). [They] [are] only moderately gory, and most locals get used to seeing this kind of thing as a prank from six-year-olds every halloween. Still, [they] might startle a tourist[or][stopping]".
