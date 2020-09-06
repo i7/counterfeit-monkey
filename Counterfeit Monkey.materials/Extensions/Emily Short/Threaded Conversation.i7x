@@ -1408,7 +1408,8 @@ To reset the interlocutor:
 	now the current interlocutor is nothing;
 	now the predicted-interlocutor is nothing;
 	now the current quip is generic-quip;
-	now the previous quip is generic-quip.
+	now the previous quip is generic-quip;
+	headcount.
 
 Leavetaking is an action applying to nothing.
 
