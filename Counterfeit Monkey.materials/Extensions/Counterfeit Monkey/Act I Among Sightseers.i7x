@@ -1969,7 +1969,7 @@ Definition: a thing is a souvenir:
 	if it is the shot glasses:
 		yes;
 
-Some tomes are a fixed in place thing in the Cathedral Gift Shop. The initial appearance is "A long line of dusty [tomes] are lined up on one of the shelves, marked 'free for taking'. None are missing." A component-tome is part of the tomes. The printed name of the component-tome is "tome". Understand "tome" or "book" as the component-tome.
+Some tomes are a fixed in place thing in the Cathedral Gift Shop. The initial appearance is "A long line of [if hardness is false]dusty [end if][tomes] are lined up on one of the shelves, marked 'free for taking'. None are missing." A component-tome is part of the tomes. The printed name of the component-tome is "tome". Understand "tome" or "book" as the component-tome.
 
 The description of the tomes is "Looking at one gives a sense of all. [description of the tome]". The description of the component-tome is "[description of the tome]".
 
