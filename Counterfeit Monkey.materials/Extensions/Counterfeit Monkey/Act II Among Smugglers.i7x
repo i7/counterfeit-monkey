@@ -413,8 +413,8 @@ When Nexami-encounter ends in departure:
 	say "[if the prior named object is Nexami]He[otherwise]Nexami[end if] stands up and mutters something. I have a little trouble with his Scottish accent [--] [we] don't get a lot of that around here, for obvious reasons [--] but you interpret it as him saying he'd better go pay up.
 
 He heads into the interior of the café.";
-	reset the interlocutor;
-	now Nexami is nowhere.
+	now Nexami is nowhere;
+	reset the interlocutor.
 
 Instead of touching or rubbing the spill:
 	say "Better not to get it on ourselves."
