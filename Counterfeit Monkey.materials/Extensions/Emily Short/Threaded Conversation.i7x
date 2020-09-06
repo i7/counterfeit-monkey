@@ -1326,7 +1326,7 @@ Carry out saying hello to a person:
 	set the interlocutor to the noun.
 
 Report saying hello to something that is not a person (this is the can't greet inanimate objects rule):
-  say "[The noun] does not respond."
+  say "[The noun] [do] not respond."
 
 Report saying hello to someone when the greeting type is explicit (this is the default greeting rule):
   say "You say hello to [the noun]."
