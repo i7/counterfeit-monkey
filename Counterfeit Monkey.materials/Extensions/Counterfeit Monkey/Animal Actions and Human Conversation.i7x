@@ -4665,8 +4665,12 @@ A first every turn when the current quip is lojban-greeting:
 	say "Higgate is still looking at us expectantly, so I jump in. ";
 	try discussing that we do not speak Lojban.
 
+Understand "go'inai" and "go'i nai" as saying no.
+
 Instead of saying no when the current interlocutor is Professor Higgate and that we do not speak lojban is available:
 	try discussing that we do not.
+
+Understand "go'i" as saying yes.
 
 Instead of saying yes when the current interlocutor is Professor Higgate and that we do not speak lojban is available:
 	say "I could, of course, but she'd then wonder where we picked it up. Better not.";
