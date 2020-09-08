@@ -1,5 +1,25 @@
 # Change log
 
+## Unreleased
+
+### Improved world model
+
+- In some cases, it was still possible to GIVE and SHOW things to people that recently left the room.
+
+### Parsing
+
+- Adds yes and no in Lojban (go'i and go'inai) as synonyms to their English counterparts. These make sense as valid replies when Professor Higgate asks  if the player speaks Lojban.
+
+### Cosmetic output errors
+
+- A standard response when trying to talk to inanimate objects would not adapt the verb "do" properly to plural objects ("The protesters does not reply.")
+- Exits are no longer listed when giving brief room descriptions.
+- The tomes would be described as "dusty dusty tomes" in hard mode.
+
+### Gameplay changes
+
+- If the player is caught by the guards during the Atlantida battle, answering YES to "Shall we suppose we didn't?" will now bring the game state back to the beginning of the fight rather than just undo one turn. This gets the player out of a potential unwinnable situation.
+
 ## Release 9
 
 ### Improved world model
