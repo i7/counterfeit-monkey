@@ -18,7 +18,7 @@
 
 ### Gameplay changes
 
-- If the player is caught by the guards during the Atlantida battle, answering YES to "Shall we suppose we didn't?" will now bring the game state back to the beginning of the fight rather than just undo one turn. This gets the player out of a potential unwinnable situation.
+- If the player is caught by the guards during the Atlantida battle, answering YES to "Shall we suppose we didn't?" will now bring the game state back to the beginning of the fight rather than just undo one turn. This gets the player out of a potentially unwinnable situation.
 
 ## Release 9
 
