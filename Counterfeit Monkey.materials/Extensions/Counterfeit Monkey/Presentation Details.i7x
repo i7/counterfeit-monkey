@@ -780,7 +780,7 @@ Include (-
 				! which, if we save manually during this scene, will be
 				! included in the save file. This will be compared against
 				! the autosave file if we die and attempt to autorestore later.
-				! In this way, we avoid autorestoring an autosave from a different
+				! In this way, we prevent loading an autosave from a different
 				! playthrough.
 				glk_stream_set_position(gg_savestr, 0, seekmode_Start);
 				glk_get_buffer_stream(gg_savestr, atlantida_autosave_checksum, 50);
