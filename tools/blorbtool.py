@@ -2,7 +2,7 @@
 
 # blorbtool.py: A (semi-)multifunctional Blorb utility
 # Created by Andrew Plotkin (erkyrath@eblong.com)
-# Last updated: July 16, 2016
+# Last updated: June 12, 2017
 # This script is in the public domain.
 
 # When listing chunks, you'll see output that looks like:
@@ -175,7 +175,7 @@ class BlorbChunk:
                     print('Warning: contents too short!')
                     break
                 (subdat, dat) = (dat[:strlen], dat[strlen:])
-                print('  %s resource %d: "%s"' % (typestring(restype), num, subdat.decode()))
+                print('  %s resource %d: "%s"' % (typestring(restype), num, subdat.decode('utf-8')))
             if (len(dat) > 0):
                 print('Warning: contents too long!')
         elif (self.type == b'APal'):
@@ -687,6 +687,7 @@ class BlorbTool:
         usages = [ (num, chunk) for (use, num, chunk) in blorbfile.usages if (use == b'Pict') ]
         usages.sort()   # on num
         first = True
+        wholemap = collections.OrderedDict()
         for (num, chunk) in usages:
             try:
                 (suffix, size) = analyze_pict(chunk)
@@ -701,6 +702,7 @@ class BlorbTool:
                 map['alttext'] = alttexts.get( (b'Pict',num) ).decode('utf-8')
             map['width'] = size[0]
             map['height'] = size[1]
+            wholemap['pict-%d' % (num,)] = map
             indexdat = json.dumps(map, indent=2)
             if (first):
                 first = False
@@ -716,6 +718,11 @@ class BlorbTool:
         outfl.write('};\n')
         outfl.close()
             
+        outfl = open(os.path.join(outdirname, 'resourcemap.json'), 'w')
+        json.dump(wholemap, outfl, indent=2)
+        outfl.write('\n')
+        outfl.close()
+        
         print('Wrote Quixe-compatible data to directory "%s".' % (outdirname,))
             
     def cmd_delete(self, args):
