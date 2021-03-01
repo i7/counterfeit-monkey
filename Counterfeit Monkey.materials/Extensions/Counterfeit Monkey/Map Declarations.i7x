@@ -24,73 +24,73 @@ Consequently, each place where the player's @ can appear gets its own copy of th
 These are the definitions of images associated with room maps. They have to go after the rooms themselves are defined, and it was easier keeping them all in one place than scattering the declarations through the rest of code, so this section could be commented out for testing.]
 
 [Figure of Background is the file "map-background.png".]
-Figure of Back-Alley is the file "map-back-alley.png".
-Figure of Sigil-St is the file "map-sigil-street.png".
-Figure of Amp-Bend is the file "map-ampersand-bend.png".
-Figure of Abandoned-Park is the file "map-abandoned-park.png".
-Figure of Antechamber is the file "map-antechamber.png".
-Figure of Apartment is the file "map-apartment.png".
-Figure of Aquarium is the file "map-aquarium.png".
-Figure of Arbot is the file "map-arbot.png".
-Figure of Babel is the file "map-babel.png".
-Figure of Beach is the file "map-beach.png".
-Figure of Browns is the file "map-browns.png".
-Figure of Bus-station is the file "map-bus-station.png".
-Figure of Church-garden is the file "map-church-garden.png".
-Figure of Cinema is the file "map-cinema.png".
-Figure of Counterfeit-monkey is the file "map-counterfeit-monkey.png".
-Figure of Cove is the file "map-cove.png".
-Figure of Customs House is the file "map-customs-house.png".
-Figure of Crawlspace is the file "map-crawlspace.png".
-Figure of Tin Hut is the file "map-tin-hut.png".
-Figure of Crumbling Wall is the file "map-crumbling-wall.png".
-Figure of Deep Street is the file "map-deep-street.png".
-Figure of Docks is the file "map-docks.png".
-Figure of Drinks Club is the file "map-drinks-club.png".
-Figure of Fair is the file "map-fair.png".
-Figure of Fish Market is the file "map-fish-market.png".
-Figure of Fleur is the file "map-fleur.png".
-Figure of Game Zone is the file "map-game-zone.png".
-Figure of Gift Shop is the file "map-giftshop.png".
-Figure of Grad Room is the file "map-gradroom.png".
-Figure of Heritage Corner is the file "map-heritage.png".
-Figure of Hesychius is the file "map-hesychius-street.png".
-Figure of High Street is the file "map-high-street.png".
-Figure of Hostel is the file "map-hostel.png".
-Figure of Inside Bureau is the file "map-inside-bureau.png".
-Figure of Long North is the file "map-long-north.png".
-Figure of Long South is the file "map-long-south.png".
-Figure of Monumental Staircase is the file "map-monumental-staircase.png".
-Figure of New Church is the file "map-new-church.png".
-Figure of OCW is the file "map-old-city-walls.png".
-Figure of Open Sea is the file "map-open-sea.png".
-Figure of Outdoor-cafe is the file "map-outdoor-cafe.png".
-Figure of Outside-church is the file "map-outside-church.png".
-Figure of Oval is the file "map-oval.png".
-Figure of Palm Square is the file "map-palm-square.png".
-Figure of Park Center is the file "map-park-center.png".
-Figure of Patriotic Chard Garden is the file "map-patriotic-chard.png".
-Figure of Precarious Perch is the file "map-precarious.png".
-Figure of Public Convenience is the file "map-public-convenience.png".
-Figure of Reclamation is the file "map-reclamation.png".
-Figure of Roget Close is the file "map-roget-close.png".
-Figure of Rotunda is the file "map-rotunda.png".
-Figure of Roundabout is the file "map-roundabout.png".
-Figure of Roundabout-2 is the file "map-roundabout-2.png".
-Figure of Roundabout-3 is the file "map-roundabout-3.png".
-Figure of Roundabout-4 is the file "map-roundabout-4.png".
-Figure of Screening Room is the file "map-screening-room.png".
-Figure of SJ-Basement is the file "map-sj-basement.png".
-Figure of SJ-Department is the file "map-sj-department.png".
-Figure of SJ-Lecture is the file "map-sj-lecture.png".
-Figure of SJ-Seminar is the file "map-sj-seminar-room.png".
-Figure of SJ-Hall is the file "map-sjhall.png".
-Figure of Tall Street is the file "map-tall-street.png".
-Figure of Tools Exhibit is the file "map-tools-exhibit.png".
-Figure of Traffic Circle is the file "map-traffic-circle.png".
-Figure of Turret is the file "map-turret.png".
-Figure of Webster Court is the file "map-webster-court.png".
-Figure of Winding Path is the file "map-winding-path.png".
+Figure of Back-Alley is the file "map-back-alley.png" ("A city map.").
+Figure of Sigil-St is the file "map-sigil-street.png" ("A city map.").
+Figure of Amp-Bend is the file "map-ampersand-bend.png" ("A city map.").
+Figure of Abandoned-Park is the file "map-abandoned-park.png" ("A city map.").
+Figure of Antechamber is the file "map-antechamber.png" ("A city map.").
+Figure of Apartment is the file "map-apartment.png" ("A city map.").
+Figure of Aquarium is the file "map-aquarium.png" ("A city map.").
+Figure of Arbot is the file "map-arbot.png" ("A city map.").
+Figure of Babel is the file "map-babel.png" ("A city map.").
+Figure of Beach is the file "map-beach.png" ("A city map.").
+Figure of Browns is the file "map-browns.png" ("A city map.").
+Figure of Bus-station is the file "map-bus-station.png" ("A city map.").
+Figure of Church-garden is the file "map-church-garden.png" ("A city map.").
+Figure of Cinema is the file "map-cinema.png" ("A city map.").
+Figure of Counterfeit-monkey is the file "map-counterfeit-monkey.png" ("A city map.").
+Figure of Cove is the file "map-cove.png" ("A city map.").
+Figure of Customs House is the file "map-customs-house.png" ("A city map.").
+Figure of Crawlspace is the file "map-crawlspace.png" ("A city map.").
+Figure of Tin Hut is the file "map-tin-hut.png" ("A city map.").
+Figure of Crumbling Wall is the file "map-crumbling-wall.png" ("A city map.").
+Figure of Deep Street is the file "map-deep-street.png" ("A city map.").
+Figure of Docks is the file "map-docks.png" ("A city map.").
+Figure of Drinks Club is the file "map-drinks-club.png" ("A city map.").
+Figure of Fair is the file "map-fair.png" ("A city map.").
+Figure of Fish Market is the file "map-fish-market.png" ("A city map.").
+Figure of Fleur is the file "map-fleur.png" ("A city map.").
+Figure of Game Zone is the file "map-game-zone.png" ("A city map.").
+Figure of Gift Shop is the file "map-giftshop.png" ("A city map.").
+Figure of Grad Room is the file "map-gradroom.png" ("A city map.").
+Figure of Heritage Corner is the file "map-heritage.png" ("A city map.").
+Figure of Hesychius is the file "map-hesychius-street.png" ("A city map.").
+Figure of High Street is the file "map-high-street.png" ("A city map.").
+Figure of Hostel is the file "map-hostel.png" ("A city map.").
+Figure of Inside Bureau is the file "map-inside-bureau.png" ("A city map.").
+Figure of Long North is the file "map-long-north.png" ("A city map.").
+Figure of Long South is the file "map-long-south.png" ("A city map.").
+Figure of Monumental Staircase is the file "map-monumental-staircase.png" ("A city map.").
+Figure of New Church is the file "map-new-church.png" ("A city map.").
+Figure of OCW is the file "map-old-city-walls.png" ("A city map.").
+Figure of Open Sea is the file "map-open-sea.png" ("A city map.").
+Figure of Outdoor-cafe is the file "map-outdoor-cafe.png" ("A city map.").
+Figure of Outside-church is the file "map-outside-church.png" ("A city map.").
+Figure of Oval is the file "map-oval.png" ("A city map.").
+Figure of Palm Square is the file "map-palm-square.png" ("A city map.").
+Figure of Park Center is the file "map-park-center.png" ("A city map.").
+Figure of Patriotic Chard Garden is the file "map-patriotic-chard.png" ("A city map.").
+Figure of Precarious Perch is the file "map-precarious.png" ("A city map.").
+Figure of Public Convenience is the file "map-public-convenience.png" ("A city map.").
+Figure of Reclamation is the file "map-reclamation.png" ("A city map.").
+Figure of Roget Close is the file "map-roget-close.png" ("A city map.").
+Figure of Rotunda is the file "map-rotunda.png" ("A city map.").
+Figure of Roundabout is the file "map-roundabout.png" ("A city map.").
+Figure of Roundabout-2 is the file "map-roundabout-2.png" ("A city map.").
+Figure of Roundabout-3 is the file "map-roundabout-3.png" ("A city map.").
+Figure of Roundabout-4 is the file "map-roundabout-4.png" ("A city map.").
+Figure of Screening Room is the file "map-screening-room.png" ("A city map.").
+Figure of SJ-Basement is the file "map-sj-basement.png" ("A city map.").
+Figure of SJ-Department is the file "map-sj-department.png" ("A city map.").
+Figure of SJ-Lecture is the file "map-sj-lecture.png" ("A city map.").
+Figure of SJ-Seminar is the file "map-sj-seminar-room.png" ("A city map.").
+Figure of SJ-Hall is the file "map-sjhall.png" ("A city map.").
+Figure of Tall Street is the file "map-tall-street.png" ("A city map.").
+Figure of Tools Exhibit is the file "map-tools-exhibit.png" ("A city map.").
+Figure of Traffic Circle is the file "map-traffic-circle.png" ("A city map.").
+Figure of Turret is the file "map-turret.png" ("A city map.").
+Figure of Webster Court is the file "map-webster-court.png" ("A city map.").
+Figure of Winding Path is the file "map-winding-path.png" ("A city map.").
 
 A room has a figure-name called the local map.
 
@@ -219,17 +219,17 @@ The design aims for the yacht plans are:
 -- to keep rewarding the player with slightly surprising new visuals even at the end of the game
 -- at the same time, to present an image whose colors and crisp design sensibilities do line up with those of the earlier maps]
 
-Figure of Sunning Deck is the file "map-sunning-deck.png".
-Figure of Galley is the file "map-galley.png".
-Figure of Navigation is the file "map-navigation.png".
-Figure of Foredeck is the file "map-fore.png".
-Figure of Your-Bunk is the file "map-your-bunk.png".
-Figure of Slango-Bunk is the file "map-slango-bunk.png".
-Figure of Your-Head is the file "map-your-head.png".
-Figure of Slango-Head is the file "map-slango-head.png".
-Figure of Brock-Bunk is the file "map-brock-bunk.png".
-Figure of Brock-head is the file "map-brock-head.png".
-Figure of Crew-Bunk is the file "map-crew-bunk.png".
+Figure of Sunning Deck is the file "map-sunning-deck.png" ("The floor plan of a yacht.").
+Figure of Galley is the file "map-galley.png" ("The floor plan of a yacht.").
+Figure of Navigation is the file "map-navigation.png" ("The floor plan of a yacht.").
+Figure of Foredeck is the file "map-fore.png" ("The floor plan of a yacht.").
+Figure of Your-Bunk is the file "map-your-bunk.png" ("The floor plan of a yacht.").
+Figure of Slango-Bunk is the file "map-slango-bunk.png" ("The floor plan of a yacht.").
+Figure of Your-Head is the file "map-your-head.png" ("The floor plan of a yacht.").
+Figure of Slango-Head is the file "map-slango-head.png" ("The floor plan of a yacht.").
+Figure of Brock-Bunk is the file "map-brock-bunk.png" ("The floor plan of a yacht.").
+Figure of Brock-head is the file "map-brock-head.png" ("The floor plan of a yacht.").
+Figure of Crew-Bunk is the file "map-crew-bunk.png" ("The floor plan of a yacht.").
 
 The local map of Sunning Deck is the Figure of Sunning Deck.
 The local map of Galley is the Figure of Galley.

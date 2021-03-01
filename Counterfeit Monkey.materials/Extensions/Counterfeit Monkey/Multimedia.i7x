@@ -72,67 +72,67 @@ The map concept borrows from commercial game minimaps that show goal locations a
 
 Like the compass rose in Bronze, the compass rose here shows exits in different shades depending on whether the rooms in those directions have already been visited. The compass is also hyperlinked so that the player can click on it as an alternative to typing directions. ]
 
-Figure of dim northwest is the file "grey-nw.png".
-Figure of dim north is the file "grey-n.png".
-Figure of dim northeast is the file "grey-ne.png".
-Figure of dim west is the file "grey-w.png".
-Figure of dim east is the file "grey-e.png".
-Figure of dim southwest is the file "grey-sw.png".
-Figure of dim south is the file "grey-s.png".
-Figure of dim southeast is the file "grey-se.png".
-Figure of dim up is the file "grey-u.png".
-Figure of dim down is the file "grey-d.png".
+Figure of dim northwest is the file "grey-nw.png" ("dim northwest").
+Figure of dim north is the file "grey-n.png" ("dim north").
+Figure of dim northeast is the file "grey-ne.png" ("dim northeast").
+Figure of dim west is the file "grey-w.png" ("dim west").
+Figure of dim east is the file "grey-e.png" ("dim east").
+Figure of dim southwest is the file "grey-sw.png" ("dim southwest").
+Figure of dim south is the file "grey-s.png" ("dim south").
+Figure of dim southeast is the file "grey-se.png" ("dim southeast").
+Figure of dim up is the file "grey-u.png" ("dim up").
+Figure of dim down is the file "grey-d.png" ("dim down").
 
-Figure of northwest is the file "white-nw.png".
-Figure of north is the file "white-n.png".
-Figure of northeast is the file "white-ne.png".
-Figure of west is the file "white-w.png".
-Figure of east is the file "white-e.png".
-Figure of southwest is the file "white-sw.png".
-Figure of south is the file "white-s.png".
-Figure of southeast is the file "white-se.png".
-Figure of up is the file "white-u.png".
-Figure of down is the file "white-d.png".
+Figure of northwest is the file "white-nw.png" ("northwest").
+Figure of north is the file "white-n.png" ("north").
+Figure of northeast is the file "white-ne.png" ("northeast").
+Figure of west is the file "white-w.png" ("west").
+Figure of east is the file "white-e.png" ("east").
+Figure of southwest is the file "white-sw.png" ("southwest").
+Figure of south is the file "white-s.png" ("south").
+Figure of southeast is the file "white-se.png" ("southeast").
+Figure of up is the file "white-u.png" ("up").
+Figure of down is the file "white-d.png" ("down").
 
-Figure of new northwest is the file "blue-nw.png".
-Figure of new north is the file "blue-n.png".
-Figure of new northeast is the file "blue-ne.png".
-Figure of new west is the file "blue-w.png".
-Figure of new east is the file "blue-e.png".
-Figure of new southwest is the file "blue-sw.png".
-Figure of new south is the file "blue-s.png".
-Figure of new southeast is the file "blue-se.png".
-Figure of new up is the file "blue-u.png".
-Figure of new down is the file "blue-d.png".
+Figure of new northwest is the file "blue-nw.png" ("unvisited northwest").
+Figure of new north is the file "blue-n.png" ("unvisited north").
+Figure of new northeast is the file "blue-ne.png" ("unvisited northeast").
+Figure of new west is the file "blue-w.png" ("unvisited west").
+Figure of new east is the file "blue-e.png" ("unvisited east").
+Figure of new southwest is the file "blue-sw.png" ("unvisited southwest").
+Figure of new south is the file "blue-s.png" ("unvisited south").
+Figure of new southeast is the file "blue-se.png" ("unvisited southeast").
+Figure of new up is the file "blue-u.png" ("unvisited up").
+Figure of new down is the file "blue-d.png" ("unvisited down").
 
-Figure of dim fore-port is the file "grey-fp.png".
-Figure of dim fore is the file "grey-f.png".
-Figure of dim fore-starboard is the file "grey-fsb.png".
-Figure of dim port is the file "grey-p.png".
-Figure of dim starboard is the file "grey-sb.png".
-Figure of dim aft-port is the file "grey-ap.png".
-Figure of dim aft is the file "grey-a.png".
-Figure of dim aft-starboard is the file "grey-asb.png".
+Figure of dim fore-port is the file "grey-fp.png" ("dim fore-port").
+Figure of dim fore is the file "grey-f.png" ("dim fore").
+Figure of dim fore-starboard is the file "grey-fsb.png" ("dim fore-starboard").
+Figure of dim port is the file "grey-p.png" ("dim port").
+Figure of dim starboard is the file "grey-sb.png" ("dim starboard").
+Figure of dim aft-port is the file "grey-ap.png" ("dim aft-port").
+Figure of dim aft is the file "grey-a.png" ("dim aft").
+Figure of dim aft-starboard is the file "grey-asb.png" ("dim aft-starboard").
 
-Figure of fore-port is the file "white-fp.png".
-Figure of fore is the file "white-f.png".
-Figure of fore-starboard is the file "white-fsb.png".
-Figure of port is the file "white-p.png".
-Figure of starboard is the file "white-sb.png".
-Figure of aft-port is the file "white-ap.png".
-Figure of aft is the file "white-a.png".
-Figure of aft-starboard is the file "white-asb.png".
+Figure of fore-port is the file "white-fp.png" ("fore-port").
+Figure of fore is the file "white-f.png" ("fore").
+Figure of fore-starboard is the file "white-fsb.png" ("fore-starboard").
+Figure of port is the file "white-p.png" ("port").
+Figure of starboard is the file "white-sb.png" ("starboard").
+Figure of aft-port is the file "white-ap.png" ("aft-port").
+Figure of aft is the file "white-a.png" ("aft").
+Figure of aft-starboard is the file "white-asb.png" ("aft-starboard").
 
-Figure of new fore-port is the file "blue-fp.png".
-Figure of new fore is the file "blue-f.png".
-Figure of new fore-starboard is the file "blue-fsb.png".
-Figure of new port is the file "blue-p.png".
-Figure of new starboard is the file "blue-sb.png".
-Figure of new aft-port is the file "blue-ap.png".
-Figure of new aft is the file "blue-a.png".
-Figure of new aft-starboard is the file "blue-asb.png".
+Figure of new fore-port is the file "blue-fp.png" ("unvisited fore-port").
+Figure of new fore is the file "blue-f.png" ("unvisited fore").
+Figure of new fore-starboard is the file "blue-fsb.png" ("unvisited fore-starboard").
+Figure of new port is the file "blue-p.png" ("unvisited port").
+Figure of new starboard is the file "blue-sb.png" ("unvisited starboard").
+Figure of new aft-port is the file "blue-ap.png" ("unvisited aft-port").
+Figure of new aft is the file "blue-a.png" ("unvisited aft").
+Figure of new aft-starboard is the file "blue-asb.png" ("unvisited aft-starboard").
 
-Figure of center-squiggle is the file "center-squiggle.png".
+Figure of center-squiggle is the file "center-squiggle.png" ("center silcrow").
 
 
 [The following is a hack. Originally the figure name associations were all properties of the direction objects, but some sort of memory bug happened when image properties were added to the nautical directions. The result was that the map itself was reconfigured weirdly -- for instance, Slango's Head was declared in source to be aft from Slango's Bunk, but in the game model it would be port of Slango's Bunk instead.]
