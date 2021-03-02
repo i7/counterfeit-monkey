@@ -257,9 +257,7 @@ Section 3 - Assigning and completing tasks
 
 Table of Tasks Pending
 Citation (text)
-"Get my backpack from the cinema"
-"Retrieve your remaining possessions from locker at hostel"
-"Meet your colleague Slango at Counterfeit Monkey"
+"Get out of these back streets"
 with 40 blank rows.
 
 Table of Tasks Complete
@@ -315,13 +313,18 @@ To decide what number is the count of pending tasks:
 	let N be the number of filled rows in the Table of Tasks Pending;
 	decide on N.
 
+Check going to Fair when the barrier is unlocked and "Get out of these back streets" is under way:
+	complete "Get out of these back streets";
+	assign "Get my backpack from the cinema";
+	assign "Retrieve your remaining possessions from locker at hostel";
+	assign "Meet your colleague Slango at Counterfeit Monkey".
+
 After going to Fair when the barrier is unlocked and we have not planned:
 	say "I'm glad to see you're feeling ready to face the wider world. [run paragraph on]";
 	try planning;
 	if tutorial mode is true:
 		say "[first custom style][bracket]To go over our current goals, type GOALS at any time.[close bracket][roman type][paragraph break]";
 	continue the action.
-
 
 Section 4 - Achievements
 
