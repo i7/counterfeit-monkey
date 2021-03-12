@@ -4,7 +4,7 @@
 
 An Inform 7 game by Emily Short
 
-<img src="https://raw.githubusercontent.com/i7/counterfeit-monkey/master/Counterfeit%20Monkey.materials/Cover.png" width=450px alt="Cover art" />
+<img src="https://raw.githubusercontent.com/i7/counterfeit-monkey/master/Counterfeit%20Monkey.materials/Cover.png" width=450px alt="A collage with a cat, a crumpled 50 Euro bill, some secret plans and a city map." />
 
 Copyright © 2012-2016 by Emily Short and others
 
