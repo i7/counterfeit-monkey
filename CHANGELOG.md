@@ -1,6 +1,9 @@
 # Change log
 
-## Unreleased
+## Release 10
+
+- The image files use improved compression, resulting in reduced total file size.
+- All images, including the cover image, now have short descriptions. I don't know if there are any interpreters or screen readers out there that will actually read these to the player, except for the cover image.
 
 ### Improved world model
 
@@ -19,6 +22,7 @@
 ### Gameplay changes
 
 - If the player is caught by the guards during the Atlantida battle, answering YES to "Shall we suppose we didn't?" will now bring the game state back to the beginning of the fight rather than just undo one turn. This gets the player out of a potentially unwinnable situation.
+- To reduce initial confusion, the game now begins with a single goal, rather than three that refer to things the player does not know about yet.
 
 ## Release 9
 
@@ -52,7 +56,7 @@
 - The boar will now butt the car door open if the player tries to hide inside a car.
 - The tiptoe and the the bodypart kind of tit now count toward the Igor Rosehip achievement.
 - When the game ends, the ACHIEVEMENTS command will list any achievements the player has not yet accomplished.
-- On hard mode, the chair in the Language Studies Seminar Room is now red, and as a consequence the hair and the hairpiece also are red. This prevents an unwinnable situation that would occur if the player destroyed the hair by turning it into air. 
+- On hard mode, the chair in the Language Studies Seminar Room is now red, and as a consequence the hair and the hairpiece also are red. This prevents an unwinnable situation that would occur if the player destroyed the hair by turning it into air.
 - The air will now disappear even if the player is not holding it.
 - The oil painting and the tilting piano are now too heavy to carry.
 - The bull will trigger the safety override of the bucket.
