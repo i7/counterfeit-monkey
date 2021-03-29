@@ -14,7 +14,7 @@ See https://github.com/DavidKinder/Git and https://github.com/erkyrath/cheapglk
 
 See https://github.com/erkyrath/glulxe and https://github.com/erkyrath/cheapglk
 
-The line `/* #define VM_PROFILING (1) */` in the glulxe.h header file must be uncommented before compiling. And while you are editing that file, you can also make the running time of the test shorter by uncommenting the line `#define SERIALIZE_CACHE_RAM (1)` and *commenting* the line `#define VERIFY_MEMORY_ACCESS (1)`.
+The line `/* #define VM_PROFILING (1) */` in the glulxe.h header file must be uncommented before compiling. And while you are editing that file, you can also make the running time of the test shorter by *commenting* the line `#define VERIFY_MEMORY_ACCESS (1)`.
 
 
 - Git compiled with the Glk library RemGlk (for regression testing with RegTest)
@@ -51,7 +51,7 @@ http://eblong.com/zarf/plotex/regtest.html
 
 The profile.sh script will run the test_me test through a profiling-enabled Glulxe interpreter (see above and run the results through profile-analyze.py. This will take several minutes.
 
-The script expects to be run from inside the folder tools/profiling, and needs the files profile-analyze.py and dispatch_dump.xml at the same location (included in the repository.) It also needs a profiling-enabled interpreter binary. (I'm using Glulxe with CheapGlk, see details above.) By default it looks for one named glulxe in the /tools folder. It will also look for gameinfo.dbg in the Counterfeit Monkey.inform/Build folder. The Inform IDE will usually create this file when compiling, but might delete it on quitting unless the option `Clean build files before closing` is off in the IDE advanced preferences.
+The script expects to be run from inside the folder tools/profiling, and needs the files profile-analyze.py and dispatch_dump.xml at the same location (included in the repository.) It also needs a profiling-enabled interpreter binary. (I'm using Glulxe with CheapGlk, see details above.) By default it looks for one named glulxe in the `tools` folder. It will also look for gameinfo.dbg in the `Counterfeit Monkey.inform/Build` folder. The Inform IDE will usually create this file when compiling, but might delete it on quitting unless the option `Clean build files before closing` is off in the IDE advanced preferences.
 
 If you just want a single performance number to check whether a change made the code slower or faster, the script profiledf.sh will do this for you. (DF is for Dumbfrotz, because the script writes its reports in the Dumbfrotz format.) It works just like the profile.sh script and has the same prerequisites, but will automatically compare the number of VM cycles used this run to the last run and check if things have become slower or faster. It does this by writing and reading a file named profile-report-df.txt.
 
@@ -63,3 +63,24 @@ https://github.com/erkyrath/glulxe
 
 dispatch_dump.xml is taken from:
 https://github.com/erkyrath/glk-dev/tree/master/dispatch_dump
+
+## Building a profiling-enabled Glulxe on macOS
+
+This is how I built Glulxe with profiling enabled on macOS 11 Big Sur. I will assume that you have Make and Clang (or another C compiler) installed. I got them through the Xcode command line tools.
+
+Dowload the latest versions of [Glulxe](https://github.com/erkyrath/glulxe) and [CheapGlk](https://github.com/erkyrath/cheapglk) from Github. It is probably easier to download them as zip instead of cloning them.
+
+Make sure that the Glulxe folder and the CheapGlk folder are in the same parent folder, and that the CheapGlk folder is named exactly `cheapglk`. It may be named `cheapglk-master` by default. If so, rename it.
+
+Navigate to the cheapglk folder in Terminal and type `make`. This will hopefully build the CheapGlk library.
+
+Edit the file `glulxe.h` in the glulxe folder using your text editor of choice. The line `/* #define VM_PROFILING (1) */` (at the time of writing, this is [line 57](https://github.com/erkyrath/glulxe/blob/master/glulxe.h#L57)) must be uncommented.
+
+Navigate to the glulxe folder in Terminal and type `make`. This will hopefully detect the CheapGlk library automatically and build the Glulxe interpreter.
+
+Move the Glulxe binary to `counterfeit-monkey/tools`
+
+Done!
+
+
+
