@@ -6,7 +6,7 @@ The large amount of randomized text in Counterfeit Monkey causes problems for au
 
 I have used these scripts on OS X 10.11.6 with the Bash shell, the system default Python 2.7.10 and three different glulx interpreters: 
 
-- Git (by far the fastest one) compiled with the Glk library CheapGlk 
+- Git (the fast Glulx interpreter, not the version control system) compiled with the Glk library CheapGlk 
 
 See https://github.com/DavidKinder/Git and https://github.com/erkyrath/cheapglk
 
@@ -14,14 +14,13 @@ See https://github.com/DavidKinder/Git and https://github.com/erkyrath/cheapglk
 
 See https://github.com/erkyrath/glulxe and https://github.com/erkyrath/cheapglk
 
-The line `/* #define VM_PROFILING (1) */` in the glulxe.h header file must be uncommented before compiling. And while you are editing that file, you can also make the running time of the test shorter by *commenting* the line `#define VERIFY_MEMORY_ACCESS (1)`.
-
+The line `/* #define VM_PROFILING (1) */` in the glulxe.h header file must be uncommented before compiling. And while you are editing that file, you can also make the running time of the test shorter by *commenting out* the line `#define VERIFY_MEMORY_ACCESS (1)`.
 
 - Git compiled with the Glk library RemGlk (for regression testing with RegTest)
 
 See https://github.com/erkyrath/remglk
 
-None of these are included here – you will have to compile them yourself and change the interpreter paths in the scripts accordingly. They expect a Counterfeit Monkey.gblorb file in Counterfeit Monkey.materials/Release, and the profiling script will also look for gameinfo.dbg in the Counterfeit Monkey.inform/Build folder.
+None of these are included here – you will have to compile them yourself and change the interpreter paths in the scripts accordingly. They expect a `Counterfeit Monkey.gblorb` file in `Counterfeit Monkey.materials/Release`, and the profiling script will also look for `gameinfo.dbg` in the `Counterfeit Monkey.inform/Build` folder. For more detailed compilation instructions, keep reading.
 
 ## Simple tests: test.sh and rebuild_transcripts.sh
 
@@ -68,19 +67,18 @@ https://github.com/erkyrath/glk-dev/tree/master/dispatch_dump
 
 This is how I built Glulxe with profiling enabled on macOS 11 Big Sur. I will assume that you have Make and Clang (or another C compiler) installed. I got them through the Xcode command line tools.
 
-Dowload the latest versions of [Glulxe](https://github.com/erkyrath/glulxe) and [CheapGlk](https://github.com/erkyrath/cheapglk) from Github. It is probably easier to download them as zip instead of cloning them.
+1. Dowload the latest versions of [Glulxe](https://github.com/erkyrath/glulxe) and [CheapGlk](https://github.com/erkyrath/cheapglk) from Github. It is probably easier to download them as zip instead of cloning them.
 
-Make sure that the Glulxe folder and the CheapGlk folder are in the same parent folder, and that the CheapGlk folder is named exactly `cheapglk`. It may be named `cheapglk-master` by default. If so, rename it.
+2. Make sure that the Glulxe folder and the CheapGlk folder are in the same parent folder, and that the CheapGlk folder is named exactly `cheapglk`. It may be named `cheapglk-master` by default. If so, rename it.
 
-Navigate to the cheapglk folder in Terminal and type `make`. This will hopefully build the CheapGlk library.
+3. Navigate to the cheapglk folder in Terminal and type `make`. This will hopefully build the CheapGlk library.
 
-Edit the file `glulxe.h` in the glulxe folder using your text editor of choice. The line `/* #define VM_PROFILING (1) */` (at the time of writing, this is [line 57](https://github.com/erkyrath/glulxe/blob/master/glulxe.h#L57)) must be uncommented.
+4. Edit the file `glulxe.h` in the glulxe folder using your text editor of choice. The line `/* #define VM_PROFILING (1) */` (at the time of writing, this is [line 57](https://github.com/erkyrath/glulxe/blob/master/glulxe.h#L57)) must be uncommented.
 
-Navigate to the glulxe folder in Terminal and type `make`. This will hopefully detect the CheapGlk library automatically and build the Glulxe interpreter.
+5. Navigate to the glulxe folder in Terminal and type `make`. This will hopefully detect the CheapGlk library automatically and build the Glulxe interpreter.
 
-Move the Glulxe binary to `counterfeit-monkey/tools`
+6. Move the Glulxe binary to `counterfeit-monkey/tools`
 
-Done!
+7. Done!
 
-
-
+To compile Git (not the version control system!) with the RemGlk library, the process is pretty much the same. Download the Git source from https://github.com/DavidKinder/Git and the RemGlk source from https://github.com/erkyrath/remglk. Make sure that they share the same parent folder and that the RemGlk folder is named `remglk`. The main difference is that the [Git Makefile](https://github.com/DavidKinder/Git/blob/master/Makefile) must be edited so that line 8, `GLK = cheapglk`, is changed to `GLK = remglk`. And of course there is no `VM_PROFILING` line in Git to edit. The resulting binary should be renamed `git-remglk` and moved to the `tools/regtest` folder.
