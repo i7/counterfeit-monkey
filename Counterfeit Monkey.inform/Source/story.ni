@@ -21,6 +21,8 @@ Chapter 1 - Bibliographical Data
 
 Include (- Switches z; -) before "Other Configuration" in "Output.i6t".
 
+[Include (- Serial "123456"; -).]
+
 The story headline is "A Removal".
 
 The story description is "Anglophone Atlantis has been an independent nation since an April day in 1822, when a well-aimed shot from their depluralizing cannon reduced the British colonizing fleet to one ship.
