@@ -1576,6 +1576,9 @@ Guidebook is a book in the Hostel. The printed name is "Guidebook to Anglophone 
 
 There's too much here to take in in a quick read, but we could look up specific topics if we wanted to read more." The contents of the guidebook is the Table of Local Attractions.
 
+Instead of searching the guidebook:
+	try reading the guidebook.
+
 A first after reading a command (this is the cut the the rule):
 	while the player's command includes "the":
 		cut the matched text.
