@@ -22,6 +22,37 @@ This is the take visual actions out of world rule:
 	if acting fast:
 		rule succeeds.
 
+Include
+(-
+
+! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
+! Time.i6t: Scene Questions (modified)
+! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
+
+[ SceneUtility sc task;
+    if (sc <= 0) return 0;
+    if (task == 1 or 2) {
+	    if (scene_endings-->(sc-1) == 0) return RunTimeProblem(RTP_SCENEHASNTSTARTED, sc);
+    } else {
+	    if (scene_endings-->(sc-1) <= 1) return RunTimeProblem(RTP_SCENEHASNTENDED, sc);
+    }
+    switch (task) {
+	    1:
+		    if (the_time >= scene_started-->(sc-1)) ! current time is the same or later than ending time, so no change
+			    return (the_time - scene_started-->(sc-1))%(TWENTY_FOUR_HOURS);
+		    else ! current time is less than ending time, so add a day to current time
+			    return ((the_time+TWENTY_FOUR_HOURS) - scene_started-->(sc-1))%(TWENTY_FOUR_HOURS);
+	    2: return scene_started-->(sc-1);
+	    3:
+		    if (the_time >=scene_ended-->(sc-1)) ! current time is the same or later than ending time, so no change
+			    return (the_time - scene_ended-->(sc-1))%(TWENTY_FOUR_HOURS);
+		    else ! current time is less than ending time, so add a day to current time
+			    return ((the_time+TWENTY_FOUR_HOURS) - scene_ended-->(sc-1))%(TWENTY_FOUR_HOURS);
+	    4: return scene_ended-->(sc-1);
+    }
+];
+
+-) instead of "Scene Questions" in "Time.i6t".
 
 
 Section 2 - Times of Day
