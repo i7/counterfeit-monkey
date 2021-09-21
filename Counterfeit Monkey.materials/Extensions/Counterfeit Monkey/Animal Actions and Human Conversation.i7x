@@ -5430,7 +5430,7 @@ Rule for beat-producing when the current interlocutor is my mother:
 		casually queue monocle-comment;
 	otherwise if the N is open:
 		try my mother closing N;
-	otherwise if the pot-of-yogurt is not seen:
+	otherwise if the pot-of-yogurt is not seen and we're his girlfriend is not available:
 		try my mother opening N;
 	otherwise if something portable (called impediment) is on the futon:
 		try my mother clearing the futon;
