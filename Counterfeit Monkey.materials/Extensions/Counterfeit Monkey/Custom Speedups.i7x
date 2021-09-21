@@ -171,8 +171,13 @@ Include (-
 
 		! Pick a random thing out of all found and return it
 		! I'm reusing Table of Inventory Ordering for this until somebody tells me not to
-		if ( i > 0)
-			thing = ((+ Table of Inventory Ordering +)-->2)-->(random(i) - 1 + COL_HSIZE);
+		if (i > 1)
+		{
+			j = random(i - 1);
+			thing = ((+ Table of Inventory Ordering +)-->2)-->(j + COL_HSIZE);
+		}
+		if (metaclass(thing) == nothing)
+			thing = nothing;
 		return thing;
 	];
 
