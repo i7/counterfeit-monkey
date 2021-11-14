@@ -1163,7 +1163,7 @@ Rule for writing a topic sentence about a car (called target car):
 	if N is greater than 1:
 		say "There are [N in words] cars parked [if the location is offroad]illegally [end if]nearby. ";
 	otherwise:
-		say "Our car[one of] [--] a sub-sub-compact that looks like it might be outraced by a kid on a scooter [--][or] [--] which might better be described as a covered bicycle [--][or][at random] is parked [if the location is offroad]illegally [end if]nearby. "
+		say "Our [if boldening is true][bold type][end if]car[roman type][one of] [--] a sub-sub-compact that looks like it might be outraced by a kid on a scooter [--][or] [--] which might better be described as a covered bicycle [--][or][at random] is parked [if the location is offroad]illegally [end if]nearby. "
 
 A car can be fueled or unfueled. A car is usually unfueled.
 
