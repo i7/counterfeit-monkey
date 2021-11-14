@@ -203,7 +203,7 @@ Carry out letter-removing the topic understood from something:
 					try removing the first thing held by the second noun from the second noun instead;
 			say "[We] can't see any such thing [in-on the second noun]." instead;
 	unless the current setting of the letter-remover is noun-text:
-		now the current setting of the letter-remover is noun-text;
+		now the current setting of the letter-remover is the substituted form of noun-text;
 		now the letter-remover is changing;
 	try waving the letter-remover at the second noun.
 
