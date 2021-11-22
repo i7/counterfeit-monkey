@@ -13,6 +13,7 @@ Chapter - The graphics window
 
 The background color of the graphics window is [000000] "0".
 The measurement of the graphics window is 50.
+A g-window has a number called maximum size.
 The maximum size of the graphics window is 722.
 The position of the graphics window is g-placeleft.
 
@@ -37,6 +38,9 @@ Map-ratio is initially 0.8395. [I guess this is how we do "constants" in Inform 
 
 Ideal-width is a number that varies.
 
+To force the size of (win - a g-window) to (size - a number ):
+	(- glk_window_set_arrangement( glk_window_get_parent( {win}.(+ ref number +) ), {win}.(+ position +) + 14, {size}, GLK_NULL ); -).
+	
 To adjust width of the graphics window:
 	let original width be the width of the graphics window;
 	now ideal-width is the width of the measuring window / 2;
