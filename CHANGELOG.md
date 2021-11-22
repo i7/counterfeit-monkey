@@ -1,5 +1,17 @@
 # Change log
 
+## Unreleased
+
+- Many scenes would never end if initiated close enough to midnight. Getting past the secretary seems to have been especially vulnerable to this.
+- Sometimes the first lines of the game would not be printed after a reset. This was caused by a bug in the Flexible Windows extension, and was fixed by updating to the new version 15/210811 by Dannii Willis.
+- Adds LOOK IN GUIDEBOOK as a synonym for reading it.
+- Adds highlighting (bold text in highlight mode) to more objects mentioned in the text. Reported by Dan Fabulich.
+- REMOVE X FROM Y would sometimes appear to use the previous letter setting rather than X. It should now be identical in behavior to WAVE X-REMOVER AT Y.
+- Alex's mother could pick up the player or other impossibly heavy items from the futon and place them on the counter.
+- When Alex's mother asks if we are Alex's girlfriend, she will not leave until given an answer.
+- Alex's mother and the roc would occasionally examine "illegal object -1" or similar.
+
+
 ## Release 10
 
 - The image files use improved compression, resulting in reduced total file size.
