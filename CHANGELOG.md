@@ -8,9 +8,8 @@
 - Adds highlighting (bold text in highlight mode) to more objects mentioned in the text. Reported by Dan Fabulich.
 - REMOVE X FROM Y would sometimes appear to use the previous letter setting rather than X. It should now be identical in behavior to WAVE X-REMOVER AT Y.
 - Alex's mother could pick up the player or other impossibly heavy items from the futon and place them on the counter.
-- When Alex's mother asks if we are Alex's girlfriend, she will not leave until given an answer.
+- When Alex's mother asks if we are Alex's girlfriend, she will now refuse to leave until given an answer.
 - Alex's mother and the roc would occasionally examine "illegal object -1" or similar.
-
 
 ## Release 10
 
