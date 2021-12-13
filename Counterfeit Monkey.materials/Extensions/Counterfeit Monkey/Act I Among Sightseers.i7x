@@ -402,6 +402,17 @@ Check turning on tutorial mode:
 			otherwise:
 				stop the action.
 
+An instructional rule (this is the teach enabling graphics rule):
+	if the teach enabling graphics rule is listed in the completed instruction list:
+		make no decision;
+	if the graphics window is g-present:
+		make no decision;
+	unless glulx graphics is supported:
+		make no decision;
+	say "[first custom style]You can open a map window by typing GRAPHICS ON, and close it again with GRAPHICS OFF. You can also take a quick peek at a full-size map by typing MAP.[roman type]";
+	add the teach enabling graphics rule to the completed instruction list, if absent;
+	add the teach disabling graphics rule to the completed instruction list, if absent;
+	rule succeeds.
 
 An instructional rule (this is the teach examining thoroughness rule):
 	if the teach examining thoroughness rule is listed in the completed instruction list:
@@ -683,7 +694,7 @@ The teach disabling graphics rule is listed after the teach meta-features rule i
 A last instructional rule (this is the teach disabling graphics rule):
 	if the teach disabling graphics rule is listed in the completed instruction list:
 		make no decision;
-	unless glulx graphics is supported:
+	if the graphics window is g-unpresent:
 		make no decision;
 	say "[first custom style]The map and compass can be switched off by typing GRAPHICS OFF. If you change your mind later, switch them back on with GRAPHICS ON.[roman type]";
 	add the teach disabling graphics rule to the completed instruction list, if absent;
