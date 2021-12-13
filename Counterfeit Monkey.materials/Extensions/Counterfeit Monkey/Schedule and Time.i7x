@@ -409,7 +409,7 @@ When Pinata Celebration begins:
 	now the current daytime is sunset;
 	now the description of Tall Street is "Tall Street is full of families, some reaching as far as the old park at the east end of the street.
 
-They're gathered around a hanging cardboard figure in front of the Bureau of Orthography. The children, and a few of the adults, are taking turns hitting it with sticks, hoping for a shower of comma-shaped candy. This is a common holiday activity, but from the disgruntled comments and the petulant expressions of the children, it has already been going on longer than is strictly fun."
+They're gathered around [if boldening is true][bold type][end if]a hanging cardboard figure[roman type] in front of the Bureau of Orthography. The children, and a few of the adults, are taking turns hitting it with sticks, hoping for a shower of comma-shaped candy. This is a common holiday activity, but from the disgruntled comments and the petulant expressions of the children, it has already been going on longer than is strictly fun."
 
 When Pinata Celebration ends:
 	if the player is in Tall Street:
@@ -431,7 +431,7 @@ Some assembled families are a plural-named man. They are scenery. The descriptio
 Every turn during Pinata Celebration:
 	if the location is Tall Street:
 		if a random chance of 2 in 3 succeeds:
-			say "[one of]Another child takes a whack at the hanging figure. She bounces away from the blow, but does not break[or]The latest child's attack swings wide of the figure[or]The next child doesn't seem to have been properly blindfolded and connects with surprising dexterity and sureness, but the thing doesn't break[or]Among a general rumble of assent, one of the fathers gives Atlantida a hard smack with a baseball bat. She doesn't crack[cycling].";
+			say "[one of]Another child takes a whack at [if boldening is true][bold type][end if]the hanging figure[roman type]. She bounces away from the blow, but does not break[or]The latest child's attack swings wide of the figure[or]The next child doesn't seem to have been properly blindfolded and connects with surprising dexterity and sureness, but the thing doesn't break[or]Among a general rumble of assent, one of the fathers gives Atlantida a hard smack with a baseball bat. She doesn't crack[cycling].";
 	if the location is Abandoned Park:
 		if a random chance of 2 in 3 succeeds:
 			say "[one of]From the west comes a sound of cheering and shouting[or]The crowd to the west boos as one[at random]."
