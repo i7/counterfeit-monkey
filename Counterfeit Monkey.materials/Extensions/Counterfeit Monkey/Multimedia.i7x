@@ -430,55 +430,8 @@ To draw compass:
 	(- DrawCompass((+ graphics window +).(+ ref number +),(+ grid-size +)); -).
 
 
-Understand "graphics on" or "enable graphics" or "graphics" or "graphics mode" as enabling graphics. Enabling graphics is an action out of world.
 
-
-Include (-
-
-Array graphics_disabled --> 1;
-
--) after "Definitions.i6t".
-
-To set graphics disabled flag:
-    (- if (arrayAsMillisecs(totalTestStartTime) == 0) @protect graphics_disabled 4;
-    graphics_disabled-->0 = 1; -)
-
-[We can only have one restore and restart protected variable at a time, so skip protecting the graphics_disabled flag if we are measuring total play time.]
-
-To unset graphics disabled flag:
-    (- graphics_disabled-->0 = 0; -)
-
-To decide whether graphics is disabled:
-	(- graphics_disabled-->0 -).
-
-
-Carry out enabling graphics:
-	unless glulx graphics is supported:
-		say "[first custom style][bracket]This interpreter does not support displaying graphics.[close bracket][roman type][paragraph break]" instead;
-	if the graphics window is g-present:
-		say "[first custom style][bracket]Graphics are already enabled.[close bracket][roman type][paragraph break]";
-	otherwise:
-		unless the measuring window is g-present:
-			open the measuring window;
-		now current graphics drawing rule is the compass-drawing rule;
-		open the graphics window;
-		start looking for graphlinks;
-		unset graphics disabled flag;
-		say "[first custom style][bracket]Graphics are now enabled.[close bracket][roman type][paragraph break]".
-
-Understand "graphics off" or "text only" or "text mode" as disabling graphics. Disabling graphics is an action out of world.
-
-Carry out disabling graphics:
-	unless glulx graphics is supported:
-		say "[first custom style][bracket]This interpreter does not support displaying graphics.[close bracket][roman type][paragraph break]" instead;
-	add the teach disabling graphics rule to the completed instruction list, if absent;
-	if the graphics window is g-present:
-		close the graphics window;
-		set graphics disabled flag;
-		say "[first custom style][bracket]Graphics are now disabled.[close bracket][roman type][paragraph break]";
-	otherwise:
-		say "[first custom style][bracket]Graphics are already disabled.[close bracket][roman type][paragraph break]".
-
+Section 2 - Full-window map
 
 Include (-
 
@@ -864,12 +817,13 @@ Include (-
 
 -).
 
+Seen-map is a truth state that varies. Seen-map is initially false.
 
 Understand "map" as big-map-showing. Big-map-showing is an action out of world.
 
 Carry out big-map-showing:
 	unless glulx graphics is supported:
-		say "[first custom style][bracket]This interpreter does not support displaying 	graphics.[close bracket][roman type][paragraph break]" instead;
+		say "[first custom style][bracket]This interpreter does not support displaying graphics.[close bracket][roman type][paragraph break]" instead;
 	close the status window;
 	close the measuring window;
 	let was-showing-map be false;
@@ -884,7 +838,11 @@ Carry out big-map-showing:
 		adjust width of the graphics window;
 		redraw the map and compass;
 		start looking for graphlinks;
-	try looking.
+		now seen-map is true;
+	try looking;
+	if seen-map is false:
+		say "[first custom style][bracket]You can open the map in a split window by typing MAP ON.[close bracket][roman type][paragraph break]";
+		now seen-map is true.
 
 
 To close all but graphwin:
@@ -898,7 +856,7 @@ Understand "inline map" and "in-line map" as inline-map-showing. Inline-map-show
 
 Carry out inline-map-showing:
 	unless glulx graphics is supported:
-		say "[first custom style][bracket]This interpreter does not support displaying 	graphics.[close bracket][roman type][paragraph break]" instead;
+		say "[first custom style][bracket]This interpreter does not support displaying graphics.[close bracket][roman type][paragraph break]" instead;
 	let was-showing-map be false;
 	if the graphics window is g-present:
 		now was-showing-map is true;
@@ -919,6 +877,58 @@ Carry out inline-map-showing:
 To decide which number is the result of displaying (image - a figure-name) scaled to width (width - a number) and height (height - a number):
 	(- glk_image_draw_scaled( gg_mainwin, ResourceIDsOfFigures-->( {image} ), imagealign_InlineDown, 0, {width}, {height} ); -).
 
+
+
+Section 3 - Enabling and disabling the map
+
+Understand "map on" or "graphics on" or "enable graphics" or "graphics" or "graphics mode" as enabling graphics. Enabling graphics is an action out of world.
+
+
+Include (-
+
+Array graphics_disabled --> 1;
+
+-) after "Definitions.i6t".
+
+To set graphics disabled flag:
+    (- if (arrayAsMillisecs(totalTestStartTime) == 0) @protect graphics_disabled 4;
+    graphics_disabled-->0 = 1; -)
+
+[We can only have one restore and restart protected variable at a time, so skip protecting the graphics_disabled flag if we are measuring total play time.]
+
+To unset graphics disabled flag:
+    (- graphics_disabled-->0 = 0; -)
+
+To decide whether graphics is disabled:
+	(- graphics_disabled-->0 -).
+
+
+Carry out enabling graphics:
+	unless glulx graphics is supported:
+		say "[first custom style][bracket]This interpreter does not support displaying graphics.[close bracket][roman type][paragraph break]" instead;
+	if the graphics window is g-present:
+		say "[first custom style][bracket]The map is already enabled.[close bracket][roman type][paragraph break]";
+	otherwise:
+		unless the measuring window is g-present:
+			open the measuring window;
+		now current graphics drawing rule is the compass-drawing rule;
+		open the graphics window;
+		start looking for graphlinks;
+		unset graphics disabled flag;
+		say "[first custom style][bracket]The map is now enabled. Type MAP OFF to turn it off again.[close bracket][roman type][paragraph break]".
+
+Understand "map off" or "graphics off" or "text only" or "text mode" as disabling graphics. Disabling graphics is an action out of world.
+
+Carry out disabling graphics:
+	unless glulx graphics is supported:
+		say "[first custom style][bracket]This interpreter does not support displaying graphics.[close bracket][roman type][paragraph break]" instead;
+	add the teach disabling graphics rule to the completed instruction list, if absent;
+	if the graphics window is g-present:
+		close the graphics window;
+		set graphics disabled flag;
+		say "[first custom style][bracket]The map is now disabled. Type MAP ON to turn it back on, or just MAP to show it at full window size.[close bracket][roman type][paragraph break]";
+	otherwise:
+		say "[first custom style][bracket]The map is already disabled.[close bracket][roman type][paragraph break]".
 
 
 Chapter 2 - Sounds
