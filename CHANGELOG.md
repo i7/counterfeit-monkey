@@ -10,6 +10,9 @@
 - Alex's mother could pick up the player or other impossibly heavy items from the futon and place them on the counter.
 - When Alex's mother asks if we are Alex's girlfriend, she will now refuse to leave until given an answer.
 - Alex's mother and the roc would occasionally examine "illegal object -1" or similar.
+- To facilitate playing on small screens, the map will not open at the beginning of the game if the window is too narrow.
+- Adds a new full window size map that can be opened by typing MAP.
+- The GRAPHICS ON and GRAPHICS OFF commands are replaced by MAP ON and MAP OFF, respectively.
 
 ## Release 10
 
