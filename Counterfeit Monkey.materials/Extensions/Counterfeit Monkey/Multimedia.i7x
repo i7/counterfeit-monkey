@@ -78,17 +78,6 @@ The map concept borrows from commercial game minimaps that show goal locations a
 
 Like the compass rose in Bronze, the compass rose here shows exits in different shades depending on whether the rooms in those directions have already been visited. The compass is also hyperlinked so that the player can click on it as an alternative to typing directions. ]
 
-[Figure of dim northwest is the file "grey-nw.png" ("dim northwest").
-Figure of dim north is the file "grey-n.png" ("dim north").
-Figure of dim northeast is the file "grey-ne.png" ("dim northeast").
-Figure of dim west is the file "grey-w.png" ("dim west").
-Figure of dim east is the file "grey-e.png" ("dim east").
-Figure of dim southwest is the file "grey-sw.png" ("dim southwest").
-Figure of dim south is the file "grey-s.png" ("dim south").
-Figure of dim southeast is the file "grey-se.png" ("dim southeast").
-Figure of dim up is the file "grey-u.png" ("dim up").
-Figure of dim down is the file "grey-d.png" ("dim down").]
-
 Figure of northwest is the file "white-nw.png" ("northwest").
 Figure of north is the file "white-n.png" ("north").
 Figure of northeast is the file "white-ne.png" ("northeast").
@@ -110,15 +99,6 @@ Figure of new south is the file "blue-s.png" ("unvisited south").
 Figure of new southeast is the file "blue-se.png" ("unvisited southeast").
 Figure of new up is the file "blue-u.png" ("unvisited up").
 Figure of new down is the file "blue-d.png" ("unvisited down").
-
-[Figure of dim fore-port is the file "grey-fp.png" ("dim fore-port").
-Figure of dim fore is the file "grey-f.png" ("dim fore").
-Figure of dim fore-starboard is the file "grey-fsb.png" ("dim fore-starboard").
-Figure of dim port is the file "grey-p.png" ("dim port").
-Figure of dim starboard is the file "grey-sb.png" ("dim starboard").
-Figure of dim aft-port is the file "grey-ap.png" ("dim aft-port").
-Figure of dim aft is the file "grey-a.png" ("dim aft").
-Figure of dim aft-starboard is the file "grey-asb.png" ("dim aft-starboard").]
 
 Figure of fore-port is the file "white-fp.png" ("fore-port").
 Figure of fore is the file "white-f.png" ("fore").
@@ -142,123 +122,6 @@ Figure of center-squiggle is the file "center-squiggle.png" ("center silcrow").
 
 
 [The following is a hack. Originally the figure name associations were all properties of the direction objects, but some sort of memory bug happened when image properties were added to the nautical directions. The result was that the map itself was reconfigured weirdly -- for instance, Slango's Head was declared in source to be aft from Slango's Bunk, but in the game model it would be port of Slango's Bunk instead.]
-
-[To decide what figure-name is the dim image of (way - a direction):
-	if way is:
-		-- fore-port:
-			decide on figure of dim fore-port;
-		-- fore:
-			decide on figure of dim fore;
-		-- fore-starboard:
-			decide on figure of dim fore-starboard;
-		-- port:
-			decide on figure of dim port;
-		-- starboard:
-			decide on figure of dim starboard;
-		-- aft-port:
-			decide on figure of dim aft-port;
-		-- aft:
-			decide on figure of dim aft;
-		-- aft-starboard:
-			decide on figure of dim aft-starboard;
-		-- northwest:
-			decide on figure of dim northwest;
-		-- north:
-			decide on figure of dim north;
-		-- northeast:
-			decide on figure of dim northeast;
-		-- west:
-			decide on figure of dim west;
-		-- east:
-			decide on figure of dim east;
-		-- southwest:
-			decide on figure of dim southwest;
-		-- south:
-			decide on figure of dim south;
-		-- southeast:
-			decide on figure of dim southeast;
-		-- up:
-			decide on figure of dim up;
-		-- down:
-			decide on figure of dim down.
-
-To decide what figure-name is the unvisited image of (way - a direction):
-	if way is:
-		-- fore-port:
-			decide on figure of new fore-port;
-		-- fore:
-			decide on figure of new fore;
-		-- fore-starboard:
-			decide on figure of new fore-starboard;
-		-- port:
-			decide on figure of new port;
-		-- starboard:
-			decide on figure of new starboard;
-		-- aft-port:
-			decide on figure of new aft-port;
-		-- aft:
-			decide on figure of new aft;
-		-- aft-starboard:
-			decide on figure of new aft-starboard;
-		-- northwest:
-			decide on figure of new northwest;
-		-- north:
-			decide on figure of new north;
-		-- northeast:
-			decide on figure of new northeast;
-		-- west:
-			decide on figure of new west;
-		-- east:
-			decide on figure of new east;
-		-- southwest:
-			decide on figure of new southwest;
-		-- south:
-			decide on figure of new south;
-		-- southeast:
-			decide on figure of new southeast;
-		-- up:
-			decide on figure of new up;
-		-- down:
-			decide on figure of new down.
-
-To decide what figure-name is the visited image of (way - a direction):
-	if way is:
-		-- fore-port:
-			decide on figure of fore-port;
-		-- fore:
-			decide on figure of fore;
-		-- fore-starboard:
-			decide on figure of fore-starboard;
-		-- port:
-			decide on figure of port;
-		-- starboard:
-			decide on figure of starboard;
-		-- aft-port:
-			decide on figure of aft-port;
-		-- aft:
-			decide on figure of aft;
-		-- aft-starboard:
-			decide on figure of aft-starboard;
-		-- northwest:
-			decide on figure of northwest;
-		-- north:
-			decide on figure of north;
-		-- northeast:
-			decide on figure of northeast;
-		-- west:
-			decide on figure of west;
-		-- east:
-			decide on figure of east;
-		-- southwest:
-			decide on figure of southwest;
-		-- south:
-			decide on figure of south;
-		-- southeast:
-			decide on figure of southeast;
-		-- up:
-			decide on figure of up;
-		-- down:
-			decide on figure of down.]
 
 A direction has a number called x-coordinate. A direction has a number called y-coordinate.
 
@@ -352,57 +215,6 @@ This is the compass-drawing rule:
 		establish compass graphlinks;
 		redraw the map and compass;
 
-[To determine compass coordinates:
-	let ZE be 0;
-	increase ZE by grid-margin;
-	let D be grid-size;
-	let DD be 2 * D;
-	let DDD be compass width;
-	let graphics window height be the height of the graphics window;
-	let TE be graphics window height - (D * 4);
-	let UM be TE + D;
-	let LM be TE + DD;
-	let BEE be graphics window height - D;
-	increase D by grid-margin;
-	increase DD by grid-margin;
-	increase DDD by grid-margin;
-	now x-coordinate of up is ZE;
-	now y-coordinate of up is BEE;
-	now x-coordinate of down is DD;
-	now y-coordinate of down is BEE;
-	now x-coordinate of fore-port is ZE;
-	now y-coordinate of fore-port is TE;
-	now x-coordinate of fore is D;
-	now y-coordinate of fore is TE;
-	now x-coordinate of fore-starboard is DD;
-	now y-coordinate of fore-starboard is TE;
-	now x-coordinate of port is ZE;
-	now y-coordinate of port is UM;
-	now x-coordinate of starboard is DD;
-	now y-coordinate of starboard is UM;
-	now x-coordinate of aft-port is ZE;
-	now y-coordinate of aft-port is LM;
-	now x-coordinate of aft is D;
-	now y-coordinate of aft is LM;
-	now x-coordinate of aft-starboard is DD;
-	now y-coordinate of aft-starboard is LM;
-	now x-coordinate of northwest is ZE;
-	now y-coordinate of northwest is TE;
-	now x-coordinate of north is D;
-	now y-coordinate of north is TE;
-	now x-coordinate of northeast is DD;
-	now y-coordinate of northeast is TE;
-	now x-coordinate of west is ZE;
-	now y-coordinate of west is UM;
-	now x-coordinate of east is DD;
-	now y-coordinate of east is UM;
-	now x-coordinate of southwest is ZE;
-	now y-coordinate of southwest is LM;
-	now x-coordinate of south is D;
-	now y-coordinate of south is LM;
-	now x-coordinate of southeast is DD;
-	now y-coordinate of southeast is LM.]
-
 [Layer the image: a black background to fill in the top of the screen; blue for the bottom half so that if the map is too small, it will still look blue at the edges; then the map itself, proportionally scaled as large as it can reasonably be given the window dimensions; then the compass, built from the current circumstances.
 
 In theory, it would have been possible to make the map images carry the compass directions as well. In practice, that presented several problems: more difficult to cope with minor map changes during final revisions, inability to indicate which directions have already been explored.]
@@ -430,239 +242,238 @@ To draw compass:
 	(- DrawCompass((+ graphics window +).(+ ref number +),(+ grid-size +)); -).
 
 
-
 Section 2 - Full-window map
 
 Include (-
 
 [ DetermineCompassCoordinates graphwin_height compass_width grid_size grid_margin
-    ze d dd ddd te um lm bee;
+	ze d dd ddd te um lm bee;
 
 	grid_margin = grid_size / 2;
-    ze = 0;
-    ze = ze + grid_margin;
+	ze = 0;
+	ze = ze + grid_margin;
 
-    d = grid_size;
+	d = grid_size;
 
-    dd = 2 * d;
+	dd = 2 * d;
 
-    ddd = compass_width;
-    te = graphwin_height - d * 4;
+	ddd = compass_width;
+	te = graphwin_height - d * 4;
 
-    um = te + d;
+	um = te + d;
 	lm = te + dd;
 
-    bee = graphwin_height - d;
+	bee = graphwin_height - d;
 
-    d = d + grid_margin;
-    dd = dd + grid_margin;
-    ddd = ddd + grid_margin;
+	d = d + grid_margin;
+	dd = dd + grid_margin;
+	ddd = ddd + grid_margin;
 
-    ! [15: now x-coordinate of up is ze]
-    WriteGProperty(10, (+ up +), (+ x-coordinate +),ze);
-    ! [16: now y-coordinate of up is bee]
-    WriteGProperty(10, (+ up +),(+ y-coordinate +),bee);
-    ! [17: now x-coordinate of down is dd]
-    WriteGProperty(10, (+ down +),(+ x-coordinate +),dd);
-    ! [18: now y-coordinate of down is bee]
-    WriteGProperty(10, (+ down +),(+ y-coordinate +),bee);
-    ! [19: now x-coordinate of fore-port is ze]
-    WriteGProperty(10, (+ fore-port +),(+ x-coordinate +),ze);
-    ! [20: now y-coordinate of fore-port is te]
-    WriteGProperty(10, (+ fore-port +),(+ y-coordinate +),te);
-    ! [21: now x-coordinate of fore is d]
-    WriteGProperty(10, (+ fore +),(+ x-coordinate +),d);
-    ! [22: now y-coordinate of fore is te]
-    WriteGProperty(10, (+ fore +),(+ y-coordinate +),te);
-    ! [23: now x-coordinate of fore-starboard is dd]
-    WriteGProperty(10, (+ fore-starboard +),(+ x-coordinate +),dd);
-    ! [24: now y-coordinate of fore-starboard is te]
-    WriteGProperty(10, (+ fore-starboard +),(+ y-coordinate +),te);
-    ! [25: now x-coordinate of port is ze]
-    WriteGProperty(10, (+ port +),(+ x-coordinate +),ze);
-    ! [26: now y-coordinate of port is um]
-    WriteGProperty(10, (+ port +),(+ y-coordinate +),um);
-    ! [27: now x-coordinate of starboard is dd]
-    WriteGProperty(10, (+ starboard +),(+ x-coordinate +),dd);
-    ! [28: now y-coordinate of starboard is um]
-    WriteGProperty(10, (+ starboard +),(+ y-coordinate +),um);
-    ! [29: now x-coordinate of aft-port is ze]
-    WriteGProperty(10, (+ aft-port +),(+ x-coordinate +),ze);
-    ! [30: now y-coordinate of aft-port is lm]
-    WriteGProperty(10, (+ aft-port +),(+ y-coordinate +),lm);
-    ! [31: now x-coordinate of aft is d]
-    WriteGProperty(10, (+ aft +),(+ x-coordinate +),d);
-    ! [32: now y-coordinate of aft is lm]
-    WriteGProperty(10, (+ aft +),(+ y-coordinate +),lm);
-    ! [33: now x-coordinate of aft-starboard is dd]
-    WriteGProperty(10, (+ aft-starboard +),(+ x-coordinate +),dd);
-    ! [34: now y-coordinate of aft-starboard is lm]
-    WriteGProperty(10, (+ aft-starboard +),(+ y-coordinate +),lm);
-    ! [35: now x-coordinate of northwest is ze]
-    WriteGProperty(10, (+ northwest +),(+ x-coordinate +),ze);
-    ! [36: now y-coordinate of northwest is te]
-    WriteGProperty(10, (+ northwest +),(+ y-coordinate +),te);
-    ! [37: now x-coordinate of north is d]
-    WriteGProperty(10, (+ north +),(+ x-coordinate +),d);
-    ! [38: now y-coordinate of north is te]
-    WriteGProperty(10, (+ north +),(+ y-coordinate +),te);
-    ! [39: now x-coordinate of northeast is dd]
-    WriteGProperty(10, (+ northeast +),(+ x-coordinate +),dd);
-    ! [40: now y-coordinate of northeast is te]
-    WriteGProperty(10, (+ northeast +),(+ y-coordinate +),te);
-    ! [41: now x-coordinate of west is ze]
-    WriteGProperty(10, (+ west +),(+ x-coordinate +),ze);
-    ! [42: now y-coordinate of west is um]
-    WriteGProperty(10, (+ west +),(+ y-coordinate +),um);
-    ! [43: now x-coordinate of east is dd]
-    WriteGProperty(10, (+ east +),(+ x-coordinate +),dd);
-    ! [44: now y-coordinate of east is um]
-    WriteGProperty(10, (+ east +),(+ y-coordinate +),um);
-    ! [45: now x-coordinate of southwest is ze]
-    WriteGProperty(10, (+ southwest +),(+ x-coordinate +),ze);
-    ! [46: now y-coordinate of southwest is lm]
-    WriteGProperty(10, (+ southwest +),(+ y-coordinate +),lm);
-    ! [47: now x-coordinate of south is d]
-    WriteGProperty(10, (+ south +),(+ x-coordinate +),d);
-    ! [48: now y-coordinate of south is lm]
-    WriteGProperty(10, (+ south +),(+ y-coordinate +),lm);
-    ! [49: now x-coordinate of southeast is dd]
-    WriteGProperty(10, (+ southeast +),(+ x-coordinate +),dd);
-    ! [50: now y-coordinate of southeast is lm]
-    WriteGProperty(10, (+ southeast +),(+ y-coordinate +),lm);
-    rfalse;
+	! [15: now x-coordinate of up is ze]
+	WriteGProperty(10, (+ up +), (+ x-coordinate +),ze);
+	! [16: now y-coordinate of up is bee]
+	WriteGProperty(10, (+ up +),(+ y-coordinate +),bee);
+	! [17: now x-coordinate of down is dd]
+	WriteGProperty(10, (+ down +),(+ x-coordinate +),dd);
+	! [18: now y-coordinate of down is bee]
+	WriteGProperty(10, (+ down +),(+ y-coordinate +),bee);
+	! [19: now x-coordinate of fore-port is ze]
+	WriteGProperty(10, (+ fore-port +),(+ x-coordinate +),ze);
+	! [20: now y-coordinate of fore-port is te]
+	WriteGProperty(10, (+ fore-port +),(+ y-coordinate +),te);
+	! [21: now x-coordinate of fore is d]
+	WriteGProperty(10, (+ fore +),(+ x-coordinate +),d);
+	! [22: now y-coordinate of fore is te]
+	WriteGProperty(10, (+ fore +),(+ y-coordinate +),te);
+	! [23: now x-coordinate of fore-starboard is dd]
+	WriteGProperty(10, (+ fore-starboard +),(+ x-coordinate +),dd);
+	! [24: now y-coordinate of fore-starboard is te]
+	WriteGProperty(10, (+ fore-starboard +),(+ y-coordinate +),te);
+	! [25: now x-coordinate of port is ze]
+	WriteGProperty(10, (+ port +),(+ x-coordinate +),ze);
+	! [26: now y-coordinate of port is um]
+	WriteGProperty(10, (+ port +),(+ y-coordinate +),um);
+	! [27: now x-coordinate of starboard is dd]
+	WriteGProperty(10, (+ starboard +),(+ x-coordinate +),dd);
+	! [28: now y-coordinate of starboard is um]
+	WriteGProperty(10, (+ starboard +),(+ y-coordinate +),um);
+	! [29: now x-coordinate of aft-port is ze]
+	WriteGProperty(10, (+ aft-port +),(+ x-coordinate +),ze);
+	! [30: now y-coordinate of aft-port is lm]
+	WriteGProperty(10, (+ aft-port +),(+ y-coordinate +),lm);
+	! [31: now x-coordinate of aft is d]
+	WriteGProperty(10, (+ aft +),(+ x-coordinate +),d);
+	! [32: now y-coordinate of aft is lm]
+	WriteGProperty(10, (+ aft +),(+ y-coordinate +),lm);
+	! [33: now x-coordinate of aft-starboard is dd]
+	WriteGProperty(10, (+ aft-starboard +),(+ x-coordinate +),dd);
+	! [34: now y-coordinate of aft-starboard is lm]
+	WriteGProperty(10, (+ aft-starboard +),(+ y-coordinate +),lm);
+	! [35: now x-coordinate of northwest is ze]
+	WriteGProperty(10, (+ northwest +),(+ x-coordinate +),ze);
+	! [36: now y-coordinate of northwest is te]
+	WriteGProperty(10, (+ northwest +),(+ y-coordinate +),te);
+	! [37: now x-coordinate of north is d]
+	WriteGProperty(10, (+ north +),(+ x-coordinate +),d);
+	! [38: now y-coordinate of north is te]
+	WriteGProperty(10, (+ north +),(+ y-coordinate +),te);
+	! [39: now x-coordinate of northeast is dd]
+	WriteGProperty(10, (+ northeast +),(+ x-coordinate +),dd);
+	! [40: now y-coordinate of northeast is te]
+	WriteGProperty(10, (+ northeast +),(+ y-coordinate +),te);
+	! [41: now x-coordinate of west is ze]
+	WriteGProperty(10, (+ west +),(+ x-coordinate +),ze);
+	! [42: now y-coordinate of west is um]
+	WriteGProperty(10, (+ west +),(+ y-coordinate +),um);
+	! [43: now x-coordinate of east is dd]
+	WriteGProperty(10, (+ east +),(+ x-coordinate +),dd);
+	! [44: now y-coordinate of east is um]
+	WriteGProperty(10, (+ east +),(+ y-coordinate +),um);
+	! [45: now x-coordinate of southwest is ze]
+	WriteGProperty(10, (+ southwest +),(+ x-coordinate +),ze);
+	! [46: now y-coordinate of southwest is lm]
+	WriteGProperty(10, (+ southwest +),(+ y-coordinate +),lm);
+	! [47: now x-coordinate of south is d]
+	WriteGProperty(10, (+ south +),(+ x-coordinate +),d);
+	! [48: now y-coordinate of south is lm]
+	WriteGProperty(10, (+ south +),(+ y-coordinate +),lm);
+	! [49: now x-coordinate of southeast is dd]
+	WriteGProperty(10, (+ southeast +),(+ x-coordinate +),dd);
+	! [50: now y-coordinate of southeast is lm]
+	WriteGProperty(10, (+ southeast +),(+ y-coordinate +),lm);
+	rfalse;
 ];
 
 [ VisitedImageOf way;
-    switch (way)
-    {
+	switch (way)
+	{
 		(+ fore-port +):
 		return (+ figure of fore-port +);
 
 		(+ fore +):
 			return (+ figure of fore +);
 
-        (+ fore-starboard +):
+		(+ fore-starboard +):
 			return (+ figure of fore-starboard +);
 
-        (+ port +):
+		(+ port +):
 			return (+ figure of port +);
 
-        (+ starboard +):
+		(+ starboard +):
 			return (+ figure of starboard +);
 
-        (+ aft-port +):
+		(+ aft-port +):
 			return (+ figure of aft-port +);
 
-        (+ aft +):
+		(+ aft +):
 			return (+ figure of aft +);
 
-        (+ aft-starboard +):
+		(+ aft-starboard +):
 			return (+ figure of aft-starboard +);
 
-        (+ northwest +):
+		(+ northwest +):
 			return (+ figure of northwest +);
 
-        (+ north +):
+		(+ north +):
 			return (+ figure of north +);
 
-        (+ northeast +):
+		(+ northeast +):
 			return (+ figure of northeast +);
 
-        (+ west +):
+		(+ west +):
 			return (+ figure of west +);
 
-        (+ east +):
+		(+ east +):
 			return (+ figure of east +);
 
-        (+ southwest +):
+		(+ southwest +):
 			return (+ figure of southwest +);
 
-        (+ south +):
+		(+ south +):
 			return (+ figure of south +);
 
-        (+ southeast +):
+		(+ southeast +):
 			return (+ figure of southeast +);
 
-        (+ up +):
+		(+ up +):
 			return (+ figure of up +);
 
-         (+ down +):
+		 (+ down +):
 			return (+ figure of down +);
-    }
+	}
 
-    return (+ figure of cover +);
+	return (+ figure of cover +);
 ];
 
 [ UnvisitedImageOf way;
-    switch (way)
-    {
+	switch (way)
+	{
 		(+ fore-port +):
 		return (+ figure of new fore-port +);
 
 		(+ fore +):
 			return (+ figure of new fore +);
 
-        (+ fore-starboard +):
+		(+ fore-starboard +):
 			return (+ figure of new fore-starboard +);
 
-        (+ port +):
+		(+ port +):
 			return (+ figure of new port +);
 
-        (+ starboard +):
+		(+ starboard +):
 			return (+ figure of new starboard +);
 
-        (+ aft-port +):
+		(+ aft-port +):
 			return (+ figure of new aft-port +);
 
-        (+ aft +):
+		(+ aft +):
 			return (+ figure of new aft +);
 
-        (+ aft-starboard +):
+		(+ aft-starboard +):
 			return (+ figure of new aft-starboard +);
 
-        (+ northwest +):
+		(+ northwest +):
 			return (+ figure of new northwest +);
 
-        (+ north +):
+		(+ north +):
 			return (+ figure of new north +);
 
-        (+ northeast +):
+		(+ northeast +):
 			return (+ figure of new northeast +);
 
-        (+ west +):
+		(+ west +):
 			return (+ figure of new west +);
 
-        (+ east +):
+		(+ east +):
 			return (+ figure of new east +);
 
-        (+ southwest +):
+		(+ southwest +):
 			return (+ figure of new southwest +);
 
-        (+ south +):
+		(+ south +):
 			return (+ figure of new south +);
 
-        (+ southeast +):
+		(+ southeast +):
 			return (+ figure of new southeast +);
 
-        (+ up +):
+		(+ up +):
 			return (+ figure of new up +);
 
-         (+ down +):
+		 (+ down +):
 			return (+ figure of new down +);
-    }
+	}
 
-    return (+ figure of cover +);
+	return (+ figure of cover +);
 ];
 
 
 [ DrawCompass graphwin grid_size x y way room;
-    glk_image_draw_scaled( graphwin, ResourceIDsOfFigures-->( (+ figure of center-squiggle +) ), GProperty(10, (+ north +),(+ x-coordinate +)), GProperty(10, (+ west +),(+ y-coordinate +)), grid_size, grid_size);
-    ! repeat with way running through directions
+	glk_image_draw_scaled( graphwin, ResourceIDsOfFigures-->( (+ figure of center-squiggle +) ), GProperty(10, (+ north +),(+ x-coordinate +)), GProperty(10, (+ west +),(+ y-coordinate +)), grid_size, grid_size);
+	! repeat with way running through directions
 
-    ! Class K3_direction
+	! Class K3_direction
 
-    for (way=IK3_First: way: way=way.IK3_Link)
+	for (way=IK3_First: way: way=way.IK3_Link)
 	{
 		if (way ~= in_obj && way ~= out_obj)
 		{
@@ -691,10 +502,10 @@ Include (-
 	if (glk_gestalt(gestalt_GraphicsCharInput, 0))
 	{
 		glk_request_char_event(win);
-    }
+	}
 
-    glk_request_mouse_event(win);
-    while (~~done) {
+	glk_request_mouse_event(win);
+	while (~~done) {
 		glk_select(gg_event);
 
 		switch (gg_event-->0)
@@ -706,7 +517,7 @@ Include (-
 			evtype_MouseInput:
 				done = true;
 		}
-    }
+	}
 	glk_cancel_char_event(win);
 ];
 
@@ -726,63 +537,73 @@ Include (-
 
 
 [ DrawBigMap graphwin
-    map_top
-    ideal_width
-    real_ideal
-    real_height
-    ratio
-    scaled_height
-    scaled_height_real
-    half_height
-    fullwidth
-    fullheight
-    map_ratio
-    compass_width
-    grid_size
-    width_quarter
-    height_sixth
-    vertical_offset
-    ;
+	map_top
+	ideal_width
+	real_ideal
+	real_height
+	ratio
+	scaled_height
+	scaled_height_real
+	half_height
+	fullwidth
+	fullheight
+	map_ratio
+	compass_width
+	grid_size
+	width_quarter
+	height_sixth
+	vertical_offset
+	;
 
-    map_top = 0;
+	map_top = 0;
 
-    ! let real-ideal be the width of the graphics window
+	! let real-ideal be the width of the graphics window
 
-    ! Get the graphics window width
-    glk_window_get_size(graphwin, gg_arguments, 0);
-    fullwidth = gg_arguments-->0;
-    real_ideal = NUMBER_TY_to_REAL_NUMBER_TY(fullwidth);
-    ideal_width = fullwidth;
+	! Get the graphics window width
+	glk_window_get_size(graphwin, gg_arguments, 0);
+	fullwidth = gg_arguments-->0;
+	real_ideal = NUMBER_TY_to_REAL_NUMBER_TY(fullwidth);
+	ideal_width = fullwidth;
 
-    ! Get the graphics window height
+	! Get the graphics window height
 	glk_window_get_size(graphwin, 0, gg_arguments);
 	fullheight = gg_arguments-->0;
 
 	! let real-height be the height of the graphics window * 1.21
-    ! REAL_NUMBER_TY_Divide(1210, 1000) is 1067114824
+
+	! This value is hand tuned (along with the 0.02 vertical_offset below
+	! to minimize wasteful space at the top and bottom of the map
+	! while still looking reasonably good at all sizes and ratios.
+	! Looks less good on the yacht maps, though.
+
+	! REAL_NUMBER_TY_Divide(1210, 1000) is 1067114824
 	real_height = REAL_NUMBER_TY_Times(NUMBER_TY_to_REAL_NUMBER_TY(fullheight), 1067114824);
 	ratio = REAL_NUMBER_TY_Divide(real_ideal, real_height);
 
-    ! REAL_NUMBER_TY_Divide(722, 860) is 1062660473
-    map_ratio = 1062660473;
+	! REAL_NUMBER_TY_Divide(722, 860) is 1062660473
+	map_ratio = 1062660473;
 
-    ! if ratio > map_ratio
-    if (REAL_NUMBER_TY_Compare(ratio, map_ratio) > 0)
-    {
-        real_ideal = REAL_NUMBER_TY_Times(real_height, map_ratio);
-        ideal_width = REAL_NUMBER_TY_to_NUMBER_TY(real_ideal);
-        map_top = -1;
-    }
+	! Check if the window is wider than the map
+
+	! if ratio > map_ratio
+	if (REAL_NUMBER_TY_Compare(ratio, map_ratio) > 0)
+	{
+		real_ideal = REAL_NUMBER_TY_Times(real_height, map_ratio);
+		ideal_width = REAL_NUMBER_TY_to_NUMBER_TY(real_ideal);
+		map_top = -1;
+	}
 
 	scaled_height_real = REAL_NUMBER_TY_Divide(real_ideal, map_ratio);
-    scaled_height = REAL_NUMBER_TY_to_NUMBER_TY(scaled_height_real);
+	scaled_height = REAL_NUMBER_TY_to_NUMBER_TY(scaled_height_real);
 
-    vertical_offset = 0;
-    map_top = IntegerDivide(fullheight - scaled_height, 2);
-    half_height = IntegerDivide(fullheight, 2) + 1;
+	vertical_offset = 0;
+	map_top = IntegerDivide(fullheight - scaled_height, 2);
+	half_height = IntegerDivide(fullheight, 2) + 1;
 
 	if (map_top <= 0)
 	{
+		! The window is wider than the map
+
 		! 0.02 REAL_NUMBER_TY_Divide(2, 100) is 1017370378
 		vertical_offset = REAL_NUMBER_TY_to_NUMBER_TY(REAL_NUMBER_TY_Times(scaled_height_real, 1017370378));
 
@@ -790,18 +611,23 @@ Include (-
 
 		! fill window with blue background colour
 		glk_image_draw_scaled(graphwin, ResourceIDsOfFigures-->( (+ figure of background colour +) ), 0, 0, fullwidth, fullheight);
-    } else {
+	} else {
+
+		! The window is narrower than the map
+
 		! draw rectangle of blue background colour
 		glk_image_draw_scaled(graphwin, ResourceIDsOfFigures-->( (+ figure of background colour +) ), 0, half_height, fullwidth, half_height );
 
 		! draw black rectangle
 		glk_window_fill_rect( graphwin, 0 , 0, 0, fullwidth, half_height );
-    }
+	}
 
-    ! draw the local map of the location
-    glk_image_draw_scaled(graphwin, ResourceIDsOfFigures-->( GProperty(OBJECT_TY, real_location, (+ local map +) ) ), IntegerDivide(fullwidth - ideal_width, 2), map_top, ideal_width, scaled_height);
+	! draw the local map of the location
+	glk_image_draw_scaled(graphwin, ResourceIDsOfFigures-->( GProperty(OBJECT_TY, real_location, (+ local map +) ) ), IntegerDivide(fullwidth - ideal_width, 2), map_top, ideal_width, scaled_height);
 
-    width_quarter = ideal_width / 4;
+	! Calculate a reasonable size for the compass rose
+
+	width_quarter = ideal_width / 4;
 	height_sixth = fullheight / 6;
 
 	if (width_quarter > height_sixth)
@@ -811,8 +637,8 @@ Include (-
 
 	grid_size = compass_width / 3;
 
-    DetermineCompassCoordinates(fullheight, compass_width, grid_size);
-    DrawCompass(graphwin, grid_size);
+	DetermineCompassCoordinates(fullheight, compass_width, grid_size);
+	DrawCompass(graphwin, grid_size);
 ];
 
 -).
@@ -846,10 +672,10 @@ Carry out big-map-showing:
 
 
 To close all but graphwin:
-	(- 	GraphwinOnly(); -).
+	(-	GraphwinOnly(); -).
 
 To reopen status:
-	(- 	if (gg_statuswin == 0) gg_statuswin = glk_window_open(gg_mainwin, winmethod_Fixed + winmethod_Above, 1, wintype_TextGrid, GG_STATUSWIN_ROCK); -).
+	(-	if (gg_statuswin == 0) gg_statuswin = glk_window_open(gg_mainwin, winmethod_Fixed + winmethod_Above, 1, wintype_TextGrid, GG_STATUSWIN_ROCK); -).
 
 
 Understand "inline map" and "in-line map" as inline-map-showing. Inline-map-showing is an action out of world.
@@ -891,13 +717,13 @@ Array graphics_disabled --> 1;
 -) after "Definitions.i6t".
 
 To set graphics disabled flag:
-    (- if (arrayAsMillisecs(totalTestStartTime) == 0) @protect graphics_disabled 4;
-    graphics_disabled-->0 = 1; -)
+	(- if (arrayAsMillisecs(totalTestStartTime) == 0) @protect graphics_disabled 4;
+	graphics_disabled-->0 = 1; -)
 
 [We can only have one restore and restart protected variable at a time, so skip protecting the graphics_disabled flag if we are measuring total play time.]
 
 To unset graphics disabled flag:
-    (- graphics_disabled-->0 = 0; -)
+	(- graphics_disabled-->0 = 0; -)
 
 To decide whether graphics is disabled:
 	(- graphics_disabled-->0 -).
