@@ -621,7 +621,7 @@ INVENTORY TALL, INVENTORY WIDE and INVENTORY UTILITARIAN change the way inventor
 
 In a location, LOOK CAREFULLY will print the room description with object names in bold. If you would like to experience the whole game this way, try HIGHLIGHTING ON.
 
-If your interpreter supports graphics, GRAPHICS OFF will hide the map and GRAPHICS ON will show it again.
+If your interpreter supports graphics, MAP OFF will hide the map window and MAP ON will show it again. Just typing MAP will temporarily show a larger map.
 
 GO TO a location will take us to the place named, even if that's some distance away.
 
