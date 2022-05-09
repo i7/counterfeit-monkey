@@ -3929,6 +3929,8 @@ To say body-part-prank:
 
 The toe-ring is a wearable thing. The printed name is "toe ring". The description of the toe-ring is "A silver toe ring stamped with a celtic pattern."
 
+Understand "toe" and "ring" and "toering" as the toe-ring.
+
 The toil is r-abstract. The description of toil is "An utterly typical Atlantean image of an older man sweating in the sun and brushing sweat out from under his hat as he sees to the olive harvest. It could be taking place any time in the last century."
 
 [It was, unsurprisingly, Graham who suggested TS Eliot as an alternate anagram for toilets/litotes.]
