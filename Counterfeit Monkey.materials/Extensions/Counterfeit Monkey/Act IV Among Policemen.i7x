@@ -90,7 +90,7 @@ During the run of the school year there is an extra inbound bus in the morning a
 
 Like today."
 
-Understand "wall mounted schedule" and "mounted" as the wall-mounted schedule.
+Understand "wall" and "mounted" as the wall-mounted schedule.
 
 The shed is a thing in the Bus Station. The initial appearance is "A [shed], rather ramshackle and unlikely, sits on the pavement, where it ought to be in the way of incoming buses." The heft of the shed is 10. The description of the shed is "Sheds like this are typically cheap and very very temporary housing for the homeless. The policy of the Bureau is that no one is allowed to beg, and punishments for begging and homelessness are often quite stiff, so there is nothing in the way of an established shelter on the island and little recourse for those who might need it."
 
