@@ -822,4 +822,63 @@ To say post-restore routine:
 
 [The last line above will close the graphics window if we have switched off graphics but restore a game made with graphics on. Some interpreters, such as Spatterlight and Zoom, will still show the graphics window for a split-second on restore.]
 
+Section 6 - Check that save file isn't empty
+
+[By default, file writing fails aren't detected by Inform. This becomes a problem if we run out of disk space, because the games allows saving without complaint, and then the save files will be useless when the player tries to restore.
+
+See GitHub issue #191.
+
+We fix this by rewriting the save game routine to check that the files aren't 0 length.
+
+Fix provided by Dannii Willis.]
+
+Include (-
+
+[ SAVE_THE_GAME_R fref len res;
+	if (actor ~= player) rfalse;
+	fref = glk_fileref_create_by_prompt(fileusage_SavedGame, filemode_Write, 0);
+	if (fref) {
+		gg_savestr = glk_stream_open_file(fref, filemode_Write, GG_SAVESTR_ROCK);
+		if (gg_savestr) {
+			@save gg_savestr res;
+			if (res == -1) {
+				! The player actually just typed "restore". We first have to recover
+				! all the Glk objects; the values in our global variables are all wrong.
+				GGRecoverObjects();
+				glk_stream_close(gg_savestr, GLK_NULL);
+				gg_savestr = 0;
+				RESTORE_THE_GAME_RM('B'); new_line;
+				rtrue;
+			}
+			glk_stream_close(gg_savestr, GLK_NULL);
+			gg_savestr = 0;
+			if (res == 0) {
+				! Check that the savefile was actually written - this is mostly to account for browser limits in Parchment
+				if (glk_fileref_does_file_exist(fref)) {
+					gg_savestr = glk_stream_open_file(fref, filemode_Read, GG_SAVESTR_ROCK);
+					if (gg_savestr) {
+						glk_stream_set_position(gg_savestr, 0, seekmode_End);
+						len = glk_stream_get_position(gg_savestr);
+						glk_stream_close(gg_savestr, GLK_NULL);
+						gg_savestr = 0;
+						if (len) {
+							! We've confirmed the file exists and has content, which is about all we can do
+							SAVE_THE_GAME_RM('B'); new_line;
+							glk_fileref_destroy(fref);
+							rtrue;
+						}
+						! Cleanup the empty file
+						glk_fileref_delete_file(fref);
+					}
+				}
+			}
+		}
+		glk_fileref_destroy(fref);
+	}
+	SAVE_THE_GAME_RM('A'); new_line;
+];
+
+-) instead of "Save The Game Rule"in "Glulx.i6t".
+
+
 Presentation Details ends here.
