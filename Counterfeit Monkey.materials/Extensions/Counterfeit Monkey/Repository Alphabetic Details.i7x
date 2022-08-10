@@ -1005,6 +1005,8 @@ A fuel is a contained fluid thing. The indefinite article is "some". The descrip
 The funded-tomcat is a cat. The printed name is "funded tomcat". Understand "funded" or "funded tomcat" as the funded-tomcat. Understand "tomcat" as the funded-tomcat when the tomcat is marked invisible.
 	The description is "Like an ordinary tomcat, but very sleek and well-fed, with a diamond-studded collar."
 
+Understand "diamond" and "studded" as the diamond-studded collar.
+
 Sanity-check wearing the diamond-studded collar:
 	say "It wouldn't fit." instead.
 

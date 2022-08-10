@@ -257,6 +257,8 @@ This alley runs north to the open street, towards the town square[if Sigil Stree
 The dull house-back is a facade in Back Alley. It fronts south. It is scenery. The description is "The owners of the house obviously didn't want a view in this direction, as there aren't any windows to see through, just a wall scarred by decades of occasional remodeling."
 	The closure notice is "There are no doors in [the item described]. ".
 
+Understand "house" as the dull house-back.
+
 Some yellow buildings are a facade in Back Alley. They front east. They are scenery. Understand "windows" or "window" or "building" or "back" or "backs" or "sides" or "walls" or "houses" as the yellow buildings when the location is Back Alley. The printed name is "[if looking]buildings[otherwise]yellow buildings[end if]". The description is "The buildings are no doubt due for renovation, but haven't received it yet. There are no windows facing this way."
 	The closure notice is "There are no doors in [the item described]. ".
 
@@ -951,11 +953,11 @@ Instead of going south in Midway:
 Rule for listing exits while looking in Midway:
 	do nothing instead.
 
-The strong-man hammering contest is scenery in the Midway. Understand "strongman" or "bell" or "bells" or "hammer" as the contest. The description is "It's one of those contests where you have to hammer something so that something else flies up and rings a bell. I don't have time for that kind of silly macho display."
+The strong-man hammering contest is scenery in the Midway. Understand "strongman" or "bell" or "bells" or "hammer" or "strong" as the contest. The description is "It's one of those contests where you have to hammer something so that something else flies up and rings a bell. I don't have time for that kind of silly macho display."
 
 The balloons are scenery in the Midway. The description is "All stapled in place and ready to be attacked." Instead of attacking the balloons: say "[one of]Better to leave that nonsense to the little ones.[or]Come on, we'll never get away if you insist on lollygagging![or]We have better things to do, remember?[stopping]".
 
-The styrofoam dart-plane is scenery in the Midway. The description is "Ridiculous little styrofoam gliders with dart-noses. No use to us, anyway."
+The styrofoam dart-plane is scenery in the Midway. Understand "dart" or "plane" or "planes" as the styrofoam dart-plane. The description is "Ridiculous little styrofoam gliders with dart-noses. No use to us, anyway."
 
 The word-balance is fixed in place in the Midway. Understand "balance" or "steel" or "scales" or "pair of" or "beam" or "fabulous" as the word-balance. The printed name is "word-balance". The initial appearance is "[if the barker is in location]I assume you've noticed, though, [otherwise]No longer so useful is [end if]the [word-balance], which comes up as high as our hip. [balance contents]". The description is "The beam is [if the word-balance is tilting]tilting[otherwise]balanced[end if]. [balance contents]".
 
@@ -1715,6 +1717,8 @@ The broomstick skirt is wearable.
 
 The description of the flip-flops is "The sole of each flip-flop is decorated with the image of Snoopy."
 
+Understand "flip flops" or "flip-flop" or "flip flop" as the flip-flops.
+
 The flip-flops are wearable.
 
 The description of the box of tampons is "Let's not. This is awkward enough already."
@@ -1936,6 +1940,8 @@ The gift-shop-exterior is a facade in New Church. It is scenery. It fronts south
 The Cathedral Gift Shop is south of the New Church. Understand "narthex" and "giftshop" as the cathedral gift shop. It is indoors. The description is "This area used to be a sort of antechamber where the priests and choir might gather for processions into the church, but it has now been done over for retail purposes. This is one of several schemes to make the New Church pay for its own upkeep: a problem is that people somehow feel everything associated with a church ought to be free, including lunchtime concerts, potluck suppers, and Thursday-night lecture series."
 
 The gift-shop counter is a scenery supporter in the Cathedral Gift Shop. The description is "The usual arrangement for making purchases."
+
+Understand "gift shop counter" as the gift-shop counter.
 
 Some wire racks are scenery things in the Cathedral Gift Shop. The description is "They're designed to hold postcards or other similar small merchandise." Understand "rack" as racks.
 

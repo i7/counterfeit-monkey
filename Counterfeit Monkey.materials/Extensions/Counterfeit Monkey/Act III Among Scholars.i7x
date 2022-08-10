@@ -583,6 +583,8 @@ The description of Studies Primary Language Acquisition is "This is a little out
 
 The description of Journal of Third-World Economics is "This is just Volume 16, but I subscribed annually for a while. My whole plan is useless unless there's a well-designed language that actually takes account of economic reality in the target region. When I've moved somewhere outside Atlantis it will be easier to conduct that part of the research." Understand "volume" or "16" or "volume of" or "volume 16 of" as Journal of Third-World Economics.
 
+Understand "third" and "world" as the Journal of Third-World Economics.
+
 A pot-of-yogurt is an edible thing. The printed name is "yogurt". Understand "yogurt" or "yoghurt" as the pot-of-yogurt. The description is "It is the gooseberry fool flavor, left over from a six-pack. I always eat the strawberry and peach first." The introduction is "Okay, I feel guilty about leaving this to go bad, but I was in a rush [--] I did get rid of most of the rest of my food over the last couple of days, but I just never had time to eat this. And it seemed wrong to throw it out. Sue me." The indefinite article of the pot-of-yogurt is "some".
 
 Rule for printing the name of the pot-of-yogurt when the player wears the Britishizing goggles:
@@ -1527,6 +1529,8 @@ Report unlocking the small door with something:
 
 The keycard-reading lock is a container. It is part of the small door. The description is "It looks high-tech: all black plastic, and a slot to swipe a keycard through." Understand "slot" or "keycard lock" as the keycard-reading lock.
 
+Understand "keycard reading lock" as the keycard-reading lock.
+
 Instead of inserting something into the keycard-reading lock:
 	say "[The noun] won't fit."
 
@@ -1829,7 +1833,7 @@ Rule for writing a topic sentence about the cubicle:
 
 A built-in desk is a desk. It is part of the cubicle.
 
-A swivel-chair is in the cubicle. It is a chair. Understand "chair" as the swivel-chair.
+A swivel-chair is in the cubicle. It is a chair. Understand "chair" and "swivel" as the swivel-chair.
 	The description is "It is grey with small white dots on the fabric."
 	The introduction is "I bought the swivel-chair with my own money, because sitting on the plastic bucket seat supplied by the department made my legs sticky in the summer."
 
@@ -1897,6 +1901,8 @@ Report Professor Brown saying hello to the player:
 Professor Brown wears steel-rimmed spectacles and a worn leather jacket. The description of the steel-rimmed spectacles is "They have tiny oval lenses, tinted green."
 
 The introduction of the steel-rimmed spectacles is "Brown seems to be simultaneously cultivating the image of rebel (age 17) and absent-minded professor (age 65)."
+
+Understand "steel" and "rimmed" as the steel-rimmed spectacles.
 
 The description of the worn leather jacket is "A moderately cool sort of bomber-jacket look, except that the elbows have given out and the cuffs are unraveling."
 
