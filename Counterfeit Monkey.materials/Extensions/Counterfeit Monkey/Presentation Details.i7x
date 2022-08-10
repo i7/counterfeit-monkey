@@ -878,7 +878,7 @@ Include (-
 	SAVE_THE_GAME_RM('A'); new_line;
 ];
 
--) instead of "Save The Game Rule"in "Glulx.i6t".
+-) instead of "Save The Game Rule" in "Glulx.i6t".
 
 
 Presentation Details ends here.
