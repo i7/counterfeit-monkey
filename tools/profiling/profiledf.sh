@@ -24,7 +24,7 @@ if [ -s profile-report-df.txt ]; then
 	mv -f profile-report-df.txt profile-report-df_old.txt
 fi
 
-python profile-analyze.py profile-raw "../../Counterfeit Monkey.inform/Build/gameinfo.dbg" --glk dispatch_dump.xml --dumbfrotz > profile-report-df.txt
+python2 profile-analyze.py profile-raw "../../Counterfeit Monkey.inform/Build/gameinfo.dbg" --glk dispatch_dump.xml --dumbfrotz > profile-report-df.txt
 
 echo
 
