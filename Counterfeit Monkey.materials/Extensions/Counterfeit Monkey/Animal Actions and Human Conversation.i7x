@@ -3634,6 +3634,19 @@ After the activist discussing donate:
 	now the activist is nowhere;
 	continue the action.
 
+[ When suggesting we donate, saying "I'm inclined to donate" is amusingly inappropriate, as Alex will strongly disapprove if we do. So we make sure to always use "We could donate" instead. Bug reported and fix suggested by Emily Ellis (@scgtrp). ]
+
+The saved quip-suggestion-phrase is text which varies. The saved quip-suggestion-phrase is "".
+
+Before listing plausible quips when donate is plausible:
+	now the saved quip-suggestion-phrase is the quip-suggestion-phrase;
+	now the quip-suggestion-phrase is "[We] [could] ".
+
+After listing plausible quips when the saved quip-suggestion-phrase is not "":
+	now the quip-suggestion-phrase is the saved quip-suggestion-phrase;
+	now the saved quip-suggestion-phrase is "".
+
+
 Test activist with "tutorial off / z / x activist / yes / encourage / ask how consciousness / a campaign / donate / look" in Oval.
 
 Test activist2 with "tutorial off / z / x activist / yes / listen / ask how consciousness / a campaign / a flavorless / a water / warn / point out / explain / smile" in Oval.
