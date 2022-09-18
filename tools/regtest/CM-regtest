@@ -3476,7 +3476,9 @@ The snapping continues.
 
 "Nice swatch."
 
-/He (runs a hand over (the small nozzles|the brass plate)|knocks on the top of the T-inserter|stands back, regarding the T-inserter thoughtfully|pauses, listening for noises outside|runs his fingers over the surface of the machine, checking for hot spots). "First we should see whether this thing can reify abstracts."
+/He (runs a hand over (the small nozzles|the brass plate)|knocks on the top of the T-inserter|stands back, regarding the T-inserter thoughtfully|pauses, listening for noises outside|runs his fingers over the surface of the machine, checking for hot spots|cranes to look around at the back of the machine, but doesn't find anything interesting). "First we should see whether this thing can reify abstracts."
+
+/(We could|I'd like to|We want to|I'm inclined to|My response would be to) suggest we get out of here, complain about Brock's recklessness, or discover why Brock got stuck here. Maybe it's not worth it, though.
 
 > z
 Time passes.
@@ -3485,18 +3487,16 @@ Time passes.
 
 "It's weird — you have a different face but the expressions are still yours. It's like you have a really good rubber mask on."
 
-"I didn't have time to run the tests I wanted to run on the T-inserter. It'll take three minutes and then we can go. We need to do abstracts, animates, and a stability check."
-
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) insist on leaving immediately or accept Brock's lunacy. Or, then again, there's always finishing the job.
-
 > gel ink
 We just touch a coated fingertip of gel to the ink. With an audible SPLORT, the ink becomes a sink.
+
+"I didn't have time to run the tests I wanted to run on the T-inserter. It'll take three minutes and then we can go. We need to do abstracts, animates, and a stability check."
 
 The sink is far too large for us to carry, and falls onto the floor.
 
 /(He (cranes to look around at the back of the machine, but doesn't find anything interesting|runs a hand over the small nozzles). "If it can't do abstracts, the market value is going to be a lot lower because of the limited-depth trees.")?
 
-/(We could|I'd like to|We want to|I'm inclined to|My response would be to) complain about Brock's recklessness(,| or) discover why Brock got stuck here(, or ask what buried command center he heard of)?. (Maybe it's not worth it, though|Or, then again, there's always finishing the job).
+/(We could|I'd like to|We want to|I'm inclined to|My response would be to) insist on leaving immediately or accept Brock's lunacy. Or, then again, there's always finishing the job.
 
 > wave k-remover at sink
 We reset the device to k. With a distinct whiff of sulfur, the sink turns into a sin. An abstract representation of carelessness with resources, represented by the wasteful use of a great deal of clean water.
