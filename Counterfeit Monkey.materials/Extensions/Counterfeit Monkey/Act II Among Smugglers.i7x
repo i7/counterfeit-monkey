@@ -137,7 +137,7 @@ Instead of searching the aquarium-shelving:
 A ranking rule for the merchandise:
 	increase the description-rank of the merchandise by 50.
 
-The merchandise is fixed in place in the aquarium. The initial appearance is "The merchandise consists mainly, but not exclusively, of books, and the selection caters to odd tastes."
+The merchandise is fixed in place in the aquarium. The initial appearance is "The merchandise consists mainly, but not exclusively, of [if boldening is true][bold type][end if]books[roman type], and the selection caters to odd tastes."
 	The introduction is "You once picked up in here a book about a man who R-removed a wrench, and then had his way with it. You and Brock had a good time with that one for the next month and a half."
 	Understand "books" or "book" or "stack" or "stacks" or "grandfather clock" or "grandfather" or "his gray lover" or "seventy ways to disable an authentication scope" or "ways to disable" or "seventy" or "stack/stacks of books" as the merchandise.
 	The description is "Our eyes scan over the merchandise and pick out [one of][a random thing which is part of the merchandise][or][a random number between 2 and 7 in words] copies of [a random thing which is part of the merchandise][at random][one of][or] inexplicably filed under '[one-genre]'[as decreasingly likely outcomes]."
