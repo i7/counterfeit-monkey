@@ -4236,7 +4236,7 @@ who we seem-3 is an informative quip.
 	It quip-supplies Lena.
 
 offer-contraband is an NPC-directed quip.
-	The reply is "Lena goes off into a corner and rummages among the suspicious piles of books, and uncovers a box. 'C'mere,' she says; and obediently I wander over to that area of the store, which incidentally happens to be tucked away and half-hidden by shelves.
+	The reply is "Lena goes off into a corner and rummages among the suspicious piles of books, and uncovers [if boldening is true][bold type][end if]a box[roman type]. 'C'mere,' she says; and obediently I wander over to that area of the store, which incidentally happens to be tucked away and half-hidden by shelves.
 
 '[prepare contraband]See here,' she says. 'See what you can do with it, eh?'"
 
