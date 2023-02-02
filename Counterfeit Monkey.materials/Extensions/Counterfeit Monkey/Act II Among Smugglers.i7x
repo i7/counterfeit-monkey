@@ -190,7 +190,7 @@ The description of the modems is "If Brock were here, he would know exactly what
 
 Section 3 - Lena
 
-Lena is an alert woman in the Aquarium. The initial appearance is "[one of][Lena] is present, all right. In fact she watches us keenly the instant [we] come into the shop.[or][Lena] hovers, unwilling to let us look around ungoverned[if the contraband box is mentionable and the contraband box is non-empty]. At her feet is [a contraband box] containing [a list of things *in the contraband box][end if].[stopping]".
+Lena is an alert woman in the Aquarium. The initial appearance is "[one of][Lena] is present, all right. In fact she watches us keenly the instant [we] come into the shop.[or][Lena] hovers, unwilling to let us look around ungoverned[if the contraband box is in location and the contraband box is non-empty]. At her feet is [a contraband box] containing [a list of things *in the contraband box][end if].[stopping]".
 	The introduction is "[Lena] is an associate of Slango's. You hadn't realized that had crossed over into a romance. Slango has never, ever in your recollection dated anyone. And now this."
 	The description is "She has grey hair in a curly cloud around her head, and she wears a [long patchwork skirt] and [leather sandals]. But her eyes are keen."
 	Lena wears a long patchwork skirt and some leather sandals. The description of the leather sandals is "The sort of sturdy comfortable sandals one can walk in for hours."
