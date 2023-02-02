@@ -665,6 +665,8 @@ Carry out big-map-showing:
 		redraw the map and compass;
 		start looking for graphlinks;
 		now seen-map is true;
+		if glulx line input echo suppression is supported:
+			suppress line input echo in the main window;
 	try looking;
 	if seen-map is false:
 		say "[first custom style][bracket]You can open the map in a split window by typing MAP ON.[close bracket][roman type][paragraph break]";
