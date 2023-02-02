@@ -5491,6 +5491,8 @@ Report an actor dumping inventory on:
 Report my mother dumping inventory on:
 	say "[The actor] puts [the dumped objects with definite articles] down on [the noun].[run paragraph on]" instead.
 
+The player is fixed in place.
+
 Clearing is an action applying to one thing.
 
 The cleared objects is a list of objects that varies.
