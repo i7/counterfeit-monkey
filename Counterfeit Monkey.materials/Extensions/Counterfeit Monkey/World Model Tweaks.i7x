@@ -1347,8 +1347,8 @@ Carry out switching on an ignition:
 Carry out switching off an ignition:
 	now a random car which incorporates the noun is quiet.
 
-Instead of listening to a noisy car:
-	say "The car is making an unpleasant raspy growl."
+Instead of listening to a noisy car (called noisy-car):
+	say "[The noisy-car] is making an unpleasant raspy growl."
 
 Instead of going by car (called used car) to somewhere offroad:
 	if the player is hurrying:
