@@ -5445,7 +5445,7 @@ Rule for beat-producing when the current interlocutor is my mother:
 		try my mother closing N;
 	otherwise if the pot-of-yogurt is not seen and we're his girlfriend is not available:
 		try my mother opening N;
-	otherwise if something portable (called impediment) is on the futon:
+	otherwise if something portable which is not the player is on the futon:
 		try my mother clearing the futon;
 	otherwise if my mother carries something (called impediment):
 		let goal be a random furniture counter which is in my apartment;
@@ -5491,15 +5491,13 @@ Report an actor dumping inventory on:
 Report my mother dumping inventory on:
 	say "[The actor] puts [the dumped objects with definite articles] down on [the noun].[run paragraph on]" instead.
 
-The player is fixed in place.
-
 Clearing is an action applying to one thing.
 
 The cleared objects is a list of objects that varies.
 
 Setting action variables for an actor clearing something:
 	truncate the cleared objects to 0 entries;
-	repeat with item running through portable things on the noun:
+	repeat with item running through portable things which are not the player on the noun:
 		add the item to the cleared objects.
 
 Carry out an actor clearing:
