@@ -655,6 +655,8 @@ There are three cameo appearances by IF community members (or their alter egos).
 	"Contacting the author"	--	"Emily Short can be reached at emshortif@gmail.com. Her website, at http://emshort.wordpress.com, contains more information about this and other interactive fiction.
 
 Please report bugs at https://github.com/i7/counterfeit-monkey/issues"
+	"Hints"	--	"Hints for Counterfeit Monkey are available here: https://intfiction.org/t/counterfeit-monkey-invisiclues-hints/44257"
+
 
 This is the link-free map drawing rule:
 	redraw the map and compass.
