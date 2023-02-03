@@ -512,7 +512,7 @@ This is the teach thinking rule:
 Table of Instruction Followups (continued)
 selector (a rule)	followup (a text)
 teach thinking rule	"[first custom style]Excellent. Up in the status bar, the 'Plans: ...' number shows how many tasks we still think we need to work on."
-teach waving rule	"[first custom style]In fact, to make life easier, we don't even have to SET the letter-remover every time we use it. We can just type (say) WAVE P-REMOVER AT PRAM, and the remover will automatically set itself to P.[paragraph break]Now, let's see what happened as a result...[roman type]"
+teach waving rule	"[first custom style]In fact, to make life easier, we don't even have to SET the letter-remover every time we use it. We can just type (say) WAVE P-REMOVER AT PRAM (or REMOVE P FROM PRAM), and the remover will automatically set itself to P.[paragraph break]Now, let's see what happened as a result...[roman type]"
 teach more compass directions rule	"[first custom style]Unless you're playing this game in text-only mode, you should see a little blue and white compass on the side of the screen. That compass will always show you which directions you can go next. Directions in blue lead to areas you haven't visited before. Directions in white lead to places you've already been."
 
 Carry out planning:
