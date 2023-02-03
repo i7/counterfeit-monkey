@@ -1,18 +1,35 @@
 # Change log
 
-## Unreleased
+## Release 11 (unreleased)
 
-- Many scenes would never end if initiated close enough to midnight. Getting past the secretary seems to have been especially vulnerable to this.
-- Sometimes the first lines of the game would not be printed after a reset. This was caused by a bug in the Flexible Windows extension, and was fixed by updating to the new version 15/210811 by Dannii Willis.
-- Adds LOOK IN GUIDEBOOK as a synonym for reading it.
-- Adds highlighting (bold text in highlight mode) to more objects mentioned in the text. Reported by Dan Fabulich.
-- REMOVE X FROM Y would sometimes appear to use the previous letter setting rather than X. It should now be identical in behavior to WAVE X-REMOVER AT Y.
+- Some scenes would never progress if initiated close enough to in-game midnight. Getting past the secretary seems to have been particularly vulnerable to this.
 - Alex's mother could pick up the player or other impossibly heavy items from the futon and place them on the counter.
-- When Alex's mother asks if we are Alex's girlfriend, she will now refuse to leave until given an answer.
+- Failures to save are properly detected and reported.
+
+### Cosmetic output errors
+
+- Sometimes the first lines of the game would not be printed after a reset. This was caused by a bug in the Flexible Windows extension, and was fixed by updating to the new version 15/210811 by Dannii Willis.
+- Adds highlighting (bold text in highlight mode) to more objects mentioned in the text. Reported by Dan Fabulich.
 - Alex's mother and the roc would occasionally examine "illegal object -1" or similar.
+- The contraband box is properly mentioned in room descriptions.
+
+### Gameplay changes
+
+- When Alex's mother asks if we are Alex's girlfriend, she will now refuse to leave until given an answer.
+- Alex will no longer claim to be inclined to donate and then get upset if we do. Reported by Emily Ellis.
+
+### Parsing
+
+- REMOVE X FROM Y would sometimes appear to use the previous letter setting rather than X. It should now be identical in behavior to WAVE X-REMOVER AT Y.
+- The toe ring can now be referred to as such.
+- Adds LOOK IN GUIDEBOOK as a synonym for reading it.
+
+### Player conveniences
+
 - To facilitate playing on small screens, the map will not open at the beginning of the game if the window is too narrow.
 - Adds a new full window size map that can be opened by typing MAP.
 - The GRAPHICS ON and GRAPHICS OFF commands are replaced by MAP ON and MAP OFF, respectively.
+- The help menu has a new Hints item which links to the ”invisiclues” by Dan Fabulich at https://intfiction.org/t/counterfeit-monkey-invisiclues-hints/44257.
 
 ## Release 10
 
