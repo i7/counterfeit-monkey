@@ -674,10 +674,10 @@ Carry out big-map-showing:
 
 
 To close all but graphwin:
-	(-	GraphwinOnly(); -).
+	(- GraphwinOnly(); -).
 
 To reopen status:
-	(-	if (gg_statuswin == 0) gg_statuswin = glk_window_open(gg_mainwin, winmethod_Fixed + winmethod_Above, 1, wintype_TextGrid, GG_STATUSWIN_ROCK); -).
+	(- if (gg_statuswin == 0) gg_statuswin = glk_window_open(gg_mainwin, winmethod_Fixed + winmethod_Above, 1, wintype_TextGrid, GG_STATUSWIN_ROCK); -).
 
 
 Understand "inline map" and "in-line map" as inline-map-showing. Inline-map-showing is an action out of world.
