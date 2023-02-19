@@ -553,6 +553,9 @@ Include (-
 	width_quarter
 	height_sixth
 	vertical_offset
+	left_image
+	right_image
+	nautical
 	;
 
 	map_top = 0;
@@ -569,15 +572,16 @@ Include (-
 	glk_window_get_size(graphwin, 0, gg_arguments);
 	fullheight = gg_arguments-->0;
 
-	! let real-height be the height of the graphics window * 1.21
+	! let real-height be the height of the graphics window * 1.16
 
-	! This value is hand tuned (along with the 0.02 vertical_offset below
+	! This value is hand tuned (along with the 0.01 vertical_offset below)
 	! to minimize wasteful space at the top and bottom of the map
 	! while still looking reasonably good at all sizes and ratios.
 	! Looks less good on the yacht maps, though.
 
-	! REAL_NUMBER_TY_Divide(1210, 1000) is 1067114824
-	real_height = REAL_NUMBER_TY_Times(NUMBER_TY_to_REAL_NUMBER_TY(fullheight), 1067114824);
+	! REAL_NUMBER_TY_Divide(1160, 1000) is 1066695393
+	real_height =
+		REAL_NUMBER_TY_Times(NUMBER_TY_to_REAL_NUMBER_TY(fullheight), 1066695393);
 	ratio = REAL_NUMBER_TY_Divide(real_ideal, real_height);
 
 	! REAL_NUMBER_TY_Divide(722, 860) is 1062660473
@@ -604,13 +608,40 @@ Include (-
 	{
 		! The window is wider than the map
 
-		! 0.02 REAL_NUMBER_TY_Divide(2, 100) is 1017370378
-		vertical_offset = REAL_NUMBER_TY_to_NUMBER_TY(REAL_NUMBER_TY_Times(scaled_height_real, 1017370378));
+		! 0.01 REAL_NUMBER_TY_Divide(1, 100) is 1008981770
+		vertical_offset =
+			REAL_NUMBER_TY_to_NUMBER_TY(REAL_NUMBER_TY_Times(scaled_height_real, 1008981770));
+
+		nautical = GetEitherOrProperty( real_location, (+ nautical +) );
+
+		! the nautical map looks better if we nudge it down instead of up
+		if (nautical)
+			vertical_offset = -vertical_offset;
 
 		map_top = map_top - vertical_offset;
 
 		! fill window with blue background colour
 		glk_image_draw_scaled(graphwin, ResourceIDsOfFigures-->( (+ figure of background colour +) ), 0, 0, fullwidth, fullheight);
+
+		! draw the padding images at the sides
+		if (nautical)
+		{
+			left_image =
+				ResourceIDsOfFigures-->( (+ Figure of nautical padding left +) );
+			right_image =
+				ResourceIDsOfFigures-->( (+ Figure of nautical padding right +) );
+		}
+		else
+		{
+			left_image  = ResourceIDsOfFigures-->( (+ Figure of padding left +) );
+			right_image = ResourceIDsOfFigures-->( (+ Figure of padding right +) );
+
+		}
+
+		glk_image_draw_scaled(graphwin, left_image, IntegerDivide(fullwidth - ideal_width, 2) - ideal_width, map_top, ideal_width, scaled_height);
+
+		glk_image_draw_scaled(graphwin, right_image, ideal_width + IntegerDivide(fullwidth - ideal_width, 2), map_top, ideal_width, scaled_height);
+
 	} else {
 
 		! The window is narrower than the map

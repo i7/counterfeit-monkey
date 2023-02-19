@@ -92,6 +92,10 @@ Figure of Turret is the file "map-turret.png" ("A city map.").
 Figure of Webster Court is the file "map-webster-court.png" ("A city map.").
 Figure of Winding Path is the file "map-winding-path.png" ("A city map.").
 
+["Padding" side images]
+Figure of padding left is the file "map-extend-left.png".
+Figure of padding right is the file "map-extend-right.png".
+
 A room has a figure-name called the local map.
 
 The local map of Back Alley is the figure of back-alley.
@@ -230,6 +234,10 @@ Figure of Slango-Head is the file "map-slango-head.png" ("The floor plan of a ya
 Figure of Brock-Bunk is the file "map-brock-bunk.png" ("The floor plan of a yacht.").
 Figure of Brock-head is the file "map-brock-head.png" ("The floor plan of a yacht.").
 Figure of Crew-Bunk is the file "map-crew-bunk.png" ("The floor plan of a yacht.").
+
+["Padding" side images]
+Figure of nautical padding left is the file "map-navigation-extend-left.png".
+Figure of nautical padding right is the file "map-navigation-extend-right.png".
 
 The local map of Sunning Deck is the Figure of Sunning Deck.
 The local map of Galley is the Figure of Galley.
