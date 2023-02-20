@@ -1,6 +1,6 @@
 # Change log
 
-## Release 11 (unreleased)
+## Release 11
 
 - Some scenes would never progress if initiated close enough to in-game midnight. Getting past the secretary seems to have been particularly vulnerable to this.
 - Alex's mother could pick up the player or other impossibly heavy items from the futon and place them on the counter.
