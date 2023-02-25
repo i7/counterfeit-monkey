@@ -433,7 +433,7 @@ The concrete-lining is scenery in the Generator Room. The printed name is "concr
 The yellow paint lettering is scenery in the Generator Room. The initial appearance is "CAUTION: HIGH ENERGY EQUIPMENT, it says. DO NOT OPERATE WITHOUT TRAINING. There is also a stenciled letter A surrounded by atom-style rings." Understand "stenciled" or "letter" or "letter a" or "atom-style" or "rings" or "ring" or "atom" as the yellow paint lettering.
 	The printed name is "[if looking]Yellow[otherwise]yellow[end if] paint lettering".
 
-The first aid station is in the Generator Room. The initial appearance is "[A first aid station] is built onto the wall[if the first aid station is open] and hangs open[otherwise]. It is closed[end if]." The first aid station is an openable closed container. The description of the first aid station is "It's a large box mounted to the wall, with a red cross painted on the front of it." Understand "large" or "box" or "red" or "cross" as the first aid station.
+The first aid station is in the Generator Room. It is fixed in place. The initial appearance is "[A first aid station] is built onto the wall[if the first aid station is open] and hangs open[otherwise]. It is closed[end if]." The first aid station is an openable closed container. The description of the first aid station is "It's a large box mounted to the wall, with a red cross painted on the front of it." Understand "large" or "box" or "red" or "cross" as the first aid station.
 
 A ranking rule when the first aid station is mentionable:
 	increase the description-rank of the first aid station by 10.
