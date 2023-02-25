@@ -1173,7 +1173,7 @@ This is the pre-drawer rule:
 
 Section 4 - Crew Cabin
 
-The Crew Cabin is a room. It is nautical and forbidden. It is indoors. The description is "It was meant to be mine, before we turned out to be inseparable It's... Spartan. But I didn't pay for expensive accommodations. Oh, yes, and I can understand that it must be a bother for you to give up the storage space.
+The Crew Cabin is a room. It is nautical and forbidden. It is indoors. The description is "It was meant to be mine, before we turned out to be inseparable. It's... Spartan. But I didn't pay for expensive accommodations. Oh, yes, and I can understand that it must be a bother for you to give up the storage space.
 
 I'm fascinated to note what shape a bed can be when it's not rectangular. More sort of curved and tapering. Convenient if you're called on to house a mermaid.".
 
