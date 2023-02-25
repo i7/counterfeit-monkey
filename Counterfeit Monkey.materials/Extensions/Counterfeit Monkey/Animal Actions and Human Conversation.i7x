@@ -5872,10 +5872,13 @@ A description-concealing rule:
 Rule for writing a topic sentence about Atlantida-woman:
 	say "[Atlantida-woman] stands between us and the eastern exit, backlit by sunlight[if the player is gelled and atlantida-woman carries the rifle]. [The rifle] hangs loose in her hand[otherwise if the player is not gelled and the atlantida-woman carries the rifle]. She has [the rifle] trained on our torso[end if]. ";
 	if Atlantida-woman does not carry the restoration-gel rifle:
-		say "She dwarfs [the inlaid desk] and all the other furnishings in the room. ";
-		now the inlaid desk is mentioned;
-		now the stack of files is mentioned;
-		now the rubber stamp is mentioned.
+		if the inlaid desk is in the location:
+			say "She dwarfs [the inlaid desk] and all the other furnishings in the room. ";
+			now the inlaid desk is mentioned;
+			now the stack of files is mentioned;
+			now the rubber stamp is mentioned;
+		otherwise:
+			say "She dwarfs all of the furnishings in the room. ".
 
 Rule for listing exits while looking in Personal Apartment when atlantida-woman is in the location:
 		do nothing instead.
