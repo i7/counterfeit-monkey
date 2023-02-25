@@ -1808,7 +1808,10 @@ Check shooting something with the loaded anagramming gun:
 				add the item to the possibles list; [* We make a list because otherwise, for any set of anagrammed objects in the repository, we will always just swap back and forth between the first two that are implemented and never get to the others.]
 	let max be the number of entries in the possibles list;
 	if max is 0:
-		say "The gun fires ruggedly into [the noun], but is unable to make anything interesting out of [the initial key]. [The noun] [recoalesce] into [their] original form." instead;
+		if the noun is the player:
+			say "There is a momentary splitting sensation as the gun tries to make something interesting out of [the initial key]. [We] reacoalesce into our original form." instead;
+		otherwise:
+			say "The gun fires ruggedly into [the noun], but is unable to make anything interesting out of [the initial key]. [The noun] [recoalesce] into [their] original form." instead;
 	otherwise:
 		now detritus is entry max of the possibles list.
 
