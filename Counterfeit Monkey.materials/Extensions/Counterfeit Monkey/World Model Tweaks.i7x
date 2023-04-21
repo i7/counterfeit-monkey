@@ -1396,7 +1396,7 @@ Instead of going by car when the location is offroad:
 	move protesters backdrop to all roads in Busy Streets;
 	move traffic backdrop to all roads in Busy Streets.]
 
-Some protesters are a backdrop. Understand "student" or "students" as the protesters. The description is "Hundreds of people pack the sidewalk, wearing slogans and carrying angry signs."
+Some protesters are a backdrop. Understand "student" or "students" as the protesters. The description is "Hundreds of people pack the sidewalk, wearing slogans and carrying [if boldening is true][bold type][end if]angry signs[roman type]."
 
 A description-concealing rule when the location is High Street (this is the hide protesters rule):
 	rapidly set all contents of the protesters not marked for listing.
