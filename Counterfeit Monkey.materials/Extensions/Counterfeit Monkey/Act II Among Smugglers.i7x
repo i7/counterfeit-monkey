@@ -347,7 +347,7 @@ Check waving the letter-remover at the briny rivulets when the current setting o
 	say "The letter-remover has a go, and for a moment the rivulets turn into a single, unified trickle. But the ground is so uneven that soon the liquid has diverged again into multiple rivulets. Some things can only be cleaned up the old-fashioned way, but fortunately this one isn't really our problem." instead
 
 
-The Authenticator is a woman in Fish Market. Understand "tall" or "stern" or "woman" or "uniform" or "black" or "caped" as the Authenticator. The initial appearance is "A tall, stern woman is standing in the middle of the market. She wears the black caped uniform of an Authenticator, and a monocle just like mine. And I don't think I want her to see us." The description of the Authenticator is "She isn't looking our way yet, but she will be any minute now."
+The Authenticator is a woman in Fish Market. Understand "tall" or "stern" or "woman" or "uniform" or "black" or "caped" as the Authenticator. The initial appearance is "A tall, stern [if boldening is true][bold type][end if]woman[roman type] is standing in the middle of the market. She wears the black caped uniform of an Authenticator, and a monocle just like mine. And I don't think I want her to see us." The description of the Authenticator is "She isn't looking our way yet, but she will be any minute now."
 
 
 Section 5 - Outdoor Cafe
@@ -611,7 +611,7 @@ Check waving the letter-remover at the boats when the current setting of the let
 Check waving the letter-remover at the boats when the current setting of the letter-remover is "s":
 	say "Deplural[izing] all the boats would be a fascinating re-enactment of historical events, except that the boats are full of harmless tourists and the letter-remover doesn't have nearly the power required to achieve that goal."
 
-The customs-exterior is a facade in Docks. It fronts east. The initial appearance is "To the east, up a moderate rise from the sea-level docks, is the imposing exterior of the Customs House. The classical look is only a little undermined by the public-service posters along the front." The introduction is "There passports are inspected and cargo passed under authentication, foreign items renamed or confiscated, and suspected smugglers interrogated."
+The customs-exterior is a facade in Docks. It fronts east. The initial appearance is "To the east, up a moderate rise from the sea-level docks, is the imposing exterior of the Customs House. The classical look is only a little undermined by the [public-service posters] along the front." The introduction is "There passports are inspected and cargo passed under authentication, foreign items renamed or confiscated, and suspected smugglers interrogated."
 	The description is "The building itself is not especially grand, but you have never been on the good side of the people who work there, and that gives you a perfectly justifiable dislike of the place, and the sense that it's larger than life."
 	Understand "exterior" or "customs" or "house" as the customs-exterior. The printed name is "customs house".
 
