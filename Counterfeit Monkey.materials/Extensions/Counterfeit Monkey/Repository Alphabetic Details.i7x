@@ -1576,18 +1576,18 @@ topic	stuff	setting
 
 Test oboe with "hard mode / y / tutorial off / load gun / look / open station / get balm / shoot balm / put lamb in bucket / x oboe / blow oboe / play oboe / play music on oboe / play chopsticks on oboe" [in the generator room holding the anagramming gun and the bullets.]
 
-The description of the ode is "A short poem, letter-pressed attractively on a sheet of thick paper. It is entitled 'Our Ancestors, The Immortal Spirits of the Pyramids,' a fact which disinclines me to study the rest." Understand "poem" as the ode. The scent-description of the ode is "paper".
+The description of an ode is "A short poem, letter-pressed attractively on a sheet of thick paper. It is entitled 'Our Ancestors, The Immortal Spirits of the Pyramids,' a fact which disinclines me to study the rest." Understand "poem" as the ode. The scent-description of the ode is "paper".
 
-Instead of searching the ode:
+Instead of searching an ode:
 	say "A quick survey of the first verse reveals two metrical errors and a very dodgy rhyme of 'Ra' and 'car.'"
 
-Instead of listening to the ode:
+Instead of listening to an ode:
 	say "It is mercifully silent. I don't think reading it aloud would improve my opinion of the thing."
 
-Instead of frowning at or laughing at the ode:
+Instead of frowning at or laughing at an ode:
 	say "Yes, I share your critical sentiments exactly."
 
-Instead of smiling at the ode:
+Instead of smiling at an ode:
 	say "[We] smile derisively."
 
 The description of the odes-book is "A slender volume of poetry, bound between red covers. It looks completely harmless and is written in English.
