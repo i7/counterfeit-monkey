@@ -4278,18 +4278,18 @@ A first conversation-reply rule when the current interlocutor is Lena:
 		casually queue nice-paste;
 	if the odes-book is marked-visible and the ream is marked-visible and the ream is disguised and the odes-book is disguised and Lena does not know trust-me:
 		queue that-does-it as immediate obligatory;
-	if the modem is marked-visible and Lena is not urgently eager-to-speak:
+	if the modem is enclosed by location and Lena is not urgently eager-to-speak:
 		if Lena does not recollect modem-complaint or a random chance of 1 in 3 succeeds:
 			queue modem-complaint as immediate obligatory;
-	if an ode is marked-visible and Lena is not urgently eager-to-speak:
+	if an ode is enclosed by location and Lena is not urgently eager-to-speak:
 		if Lena does not recollect ode-complaint:
 			queue ode-complaint as immediate obligatory;
 		otherwise if Lena does not recollect second-ode-complaint or a random chance of 1 in 3 succeeds:
 			queue second-ode-complaint as immediate obligatory;
-	if the preamp is marked-visible and Lena is not urgently eager-to-speak:
+	if the preamp is enclosed by location and Lena is not urgently eager-to-speak:
 		if Lena does not recollect preamp-complaint or a random chance of 1 in 3 succeeds:
 			queue preamp-complaint as immediate obligatory;
-	if the reams are marked-visible and Lena is not urgently eager-to-speak:
+	if the reams are enclosed by location and Lena is not urgently eager-to-speak:
 		if Lena does not recollect reams-complaint or a random chance of 1 in 3 succeeds:
 			queue reams-complaint as immediate obligatory;
 	if the reams are marked-visible and the modems are marked-visible and Lena is not urgently eager-to-speak:
