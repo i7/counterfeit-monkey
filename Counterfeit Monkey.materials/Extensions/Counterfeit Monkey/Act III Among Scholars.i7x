@@ -823,7 +823,7 @@ Southwest of Samuel Johnson Hall is the seminar door. The seminar door is a clos
 Southwest of the seminar door is Language Studies Seminar Room. The description of the Language Studies Seminar Room is "They recently redid this room, and whoever picked the decorations had postmodern tastes." The Language Studies Seminar Room is indoors, checkpoint and southern.
 
 After looking in the Language Studies Seminar Room when the seminar door is open:
-	if Professor Higgate is marked-visible:
+	if Professor Higgate is enclosed by location:
 		continue the action;
 	silently try closing the seminar door;
 	if the seminar door is closed:
@@ -1426,7 +1426,7 @@ A description-concealing rule when the location is the Language Studies Departme
 	say "Through the window in Waterstone's door, [we] can see him turning the lock. When he catches us watching he gives a tight, unfriendly smile and goes back to his desk." instead.]
 
 Check examining office-door-1 when the subcommand of office-door-1 matches "waterstone":
-	if Professor Waterstone is marked-visible:
+	if Professor Waterstone is enclosed by location:
 		try examining Professor Waterstone instead.
 
 Instead of searching the special glass window when office-door-1 is closed:

@@ -4177,7 +4177,7 @@ Instead of saying goodbye to Slango during consulting-Slango:
 When consulting-Slango ends:
 	say "This gives us something to go on, anyway. We give Slango what I intend as a reassuring nod of solidarity.";
 	record "meeting Slango" as achieved;
-	if Slango is marked-visible:
+	if Slango is enclosed by location:
 		if Slango is the current interlocutor:
 			try Slango saying goodbye to the player;
 			say "He heads out towards the docks and quickly disappears from view [--] returning to the yacht to wait for us to arrive with Brock.";
@@ -4292,7 +4292,7 @@ A first conversation-reply rule when the current interlocutor is Lena:
 	if the reams are enclosed by location and Lena is not urgently eager-to-speak:
 		if Lena does not recollect reams-complaint or a random chance of 1 in 3 succeeds:
 			queue reams-complaint as immediate obligatory;
-	if the reams are marked-visible and the modems are marked-visible and Lena is not urgently eager-to-speak:
+	if the reams are enclosed by location and the modems are marked-visible and Lena is not urgently eager-to-speak:
 		if Lena does not recollect task-reminder or a random chance of 1 in 3 succeeds:
 			queue task-reminder;
 	if the modems are marked-visible and Lena is not urgently eager-to-speak:
