@@ -4317,7 +4317,7 @@ task-reminder is an NPC-directed quip.
 	The reply is "[one of]Lena looks from us to [the list of things *in the contraband box]. 'So maybe you could do something with these,' she says, looking at us sidelong. I can tell she's starting to wonder whether we're legitimate[or]'If you need to get some tools or something, I'll still be here,' Lena comments. Honestly I am surprised she's so patient about our slowness on her little test[or]Lena looks us up and down as though trying to reconfigure our face into your face, the one she knows[or]Lena is waiting for us to do something to change [the list of things *in the contraband box].[stopping]."
 
 modems-complaint is an NPC-directed quip.
-	The reply is "[one of][if the odes is seen]'Let's go back to the odes,' Lena suggests.[otherwise if the preamps are marked-visible]'Try doing something with the modems,' Lena suggests.[otherwise]'Now the modems,' says Lena. 'Unless you're too tired.'[end if][or]Lena awaits your attention to the modems.[stopping]".
+	The reply is "[one of][if the odes-book is seen]'Let's go back to the odes,' Lena suggests.[otherwise if the preamps are marked-visible]'Try doing something with the modems,' Lena suggests.[otherwise]'Now the modems,' says Lena. 'Unless you're too tired.'[end if][or]Lena awaits your attention to the modems.[stopping]".
 
 modem-complaint is an NPC-directed quip.
 	The reply is "[one of]Lena regards the solitary modem unsympathetically. 'Well, it's shrunk,' she says. 'But that doesn't make it look like what it isn't.'[or]Lena continues to look at the modem with distaste.[stopping]".
