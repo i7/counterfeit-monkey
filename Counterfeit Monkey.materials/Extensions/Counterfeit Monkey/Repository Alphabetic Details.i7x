@@ -1576,7 +1576,7 @@ topic	stuff	setting
 
 Test oboe with "hard mode / y / tutorial off / load gun / look / open station / get balm / shoot balm / put lamb in bucket / x oboe / blow oboe / play oboe / play music on oboe / play chopsticks on oboe" [in the generator room holding the anagramming gun and the bullets.]
 
-The description of an ode is "A short poem, letter-pressed attractively on a sheet of thick paper. It is entitled 'Our Ancestors, The Immortal Spirits of the Pyramids,' a fact which disinclines me to study the rest." Understand "poem" as the ode. The scent-description of the ode is "paper".
+The description of an ode is "A short poem, letter-pressed attractively on a sheet of thick paper. It is entitled 'Our Ancestors, The Immortal Spirits of the Pyramids,' a fact which disinclines me to study the rest." Understand "poem" as an ode. The scent-description of an ode is "paper".
 
 Instead of searching an ode:
 	say "A quick survey of the first verse reveals two metrical errors and a very dodgy rhyme of 'Ra' and 'car.'"
