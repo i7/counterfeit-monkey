@@ -6434,6 +6434,7 @@ Chapter 4 - Subject visibility bug
 
 A first every turn rule when geography is marked-visible:
 	repeat with N running from 1 to subject count:
-		now subject-number N is marked invisible.
+		unless subject-number N is enclosed by location:
+			now subject-number N is marked invisible.
 
 Animal Actions and Human Conversation ends here.
