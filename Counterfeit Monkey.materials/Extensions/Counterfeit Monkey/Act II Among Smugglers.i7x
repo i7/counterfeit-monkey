@@ -1148,7 +1148,7 @@ NO MORE 'NON-REFERRABLE PROCEDURES'...[line break]
 ...ON ECONOMIC POLICY[line break]
 ...ON HUMAN RIGHTS".
 
-The stuffed octopus is a thing. It is on the giant Atlantida statue. The flexible appearance of the stuffed octopus is "The discarded stuffed octopus lies on the [ground][one of], looking sadly at us[or], googly eyes fixed on the heavens[at random]."
+The stuffed octopus is a thing. It is on the giant Atlantida statue. The flexible appearance of the stuffed octopus is "The discarded [stuffed octopus] lies on the [ground][one of], looking sadly at us[or], googly eyes fixed on the heavens[at random]."
 
 The description of the stuffed octopus is "Slightly wrong, actually, but I suppose they didn't have a stuffed squid handy. Of the four symbols associated with Atlantis, the squid [--] representing invention and individuality [--] is the one that has greatest resonance for protesters[if the stuffed octopus is on the giant Atlantida statue].
 
