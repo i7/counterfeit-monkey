@@ -1030,14 +1030,15 @@ After going to Roundabout when the protesters are not off-stage and the location
 	increase path description count by 1;
 	say "The whole Roundabout has ground to a halt, with protesters walking in the street and in some places completely filling the road. But this is mostly a nuisance until I notice that there are a couple of teenagers handcuffed to a tree.
 
-I give the wheel a yank and run the car up onto the central traffic circle a little way. Call it a parking job. We need to get those kids out of here before their arrest is processed and they go to storage. I might not have the nerve to do anything by myself, but you're with me, and I'm starting to appreciate that's like being Batman. ";
+I give the wheel a yank and run the car up onto the central traffic circle a little way. Call it a parking job. We need to get those kids out of here before their arrest is processed and they go to storage. I might not have the nerve to do anything by myself, but you're with me, and I'm starting to appreciate that's like being Batman.";
 	if the player is in a car (called target):
 		move the target to Traffic Circle;
 		silently try switching off a random ignition which is part of target;
-		follow the compass-drawing rule instead;
 	otherwise:
 		move the player to Traffic Circle;
-		follow the compass-drawing rule instead.
+	follow the compass-drawing rule;
+	stop the action.
+
 
 Sanity-check doing something when the location is Traffic Circle and the player is in a car:
 	if the noun is a thing and the noun is not enclosed by a car and the noun is not a car:
