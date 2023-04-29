@@ -6428,4 +6428,12 @@ When Guard-capture ends in capture:
 	abide by the game-ending rule.
 
 
+Chapter 4 - Subject visibility bug
+
+[There is a bug where conversation subjects can randomly become marked as visible, causing all kinds of trouble. Until the root cause is found, this counters it.]
+
+A first every turn rule when geography is marked-visible:
+	repeat with N running from 1 to subject count:
+		now subject-number N is marked invisible.
+
 Animal Actions and Human Conversation ends here.
