@@ -197,9 +197,6 @@ Seeking transport is a scene. Seeking transport begins when playing to plan ends
 When seeking transport ends:
 	now the farmer is nowhere;
 	now the farmer's stall is nowhere; [We want to give the sense of change here, and also get the farmer out of the way before he can be transformed into a FAME abstraction.]
-	repeat with item running through quips in quip-repository:
-		if item is a location-questioning quip and item is not where there seems arbot:
-			now item is nowhere;
 	now the current daytime is mid afternoon;
 	assign "Ask people around here if they've seen Slango";
 	say "...and... Slango is not here.
