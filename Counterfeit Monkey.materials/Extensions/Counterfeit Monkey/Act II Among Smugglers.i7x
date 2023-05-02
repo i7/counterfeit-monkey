@@ -1296,7 +1296,7 @@ Instead of the All-Purpose-Officer touching the live branch:
 	gel-convert the live branch.
 
 Instead of the All-Purpose-Officer touching the protest-sign:
-	say "[one of]Once the All-Purpose Officer comes level with [the protest-sign], he shoots it with [the diminutive affixer], turning it into a signet[or]Forced to repeat himself, [the actor] jams the diminutive affixer into the sign a little harder than strictly necessary, with predictable results[or]Stony-faced with fury, [the actor] punches [the protest-sign] again with the diminutive affixer[stopping]. [run paragraph on][signet description][paragraph break]";
+	say "[one of]Once the All-Purpose Officer comes level with [the protest-sign], he shoots it with [the diminutive affixer], turning it into a [signet][or]Forced to repeat himself, [the actor] jams the diminutive affixer into the sign a little harder than strictly necessary, with predictable results[or]Stony-faced with fury, [the actor] punches [the protest-sign] again with the diminutive affixer[stopping]. [run paragraph on][signet description][paragraph break]";
 	diminish the protest-sign.
 
 To diminish (item - a thing):
