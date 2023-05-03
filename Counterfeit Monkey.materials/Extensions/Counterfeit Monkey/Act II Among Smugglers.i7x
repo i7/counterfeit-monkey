@@ -1106,14 +1106,8 @@ A description-concealing rule when the location is Traffic Circle:
 	now the olive branch is not marked for listing;
 	now every car is not marked for listing;
 
-To decide what object is home for (item - the olive branch):
-	decide on huge-metal-arm.
-
-To decide what object is home for (item - the live branch):
-	decide on huge-metal-arm.
-
 After waving the letter-remover at the olive branch creating the live branch:
-	now the live branch is part of the huge-metal-arm;
+	now the live branch is on the huge-metal-arm;
 	say "[one of]It takes a little more care with aim than usual, but we do manage to strike the [olive branch], turning it into a [live branch]. It goes green and healthy at once[or]Confidently we reconvert the [olive branch][stopping].
 
 [irritation reaction].";
@@ -1152,7 +1146,7 @@ The stuffed octopus is a thing. It is on the giant Atlantida statue. The flexibl
 
 The description of the stuffed octopus is "Slightly wrong, actually, but I suppose they didn't have a stuffed squid handy. Of the four symbols associated with Atlantis, the squid [--] representing invention and individuality [--] is the one that has greatest resonance for protesters[if the stuffed octopus is on the giant Atlantida statue].
 
-This one has been tied to Atlantida's hand alongside the [end if][if the stuffed octopus is on the giant Atlantida statue and the olive branch is on the huge-metal-arm][olive branch] she traditionally carries[end if][if the stuffed octopus is on the giant Atlantida statue and the live branch is part of the huge-metal-arm][live branch] she untraditionally carries[end if]."
+This one has been tied to Atlantida's hand alongside the [end if][if the stuffed octopus is on the giant Atlantida statue and the olive branch is on the huge-metal-arm][olive branch] she traditionally carries[end if][if the stuffed octopus is on the giant Atlantida statue and the live branch is on the huge-metal-arm][live branch] she untraditionally carries[end if]."
 
 
 Some traffic-island-protesters are a plural-named man. The printed name is "protesters".  Understand "protesters" or "crowd" as the traffic-island-protesters. The initial appearance is "Protesters clog the street and sit or stand around the base of the statue."
