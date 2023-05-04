@@ -509,7 +509,7 @@ Chapter 3 - The T-inserter
 
 The T-inserter machine is a fixed in place enterable container in the Sensitive Equipment Testing Room. The initial appearance is "At the cen[ter] of the room is a gleaming new T-inserter Machine[if the machine is non-empty], currently containing [a random thing in the T-inserter machine][end if][one of]. This is a state of the art device: letter removal has been well understood for decades, but insertion is much more dangerous and difficult, fraught with ambiguity[or][stopping]." The description is "Made of brushed steel, it resembles an industrial espresso machine, with a space in which to insert items. A dozen small nozzles poke into this space, and the grate beneath is ready to drain off any superfluity of T-ness. There is a tiny brass plate near the base of the machine."
 
-Understand "space" and "grate" and "inserter" as the machine. The carrying capacity of the T-inserter Machine is 1.
+Understand "space" and "grate" and "inserter" and "t inserter" as the machine. The carrying capacity of the T-inserter Machine is 1.
 
 The brass plate is part of the machine. Understand "base" as the brass plate. The description is "DENTAL CONSONANTS LTD [--] ABSOLUTELY NO PALATALS OR LABIALS [--] GUARANTEED".
 
