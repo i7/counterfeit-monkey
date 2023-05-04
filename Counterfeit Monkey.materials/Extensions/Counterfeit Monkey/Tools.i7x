@@ -638,6 +638,14 @@ Report teeing something:
 	set pronouns from the goal-object;
 	abide by the dangerous construction rules for the goal-object instead.
 
+T-inserting is an action applying to one thing. Understand "insert t in/into [thing]" as t-inserting.
+
+Instead of t-inserting:
+	if the T-inserter Machine is in location:
+		try inserting noun into t-inserter;
+	otherwise:
+		say "[We] have no obvious way of inserting T into [the noun]."
+
 Test it-construction with "autoupgrade / wave a-remover at pita / wave p-remover at pit / wave t-remover at it / put i in t-inserter / get it / wave t-remover at it / put i in t-inserter" holding the pita in the Sensitive Equipment Testing Room.
 
 Chapter 4 - The Synthesizer
