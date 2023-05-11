@@ -5685,6 +5685,9 @@ She's not even visible through the window any longer.";
 
 Section 10 - Father
 
+Instead of approaching when location is the Sensitive Equipment Testing Room and cold dilemma has not happened:
+	try going east.
+
 After going from the Sensitive Equipment Testing Room:
 	now father is marked-visible;
 	set the current interlocutor to father;
