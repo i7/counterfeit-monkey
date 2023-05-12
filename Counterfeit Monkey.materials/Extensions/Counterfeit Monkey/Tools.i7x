@@ -131,7 +131,7 @@ A first command-string altering rule (this is the implicitly change letter-remov
 		if the letter-remover is in a closed backpack:
 			silently try opening the backpack;
 			if the backpack is closed:
-				stop the action;
+				parsing fails;
 		if the player can touch the letter-remover:
 			unless N matches the regular expression "<a-z>":
 				say "Only the 26 letters of the English alphabet are available to the letter-remover.";
@@ -1252,7 +1252,9 @@ Instead of smelling the player:
 	say "[We] smell of lavender. It's not as bad a reek as it was earlier, though. No one would think it was anything but soap."
 
 Sanity-check putting the origin paste on something when the origin paste is in a closed backpack:
-	try opening the backpack.
+	try opening the backpack;
+	if the backpack is closed:
+		stop the action.
 
 Sanity-check putting the origin paste on the restoration gel:
 	try putting the restoration gel on the origin paste instead.
@@ -1462,7 +1464,9 @@ Before doing something when the noun is the tube or the second noun is the tube:
 				say "[one of]Unfortunately, there's hardly any gel remaining in the tube.[or]There isn't enough gel remaining in the little tube for use.[at random]" instead.
 
 Sanity-check putting the restoration gel on something when the tub is in a closed backpack:
-	try opening the backpack.
+	try opening the backpack;
+	if the backpack is closed:
+		stop the action.
 
 Before inserting something (called the source) into something gel-related (called the target):
 	unless the source is gel-related: [Things like "put gel in tub" are dealt with elsewhere]
