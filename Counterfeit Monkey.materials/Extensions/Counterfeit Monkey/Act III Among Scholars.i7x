@@ -458,10 +458,10 @@ Sanity-check locking keylessly the bathroom window:
 
 
 Report opening the bathroom window for the first time:
-	say "The window slides open with a hideous protesting shriek." instead.
+	say "The [if boldening is true][bold type][end if]window[roman type] slides open with a hideous protesting shriek." instead.
 
 Report closing the bathroom window:
-	say "[We] slide the window shut[one of]. I feel obscurely better now[or][stopping]." instead.
+	say "[We] slide the [if boldening is true][bold type][end if]window[roman type] shut[one of]. I feel obscurely better now[or][stopping]." instead.
 
 Before: if the noun is the bathroom window or the second noun is the bathroom window,
 	reveal bathroom window.
@@ -509,7 +509,7 @@ In-direction of Apartment Bathroom is south. [My apartment]
 Out-direction of Apartment Bathroom is east. [Palm Square]
 
 Rule for listing exits when the location is Apartment Bathroom:
-	say "[We] could climb back out the window, or [we] could go south into the rest of my apartment."
+	say "[We] could climb back [if boldening is true][bold type][end if]out[roman type] the window, or [we] could go [south] into the rest of my apartment."
 
 A nightstand is a supporter in the apartment bathroom. The initial appearance is "An antique [nightstand] of my mother's, which does not actually fit anywhere near my bed, is jammed into one corner of the bathroom."
 
