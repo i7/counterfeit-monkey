@@ -15,12 +15,13 @@ The finalise startup precomputation rule translates into I6 as "SP_Save".
 
 Include (-
 
-[ SP_Attempt_Load fref res;
+[ SP_Attempt_Load fref res embedded_data_exists;
+	embedded_data_exists = false;
 	! Test if the interpreter supports resource streams
 	if ( glk_gestalt( gestalt_ResourceStream, 0 ) )
 	{
 		! Open the blorb chunk if it exists
-		SP_embedded_data_exists = true;
+		embedded_data_exists = true;
 		gg_savestr = glk_stream_open_resource( SP_Blorb_Chunk_Number, GG_SAVESTR_ROCK );
 	}
 	! Otherwise check if an external precomputation savefile exists
@@ -40,7 +41,7 @@ Include (-
 	if ( gg_savestr )
 	{
 		@restore gg_savestr res;
-		if ( res == 1 && SP_embedded_data_exists == true )
+		if ( res == 1 && embedded_data_exists == true )
 		{
 			SP_bad_embedded_startup_data = true;
 		}
@@ -81,7 +82,6 @@ Include (-
 
 Include (-
 
-Global SP_embedded_data_exists = 0;
 Global SP_bad_embedded_startup_data = 0;
 
 -) after "Definitions.i6t".
