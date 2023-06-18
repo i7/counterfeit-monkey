@@ -20,6 +20,7 @@ Include (-
 	if ( glk_gestalt( gestalt_ResourceStream, 0 ) )
 	{
 		! Open the blorb chunk if it exists
+		SP_embedded_data_exists = true;
 		gg_savestr = glk_stream_open_resource( SP_Blorb_Chunk_Number, GG_SAVESTR_ROCK );
 	}
 	! Otherwise check if an external precomputation savefile exists
@@ -39,6 +40,10 @@ Include (-
 	if ( gg_savestr )
 	{
 		@restore gg_savestr res;
+		if ( res == 1 && SP_embedded_data_exists == true )
+		{
+			SP_bad_embedded_startup_data = true;
+		}
 		glk_stream_close( gg_savestr, 0 );
 		gg_savestr = 0;
 	}
@@ -73,6 +78,20 @@ Include (-
 
 -).
 
+
+Include (-
+
+Global SP_embedded_data_exists = 0;
+Global SP_bad_embedded_startup_data = 0;
+
+-) after "Definitions.i6t".
+
+Bad embedded precomputation data is a truth state that varies. The bad embedded precomputation data variable translates into I6 as "SP_bad_embedded_startup_data".
+
+A last when play begins rule (this is the complain if embedded precomputation data is bad rule):
+	if bad embedded precomputation data is true:
+		say "ERROR!!! BAD EMBEDDED STARTUP DATA!!!";
+
 Startup Precomputation ends here.
 
 ---- DOCUMENTATION ----
@@ -86,7 +105,7 @@ To embed the precomputation data inside the blorb, compile a release version of 
 	python blorbtool.py Story.gblorb import Data 9998 IFZS Story-startup-data.glkdata
 
 This extension will by default use a blorb resource number of 9998. If for some reason you need to change it, you can use this command to set another (higher) number:
-	
+
 	Use startup precomputation blorb chunk number of at least 10000.
 
 This extension is released under the Creative Commons Attribution licence. Bug reports, feature requests or questions should be made at <https://github.com/i7/extensions/issues>.
