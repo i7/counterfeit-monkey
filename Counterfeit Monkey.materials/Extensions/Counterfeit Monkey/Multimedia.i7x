@@ -59,6 +59,9 @@ When identification ends (this is the open the graphics window rule):
 	if glulx graphics is supported:
 		let main-width be the width of the main window;
 		let measure-width be the width of the measuring window;
+		if measure-width is 0:
+			open the measuring window;
+			now measure-width is the width of the measuring window;
 		unless graphics is disabled or main-width is less than 41 or measure-width is less than 405:
 			now current graphics drawing rule is the compass-drawing rule;
 			open the graphics window;
