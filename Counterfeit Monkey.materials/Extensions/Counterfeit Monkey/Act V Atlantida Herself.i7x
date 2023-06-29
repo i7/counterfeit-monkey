@@ -508,7 +508,7 @@ The portcullis is a door. It is east of Tunnel through Chalk and west of Persona
 	The description of the portcullis is "Heavy black metal bars, left from a much earlier state. [portcullis status]."
 
 To say portcullis status:
-	say "It is currently [if the portcullis is open]raised[otherwise]lowered[end if][if the jack wedges the portcullis] a few feet by [a jack][end if][if the pulley is non-empty]. From the pulley above the portcullis hangs [a list of things *in the pulley][otherwise]. There's a pulley and hook arrangement above the portcullis, but the hook is empty[end if]".
+	say "It is currently [if the portcullis is open]raised[otherwise]lowered[end if][if the jack wedges the portcullis] a few feet by [a jack][end if][if the pulley is non-empty]. From the [pulley] above the portcullis hangs [a list of things *in the pulley][otherwise]. There's a [end if][if the pulley is empty and boldening is true][bold type][end if][if the pulley is empty]pulley and hook[roman type] arrangement above the portcullis, but the hook is empty[end if]".
 
 Instead of searching the portcullis:
 	if the player is in Tunnel through Chalk:
