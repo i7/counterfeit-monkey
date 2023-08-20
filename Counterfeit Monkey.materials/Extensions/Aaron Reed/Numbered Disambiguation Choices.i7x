@@ -124,7 +124,7 @@ Chapter - Remove "direction" as a synonym for directions
 
 [Inform will automatically create the synonym "direction" for all directions, which would make this extension cause a run-time problem when the player types something like EXAMINE DIRECTION (because we do not handle directions, only things and rooms.) As a workaround, we remove this automatic synonym. Thanks to Dr Peter Bates for writing this code.]
 
-When play begins:
+When play begins (this is the depluralise directions rule):
 	repeat with d running through directions:
 		depluralise d
 
