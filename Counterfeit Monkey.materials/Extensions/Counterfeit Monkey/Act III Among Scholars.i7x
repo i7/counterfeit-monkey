@@ -509,7 +509,7 @@ In-direction of Apartment Bathroom is south. [My apartment]
 Out-direction of Apartment Bathroom is east. [Palm Square]
 
 Rule for listing exits when the location is Apartment Bathroom:
-	say "[We] could climb back [if boldening is true][bold type][end if]out[roman type] the window, or [we] could go [south] into the rest of my apartment."
+	say "[We] could climb back [if boldening is true][bold type][end if]out[roman type] the window, or [we] could go [if boldening is true][bold type][end if]south[roman type] into the rest of my apartment."
 
 A nightstand is a supporter in the apartment bathroom. The initial appearance is "An antique [nightstand] of my mother's, which does not actually fit anywhere near my bed, is jammed into one corner of the bathroom."
 
