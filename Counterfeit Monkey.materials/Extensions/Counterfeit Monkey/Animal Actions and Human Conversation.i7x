@@ -5685,7 +5685,7 @@ She's not even visible through the window any longer.";
 
 Section 10 - Father
 
-Instead of approaching when location is the Sensitive Equipment Testing Room and cold dilemma has not happened:
+Instead of approaching when location is the Sensitive Equipment Testing Room and Cold Dilemma has not happened:
 	try going east.
 
 After going from the Sensitive Equipment Testing Room:
