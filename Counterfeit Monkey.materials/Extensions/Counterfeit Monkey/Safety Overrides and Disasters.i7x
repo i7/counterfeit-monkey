@@ -120,7 +120,7 @@ Unfortunately, the lab is more than enough to bury [us] under its bulk.";
 Check waving the letter-remover at the patron when the current setting of the letter-remover is "m" and the player knows mark-known:
 	say "With a distinct whiff of newly sawn planks, Mark turns into an ark. From here, the width of the bow in cubits is hard to guess. It just looks huge, much too huge for the little space it's crammed into…
 
-Unfortunately, the ark is more than sufficient to bury us under its bulk.";
+Unfortunately, the ark is more than sufficient to bury [us] under its bulk.";
 	abide by the game-ending rule.
 
 Check waving the letter-remover at the warp when the current setting of the letter-remover is "p":
