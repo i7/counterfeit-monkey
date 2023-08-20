@@ -120,6 +120,33 @@ Does the player mean doing something when the player's command includes "[number
 	otherwise if the second noun is not nothing and the disambiguation id of the second noun is N:
 		it is very likely;
 
+Chapter - Remove "direction" as a synonym for directions
+
+[Inform will automatically create the synonym "direction" for all directions, which would make this extension cause a run-time problem when the player types something like EXAMINE DIRECTION (because we do not handle directions, only things and rooms.) As a workaround, we remove this automatic synonym. Thanks to Dr Peter Bates for writing this code.]
+
+When play begins:
+	repeat with d running through directions:
+		depluralise d
+
+To depluralise (d - a direction): (- RemoveDirectionPlural({d}); -).
+
+Include (-
+[ RemoveDirectionPlural o f p x y a n ;
+	if (o == 0) rfalse;              ! null object
+	if (~~(o provides name)) rfalse; ! no name property
+	n = o.#name/WORDSIZE;  ! number of names in array
+	if (n < 2) rfalse;               !  1 or no names in array
+	p = o.&name;                     ! address of name array
+	f = p-->0;                       ! first name in array
+	for (x=1:x<n:x++) {
+		y = p--> x;                  ! read dictionary address of next name in array
+		if (y == 'direction') {
+			p-->x = f;               ! substitute with first name in array
+		}
+	}
+];
+-).
+
 Numbered Disambiguation Choices ends here.
 
 ---- DOCUMENTATION ----
