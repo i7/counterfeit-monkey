@@ -3986,7 +3986,7 @@ whether he believes in god-2 is a questioning quip.
 	The comment is "'Where do you stand on God?' we ask[you-are-religious].". The printed name is "whether he believes in God".
 	The true-name is "whether he believes in god-2".
 	[The mentions-list is {religion}.]
-	The reply is "'Don't give it much thought,' he says. 'Please don't tell me you're here with a pamphlet . I won't read it.'".
+	The reply is "'Don't give it much thought,' he says. 'Please don't tell me you're here with a pamphlet. I won't read it.'".
 	It quip-supplies the barman.
 	It is background-information.
 Understand "parker/barman" or "god" as whether he believes in god-2.

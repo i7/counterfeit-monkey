@@ -844,7 +844,7 @@ Carry out putting Problem of Adjectives on the LSR Bookcase:
 The LSR bookcase is a supporter in the Language Studies Seminar Room. The initial appearance is "The bookshelves lining the walls contain the department library." The description is "Built in and sturdily made." The printed name is "bookshelf". Understand "shelf" or "shelves" or "bookshelf" as the LSR bookcase.
 
 The big table is a supporter in the Language Studies Seminar Room.  "The [big table] at the cen[ter] of the room is an irregular polygon[if the LSR chair is in location and the LSR chair is not handled], with one [LSR chair] pushed up to the shortest side[end if]."
-	The introduction is "I think the shape is intended to undermine traditional conceptions of academic hierarchy, but in practice it  just means that whoever gets to seminar late has to sit with a table angle jabbing him in the stomach."
+	The introduction is "I think the shape is intended to undermine traditional conceptions of academic hierarchy, but in practice it just means that whoever gets to seminar late has to sit with a table angle jabbing him in the stomach."
 	The description is "Crafted from some exotic wood with lots of interesting burl structure. There was a wealthy donor behind the construction of this room."
 	Understand "polygon" as the big table.
 
@@ -996,7 +996,7 @@ Test paper-bug with "tutorial off / shutoffice / wave c-remover at cream / open 
 
 A draft document is a thing. Understand "pages" or "speech" or "talk" or "asterisks" as the draft document. [Understand "paper" as the draft document when the paper is not visible.] The description is "[homonym-shame-wanted]It's fifteen pages double-spaced, and appears to be the draft of a talk Professor Waterstone is preparing to give at a convention. I immediately notice, however, that several portions of the speech are marked with angry triple asterisks [--] Waterstone's way of marking up parts of text that need serious revision.
 
-The talk concerns 'homonym shame': the anxiety felt in the Victorian era, and still manifested at times in modern culture, about objects that shared the same name as (and therefore theoretically might be converted into) something rude. Methods of disguising the legs of pianos and crotches of trees occupy a good portion of Waterstone's exposition, and there is a page-long aside on methods of  making sure that donkeys are known by that name and not by the alternative.
+The talk concerns 'homonym shame': the anxiety felt in the Victorian era, and still manifested at times in modern culture, about objects that shared the same name as (and therefore theoretically might be converted into) something rude. Methods of disguising the legs of pianos and crotches of trees occupy a good portion of Waterstone's exposition, and there is a page-long aside on methods of making sure that donkeys are known by that name and not by the alternative.
 
 To judge, however, from the angry asterisking, Waterstone is still looking for at least one more example of an object susceptible to double-entendre that has been successfully rendered innocent by some linguistic modification."
 
