@@ -2177,7 +2177,7 @@ The printed name of the pi-tat-inn is "pi tat inn". Understand "pi tat inn" or "
 The description of the pill is "It is small, round, and blue. There are no brand or generic markings to indicate what it might do." The pill is edible. The heft of the pill is 1.
 
 Instead of tasting or eating the pill:
-	say "[We] toss the pill into our mouths and swallow it dry.
+	say "[We] toss the pill into our mouth and swallow it dry.
 
 There is no immediate reaction, but after a few minutes a cramping pain begins to spread through our stomach, and it becomes difficult to breathe. Yellow and blue spots float in front of our eyes. Our skin begins to itch. Dimly I wonder whether these symptoms correspond to any real medical condition or whether the pill is simply poisonous by invention; but [we] [are] not clear-minded enough to go on thinking these sorts of thoughts for long.";
 	end the story saying "[We] have poisoned ourself"
