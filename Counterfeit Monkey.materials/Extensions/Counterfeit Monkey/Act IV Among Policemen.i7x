@@ -864,7 +864,7 @@ I want to stop you, but you've got the upper hand now[or][stopping].
 
 'Yeah, but [regarding the victim][they] [don't] look like a criminal mastermind, does [they]?'
 
-[end if][one of]There's a noise like the firing of a restoration gel rifle and [or]The rifle fires again, followed by[stopping] the sound of [the victim] collapsing into [a list of things which proffer the victim]. 'Nice try,' shouts a voice from outside. 'Next?'";
+[end if][one of]There's a noise like the firing of a restoration gel rifle and[or]The rifle fires again, followed by[stopping] the sound of [the victim] collapsing into [a list of things which proffer the victim]. 'Nice try,' shouts a voice from outside. 'Next?'";
 		now victim is nowhere;
 	otherwise if the victim is the patsy-woman:
 		now the story viewpoint is second person singular;
