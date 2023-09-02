@@ -1342,7 +1342,7 @@ He locks his door again and goes out. I think he is actually humming something."
 	complete "Speak to Professor Waterstone and get his invitation to see the T-inserter";
 	say "[line break]>";
 	custom-wait for any key;
-	say "[line  break]Before we can do anything, Waterstone pops his head back in. 'What you did there [--] not strictly within the rules. But I admire, shall we say, [i]Realpolitik[/i]. You'll go far. Ignore Brown, but you'd probably do that anyway. Never talk to Higgate at all. I will see you later.'[paragraph break]And he pops back out.";
+	say "[line break]Before we can do anything, Waterstone pops his head back in. 'What you did there [--] not strictly within the rules. But I admire, shall we say, [i]Realpolitik[/i]. You'll go far. Ignore Brown, but you'd probably do that anyway. Never talk to Higgate at all. I will see you later.'[paragraph break]And he pops back out.";
 	rule succeeds.
 
 A Water-reaction rule for the passage when the ass does not proffer the passage:

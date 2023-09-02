@@ -637,7 +637,7 @@ Chapter 3 - Atlantida's Spaces
 Section 1 - Personal Apartment
 
 
-The Personal Apartment is a room. It is indoors, checkpoint and forbidden. The description is "At a guess, this is a room hardly anyone ever visits, or even knows about. Though the ceiling and one wall are bare cave, the rest has been paneled and  graciously decorated in the style of the end of the 18th century. [if the oil-paintings are in the location][Oil-paintings] on the walls depict great men and women of Atlantis gone by: Phyllida Shaply, Amelia Landison, Clarence Arbot, Jon Rosehip. [end if]An antique bed stands in the cen[ter] of the room."
+The Personal Apartment is a room. It is indoors, checkpoint and forbidden. The description is "At a guess, this is a room hardly anyone ever visits, or even knows about. Though the ceiling and one wall are bare cave, the rest has been paneled and graciously decorated in the style of the end of the 18th century. [if the oil-paintings are in the location][Oil-paintings] on the walls depict great men and women of Atlantis gone by: Phyllida Shaply, Amelia Landison, Clarence Arbot, Jon Rosehip. [end if]An antique bed stands in the cen[ter] of the room."
 
 atlantida-woman is a woman in the Personal Apartment. [She is on the fancy bed.] The printed name of atlantida-woman is "Atlantida". The description of atlantida-woman is "Her face is ageless, her eyes a piercing blue. She looks like Phyllida Shaply, our famous forebear, except that there is something ethereal and heroic about her as well."
 

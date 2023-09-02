@@ -42,7 +42,7 @@
 
 ### Parsing
 
-- Adds yes and no in Lojban (go'i and go'inai) as synonyms to their English counterparts. These make sense as valid replies when Professor Higgate asks  if the player speaks Lojban.
+- Adds yes and no in Lojban (go'i and go'inai) as synonyms to their English counterparts. These make sense as valid replies when Professor Higgate asks if the player speaks Lojban.
 
 ### Cosmetic output errors
 
@@ -115,7 +115,7 @@
 - Adds PASSKEY, another kind of plural PITS, plural PIT TRAPS, and a non-liquid kind of TEAR.
 - Fixes the broken plural ILLS and plural POTS that were listed in the code but impossible to create.
 - Creating CAT ARMY, COMPLICIT SHARK, SCREE, SORD, TOMS, RIG, or ROCK BAND no longer ends the game. This makes it possible to create some previously unreachable objects, such as TOMCATS.
-- Creating TILLS does end the game, however, saving us from implementing plural TOLLS  and TELLS.
+- Creating TILLS does end the game, however, saving us from implementing plural TOLLS and TELLS.
 - The joke responses to attempting to synthesize ROCK and ROLL, KEY-LIME and PI, SILL and CATE, and PAN and EAR now work when using the programmable dais as well as the synthesizer.
 - The BASINS and derivatives BASIS and BASS are reinstated. These were removed by mistake in release 7.
 
