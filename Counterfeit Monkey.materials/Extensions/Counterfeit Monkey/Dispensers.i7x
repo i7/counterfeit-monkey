@@ -54,7 +54,8 @@ Instead of squeezing something dispenser-like (called dispenser-thing):
 		otherwise:
 			if target is nothing:
 				say "We give the dispenser a squeeze and it deposits [a soap-like] on the floor, the sink having been removed from the area.";
-				now target is the location;
+				move the soap-like to the location;
+				stop the action;
 			otherwise:
 				if target is non-empty:
 					emergency-empty target;
