@@ -40,7 +40,8 @@ Sanity-check taking the sop-dispenser when the sop is in the sop-dispenser:
 Instead of squeezing something dispenser-like (called dispenser-thing):
 	let soap-like be a content corresponding to a source of dispenser-thing in the Table of Dispensers;
 	if soap-like is in the dispenser-thing:
-		let target be a random sink in the location;
+		let target be an object;
+		now target is a random sink in the location;
 		if the soap-sap-receptacle-supporter is non-empty:
 			now target is the first thing held by soap-sap-receptacle-supporter;
 		if target is a sink:
@@ -54,8 +55,7 @@ Instead of squeezing something dispenser-like (called dispenser-thing):
 		otherwise:
 			if target is nothing:
 				say "We give the dispenser a squeeze and it deposits [a soap-like] on the floor, the sink having been removed from the area.";
-				move the soap-like to the location;
-				stop the action;
+				now target is the location;
 			otherwise:
 				if target is non-empty:
 					emergency-empty target;
