@@ -83,6 +83,90 @@ Include Scope Caching by Mike Ciul.
 Include Large Game Speedup by Andrew Plotkin.
 Include Subcommands by Daniel Stelzer.
 
+To decide whether the raw snippet for (O - object) is zero-length:
+	(- ( {O}.parsed_snippet % 100 == 0) -).
+
+To decide which number is the raw value of (SN - snippet):
+	(- {SN} -).
+
+First before doing anything (this is the look for bad snippets rule):
+	repeat with O running through objects:
+		if the raw snippet for O is zero-length:
+			say "ZERO-LENGTH SNIPPET for [O]: [raw value of subcommand of O]."
+
+Include (-
+
+! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
+! Text.i6t: Glulx Version
+! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
+
+#ifnot; ! TARGET_ZCODE
+[ TEXT_TY_CastPrimitive to_txt from_snippet from_value
+	len i stream saved_stream news buffer buffer_size memory_to_free results;
+
+	if (to_txt == 0) BlkValueError("no destination for cast");
+
+	buffer_size = (TEXT_TY_BufferSize + 2)*WORDSIZE;
+
+	RawBufferSize = TEXT_TY_BufferSize;
+	buffer = RawBufferAddress + TEXT_TY_CastPrimitiveNesting*buffer_size;
+	TEXT_TY_CastPrimitiveNesting++;
+	if (TEXT_TY_CastPrimitiveNesting > TEXT_TY_NoBuffers) {
+		buffer = VM_AllocateMemory(buffer_size); memory_to_free = buffer;
+		if (buffer == 0)
+			FlexError("ran out with too many simultaneous text conversions");
+	}
+
+	if (unicode_gestalt_ok) {
+		SuspendRTP();
+		.RetryWithLargerBuffer;
+		saved_stream = glk_stream_get_current();
+		stream = glk_stream_open_memory_uni(buffer, RawBufferSize, filemode_Write, 0);
+		glk_stream_set_current(stream);
+
+		@push say__p; @push say__pc;
+		ClearParagraphing(7);
+		if (from_snippet) print (PrintSnippet) from_value;
+		else print (PrintI6Text) from_value;
+		@pull say__pc; @pull say__p;
+
+		results = buffer + buffer_size - 2*WORDSIZE;
+		glk_stream_close(stream, results);
+		if (saved_stream) glk_stream_set_current(saved_stream);
+		ResumeRTP();
+		RunTimeProblemShow();	! ADDED
+
+		len = results-->1;
+		if (len > RawBufferSize-1) {
+			! Glulx had to truncate text output because the buffer ran out:
+			! len is the number of characters which it tried to print
+			news = RawBufferSize;
+			while (news < len) news=news*2;
+			i = VM_AllocateMemory(news*WORDSIZE);
+			if (i ~= 0) {
+				if (memory_to_free) VM_FreeMemory(memory_to_free);
+				memory_to_free = i;
+				buffer = i;
+				RawBufferSize = news;
+				buffer_size = (RawBufferSize + 2)*WORDSIZE;
+				jump RetryWithLargerBuffer;
+			}
+			! Memory allocation refused: all we can do is to truncate the text
+			len = RawBufferSize-1;
+		}
+		buffer-->(len) = 0;
+
+		TEXT_TY_CastPrimitiveNesting--;
+		BlkValueMassCopyFromArray(to_txt, buffer, 4, len+1);
+	} else {
+		RunTimeProblem(RTP_NOGLULXUNICODE);
+	}
+	if (memory_to_free) VM_FreeMemory(memory_to_free);
+];
+#endif;
+
+-) instead of "Glulx Version" in "Text.i6t".
+
 [ Startup precomputation ]
 Include version 1/160718 of Startup Precomputation by Dannii Willis.
 The finalise startup precomputation rule is listed last in the when play begins rules.
