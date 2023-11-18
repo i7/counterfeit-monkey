@@ -141,7 +141,7 @@ Include (-
 		!print "Eliminated duplicate subjects. Current number: ",subject_count,".^";
 	];
 
-	[ GetSubject index col;
+	[ GetSubject index;
 		return ((+ Table of Current Subjects +)-->1)-->(index+COL_HSIZE);
 	];
 
