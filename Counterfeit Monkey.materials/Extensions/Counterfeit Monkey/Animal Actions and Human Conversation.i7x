@@ -2125,7 +2125,7 @@ Carry out Kate discussing which map was sold:
 	now the Slangovia map is in the location.
 
 what sort of demonstration is a questioning quip.
-	Understand "schedule" or "plan" or "plans" as what sort of demonstration.
+	Understand "schedule" or "plan" or "plans" or "demo" as what sort of demonstration.
 	The comment is "'[if immediately]What sort of demonstration is that[otherwise]You mentioned that your boss and the other gentleman went to a demonstration. What kind of demonstration was it[end if]?'"
 	The reply is "She smiles and shrugs. '[Mr] Arbot used to work for the Bureau before he retired to sell antiques. He still has lots of connections. It could be anything.'"
 	It indirectly-follows whether she hath seen Brock-man.
@@ -4939,7 +4939,7 @@ Availability rule for why he doesn't go to the demonstration:
 
 why he doesn't go to the demonstration is a questioning quip.
 	The comment is "'I'm surprised you're not at this demonstration,' we say, gesturing towards the invitation on his desk. 'It looks interesting.'".
-	Understand "professor" or "waterstone" as why he doesn't go to the demonstration.
+	Understand "professor" or "waterstone" or "demo" as why he doesn't go to the demonstration.
 	[The mentions-list is {invitation}.]
 	The reply is "'Does it?' he asks wearily. 'It sounds like a dead bore to me. Unfortunately, I can be neither at the demonstration nor at home at the moment. I have this blasted presentation to finish[if the player does not know carpets-shampooed], and my wife is having the carpets shampooed[carpets-shampooed] [--] on a holiday! [--] and won't let me work in my own study[otherwise] and thanks to the carpets I can't work in my own study[end if].'".
 	It quip-supplies Professor Waterstone.
