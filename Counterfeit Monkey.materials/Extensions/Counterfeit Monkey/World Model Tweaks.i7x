@@ -75,11 +75,30 @@ The Smarter Parser simplify punctuation rule is not listed in any rulebook.
 
 The scandalous standardize swears rule is not listed in any rulebook.
 
+The standardize apostrophes rule is not listed in any rulebook.
+
+A first after reading a command rule (this is the new standardize apostrophes rule):
+	if the player's command includes "what's":
+		replace the matched text with "what is";
+	if the player's command includes "he's":
+		replace the matched text with "he is";
+	if the player's command includes "it's":
+		replace the matched text with "it is";
+	if the player's command includes "'m ":
+		replace the matched text with " am ";
+	if the player's command includes "'re ":
+		replace the matched text with " are ";
+	if the player's command includes "'ll ":
+		replace the matched text with " will ";
+	if the player's command includes "'ve ":
+		replace the matched text with " have ";
+
 When play begins (this is the change smarter parse messages rule):
 	choose row with SP rule of asking unparseable questions rule in the Table of Smarter Parser Messages;
 	now the message entry is "[one of]If you're trying to converse with other characters, the suggestions in the text provide possible phrasings; so if you read 'I might ask about lentils.', you might phrase your command ASK ABOUT LENTILS. Introducing other words or variant phrasings that weren't part of the suggestion may confuse the game.
 
 Alternatively, if you just want to take an action in the game world, try giving a direct command, such as EXAMINE THE ASP or WAVE THE P-REMOVER AT THE PHONEY[or]That does not seem to be a topic of conversation at the moment[stopping]."
+
 
 Section 2 - Additional Parsing Lines for USE
 
