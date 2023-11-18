@@ -3309,7 +3309,7 @@ curate-backstory is an NPC-directed quip.
 
 why gift shop volunteer seems here is a questioning quip.
 	The printed name is "why he is here". The true-name is "why gift shop volunteer seems here".
-	Understand "is" or "he" as why gift shop volunteer seems here.
+	Understand "is" or "he" or "there" as why gift shop volunteer seems here.
 	[The mentions-list is {volunteer, employment}.]
 	The comment is "'If you aren't interested in this place, why do you volunteer here?' we ask[you-are-dangerous].".
 	The reply is "His left eyelid twitches. 'The Rosehip woman,' he says, after a moment. 'She's a looker.' [paragraph break]I'm not sure what's more disturbing: someone expressing attraction to my mother; that person being a good thirty years her senior; or the use of the phrase 'she's a looker', which even this old character probably got from a movie.".
