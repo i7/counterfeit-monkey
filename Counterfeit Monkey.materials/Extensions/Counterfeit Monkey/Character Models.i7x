@@ -175,8 +175,7 @@ A first after reading a command rule when how-many-people-here is positive (this
 			change the text of the player's command to N.
 
 
-[Fix from otistdog to make "if the player's command includes "[someone talk-eligible]" work as intended.
-
+[Fix from otisdog to make "if the player's command includes "[someone talk-eligible]" work as intended.
 See https://intfiction.org/t/run-time-problem-p39-when-changing-the-number-of-input-words-in-counterfeit-monkey/65734]
 
 Include (-
