@@ -177,15 +177,92 @@ A first after reading a command rule when how-many-people-here is positive (this
 To force pending RTP with code (N - number):
 	(- if (RTP_Buffer-->0 ~= NULL) { print "(CODE ", {N}, ") "; RunTimeProblemShow(); ClearRTP(); } -).
 
-After reading a command when the current interlocutor is not nothing and player's command includes "ask/tell/a/t" and the player's command does not include "ask/tell/a/t about" [and the player's command does not include "ask/a what" and the player's command does not include "ask/a why"] (this is the new strip interlocutor from input rule):
+[Fix from otistdog to make "if the player's command includes "[someone talk-eligible]" work as intended.
+
+See https://intfiction.org/t/run-time-problem-p39-when-changing-the-number-of-input-words-in-counterfeit-monkey/65734]
+
+Include (-
+
+! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
+! Text.i6t: Glulx Version
+! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
+
+#ifnot; ! TARGET_ZCODE
+[ TEXT_TY_CastPrimitive to_txt from_snippet from_value
+	len i stream saved_stream news buffer buffer_size memory_to_free results;
+
+	if (to_txt == 0) BlkValueError("no destination for cast");
+
+	buffer_size = (TEXT_TY_BufferSize + 2)*WORDSIZE;
+
+	RawBufferSize = TEXT_TY_BufferSize;
+	buffer = RawBufferAddress + TEXT_TY_CastPrimitiveNesting*buffer_size;
+	TEXT_TY_CastPrimitiveNesting++;
+	if (TEXT_TY_CastPrimitiveNesting > TEXT_TY_NoBuffers) {
+		buffer = VM_AllocateMemory(buffer_size); memory_to_free = buffer;
+		if (buffer == 0)
+			FlexError("ran out with too many simultaneous text conversions");
+	}
+
+	if (unicode_gestalt_ok) {
+		SuspendRTP();
+		.RetryWithLargerBuffer;
+		saved_stream = glk_stream_get_current();
+		stream = glk_stream_open_memory_uni(buffer, RawBufferSize, filemode_Write, 0);
+		glk_stream_set_current(stream);
+
+		@push say__p; @push say__pc;
+		ClearParagraphing(7);
+		if (from_snippet) print (PrintSnippet) from_value;
+		else print (PrintI6Text) from_value;
+		@pull say__pc; @pull say__p;
+
+		results = buffer + buffer_size - 2*WORDSIZE;
+		glk_stream_close(stream, results);
+		if (saved_stream) glk_stream_set_current(saved_stream);
+		ResumeRTP();
+		RunTimeProblemShow();	! ADDED
+
+		len = results-->1;
+		if (len > RawBufferSize-1) {
+			! Glulx had to truncate text output because the buffer ran out:
+			! len is the number of characters which it tried to print
+			news = RawBufferSize;
+			while (news < len) news=news*2;
+			i = VM_AllocateMemory(news*WORDSIZE);
+			if (i ~= 0) {
+				if (memory_to_free) VM_FreeMemory(memory_to_free);
+				memory_to_free = i;
+				buffer = i;
+				RawBufferSize = news;
+				buffer_size = (RawBufferSize + 2)*WORDSIZE;
+				jump RetryWithLargerBuffer;
+			}
+			! Memory allocation refused: all we can do is to truncate the text
+			len = RawBufferSize-1;
+		}
+		buffer-->(len) = 0;
+
+		TEXT_TY_CastPrimitiveNesting--;
+		BlkValueMassCopyFromArray(to_txt, buffer, 4, len+1);
+	} else {
+		RunTimeProblem(RTP_NOGLULXUNICODE);
+	}
+	if (memory_to_free) VM_FreeMemory(memory_to_free);
+];
+#endif;
+
+-) instead of "Glulx Version" in "Text.i6t".
+
+
+After reading a command when the current interlocutor is not nothing and player's command includes "ask/tell/a/t" (this is the new strip interlocutor from input rule):
 	if the player's command includes "[someone talk-eligible]":
 		let M be the substituted form of the matched text;
 		unless M is "1" or M is "men": [To avoid conflicts with Numbered Disambiguation Choices and referring to the clientele in the Counterfeit Monkey bar as "men"]
-			let cmd be "[player's command]";
-			replace the regular expression "^(ask|tell|a|t) [M] " in cmd with "\1 ";
-			change the text of the player's command to cmd.
+			cut the matched text.
 
 The new strip interlocutor from input rule is listed instead of the strip interlocutor from input rule in the After reading a command rules.
+
 
 The counterfeit monkey-as-subject is a subject. The printed name is "Counterfeit Monkey Bar". Understand "counterfeit" or "monkey" or "bar" as the counterfeit monkey-as-subject.
 
