@@ -37,7 +37,8 @@ Section 2 - Input Editing
 Include Punctuation Removal by Emily Short.
 
 First after reading a command (this is the remove stray punctuation rule):
-	remove stray punctuation.
+	remove stray punctuation;
+	resolve punctuated titles.
 
 Section 3 - Styles
 
