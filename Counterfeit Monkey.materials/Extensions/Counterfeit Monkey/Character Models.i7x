@@ -175,7 +175,7 @@ A first after reading a command rule when how-many-people-here is positive (this
 			change the text of the player's command to N.
 
 To force pending RTP with code (N - number):
-	(- if (RTP_Buffer-->6) { print "(CODE ", {N}, ") "; RunTimeProblemShow(); ClearRTP(); } -).
+	(- if (RTP_Buffer-->0 ~= NULL) { print "(CODE ", {N}, ") "; RunTimeProblemShow(); ClearRTP(); } -).
 
 After reading a command when the current interlocutor is not nothing and player's command includes "ask/tell/a/t" and the player's command does not include "ask/tell/a/t about" [and the player's command does not include "ask/a what" and the player's command does not include "ask/a why"] (this is the new strip interlocutor from input rule):
 	if the player's command includes "[someone talk-eligible]":
