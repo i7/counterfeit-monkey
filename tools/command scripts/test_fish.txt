@@ -528,5 +528,5 @@ synthesize
 wave i-remover at carpi
 shoot rusty nail
 shoot shrimp cocktail
-no
 quit
+y
