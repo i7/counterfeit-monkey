@@ -175,82 +175,36 @@ A first after reading a command rule when how-many-people-here is positive (this
 			change the text of the player's command to N.
 
 
-[Fix from otisdog to make "if the player's command includes "[someone talk-eligible]" work as intended.
+[Fix from otisdog and Dr Peter Bates to make "if the player's command includes "[someone talk-eligible]" work as intended.
 See https://intfiction.org/t/run-time-problem-p39-when-changing-the-number-of-input-words-in-counterfeit-monkey/65734]
 
 Include (-
+Replace SpliceSnippet;
+-) after "Definitions.i6t".
 
-! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
-! Text.i6t: Glulx Version
-! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
-
-#ifnot; ! TARGET_ZCODE
-[ TEXT_TY_CastPrimitive to_txt from_snippet from_value
-	len i stream saved_stream news buffer buffer_size memory_to_free results;
-
-	if (to_txt == 0) BlkValueError("no destination for cast");
-
-	buffer_size = (TEXT_TY_BufferSize + 2)*WORDSIZE;
-
-	RawBufferSize = TEXT_TY_BufferSize;
-	buffer = RawBufferAddress + TEXT_TY_CastPrimitiveNesting*buffer_size;
-	TEXT_TY_CastPrimitiveNesting++;
-	if (TEXT_TY_CastPrimitiveNesting > TEXT_TY_NoBuffers) {
-		buffer = VM_AllocateMemory(buffer_size); memory_to_free = buffer;
-		if (buffer == 0)
-			FlexError("ran out with too many simultaneous text conversions");
+Include (-
+[ SpliceSnippet snip t i w1 w2 nextw at endsnippet newlen;
+	w1 = snip/100; w2 = w1 + (snip%100) - 1;
+	if ((w2<w1) || (w1<1)) {
+		if ((w1 == 1) && (w2 == 0)) return;
+		return RunTimeProblem(RTP_SPLICEINVALIDSNIPPET, w1, w2);
 	}
-
-	if (unicode_gestalt_ok) {
-		SuspendRTP();
-		.RetryWithLargerBuffer;
-		saved_stream = glk_stream_get_current();
-		stream = glk_stream_open_memory_uni(buffer, RawBufferSize, filemode_Write, 0);
-		glk_stream_set_current(stream);
-
-		@push say__p; @push say__pc;
-		ClearParagraphing(7);
-		if (from_snippet) print (PrintSnippet) from_value;
-		else print (PrintI6Text) from_value;
-		@pull say__pc; @pull say__p;
-
-		results = buffer + buffer_size - 2*WORDSIZE;
-		glk_stream_close(stream, results);
-		if (saved_stream) glk_stream_set_current(saved_stream);
-		ResumeRTP();
-		RunTimeProblemShow();	! ADDED
-
-		len = results-->1;
-		if (len > RawBufferSize-1) {
-			! Glulx had to truncate text output because the buffer ran out:
-			! len is the number of characters which it tried to print
-			news = RawBufferSize;
-			while (news < len) news=news*2;
-			i = VM_AllocateMemory(news*WORDSIZE);
-			if (i ~= 0) {
-				if (memory_to_free) VM_FreeMemory(memory_to_free);
-				memory_to_free = i;
-				buffer = i;
-				RawBufferSize = news;
-				buffer_size = (RawBufferSize + 2)*WORDSIZE;
-				jump RetryWithLargerBuffer;
-			}
-			! Memory allocation refused: all we can do is to truncate the text
-			len = RawBufferSize-1;
-		}
-		buffer-->(len) = 0;
-
-		TEXT_TY_CastPrimitiveNesting--;
-		BlkValueMassCopyFromArray(to_txt, buffer, 4, len+1);
-	} else {
-		RunTimeProblem(RTP_NOGLULXUNICODE);
-	}
-	if (memory_to_free) VM_FreeMemory(memory_to_free);
+	@push say__p; @push say__pc;
+	nextw = w2 + 1;
+	at = WordAddress(w1) - buffer;
+	if (nextw <= WordCount()) endsnippet = 100*nextw + (WordCount() - nextw + 1);
+	buffer2-->0 = 120;
+	newlen = VM_PrintToBuffer(buffer2, 120, SpliceSnippet__TextPrinter, t, endsnippet);
+	for (i=0: (i<newlen) && (at+i<120): i++) buffer->(at+i) = buffer2->(WORDSIZE+i);
+	#Ifdef TARGET_ZCODE; buffer->1 = at+i; #ifnot; buffer-->0 = at+i; #endif;
+	for (:at+i<120:i++) buffer->(at+i) = ' ';
+	VM_Tokenise(buffer, parse);
+	num_words = WordCount();                           ! #### INSERTED STATEMENT ####
+	players_command = 100 + WordCount();
+	@pull say__pc; @pull say__p;
 ];
-#endif;
 
--) instead of "Glulx Version" in "Text.i6t".
-
+-)  after "Output.i6t".
 
 After reading a command when the current interlocutor is not nothing and player's command includes "ask/tell/a/t" (this is the new strip interlocutor from input rule):
 	if the player's command includes "[someone talk-eligible]":
