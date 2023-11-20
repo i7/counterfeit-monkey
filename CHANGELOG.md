@@ -1,5 +1,28 @@
 # Change log
 
+## Release 12
+
+- The first aid station was not fixed in place and could be picked up, while its description still said it was mounted to the wall.
+- There would be a reference to the inlaid desk even if it was not present.
+- After shooting ourselves with the anagramming gun, the text would say that we return to "or original form" rather than "our".
+- Fixes a run-time problem P10 when trying to remove letters from the current room.
+- Many new highlighted words.
+- Lena would occasionally ask us to change the modem although it was no longer present.
+- There would in some cases be a missing newline after the "Batman remark" at the end of the roundabout scene.
+- The live branch was not mentioned in the description of the statue arm
+- T INSERTER without a hyphen is now understood as the T-inserter.
+- The T-inserter can now be used by typing INSERT T IN (thing).
+- The fast travel GO TO command could be used to bypass the confrontation with Alex's father.
+- There would sometimes be an extra "I can't see what you're talking about" printed when an attempted use of the letter-remover was prevented.
+- The embedded start up data in the Gblorb file was bad in the two previous releases. The game will now print a warning at startup if it detects bad embedded data.
+- EXAMINE DIRECTION would cause a run-time error.
+- Things like REMIND MAN THAT MRS. ROSEHIP IS MARRIED would be understood as two commands separated by a period. Periods after titles are now stripped.
+- DEMO is now understood as DEMONSTRATION.
+- Contractions such as WHAT'S, HE'S, and IT'S are now understood.
+- Fixes a run-time problem when using the soap dispenser after removing all sinks.
+- Fixes many double spaces throughout the output text.
+- Adds more synonyms to the "ask why he is here" quip for the gift shop volunteer. WHY ARE YOU HERE and ASK WHY HE IS THERE now work.
+
 ## Release 11
 
 - Some scenes would never progress if initiated close enough to in-game midnight. Getting past the secretary seems to have been particularly vulnerable to this.
