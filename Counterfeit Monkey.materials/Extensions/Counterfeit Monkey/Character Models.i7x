@@ -179,32 +179,103 @@ A first after reading a command rule when how-many-people-here is positive (this
 See https://intfiction.org/t/run-time-problem-p39-when-changing-the-number-of-input-words-in-counterfeit-monkey/65734]
 
 Include (-
-Replace SpliceSnippet;
--) after "Definitions.i6t".
 
-Include (-
-[ SpliceSnippet snip t i w1 w2 nextw at endsnippet newlen;
-	w1 = snip/100; w2 = w1 + (snip%100) - 1;
-	if ((w2<w1) || (w1<1)) {
-		if ((w1 == 1) && (w2 == 0)) return;
-		return RunTimeProblem(RTP_SPLICEINVALIDSNIPPET, w1, w2);
+! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
+! Parser.i6t: TryGivenObject
+! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
+
+
+[ TryGivenObject obj nomatch threshold k w j;
+	#Ifdef DEBUG;
+	if (parser_trace >= 5) print "    Trying ", (the) obj, " (", obj, ") at word ", wn, "^";
+	#Endif; ! DEBUG
+
+	if (nomatch && obj == 0) return 0;
+
+! if (nomatch) print "*** TryGivenObject *** on ", (the) obj, " at wn = ", wn, "^";
+
+	dict_flags_of_noun = 0;
+
+!  If input has run out then always match, with only quality 0 (this saves
+!  time).
+
+	if (wn > WordCount()) {	! MODIFIED
+		if (nomatch) return 0;
+	    if (indef_mode ~= 0)
+	        dict_flags_of_noun = $$01110000;  ! Reject "plural" bit
+	    MakeMatch(obj,0);
+	    #Ifdef DEBUG;
+	    if (parser_trace >= 5) print "    Matched (zero)^";
+	    #Endif; ! DEBUG
+	    return 1;
 	}
-	@push say__p; @push say__pc;
-	nextw = w2 + 1;
-	at = WordAddress(w1) - buffer;
-	if (nextw <= WordCount()) endsnippet = 100*nextw + (WordCount() - nextw + 1);
-	buffer2-->0 = 120;
-	newlen = VM_PrintToBuffer(buffer2, 120, SpliceSnippet__TextPrinter, t, endsnippet);
-	for (i=0: (i<newlen) && (at+i<120): i++) buffer->(at+i) = buffer2->(WORDSIZE+i);
-	#Ifdef TARGET_ZCODE; buffer->1 = at+i; #ifnot; buffer-->0 = at+i; #endif;
-	for (:at+i<120:i++) buffer->(at+i) = ' ';
-	VM_Tokenise(buffer, parse);
-	num_words = WordCount();                           ! #### INSERTED STATEMENT ####
-	players_command = 100 + WordCount();
-	@pull say__pc; @pull say__p;
+
+!  Ask the object to parse itself if necessary, sitting up and taking notice
+!  if it says the plural was used:
+
+	if (obj.parse_name~=0) {
+	    parser_action = NULL; j=wn;
+	    k = RunRoutines(obj,parse_name);
+	    if (k > 0) {
+	        wn=j+k;
+
+	      .MMbyPN;
+
+	        if (parser_action == ##PluralFound)
+	            dict_flags_of_noun = dict_flags_of_noun | 4;
+
+	        if (dict_flags_of_noun & 4) {
+	            if (~~allow_plurals) k = 0;
+	            else {
+	                if (indef_mode == 0) {
+	                    indef_mode = 1; indef_type = 0; indef_wanted = 0;
+	                }
+	                indef_type = indef_type | PLURAL_BIT;
+	                if (indef_wanted == 0) indef_wanted = INDEF_ALL_WANTED;
+	            }
+	        }
+
+	        #Ifdef DEBUG;
+	        if (parser_trace >= 5) print "    Matched (", k, ")^";
+	        #Endif; ! DEBUG
+	        if (nomatch == false) MakeMatch(obj,k);
+	        return k;
+	    }
+	    if (k == 0) jump NoWordsMatch;
+	}
+
+	! The default algorithm is simply to count up how many words pass the
+	! Refers test:
+
+	parser_action = NULL;
+
+	w = NounWord();
+
+	if (w == 1 && player == obj) { k=1; jump MMbyPN; }
+
+	if (w >= 2 && w < 128 && (LanguagePronouns-->w == obj)) { k = 1; jump MMbyPN; }
+
+	if (Refers(obj, wn-1) == 0) {
+	    .NoWordsMatch;
+	    if (indef_mode ~= 0) { k = 0; parser_action = NULL; jump MMbyPN; }
+	    rfalse;
+	}
+
+	threshold = 1;
+	dict_flags_of_noun = (w->#dict_par1) & $$01110100;
+	w = NextWord();
+	while (Refers(obj, wn-1)) {
+		threshold++;
+		if (w)
+		   dict_flags_of_noun = dict_flags_of_noun | ((w->#dict_par1) & $$01110100);
+		w = NextWord();
+	}
+
+	k = threshold;
+	jump MMbyPN;
 ];
 
--)  after "Output.i6t".
+-) instead of "TryGivenObject" in "Parser.i6t".
 
 After reading a command when the current interlocutor is not nothing and player's command includes "ask/tell/a/t" (this is the new strip interlocutor from input rule):
 	if the player's command includes "[someone talk-eligible]":
