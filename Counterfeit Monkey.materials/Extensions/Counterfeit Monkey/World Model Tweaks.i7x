@@ -1708,6 +1708,9 @@ Sanity-check washing a person who is not the player:
 		say "[The noun] could probably use a wash, but on the whole I don't see the point." instead;
 	say "Bathing people other than myself is kind of over-intimate." instead.
 
+Instead of entering a bath:
+	try bathing.
+
 A public restroom is a kind of room.
 
 A toilet-stall is a kind of container. The printed name of a toilet-stall is always "toilet stall". Rule for printing the plural name of a toilet-stall: say "toilet stalls". Understand "stall" as a toilet-stall. Understand "stalls" as the plural of a toilet-stall. A toilet-stall is always fixed in place and enterable and openable.
