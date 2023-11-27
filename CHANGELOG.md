@@ -1,26 +1,35 @@
 # Change log
 
-## Release 12
+## Unreleased
 
+### Bugs fixed
+
+- The start up data embedded in the game file was bad in the two previous releases. The game will now print a warning at startup if it detects bad embedded data.
+- Run-time problem P10 would occur when trying to remove letters from the current room.
+- Lena would occasionally ask the player to change the modem although it was no longer present.
+- The fast travel GO TO command could be used to bypass the confrontation with Alex's father.
+- Typing EXAMINE DIRECTION and then answering the resulting "Which do you mean" question with a direction would cause run-time problem P10.
+- Run-time problem P60 would occur when using the soap dispenser after removing all sinks.
+- Turning on the tap while in a shower or bath would cause run-time problem P43 as the game attempted to move the player out of play. It was also possible to drop any objects in the bath or shower, and then remove them from play by turning on the tap. We fix this by simply no longer allowing the player to enter showers or baths, in the hope that nobody will miss this.
 - The first aid station was not fixed in place and could be picked up, while its description still said it was mounted to the wall.
-- There would be a reference to the inlaid desk even if it was not present.
+
+### Cosmetic output errors
+
+- The live branch was not mentioned in the description of the statue arm.
+- The inlaid desk was still referenced in certain messages after it was gone.
 - After shooting ourselves with the anagramming gun, the text would say that we return to "or original form" rather than "our".
-- Fixes a run-time problem P10 when trying to remove letters from the current room.
-- Many new highlighted words.
-- Lena would occasionally ask us to change the modem although it was no longer present.
+- Many more important things are now highlighted.
+- Fixes many unintended double spaces throughout the output text.
 - There would in some cases be a missing newline after the "Batman remark" at the end of the roundabout scene.
-- The live branch was not mentioned in the description of the statue arm
+- There would sometimes be an extra "I can't see what you're talking about" message when use of the letter-remover was attempted but disallowed.
+
+### Parsing
+
 - T INSERTER without a hyphen is now understood as the T-inserter.
 - The T-inserter can now be used by typing INSERT T IN (thing).
-- The fast travel GO TO command could be used to bypass the confrontation with Alex's father.
-- There would sometimes be an extra "I can't see what you're talking about" printed when an attempted use of the letter-remover was prevented.
-- The embedded start up data in the Gblorb file was bad in the two previous releases. The game will now print a warning at startup if it detects bad embedded data.
-- EXAMINE DIRECTION would cause a run-time error.
-- Things like REMIND MAN THAT MRS. ROSEHIP IS MARRIED would be understood as two commands separated by a period. Periods after titles are now stripped.
+- Things like REMIND MAN THAT MRS. ROSEHIP IS MARRIED would be understood as two different commands separated by a period. Periods after titles are now properly stripped from input.
 - DEMO is now understood as DEMONSTRATION.
-- Contractions such as WHAT'S, HE'S, and IT'S are now understood.
-- Fixes a run-time problem when using the soap dispenser after removing all sinks.
-- Fixes many double spaces throughout the output text.
+- Contractions such as WHAT'S, HE'S, and IT'S are understood.
 - Adds more synonyms to the "ask why he is here" quip for the gift shop volunteer. WHY ARE YOU HERE and ASK WHY HE IS THERE now work.
 
 ## Release 11
