@@ -916,7 +916,7 @@ Instead of going nowhere when the noun is not fronted by a facade in the locatio
 		carry out the listing exits activity;
 		now suppress-exit-listing is false.
 
-[The parser would sometimes misinterpret commands such as GO TO CINEMA as FIND CINEMA-EXTERIOR and leave the player in from of the cinema rather than inside it. This gets around this by making sure that we always try to walk through any facade that we are "finding".]
+[The parser would sometimes misinterpret commands such as GO TO CINEMA as FIND CINEMA-EXTERIOR and leave the player in front of the cinema rather than inside it. This gets around this by making sure that we always try to walk through any facade that we are "finding".]
 
 Instead of finding a facade:
 	let the-direction be a random direction fronted by the noun;
