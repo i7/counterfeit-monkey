@@ -6181,7 +6181,7 @@ Test attacks with "establish / hit atlantida with sword / hit atlantida with foi
 Section 13 - Scene Interlude with Guards
 
 
-Sanity-check going north through the tall window when Atlantida-refreshed is off-stage:
+Sanity-check going through the tall window to Precarious Perch when Atlantida-refreshed is off-stage:
 	if story viewpoint is second person singular:
 		say "[We] could do that. [We] could climb out that window and not look back. It would be faster, easier, unquestionably safer. But what about the people we're leaving behind? What about my father and Professor Higgate? What about the protesters who got arrested today?
 
