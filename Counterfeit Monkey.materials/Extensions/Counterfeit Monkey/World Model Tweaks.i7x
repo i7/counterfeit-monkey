@@ -965,22 +965,20 @@ Include Facing by Emily Short.
 Instead of examining a direction:
 	try facing the noun.
 
-Rule for distantly describing a proper-named room (called target) (this is the new distant description rule):
+Rule for distantly describing a room (called target) (this is the new distant description rule):
 	say "[We] make out [the target] that way."
 
 The default distant description rule is not listed in any rulebook.
 
-Rule for distantly describing a room (called target):
-	let N be the printed name of the target;
-	unless the target is proper-named:
-		now N is N in lower case;
-	say "[We] can make out [N] that way."
-
 Rule for distantly describing a room (called target) which encloses someone when the location is indoors:
-	let N be the printed name of the target;
-	unless the target is proper-named:
-		now N is N in lower case;
-	say "That way [we] can see [N], in which [is-are a list of people enclosed by the target]."
+	say "That way [we] can see [the target], in which [is-are a list of people enclosed by the target]."
+
+Check looking toward a room (this is the new can't see through closed door rule):
+	now the occluding door is the door direction faced from the location;
+	if the occluding door is a door and the occluding door is closed and the occluding door is not transparent:
+		say "[We] can't see that way because [the occluding door] [are] closed." instead.
+
+The new can't see through closed door rule is listed instead of the can't see through closed door rule in the check looking toward rules.
 
 When play begins (this is the nothing-to-see-that-way rule):
 	now nothing-to-see-that-way is "[We] can't see anything interesting in that direction."
