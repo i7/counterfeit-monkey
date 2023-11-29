@@ -733,7 +733,7 @@ topic	title	data
 "biography" or "phyllida" or "shaply" or "marcus" or "aurelius" or "churchill" or "winston" or "margaret" or "thatcher" or "martin" or "luther" or "king" or "nelson" or "mandela"	"biographies"	"The collection includes four different biographies of Phyllida Shaply; numerous lives of her contemporaries; and then a bizarrely diverse coverage of saints and villains, ancient and recent figures. Marcus Aurelius appears, as do Winston Churchill and Margaret Thatcher, Martin Luther King and Nelson Mandela."
 "economy/economics/macroeconomics"	"books on the economy"	"Several impressive-looking textbooks on macroeconomics are listed, though from the bookmarks it is clear that the owner has not been able to get all the way through them."
 
-The tall window is a door. The initial appearance is "A window in the north wall, cut out through the cliff face, gives a view of [if the current daytime is sunset]the ocean in fading sunlight[otherwise if the current daytime is evening]tranquil sea under a darkening sky[otherwise]brilliant sunlight and the hot sea[end if]."   It is north of Private Solarium and south of the Precarious Perch.
+The tall window is a transparent door. The initial appearance is "A window in the north wall, cut out through the cliff face, gives a view of [if the current daytime is sunset]the ocean in fading sunlight[otherwise if the current daytime is evening]tranquil sea under a darkening sky[otherwise]brilliant sunlight and the hot sea[end if]."   It is north of Private Solarium and south of the Precarious Perch.
 
 The description of the tall window is "[if the tall window is open]The window stands open.[else]The window is closed.[end if]".
 
