@@ -60,7 +60,7 @@ A description-concealing rule:
 	if Counterfeit Monkey is unvisited:
 		now aquarium-exterior is not marked for listing.
 
-aquarium-exterior is a facade in Deep Street. It fronts east. The printed name is "Aquarium Bookstore". Understand "aquarium" or "shop" or "window" or "bookstore" or "store" as aquarium-exterior. The initial appearance is "[The Aquarium] is to the east." The introduction is "It is an esoteric bookstore (and purveyor of other things), but one whose owner has helped you in the past[if the player knows lena-needed and aquarium is not visited]. That would be Lena, the woman that [we] need to talk to about Slango[end if]."
+aquarium-exterior is a facade in Deep Street. It fronts east. The printed name is "Aquarium Bookstore". Understand "aquarium" or "shop" or "window" or "bookstore" or "store" as aquarium-exterior. The initial appearance is "[if boldening is true][bold type][end if]The Aquarium Bookstore[roman type] is to the east." The introduction is "It is an esoteric bookstore (and purveyor of other things), but one whose owner has helped you in the past[if the player knows lena-needed and aquarium is not visited]. That would be Lena, the woman that [we] need to talk to about Slango[end if]."
 	The description is "[if Aquarium is visited]The outside manages to give an impression of poverty, gloom, and probable drug use; though, having seen the inside, I am going to guess that the real issues are sloth and kookiness[otherwise]I've never been inside the Aquarium: the outside never looked terribly savory. Perhaps that's the point[end if]."
 
 Rule for writing a topic sentence about aquarium-exterior when aquarium-exterior is not as-yet-unknown:
