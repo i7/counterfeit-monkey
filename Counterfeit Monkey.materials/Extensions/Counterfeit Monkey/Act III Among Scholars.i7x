@@ -1931,6 +1931,12 @@ The printed name is "Lecture Hall". Understand "podium" or "at podium" or "at th
 After printing the name of Lecture Hall 1 while not constructing the status line:
 	say " [roman type](at the [podium])".
 
+Instead of looking toward Lecture Hall 1 when the location is Samuel Johnson Basement:
+	say "There is a lecture room to the east."
+
+Instead of looking toward Lecture Hall 1:
+	say "[We] see the podium that way."
+
 The podium is a supporter in Lecture Hall 1. It is scenery. The description is "An advanced, pre-wired [podium] that allows the instructor to project slides from a laptop or show movies."
 
 On the podium is a page. The page is a notepad. The description of the page is "A sheet of lined paper[if the location is Lecture Hall 1], presumably left by the person who lectured here last[end if]."
@@ -1972,6 +1978,9 @@ Lecture Hall 2 is south of Lecture Hall 1. The printed name is "Lecture Hall". U
 
 After printing the name of Lecture Hall 2 while not constructing the status line:
 	say " [roman type](among the [if boldening is true][bold type][end if]seats[roman type])".
+
+Instead of looking toward Lecture Hall 2:
+	say "[We] see the seats that way."
 
 Some wooden seats are supporters in Lecture Hall 2. Understand "hard" or "wood" as the wooden seats. The initial appearance is "The room extends [if Location is Lecture Hall 1]south[otherwise]north[end if], full of hard [wooden seats]." The description is "Ingeniously uncomfortable."
 
