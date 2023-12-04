@@ -1425,6 +1425,9 @@ A description-concealing rule when the location is the Language Studies Departme
 [Report Professor Waterstone locking office-door-1 with something:
 	say "Through the window in Waterstone's door, [we] can see him turning the lock. When he catches us watching he gives a tight, unfriendly smile and goes back to his desk." instead.]
 
+Instead of looking toward Waterstone’s Office when office-door-1 is closed:
+	try searching the special glass window.
+
 Check examining office-door-1 when the subcommand of office-door-1 matches "waterstone":
 	if Professor Waterstone is marked-visible:
 		try examining Professor Waterstone instead.
