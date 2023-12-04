@@ -185,7 +185,7 @@ Unfortunately, the revel is more than big enough to bury [us] under its bulk.";
 	abide by the game-ending rule.
 
 Check shooting the shred with the loaded anagramming gun:
-	say "The gun fires ruggedly into the shred, which shatters and then reforms as a herd. Cows, goats, and sheep, all mingled together and furious to be thus manifested without a shepherd.
+	say "The gun fires ruggedly into the shred, which shatters and then reforms as some herds. Cows, goats, and sheep, all mingled together and furious to be thus manifested without a shepherd.
 
 Something spooks the herds [--] not surprising, as there is scarcely enough room here for them to move. The cows try to go one direction, the goats another, and [we] [are] dragged underhoof.";
 	end the story saying "That was unwise";
