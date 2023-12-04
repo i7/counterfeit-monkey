@@ -17,7 +17,7 @@ Section 1 - Display Reloading Room
 
 At the same time, we want to discourage the player from thinking that there is something to be won by trying to communicate with those back upstairs. So while the tourists are shown to have reactions to certain types of item, they remain on a tight cycle and can't be broken out of their basic behavior.]
 
-Display Reloading Room is south of Equipment Archive. It is indoors, forbidden and southern. The description is "This area [if the display-platform is not in the location]is more or less empty. [Hazard-tape] marks off an area of the floor to indicate that [we] shouldn't stand there[otherwise]is mostly taken up with the [display-platform] descended from the room above[end if]."
+Display Reloading Room is south of Equipment Archive. It is indoors, improper-named, forbidden and southern. The description is "This area [if the display-platform is not in the location]is more or less empty. [Hazard-tape] marks off an area of the floor to indicate that [we] shouldn't stand there[otherwise]is mostly taken up with the [display-platform] descended from the room above[end if]."
 
 A tv monitor is a fixed in place device in the Display Reloading Room. It is switched on. Understand "black" or "white" or "black and white" or "television" or "security" as the tv monitor. The initial appearance is "A black and white [tv monitor] is embedded in the wall."
 
@@ -161,7 +161,7 @@ Instead of going north in Wonderland when the secret-door is closed and the secr
 
 Section 3 - Equipment Archive
 
-Equipment Archive is a room. It is indoors, forbidden and southern. The description is "The [if boldening is true][bold type][end if]ceiling[roman type] is mirrored, perhaps to make it harder for anyone to sneak around without being noticed among the shelves."
+Equipment Archive is a room. It is indoors, improper-named, forbidden and southern. The description is "The [if boldening is true][bold type][end if]ceiling[roman type] is mirrored, perhaps to make it harder for anyone to sneak around without being noticed among the shelves."
 
 A ceiling mirror is a mirror in the Equipment Archive.
 
@@ -412,7 +412,7 @@ The spiral staircase is a down-staircase in Surveillance Room. It fronts down. T
 
 Section 3 - Workshop
 
-Workshop is east of Surveillance Room. Workshop is indoors and forbidden. The description is "A room whose importance is obvious from how clean it is and how little furniture it is allowed to have."
+Workshop is east of Surveillance Room. Workshop is indoors, improper-named and forbidden. The description is "A room whose importance is obvious from how clean it is and how little furniture it is allowed to have."
 
 
 
@@ -637,7 +637,7 @@ Chapter 3 - Atlantida's Spaces
 Section 1 - Personal Apartment
 
 
-The Personal Apartment is a room. It is indoors, checkpoint and forbidden. The description is "At a guess, this is a room hardly anyone ever visits, or even knows about. Though the ceiling and one wall are bare cave, the rest has been paneled and graciously decorated in the style of the end of the 18th century. [if the oil-paintings are in the location][Oil-paintings] on the walls depict great men and women of Atlantis gone by: Phyllida Shaply, Amelia Landison, Clarence Arbot, Jon Rosehip. [end if]An antique bed stands in the cen[ter] of the room."
+The Personal Apartment is a room. It is indoors, checkpoint, improper-named and forbidden. The description is "At a guess, this is a room hardly anyone ever visits, or even knows about. Though the ceiling and one wall are bare cave, the rest has been paneled and graciously decorated in the style of the end of the 18th century. [if the oil-paintings are in the location][Oil-paintings] on the walls depict great men and women of Atlantis gone by: Phyllida Shaply, Amelia Landison, Clarence Arbot, Jon Rosehip. [end if]An antique bed stands in the cen[ter] of the room."
 
 atlantida-woman is a woman in the Personal Apartment. [She is on the fancy bed.] The printed name of atlantida-woman is "Atlantida". The description of atlantida-woman is "Her face is ageless, her eyes a piercing blue. She looks like Phyllida Shaply, our famous forebear, except that there is something ethereal and heroic about her as well."
 
@@ -864,7 +864,7 @@ Instead of going up in Abandoned Shore:
 Instead of going north in Abandoned Shore when the player is not in the kayak:
 	say "[We] have too far to go; just swimming won't get [us] out to Slango's yacht."
 
-Abandoned Shore is below Precarious Perch. It is forbidden and checkpoint. The description is "There's a little inlet of shore here, mostly boulders with little sand, completely cut off from the dock area and sheltered by the curve of the rock so that it wouldn't be visible from the sea unless someone were very close in."
+Abandoned Shore is below Precarious Perch. It is forbidden, improper-named and checkpoint. The description is "There's a little inlet of shore here, mostly boulders with little sand, completely cut off from the dock area and sheltered by the curve of the rock so that it wouldn't be visible from the sea unless someone were very close in."
 
 Some boulders are scenery in Abandoned Shore. Understand "crack" or "rocks" or "boulder" as the boulders. The description is "Rough black rock, the kind that tears up your hands if you try to hold onto it too tightly."
 
@@ -986,7 +986,7 @@ Check facing in abandoned shore:
 Report facing in Abandoned Shore:
 	say "The charm of this place is that it's very hard to see anything in any direction but the ocean. In every other direction [we] are completely protected by rocks." instead.
 
-Open Sea is north of the Abandoned Shore. It is forbidden and checkpoint. The description is "The water stretches in all directions, but [we] can see off to the north where [viewed-yacht] is anchored, ready to bring [us] back aboard. Its metallic blue shape almost blends in with the water."
+Open Sea is north of the Abandoned Shore. It is forbidden, improper-named and checkpoint. The description is "The water stretches in all directions, but [we] can see off to the north where [viewed-yacht] is anchored, ready to bring [us] back aboard. Its metallic blue shape almost blends in with the water."
 	The introduction is "If [we] were further around the island to the east, [we] might be able to see bits of the drowned city: both the buildings that were legitimately destroyed when the land sunk into the sea, and the areas where during the Civil Dispute of Standard[ization] the authorities dumped unwanted foreign archaeological [if the player is wearing britishizing goggles]artefact[otherwise]artifact[end if]s. But here I'm afraid it's just shellfish and sand down there."
 
 Rule for listing exits when looking in the Open Sea:
@@ -1109,7 +1109,7 @@ The yacht's name is obviously a riff on Counterfeit Monkey (Slango's reason for 
 
 Section 2 - Sunning Deck
 
-Sunning Deck is a nautical room. It is forbidden.
+The Sunning Deck is a nautical room. It is forbidden.
 	The description is "[one of]This is a very fine boat: sleek, shiny, big... Oh, you don't like it when I put it that way, I see. All right then: a high-speed yacht, something luxurious enough that it looks like a rich man's toy to harbor officials, but it handles almost like a cigarette boat. [if the player wears the Britishizing goggles]Fibreglass[otherwise]Fiberglass[end if] hull, shaped in a deep V for racing, capable of 80 knots on a calm sea. Range of around 300 nautical miles, enough to take us past Gibraltar to Málaga or perhaps even Almeria.
 
 This bit is the aft portion[or]This is the aft section of the deck[stopping], broad and flat and suitable for sunning oneself."
@@ -1144,7 +1144,7 @@ The command chair is an enterable scenery supporter in the Navigation Area. The 
 
 The controls are scenery in the Navigation Area. Understand "mass" or "buttons" or "button" or "lever" or "levers" or "steering" or "wheel" as the controls. The description is "It's curious, looking at these and knowing I've never touched them before in my life, and yet having your instinctive muscular knowledge of what they're all for and how they work. I feel like I could sit down and drive the yacht, and at the same time I find the idea terrifying."
 
-Foredeck is fore from the Navigation Area. It is nautical and forbidden. The description is "Here the yacht is nothing but a nose over the water. A [hatch], hardly big enough for a portly person, descends into the so-called crew cabin."
+The Foredeck is fore from the Navigation Area. It is nautical and forbidden. The description is "Here the yacht is nothing but a nose over the water. A [hatch], hardly big enough for a portly person, descends into the so-called crew cabin."
 
 In-direction of Foredeck is down. [Into crew cabin]
 
