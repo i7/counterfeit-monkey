@@ -2037,8 +2037,7 @@ The description of a keyboard is usually "Arranged in the Dvorak layout preferre
 
 When play begins (this is the search engines rule):
 	repeat with item running through search engines:
-		now the results-found response of item is "The search turns up the following results:";
-		now the description of the item is "[We] can type search terms to look for data records."
+		now the results-found response of item is "The search turns up the following results:".
 
 Chapter 2 - Substances
 

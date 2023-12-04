@@ -295,7 +295,7 @@ Test surveillance with "x computer / x screen / turn on computer / select securi
 
 Test survey with "test surveillance" in Surveillance Room.
 
-The surveillance computer runs a search engine called access-database. The data table of access-database is the Table of Access Data.
+The surveillance computer runs a search engine called access-database. The description of access-database is "[We] can type search terms to look for data records.". The data table of access-database is the Table of Access Data.
 
 Table of Access Data
 topic	title	data
