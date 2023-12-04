@@ -17,13 +17,13 @@ Instead of searching the aas-object:
 	say "There are a surprising number of sharp bits: this is friable stone, but it hasn't yet been eroded into smoothness."
 
 
-The description of the ad is "A folded, rumpled newspaper ad for [ad subject]." The ad has some text called the ad subject. The heft of the ad is 1.
+The description of the ad is "A folded, rumpled newspaper ad for [ad subject of the ad]." The ad has some text called the ad subject. The heft of the ad is 1.
 
 Before examining the ad for the first time:
 	if the restoration gel is not seen:
 		now the ad subject of the ad is "Restoration Gel: a unique patented formula to restore lost letters and undo the effects of a letter-remover";
 	otherwise:
-		now the ad subject is "[one of]fixed-price dinners at Literal[or]an exhibit on the pre-history of linguistic concepts at the local museum, especially highlighting their possession of an amazing classic codex[or]seaweed wrap treatments at the Fleur d'Or spa[sticky random]";
+		now the ad subject of the ad is "[one of]fixed-price dinners at Literal[or]an exhibit on the pre-history of linguistic concepts at the local museum, especially highlighting their possession of an amazing classic codex[or]seaweed wrap treatments at the Fleur d'Or spa[sticky random]";
 
 The adage is an r-abstract thing. The heft of the adage is 0. The description of the adage is "It reads: [one of]Don't make a god of gold[or]The value of a thing is what it may become[or]From little acorns, much corn may be harvested[or]Every stick has three ends[or]Good fences make good fertil[ize]r[or]Even players have layers[or]If hoses were horses, gardeners would rule the racetrack[or]The fanciest word is the least productive[or]Wordplay is stronger than swordplay[or]Judge a man by his verbs alone[at random]."
 
@@ -627,7 +627,7 @@ Instead of listening to the click:
 
 
 [clock]
-The clock has a time called the current time. The description of a clock is "It appears to be one of those archetypal alarm clocks that crows at sunrise and generally makes a nuisance of itself. It shows the time to be about [the current time to the nearest five minutes in words]."
+The clock has a time called the current time. The description of a clock is "It appears to be one of those archetypal alarm clocks that crows at sunrise and generally makes a nuisance of itself. It shows the time to be about [the current time of the clock to the nearest five minutes in words]."
 
 Every turn (this is the advance clock rule):
 	increase the current time of the clock by one minute.
@@ -4237,11 +4237,32 @@ The description of the wire rack is "The new rack is miraculously much larger th
 
 The word is r-abstract. The heft of the word is 0. The description is "At the moment, the word is '[recent word]', floating about in [one of]handsome Garamond[or]Arno Pro[or]unmistakable Hoefler[or]slick Buivinga[or]elegant Didot[or]unimaginative Times[or]Helvetica[or]solid-bodied Gotham[at random] lettering."
 
+Definition: a thing is description-appropriate:
+	if it is the word:
+		no;
+	if it is the wordage:
+		no;
+	if it is the words:
+		no;
+	if it is a quip:
+		no;
+	if it is a facade:
+		no;
+	if it is a door:
+		no;
+	if it is a tap:
+		no;
+	if it is a software:
+		no;
+	yes.
+
 To say recent word:
+	let target be a random thing;
 	let N be some text;
-	now N is the substituted form of the description of a random marked-visible thing;
-	if N is "":
+	if target is not description-appropriate or the description of target is "":
 		now N is description of the passage;
+	otherwise:
+		now N is the substituted form of the description of target;
 	let count be the number of words in N;
 	let index be a random number between 1 and count;
 	say word number index in N.
@@ -4254,9 +4275,10 @@ To say generictext:
 	let N be a random number between 20 and 30;
 	let assemblage be text;
 	repeat with I running from 1 to N:
-		let content be description of a random seen thing;
-		if content is "":
+		let target be a random thing;
+		if target is not description-appropriate or the description of target is "":
 			next;
+		let content be the substituted form of the description of target;
 		let max be the number of words in content;
 		let word-choice be a random number between 1 and max;
 		now assemblage is "[assemblage][word number word-choice in content] ";

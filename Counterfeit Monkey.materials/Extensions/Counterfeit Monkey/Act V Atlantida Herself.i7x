@@ -620,7 +620,7 @@ Instead of pulling the portcullis:
 
 [Nothing makes this explicit, but in addition to being part of the counterweight, the counter measures numbers of visits to the oracle in a given month. For the most part people do not open the portcullis and consult with Atlantida from the outside instead, as they are increasingly afraid of her.]
 
-The ordinary-counter is on the pulley. The printed name of the ordinary-counter is "counter". The description of the ordinary-counter is "One of those devices with a press-button to increment a number, to assist with counting things like the number of people attending an event. There's also a loop to let the user wear it over one finger. The counter currently reads [counter-state]." The ordinary-counter has a number called the counter-state. The counter-state of the ordinary-counter is 17.
+The ordinary-counter is on the pulley. The printed name of the ordinary-counter is "counter". The description of the ordinary-counter is "One of those devices with a press-button to increment a number, to assist with counting things like the number of people attending an event. There's also a loop to let the user wear it over one finger. The counter currently reads [counter-state of the ordinary-counter]." The ordinary-counter has a number called the counter-state. The counter-state of the ordinary-counter is 17.
 
 Understand "press-button" or "button" as the ordinary-counter. Understand "counter" as the ordinary-counter. The ordinary-counter is wearable.
 
