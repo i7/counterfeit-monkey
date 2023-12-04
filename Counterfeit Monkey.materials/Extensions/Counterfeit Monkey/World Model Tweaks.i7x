@@ -1061,7 +1061,7 @@ Report facing when the location is indoors:
 			say "There's nothing remarkable [noun] there." instead;
 		say "There's no door in that direction." instead.
 
-The sky is a distant backdrop. It screens up. The sun is part of the sky. The description of the sky is "[sky-description]". The description of the sun is "[sun-description]".
+The sky is a distant backdrop. It screens up. The sun is a distant part of the sky. The description of the sky is "[sky-description]". The description of the sun is "[sun-description]".
 
 [When play begins (this is the move backdrops to the outdoors rule):
 	move the sky backdrop to all outdoors rooms.]
