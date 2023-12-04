@@ -142,7 +142,7 @@ appearance	description	idle
 
 Section 3 - The Fleur d'Or
 
-West of Long Street North is the Fleur d'Or Lobby. The description of the Fleur d'Or Lobby is "[one of]The Fleur d'Or is a high-end hotel that serves businessmen and luxury tourists interested in the linguistic mechanisms of the island. As a result, it has all kinds of paid exemptions, including an exemption allowing it to operate under a foreign name.
+West of Long Street North is the Fleur d'Or Lobby. The description of Fleur d'Or Lobby is "[one of]The Fleur d'Or is a high-end hotel that serves businessmen and luxury tourists interested in the linguistic mechanisms of the island. As a result, it has all kinds of paid exemptions, including an exemption allowing it to operate under a foreign name.
 
 [or][stopping][The spotlights] in the ceiling light the floor in distinct pools of Bureau blue, and a [room divider] etched with random letters separates the lobby from the drinks club to the [west]."
 	Understand "hotel" as the Fleur d'Or Lobby.
@@ -155,7 +155,7 @@ The hotel has recently had a face lift, with the silly old ornamentation pried o
 If you are my mother, you call this style Atlantean Postmodern. Less kindly, it is something from the sweaty dreams of an upscale swimming-pool installer."
 
 
-Fleur d'Or lobby is indoors and southern. The room divider is a scenery thing in Fleur d'Or Lobby. The printed name is "sheet of frosted glass". Understand "glass" or "sheet" or "sheet of" or "frosted" or "annotation" or "primordial" or "primeval" or "sea" as the room divider. The description is "The glass is a good three quarters of an inch thick, and looks very sturdy. The etched letters glow or fade out again depending on the changing light conditions in the lobby.
+Fleur d'Or lobby is indoors, proper-named and southern. The room divider is a scenery thing in Fleur d'Or Lobby. The printed name is "sheet of frosted glass". Understand "glass" or "sheet" or "sheet of" or "frosted" or "annotation" or "primordial" or "primeval" or "sea" as the room divider. The description is "The glass is a good three quarters of an inch thick, and looks very sturdy. The etched letters glow or fade out again depending on the changing light conditions in the lobby.
 
 Annotation in the corner indicates that this is a commissioned artwork by Anne Landis Rosehip, entitled 'The Primeval Sea.'"
 
@@ -231,7 +231,7 @@ Rule for writing a topic sentence about the piano:
 
 Section 4 - Drinks Club
 
-Fleur d'Or Drinks Club is west of Fleur d'Or Lobby. It is indoors, checkpoint and southern. The description is "The back wall is dramatically decorated with bottled liquors of all sorts, from gin to cachaça; there's a giant bottle of Campari, taller than your average three-year-old, with a red ribbon around its neck.
+Fleur d'Or Drinks Club is west of Fleur d'Or Lobby. It is indoors, checkpoint, proper-named and southern. The description is "The back wall is dramatically decorated with bottled liquors of all sorts, from gin to cachaça; there's a giant bottle of Campari, taller than your average three-year-old, with a red ribbon around its neck.
 
 What makes this place technically a drinks club rather than a bar is its lic[ense] to serve letter-manufactured food and drink. [A toolkit] on the [dor-bar-top] contains [a list of things *in the toolkit], ready to be transformed into their respective cocktails."
 
@@ -355,7 +355,7 @@ The apartment complex is a facade in Palm Square. The initial appearance is "I l
 
 Section 2 - Babel Cafe
 
-South of Palm Square is Babel Café. Understand "cafe" as the Babel Café. The description of Babel Café is "Through many changes of management, this institution has fed the denizens of the university and ignored their semi-sedition." Babel Café is indoors and southern.
+South of Palm Square is Babel Café. Understand "cafe" as the Babel Café. The description of Babel Café is "Through many changes of management, this institution has fed the denizens of the university and ignored their semi-sedition." Babel Café is indoors, proper-named and southern.
 
 Out-direction of Babel Café is north. [Back to Palm Square]
 
@@ -735,7 +735,7 @@ Carry out taking the ring:
 Instead of climbing the gate:
 	say "It is not badly built, as far as gates go, and it would not be possible to climb over without attracting attention."
 
-Southeast of the sturdy iron gate is the University Oval. The University Oval is proper-named, checkpoint and southern.
+Southeast of the sturdy iron gate is the University Oval. The University Oval is improper-named, checkpoint and southern.
 
 The description of University Oval is "This is the cen[ter] of the university, a broad grassy oval shaded with [sycamore trees] and surrounded by buildings in brick or white stone."
 
@@ -820,7 +820,7 @@ Section 3 - Seminar Room
 
 Southwest of Samuel Johnson Hall is the seminar door. The seminar door is a closed lockable locked door.  The seminar door is scenery. The description of the seminar door is "It's sturdy, because sometimes valuable equipment is stored in the room beyond. That room also contains the library of department books, a set of research materials kept on hand so that people don't have to go over to the university library to double-check basic data during a discussion."
 
-Southwest of the seminar door is Language Studies Seminar Room. The description of the Language Studies Seminar Room is "They recently redid this room, and whoever picked the decorations had postmodern tastes." The Language Studies Seminar Room is indoors, checkpoint and southern.
+Southwest of the seminar door is Language Studies Seminar Room. The description of the Language Studies Seminar Room is "They recently redid this room, and whoever picked the decorations had postmodern tastes." The Language Studies Seminar Room is indoors, checkpoint, improper-named and southern.
 
 After looking in the Language Studies Seminar Room when the seminar door is open:
 	if Professor Higgate is enclosed by location:

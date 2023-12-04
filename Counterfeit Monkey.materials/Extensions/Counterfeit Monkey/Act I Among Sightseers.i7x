@@ -751,7 +751,7 @@ Chapter 1 - Central Park Area
 
 Section 1 - The Park
 
-Park Center is a room. The description of the Park Center is "This is a handsome expanse of [grass], shaped like a rectangle with rounds cut from the corners, bounded by [railings] along the north side. There are no stalls and no barkers here, but [small children] are running around [if the horses are part of the fountain]an impressive[else]a desecrated[end if] [marble fountain][if hoses are part of the marble fountain], currently spewing water in all directions[end if].[one of]
+The Park Center is an improper-named room. The description of the Park Center is "This is a handsome expanse of [grass], shaped like a rectangle with rounds cut from the corners, bounded by [railings] along the north side. There are no stalls and no barkers here, but [small children] are running around [if the horses are part of the fountain]an impressive[else]a desecrated[end if] [marble fountain][if hoses are part of the marble fountain], currently spewing water in all directions[end if].[one of]
 
 I gather from the direction of your thoughts that you dislike small children, so I'll restrain myself from trying to communicate with them.[or][stopping]".
 
@@ -894,7 +894,7 @@ Some grass is scenery in the Park Center. The description is "Deep green and vel
 Rule for distantly describing the Fair:
 	say "That way is the fair: a mass of booths and people and games and bright sunlight, too chaotic to get a good look at from here."
 
-The Fair is south of Park Center. It is checkpoint. The description is "[one of]Today is Serial Comma Day, one of the biggest holidays on the island, and a time when half the police force is off duty while the other half is over-extended. The perfect day to make an escape. [or][stopping]The square at the cen[ter] of town is [one of]therefore [or][stopping]crowded with people, and there's an overpowering smell of artificial butter and spun sugar."
+The Fair is south of Park Center. It is improper-named and checkpoint. The description is "[one of]Today is Serial Comma Day, one of the biggest holidays on the island, and a time when half the police force is off duty while the other half is over-extended. The perfect day to make an escape. [or][stopping]The square at the cen[ter] of town is [one of]therefore [or][stopping]crowded with people, and there's an overpowering smell of artificial butter and spun sugar."
 
 Instead of smelling the Fair:
 	say "It smells like candy and popcorn, with a note of booze and another note of sweaty crowd."
@@ -1536,9 +1536,9 @@ The central hillock is scenery in Monumental Staircase. The description is "A sq
 
 A little of the original fortification does exist immediately north and curving around to the northwest, but it is in very bad shape here, and the top of the walls cannot be walked on at this point." Understand "city" or "fortified" or "walls" or "great" or "enclave" as the hillock.
 
-The harbor-view is a distant backdrop. The printed name is "harbor". It is in Old Hexagonal Turret, Old City Walls, Crumbling Wall Face, Outdoor Cafe, and Monumental Staircase. It screens east and northeast. Understand "port" or "harbor" or "docks" or "dock" as harbor-view. The description is "A harbor swarming with small and medium-sized tourist boats; most of the major shipping comes in via another route." The introduction is "That is where [we] [are] trying to get to [--] or rather, get through."
+The harbor-view is a distant backdrop. The printed name is "harbor". It is in the Old Hexagonal Turret, the Old City Walls, the Crumbling Wall Face, the Outdoor Cafe, and the Monumental Staircase. It screens east and northeast. Understand "port" or "harbor" or "docks" or "dock" as harbor-view. The description is "A harbor swarming with small and medium-sized tourist boats; most of the major shipping comes in via another route." The introduction is "That is where [we] [are] trying to get to [--] or rather, get through."
 
-The fish-market-view is a distant backdrop. The printed name is "fish market". It is in Old Hexagonal Turret, Old City Walls, Crumbling Wall Face, Outdoor Cafe, and Monumental Staircase. Understand "market" or "fish market" as the fish-market-view. The description is "From this angle and distance, all you can see is the open space and a few awnings. It's not the best time of day for this kind of thing anyway."
+The fish-market-view is a distant backdrop. The printed name is "fish market". It is in the Old Hexagonal Turret, the Old City Walls, the Crumbling Wall Face, the Outdoor Cafe, and the Monumental Staircase. Understand "market" or "fish market" as the fish-market-view. The description is "From this angle and distance, all you can see is the open space and a few awnings. It's not the best time of day for this kind of thing anyway."
 
 Instead of going down in the Staircase, try going east. Instead of going up in the Staircase, try going west.
 
@@ -1874,7 +1874,7 @@ Understand "count [bills]" as a mistake ("[We] thumb quickly through the bills [
 
 Section 4 - The New Church
 
-The New Church is west of the Church Forecourt. It is indoors and proper-named. The description is "Not a Gothic cathedral from the era when the church was wealthy and secure, but a gallant Neo-classical response to the turmoil of the 18th century, when the power of language was just beginning to be evident, and instead of an immutable cosmology, we suddenly had observer-consensus reality. [one of]What is the need or use of God, if it turns out that He gave all the power of creation to Adam when He let him name the animals?[or][stopping]".
+The New Church is west of the Church Forecourt. It is indoors and improper-named. The description is "Not a Gothic cathedral from the era when the church was wealthy and secure, but a gallant Neo-classical response to the turmoil of the 18th century, when the power of language was just beginning to be evident, and instead of an immutable cosmology, we suddenly had observer-consensus reality. [one of]What is the need or use of God, if it turns out that He gave all the power of creation to Adam when He let him name the animals?[or][stopping]".
 
 The inscription is fixed in place in the New Church. It is distant. The initial appearance is "An [inscription] above [the altar], picked out in gold paint, reads Ἐν ἀρχῇ ἦν ὁ λόγος." Understand "paint" or "gold" as the inscription.
 	The description is "It means, In the Beginning was the Word.
@@ -2069,7 +2069,7 @@ Part 3 - Roundabout Access
 [Instead of going to Old City Walls when the backpack is not handled:
 	say high-street refusal instead.
 
-Instead of approaching Old City Walls when the backpack is not handled:
+Instead of approaching the Old City Walls when the backpack is not handled:
 	say high-street refusal instead.]
 
 
@@ -2198,7 +2198,7 @@ Chapter 1 - City Walls
 
 Section 1 - Old City Walls
 
-Old City Walls are north of the Monumental Staircase. Understand "wall" as Old City Walls. The description is "Only portions of the old walls still stand, but you can walk along what remains, as though you were defending the place. They're a me[ter] and a half wide, made of ashlar blocks. On the vertical faces these blocks are still rough, but underfoot they have been worn smooth by the passage of many defenders and (subsequently) tourists. One of the [defaced ashlar block]s in the wall has even been defaced, some old inscription gouged out.[one of]
+The Old City Walls are north of the Monumental Staircase. Understand "wall" as Old City Walls. The description is "Only portions of the old walls still stand, but you can walk along what remains, as though you were defending the place. They're a me[ter] and a half wide, made of ashlar blocks. On the vertical faces these blocks are still rough, but underfoot they have been worn smooth by the passage of many defenders and (subsequently) tourists. One of the [defaced ashlar block]s in the wall has even been defaced, some old inscription gouged out.[one of]
 
 I used to like to climb around up here when I was a kid. I made believe[--] oh, you'll think it's silly.[or][stopping]
 
@@ -2225,9 +2225,9 @@ Turret-view is a facade in Old City Walls. It fronts east. It is scenery. The pr
 
 Section 2 - The Turret
 
-The Old Hexagonal Turret is east of Old City Walls. The description is "Up here [we] stand on the remains of the old fortifications; this turret offers a view out over the docks, the fish market, and the harbor, which it was designed to protect."
+The Old Hexagonal Turret is east of Old City Walls. It is improper-named. The description is "Up here [we] stand on the remains of the old fortifications; this turret offers a view out over the docks, the fish market, and the harbor, which it was designed to protect."
 
-Out-direction of Old Hexagonal Turret is west. [Back to old city walls]
+Out-direction of the Old Hexagonal Turret is west. [Back to old city walls]
 
 The depluralizing cannon is a container in the Old Hexagonal Turret. It is fixed in place. Understand "heavy" or "old" or "barrel" as the depluralizing cannon. The printed name is "deplural[izing] cannon".
 	The initial appearance is "A heavy old [depluralizing cannon] is aimed out to sea."
@@ -2265,11 +2265,11 @@ Understand "fire [cannon]" or "load [cannon]" or "aim [cannon]" or "use [cannon]
 
 Section 3 - The Walls Crumble
 
-Crumbling Wall Face is north of the Old City Walls. The description is "The wall once continued north from here some distance before curving northwest around the remainder of the city. So much has crumbled away, though, that the walkway is impassable north of this point. To protect citizens, there is a [safety railing] across the [view of jagged wall].
+The Crumbling Wall Face is north of the Old City Walls. The description is "The wall once continued north from here some distance before curving northwest around the remainder of the city. So much has crumbled away, though, that the walkway is impassable north of this point. To protect citizens, there is a [safety railing] across the [view of jagged wall].
 
 A [metal ladder] of four rungs descends the inner face of the wall, allowing pedestrians access to the streets to the west."
 
-Sanity-check going north in Crumbling Wall Face:
+Sanity-check going north in the Crumbling Wall Face:
 	say "The wall pretty much falls away into slippery rubble at that point, which is why there's a safety railing in the way." instead.
 
 rule for listing exits while looking in Crumbling Wall Face:
@@ -2419,9 +2419,9 @@ My parents' home is a facade in Webster Court. The printed name is "my parents['
 My childhood bedroom faces northwest, away from the docks, towards the roofs of other villas and the open sea."
 
 
-The pink door is north of Webster Court and south of Foyer. The pink door is a door. The pink door is scenery. It is lockable and locked.
+The pink door is north of Webster Court and south of the Foyer. The pink door is a door. The pink door is scenery. It is lockable and locked.
 
-Foyer is indoors and checkpoint.
+The Foyer is indoors and checkpoint and improper-named.
 
 Parental appearance is a scene. Parental appearance begins when the location is webster court and Patriotic chard-garden is visited and Private Beach is visited.
 
@@ -2519,7 +2519,7 @@ After going to Webster Court when Private Beach is visited and Patriotic Chard-G
 	otherwise:
 		clear the path-walked for the player;
 	unless final destination is Webster Court:
-		now approach-destination is Winding Footpath; [Tricks the approaching verb into stopping here even if you're trying to reach someplace really far away.]
+		now approach-destination is the Winding Footpath; [Tricks the approaching verb into stopping here even if you're trying to reach someplace really far away.]
 	continue the action.
 
 Section 3 - Chard-Garden
@@ -2624,11 +2624,11 @@ The spinner-gate is north of Roget Close.  It is a closed transparent locked doo
 
 The description of the spinner-gate is "A gate of wrought iron bars between two sturdy columns[if the spinner-gate is closed and the spinner-gate is locked], too close to climb through and too tall to climb over[else if the spinner-gate is closed], closed but not locked[else if the spinner-gate is open]; at the moment the gate has been pushed conveniently open[end if]. Built into the right-hand column, next to the gate latch, is a curious [if boldening is true][bold type][end if]sculpture[roman type]."
 
-Out-direction of Winding Footpath is south. [Through the spinner gate]
+Out-direction of the Winding Footpath is south. [Through the spinner gate]
 
 Through spinner-gate is the Winding Footpath. South of Winding Footpath is Roget Close.
 
-Winding Footpath is an outdoors checkpoint room. The description is "The [underfoot-path] winds between the villas, sloping steeply downward. It is narrow, and [bushes] left and right conceal it even from the windows of the people living nearby." Understand "path" as Winding Footpath.
+The Winding Footpath is an outdoors checkpoint room. The description is "The [underfoot-path] winds between the villas, sloping steeply downward. It is narrow, and [bushes] left and right conceal it even from the windows of the people living nearby." Understand "path" as Winding Footpath.
 
 Instead of going down in Winding Footpath:
 	try going north.
@@ -2783,7 +2783,7 @@ Test shrine with "tutorial off / autoupgrade / wave z-remover at kudzu / look be
 
 Section 6 - The Beach
 
-Private Beach is north of Winding Footpath. It is checkpoint. The description is "This is little more than a strip of fine yellow [sand], perhaps twenty me[ter]s from side to side, and five from the [hillside] to the waterline[if the sage is in the location and the sage is not handled]. A little [sage] grows on the hillside, escaped from some garden, along with wilder plants[end if]. Above, at the top of that slope, are houses with balconies overlooking the sea, but from this angle it's impossible to see much of them, or for them (you'll have to take my word on this) to see us[if high street is visited and roundabout is not visited].
+The Private Beach is north of Winding Footpath. It is checkpoint. The description is "This is little more than a strip of fine yellow [sand], perhaps twenty me[ter]s from side to side, and five from the [hillside] to the waterline[if the sage is in the location and the sage is not handled]. A little [sage] grows on the hillside, escaped from some garden, along with wilder plants[end if]. Above, at the top of that slope, are houses with balconies overlooking the sea, but from this angle it's impossible to see much of them, or for them (you'll have to take my word on this) to see us[if high street is visited and roundabout is not visited].
 
 It's tempting to look for crabs among the rocks, but the tide is high just now, and even at the best of times this is not an area rich in sealife[end if]."
 

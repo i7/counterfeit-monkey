@@ -115,7 +115,7 @@ After going from the Aquarium when Slango is in the Counterfeit Monkey:
 
 Section 2 - The Aquarium
 
-The Aquarium Bookstore is east of Deep Street. It is a privately-controlled checkpoint room. It is indoors. The description is "The shop takes its name from the [collection of fish] mounted on every wall: swordfish, bass, other things I don't recogn[ize]. Underneath these dubious tokens, the walls are covered with bookshelves, and there are stacks of books on the floor where the shelves have proven insufficient."
+The Aquarium Bookstore is east of Deep Street. It is a privately-controlled proper-named checkpoint room. It is indoors. The description is "The shop takes its name from the [collection of fish] mounted on every wall: swordfish, bass, other things I don't recogn[ize]. Underneath these dubious tokens, the walls are covered with bookshelves, and there are stacks of books on the floor where the shelves have proven insufficient."
 
 The aquarium-shelving is scenery in the aquarium. Understand "shelves" or "bookshelves" or "shelving" as the aquarium-shelving. The printed name is "shelving". The description is "They're completely crammed with books."
 
@@ -352,7 +352,7 @@ The Authenticator is a woman in Fish Market. Understand "tall" or "stern" or "wo
 
 Section 5 - Outdoor Cafe
 
-The Outdoor Cafe is south of the Fish Market and west of Deep Street. The printed name is "Outdoor Café". The description is "From this slightly raised terrace, tourists have a view of the activity in the market and out over the docks[one of][or]. The street is [east], the Fish Market [north][stopping]."
+The Outdoor Cafe is south of the Fish Market and west of Deep Street. It is improper-named. The printed name is "Outdoor Café". The description is "From this slightly raised terrace, tourists have a view of the activity in the market and out over the docks[one of][or]. The street is [east], the Fish Market [north][stopping]."
 
 The rocky cliff-face is a scenery facade in Outdoor Cafe. It fronts south. Understand "cliff" or "rocks" or "face" as the rocky cliff-face. The description is "This little terrace area has been carved out of the hillside. Immediately to the south there is only rough rock wall for many feet up."
 	The closure notice is "That way is bare cliff rock. ".
@@ -1056,7 +1056,7 @@ Sanity-check exiting when the player is in an undisguised car and the location i
 Check waving the letter-remover at the Traffic Circle when the current setting of the letter-remover is "l":
 	say "Perhaps a Traffic Circe would be able to turn cars into pigs, but the letter-remover has neither the imagination nor the power to bring this entity to life." instead.
 
-Traffic Circle is inside from the Roundabout. It is a privately-controlled checkpoint outdoors road.
+Traffic Circle is inside from the Roundabout. It is a privately-controlled checkpoint improper-named outdoors road.
 
 Out-direction of Traffic Circle is outside. [The roundabout and the traffic circle are the only place where the standard outside and inside directions are used]
 

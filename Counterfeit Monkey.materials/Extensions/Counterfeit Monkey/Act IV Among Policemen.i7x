@@ -784,7 +784,7 @@ Definition: a thing is bureau-disallowed if it is not bureau-allowed. ]
 Section 5 - Cold Storage
 
 
-Cold Storage is southwest of Bureau Basement Secret Section. It is indoors, forbidden and southern. The description is "Shelves on both sides of the room are full of [objects-on-stands] on stands: objects that used to be men and women, and in a few cases even children. The [stand labels] preserve their original names."
+Cold Storage is southwest of Bureau Basement Secret Section. It is indoors, improper-named, forbidden and southern. The description is "Shelves on both sides of the room are full of [objects-on-stands] on stands: objects that used to be men and women, and in a few cases even children. The [stand labels] preserve their original names."
 
 The introduction is "If this goes wrong, we could wind up living in here permanently. So we'd better figure whom to send out, and do it fast."
 
