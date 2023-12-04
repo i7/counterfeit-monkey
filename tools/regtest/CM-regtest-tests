@@ -549,7 +549,7 @@ We are jammed into the car with our knees almost at our chin, looking out throug
 
 This road descends steeply from southwest to northwest, passing between white concrete buildings to provide access to the marina — the Fish Market, the Docks, and a bar or two. The street is in deep shadow, protected from sunlight from almost any angle by its narrowness and by the height of the walls.
 
-The Aquarium Bookstore is to the east. It is an esoteric bookstore (and purveyor of other things), but one whose owner has helped you in the past.
+Aquarium Bookstore is to the east. It is an esoteric bookstore (and purveyor of other things), but one whose owner has helped you in the past.
 
 We can go northwest, southwest to the Roundabout, east, and west from here.
 
@@ -626,7 +626,7 @@ We can go north, south, southeast to Deep Street, and east to the Tin Hut from h
 Deep Street
 This road descends steeply from southwest to northwest, passing between white concrete buildings to provide access to the marina — the Fish Market, the Docks, and a bar or two. The street is in deep shadow, protected from sunlight from almost any angle by its narrowness and by the height of the walls.
 
-The Aquarium Bookstore is to the east. It's dim inside, but occasional movements suggest that the proprietor, Slango's friend Lena, is inside.
+Aquarium Bookstore is to the east. It's dim inside, but occasional movements suggest that the proprietor, Slango's friend Lena, is inside.
 
 /Our car ?(— which might better be described as a covered bicycle — )is parked nearby.
 
@@ -1988,7 +1988,7 @@ We run some water from the sink tap over the funnel, leaving it glistening and c
 We run some water from the sink tap over the funnel, leaving it glistening and clean.
 
 >gonear Aquarium Bookstore
-Which do you mean, 1) Aquarium Bookstore or the 2) Aquarium Bookstore?
+Which do you mean, 1) Aquarium Bookstore or 2) Aquarium Bookstore?
 
 >2
 Aquarium Bookstore
@@ -2051,9 +2051,9 @@ Which do you mean, 1) what sort of demonstration, 2) explain about our plans, th
 Deep Street
 This road descends steeply from southwest to northwest, passing between white concrete buildings to provide access to the marina — the Fish Market, the Docks, and a bar or two. The street is in deep shadow, protected from sunlight from almost any angle by its narrowness and by the height of the walls.
 
-The Aquarium Bookstore is to the east. It is an esoteric bookstore (and purveyor of other things), but one whose owner has helped you in the past.
+Aquarium Bookstore is to the east. It is an esoteric bookstore (and purveyor of other things), but one whose owner has helped you in the past.
 
-We can go northwest, southwest, east to the Aquarium Bookstore, and west from here.
+We can go northwest, southwest, east to Aquarium Bookstore, and west from here.
 
 #tinhut
 
@@ -2540,7 +2540,7 @@ It is the gooseberry fool flavor, left over from a six-pack. I always eat the st
 #returnbook
 
 >gonear Language Studies Seminar Room
-(Language Studies Seminar Room)
+(the Language Studies Seminar Room)
 Language Studies Seminar Room
 They recently redid this room, and whoever picked the decorations had postmodern tastes.
 
@@ -2906,7 +2906,7 @@ There now: the T-inserter has constructed both steer automaton and setter automa
 >placefather
 
 >gonear cold storage
-(Cold Storage)
+(the Cold Storage)
 Cold Storage
 Shelves on both sides of the room are full of objects on stands: objects that used to be men and women, and in a few cases even children. The stand labels preserve their original names.
 
@@ -2975,7 +2975,7 @@ Time passes.
 >placefather
 
 >gonear cold storage
-(Cold Storage)
+(the Cold Storage)
 Cold Storage
 Shelves on both sides of the room are full of objects on stands: objects that used to be men and women, and in a few cases even children. The stand labels preserve their original names.
 
@@ -3042,7 +3042,7 @@ Time passes.
 >placefather
 
 >gonear cold storage
-(Cold Storage)
+(the Cold Storage)
 Cold Storage
 Shelves on both sides of the room are full of objects on stands: objects that used to be men and women, and in a few cases even children. The stand labels preserve their original names.
 
@@ -5952,7 +5952,7 @@ She seems to have taken the meaning the first time.
 [Can't move screws: it's part of the plexiglas case.]
 
 >gonear language studies seminar room
-(Language Studies Seminar Room)
+(the Language Studies Seminar Room)
 Language Studies Seminar Room
 They recently redid this room, and whoever picked the decorations had postmodern tastes.
 
@@ -8185,7 +8185,7 @@ The backpacking girl gags. After a moment to regain her composure, she flees the
 
 #shop-volunteer
 >gonear New Church
-Which do you mean, 1) what is worth seeing in the New Church, the 2) New Church, or 3) New Church?
+Which do you mean, 1) what is worth seeing in the New Church, the 2) New Church, or the 3) New Church?
 
 >3
 New Church
@@ -9372,7 +9372,7 @@ We could thank the bartender.
 
 #lena
 >gonear Aquarium Bookstore.
-Which do you mean, 1) Aquarium Bookstore or the 2) Aquarium Bookstore?
+Which do you mean, 1) Aquarium Bookstore or 2) Aquarium Bookstore?
 
 >2
 Aquarium Bookstore
@@ -9513,9 +9513,9 @@ I'd like to thank Lena.
 Deep Street
 This road descends steeply from southwest to northwest, passing between white concrete buildings to provide access to the marina — the Fish Market, the Docks, and a bar or two. The street is in deep shadow, protected from sunlight from almost any angle by its narrowness and by the height of the walls.
 
-The Aquarium Bookstore is to the east. It is an esoteric bookstore (and purveyor of other things), but one whose owner has helped you in the past.
+Aquarium Bookstore is to the east. It is an esoteric bookstore (and purveyor of other things), but one whose owner has helped you in the past.
 
-We can go northwest, southwest, east to the Aquarium Bookstore, and west from here.
+We can go northwest, southwest, east to Aquarium Bookstore, and west from here.
 
 >car-acquire
 Deep Street
@@ -9525,7 +9525,7 @@ Our pathetic little car is parked right outside Aquarium Bookstore. Here is how 
 
 Suffice it to say that we are not similarly blessed.
 
-We can go northwest, southwest, east to the Aquarium Bookstore, and west from here.
+We can go northwest, southwest, east to Aquarium Bookstore, and west from here.
 
 >start car
 We swing the car door open.
@@ -9588,9 +9588,9 @@ We are jammed into the car with our knees almost at our chin, looking out throug
 
 This road descends steeply from southwest to northwest, passing between white concrete buildings to provide access to the marina — the Fish Market, the Docks, and a bar or two. The street is in deep shadow, protected from sunlight from almost any angle by its narrowness and by the height of the walls.
 
-The Aquarium Bookstore is to the east. It's dim inside, but occasional movements suggest that the proprietor, Slango's friend Lena, is inside.
+Aquarium Bookstore is to the east. It's dim inside, but occasional movements suggest that the proprietor, Slango's friend Lena, is inside.
 
-We can go northwest, southwest to the Roundabout, east to the Aquarium Bookstore, and west from here.
+We can go northwest, southwest to the Roundabout, east to Aquarium Bookstore, and west from here.
 
 The car is making an unpleasant raspy growl.
 
@@ -11576,7 +11576,7 @@ Fused? We should be two pieces by now. Maybe she has an explanation? But you see
 
 >hit atlantida with foil
 Atlantida raises the rifle and fires with certain aim before the blow has a chance to land.
-[gel-convert: BUG! The fossil is not in the repository. It will be moved from Crumbling Wall Face to ourselves.]
+[gel-convert: BUG! The fossil is not in the repository. It will be moved from the Crumbling Wall Face to ourselves.]
 With an audible SPLORT, the foil becomes a fossil.
 
 Atlantida smiles with half a mouth. "You've arrived on a difficult day. In the ordinary course of things, I keep things quiet: the spirit of democracy, but none of the sordid wrangling and bribes and corruption and compromise. It's only when the spirit of the island itself is threatened, that we have to resort to such extreme measures."
@@ -12199,7 +12199,7 @@ Once you've selected hard mode, you can't go back: certain puzzles with multiple
 Counterfeit Monkey is now in "hard" mode. Tutorials are off. The world is reconfigured against you. Good luck.
 
 >gonear language studies seminar room
-(Language Studies Seminar Room)
+(the Language Studies Seminar Room)
 Language Studies Seminar Room
 They recently redid this room, and whoever picked the decorations had postmodern tastes.
 
@@ -12277,7 +12277,7 @@ A fairly natural-looking extension, red in color, attachable by comb. It should 
 We settle the red hairpiece on our head and adjust our hair underneath.
 
 >gonear cafe
-Which do you mean, 1) where the Babel Café is, 2) Outdoor Café, the 3) café building, or 4) Babel Café?
+Which do you mean, 1) where the Babel Café is, the 2) Outdoor Café, the 3) café building, or 4) Babel Café?
 
 >2
 Outdoor Café
