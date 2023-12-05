@@ -23,7 +23,7 @@ Instead of taking an uncontained fluid thing (called the fluid):
 Understand "drink from [something]" as drinking.
 
 Sanity-check drinking a tap (called target tap):
-	if  the subcommand of the target tap matches "water" or the player's command includes "from":
+	if the subcommand of the target tap matches "water" or the player's command includes "from":
 		say "It may not be sanitary." instead.
 
 Sanity-check inserting something into a tap (called target tap):

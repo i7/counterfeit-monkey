@@ -311,7 +311,7 @@ Slango still didn't look impressed.
 
 Section 10 - Counterfeit Monkey Clue
 
-category-memory is a memory. The max is 1. The printed name is "past experience playing games". Understand "past" or "experience" or "playing" or "games"  as category-memory.
+category-memory is a memory. The max is 1. The printed name is "past experience playing games". Understand "past" or "experience" or "playing" or "games" as category-memory.
 
 Carry out an actor discussing how one might go about winning:
 	trigger category-memory.

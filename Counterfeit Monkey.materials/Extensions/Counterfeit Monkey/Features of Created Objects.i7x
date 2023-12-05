@@ -161,7 +161,7 @@ Sanity-check rubbing or squeezing or touching or waving or pulling or pushing or
 
 Sanity-check eating or drinking or tasting an r-abstract thing:
 	say "[The noun] [are] too abstract to offer sustenance." instead.
-Sanity-check  pushing an r-abstract thing to a direction:
+Sanity-check pushing an r-abstract thing to a direction:
 	say "[The noun] [aren't] solid enough for that kind of treatment." instead.
 Sanity-check switching on or switching off an r-abstract thing:
 	if the noun is a device:

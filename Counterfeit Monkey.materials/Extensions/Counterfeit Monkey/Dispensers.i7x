@@ -99,19 +99,19 @@ Carry out waving the letter-remover at the soap dispenser creating the sap-dispe
 		now the sap-liquid is proffered by the soap;
 	move the soap to the repository.
 
-Carry out  waving the letter-remover at the soap dispenser creating the sop-dispenser when the soap is in the soap dispenser:
+Carry out waving the letter-remover at the soap dispenser creating the sop-dispenser when the soap is in the soap dispenser:
 	if the sop is in the repository:
 		move the sop to the sop-dispenser;
 		now the sop is proffered by nothing;
 		now the sop is proffered by the soap;
 	move the soap to the repository.
 
-Carry out  putting the gel on the sap-dispenser when the sap-liquid is in the sap-dispenser:
+Carry out putting the gel on the sap-dispenser when the sap-liquid is in the sap-dispenser:
 	if the soap is in the repository:
 		move the soap to the soap dispenser;
 	move the sap-liquid to the repository.
 
-Carry out  putting the gel on the sop-dispenser when the sop is in the sop-dispenser:
+Carry out putting the gel on the sop-dispenser when the sop is in the sop-dispenser:
 	if the soap is in the repository:
 		move the soap to the soap dispenser;
 	move the sop to the repository.

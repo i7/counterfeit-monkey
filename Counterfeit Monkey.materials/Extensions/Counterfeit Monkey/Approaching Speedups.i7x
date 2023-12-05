@@ -24,7 +24,7 @@ This is the even newer creating a path history rule:
 Carry out going to a forbidden room (called target):
 	now the target is nonsecret.
 
-Understand "go to [any nonsecret room]" or "goto [any nonsecret room]" or "go back to [any nonsecret room]" or "return to [any nonsecret room]" or "revisit [any nonsecret room]"  as approaching.
+Understand "go to [any nonsecret room]" or "goto [any nonsecret room]" or "go back to [any nonsecret room]" or "return to [any nonsecret room]" or "revisit [any nonsecret room]" as approaching.
 
 The tell the player when blocked at a door rule response (A) is "Unfortunately, [we] [find] [we] [lack] a key fitting [the locked-thing].";
 

@@ -89,7 +89,7 @@ assure him that we seem not hitting on him is in the backup-repository.
 what his girlfriend seems like is in the backup-repository.
 delay ticket-taker is in the backup-repository.
 where my backpack seems is in the backup-repository.
-argue about  lost plus found policy is in the backup-repository.
+argue about lost plus found policy is in the backup-repository.
 demonstrate the lost backpack is in the backup-repository.
 buy movie-ticket is in the backup-repository.
 whether we can hath the scope is in the backup-repository.
@@ -173,7 +173,7 @@ how one might go about winning is in the backup-repository.
 play the game is in the backup-repository.
 complain that the game seems unfair is in the backup-repository.
 whether he hath any other games going is in the backup-repository.
-how long he hath worked at  bar is in the backup-repository.
+how long he hath worked at bar is in the backup-repository.
 what he thinks about the Bureau is in the backup-repository.
 whether he hates customs officials is in the backup-repository.
 whether he believes in god-2 is in the backup-repository.

@@ -171,8 +171,8 @@ delay ticket-taker has mention-start-index 133.
 delay ticket-taker has mention-stop-index 133.
 where my backpack seems has mention-start-index 134.
 where my backpack seems has mention-stop-index 134.
-argue about  lost plus found policy has mention-start-index 135.
-argue about  lost plus found policy has mention-stop-index 136.
+argue about lost plus found policy has mention-start-index 135.
+argue about lost plus found policy has mention-stop-index 136.
 demonstrate the lost backpack has mention-start-index 137.
 demonstrate the lost backpack has mention-stop-index 137.
 buy movie-ticket has mention-start-index 138.
@@ -321,8 +321,8 @@ complain that the game seems unfair has mention-start-index 225.
 complain that the game seems unfair has mention-stop-index 225.
 whether he hath any other games going has mention-start-index 226.
 whether he hath any other games going has mention-stop-index 226.
-how long he hath worked at  bar has mention-start-index 227.
-how long he hath worked at  bar has mention-stop-index 227.
+how long he hath worked at bar has mention-start-index 227.
+how long he hath worked at bar has mention-stop-index 227.
 what he thinks about the Bureau has mention-start-index 228.
 what he thinks about the Bureau has mention-stop-index 229.
 whether he hates customs officials has mention-start-index 230.

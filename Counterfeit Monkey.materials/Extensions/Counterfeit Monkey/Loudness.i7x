@@ -93,7 +93,7 @@ Array noisy_things --> 10;
 			i = MyFindNoiseMakerLoop(o.component_sibling, i);
 
 		! Don't look inside closed containers
-		if (child(o) &&  ~~(o has openable && o hasnt open) ) o = child(o);
+		if (child(o) && ~~(o has openable && o hasnt open) ) o = child(o);
 		else
 			while (o) {
 

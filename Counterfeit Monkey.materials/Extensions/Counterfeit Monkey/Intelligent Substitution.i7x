@@ -96,8 +96,8 @@ Include
 					score = score - 100;
 				}
 
-				!  The letter-remover is not upgraded to create this.
-				!  Don't choose this.
+				! The letter-remover is not upgraded to create this.
+				! Don't choose this.
 				if (contender ofclass (+ person +) && ~~(+ letter-remover +).(+ creature-enabled +))
 				{
 					score = score - 100;
