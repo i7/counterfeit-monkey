@@ -4,32 +4,40 @@
 
 ### Bugs fixed
 
-- The start up data embedded in the game file was bad in the two previous releases. The game will now print a warning at startup if it detects bad embedded data.
-- Run-time problem P10 would occur when trying to remove letters from the current room.
-- Lena would occasionally ask the player to change the modem although it was no longer present.
-- The fast travel GO TO command could be used to bypass the confrontation with Alex's father.
-- Typing EXAMINE DIRECTION and then answering the resulting "Which do you mean" question with a direction would cause run-time problem P10.
-- Run-time problem P60 would occur when using the soap dispenser after removing all sinks.
-- Turning on the tap while in a shower or bath would cause run-time problem P43 as the game attempted to move the player out of play. It was also possible to drop any objects in the bath or shower, and then remove them from play by turning on the tap. We fix this by simply no longer allowing the player to enter showers or baths, in the hope that nobody will miss this.
-- The first aid station was not fixed in place and could be picked up, while its description still said it was mounted to the wall.
+- Search engine descriptions were not shown for the e-book reader and the secretary's computer. (@Roachbones)
+- The sun wasn't distant but behaved as if sitting right next to you (@Roachbones).
+- With Andra in control, it was possible to get a reprise of Alex's hesitation speech by trying to go back in through the tall window, if you diregarded it the first time when going out. (@Roachbones)
+- Examining the word, the words, or the wordage could cause run-time problems. (@Roachbones)
+- The wordage description was broken since release 7.
+- The start up data embedded in the game file was bad in the two previous releases. The game will now print a warning at startup if it detects bad embedded data. (@hanna-kruppe)
+- Run-time problem P10 would occur when trying to remove letters from the current room. (@eriktorbjorn)
+- Lena would occasionally ask the player to change the modem when it is no longer present. (@eriktorbjorn)
+- The fast travel GO TO command could be used to bypass the confrontation with Alex's father (@DefKonOne).
+- Typing EXAMINE DIRECTION and then replying with a direction (such as NORTH) to the resulting "Which do you mean" disambiguation question would cause run-time problem P10.
+- Run-time problem P60 would occur when using the soap dispenser after removing all sinks. (@Stealthii)
+- Turning on the tap while in a shower or bath would cause run-time problem P43 as the game attempted to move the player out of play. It was also possible to drop any objects in the bath or shower, and then remove them from play by turning on the tap. We fix this by blocking entry into showers and baths. (@Roachbones).
+- The first aid station was not fixed in place and could be picked up, while its description still said it was mounted to the wall. (@lynn)
 
 ### Cosmetic output errors
 
-- The live branch was not mentioned in the description of the statue arm.
-- The inlaid desk was still referenced in certain messages after it was gone.
-- After shooting ourselves with the anagramming gun, the text would say that we return to "or original form" rather than "our".
-- Many more important things are now highlighted.
-- Fixes many unintended double spaces throughout the output text.
-- There would in some cases be a missing newline after the "Batman remark" at the end of the roundabout scene.
-- There would sometimes be an extra "I can't see what you're talking about" message when use of the letter-remover was attempted but disallowed.
+- The guidebook and the game blurb gave two different years as the liberation of Anglophone Atlantis. (@Roachbones)
+- The shred was anagrammed into a single herd rather than herds. (@Roachbones)
+- The live branch is now mentioned in the description of the statue arm.
+- The inlaid desk was still referenced in certain messages after it was gone. (@lynn)
+- After shooting ourselves with the anagramming gun, the text would say that we return to "or original form" instead of "our original form". (@lynn)
+- Taking the pill would print a message about tossing the pill into "our mouths" rather than "our mouth". (@Roachbones)
+- Many more important things are now highlighted. (@dfabulich, @eriktorbjorn)
+- Eliminates many unintended double spaces throughout the output text. (@Roachbones, @lynn)
+- There would in some cases be a missing newline after the "Batman remark" at the end of the roundabout scene. (@eriktorbjorn)
+- There would sometimes be a superfluous "I can't see what you're talking about" message when use of the letter-remover was attempted but disallowed. (@eriktorbjorn)
 
 ### Parsing
 
 - T INSERTER without a hyphen is now understood as the T-inserter.
 - The T-inserter can now be used by typing INSERT T IN (thing).
 - Things like REMIND MAN THAT MRS. ROSEHIP IS MARRIED would be understood as two different commands separated by a period. Periods after titles are now properly stripped from input.
-- DEMO is now understood as DEMONSTRATION.
-- Contractions such as WHAT'S, HE'S, and IT'S are understood.
+- DEMO is now understood as DEMONSTRATION. (@Stealthii)
+- Contractions such as WHAT'S, HE'S, and IT'S are understood. (@Stealthii)
 - Adds more synonyms to the "ask why he is here" quip for the gift shop volunteer. WHY ARE YOU HERE and ASK WHY HE IS THERE now work.
 
 ## Release 11
