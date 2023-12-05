@@ -41,8 +41,8 @@ Include (-
 -) after "Sort" in "Tables.i6t".
 
 To sort (T - table name) up to row (N - number) in (TC - table column) order
-        (documented at ph_sortcolumn):
-        (- TableSortPartial({T}, {N}, {TC}, 1); -).
+	(documented at ph_sortcolumn):
+	(- TableSortPartial({T}, {N}, {TC}, 1); -).
 
 [We have to clear these flags for every thing. It's worth having a routine that skips I7's usual SetEitherOrProperty() mechanism and all its safety checks.]
 To rapidly set all things not mentioned: (- OptimizedAllThingsUnsetMentioned(); -).
@@ -73,7 +73,7 @@ To set the/-- locale priority of (O - an object) to (N - a number):
 		let rownum be 0;
 		let blanknum be 0;
 		repeat with I running from 1 to locale-table-count:
-			let ent be the notable-object in row I of  the Table of Locale Priorities;
+			let ent be the notable-object in row I of the Table of Locale Priorities;
 			if ent is nothing:
 				if blanknum is 0:
 					now blanknum is I;
@@ -117,7 +117,7 @@ This is the optimized interesting locale paragraphs rule:
 	let the domain be the parameter-object;
 	sort the Table of Locale Priorities up to row locale-table-count in locale description priority order;
 	repeat with I running from 1 to locale-table-count:
-		let O be the notable-object in row I of  the Table of Locale Priorities;
+		let O be the notable-object in row I of the Table of Locale Priorities;
 		if O is not nothing:
 			carry out the printing a locale paragraph about activity with O;
 	continue the activity.
@@ -198,8 +198,8 @@ Include (-
 
 [ WriteListFrom first style depth noactivity iter i a ol;
 	@push c_iterator; @push c_style; @push c_depth; @push c_margin;
-    if (iter) c_iterator = iter; else c_iterator = ObjectTreeIterator;
-    c_style = style; c_depth = depth;
+	if (iter) c_iterator = iter; else c_iterator = ObjectTreeIterator;
+	c_style = style; c_depth = depth;
 	c_margin = 0; if (style & EXTRAINDENT_BIT) c_margin = 1;
 
 	! Set or clear the list_filter_permits flag. Try to do it efficiently.
@@ -228,12 +228,12 @@ Include (-
 		}
 	}
 
-    first = c_iterator(first, depth, 0, START_ITF);
+	first = c_iterator(first, depth, 0, START_ITF);
 	if (first == nothing) {
-       if (style & ISARE_BIT ~= 0) LIST_WRITER_INTERNAL_RM('W');
-        else LIST_WRITER_INTERNAL_RM('Y');
-        if (style & NEWLINE_BIT ~= 0) new_line;
-    } else {
+		if (style & ISARE_BIT ~= 0) LIST_WRITER_INTERNAL_RM('W');
+		else LIST_WRITER_INTERNAL_RM('Y');
+		if (style & NEWLINE_BIT ~= 0) new_line;
+	} else {
 		if ((noactivity) || (iter)) {
 			WriteListR(first, c_depth, true);
 			say__p = 1;
@@ -246,7 +246,7 @@ Include (-
 		}
 	}
 
-    @pull c_margin; @pull c_depth; @pull c_style; @pull c_iterator;
+	@pull c_margin; @pull c_depth; @pull c_style; @pull c_iterator;
 ];
 -) instead of "WriteListFrom" in "ListWriter.i6t".
 
@@ -265,8 +265,8 @@ Include (-
 	}
 
 	if (length == 0) {
-    	if (style & ISARE_BIT ~= 0) LIST_WRITER_INTERNAL_RM('W');
-    	else if (style & CFIRSTART_BIT ~= 0) LIST_WRITER_INTERNAL_RM('X');
+		if (style & ISARE_BIT ~= 0) LIST_WRITER_INTERNAL_RM('W');
+		else if (style & CFIRSTART_BIT ~= 0) LIST_WRITER_INTERNAL_RM('X');
 		else LIST_WRITER_INTERNAL_RM('Y');
 	} else {
 		@push MarkedObjectArray; @push MarkedObjectLength;
