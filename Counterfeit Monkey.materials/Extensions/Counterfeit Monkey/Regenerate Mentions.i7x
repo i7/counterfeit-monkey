@@ -198,7 +198,7 @@ The mentions-list of assure him that we seem not hitting on him is {yourself, ti
 The mentions-list of what his girlfriend seems like is {Romance, ticket-taker}.
 The mentions-list of delay ticket-taker is {Entertainment}.
 The mentions-list of where my backpack seems is {backpack}.
-The mentions-list of argue about  lost plus found policy is {yourself, backpack}.
+The mentions-list of argue about lost plus found policy is {yourself, backpack}.
 The mentions-list of demonstrate the lost backpack is {backpack}.
 The mentions-list of buy movie-ticket is {hidden-ticket}.
 The mentions-list of whether we can hath the scope is {Regulation Authentication Scope}.
@@ -273,7 +273,7 @@ The mentions-list of how one might go about winning is {Origin Paste}.
 The mentions-list of play the game is {Origin Paste, Entertainment}.
 The mentions-list of complain that the game seems unfair is {Origin Paste}.
 The mentions-list of whether he hath any other games going is {Origin Paste}.
-The mentions-list of how long he hath worked at  bar is {Employment}.
+The mentions-list of how long he hath worked at bar is {Employment}.
 The mentions-list of what he thinks about the Bureau is {Bureau, barman}.
 The mentions-list of whether he hates customs officials is {Immigration, barman, local-officials}.
 The mentions-list of whether he believes in god-2 is {Religion}.

@@ -199,49 +199,49 @@ Include (-
 !  If input has run out then always match, with only quality 0 (this saves
 !  time).
 
-	if (wn > WordCount()) {	! MODIFIED
+	if (wn > WordCount()) { ! MODIFIED
 		if (nomatch) return 0;
-	    if (indef_mode ~= 0)
-	        dict_flags_of_noun = $$01110000;  ! Reject "plural" bit
-	    MakeMatch(obj,0);
-	    #Ifdef DEBUG;
-	    if (parser_trace >= 5) print "    Matched (zero)^";
-	    #Endif; ! DEBUG
-	    return 1;
+		if (indef_mode ~= 0)
+			dict_flags_of_noun = $$01110000;  ! Reject "plural" bit
+		MakeMatch(obj,0);
+		#Ifdef DEBUG;
+		if (parser_trace >= 5) print "    Matched (zero)^";
+		#Endif; ! DEBUG
+		return 1;
 	}
 
 !  Ask the object to parse itself if necessary, sitting up and taking notice
 !  if it says the plural was used:
 
 	if (obj.parse_name~=0) {
-	    parser_action = NULL; j=wn;
-	    k = RunRoutines(obj,parse_name);
-	    if (k > 0) {
-	        wn=j+k;
+		parser_action = NULL; j=wn;
+		k = RunRoutines(obj,parse_name);
+		if (k > 0) {
+			wn=j+k;
 
-	      .MMbyPN;
+		  .MMbyPN;
 
-	        if (parser_action == ##PluralFound)
-	            dict_flags_of_noun = dict_flags_of_noun | 4;
+			if (parser_action == ##PluralFound)
+				dict_flags_of_noun = dict_flags_of_noun | 4;
 
-	        if (dict_flags_of_noun & 4) {
-	            if (~~allow_plurals) k = 0;
-	            else {
-	                if (indef_mode == 0) {
-	                    indef_mode = 1; indef_type = 0; indef_wanted = 0;
-	                }
-	                indef_type = indef_type | PLURAL_BIT;
-	                if (indef_wanted == 0) indef_wanted = INDEF_ALL_WANTED;
-	            }
-	        }
+			if (dict_flags_of_noun & 4) {
+				if (~~allow_plurals) k = 0;
+				else {
+					if (indef_mode == 0) {
+						indef_mode = 1; indef_type = 0; indef_wanted = 0;
+					}
+					indef_type = indef_type | PLURAL_BIT;
+					if (indef_wanted == 0) indef_wanted = INDEF_ALL_WANTED;
+				}
+			}
 
-	        #Ifdef DEBUG;
-	        if (parser_trace >= 5) print "    Matched (", k, ")^";
-	        #Endif; ! DEBUG
-	        if (nomatch == false) MakeMatch(obj,k);
-	        return k;
-	    }
-	    if (k == 0) jump NoWordsMatch;
+			#Ifdef DEBUG;
+			if (parser_trace >= 5) print "    Matched (", k, ")^";
+			#Endif; ! DEBUG
+			if (nomatch == false) MakeMatch(obj,k);
+			return k;
+		}
+		if (k == 0) jump NoWordsMatch;
 	}
 
 	! The default algorithm is simply to count up how many words pass the
@@ -256,9 +256,9 @@ Include (-
 	if (w >= 2 && w < 128 && (LanguagePronouns-->w == obj)) { k = 1; jump MMbyPN; }
 
 	if (Refers(obj, wn-1) == 0) {
-	    .NoWordsMatch;
-	    if (indef_mode ~= 0) { k = 0; parser_action = NULL; jump MMbyPN; }
-	    rfalse;
+		.NoWordsMatch;
+		if (indef_mode ~= 0) { k = 0; parser_action = NULL; jump MMbyPN; }
+		rfalse;
 	}
 
 	threshold = 1;
@@ -267,7 +267,7 @@ Include (-
 	while (Refers(obj, wn-1)) {
 		threshold++;
 		if (w)
-		   dict_flags_of_noun = dict_flags_of_noun | ((w->#dict_par1) & $$01110100);
+			dict_flags_of_noun = dict_flags_of_noun | ((w->#dict_par1) & $$01110100);
 		w = NextWord();
 	}
 
@@ -477,7 +477,7 @@ Test secondaries with "tutorial off / z / say hello / g / ask about paddle / say
 
 Table of Ultratests (continued)
 topic	stuff	setting
-"customer"	{ map-customer, papas }	Arbot
+"customer"	{ map-customer, papas } Arbot
 
 Test customer with "z / ask about maps / say hello to customer / ask customer about maps / say hello to papas / ask papas about maps" [holding the map-customer and the papas in Arbot.]
 

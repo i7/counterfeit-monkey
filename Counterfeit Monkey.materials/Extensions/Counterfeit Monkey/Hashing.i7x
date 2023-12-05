@@ -83,9 +83,9 @@ Include (-
 ];
 
 [ ShowLetterHash h i b;
-   for (i=0, b=1; i<26; i++, b=b*2) {
-      if (h&b) print "1"; else print "0";
-   }
+	for (i=0, b=1; i<26; i++, b=b*2) {
+		if (h&b) print "1"; else print "0";
+	}
 ];
 -);
 

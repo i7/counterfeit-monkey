@@ -122,34 +122,34 @@ The description of the art is "It's a very plausible copy of [one of]'Still Life
 The description of an as is "[one of]It appears to be an as, a [or]A [stopping]Roman coin of very low denomination[one of]. (Your knowledge, not mine. Should I ask how you know such things?)[or].[stopping] It is made of copper and has the letters S C stamped on one side." Understand "as/roman/coin/copper" as an as. The heft of an as is 1. The printed name of an as is "as". Understand "asses" as the plural of as.
 
 Instead of searching or looking under an as:
-    say "We inspect both obverse and reverse, but come away none the wiser."
+	say "We inspect both obverse and reverse, but come away none the wiser."
 Instead of buying an as:
-    say "We're much too late for speculation in this particular currency."
+	say "We're much too late for speculation in this particular currency."
 Instead of touching or squeezing or rubbing an as:
-    say "The metal surface is dull and weathered, skin-temperature, all smooth edges."
+	say "The metal surface is dull and weathered, skin-temperature, all smooth edges."
 
 Rule for initially listing contents:
-    initially group ases together.
+	initially group ases together.
 
 Rule for grouping together an as (called target):
-    say "[listing group size in words] asses";
-    let source be the holder of the target;
-    now every as held by the source is mentioned.
+	say "[listing group size in words] asses";
+	let source be the holder of the target;
+	now every as held by the source is mentioned.
 
 Does the player mean doing something to the as-coin when the subcommand of the as-coin matches "as":
-    it is likely.
+	it is likely.
 
 Does the player mean doing something to the as-coin when action requires a carried noun and the player does not carry the as-coin:
-    it is likely.
+	it is likely.
 
 Does the player mean taking the as-coin when the player carries the as-coin:
 	it is unlikely.
 
 Does the player mean doing something when the second noun is the as-coin and the subcommand of the as-coin matches "as":
-    it is likely.
+	it is likely.
 
 Does the player mean doing something when the second noun is the as-coin and action requires a carried second noun and the player does not carry the as-coin:
-    it is unlikely.
+	it is unlikely.
 
 The fake-as is an as.
 
@@ -635,13 +635,13 @@ Every turn (this is the advance clock rule):
 Understand "set [clock] to [time]" as setting it by time. Setting it by time is an action applying to one thing and one time.
 
 Instead of setting the clock to something:
-    say "[The noun] can be set only to a time of day, such as 8:00 AM, or midnight."
+	say "[The noun] can be set only to a time of day, such as 8:00 AM, or midnight."
 
 Carry out setting a clock by time:
-    now the current time of the noun is the time understood.
+	now the current time of the noun is the time understood.
 
 Report setting a clock by time:
-    say "[We] set [the noun] to [time understood]."
+	say "[We] set [the noun] to [time understood]."
 
 
 A cluck is an r-abstract noisy thing. The heft of the cluck is 0. The description of the cluck is "Genuine barnyard stuff, it sounds like."

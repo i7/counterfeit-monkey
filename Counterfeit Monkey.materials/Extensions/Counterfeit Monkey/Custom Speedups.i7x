@@ -78,7 +78,7 @@ Include (-
 				MarkContentsVisible(o.component_sibling);
 
 			! Don't look inside closed opaque containers
-			if (child(o) &&  ~~((o has openable && o hasnt open) && o hasnt transparent))
+			if (child(o) && ~~((o has openable && o hasnt open) && o hasnt transparent))
 				o = child(o);
 			else
 				while (o) {
@@ -104,7 +104,7 @@ Include (-
 				MarkContentsInvisible(o.component_sibling);
 
 			! Don't look inside closed opaque containers
-			if (child(o) &&  ~~((o has openable && o hasnt open) && o hasnt transparent))
+			if (child(o) && ~~((o has openable && o hasnt open) && o hasnt transparent))
 				o = child(o);
 			else
 				while (o) {
@@ -148,7 +148,7 @@ Include (-
 
 
 			! Don't look inside people or vehicles containing the player
-			if (child(o) &&  ~~(o ofclass (+ person +) || ( o ofclass (+ vehicle +) && o == parent(player))) ) o = child(o);
+			if (child(o) && ~~(o ofclass (+ person +) || ( o ofclass (+ vehicle +) && o == parent(player))) ) o = child(o);
 			else
 				while (o) {
 
@@ -200,7 +200,7 @@ Include (-
 				i = FindVisibleThing(o.component_sibling, i);
 
 			! Don't look inside closed opaque containers or the backpack
-			if (child(o) &&  ~~(o has openable && (o hasnt open && (o hasnt transparent || o == (+ the backpack +) )))) o = child(o);
+			if (child(o) && ~~(o has openable && (o hasnt open && (o hasnt transparent || o == (+ the backpack +) )))) o = child(o);
 			else
 				while (o) {
 					if (sibling(o)) { o = sibling(o); break; }

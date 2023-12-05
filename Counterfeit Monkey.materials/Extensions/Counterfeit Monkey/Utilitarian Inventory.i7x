@@ -275,9 +275,9 @@ Include (-
 				((+ Table of Inventory Ordering +)-->col)-->(i+COL_HSIZE) = TABLE_NOVALUE;
   	}
 
-  	! if we found no value, return nothing.
-  	if (v == TABLE_NOVALUE) return nothing;
-  	else return v;
+	! if we found no value, return nothing.
+	if (v == TABLE_NOVALUE) return nothing;
+	else return v;
 ];
 
 -).
@@ -295,8 +295,8 @@ Include (-
 [ IsInventoryListable p par prop;
 	if (p == (+ restoration gel +) or nothing) rfalse; ! It is the restoration gel
 	if (p provides component_parent && p.component_parent) rfalse; ! It is part of something
-  	par = parent(p);
-  	if (par ~= (+ player +) && par ~= nothing && par has animate) rfalse; ! It is worn by an animal
+	par = parent(p);
+	if (par ~= (+ player +) && par ~= nothing && par has animate) rfalse; ! It is worn by an animal
 	rtrue;
 ];
 

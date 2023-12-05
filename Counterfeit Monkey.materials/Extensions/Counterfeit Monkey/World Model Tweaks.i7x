@@ -191,9 +191,9 @@ This is the sanity-check stage rule:
 The sanity-check stage rule is listed before the before stage rule  in the action-processing rules.
 
 To decide whether (item - a thing) must be touched:
-    if the item is the noun and the action requires a touchable noun, yes;
-    if the item is the second noun and the action requires a touchable second noun, yes;
-    no.
+	if the item is the noun and the action requires a touchable noun, yes;
+	if the item is the second noun and the action requires a touchable second noun, yes;
+	no.
 
 An accessibility rule (this is the no touching NPC stuff rule):
 	if the touch-goal is enclosed by someone (called the owner) who is not the actor and the touch-goal must be touched:

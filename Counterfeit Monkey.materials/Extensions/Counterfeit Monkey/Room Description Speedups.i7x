@@ -102,7 +102,7 @@ Include (-
 ];
 
 [ HasLightSource i;
-    rtrue;
+	rtrue;
 ];
 
 [ ComponentHasLight o;
@@ -110,7 +110,7 @@ Include (-
 ];
 
 [ HidesLightSource obj;
-    rfalse;
+	rfalse;
 ];
 
 -) instead of "Light Measurement" in "Light.i6t".
@@ -129,8 +129,8 @@ Include (-
 Include (-
 
 [ SilentlyConsiderLight;
-    lightflag = true;
-    location = real_location;
+	lightflag = true;
+	location = real_location;
 	rfalse;
 ];
 

@@ -205,9 +205,9 @@ Points (a number)	Citation (some text)	Time (a time)
 15	"returning to the yacht"
 
 To record (T - text) as achieved:
-    choose row with a citation of T in the Table of Tasks Achieved;
-    if there is no time entry begin;
-        now time entry is the time of day;
+	choose row with a citation of T in the Table of Tasks Achieved;
+	if there is no time entry begin;
+		now time entry is the time of day;
 		increase score by points entry;
 	end if.
 

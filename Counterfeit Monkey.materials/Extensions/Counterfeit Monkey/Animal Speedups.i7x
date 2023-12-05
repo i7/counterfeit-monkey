@@ -55,7 +55,7 @@ Include
 	];
 
 	[ MyFakePeopleGoing room dir traveler last;
-        LIST_OF_TY_SetLength((+ incoming-list +), 0, -1, 1);
+		LIST_OF_TY_SetLength((+ incoming-list +), 0, -1, 1);
 		for (traveler = child(room): traveler : traveler = last) {
 			last = sibling(traveler);
 			if (traveler ofclass (+ person +) && traveler.(+ fake +) && traveler ~= (+ roc +))
