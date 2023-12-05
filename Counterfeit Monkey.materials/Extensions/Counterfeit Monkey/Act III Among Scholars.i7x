@@ -22,7 +22,7 @@ Long Street North is a proper-named and southern road. Understand "long street n
 
 Some anemic palm trees are a backdrop. They are in Long Street North and Long Street South. The description is "The only foliage comes in a clump high above. The effect is distorted and unnatural, and I say that having lived with them all my life. They are trees in the same sense that ostriches are birds." The printed name is "an[ae]mic palm trees". Understand "palms" or "anaemic" as the anemic palm trees.
 
-South of Long Street North is Long Street South. Long Street South is a  proper-named southern road. Understand "long street s" as Long Street South. The description is "Long Street is lined on each side with a double-row of tall, an[ae]mic palm trees that bend towards one another many feet overhead. [We] are now in the southern part of this long corridor, between the Canadian Embassy and Arbot Maps & Antiques."
+South of Long Street North is Long Street South. Long Street South is a proper-named southern road. Understand "long street s" as Long Street South. The description is "Long Street is lined on each side with a double-row of tall, an[ae]mic palm trees that bend towards one another many feet overhead. [We] are now in the southern part of this long corridor, between the Canadian Embassy and Arbot Maps & Antiques."
 
 The Canadian Embassy is a facade in Long Street South. It fronts east. It is scenery. The description is "The embassy is the largest foreign embassy here: Canadians do a lot of business with Atlantis, but the Québécois require special permission to enter, so there's a call for substantial clerical work. The building is a solid 1960s block in concrete with slit-shaped windows." Understand "concrete" or "windows" or "solid" or "block" or "slit-shaped" or "slit" or "window" or "slit shaped" or "slits" as the Canadian Embassy.
 
@@ -55,14 +55,14 @@ After going to Arbot Maps & Antiques:
 		say "The woman watching over the store stops you. 'I'm sorry,' she says. 'We are only open to those who have made previous visiting arrangements.' And we're shooed back out.";
 		move the player to Long Street South, without printing a room description.
 
-Arbot Maps & Antiques is west of Long Street South. It is indoors, checkpoint and southern. Understand "shop" or "store" or "antique" as Arbot Maps &  Antiques.
+Arbot Maps & Antiques is west of Long Street South. It is indoors, checkpoint and southern. Understand "shop" or "store" or "antique" as Arbot Maps & Antiques.
 
 Out-direction of Arbot Maps & Antiques is east. [Long Street South]
 
 Instead of smelling Arbot Antiques:
 	say "The place smells of fresh coffee and old paper."
 
-The maps collection is a thing in Arbot Maps & Antiques. Understand "large" or "collection" or "of" or "antique" or "under glass" or "street maps" or "maiana" or "navigation" or "distant places" or "charts" or "island" or  "topography" as the maps collection. It is fixed in place. The printed name is "[if looking]collection[otherwise]maps collection[end if]". The initial appearance is "There is a large [maps collection] of vintage and antique maps under glass [--] the island of Atlantis as a whole, street maps of here and of Maiana, navigation maps of the harb[our], and then maps of more distant places as well."
+The maps collection is a thing in Arbot Maps & Antiques. Understand "large" or "collection" or "of" or "antique" or "under glass" or "street maps" or "maiana" or "navigation" or "distant places" or "charts" or "island" or "topography" as the maps collection. It is fixed in place. The printed name is "[if looking]collection[otherwise]maps collection[end if]". The initial appearance is "There is a large [maps collection] of vintage and antique maps under glass [--] the island of Atlantis as a whole, street maps of here and of Maiana, navigation maps of the harb[our], and then maps of more distant places as well."
 	The description of the maps collection is "[We] pore over a map of [one of]the Old City when the walls were still intact, as reconstructed from archaeological surveys[or]forbidden dig zones in Atlantis[or]bus routes between here and Maiana ca. 1973[or]island topography as measured in 1910[or]1880 shipping lines between Atlantis, Gibraltar, and points east[at random]."
 
 Instead of examining the maps collection when the Slangovia map is unseen:
@@ -166,7 +166,7 @@ The spotlights are a scenery thing in the Fleur d'Or Lobby. Understand "spotligh
 Rule for listing exits when looking in Fleur d'Or Lobby:
 	do nothing instead.
 
-A piano is a fixed in place instrument in the Fleur d'Or Lobby.  The initial appearance is "[if the player is on the piano-bench]We're seated at a handsome piano in the corner[else]There is no one at the glossy [piano] in the corner[end if]." The description is "A glossy grand, probably worthy of better than bar music." Understand "keys" or "keyboard" as the piano.
+A piano is a fixed in place instrument in the Fleur d'Or Lobby. The initial appearance is "[if the player is on the piano-bench]We're seated at a handsome piano in the corner[else]There is no one at the glossy [piano] in the corner[end if]." The description is "A glossy grand, probably worthy of better than bar music." Understand "keys" or "keyboard" as the piano.
 
 The piano-bench is an enterable scenery supporter. It allows seated. [The piano-bench is part of the piano.] The piano-bench is in the Fleur d'Or Lobby. The printed name is "piano bench". Understand "bench" or "piano bench" as the piano-bench. The description of the piano-bench is "Lightly padded and made of the same wood as the piano itself."
 
@@ -199,7 +199,7 @@ Report performing the piece on an instrument which is not the oboe:
 Report performing something on an instrument which is not the oboe:
 	say "We pick out [one of]some vaguely remembered commercial jingles from your childhood[or]a church hymn you heard a lot in your youth[or]my mother's fav[our]ite Atlantean folk tune[at random]." instead.
 
-Check  improvising the topic understood on the piano when the player is not on the piano-bench:
+Check improvising the topic understood on the piano when the player is not on the piano-bench:
 	try entering the piano-bench;
 
 Report improvising a topic listed in the Table of Musical Styles on the piano:
@@ -319,7 +319,7 @@ After printing the name of the patron while writing a topic sentence about the b
 
 [Understand "play [piano]" as a mistake ("[one of]I have no skill in that department[or]I don't play[or]I don't think we want to attract attention with a jangly performance, thanks[at random].").
 
-Understand "play [text]" as a mistake ("[one of]I have no skill in that department[or]I don't play[or]I don't think we want to attract attention with a jangly performance, thanks[at random].")  when the player can see the piano. ]
+Understand "play [text]" as a mistake ("[one of]I have no skill in that department[or]I don't play[or]I don't think we want to attract attention with a jangly performance, thanks[at random].") when the player can see the piano. ]
 
 Part 2 - Student Quarters
 
@@ -517,7 +517,7 @@ The description of the nightstand is "It is wobbly, scratched, and chipped, whic
 
 Instead of inserting something into the nightstand, say "[The nightstand] doesn't have a drawer."
 
-The key is a passkey on the nightstand. It unlocks the apartment door. The heft of the key is 1.  The description is "It's made of an extremely ordinary blank.". The key unbolts the apartment door. The indefinite article of the key is "a".
+The key is a passkey on the nightstand. It unlocks the apartment door. The heft of the key is 1. The description is "It's made of an extremely ordinary blank.". The key unbolts the apartment door. The indefinite article of the key is "a".
 
 Test key-article with "i" holding the key.
 
@@ -575,7 +575,7 @@ When play begins (this is the setting up my apartment rule):
 Test sink-kitchen with "X KITCHEN / WAVE S-REMOVER AT SINK / X KITCHEN" in My Apartment.
 
 
-Studies Primary Language Acquisition is a book in My Apartment.  Journal of Third-World Economics is a book in My Apartment.
+Studies Primary Language Acquisition is a book in My Apartment. Journal of Third-World Economics is a book in My Apartment.
 
 The printed name of Studies Primary Language Acquisition is "Studies in Primary Language Acquisition". Understand "studies in" as Studies Primary Language Acquisition.
 
@@ -590,7 +590,7 @@ A pot-of-yogurt is an edible thing. The printed name is "yogurt". Understand "yo
 Rule for printing the name of the pot-of-yogurt when the player wears the Britishizing goggles:
 	say "yoghurt".
 
-Test yogurtbug with "tutorial off /  x yogurt / x yoghurt" holding the pot-of-yogurt.
+Test yogurtbug with "tutorial off / x yogurt / x yoghurt" holding the pot-of-yogurt.
 
 A futon is a clothed bed. The futon is in My Apartment. The description of the futon is "Strictly speaking, more of a futon mattress. It doesn't have a frame." The flexible appearance is "My [futon] is on the floor in the opposite corner. ".
 
@@ -808,7 +808,7 @@ Out-direction of Samuel Johnson Hall is north. [To University oval]
 Rule for listing exits while looking in Samuel Johnson Hall:
 	do nothing instead.
 
-The framed photograph of Waterstone is a thing in Samuel Johnson Hall. It is fixed in place. The initial appearance is "On the wall hangs a [photograph of Waterstone], with the words SHAPLY CHAIR in big letters underneath."  Understand "photo" or "picture" or  "professor" or "frame" as the framed photograph.
+The framed photograph of Waterstone is a thing in Samuel Johnson Hall. It is fixed in place. The initial appearance is "On the wall hangs a [photograph of Waterstone], with the words SHAPLY CHAIR in big letters underneath." Understand "photo" or "picture" or "professor" or "frame" as the framed photograph.
 	The printed name is "framed photograph of Professor Waterstone".
 	The description is "The Shaply Chair is not named after the famous suffragette Phyllida Shaply, but after her considerably less famous or interesting descendant Lawrence Shaply, who was well-placed within Dental Consonants Ltd. when it started up and subsequently had buckets of money with which to endow university chairs.
 
@@ -818,7 +818,7 @@ This may explain the particularly expansive grin on Waterstone's face in this im
 
 Section 3 - Seminar Room
 
-Southwest of Samuel Johnson Hall is the seminar door. The seminar door is a closed lockable locked door.  The seminar door is scenery. The description of the seminar door is "It's sturdy, because sometimes valuable equipment is stored in the room beyond. That room also contains the library of department books, a set of research materials kept on hand so that people don't have to go over to the university library to double-check basic data during a discussion."
+Southwest of Samuel Johnson Hall is the seminar door. The seminar door is a closed lockable locked door. The seminar door is scenery. The description of the seminar door is "It's sturdy, because sometimes valuable equipment is stored in the room beyond. That room also contains the library of department books, a set of research materials kept on hand so that people don't have to go over to the university library to double-check basic data during a discussion."
 
 Southwest of the seminar door is Language Studies Seminar Room. The description of the Language Studies Seminar Room is "They recently redid this room, and whoever picked the decorations had postmodern tastes." The Language Studies Seminar Room is indoors, checkpoint, improper-named and southern.
 
@@ -832,7 +832,7 @@ After looking in the Language Studies Seminar Room when the seminar door is open
 
 The LSR chair is a chair in The Language Studies Seminar Room. The printed name of the LSR chair is "chair". The LSR chair is not scenery. The LSR chair is portable.
 
-Before going from the Language Studies Seminar Room when the player carries  Problem of Adjectives:
+Before going from the Language Studies Seminar Room when the player carries Problem of Adjectives:
 	try putting Problem of Adjectives on the LSR bookcase.
 
 Carry out putting Problem of Adjectives on the LSR Bookcase:
@@ -843,7 +843,7 @@ Carry out putting Problem of Adjectives on the LSR Bookcase:
 
 The LSR bookcase is a supporter in the Language Studies Seminar Room. The initial appearance is "The bookshelves lining the walls contain the department library." The description is "Built in and sturdily made." The printed name is "bookshelf". Understand "shelf" or "shelves" or "bookshelf" as the LSR bookcase.
 
-The big table is a supporter in the Language Studies Seminar Room.  "The [big table] at the cen[ter] of the room is an irregular polygon[if the LSR chair is in location and the LSR chair is not handled], with one [LSR chair] pushed up to the shortest side[end if]."
+The big table is a supporter in the Language Studies Seminar Room. "The [big table] at the cen[ter] of the room is an irregular polygon[if the LSR chair is in location and the LSR chair is not handled], with one [LSR chair] pushed up to the shortest side[end if]."
 	The introduction is "I think the shape is intended to undermine traditional conceptions of academic hierarchy, but in practice it just means that whoever gets to seminar late has to sit with a table angle jabbing him in the stomach."
 	The description is "Crafted from some exotic wood with lots of interesting burl structure. There was a wealthy donor behind the construction of this room."
 	Understand "polygon" as the big table.
@@ -1292,7 +1292,7 @@ Definition: a thing is Waterstone-inspiring:
 		yes;
 	no.
 
-[It is confusing if Watersone looks at the player's belongings before we even know that he is looking for anything. So we use a fact, homonym-shame-wanted, to check whether the player knows about the puzzle. This will be set to known if we have read the draft document, if we have already tried to show or give something to Waterstone, or simply by  knocking on his door after having been thrown out the first time.]
+[It is confusing if Watersone looks at the player's belongings before we even know that he is looking for anything. So we use a fact, homonym-shame-wanted, to check whether the player knows about the puzzle. This will be set to known if we have read the draft document, if we have already tried to show or give something to Waterstone, or simply by knocking on his door after having been thrown out the first time.]
 
 Instead of knocking on office-door-1 when Professor Waterstone is on a chair and office-door-1 is closed and the location is Language Studies Department Office:
 	if the player does not know homonym-shame-wanted:
@@ -1642,7 +1642,7 @@ The reclamation computer is running a password-lock program called reclamation s
 
 The reclamation computer is running an enumerated multiple-choice program called the reclamations operation program.
 	The options table of the reclamations operation program is the table of deeds.
-	The description of the reclamations operation program  is "At the top of the screen is the message STATUS: [if the reclamation machine is closed and the reclamation machine is limit-replacing]STANDBY[otherwise if reclamation machine is abstract-removing]REMOVING ABSTRACTION LIMITS[otherwise if reclamation machine is abstract-replacing]RESTORING ABSTRACTION LIMITS[otherwise if the reclamation machine is limit-replacing]RESTORING LEGAL LIMITS ON ANIMAL-CREATION[otherwise]REMOVING LEGAL LIMITS ON ANIMAL-CREATION[end if].
+	The description of the reclamations operation program is "At the top of the screen is the message STATUS: [if the reclamation machine is closed and the reclamation machine is limit-replacing]STANDBY[otherwise if reclamation machine is abstract-removing]REMOVING ABSTRACTION LIMITS[otherwise if reclamation machine is abstract-replacing]RESTORING ABSTRACTION LIMITS[otherwise if the reclamation machine is limit-replacing]RESTORING LEGAL LIMITS ON ANIMAL-CREATION[otherwise]REMOVING LEGAL LIMITS ON ANIMAL-CREATION[end if].
 
 [options-list of the item described]".
 

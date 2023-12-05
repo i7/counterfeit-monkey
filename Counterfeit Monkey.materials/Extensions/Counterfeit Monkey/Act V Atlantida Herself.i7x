@@ -235,7 +235,7 @@ The surveillance room description is intentionally kept very brief as a partial 
 
 The Surveillance Room is east of the Oracle Project. It is indoors.
 
-The surveillance computer is a desktop computer in the Surveillance Room. It is fixed in place.  The initial appearance is "A [surveillance computer] is mounted on the wall, an impressive flat screen readout[if the surveillance computer is switched on] displaying current activity[otherwise] presently blacked out[end if]." The surveillance computer is switched on.
+The surveillance computer is a desktop computer in the Surveillance Room. It is fixed in place. The initial appearance is "A [surveillance computer] is mounted on the wall, an impressive flat screen readout[if the surveillance computer is switched on] displaying current activity[otherwise] presently blacked out[end if]." The surveillance computer is switched on.
 	The description of the surveillance computer is "Below the flat screen are a keyboard and mouse, both shiny silver. Only top of the line equipment down here, it seems."
 
 Understand "flat" or "screen" or "readout" as the surveillance computer's screen. The description of the surveillance computer's screen is "It is bigger than my parent's television, and that is saying something."
@@ -733,7 +733,7 @@ topic	title	data
 "biography" or "phyllida" or "shaply" or "marcus" or "aurelius" or "churchill" or "winston" or "margaret" or "thatcher" or "martin" or "luther" or "king" or "nelson" or "mandela"	"biographies"	"The collection includes four different biographies of Phyllida Shaply; numerous lives of her contemporaries; and then a bizarrely diverse coverage of saints and villains, ancient and recent figures. Marcus Aurelius appears, as do Winston Churchill and Margaret Thatcher, Martin Luther King and Nelson Mandela."
 "economy/economics/macroeconomics"	"books on the economy"	"Several impressive-looking textbooks on macroeconomics are listed, though from the bookmarks it is clear that the owner has not been able to get all the way through them."
 
-The tall window is a transparent door. The initial appearance is "A window in the north wall, cut out through the cliff face, gives a view of [if the current daytime is sunset]the ocean in fading sunlight[otherwise if the current daytime is evening]tranquil sea under a darkening sky[otherwise]brilliant sunlight and the hot sea[end if]."   It is north of Private Solarium and south of the Precarious Perch.
+The tall window is a transparent door. The initial appearance is "A window in the north wall, cut out through the cliff face, gives a view of [if the current daytime is sunset]the ocean in fading sunlight[otherwise if the current daytime is evening]tranquil sea under a darkening sky[otherwise]brilliant sunlight and the hot sea[end if]." It is north of Private Solarium and south of the Precarious Perch.
 
 The description of the tall window is "[if the tall window is open]The window stands open.[else]The window is closed.[end if]".
 
@@ -768,7 +768,7 @@ Instead of going through the closed tall window:
 	say "The window is shut: you'd break the glass."
 
 
-Official Grounds is a region. The Antechamber, Rotunda, Tools Exhibit, All-Purpose Office, Bureau Hallway, Bureau Basement South, Bureau Basement Middle, Bureau Basement Secret Section, Wonderland, and Sensitive Equipment Testing Room, Equipment Archive, Cold Storage,  Display Reloading Room, Workshop, Generator Room, Surveillance Room, and Oracle Project are in the Official Grounds.
+Official Grounds is a region. The Antechamber, Rotunda, Tools Exhibit, All-Purpose Office, Bureau Hallway, Bureau Basement South, Bureau Basement Middle, Bureau Basement Secret Section, Wonderland, and Sensitive Equipment Testing Room, Equipment Archive, Cold Storage, Display Reloading Room, Workshop, Generator Room, Surveillance Room, and Oracle Project are in the Official Grounds.
 
 The Antechamber, All-Purpose Office, Bureau Hallway, Bureau Basement South, Bureau Basement Middle, Bureau Basement Secret Section [, Wonderland, Display Reloading Room, Oracle Project, Workshop, Equipment Archive, and Cold Storage] are privately-controlled.
 
@@ -1070,7 +1070,7 @@ The aft is a direction. The aft has opposite fore. Understand "a" or "af" as aft
 
 The aft-port is a direction. The aft-port has opposite fore-starboard. It is nautical-directional. Understand "pa" or "ap" as aft-port when the location is nautical.
 
-The aft-starboard is a direction. It is nautical-directional.  The aft-starboard has opposite fore-port. Understand "sa" or "as" or "asb" as aft-starboard when the location is nautical.
+The aft-starboard is a direction. It is nautical-directional. The aft-starboard has opposite fore-port. Understand "sa" or "as" or "asb" as aft-starboard when the location is nautical.
 
 The fore-port is a direction. It is nautical-directional. The fore-port has opposite aft-starboard. Understand "pf" or "fp" as fore-port when the location is nautical.
 
@@ -1136,7 +1136,7 @@ In-direction of Navigation Area is down. [Into galley]
 Rule for writing a paragraph about Slango when Slango is on the Command Chair:
 	say "Slango is in [the command chair]. He looks more relaxed driving the boat than I've ever seen him before."
 
-The steep staircase top is a down-staircase. It is in the Navigation Area. It fronts down. The description is "The steps are taller than is really quite comfortable.".  The printed name is "steep staircase". Understand "ladder" as the steep staircase top.
+The steep staircase top is a down-staircase. It is in the Navigation Area. It fronts down. The description is "The steps are taller than is really quite comfortable.". The printed name is "steep staircase". Understand "ladder" as the steep staircase top.
 
 The steep staircase bottom is an up-staircase. It fronts up. It is in the Galley. The description is "The stairs ascend to the navigation area on deck." The printed name is "steep staircase". Understand "ladder" as the steep staircase bottom.
 
@@ -1148,7 +1148,7 @@ The Foredeck is fore from the Navigation Area. It is nautical and forbidden. The
 
 In-direction of Foredeck is down. [Into crew cabin]
 
-Some portholes are a kind of thing. Portholes are usually scenery. The description of the portholes is usually "Perhaps I should drop any attempt to sound nautical and just call them windows, because they are not the round things one normally thinks of. But they are waterproof and just above the water line."  Understand "window" or "windows" or "porthole" or "portholes" as portholes. The printed name of portholes is always "portholes".
+Some portholes are a kind of thing. Portholes are usually scenery. The description of the portholes is usually "Perhaps I should drop any attempt to sound nautical and just call them windows, because they are not the round things one normally thinks of. But they are waterproof and just above the water line." Understand "window" or "windows" or "porthole" or "portholes" as portholes. The printed name of portholes is always "portholes".
 
 Instead of searching portholes:
 	say "It's hard to get much of a view, just the glimmering and rolling of the water surface."
@@ -1269,7 +1269,7 @@ Instead of inserting something into a freezer compartment:
 
 Section 6 - Brock's Stateroom
 
-Brock's Stateroom is fore from the Galley. It is nautical and forbidden.  It is indoors. The description is "Bigger than your bunk or Slango's, Brock's space takes the whole width of the yacht here, with windows out both sides, and a double bed.
+Brock's Stateroom is fore from the Galley. It is nautical and forbidden. It is indoors. The description is "Bigger than your bunk or Slango's, Brock's space takes the whole width of the yacht here, with windows out both sides, and a double bed.
 
 The shape of hull in this part of the yacht means that the room is much narrower fore than aft, the walls sweeping grandly outward from the head of [Brock's bed]. It looks like the bed of Captain Horndog, Space Woman[ize]r. If you ask me."
 
@@ -1354,7 +1354,7 @@ Some front portholes are portholes. They are in Brock's Stateroom.
 
 Section 7 - Brock's Head
 
-Brock's Head is aft-port from Brock's Stateroom. It is nautical and forbidden.  It is indoors.  It is a bathroom. The description is "Brock has gotten the best accommodations in this respect as well: his bathroom is less cramped than the others aboard, and the mirror is bigger."
+Brock's Head is aft-port from Brock's Stateroom. It is nautical and forbidden. It is indoors. It is a bathroom. The description is "Brock has gotten the best accommodations in this respect as well: his bathroom is less cramped than the others aboard, and the mirror is bigger."
 
 Instead of going starboard in Brock's Head:
 	try going fore-starboard.
@@ -1364,7 +1364,7 @@ Instead of going fore in Brock's Head:
 
 Section 8 - Your Bunk
 
-Your Bunk is aft-starboard from the Galley.  It is nautical and forbidden.  It is indoors. The description is "Amazing: it's even tinier than my apartment, and the bed isn't even a twin in width. Across from the bed is a built-in [bench], with [random portholes] above, just at the waterline."
+Your Bunk is aft-starboard from the Galley. It is nautical and forbidden. It is indoors. The description is "Amazing: it's even tinier than my apartment, and the bed isn't even a twin in width. Across from the bed is a built-in [bench], with [random portholes] above, just at the waterline."
 
 Out-direction of Your bunk is fore-port. [Back to galley]
 
@@ -1384,7 +1384,7 @@ Your wardrobe contains a sundress, a black turtleneck, some trousers, and a swim
 	The sundress, black turtleneck, trousers, and swimsuit are wearable.
 	The description of the sundress is "Bought during a vacation in Nauplia. It was tempting to look like the other tourists. And why not?" The sundress covers the torso-area.
 	The description of the black turtleneck is "It averts attention and is useful on jobs." The turtleneck covers the torso-area.
-	The description of the trousers is "Close-fitting and dark col[our]ed, useful to wear when going places sneakily by night."  The trousers cover the legs-area.
+	The description of the trousers is "Close-fitting and dark col[our]ed, useful to wear when going places sneakily by night." The trousers cover the legs-area.
 	The description of the swimsuit is "Often the only form of exercise available is swimming off the back of the True Macaque, and Slango insists that you and Brock do this daily if on-shore forms of exertion are not available. It's a one-piece suit, meant for function rather than show." The swimsuit covers the torso-area.
 
 Sanity-check wearing the sundress:
@@ -1425,11 +1425,11 @@ Instead of going fore in Your Bunk:
 
 Section 10 - Your Head
 
-Your Head is aft from Your Bunk. It is nautical and forbidden. It is a bathroom.  It is indoors. The description is "All the absolutely required amenities of a bathroom, packed into the least possible space. The international space station assigns more room to the bathroom functions."
+Your Head is aft from Your Bunk. It is nautical and forbidden. It is a bathroom. It is indoors. The description is "All the absolutely required amenities of a bathroom, packed into the least possible space. The international space station assigns more room to the bathroom functions."
 
 Section 11 - Slango's Bunk
 
-Slango's Bunk is aft-port from the Galley.  It is nautical and forbidden.  It is indoors. The description is "Just as tiny as yours, with a bed narrower than a standard twin, and its own miniature head, and drawers cunningly fitted under the bed to hold clothing and other necessities."
+Slango's Bunk is aft-port from the Galley. It is nautical and forbidden. It is indoors. The description is "Just as tiny as yours, with a bed narrower than a standard twin, and its own miniature head, and drawers cunningly fitted under the bed to hold clothing and other necessities."
 
 Out-direction of Slango's bunk is fore-starboard. [Back to galley]
 

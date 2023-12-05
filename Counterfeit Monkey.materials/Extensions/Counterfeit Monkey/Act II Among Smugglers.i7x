@@ -218,7 +218,7 @@ Definition: a thing is disguisable:
 		yes;
 	if it is proffered by the modems:
 		yes;
-	if it is proffered by  the preamps:
+	if it is proffered by the preamps:
 		yes;
 	no.
 
@@ -674,7 +674,7 @@ Check waving the letter-remover at the tattoos:
 Some tattoos are part of the clientele. The description of the tattoos is "[one of]One says I HEART MA[or]One is a detailed rendering of scenes from Brooklyn[or]One looks like an Elder Sign[at random]."
 
 The clientele is a person in Counterfeit Monkey. The initial appearance is "[The clientele] is keeping [the barman] thoroughly busy."
-	The description of the clientele is "A nasty-looking bunch. They can be good enough if you're on the right side of them, but getting and staying that way isn't easy. And they're justly suspicious: the customs house not infrequently tries to infiltrate the criminal organ[ization]s and brotherhoods, though with no great success." Understand "crowd" or "players" or "player" or "customers" or "customer" or  "guys" or "people" or "guy" as the clientele.
+	The description of the clientele is "A nasty-looking bunch. They can be good enough if you're on the right side of them, but getting and staying that way isn't easy. And they're justly suspicious: the customs house not infrequently tries to infiltrate the criminal organ[ization]s and brotherhoods, though with no great success." Understand "crowd" or "players" or "player" or "customers" or "customer" or "guys" or "people" or "guy" as the clientele.
 
 After reading a command when location is Counterfeit Monkey (this is the replace men with clientele rule):
 	while the player's command includes "men":
@@ -695,7 +695,7 @@ Instead of saying hello to the clientele:
 	say "They're... busy. At best interrupting them would interrupt their code, and at worst it would make them think [we] [are] a Bureau agent."
 	[say "At the moment they aren't harassing us, but there's no reason to get their attention. After all, it took plenty of work to get their respect the first time out, and we don't have the time now to earn it again."]
 
-The bar-top is a supporter in Counterfeit Monkey. It is scenery. Understand "counter" or  "bar" as the bar-top. The printed name of the bar-top is "bar". The description is "Kept scrupulously clean, whatever you might say about the rest of the place."
+The bar-top is a supporter in Counterfeit Monkey. It is scenery. Understand "counter" or "bar" as the bar-top. The printed name of the bar-top is "bar". The description is "Kept scrupulously clean, whatever you might say about the rest of the place."
 
 To summon Slango:
 	move Slango to the Counterfeit Monkey;
@@ -1149,7 +1149,7 @@ The description of the stuffed octopus is "Slightly wrong, actually, but I suppo
 This one has been tied to Atlantida's hand alongside the [end if][if the stuffed octopus is on the giant Atlantida statue and the olive branch is on the huge-metal-arm][olive branch] she traditionally carries[end if][if the stuffed octopus is on the giant Atlantida statue and the live branch is on the huge-metal-arm][live branch] she untraditionally carries[end if]."
 
 
-Some traffic-island-protesters are a plural-named man. The printed name is "protesters".  Understand "protesters" or "crowd" as the traffic-island-protesters. The initial appearance is "Protesters clog the street and sit or stand around the base of the statue."
+Some traffic-island-protesters are a plural-named man. The printed name is "protesters". Understand "protesters" or "crowd" as the traffic-island-protesters. The initial appearance is "Protesters clog the street and sit or stand around the base of the statue."
 
 The All-Purpose-Officer is a privately-named man in Traffic Circle. The printed name is "All-Purpose Officer". Understand "all" or "purpose" or "all-purpose" or "officer" as the All-Purpose-Officer. The description is "He is uniformed and has a look of serious determination." The All-Purpose-Officer is carrying a diminutive affixer and a restoration-gel rifle.
 

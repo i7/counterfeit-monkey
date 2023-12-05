@@ -245,7 +245,7 @@ Instead of buying something which is part of the clothing shops:
 Instead of putting the restoration gel on something which is part of the clothing shops:
 	say "The shop window is, unsurprisingly, not open to reach into."
 
-The typographer's office is a facade in Sigil Street.  It is scenery.
+The typographer's office is a facade in Sigil Street. It is scenery.
 	Understand "sign" or "display" or "poster" or "typographer" or "font" or "fonts" or "comma" or "commas" or "punctuation" as the typographer's office. It fronts north. The description of the typographer's office is "The office advertises custom fonts and symbols, though it is very unlikely that anyone decides to have a custom font made simply because they happened to catch a notice in a shop window. In hon[our] of the holiday, there is also a display poster showing the form of the humble comma as it manifests itself in a variety of popular fonts."
 
 Instead of looking toward Back Alley:
@@ -307,7 +307,7 @@ Rule for printing the banner text when stored first name is not "Andra":
 	do nothing instead.
 
 Before taking inventory for the first time:
-	if  the player is carrying the letter-remover and the number of things carried by the player is 1:
+	if the player is carrying the letter-remover and the number of things carried by the player is 1:
 		say "You insisted that we bring almost nothing into the synthesis room, so the criminal who was performing the synthesis couldn't rob us. I had hoped there was more hon[our] among thieves, but you said no, there isn't.";
 
 A last when play begins rule (this is the initial conversation rule):
@@ -920,7 +920,7 @@ Instead of turning the wheel:
 The random foodstuffs are scenery in the fair. Understand "spun" or "sugar" or "candy" or "butter" or "artificial" or "booze" or "popcorn" as the random foodstuffs.
 	The description is "An assortment of unwholesome things to eat are sold here, and since it's extremely hot, [we] smell all of them pungently and in rapid succession. If it's not my imagination, actually, I think this female nose is better than mine. (I've heard that women have a better sense of smell. This could be wrong.) At the moment that sensitivity is a liability, as disorienting as flashes of a col[our]ed strobe.".  [* I wanted to give the sense in the first portion of the game that Alex and Andra are really disoriented by what has happened to them. Some of their sensations are borrowed from what it's like to have a migraine on a hot, sunny day amid a crowd: everything is simply too present to endure, and smells and noises become distinct and offensive even if normally they'd be quite pleasant.]
 
-Some kiosks are fixed in place things in the Fair.  The description of the kiosks is "They're the usual tacky affairs of brightly painted [if the player wears the Britishizing goggles]fibreboard[otherwise]fiberboard[end if] and cheap prizes. I don't see any likely to help us today, however." Understand "activity" or "activities" or "cheap" or "prizes" or "face-painting" or "face painting" or "spell offs" or "spell-offs" as the kiosks.
+Some kiosks are fixed in place things in the Fair. The description of the kiosks is "They're the usual tacky affairs of brightly painted [if the player wears the Britishizing goggles]fibreboard[otherwise]fiberboard[end if] and cheap prizes. I don't see any likely to help us today, however." Understand "activity" or "activities" or "cheap" or "prizes" or "face-painting" or "face painting" or "spell offs" or "spell-offs" as the kiosks.
 
 
 A ranking rule for the kiosks: increase description-rank of the kiosks by 50.
@@ -1152,7 +1152,7 @@ Rule for listing exits when the location is Church Forecourt:
 	else:
 		say "South and east lead to more of the park; there is a small [cinema-exterior][if the backpack is not handled] (where I left my pack)[end if] to the north, and the entrance to the [church exterior] is west.";
 
-The cinema-exterior is a facade in Church Forecourt. It fronts north. It is scenery. The description is "Large red letters on the marquee announce the latest film from Cannes." Understand "small" or "cinema" or "theater" or "theatre" or "movie" or "red letters" or "large red" or "large letters" or "large red letters" or "marquee"  or "film" or "cannes" as the cinema-exterior. The printed name is "cinema".
+The cinema-exterior is a facade in Church Forecourt. It fronts north. It is scenery. The description is "Large red letters on the marquee announce the latest film from Cannes." Understand "small" or "cinema" or "theater" or "theatre" or "movie" or "red letters" or "large red" or "large letters" or "large red letters" or "marquee" or "film" or "cannes" as the cinema-exterior. The printed name is "cinema".
 
 Section 4 - Heritage Corner
 
@@ -1237,7 +1237,7 @@ Rule for listing exits when the location is Heritage Corner:
 	else:
 		say "The park continues to the north and west; to the east is [if the hostel is unvisited]a backpackers['] [hostel-exterior] where you've stayed recently and where you stowed the rest of your important possessions[otherwise]the [hostel-exterior][end if]."
 
-The hostel-exterior is a facade in Heritage Corner. It is scenery. The printed name is "hostel". The description is "It's a narrow brick townhouse with only one or two rooms on each floor, and silly ornamental brickwork up near the skyline. The label over the entrance merely announces a generic hostel, without the dignity of a name." Understand "hostel" or "sign" or "townhouse" or "silly brickwork/bricks" or "ornamental brickwork/bricks" or "silly ornamental brickwork/bricks" or "brickwork" or "narrow" or "brick" or "backpacker's" or "backpackers'" or "backpacker" as the hostel-exterior.  The hostel-exterior fronts east.
+The hostel-exterior is a facade in Heritage Corner. It is scenery. The printed name is "hostel". The description is "It's a narrow brick townhouse with only one or two rooms on each floor, and silly ornamental brickwork up near the skyline. The label over the entrance merely announces a generic hostel, without the dignity of a name." Understand "hostel" or "sign" or "townhouse" or "silly brickwork/bricks" or "ornamental brickwork/bricks" or "silly ornamental brickwork/bricks" or "brickwork" or "narrow" or "brick" or "backpacker's" or "backpackers'" or "backpacker" as the hostel-exterior. The hostel-exterior fronts east.
 
 The octagonal bricks are scenery in Heritage Corner. The description is "Alternating with square bricks of a slightly darker shade of maroon. Nothing about this seems remotely significant." Understand "ground" or "paving" or "floor" as the octagonal bricks.
 
@@ -1935,7 +1935,7 @@ To say prayer response:
 
 [--]and now quiet. I don't know what, if anything, that may have accomplished, but I promise not to be rude if you need to do it again. "
 
-The gift-shop-exterior is a facade in New Church. It is scenery. It fronts south. The description is "[We] can't really see it from here; I just know that it is back there, from previous visits, though decently screened from the main body of the church."  Understand "shop" or "gift shop" or "narthex" as the gift-shop-exterior. The printed name is "gift shop".
+The gift-shop-exterior is a facade in New Church. It is scenery. It fronts south. The description is "[We] can't really see it from here; I just know that it is back there, from previous visits, though decently screened from the main body of the church." Understand "shop" or "gift shop" or "narthex" as the gift-shop-exterior. The printed name is "gift shop".
 
 The Cathedral Gift Shop is south of the New Church. Understand "narthex" and "giftshop" as the cathedral gift shop. It is indoors. The description is "This area used to be a sort of antechamber where the priests and choir might gather for processions into the church, but it has now been done over for retail purposes. This is one of several schemes to make the New Church pay for its own upkeep: a problem is that people somehow feel everything associated with a church ought to be free, including lunchtime concerts, potluck suppers, and Thursday-night lecture series."
 
@@ -2343,7 +2343,7 @@ Rule for writing a paragraph about the farmer:
 	if a mentionable thing (called item) is in location:
 		say line break.
 
-An asparagus is carried by the farmer. It is a vegetable. The indefinite article of the asparagus is "some".  The description of the asparagus is "It looks particularly tender and pleasant, but I avoid the stuff."
+An asparagus is carried by the farmer. It is a vegetable. The indefinite article of the asparagus is "some". The description of the asparagus is "It looks particularly tender and pleasant, but I avoid the stuff."
 
 A lime is carried by the farmer. It is a vegetable. The description of the lime is "A small, wrinkled, intense-looking fruit: it wouldn't give much juice, but is likely very strong."
 
@@ -2446,7 +2446,7 @@ He closes the door behind him.";
 Report taking off the monocle in the presence of fake-father:
 	say "Hastily I take off our monocle and palm it. Father shouldn't recogn[ize] us in our current body, but wearing expensive Bureau equipment in his presence would be a terrible idea." instead.
 
-fake-father is a man. fake-father is privately-named. The printed name of fake-father is "Father". Understand "father" and "dad" as fake-father. The description of fake-father is "He looks put out. Serial Comma Day is supposed to be a day off, even for him." The initial appearance is  "My father is just outside [my home]. He's clipping the cuffs of his trousers so that he won't snag them on anything during his ride in to work. His scooter is propped against the [statue of Noah Webster], ready for action."
+fake-father is a man. fake-father is privately-named. The printed name of fake-father is "Father". Understand "father" and "dad" as fake-father. The description of fake-father is "He looks put out. Serial Comma Day is supposed to be a day off, even for him." The initial appearance is "My father is just outside [my home]. He's clipping the cuffs of his trousers so that he won't snag them on anything during his ride in to work. His scooter is propped against the [statue of Noah Webster], ready for action."
 
 After writing a paragraph about fake-father:
 	set pronouns from fake-father.
@@ -2602,9 +2602,9 @@ A description-concealing rule when the gum is marked for listing:
 	if the gum is not handled and the gum is not seen:
 		now the gum is not marked for listing.
 
-Test gum with "tutorial off / look / x school / x palm / look / x gum / get gum / look / x palm trees / chew gum / eat gum / drop gum  / look / get gum / put gum on spinner / get mug / x mug / wave g-remover at mug / n" in Roget Close.
+Test gum with "tutorial off / look / x school / x palm / look / x gum / get gum / look / x palm trees / chew gum / eat gum / drop gum / look / get gum / put gum on spinner / get mug / x mug / wave g-remover at mug / n" in Roget Close.
 
-Rule for listing exits  while looking in Roget Close:
+Rule for listing exits while looking in Roget Close:
 	do nothing instead.
 
 After going from Roget Close to the Winding Footpath:
@@ -2620,7 +2620,7 @@ Soon, however, the footpath begins to descend purposefully towards the level of 
 
 Section 5 - Winding Footpath
 
-The spinner-gate is north of Roget Close.  It is a closed transparent locked door. The printed name of the spinner-gate is "gate". Understand "gate" as the spinner-gate. The initial appearance is "If you look just north between the houses, you'll notice also the footpath down to an almost-private beach. It used to be open, but it's now gated off, and built into the [spinner-gate] is a chic modern [if boldening is true][bold type][end if]sculpture[roman type]."
+The spinner-gate is north of Roget Close. It is a closed transparent locked door. The printed name of the spinner-gate is "gate". Understand "gate" as the spinner-gate. The initial appearance is "If you look just north between the houses, you'll notice also the footpath down to an almost-private beach. It used to be open, but it's now gated off, and built into the [spinner-gate] is a chic modern [if boldening is true][bold type][end if]sculpture[roman type]."
 
 The description of the spinner-gate is "A gate of wrought iron bars between two sturdy columns[if the spinner-gate is closed and the spinner-gate is locked], too close to climb through and too tall to climb over[else if the spinner-gate is closed], closed but not locked[else if the spinner-gate is open]; at the moment the gate has been pushed conveniently open[end if]. Built into the right-hand column, next to the gate latch, is a curious [if boldening is true][bold type][end if]sculpture[roman type]."
 
@@ -2754,7 +2754,7 @@ But Anglophone Atlantis prefers to forget what it was.";
 Report inserting something into the shrine:
 	say "[We] give [the noun] a place of solemn hon[our] above the relief of frolicking ladies." instead.
 
-The low relief is a part of the shrine. Understand "ladies" or "three" or "waves" or "surface" or "nymph" or "nymphs" or "bare" or "breasts" or "breast" or "garment" or "garments" or "carving" or "sculpture" or "sculpted" as the low relief.  The description is "It looks like three ladies dancing on the surface of waves. They're probably meant to be nymphs, if I had to guess. They have bare breasts and fluttering garments, but the carving was done by someone who has not the slightest idea how to make limbs appear under sculpted cloth, so it all looks clunky, as though they don't have hips or legs at all, just randomly swirling skirts as their lower halves.
+The low relief is a part of the shrine. Understand "ladies" or "three" or "waves" or "surface" or "nymph" or "nymphs" or "bare" or "breasts" or "breast" or "garment" or "garments" or "carving" or "sculpture" or "sculpted" as the low relief. The description is "It looks like three ladies dancing on the surface of waves. They're probably meant to be nymphs, if I had to guess. They have bare breasts and fluttering garments, but the carving was done by someone who has not the slightest idea how to make limbs appear under sculpted cloth, so it all looks clunky, as though they don't have hips or legs at all, just randomly swirling skirts as their lower halves.
 
 All the same, there's something appealing about it."
 
@@ -2779,7 +2779,7 @@ Table of Ultratests (continued)
 topic	stuff	setting
 "shrine"	{ god, pita, roll of bills, as-coin, cross, army, members, yellow sign, Guidebook }	Winding Footpath
 
-Test shrine with "tutorial off / autoupgrade / wave z-remover at kudzu / look behind bushes / put god in shrine / look / get god / wave a-remover at pita / wave t-remover at pit / put pi in shrine / look / get pi / put bills in shrine / look / get bills / put as in shrine / look / get as / put cross in shrine / look / get cross / put army in shrine / look / get army / put members in shrine / look / get members / wave s-remover at members / put member in shrine / look /  get member / wave g-remover at sign / put sin in shrine / look / get sin / put guidebook in shrine / look / get guidebook" [holding the god and the pita and the roll of bills and the as and the cross and the army and the members and the yellow sign and the Guidebook in the Winding Footpath.]
+Test shrine with "tutorial off / autoupgrade / wave z-remover at kudzu / look behind bushes / put god in shrine / look / get god / wave a-remover at pita / wave t-remover at pit / put pi in shrine / look / get pi / put bills in shrine / look / get bills / put as in shrine / look / get as / put cross in shrine / look / get cross / put army in shrine / look / get army / put members in shrine / look / get members / wave s-remover at members / put member in shrine / look / get member / wave g-remover at sign / put sin in shrine / look / get sin / put guidebook in shrine / look / get guidebook" [holding the god and the pita and the roll of bills and the as and the cross and the army and the members and the yellow sign and the Guidebook in the Winding Footpath.]
 
 Section 6 - The Beach
 
