@@ -477,7 +477,7 @@ Test secondaries with "tutorial off / z / say hello / g / ask about paddle / say
 
 Table of Ultratests (continued)
 topic	stuff	setting
-"customer"	{ map-customer, papas } Arbot
+"customer"	{ map-customer, papas }	Arbot
 
 Test customer with "z / ask about maps / say hello to customer / ask customer about maps / say hello to papas / ask papas about maps" [holding the map-customer and the papas in Arbot.]
 
