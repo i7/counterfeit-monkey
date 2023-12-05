@@ -487,35 +487,35 @@ After printing the name of something (called N) while listing longs:
 	otherwise:
 		say " (strong)"
 
-Understand "list noisy" as listing noisy.  Listing noisy is an action out of world.
+Understand "list noisy" as listing noisy. Listing noisy is an action out of world.
 
 Carry out listing noisy:
 	let N be the list of noisy things;
 	sort N;
 	say "[N]".
 
-Understand "list cat 5" as listing category five.  Listing category five is an action out of world.
+Understand "list cat 5" as listing category five. Listing category five is an action out of world.
 
 Carry out listing category five:
 	let N be the list of edible things which are not vegetables;
 	sort N;
 	say "[N]".
 
-Understand "list liquid" as listing liquid.  Listing liquid is an action out of world.
+Understand "list liquid" as listing liquid. Listing liquid is an action out of world.
 
 Carry out listing liquid:
 	let N be the list of fluid things;
 	sort N;
 	say "[N]".
 
-Understand "list edible" as listing edible.  Listing edible is an action out of world.
+Understand "list edible" as listing edible. Listing edible is an action out of world.
 
 Carry out listing edible:
 	let N be the list of edible things;
 	sort N;
 	say "[N]".
 
-Understand "list uncontained" as listing uncontained.  Listing uncontained is an action out of world.
+Understand "list uncontained" as listing uncontained. Listing uncontained is an action out of world.
 
 Carry out listing uncontained:
 	let N be the list of uncontained fluid things;

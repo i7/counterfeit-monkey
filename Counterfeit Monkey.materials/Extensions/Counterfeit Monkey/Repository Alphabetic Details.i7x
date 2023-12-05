@@ -38,7 +38,7 @@ But no, it has come out as the representation of an era, the golden age of Atlan
 The ahi is an edible thing. The indefinite article of an ahi is "some". The description of the ahi is "Sashimi-grade tuna, deep translucent pink except around the edges, where it has been seared and coated with blackened sesame seeds.". Understand "tuna" or "fish" as the ahi.
 
 
-The heft of an air is 0. The indefinite article of an air is "some". The description of an air  is "It's hard to see." The scent-description of an air is "nothing".
+The heft of an air is 0. The indefinite article of an air is "some". The description of an air is "It's hard to see." The scent-description of an air is "nothing".
 
 Sanity-check doing something other than smelling with an air when the noun must be touched:
 	say "[The noun] is not susceptible to [action name part of the current action]." instead.
@@ -270,7 +270,7 @@ The bass-fish is a privately-named thing. The description is "A trophy of a fish
 The heft of the bat is 1. The description of the bat is "It's small and black-furred, and looks like it would rather be in a cool dark place alone with some fruit."
 
 
-The Ben-wig is wearable. It covers the head-area.  The printed name is "Ben wig". Understand "wig" or "ben wig" as the ben-wig. The description is "It is a wig belonging to [--] at a guess [--] a Ben Franklin costume. A rubbery pate simulates baldness at the top of the head, while grey curls hang below. It would not, I fear, look remotely persuasive on our head."
+The Ben-wig is wearable. It covers the head-area. The printed name is "Ben wig". Understand "wig" or "ben wig" as the ben-wig. The description is "It is a wig belonging to [--] at a guess [--] a Ben Franklin costume. A rubbery pate simulates baldness at the top of the head, while grey curls hang below. It would not, I fear, look remotely persuasive on our head."
 	The scent-description is "the faintest whiff of dust".
 
 The description of the bell is "It's a tiny golden bell with a tiny golden clapper inside." The bell is an instrument.
@@ -585,7 +585,7 @@ Understand "cook [char]" as a mistake ("Even if you know how, there's no time fo
 
 The description of the charlie is "It's a quantity of very suspicious-looking white powder. Cocaine, I believe. Drug slang was never my strength." The charlie is illegal. The indefinite article of the charlie is "some".
 
-Sanity-check  smelling the charlie:
+Sanity-check smelling the charlie:
 	say "[We][']d prefer not to undergo this whole process while higher than a kite. We need our wits." instead.
 Sanity-check cutting the charlie:
 	say "Odds are it's already cut with corn starch or baby powder or whatever it is they put into drugs to make up the weight." instead.
@@ -675,7 +675,7 @@ Test cockbug with "autoupgrade / wave l-remover at clock / open tub / gel cock" 
 
 [The cockpit is a thing. The heft of the cockpit is 10. The description is "It's a tiny room lined on every surface with buttons and instrument readouts and warning signs, altimeters and radios and all sorts of other gadgets I don't recognize." Understand "buttons" and "readouts" and "instrument" and "warning" and "signs" and "altimeters" and "radios" and "gadgets" and "button" and "readout" and "sign" and "altimeter" and "radio" and "gadget" as the cockpit.]
 
-The cock-ring is a wearable thing. The printed name is "cock ring". The cock-ring is naughty-sounding. The description is "A sturdy ring of black rubber[one of]. Which reminds me [--] never mind[or]. And no, I'm not going to tell you about that memory[or]. Stop prying[stopping]."  Understand "cock" or "ring" as cock-ring.
+The cock-ring is a wearable thing. The printed name is "cock ring". The cock-ring is naughty-sounding. The description is "A sturdy ring of black rubber[one of]. Which reminds me [--] never mind[or]. And no, I'm not going to tell you about that memory[or]. Stop prying[stopping]." Understand "cock" or "ring" as cock-ring.
 	Sanity-check wearing the cock-ring:
 		say "Er. Our combined physique doesn't allow for a place to put that." instead.
 
@@ -738,7 +738,7 @@ The description of the countertop is "The result is a slab of good black granite
 
 The cratering is r-abstract. The indefinite article is "some". The heft is 0. The description is "It's an image, light as air, of the moon and the craters on it."
 
-The crew-group is a privately-named plural-named person. The description of the crew-group is "Five (or six? it's extremely hard to count) swarthy sailors. They look buff and burly and have very thick eyebrows." The heft of the crew-group is 6.  The printed name of the crew-group is "crew". Understand "crew" as the crew-group.
+The crew-group is a privately-named plural-named person. The description of the crew-group is "Five (or six? it's extremely hard to count) swarthy sailors. They look buff and burly and have very thick eyebrows." The heft of the crew-group is 6. The printed name of the crew-group is "crew". Understand "crew" as the crew-group.
 
 [Persuasion rule for asking the crew-group to try doing something:
 	rule succeeds.]
@@ -1280,7 +1280,7 @@ The keycard is a passkey. It unlocks the small door. The description is "An elec
 Carry out taking the keycard:
 	record "acquiring a keycard" as achieved.
 
-The key-lime is an edible thing. The printed name is "key lime".  Understand "key" or "lime" as the key-lime. The description is "One of those small, extra-flavorful limes used as a flavor for pie."
+The key-lime is an edible thing. The printed name is "key lime". Understand "key" or "lime" as the key-lime. The description is "One of those small, extra-flavorful limes used as a flavor for pie."
 	The scent-description is "sharp and citrusy".
 	The flavor-description is "The outer layer of skin tastes a little bit sharp, but most of the flavor is locked inside.".
 
@@ -2567,7 +2567,7 @@ Sanity-check going somewhere when the player carries the power cord:
 		if the player carries the power cord:
 			stop the action.
 
-Understand "plug [a power socket] into [a power socket]" as connecting it to.  Understand "plug in [a power socket] in [a power socket]" as connecting it to. Connecting it to is an action applying to two things.
+Understand "plug [a power socket] into [a power socket]" as connecting it to. Understand "plug in [a power socket] in [a power socket]" as connecting it to. Connecting it to is an action applying to two things.
 
 Understand "connect [a power socket] to [a power socket]" as connecting it to.
 Understand "connect [a power cord] to [a power socket]" as plugging it into.
@@ -2684,7 +2684,7 @@ The rampage is an r-abstract thing. It is noisy. The description of the rampage 
 
 A rap is usually noisy. A rap is usually r-abstract. The description of the rap is "A pulsating ball of angry air."
 
-[Originally the rap riffed on the lyrics of the handful of songs I know at all well.  The results were so painfully square that Sam Ashwell responded by schooling me with a 38K email entitled 'A Very White Person Summarises Hip-Hop Themes'.
+[Originally the rap riffed on the lyrics of the handful of songs I know at all well. The results were so painfully square that Sam Ashwell responded by schooling me with a 38K email entitled 'A Very White Person Summarises Hip-Hop Themes'.
 
 The results do not live up to his efforts, but you should know that he really really tried and, hey, the Sir Mixalot joke is gone.]
 
@@ -2950,7 +2950,7 @@ Ross is a proper-named man. The description of Ross is "He's red-headed and he l
 The description of the rotas inscription is
 	"It reads: [paragraph break][fixed letter spacing]     P[line break]     A[line break]     T[line break]  A  E  O[line break]     R[line break]PATERNOSTER[line break]     O[line break]  O  S  A[line break]     T[line break]     E[line break]     R[variable letter spacing]". The rotas inscription is fixed in place.
 
-Rule for printing the name of the rotas inscription  when not shooting:
+Rule for printing the name of the rotas inscription when not shooting:
 	say "Roman inscription".
 Understand "roman" or "letters" or "lettering" as the rotas inscription.
 The initial appearance of the rotas inscription is "On the opposite wall is a cross of inscribed letters, this time Roman."
@@ -3492,16 +3492,16 @@ To say generated tale:
 	if V is:
 		-- 1:
 			now tale-intro is "Once upon a time, a [t-hero] was [one of][or]hard at work [or]busy [or]in the middle of [at random][t-activity]. ";
-			now  tale-danger is "Then the [t-hero] met with a [t-antagonist]. [one of]For a time [t-nom] thought that [t-nom] and [t-pos] family were done for, so great was [t-pos] fear, when[or]Everything seemed lost until[or]The [t-hero] did not know what to do until[or]The [t-hero] was overwhelmed with terror until[at random] [one of][t-nom] remembered the [t-tool][or][t-nom] found the [t-tool] again among [t-pos] possessions[or]the [t-tool] spoke aloud saying USE ME, USE ME[at random]. ";
+			now tale-danger is "Then the [t-hero] met with a [t-antagonist]. [one of]For a time [t-nom] thought that [t-nom] and [t-pos] family were done for, so great was [t-pos] fear, when[or]Everything seemed lost until[or]The [t-hero] did not know what to do until[or]The [t-hero] was overwhelmed with terror until[at random] [one of][t-nom] remembered the [t-tool][or][t-nom] found the [t-tool] again among [t-pos] possessions[or]the [t-tool] spoke aloud saying USE ME, USE ME[at random]. ";
 		-- 2:
 			now tale-intro is "Once upon a time, the supreme councilor of the land was captured by a [t-antagonist][one of], and no one but a [t-hero] dared try to save him[or]. A brave [t-hero] set out to save him[or], and only a [t-hero] was willing to go after him[at random]. ";
 			now t-activity is "searching high and low for the councilor";
-			now  tale-danger is "At last the [t-hero] found the lair of the [t-antagonist]. ";
-			now  tale-resolution is "[tale-resolution]The councilor was saved, and all rejoiced. ";
+			now tale-danger is "At last the [t-hero] found the lair of the [t-antagonist]. ";
+			now tale-resolution is "[tale-resolution]The councilor was saved, and all rejoiced. ";
 		-- 3:
 			now t-activity is "[one of]treasure[or]a cure to the plague[or]fresh water[or]the world's hottest spice[or]the world's sweetest honey[or]the world's end[or]the Secret Word that Makes Men Live Forever[or]the 27th letter of the alphabet (which God gave secretly to the angels)[as decreasingly likely outcomes]";
-			now  tale-danger is "When at last the [t-hero] [one of]discovered the hiding place of the [t-activity][or]tracked down the [t-activity] with subtle maps and a magic compass[or]uncovered the [t-activity] by asking every merchant and priest in the land[or]came to the hidden place where the [t-activity] could be found[at random], [t-nom] found it was being guarded by a [t-antagonist]. ";
-			now  tale-resolution is "[tale-resolution]The [t-hero] and [t-pos] whole town lived [one of]healthily[or]wisely[or]joyfully[or]wealthily[at random] ever after. ";
+			now tale-danger is "When at last the [t-hero] [one of]discovered the hiding place of the [t-activity][or]tracked down the [t-activity] with subtle maps and a magic compass[or]uncovered the [t-activity] by asking every merchant and priest in the land[or]came to the hidden place where the [t-activity] could be found[at random], [t-nom] found it was being guarded by a [t-antagonist]. ";
+			now tale-resolution is "[tale-resolution]The [t-hero] and [t-pos] whole town lived [one of]healthily[or]wisely[or]joyfully[or]wealthily[at random] ever after. ";
 			if t-activity is "the world's end" and chosen tale-villain is t-foreigner:
 				now tale-resolution is "[tale-resolution]But all were amazed that the world's end should be in a foreign land rather than their own. ";
 			otherwise if t-activity is "the 27th letter of the alphabet, which God gave secretly to the angels":
@@ -3551,15 +3551,15 @@ To say generated tale:
 		now V is a random number between 1 and 8;
 	if V is:
 		-- 1:
-			now  tale-donation is "In the midst of [t-activity], [t-nom] was interrupted by a [t-helper]. [one of]Though [t-nom] did not welcome the interruption, [or]Though [t-nom] was rude, [or]The [t-hero] said, 'Go away! Can't you see I'm busy?' But [or]The [t-hero] made a bad face, but [at random]the [t-helper] said, '[one of]I was sent to bring you this[or]A dream told me to present you this[or]I have brought you a[or]I wanted only to give you this[at random] [t-tool].' Thinking nothing of it, the [t-hero] went on [t-pos] way. ";
+			now tale-donation is "In the midst of [t-activity], [t-nom] was interrupted by a [t-helper]. [one of]Though [t-nom] did not welcome the interruption, [or]Though [t-nom] was rude, [or]The [t-hero] said, 'Go away! Can't you see I'm busy?' But [or]The [t-hero] made a bad face, but [at random]the [t-helper] said, '[one of]I was sent to bring you this[or]A dream told me to present you this[or]I have brought you a[or]I wanted only to give you this[at random] [t-tool].' Thinking nothing of it, the [t-hero] went on [t-pos] way. ";
 			if t-tool is "whip":
 				now tale-resolution is "When the [t-helper] met with the [t-hero] again, the [t-helper] said, 'Now perhaps you see what sort of creature it is proper to beat!' [tale-resolution]";
 			otherwise if t-tool is "mirror":
 				now tale-resolution is "The [t-helper] returned to the [t-hero] and said, 'Now use your mirror on yourself, and see what kind of person you have become!' [tale-resolution]";
 			otherwise:
-				now  tale-resolution is "The next morning [t-nom] met the [t-helper] again. Astonished, [t-nom] said, 'Why did you give the [t-tool] to me after I treated you unkindly?' The [t-helper] replied: '[one of]I did this not for you, but for the whole island[or]I could not withhold that which it was your fate to receive[or]In payment, you and your family must always treat me well and bring me gifts[at random].' [tale-resolution]";
+				now tale-resolution is "The next morning [t-nom] met the [t-helper] again. Astonished, [t-nom] said, 'Why did you give the [t-tool] to me after I treated you unkindly?' The [t-helper] replied: '[one of]I did this not for you, but for the whole island[or]I could not withhold that which it was your fate to receive[or]In payment, you and your family must always treat me well and bring me gifts[at random].' [tale-resolution]";
 		-- 2:
-			now  tale-donation is "[one of]While the [t-hero] was [t-activity][or]Just then[at random], a [t-helper] approached [t-obj] and demanded [tale-donation]. And though the [t-hero] was very busy, [t-nom] gave all the aid in [t-pos] power. In return, the [t-helper] gave [t-obj] a [t-tool]. ";
+			now tale-donation is "[one of]While the [t-hero] was [t-activity][or]Just then[at random], a [t-helper] approached [t-obj] and demanded [tale-donation]. And though the [t-hero] was very busy, [t-nom] gave all the aid in [t-pos] power. In return, the [t-helper] gave [t-obj] a [t-tool]. ";
 			if chosen tale-gift is t-diversion and t-activity is not "scouring the land for what was lost":
 				now tale-donation is "[tale-donation]'I cannot imagine what use this will be,' thought the [t-hero]. But [t-nom] put it away in [t-pos] bag, because [t-nom] knew that there is a use for everything in its time. ";
 		-- 3:
@@ -3728,7 +3728,7 @@ The description of a tap is "It's a tap marked [if the item described is hot]Hot
 
 The description of the tape is "It's clear tape, the kind you use to wrap presents or make childhood art projects. I made an entire paper village when I was small, at significant expense in sticky tape."
 
-The description of the tar is "A pot of sticky black goo." The indefinite article of tar is "some".  Instead of tasting or eating the tar: say "Ugh." Instead of smelling the tar: say "It smells like roadworks on a hot day."
+The description of the tar is "A pot of sticky black goo." The indefinite article of tar is "some". Instead of tasting or eating the tar: say "Ugh." Instead of smelling the tar: say "It smells like roadworks on a hot day."
 
 The tarpan is a neuter animal. The description is "A small, mouse-col[our]ed horse with black-barred legs. It looks wild and shows no signs of ever having been saddled or ridden."
 
@@ -3842,7 +3842,7 @@ Table of Ultratests (continued)
 topic	stuff	setting
 "paintings"	{ anagramming gun, bullets, paintings, tub }	Sensitive Equipment Testing Room
 
-Test paintings with "autoupgrade  / load gun / wave s-remover at paintings / shoot painting / put giant pin in t-inserter / shoot giant pint / wave g-remover at pig tat inn / shoot pi tat inn / put pin in inserter / shoot titan pint / open tub / gel tint / shoot paintings / wave g-remover at sign / shoot sin" [holding the anagramming gun and the bullets and the paintings and the tub in the Sensitive Equipment Testing Room.]
+Test paintings with "autoupgrade / load gun / wave s-remover at paintings / shoot painting / put giant pin in t-inserter / shoot giant pint / wave g-remover at pig tat inn / shoot pi tat inn / put pin in inserter / shoot titan pint / open tub / gel tint / shoot paintings / wave g-remover at sign / shoot sin" [holding the anagramming gun and the bullets and the paintings and the tub in the Sensitive Equipment Testing Room.]
 
 
 The titan-pin is wearable. The description of the titan-pin is "The pin depicts two giant-like figures locked in a wrestling match." The printed name is "titan pin". Understand "titan" or "titan pin" as the titan-pin. Understand "pin" as the titan-pin when the pin is marked invisible.
@@ -4215,7 +4215,7 @@ The description of the weight is "Shaped like a headless pyramid. '0.5 kg' is st
 
 The wet epigraph is r-abstract. The heft is 0. The description is "Currently it reads, '[one of]Unshakable faith is faith that has been shaken[or]Anyone who thinks the sky is the limit, has limited imagination[at random].'"
 
-The wig is wearable and floppy. It covers the head-area.  The description is "A surprisingly realistic wig, cut to about the shoulder. It looks like our hair, but a good bit longer."
+The wig is wearable and floppy. It covers the head-area. The description is "A surprisingly realistic wig, cut to about the shoulder. It looks like our hair, but a good bit longer."
 	The scent-description is "the faintest whiff of shampoo".
 
 

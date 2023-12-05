@@ -506,7 +506,7 @@ A live branch is in the repository.
 
 [paintings]
 
-The repository contains a painting, an inapt sign, an inapt sin, a satin-pin, a satin-pint, a saint-pint, a giant-pin,  a giant-pint, a pig-tat-inn, a pi-tat-inn, a titan-pin, a titan-pint, and an inapt tint.
+The repository contains a painting, an inapt sign, an inapt sin, a satin-pin, a satin-pint, a saint-pint, a giant-pin, a giant-pint, a pig-tat-inn, a pi-tat-inn, a titan-pin, a titan-pint, and an inapt tint.
 
 [page]
 
@@ -963,7 +963,7 @@ A nitrate is in the repository.
 The repository contains a papa and some papas and an aa and an aas-object.
 
 [page]
-The repository contains  a passage-place. ["page", "passage"]
+The repository contains a passage-place. ["page", "passage"]
 
 [pass]
 The repository contains a password-thing, a passcard, a passage, a passkey-thing.

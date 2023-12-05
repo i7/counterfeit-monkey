@@ -163,7 +163,7 @@ Check vaguely setting:
 Instead of vaguely setting the letter-remover:
 	say "You have to set it to a specific letter, as in SET [letter-remover] TO X."
 
-Understand "set [letter-remover device] to [text]" or "tune [letter-remover device] to [text]" or  "turn [letter-remover device] to [text]" as tuning it to.  [Understand "set [something] to [text]" as tuning it to.] Tuning it to is an action applying to one carried thing and one topic.
+Understand "set [letter-remover device] to [text]" or "tune [letter-remover device] to [text]" or "turn [letter-remover device] to [text]" as tuning it to. [Understand "set [something] to [text]" as tuning it to.] Tuning it to is an action applying to one carried thing and one topic.
 
 Check tuning it to:
 	if the noun is not the letter-remover device, say "[The noun] cannot be tuned." instead.
@@ -1488,7 +1488,7 @@ Sanity-check putting the restoration gel on something irretrievable:
 Before putting the restoration gel on something which is in a container (called the box):
 	if the second noun is proffered by an uncontained fluid thing (called the liquid):
 		if the number of things in the box is greater than 1 or the number of things proffered by the second noun is greater than 1 and the box is not the synthesizer:
-			say the liquid would make a  mess in the box instead.
+			say the liquid would make a mess in the box instead.
 
 Before putting the restoration gel on something which is enclosed by the backpack:
 	if the backpack is closed:
@@ -1902,7 +1902,7 @@ Sanity-check shooting something irretrievable with the restoration-gel rifle:
 Before shooting something which is in a container (called the box) with the restoration-gel rifle:
 	if the noun is proffered by an uncontained fluid thing (called the liquid):
 		if the number of things in the box is greater than 1 or the number of things proffered by the noun is greater than 1 and the box is not the synthesizer:
-			say the liquid would make a  mess in the box instead.
+			say the liquid would make a mess in the box instead.
 
 [Because it's possible to change something into an object that becomes fixed in place in the backpack, or too heavy to move...]
 
@@ -2335,7 +2335,7 @@ Chapter 16 - The Cryptolock aka Vowel Rotator
 
 The puzzle here is completely different depending on whether you're playing hard mode or easy mode.]
 
-The cryptolock is a scenery enterable container in the Generator Room. It is fixed in place. The printed name of the cryptolock is "brushed steel bucket". Understand "brushed" or "steel" or "container" or "bucket"  as the cryptolock.
+The cryptolock is a scenery enterable container in the Generator Room. It is fixed in place. The printed name of the cryptolock is "brushed steel bucket". Understand "brushed" or "steel" or "container" or "bucket" as the cryptolock.
 
 The cryptoswitch is a device. The cryptoswitch is part of the cryptolock. The printed name of the cryptoswitch is "reverse switch". Understand "reverse" or "switch" as the cryptoswitch.
 
