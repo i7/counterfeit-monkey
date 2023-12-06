@@ -965,13 +965,123 @@ Include Facing by Emily Short.
 Instead of examining a direction:
 	try facing the noun.
 
+Definition: a room is always-definite:
+	if it is visited:
+		yes;
+	if it is the old city walls:
+		yes;
+	if it is the new church:
+		yes;
+	if it is the cathedral gift shop:
+		yes;
+	if it is the church garden:
+		yes;
+	if it is the docks:
+		yes;
+	if it is the Aquarium Bookstore:
+		yes;
+	if it is the Counterfeit Monkey:
+		yes;
+	if it is the Babel Café:
+		yes;
+	if it is the Fleur d'Or lobby:
+		yes;
+	if it is the Fleur drinks club:
+		yes;
+	if it is the Babel Café:
+		yes;
+	if it is the rotunda:
+		yes;
+	if it is the university oval:
+		yes;
+	if it is the Language Studies seminar room:
+		yes;
+	if it is the Language Studies department office:
+		yes;
+	if it is the rectification room:
+		yes;
+	if it is the graduate student office:
+		yes;
+	if it is the Tools Exhibit:
+		yes;
+	if it is the Bureau Basement South:
+		yes;
+	if it is the Bureau Basement Middle:
+		yes;
+	if it is the Bureau Basement Secret Section:
+		yes;
+	if it is the sensitive equipment testing room:
+		yes;
+	if it is the equipment archive:
+		yes;
+	if it is the Oracle project:
+		yes;
+	if it is the cold storage:
+		yes;
+	if it is the display reloading room:
+		yes;
+	if it is the open sea:
+		yes;
+	if it is the shadow chamber:
+		yes;
+	if it is nautical:
+		yes;
+	no.
+
+To say in-sentence-room-name for (R - a room):
+	if R is My Apartment:
+		say "my apartment";
+	otherwise if R is Waterstone's Office:
+		say "Waterstone's office";
+	otherwise if R is Higgate's Office:
+		say "Higgate's office";
+	otherwise if R is Brown's lab:
+		say "Brown's lab";
+	otherwise if R is Fleur d'Or Lobby:
+		say "Fleur d'Or lobby";
+	otherwise if R is Fleur d'Or Drinks Club:
+		say "Fleur d'Or drinks club";
+	otherwise if R is Beside Slango's Ship:
+		say "Slango's ship";
+	otherwise if R is Brock's Stateroom:
+		say "Brock's stateroom";
+	otherwise if R is Brock's Head:
+		say "Brock's head";
+	otherwise if R is Slango's Bunk:
+		say "Slango's bunk";
+	otherwise if R is Slango's Head:
+		say "Slango's head";
+	otherwise if R is Your Bunk:
+		say "our bunk";
+	otherwise if R is Your Head:
+		say "our head";
+	otherwise if R is the Oracle Project:
+		say "Oracle project";
+	otherwise if R is the bureau hallway:
+		say "hallway";
+	otherwise if R is Bureau Basement South or R is Bureau Basement Middle or R is Bureau Basement Secret Section:
+		say "Bureau basement";
+	otherwise if R is Counterfeit Monkey or R is Aquarium Bookstore or R is Babel Café or R is New Church or R is the Oracle Project or R is proper-named:
+		say the printed name of R;
+	otherwise:
+		let N be the printed name of R;
+		now N is N in lower case;
+		say N;
+
 Rule for distantly describing a room (called target) (this is the new distant description rule):
-	say "[We] make out [the target] that way."
+	say "[We] make out [if target is always-definite][the target][otherwise][a target][end if] that way."
 
 The default distant description rule is not listed in any rulebook.
 
+Rule for printing the name of a room (called R) while listing exits or facing or distantly describing or describing path of something :
+	say "[in-sentence-room-name for R]".
+
+[When story begins:
+	repeat with R running through rooms:
+		carry out the distantly describing activity with the R.]
+
 Rule for distantly describing a room (called target) which encloses someone when the location is indoors:
-	say "That way [we] can see [the target], in which [is-are a list of people enclosed by the target]."
+	say "That way [we] can see [if target is always-definite][the target][otherwise][a target][end if], in which [is-are a list of people enclosed by the target]."
 
 Check looking toward a room (this is the new can't see through closed door rule):
 	now the occluding door is the door direction faced from the location;
