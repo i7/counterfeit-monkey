@@ -1194,7 +1194,7 @@ There's even a little washing machine, for items too big to hand-wash in the sin
 
 Out-direction of Galley is up. [Back up to navigation area]
 
-A built-in table is scenery in the Galley. It is a supporter. The description is "When the weather is good and there is nothing urgent happening, you all often eat out on the sunning deck, which is more congenial; but at other times you take your meals down here, on this table. The seating is built-in.". Some seating is part of the built-in table. The seating is an enterable supporter. Understand "built-in seating" as the seating.
+A built-in table is scenery in the Galley. It is a supporter. The description is "When the weather is good and there is nothing urgent happening, you all often eat out on the sunning deck, which is more congenial; but at other times you take your meals down here, on this table. The seating is built-in.". Some seating is part of the built-in table. The seating is an enterable supporter. The seating allows seated. Understand "built-in seating" as the seating.
 
 The galley cabinet is a scenery cabinet in the Galley.
 
