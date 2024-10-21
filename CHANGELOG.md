@@ -17,6 +17,8 @@
 - Run-time problem P60 would occur when using the soap dispenser after removing all sinks. (@Stealthii)
 - Turning on the tap while in a shower or bath would cause run-time problem P43 as the game attempted to move the player out of play. It was also possible to drop any objects in the bath or shower, and then remove them from play by turning on the tap. We fix this by blocking entry into showers and baths. (@Roachbones).
 - The first aid station was not fixed in place and could be picked up, while its description still said it was mounted to the wall. (@lynn)
+- Brock could be turned into a bock, potentially breaking the game. (@Roachbones)
+- It is now possible to sit on the built-in seating in the Galley. (@Roachbones)
 
 ### Cosmetic output errors
 
