@@ -712,6 +712,9 @@ Sanity-check going from the Sensitive Equipment Testing Room:
 Check waving the letter-remover at Brock when the current setting of the letter-remover is "b":
 	say "Brock would never forgive [us] if [we] turned him back into a rock now." instead.
 
+Check waving the letter-remover at Brock when the current setting of the letter-remover is "r":
+	say "Brock would never forgive [us] if [we] turned him into a Bock now." instead.
+
 Carry out putting gel on the rock when the player does not know brock-found:
 	now the player knows brock-found;
 	complete "Find Brock";
