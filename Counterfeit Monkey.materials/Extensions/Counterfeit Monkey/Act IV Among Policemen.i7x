@@ -713,7 +713,7 @@ Check waving the letter-remover at Brock when the current setting of the letter-
 	say "Brock would never forgive [us] if [we] turned him back into a rock now." instead.
 
 Check waving the letter-remover at Brock when the current setting of the letter-remover is "r":
-	say "Brock would never forgive [us] if [we] turned him into a Bock now." instead.
+	say "Brock would never forgive [us] if [we] turned him into a bock now." instead.
 
 Carry out putting gel on the rock when the player does not know brock-found:
 	now the player knows brock-found;
