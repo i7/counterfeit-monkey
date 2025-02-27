@@ -981,7 +981,7 @@ A first every turn rule (this is the win the tube rule):
 			now the barker is nowhere;
 			say "There is a [if the ear is in a pan]disgusted gasp[otherwise]cheer[end if] from the spectators. [The word-balance] tilts slowly but inexorably.
 
-	[The barker] looks astonished and displeased, except for a fraction of a second when he just noticeably winks. With exaggerated bad grace hands us [a gel]. 'There's your prize. And now this contest is over.'
+	[The barker] looks astonished and displeased, except for a fraction of a second when he just noticeably winks. With exaggerated bad grace he hands us [a gel]. 'There's your prize. And now this contest is over.'
 
 	He stalks away.";
 			record "winning the gel" as achieved;
