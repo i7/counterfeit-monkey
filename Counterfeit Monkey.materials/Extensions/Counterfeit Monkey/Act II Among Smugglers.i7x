@@ -534,6 +534,9 @@ Every turn when the trap-door is open and the trap-door is not wedged by somethi
 Instead of going to the Crawlspace when the Crawlspace is visited and the trap-door is not wedged by something:
 	say "Let's wait to explore down there until [we] can make sure the trap door won't slam on us."
 
+Before going down when the player is on the tarpaulin-covered masses:
+	try exiting instead.
+
 Before closing a door which is wedged by something (called the impediment):
 	say "(first removing [the impediment])[command clarification break]";
 	try taking the impediment;
