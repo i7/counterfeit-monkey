@@ -522,14 +522,14 @@ Every turn when the trap-door is open and the trap-door is not wedged by somethi
 	now the trap-door is closed;
 	if the location is the Crawlspace or the location is the Tin Hut:
 		say "The trap-door makes a creaking noise and slams shut again";
-	if the player is in the Crawlspace:
-		say ". I DO NOT LIKE being in the dark in a confined space with potential rats. Sorry, I'm getting us out of here. You can come back later.";
-		custom-wait for any key;
-		try going up;
-	otherwise if Crawlspace is not visited:
-		say ". They must prop it open when they use it.";
-	otherwise:
-		say "."
+		if the player is in the Crawlspace:
+			say ". I DO NOT LIKE being in the dark in a confined space with potential rats. Sorry, I'm getting us out of here. You can come back later.";
+			custom-wait for any key;
+			try going up;
+		otherwise if Crawlspace is not visited:
+			say ". They must prop it open when they use it.";
+		otherwise:
+			say "."
 
 Instead of going to the Crawlspace when the Crawlspace is visited and the trap-door is not wedged by something:
 	say "Let's wait to explore down there until [we] can make sure the trap door won't slam on us."
