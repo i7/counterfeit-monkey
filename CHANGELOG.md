@@ -19,6 +19,7 @@
 - The first aid station was not fixed in place and could be picked up, while its description still said it was mounted to the wall. (@lynn)
 - Brock could be turned into a bock, potentially breaking the game. (@Roachbones)
 - It is now possible to sit on the built-in seating in the Galley. (@Roachbones)
+- Creating the scree will once again kill the player. (This was changed in release 9.) The movie screen is assumed to always be in place in too many places in the code. (Mike Russo)
 
 ### Cosmetic output errors
 
@@ -32,6 +33,8 @@
 - Eliminates many unintended double spaces throughout the output text. (@Roachbones, @lynn)
 - There would in some cases be a missing newline after the "Batman remark" at the end of the roundabout scene. (@eriktorbjorn)
 - There would sometimes be a superfluous "I can't see what you're talking about" message when use of the letter-remover was attempted but disallowed. (@eriktorbjorn)
+- A couple of missing words ("he" and "when", to be precise) in output text were corrected. (Mike Russo)
+- A stray period was printed when exiting the tin hut while the trap door was closing. (Mike Russo)
 
 ### Parsing
 
@@ -41,6 +44,7 @@
 - DEMO is now understood as DEMONSTRATION. (@Stealthii)
 - Contractions such as WHAT'S, HE'S, and IT'S are understood. (@Stealthii)
 - Adds more synonyms to the "ask why he is here" quip for the gift shop volunteer. WHY ARE YOU HERE and ASK WHY HE IS THERE now work.
+- Going DOWN when standing on the tarpaulin-covered masses in the tin hut will no longer make the player try to enter the trap door. (Mike Russo)
 
 ## Release 11
 
