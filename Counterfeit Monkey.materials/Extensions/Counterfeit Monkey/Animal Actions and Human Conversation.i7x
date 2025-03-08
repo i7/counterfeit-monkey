@@ -3815,10 +3815,13 @@ To say game-coaching:
 	otherwise:
 		say "The barman keeps an eye on our remaining time."
 
+The liquid wager rules is an object-based rulebook.
+The tiny wager rules is an object-based rulebook.
+The import wager rules is an object-based rulebook.
+
 The wager is an object that varies. The wager is yourself.
-The proposed solution is an object that varies.
 The wager-name is an object that varies.
-The wager-judging rule is a rule that varies. The wager-judging rule is the liquid wager rule.
+The wager-judging rules is an object-based rulebook that varies. The wager-judging rules is the liquid wager rules.
 The wager-index is a number that varies.
 
 Instead of giving something to the barman when play the game is the current quip and the wager is yourself:
@@ -3831,7 +3834,6 @@ Instead of showing something (called the item) to the barman when play the game 
 		say "'No no no,' he says. 'No suicides or self-inanimations in my bar today, thanks.'" instead;
 	now the wager-name is the item;
 	now the wager is the item;
-	now the proposed solution is the item;
 	make wager choice;
 	while something (called the wager-parent) which is not the wager proffers the wager:
 		now the wager is the wager-parent;
@@ -3841,22 +3843,20 @@ Instead of showing something (called the item) to the barman when play the game 
 Instead of showing something (called the item) to the barman when the wager is not the player:
 	if the item is not proffered by the wager:
 		say "'Sorry,' he says, 'but I know that didn't come from [the wager-name] you bet on.'" instead;
-	now the proposed solution is the item;
-	follow the wager-judging rule;
+	follow the wager-judging rules for the item;
 	if the rule succeeded:
 		now the origin paste is won;
 		record "winning a barroom bet" as achieved;
 		try the barman discussing wager-won;
 		now the wager is the player;
 	otherwise:
-		choose a row with a selected rule of wager-judging rule in the Table of Wager Suggestions;
+		choose a row with a selected rule of wager-judging rules in the Table of Wager Suggestions;
 		say "'[one of]That doesn't fit the category[or][personal no][or][awkward no][at random],' says [the barman]. [summary entry][paragraph break]".
 
 Every turn when the location is Counterfeit Monkey and the wager is not the player and the paste is not won:
 	repeat with item running through things which are proffered by the wager:
 		if the item is marked-visible:
-			now the proposed solution is the item;
-			follow the wager-judging rule;
+			follow the wager-judging rules for the item;
 			if the rule succeeded:
 				now the origin paste is won;
 				record "winning a barroom bet" as achieved;
@@ -3876,9 +3876,9 @@ To make wager choice:
 	let selection be false;
 	while selection is false:
 		choose row N in the Table of Wager Suggestions;
-		follow the selected rule entry;
+		follow the selected rule entry for the wager;
 		if the rule failed:
-			now the wager-judging rule is the selected rule entry;
+			now the wager-judging rules is the selected rule entry;
 			now the wager-index is N;
 			now selection is true;
 		otherwise:
@@ -3888,27 +3888,27 @@ To make wager choice:
 
 To say wager-choice:
 	say "[run paragraph on]";
-	choose a row with a selected rule of wager-judging rule in the Table of Wager Suggestions;
+	choose a row with a selected rule of wager-judging rules in the Table of Wager Suggestions;
 	say "[description entry]";
 
-Sanity-check drinking the wager when the wager-judging rule is the tiny wager rule:
+Sanity-check drinking the wager when the wager-judging rules is the tiny wager rules:
 	say "You know from experience that a quantity of liquid smaller than a pebble is not deemed to count." instead.
 
 Table of Wager Suggestions
-description	summary (a text)	selected rule (a rule)
-"'Something smaller than a pebble!' suggests a woman in the front row. She passes forward her own ante to the bar, and the game is on."	"'[one of]I know the definition of 'small' is a bit vague, but think smaller than that. Pebble-sized or smaller.[or]That's not quite within the range of small as I understand it.[at random]'"	tiny wager rule
-"'A liquid,' says a gruff man. ('You always say liquid!' complains one of the others. 'It's his fav[our]ite thing!' says a third.) But the ante is submitted and the challenge set."	"'It has to be a liquid [--] any kind.'"	liquid wager rule
-"'Import Category 5!' shouts a voice. [paragraph break]The barman raises his eyebrows apologetically and says, 'It's a well-defined category, so I have to allow it: any kind of edible consumable object, be that food or beverage, that does not fall under the botanical import category. So no fruits or vegetables.'"	"[if the noun is a vegetable]'[The noun] is an agricultural import, so it's outside category 5. You need something consumable but not a fruit or vegetable.'[otherwise]'It has to be some kind of consumable thing but not a vegetable or fruit.'[end if]"	import wager rule
+description	summary (a text)	selected rule (an object-based rulebook)
+"'Something smaller than a pebble!' suggests a woman in the front row. She passes forward her own ante to the bar, and the game is on."	"'[one of]I know the definition of 'small' is a bit vague, but think smaller than that. Pebble-sized or smaller.[or]That's not quite within the range of small as I understand it.[at random]'"	tiny wager rules
+"'A liquid,' says a gruff man. ('You always say liquid!' complains one of the others. 'It's his fav[our]ite thing!' says a third.) But the ante is submitted and the challenge set."	"'It has to be a liquid [--] any kind.'"	liquid wager rules
+"'Import Category 5!' shouts a voice. [paragraph break]The barman raises his eyebrows apologetically and says, 'It's a well-defined category, so I have to allow it: any kind of edible consumable object, be that food or beverage, that does not fall under the botanical import category. So no fruits or vegetables.'"	"[if the noun is a vegetable]'[The noun] is an agricultural import, so it's outside category 5. You need something consumable but not a fruit or vegetable.'[otherwise]'It has to be some kind of consumable thing but not a vegetable or fruit.'[end if]"	import wager rules
 
 
-The wager-assessment rules are an object-based rulebook.
 
-A wager-assessment rule (this is the liquid wager rule):
+
+A liquid wager rule for something (called the proposed solution) (this is the liquid wager rule):
 	if the proposed solution is fluid:
 		rule succeeds;
 	rule fails.
 
-A wager-assessment rule (this is the tiny wager rule):
+A tiny wager rule for something (called the proposed solution) (this is the tiny wager rule):
 	if the proposed solution is nothing:
 		say "Error: wager-assessment tested with nothing!";
 		rule fails;
@@ -3916,7 +3916,7 @@ A wager-assessment rule (this is the tiny wager rule):
 		rule succeeds;
 	rule fails.
 
-A wager-assessment rule (this is the import wager rule):
+A import wager rule for something (called the proposed solution) (this is the import wager rule):
 	if the proposed solution is edible and the proposed solution is not a vegetable:
 		rule succeeds;
 	rule fails.
