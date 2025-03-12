@@ -18,7 +18,7 @@ Instead of waving the letter-remover at yourself when the current setting of the
 Check waving the letter-remover at yourself when the current setting of the letter-remover is "i":
 	say "If this were likely to work, it would be a terrible idea. Fortunately, we don't self-identify simply as I, and secondly, the letter-remover won't remove the last letter of something." instead.
 
-The printed name of the player is "Alexandra". [This seems to have no effect whatsoever]
+The printed name of yourself is "Alexandra". [This seems to have no effect whatsoever]
 
 Understand "us" or "ourselves" or "we" or "ourself" or "alexandra" or "your/my/our/-- body" or "you/yourself" as yourself.
 
