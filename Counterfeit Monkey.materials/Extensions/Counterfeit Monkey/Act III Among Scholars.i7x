@@ -155,7 +155,7 @@ The hotel has recently had a face lift, with the silly old ornamentation pried o
 If you are my mother, you call this style Atlantean Postmodern. Less kindly, it is something from the sweaty dreams of an upscale swimming-pool installer."
 
 
-Fleur d'Or lobby is indoors, proper-named and southern. The room divider is a scenery thing in Fleur d'Or Lobby. The printed name is "sheet of frosted glass". Understand "glass" or "sheet" or "sheet of" or "frosted" or "annotation" or "primordial" or "primeval" or "sea" as the room divider. The description is "The glass is a good three quarters of an inch thick, and looks very sturdy. The etched letters glow or fade out again depending on the changing light conditions in the lobby.
+Fleur d'Or lobby is indoors, improper-named and southern. The room divider is a scenery thing in Fleur d'Or Lobby. The printed name is "sheet of frosted glass". Understand "glass" or "sheet" or "sheet of" or "frosted" or "annotation" or "primordial" or "primeval" or "sea" as the room divider. The description is "The glass is a good three quarters of an inch thick, and looks very sturdy. The etched letters glow or fade out again depending on the changing light conditions in the lobby.
 
 Annotation in the corner indicates that this is a commissioned artwork by Anne Landis Rosehip, entitled 'The Primeval Sea.'"
 
@@ -231,7 +231,7 @@ Rule for writing a topic sentence about the piano:
 
 Section 4 - Drinks Club
 
-Fleur d'Or Drinks Club is west of Fleur d'Or Lobby. It is indoors, checkpoint, proper-named and southern. The description is "The back wall is dramatically decorated with bottled liquors of all sorts, from gin to cachaça; there's a giant bottle of Campari, taller than your average three-year-old, with a red ribbon around its neck.
+Fleur d'Or Drinks Club is west of Fleur d'Or Lobby. It is indoors, checkpoint, improper-named and southern. The description is "The back wall is dramatically decorated with bottled liquors of all sorts, from gin to cachaça; there's a giant bottle of Campari, taller than your average three-year-old, with a red ribbon around its neck.
 
 What makes this place technically a drinks club rather than a bar is its lic[ense] to serve letter-manufactured food and drink. [A toolkit] on the [dor-bar-top] contains [a list of things *in the toolkit], ready to be transformed into their respective cocktails."
 
@@ -355,7 +355,7 @@ The apartment complex is a facade in Palm Square. The initial appearance is "I l
 
 Section 2 - Babel Cafe
 
-South of Palm Square is Babel Café. Understand "cafe" as the Babel Café. The description of Babel Café is "Through many changes of management, this institution has fed the denizens of the university and ignored their semi-sedition." Babel Café is indoors, proper-named and southern.
+South of Palm Square is Babel Café. Understand "cafe" as the Babel Café. The description of Babel Café is "Through many changes of management, this institution has fed the denizens of the university and ignored their semi-sedition." Babel Café is indoors, improper-named and southern.
 
 Out-direction of Babel Café is north. [Back to Palm Square]
 
@@ -388,7 +388,7 @@ Section 3 - Apartment Window
 
 Southwest of Palm Square is a apartment door. apartment door is a lockable locked door. It is scenery. Southwest of apartment door is My Apartment.
 
-My Apartment is southern checkpoint. Understand "home" as My Apartment.
+My Apartment is southern proper-named checkpoint. Understand "home" as My Apartment.
 
 Understand "go home" as home-going. Home-going is an action applying to nothing.
 
@@ -420,11 +420,11 @@ But if you insist, my apartment is actually pitifully easy to break into. That w
 
 Understand "force [something openable]" or "force [something openable] open" as opening.
 
-Rule for printing the name of my apartment while listing exits or facing:
+[Rule for printing the name of my apartment while listing exits or facing:
 	say "my apartment".
 
 Rule for printing the name of apartment bathroom while listing exits or facing:
-	say "apartment bathroom".
+	say "apartment bathroom".]
 
 After going through the bathroom window:
 	let N be the number of entries in the path so far of the player;
@@ -1058,7 +1058,7 @@ The description of the mailboxes is "There are slots for all the professors and 
 
 Section 5 - Higgate's Office
 
-Higgate's office is an office. It is privately-controlled, checkpoint and southern.
+Higgate's Office is an office. It is privately-controlled, checkpoint and southern.
 
 Higgate's office door is west of the Language Studies Department Office. Higgate's office door is a door. It is open and lockable and scenery. The description is "A nondescript office door with Professor Higgate's name on it." Understand "west door" or "name" as higgate's office door when the location is the Language Studies Department Office.
 
@@ -1917,7 +1917,7 @@ Rule for deciding the concealed possessions of Professor Brown:
 
 Section 11 - Lecture Hall
 
-Lecture Hall 1 is east of Samuel Johnson Basement. The description is "The main lecture hall used for large survey courses in language studies offered to undergraduates. I sat through courses here when I was an undergraduate myself, and have now delivered a few lectures as a teaching assistant." Lecture Hall 1 is indoors and southern and checkpoint.
+Lecture Hall 1 is east of Samuel Johnson Basement. The description is "The main lecture hall used for large survey courses in language studies offered to undergraduates. I sat through courses here when I was an undergraduate myself, and have now delivered a few lectures as a teaching assistant." Lecture Hall 1 is indoors, southern, improper-named and checkpoint.
 
 Out-direction of Lecture Hall 1 is west. [Back to Samuel Johnson basement]
 
@@ -1931,10 +1931,10 @@ The printed name is "Lecture Hall". Understand "podium" or "at podium" or "at th
 After printing the name of Lecture Hall 1 while not constructing the status line:
 	say " [roman type](at the [podium])".
 
-Instead of looking toward Lecture Hall 1 when the location is Samuel Johnson Basement:
+Rule for distantly describing Lecture Hall 1 when the location is Samuel Johnson Basement:
 	say "There is a lecture room to the east."
 
-Instead of looking toward Lecture Hall 1:
+Rule for distantly describing Lecture Hall 1:
 	say "[We] see the podium that way."
 
 The podium is a supporter in Lecture Hall 1. It is scenery. The description is "An advanced, pre-wired [podium] that allows the instructor to project slides from a laptop or show movies."
@@ -1973,13 +1973,13 @@ A dangerous destruction rule for the conference poster:
 Sanity-check looking under the conference poster when the conference poster is fixed in place:
 	say "That would be hard to do without ripping it off the wall." instead.
 
-Lecture Hall 2 is south of Lecture Hall 1. The printed name is "Lecture Hall". Understand "seats" or "among the seats" or "among seats" or "(among seats)" or "(among the seats)" as Lecture Hall 2. Lecture Hall 2 is indoors and southern.
+Lecture Hall 2 is south of Lecture Hall 1. The printed name is "Lecture Hall". Understand "seats" or "among the seats" or "among seats" or "(among seats)" or "(among the seats)" as Lecture Hall 2. Lecture Hall 2 is indoors, improper-named and southern.
 	The description is "Many are the fine hours I have spent here dozing; and many are the students of mine who have done the same. The circle of life becomes complete."
 
 After printing the name of Lecture Hall 2 while not constructing the status line:
 	say " [roman type](among the [if boldening is true][bold type][end if]seats[roman type])".
 
-Instead of looking toward Lecture Hall 2:
+Rule for distantly describing Lecture Hall 2:
 	say "[We] see the seats that way."
 
 Some wooden seats are supporters in Lecture Hall 2. Understand "hard" or "wood" as the wooden seats. The initial appearance is "The room extends [if Location is Lecture Hall 1]south[otherwise]north[end if], full of hard [wooden seats]." The description is "Ingeniously uncomfortable."

@@ -392,7 +392,7 @@ My backpack is stowed under a seat in the third row from the back. I figured tha
 
 /(There are a flash drive and a monocle in the backpack|The backpack contains a flash drive and a monocle).
 
-We can go north and east to the Cinema Lobby from here.
+We can go north and east to the cinema lobby from here.
 
 > get all
 /backpack: We (take|get|pick up|acquire) the backpack. Mine: a little bit worn, but capacious. It doesn't have any identifying marks on it, and I thought a brand-new bag would look more suspicious. It's closed.
@@ -1293,7 +1293,7 @@ Immediately west, the Counterfeit Monkey's sign sways in the wind.
 The snapping continues.
 
 > go to convenience
-/(We have a( quick| short| brief)?|It's a( short| quick| brief)?|We) drive through the marina district (over to|to|as far as) the Roundabout.
+/(We have a( quick| short| brief)?|It's a( short| quick| brief)?|We) drive through the marina district (over to|to|as far as) the roundabout.
 
 The whole Roundabout has ground to a halt, with protesters walking in the street and in some places completely filling the road. But this is mostly a nuisance until I notice that there are a couple of teenagers handcuffed to a tree.
 
@@ -1969,7 +1969,7 @@ The snapping continues.
 
 > w
 
-Higgate's office
+Higgate's Office
 Higgate got about 30% finished with a stylish decorating scheme and then got distracted, leaving everything in a unsettled state. A few of her books are arranged on a very nice rosewood bookshelf, which looks Asian and is ornamented with small figurines; all the rest of her library is stacked higgledy-piggledy in plastic cartons.
 
 Professor Higgate is sitting at an oval table, on which are spread an ugly yellow book, a sugar bowl, a teapot, and a romance novel in some heavily accented language. Higgate is the second reader on my dissertation committee, and a conlang expert — that is, Constructed Languages. It was a seminar with her that really got me thinking about utopian linguistics, and she's been very supportive, though cautious. She and Professor Waterstone don't always get along that well.
@@ -2711,7 +2711,7 @@ We dip out a pea-sized quantity of gel and rub it gently onto the otter. With an
 The snapping continues.
 
 > go to winding path
-/(We |We have a (rather tiring|lengthy|long) |We make the( rather tiring| lengthy| long)? |It's a( rather tiring| lengthy| long)? )(walk|hike) out from under the sycamores in the Oval and up Long Street (over to|as far as|to) the Monumental Staircase. From there we have an invigorating climb up, with the view of the sea getting better and better as we go \(but of course looking requires stopping to gaze back over our shoulder\).
+/(We |We have a (rather tiring|lengthy|long) |We make the( rather tiring| lengthy| long)? |It's a( rather tiring| lengthy| long)? )(walk|hike) out from under the sycamores in the Oval and up Long Street (over to|as far as|to) the monumental staircase. From there we have an invigorating climb up, with the view of the sea getting better and better as we go \(but of course looking requires stopping to gaze back over our shoulder\).
 
 We walk through the wealthy neighborhood to Roget Close. There we slip between the houses and down a path that looks as though it might lead to someone's back yard. No one has ever put up signage to correct this misapprehension because no one who lives around here is eager to encourage strangers on the private beach.
 
@@ -2944,7 +2944,7 @@ We reset the device to y. The sticky gives way to the now-familiar stick.
 The snapping continues.
 
 > go to tall street
-/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) (over to|as far as|to) the University Oval.
+/(We |We have a (brief|quick|short) |We make the( brief| quick| short)? |It's a( brief| quick| short)? )(walk|hike) (over to|as far as|to) the university oval.
 
 University Oval
 This is the center of the university, a broad grassy oval shaded with sycamore trees and surrounded by buildings in brick or white stone.
@@ -3043,7 +3043,7 @@ We step on a twig before we back away again.
 
 It is a place that might have been developed long ago; only it is known that there are remains of Roman settlement here, and there is a risk that digging out the foundations would turn up some of those ruins, exposing a large number of Latin-language objects to the light of day. To prevent this catastrophe the whole area has been placed off limits to development.
 
-We can go southeast to the Bus Station and west to Tall Street from here.
+We can go southeast to the bus station and west to Tall Street from here.
 
 The snapping continues.
 
@@ -3053,7 +3053,7 @@ In contrast with the parks in the more savory parts of town, this is a bit of pa
 
 A twig lies in the grass.
 
-We can go southeast to the Bus Station and west to Tall Street from here.
+We can go southeast to the bus station and west to Tall Street from here.
 
 > listen
 The crowd to the west is noisy and getting noisier.
@@ -3228,7 +3228,7 @@ In contrast with the parks in the more savory parts of town, this is a bit of pa
 
 A twig lies in the grass.
 
-We can go southeast to the Bus Station and west to Tall Street from here.
+We can go southeast to the bus station and west to Tall Street from here.
 
 The snapping continues.
 
@@ -3329,7 +3329,7 @@ An instructive notice details the criteria for entry to the Bureau proper.
 
 Here to guard access to the rest of the building is a secretary on a tall stool. The secretary is carrying the Regulation Authentication Scope and wearing a pencil skirt and a plain white top.
 
-We can go north to the Rotunda and east from here.
+We can go north to the rotunda and east from here.
 
 She turns her eyes towards us but doesn't say anything.
 
@@ -3396,7 +3396,7 @@ Time passes.
 Bureau Hallway
 This is a long hallway with many doors leading off, the business of the bureau being varied and all-encompassing; it is for all essential purposes the chief organ of government in Atlantis, since only a few topics are brought to citizen referendum.
 
-We can go east, west to the Antechamber, and down from here.
+We can go east, west to the antechamber, and down from here.
 
 > e
 
@@ -3410,7 +3410,7 @@ I'm pretty sure that hanging out here is the best way to get caught in a hurry, 
 Bureau Hallway
 This is a long hallway with many doors leading off, the business of the bureau being varied and all-encompassing; it is for all essential purposes the chief organ of government in Atlantis, since only a few topics are brought to citizen referendum.
 
-We can go east to the All-Purpose Office, west to the Antechamber, and down from here.
+We can go east to the all-purpose office, west to the antechamber, and down from here.
 
 > d
 
@@ -3419,7 +3419,7 @@ We have descended into a windowless underground passage. The hallway runs north 
 
 Propped in the corner are some articles that were probably meant to be used as part of the Serial Comma Day Fair, but got confiscated instead: a seer automaton and a plywood cutout depicting Atlantida.
 
-We can go north and up to the Bureau Hallway from here.
+We can go north and up to the hallway from here.
 
 > n
 
@@ -4029,7 +4029,7 @@ This passage has been cut through natural cliff rock and looks older than the Bu
 
 Blocking the far end of the corridor is a metal portcullis. It is currently lowered. From the pulley above the portcullis hangs a counter.
 
-I can go east through the portcullis (closed) and up to the Surveillance Room from here.
+I can go east through the portcullis (closed) and up to the surveillance room from here.
 
 /(A breeze along the passage stirs the dust.|Something like the cry of a seagull comes down the passage.)?
 
@@ -4054,7 +4054,7 @@ A programmable dais sits in the middle of the room. It has the raw look of lab e
 
 A specialized wall socket is built into the east wall, clearly not part of the ordinary power system for the Bureau.
 
-I can go east and west to the Surveillance Room from here.
+I can go east and west to the surveillance room from here.
 
 > e
 
@@ -4097,7 +4097,7 @@ A programmable dais sits in the middle of the room. It has the raw look of lab e
 
 A specialized wall socket is built into the east wall, clearly not part of the ordinary power system for the Bureau.
 
-I can go east to the Generator Room and west to the Surveillance Room from here.
+I can go east to the generator room and west to the surveillance room from here.
 
 > plug dais into wall
 I plug the power cord firmly into the dais socket. The other end remains free and not plugged into anything.
@@ -4132,7 +4132,7 @@ This passage has been cut through natural cliff rock and looks older than the Bu
 
 Blocking the far end of the corridor is a metal portcullis. It is currently lowered. There's a pulley and hook arrangement above the portcullis, but the hook is empty.
 
-I can go east through the portcullis (closed) and up to the Surveillance Room from here.
+I can go east through the portcullis (closed) and up to the surveillance room from here.
 
 > put counterweight on hook
 I hang the counterweight on the hook. The portcullis shifts slightly but doesn't rise on its own. Perhaps with a little help, though.
@@ -4254,7 +4254,7 @@ A set of children's playing jacks. They are lined up, with curious precision, in
 /I reset the device to s. There is a [a-z \-]+, and the jacks turn into a jack. A heavy-duty jack, suitable for raising cars or other substantial objects.
 
 > go to workshop
-/(It's a |I (make the ))?(short |quick |brief |)(walk|hike) (over to|as far as|to) the Personal Apartment. There I try propping the portcullis with the jack.
+/(It's a |I (make the ))?(short |quick |brief |)(walk|hike) (over to|as far as|to) the personal apartment. There I try propping the portcullis with the jack.
 
 /(Then|Next|After that|From there) (I |I have a (brief|quick|short) |I make the( brief| quick| short)? |it's a( brief| quick| short)? )(walk|hike).
 
@@ -4265,7 +4265,7 @@ A programmable dais sits in the middle of the room. It has the raw look of lab e
 
 A power cord snakes across the floor, connecting the dais socket to the wall socket.
 
-I can go east to the Generator Room and west to the Surveillance Room from here.
+I can go east to the generator room and west to the surveillance room from here.
 
 I definitely hear footsteps. And voices.
 
@@ -4790,7 +4790,7 @@ A programmable dais sits in the middle of the room. It has the raw look of lab e
 
 A specialized wall socket is built into the east wall, clearly not part of the ordinary power system for the Bureau.
 
-You can go east and west to the Surveillance Room from here.
+You can go east and west to the surveillance room from here.
 
 > e
 
@@ -4839,7 +4839,7 @@ A programmable dais sits in the middle of the room. It has the raw look of lab e
 
 A specialized wall socket is built into the east wall, clearly not part of the ordinary power system for the Bureau.
 
-You can go east to the Generator Room and west to the Surveillance Room from here.
+You can go east to the generator room and west to the surveillance room from here.
 
 > w
 
@@ -4855,7 +4855,7 @@ This is nothing less than the command center for a massive propaganda campaign. 
 
 /A filing cabinet stands in the corner. It (rests|is|sits) on a long table, alongside a paperweight.
 
-You can go south to Wonderland and east to the Surveillance Room from here.
+You can go south to Wonderland and east to the surveillance room from here.
 
 > gel paperweight
 You dip out a pea-sized quantity of gel and rub it gently onto the paperweight. With an audible SPLORT, the paperweight becomes a weight and a paper.
@@ -5057,7 +5057,7 @@ This passage has been cut through natural cliff rock and looks older than the Bu
 
 Blocking the far end of the corridor is a metal portcullis. It is currently lowered. From the pulley above the portcullis hangs a counter.
 
-You can go east through the portcullis (closed) and up to the Surveillance Room from here.
+You can go east through the portcullis (closed) and up to the surveillance room from here.
 
 > get counter
 /You (take|get|pick up|acquire) the counter. One of those devices with a press-button to increment a number, to assist with counting things like the number of people attending an event. There's also a loop to let the user wear it over one finger. The counter currently reads 17.
@@ -5078,7 +5078,7 @@ A programmable dais sits in the middle of the room. It has the raw look of lab e
 
 A specialized wall socket is built into the east wall, clearly not part of the ordinary power system for the Bureau.
 
-You can go east to the Generator Room and west to the Surveillance Room from here.
+You can go east to the generator room and west to the surveillance room from here.
 
 > e
 
@@ -5119,7 +5119,7 @@ A programmable dais sits in the middle of the room. It has the raw look of lab e
 
 A specialized wall socket is built into the east wall, clearly not part of the ordinary power system for the Bureau.
 
-You can go east to the Generator Room and west to the Surveillance Room from here.
+You can go east to the generator room and west to the surveillance room from here.
 
 > plug dais into wall
 You plug the power cord firmly into the dais socket. The other end remains free and not plugged into anything.
@@ -5154,7 +5154,7 @@ This passage has been cut through natural cliff rock and looks older than the Bu
 
 Blocking the far end of the corridor is a metal portcullis. It is currently lowered. There's a pulley and hook arrangement above the portcullis, but the hook is empty.
 
-You can go east through the portcullis (closed) and up to the Surveillance Room from here.
+You can go east through the portcullis (closed) and up to the surveillance room from here.
 
 > put counterweight on hook
 You hang the counterweight on the hook. The portcullis shifts slightly but doesn't rise on its own. Perhaps with a little help, though.
@@ -5274,7 +5274,7 @@ A set of children's playing jacks. They are lined up, with curious precision, in
 /You reset the device to s. There is a [a-z \-]+, and the jacks turn into a jack. A heavy-duty jack, suitable for raising cars or other substantial objects.
 
 > go to workshop
-/(You|(It's|You have) a (quick|brief|short))|You make the( quick| brief| short)? (walk|hike) (over to|as far as|to) Personal Apartment. There you try propping the portcullis with the jack.
+/(You|(It's|You have) a (quick|brief|short))|You make the( quick| brief| short)? (walk|hike) (over to|as far as|to) personal apartment. There you try propping the portcullis with the jack.
 
 /(Then|Next|After that|From there) (you |you have a (brief|quick|short) |you make the( brief| quick| short)? |it's a( brief| quick| short)? )(walk|hike).
 
@@ -5285,7 +5285,7 @@ A programmable dais sits in the middle of the room. It has the raw look of lab e
 
 A cord snakes across the floor, connecting the dais socket to the wall socket.
 
-You can go east to the Generator Room and west to the Surveillance Room from here.
+You can go east to the generator room and west to the surveillance room from here.
 
 You definitely hear footsteps. And voices.
 
