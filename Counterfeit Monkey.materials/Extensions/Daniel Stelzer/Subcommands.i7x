@@ -22,8 +22,8 @@ Include (-
 	first_word i j k l answer_words marker snip;
 	#Ifdef DEBUG;
 	if (parser_trace >= 4) {
-		print "	  [NounDomain called at word ", wn, "^";
-		print "	  ";
+		print "   [NounDomain called at word ", wn, "^";
+		print "   ";
 		if (indef_mode) {
 			print "seeking indefinite object: ";
 			if (indef_type & OTHER_BIT)	 print "other ";
@@ -34,10 +34,10 @@ Include (-
 			if (indef_type & UNLIT_BIT)	 print "unlit ";
 			if (indef_owner ~= 0) print "owner:", (name) indef_owner;
 			new_line;
-			print "	  number wanted: ";
+			print "   number wanted: ";
 			if (indef_wanted == INDEF_ALL_WANTED) print "all"; else print indef_wanted;
 			new_line;
-			print "	  most likely GNAs of names: ", indef_cases, "^";
+			print "   most likely GNAs of names: ", indef_cases, "^";
 		}
 		else print "seeking definite object^";
 	}
@@ -48,7 +48,7 @@ Include (-
 	SearchScope(domain1, domain2, context);
 
 	#Ifdef DEBUG;
-	if (parser_trace >= 4) print "	 [ND made ", number_matched, " matches]^";
+	if (parser_trace >= 4) print "   [ND made ", number_matched, " matches]^";
 	#Endif; ! DEBUG
 
 	wn = match_from+match_length;
@@ -66,7 +66,7 @@ Include (-
 	if (number_matched == 0) { wn++; rfalse; }
 
 	! Suppose that there really were some words being parsed (i.e., we did
-	! not just infer).	If so, and if there was only one match, it must be
+	! not just infer).  If so, and if there was only one match, it must be
 	! right and we return it...
 
 	if (match_from <= num_words) {
@@ -79,15 +79,15 @@ Include (-
 		}
 
 		! ...now suppose that there was more typing to come, i.e. suppose that
-		! the user entered something beyond this noun.	If nothing ought to follow,
+		! the user entered something beyond this noun.  If nothing ought to follow,
 		! then there must be a mistake, (unless what does follow is just a full
 		! stop, and or comma)
 
 		if (wn <= num_words) {
 			i = NextWord(); wn--;
 			if (i ~=  AND1__WD or AND2__WD or AND3__WD or comma_word
-				   or THEN1__WD or THEN2__WD or THEN3__WD
-				   or BUT1__WD or BUT2__WD or BUT3__WD) {
+					or THEN1__WD or THEN2__WD or THEN3__WD
+					or BUT1__WD or BUT2__WD or BUT3__WD) {
 				if (lookahead == ENDIT_TOKEN) rfalse;
 			}
 		}
@@ -126,16 +126,16 @@ Include (-
 		if (i) dont_infer = true;
 		i = Adjudicate(context);
 		if (i == -1) rfalse;
-		if (i == 1) rtrue;		 !	Adjudicate has made a multiple
-							 !	object, and we pass it on
+		if (i == 1) rtrue;		!  Adjudicate has made a multiple
+								!  object, and we pass it on
 		dont_inject_pronoun = true; ! See bug I7-2115 for discussion of this
 	}
 
 	! If i is non-zero here, one of two things is happening: either
 	! (a) an inference has been successfully made that object i is
-	!	  the intended one from the user's specification, or
+	!     the intended one from the user's specification, or
 	! (b) the user finished typing some time ago, but we've decided
-	!	  on i because it's the only possible choice.
+	!     on i because it's the only possible choice.
 	! In either case we have to keep the pattern up to date,
 	! note that an inference has been made and return.
 	! (Except, we don't note which of a pile of identical objects.)
@@ -262,8 +262,8 @@ Include (-
 	! Now we insert the answer into the original typed command, as
 	! words additionally describing the same object
 	! (eg, > take red button
-	!	   Which one, ...
-	!	   > music
+	!      Which one, ...
+	!      > music
 	! becomes "take music red button".	The parser will thus have three
 	! words to work from next time, not two.)
 
@@ -493,9 +493,9 @@ Include (-
 				if (actor == player) { ACTION_PROCESSING_INTERNAL_RM('D'); new_line; }
 				rtrue;
 			}
-		  ! === NEW ===
-		  noun.parsed_snippet = EmptySnippet;
-		  ! === END ===
+			! === NEW ===
+			noun.parsed_snippet = EmptySnippet;
+			! === END ===
 		}
 		if (((mask & NEED_NOUN_ABIT) == 0) && (noun ~= nothing)) {
 			if (actor == player) { ACTION_PROCESSING_INTERNAL_RM('E'); new_line; }
