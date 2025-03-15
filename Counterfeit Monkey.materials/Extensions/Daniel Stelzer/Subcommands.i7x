@@ -1,15 +1,23 @@
-Subcommands by Daniel Stelzer begins here.
+Version 3/250315 of Subcommands by Daniel Stelzer begins here.
 
 "Exposes the snippets referring to each noun."
 
 An object has a snippet called the subcommand. The subcommand property translates into I6 as "parsed_snippet".
 
 Include (-
+
 Property parsed_snippet;
 Constant EmptySnippet = 100;
+Global dont_inject_pronoun;
+
 -) after "Definitions.i6t".
 
 Include (-
+
+! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
+! Parser.i6t: Noun Domain
+! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
+
 [ NounDomain domain1 domain2 context dont_ask
 	first_word i j k l answer_words marker snip;
 	#Ifdef DEBUG;
@@ -120,6 +128,7 @@ Include (-
 		if (i == -1) rfalse;
 		if (i == 1) rtrue;		 !	Adjudicate has made a multiple
 							 !	object, and we pass it on
+		dont_inject_pronoun = true; ! See bug I7-2115 for discussion of this
 	}
 
 	! If i is non-zero here, one of two things is happening: either
@@ -280,6 +289,8 @@ Include (-
 
 	.RECONSTRUCT_INPUT;
 
+	dont_inject_pronoun = false;	! ADDED
+
 	num_words = WordCount(); players_command = 100 + num_words;
 	wn = 1;
 	#Ifdef LanguageToInformese;
@@ -362,16 +373,18 @@ Include (-
 			! (This is imperfect, but it's very seldom needed anyway.)
 
 			if (pattern-->j >= 2 && pattern-->j < REPARSE_CODE) {
-				PronounNotice(pattern-->j);
-				for (k=1 : k<=LanguagePronouns-->0 : k=k+3)
-					if (pattern-->j == LanguagePronouns-->(k+2)) {
-						parse2-->1 = LanguagePronouns-->k;
-						#Ifdef DEBUG;
-						if (parser_trace >= 5)
-							print "[Using pronoun '", (address) parse2-->1, "']^";
-						#Endif; ! DEBUG
-						break;
-					}
+				if (~~dont_inject_pronoun) {
+					PronounNotice(pattern-->j);
+					for (k=1 : k<=LanguagePronouns-->0 : k=k+3)
+						if (pattern-->j == LanguagePronouns-->(k+2)) {
+							parse2-->1 = LanguagePronouns-->k;
+							#Ifdef DEBUG;
+							if (parser_trace >= 5)
+								print "[Using pronoun '", (address) parse2-->1, "']^";
+							#Endif; ! DEBUG
+							break;
+						}
+				}
 			}
 			else {
 				! An inferred preposition.
