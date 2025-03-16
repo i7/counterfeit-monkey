@@ -650,7 +650,7 @@ Test it-construction with "autoupgrade / wave a-remover at pita / wave p-remover
 
 Chapter 4 - The Synthesizer
 
-The plexiglas case is a thing in the Language Studies Seminar Room. It is enterable, transparent, closed, openable, lockable, and locked. It is fixed in place. The initial appearance is "A massive plexiglas case takes up one corner of the room." The description is "The case is made of very thick protective plastic on a metal frame[if the screws are part of the plexiglas case and the plexiglas case is lockable]. It is thoroughly locked shut; I don't think [we][']ll have any luck with normal forms of approach. However, plexiglas is a cuttable substance with the right tools, and then there are the screws at the back[otherwise if the plexiglas case is not lockable]. The lid has been compromised by a saw, and the case is now permanenty open[end if]."
+The plexiglas case is a thing in the Language Studies Seminar Room. It is enterable, transparent, closed, openable, lockable, and locked. It is fixed in place. The initial appearance is "A massive plexiglas case takes up one corner of the room." The description is "The case is made of very thick protective plastic on a metal frame[if the screws are part of the plexiglas case and the plexiglas case is lockable]. It is thoroughly locked shut; I don't think [we][']ll have any luck with normal forms of approach. However, plexiglas is a cuttable substance with the right tools, and then there are the screws at the back[otherwise if the plexiglas case is not lockable]. The lid has been compromised by a saw, and the case is now permanently open[end if]."
 
 Test plexibug with "tutorial off / get plexiglas" in the Language Studies Seminar Room.
 
