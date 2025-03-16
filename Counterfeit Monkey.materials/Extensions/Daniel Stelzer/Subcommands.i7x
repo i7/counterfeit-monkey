@@ -72,9 +72,9 @@ Include (-
 	if (match_from <= num_words) {
 		if (number_matched == 1) {
 			i=match_list-->0;
-		! === NEW ===
-		i.parsed_snippet = snip;
-		! === END ===
+			! === NEW ===
+			i.parsed_snippet = snip;
+			! === END ===
 			return i;
 		}
 
@@ -86,8 +86,8 @@ Include (-
 		if (wn <= num_words) {
 			i = NextWord(); wn--;
 			if (i ~=  AND1__WD or AND2__WD or AND3__WD or comma_word
-					or THEN1__WD or THEN2__WD or THEN3__WD
-					or BUT1__WD or BUT2__WD or BUT3__WD) {
+				   or THEN1__WD or THEN2__WD or THEN3__WD
+				   or BUT1__WD or BUT2__WD or BUT3__WD) {
 				if (lookahead == ENDIT_TOKEN) rfalse;
 			}
 		}
@@ -154,9 +154,9 @@ Include (-
 		! === NEW ===
 		if (match_length == 0) {
 			(match_list-->0).parsed_snippet = EmptySnippet;
-		} else {	
+		} else {
 			(match_list-->0).parsed_snippet = 100 * match_from + match_length;
-		}	
+		}
 		! === END ===
 		return match_list-->0;
 	}
