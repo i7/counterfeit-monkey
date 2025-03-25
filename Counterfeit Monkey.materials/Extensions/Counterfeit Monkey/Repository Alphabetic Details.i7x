@@ -2350,7 +2350,7 @@ The printed name of the polling-chart is "polling chart". Understand "polling" o
 
 A poppycock is a noisy r-abstract thing. The indefinite article is "some". The heft of the poppycock is 0. The description is "A great deal of drivel. Or, no: more the concept of drivel, as regarded by a previous age.
 
-Curiously, therefore, the concept manifests itself as a little floaty cloud in which a flustered gent with Victorian [if the player wears the Britishizing goggles]moustaches[otherwise]mustaches[end if], verging on apoplexy."
+Curiously, therefore, the concept manifests itself as a little floaty cloud in which is a flustered gent with Victorian [if the player wears the Britishizing goggles]moustaches[otherwise]mustaches[end if], verging on apoplexy."
 
 Instead of listening to the poppycock, say "[one of]'POPPYCOCK!' shouts the little imaginary man[or]'ARRANT NONSENSE,' shouts the angry poppycock-gentleman[or]'STUFF! POPPYCOCK!' The imaginary man is beet red and his mustaches quiver[at random]."
 
