@@ -1310,6 +1310,14 @@ The expensive laptop is a laptop. The description is "It's Brock's fav[our]ite o
 The expensive laptop is running a password-lock program called Brock's security.
 	The password of Brock's security is "2!ch_nqrx@v".
 
+An input handling rule for Brock's security (this is the fix broken password rule):
+	let N be "[the topic understood]";
+	if N matches the text "2 ch_nqrx@v":
+		carry out the rewarding successful answering activity with Brock's security;
+		rule succeeds;
+	otherwise:
+		abide by the check for correct passwords rule.
+
 The expensive laptop is running a multiple-choice program called Brock-OS.
 	The options table of Brock-OS is the Table of GUI Choices.
 
