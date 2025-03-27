@@ -5167,7 +5167,7 @@ The waxen look melts and he grins. 'Thank god. It's harder than you'd expect bei
 weird-you-look is an NPC-directed quip.
 	The reply is "'It's weird [--] you have a different face but the expressions are still yours. It's like you have a really good rubber mask on.'"
 
-nice-garment is an NPC-directed quip.
+nice-garment is a weakly-phrased NPC-directed quip.
 	The reply is "'[worn-thing].'"
 
 To say worn-thing:
