@@ -1233,6 +1233,19 @@ Report switching on a computer (this is the new computers make a noise on starti
 
 The new computers make a noise on starting rule is listed instead of the computers make a noise on starting rule in the report switching on rulebook.
 
+After examining a switched on computer (this is the new report software when examining a functioning computer rule):
+	let target screen be a random screen that is part of the noun;
+	let player-wears-monocle be false;
+	if the player is wearing the monocle:
+		now player-wears-monocle is true;
+		now the player carries the monocle;
+	try examining the target screen;
+	if player-wears-monocle is true:
+		now the player wears the monocle;
+		continue the action.
+
+The new report software when examining a functioning computer rule is listed instead of the report software when examining a functioning computer rule in the after rulebook.
+
 Chapter 8 - The Origin Paste
 
 A thing can be disguised or undisguised. A thing is usually undisguised.
