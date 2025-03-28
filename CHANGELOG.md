@@ -20,6 +20,7 @@
 - Brock could be turned into a bock, potentially breaking the game. (@Roachbones)
 - It is now possible to sit on the built-in seating in the Galley. (@Roachbones)
 - Creating the scree will once again kill the player. (This was changed in release 9.) The movie screen is assumed to always be in place in too many places in the code. (Mike Russo)
+- The password to Brock's laptop would not be understood if entered verbatim (Mike Russo)
 
 ### Cosmetic output errors
 
@@ -33,8 +34,13 @@
 - Eliminates many unintended double spaces throughout the output text. (@Roachbones, @lynn)
 - There would in some cases be a missing newline after the "Batman remark" at the end of the roundabout scene. (@eriktorbjorn)
 - There would sometimes be a superfluous "I can't see what you're talking about" message when use of the letter-remover was attempted but disallowed. (@eriktorbjorn)
-- A couple of missing words ("he" and "when", to be precise) in output text were corrected. (Mike Russo)
+- Adds various missing words ("he", "when", and "is", to be precise) to the output text. (Mike Russo)
 - A stray period was printed when exiting the tin hut while the trap door was closing. (Mike Russo)
+- When Brock comments something the player is wearing, it could sometimes be accompanied by a bit of flavor text that would be repeated in the next paragraph. (Mike Russo)
+- Fixes a typo in the description of the synthesizer after sawing it open ("permanenty".) (@dstelzer)
+- Switching on or examining the ebook reader while wearing the monocle would produce some confusing text about examining the Book search engine. Interacting with other computers could produce similar undesired output. (Mike Russo)
+- The message when examining the player's yacht bed would start a sentence with a lower case letter. (Mike Russo)
+
 
 ### Parsing
 
