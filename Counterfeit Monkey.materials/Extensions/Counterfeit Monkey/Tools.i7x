@@ -1219,6 +1219,20 @@ But I have to say, you were right: the scope neither beeps nor blatts. [The acto
 First carry out looking at the inscription through an authentication scope:
 	say "[The second noun] begins to whirr and whirr, as though something inside has caught in an unresolvable loop. After a very long time, it whirrs down again without any noise of rejection or acceptance." instead.
 
+Report switching on a computer (this is the new computers make a noise on starting rule):
+	say "[The startup noise of the noun][paragraph break]" (A);
+	let target screen be a random screen that is part of the noun;
+	let player-wears-monocle be false;
+	if the player is wearing the monocle:
+		now player-wears-monocle is true;
+		now the player carries the monocle;
+	try examining the target screen;
+	if player-wears-monocle is true:
+		now the player wears the monocle;
+	stop the action.
+
+The new computers make a noise on starting rule is listed instead of the computers make a noise on starting rule in the report switching on rulebook.
+
 Chapter 8 - The Origin Paste
 
 A thing can be disguised or undisguised. A thing is usually undisguised.
