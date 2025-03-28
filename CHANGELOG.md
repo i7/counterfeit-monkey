@@ -5,22 +5,22 @@
 ### Bugs fixed
 
 - Search engine descriptions were not shown for the e-book reader and the secretary's computer. (@Roachbones)
-- The sun wasn't distant but behaved as if sitting right next to you (@Roachbones).
+- The sun did not have the "distant" attribute, but instead behaved as if being touchable. (@Roachbones)
 - With Andra in control, it was possible to get a reprise of Alex's hesitation speech by trying to go back in through the tall window, if you diregarded it the first time when going out. (@Roachbones)
 - Examining the word, the words, or the wordage could cause run-time problems. (@Roachbones)
 - The wordage description was broken since release 7.
 - The start up data embedded in the game file was bad in the two previous releases. The game will now print a warning at startup if it detects bad embedded data. (@hanna-kruppe)
 - Run-time problem P10 would occur when trying to remove letters from the current room. (@eriktorbjorn)
-- Lena would occasionally ask the player to change the modem when it is no longer present. (@eriktorbjorn)
+- Lena would occasionally ask the player to change the modem even though it is no longer present. (@eriktorbjorn)
 - The fast travel GO TO command could be used to bypass the confrontation with Alex's father (@DefKonOne).
 - Typing EXAMINE DIRECTION and then replying with a direction (such as NORTH) to the resulting "Which do you mean" disambiguation question would cause run-time problem P10.
-- Run-time problem P60 would occur when using the soap dispenser after removing all sinks. (@Stealthii)
+- Run-time problem P60 would occur when using the soap dispenser after removing all the sinks. (@Stealthii)
 - Turning on the tap while in a shower or bath would cause run-time problem P43 as the game attempted to move the player out of play. It was also possible to drop any objects in the bath or shower, and then remove them from play by turning on the tap. We fix this by blocking entry into showers and baths. (@Roachbones).
 - The first aid station was not fixed in place and could be picked up, while its description still said it was mounted to the wall. (@lynn)
 - Brock could be turned into a bock, potentially breaking the game. (@Roachbones)
 - It is now possible to sit on the built-in seating in the Galley. (@Roachbones)
-- Creating the scree will once again kill the player. (This was changed in release 9.) The movie screen is assumed to always be in place in too many places in the code. (Mike Russo)
-- The password to Brock's laptop would not be understood if entered verbatim (Mike Russo)
+- Creating the scree will once again kill the player. This was changed in release 9, but it turns out the movie screen is assumed to always be in place in too many places in the code. (Mike Russo)
+- The password to Brock's laptop would not be understood if entered verbatim, as the Punctuation Removal extension removes one of the characters. (Mike Russo)
 
 ### Cosmetic output errors
 
@@ -40,7 +40,6 @@
 - Fixes a typo in the description of the synthesizer after sawing it open ("permanenty".) (@dstelzer)
 - Switching on or examining the ebook reader while wearing the monocle would produce some confusing text about examining the Book search engine. Interacting with other computers could produce similar undesired output. (Mike Russo)
 - The message when examining the player's yacht bed would start a sentence with a lower case letter. (Mike Russo)
-
 
 ### Parsing
 
