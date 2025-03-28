@@ -1426,6 +1426,9 @@ Every turn when the location is nautical and portholes are in location:
 
 Your bed is a yacht bed in your bunk. It is scenery. The description is "Homely but familiar."
 
+Rule for describing the drawer layout of your bed:
+	say "Your bed has two drawers. ";
+
 Some back portholes are portholes. They are in your bunk.
 
 Instead of going fore in Your Bunk:
