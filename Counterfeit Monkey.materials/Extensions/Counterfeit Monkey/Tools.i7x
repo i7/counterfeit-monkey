@@ -109,36 +109,33 @@ After printing the name of the small knob:
 Sanity-check doing something to the small knob:
 	now the noun is the letter-remover device.
 
-To expand X-remover-string:
-	replace the text " [current setting of the letter-remover]-remover" in player-command-substitute with " letter-remover";
-	replace the regular expression "^[current setting of the letter-remover]-remove " in player-command-substitute with "letter-remove ".
-
-A first command-string altering rule (this is the implicitly change letter-remover setting rule):
+A first before processing a command rule (this is the implicitly change letter-remover setting rule):
 	now the letter-remover is static;
-	let N be player-command-substitute;
-	if N matches the regular expression ".-remove":
-		if N matches the regular expression "(.*) (.)-remover (.)*":
-			replace the regular expression "(.*) (.)-remover (.)*" in N with "\2";
-		otherwise if N matches the regular expression "(.*) (.)-remover":
-			replace the regular expression "(.*) (.)-remover" in N with "\2";
-		otherwise:
-			replace the regular expression "(.)-remove.*" in N with "\1";
+	let C be the substituted form of the player's command;
+	if C matches the regular expression "\b.-remove":
+		let N be "[C]";
+		let pre be "[C]";
+		let post be "[C]";
+		replace the regular expression ".*?\b(.)-remove.*" in N with "\1";
+		replace the regular expression "(.*?)\b.-remove.*" in pre with "\1";
+		replace the regular expression ".*?\b.-remove(.*)" in post with "\1";
+		now C is "[pre]letter-remove[post]";
 		if the current setting of the letter-remover exactly matches the text N:
-			expand X-remover-string;
+			change the text of the player's command to C;
 			make no decision;
 		if the number of characters in N is greater than 1:
 			make no decision;
+		unless N matches the regular expression "<a-z>":
+			say "Only the 26 letters of the English alphabet are available to the letter-remover.";
+			reject the player's command;
 		if the letter-remover is in a closed backpack:
 			silently try opening the backpack;
 			if the backpack is closed:
-				parsing fails;
+				reject the player's command;
 		if the player can touch the letter-remover:
-			unless N matches the regular expression "<a-z>":
-				say "Only the 26 letters of the English alphabet are available to the letter-remover.";
-				parsing fails;
 			now the current setting of the letter-remover is N;
 			now the letter-remover is changing;
-			expand X-remover-string;
+			change the text of the player's command to C;
 		otherwise:
 			say "[run paragraph on]";
 
