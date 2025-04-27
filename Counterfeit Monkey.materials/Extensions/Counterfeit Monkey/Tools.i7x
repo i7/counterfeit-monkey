@@ -176,8 +176,9 @@ Check tuning it to:
 Carry out tuning it to:
 	now the current setting of the letter-remover device is the topic understood.
 
+
 Report tuning it to:
-	say "You flick our thumb over the small knob: [we] now have [a-an letter-remover device]."
+	say "[We] flick our thumb over the small knob: [we] now have [a-an letter-remover device]."
 
 Report tuning the letter-remover to something for the third time:
 	say "[first custom style][bracket]You can also tune the device just by using another name for it: referring to the device as, for instance, an N-remover will automatically set it to n.[close bracket][roman type][paragraph break]"
