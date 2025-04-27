@@ -160,7 +160,18 @@ Check vaguely setting:
 Instead of vaguely setting the letter-remover:
 	say "You have to set it to a specific letter, as in SET [letter-remover] TO X."
 
-Understand "set [letter-remover device] to [text]" or "tune [letter-remover device] to [text]" or "turn [letter-remover device] to [text]" as tuning it to. [Understand "set [something] to [text]" as tuning it to.] Tuning it to is an action applying to one carried thing and one topic.
+Include (-
+[ WORD_TOKEN ;
+	if(NextWordStopped() == -1) return GPR_FAIL;
+	consult_from = wn-1;
+	consult_words = 1;
+	return GPR_PREPOSITION;
+];
+-).
+
+The Understand token word translates into I6 as "WORD_TOKEN".
+
+Understand "set [letter-remover device] to [word]" or "tune [letter-remover device] to [word]" or "turn [letter-remover device] to [word]" as tuning it to. [Understand "set [something] to [word]" as tuning it to.] Tuning it to is an action applying to one carried thing and one topic.
 
 Check tuning it to:
 	if the noun is not the letter-remover device, say "[The noun] cannot be tuned." instead.
