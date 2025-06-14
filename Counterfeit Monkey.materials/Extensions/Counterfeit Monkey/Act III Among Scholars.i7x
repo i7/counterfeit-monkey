@@ -907,8 +907,15 @@ Many courses are taught by graduate students, but these are naturally not listed
 Instead of taking the secretary's computer:
 	say "I understand that theft is more or less your way of life, but please hold back this once."
 
+The u-shaped desk can be hack-mentioned.
+
 Before writing a paragraph about something when the u-shaped desk is in the location:
+	if the u-shaped desk is unmentioned:
+		now the u-shaped is not hack-mentioned;
 	now the u-shaped desk is mentioned. [We want "the u-shaped desk" not "a u-shaped desk" or worse "an u-shaped desk".]
+
+After printing the name of the u-shaped desk:
+	now the u-shaped desk is hack-mentioned.
 
 The department printer is a device on the u-shaped desk. It is fixed in place. The description is "The networked [printer] handles output for all the computers in the department. [printer indicator]."
 	Understand "lights" or "indicator" as the department printer.
@@ -920,7 +927,7 @@ Instead of taking the department printer:
 	say "It would be a heavy thing to carry around, and I don't see much use for it elsewhere."
 
 Rule for writing a paragraph about the department printer:
-	say "[if boldening is true][bold type][end if]The department printer[roman type] also sits on [the u-shaped desk]. [run paragraph on]";
+	say "[if boldening is true][bold type][end if]The department printer[roman type] [if the u-shaped desk is hack-mentioned]also [end if]sits on [the u-shaped desk]. [run paragraph on]";
 	now the department printer is mentioned;
 	now the output tray is referenced by the current-paragraph;
 	now the paper-drawer is referenced by the current-paragraph;
