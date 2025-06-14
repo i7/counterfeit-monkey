@@ -925,7 +925,7 @@ Rule for writing a paragraph about the department printer:
 	now the output tray is referenced by the current-paragraph;
 	now the paper-drawer is referenced by the current-paragraph;
 	if the paper-drawer is open:
-		say "[The paper-drawer] stands open[if the paper-drawer is not surprising]. [end if][run paragraph on]";
+		say "[The paper-drawer] stands open[if the paper-drawer is surprising], revealing [a list of mentionable things *in the paper-drawer][end if]. [run paragraph on]";
 	while a surprising thing (called second special-target) is referenced by the current-paragraph:
 		carry out the disclosing contents activity with the second special-target;
 		rapidly set all immediate children of the second special-target mentioned;
@@ -934,11 +934,6 @@ Rule for writing a paragraph about the department printer:
 		say "[run paragraph on]";
 	otherwise:
 		say line break.
-
-
-Rule for disclosing contents of the paper-drawer:
-	now the current-subject is paper-drawer;
-	say ", revealing [a list of mentionable things *in the paper-drawer]. [run paragraph on]".
 
 After examining the department printer:
 	if the paper-drawer is closed:
