@@ -4274,7 +4274,7 @@ A first conversation-reply rule when the current interlocutor is Lena:
 		queue ream-approval as immediate obligatory;
 	if the odes-book is marked-visible and Lena does not recollect odes-approval:
 		queue odes-approval as immediate obligatory;
-	if the origin paste is marked-visible:
+	if the origin paste is enclosed by location:
 		casually queue nice-paste;
 	if the odes-book is marked-visible and the ream is marked-visible and the ream is disguised and the odes-book is disguised and Lena does not know trust-me:
 		queue that-does-it as immediate obligatory;
