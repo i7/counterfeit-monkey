@@ -4261,24 +4261,30 @@ A first conversation-reply rule when the current interlocutor is Lena:
 	[say "STARTING: ";
 	try checking queue for Lena;]
 	let needs more conversation be true;
+	let ream-is-here be false;
+	if the single ream is enclosed by location:
+		now ream-is-here is true;
+	let odes-is-here be false;
+	if the odes-book is enclosed by location:
+		now odes-is-here is true;
 	if Lena is urgently eager-to-speak:
 		let needs more conversation be false;
-	if (the single ream is undisguised and the single ream is marked-visible) or (the odes-book is undisguised and the odes-book is marked-visible):
-		if Lena does not recollect needs-disguise:
+	if Lena does not recollect needs-disguise:
+		if (the single ream is undisguised and ream-is-here is true) or (the odes-book is undisguised and odes-is-here is true):
 			queue needs-disguise as postponed optional; [She'll only say this once.]
-	if (the single ream is undisguised and the single ream is marked-visible) or (the odes-book is undisguised and the odes-book is marked-visible) and Lena recollects needs-disguise:
+	otherwise if (the single ream is undisguised and ream-is-here is true) or (the odes-book is undisguised and odes-is-here is true):
 		if Lena does not recollect still-needs-pasting or a random chance of 1 in 3 succeeds:
 			queue still-needs-pasting as postponed optional;
 	if needs more conversation is false:
 		make no decision;
 	[positive feedback before negative...]
-	if the single ream is marked-visible and Lena does not recollect ream-approval:
+	if ream-is-here is true and Lena does not recollect ream-approval:
 		queue ream-approval as immediate obligatory;
-	if the odes-book is marked-visible and Lena does not recollect odes-approval:
+	if odes-is-here is true and Lena does not recollect odes-approval:
 		queue odes-approval as immediate obligatory;
 	if the origin paste is enclosed by location:
 		casually queue nice-paste;
-	if the odes-book is marked-visible and the ream is marked-visible and the ream is disguised and the odes-book is disguised and Lena does not know trust-me:
+	if odes-is-here is true and ream-is-here is true and the ream is disguised and the odes-book is disguised and Lena does not know trust-me:
 		queue that-does-it as immediate obligatory;
 	if the modem is enclosed by location and Lena is not urgently eager-to-speak:
 		if Lena does not recollect modem-complaint or a random chance of 1 in 3 succeeds:
@@ -4291,19 +4297,20 @@ A first conversation-reply rule when the current interlocutor is Lena:
 	if the preamp is enclosed by location and Lena is not urgently eager-to-speak:
 		if Lena does not recollect preamp-complaint or a random chance of 1 in 3 succeeds:
 			queue preamp-complaint as immediate obligatory;
-	if the reams are enclosed by location and Lena is not urgently eager-to-speak:
-		if Lena does not recollect reams-complaint or a random chance of 1 in 3 succeeds:
-			queue reams-complaint as immediate obligatory;
-	if the reams are enclosed by location and the modems are marked-visible and Lena is not urgently eager-to-speak:
-		if Lena does not recollect task-reminder or a random chance of 1 in 3 succeeds:
-			queue task-reminder;
-	if the modems are marked-visible and Lena is not urgently eager-to-speak:
+	if the reams are enclosed by location:
+		if Lena is not urgently eager-to-speak:
+			if Lena does not recollect reams-complaint or a random chance of 1 in 3 succeeds:
+				queue reams-complaint as immediate obligatory;
+		if the modems are enclosed by location and Lena is not urgently eager-to-speak:
+			if Lena does not recollect task-reminder or a random chance of 1 in 3 succeeds:
+				queue task-reminder;
+	if Lena is not urgently eager-to-speak and the modems are enclosed by location:
 		if Lena does not recollect modems-complaint or a random chance of 1 in 3 succeeds:
 			queue modems-complaint as immediate obligatory;
-	if the preamps are marked-visible and Lena is not urgently eager-to-speak:
+	if Lena is not urgently eager-to-speak and the preamps are enclosed by location:
 		if Lena does not recollect preamps-complaint or a random chance of 1 in 3 succeeds:
 			queue preamps-complaint as immediate obligatory;
-	if the monocle is marked-visible and Lena is not urgently eager-to-speak and lena recollects who we seem-3:
+	if the monocle is enclosed by location and Lena is not urgently eager-to-speak and lena recollects who we seem-3:
 		if Lena does not recollect monocle-remark:
 			queue monocle-remark;
 	[say "NMC True: ";
