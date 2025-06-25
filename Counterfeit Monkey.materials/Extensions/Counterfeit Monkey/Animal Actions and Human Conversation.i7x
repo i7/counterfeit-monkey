@@ -2142,6 +2142,8 @@ Cryptic. Perhaps he was posing as a researcher? But we can't very well ask, not 
 	It indirectly-follows whether she hath seen Brock-man.
 	It quip-supplies Kate.
 
+Understand "brock" as whether Brock-man seemed upset.
+
 recommend-help is an NPC-directed quip.
 	The reply is "'If your friend is missing, you could report him to the Bureau, you know,' she says. 'I believe they keep close tabs on academic and research visitors. They may well know where he is.'
 
