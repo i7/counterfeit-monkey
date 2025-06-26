@@ -47,6 +47,7 @@
 
 ### Parsing
 
+- Chaining letter-remover commands with THEN, as in U-REMOVE MOURNING DRESS THEN WAVE R-REMOVER AT T-SHIRTS, or SET LETTER-REMOVER TO U THEN WAVE IT AT DRESS THEN SET LETTER-REMOVER TO R, now works, thanks to the "Before Processing a Command" extension and other contributions by Daniel Stelzer. (@dstelzer)
 - T INSERTER without a hyphen is now understood as the T-inserter.
 - The T-inserter can now be used by typing INSERT T IN (thing).
 - Things like REMIND MAN THAT MRS. ROSEHIP IS MARRIED would be understood as two different commands separated by a period. Periods after titles are now properly stripped from input.
