@@ -21,6 +21,7 @@
 - It is now possible to sit on the built-in seating in the Galley. (@Roachbones)
 - Creating the scree will once again kill the player. This was changed in release 9, but it turns out the movie screen is assumed to always be in place in too many places in the code. (Mike Russo)
 - The password to Brock's laptop would not be understood if entered verbatim, as the Punctuation Removal extension removes one of the characters. (Mike Russo)
+- The ho would be escorted away with a park-specific message even when she was not created in the park. (@most90)
 
 ### Cosmetic output errors
 
@@ -40,6 +41,9 @@
 - Fixes a typo in the description of the synthesizer after sawing it open ("permanenty".) (@dstelzer)
 - Switching on or examining the ebook reader while wearing the monocle would produce some confusing text about examining the Book search engine. Interacting with other computers could produce similar undesired output. (Mike Russo)
 - The message when examining the player's yacht bed would start a sentence with a lower case letter. (Mike Russo)
+- If the player puts something on the u-shaped desk while the printer drawer is open, the room description would output a broken sentence. (@svemoe)
+- Lena would comment on the origin paste even if the player does not have it, when fast-travelling from the Counterfeit Monkey Bar to the Aquarium Bookstore with GO TO BOOKSTORE. (@most90)
+- Many of Lena's quips would not trigger on the same turn as entering the bookstore.
 
 ### Parsing
 
@@ -50,6 +54,7 @@
 - Contractions such as WHAT'S, HE'S, and IT'S are understood. (@Stealthii)
 - Adds more synonyms to the "ask why he is here" quip for the gift shop volunteer. WHY ARE YOU HERE and ASK WHY HE IS THERE now work.
 - Going DOWN when standing on the tarpaulin-covered masses in the tin hut will no longer make the player try to enter the trap door. (Mike Russo)
+- ASK WHETHER BROCK SEEMED UPSET would not be understood when the current memory is "how it started with Brock". (@most90)
 
 ## Release 11
 
