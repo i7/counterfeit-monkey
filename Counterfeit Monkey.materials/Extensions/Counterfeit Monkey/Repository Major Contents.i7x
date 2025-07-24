@@ -93,7 +93,6 @@ An alterna-tart is a kind of woman.
 A tattle is a kind of thing.
 A tear is a kind of fluid thing.
 An alterna-tear is a kind of thing.
-A ten-object is a kind of thing.
 A tent is a kind of container.
 Some plural-tents is a kind of container.
 A tin-can is a kind of container. ["tin"]
