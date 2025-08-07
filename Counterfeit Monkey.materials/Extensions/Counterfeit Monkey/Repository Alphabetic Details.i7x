@@ -881,6 +881,11 @@ An eel is edible. The description of an eel is "Manifested dead, because out of 
 
 The eight-object is an r-abstract thing. The printed name is "eight". Understand "eight" or "8" as the eight-object. The heft is 0. The description is "It looks like an infinity symbol rotated ninety degrees."
 
+[This and the equivalent rule for the ten-object below makes sure that things like PUT EIGHT IN BUCKET will work as expected for the eight-object and ten-object (otherwise it will be understood as putting ten random objects in the bucket). Referring to them as 8 and 10 will still not work, as we don't want to interfer with the numbered disambiguation.]
+After reading a command when the eight-object is marked-visible (this is the replace eight-object in input rule):
+	while the player's command includes "eight":
+		replace the matched text with "eight-object".
+
 The elegantly winter pilot is a woman. Understand "aviatrix" or "slim" or "alert" as the elegantly winter pilot.
 	The initial appearance is "[The elegantly winter pilot] shows no sign of nervousness or impatience."
 	The description is "A slim, alert aviatrix, dressed suitably for a biplane duel somewhere over the Ukraine. Her eyes are almond-shaped and her glance taunting."
@@ -3711,6 +3716,11 @@ A tan is an r-abstract. The heft of a tan is usually 0. The description is "The 
 The description of the tat is "It looks like the end-of-day leftovers from a particularly ill-fav[our]ed yard sale. What's not broken is dirty, and what's not dirty is in terrible taste. There's a mechanical pencil with no lead, and a kiddie pool that leaks; a stained tablecloth that once had a pattern of squid tentacles on it; a bobble-headed doll representing the head player of the Maiana football team thirteen years ago."
 
 The ten-object is r-abstract. The heft of the ten-object is 0. Understand "ten" or "10" as the ten-object. The description of a ten-object is usually "The concept of ten is here represented by [one of]the letter X[or]the digits 1 and 0[or]the digit A[or]an Olympic judge holding up a scorecard[or]two hands, exposing their fingers[or]two feet, spreading their toes[at random]." The printed name of a ten-object is usually "ten".
+
+[This and the equivalent rule for the eight-object above makes sure that things like PUT EIGHT IN BUCKET will work as expected for the eight-object and ten-object (otherwise it will be understood as putting ten random objects in the bucket). Referring to them as 8 and 10 will still not work, as we don't want to interfer with the numbered disambiguation.]
+After reading a command when the ten-object is marked-visible (this is the replace ten-object in input rule):
+	while the player's command includes "ten":
+		replace the matched text with "ten-object".
 
 The description of the Tao is "It presents itself as one of those circular yin-yang symbols, part black, part white. I'm afraid Atlantean understanding of Asian philosophies is fairly simplistic."
 

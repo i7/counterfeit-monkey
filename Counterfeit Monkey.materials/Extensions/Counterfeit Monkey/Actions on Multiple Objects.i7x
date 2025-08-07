@@ -196,10 +196,6 @@ A multiple action processing rule when inserting:
 This is the stop inserting error list rule:
 	if the number of entries in the multiple object list is less than 2:
 		the rule succeeds;
-	[Hack to make sure that typing PUT TEN IN CONTAINER in order to put the ten-object in the container does at least work, even if TEN is understood by the parser as ten random things.]
-	if entry 1 in the multiple object list is the ten-object and the number of entries in the multiple object list is 10:
-		alter the multiple object list to { ten-object };
-		the rule succeeds;
 	abide by the check multiple insert rules for the second noun;
 	if the second noun is not touchable:
 		abide by the try reaching rules for the second noun;
