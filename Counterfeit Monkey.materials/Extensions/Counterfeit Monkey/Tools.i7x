@@ -160,6 +160,14 @@ Check vaguely setting:
 Instead of vaguely setting the letter-remover:
 	say "You have to set it to a specific letter, as in SET [letter-remover] TO X."
 
+Understand "set [something] to" as objectlessly setting. Objectlessly setting is an action applying to one thing.
+
+Check objectlessly setting:
+	say "I don't understand what to set [the noun] to." instead.
+
+Instead of objectlessly setting the letter-remover:
+	say "Only the 26 letters of the English alphabet are available to the letter-remover."
+
 Include (-
 [ WORD_TOKEN ;
 	if(NextWordStopped() == -1) return GPR_FAIL;
