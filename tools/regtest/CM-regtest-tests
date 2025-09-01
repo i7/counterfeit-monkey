@@ -551,7 +551,7 @@ This road descends steeply from southwest to northwest, passing between white co
 
 The Aquarium Bookstore is to the east. It is an esoteric bookstore (and purveyor of other things), but one whose owner has helped you in the past.
 
-We can go northwest, southwest to the Roundabout, east, and west from here.
+We can go northwest, southwest to the roundabout, east, and west from here.
 
 The car is making an unpleasant raspy growl.
 
@@ -619,7 +619,7 @@ Not very fishy at the moment, in fact: all the real trade happens in the early m
 
 Just east of here is a rusting corrugated tin building, which was built to house various possessions of the fishermen.
 
-We can go north, south, southeast to Deep Street, and east to the Tin Hut from here.
+We can go north, south, southeast to Deep Street, and east to the tin hut from here.
 
 >se
 
@@ -630,7 +630,7 @@ The Aquarium Bookstore is to the east. It's dim inside, but occasional movements
 
 /Our car ?(— which might better be described as a covered bicycle — )is parked nearby.
 
-We can go northwest to the Fish Market, southwest to the Roundabout, east, and west from here.
+We can go northwest to the fish market, southwest to the roundabout, east, and west from here.
 
 >get in car
 We get into the car.
@@ -705,7 +705,7 @@ Various tarpaulin-covered masses fill the room.
 A trap door is set in the floor.
 
 >u
-There is no way upwards. We can go west to the Fish Market and down through the trap door to the Crawlspace from here.
+There is no way upwards. We can go west to the fish market and down through the trap door to the crawlspace from here.
 
 The trap-door makes a creaking noise and slams shut again.
 
@@ -1407,7 +1407,7 @@ My backpack is stowed under a seat in the third row from the back. I figured tha
 
 /((In the backpack are|The backpack contains) a flash drive and a monocle|There are a flash drive and a monocle in the backpack).
 
-We can go north to the Projection Booth and east from here.
+We can go north to the projection booth and east from here.
 
 /(On the screen|In the movie|As we watch), a (skinny spinster kneels in the dirt, burying eggs in a row as though they were tulip bulbs. It's impossible to make out what's being said, but the music is melancholy, played on a distressed fiddle|woman clings to the lapels of a sharply-dressed gentleman. He pushes her away. She takes off a brooch shaped like a rooster and flings it at his feet. He picks it up and slowly pins it to his tie|man in a black uniform is making a fuss over a white rabbit in a cage).
 
@@ -1988,7 +1988,7 @@ We run some water from the sink tap over the funnel, leaving it glistening and c
 We run some water from the sink tap over the funnel, leaving it glistening and clean.
 
 >gonear Aquarium Bookstore
-Which do you mean, 1) Aquarium Bookstore or 2) Aquarium Bookstore?
+Which do you mean, 1) Aquarium Bookstore or the 2) Aquarium Bookstore?
 
 >2
 Aquarium Bookstore
@@ -2053,7 +2053,7 @@ This road descends steeply from southwest to northwest, passing between white co
 
 The Aquarium Bookstore is to the east. It is an esoteric bookstore (and purveyor of other things), but one whose owner has helped you in the past.
 
-We can go northwest, southwest, east to Aquarium Bookstore, and west from here.
+We can go northwest, southwest, east to the Aquarium Bookstore, and west from here.
 
 #tinhut
 
@@ -2626,10 +2626,10 @@ Oh so tempting. You're not the first person to think of it, trust me. The underg
 #page
 
 >gonear Lecture Hall
-Which do you mean, 1) Lecture Hall (at the podium) or 2) Lecture Hall (among the seats)?
+Which do you mean, the 1) Lecture Hall (at the podium) or the 2) Lecture Hall (among the seats)?
 
 >1
-(Lecture Hall (at the podium))
+(the Lecture Hall (at the podium))
 Lecture Hall (at the podium)
 The main lecture hall used for large survey courses in language studies offered to undergraduates. I sat through courses here when I was an undergraduate myself, and have now delivered a few lectures as a teaching assistant.
 
@@ -4906,7 +4906,7 @@ A power cord snakes across the floor, connecting the dais socket to the wall soc
 
 The son is here.
 
-We can go east to the Generator Room and west from here.
+We can go east to the generator room and west from here.
 
 >turn on platform
 An indicator message lights up: FAIL: TWO OBJECTS REQUIRED FOR SYNTHESIS.
@@ -5023,7 +5023,7 @@ A room whose importance is obvious from how clean it is and how little furniture
 
 A power cord snakes across the floor, connecting the dais socket to the wall socket.
 
-We can go east to the Generator Room and west from here.
+We can go east to the generator room and west from here.
 
 >turn on platform
 An indicator message lights up: FAIL: TWO OBJECTS REQUIRED FOR SYNTHESIS.
@@ -5252,7 +5252,7 @@ A programmable dais sits in the middle of the room. It has the raw look of lab e
 
 A specialized wall socket is built into the east wall, clearly not part of the ordinary power system for the Bureau.
 
-We can go east to the Generator Room and west from here.
+We can go east to the generator room and west from here.
 
 >plug in dais
 We plug the power cord firmly into the dais socket. The other end remains free and not plugged into anything.
@@ -5370,7 +5370,7 @@ A programmable dais sits in the middle of the room. It has the raw look of lab e
 
 A specialized wall socket is built into the east wall, clearly not part of the ordinary power system for the Bureau.
 
-We can go east to the Generator Room and west from here.
+We can go east to the generator room and west from here.
 
 >plug in dais
 We plug the power cord firmly into the dais socket. The other end remains free and not plugged into anything.
@@ -5887,7 +5887,7 @@ A programmable dais sits in the middle of the room. It has the raw look of lab e
 
 A power cord snakes across the floor, connecting the dais socket to the wall socket.
 
-We can go east to the Generator Room and west from here.
+We can go east to the generator room and west from here.
 
 >purloin spot
 [Purloined.]
@@ -5979,7 +5979,7 @@ A programmable dais sits in the middle of the room. It has the raw look of lab e
 
 A power cord snakes across the floor, connecting the dais socket to the wall socket.
 
-We can go east to the Generator Room and west from here.
+We can go east to the generator room and west from here.
 
 >put screws on platform
 We put the screws on the programmable dais.
@@ -6460,7 +6460,7 @@ A programmable dais sits in the middle of the room. It has the raw look of lab e
 
 A specialized wall socket is built into the east wall, clearly not part of the ordinary power system for the Bureau.
 
-We can go east to the Generator Room and west from here.
+We can go east to the generator room and west from here.
 
 >purloin power cord
 [Purloined.]
@@ -6504,7 +6504,7 @@ A programmable dais sits in the middle of the room. It has the raw look of lab e
 
 A power cord snakes across the floor, connecting the dais socket to the wall socket.
 
-We can go east to the Generator Room and west from here.
+We can go east to the generator room and west from here.
 
 >put shuttle on dais
 We put the shuttle on the programmable dais.
@@ -7541,7 +7541,7 @@ The footpath winds between the villas, sloping steeply downward. It is narrow, a
 
 #clerk
 >gonear Babel Cafe
-(Babel Café)
+(the Babel Café)
 Babel Café
 Through many changes of management, this institution has fed the denizens of the university and ignored their semi-sedition.
 
@@ -7580,7 +7580,7 @@ The clerk gets out a honey triangle and puts it on the table, then locks up the 
 >{include} restart
 #clerk2
 >gonear Babel Cafe
-(Babel Café)
+(the Babel Café)
 Babel Café
 Through many changes of management, this institution has fed the denizens of the university and ignored their semi-sedition.
 
@@ -9372,7 +9372,7 @@ We could thank the bartender.
 
 #lena
 >gonear Aquarium Bookstore.
-Which do you mean, 1) Aquarium Bookstore or 2) Aquarium Bookstore?
+Which do you mean, 1) Aquarium Bookstore or the 2) Aquarium Bookstore?
 
 >2
 Aquarium Bookstore
@@ -9515,7 +9515,7 @@ This road descends steeply from southwest to northwest, passing between white co
 
 The Aquarium Bookstore is to the east. It is an esoteric bookstore (and purveyor of other things), but one whose owner has helped you in the past.
 
-We can go northwest, southwest, east to Aquarium Bookstore, and west from here.
+We can go northwest, southwest, east to the Aquarium Bookstore, and west from here.
 
 >car-acquire
 Deep Street
@@ -9525,7 +9525,7 @@ Our pathetic little car is parked right outside Aquarium Bookstore. Here is how 
 
 Suffice it to say that we are not similarly blessed.
 
-We can go northwest, southwest, east to Aquarium Bookstore, and west from here.
+We can go northwest, southwest, east to the Aquarium Bookstore, and west from here.
 
 >start car
 We swing the car door open.
@@ -9590,7 +9590,7 @@ This road descends steeply from southwest to northwest, passing between white co
 
 The Aquarium Bookstore is to the east. It's dim inside, but occasional movements suggest that the proprietor, Slango's friend Lena, is inside.
 
-We can go northwest, southwest to the Roundabout, east to Aquarium Bookstore, and west from here.
+We can go northwest, southwest to the roundabout, east to the Aquarium Bookstore, and west from here.
 
 The car is making an unpleasant raspy growl.
 
@@ -9922,7 +9922,7 @@ We could ask for privacy or ask whether she had trouble with customs.
 
 #barman
 >gonear Counterfeit Monkey
-Which do you mean, the 1) Counterfeit Monkey Bar, the 2) pub, or 3) Counterfeit Monkey?
+Which do you mean, the 1) Counterfeit Monkey Bar, the 2) pub, or the 3) Counterfeit Monkey?
 
 >3
 Counterfeit Monkey
@@ -10067,7 +10067,7 @@ I giggle sharply, a nervous little titter that makes Slango look at us distrustf
 >{include} restart
 
 >gonear Counterfeit Monkey
-Which do you mean, the 1) Counterfeit Monkey Bar, the 2) pub, or 3) Counterfeit Monkey?
+Which do you mean, the 1) Counterfeit Monkey Bar, the 2) pub, or the 3) Counterfeit Monkey?
 
 >3
 Counterfeit Monkey
@@ -10892,7 +10892,7 @@ A programmable dais sits in the middle of the room. It has the raw look of lab e
 
 A specialized wall socket is built into the east wall, clearly not part of the ordinary power system for the Bureau.
 
-We can go east and west to the Surveillance Room from here.
+We can go east and west to the surveillance room from here.
 
 >e
 
@@ -10919,7 +10919,7 @@ A programmable dais sits in the middle of the room. It has the raw look of lab e
 
 A specialized wall socket is built into the east wall, clearly not part of the ordinary power system for the Bureau.
 
-We can go east to the Generator Room and west to the Surveillance Room from here.
+We can go east to the generator room and west to the surveillance room from here.
 
 >plug in cord
 We plug the power cord firmly into the dais socket. The other end remains free and not plugged into anything.
@@ -10940,7 +10940,7 @@ This passage has been cut through natural cliff rock and looks older than the Bu
 
 Blocking the far end of the corridor is a metal portcullis. It is currently lowered. From the pulley above the portcullis hangs a counter.
 
-We can go east through the portcullis (closed) and up to the Surveillance Room from here.
+We can go east through the portcullis (closed) and up to the surveillance room from here.
 
 A breeze along the passage stirs the dust.
 
@@ -10957,7 +10957,7 @@ A programmable dais sits in the middle of the room. It has the raw look of lab e
 
 A power cord snakes across the floor, connecting the dais socket to the wall socket.
 
-We can go east to the Generator Room and west to the Surveillance Room from here.
+We can go east to the generator room and west to the surveillance room from here.
 
 >put counter and weight on dais
 counter: Done.
@@ -10984,7 +10984,7 @@ This passage has been cut through natural cliff rock and looks older than the Bu
 
 Blocking the far end of the corridor is a metal portcullis. It is currently lowered. There's a pulley and hook arrangement above the portcullis, but the hook is empty.
 
-We can go east through the portcullis (closed) and up to the Surveillance Room from here.
+We can go east through the portcullis (closed) and up to the surveillance room from here.
 
 >put counterweight on hook
 We hang the counterweight on the hook. The portcullis shifts slightly but doesn't rise on its own. Perhaps with a little help, though.
@@ -11392,7 +11392,7 @@ A programmable dais sits in the middle of the room. It has the raw look of lab e
 
 A specialized wall socket is built into the east wall, clearly not part of the ordinary power system for the Bureau.
 
-We can go east and west to the Surveillance Room from here.
+We can go east and west to the surveillance room from here.
 
 >e
 
@@ -11419,7 +11419,7 @@ A programmable dais sits in the middle of the room. It has the raw look of lab e
 
 A specialized wall socket is built into the east wall, clearly not part of the ordinary power system for the Bureau.
 
-We can go east to the Generator Room and west to the Surveillance Room from here.
+We can go east to the generator room and west to the surveillance room from here.
 
 >plug in cord
 We plug the power cord firmly into the dais socket. The other end remains free and not plugged into anything.
@@ -11440,7 +11440,7 @@ This passage has been cut through natural cliff rock and looks older than the Bu
 
 Blocking the far end of the corridor is a metal portcullis. It is currently lowered. From the pulley above the portcullis hangs a counter.
 
-We can go east through the portcullis (closed) and up to the Surveillance Room from here.
+We can go east through the portcullis (closed) and up to the surveillance room from here.
 
 The air stirs with a breeze from the east.
 
@@ -11457,7 +11457,7 @@ A programmable dais sits in the middle of the room. It has the raw look of lab e
 
 A power cord snakes across the floor, connecting the dais socket to the wall socket.
 
-We can go east to the Generator Room and west to the Surveillance Room from here.
+We can go east to the generator room and west to the surveillance room from here.
 
 >put counter and weight on dais
 counter: Done.
@@ -11484,7 +11484,7 @@ This passage has been cut through natural cliff rock and looks older than the Bu
 
 Blocking the far end of the corridor is a metal portcullis. It is currently lowered. There's a pulley and hook arrangement above the portcullis, but the hook is empty.
 
-We can go east through the portcullis (closed) and up to the Surveillance Room from here.
+We can go east through the portcullis (closed) and up to the surveillance room from here.
 
 >put counterweight on hook
 We hang the counterweight on the hook. The portcullis shifts slightly but doesn't rise on its own. Perhaps with a little help, though.
@@ -12277,7 +12277,7 @@ A fairly natural-looking extension, red in color, attachable by comb. It should 
 We settle the red hairpiece on our head and adjust our hair underneath.
 
 >gonear cafe
-Which do you mean, 1) where the Babel Café is, the 2) Outdoor Café, the 3) café building, or 4) Babel Café?
+Which do you mean, 1) where the Babel Café is, the 2) Outdoor Café, the 3) café building, or the 4) Babel Café?
 
 >2
 Outdoor Café
