@@ -1,0 +1,81 @@
+file	x	y	w	h	notes
+# City maps: position of @ relative to map-base.png (722x860)
+map-abandoned-park.png	547	462	26	27	
+map-ampersand-bend.png	171	481	26	28	
+map-antechamber.png	472	557	26	27	
+map-apartment.png	334	676	26	27	
+map-aquarium.png	479	364	26	27	
+map-arbot.png	293	605	27	27	
+map-babel.png	392	695	26	27	
+map-back-alley.png	105	596	26	27	
+map-beach.png	93	63	27	27	
+map-browns.png	422	772	17	10	FRAGMENT_OR_SPECIAL
+map-bus-station.png	616	504	27	27	
+map-church-garden.png	12	399	26	27	
+map-cinema.png	145	346	26	27	
+map-counterfeit-monkey.png	343	257	26	28	
+map-cove.png	588	148	27	27	
+map-crawlspace.png	500	310	12	15	FRAGMENT_OR_SPECIAL
+map-crumbling-wall.png	252	208	26	27	
+map-customs-house.png	535	272	26	27	
+map-deep-street.png	454	379	26	27	
+map-docks.png	426	263	26	27	
+map-drinks-club.png	284	521	27	27	
+map-fair.png	159	442	26	27	
+map-fish-market.png	384	303	27	28	
+map-fleur.png	350	521	27	27	
+map-game-zone.png	123	444	26	27	
+map-giftshop.png	54	434	27	27	
+map-gradroom.png	465	776	15	7	FRAGMENT_OR_SPECIAL
+map-heritage.png	253	442	26	27	
+map-hesychius-street.png	192	292	26	27	
+map-high-street.png	316	398	26	27	
+map-hostel.png	290	433	26	27	
+map-inside-bureau.png	526	547	27	28	
+map-long-north.png	389	522	27	28	
+map-long-south.png	387	591	27	28	
+map-monumental-staircase.png	265	348	26	27	
+map-new-church.png	54	397	26	27	
+map-old-city-walls.png	242	308	26	27	
+map-open-sea.png	577	61	26	27	
+map-outdoor-cafe.png	369	373	26	27	
+map-outside-church.png	118	381	26	27	
+map-oval.png	463	673	27	27	
+map-palm-square.png	388	671	27	27	
+map-park-center.png	191	393	26	27	
+map-patriotic-chard.png	215	191	26	27	
+map-precarious.png	595	172	27	27	
+map-public-convenience.png	681	508	27	27	
+map-reclamation.png	422	749	17	14	FRAGMENT_OR_SPECIAL
+map-roget-close.png	103	246	26	27	
+map-rotunda.png	471	527	26	27	
+map-roundabout-2.png	356	450	27	26	
+map-roundabout-3.png	389	480	27	27	
+map-roundabout-4.png	418	448	27	27	
+map-roundabout.png	388	416	26	27	
+map-screening-room.png	69	328	26	27	
+map-sigil-street.png	61	519	26	27	
+map-sj-basement.png	459	749	7	16	FRAGMENT_OR_SPECIAL
+map-sj-department.png	537	760	27	28	
+map-sj-lecture.png	544	751	26	27	
+map-sj-seminar-room.png	415	762	27	27	
+map-sjhall.png	458	758	27	27	
+map-tall-street.png	469	447	27	28	
+map-tin-hut.png	492	304	26	28	
+map-tools-exhibit.png	501	503	26	27	
+map-traffic-circle.png	389	447	26	27	
+map-turret.png	287	308	26	27	
+map-webster-court.png	172	219	26	27	
+map-winding-path.png	78	132	27	27	
+# Boat maps: position of yellow star (722x861)
+map-sunning-deck.png	443	658	42	39	STAR
+map-galley.png	465	344	41	39	STAR
+map-navigation.png	440	445	42	40	STAR
+map-fore.png	442	132	42	39	STAR
+map-your-bunk.png	494	453	42	39	STAR
+map-slango-bunk.png	386	442	40	39	STAR
+map-your-head.png	500	511	40	38	STAR
+map-slango-head.png	381	510	41	38	STAR
+map-brock-bunk.png	438	265	41	39	STAR
+map-brock-head.png	402	301	41	40	STAR
+map-crew-bunk.png	439	149	41	39	STAR

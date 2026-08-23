@@ -4,10 +4,88 @@ Use authorial modesty.
 
 Include version 10 of Simple Graphical Window by Emily Short.
 Include Graphic Links by Jeff Sheets.
+Include Glk Mapping by Dan Fabulich.
 
 
 
 Part 2 - Multimedia
+
+Chapter - Map documents (for interpreters with gestalt_Map)
+
+[When the interpreter supports Glk mapping, we never open the
+ Flexible Windows graphics pane. The local map is shown via
+ map present-image; side extends and the compass are
+ map overlays (compass overlays carry link ids).]
+
+Map-document-enabled is a truth state that varies.
+Map-document-enabled is initially true.
+
+Map look link id is a number that varies.
+Map look link id is initially 1.
+
+To decide which figure-name is the visited compass figure of (way - a direction):
+	(- VisitedImageOf({way}) -).
+
+To decide which figure-name is the unvisited compass figure of (way - a direction):
+	(- UnvisitedImageOf({way}) -).
+
+To determine map-document compass coordinates with height (H - a number) compass width (CW - a number) grid size (G - a number):
+	(- DetermineCompassCoordinates({H}, {CW}, {G}); -).
+
+To present the counterfeit monkey map with flags (flags - a number):
+	unless glk mapping is supported, stop;
+	unless the location has a local map figure, stop;
+	let map-fig be the local map of the location;
+	let map-w be the image width of map-fig;
+	let map-h be the image height of map-fig;
+	if map-w is 0, now map-w is 722;
+	if map-h is 0, now map-h is 860;
+	let map-compass-width be map-w / 4;
+	if map-compass-width > 120, now map-compass-width is 120;
+	if map-compass-width < 60, now map-compass-width is 60;
+	let map-grid-size be map-compass-width / 3;
+	determine map-document compass coordinates with height map-h compass width map-compass-width grid size map-grid-size;
+	present map image map-fig with flags (flags bit-or the glk bit of map-has-focus) background color 31455 focusing on left 0 top 0 width map-w height map-h;
+	[Black pad above the map; canvas bgcolor covers below/sides beyond the extends.]
+	let map-pad-w be map-w * 3;
+	let map-pad-h be 10000;
+	fill map rect color 0 at left (0 - map-w) top (0 - map-pad-h) width map-pad-w height map-pad-h z-index 0;
+	let left-fig be Figure of padding left;
+	let right-fig be Figure of padding right;
+	if the location is nautical:
+		now left-fig is Figure of nautical padding left;
+		now right-fig is Figure of nautical padding right;
+	overlay left-fig at left (0 - map-w) top 0 width map-w height map-h z-index 1;
+	overlay right-fig at left map-w top 0 width map-w height map-h z-index 1;
+	overlay figure of center-squiggle at left (x-coordinate of north) top (y-coordinate of west) width map-grid-size height map-grid-size z-index 10 link id map look link id labeled "look";
+	repeat with way running through directions:
+		if way is inside or way is outside, next;
+		let R be the room way from the location;
+		if R is nothing, next;
+		let pic be the visited compass figure of way;
+		if R is unvisited:
+			now pic is the unvisited compass figure of way;
+		overlay pic at left (x-coordinate of way) top (y-coordinate of way) width map-grid-size height map-grid-size z-index 11 linked to way labeled "[way]";
+	request map events.
+
+To decide whether the location has a local map figure:
+	(- ( GProperty(OBJECT_TY, real_location, (+ local map +) ) ~= 0 ) -).
+
+A map hyperlink command rule for a number (called linkid) (this is the counterfeit monkey map hyperlink rule):
+	if linkid is map look link id:
+		now the glulx replacement command is "look";
+		rule succeeds;
+	repeat with D running through directions:
+		if the object number of D is linkid:
+			now the glulx replacement command is "[printed name of D]";
+			rule succeeds.
+
+A map user hide rule (this is the counterfeit monkey map user hide rule):
+	now map-document-enabled is false;
+	set graphics disabled flag;
+	cancel map events;
+	say "[first custom style][bracket]The map is now disabled. Type MAP ON to turn it back on, or just MAP to show it.[close bracket][roman type][paragraph break]".
+
 
 Chapter - The graphics window
 
@@ -56,7 +134,13 @@ To adjust width of the graphics window:
 		force the size of graphics window to ideal-width.
 
 When identification ends (this is the open the graphics window rule):
-	if glulx graphics is supported:
+	if glk mapping is supported:
+		unless graphics is disabled:
+			now map-document-enabled is true;
+			present the counterfeit monkey map with flags 4; [mapflag_UserRequestedShow]
+		else:
+			now map-document-enabled is false;
+	otherwise if glulx graphics is supported:
 		let main-width be the width of the main window;
 		let measure-width be the width of the measuring window;
 		if measure-width is 0:
@@ -195,7 +279,11 @@ To clear compass graphlinks:
 	clear the graphlink identified as "goU";
 
 Report looking (this is the update compass after looking rule):
-	redraw the map and compass.
+	if glk mapping is supported:
+		if map-document-enabled is true:
+			present the counterfeit monkey map with flags 2; [mapflag_SuggestShow]
+	otherwise:
+		redraw the map and compass.
 
 [We want the compass to stay down in a corner of the screen and not to scale up too huge if the screen is resized. One of the irritating things about Glulx window management is that it's impossible to force an aspect ratio on the player, so I have no idea whether they're going to go tall-and-skinny or short-and-wide. Testers playing in full-screen mode sometimes found that the compass got way too large and encroached on the upper part of the map if I just set the compass to be one quarter the width of the window.]
 
@@ -213,7 +301,10 @@ To decide what number is grid-margin:
 	decide on grid-size / 2.
 
 This is the compass-drawing rule:
-	if the graphics window is g-present:
+	if glk mapping is supported:
+		if map-document-enabled is true:
+			present the counterfeit monkey map with flags 2; [mapflag_SuggestShow]
+	otherwise if the graphics window is g-present:
 		clear compass graphlinks; [We need to reset the graphlinks every time the player resizes the window, because if the height of the screen changes, the compass may move vertically.]
 		establish compass graphlinks;
 		redraw the map and compass;
@@ -225,7 +316,10 @@ In theory, it would have been possible to make the map images carry the compass 
 Figure of background colour is the file "map-background-colour.png".
 
 To redraw the map and compass:
-	if the graphics window is g-present:
+	if glk mapping is supported:
+		if map-document-enabled is true:
+			present the counterfeit monkey map with flags 2; [mapflag_SuggestShow]
+	otherwise if the graphics window is g-present:
 		let total height be height of the graphics window;
 		let scaled height be (ideal-width / map-ratio) to the nearest whole number;
 		draw the local map of the location in graphics window at x 0 and y ((total height - scaled height) / 2) scaled to width ideal-width and height scaled height;
@@ -682,6 +776,12 @@ Seen-map is a truth state that varies. Seen-map is initially false.
 Understand "map" as big-map-showing. Big-map-showing is an action out of world.
 
 Carry out big-map-showing:
+	if glk mapping is supported:
+		now map-document-enabled is true;
+		unset graphics disabled flag;
+		present the counterfeit monkey map with flags 4; [mapflag_UserRequestedShow]
+		now seen-map is true;
+		say "[first custom style][bracket]The map is now enabled. Type MAP OFF to turn it off again.[close bracket][roman type][paragraph break]" instead;
 	unless glulx graphics is supported:
 		say "[first custom style][bracket]This interpreter does not support displaying graphics.[close bracket][roman type][paragraph break]" instead;
 	close the status window;
@@ -766,9 +866,17 @@ To decide whether graphics is disabled:
 
 
 Carry out enabling graphics:
-	unless glulx graphics is supported:
+	if glk mapping is supported:
+		if map-document-enabled is true:
+			say "[first custom style][bracket]The map is already enabled.[close bracket][roman type][paragraph break]";
+		otherwise:
+			now map-document-enabled is true;
+			unset graphics disabled flag;
+			present the counterfeit monkey map with flags 4; [mapflag_UserRequestedShow]
+			say "[first custom style][bracket]The map is now enabled. Type MAP OFF to turn it off again.[close bracket][roman type][paragraph break]";
+	otherwise unless glulx graphics is supported:
 		say "[first custom style][bracket]This interpreter does not support displaying graphics.[close bracket][roman type][paragraph break]" instead;
-	if the graphics window is g-present:
+	otherwise if the graphics window is g-present:
 		say "[first custom style][bracket]The map is already enabled.[close bracket][roman type][paragraph break]";
 	otherwise:
 		unless the measuring window is g-present:
@@ -782,15 +890,26 @@ Carry out enabling graphics:
 Understand "map off" or "graphics off" or "text only" or "text mode" as disabling graphics. Disabling graphics is an action out of world.
 
 Carry out disabling graphics:
-	unless glulx graphics is supported:
+	if glk mapping is supported:
+		add the teach disabling graphics rule to the completed instruction list, if absent;
+		if map-document-enabled is true:
+			now map-document-enabled is false;
+			set graphics disabled flag;
+			close the map;
+			cancel map events;
+			say "[first custom style][bracket]The map is now disabled. Type MAP ON to turn it back on, or just MAP to show it.[close bracket][roman type][paragraph break]";
+		otherwise:
+			say "[first custom style][bracket]The map is already disabled.[close bracket][roman type][paragraph break]";
+	otherwise unless glulx graphics is supported:
 		say "[first custom style][bracket]This interpreter does not support displaying graphics.[close bracket][roman type][paragraph break]" instead;
-	add the teach disabling graphics rule to the completed instruction list, if absent;
-	if the graphics window is g-present:
-		close the graphics window;
-		set graphics disabled flag;
-		say "[first custom style][bracket]The map is now disabled. Type MAP ON to turn it back on, or just MAP to show it at full window size.[close bracket][roman type][paragraph break]";
 	otherwise:
-		say "[first custom style][bracket]The map is already disabled.[close bracket][roman type][paragraph break]".
+		add the teach disabling graphics rule to the completed instruction list, if absent;
+		if the graphics window is g-present:
+			close the graphics window;
+			set graphics disabled flag;
+			say "[first custom style][bracket]The map is now disabled. Type MAP ON to turn it back on, or just MAP to show it at full window size.[close bracket][roman type][paragraph break]";
+		otherwise:
+			say "[first custom style][bracket]The map is already disabled.[close bracket][roman type][paragraph break]".
 
 
 Chapter 2 - Sounds
