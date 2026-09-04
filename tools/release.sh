@@ -134,4 +134,8 @@ fi
 
 echo
 echo "Release gblorb: $RELEASE_GBLORB"
+
+mkdir -p "$(dirname "$RELEASE_GBLORB")"
+mv "$PROJ/Build/output.gblorb" "$RELEASE_GBLORB"
+
 ls -lh "$RELEASE_GBLORB"
