@@ -556,7 +556,7 @@ Chapter 2 - Bureau Basement
 
 Section 1 - Foot of Stairs
 
-Below Bureau Hallway is Bureau Basement South. Bureau Basement South is indoors, forbidden and southern. Understand "bureau basement s" as Bureau Basement South. The description of Bureau Basement South is "[We] have descended into a windowless underground passage. The hallway runs [north] from here, and for an eerily long way [--] the tunnels must extend well beyond the above-ground profile of the building."
+Below Bureau Hallway is Bureau Basement South. Bureau Basement South is indoors, forbidden, improper-named, and southern. Understand "bureau basement s" as Bureau Basement South. The description of Bureau Basement South is "[We] have descended into a windowless underground passage. The hallway runs [north] from here, and for an eerily long way [--] the tunnels must extend well beyond the above-ground profile of the building."
 
 Out-direction of Bureau Basement South is up. [To bureau hallway]
 
@@ -616,7 +616,7 @@ Test automaton with "tutorial off / open tub / x automaton / put automaton in in
 
 Section 2 - Basement Middle
 
-North of Bureau Basement South is Bureau Basement Middle. It is indoors, forbidden and southern. The description of Bureau Basement Middle is "The hallway continues both [north] and [south], flanked by doors painted immutable col[our]s: hyacinth, celadon, chartreuse."
+North of Bureau Basement South is Bureau Basement Middle. It is indoors, forbidden, improper-named, and southern. The description of Bureau Basement Middle is "The hallway continues both [north] and [south], flanked by doors painted immutable col[our]s: hyacinth, celadon, chartreuse."
 
 The hyacinth door, the celadon door, and the chartreuse door are scenery in Bureau Basement Middle.
 
@@ -673,7 +673,7 @@ Some Hello Kitty stickers are part of the cute security door. The description is
 
 Section 3 - Secret Section
 
-Bureau Basement Secret Section is indoors, checkpoint, forbidden and southern. The description is "The heightened security on this side of the door is obvious everywhere [we] look. The floor is tiled in paisley tiles. The light fixtures give off pale pink light. The walls are covered in frog leather. The doors are locked with padlocks the size of handbags, locks decorated à la Louis Quinze, combination locks made of solid gold. There is not a bare noun in sight."
+Bureau Basement Secret Section is indoors, checkpoint, forbidden, improper-named, and southern. The description is "The heightened security on this side of the door is obvious everywhere [we] look. The floor is tiled in paisley tiles. The light fixtures give off pale pink light. The walls are covered in frog leather. The doors are locked with padlocks the size of handbags, locks decorated à la Louis Quinze, combination locks made of solid gold. There is not a bare noun in sight."
 
 Out-direction of Bureau Basement Secret Section is south. [Bureau basement middle]
 

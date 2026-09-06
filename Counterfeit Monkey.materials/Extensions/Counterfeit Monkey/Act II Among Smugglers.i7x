@@ -64,7 +64,7 @@ aquarium-exterior is a facade in Deep Street. It fronts east. The printed name i
 	The description is "[if Aquarium is visited]The outside manages to give an impression of poverty, gloom, and probable drug use; though, having seen the inside, I am going to guess that the real issues are sloth and kookiness[otherwise]I've never been inside the Aquarium: the outside never looked terribly savory. Perhaps that's the point[end if]."
 
 Rule for writing a topic sentence about aquarium-exterior when aquarium-exterior is not as-yet-unknown:
-	say "[if boldening is true][bold type][end if]The Aquarium Bookstore[roman type] is to the east. [if aquarium-closed-sign is in location]There's a closed sign in the window and a forbidding atmosphere[otherwise]It's dim inside, but occasional movements suggest that the proprietor, Slango's friend Lena, is inside[end if]. "
+	say "[The Aquarium] is to the east. [if aquarium-closed-sign is in location]There's a closed sign in the window and a forbidding atmosphere[otherwise]It's dim inside, but occasional movements suggest that the proprietor, Slango's friend Lena, is inside[end if]. "
 
 A ranking rule when aquarium-exterior is not as-yet-unknown and Aquarium is visited and a car (called target) is in the location:
 	increase description-rank of the target by 20.
@@ -115,7 +115,7 @@ After going from the Aquarium when Slango is in the Counterfeit Monkey:
 
 Section 2 - The Aquarium
 
-The Aquarium Bookstore is east of Deep Street. It is a privately-controlled proper-named checkpoint room. It is indoors. The description is "The shop takes its name from the [collection of fish] mounted on every wall: swordfish, bass, other things I don't recogn[ize]. Underneath these dubious tokens, the walls are covered with bookshelves, and there are stacks of books on the floor where the shelves have proven insufficient."
+The Aquarium Bookstore is east of Deep Street. It is a privately-controlled improper-named checkpoint room. It is indoors. The description is "The shop takes its name from the [collection of fish] mounted on every wall: swordfish, bass, other things I don't recogn[ize]. Underneath these dubious tokens, the walls are covered with bookshelves, and there are stacks of books on the floor where the shelves have proven insufficient."
 
 The aquarium-shelving is scenery in the aquarium. Understand "shelves" or "bookshelves" or "shelving" as the aquarium-shelving. The printed name is "shelving". The description is "They're completely crammed with books."
 
@@ -593,7 +593,7 @@ Rule for printing the name of the leaflet while listing contents of something:
 
 Section 8 - Docks
 
-The Docks are north of the Fish Market. It is checkpoint. The description is "Here are some dozens of [boats] tied up: some of them are small to medium-sized fishing craft, some tourist boats for trips around the island, some merely ferries to the deeper harbor where the cruise ships anchor."
+The Docks are north of the Fish Market. They are plural-named and checkpoint. The description is "Here are some dozens of [boats] tied up: some of them are small to medium-sized fishing craft, some tourist boats for trips around the island, some merely ferries to the deeper harbor where the cruise ships anchor."
 
 The boats are scenery in the Docks. Understand "craft" or "fishing craft" or "tourist" or "ferries" as the boats. The description is "I know nothing about boats. You, on the other hand, appear to have an unnerving awareness of which of these craft are here on legal business and which are engaged in some form of smuggling or refugee-assistance."
 
@@ -642,7 +642,7 @@ Section 9 - Counterfeit Monkey
 
 [The concept of the Monkey came fairly early.]
 
-The Counterfeit Monkey is west of the Docks. It is proper-named and indoors. The description is "[one of]It takes a minute for us to adjust to the light in here. [or]Infamously this pub was raided in 1929, the year that the Bureau developed its first meager attempt at an Authentication Scope, and dozens of smugglers and fraudulent businessmen went to jail. But neither that raid nor subsequent scrutiny has ever shut the place down entirely. [or][stopping]Built when people were a bit shorter and ceilings were a bit lower, the Counterfeit Monkey is always smoky and never well lit, even in the middle of the day."
+The Counterfeit Monkey is west of the Docks. It is improper-named and indoors. The description is "[one of]It takes a minute for us to adjust to the light in here. [or]Infamously this pub was raided in 1929, the year that the Bureau developed its first meager attempt at an Authentication Scope, and dozens of smugglers and fraudulent businessmen went to jail. But neither that raid nor subsequent scrutiny has ever shut the place down entirely. [or][stopping]Built when people were a bit shorter and ceilings were a bit lower, the Counterfeit Monkey is always smoky and never well lit, even in the middle of the day."
 
 Out-direction of Counterfeit Monkey is east. [To the docks]
 
