@@ -646,7 +646,7 @@ I am indebted to the following players for suggestions and bug reports that affe
 Any remaining flaws are my fault alone."
 	"Other Credits"	--	"Counterfeit Monkey uses Inform extensions by Graham Nelson, David Fisher, Aaron Reed, Jim Aikin, Gavin Lambert, Jon Ingold, and Jeff Sheets. To read a complete list of these extensions and their version information, type VERSION at the command line.
 
-A number of other IF community members helped me trouble-shoot specific issues. Jason Dyer worked over one specific easter egg for me. Andrew Hunter and Andrew Plotkin diagnosed a problem running the game under Git. Dannii Willis and Ben Cressey helped with figuring out why UNDO wasn't working on Gargoyle. Graham Nelson provided a hashing solution that made object name comparisons run a great deal faster as the number of objects in the game climbed over 1500. Their assistance is much appreciated.
+A number of other IF community members helped me trouble-shoot specific issues. Jason Dyer worked over one specific easter egg for me. Andrew Hunter and Andrew Plotkin diagnosed a problem running the game under Git. Dannii Willis and Ben Cressey helped with figuring out why UNDO wasn't working on Gargoyle. Graham Nelson provided a hashing solution that made object name comparisons run a great deal faster as the number of objects in the game climbed over 1500. Petter Sjölund and Dannii Willis took on the enormous task of releasing Counterfeit Monkey's source on Github, maintaining it, and releasing updates over a period of years. Their assistance is much appreciated.
 
 The in-game maps use a variety of readily available fonts. Some of the more esoteric of these came from the HP Lovecraft Historical Society Font Pack.
 
