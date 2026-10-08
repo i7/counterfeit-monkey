@@ -802,7 +802,7 @@ The objects-on-stands are scenery in Cold Storage. The printed name is "objects"
 Some stand labels are part of the objects-on-stands. The description is "[We] pick out a name on one of them: [one of]Graham 1, born 1968, inanim 2005[or]Jon 19, born 1979, inanim 1999 on charge of attempted espionage[or]Alice 13, born 1950, inanim 1982 on charge of stealing DCL information[or]Peter 20, born 2000, inanim 2010 on charge of reckless use of constructed language[or]Lucy 2, born 1991, inanim 2009 on charge of smuggling French materials[or]Thierry Claude, foreigner, inanim 1969 on charge of espionage[or]Petra Odinsova, foreigner, inanim 1972 on charge of not speaking English[at random]."
 
 Instead of putting gel on the objects-on-stands:
-	if the patsy-woman is in the repository:
+	if the patsy-woman is in the repository and Cold Dilemma has not ended:
 		say "Hang on [--] are you sure you want to send one of these poor bastards out there? It would be cruel to get their hopes up just to have them re-arrested, not to mention that it would make my father look like a fool if he arrested a dissident who turned out to have been in storage all along. >>" ;
 		if the player consents:
 			move the patsy-woman to the location;
